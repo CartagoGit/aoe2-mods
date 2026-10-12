@@ -15,7 +15,7 @@ export function validateCampaign(input: unknown): {
   const c = campaignSchema.parse(input);
   const issues = [
     ...validateHistory(c),
-    ...validateCatalogs(c.localization, campaignKeys(c)),
+    ...validateCatalogs(c.localization, campaignKeys(c), 4000, c.sourceLocale),
     ...c.scenarios.flatMap(validateGameplay),
     ...validateVariety(c),
   ];

@@ -6,7 +6,7 @@ Crónicas de la Fe es una fábrica de mods de campañas históricas para AoE2 DE
 
 Fuentes JSON schemaVersion 1; campaña activa en campaigns/<id>/campaign.json y escenarios en scenarios/NN-<slug>/scenario.json referenciados por scenarioFiles. Los borradores se preparan en staging/campaigns; el slice final los materializa junto con IDs/glosario. Ver docs/guides/staging.md. Los módulos packages/schemas, localization, historical-validation, gameplay-validation, scenario-compiler, campaign-compiler, assets, audio y aoe2-adapter son la infraestructura. CLI en tools/cli; parser Python y empaquetador externo fijados en tools/python. El diagrama y responsabilidades están en arquitectura.
 
-Los nombres internos CDF_<Name>, publicId CDF-CNN y claves de progreso son permanentes. Las traducciones usan namespaces semánticos compilados mediante config/string-ids.lock.json. El español de España es canónico; hay 17 locales objetivo. El fixture tiene dos muestras draft, no traducciones terminadas. Las carpetas lingüísticas y el rango reservado todavía requieren verificación en el motor.
+Los nombres internos CDF_<Name>, publicId CDF-CNN y claves de progreso son permanentes. Las traducciones usan namespaces semánticos compilados mediante config/string-ids.lock.json. El inglés es la fuente nueva declarada sourceLocale=en; español de España completo; hay 17 locales objetivo. El fixture tiene dos muestras draft, no traducciones terminadas. Las carpetas lingüísticas y el rango reservado todavía requieren verificación en el motor.
 
 La colección tiene narrador general estable. Cada campaña añade narrador particular distinto, ficticio cuando corresponda, consistente en introducción, misión y epílogo. Personajes pueden intervenir con voz diferenciada; no imitar a personas reales ni convertir dramatización en fuente. Los contratos incluyen interpretación, idioma/acento, licencia y revisión.
 
@@ -21,3 +21,7 @@ Las envolturas nativas de slideshow/layout se reciben como plantillas acreditada
 El dossier inicial imperial-church documenta la planificación 312–337: Puente Milvio, Nicea y nueva capital. No existe campaña histórica implementada. Las tradiciones sobre Constantino se distinguen de hechos; 325 no representa una división instantánea entre iglesias contemporáneas. Los títulos, geografía, tácticas y representación de civilizaciones se cierran con fuentes antes de autoría.
 
 Primero se valida el laboratorio de rutas; después una misión histórica narrativa; después la campaña de ejemplo. M3.1 solo realiza contenido designado. Los cambios de motor/infraestructura, revisión independiente y pruebas en AoE2 tienen responsables distintos. La fábrica no presupone una tradición religiosa concreta.
+
+## Ampliación de diseño vigente
+
+El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.

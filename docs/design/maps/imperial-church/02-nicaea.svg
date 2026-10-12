@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 855" role="img" aria-label="Voices Beside the Lake: geographic design controls">
+<rect width="1080" height="855" fill="#f5f0df"/>
+<text x="40" y="35" font-family="sans-serif" font-size="23">Voices Beside the Lake</text>
+<text x="40" y="61" font-family="sans-serif" font-size="14">Nicaea and Ascanian Lake · 320 × 320 tiles · 325 CE</text>
+<rect x="40" y="85" width="700" height="700" fill="#dfdfba" stroke="#5c6542"/>
+<path d="M 110 85 V785 M40 155 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 180 85 V785 M40 225 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 250 85 V785 M40 295 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 320 85 V785 M40 365 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 390 85 V785 M40 435 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 460 85 V785 M40 505 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 530 85 V785 M40 575 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 600 85 V785 M40 645 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 670 85 V785 M40 715 H740" stroke="#c7c8a7" fill="none"/>
+<polyline points="617.27,713.60 639.59,670.89" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="639.59,670.89 702.50,610.26" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="77.50,449.66 189.11,405.68 300.71,420.34 327.50,464.32 289.56,537.65 144.47,566.97 77.50,508.31" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
+<polyline points="345.37,361.69 345.37,452.60 343.13,484.86" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="345.37,361.69 362.92,424.71 345.37,452.60 343.13,484.86" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
+<circle cx="345.37" cy="452.60" r="7" fill="#2e3740"/>
+<text x="355.37" y="443.60" font-family="sans-serif" font-size="16">1</text>
+<circle cx="323.03" cy="449.66" r="7" fill="#2e3740"/>
+<text x="333.03" y="440.66" font-family="sans-serif" font-size="16">2</text>
+<circle cx="345.37" cy="361.69" r="7" fill="#2e3740"/>
+<text x="355.37" y="352.69" font-family="sans-serif" font-size="16">3</text>
+<circle cx="343.13" cy="484.86" r="7" fill="#2e3740"/>
+<text x="353.13" y="475.86" font-family="sans-serif" font-size="16">4</text>
+<circle cx="345.37" cy="361.69" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="345.37" cy="452.60" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="343.13" cy="484.86" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
+<text x="770" y="129" font-family="sans-serif" font-size="14">Solid blue: modern Natural Earth</text>
+<text x="770" y="153" font-family="sans-serif" font-size="14">Dashed blue: schematic water control</text>
+<text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
+<text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
+<text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Nicaea civic core</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[29.72, 40.429] → [139.16, 167.52]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Lake east shore</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[29.71, 40.43] → [128.98, 166.18]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: North gate approach</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[29.72, 40.46] → [139.16, 126.09]</text>
+<text x="770" y="584" font-family="sans-serif" font-size="13">4: Southern departure road</text>
+<text x="770" y="604" font-family="monospace" font-size="12">[29.719, 40.418] → [138.14, 182.22]</text>
+<text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [29.6, 40.34, 29.88, 40.53] · cosine-corrected, padded square; positions approximate</text>
+</svg>

@@ -11,3 +11,7 @@ Consultado2026-10-12. No reproducir textos largos; los enlaces permiten localiza
 | constantine-vision | [In Hoc Signo Vinces: The Original Context of the Vision of Constantine](https://www.cambridge.org/core/journals/studies-in-church-history/article/abs/in-hoc-signo-vinces-the-original-context-of-the-vision-of-constantine/C0D983D17673B1ECE61D21C97036A301) | Debate historiográfico; resumen consultado, pasajes completos pendientes |
 
 Para cada afirmación nueva añadir edición, autor, fecha, página/pasaje, certeza, clasificación, interpretaciones alternativas y revisor. No deducir una táctica precisa de un abstract. No pasar a aprobado sin revisar el pasaje.
+
+## Diseño de producción vigente
+
+El [contrato detallado](12-production-blueprint.md) y la [biblia del narrador](13-narrator-bible.md) sustituyen decisiones editoriales provisionales de este documento: inglés fuente, títulos épicos, geografía real y presupuestos porperfil. La evidencia histórica original conserva sus cautelas; no acredita las misiones nuevas como jugadas.

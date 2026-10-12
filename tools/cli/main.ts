@@ -22,6 +22,7 @@ import {
   allocate,
   campaignKeys,
   exportStrings,
+  sourceCatalog,
   validateCatalogs,
 } from "../../packages/localization";
 import { schemas } from "../../packages/schemas";
@@ -151,10 +152,12 @@ async function main() {
     return;
   }
   if (command === "audio:build") {
-    if (!id) throw new Error("Uso: bun run audio:build ID --locale=es-ES");
+    if (!id) throw new Error("Uso: bun run audio:build ID --locale=en");
+    const campaign = await loadCampaign(root, id);
     const locale =
-      args.find((a) => a.startsWith("--locale="))?.slice(9) ?? "es-ES";
-    console.log(await buildAudio(root, await loadCampaign(root, id), locale));
+      args.find((a) => a.startsWith("--locale="))?.slice(9) ??
+      campaign.sourceLocale;
+    console.log(await buildAudio(root, campaign, locale));
     return;
   }
   if (command === "campaigns:list") {
@@ -186,11 +189,12 @@ async function main() {
     const p = await loadProject(root);
     const next = allocate(
       p.lock,
-      p.campaigns.flatMap((c) =>
-        Object.keys(
-          c.localization.find((l) => l.locale === "es-ES")?.strings ?? {},
-        ),
-      ),
+      p.campaigns.flatMap((c) => {
+        const catalog = sourceCatalog(c);
+        if (!catalog)
+          throw new Error(`Falta catálogo fuente ${c.sourceLocale}: ${c.id}`);
+        return Object.keys(catalog.strings);
+      }),
     );
     await writeJson(join(root, "config/string-ids.lock.json"), next);
     console.log("Registro de IDs actualizado; revisar diff antes de publicar");
@@ -244,7 +248,14 @@ async function main() {
     }
     if (command === "i18n:check")
       for (const c of cs)
-        assertValid(validateCatalogs(c.localization, campaignKeys(c)));
+        assertValid(
+          validateCatalogs(
+            c.localization,
+            campaignKeys(c),
+            4000,
+            c.sourceLocale,
+          ),
+        );
     if (command === "assets:check")
       for (const c of cs) assertValid(await validateAssets(root, c.assets));
     if (command === "audio:check")

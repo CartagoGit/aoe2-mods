@@ -29,3 +29,7 @@ Instalación limpia/actualización, intro/slideshow/audio, locales completos y c
 La evidencia contiene gameBuild, plataforma, artifactSha256, responsable, pasos y observaciones. No inventes nombres de revisores ni marcas approved/passed. La revisión lingüística/histórica exige personas o agentes competentes y lectura de fuentes; el validador solo comprueba trazabilidad y consistencia. La revisión DelendAI es independiente del implementador.
 
 Si cambia el ZIP, la evidencia vinculada al hash anterior deja de acreditar el candidato. Un cambio solo de revisión/QA puede conservar el ZIP, pero debe compararse el hash y la vigencia del reporte. El cierre oficial de propuesta se realiza en DelendAI, no editando encabezados.
+
+## Ampliación de diseño vigente
+
+El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.

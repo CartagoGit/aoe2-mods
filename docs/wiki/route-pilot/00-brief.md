@@ -14,8 +14,12 @@ El sucesor termina mediante temporizador de 10s para comprobar la presentación.
 
 ## Textos y medios
 
-Todos los textos usan campaign.route-pilot.*, scenario.route-pilot-choice.*, campaign.route-successor.* y scenario.route-successor-recap.* para evitar colisiones. General collection-narrator presenta el laboratorio; narrador particular route-observer ficticio explica elecciones y consecuencias. Especificar las dos voces y títulos/objetivos/eventos en es-ES y traducir a los 17 locales registrados con estados reales. Imágenes originales sencillas de mapa/elección con procedencia; grabación/local TTS permitido, sin generación pagada masiva. Los medios completos se empaquetan tras s00001-S3; no distribuir una muestra silenciosa como doblaje terminado.
+Todos los textos usan campaign.route-pilot.*, scenario.route-pilot-choice.*, campaign.route-successor.* y scenario.route-successor-recap.* para evitar colisiones. General collection-narrator presenta el laboratorio; narrador particular route-observer ficticio explica elecciones y consecuencias. Especificar las dos voces y títulos/objetivos/eventos en inglés y español y traducir a los 17 locales registrados con estados reales. Imágenes originales sencillas de mapa/elección con procedencia; grabación/local TTS permitido, sin generación pagada masiva. Los medios completos se empaquetan tras s00001-S3; no distribuir una muestra silenciosa como doblaje terminado.
 
 ## QA y entrega
 
 Ejecutar planes tests/compatibility/progression.json y localization.json: perfil nuevo, A, B, ambos órdenes de replay, simultaneidad, guardar antes del final/cargar después, sucesor solo y cambio de idioma. Declarar estimated al diseñar duración; después measured únicamente con evidencia. Exportar ambos mods, registrar hashes, validar sin colisiones y presentar revisión independiente. El cierre de fuentes puede separar las evidencias del motor pendientes; la publicación final exige release:check.
+
+## Pantallas e idioma vigentes
+
+[Contrato bilingüe de pantallas](14-screen-contract.md) fija EN/es-ES, títulos y narradores de T01/T02. El laboratorio nuevo declara sourceLocale=en; el fixture previo conserva es-ES. El observador de T01 y el archivista de T02 son personas ficticias distintas del laboratorio; no se atribuyen vivencias históricas.
