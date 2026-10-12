@@ -32,53 +32,55 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 
 - global_gate: e2e
 
-### S1 — Especificacion y matriz del laboratorio
+### S1 — Especificación y matriz del laboratorio
 - **Status**: pending
 - **Files**: `docs/wiki/route-pilot/**`
 - **Gate**: e2e
 - acceptance:
-  - "Definir mapas mínimos, victoria A/B, replay y recapitulación; no atribuir hechos históricos a fixtures."
-  - "Casos nuevos/perfil sin datos, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma."
+  - "Definir mapas mínimos, victoria A/B, replay, recapitulación y lista cerrada de textos/personajes; no atribuir hechos históricos a fixtures."
+  - "Casos nuevo perfil, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma."
 
-### S2 — Campañas y escenarios del piloto
+### S2 — Borradores completos de los dos mods
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `campaigns/route-pilot/**`, `campaigns/route-successor/**`
+- **Files**: `staging/campaigns/route-pilot/**`, `staging/campaigns/route-successor/**`
 - **Gate**: e2e
 - acceptance:
-  - "Fuentes JSON completas y unidades existentes; dos objetivos con variables y eventos finitos dentro del DSL."
-  - "Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes y terminal común sin borrar la otra."
-  - "Narradores diferenciados, todos los textos semánticos; predecesora opcional."
+  - "Fuentes completas de ambos mods en staging: escenarios, metadatos, narradores, 17 catálogos draft con claves semánticas y manifiestos licenciados."
+  - "Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes; terminal común; predecesora opcional y sucesora autocontenida."
+  - "bun run staging:check route-pilot y bun run staging:check route-successor pasan sin --partial. No activar carpetas en campaigns ni modificar el lock en este slice."
 
-### S3 — Reserva de IDs y glosario
+### S3 — Materialización conjunta, IDs y glosario
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `config/string-ids.lock.json`, `config/glossary.json`
+- **Files**: `staging/campaigns/route-pilot/**`, `staging/campaigns/route-successor/**`, `campaigns/route-pilot/**`, `campaigns/route-successor/**`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
 - acceptance:
-  - "Ejecutar ids:allocate en unidad con lock explícito, comprobar que IDs existentes no cambian."
-  - "Traducciones de 17 locales con estado honesto; mantener namespaces globales únicos."
+  - "Reclamar todas las rutas del slice y promover ambos bundles completos en una misma entrega; ajustar asset.path al destino final y validar sus bytes/hashes."
+  - "Ejecutar ids:allocate después de materializar y antes del commit; IDs previos inmutables, namespaces únicos, glosario completo por locale."
+  - "bun run validate y export de ambos mods pasan; el commit incluye fuentes, escenarios, catálogos y lock, sin referencias pendientes."
 
-### S4 — Verificacion y dossier de entrega
+### S4 — Verificación y dossier de entrega
 - **Status**: pending
 - **DependsOn**: [S3]
 - **Files**: `docs/qa/route-pilot/**`
 - **Gate**: e2e
 - acceptance:
-  - "bun run validate y export de cada campaña; informes con hashes y delimitación de capacidades."
-  - "No cerrar GAME VERIFIED ni PRODUCTION READY sin resultados reales de las pruebas vinculadas al ZIP."
+  - "Registrar comandos, hashes y capacidades; bun run validate y export de ambas campañas."
+  - "No cerrar GAME VERIFIED ni PRODUCTION READY sin pruebas reales vinculadas al ZIP; estado de traducciones/medios honesto."
 
 ## acceptance
 
-- Definir mapas mínimos, victoria A/B, replay y recapitulación; no atribuir hechos históricos a fixtures.
-- Casos nuevos/perfil sin datos, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma.
-- Fuentes JSON completas y unidades existentes; dos objetivos con variables y eventos finitos dentro del DSL.
-- Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes y terminal común sin borrar la otra.
-- Narradores diferenciados, todos los textos semánticos; predecesora opcional.
-- Ejecutar ids:allocate en unidad con lock explícito, comprobar que IDs existentes no cambian.
-- Traducciones de 17 locales con estado honesto; mantener namespaces globales únicos.
-- bun run validate y export de cada campaña; informes con hashes y delimitación de capacidades.
-- No cerrar GAME VERIFIED ni PRODUCTION READY sin resultados reales de las pruebas vinculadas al ZIP.
+- Definir mapas mínimos, victoria A/B, replay, recapitulación y lista cerrada de textos/personajes; no atribuir hechos históricos a fixtures.
+- Casos nuevo perfil, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma.
+- Fuentes completas de ambos mods en staging: escenarios, metadatos, narradores, 17 catálogos draft con claves semánticas y manifiestos licenciados.
+- Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes; terminal común; predecesora opcional y sucesora autocontenida.
+- bun run staging:check route-pilot y bun run staging:check route-successor pasan sin --partial. No activar carpetas en campaigns ni modificar el lock en este slice.
+- Reclamar todas las rutas del slice y promover ambos bundles completos en una misma entrega; ajustar asset.path al destino final y validar sus bytes/hashes.
+- Ejecutar ids:allocate después de materializar y antes del commit; IDs previos inmutables, namespaces únicos, glosario completo por locale.
+- bun run validate y export de ambos mods pasan; el commit incluye fuentes, escenarios, catálogos y lock, sin referencias pendientes.
+- Registrar comandos, hashes y capacidades; bun run validate y export de ambas campañas.
+- No cerrar GAME VERIFIED ni PRODUCTION READY sin pruebas reales vinculadas al ZIP; estado de traducciones/medios honesto.
 
 ## Contexto, estado inicial y dependencias
 
@@ -94,4 +96,4 @@ Riesgos: pasajes históricos no consultados, anacronismos, coexistencia de caden
 
 ## Entregables, revisión y cierre
 
-Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
+Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Cada slice debe integrar con `bun run validate` verde. Los borradores se preparan en staging/campaigns, fuera de loadProject; staging:check valida esquemas y declara pendientes explícitamente. El slice final de materialización posee campañas, borradores, lock y glosario, y los incorpora juntos antes de validar/commitear. Seguir docs/guides/staging.md. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
