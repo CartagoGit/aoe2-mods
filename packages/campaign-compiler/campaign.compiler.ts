@@ -8,6 +8,7 @@ import {
   validateGameplay,
   validateVariety,
 } from "../gameplay-validation/gameplay.validator";
+import { validateScenarioCapability } from "../gameplay-validation/scenario-capability.validator";
 import { validateHistory } from "../historical-validation/history.validator";
 import {
   campaignKeys,
@@ -24,7 +25,12 @@ export function validateCampaign(input: unknown): {
   const issues = [
     ...validateHistory(c),
     ...validateCatalogs(c.localization, campaignKeys(c), 4000, c.sourceLocale),
-    ...c.scenarios.flatMap(validateGameplay),
+    ...c.scenarios.flatMap((scenario) => [
+      ...validateGameplay(scenario),
+      ...(scenario.capabilityProfile
+        ? validateScenarioCapability(scenario.capabilityProfile)
+        : []),
+    ]),
     ...validateVariety(c),
   ];
   for (const id of duplicates(c.scenarios.map((s) => s.id)))
@@ -158,13 +164,16 @@ export function validateCampaign(input: unknown): {
 }
 export function compileCampaign(c: Campaign, lock: StringLock) {
   assertValid(validateCampaign(c).issues);
+  const scenarios = c.scenarios.map((s) => compileScenario(s, lock));
   return {
-    schemaVersion: 1 as const,
+    schemaVersion: scenarios.some((scenario) => scenario.schemaVersion === 2)
+      ? (2 as const)
+      : (1 as const),
     id: c.id,
     internalName: c.internalName,
     mode: c.mode,
     titleId: lock.ids[c.titleKey],
-    scenarios: c.scenarios.map((s) => compileScenario(s, lock)),
+    scenarios,
   };
 }
 export function recommendation(

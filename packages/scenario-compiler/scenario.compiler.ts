@@ -2,6 +2,7 @@ import { assertValid } from "../core/diagnostics.helper";
 import { validateGameplay } from "../gameplay-validation/gameplay.validator";
 import type { StringLock } from "../localization/localization.catalog";
 import type { Scenario } from "../schemas/campaign.schema";
+import { compileCapabilityProfile } from "./capability.compiler";
 export function compileScenario(s: Scenario, lock: StringLock) {
   assertValid(validateGameplay(s));
   const textId = (key: string): number => {
@@ -9,7 +10,7 @@ export function compileScenario(s: Scenario, lock: StringLock) {
     if (id === undefined) throw new Error(`ID ausente: ${key}`);
     return id;
   };
-  return {
+  const legacy = {
     schemaVersion: 1 as const,
     scenario: s,
     titleId: textId(s.titleKey),
@@ -41,6 +42,12 @@ export function compileScenario(s: Scenario, lock: StringLock) {
       s.objectives.map((o, i) => [o.id, i + 1]),
     ),
     arbitration: "defeat-first" as const,
+  };
+  if (!s.capabilityProfile) return legacy;
+  return {
+    ...legacy,
+    schemaVersion: 2 as const,
+    capability: compileCapabilityProfile(s.capabilityProfile),
   };
 }
 export type ScenarioIR = ReturnType<typeof compileScenario>;
