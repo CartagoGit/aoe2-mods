@@ -41,6 +41,15 @@
     {
       "command": "python3 -m py_compile tools/python/setup.py tools/python/export_aoe2.py",
       "exitCode": 0
+    },
+    {
+      "command": "DelendAI CLI validate (source entrypoint supplied by runtime)",
+      "exitCode": 0,
+      "declared": true,
+      "passed": true,
+      "journalled": true,
+      "testsPassing": 41,
+      "testsTotal": 41
     }
   ],
   "fixture": {
@@ -69,9 +78,9 @@
     "notForPublication": true
   },
   "review": {
-    "status": "in_review",
+    "status": "done",
     "implementer": "gpt-6",
-    "reviewer": null,
+    "reviewer": "gpt-6.1-sol",
     "submittedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6",
     "technical": {
       "status": "conformant",
@@ -82,7 +91,7 @@
       "baselineCommit": "4f6ea4ada828bb4a77f69f64d87faf8a1a89540e",
       "reviewedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6"
     },
-    "formalBlocker": "approve requires evidence.commitHash already on develop; integration still blocked until legitimate gate bootstrap",
+    "formalBlocker": null,
     "formalAttempt": {
       "agent": "gpt-6.1-sol",
       "reviewedCommit": "e4f5fc9bacd56f7d7197b9b4c711c985b138a911",
@@ -92,18 +101,39 @@
       "testsTotal": 41,
       "expectCalls": 124,
       "roundTrips": 3,
-      "verdictRegistered": false
-    }
+      "verdictRegistered": true
+    },
+    "approvedCommit": "69cf3e72ecdfb952d0cc7998790544cb73305068",
+    "verdictCommit": "6d17864eabde271ee5255dd9d2a618478a3bbdf1",
+    "verdictLandingCommit": "5ae5d2c47902ebb63617ccaf0ddab066443030f2"
   },
   "integration": {
-    "status": "blocked",
+    "status": "integrated",
     "workflow": "DelendAI work publish",
-    "integrationSha": "283173341452cd4943470280e0334fa020b76eac",
-    "declared": false,
-    "passed": false,
-    "reason": "develop declares no validation gate; candidate carries no certification"
+    "integrationSha": "69cf3e72ecdfb952d0cc7998790544cb73305068",
+    "againstIntegrationSha": "4139908a3941897103ddff8ded27f5d4f6d2b3ef",
+    "declared": true,
+    "passed": true,
+    "gateCommands": [
+      "bun install --frozen-lockfile",
+      "bun run validate"
+    ],
+    "bootstrapOwnerAuthorized": true
   },
   "gameExecuted": false,
   "remoteCiExecuted": false,
-  "productionReady": false
+  "productionReady": false,
+  "proposal": {
+    "id": "i00001",
+    "status": "done",
+    "closeTransitionId": "0b1a5610-b4e6-4f65-a4e6-fffcd5bbacaa"
+  },
+  "handoff": {
+    "proposal": "f00001",
+    "status": "ready",
+    "firstSlice": "S1",
+    "agentRole": "MiniMax M3.1 content author",
+    "scope": "docs/wiki/route-pilot"
+  },
+  "baseReady": true
 }

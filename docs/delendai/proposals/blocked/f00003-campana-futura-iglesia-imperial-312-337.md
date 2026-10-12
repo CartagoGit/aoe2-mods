@@ -34,7 +34,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 
 ### S1 — Cerrar evidencia y diseño narrativo
 - **Status**: pending
-- **Files**: `docs/wiki/imperial-church/**`
+- **Files**: `docs/wiki/imperial-church`
 - **Gate**: e2e
 - acceptance:
   - "Resolver afirmaciones pendientes con pasajes completos e historiografía; revisar neutralidad y anacronismos."
@@ -43,7 +43,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 ### S2 — Metadatos, localización y medios en preparación
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `staging/campaigns/imperial-church/campaign.json`, `staging/campaigns/imperial-church/native/**`, `staging/campaigns/imperial-church/assets/**`
+- **Files**: `staging/campaigns/imperial-church/campaign.json`, `staging/campaigns/imperial-church/native`, `staging/campaigns/imperial-church/assets`
 - **Gate**: e2e
 - acceptance:
   - "Preparar metadatos permanentes, orden scenarioFiles, narradores, intro/epílogo, recap y continuidad opcional exclusivamente en staging."
@@ -53,7 +53,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 ### S3 — Borrador misión01: acceso y batalla312
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `staging/campaigns/imperial-church/scenarios/01-milvian-bridge/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/01-milvian-bridge`
 - **Gate**: e2e
 - acceptance:
   - "Reutilizar diseño piloto; objetivos por fases, puente/líder y contingencias, reserva militar visible y finita."
@@ -62,7 +62,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 ### S4 — Borrador misión02: negociación en Nicea325
 - **Status**: pending
 - **DependsOn**: [S3]
-- **Files**: `staging/campaigns/imperial-church/scenarios/02-nicaea/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/02-nicaea`
 - **Gate**: e2e
 - acceptance:
   - "Llegada/protección de delegaciones y recursos/negociación como dramatización; resultados del concilio documentados."
@@ -72,7 +72,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 ### S5 — Borrador misión03: rutas de la capital330
 - **Status**: pending
 - **DependsOn**: [S4]
-- **Files**: `staging/campaigns/imperial-church/scenarios/03-new-capital/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/03-new-capital`
 - **Gate**: e2e
 - acceptance:
   - "Economía/comercio/logística330, geografía y facciones justificadas; rutas y alternativas; sin repetir gran batalla."
@@ -82,7 +82,7 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 ### S6 — Materialización conjunta y auditoría de entrega
 - **Status**: pending
 - **DependsOn**: [S5]
-- **Files**: `staging/campaigns/imperial-church/**`, `campaigns/imperial-church/**`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/imperial-church/**`
+- **Files**: `staging/campaigns/imperial-church`, `campaigns/imperial-church`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/imperial-church`
 - **Gate**: e2e
 - acceptance:
   - "Promover bundle completo y ajustar asset.path; reclamar lock/glosario y ejecutar ids:allocate antes del commit de la misma entrega."

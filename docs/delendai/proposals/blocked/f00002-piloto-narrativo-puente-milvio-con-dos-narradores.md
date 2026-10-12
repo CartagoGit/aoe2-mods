@@ -34,7 +34,7 @@ Comprobar historia, diseño, documentación, voces, ilustración y localización
 
 ### S1 — Dossier, cronología y brief verificado
 - **Status**: pending
-- **Files**: `docs/wiki/milvian-pilot/**`
+- **Files**: `docs/wiki/milvian-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Consultar fuentes completas para Constantino, Majencio y puente312; separar hechos, tradición y licencia táctica."
@@ -43,7 +43,7 @@ Comprobar historia, diseño, documentación, voces, ilustración y localización
 ### S2 — Bundle piloto completo en preparación
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `staging/campaigns/milvian-pilot/**`
+- **Files**: `staging/campaigns/milvian-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Preparar metadatos y misión completos en staging: narradores, mapa, fases, derrota recuperable, reserva finita y tres dificultades."
@@ -53,7 +53,7 @@ Comprobar historia, diseño, documentación, voces, ilustración y localización
 ### S3 — Materialización, IDs y terminología
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `staging/campaigns/milvian-pilot/**`, `campaigns/milvian-pilot/**`, `config/string-ids.lock.json`, `config/glossary.json`
+- **Files**: `staging/campaigns/milvian-pilot`, `campaigns/milvian-pilot`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
 - acceptance:
   - "Promover todo el bundle, ajustar rutas finales y asignar IDs con ids:allocate en la misma unidad/entrega bajo locks explícitos."
@@ -62,7 +62,7 @@ Comprobar historia, diseño, documentación, voces, ilustración y localización
 ### S4 — QA adversarial y balance medido
 - **Status**: pending
 - **DependsOn**: [S3]
-- **Files**: `campaigns/milvian-pilot/**`, `docs/qa/milvian-pilot/**`
+- **Files**: `campaigns/milvian-pilot`, `docs/qa/milvian-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Ejecutar casos de juego de objetivos fuera de orden, líder perdido, puente bloqueado, recursos agotados y guardar/cargar; medir las tres dificultades."

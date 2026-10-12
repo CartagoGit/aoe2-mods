@@ -21,6 +21,8 @@ En Linux/macOS puede ser necesario usar `python3`. El adaptador usa `.venv` auto
 
 ## Estado y alcance
 
+BASE READY: infraestructura integrada mediante DelendAI, gate certificado y revisión formal independiente por GPT-6.1. i00001 cerrada; f00001/S1 es la primera tarea lista para MiniMax M3.1. Ver auditoría y recuperar el estado vivo antes de trabajar.
+
 Existe un fixture técnico de dos objetivos y dos traducciones de muestra. No hay campañas históricas completas ni 17 traducciones aprobadas. La exportación binaria pasa el round-trip de escenario y contenedor; la carga en AoE2 aún necesita evidencia. No se declara PRODUCTION READY.
 
 El build intermedio es determinista. Los binarios del parser pueden incluir metadatos temporales: se registran sus hashes por ejecución, sin prometer identidad binaria entre ejecuciones. El ZIP ordena archivos y fija fechas.
