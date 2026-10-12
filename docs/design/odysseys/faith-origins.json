@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "faith-origins",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-roads-of-antioch": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "Orontes towpaths",
+          "es-ES": "las sendas del Orontes"
+        },
+        "title": {
+          "en": "The Road Seen First — Orontes towpaths",
+          "es-ES": "El camino visto primero — las sendas del Orontes"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns Orontes towpaths; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de las sendas del Orontes; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the two meeting houses",
+          "es-ES": "las dos casas de reunión"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the two meeting houses",
+          "es-ES": "Un lugar junto al hogar — las dos casas de reunión"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns the two meeting houses; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de las dos casas de reunión; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the letter keepers",
+          "es-ES": "los custodios de las cartas"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the letter keepers",
+          "es-ES": "Lo que el fuego no debe llevarse — los custodios de las cartas"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns the letter keepers; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de los custodios de las cartas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the Silpius footpath",
+          "es-ES": "la senda del Silpio"
+        },
+        "title": {
+          "en": "The Path Between — the Silpius footpath",
+          "es-ES": "El camino entre ambos — la senda del Silpio"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns the Silpius footpath; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de la senda del Silpio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the river landing",
+          "es-ES": "el embarcadero fluvial"
+        },
+        "title": {
+          "en": "One Honest Consignment — the river landing",
+          "es-ES": "Una remesa honrada — el embarcadero fluvial"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns the river landing; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de el embarcadero fluvial; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the western letter store",
+          "es-ES": "el almacén occidental de las cartas"
+        },
+        "title": {
+          "en": "Raise the Store Again — the western letter store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén occidental de las cartas"
+        },
+        "rationale": {
+          "en": "The documented setting of Letters on the Orontes supports this bounded fictional local task. It concerns the western letter store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Cartas sobre el Orontes permite esta tarea local ficticia y limitada. Se ocupa de el almacén occidental de las cartas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-after-the-siege": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the eastern refuge quarter",
+          "es-ES": "el barrio del refugio oriental"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the eastern refuge quarter",
+          "es-ES": "Quienes eligen marcharse — el barrio del refugio oriental"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the eastern refuge quarter; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de el barrio del refugio oriental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the displaced households",
+          "es-ES": "los hogares desplazados"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the displaced households",
+          "es-ES": "Un lugar junto al hogar — los hogares desplazados"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the displaced households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de los hogares desplazados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the family-name archive",
+          "es-ES": "el archivo de nombres familiares"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the family-name archive",
+          "es-ES": "Lo que el fuego no debe llevarse — el archivo de nombres familiares"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the family-name archive; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de el archivo de nombres familiares; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the eastern hillside",
+          "es-ES": "la ladera oriental"
+        },
+        "title": {
+          "en": "The Path Between — the eastern hillside",
+          "es-ES": "El camino entre ambos — la ladera oriental"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the eastern hillside; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de la ladera oriental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the city approaches",
+          "es-ES": "las aproximaciones a la ciudad"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the city approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones a la ciudad"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the city approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a la ciudad; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the refuge supply post",
+          "es-ES": "el puesto de suministros del refugio"
+        },
+        "title": {
+          "en": "One Honest Consignment — the refuge supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros del refugio"
+        },
+        "rationale": {
+          "en": "The documented setting of A Road Beyond the Walls supports this bounded fictional local task. It concerns the refuge supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un camino más allá de los muros permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros del refugio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-governors-question": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the witness-copy desk",
+          "es-ES": "la mesa de copias de los testigos"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the witness-copy desk",
+          "es-ES": "Lo que el fuego no debe llevarse — la mesa de copias de los testigos"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the witness-copy desk; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de la mesa de copias de los testigos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the woodland road",
+          "es-ES": "el camino del bosque"
+        },
+        "title": {
+          "en": "The Path Between — the woodland road",
+          "es-ES": "El camino entre ambos — el camino del bosque"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the woodland road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de el camino del bosque; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the provincial road post",
+          "es-ES": "el puesto de la calzada provincial"
+        },
+        "title": {
+          "en": "One Honest Consignment — the provincial road post",
+          "es-ES": "Una remesa honrada — el puesto de la calzada provincial"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the provincial road post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de el puesto de la calzada provincial; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the governor road junctions",
+          "es-ES": "los cruces de la calzada del gobernador"
+        },
+        "title": {
+          "en": "The Road Seen First — the governor road junctions",
+          "es-ES": "El camino visto primero — los cruces de la calzada del gobernador"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the governor road junctions; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de los cruces de la calzada del gobernador; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the waiting households",
+          "es-ES": "los hogares que esperan"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the waiting households",
+          "es-ES": "Un lugar junto al hogar — los hogares que esperan"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the waiting households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de los hogares que esperan; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the copyists store",
+          "es-ES": "el almacén de los copistas"
+        },
+        "title": {
+          "en": "Raise the Store Again — the copyists store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de los copistas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Governor’s Question supports this bounded fictional local task. It concerns the copyists store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La pregunta del gobernador permite esta tarea local ficticia y limitada. Se ocupa de el almacén de los copistas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-a-different-dawn": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the surviving archive shelves",
+          "es-ES": "los estantes del archivo conservado"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the surviving archive shelves",
+          "es-ES": "Lo que el fuego no debe llevarse — los estantes del archivo conservado"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the surviving archive shelves; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de los estantes del archivo conservado; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the families beside the archive",
+          "es-ES": "las familias junto al archivo"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the families beside the archive",
+          "es-ES": "Quienes eligen marcharse — las familias junto al archivo"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the families beside the archive; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de las familias junto al archivo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the reopened store",
+          "es-ES": "el almacén reabierto"
+        },
+        "title": {
+          "en": "Raise the Store Again — the reopened store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén reabierto"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the reopened store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de el almacén reabierto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Milan road depot",
+          "es-ES": "el depósito de la calzada de Milán"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Milan road depot",
+          "es-ES": "Una remesa honrada — el depósito de la calzada de Milán"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the Milan road depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de el depósito de la calzada de Milán; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the archive approach",
+          "es-ES": "la aproximación al archivo"
+        },
+        "title": {
+          "en": "The Path Between — the archive approach",
+          "es-ES": "El camino entre ambos — la aproximación al archivo"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the archive approach; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de la aproximación al archivo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the returning households",
+          "es-ES": "los hogares que regresan"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the returning households",
+          "es-ES": "Un lugar junto al hogar — los hogares que regresan"
+        },
+        "rationale": {
+          "en": "The documented setting of A Different Dawn supports this bounded fictional local task. It concerns the returning households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un amanecer distinto permite esta tarea local ficticia y limitada. Se ocupa de los hogares que regresan; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

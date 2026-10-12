@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "umayyads",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-ledgers-of-damascus": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the Ghouta civic store",
+          "es-ES": "el almacén cívico de la Guta"
+        },
+        "title": {
+          "en": "Raise the Store Again — the Ghouta civic store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén cívico de la Guta"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the Ghouta civic store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el almacén cívico de la Guta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Ghouta supply post",
+          "es-ES": "el puesto de suministros de la Guta"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Ghouta supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la Guta"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the Ghouta supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la Guta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the civic road junction",
+          "es-ES": "el cruce de la calzada cívica"
+        },
+        "title": {
+          "en": "The Path Between — the civic road junction",
+          "es-ES": "El camino entre ambos — el cruce de la calzada cívica"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the civic road junction; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el cruce de la calzada cívica; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the neighbourhood account copies",
+          "es-ES": "las copias de las cuentas del barrio"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the neighbourhood account copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de las cuentas del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the neighbourhood account copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de las copias de las cuentas del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the orchard households",
+          "es-ES": "los hogares de los huertos"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the orchard households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los huertos"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the orchard households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los huertos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the orchard-road approaches",
+          "es-ES": "las aproximaciones a los caminos de los huertos"
+        },
+        "title": {
+          "en": "The Road Seen First — the orchard-road approaches",
+          "es-ES": "El camino visto primero — las aproximaciones a los caminos de los huertos"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the orchard-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a los caminos de los huertos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-stone-and-memory": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the works supply store",
+          "es-ES": "el almacén de suministros de la obra"
+        },
+        "title": {
+          "en": "Raise the Store Again — the works supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the works supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the works-gate consignment post",
+          "es-ES": "el puesto de remesas de la puerta de la obra"
+        },
+        "title": {
+          "en": "One Honest Consignment — the works-gate consignment post",
+          "es-ES": "Una remesa honrada — el puesto de remesas de la puerta de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the works-gate consignment post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de el puesto de remesas de la puerta de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the construction inventory copies",
+          "es-ES": "las copias del inventario de construcción"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the construction inventory copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias del inventario de construcción"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the construction inventory copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de las copias del inventario de construcción; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the supply street outside the works",
+          "es-ES": "la calle de suministros fuera de la obra"
+        },
+        "title": {
+          "en": "The Path Between — the supply street outside the works",
+          "es-ES": "El camino entre ambos — la calle de suministros fuera de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the supply street outside the works; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de la calle de suministros fuera de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the workers households",
+          "es-ES": "los hogares de los trabajadores"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the workers households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los trabajadores"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the workers households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los trabajadores; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the construction-road approaches",
+          "es-ES": "las aproximaciones de las calzadas de construcción"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the construction-road approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones de las calzadas de construcción"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the construction-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de las calzadas de construcción; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-western-shore": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the voluntary harbour evacuees",
+          "es-ES": "los evacuados voluntarios del puerto"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the voluntary harbour evacuees",
+          "es-ES": "Quienes eligen marcharse — los evacuados voluntarios del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the voluntary harbour evacuees; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de los evacuados voluntarios del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the inland withdrawal road",
+          "es-ES": "el camino de retirada tierra adentro"
+        },
+        "title": {
+          "en": "The Path Between — the inland withdrawal road",
+          "es-ES": "El camino entre ambos — el camino de retirada tierra adentro"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland withdrawal road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de el camino de retirada tierra adentro; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian departure lists",
+          "es-ES": "las listas de salida civil"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian departure lists",
+          "es-ES": "Lo que el fuego no debe llevarse — las listas de salida civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the civilian departure lists; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de las listas de salida civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the inland receiving households",
+          "es-ES": "los hogares receptores del interior"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the inland receiving households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores del interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland receiving households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores del interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the inland supply store",
+          "es-ES": "el almacén de suministros del interior"
+        },
+        "title": {
+          "en": "Raise the Store Again — the inland supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros del interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros del interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the port-quarter approaches",
+          "es-ES": "las aproximaciones al barrio del puerto"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the port-quarter approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones al barrio del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the port-quarter approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al barrio del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-the-narrow-sea": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the north-shore landing approaches",
+          "es-ES": "las aproximaciones al desembarcadero de la costa norte"
+        },
+        "title": {
+          "en": "The Road Seen First — the north-shore landing approaches",
+          "es-ES": "El camino visto primero — las aproximaciones al desembarcadero de la costa norte"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the north-shore landing approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al desembarcadero de la costa norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the inland pass road",
+          "es-ES": "el camino del paso hacia el interior"
+        },
+        "title": {
+          "en": "The Path Between — the inland pass road",
+          "es-ES": "El camino entre ambos — el camino del paso hacia el interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the inland pass road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el camino del paso hacia el interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the north-shore supply post",
+          "es-ES": "el puesto de suministros de la costa norte"
+        },
+        "title": {
+          "en": "One Honest Consignment — the north-shore supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la costa norte"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the north-shore supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la costa norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the landing depot",
+          "es-ES": "el depósito del desembarcadero"
+        },
+        "title": {
+          "en": "Raise the Store Again — the landing depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito del desembarcadero"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the landing depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el depósito del desembarcadero; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the finite cargo copies",
+          "es-ES": "las copias de la carga finita"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the finite cargo copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de la carga finita"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the finite cargo copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de las copias de la carga finita; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the shore households",
+          "es-ES": "los hogares de la costa"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the shore households",
+          "es-ES": "Un lugar junto al hogar — los hogares de la costa"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the shore households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de los hogares de la costa; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "05-the-last-crossing": [
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the southern retreat road",
+          "es-ES": "el camino de retirada del sur"
+        },
+        "title": {
+          "en": "The Path Between — the southern retreat road",
+          "es-ES": "El camino entre ambos — el camino de retirada del sur"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the southern retreat road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de el camino de retirada del sur; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the civilian groups beside the retreat",
+          "es-ES": "los grupos civiles junto a la retirada"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the civilian groups beside the retreat",
+          "es-ES": "Quienes eligen marcharse — los grupos civiles junto a la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the civilian groups beside the retreat; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de los grupos civiles junto a la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the reserve crossing approaches",
+          "es-ES": "las aproximaciones del cruce de las reservas"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the reserve crossing approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones del cruce de las reservas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the reserve crossing approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones del cruce de las reservas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving-bank households",
+          "es-ES": "los hogares de la ribera receptora"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving-bank households",
+          "es-ES": "Un lugar junto al hogar — los hogares de la ribera receptora"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the receiving-bank households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de los hogares de la ribera receptora; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the departure register copies",
+          "es-ES": "las copias del registro de salida"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the departure register copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias del registro de salida"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the departure register copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de las copias del registro de salida; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the retreat supply store",
+          "es-ES": "el almacén de suministros de la retirada"
+        },
+        "title": {
+          "en": "Raise the Store Again — the retreat supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the retreat supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

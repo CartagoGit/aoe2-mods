@@ -65,3 +65,7 @@ Una cubierta y retrato particular por campaña; ilustración contextual por esce
 ## Verificación y límites
 
 Regenerar `python3 tools/design/render.py`; validar `python3 tools/design/verify.py`; ejecutar `bun run validate`. Cuando cambie el adaptador: `bun run test:export`. El validador de diseño verifica identidades, fuentes, rutas acíclicas, doble voz, bilingüismo, cuentas/oleadas, coordenadas y hashes de descargas; no verifica verdad histórica, rasterización final, comportamiento del motor o diversión. Todas las matrices de QA de los39 escenarios están pending hasta evidencia real.
+
+## Secundarios y alternativas: ampliación d00002
+
+La base39sustituye los cuatro depósitos/miradores genéricos por seis tareas locales por misión. El contrato completo y la arquitectura editorial están en [plan de odiseas](odyssey-production-plan.md). Recetas particulares: `odysseys/<campaignId>.json`; campos consolidados: secondaryObjectives, secondaryBudget, playstyles. Las tres estrategias son combinables y no cambian los objetivos ni el desenlace histórico. Costes/recompensas/visitas/IDs/persistencia se especifican por tarea; una tarea fallida no derrota al jugador. Su financiación se resta del banco reservado, y la partida principal debe ser solvente sin premios. Los episodios nuevos de las odiseas deberán satisfacer este mismo contrato. Soporte nativo y calibración siguen pendientes de i00003/s00001; un JSON generado no los acredita.

@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "first-caliphs",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-the-oasis-road": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving oasis households",
+          "es-ES": "los hogares receptores del oasis"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving oasis households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the receiving oasis households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the well-road junction",
+          "es-ES": "el cruce del camino de los pozos"
+        },
+        "title": {
+          "en": "The Path Between — the well-road junction",
+          "es-ES": "El camino entre ambos — el cruce del camino de los pozos"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the well-road junction; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de el cruce del camino de los pozos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the settlement store",
+          "es-ES": "el almacén del asentamiento"
+        },
+        "title": {
+          "en": "Raise the Store Again — the settlement store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del asentamiento"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the settlement store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de el almacén del asentamiento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the oasis caravan post",
+          "es-ES": "el puesto de caravanas del oasis"
+        },
+        "title": {
+          "en": "One Honest Consignment — the oasis caravan post",
+          "es-ES": "Una remesa honrada — el puesto de caravanas del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the oasis caravan post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de el puesto de caravanas del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the water-distribution copies",
+          "es-ES": "las copias de distribución del agua"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the water-distribution copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de distribución del agua"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the water-distribution copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de las copias de distribución del agua; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the outer oasis paths",
+          "es-ES": "las sendas exteriores del oasis"
+        },
+        "title": {
+          "en": "The Road Seen First — the outer oasis paths",
+          "es-ES": "El camino visto primero — las sendas exteriores del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of The Oasis Road supports this bounded fictional local task. It concerns the outer oasis paths; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del oasis permite esta tarea local ficticia y limitada. Se ocupa de las sendas exteriores del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-the-roads-of-yamama": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the two Yamama oasis tracks",
+          "es-ES": "las dos sendas de los oasis de Yamama"
+        },
+        "title": {
+          "en": "The Road Seen First — the two Yamama oasis tracks",
+          "es-ES": "El camino visto primero — las dos sendas de los oasis de Yamama"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the two Yamama oasis tracks; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de las dos sendas de los oasis de Yamama; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the dry convoy detour",
+          "es-ES": "el desvío seco del convoy"
+        },
+        "title": {
+          "en": "The Path Between — the dry convoy detour",
+          "es-ES": "El camino entre ambos — el desvío seco del convoy"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the dry convoy detour; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de el desvío seco del convoy; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the oasis refuge households",
+          "es-ES": "los hogares del refugio del oasis"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the oasis refuge households",
+          "es-ES": "Un lugar junto al hogar — los hogares del refugio del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the oasis refuge households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de los hogares del refugio del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the supply-track store",
+          "es-ES": "el almacén de la senda de suministros"
+        },
+        "title": {
+          "en": "Raise the Store Again — the supply-track store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de la senda de suministros"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the supply-track store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de el almacén de la senda de suministros; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the reserve approach tracks",
+          "es-ES": "las sendas de aproximación de la reserva"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the reserve approach tracks",
+          "es-ES": "Ojos más allá de la puerta — las sendas de aproximación de la reserva"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the reserve approach tracks; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de las sendas de aproximación de la reserva; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the convoy departure copies",
+          "es-ES": "las copias de salida del convoy"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the convoy departure copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de salida del convoy"
+        },
+        "rationale": {
+          "en": "The documented setting of The Roads of Yamama supports this bounded fictional local task. It concerns the convoy departure copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los caminos de Yamama permite esta tarea local ficticia y limitada. Se ocupa de las copias de salida del convoy; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-edge-of-the-river": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the plateau supply approaches",
+          "es-ES": "las aproximaciones de suministros de la meseta"
+        },
+        "title": {
+          "en": "The Road Seen First — the plateau supply approaches",
+          "es-ES": "El camino visto primero — las aproximaciones de suministros de la meseta"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the plateau supply approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de suministros de la meseta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the northern reserve paths",
+          "es-ES": "las sendas de las reservas del norte"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the northern reserve paths",
+          "es-ES": "Ojos más allá de la puerta — las sendas de las reservas del norte"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the northern reserve paths; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de las sendas de las reservas del norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the plateau relief track",
+          "es-ES": "la senda alternativa de la meseta"
+        },
+        "title": {
+          "en": "The Path Between — the plateau relief track",
+          "es-ES": "El camino entre ambos — la senda alternativa de la meseta"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the plateau relief track; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de la senda alternativa de la meseta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the supply-point households",
+          "es-ES": "los hogares del punto de suministros"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the supply-point households",
+          "es-ES": "Un lugar junto al hogar — los hogares del punto de suministros"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the supply-point households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de los hogares del punto de suministros; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the protected supply store",
+          "es-ES": "el almacén de suministros protegido"
+        },
+        "title": {
+          "en": "Raise the Store Again — the protected supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros protegido"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the protected supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros protegido; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian transit register",
+          "es-ES": "el registro de tránsito civil"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian transit register",
+          "es-ES": "Lo que el fuego no debe llevarse — el registro de tránsito civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Edge of the River supports this bounded fictional local task. It concerns the civilian transit register; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al borde del río permite esta tarea local ficticia y limitada. Se ocupa de el registro de tránsito civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-fields-of-the-sawad": [
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the canal-side dry road",
+          "es-ES": "el camino seco junto al canal"
+        },
+        "title": {
+          "en": "The Path Between — the canal-side dry road",
+          "es-ES": "El camino entre ambos — el camino seco junto al canal"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the canal-side dry road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de el camino seco junto al canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the canal crossing approaches",
+          "es-ES": "las aproximaciones al paso del canal"
+        },
+        "title": {
+          "en": "The Road Seen First — the canal crossing approaches",
+          "es-ES": "El camino visto primero — las aproximaciones al paso del canal"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the canal crossing approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al paso del canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the dry-bank supply store",
+          "es-ES": "el almacén de suministros de la ribera seca"
+        },
+        "title": {
+          "en": "Raise the Store Again — the dry-bank supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la ribera seca"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the dry-bank supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la ribera seca; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the canal-side households",
+          "es-ES": "los hogares junto al canal"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the canal-side households",
+          "es-ES": "Un lugar junto al hogar — los hogares junto al canal"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the canal-side households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de los hogares junto al canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the irrigation-road post",
+          "es-ES": "el puesto de la calzada de riego"
+        },
+        "title": {
+          "en": "One Honest Consignment — the irrigation-road post",
+          "es-ES": "Una remesa honrada — el puesto de la calzada de riego"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the irrigation-road post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de el puesto de la calzada de riego; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the local supply accounts",
+          "es-ES": "las cuentas locales de suministros"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the local supply accounts",
+          "es-ES": "Lo que el fuego no debe llevarse — las cuentas locales de suministros"
+        },
+        "rationale": {
+          "en": "The documented setting of Fields of the Sawad supports this bounded fictional local task. It concerns the local supply accounts; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los campos del Sawad permite esta tarea local ficticia y limitada. Se ocupa de las cuentas locales de suministros; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "05-a-camp-beside-the-nile": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the east-bank depot",
+          "es-ES": "el depósito de la ribera oriental"
+        },
+        "title": {
+          "en": "Raise the Store Again — the east-bank depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito de la ribera oriental"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the east-bank depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de el depósito de la ribera oriental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Nile-side supply post",
+          "es-ES": "el puesto de suministros junto al Nilo"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Nile-side supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros junto al Nilo"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the Nile-side supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros junto al Nilo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the east-bank land approach",
+          "es-ES": "la aproximación terrestre de la ribera oriental"
+        },
+        "title": {
+          "en": "The Path Between — the east-bank land approach",
+          "es-ES": "El camino entre ambos — la aproximación terrestre de la ribera oriental"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the east-bank land approach; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de la aproximación terrestre de la ribera oriental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the port inventories",
+          "es-ES": "los inventarios del puerto"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the port inventories",
+          "es-ES": "Lo que el fuego no debe llevarse — los inventarios del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the port inventories; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de los inventarios del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving port households",
+          "es-ES": "los hogares receptores del puerto"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving port households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the receiving port households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the land approaches to the camp",
+          "es-ES": "las aproximaciones terrestres al campamento"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the land approaches to the camp",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones terrestres al campamento"
+        },
+        "rationale": {
+          "en": "The documented setting of A Camp Beside the Nile supports this bounded fictional local task. It concerns the land approaches to the camp; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un campamento junto al Nilo permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones terrestres al campamento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

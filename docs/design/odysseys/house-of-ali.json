@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "house-of-ali",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-the-kufan-hearth": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the three neighbourhood households",
+          "es-ES": "los hogares de los tres barrios"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the three neighbourhood households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los tres barrios"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the three neighbourhood households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los tres barrios; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the civilian store",
+          "es-ES": "el almacén civil"
+        },
+        "title": {
+          "en": "Raise the Store Again — the civilian store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the civilian store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de el almacén civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the independent neighbourhood copies",
+          "es-ES": "las copias independientes del barrio"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the independent neighbourhood copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias independientes del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the independent neighbourhood copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de las copias independientes del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the district road post",
+          "es-ES": "el puesto de la calzada del barrio"
+        },
+        "title": {
+          "en": "One Honest Consignment — the district road post",
+          "es-ES": "Una remesa honrada — el puesto de la calzada del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the district road post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de el puesto de la calzada del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the store-to-household lane",
+          "es-ES": "la calle entre el almacén y los hogares"
+        },
+        "title": {
+          "en": "The Path Between — the store-to-household lane",
+          "es-ES": "El camino entre ambos — la calle entre el almacén y los hogares"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the store-to-household lane; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de la calle entre el almacén y los hogares; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the civilian-quarter approaches",
+          "es-ES": "las aproximaciones al barrio civil"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the civilian-quarter approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones al barrio civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Kufan Hearth supports this bounded fictional local task. It concerns the civilian-quarter approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El hogar de Kufa permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al barrio civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-a-cup-at-siffin": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the care households outside the main aid circuit",
+          "es-ES": "los hogares de cuidados fuera del circuito principal de ayuda"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the care households outside the main aid circuit",
+          "es-ES": "Un lugar junto al hogar — los hogares de cuidados fuera del circuito principal de ayuda"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the care households outside the main aid circuit; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de los hogares de cuidados fuera del circuito principal de ayuda; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the dry approach outside the tents",
+          "es-ES": "la aproximación seca fuera de las tiendas"
+        },
+        "title": {
+          "en": "The Path Between — the dry approach outside the tents",
+          "es-ES": "El camino entre ambos — la aproximación seca fuera de las tiendas"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the dry approach outside the tents; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de la aproximación seca fuera de las tiendas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the independent aid copies",
+          "es-ES": "las copias independientes de ayuda"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the independent aid copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias independientes de ayuda"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the independent aid copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de las copias independientes de ayuda; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the care depot",
+          "es-ES": "el depósito de cuidados"
+        },
+        "title": {
+          "en": "Raise the Store Again — the care depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito de cuidados"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the care depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de el depósito de cuidados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the voluntary families outside the camps",
+          "es-ES": "las familias voluntarias fuera de los campamentos"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the voluntary families outside the camps",
+          "es-ES": "Quienes eligen marcharse — las familias voluntarias fuera de los campamentos"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the voluntary families outside the camps; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de las familias voluntarias fuera de los campamentos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the outer aid-road approaches",
+          "es-ES": "las aproximaciones exteriores al camino de ayuda"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the outer aid-road approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones exteriores al camino de ayuda"
+        },
+        "rationale": {
+          "en": "The documented setting of A Cup at Siffin supports this bounded fictional local task. It concerns the outer aid-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Un cuenco en Siffin permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones exteriores al camino de ayuda; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-sealed-copy": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the copyists independent spare copies",
+          "es-ES": "las copias de reserva independientes de los copistas"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the copyists independent spare copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de reserva independientes de los copistas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the copyists independent spare copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de las copias de reserva independientes de los copistas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the archive neighbours",
+          "es-ES": "los vecinos del archivo"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the archive neighbours",
+          "es-ES": "Quienes eligen marcharse — los vecinos del archivo"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the archive neighbours; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de los vecinos del archivo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the civilian archive departure road",
+          "es-ES": "el camino de salida del archivo civil"
+        },
+        "title": {
+          "en": "The Path Between — the civilian archive departure road",
+          "es-ES": "El camino entre ambos — el camino de salida del archivo civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the civilian archive departure road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de el camino de salida del archivo civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving copyists households",
+          "es-ES": "los hogares receptores de los copistas"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving copyists households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores de los copistas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the receiving copyists households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores de los copistas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the departure supply post",
+          "es-ES": "el puesto de suministros de la salida"
+        },
+        "title": {
+          "en": "One Honest Consignment — the departure supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la salida"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the departure supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la salida; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the receiving store",
+          "es-ES": "el almacén receptor"
+        },
+        "title": {
+          "en": "Raise the Store Again — the receiving store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén receptor"
+        },
+        "rationale": {
+          "en": "The documented setting of The Sealed Copy supports this bounded fictional local task. It concerns the receiving store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La copia sellada permite esta tarea local ficticia y limitada. Se ocupa de el almacén receptor; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-the-water-that-remains": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the fictional civilian families outside the historical inner camp",
+          "es-ES": "las familias civiles ficticias fuera del campamento histórico interior"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the fictional civilian families outside the historical inner camp",
+          "es-ES": "Quienes eligen marcharse — las familias civiles ficticias fuera del campamento histórico interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the fictional civilian families outside the historical inner camp; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de las familias civiles ficticias fuera del campamento histórico interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the same outside-camp aid households",
+          "es-ES": "los hogares de ayuda fuera del campamento"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the same outside-camp aid households",
+          "es-ES": "Un lugar junto al hogar — los hogares de ayuda fuera del campamento"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the same outside-camp aid households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de los hogares de ayuda fuera del campamento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the outside-camp household copies",
+          "es-ES": "las copias de los hogares fuera del campamento"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the outside-camp household copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de los hogares fuera del campamento"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the outside-camp household copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de las copias de los hogares fuera del campamento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the eastward civilian withdrawal road",
+          "es-ES": "el camino de retirada civil hacia el este"
+        },
+        "title": {
+          "en": "The Path Between — the eastward civilian withdrawal road",
+          "es-ES": "El camino entre ambos — el camino de retirada civil hacia el este"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the eastward civilian withdrawal road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de el camino de retirada civil hacia el este; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the outside-camp water store",
+          "es-ES": "el almacén de agua fuera del campamento"
+        },
+        "title": {
+          "en": "Raise the Store Again — the outside-camp water store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de agua fuera del campamento"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the outside-camp water store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de el almacén de agua fuera del campamento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the civilian withdrawal approaches",
+          "es-ES": "las aproximaciones de la retirada civil"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the civilian withdrawal approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones de la retirada civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Water That Remains supports this bounded fictional local task. It concerns the civilian withdrawal approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El agua que queda permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de la retirada civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

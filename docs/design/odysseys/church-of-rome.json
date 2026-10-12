@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "church-of-rome",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-bread-beyond-the-gates": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the lower-Tiber refuge households",
+          "es-ES": "los hogares del refugio del bajo Tíber"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the lower-Tiber refuge households",
+          "es-ES": "Un lugar junto al hogar — los hogares del refugio del bajo Tíber"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the lower-Tiber refuge households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de los hogares del refugio del bajo Tíber; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the riverside families",
+          "es-ES": "las familias de la ribera"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the riverside families",
+          "es-ES": "Quienes eligen marcharse — las familias de la ribera"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the riverside families; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de las familias de la ribera; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the lower-Tiber grain store",
+          "es-ES": "el granero del bajo Tíber"
+        },
+        "title": {
+          "en": "Raise the Store Again — the lower-Tiber grain store",
+          "es-ES": "Levantar de nuevo el almacén — el granero del bajo Tíber"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the lower-Tiber grain store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de el granero del bajo Tíber; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the refuge road",
+          "es-ES": "el camino del refugio"
+        },
+        "title": {
+          "en": "The Path Between — the refuge road",
+          "es-ES": "El camino entre ambos — el camino del refugio"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the refuge road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de el camino del refugio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the ration lists",
+          "es-ES": "las listas de raciones"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the ration lists",
+          "es-ES": "Lo que el fuego no debe llevarse — las listas de raciones"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the ration lists; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de las listas de raciones; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Ostia road post",
+          "es-ES": "el puesto de la calzada de Ostia"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Ostia road post",
+          "es-ES": "Una remesa honrada — el puesto de la calzada de Ostia"
+        },
+        "rationale": {
+          "en": "The documented setting of Bread Beyond the Gates supports this bounded fictional local task. It concerns the Ostia road post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Pan más allá de las puertas permite esta tarea local ficticia y limitada. Se ocupa de el puesto de la calzada de Ostia; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-the-price-of-peace": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the envoys public copies",
+          "es-ES": "las copias públicas de los enviados"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the envoys public copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias públicas de los enviados"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the envoys public copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de las copias públicas de los enviados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the truce-road post",
+          "es-ES": "el puesto del camino de la tregua"
+        },
+        "title": {
+          "en": "One Honest Consignment — the truce-road post",
+          "es-ES": "Una remesa honrada — el puesto del camino de la tregua"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the truce-road post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de el puesto del camino de la tregua; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the second envoy road",
+          "es-ES": "el segundo camino de los enviados"
+        },
+        "title": {
+          "en": "The Path Between — the second envoy road",
+          "es-ES": "El camino entre ambos — el segundo camino de los enviados"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the second envoy road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de el segundo camino de los enviados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the waiting families",
+          "es-ES": "las familias que esperan"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the waiting families",
+          "es-ES": "Un lugar junto al hogar — las familias que esperan"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the waiting families; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de las familias que esperan; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the guarded-road approaches",
+          "es-ES": "las aproximaciones a los caminos vigilados"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the guarded-road approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones a los caminos vigilados"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the guarded-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a los caminos vigilados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the reception store",
+          "es-ES": "el almacén receptor"
+        },
+        "title": {
+          "en": "Raise the Store Again — the reception store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén receptor"
+        },
+        "rationale": {
+          "en": "The documented setting of The Price of Peace supports this bounded fictional local task. It concerns the reception store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El precio de la paz permite esta tarea local ficticia y limitada. Se ocupa de el almacén receptor; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-roads-to-pavia": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the northern Pavia approach",
+          "es-ES": "la aproximación norte a Pavía"
+        },
+        "title": {
+          "en": "The Road Seen First — the northern Pavia approach",
+          "es-ES": "El camino visto primero — la aproximación norte a Pavía"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the northern Pavia approach; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de la aproximación norte a Pavía; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the road-supply store",
+          "es-ES": "el almacén de suministros de la calzada"
+        },
+        "title": {
+          "en": "Raise the Store Again — the road-supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la calzada"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the road-supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la calzada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the dry convoy detour",
+          "es-ES": "el desvío seco del convoy"
+        },
+        "title": {
+          "en": "The Path Between — the dry convoy detour",
+          "es-ES": "El camino entre ambos — el desvío seco del convoy"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the dry convoy detour; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de el desvío seco del convoy; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the roadside refuge",
+          "es-ES": "el refugio junto a la calzada"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the roadside refuge",
+          "es-ES": "Un lugar junto al hogar — el refugio junto a la calzada"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the roadside refuge; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de el refugio junto a la calzada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Pavia supply post",
+          "es-ES": "el puesto de suministros de Pavía"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Pavia supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de Pavía"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the Pavia supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de Pavía; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the consignment copies",
+          "es-ES": "las copias de las remesas"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the consignment copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de las remesas"
+        },
+        "rationale": {
+          "en": "The documented setting of Roads to Pavia supports this bounded fictional local task. It concerns the consignment copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Caminos hacia Pavía permite esta tarea local ficticia y limitada. Se ocupa de las copias de las remesas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-a-crown-at-dawn": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the delegation inventories",
+          "es-ES": "los inventarios de las delegaciones"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the delegation inventories",
+          "es-ES": "Lo que el fuego no debe llevarse — los inventarios de las delegaciones"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the delegation inventories; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de los inventarios de las delegaciones; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the pilgrims lodging households",
+          "es-ES": "los hogares que alojan peregrinos"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the pilgrims lodging households",
+          "es-ES": "Un lugar junto al hogar — los hogares que alojan peregrinos"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the pilgrims lodging households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de los hogares que alojan peregrinos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the appointed gate road",
+          "es-ES": "el camino de la puerta asignada"
+        },
+        "title": {
+          "en": "The Path Between — the appointed gate road",
+          "es-ES": "El camino entre ambos — el camino de la puerta asignada"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the appointed gate road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de el camino de la puerta asignada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the ceremonial supply post",
+          "es-ES": "el puesto de suministros de la ceremonia"
+        },
+        "title": {
+          "en": "One Honest Consignment — the ceremonial supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la ceremonia"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the ceremonial supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la ceremonia; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the lodging store",
+          "es-ES": "el almacén del alojamiento"
+        },
+        "title": {
+          "en": "Raise the Store Again — the lodging store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del alojamiento"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the lodging store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de el almacén del alojamiento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the gate approaches",
+          "es-ES": "las aproximaciones a las puertas"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the gate approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones a las puertas"
+        },
+        "rationale": {
+          "en": "The documented setting of A Crown at Dawn supports this bounded fictional local task. It concerns the gate approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una corona al amanecer permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a las puertas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "first-fitna",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-news-from-medina": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the verified public dispatch copies",
+          "es-ES": "las copias de los despachos públicos verificados"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the verified public dispatch copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de los despachos públicos verificados"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the verified public dispatch copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de las copias de los despachos públicos verificados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the families beside the oasis stores",
+          "es-ES": "las familias junto a los almacenes del oasis"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the families beside the oasis stores",
+          "es-ES": "Quienes eligen marcharse — las familias junto a los almacenes del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the families beside the oasis stores; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de las familias junto a los almacenes del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the waiting oasis households",
+          "es-ES": "los hogares que esperan en el oasis"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the waiting oasis households",
+          "es-ES": "Un lugar junto al hogar — los hogares que esperan en el oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the waiting oasis households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de los hogares que esperan en el oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the civilian departure road",
+          "es-ES": "el camino de salida civil"
+        },
+        "title": {
+          "en": "The Path Between — the civilian departure road",
+          "es-ES": "El camino entre ambos — el camino de salida civil"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the civilian departure road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de el camino de salida civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Medina supply post",
+          "es-ES": "el puesto de suministros de Medina"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Medina supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de Medina"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the Medina supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de Medina; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the oasis departure approaches",
+          "es-ES": "las aproximaciones a la salida del oasis"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the oasis departure approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones a la salida del oasis"
+        },
+        "rationale": {
+          "en": "The documented setting of News from Medina supports this bounded fictional local task. It concerns the oasis departure approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Noticias desde Medina permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a la salida del oasis; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-between-the-camps": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the dry-quarter civilian groups",
+          "es-ES": "los grupos civiles del barrio seco"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the dry-quarter civilian groups",
+          "es-ES": "Quienes eligen marcharse — los grupos civiles del barrio seco"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the dry-quarter civilian groups; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de los grupos civiles del barrio seco; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving care households",
+          "es-ES": "los hogares receptores de cuidados"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving care households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores de cuidados"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the receiving care households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores de cuidados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian admission copies",
+          "es-ES": "las copias de admisión civil"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian admission copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de admisión civil"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the civilian admission copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de las copias de admisión civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the western dry corridor",
+          "es-ES": "el corredor seco occidental"
+        },
+        "title": {
+          "en": "The Path Between — the western dry corridor",
+          "es-ES": "El camino entre ambos — el corredor seco occidental"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the western dry corridor; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de el corredor seco occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the care supply store",
+          "es-ES": "el almacén de suministros de cuidados"
+        },
+        "title": {
+          "en": "Raise the Store Again — the care supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de cuidados"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the care supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de cuidados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the dry corridor approaches",
+          "es-ES": "las aproximaciones al corredor seco"
+        },
+        "title": {
+          "en": "The Road Seen First — the dry corridor approaches",
+          "es-ES": "El camino visto primero — las aproximaciones al corredor seco"
+        },
+        "rationale": {
+          "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the dry corridor approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al corredor seco; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-water-and-words": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the civilian households outside the tents",
+          "es-ES": "los hogares civiles fuera de las tiendas"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the civilian households outside the tents",
+          "es-ES": "Un lugar junto al hogar — los hogares civiles fuera de las tiendas"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the civilian households outside the tents; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de los hogares civiles fuera de las tiendas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the public truce dispatch copies",
+          "es-ES": "las copias de los despachos públicos de tregua"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the public truce dispatch copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de los despachos públicos de tregua"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the public truce dispatch copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de las copias de los despachos públicos de tregua; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the dry approach outside the tents",
+          "es-ES": "la aproximación seca fuera de las tiendas"
+        },
+        "title": {
+          "en": "The Path Between — the dry approach outside the tents",
+          "es-ES": "El camino entre ambos — la aproximación seca fuera de las tiendas"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the dry approach outside the tents; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de la aproximación seca fuera de las tiendas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the supply-corridor approaches",
+          "es-ES": "las aproximaciones al corredor de suministros"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the supply-corridor approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones al corredor de suministros"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the supply-corridor approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al corredor de suministros; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the aid-wagon depot",
+          "es-ES": "el depósito de carros de ayuda"
+        },
+        "title": {
+          "en": "Raise the Store Again — the aid-wagon depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito de carros de ayuda"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the aid-wagon depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de el depósito de carros de ayuda; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the voluntary riverbank evacuees",
+          "es-ES": "los evacuados voluntarios de la ribera"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the voluntary riverbank evacuees",
+          "es-ES": "Quienes eligen marcharse — los evacuados voluntarios de la ribera"
+        },
+        "rationale": {
+          "en": "The documented setting of Water and Words supports this bounded fictional local task. It concerns the voluntary riverbank evacuees; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Agua y palabras permite esta tarea local ficticia y limitada. Se ocupa de los evacuados voluntarios de la ribera; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-the-canal-road": [
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the safe canal-side withdrawal path",
+          "es-ES": "la senda segura de retirada junto al canal"
+        },
+        "title": {
+          "en": "The Path Between — the safe canal-side withdrawal path",
+          "es-ES": "El camino entre ambos — la senda segura de retirada junto al canal"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the safe canal-side withdrawal path; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de la senda segura de retirada junto al canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the two canal approaches",
+          "es-ES": "las dos aproximaciones al canal"
+        },
+        "title": {
+          "en": "The Road Seen First — the two canal approaches",
+          "es-ES": "El camino visto primero — las dos aproximaciones al canal"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the two canal approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de las dos aproximaciones al canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the civilian canal-side groups",
+          "es-ES": "los grupos civiles junto al canal"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the civilian canal-side groups",
+          "es-ES": "Quienes eligen marcharse — los grupos civiles junto al canal"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the civilian canal-side groups; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de los grupos civiles junto al canal; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving withdrawal households",
+          "es-ES": "los hogares receptores de la retirada"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving withdrawal households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores de la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the receiving withdrawal households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores de la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian route copies",
+          "es-ES": "las copias de las rutas civiles"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian route copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de las rutas civiles"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the civilian route copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de las copias de las rutas civiles; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the withdrawal supply store",
+          "es-ES": "el almacén de suministros de la retirada"
+        },
+        "title": {
+          "en": "Raise the Store Again — the withdrawal supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Canal Road supports this bounded fictional local task. It concerns the withdrawal supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El camino del canal permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "05-two-archives": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the independent civilian archive copies",
+          "es-ES": "las copias del archivo civil independiente"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the independent civilian archive copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias del archivo civil independiente"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the independent civilian archive copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de las copias del archivo civil independiente; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the two receiving districts",
+          "es-ES": "los dos barrios receptores"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the two receiving districts",
+          "es-ES": "Un lugar junto al hogar — los dos barrios receptores"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the two receiving districts; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de los dos barrios receptores; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the neighbourhood return road",
+          "es-ES": "el camino de retorno al barrio"
+        },
+        "title": {
+          "en": "The Path Between — the neighbourhood return road",
+          "es-ES": "El camino entre ambos — el camino de retorno al barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the neighbourhood return road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de el camino de retorno al barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the district supply post",
+          "es-ES": "el puesto de suministros del barrio"
+        },
+        "title": {
+          "en": "One Honest Consignment — the district supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the district supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the receiving archive store",
+          "es-ES": "el almacén del archivo receptor"
+        },
+        "title": {
+          "en": "Raise the Store Again — the receiving archive store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del archivo receptor"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the receiving archive store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de el almacén del archivo receptor; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the families seeking a new lodging",
+          "es-ES": "las familias que buscan nuevo alojamiento"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the families seeking a new lodging",
+          "es-ES": "Quienes eligen marcharse — las familias que buscan nuevo alojamiento"
+        },
+        "rationale": {
+          "en": "The documented setting of Two Archives, One Past supports this bounded fictional local task. It concerns the families seeking a new lodging; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Dos archivos, un pasado permite esta tarea local ficticia y limitada. Se ocupa de las familias que buscan nuevo alojamiento; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}
