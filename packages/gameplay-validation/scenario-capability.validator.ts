@@ -3,6 +3,7 @@ import type {
   CapabilityProfileV2,
   MainObjective,
 } from "../schemas/scenario-capability.schema";
+import { paymentReceiptMatches } from "./payment-receipt.helper";
 
 const resourceNames = ["food", "wood", "gold", "stone"] as const;
 export function validateScenarioCapability(
@@ -67,7 +68,13 @@ export function validateScenarioCapability(
       add("capability.zone-hub", zone.id, "Distrito de zona no declarado");
   }
   for (const group of profile.worldContract.survivorGroups) {
-    if (group.minimumAliveOrAlreadySafe > group.entities.length)
+    if (new Set(group.entities).size !== group.entities.length)
+      add(
+        "capability.survivor-identity",
+        profile.profile,
+        "Un superviviente no puede contar por varios IDs repetidos",
+      );
+    if (group.minimumAliveOrAlreadySafe > new Set(group.entities).size)
       add(
         "capability.survivor-threshold",
         group.entities[0] ?? profile.profile,
@@ -156,6 +163,30 @@ export function validateScenarioCapability(
     }
     for (const req of predicate.requirements) {
       const reqContext = `${context}.${req.id}`;
+      // Every identity list is a set, including lists whose counts are checked elsewhere.
+      for (const [field, ids] of Object.entries(req)) {
+        if (
+          [
+            "entities",
+            "zones",
+            "waves",
+            "inputEntities",
+            "outputEntities",
+            "departingEntities",
+            "receivingZones",
+            "inputRecords",
+            "carriedRecords",
+            "blockingEnemies",
+          ].includes(field) &&
+          Array.isArray(ids) &&
+          new Set(ids).size !== ids.length
+        )
+          add(
+            "capability.identity-list",
+            reqContext,
+            `Identidades repetidas en ${field}`,
+          );
+      }
       const requirementKey = `${context}.${req.id}`;
       if (reqOwners.has(requirementKey))
         add(
@@ -168,6 +199,12 @@ export function validateScenarioCapability(
       const zoneRefs: string[] = [];
       switch (req.kind) {
         case "entity-state":
+          if (new Set(req.entities).size !== req.entities.length)
+            add(
+              "capability.entity-identity-duplicate",
+              reqContext,
+              "Cada identidad se cuenta una sola vez en un predicado",
+            );
           entityRefs.push(...req.entities);
           entityRefs.push(
             ...(req.inputRecords ?? []),
@@ -208,6 +245,30 @@ export function validateScenarioCapability(
                   "Una entidad no puede contar por aparecer dentro de su destino",
                 );
             }
+          }
+          if (
+            req.distinctDestinationCount !== undefined ||
+            req.minimumPerDestination !== undefined
+          ) {
+            const counts = new Map<string, number>();
+            for (const entityId of req.entities) {
+              const zoneId = req.destinations?.[entityId];
+              if (zoneId) counts.set(zoneId, (counts.get(zoneId) ?? 0) + 1);
+            }
+            if (
+              req.state !== "arrived" ||
+              !req.destinations ||
+              counts.size < (req.distinctDestinationCount ?? 0) ||
+              (req.minimumPerDestination !== undefined &&
+                [...counts.values()].some(
+                  (count) => count < (req.minimumPerDestination ?? 0),
+                ))
+            )
+              add(
+                "capability.destination-distribution",
+                reqContext,
+                "Los mínimos por destino requieren llegadas tipadas y suficientes identidades asignadas a cada zona",
+              );
           }
           if (req.eligibleEntitiesFromLedger) {
             const source = objectives.get(
@@ -282,6 +343,17 @@ export function validateScenarioCapability(
         case "forbidden-entry":
         case "hold-area":
           zoneRefs.push(...req.zones);
+          if (
+            req.kind === "civilian-protection" &&
+            (!phaseIds.has(req.activeFrom) ||
+              !phaseIds.has(req.activeUntil) ||
+              req.activeFrom === req.activeUntil)
+          )
+            add(
+              "capability.protection-interval",
+              reqContext,
+              "La protección civil requiere fases de inicio y fin distintas y existentes",
+            );
           if ("blockingEnemies" in req)
             entityRefs.push(...(req.blockingEnemies ?? []));
           if (
@@ -310,13 +382,15 @@ export function validateScenarioCapability(
             );
           receiptOwners.set(req.paidFlag, context);
           if (
-            Object.keys(req.amounts).length === 0 ||
-            req.receivingZones.length < 2
+            resourceNames.every(
+              (resource) => (req.amounts[resource] ?? 0) === 0,
+            ) ||
+            req.receivingZones.length < 1
           )
             add(
               "capability.transaction-empty",
               reqContext,
-              "La transacción debe distribuir un importe entre al menos dos receptores",
+              "La transacción requiere importe positivo y al menos un receptor declarado",
             );
           if (new Set(req.receivingZones).size !== req.receivingZones.length)
             add(
@@ -372,6 +446,16 @@ export function validateScenarioCapability(
           break;
         }
         case "minimum-stock":
+          if (
+            req.atHub !== undefined ||
+            req.accountEntityIds !== undefined ||
+            req.maximumNavigableDistanceTiles !== undefined
+          )
+            add(
+              "capability.stock-location-contract",
+              reqContext,
+              "El stock físico requiere inventario por portador y distancias navegables tipadas; no se acredita con saldo global",
+            );
           entityRefs.push(...(req.accountEntityIds ?? []));
           if (req.atHub) {
             // Hubs are checked below against the declared district table.
@@ -418,8 +502,28 @@ export function validateScenarioCapability(
         case "route-choice":
           break;
         case "finite-wave-resolution":
+          if (
+            req.requiredCount > new Set(req.waves).size ||
+            req.waves.some(
+              (id) =>
+                !profile.enemyRoster.mobilizations.some(
+                  (wave) => wave.id === id,
+                ),
+            )
+          )
+            add(
+              "capability.wave-resolution",
+              reqContext,
+              "El umbral requiere oleadas distintas y declaradas",
+            );
           break;
         case "receipt-exists":
+          if (!paymentReceiptMatches(profile, req))
+            add(
+              "capability.receipt-source",
+              reqContext,
+              "El recibo requiere productor único, objetivo de origen e importe exacto",
+            );
           if (req.newDebit)
             add(
               "capability.receipt-debit",
@@ -697,6 +801,7 @@ export function validateScenarioCapability(
       } else if (req.kind === "visit-zones") {
         if (
           req.countInitialVisibility ||
+          new Set(req.zones).size !== req.zones.length ||
           req.requiredCount !== req.zones.length ||
           req.zones.some(
             (id) => !side.world.zones.some((zone) => zone.id === id),

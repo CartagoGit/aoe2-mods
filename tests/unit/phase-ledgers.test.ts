@@ -931,3 +931,285 @@ describe("independent-review regressions", () => {
     expect(state.secondaryStates["side-1"]).toBe("closed-at-terminal");
   });
 });
+
+describe("delivery destination distribution", () => {
+  const distribution = (minimum = 1) => ({
+    id: "split",
+    kind: "entity-state" as const,
+    state: "arrived" as const,
+    entities: ["unit-a", "cargo-a", "receiver-a"],
+    requiredCount: 2,
+    oncePerEntity: true as const,
+    destinations: {
+      "unit-a": "zone-dest",
+      "cargo-a": "zone-dest",
+      "receiver-a": "zone-other",
+    },
+    distinctDestinationCount: 2,
+    minimumPerDestination: minimum,
+  });
+
+  test("a total count at one destination cannot replace the other receiving post", () => {
+    const fixture = referenceFixture([distribution()]);
+    let state = fixture.step(fixture.entered, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    state = fixture.step(state, {
+      type: "record-arrival",
+      entityId: "cargo-a",
+      zoneId: "zone-dest",
+    });
+    expect(fixture.step(state, latch).objectiveLatches).toEqual([]);
+    state = JSON.parse(JSON.stringify(state));
+    state = fixture.step(state, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-other",
+    });
+    expect(fixture.step(state, latch).objectiveLatches).toEqual([
+      "objective-a",
+    ]);
+  });
+
+  test("infeasible destination counts and per-post minima fail structural validation", () => {
+    for (const requirement of [
+      distribution(2),
+      { ...distribution(), distinctDestinationCount: 3 },
+      { ...distribution(), state: "collected" as const },
+    ]) {
+      const fixture = referenceFixture([requirement]);
+      expect(
+        validateScenarioCapability(fixture.candidate).some(
+          (issue) => issue.code === "capability.destination-distribution",
+        ),
+      ).toBe(true);
+    }
+  });
+});
+
+describe("identity and continuously active protection", () => {
+  test("peaceful profiles support one real payee and no military roster", () => {
+    const payment: Requirement = {
+      id: "payment",
+      kind: "resource-transaction",
+      amounts: { food: 1 },
+      receivingZones: ["zone-dest"],
+      allocations: { "zone-dest": { food: 1 } },
+      paidFlag: "paid-test",
+      account: "spendable",
+      atomic: true,
+      once: true,
+      commit: "atomic",
+    };
+    const f = referenceFixture([payment], (candidate) => {
+      candidate.enemyRoster.initialEntityIds = [];
+      candidate.enemyRoster.mobilizations = [];
+    });
+    expect(capabilityProfileV2Schema.safeParse(f.candidate).success).toBe(true);
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    const paid = f.step(f.entered, {
+      type: "pay-main",
+      objectiveId: "objective-a",
+      requirementId: "payment",
+    });
+    expect(f.step(paid, latch).objectiveLatches).toEqual(["objective-a"]);
+    expect(
+      f.step(paid, { type: "release-wave", waveId: "wave-a" })
+        .releasedRosterIds,
+    ).toEqual([]);
+  });
+
+  test("one resolved wave cannot be counted twice", () => {
+    const f = referenceFixture([
+      {
+        id: "waves",
+        kind: "finite-wave-resolution",
+        waves: ["wave-a", "wave-a"],
+        state: "destroyed",
+        requiredCount: 2,
+        terminalSkip: false,
+      },
+    ]);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.wave-resolution",
+      ),
+    ).toBe(true);
+    let state = f.step(f.entered, { type: "release-wave", waveId: "wave-a" });
+    state = f.step(state, { type: "destroy-entity", entityId: "guard-a" });
+    state = f.step(state, { type: "record-wave-resolved", waveId: "wave-a" });
+    expect(f.step(state, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("duplicate survivor IDs cannot hide irreversible loss", () => {
+    const f = referenceFixture(
+      [
+        {
+          id: "alive",
+          kind: "entity-state",
+          state: "alive",
+          entities: ["unit-a"],
+          requiredCount: 1,
+          oncePerEntity: true,
+        },
+      ],
+      (candidate) => {
+        candidate.worldContract.survivorGroups = [
+          {
+            entities: ["unit-a", "unit-a", "cargo-a"],
+            minimumAliveOrAlreadySafe: 2,
+            loss: "defeat",
+          },
+        ];
+      },
+    );
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.survivor-identity",
+      ),
+    ).toBe(true);
+    const state = f.step(f.entered, {
+      type: "destroy-entity",
+      entityId: "cargo-a",
+    });
+    expect(state.terminal).toBe("defeat");
+  });
+
+  test("receipt queries require the real producer and exact amount, with no second debit", () => {
+    const payment: Requirement = {
+      id: "payment",
+      kind: "resource-transaction",
+      amounts: { food: 1 },
+      receivingZones: ["zone-dest", "zone-other"],
+      allocations: { "zone-dest": { food: 1 }, "zone-other": {} },
+      paidFlag: "paid-test",
+      account: "spendable",
+      atomic: true,
+      once: true,
+      commit: "atomic",
+    };
+    const query: Extract<Requirement, { kind: "receipt-exists" }> = {
+      id: "query",
+      kind: "receipt-exists",
+      flag: "paid-test",
+      fromObjective: "objective-a",
+      amounts: { food: 1 },
+      newDebit: false,
+    };
+    for (const invalid of [
+      { ...query, fromObjective: "missing-objective" },
+      { ...query, amounts: { food: 400 } },
+      { ...query, amounts: { food: 1, gold: 1 } },
+      { ...query, flag: "unrelated-receipt" },
+    ]) {
+      const f = referenceFixture([payment, invalid]);
+      expect(
+        validateScenarioCapability(f.candidate).some(
+          (issue) => issue.code === "capability.receipt-source",
+        ),
+      ).toBe(true);
+      const paid = f.step(f.entered, {
+        type: "pay-main",
+        objectiveId: "objective-a",
+        requirementId: "payment",
+      });
+      expect(paid.spendable.food).toBe(0);
+      expect(f.step(paid, latch).objectiveLatches).toEqual([]);
+    }
+    const f = referenceFixture([payment, query]);
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    const paid = f.step(f.entered, {
+      type: "pay-main",
+      objectiveId: "objective-a",
+      requirementId: "payment",
+    });
+    const completed = f.step(JSON.parse(JSON.stringify(paid)), latch);
+    expect(completed.objectiveLatches).toEqual(["objective-a"]);
+    expect(completed.spendable.food).toBe(0);
+    expect(
+      f.step(completed, {
+        type: "pay-main",
+        objectiveId: "objective-a",
+        requirementId: "payment",
+      }).spendable.food,
+    ).toBe(0);
+  });
+
+  test("duplicate alive IDs cannot fulfill a two-identity survivor requirement", () => {
+    const f = referenceFixture([
+      {
+        id: "alive",
+        kind: "entity-state",
+        state: "alive",
+        entities: ["unit-a", "unit-a"],
+        requiredCount: 2,
+        oncePerEntity: true,
+      },
+    ]);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.entity-identity-duplicate",
+      ),
+    ).toBe(true);
+    expect(f.step(f.entered, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("physical-stock contracts are rejected until carrier inventories and navigable distance exist", () => {
+    const f = referenceFixture([
+      {
+        id: "nearby-stock",
+        kind: "minimum-stock",
+        account: "spendable",
+        amounts: { food: 1 },
+        accountEntityIds: ["unit-a"],
+        atHub: "hub-a",
+        maximumNavigableDistanceTiles: 1,
+        evaluate: "bound physical stock",
+      },
+    ]);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.stock-location-contract",
+      ),
+    ).toBe(true);
+    expect(f.step(f.entered, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("protection cannot be lost after objective latch while its interval remains active", () => {
+    const f = referenceFixture([
+      {
+        id: "protect",
+        kind: "civilian-protection",
+        zones: ["zone-dest"],
+        rule: "protect throughout",
+        implementation: "typed observation",
+        activeFrom: "briefing",
+        activeUntil: "victory",
+      },
+    ]);
+    let state = f.step(f.entered, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: true,
+    });
+    state = f.step(state, latch);
+    expect(state.objectiveLatches).toEqual(["objective-a"]);
+    state = JSON.parse(JSON.stringify(state));
+    state = f.step(state, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: false,
+    });
+    expect(state.terminal).toBe("defeat");
+    expect(
+      f.step(state, { type: "enter-phase", phase: "victory", nowSeconds: 110 })
+        .terminal,
+    ).toBe("defeat");
+  });
+});
