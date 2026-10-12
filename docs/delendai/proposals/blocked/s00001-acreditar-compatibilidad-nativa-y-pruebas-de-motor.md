@@ -51,7 +51,7 @@ La infraestructura funciona fuera del juego, pero no hay una instalación AoE2 e
 
 ### S3 — Plantillas narrativas, layout y audio
 - **Status**: pending
-- **Files**: `campaigns/technical-pilot/native/**`, `tests/compatibility/media.json`, `docs/qa/game-media.md`
+- **Files**: `campaigns/technical-pilot/native`, `tests/compatibility/media.json`, `docs/qa/game-media.md`
 - **Gate**: e2e
 - acceptance:
   - "Conservar plantilla nativa completa con fuente/build/licencia y tokens documentados; generar NAME.json y NAME_layout.json con --templates."
