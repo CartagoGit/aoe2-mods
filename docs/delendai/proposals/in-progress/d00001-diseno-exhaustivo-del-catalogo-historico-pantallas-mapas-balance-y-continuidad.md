@@ -38,6 +38,8 @@ El usuario exige que las decisiones históricas, geográficas, narrativas y de b
   - "Descargas reales locales con licencia/procedencia/hash y mapas esquemáticos con controles geográficos; incertidumbres de historia y reconstrucción etiquetadas."
   - "Propuestas oficiales de autoría con slices que apuntan a cada dossier, mapas, pantallas y presupuesto; DSL insuficiente deriva a infraestructura, no temporizadores de sustitución."
   - "Validación de integridad de planes y descarga, bun run validate, revisión independiente e integración oficial."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ## acceptance
 
