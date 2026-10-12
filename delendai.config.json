@@ -179,5 +179,17 @@
 			"integration": "develop",
 			"release": "master"
 		}
+	},
+	"validationMatrix": {
+		"scopes": {
+			"project": [
+				{
+					"command": "bun install --frozen-lockfile"
+				},
+				{
+					"command": "bun run validate"
+				}
+			]
+		}
 	}
 }
