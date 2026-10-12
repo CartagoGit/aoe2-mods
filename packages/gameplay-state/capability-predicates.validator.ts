@@ -58,12 +58,29 @@ export function mainRequirementSatisfied(
           (!eligible || eligible.has(id)) &&
           generationReady(profile, state, id),
       );
-      if (requirement.state === "arrived")
-        return (
-          candidates.filter((id) =>
-            hasArrival(state, id, requirement.destinations?.[id] ?? ""),
-          ).length >= requirement.requiredCount
+      if (requirement.state === "arrived") {
+        const delivered = candidates.filter((id) =>
+          hasArrival(state, id, requirement.destinations?.[id] ?? ""),
         );
+        const assignedZones = new Set(
+          Object.values(requirement.destinations ?? {}),
+        );
+        const counts = new Map<string, number>();
+        for (const entityId of delivered) {
+          const zoneId = requirement.destinations?.[entityId];
+          if (zoneId) counts.set(zoneId, (counts.get(zoneId) ?? 0) + 1);
+        }
+        return (
+          delivered.length >= requirement.requiredCount &&
+          counts.size >= (requirement.distinctDestinationCount ?? 0) &&
+          (requirement.minimumPerDestination === undefined ||
+            [...assignedZones].every(
+              (zoneId) =>
+                (counts.get(zoneId) ?? 0) >=
+                (requirement.minimumPerDestination ?? 0),
+            ))
+        );
+      }
       if (requirement.state === "destroyed")
         return (
           candidates.filter((id) => state.entityStates[id] === "destroyed")
