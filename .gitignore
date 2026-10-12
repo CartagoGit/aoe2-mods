@@ -60,3 +60,7 @@ tmp/
 reports/
 
 .env
+# Toolchain y artefactos de producción de campañas
+.venv/
+__pycache__/
+*.pyc
