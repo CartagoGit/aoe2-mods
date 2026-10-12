@@ -6,6 +6,8 @@ Descubrir estado → comprobar dependencias → entrar en unidad desde develop �
 
 Los slices de dossier, contenido, registro global y QA tienen propiedad diferenciada. Los IDs/glosario se modifican en una unidad que los reclame; si dos campañas necesitan cambiarlos, serializa ese trabajo. No adelantes un slice dependiente del contenido que todavía no existe. Un gate e2e de una propuesta significa ejecutar el alcance declarado, no simular AoE2 cuando no está disponible.
 
+Los commits de una unidad se realizan con Git dentro de ese worktree; work checkpoint desde un servidor anclado al checkout compartido no captura otro worktree. Consulta el esquema y el workflow actual antes de usarlo.
+
 Cada checkpoint contiene: propuesta/slice, archivos editados, commit, resultados reales, limitación, siguiente acción y locks vigentes. No guardar secretos, rutas personales ni sesiones del proveedor de voz en documentos compartidos. Renovar el heartbeat según el runtime y liberar el lock al finalizar.
 
 ## Prompt de continuación completo

@@ -31,3 +31,13 @@ s00001 requiere AoE2 para progresión entre mods, guardados, coexistencia de tex
 La trazabilidad completa se encuentra en [requirements-traceability](../production/requirements-traceability.md). Las decisiones y fuentes se encuentran en [capabilities](../research/aoe2-capabilities.md); los prompts están en [START](../handoffs/MINIMAX-M3.1-START.md).
 
 El XS incluido por la wheel no es nativo macOS. Ver [portabilidad y requisito COF_XS_CHECK_BIN](../guides/development.md); CI valida contratos en tres SO y el round-trip nativo en Linux/Windows. La acreditación macOS está asignada a s00001-S5.
+
+## Resultado de integración y recuperación
+
+La publicación oficial fue rechazada: develop (283173341452cd4943470280e0334fa020b76eac) no declara validationMatrix.scopes ni un script validate. El runtime no certifica una política que solo aparece en el candidato. No se modificó develop para eludir esta condición. La entrega se presentó oficialmente a revisión: i00001/S1 está in_review, implementer=gpt-6, sin reviewer ni aprobación. Commit de código sometido: ae2171aed68ad1bcede6238e428265a286dc6a88. Los commits siguientes solo registran revisión/rechazo y recuperación.
+
+Resolución legítima del bootstrap: el propietario/runtime debe incorporar el gate en el HEAD de develop. El bloque concreto ya está en delendai.config.json del candidato: validationMatrix.scopes.project contiene bun install --frozen-lockfile y bun run validate. Una vez declarado, recuperar la ref conservada mediante el workflow oficial, reconciliar develop sin reescribir historia, resolver revisión independiente y volver a publicar. No hacer push/merge manual de develop desde un agente. Las pruebas de exportación se exigen además en la propuesta de infraestructura y CI compatible.
+
+En una unidad aislada se hace commit con Git en esa unidad. work checkpoint opera sobre el checkout compartido cuando se invoca desde el servidor; no debe utilizarse para capturar una unidad distinta. Se detectó que ese checkpoint recogía solo dos archivos compartidos; se conservó todo el contenido con un commit completo en el WIP y se verificó la base y ausencia de cambios pendientes antes de entregar. Las propuestas mantienen los estados emitidos por sus herramientas oficiales.
+
+Mientras el bootstrap y revisión falten, no iniciar el traspaso productivo a M3.1. START contiene el prompt completo para cuando la base quede revisada/integrada. La retirada conservadora de la unidad, si procede, preserva el tip en una ref retired y un dossier local de revisión; no significa aprobación ni abandono de los requisitos pendientes.

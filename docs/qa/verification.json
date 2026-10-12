@@ -69,12 +69,18 @@
     "notForPublication": true
   },
   "review": {
-    "status": "pending",
-    "independent": false
+    "status": "in_review",
+    "implementer": "gpt-6",
+    "reviewer": null,
+    "submittedCommit": "ae2171aed68ad1bcede6238e428265a286dc6a88"
   },
   "integration": {
-    "status": "pending",
-    "workflow": "DelendAI work publish"
+    "status": "blocked",
+    "workflow": "DelendAI work publish",
+    "integrationSha": "283173341452cd4943470280e0334fa020b76eac",
+    "declared": false,
+    "passed": false,
+    "reason": "develop declares no validation gate; candidate carries no certification"
   },
   "gameExecuted": false,
   "remoteCiExecuted": false,
