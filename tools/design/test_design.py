@@ -108,6 +108,18 @@ class DesignAcceptanceTests(unittest.TestCase):
             next(e for e in self.odysseys[0]["episodes"] if e["order"] == order)
         )
 
+    def test_playstyles_cannot_reference_missing_or_duplicate_optional_tasks(self):
+        draft = self.draft()
+        draft["playstyles"][0]["optionalObjectives"] = ["side-missing"]
+        draft["playstyles"][2]["optionalObjectives"] = copy.deepcopy(
+            draft["playstyles"][1]["optionalObjectives"]
+        )
+        errors = self.dossier_validator(draft)
+        self.assertTrue(any("invalid playstyle portfolio" in error for error in errors))
+        self.assertTrue(
+            any("repeated playstyle portfolio" in error for error in errors)
+        )
+
     def test_expanded_dossiers_reject_wrong_narrator_and_incomplete_translation(self):
         draft = self.draft()
         draft["screens"][1]["narrator"] = "miriam-archive"

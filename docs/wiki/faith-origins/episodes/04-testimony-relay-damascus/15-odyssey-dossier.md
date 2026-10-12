@@ -380,7 +380,7 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Orchard workers / Trabajadores de los huertos
 

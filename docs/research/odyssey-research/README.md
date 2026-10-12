@@ -31,3 +31,9 @@ La pérdida de Egipto en 658 se distingue de las incursiones en el Hiyaz de 660.
 - [Seis referencias visuales](faith-open-images.json), descargadas en `images/`, con [créditos](CREDITS.md), licencias y hashes en el manifiesto. Pilato es un molde moderno en Milán; Sardis incluye reconstrucción y fases posteriores. Ninguna imagen está aprobada como escena antigua o arte de distribución.
 
 Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tienen autoría explícita del arquitecto y una generación compartida de contratos. Conservan la evidencia candidata y la afirmación corregida; las actividades jugables ficticias no se convierten en hechos por tener coordenadas.
+
+## Second-act sources and archaeological controls
+
+[Seven episode/source consultations and three places](faith-act2-source-geography-audit.json) retain partial access and provenance disputes. The authorial claim in1Cor16:8 is checked separately from exact composition date. The seven new dossiers distinguish fictional working notes from canonical originals. [Five downloaded ASCSA datasets](corinth-gis-audit.json) add archaeological and relief research controls with checksums and [credits](CREDITS.md); mixed dates and the contour raster’s undeclared CRS prevent automatic use as first-century footprints.
+
+[Auditoría de los30episodios de first-caliphs](first-caliphs-source-audit-v2.json) conserva las consultas pendientes, relatos tardíos y alternativas de calendario. Sus propuestas de corrección aún necesitan decisión editorial y no modifican automáticamente la cronología seleccionada.

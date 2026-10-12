@@ -417,7 +417,7 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Harbor households / Hogares del puerto
 

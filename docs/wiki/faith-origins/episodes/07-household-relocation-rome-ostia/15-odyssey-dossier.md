@@ -610,7 +610,7 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Roadside households / Hogares del camino
 

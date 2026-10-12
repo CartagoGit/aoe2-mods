@@ -404,7 +404,7 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Riverside households / Hogares junto al río
 
