@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 855" role="img" aria-label="The River Quarter: geographic design controls">
+<rect width="1080" height="855" fill="#f5f0df"/>
+<text x="40" y="35" font-family="sans-serif" font-size="23">The River Quarter</text>
+<text x="40" y="61" font-family="sans-serif" font-size="14">Dura-Europos · 320 × 320 tiles · c. 244 CE</text>
+<rect x="40" y="85" width="700" height="700" fill="#dfdfba" stroke="#5c6542"/>
+<path d="M 110 85 V785 M40 155 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 180 85 V785 M40 225 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 250 85 V785 M40 295 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 320 85 V785 M40 365 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 390 85 V785 M40 435 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 460 85 V785 M40 505 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 530 85 V785 M40 575 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 600 85 V785 M40 645 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 670 85 V785 M40 715 H740" stroke="#c7c8a7" fill="none"/>
+<polyline points="77.50,193.91 151.85,218.77" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="151.85,218.77 254.08,200.49" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="254.08,200.49 443.28,384.03" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="443.28,384.03 467.70,436.34" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="467.70,436.34 507.88,427.06" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="507.88,427.06 594.36,523.32" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="594.36,523.32 669.63,636.60" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="669.63,636.60 680.82,677.45" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="680.82,677.45 702.50,686.25" fill="none" stroke="#306a88" stroke-width="2"/>
+<polyline points="514.99,130.73 527.50,320.89 514.99,435.00 608.76,587.13 702.50,739.27" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
+<polyline points="433.76,442.61 458.75,480.64 433.76,442.61" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="433.76,442.61 463.80,479.17 458.75,480.64 433.76,442.61" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
+<circle cx="433.76" cy="442.61" r="7" fill="#2e3740"/>
+<text x="443.76" y="433.61" font-family="sans-serif" font-size="16">1</text>
+<circle cx="496.25" cy="442.61" r="7" fill="#2e3740"/>
+<text x="506.25" y="433.61" font-family="sans-serif" font-size="16">2</text>
+<circle cx="458.75" cy="480.64" r="7" fill="#2e3740"/>
+<text x="468.75" y="471.64" font-family="sans-serif" font-size="16">3</text>
+<circle cx="433.76" cy="442.61" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="458.75" cy="480.64" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="433.76" cy="442.61" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
+<text x="770" y="129" font-family="sans-serif" font-size="14">Solid blue: modern Natural Earth</text>
+<text x="770" y="153" font-family="sans-serif" font-size="14">Dashed blue: schematic water control</text>
+<text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
+<text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
+<text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Western synagogue block</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[40.727, 34.749] → [179.44, 162.97]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Euphrates bluff</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[40.737, 34.749] → [207.92, 162.97]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Southern road gate</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[40.731, 34.744] → [190.83, 180.3]</text>
+<text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [40.67, 34.71, 40.77, 34.79] · cosine-corrected, padded square; positions approximate</text>
+</svg>

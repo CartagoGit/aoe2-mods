@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 855" role="img" aria-label="The Edge of the River: geographic design controls">
+<rect width="1080" height="855" fill="#f5f0df"/>
+<text x="40" y="35" font-family="sans-serif" font-size="23">The Edge of the River</text>
+<text x="40" y="61" font-family="sans-serif" font-size="14">Yarmuk and Golan approaches · 400 × 400 tiles · 636 CE</text>
+<rect x="40" y="85" width="700" height="700" fill="#dfdfba" stroke="#5c6542"/>
+<path d="M 110 85 V785 M40 155 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 180 85 V785 M40 225 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 250 85 V785 M40 295 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 320 85 V785 M40 365 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 390 85 V785 M40 435 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 460 85 V785 M40 505 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 530 85 V785 M40 575 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 600 85 V785 M40 645 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 670 85 V785 M40 715 H740" stroke="#c7c8a7" fill="none"/>
+<polyline points="693.00,603.26 531.40,619.30 423.67,635.32 356.33,619.30 248.60,635.32 181.26,715.46 113.93,723.46" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
+<polyline points="437.14,394.93 208.19,523.14 437.14,394.93" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="437.14,394.93 336.70,473.07 208.19,523.14 437.14,394.93" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
+<circle cx="437.14" cy="394.93" r="7" fill="#2e3740"/>
+<text x="447.14" y="385.93" font-family="sans-serif" font-size="16">1</text>
+<circle cx="369.81" cy="635.32" r="7" fill="#2e3740"/>
+<text x="379.81" y="626.32" font-family="sans-serif" font-size="16">2</text>
+<circle cx="208.19" cy="523.14" r="7" fill="#2e3740"/>
+<text x="218.19" y="514.14" font-family="sans-serif" font-size="16">3</text>
+<circle cx="437.14" cy="394.93" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="208.19" cy="523.14" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="437.14" cy="394.93" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
+<text x="770" y="129" font-family="sans-serif" font-size="14">Solid blue: modern Natural Earth</text>
+<text x="770" y="153" font-family="sans-serif" font-size="14">Dashed blue: schematic water control</text>
+<text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
+<text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
+<text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Regional plateau, not exact camp</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[35.96, 32.85] → [226.37, 176.66]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Yarmuk gorge corridor</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[35.91, 32.7] → [187.99, 313.68]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Western ravine approach</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[35.79, 32.77] → [95.87, 249.74]</text>
+<text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [35.7, 32.63, 36.15, 33.02] · cosine-corrected, padded square; positions approximate</text>
+</svg>
