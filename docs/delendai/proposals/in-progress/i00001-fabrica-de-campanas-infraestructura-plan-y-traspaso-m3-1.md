@@ -2,10 +2,14 @@
 id: i00001
 title: "Fabrica de campanas: infraestructura, plan y traspaso M3.1"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: general
 date: 2026-10-12
+last-transition-id: 1c4b6305-8e1e-4a92-bf7f-ed151e58e818
+last-correlation-id: 1c4b6305-8e1e-4a92-bf7f-ed151e58e818
+last-transition-from: ready
+last-transition-at: 2026-10-12T04:04:51.044Z
 ---
 
 # i00001 — Fabrica de campanas: infraestructura, plan y traspaso M3.1
