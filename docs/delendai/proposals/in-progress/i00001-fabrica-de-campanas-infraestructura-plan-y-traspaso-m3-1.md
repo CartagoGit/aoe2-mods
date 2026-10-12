@@ -36,7 +36,7 @@ Repositorio sin infraestructura. La conversación final exige mods independiente
 
 ### S1 — Bootstrap, investigación, arquitectura e implementación verificable
 - **Status**: done
-- **Files**: `package.json`, `bun.lock`, `tsconfig.json`, `biome.json`, `AGENTS.md`, `config/**`, `packages/**`, `tools/**`, `tests/**`, `campaigns/**`, `assets/**`, `requirements*.txt`, `delendai.config.json`, `README.md`, `CONTRIBUTING.md`, `LICENSE*`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.github/**`, `.claude/**`, `.codex/**`, `.delendai/project-profile.json`, `docs/**`
+- **Files**: `package.json`, `bun.lock`, `tsconfig.json`, `biome.json`, `AGENTS.md`, `config`, `packages`, `tools`, `tests`, `campaigns`, `requirements.lock.txt`, `delendai.config.json`, `README.md`, `CONTRIBUTING.md`, `LICENSE`, `LICENSE-CONTENT.md`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.github`, `.claude`, `.codex`, `docs`
 - **Gate**: e2e
 - acceptance:
   - "bun run validate: tipado/lint/tests/documentación/localización y fixtures; prueba Python round-trip real."
