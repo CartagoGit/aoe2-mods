@@ -2,16 +2,16 @@
 id: d00001
 title: "Diseno exhaustivo del catalogo historico: pantallas mapas balance y continuidad"
 kind: docs
-status: review
+status: done
 type: proposal
 track: campaign-design
 date: 2026-10-12
 shipped-in:
   - "81bf972906ed0bd8d0e591e5014a7ebc219b97ab"
-last-transition-id: 56cf4dbb-b026-4c7e-8ea6-208797b40985
-last-correlation-id: 56cf4dbb-b026-4c7e-8ea6-208797b40985
-last-transition-from: in-progress
-last-transition-at: 2026-10-12T15:28:37.257Z
+last-transition-id: 8ad8f300-543d-440f-ab9c-93da0bc3e670
+last-correlation-id: 8ad8f300-543d-440f-ab9c-93da0bc3e670
+last-transition-from: review
+last-transition-at: 2026-10-12T15:29:00.754Z
 ---
 
 # d00001 — Diseno exhaustivo del catalogo historico: pantallas mapas balance y continuidad
