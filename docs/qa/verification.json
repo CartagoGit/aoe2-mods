@@ -72,14 +72,15 @@
     "status": "in_review",
     "implementer": "gpt-6",
     "reviewer": null,
-    "submittedCommit": "ae2171aed68ad1bcede6238e428265a286dc6a88",
+    "submittedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6",
     "technical": {
-      "status": "fixes-awaiting-recheck",
+      "status": "conformant",
       "instance": "/root/independent_review",
       "actualModel": "gpt-6",
       "findings": 8,
       "correctedFindings": 8,
-      "baselineCommit": "4f6ea4ada828bb4a77f69f64d87faf8a1a89540e"
+      "baselineCommit": "4f6ea4ada828bb4a77f69f64d87faf8a1a89540e",
+      "reviewedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6"
     },
     "formalBlocker": "Runtime requires exact model ID and reviewer != implementer; both authorized instances are gpt-6. No invented identity or self-approval."
   },

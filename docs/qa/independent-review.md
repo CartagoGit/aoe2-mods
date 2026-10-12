@@ -20,3 +20,7 @@ El comprobador staging distingue esquemas parciales y campañas completas; nunca
 DelendAI rechazó registrar request_changes desde la unidad del implementador: exige una unidad propia kind=review. Rechazó después entrar con gpt-6-independent-review porque agent debe ser el ID exacto del modelo; no permite sufijos para diferenciar instancias. Ambas instancias son GPT-6, mientras requirePeerReview exige reviewer distinto del implementer. No se inventó identidad, desactivó la política ni autoaprobó.
 
 La revisión técnica de otra instancia existe, pero no equivale a aprobación formal. El cierre oficial requiere un modelo revisor diferente real y autorizado o una resolución legítima del propietario/runtime. Permanece pendiente también el bootstrap del gate de develop. El documento de auditoría y verification.json conservan ambos bloqueos.
+
+## Segunda revisión técnica
+
+La instancia revisora confirmó conformidad con 2843c0df707df45e633f22d5fc87e04c66d2b0b6: validate=0, 41/41 pruebas,124 expectativas y tres round-trips reales. Los ocho hallazgos están resueltos. Su única aclaración documental se aplicó: exportar únicamente campañas materializadas; staging no es un target de exportación. El propietario autorizó revisión formal con GPT-6.1 para cumplir legítimamente la identidad diferente exigida por DelendAI; pendiente del resultado real.

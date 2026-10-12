@@ -44,6 +44,8 @@ Mientras el bootstrap y revisión falten, no iniciar el traspaso productivo a M3
 
 ## Revisión independiente autorizada
 
-La instancia /root/independent_review, distinta del implementador pero con el mismo modelo GPT-6, identificó ocho hallazgos. Se corrigieron caché de proveedores, huella del candidato, colisiones nativas locales/globales, integridad WAV, progreso final, IDs ambiguos, política de 17 locales y secuencia de slices. Se añadieron comprobación staging y materialización conjunta de campañas/IDs/glosario. Ver [informe independiente](independent-review.md); el commit corregido debe volver a comprobarse.
+La instancia /root/independent_review, distinta del implementador pero con el mismo modelo GPT-6, identificó ocho hallazgos. Se corrigieron caché de proveedores, huella del candidato, colisiones nativas locales/globales, integridad WAV, progreso final, IDs ambiguos, política de 17 locales y secuencia de slices. Se añadieron comprobación staging y materialización conjunta de campañas/IDs/glosario. Ver [informe independiente](independent-review.md); el revisor volvió a comprobar 2843c0df707df45e633f22d5fc87e04c66d2b0b6 y confirmó conformidad técnica con 41/41 pruebas y tres round-trips.
 
 El runtime rechazó el veredicto fuera de una unidad review y después rechazó la identidad artificial gpt-6-independent-review. Exige el ID real del modelo y reviewer diferente de implementer: ambas instancias GPT-6 no satisfacen ese registro formal. La revisión técnica no se presenta como aprobación oficial. Sigue pendiente una resolución legítima de identidad/modelo revisor además del gate inicial de develop.
+
+El propietario autorizó usar GPT-6.1 para registrar una revisión formal con un modelo diferente real. La autorización no equivale al veredicto; se registrará únicamente el resultado del revisor.
