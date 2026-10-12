@@ -1,0 +1,209 @@
+{
+    // ----------------------------------------------------------------------------
+    // Editor: imports
+    //
+    // Evitar que VS Code ejecute "Organize Imports" automáticamente al guardar.
+    //
+    // "explicit" significa que la acción sigue estando disponible, pero sólo
+    // se ejecutará cuando se solicite explícitamente. Esto evita que un simple
+    // guardado pueda reordenar/eliminar imports mientras se está trabajando,
+    // especialmente en archivos TypeScript grandes o generados.
+    // ----------------------------------------------------------------------------
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+
+    // ----------------------------------------------------------------------------
+    // Terminal Linux / WSL
+    //
+    // Usar Bash como login shell para que las terminales creadas por VS Code
+    // carguen el mismo entorno que una sesión Bash normal:
+    //
+    //   /etc/profile
+    //   ~/.bash_profile / ~/.bash_login / ~/.profile
+    //
+    // Esto también afecta a terminales creadas desde herramientas del editor
+    // y agentes que utilicen el terminal integrado.
+    // ----------------------------------------------------------------------------
+    // "terminal.integrated.profiles.linux": {
+    //     "Bash (login)": {
+    //         "path": "/bin/bash",
+    //         "args": ["--login"]
+    //     }
+    // },
+
+    // Perfil Linux predeterminado para nuevas terminales integradas.
+    // "terminal.integrated.defaultProfile.linux": "Bash (login)",
+
+
+
+    // ----------------------------------------------------------------------------
+    // TypeScript / JavaScript SDK
+    //
+    // Utilizar la versión de TypeScript instalada por el propio proyecto:
+    //
+    //   <workspace>/node_modules/typescript/lib
+    //
+    // De esta forma VS Code/tsserver utiliza la misma versión de TypeScript que
+    // usa el proyecto, en lugar de depender exclusivamente de la versión que
+    // viene embebida con VS Code.
+    //
+    // La antigua familia de settings "typescript.*" está siendo unificada bajo
+    // el namespace "js/ts.*".
+    // ----------------------------------------------------------------------------
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
+
+    // Permitir que VS Code proponga/utilice la versión de TypeScript definida
+    // por el workspace.
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+    // ----------------------------------------------------------------------------
+    // Resolución de tsconfig / jsconfig
+    //
+    // IMPORTANTE:
+    //
+    // No se incluyen:
+    //
+    //   "typescript.tsconfig": "./tsconfig.json"
+    //   "javascript.tsconfig": "./tsconfig.json"
+    //
+    // porque no son settings públicos válidos del language server actual.
+    //
+    // tsserver determina automáticamente a qué "configured project" pertenece
+    // cada archivo utilizando los tsconfig.json/jsconfig.json aplicables.
+    //
+    // Por tanto, reglas como:
+    //
+    //   - qué archivos pertenecen al proyecto
+    //   - qué carpetas quedan fuera
+    //   - node_modules
+    //   - tipos
+    //   - references
+    //   - skipLibCheck
+    //
+    // deben definirse en tsconfig.json y en la jerarquía de tsconfig del
+    // proyecto, no mediante un setting de VS Code que fuerce un único tsconfig.
+    //
+    // Esto evita mantener claves aparentemente válidas que VS Code en realidad
+    // ignora.
+    // ----------------------------------------------------------------------------
+
+    // ----------------------------------------------------------------------------
+    // TypeScript Server: memoria
+    //
+    // Memoria máxima, en MB, que VS Code asignará al proceso principal tsserver.
+    //
+    // Esta clave sustituye a:
+    //
+    //   "typescript.experimental.tsserver.maxTsServerMemory"
+    //   "typescript.tsserver.maxTsServerMemory"
+    //
+    // El namespace y el nombre actuales son:
+    //
+    //   js/ts.tsserver.maxMemory
+    //
+    // En este workspace usamos 4096 MB porque el proyecto es suficientemente
+    // grande como para que el límite de 1024 MB provoque presión de memoria.
+    //
+    // En nuestro diagnóstico concreto, tsserver estaba siendo lanzado con:
+    //
+    //   --max-old-space-size=1024
+    //
+    // y terminaba repetidamente mediante SIGABRT. Después de cambiar este
+    // setting debemos comprobar que el proceso se lanza con:
+    //
+    //   --max-old-space-size=4096
+    //
+    // No modifica la memoria, swap ni processors configurados para WSL.
+    // Es únicamente el límite de heap del proceso Node que ejecuta tsserver.
+    // ----------------------------------------------------------------------------
+    "js/ts.tsserver.maxMemory": 4096,
+
+    // ----------------------------------------------------------------------------
+    // Peacock
+    //
+    // Color identificativo de este workspace.
+    // Sólo tiene efecto si la extensión Peacock está instalada.
+    // ----------------------------------------------------------------------------
+    "peacock.color": "#5B0F12",
+
+    // ----------------------------------------------------------------------------
+    // Copilot / Agent debugging
+    //
+    // Habilitar los Agent Debug Logs y el comando /troubleshoot para poder
+    // inspeccionar qué ocurre durante una sesión de agente.
+    //
+    // Sustituye al antiguo/no reconocido:
+    //
+    //   "chat.debug.enable": true
+    //
+    // El Chat Debug View se puede abrir desde los comandos Developer de VS Code;
+    // este setting habilita específicamente la instrumentación de debug del
+    // agente/Copilot que necesitamos para diagnosticar tool negotiation,
+    // solicitudes, herramientas MCP y comportamiento del agente.
+    // ----------------------------------------------------------------------------
+    "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
+
+    // File logging NO se activa permanentemente aquí.
+    //
+    // Existe también:
+    //
+    //   "github.copilot.chat.agentDebugLog.fileLogging.enabled": true
+    //
+    // pero hace que los eventos de debug se escriban además a disco. Dado que
+    // estamos precisamente investigando generación excesiva de archivos/dumps,
+    // prefiero habilitarlo sólo temporalmente cuando necesitemos conservar una
+    // sesión concreta para análisis posterior.
+
+    // ----------------------------------------------------------------------------
+    // Virtual tools / tool budget
+    //
+    // Cuando el número de herramientas supera este valor, Copilot puede agrupar
+    // herramientas relacionadas como "virtual tools" y activarlas bajo demanda.
+    //
+    // El valor predeterminado actual es 128. Aquí se baja deliberadamente a 64
+    // para que el mecanismo de virtualización se active antes durante sesiones
+    // grandes de swarm/MCP y podamos detectar problemas de descubrimiento o
+    // negociación del toolset con ayuda de los Agent Debug Logs.
+    //
+    // IMPORTANTE:
+    //
+    // No existe una clave pública independiente:
+    //
+    //   "github.copilot.chat.virtualTools.enabled"
+    //
+    // El propio threshold es el setting que controla cuándo entra en juego el
+    // mecanismo.
+    //
+    // También se eliminan:
+    //
+    //   "github.copilot.chat.requestTimeoutMs"
+    //   "github.copilot.chat.streamingTimeoutMs"
+    //
+    // porque no forman parte de la configuración pública actual de Copilot Chat
+    // y VS Code las trata como settings desconocidos. No hay que mantener claves
+    // inertes simplemente para documentar una intención de timeout.
+    // ----------------------------------------------------------------------------
+    "github.copilot.chat.virtualTools.threshold": 64,
+
+    // ----------------------------------------------------------------------------
+    // MCP server access
+    //
+    // Permitir ejecutar servidores MCP instalados desde cualquier origen.
+    //
+    // Valores soportados actualmente:
+    //
+    //   "none"     -> deshabilitar MCP
+    //   "registry" -> permitir únicamente servidores del registry autorizado
+    //   "all"      -> permitir cualquier servidor MCP instalado
+    //
+    // Usamos "all" porque este workspace depende del servidor local `lx-app`
+    // y no queremos que una restricción de origen impida arrancarlo.
+    //
+    // Esto controla acceso a los servidores MCP; las reglas concretas sobre qué
+    // herramientas puede ejecutar cada agente siguen siendo responsabilidad de
+    // los contratos/políticas del propio proyecto.
+    // ----------------------------------------------------------------------------
+    "chat.mcp.access": "all",
+
+}
