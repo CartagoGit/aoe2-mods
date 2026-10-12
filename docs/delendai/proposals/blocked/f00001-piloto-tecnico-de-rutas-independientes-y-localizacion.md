@@ -34,7 +34,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 
 ### S1 — Especificación y matriz del laboratorio
 - **Status**: pending
-- **Files**: `docs/wiki/route-pilot/**`
+- **Files**: `docs/wiki/route-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Definir mapas mínimos, victoria A/B, replay, recapitulación y lista cerrada de textos/personajes; no atribuir hechos históricos a fixtures."
@@ -43,7 +43,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 ### S2 — Borradores completos de los dos mods
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `staging/campaigns/route-pilot/**`, `staging/campaigns/route-successor/**`
+- **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`
 - **Gate**: e2e
 - acceptance:
   - "Fuentes completas de ambos mods en staging: escenarios, metadatos, narradores, 17 catálogos draft con claves semánticas y manifiestos licenciados."
@@ -53,7 +53,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 ### S3 — Materialización conjunta, IDs y glosario
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `staging/campaigns/route-pilot/**`, `staging/campaigns/route-successor/**`, `campaigns/route-pilot/**`, `campaigns/route-successor/**`, `config/string-ids.lock.json`, `config/glossary.json`
+- **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`, `campaigns/route-pilot`, `campaigns/route-successor`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
 - acceptance:
   - "Reclamar todas las rutas del slice y promover ambos bundles completos en una misma entrega; ajustar asset.path al destino final y validar sus bytes/hashes."
@@ -63,7 +63,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 ### S4 — Verificación y dossier de entrega
 - **Status**: pending
 - **DependsOn**: [S3]
-- **Files**: `docs/qa/route-pilot/**`
+- **Files**: `docs/qa/route-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Registrar comandos, hashes y capacidades; bun run validate y export de ambas campañas."
