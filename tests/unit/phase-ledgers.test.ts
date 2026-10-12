@@ -988,3 +988,81 @@ describe("delivery destination distribution", () => {
     }
   });
 });
+
+describe("identity and continuously active protection", () => {
+  test("duplicate alive IDs cannot fulfill a two-identity survivor requirement", () => {
+    const f = referenceFixture([
+      {
+        id: "alive",
+        kind: "entity-state",
+        state: "alive",
+        entities: ["unit-a", "unit-a"],
+        requiredCount: 2,
+        oncePerEntity: true,
+      },
+    ]);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.entity-identity-duplicate",
+      ),
+    ).toBe(true);
+    expect(f.step(f.entered, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("physical-stock contracts are rejected until carrier inventories and navigable distance exist", () => {
+    const f = referenceFixture([
+      {
+        id: "nearby-stock",
+        kind: "minimum-stock",
+        account: "spendable",
+        amounts: { food: 1 },
+        accountEntityIds: ["unit-a"],
+        atHub: "hub-a",
+        maximumNavigableDistanceTiles: 1,
+        evaluate: "bound physical stock",
+      },
+    ]);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.stock-location-contract",
+      ),
+    ).toBe(true);
+    expect(f.step(f.entered, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("protection cannot be lost after objective latch while its interval remains active", () => {
+    const f = referenceFixture([
+      {
+        id: "protect",
+        kind: "civilian-protection",
+        zones: ["zone-dest"],
+        rule: "protect throughout",
+        implementation: "typed observation",
+        activeFrom: "briefing",
+        activeUntil: "victory",
+      },
+    ]);
+    let state = f.step(f.entered, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: true,
+    });
+    state = f.step(state, latch);
+    expect(state.objectiveLatches).toEqual(["objective-a"]);
+    state = JSON.parse(JSON.stringify(state));
+    state = f.step(state, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: false,
+    });
+    expect(state.terminal).toBe("defeat");
+    expect(
+      f.step(state, { type: "enter-phase", phase: "victory", nowSeconds: 110 })
+        .terminal,
+    ).toBe("defeat");
+  });
+});
