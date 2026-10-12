@@ -37,78 +37,76 @@ Ejemplo futuro exhaustivo para ampliar la colección sin rediseñar infraestruct
 - **Files**: `docs/wiki/imperial-church/**`
 - **Gate**: e2e
 - acceptance:
-  - "Resolver afirmaciones pendientes con pasajes completos y historiografía, no solo abstracts."
-  - "Fichas de Constantino, Majencio y representantes ficticios; cronista particular retrospectivo consistente; clasificación de todas las líneas."
-  - "Aprobar neutralidad, anacronismos de civilizaciones y restricciones visuales antes de mapas."
+  - "Resolver afirmaciones pendientes con pasajes completos e historiografía; revisar neutralidad y anacronismos."
+  - "Fichas de Constantino/Majencio/representantes ficticios, cronista retrospectivo, clasificación de líneas y lista de claves; reutilizar diseño del piloto sin duplicar infraestructura."
 
-### S2 — Metadatos, localizacion y medios de campaña
+### S2 — Metadatos, localización y medios en preparación
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `campaigns/imperial-church/campaign.json`, `campaigns/imperial-church/native/**`, `campaigns/imperial-church/assets/**`
+- **Files**: `staging/campaigns/imperial-church/campaign.json`, `staging/campaigns/imperial-church/native/**`, `staging/campaigns/imperial-church/assets/**`
 - **Gate**: e2e
 - acceptance:
-  - "Metadatos permanentes, orden scenarioFiles, narrador general/particular, intro/epílogo, recap y dependencias opcionales."
-  - "17 locales aprobados; reparto y pronunciación por locale; imágenes y audios con fuente/licencia/hash/revisión."
-  - "Añadir escenarios por rutas previstas sin generar artefactos manualmente ni duplicar packages."
+  - "Preparar metadatos permanentes, orden scenarioFiles, narradores, intro/epílogo, recap y continuidad opcional exclusivamente en staging."
+  - "Preparar 17 catálogos y manifiestos/reparto/pronunciación con estados honestos; scenarioFiles puede señalar los borradores pendientes S3–S5."
+  - "bun run staging:check imperial-church --partial valida los metadatos presentes y enumera explícitamente pendientes; no equivale a validar la campaña ni modificar IDs."
 
-### S3 — Mision 01: control del acceso y batalla
+### S3 — Borrador misión01: acceso y batalla312
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `campaigns/imperial-church/scenarios/01-milvian-bridge/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/01-milvian-bridge/**`
 - **Gate**: e2e
 - acceptance:
-  - "Reutilizar diseño piloto; objetivos por fases, contingencias de puente y líder, reserva militar visible finita."
-  - "Historia documentada y licencia táctica; tres dificultades con medidas tras partidas."
+  - "Reutilizar diseño piloto; objetivos por fases, puente/líder y contingencias, reserva militar visible y finita."
+  - "Historia documentada/licencia táctica y perfiles de dificultad; guardar escenario válido en staging y ejecutar staging:check --partial."
 
-### S4 — Mision 02: negociacion en Nicea
+### S4 — Borrador misión02: negociación en Nicea325
 - **Status**: pending
 - **DependsOn**: [S3]
-- **Files**: `campaigns/imperial-church/scenarios/02-nicaea/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/02-nicaea/**`
 - **Gate**: e2e
 - acceptance:
-  - "Mecánica diplomática de llegada/protección de delegaciones y recursos/negociación como dramatización."
-  - "No matar confesiones para ganar, no representar una verdad doctrinal superior; resultados del concilio documentados."
-  - "Variables y eventos finitos; orden alternativo, pérdidas de mensajeros y negociación agotada tienen recuperación."
+  - "Llegada/protección de delegaciones y recursos/negociación como dramatización; resultados del concilio documentados."
+  - "No matar confesiones ni representar superioridad doctrinal; variables/eventos finitos y recuperación tras perder mensajeros o agotar negociación."
+  - "Mantener fuentes únicamente en staging y ejecutar staging:check --partial."
 
-### S5 — Mision 03: rutas de la nueva capital
+### S5 — Borrador misión03: rutas de la capital330
 - **Status**: pending
 - **DependsOn**: [S4]
-- **Files**: `campaigns/imperial-church/scenarios/03-new-capital/**`
+- **Files**: `staging/campaigns/imperial-church/scenarios/03-new-capital/**`
 - **Gate**: e2e
 - acceptance:
-  - "Economía y comercio/logística330; geografía y facciones justificadas, rutas terrestres/navales verificables."
-  - "Sin repetir gran batalla; suministros vulnerables y alternativas, no oleadas sin causa."
-  - "Epílogo retrospectivo hasta337 con continuidad opcional y perspectivas acumulativas."
+  - "Economía/comercio/logística330, geografía y facciones justificadas; rutas y alternativas; sin repetir gran batalla."
+  - "Epílogo hasta337, progreso/rutas finales persistentes, continuidad opcional; catálogo S2 ya contiene las claves previstas."
+  - "bun run staging:check imperial-church pasa SIN --partial y valida referencias/narración de las tres misiones; cualquier ajuste de claves/metadatos S2 requiere reclamar esos archivos oficialmente."
 
-### S6 — Registro global y auditoria de entrega
+### S6 — Materialización conjunta y auditoría de entrega
 - **Status**: pending
 - **DependsOn**: [S5]
-- **Files**: `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/imperial-church/**`
+- **Files**: `staging/campaigns/imperial-church/**`, `campaigns/imperial-church/**`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/imperial-church/**`
 - **Gate**: e2e
 - acceptance:
-  - "Reserva oficial del lock y estabilidad de IDs; glosario actualizado y revisores por locale."
-  - "Todos los casos bloqueantes resueltos, métricas medidas, artefacto y evidencias coherentes."
-  - "Cada criterio del gate release pasa; autorización humana requerida solo para subir mod, no durante producción reversible."
+  - "Promover bundle completo y ajustar asset.path; reclamar lock/glosario y ejecutar ids:allocate antes del commit de la misma entrega."
+  - "bun run validate y export de la campaña pasan; mantener estables los IDs existentes y documentar revisiones por locale."
+  - "Ejecutar QA real, balance medido y release:check antes de PRODUCTION READY; evidencias vinculadas al ZIP, autorización separada para subir el mod."
 
 ## acceptance
 
-- Resolver afirmaciones pendientes con pasajes completos y historiografía, no solo abstracts.
-- Fichas de Constantino, Majencio y representantes ficticios; cronista particular retrospectivo consistente; clasificación de todas las líneas.
-- Aprobar neutralidad, anacronismos de civilizaciones y restricciones visuales antes de mapas.
-- Metadatos permanentes, orden scenarioFiles, narrador general/particular, intro/epílogo, recap y dependencias opcionales.
-- 17 locales aprobados; reparto y pronunciación por locale; imágenes y audios con fuente/licencia/hash/revisión.
-- Añadir escenarios por rutas previstas sin generar artefactos manualmente ni duplicar packages.
-- Reutilizar diseño piloto; objetivos por fases, contingencias de puente y líder, reserva militar visible finita.
-- Historia documentada y licencia táctica; tres dificultades con medidas tras partidas.
-- Mecánica diplomática de llegada/protección de delegaciones y recursos/negociación como dramatización.
-- No matar confesiones para ganar, no representar una verdad doctrinal superior; resultados del concilio documentados.
-- Variables y eventos finitos; orden alternativo, pérdidas de mensajeros y negociación agotada tienen recuperación.
-- Economía y comercio/logística330; geografía y facciones justificadas, rutas terrestres/navales verificables.
-- Sin repetir gran batalla; suministros vulnerables y alternativas, no oleadas sin causa.
-- Epílogo retrospectivo hasta337 con continuidad opcional y perspectivas acumulativas.
-- Reserva oficial del lock y estabilidad de IDs; glosario actualizado y revisores por locale.
-- Todos los casos bloqueantes resueltos, métricas medidas, artefacto y evidencias coherentes.
-- Cada criterio del gate release pasa; autorización humana requerida solo para subir mod, no durante producción reversible.
+- Resolver afirmaciones pendientes con pasajes completos e historiografía; revisar neutralidad y anacronismos.
+- Fichas de Constantino/Majencio/representantes ficticios, cronista retrospectivo, clasificación de líneas y lista de claves; reutilizar diseño del piloto sin duplicar infraestructura.
+- Preparar metadatos permanentes, orden scenarioFiles, narradores, intro/epílogo, recap y continuidad opcional exclusivamente en staging.
+- Preparar 17 catálogos y manifiestos/reparto/pronunciación con estados honestos; scenarioFiles puede señalar los borradores pendientes S3–S5.
+- bun run staging:check imperial-church --partial valida los metadatos presentes y enumera explícitamente pendientes; no equivale a validar la campaña ni modificar IDs.
+- Reutilizar diseño piloto; objetivos por fases, puente/líder y contingencias, reserva militar visible y finita.
+- Historia documentada/licencia táctica y perfiles de dificultad; guardar escenario válido en staging y ejecutar staging:check --partial.
+- Llegada/protección de delegaciones y recursos/negociación como dramatización; resultados del concilio documentados.
+- No matar confesiones ni representar superioridad doctrinal; variables/eventos finitos y recuperación tras perder mensajeros o agotar negociación.
+- Mantener fuentes únicamente en staging y ejecutar staging:check --partial.
+- Economía/comercio/logística330, geografía y facciones justificadas; rutas y alternativas; sin repetir gran batalla.
+- Epílogo hasta337, progreso/rutas finales persistentes, continuidad opcional; catálogo S2 ya contiene las claves previstas.
+- bun run staging:check imperial-church pasa SIN --partial y valida referencias/narración de las tres misiones; cualquier ajuste de claves/metadatos S2 requiere reclamar esos archivos oficialmente.
+- Promover bundle completo y ajustar asset.path; reclamar lock/glosario y ejecutar ids:allocate antes del commit de la misma entrega.
+- bun run validate y export de la campaña pasan; mantener estables los IDs existentes y documentar revisiones por locale.
+- Ejecutar QA real, balance medido y release:check antes de PRODUCTION READY; evidencias vinculadas al ZIP, autorización separada para subir el mod.
 
 ## Contexto, estado inicial y dependencias
 
@@ -124,4 +122,4 @@ Riesgos: pasajes históricos no consultados, anacronismos, coexistencia de caden
 
 ## Entregables, revisión y cierre
 
-Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
+Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Cada slice debe integrar con `bun run validate` verde. Los borradores se preparan en staging/campaigns, fuera de loadProject; staging:check valida esquemas y declara pendientes explícitamente. El slice final de materialización posee campañas, borradores, lock y glosario, y los incorpora juntos antes de validar/commitear. Seguir docs/guides/staging.md. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
