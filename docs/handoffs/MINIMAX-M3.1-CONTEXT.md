@@ -4,7 +4,7 @@ Crónicas de la Fe es una fábrica de mods de campañas históricas para AoE2 DE
 
 ## Contratos y componentes
 
-Fuentes JSON schemaVersion 1; campaña en campaigns/<id>/campaign.json y escenarios en scenarios/NN-<slug>/scenario.json referenciados por scenarioFiles. Los módulos packages/schemas, localization, historical-validation, gameplay-validation, scenario-compiler, campaign-compiler, assets, audio y aoe2-adapter son la infraestructura. CLI en tools/cli; parser Python y empaquetador externo fijados en tools/python. El diagrama y responsabilidades están en arquitectura.
+Fuentes JSON schemaVersion 1; campaña activa en campaigns/<id>/campaign.json y escenarios en scenarios/NN-<slug>/scenario.json referenciados por scenarioFiles. Los borradores se preparan en staging/campaigns; el slice final los materializa junto con IDs/glosario. Ver docs/guides/staging.md. Los módulos packages/schemas, localization, historical-validation, gameplay-validation, scenario-compiler, campaign-compiler, assets, audio y aoe2-adapter son la infraestructura. CLI en tools/cli; parser Python y empaquetador externo fijados en tools/python. El diagrama y responsabilidades están en arquitectura.
 
 Los nombres internos CDF_<Name>, publicId CDF-CNN y claves de progreso son permanentes. Las traducciones usan namespaces semánticos compilados mediante config/string-ids.lock.json. El español de España es canónico; hay 17 locales objetivo. El fixture tiene dos muestras draft, no traducciones terminadas. Las carpetas lingüísticas y el rango reservado todavía requieren verificación en el motor.
 

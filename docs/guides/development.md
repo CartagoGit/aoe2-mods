@@ -18,6 +18,7 @@ Bun 1.4.2; Python >=3.10; paquetes Python fijados con hashes en requirements.loc
 | bun run ids:allocate | Añade IDs; no sustituye IDs existentes; revisar diff |
 | bun run campaigns:list | Catálogo registrado |
 | bun run campaign:validate [ID] | Integridad del proyecto y campaña seleccionada |
+| bun run staging:check ID [--partial] | Esquemas de borrador; enumera pendientes, exige bundle completo sin --partial; ver staging.md |
 | bun run docs:check | Documentos obligatorios y enlaces locales |
 | bun run i18n:check [ID] | Claves, variables, marcadores y codificación |
 | bun run assets:check [ID] | Existencia, hash, PNG y metadatos |

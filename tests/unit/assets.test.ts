@@ -2,10 +2,64 @@ import { expect, test } from "bun:test";
 import { mkdtemp, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { validateAssets } from "../../packages/assets";
-import { hash, sourceFile } from "../../packages/core";
+import {
+  validateAssetDestinations,
+  validateAssets,
+} from "../../packages/assets";
+import { hash, portableRelativePath, sourceFile } from "../../packages/core";
 import { validateGlossary } from "../../packages/localization/glossary";
 import type { Asset } from "../../packages/schemas";
+
+test("destinos nativos rechazan alias y colisiones locales/globales", () => {
+  const reserved =
+    "resources/es/strings/key-value/key-value-modded-strings-utf8.txt";
+  for (const path of [
+    "resources/./es/x",
+    "resources//es/x",
+    "../x",
+    "/x",
+    "a\\x",
+    "a/NUL.wav",
+    "a/x.",
+    "a/x:stream",
+  ])
+    expect(() => portableRelativePath(path)).toThrow();
+  const asset = (id: string, enginePath: string, sha256 = "a".repeat(64)) =>
+    ({ id, enginePath, sha256 }) as Asset;
+  const groups = [
+    { owner: "one", assets: [asset("a", "resources/_common/sound/CDF.wav")] },
+    {
+      owner: "two",
+      assets: [asset("b", "resources/_common/sound/cdf.wav", "b".repeat(64))],
+    },
+  ];
+  expect(validateAssetDestinations(groups).map((i) => i.code)).toContain(
+    "assets.global-destination",
+  );
+  const shared = groups[1]?.assets[0];
+  if (!shared) throw new Error("Recurso ausente");
+  shared.sha256 = "a".repeat(64);
+  expect(validateAssetDestinations(groups)).toEqual([]);
+  expect(
+    validateAssetDestinations(
+      [{ owner: "one", assets: [asset("a", reserved.toUpperCase())] }],
+      [reserved],
+    ).map((i) => i.code),
+  ).toContain("assets.reserved-path");
+  expect(
+    validateAssetDestinations([
+      {
+        owner: "one",
+        assets: [asset("a", "resources/x.wav"), asset("b", "resources/X.wav")],
+      },
+    ]).map((i) => i.code),
+  ).toContain("assets.destination");
+  expect(
+    validateAssetDestinations([
+      { owner: "one", assets: [asset("a", "resources/./x.wav")] },
+    ]).map((i) => i.code),
+  ).toContain("assets.destination-path");
+});
 
 test("manifiesto rechaza PNG inválido y hash alterado", async () => {
   const root = await mkdtemp(join(tmpdir(), "cof-assets-"));

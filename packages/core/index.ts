@@ -32,6 +32,26 @@ export function canonical(value: unknown): string {
 }
 export const hash = (value: string | Uint8Array): string =>
   createHash("sha256").update(value).digest("hex");
+/** Destino nativo canónico, portable a Windows y sin alias de normalización. */
+export function portableRelativePath(path: string): string {
+  if (
+    !/^[A-Za-z0-9._/-]+$/.test(path) ||
+    path
+      .split("/")
+      .some(
+        (part) =>
+          !part ||
+          part === "." ||
+          part === ".." ||
+          part.endsWith(".") ||
+          /^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(part),
+      )
+  )
+    throw new Error(`Destino nativo no portable: ${path}`);
+  return path;
+}
+export const destinationKey = (path: string): string =>
+  portableRelativePath(path).toLowerCase();
 export function within(root: string, path: string): string {
   if (isAbsolute(path) || path.includes("\\") || path.split("/").includes(".."))
     throw new Error(`Ruta insegura: ${path}`);

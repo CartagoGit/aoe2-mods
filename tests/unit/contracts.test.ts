@@ -20,6 +20,7 @@ import {
 } from "../../packages/localization";
 import { campaignSchema } from "../../packages/schemas";
 import {
+  languagesSchema,
   loadCampaign,
   loadProject,
   releaseIssues,
@@ -29,6 +30,84 @@ const root = resolve(import.meta.dir, "../..");
 const campaign = await loadCampaign(root, "technical-pilot");
 const codes = (c: typeof campaign) =>
   validateCampaign(c).issues.map((i) => i.code);
+
+test("colección fija 17 locales y destinos únicos", async () => {
+  const p = await loadProject(root);
+  const config = structuredClone(p.languages);
+  config.targets.pop();
+  expect(() => languagesSchema.parse(config)).toThrow();
+  const locale = structuredClone(p.languages);
+  const [localeA, localeB] = locale.targets;
+  if (!localeA || !localeB) throw new Error("Locales ausentes");
+  localeB.locale = localeA.locale;
+  expect(() => languagesSchema.parse(locale)).toThrow();
+  const folders = structuredClone(p.languages);
+  const [folderA, folderB] = folders.targets;
+  if (!folderA || !folderB) throw new Error("Carpetas ausentes");
+  folderB.engineFolder = folderA.engineFolder;
+  expect(() => languagesSchema.parse(folders)).toThrow();
+});
+test("victoria final persiste progreso; misiones intermedias pueden omitirlo", () => {
+  const c = structuredClone(campaign);
+  c.status = "draft";
+  const first = c.scenarios[0];
+  if (!first) throw new Error("Escenario ausente");
+  delete first.victory.progressKey;
+  expect(codes(c)).toContain("progress.missing");
+  const last = structuredClone(first);
+  last.id = "02-final";
+  last.victory.progressKey = "progress.technical-pilot.complete";
+  c.scenarios.push(last);
+  expect(codes(c)).not.toContain("progress.missing");
+  delete last.victory.progressKey;
+  last.victory.routes = [
+    {
+      id: "route-a",
+      objectives: ["defeat-guard"],
+      progressKey: "progress.technical-pilot.route-a",
+    },
+  ];
+  expect(codes(c)).not.toContain("progress.missing");
+});
+test("eventos, reservas y evidencias exigen IDs inequívocos", () => {
+  const c = structuredClone(campaign);
+  const s = c.scenarios[0];
+  if (!s) throw new Error("Escenario ausente");
+  const event = {
+    id: "same",
+    conditions: [{ type: "timer" as const, seconds: 10 }],
+    effects: [{ type: "set-variable" as const, variable: "state", value: 1 }],
+  };
+  s.triggers = [
+    event,
+    { ...event, conditions: [{ type: "timer", seconds: 20 }] },
+  ];
+  expect(codes(c)).toContain("game.trigger-duplicate");
+  const reserve = {
+    id: "reserve",
+    origin: "Ciudad",
+    cause: "Movilización",
+    counterplay: "Bloquear camino",
+    maxWaves: 1,
+    unitsPerWave: 1,
+    intervalSeconds: 20,
+    totalBudget: 1,
+  };
+  const [human, enemy] = s.factions;
+  if (!human || !enemy) throw new Error("Facciones ausentes");
+  human.reinforcements = [reserve];
+  enemy.reinforcements = [reserve];
+  expect(codes(c)).not.toContain("game.reinforcement-duplicate");
+  enemy.reinforcements.push(reserve);
+  expect(codes(c)).toContain("game.reinforcement-duplicate");
+  const qa = s.qa[0];
+  const compatibility = c.compatibility[0];
+  if (!qa || !compatibility) throw new Error("Evidencias ausentes");
+  s.qa.push(structuredClone(qa));
+  expect(codes(c)).toContain("game.qa-duplicate");
+  c.compatibility.push(structuredClone(compatibility));
+  expect(codes(c)).toContain("campaign.compatibility-duplicate");
+});
 
 describe("Contratos y trazabilidad", () => {
   test("fixture válido y contrato estricto", () => {

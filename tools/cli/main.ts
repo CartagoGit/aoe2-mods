@@ -13,6 +13,7 @@ import {
   assertValid,
   atomicWrite,
   hash,
+  portableRelativePath,
   sourceFile,
   within,
   writeJson,
@@ -30,6 +31,7 @@ import { buildAudio } from "./media";
 import {
   campaignFileSchema,
   docsCheck,
+  inspectStaging,
   loadCampaign,
   loadProject,
   releaseIssues,
@@ -84,7 +86,7 @@ async function build(
   }
   for (const asset of c.assets) {
     if (!asset.enginePath) continue;
-    const target = within(modRoot, asset.enginePath);
+    const target = within(modRoot, portableRelativePath(asset.enginePath));
     await atomicWrite(
       target,
       await readFile(await sourceFile(root, asset.path)),
@@ -136,6 +138,18 @@ async function build(
 async function main() {
   const [command, ...args] = process.argv.slice(2);
   const id = args.find((a) => !a.startsWith("--"));
+  if (command === "staging:check") {
+    if (!id) throw new Error("Uso: bun run staging:check ID [--partial]");
+    const report = await inspectStaging(root, id);
+    assertValid(report.issues);
+    if (!report.complete && !args.includes("--partial"))
+      throw new Error(`Borrador incompleto: ${report.pending.join(", ")}`);
+    console.log({
+      ...report,
+      scope: "draft-schema; sin IDs, archivos multimedia ni exportación",
+    });
+    return;
+  }
   if (command === "audio:build") {
     if (!id) throw new Error("Uso: bun run audio:build ID --locale=es-ES");
     const locale =

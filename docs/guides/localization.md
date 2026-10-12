@@ -2,7 +2,7 @@
 
 Steam confirma 17 idiomas de interfaz/subtítulos en la consulta fechada. config/languages.json mantiene locales separados y carpetas candidatas del motor; folderVerified=false hasta inspección y prueba de una instalación objetivo. Los candidatos no se presentan como códigos definitivamente acreditados.
 
-La fuente es es-ES; mantener es-LATAM, chino simplificado y tradicional separados. Cada catálogo tiene estado draft/translated/reviewed/approved y revisor. No declarar aprobada una traducción automática por existir. Inglés no es un fallback garantizado del motor: generar el destino completo y probarlo.
+La configuración exige exactamente los 17 locales de la colección, sin locales ni carpetas repetidos; no puede reducirse para superar release. La fuente es es-ES; mantener es-LATAM, chino simplificado y tradicional separados. Cada catálogo tiene estado draft/translated/reviewed/approved y revisor. No declarar aprobada una traducción automática por existir. Inglés no es un fallback garantizado del motor: generar el destino completo y probarlo.
 
 Todos los textos pasan por claves: título, descripción, objetivos, diálogos, decisiones, intro/outro, victoria/derrota, subtítulos y avisos. validateCatalogs exige igualdad de placeholders y marcadores, claves canónicas, control UTF-8 y límite editorial 4000 (no límite oficial del motor). La interpolación se resuelve antes de exportar.
 

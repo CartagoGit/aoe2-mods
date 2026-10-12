@@ -12,6 +12,7 @@ import {
 } from "../../packages/audio";
 import {
   atomicWrite,
+  duplicates,
   hash,
   jsonFile,
   sourceFile,
@@ -19,20 +20,35 @@ import {
 } from "../../packages/core";
 import type { Campaign } from "../../packages/schemas";
 
-const providerSchema = z.strictObject({
-  schemaVersion: z.literal(1),
-  providers: z.array(
-    z.strictObject({
-      id: z.string(),
-      version: z.string(),
-      license: z.string(),
-      command: z.string(),
-      args: z.array(z.string()),
-      enabled: z.boolean(),
-    }),
-  ),
-  normalizationDbFS: z.number().min(-30).max(0),
-});
+const providerSchema = z
+  .strictObject({
+    schemaVersion: z.literal(1),
+    providers: z.array(
+      z.strictObject({
+        id: z.string(),
+        version: z.string(),
+        license: z.string(),
+        command: z.string(),
+        args: z.array(z.string()),
+        enabled: z.boolean(),
+      }),
+    ),
+    normalizationDbFS: z.number().min(-30).max(0),
+  })
+  .superRefine((config, ctx) => {
+    for (const id of duplicates(config.providers.map((p) => p.id)))
+      ctx.addIssue({
+        code: "custom",
+        message: `Proveedor duplicado: ${id}`,
+        path: ["providers"],
+      });
+    if (config.providers.some((p) => p.id === "recorded"))
+      ctx.addIssue({
+        code: "custom",
+        message: "ID de proveedor reservado: recorded",
+        path: ["providers"],
+      });
+  });
 export async function buildAudio(root: string, c: Campaign, locale: string) {
   const catalog = c.localization.find((l) => l.locale === locale);
   if (!catalog) throw new Error(`Locale inexistente ${locale}`);
@@ -79,6 +95,7 @@ export async function buildAudio(root: string, c: Campaign, locale: string) {
       if (!definition)
         throw new Error(`Proveedor local no configurado ${voice.provider}`);
       provider = new CommandVoiceProvider(
+        definition.id,
         definition.version,
         definition.license,
         definition.command,

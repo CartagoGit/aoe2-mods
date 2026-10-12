@@ -4,7 +4,7 @@
 
 Descubrir estado → comprobar dependencias → entrar en unidad desde develop → reclamar archivos → leer brief/fuentes → implementar contenido → validar → entregar evidencia → revisión independiente → publicar oficialmente → registrar cierre. Las operaciones proceden del catálogo vivo de DelendAI, no de nombres copiados de un chat.
 
-Los slices de dossier, contenido, registro global y QA tienen propiedad diferenciada. Los IDs/glosario se modifican en una unidad que los reclame; si dos campañas necesitan cambiarlos, serializa ese trabajo. No adelantes un slice dependiente del contenido que todavía no existe. Un gate e2e de una propuesta significa ejecutar el alcance declarado, no simular AoE2 cuando no está disponible.
+Los slices de dossier, borradores y QA tienen propiedad diferenciada. Preparar contenido en staging/campaigns; el slice de materialización posee simultáneamente campañas completas, borradores, IDs y glosario, y los integra juntos. Seguir [staging](../guides/staging.md): staging:check --partial declara pendientes; sin --partial exige fuentes completas. Todos los slices mantienen bun run validate verde; serializar la modificación del registro global. Un gate e2e significa ejecutar el alcance declarado y documentar las pruebas de motor pendientes.
 
 Los commits de una unidad se realizan con Git dentro de ese worktree; work checkpoint desde un servidor anclado al checkout compartido no captura otro worktree. Consulta el esquema y el workflow actual antes de usarlo.
 
@@ -20,6 +20,8 @@ Si existe una unidad pendiente propia, inspecciona sus cambios y commit antes de
 Localiza la siguiente tarea de contenido designada en NEXT-PROPOSALS, comprobando IDs y estados actuales. Continúa solo el slice permitido y listo. Lee su propuesta, brief, fuentes y acceptance. Reutiliza contratos y compiladores existentes; no cambies arquitectura ni config global fuera de su slice. Si una dependencia/revisión/prueba de motor falta, registra la causa y la tarea responsable, sin declarar que se superó.
 
 Sigue WORKFLOW y QUALITY-GATES: evidencia histórica, narradores diferenciados, canonical es-ES, IDs permanentes, 17 locales, derechos de medios, voces offline, objetivos/recuperación, economía finita, dificultades y QA. Ejecuta validación y exportación según el cambio. Vincula el QA del motor al ZIP probado y su hash; invalida la evidencia si cambia el artefacto.
+
+Prepara los borradores en staging/campaigns y sigue docs/guides/staging.md. Incorpora campañas, escenarios, catálogos, lock de IDs y glosario juntos únicamente en el slice de materialización que posee esas rutas. No crees una carpeta activa con referencias pendientes ni claves sin ID. El gate global permanece verde en cada entrega.
 
 Presenta la entrega a revisión independiente y publica exclusivamente mediante DelendAI. No autoaprobar, no editar estados manualmente ni hacer commits/push de develop. Deja checkpoint y reporte del slice; continúa con el siguiente solo cuando sus dependencias estén satisfechas. La publicación pública y generación masiva pagada siguen requiriendo autorización específica.
 ```

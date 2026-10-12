@@ -3,6 +3,7 @@ import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
+  CommandVoiceProvider,
   inspectWav,
   produceAudio,
   RecordedVoiceProvider,
@@ -28,6 +29,65 @@ function wav() {
 test("WAV PCM y duración", () => {
   expect(inspectWav(wav()).duration).toBe(1);
   expect(() => inspectWav(wav().subarray(0, 50))).toThrow();
+});
+test("WAV rechaza alineación, frames y chunks incompletos", () => {
+  const misaligned = wav();
+  misaligned.writeUInt16LE(0, 32);
+  expect(() => inspectWav(misaligned)).toThrow("PCM inconsistente");
+  const partialFrame = wav();
+  partialFrame.writeUInt32LE(31999, 40);
+  expect(() => inspectWav(partialFrame)).toThrow("WAV sin audio válido");
+  const trailing = Buffer.concat([wav(), Buffer.alloc(1)]);
+  trailing.writeUInt32LE(trailing.length - 8, 4);
+  expect(() => inspectWav(trailing)).toThrow("chunk incompleta");
+  const missingPadding = wav().subarray(0, 32043);
+  missingPadding.writeUInt32LE(missingPadding.length - 8, 4);
+  missingPadding.writeUInt32LE(31999, 40);
+  expect(() => inspectWav(missingPadding)).toThrow("WAV truncado");
+});
+test("proveedores de comando aíslan identidad y argumentos en caché", async () => {
+  const cache = await mkdtemp(join(tmpdir(), "cdf-command-audio-"));
+  try {
+    const request = {
+      text: "Hola",
+      locale: "es-ES",
+      voice: "narrator",
+      delivery: "normal",
+      rate: 1,
+      pronunciation: {},
+    };
+    const a = wav();
+    const b = wav();
+    b.writeInt16LE(1234, 44);
+    const args = (bytes: Buffer) => [
+      "-e",
+      `process.stdout.write(Buffer.from("${bytes.toString("base64")}", "base64"))`,
+    ];
+    const provider = (id: string, bytes: Buffer) =>
+      new CommandVoiceProvider(
+        id,
+        "1",
+        "Original",
+        process.execPath,
+        args(bytes),
+      );
+    const first = await produceAudio(cache, request, provider("voice-a", a));
+    const otherId = await produceAudio(cache, request, provider("voice-b", a));
+    expect(otherId.cached).toBe(false);
+    expect(otherId.path).not.toBe(first.path);
+    const otherArgs = await produceAudio(
+      cache,
+      request,
+      provider("voice-a", b),
+    );
+    expect(otherArgs.cached).toBe(false);
+    expect(otherArgs.sha256).not.toBe(first.sha256);
+    expect(
+      (await produceAudio(cache, request, provider("voice-a", b))).cached,
+    ).toBe(true);
+  } finally {
+    await rm(cache, { recursive: true, force: true });
+  }
 });
 test("cache por contenido, voz y proveedor", async () => {
   const path = await mkdtemp(join(tmpdir(), "cof-audio-"));

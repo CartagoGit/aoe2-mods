@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import { canonical, hash, jsonFile, sourceFile } from "../../packages/core";
 import type { Campaign } from "../../packages/schemas";
 import type { loadProject } from "./project";
@@ -25,9 +25,34 @@ export async function candidateFingerprint(
     `${base}/${m.layoutTemplate}`,
     "tools/python/export_aoe2.py",
     "config/toolchain.json",
+    "config/engine.json",
+    "package.json",
+    "bun.lock",
+    "requirements.lock.txt",
   ];
+  async function sources(directory: string): Promise<string[]> {
+    const entries = await readdir(await sourceFile(root, directory), {
+      withFileTypes: true,
+    });
+    return (
+      await Promise.all(
+        entries.map(async (entry) => {
+          const path = `${directory}/${entry.name}`;
+          if (entry.isSymbolicLink())
+            throw new Error(`Generador enlazado no permitido: ${path}`);
+          if (entry.isDirectory()) return sources(path);
+          return /\.(?:ts|py)$/.test(entry.name) ? [path] : [];
+        }),
+      )
+    ).flat();
+  }
+  files.push(
+    ...(
+      await Promise.all(["packages", "tools/cli", "tools/python"].map(sources))
+    ).flat(),
+  );
   const fileHashes = await Promise.all(
-    files.map(async (path) => ({
+    [...new Set(files)].sort().map(async (path) => ({
       path,
       sha256: hash(await readFile(await sourceFile(root, path))),
     })),

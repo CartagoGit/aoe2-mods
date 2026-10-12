@@ -13,6 +13,7 @@ export interface VoiceProvider {
   id: string;
   version: string;
   license: string;
+  cacheIdentity?: string;
   synthesize(request: AudioRequest): Promise<Uint8Array>;
 }
 export function inspectWav(data: Uint8Array): {
@@ -32,23 +33,36 @@ export function inspectWav(data: Uint8Array): {
     channels = 0,
     byteRate = 0,
     size = 0,
+    alignment = 0,
     format = false;
-  for (let p = 12; p + 8 <= b.length; ) {
+  const dataSizes: number[] = [];
+  let p = 12;
+  while (p < b.length) {
+    if (p + 8 > b.length)
+      throw new Error("WAV con cabecera de chunk incompleta");
     const n = b.readUInt32LE(p + 4);
-    if (p + 8 + n > b.length) throw new Error("WAV truncado");
+    if (p + 8 + n + (n % 2) > b.length) throw new Error("WAV truncado");
     const tag = b.toString("ascii", p, p + 4);
     if (tag === "fmt ") {
-      if (n < 16 || b.readUInt16LE(p + 8) !== 1)
+      if (format || n < 16 || b.readUInt16LE(p + 8) !== 1)
         throw new Error("Solo PCM WAV");
       channels = b.readUInt16LE(p + 10);
       rate = b.readUInt32LE(p + 12);
       byteRate = b.readUInt32LE(p + 16);
+      alignment = b.readUInt16LE(p + 20);
       const bits = b.readUInt16LE(p + 22);
-      if (![16, 24].includes(bits) || byteRate !== (rate * channels * bits) / 8)
+      if (
+        ![16, 24].includes(bits) ||
+        alignment !== (channels * bits) / 8 ||
+        byteRate !== rate * alignment
+      )
         throw new Error("PCM inconsistente");
       format = true;
     }
-    if (tag === "data") size += n;
+    if (tag === "data") {
+      size += n;
+      dataSizes.push(n);
+    }
     p += 8 + n + (n % 2);
   }
   if (
@@ -57,7 +71,8 @@ export function inspectWav(data: Uint8Array): {
     rate < 16000 ||
     rate > 96000 ||
     !size ||
-    !byteRate
+    !byteRate ||
+    dataSizes.some((n) => n % alignment !== 0)
   )
     throw new Error("WAV sin audio válido");
   return { duration: size / byteRate, sampleRate: rate, channels };
@@ -77,14 +92,17 @@ export class RecordedVoiceProvider implements VoiceProvider {
   }
 }
 export class CommandVoiceProvider implements VoiceProvider {
-  readonly id = "local-command";
+  readonly cacheIdentity: string;
   constructor(
+    readonly id: string,
     readonly version: string,
     readonly license: string,
     private readonly executable: string,
     private readonly args: string[],
   ) {
-    if (!version || !license) throw new Error("Proveedor sin versión/licencia");
+    if (!id.trim() || !version.trim() || !license.trim() || !executable.trim())
+      throw new Error("Proveedor sin identidad/versión/licencia/comando");
+    this.cacheIdentity = hash(canonical({ executable, args }));
   }
   async synthesize(request: AudioRequest): Promise<Uint8Array> {
     const proc = Bun.spawn([this.executable, ...this.args], {
@@ -119,6 +137,7 @@ export async function produceAudio(
         id: provider.id,
         version: provider.version,
         license: provider.license,
+        configuration: provider.cacheIdentity ?? null,
       },
     }),
   );

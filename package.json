@@ -24,7 +24,8 @@
     "ids:allocate": "bun tools/cli/main.ts ids:allocate",
     "test:export": "bun tools/cli/main.ts export:check",
     "audio:build": "bun tools/cli/main.ts audio:build",
-    "campaign:candidate": "bun tools/cli/main.ts campaign:candidate"
+    "campaign:candidate": "bun tools/cli/main.ts campaign:candidate",
+    "staging:check": "bun tools/cli/main.ts staging:check"
   },
   "dependencies": {
     "zod": "4.3.6"

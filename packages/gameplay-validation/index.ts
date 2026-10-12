@@ -38,9 +38,20 @@ export function validateGameplay(s: Scenario): Issue[] {
     ["objective", s.objectives.map((o) => o.id)],
     ["faction", s.factions.map((f) => f.id)],
     ["variable", s.variables.map((v) => v.id)],
+    ["trigger", s.triggers.map((t) => t.id)],
+    ["qa", s.qa.map((q) => q.id)],
   ] as const)
     for (const id of duplicates([...ids]))
       out.push(issue(`game.${kind}-duplicate`, id, "ID repetido"));
+  for (const faction of s.factions)
+    for (const id of duplicates(faction.reinforcements.map((r) => r.id)))
+      out.push(
+        issue(
+          "game.reinforcement-duplicate",
+          `${faction.id}.${id}`,
+          "Reserva repetida en la facción",
+        ),
+      );
   if (
     s.factions.filter((f) => f.role === "human").length !== 1 ||
     s.factions.find((f) => f.role === "human")?.player !== 1

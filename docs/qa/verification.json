@@ -7,9 +7,9 @@
     {
       "command": "bun run validate",
       "exitCode": 0,
-      "testsPassing": 33,
-      "testsTotal": 33,
-      "expectCalls": 74
+      "testsPassing": 41,
+      "testsTotal": 41,
+      "expectCalls": 124
     },
     {
       "command": "bun run test:export",
@@ -72,7 +72,16 @@
     "status": "in_review",
     "implementer": "gpt-6",
     "reviewer": null,
-    "submittedCommit": "ae2171aed68ad1bcede6238e428265a286dc6a88"
+    "submittedCommit": "ae2171aed68ad1bcede6238e428265a286dc6a88",
+    "technical": {
+      "status": "fixes-awaiting-recheck",
+      "instance": "/root/independent_review",
+      "actualModel": "gpt-6",
+      "findings": 8,
+      "correctedFindings": 8,
+      "baselineCommit": "4f6ea4ada828bb4a77f69f64d87faf8a1a89540e"
+    },
+    "formalBlocker": "Runtime requires exact model ID and reviewer != implementer; both authorized instances are gpt-6. No invented identity or self-approval."
   },
   "integration": {
     "status": "blocked",

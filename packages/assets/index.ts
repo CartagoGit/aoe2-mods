@@ -1,24 +1,66 @@
 import { readFile } from "node:fs/promises";
-import { hash, type Issue, issue, sourceFile } from "../core";
+import { destinationKey, hash, type Issue, issue, sourceFile } from "../core";
 import type { Asset } from "../schemas";
+export function validateAssetDestinations(
+  groups: { owner: string; assets: Asset[] }[],
+  reservedPaths: string[] = [],
+): Issue[] {
+  const issues: Issue[] = [];
+  const reserved = new Set(reservedPaths.map(destinationKey));
+  const destinations = new Map<string, { owner: string; sha256: string }>();
+  for (const { owner, assets } of groups) {
+    const local = new Set<string>();
+    for (const asset of assets) {
+      if (!asset.enginePath) continue;
+      const path = `${owner}.${asset.id}`;
+      try {
+        const key = destinationKey(asset.enginePath);
+        if (reserved.has(key))
+          issues.push(
+            issue(
+              "assets.reserved-path",
+              path,
+              "El recurso sobrescribe un archivo compilado",
+            ),
+          );
+        if (local.has(key))
+          issues.push(
+            issue("assets.destination", path, "Destino nativo repetido"),
+          );
+        const previous = destinations.get(key);
+        if (
+          previous &&
+          previous.owner !== owner &&
+          previous.sha256 !== asset.sha256
+        )
+          issues.push(
+            issue(
+              "assets.global-destination",
+              path,
+              `Destino compartido con contenido distinto en ${previous.owner}`,
+            ),
+          );
+        local.add(key);
+        destinations.set(key, { owner, sha256: asset.sha256 });
+      } catch (error) {
+        issues.push(issue("assets.destination-path", path, String(error)));
+      }
+    }
+  }
+  return issues;
+}
 export async function validateAssets(
   root: string,
   assets: Asset[],
 ): Promise<Issue[]> {
-  const issues: Issue[] = [];
+  const issues: Issue[] = validateAssetDestinations([
+    { owner: "assets", assets },
+  ]);
   const ids = new Set<string>();
-  const destinations = new Set<string>();
   for (const a of assets) {
     const expectedFormat = { image: "png", audio: "wav", map: "json" }[a.kind];
     if (a.format !== expectedFormat)
       issues.push(issue("assets.format", a.id, "Tipo y formato no coinciden"));
-    if (a.enginePath) {
-      if (destinations.has(a.enginePath))
-        issues.push(
-          issue("assets.destination", a.id, "Destino nativo repetido"),
-        );
-      destinations.add(a.enginePath);
-    }
     if (ids.has(a.id))
       issues.push(issue("assets.duplicate", a.id, "ID repetido"));
     ids.add(a.id);

@@ -6,11 +6,11 @@ Estos IDs fueron creados por el servidor el 2026-10-12. Son referencias observad
 |---|---|---|
 | i00001 Fábrica de campañas | Arquitecto | S1 infraestructura, auditoría, revisión e integración |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | S1 progreso/rutas; S2 locales/coexistencia; S3 plantillas/audio; S4 dificultad/rango; S5 instalación y experimento RoR |
-| f00001 Piloto técnico de rutas | M3.1 contenido | S1 dossier; S2 fuentes de dos mods; S3 IDs/glosario; S4 informe. Tras i00001 revisada/integrada |
-| f00002 Piloto Puente Milvio | M3.1 contenido | S1 evidencia; S2 misión/media/locales; S3 IDs; S4 QA. Tras piloto técnico revisado y capacidades de motor acreditadas |
-| f00003 Iglesia imperial 312–337 | M3.1 contenido | S1 dossier; S2 colección; S3 batalla312; S4 diplomacia325; S5 economía330; S6 IDs/entrega. Tras pilotos y adaptación necesaria |
+| f00001 Piloto técnico de rutas | M3.1 contenido | S1 dossier; S2 bundles en staging; S3 materialización conjunta/IDs/glosario; S4 informe. Tras i00001 revisada/integrada |
+| f00002 Piloto Puente Milvio | M3.1 contenido | S1 evidencia; S2 bundle en staging; S3 materialización/IDs/glosario; S4 QA. Tras piloto técnico revisado y capacidades de motor acreditadas |
+| f00003 Iglesia imperial 312–337 | M3.1 contenido | S1 dossier; S2 metadatos en staging; S3 batalla312; S4 diplomacia325; S5 economía330 y bundle completo; S6 materialización/IDs/QA. Tras pilotos y adaptación necesaria |
 
-El brief inicial está en docs/wiki/route-pilot/00-brief.md; S1 lo revisa y completa, S2 lo materializa. Las matrices tests/compatibility/*.json son planes pendientes, no resultados aprobados.
+El brief inicial está en docs/wiki/route-pilot/00-brief.md; S1 lo revisa, S2 prepara ambos bundles y S3 los materializa junto a sus IDs. Las matrices tests/compatibility/*.json son planes pendientes. Seguir [staging](../guides/staging.md); ninguna entrega integra campañas incompletas ni espera IDs de un slice posterior.
 
 La primera tarea que se asignará a M3.1 es S1 del piloto técnico. Sigue la propuesta completa y el brief, sin decidir nuevos formatos. Es posible crear fuentes del piloto antes de acreditar el motor; su entrega publicable permanece bloqueada hasta la compatibilidad. El piloto histórico no desbloquea la campaña futura por su mera existencia.
 

@@ -1,11 +1,15 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
-import { validateAssets } from "../../packages/assets";
+import {
+  validateAssetDestinations,
+  validateAssets,
+} from "../../packages/assets";
 import { validateAudio } from "../../packages/audio";
 import { validateCampaign } from "../../packages/campaign-compiler";
 import {
   assertValid,
+  destinationKey,
   duplicates,
   type Issue,
   issue,
@@ -29,20 +33,49 @@ import {
 export const campaignFileSchema = campaignSchema
   .omit({ scenarios: true })
   .extend({ scenarioFiles: z.array(z.string().min(1)).min(1) });
-const languagesSchema = z.strictObject({
-  schemaVersion: z.literal(1),
-  checked: z.iso.date(),
-  source: z.url(),
-  targets: z
-    .array(
-      z.strictObject({
-        locale: z.string().min(1),
-        engineFolder: z.string().regex(/^[a-z]+$/),
-        folderVerified: z.boolean(),
-      }),
-    )
-    .min(1),
-});
+export const collectionLocales = [
+  "en",
+  "fr",
+  "it",
+  "de",
+  "ja",
+  "ko",
+  "pt-BR",
+  "ru",
+  "zh-Hans",
+  "es-LATAM",
+  "zh-Hant",
+  "tr",
+  "vi",
+  "es-ES",
+  "pl",
+  "hi",
+  "ms",
+] as const;
+export const languagesSchema = z
+  .strictObject({
+    schemaVersion: z.literal(1),
+    checked: z.iso.date(),
+    source: z.url(),
+    targets: z
+      .array(
+        z.strictObject({
+          locale: z.enum(collectionLocales),
+          engineFolder: z.string().regex(/^[a-z]+$/),
+          folderVerified: z.boolean(),
+        }),
+      )
+      .length(collectionLocales.length),
+  })
+  .superRefine((config, ctx) => {
+    for (const field of ["locale", "engineFolder"] as const)
+      for (const value of duplicates(config.targets.map((t) => t[field])))
+        ctx.addIssue({
+          code: "custom",
+          path: ["targets"],
+          message: `${field} repetido: ${value}`,
+        });
+  });
 const engineSchema = z.strictObject({
   schemaVersion: z.literal(1),
   scenarioVersion: z.string(),
@@ -63,27 +96,63 @@ const lockSchema = z.strictObject({
   ids: z.record(z.string(), z.number().int()),
   retired: z.array(z.string()),
 });
+async function campaignMetadata(
+  root: string,
+  id: string,
+  area: "campaigns" | "staging/campaigns",
+) {
+  if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(id))
+    throw new Error("ID de campaña inválido");
+  const base = `${area}/${id}`;
+  const metadata = campaignFileSchema.parse(
+    await jsonFile(await sourceFile(root, `${base}/campaign.json`)),
+  );
+  if (metadata.id !== id)
+    throw new Error("ID y carpeta de campaña no coinciden");
+  if (new Set(metadata.scenarioFiles).size !== metadata.scenarioFiles.length)
+    throw new Error("scenarioFiles contiene rutas repetidas");
+  return { base, metadata };
+}
 export async function loadCampaign(
   root: string,
   id: string,
 ): Promise<Campaign> {
-  if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(id))
-    throw new Error("ID de campaña inválido");
-  const _path = join(root, "campaigns", id);
-  const metadata = campaignFileSchema.parse(
-    await jsonFile(await sourceFile(root, `campaigns/${id}/campaign.json`)),
-  );
-  if (metadata.id !== id)
-    throw new Error("ID y carpeta de campaña no coinciden");
+  const { base, metadata } = await campaignMetadata(root, id, "campaigns");
   const scenarios = await Promise.all(
     metadata.scenarioFiles.map(async (p) =>
       scenarioSchema.parse(
-        await jsonFile(await sourceFile(root, `campaigns/${id}/${p}`)),
+        await jsonFile(await sourceFile(root, `${base}/${p}`)),
       ),
     ),
   );
   const { scenarioFiles: _, ...rest } = metadata;
   return campaignSchema.parse({ ...rest, scenarios });
+}
+/** Los borradores parciales nunca forman parte de loadProject ni de un mod. */
+export async function inspectStaging(root: string, id: string) {
+  const { base, metadata } = await campaignMetadata(
+    root,
+    id,
+    "staging/campaigns",
+  );
+  const pending: string[] = [];
+  const scenarios: Campaign["scenarios"] = [];
+  for (const path of metadata.scenarioFiles) {
+    let source: string;
+    try {
+      source = await sourceFile(root, `${base}/${path}`);
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+      pending.push(path);
+      continue;
+    }
+    scenarios.push(scenarioSchema.parse(await jsonFile(source)));
+  }
+  const { scenarioFiles: _, ...rest } = metadata;
+  const issues = pending.length
+    ? []
+    : validateCampaign({ ...rest, scenarios }).issues;
+  return { campaign: id, pending, complete: pending.length === 0, issues };
 }
 export async function loadProject(root: string) {
   const dirs = await readdir(join(root, "campaigns"), { withFileTypes: true });
@@ -132,6 +201,33 @@ export async function validateProject(root: string): Promise<Issue[]> {
     })
     .parse(await jsonFile(join(root, "config/glossary.json")));
   const out: Issue[] = [];
+  const reservedPaths = [
+    ...p.languages.targets.map(
+      (t) =>
+        `resources/${t.engineFolder}/strings/key-value/key-value-modded-strings-utf8.txt`,
+    ),
+    ...p.campaigns.flatMap((c) =>
+      [
+        `${c.internalName}.aoe2campaign`,
+        `${c.internalName}.json`,
+        `${c.internalName}_layout.json`,
+      ].map((name) => `resources/_common/campaign/${name}`),
+    ),
+  ];
+  for (const path of duplicates(reservedPaths.map(destinationKey)))
+    out.push(
+      issue(
+        "project.native-destination",
+        path,
+        "Campañas con archivos nativos coincidentes",
+      ),
+    );
+  out.push(
+    ...validateAssetDestinations(
+      p.campaigns.map((c) => ({ owner: c.id, assets: c.assets })),
+      reservedPaths,
+    ),
+  );
   for (const c of p.campaigns) {
     out.push(
       ...validateGlossary(c.localization, glossary.terms as GlossaryTerm[]),
@@ -144,26 +240,6 @@ export async function validateProject(root: string): Promise<Issue[]> {
       ...validateCampaign(c).issues,
       ...(await validateAssets(root, c.assets)),
     );
-    const reservedPaths = [
-      ...p.languages.targets.map(
-        (t) =>
-          `resources/${t.engineFolder}/strings/key-value/key-value-modded-strings-utf8.txt`,
-      ),
-      ...[
-        `${c.internalName}.aoe2campaign`,
-        `${c.internalName}.json`,
-        `${c.internalName}_layout.json`,
-      ].map((n) => `resources/_common/campaign/${n}`),
-    ];
-    for (const asset of c.assets)
-      if (asset.enginePath && reservedPaths.includes(asset.enginePath))
-        out.push(
-          issue(
-            "assets.reserved-path",
-            asset.id,
-            "El recurso sobrescribe un archivo compilado",
-          ),
-        );
     for (const a of c.assets.filter((a) => a.kind === "audio"))
       try {
         await validateAudio(root, a.path);

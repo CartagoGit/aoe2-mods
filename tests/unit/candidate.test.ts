@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { mkdtemp, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { atomicWrite, writeJson } from "../../packages/core";
@@ -23,6 +23,12 @@ test("candidato invalida cambios de contenido y preserva anotaciones de QA", asy
     await writeJson(`${native}/layout.json`, { token: "two" });
     await atomicWrite(`${dir}/tools/python/export_aoe2.py`, "test-generator");
     await writeJson(`${dir}/config/toolchain.json`, { version: 1 });
+    await writeJson(`${dir}/config/engine.json`, { scenarioVersion: "1.59" });
+    await writeJson(`${dir}/package.json`, { version: "test" });
+    await atomicWrite(`${dir}/bun.lock`, "test-lock");
+    await atomicWrite(`${dir}/requirements.lock.txt`, "test-parser-lock");
+    await atomicWrite(`${dir}/packages/compiler/index.ts`, "test-compiler");
+    await atomicWrite(`${dir}/tools/cli/main.ts`, "test-cli");
     const first = await candidateFingerprint(dir, c, p);
     c.compatibility = [];
     c.editorial.review = "approved";
@@ -35,6 +41,20 @@ test("candidato invalida cambios de contenido y preserva anotaciones de QA", asy
     expect(await candidateFingerprint(dir, c, p)).not.toBe(first);
     cat.strings[c.titleKey] =
       p.campaigns[0]?.localization[0]?.strings[c.titleKey] ?? "";
+    for (const [file, replacement] of [
+      ["config/engine.json", '{"scenarioVersion":"1.58"}\n'],
+      ["requirements.lock.txt", "changed-parser"],
+      ["packages/compiler/index.ts", "changed-compiler"],
+      ["tools/cli/main.ts", "changed-cli"],
+      ["bun.lock", "changed-lock"],
+    ]) {
+      if (!file || replacement === undefined) throw new Error("Caso inválido");
+      const original = await readFile(`${dir}/${file}`);
+      await atomicWrite(`${dir}/${file}`, replacement);
+      expect(await candidateFingerprint(dir, c, p)).not.toBe(first);
+      await atomicWrite(`${dir}/${file}`, original);
+      expect(await candidateFingerprint(dir, c, p)).toBe(first);
+    }
     await writeJson(`${native}/layout.json`, { token: "changed" });
     expect(await candidateFingerprint(dir, c, p)).not.toBe(first);
   } finally {

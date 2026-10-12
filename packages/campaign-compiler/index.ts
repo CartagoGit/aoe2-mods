@@ -88,6 +88,19 @@ export function validateCampaign(input: unknown): {
         issues.push(issue("game.media", s.id, `Recurso inexistente ${a}`));
   }
   if (c.status !== "fixture") {
+    const final = c.scenarios.at(-1);
+    if (
+      final &&
+      !final.victory.progressKey &&
+      final.victory.routes.length === 0
+    )
+      issues.push(
+        issue(
+          "progress.missing",
+          final.id,
+          "La victoria final debe persistir progreso o rutas",
+        ),
+      );
     if (
       !c.introduction.some((l) => l.speaker === c.generalNarrator.id) ||
       !c.introduction.some((l) => l.speaker === c.campaignNarrator.id)
@@ -123,6 +136,14 @@ export function validateCampaign(input: unknown): {
           ),
         );
   }
+  for (const id of duplicates(c.compatibility.map((e) => e.id)))
+    issues.push(
+      issue(
+        "campaign.compatibility-duplicate",
+        id,
+        "Evidencia de compatibilidad repetida",
+      ),
+    );
   if (c.recommendedPrevious.some((p) => p.campaignId === c.id))
     issues.push(issue("progress.self", c.id, "Predecesora autorreferencial"));
   return { campaign: c, issues };

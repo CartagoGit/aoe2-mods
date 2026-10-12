@@ -14,7 +14,7 @@ La auditoría detectó que faltaba un candidato publicable diferenciado del ZIP 
 
 ## Evidencia reproducible
 
-La última validación supera 33 tests, 74 expectativas y cero fallos. La exportación supera tres round-trips de escenarios/contenedores, incluyendo las variantes; Return of Rome se rechaza. Los comandos, hashes y límites están en verification.json. bun run validate incluye tipado, Biome, pruebas y comprobación de docs/campañas. test:export produce el fixture principal más variantes de rutas/oleada finita/PER/terreno, reabre escenarios y extrae contenedores propios. Return of Rome y release prematura deben fallar explícitamente. Los reportes privados regenerables están en build/; ZIPs en dist/ y no se versionan.
+La última validación supera 41 tests, 124 expectativas y cero fallos. La exportación supera tres round-trips de escenarios/contenedores, incluyendo las variantes; Return of Rome se rechaza. Los comandos, hashes y límites están en verification.json. bun run validate incluye tipado, Biome, pruebas y comprobación de docs/campañas. test:export produce el fixture principal más variantes de rutas/oleada finita/PER/terreno, reabre escenarios y extrae contenedores propios. Return of Rome y release prematura deben fallar explícitamente. Los reportes privados regenerables están en build/; ZIPs en dist/ y no se versionan.
 
 No se ha ejecutado AoE2 en este entorno ni los runners remotos de los tres SO. No se ha llamado a proveedores pagados, generado doblaje histórico, publicado mods ni acreditado 17 traducciones. No prometer determinismo de bytes del parser; el ZIP fija orden y fecha de entradas, pero depende de esos bytes.
 
@@ -41,3 +41,9 @@ Resolución legítima del bootstrap: el propietario/runtime debe incorporar el g
 En una unidad aislada se hace commit con Git en esa unidad. work checkpoint opera sobre el checkout compartido cuando se invoca desde el servidor; no debe utilizarse para capturar una unidad distinta. Se detectó que ese checkpoint recogía solo dos archivos compartidos; se conservó todo el contenido con un commit completo en el WIP y se verificó la base y ausencia de cambios pendientes antes de entregar. Las propuestas mantienen los estados emitidos por sus herramientas oficiales.
 
 Mientras el bootstrap y revisión falten, no iniciar el traspaso productivo a M3.1. START contiene el prompt completo para cuando la base quede revisada/integrada. La retirada conservadora de la unidad, si procede, preserva el tip en una ref retired y un dossier local de revisión; no significa aprobación ni abandono de los requisitos pendientes.
+
+## Revisión independiente autorizada
+
+La instancia /root/independent_review, distinta del implementador pero con el mismo modelo GPT-6, identificó ocho hallazgos. Se corrigieron caché de proveedores, huella del candidato, colisiones nativas locales/globales, integridad WAV, progreso final, IDs ambiguos, política de 17 locales y secuencia de slices. Se añadieron comprobación staging y materialización conjunta de campañas/IDs/glosario. Ver [informe independiente](independent-review.md); el commit corregido debe volver a comprobarse.
+
+El runtime rechazó el veredicto fuera de una unidad review y después rechazó la identidad artificial gpt-6-independent-review. Exige el ID real del modelo y reviewer diferente de implementer: ambas instancias GPT-6 no satisfacen ese registro formal. La revisión técnica no se presenta como aprobación oficial. Sigue pendiente una resolución legítima de identidad/modelo revisor además del gate inicial de develop.
