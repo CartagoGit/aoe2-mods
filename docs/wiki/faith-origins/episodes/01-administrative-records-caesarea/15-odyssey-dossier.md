@@ -16,9 +16,9 @@ EN: The inscription remains incomplete. Preserving its surviving words does not 
 
 ES: La inscripción sigue incompleta. Conservar sus palabras no recupera el texto perdido ni acredita otros acontecimientos.
 
-EN: The activity is a fictional first-century administrative copying exercise. The fragmentary stone and modern cast are research evidence shown by the shared narrator, never objects Miriam discovers.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: La actividad es un ejercicio administrativo ficticio de copias en el siglo I. La piedra fragmentaria y el molde moderno son evidencia de investigación que muestra el narrador conjunto, nunca objetos que Miriam descubra.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -277,6 +277,16 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -308,7 +318,8 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-administrative-records-caesarea.dedication-records-2",
@@ -323,7 +334,8 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-administrative-records-caesarea.dedication-records-3",
@@ -338,7 +350,8 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-administrative-records-caesarea.register-1",
@@ -353,7 +366,8 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "derive only from three collected fictional administrative dedication records; not modern archaeology"
+      "generationPolicy": "derive only from three collected fictional administrative dedication records; not modern archaeology",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -1470,7 +1484,7 @@ ES: El traslado voluntario es una actividad ficticia.
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.fact-intro / intro first | collection-narrator | A fragmentary inscription found at Caesarea names Pontius Pilate as prefect of Judaea and records a building dedication. It is evidence for his office, not a record of the trial of Jesus. | Una inscripción fragmentaria hallada en Cesarea nombra a Poncio Pilato prefecto de Judea y registra una dedicación edilicia. Acredita su cargo; no documenta el proceso de Jesús. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.persona-intro / after handover | miriam-archive | I copied titles as carefully as stories. I never met that prefect, and our inherited records cannot tell me everything his name now means to you. | Copié los títulos con tanto cuidado como los relatos. Nunca conocí a aquel prefecto y nuestros escritos heredados no pueden decirme todo lo que su nombre significa ahora para ti. |
-| scenario.faith-origins.01-administrative-records-caesarea.odyssey.historical-license / after persona-intro | none | The activity is a fictional first-century administrative copying exercise. The fragmentary stone and modern cast are research evidence shown by the shared narrator, never objects Miriam discovers. | La actividad es un ejercicio administrativo ficticio de copias en el siglo I. La piedra fragmentaria y el molde moderno son evidencia de investigación que muestra el narrador conjunto, nunca objetos que Miriam descubra. |
+| scenario.faith-origins.01-administrative-records-caesarea.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.route-help / available from start; repeatable without effect | none | Stay on the inland side of the coastal road. The three yards are fictional districts; the sea cannot be crossed on foot. | Permanece en el lado interior del camino costero. Los tres patios son ámbitos ficticios; no puedes cruzar el mar a pie. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o1-goal / phase-1 active | none | Collect three distinct fictional dedication records from the coastal work yard. | Recoge tres registros ficticios distintos de dedicación en el patio de trabajo costero. |

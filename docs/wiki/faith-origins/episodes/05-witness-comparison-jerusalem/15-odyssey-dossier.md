@@ -16,9 +16,9 @@ EN: The exercise distinguishes the claims in Paul’s surviving account from fic
 
 ES: El ejercicio distingue las afirmaciones del relato conservado de Pablo de notas archivísticas ficticias. No aporta una transcripción independiente de los encuentros.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -52,9 +52,9 @@ ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucci�
 
 ### o1 / phase-1
 
-EN: Collect three distinct archival notes; only the labeled Pauline account supplies the historical claim.
+EN: Collect three distinct fictional attendance notes for the local visit. Galatians is a later source for the narrator, not a map object.
 
-ES: Recoge tres notas archivísticas distintas; solo el relato paulino señalado aporta la afirmación histórica.
+ES: Recoge tres notas ficticias distintas de asistencia a la visita local. Gálatas es una fuente posterior del narrador, no un objeto del mapa.
 
 ```json
 {
@@ -77,9 +77,9 @@ ES: Recoge tres notas archivísticas distintas; solo el relato paulino señalado
 }
 ```
 
-EN: The three notes are separate gameplay objects, not three independent ancient witnesses.
+EN: Three fictional working notes are separate gameplay objects, not three historical testimonies.
 
-ES: Las tres notas son objetos jugables separados, no tres testigos antiguos independientes.
+ES: Tres notas de trabajo ficticias son objetos jugables separados, no tres testimonios históricos.
 
 EN: More pages do not always mean more witnesses.
 
@@ -131,9 +131,9 @@ ES: Financia la comparación con 30 de madera y prepara un resumen matizado usan
 }
 ```
 
-EN: The summary retains the source attribution and uncertain calendar date.
+EN: The fictional visit summary is complete. It is not a surviving first-century document.
 
-ES: El resumen conserva la atribución a la fuente y la incertidumbre de la fecha.
+ES: El resumen ficticio de la visita está completo. No es un documento del siglo I conservado.
 
 EN: A date can stay uncertain without the record being useless.
 
@@ -167,9 +167,9 @@ ES: Entrega el resumen matizado en el registro de copias del sur.
 }
 ```
 
-EN: The summary has arrived with its source limits intact.
+EN: The fictional visit summary reached the local receiving register.
 
-ES: El resumen ha llegado conservando los límites de su fuente.
+ES: El resumen ficticio de la visita llega al registro receptor local.
 
 EN: Leave the uncertain year visible beside the fifteen days.
 
@@ -275,6 +275,16 @@ ES: Deja visible el año incierto junto a los quince días.
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -295,7 +305,7 @@ ES: Deja visible el año incierto junto a los quince días.
   "entities": [
     {
       "id": "faith-origins.05-witness-comparison-jerusalem.comparison-notes-1",
-      "role": "fictional-archival-note",
+      "role": "fictional-contemporary-attendance-note",
       "initialHub": "hub-1",
       "offsetTiles": [
         -10,
@@ -306,11 +316,12 @@ ES: Deja visible el año incierto junto a los quince días.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.05-witness-comparison-jerusalem.comparison-notes-2",
-      "role": "fictional-archival-note",
+      "role": "fictional-contemporary-attendance-note",
       "initialHub": "hub-1",
       "offsetTiles": [
         -8,
@@ -321,11 +332,12 @@ ES: Deja visible el año incierto junto a los quince días.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.05-witness-comparison-jerusalem.comparison-notes-3",
-      "role": "fictional-archival-note",
+      "role": "fictional-contemporary-attendance-note",
       "initialHub": "hub-1",
       "offsetTiles": [
         -6,
@@ -336,11 +348,12 @@ ES: Deja visible el año incierto junto a los quince días.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.05-witness-comparison-jerusalem.qualified-summary-1",
-      "role": "derived-comparison-record",
+      "role": "fictional-derived-visit-summary",
       "initialHub": "hub-2",
       "offsetTiles": [
         -10,
@@ -351,7 +364,8 @@ ES: Deja visible el año incierto junto a los quince días.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "derive only from all three collected notes; none is an independent ancient transcript"
+      "generationPolicy": "derive only from all three collected notes; none is an independent ancient transcript",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -644,8 +658,8 @@ ES: Dos etiquetas conservan la atribución de la fuente.
         "es-ES": "En Gálatas, Pablo informa de una visita a Jerusalén, quince días con Cefas y un encuentro con Santiago. Su cronología relativa deja incierta la fecha de calendario."
       },
       "hint": {
-        "en": "Collect three distinct archival notes; only the labeled Pauline account supplies the historical claim.",
-        "es-ES": "Recoge tres notas archivísticas distintas; solo el relato paulino señalado aporta la afirmación histórica."
+        "en": "Collect three distinct fictional attendance notes for the local visit. Galatians is a later source for the narrator, not a map object.",
+        "es-ES": "Recoge tres notas ficticias distintas de asistencia a la visita local. Gálatas es una fuente posterior del narrador, no un objeto del mapa."
       }
     }
   ],
@@ -1468,17 +1482,17 @@ ES: Ofrece alojamiento voluntario a participantes opcionales distintos.
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.fact-intro / intro first | collection-narrator | In Galatians, Paul reports visiting Jerusalem, spending fifteen days with Cephas and meeting James. His relative chronology leaves the calendar date uncertain. | En Gálatas, Pablo informa de una visita a Jerusalén, quince días con Cefas y un encuentro con Santiago. Su cronología relativa deja incierta la fecha de calendario. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.persona-intro / after handover | miriam-archive | Fifteen days: a precise memory inside an uncertain calendar. I have learned not to mistake one kind of precision for another. | Quince días: un recuerdo preciso dentro de un calendario incierto. He aprendido a no confundir una clase de precisión con otra. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.route-help / available from start; repeatable without effect | none | Compare sources in the western court, then use the southern land route. Three gameplay notes do not create three historical witnesses. | Compara las fuentes en el patio occidental y sigue la ruta terrestre del sur. Tres notas jugables no crean tres testigos históricos. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o1-goal / phase-1 active | none | Collect three distinct archival notes; only the labeled Pauline account supplies the historical claim. | Recoge tres notas archivísticas distintas; solo el relato paulino señalado aporta la afirmación histórica. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o1-receipt / o1 latched once | none | The three notes are separate gameplay objects, not three independent ancient witnesses. | Las tres notas son objetos jugables separados, no tres testigos antiguos independientes. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o1-goal / phase-1 active | none | Collect three distinct fictional attendance notes for the local visit. Galatians is a later source for the narrator, not a map object. | Recoge tres notas ficticias distintas de asistencia a la visita local. Gálatas es una fuente posterior del narrador, no un objeto del mapa. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o1-receipt / o1 latched once | none | Three fictional working notes are separate gameplay objects, not three historical testimonies. | Tres notas de trabajo ficticias son objetos jugables separados, no tres testimonios históricos. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o1-reaction / after o1 receipt | miriam-archive | More pages do not always mean more witnesses. | Más páginas no siempre significan más testigos. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o2-goal / phase-2 active | none | Fund comparison with 30 wood and derive one qualified summary using all three notes. | Financia la comparación con 30 de madera y prepara un resumen matizado usando las tres notas. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o2-receipt / o2 latched once | none | The summary retains the source attribution and uncertain calendar date. | El resumen conserva la atribución a la fuente y la incertidumbre de la fecha. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o2-receipt / o2 latched once | none | The fictional visit summary is complete. It is not a surviving first-century document. | El resumen ficticio de la visita está completo. No es un documento del siglo I conservado. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o2-reaction / after o2 receipt | miriam-archive | A date can stay uncertain without the record being useless. | Una fecha puede seguir incierta sin que el registro resulte inútil. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o3-goal / phase-3 active | none | Deliver the qualified summary to the south copy register. | Entrega el resumen matizado en el registro de copias del sur. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o3-receipt / o3 latched once | none | The summary has arrived with its source limits intact. | El resumen ha llegado conservando los límites de su fuente. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o3-receipt / o3 latched once | none | The fictional visit summary reached the local receiving register. | El resumen ficticio de la visita llega al registro receptor local. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.o3-reaction / after o3 receipt | miriam-archive | Leave the uncertain year visible beside the fifteen days. | Deja visible el año incierto junto a los quince días. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-1-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at archive households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares del archivo. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-1-complete / side-1 completed | none | Archive households completed. Its stated benefit has been granted once. | Hogares del archivo: completado. Su ventaja indicada se ha concedido una vez. |

@@ -16,9 +16,9 @@ EN: The relocation illustrates a consequence of the expulsion account. It does n
 
 ES: El traslado ilustra una consecuencia del relato de expulsión. No demuestra que todos los judíos romanos se marcharan, identifica a Chrestus ni acredita esta ruta concreta.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -337,6 +337,16 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -368,7 +378,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-2",
@@ -383,7 +394,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-3",
@@ -398,7 +410,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-4",
@@ -413,7 +426,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-5",
@@ -428,7 +442,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-6",
@@ -443,7 +458,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-7",
@@ -458,7 +474,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.departing-households-8",
@@ -473,7 +490,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.luggage-1",
@@ -488,7 +506,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.luggage-2",
@@ -503,7 +522,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.07-household-relocation-rome-ostia.luggage-3",
@@ -518,7 +538,8 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -1656,7 +1677,7 @@ ES: Dos grupos opcionales nunca sustituyen a los hogares principales.
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.fact-intro / intro first | collection-narrator | Suetonius reports disturbances among Jews in Rome and an expulsion under Claudius, mentioning Chrestus. The identification and conventional dating around 49 remain debated. The households here are fictional. | Suetonio informa de disturbios entre judíos de Roma y una expulsión bajo Claudio, y menciona a Chrestus. Su identificación y la fecha convencional hacia 49 siguen debatidas. Los hogares del escenario son ficticios. |
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.persona-intro / after handover | miriam-archive | A distant writer leaves a name we cannot securely identify. I will not turn that uncertainty into a reason to erase the people who had to leave. | Un autor lejano deja un nombre que no podemos identificar con certeza. No convertiré esa incertidumbre en una razón para borrar a quienes tuvieron que marcharse. |
-| scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.route-help / available from start; repeatable without effect | none | Keep to the north-bank land itinerary. The final departure is a fictional off-map continuation; do not enter water to reach it. | Sigue el itinerario terrestre de la orilla norte. La salida final es una continuación ficticia fuera del mapa; no entres en el agua para alcanzarla. |
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.07-household-relocation-rome-ostia.odyssey.o1-goal / phase-1 active | none | Collect three luggage consignments and assemble six of the eight households alive at the supply yard. | Recoge tres remesas de equipaje y reúne con vida seis de los ocho hogares en el patio de suministros. |

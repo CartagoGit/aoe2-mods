@@ -33,7 +33,7 @@ Lee [plan](docs/production/plan.md), [arquitectura](docs/architecture/overview.m
 
 El alcance vigente son [nueve odiseas y 273 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. La [planificación](docs/design/odyssey-production-plan.md) y d00002 siguen en curso. Hay ocho dossiers ampliados del primer acto de *Embers of the Covenant*, con 313 pantallas bilingües y 48 objetivos secundarios; requieren revisión histórica independiente, terreno navegable y calibración en AoE2. No son ocho escenarios jugables ni desbloquean la autoría histórica de MiniMax.
 
-El [catálogo anterior](docs/design/README.md) conserva 39 contratos históricos, 1.496 pantallas EN/es-ES, 234 secundarios, nueve biblias de narrador y 26 entornos geográficos. La investigación incluye 14 referencias originales y [siete nuevos recursos locales](docs/research/odyssey-research/reference-manifest.json), con créditos, licencias y hashes. Las [asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) distinguen esa base de las odiseas pendientes. Las capacidades y pruebas del motor mantienen sus gates antes de producir contenido.
+El [catálogo anterior](docs/design/README.md) conserva 39 contratos históricos, 1.496 pantallas EN/es-ES, 234 secundarios, nueve biblias de narrador y 26 entornos geográficos. La investigación incluye 14 referencias originales y [ocho nuevos recursos locales](docs/research/odyssey-research/reference-manifest.json), con créditos, licencias y hashes. Las [asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) distinguen esa base de las odiseas pendientes. Las capacidades y pruebas del motor mantienen sus gates antes de producir contenido.
 
 ```sh
 python3 tools/design/render.py

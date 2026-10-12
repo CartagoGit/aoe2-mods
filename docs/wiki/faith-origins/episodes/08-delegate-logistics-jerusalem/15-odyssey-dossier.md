@@ -16,9 +16,9 @@ EN: The reception task changes no theological agreement. Acts and Galatians rema
 
 ES: La tarea de recepción no cambia ningún acuerdo teológico. Hechos y Gálatas siguen siendo relatos atribuidos por separado cuya relación se discute.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -38,6 +38,18 @@ ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucci�
       "consultationDate": "2026-10-12",
       "status": "disputed",
       "reviewState": "consulted by collection agent; architect interpretation and independent historical review pending"
+    },
+    {
+      "consultedUrl": "https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=NRSVUE",
+      "passage": "Galatians 2:1–10",
+      "supportedClaim": {
+        "en": "Paul describes another Jerusalem visit with Barnabas and Titus, a private presentation, agreement about missions and remembering the poor.",
+        "es-ES": "Pablo describe otra visita a Jerusalén con Bernabé y Tito, una exposición privada, un acuerdo sobre misiones y el recuerdo de los pobres."
+      },
+      "limitations": "A retrospective Pauline account; no composition date is asserted. It does not independently establish that this is the same meeting narrated in Acts15 or a transcript of that meeting. Not a physical game object in c49–50.",
+      "consultationDate": "2026-10-12",
+      "status": "consulted-primary-account-with-disputed-identification",
+      "coverageActuallyRead": "complete verses1–10 in linked edition; no modern scholarly harmonization consulted"
     }
   ],
   "knowledgeBasis": {
@@ -94,9 +106,9 @@ ES: La hospitalidad no me obliga a inventar un discurso para quien no dejó uno.
 
 ### o2 / phase-2
 
-EN: Provide one reception payment of 200 food and collect the two separately labeled account copies.
+EN: Provide one reception payment of 200 food and collect two separately labeled fictional delegate journey notes.
 
-ES: Entrega un único pago de recepción de 200 de alimento y recoge las dos copias de relatos etiquetadas por separado.
+ES: Entrega un único pago de recepción de 200 de alimento y recoge dos notas ficticias de viaje de delegados etiquetadas por separado.
 
 ```json
 {
@@ -137,9 +149,9 @@ ES: Entrega un único pago de recepción de 200 de alimento y recoge las dos cop
 }
 ```
 
-EN: The two account labels and single reception receipt are preserved.
+EN: Two fictional journey notes and one reception payment are registered. Neither note is Acts or Galatians.
 
-ES: Se conservan las dos etiquetas de relatos y un único recibo de recepción.
+ES: Se registran dos notas ficticias de viaje y un pago de recepción. Ninguna nota es Hechos ni Gálatas.
 
 EN: Keep each account under its own name.
 
@@ -147,9 +159,9 @@ ES: Conserva cada relato bajo su propio nombre.
 
 ### o3 / phase-3
 
-EN: Deliver both separately attributed copies to the south return station.
+EN: Deliver both distinct fictional journey notes to the south return station.
 
-ES: Entrega ambas copias atribuidas por separado en la estación de regreso sur.
+ES: Entrega las dos notas ficticias distintas de viaje en la estación de regreso sur.
 
 ```json
 {
@@ -175,9 +187,9 @@ ES: Entrega ambas copias atribuidas por separado en la estación de regreso sur.
 }
 ```
 
-EN: Both copies reached the return station without being merged into an invented transcript.
+EN: Both fictional journey notes have arrived; the mission supplies no transcript of the meeting.
 
-ES: Ambas copias llegan a la estación sin fundirse en una transcripción inventada.
+ES: Llegan las dos notas ficticias de viaje; la misión no aporta una transcripción de la reunión.
 
 EN: Leaving them separate is a decision too. It is the one the evidence asks of me.
 
@@ -283,6 +295,16 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -314,7 +336,8 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.08-delegate-logistics-jerusalem.delegates-2",
@@ -329,7 +352,8 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.08-delegate-logistics-jerusalem.delegates-3",
@@ -344,7 +368,8 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.08-delegate-logistics-jerusalem.delegates-4",
@@ -359,11 +384,12 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.08-delegate-logistics-jerusalem.separate-accounts-1",
-      "role": "fictional-attributed-account-copy",
+      "role": "fictional-contemporary-delegate-journey-note",
       "initialHub": "hub-2",
       "offsetTiles": [
         -10,
@@ -374,11 +400,12 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.08-delegate-logistics-jerusalem.separate-accounts-2",
-      "role": "fictional-attributed-account-copy",
+      "role": "fictional-contemporary-delegate-journey-note",
       "initialHub": "hub-2",
       "offsetTiles": [
         -8,
@@ -389,7 +416,8 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -597,9 +625,9 @@ EN: Recover both separate copies from two separate labels and deliver them to th
 
 ES: Recupera las dos copias distintas de dos etiquetas separadas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal.
 
-EN: Copies reinforce separate source attribution.
+EN: Two fictional journey labels preserve distinct gameplay identities; no future canonical text is an object.
 
-ES: Las copias refuerzan la atribución separada.
+ES: Dos etiquetas ficticias de viaje conservan identidades jugables distintas; ningún texto canónico posterior es un objeto.
 
 ```json
 {
@@ -1507,18 +1535,18 @@ ES: La salida voluntaria se distingue del exilio.
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.title / always | none | A Place for the Stranger | Un lugar para el extranjero |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.fact-intro / intro first | collection-narrator | Acts narrates a Jerusalem debate about gentile inclusion and circumcision. Paul gives a separate account of a Jerusalem visit and agreement in Galatians. The two cannot be treated as one securely identified meeting without argument. | Hechos narra un debate en Jerusalén sobre inclusión gentil y circuncisión. Pablo ofrece por separado en Gálatas un relato de visita y acuerdo. No pueden tratarse como un encuentro identificado con certeza sin argumentarlo. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.persona-intro / after handover | miriam-archive | Two accounts can sit on the same shelf without becoming the same page. I learned that lesson slowly, and would rather not lose it now. | Dos relatos pueden estar en el mismo estante sin convertirse en la misma página. Aprendí esa lección despacio y no quiero perderla ahora. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.persona-intro / after handover | miriam-archive | In my later archive, two accounts can sit on the same shelf without becoming the same page. These local journey notes are our reconstruction, not those later books. | En mi archivo posterior, dos relatos pueden estar en el mismo estante sin convertirse en la misma página. Estas notas locales de viaje son nuestra reconstrucción, no esos libros posteriores. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.route-help / available from start; repeatable without effect | none | Host the visitors on the western plateau. Keep both account-copy identities through the southern return route. | Acoge a los visitantes en la meseta occidental. Conserva ambas identidades de las copias durante el regreso por el sur. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o1-goal / phase-1 active | none | Bring the four distinct fictional delegates alive to the western hosting district. | Lleva con vida a los cuatro delegados ficticios distintos al barrio de acogida occidental. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o1-receipt / o1 latched once | none | Four distinct arrivals are registered; no historical speaker is a controllable delegate. | Se registran cuatro llegadas distintas; ningún portavoz histórico es un delegado controlable. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o1-reaction / after o1 receipt | miriam-archive | Hospitality does not require me to supply a speech for someone who left none. | La hospitalidad no me obliga a inventar un discurso para quien no dejó uno. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o2-goal / phase-2 active | none | Provide one reception payment of 200 food and collect the two separately labeled account copies. | Entrega un único pago de recepción de 200 de alimento y recoge las dos copias de relatos etiquetadas por separado. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o2-receipt / o2 latched once | none | The two account labels and single reception receipt are preserved. | Se conservan las dos etiquetas de relatos y un único recibo de recepción. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o2-goal / phase-2 active | none | Provide one reception payment of 200 food and collect two separately labeled fictional delegate journey notes. | Entrega un único pago de recepción de 200 de alimento y recoge dos notas ficticias de viaje de delegados etiquetadas por separado. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o2-receipt / o2 latched once | none | Two fictional journey notes and one reception payment are registered. Neither note is Acts or Galatians. | Se registran dos notas ficticias de viaje y un pago de recepción. Ninguna nota es Hechos ni Gálatas. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o2-reaction / after o2 receipt | miriam-archive | Keep each account under its own name. | Conserva cada relato bajo su propio nombre. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o3-goal / phase-3 active | none | Deliver both separately attributed copies to the south return station. | Entrega ambas copias atribuidas por separado en la estación de regreso sur. |
-| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o3-receipt / o3 latched once | none | Both copies reached the return station without being merged into an invented transcript. | Ambas copias llegan a la estación sin fundirse en una transcripción inventada. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o3-goal / phase-3 active | none | Deliver both distinct fictional journey notes to the south return station. | Entrega las dos notas ficticias distintas de viaje en la estación de regreso sur. |
+| scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o3-receipt / o3 latched once | none | Both fictional journey notes have arrived; the mission supplies no transcript of the meeting. | Llegan las dos notas ficticias de viaje; la misión no aporta una transcripción de la reunión. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.o3-reaction / after o3 receipt | miriam-archive | Leaving them separate is a decision too. It is the one the evidence asks of me. | Dejarlas separadas también es una decisión. Es la que me pide la evidencia. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.side-1-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at hosting households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares de acogida. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.08-delegate-logistics-jerusalem.odyssey.side-1-complete / side-1 completed | none | Hosting households completed. Its stated benefit has been granted once. | Hogares de acogida: completado. Su ventaja indicada se ha concedido una vez. |

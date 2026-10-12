@@ -16,9 +16,9 @@ EN: The local circuit changes no documented historical outcome. Acts and Paul’
 
 ES: El circuito local no cambia ningún desenlace histórico documentado. Hechos y el relato paulino posterior de desacuerdo siguen atribuidos por separado; las entregas no prueban creencias uniformes.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -264,6 +264,16 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -295,7 +305,8 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-roads-of-antioch.sealed-letters-2",
@@ -310,7 +321,8 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-roads-of-antioch.sealed-letters-3",
@@ -325,7 +337,8 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.01-roads-of-antioch.returning-courier-1",
@@ -340,7 +353,8 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -1457,7 +1471,7 @@ ES: El alojamiento voluntario no resuelve doctrinas.
 | scenario.faith-origins.01-roads-of-antioch.odyssey.fact-intro / intro first | collection-narrator | Acts describes a community at Antioch and an aid shipment to Judea. Its travelers and charitable network provide the narrative context; this local courier circuit is fictional and its conventional dating is reconstructed. | Hechos describe una comunidad en Antioquía y una remesa de ayuda a Judea. Sus viajeros y su red de auxilio aportan el contexto narrativo; el circuito local de correos es ficticio y su fecha convencional se reconstruye. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.persona-intro / after handover | miriam-archive | My grandmother kept letters that disagreed. She would not let me scrape away the difficult lines just to make the shelf look peaceful. | Mi abuela conservaba cartas que discrepaban. No me dejaba raspar las líneas difíciles para que el estante pareciera pacífico. |
-| scenario.faith-origins.01-roads-of-antioch.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.01-roads-of-antioch.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.route-help / available from start; repeatable without effect | none | Use the city-side roads between the valley, receiving court and Silpius gate. The alternative path stays on the same river bank. | Usa los caminos del lado de la ciudad entre el valle, el patio y la puerta del Silpio. El sendero alternativo permanece en la misma orilla. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.o1-goal / phase-1 active | none | Bring all three sealed letters to the eastern city receiving court. | Lleva las tres cartas selladas al patio receptor oriental de la ciudad. |

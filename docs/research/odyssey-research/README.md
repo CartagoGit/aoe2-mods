@@ -20,3 +20,14 @@ El arquitecto ha seleccionado [273 episodios](../../design/odyssey-selections.md
 - [Referencias descargadas](reference-manifest.json): incluye bytes y SHA-256 del conjunto moderno de lugares poblados Natural Earth, de dominio público. [Datos locales](geography/ne_10m_populated_places.geojson). Un punto urbano moderno no representa el campamento, la muralla o la demografía de la ciudad antigua. Esta descarga es material de investigación y no está aprobada para distribuirse en un mod.
 
 La pérdida de Egipto en 658 se distingue de las incursiones en el Hiyaz de 660. La primera promesa tradicional de Aqaba se fecha en 621 y la segunda en 622. La actividad de Akiva no se traslada a 150–180. La carta de Cipriano a Successus documenta el rescripto de Valeriano; la ejecución de Cipriano exige el testimonio separado de Pontius. Estas correcciones no convierten en certeza las diferencias de calendario o los relatos partidistas.
+
+## Nuevas consultas y expedientes del primer acto
+
+- [Veintinueve fichas de auditoría de imperial-church](imperial-source-audit-v2.json): se distinguen Milán en 355 y Alejandría en 356; el alcance parcial y las consultas pendientes permanecen explícitos.
+- [Diez localizaciones orientales adicionales](geography-additional-audit.json): fichas con evidencias de cauces, núcleos antiguos y límites de coordenadas; la aprobación geográfica permanece pendiente.
+- [Treinta consultas de fuentes de faith-origins](faith-source-audit-v2.json): URL y pasaje consultado, afirmación EN/es y límites; consulta no equivale a aprobación editorial.
+- [Auditoría de localizaciones adicionales](geography-source-audit-v2.json): distingue textos completos, abstracts y comprobaciones pendientes.
+- [Geografía de episodios](episode-geography.json): añade Cesarea con punto de gazetteer, bbox regional y cautelas de costa y fases monumentales.
+- [Seis referencias visuales](faith-open-images.json), descargadas en `images/`, con [créditos](CREDITS.md), licencias y hashes en el manifiesto. Pilato es un molde moderno en Milán; Sardis incluye reconstrucción y fases posteriores. Ninguna imagen está aprobada como escena antigua o arte de distribución.
+
+Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tienen autoría explícita del arquitecto y una generación compartida de contratos. Conservan la evidencia candidata y la afirmación corregida; las actividades jugables ficticias no se convierten en hechos por tener coordenadas.

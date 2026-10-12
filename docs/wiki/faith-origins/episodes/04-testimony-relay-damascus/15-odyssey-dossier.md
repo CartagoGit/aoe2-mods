@@ -16,9 +16,9 @@ EN: The local relay preserves a representation of Paul’s testimony. Its courie
 
 ES: El relevo local conserva una representación del testimonio de Pablo. Sus correos no acreditan su ruta por Arabia ni recrean un hecho sobrenatural.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -52,9 +52,9 @@ ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucci�
 
 ### o1 / phase-1
 
-EN: Collect the testimony copy at the western oasis post.
+EN: Collect the fictional local message at the western oasis post. It is not a copy of Galatians.
 
-ES: Recoge la copia del testimonio en el puesto del oasis occidental.
+ES: Recoge el mensaje local ficticio en el puesto del oasis occidental. No es una copia de Gálatas.
 
 ```json
 {
@@ -75,9 +75,9 @@ ES: Recoge la copia del testimonio en el puesto del oasis occidental.
 }
 ```
 
-EN: One distinct testimony copy is registered.
+EN: One fictional local message is registered; it does not add a historical witness.
 
-ES: Una copia distinta del testimonio está registrada.
+ES: Se registra un mensaje local ficticio; no añade un testigo histórico.
 
 EN: His account is not mine to improve.
 
@@ -170,9 +170,9 @@ EN: The local messenger has reached the eastern receiving station.
 
 ES: El correo local ha llegado a la estación receptora oriental.
 
-EN: A messenger carries a text. He need not become its author.
+EN: A messenger carries a local message. The later account belongs to another part of my archive.
 
-ES: Un mensajero lleva un texto. No tiene que convertirse en su autor.
+ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra parte de mi archivo.
 
 ## Geographic districts and routes
 
@@ -274,6 +274,16 @@ ES: Un mensajero lleva un texto. No tiene que convertirse en su autor.
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -294,7 +304,7 @@ ES: Un mensajero lleva un texto. No tiene que convertirse en su autor.
   "entities": [
     {
       "id": "faith-origins.04-testimony-relay-damascus.testimony-copy-1",
-      "role": "fictional-testimony-record",
+      "role": "fictional-contemporary-local-message",
       "initialHub": "hub-1",
       "offsetTiles": [
         -10,
@@ -305,7 +315,8 @@ ES: Un mensajero lleva un texto. No tiene que convertirse en su autor.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.04-testimony-relay-damascus.relay-messenger-1",
@@ -320,7 +331,8 @@ ES: Un mensajero lleva un texto. No tiene que convertirse en su autor.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -611,8 +623,8 @@ ES: Las copias independientes conservan el testimonio.
         "es-ES": "Pablo describe su cambio como una revelación y un encargo. Su carta menciona Arabia y Damasco sin un itinerario completo ni un año exacto. La revelación se atribuye a su relato."
       },
       "hint": {
-        "en": "Collect the testimony copy at the western oasis post.",
-        "es-ES": "Recoge la copia del testimonio en el puesto del oasis occidental."
+        "en": "Collect the fictional local message at the western oasis post. It is not a copy of Galatians.",
+        "es-ES": "Recoge el mensaje local ficticio en el puesto del oasis occidental. No es una copia de Gálatas."
       }
     }
   ],
@@ -1435,18 +1447,18 @@ ES: Alojamiento voluntario, no itinerario paulino documentado.
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.fact-intro / intro first | collection-narrator | Paul describes his change of allegiance as a revelation and commission. His letter mentions Arabia and Damascus without a complete itinerary or exact year. The revelation is attributed to his account. | Pablo describe su cambio como una revelación y un encargo. Su carta menciona Arabia y Damasco sin un itinerario completo ni un año exacto. La revelación se atribuye a su relato. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.persona-intro / after handover | miriam-archive | He gives a reason for his journey. I keep his reason beside his name. I cannot use it to supply roads he never described. | Él da una razón para su viaje. Conservo esa razón junto a su nombre. No puedo usarla para añadir caminos que nunca describió. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.route-help / available from start; repeatable without effect | none | The relay stays in the Damascus oasis. Canal crossings require surveyed land access; Arabia is discussed off-map. | El relevo permanece en el oasis de Damasco. Los cruces de canales requieren accesos terrestres trazados; Arabia se trata fuera del mapa. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-goal / phase-1 active | none | Collect the testimony copy at the western oasis post. | Recoge la copia del testimonio en el puesto del oasis occidental. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-receipt / o1 latched once | none | One distinct testimony copy is registered. | Una copia distinta del testimonio está registrada. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-goal / phase-1 active | none | Collect the fictional local message at the western oasis post. It is not a copy of Galatians. | Recoge el mensaje local ficticio en el puesto del oasis occidental. No es una copia de Gálatas. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-receipt / o1 latched once | none | One fictional local message is registered; it does not add a historical witness. | Se registra un mensaje local ficticio; no añade un testigo histórico. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-reaction / after o1 receipt | miriam-archive | His account is not mine to improve. | No me corresponde mejorar su relato. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o2-goal / phase-2 active | none | Deliver that copy to the city relay and fund its local reception with 120 food. | Entrega esa copia en el relevo urbano y financia su recepción local con 120 de alimento. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o2-receipt / o2 latched once | none | The copy and reception payment are recorded once. | La copia y el pago de recepción quedan registrados una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o2-reaction / after o2 receipt | miriam-archive | This is a short relay in an oasis, not a map of every journey. | Este es un relevo breve en un oasis, no un mapa de todos los viajes. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o3-goal / phase-3 active | none | Bring the distinct local messenger alive to the eastern orchard station. | Lleva con vida al correo local distinto a la estación de huertos oriental. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o3-receipt / o3 latched once | none | The local messenger has reached the eastern receiving station. | El correo local ha llegado a la estación receptora oriental. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o3-reaction / after o3 receipt | miriam-archive | A messenger carries a text. He need not become its author. | Un mensajero lleva un texto. No tiene que convertirse en su autor. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.o3-reaction / after o3 receipt | miriam-archive | A messenger carries a local message. The later account belongs to another part of my archive. | Un mensajero lleva un mensaje local. El relato posterior pertenece a otra parte de mi archivo. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-1-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at orchard workers. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en trabajadores de los huertos. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-1-complete / side-1 completed | none | Orchard workers completed. Its stated benefit has been granted once. | Trabajadores de los huertos: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-1-lost / side-1 failed-optional | none | Orchard workers is unavailable after the loss of its unique participant or object. The main mission continues. | Trabajadores de los huertos: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
