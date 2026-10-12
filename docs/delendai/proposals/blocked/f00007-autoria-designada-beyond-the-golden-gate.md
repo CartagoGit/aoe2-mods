@@ -2,10 +2,14 @@
 id: f00007
 title: "Autoria designada: Beyond the Golden Gate"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 9f55b54b-2494-464d-9b22-98bea15db7a3
+last-correlation-id: 9f55b54b-2494-464d-9b22-98bea15db7a3
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:28.544Z
 ---
 
 # f00007 — Autoria designada: Beyond the Golden Gate
