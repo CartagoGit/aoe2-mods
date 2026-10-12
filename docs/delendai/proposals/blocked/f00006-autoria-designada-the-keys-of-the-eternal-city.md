@@ -2,10 +2,14 @@
 id: f00006
 title: "Autoria designada: The Keys of the Eternal City"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 7d6237c9-5302-4013-9921-ca7b9b5d0f4c
+last-correlation-id: 7d6237c9-5302-4013-9921-ca7b9b5d0f4c
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:19.895Z
 ---
 
 # f00006 — Autoria designada: The Keys of the Eternal City
