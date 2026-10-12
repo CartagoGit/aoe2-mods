@@ -2,14 +2,14 @@
 id: i00004
 title: "Migrate Production TypeScript Files to Descriptive Names"
 kind: infra
-status: in-progress
+status: review
 type: proposal
 track: general
 date: 2026-10-12
-last-transition-id: 2be77f27-43b2-4008-ae64-1f81d73faff1
-last-correlation-id: 2be77f27-43b2-4008-ae64-1f81d73faff1
-last-transition-from: ready
-last-transition-at: 2026-10-12T15:57:17.255Z
+last-transition-id: 1240112d-375c-4d7a-a524-723e1d15801b
+last-correlation-id: 1240112d-375c-4d7a-a524-723e1d15801b
+last-transition-from: in-progress
+last-transition-at: 2026-10-12T16:01:14.387Z
 shipped-in:
   - "4e2a3cd1652497e8b8ef350ef96fb5f5cdc73539"
 ---
@@ -46,6 +46,7 @@ Scope includes all production files under `packages/` and `tools/cli/`, includin
 - review-implementer: gpt-6-luna
 - review-reviewer: gpt-6.1-sol
 - review-log: approved by gpt-6.1-sol — verified at 4e2a3cd16524, validate exit 0, tests 45/45 — Independent formal naming review; code reviewed ca86c67 and identical integrated4e2a3cd. No game certification and no d00002 approval.
+- shipped-in: `4e2a3cd16524`
 
 ## acceptance
 
