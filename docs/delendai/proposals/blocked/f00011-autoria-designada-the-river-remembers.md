@@ -2,10 +2,14 @@
 id: f00011
 title: "Autoria designada: The River Remembers"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 11db707f-fc7f-4d78-b320-789581be2752
+last-correlation-id: 11db707f-fc7f-4d78-b320-789581be2752
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:25:03.276Z
 ---
 
 # f00011 — Autoria designada: The River Remembers
