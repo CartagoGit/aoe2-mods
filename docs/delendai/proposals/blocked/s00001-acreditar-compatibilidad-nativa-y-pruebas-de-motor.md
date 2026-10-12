@@ -2,10 +2,14 @@
 id: s00001
 title: "Acreditar compatibilidad nativa y pruebas de motor"
 kind: spike
-status: ready
+status: blocked
 type: proposal
 track: campaign-factory
 date: 2026-10-12
+last-transition-id: 3e5701ce-9794-40fd-961c-e2b87c3b0098
+last-correlation-id: 3e5701ce-9794-40fd-961c-e2b87c3b0098
+last-transition-from: ready
+last-transition-at: 2026-10-12T04:20:23.454Z
 ---
 
 # s00001 — Acreditar compatibilidad nativa y pruebas de motor
