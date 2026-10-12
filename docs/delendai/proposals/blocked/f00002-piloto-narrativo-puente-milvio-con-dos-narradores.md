@@ -32,57 +32,53 @@ Comprobar historia, diseño, documentación, voces, ilustración y localización
 
 - global_gate: e2e
 
-### S1 — Dossier, cronologia y brief verificado
+### S1 — Dossier, cronología y brief verificado
 - **Status**: pending
 - **Files**: `docs/wiki/milvian-pilot/**`
 - **Gate**: e2e
 - acceptance:
-  - "Leer Eusebio HE IX.9 y Lactancio De mortibus persecutorum 44; contrastar diferencias con historiografía académica."
-  - "Documentar cada afirmación, fecha, título, geografía, facción y representación de civilización; no asumir que Byzantines equivale exactamente a Roma312."
-  - "Separar tradiciones, diálogo inventado y hechos; sensibilidad cultural revisada."
+  - "Consultar fuentes completas para Constantino, Majencio y puente312; separar hechos, tradición y licencia táctica."
+  - "Narrador general y cronista particular, personajes, mapa, objetivos, contingencias y lista de claves fijados antes de redactar."
 
-### S2 — Mapa, objetivos y campaña piloto
+### S2 — Bundle piloto completo en preparación
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `campaigns/milvian-pilot/**`
+- **Files**: `staging/campaigns/milvian-pilot/**`
 - **Gate**: e2e
 - acceptance:
-  - "Brief cerrado, especificación completa, geografía fundada y conectividad; mapa con rutas alternativas."
-  - "Economía/reservas, tres perfiles, eventos, recuperaciones para objetivo destruido antes de tiempo y personaje crítico."
-  - "Intro/outro general y cronista; 17 catálogos con estados de revisión, recursos con permisos y voces por locale; ninguna API paga masiva."
+  - "Preparar metadatos y misión completos en staging: narradores, mapa, fases, derrota recuperable, reserva finita y tres dificultades."
+  - "Incluir 17 catálogos con estado real, reparto/pronunciación y manifest de medios con origen/licencia/hash; no afirmar aprobación inexistente."
+  - "bun run staging:check milvian-pilot pasa sin --partial; ninguna campaña activa ni ID global se incorpora todavía."
 
-### S3 — IDs y terminologia revisada
+### S3 — Materialización, IDs y terminología
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `config/string-ids.lock.json`, `config/glossary.json`
+- **Files**: `staging/campaigns/milvian-pilot/**`, `campaigns/milvian-pilot/**`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
 - acceptance:
-  - "IDs estables sin colisión y glosario de Constantino/Majencio/cargos/religión por locale."
-  - "No alterar claves de progreso ni nombres del motor al traducir."
+  - "Promover todo el bundle, ajustar rutas finales y asignar IDs con ids:allocate en la misma unidad/entrega bajo locks explícitos."
+  - "Glosario de Constantino/Majencio/cargos/religión por locale, estabilidad de IDs anteriores; bun run validate y export del piloto pasan antes del commit."
 
 ### S4 — QA adversarial y balance medido
 - **Status**: pending
 - **DependsOn**: [S3]
-- **Files**: `docs/qa/milvian-pilot/**`
+- **Files**: `campaigns/milvian-pilot/**`, `docs/qa/milvian-pilot/**`
 - **Gate**: e2e
 - acceptance:
-  - "Casos bridge-block/critical-unit/early-destruction/exhaustion/simultaneous-terminal/save-load; pasos reproducibles y severidad."
-  - "Métricas estimadas separadas de duración/pérdidas/reacción medidas; distintas estrategias en tres dificultades."
-  - "Gate release completo, todas las licencias y revisión editorial; detener publicación si falla motor, idioma o permisos."
+  - "Ejecutar casos de juego de objetivos fuera de orden, líder perdido, puente bloqueado, recursos agotados y guardar/cargar; medir las tres dificultades."
+  - "Cerrar únicamente capacidades acreditadas con ZIP/hash/build/idioma y reviewer; release:check exige revisiones de historia, 17 locales, medios y motor."
 
 ## acceptance
 
-- Leer Eusebio HE IX.9 y Lactancio De mortibus persecutorum 44; contrastar diferencias con historiografía académica.
-- Documentar cada afirmación, fecha, título, geografía, facción y representación de civilización; no asumir que Byzantines equivale exactamente a Roma312.
-- Separar tradiciones, diálogo inventado y hechos; sensibilidad cultural revisada.
-- Brief cerrado, especificación completa, geografía fundada y conectividad; mapa con rutas alternativas.
-- Economía/reservas, tres perfiles, eventos, recuperaciones para objetivo destruido antes de tiempo y personaje crítico.
-- Intro/outro general y cronista; 17 catálogos con estados de revisión, recursos con permisos y voces por locale; ninguna API paga masiva.
-- IDs estables sin colisión y glosario de Constantino/Majencio/cargos/religión por locale.
-- No alterar claves de progreso ni nombres del motor al traducir.
-- Casos bridge-block/critical-unit/early-destruction/exhaustion/simultaneous-terminal/save-load; pasos reproducibles y severidad.
-- Métricas estimadas separadas de duración/pérdidas/reacción medidas; distintas estrategias en tres dificultades.
-- Gate release completo, todas las licencias y revisión editorial; detener publicación si falla motor, idioma o permisos.
+- Consultar fuentes completas para Constantino, Majencio y puente312; separar hechos, tradición y licencia táctica.
+- Narrador general y cronista particular, personajes, mapa, objetivos, contingencias y lista de claves fijados antes de redactar.
+- Preparar metadatos y misión completos en staging: narradores, mapa, fases, derrota recuperable, reserva finita y tres dificultades.
+- Incluir 17 catálogos con estado real, reparto/pronunciación y manifest de medios con origen/licencia/hash; no afirmar aprobación inexistente.
+- bun run staging:check milvian-pilot pasa sin --partial; ninguna campaña activa ni ID global se incorpora todavía.
+- Promover todo el bundle, ajustar rutas finales y asignar IDs con ids:allocate en la misma unidad/entrega bajo locks explícitos.
+- Glosario de Constantino/Majencio/cargos/religión por locale, estabilidad de IDs anteriores; bun run validate y export del piloto pasan antes del commit.
+- Ejecutar casos de juego de objetivos fuera de orden, líder perdido, puente bloqueado, recursos agotados y guardar/cargar; medir las tres dificultades.
+- Cerrar únicamente capacidades acreditadas con ZIP/hash/build/idioma y reviewer; release:check exige revisiones de historia, 17 locales, medios y motor.
 
 ## Contexto, estado inicial y dependencias
 
@@ -98,4 +94,4 @@ Riesgos: pasajes históricos no consultados, anacronismos, coexistencia de caden
 
 ## Entregables, revisión y cierre
 
-Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
+Entregar fuentes declarativas, dossier, glosario/IDs donde el slice lo permita, manifest multimedia, informes de build/QA y evidencia vinculada al artefacto. Cada slice debe integrar con `bun run validate` verde. Los borradores se preparan en staging/campaigns, fuera de loadProject; staging:check valida esquemas y declara pendientes explícitamente. El slice final de materialización posee campañas, borradores, lock y glosario, y los incorpora juntos antes de validar/commitear. Seguir docs/guides/staging.md. Gate de cada slice: `bun run validate`; si afecta archivos nativos, ejecutar `bun run test:export` y exportar su campaña. Para cierre de contenido publicable: `bun run release:check <id>`, revisión histórica/lingüística/media y revisión independiente oficial. Registrar el commit y resultados; no marcar done mediante edición de markdown. La subida del mod es una acción separada y autorizada por el propietario.
