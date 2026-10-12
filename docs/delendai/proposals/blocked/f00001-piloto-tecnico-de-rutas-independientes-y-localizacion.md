@@ -2,10 +2,14 @@
 id: f00001
 title: "Piloto tecnico de rutas independientes y localizacion"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-factory
 date: 2026-10-12
+last-transition-id: a7173312-b712-404d-ae57-3dffa383a535
+last-correlation-id: a7173312-b712-404d-ae57-3dffa383a535
+last-transition-from: ready
+last-transition-at: 2026-10-12T04:20:23.902Z
 ---
 
 # f00001 — Piloto tecnico de rutas independientes y localizacion
