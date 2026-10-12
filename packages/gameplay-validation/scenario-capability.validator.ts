@@ -168,6 +168,12 @@ export function validateScenarioCapability(
       const zoneRefs: string[] = [];
       switch (req.kind) {
         case "entity-state":
+          if (new Set(req.entities).size !== req.entities.length)
+            add(
+              "capability.entity-identity-duplicate",
+              reqContext,
+              "Cada identidad se cuenta una sola vez en un predicado",
+            );
           entityRefs.push(...req.entities);
           entityRefs.push(
             ...(req.inputRecords ?? []),
@@ -306,6 +312,17 @@ export function validateScenarioCapability(
         case "forbidden-entry":
         case "hold-area":
           zoneRefs.push(...req.zones);
+          if (
+            req.kind === "civilian-protection" &&
+            (!phaseIds.has(req.activeFrom) ||
+              !phaseIds.has(req.activeUntil) ||
+              req.activeFrom === req.activeUntil)
+          )
+            add(
+              "capability.protection-interval",
+              reqContext,
+              "La protección civil requiere fases de inicio y fin distintas y existentes",
+            );
           if ("blockingEnemies" in req)
             entityRefs.push(...(req.blockingEnemies ?? []));
           if (
@@ -396,6 +413,16 @@ export function validateScenarioCapability(
           break;
         }
         case "minimum-stock":
+          if (
+            req.atHub !== undefined ||
+            req.accountEntityIds !== undefined ||
+            req.maximumNavigableDistanceTiles !== undefined
+          )
+            add(
+              "capability.stock-location-contract",
+              reqContext,
+              "El stock físico requiere inventario por portador y distancias navegables tipadas; no se acredita con saldo global",
+            );
           entityRefs.push(...(req.accountEntityIds ?? []));
           if (req.atHub) {
             // Hubs are checked below against the declared district table.

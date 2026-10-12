@@ -53,7 +53,7 @@ export function mainRequirementSatisfied(
             ] ?? [],
           )
         : null;
-      const candidates = requirement.entities.filter(
+      const candidates = [...new Set(requirement.entities)].filter(
         (id) =>
           (!eligible || eligible.has(id)) &&
           generationReady(profile, state, id),
@@ -108,6 +108,12 @@ export function mainRequirementSatisfied(
     case "resource-transaction":
       return state.paidReceipts.includes(requirement.paidFlag);
     case "minimum-stock": {
+      if (
+        requirement.atHub !== undefined ||
+        requirement.accountEntityIds !== undefined ||
+        requirement.maximumNavigableDistanceTiles !== undefined
+      )
+        return false;
       const account =
         requirement.account === "spendable"
           ? state.spendable
@@ -217,6 +223,17 @@ export function hasIrrecoverableLoss(
 ) {
   return (
     state.forbiddenEntries.length > 0 ||
+    profile.objectivePlan.some((objective) =>
+      objective.predicate.requirements.some(
+        (req) =>
+          req.kind === "civilian-protection" &&
+          state.enteredPhases.includes(req.activeFrom) &&
+          !state.enteredPhases.includes(req.activeUntil) &&
+          req.zones.some(
+            (zoneId) => state.zoneConditions[zoneId]?.protected === false,
+          ),
+      ),
+    ) ||
     profile.objectivePlan.some((objective) =>
       objective.predicate.requirements.some(
         (req) =>
