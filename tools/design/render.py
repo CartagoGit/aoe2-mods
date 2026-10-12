@@ -5,6 +5,8 @@ Run from any directory. The catalogue is the sole editorial input; output is not
 import argparse
 import html
 import json
+import subprocess
+import sys
 from pathlib import Path
 from geography import geometry_lines, tile_point
 
@@ -135,6 +137,11 @@ def render():
     for a in manifest['assets']:credits.append(f"| [{a['id']}]({Path(a['path']).relative_to('docs/design/reference').as_posix()}) | {a['author']} / [{a['title']}]({a['sourcePage']}) | [{a['license']}]({a['licenseUrl']}) | {a['usage']} {a['modifications']} |")
     credits.extend(['', 'CC BY requires attribution; CC BY-SA adaptations also preserve the corresponding ShareAlike license. The collection’s own license does not override these. Public-domain datasets still receive provenance credit. SHA-256, bytes, exact download URL and, for clipped GIS, upstream snapshot hashes are in manifest.json. No protected article text or entire paywalled publication has been mirrored.', '', 'The 10m regional coast/river extracts contain only clipped segments for the 26 profiles. Minor-river controls are authored schematic overlays and have a separate uncertainty label, rather than being falsely attributed to Natural Earth.', ''])
     save('docs/design/reference/CREDITS.md', '\n'.join(credits))
+    if (ROOT / 'docs/design/odyssey-policy.json').is_file():
+        command = [sys.executable, str(ROOT / 'tools/design/odyssey_render.script.py')]
+        if CHECK:
+            command.append('--check')
+        subprocess.run(command, check=True, cwd=ROOT)
     print(f"Rendered {len(campaigns)} campaigns and {sum(len(c['scenarios']) for c in campaigns)} scenarios")
 
 

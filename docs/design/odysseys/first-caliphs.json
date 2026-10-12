@@ -464,5 +464,1144 @@
       }
     ]
   },
-  "episodes": []
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "Beneath the Desert Stars",
+      "es-ES": "Bajo las estrellas del desierto"
+    },
+    "publicId": "CDF-I00",
+    "internalName": "CDF_FirstCaliphs",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 30,
+    "narratorId": "salim-caravan-scribe",
+    "personaLens": {
+      "en": "Wells, caravan measures and reports from travellers",
+      "es-ES": "Pozos, medidas de caravana y relatos de viajeros"
+    },
+    "deliveryTone": {
+      "en": "hospitality and wonder shading into concern",
+      "es-ES": "hospitalidad y asombro que se vuelven preocupación"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "salim-caravan-scribe",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-the-oasis-road",
+      "02-the-roads-of-yamama",
+      "03-the-edge-of-the-river",
+      "04-fields-of-the-sawad",
+      "05-a-camp-beside-the-nile"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 30,
+    "selectionNotes": [
+      "Act counts are subordinate to source chronology and are not filler quotas.",
+      "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
+      "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
+      "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "Voices of the Meccan Roads",
+        "es-ES": "Voces de los caminos de La Meca"
+      },
+      "historicalYearBand": [
+        610,
+        622
+      ],
+      "dramaticPurpose": "Predicación según tradición, migraciones y pactos; Salim es niño y conoce relatos heredados.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-testimony-and-household-supply-mecca",
+        "02-civilian-network-and-records-mecca",
+        "03-finite-emigration-consignments-mecca",
+        "04-bounded-household-provision-mecca",
+        "05-delegate-logistics-and-receipts-mina-aqaba",
+        "06-bounded-reception-planning-mina-aqaba",
+        "01-the-oasis-road"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "The Oasis and the Pact",
+        "es-ES": "El oasis y el pacto"
+      },
+      "historicalYearBand": [
+        622,
+        632
+      ],
+      "dramaticPurpose": "Comunidad de Medina, defensa y acuerdos; las figuras veneradas se narran fuera de mapa sin unidades atacables.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "08-finite-battle-supply-and-withdrawal-badr",
+        "09-finite-withdrawal-and-care-uhud",
+        "10-finite-defence-and-trench-supply-medina",
+        "11-bounded-negotiation-and-supply-hudaybiyya",
+        "12-finite-siege-and-civilian-extraction-khaybar",
+        "13-civilian-provision-under-entry-mecca",
+        "14-witness-and-transition-records-medina"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Roads Beyond Arabia",
+        "es-ES": "Caminos más allá de Arabia"
+      },
+      "historicalYearBand": [
+        632,
+        638
+      ],
+      "dramaticPurpose": "Sucesión y campañas; retirada también es misión legítima y no puede ganar una derrota histórica.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "15-disputed-tax-and-provincial-records-medina",
+        "02-the-roads-of-yamama",
+        "17-finite-river-withdrawal-kufa-euphrates",
+        "18-surrender-and-civilian-records-damascus",
+        "03-the-edge-of-the-river",
+        "04-fields-of-the-sawad",
+        "21-finite-river-crossing-and-civilian-records-ctesiphon"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "Rivers and New Ledgers",
+        "es-ES": "Ríos y nuevos registros"
+      },
+      "historicalYearBand": [
+        637,
+        649
+      ],
+      "dramaticPurpose": "Egipto, Iraq y regiones vecinas con capitulaciones y convivencia local diferenciadas, sin fronteras modernas falsas.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "22-property-and-surrender-records-jerusalem",
+        "23-peaceful-supply-and-record-reception-antioch",
+        "05-a-camp-beside-the-nile",
+        "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+        "26-administrative-transition-and-care-medina"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "A Horizon Divided",
+        "es-ES": "Un horizonte dividido"
+      },
+      "historicalYearBand": [
+        651,
+        656
+      ],
+      "dramaticPurpose": "Cambios imperiales y nuevas rutas navales culminan en crisis deMedina; la continuidad invita a First Fitna.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "27-finite-coastal-expedition-and-supply-cyprus",
+        "28-civilian-refuge-and-source-comparison-merv",
+        "29-finite-naval-withdrawal-and-care-finike",
+        "30-civilian-records-and-final-perspective-medina"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [],
+    "nextRoutes": [
+      {
+        "id": "completed",
+        "key": "progress.first-caliphs.completed",
+        "next": "first-fitna"
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-testimony-and-household-supply-mecca",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "The Mountain in the Remembered Story",
+        "es-ES": "La montaña en el relato recordado"
+      },
+      "date": "c.610 CE; revelation belongs to attributed tradition",
+      "geographyId": "mecca",
+      "coreMechanic": "testimony-and-household-supply",
+      "historicalSelection": {
+        "corpusEventId": 170,
+        "sourceUrl": "https://assets.cambridge.org/97805217/13726/excerpt/9780521713726_excerpt.pdf",
+        "passage": "Jonathan E. Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, excerpt p. 4 / PDF lines 128–149: the account places meditation outside Mecca in 610 and frames the revelation and Gabriel as the Muslim narrative; it dates the Meccan period 610–622.",
+        "qualification": "The date and setting are reported through later religious biography. Phrase as 'tradition dates/recounts'; do not narrate revelation, divine speech, or supernatural claims as independently verified fact.",
+        "candidateEvent": "Islamic biographical tradition places Muhammad's first revelatory experience around this year. Historical reporting can document that this is the tradition, not establish an angelic visitation or revelation as an objective event.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-civilian-network-and-records-mecca",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "Voices among the Market Stalls",
+        "es-ES": "Voces entre los puestos del mercado"
+      },
+      "date": "610s CE; public preaching conventionallyc.613",
+      "geographyId": "mecca",
+      "coreMechanic": "civilian-network-and-records",
+      "historicalSelection": {
+        "corpusEventId": 171,
+        "sourceUrl": "https://www.cambridge.org/highereducation/books/the-formation-of-islam/0C58C7DC69FC4FFE20933C00B54D839F/the-origins-of-the-muslim-community/86DD5D5461286D6EA3B6EB4B9A120B5E",
+        "passage": "Gerald R. Hawting, The Formation of Islam, chapter “The Origins of the Muslim Community,” lines 279–282: explicitly situates the early prophetic career in the Muslim narrative and the origins of the community in Arabia. Compare Brockopp, Introduction, pp. 4–5, which notes uncertainty over who first joined Muhammad's intimate circle (PDF lines 471–480).",
+        "qualification": "The Cambridge chapter is an overview and explicitly attributes its account to Muslim origin narratives; it supports a cautious broad milestone, not a precise year, headcount, or fully settled institutional community.",
+        "candidateEvent": "A small circle of followers formed around Muhammad's preaching in Mecca; the exact chronology and first adherents are disputed in the transmitted accounts.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-finite-emigration-consignments-mecca",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "A Passage across the Red Sea",
+        "es-ES": "Un pasaje por el mar Rojo"
+      },
+      "date": "c.615 CE; Aksum destination off-map and uncertain",
+      "geographyId": "mecca",
+      "coreMechanic": "finite-emigration-consignments",
+      "historicalSelection": {
+        "corpusEventId": 172,
+        "sourceUrl": "https://api.pageplace.de/preview/DT0400.9781139798792_A23868983/preview-9781139798792_A23868983.pdf",
+        "passage": "Jonathan E. Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, pp. 7–8 / PDF lines 496–502: describes emigration to Christian Abyssinia as part of the traditional evidence for increasing conflict and notes that the tradition preserves accounts of hardship.",
+        "qualification": "The consulted scholarly passage confirms the episode but does not establish 615 as an exact date. The motive, group size, routes, and sequence are known through later Muslim reports; avoid precise numbers and dramatized speeches.",
+        "candidateEvent": "Some early followers are reported to have emigrated from Mecca to the Christian kingdom of Aksum/Abyssinia amid worsening hostility.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-bounded-household-provision-mecca",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "The Houses under the Boycott",
+        "es-ES": "Las casas bajo el boicot"
+      },
+      "date": "c.616–619 CE; transmitted chronology uncertain",
+      "geographyId": "mecca",
+      "coreMechanic": "bounded-household-provision",
+      "historicalSelection": {
+        "corpusEventId": 173,
+        "sourceUrl": "https://api.pageplace.de/preview/DT0400.9781139798792_A23868983/preview-9781139798792_A23868983.pdf",
+        "passage": "Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, pp. 7–8 / PDF lines 496–502: identifies a boycott against Muhammad's clan and explicitly frames suffering accounts as tradition.",
+        "qualification": "Use 'later accounts report' and avoid asserting the exact 616–619 span, specific written pact details, or the valley's precise archaeological location as settled facts; those details are not established by the consulted passage.",
+        "candidateEvent": "Later Muslim accounts describe a social and commercial boycott against Muhammad's clan, which continued protecting him; Cambridge's scholarly synthesis identifies a boycott against his clan but does not certify all later details of its duration or terms.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-delegate-logistics-and-receipts-mina-aqaba",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "The First Promise at Aqaba",
+        "es-ES": "La primera promesa en Aqaba"
+      },
+      "date": "621 CE traditional; firstpledge, notsecond",
+      "geographyId": "mina-aqaba",
+      "coreMechanic": "delegate-logistics-and-receipts",
+      "historicalSelection": {
+        "corpusEventId": 175,
+        "sourceUrl": "https://escholarship.org/uc/item/87q494b4",
+        "passage": "Shuayb, dissertation, Aqaba pledges discussion: the next year's group is described as twelve men, including Aws and Khazraj members, with Mus'ab ibn Umayr sent to Yathrib; source labels the first two pledge traditions and their sequence.",
+        "qualification": "Raw candidate calls this second pledge incorrectly. Numbering and transmitted chronology require attribution; neither revelation nor divine causation is agnostic-narrator fact.",
+        "candidateEvent": "A second reported Aqaba pledge involved a larger group from Yathrib; traditional accounts say Muhammad sent Mus'ab ibn Umayr to teach the new adherents there.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "selectedClaim": {
+          "en": "Traditional chronology places the first Aqaba pledge in621and Musab’s subsequent mission to Yathrib; the second pledge belongs to622.",
+          "es-ES": "La cronología tradicional sitúa la primera promesa de Aqaba en621y la misión posterior de Musab a Yathrib; la segunda promesa corresponde a622."
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-bounded-reception-planning-mina-aqaba",
+      "order": 6,
+      "actId": "act-1",
+      "title": {
+        "en": "A Road Promised to Strangers",
+        "es-ES": "Un camino prometido a extranjeros"
+      },
+      "date": "622 CE; conventionally secondpledge",
+      "geographyId": "mina-aqaba",
+      "coreMechanic": "bounded-reception-planning",
+      "historicalSelection": {
+        "corpusEventId": 176,
+        "sourceUrl": "https://escholarship.org/uc/item/87q494b4",
+        "passage": "Shuayb, dissertation, Aqaba pledges discussion: describes the next Hajj-season gathering as a group of roughly seventy Medinans and notes that scholars differ on whether pledge traditions should be counted as two or three.",
+        "qualification": "Use the conventional label only with an attribution such as 'the pledge known in the traditional chronology as the second Aqaba pledge.' Its details are transmitted reports, not an independently preserved treaty text.",
+        "candidateEvent": "A further reported agreement at Aqaba connected the Yathrib group with a commitment to receive and protect Muhammad and his followers; its precise form and numbering vary across accounts and scholarship.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "01-the-oasis-road",
+      "order": 7,
+      "actId": "act-1",
+      "title": {
+        "en": "The Oasis Road",
+        "es-ES": "El camino del oasis"
+      },
+      "date": "622 CE",
+      "geographyId": "medina",
+      "coreMechanic": "migration-and-refuge",
+      "historicalSelection": {
+        "corpusEventId": 140,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entry 622; “Calendars,” Iranica (https://www.iranicaonline.org/articles/calendars/)",
+        "qualification": "La cronología islámica se fijó después; no asignar al viaje un único día gregoriano sin precisar fuente.",
+        "candidateEvent": "Muhammad emigra de La Meca a Medina; el año de la Hégira se convierte luego en punto de partida del calendario islámico.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "08-finite-battle-supply-and-withdrawal-badr",
+      "order": 8,
+      "actId": "act-2",
+      "title": {
+        "en": "Water before the First Battle",
+        "es-ES": "Agua antes de la primera batalla"
+      },
+      "date": "624 CE",
+      "geographyId": "badr",
+      "coreMechanic": "finite-battle-supply-and-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 141,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Poonawala, “Ali: Life,” sección sobre expediciones y referencia a Ibn Hisham/Waqidi",
+        "qualification": "El artículo resume tradiciones biográficas posteriores; detalles heroicos de Ali son legendarios.",
+        "candidateEvent": "Batalla de Badr, uno de los primeros enfrentamientos entre la comunidad de Medina y La Meca.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "09-finite-withdrawal-and-care-uhud",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "Below the Broken Ridge",
+        "es-ES": "Bajo la cresta quebrada"
+      },
+      "date": "625 CE",
+      "geographyId": "uhud",
+      "coreMechanic": "finite-withdrawal-and-care",
+      "historicalSelection": {
+        "corpusEventId": 142,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "“Ali: Life,” pasaje sobre defensa en Uhud y bibliografía de Ibn Hisham/Waqidi",
+        "qualification": "Resumen de tradición biográfica; cifras no verificadas.",
+        "candidateEvent": "Batalla de Uhud.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-finite-defence-and-trench-supply-medina",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "The Ditch before the Oasis",
+        "es-ES": "El foso ante el oasis"
+      },
+      "date": "627 CE conventional",
+      "geographyId": "medina",
+      "coreMechanic": "finite-defence-and-trench-supply",
+      "historicalSelection": {
+        "corpusEventId": 143,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "“Ali: Life,” sección de expediciones; referencias a Ibn Hisham",
+        "qualification": "La fuente consultada menciona actividad militar; fecha convencional.",
+        "candidateEvent": "Defensa de Medina en la llamada batalla del Foso/Trinchera.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-bounded-negotiation-and-supply-hudaybiyya",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "A Truce at the Road's End",
+        "es-ES": "Una tregua al final del camino"
+      },
+      "date": "March628 CE;6AH",
+      "geographyId": "hudaybiyya",
+      "coreMechanic": "bounded-negotiation-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 144,
+        "sourceUrl": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+        "passage": "TDV İslâm Ansiklopedisi, “Hudeybiye Antlaşması,” pasajes sobre la salida desde Medina para la ʿumra y la negociación del acuerdo (6/628); artículo sitúa Hudaybiyya al oeste de La Meca.",
+        "qualification": "Fecha gregoriana aproximada; fuente académica enciclopédica moderna que cita estudios de Hawting y Görke. El tratado no debe convertirse en cita literal de sus participantes.",
+        "candidateEvent": "Acuerdo de Hudaybiyya entre Muhammad y representantes de Quraysh.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "12-finite-siege-and-civilian-extraction-khaybar",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "The Forts among the Palms",
+        "es-ES": "Los fuertes entre las palmeras"
+      },
+      "date": "628 CE conventional",
+      "geographyId": "khaybar",
+      "coreMechanic": "finite-siege-and-civilian-extraction",
+      "historicalSelection": {
+        "corpusEventId": 145,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "“Ali: Life,” referencias a Ibn Hisham II, pp. 349–350; Waqidi",
+        "qualification": "Relatos de hazañas individuales no tomar al pie de la letra.",
+        "candidateEvent": "Toma de Khaybar tras campaña contra los oasis fortificados.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "13-civilian-provision-under-entry-mecca",
+      "order": 13,
+      "actId": "act-2",
+      "title": {
+        "en": "The Open Road to Mecca",
+        "es-ES": "El camino abierto hacia La Meca"
+      },
+      "date": "630 CE; Hunayn andTaif reported inaftermath",
+      "geographyId": "mecca",
+      "coreMechanic": "civilian-provision-under-entry",
+      "historicalSelection": {
+        "corpusEventId": 146,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” pasaje sobre caída de La Meca en 8/630",
+        "qualification": "Artículo centrado en Irán, resumen contextual.",
+        "candidateEvent": "Las fuerzas de Muhammad entran en La Meca.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "14-witness-and-transition-records-medina",
+      "order": 14,
+      "actId": "act-2",
+      "title": {
+        "en": "A Community without Its Messenger",
+        "es-ES": "Una comunidad sin su mensajero"
+      },
+      "date": "632 CE",
+      "geographyId": "medina",
+      "coreMechanic": "witness-and-transition-records",
+      "historicalSelection": {
+        "corpusEventId": 148,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entry 632",
+        "qualification": "No convertir ninguna tradición sucesoria confesional en voz neutral.",
+        "candidateEvent": "Muhammad muere y comienza la disputa política sobre su sucesión.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-disputed-tax-and-provincial-records-medina",
+      "order": 15,
+      "actId": "act-3",
+      "title": {
+        "en": "Dispatches from a Divided Peninsula",
+        "es-ES": "Despachos desde una península dividida"
+      },
+      "date": "632–634 CE; campaigns reported off-map",
+      "geographyId": "medina",
+      "coreMechanic": "disputed-tax-and-provincial-records",
+      "historicalSelection": {
+        "corpusEventId": 149,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…”; “Islam in Iran XI. Jihad in Islam” (https://www.iranicaonline.org/articles/islam-in-iran-xi-jihad-in-islam/), apartado inicial",
+        "qualification": "La categoría “apostasía” es una interpretación de fuentes del bando vencedor; incluir también resistencia política/fiscal.",
+        "candidateEvent": "Abu Bakr ocupa el califato y se enfrenta a movimientos de oposición y rechazo tributario (guerras Ridda).",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-the-roads-of-yamama",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "The Roads of Yamama",
+        "es-ES": "Los caminos de Yamama"
+      },
+      "date": "632–633 CE probable",
+      "geographyId": "yamama",
+      "coreMechanic": "finite-field-supply-and-refuge",
+      "historicalSelection": {
+        "corpusEventId": 152,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” no detalla Yamama; fuentes tardías de Ridda referidas por “Islam in Iran XI”",
+        "qualification": "Esta entrada se basa en cronología estándar secundaria y requiere revisión de una fuente específica antes de fijar hito narrativo; fecha aproximada.",
+        "candidateEvent": "Campaña de Yamama contra Musaylima, dentro de las guerras Ridda.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "17-finite-river-withdrawal-kufa-euphrates",
+      "order": 17,
+      "actId": "act-3",
+      "title": {
+        "en": "The Bridge That Could Not Hold",
+        "es-ES": "El puente que no pudo resistir"
+      },
+      "date": "October634 CE approximate",
+      "geographyId": "kufa-euphrates",
+      "coreMechanic": "finite-river-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 154,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” episodio de la batalla del puente (Shaban 13/Oct 634)",
+        "qualification": "Lugar/táctica y conversión de fecha son aproximados.",
+        "candidateEvent": "Derrota musulmana en la batalla del Puente.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-surrender-and-civilian-records-damascus",
+      "order": 18,
+      "actId": "act-3",
+      "title": {
+        "en": "The Gates of Damascus",
+        "es-ES": "Las puertas de Damasco"
+      },
+      "date": "635 CE conventional; terms traditions compared",
+      "geographyId": "damascus",
+      "coreMechanic": "surrender-and-civilian-records",
+      "historicalSelection": {
+        "corpusEventId": 155,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entry 635, capture of Damascus",
+        "qualification": "La cronología general no describe términos de capitulación.",
+        "candidateEvent": "Damasco pasa a manos de ejércitos árabes.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-the-edge-of-the-river",
+      "order": 19,
+      "actId": "act-3",
+      "title": {
+        "en": "The Edge of the River",
+        "es-ES": "El borde del río"
+      },
+      "date": "636 CE",
+      "geographyId": "yarmuk",
+      "coreMechanic": "ravine-battle-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 156,
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/source/yarmuk.asp",
+        "passage": "Al-Baladhuri, “The Battle of Yarmuk,” relato de batalla",
+        "qualification": "Relato historiográfico posterior; cifras y secuencia de maniobras tienen incertidumbre.",
+        "candidateEvent": "Batalla de Yarmuk contra el Imperio bizantino.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "04-fields-of-the-sawad",
+      "order": 20,
+      "actId": "act-3",
+      "title": {
+        "en": "Fields of the Sawad",
+        "es-ES": "Campos del Sawad"
+      },
+      "date": "634/635–637/638 CE; conventional636/637",
+      "geographyId": "qadisiyya",
+      "coreMechanic": "finite-marsh-battle-and-relief",
+      "historicalSelection": {
+        "corpusEventId": 157,
+        "sourceUrl": "https://www.iranicaonline.org/articles/qadesiya-battle/",
+        "passage": "Lewental, “Qādesiya, Battle of,” párrs. iniciales",
+        "qualification": "Fecha, número de tropas y localización exacta son inciertos; propuestas de 634/35 a 637/38.",
+        "candidateEvent": "Batalla de Qādesiya derrota fuerzas sasánidas y abre avance hacia Iraq central.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+      "order": 21,
+      "actId": "act-3",
+      "title": {
+        "en": "The Court beyond the Tigris",
+        "es-ES": "La corte más allá del Tigris"
+      },
+      "date": "637 CE conventional; Nihavand later reported",
+      "geographyId": "ctesiphon",
+      "coreMechanic": "finite-river-crossing-and-civilian-records",
+      "historicalSelection": {
+        "corpusEventId": 158,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ctesiphon/",
+        "passage": "“Ctesiphon,” párrafo sobre conquista de marzo 637",
+        "qualification": "Las crónicas describen botín con motivos literarios; el hecho de la toma tiene mejor respaldo.",
+        "candidateEvent": "Ctesifonte/Mada’in es tomada; la familia real sasánida y la corte se retiran.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "22-property-and-surrender-records-jerusalem",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "Terms beside the Old Walls",
+        "es-ES": "Condiciones junto a las murallas antiguas"
+      },
+      "date": "637/638 CE; capitulation chronology qualified",
+      "geographyId": "jerusalem",
+      "coreMechanic": "property-and-surrender-records",
+      "historicalSelection": {
+        "corpusEventId": 166,
+        "sourceUrl": "https://www.cambridge.org/core/books/abs/christian-communities-of-palestine-from-byzantine-to-islamic-rule/islamic-conquest-the-mid630s-to-640/75A757E519D6EF48BD198F3BDBAFADC3",
+        "passage": "Robert Schick, “The Islamic Conquest,” summary: “Jerusalem arranged terms of surrender, perhaps in 17/638.”",
+        "qualification": "The scholar explicitly marks the date as probable; traditions also place the surrender in 637.",
+        "candidateEvent": "Jerusalem arranges terms of surrender to Muslim forces.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-peaceful-supply-and-record-reception-antioch",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "The Road after the Truce",
+        "es-ES": "El camino después de la tregua"
+      },
+      "date": "638 CE; cited source reports no armed resistance",
+      "geographyId": "antioch",
+      "coreMechanic": "peaceful-supply-and-record-reception",
+      "historicalSelection": {
+        "corpusEventId": 167,
+        "sourceUrl": "https://almuslih.org/wp-content/uploads/Library/Kaegi%2C%20W%20-%20Byzantium.pdf",
+        "passage": "Walter E. Kaegi, Byzantium and the Early Islamic Conquests (1992), p. 158: passage on the 638 occupation of Antioch and other northern Syrian cities after the truce.",
+        "qualification": "Year and sequence are supported; no exact day is given. The passage describes occupation without armed resistance, not a battle at Antioch.",
+        "candidateEvent": "After the northern Syrian truce expired, Muslim forces occupied Antioch; Kaegi reports no armed resistance at the city.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-a-camp-beside-the-nile",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "A Camp beside the Nile",
+        "es-ES": "Un campamento junto al Nilo"
+      },
+      "date": "641–642 CE; precedingcampaign639–642",
+      "geographyId": "fustat",
+      "coreMechanic": "camp-and-river-supply",
+      "historicalSelection": {
+        "corpusEventId": 159,
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/source/642Egypt-conq2.asp",
+        "passage": "“Accounts of the Arab Conquest of Egypt,” secciones sobre fortress and capitulation",
+        "qualification": "Narraciones de al-Baladhuri y patriarcas son posteriores y divergen en secuencia.",
+        "candidateEvent": "Campaña árabe en Egipto bajo Amr b. al-As; Fustat se establece junto a la fortaleza de Babilonia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+      "order": 25,
+      "actId": "act-4",
+      "title": {
+        "en": "Letters from the Alexandrian Harbour",
+        "es-ES": "Cartas desde el puerto alejandrino"
+      },
+      "date": "641/642 CE traditional",
+      "geographyId": "alexandria",
+      "coreMechanic": "bounded-harbour-withdrawal-and-receipts",
+      "historicalSelection": {
+        "corpusEventId": 160,
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/source/642Egypt-conq2.asp",
+        "passage": "Misma selección, pasaje de capitulación de Alejandría",
+        "qualification": "Fecha exacta y términos de tratado varían entre cronistas.",
+        "candidateEvent": "Alejandría capitula tras la campaña egipcia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-administrative-transition-and-care-medina",
+      "order": 26,
+      "actId": "act-4",
+      "title": {
+        "en": "Another Seal in Medina",
+        "es-ES": "Otro sello en Medina"
+      },
+      "date": "644 CE",
+      "geographyId": "medina",
+      "coreMechanic": "administrative-transition-and-care",
+      "historicalSelection": {
+        "corpusEventId": 163,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entries 644",
+        "qualification": "La cronología ofrece una síntesis; autoría/participación en el asesinato requiere fuente adicional.",
+        "candidateEvent": "Omar es asesinado y Uthman accede al califato.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-finite-coastal-expedition-and-supply-cyprus",
+      "order": 27,
+      "actId": "act-5",
+      "title": {
+        "en": "The Island beyond the Horizon",
+        "es-ES": "La isla más allá del horizonte"
+      },
+      "date": "649 CE conventional",
+      "geographyId": "cyprus",
+      "coreMechanic": "finite-coastal-expedition-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 168,
+        "sourceUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+        "passage": "Article note 40: sources and the basilica inscription at Soli attest first attacks dated 649 and 650; location of any garrison is unknown.",
+        "qualification": "The article discusses conflict in the source chronology; precise landing/campaign details and later occupation are uncertain.",
+        "candidateEvent": "An Arab naval expedition attacks Cyprus during Uthman’s caliphate.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-civilian-refuge-and-source-comparison-merv",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "The Last Dispatch from Marw",
+        "es-ES": "El último despacho desde Marw"
+      },
+      "date": "651/652 CE; death reported, not an assassination objective",
+      "geographyId": "merv",
+      "coreMechanic": "civilian-refuge-and-source-comparison",
+      "historicalSelection": {
+        "corpusEventId": 164,
+        "sourceUrl": "https://www.iranicaonline.org/articles/khorasan-iv-the-arab-conquest-and-omayyad-period/",
+        "passage": "“Khorasan iv,” resumen inicial cita Ṭabari para asesinato en 31/652; “Chronology…” da 651",
+        "qualification": "Fuentes difieren 651 vs. 652; evitar fecha diaria.",
+        "candidateEvent": "Yazdegerd III es asesinado en Marw; fin de la monarquía sasánida.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-finite-naval-withdrawal-and-care-finike",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "Masts off the Lycian Shore",
+        "es-ES": "Mástiles frente a la costa licia"
+      },
+      "date": "654–655 CE; conversion variants",
+      "geographyId": "finike",
+      "coreMechanic": "finite-naval-withdrawal-and-care",
+      "historicalSelection": {
+        "corpusEventId": 169,
+        "sourceUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+        "passage": "Article notes 35, 41–42: al-Tabari dates the Battle of the Masts to 34 AH; the article discusses competing accounts and dates.",
+        "qualification": "The date spans 654–655 in sources; fleet totals and strategic outcome are contested, and the source cautions that several reports conflict.",
+        "candidateEvent": "Battle of Phoenix, also called the Battle of the Masts, pits the Arab fleet against Byzantine naval forces.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "30-civilian-records-and-final-perspective-medina",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "The House behind the Dispatches",
+        "es-ES": "La casa detrás de los despachos"
+      },
+      "date": "mid656 CE",
+      "geographyId": "medina",
+      "coreMechanic": "civilian-records-and-final-perspective",
+      "historicalSelection": {
+        "corpusEventId": 165,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "“Ali: Life,” párrs. 52–60",
+        "qualification": "Circunstancias y culpabilidad disputadas; evento marca fin del rango de campaña.",
+        "candidateEvent": "Oposición provincial llega a Medina y Uthman muere durante el sitio de su residencia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "salim-caravan-scribe",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    }
+  ]
 }
