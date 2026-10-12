@@ -19,7 +19,7 @@ Si existe una unidad pendiente propia, inspecciona sus cambios y commit antes de
 
 Localiza la siguiente tarea de contenido designada en NEXT-PROPOSALS, comprobando IDs y estados actuales. Continúa solo el slice permitido y listo. Lee su propuesta, brief, fuentes y acceptance. Reutiliza contratos y compiladores existentes; no cambies arquitectura ni config global fuera de su slice. Si una dependencia/revisión/prueba de motor falta, registra la causa y la tarea responsable, sin declarar que se superó.
 
-Sigue WORKFLOW y QUALITY-GATES: evidencia histórica, narradores diferenciados, canonical es-ES, IDs permanentes, 17 locales, derechos de medios, voces offline, objetivos/recuperación, economía finita, dificultades y QA. Ejecuta validación y exportación según el cambio. Vincula el QA del motor al ZIP probado y su hash; invalida la evidencia si cambia el artefacto.
+Sigue WORKFLOW y QUALITY-GATES: evidencia histórica, narradores diferenciados, sourceLocale=en y español completo, IDs permanentes, 17 locales, derechos de medios, voces offline, objetivos/recuperación, economía finita, dificultades y QA. Ejecuta validación y exportación según el cambio. Vincula el QA del motor al ZIP probado y su hash; invalida la evidencia si cambia el artefacto.
 
 Prepara los borradores en staging/campaigns y sigue docs/guides/staging.md. Incorpora campañas, escenarios, catálogos, lock de IDs y glosario juntos únicamente en el slice de materialización que posee esas rutas. No crees una carpeta activa con referencias pendientes ni claves sin ID. El gate global permanece verde en cada entrega.
 
@@ -29,3 +29,7 @@ Presenta la entrega a revisión independiente y publica exclusivamente mediante 
 ## Cierre verificable
 
 El reporte distingue pruebas estáticas, round-trip, observaciones del juego y revisiones humanas. Indica el hash exacto revisado, versión del juego y plataforma cuando corresponda. Una propuesta de contenido no cierra PRODUCTION READY con solo unit tests; una propuesta de infraestructura no cierra su revisión con una autoaprobación.
+
+## Ampliación de diseño vigente
+
+El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.

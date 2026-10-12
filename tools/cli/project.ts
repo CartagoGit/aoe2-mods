@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
+import { pythonCommand } from "../../packages/aoe2-adapter";
 import {
   validateAssetDestinations,
   validateAssets,
@@ -19,6 +20,7 @@ import {
 import {
   campaignKeys,
   type StringLock,
+  sourceCatalog,
   validateLock,
 } from "../../packages/localization";
 import {
@@ -300,9 +302,7 @@ export async function validateProject(root: string): Promise<Issue[]> {
       out.push(issue("project.id", dup, `${kind} duplicado`));
   const owners = new Map<string, string>();
   for (const c of p.campaigns)
-    for (const key of Object.keys(
-      c.localization.find((l) => l.locale === "es-ES")?.strings ?? {},
-    )) {
+    for (const key of Object.keys(sourceCatalog(c)?.strings ?? {})) {
       const owner = owners.get(key);
       if (owner && owner !== c.id)
         out.push(
@@ -317,6 +317,28 @@ export async function validateProject(root: string): Promise<Issue[]> {
   return out;
 }
 export async function docsCheck(root: string): Promise<void> {
+  for (const [script, ...args] of [
+    ["render.py", "--check"],
+    ["verify.py"],
+    ["test_design.py"],
+  ]) {
+    if (!script) throw new Error("Missing design check script");
+    const proc = Bun.spawn(
+      [
+        await pythonCommand(root),
+        await sourceFile(root, `tools/design/${script}`),
+        ...args,
+      ],
+      { cwd: root, stdout: "pipe", stderr: "pipe" },
+    );
+    const [out, err, code] = await Promise.all([
+      new Response(proc.stdout).text(),
+      new Response(proc.stderr).text(),
+      proc.exited,
+    ]);
+    if (code !== 0)
+      throw new Error(`Design check ${script} (${code}): ${err}\n${out}`);
+  }
   const mandatory = [
     "README.md",
     "AGENTS.md",

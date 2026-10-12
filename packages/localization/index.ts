@@ -17,11 +17,14 @@ export function validateCatalogs(
   catalogs: Catalog[],
   required: string[],
   maxLength = 4000,
+  sourceLocale = "en",
 ): Issue[] {
   const issues: Issue[] = [];
-  const base = catalogs.find((c) => c.locale === "es-ES");
+  const base = catalogs.find((c) => c.locale === sourceLocale);
   if (!base)
-    return [issue("i18n.source", "localization", "Falta es-ES canónico")];
+    return [
+      issue("i18n.source", "localization", `Falta ${sourceLocale} canónico`),
+    ];
   for (const locale of duplicates(catalogs.map((c) => c.locale)))
     issues.push(issue("i18n.duplicate", locale, "Catálogo repetido"));
   for (const k of required)
@@ -88,6 +91,11 @@ export function validateCatalogs(
         );
   }
   return issues;
+}
+export function sourceCatalog(
+  c: Pick<Campaign, "sourceLocale" | "localization">,
+): Catalog | undefined {
+  return c.localization.find((catalog) => catalog.locale === c.sourceLocale);
 }
 export function campaignKeys(c: Campaign): string[] {
   const keys = [

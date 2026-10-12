@@ -31,3 +31,7 @@ BASE READY: arquitectura, contratos, CLI, validadores, docs y tests pasan, y la 
 Si falta una capacidad, su propuesta queda diferenciada de las tareas de contenido. M3.1 no decidirá arquitectura ni ampliará alcance por su cuenta. La tabla de trazabilidad enlaza cada requisito con código, prueba o evidencia pendiente.
 
 Los slices de contenido preparan borradores en staging/campaigns y los materializan completos junto a IDs/glosario en un slice con propiedad conjunta. Cada integración mantiene el gate global pasando; ver [preparación](../guides/staging.md). Esta secuencia evita referencias pendientes y catálogos sin IDs entre entregas.
+
+## Ampliación solicitada: diseño de todas las campañas
+
+El propietario exige ahora planificación individual de las nueve campañas explícitas del catálogo: ver [índice](../design/README.md) y [contrato deproducción](../design/production-contract.md). La implementación del diseño comprende43 fuentes consultadas con cautelas,39planos regionales,794 pantallas bilingües, nueve biblias de narrador, presupuestos easy/standard/hard estimados y propuestas oficiales de autoría. i00002 declara la fuente inglesa porcampaña conservando el fixture legado. i00003 cubre capacidades reutilizables faltantes; s00001 acredita el motor. No se afirma balance jugado, traducciones aprobadas ni mods completos por tener documentación.

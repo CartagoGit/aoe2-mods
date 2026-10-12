@@ -27,3 +27,7 @@ Si la mecánica histórica del brief requiere condiciones/efectos que no están 
 Las dependencias están descritas en las propuestas y este registro; la versión instalada admite DependsOn dentro de slices, pero no un argumento de dependencias entre propuestas en create_proposal. Usa estados oficiales bloqueados y motivo explícito mientras sus requisitos falten. No editar frontmatter para desbloquear.
 
 Una revisión independiente pendiente no desaparece al cambiar de modelo. Un lock caducado se consulta y reclama de nuevo con la identidad correcta. La integración se efectúa solo por work publish según el servidor; un rechazo conserva la unidad y documenta la condición necesaria. Consultar audit antes de empezar.
+
+## Ampliación de diseño vigente
+
+El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.

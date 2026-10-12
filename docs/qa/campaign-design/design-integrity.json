@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "design integrity only; game QA pending",
+  "counts": {
+    "campaigns": 9,
+    "historicalScenarios": 39,
+    "technicalScenarios": 2,
+    "historicalScreens": 794,
+    "regions": 26,
+    "sources": 43,
+    "downloadedReferences": 14
+  },
+  "errors": []
+}

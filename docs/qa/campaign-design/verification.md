@@ -1,0 +1,9 @@
+# Verificación de la entrega de diseño
+
+Alcance: nueve campañas históricas, 39 escenarios y dos escenarios de laboratorio. El piloto Milvio comparte la misión C01. No hay 39 mods terminados ni evidencia de partidas. Las matrices de cada misión permanecen pending y los presupuestos estimated.
+
+Integridad: `python3 tools/design/verify.py` y `python3 tools/design/test_design.py`; resultados estructurados en [design-integrity.json](design-integrity.json). Se verifican bilingüismo, voces, rutas sin ciclos, fuentes, transformación geográfica, rosters/bancos finitos, hashes/licencias y asignaciones oficiales. Las pruebas adversariales deben rechazar español ausente, voz errónea, reserva excedida, ciclo y presupuesto insuficiente; también prueban orientación y recorte geográfico sin vértices internos.
+
+`bun run validate` acredita contratos, compilación, documentación y fixture; no certifica historia, diversión o navegación del mapa final. La revisión independiente y aprobación formal se registran sobre commits técnicos/integrados mediante DelendAI. Recuperar estado vivo del servidor antes de trabajar.
+
+GAME VERIFIED requiere mapas rasterizados, footprint/transporte, fases/ledgers tras guardar/cargar, dificultad, rendimiento, medios/layouts/progreso y coexistencia reales en AoE2. PRODUCTION READY requiere 17 traducciones revisadas, arte/audio/derechos aprobados, contenido calibrado según [protocolo](../../design/production-contract.md) y release:check del artefacto real. Estas tareas tienen propuestas propias y no se ocultan como pruebas pasadas.

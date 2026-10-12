@@ -353,6 +353,7 @@ export const campaignSchema = z.strictObject({
   id,
   publicId: z.string().regex(/^CDF-[A-Z]+\d{2}$/),
   internalName: z.string().regex(/^CDF_[A-Za-z0-9_]+$/),
+  sourceLocale: text,
   titleKey: key,
   descriptionKey: key,
   mode: z.enum(["aoe2-de", "return-of-rome"]),
