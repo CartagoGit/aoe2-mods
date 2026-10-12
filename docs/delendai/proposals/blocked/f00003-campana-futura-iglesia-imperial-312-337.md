@@ -2,10 +2,14 @@
 id: f00003
 title: "Campana futura: Iglesia imperial 312-337"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-factory
 date: 2026-10-12
+last-transition-id: 31be0fff-d0db-466e-be52-154bc26f7051
+last-correlation-id: 31be0fff-d0db-466e-be52-154bc26f7051
+last-transition-from: ready
+last-transition-at: 2026-10-12T04:20:24.800Z
 ---
 
 # f00003 — Campana futura: Iglesia imperial 312-337
