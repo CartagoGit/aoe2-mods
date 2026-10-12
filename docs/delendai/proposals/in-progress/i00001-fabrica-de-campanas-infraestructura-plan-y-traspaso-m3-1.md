@@ -40,6 +40,8 @@ Repositorio sin infraestructura. La conversación final exige mods independiente
   - "bun run validate: tipado/lint/tests/documentación/localización y fixtures; prueba Python round-trip real."
   - "Propuestas oficiales con slices, alcance/dependencias/aceptación/fuentes y límites; prompts de inicio y continuación."
   - "Separar BASE READY/EXPORT READY/GAME VERIFIED/PRODUCTION READY; registrar limitaciones y revisión independiente."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ## acceptance
 
