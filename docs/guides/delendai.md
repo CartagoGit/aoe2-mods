@@ -6,6 +6,8 @@ Abrir una unidad oficial basada en develop, reclamar archivos, validar, entregar
 
 En la versión instalada, la revisión técnica puede comprobar el WIP, pero approve exige que evidence.commitHash ya pertenezca a develop. Secuencia acreditada: validación y revisión técnica → work publish con gate declarado en HEAD de develop → unidad review propia de otro modelo real → aprobación formal del hash integrado → publicación del veredicto/cierre según runtime. No usar el SHA de develop para acreditar otro commit ni inventar sufijos de agente. La identidad es el ID literal del modelo declarado por el host; review es el kind de unidad.
 
+Files se comprueba mediante rutas literales, incluidos directorios; no se expanden comodines. Declarar los ámbitos reales de cada slice y mantenerlos disponibles hasta el cierre global. Los locks son una capacidad distinta y pueden aceptar patrones. Las transiciones siguen el DFA servido: in-progress pasa por review antes de done; no forzar ni editar estados a mano.
+
 Si una sesión se interrumpe: leer AGENTS y handoffs; consultar Git, unidad y locks; localizar el slice propio, su commit y gate; reconciliar develop sin reescribir trabajo compartido; continuar únicamente el alcance concedido. No repetir una operación con rechazo permanente sin resolver la causa.
 
 El perfil actual exige un gate declarado en el HEAD de develop antes de aceptar merges. Declararlo solo dentro del candidato no satisface esa política. Si el repositorio de arranque no lo tiene, la integración queda bloqueada hasta bootstrap legítimo por el propietario; no omitirlo ni hacer push manual de develop.
