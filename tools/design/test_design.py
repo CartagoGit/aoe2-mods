@@ -13,6 +13,48 @@ class DesignAcceptanceTests(unittest.TestCase):
         cls.catalogue = json.loads((ROOT / 'docs/design/catalog.json').read_text())
         cls.odyssey_helper = runpy.run_path(str(ROOT / 'tools/design/odyssey_catalog.helper.py'))
         cls.odyssey_policy, cls.odysseys = cls.odyssey_helper['odyssey_catalog']()
+        cls.dossier_validator = staticmethod(runpy.run_path(str(ROOT / 'tools/design/episode_dossier.validator.py'))['audit_dossier'])
+
+    def draft(self, order=1):
+        return copy.deepcopy(next(e for e in self.odysseys[0]['episodes'] if e['order']==order))
+
+    def test_expanded_dossiers_reject_wrong_narrator_and_incomplete_translation(self):
+        draft=self.draft()
+        draft['screens'][1]['narrator']='miriam-archive'
+        del draft['screens'][3]['text']['es-ES']
+        errors=self.dossier_validator(draft)
+        self.assertTrue(any('narrator voice' in error for error in errors))
+        self.assertTrue(any('incomplete localization' in error for error in errors))
+
+    def test_expanded_dossiers_reject_impossible_arrival_and_duplicate_survivors(self):
+        draft=self.draft(2)
+        draft['objectivePlan'][0]['predicate']['requirements'][0]['requiredCount']=9
+        draft['worldContract']['survivorGroups'][0]['entities'].append(draft['worldContract']['survivorGroups'][0]['entities'][0])
+        errors=self.dossier_validator(draft)
+        self.assertTrue(any('impossible counter' in error for error in errors))
+        self.assertTrue(any('duplicate survivor' in error for error in errors))
+
+    def test_expanded_withdrawal_cannot_use_unsupplied_recipient_ledger(self):
+        draft=self.draft(2)
+        draft['objectivePlan'][2]['predicate']['requirements'][0]['eligibleEntitiesFromLedger']['ledger']='missing'
+        self.assertTrue(any('prior recipient ledger' in error for error in self.dossier_validator(draft)))
+
+    def test_expanded_dossiers_reject_funding_booleans_that_hide_overdraw(self):
+        draft=self.draft()
+        draft['difficulty']['hard']['gatherableBank']['wood']=0
+        draft['difficulty']['hard']['mainFeasibleSkippingAllOptionals']=True
+        self.assertTrue(any('nonoptional stock drift' in error or 'main goal needs optional' in error for error in self.dossier_validator(draft)))
+
+    def test_expanded_dossiers_reject_early_campaign_finale_and_initial_arrival(self):
+        draft=self.draft(2)
+        draft['stateMachine']['campaignProgressWrite']=True
+        req=draft['objectivePlan'][0]['predicate']['requirements'][0]
+        eid=req['entities'][0];zone=next(z for z in draft['worldContract']['zones'] if z['id']==req['destinations'][eid])
+        entity=next(e for e in draft['worldContract']['entities'] if e['id']==eid)
+        entity['initialHub']=zone['hub'];entity['offsetTiles']=zone['offsetTiles'][:]
+        errors=self.dossier_validator(draft)
+        self.assertTrue(any('intermediate episode can end campaign' in error for error in errors))
+        self.assertTrue(any('initial arrival incorrectly counts' in error for error in errors))
 
     def test_odyssey_expansion_cannot_discard_baseline_semantic_identity(self):
         invalid = copy.deepcopy(self.odysseys)

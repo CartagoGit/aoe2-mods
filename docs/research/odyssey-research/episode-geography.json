@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "id": "caesarea",
+      "name": "Caesarea Maritima and coastal approaches",
+      "bbox": [
+        34.87,
+        32.475,
+        34.965,
+        32.535
+      ],
+      "coordinateStatus": "approximate real-world regional framing; named gameplay districts are fictional and not archaeological addresses",
+      "representativePoint": [
+        34.892471,
+        32.501074
+      ],
+      "representativePointUsage": "gazetteer anchor only; may describe harbor extent, not land spawn",
+      "sources": [
+        {
+          "url": "https://gazetteer.dainst.org/doc/2043494.html",
+          "locator": "Location field, accuracy label3; coordinates in latitude/longitude",
+          "consulted": "2026-10-12"
+        },
+        {
+          "url": "https://en.parks.org.il/new/spectacular-vaults-and-treasures-caesarea-harbor-visitors-center/",
+          "locator": "Harbor vaults and restored visitor center section",
+          "consulted": "2026-10-12"
+        }
+      ],
+      "terrain": "coastal plain; Mediterranean west; interior activity districts east; no claimed surveyed ancient coastline",
+      "waterControlStatus": "modern coastline data must be clipped separately; ancient harbor/coast reconstruction pending",
+      "anachronisms": "no Crusader structures or modern museum in first-century scene; aqueduct phases must be individually dated",
+      "approval": "architect regional candidate; DEM/land mask and independent archaeological audit pending"
+    }
+  ]
+}

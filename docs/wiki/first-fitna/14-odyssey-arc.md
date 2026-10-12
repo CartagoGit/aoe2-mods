@@ -1,6 +1,6 @@
 # The Shattered Oath / El juramento quebrado
 
-`first-fitna` · CDF-I01 · 28 selected episodes · source locale`en`
+`first-fitna` · CDF-I01 · 28 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

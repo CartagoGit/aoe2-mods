@@ -1,6 +1,6 @@
 # The Keys of the Eternal City / Las llaves de la Ciudad Eterna
 
-`church-of-rome` · CDF-C03 · 32 selected episodes · source locale`en`
+`church-of-rome` · CDF-C03 · 32 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

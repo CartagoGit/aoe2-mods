@@ -548,7 +548,8 @@ Every predicate requires the actual world-state operation, not a timer approxima
             "departingEntities": [
               "03-the-river-quarter.departure-caravan.1"
             ],
-            "departureEnabledOnlyAfterReceipt": true
+            "departureEnabledOnlyAfterReceipt": true,
+            "receiptRequirement": "main-entities"
           }
         ],
         "requiredLedgers": [

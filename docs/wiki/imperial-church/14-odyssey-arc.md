@@ -1,6 +1,6 @@
 # The Eagle and the Cross / El águila y la cruz
 
-`imperial-church` · CDF-C01 · 29 selected episodes · source locale`en`
+`imperial-church` · CDF-C01 · 29 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

@@ -1,6 +1,6 @@
 # Beneath the Desert Stars / Bajo las estrellas del desierto
 
-`first-caliphs` · CDF-I00 · 30 selected episodes · source locale`en`
+`first-caliphs` · CDF-I00 · 30 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

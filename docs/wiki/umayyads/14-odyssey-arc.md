@@ -1,6 +1,6 @@
 # From Damascus to the Far Horizon / De Damasco al último horizonte
 
-`umayyads` · CDF-I02 · 32 selected episodes · source locale`en`
+`umayyads` · CDF-I02 · 32 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

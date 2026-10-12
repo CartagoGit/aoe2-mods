@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="Fifteen Days, Many Voices geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">Fifteen Days, Many Voices</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">320 × 320 · jerusalem · N ↑ E →</text>
+<polyline points="395.42,322.95 398.50,399.12 435.50,500.67" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="395.42" cy="322.95" r="20" fill="none" stroke="#91512f"/>
+<text x="418.42" y="322.95" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Northwest archive stores</text>
+<circle cx="398.50" cy="399.12" r="20" fill="none" stroke="#91512f"/>
+<text x="421.50" y="399.12" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Western comparison court</text>
+<circle cx="435.50" cy="500.67" r="20" fill="none" stroke="#91512f"/>
+<text x="458.50" y="500.67" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: South copy register</text>
+<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">No coast/DEM is inferred from this plan</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [35.12, 31.7, 35.3, 31.86]; cosine-corrected longitude; approximate districts</text>
+</svg>

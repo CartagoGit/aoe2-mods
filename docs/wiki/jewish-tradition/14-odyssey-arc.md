@@ -1,6 +1,6 @@
 # Keepers of the Unbroken Word / Guardianes de la palabra viva
 
-`jewish-tradition` · CDF-C02 · 30 selected episodes · source locale`en`
+`jewish-tradition` · CDF-C02 · 30 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

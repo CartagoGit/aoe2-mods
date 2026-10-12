@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Road He Remembered geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Road He Remembered</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">340 × 340 · damascus · N ↑ E →</text>
+<polyline points="323.57,431.26 383.22,435.14 444.48,413.87" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="323.57" cy="431.26" r="20" fill="none" stroke="#91512f"/>
+<text x="346.57" y="431.26" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Western oasis post</text>
+<circle cx="383.22" cy="435.14" r="20" fill="none" stroke="#91512f"/>
+<text x="406.22" y="435.14" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: City relay court</text>
+<circle cx="444.48" cy="413.87" r="20" fill="none" stroke="#91512f"/>
+<text x="467.48" y="413.87" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Eastern orchard station</text>
+<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">No coast/DEM is inferred from this plan</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [36.12, 33.4, 36.48, 33.65]; cosine-corrected longitude; approximate districts</text>
+</svg>
