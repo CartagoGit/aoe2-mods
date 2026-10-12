@@ -1,3 +1,4 @@
+import { paymentReceiptMatches } from "../gameplay-validation/payment-receipt.helper";
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import type { MainRequirement } from "./capability-action.model";
 import {
@@ -19,7 +20,7 @@ export function secondaryRequirementsSatisfied(
   return side.predicate.requirements.every((req, index) => {
     if (req.kind === "entity-arrival")
       return (
-        req.entities.filter((id) =>
+        [...new Set(req.entities)].filter((id) =>
           hasArrival(state, id, req.destinations[id] ?? ""),
         ).length >= req.requiredCount
       );
@@ -123,7 +124,10 @@ export function mainRequirementSatisfied(
       );
     }
     case "receipt-exists":
-      return state.paidReceipts.includes(requirement.flag);
+      return (
+        paymentReceiptMatches(profile, requirement) &&
+        state.paidReceipts.includes(requirement.flag)
+      );
     case "paired-delivery":
       return facts.length >= requirement.requiredCount;
     case "route-choice":
@@ -132,8 +136,9 @@ export function mainRequirementSatisfied(
       );
     case "finite-wave-resolution":
       return (
-        requirement.waves.filter((id) => state.resolvedWaves.includes(id))
-          .length >= requirement.requiredCount
+        [...new Set(requirement.waves)].filter((id) =>
+          state.resolvedWaves.includes(id),
+        ).length >= requirement.requiredCount
       );
     case "hold-area":
       return requirement.zones.every(
@@ -161,7 +166,7 @@ export function mainRequirementSatisfied(
       );
     case "area-state":
       return (
-        requirement.zones.filter((id) => {
+        [...new Set(requirement.zones)].filter((id) => {
           const zone = state.zoneConditions[id];
           return (
             zone?.passable &&
@@ -246,7 +251,7 @@ export function hasIrrecoverableLoss(
     ) ||
     profile.worldContract.survivorGroups.some(
       (group) =>
-        group.entities.filter(
+        [...new Set(group.entities)].filter(
           (id) =>
             state.entityStates[id] === "alive" ||
             state.entityStates[id] === "arrived",

@@ -462,7 +462,7 @@ export const capabilityProfileV2Schema = z.strictObject({
     ),
   }),
   enemyRoster: z.strictObject({
-    initialEntityIds: z.array(contractId).min(1),
+    initialEntityIds: z.array(contractId),
     productionEnabled: z.literal(false),
     mobilizations: z.array(
       z.strictObject({
