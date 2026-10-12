@@ -209,6 +209,30 @@ export function validateScenarioCapability(
                 );
             }
           }
+          if (
+            req.distinctDestinationCount !== undefined ||
+            req.minimumPerDestination !== undefined
+          ) {
+            const counts = new Map<string, number>();
+            for (const entityId of req.entities) {
+              const zoneId = req.destinations?.[entityId];
+              if (zoneId) counts.set(zoneId, (counts.get(zoneId) ?? 0) + 1);
+            }
+            if (
+              req.state !== "arrived" ||
+              !req.destinations ||
+              counts.size < (req.distinctDestinationCount ?? 0) ||
+              (req.minimumPerDestination !== undefined &&
+                [...counts.values()].some(
+                  (count) => count < (req.minimumPerDestination ?? 0),
+                ))
+            )
+              add(
+                "capability.destination-distribution",
+                reqContext,
+                "Los mínimos por destino requieren llegadas tipadas y suficientes identidades asignadas a cada zona",
+              );
+          }
           if (req.eligibleEntitiesFromLedger) {
             const source = objectives.get(
               req.eligibleEntitiesFromLedger.objective,

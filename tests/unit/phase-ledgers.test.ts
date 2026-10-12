@@ -931,3 +931,60 @@ describe("independent-review regressions", () => {
     expect(state.secondaryStates["side-1"]).toBe("closed-at-terminal");
   });
 });
+
+describe("delivery destination distribution", () => {
+  const distribution = (minimum = 1) => ({
+    id: "split",
+    kind: "entity-state" as const,
+    state: "arrived" as const,
+    entities: ["unit-a", "cargo-a", "receiver-a"],
+    requiredCount: 2,
+    oncePerEntity: true as const,
+    destinations: {
+      "unit-a": "zone-dest",
+      "cargo-a": "zone-dest",
+      "receiver-a": "zone-other",
+    },
+    distinctDestinationCount: 2,
+    minimumPerDestination: minimum,
+  });
+
+  test("a total count at one destination cannot replace the other receiving post", () => {
+    const fixture = referenceFixture([distribution()]);
+    let state = fixture.step(fixture.entered, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    state = fixture.step(state, {
+      type: "record-arrival",
+      entityId: "cargo-a",
+      zoneId: "zone-dest",
+    });
+    expect(fixture.step(state, latch).objectiveLatches).toEqual([]);
+    state = JSON.parse(JSON.stringify(state));
+    state = fixture.step(state, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-other",
+    });
+    expect(fixture.step(state, latch).objectiveLatches).toEqual([
+      "objective-a",
+    ]);
+  });
+
+  test("infeasible destination counts and per-post minima fail structural validation", () => {
+    for (const requirement of [
+      distribution(2),
+      { ...distribution(), distinctDestinationCount: 3 },
+      { ...distribution(), state: "collected" as const },
+    ]) {
+      const fixture = referenceFixture([requirement]);
+      expect(
+        validateScenarioCapability(fixture.candidate).some(
+          (issue) => issue.code === "capability.destination-distribution",
+        ),
+      ).toBe(true);
+    }
+  });
+});
