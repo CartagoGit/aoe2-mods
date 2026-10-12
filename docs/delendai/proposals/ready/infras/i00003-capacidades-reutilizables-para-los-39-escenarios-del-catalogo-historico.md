@@ -1,0 +1,74 @@
+---
+id: i00003
+title: "Capacidades reutilizables para los 39 escenarios del catalogo historico"
+kind: infra
+status: ready
+type: proposal
+track: campaign-design
+date: 2026-10-12
+---
+
+# i00003 — Capacidades reutilizables para los 39 escenarios del catalogo historico
+
+## goal
+
+El arquitecto amplía y acredita el perfil para cumplir literalmente docs/design/production-contract.md y docs/design/catalog.json. MiniMax no inventa condiciones ni sustituye una mecánica por tiempo. Entrega infraestructura reutilizable y fixtures adversariales antes de materializar historia.
+
+## why
+
+Los dossiers requieren contadores de entidades/entregas, fases con reloj relativo, recuperación, transporte, control de reservas y narrativa nativa; la existencia de bring/resource/task/spawn no acredita por sí sola estos compuestos.
+
+## non-goals
+
+- No crear contenido histórico ni cambiar nombres/IDs existentes.
+- No afirmar QA del motor mediante tests estáticos.
+
+## slices
+
+- global_gate: e2e
+
+### S1 — Contratos de fases y transacciones idempotentes
+- **Status**: pending
+- **Files**: `packages/schemas`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tests/unit/phase-ledgers.test.ts`
+- **Gate**: e2e
+- acceptance:
+  - "Operaciones de objectivePlan explícitas, entrega por entidad sin doble cobro, recurso total atómico, supervivientes 6/8, phase-clock relativo; reusar bring/resource/diplomacy cuando sean suficientes."
+  - "Pruebas de destrucción temprana, reentrada, múltiples predicados/tick, copias, pago único y guardado; ADR y migración sin renumerar IDs."
+
+### S2 — Mapa y transporte geográfico
+- **Status**: pending
+- **DependsOn**: [S1]
+- **Files**: `tools/map`, `tests/maps`, `docs/architecture/geographic-maps.md`
+- **Gate**: e2e
+- acceptance:
+  - "Rasterizar bbox/controles 300–400 con orientación calibrada, raster de relieve, footprint y puentes; no transformar una ruta que cruza agua en tierra ficticia."
+  - "Fixture real de carga/desembarco, barco perdido, ruta alternativa, cliff impasable; perfcaps de catalog.json."
+
+### S3 — Reserva militar y adaptación nativa
+- **Status**: pending
+- **DependsOn**: [S1, S2]
+- **Files**: `packages/aoe2-adapter`, `tools/python`, `tests/fixtures/native-history`
+- **Gate**: e2e
+- acceptance:
+  - "Implementar la IR acreditada: roster precolocado finito, tres movilizaciones una vez con avisos y preservación tras carga, sin economía oculta."
+  - "Round-trip y xs-check; bun run test:export; navegación y fases con evidencia de motor requieren s00001 y tester."
+
+### S4 — Plantillas de dos narradores y progreso
+- **Status**: pending
+- **DependsOn**: [S3]
+- **Files**: `templates/native`, `docs/qa/history-capabilities`
+- **Gate**: e2e
+- acceptance:
+  - "Native SequenceItems común→persona en intro/outro, captions EN/es, variantes progreso ausente/presente/ambas/desconocido, recomendación estática nunca bloqueante."
+  - "Probar en AoE2 con hash/build/perfil guardado/locales; registrar capacidad implementada frente a GAME VERIFIED."
+
+## acceptance
+
+- Operaciones de objectivePlan explícitas, entrega por entidad sin doble cobro, recurso total atómico, supervivientes 6/8, phase-clock relativo; reusar bring/resource/diplomacy cuando sean suficientes.
+- Pruebas de destrucción temprana, reentrada, múltiples predicados/tick, copias, pago único y guardado; ADR y migración sin renumerar IDs.
+- Rasterizar bbox/controles 300–400 con orientación calibrada, raster de relieve, footprint y puentes; no transformar una ruta que cruza agua en tierra ficticia.
+- Fixture real de carga/desembarco, barco perdido, ruta alternativa, cliff impasable; perfcaps de catalog.json.
+- Implementar la IR acreditada: roster precolocado finito, tres movilizaciones una vez con avisos y preservación tras carga, sin economía oculta.
+- Round-trip y xs-check; bun run test:export; navegación y fases con evidencia de motor requieren s00001 y tester.
+- Native SequenceItems común→persona en intro/outro, captions EN/es, variantes progreso ausente/presente/ambas/desconocido, recomendación estática nunca bloqueante.
+- Probar en AoE2 con hash/build/perfil guardado/locales; registrar capacidad implementada frente a GAME VERIFIED.
