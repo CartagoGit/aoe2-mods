@@ -29,7 +29,7 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
 
 ### S1 — Contratos de fases y transacciones idempotentes
 - **Status**: pending
-- **Files**: `packages/schemas`, `packages/gameplay-validation`, `packages/scenario-compiler`, `packages/aoe2-adapter/native-campaign.renderer.ts`, `tests/unit/phase-ledgers.test.ts`, `docs/decisions/0004-composed-objectives-profile-v2.md`, `docs/architecture/overview.md`
+- **Files**: `packages/schemas`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tests/unit/phase-ledgers.test.ts`
 - **Gate**: e2e
 - acceptance:
   - "Operaciones de objectivePlan explícitas, entrega por entidad sin doble cobro, recurso total atómico, supervivientes 6/8, phase-clock relativo; reusar bring/resource/diplomacy cuando sean suficientes."
