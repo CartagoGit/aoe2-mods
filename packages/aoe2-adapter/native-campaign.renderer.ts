@@ -24,6 +24,11 @@ export async function renderNativeCampaign(
   lock: StringLock,
   output: string,
 ) {
+  if (c.scenarios.some((scenario) => scenario.capabilityProfile)) {
+    throw new Error(
+      "capability-not-implemented: composed-world-ledger schemaVersion 2 is reference-only; native rendering is deferred to i00003/S3",
+    );
+  }
   const base = `campaigns/${c.id}/native`;
   const m = manifest.parse(
     await jsonFile(await sourceFile(root, `${base}/manifest.json`)),

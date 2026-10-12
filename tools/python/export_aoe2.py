@@ -62,6 +62,8 @@ def apply_condition(trigger, condition, units, factions, variables):
 
 
 def export_scenario(ir, out, version):
+    if ir.get('schemaVersion') == 2 or ir.get('capability') or ir.get('scenario', {}).get('capabilityProfile'):
+        raise ValueError('capability-not-implemented: composed-world-ledger schemaVersion 2 is reference-only; native Python export is deferred to i00003/S3')
     spec = ir['scenario']
     if spec['map']['width'] != spec['map']['height']:
         raise ValueError('Perfil AoE2: mapa cuadrado obligatorio')
@@ -258,6 +260,8 @@ def rge_binary():
 
 def build(ir_path, output):
     ir = json.loads(ir_path.read_text(encoding='utf8'))
+    if ir.get('schemaVersion') == 2 or any(s.get('schemaVersion') == 2 or s.get('capability') or s.get('scenario', {}).get('capabilityProfile') for s in ir.get('scenarios', [])):
+        raise ValueError('capability-not-implemented: composed-world-ledger schemaVersion 2 is reference-only; native Python export is deferred to i00003/S3')
     if ir['mode'] != 'aoe2-de':
         raise ValueError('Return of Rome pendiente de experimento, exportación rechazada')
     config = json.loads((ROOT/'config/engine.json').read_text())

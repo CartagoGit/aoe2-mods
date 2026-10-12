@@ -1,0 +1,17 @@
+# Composed objectives capability profile v2
+
+The campaign and scenario source envelope remains schema version 1. A scenario may opt in to the separately versioned `capabilityProfile` with `profile: "composed-world-ledger"` and `schemaVersion: 2`. This separates source-envelope compatibility from the semantics of the profile and its compiled intermediate representation (IR). Existing v1 sources, fixtures, localization IDs, and string IDs do not change.
+
+The v2 compiler validates the profile and emits a scenario IR marked `schemaVersion: 2` with a distinct `capability` payload. It preserves author-supplied identifiers. It does not lower compound predicates to the older v1 condition list. Legacy v1 scenarios continue to compile as v1.
+
+Native campaign rendering, the candidate/export path, and the direct Python exporter reject any v2 profile with `capability-not-implemented` until the native predicates and their save/load behavior are implemented and certified in i00003/S3. No entrypoint may silently remove the profile or approximate its all-required logic using legacy conditions.
+
+The zod contracts, structural validator, deterministic compiler output, and pure reducer in this slice are technical references for authoring and adversarial unit tests. They are not a claim of native engine support, a substitute for engine QA, or proof that game triggers implement these semantics.
+
+The reference state lives in `packages/gameplay-state`. The snapshot schema validates saved data; the factory creates and normalizes it; ledger helpers preserve unique deliveries; predicate evaluation reads that state; the reducer applies typed observations and transactions. Callers import the factory and reducer directly. There is no barrel or re-export facade. A token comparison verified that splitting the corrected implementation preserved all 34 declaration bodies, excluding export visibility and formatting.
+
+A snapshot contains a fingerprint of its objective/world/phase/reward/roster contract. Loading it against another contract fails explicitly. Arrival history records phase, entity and destination, allowing reception followed by withdrawal without granting a second delivery for the same entity. Exported ledgers retain the actual intersection of recipients. Current survival is evaluated from entity state; past observations cannot revive a destroyed entity. Derived records require collected input identities, and receipt-generated records require their original delivery.
+
+World observations are trusted, typed input to this reference model. A zone visit does not prove control or passability. Continuous control is checked until its declared later objective; a loss terminates the mission when the contract makes it irrecoverable. All terminal entry paths close optional objectives, and defeat takes priority. Ordered departure may refer to a specific non-departure `receiptRequirement` within its own objective; waiting for that objective's own latch without such a receipt is rejected as a cycle.
+
+Inventory ownership (`carriedRecords`) remains unsupported and is rejected by the structural compiler gate. Free resurrection has no action in this profile. A future recovery capability must specify eligible entities, finite replacement identities, costs, receipts and save/load semantics before it can be accepted. The protected recovery account alone does not implement replacement. These limitations remain pending infrastructure work; neither the reference model nor these tests certify the complete historical scenario contracts.
