@@ -2,10 +2,14 @@
 id: f00009
 title: "Autoria designada: The Shattered Oath"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 9386a406-9f49-4140-b53c-c7e034c50896
+last-correlation-id: 9386a406-9f49-4140-b53c-c7e034c50896
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:45.866Z
 ---
 
 # f00009 — Autoria designada: The Shattered Oath
