@@ -34,6 +34,8 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
 - acceptance:
   - "Operaciones de objectivePlan explícitas, entrega por entidad sin doble cobro, recurso total atómico, supervivientes 6/8, phase-clock relativo; reusar bring/resource/diplomacy cuando sean suficientes."
   - "Pruebas de destrucción temprana, reentrada, múltiples predicados/tick, copias, pago único y guardado; ADR y migración sin renumerar IDs."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S2 — Mapa y transporte geográfico
 - **Status**: pending
