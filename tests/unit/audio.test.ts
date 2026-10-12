@@ -8,7 +8,7 @@ import {
   produceAudio,
   RecordedVoiceProvider,
   subtitles,
-} from "../../packages/audio";
+} from "../../packages/audio/audio.pipeline";
 
 function wav() {
   const b = Buffer.alloc(44 + 32000);
@@ -124,7 +124,7 @@ test("SRT sincronizado", () => {
 });
 
 test("normalización de pico y silencio", async () => {
-  const { normalizePeak } = await import("../../packages/audio");
+  const { normalizePeak } = await import("../../packages/audio/audio.pipeline");
   const data = wav();
   data.writeInt16LE(1000, 44);
   const result = Buffer.from(normalizePeak(data, -6));

@@ -1,5 +1,5 @@
-import { duplicates, type Issue, issue } from "../core";
-import type { Campaign } from "../schemas";
+import { duplicates, type Issue, issue } from "../core/diagnostics.helper";
+import type { Campaign } from "../schemas/campaign.schema";
 export function validateHistory(c: Campaign): Issue[] {
   const issues: Issue[] = [];
   const sources = new Map(c.sources.map((s) => [s.id, s]));

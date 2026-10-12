@@ -3,8 +3,11 @@ import {
   allocate,
   sourceCatalog,
   validateCatalogs,
-} from "../../packages/localization";
-import { type Catalog, campaignSchema } from "../../packages/schemas";
+} from "../../packages/localization/localization.catalog";
+import {
+  type Catalog,
+  campaignSchema,
+} from "../../packages/schemas/campaign.schema";
 
 const english: Catalog = {
   locale: "en",

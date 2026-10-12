@@ -3,28 +3,29 @@ import { resolve } from "node:path";
 import {
   bindNativeTemplate,
   progressCondition,
-} from "../../packages/aoe2-adapter/templates";
+} from "../../packages/aoe2-adapter/native-template.adapter";
 import {
   compileCampaign,
   recommendation,
   validateCampaign,
-} from "../../packages/campaign-compiler";
-import { canonical, hash, within } from "../../packages/core";
-import { validateGameplay } from "../../packages/gameplay-validation";
+} from "../../packages/campaign-compiler/campaign.compiler";
+import { within } from "../../packages/core/filesystem.helper";
+import { canonical, hash } from "../../packages/core/serialization.helper";
+import { validateGameplay } from "../../packages/gameplay-validation/gameplay.validator";
 import {
   allocate,
   exportStrings,
   interpolate,
   validateCatalogs,
   validateLock,
-} from "../../packages/localization";
-import { campaignSchema } from "../../packages/schemas";
+} from "../../packages/localization/localization.catalog";
+import { campaignSchema } from "../../packages/schemas/campaign.schema";
 import {
   languagesSchema,
   loadCampaign,
   loadProject,
   releaseIssues,
-} from "../../tools/cli/project";
+} from "../../tools/cli/project.helper";
 
 const root = resolve(import.meta.dir, "../..");
 const campaign = await loadCampaign(root, "technical-pilot");

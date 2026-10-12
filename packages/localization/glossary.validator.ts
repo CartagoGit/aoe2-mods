@@ -1,5 +1,5 @@
-import { type Issue, issue } from "../core";
-import type { Catalog } from "../schemas";
+import { type Issue, issue } from "../core/diagnostics.helper";
+import type { Catalog } from "../schemas/campaign.schema";
 export type GlossaryTerm = {
   id: string;
   locales: Record<string, { preferred: string; forbidden: string[] }>;

@@ -1,34 +1,34 @@
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { z } from "zod";
-import { runAdapter } from "../../packages/aoe2-adapter";
-import { renderNativeCampaign } from "../../packages/aoe2-adapter/native";
-import { validateAssets } from "../../packages/assets";
-import { validateAudio } from "../../packages/audio";
+import { renderNativeCampaign } from "../../packages/aoe2-adapter/native-campaign.renderer";
+import { runAdapter } from "../../packages/aoe2-adapter/python-bridge.adapter";
+import { validateAssets } from "../../packages/assets/assets.validator";
+import { validateAudio } from "../../packages/audio/audio.pipeline";
 import {
   compileCampaign,
   validateCampaign,
-} from "../../packages/campaign-compiler";
+} from "../../packages/campaign-compiler/campaign.compiler";
+import { assertValid } from "../../packages/core/diagnostics.helper";
 import {
-  assertValid,
   atomicWrite,
-  hash,
   portableRelativePath,
   sourceFile,
   within,
   writeJson,
-} from "../../packages/core";
+} from "../../packages/core/filesystem.helper";
+import { hash } from "../../packages/core/serialization.helper";
 import {
   allocate,
   campaignKeys,
   exportStrings,
   sourceCatalog,
   validateCatalogs,
-} from "../../packages/localization";
-import { schemas } from "../../packages/schemas";
-import { candidateFingerprint } from "./candidate";
-import { exportVariants } from "./export-check";
-import { buildAudio } from "./media";
+} from "../../packages/localization/localization.catalog";
+import { schemas } from "../../packages/schemas/campaign.schema";
+import { buildAudio } from "./audio-build.helper";
+import { candidateFingerprint } from "./campaign-candidate.helper";
+import { exportVariants } from "./export-variants.helper";
 import {
   campaignFileSchema,
   docsCheck,
@@ -38,7 +38,7 @@ import {
   releaseIssues,
   requireProject,
   validateProject,
-} from "./project";
+} from "./project.helper";
 
 const root = resolve(import.meta.dir, "../..");
 async function build(

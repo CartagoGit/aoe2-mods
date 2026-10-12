@@ -1,37 +1,39 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
-import { pythonCommand } from "../../packages/aoe2-adapter";
+import { pythonCommand } from "../../packages/aoe2-adapter/python-bridge.adapter";
 import {
   validateAssetDestinations,
   validateAssets,
-} from "../../packages/assets";
-import { validateAudio } from "../../packages/audio";
-import { validateCampaign } from "../../packages/campaign-compiler";
+} from "../../packages/assets/assets.validator";
+import { validateAudio } from "../../packages/audio/audio.pipeline";
+import { validateCampaign } from "../../packages/campaign-compiler/campaign.compiler";
 import {
   assertValid,
-  destinationKey,
   duplicates,
   type Issue,
   issue,
+} from "../../packages/core/diagnostics.helper";
+import {
+  destinationKey,
   jsonFile,
   sourceFile,
-} from "../../packages/core";
+} from "../../packages/core/filesystem.helper";
+import {
+  type GlossaryTerm,
+  validateGlossary,
+} from "../../packages/localization/glossary.validator";
 import {
   campaignKeys,
   type StringLock,
   sourceCatalog,
   validateLock,
-} from "../../packages/localization";
-import {
-  type GlossaryTerm,
-  validateGlossary,
-} from "../../packages/localization/glossary";
+} from "../../packages/localization/localization.catalog";
 import {
   type Campaign,
   campaignSchema,
   scenarioSchema,
-} from "../../packages/schemas";
+} from "../../packages/schemas/campaign.schema";
 export const campaignFileSchema = campaignSchema
   .omit({ scenarios: true })
   .extend({ scenarioFiles: z.array(z.string().min(1)).min(1) });

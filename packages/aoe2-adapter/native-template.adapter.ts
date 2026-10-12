@@ -1,4 +1,4 @@
-import type { StringLock } from "../localization";
+import type { StringLock } from "../localization/localization.catalog";
 
 /** Solo transforma una plantilla nativa obtenida del editor/juego y documentada; no inventa su envoltura. */
 export function bindNativeTemplate(

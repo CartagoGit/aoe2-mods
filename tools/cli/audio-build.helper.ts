@@ -9,16 +9,16 @@ import {
   RecordedVoiceProvider,
   subtitles,
   type VoiceProvider,
-} from "../../packages/audio";
+} from "../../packages/audio/audio.pipeline";
+import { duplicates } from "../../packages/core/diagnostics.helper";
 import {
   atomicWrite,
-  duplicates,
-  hash,
   jsonFile,
   sourceFile,
   writeJson,
-} from "../../packages/core";
-import type { Campaign } from "../../packages/schemas";
+} from "../../packages/core/filesystem.helper";
+import { hash } from "../../packages/core/serialization.helper";
+import type { Campaign } from "../../packages/schemas/campaign.schema";
 
 const providerSchema = z
   .strictObject({
