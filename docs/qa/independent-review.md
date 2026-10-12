@@ -30,3 +30,9 @@ La instancia revisora confirmó conformidad con 2843c0df707df45e633f22d5fc87e04c
 El host creó la instancia con fork_turns=none y model=gpt-6.1-sol explícitos. DelendAI aceptó esa identidad y creó su unidad review/batch-all. Comprobó e4f5fc9bacd56f7d7197b9b4c711c985b138a911 con validate=0, 41/41 pruebas,124 expectativas, tres round-trips, schemas/i18n/assets/audio y los 20 slices: sin hallazgos bloqueantes.
 
 El veredicto oficial fue rechazado porque evidence.commitHash e4f5fc9 no pertenece todavía a develop: el runtime exige aprobar lo integrado. El estado real sigue in_review, reviewer=null, rounds=[]. La identidad distinta ya está resuelta; queda declarar el gate mediante bootstrap legítimo, integrar oficialmente y volver a registrar approve del hash integrado. No se ha emitido aprobación formal.
+
+## Resultado final
+
+La restricción de identidad se resolvió con el override real gpt-6.1-sol autorizado. El bootstrap limitado del gate fue autorizado por el propietario e integrado. Tras publicación oficial de la fuente en69cf3e72ecdfb952d0cc7998790544cb73305068, DelendAI aceptó approve de GPT-6.1 para i00001/S1: done,implementer=gpt-6,reviewer=gpt-6.1-sol,quorum1. Veredicto6d17864eabde271ee5255dd9d2a618478a3bbdf1; publicado oficialmente en5ae5d2c47902ebb63617ccaf0ddab066443030f2 con gate pasado. La unidad review quedó eliminada mediante el workflow oficial; la evidencia está en develop.
+
+Al cerrar la propuesta se comprobó que Files exige rutas literales y que una propuesta in-progress pasa por review antes de done. Se corrigieron los ámbitos, se preservan snapshots de staging hasta el cierre y se ejecutó la validación journalled de DelendAI. i00001 cerrada y f00001 ready mediante sus herramientas oficiales. Los apartados anteriores registran los rechazos iniciales, ya resueltos; no describen bloqueos vigentes. GAME VERIFIED y PRODUCTION READY siguen pendientes.

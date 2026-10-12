@@ -2,6 +2,8 @@
 
 Estos IDs fueron creados por el servidor el 2026-10-12. Son referencias observadas, no IDs que el agente deba fabricar. Recupera sus estados, rutas y dependencias actuales de DelendAI; las transiciones oficiales pueden cambiar la ubicación.
 
+Estado de entrega: i00001 done, revisada formalmente por gpt-6.1-sol e integrada. f00001 ready; comenzar únicamente S1. s00001/f00002/f00003 siguen blocked por pruebas de motor y dependencias de contenido. BASE READY no supone GAME VERIFIED.
+
 | Propuesta observada | Responsable | Slices y dependencia |
 |---|---|---|
 | i00001 Fábrica de campañas | Arquitecto | S1 infraestructura, auditoría, revisión e integración |
