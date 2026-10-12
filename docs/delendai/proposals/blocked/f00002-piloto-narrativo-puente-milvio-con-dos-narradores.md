@@ -2,10 +2,14 @@
 id: f00002
 title: "Piloto narrativo: Puente Milvio con dos narradores"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-factory
 date: 2026-10-12
+last-transition-id: 01519bcf-cfbd-44fa-8e80-a06c793cacaa
+last-correlation-id: 01519bcf-cfbd-44fa-8e80-a06c793cacaa
+last-transition-from: ready
+last-transition-at: 2026-10-12T04:20:24.321Z
 ---
 
 # f00002 — Piloto narrativo: Puente Milvio con dos narradores
