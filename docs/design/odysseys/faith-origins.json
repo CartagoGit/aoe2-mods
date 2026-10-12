@@ -372,5 +372,1195 @@
       }
     ]
   },
-  "episodes": []
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "Embers of the Covenant",
+      "es-ES": "Las brasas de la alianza"
+    },
+    "publicId": "CDF-C00",
+    "internalName": "CDF_FaithOrigins",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 30,
+    "narratorId": "miriam-archive",
+    "personaLens": {
+      "en": "Comparison, gaps, household memory",
+      "es-ES": "Comparación, huecos y memoria doméstica"
+    },
+    "deliveryTone": {
+      "en": "quiet precision, reluctant hope",
+      "es-ES": "precisión serena, esperanza cauta"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "miriam-archive",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-roads-of-antioch",
+      "02-after-the-siege",
+      "03-the-governors-question",
+      "04-a-different-dawn"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 30,
+    "selectionNotes": [
+      "The two Jerusalem meeting candidates 0/30 are consolidated; their identification remains disputed.",
+      "The disputed imprisonment-letter candidate 7 is contextual evidence, not an extra mission.",
+      "Repeated copying families are separated by civic rescue, provisioning, production, legal procedure and hospitality; complete gameplay contracts remain pending.",
+      "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
+      "Milano313is a local fictional archive setting; do not claim every prior persecution took place inMilan."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "Names Before the Ashes",
+        "es-ES": "Nombres antes de las cenizas"
+      },
+      "historicalYearBand": [
+        27,
+        50
+      ],
+      "dramaticPurpose": "De las fuentes sobre Jesús a comunidades diversas, sin tratar relatos de fe como hechos sobrenaturales comprobados.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-administrative-records-caesarea",
+        "02-civilian-refuge-jerusalem",
+        "03-shared-provision-jerusalem",
+        "04-testimony-relay-damascus",
+        "05-witness-comparison-jerusalem",
+        "01-roads-of-antioch",
+        "07-household-relocation-rome-ostia",
+        "08-delegate-logistics-jerusalem"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "Across the Many Roads",
+        "es-ES": "Por tantos caminos"
+      },
+      "historicalYearBand": [
+        50,
+        64
+      ],
+      "dramaticPurpose": "Cartas, trabajo y redes urbanas; las disputas de pertenencia no se resuelven mediante conquistar una facción.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "09-district-production-corinth",
+        "10-copy-and-relay-corinth",
+        "11-distributed-preservation-ephesus",
+        "12-bounded-community-aid-ephesus",
+        "13-consignment-and-correspondence-corinth",
+        "14-administrative-intrigue-caesarea",
+        "15-evacuation-and-recovery-rome-ostia"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Under a Broken Roof",
+        "es-ES": "Bajo un techo quebrado"
+      },
+      "historicalYearBand": [
+        65,
+        150
+      ],
+      "dramaticPurpose": "Destrucción del Templo y transmisión diversa; no presentar judaísmo y cristianismo como bloques ya uniformes.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "16-comparative-copying-antioch",
+        "02-after-the-siege",
+        "18-parallel-archive-logistics-antioch",
+        "19-hospitality-network-antioch",
+        "20-reconciliation-deliveries-rome-ostia",
+        "03-the-governors-question"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "Voices Before the Tribunal",
+        "es-ES": "Voces ante el tribunal"
+      },
+      "historicalYearBand": [
+        150,
+        203
+      ],
+      "dramaticPurpose": "Apologías, auxilio y medidas represivas locales; evitar el mito de persecución continua uniforme.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "22-reading-and-relief-rome-ostia",
+        "23-petition-escort-sardes",
+        "24-witness-and-evacuation-lyon",
+        "25-archive-comparison-lyon",
+        "26-legal-record-network-carthage",
+        "27-household-aid-and-memory-carthage"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Archive and the Dawn",
+        "es-ES": "El archivo y el alba"
+      },
+      "historicalYearBand": [
+        249,
+        313
+      ],
+      "dramaticPurpose": "El mundo vivido por Miriam conecta copias heredadas con persecución y restitución; el cierre conduce a la bifurcación de perspectiva.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "28-certificate-and-refuge-egypt-middle-nile",
+        "29-bounded-evacuation-carthage",
+        "04-a-different-dawn"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [],
+    "nextRoutes": [
+      {
+        "id": "christian-perspective",
+        "key": "progress.faith-origins.christian-perspective",
+        "next": "imperial-church"
+      },
+      {
+        "id": "jewish-perspective",
+        "key": "progress.faith-origins.jewish-perspective",
+        "next": "jewish-tradition"
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-administrative-records-caesarea",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "Stone Beneath the Prefect's Name",
+        "es-ES": "Piedra bajo el nombre del prefecto"
+      },
+      "date": "27–36 CE",
+      "geographyId": "caesarea",
+      "coreMechanic": "administrative-records",
+      "historicalSelection": {
+        "corpusEventId": 24,
+        "sourceUrl": "https://cojs.org/pontius_pilate-s_tiberium_inscription-_26-36_ce/",
+        "passage": "Inscripción del Tiberieum; ficha del Center for Online Judaic Studies, procedencia Cesarea y cargo de Pilato.",
+        "qualification": "La piedra está fragmentada y reutilizada; prueba el cargo y actividad edilicia, no el proceso de Jesús. El rango 27–36 recorta el mandato convencional 26–36 al periodo de campaña.",
+        "candidateEvent": "La inscripción de Cesarea documenta a Pontius Pilatus con el título de prefecto de Judea durante su administración.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "When the City Held Its Breath",
+        "es-ES": "Cuando la ciudad contuvo el aliento"
+      },
+      "date": "c. 30–33 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "civilian-refuge",
+      "historicalSelection": {
+        "corpusEventId": 25,
+        "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+        "passage": "Tacitus, Annals 15.44; Cambridge, ‘Dating the Death of Jesus’ (discute el 30 preferido por muchos y la imposibilidad de recuperar fecha exacta): https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+        "qualification": "Tacito escribe a comienzos del siglo II, no es testigo. El rango 30–33 es estimación moderna; no incorporar resurrección o milagros como hechos verificables.",
+        "candidateEvent": "Fuentes cristianas sitúan la ejecución de Jesús bajo Pilato; Tacito, décadas después, también atribuye su ejecución a Pilato bajo Tiberio.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-shared-provision-jerusalem",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "A Table in Jerusalem",
+        "es-ES": "Una mesa en Jerusalén"
+      },
+      "date": "c. 30–40 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "shared-provision",
+      "historicalSelection": {
+        "corpusEventId": 26,
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NIV%3BNRSVUE%3BKJV%3BNKJV",
+        "passage": "Pablo, Gálatas 1:18–19; su visita ocurrió ‘después de tres años’, según su propio cómputo.",
+        "qualification": "La carta es testimonio retrospectivo de Pablo. No permite reconstruir tamaño, estructura o uniformidad de la comunidad.",
+        "candidateEvent": "Tras la muerte de Jesús, un grupo de seguidores permanece en Jerusalén; Pablo más tarde recuerda allí a Cefas y a Santiago, hermano del Señor.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-testimony-relay-damascus",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "The Road He Remembered",
+        "es-ES": "El camino que recordaba"
+      },
+      "date": "c. 33–36 CE",
+      "geographyId": "damascus",
+      "coreMechanic": "testimony-relay",
+      "historicalSelection": {
+        "corpusEventId": 27,
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Galatians+1&version=NIV",
+        "passage": "Pablo, Gálatas 1:13–17; fecha aproximada contextualizada por Cambridge, Dating the Death of Jesus, y la cronología paulina anclada en Galión.",
+        "qualification": "‘Revelación’ es la descripción autobiográfica de Pablo, no una afirmación historiográfica sobre una aparición sobrenatural. El año exacto de su cambio no puede fijarse.",
+        "candidateEvent": "Pablo recuerda que pasó de perseguir a los grupos seguidores de Jesús a proclamarlos; describe su cambio como una revelación recibida, en sus propios términos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "selectedClaim": {
+          "en": "Paul describes a revelation of Christ and a commission to proclaim him among the Gentiles; his account does not supply a complete itinerary.",
+          "es-ES": "Pablo describe una revelación de Cristo y el encargo de anunciarlo entre los gentiles; su relato no ofrece un itinerario completo."
+        }
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-witness-comparison-jerusalem",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "Fifteen Days, Many Voices",
+        "es-ES": "Quince días, muchas voces"
+      },
+      "date": "c. 36–40 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "witness-comparison",
+      "historicalSelection": {
+        "corpusEventId": 28,
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NIV%3BNRSVUE%3BKJV%3BNKJV",
+        "passage": "Pablo, Gálatas 1:18–19; Yale Bible Study, Paul’s chronology anchored by the Delphi/Gallio inscription: https://yalebiblestudy.org/courses/acts-of-the-apostles/lessons/co-operative-ministry-study-guide/",
+        "qualification": "El intervalo ‘tres años’ admite cómputos inclusivos distintos y la fecha de la llamada de Pablo es incierta. Gálatas es una carta polémica escrita para defender su autoridad.",
+        "candidateEvent": "Pablo visita Jerusalén y se entrevista con Cefas y Santiago; afirma que permaneció allí quince días.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "01-roads-of-antioch",
+      "order": 6,
+      "actId": "act-1",
+      "title": {
+        "en": "Letters on the Orontes",
+        "es-ES": "Cartas sobre el Orontes"
+      },
+      "date": "c. 40–50 CE; local courier reconstruction",
+      "geographyId": "antioch",
+      "coreMechanic": "network-escort",
+      "historicalSelection": {
+        "corpusEventId": 29,
+        "sourceUrl": "https://www.biblegateway.com/passage/?search=Galatians+2&version=NIV",
+        "passage": "Pablo, Gálatas 2:11–14; Yale Divinity School, commentary on Galatians 1–2: https://divinity.yale.edu/sites/default/files/galatians-1-2.pdf",
+        "qualification": "Sólo poseemos aquí la narración de Pablo; no sabemos el desenlace ni podemos igualar sin argumento este incidente con la reunión de Hechos 15.",
+        "candidateEvent": "Pablo describe comunidades mixtas y una disputa de mesa en Antioquía: Cefas deja de comer con gentiles cuando llegan enviados relacionados con Santiago.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "07-household-relocation-rome-ostia",
+      "order": 7,
+      "actId": "act-1",
+      "title": {
+        "en": "The Doors That Closed",
+        "es-ES": "Las puertas que se cerraron"
+      },
+      "date": "c. 49 CE",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "household-relocation",
+      "historicalSelection": {
+        "corpusEventId": 31,
+        "sourceUrl": "https://lexundria.com/suet_cl/25.4/r",
+        "passage": "Suetonius, Claudius 25.4; Cambridge Companion to the Age of Nero contextualiza probablemente ca. 49: https://doi.org/10.1017/9781107280489.016",
+        "qualification": "Suetonio no explica quién fue Chrestus; la identificación con Christus/Jesús es una hipótesis, no un dato explícito. La fecha exacta de la expulsión se discute.",
+        "candidateEvent": "Suetonio informa que Claudio expulsó de Roma a judíos implicados en disturbios ‘impulsore Chresto’; el pasaje puede reflejar conflicto dentro de comunidades judías y cristianas incipientes.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "08-delegate-logistics-jerusalem",
+      "order": 8,
+      "actId": "act-1",
+      "title": {
+        "en": "A Place for the Stranger",
+        "es-ES": "Un lugar para el extranjero"
+      },
+      "date": "c. 49–50 CE; identification of meetings disputed",
+      "geographyId": "jerusalem",
+      "coreMechanic": "delegate-logistics",
+      "historicalSelection": {
+        "corpusEventId": 0,
+        "sourceUrl": "https://academic.oup.com/edited-volume/37088/chapter/323184625",
+        "passage": "Oxford Handbook, Chronology; Hechos 15 / Gálatas 2",
+        "qualification": "La relación entre las versiones de Hechos y Pablo es debatida.",
+        "candidateEvent": "La asamblea de Jerusalén discute la admisión de gentiles y la circuncisión.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "09-district-production-corinth",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "The Weaver's Harbour",
+        "es-ES": "El puerto del tejedor"
+      },
+      "date": "c. 50–52 CE",
+      "geographyId": "corinth",
+      "coreMechanic": "district-production",
+      "historicalSelection": {
+        "corpusEventId": 1,
+        "sourceUrl": "https://dcc.dickinson.edu/greek-new-testament/acts/18",
+        "passage": "Acts 18; ancla cronológica: inscripción de Galión en Delfos",
+        "qualification": "La fecha depende de reconstrucción; Hechos es narrativa teológica.",
+        "candidateEvent": "Pablo establece una comunidad en Corinto y trabaja con Prisca y Aquila.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-copy-and-relay-corinth",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "Before the First Letter Faded",
+        "es-ES": "Antes de que se borrase la primera carta"
+      },
+      "date": "c. 50–51 CE",
+      "geographyId": "corinth",
+      "coreMechanic": "copy-and-relay",
+      "historicalSelection": {
+        "corpusEventId": 2,
+        "sourceUrl": "https://academic.oup.com/book/3544",
+        "passage": "Oxford, New Testament Christianity in the Roman World, abstract consulted",
+        "qualification": "Ciudad de composición probable, no segura.",
+        "candidateEvent": "Pablo escribe 1 Tesalonicenses, uno de los textos cristianos conservados más tempranos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-distributed-preservation-ephesus",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "The Argument Across the Water",
+        "es-ES": "La disputa al otro lado del agua"
+      },
+      "date": "c. 54–55 CE; writing location uncertain",
+      "geographyId": "ephesus",
+      "coreMechanic": "distributed-preservation",
+      "historicalSelection": {
+        "corpusEventId": 3,
+        "sourceUrl": "https://www.bibleodyssey.org/articles/galatians/",
+        "passage": "Society of Biblical Literature, Galatians overview",
+        "qualification": "Lugar y fecha dependen de la hipótesis sobre destinatarios.",
+        "candidateEvent": "La carta a los Gálatas evidencia disputa sobre identidad, ley y pertenencia gentil.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "12-bounded-community-aid-ephesus",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "Many Hands in One House",
+        "es-ES": "Muchas manos en una casa"
+      },
+      "date": "c. 54–55 CE",
+      "geographyId": "ephesus",
+      "coreMechanic": "bounded-community-aid",
+      "historicalSelection": {
+        "corpusEventId": 4,
+        "sourceUrl": "https://academic.oup.com/book/3544",
+        "passage": "Oxford abstract; 1 Corinthians 1–16",
+        "qualification": "Fecha/lugar convencionales, discutibles.",
+        "candidateEvent": "Pablo escribe 1 Corintios y responde a conflictos y prácticas de una comunidad urbana diversa.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "13-consignment-and-correspondence-corinth",
+      "order": 13,
+      "actId": "act-2",
+      "title": {
+        "en": "Words for a Distant City",
+        "es-ES": "Palabras para una ciudad lejana"
+      },
+      "date": "c. 56–58 CE",
+      "geographyId": "corinth",
+      "coreMechanic": "consignment-and-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 5,
+        "sourceUrl": "https://academic.oup.com/book/3544",
+        "passage": "Oxford abstract; Romans 16",
+        "qualification": "La fecha y ubicación se reconstruyen por indicios internos.",
+        "candidateEvent": "Pablo escribe Romanos y describe una comunidad que no fundó.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "14-administrative-intrigue-caesarea",
+      "order": 14,
+      "actId": "act-2",
+      "title": {
+        "en": "The Appeal Beside the Sea",
+        "es-ES": "La apelación junto al mar"
+      },
+      "date": "c. 57–60 CE",
+      "geographyId": "caesarea",
+      "coreMechanic": "administrative-intrigue",
+      "historicalSelection": {
+        "corpusEventId": 6,
+        "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Acts+21",
+        "passage": "Acts 21–26, texto antiguo consultable",
+        "qualification": "Relato de Hechos no equivale a registro judicial independiente.",
+        "candidateEvent": "Pablo es detenido tras tensiones en Jerusalén y apela al emperador según Hechos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "auditedSourcePassages": [
+          {
+            "url": "https://www.biblegateway.com/passage/?search=Acts%2025%3A10-12&version=NRSVUE",
+            "passage": "Acts 25:10–12, appeal to Caesar; Acts 21–26 supplies the narrative setting",
+            "coverage": "named primary-text passage; chronology remains approximate",
+            "caution": "Acts is a literary narrative composed later, not a verbatim court transcript; local courier story is fiction."
+          }
+        ],
+        "sourceCorrection": "Use auditedSourcePassages for selected dossier; original URL remains only as candidate provenance."
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-evacuation-and-recovery-rome-ostia",
+      "order": 15,
+      "actId": "act-2",
+      "title": {
+        "en": "Ash over the Seven Hills",
+        "es-ES": "Ceniza sobre las siete colinas"
+      },
+      "date": "64 CE",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "evacuation-and-recovery",
+      "historicalSelection": {
+        "corpusEventId": 8,
+        "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+        "passage": "Tacitus, Annals 15.44",
+        "qualification": "Testimonio romano retrospectivo y hostil; no persecución imperial general.",
+        "candidateEvent": "Tras el incendio de Roma, Nerón castiga a cristianos en la ciudad, según Tácito.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "16-comparative-copying-antioch",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "A Story in the Shadow of War",
+        "es-ES": "Un relato a la sombra de la guerra"
+      },
+      "date": "c. 65–70 CE; authorial location not known",
+      "geographyId": "antioch",
+      "coreMechanic": "comparative-copying",
+      "historicalSelection": {
+        "corpusEventId": 9,
+        "sourceUrl": "https://academic.oup.com/book/3544",
+        "passage": "Oxford abstract; Gospel of Mark",
+        "qualification": "Datación y lugar siguen debatidos.",
+        "candidateEvent": "Marcos transmite una narración sobre Jesús en contexto de guerra y crisis del Segundo Templo.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-after-the-siege",
+      "order": 17,
+      "actId": "act-3",
+      "title": {
+        "en": "The Names Beyond the Siege",
+        "es-ES": "Los nombres más allá del asedio"
+      },
+      "date": "70 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "civilian-evacuation",
+      "historicalSelection": {
+        "corpusEventId": 10,
+        "sourceUrl": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+        "passage": "Josephus, Jewish War 6; síntesis de Livius",
+        "qualification": "Josefo participó en la guerra y escribe bajo patronazgo romano.",
+        "candidateEvent": "Las legiones romanas destruyen el Templo de Jerusalén tras la revuelta.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 10,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/josephus/war-6.html",
+          "passage": "Josephus, Jewish War VI, especially §§4–5 (temple fire and fall); Book VI chronology",
+          "supportedClaim": "Josephus narrates Roman capture/destruction of the Temple in Jerusalem in 70, including the 10th of Lous/Av as the day the fire began in his version.",
+          "problems": "The exact accidental/command chain behind the fire is disputed in the narrative itself; Josephus is a participant writing under Flavian patronage and frames culpability. Do not narrate his theological causation as fact.",
+          "coverageRead": "Opened translation; read Book VI siege/fire passage and editorial notes. Translation is Whiston, not Greek apparatus.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "18-parallel-archive-logistics-antioch",
+      "order": 18,
+      "actId": "act-3",
+      "title": {
+        "en": "Two Voices, Unfinished Margins",
+        "es-ES": "Dos voces, márgenes sin terminar"
+      },
+      "date": "c. 80–90 CE; location is fictional local circulation, not authorial provenance",
+      "geographyId": "antioch",
+      "coreMechanic": "parallel-archive-logistics",
+      "historicalSelection": {
+        "corpusEventId": 11,
+        "sourceUrl": "https://academic.oup.com/book/3544",
+        "passage": "Oxford abstract; evangelios",
+        "qualification": "No se fija el lugar como hecho.",
+        "candidateEvent": "Mateo y Lucas reelaboran tradiciones sobre Jesús para comunidades distintas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-hospitality-network-antioch",
+      "order": 19,
+      "actId": "act-3",
+      "title": {
+        "en": "The House Before the Road",
+        "es-ES": "La casa antes del camino"
+      },
+      "date": "c. 90–100 CE; Syrian provenance proposed",
+      "geographyId": "antioch",
+      "coreMechanic": "hospitality-network",
+      "historicalSelection": {
+        "corpusEventId": 12,
+        "sourceUrl": "https://www.earlychristianwritings.com/didache.html",
+        "passage": "Didache, texto y notas de datación",
+        "qualification": "Fecha y lugar amplios; texto compuesto.",
+        "candidateEvent": "La Didaché conserva instrucción comunitaria, ética, bautismo y organización itinerante.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "20-reconciliation-deliveries-rome-ostia",
+      "order": 20,
+      "actId": "act-3",
+      "title": {
+        "en": "A Letter Across the Divide",
+        "es-ES": "Una carta sobre la división"
+      },
+      "date": "c. 95 CE",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "reconciliation-deliveries",
+      "historicalSelection": {
+        "corpusEventId": 13,
+        "sourceUrl": "https://www.earlychristianwritings.com/1clement.html",
+        "passage": "1 Clement, texto",
+        "qualification": "La datación alrededor de 96 es aproximada.",
+        "candidateEvent": "1 Clemente interviene en conflicto de liderazgo en Corinto desde la iglesia de Roma.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-the-governors-question",
+      "order": 21,
+      "actId": "act-3",
+      "title": {
+        "en": "The Governor's Question",
+        "es-ES": "La pregunta del gobernador"
+      },
+      "date": "c. 112 CE",
+      "geographyId": "bithynia",
+      "coreMechanic": "administrative-intrigue",
+      "historicalSelection": {
+        "corpusEventId": 14,
+        "sourceUrl": "https://faculty.georgetown.edu/jod/texts/pliny.html",
+        "passage": "Pliny, Letters 10.96–97",
+        "qualification": "Correspondencia provincial; no prueba política uniforme.",
+        "candidateEvent": "Plinio consulta a Trajano sobre juicios a cristianos y describe reuniones antes del alba.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "22-reading-and-relief-rome-ostia",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "Bread Read Aloud",
+        "es-ES": "Pan leído en voz alta"
+      },
+      "date": "c. 150–160 CE",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "reading-and-relief",
+      "historicalSelection": {
+        "corpusEventId": 15,
+        "sourceUrl": "https://www.newadvent.org/fathers/0126.htm",
+        "passage": "Justin, First Apology 65–67",
+        "qualification": "Apología normativa, no censo de práctica.",
+        "candidateEvent": "Justino enseña y escribe defensas cristianas en Roma; describe lectura y colectas dominicales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-petition-escort-sardes",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "A Petition from Sardes",
+        "es-ES": "Una petición desde Sardes"
+      },
+      "date": "c. 170–180 CE",
+      "geographyId": "sardes",
+      "coreMechanic": "petition-escort",
+      "historicalSelection": {
+        "corpusEventId": 16,
+        "sourceUrl": "https://www.earlychristianwritings.com/melito.html",
+        "passage": "Melito, Apology fragments",
+        "qualification": "Fragmentario; fecha aproximada.",
+        "candidateEvent": "Melitón de Sardes denuncia medidas contra cristianos ante Marco Aurelio.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-witness-and-evacuation-lyon",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "The River Kept Their Names",
+        "es-ES": "El río conservó sus nombres"
+      },
+      "date": "177 CE",
+      "geographyId": "lyon",
+      "coreMechanic": "witness-and-evacuation",
+      "historicalSelection": {
+        "corpusEventId": 17,
+        "sourceUrl": "https://www.newadvent.org/fathers/250106.htm",
+        "passage": "Eusebius, HE 5.1",
+        "qualification": "Relato martirial y memoria comunitaria; escala local.",
+        "candidateEvent": "Violencia y procesos contra cristianos de Lyon y Vienne quedan en carta preservada por Eusebio.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "auditedSourcePassages": [
+          {
+            "url": "https://www.newadvent.org/fathers/250105.htm",
+            "passage": "Eusebius, Ecclesiastical History V.1, transmitted letter of the communities of Lyon and Vienne",
+            "coverage": "Book V and chapter I consulted",
+            "caution": "The letter is preserved in a later ecclesiastical history; theological explanations and miracles are attributed to the source, not objective causation."
+          }
+        ],
+        "sourceCorrection": "Use auditedSourcePassages for selected dossier; original URL remains only as candidate provenance."
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "25-archive-comparison-lyon",
+      "order": 25,
+      "actId": "act-4",
+      "title": {
+        "en": "Voices Against the Fragments",
+        "es-ES": "Voces frente a los fragmentos"
+      },
+      "date": "c. 180–200 CE",
+      "geographyId": "lyon",
+      "coreMechanic": "archive-comparison",
+      "historicalSelection": {
+        "corpusEventId": 18,
+        "sourceUrl": "https://www.newadvent.org/fathers/0103.htm",
+        "passage": "Irenaeus, Against Heresies",
+        "qualification": "Polemista contra grupos rivales.",
+        "candidateEvent": "Ireneo compone Contra las herejías y describe redes episcopales y debates sobre tradición.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-legal-record-network-carthage",
+      "order": 26,
+      "actId": "act-4",
+      "title": {
+        "en": "The Advocate's Harbour",
+        "es-ES": "El puerto del defensor"
+      },
+      "date": "c. 197 CE",
+      "geographyId": "carthage",
+      "coreMechanic": "legal-record-network",
+      "historicalSelection": {
+        "corpusEventId": 19,
+        "sourceUrl": "https://tertullian.org/works/apologeticum.htm",
+        "passage": "Apologeticum, prólogo y capítulos 39–42",
+        "qualification": "Defensa retórica, no descripción neutral.",
+        "candidateEvent": "Tertuliano escribe una Apología que denuncia condenas sin investigación y expone prácticas comunitarias.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-household-aid-and-memory-carthage",
+      "order": 27,
+      "actId": "act-4",
+      "title": {
+        "en": "What the Record Cannot Hold",
+        "es-ES": "Lo que el registro no puede guardar"
+      },
+      "date": "203 CE",
+      "geographyId": "carthage",
+      "coreMechanic": "household-aid-and-memory",
+      "historicalSelection": {
+        "corpusEventId": 20,
+        "sourceUrl": "https://www.earlychristianwritings.com/text/perpetua.html",
+        "passage": "Passion of Perpetua and Felicity",
+        "qualification": "Texto compuesto; fecha cercana al evento, autoría discutida.",
+        "candidateEvent": "Perpetua y Felicidad son ejecutadas; su pasión conserva memoria de mujeres cristianas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-certificate-and-refuge-egypt-middle-nile",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "The Seal on the Certificate",
+        "es-ES": "El sello del certificado"
+      },
+      "date": "249–251 CE",
+      "geographyId": "egypt-middle-nile",
+      "coreMechanic": "certificate-and-refuge",
+      "historicalSelection": {
+        "corpusEventId": 21,
+        "sourceUrl": "https://www.papyrology.ox.ac.uk/POxy/",
+        "passage": "P.Oxy. 1464 y otros libelli",
+        "qualification": "La aplicación varió localmente; papiros son testimonio regional.",
+        "candidateEvent": "Decio exige sacrificios públicos; certificados egipcios documentan cumplimiento individual.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-bounded-evacuation-carthage",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "A Harbour Under Orders",
+        "es-ES": "Un puerto bajo órdenes"
+      },
+      "date": "257–258 CE",
+      "geographyId": "carthage",
+      "coreMechanic": "bounded-evacuation",
+      "historicalSelection": {
+        "corpusEventId": 22,
+        "sourceUrl": "https://www.newadvent.org/fathers/050602.htm",
+        "passage": "Cyprian, Epistles 80–81",
+        "qualification": "Cartas cristianas comprometidas; alcance regional.",
+        "candidateEvent": "Valeriano ordena medidas contra clero y élites cristianas; Cipriano muere en Cartago.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "auditedSourcePassages": [
+          {
+            "url": "https://www.newadvent.org/fathers/050681.htm",
+            "passage": "Cyprian, Epistle 81 in this edition (80 in some editions), to Successus, §§1–2",
+            "coverage": "complete short letter consulted",
+            "caution": "Reports the Valerian rescript and Roman executions; does not itself document Cyprian’s own execution."
+          },
+          {
+            "url": "https://www.newadvent.org/fathers/0505.htm",
+            "passage": "Pontius, Life and Passion of Cyprian, §§15–18",
+            "coverage": "named arrest, sentence and execution sections consulted",
+            "caution": "Near-contemporary hagiographic witness tradition; visions, divine causes and exemplary characterization remain attributed, not agnostic-narrator facts."
+          }
+        ],
+        "sourceCorrection": "Use auditedSourcePassages for selected dossier; original URL remains only as candidate provenance."
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "inherited letters and later sources",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-a-different-dawn",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "A Different Dawn",
+        "es-ES": "Un alba distinta"
+      },
+      "date": "303–313 CE; Milan local archive is dramatization, persecution and restitution vary regionally",
+      "geographyId": "milan",
+      "coreMechanic": "supply-and-testimony",
+      "historicalSelection": {
+        "corpusEventId": 23,
+        "sourceUrl": "https://www.newadvent.org/fathers/250108.htm",
+        "passage": "Eusebius, HE 8",
+        "qualification": "Eusebio escribe como superviviente; intensidad diversa por región.",
+        "candidateEvent": "La Gran Persecución destruye iglesias y textos y exige sacrificios, con aplicación desigual.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units",
+      "knowledgeBasis": {
+        "speaker": "miriam-archive",
+        "mode": "fictional personal local experience plus sourced reports from other regions",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    }
+  ]
 }

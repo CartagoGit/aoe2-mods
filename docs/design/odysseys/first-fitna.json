@@ -464,5 +464,1098 @@
       }
     ]
   },
-  "episodes": []
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "The Shattered Oath",
+      "es-ES": "El juramento quebrado"
+    },
+    "publicId": "CDF-I01",
+    "internalName": "CDF_FirstFitna",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 28,
+    "narratorId": "farid-field-medic",
+    "personaLens": {
+      "en": "Care, names of the hurt and contradictory dispatches",
+      "es-ES": "Cuidados, nombres de heridos y despachos contradictorios"
+    },
+    "deliveryTone": {
+      "en": "contained fatigue, distrust of slogans",
+      "es-ES": "cansancio contenido, desconfianza de consignas"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "farid-field-medic",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-news-from-medina",
+      "02-between-the-camps",
+      "03-water-and-words",
+      "04-the-canal-road",
+      "05-two-archives"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 28,
+    "selectionNotes": [
+      "Act counts are subordinate to source chronology and are not filler quotas.",
+      "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
+      "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
+      "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "Dispatches Before the Storm",
+        "es-ES": "Despachos antes de la tormenta"
+      },
+      "historicalYearBand": [
+        656,
+        656
+      ],
+      "dramaticPurpose": "Oposición, asesinato y reconocimiento disputado; Farid separa relatos de facción y cuidados reales ficticios.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-news-from-medina",
+        "02-civilian-refuge-and-record-preservation-medina",
+        "03-administrative-transition-medina",
+        "04-disputed-correspondence-mecca",
+        "05-rival-petition-and-witness-records-medina"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "The City Between the Camps",
+        "es-ES": "La ciudad entre los campamentos"
+      },
+      "historicalYearBand": [
+        656,
+        657
+      ],
+      "dramaticPurpose": "Basra y Kufa entre movilización, batalla y asistencia civil; no simplificar culpabilidad como misión a eliminar.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "06-arriving-delegation-and-supply-basra",
+        "07-civilian-extraction-under-unrest-basra",
+        "02-between-the-camps",
+        "09-bounded-distribution-and-receipts-basra",
+        "10-camp-and-household-reception-kufa",
+        "11-two-way-correspondence-kufa"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Water and Broken Words",
+        "es-ES": "Agua y palabras quebradas"
+      },
+      "historicalYearBand": [
+        657,
+        657
+      ],
+      "dramaticPurpose": "Siffin, agua, combate y arbitraje; decisiones jugables logísticas no revierten la crisis histórica.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "12-rival-claims-and-dispatch-comparison-damascus",
+        "03-water-and-words",
+        "14-ceasefire-withdrawal-and-care-siffin",
+        "15-paired-protocol-delivery-siffin",
+        "16-witness-and-record-comparison-kufa"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "The Price of Arbitration",
+        "es-ES": "El precio del arbitraje"
+      },
+      "historicalYearBand": [
+        658,
+        660
+      ],
+      "dramaticPurpose": "Harura, Nahrawan, reuniones y pérdida de apoyos; dataciones alternativas y relatos tendenciosos visibles.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "17-voluntary-household-relocation-harura",
+        "18-separate-delegation-logistics-dumat-al-jandal",
+        "19-disputed-correspondence-and-provision-kufa",
+        "04-the-canal-road",
+        "21-civilian-record-preservation-fustat",
+        "22-delegate-reception-and-source-comparison-adhruh",
+        "23-bounded-rural-relief-kufa"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Oath That Could Not Hold",
+        "es-ES": "El juramento que no pudo durar"
+      },
+      "historicalYearBand": [
+        661,
+        661
+      ],
+      "dramaticPurpose": "Muerte deAli, Hasan y pacto; el final deja escoger perspectiva omeya o de la casa deAli sin declarar vencedor moral.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "24-civilian-refuge-and-dispatch-medina",
+        "25-care-and-record-preservation-kufa",
+        "26-administrative-transition-and-household-supply-kufa",
+        "27-paired-protocol-and-bounded-negotiation-kufa",
+        "05-two-archives"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [
+      {
+        "campaignId": "first-caliphs",
+        "route": "completed"
+      }
+    ],
+    "nextRoutes": [
+      {
+        "id": "muawiya-perspective",
+        "key": "progress.first-fitna.muawiya-perspective",
+        "next": "umayyads"
+      },
+      {
+        "id": "ali-perspective",
+        "key": "progress.first-fitna.ali-perspective",
+        "next": "house-of-ali"
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-news-from-medina",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "News from Medina",
+        "es-ES": "Noticias desde Medina"
+      },
+      "date": "mid656 CE",
+      "geographyId": "medina",
+      "coreMechanic": "delegation-reception-and-household-aid",
+      "historicalSelection": {
+        "corpusEventId": 178,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 52; provincial opposition arrives",
+        "qualification": "Las fuentes divergen sobre actores, motivaciones y secuencia del sitio.",
+        "candidateEvent": "Grupos provinciales de Egipto, Kufa y Basra llegan a Medina en medio del descontento contra Uthman.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "02-civilian-refuge-and-record-preservation-medina",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "After the Sealed Door",
+        "es-ES": "Después de la puerta sellada"
+      },
+      "date": "656 CE; murder is reported, not playable",
+      "geographyId": "medina",
+      "coreMechanic": "civilian-refuge-and-record-preservation",
+      "historicalSelection": {
+        "corpusEventId": 179,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 60; aftermath of Uthman’s murder",
+        "qualification": "La responsabilidad individual y detalles del asesinato están disputados.",
+        "candidateEvent": "Uthman es asesinado; los omeyas abandonan Medina y grupos provinciales dominan la situación.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-administrative-transition-medina",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "A Seal Accepted in Uncertainty",
+        "es-ES": "Un sello aceptado en la incertidumbre"
+      },
+      "date": "656 CE; motives attributed",
+      "geographyId": "medina",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "corpusEventId": 180,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 60; invitation and acceptance",
+        "qualification": "No fijar día exacto.",
+        "candidateEvent": "Ali acepta el califato tras vacilar varios días.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-disputed-correspondence-mecca",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "The Message on the Pilgrim Road",
+        "es-ES": "El mensaje en el camino peregrino"
+      },
+      "date": "656 CE",
+      "geographyId": "mecca",
+      "coreMechanic": "disputed-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 181,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 63; Aisha returns to Mecca",
+        "qualification": "Motivación personal reportada por fuentes sesgadas, no presentar como certeza.",
+        "candidateEvent": "Aisha regresa a La Meca y se incorpora a la oposición a Ali.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-rival-petition-and-witness-records-medina",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "Two Names in the Dispatch",
+        "es-ES": "Dos nombres en el despacho"
+      },
+      "date": "656 CE",
+      "geographyId": "medina",
+      "coreMechanic": "rival-petition-and-witness-records",
+      "historicalSelection": {
+        "corpusEventId": 182,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 64–65; departure and accusation",
+        "qualification": "Causalidad y negociación se transmiten por relatos retrospectivos.",
+        "candidateEvent": "Talha y Zubayr rompen con Ali y responsabilizan a su gobierno por no procesar a los asesinos de Uthman.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-arriving-delegation-and-supply-basra",
+      "order": 6,
+      "actId": "act-2",
+      "title": {
+        "en": "Toward the River City",
+        "es-ES": "Hacia la ciudad del río"
+      },
+      "date": "656 CE; travelArabiaoff-map",
+      "geographyId": "basra",
+      "coreMechanic": "arriving-delegation-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 183,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 66; march to Basra",
+        "qualification": "Ruta aproximada.",
+        "candidateEvent": "Talha y Zubayr avanzan hacia Basra buscando respaldo político y militar.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "07-civilian-extraction-under-unrest-basra",
+      "order": 7,
+      "actId": "act-2",
+      "title": {
+        "en": "The Streets between the Camps",
+        "es-ES": "Las calles entre los campamentos"
+      },
+      "date": "656 CE",
+      "geographyId": "basra",
+      "coreMechanic": "civilian-extraction-under-unrest",
+      "historicalSelection": {
+        "corpusEventId": 184,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 66; rebels occupy Basra",
+        "qualification": "Las cifras y el orden de incidentes son inciertos.",
+        "candidateEvent": "Los rebeldes toman Basra y ocurre violencia en la ciudad.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-between-the-camps",
+      "order": 8,
+      "actId": "act-2",
+      "title": {
+        "en": "Between the Camps",
+        "es-ES": "Entre los campamentos"
+      },
+      "date": "656 CE",
+      "geographyId": "basra",
+      "coreMechanic": "finite-field-battle-and-care",
+      "historicalSelection": {
+        "corpusEventId": 185,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 67; Battle of the Camel",
+        "qualification": "El nombre alude al camello de Aisha en el centro; no convertir relatos heroicos en hechos precisos.",
+        "candidateEvent": "Batalla del Camello entre Ali y las fuerzas reunidas en torno a Aisha, Talha y Zubayr.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "09-bounded-distribution-and-receipts-basra",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "Accounts after the Battle",
+        "es-ES": "Cuentas después de la batalla"
+      },
+      "date": "656 CE; distribution accounts attributed",
+      "geographyId": "basra",
+      "coreMechanic": "bounded-distribution-and-receipts",
+      "historicalSelection": {
+        "corpusEventId": 186,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 68; entry into Basra and bayt al-mal",
+        "qualification": "La fuente presenta una política atribuida a Ali; no usar como dato cuantitativo.",
+        "candidateEvent": "Ali entra en Basra y distribuye por partes iguales el tesoro público entre sus partidarios.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-camp-and-household-reception-kufa",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "The Quarter on the Kufa Road",
+        "es-ES": "El barrio en el camino de Kufa"
+      },
+      "date": "656/657 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "camp-and-household-reception",
+      "historicalSelection": {
+        "corpusEventId": 187,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 68; move to Kufa",
+        "qualification": "Cronología convencional 657; el traslado fue un proceso.",
+        "candidateEvent": "Ali se traslada a Kufa para reforzar su base frente a Muawiya.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-two-way-correspondence-kufa",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "Words across a Divided Road",
+        "es-ES": "Palabras sobre un camino dividido"
+      },
+      "date": "656–657 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "two-way-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 188,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 71; opening negotiations",
+        "qualification": "Correspondencia transmitida en fuentes posteriores.",
+        "candidateEvent": "Ali abre negociaciones con Muawiya para obtener su reconocimiento.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "12-rival-claims-and-dispatch-comparison-damascus",
+      "order": 12,
+      "actId": "act-3",
+      "title": {
+        "en": "A Reply from Damascus",
+        "es-ES": "Una respuesta desde Damasco"
+      },
+      "date": "656–657 CE",
+      "geographyId": "damascus",
+      "coreMechanic": "rival-claims-and-dispatch-comparison",
+      "historicalSelection": {
+        "corpusEventId": 189,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 71–72; Muawiya’s position",
+        "qualification": "Explicación política transmitida por historiografía retrospectiva.",
+        "candidateEvent": "Muawiya exige autonomía siria y reclama castigo por el asesinato de Uthman; no jura lealtad a Ali.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-water-and-words",
+      "order": 13,
+      "actId": "act-3",
+      "title": {
+        "en": "Water and Words",
+        "es-ES": "Agua y palabras"
+      },
+      "date": "657 CE; fiercefighting191integrated",
+      "geographyId": "siffin",
+      "coreMechanic": "finite-river-battle-and-care",
+      "historicalSelection": {
+        "corpusEventId": 190,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 73; armies meet at Siffin",
+        "qualification": "Ubicación regional; no inferir coordenadas del campamento.",
+        "candidateEvent": "Los ejércitos se concentran en la llanura de Siffin.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "14-ceasefire-withdrawal-and-care-siffin",
+      "order": 14,
+      "actId": "act-3",
+      "title": {
+        "en": "When the Fighting Was Stopped",
+        "es-ES": "Cuando se detuvo la lucha"
+      },
+      "date": "657 CE; Qur'an-folioaccount192attributed",
+      "geographyId": "siffin",
+      "coreMechanic": "ceasefire-withdrawal-and-care",
+      "historicalSelection": {
+        "corpusEventId": 193,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 75–77; acceptance of arbitration",
+        "qualification": "Atribuciones de diálogos no son citas verificables.",
+        "candidateEvent": "La mayoría de la fuerza de Ali impone aceptar arbitraje; Ali detiene el combate.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-paired-protocol-delivery-siffin",
+      "order": 15,
+      "actId": "act-3",
+      "title": {
+        "en": "Terms beside the River",
+        "es-ES": "Condiciones junto al río"
+      },
+      "date": "657 CE",
+      "geographyId": "siffin",
+      "coreMechanic": "paired-protocol-delivery",
+      "historicalSelection": {
+        "corpusEventId": 194,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 77–80; arbitration terms",
+        "qualification": "Términos transmitidos por historiadores posteriores.",
+        "candidateEvent": "Se acuerda que cada lado nombre un árbitro y que se use el Corán como marco.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "16-witness-and-record-comparison-kufa",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "The Names Chosen for Arbitration",
+        "es-ES": "Los nombres elegidos para el arbitraje"
+      },
+      "date": "657/658 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "witness-and-record-comparison",
+      "historicalSelection": {
+        "corpusEventId": 195,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 78–81; dispute over arbiter",
+        "qualification": "Nombres y motivaciones tal como aparecen en tradición narrativa.",
+        "candidateEvent": "La elección de Abu Musa como árbitro suscita divisiones en el campamento de Ali.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "17-voluntary-household-relocation-harura",
+      "order": 17,
+      "actId": "act-4",
+      "title": {
+        "en": "The Road through Harura",
+        "es-ES": "El camino por Harura"
+      },
+      "date": "657/658 CE",
+      "geographyId": "harura",
+      "coreMechanic": "voluntary-household-relocation",
+      "historicalSelection": {
+        "corpusEventId": 196,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 82–85; secession and Harura",
+        "qualification": "La etiqueta jariyí se consolida retrospectivamente; no tratar como secta madura ya constituida.",
+        "candidateEvent": "Opositores al arbitraje se separan y se reúnen en Harura.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-separate-delegation-logistics-dumat-al-jandal",
+      "order": 18,
+      "actId": "act-4",
+      "title": {
+        "en": "Papers at Dumat al-Jandal",
+        "es-ES": "Documentos en Dumat al-Jandal"
+      },
+      "date": "February658 approximate; Ramadan37AHaccordingPoonawala",
+      "geographyId": "dumat-al-jandal",
+      "coreMechanic": "separate-delegation-logistics",
+      "historicalSelection": {
+        "corpusEventId": 197,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 86; first meeting appears to occur",
+        "qualification": "El artículo dice “appears”; fecha gregoriana aproximada y resultado no público.",
+        "candidateEvent": "Primera reunión de árbitros en Dumat al-Jandal según el relato citado por Poonawala.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-disputed-correspondence-and-provision-kufa",
+      "order": 19,
+      "actId": "act-4",
+      "title": {
+        "en": "The Reply That Would Not Settle",
+        "es-ES": "La respuesta que no resolvía"
+      },
+      "date": "658 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "disputed-correspondence-and-provision",
+      "historicalSelection": {
+        "corpusEventId": 198,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 87; Ali protests arbitration result",
+        "qualification": "No hubo un resultado aceptado uniformemente.",
+        "candidateEvent": "Ali rechaza el resultado atribuido a la reunión de árbitros y trata de reunir otra fuerza.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-the-canal-road",
+      "order": 20,
+      "actId": "act-4",
+      "title": {
+        "en": "The Canal Road",
+        "es-ES": "El camino del canal"
+      },
+      "date": "658 CE conventional",
+      "geographyId": "nahrawan",
+      "coreMechanic": "finite-withdrawal-and-civilian-refuge",
+      "historicalSelection": {
+        "corpusEventId": 199,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 88; Nahrawan campaign",
+        "qualification": "Fecha 658 convencional; cifras y detalles de la matanza dependen de tradición y son discutidos.",
+        "candidateEvent": "Ali marcha contra los disidentes reunidos en Nahrawan y vence; se producen deserciones de su ejército.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "21-civilian-record-preservation-fustat",
+      "order": 21,
+      "actId": "act-4",
+      "title": {
+        "en": "The Egyptian Dispatch",
+        "es-ES": "El despacho egipcio"
+      },
+      "date": "658 CE; Egyptloss not660; correctionrequiresexactpassage",
+      "geographyId": "fustat",
+      "coreMechanic": "civilian-record-preservation",
+      "historicalSelection": {
+        "corpusEventId": 202,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 91; loss of Egypt and Hijaz",
+        "qualification": "Original candidate202combines distinct places and dates incorrectly. Use selectedClaim only after checking the exact Iranica/Tabari passage; source audit remains pending.",
+        "candidateEvent": "Ali pierde el control de Egipto y del Hijaz ante el avance de Muawiya.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "selectedClaim": {
+          "en": "Ali’s administration lost Egypt in658; raids in the Hijaz in660 belong to a different phase.",
+          "es-ES": "La administración de Alí perdió Egipto en658; las incursiones en el Hiyaz en660 corresponden a una fase distinta."
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "22-delegate-reception-and-source-comparison-adhruh",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "A Seat Empty at Adhruh",
+        "es-ES": "Un asiento vacío en Adhruh"
+      },
+      "date": "January659 approximate; Shaban38AHaccordingPoonawala",
+      "geographyId": "adhruh",
+      "coreMechanic": "delegate-reception-and-source-comparison",
+      "historicalSelection": {
+        "corpusEventId": 200,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párrs. 89–90; meeting at Adhruh",
+        "qualification": "Resultado público discrepante en las fuentes; ubicación se identifica tradicionalmente.",
+        "candidateEvent": "Árbitros y notables se reúnen en Adhruh; Ali no tiene representantes presentes según Poonawala.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-bounded-rural-relief-kufa",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "The Farms beyond the Patrols",
+        "es-ES": "Las granjas más allá de las patrullas"
+      },
+      "date": "659–660 CE; onefictionallocalraid, remoteincursionsreported",
+      "geographyId": "kufa",
+      "coreMechanic": "bounded-rural-relief",
+      "historicalSelection": {
+        "corpusEventId": 201,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 91; incursions",
+        "qualification": "Proceso con varios episodios; no localizable como una batalla singular.",
+        "candidateEvent": "Muawiya efectúa incursiones en zonas de Iraq y Arabia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-civilian-refuge-and-dispatch-medina",
+      "order": 24,
+      "actId": "act-5",
+      "title": {
+        "en": "News from the Hijaz Roads",
+        "es-ES": "Noticias desde los caminos del Hiyaz"
+      },
+      "date": "660 CE; BusrraidsseparatefromEgypt658",
+      "geographyId": "medina",
+      "coreMechanic": "civilian-refuge-and-dispatch",
+      "historicalSelection": {
+        "corpusEventId": 202,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 91; loss of Egypt and Hijaz",
+        "qualification": "Original candidate202combines distinct places and dates incorrectly. Use selectedClaim only after checking the exact Iranica/Tabari passage; source audit remains pending.",
+        "candidateEvent": "Ali pierde el control de Egipto y del Hijaz ante el avance de Muawiya.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "selectedClaim": {
+          "en": "Busr’s incursions in the Hijaz belong to660; they are not a simultaneous conquest of Egypt, whose administration had been lost in658.",
+          "es-ES": "Las incursiones de Busr en el Hiyaz corresponden a660; no son una conquista simultánea de Egipto, cuya administración se había perdido en658."
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "25-care-and-record-preservation-kufa",
+      "order": 25,
+      "actId": "act-5",
+      "title": {
+        "en": "The Night of the Last Report",
+        "es-ES": "La noche del último parte"
+      },
+      "date": "January661 approximate; woundanddeath204consolidated",
+      "geographyId": "kufa",
+      "coreMechanic": "care-and-record-preservation",
+      "historicalSelection": {
+        "corpusEventId": 203,
+        "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "passage": "Párr. 91; attack in mosque",
+        "qualification": "La identidad y motivación se transmiten por fuentes medievales.",
+        "candidateEvent": "Ali es herido por Abd al-Rahman b. Muljam mientras reza en una mezquita de Kufa.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-administrative-transition-and-household-supply-kufa",
+      "order": 26,
+      "actId": "act-5",
+      "title": {
+        "en": "The Seal after the Loss",
+        "es-ES": "El sello después de la pérdida"
+      },
+      "date": "661 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "administrative-transition-and-household-supply",
+      "historicalSelection": {
+        "corpusEventId": 205,
+        "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "passage": "Secciones iniciales del artículo sobre califato de Hasan",
+        "qualification": "Fecha de proclamación suele expresarse 661, pero puede caer en 40/41 AH.",
+        "candidateEvent": "Hasan asume el control de la comunidad en Iraq tras la muerte de Ali.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-paired-protocol-and-bounded-negotiation-kufa",
+      "order": 27,
+      "actId": "act-5",
+      "title": {
+        "en": "A Letter with an Open Seal",
+        "es-ES": "Una carta con un sello abierto"
+      },
+      "date": "661 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "paired-protocol-and-bounded-negotiation",
+      "historicalSelection": {
+        "corpusEventId": 206,
+        "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "passage": "PDF pp. 2–3, párrs. 96–110",
+        "qualification": "Términos concretos son transmitidos en fuentes posteriores y difieren entre cronistas.",
+        "candidateEvent": "Muawiya envía propuestas de pacto a Hasan; una carta con sello permite a Hasan proponer condiciones.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-two-archives",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "Two Archives beneath One Roof",
+        "es-ES": "Dos archivos bajo un techo"
+      },
+      "date": "August661 approximate; RabiII41AH",
+      "geographyId": "kufa",
+      "coreMechanic": "archive-and-final-perspective",
+      "historicalSelection": {
+        "corpusEventId": 207,
+        "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "passage": "PDF p. 3, párr. 111",
+        "qualification": "La fecha gregoriana/lunar puede variar por conversión.",
+        "candidateEvent": "Hasan cede el control de Iraq a Muawiya tras siete meses.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "farid-field-medic",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    }
+  ]
 }

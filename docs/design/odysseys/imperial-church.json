@@ -280,5 +280,1186 @@
       }
     ]
   },
-  "episodes": []
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "The Eagle and the Cross",
+      "es-ES": "El águila y la cruz"
+    },
+    "publicId": "CDF-C01",
+    "internalName": "CDF_ImperialChurch",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 29,
+    "narratorId": "imperial-clerk",
+    "personaLens": {
+      "en": "Supply clerks and inherited state papers",
+      "es-ES": "Intendencia y expedientes de familia"
+    },
+    "deliveryTone": {
+      "en": "dry irony turning to uneasy loyalty",
+      "es-ES": "ironía seca que acaba en lealtad inquieta"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "imperial-clerk",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-milvian-bridge",
+      "02-nicaea",
+      "03-new-capital"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "narratorMigration": {
+      "proposedLifespan": "c.334–403",
+      "replaces": "c.290–350",
+      "reason": "extend arc to381 without an implausibly long-lived omniscient clerk",
+      "knowledge": "312–337 inherited documents; early childhood never adult eyewitness; later dated visits explicitly recorded episode by episode",
+      "status": "authored decision; baseline catalogue/voice bible migration occurs with expanded campaign dossier"
+    },
+    "selectedEpisodeCount": 29,
+    "selectionNotes": [
+      "Helena death328–330andCrispus/Fausta326remain cautious background, not invented detective missions at uncertain locations.",
+      "Paschal decisions are integrated withNicea; capital expansion is integrated with330.",
+      "Adrianople/Chrysopolis andMilan/Alexandria are separate local episodes because they involve different places and operations.",
+      "Sole rule is not asserted in350: Magnentius survives until353.",
+      "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "Eagle Over the River",
+        "es-ES": "El águila sobre el río"
+      },
+      "historicalYearBand": [
+        312,
+        317
+      ],
+      "dramaticPurpose": "Victoria militar, restitución y conflictos africanos; la política de313 no convierte la fe en religión oficial.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-milvian-bridge",
+        "02-bounded-negotiation-milan",
+        "03-property-and-record-restoration-nicomedia",
+        "04-rival-delegation-reception-rome-ostia",
+        "05-delegate-logistics-arles",
+        "06-finite-field-withdrawal-cibalae"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "A Creed in Many Tongues",
+        "es-ES": "Un credo en muchas lenguas"
+      },
+      "historicalYearBand": [
+        321,
+        325
+      ],
+      "dramaticPurpose": "Fiscalidad, controversias y logística conciliar; distinguir decretos, acuerdos y resistencia posterior.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "07-court-record-logistics-rome-ostia",
+        "08-disputed-correspondence-alexandria",
+        "09-crossing-and-supply-adrianople",
+        "10-land-and-strait-logistics-chrysopolis",
+        "11-council-record-escort-antioch",
+        "02-nicaea"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Stone and Succession",
+        "es-ES": "Piedra y sucesión"
+      },
+      "historicalYearBand": [
+        326,
+        337
+      ],
+      "dramaticPurpose": "Patrocinio y capital; incertidumbres privadas permanecen abiertas y el fin de Constantino no cierra la historia.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "13-finite-works-logistics-jerusalem",
+        "03-new-capital",
+        "15-long-distance-dispatch-nicomedia",
+        "16-witness-record-comparison-tyre",
+        "17-rumour-and-source-investigation-constantinople",
+        "18-administrative-transition-nicomedia",
+        "19-competing-dispatches-constantinople"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "Councils Without Concord",
+        "es-ES": "Concilios sin concordia"
+      },
+      "historicalYearBand": [
+        343,
+        359
+      ],
+      "dramaticPurpose": "Sardica, exilios y fórmulas rivales; Marcus crece entre papeles familiares y empieza a trabajar.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "20-separate-reception-logistics-sardica",
+        "21-returning-households-escort-alexandria",
+        "22-civilian-record-preservation-milan",
+        "23-bounded-political-pressure-milan",
+        "24-night-civilian-withdrawal-alexandria",
+        "25-delegate-and-draft-network-rimini"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Weight of Orthodoxy",
+        "es-ES": "El peso de la ortodoxia"
+      },
+      "historicalYearBand": [
+        361,
+        381
+      ],
+      "dramaticPurpose": "Juliano, ley de380 y concilio de381; el poder prescribe una norma sin probar su aceptación uniforme.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "26-plural-civic-logistics-constantinople",
+        "27-return-and-departure-records-alexandria",
+        "28-law-and-local-reception-thessalonica",
+        "29-council-and-final-perspective-constantinople"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [
+      {
+        "campaignId": "faith-origins",
+        "route": "christian-perspective"
+      }
+    ],
+    "nextRoutes": [
+      {
+        "id": "western-perspective",
+        "key": "progress.imperial-church.western-perspective",
+        "next": "church-of-rome"
+      },
+      {
+        "id": "eastern-perspective",
+        "key": "progress.imperial-church.eastern-perspective",
+        "next": "new-rome"
+      }
+    ],
+    "chronologyWarning": "Western/eastern sequels start in337 and revisit events already covered up to381. Present a sober recap and name the selected successor explicitly.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-milvian-bridge",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "The River beneath the Eagle",
+        "es-ES": "El río bajo el águila"
+      },
+      "date": "28 October 312 CE",
+      "geographyId": "milvio",
+      "coreMechanic": "river-battle",
+      "historicalSelection": {
+        "corpusEventId": 35,
+        "sourceUrl": "https://www.newadvent.org/fathers/25021.htm",
+        "passage": "Eusebius, Life of Constantine I.28–38; Lactantius 44",
+        "qualification": "Relatos cristianos difieren en visión y cronología.",
+        "candidateEvent": "Constantino derrota a Majencio en Puente Milvio y entra en Roma.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "02-bounded-negotiation-milan",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "Promises in the Winter Court",
+        "es-ES": "Promesas en la corte de invierno"
+      },
+      "date": "313 CE",
+      "geographyId": "milan",
+      "coreMechanic": "bounded-negotiation",
+      "historicalSelection": {
+        "corpusEventId": 36,
+        "sourceUrl": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm",
+        "passage": "Lactantius, De mortibus persecutorum 48",
+        "qualification": "“Edicto de Milán” es rótulo moderno; texto conservado es rescripto oriental.",
+        "candidateEvent": "Constantino y Licinio negocian tolerancia religiosa en Milán.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-property-and-record-restoration-nicomedia",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "The Doors Returned",
+        "es-ES": "Las puertas restituidas"
+      },
+      "date": "13 June 313 CE",
+      "geographyId": "nicomedia",
+      "coreMechanic": "property-and-record-restoration",
+      "historicalSelection": {
+        "corpusEventId": 33,
+        "sourceUrl": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+        "passage": "Lactantius 48; texto del rescripto",
+        "qualification": "No establece aún cristianismo como religión oficial.",
+        "candidateEvent": "Licinio publica en Nicomedia la política de libertad y restitución de propiedades.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-rival-delegation-reception-rome-ostia",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "The African Petition",
+        "es-ES": "La petición africana"
+      },
+      "date": "313–314 CE; Roman hearing focus",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "rival-delegation-reception",
+      "historicalSelection": {
+        "corpusEventId": 37,
+        "sourceUrl": "https://www.fourthcentury.com/donatist-controversy/",
+        "passage": "Eusebius HE 10; Optatus, Against the Donatists",
+        "qualification": "Fuentes adversarias y posteriores; no simplificar causas sociales.",
+        "candidateEvent": "La disputa donatista llega a audiencias imperiales y sínodos regionales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-delegate-logistics-arles",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "The Road to Arles",
+        "es-ES": "El camino hacia Arlés"
+      },
+      "date": "314 CE",
+      "geographyId": "arles",
+      "coreMechanic": "delegate-logistics",
+      "historicalSelection": {
+        "corpusEventId": 38,
+        "sourceUrl": "https://www.fourthcentury.com/early-church-councils/",
+        "passage": "Canones de Arlés, colección de fuentes",
+        "qualification": "Actas fragmentarias.",
+        "candidateEvent": "Concilio de Arlés aborda donatismo, disciplina y fecha de Pascua.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-finite-field-withdrawal-cibalae",
+      "order": 6,
+      "actId": "act-1",
+      "title": {
+        "en": "The Field between Two Eagles",
+        "es-ES": "El campo entre dos águilas"
+      },
+      "date": "314 or 316 CE; dating disputed",
+      "geographyId": "cibalae",
+      "coreMechanic": "finite-field-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 39,
+        "sourceUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+        "passage": "Britannica, Constantine, chronology",
+        "qualification": "The battle is usually dated 316, though some chronologies place it in 314; the conflict was dynastic/political, not simply religious.",
+        "candidateEvent": "Constantino y Licinio libran guerra en Cibalae; pactan reparto territorial en 317.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "07-court-record-logistics-rome-ostia",
+      "order": 7,
+      "actId": "act-2",
+      "title": {
+        "en": "A Day beneath the Law",
+        "es-ES": "Un día bajo la ley"
+      },
+      "date": "321 CE; distinguish judicial rule from agricultural exception",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "court-record-logistics",
+      "historicalSelection": {
+        "corpusEventId": 40,
+        "sourceUrl": "https://www.fourthcentury.com/constantine-321-sunday-law/",
+        "passage": "Codex Theodosianus 2.8.1",
+        "qualification": "No fue cierre total del trabajo.",
+        "candidateEvent": "Una ley imperial limita actividad judicial dominical y permite labor agrícola.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "auditedSourcePassages": [
+          {
+            "url": "https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm",
+            "passage": "Codex Justinianus 3.12.2 (3.12.3 in older numbering), Constantine to Helpidius",
+            "coverage": "university critical-edition transcription consulted; exact passage checked",
+            "caution": "Later codification preserves a 321 constitution. City rest and rural agricultural exception differ from the June permission for manumission in CTh 2.8.1. No uniform compliance or mandated conversion follows from the text."
+          }
+        ],
+        "sourceCorrection": "Use auditedSourcePassages for selected dossier; original URL remains only as candidate provenance."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "08-disputed-correspondence-alexandria",
+      "order": 8,
+      "actId": "act-2",
+      "title": {
+        "en": "Words over Alexandria",
+        "es-ES": "Palabras sobre Alejandría"
+      },
+      "date": "324–325 CE",
+      "geographyId": "alexandria",
+      "coreMechanic": "disputed-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 43,
+        "sourceUrl": "https://www.newadvent.org/fathers/25021.htm",
+        "passage": "Eusebius, Life of Constantine II.64–73",
+        "qualification": "Relato de Eusebio presenta el conflicto como problema de unidad.",
+        "candidateEvent": "Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "09-crossing-and-supply-adrianople",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "The Maritsa Crossing",
+        "es-ES": "El paso del Maritsa"
+      },
+      "date": "3 July 324 CE, conventional",
+      "geographyId": "adrianople",
+      "coreMechanic": "crossing-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 41,
+        "sourceUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+        "passage": "Eusebius VC II; resumen cronológico",
+        "qualification": "La fuente panegírica de Eusebio requiere cautela.",
+        "candidateEvent": "Constantino derrota a Licinio en Adrianópolis y Chrysopolis; queda como único emperador.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-land-and-strait-logistics-chrysopolis",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "Across the Bright Shore",
+        "es-ES": "Al otro lado de la costa luminosa"
+      },
+      "date": "18 September 324 CE, conventional",
+      "geographyId": "chrysopolis",
+      "coreMechanic": "land-and-strait-logistics",
+      "historicalSelection": {
+        "corpusEventId": 41,
+        "sourceUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+        "passage": "Eusebius VC II; resumen cronológico",
+        "qualification": "La fuente panegírica de Eusebio requiere cautela.",
+        "candidateEvent": "Constantino derrota a Licinio en Adrianópolis y Chrysopolis; queda como único emperador.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-council-record-escort-antioch",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "Before the Lakeside Council",
+        "es-ES": "Antes del concilio junto al lago"
+      },
+      "date": "325 CE",
+      "geographyId": "antioch",
+      "coreMechanic": "council-record-escort",
+      "historicalSelection": {
+        "corpusEventId": 44,
+        "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1111/erev.12782",
+        "passage": "Kinzig, “The Creed of Nicaea,” sección sobre sínodo",
+        "qualification": "Cronología reconstruida; evidencia transmitida por fuentes posteriores.",
+        "candidateEvent": "Sínodo regional de Antioquía suspende a obispos en antesala de Nicea.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-nicaea",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "Many Voices beside the Lake",
+        "es-ES": "Muchas voces junto al lago"
+      },
+      "date": "325 CE",
+      "geographyId": "nicaea",
+      "coreMechanic": "delegate-logistics",
+      "historicalSelection": {
+        "corpusEventId": 45,
+        "sourceUrl": "https://www.newadvent.org/fathers/3801.htm",
+        "passage": "Credo y cánones de Nicea",
+        "qualification": "No creó las iglesias católica y ortodoxa modernas.",
+        "candidateEvent": "Concilio de Nicea acuerda un credo y cánones sobre doctrina y disciplina.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "13-finite-works-logistics-jerusalem",
+      "order": 13,
+      "actId": "act-3",
+      "title": {
+        "en": "Stone above the Old City",
+        "es-ES": "Piedra sobre la ciudad antigua"
+      },
+      "date": "326–330 CE; individual works dates qualified",
+      "geographyId": "jerusalem",
+      "coreMechanic": "finite-works-logistics",
+      "historicalSelection": {
+        "corpusEventId": 47,
+        "sourceUrl": "https://www.newadvent.org/fathers/25023.htm",
+        "passage": "Eusebius, Life of Constantine III.25–40",
+        "qualification": "La obra se inició en algún momento del periodo; no fechar automáticamente por viaje de Helena.",
+        "candidateEvent": "Constantino patrocina iglesias y obras en los lugares santos de Jerusalén.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-new-capital",
+      "order": 14,
+      "actId": "act-3",
+      "title": {
+        "en": "A City beneath a New Sky",
+        "es-ES": "Una ciudad bajo un cielo nuevo"
+      },
+      "date": "11 May 330 CE; fictional works approach before dedication",
+      "geographyId": "constantinople",
+      "coreMechanic": "urban-logistics",
+      "historicalSelection": {
+        "corpusEventId": 32,
+        "sourceUrl": "https://www.britannica.com/place/Istanbul/History",
+        "passage": "Chronicon Paschale, annal 330; overview",
+        "qualification": "Fecha tradicional, ceremonia sobre proceso urbano anterior.",
+        "candidateEvent": "Constantinopla recibe dedicación ceremonial y juegos fundacionales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "15-long-distance-dispatch-nicomedia",
+      "order": 15,
+      "actId": "act-3",
+      "title": {
+        "en": "A Letter beyond the Frontier",
+        "es-ES": "Una carta más allá de la frontera"
+      },
+      "date": "c. 332–333 CE; destination off-map",
+      "geographyId": "nicomedia",
+      "coreMechanic": "long-distance-dispatch",
+      "historicalSelection": {
+        "corpusEventId": 50,
+        "sourceUrl": "https://www.newadvent.org/fathers/25024.htm",
+        "passage": "Eusebius, Life of Constantine IV.8–13",
+        "qualification": "Eusebio presenta al emperador como protector universal; sesgo panegírico.",
+        "candidateEvent": "Constantino escribe a Shapur II sobre cristianos en el imperio persa, según Eusebio.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "16-witness-record-comparison-tyre",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "The Council on the Shore",
+        "es-ES": "El concilio en la costa"
+      },
+      "date": "335 CE; Tyre council focus",
+      "geographyId": "tyre",
+      "coreMechanic": "witness-record-comparison",
+      "historicalSelection": {
+        "corpusEventId": 51,
+        "sourceUrl": "https://www.newadvent.org/fathers/25023.htm",
+        "passage": "Eusebius, Life of Constantine IV.41–47; III.28",
+        "qualification": "Narrativas de sínodo y consagración son interesadas.",
+        "candidateEvent": "Sínodo de Tiro juzga a Atanasio; poco después se consagra el complejo de la Resurrección.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "auditedSourcePassages": [
+          {
+            "url": "https://www.newadvent.org/fathers/25024.htm",
+            "passage": "Eusebius, Life of Constantine IV.41–47",
+            "coverage": "Book IV consulted in prior audit",
+            "caution": "Book III URL in raw candidate does not contain this locator. Eusebius is a partisan biographer."
+          }
+        ],
+        "sourceCorrection": "Use auditedSourcePassages for selected dossier; original URL remains only as candidate provenance."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "17-rumour-and-source-investigation-constantinople",
+      "order": 17,
+      "actId": "act-3",
+      "title": {
+        "en": "The Empty Appointment",
+        "es-ES": "La cita vacía"
+      },
+      "date": "336 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "rumour-and-source-investigation",
+      "historicalSelection": {
+        "corpusEventId": 52,
+        "sourceUrl": "https://www.newadvent.org/fathers/26023.htm",
+        "passage": "Sozomen, HE II.29",
+        "qualification": "Relatos sobre circunstancias milagrosas son polémicos.",
+        "candidateEvent": "Arrio muere en Constantinopla antes de una readmisión prevista.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-administrative-transition-nicomedia",
+      "order": 18,
+      "actId": "act-3",
+      "title": {
+        "en": "The Court without Its Emperor",
+        "es-ES": "La corte sin su emperador"
+      },
+      "date": "22 May 337 CE",
+      "geographyId": "nicomedia",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "corpusEventId": 34,
+        "sourceUrl": "https://www.newadvent.org/fathers/25024.htm",
+        "passage": "Eusebius, Life of Constantine IV.61–64",
+        "qualification": "Bautismo de Silvestre es leyenda posterior.",
+        "candidateEvent": "Constantino recibe bautismo de Eusebio de Nicomedia y muere en Nicomedia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-competing-dispatches-constantinople",
+      "order": 19,
+      "actId": "act-3",
+      "title": {
+        "en": "Three Seals, One Inheritance",
+        "es-ES": "Tres sellos, una herencia"
+      },
+      "date": "337 CE; eastern court focus, not a map of the whole empire",
+      "geographyId": "constantinople",
+      "coreMechanic": "competing-dispatches",
+      "historicalSelection": {
+        "corpusEventId": 53,
+        "sourceUrl": "https://www.newadvent.org/fathers/26012.htm",
+        "passage": "Socrates Scholasticus, Ecclesiastical History II.1 y 2.25; fuente narrativa de siglo V, no contemporánea.",
+        "qualification": "La sucesión estuvo marcada por violencia contra miembros de la familia imperial; evitar presentar la división territorial como una partición constitucional permanente ya fijada en 337.",
+        "candidateEvent": "Tras la muerte de Constantino, sus hijos toman el poder imperial; las disputas sucesorias y la distribución de territorios preceden nuevas intervenciones en asuntos eclesiásticos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "20-separate-reception-logistics-sardica",
+      "order": 20,
+      "actId": "act-4",
+      "title": {
+        "en": "The Council That Divided",
+        "es-ES": "El concilio que se dividió"
+      },
+      "date": "343 CE; alternative342/344not excluded",
+      "geographyId": "sardica",
+      "coreMechanic": "separate-reception-logistics",
+      "historicalSelection": {
+        "corpusEventId": 54,
+        "sourceUrl": "https://www.newadvent.org/fathers/3815.htm",
+        "passage": "Council of Sardica: introducción y cánones; síntesis contextual académica de Milton V. Anastos: https://www.myriobiblos.gr/texts/english/milton1_5.html",
+        "qualification": "La fecha exacta se debate entre 342–344, con 343 habitual. Los cánones sobrevivieron en tradiciones griega y latina con diferencias interpretativas.",
+        "candidateEvent": "Obispos occidentales y orientales se reúnen en Sardica; el desacuerdo por Atanasio produce sesiones y decisiones separadas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "21-returning-households-escort-alexandria",
+      "order": 21,
+      "actId": "act-4",
+      "title": {
+        "en": "The Road Back to Alexandria",
+        "es-ES": "El camino de vuelta a Alejandría"
+      },
+      "date": "21 October 346 CE",
+      "geographyId": "alexandria",
+      "coreMechanic": "returning-households-escort",
+      "historicalSelection": {
+        "corpusEventId": 55,
+        "sourceUrl": "https://www.newadvent.org/fathers/2820.htm",
+        "passage": "Athanasius, Historia Acephala §§1–2; Socrates, Ecclesiastical History II, regreso y carta imperial: https://www.newadvent.org/fathers/26012.htm",
+        "qualification": "La Historia Acephala conserva cronología alejandrina valiosa; sus lagunas y transmisión fragmentaria aconsejan mantener fecha como día calendárico convertido desde el calendario local.",
+        "candidateEvent": "Atanasio vuelve a Alejandría tras su exilio, respaldado por cartas de Constancio II y Constante.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "22-civilian-record-preservation-milan",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "The Dispatch from Gaul",
+        "es-ES": "El despacho desde la Galia"
+      },
+      "date": "350 CE; reception of news, killing site not asserted; Constantius not yet sole emperor",
+      "geographyId": "milan",
+      "coreMechanic": "civilian-record-preservation",
+      "historicalSelection": {
+        "corpusEventId": 56,
+        "sourceUrl": "https://www.newadvent.org/fathers/26012.htm",
+        "passage": "Socrates, Ecclesiastical History II.25–26; contexto secundario en CCEL, Socrates and Sozomen, Book IV.1: https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+        "qualification": "Socrates vincula el cambio político con nuevos conflictos eclesiásticos, pero no reducir toda la guerra civil a una disputa teológica.",
+        "candidateEvent": "Constante es asesinado en la Galia durante la usurpación de Magnencio; Constancio II queda como único emperador y el equilibrio que había favorecido a Atanasio desaparece.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-bounded-political-pressure-milan",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "Seals at the Western Synod",
+        "es-ES": "Sellos en el sínodo occidental"
+      },
+      "date": "355 CE; Milan hearing focus",
+      "geographyId": "milan",
+      "coreMechanic": "bounded-political-pressure",
+      "historicalSelection": {
+        "corpusEventId": 57,
+        "sourceUrl": "https://www.newadvent.org/fathers/2820.htm",
+        "passage": "Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm",
+        "qualification": "La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atanasio escribe como parte enfrentada; sus cifras y caracterización de adversarios requieren cautela.",
+        "candidateEvent": "Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-night-civilian-withdrawal-alexandria",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "The Night of the Open Doors",
+        "es-ES": "La noche de las puertas abiertas"
+      },
+      "date": "356 CE; Alexandria local event, no omniscient private dialogue",
+      "geographyId": "alexandria",
+      "coreMechanic": "night-civilian-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 57,
+        "sourceUrl": "https://www.newadvent.org/fathers/2820.htm",
+        "passage": "Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm",
+        "qualification": "La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atanasio escribe como parte enfrentada; sus cifras y caracterización de adversarios requieren cautela.",
+        "candidateEvent": "Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "25-delegate-and-draft-network-rimini",
+      "order": 25,
+      "actId": "act-4",
+      "title": {
+        "en": "A Formula on the Adriatic Road",
+        "es-ES": "Una fórmula en la calzada del Adriático"
+      },
+      "date": "359 CE; Western council, Seleucia off-map comparison",
+      "geographyId": "rimini",
+      "coreMechanic": "delegate-and-draft-network",
+      "historicalSelection": {
+        "corpusEventId": 58,
+        "sourceUrl": "https://www.newadvent.org/fathers/26012.htm",
+        "passage": "Socrates, Ecclesiastical History II.37–41; la cronología secundaria alojada por CCEL también registra 359: https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf",
+        "qualification": "Socrates escribe en el siglo V y es pro-niceno. Los sínodos no fueron una única reunión ni una decisión idéntica; evitar etiquetar a todos los participantes con categorías posteriores simplificadas.",
+        "candidateEvent": "Constancio convoca simultáneamente un concilio occidental en Rimini y uno oriental en Seleucia para buscar una fórmula doctrinal común; ambos producen controversias y no una unidad estable.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-plural-civic-logistics-constantinople",
+      "order": 26,
+      "actId": "act-5",
+      "title": {
+        "en": "The Temples Open Again",
+        "es-ES": "Los templos vuelven a abrirse"
+      },
+      "date": "361 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "plural-civic-logistics",
+      "historicalSelection": {
+        "corpusEventId": 59,
+        "sourceUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+        "passage": "Ammianus Marcellinus, Res Gestae XXII.2; fuente de un contemporáneo pagano que sirvió en la campaña persa.",
+        "qualification": "Ammiano admira a Juliano. Las prácticas religiosas se reanudaron por decreto y patronazgo, pero no toda la población cambió de culto ni se revirtió de inmediato la infraestructura cristiana.",
+        "candidateEvent": "Juliano entra en Constantinopla tras la muerte de Constancio II y asume el gobierno único; reabre templos y restablece sacrificios públicos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-return-and-departure-records-alexandria",
+      "order": 27,
+      "actId": "act-5",
+      "title": {
+        "en": "The Return That Did Not Last",
+        "es-ES": "El regreso que no duró"
+      },
+      "date": "362–363 CE; exile policies focus, Persian campaign reported off-map",
+      "geographyId": "alexandria",
+      "coreMechanic": "return-and-departure-records",
+      "historicalSelection": {
+        "corpusEventId": 60,
+        "sourceUrl": "https://romanletters.org/letters/julian_emperor/24/",
+        "passage": "Julian, Letter 24 to the Alexandrians (362), sobre el retorno de Atanasio; Ammianus, Res Gestae XXIII–XXV, campaña y muerte en 363: https://tertullian.org/fathers/ammianus_25_book25.htm",
+        "qualification": "Juliano presenta su conducta como aplicación de la ley; cartas imperiales son retóricas oficiales. Las circunstancias exactas de su herida mortal son inciertas.",
+        "candidateEvent": "Juliano permite el regreso de obispos exiliados y luego vuelve a expulsar a Atanasio de Alejandría; su campaña contra Persia termina con su muerte en Mesopotamia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-law-and-local-reception-thessalonica",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "The Weight of an Imperial Word",
+        "es-ES": "El peso de una palabra imperial"
+      },
+      "date": "27 February 380 CE",
+      "geographyId": "thessalonica",
+      "coreMechanic": "law-and-local-reception",
+      "historicalSelection": {
+        "corpusEventId": 61,
+        "sourceUrl": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+        "passage": "Codex Theodosianus 16.1.2, Edictum de fide catholica; edición de texto latino y encabezamiento consultados.",
+        "qualification": "Es una norma legal dirigida a Constantinopla, no prueba de cumplimiento uniforme inmediato ni de la desaparición de otras religiones. Evitar llamarla, sin matices, conversión instantánea del imperio.",
+        "candidateEvent": "Graciano, Valentiniano II y Teodosio publican en Tesalónica una constitución que prescribe la fe nicena para los pueblos bajo su gobierno y clasifica a otros grupos como herejes.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-council-and-final-perspective-constantinople",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "Under the Same Eastern Sky",
+        "es-ES": "Bajo el mismo cielo oriental"
+      },
+      "date": "381 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "council-and-final-perspective",
+      "historicalSelection": {
+        "corpusEventId": 62,
+        "sourceUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+        "passage": "Credo y cánones del Concilio de Constantinopla I; la página señala el problema de la transmisión del credo y el estatus inicialmente limitado del concilio.",
+        "qualification": "El credo conocido como niceno-constantinopolitano se atestigua textualmente en Calcedonia (451); no atribuir sin reservas toda su forma conservada a actas contemporáneas de 381. El canon 3 trata rango, no una división moderna entre católicos y ortodoxos.",
+        "candidateEvent": "Un concilio en Constantinopla reafirma la fe nicena, trata controversias sobre el Espíritu y fija en canon 3 la precedencia honorífica del obispo de Constantinopla después de Roma.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 62,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "correctUrlConsulted": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "passage": "Constantinople I: canon 3; creed and canons, but status/transmission caveat",
+          "supportedClaim": "The source text supports a council traditionally dated 381 and canon 3 giving Constantinople honor after Rome because it is New Rome; creed transmission/history is separate from these canons.",
+          "problems": "Canon 3 does not establish papal/imperial jurisdiction or later East-West schism. Page is a compiled translation; it acknowledges transmission complexity.",
+          "coverageRead": "Opened council page and checked canon 3 and creed section; not manuscript apparatus.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    }
+  ]
 }

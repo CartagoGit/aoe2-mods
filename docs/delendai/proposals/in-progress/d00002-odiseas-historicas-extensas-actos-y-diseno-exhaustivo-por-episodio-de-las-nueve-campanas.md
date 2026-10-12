@@ -30,7 +30,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 
 ### S1 — Arquitectura editorial de odiseas, investigación y generación reutilizable
 - **Status**: pending
-- **Files**: `tools/design/**`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/research/odyssey-research/**`
+- **Files**: `tools/design/**`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/design/odyssey-selections.md`, `docs/research/odyssey-research/**`
 - **Gate**: e2e
 - acceptance:
   - "Plan explícito de nueve odiseas por actos y curva de dificultad, criterio de hito documentado sin relleno y límites históricos/licencias."

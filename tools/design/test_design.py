@@ -1,6 +1,7 @@
 """Adversarial tests for the high-impact geographic and design acceptance checks."""
 import copy
 import json
+import runpy
 import unittest
 from geography import clip_segment, tile_point
 from verify import ROOT, verify
@@ -10,6 +11,28 @@ class DesignAcceptanceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.catalogue = json.loads((ROOT / 'docs/design/catalog.json').read_text())
+        cls.odyssey_helper = runpy.run_path(str(ROOT / 'tools/design/odyssey_catalog.helper.py'))
+        cls.odyssey_policy, cls.odysseys = cls.odyssey_helper['odyssey_catalog']()
+
+    def test_odyssey_expansion_cannot_discard_baseline_semantic_identity(self):
+        invalid = copy.deepcopy(self.odysseys)
+        episode = next(e for e in invalid[0]['episodeSelection'] if e['existingContract'])
+        episode['id'] = 'replacement-id-that-loses-progress'
+        errors = self.odyssey_helper['audit_selections'](self.odyssey_policy, invalid)
+        self.assertTrue(any('semantic identity was lost' in e for e in errors))
+
+    def test_odyssey_selection_cannot_claim_three_repeated_cores_as_variety(self):
+        invalid = copy.deepcopy(self.odysseys)
+        for episode in invalid[0]['episodeSelection'][:3]:
+            episode['coreMechanic'] = 'identical-escort'
+        errors = self.odyssey_helper['audit_selections'](self.odyssey_policy, invalid)
+        self.assertTrue(any('three consecutive identical cores' in e for e in errors))
+
+    def test_odyssey_predecessor_notice_must_remain_nonblocking(self):
+        invalid = copy.deepcopy(self.odysseys)
+        invalid[1]['continuityContract']['proceedWithoutPredecessor'] = False
+        errors = self.odyssey_helper['audit_selections'](self.odyssey_policy, invalid)
+        self.assertTrue(any('predecessor progress would gate play' in e for e in errors))
 
     def test_crossing_segment_keeps_intersections_even_with_no_inner_vertices(self):
         self.assertEqual(clip_segment([-2, .5], [2, .5], [0, 0, 1, 1]), [[0, .5], [1, .5]])
