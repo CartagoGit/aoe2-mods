@@ -526,7 +526,7 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Unlisted neighbors / Vecinos sin registrar
 

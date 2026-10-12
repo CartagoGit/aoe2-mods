@@ -70,6 +70,14 @@ def world_and_objectives(cid, selection, authored, hubs):
                     entity_id: destinations[destination]
                     for entity_id in req["entities"]
                 }
+            assigned_hubs = req.pop("destinationHubsByOrdinal", None)
+            if assigned_hubs:
+                if len(assigned_hubs) != len(req["entities"]):
+                    raise ValueError("Every delivery identity needs one assigned hub")
+                req["destinations"] = {
+                    entity_id: destinations[hub]
+                    for entity_id, hub in zip(req["entities"], assigned_hubs)
+                }
             if "inputGroups" in req:
                 inputs = req.pop("inputGroups")
                 field = (
@@ -135,10 +143,18 @@ def world_and_objectives(cid, selection, authored, hubs):
 
 def map_plan(cid, selection, authored, profile):
     size = authored["mapSize"]
+    bbox = authored.get("mapBBox", profile["bbox"])
+    west, south, east, north = bbox
+    parent_west, parent_south, parent_east, parent_north = profile["bbox"]
+    if not (
+        parent_west <= west < east <= parent_east
+        and parent_south <= south < north <= parent_north
+    ):
+        raise ValueError("Episode framing must remain within its geographic region")
     hubs = [
         {
             "id": f"hub-{i}",
-            "centre": tile_point(profile["bbox"], district["lonLat"], size),
+            "centre": tile_point(bbox, district["lonLat"], size),
             "lonLat": district["lonLat"],
             "name": district["name"],
             "radiusTiles": 12,
@@ -147,7 +163,7 @@ def map_plan(cid, selection, authored, profile):
         for i, district in enumerate(authored["districts"], 1)
     ]
     return {
-        "bbox": profile["bbox"],
+        "bbox": bbox,
         "terrainProfile": selection["geographyId"],
         "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
         "projection": "WGS84, cosine-corrected longitude, square padding",
@@ -454,32 +470,8 @@ def build_dossier(campaign, selection, authored, profile, next_selection):
         "nativeStatus": "design-only; requires certified reusable predicates and native QA",
     }
     draft["difficulty"] = difficulty_profiles(authored, rewards, costs)
-    draft["playstyles"] = [
-        {
-            "id": key,
-            "optionalObjectives": ids,
-            "mainObjectivesUnchanged": True,
-            "historicalOutcomeUnchanged": True,
-            "costOfOpportunity": text,
-        }
-        for key, ids, text in [
-            (
-                "household-provision",
-                ["side-1", "side-3", "side-4"],
-                "Detours and 50 wood/50 gold buy finite material reserves; no mandatory dependency.",
-            ),
-            (
-                "records-and-route",
-                ["side-2", "side-5"],
-                "Travel to the copyist and guide buys context and route information; no new historical certainty.",
-            ),
-            (
-                "civilian-care",
-                ["side-1", "side-6"],
-                "Voluntary arrivals protect distinct optional households; no substitution for main participants.",
-            ),
-        ]
-    ]
+    draft["playstyles"] = copy.deepcopy(authored["playstyles"])
+    draft["gameplayIdentity"] = copy.deepcopy(authored.get("gameplayIdentity", {}))
     draft["stateMachine"] = {
         "states": ["briefing"]
         + [o["phase"] for o in objectives]

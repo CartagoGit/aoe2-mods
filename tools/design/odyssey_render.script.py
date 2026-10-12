@@ -141,7 +141,11 @@ def render(check=False):
             if h.get("sourceConsultation"):
                 row = h["sourceConsultation"]
                 body += [
-                    (f"[Consulted source]({row['consultedUrl']}): {row['passage']}" if row.get("consultedUrl") else "Source consultation pending: " + row["passage"]),
+                    (
+                        f"[Consulted source]({row['consultedUrl']}): {row['passage']}"
+                        if row.get("consultedUrl")
+                        else "Source consultation pending: " + row["passage"]
+                    ),
                     "",
                     "Limit: " + row["limitations"],
                     "",

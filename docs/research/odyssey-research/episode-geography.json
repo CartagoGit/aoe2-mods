@@ -32,6 +32,65 @@
       "waterControlStatus": "modern coastline data must be clipped separately; ancient harbor/coast reconstruction pending",
       "anachronisms": "no Crusader structures or modern museum in first-century scene; aqueduct phases must be individually dated",
       "approval": "architect regional candidate; DEM/land mask and independent archaeological audit pending"
+    },
+    {
+      "id": "corinth",
+      "name": "Ancient Corinth, Lechaion and eastern Cenchreae approaches",
+      "bbox": [
+        22.83,
+        37.875,
+        23.065,
+        37.975
+      ],
+      "representativePoint": [
+        22.878323,
+        37.90521
+      ],
+      "representativePointUsage": "modern museum gazetteer control only, not ancient workshop/assembly address",
+      "coordinateStatus": "architect regional bbox and fictional districts; ancient road footprints not certified",
+      "sources": [
+        {
+          "url": "https://gazetteer.dainst.org/doc/2299325.html",
+          "locator": "Location field for modern Archaeological Museum of Ancient Corinth, accuracy3",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://dataservices.ascsa.org/excavations/ancient-corinth/about-the-excavations-1/history-timeline",
+          "locator": "Location/Habitation; search result accessible, direct request timed out",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://lechaion.org/our-excavations/",
+          "locator": "Project scope and AreasA–C; direct page",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Corinthian Gulf north; Acrocorinth south of old city; Saronic Gulf east; distinct harbors, no nineteenth-century Corinth Canal. North–south upper/lower urban terraces need separate terrain calibration.",
+      "waterControlStatus": "modern coast clipped as control; ancient harbor basins, sea level and road geometry pending",
+      "anachronisms": "no modern canal, no Frankish citadel, no later Christian basilicas treated as first-century churches",
+      "approval": "regional authoring candidate; GIS/DEM/footprints/independent archaeological review pending"
+    },
+    {
+      "id": "ephesus",
+      "name": "Roman Ephesus and Kaystros estuary approaches",
+      "bbox": [
+        27.255,
+        37.875,
+        27.405,
+        37.995
+      ],
+      "coordinateStatus": "architect regional frame; exact first-century building/shoreline coordinates not certified",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1018/",
+          "locator": "Description and Outstanding Universal Value: settlements, changing coastline, harbor basin, Kaystros",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Former Kaystros estuary; Roman city amid slopes with harbor access toward west. Modern shoreline is a control and must not replace first-century estuary reconstruction.",
+      "waterControlStatus": "ancient harbor/estuary reconstruction and dated terrain/elevation masks pending",
+      "anachronisms": "no later Celsus library facade or fifth-century pilgrimage churches as first-century setting; no modern Selcuk/visitor infrastructure",
+      "approval": "architect regional candidate; no archaeological address or native pathfinding certification"
     }
   ]
 }

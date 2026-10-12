@@ -415,7 +415,7 @@ ES: Deja visible el año incierto junto a los quince días.
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Archive households / Hogares del archivo
 

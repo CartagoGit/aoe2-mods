@@ -188,6 +188,30 @@ def audit_dossier(episode):
             and group["minimumAliveOrAlreadySafe"] <= len(set(group["entities"])),
             f"{label}: impossible survival threshold",
         )
+    playstyles = episode.get("playstyles", [])
+    side_ids = {side["id"] for side in episode["secondaryObjectives"]}
+    check(
+        len(playstyles) >= 3
+        and len({style["id"] for style in playstyles}) == len(playstyles),
+        f"{label}: require three distinct authored playstyles",
+    )
+    portfolios = []
+    for style in playstyles:
+        portfolio = style.get("optionalObjectives", [])
+        portfolios.append(frozenset(portfolio))
+        check(
+            bool(portfolio)
+            and len(portfolio) == len(set(portfolio))
+            and set(portfolio) <= side_ids
+            and style.get("costOfOpportunity")
+            and style.get("mainObjectivesUnchanged") is True
+            and style.get("historicalOutcomeUnchanged") is True,
+            f"{label}: invalid playstyle portfolio {style['id']}",
+        )
+    check(
+        len(set(portfolios)) == len(portfolios),
+        f"{label}: repeated playstyle portfolio",
+    )
     screens = episode["screens"]
     keys = [s["key"] for s in screens]
     check(len(keys) == len(set(keys)), f"{label}: duplicate screen key")

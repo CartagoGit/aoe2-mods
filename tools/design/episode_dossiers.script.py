@@ -112,7 +112,7 @@ def wiki(campaign, episode):
         json.dumps(episode["worldContract"], ensure_ascii=False, indent=2),
         "```",
         "",
-        "## Six optional tasks and three combinable playstyles",
+        "## Optional tasks and combinable playstyles",
         "",
     ]
     for o in episode["secondaryObjectives"]:
@@ -322,7 +322,7 @@ def run(check=False):
             )
         campaign["episodes"] = episodes
         campaign["status"] = (
-            "first-act dossiers authored; independent approval and remaining acts pending"
+            "explicit episode dossiers authored; independent approval and remaining episodes pending"
         )
         emit(path, json.dumps(campaign, ensure_ascii=False, indent=2) + "\n", check)
         count += len(episodes)

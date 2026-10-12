@@ -455,7 +455,7 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Market families / Familias del mercado
 

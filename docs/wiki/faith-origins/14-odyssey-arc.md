@@ -475,6 +475,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/09-district-production-corinth/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Acts reports Paul working with Prisca and Aquila in Corinth and staying there eighteen months; the Gallio episode provides a chronological anchor.
 
 ES: Hechos informa que Pablo trabajó con Prisca y Aquila en Corinto y permaneció allí dieciocho meses; el episodio de Galión sirve de ancla cronológica.
@@ -496,6 +498,8 @@ Ciudad de composición probable, no segura.
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/10-copy-and-relay-corinth/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: 1 Thessalonians is commonly dated around 50 CE and is the earliest surviving Pauline letter.
 
@@ -519,6 +523,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/11-distributed-preservation-ephesus/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Galatians preserves a dispute over gentile belonging, circumcision, and the law as argued by Paul.
 
 ES: Gálatas conserva una disputa sobre la pertenencia gentil, la circuncisión y la ley tal como la argumenta Pablo.
@@ -541,6 +547,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/12-bounded-community-aid-ephesus/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: 1 Corinthians addresses multiple community disputes and practices at Corinth.
 
 ES: 1 Corintios aborda diversas disputas y prácticas comunitarias en Corinto.
@@ -550,6 +558,10 @@ ES: 1 Corintios aborda diversas disputas y prácticas comunitarias en Corinto.
 Limit: Primary letter supports the topics but not the selection's c.54–55 date or Ephesus writing location by itself. OUP abstract is not full-text evidence and should be described only as abstract consulted.
 
 Status: consulted
+
+[Additional consulted passage](https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE): 1Cor16:5–9;16:8 stated stay at Ephesus
+
+Limit: Direct authorial statement; exact date and archaeological house not established. Source concerns addressed Corinthian community; playable local Ephesian network fictional.
 
 ### 13. Words for a Distant City
 
@@ -562,6 +574,8 @@ La fecha y ubicación se reconstruyen por indicios internos.
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/13-consignment-and-correspondence-corinth/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Romans 16 attests a network of people and communities in Rome and Phoebe's connection to Cenchreae; Paul says he had not yet visited Rome.
 
@@ -584,6 +598,8 @@ Relato de Hechos no equivale a registro judicial independiente.
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/14-administrative-intrigue-caesarea/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: In Acts' narrative, Paul appeals to Caesar before Festus while held at Caesarea.
 
@@ -608,6 +624,8 @@ Testimonio romano retrospectivo y hostil; no persecución imperial general.
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/15-evacuation-and-recovery-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Tacitus reports that after the Rome fire Nero punished people called Christians and describes Christus' execution under Pilate.
 

@@ -469,7 +469,7 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
 }
 ```
 
-## Six optional tasks and three combinable playstyles
+## Optional tasks and combinable playstyles
 
 ### Hosting households / Hogares de acogida
 
