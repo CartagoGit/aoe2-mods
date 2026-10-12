@@ -1,6 +1,8 @@
 import { readFile } from "node:fs/promises";
-import { destinationKey, hash, type Issue, issue, sourceFile } from "../core";
-import type { Asset } from "../schemas";
+import { type Issue, issue } from "../core/diagnostics.helper";
+import { destinationKey, sourceFile } from "../core/filesystem.helper";
+import { hash } from "../core/serialization.helper";
+import type { Asset } from "../schemas/campaign.schema";
 export function validateAssetDestinations(
   groups: { owner: string; assets: Asset[] }[],
   reservedPaths: string[] = [],

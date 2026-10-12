@@ -3,11 +3,14 @@ import { resolve } from "node:path";
 
 const root = resolve(import.meta.dir, "../..");
 async function cli(...args: string[]) {
-  const p = Bun.spawn([process.execPath, "tools/cli/main.ts", ...args], {
-    cwd: root,
-    stdout: "pipe",
-    stderr: "pipe",
-  });
+  const p = Bun.spawn(
+    [process.execPath, "tools/cli/chronicles.script.ts", ...args],
+    {
+      cwd: root,
+      stdout: "pipe",
+      stderr: "pipe",
+    },
+  );
   const [out, err, code] = await Promise.all([
     new Response(p.stdout).text(),
     new Response(p.stderr).text(),

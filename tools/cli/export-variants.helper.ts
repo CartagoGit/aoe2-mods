@@ -1,13 +1,14 @@
 import { mkdir, rm } from "node:fs/promises";
 import { join } from "node:path";
-import { runAdapter } from "../../packages/aoe2-adapter";
+import { runAdapter } from "../../packages/aoe2-adapter/python-bridge.adapter";
 import {
   compileCampaign,
   validateCampaign,
-} from "../../packages/campaign-compiler";
-import { assertValid, writeJson } from "../../packages/core";
-import type { StringLock } from "../../packages/localization";
-import type { Campaign } from "../../packages/schemas";
+} from "../../packages/campaign-compiler/campaign.compiler";
+import { assertValid } from "../../packages/core/diagnostics.helper";
+import { writeJson } from "../../packages/core/filesystem.helper";
+import type { StringLock } from "../../packages/localization/localization.catalog";
+import type { Campaign } from "../../packages/schemas/campaign.schema";
 export async function exportVariants(
   root: string,
   fixture: Campaign,

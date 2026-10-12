@@ -1,5 +1,5 @@
-import { duplicates, type Issue, issue } from "../core";
-import type { Campaign, Scenario } from "../schemas";
+import { duplicates, type Issue, issue } from "../core/diagnostics.helper";
+import type { Campaign, Scenario } from "../schemas/campaign.schema";
 export function reachable(s: Scenario): Set<string> {
   const blocked = new Set(s.map.blocked.map((p) => `${p.x},${p.y}`));
   const seen = new Set<string>();

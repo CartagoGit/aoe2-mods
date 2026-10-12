@@ -1,7 +1,7 @@
-import { assertValid } from "../core";
-import { validateGameplay } from "../gameplay-validation";
-import type { StringLock } from "../localization";
-import type { Scenario } from "../schemas";
+import { assertValid } from "../core/diagnostics.helper";
+import { validateGameplay } from "../gameplay-validation/gameplay.validator";
+import type { StringLock } from "../localization/localization.catalog";
+import type { Scenario } from "../schemas/campaign.schema";
 export function compileScenario(s: Scenario, lock: StringLock) {
   assertValid(validateGameplay(s));
   const textId = (key: string): number => {

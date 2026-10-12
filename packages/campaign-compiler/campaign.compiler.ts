@@ -1,13 +1,21 @@
-import { assertValid, duplicates, type Issue, issue } from "../core";
-import { validateGameplay, validateVariety } from "../gameplay-validation";
-import { validateHistory } from "../historical-validation";
+import {
+  assertValid,
+  duplicates,
+  type Issue,
+  issue,
+} from "../core/diagnostics.helper";
+import {
+  validateGameplay,
+  validateVariety,
+} from "../gameplay-validation/gameplay.validator";
+import { validateHistory } from "../historical-validation/history.validator";
 import {
   campaignKeys,
   type StringLock,
   validateCatalogs,
-} from "../localization";
-import { compileScenario } from "../scenario-compiler";
-import { type Campaign, campaignSchema } from "../schemas";
+} from "../localization/localization.catalog";
+import { compileScenario } from "../scenario-compiler/scenario.compiler";
+import { type Campaign, campaignSchema } from "../schemas/campaign.schema";
 export function validateCampaign(input: unknown): {
   campaign: Campaign;
   issues: Issue[];

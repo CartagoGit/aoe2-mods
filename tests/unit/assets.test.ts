@@ -5,10 +5,14 @@ import { join } from "node:path";
 import {
   validateAssetDestinations,
   validateAssets,
-} from "../../packages/assets";
-import { hash, portableRelativePath, sourceFile } from "../../packages/core";
-import { validateGlossary } from "../../packages/localization/glossary";
-import type { Asset } from "../../packages/schemas";
+} from "../../packages/assets/assets.validator";
+import {
+  portableRelativePath,
+  sourceFile,
+} from "../../packages/core/filesystem.helper";
+import { hash } from "../../packages/core/serialization.helper";
+import { validateGlossary } from "../../packages/localization/glossary.validator";
+import type { Asset } from "../../packages/schemas/campaign.schema";
 
 test("destinos nativos rechazan alias y colisiones locales/globales", () => {
   const reserved =

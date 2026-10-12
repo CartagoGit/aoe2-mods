@@ -1,9 +1,9 @@
 import { join } from "node:path";
 import { z } from "zod";
-import { jsonFile, sourceFile, writeJson } from "../core";
-import type { StringLock } from "../localization";
-import type { Campaign } from "../schemas";
-import { bindNativeTemplate } from "./templates";
+import { jsonFile, sourceFile, writeJson } from "../core/filesystem.helper";
+import type { StringLock } from "../localization/localization.catalog";
+import type { Campaign } from "../schemas/campaign.schema";
+import { bindNativeTemplate } from "./native-template.adapter";
 
 const manifest = z.strictObject({
   schemaVersion: z.literal(1),

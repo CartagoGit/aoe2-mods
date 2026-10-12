@@ -2,14 +2,12 @@ import { expect, test } from "bun:test";
 import { cp, mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
-import { hash, writeJson } from "../../packages/core";
-import type { Campaign } from "../../packages/schemas";
-import {
-  inspectStaging,
-  loadCampaign,
-  loadProject,
-  validateProject,
-} from "../../tools/cli/project";
+import { writeJson } from "../../packages/core/filesystem.helper";
+import { hash } from "../../packages/core/serialization.helper";
+import type { Campaign } from "../../packages/schemas/campaign.schema";
+import { loadCampaign, loadProject } from "../../tools/cli/project.loader";
+import { validateProject } from "../../tools/cli/project-validation.validator";
+import { inspectStaging } from "../../tools/cli/staging.validator";
 
 const source = resolve(import.meta.dir, "../..");
 const fixture = await loadCampaign(source, "technical-pilot");
