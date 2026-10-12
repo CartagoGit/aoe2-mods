@@ -2,11 +2,18 @@
 	"$schema": "/home/cartago/_projects/delendai/packages/core/schema/delendai.config.schema.json",
 	"cacheDir": ".cache/delendai",
 	"docsDir": "docs/delendai",
-	"convention": {
-		"pluginPathsRoot": "libs",
-		"sourceRoot": "libs"
-	},
 	"plugins": {
+		"git": {
+			"options": {}
+		},
+		"search": {
+			"options": {
+				"roots": [
+					"tools",
+					"docs"
+				]
+			}
+		},
 		"audit": {
 			"options": {
 				"auditDir": "docs/delendai/proposals/done/audits",
@@ -25,16 +32,28 @@
 					"enabled": true,
 					"onCommit": true,
 					"force": "with-lease",
-					"protectedBranches": ["main", "master"],
-					"protectedPrefixes": ["release/", "hotfix/"],
+					"protectedBranches": [
+						"main",
+						"master"
+					],
+					"protectedPrefixes": [
+						"release/",
+						"hotfix/"
+					],
 					"remote": "origin"
 				},
 				"cadence": {
-					"triggers": [{ "kind": "slice" }],
+					"triggers": [
+						{
+							"kind": "slice"
+						}
+					],
 					"sliceScoping": true,
 					"allowForeignChanges": false
 				},
-				"identity": { "mode": "auto" },
+				"identity": {
+					"mode": "auto"
+				},
 				"audit": {
 					"trailer": "co-authored-by",
 					"agentFormat": "${host}/${model}"
@@ -43,30 +62,47 @@
 		},
 		"conventions": {
 			"options": {
-				"roots": ["tools", "docs"]
+				"roots": [
+					"tools",
+					"docs"
+				]
 			}
 		},
 		"deps": {
-			"options": { "manifest": "package.json" }
+			"options": {
+				"manifest": "package.json"
+			}
 		},
 		"docs": {
 			"options": {
-				"roots": ["docs", "README.md"],
-				"extensions": ["md", "mdx"],
-				"ignoreDirs": ["node_modules", ".cache", "dist", "platforms"]
+				"roots": [
+					"docs",
+					"README.md"
+				],
+				"extensions": [
+					"md",
+					"mdx"
+				],
+				"ignoreDirs": [
+					"node_modules",
+					".cache",
+					"dist",
+					"platforms"
+				]
 			}
 		},
 		"error-reporting": {
-			"options": { "enabled": true }
-		},
-		"git": {
-			"options": {}
+			"options": {
+				"enabled": true
+			}
 		},
 		"impact-analysis": {
 			"options": {}
 		},
 		"logs": {
-			"options": { "retentionCount": 10 }
+			"options": {
+				"retentionCount": 10
+			}
 		},
 		"memory": {
 			"options": {
@@ -87,7 +123,18 @@
 				"validationCommand": "bun run validate",
 				"requirePeerReview": true,
 				"folderPolicy": {
-					"ready": ["feat", "fix", "refactor", "chore", "perf", "audit", "docs", "test", "infra", "spike"],
+					"ready": [
+						"feat",
+						"fix",
+						"refactor",
+						"chore",
+						"perf",
+						"audit",
+						"docs",
+						"test",
+						"infra",
+						"spike"
+					],
 					"in-progress": "flat",
 					"review": "flat",
 					"done": "by-kind",
@@ -102,9 +149,6 @@
 		},
 		"rules": {
 			"options": {}
-		},
-		"search": {
-			"options": { "roots": ["tools", "docs"] }
 		},
 		"status-marker": {
 			"options": {}
@@ -124,6 +168,10 @@
 				]
 			}
 		}
+	},
+	"convention": {
+		"pluginPathsRoot": "libs",
+		"sourceRoot": "libs"
 	},
 	"development": {
 		"profile": "shared-checkout-merge",
