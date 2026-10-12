@@ -109,5 +109,30 @@ class DesignAcceptanceTests(unittest.TestCase):
         self.assertTrue(any('supplied survivor intersection' in e for e in errors))
 
 
+    def test_side_reward_cannot_spend_main_recovery_or_create_resources(self):
+        invalid = copy.deepcopy(self.catalogue)
+        mission = invalid['campaigns'][0]['scenarios'][0]
+        reward = next(o for o in mission['secondaryObjectives'] if o['kind'] == 'aid')['effects'][0]
+        reward['resources']['food'] = 10000
+        errors, _ = verify(catalogue=invalid)
+        self.assertTrue(any('optional reward budget drift' in e for e in errors))
+
+    def test_two_optional_receivers_or_lookouts_cannot_share_one_footprint(self):
+        invalid = copy.deepcopy(self.catalogue)
+        objective = next(o for o in invalid['campaigns'][0]['scenarios'][0]['secondaryObjectives'] if o['kind'] == 'aid')
+        objective['world']['zones'][1]['offsetTiles'] = objective['world']['zones'][0]['offsetTiles']
+        errors, _ = verify(catalogue=invalid)
+        self.assertTrue(any('secondary receiving/observation zones overlap' in e for e in errors))
+
+    def test_loading_a_save_cannot_reopen_an_optional_reward(self):
+        invalid = copy.deepcopy(self.catalogue)
+        objective = invalid['campaigns'][0]['scenarios'][0]['secondaryObjectives'][0]
+        objective['stateContract']['persistentAcrossSave'] = False
+        objective['stateContract']['rewardTransaction'].remove('debit reserved stock')
+        errors, _ = verify(catalogue=invalid)
+        self.assertTrue(any('incomplete optional state/persistence guard' in e for e in errors))
+        self.assertTrue(any('undefined atomic optional funding transaction' in e for e in errors))
+
+
 if __name__ == '__main__':
     unittest.main()

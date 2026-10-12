@@ -31,3 +31,7 @@ Ejecuta staging:check --partial cuando la propuesta lo permita; completo sin --p
 ```
 
 El arquitecto mantiene los generadores/verificador del diseño. MiniMax no edita los dossiers generados; los cambios aprobados se realizan en catálogo/perfiles y se regeneran. Cada misión enlaza todos sus objetivos, pantallas, fuentes y coordenadas, evitando que el agente invente trabajo para rellenar una carpeta.
+
+## Ampliación en curso y naming obligatorio
+
+`d00002` prepara odiseas extensas: esta tabla39es la base anterior y no asigna todavía los episodios adicionales. Recupera sus estados reales antes de empezar. Ninguna capacidad faltante pasa a MiniMax por omisión. La base dispone de seis objetivos secundarios por misión, con predicados/financiación/estado/QA y tres estrategias en el catálogo y [plan](../design/odyssey-production-plan.md). Materializa todos esos contratos sin sustituirlos por timers, suministros infinitos ni eliminación de tareas difíciles. Respeta el naming i00004: responsabilidad.tipo.ts, importaciones directas, sin index/barrels y carpetas por dominio.

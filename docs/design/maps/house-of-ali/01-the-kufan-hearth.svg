@@ -37,14 +37,14 @@
 <polyline points="508.54,142.60 486.99,295.15 491.29,422.29 508.54,549.41 573.18,727.40" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
 <polyline points="441.72,473.14 441.72,473.14 271.46,473.14" fill="none" stroke="#94542f" stroke-width="4"/>
 <polyline points="441.72,473.14 459.28,490.69 441.72,473.14 271.46,473.14" fill="none" stroke="#7463a3" stroke-width="4"/>
-<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
-<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
-<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
-<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
-<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
-<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
-<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
-<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
+<circle cx="424.17" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="459.28" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="459.28" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="459.28" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="459.28" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="289.02" cy="473.14" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="441.72" cy="455.58" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="271.46" cy="490.69" r="6" fill="#43714b" fill-opacity=".65"/>
 <circle cx="441.72" cy="473.14" r="7" fill="#2e3740"/>
 <text x="451.72" y="464.14" font-family="sans-serif" font-size="16">1</text>
 <circle cx="491.29" cy="422.29" r="7" fill="#2e3740"/>
@@ -60,7 +60,7 @@
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green dots: optional task controls</text>
 <text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
 <text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
 <text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>

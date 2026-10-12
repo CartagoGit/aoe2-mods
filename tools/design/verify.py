@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 from geography import tile_point
 from objectives import check_objectives
+from secondary import check_optional_objectives
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -84,6 +85,7 @@ def verify(root=ROOT, catalogue=None):
                 check(o['predicate']['requiredCount'] == o['threshold'], f'{label}: threshold mismatch')
                 check(all(e['countedOnce'] for e in o['entities']), f'{label}: repeatable entity delivery')
             check_objectives(s, check, label)
+            check_optional_objectives(s, check, label)
             required = {k:sum(o['predicate']['resourceAmounts'].get(k,0) for o in s['objectivePlan']) for k in ['food','wood','gold','stone']}
             check(required == s['deliveryRequirements'], f'{label}: unaccounted delivery')
             check(set(s['difficulty']) == {'easy', 'standard', 'hard'}, f'{label}: missing difficulty')

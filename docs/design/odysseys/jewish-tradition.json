@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "jewish-tradition",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-a-city-of-names": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the southern civilian quarter",
+          "es-ES": "el barrio civil del sur"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the southern civilian quarter",
+          "es-ES": "Quienes eligen marcharse — el barrio civil del sur"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the southern civilian quarter; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de el barrio civil del sur; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the displaced families register",
+          "es-ES": "el registro de familias desplazadas"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the displaced families register",
+          "es-ES": "Lo que el fuego no debe llevarse — el registro de familias desplazadas"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the displaced families register; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de el registro de familias desplazadas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving refuge households",
+          "es-ES": "los hogares del refugio receptor"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving refuge households",
+          "es-ES": "Un lugar junto al hogar — los hogares del refugio receptor"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the receiving refuge households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de los hogares del refugio receptor; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the southern hillside road",
+          "es-ES": "el camino de la ladera sur"
+        },
+        "title": {
+          "en": "The Path Between — the southern hillside road",
+          "es-ES": "El camino entre ambos — el camino de la ladera sur"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the southern hillside road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de el camino de la ladera sur; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the refuge approaches",
+          "es-ES": "las aproximaciones al refugio"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the refuge approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones al refugio"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the refuge approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al refugio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the southern supply post",
+          "es-ES": "el puesto de suministros del sur"
+        },
+        "title": {
+          "en": "One Honest Consignment — the southern supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros del sur"
+        },
+        "rationale": {
+          "en": "The documented setting of A City of Names supports this bounded fictional local task. It concerns the southern supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Una ciudad de nombres permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros del sur; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-the-hill-and-the-school": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the teaching-copy shelves",
+          "es-ES": "los estantes de copias de enseñanza"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the teaching-copy shelves",
+          "es-ES": "Lo que el fuego no debe llevarse — los estantes de copias de enseñanza"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the teaching-copy shelves; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de los estantes de copias de enseñanza; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the western archive store",
+          "es-ES": "el almacén del archivo occidental"
+        },
+        "title": {
+          "en": "Raise the Store Again — the western archive store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del archivo occidental"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the western archive store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de el almacén del archivo occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Galilean hill road",
+          "es-ES": "la calzada de las colinas de Galilea"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Galilean hill road",
+          "es-ES": "Una remesa honrada — la calzada de las colinas de Galilea"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the Galilean hill road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de la calzada de las colinas de Galilea; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the settlement footpaths",
+          "es-ES": "las sendas entre poblados"
+        },
+        "title": {
+          "en": "The Path Between — the settlement footpaths",
+          "es-ES": "El camino entre ambos — las sendas entre poblados"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the settlement footpaths; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de las sendas entre poblados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the study-house households",
+          "es-ES": "los hogares de las casas de estudio"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the study-house households",
+          "es-ES": "Un lugar junto al hogar — los hogares de las casas de estudio"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the study-house households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de los hogares de las casas de estudio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the lake-facing road junctions",
+          "es-ES": "los cruces de camino orientados al lago"
+        },
+        "title": {
+          "en": "The Road Seen First — the lake-facing road junctions",
+          "es-ES": "El camino visto primero — los cruces de camino orientados al lago"
+        },
+        "rationale": {
+          "en": "The documented setting of The Hill and the School supports this bounded fictional local task. It concerns the lake-facing road junctions; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La colina y la escuela permite esta tarea local ficticia y limitada. Se ocupa de los cruces de camino orientados al lago; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-river-quarter": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the quarter accounts",
+          "es-ES": "las cuentas del barrio"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the quarter accounts",
+          "es-ES": "Lo que el fuego no debe llevarse — las cuentas del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the quarter accounts; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de las cuentas del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Euphrates-side landing",
+          "es-ES": "el embarcadero junto al Éufrates"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Euphrates-side landing",
+          "es-ES": "Una remesa honrada — el embarcadero junto al Éufrates"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the Euphrates-side landing; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de el embarcadero junto al Éufrates; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the riverside store",
+          "es-ES": "el almacén fluvial"
+        },
+        "title": {
+          "en": "Raise the Store Again — the riverside store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén fluvial"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the riverside store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de el almacén fluvial; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the west-quarter lane",
+          "es-ES": "la calle del barrio occidental"
+        },
+        "title": {
+          "en": "The Path Between — the west-quarter lane",
+          "es-ES": "El camino entre ambos — la calle del barrio occidental"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the west-quarter lane; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de la calle del barrio occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the quarter households",
+          "es-ES": "los hogares del barrio"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the quarter households",
+          "es-ES": "Un lugar junto al hogar — los hogares del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the quarter households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de los hogares del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the terrace approaches",
+          "es-ES": "las aproximaciones a la terraza"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the terrace approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones a la terraza"
+        },
+        "rationale": {
+          "en": "The documented setting of The River Quarter supports this bounded fictional local task. It concerns the terrace approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El barrio del río permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a la terraza; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-the-living-margin": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the dispersed teaching copies",
+          "es-ES": "las copias de enseñanza dispersas"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the dispersed teaching copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de enseñanza dispersas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the dispersed teaching copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de las copias de enseñanza dispersas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the lake-to-hill path",
+          "es-ES": "la senda del lago a las colinas"
+        },
+        "title": {
+          "en": "The Path Between — the lake-to-hill path",
+          "es-ES": "El camino entre ambos — la senda del lago a las colinas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the lake-to-hill path; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de la senda del lago a las colinas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the hill archive store",
+          "es-ES": "el almacén del archivo de las colinas"
+        },
+        "title": {
+          "en": "Raise the Store Again — the hill archive store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del archivo de las colinas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the hill archive store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de el almacén del archivo de las colinas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the lake households",
+          "es-ES": "los hogares del lago"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the lake households",
+          "es-ES": "Un lugar junto al hogar — los hogares del lago"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the lake households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de los hogares del lago; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the hill settlement post",
+          "es-ES": "el puesto del poblado de las colinas"
+        },
+        "title": {
+          "en": "One Honest Consignment — the hill settlement post",
+          "es-ES": "Una remesa honrada — el puesto del poblado de las colinas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the hill settlement post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de el puesto del poblado de las colinas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the travelling copyists families",
+          "es-ES": "las familias de copistas itinerantes"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the travelling copyists families",
+          "es-ES": "Quienes eligen marcharse — las familias de copistas itinerantes"
+        },
+        "rationale": {
+          "en": "The documented setting of The Living Margin supports this bounded fictional local task. It concerns the travelling copyists families; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El margen vivo permite esta tarea local ficticia y limitada. Se ocupa de las familias de copistas itinerantes; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

@@ -275,121 +275,18 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
   },
   "explorationPlan": {
-    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
-    "sectors": [
-      {
-        "id": "optional-1",
-        "centreTiles": [
-          86.13,
-          86.13
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "Survey of the approaches — 1",
-          "es-ES": "Inspección de los accesos — 1"
-        },
-        "task": "reveal-reserve-approach",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {},
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": "wave-2 approach",
-        "onceFlag": "02-nicaea.optional-1.claimed",
-        "mandatory": false,
-        "narrator": "imperial-clerk",
-        "response": {
-          "en": "I entered the detour in the margin, where decisions often begin.",
-          "es-ES": "Anoté el desvío al margen, donde a menudo empiezan las decisiones."
-        }
-      },
-      {
-        "id": "optional-2",
-        "centreTiles": [
-          232.87,
-          86.13
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "Survey of the approaches — 2",
-          "es-ES": "Inspección de los accesos — 2"
-        },
-        "task": "collect-finite-cache",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {
-          "food": 300,
-          "wood": 150,
-          "gold": 75,
-          "stone": 0
-        },
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": null,
-        "onceFlag": "02-nicaea.optional-2.claimed",
-        "mandatory": false,
-        "narrator": "imperial-clerk",
-        "response": {
-          "en": "I entered the detour in the margin, where decisions often begin.",
-          "es-ES": "Anoté el desvío al margen, donde a menudo empiezan las decisiones."
-        }
-      },
-      {
-        "id": "optional-3",
-        "centreTiles": [
-          86.13,
-          232.87
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "Survey of the approaches — 3",
-          "es-ES": "Inspección de los accesos — 3"
-        },
-        "task": "reveal-relief-corridor",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {},
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": "relief corridor",
-        "onceFlag": "02-nicaea.optional-3.claimed",
-        "mandatory": false,
-        "narrator": "imperial-clerk",
-        "response": {
-          "en": "I entered the detour in the margin, where decisions often begin.",
-          "es-ES": "Anoté el desvío al margen, donde a menudo empiezan las decisiones."
-        }
-      },
-      {
-        "id": "optional-4",
-        "centreTiles": [
-          232.87,
-          232.87
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "Survey of the approaches — 4",
-          "es-ES": "Inspección de los accesos — 4"
-        },
-        "task": "collect-finite-cache",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {
-          "food": 300,
-          "wood": 150,
-          "gold": 75,
-          "stone": 0
-        },
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": null,
-        "onceFlag": "02-nicaea.optional-4.claimed",
-        "mandatory": false,
-        "narrator": "imperial-clerk",
-        "response": {
-          "en": "I entered the detour in the margin, where decisions often begin.",
-          "es-ES": "Anoté el desvío al margen, donde a menudo empiezan las decisiones."
-        }
-      }
+    "classification": "optional fictional tasks within dated geographic districts; not surveyed ancient locations",
+    "sectors": [],
+    "secondaryObjectiveIds": [
+      "side-1",
+      "side-2",
+      "side-3",
+      "side-4",
+      "side-5",
+      "side-6"
     ],
-    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
-    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+    "connectingTrails": "use main/relief corridors to the task districts; optional travel must not create an extra mandatory crossing",
+    "qualityGate": "certify each task path, safe delivery zone and footprint at all difficulties; geography remains authoritative"
   }
 }
 ```
@@ -955,7 +852,984 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "commander": "named fictional Militia proxy, essential only when objective explicitly requires commander; no sacred unit",
       "recovery": "four preplaced guards released once with protected resources, persisting after save/load"
     }
-  }
+  },
+  "secondaryObjectives": [
+    {
+      "id": "side-1",
+      "kind": "copy",
+      "title": {
+        "en": "What the Fire Must Not Take — the delegation-copy desk",
+        "es-ES": "Lo que el fuego no debe llevarse — la mesa de copias de las delegaciones"
+      },
+      "subject": {
+        "en": "the delegation-copy desk",
+        "es-ES": "la mesa de copias de las delegaciones"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the delegation-copy desk; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de la mesa de copias de las delegaciones; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Recover both separate copies from the delegation-copy desk and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias distintas de la mesa de copias de las delegaciones y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-nicaea.side-1.entity-1",
+              "02-nicaea.side-1.entity-2"
+            ],
+            "destinations": {
+              "02-nicaea.side-1.entity-1": "02-nicaea.side-1.zone-1",
+              "02-nicaea.side-1.entity-2": "02-nicaea.side-1.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-nicaea.side-1.entity-1",
+            "role": "copy",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "02-nicaea.side-1.entity-2",
+            "role": "copy",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-nicaea.side-1.zone-1",
+            "hub": "hub-1",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "unlock-context-and-hint",
+          "target": "documented context and a main-goal hint",
+          "resources": {},
+          "onceFlag": "02-nicaea.side-1.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "sourceIds": [
+            "nicaea"
+          ],
+          "historicalNote": {
+            "en": "The council held at Nicaea in 325 issued a creed and disciplinary canons. Later church divisions did not emerge in a single day.",
+            "es-ES": "El concilio formula credo y normas; disputas no equivalen a una división instantánea católica/ortodoxa. Fletes, alojamientos y sabotajes locales son dramatización."
+          },
+          "hint": {
+            "en": "Receive the three delegations at the lakeside and northern gates.",
+            "es-ES": "Recibe las tres delegaciones en la orilla y las puertas del norte."
+          }
+        }
+      ],
+      "completionFlag": "02-nicaea.side-1.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-1",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-2",
+      "kind": "aid",
+      "title": {
+        "en": "A Place at the Hearth — the arriving households",
+        "es-ES": "Un lugar junto al hogar — los hogares recién llegados"
+      },
+      "subject": {
+        "en": "the arriving households",
+        "es-ES": "los hogares recién llegados"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the arriving households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de los hogares recién llegados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Bring each of the two aid crates to its assigned household at the arriving households. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en los hogares recién llegados. Ventaja: 100 de alimento, 50 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-nicaea.side-2.entity-1",
+              "02-nicaea.side-2.entity-2"
+            ],
+            "destinations": {
+              "02-nicaea.side-2.entity-1": "02-nicaea.side-2.zone-1",
+              "02-nicaea.side-2.entity-2": "02-nicaea.side-2.zone-2"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-nicaea.side-2.entity-1",
+            "role": "aid",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "02-nicaea.side-2.entity-2",
+            "role": "aid",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-nicaea.side-2.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "02-nicaea.side-2.zone-2",
+            "hub": "hub-2",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "wood": 50
+          },
+          "onceFlag": "02-nicaea.side-2.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-nicaea.side-2.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-3",
+      "kind": "trade",
+      "title": {
+        "en": "One Honest Consignment — the lakeside reception post",
+        "es-ES": "Una remesa honrada — el puesto receptor junto al lago"
+      },
+      "subject": {
+        "en": "the lakeside reception post",
+        "es-ES": "el puesto receptor junto al lago"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the lakeside reception post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el puesto receptor junto al lago; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Escort the trader of the lakeside reception post to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
+        "es-ES": "Escolta al comerciante de el puesto receptor junto al lago hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-nicaea.side-3.entity-1"
+            ],
+            "destinations": {
+              "02-nicaea.side-3.entity-1": "02-nicaea.side-3.zone-1"
+            },
+            "requiredCount": 1,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          },
+          {
+            "kind": "atomic-payment",
+            "resources": {
+              "gold": 50
+            },
+            "receipt": "02-nicaea.side-3.payment",
+            "afterArrival": true,
+            "once": true,
+            "protectedRecoveryCannotBeSpent": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-nicaea.side-3.entity-1",
+            "role": "trade",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-nicaea.side-3.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 150,
+            "wood": 50
+          },
+          "onceFlag": "02-nicaea.side-3.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-nicaea.side-3.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-4",
+      "kind": "guide",
+      "title": {
+        "en": "The Path Between — the northern gate road",
+        "es-ES": "El camino entre ambos — el camino de la puerta norte"
+      },
+      "subject": {
+        "en": "the northern gate road",
+        "es-ES": "el camino de la puerta norte"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the northern gate road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el camino de la puerta norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Escort the local guide of the northern gate road to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.",
+        "es-ES": "Escolta al guía local de el camino de la puerta norte hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-nicaea.side-4.entity-1"
+            ],
+            "destinations": {
+              "02-nicaea.side-4.entity-1": "02-nicaea.side-4.zone-1"
+            },
+            "requiredCount": 1,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-nicaea.side-4.entity-1",
+            "role": "guide",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-nicaea.side-4.zone-1",
+            "hub": "hub-3",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "relief corridor",
+          "resources": {},
+          "onceFlag": "02-nicaea.side-4.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "relief"
+        }
+      ],
+      "completionFlag": "02-nicaea.side-4.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-3",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-5",
+      "kind": "repair",
+      "title": {
+        "en": "Raise the Store Again — the delegates store",
+        "es-ES": "Levantar de nuevo el almacén — el almacén de los delegados"
+      },
+      "subject": {
+        "en": "the delegates store",
+        "es-ES": "el almacén de los delegados"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the delegates store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el almacén de los delegados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Pay 50 wood and restore the damaged store of the delegates store to full health. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de el almacén de los delegados. Ventaja: 200 de alimento, 100 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-health",
+            "entity": "02-nicaea.side-5.entity-1",
+            "health": "full",
+            "paymentReceipt": "02-nicaea.side-5.payment",
+            "restoration": "atomic 50-wood repair transaction restores full health; no additional engine repair charge"
+          },
+          {
+            "kind": "atomic-payment",
+            "resources": {
+              "wood": 50
+            },
+            "receipt": "02-nicaea.side-5.payment",
+            "afterArrival": false,
+            "once": true,
+            "protectedRecoveryCannotBeSpent": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-nicaea.side-5.entity-1",
+            "role": "repair",
+            "initialHub": "hub-2",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": false,
+            "initialHealthFraction": 0.5,
+            "damageSource": "fictional prior damage"
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-nicaea.side-5.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 200,
+            "wood": 100
+          },
+          "onceFlag": "02-nicaea.side-5.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-nicaea.side-5.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-2",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-6",
+      "kind": "watch",
+      "title": {
+        "en": "Eyes Beyond the Gate — the road approaches to Nicaea",
+        "es-ES": "Ojos más allá de la puerta — las aproximaciones por carretera a Nicea"
+      },
+      "subject": {
+        "en": "the road approaches to Nicaea",
+        "es-ES": "las aproximaciones por carretera a Nicea"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the road approaches to Nicaea; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones por carretera a Nicea; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Visit both observation posts overlooking the road approaches to Nicaea. Benefit: reveal the first and last reserve approaches.",
+        "es-ES": "Visita los dos puestos de observación sobre las aproximaciones por carretera a Nicea. Ventaja: revela las aproximaciones de la primera y la última reserva."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "02-nicaea.side-6.zone-1",
+              "02-nicaea.side-6.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "02-nicaea.side-6.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              0,
+              -8
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "02-nicaea.side-6.zone-2",
+            "hub": "hub-3",
+            "offsetTiles": [
+              0,
+              8
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "reveal-enemy-approach",
+          "target": "wave-1 and wave-3 approaches",
+          "resources": {},
+          "onceFlag": "02-nicaea.side-6.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "rosterIds": [
+            "wave-1",
+            "wave-3"
+          ],
+          "alreadyReleasedPolicy": "reveal current surviving members, never spawn a replacement"
+        }
+      ],
+      "completionFlag": "02-nicaea.side-6.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    }
+  ],
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 450,
+      "wood": 200,
+      "gold": 0,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 50,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "fundingPolicy": "replace old generic caches, never stack rewards; withdraw once from reserved gatherable stock; all main goals solvent when every optional goal is skipped",
+    "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+  },
+  "playstyles": [
+    {
+      "id": "careful-supply",
+      "optionalObjectives": [
+        "side-5",
+        "side-3",
+        "side-2"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    },
+    {
+      "id": "informed-movement",
+      "optionalObjectives": [
+        "side-4",
+        "side-6",
+        "side-1"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    },
+    {
+      "id": "civilian-and-memory",
+      "optionalObjectives": [
+        "side-2",
+        "side-1",
+        "side-4"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    }
+  ]
 }
 ```
 
@@ -1092,7 +1966,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 3210,
+        "wood": 1500,
+        "gold": 1440,
+        "stone": 800
+      }
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -1214,7 +2094,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 2970,
+        "wood": 1400,
+        "gold": 1280,
+        "stone": 800
+      }
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -1336,7 +2222,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 2850,
+        "wood": 1350,
+        "gold": 1200,
+        "stone": 800
+      }
     }
   },
   "analysis": {
@@ -1358,6 +2250,28 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       "stone": 0
     },
     "solventWithoutOptionalCaches": true
+  },
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 450,
+      "wood": 200,
+      "gold": 0,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 50,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "fundingPolicy": "replace old generic caches, never stack rewards; withdraw once from reserved gatherable stock; all main goals solvent when every optional goal is skipped",
+    "nativeStatus": "design-only; requires certified reusable predicates and native QA"
   }
 }
 ```
@@ -1400,10 +2314,24 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.imperial-church.02-nicaea.victory-personal` / after victory-fact | imperial-clerk → 03-new-capital | I can sign this ledger. I cannot sign for every story told about it. | Puedo firmar este registro. No todas las historias que se cuentan sobre él. |
 | `scenario.imperial-church.02-nicaea.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.imperial-church.02-nicaea.recovery` / 6 minutes without objective progress | imperial-clerk → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
-| `scenario.imperial-church.02-nicaea.optional-1` / optional sector observed/cache claimed; once, independent of main phase | imperial-clerk → return-to-game | Survey of the approaches — 1: The hidden reserve approach is now marked. I entered the detour in the margin, where decisions often begin. | Inspección de los accesos — 1: La aproximación de la reserva está señalada. Anoté el desvío al margen, donde a menudo empiezan las decisiones. |
-| `scenario.imperial-church.02-nicaea.optional-2` / optional sector observed/cache claimed; once, independent of main phase | imperial-clerk → return-to-game | Survey of the approaches — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. I entered the detour in the margin, where decisions often begin. | Inspección de los accesos — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Anoté el desvío al margen, donde a menudo empiezan las decisiones. |
-| `scenario.imperial-church.02-nicaea.optional-3` / optional sector observed/cache claimed; once, independent of main phase | imperial-clerk → return-to-game | Survey of the approaches — 3: The relief route is now marked. I entered the detour in the margin, where decisions often begin. | Inspección de los accesos — 3: La ruta alternativa está señalada. Anoté el desvío al margen, donde a menudo empiezan las decisiones. |
-| `scenario.imperial-church.02-nicaea.optional-4` / optional sector observed/cache claimed; once, independent of main phase | imperial-clerk → return-to-game | Survey of the approaches — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. I entered the detour in the margin, where decisions often begin. | Inspección de los accesos — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Anoté el desvío al margen, donde a menudo empiezan las decisiones. |
+| `scenario.imperial-church.02-nicaea.side-1-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Recover both separate copies from the delegation-copy desk and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de la mesa de copias de las delegaciones y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
+| `scenario.imperial-church.02-nicaea.side-1-completed` / 02-nicaea.side-1.completed latched; once | imperial-clerk → return-to-game | Optional task completed: What the Fire Must Not Take — the delegation-copy desk. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: Lo que el fuego no debe llevarse — la mesa de copias de las delegaciones. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-1-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.imperial-church.02-nicaea.side-2-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Bring each of the two aid crates to its assigned household at the arriving households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en los hogares recién llegados. Ventaja: 100 de alimento, 50 de madera, una vez. |
+| `scenario.imperial-church.02-nicaea.side-2-completed` / 02-nicaea.side-2.completed latched; once | imperial-clerk → return-to-game | Optional task completed: A Place at the Hearth — the arriving households. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: Un lugar junto al hogar — los hogares recién llegados. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-2-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.imperial-church.02-nicaea.side-3-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Escort the trader of the lakeside reception post to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de el puesto receptor junto al lago hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
+| `scenario.imperial-church.02-nicaea.side-3-completed` / 02-nicaea.side-3.completed latched; once | imperial-clerk → return-to-game | Optional task completed: One Honest Consignment — the lakeside reception post. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: Una remesa honrada — el puesto receptor junto al lago. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-3-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.imperial-church.02-nicaea.side-4-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Escort the local guide of the northern gate road to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de el camino de la puerta norte hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| `scenario.imperial-church.02-nicaea.side-4-completed` / 02-nicaea.side-4.completed latched; once | imperial-clerk → return-to-game | Optional task completed: The Path Between — the northern gate road. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: El camino entre ambos — el camino de la puerta norte. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-4-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.imperial-church.02-nicaea.side-5-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Pay 50 wood and restore the damaged store of the delegates store to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de el almacén de los delegados. Ventaja: 200 de alimento, 100 de madera, una vez. |
+| `scenario.imperial-church.02-nicaea.side-5-completed` / 02-nicaea.side-5.completed latched; once | imperial-clerk → return-to-game | Optional task completed: Raise the Store Again — the delegates store. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: Levantar de nuevo el almacén — el almacén de los delegados. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-5-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.imperial-church.02-nicaea.side-6-brief` / optional objectives tab, always available | imperial-clerk → return-to-game | Visit both observation posts overlooking the road approaches to Nicaea. Benefit: reveal the first and last reserve approaches. | Visita los dos puestos de observación sobre las aproximaciones por carretera a Nicea. Ventaja: revela las aproximaciones de la primera y la última reserva. |
+| `scenario.imperial-church.02-nicaea.side-6-completed` / 02-nicaea.side-6.completed latched; once | imperial-clerk → return-to-game | Optional task completed: Eyes Beyond the Gate — the road approaches to Nicaea. The official register seldom recorded who made the journey bearable. | Tarea opcional completada: Ojos más allá de la puerta — las aproximaciones por carretera a Nicea. El registro oficial rara vez anotaba quién hacía soportable el viaje. |
+| `scenario.imperial-church.02-nicaea.side-6-unavailable` / unique optional entity irrecoverably lost; once | imperial-clerk → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
 
 ## Adversarial QA
 

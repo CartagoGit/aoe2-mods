@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "imperial-church",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-milvian-bridge": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the northern Tiber bank",
+          "es-ES": "la ribera norte del Tíber"
+        },
+        "title": {
+          "en": "The Road Seen First — the northern Tiber bank",
+          "es-ES": "El camino visto primero — la ribera norte del Tíber"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the northern Tiber bank; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de la ribera norte del Tíber; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the riverside approach",
+          "es-ES": "la aproximación fluvial"
+        },
+        "title": {
+          "en": "The Path Between — the riverside approach",
+          "es-ES": "El camino entre ambos — la aproximación fluvial"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the riverside approach; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de la aproximación fluvial; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the supply-road depot",
+          "es-ES": "el depósito de la calzada de suministros"
+        },
+        "title": {
+          "en": "Raise the Store Again — the supply-road depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito de la calzada de suministros"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the supply-road depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de el depósito de la calzada de suministros; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the roadside households",
+          "es-ES": "los hogares junto al camino"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the roadside households",
+          "es-ES": "Un lugar junto al hogar — los hogares junto al camino"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the roadside households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de los hogares junto al camino; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the two reserve approaches",
+          "es-ES": "las dos aproximaciones de las reservas"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the two reserve approaches",
+          "es-ES": "Ojos más allá de la puerta — las dos aproximaciones de las reservas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the two reserve approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de las dos aproximaciones de las reservas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian departure register",
+          "es-ES": "el registro de salida de los civiles"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian departure register",
+          "es-ES": "Lo que el fuego no debe llevarse — el registro de salida de los civiles"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Bridge to Rome supports this bounded fictional local task. It concerns the civilian departure register; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último puente hacia Roma permite esta tarea local ficticia y limitada. Se ocupa de el registro de salida de los civiles; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-nicaea": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the delegation-copy desk",
+          "es-ES": "la mesa de copias de las delegaciones"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the delegation-copy desk",
+          "es-ES": "Lo que el fuego no debe llevarse — la mesa de copias de las delegaciones"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the delegation-copy desk; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de la mesa de copias de las delegaciones; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the arriving households",
+          "es-ES": "los hogares recién llegados"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the arriving households",
+          "es-ES": "Un lugar junto al hogar — los hogares recién llegados"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the arriving households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de los hogares recién llegados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the lakeside reception post",
+          "es-ES": "el puesto receptor junto al lago"
+        },
+        "title": {
+          "en": "One Honest Consignment — the lakeside reception post",
+          "es-ES": "Una remesa honrada — el puesto receptor junto al lago"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the lakeside reception post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el puesto receptor junto al lago; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the northern gate road",
+          "es-ES": "el camino de la puerta norte"
+        },
+        "title": {
+          "en": "The Path Between — the northern gate road",
+          "es-ES": "El camino entre ambos — el camino de la puerta norte"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the northern gate road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el camino de la puerta norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the delegates store",
+          "es-ES": "el almacén de los delegados"
+        },
+        "title": {
+          "en": "Raise the Store Again — the delegates store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de los delegados"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the delegates store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de el almacén de los delegados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the road approaches to Nicaea",
+          "es-ES": "las aproximaciones por carretera a Nicea"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the road approaches to Nicaea",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones por carretera a Nicea"
+        },
+        "rationale": {
+          "en": "The documented setting of Voices Beside the Lake supports this bounded fictional local task. It concerns the road approaches to Nicaea; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Voces junto al lago permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones por carretera a Nicea; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-new-capital": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the western harbour store",
+          "es-ES": "el almacén del puerto occidental"
+        },
+        "title": {
+          "en": "Raise the Store Again — the western harbour store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén del puerto occidental"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the western harbour store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de el almacén del puerto occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the harbour consignment post",
+          "es-ES": "el puesto de remesas del puerto"
+        },
+        "title": {
+          "en": "One Honest Consignment — the harbour consignment post",
+          "es-ES": "Una remesa honrada — el puesto de remesas del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the harbour consignment post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de el puesto de remesas del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the western road junction",
+          "es-ES": "el cruce de la calzada occidental"
+        },
+        "title": {
+          "en": "The Path Between — the western road junction",
+          "es-ES": "El camino entre ambos — el cruce de la calzada occidental"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the western road junction; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de el cruce de la calzada occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the builders inventories",
+          "es-ES": "los inventarios de los constructores"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the builders inventories",
+          "es-ES": "Lo que el fuego no debe llevarse — los inventarios de los constructores"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the builders inventories; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de los inventarios de los constructores; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the harbour households",
+          "es-ES": "los hogares del puerto"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the harbour households",
+          "es-ES": "Un lugar junto al hogar — los hogares del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the harbour households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de los hogares del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the northern land approaches",
+          "es-ES": "las aproximaciones terrestres del norte"
+        },
+        "title": {
+          "en": "The Road Seen First — the northern land approaches",
+          "es-ES": "El camino visto primero — las aproximaciones terrestres del norte"
+        },
+        "rationale": {
+          "en": "The documented setting of Where Two Seas Meet supports this bounded fictional local task. It concerns the northern land approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Donde se encuentran dos mares permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones terrestres del norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": []
+}

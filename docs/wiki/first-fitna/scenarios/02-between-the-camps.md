@@ -232,121 +232,18 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
   },
   "explorationPlan": {
-    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
-    "sectors": [
-      {
-        "id": "optional-1",
-        "centreTiles": [
-          96.93,
-          96.93
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "An aid station off the road — 1",
-          "es-ES": "Un puesto de auxilio junto al camino — 1"
-        },
-        "task": "reveal-reserve-approach",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {},
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": "wave-2 approach",
-        "onceFlag": "02-between-the-camps.optional-1.claimed",
-        "mandatory": false,
-        "narrator": "farid-field-medic",
-        "response": {
-          "en": "This detour has no banner. Its shade is enough.",
-          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
-        }
-      },
-      {
-        "id": "optional-2",
-        "centreTiles": [
-          262.07,
-          96.93
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "An aid station off the road — 2",
-          "es-ES": "Un puesto de auxilio junto al camino — 2"
-        },
-        "task": "collect-finite-cache",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {
-          "food": 300,
-          "wood": 150,
-          "gold": 75,
-          "stone": 0
-        },
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": null,
-        "onceFlag": "02-between-the-camps.optional-2.claimed",
-        "mandatory": false,
-        "narrator": "farid-field-medic",
-        "response": {
-          "en": "This detour has no banner. Its shade is enough.",
-          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
-        }
-      },
-      {
-        "id": "optional-3",
-        "centreTiles": [
-          96.93,
-          262.07
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "An aid station off the road — 3",
-          "es-ES": "Un puesto de auxilio junto al camino — 3"
-        },
-        "task": "reveal-relief-corridor",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {},
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": "relief corridor",
-        "onceFlag": "02-between-the-camps.optional-3.claimed",
-        "mandatory": false,
-        "narrator": "farid-field-medic",
-        "response": {
-          "en": "This detour has no banner. Its shade is enough.",
-          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
-        }
-      },
-      {
-        "id": "optional-4",
-        "centreTiles": [
-          262.07,
-          262.07
-        ],
-        "radiusTiles": 30,
-        "title": {
-          "en": "An aid station off the road — 4",
-          "es-ES": "Un puesto de auxilio junto al camino — 4"
-        },
-        "task": "collect-finite-cache",
-        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
-        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
-        "reward": {
-          "food": 300,
-          "wood": 150,
-          "gold": 75,
-          "stone": 0
-        },
-        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
-        "revealTarget": null,
-        "onceFlag": "02-between-the-camps.optional-4.claimed",
-        "mandatory": false,
-        "narrator": "farid-field-medic",
-        "response": {
-          "en": "This detour has no banner. Its shade is enough.",
-          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
-        }
-      }
+    "classification": "optional fictional tasks within dated geographic districts; not surveyed ancient locations",
+    "sectors": [],
+    "secondaryObjectiveIds": [
+      "side-1",
+      "side-2",
+      "side-3",
+      "side-4",
+      "side-5",
+      "side-6"
     ],
-    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
-    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+    "connectingTrails": "use main/relief corridors to the task districts; optional travel must not create an extra mandatory crossing",
+    "qualityGate": "certify each task path, safe delivery zone and footprint at all difficulties; geography remains authoritative"
   }
 }
 ```
@@ -1044,7 +941,988 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "commander": "named fictional Militia proxy, essential only when objective explicitly requires commander; no sacred unit",
       "recovery": "four preplaced guards released once with protected resources, persisting after save/load"
     }
-  }
+  },
+  "secondaryObjectives": [
+    {
+      "id": "side-1",
+      "kind": "extract",
+      "title": {
+        "en": "Those Who Choose to Leave — the dry-quarter civilian groups",
+        "es-ES": "Quienes eligen marcharse — los grupos civiles del barrio seco"
+      },
+      "subject": {
+        "en": "the dry-quarter civilian groups",
+        "es-ES": "los grupos civiles del barrio seco"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the dry-quarter civilian groups; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de los grupos civiles del barrio seco; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Bring both voluntary evacuee groups from the dry-quarter civilian groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de los grupos civiles del barrio seco al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-between-the-camps.side-1.entity-1",
+              "02-between-the-camps.side-1.entity-2"
+            ],
+            "destinations": {
+              "02-between-the-camps.side-1.entity-1": "02-between-the-camps.side-1.zone-1",
+              "02-between-the-camps.side-1.entity-2": "02-between-the-camps.side-1.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-between-the-camps.side-1.entity-1",
+            "role": "extract",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "02-between-the-camps.side-1.entity-2",
+            "role": "extract",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-1.zone-1",
+            "hub": "hub-1",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "gold": 25
+          },
+          "onceFlag": "02-between-the-camps.side-1.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-1.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-1",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-2",
+      "kind": "aid",
+      "title": {
+        "en": "A Place at the Hearth — the receiving care households",
+        "es-ES": "Un lugar junto al hogar — los hogares receptores de cuidados"
+      },
+      "subject": {
+        "en": "the receiving care households",
+        "es-ES": "los hogares receptores de cuidados"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the receiving care households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores de cuidados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Bring each of the two aid crates to its assigned household at the receiving care households. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en los hogares receptores de cuidados. Ventaja: 100 de alimento, 50 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-between-the-camps.side-2.entity-1",
+              "02-between-the-camps.side-2.entity-2"
+            ],
+            "destinations": {
+              "02-between-the-camps.side-2.entity-1": "02-between-the-camps.side-2.zone-1",
+              "02-between-the-camps.side-2.entity-2": "02-between-the-camps.side-2.zone-2"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-between-the-camps.side-2.entity-1",
+            "role": "aid",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "02-between-the-camps.side-2.entity-2",
+            "role": "aid",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-2.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "02-between-the-camps.side-2.zone-2",
+            "hub": "hub-2",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "wood": 50
+          },
+          "onceFlag": "02-between-the-camps.side-2.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-2.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-3",
+      "kind": "copy",
+      "title": {
+        "en": "What the Fire Must Not Take — the civilian admission copies",
+        "es-ES": "Lo que el fuego no debe llevarse — las copias de admisión civil"
+      },
+      "subject": {
+        "en": "the civilian admission copies",
+        "es-ES": "las copias de admisión civil"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the civilian admission copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de las copias de admisión civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Recover both separate copies from the civilian admission copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias distintas de las copias de admisión civil y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-between-the-camps.side-3.entity-1",
+              "02-between-the-camps.side-3.entity-2"
+            ],
+            "destinations": {
+              "02-between-the-camps.side-3.entity-1": "02-between-the-camps.side-3.zone-1",
+              "02-between-the-camps.side-3.entity-2": "02-between-the-camps.side-3.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-between-the-camps.side-3.entity-1",
+            "role": "copy",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "02-between-the-camps.side-3.entity-2",
+            "role": "copy",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-3.zone-1",
+            "hub": "hub-1",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "unlock-context-and-hint",
+          "target": "documented context and a main-goal hint",
+          "resources": {},
+          "onceFlag": "02-between-the-camps.side-3.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "sourceIds": [
+            "ali"
+          ],
+          "historicalNote": {
+            "en": "The Battle of the Camel took place near Basra in 656. The evacuation in this scenario is fictional and does not settle the competing claims.",
+            "es-ES": "Batalla del Camello junto a Basora; disputa de autoridad/lealtad no combate de religiones modernas."
+          },
+          "hint": {
+            "en": "Open the dry corridor west of the irrigated quarter.",
+            "es-ES": "Abre el corredor seco al oeste del barrio irrigado."
+          }
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-3.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-1",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-4",
+      "kind": "guide",
+      "title": {
+        "en": "The Path Between — the western dry corridor",
+        "es-ES": "El camino entre ambos — el corredor seco occidental"
+      },
+      "subject": {
+        "en": "the western dry corridor",
+        "es-ES": "el corredor seco occidental"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the western dry corridor; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de el corredor seco occidental; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Escort the local guide of the western dry corridor to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.",
+        "es-ES": "Escolta al guía local de el corredor seco occidental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "02-between-the-camps.side-4.entity-1"
+            ],
+            "destinations": {
+              "02-between-the-camps.side-4.entity-1": "02-between-the-camps.side-4.zone-1"
+            },
+            "requiredCount": 1,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-between-the-camps.side-4.entity-1",
+            "role": "guide",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-4.zone-1",
+            "hub": "hub-3",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "relief corridor",
+          "resources": {},
+          "onceFlag": "02-between-the-camps.side-4.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "relief"
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-4.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-3",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-5",
+      "kind": "repair",
+      "title": {
+        "en": "Raise the Store Again — the care supply store",
+        "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de cuidados"
+      },
+      "subject": {
+        "en": "the care supply store",
+        "es-ES": "el almacén de suministros de cuidados"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the care supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de cuidados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Pay 50 wood and restore the damaged store of the care supply store to full health. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de el almacén de suministros de cuidados. Ventaja: 200 de alimento, 100 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-health",
+            "entity": "02-between-the-camps.side-5.entity-1",
+            "health": "full",
+            "paymentReceipt": "02-between-the-camps.side-5.payment",
+            "restoration": "atomic 50-wood repair transaction restores full health; no additional engine repair charge"
+          },
+          {
+            "kind": "atomic-payment",
+            "resources": {
+              "wood": 50
+            },
+            "receipt": "02-between-the-camps.side-5.payment",
+            "afterArrival": false,
+            "once": true,
+            "protectedRecoveryCannotBeSpent": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "02-between-the-camps.side-5.entity-1",
+            "role": "repair",
+            "initialHub": "hub-2",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": false,
+            "initialHealthFraction": 0.5,
+            "damageSource": "fictional prior damage"
+          }
+        ],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-5.zone-1",
+            "hub": "hub-2",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 200,
+            "wood": 100
+          },
+          "onceFlag": "02-between-the-camps.side-5.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-5.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-2",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-6",
+      "kind": "scout",
+      "title": {
+        "en": "The Road Seen First — the dry corridor approaches",
+        "es-ES": "El camino visto primero — las aproximaciones al corredor seco"
+      },
+      "subject": {
+        "en": "the dry corridor approaches",
+        "es-ES": "las aproximaciones al corredor seco"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "The documented setting of Between the Camps supports this bounded fictional local task. It concerns the dry corridor approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+        "es-ES": "El contexto documentado de Entre los campamentos permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al corredor seco; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+      },
+      "text": {
+        "en": "Scout both marked viewpoints of the dry corridor approaches. Benefit: reveal the second reserve approach.",
+        "es-ES": "Explora los dos miradores señalados de las aproximaciones al corredor seco. Ventaja: revela la aproximación de la segunda reserva."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "02-between-the-camps.side-6.zone-1",
+              "02-between-the-camps.side-6.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "02-between-the-camps.side-6.zone-1",
+            "hub": "hub-1",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "02-between-the-camps.side-6.zone-2",
+            "hub": "hub-3",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "reveal-enemy-approach",
+          "target": "wave-2 approach",
+          "resources": {},
+          "onceFlag": "02-between-the-camps.side-6.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "rosterIds": [
+            "wave-2"
+          ],
+          "alreadyReleasedPolicy": "reveal current surviving members, never spawn a replacement"
+        }
+      ],
+      "completionFlag": "02-between-the-camps.side-6.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-2",
+        "corridorIds": [
+          "main",
+          "relief"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    }
+  ],
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 0,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "fundingPolicy": "replace old generic caches, never stack rewards; withdraw once from reserved gatherable stock; all main goals solvent when every optional goal is skipped",
+    "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+  },
+  "playstyles": [
+    {
+      "id": "careful-supply",
+      "optionalObjectives": [
+        "side-5",
+        "side-2",
+        "side-1"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    },
+    {
+      "id": "informed-movement",
+      "optionalObjectives": [
+        "side-4",
+        "side-6",
+        "side-3"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    },
+    {
+      "id": "civilian-and-memory",
+      "optionalObjectives": [
+        "side-1",
+        "side-2",
+        "side-3"
+      ],
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true,
+      "tradeoff": "optional travel/action consumes time and discretionary resources; reward and route information are bounded; no side route is a mandatory solution"
+    }
+  ]
 }
 ```
 
@@ -1181,7 +2059,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 2360,
+        "wood": 1550,
+        "gold": 1415,
+        "stone": 800
+      }
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -1303,7 +2187,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 2120,
+        "wood": 1450,
+        "gold": 1255,
+        "stone": 800
+      }
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -1425,7 +2315,13 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "recoveryEscortCount": 4,
       "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
-      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts.",
+      "accessibleWithoutOptionalRewards": {
+        "food": 2000,
+        "wood": 1400,
+        "gold": 1175,
+        "stone": 800
+      }
     }
   },
   "analysis": {
@@ -1447,6 +2343,28 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       "stone": 0
     },
     "solventWithoutOptionalCaches": true
+  },
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 0,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "fundingPolicy": "replace old generic caches, never stack rewards; withdraw once from reserved gatherable stock; all main goals solvent when every optional goal is skipped",
+    "nativeStatus": "design-only; requires certified reusable predicates and native QA"
   }
 }
 ```
@@ -1493,10 +2411,24 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.first-fitna.02-between-the-camps.victory-personal` / after victory-fact | farid-field-medic → 03-water-and-words | I will keep both names in the record. Care does not settle the quarrel. | Guardaré ambos nombres en el registro. Cuidar no resuelve la disputa. |
 | `scenario.first-fitna.02-between-the-camps.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.first-fitna.02-between-the-camps.recovery` / 6 minutes without objective progress | farid-field-medic → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
-| `scenario.first-fitna.02-between-the-camps.optional-1` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 1: The hidden reserve approach is now marked. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 1: La aproximación de la reserva está señalada. Este desvío no tiene bandera. Su sombra basta. |
-| `scenario.first-fitna.02-between-the-camps.optional-2` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Este desvío no tiene bandera. Su sombra basta. |
-| `scenario.first-fitna.02-between-the-camps.optional-3` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 3: The relief route is now marked. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 3: La ruta alternativa está señalada. Este desvío no tiene bandera. Su sombra basta. |
-| `scenario.first-fitna.02-between-the-camps.optional-4` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Este desvío no tiene bandera. Su sombra basta. |
+| `scenario.first-fitna.02-between-the-camps.side-1-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Bring both voluntary evacuee groups from the dry-quarter civilian groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de los grupos civiles del barrio seco al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |
+| `scenario.first-fitna.02-between-the-camps.side-1-completed` / 02-between-the-camps.side-1.completed latched; once | farid-field-medic → return-to-game | Optional task completed: Those Who Choose to Leave — the dry-quarter civilian groups. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: Quienes eligen marcharse — los grupos civiles del barrio seco. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-1-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.first-fitna.02-between-the-camps.side-2-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Bring each of the two aid crates to its assigned household at the receiving care households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en los hogares receptores de cuidados. Ventaja: 100 de alimento, 50 de madera, una vez. |
+| `scenario.first-fitna.02-between-the-camps.side-2-completed` / 02-between-the-camps.side-2.completed latched; once | farid-field-medic → return-to-game | Optional task completed: A Place at the Hearth — the receiving care households. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: Un lugar junto al hogar — los hogares receptores de cuidados. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-2-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.first-fitna.02-between-the-camps.side-3-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Recover both separate copies from the civilian admission copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de las copias de admisión civil y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
+| `scenario.first-fitna.02-between-the-camps.side-3-completed` / 02-between-the-camps.side-3.completed latched; once | farid-field-medic → return-to-game | Optional task completed: What the Fire Must Not Take — the civilian admission copies. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: Lo que el fuego no debe llevarse — las copias de admisión civil. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-3-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.first-fitna.02-between-the-camps.side-4-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Escort the local guide of the western dry corridor to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de el corredor seco occidental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| `scenario.first-fitna.02-between-the-camps.side-4-completed` / 02-between-the-camps.side-4.completed latched; once | farid-field-medic → return-to-game | Optional task completed: The Path Between — the western dry corridor. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: El camino entre ambos — el corredor seco occidental. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-4-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.first-fitna.02-between-the-camps.side-5-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Pay 50 wood and restore the damaged store of the care supply store to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de el almacén de suministros de cuidados. Ventaja: 200 de alimento, 100 de madera, una vez. |
+| `scenario.first-fitna.02-between-the-camps.side-5-completed` / 02-between-the-camps.side-5.completed latched; once | farid-field-medic → return-to-game | Optional task completed: Raise the Store Again — the care supply store. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: Levantar de nuevo el almacén — el almacén de suministros de cuidados. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-5-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
+| `scenario.first-fitna.02-between-the-camps.side-6-brief` / optional objectives tab, always available | farid-field-medic → return-to-game | Scout both marked viewpoints of the dry corridor approaches. Benefit: reveal the second reserve approach. | Explora los dos miradores señalados de las aproximaciones al corredor seco. Ventaja: revela la aproximación de la segunda reserva. |
+| `scenario.first-fitna.02-between-the-camps.side-6-completed` / 02-between-the-camps.side-6.completed latched; once | farid-field-medic → return-to-game | Optional task completed: The Road Seen First — the dry corridor approaches. The next wound could wait. Someone had made a little room for care. | Tarea opcional completada: El camino visto primero — las aproximaciones al corredor seco. La siguiente herida podía esperar. Alguien había dejado un poco de sitio para los cuidados. |
+| `scenario.first-fitna.02-between-the-camps.side-6-unavailable` / unique optional entity irrecoverably lost; once | farid-field-medic → return-to-game | This optional task is no longer available. The main objectives remain active. | Esta tarea opcional ya no está disponible. Los objetivos principales siguen activos. |
 
 ## Adversarial QA
 
