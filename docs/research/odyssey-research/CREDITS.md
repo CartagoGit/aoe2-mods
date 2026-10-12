@@ -23,3 +23,5 @@ The Temple of Apollo image needs a more careful time note than “archaic, there
 ## Additional geographic reference
 
 Natural Earth contributors, public-domain populated-places dataset. [Source](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/) · [terms](https://www.naturalearthdata.com/about/terms-of-use/). The exact downloaded snapshot, hash and byte count are in reference-manifest.json. Modern anchors do not establish ancient urban footprints, population or elevation.
+
+Natural Earth contributors, public-domain modern coastline. [Source](https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-coastline/) · [terms](https://www.naturalearthdata.com/about/terms-of-use/). Full snapshot and SHA-256 are in the manifest; historical shorelines and ports require separate reconstruction.

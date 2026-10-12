@@ -1,6 +1,6 @@
 """Check authored design integrity and downloaded references, without claiming gameplay QA."""
 import argparse
-import hashlib
+import runpy
 import json
 import math
 import re
@@ -119,19 +119,19 @@ def verify(root=ROOT, catalogue=None):
                 check(' '.join(chunks) == ' '.join(screen['text'].get(loc, '').split()), f'Caption content lost: {key}')
                 check(all(len(chunk.split()) <= 32 for chunk in chunks), f'Caption too long: {key}')
     manifest = read('docs/design/reference/manifest.json')
-    for a in manifest['assets']:
-        path = (root / a['path']).resolve()
-        check(path.is_relative_to(root.resolve()), f"Unsafe reference path: {a['id']}")
-        if not path.is_file():
-            errors.append(f"Missing reference: {a['id']}")
-            continue
-        content = path.read_bytes()
-        check(len(content) == a['bytes'], f"Reference size drift: {a['id']}")
-        check(hashlib.sha256(content).hexdigest() == a['sha256'], f"Reference hash drift: {a['id']}")
-        check(a['license'] and a['author'] and a['sourcePage'], f"Missing rights: {a['id']}")
-        check(a['productionApproved'] is False, f"Research photo falsely approved: {a['id']}")
-    assignments = read('docs/design/assignments.json')['assignments']
+    audit_references = runpy.run_path(str(ROOT / 'tools/design/research_references.validator.py'))['audit_references']
+    errors.extend(audit_references(root, manifest))
+    odyssey_manifest = root / 'docs/research/odyssey-research/reference-manifest.json'
+    if odyssey_manifest.is_file():
+        errors.extend(audit_references(root, json.loads(odyssey_manifest.read_text(encoding='utf-8'))))
+    assignment_document = read('docs/design/assignments.json')
+    assignments = assignment_document['assignments']
     check({a['campaignId'] for a in assignments} == ids, 'Missing official proposal per campaign')
+    if assignment_document.get('scope', '').startswith('273-episode'):
+        policy = read('docs/design/odyssey-policy.json')
+        odysseys = [read(f'docs/design/odysseys/{row["id"]}.json') for row in policy['campaigns']]
+        audit_assignments = runpy.run_path(str(ROOT / 'tools/design/odyssey_assignments.validator.py'))['audit_assignments']
+        errors.extend(audit_assignments(root, odysseys, assignment_document))
     return errors, {'campaigns':len(campaigns), 'historicalScenarios':sum(len(c['scenarios']) for c in campaigns), 'technicalScenarios':len(data['pilots']), 'historicalScreens':len(keys), 'regions':len(profiles), 'sources':len(sources), 'downloadedReferences':len(manifest['assets'])}
 
 

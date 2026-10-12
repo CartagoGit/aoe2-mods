@@ -459,6 +459,10 @@ Limit: Acts and Galatians cannot be harmonized into one securely identified meet
 
 Status: disputed
 
+[Additional consulted passage](https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=NRSVUE): Galatians 2:1–10
+
+Limit: A retrospective Pauline account; no composition date is asserted. It does not independently establish that this is the same meeting narrated in Acts15 or a transcript of that meeting. Not a physical game object in c49–50.
+
 ### 9. The Weaver's Harbour
 
 [Candidate source](https://dcc.dickinson.edu/greek-new-testament/acts/18): Acts 18; ancla cronológica: inscripción de Galión en Delfos

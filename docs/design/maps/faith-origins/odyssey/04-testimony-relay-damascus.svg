@@ -16,7 +16,8 @@
 <text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
 <text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
 <text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="492" font-family="sans-serif" font-size="12">No coast/DEM is inferred from this plan</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
 <text x="730" y="516" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [36.12, 33.4, 36.48, 33.65]; cosine-corrected longitude; approximate districts</text>
 </svg>

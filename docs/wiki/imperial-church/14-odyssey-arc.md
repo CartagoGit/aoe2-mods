@@ -44,7 +44,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "sourceAuditStatus": "29 consultations attached; corrected selected claims prevail over conflicting raw candidates; independent historical approval pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -288,6 +288,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/25021.htm): Eusebius VC I.35–38; checked narrative of final advance and Maxentius’ death near Rome; Lactantius 44 not consulted directly in this pass.
+
+Limit: No exact 28 October date established by checked Eusebius passage; victory/bridge details are framed as Christian providence in a panegyric.
+
+Status: disputed
+
 ### 2. Promises in the Winter Court
 
 [Candidate source](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm): Lactantius, De mortibus persecutorum 48
@@ -299,6 +305,12 @@ Research candidate (not yet approved narration): Constantino y Licinio negocian 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/200110.htm): Eusebius HE X.5 / Fordham translation of rescript; checked editorial note describing Milan meeting.
+
+Limit: The “negotiation” phrasing is an inference; surviving text is later rescript, not minutes of a conversation. Lactantius page URL in dossier was not opened.
+
+Status: consulted
 
 ### 3. The Doors Returned
 
@@ -312,6 +324,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://sourcebooks.fordham.edu/source/edict-milan.asp): Eusebius HE X.5 as reproduced in Fordham; lines on Nicomedia and restitution.
+
+Limit: The text is not the original Milan instrument; legal order is not proof of uniform practical restitution.
+
+Status: consulted
+
 ### 4. The African Petition
 
 [Candidate source](https://www.fourthcentury.com/donatist-controversy/): Eusebius HE 10; Optatus, Against the Donatists
@@ -323,6 +341,12 @@ Fuentes adversarias y posteriores; no simplificar causas sociales.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Source consultation pending: No exact passage directly consulted for the dossier’s Rome/Ostia hearings; Eusebius HE X.5 mentions a Roman decision only indirectly in the contextual tradition.
+
+Limit: Dossier URLs (Fourth Century/Optatus) not opened in this pass; Rome/Ostia may conflate distinct hearings. Needs primary passage before treating as established.
+
+Status: unavailable
 
 ### 5. The Road to Arles
 
@@ -336,6 +360,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/): Council of Arles page, introductory lines 16–17 and references to canons 1, 8, 20.
+
+Limit: Page’s narrative introduction is modern editorial framing; it gives 1 August 314, while precise dating derives from scholarly reconstruction. Checked summary, not full canonical text.
+
+Status: consulted
+
 ### 6. The Field between Two Eagles
 
 [Candidate source](https://www.britannica.com/biography/Constantine-I-Roman-emperor): Britannica, Constantine, chronology
@@ -347,6 +377,12 @@ The battle is usually dated 316, though some chronologies place it in 314; the c
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Source consultation pending: No accessible primary/academic passage opened for Cibalae in this pass; dossier relies on Britannica.
+
+Limit: Dating 314 vs 316 is disputed; Britannica URL not consulted. Do not present either year as settled here.
+
+Status: unavailable
 
 ### 7. A Day beneath the Law
 
@@ -362,6 +398,12 @@ Dossier status: selection and mechanic authored; full world/objective/balance/sc
 
 [Corrected primary passage](https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm): Codex Justinianus 3.12.2 (3.12.3 in older numbering), Constantine to Helpidius. Later codification preserves a 321 constitution. City rest and rural agricultural exception differ from the June permission for manumission in CTh 2.8.1. No uniform compliance or mandated conversion follows from the text.
 
+[Consulted source](https://www.thelatinlibrary.com/codtheod.html): Codex Theodosianus 2.8.1 (Constantine to Elpidius; Latin transcription, 3 July 321).
+
+Limit: The cited law does not contain the agricultural-work exception; that appears in a different legal context. Replace or remove that claim. Website is a transcription rather than critical edition.
+
+Status: disputed
+
 ### 8. Words over Alexandria
 
 [Candidate source](https://www.newadvent.org/fathers/25021.htm): Eusebius, Life of Constantine II.64–73
@@ -373,6 +415,12 @@ Relato de Eusebio presenta el conflicto como problema de unidad.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/25022.htm): Eusebius VC II.61–64 checked for dispute background and imperial intervention.
+
+Limit: Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.
+
+Status: consulted
 
 ### 9. The Maritsa Crossing
 
@@ -386,6 +434,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/25022.htm): No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.
+
+Limit: Date and military detail remain unverified in this audit; should retain as conventional only with a better source.
+
+Status: unavailable
+
 ### 10. Across the Bright Shore
 
 [Candidate source](https://www.britannica.com/biography/Constantine-I-Roman-emperor): Eusebius VC II; resumen cronológico
@@ -397,6 +451,12 @@ La fuente panegírica de Eusebio requiere cautela.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/25022.htm): No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.
+
+Limit: Do not merge both battles as one event; precise conventional dates need source support.
+
+Status: unavailable
 
 ### 11. Before the Lakeside Council
 
@@ -410,6 +470,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/26011.htm): Socrates HE I.25 checked only for post-Nicaea Antioch context; it does not establish the selected pre-Nicaea suspension claim. Wiley article not consulted.
+
+Limit: Potential confusion with the Antioch synod after Nicaea; specialist article remains unconsulted.
+
+Status: unavailable
+
 ### 12. Many Voices beside the Lake
 
 [Candidate source](https://www.newadvent.org/fathers/3801.htm): Credo y cánones de Nicea
@@ -421,6 +487,12 @@ No creó las iglesias católica y ortodoxa modernas.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/3801.htm): Nicaea page: canon 20; post-council letter paragraph on Easter (lines 93–95).
+
+Limit: Canon 20 is not an Easter-calendar canon. The surviving letter is a post-council report; it does not supply a detailed computational rule or prove uniform compliance.
+
+Status: consulted
 
 ### 13. Stone above the Old City
 
@@ -434,6 +506,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/25023.htm): Eusebius VC III.25–40 checked for imperial church-building at Jerusalem.
+
+Limit: Eusebius is a Christian panegyrist; source establishes patronage and his identification, not independent proof of the biblical site or the exact dating of each work.
+
+Status: consulted
+
 ### 14. A City beneath a New Sky
 
 [Candidate source](https://www.britannica.com/place/Istanbul/History): Chronicon Paschale, annal 330; overview
@@ -446,6 +524,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+Source consultation pending: Chronicon Paschale not directly consulted; Britannica URL not consulted.
+
+Limit: 11 May is a conventional date but remains unverified in this audit; avoid implying all construction occurred on dedication day.
+
+Status: unavailable
+
 ### 15. A Letter beyond the Frontier
 
 [Candidate source](https://www.newadvent.org/fathers/25024.htm): Eusebius, Life of Constantine IV.8–13
@@ -457,6 +541,12 @@ Eusebio presenta al emperador como protector universal; sesgo panegírico.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/25024.htm): Eusebius VC IV.8–13 checked: embassy and Constantine’s letter to the Persian king.
+
+Limit: Eusebius does not establish the dossier’s c.332–333 date in this passage; identify the recipient as Sapor/Shapur only as Eusebius names him. Panegyrical source, not Persian-side confirmation.
+
+Status: consulted
 
 ### 16. The Council on the Shore
 
@@ -472,6 +562,12 @@ Dossier status: selection and mechanic authored; full world/objective/balance/sc
 
 [Corrected primary passage](https://www.newadvent.org/fathers/25024.htm): Eusebius, Life of Constantine IV.41–47. Book III URL in raw candidate does not contain this locator. Eusebius is a partisan biographer.
 
+[Consulted source](https://www.newadvent.org/fathers/25024.htm): Eusebius VC IV.41–47 checked: Tyre proceedings and Jerusalem dedication (IV.47).
+
+Limit: The source is hostile/panegyrical toward Athanasius; separate the Tyre council from Jerusalem dedication. Chronology is not precise enough to imply immediate sequence without qualification.
+
+Status: consulted
+
 ### 17. The Empty Appointment
 
 [Candidate source](https://www.newadvent.org/fathers/26023.htm): Sozomen, HE II.29
@@ -483,6 +579,12 @@ Relatos sobre circunstancias milagrosas son polémicos.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/26022.htm): Sozomen HE II.30 (New Advent 26022), account of Arius’ death.
+
+Limit: Sozomen presents the death as providential punishment and explicitly reports hearsay; date 336 is not established by this passage. The cited dossier URL 26023 is Book III and is wrong for II.29.
+
+Status: disputed
 
 ### 18. The Court without Its Emperor
 
@@ -496,6 +598,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/25024.htm): Eusebius VC IV.61–64 checked for baptism and death at Nicomedia.
+
+Limit: The narrative is an imperial Christian encomium; day 22 May is not independently verified by the passage checked.
+
+Status: consulted
+
 ### 19. Three Seals, One Inheritance
 
 [Candidate source](https://www.newadvent.org/fathers/26012.htm): Socrates Scholasticus, Ecclesiastical History II.1 y 2.25; fuente narrativa de siglo V, no contemporánea.
@@ -507,6 +615,12 @@ La sucesión estuvo marcada por violencia contra miembros de la familia imperial
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.1 / II.25 identified as relevant narrative; checked introductory framing and selected passage context.
+
+Limit: Not a contemporary dispatch; exact territorial division and timing need passage-level audit before detailed map/campaign claims.
+
+Status: consulted
 
 ### 20. The Council That Divided
 
@@ -520,6 +634,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://www.newadvent.org/fathers/3815.htm): Sardica canons page: introduction and selected canons; Anastos link not opened.
+
+Limit: Page’s own date discussion is inconsistent/uncertain (343/344; wider alternatives); avoid a precise date without resolving textual chronology.
+
+Status: disputed
+
 ### 21. The Road Back to Alexandria
 
 [Candidate source](https://www.newadvent.org/fathers/2820.htm): Athanasius, Historia Acephala §§1–2; Socrates, Ecclesiastical History II, regreso y carta imperial: https://www.newadvent.org/fathers/26012.htm
@@ -531,6 +651,12 @@ La Historia Acephala conserva cronología alejandrina valiosa; sus lagunas y tra
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/2820.htm): Historia Acephala §I.2; Socrates HE II contextual account.
+
+Limit: Athanasius’ chronicle is aligned with his side of the dispute; support from imperial letters is broadly reported, but the exact political motives should not be inferred.
+
+Status: consulted
 
 ### 22. The Dispatch from Gaul
 
@@ -544,6 +670,16 @@ Knowledge: fictional dated clerk experience with local placement specified in th
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+Architect-corrected claim EN: Later church histories report that Constans was killed in Gaul during the usurpation of Magnentius in 350. Constantius II still faced a rival; this Milan setting receives news from Gaul rather than depicting the killing.
+
+ES: Las historias eclesiásticas posteriores relatan que Constante murió en la Galia durante la usurpación de Magnencio en 350. Constancio II aún tenía un rival; este escenario de Milán recibe noticias de la Galia y no representa la muerte.
+
+[Consulted source](https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html): Socrates/CCEL passage on Constans’ death in Gaul in 350 and Magnentius.
+
+Limit: Candidate is wrong to say Constantius II became sole emperor in 350; Magnentius remained a rival until defeated in 353. Geographic focus Milan is reception of news, not death site.
+
+Status: disputed
+
 ### 23. Seals at the Western Synod
 
 [Candidate source](https://www.newadvent.org/fathers/2820.htm): Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm
@@ -555,6 +691,20 @@ La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atana
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops were exiled.
+
+ES: Sozomeno describe un concilio en Milán en el que se presionó a los obispos para condenar a Atanasio y se exilió a obispos disidentes.
+
+[Consulted source](https://www.newadvent.org/fathers/2820.htm): Athanasius Historia Acephala and Apologia de Fuga checked for February 356 church raid/escape; no evidence for the Milan hearing in this source.
+
+Limit: Episode has wrong local event/date alignment: Milan hearing and Alexandria raid are distinct episodes. Athanasius is a partisan witness; figures and adversary descriptions require caution.
+
+Status: disputed
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26024.htm): Sozomen, Ecclesiastical HistoryIV.9, Milan council
+
+Limit: Later partisan church history; its theological judgements are attributed to the author. Conventional355 date and exact local hearing logistics are not independent court records. This event is distinct from the Alexandria night raid in356.
 
 ### 24. The Night of the Open Doors
 
@@ -568,6 +718,16 @@ Knowledge: fictional dated clerk experience with local placement specified in th
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+Architect-corrected claim EN: Athanasius reports a nighttime military entry into a church in Alexandria and his escape in 356. This is his partisan testimony, not a neutral transcript or an episode at Milan.
+
+ES: Atanasio relata una entrada militar nocturna en una iglesia de Alejandría y su huida en 356. Es su testimonio partidista, no una transcripción neutral ni un episodio ocurrido en Milán.
+
+[Consulted source](https://www.newadvent.org/fathers/2814.htm): Athanasius Historia Acephala / Apologia de Fuga; exact raid account checked.
+
+Limit: Potential duplicate with episode 23; source is partisan and the reported troop count is not independently verified. Keep only if the two episodes have distinct historical content.
+
+Status: disputed
+
 ### 25. A Formula on the Adriatic Road
 
 [Candidate source](https://www.newadvent.org/fathers/26012.htm): Socrates, Ecclesiastical History II.37–41; la cronología secundaria alojada por CCEL también registra 359: https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf
@@ -579,6 +739,12 @@ Socrates escribe en el siglo V y es pro-niceno. Los sínodos no fueron una únic
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.37 and II.39–40: Ariminum and Seleucia both met in 359, Seleucia divided into factions; the text places Seleucia meeting on 27 September.
+
+Limit: Socrates is a fifth-century pro-Nicene narrator. The selected page supports that these were separate synods, not that they pursued an identical formula or produced a single outcome.
+
+Status: consulted
 
 ### 26. The Temples Open Again
 
@@ -592,6 +758,12 @@ Knowledge: fictional dated clerk experience with local placement specified in th
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html): Ammianus XXII.2 §1 checked for Julian’s entry into Constantinople and sole rule.
+
+Limit: This passage does not support reopening temples/restoring sacrifices; that needs a separate exact source. Ammianus is an admiring pagan narrator.
+
+Status: disputed
+
 ### 27. The Return That Did Not Last
 
 [Candidate source](https://romanletters.org/letters/julian_emperor/24/): Julian, Letter 24 to the Alexandrians (362), sobre el retorno de Atanasio; Ammianus, Res Gestae XXIII–XXV, campaña y muerte en 363: https://tertullian.org/fathers/ammianus_25_book25.htm
@@ -603,6 +775,12 @@ Juliano presenta su conducta como aplicación de la ley; cartas imperiales son r
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://romanletters.org/letters/julian_emperor/24/): Julian Letter 24 checked for order that Athanasius leave Alexandria; Ammianus XXV checked for death during Persian campaign.
+
+Limit: Julian’s letter is polemical; exact wound cause and killer are uncertain. The Persian campaign/death is not a local Alexandria event—present as reported news, not on-map action.
+
+Status: consulted
 
 ### 28. The Weight of an Imperial Word
 
@@ -616,6 +794,12 @@ Knowledge: fictional dated clerk experience with local placement specified in th
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Consulted source](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm): CTh 16.1.2 Latin text and editorial heading checked.
+
+Limit: The constitution is addressed to the people of Constantinople though issued at Thessalonica; it does not prove uniform enforcement, conversion, or universal application. Header date/location should be checked in a critical edition if exact day matters.
+
+Status: consulted
+
 ### 29. Under the Same Eastern Sky
 
 [Candidate source](https://www.papalencyclicals.net/councils/ecum02.htm): Credo y cánones del Concilio de Constantinopla I; la página señala el problema de la transmisión del credo y el estatus inicialmente limitado del concilio.
@@ -627,6 +811,12 @@ El credo conocido como niceno-constantinopolitano se atestigua textualmente en C
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.papalencyclicals.net/councils/ecum02.htm): Council of Constantinople I page, canon 3 and editorial transmission note.
+
+Limit: Canon is about precedence/honor, not a modern Catholic/Orthodox split or unrestricted jurisdiction. Creed text transmission is separate; page is a translation/compilation.
+
+Status: consulted
 
 [Source-audit passage](https://www.papalencyclicals.net/councils/ecum02.htm): Constantinople I: canon 3; creed and canons, but status/transmission caveat
 

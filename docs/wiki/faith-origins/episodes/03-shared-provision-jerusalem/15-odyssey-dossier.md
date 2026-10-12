@@ -16,9 +16,9 @@ EN: The scenario illustrates the communal practices described in Acts. Its two k
 
 ES: El escenario ilustra las prácticas comunitarias que describe Hechos. Sus dos cocinas, cantidades y rondas de entrega son una reconstrucción jugable.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -281,6 +281,16 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -312,7 +322,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
@@ -327,7 +338,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
@@ -342,7 +354,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-4",
@@ -357,7 +370,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.03-shared-provision-jerusalem.distribution-notes-1",
@@ -372,7 +386,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.03-shared-provision-jerusalem.distribution-notes-2",
@@ -387,7 +402,8 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -1506,7 +1522,7 @@ ES: La hospitalidad es voluntaria e independiente de la conversión.
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.fact-intro / intro first | collection-narrator | Acts portrays teaching, meals and sharing within the early Jerusalem community. This is the book’s account, not an independent census or proof that every household lived alike. | Hechos describe enseñanza, comidas y bienes compartidos en la primera comunidad de Jerusalén. Es el relato del libro, no un censo independiente ni una prueba de que todos los hogares vivieran igual. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.persona-intro / after handover | miriam-archive | My grandmother marked the meals in the margins. I used to read only the speeches. She knew a community also had to set a table. | Mi abuela señalaba las comidas en los márgenes. Yo antes solo leía los discursos. Ella sabía que una comunidad también tenía que poner la mesa. |
-| scenario.faith-origins.03-shared-provision-jerusalem.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.03-shared-provision-jerusalem.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.route-help / available from start; repeatable without effect | none | Keep the market, kitchen and delivery notes separate. The marked western path avoids the steep eastern valley. | Distingue el mercado, las cocinas y las notas de reparto. El camino occidental señalado evita el valle escarpado del este. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.o1-goal / phase-1 active | none | Collect four separately marked meal baskets at the market court. | Recoge cuatro cestas de comida con marcas distintas en el patio del mercado. |

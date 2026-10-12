@@ -124,6 +124,24 @@
       "productionApproved": false,
       "attributionRequired": false,
       "shareAlikeRequired": false
+    },
+    {
+      "id": "ne-odyssey-coastline",
+      "path": "docs/research/odyssey-research/geography/ne_10m_coastline.geojson",
+      "downloadUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_coastline.geojson",
+      "sourcePage": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-coastline/",
+      "author": "Natural Earth contributors",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "consulted": "2026-10-12",
+      "sha256": "6f75ae0e0de157b14946e2255eb1f5486d9a13819032e26d4610852d296788f6",
+      "bytes": 10110735,
+      "usage": "Modern regional shoreline controls for map research; not an ancient coastline, harbor footprint or surveyed path.",
+      "version": "Downloaded master snapshot identified by SHA256; no release version inferred.",
+      "modifications": "None; original GeoJSON retained.",
+      "productionApproved": false,
+      "attributionRequired": false,
+      "shareAlikeRequired": false
     }
   ]
 }

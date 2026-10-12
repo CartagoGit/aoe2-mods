@@ -16,9 +16,9 @@ EN: Local success changes no documented execution and proves no ancient refuge o
 
 ES: El éxito local no cambia la ejecución documentada ni demuestra una operación antigua de refugio. El relato histórico y la tarea doméstica ficticia siguen separados.
 
-EN: The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration.
+EN: The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.
 
-ES: Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida.
+ES: Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida.
 
 ```json
 {
@@ -306,6 +306,16 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
   "minimumUsableAreaFraction": 0.45,
   "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
   "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+  "geographicLayers": [
+    {
+      "assetId": "ne-odyssey-coastline",
+      "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+    },
+    {
+      "assetId": "regional-rivers_lake_centerlines",
+      "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+    }
+  ],
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
@@ -337,7 +347,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-2",
@@ -352,7 +363,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-3",
@@ -367,7 +379,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-4",
@@ -382,7 +395,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-5",
@@ -397,7 +411,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-6",
@@ -412,7 +427,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-7",
@@ -427,7 +443,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     },
     {
       "id": "faith-origins.02-civilian-refuge-jerusalem.households-8",
@@ -442,7 +459,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "replacement": "none; no free resurrection",
       "initiallyDelivered": false,
       "originRule": "separate pickup position outside every receiving zone",
-      "generationPolicy": "preplaced and available"
+      "generationPolicy": "preplaced and available",
+      "historicalMaterialPolicy": "fictional local working record or participant; never a surviving ancient original, later canonical book, literal source transcript or independent historical witness"
     }
   ],
   "zones": [
@@ -1575,7 +1593,7 @@ ES: Los viajeros opcionales no pueden completar el registro principal.
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.fact-intro / intro first | collection-narrator | Tacitus, writing decades later, reports the execution of Christus under Tiberius by Pontius Pilate. The conventional dating around 30–33 is reconstructed. The households and refuge journey here are fictional. | Tácito, décadas después, informa de la ejecución de Christus bajo Tiberio por Poncio Pilato. La fecha convencional hacia 30–33 es una reconstrucción. Los hogares y su traslado al refugio son ficticios. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.persona-intro / after handover | miriam-archive | The account names an execution. It does not name these families. I give our reconstruction separate labels so grief does not become false testimony. | El relato nombra una ejecución. No nombra a estas familias. Rotulo nuestra reconstrucción por separado para que el duelo no se convierta en un testimonio falso. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.historical-license / after persona-intro | none | The named gameplay workers, objects, quantities and routes are fictional local reconstruction. Historical persons remain in the attributed narration. | Los trabajadores, objetos, cantidades y rutas jugables son una reconstrucción local ficticia. Las personas históricas permanecen en la narración atribuida. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.route-help / available from start; repeatable without effect | none | Follow the western plateau and southern land approaches. Keep the same household identities through both receiving zones. | Sigue la meseta occidental y los accesos terrestres del sur. Conserva las mismas identidades domésticas en ambas zonas receptoras. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o1-goal / phase-1 active | none | Bring at least six of the same eight households to the southern receiving court alive. | Lleva con vida al menos seis de los mismos ocho hogares al patio receptor del sur. |
