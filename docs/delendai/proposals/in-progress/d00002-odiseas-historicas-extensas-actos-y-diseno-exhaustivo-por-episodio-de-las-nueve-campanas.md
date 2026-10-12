@@ -129,7 +129,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 ### S11 — Catálogo consolidado, propuestas por acto y traspaso mecánico
 - **Status**: pending
 - **DependsOn**: [S2, S3, S4, S5, S6, S7, S8, S9, S10]
-- **Files**: `docs/design/catalog.json`, `docs/design/geography.json`, `docs/design/sources.json`, `docs/design/assignments.json`, `docs/design/README.md`, `docs/handoffs/**`, `docs/qa/campaign-design/**`, `docs/production/**`, `docs/delendai/proposals/**`, `README.md`
+- **Files**: `docs/design/catalog.json`, `docs/design/geography.json`, `docs/design/sources.json`, `docs/design/assignments.json`, `docs/design/README.md`, `docs/design/production-contract.md`, `docs/handoffs/**`, `docs/qa/campaign-design/**`, `docs/production/**`, `docs/delendai/proposals/**`, `README.md`
 - **Gate**: e2e
 - acceptance:
   - "Cada propuesta DelendAI tiene slices por actos/episodios y contratos exactos para MiniMax; revisión independiente y gate antes de integración."
@@ -170,3 +170,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - Cada propuesta DelendAI tiene slices por actos/episodios y contratos exactos para MiniMax; revisión independiente y gate antes de integración.
 - Entradas y cierres con recap/continuación específica, avisos no bloqueantes, cronologías solapadas declaradas e identidad estable.
 - Catálogo consolidado y wiki reproducibles; QA de juego pendiente explicitamente, sin presentar documentación como campaña implementada.
+
+## Requisitos adicionales del propietario
+
+La migración de TypeScript a nombres responsabilidad.tipo.ts sin index/barrels pertenece a i00004. Todos los escenarios deben ofrecer6–8objetivos secundarios viables, cuatro mecánicas y tres formas de jugar; cada tarea fija sus requisitos compuestos, recompensa o consecuencia finita, coste de oportunidad, estado persistente y fallos opcionales que no bloquean la victoria principal. Los fondos se reasignan sin sumar depósitos anteriores; los receptores y miradores son independientes y se auditan espacialmente. Estos criterios se aplican a todos los episodios nuevos además de la base39.
