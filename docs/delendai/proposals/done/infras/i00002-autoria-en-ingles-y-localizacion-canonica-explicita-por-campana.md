@@ -2,12 +2,16 @@
 id: i00002
 title: "Autoria en ingles y localizacion canonica explicita por campana"
 kind: infra
-status: in-progress
+status: done
 type: proposal
 track: campaign-design
 date: 2026-10-12
 shipped-in:
   - "81bf972906ed0bd8d0e591e5014a7ebc219b97ab"
+last-transition-id: 8f23ce37-877d-477a-b457-c07afa9cf39e
+last-correlation-id: 8f23ce37-877d-477a-b457-c07afa9cf39e
+last-transition-from: review
+last-transition-at: 2026-10-12T15:29:01.380Z
 ---
 
 # i00002 — Autoria en ingles y localizacion canonica explicita por campana
@@ -40,6 +44,7 @@ La instrucción del propietario cambia el idioma inicial a inglés; los validado
 - review-implementer: gpt-6
 - review-reviewer: gpt-6.1-sol
 - review-log: approved by gpt-6.1-sol — verified at 81bf972906ed, validate exit 0, tests 45/45 — Independent formal sourceLocale review at integrated81bf972. Baseline infrastructure only; game QA pending.
+- shipped-in: `81bf972906ed`
 
 ## acceptance
 
