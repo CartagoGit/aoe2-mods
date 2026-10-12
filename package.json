@@ -1,0 +1,37 @@
+{
+  "name": "chronicles-of-faith",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "bun": ">=1.4.2"
+  },
+  "scripts": {
+    "validate": "bun run check && bun run test && bun run docs:check && bun run campaign:validate",
+    "check": "tsc --noEmit && biome check packages tools/cli tests config package.json tsconfig.json biome.json",
+    "test": "bun test tests",
+    "build": "bun tools/cli/main.ts build",
+    "docs:check": "bun tools/cli/main.ts docs:check",
+    "i18n:check": "bun tools/cli/main.ts i18n:check",
+    "assets:check": "bun tools/cli/main.ts assets:check",
+    "audio:check": "bun tools/cli/main.ts audio:check",
+    "campaigns:list": "bun tools/cli/main.ts campaigns:list",
+    "campaign:validate": "bun tools/cli/main.ts campaign:validate",
+    "campaign:build": "bun tools/cli/main.ts campaign:build",
+    "release:check": "bun tools/cli/main.ts release:check",
+    "schema:export": "bun tools/cli/main.ts schema:export",
+    "ids:allocate": "bun tools/cli/main.ts ids:allocate",
+    "test:export": "bun tools/cli/main.ts export:check",
+    "audio:build": "bun tools/cli/main.ts audio:build",
+    "campaign:candidate": "bun tools/cli/main.ts campaign:candidate"
+  },
+  "dependencies": {
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.8",
+    "@types/bun": "1.3.10",
+    "typescript": "5.9.3"
+  }
+}

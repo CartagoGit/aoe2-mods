@@ -1,5 +1,4 @@
 {
-	"$schema": "/home/cartago/_projects/delendai/packages/core/schema/delendai.config.schema.json",
 	"cacheDir": ".cache/delendai",
 	"docsDir": "docs/delendai",
 	"plugins": {
@@ -170,14 +169,26 @@
 		}
 	},
 	"convention": {
-		"pluginPathsRoot": "libs",
-		"sourceRoot": "libs"
+		"pluginPathsRoot": "packages",
+		"sourceRoot": "packages"
 	},
 	"development": {
 		"profile": "shared-checkout-merge",
 		"branches": {
 			"integration": "develop",
 			"release": "master"
+		}
+	},
+	"validationMatrix": {
+		"scopes": {
+			"project": [
+				{
+					"command": "bun install --frozen-lockfile"
+				},
+				{
+					"command": "bun run validate"
+				}
+			]
 		}
 	}
 }

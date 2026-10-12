@@ -1,0 +1,28 @@
+# Inicio de MiniMax M3.1
+
+## Cuándo usar este prompt
+
+Tras revisión independiente e integración oficial de la infraestructura en develop. Consulta la auditoría: EXPORT READY del fixture permite empezar contenido acotado; no autoriza publicar un mod ni afirmar GAME VERIFIED. Las comprobaciones del motor pertenecen al arquitecto/tester en la propuesta de compatibilidad. El agente de contenido no debe asumirlas resueltas.
+
+La primera tarea designada es la especificación del piloto técnico de rutas; el piloto narrativo viene después. No empezar por una campaña completa. Los IDs observados se documentan en NEXT-PROPOSALS; recupera los actuales del servidor.
+
+## Prompt inicial completo
+
+```text
+Trabaja como MiniMax M3.1 en el repositorio Crónicas de la Fe. Tu encargo es implementar contenido de campaña mediante las propuestas designadas; la arquitectura ya está definida. Declara tu identidad real: nunca te presentes como el agente arquitecto ni reutilices su lock o revisión.
+
+1. Lee AGENTS.md, README.md, docs/production/plan.md, docs/production/requirements-traceability.md, docs/architecture/overview.md, docs/standards/naming.md y los cinco documentos docs/handoffs/MINIMAX-M3.1-*.md. Comprueba el estado de Git, la base develop, unidades pendientes y cambios de terceros. No trabajes en main ni hagas cambios manuales en develop.
+2. Conecta al DelendAI instalado. Consulta su overview y descubre en tiempo de ejecución las capacidades y esquemas para listar propuestas, consultar detalles/dependencias, entrar en una unidad aislada, reclamar archivos, checkpoints, validación, revisión y publicación. No inventes herramientas, IDs ni frontmatter. Sigue las instrucciones servidas por esa versión.
+3. Verifica que la infraestructura esté revisada e integrada y que los gates de tu tarea se puedan ejecutar. Consulta las propuestas actuales y selecciona exclusivamente el primer slice implementable del piloto técnico de rutas independientes y localización, designado en NEXT-PROPOSALS. Si está bloqueado, identifica su dependencia y conserva ese estado; no lo desbloquees por suposición ni elijas una saga histórica en su lugar.
+4. Lee la propuesta completa, sus fuentes, riesgos, criterios y archivos. Abre la unidad oficial basada en develop, verifica que develop sea ancestro de la unidad y reclama solo los archivos autorizados. No edites packages/, tools/, contratos, versión del escenario ni configuración global fuera de un slice explícito. Si falta una operación real del adaptador, registra una propuesta de infraestructura con reproducción y aceptación; no improvises un binario ni representes un temporizador como una mecánica histórica implementada.
+5. Empieza por el dossier y el brief. Reutiliza docs/templates/wiki-campaign.md y scenario-brief.md; consulta las fuentes primarias y bibliografía académica necesarias. Etiqueta cada afirmación como documentada, disputada, tradición o dramatización. Ningún diálogo inventado será cita histórica. No atribuyas una civilización del juego a una comunidad sin justificar cronología, tecnología, representación y DLC.
+6. Implementa el contenido del slice en su carpeta. Usa schemaVersion 1, JSON UTF-8 sin BOM, naming permanente, claves semánticas y canonical es-ES. Incluye narrador general de colección y narrador particular de campaña, personajes y voces consistentes. Conserva independencia: recomendación y recapitulación opcionales, nunca bloqueo por predecesora. Define mapas, objetivos, derrota, eventos, economía, reservas finitas, alternativas, recuperación de fallos, tres dificultades y QA adversarial. Usa el catálogo generado del motor; no inventes unidades, terrenos o tecnologías.
+7. Las 17 traducciones y voces siguen los contratos y los estados reales de revisión. No escribas números de strings a mano ni renumeres el lock. Cambia el registro global únicamente en su slice con propiedad explícita. No traduzcas IDs de campaña, ruta ni progreso. Cada recurso debe tener hash, origen, autor, licencia, restricciones, destino y aprobación. La generación masiva pagada y la publicación no están autorizadas por este prompt. Reutiliza audio offline o proveedores locales configurados; una voz placeholder no es audio terminado.
+8. Ejecuta bun run validate y los comandos específicos de QUALITY-GATES. Exporta el binario soportado; un ZIP fixture no es entrega final. Para probar narrativa/media completos, usa plantillas nativas acreditadas y campaign:candidate. Registra qué se ejecutó, qué falló y qué necesita AoE2. No inventes resultados de juego ni conviertas estimaciones de balance en mediciones.
+9. Revisa tus cambios frente a cada aceptación. Entrega commit y evidencia mediante DelendAI, solicita revisión independiente y aplica correcciones en la unidad. Nunca apruebes tu propia implementación ni marques done editando Markdown. Integra con publicación oficial; si el gate rechaza, registra causa y preserva la unidad siguiendo el workflow. No resetees ni fuerces develop.
+10. Al cerrar un slice, deja alcance, archivos, comandos/resultados, hash/commit, decisiones, incidencias y siguiente tarea. Continúa únicamente con el siguiente slice designado cuyas dependencias estén satisfechas. Detén el trabajo dependiente si requiere aprobación, revisión o prueba del motor que no puedes realizar; avanza en el resto del alcance autorizado. No construyas el catálogo histórico completo por iniciativa propia.
+
+El éxito es contenido verificable que reutiliza la fábrica y cumple su propuesta; no una colección de carpetas ni un informe de aprobación ficticio.
+```
+
+Para sesiones posteriores usa el prompt de WORKFLOW. La publicación del mod, las revisiones lingüísticas/editoriales y la comprobación dentro de AoE2 requieren sus responsables y evidencia real.
