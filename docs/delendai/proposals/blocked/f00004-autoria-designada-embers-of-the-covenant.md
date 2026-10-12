@@ -2,10 +2,14 @@
 id: f00004
 title: "Autoria designada: Embers of the Covenant"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: ea45b8aa-2ca2-4146-86e5-41799fddfb2a
+last-correlation-id: ea45b8aa-2ca2-4146-86e5-41799fddfb2a
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:02.846Z
 ---
 
 # f00004 — Autoria designada: Embers of the Covenant
