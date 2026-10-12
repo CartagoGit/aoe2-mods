@@ -36,7 +36,7 @@ El usuario exige que las decisiones históricas, geográficas, narrativas y de b
 
 ### S1 — Investigar y entregar todos los dossiers y planes de producción
 - **Status**: done
-- **Files**: `docs/design`, `docs/wiki`, `docs/research`, `docs/handoffs`, `docs/production`, `docs/qa/campaign-design`, `tools/design`, `tools/cli/project.helper.ts`, `docs/delendai/proposals`, `README.md`
+- **Files**: `docs/design`, `docs/wiki`, `docs/research`, `docs/handoffs`, `docs/production`, `docs/qa/campaign-design`, `tools/design`, `tools/cli/project-validation.validator.ts`, `docs/delendai/proposals`, `README.md`
 - **Gate**: e2e
 - acceptance:
   - "Nueve campañas identificadas, cada escenario con historia/fuentes/terreno/objetivos/estados/eventos/recuperación/IA finita y easy/standard/hard explícitos."

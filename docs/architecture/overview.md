@@ -29,7 +29,7 @@ flowchart LR
 | packages/audio | `audio.pipeline.ts`: proveedores, grabaciones, WAV, cache y SRT |
 | packages/assets | `assets.validator.ts`: hashes, procedencia, licencias y resolución PNG |
 | packages/aoe2-adapter | `python-bridge.adapter.ts`, `native-template.adapter.ts`, `native-campaign.renderer.ts` |
-| tools/cli | `chronicles.script.ts` y módulos `*.helper.ts`: comandos, proyecto y políticas de release |
+| tools/cli | `chronicles.script.ts`, `audio-build.pipeline.ts`, `project.loader.ts`, `project-config.schema.ts`, `staging.validator.ts`, `project-validation.validator.ts`, `documentation.validator.ts`, `release.validator.ts` y helpers de candidato/exportación |
 | tools/python | Instalación aislada, escenarios, contenedor y ZIP |
 | campaigns | Especificaciones editables; una carpeta por campaña |
 | docs/wiki | Evidencia histórica y diseño por campaña |
@@ -42,4 +42,4 @@ El build no modifica campañas ni el lock. La asignación de IDs es un comando e
 
 ## Nombres de módulos
 
-Los archivos TypeScript de producción usan `<responsabilidad>.<tipo>.ts`, con responsabilidad en ASCII kebab-case y un sufijo de tipo que refleje lo que contiene (`.schema.ts`, `.helper.ts`, `.validator.ts`, `.compiler.ts`, `.adapter.ts`, `.renderer.ts`, `.script.ts`). Se mantiene cada módulo dentro del directorio de dominio actual. No hay `index.ts` ni barrels: las importaciones nombran el archivo concreto, sin resolución implícita desde la carpeta. Las pruebas conservan el sufijo `*.test.ts` o `*.spec.ts` establecido por el proyecto.
+Los archivos TypeScript de producción usan `<responsabilidad>.<tipo>.ts`, con responsabilidad en ASCII kebab-case y un sufijo de tipo que refleje lo que contiene (`.schema.ts`, `.helper.ts`, `.validator.ts`, `.compiler.ts`, `.adapter.ts`, `.renderer.ts`, `.pipeline.ts`, `.script.ts`). Se mantiene cada módulo dentro del directorio de dominio actual. No hay `index.ts` ni barrels: las importaciones nombran el archivo concreto, sin resolución implícita desde la carpeta. Las pruebas conservan el sufijo `*.test.ts` o `*.spec.ts` establecido por el proyecto.

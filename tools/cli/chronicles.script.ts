@@ -26,19 +26,18 @@ import {
   validateCatalogs,
 } from "../../packages/localization/localization.catalog";
 import { schemas } from "../../packages/schemas/campaign.schema";
-import { buildAudio } from "./audio-build.helper";
+import { buildAudio } from "./audio-build.pipeline";
 import { candidateFingerprint } from "./campaign-candidate.helper";
+import { docsCheck } from "./documentation.validator";
 import { exportVariants } from "./export-variants.helper";
+import { loadCampaign, loadProject } from "./project.loader";
+import { campaignFileSchema } from "./project-config.schema";
 import {
-  campaignFileSchema,
-  docsCheck,
-  inspectStaging,
-  loadCampaign,
-  loadProject,
-  releaseIssues,
   requireProject,
   validateProject,
-} from "./project.helper";
+} from "./project-validation.validator";
+import { releaseIssues } from "./release.validator";
+import { inspectStaging } from "./staging.validator";
 
 const root = resolve(import.meta.dir, "../..");
 async function build(

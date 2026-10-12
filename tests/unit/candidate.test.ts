@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { atomicWrite, writeJson } from "../../packages/core/filesystem.helper";
 import { candidateFingerprint } from "../../tools/cli/campaign-candidate.helper";
-import { loadProject } from "../../tools/cli/project.helper";
+import { loadProject } from "../../tools/cli/project.loader";
 
 const root = resolve(import.meta.dir, "../..");
 test("candidato invalida cambios de contenido y preserva anotaciones de QA", async () => {

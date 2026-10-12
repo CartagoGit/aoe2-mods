@@ -20,12 +20,9 @@ import {
   validateLock,
 } from "../../packages/localization/localization.catalog";
 import { campaignSchema } from "../../packages/schemas/campaign.schema";
-import {
-  languagesSchema,
-  loadCampaign,
-  loadProject,
-  releaseIssues,
-} from "../../tools/cli/project.helper";
+import { loadCampaign, loadProject } from "../../tools/cli/project.loader";
+import { languagesSchema } from "../../tools/cli/project-config.schema";
+import { releaseIssues } from "../../tools/cli/release.validator";
 
 const root = resolve(import.meta.dir, "../..");
 const campaign = await loadCampaign(root, "technical-pilot");

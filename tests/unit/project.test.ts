@@ -5,12 +5,9 @@ import { join, resolve } from "node:path";
 import { writeJson } from "../../packages/core/filesystem.helper";
 import { hash } from "../../packages/core/serialization.helper";
 import type { Campaign } from "../../packages/schemas/campaign.schema";
-import {
-  inspectStaging,
-  loadCampaign,
-  loadProject,
-  validateProject,
-} from "../../tools/cli/project.helper";
+import { loadCampaign, loadProject } from "../../tools/cli/project.loader";
+import { validateProject } from "../../tools/cli/project-validation.validator";
+import { inspectStaging } from "../../tools/cli/staging.validator";
 
 const source = resolve(import.meta.dir, "../..");
 const fixture = await loadCampaign(source, "technical-pilot");

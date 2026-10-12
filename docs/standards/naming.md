@@ -8,6 +8,6 @@ No renombrar campañas publicadas ni namespaces de progreso. Un cambio de esquem
 
 ## Archivos TypeScript de producción
 
-Los módulos de producción usan `<responsabilidad>.<tipo>.ts`: ambos segmentos describen el propósito real del archivo y usan ASCII kebab-case. Ejemplos: `campaign.schema.ts`, `filesystem.helper.ts`, `gameplay.validator.ts`, `scenario.compiler.ts`, `native-campaign.renderer.ts` y `chronicles.script.ts`. Se conservan los directorios de dominio existentes. No se usan `index.ts`, barrels ni imports que dependan de resolución implícita de directorio; cada import apunta al archivo concreto.
+Los módulos de producción usan `<responsabilidad>.<tipo>.ts`: ambos segmentos describen el propósito real del archivo y usan ASCII kebab-case. Ejemplos: `campaign.schema.ts`, `filesystem.helper.ts`, `gameplay.validator.ts`, `scenario.compiler.ts`, `native-campaign.renderer.ts`, `audio-build.pipeline.ts` y `chronicles.script.ts`. Se conservan los directorios de dominio existentes. No se usan `index.ts`, barrels ni imports que dependan de resolución implícita de directorio; cada import apunta al archivo concreto.
 
 Los archivos de prueba conservan la convención existente `*.test.ts` (o `*.spec.ts` donde ya se use), con nombre de responsabilidad descriptivo. Una prueba puede importar el módulo de producción por su ruta explícita.
