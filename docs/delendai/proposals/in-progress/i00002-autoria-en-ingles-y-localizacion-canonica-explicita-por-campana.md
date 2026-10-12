@@ -16,7 +16,7 @@ Aplicar la instrucción posterior del propietario: inglés en como idioma inicia
 
 ## why
 
-TODO: why this work matters now.
+La instrucción del propietario cambia el idioma inicial a inglés; los validadores y CLI actuales presuponen es-ES y deben dejar de hacerlo.
 
 ## non-goals
 
@@ -28,7 +28,7 @@ TODO: why this work matters now.
 
 ### S1 — Seleccionar locale fuente y eliminar supuestos españoles en herramientas
 - **Status**: pending
-- **Files**: `packages/schemas`, `packages/localization`, `tools/cli`, `campaigns/technical-pilot/campaign.json`, `tests/localization.test.ts`, `docs/decisions/0003-english-authoring.md`, `docs/guides/localization.md`
+- **Files**: `packages/schemas`, `packages/localization`, `packages/campaign-compiler`, `tools/cli`, `campaigns/technical-pilot/campaign.json`, `tests/unit/localization.test.ts`, `docs/decisions/0003-english-authoring.md`, `docs/guides/localization.md`
 - **Gate**: e2e
 - acceptance:
   - "Campañas nuevas sourceLocale=en; fixture existente declara es-ES; JSON Schema, CLI y validador usan la fuente declarada."
