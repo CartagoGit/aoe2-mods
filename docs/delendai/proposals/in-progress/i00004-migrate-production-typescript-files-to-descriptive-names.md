@@ -40,6 +40,8 @@ The current package entrypoints hide module ownership behind `index.ts` and seve
 - **Gate**: type
 
 Scope includes all production files under `packages/` and `tools/cli/`, including currently unnamed `index.ts` modules and CLI entrypoints. It includes static and dynamic imports, scripts, TypeScript configuration, tests/fixtures, and non-design documentation references. The chosen basename must reflect the file's existing contents; preserve package/domain folders. Keep test files under their current test naming convention.
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ## acceptance
 
