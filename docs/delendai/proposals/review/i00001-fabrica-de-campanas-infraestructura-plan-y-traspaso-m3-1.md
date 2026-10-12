@@ -2,14 +2,14 @@
 id: i00001
 title: "Fabrica de campanas: infraestructura, plan y traspaso M3.1"
 kind: infra
-status: in-progress
+status: review
 type: proposal
 track: general
 date: 2026-10-12
-last-transition-id: 1c4b6305-8e1e-4a92-bf7f-ed151e58e818
-last-correlation-id: 1c4b6305-8e1e-4a92-bf7f-ed151e58e818
-last-transition-from: ready
-last-transition-at: 2026-10-12T04:04:51.044Z
+last-transition-id: f2a5c131-4ef2-41c4-9bbe-e15cec97db5a
+last-correlation-id: f2a5c131-4ef2-41c4-9bbe-e15cec97db5a
+last-transition-from: in-progress
+last-transition-at: 2026-10-12T11:55:36.246Z
 shipped-in:
   - "69cf3e72ecdfb952d0cc7998790544cb73305068"
 ---
@@ -46,6 +46,7 @@ Repositorio sin infraestructura. La conversación final exige mods independiente
 - review-implementer: gpt-6
 - review-reviewer: gpt-6.1-sol
 - review-log: approved by gpt-6.1-sol — verified at 69cf3e72ecdf, validate exit 0, tests 41/41 — Revisión formal independiente por gpt-6.1-sol, distinto del implementador gpt-6. Código e4f5fc9 validado independientemente y documentación 6a4e0bf revisada; el árbol del hash oficialmente integrado 69cf3e72ecdfb952d0cc7998790544cb73305068 es idéntico a 6a4e0bf (git diff vacío). Incorporado origin/develop mediante merge en unidad review propia. Sin hallazgos bloqueantes. Bootstrap autorizado aplicado y work publish/gate oficial completados según certificación; no se falsea evidencia de AoE2,CI remota,traducciones ni medios. No hay campañas históricas completas implementadas.
+- shipped-in: `69cf3e72ecdf`
 
 ## acceptance
 
