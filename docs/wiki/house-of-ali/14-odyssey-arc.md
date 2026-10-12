@@ -1,6 +1,6 @@
 # The River Remembers / El río recuerda
 
-`house-of-ali` · CDF-I03 · 30 selected episodes · source locale`en`
+`house-of-ali` · CDF-I03 · 30 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 

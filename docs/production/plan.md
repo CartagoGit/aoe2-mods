@@ -35,3 +35,9 @@ Los slices de contenido preparan borradores en staging/campaigns y los materiali
 ## Ampliación solicitada: diseño de todas las campañas
 
 El propietario exige ahora planificación individual de las nueve campañas explícitas del catálogo: ver [índice](../design/README.md) y [contrato deproducción](../design/production-contract.md). La implementación del diseño comprende43 fuentes consultadas con cautelas,39planos regionales,950 pantallas bilingües, nueve biblias de narrador, presupuestos easy/standard/hard estimados y propuestas oficiales de autoría. i00002 declara la fuente inglesa porcampaña conservando el fixture legado. i00003 cubre capacidades reutilizables faltantes; s00001 acredita el motor. No se afirma balance jugado, traducciones aprobadas ni mods completos por tener documentación.
+
+## Encargo vigente de odiseas extensas
+
+La última ampliación del usuario sustituye la extensión de 39 misiones por nueve odiseas: 30/29/30/32/32/30/28/32/30 episodios, 273 en total, cinco actos cada una. Consulta [plan completo](../design/odyssey-production-plan.md) y [selecciones](../design/odyssey-selections.md). La base de 39 contratos conserva identidad y evidencia; no se fuerza su cierre antiguo a mitad de la nueva cronología.
+
+Ocho dossiers ampliados de faith-origins están redactados (313 pantallas y 48 secundarios); aún requieren aprobación histórica, terreno y navegación, capacidades nativas y calibración. Los demás 265 episodios tienen selección, no expediente completo. d00002 y las nueve propuestas de autoría histórica siguen pendientes; ninguna tabla concede a MiniMax permiso para inventar historia, objetivos o mapas. El piloto técnico conserva su alcance acotado y sus propios gates.

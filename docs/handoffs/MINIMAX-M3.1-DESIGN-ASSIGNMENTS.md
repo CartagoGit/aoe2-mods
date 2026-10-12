@@ -1,4 +1,4 @@
-# Asignación cerrada del catálogo a MiniMax M3.1
+# Asignaciones y gates de MiniMax M3.1
 
 Lee [catálogo](../design/README.md), [contrato de producción](../design/production-contract.md), [assignments.json](../design/assignments.json), [arquitectura](../architecture/overview.md) y los cinco documentos originales de traspaso. Recupera los estados actuales de DelendAI antes de elegir slice. La documentación fija qué crear; no cambia estados oficiales ni demuestra que esté GAME VERIFIED.
 
@@ -37,3 +37,7 @@ El arquitecto mantiene los generadores/verificador del diseño. MiniMax no edita
 `d00002` prepara odiseas extensas: esta tabla39es la base anterior y no asigna todavía los episodios adicionales. Recupera sus estados reales antes de empezar. Ninguna capacidad faltante pasa a MiniMax por omisión. La base dispone de seis objetivos secundarios por misión, con predicados/financiación/estado/QA y tres estrategias en el catálogo y [plan](../design/odyssey-production-plan.md). Materializa todos esos contratos sin sustituirlos por timers, suministros infinitos ni eliminación de tareas difíciles. Respeta el naming i00004: responsabilidad.tipo.ts, importaciones directas, sin index/barrels y carpetas por dominio.
 
 La [selección de las nueve odiseas](../design/odyssey-selections.md) contiene los273episodios y enlaza los nuevos documentos `14-odyssey-arc.md`. Cada entrada fija identidad, orden, acto, título EN/es, fecha, localización y operación principal. Es una selección editorial con auditorías de fuentes todavía en curso: no son273expedientes completos. No la uses para rellenar pantallas, nivelación o coordenadas con decisiones tuyas. Los episodios adicionales solo se asignarán tras los expedientes completos de d00002 y las capacidades acreditadas de i00003.
+
+## Expedientes ampliados en revisión
+
+Los ocho primeros episodios de faith-origins tienen expediente legible en `docs/wiki/faith-origins/episodes/<id>/15-odyssey-dossier.md` y fuente editable en `docs/design/odysseys/faith-origins.json`. Los generadores comparten identidad, transacciones, financiación, subtítulos y QA; los hechos, voz personal y decisiones de cada misión son autoría explícita del arquitecto. Hay 313 pantallas y 48 secundarios adicionales. Los expedientes no están aprobados y sus planos SVG muestran controles geográficos, no terreno navegable. No produzcas binarios a partir de estos borradores.

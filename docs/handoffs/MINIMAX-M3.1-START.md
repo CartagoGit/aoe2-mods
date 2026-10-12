@@ -32,3 +32,7 @@ Para sesiones posteriores usa el prompt de WORKFLOW. La publicación del mod, la
 ## Ampliación de diseño vigente
 
 El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+
+## Estado de la ampliación de 273 episodios
+
+El alcance histórico actual es d00002: nueve odiseas con cinco actos y 273 selecciones, no 39 escenarios como extensión final. Hay ocho dossiers ampliados redactados del primer acto de faith-origins, todavía sin aprobación histórica ni mapa nativo acreditado. Las nueve propuestas históricas están bloqueadas. Esta ampliación no autoriza empezar episodios adicionales ni tomar decisiones de balance o geografía. Recupera los estados vivos y respeta las dependencias antes de materializar cualquier slice.

@@ -1,6 +1,6 @@
 # Beyond the Golden Gate / Más allá de la Puerta Dorada
 
-`new-rome` · CDF-C04 · 32 selected episodes · source locale`en`
+`new-rome` · CDF-C04 · 32 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 
