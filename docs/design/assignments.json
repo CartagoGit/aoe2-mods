@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "created": "2026-10-12",
+  "assignments": [
+    {
+      "campaignId": "faith-origins",
+      "proposalId": "f00004",
+      "path": "ready/feats/f00004-autoria-designada-embers-of-the-covenant.md"
+    },
+    {
+      "campaignId": "imperial-church",
+      "proposalId": "f00003"
+    },
+    {
+      "campaignId": "jewish-tradition",
+      "proposalId": "f00005",
+      "path": "ready/feats/f00005-autoria-designada-keepers-of-the-unbroken-word.md"
+    },
+    {
+      "campaignId": "church-of-rome",
+      "proposalId": "f00006",
+      "path": "ready/feats/f00006-autoria-designada-the-keys-of-the-eternal-city.md"
+    },
+    {
+      "campaignId": "new-rome",
+      "proposalId": "f00007",
+      "path": "ready/feats/f00007-autoria-designada-beyond-the-golden-gate.md"
+    },
+    {
+      "campaignId": "first-caliphs",
+      "proposalId": "f00008",
+      "path": "ready/feats/f00008-autoria-designada-beneath-the-desert-stars.md"
+    },
+    {
+      "campaignId": "first-fitna",
+      "proposalId": "f00009",
+      "path": "ready/feats/f00009-autoria-designada-the-shattered-oath.md"
+    },
+    {
+      "campaignId": "umayyads",
+      "proposalId": "f00010",
+      "path": "ready/feats/f00010-autoria-designada-from-damascus-to-the-far-horizon.md"
+    },
+    {
+      "campaignId": "house-of-ali",
+      "proposalId": "f00011",
+      "path": "ready/feats/f00011-autoria-designada-the-river-remembers.md"
+    }
+  ],
+  "capabilitiesProposal": "i00003",
+  "technicalPilotProposal": "f00001",
+  "historicalPilotProposal": "f00002",
+  "compatibilityProposal": "s00001",
+  "designProposal": "d00001",
+  "englishProposal": "i00002"
+}
