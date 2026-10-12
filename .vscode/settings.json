@@ -197,7 +197,7 @@
     //   "registry" -> permitir únicamente servidores del registry autorizado
     //   "all"      -> permitir cualquier servidor MCP instalado
     //
-    // Usamos "all" porque este workspace depende del servidor local `lx-app`
+    // Usamos "all" porque este workspace depende del servidor local mcp
     // y no queremos que una restricción de origen impida arrancarlo.
     //
     // Esto controla acceso a los servidores MCP; las reglas concretas sobre qué
