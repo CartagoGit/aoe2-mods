@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "technical-pilot",
+  "publicId": "CDF-T00",
+  "internalName": "CDF_TechnicalPilot",
+  "titleKey": "campaign.technical-pilot.title",
+  "descriptionKey": "campaign.technical-pilot.description",
+  "mode": "aoe2-de",
+  "status": "fixture",
+  "recommendedPrevious": [],
+  "enforceRequirement": false,
+  "generalNarrator": {
+    "id": "collection-narrator",
+    "role": "general",
+    "identity": "Identidad sintética para probar contratos",
+    "kind": "fictional",
+    "perspective": "Documental; no testimonios históricos",
+    "register": "Claro y natural",
+    "age": "Adulta",
+    "pace": "Pausado",
+    "justification": "Fixture técnico sin atribución histórica",
+    "restrictions": [
+      "No imitar personas reales"
+    ],
+    "voices": {
+      "es-ES": {
+        "provider": "recorded",
+        "voice": "collection-narrator-es",
+        "accent": "es-ES natural",
+        "license": "Original pendiente de grabación",
+        "review": "draft"
+      },
+      "en": {
+        "provider": "recorded",
+        "voice": "collection-narrator-en",
+        "accent": "English natural",
+        "license": "Original pendiente de grabación",
+        "review": "draft"
+      }
+    }
+  },
+  "campaignNarrator": {
+    "id": "pilot-chronicle",
+    "role": "campaign",
+    "identity": "Identidad sintética para probar contratos",
+    "kind": "fictional",
+    "perspective": "Documental; no testimonios históricos",
+    "register": "Claro y natural",
+    "age": "Adulta",
+    "pace": "Pausado",
+    "justification": "Fixture técnico sin atribución histórica",
+    "restrictions": [
+      "No imitar personas reales"
+    ],
+    "voices": {
+      "es-ES": {
+        "provider": "recorded",
+        "voice": "pilot-chronicle-es",
+        "accent": "es-ES natural",
+        "license": "Original pendiente de grabación",
+        "review": "draft"
+      },
+      "en": {
+        "provider": "recorded",
+        "voice": "pilot-chronicle-en",
+        "accent": "English natural",
+        "license": "Original pendiente de grabación",
+        "review": "draft"
+      }
+    }
+  },
+  "characters": [],
+  "sources": [],
+  "claims": [],
+  "introduction": [
+    {
+      "id": "campaign-intro",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.technical-pilot.intro",
+      "claimIds": [],
+      "delivery": "Documental",
+      "durationSeconds": 5
+    }
+  ],
+  "epilogue": [
+    {
+      "id": "campaign-outro",
+      "speaker": "pilot-chronicle",
+      "textKey": "campaign.technical-pilot.outro",
+      "claimIds": [],
+      "delivery": "Documental",
+      "durationSeconds": 5
+    }
+  ],
+  "scenarioFiles": [
+    "scenarios/01-technical-battle/scenario.json"
+  ],
+  "localization": [
+    {
+      "locale": "es-ES",
+      "status": "draft",
+      "reviewer": "Fixture no revisado lingüísticamente",
+      "strings": {
+        "campaign.technical-pilot.title": "Laboratorio de campañas",
+        "campaign.technical-pilot.description": "Fixture de exportación; no campaña histórica publicable.",
+        "campaign.technical-pilot.intro": "Este laboratorio comprueba el sistema de campañas.",
+        "campaign.technical-pilot.outro": "La prueba ha terminado.",
+        "scenario.technical-battle.title": "Dos objetivos ordenados",
+        "scenario.technical-battle.prepare": "Espera cinco segundos antes de completar la batalla.",
+        "scenario.technical-battle.defeat-guard": "Derrota a la guardia rival.",
+        "scenario.technical-battle.intro": "Conserva tu guardia y derrota al rival.",
+        "scenario.technical-battle.outro": "La decisión se registra sin borrar rutas anteriores."
+      }
+    },
+    {
+      "locale": "en",
+      "status": "draft",
+      "reviewer": "Fixture no revisado lingüísticamente",
+      "strings": {
+        "campaign.technical-pilot.title": "Campaign laboratory",
+        "campaign.technical-pilot.description": "Export fixture; not a publishable historical campaign.",
+        "campaign.technical-pilot.intro": "This laboratory checks the campaign system.",
+        "campaign.technical-pilot.outro": "The test is complete.",
+        "scenario.technical-battle.title": "Two ordered objectives",
+        "scenario.technical-battle.prepare": "Wait five seconds before completing the battle.",
+        "scenario.technical-battle.defeat-guard": "Defeat the opposing guard.",
+        "scenario.technical-battle.intro": "Keep your guard alive and defeat the opponent.",
+        "scenario.technical-battle.outro": "The decision is recorded without deleting previous routes."
+      }
+    }
+  ],
+  "assets": [],
+  "editorial": {
+    "neutrality": "Fixture sin relato religioso",
+    "sensitiveDepictions": "Sin representaciones sagradas",
+    "anachronisms": "Civilización utilizada exclusivamente para prueba",
+    "review": "draft",
+    "reviewer": "Pendiente"
+  },
+  "compatibility": [
+    {
+      "id": "game-load",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "save-load",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "progress-cross-campaign",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "multi-mod-i18n",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "difficulty",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "slideshow",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    },
+    {
+      "id": "audio",
+      "result": "pending",
+      "gameBuild": "Pendiente",
+      "platform": "Pendiente",
+      "artifactSha256": "Pendiente",
+      "reviewer": "Pendiente",
+      "notes": "Requiere pruebas en AoE2"
+    }
+  ]
+}
