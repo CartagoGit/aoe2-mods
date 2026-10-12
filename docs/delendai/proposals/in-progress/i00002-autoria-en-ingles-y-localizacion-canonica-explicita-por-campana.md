@@ -34,6 +34,8 @@ La instrucción del propietario cambia el idioma inicial a inglés; los validado
   - "Campañas nuevas sourceLocale=en; fixture existente declara es-ES; JSON Schema, CLI y validador usan la fuente declarada."
   - "Pruebas significativas de catálogo fuente inglés y falta de sourceLocale, integridad de claves/placeholders y IDs existentes estables."
   - "bun run validate pasa y revisión formal independiente requerida antes de cerrar."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ## acceptance
 
