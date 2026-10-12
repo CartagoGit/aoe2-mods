@@ -2,10 +2,14 @@
 id: f00005
 title: "Autoria designada: Keepers of the Unbroken Word"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 0e3540ac-c57e-420f-921c-ad4c2635f091
+last-correlation-id: 0e3540ac-c57e-420f-921c-ad4c2635f091
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:10.781Z
 ---
 
 # f00005 — Autoria designada: Keepers of the Unbroken Word
