@@ -30,11 +30,11 @@ El usuario exige que las decisiones históricas, geográficas, narrativas y de b
 
 ### S1 — Investigar y entregar todos los dossiers y planes de producción
 - **Status**: pending
-- **Files**: `docs/design`, `docs/wiki`, `docs/research`, `docs/handoffs`, `docs/production`, `docs/qa/campaign-design`, `tools/design`, `docs/delendai/proposals`, `README.md`
+- **Files**: `docs/design`, `docs/wiki`, `docs/research`, `docs/handoffs`, `docs/production`, `docs/qa/campaign-design`, `tools/design`, `tools/cli/project.ts`, `docs/delendai/proposals`, `README.md`
 - **Gate**: e2e
 - acceptance:
   - "Nueve campañas identificadas, cada escenario con historia/fuentes/terreno/objetivos/estados/eventos/recuperación/IA finita y easy/standard/hard explícitos."
-  - "Cada pantalla tiene texto es-ES, narrador, ilustración de referencia, claves/condición y destino; sucesoras/antecesoras y claves acumulativas exactas, sin bloqueos."
+  - "Cada pantalla tiene texto inglés y es-ES, narrador, ilustración de referencia, claves/condición y destino; sucesoras/antecesoras y claves acumulativas exactas, sin bloqueos."
   - "Descargas reales locales con licencia/procedencia/hash y mapas esquemáticos con controles geográficos; incertidumbres de historia y reconstrucción etiquetadas."
   - "Propuestas oficiales de autoría con slices que apuntan a cada dossier, mapas, pantallas y presupuesto; DSL insuficiente deriva a infraestructura, no temporizadores de sustitución."
   - "Validación de integridad de planes y descarga, bun run validate, revisión independiente e integración oficial."
