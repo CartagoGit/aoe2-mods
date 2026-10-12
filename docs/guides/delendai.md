@@ -4,6 +4,8 @@ Este repositorio se ha adoptado mediante el servidor conectado. La configuració
 
 Abrir una unidad oficial basada en develop, reclamar archivos, validar, entregar a revisión independiente y publicar mediante el workflow declarado. Guardar checkpoints y estado con las herramientas actuales. Una propuesta sin ID se crea dentro de una unidad de creación oficial; nunca redactar frontmatter o mover carpetas por cuenta propia.
 
+En la versión instalada, la revisión técnica puede comprobar el WIP, pero approve exige que evidence.commitHash ya pertenezca a develop. Secuencia acreditada: validación y revisión técnica → work publish con gate declarado en HEAD de develop → unidad review propia de otro modelo real → aprobación formal del hash integrado → publicación del veredicto/cierre según runtime. No usar el SHA de develop para acreditar otro commit ni inventar sufijos de agente. La identidad es el ID literal del modelo declarado por el host; review es el kind de unidad.
+
 Si una sesión se interrumpe: leer AGENTS y handoffs; consultar Git, unidad y locks; localizar el slice propio, su commit y gate; reconciliar develop sin reescribir trabajo compartido; continuar únicamente el alcance concedido. No repetir una operación con rechazo permanente sin resolver la causa.
 
 El perfil actual exige un gate declarado en el HEAD de develop antes de aceptar merges. Declararlo solo dentro del candidato no satisface esa política. Si el repositorio de arranque no lo tiene, la integración queda bloqueada hasta bootstrap legítimo por el propietario; no omitirlo ni hacer push manual de develop.
