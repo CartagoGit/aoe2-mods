@@ -6,6 +6,8 @@ status: in-progress
 type: proposal
 track: campaign-design
 date: 2026-10-12
+shipped-in:
+  - "81bf972906ed0bd8d0e591e5014a7ebc219b97ab"
 ---
 
 # d00001 — Diseno exhaustivo del catalogo historico: pantallas mapas balance y continuidad
@@ -29,7 +31,7 @@ El usuario exige que las decisiones históricas, geográficas, narrativas y de b
 - global_gate: e2e
 
 ### S1 — Investigar y entregar todos los dossiers y planes de producción
-- **Status**: pending
+- **Status**: done
 - **Files**: `docs/design`, `docs/wiki`, `docs/research`, `docs/handoffs`, `docs/production`, `docs/qa/campaign-design`, `tools/design`, `tools/cli/project.ts`, `docs/delendai/proposals`, `README.md`
 - **Gate**: e2e
 - acceptance:
@@ -38,8 +40,10 @@ El usuario exige que las decisiones históricas, geográficas, narrativas y de b
   - "Descargas reales locales con licencia/procedencia/hash y mapas esquemáticos con controles geográficos; incertidumbres de historia y reconstrucción etiquetadas."
   - "Propuestas oficiales de autoría con slices que apuntan a cada dossier, mapas, pantallas y presupuesto; DSL insuficiente deriva a infraestructura, no temporizadores de sustitución."
   - "Validación de integridad de planes y descarga, bun run validate, revisión independiente e integración oficial."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 81bf972906ed, validate exit 0, tests 45/45 — Formal independent review baseline9campaigns39scenarios only; later long-odyssey expansion excluded. No gameVerified.
 
 ## acceptance
 
