@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "proposal": "s00001",
+  "slice": "S3",
+  "scope": "media",
+  "kind": "manual-engine-test-plan",
+  "status": "pending",
+  "reason": "AoE2 no ejecutado en este entorno",
+  "evidenceRequired": [
+    "gameBuild",
+    "platform",
+    "artifactSha256",
+    "reviewer",
+    "steps",
+    "observations",
+    "attachments"
+  ],
+  "cases": [
+    {
+      "id": "native-template-provenance",
+      "status": "pending"
+    },
+    {
+      "id": "general-narrator",
+      "status": "pending"
+    },
+    {
+      "id": "campaign-narrator",
+      "status": "pending"
+    },
+    {
+      "id": "images-subtitles-audio",
+      "status": "pending"
+    },
+    {
+      "id": "campaign-variable-condition",
+      "status": "pending"
+    },
+    {
+      "id": "optional-recommendation",
+      "status": "pending"
+    }
+  ]
+}
