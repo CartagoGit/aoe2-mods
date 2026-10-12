@@ -71,15 +71,23 @@
 <polyline points="313.19,649.19 318.95,649.19" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="318.95,649.19 313.39,648.63" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="684.95,122.51 642.82,174.58 558.54,268.33 465.84,372.49 415.28,466.25 305.72,539.18" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
-<polyline points="642.82,174.58 465.84,372.49 398.42,560.00" fill="none" stroke="#94542f" stroke-width="4"/>
-<polyline points="642.82,174.58 582.40,301.61 465.84,372.49 398.42,560.00" fill="none" stroke="#7463a3" stroke-width="4"/>
+<polyline points="398.42,560.00 465.84,372.49 398.42,560.00" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="398.42,560.00 446.16,480.28 465.84,372.49 398.42,560.00" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
 <circle cx="465.84" cy="372.49" r="7" fill="#2e3740"/>
 <text x="475.84" y="363.49" font-family="sans-serif" font-size="16">1</text>
 <circle cx="642.82" cy="174.58" r="7" fill="#2e3740"/>
 <text x="652.82" y="165.58" font-family="sans-serif" font-size="16">2</text>
 <circle cx="398.42" cy="560.00" r="7" fill="#2e3740"/>
 <text x="408.42" y="551.00" font-family="sans-serif" font-size="16">3</text>
-<circle cx="642.82" cy="174.58" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="398.42" cy="560.00" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
 <circle cx="465.84" cy="372.49" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
 <circle cx="398.42" cy="560.00" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
 <text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
@@ -88,14 +96,15 @@
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
-<text x="770" y="273" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
-<text x="770" y="297" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
-<text x="770" y="360" font-family="sans-serif" font-size="13">1: Great Zab regional crossing, uncertai</text>
-<text x="770" y="380" font-family="monospace" font-size="12">[43.49, 36.06] → [242.73, 163.87]</text>
-<text x="770" y="423" font-family="sans-serif" font-size="13">2: Northeast river corridor</text>
-<text x="770" y="443" font-family="monospace" font-size="12">[43.7, 36.25] → [343.61, 51.06]</text>
-<text x="770" y="486" font-family="sans-serif" font-size="13">3: Southern withdrawal approach</text>
-<text x="770" y="506" font-family="monospace" font-size="12">[43.41, 35.88] → [204.3, 270.75]</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Great Zab regional crossing, uncertai</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[43.49, 36.06] → [242.73, 163.87]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Northeast river corridor</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[43.7, 36.25] → [343.61, 51.06]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Southern withdrawal approach</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[43.41, 35.88] → [204.3, 270.75]</text>
 <text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [43.05, 35.7, 43.75, 36.3] · cosine-corrected, padded square; positions approximate</text>
 </svg>

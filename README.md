@@ -31,7 +31,7 @@ Lee [plan](docs/production/plan.md), [arquitectura](docs/architecture/overview.m
 
 ## Catálogo preparado por el arquitecto
 
-[Plan detallado](docs/design/README.md): nueve campañas, 39 escenarios, biografías de narradores, 794 pantallas EN/es-ES, 26 entornos geográficos con planos SVG, 10 referencias visuales y cuatro datos GIS descargados con licencias/hashes. [Asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) relaciona cada campaña con su propuesta y slices. Son contratos de diseño con balance estimado; las capacidades y pruebas de motor siguen sus gates antes de producir el contenido.
+[Plan detallado](docs/design/README.md): nueve campañas, 39 escenarios, biografías de narradores, 950 pantallas EN/es-ES, 26 entornos geográficos con planos SVG, 10 referencias visuales y cuatro datos GIS descargados con licencias/hashes. [Asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) relaciona cada campaña con su propuesta y slices. Son contratos de diseño con balance estimado; las capacidades y pruebas de motor siguen sus gates antes de producir el contenido.
 
 ```sh
 python3 tools/design/render.py

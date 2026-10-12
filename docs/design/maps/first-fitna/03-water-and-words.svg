@@ -60,7 +60,15 @@
 <polyline points="699.96,389.58 702.49,389.56" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="77.51,559.53 221.74,547.67 317.88,476.51 414.04,405.35 519.81,322.33 644.81,464.65 702.49,547.67" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
 <polyline points="539.04,595.11 221.74,559.53 519.81,322.33" fill="none" stroke="#94542f" stroke-width="4"/>
-<polyline points="539.04,595.11 408.46,605.39 221.74,559.53 519.81,322.33" fill="none" stroke="#7463a3" stroke-width="4"/>
+<polyline points="539.04,595.11 394.42,591.35 221.74,559.53 519.81,322.33" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
 <circle cx="221.74" cy="559.53" r="7" fill="#2e3740"/>
 <text x="231.74" y="550.53" font-family="sans-serif" font-size="16">1</text>
 <circle cx="519.81" cy="322.33" r="7" fill="#2e3740"/>
@@ -76,14 +84,15 @@
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
-<text x="770" y="273" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
-<text x="770" y="297" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
-<text x="770" y="360" font-family="sans-serif" font-size="13">1: Traditional Siffin corridor, uncertai</text>
-<text x="770" y="380" font-family="monospace" font-size="12">[38.7, 35.72] → [103.59, 270.48]</text>
-<text x="770" y="423" font-family="sans-serif" font-size="13">2: Raqqa regional river control</text>
-<text x="770" y="443" font-family="monospace" font-size="12">[39.01, 35.92] → [273.49, 135.28]</text>
-<text x="770" y="486" font-family="sans-serif" font-size="13">3: Iraqi southeast approach</text>
-<text x="770" y="506" font-family="monospace" font-size="12">[39.03, 35.69] → [284.45, 290.76]</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Traditional Siffin corridor, uncertai</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[38.7, 35.72] → [103.59, 270.48]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Raqqa regional river control</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[39.01, 35.92] → [273.49, 135.28]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Iraqi southeast approach</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[39.03, 35.69] → [284.45, 290.76]</text>
 <text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [38.55, 35.6, 39.2, 36.05] · cosine-corrected, padded square; positions approximate</text>
 </svg>

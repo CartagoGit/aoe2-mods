@@ -98,10 +98,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
   "hubs": [
     {
       "id": "hub-1",
-      "anchor": "anchor-3",
+      "anchor": "anchor-2",
       "centre": [
-        264.7,
-        179.5
+        158.78,
+        211.55
       ],
       "purpose": {
         "en": "Open the dry corridor west of the irrigated quarter.",
@@ -144,8 +144,8 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "main",
       "waypoints": [
         [
-          264.7,
-          179.5
+          158.78,
+          211.55
         ],
         [
           214.04,
@@ -163,12 +163,12 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "relief",
       "waypoints": [
         [
-          264.7,
-          179.5
+          158.78,
+          211.55
         ],
         [
-          223.37,
-          182.2
+          194.41,
+          222.23
         ],
         [
           214.04,
@@ -212,7 +212,142 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "benchmark": "20-minute crowded corridor replay, 3 passes on documented target PC; simulation slowdown <10% vs reference, measured not presumed"
   },
   "asset": "docs/design/maps/first-fitna/02-between-the-camps.svg",
-  "mainRouteLengthStraightTiles": 118.49
+  "mainRouteLengthStraightTiles": 118.49,
+  "phaseSupply": {
+    "phase": "phase-2",
+    "receivingHub": "hub-2",
+    "waypoints": [
+      [
+        196.04,
+        228.9
+      ],
+      [
+        232.04,
+        228.9
+      ]
+    ],
+    "widthTiles": 6,
+    "distanceTiles": 36.0,
+    "placement": "fictional local supply circuit on SAME bank/plateau in receiving district; validate terrain and footprints, no invented river crossing",
+    "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
+  },
+  "explorationPlan": {
+    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
+    "sectors": [
+      {
+        "id": "optional-1",
+        "centreTiles": [
+          96.93,
+          96.93
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "An aid station off the road — 1",
+          "es-ES": "Un puesto de auxilio junto al camino — 1"
+        },
+        "task": "reveal-reserve-approach",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "wave-2 approach",
+        "onceFlag": "02-between-the-camps.optional-1.claimed",
+        "mandatory": false,
+        "narrator": "farid-field-medic",
+        "response": {
+          "en": "This detour has no banner. Its shade is enough.",
+          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
+        }
+      },
+      {
+        "id": "optional-2",
+        "centreTiles": [
+          262.07,
+          96.93
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "An aid station off the road — 2",
+          "es-ES": "Un puesto de auxilio junto al camino — 2"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "02-between-the-camps.optional-2.claimed",
+        "mandatory": false,
+        "narrator": "farid-field-medic",
+        "response": {
+          "en": "This detour has no banner. Its shade is enough.",
+          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
+        }
+      },
+      {
+        "id": "optional-3",
+        "centreTiles": [
+          96.93,
+          262.07
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "An aid station off the road — 3",
+          "es-ES": "Un puesto de auxilio junto al camino — 3"
+        },
+        "task": "reveal-relief-corridor",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "relief corridor",
+        "onceFlag": "02-between-the-camps.optional-3.claimed",
+        "mandatory": false,
+        "narrator": "farid-field-medic",
+        "response": {
+          "en": "This detour has no banner. Its shade is enough.",
+          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
+        }
+      },
+      {
+        "id": "optional-4",
+        "centreTiles": [
+          262.07,
+          262.07
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "An aid station off the road — 4",
+          "es-ES": "Un puesto de auxilio junto al camino — 4"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "02-between-the-camps.optional-4.claimed",
+        "mandatory": false,
+        "narrator": "farid-field-medic",
+        "response": {
+          "en": "This detour has no banner. Its shade is enough.",
+          "es-ES": "Este desvío no tiene bandera. Su sombra basta."
+        }
+      }
+    ],
+    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
+    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+  }
 }
 ```
 
@@ -233,9 +368,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-1",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-1",
+        "id": "02-between-the-camps.o1",
         "oncePerEntity": true,
-        "required": "Open the dry corridor west of the irrigated quarter."
+        "required": 1
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o1=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -244,27 +379,52 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 1,
       "entities": [
         {
-          "id": "02-between-the-camps-o1-entity-1",
-          "atHub": "hub-1",
+          "id": "02-between-the-camps.o1.main-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "secure-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "secure-corridor",
         "requiredCount": 1,
         "destination": "hub-1",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Open the dry corridor west of the irrigated quarter.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-access",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "02-between-the-camps.o1.main-access.1"
+            ],
+            "blockingEnemies": [
+              "02-between-the-camps.o1.main-access-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "main-access"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -279,9 +439,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-2",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-2",
+        "id": "02-between-the-camps.o2",
         "oncePerEntity": true,
-        "required": "Recover six of eight civilian parties and two aid wagons."
+        "required": 6
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o2=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -290,104 +450,226 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 6,
       "entities": [
         {
-          "id": "02-between-the-camps-o2-entity-1",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.1",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-2",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.2",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-3",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.3",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-4",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.4",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-5",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.5",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-6",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.6",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-7",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.7",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-between-the-camps-o2-entity-8",
-          "atHub": "hub-2",
+          "id": "02-between-the-camps.family.8",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "02-between-the-camps.o2.two-aid-wagons.1",
+          "role": "aid-wagon",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "02-between-the-camps.o2.two-aid-wagons.2",
+          "role": "aid-wagon",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "evacuate-family",
         "requiredCount": 6,
         "destination": "hub-2",
         "defeatBelowRemaining": 6,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Recover six of eight civilian parties and two aid wagons.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "families-arrived",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "02-between-the-camps.family.1",
+              "02-between-the-camps.family.2",
+              "02-between-the-camps.family.3",
+              "02-between-the-camps.family.4",
+              "02-between-the-camps.family.5",
+              "02-between-the-camps.family.6",
+              "02-between-the-camps.family.7",
+              "02-between-the-camps.family.8"
+            ],
+            "requiredCount": 6,
+            "oncePerEntity": true,
+            "destinations": {
+              "02-between-the-camps.family.1": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.2": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.3": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.4": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.5": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.6": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.7": "02-between-the-camps.o2.families-arrived.receiving-zone",
+              "02-between-the-camps.family.8": "02-between-the-camps.o2.families-arrived.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          },
+          {
+            "id": "two-aid-wagons",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "02-between-the-camps.o2.two-aid-wagons.1",
+              "02-between-the-camps.o2.two-aid-wagons.2"
+            ],
+            "requiredCount": 2,
+            "oncePerEntity": true,
+            "destinations": {
+              "02-between-the-camps.o2.two-aid-wagons.1": "02-between-the-camps.o2.two-aid-wagons.receiving-zone",
+              "02-between-the-camps.o2.two-aid-wagons.2": "02-between-the-camps.o2.two-aid-wagons.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          }
+        ],
+        "requiredLedgers": [
+          "families-arrived",
+          "two-aid-wagons"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -402,9 +684,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-3",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-3",
+        "id": "02-between-the-camps.o3",
         "oncePerEntity": true,
-        "required": "Withdraw before the two military camps converge on the corridor."
+        "required": 1
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o3=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -413,30 +695,310 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 1,
       "entities": [
         {
-          "id": "02-between-the-camps-o3-entity-1",
-          "atHub": "hub-3",
+          "id": "02-between-the-camps.o3.main-entities.1",
+          "role": "escort",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "withdraw-escort",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "withdraw-escort",
         "requiredCount": 1,
         "destination": "hub-3",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Withdraw before the two military camps converge on the corridor.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-entities",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "02-between-the-camps.o3.main-entities.1"
+            ],
+            "requiredCount": 1,
+            "oncePerEntity": true,
+            "destinations": {
+              "02-between-the-camps.o3.main-entities.1": "02-between-the-camps.o3.main-entities.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          },
+          {
+            "id": "withdrawal-deadline",
+            "kind": "phase-deadline",
+            "phase": "phase-3",
+            "clock": "relative-to-phase-entry",
+            "onExpiry": "declared defeat if objective not yet latched; show explicit countdown and warning, never timer-only victory",
+            "secondsByDifficulty": {
+              "easy": 1800,
+              "standard": 1500,
+              "hard": 1200
+            },
+            "warningSeconds": 120
+          }
+        ],
+        "requiredLedgers": [
+          "main-entities",
+          "withdrawal-deadline"
+        ],
+        "allRequired": true
       }
     }
   ],
+  "worldContract": {
+    "version": 1,
+    "classification": "authoring specification, not implemented DSL",
+    "entities": [
+      {
+        "id": "02-between-the-camps.family.1",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.2",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.3",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.4",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.5",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.6",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.7",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.family.8",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.o2.two-aid-wagons.1",
+        "role": "aid-wagon",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.o2.two-aid-wagons.2",
+        "role": "aid-wagon",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.o3.main-entities.1",
+        "role": "escort",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-between-the-camps.o1.main-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      }
+    ],
+    "zones": [
+      {
+        "id": "02-between-the-camps.o2.families-arrived.receiving-zone",
+        "hub": "hub-2",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-between-the-camps.o2.two-aid-wagons.receiving-zone",
+        "hub": "hub-2",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-between-the-camps.o3.main-entities.receiving-zone",
+        "hub": "hub-3",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-between-the-camps.o1.main-access.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      }
+    ],
+    "ledgerPolicy": "persist exact object IDs, allocations, receipt flags, pairing and phase. Compound objectives require EVERY listed requirement; shared families/copies retain identity between phases.",
+    "resourcePolicy": "protected-recovery is separate from spendable; no double-count in ledgers; no infinite consignment or fifth engine resource",
+    "defeatPolicy": "below required possible survivors is unrecoverable; recoverable carriers retain their token via one helper; historical deaths remain narrated, not killable units",
+    "earlyDelivery": "Observation is always active. Only phase transition and announced effects are phase-gated. Preserve token origin, owner and already-counted receipt through save/load.",
+    "survivorGroups": [
+      {
+        "entities": [
+          "02-between-the-camps.family.1",
+          "02-between-the-camps.family.2",
+          "02-between-the-camps.family.3",
+          "02-between-the-camps.family.4",
+          "02-between-the-camps.family.5",
+          "02-between-the-camps.family.6",
+          "02-between-the-camps.family.7",
+          "02-between-the-camps.family.8"
+        ],
+        "minimumAliveOrAlreadySafe": 6,
+        "loss": "defeat only when live + already safely delivered distinct IDs fall below minimum"
+      }
+    ],
+    "enemyBinding": "Bind every military-guard and military-post entity to a unique initialEnemy roster member. They consume that budget; never add objective guards on top of initial composition."
+  },
   "states": {
     "states": [
       "briefing",
@@ -492,9 +1054,9 @@ These are explicit estimates for calibration, not measured wins or evidence of p
 
 | Profile | Start F/W/G/S | Gatherable F/W/G/S | Escort | Initial + waves | Warning / gap seconds |
 |---|---|---|---:|---|---|
-| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 20 + 20 + 20 + 21 = 81 | 120 / 429 |
-| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 27 + 27 + 27 + 27 = 108 | 90 / 429 |
-| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 32 + 32 + 32 + 34 = 130 | 75 / 429 |
+| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 20 + 20 + 20 + 21 = 81 | 120 / 474 |
+| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 27 + 27 + 27 + 27 = 108 | 90 / 370 |
+| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 32 + 32 + 32 + 34 = 130 | 75 / 296 |
 
 ```json
 {
@@ -541,7 +1103,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 429,
+          "offsetSeconds": 474,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -556,7 +1118,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 858,
+          "offsetSeconds": 948,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -571,7 +1133,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1287,
+          "offsetSeconds": 1422,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -599,7 +1161,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "one approach at a time; show full route",
@@ -618,7 +1180,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 4
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -662,7 +1225,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 429,
+          "offsetSeconds": 370,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -677,7 +1240,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 858,
+          "offsetSeconds": 740,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -692,7 +1255,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1287,
+          "offsetSeconds": 1110,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -720,7 +1283,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "alternate main and flank; show warning + scoutable approach",
@@ -739,7 +1302,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -783,7 +1347,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 5
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 429,
+          "offsetSeconds": 296,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -798,7 +1362,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 5
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 858,
+          "offsetSeconds": 592,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -813,7 +1377,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 5
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1287,
+          "offsetSeconds": 888,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -841,7 +1405,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "wave 2 two scoutable approaches, waves remain capped; force escort/reserve split without simultaneous blind spawns",
@@ -860,7 +1424,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     }
   },
   "analysis": {
@@ -871,8 +1436,17 @@ These are explicit estimates for calibration, not measured wins or evidence of p
     "walkingAndIdleIncluded": "Assumed rate discounts native gathering for travel/idle; measure actual efficiency in game.",
     "worstDeliveryFood": 0,
     "sensitivity": "At 50% of assumed efficiency recompute delivery window; do not spawn hidden resources. Split workers 50%food/25%wood/20%gold/5%stone, change allocation when a specified delivery requires stone.",
-    "travelTime": "Measure nav-path length in tiles / actual convoy speed plus loading/unloading; two round trips must fit between phase waves. If not, adjust announced gap or move receiving point within same documented district; architect approval for footprint drift.",
-    "minimumWaveGapSecondsFromProposedGeometry": 429
+    "travelTime": "Phase waves use the separate local phase-two supply circuit, not the whole-map journey. Two round trips +90s loading/reaction fit the floor. Validate actual nav-path/speed and recompute before game approval.",
+    "minimumWaveGapSecondsFromProposedGeometry": 296,
+    "wholeJourneyDistanceTiles": 111.04,
+    "wholeJourneyOneWaySecondsEstimate": 159,
+    "optionalCacheAllocation": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "solventWithoutOptionalCaches": true
   }
 }
 ```
@@ -888,7 +1462,11 @@ Ruta seca oeste y ruta de diques al este. Civiles rescatados no vuelven a contar
   "budget": "One reserve escort only, drawn from protected stock and accounted starting reserve; no infinite recruit loop.",
   "notDefeat": "Historical fall, sack, defeat or death of an off-map documented figure is narrative context. Player defeat is failing this mission’s rescue/supply/tactical task.",
   "deadlockDetection": "No objective progress for 6 game minutes shows the exact outstanding goal and route, with optional recovery reminder. No automatic victory.",
-  "abuse": "Killing civilian neighbours gives no gold/score. Essential historical figures are off-map narrative subjects, never convertable units."
+  "abuse": "Killing civilian neighbours gives no gold/score. Essential historical figures are off-map narrative subjects, never convertable units.",
+  "phaseDeadlines": {
+    "en": "Timed phases: o3: 30 / 25 / 20 minutes on Easy / Standard / Hard. The countdown starts when that phase begins; a two-minute warning precedes a loss if its task is unfinished.",
+    "es-ES": "Fases con plazo: o3: 30 / 25 / 20 minutos en fácil / estándar / difícil. La cuenta empieza al comenzar esa fase; un aviso de dos minutos precede a la derrota si falta su objetivo."
+  }
 }
 
 ## Events and every player-facing screen
@@ -903,7 +1481,7 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.first-fitna.02-between-the-camps.objective-1` / phase-1 active | none → hub-1 | Open the dry corridor west of the irrigated quarter. | Abre el corredor seco al oeste del barrio irrigado. |
 | `scenario.first-fitna.02-between-the-camps.objective-2` / phase-2 active | none → hub-2 | Recover six of eight civilian parties and two aid wagons. | Recupera seis de ocho grupos civiles y dos carros de auxilio. |
 | `scenario.first-fitna.02-between-the-camps.objective-3` / phase-3 active | none → hub-3 | Withdraw before the two military camps converge on the corridor. | Retírate antes de que los dos campamentos militares converjan sobre el corredor. |
-| `scenario.first-fitna.02-between-the-camps.instructions` / instructions panel | none → next | Complete the listed tasks in order. Deliveries count once at their marked receiving points. Scout both routes before moving the carriers. | Completa las tareas indicadas en orden. Las entregas cuentan una vez en los puntos de recepción señalados. Explora ambas rutas antes de mover a los porteadores. |
+| `scenario.first-fitna.02-between-the-camps.instructions` / instructions panel | none → next | Complete the listed tasks in order. Deliveries count once at their marked receiving points. Scout both routes before moving the carriers. Timed phases: o3: 30 / 25 / 20 minutes on Easy / Standard / Hard. The countdown starts when that phase begins; a two-minute warning precedes a loss if its task is unfinished. | Completa las tareas indicadas en orden. Las entregas cuentan una vez en los puntos de recepción señalados. Explora ambas rutas antes de mover a los porteadores. Fases con plazo: o3: 30 / 25 / 20 minutos en fácil / estándar / difícil. La cuenta empieza al comenzar esa fase; un aviso de dos minutos precede a la derrota si falta su objetivo. |
 | `scenario.first-fitna.02-between-the-camps.scouts` / scouts panel | none → next | Regional setting: Early Basra and marsh edge. Follow the marked control points and check the alternate corridor. This is a compressed reconstruction, not a surveyed battlefield. | Entorno regional: Early Basra and marsh edge. Sigue los puntos señalados y comprueba el corredor alternativo. Es una reconstrucción comprimida, no un campo de batalla topografiado. |
 | `scenario.first-fitna.02-between-the-camps.history` / history panel | none → next | The Battle of the Camel took place near Basra in 656. The evacuation in this scenario is fictional and does not settle the competing claims. The convoy, personal dialogue and tactical layout are fictional; consult the campaign wiki for source qualifications. | Batalla del Camello junto a Basora; disputa de autoridad/lealtad no combate de religiones modernas. El convoy, los diálogos personales y la disposición táctica son ficción; consulta las cautelas de las fuentes en la wiki. |
 | `scenario.first-fitna.02-between-the-camps.hints` / easy hint + optional hints panel | none → next | If a corridor is blocked, scout the relief path. Keep the protected recovery stock; a copied record or replacement courier can be used only as specified. | Si se bloquea un corredor, explora el camino de auxilio. Conserva la reserva de recuperación: la copia de un registro o el correo de reemplazo solo se usan como se indica. |
@@ -915,6 +1493,10 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.first-fitna.02-between-the-camps.victory-personal` / after victory-fact | farid-field-medic → 03-water-and-words | I will keep both names in the record. Care does not settle the quarrel. | Guardaré ambos nombres en el registro. Cuidar no resuelve la disputa. |
 | `scenario.first-fitna.02-between-the-camps.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.first-fitna.02-between-the-camps.recovery` / 6 minutes without objective progress | farid-field-medic → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
+| `scenario.first-fitna.02-between-the-camps.optional-1` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 1: The hidden reserve approach is now marked. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 1: La aproximación de la reserva está señalada. Este desvío no tiene bandera. Su sombra basta. |
+| `scenario.first-fitna.02-between-the-camps.optional-2` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Este desvío no tiene bandera. Su sombra basta. |
+| `scenario.first-fitna.02-between-the-camps.optional-3` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 3: The relief route is now marked. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 3: La ruta alternativa está señalada. Este desvío no tiene bandera. Su sombra basta. |
+| `scenario.first-fitna.02-between-the-camps.optional-4` / optional sector observed/cache claimed; once, independent of main phase | farid-field-medic → return-to-game | An aid station off the road — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. This detour has no banner. Its shade is enough. | Un puesto de auxilio junto al camino — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Este desvío no tiene bandera. Su sombra basta. |
 
 ## Adversarial QA
 

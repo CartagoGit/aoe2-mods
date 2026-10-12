@@ -27,7 +27,15 @@
 <polyline points="331.47,693.71 334.58,697.61" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="390.00,172.39 378.28,408.74 335.31,508.53 292.35,534.79 311.87,587.32 350.94,671.34" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
 <polyline points="343.13,356.23 335.31,508.53 350.94,592.57" fill="none" stroke="#94542f" stroke-width="4"/>
-<polyline points="343.13,356.23 370.41,463.58 335.31,508.53 350.94,592.57" fill="none" stroke="#7463a3" stroke-width="4"/>
+<polyline points="343.13,356.23 354.81,447.99 335.31,508.53 350.94,592.57" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
 <circle cx="335.31" cy="508.53" r="7" fill="#2e3740"/>
 <text x="345.31" y="499.53" font-family="sans-serif" font-size="16">1</text>
 <circle cx="343.13" cy="356.23" r="7" fill="#2e3740"/>
@@ -43,14 +51,15 @@
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
-<text x="770" y="273" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
-<text x="770" y="297" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
-<text x="770" y="360" font-family="sans-serif" font-size="13">1: Pons Mulvius site</text>
-<text x="770" y="380" font-family="monospace" font-size="12">[12.466, 41.936] → [151.45, 217.21]</text>
-<text x="770" y="423" font-family="sans-serif" font-size="13">2: Flaminia north road</text>
-<text x="770" y="443" font-family="monospace" font-size="12">[12.468, 41.965] → [155.46, 139.1]</text>
-<text x="770" y="486" font-family="sans-serif" font-size="13">3: Southern Rome approach</text>
-<text x="770" y="506" font-family="monospace" font-size="12">[12.47, 41.92] → [159.47, 260.31]</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Pons Mulvius site</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[12.466, 41.936] → [151.45, 217.21]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Flaminia north road</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[12.468, 41.965] → [155.46, 139.1]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Southern Rome approach</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[12.47, 41.92] → [159.47, 260.31]</text>
 <text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [12.4, 41.9, 12.56, 42.0] · cosine-corrected, padded square; positions approximate</text>
 </svg>

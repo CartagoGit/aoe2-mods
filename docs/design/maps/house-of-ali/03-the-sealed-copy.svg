@@ -36,7 +36,15 @@
 <polyline points="611.54,713.03 613.52,727.40" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="508.54,142.60 486.99,295.15 491.29,422.29 508.54,549.41 573.18,727.40" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
 <polyline points="271.46,473.14 441.72,473.14 491.29,422.29" fill="none" stroke="#94542f" stroke-width="4"/>
-<polyline points="271.46,473.14 391.70,508.25 441.72,473.14 491.29,422.29" fill="none" stroke="#7463a3" stroke-width="4"/>
+<polyline points="271.46,473.14 374.16,490.69 441.72,473.14 491.29,422.29" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
 <circle cx="441.72" cy="473.14" r="7" fill="#2e3740"/>
 <text x="451.72" y="464.14" font-family="sans-serif" font-size="16">1</text>
 <circle cx="491.29" cy="422.29" r="7" fill="#2e3740"/>
@@ -52,14 +60,15 @@
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
-<text x="770" y="273" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
-<text x="770" y="297" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
-<text x="770" y="360" font-family="sans-serif" font-size="13">1: Kufa settlement centre</text>
-<text x="770" y="380" font-family="monospace" font-size="12">[44.399, 32.03] → [183.07, 176.88]</text>
-<text x="770" y="423" font-family="sans-serif" font-size="13">2: Eastern river margin</text>
-<text x="770" y="443" font-family="monospace" font-size="12">[44.422, 32.05] → [205.66, 153.71]</text>
-<text x="770" y="486" font-family="sans-serif" font-size="13">3: Western dry road</text>
-<text x="770" y="506" font-family="monospace" font-size="12">[44.32, 32.03] → [105.48, 176.88]</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Kufa settlement centre</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[44.399, 32.03] → [183.07, 176.88]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Eastern river margin</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[44.422, 32.05] → [205.66, 153.71]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Western dry road</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[44.32, 32.03] → [105.48, 176.88]</text>
 <text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [44.23, 31.93, 44.52, 32.16] · cosine-corrected, padded square; positions approximate</text>
 </svg>

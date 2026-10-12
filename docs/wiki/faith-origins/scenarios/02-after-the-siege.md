@@ -98,10 +98,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
   "hubs": [
     {
       "id": "hub-1",
-      "anchor": "anchor-3",
+      "anchor": "anchor-2",
       "centre": [
-        189.77,
-        212.9
+        212.46,
+        161.28
       ],
       "purpose": {
         "en": "Open the eastern evacuation corridor.",
@@ -112,10 +112,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     },
     {
       "id": "hub-2",
-      "anchor": "anchor-1",
+      "anchor": "anchor-2",
       "centre": [
-        197.33,
-        163.06
+        212.46,
+        161.28
       ],
       "purpose": {
         "en": "Escort at least six of eight family groups to the ridge refuge.",
@@ -126,10 +126,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     },
     {
       "id": "hub-3",
-      "anchor": "anchor-2",
+      "anchor": "anchor-3",
       "centre": [
-        212.46,
-        161.28
+        189.77,
+        212.9
       ],
       "purpose": {
         "en": "Carry the surviving archive to the road beyond the siege.",
@@ -144,16 +144,16 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "main",
       "waypoints": [
         [
-          189.77,
-          212.9
-        ],
-        [
-          197.33,
-          163.06
+          212.46,
+          161.28
         ],
         [
           212.46,
           161.28
+        ],
+        [
+          189.77,
+          212.9
         ]
       ],
       "widthTiles": 10,
@@ -163,20 +163,20 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "relief",
       "waypoints": [
         [
-          189.77,
-          212.9
+          212.46,
+          161.28
         ],
         [
-          177.55,
-          171.98000000000002
-        ],
-        [
-          197.33,
-          163.06
+          220.46,
+          169.28
         ],
         [
           212.46,
           161.28
+        ],
+        [
+          189.77,
+          212.9
         ]
       ],
       "widthTiles": 6,
@@ -212,7 +212,142 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "benchmark": "20-minute crowded corridor replay, 3 passes on documented target PC; simulation slowdown <10% vs reference, measured not presumed"
   },
   "asset": "docs/design/maps/faith-origins/02-after-the-siege.svg",
-  "mainRouteLengthStraightTiles": 65.64
+  "mainRouteLengthStraightTiles": 65.64,
+  "phaseSupply": {
+    "phase": "phase-2",
+    "receivingHub": "hub-2",
+    "waypoints": [
+      [
+        194.46,
+        173.28
+      ],
+      [
+        230.46,
+        173.28
+      ]
+    ],
+    "widthTiles": 6,
+    "distanceTiles": 36.0,
+    "placement": "fictional local supply circuit on SAME bank/plateau in receiving district; validate terrain and footprints, no invented river crossing",
+    "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
+  },
+  "explorationPlan": {
+    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
+    "sectors": [
+      {
+        "id": "optional-1",
+        "centreTiles": [
+          86.13,
+          86.13
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "Old road markers — 1",
+          "es-ES": "Hitos del camino antiguo — 1"
+        },
+        "task": "reveal-reserve-approach",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "wave-2 approach",
+        "onceFlag": "02-after-the-siege.optional-1.claimed",
+        "mandatory": false,
+        "narrator": "miriam-archive",
+        "response": {
+          "en": "A safe path carried more than a letter.",
+          "es-ES": "Un camino seguro llevaba más que una carta."
+        }
+      },
+      {
+        "id": "optional-2",
+        "centreTiles": [
+          232.87,
+          86.13
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "Old road markers — 2",
+          "es-ES": "Hitos del camino antiguo — 2"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "02-after-the-siege.optional-2.claimed",
+        "mandatory": false,
+        "narrator": "miriam-archive",
+        "response": {
+          "en": "A safe path carried more than a letter.",
+          "es-ES": "Un camino seguro llevaba más que una carta."
+        }
+      },
+      {
+        "id": "optional-3",
+        "centreTiles": [
+          86.13,
+          232.87
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "Old road markers — 3",
+          "es-ES": "Hitos del camino antiguo — 3"
+        },
+        "task": "reveal-relief-corridor",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "relief corridor",
+        "onceFlag": "02-after-the-siege.optional-3.claimed",
+        "mandatory": false,
+        "narrator": "miriam-archive",
+        "response": {
+          "en": "A safe path carried more than a letter.",
+          "es-ES": "Un camino seguro llevaba más que una carta."
+        }
+      },
+      {
+        "id": "optional-4",
+        "centreTiles": [
+          232.87,
+          232.87
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "Old road markers — 4",
+          "es-ES": "Hitos del camino antiguo — 4"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "02-after-the-siege.optional-4.claimed",
+        "mandatory": false,
+        "narrator": "miriam-archive",
+        "response": {
+          "en": "A safe path carried more than a letter.",
+          "es-ES": "Un camino seguro llevaba más que una carta."
+        }
+      }
+    ],
+    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
+    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+  }
 }
 ```
 
@@ -233,9 +368,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-1",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-1",
+        "id": "02-after-the-siege.o1",
         "oncePerEntity": true,
-        "required": "Open the eastern evacuation corridor."
+        "required": 1
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o1=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -244,27 +379,84 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 1,
       "entities": [
         {
-          "id": "02-after-the-siege-o1-entity-1",
-          "atHub": "hub-1",
+          "id": "02-after-the-siege.east-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "secure-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "02-after-the-siege.o1.main-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "secure-corridor",
         "requiredCount": 1,
         "destination": "hub-1",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Open the eastern evacuation corridor.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-access",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "02-after-the-siege.o1.main-access.1"
+            ],
+            "blockingEnemies": [
+              "02-after-the-siege.o1.main-access-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          },
+          {
+            "id": "east-access",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "02-after-the-siege.east-access.1"
+            ],
+            "blockingEnemies": [
+              "02-after-the-siege.east-access-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "main-access",
+          "east-access"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -279,9 +471,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-2",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-2",
+        "id": "02-after-the-siege.o2",
         "oncePerEntity": true,
-        "required": "Escort at least six of eight family groups to the ridge refuge."
+        "required": 6
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o2=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -290,104 +482,209 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 6,
       "entities": [
         {
-          "id": "02-after-the-siege-o2-entity-1",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.1",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-2",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.2",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-3",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.3",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-4",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.4",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-5",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.5",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-6",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.6",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-7",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.7",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "02-after-the-siege-o2-entity-8",
-          "atHub": "hub-2",
+          "id": "02-after-the-siege.family.8",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "02-after-the-siege.ridge-refuge-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-2",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-2"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "evacuate-family",
         "requiredCount": 6,
         "destination": "hub-2",
         "defeatBelowRemaining": 6,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Escort at least six of eight family groups to the ridge refuge.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "families-arrived",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "02-after-the-siege.family.1",
+              "02-after-the-siege.family.2",
+              "02-after-the-siege.family.3",
+              "02-after-the-siege.family.4",
+              "02-after-the-siege.family.5",
+              "02-after-the-siege.family.6",
+              "02-after-the-siege.family.7",
+              "02-after-the-siege.family.8"
+            ],
+            "requiredCount": 6,
+            "oncePerEntity": true,
+            "destinations": {
+              "02-after-the-siege.family.1": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.2": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.3": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.4": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.5": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.6": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.7": "02-after-the-siege.o2.families-arrived.receiving-zone",
+              "02-after-the-siege.family.8": "02-after-the-siege.o2.families-arrived.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          },
+          {
+            "id": "ridge-refuge",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "02-after-the-siege.ridge-refuge.1"
+            ],
+            "blockingEnemies": [
+              "02-after-the-siege.ridge-refuge-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "families-arrived",
+          "ridge-refuge"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -402,9 +699,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-3",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-3",
+        "id": "02-after-the-siege.o3",
         "oncePerEntity": true,
-        "required": "Carry the surviving archive to the road beyond the siege."
+        "required": 1
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o3=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -413,30 +710,309 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 1,
       "entities": [
         {
-          "id": "02-after-the-siege-o3-entity-1",
-          "atHub": "hub-3",
+          "id": "02-after-the-siege.o3.main-entities.1",
+          "role": "record-token",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "deliver-record",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "deliver-record",
         "requiredCount": 1,
         "destination": "hub-3",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Carry the surviving archive to the road beyond the siege.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-entities",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "02-after-the-siege.o3.main-entities.1"
+            ],
+            "requiredCount": 1,
+            "oncePerEntity": true,
+            "destinations": {
+              "02-after-the-siege.o3.main-entities.1": "02-after-the-siege.o3.main-entities.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          }
+        ],
+        "requiredLedgers": [
+          "main-entities"
+        ],
+        "allRequired": true
       }
     }
   ],
+  "worldContract": {
+    "version": 1,
+    "classification": "authoring specification, not implemented DSL",
+    "entities": [
+      {
+        "id": "02-after-the-siege.east-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "02-after-the-siege.family.1",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.2",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.3",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.4",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.5",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.6",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.7",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.family.8",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.ridge-refuge-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "02-after-the-siege.o3.main-entities.1",
+        "role": "record-token",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "02-after-the-siege.o1.main-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      }
+    ],
+    "zones": [
+      {
+        "id": "02-after-the-siege.east-access.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-after-the-siege.ridge-refuge.1",
+        "hub": "hub-2",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-after-the-siege.o2.families-arrived.receiving-zone",
+        "hub": "hub-2",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-after-the-siege.o3.main-entities.receiving-zone",
+        "hub": "hub-3",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "02-after-the-siege.o1.main-access.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      }
+    ],
+    "ledgerPolicy": "persist exact object IDs, allocations, receipt flags, pairing and phase. Compound objectives require EVERY listed requirement; shared families/copies retain identity between phases.",
+    "resourcePolicy": "protected-recovery is separate from spendable; no double-count in ledgers; no infinite consignment or fifth engine resource",
+    "defeatPolicy": "below required possible survivors is unrecoverable; recoverable carriers retain their token via one helper; historical deaths remain narrated, not killable units",
+    "earlyDelivery": "Observation is always active. Only phase transition and announced effects are phase-gated. Preserve token origin, owner and already-counted receipt through save/load.",
+    "survivorGroups": [
+      {
+        "entities": [
+          "02-after-the-siege.family.1",
+          "02-after-the-siege.family.2",
+          "02-after-the-siege.family.3",
+          "02-after-the-siege.family.4",
+          "02-after-the-siege.family.5",
+          "02-after-the-siege.family.6",
+          "02-after-the-siege.family.7",
+          "02-after-the-siege.family.8"
+        ],
+        "minimumAliveOrAlreadySafe": 6,
+        "loss": "defeat only when live + already safely delivered distinct IDs fall below minimum"
+      }
+    ],
+    "enemyBinding": "Bind every military-guard and military-post entity to a unique initialEnemy roster member. They consume that budget; never add objective guards on top of initial composition."
+  },
   "states": {
     "states": [
       "briefing",
@@ -492,9 +1068,9 @@ These are explicit estimates for calibration, not measured wins or evidence of p
 
 | Profile | Start F/W/G/S | Gatherable F/W/G/S | Escort | Initial + waves | Warning / gap seconds |
 |---|---|---|---:|---|---|
-| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 15 + 15 + 15 + 18 = 63 | 120 / 278 |
-| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 21 + 21 + 21 + 21 = 84 | 90 / 278 |
-| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 25 + 25 + 25 + 26 = 101 | 75 / 278 |
+| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 15 + 15 + 15 + 18 = 63 | 120 / 474 |
+| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 21 + 21 + 21 + 21 = 84 | 90 / 370 |
+| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 25 + 25 + 25 + 26 = 101 | 75 / 296 |
 
 ```json
 {
@@ -541,7 +1117,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 2
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 278,
+          "offsetSeconds": 474,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -556,7 +1132,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 2
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 556,
+          "offsetSeconds": 948,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -571,7 +1147,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 834,
+          "offsetSeconds": 1422,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -599,7 +1175,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "one approach at a time; show full route",
@@ -618,7 +1194,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 4
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -662,7 +1239,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 278,
+          "offsetSeconds": 370,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -677,7 +1254,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 556,
+          "offsetSeconds": 740,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -692,7 +1269,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 834,
+          "offsetSeconds": 1110,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -720,7 +1297,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "alternate main and flank; show warning + scoutable approach",
@@ -739,7 +1316,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -783,7 +1361,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 278,
+          "offsetSeconds": 296,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -798,7 +1376,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 556,
+          "offsetSeconds": 592,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -813,7 +1391,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 834,
+          "offsetSeconds": 888,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -841,7 +1419,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "wave 2 two scoutable approaches, waves remain capped; force escort/reserve split without simultaneous blind spawns",
@@ -860,7 +1438,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     }
   },
   "analysis": {
@@ -871,8 +1450,17 @@ These are explicit estimates for calibration, not measured wins or evidence of p
     "walkingAndIdleIncluded": "Assumed rate discounts native gathering for travel/idle; measure actual efficiency in game.",
     "worstDeliveryFood": 0,
     "sensitivity": "At 50% of assumed efficiency recompute delivery window; do not spawn hidden resources. Split workers 50%food/25%wood/20%gold/5%stone, change allocation when a specified delivery requires stone.",
-    "travelTime": "Measure nav-path length in tiles / actual convoy speed plus loading/unloading; two round trips must fit between phase waves. If not, adjust announced gap or move receiving point within same documented district; architect approval for footprint drift.",
-    "minimumWaveGapSecondsFromProposedGeometry": 278
+    "travelTime": "Phase waves use the separate local phase-two supply circuit, not the whole-map journey. Two round trips +90s loading/reaction fit the floor. Validate actual nav-path/speed and recompute before game approval.",
+    "minimumWaveGapSecondsFromProposedGeometry": 296,
+    "wholeJourneyDistanceTiles": 56.39,
+    "wholeJourneyOneWaySecondsEstimate": 81,
+    "optionalCacheAllocation": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "solventWithoutOptionalCaches": true
   }
 }
 ```
@@ -915,6 +1503,10 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.faith-origins.02-after-the-siege.victory-personal` / after victory-fact | miriam-archive → 03-the-governors-question | I will record what arrived, and leave a space for what did not. | Registraré lo que llegó y dejaré un espacio para lo que no. |
 | `scenario.faith-origins.02-after-the-siege.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.faith-origins.02-after-the-siege.recovery` / 6 minutes without objective progress | miriam-archive → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
+| `scenario.faith-origins.02-after-the-siege.optional-1` / optional sector observed/cache claimed; once, independent of main phase | miriam-archive → return-to-game | Old road markers — 1: The hidden reserve approach is now marked. A safe path carried more than a letter. | Hitos del camino antiguo — 1: La aproximación de la reserva está señalada. Un camino seguro llevaba más que una carta. |
+| `scenario.faith-origins.02-after-the-siege.optional-2` / optional sector observed/cache claimed; once, independent of main phase | miriam-archive → return-to-game | Old road markers — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. A safe path carried more than a letter. | Hitos del camino antiguo — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Un camino seguro llevaba más que una carta. |
+| `scenario.faith-origins.02-after-the-siege.optional-3` / optional sector observed/cache claimed; once, independent of main phase | miriam-archive → return-to-game | Old road markers — 3: The relief route is now marked. A safe path carried more than a letter. | Hitos del camino antiguo — 3: La ruta alternativa está señalada. Un camino seguro llevaba más que una carta. |
+| `scenario.faith-origins.02-after-the-siege.optional-4` / optional sector observed/cache claimed; once, independent of main phase | miriam-archive → return-to-game | Old road markers — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. A safe path carried more than a letter. | Hitos del camino antiguo — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Un camino seguro llevaba más que una carta. |
 
 ## Adversarial QA
 

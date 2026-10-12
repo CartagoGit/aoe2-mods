@@ -98,10 +98,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
   "hubs": [
     {
       "id": "hub-1",
-      "anchor": "anchor-2",
+      "anchor": "anchor-1",
       "centre": [
-        187.99,
-        313.68
+        226.37,
+        176.66
       ],
       "purpose": {
         "en": "Secure the northern supply point and the two flank paths.",
@@ -112,24 +112,24 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     },
     {
       "id": "hub-2",
-      "anchor": "anchor-1",
+      "anchor": "anchor-3",
       "centre": [
-        226.37,
-        176.66
+        95.87,
+        249.74
       ],
       "purpose": {
-        "en": "Break the two field commands while keeping the reserve in reach.",
-        "es-ES": "Rompe los dos mandos de campo manteniendo la reserva al alcance."
+        "en": "Break the two field commands while keeping the protected supply stock at the nearby receiving point.",
+        "es-ES": "Rompe los dos mandos de campaña manteniendo la reserva de suministros en el punto de recepción cercano."
       },
       "radiusTiles": 12,
       "placement": "objective compound within 12 tiles of centre, on valid land; exact footprint checked after rasterisation"
     },
     {
       "id": "hub-3",
-      "anchor": "anchor-3",
+      "anchor": "anchor-1",
       "centre": [
-        95.87,
-        249.74
+        226.37,
+        176.66
       ],
       "purpose": {
         "en": "Hold the rally plateau and reopen the road for the supply train.",
@@ -144,16 +144,16 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "main",
       "waypoints": [
         [
-          187.99,
-          313.68
-        ],
-        [
           226.37,
           176.66
         ],
         [
           95.87,
           249.74
+        ],
+        [
+          226.37,
+          176.66
         ]
       ],
       "widthTiles": 10,
@@ -163,20 +163,20 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "relief",
       "waypoints": [
         [
-          187.99,
-          313.68
-        ],
-        [
-          223.18,
-          261.17
-        ],
-        [
           226.37,
           176.66
         ],
         [
+          169.12,
+          221.2
+        ],
+        [
           95.87,
           249.74
+        ],
+        [
+          226.37,
+          176.66
         ]
       ],
       "widthTiles": 6,
@@ -241,7 +241,142 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "benchmark": "20-minute crowded corridor replay, 3 passes on documented target PC; simulation slowdown <10% vs reference, measured not presumed"
   },
   "asset": "docs/design/maps/first-caliphs/03-the-edge-of-the-river.svg",
-  "mainRouteLengthStraightTiles": 291.86
+  "mainRouteLengthStraightTiles": 291.86,
+  "phaseSupply": {
+    "phase": "phase-2",
+    "receivingHub": "hub-2",
+    "waypoints": [
+      [
+        77.87,
+        261.74
+      ],
+      [
+        113.87,
+        261.74
+      ]
+    ],
+    "widthTiles": 6,
+    "distanceTiles": 36.0,
+    "placement": "fictional local supply circuit on SAME bank/plateau in receiving district; validate terrain and footprints, no invented river crossing",
+    "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
+  },
+  "explorationPlan": {
+    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
+    "sectors": [
+      {
+        "id": "optional-1",
+        "centreTiles": [
+          107.73,
+          107.73
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The caravan’s lookout — 1",
+          "es-ES": "El vigía de la caravana — 1"
+        },
+        "task": "reveal-reserve-approach",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "wave-2 approach",
+        "onceFlag": "03-the-edge-of-the-river.optional-1.claimed",
+        "mandatory": false,
+        "narrator": "salim-caravan-scribe",
+        "response": {
+          "en": "A ledger of wells is useful only if the road between them is known.",
+          "es-ES": "Un registro de pozos solo sirve si conocemos el camino que los une."
+        }
+      },
+      {
+        "id": "optional-2",
+        "centreTiles": [
+          291.27,
+          107.73
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The caravan’s lookout — 2",
+          "es-ES": "El vigía de la caravana — 2"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "03-the-edge-of-the-river.optional-2.claimed",
+        "mandatory": false,
+        "narrator": "salim-caravan-scribe",
+        "response": {
+          "en": "A ledger of wells is useful only if the road between them is known.",
+          "es-ES": "Un registro de pozos solo sirve si conocemos el camino que los une."
+        }
+      },
+      {
+        "id": "optional-3",
+        "centreTiles": [
+          107.73,
+          291.27
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The caravan’s lookout — 3",
+          "es-ES": "El vigía de la caravana — 3"
+        },
+        "task": "reveal-relief-corridor",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "relief corridor",
+        "onceFlag": "03-the-edge-of-the-river.optional-3.claimed",
+        "mandatory": false,
+        "narrator": "salim-caravan-scribe",
+        "response": {
+          "en": "A ledger of wells is useful only if the road between them is known.",
+          "es-ES": "Un registro de pozos solo sirve si conocemos el camino que los une."
+        }
+      },
+      {
+        "id": "optional-4",
+        "centreTiles": [
+          291.27,
+          291.27
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The caravan’s lookout — 4",
+          "es-ES": "El vigía de la caravana — 4"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "03-the-edge-of-the-river.optional-4.claimed",
+        "mandatory": false,
+        "narrator": "salim-caravan-scribe",
+        "response": {
+          "en": "A ledger of wells is useful only if the road between them is known.",
+          "es-ES": "Un registro de pozos solo sirve si conocemos el camino que los une."
+        }
+      }
+    ],
+    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
+    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+  }
 }
 ```
 
@@ -262,9 +397,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-1",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-1",
+        "id": "03-the-edge-of-the-river.o1",
         "oncePerEntity": true,
-        "required": "Secure the northern supply point and the two flank paths."
+        "required": 2
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o1=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -273,45 +408,161 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 2,
       "entities": [
         {
-          "id": "03-the-edge-of-the-river-o1-entity-1",
-          "atHub": "hub-1",
+          "id": "03-the-edge-of-the-river.northern-point-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "secure-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "03-the-edge-of-the-river-o1-entity-2",
-          "atHub": "hub-1",
+          "id": "03-the-edge-of-the-river.o1.main-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "secure-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "03-the-edge-of-the-river.o1.main-access-blocker.2",
+          "role": "military-guard",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "03-the-edge-of-the-river.two-flanks-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "03-the-edge-of-the-river.two-flanks-blocker.2",
+          "role": "military-guard",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "secure-corridor",
         "requiredCount": 2,
         "destination": "hub-1",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Secure the northern supply point and the two flank paths.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-access",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "03-the-edge-of-the-river.o1.main-access.1",
+              "03-the-edge-of-the-river.o1.main-access.2"
+            ],
+            "blockingEnemies": [
+              "03-the-edge-of-the-river.o1.main-access-blocker.1",
+              "03-the-edge-of-the-river.o1.main-access-blocker.2"
+            ],
+            "requiredCount": 2,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          },
+          {
+            "id": "northern-point",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "03-the-edge-of-the-river.northern-point.1"
+            ],
+            "blockingEnemies": [
+              "03-the-edge-of-the-river.northern-point-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          },
+          {
+            "id": "two-flanks",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "03-the-edge-of-the-river.two-flanks.1",
+              "03-the-edge-of-the-river.two-flanks.2"
+            ],
+            "blockingEnemies": [
+              "03-the-edge-of-the-river.two-flanks-blocker.1",
+              "03-the-edge-of-the-river.two-flanks-blocker.2"
+            ],
+            "requiredCount": 2,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "main-access",
+          "northern-point",
+          "two-flanks"
+        ],
+        "allRequired": true
       }
     },
     {
       "id": "o2",
       "text": {
-        "en": "Break the two field commands while keeping the reserve in reach.",
-        "es-ES": "Rompe los dos mandos de campo manteniendo la reserva al alcance."
+        "en": "Break the two field commands while keeping the protected supply stock at the nearby receiving point.",
+        "es-ES": "Rompe los dos mandos de campaña manteniendo la reserva de suministros en el punto de recepción cercano."
       },
       "after": [
         "o1"
@@ -319,9 +570,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-2",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-2",
+        "id": "03-the-edge-of-the-river.o2",
         "oncePerEntity": true,
-        "required": "Break the two field commands while keeping the reserve in reach."
+        "required": 2
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o2=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -330,38 +581,99 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 2,
       "entities": [
         {
-          "id": "03-the-edge-of-the-river-o2-entity-1",
-          "atHub": "hub-2",
+          "id": "03-the-edge-of-the-river.o2-post.1",
+          "role": "military-post",
+          "initialHub": "hub-2",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "destroy-military-post",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-2"
         },
         {
-          "id": "03-the-edge-of-the-river-o2-entity-2",
-          "atHub": "hub-2",
+          "id": "03-the-edge-of-the-river.o2-post.2",
+          "role": "military-post",
+          "initialHub": "hub-2",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "destroy-military-post",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-2"
+        },
+        {
+          "id": "03-the-edge-of-the-river.protected-supply-stock",
+          "role": "protected-stock-wagon",
+          "initialHub": "hub-2",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "finite": true,
+          "initiallyDelivered": false,
+          "identity": "fictional local supply reserve",
+          "replacement": "protected recovery stock already budgeted; never adds resources",
+          "countedOnce": true,
+          "atHub": "hub-2"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "destroy-military-post",
         "requiredCount": 2,
         "destination": "hub-2",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Break the two field commands while keeping the reserve in reach.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "defeated-posts",
+            "kind": "entity-state",
+            "state": "destroyed",
+            "entities": [
+              "03-the-edge-of-the-river.o2-post.1",
+              "03-the-edge-of-the-river.o2-post.2"
+            ],
+            "requiredCount": 2,
+            "oncePerEntity": true
+          },
+          {
+            "id": "reserve-in-reach",
+            "kind": "minimum-stock",
+            "account": "protected-recovery",
+            "amounts": {
+              "food": 300,
+              "wood": 200,
+              "gold": 100,
+              "stone": 0
+            },
+            "evaluate": "at completion; separately reserved, cannot fund mandatory transactions",
+            "atHub": "hub-2",
+            "maximumNavigableDistanceTiles": 36,
+            "accountEntityIds": [
+              "03-the-edge-of-the-river.protected-supply-stock"
+            ]
+          }
+        ],
+        "requiredLedgers": [
+          "defeated-posts",
+          "reserve-in-reach"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -376,9 +688,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-3",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-3",
+        "id": "03-the-edge-of-the-river.o3",
         "oncePerEntity": true,
-        "required": "Hold the rally plateau and reopen the road for the supply train."
+        "required": 1
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o3=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -387,30 +699,326 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 1,
       "entities": [
         {
-          "id": "03-the-edge-of-the-river-o3-entity-1",
-          "atHub": "hub-3",
+          "id": "03-the-edge-of-the-river.o3.main-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-3",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "secure-rally",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-3"
+        },
+        {
+          "id": "03-the-edge-of-the-river.train-road-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-3",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-3"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "secure-rally",
         "requiredCount": 1,
         "destination": "hub-3",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Hold the rally plateau and reopen the road for the supply train.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-access",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "03-the-edge-of-the-river.o3.main-access.1"
+            ],
+            "blockingEnemies": [
+              "03-the-edge-of-the-river.o3.main-access-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          },
+          {
+            "id": "train-road",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "03-the-edge-of-the-river.train-road.1"
+            ],
+            "blockingEnemies": [
+              "03-the-edge-of-the-river.train-road-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "main-access",
+          "train-road"
+        ],
+        "allRequired": true
       }
     }
   ],
+  "worldContract": {
+    "version": 1,
+    "classification": "authoring specification, not implemented DSL",
+    "entities": [
+      {
+        "id": "03-the-edge-of-the-river.northern-point-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.two-flanks-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.two-flanks-blocker.2",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.o2-post.1",
+        "role": "military-post",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.o2-post.2",
+        "role": "military-post",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.train-road-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-3",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.protected-supply-stock",
+        "role": "protected-stock-wagon",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "finite": true,
+        "initiallyDelivered": false,
+        "identity": "fictional local supply reserve",
+        "replacement": "protected recovery stock already budgeted; never adds resources"
+      },
+      {
+        "id": "03-the-edge-of-the-river.o1.main-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.o1.main-access-blocker.2",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "03-the-edge-of-the-river.o3.main-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-3",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      }
+    ],
+    "zones": [
+      {
+        "id": "03-the-edge-of-the-river.northern-point.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.two-flanks.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.two-flanks.2",
+        "hub": "hub-1",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.train-road.1",
+        "hub": "hub-3",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.o1.main-access.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.o1.main-access.2",
+        "hub": "hub-1",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "03-the-edge-of-the-river.o3.main-access.1",
+        "hub": "hub-3",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      }
+    ],
+    "ledgerPolicy": "persist exact object IDs, allocations, receipt flags, pairing and phase. Compound objectives require EVERY listed requirement; shared families/copies retain identity between phases.",
+    "resourcePolicy": "protected-recovery is separate from spendable; no double-count in ledgers; no infinite consignment or fifth engine resource",
+    "defeatPolicy": "below required possible survivors is unrecoverable; recoverable carriers retain their token via one helper; historical deaths remain narrated, not killable units",
+    "earlyDelivery": "Observation is always active. Only phase transition and announced effects are phase-gated. Preserve token origin, owner and already-counted receipt through save/load.",
+    "survivorGroups": [],
+    "enemyBinding": "Bind every military-guard and military-post entity to a unique initialEnemy roster member. They consume that budget; never add objective guards on top of initial composition."
+  },
   "states": {
     "states": [
       "briefing",
@@ -466,9 +1074,9 @@ These are explicit estimates for calibration, not measured wins or evidence of p
 
 | Profile | Start F/W/G/S | Gatherable F/W/G/S | Escort | Initial + waves | Warning / gap seconds |
 |---|---|---|---:|---|---|
-| easy | 1125/875/500/250 | 2355/1125/1420/550 | 28 | 36 + 36 + 36 + 36 = 144 | 120 / 924 |
-| standard | 900/700/400/200 | 2340/1200/1360/600 | 24 | 48 + 48 + 48 + 48 = 192 | 90 / 924 |
-| hard | 765/595/340/170 | 2235/1205/1260/630 | 20 | 57 + 57 + 57 + 59 = 230 | 75 / 924 |
+| easy | 1125/875/500/250 | 2355/1125/1420/550 | 28 | 36 + 36 + 36 + 36 = 144 | 120 / 474 |
+| standard | 900/700/400/200 | 2340/1200/1360/600 | 24 | 48 + 48 + 48 + 48 = 192 | 90 / 370 |
+| hard | 765/595/340/170 | 2235/1205/1260/630 | 20 | 57 + 57 + 57 + 59 = 230 | 75 / 296 |
 
 ```json
 {
@@ -515,7 +1123,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 6
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 924,
+          "offsetSeconds": 474,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -530,7 +1138,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 6
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1848,
+          "offsetSeconds": 948,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -545,7 +1153,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 6
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2772,
+          "offsetSeconds": 1422,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -573,7 +1181,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         30,
-        55
+        60
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "one approach at a time; show full route",
@@ -592,7 +1200,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 7
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -636,7 +1245,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 8
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 924,
+          "offsetSeconds": 370,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -651,7 +1260,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 8
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1848,
+          "offsetSeconds": 740,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -666,7 +1275,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 8
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2772,
+          "offsetSeconds": 1110,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -694,7 +1303,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         30,
-        55
+        60
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "alternate main and flank; show warning + scoutable approach",
@@ -713,7 +1322,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 6
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -757,7 +1367,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 9
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 924,
+          "offsetSeconds": 296,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -772,7 +1382,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 9
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1848,
+          "offsetSeconds": 592,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -787,7 +1397,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 9
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2772,
+          "offsetSeconds": 888,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -815,7 +1425,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         30,
-        55
+        60
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "wave 2 two scoutable approaches, waves remain capped; force escort/reserve split without simultaneous blind spawns",
@@ -834,7 +1444,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 5
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     }
   },
   "analysis": {
@@ -845,8 +1456,17 @@ These are explicit estimates for calibration, not measured wins or evidence of p
     "walkingAndIdleIncluded": "Assumed rate discounts native gathering for travel/idle; measure actual efficiency in game.",
     "worstDeliveryFood": 0,
     "sensitivity": "At 50% of assumed efficiency recompute delivery window; do not spawn hidden resources. Split workers 50%food/25%wood/20%gold/5%stone, change allocation when a specified delivery requires stone.",
-    "travelTime": "Measure nav-path length in tiles / actual convoy speed plus loading/unloading; two round trips must fit between phase waves. If not, adjust announced gap or move receiving point within same documented district; architect approval for footprint drift.",
-    "minimumWaveGapSecondsFromProposedGeometry": 924
+    "travelTime": "Phase waves use the separate local phase-two supply circuit, not the whole-map journey. Two round trips +90s loading/reaction fit the floor. Validate actual nav-path/speed and recompute before game approval.",
+    "minimumWaveGapSecondsFromProposedGeometry": 296,
+    "wholeJourneyDistanceTiles": 299.14,
+    "wholeJourneyOneWaySecondsEstimate": 428,
+    "optionalCacheAllocation": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "solventWithoutOptionalCaches": true
   }
 }
 ```
@@ -875,7 +1495,7 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.first-caliphs.03-the-edge-of-the-river.fact-intro` / intro first | collection-narrator → next | The battle of Yarmuk in 636 ended in defeat for the Byzantine army. Late accounts do not establish precise numbers or every tactical detail. | Victoria árabe ante fuerzas romano-orientales en Yarmuk. Despliegues, efectivos y cadenas de soldados del relato tardío no se toman como precisión. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.personal-intro` / after fact-intro | salim-caravan-scribe → next | From the supply line I saw dust before I saw standards. Later I heard tidy accounts of the battle. My own account begins with the men returning thirsty. | Desde la línea de suministro vi polvo antes que estandartes. Después oí relatos ordenados. El mío comienza con hombres que regresaban sedientos. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.objective-1` / phase-1 active | none → hub-1 | Secure the northern supply point and the two flank paths. | Asegura el punto de suministro norte y los dos caminos de flanco. |
-| `scenario.first-caliphs.03-the-edge-of-the-river.objective-2` / phase-2 active | none → hub-2 | Break the two field commands while keeping the reserve in reach. | Rompe los dos mandos de campo manteniendo la reserva al alcance. |
+| `scenario.first-caliphs.03-the-edge-of-the-river.objective-2` / phase-2 active | none → hub-2 | Break the two field commands while keeping the protected supply stock at the nearby receiving point. | Rompe los dos mandos de campaña manteniendo la reserva de suministros en el punto de recepción cercano. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.objective-3` / phase-3 active | none → hub-3 | Hold the rally plateau and reopen the road for the supply train. | Conserva la meseta de reunión y reabre el camino al tren de víveres. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.instructions` / instructions panel | none → next | Complete the listed tasks in order. Deliveries count once at their marked receiving points. Scout both routes before moving the carriers. | Completa las tareas indicadas en orden. Las entregas cuentan una vez en los puntos de recepción señalados. Explora ambas rutas antes de mover a los porteadores. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.scouts` / scouts panel | none → next | Regional setting: Yarmuk and Golan approaches. Follow the marked control points and check the alternate corridor. This is a compressed reconstruction, not a surveyed battlefield. | Entorno regional: Yarmuk and Golan approaches. Sigue los puntos señalados y comprueba el corredor alternativo. Es una reconstrucción comprimida, no un campo de batalla topografiado. |
@@ -889,6 +1509,10 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.first-caliphs.03-the-edge-of-the-river.victory-personal` / after victory-fact | salim-caravan-scribe → 04-fields-of-the-sawad | I have counted the arriving loads. I will not pretend that a ledger counts every loss. | He contado las cargas que llegan. No fingiré que un registro cuenta todas las pérdidas. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.first-caliphs.03-the-edge-of-the-river.recovery` / 6 minutes without objective progress | salim-caravan-scribe → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
+| `scenario.first-caliphs.03-the-edge-of-the-river.optional-1` / optional sector observed/cache claimed; once, independent of main phase | salim-caravan-scribe → return-to-game | The caravan’s lookout — 1: The hidden reserve approach is now marked. A ledger of wells is useful only if the road between them is known. | El vigía de la caravana — 1: La aproximación de la reserva está señalada. Un registro de pozos solo sirve si conocemos el camino que los une. |
+| `scenario.first-caliphs.03-the-edge-of-the-river.optional-2` / optional sector observed/cache claimed; once, independent of main phase | salim-caravan-scribe → return-to-game | The caravan’s lookout — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. A ledger of wells is useful only if the road between them is known. | El vigía de la caravana — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Un registro de pozos solo sirve si conocemos el camino que los une. |
+| `scenario.first-caliphs.03-the-edge-of-the-river.optional-3` / optional sector observed/cache claimed; once, independent of main phase | salim-caravan-scribe → return-to-game | The caravan’s lookout — 3: The relief route is now marked. A ledger of wells is useful only if the road between them is known. | El vigía de la caravana — 3: La ruta alternativa está señalada. Un registro de pozos solo sirve si conocemos el camino que los une. |
+| `scenario.first-caliphs.03-the-edge-of-the-river.optional-4` / optional sector observed/cache claimed; once, independent of main phase | salim-caravan-scribe → return-to-game | The caravan’s lookout — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. A ledger of wells is useful only if the road between them is known. | El vigía de la caravana — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Un registro de pozos solo sirve si conocemos el camino que los une. |
 
 ## Adversarial QA
 

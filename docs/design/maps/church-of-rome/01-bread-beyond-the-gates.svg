@@ -59,31 +59,44 @@
 <polyline points="240.84,575.51 221.96,595.63" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="221.96,595.63 163.33,617.10" fill="none" stroke="#306a88" stroke-width="2"/>
 <polyline points="565.99,159.11 554.47,214.28 554.47,269.46 562.70,335.67 472.25,379.82 439.35,490.18 241.97,578.47 159.74,644.69" fill="none" stroke="#419fc0" stroke-width="6" stroke-dasharray="9 7"/>
-<polyline points="439.35,423.96 580.79,287.12 255.13,587.28" fill="none" stroke="#94542f" stroke-width="4"/>
-<polyline points="439.35,423.96 541.27,386.74 580.79,287.12 255.13,587.28" fill="none" stroke="#7463a3" stroke-width="4"/>
+<polyline points="439.35,423.96 580.79,287.12 628.49,324.64" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="439.35,423.96 525.67,371.14 580.79,287.12 628.49,324.64" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="229.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="278.00" font-family="sans-serif" font-size="12">optional-1</text>
+<circle cx="551.00" cy="274.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="278.00" font-family="sans-serif" font-size="12">optional-2</text>
+<circle cx="229.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="213.00" y="600.00" font-family="sans-serif" font-size="12">optional-3</text>
+<circle cx="551.00" cy="596.00" r="45" fill="#b6c997" fill-opacity=".3" stroke="#75875a" stroke-dasharray="4 4"/>
+<text x="535.00" y="600.00" font-family="sans-serif" font-size="12">optional-4</text>
 <circle cx="580.79" cy="287.12" r="7" fill="#2e3740"/>
 <text x="590.79" y="278.12" font-family="sans-serif" font-size="16">1</text>
 <circle cx="255.13" cy="587.28" r="7" fill="#2e3740"/>
 <text x="265.13" y="578.28" font-family="sans-serif" font-size="16">2</text>
 <circle cx="439.35" cy="423.96" r="7" fill="#2e3740"/>
 <text x="449.35" y="414.96" font-family="sans-serif" font-size="16">3</text>
+<circle cx="628.49" cy="324.64" r="7" fill="#2e3740"/>
+<text x="638.49" y="315.64" font-family="sans-serif" font-size="16">4</text>
 <circle cx="439.35" cy="423.96" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
 <circle cx="580.79" cy="287.12" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
-<circle cx="255.13" cy="587.28" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="628.49" cy="324.64" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
 <text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
 <text x="770" y="129" font-family="sans-serif" font-size="14">Solid blue: modern Natural Earth</text>
 <text x="770" y="153" font-family="sans-serif" font-size="14">Dashed blue: schematic water control</text>
 <text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
 <text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
 <text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
-<text x="770" y="249" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
-<text x="770" y="273" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
-<text x="770" y="297" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
-<text x="770" y="360" font-family="sans-serif" font-size="13">1: Rome civic centre</text>
-<text x="770" y="380" font-family="monospace" font-size="12">[12.486, 41.892] → [277.35, 103.66]</text>
-<text x="770" y="423" font-family="sans-serif" font-size="13">2: Ostia harbour region</text>
-<text x="770" y="443" font-family="monospace" font-size="12">[12.288, 41.756] → [110.33, 257.6]</text>
-<text x="770" y="486" font-family="sans-serif" font-size="13">3: Lower Tiber road</text>
-<text x="770" y="506" font-family="monospace" font-size="12">[12.4, 41.83] → [204.81, 173.84]</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green: optional scouting sectors</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Rome civic centre</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[12.486, 41.892] → [277.35, 103.66]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Ostia harbour region</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[12.288, 41.756] → [110.33, 257.6]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Lower Tiber road</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[12.4, 41.83] → [204.81, 173.84]</text>
+<text x="770" y="584" font-family="sans-serif" font-size="13">4: Eastern departure road, reconstructed</text>
+<text x="770" y="604" font-family="monospace" font-size="12">[12.515, 41.875] → [301.81, 122.9]</text>
 <text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [12.18, 41.69, 12.56, 41.96] · cosine-corrected, padded square; positions approximate</text>
 </svg>

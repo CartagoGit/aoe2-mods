@@ -99,10 +99,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
   "hubs": [
     {
       "id": "hub-1",
-      "anchor": "anchor-3",
+      "anchor": "anchor-2",
       "centre": [
-        265.06,
-        232.92
+        274.07,
+        104.71
       ],
       "purpose": {
         "en": "Mark the two civilian withdrawal paths east of the dry camp.",
@@ -113,10 +113,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     },
     {
       "id": "hub-2",
-      "anchor": "anchor-1",
+      "anchor": "anchor-2",
       "centre": [
-        202.02,
-        108.98
+        274.07,
+        104.71
       ],
       "purpose": {
         "en": "Carry the water and records to six of eight travelling family groups.",
@@ -127,10 +127,10 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     },
     {
       "id": "hub-3",
-      "anchor": "anchor-2",
+      "anchor": "anchor-3",
       "centre": [
-        274.07,
-        104.71
+        265.06,
+        232.92
       ],
       "purpose": {
         "en": "Withdraw the families and preserve the two testimony copies.",
@@ -145,16 +145,16 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "main",
       "waypoints": [
         [
-          265.06,
-          232.92
-        ],
-        [
-          202.02,
-          108.98
+          274.07,
+          104.71
         ],
         [
           274.07,
           104.71
+        ],
+        [
+          265.06,
+          232.92
         ]
       ],
       "widthTiles": 10,
@@ -164,20 +164,20 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
       "id": "relief",
       "waypoints": [
         [
-          265.06,
-          232.92
+          274.07,
+          104.71
         ],
         [
-          217.54000000000002,
-          154.95
-        ],
-        [
-          202.02,
-          108.98
+          282.07,
+          112.71
         ],
         [
           274.07,
           104.71
+        ],
+        [
+          265.06,
+          232.92
         ]
       ],
       "widthTiles": 6,
@@ -230,7 +230,142 @@ Solid-blue map layers are modern Natural Earth data; dashed waterways are archit
     "benchmark": "20-minute crowded corridor replay, 3 passes on documented target PC; simulation slowdown <10% vs reference, measured not presumed"
   },
   "asset": "docs/design/maps/house-of-ali/04-the-water-that-remains.svg",
-  "mainRouteLengthStraightTiles": 211.23
+  "mainRouteLengthStraightTiles": 211.23,
+  "phaseSupply": {
+    "phase": "phase-2",
+    "receivingHub": "hub-2",
+    "waypoints": [
+      [
+        256.07,
+        116.71
+      ],
+      [
+        292.07,
+        116.71
+      ]
+    ],
+    "widthTiles": 6,
+    "distanceTiles": 36.0,
+    "placement": "fictional local supply circuit on SAME bank/plateau in receiving district; validate terrain and footprints, no invented river crossing",
+    "twoRoundTripFormula": "4 * measured one-way navigable distance / measured convoy speed + loading/reaction allowance"
+  },
+  "explorationPlan": {
+    "classification": "regional sectors for fictional optional activity; not ancient sites or surveyed routes",
+    "sectors": [
+      {
+        "id": "optional-1",
+        "centreTiles": [
+          96.93,
+          96.93
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The neighbours’ provisions — 1",
+          "es-ES": "Las provisiones de los vecinos — 1"
+        },
+        "task": "reveal-reserve-approach",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "wave-2 approach",
+        "onceFlag": "04-the-water-that-remains.optional-1.claimed",
+        "mandatory": false,
+        "narrator": "dina-potter",
+        "response": {
+          "en": "I kept a cup aside for whoever came after us.",
+          "es-ES": "Guardé una taza para quien llegara después."
+        }
+      },
+      {
+        "id": "optional-2",
+        "centreTiles": [
+          262.07,
+          96.93
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The neighbours’ provisions — 2",
+          "es-ES": "Las provisiones de los vecinos — 2"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "04-the-water-that-remains.optional-2.claimed",
+        "mandatory": false,
+        "narrator": "dina-potter",
+        "response": {
+          "en": "I kept a cup aside for whoever came after us.",
+          "es-ES": "Guardé una taza para quien llegara después."
+        }
+      },
+      {
+        "id": "optional-3",
+        "centreTiles": [
+          96.93,
+          262.07
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The neighbours’ provisions — 3",
+          "es-ES": "Las provisiones de los vecinos — 3"
+        },
+        "task": "reveal-relief-corridor",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {},
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": "relief corridor",
+        "onceFlag": "04-the-water-that-remains.optional-3.claimed",
+        "mandatory": false,
+        "narrator": "dina-potter",
+        "response": {
+          "en": "I kept a cup aside for whoever came after us.",
+          "es-ES": "Guardé una taza para quien llegara después."
+        }
+      },
+      {
+        "id": "optional-4",
+        "centreTiles": [
+          262.07,
+          262.07
+        ],
+        "radiusTiles": 30,
+        "title": {
+          "en": "The neighbours’ provisions — 4",
+          "es-ES": "Las provisiones de los vecinos — 4"
+        },
+        "task": "collect-finite-cache",
+        "activation": "scout the sector; mark one finite landmark/cache on valid accessible terrain",
+        "terrainPolicy": "use region terrain/hydrology and dated reconstruction; water sector can be observed from nearest navigable bank. No mandatory path or invented settlement here.",
+        "reward": {
+          "food": 300,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "rewardSource": "deduct this allocation from gatherableBank, never add on top. Optional caches fit inside surplus; all mandatory tasks remain solvent without them.",
+        "revealTarget": null,
+        "onceFlag": "04-the-water-that-remains.optional-4.claimed",
+        "mandatory": false,
+        "narrator": "dina-potter",
+        "response": {
+          "en": "I kept a cup aside for whoever came after us.",
+          "es-ES": "Guardé una taza para quien llegara después."
+        }
+      }
+    ],
+    "connectingTrails": "four optional scouting sectors link to main/relief corridors by paths following real terrain. Rest/lookout every25–55 navigable tiles; do not turn the full map into a forced perimeter march.",
+    "qualityGate": "architect certifies each sector location against raster terrain, coast and relief; no new historical claim or geography deformation to make a cache reachable"
+  }
 }
 ```
 
@@ -251,9 +386,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-1",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-1",
+        "id": "04-the-water-that-remains.o1",
         "oncePerEntity": true,
-        "required": "Mark the two civilian withdrawal paths east of the dry camp."
+        "required": 2
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o1=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -262,38 +397,103 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 2,
       "entities": [
         {
-          "id": "04-the-water-that-remains-o1-entity-1",
-          "atHub": "hub-1",
+          "id": "04-the-water-that-remains.eastern-withdrawal-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "scout-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o1-entity-2",
-          "atHub": "hub-1",
+          "id": "04-the-water-that-remains.o1.main-access-blocker.1",
+          "role": "military-guard",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "scout-corridor",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.o1.main-access-blocker.2",
+          "role": "military-guard",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "scout-corridor",
         "requiredCount": 2,
         "destination": "hub-1",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Mark the two civilian withdrawal paths east of the dry camp.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-access",
+            "kind": "area-state",
+            "state": "visited-and-passable",
+            "zones": [
+              "04-the-water-that-remains.o1.main-access.1",
+              "04-the-water-that-remains.o1.main-access.2"
+            ],
+            "blockingEnemies": [
+              "04-the-water-that-remains.o1.main-access-blocker.1",
+              "04-the-water-that-remains.o1.main-access-blocker.2"
+            ],
+            "requiredCount": 2,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          },
+          {
+            "id": "eastern-withdrawal",
+            "kind": "area-state",
+            "state": "controlled-and-passable",
+            "zones": [
+              "04-the-water-that-remains.eastern-withdrawal.1"
+            ],
+            "blockingEnemies": [
+              "04-the-water-that-remains.eastern-withdrawal-blocker.1"
+            ],
+            "requiredCount": 1,
+            "proof": "player scout/escort has traversed each zone and designated blockers are dead or outside it; no elapsed-time substitute",
+            "mustRemainUntilObjective": "o3"
+          }
+        ],
+        "requiredLedgers": [
+          "main-access",
+          "eastern-withdrawal"
+        ],
+        "allRequired": true
       }
     },
     {
@@ -308,9 +508,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-2",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-2",
+        "id": "04-the-water-that-remains.o2",
         "oncePerEntity": true,
-        "required": "Carry the water and records to six of eight travelling family groups."
+        "required": 6
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o2=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -319,104 +519,535 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 6,
       "entities": [
         {
-          "id": "04-the-water-that-remains-o2-entity-1",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.1",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-2",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.2",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-3",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.3",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-4",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.4",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-5",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.5",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-6",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.6",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            2
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-7",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.7",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o2-entity-8",
-          "atHub": "hub-2",
+          "id": "04-the-water-that-remains.family.8",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            6
+            -8,
+            8
           ],
-          "role": "evacuate-family",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.1",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.2",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.3",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.4",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.5",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.6",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.7",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.records-to-six-families.8",
+          "role": "family-record",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.1",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.2",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.3",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.4",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.5",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.6",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.7",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.water-to-six-families.8",
+          "role": "water-consignment",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "evacuate-family",
         "requiredCount": 6,
         "destination": "hub-2",
         "defeatBelowRemaining": 6,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Carry the water and records to six of eight travelling family groups.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "families-arrived",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "04-the-water-that-remains.family.1",
+              "04-the-water-that-remains.family.2",
+              "04-the-water-that-remains.family.3",
+              "04-the-water-that-remains.family.4",
+              "04-the-water-that-remains.family.5",
+              "04-the-water-that-remains.family.6",
+              "04-the-water-that-remains.family.7",
+              "04-the-water-that-remains.family.8"
+            ],
+            "requiredCount": 6,
+            "oncePerEntity": true,
+            "destinations": {
+              "04-the-water-that-remains.family.1": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.2": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.3": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.4": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.5": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.6": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.7": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+              "04-the-water-that-remains.family.8": "04-the-water-that-remains.o2.families-arrived.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          },
+          {
+            "id": "water-to-six-families",
+            "kind": "paired-delivery",
+            "pairs": [
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.1",
+                "receiver": "04-the-water-that-remains.family.1"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.2",
+                "receiver": "04-the-water-that-remains.family.2"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.3",
+                "receiver": "04-the-water-that-remains.family.3"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.4",
+                "receiver": "04-the-water-that-remains.family.4"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.5",
+                "receiver": "04-the-water-that-remains.family.5"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.6",
+                "receiver": "04-the-water-that-remains.family.6"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.7",
+                "receiver": "04-the-water-that-remains.family.7"
+              },
+              {
+                "cargo": "04-the-water-that-remains.water-to-six-families.8",
+                "receiver": "04-the-water-that-remains.family.8"
+              }
+            ],
+            "requiredCount": 6,
+            "receiverSet": "exact same six-or-more family IDs counted by families-arrived",
+            "destination": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+            "oncePerPair": true,
+            "cargoRecovery": "dead family cargo can be collected; no new token minted"
+          },
+          {
+            "id": "records-to-six-families",
+            "kind": "paired-delivery",
+            "pairs": [
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.1",
+                "receiver": "04-the-water-that-remains.family.1"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.2",
+                "receiver": "04-the-water-that-remains.family.2"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.3",
+                "receiver": "04-the-water-that-remains.family.3"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.4",
+                "receiver": "04-the-water-that-remains.family.4"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.5",
+                "receiver": "04-the-water-that-remains.family.5"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.6",
+                "receiver": "04-the-water-that-remains.family.6"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.7",
+                "receiver": "04-the-water-that-remains.family.7"
+              },
+              {
+                "cargo": "04-the-water-that-remains.records-to-six-families.8",
+                "receiver": "04-the-water-that-remains.family.8"
+              }
+            ],
+            "requiredCount": 6,
+            "receiverSet": "exact same six-or-more family IDs counted by families-arrived",
+            "destination": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+            "oncePerPair": true,
+            "cargoRecovery": "dead family cargo can be collected; no new token minted"
+          }
+        ],
+        "requiredLedgers": [
+          "families-arrived",
+          "water-to-six-families",
+          "records-to-six-families"
+        ],
+        "allRequired": true,
+        "exportedLedgers": [
+          {
+            "id": "served-families",
+            "operator": "intersection",
+            "fromRequirements": [
+              "families-arrived",
+              "water-to-six-families",
+              "records-to-six-families"
+            ],
+            "field": "successfulReceiverIds",
+            "minimumCount": 6,
+            "persist": "union of permanently completed pair receipts, no substitution of unsupplied families"
+          }
+        ]
       }
     },
     {
@@ -431,9 +1062,9 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "targetHub": "hub-3",
       "completion": "Latched world-state predicate for listed deliveries, escort arrivals, records or military outposts. A moved unit is not a completed delivery until it enters destination zone and is counted once.",
       "countLedger": {
-        "id": "ledger-3",
+        "id": "04-the-water-that-remains.o3",
         "oncePerEntity": true,
-        "required": "Withdraw the families and preserve the two testimony copies."
+        "required": 2
       },
       "earlyCompletion": "Capture persistent destroyed/arrived/paid state before phase activation; never require event to occur twice.",
       "effect": "latch o3=1; enable next phase once; show objective text and campaign narrator reaction",
@@ -442,41 +1073,752 @@ Every predicate requires the actual world-state operation, not a timer approxima
       "threshold": 2,
       "entities": [
         {
-          "id": "04-the-water-that-remains-o3-entity-1",
-          "atHub": "hub-3",
+          "id": "04-the-water-that-remains.family.1",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            -6,
-            -6
+            -8,
+            8
           ],
-          "role": "deliver-copy",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
         },
         {
-          "id": "04-the-water-that-remains-o3-entity-2",
-          "atHub": "hub-3",
+          "id": "04-the-water-that-remains.family.2",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
           "offsetTiles": [
-            6,
-            -6
+            -8,
+            8
           ],
-          "role": "deliver-copy",
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
           "countedOnce": true,
-          "historicalIdentity": "fictional gameplay object; no impersonated historical authority"
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.3",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.4",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.5",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.6",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.7",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.family.8",
+          "role": "civilian-party",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.o3.main-entities.1",
+          "role": "record-token",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
+        },
+        {
+          "id": "04-the-water-that-remains.o3.main-entities.2",
+          "role": "record-token",
+          "initialHub": "hub-1",
+          "offsetTiles": [
+            -8,
+            8
+          ],
+          "identity": "fictional gameplay object",
+          "finite": true,
+          "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+          "initiallyDelivered": false,
+          "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+          "countedOnce": true,
+          "atHub": "hub-1"
         }
       ],
       "predicate": {
-        "operator": "all-required-ledgers-latched",
+        "operator": "all",
         "operation": "deliver-copy",
         "requiredCount": 2,
         "destination": "hub-3",
         "defeatBelowRemaining": null,
         "resourceAmounts": {},
-        "criticalSecondaryRequirements": "Withdraw the families and preserve the two testimony copies.",
         "phaseGated": true,
-        "neverUseTimerInstead": true
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "main-entities",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "04-the-water-that-remains.o3.main-entities.1",
+              "04-the-water-that-remains.o3.main-entities.2"
+            ],
+            "requiredCount": 2,
+            "oncePerEntity": true,
+            "destinations": {
+              "04-the-water-that-remains.o3.main-entities.1": "04-the-water-that-remains.o3.main-entities.receiving-zone",
+              "04-the-water-that-remains.o3.main-entities.2": "04-the-water-that-remains.o3.main-entities.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active."
+          },
+          {
+            "id": "withdraw-same-families",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "04-the-water-that-remains.family.1",
+              "04-the-water-that-remains.family.2",
+              "04-the-water-that-remains.family.3",
+              "04-the-water-that-remains.family.4",
+              "04-the-water-that-remains.family.5",
+              "04-the-water-that-remains.family.6",
+              "04-the-water-that-remains.family.7",
+              "04-the-water-that-remains.family.8"
+            ],
+            "requiredCount": 6,
+            "oncePerEntity": true,
+            "destinations": {
+              "04-the-water-that-remains.family.1": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.2": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.3": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.4": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.5": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.6": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.7": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+              "04-the-water-that-remains.family.8": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone"
+            },
+            "arrivalRule": "same token picked up/assigned to carrier before crossing receiving boundary; mere initial presence never delivers. Persist arrival even if phase is not active.",
+            "eligibleEntitiesFromLedger": {
+              "objective": "o2",
+              "ledger": "served-families"
+            },
+            "eligibilityRule": "count only IDs present in the intersection of successful family arrival, water and record receipts; minimum six eligible survivors arrive"
+          }
+        ],
+        "requiredLedgers": [
+          "main-entities",
+          "withdraw-same-families"
+        ],
+        "allRequired": true
       }
     }
   ],
+  "worldContract": {
+    "version": 1,
+    "classification": "authoring specification, not implemented DSL",
+    "entities": [
+      {
+        "id": "04-the-water-that-remains.eastern-withdrawal-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "04-the-water-that-remains.family.1",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.2",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.3",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.4",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.5",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.6",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.7",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.family.8",
+        "role": "civilian-party",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.1",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.2",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.3",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.4",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.5",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.6",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.7",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.water-to-six-families.8",
+        "role": "water-consignment",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.1",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.2",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.3",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.4",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.5",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.6",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.7",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.records-to-six-families.8",
+        "role": "family-record",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.o3.main-entities.1",
+        "role": "record-token",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.o3.main-entities.2",
+        "role": "record-token",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone"
+      },
+      {
+        "id": "04-the-water-that-remains.o1.main-access-blocker.1",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      },
+      {
+        "id": "04-the-water-that-remains.o1.main-access-blocker.2",
+        "role": "military-guard",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "identity": "fictional gameplay object",
+        "finite": true,
+        "replacement": "one recovery carrier may inherit the SAME token ID; never mint another counted object",
+        "initiallyDelivered": false,
+        "originRule": "one distinct pickup position per token in its initial district; carriers separated by 1–2 tiles within allowed footprint; no origin inside receiving zone",
+        "rosterSource": "initialEnemy; bind to unique member of existing finite roster, never add on top"
+      }
+    ],
+    "zones": [
+      {
+        "id": "04-the-water-that-remains.eastern-withdrawal.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "04-the-water-that-remains.o2.families-arrived.receiving-zone",
+        "hub": "hub-2",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "04-the-water-that-remains.o3.main-entities.receiving-zone",
+        "hub": "hub-3",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "04-the-water-that-remains.o3.withdraw-same-families.receiving-zone",
+        "hub": "hub-3",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid ground within geographic district; receiving zone excludes origins",
+        "protectedCivilian": false
+      },
+      {
+        "id": "04-the-water-that-remains.o1.main-access.1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      },
+      {
+        "id": "04-the-water-that-remains.o1.main-access.2",
+        "hub": "hub-1",
+        "offsetTiles": [
+          8,
+          -4
+        ],
+        "radiusTiles": 4,
+        "placement": "valid terrain within 12 tiles of geographic hub; keep labelled bank/ridge/road",
+        "protectedCivilian": false
+      }
+    ],
+    "ledgerPolicy": "persist exact object IDs, allocations, receipt flags, pairing and phase. Compound objectives require EVERY listed requirement; shared families/copies retain identity between phases.",
+    "resourcePolicy": "protected-recovery is separate from spendable; no double-count in ledgers; no infinite consignment or fifth engine resource",
+    "defeatPolicy": "below required possible survivors is unrecoverable; recoverable carriers retain their token via one helper; historical deaths remain narrated, not killable units",
+    "earlyDelivery": "Observation is always active. Only phase transition and announced effects are phase-gated. Preserve token origin, owner and already-counted receipt through save/load.",
+    "survivorGroups": [
+      {
+        "entities": [
+          "04-the-water-that-remains.family.1",
+          "04-the-water-that-remains.family.2",
+          "04-the-water-that-remains.family.3",
+          "04-the-water-that-remains.family.4",
+          "04-the-water-that-remains.family.5",
+          "04-the-water-that-remains.family.6",
+          "04-the-water-that-remains.family.7",
+          "04-the-water-that-remains.family.8"
+        ],
+        "minimumAliveOrAlreadySafe": 6,
+        "loss": "defeat only when live + already safely delivered distinct IDs fall below minimum"
+      },
+      {
+        "entities": [
+          "04-the-water-that-remains.family.1",
+          "04-the-water-that-remains.family.2",
+          "04-the-water-that-remains.family.3",
+          "04-the-water-that-remains.family.4",
+          "04-the-water-that-remains.family.5",
+          "04-the-water-that-remains.family.6",
+          "04-the-water-that-remains.family.7",
+          "04-the-water-that-remains.family.8"
+        ],
+        "minimumAliveOrAlreadySafe": 6,
+        "loss": "defeat only when live + already safely delivered distinct IDs fall below minimum"
+      }
+    ],
+    "enemyBinding": "Bind every military-guard and military-post entity to a unique initialEnemy roster member. They consume that budget; never add objective guards on top of initial composition."
+  },
   "states": {
     "states": [
       "briefing",
@@ -532,9 +1874,9 @@ These are explicit estimates for calibration, not measured wins or evidence of p
 
 | Profile | Start F/W/G/S | Gatherable F/W/G/S | Escort | Initial + waves | Warning / gap seconds |
 |---|---|---|---:|---|---|
-| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 18 + 18 + 18 + 18 = 72 | 120 / 694 |
-| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 24 + 24 + 24 + 24 = 96 | 90 / 694 |
-| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 28 + 28 + 28 + 31 = 115 | 75 / 694 |
+| easy | 875/625/312/250 | 1885/1075/1128/550 | 16 | 18 + 18 + 18 + 18 = 72 | 120 / 474 |
+| standard | 700/500/250/200 | 1820/1100/1030/600 | 12 | 24 + 24 + 24 + 24 = 96 | 90 / 370 |
+| hard | 595/425/212/170 | 1805/1125/988/630 | 10 | 28 + 28 + 28 + 31 = 115 | 75 / 296 |
 
 ```json
 {
@@ -581,7 +1923,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 694,
+          "offsetSeconds": 474,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -596,7 +1938,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1388,
+          "offsetSeconds": 948,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -611,7 +1953,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 3
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2082,
+          "offsetSeconds": 1422,
           "warningSeconds": 120,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -639,7 +1981,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "one approach at a time; show full route",
@@ -658,7 +2000,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 4
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "standard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -702,7 +2045,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 694,
+          "offsetSeconds": 370,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -717,7 +2060,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1388,
+          "offsetSeconds": 740,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -732,7 +2075,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2082,
+          "offsetSeconds": 1110,
           "warningSeconds": 90,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -760,7 +2103,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "alternate main and flank; show warning + scoutable approach",
@@ -779,7 +2122,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     },
     "hard": {
       "basis": "estimated; must be calibrated in AoE2 before GAME VERIFIED",
@@ -823,7 +2167,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 694,
+          "offsetSeconds": 296,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -838,7 +2182,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 4
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 1388,
+          "offsetSeconds": 592,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -853,7 +2197,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
             "scoutCavalry": 5
           },
           "release": "latched phase-2 entry + phase clock",
-          "offsetSeconds": 2082,
+          "offsetSeconds": 888,
           "warningSeconds": 75,
           "repeat": false,
           "source": "finite preplaced reserve; release movement once, never create unaccounted replacements"
@@ -881,7 +2225,7 @@ These are explicit estimates for calibration, not measured wins or evidence of p
       },
       "roughDurationMinutes": [
         25,
-        45
+        55
       ],
       "objectiveThresholds": "Identical in all difficulties; 6/8 civilian tolerance stays 6/8; no harder historical outcome.",
       "tactics": "wave 2 two scoutable approaches, waves remain capped; force escort/reserve split without simultaneous blind spawns",
@@ -900,7 +2244,8 @@ These are explicit estimates for calibration, not measured wins or evidence of p
         "archer": 3
       },
       "recoveryEscortCount": 4,
-      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn."
+      "finitePlayerRosterNote": "Starting military and four recovery guards are preplaced; replacementBudget audits further training. No free recurring respawn.",
+      "wavePolicy": "If not an explicit siege objective, unreleased waves remain reserved at terminal victory; every released wave still counts against finite cap. Three waves mandatory only for finite-siege-efforts."
     }
   },
   "analysis": {
@@ -911,8 +2256,17 @@ These are explicit estimates for calibration, not measured wins or evidence of p
     "walkingAndIdleIncluded": "Assumed rate discounts native gathering for travel/idle; measure actual efficiency in game.",
     "worstDeliveryFood": 0,
     "sensitivity": "At 50% of assumed efficiency recompute delivery window; do not spawn hidden resources. Split workers 50%food/25%wood/20%gold/5%stone, change allocation when a specified delivery requires stone.",
-    "travelTime": "Measure nav-path length in tiles / actual convoy speed plus loading/unloading; two round trips must fit between phase waves. If not, adjust announced gap or move receiving point within same documented district; architect approval for footprint drift.",
-    "minimumWaveGapSecondsFromProposedGeometry": 694
+    "travelTime": "Phase waves use the separate local phase-two supply circuit, not the whole-map journey. Two round trips +90s loading/reaction fit the floor. Validate actual nav-path/speed and recompute before game approval.",
+    "minimumWaveGapSecondsFromProposedGeometry": 296,
+    "wholeJourneyDistanceTiles": 128.53,
+    "wholeJourneyOneWaySecondsEstimate": 184,
+    "optionalCacheAllocation": {
+      "food": 600,
+      "wood": 300,
+      "gold": 150,
+      "stone": 0
+    },
+    "solventWithoutOptionalCaches": true
   }
 }
 ```
@@ -955,6 +2309,10 @@ The common narrator speaks first in historical intro/outro; campaign-person reac
 | `scenario.house-of-ali.04-the-water-that-remains.victory-personal` / after victory-fact | dina-potter → campaign ending | I kept the names. I cannot turn what happened into a kinder ending. | Guardé los nombres. No puedo transformar lo que ocurrió en un final más amable. |
 | `scenario.house-of-ali.04-the-water-that-remains.loss` / declared irreversible loss | collection-narrator → load/restart | The mission’s required escort or delivery can no longer be completed. The historical account remains unchanged. Reload a save or restart to try the other route. | Ya no se puede completar la escolta o entrega exigida. El relato histórico permanece igual. Carga una partida o reinicia para probar la otra ruta. |
 | `scenario.house-of-ali.04-the-water-that-remains.recovery` / 6 minutes without objective progress | dina-potter → current objective | Check the remaining objective and the relief corridor. Recovery is finite; use the reserve escort or archive copy only once. | Comprueba el objetivo pendiente y el corredor de auxilio. La recuperación es finita: usa la escolta de reserva o copia del archivo una sola vez. |
+| `scenario.house-of-ali.04-the-water-that-remains.optional-1` / optional sector observed/cache claimed; once, independent of main phase | dina-potter → return-to-game | The neighbours’ provisions — 1: The hidden reserve approach is now marked. I kept a cup aside for whoever came after us. | Las provisiones de los vecinos — 1: La aproximación de la reserva está señalada. Guardé una taza para quien llegara después. |
+| `scenario.house-of-ali.04-the-water-that-remains.optional-2` / optional sector observed/cache claimed; once, independent of main phase | dina-potter → return-to-game | The neighbours’ provisions — 2: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. I kept a cup aside for whoever came after us. | Las provisiones de los vecinos — 2: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Guardé una taza para quien llegara después. |
+| `scenario.house-of-ali.04-the-water-that-remains.optional-3` / optional sector observed/cache claimed; once, independent of main phase | dina-potter → return-to-game | The neighbours’ provisions — 3: The relief route is now marked. I kept a cup aside for whoever came after us. | Las provisiones de los vecinos — 3: La ruta alternativa está señalada. Guardé una taza para quien llegara después. |
+| `scenario.house-of-ali.04-the-water-that-remains.optional-4` / optional sector observed/cache claimed; once, independent of main phase | dina-potter → return-to-game | The neighbours’ provisions — 4: One cache: 300 food, 150 wood and 75 gold. It can be claimed once. I kept a cup aside for whoever came after us. | Las provisiones de los vecinos — 4: Un depósito: 300 de alimento, 150 de madera y 75 de oro. Solo se puede reclamar una vez. Guardé una taza para quien llegara después. |
 
 ## Adversarial QA
 
