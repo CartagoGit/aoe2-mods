@@ -3,6 +3,7 @@ import type {
   CapabilityProfileV2,
   MainObjective,
 } from "../schemas/scenario-capability.schema";
+import { paymentReceiptMatches } from "./payment-receipt.helper";
 
 const resourceNames = ["food", "wood", "gold", "stone"] as const;
 export function validateScenarioCapability(
@@ -67,7 +68,13 @@ export function validateScenarioCapability(
       add("capability.zone-hub", zone.id, "Distrito de zona no declarado");
   }
   for (const group of profile.worldContract.survivorGroups) {
-    if (group.minimumAliveOrAlreadySafe > group.entities.length)
+    if (new Set(group.entities).size !== group.entities.length)
+      add(
+        "capability.survivor-identity",
+        profile.profile,
+        "Un superviviente no puede contar por varios IDs repetidos",
+      );
+    if (group.minimumAliveOrAlreadySafe > new Set(group.entities).size)
       add(
         "capability.survivor-threshold",
         group.entities[0] ?? profile.profile,
@@ -156,6 +163,30 @@ export function validateScenarioCapability(
     }
     for (const req of predicate.requirements) {
       const reqContext = `${context}.${req.id}`;
+      // Every identity list is a set, including lists whose counts are checked elsewhere.
+      for (const [field, ids] of Object.entries(req)) {
+        if (
+          [
+            "entities",
+            "zones",
+            "waves",
+            "inputEntities",
+            "outputEntities",
+            "departingEntities",
+            "receivingZones",
+            "inputRecords",
+            "carriedRecords",
+            "blockingEnemies",
+          ].includes(field) &&
+          Array.isArray(ids) &&
+          new Set(ids).size !== ids.length
+        )
+          add(
+            "capability.identity-list",
+            reqContext,
+            `Identidades repetidas en ${field}`,
+          );
+      }
       const requirementKey = `${context}.${req.id}`;
       if (reqOwners.has(requirementKey))
         add(
@@ -351,13 +382,15 @@ export function validateScenarioCapability(
             );
           receiptOwners.set(req.paidFlag, context);
           if (
-            Object.keys(req.amounts).length === 0 ||
-            req.receivingZones.length < 2
+            resourceNames.every(
+              (resource) => (req.amounts[resource] ?? 0) === 0,
+            ) ||
+            req.receivingZones.length < 1
           )
             add(
               "capability.transaction-empty",
               reqContext,
-              "La transacción debe distribuir un importe entre al menos dos receptores",
+              "La transacción requiere importe positivo y al menos un receptor declarado",
             );
           if (new Set(req.receivingZones).size !== req.receivingZones.length)
             add(
@@ -469,8 +502,28 @@ export function validateScenarioCapability(
         case "route-choice":
           break;
         case "finite-wave-resolution":
+          if (
+            req.requiredCount > new Set(req.waves).size ||
+            req.waves.some(
+              (id) =>
+                !profile.enemyRoster.mobilizations.some(
+                  (wave) => wave.id === id,
+                ),
+            )
+          )
+            add(
+              "capability.wave-resolution",
+              reqContext,
+              "El umbral requiere oleadas distintas y declaradas",
+            );
           break;
         case "receipt-exists":
+          if (!paymentReceiptMatches(profile, req))
+            add(
+              "capability.receipt-source",
+              reqContext,
+              "El recibo requiere productor único, objetivo de origen e importe exacto",
+            );
           if (req.newDebit)
             add(
               "capability.receipt-debit",
@@ -748,6 +801,7 @@ export function validateScenarioCapability(
       } else if (req.kind === "visit-zones") {
         if (
           req.countInitialVisibility ||
+          new Set(req.zones).size !== req.zones.length ||
           req.requiredCount !== req.zones.length ||
           req.zones.some(
             (id) => !side.world.zones.some((zone) => zone.id === id),

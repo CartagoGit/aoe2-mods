@@ -399,7 +399,7 @@ export function reduceCapabilityState(
           .filter((item) => item.kind === "entity-arrival")
           .every(
             (arrival) =>
-              arrival.entities.filter((id) =>
+              [...new Set(arrival.entities)].filter((id) =>
                 hasArrival(state, id, arrival.destinations[id] ?? ""),
               ).length >= arrival.requiredCount,
           )) ||
