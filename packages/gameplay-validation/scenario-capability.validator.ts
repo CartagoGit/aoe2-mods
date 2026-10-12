@@ -17,14 +17,14 @@ export function validateScenarioCapability(
   );
   const zones = new Map(profile.worldContract.zones.map((z) => [z.id, z]));
   const objectives = new Map(profile.objectivePlan.map((o) => [o.id, o]));
-  const objectiveIds = [...objectives.keys()];
+  const objectiveIds = profile.objectivePlan.map((o) => o.id);
   const sideIds = new Set(profile.secondaryObjectives.map((o) => o.id));
   const phaseIds = new Set(profile.stateMachine.states);
   const reqOwners = new Map<string, string>();
   const receiptOwners = new Map<string, string>();
   const allWorldIds = [
-    ...entities.keys(),
-    ...zones.keys(),
+    ...profile.worldContract.entities.map((e) => e.id),
+    ...profile.worldContract.zones.map((z) => z.id),
     ...profile.secondaryObjectives.flatMap((o) =>
       o.world.entities.map((e) => e.id),
     ),
@@ -169,6 +169,16 @@ export function validateScenarioCapability(
       switch (req.kind) {
         case "entity-state":
           entityRefs.push(...req.entities);
+          entityRefs.push(
+            ...(req.inputRecords ?? []),
+            ...(req.carriedRecords ?? []),
+          );
+          if (req.carriedRecords?.length)
+            add(
+              "capability.inventory-contract",
+              reqContext,
+              "El transporte de inventario requiere contrato de propiedad tipado; no se certifica por texto libre",
+            );
           if (req.destinations) {
             if (
               Object.keys(req.destinations).length !== req.entities.length ||
@@ -208,11 +218,42 @@ export function validateScenarioCapability(
               (l) =>
                 l.id === eligibility.ledger && l.operator === "intersection",
             );
-            if (!exported || exported.minimumCount < req.requiredCount)
+            const sourceRequirements =
+              exported?.fromRequirements.map((id) =>
+                source?.predicate.requirements.find(
+                  (candidate) => candidate.id === id,
+                ),
+              ) ?? [];
+            const arrivalSets = sourceRequirements.map((candidate) =>
+              candidate?.kind === "paired-delivery"
+                ? new Set(candidate.pairs.map((pair) => pair.receiver))
+                : candidate?.kind === "entity-state" &&
+                    candidate.state === "arrived"
+                  ? new Set(candidate.entities)
+                  : new Set<string>(),
+            );
+            const commonEligibleIds = [...(arrivalSets[0] ?? [])].filter((id) =>
+              arrivalSets.every((set) => set.has(id)),
+            );
+            if (
+              !exported ||
+              exported.minimumCount < req.requiredCount ||
+              sourceRequirements.some(
+                (candidate) =>
+                  !candidate ||
+                  !(
+                    candidate.kind === "paired-delivery" ||
+                    (candidate.kind === "entity-state" &&
+                      candidate.state === "arrived")
+                  ),
+              ) ||
+              commonEligibleIds.length < req.requiredCount ||
+              req.entities.some((id) => !commonEligibleIds.includes(id))
+            )
               add(
                 "capability.survivor-intersection",
                 reqContext,
-                "La retirada debe usar el ledger intersección de supervivientes suficiente",
+                "La retirada debe usar una intersección tipada por IDs comunes realmente recibidos",
               );
           }
           if (req.generatedByReceipts)
@@ -321,7 +362,7 @@ export function validateScenarioCapability(
               (sum, amount) => sum + (amount[resource] ?? 0),
               0,
             );
-            if (total > 0 && allocated !== total)
+            if (allocated !== total)
               add(
                 "capability.transaction-balance",
                 reqContext,
@@ -402,6 +443,24 @@ export function validateScenarioCapability(
               "capability.departure-receipt",
               reqContext,
               "Salida ordenada depende de un objetivo inexistente",
+            );
+          if (req.receiptRequirement) {
+            const receipt = objectives
+              .get(req.receiptObjective)
+              ?.predicate.requirements.find(
+                (item) => item.id === req.receiptRequirement,
+              );
+            if (!receipt || receipt.kind === "ordered-departure")
+              add(
+                "capability.departure-receipt",
+                reqContext,
+                "El recibo de salida debe ser un requisito existente que no dependa de otra salida",
+              );
+          } else if (req.receiptObjective === objective.id)
+            add(
+              "capability.departure-cycle",
+              reqContext,
+              "La salida no puede esperar el mismo objetivo que requiere esa salida; declare un recibo de requisito explícito",
             );
           break;
         case "phase-deadline":
@@ -726,7 +785,7 @@ export function validateScenarioCapability(
   }
 
   const initial = new Set(profile.enemyRoster.initialEntityIds);
-  if (new Set(initial).size !== initial.size)
+  if (initial.size !== profile.enemyRoster.initialEntityIds.length)
     add(
       "capability.enemy-roster",
       profile.profile,

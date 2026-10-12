@@ -105,7 +105,7 @@ const entityStatePredicate = z.strictObject({
 const areaStatePredicate = z.strictObject({
   id: contractId,
   kind: z.literal("area-state"),
-  state: nonEmpty,
+  state: z.enum(["controlled-and-passable", "visited-and-passable"]),
   zones: z.array(contractId).min(1),
   blockingEnemies: z.array(contractId).optional(),
   requiredCount: z.number().int().positive(),
@@ -210,6 +210,7 @@ const orderedDeparturePredicate = z.strictObject({
   departingEntities: z.array(contractId).min(1),
   departureEnabledOnlyAfterReceipt: z.literal(true),
   receiptObjective: contractId,
+  receiptRequirement: contractId.optional(),
 });
 const forbiddenEntryPredicate = z.strictObject({
   id: contractId,

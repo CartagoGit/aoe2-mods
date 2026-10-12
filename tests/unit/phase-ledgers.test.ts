@@ -1,9 +1,7 @@
 import { describe, expect, test } from "bun:test";
 import { renderNativeCampaign } from "../../packages/aoe2-adapter/native-campaign.renderer";
-import {
-  createCapabilitySnapshot,
-  reduceCapabilityState,
-} from "../../packages/gameplay-validation/capability-state.reducer";
+import { createCapabilitySnapshot } from "../../packages/gameplay-state/capability-snapshot.factory";
+import { reduceCapabilityState } from "../../packages/gameplay-state/capability-state.reducer";
 import { validateScenarioCapability } from "../../packages/gameplay-validation/scenario-capability.validator";
 import type { StringLock } from "../../packages/localization/localization.catalog";
 import { compileCapabilityProfile } from "../../packages/scenario-compiler/capability.compiler";
@@ -445,6 +443,491 @@ describe("phase and ledger reference model", () => {
     expect(state.releasedRosterIds).toEqual(["guard-a"]);
     expect(state).toEqual(released);
     state = reduce(state, { type: "record-wave-resolved", waveId: "wave-a" });
+    expect(state.resolvedWaves).toEqual([]);
+    state = reduce(state, { type: "destroy-entity", entityId: "guard-a" });
+    state = reduce(state, { type: "record-wave-resolved", waveId: "wave-a" });
     expect(state.resolvedWaves).toEqual(["wave-a"]);
+  });
+});
+
+type Requirement =
+  (typeof profile.objectivePlan)[number]["predicate"]["requirements"][number];
+function referenceFixture(
+  requirements: Requirement[],
+  configure: (candidate: typeof profile) => void = () => {},
+) {
+  const candidate = structuredClone(profile);
+  const objective = candidate.objectivePlan[0];
+  if (!objective) throw new Error("Missing reference objective");
+  objective.predicate.requirements = requirements;
+  objective.predicate.requiredLedgers = requirements.map((req) => req.id);
+  configure(candidate);
+  const initial = createCapabilitySnapshot(candidate, {
+    spendable: { food: 1, gold: 1 },
+    protectedRecovery: {},
+    optionalReserve: {},
+  });
+  const step = (
+    state: typeof initial,
+    action: Parameters<typeof reduceCapabilityState>[2],
+  ) => reduceCapabilityState(candidate, state, action);
+  return {
+    candidate,
+    step,
+    entered: step(initial, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 100,
+    }),
+  };
+}
+const arrivalRequirement = (
+  id: string,
+  entityId: string,
+  zoneId: string,
+): Requirement => ({
+  id,
+  kind: "entity-state",
+  state: "arrived",
+  entities: [entityId],
+  requiredCount: 1,
+  oncePerEntity: true,
+  destinations: { [entityId]: zoneId },
+});
+const latch = { type: "latch-objective", objectiveId: "objective-a" } as const;
+
+describe("independent-review regressions", () => {
+  test("one family can receive supplies and subsequently reach a second destination", () => {
+    const f = referenceFixture([
+      arrivalRequirement("receive", "unit-a", "zone-dest"),
+      arrivalRequirement("withdraw", "unit-a", "zone-other"),
+    ]);
+    let state = f.step(f.entered, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    expect(f.step(state, latch).objectiveLatches).toEqual([]);
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-other",
+    });
+    expect(state.arrivalLedger).toHaveLength(2);
+    expect(
+      f.step(state, {
+        type: "record-arrival",
+        entityId: "unit-a",
+        zoneId: "zone-other",
+      }),
+    ).toEqual(state);
+    expect(
+      f.step(JSON.parse(JSON.stringify(state)), latch).objectiveLatches,
+    ).toEqual(["objective-a"]);
+  });
+
+  test("death cannot be overridden by an alive observation or generic predicate", () => {
+    const f = referenceFixture([
+      {
+        id: "alive",
+        kind: "entity-state",
+        state: "alive",
+        entities: ["unit-a"],
+        requiredCount: 1,
+        oncePerEntity: true,
+      },
+    ]);
+    const dead = f.step(f.entered, {
+      type: "destroy-entity",
+      entityId: "unit-a",
+    });
+    const asserted = f.step(dead, {
+      type: "record-predicate",
+      objectiveId: "objective-a",
+      requirementId: "alive",
+    });
+    expect(f.step(asserted, latch).objectiveLatches).toEqual([]);
+  });
+
+  test("two collected identities and a causal derived petition are required", () => {
+    const f = referenceFixture([
+      {
+        id: "collect",
+        kind: "entity-state",
+        state: "collected",
+        entities: ["unit-a", "cargo-a"],
+        requiredCount: 2,
+        oncePerEntity: true,
+      },
+      {
+        id: "derive",
+        kind: "derived-token",
+        inputEntities: ["unit-a", "cargo-a"],
+        outputEntities: ["receiver-a"],
+        once: true,
+        deriveWhen: "both records collected",
+      },
+      arrivalRequirement("deliver", "receiver-a", "zone-dest"),
+    ]);
+    let state = f.step(f.entered, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-dest",
+    });
+    expect(state.arrivalLedger).toEqual([]);
+    state = f.step(state, {
+      type: "observe-entity-state",
+      objectiveId: "objective-a",
+      requirementId: "collect",
+      entityId: "unit-a",
+    });
+    expect(
+      f.step(state, {
+        type: "derive-token",
+        objectiveId: "objective-a",
+        requirementId: "derive",
+      }),
+    ).toEqual(state);
+    state = f.step(state, {
+      type: "observe-entity-state",
+      objectiveId: "objective-a",
+      requirementId: "collect",
+      entityId: "cargo-a",
+    });
+    expect(state.requirementFacts["objective-a.collect"]).toEqual([
+      "cargo-a",
+      "unit-a",
+    ]);
+    state = f.step(state, {
+      type: "derive-token",
+      objectiveId: "objective-a",
+      requirementId: "derive",
+    });
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-dest",
+    });
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+  });
+
+  test("a zone visit cannot substitute for control, passability and eliminated blockers", () => {
+    const f = referenceFixture([
+      {
+        id: "control",
+        kind: "area-state",
+        state: "controlled-and-passable",
+        zones: ["zone-dest"],
+        blockingEnemies: ["guard-a"],
+        requiredCount: 1,
+      },
+    ]);
+    let state = f.step(f.entered, { type: "visit-zone", zoneId: "zone-dest" });
+    state = f.step(state, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: false,
+    });
+    expect(f.step(state, latch).objectiveLatches).toEqual([]);
+    state = f.step(state, { type: "destroy-entity", entityId: "guard-a" });
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+  });
+
+  test("relative deadlines admit completion before expiry and reject time reversal", () => {
+    const req = profile.objectivePlan[0]?.predicate.requirements.find(
+      (req) => req.kind === "phase-deadline",
+    );
+    if (!req) throw new Error("Missing deadline");
+    const f = referenceFixture([req]);
+    const state = f.step(f.entered, {
+      type: "tick",
+      nowSeconds: 110,
+      difficulty: "standard",
+      defeatConditions: [],
+      victoryConditions: [],
+    });
+    expect(state.phaseElapsedSeconds).toBe(10);
+    expect(
+      f.step(state, {
+        type: "tick",
+        nowSeconds: 105,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: [],
+      }),
+    ).toEqual(state);
+    const complete = f.step(state, latch);
+    expect(complete.objectiveLatches).toEqual(["objective-a"]);
+    const won = f.step(complete, {
+      type: "enter-phase",
+      phase: "victory",
+      nowSeconds: 110,
+    });
+    expect(won.terminal).toBe("victory");
+    expect(won.secondaryStates["side-1"]).toBe("closed-at-terminal");
+    expect(
+      f.step(won, { type: "award-secondary", objectiveId: "side-1" }),
+    ).toEqual(won);
+    expect(
+      f.step(f.entered, {
+        type: "tick",
+        nowSeconds: 140,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: [],
+      }).terminal,
+    ).toBe("defeat");
+  });
+
+  test("same-objective departure uses an explicit delivery receipt and cannot wait for itself", () => {
+    const f = referenceFixture([
+      arrivalRequirement("copies", "unit-a", "zone-dest"),
+      {
+        id: "leave",
+        kind: "ordered-departure",
+        departingEntities: ["receiver-a"],
+        departureEnabledOnlyAfterReceipt: true,
+        receiptObjective: "objective-a",
+        receiptRequirement: "copies",
+      },
+    ]);
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    let state = f.step(f.entered, {
+      type: "record-departure",
+      objectiveId: "objective-a",
+      requirementId: "leave",
+      entityId: "receiver-a",
+    });
+    expect(state.departedEntities).toEqual([]);
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    state = f.step(state, {
+      type: "record-departure",
+      objectiveId: "objective-a",
+      requirementId: "leave",
+      entityId: "receiver-a",
+    });
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+    const cyclic = structuredClone(f.candidate);
+    const leave = cyclic.objectivePlan[0]?.predicate.requirements.find(
+      (req) => req.kind === "ordered-departure",
+    );
+    if (leave?.kind === "ordered-departure") delete leave.receiptRequirement;
+    expect(
+      validateScenarioCapability(cyclic).some(
+        (issue) => issue.code === "capability.departure-cycle",
+      ),
+    ).toBe(true);
+  });
+
+  test("finite initial rosters reject duplicate identities", () => {
+    const duplicate = structuredClone(profile);
+    duplicate.enemyRoster.initialEntityIds.push("guard-a");
+    expect(
+      validateScenarioCapability(duplicate).some(
+        (issue) => issue.code === "capability.enemy-roster",
+      ),
+    ).toBe(true);
+  });
+
+  test("water and rations must intersect on the same receivers, rather than equal counts", () => {
+    const paired = (id: string, prefix: string): Requirement => ({
+      id,
+      kind: "paired-delivery",
+      pairs: [1, 2, 3].map((index) => ({
+        cargo: `${prefix}-${index}`,
+        receiver: `family-${index}`,
+      })),
+      receiverSet: "same families",
+      destination: "zone-dest",
+      requiredCount: 2,
+      oncePerPair: true,
+      cargoRecovery: "none",
+    });
+    const f = referenceFixture(
+      [paired("water", "water"), paired("rations", "ration")],
+      (candidate) => {
+        candidate.worldContract.entities.push(
+          ...[1, 2, 3].flatMap((index) => [
+            entity(`family-${index}`),
+            entity(`water-${index}`),
+            entity(`ration-${index}`),
+          ]),
+        );
+        candidate.worldContract.survivorGroups.push({
+          entities: ["family-1", "family-2", "family-3"],
+          minimumAliveOrAlreadySafe: 2,
+          loss: "defeat",
+        });
+        const objective = candidate.objectivePlan[0];
+        if (objective)
+          objective.predicate.exportedLedgers = [
+            {
+              id: "served-families",
+              operator: "intersection",
+              fromRequirements: ["water", "rations"],
+              minimumCount: 2,
+            },
+          ];
+      },
+    );
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    let state = f.entered;
+    for (const id of [
+      "family-1",
+      "family-2",
+      "family-3",
+      "water-1",
+      "water-2",
+      "ration-2",
+      "ration-3",
+    ])
+      state = f.step(state, {
+        type: "record-arrival",
+        entityId: id,
+        zoneId: "zone-dest",
+      });
+    for (const [requirementId, cargoId, receiverId] of [
+      ["water", "water-1", "family-1"],
+      ["water", "water-2", "family-2"],
+      ["rations", "ration-2", "family-2"],
+      ["rations", "ration-3", "family-3"],
+    ])
+      state = f.step(state, {
+        type: "record-pair",
+        objectiveId: "objective-a",
+        requirementId: requirementId ?? "",
+        cargoId: cargoId ?? "",
+        receiverId: receiverId ?? "",
+      });
+    expect(state.exportedLedgers["objective-a.served-families"]).toEqual([
+      "family-2",
+    ]);
+    expect(f.step(state, latch).objectiveLatches).toEqual([]);
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "ration-1",
+      zoneId: "zone-dest",
+    });
+    state = f.step(state, {
+      type: "record-pair",
+      objectiveId: "objective-a",
+      requirementId: "rations",
+      cargoId: "ration-1",
+      receiverId: "family-1",
+    });
+    expect(state.exportedLedgers["objective-a.served-families"]).toEqual([
+      "family-1",
+      "family-2",
+    ]);
+    expect(
+      f.step(JSON.parse(JSON.stringify(state)), latch).objectiveLatches,
+    ).toEqual(["objective-a"]);
+  });
+
+  test("an arrival-generated receipt cannot return before its originating wagon delivers", () => {
+    const issued = arrivalRequirement(
+      "returned-copy",
+      "receiver-a",
+      "zone-other",
+    );
+    if (issued.kind !== "entity-state")
+      throw new Error("Missing entity requirement");
+    issued.generatedByReceipts = [
+      {
+        fromObjective: "objective-a",
+        fromRequirement: "wagon",
+        receivedEntity: "unit-a",
+        destination: "zone-dest",
+        output: "receiver-a",
+      },
+    ];
+    const f = referenceFixture([
+      arrivalRequirement("wagon", "unit-a", "zone-dest"),
+      issued,
+    ]);
+    let state = f.step(f.entered, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-other",
+    });
+    expect(state.arrivalLedger).toEqual([]);
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-other",
+    });
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+  });
+
+  test("a snapshot from another objective contract cannot be loaded silently", () => {
+    const f = referenceFixture([
+      arrivalRequirement("one", "unit-a", "zone-dest"),
+    ]);
+    const other = referenceFixture([
+      arrivalRequirement("another", "unit-a", "zone-other"),
+    ]);
+    expect(() => other.step(f.entered, latch)).toThrow(
+      "capability.snapshot-contract-mismatch",
+    );
+  });
+
+  test("control that must remain until a later objective is continuously enforced", () => {
+    const f = referenceFixture(
+      [
+        {
+          id: "control",
+          kind: "area-state",
+          state: "controlled-and-passable",
+          zones: ["zone-dest"],
+          requiredCount: 1,
+          mustRemainUntilObjective: "objective-b",
+        },
+      ],
+      (candidate) => {
+        const source = candidate.objectivePlan[0];
+        if (!source) throw new Error("Missing objective");
+        candidate.objectivePlan.push({
+          ...structuredClone(source),
+          id: "objective-b",
+          after: ["objective-a"],
+          predicate: {
+            ...source.predicate,
+            requirements: [
+              arrivalRequirement("return", "unit-a", "zone-other"),
+            ],
+            requiredLedgers: ["return"],
+          },
+        });
+      },
+    );
+    let state = f.step(f.entered, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: true,
+      passable: true,
+      protected: false,
+    });
+    state = f.step(state, latch);
+    expect(state.objectiveLatches).toEqual(["objective-a"]);
+    state = f.step(state, {
+      type: "observe-zone",
+      zoneId: "zone-dest",
+      controlled: false,
+      passable: true,
+      protected: false,
+    });
+    expect(state.terminal).toBe("defeat");
+    expect(state.secondaryStates["side-1"]).toBe("closed-at-terminal");
   });
 });

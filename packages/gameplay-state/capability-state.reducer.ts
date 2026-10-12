@@ -1,395 +1,39 @@
-import { z } from "zod";
-import type {
-  CapabilityProfileV2,
-  ResourceAmounts,
-} from "../schemas/scenario-capability.schema";
-
-const stringList = z
-  .array(z.string())
-  .refine((items) => new Set(items).size === items.length);
-const accountSchema = z.strictObject({
-  food: z.number().int().nonnegative(),
-  wood: z.number().int().nonnegative(),
-  gold: z.number().int().nonnegative(),
-  stone: z.number().int().nonnegative(),
-});
-export const capabilitySnapshotSchema = z.strictObject({
-  schemaVersion: z.literal(2),
-  profile: z.literal("composed-world-ledger"),
-  phase: z.string().min(1),
-  phaseEnteredAtSeconds: z.number().nonnegative().nullable(),
-  terminal: z.enum(["victory", "defeat"]).nullable(),
-  objectiveLatches: stringList,
-  requirementFacts: z.record(z.string(), stringList),
-  entityStates: z.record(z.string(), z.enum(["alive", "arrived", "destroyed"])),
-  arrivedEntities: z.record(z.string(), z.string()),
-  visitedZones: stringList,
-  forbiddenEntries: stringList,
-  paidReceipts: stringList,
-  spendable: accountSchema,
-  protectedRecovery: accountSchema,
-  optionalReserve: accountSchema,
-  secondaryStates: z.record(
-    z.string(),
-    z.enum(["available", "completed", "failed-optional", "closed-at-terminal"]),
-  ),
-  rewardFlags: stringList,
-  recoveredEntities: stringList,
-  releasedRosterIds: stringList,
-  resolvedWaves: stringList,
-  selectedRoutes: z.record(z.string(), z.string()),
-  heldSeconds: z.record(z.string(), z.number().int().nonnegative()),
-  deadlineWarnings: stringList,
-  departedEntities: stringList,
-});
-export type CapabilitySnapshot = z.infer<typeof capabilitySnapshotSchema>;
-
-export type CapabilityAction =
-  | { type: "record-arrival"; entityId: string; zoneId: string }
-  | { type: "destroy-entity"; entityId: string }
-  | { type: "recover-entity"; entityId: string }
-  | { type: "visit-zone"; zoneId: string }
-  | { type: "record-predicate"; objectiveId: string; requirementId: string }
-  | {
-      type: "record-pair";
-      objectiveId: string;
-      requirementId: string;
-      cargoId: string;
-      receiverId: string;
-    }
-  | {
-      type: "choose-route";
-      objectiveId: string;
-      requirementId: string;
-      routeId: string;
-    }
-  | { type: "pay-main"; objectiveId: string; requirementId: string }
-  | { type: "pay-secondary"; objectiveId: string; receipt: string }
-  | {
-      type: "record-secondary-predicate";
-      objectiveId: string;
-      requirementIndex: number;
-    }
-  | { type: "award-secondary"; objectiveId: string }
-  | { type: "record-wave-resolved"; waveId: string }
-  | { type: "release-wave"; waveId: string }
-  | { type: "record-hold"; zoneId: string; elapsedSeconds: number }
-  | { type: "record-forbidden-entry"; requirementId: string; actorId: string }
-  | {
-      type: "record-departure";
-      objectiveId: string;
-      requirementId: string;
-      entityId: string;
-    }
-  | { type: "enter-phase"; phase: string; nowSeconds: number }
-  | { type: "latch-objective"; objectiveId: string }
-  | {
-      type: "tick";
-      nowSeconds: number;
-      difficulty: "easy" | "standard" | "hard";
-      defeatConditions: string[];
-      victoryConditions: string[];
-    };
-
-const RESOURCES = ["food", "wood", "gold", "stone"] as const;
-const EMPTY_RESOURCES = { food: 0, wood: 0, gold: 0, stone: 0 };
-const sortUnique = (values: readonly string[]) => [...new Set(values)].sort();
-const asRecord = (record: Record<string, string[]>) =>
-  Object.fromEntries(
-    Object.entries(record).sort(([a], [b]) => a.localeCompare(b)),
-  );
-const normalizeResources = (amounts: ResourceAmounts) => ({
-  food: amounts.food ?? 0,
-  wood: amounts.wood ?? 0,
-  gold: amounts.gold ?? 0,
-  stone: amounts.stone ?? 0,
-});
-const enough = (
-  balance: Record<(typeof RESOURCES)[number], number>,
-  cost: ResourceAmounts,
-) => RESOURCES.every((resource) => balance[resource] >= (cost[resource] ?? 0));
-const debit = (
-  balance: Record<(typeof RESOURCES)[number], number>,
-  cost: ResourceAmounts,
-) => {
-  const normalized = normalizeResources(cost);
-  return Object.fromEntries(
-    RESOURCES.map((resource) => [
-      resource,
-      balance[resource] - normalized[resource],
-    ]),
-  ) as typeof EMPTY_RESOURCES;
-};
-const credit = (
-  balance: Record<(typeof RESOURCES)[number], number>,
-  amount: ResourceAmounts,
-) => {
-  const normalized = normalizeResources(amount);
-  return Object.fromEntries(
-    RESOURCES.map((resource) => [
-      resource,
-      balance[resource] + normalized[resource],
-    ]),
-  ) as typeof EMPTY_RESOURCES;
-};
-
-export function createCapabilitySnapshot(
-  profile: CapabilityProfileV2,
-  accounts: {
-    spendable: ResourceAmounts;
-    protectedRecovery: ResourceAmounts;
-    optionalReserve: ResourceAmounts;
-  },
-  phase = "briefing",
-): CapabilitySnapshot {
-  const entityStates: Record<string, "alive"> = {};
-  for (const entity of profile.worldContract.entities)
-    entityStates[entity.id] = "alive";
-  for (const objective of profile.secondaryObjectives)
-    for (const entity of objective.world.entities)
-      entityStates[entity.id] = "alive";
-  const snapshot: CapabilitySnapshot = {
-    schemaVersion: 2,
-    profile: "composed-world-ledger",
-    phase,
-    phaseEnteredAtSeconds: null,
-    terminal: null,
-    objectiveLatches: [],
-    requirementFacts: {},
-    entityStates,
-    arrivedEntities: {},
-    visitedZones: [],
-    forbiddenEntries: [],
-    paidReceipts: [],
-    spendable: {
-      ...EMPTY_RESOURCES,
-      ...normalizeResources(accounts.spendable),
-    },
-    protectedRecovery: {
-      ...EMPTY_RESOURCES,
-      ...normalizeResources(accounts.protectedRecovery),
-    },
-    optionalReserve: {
-      ...EMPTY_RESOURCES,
-      ...normalizeResources(accounts.optionalReserve),
-    },
-    secondaryStates: Object.fromEntries(
-      profile.secondaryObjectives.map((o) => [o.id, "available"]),
-    ),
-    rewardFlags: [],
-    recoveredEntities: [],
-    releasedRosterIds: [],
-    resolvedWaves: [],
-    selectedRoutes: {},
-    heldSeconds: {},
-    deadlineWarnings: [],
-    departedEntities: [],
-  };
-  return capabilitySnapshotSchema.parse(snapshot);
-}
-
-function objectiveRequirements(
-  profile: CapabilityProfileV2,
-  objectiveId: string,
-) {
-  return profile.objectivePlan.find((o) => o.id === objectiveId)?.predicate
-    .requirements;
-}
-function factKey(objectiveId: string, requirementId: string) {
-  return `${objectiveId}.${requirementId}`;
-}
-function factsFor(
-  state: CapabilitySnapshot,
-  objectiveId: string,
-  requirementId: string,
-) {
-  return state.requirementFacts[factKey(objectiveId, requirementId)] ?? [];
-}
-function addFact(
-  state: CapabilitySnapshot,
-  objectiveId: string,
-  requirementId: string,
-  value: string,
-) {
-  const key = factKey(objectiveId, requirementId);
-  return asRecord({
-    ...state.requirementFacts,
-    [key]: sortUnique([...(state.requirementFacts[key] ?? []), value]),
-  });
-}
-function secondaryRequirementsSatisfied(
-  profile: CapabilityProfileV2,
-  state: CapabilitySnapshot,
-  sideId: string,
-) {
-  const side = profile.secondaryObjectives.find((item) => item.id === sideId);
-  if (!side) return false;
-  return side.predicate.requirements.every((req, index) => {
-    if (req.kind === "entity-arrival")
-      return (
-        req.entities.filter(
-          (id) => state.arrivedEntities[id] === req.destinations[id],
-        ).length >= req.requiredCount
-      );
-    if (req.kind === "atomic-payment")
-      return state.paidReceipts.includes(req.receipt);
-    if (req.kind === "visit-zones")
-      return req.zones.every((id) => state.visitedZones.includes(id));
-    return (
-      factsFor(state, sideId, `requirement-${index}`).includes(req.entity) &&
-      state.paidReceipts.includes(req.paymentReceipt)
-    );
-  });
-}
-function mainRequirementSatisfied(
-  state: CapabilitySnapshot,
-  objectiveId: string,
-  requirement: CapabilityProfileV2["objectivePlan"][number]["predicate"]["requirements"][number],
-) {
-  const facts = factsFor(state, objectiveId, requirement.id);
-  switch (requirement.kind) {
-    case "entity-state":
-      if (requirement.state === "arrived")
-        return (
-          requirement.entities.filter(
-            (id) =>
-              state.arrivedEntities[id] === requirement.destinations?.[id],
-          ).length >= requirement.requiredCount
-        );
-      if (requirement.state === "destroyed")
-        return (
-          requirement.entities.filter(
-            (id) => state.entityStates[id] === "destroyed",
-          ).length >= requirement.requiredCount
-        );
-      return facts.length >= requirement.requiredCount;
-    case "resource-transaction":
-      return state.paidReceipts.includes(requirement.paidFlag);
-    case "minimum-stock": {
-      const account =
-        requirement.account === "spendable"
-          ? state.spendable
-          : state.protectedRecovery;
-      return RESOURCES.every(
-        (resource) => account[resource] >= (requirement.amounts[resource] ?? 0),
-      );
-    }
-    case "receipt-exists":
-      return state.paidReceipts.includes(requirement.flag);
-    case "paired-delivery":
-      return facts.length >= requirement.requiredCount;
-    case "route-choice":
-      return (
-        state.selectedRoutes[factKey(objectiveId, requirement.id)] !== undefined
-      );
-    case "finite-wave-resolution":
-      return (
-        requirement.waves.filter((id) => state.resolvedWaves.includes(id))
-          .length >= requirement.requiredCount
-      );
-    case "hold-area":
-      return requirement.zones.every(
-        (id) => (state.heldSeconds[id] ?? 0) >= requirement.continuousSeconds,
-      );
-    case "forbidden-entry":
-      return !state.forbiddenEntries.some((id) =>
-        id.startsWith(`${factKey(objectiveId, requirement.id)}:`),
-      );
-    case "ordered-departure":
-      return (
-        state.objectiveLatches.includes(requirement.receiptObjective) &&
-        requirement.departingEntities.every((id) =>
-          state.departedEntities.includes(id),
-        )
-      );
-    case "derived-token":
-      return requirement.outputEntities.every((id) => facts.includes(id));
-    case "phase-deadline":
-      return facts.length > 0;
-    case "area-state":
-      return (
-        facts.length >= requirement.requiredCount || facts.includes("satisfied")
-      );
-    case "civilian-protection":
-      return facts.includes("satisfied");
-  }
-}
-function objectiveSatisfied(
-  profile: CapabilityProfileV2,
-  state: CapabilitySnapshot,
-  objectiveId: string,
-) {
-  const objective = profile.objectivePlan.find(
-    (item) => item.id === objectiveId,
-  );
-  return (
-    !!objective &&
-    objective.predicate.requirements.every((req) =>
-      mainRequirementSatisfied(state, objectiveId, req),
-    )
-  );
-}
-function isActive(
-  profile: CapabilityProfileV2,
-  state: CapabilitySnapshot,
-  objectiveId: string,
-) {
-  const objective = profile.objectivePlan.find(
-    (item) => item.id === objectiveId,
-  );
-  return (
-    !!objective &&
-    state.phase === objective.phase &&
-    objective.after.every((id) => state.objectiveLatches.includes(id))
-  );
-}
-function closeAvailableSecondaries(
-  state: CapabilitySnapshot,
-): CapabilitySnapshot["secondaryStates"] {
-  return Object.fromEntries(
-    Object.entries(state.secondaryStates).map(([id, value]) => [
-      id,
-      value === "available" ? "closed-at-terminal" : value,
-    ]),
-  );
-}
-function finalize(state: CapabilitySnapshot): CapabilitySnapshot {
-  return capabilitySnapshotSchema.parse({
-    ...state,
-    objectiveLatches: sortUnique(state.objectiveLatches),
-    visitedZones: sortUnique(state.visitedZones),
-    forbiddenEntries: sortUnique(state.forbiddenEntries),
-    paidReceipts: sortUnique(state.paidReceipts),
-    rewardFlags: sortUnique(state.rewardFlags),
-    recoveredEntities: sortUnique(state.recoveredEntities),
-    releasedRosterIds: sortUnique(state.releasedRosterIds),
-    resolvedWaves: sortUnique(state.resolvedWaves),
-    deadlineWarnings: sortUnique(state.deadlineWarnings),
-    departedEntities: sortUnique(state.departedEntities),
-    requirementFacts: asRecord(state.requirementFacts),
-    entityStates: Object.fromEntries(
-      Object.entries(state.entityStates).sort(([a], [b]) => a.localeCompare(b)),
-    ),
-    arrivedEntities: Object.fromEntries(
-      Object.entries(state.arrivedEntities).sort(([a], [b]) =>
-        a.localeCompare(b),
-      ),
-    ),
-    secondaryStates: Object.fromEntries(
-      Object.entries(state.secondaryStates).sort(([a], [b]) =>
-        a.localeCompare(b),
-      ),
-    ),
-    selectedRoutes: Object.fromEntries(
-      Object.entries(state.selectedRoutes).sort(([a], [b]) =>
-        a.localeCompare(b),
-      ),
-    ),
-    heldSeconds: Object.fromEntries(
-      Object.entries(state.heldSeconds).sort(([a], [b]) => a.localeCompare(b)),
-    ),
-  });
-}
+import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
+import type { CapabilityAction } from "./capability-action.model";
+import {
+  addFact,
+  arrivalKey,
+  asRecord,
+  factKey,
+  hasArrival,
+  objectiveRequirements,
+  sortUnique,
+} from "./capability-ledgers.helper";
+import {
+  departureReceiptSatisfied,
+  generationReady,
+  hasIrrecoverableLoss,
+  isActive,
+  objectiveSatisfied,
+  secondaryRequirementsSatisfied,
+} from "./capability-predicates.validator";
+import {
+  capabilityFingerprint,
+  closeAvailableSecondaries,
+  finalize,
+  finishTerminal,
+} from "./capability-snapshot.factory";
+import {
+  type CapabilitySnapshot,
+  capabilitySnapshotSchema,
+} from "./capability-snapshot.schema";
+import {
+  credit,
+  debit,
+  EMPTY_RESOURCES,
+  enough,
+  RESOURCES,
+} from "./resource-accounts.helper";
 
 export function reduceCapabilityState(
   profile: CapabilityProfileV2,
@@ -397,9 +41,103 @@ export function reduceCapabilityState(
   action: CapabilityAction,
 ): CapabilitySnapshot {
   const state = capabilitySnapshotSchema.parse(input);
+  if (state.contractFingerprint !== capabilityFingerprint(profile))
+    throw new Error(
+      "capability.snapshot-contract-mismatch: saved state belongs to a different objective contract",
+    );
   if (state.terminal) return state;
+  if (hasIrrecoverableLoss(profile, state))
+    return finishTerminal(state, "defeat");
   let next = state;
-  if (action.type === "record-arrival") {
+  if (action.type === "observe-zone") {
+    if (!profile.worldContract.zones.some((zone) => zone.id === action.zoneId))
+      return state;
+    next = {
+      ...state,
+      zoneConditions: {
+        ...state.zoneConditions,
+        [action.zoneId]: {
+          controlled: action.controlled,
+          passable: action.passable,
+          protected: action.protected,
+        },
+      },
+      heldSeconds:
+        action.controlled && action.passable
+          ? state.heldSeconds
+          : { ...state.heldSeconds, [action.zoneId]: 0 },
+    };
+  } else if (action.type === "observe-entity-state") {
+    const req = objectiveRequirements(profile, action.objectiveId)?.find(
+      (item) => item.id === action.requirementId,
+    );
+    if (
+      !req ||
+      req.kind !== "entity-state" ||
+      !req.entities.includes(action.entityId) ||
+      !generationReady(profile, state, action.entityId) ||
+      state.entityStates[action.entityId] === "destroyed" ||
+      ["arrived", "alive", "destroyed"].includes(req.state)
+    )
+      return state;
+    if (
+      (req.inputRecords ?? []).some(
+        (id) => !state.observedEntityStates[id]?.includes("collected"),
+      )
+    )
+      return state;
+    if (req.carriedRecords?.length) return state; // Inventory transport needs a typed ownership contract, not an arbitrary observation.
+    if (
+      req.state === "registered-after-arrival" ||
+      req.state === "sealed-and-delivered"
+    ) {
+      if (
+        !hasArrival(
+          state,
+          action.entityId,
+          req.destinations?.[action.entityId] ?? "",
+        )
+      )
+        return state;
+    }
+    next = {
+      ...state,
+      observedEntityStates: {
+        ...state.observedEntityStates,
+        [action.entityId]: sortUnique([
+          ...(state.observedEntityStates[action.entityId] ?? []),
+          req.state,
+        ]),
+      },
+      requirementFacts: addFact(
+        state,
+        action.objectiveId,
+        req.id,
+        action.entityId,
+      ),
+    };
+  } else if (action.type === "derive-token") {
+    const req = objectiveRequirements(profile, action.objectiveId)?.find(
+      (item) => item.id === action.requirementId,
+    );
+    if (
+      !req ||
+      req.kind !== "derived-token" ||
+      req.inputEntities.some(
+        (id) => !state.observedEntityStates[id]?.includes("collected"),
+      )
+    )
+      return state;
+    let requirementFacts = state.requirementFacts;
+    for (const output of req.outputEntities)
+      requirementFacts = addFact(
+        { ...state, requirementFacts },
+        action.objectiveId,
+        req.id,
+        output,
+      );
+    next = { ...state, requirementFacts };
+  } else if (action.type === "record-arrival") {
     const entity =
       profile.worldContract.entities.find(
         (item) => item.id === action.entityId,
@@ -414,18 +152,19 @@ export function reduceCapabilityState(
         .find((item) => item.id === action.zoneId);
     if (!entity || !zone || state.entityStates[action.entityId] === "destroyed")
       return state;
-    if (
-      state.arrivedEntities[action.entityId] &&
-      state.arrivedEntities[action.entityId] !== action.zoneId
-    )
-      return state;
     const mainTargets = profile.objectivePlan.flatMap((objective) =>
       objective.predicate.requirements
         .filter(
           (req) =>
-            req.kind === "entity-state" &&
-            req.state === "arrived" &&
-            req.destinations?.[action.entityId] === action.zoneId,
+            (req.kind === "entity-state" &&
+              req.destinations?.[action.entityId] === action.zoneId) ||
+            (req.kind === "paired-delivery" &&
+              req.destination === action.zoneId &&
+              req.pairs.some(
+                (pair) =>
+                  pair.cargo === action.entityId ||
+                  pair.receiver === action.entityId,
+              )),
         )
         .map((req) => ({ objectiveId: objective.id, reqId: req.id })),
     );
@@ -442,32 +181,38 @@ export function reduceCapabilityState(
         })),
     );
     if (mainTargets.length === 0 && sideTargets.length === 0) return state;
+    if (!generationReady(profile, state, action.entityId)) return state;
+    const arrivalLedger = sortUnique([
+      ...state.arrivalLedger,
+      arrivalKey(state.phase, action.entityId, action.zoneId),
+    ]);
     const arrivals = state.arrivedEntities[action.entityId]
       ? state.arrivedEntities
       : { ...state.arrivedEntities, [action.entityId]: action.zoneId };
     let requirementFacts = state.requirementFacts;
-    for (const target of [...mainTargets, ...sideTargets])
+    for (const target of [...mainTargets, ...sideTargets]) {
+      const req = objectiveRequirements(profile, target.objectiveId)?.find(
+        (item) => item.id === target.reqId,
+      );
+      if (req && (req.kind !== "entity-state" || req.state !== "arrived"))
+        continue;
       requirementFacts = addFact(
         { ...state, requirementFacts },
         target.objectiveId,
         target.reqId,
         action.entityId,
       );
+    }
     next = {
       ...state,
       entityStates: { ...state.entityStates, [action.entityId]: "arrived" },
       arrivedEntities: arrivals,
+      arrivalLedger,
       requirementFacts,
     };
-    for (const side of profile.secondaryObjectives) {
-      if (
-        side.world.entities.some((item) => item.id === action.entityId) &&
-        state.secondaryStates[side.id] === "failed-optional"
-      )
-        continue;
-    }
   } else if (action.type === "destroy-entity") {
     if (!state.entityStates[action.entityId]) return state;
+    if (!generationReady(profile, state, action.entityId)) return state;
     const side = profile.secondaryObjectives.find((item) =>
       item.predicate.requirements.some(
         (req) =>
@@ -484,21 +229,6 @@ export function reduceCapabilityState(
       ...state,
       entityStates: { ...state.entityStates, [action.entityId]: "destroyed" },
       secondaryStates,
-    };
-  } else if (action.type === "recover-entity") {
-    const entity = profile.worldContract.entities.find(
-      (item) => item.id === action.entityId,
-    );
-    if (
-      !entity ||
-      state.entityStates[action.entityId] !== "destroyed" ||
-      state.recoveredEntities.includes(action.entityId)
-    )
-      return state;
-    next = {
-      ...state,
-      entityStates: { ...state.entityStates, [action.entityId]: "alive" },
-      recoveredEntities: [...state.recoveredEntities, action.entityId],
     };
   } else if (action.type === "visit-zone") {
     const exists =
@@ -550,6 +280,9 @@ export function reduceCapabilityState(
         "ordered-departure",
         "phase-deadline",
         "derived-token",
+        "area-state",
+        "civilian-protection",
+        "entity-state",
       ].includes(req.kind)
     )
       return state;
@@ -579,13 +312,15 @@ export function reduceCapabilityState(
     )
       return state;
     const familyArrived =
-      state.arrivedEntities[action.receiverId] === req.destination;
+      hasArrival(state, action.receiverId, req.destination) &&
+      state.entityStates[action.receiverId] !== "destroyed";
     const cargoEntity = profile.worldContract.entities.find(
       (entity) => entity.id === action.cargoId,
     );
     if (
       !familyArrived ||
       !cargoEntity ||
+      !hasArrival(state, action.cargoId, req.destination) ||
       state.entityStates[action.cargoId] === "destroyed"
     )
       return state;
@@ -664,8 +399,8 @@ export function reduceCapabilityState(
           .filter((item) => item.kind === "entity-arrival")
           .every(
             (arrival) =>
-              arrival.entities.filter(
-                (id) => state.arrivedEntities[id] === arrival.destinations[id],
+              arrival.entities.filter((id) =>
+                hasArrival(state, id, arrival.destinations[id] ?? ""),
               ).length >= arrival.requiredCount,
           )) ||
       !enough(state.spendable, req.resources)
@@ -684,6 +419,8 @@ export function reduceCapabilityState(
     if (
       !side ||
       req?.kind !== "entity-health" ||
+      !Number.isFinite(action.healthFraction) ||
+      action.healthFraction !== 1 ||
       state.entityStates[req.entity] === "destroyed" ||
       !state.paidReceipts.includes(req.paymentReceipt)
     )
@@ -750,7 +487,11 @@ export function reduceCapabilityState(
     );
     if (
       !wave ||
-      wave.entityIds.some((id) => !state.releasedRosterIds.includes(id))
+      wave.entityIds.some(
+        (id) =>
+          !state.releasedRosterIds.includes(id) ||
+          state.entityStates[id] !== "destroyed",
+      )
     )
       return state;
     next = { ...state, resolvedWaves: [...state.resolvedWaves, action.waveId] };
@@ -766,6 +507,11 @@ export function reduceCapabilityState(
       ),
     );
     if (!exists) return state;
+    if (
+      !state.zoneConditions[action.zoneId]?.controlled ||
+      !state.zoneConditions[action.zoneId]?.passable
+    )
+      return state;
     next = {
       ...state,
       heldSeconds: {
@@ -783,6 +529,11 @@ export function reduceCapabilityState(
           item.id === action.requirementId && item.kind === "forbidden-entry",
       );
     if (!req) return state;
+    if (
+      req.item.kind !== "forbidden-entry" ||
+      !state.enteredPhases.includes(req.item.activeFrom)
+    )
+      return state;
     next = {
       ...state,
       forbiddenEntries: [
@@ -798,7 +549,8 @@ export function reduceCapabilityState(
       !req ||
       req.kind !== "ordered-departure" ||
       !req.departingEntities.includes(action.entityId) ||
-      !state.objectiveLatches.includes(req.receiptObjective)
+      !departureReceiptSatisfied(profile, state, req) ||
+      state.entityStates[action.entityId] === "destroyed"
     )
       return state;
     next = {
@@ -813,7 +565,10 @@ export function reduceCapabilityState(
       !transition ||
       !profile.stateMachine.states.includes(action.phase) ||
       !Number.isFinite(action.nowSeconds) ||
-      action.nowSeconds < 0
+      action.nowSeconds < 0 ||
+      (state.phaseEnteredAtSeconds !== null &&
+        action.nowSeconds <
+          state.phaseEnteredAtSeconds + state.phaseElapsedSeconds)
     )
       return state;
     if (
@@ -826,6 +581,16 @@ export function reduceCapabilityState(
       ...state,
       phase: action.phase,
       phaseEnteredAtSeconds: action.nowSeconds,
+      phaseElapsedSeconds: 0,
+      enteredPhases: sortUnique([...state.enteredPhases, action.phase]),
+      terminal:
+        action.phase === "victory" || action.phase === "defeat"
+          ? action.phase
+          : null,
+      secondaryStates:
+        action.phase === "victory" || action.phase === "defeat"
+          ? closeAvailableSecondaries(state)
+          : state.secondaryStates,
     };
   } else if (action.type === "latch-objective") {
     const objective = profile.objectivePlan.find(
@@ -846,10 +611,16 @@ export function reduceCapabilityState(
       !Number.isFinite(action.nowSeconds) ||
       action.nowSeconds < 0 ||
       state.phaseEnteredAtSeconds === null ||
-      action.nowSeconds < state.phaseEnteredAtSeconds
+      action.nowSeconds <
+        state.phaseEnteredAtSeconds + state.phaseElapsedSeconds
     )
       return state;
     const elapsed = action.nowSeconds - state.phaseEnteredAtSeconds;
+    next = {
+      ...state,
+      difficulty: action.difficulty,
+      phaseElapsedSeconds: elapsed,
+    };
     const activeDeadlines = profile.objectivePlan.flatMap((objective) =>
       objective.predicate.requirements.flatMap((req) =>
         req.kind === "phase-deadline" && req.phase === state.phase
@@ -864,21 +635,9 @@ export function reduceCapabilityState(
     const defeat =
       action.defeatConditions.length > 0 ||
       expired ||
-      profile.worldContract.survivorGroups.some((group) => {
-        const possible = group.entities.filter(
-          (id) =>
-            state.entityStates[id] !== "destroyed" ||
-            state.recoveredEntities.includes(id) ||
-            !!state.arrivedEntities[id],
-        ).length;
-        return possible < group.minimumAliveOrAlreadySafe;
-      });
+      hasIrrecoverableLoss(profile, state);
     if (defeat) {
-      next = {
-        ...state,
-        terminal: "defeat",
-        secondaryStates: closeAvailableSecondaries(state),
-      };
+      next = finishTerminal(next, "defeat");
     } else {
       const won = action.victoryConditions.some((objectiveId) => {
         const transition = profile.stateMachine.phaseTransitions.find(
@@ -892,6 +651,8 @@ export function reduceCapabilityState(
       if (won)
         next = {
           ...state,
+          difficulty: action.difficulty,
+          phaseElapsedSeconds: elapsed,
           terminal: "victory",
           phase: "victory",
           secondaryStates: closeAvailableSecondaries(state),
@@ -912,5 +673,7 @@ export function reduceCapabilityState(
         };
     }
   }
-  return finalize(next);
+  if (hasIrrecoverableLoss(profile, next))
+    next = finishTerminal(next, "defeat");
+  return finalize(profile, next);
 }
