@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "architect proposal; episodic dossiers not complete",
+  "status": "273 chronological selections authored; complete episodic dossiers and independent approval pending",
   "baseline": {
     "commit": "dec7fc1cfc6fa0472c0d16482877b1e86ac1e88f",
     "historicalScenarios": 39,
@@ -51,7 +51,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "imperial-church",
@@ -84,7 +84,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "jewish-tradition",
@@ -117,7 +117,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "church-of-rome",
@@ -150,7 +150,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "new-rome",
@@ -183,7 +183,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "first-caliphs",
@@ -216,7 +216,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "first-fitna",
@@ -249,7 +249,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "umayyads",
@@ -282,7 +282,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     },
     {
       "id": "house-of-ali",
@@ -315,7 +315,7 @@
         "secondaryBudget",
         "playstyles"
       ],
-      "status": "pending-architect-design"
+      "status": "selection-authored-full-contract-pending"
     }
   ],
   "qualityRules": {
@@ -339,5 +339,13 @@
     "disjointReceivingAndObservationZones": true,
     "historicalOutcomeImmutable": true,
     "nativeQAStatus": "pending"
+  },
+  "mechanicVarietyPolicy": {
+    "consecutiveCoreMechanicMaximum": 2,
+    "repeatRequiresAuthoredReason": true,
+    "militaryPressureOnlyWithDeclaredHistoricalOrFictionalBasis": true,
+    "peacefulEventMustNotCreateFictionalBattleForQuota": true,
+    "globalSecondaryKindsDoNotCountAsDistinctMissionCore": true,
+    "difficultyChangesPressureAndWindowsNotHistoricalOutcome": true
   }
 }

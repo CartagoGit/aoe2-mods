@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "ne-odyssey-populated-places",
+      "path": "docs/research/odyssey-research/geography/ne_10m_populated_places.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson",
+      "sourcePage": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/",
+      "author": "Natural Earth contributors",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "accessed": "2026-10-12",
+      "sha256": "9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b",
+      "bytes": 19359003,
+      "usage": "Modern place-name and regional anchor research; never an ancient urban footprint, troop map, population census or elevation model.",
+      "version": "Downloaded master snapshot identified by SHA256; do not infer5.1.2fromdownloadpage.",
+      "productionApproved": false,
+      "modifications": "None; original GeoJSON retained."
+    }
+  ]
+}

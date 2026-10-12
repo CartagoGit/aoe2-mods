@@ -372,5 +372,1377 @@
       }
     ]
   },
-  "episodes": []
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "Keepers of the Unbroken Word",
+      "es-ES": "Guardianes de la palabra viva"
+    },
+    "publicId": "CDF-C02",
+    "internalName": "CDF_JewishTradition",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 30,
+    "narratorId": "judith-copyist",
+    "personaLens": {
+      "en": "Names, disagreements and careful copies",
+      "es-ES": "Nombres, desacuerdos y copias cuidadosas"
+    },
+    "deliveryTone": {
+      "en": "dry wit, stubborn patience",
+      "es-ES": "humor seco, paciencia obstinada"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "judith-copyist",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-a-city-of-names",
+      "02-the-hill-and-the-school",
+      "03-the-river-quarter",
+      "04-the-living-margin"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 30,
+    "selectionNotes": [
+      "Act counts are subordinate to source chronology and are not filler quotas.",
+      "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
+      "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
+      "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "After the House Fell",
+        "es-ES": "Tras la caída de la Casa"
+      },
+      "historicalYearBand": [
+        70,
+        117
+      ],
+      "dramaticPurpose": "Familias y diversidad pos-Templo; Yavneh no es un concilio canónico universal certificado.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-a-city-of-names",
+        "02-refuge-and-school-supply-yavneh",
+        "03-distributed-study-network-yavneh",
+        "04-witness-comparison-yavneh",
+        "05-fiscal-record-reconciliation-rome-ostia"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "Names in the Wilderness",
+        "es-ES": "Nombres en el desierto"
+      },
+      "historicalYearBand": [
+        100,
+        180
+      ],
+      "dramaticPurpose": "Revuelta, documentación y enseñanza; Akiva no actúa después de su muerte convencional135.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "06-teaching-record-escort-lod",
+        "07-civilian-refuge-cyrene",
+        "08-harbour-supply-and-witnesses-alexandria",
+        "09-administrative-records-jerusalem",
+        "10-finite-mint-consignments-judean-hills",
+        "11-archive-extraction-judean-desert",
+        "12-household-relocation-jerusalem"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Schools Beyond the River",
+        "es-ES": "Escuelas más allá del río"
+      },
+      "historicalYearBand": [
+        190,
+        300
+      ],
+      "dramaticPurpose": "Mishnah, escuelas y comunidad de Dura; no fijar cierre temprano del Talmud babilónico.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "02-the-hill-and-the-school",
+        "14-citizenship-copy-and-receipts-galilee",
+        "15-study-and-supply-allocation-galilee",
+        "03-the-river-quarter",
+        "17-cross-river-study-logistics-pumbedita"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "Stone, Law, and Memory",
+        "es-ES": "Piedra, ley y memoria"
+      },
+      "historicalYearBand": [
+        300,
+        400
+      ],
+      "dramaticPurpose": "Comunidades palestinas y babilonias, imágenes locales y legislación ambivalente; separar ley y cumplimiento.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "18-finite-mosaic-works-hammath-tiberias",
+        "19-bounded-civilian-withdrawal-sepphoris",
+        "20-parallel-text-preservation-galilee",
+        "21-finite-works-and-safe-withdrawal-jerusalem",
+        "22-law-and-community-records-thessalonica",
+        "23-petition-and-restoration-records-constantinople",
+        "24-epigraphic-donor-logistics-aphrodisias"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Word Without a Throne",
+        "es-ES": "La palabra sin trono"
+      },
+      "historicalYearBand": [
+        399,
+        425
+      ],
+      "dramaticPurpose": "Privilegios fiscales revocados/restaurados, límites al patriarcado y preservación distribuida; la tradición sigue viva.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "25-bounded-fiscal-transition-milan",
+        "26-finite-community-construction-huqoq",
+        "27-courier-and-account-restoration-rome-ostia",
+        "28-authority-and-witness-records-constantinople",
+        "29-repair-within-restrictions-constantinople",
+        "04-the-living-margin"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [
+      {
+        "campaignId": "faith-origins",
+        "route": "jewish-perspective"
+      }
+    ],
+    "nextRoutes": [
+      {
+        "id": "completed",
+        "key": "progress.jewish-tradition.completed",
+        "next": null
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-a-city-of-names",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "Names beyond the Fallen House",
+        "es-ES": "Nombres más allá de la casa caída"
+      },
+      "date": "70 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "civilian-evacuation",
+      "historicalSelection": {
+        "corpusEventId": 10,
+        "sourceUrl": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+        "passage": "Josephus, Jewish War 6; síntesis de Livius",
+        "qualification": "Josefo participó en la guerra y escribe bajo patronazgo romano.",
+        "candidateEvent": "Las legiones romanas destruyen el Templo de Jerusalén tras la revuelta.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 10,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/josephus/war-6.html",
+          "passage": "Josephus, Jewish War VI, especially §§4–5 (temple fire and fall); Book VI chronology",
+          "supportedClaim": "Josephus narrates Roman capture/destruction of the Temple in Jerusalem in 70, including the 10th of Lous/Av as the day the fire began in his version.",
+          "problems": "The exact accidental/command chain behind the fire is disputed in the narrative itself; Josephus is a participant writing under Flavian patronage and frames culpability. Do not narrate his theological causation as fact.",
+          "coverageRead": "Opened translation; read Book VI siege/fire passage and editorial notes. Translation is Whiston, not Greek apparatus.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "02-refuge-and-school-supply-yavneh",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "A School without Walls",
+        "es-ES": "Una escuela sin murallas"
+      },
+      "date": "c.70–80 CE",
+      "geographyId": "yavneh",
+      "coreMechanic": "refuge-and-school-supply",
+      "historicalSelection": {
+        "corpusEventId": 63,
+        "sourceUrl": "https://www.jewishvirtuallibrary.org/yavneh",
+        "passage": "Fuentes rabínicas compiladas después; overview",
+        "qualification": "No presentar como concilio que cerró canon o expulsó cristianos.",
+        "candidateEvent": "Yohanan ben Zakkai y estudiosos se asocian con actividad rabínica en Yavneh.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 63,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.jewishvirtuallibrary.org/yavneh",
+          "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "passage": "COJS, Tannaitic Literature, lines 23–30: after temple destruction tannaitic activity is associated with Yavneh, Usha, Beth Shearim, Sepphoris; later tradition ties Akiva to Yavneh.",
+          "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Yohanan ben Zakkai y estudiosos se asocian con actividad rabínica en Yavneh.",
+          "problems": "The source supports Yavneh as one center of post-destruction transmission, not a dated 70–80 meeting/academy narrative for named Yohanan ben Zakkai. The original Jewish Virtual Library page consulted is an Encyclopaedia Judaica-derived town entry and does not document the academy claim. Avoid implying a formal academy’s exact founding/date.",
+          "coverageRead": "COJS extract lines 19–30 read; JVL Yavneh entry lines 23–30 read. Neither full book nor underlying rabbinic sources read.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-distributed-study-network-yavneh",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "The Questions We Carried",
+        "es-ES": "Las preguntas que llevábamos"
+      },
+      "date": "c.80–100 CE",
+      "geographyId": "yavneh",
+      "coreMechanic": "distributed-study-network",
+      "historicalSelection": {
+        "corpusEventId": 64,
+        "sourceUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+        "passage": "Literatura tannaita; síntesis académica",
+        "qualification": "Las narraciones rabínicas se editaron siglos después.",
+        "candidateEvent": "Las academias y tradiciones legales sostienen vida judía sin templo central.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 64,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "passage": "COJS, Tannaitic Literature, lines 19–26.",
+          "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Las academias y tradiciones legales sostienen vida judía sin templo central.",
+          "problems": "Broad claim of post-70 oral/legal transmission and divergent views is supported as synthesis; source says materials moved among Yavneh, Usha, Beth Shearim, Sepphoris, not that named institutions or a uniform academy network existed exactly c.80–100.",
+          "coverageRead": "COJS excerpt lines 19–27 read; source is an excerpt from Schiffman, From Text to Tradition, not whole book.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-witness-comparison-yavneh",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "Words Still under Discussion",
+        "es-ES": "Palabras todavía en discusión"
+      },
+      "date": "c.90–100 CE; later rabbinic traditions",
+      "geographyId": "yavneh",
+      "coreMechanic": "witness-comparison",
+      "historicalSelection": {
+        "corpusEventId": 65,
+        "sourceUrl": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+        "passage": "Artículo sobre el mito del sínodo de Jamnia",
+        "qualification": "No evidencia de una sesión única ni cierre del canon.",
+        "candidateEvent": "Debates sobre Eclesiastés y Cantar de los Cantares aparecen en tradiciones rabínicas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-fiscal-record-reconciliation-rome-ostia",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "The Weight of a Roman Receipt",
+        "es-ES": "El peso de un recibo romano"
+      },
+      "date": "96 CE; reform scope qualified",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "fiscal-record-reconciliation",
+      "historicalSelection": {
+        "architectEvidence": "custom:fiscus",
+        "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Dom.+12",
+        "passage": "Suetonius, Domitian 12.2; Nerva coin legend FISCI IVDAICI CALVMNIA SVBLATA requires separate numismatic corroboration",
+        "qualification": "This corrects candidate66: Claudius25 concerns49, not an event90–110. Select a local fictional fiscal archive; do not claim Nerva abolished the tax. Exact primary and coin pages pending audit.",
+        "candidateEvent": "Nerva advertised the removal of abuse in the Jewish tax; Suetonius describes intrusive enforcement under Domitian.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-teaching-record-escort-lod",
+      "order": 6,
+      "actId": "act-2",
+      "title": {
+        "en": "The Teacher in the Unfinished Line",
+        "es-ES": "El maestro en la línea incompleta"
+      },
+      "date": "c.100–135 CE; Akiva traditionally diesc.135, not150–180",
+      "geographyId": "lod",
+      "coreMechanic": "teaching-record-escort",
+      "historicalSelection": {
+        "corpusEventId": 71,
+        "sourceUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+        "passage": "Literatura tannaita, visión general",
+        "qualification": "Raw150–180date rejected. Scholarly extract situates teachingc.80–132; complete chronology and martyrdom stories remain attributed.",
+        "candidateEvent": "Rabí Akiva y colegas transmiten tradiciones legales y litúrgicas tannaitas.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 71,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "passage": "COJS, Tannaitic Literature, lines 28–30.",
+          "supportedClaim": "The originally claimed c.150–180 Akiva activity is contradicted by the consulted overview; it places his floruit c.80–132.",
+          "problems": "COJS dates Akiva’s floruit around 80–132 CE and says precision about responsibility for the subject-classification system is impossible.",
+          "coverageRead": "Direct extract read; secondary overview, not a primary biographical record.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        },
+        "selectedClaim": {
+          "en": "Rabbinic tradition places Akiva’s teaching before the end of the Bar Kokhba revolt, with his death commonly dated around135; recollections of his teaching were compiled later.",
+          "es-ES": "La tradición rabínica sitúa la enseñanza de Akiva antes del final de la revuelta de Bar Kojba y fecha habitualmente su muerte hacia135; los recuerdos de sus enseñanzas se recopilaron después."
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "07-civilian-refuge-cyrene",
+      "order": 7,
+      "actId": "act-2",
+      "title": {
+        "en": "Across the Cyrenaican Roads",
+        "es-ES": "Por los caminos de Cirenaica"
+      },
+      "date": "115–117 CE; local reconstruction",
+      "geographyId": "cyrene",
+      "coreMechanic": "civilian-refuge",
+      "historicalSelection": {
+        "corpusEventId": 67,
+        "sourceUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+        "passage": "Dio Cassius 68.32; síntesis de fuentes",
+        "qualification": "Cifras antiguas de víctimas no fiables.",
+        "candidateEvent": "Revueltas judías de la diáspora sacuden Cirenaica, Egipto y Chipre durante guerra de Trajano.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 67,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+          "correctUrlConsulted": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+          "passage": "Cassius Dio, Roman History 68.32.1–3, Cary translation (entry lines 43–51)",
+          "supportedClaim": "Supports Jewish uprising participation across Cyrene, Egypt, and Cyprus in 115–117 and Roman suppression; Posen reproduces the source passage and cites Loeb.",
+          "problems": "Dio survives here as a late author’s account/epitome, with highly charged atrocity claims and suspect casualty numbers; keep those out of factual description. Livius original page can be replaced by this source text and its citation.",
+          "coverageRead": "Read source excerpt, intro and Loeb citation lines 43–51; not full Dio.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "08-harbour-supply-and-witnesses-alexandria",
+      "order": 8,
+      "actId": "act-2",
+      "title": {
+        "en": "The Harbour That Heard the War",
+        "es-ES": "El puerto que oyó la guerra"
+      },
+      "date": "115–117 CE; Egyptian local reconstruction",
+      "geographyId": "alexandria",
+      "coreMechanic": "harbour-supply-and-witnesses",
+      "historicalSelection": {
+        "corpusEventId": 67,
+        "sourceUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+        "passage": "Dio Cassius 68.32; síntesis de fuentes",
+        "qualification": "Cifras antiguas de víctimas no fiables.",
+        "candidateEvent": "Revueltas judías de la diáspora sacuden Cirenaica, Egipto y Chipre durante guerra de Trajano.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 67,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+          "correctUrlConsulted": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+          "passage": "Cassius Dio, Roman History 68.32.1–3, Cary translation (entry lines 43–51)",
+          "supportedClaim": "Supports Jewish uprising participation across Cyrene, Egypt, and Cyprus in 115–117 and Roman suppression; Posen reproduces the source passage and cites Loeb.",
+          "problems": "Dio survives here as a late author’s account/epitome, with highly charged atrocity claims and suspect casualty numbers; keep those out of factual description. Livius original page can be replaced by this source text and its citation.",
+          "coverageRead": "Read source excerpt, intro and Loeb citation lines 43–51; not full Dio.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "09-administrative-records-jerusalem",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "The City's Other Name",
+        "es-ES": "El otro nombre de la ciudad"
+      },
+      "date": "c.130–132 CE; chronology of colonial refoundation disputed",
+      "geographyId": "jerusalem",
+      "coreMechanic": "administrative-records",
+      "historicalSelection": {
+        "corpusEventId": 68,
+        "sourceUrl": "https://www.britannica.com/place/Jerusalem/History",
+        "passage": "Cassius Dio 69.12–14",
+        "qualification": "El vínculo causal directo con la revuelta sigue discutido.",
+        "candidateEvent": "Adriano visita Judea y promueve colonia romana en Jerusalén, según tradición historiográfica.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 68,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.britannica.com/place/Jerusalem/History",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+          "passage": "Cassius Dio, Roman History 69.12.1–2; English translation excerpt mirrored at Livius",
+          "supportedClaim": "Supports Hadrian’s foundation of Aelia Capitolina at Jerusalem, a Jupiter temple, and Dio’s claimed connection to revolt.",
+          "problems": "Dio gives a retrospective causal account; specific foundation date is debated and is not established by this passage alone. Do not treat the sequence as uncontested.",
+          "coverageRead": "Opened Livius translation of Dio 69.12.1–3, checked exact text; primary Perseus/Chicago route available via source link but not separately read.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-finite-mint-consignments-judean-hills",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "Silver beneath the Desert Sky",
+        "es-ES": "Plata bajo el cielo del desierto"
+      },
+      "date": "132–135 CE",
+      "geographyId": "judean-hills",
+      "coreMechanic": "finite-mint-consignments",
+      "historicalSelection": {
+        "corpusEventId": 69,
+        "sourceUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+        "passage": "Museo de Israel, monedas y documentos",
+        "qualification": "La cronología y nombre del líder dependen de fuentes diversas.",
+        "candidateEvent": "Revuelta de Bar Kojba contra Roma; acuñación rebelde y documentos del desierto reflejan administración.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 69,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "correctUrlConsulted": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "passage": "Israel Museum, Shrine of the Book, “Bar Kochba Revolt”; cross-check Cassius Dio 69.12–14",
+          "supportedClaim": "Museum overview supports revolt context and material evidence of Bar Kokhba-period documents/coins; Dio 69.12–14 narrates resistance, hideouts and Roman suppression.",
+          "problems": "Do not claim a specific document or coin without item-level catalog and findspot. Dio’s account of causation and scale is Roman retrospective narrative.",
+          "coverageRead": "Read museum overview/search-indexed page and Livius-translated Dio 69.12–14 lines 15 onward; not artifact catalog records.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-archive-extraction-judean-desert",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "Letters at the Desert Edge",
+        "es-ES": "Cartas en el borde del desierto"
+      },
+      "date": "132–135 CE; cave records, not an invented battle",
+      "geographyId": "judean-desert",
+      "coreMechanic": "archive-extraction",
+      "historicalSelection": {
+        "corpusEventId": 69,
+        "sourceUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+        "passage": "Museo de Israel, monedas y documentos",
+        "qualification": "La cronología y nombre del líder dependen de fuentes diversas.",
+        "candidateEvent": "Revuelta de Bar Kojba contra Roma; acuñación rebelde y documentos del desierto reflejan administración.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 69,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "correctUrlConsulted": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "passage": "Israel Museum, Shrine of the Book, “Bar Kochba Revolt”; cross-check Cassius Dio 69.12–14",
+          "supportedClaim": "Museum overview supports revolt context and material evidence of Bar Kokhba-period documents/coins; Dio 69.12–14 narrates resistance, hideouts and Roman suppression.",
+          "problems": "Do not claim a specific document or coin without item-level catalog and findspot. Dio’s account of causation and scale is Roman retrospective narrative.",
+          "coverageRead": "Read museum overview/search-indexed page and Livius-translated Dio 69.12–14 lines 15 onward; not artifact catalog records.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "12-household-relocation-jerusalem",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "After the Last Stronghold",
+        "es-ES": "Después del último bastión"
+      },
+      "date": "135 CE; administrative dates qualified",
+      "geographyId": "jerusalem",
+      "coreMechanic": "household-relocation",
+      "historicalSelection": {
+        "corpusEventId": 70,
+        "sourceUrl": "https://www.britannica.com/place/Jerusalem/History",
+        "passage": "Cassius Dio 69.14; overview",
+        "qualification": "Alcance de prohibición y continuidad local complejos.",
+        "candidateEvent": "Roma derrota la revuelta y reorganiza la provincia como Siria Palestina; acceso judío a Jerusalén queda restringido.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 70,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.britannica.com/place/Jerusalem/History",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+          "passage": "Cassius Dio, Roman History 69.13–14 (Roman suppression; Bar Kokhba war)",
+          "supportedClaim": "Supports Roman forces suppressing a major revolt across Judaea and Dio’s account of postwar restrictions; use his specific claim about Jerusalem only if the relevant 69.14 passage is quoted directly.",
+          "problems": "“Syria Palaestina” renaming and Jewish exclusion from Jerusalem need separate direct sources; don’t bundle all consequences from an imprecise Dio locator. Current consulted Livius excerpt covers 69.12–13 only.",
+          "coverageRead": "Read translated Dio 69.12–13; 69.14 remains unchecked in full. Keep the specific province renaming/exclusion detail pending.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-the-hill-and-the-school",
+      "order": 13,
+      "actId": "act-3",
+      "title": {
+        "en": "The Hill and the School",
+        "es-ES": "La colina y la escuela"
+      },
+      "date": "c.190–220 CE",
+      "geographyId": "galilee",
+      "coreMechanic": "distributed-copy-and-provision",
+      "historicalSelection": {
+        "corpusEventId": 72,
+        "sourceUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+        "passage": "Oxford, The Age of the Talmud",
+        "qualification": "Fecha aproximada y grado de autoría/redacción debatidos.",
+        "candidateEvent": "Judas ha-Nasi organiza la Mishnah, compilación de tradiciones legales.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 72,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "passage": "COJS, Tannaitic Literature, lines 19–21, 30–33.",
+          "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Judas ha-Nasi organiza la Mishnah, compilación de tradiciones legales.",
+          "problems": "Schiffman excerpt states redaction by Judah the Prince around 200 CE and notes scholarly debate about nature/history and degree of his contribution.",
+          "coverageRead": "Direct excerpt read; Oxford chapter link from corpus not accessible in browser, so COJS is substitute contextual source, not replacement for full specialist scholarship.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "14-citizenship-copy-and-receipts-galilee",
+      "order": 14,
+      "actId": "act-3",
+      "title": {
+        "en": "A New Name in the Register",
+        "es-ES": "Un nombre nuevo en el registro"
+      },
+      "date": "212 CE; local circulation reconstruction",
+      "geographyId": "galilee",
+      "coreMechanic": "citizenship-copy-and-receipts",
+      "historicalSelection": {
+        "corpusEventId": 73,
+        "sourceUrl": "https://www.britishmuseum.org/collection/object/G_1894-10-14-1",
+        "passage": "Edicto de Caracalla, P.Giss. 40",
+        "qualification": "Excepciones legales y aplicación requieren cautela.",
+        "candidateEvent": "Constitutio Antoniniana extiende ciudadanía romana a la mayoría de habitantes libres; cambia marco jurídico judío.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 73,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.britishmuseum.org/collection/object/G_1894-10-14-1",
+          "correctUrlConsulted": "https://www.uni-giessen.de/ub/de/ueber-uns/sam/papyri-ostraka-keilschrifttafeln/papyri",
+          "passage": "Colección de papiros de Giessen: P.Giss. 40 / P.Giss. inv. 15; ver también https://www.constitutio.de/en/papyrus/known-history-of-the-constitutio-antoniniana",
+          "supportedClaim": "P.Giss. 40 es el testimonio papiráceo griego asociado a la Constitutio Antoniniana; emisión convencional 212/213, papiro escrito c.215.",
+          "problems": "URL original del British Museum no corresponde a este papiro; el objeto pertenece a la colección universitaria de Giessen. La inscripción textual está severamente fragmentada y su interpretación/relación exacta con el edicto sigue debatida. La ampliación de ciudadanía no debe presentarse como cambio específicamente judío.",
+          "coverageRead": "Leída página de la biblioteca universitaria de Giessen y página del proyecto Constitutio.de sobre historia del objeto y fecha; extracto académico Imrie 2015 sobre el estado fragmentario y debate.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-study-and-supply-allocation-galilee",
+      "order": 15,
+      "actId": "act-3",
+      "title": {
+        "en": "Margins beside the Lake",
+        "es-ES": "Márgenes junto al lago"
+      },
+      "date": "c.220–250 CE",
+      "geographyId": "galilee",
+      "coreMechanic": "study-and-supply-allocation",
+      "historicalSelection": {
+        "corpusEventId": 74,
+        "sourceUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+        "passage": "Oxford, The Age of the Talmud",
+        "qualification": "Las atribuciones personales de compilaciones no son transcripciones contemporáneas.",
+        "candidateEvent": "Amoraim palestinos discuten y transmiten la Mishnah en círculos de estudio.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 74,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "correctUrlConsulted": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "passage": "Catherine Hezser, An Introduction to the History and Sources of Jewish Law, ch. “The Age of the Talmud”, abstract",
+          "supportedClaim": "Supports broad period framing of Palestinian/Babylonian rabbinic scholarship and the Mishnah-to-Talmud transition; it does not support a specific named circle/date or claim that Mishnah was being “transmitted” as an event.",
+          "problems": "Abstract only; citation is not evidence for a specific local scene or the full range of Jewish community practice. Phrase as scholarly traditions, not all Jews.",
+          "coverageRead": "Read accessible chapter abstract/search extract, not paywalled chapter.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-the-river-quarter",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "The Painted River Quarter",
+        "es-ES": "El barrio pintado del río"
+      },
+      "date": "c.244 CE",
+      "geographyId": "dura",
+      "coreMechanic": "artisan-and-river-trade",
+      "historicalSelection": {
+        "baselineScenarioId": "03-the-river-quarter",
+        "baselineSourceIds": [
+          "dura",
+          "dura-unesco"
+        ],
+        "sourceUrl": "https://www.iranicaonline.org/articles/dura-europos/",
+        "passage": "Emplazamiento y arqueología",
+        "qualification": "Sinagoga y diversidad material documentadas en Dura-Europos; red comercial del jugador reconstruida. La ciudad no se ubica en orilla izquierda.",
+        "candidateEvent": "Sinagoga y diversidad material documentadas en Dura-Europos; red comercial del jugador reconstruida. La ciudad no se ubica en orilla izquierda.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "17-cross-river-study-logistics-pumbedita",
+      "order": 17,
+      "actId": "act-3",
+      "title": {
+        "en": "Questions beyond the Euphrates",
+        "es-ES": "Preguntas más allá del Éufrates"
+      },
+      "date": "c.250–300 CE; precise institutional chronology qualified",
+      "geographyId": "pumbedita",
+      "coreMechanic": "cross-river-study-logistics",
+      "historicalSelection": {
+        "corpusEventId": 75,
+        "sourceUrl": "https://academic.oup.com/book/4297",
+        "passage": "Halivni, Formation of Babylonian Talmud, abstract",
+        "qualification": "Los detalles institucionales proceden de tradiciones posteriores.",
+        "candidateEvent": "Centros rabínicos de Babilonia crecen bajo los sasánidas.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 75,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://academic.oup.com/book/4297",
+          "correctUrlConsulted": "https://academic.oup.com/book/4297",
+          "passage": "David Weiss Halivni, The Formation of the Babylonian Talmud, book overview",
+          "supportedClaim": "May support a long-term process of Bavli formation and Babylonian rabbinic activity, but accessible book page does not establish a discrete “growth of centers” event or a dated academy scene.",
+          "problems": "Formal Sura/Pumbedita academy institutions are often projected backward from later geonic sources; do not assert a mature institutional network c.4th century from this citation alone.",
+          "coverageRead": "Only book metadata/abstract available, not the protected book; claim remains under-supported.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-finite-mosaic-works-hammath-tiberias",
+      "order": 18,
+      "actId": "act-4",
+      "title": {
+        "en": "The Zodiac on the Floor",
+        "es-ES": "El zodiaco en el pavimento"
+      },
+      "date": "4th century CE; archaeological range, not an exact dedication",
+      "geographyId": "hammath-tiberias",
+      "coreMechanic": "finite-mosaic-works",
+      "historicalSelection": {
+        "additionalMilestone": "extra:6",
+        "sourceUrl": "https://cja.huji.ac.il/browser.php?id=644&mode=alone",
+        "passage": "Hebrew University Center for Jewish Art, object record “Hammath Tiberias Synagogue”; Oxford chapter “Ancient Synagogues in Palestine: An Overview” discusses a fourth-century date and competing early/late-fourth-century datings: https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283.",
+        "qualification": "The floor is usually dated to the fourth century, but exact dating varies within that century. This is a site-specific artifact and could enrich, rather than duplicate as a separate mission, corpus event 76 on Galilean synagogue mosaics. The imagery is evidence of local visual practice, not proof that all Jews accepted one theology or interpreted Helios literally.",
+        "candidateEvent": "The synagogue at Hammath Tiberias receives a mosaic floor combining a Torah shrine and menorahs with a zodiac and Helios panel.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-bounded-civilian-withdrawal-sepphoris",
+      "order": 19,
+      "actId": "act-4",
+      "title": {
+        "en": "The Roads after Diocaesarea",
+        "es-ES": "Los caminos después de Diocesarea"
+      },
+      "date": "351/352 CE; late partisan reports and scale disputed",
+      "geographyId": "sepphoris",
+      "coreMechanic": "bounded-civilian-withdrawal",
+      "historicalSelection": {
+        "additionalMilestone": "extra:5",
+        "sourceUrl": "https://en.wikisource.org/wiki/Ecclesiastical_history_(Socrates_Scholasticus)/Book_II/Chapter_XXXIII",
+        "passage": "Socrates Scholasticus, Ecclesiastical History II.33, “Of the Jews inhabiting Dio-Cæsarea in Palestine”; parallel report: Sozomen, Ecclesiastical History IV.7, https://orthodoxchurchfathers.com/fathers/npnf202/npnf2031.html.",
+        "qualification": "Socrates and Sozomen are later Christian historians, not contemporary witnesses; their reports differ in framing and likely magnify the episode. Ammianus does not mention it. Sepphoris is named in the account, but exact battle sequence, named leaders, scale, and destruction date should not be asserted as settled.",
+        "candidateEvent": "Rebel forces in Diocaesarea (Sepphoris) and other Palestinian towns are suppressed by Ursicinus during Gallus’s Caesarship.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "20-parallel-text-preservation-galilee",
+      "order": 20,
+      "actId": "act-4",
+      "title": {
+        "en": "The Arguments beside the Water",
+        "es-ES": "Los argumentos junto al agua"
+      },
+      "date": "c.350–400 CE; compilation process, no single closing date",
+      "geographyId": "galilee",
+      "coreMechanic": "parallel-text-preservation",
+      "historicalSelection": {
+        "corpusEventId": 78,
+        "sourceUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+        "passage": "Oxford, Age of Talmud",
+        "qualification": "No hay fecha puntual de cierre consensuada.",
+        "candidateEvent": "El Talmud de Jerusalén toma forma a través de generaciones de estudio y edición.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 78,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "correctUrlConsulted": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "passage": "Hezser, “The Age of the Talmud,” abstract",
+          "supportedClaim": "Supports the Jerusalem/Palestinian Talmud as a later halakhic work composed after Mishnah and a period of rabbinic legal activity in the Land of Israel.",
+          "problems": "Does not date a final redaction event precisely; broader scholarship treats its formation as complex and chronology uncertain. Avoid saying Tiberias alone authored it or assigning an exact completion year.",
+          "coverageRead": "Abstract only, not chapter text.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "21-finite-works-and-safe-withdrawal-jerusalem",
+      "order": 21,
+      "actId": "act-4",
+      "title": {
+        "en": "Foundations That Remained",
+        "es-ES": "Cimientos que permanecieron"
+      },
+      "date": "363 CE; failed rebuilding initiative",
+      "geographyId": "jerusalem",
+      "coreMechanic": "finite-works-and-safe-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 79,
+        "sourceUrl": "https://www.livius.org/articles/person/julian-the-apostate/julian-and-the-jews/",
+        "passage": "Ammianus Marcellinus 23.1.2–3",
+        "qualification": "Fuentes cristianas y paganas divergen sobre causa de interrupción.",
+        "candidateEvent": "Juliano permite y apoya el proyecto de reconstrucción del Templo de Jerusalén, que se interrumpe.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 79,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://www.livius.org/articles/person/julian-the-apostate/julian-and-the-jews/",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/23%2A.html",
+          "passage": "Ammianus Marcellinus, Res Gestae 23.1.2–3",
+          "supportedClaim": "Supports Julian planned a costly restoration of the Jerusalem Temple under Alypius of Antioch; Ammianus says fiery bursts near foundations halted work and some workers died.",
+          "problems": "Ammianus is a contemporary but Christian Roman author; the supernatural explanation is his account, not independently established cause. Do not add “permission to rebuild” as a formal edict unless separately sourced.",
+          "coverageRead": "Opened and read §§2–3 directly; single source passage, no archaeological corroboration consulted.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "22-law-and-community-records-thessalonica",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "A Boundary Written in Law",
+        "es-ES": "Una frontera escrita en la ley"
+      },
+      "date": "14 March388 CE",
+      "geographyId": "thessalonica",
+      "coreMechanic": "law-and-community-records",
+      "historicalSelection": {
+        "additionalMilestone": "extra:0",
+        "sourceUrl": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+        "passage": "Codex Theodosianus 3.7.2; texto latino y fecha fija 14/03/388. Contexto consultado: https://files.znu.edu.ua/files/Bibliobooks/Kushynova/0034719.pdf, sección CTh 3.7.2 / 9.7.5.",
+        "qualification": "La ley muestra una frontera jurídica que el poder imperial quiso imponer; su promulgación no demuestra aplicación uniforme ni permite inferir que todos los matrimonios mixtos cesaran.",
+        "candidateEvent": "Una constitución de Teodosio I, Valentiniano II y Arcadio prohíbe el matrimonio entre judíos y cristianos y equipara esa unión con adulterio en la sanción legal.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-petition-and-restoration-records-constantinople",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "An Order to Protect the Doors",
+        "es-ES": "Una orden para proteger las puertas"
+      },
+      "date": "29 September393 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "petition-and-restoration-records",
+      "historicalSelection": {
+        "additionalMilestone": "extra:1",
+        "sourceUrl": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "passage": "Codex Theodosianus 16.8.9, líneas 817–818 de la página consultada; la constitución ordena al comes y magister militum de Oriente proteger reuniones y sinagogas. Contexto: https://academic.oup.com/book/32151/chapter-abstract/268116920.",
+        "qualification": "Es una orden normativa, no una medición de cumplimiento. Leída junto con las restricciones de 388 y 423, evidencia políticas imperiales ambivalentes, no tolerancia constante.",
+        "candidateEvent": "Teodosio I afirma que el judaísmo no está prohibido por ley y ordena contener a quienes, bajo el nombre del cristianismo, destruyen o saquean sinagogas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-epigraphic-donor-logistics-aphrodisias",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "The Names on Two Faces",
+        "es-ES": "Los nombres en dos caras"
+      },
+      "date": "late4th century CE; dating debated",
+      "geographyId": "aphrodisias",
+      "coreMechanic": "epigraphic-donor-logistics",
+      "historicalSelection": {
+        "additionalMilestone": "extra:4",
+        "sourceUrl": "https://aphrodisias.classics.ox.ac.uk/tr/tr-jewishcom.html",
+        "passage": "Oxford Aphrodisias Excavations, “Jewish Community List”; inscripción monumental de 2,8 m, descripción de las listas en las líneas 39–41 de la página. Contexto de los problemas de datación: https://archiv.ub.uni-heidelberg.de/propylaeumdok/667/1/Chaniotis_The_Jews_of_Aphrodisias_2002.pdf.",
+        "qualification": "La página de excavación la atribuye a finales del siglo IV; la bibliografía discute la datación paleográfica y la contemporaneidad de ambas caras. La lista conserva nombres de varones y no equivale a un censo completo de la comunidad.",
+        "candidateEvent": "Una columna inscrita enumera miembros y benefactores asociados con la comunidad judía local; las dos caras contienen listas de nombres que documentan vida comunitaria y vínculos con la sinagoga.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "25-bounded-fiscal-transition-milan",
+      "order": 25,
+      "actId": "act-5",
+      "title": {
+        "en": "The Sealed Collection",
+        "es-ES": "La recaudación sellada"
+      },
+      "date": "11 April399 CE",
+      "geographyId": "milan",
+      "coreMechanic": "bounded-fiscal-transition",
+      "historicalSelection": {
+        "additionalMilestone": "extra:2",
+        "sourceUrl": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "passage": "Codex Theodosianus 16.8.14, entrada fechada 11 de abril de 399 (en la página consultada; confirmar sección 16.8.14). Contexto consultado: https://study.sci.house/roman-law/prohibition-collecting-tax-the-111576.html.",
+        "qualification": "La constitución se dirige al prefecto pretoriano de Italia y usa lenguaje hostil sobre el patriarca; describe una medida fiscal-administrativa y no prueba que todas las comunidades dejaran de contribuir de inmediato.",
+        "candidateEvent": "Una ley de Arcadio y Honorio prohíbe que los enviados del patriarca judío sigan recaudando aportes en las sinagogas; las sumas ya reunidas se redirigen al tesoro imperial.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-finite-community-construction-huqoq",
+      "order": 26,
+      "actId": "act-5",
+      "title": {
+        "en": "Stone for the Village",
+        "es-ES": "Piedra para la aldea"
+      },
+      "date": "late4th–early5th century CE; c.400",
+      "geographyId": "huqoq",
+      "coreMechanic": "finite-community-construction",
+      "historicalSelection": {
+        "additionalMilestone": "extra:7",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11813141/",
+        "passage": "Magness et al., “Understanding the history of the late Roman synagogue at Huqoq in Israel’s Galilee through radiocarbon dating and observations on site formation,” PLOS ONE 20.2 (2025), especially abstract and sections “Late Roman synagogue” and “Conclusion” (construction around end 4th/beginning 5th c.; lines 130, 145, 300–312 in consulted version).",
+        "qualification": "Recent pottery and radiocarbon work places construction around c.400; the site’s exact use-life is poorly preserved. Do not assign all mosaics to the initial construction phase or use the famous panels as evidence of the building’s exact opening date. It is a distinct village/site and visual program, although it overlaps thematically with the broad synagogue-art entry 76.",
+        "candidateEvent": "A monumental basilica synagogue is constructed at Huqoq; its later mosaic program includes biblical narrative panels such as Samson carrying Gaza’s gate.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-courier-and-account-restoration-rome-ostia",
+      "order": 27,
+      "actId": "act-5",
+      "title": {
+        "en": "The Receipt Restored",
+        "es-ES": "El recibo restituido"
+      },
+      "date": "25 July404 CE",
+      "geographyId": "rome-ostia",
+      "coreMechanic": "courier-and-account-restoration",
+      "historicalSelection": {
+        "architectEvidence": "custom:dues404",
+        "sourceUrl": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "passage": "Codex Theodosianus16.8.17, Rome25July404",
+        "qualification": "Normative restoration does not prove universal compliance. The player delivers a fictional local copy; no edict is rewritten.",
+        "candidateEvent": "A constitution revokes the ban on collection by the Jewish patriarch’s agents and restores the earlier privileges.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-authority-and-witness-records-constantinople",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "An Honour Removed",
+        "es-ES": "Un honor retirado"
+      },
+      "date": "20 October415 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "authority-and-witness-records",
+      "historicalSelection": {
+        "additionalMilestone": "extra:3",
+        "sourceUrl": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+        "passage": "Codex Theodosianus 16.8.22; página consultada, líneas 863–866, fecha 20 de octubre de 415. Texto secundario descriptivo: https://study.sci.house/roman-law/interdiction-marriage-between-christians-and-111564.html.",
+        "qualification": "La medida refleja una disputa sobre privilegio e intermediación del patriarca. No equivale por sí sola a la desaparición inmediata del patriarcado; el hito actual de c.425 aborda esa fase posterior.",
+        "candidateEvent": "Una constitución imperial remueve a Gamaliel de su prefectura honoraria y limita su autoridad: le prohíbe establecer nuevas sinagogas y decidir litigios entre judíos y cristianos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-repair-within-restrictions-constantinople",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "The Existing Doors",
+        "es-ES": "Las puertas que ya estaban"
+      },
+      "date": "15 February423 CE; CTh16.8.25",
+      "geographyId": "constantinople",
+      "coreMechanic": "repair-within-restrictions",
+      "historicalSelection": {
+        "corpusEventId": 82,
+        "sourceUrl": "https://academic.oup.com/book/32151/chapter-abstract/268117453",
+        "passage": "CTh 16.8.25; Oxford chapter abstract",
+        "qualification": "La aplicación local no se infiere automáticamente del texto legal.",
+        "candidateEvent": "Teodosio II restringe construcción de nuevas sinagogas.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 82,
+          "campaigns": [
+            "jewish-tradition"
+          ],
+          "originalUrl": "https://academic.oup.com/book/32151/chapter-abstract/268117453",
+          "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/300-800-laws-jews.asp",
+          "passage": "Theodosian Code 16.8.25–26; Fordham legal-source index, lines 73–80",
+          "supportedClaim": "CTh 16.8.25 (15 Feb 423) orders protection against attacks and synagogue burning; CTh 16.8.26 (9 Apr 423) prohibits building new synagogues while forbidding destruction/confiscation of existing ones.",
+          "problems": "Corpus claims a restriction but may compress two laws. This is not a total ban on Judaism or all synagogues; distinguish new construction from protection of existing buildings. Fordham provides citations/index rather than full Latin law text.",
+          "coverageRead": "Opened legal timeline and checked law references/dates lines 73–80; only index/summary, not complete legal text.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-the-living-margin",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "The Living Margin",
+        "es-ES": "El margen vivo"
+      },
+      "date": "c.425 CE; editorial limit, patriarchate end approximate",
+      "geographyId": "galilee",
+      "coreMechanic": "archive-and-final-perspective",
+      "historicalSelection": {
+        "baselineScenarioId": "04-the-living-margin",
+        "baselineSourceIds": [
+          "beth-shearim",
+          "talmud-transmission"
+        ],
+        "sourceUrl": "https://whc.unesco.org/en/list/1471/",
+        "passage": "Contexto de renovación judía y Judá el Príncipe",
+        "qualification": "Galilea sigue siendo un centro de aprendizaje. Fecha exacta de cierre del Talmud de Jerusalén discutida; el final del juego es límite editorial.",
+        "candidateEvent": "Galilea sigue siendo un centro de aprendizaje. Fecha exacta de cierre del Talmud de Jerusalén discutida; el final del juego es límite editorial.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "judith-copyist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    }
+  ]
 }
