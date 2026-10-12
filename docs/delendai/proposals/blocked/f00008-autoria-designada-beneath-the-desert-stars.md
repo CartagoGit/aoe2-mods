@@ -2,10 +2,14 @@
 id: f00008
 title: "Autoria designada: Beneath the Desert Stars"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: d5f7532b-a8f2-43b2-ad02-4cddbade10b6
+last-correlation-id: d5f7532b-a8f2-43b2-ad02-4cddbade10b6
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:36.791Z
 ---
 
 # f00008 — Autoria designada: Beneath the Desert Stars
