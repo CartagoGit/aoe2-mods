@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { atomicWrite, canonical, hash, sourceFile } from "../core";
+import { atomicWrite, sourceFile } from "../core/filesystem.helper";
+import { canonical, hash } from "../core/serialization.helper";
 export type AudioRequest = {
   text: string;
   locale: string;

@@ -1,5 +1,5 @@
-import { duplicates, type Issue, issue } from "../core";
-import type { Campaign, Catalog } from "../schemas";
+import { duplicates, type Issue, issue } from "../core/diagnostics.helper";
+import type { Campaign, Catalog } from "../schemas/campaign.schema";
 
 export type StringLock = {
   schemaVersion: 1;

@@ -1,7 +1,8 @@
 import { readdir, readFile } from "node:fs/promises";
-import { canonical, hash, jsonFile, sourceFile } from "../../packages/core";
-import type { Campaign } from "../../packages/schemas";
-import type { loadProject } from "./project";
+import { jsonFile, sourceFile } from "../../packages/core/filesystem.helper";
+import { canonical, hash } from "../../packages/core/serialization.helper";
+import type { Campaign } from "../../packages/schemas/campaign.schema";
+import type { loadProject } from "./project.loader";
 
 /** El QA/editorial no altera el artefacto; textos, gameplay, medios y plantillas sí. */
 export async function candidateFingerprint(
