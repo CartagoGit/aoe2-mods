@@ -2,14 +2,14 @@
 id: i00004
 title: "Migrate Production TypeScript Files to Descriptive Names"
 kind: infra
-status: review
+status: done
 type: proposal
 track: general
 date: 2026-10-12
-last-transition-id: 1240112d-375c-4d7a-a524-723e1d15801b
-last-correlation-id: 1240112d-375c-4d7a-a524-723e1d15801b
-last-transition-from: in-progress
-last-transition-at: 2026-10-12T16:01:14.387Z
+last-transition-id: df068cc7-adda-4c2a-bb9c-cb07c24e4418
+last-correlation-id: df068cc7-adda-4c2a-bb9c-cb07c24e4418
+last-transition-from: review
+last-transition-at: 2026-10-12T16:01:17.785Z
 shipped-in:
   - "4e2a3cd1652497e8b8ef350ef96fb5f5cdc73539"
 ---
