@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "nextId": 1900000010,
+  "ids": {
+    "campaign.technical-pilot.description": 1900000001,
+    "campaign.technical-pilot.intro": 1900000002,
+    "campaign.technical-pilot.outro": 1900000003,
+    "campaign.technical-pilot.title": 1900000004,
+    "scenario.technical-battle.defeat-guard": 1900000005,
+    "scenario.technical-battle.intro": 1900000006,
+    "scenario.technical-battle.outro": 1900000007,
+    "scenario.technical-battle.prepare": 1900000008,
+    "scenario.technical-battle.title": 1900000009
+  },
+  "retired": []
+}
