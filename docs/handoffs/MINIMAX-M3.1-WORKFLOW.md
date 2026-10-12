@@ -2,7 +2,7 @@
 
 ## Ciclo de un slice
 
-Descubrir estado → comprobar dependencias → entrar en unidad desde develop → reclamar archivos → leer brief/fuentes → implementar contenido → validar → entregar evidencia → revisión independiente → publicar oficialmente → registrar cierre. Las operaciones proceden del catálogo vivo de DelendAI, no de nombres copiados de un chat.
+Descubrir estado → comprobar dependencias → entrar en unidad desde develop → reclamar archivos → leer brief/fuentes → implementar contenido → validar → revisión técnica independiente → publicar por el gate oficial → aprobación formal del hash integrado desde unidad review de otro modelo → cierre oficial. Las operaciones proceden del catálogo vivo de DelendAI, no de nombres copiados de un chat. Ver docs/guides/delendai.md: el runtime actual rechaza aprobar commits que aún no están en develop.
 
 Los slices de dossier, borradores y QA tienen propiedad diferenciada. Preparar contenido en staging/campaigns; el slice de materialización posee simultáneamente campañas completas, borradores, IDs y glosario, y los integra juntos. Seguir [staging](../guides/staging.md): staging:check --partial declara pendientes; sin --partial exige fuentes completas. Todos los slices mantienen bun run validate verde; serializar la modificación del registro global. Un gate e2e significa ejecutar el alcance declarado y documentar las pruebas de motor pendientes.
 

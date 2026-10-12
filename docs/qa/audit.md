@@ -49,3 +49,9 @@ La instancia /root/independent_review, distinta del implementador pero con el mi
 El runtime rechazó el veredicto fuera de una unidad review y después rechazó la identidad artificial gpt-6-independent-review. Exige el ID real del modelo y reviewer diferente de implementer: ambas instancias GPT-6 no satisfacen ese registro formal. La revisión técnica no se presenta como aprobación oficial. Sigue pendiente una resolución legítima de identidad/modelo revisor además del gate inicial de develop.
 
 El propietario autorizó usar GPT-6.1 para registrar una revisión formal con un modelo diferente real. La autorización no equivale al veredicto; se registrará únicamente el resultado del revisor.
+
+## Comprobación con GPT-6.1 y orden real del workflow
+
+DelendAI aceptó la identidad literal del override del host gpt-6.1-sol y su unidad review independiente. El revisor confirmó e4f5fc9 con 41/41 pruebas,124 expectativas y tres round-trips sin hallazgos bloqueantes. El intento de approve fue rechazado: el hash acreditado debe pertenecer ya a develop. La identidad ya no bloquea; primero debe declararse el gate, integrar con work publish y después registrar approve sobre ese hash integrado. No falsear un SHA ni alterar requirePeerReview.
+
+Se preparó un parche mínimo externo para el propietario que solo añade los dos comandos del gate a delendai.config.json del HEAD actual de develop. Está sin aplicar mientras falte una resolución/autorización legítima de bootstrap. La publicación y el cierre permanecen pendientes, aunque la revisión técnica sea conforme.

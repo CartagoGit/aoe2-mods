@@ -24,3 +24,9 @@ La revisión técnica de otra instancia existe, pero no equivale a aprobación f
 ## Segunda revisión técnica
 
 La instancia revisora confirmó conformidad con 2843c0df707df45e633f22d5fc87e04c66d2b0b6: validate=0, 41/41 pruebas,124 expectativas y tres round-trips reales. Los ocho hallazgos están resueltos. Su única aclaración documental se aplicó: exportar únicamente campañas materializadas; staging no es un target de exportación. El propietario autorizó revisión formal con GPT-6.1 para cumplir legítimamente la identidad diferente exigida por DelendAI; pendiente del resultado real.
+
+## Revisión con GPT-6.1 y condición de integración
+
+El host creó la instancia con fork_turns=none y model=gpt-6.1-sol explícitos. DelendAI aceptó esa identidad y creó su unidad review/batch-all. Comprobó e4f5fc9bacd56f7d7197b9b4c711c985b138a911 con validate=0, 41/41 pruebas,124 expectativas, tres round-trips, schemas/i18n/assets/audio y los 20 slices: sin hallazgos bloqueantes.
+
+El veredicto oficial fue rechazado porque evidence.commitHash e4f5fc9 no pertenece todavía a develop: el runtime exige aprobar lo integrado. El estado real sigue in_review, reviewer=null, rounds=[]. La identidad distinta ya está resuelta; queda declarar el gate mediante bootstrap legítimo, integrar oficialmente y volver a registrar approve del hash integrado. No se ha emitido aprobación formal.
