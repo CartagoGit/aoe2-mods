@@ -2,16 +2,16 @@
 id: i00002
 title: "Autoria en ingles y localizacion canonica explicita por campana"
 kind: infra
-status: review
+status: done
 type: proposal
 track: campaign-design
 date: 2026-10-12
 shipped-in:
   - "81bf972906ed0bd8d0e591e5014a7ebc219b97ab"
-last-transition-id: b189871f-2cfb-4753-99fd-3f6c5d62ad53
-last-correlation-id: b189871f-2cfb-4753-99fd-3f6c5d62ad53
-last-transition-from: in-progress
-last-transition-at: 2026-10-12T15:28:37.961Z
+last-transition-id: 8f23ce37-877d-477a-b457-c07afa9cf39e
+last-correlation-id: 8f23ce37-877d-477a-b457-c07afa9cf39e
+last-transition-from: review
+last-transition-at: 2026-10-12T15:29:01.380Z
 ---
 
 # i00002 — Autoria en ingles y localizacion canonica explicita por campana
