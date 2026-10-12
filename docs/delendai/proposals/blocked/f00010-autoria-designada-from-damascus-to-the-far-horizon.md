@@ -2,10 +2,14 @@
 id: f00010
 title: "Autoria designada: From Damascus to the Far Horizon"
 kind: feat
-status: ready
+status: blocked
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: b1a11751-fc17-47ec-a614-d31adfc62768
+last-correlation-id: b1a11751-fc17-47ec-a614-d31adfc62768
+last-transition-from: ready
+last-transition-at: 2026-10-12T14:24:55.142Z
 ---
 
 # f00010 — Autoria designada: From Damascus to the Far Horizon
