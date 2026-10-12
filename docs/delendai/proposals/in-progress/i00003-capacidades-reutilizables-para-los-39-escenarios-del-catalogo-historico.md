@@ -2,10 +2,14 @@
 id: i00003
 title: "Capacidades reutilizables para los 39 escenarios del catalogo historico"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-design
 date: 2026-10-12
+last-transition-id: 09d125c0-d3e9-4028-b0e6-d2c2a0b2de07
+last-correlation-id: 09d125c0-d3e9-4028-b0e6-d2c2a0b2de07
+last-transition-from: ready
+last-transition-at: 2026-10-12T16:26:27.521Z
 ---
 
 # i00003 — Capacidades reutilizables para los 39 escenarios del catalogo historico
