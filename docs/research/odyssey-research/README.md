@@ -41,7 +41,7 @@ Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tien
 
 ## Consultas del tercer acto y corpus judío
 
-Los [19 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–19; Jerusalén 70 conserva su desenlace histórico fijo y atribuye las fuentes sin fusionarlas. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
+Los [22 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–22; Jerusalén 70 conserva su desenlace histórico fijo y atribuye las fuentes sin fusionarlas. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
 
 - [Finale de Milán 303–313](faith-finale-source-audit.json): distingue reunión/acuerdo en Milán, publicación del rescripto en Nicomedia y una orden genérica de restitución; no prueba una restitución local concreta.
 - [Auditoría judía inicial, episodios 1–6](jewish-first-act-source-audit.json): tradiciones sobre Yavneh, Akiva y reforma fiscal; no un concilio único ni abolición acreditada del fiscus.
@@ -51,3 +51,9 @@ Los [19 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órd
 Estas recopilaciones son investigación delegada, pendiente de interpretación del arquitecto y revisión independiente. No fijan objetivos, poblaciones, mapas o mecánicas ni aprueban una campaña.
 
 - [Primer acto de Roma, seis consultas](rome-first-act-source-audit.json): distingue viaje de Atanasio, cronología disputada de Sardica, exilio de Liberio, fuente candidata incorrecta de Rimini, relato de violencia de Amiano y penitencia en Ambrosio. La corrección de selecciones y aprobación siguen pendientes de interpretación del arquitecto.
+
+- [Fuentes romanas intermedias, episodios7–18](rome-middle-source-audit.json): cronologías de asedios y reinos, negociación frente a paz consumada, viajes y fuentes parciales.
+- [Fuentes romanas tardías, episodios19–32](rome-late-source-audit.json): iconos, alianzas, llaves, coronación y diferencias entre testimonio y reconstrucción.
+- [Geografía romana aún sin perfil](rome-missing-geography-audit.json): Chersonesos táurico, Saint-Denis y Paderborn, con controles institucionales y sin equivaler direcciones actuales a huellas antiguas.
+
+Las consultas añadidas por el arquitecto para los episodios20–22 distinguen Primera de Clemente1/44–48, las dos cartas completas de Plinio10.96–97 y Justino65–67. La preparación de un envío no acredita recepción ni reconciliación; el recibo local de Bitinia no es respuesta imperial; las prácticas descritas por Justino no acreditan todas las comunidades.

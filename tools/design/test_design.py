@@ -13,6 +13,26 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_departure_cannot_use_a_future_receipt_or_arrival_of_different_actors(self):
+        draft = self.draft(21)
+        departure = draft["objectivePlan"][3]["predicate"]["requirements"][0]
+        departure["receiptObjective"] = "o4"
+        self.assertTrue(
+            any(
+                "departure is not gated by a prior receipt" in e
+                for e in self.dossier_validator(draft)
+            )
+        )
+        draft = self.draft(21)
+        onward = draft["objectivePlan"][3]["predicate"]["requirements"][1]
+        onward["arrivalAfterDeparture"] = {"objective": "o2", "requirement": "req-1"}
+        self.assertTrue(
+            any(
+                "arrival lacks exact prior departing identities" in e
+                for e in self.dossier_validator(draft)
+            )
+        )
+
     def test_expanded_information_cannot_reference_invented_routes_or_enemy_reserves(
         self,
     ):

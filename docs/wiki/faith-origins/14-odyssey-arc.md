@@ -57,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 19
+    "authoredDossierCount": 22
   },
   "continuity": {
     "recommendedPrevious": [],
@@ -783,6 +783,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/20-reconciliation-deliveries-rome-ostia/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: 1 Clement is a Roman church's letter urging reconciliation in a leadership conflict at Corinth.
 
 ES: 1 Clemente es una carta de la iglesia de Roma que pide reconciliación en un conflicto de liderazgo en Corinto.
@@ -792,6 +794,10 @@ ES: 1 Clemente es una carta de la iglesia de Roma que pide reconciliación en un
 Limit: The opening directly identifies the Roman sender and Corinthian addressee. The text does not name Clement as author; c.95 is conventional and not stated in the letter. A particular Roman copying address remains fiction.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/1010.htm): 1Clement opening and44–48; architect read sender/addressee, ministers removed and appeal for concord
+
+Limit: Author unnamed in the text, datec95 conventional; advocacy not proof of restored peace or exact Roman writing address. This older translation/page numbers differ from some modern chapter divisions; no authentic dialogue or manuscript placed.
 
 ### 21. The Governor's Question
 
@@ -805,6 +811,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/03-the-governors-question/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Pliny asks Trajan about proceedings against accused Christians and reports their pre-dawn meeting and practices.
 
 ES: Plinio consulta a Trajano sobre los procesos contra acusados de cristianismo e informa de sus reuniones antes del alba y prácticas.
@@ -814,6 +822,10 @@ ES: Plinio consulta a Trajano sobre los procesos contra acusados de cristianismo
 Limit: Governor's correspondence, not a neutral ethnography; evidence is for Bithynia-Pontus, not a general empire-wide policy. c.112 is inferred from correspondence chronology.
 
 Status: consulted
+
+[Additional consulted passage](https://faculty.georgetown.edu/jod/texts/pliny.html): Pliny, Letters10.96–97; architect read both complete displayed letters
+
+Limit: Governor correspondence and attributed interrogated testimony, not neutral ethnography; executions/torture not playable choices. Trajan does not grant religious liberty or general uniform rules. Local Nicomedia activity and receipt are fiction, not an attested tribunal or emperor reply.
 
 ### 22. Bread Read Aloud
 
@@ -827,6 +839,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/22-reading-and-relief-rome-ostia/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Justin describes Sunday gatherings, readings, prayer, Eucharist, and collections for people in need.
 
 ES: Justino describe reuniones dominicales, lecturas, oración, eucaristía y colectas para personas necesitadas.
@@ -836,6 +850,10 @@ ES: Justino describe reuniones dominicales, lecturas, oración, eucaristía y co
 Limit: The passage describes Christian practice in general terms; it does not itself establish Justin's teaching location or prove these exact practices were unique to Rome. Apologetic self-description, not a neutral census.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/0126.htm): Justin, First Apology65–67; architect read rites, reading and giving descriptions
+
+Limit: Apologetic self-description, not a universal census or precise Roman congregation address. Ordinary local reading-work notes and household logistics are fictional, theological assertions not objective facts or mechanical meters.
 
 ### 23. A Petition from Sardes
 
