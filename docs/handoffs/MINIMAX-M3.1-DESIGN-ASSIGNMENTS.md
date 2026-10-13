@@ -136,4 +136,11 @@ La [selección de las nueve odiseas](../design/odyssey-selections.md) contiene l
 
 ## Expedientes ampliados en revisión
 
-Los ocho primeros episodios de faith-origins tienen expediente legible en `docs/wiki/faith-origins/episodes/<id>/15-odyssey-dossier.md` y fuente editable en `docs/design/odysseys/faith-origins.json`. Los generadores comparten identidad, transacciones, financiación, subtítulos y QA; los hechos, voz personal y decisiones de cada misión son autoría explícita del arquitecto. Hay 313 pantallas y 48 secundarios adicionales. Los expedientes no están aprobados y sus planos SVG muestran controles geográficos, no terreno navegable. No produzcas binarios a partir de estos borradores.
+Los quince primeros episodios de faith-origins tienen expediente legible en `docs/wiki/faith-origins/episodes/<id>/15-odyssey-dossier.md` y fuente editable en `docs/design/odysseys/faith-origins.json`. Los generadores comparten identidad, transacciones, financiación, subtítulos y QA; los hechos, voz personal y decisiones de cada misión son autoría explícita del arquitecto. Hay 587 pantallas y 90 secundarios en los borradores ampliados. Los expedientes no están aprobados y sus planos SVG muestran controles geográficos, no terreno navegable. No produzcas binarios a partir de estos borradores.
+
+
+## Voces de las odiseas ampliadas
+
+La autoridad de diseño de voz ampliada es [odyssey-narrators.json](../design/voices/odyssey-narrators.json), con nueve fichas legibles en ese directorio y un plan de acceso al conocimiento para cada uno de los 273 episodios. La voz objetiva resume hechos y límites documentales antes de dar paso a la persona ficticia de campaña. No conviertas biografías inventadas en fuentes antiguas ni atribuyas acceso a concilios, revelaciones o motivos privados. Cada dossier debe precisar la colocación local; una edad compatible no demuestra presencia.
+
+Marcus mantiene `imperial-clerk`, pero en la odisea ampliada su vida es c.334–403, frente al arco legado c.290–350. No copies recuerdos de 312 a los nuevos textos. La migración debe aprobarse antes de promoción nativa. Las biblias ampliadas siguen pendientes de revisión editorial y no autorizan nuevas campañas ni generación pagada de audio.

@@ -6,6 +6,8 @@
 
 ## Campaign voice and continuity
 
+[Expanded narrator bible and per-episode knowledge framing](../../design/voices/faith-origins.md) — fictional biography; independent approval pending.
+
 ```json
 {
   "editorial": {
@@ -55,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 8
+    "authoredDossierCount": 15
   },
   "continuity": {
     "recommendedPrevious": [],
