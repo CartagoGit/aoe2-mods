@@ -1511,6 +1511,41 @@ describe("arrival after an observed departure", () => {
     expect(f.step(early, action).departedEntities).toEqual([]);
   });
 
+  test("a generated receipt requires its exact guarded arrival producer", () => {
+    const returned = arrivalRequirement("returned", "receiver-a", "zone-dest");
+    if (returned.kind !== "entity-state") throw new Error("Expected arrival");
+    returned.generatedByReceipts = [
+      {
+        fromObjective: "objective-a",
+        fromRequirement: "onward",
+        receivedEntity: "unit-a",
+        destination: "zone-other",
+        output: "receiver-a",
+      },
+    ];
+    const f = referenceFixture([
+      arrivalRequirement("copies", "cargo-a", "zone-dest"),
+      arrivalRequirement("ungated-exit", "unit-a", "zone-other"),
+      departure("leave", "unit-a", "copies"),
+      arrival("onward", "unit-a", "leave"),
+      returned,
+    ]);
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    const returnedAction = {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-dest",
+    } as const;
+    let state = f.step(f.entered, exit);
+    state = f.step(state, receipt);
+    state = f.step(state, action);
+    expect(f.step(state, returnedAction)).toEqual(state);
+    state = f.step(state, exit);
+    expect(
+      f.step(state, returnedAction).requirementFacts["objective-a.returned"],
+    ).toEqual(["receiver-a"]);
+  });
+
   test("another departure of the same entity cannot authorize this arrival", () => {
     const f = referenceFixture([
       arrivalRequirement("copies", "cargo-a", "zone-dest"),

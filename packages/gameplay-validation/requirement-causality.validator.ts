@@ -18,6 +18,12 @@ export function validateRequirementCausality(
         const ref = requirement.arrivalAfterDeparture;
         dependencies.push(key(ref.objective, ref.requirement));
       }
+      if (requirement.kind === "entity-state")
+        dependencies.push(
+          ...(requirement.generatedByReceipts ?? []).map((receipt) =>
+            key(receipt.fromObjective, receipt.fromRequirement),
+          ),
+        );
       if (requirement.kind === "ordered-departure") {
         const source = profile.objectivePlan.find(
           (o) => o.id === requirement.receiptObjective,
