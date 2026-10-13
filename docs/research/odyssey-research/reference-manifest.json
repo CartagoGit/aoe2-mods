@@ -459,6 +459,23 @@
       "productionApproved": false,
       "modifications": "None; original SVG unchanged. Raster preview generated only in /tmp and inspected by architect.",
       "attribution": "Byzantine Constantinople-en.svg by Cplakidas, code cleanup by Semhur, Wikimedia Commons, CC BY-SA3.0. Indicate modifications; adaptations require compatible ShareAlike terms."
+    },
+    {
+      "id": "nicomedia-modern-locator",
+      "path": "docs/research/odyssey-research/geography/nicomedia-modern-locator.png",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Karte_Nikomedia.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Karte_Nikomedia.png",
+      "author": "San Jose,19January2006; uploaded20June2007; modern GMT/ETOPO2 basemap",
+      "license": "CC BY-SA3.0 Unported selected from migrated CC BY-SA3.0/GFDL offer",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "consulted": "2026-10-14",
+      "bytes": 251996,
+      "sha256": "60e862b0eeda564d53301ce0b2bdf4276ded20b53766c9fc4e72fabf8027e3f7",
+      "modifications": "None; original PNG retained and architect inspected actual1000x900 pixels.",
+      "usage": "Regional modern Nicomedia/Izmit locator only. Modern national names and coarse relief do not represent an ancient city or prove an imperial dispatch address.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
     }
   ]
 }

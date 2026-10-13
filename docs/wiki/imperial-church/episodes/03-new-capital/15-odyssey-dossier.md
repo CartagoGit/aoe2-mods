@@ -1097,9 +1097,9 @@ EN: Recover both separate copies from old and new place-name register and delive
 
 ES: Recupera las dos copias distintas de registro del topónimo antiguo y nuevo y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal.
 
-EN: A fictional copy explains the naming context without placing the later chronicle inside330.
+EN: A fictional copy explains the naming context without placing the later chronicle inside 330.
 
-ES: Una copia ficticia explica el nombramiento sin situar la crónica posterior dentro de330.
+ES: Una copia ficticia explica el nombramiento sin situar la crónica posterior dentro de 330.
 
 ```json
 {
@@ -1663,9 +1663,9 @@ EN: Escort the local guide of southern crew-loop guide to the marked road juncti
 
 ES: Escolta al guía local de guía del circuito meridional de equipos hasta el cruce señalado. Ventaja: Señala una vez southern-services-loop propuesto; los patios principales y suministros ordinarios siguen indicados sin esta tarea.
 
-EN: Marks a proposed land alternative without creating a bridge or certifying the330 shoreline.
+EN: Marks a proposed land alternative without creating a bridge or certifying the 330 shoreline.
 
-ES: Señala una alternativa terrestre propuesta sin crear un puente ni acreditar la costa de330.
+ES: Señala una alternativa terrestre propuesta sin crear un puente ni acreditar la costa de 330.
 
 ```json
 {
