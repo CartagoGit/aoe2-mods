@@ -99,7 +99,7 @@ def wiki(campaign, episode):
         ]
     if "oppositionPlan" in episode:
         base += [
-            "## Finite opposition and guaranteed no-combat alternative",
+            "## Finite opposition and authored engagement constraints",
             "",
             "```json",
             json.dumps(episode["oppositionPlan"], ensure_ascii=False, indent=2),
@@ -110,6 +110,10 @@ def wiki(campaign, episode):
         base += ["## Campaign finale and optional successor recommendations", "",
                  "Design-only continuity contract. Native variable writes, menu rendering and save/load behavior remain unverified.", "",
                  "```json", json.dumps(episode["finaleContract"], ensure_ascii=False, indent=2), "```", ""]
+    if "entryContract" in episode:
+        base += ["## Optional predecessor recommendation and entry recap", "",
+                 "Design-only entry contract. Starting without the predecessor remains allowed; native menu and save/load QA are pending.", "",
+                 "```json", json.dumps(episode["entryContract"], ensure_ascii=False, indent=2), "```", ""]
     base += [
         "## Geographic districts and routes",
         "",

@@ -254,7 +254,7 @@ EN: These are invented names. I will not claim them as evidence for an ancient e
 
 ES: Son nombres inventados. No los presentaré como prueba de una huida antigua.
 
-## Finite opposition and guaranteed no-combat alternative
+## Finite opposition and authored engagement constraints
 
 ```json
 {

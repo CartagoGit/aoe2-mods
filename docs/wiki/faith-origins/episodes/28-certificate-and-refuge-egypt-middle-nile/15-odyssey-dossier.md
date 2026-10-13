@@ -1951,7 +1951,9 @@ ES: Señala el circuito terrestre exterior propuesto sin inventar puentes antigu
   "artDirection": {
     "style": "sober Roman-era regional illustration; own geographic vector plan as research visual",
     "historicalControls": "no modern objects, invented quotation, sacred-person combat unit or later religious architecture",
-    "referenceAssets": [],
+    "referenceAssets": [
+      "oxyrhynchus-locator"
+    ],
     "productionApproved": false
   },
   "qa": {

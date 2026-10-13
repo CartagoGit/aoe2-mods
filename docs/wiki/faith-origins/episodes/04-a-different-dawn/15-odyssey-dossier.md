@@ -2011,7 +2011,10 @@ ES: Señala el circuito interior indicado entre patios receptores separados; nun
   "artDirection": {
     "style": "sober Roman-era regional illustration; own geographic vector plan as research visual",
     "historicalControls": "no modern objects, invented quotation, sacred-person combat unit or later religious architecture",
-    "referenceAssets": [],
+    "referenceAssets": [
+      "milan-circus-remains",
+      "mediolanum-multiphase-plan"
+    ],
     "productionApproved": false
   },
   "qa": {

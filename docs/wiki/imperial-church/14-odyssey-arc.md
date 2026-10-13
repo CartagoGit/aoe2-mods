@@ -62,7 +62,8 @@
       "Adrianople/Chrysopolis andMilan/Alexandria are separate local episodes because they involve different places and operations.",
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
-    ]
+    ],
+    "authoredDossierCount": 3
   },
   "continuity": {
     "recommendedPrevious": [
@@ -100,7 +101,7 @@ Historical year band: [312, 317]. Victoria militar, restitución y conflictos af
 |---|---|---|---|---|
 | 1 / 01-milvian-bridge | The River beneath the Eagle / El río bajo el águila | 28 October 312 CE | milvio | river-battle |
 | 2 / 02-bounded-negotiation-milan | Promises in the Winter Court / Promesas en la corte de invierno | 313 CE | milan | bounded-negotiation |
-| 3 / 03-property-and-record-restoration-nicomedia | The Doors Returned / Las puertas restituidas | 13 June 313 CE | nicomedia | property-and-record-restoration |
+| 3 / 03-property-and-record-restoration-nicomedia | The Doors Returned / Las puertas restituidas | 13 June 313 CE | bithynia | property-and-record-restoration |
 | 4 / 04-rival-delegation-reception-rome-ostia | The African Petition / La petición africana | 313–314 CE; Roman hearing focus | rome-ostia | rival-delegation-reception |
 | 5 / 05-delegate-logistics-arles | The Road to Arles / El camino hacia Arlés | 314 CE | arles | delegate-logistics |
 | 6 / 06-finite-field-withdrawal-cibalae | The Field between Two Eagles / El campo entre dos águilas | 314 or 316 CE; dating disputed | cibalae | finite-field-withdrawal |
@@ -290,11 +291,33 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/01-milvian-bridge/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Constantine defeated Maxentius near Rome in 312; Christian accounts give differing signs and retreat narratives. The conventional 28 October date is supported by the Capitoline institutional guide, while the consulted Latin Lactantius 44.4 has 27 October. No exact deployment, active bridge geometry, divine causation or religious troop affiliation is established for our fictional tactical pocket.
+
+ES: Constantino derrotó a Majencio cerca de Roma en 312; los relatos cristianos presentan signos y retiradas distintos. La guía institucional capitolina respalda el 28 de octubre convencional, mientras el latín consultado de Lactancio 44.4 contiene el 27. No acredita despliegue exacto, geometría de un puente operativo, causalidad divina ni afiliación religiosa de las tropas de nuestro sector táctico ficticio.
+
 [Consulted source](https://www.newadvent.org/fathers/25021.htm): Eusebius VC I.35–38; checked narrative of final advance and Maxentius’ death near Rome; Lactantius 44 not consulted directly in this pass.
 
 Limit: No exact 28 October date established by checked Eusebius passage; victory/bridge details are framed as Christian providence in a panegyric.
 
 Status: disputed
+
+[Additional consulted passage](https://bkv.unifr.ch/de/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/45/de-mortibus-persecutorum): Lactantius DMP44.1–12, complete displayed Latin
+
+Limit: Christian providential framing; critical date apparatus not read.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25021.htm): Eusebius VC I.28–39
+
+Limit: Panegyric; no verified divine cause, precise troop roster or mandatory intact bridge.
+
+[Additional consulted passage](https://www.museiincomuneroma.it/sites/default/files/storage/original/application/d9bc0a70352f82f608abb2ce3673450b.pdf): page1 introductory battle date (PDF page index0)
+
+Limit: Teaching guide, not critical Lactantius edition; does not resolve conflicting day wording. No source image copied.
+
+[Additional consulted passage](https://www.sovraintendenzaroma.it/node/4280): Ponte Milvio monument history
+
+Limit: No312 battlefield footprint or ancient river elevation.
 
 ### 2. Promises in the Winter Court
 
@@ -308,11 +331,21 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/02-bounded-negotiation-milan/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Lactantius 48 transmits a letter referring to the Milan agreement on religious choice and Christian communal-property restitution; its preface reports publication at Nicomedia on 13 June 313.
+
+ES: Lactancio 48 transmite una carta que alude al acuerdo de Milán sobre elección religiosa y restitución de bienes comunitarios cristianos; su preámbulo relata publicación en Nicomedia el13de junio de313.
+
 [Consulted source](https://www.newadvent.org/fathers/200110.htm): Eusebius HE X.5 / Fordham translation of rescript; checked editorial note describing Milan meeting.
 
 Limit: The “negotiation” phrasing is an inference; surviving text is later rescript, not minutes of a conversation. Lactantius page URL in dossier was not opened.
 
 Status: consulted
+
+[Additional consulted passage](https://bkv.unifr.ch/en/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/49/de-mortibus-persecutorum): DMP48.1–13 complete Latin text, root read2026-10-13
+
+Limit: Milan agreement versus Nicomedia publication; transmitted legal text, no minutes of a negotiation or proven local property delivery.
 
 ### 3. The Doors Returned
 
@@ -326,11 +359,21 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/03-property-and-record-restoration-nicomedia/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Lactantius 48 transmits a letter referring to the Milan agreement on religious choice and Christian communal-property restitution; its preface reports publication at Nicomedia on 13 June 313.
+
+ES: Lactancio 48 transmite una carta que alude al acuerdo de Milán sobre elección religiosa y restitución de bienes comunitarios cristianos; su preámbulo relata publicación en Nicomedia el13de junio de313.
+
 [Consulted source](https://sourcebooks.fordham.edu/source/edict-milan.asp): Eusebius HE X.5 as reproduced in Fordham; lines on Nicomedia and restitution.
 
 Limit: The text is not the original Milan instrument; legal order is not proof of uniform practical restitution.
 
 Status: consulted
+
+[Additional consulted passage](https://bkv.unifr.ch/en/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/49/de-mortibus-persecutorum): DMP48.1–13 complete Latin text, root read2026-10-13
+
+Limit: Milan agreement versus Nicomedia publication; transmitted legal text, no minutes of a negotiation or proven local property delivery.
 
 ### 4. The African Petition
 

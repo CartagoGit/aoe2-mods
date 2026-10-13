@@ -7,6 +7,82 @@ remain separate gates; a draft recommendation never grants content approval.
 import copy
 
 
+def entry_screens(contract):
+    """Return shared entry screen specifications without writing progress."""
+    screens = [("predecessor-recap", contract["recap"],
+                "entry recap available before fact-intro; skippable", "collection-narrator"),
+               ("entry-chronology", contract["chronologyWarning"],
+                "entry before fact-intro; never blocks starting", "none")]
+    for predecessor in contract["predecessors"]:
+        title = predecessor["title"]
+        text = {locale: (
+            f"Recommended before this campaign: {title[locale]} ({predecessor['publicId']}). You may start now or read the recap."
+            if locale == "en" else
+            f"Se recomienda completar antes {title[locale]} ({predecessor['publicId']}). Puedes comenzar ahora o leer la recapitulación."
+        ) for locale in ("en", "es-ES")}
+        screens.append((f"recommended-{predecessor['campaignId']}-{predecessor['route']}", text,
+                        f"entry before fact-intro; if {predecessor['progressKey']} != 1; nonblocking", "none"))
+    return screens
+
+
+def build_entry(campaign, selection, authored, baseline):
+    if baseline is None:
+        raise ValueError("entry needs canonical campaign context")
+    first = min(campaign["episodeSelection"], key=lambda row: row["order"])
+    if selection["id"] != first["id"] or selection["order"] != first["order"]:
+        raise ValueError("entry must belong to first episode")
+    canonical = next(row for row in baseline if row["id"] == campaign["campaignId"])
+    previous = canonical["recommendedPrevious"]
+    if previous != campaign["continuityContract"]["recommendedPrevious"]:
+        raise ValueError("entry predecessor identities differ from canonical catalogue")
+    for field in ("recap", "chronologyWarning"):
+        if set(authored[field]) != {"en", "es-ES"} or not all(authored[field].values()):
+            raise ValueError("incomplete entry localization")
+    targets = {row["id"]: row for row in baseline}
+    predecessors = []
+    for item in previous:
+        target = targets[item["campaignId"]]
+        route = next(row for row in target["routes"] if row["id"] == item["route"])
+        if route["next"] != campaign["campaignId"]:
+            raise ValueError("predecessor route does not recommend this campaign")
+        predecessors.append({**copy.deepcopy(item), "publicId": target["publicId"],
+                             "title": copy.deepcopy(target["title"]), "progressKey": route["key"]})
+    return {
+        "classification": "design-only; native variable/menu adapter and game QA pending",
+        "predecessors": predecessors,
+        "recap": copy.deepcopy(authored["recap"]),
+        "chronologyWarning": copy.deepcopy(authored["chronologyWarning"]),
+        "enforcePrerequisite": False, "proceedWithoutPredecessor": True,
+        "recapAvailableAlways": True, "writesProgress": False,
+        "onMissingProgress": "show recommendation; allow start or recap",
+        "onCancel": "return to campaign menu; no progress write",
+        "onSaveLoad": "preserve briefing state; never restart the mission or write progress",
+    }
+
+
+def audit_entry(episode, campaign, baseline):
+    label = episode["id"]
+    entry = episode.get("entryContract")
+    if not entry:
+        if campaign and baseline and campaign["continuityContract"]["recommendedPrevious"] and episode["id"] == min(campaign["episodeSelection"], key=lambda row: row["order"])["id"]:
+            return [f"{label}: first episode needs a predecessor entry contract"]
+        return []
+    if campaign is None or baseline is None:
+        return [f"{label}: entry needs canonical campaign context"]
+    try:
+        expected = build_entry(campaign, episode, entry, baseline)
+    except (KeyError, ValueError, StopIteration) as error:
+        return [f"{label}: invalid entry context: {error}"]
+    errors = [] if entry == expected else [f"{label}: unsafe entry predecessor or prerequisite policy"]
+    screens = {screen["id"]: screen for screen in episode["screens"]}
+    for sid, text, condition, narrator in entry_screens(expected):
+        actual = screens.get(sid)
+        if actual is None or any(actual[key] != value for key, value in
+                                 (("text", text), ("condition", condition), ("narrator", narrator))):
+            errors.append(f"{label}: missing or incorrect entry screen {sid}")
+    return errors
+
+
 def build_finale(campaign, selection, authored, baseline):
     if not authored:
         return None
@@ -94,6 +170,7 @@ def audit_finale(episode, campaign, baseline):
         bilingual += [route["choiceLabel"], route["chronologyWarning"]]
     if any(set(text) != {"en", "es-ES"} or not all(text.values()) for text in bilingual):
         errors.append(f"{label}: incomplete finale localization")
+        return errors
     state = episode["stateMachine"]
     transitions = state["phaseTransitions"]
     final_id = episode["objectivePlan"][-1]["id"]
