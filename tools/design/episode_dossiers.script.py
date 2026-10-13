@@ -22,6 +22,7 @@ def module(name):
 factory = module("episode_dossier.factory")
 validator = module("episode_dossier.validator")
 layers_helper = module("geographic_layers.helper")
+catalog = module("odyssey_catalog.helper")
 
 
 def read(path):
@@ -367,6 +368,9 @@ def run(check=False):
             failures = validator.audit_dossier(episode, campaign, baseline)
             if failures:
                 raise ValueError("\n".join(failures))
+            if selection.get("contractStatus") == "approved-complete-dossier":
+                raise ValueError("Draft regeneration cannot overwrite an approved dossier")
+            selection["contractStatus"] = catalog.DRAFT_DOSSIER_STATUS
             episodes.append(episode)
             emit(
                 f"docs/wiki/{campaign['campaignId']}/episodes/{episode['id']}/15-odyssey-dossier.md",

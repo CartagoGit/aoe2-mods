@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 10
+    "authoredDossierCount": 11
   },
   "continuity": {
     "recommendedPrevious": [
@@ -140,7 +140,7 @@ Historical year band: [321, 325]. Fiscalidad, controversias y logística concili
 | 8 / 09-crossing-and-supply-adrianople | The Maritsa Crossing / El paso del Maritsa | 3 July 324 CE, conventional | adrianople | crossing-and-supply |
 | 9 / 10-land-and-strait-logistics-chrysopolis | Across the Bright Shore / Al otro lado de la costa luminosa | 18 September 324 CE, conventional | chrysopolis | land-and-strait-logistics |
 | 10 / 08-disputed-correspondence-alexandria | Words over Alexandria / Palabras sobre Alejandría | 324–325 CE | alexandria | disputed-correspondence |
-| 11 / 11-council-record-escort-antioch | Before the Lakeside Council / Antes del concilio junto al lago | 325 CE | antioch | council-record-escort |
+| 11 / 11-council-record-escort-antioch | Before the Lakeside Council / Antes del concilio junto al lago | c.324–325 CE; exact date and order relative to the imperial letter debated | antioch | council-record-escort |
 | 12 / 02-nicaea | Many Voices beside the Lake / Muchas voces junto al lago | 325 CE | nicaea | delegate-logistics |
 
 The proposed act curve is a calibration hypothesis. It cannot add fictional military opposition to a peaceful event or change a documented outcome.
@@ -289,7 +289,7 @@ Relatos cristianos difieren en visión y cronología.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/01-milvian-bridge/15-odyssey-dossier.md) — independent approval pending
 
@@ -329,7 +329,7 @@ Research candidate (not yet approved narration): Constantino y Licinio negocian 
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/02-bounded-negotiation-milan/15-odyssey-dossier.md) — independent approval pending
 
@@ -357,7 +357,7 @@ No establece aún cristianismo como religión oficial.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/03-property-and-record-restoration-nicomedia/15-odyssey-dossier.md) — independent approval pending
 
@@ -385,7 +385,7 @@ Fuentes adversarias y posteriores; no simplificar causas sociales.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/04-rival-delegation-reception-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
@@ -417,7 +417,7 @@ Actas fragmentarias.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/05-delegate-logistics-arles/15-odyssey-dossier.md) — independent approval pending
 
@@ -449,7 +449,7 @@ The battle is usually dated 316, though some chronologies place it in 314; the c
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/06-finite-field-withdrawal-cibalae/15-odyssey-dossier.md) — independent approval pending
 
@@ -485,7 +485,7 @@ No fue cierre total del trabajo.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/07-court-record-logistics-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
@@ -519,7 +519,7 @@ La fuente panegírica de Eusebio requiere cautela.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/09-crossing-and-supply-adrianople/15-odyssey-dossier.md) — independent approval pending
 
@@ -555,7 +555,7 @@ La fuente panegírica de Eusebio requiere cautela.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/10-land-and-strait-logistics-chrysopolis/15-odyssey-dossier.md) — independent approval pending
 
@@ -591,7 +591,7 @@ Relato de Eusebio presenta el conflicto como problema de unidad.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/08-disputed-correspondence-alexandria/15-odyssey-dossier.md) — independent approval pending
 
@@ -615,13 +615,31 @@ Cronología reconstruida; evidencia transmitida por fuentes posteriores.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/11-council-record-escort-antioch/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: A transmitted synodal letter attributed to Antioch around324–325 reports refusing communion to three bishops and names a future meeting at Ancyra. Its exact date, authorship, textual history and order relative to imperial intervention remain disputed.
+
+ES: Una carta sinodal transmitida y atribuida a Antioquía hacia324–325 refiere negar comunión a tres obispos y nombra una reunión futura en Ancira. Su fecha exacta, autoría, historia textual y orden respecto a la intervención imperial siguen discutidos.
 
 [Consulted source](https://www.newadvent.org/fathers/26011.htm): Socrates HE I.25 checked only for post-Nicaea Antioch context; it does not establish the selected pre-Nicaea suspension claim. Wiley article not consulted.
 
 Limit: Potential confusion with the Antioch synod after Nicaea; specialist article remains unconsulted.
 
 Status: unavailable
+
+[Additional consulted passage](https://www.fourthcentury.com/wp-content/uploads/2024/05/Dok-20-Urkunde-18-1.pdf): Urk18/Dok20, editorial note and §§1–15 including colophon
+
+Limit: Greek is a reconstruction from Syriac, not a preserved original. English translator Aaron West. Header/colophon and Greek heading differ on recipient; no exact venue, attested escort or removal from episcopal office. January325 in editorial header is a reconstruction, not the letter’s date.
+
+[Additional consulted passage](https://kath-akademie-bayern.de/en/mediathek-eintrag/das-schreiben-der-synode-von-antiochia-324-325-urk-18-ueberlieferungsgeschichtliche-einordnung-edition-uebersetzung-und-kommentar/): Matthias Simperl presentation, Scholarly disputes, transmission and324/25 revaluations sections
+
+Limit: Presentation of an academic argument, not full critical monograph consultation; motives and attribution to Eustathius remain the author’s reconstruction.
+
+[Additional consulted passage](https://theologicalstudies.net/wp-content/uploads/2025/09/The-Council-of-Nicaea-325_-Reassessing-the-Role-of-Eusebius-of-Caesarea.pdf): Samuel Fernandez2025, Ossius in Alexandria/Antioch, printed378–379 andnotes66–68
+
+Limit: Selected pages only, not full25-page article. Reconstruction differs from Simperl; no exact meeting date or court/escort footprint. The modern scholarly date/order is not an ancient subscription.
 
 ### 12. Many Voices beside the Lake
 

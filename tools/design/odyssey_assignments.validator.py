@@ -1,6 +1,12 @@
 """Audit designated mechanical work against episode identity and chronological order."""
 
 import re
+import runpy
+from pathlib import Path
+
+authored_dossier_status = runpy.run_path(
+    str(Path(__file__).with_name("odyssey_catalog.helper.py"))
+)["authored_dossier_status"]
 
 
 def audit_assignments(root, campaigns, assignments):
@@ -11,6 +17,12 @@ def audit_assignments(root, campaigns, assignments):
         campaign = by_campaign[cid]
         episodes = campaign["episodeSelection"]
         rows = assignment.get("episodeSlices", [])
+        selected = {episode["id"]: episode for episode in episodes}
+        for row in rows:
+            expected_status = authored_dossier_status(campaign, row["episodeId"])
+            if (row.get("dossierStatus") != expected_status
+                    or selected.get(row["episodeId"], {}).get("contractStatus") != expected_status):
+                errors.append(f"{cid}/{row['episodeId']}: dossier status diverges from authored draft coverage")
         if [(row["episodeId"], row["order"], row["actId"]) for row in rows] != [
             (episode["id"], episode["order"], episode["actId"]) for episode in episodes
         ]:

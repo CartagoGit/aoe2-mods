@@ -26,6 +26,13 @@ def render(check=False):
     if failures:
         raise ValueError("\n".join(failures))
     outputs = {}
+    assignments = catalog.load_json("docs/design/assignments.json")
+    by_campaign = {c["campaignId"]: c for c in campaigns}
+    for assignment in assignments["assignments"]:
+        campaign = by_campaign[assignment["campaignId"]]
+        for row in assignment["episodeSlices"]:
+            row["dossierStatus"] = catalog.authored_dossier_status(campaign, row["episodeId"])
+    outputs["docs/design/assignments.json"] = json.dumps(assignments, ensure_ascii=False, indent=2) + "\n"
     index = [
         "# Historical odyssey selections",
         "",
