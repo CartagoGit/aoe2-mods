@@ -41,7 +41,7 @@ Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tien
 
 ## Consultas del tercer acto y corpus judío
 
-Los [22 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–22; Jerusalén 70 conserva su desenlace histórico fijo y atribuye las fuentes sin fusionarlas. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
+Los [25 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–25; Jerusalén 70 conserva su desenlace histórico fijo y atribuye las fuentes sin fusionarlas. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
 
 - [Finale de Milán 303–313](faith-finale-source-audit.json): distingue reunión/acuerdo en Milán, publicación del rescripto en Nicomedia y una orden genérica de restitución; no prueba una restitución local concreta.
 - [Auditoría judía inicial, episodios 1–6](jewish-first-act-source-audit.json): tradiciones sobre Yavneh, Akiva y reforma fiscal; no un concilio único ni abolición acreditada del fiscus.
@@ -57,3 +57,8 @@ Estas recopilaciones son investigación delegada, pendiente de interpretación d
 - [Geografía romana aún sin perfil](rome-missing-geography-audit.json): Chersonesos táurico, Saint-Denis y Paderborn, con controles institucionales y sin equivaler direcciones actuales a huellas antiguas.
 
 Las consultas añadidas por el arquitecto para los episodios20–22 distinguen Primera de Clemente1/44–48, las dos cartas completas de Plinio10.96–97 y Justino65–67. La preparación de un envío no acredita recepción ni reconciliación; el recibo local de Bitinia no es respuesta imperial; las prácticas descritas por Justino no acreditan todas las comunidades.
+
+- [Fuentes orientales iniciales1–14](new-rome-first-source-audit.json) y [tardías15–32](new-rome-late-source-audit.json): investigación delegada con polémicas, cronologías disputadas y accesos parciales; no modificaciones automáticas de la selección.
+- [Tres nuevas referencias fotográficas](faith-late-images-audit.json): Lyon y Cartago, licencias CC explícitas, hashes comprobados y fotografías conservadas en `images/`. Son estados arqueológicos modernos, con restauraciones y visitantes; no vistas de los siglos II–III ni pruebas de un martirio.
+
+Los órdenes23–25 retienen consultas precisas de EusebioIV26, la carta de Lyon/Vienne enV1 e IreneoIII3. Se preservan la fragmentariedad, la voz de parte y los desenlaces de muerte; los trabajos locales son ficción.
