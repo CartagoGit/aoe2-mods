@@ -1411,3 +1411,150 @@ describe("identity and continuously active protection", () => {
     ).toBe("defeat");
   });
 });
+
+describe("arrival after an observed departure", () => {
+  const arrival = (
+    id: string,
+    entityId: string,
+    departure: string,
+  ): Requirement => ({
+    ...arrivalRequirement(id, entityId, "zone-other"),
+    kind: "entity-state",
+    state: "arrived",
+    entities: [entityId],
+    requiredCount: 1,
+    oncePerEntity: true,
+    arrivalAfterDeparture: { objective: "objective-a", requirement: departure },
+  });
+  const departure = (
+    id: string,
+    entityId: string,
+    receipt: string,
+  ): Requirement => ({
+    id,
+    kind: "ordered-departure",
+    departingEntities: [entityId],
+    departureEnabledOnlyAfterReceipt: true,
+    receiptObjective: "objective-a",
+    receiptRequirement: receipt,
+  });
+  const fixture = () =>
+    referenceFixture(
+      [
+        arrivalRequirement("copies", "cargo-a", "zone-dest"),
+        arrivalRequirement("ungated-exit", "unit-a", "zone-other"),
+        departure("leave", "unit-a", "copies"),
+        arrival("onward", "unit-a", "leave"),
+      ],
+      (candidate) => {
+        const objective = candidate.objectivePlan[0];
+        if (!objective) throw new Error("Missing reference objective");
+        objective.predicate.exportedLedgers = [
+          {
+            id: "after-exit",
+            operator: "intersection",
+            fromRequirements: ["onward"],
+            minimumCount: 1,
+          },
+        ];
+      },
+    );
+  const action = {
+    type: "record-departure",
+    objectiveId: "objective-a",
+    requirementId: "leave",
+    entityId: "unit-a",
+  } as const;
+  const exit = {
+    type: "record-arrival",
+    entityId: "unit-a",
+    zoneId: "zone-other",
+  } as const;
+  const receipt = {
+    type: "record-arrival",
+    entityId: "cargo-a",
+    zoneId: "zone-dest",
+  } as const;
+
+  test("a buffered ungated arrival cannot substitute for arrival after receipt-backed departure", () => {
+    const f = fixture();
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    let state = f.step(f.entered, exit);
+    expect(state.arrivalLedger).toContain("phase-1|unit-a|zone-other");
+    expect(state.requirementFacts["objective-a.onward"]).toBeUndefined();
+    expect(state.exportedLedgers["objective-a.after-exit"]).toEqual([]);
+    expect(f.step(state, action).departedEntities).toEqual([]);
+    state = f.step(state, receipt);
+    state = f.step(state, action);
+    expect(state.requirementFacts["objective-a.leave"]).toEqual(["unit-a"]);
+    expect(state.exportedLedgers["objective-a.after-exit"]).toEqual([]);
+    expect(f.step(state, latch).objectiveLatches).toEqual([]);
+    state = f.step(state, exit);
+    expect(state.requirementFacts["objective-a.onward"]).toEqual(["unit-a"]);
+    expect(state.exportedLedgers["objective-a.after-exit"]).toEqual(["unit-a"]);
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+  });
+
+  test("save/load preserves scoped causal facts and repeated departures or arrivals do not duplicate them", () => {
+    const f = fixture();
+    let state = f.step(f.entered, receipt);
+    state = f.step(state, action);
+    state = f.step(JSON.parse(JSON.stringify(state)), exit);
+    const arrived = state;
+    state = f.step(JSON.parse(JSON.stringify(state)), action);
+    state = f.step(state, exit);
+    expect(state).toEqual(arrived);
+    expect(f.step(state, latch).objectiveLatches).toEqual(["objective-a"]);
+    let early = f.step(f.initial, receipt);
+    expect(f.step(early, action)).toEqual(early);
+    early = f.step(f.entered, { type: "destroy-entity", entityId: "unit-a" });
+    expect(f.step(early, action).departedEntities).toEqual([]);
+  });
+
+  test("another departure of the same entity cannot authorize this arrival", () => {
+    const f = referenceFixture([
+      arrivalRequirement("copies", "cargo-a", "zone-dest"),
+      departure("other-leave", "unit-a", "copies"),
+      departure("leave", "unit-a", "copies"),
+      arrival("onward", "unit-a", "leave"),
+    ]);
+    let state = f.step(f.entered, receipt);
+    state = f.step(state, { ...action, requirementId: "other-leave" });
+    expect(state.departedEntities).toEqual(["unit-a"]);
+    expect(f.step(state, exit)).toEqual(state);
+    state = f.step(state, action);
+    expect(f.step(state, exit).requirementFacts["objective-a.onward"]).toEqual([
+      "unit-a",
+    ]);
+  });
+
+  test("missing or mismatched departure references and indirect arrival/receipt cycles fail validation", () => {
+    const missing = referenceFixture([arrival("onward", "unit-a", "missing")]);
+    expect(
+      validateScenarioCapability(missing.candidate).some(
+        (i) => i.code === "capability.arrival-departure",
+      ),
+    ).toBe(true);
+    const wrongEntity = referenceFixture([
+      arrivalRequirement("copies", "cargo-a", "zone-dest"),
+      departure("leave", "receiver-a", "copies"),
+      arrival("onward", "unit-a", "leave"),
+    ]);
+    expect(
+      validateScenarioCapability(wrongEntity.candidate).some(
+        (i) => i.code === "capability.arrival-departure",
+      ),
+    ).toBe(true);
+    const cyclic = referenceFixture([
+      arrival("copies", "cargo-a", "cargo-leave"),
+      departure("unit-leave", "unit-a", "copies"),
+      arrival("onward", "unit-a", "unit-leave"),
+      departure("cargo-leave", "cargo-a", "onward"),
+    ]);
+    expect(
+      validateScenarioCapability(cyclic.candidate).some(
+        (i) => i.code === "capability.requirement-cycle",
+      ),
+    ).toBe(true);
+  });
+});

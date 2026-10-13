@@ -35,6 +35,44 @@ export function hasArrival(
   );
 }
 
+type ArrivalRequirement = Extract<
+  CapabilityProfileV2["objectivePlan"][number]["predicate"]["requirements"][number],
+  { kind: "entity-state" }
+>;
+
+/** Gated arrivals need their own causal observation, not a reused global arrival. */
+export function hasRequirementArrival(
+  state: CapabilitySnapshot,
+  objectiveId: string,
+  requirement: ArrivalRequirement,
+  entityId: string,
+) {
+  return (
+    hasArrival(state, entityId, requirement.destinations?.[entityId] ?? "") &&
+    (!requirement.arrivalAfterDeparture ||
+      factsFor(state, objectiveId, requirement.id).includes(entityId))
+  );
+}
+
+export function departureObservedForArrival(
+  profile: CapabilityProfileV2,
+  state: CapabilitySnapshot,
+  requirement: ArrivalRequirement,
+  entityId: string,
+) {
+  const ref = requirement.arrivalAfterDeparture;
+  if (!ref) return true;
+  const departure = objectiveRequirements(profile, ref.objective)?.find(
+    (r) => r.id === ref.requirement,
+  );
+  return (
+    departure?.kind === "ordered-departure" &&
+    departure.departingEntities.includes(entityId) &&
+    factsFor(state, ref.objective, ref.requirement).includes(entityId) &&
+    state.departedEntities.includes(entityId)
+  );
+}
+
 export function factsFor(
   state: CapabilitySnapshot,
   objectiveId: string,
@@ -84,7 +122,7 @@ export function computeExportedLedgers(
           return new Set<string>();
         return new Set(
           requirement.entities.filter((id) =>
-            hasArrival(state, id, requirement.destinations?.[id] ?? ""),
+            hasRequirementArrival(state, objective.id, requirement, id),
           ),
         );
       });
