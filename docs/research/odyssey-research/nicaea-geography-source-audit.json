@@ -1,0 +1,332 @@
+{
+  "title": "Nicaea 325 venue and lakeside geography source audit",
+  "createdAt": "2026-10-13",
+  "architectApproval": false,
+  "scope": "Read-only research collection on Iznik/Nicaea’s submerged lakeside remains, the venue of the Council of 325, building phases, shoreline alteration, and reuse rights for source figures. No campaign architecture or absolute dating decision is made.",
+  "coreFinding": {
+    "venue": "Do not resolve the venue as a single settled location. Eusebius, who says he was present, uses both a house-of-prayer description (Life of Constantine 3.7) and a palace central-hall description (3.10; also palace scenes in 3.15). These passages can refer to different moments or rhetorical framings; they do not locate either building archaeologically.",
+    "submergedSite": "The submerged remains are securely described as an extramural basilica/church complex in shallow Lake Iznik, approximately 50 m from the present shore and at about 2–3 m depth in the excavator’s 2022 article. Its relationship to the church described by Eusebius, any senate/palace, and the Council’s sessions remains a hypothesis rather than a located 325 venue.",
+    "institutionalUpdates2025to2026": "Yes, institutional updates exist: the Turkish Ministry of Culture and Tourism’s museum listing records the welcome center completion in May 2025 and museum opening on 28 October 2025; Bursa Uludağ University published a 2026 event announcement and recap reporting excavator Mustafa Şahin’s interpretation of successive church phases. These are institutional updates, but the pages consulted are not a full excavation report with trench-level stratigraphy, plans, datasets, or independent dating review. A government 2026 volunteer posting confirms a planned field season, not its findings.",
+    "imageRights": "The consulted academic PDFs include maps, plans, aerial photographs, and drawings; no explicit blanket reuse license was located. The 2022 excavation article says photographs belong to the excavation archive and that its figure 4 is from Google Maps. The ministry portal image is credited to TGA but displays no explicit open license in the consulted page. Do not copy these images into project assets without a separate license/permission check."
+  },
+  "sources": [
+    {
+      "id": "sahin-conference-proceedings-report",
+      "sourceType": "institutionally hosted workshop/proceedings PDF; secondary research synthesis and older excavation-team correspondence excerpt",
+      "urlCandidate": "https://uludag.edu.tr/dosyalar/arkeoloji/mustafa/iznik_senato_sarayi_calistayi.pdf",
+      "urlActuallyConsulted": "https://uludag.edu.tr/dosyalar/arkeoloji/mustafa/iznik_senato_sarayi_calistayi.pdf",
+      "access": "PDF opened and text searched; 178 pages. Consulted relevant passages only, not all 178 pages or every image.",
+      "authorshipCaution": "The relevant ‘İznik Kazıları Işığında Saray Bölgesi Araştırmaları’ contribution is headed by V. Belgin Demirsar Arlı and Ara Altun (printed pp. 54 onward); the PDF’s hosting path contains Mustafa Şahin’s name but this does not establish that he authored this contribution. It quotes/summarizes a site-team response requested by the Ministry in 2005/2006, including a report dated 28.08.2006. Treat the authorship and date of the embedded report as distinct from the web host and volume date.",
+      "exactLocators": [
+        {
+          "locator": "PDF lines 1328–1356; printed pp. 54–55",
+          "coverageActuallyRead": "Abstract and framing of the palace-location study. Authors report excavations/soundings in the northwest of the walled city and say the Şeyh Bedrettin Street/Bagkur area and church remains made that area, in their assessment, the most reasonable candidate for where the Council was held. This is their interpretation, not an excavated palace identification.",
+          "claimsSupported": [
+            "The proceedings contain a competing inland/northwestern venue interpretation based on excavation and soundings."
+          ],
+          "claimsNotSupported": [
+            "A palace has been conclusively identified at that location.",
+            "The whole Council met there."
+          ]
+        },
+        {
+          "locator": "PDF lines 1393–1407; printed pp. 56–57",
+          "coverageActuallyRead": "Historical context for the ‘Senate Palace’ label: the authors call the south harbor remains/park label an urban tradition or ‘city legend’ and say the site was signposted and redeveloped as a park. The label predates archaeological proof in this account.",
+          "claimsSupported": [
+            "The lakeside south-harbor area was publicly labeled as the Senate Palace/Council site by the time of this report."
+          ],
+          "claimsNotSupported": [
+            "The labeled remains were a Senate Palace."
+          ]
+        },
+        {
+          "locator": "PDF lines 1415–1474; printed pp. 58–59 (web PDF text locators P54–P56)",
+          "coverageActuallyRead": "The report says the Council is described in sources as meeting in a palace hall; calls the term ‘Senate Palace’ disputed, of unknown origin, and rarely attested in sources; notes a separate senate palace is unclear and a palace’s large hall is only a possibility. It describes lakeside Inсiraltı as local tradition, possible harbor works, walls, round tower, recess and steps buried under fill/vegetation/rubble; coastal defenses are said in the report to belong with later fortification works of the 8th century. It states the modern lakeside road/beach route was raised with fill in the 1960s and that land east of it had formerly been a marsh/wet area to the walls. Early 20th-century visitors were shown mounds as the Council venue but supplied limited detail.",
+          "claimsSupported": [
+            "The ‘Senate Palace’ site attribution is disputed in this research report.",
+            "The present shoreline/road/park surface cannot be projected unchanged into 325.",
+            "Potential harbor features and defensive works require date-specific identification."
+          ],
+          "claimsNotSupported": [
+            "A precise 325 shoreline, harbor edge, or palace footprint.",
+            "The possibility of a harbor proves a council venue."
+          ]
+        },
+        {
+          "locator": "PDF lines 1475–1545; printed pp. 59–62",
+          "coverageActuallyRead": "The authors survey alternatives for the palace, including Saraybahçe, remains toward İstanbul Kapısı, the Kemalpaşa/Şeyh Bedrettin church-and-sounding area, and Maltepe. The text says the palace location is a separate research problem; several identifications are described as possibilities. It concludes further archaeological data were needed.",
+          "claimsSupported": [
+            "The site attribution was unresolved within the contribution itself and several city locations were under consideration."
+          ],
+          "claimsNotSupported": [
+            "Any one candidate is established for 325 on the passage read."
+          ]
+        },
+        {
+          "locator": "PDF lines 1691–1750; printed pp. 78–80",
+          "coverageActuallyRead": "Ü. Melda Ermiş’s separate contribution calls the Inсiraltı south-harbor location an incorrect long-standing ‘Senate Palace’ designation. It summarizes Eusebius and Sozomen as describing a palace session, but says scholarship has considered whether only an initial or final sitting was in the palace and states there is no definitive answer as to whether every session met there. It notes a 4th-century palace is textually indicated, while its date/location are uncertain; proposed dates include Severan/early 4th-century possibilities and later repair under Justinian.",
+          "claimsSupported": [
+            "A palace venue is supported by later textual testimony as interpreted by this author, while the number of sessions and the palace’s archaeological location remain open."
+          ],
+          "claimsNotSupported": [
+            "A 325 palace was at Inсiraltı.",
+            "All sessions took place in one building."
+          ]
+        },
+        {
+          "locator": "PDF figure captions at lines 1639–1689; printed pp. 65–77",
+          "coverageActuallyRead": "Captions identify a Texier city plan and Mütesellim Köşkü detail; archaeological plans/sections; a satellite view locating the Inсiraltı harbor area and inland candidates; and photographs of inland church excavations from 1987–1992. These are locators only; figure imagery was not treated as surveyed 325 geography.",
+          "claimsSupported": [
+            "The proceedings contain historical/modern locator material and plans for excavations outside the submerged site."
+          ],
+          "claimsNotSupported": [
+            "The satellite image is an ancient shoreline map or a dated 325 reconstruction."
+          ]
+        }
+      ],
+      "sourceBiasAndUncertainty": "A locally involved excavation team’s proceedings contribution with older field observations and an explicitly argued location preference; another contribution in the same volume disputes the Inсiraltı label and preserves uncertainty. It predates the 2014 discovery/excavation of the submerged basilica and is not an update on that site.",
+      "dateUncertainty": "Includes an embedded 2005/2006 response and older survey/sondage history; do not confuse this with a 2025/2026 excavation season report.",
+      "imageAndMapRights": "No explicit reuse license was identified in the consulted PDF. Figures include historic plan reproductions, excavation plans/sections, photographs and satellite imagery. No project reuse recommended absent specific rights review."
+    },
+    {
+      "id": "sahin-2019-excavation-article-published-2022",
+      "sourceType": "excavator-authored research article; primary publication of 2019 field observations with interpretive claims",
+      "urlCandidate": "https://doi.org/10.30897/ijegeo.790313",
+      "urlActuallyConsulted": "https://uludag.edu.tr/dosyalar/arkeoloji/mustafa/underwater_excavation_at_the_basilica_church_in_iznik_lake.pdf",
+      "bibliography": "Mustafa Şahin, ‘Underwater Excavation at the Basilica Church in İznik Lake – 2019,’ International Journal of Environment and Geoinformatics 9(2) (2022), 71–80; DOI 10.30897/ijegeo.790313. The article metadata says received 2020 and accepted 2021.",
+      "access": "Full 11-page article PDF opened; all pages were available, with relevant text read on printed pp. 71–80 and figures identified by captions.",
+      "exactLocators": [
+        {
+          "locator": "PDF pp. 71–72; figure captions pp. 72–73",
+          "coverageActuallyRead": "Excavator describes remains discovered in 2014 outside ancient walls, c. 50 m from shore and 2–3 m underwater; 2019 work in atrium; plan as east-west, three-aisled basilica with eastern apse. Figure captions include a drone shoreline photograph, technical plan of underwater ruins, and a color-coded phase plan.",
+          "claimsSupported": [
+            "There is a submerged extramural basilica complex at the stated approximate modern shoreline/depth relationship.",
+            "The excavator interprets the principal plan as an east-west three-aisled basilica."
+          ],
+          "claimsNotSupported": [
+            "Those modern distance/depth figures establish a 325 coastline or water level.",
+            "The larger basilica was built by 325."
+          ]
+        },
+        {
+          "locator": "PDF p. 72, Introduction/Materials and Methods",
+          "coverageActuallyRead": "The excavator lists three hypotheses: a church dedicated to St Neophytos; construction over a lost Apollo temple; and the possibility that the Council’s ‘Senate Palace’ was at this structure. The paper says the Council’s meeting place remained unknown and uses a 1590 Sistine Chapel fresco’s lakeside scene as suggestive comparison.",
+          "claimsSupported": [
+            "The palace/Council identification was one of the excavator’s hypotheses in this 2019 report, not a demonstrated function."
+          ],
+          "claimsNotSupported": [
+            "The 1590 fresco is eyewitness evidence for 325 architecture or location.",
+            "The structure is confirmed as a palace, senate hall, or Council venue."
+          ]
+        },
+        {
+          "locator": "PDF pp. 73–75",
+          "coverageActuallyRead": "The excavation article relays a much later pilgrim Willibald (727–729) and 17th-century traveler Covel to hypothesize an open court and holy spring; the 2019 excavations did not find the well’s base after excavating 60 cm below foundation walls and found it stone-filled. This is a late tradition/analogy, not testimony contemporary to 325.",
+          "claimsSupported": [
+            "The 2019 investigation tested a later textual description against an atrium feature and did not confirm a well bottom."
+          ],
+          "claimsNotSupported": [
+            "Willibald or Covel is a contemporary witness to the Council venue."
+          ]
+        },
+        {
+          "locator": "PDF pp. 79–80",
+          "coverageActuallyRead": "The author attributes a deformation layer dated 1010/1182 and discusses the well-documented 1065 earthquake as a potential cause of damage and submergence; he also suggests possible tsunami/lake-level change. He observes lower lake level east of the basilica and seasonal apse exposure. The paper’s conclusion says the structure was abandoned around the 13th century and then sank, based partly on 13th-century finds. These statements are the author’s interpretation and are not a continuous measured ancient lake-level curve.",
+          "claimsSupported": [
+            "The published excavator’s 2019 interpretation considered late damage, variable lake level, and possible submergence."
+          ],
+          "claimsNotSupported": [
+            "One exact earthquake, flood, or date is proven to have submerged the structure.",
+            "Modern low-water exposure defines ancient shoreline."
+          ]
+        }
+      ],
+      "sourceBiasAndUncertainty": "The field director’s article is valuable first-hand reporting for 2019 observations, but it presents the Council/palace attribution as a hypothesis and gives an interpretive, partly tentative account of abandonment/submergence. The paper predates the reported 2026 discovery of remains beneath the basilica.",
+      "imageAndMapRights": "Acknowledgements state that article photographs belong to the excavation archive except figure 4, which is from Google Maps. No open license was identified; do not copy these photos/plans without permission."
+    },
+    {
+      "id": "eusebius-life-of-constantine-3-6-to-10",
+      "sourceType": "primary literary source, contemporary participant and panegyrical biography",
+      "urlCandidate": "https://sophiascriptura.com/fathers/eusebius-vita-constantini/2-68-1/",
+      "urlActuallyConsulted": "https://sophiascriptura.com/fathers/eusebius-vita-constantini/2-68-1/",
+      "editionAndTranslation": "Greek text based on Heikel, GCS 7 (1902); English translation by Sophia Scriptura, explicitly described by the site as translated from Heikel and compared with NPNF². The site flags digital-text corrections; verify against critical edition for fine philological claims.",
+      "access": "Opened complete work page (Eusebius, Life of Constantine 2.68–3.17); read Greek/English passages for 3.6–3.10 and locator notes. This is a digital critical text/translation, not a manuscript image.",
+      "exactLocators": [
+        {
+          "locator": "Life of Constantine 3.6.1–2; web lines 591–612",
+          "coverageActuallyRead": "Eusebius says Constantine convened the synod at Nicaea and arranged public-post or pack-animal transport for bishops. No specific venue is named in this paragraph.",
+          "claimsSupported": [
+            "Nicaea was the selected city; imperial transport support was provided according to Eusebius."
+          ],
+          "claimsNotSupported": [
+            "A particular palace, church, shore, route, or harbor was used."
+          ]
+        },
+        {
+          "locator": "Life of Constantine 3.7.1; web lines 613–632",
+          "coverageActuallyRead": "Eusebius says one ‘house of prayer’ held bishops from many regions, using expansive providential rhetoric.",
+          "claimsSupported": [
+            "Eusebius describes a house of prayer as a venue/accommodation for the gathered bishops."
+          ],
+          "claimsNotSupported": [
+            "The modern submerged basilica is that house of prayer.",
+            "The text supplies a geographic address or building plan."
+          ]
+        },
+        {
+          "locator": "Life of Constantine 3.10.1–3; web lines 692–728",
+          "coverageActuallyRead": "Eusebius describes participants assembled in the central hall of the palace, benches arranged along the sides, and Constantine entering. This differs in venue language from 3.7 and must remain in the audit together with it.",
+          "claimsSupported": [
+            "Eusebius represents at least the scene described in 3.10 as taking place in a palace hall."
+          ],
+          "claimsNotSupported": [
+            "All Council sessions were held in the palace.",
+            "The palace is the lakeside site or any other specific excavated locus."
+          ]
+        },
+        {
+          "locator": "Life of Constantine 3.15.2–3; web lines 923–949",
+          "coverageActuallyRead": "Eusebius presents bishops entering the palace past guards and dining with the emperor in an inner imperial space. This is literary narrative in a laudatory biography and does not identify a surviving structure.",
+          "claimsSupported": [
+            "The work includes further palace scenes involving bishops."
+          ],
+          "claimsNotSupported": [
+            "The scene identifies the council’s complete meeting schedule or a specific palace footprint."
+          ]
+        }
+      ],
+      "sourceBiasAndUncertainty": "Eusebius was present and says ‘I myself was present’ in the surrounding narrative, but the Life of Constantine is a highly rhetorical, pro-Constantinian biography, not neutral minutes. Its paired house-of-prayer and palace descriptions should not be forced into a single architectural conclusion.",
+      "dateUncertainty": "Near-contemporary retrospective account; not a topographic survey or verbatim transcript of each session. The 2026 excavation interpretation does not supersede the textual ambiguity.",
+      "imageAndMapRights": "Text only; no figure reuse issue in this consulted passage."
+    },
+    {
+      "id": "official-excavation-project-publications-index",
+      "sourceType": "excavation project website hosted by Uludağ University; institutional bibliography/archive index",
+      "urlCandidate": "https://iznikbazilika.uludag.edu.tr/makaleler.html",
+      "urlActuallyConsulted": "https://iznikbazilika.uludag.edu.tr/makaleler.html",
+      "access": "Project website opened; publication list read through all 76 text lines. It is an index rather than a technical excavation report.",
+      "exactLocators": [
+        {
+          "locator": "Page lines 18–50, especially 23–27 and 36–50",
+          "coverageActuallyRead": "The project archive lists excavation-related publications through Şahin’s 2021 field article (published in 2023) and 2019–2020 excavation report (2022), alongside the 2019 IJEGEO article. The listing also includes a 2022 paper explicitly titled “Sistine Salonu’nda Yer Alan Fresko Işığında Toplantı Mekanının Yeri.” No 2025/2026 excavation report or publication appears in the consulted index.",
+          "claimsSupported": [
+            "As of the project index consulted, the latest listed technical/field reports were older than the 2025–2026 update window.",
+            "The excavator has separately published arguments based on a 1590 Sistine Chapel fresco; that is an interpretive argument using a much later image."
+          ],
+          "claimsNotSupported": [
+            "No publication exists anywhere in 2025–2026; this index may be incomplete or not updated."
+          ]
+        }
+      ],
+      "sourceBiasAndUncertainty": "Project-maintained index is useful for discovering its own publications, but completeness and update frequency are unclear. The list itself does not establish field evidence.",
+      "dateUncertainty": "Website header shows 2018 despite pages listing items through 2023, a sign the archive may be stale/inconsistently maintained.",
+      "imageAndMapRights": "No explicit license terms were visible on the index page; linked publication figures require their own rights check."
+    },
+    {
+      "id": "bursa-uludag-university-2026-excavation-update",
+      "sourceType": "institutional university event notice and recap reporting the excavation director’s presentation",
+      "urlCandidate": "https://uludag.edu.tr/arkeoloji/arkeoloji-gundemi-4-bulusmasi-gerceklesti-93838",
+      "urlActuallyConsulted": "https://uludag.edu.tr/arkeoloji/arkeoloji-gundeminin-4-bulusmasi-gerceklesti-93838",
+      "relatedEventPage": "https://uludag.edu.tr/arkeoloji/arkeoloji-gundemi-iznik-golu-bazilika-kilise-kazilari-bazilika-kiliseden-kutsal-pederler-kilisesi-93591",
+      "access": "BUÜ page opened directly and read at lines 41–47; event announcement page also opened. The recap was published 25 March 2026 after the 24 March event; no excavation-season monograph, trench report, dataset, or plan was linked from these pages.",
+      "coverageActuallyRead": "The BUÜ recap attributes to Prof. Mustafa Şahin the interpretation that the first phase was constructed after 313, the small church was destroyed in the 368 earthquake, the visible/later phase was built around 380, and the site was submerged in connection with the 1065 earthquake. It presents the later basilica as a possible ‘Church of the Holy Fathers’ built in memory of the 318 bishops. The announcement itself advertises the lecture title ‘From Basilica Church to Church of the Holy Fathers’; it does not supply excavation details.",
+      "claimsSupported": [
+        "By March 2026, the excavation director publicly presented a two-phase church interpretation and associated the later church with the Holy Fathers tradition.",
+        "This is a current institutional update on the project’s interpretation."
+      ],
+      "claimsNotSupported": [
+        "Those absolute dates are independently established by the university event page.",
+        "The lower structure has been independently demonstrated to be the exact 325 Council venue.",
+        "A full 2026 excavation report or peer-reviewed stratigraphic publication was available on the pages consulted."
+      ],
+      "sourceBiasAndUncertainty": "Institutional recap of the lead excavator’s own talk; strong primary evidence for what the project director was reporting in 2026, but not independent review. Absolute phase dates and the attribution to Neophytos/Holy Fathers remain interpretations pending detailed publication and review.",
+      "dateUncertainty": "The page is dated 25 March 2026; it does not document later season findings reported in July 2026 news coverage.",
+      "imageAndMapRights": "Event-page images have no explicit open-license notice observed; no reuse recommended.",
+      "exactLocators": [
+        {
+          "locator": "BUÜ recap lines 44–47; publication date lines 63–67",
+          "coverageActuallyRead": "The department reports that Mustafa Şahin presented evidence connecting the submerged basilica to the First Council. It says the underwater excavation began in 2016 (compare the Ministry site listing’s 2015 start), and reports Şahin’s conclusions that phase one was built after 313, a small church was destroyed in the 368 earthquake, phase two was built around 380, and the site was submerged by the 1065 earthquake. It attributes the basilica’s possible identity as Church of the Holy Fathers to the event speaker; the page gives no plan, trench locus, stratigraphy, finds catalogue, or dating method.",
+          "claimsSupported": [
+            "By March 2026, the excavation director publicly presented a two-phase church interpretation and associated the later church with the Holy Fathers tradition.",
+            "This is a current institutional update on the project’s interpretation."
+          ],
+          "claimsNotSupported": [
+            "Those absolute dates are independently established by the university event page.",
+            "The lower structure is independently demonstrated to be the exact 325 Council venue.",
+            "A full 2026 excavation report or peer-reviewed stratigraphic publication was available on the pages consulted."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turkish-museums-official-site-listing-2025",
+      "sourceType": "Ministry of Culture and Tourism museum/site record",
+      "urlCandidate": "https://turkishmuseums.kprod.kultur.gov.tr/museum/detail/22367-bursa-iznik-gol-bazilikasi/22367/1",
+      "urlActuallyConsulted": "https://turkishmuseums.kprod.kultur.gov.tr/museum/detail/22367-bursa-iznik-gol-bazilikasi/22367/1",
+      "access": "Official museum listing opened and read, including history and opening information. It is a public-facing institutional description, not a technical excavation report.",
+      "exactLocators": [
+        {
+          "locator": "Page lines 25–28",
+          "coverageActuallyRead": "The listing states the remains were noticed during aerial photography in early 2014; underwater surface survey began in 2015 and underwater excavation in November 2015 under the museum directorate/scientific supervision of Mustafa Şahin; welcome center completed May 2025 and museum opened 28 October 2025.",
+          "claimsSupported": [
+            "Discovery and research chronology as institutionally summarized.",
+            "A public visitor center/museum and walkway existed by late 2025."
+          ],
+          "claimsNotSupported": [
+            "Details of 2025 or 2026 stratigraphy, phases, or Council venue."
+          ]
+        }
+      ],
+      "sourceBiasAndUncertainty": "Official visitor-information record; authoritative for the stated public opening and project administration, limited archaeological detail.",
+      "imageAndMapRights": "Images are linked on the page, but no reuse license was identified in the consulted material. Do not copy on attribution alone."
+    },
+    {
+      "id": "government-2026-volunteer-field-season-listing",
+      "sourceType": "government volunteer platform notice for official excavation season",
+      "urlCandidate": "https://gonulluyuzbiz.gov.tr/Activity/Detail/110274",
+      "urlActuallyConsulted": "https://gonulluyuzbiz.gov.tr/Activity/Detail/110274",
+      "access": "Search result content was read; direct page fetch failed. Treat as partially consulted, not a fully verified page.",
+      "coverageActuallyRead": "The indexed government listing identifies İznik Lake Underwater Basilica Excavation, dates a volunteer season from 15 June through 15 September 2026, and identifies photo, measurement, and drawing tasks. It supports that a 2026 season was planned, not archaeological results.",
+      "claimsSupported": [
+        "A 2026 field season was institutionally planned/advertised."
+      ],
+      "claimsNotSupported": [
+        "Specific 2026 discoveries or dating claims."
+      ],
+      "sourceBiasAndUncertainty": "Government recruitment notice, not excavation publication; direct page access was unavailable during this audit.",
+      "imageAndMapRights": "No image asset or reuse license assessed."
+    }
+  ],
+  "2026_updates_search": {
+    "institutionalPrimaryFound": true,
+    "whatWasFound": [
+      "BUÜ Arkeoloji’s March 2026 event listing and recap about the excavation director’s phase interpretation.",
+      "Government volunteer listing for the 2026 excavation season, partially accessible through search indexing.",
+      "Turkish Museums Ministry site record confirming the 2025 site-museum opening."
+    ],
+    "whatWasNotFound": "No full 2025–2026 institutionally hosted excavation report with trench plans, stratigraphic sections, find catalogue, or absolute-dating data was located in the consulted project publication index or BUÜ event pages. The project bibliography page appears stale/inconsistently updated (header says 2018, listed items reach 2023), so this bounded search cannot prove no report exists. The reported smaller sub-basilica discovery is available in 2026 press coverage in this search, not a technical report located here.",
+    "secondary_candidate_not_used_as_primary": [
+      {
+        "urlCandidate": "https://www.livescience.com/archaeology/middle-east/1-700-year-old-church-discovered-under-a-lake-in-turkey-may-be-the-location-of-the-first-council-of-nicaea-but-other-experts-disagree",
+        "urlActuallyConsulted": "Search-result excerpt only; page not used as an institutional excavation record.",
+        "note": "July 2026 press report describes foundations/flooring attributed by Şahin to a smaller church below the basilica and includes external scholars cautioning that the venue identification and dating remain uncertain. It is a lead for locating a future primary report, not proof used in this audit."
+      },
+      {
+        "urlCandidate": "https://www.arkeolojikhaber.com/video-prof-dr-mustafa-sahin-asrin-kesfi-olduguna-bir-tek-turkleri-inandiramadim-1565/",
+        "urlActuallyConsulted": "Search-result excerpt only.",
+        "note": "Media interview with excavator, not a technical publication."
+      }
+    ]
+  },
+  "geographic_and_anachronism_controls": [
+    "Distinguish the lake-shore basilica outside Nicaea’s walls from any hypothetical imperial palace or senate building. Neither Eusebius nor the examined archaeological sources supplies a precise 325 coordinate for either venue.",
+    "The site’s reported modern offset (~50 m from current shore) and shallow depth (~2–3 m) describe current survey conditions. They do not establish 4th-century lake level or shoreline.",
+    "The proceedings report says modern road/beach construction in the 1960s raised grade with fill and describes a former wet/marshy strip; later road, park, fill, visitor center, walkway, modern harbor/shore works, and modern lake edge must not be presented as 325 features.",
+    "The same proceedings describes lakeside defensive extensions as later, associated with 8th-century post-Arab-raids fortification according to the cited research. Do not place those wall extensions into a 325 scene without separate dating evidence.",
+    "The larger submerged basilica’s attribution as the Church of the Holy Fathers and construction around 380 is the excavator’s 2026 interpretation; it postdates 325 if correct. The underlying smaller church is newly reported in 2026 news, but no full technical report was found here to verify dimensions, chronology, or its relation to all council sessions.",
+    "The excavator’s 2022 article suggests abandonment/submergence around the 13th century, while also discussing the 1065 earthquake and possible co-seismic wave or lake-level change. The 2026 BUÜ recap instead links submergence to 1065. Preserve this evolution/tension in interpretation; do not choose a single cause/date by inference.",
+    "The 1590 Sistine Chapel fresco, medieval pilgrim Willibald (727–729), 17th-century Covel, and later travelers are not eyewitness evidence for the 325 building or its exact site. Attribute them by date and source genre."
+  ],
+  "sourceBiasAndDateUncertainty": "The source set combines a contemporary-but-panegyrical participant account, a 2006-era excavation-team location synthesis, an excavator’s 2019 field report published 2022, and institutional 2025–2026 project/public-access updates. The 2026 university recap presents the excavator’s interpretation, while the lower-church discovery details surfaced mainly through later-2026 press coverage in this search. No independent technical assessment of that newly reported substructure was consulted.",
+  "architecturalDecisionStatus": "No venue choice, building footprint, absolute phase date, coastline, or site-scene architecture approved. architectApproval=false."
+}

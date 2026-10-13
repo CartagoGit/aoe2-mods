@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 11
+    "authoredDossierCount": 12
   },
   "continuity": {
     "recommendedPrevious": [
@@ -651,13 +651,27 @@ No creó las iglesias católica y ortodoxa modernas.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/02-nicaea/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The council at Nicaea in 325 issued a creed and disciplinary canons and reported a common Easter agreement. These are distinct matters; neither a biblical canon nor the creation of modern Catholic and Orthodox churches.
+
+ES: El concilio de Nicea de 325 emitió un credo y cánones disciplinarios y comunicó un acuerdo sobre Pascua. Son asuntos distintos; no un canon bíblico ni la creación de las iglesias católica y ortodoxa modernas.
 
 [Consulted source](https://www.newadvent.org/fathers/3801.htm): Nicaea page: canon 20; post-council letter paragraph on Easter (lines 93–95).
 
 Limit: Canon 20 is not an Easter-calendar canon. The surviving letter is a post-council report; it does not supply a detailed computational rule or prove uniform compliance.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/3801.htm): Creed; canons 1–20, especially 4–7 and 20; synodal letter
+
+Limit: Disciplinary canons are normative, not proof of universal practice. Canon 20 concerns standing prayer, not an Easter computation. Creed of 325 is not silently replaced with the later liturgical expansion. Letter reports agreement, not an algorithm or universal compliance.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25023.htm): Eusebius VC III.6–23
+
+Limit: Pro-imperial narrative; logistical details are attributed. III.7 prayer-house and III.10 palace hall do not locate excavated buildings. Reported unanimity is rhetoric, not proof that later controversy ceased; III.23 itself reports renewed Egyptian contention. No exact guest count or cost is derived from this text.
 
 ### 13. Stone above the Old City
 
