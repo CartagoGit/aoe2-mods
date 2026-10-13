@@ -29,3 +29,11 @@ Natural Earth contributors, public-domain modern coastline. [Source](https://www
 ## Corinth archaeological and relief controls
 
 Five local research archives are credited to James A. Herbst, Corinth Excavations, American School of Classical Studies at Athens, under [CC BY-SA4.0](https://creativecommons.org/licenses/by-sa/4.0/). [Source and licensing](https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece) · [Layer audit](corinth-gis-audit.json). The selected shapefile components were extracted from the broader CorinthGIS archive and repackaged without modifying their contents; the contour archive is retained as downloaded. No derived geometry is yet used as certified first-century terrain. Roman line/polygon layers mix phases, city walls include archaic/classical/late-Roman records, and the modern contour raster lacks declared CRS. These archives cannot be used wholesale as a snapshot of50CE. Share-alike/attribution obligations follow any eventual adaptation; research inclusion does not approve mod distribution.
+
+## Lyon and Carthage references added13October2026
+
+- `lyon-fourviere-theatre.jpg`: Jean-Christophe BENOIST, [source](https://commons.wikimedia.org/wiki/File:Lyon_-_Lugdunum_-_Th%C3%A9atre_Romain.jpg), [CC BY4.0](https://creativecommons.org/licenses/by/4.0/).
+- `carthage-antonine-baths.jpg`: Виктор Пинчук / Viktor Pinchuk, [source](https://commons.wikimedia.org/wiki/File:Carthage,_Baths_of_Antoninus.jpg), [CC BY4.0](https://creativecommons.org/licenses/by/4.0/).
+- `carthage-amphitheatre.jpg`: Noomen9, [source](https://commons.wikimedia.org/wiki/File:Amphith%C3%A9%C3%A2tre_romain_de_Carthage_24.jpg), [CC BY-SA4.0](https://creativecommons.org/licenses/by-sa/4.0/); preserve share-alike for adaptations.
+
+Commons-served1280pixel thumbnails retained without local changes, with bytes/SHA256 in the manifest. Root reopened license clauses and inspected all photographs: current visitor facilities, restored fabric and modern trees appear. These are archaeological reference photographs only; never ancient intact views, Christian meeting addresses or proof of Perpetua/Felicity’s arena. The temporary museum PDF/second-century reconstruction was consulted outside the repository; no open reuse license established and its drawing is not shipped.

@@ -57,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 22
+    "authoredDossierCount": 25
   },
   "continuity": {
     "recommendedPrevious": [],
@@ -867,6 +867,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/23-petition-escort-sardes/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Eusebius preserves fragments of a work attributed to Melito and addressed to an emperor, arguing that Christian teaching had benefited the empire.
 
 ES: Eusebio conserva fragmentos de una obra atribuida a Melitón y dirigida a un emperador, donde sostiene que la enseñanza cristiana benefició al imperio.
@@ -876,6 +878,10 @@ ES: Eusebio conserva fragmentos de una obra atribuida a Melitón y dirigida a un
 Limit: The fragment does not simply 'denounce measures' in the form asserted by the candidate; it asks the emperor to examine recent anti-Christian measures and appeals to imperial justice. The surviving text is fragmentary, mediated by Eusebius, and date/address details are debated.
 
 Status: disputed
+
+[Additional consulted passage](https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_I/Church_History_of_Eusebius/Book_IV/Chapter_26): HEIV26.5–11; architect read appeal, alleged plundering, request to examine measures and rhetoric of imperial favor
+
+Limit: Old public-domain translation mediated by Eusebius; fragmentary advocacy, no proved answer, repeal or exact local address. New Advent bookIV repeatedly timed out; not claimed as consulted full text.
 
 ### 24. The River Kept Their Names
 
@@ -889,6 +895,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/24-witness-and-evacuation-lyon/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Eusebius preserves a letter reporting trials and violence against Christians at Lyon and Vienne.
 
 ES: Eusebio conserva una carta que informa de procesos y violencia contra cristianos en Lyon y Vienne.
@@ -900,6 +908,10 @@ ES: Eusebio conserva una carta que informa de procesos y violencia contra cristi
 Limit: Eusebius is later than the events and transmits a community letter; date 177 is inferred. The letter has theological rhetoric, visions and miracles that must remain source-attributed, not asserted as verified events.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/250105.htm): HEV1.1–63; architect read communal letter, arrests, interrogations, deaths of Pothinus/Blandina/Ponticus and destruction of remains
+
+Limit: Letter transmitted by later historian. Religious explanations, healing and private motives remain attributed, not neutral causation. Household convoy and local work notes are declared fiction; no historical martyr rescue or recovered ashes.
 
 ### 25. Voices Against the Fragments
 
@@ -913,6 +925,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/25-archive-comparison-lyon/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Irenaeus' polemic argues from inherited teaching and episcopal succession, using Rome as an example.
 
 ES: La polémica de Ireneo argumenta desde la enseñanza heredada y la sucesión episcopal, y usa Roma como ejemplo.
@@ -922,6 +936,10 @@ ES: La polémica de Ireneo argumenta desde la enseñanza heredada y la sucesión
 Limit: This is a theological polemic, not a neutral account of all communities or uncontested institutional history. It supports debate over authority/tradition, not a specific Lyon archival event; composition c.180–200 is external dating.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/0103303.htm): Against HeresiesIII3.1–4; architect read succession argument, Roman example and attributed memories of Polycarp
+
+Limit: Polemical advocacy, not neutral ethnography or independent consensus; exact Lyon archival exercise and opponent quotations are not documented. Local two-register comparison is fictional and awards no doctrinal truth.
 
 ### 26. The Advocate's Harbour
 
