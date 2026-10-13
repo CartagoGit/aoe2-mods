@@ -366,6 +366,20 @@ export function validateScenarioCapability(
         case "forbidden-entry":
         case "hold-area":
           zoneRefs.push(...req.zones);
+          if (req.kind === "area-state" && req.mustRemainUntilObjective) {
+            const target = req.mustRemainUntilObjective;
+            if (
+              req.state !== "controlled-and-passable" ||
+              !objectives.has(target) ||
+              target === objective.id ||
+              !isSameOrRequiredPredecessor(profile, objective.id, target)
+            )
+              add(
+                "capability.control-interval",
+                reqContext,
+                "El control continuo requiere un objetivo posterior que dependa del objetivo de control",
+              );
+          }
           if (
             req.kind === "civilian-protection" &&
             (!phaseIds.has(req.activeFrom) ||
