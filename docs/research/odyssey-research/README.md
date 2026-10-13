@@ -62,3 +62,9 @@ Las consultas añadidas por el arquitecto para los episodios20–22 distinguen P
 - [Tres nuevas referencias fotográficas](faith-late-images-audit.json): Lyon y Cartago, licencias CC explícitas, hashes comprobados y fotografías conservadas en `images/`. Son estados arqueológicos modernos, con restauraciones y visitantes; no vistas de los siglos II–III ni pruebas de un martirio.
 
 Los órdenes23–25 retienen consultas precisas de EusebioIV26, la carta de Lyon/Vienne enV1 e IreneoIII3. Se preservan la fragmentariedad, la voz de parte y los desenlaces de muerte; los trabajos locales son ficción.
+
+## Recopilación romana y transporte de324
+
+Las auditorías de [Roma1–10](church-of-rome-first-ten-source-audit.json), [11–20](church-of-rome-middle-source-audit.json) y [21–32](church-of-rome-final-source-audit.json), y de [Nueva Roma1–10](new-rome-first-ten-source-audit.json), [11–20](new-rome-middle-source-audit.json) y [21–32](new-rome-final-source-audit.json), conservan candidateUrl/consulta real, fechas discutidas y architectApproval:false. No son instrucciones aprobadas. La [auditoría de Antioquía previa a Nicea](antioch-pre-nicaea-source-audit.json) distingue traducción/retroversión, destinatario discutido, exclusión de comunión y variantes cronológicas; la lectura y decisión del arquitecto siguen pendientes.
+
+Los nuevos controles locales son hidrografía moderna Natural Earth10m y offprint íntegro de Belke2021 con CC BY-SA4.0, créditos y SHA-256. Hay24 recursos adicionales realmente presentes. El [contrato de viajes](manifest-water-journeys.md) describe arquitectura futura; no acredita embarque nativo ni terreno histórico. Los tres candidatos fotográficos de324 que fallaron por HTTP429 siguen fuera del manifiesto de descargas.

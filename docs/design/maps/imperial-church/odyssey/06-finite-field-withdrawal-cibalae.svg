@@ -7,9 +7,9 @@
 <polyline data-control="schematic-water" points="246.51,612.17 397.41,579.16" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Bosut regional control; not measured ancient banks, marshes or battle footprint</title></polyline>
 <polyline data-control="schematic-water" points="397.41,579.16 542.50,587.41" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Bosut regional control; not measured ancient banks, marshes or battle footprint</title></polyline>
 <polyline data-control="schematic-water" points="542.50,587.41 670.17,628.67" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Bosut regional control; not measured ancient banks, marshes or battle footprint</title></polyline>
-<polyline data-corridor="eastern-field-road" points="368.40,496.63 362.59,405.88 513.49,405.88 385.80,249.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-field-road: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="western-lowland-detour" points="368.40,496.63 362.59,405.88 188.49,315.11 385.80,249.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-lowland-detour: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="northern-relief" points="188.49,315.11 385.80,249.10" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>northern-relief: proposed district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="eastern-field-road" points="368.40,496.63 362.59,405.88 513.49,405.88 385.80,249.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-field-road: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="western-lowland-detour" points="368.40,496.63 362.59,405.88 188.49,315.11 385.80,249.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-lowland-detour: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northern-relief" points="188.49,315.11 385.80,249.10" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>northern-relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="368.40" cy="496.63" r="20" fill="none" stroke="#91512f"/>
 <text x="391.40" y="496.63" font-family="sans-serif">1</text>
 <text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional auxiliary starting pocket</text>
@@ -25,12 +25,13 @@
 <circle cx="385.80" cy="249.10" r="20" fill="none" stroke="#91512f"/>
 <text x="408.80" y="249.10" font-family="sans-serif">5</text>
 <text x="730" y="390" font-family="sans-serif" font-size="12">5: Northern local assembly</text>
-<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
-<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
-<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="516" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
-<text x="730" y="540" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
-<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="730" y="425" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="449" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="473" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="497" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="521" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="545" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="569" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="593" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [18.747, 45.277, 18.847, 45.332]; cosine-corrected longitude; approximate districts</text>
 </svg>

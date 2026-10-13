@@ -2,6 +2,7 @@
 
 import argparse
 import html
+import textwrap
 import importlib.util
 import json
 from pathlib import Path
@@ -206,9 +207,10 @@ def wiki(campaign, episode):
                     "stateMachine",
                     "failureRecovery",
                     "requiredCapabilities",
+                    "transportPlan",
                     "artDirection",
                     "qa",
-                )
+                ) if k in episode
             },
             ensure_ascii=False,
             indent=2,
@@ -255,6 +257,9 @@ def diagram(episode, geographic_layers):
                 ]
             }
         )
+        modern = schematic.get("renderAs") == "modern-river-line"
+        water_kind = "modern-river-control" if modern else "schematic-water"
+        dash = "" if modern else 'stroke-dasharray="4 5"'
         for segment in layers_helper.clipped_tile_segments(
             index, episode["mapPlan"]["bbox"], size
         ):
@@ -262,7 +267,7 @@ def diagram(episode, geographic_layers):
                 f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment
             )
             lines.append(
-                f'<polyline data-control="schematic-water" points="{coords}" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>{html.escape(schematic["certainty"])}</title></polyline>'
+                f'<polyline data-control="{water_kind}" points="{coords}" fill="none" stroke="#478bba" stroke-width="2" {dash}><title>{html.escape(schematic["certainty"])}</title></polyline>'
             )
     hubs = {hub["id"]: hub for hub in episode["mapPlan"]["hubs"]}
     for corridor in episode["mapPlan"]["corridors"]:
@@ -270,21 +275,25 @@ def diagram(episode, geographic_layers):
             f"{x:.2f},{y:.2f}"
             for x, y in (point(hubs[hid]) for hid in corridor["hubOrder"])
         )
-        colour = "#91512f" if corridor["widthTiles"] >= 10 else "#757547"
+        colour = "#368da3" if corridor["mode"] == "water" else "#91512f" if corridor["widthTiles"] >= 10 else "#757547"
         lines.append(
-            f'<polyline data-corridor="{html.escape(corridor["id"])}" points="{coords}" fill="none" stroke="{colour}" stroke-width="3" stroke-dasharray="8 6"><title>{html.escape(corridor["id"])}: proposed district connection, intermediate path pending</title></polyline>'
+            f'<polyline data-corridor="{html.escape(corridor["id"])}" points="{coords}" fill="none" stroke="{colour}" stroke-width="3" stroke-dasharray="8 6"><title>{html.escape(corridor["id"])}: proposed {html.escape(corridor["mode"])} district connection, intermediate path pending</title></polyline>'
         )
     for i, h in enumerate(episode["mapPlan"]["hubs"], 1):
         x, y = point(h)
         lines += [
             f'<circle cx="{x:.2f}" cy="{y:.2f}" r="20" fill="none" stroke="#91512f"/>',
             f'<text x="{x + 23:.2f}" y="{y:.2f}" font-family="sans-serif">{i}</text>',
-            f'<text x="730" y="{140 + i * 50}" font-family="sans-serif" font-size="12">{i}: {html.escape(h["name"]["en"])}</text>',
+
         ]
+        for row, label in enumerate(textwrap.wrap(f"{i}: {h['name']['en']}", width=42)):
+            lines.append(f'<text x="730" y="{140 + i * 50 + row * 14}" font-family="sans-serif" font-size="12">{html.escape(label)}</text>')
+    legend_y = max(420, 175 + len(episode["mapPlan"]["hubs"]) * 50)
     for i, text in enumerate(
         [
             "Geographic district controls only",
-            "Dashed connector: proposed route",
+            "Brown dashed: proposed land route",
+            "Cyan dashed: proposed boat passage",
             "Not a surveyed path or terrain raster",
             "Blue: modern geographic water controls",
             "Dashed blue: schematic regional water",
@@ -292,10 +301,10 @@ def diagram(episode, geographic_layers):
         ]
     ):
         lines.append(
-            f'<text x="730" y="{420 + i * 24}" font-family="sans-serif" font-size="12">{text}</text>'
+            f'<text x="730" y="{legend_y + i * 24}" font-family="sans-serif" font-size="12">{text}</text>'
         )
     lines.append(
-        '<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
+        f'<text x="730" y="{legend_y + 7 * 24}" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
     )
     lines += [
         f'<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox {episode["mapPlan"]["bbox"]}; cosine-corrected longitude; approximate districts</text>',

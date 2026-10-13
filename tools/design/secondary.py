@@ -66,6 +66,9 @@ def build_optional_objectives(scenario, authored):
         ns = f'{scenario["id"]}.{oid}'
         origin = 'hub-2' if kind == 'repair' else 'hub-1' if kind in ('aid', 'guide', 'trade') else 'hub-3'
         destination = 'hub-1' if kind in ('extract', 'copy') else ('hub-3' if kind == 'guide' else 'hub-2')
+        placement = item.get('placement', {})
+        origin = placement.get('originHub', origin)
+        destination = placement.get('receivingHub', destination)
         entity_count = 2 if kind in ('aid', 'copy', 'extract') else 1
         entities = [] if kind in ('scout', 'watch') else [
             {'id': f'{ns}.entity-{i}', 'role': kind, 'initialHub': origin,
@@ -74,11 +77,16 @@ def build_optional_objectives(scenario, authored):
             for i in range(1, entity_count + 1)
         ]
         if kind == 'repair':
-            entities[0].update(initialHub='hub-2', initialHealthFraction=0.5, damageSource='fictional prior damage')
+            entities[0].update(initialHub=origin, initialHealthFraction=0.5, damageSource='fictional prior damage')
         zones = [
             {'id': f'{ns}.zone-{i}', 'hub': ('hub-2' if i == 1 else 'hub-3') if kind == 'watch' else ('hub-1' if i == 1 else 'hub-3') if kind == 'scout' else destination, 'offsetTiles': [0, -8 if i == 1 else 8] if kind == 'watch' else [-8 if i == 1 and kind in ('aid', 'scout') else 8, 0], 'radiusTiles': 3}
             for i in range(1, 3 if kind in ('aid', 'scout', 'watch') else 2)
         ]
+        if placement.get('observationHubs'):
+            if kind not in ('scout', 'watch') or len(placement['observationHubs']) != len(zones):
+                raise ValueError('Observation placement needs one hub per scout/watch zone')
+            for zone, hub in zip(zones, placement['observationHubs']):
+                zone['hub'] = hub
         requirements = []
         if kind in ('scout', 'watch'):
             requirements.append({'kind': 'visit-zones', 'zones': [z['id'] for z in zones],

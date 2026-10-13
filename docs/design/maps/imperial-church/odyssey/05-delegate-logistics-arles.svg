@@ -7,10 +7,10 @@
 <polyline data-control="schematic-water" points="286.31,327.10 263.83,430.72" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic modern Rhône regional control; not dated314 banks or bridge footprint</title></polyline>
 <polyline data-control="schematic-water" points="263.83,430.72 211.37,534.36" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic modern Rhône regional control; not dated314 banks or bridge footprint</title></polyline>
 <polyline data-control="schematic-water" points="211.37,534.36 181.38,700.17" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic modern Rhône regional control; not dated314 banks or bridge footprint</title></polyline>
-<polyline data-corridor="north-hospitality" points="406.23,430.72 406.23,285.64" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-hospitality: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="east-hospitality" points="406.23,430.72 526.14,430.72 518.65,565.45" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-hospitality: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="south-hospitality" points="406.23,430.72 383.75,606.91 518.65,565.45" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-hospitality: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="outer-reception-link" points="406.23,285.64 526.14,430.72 383.75,606.91" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>outer-reception-link: proposed district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-hospitality" points="406.23,430.72 406.23,285.64" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-hospitality: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-hospitality" points="406.23,430.72 526.14,430.72 518.65,565.45" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-hospitality: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="south-hospitality" points="406.23,430.72 383.75,606.91 518.65,565.45" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-hospitality: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="outer-reception-link" points="406.23,285.64 526.14,430.72 383.75,606.91" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>outer-reception-link: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="406.23" cy="285.64" r="20" fill="none" stroke="#91512f"/>
 <text x="429.23" y="285.64" font-family="sans-serif">1</text>
 <text x="730" y="190" font-family="sans-serif" font-size="12">1: Northern fictional reception post</text>
@@ -26,12 +26,13 @@
 <circle cx="518.65" cy="565.45" r="20" fill="none" stroke="#91512f"/>
 <text x="541.65" y="565.45" font-family="sans-serif">5</text>
 <text x="730" y="390" font-family="sans-serif" font-size="12">5: Eastern fictional local archive</text>
-<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
-<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
-<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="516" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
-<text x="730" y="540" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
-<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="730" y="425" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="449" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="473" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="497" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="521" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="545" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="569" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="593" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [4.605, 43.654, 4.67, 43.71]; cosine-corrected longitude; approximate districts</text>
 </svg>

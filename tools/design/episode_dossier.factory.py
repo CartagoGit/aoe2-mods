@@ -13,6 +13,7 @@ from geography import tile_point
 from secondary import RESOURCES, REWARDS, COSTS, bilingual, build_optional_objectives
 
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
+transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
 build_finale = continuity["build_finale"]
 build_entry = continuity["build_entry"]
 entry_screens = continuity["entry_screens"]
@@ -75,6 +76,8 @@ def world_and_objectives(cid, selection, authored, hubs):
             group = req.pop("group", None)
             if group:
                 req["entities"] = groups[group]
+            if req["kind"] == "transport-journey":
+                transport["materialize_requirement"](req, groups, destinations)
             if "departingGroup" in req:
                 req["departingEntities"] = groups[req.pop("departingGroup")]
             destination = req.pop("destinationHub", None)
@@ -549,6 +552,13 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
             ],
         },
     }
+    if "transportPlan" in authored:
+        draft["transportPlan"] = copy.deepcopy(authored["transportPlan"])
+        draft["transportPlan"]["capacityByCarrier"] = {
+            entity: row["capacity"]
+            for row in draft["transportPlan"].pop("carrierGroups")
+            for entity in world["objectGroups"][row["group"]]
+        }
     recipes = []
     for task in authored["optionalTasks"]:
         if task["kind"] in ("scout", "watch", "guide") and "information" not in task:
@@ -562,6 +572,7 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
                 "subject": task["subject"],
                 "rationale": task["rationale"],
                 "corridorIds": task["corridorIds"],
+                **({"placement": copy.deepcopy(task["placement"])} if "placement" in task else {}),
                 **(
                     {"information": copy.deepcopy(task["information"])}
                     if "information" in task

@@ -463,6 +463,126 @@
         "natural-earth"
       ],
       "approval": "research candidate; exact ancient-bank, canal, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "adrianople",
+      "name": "Adrianople/Hadrianopolis lower Hebrus regional banks",
+      "bbox": [
+        26.48,
+        41.59,
+        26.66,
+        41.72
+      ],
+      "coordinateStatus": "modern regional frame; fictional convoy districts, no exact324 ford or battlefield",
+      "representativePoint": [
+        26.5556,
+        41.6769
+      ],
+      "representativePointUsage": "modernEdirne place locator, not ancient battle or crossing coordinate",
+      "sources": [
+        {
+          "url": "https://dergipark.org.tr/en/download/article-file/6126842",
+          "locator": "opening regional rivers/roads discussion only; full paper/site-plan phases not approved",
+          "consulted": "2026-10-13 architect partial"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            26.459972,
+            41.679023
+          ],
+          [
+            26.475678,
+            41.675971
+          ],
+          [
+            26.491954,
+            41.681016
+          ],
+          [
+            26.491466,
+            41.674018
+          ],
+          [
+            26.493663,
+            41.670844
+          ],
+          [
+            26.497081,
+            41.669379
+          ],
+          [
+            26.499441,
+            41.667344
+          ],
+          [
+            26.534272,
+            41.666571
+          ],
+          [
+            26.560802,
+            41.654812
+          ],
+          [
+            26.580496,
+            41.635688
+          ],
+          [
+            26.5949,
+            41.612738
+          ],
+          [
+            26.594737,
+            41.605251
+          ],
+          [
+            26.595795,
+            41.597846
+          ],
+          [
+            26.598155,
+            41.591091
+          ]
+        ],
+        "certainty": "modern generalizedEvros/Maritsa line selected without editing vertices from downloadedNaturalEarth10m snapshot; no324 channel or ford inferred",
+        "renderAs": "modern-river-line"
+      },
+      "terrain": "lowland riverbank logistics with downstream crossing district; no giant mountain or378 battlefield conflation",
+      "water": "modernHebrus control; Tunca/Arda minor reaches absent from this generalized layer and require independent dated confluence data",
+      "hills": "DEM, historic floods and native slopes unverified",
+      "roads": "fictional bank circuits and local ferries, notConstantine actual tactics",
+      "anachronisms": "noSelimiye mosque,Ottoman bridge,railway or modernchannel works",
+      "approval": "research candidate; datedbanks, exactreceivers, ferry navigation, DEM and battlefield check pending"
+    },
+    {
+      "id": "chrysopolis",
+      "name": "Bosphorus two-shore local supply nearChrysopolis",
+      "bbox": [
+        28.96,
+        40.98,
+        29.07,
+        41.075
+      ],
+      "coordinateStatus": "modern regional frame; fictional banks/receivers, not military landing",
+      "representativePoint": [
+        29.015,
+        41.026
+      ],
+      "representativePointUsage": "modernUskudar regional locator, not324 quay",
+      "sources": [
+        {
+          "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf",
+          "locator": "Belke2021 geographic preliminaries andChrysopolis sections, figure1; partialchapter consultation",
+          "consulted": "2026-10-13 architect partial"
+        }
+      ],
+      "terrain": "European bank northofGoldenHorn, openBosphorus and Asian landing/inland districts; no land passage across strait",
+      "water": "modern coast differs from former silted bay; original324 shore and landing sectors pending; allboatpathsfictional",
+      "hills": "bank/hillside relief and exact gradients needDEM",
+      "roads": "localEuropean support andAsian receiving circuits; no full imperial crossing orChalcedonbattlefield reconstruction",
+      "anachronisms": "noBosphorusbridge,Marmaray,Ottomanmosque,laterSkutarionpalace orJustinianicharbor",
+      "approval": "research candidate; ancientcoast,harborphase,DEM and realwater/land navigation pending"
     }
   ]
 }
