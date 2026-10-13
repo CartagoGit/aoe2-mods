@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 12
+    "authoredDossierCount": 13
   },
   "continuity": {
     "recommendedPrevious": [
@@ -683,13 +683,35 @@ La obra se inició en algún momento del periodo; no fechar automáticamente por
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/13-finite-works-logistics-jerusalem/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Eusebius reports Constantine’s patronage, work orders and requests for labor and materials at Jerusalem. The precise commencement year is not stated; the 326–330 preparation window is editorial. Site identification remains attributed and later building phases stay separate.
+
+ES: Eusebio refiere patrocinio de Constantino, órdenes de obra y peticiones de trabajadores y materiales en Jerusalén. No indica el año exacto de inicio; el marco de preparación 326–330 es editorial. La identificación del lugar permanece atribuida y las fases de obras posteriores se mantienen separadas.
 
 [Consulted source](https://www.newadvent.org/fathers/25023.htm): Eusebius VC III.25–40 checked for imperial church-building at Jerusalem.
 
 Limit: Eusebius is a Christian panegyrist; source establishes patronage and his identification, not independent proof of the biblical site or the exact dating of each work.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25023.htm): VC III.25–40, especially letter III.30–32
+
+Limit: Panegyric attributes patronage and requests for workers/materials. Exact commencement year, construction log and quantities absent. Site identification and cult motives remain attributed; no Helena or Cross discovery in this span.
+
+[Additional consulted passage](https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26542): Stasolla preliminary report published 1 September 2024, 2022 excavation; pre-Christian and early-Christian phases
+
+Limit: Small sampled areas, preliminary interpretation; fourth-century remains include later decades and cannot be flattened into a 326–330 complex. No independent verification of sacred identification.
+
+[Additional consulted passage](https://www.custodia.org/wp-content/uploads/2024/11/Comunicato.pdf): Sapienza preliminary November2024 report, Italian pp.1–3 and English pp.4–6
+
+Limit: Preliminary phases include end-fourth-century Rotunda work. Cult structure interpretation differs from an earlier reconstruction; its footprint/identity and exact phase require separate review. Figures/translation not copied into production.
+
+[Additional consulted passage](https://www.custodia.org/en/news/excavations-at-the-holy-sepulcher-the-first-volume-of-the-hagia-polis-project-at-sapienza-university/): 19 September2026 volume presentation announcement
+
+Limit: Publication existence and project status only; no detailed plans or new dating inferred from unread book. Explicit image/text reuse restrictions remain respected.
 
 ### 14. A City beneath a New Sky
 
