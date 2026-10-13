@@ -26,13 +26,17 @@ def world_and_objectives(cid, selection, authored, hubs):
     for group in authored["objectGroups"]:
         ids = [f"{namespace}.{group['key']}-{i}" for i in range(1, group["count"] + 1)]
         groups[group["key"]] = ids
+        origin_offset = group.get("offsetBaseTiles", [-10, 8])
         for number, entity_id in enumerate(ids):
             entities.append(
                 {
                     "id": entity_id,
                     "role": group["role"],
                     "initialHub": group["originHub"],
-                    "offsetTiles": [-10 + 2 * (number % 4), 8 + 2 * (number // 4)],
+                    "offsetTiles": [
+                        origin_offset[0] + 2 * (number % 4),
+                        origin_offset[1] + 2 * (number // 4),
+                    ],
                     "identity": "explicitly fictional gameplay identity",
                     "finite": True,
                     "replacement": "none; no free resurrection",
@@ -78,6 +82,8 @@ def world_and_objectives(cid, selection, authored, hubs):
                     entity_id: destinations[hub]
                     for entity_id, hub in zip(req["entities"], assigned_hubs)
                 }
+            if req["kind"] == "area-state":
+                req["zones"] = [destinations[hub] for hub in req.pop("zoneHubs")]
             if "inputGroups" in req:
                 inputs = req.pop("inputGroups")
                 field = (
@@ -213,9 +219,21 @@ def map_plan(cid, selection, authored, profile):
         "hubs": hubs,
         "corridors": authored["corridors"],
         "terrainInstructions": authored["terrainInstructions"],
-        "mainRouteLengthStraightTiles": round(
-            sum(math.dist(a["centre"], b["centre"]) for a, b in zip(hubs, hubs[1:])), 2
-        ),
+        "corridorStraightLengthsTiles": {
+            corridor["id"]: round(
+                sum(
+                    math.dist(
+                        next(h["centre"] for h in hubs if h["id"] == start),
+                        next(h["centre"] for h in hubs if h["id"] == end),
+                    )
+                    for start, end in zip(
+                        corridor["hubOrder"], corridor["hubOrder"][1:]
+                    )
+                ),
+                2,
+            )
+            for corridor in authored["corridors"]
+        },
         "interestSpacingTiles": [25, 55],
         "minimumUsableAreaFraction": 0.45,
         "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
@@ -495,12 +513,22 @@ def build_dossier(campaign, selection, authored, profile, next_selection):
     }
     recipes = []
     for task in authored["optionalTasks"]:
+        if task["kind"] in ("scout", "watch", "guide") and "information" not in task:
+            raise ValueError(
+                "Expanded information task requires its authored real target and bilingual benefit"
+            )
         recipes.append(
             {
                 "kind": task["kind"],
                 "title": task["title"],
                 "subject": task["subject"],
                 "rationale": task["rationale"],
+                "corridorIds": task["corridorIds"],
+                **(
+                    {"information": copy.deepcopy(task["information"])}
+                    if "information" in task
+                    else {}
+                ),
             }
         )
     draft["secondaryObjectives"] = build_optional_objectives(draft, recipes)
@@ -516,6 +544,14 @@ def build_dossier(campaign, selection, authored, profile, next_selection):
     draft["difficulty"] = difficulty_profiles(authored, rewards, costs)
     draft["playstyles"] = copy.deepcopy(authored["playstyles"])
     draft["gameplayIdentity"] = copy.deepcopy(authored.get("gameplayIdentity", {}))
+    if "oppositionPlan" in authored:
+        draft["oppositionPlan"] = copy.deepcopy(authored["oppositionPlan"])
+        for roster in draft["oppositionPlan"]["byDifficulty"].values():
+            roster["initialEntityIds"] = [
+                entity
+                for key, count in roster.pop("initialGroups").items()
+                for entity in world["objectGroups"][key][:count]
+            ]
     draft["stateMachine"] = {
         "states": ["briefing"]
         + [o["phase"] for o in objectives]

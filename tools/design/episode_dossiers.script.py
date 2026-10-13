@@ -97,6 +97,15 @@ def wiki(campaign, episode):
             pair(o["personaReaction"]),
             "",
         ]
+    if "oppositionPlan" in episode:
+        base += [
+            "## Finite opposition and guaranteed no-combat alternative",
+            "",
+            "```json",
+            json.dumps(episode["oppositionPlan"], ensure_ascii=False, indent=2),
+            "```",
+            "",
+        ]
     base += [
         "## Geographic districts and routes",
         "",

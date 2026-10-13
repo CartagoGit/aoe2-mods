@@ -13,6 +13,44 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_expanded_information_cannot_reference_invented_routes_or_enemy_reserves(
+        self,
+    ):
+        draft = self.draft(19)
+        guide = next(s for s in draft["secondaryObjectives"] if s["kind"] == "guide")
+        guide["effects"][0]["corridorId"] = "imaginary-route"
+        guide["reachability"]["corridorIds"] = ["imaginary-route"]
+        errors = self.dossier_validator(draft)
+        self.assertTrue(any("undefined information corridor" in e for e in errors))
+        self.assertTrue(any("undefined optional access corridor" in e for e in errors))
+        guide["effects"][0]["kind"] = "reveal-enemy-approach"
+        guide["effects"][0]["rosterIds"] = ["uncreated-wave"]
+        self.assertTrue(
+            any(
+                "undeclared enemy reserve information" in e
+                for e in self.dossier_validator(draft)
+            )
+        )
+
+    def test_evacuation_rejects_unbound_or_reproducing_opposition_and_impossible_route_count(
+        self,
+    ):
+        draft = self.draft(17)
+        draft["oppositionPlan"]["byDifficulty"]["hard"]["initialEntityIds"][0] = (
+            "absent-enemy"
+        )
+        draft["oppositionPlan"]["byDifficulty"]["standard"]["productionEnabled"] = True
+        route = draft["objectivePlan"][1]["predicate"]["requirements"][1]
+        route["requiredCount"] = 3
+        errors = self.dossier_validator(draft)
+        self.assertTrue(
+            any("undefined or duplicate hostile identity" in e for e in errors)
+        )
+        self.assertTrue(
+            any("finite opposition count or production drift" in e for e in errors)
+        )
+        self.assertTrue(any("impossible route observation" in e for e in errors))
+
     def test_map_diagram_preserves_two_hosting_branches_and_their_actual_final_district(
         self,
     ):

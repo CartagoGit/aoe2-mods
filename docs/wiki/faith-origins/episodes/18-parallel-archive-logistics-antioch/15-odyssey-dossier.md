@@ -399,7 +399,11 @@ ES: Una estantería ordenada no implica un solo relato.
     }
   ],
   "terrainInstructions": "Local Antioch districts east of the schematic Orontes city reach, below or north of Silpius slopes as appropriate. No invented crossing, modern Antakya street grid, fourth-century basilica or later fortress. Exact terrain elevation, ancient banks and footprint checks pending. All local activities are fictional; long-distance journeys remain off-map.",
-  "mainRouteLengthStraightTiles": 501.05,
+  "corridorStraightLengthsTiles": {
+    "north-chain": 253.5,
+    "south-chain": 263.97,
+    "relief": 233.07
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -760,7 +764,8 @@ ES: Las notas opcionales explican atribución sin reconciliar las genealogías.
     "originHub": "hub-3",
     "receivingHub": "hub-1",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -772,9 +777,9 @@ ES: Las notas opcionales explican atribución sin reconciliar las genealogías.
 
 ### Copy-yard approaches / Accesos a los patios de copias
 
-EN: Scout both marked viewpoints of copy-yard approaches. Benefit: reveal the second reserve approach.
+EN: Scout both marked viewpoints of copy-yard approaches. Benefit: Mark the surveyed north-chain corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Explora los dos miradores señalados de accesos a los patios de copias. Ventaja: revela la aproximación de la segunda reserva.
+ES: Explora los dos miradores señalados de accesos a los patios de copias. Ventaja: Señala una vez el corredor trazado north-chain; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Survey the north and south circuits; no choice removes a required archive chain.
 
@@ -826,16 +831,13 @@ ES: Reconoce los circuitos norte y sur; ninguna elección elimina una cadena pri
   },
   "effects": [
     {
-      "kind": "reveal-enemy-approach",
-      "target": "wave-2 approach",
+      "kind": "mark-alternative-route",
+      "target": "north-chain surveyed land corridor",
       "resources": {},
       "onceFlag": "18-parallel-archive-logistics-antioch.side-2.rewarded",
       "funding": "reserved-optional-stock",
       "changesHistoricalOutcome": false,
-      "rosterIds": [
-        "wave-2"
-      ],
-      "alreadyReleasedPolicy": "reveal current surviving members, never spawn a replacement"
+      "corridorId": "north-chain"
     }
   ],
   "stateContract": {
@@ -877,7 +879,8 @@ ES: Reconoce los circuitos norte y sur; ninguna elección elimina una cadena pri
     "originHub": "hub-3",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -1011,7 +1014,8 @@ ES: Un intercambio limitado apoya equipos simultáneos.
     "originHub": "hub-1",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -1140,7 +1144,8 @@ ES: La reparación libera existencias finitas sin fusionar registros.
     "originHub": "hub-2",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -1152,9 +1157,9 @@ ES: La reparación libera existencias finitas sin fusionar registros.
 
 ### East-archive guide / Guía del archivo oriental
 
-EN: Escort the local guide of east-archive guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of east-archive guide to the marked road junction. Benefit: Mark the surveyed south-chain corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del archivo oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del archivo oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado south-chain; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Marks a land route for both finished registers.
 
@@ -1215,12 +1220,12 @@ ES: Señala una ruta terrestre para ambos registros terminados.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "south-chain surveyed land corridor",
       "resources": {},
       "onceFlag": "18-parallel-archive-logistics-antioch.side-5.rewarded",
       "funding": "reserved-optional-stock",
       "changesHistoricalOutcome": false,
-      "corridorId": "relief"
+      "corridorId": "south-chain"
     }
   ],
   "stateContract": {
@@ -1262,7 +1267,8 @@ ES: Señala una ruta terrestre para ambos registros terminados.
     "originHub": "hub-1",
     "receivingHub": "hub-3",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -1410,7 +1416,8 @@ ES: El auxilio opcional es independiente de los dos juegos principales de notas.
     "originHub": "hub-1",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
+      "north-chain",
+      "south-chain",
       "relief"
     ],
     "maxRequiredRoundTrips": 1,
@@ -1680,7 +1687,7 @@ ES: El auxilio opcional es independiente de los dos juegos principales de notas.
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-1-goal / optional list from start | none | Recover both separate copies from two independent annotations and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de dos anotaciones independientes y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-1-complete / side-1 completed | none | Two independent annotations completed. Its stated benefit has been granted once. | Dos anotaciones independientes: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-1-lost / side-1 failed-optional | none | Two independent annotations is unavailable after the loss of its unique participant or object. The main mission continues. | Dos anotaciones independientes: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-2-goal / optional list from start | none | Scout both marked viewpoints of copy-yard approaches. Benefit: reveal the second reserve approach. | Explora los dos miradores señalados de accesos a los patios de copias. Ventaja: revela la aproximación de la segunda reserva. |
+| scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-2-goal / optional list from start | none | Scout both marked viewpoints of copy-yard approaches. Benefit: Mark the surveyed north-chain corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Explora los dos miradores señalados de accesos a los patios de copias. Ventaja: Señala una vez el corredor trazado north-chain; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-2-complete / side-2 completed | none | Copy-yard approaches completed. Its stated benefit has been granted once. | Accesos a los patios de copias: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-2-lost / side-2 failed-optional | none | Copy-yard approaches is unavailable after the loss of its unique participant or object. The main mission continues. | Accesos a los patios de copias: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-3-goal / optional list from start | none | Escort the trader of separate writing stock to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de existencias separadas de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
@@ -1689,7 +1696,7 @@ ES: El auxilio opcional es independiente de los dos juegos principales de notas.
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-4-goal / optional list from start | none | Pay 50 wood and restore the damaged store of independent storage shelter to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de cobertizo independiente de custodia. Ventaja: 200 de alimento, 100 de madera, una vez. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-4-complete / side-4 completed | none | Independent storage shelter completed. Its stated benefit has been granted once. | Cobertizo independiente de custodia: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-4-lost / side-4 failed-optional | none | Independent storage shelter is unavailable after the loss of its unique participant or object. The main mission continues. | Cobertizo independiente de custodia: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-5-goal / optional list from start | none | Escort the local guide of east-archive guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del archivo oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-5-goal / optional list from start | none | Escort the local guide of east-archive guide to the marked road junction. Benefit: Mark the surveyed south-chain corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del archivo oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado south-chain; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-5-complete / side-5 completed | none | East-archive guide completed. Its stated benefit has been granted once. | Guía del archivo oriental: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-5-lost / side-5 failed-optional | none | East-archive guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del archivo oriental: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.18-parallel-archive-logistics-antioch.odyssey.side-6-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at copy-workers households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares de trabajadores de copias. Ventaja: 100 de alimento, 50 de madera, una vez. |

@@ -256,7 +256,10 @@ ES: Deja que lleve una respuesta; no le hagas decir lo que el archivo desconoce.
     }
   ],
   "terrainInstructions": "All three main districts lie on the city/Silpius side of the Orontes. River remains real west of this itinerary; no fictional bridge for the alternative path. Slopes east/south, no later basilicas.",
-  "mainRouteLengthStraightTiles": 96.24,
+  "corridorStraightLengthsTiles": {
+    "main": 96.24,
+    "relief": 96.24
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -992,9 +995,9 @@ ES: El intercambio local evita inventar un ejército.
 
 ### Silpius road guide / Guía del camino del Silpio
 
-EN: Escort the local guide of silpius road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of silpius road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del camino del silpio hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del camino del silpio hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Alternative route stays east of the river.
 
@@ -1055,7 +1058,7 @@ ES: La ruta alternativa permanece al este del río.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "01-roads-of-antioch.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1521,7 +1524,7 @@ ES: El alojamiento voluntario no resuelve doctrinas.
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-4-goal / optional list from start | none | Escort the trader of valley grain trader to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de comerciante de grano del valle hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-4-complete / side-4 completed | none | Valley grain trader completed. Its stated benefit has been granted once. | Comerciante de grano del valle: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-4-lost / side-4 failed-optional | none | Valley grain trader is unavailable after the loss of its unique participant or object. The main mission continues. | Comerciante de grano del valle: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.01-roads-of-antioch.odyssey.side-5-goal / optional list from start | none | Escort the local guide of silpius road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del camino del silpio hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.01-roads-of-antioch.odyssey.side-5-goal / optional list from start | none | Escort the local guide of silpius road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino del silpio hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-5-complete / side-5 completed | none | Silpius road guide completed. Its stated benefit has been granted once. | Guía del camino del Silpio: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-5-lost / side-5 failed-optional | none | Silpius road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino del Silpio: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.01-roads-of-antioch.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |

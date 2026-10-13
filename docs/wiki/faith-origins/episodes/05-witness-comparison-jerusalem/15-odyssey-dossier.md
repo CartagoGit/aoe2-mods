@@ -277,7 +277,10 @@ ES: Deja visible el año incierto junto a los quince días.
     }
   ],
   "terrainInstructions": "Plateau archive reconstruction with west/south land movement, not an asserted archaeological school. No playable Cephas, James or Paul; meetings remain in attributed context.",
-  "mainRouteLengthStraightTiles": 90.46,
+  "corridorStraightLengthsTiles": {
+    "main": 90.46,
+    "relief": 90.46
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -992,9 +995,9 @@ ES: El comercio local no produce pruebas históricas nuevas.
 
 ### Plateau messenger guide / Guía de mensajeros de la meseta
 
-EN: Escort the local guide of plateau messenger guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of plateau messenger guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía de mensajeros de la meseta hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía de mensajeros de la meseta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Alternate land access helps movement.
 
@@ -1055,7 +1058,7 @@ ES: El acceso terrestre alternativo facilita el movimiento.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "05-witness-comparison-jerusalem.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1521,7 +1524,7 @@ ES: Ofrece alojamiento voluntario a participantes opcionales distintos.
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-4-goal / optional list from start | none | Escort the trader of writing supplies to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de materiales de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-4-complete / side-4 completed | none | Writing supplies completed. Its stated benefit has been granted once. | Materiales de escritura: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-4-lost / side-4 failed-optional | none | Writing supplies is unavailable after the loss of its unique participant or object. The main mission continues. | Materiales de escritura: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of plateau messenger guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía de mensajeros de la meseta hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of plateau messenger guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía de mensajeros de la meseta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-5-complete / side-5 completed | none | Plateau messenger guide completed. Its stated benefit has been granted once. | Guía de mensajeros de la meseta: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-5-lost / side-5 failed-optional | none | Plateau messenger guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía de mensajeros de la meseta: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.05-witness-comparison-jerusalem.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from guest copyists to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de copistas huéspedes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |

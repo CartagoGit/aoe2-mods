@@ -401,7 +401,10 @@ ES: Una salida local es cuanto puede prometer esta ficción. No puede reescribir
     }
   ],
   "terrainInstructions": "Local east/south Rome land scene, all three main districts east of Tiber; do not use giant Rome–Ostia profile as a complete burn map. No forced river crossing or Vatican punishment-site claim. Blocked/burnt areas require dated topography and independently certified finite hazard observation; always one disclosed main-safe land corridor and one longer alternative, never adaptive closure of both.",
-  "mainRouteLengthStraightTiles": 311.96,
+  "corridorStraightLengthsTiles": {
+    "main": 311.96,
+    "relief": 311.96
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -1100,9 +1103,9 @@ ES: La ayuda aporta suministros finitos sin alterar las víctimas relatadas por 
 
 ### Eastern land guide / Guía terrestre oriental
 
-EN: Escort the local guide of eastern land guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of eastern land guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía terrestre oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía terrestre oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Marks an alternative land corridor; never creates a bridge over the Tiber.
 
@@ -1163,7 +1166,7 @@ ES: Señala un corredor terrestre alternativo; nunca crea un puente sobre el Tí
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "15-evacuation-and-recovery-rome-ostia.side-3.rewarded",
       "funding": "reserved-optional-stock",
@@ -1893,7 +1896,7 @@ ES: Un intercambio voluntario limitado no compra impunidad ante Nerón.
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-2-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at independent refuge households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares independientes del refugio. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-2-complete / side-2 completed | none | Independent refuge households completed. Its stated benefit has been granted once. | Hogares independientes del refugio: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-2-lost / side-2 failed-optional | none | Independent refuge households is unavailable after the loss of its unique participant or object. The main mission continues. | Hogares independientes del refugio: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-3-goal / optional list from start | none | Escort the local guide of eastern land guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía terrestre oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-3-goal / optional list from start | none | Escort the local guide of eastern land guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía terrestre oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-3-complete / side-3 completed | none | Eastern land guide completed. Its stated benefit has been granted once. | Guía terrestre oriental: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-3-lost / side-3 failed-optional | none | Eastern land guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía terrestre oriental: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.15-evacuation-and-recovery-rome-ostia.odyssey.side-4-goal / optional list from start | none | Pay 50 wood and restore the damaged store of unburned roadside store to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de almacén del camino sin quemar. Ventaja: 200 de alimento, 100 de madera, una vez. |

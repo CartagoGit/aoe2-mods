@@ -291,7 +291,10 @@ ES: Dos destinos, cuatro objetos: que el total no oculte una dirección equivoca
     }
   ],
   "terrainInstructions": "Corinthian Gulf north, Acrocorinth south, Saronic Gulf east. Keep workshop inland and eastern post west of Cenchreae shore. No modern canal, later Frankish fortress or Christian basilica. Main deliveries branch north/east after production; do not force a sea crossing. Archeological terrace/road path certification pending.",
-  "mainRouteLengthStraightTiles": 171.81,
+  "corridorStraightLengthsTiles": {
+    "main": 171.81,
+    "relief": 171.81
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -905,9 +908,9 @@ ES: Las copias son encargos contemporáneos ficticios, no manuscritos de Hechos.
 
 ### Terrace road guide / Guía del camino entre terrazas
 
-EN: Escort the local guide of terrace road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of terrace road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del camino entre terrazas hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del camino entre terrazas hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: A surveyed slope route offers navigation help, not a shortcut through Acrocorinth.
 
@@ -968,7 +971,7 @@ ES: Una ruta de pendiente comprobada ayuda a orientarse sin atravesar Acrocorint
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "09-district-production-corinth.side-4.rewarded",
       "funding": "reserved-optional-stock",
@@ -1578,7 +1581,7 @@ ES: Los viajeros voluntarios son ficticios y ajenos a los protagonistas venerado
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-3-goal / optional list from start | none | Recover both separate copies from separate order sheets and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de hojas separadas de encargo y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-3-complete / side-3 completed | none | Separate order sheets completed. Its stated benefit has been granted once. | Hojas separadas de encargo: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-3-lost / side-3 failed-optional | none | Separate order sheets is unavailable after the loss of its unique participant or object. The main mission continues. | Hojas separadas de encargo: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.09-district-production-corinth.odyssey.side-4-goal / optional list from start | none | Escort the local guide of terrace road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del camino entre terrazas hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.09-district-production-corinth.odyssey.side-4-goal / optional list from start | none | Escort the local guide of terrace road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino entre terrazas hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-4-complete / side-4 completed | none | Terrace road guide completed. Its stated benefit has been granted once. | Guía del camino entre terrazas: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-4-lost / side-4 failed-optional | none | Terrace road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino entre terrazas: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.09-district-production-corinth.odyssey.side-5-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at workers households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares de trabajadores. Ventaja: 100 de alimento, 50 de madera, una vez. |

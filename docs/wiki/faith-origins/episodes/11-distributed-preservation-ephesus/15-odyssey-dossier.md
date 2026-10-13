@@ -304,7 +304,10 @@ ES: Registro lo que conserva nuestra ficción y señalo lo que la evidencia no p
     }
   ],
   "terrainInstructions": "Northern and southern inland storage branches remain east of hypothetical ancient estuary water. No Celsus library, later churches or modern Selcuk. Modern shoreline cannot define first-century harbor; obtain dated estuary control before carving westward relief corridor.",
-  "mainRouteLengthStraightTiles": 282.46,
+  "corridorStraightLengthsTiles": {
+    "main": 282.46,
+    "relief": 282.46
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -898,9 +901,9 @@ ES: La ayuda no altera la controversia ni favorece una teología por la fuerza.
 
 ### Eastern slope guide / Guía de la ladera oriental
 
-EN: Escort the local guide of eastern slope guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of eastern slope guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía de la ladera oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía de la ladera oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: A surveyed land detour avoids assuming a walk through ancient harbor water.
 
@@ -961,7 +964,7 @@ ES: Un desvío terrestre comprobado evita asumir un paseo por las aguas del puer
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "11-distributed-preservation-ephesus.side-4.rewarded",
       "funding": "reserved-optional-stock",
@@ -1557,7 +1560,7 @@ ES: Un intercambio ficticio ofrece alimento finito, no acceso a un original apos
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-3-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at southern work households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares de trabajo del sur. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-3-complete / side-3 completed | none | Southern work households completed. Its stated benefit has been granted once. | Hogares de trabajo del sur: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-3-lost / side-3 failed-optional | none | Southern work households is unavailable after the loss of its unique participant or object. The main mission continues. | Hogares de trabajo del sur: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-4-goal / optional list from start | none | Escort the local guide of eastern slope guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía de la ladera oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-4-goal / optional list from start | none | Escort the local guide of eastern slope guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía de la ladera oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-4-complete / side-4 completed | none | Eastern slope guide completed. Its stated benefit has been granted once. | Guía de la ladera oriental: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-4-lost / side-4 failed-optional | none | Eastern slope guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía de la ladera oriental: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.11-distributed-preservation-ephesus.odyssey.side-5-goal / optional list from start | none | Bring both voluntary evacuee groups from independent archive helpers to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de ayudantes independientes del archivo al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |

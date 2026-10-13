@@ -273,7 +273,10 @@ ES: Una nota al margen puede recordar una obligación cuando su voz ya se ha ido
     }
   ],
   "terrainInstructions": "Domestic activities on the western plateau and southern approaches; Temple referenced in source, not captured by player. No church basilicas of later centuries; terrain remains limestone and ravines.",
-  "mainRouteLengthStraightTiles": 82.11,
+  "corridorStraightLengthsTiles": {
+    "main": 82.11,
+    "relief": 82.11
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -1022,9 +1025,9 @@ ES: El intercambio requiere llegada antes del pago.
 
 ### Western footpath / Sendero occidental
 
-EN: Escort the local guide of western footpath to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of western footpath to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de sendero occidental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de sendero occidental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: A guide marks an existing footpath.
 
@@ -1085,7 +1088,7 @@ ES: Un guía señala un sendero existente.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "03-shared-provision-jerusalem.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1551,7 +1554,7 @@ ES: La hospitalidad es voluntaria e independiente de la conversión.
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-4-goal / optional list from start | none | Escort the trader of grain carrier to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de portador de grano hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-4-complete / side-4 completed | none | Grain carrier completed. Its stated benefit has been granted once. | Portador de grano: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-4-lost / side-4 failed-optional | none | Grain carrier is unavailable after the loss of its unique participant or object. The main mission continues. | Portador de grano: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of western footpath to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de sendero occidental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of western footpath to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de sendero occidental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-5-complete / side-5 completed | none | Western footpath completed. Its stated benefit has been granted once. | Sendero occidental: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-5-lost / side-5 failed-optional | none | Western footpath is unavailable after the loss of its unique participant or object. The main mission continues. | Sendero occidental: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.03-shared-provision-jerusalem.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from guests seeking lodging to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de huéspedes que buscan alojamiento al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |

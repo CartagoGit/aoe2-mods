@@ -312,7 +312,10 @@ ES: Puedo registrar una salida local. No puedo leer todas las intenciones detrá
     }
   ],
   "terrainInstructions": "Mediterranean west, all fictional office/post activity districts inland east of modern shore control. No modern museum, Crusader walls or invented palace/courtroom excavated address. Sea/imperial journey off-map; no battle or jailbreak fabricated to decide sacred figure fate.",
-  "mainRouteLengthStraightTiles": 158.73,
+  "corridorStraightLengthsTiles": {
+    "main": 158.73,
+    "relief": 158.73
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -638,9 +641,9 @@ ES: Las copias opcionales aportan contexto de atribución, no transcripciones ju
 
 ### Coastal road junction guide / Guía del cruce costero
 
-EN: Escort the local guide of coastal road junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of coastal road junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del cruce costero hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del cruce costero hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Marks an inland route without claiming a palace address.
 
@@ -701,7 +704,7 @@ ES: Señala una ruta interior sin atribuirle una dirección palaciega.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "14-administrative-intrigue-caesarea.side-2.rewarded",
       "funding": "reserved-optional-stock",
@@ -1568,7 +1571,7 @@ ES: Las llegadas voluntarias opcionales nunca cuentan como el correo principal.
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-1-goal / optional list from start | none | Recover both separate copies from separate municipal working copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de copias de trabajo municipales separadas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-1-complete / side-1 completed | none | Separate municipal working copies completed. Its stated benefit has been granted once. | Copias de trabajo municipales separadas: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-1-lost / side-1 failed-optional | none | Separate municipal working copies is unavailable after the loss of its unique participant or object. The main mission continues. | Copias de trabajo municipales separadas: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-2-goal / optional list from start | none | Escort the local guide of coastal road junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del cruce costero hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-2-goal / optional list from start | none | Escort the local guide of coastal road junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del cruce costero hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-2-complete / side-2 completed | none | Coastal road junction guide completed. Its stated benefit has been granted once. | Guía del cruce costero: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-2-lost / side-2 failed-optional | none | Coastal road junction guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del cruce costero: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.14-administrative-intrigue-caesarea.odyssey.side-3-goal / optional list from start | none | Pay 50 wood and restore the damaged store of record-yard shelter to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de cobertizo del patio de registro. Ventaja: 200 de alimento, 100 de madera, una vez. |
