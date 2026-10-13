@@ -521,6 +521,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -3085,6 +3086,11 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -5739,6 +5745,11 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -8330,6 +8341,32 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.12,
+              33.61
+            ],
+            [
+              36.23,
+              33.54
+            ],
+            [
+              36.3,
+              33.52
+            ],
+            [
+              36.34,
+              33.515
+            ],
+            [
+              36.45,
+              33.5
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -10841,6 +10878,11 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -13393,6 +13435,32 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.17,
+              36.1
+            ],
+            [
+              36.16,
+              36.19
+            ],
+            [
+              36.155,
+              36.205
+            ],
+            [
+              36.135,
+              36.25
+            ],
+            [
+              36.07,
+              36.29
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -15935,6 +16003,44 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              12.477,
+              41.95
+            ],
+            [
+              12.47,
+              41.925
+            ],
+            [
+              12.47,
+              41.9
+            ],
+            [
+              12.475,
+              41.87
+            ],
+            [
+              12.42,
+              41.85
+            ],
+            [
+              12.4,
+              41.8
+            ],
+            [
+              12.28,
+              41.76
+            ],
+            [
+              12.23,
+              41.73
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -18690,6 +18796,11 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -21303,6 +21414,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -23932,6 +24044,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -26544,6 +26657,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -29164,6 +29278,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -31857,6 +31972,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -34576,6 +34692,7 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": null,
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -37201,6 +37318,44 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              12.477,
+              41.95
+            ],
+            [
+              12.47,
+              41.925
+            ],
+            [
+              12.47,
+              41.9
+            ],
+            [
+              12.475,
+              41.87
+            ],
+            [
+              12.42,
+              41.85
+            ],
+            [
+              12.4,
+              41.8
+            ],
+            [
+              12.28,
+              41.76
+            ],
+            [
+              12.23,
+              41.73
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -40148,6 +40303,32 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.17,
+              36.1
+            ],
+            [
+              36.16,
+              36.19
+            ],
+            [
+              36.155,
+              36.205
+            ],
+            [
+              36.135,
+              36.25
+            ],
+            [
+              36.07,
+              36.29
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -42774,6 +42955,32 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.17,
+              36.1
+            ],
+            [
+              36.16,
+              36.19
+            ],
+            [
+              36.155,
+              36.205
+            ],
+            [
+              36.135,
+              36.25
+            ],
+            [
+              36.07,
+              36.29
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,
@@ -45497,6 +45704,32 @@
             "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
           }
         ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.17,
+              36.1
+            ],
+            [
+              36.16,
+              36.19
+            ],
+            [
+              36.155,
+              36.205
+            ],
+            [
+              36.135,
+              36.25
+            ],
+            [
+              36.07,
+              36.29
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
         "performanceBudget": {
           "activeMilitaryCap": 240,
           "activeCivilianCap": 80,

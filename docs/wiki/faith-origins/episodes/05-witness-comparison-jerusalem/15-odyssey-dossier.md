@@ -295,6 +295,11 @@ ES: Deja visible el año incierto junto a los quince días.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

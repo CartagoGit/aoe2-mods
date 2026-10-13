@@ -325,6 +325,7 @@ ES: Su siguiente viaje queda fuera del mapa. No podemos afirmar que lo hemos vis
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

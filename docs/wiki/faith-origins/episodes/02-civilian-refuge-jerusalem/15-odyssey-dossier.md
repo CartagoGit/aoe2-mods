@@ -316,6 +316,11 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

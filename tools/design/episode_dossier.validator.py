@@ -274,6 +274,12 @@ def audit_dossier(episode):
                 f"{label}/{s['id']}: caption content lost or too long",
             )
     hubs = episode["mapPlan"]["hubs"]
+    hub_ids = {hub["id"] for hub in hubs}
+    for corridor in episode["mapPlan"]["corridors"]:
+        check(
+            len(corridor["hubOrder"]) >= 2 and set(corridor["hubOrder"]) <= hub_ids,
+            f"{label}: corridor has missing geographic district",
+        )
     check(
         all(0 <= value < episode["mapSize"] for h in hubs for value in h["centre"]),
         f"{label}: district outside map",

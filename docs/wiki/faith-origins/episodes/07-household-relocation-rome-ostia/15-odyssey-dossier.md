@@ -347,6 +347,44 @@ ES: El registro recoge una salida, no la desaparición de un pueblo.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [
+      [
+        12.477,
+        41.95
+      ],
+      [
+        12.47,
+        41.925
+      ],
+      [
+        12.47,
+        41.9
+      ],
+      [
+        12.475,
+        41.87
+      ],
+      [
+        12.42,
+        41.85
+      ],
+      [
+        12.4,
+        41.8
+      ],
+      [
+        12.28,
+        41.76
+      ],
+      [
+        12.23,
+        41.73
+      ]
+    ],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

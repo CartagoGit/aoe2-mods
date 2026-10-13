@@ -298,6 +298,7 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

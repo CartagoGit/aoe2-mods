@@ -6,12 +6,35 @@ import runpy
 import unittest
 import tempfile
 import hashlib
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from geography import clip_segment, tile_point
 from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_map_diagram_preserves_two_hosting_branches_and_their_actual_final_district(
+        self,
+    ):
+        episode = self.draft(19)
+        renderer = runpy.run_path(
+            str(ROOT / "tools/design/episode_dossiers.script.py")
+        )["diagram"]
+        svg = ET.fromstring(renderer(episode, []))
+        paths = {
+            node.attrib["data-corridor"]: node.attrib["points"].split()
+            for node in svg.iter()
+            if "data-corridor" in node.attrib
+        }
+        self.assertEqual(
+            set(paths), {"north-host-road", "east-host-road", "hosting-relief"}
+        )
+        self.assertEqual(len(paths["north-host-road"]), 3)
+        self.assertEqual(len(paths["east-host-road"]), 3)
+        self.assertEqual(paths["north-host-road"][-1], paths["east-host-road"][-1])
+        self.assertNotEqual(paths["north-host-road"][0], paths["east-host-road"][0])
+        self.assertEqual(len(paths["hosting-relief"]), 2)
+
     def test_derivation_cannot_use_a_smaller_or_future_payment_receipt(self):
         draft = self.draft(9)
         requirement = draft["objectivePlan"][1]["predicate"]["requirements"][1]

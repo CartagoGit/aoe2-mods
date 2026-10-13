@@ -305,6 +305,11 @@ ES: Dejarlas separadas también es una decisión. Es la que me pide la evidencia
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

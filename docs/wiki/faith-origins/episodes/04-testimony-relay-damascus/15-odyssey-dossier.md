@@ -284,6 +284,32 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [
+      [
+        36.12,
+        33.61
+      ],
+      [
+        36.23,
+        33.54
+      ],
+      [
+        36.3,
+        33.52
+      ],
+      [
+        36.34,
+        33.515
+      ],
+      [
+        36.45,
+        33.5
+      ]
+    ],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

@@ -396,6 +396,32 @@ ES: Puedo desearles suerte. No puedo inventar como hecho el resto de su viaje.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [
+      [
+        36.17,
+        36.1
+      ],
+      [
+        36.16,
+        36.19
+      ],
+      [
+        36.155,
+        36.205
+      ],
+      [
+        36.135,
+        36.25
+      ],
+      [
+        36.07,
+        36.29
+      ]
+    ],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

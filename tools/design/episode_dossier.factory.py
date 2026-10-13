@@ -230,6 +230,7 @@ def map_plan(cid, selection, authored, profile):
                 "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence",
             },
         ],
+        "schematicWaterControl": copy.deepcopy(profile.get("waterControlLine")),
         "performanceBudget": {
             "activeMilitaryCap": 240,
             "activeCivilianCap": 80,

@@ -330,6 +330,7 @@ ES: Puedo registrar una salida local. No puedo leer todas las intenciones detrá
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
