@@ -137,6 +137,37 @@ def audit_dossier(episode):
                             and ledger["minimumCount"] >= req["requiredCount"],
                             f"{context}: recipient identities escape supplied intersection",
                         )
+                if req.get("arrivalAfterDeparture"):
+                    ref = req["arrivalAfterDeparture"]
+                    source = objectives.get(ref["objective"])
+                    departure = (
+                        next(
+                            (
+                                r
+                                for r in source["predicate"]["requirements"]
+                                if r["id"] == ref["requirement"]
+                            ),
+                            None,
+                        )
+                        if source
+                        else None
+                    )
+                    source_index = next(
+                        (
+                            i
+                            for i, o in enumerate(episode["objectivePlan"])
+                            if o["id"] == ref["objective"]
+                        ),
+                        len(objectives),
+                    )
+                    check(
+                        req["state"] == "arrived"
+                        and source_index <= position
+                        and departure is not None
+                        and departure["kind"] == "ordered-departure"
+                        and set(req["entities"]) <= set(departure["departingEntities"]),
+                        f"{context}: arrival lacks exact prior departing identities",
+                    )
             elif req["kind"] == "resource-transaction":
                 check(
                     len(set(req["receivingZones"])) == len(req["receivingZones"])
@@ -205,6 +236,44 @@ def audit_dossier(episode):
                         ),
                         f"{context}: derived payment receipt amount or owner drift",
                     )
+            elif req["kind"] == "ordered-departure":
+                check(
+                    len(req["departingEntities"]) == len(set(req["departingEntities"]))
+                    and set(req["departingEntities"]) <= set(entities),
+                    f"{context}: invalid departing identities",
+                )
+                source = objectives.get(req["receiptObjective"])
+                source_index = next(
+                    (
+                        i
+                        for i, o in enumerate(episode["objectivePlan"])
+                        if o["id"] == req["receiptObjective"]
+                    ),
+                    len(objectives),
+                )
+                receipt = (
+                    next(
+                        (
+                            r
+                            for r in source["predicate"]["requirements"]
+                            if r["id"] == req.get("receiptRequirement")
+                        ),
+                        None,
+                    )
+                    if source
+                    else None
+                )
+                check(
+                    source_index < position
+                    and req["departureEnabledOnlyAfterReceipt"] is True,
+                    f"{context}: departure is not gated by a prior receipt",
+                )
+                check(
+                    receipt is not None
+                    and receipt["kind"] == "entity-state"
+                    and receipt["state"] == "arrived",
+                    f"{context}: departure lacks an actual arrival receipt",
+                )
             elif req["kind"] == "area-state":
                 check(
                     len(req["zones"]) == len(set(req["zones"]))

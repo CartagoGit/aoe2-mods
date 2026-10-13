@@ -68,6 +68,8 @@ def world_and_objectives(cid, selection, authored, hubs):
             group = req.pop("group", None)
             if group:
                 req["entities"] = groups[group]
+            if "departingGroup" in req:
+                req["departingEntities"] = groups[req.pop("departingGroup")]
             destination = req.pop("destinationHub", None)
             if destination:
                 req["destinations"] = {
