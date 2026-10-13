@@ -137,9 +137,9 @@ Historical year band: [321, 325]. Fiscalidad, controversias y logística concili
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
 | 7 / 07-court-record-logistics-rome-ostia | A Day beneath the Law / Un día bajo la ley | 321 CE; distinguish judicial rule from agricultural exception | rome-ostia | court-record-logistics |
-| 8 / 08-disputed-correspondence-alexandria | Words over Alexandria / Palabras sobre Alejandría | 324–325 CE | alexandria | disputed-correspondence |
-| 9 / 09-crossing-and-supply-adrianople | The Maritsa Crossing / El paso del Maritsa | 3 July 324 CE, conventional | adrianople | crossing-and-supply |
-| 10 / 10-land-and-strait-logistics-chrysopolis | Across the Bright Shore / Al otro lado de la costa luminosa | 18 September 324 CE, conventional | chrysopolis | land-and-strait-logistics |
+| 8 / 09-crossing-and-supply-adrianople | The Maritsa Crossing / El paso del Maritsa | 3 July 324 CE, conventional | adrianople | crossing-and-supply |
+| 9 / 10-land-and-strait-logistics-chrysopolis | Across the Bright Shore / Al otro lado de la costa luminosa | 18 September 324 CE, conventional | chrysopolis | land-and-strait-logistics |
+| 10 / 08-disputed-correspondence-alexandria | Words over Alexandria / Palabras sobre Alejandría | 324–325 CE | alexandria | disputed-correspondence |
 | 11 / 11-council-record-escort-antioch | Before the Lakeside Council / Antes del concilio junto al lago | 325 CE | antioch | council-record-escort |
 | 12 / 02-nicaea | Many Voices beside the Lake / Muchas voces junto al lago | 325 CE | nicaea | delegate-logistics |
 
@@ -509,25 +509,7 @@ Limit: Later codification/transcription; no321 Rome enactment venue or uniform c
 
 Limit: This is not the agricultural-exception text. Caralis is the displayed publication place; local Rome gameplay is fiction. Later interpretative text is separate, not an additional contemporary decree.
 
-### 8. Words over Alexandria
-
-[Candidate source](https://www.newadvent.org/fathers/25021.htm): Eusebius, Life of Constantine II.64–73
-
-Research candidate (not yet approved narration): Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.
-
-Relato de Eusebio presenta el conflicto como problema de unidad.
-
-Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
-
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
-
-[Consulted source](https://www.newadvent.org/fathers/25022.htm): Eusebius VC II.61–64 checked for dispute background and imperial intervention.
-
-Limit: Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.
-
-Status: consulted
-
-### 9. The Maritsa Crossing
+### 8. The Maritsa Crossing
 
 [Candidate source](https://www.britannica.com/biography/Constantine-I-Roman-emperor): Eusebius VC II; resumen cronológico
 
@@ -545,7 +527,7 @@ Limit: Date and military detail remain unverified in this audit; should retain a
 
 Status: unavailable
 
-### 10. Across the Bright Shore
+### 9. Across the Bright Shore
 
 [Candidate source](https://www.britannica.com/biography/Constantine-I-Roman-emperor): Eusebius VC II; resumen cronológico
 
@@ -562,6 +544,28 @@ Dossier status: selection and mechanic authored; full world/objective/balance/sc
 Limit: Do not merge both battles as one event; precise conventional dates need source support.
 
 Status: unavailable
+
+### 10. Words over Alexandria
+
+[Candidate source](https://www.newadvent.org/fathers/25021.htm): Eusebius, Life of Constantine II.64–73
+
+Research candidate (not yet approved narration): Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.
+
+Relato de Eusebio presenta el conflicto como problema de unidad.
+
+Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Consulted source](https://www.newadvent.org/fathers/25022.htm): Eusebius VC II.61–64 checked for dispute background and imperial intervention.
+
+Limit: Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.
+
+Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25022.htm): VC II.61–73, especiallyII.67 andII.72 post-victory/Nicomedia framing andII.73 continued dispute
+
+Limit: Richardson1890 translation revised onNewAdvent; noGreek critical apparatus or exactletterdate. Eusebius is panegyrical; imperial characterization of the dispute as minor remains attributed, never the agnostic narrator’s verdict.
 
 ### 11. Before the Lakeside Council
 

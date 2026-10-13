@@ -1,6 +1,6 @@
 # Asignaciones y gates de MiniMax M3.1
 
-El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las cinco de apertura imperial son borradores en revisión, pendientes de escenario nativo.
+El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las siete de apertura imperial son borradores en revisión, pendientes de escenario nativo.
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 
@@ -37,7 +37,7 @@ Pilotos: f00001 laboratorio T01/T02; f00002 Milvio. i00003 pertenece al arquitec
 | Acto | Episodios | Slices cronológicos |
 |---|---|---|
 | act-1 | 1, 2, 3, 4, 5, 6 | S3, S7, S8, S9, S10, S11 |
-| act-2 | 7, 8, 9, 10, 11, 12 | S12, S13, S14, S15, S16, S4 |
+| act-2 | 7, 8, 9, 10, 11, 12 | S12, S14, S15, S13, S16, S4 |
 | act-3 | 13, 14, 15, 16, 17, 18, 19 | S17, S5, S18, S19, S20, S21, S22 |
 | act-4 | 20, 21, 22, 23, 24, 25 | S23, S24, S25, S26, S27, S28 |
 | act-5 | 26, 27, 28, 29 | S29, S30, S31, S32 |
@@ -151,3 +151,5 @@ La apertura de imperial-church tiene dossiers individuales para los órdenes 1�
 Roma (orden 4) mantiene dos cadenas de solicitudes/registros y dos retornos distintos, cada uno respaldado por su propia recepción y salida. Arlés (orden 5) prepara tres puestos terrestres y distribuye seis ayudantes y tres asignaciones de120 de alimento antes de archivar un registro ficticio. Ni la audiencia ni las decisiones conciliares se convierten en votación jugable; no usar Ostia como sede por figurar un obispo de esa ciudad. Hay 37 borradores (1.483 pantallas, 222 secundarios), todos sujetos a los gates históricos/nativos.
 
 Cibalae (orden 6) exige al menos ocho auxiliares originales realmente registrados al preparar la retirada y los cuatro cofres originales en el punto local de reunión; no sustituir el registro por toda la lista inicial ni por miembros del convoy opcional. Su desvío occidental debe ser viable sin combate ni secundarios tras auditoría nativa de los límites enemigos. La reunión local norteña no representa el itinerario histórico completo a Sirmio. El orden 7 conserva tres contextos jurídicos separados, provisiones rurales de 180/120, un pago de 90 madera/30 oro y tres resúmenes derivados con destinos propios. No crear una prohibición global de trabajo, un mercado de libertad personal ni una puntuación de obediencia religiosa.
+
+Corrección cronológica de 324: Adriánopolis ocupa el orden 8 (S14), Crisópolis el 9 (S15) y la correspondencia alejandrina el 10 (S13). Los números incluidos en IDs semánticos no se reinterpretan como orden. Eusebio sitúa la carta en contexto posterior a la victoria; no se la presenta como causa de las batallas. `DependsOn` conserva S12→S14→S15→S13→S16→S4 y todas las propuestas siguen bloqueadas.
