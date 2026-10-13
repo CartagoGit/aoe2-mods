@@ -430,6 +430,39 @@
       "roads": "proposed local land branches; full Licinius route toward Sirmium remains off-map",
       "anachronisms": "no modern railways, channelization or later façades; no literal modern street grid",
       "approval": "research candidate; independent battlefield, ancient-bank, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandrian mainland between Mediterranean harbors and Lake Mareotis",
+      "bbox": [
+        29.88,
+        31.13,
+        29.99,
+        31.24
+      ],
+      "coordinateStatus": "approximate modern regional crop; local working courts fictional, no exact fourth-century parcel or episcopal venue",
+      "representativePoint": [
+        29.9187,
+        31.1994
+      ],
+      "representativePointUsage": "modern regional locator only, not an ancient source event address",
+      "sources": [
+        {
+          "url": "https://www.cealex.org/promotion-and-dissemination/exhibitions/the-harbours-of-alexandria/harbours-antiquity/",
+          "locator": "Lakeside port, Kibotos, Heptastadion and Pharos sections including captions/phase and reconstruction limits",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "terrain": "low mainland city band between sea and lake; subsidence and buried port phases prevent literal use of modern shore",
+      "water": "Mediterranean harbors north; Mareotis/lake-canals context south; no mandatory Heptastadion, sea or lake crossing",
+      "hills": "no invented mountain gate or harbor cliff; DEM and dated parcel elevations pending",
+      "roads": "proposed ordinary mainland circuits; no actual imperial messenger route identified",
+      "anachronisms": "no Qaitbayfort, moderncorniche, modernrailways or unreviewed canal; Ptolemaic300–100BCE map not a324 plan",
+      "waterControlStatus": "modern natural-earth controls require review and are not ancient coastline; CEAlex copyrighted images not downloaded or used without reuse rights",
+      "layerSources": [
+        "natural-earth"
+      ],
+      "approval": "research candidate; exact ancient-bank, canal, DEM and pathfinding checks pending"
     }
   ]
 }
