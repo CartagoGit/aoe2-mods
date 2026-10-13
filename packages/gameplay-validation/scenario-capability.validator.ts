@@ -349,6 +349,7 @@ export function validateScenarioCapability(
               if (
                 !producer ||
                 producer.kind !== "entity-state" ||
+                producer.state !== "arrived" ||
                 producer.destinations?.[receipt.receivedEntity] !==
                   receipt.destination ||
                 !req.entities.includes(receipt.output)

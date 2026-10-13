@@ -293,9 +293,23 @@ export function generationReady(
         return false;
       if (req.kind === "entity-state")
         for (const receipt of req.generatedByReceipts ?? []) {
+          if (receipt.output !== entityId) continue;
+          const producer = objectiveRequirements(
+            profile,
+            receipt.fromObjective,
+          )?.find((item) => item.id === receipt.fromRequirement);
           if (
-            receipt.output === entityId &&
-            !hasArrival(state, receipt.receivedEntity, receipt.destination)
+            !producer ||
+            producer.kind !== "entity-state" ||
+            producer.state !== "arrived" ||
+            producer.destinations?.[receipt.receivedEntity] !==
+              receipt.destination ||
+            !hasRequirementArrival(
+              state,
+              receipt.fromObjective,
+              producer,
+              receipt.receivedEntity,
+            )
           )
             return false;
         }
