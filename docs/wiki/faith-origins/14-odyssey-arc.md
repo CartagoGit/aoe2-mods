@@ -57,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 18
+    "authoredDossierCount": 19
   },
   "continuity": {
     "recommendedPrevious": [],
@@ -679,6 +679,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/02-after-the-siege/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Josephus narrates the Roman capture and destruction of the Jerusalem Temple in 70 CE.
 
 ES: Josefo narra la toma romana y destrucción del Templo de Jerusalén en el año 70.
@@ -688,6 +690,18 @@ ES: Josefo narra la toma romana y destrucción del Templo de Jerusalén en el a�
 Limit: Josephus is a near-contemporary participant writing under Roman patronage; casualty totals and speeches are rhetorically shaped. Livius is a secondary summary, not the primary source itself.
 
 Status: consulted
+
+[Additional consulted passage](https://earlyjewishwritings.com/text/josephus/war6.html): Jewish War VI.4.5–7, temple fire; VI.1.1 landscape description
+
+Limit: Whiston translation consulted, not a Greek critical text. Fire chain and Titus’ intent favor Roman command; speeches, theology and casualty figures are not neutral proof or demographic counts. Regional tree-clearance language is not a precise vegetation raster.
+
+[Additional consulted passage](https://earlyjewishwritings.com/text/josephus/war7.html): Jewish War VII.1.1–2, demolition, surviving towers/west wall and garrison
+
+Limit: Demolition and Tenth Legion presence narrated; no local ten-household escape, patrol number, route or permission is documented. Dramatic extent and speeches remain attributed.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/250103.htm): Ecclesiastical History III.5.3–4, later Pella report
+
+Limit: Fourth-century account reports departure before war, not a contemporary post-fall evacuation record. Revelation and divine/collective punishment rhetoric are attributed authorial claims and never neutral causation. Pella is outside this map.
 
 [Source-audit passage](https://penelope.uchicago.edu/josephus/war-6.html): Josephus, Jewish War VI, especially §§4–5 (temple fire and fall); Book VI chronology
 

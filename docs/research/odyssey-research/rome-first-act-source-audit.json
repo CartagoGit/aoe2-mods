@@ -1,0 +1,198 @@
+{
+  "campaignId": "church-of-rome",
+  "episodeRange": "first six entries in docs/design/odysseys/church-of-rome.json / episodeSelection",
+  "auditType": "read-only source-access and claim audit; no repository edits",
+  "episodes": [
+    {
+      "id": "01-refuge-and-petition-reception-rome-ostia",
+      "date": "339–340 CE; scholarship commonly places Athanasius' arrival in Rome in 339, with 340 also used",
+      "place": "Rome; Athanasius' journey from Alexandria, then Rome; later itinerary proceeds to Milan/Gaul/Sardica",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2813.htm",
+          "kind": "primary apologetic text, Athanasius, Apologia ad Constantium §4",
+          "consulted": "Full online translation, especially §§4–5",
+          "locator": "§4, lines 27–31",
+          "supports": "Athanasius says that after leaving Alexandria he went to Rome, presented his case to the Church, and then recounts later movements via Milan and Gaul to Sardica.",
+          "limits": "Written retrospectively for Constantius, after the travel episode; it does not name Bishop Julius in this passage or establish the reception scene as described by the episode title."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/2808.htm",
+          "kind": "primary apologetic text, Athanasius, Apologia contra Arianos",
+          "consulted": "Landing page and search excerpt; relevant full passages not opened in this turn",
+          "locator": "Athanasius' account of Roman synod/Julius; commonly §§20–35",
+          "supports": "Potential primary source for the Roman synod and Julius' response; the secondary date is commonly 339/340.",
+          "limits": "Access in this audit was search excerpt only; this is not a verified full passage audit."
+        },
+        {
+          "url": "https://www.athanasius.theologie.uni-erlangen.de/athanasius-life-and-works.html",
+          "kind": "academic institutional biography",
+          "consulted": "Search-result excerpt only",
+          "locator": "Chronology of Athanasius' exile and Rome",
+          "supports": "Dates Athanasius' arrival in Rome to autumn 339 and gives scholarly context.",
+          "limits": "Search excerpt only; not full page read."
+        }
+      ],
+      "assessment": "The cited Apologia ad Constantium supports the travel and appeal to the Roman Church, but the claim that Julius personally received/supportively adjudicated it needs a precise Apologia contra Arianos passage. Avoid assigning private dialogue or an exact day."
+    },
+    {
+      "id": "02-separate-delegation-logistics-sardica",
+      "date": "343 or 344 CE; autumn 343 to spring 344 is a defensible qualified range",
+      "place": "Sardica (modern Sofia); associated path from Rome through Gaul in Athanasius' account",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2813.htm",
+          "kind": "primary apologetic text, Athanasius, Apologia ad Constantium §4",
+          "consulted": "Full passage read",
+          "locator": "§4, lines 29–31",
+          "supports": "Athanasius recounts being summoned from Rome to Milan, then travelling through Gaul toward Sardica.",
+          "limits": "Athanasius is a participant and partisan; this is his own itinerary, not neutral coverage of all delegates."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/3815.htm",
+          "kind": "council dossier with later chronological introduction and canons",
+          "consulted": "Date-critical introduction and discussion read; not all canons",
+          "locator": "Introduction, paragraphs on evidence for 343/344 and possible autumn 343 start (lines 10–20)",
+          "supports": "The editor identifies conflicting chronologies and argues for 343 or 344, with a possible autumn 343 opening and proceedings into spring 344.",
+          "limits": "The page heading 'A.D. 344' is not uncontested; its introduction itself explains the uncertainty. It is not a contemporary event diary."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/2815.htm",
+          "kind": "primary apologetic narrative, Athanasius, History of the Arians, §15",
+          "consulted": "Full relevant section read",
+          "locator": "§15; Athanasius says bishops from East and West assembled at Sardica and describes their dispute",
+          "supports": "Reports an East/West gathering and ensuing disagreement from a Nicene participant's perspective.",
+          "limits": "Partisan account; does not substantiate neutral staging language or a universal joint meeting followed by a single, consensual council."
+        }
+      ],
+      "assessment": "Separate meetings/withdrawal require a precise source citation. Source URLs in the episode point to council material and Athanasius' travel narrative, but do not by themselves verify every logistical detail."
+    },
+    {
+      "id": "03-exile-supply-and-correspondence-beroea-thrace",
+      "date": "355/356–358 CE is safer for the exile arc; the listed 355–357 omits the attested return to Rome by 358",
+      "place": "Beroea in Thrace (not the better-known Beroea in Syria); Rome is the see from which Liberius was exiled",
+      "sources": [
+        {
+          "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+          "kind": "later ecclesiastical narrative, Sozomen, HE IV.11",
+          "consulted": "Full relevant section read",
+          "locator": "Chapter XI, paragraphs describing refusal, exile to Beroea in Thrace, and stated alternative motive (lines 103–115)",
+          "supports": "Sozomen says Constantius summoned Liberius, Liberius refused conformity, and was banished to Beroea in Thrace; he explicitly says continued communion with Athanasius is alleged as another pretext.",
+          "limits": "Sozomen writes in the fifth century and frames reported speeches as narrative; do not present the quoted exchange as a transcript. The stated Athanasius motive is explicitly qualified as alleged."
+        },
+        {
+          "url": "https://www.ammianus.net/15.7",
+          "kind": "primary contemporary Roman narrative, Ammianus Marcellinus 15.7",
+          "consulted": "Not accessed in this audit",
+          "locator": "Book 15.7, Liberius' summons/exile",
+          "supports": "Not counted as consulted support.",
+          "limits": "Candidate for independent contemporary account; should be opened before making a claim about conditions of exile."
+        },
+        {
+          "url": "https://bonndoc.ulb.uni-bonn.de/xmlui/bitstream/handle/20.500.11811/11484/bup_smh_5.pdf?isAllowed=y&sequence=1",
+          "kind": "academic edited volume/chapter (search-excerpt access)",
+          "consulted": "Search excerpt only",
+          "locator": "Julia Hillner and Mairín MacCarron, 'Women, Networks and the Return of Liberius of Rome'",
+          "supports": "Excerpt says exile began in 355 in one view, Liberius was back by 358, and links return to disputed recantation; scholarly discussion varies over dates.",
+          "limits": "Only indexed excerpt was read, not full chapter. Another excerpt notes start date disputed between 355 and 356."
+        }
+      ],
+      "assessment": "Episode's core exile is supported by Sozomen, but 355–357 as a complete interval is misleading because return is conventionally in 358; precise start varies (355/356). The exile location is specifically Thracian Beroea."
+    },
+    {
+      "id": "04-draft-and-delegate-network-rimini",
+      "date": "359 CE",
+      "place": "Ariminum/Rimini, western bishops; the eastern council met separately at Seleucia in Isauria",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/28153.htm",
+          "kind": "primary apologetic text, Athanasius, History of the Arians Part III",
+          "consulted": "Page opened; relevant passage checked",
+          "locator": "Page is Part III; it does not contain the cited §33 account of Rimini",
+          "supports": "Does not substantiate the episode's Rimini claim as cited.",
+          "limits": "Material URL/passsage mismatch: the episode gives 28153 and '§33'; that URL is Part III, while the separate Part IV page's §33 concerns imperial pressure on bishops, not the council of Rimini."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/2817.htm",
+          "kind": "primary near-contemporary text, Athanasius, De Synodis §§1–3 and following",
+          "consulted": "Search excerpt directly surfaced relevant text; full passage not opened",
+          "locator": "De Synodis opening account of division into two councils; western bishops at Ariminum and eastern at Seleucia",
+          "supports": "Athanasius says the planned single assembly was divided, with 400-plus at Ariminum and others at Seleucia.",
+          "limits": "Athanasius writes as a Nicene polemicist; numbers and characterization should be attributed, not repeated as uncontested neutral facts."
+        },
+        {
+          "url": "https://ccel.org/ccel/schaff/npnf203.iv.viii.ii.xv.html",
+          "kind": "later ecclesiastical historian, Theodoret, HE II.15",
+          "consulted": "Search excerpt only",
+          "locator": "Council of Ariminum account",
+          "supports": "Overview says western bishops were summoned to Ariminum and eastern to Seleucia in 359.",
+          "limits": "Only search excerpt; later narrative, not contemporary."
+        }
+      ],
+      "assessment": "The event is plausible, but the episode's linked Athanasius URL and §33 locator do not match the Rimini event. Replace the evidence pointer with De Synodis and attribute its polemical framing. No basis in sources consulted for fictional delegates' private words."
+    },
+    {
+      "id": "05-neutral-civilian-extraction-rome-ostia",
+      "date": "366 CE; exact election/violence sequence is narrated retrospectively and source dates vary in detail",
+      "place": "Rome; Ammianus names the Basilica of Sicininus as the location of the bodies",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/27%2A.html",
+          "kind": "primary near-contemporary Roman narrative, Ammianus Marcellinus 27.3.12–15",
+          "consulted": "Full relevant section read",
+          "locator": "Book 27.3.12–15",
+          "supports": "Describes conflict between Damasus and Ursinus, bloodshed and deaths, Damasus' victory, and reports 137 bodies found in the Basilica of Sicininus in one day.",
+          "limits": "Ammianus is a contemporary but rhetorically hostile to clerical luxury; the 137 figure is his reported figure and should be attributed. The passage doesn't identify individual civilian victims or support a particular extraction route."
+        },
+        {
+          "url": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=523&id=6",
+          "kind": "academic prosopography database with primary quotation, Liber Pontificalis",
+          "consulted": "Full database record read",
+          "locator": "ER523; quoted Liber Pontificalis passage; record explains compilation around 530s–540s",
+          "supports": "Later Liber Pontificalis says Damasus was constituted because his supporters were stronger/more numerous and records Ursinus' ordination alongside him.",
+          "limits": "The database explicitly says early Liber Pontificalis notices cannot be treated as valid contemporary evidence for the events they narrate; the work was compiled roughly 170 years later."
+        }
+      ],
+      "assessment": "Ammianus corroborates factional violence, but the linked Liber Pontificalis is late and records a different kind of claim. 'Neutral civilian extraction' is a gameplay/editorial framing, not a historical event demonstrated by either source."
+    },
+    {
+      "id": "06-petition-and-accountability-records-milan",
+      "date": "390 CE conventionally; Ambrose's letter itself does not give an absolute year",
+      "place": "Massacre reported at Thessalonica; Ambrose writes to Theodosius in relation to his return to Milan",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/340951.htm",
+          "kind": "primary contemporary episcopal letter, Ambrose, Letter 51",
+          "consulted": "Full relevant sections read",
+          "locator": "Editorial heading; §§6–14, especially §6 and §13",
+          "supports": "Ambrose refers to a grave killing at Thessalonica, urges penitence, says he dares not celebrate if the emperor is present, and describes avoiding a meeting on Theodosius' return.",
+          "limits": "The editorial heading supplies 'after the massacre'; the letter itself does not state 390. Ambrose's account is an advocacy letter, not an impartial report or detailed account of the massacre. The source does not use a technical formula that unambiguously says 'excommunication'; describe the communion restriction carefully."
+        },
+        {
+          "url": "https://earlychurchtexts.com/main/ambrose/to_theodosius_on_thessalonica_massacre_01.shtml",
+          "kind": "modern transcription of Ambrose Letter 51",
+          "consulted": "Search result only; primary text cross-checked via New Advent",
+          "locator": "Letter 51",
+          "supports": "Secondary access point to the same letter.",
+          "limits": "Not independent corroboration and the page metadata should not be mistaken for the date of the event."
+        }
+      ],
+      "assessment": "The broad confrontation and call for public repentance are supported. The year 390 is conventional but external to this letter; the text supports a refusal to celebrate in the emperor's presence and admonition, while later accounts add details."
+    }
+  ],
+  "geographyAndLicensing": {
+    "locations": "The six records supply place names, but no georeferenced coordinates, ancient footprint polygons, official map tiles, or image assets were verified in this audit. Modern city points must not be treated as exact ancient council/church locations. The episode 3 place must distinguish Thracian Beroea from Syrian Beroea.",
+    "licensing": "No map/image license for campaign use is stated in the consulted episode sources. New Advent, Wikisource, Presbyters Project, and hosted scholarly pages are text resources; their accessibility does not grant a license to reuse page layouts, images, or maps. The University of Chicago Ammianus page's footer states copyright depends on URL asterisk count and identifies many pages as © Bill Thayer; do not reuse its map/image material without checking that page's specific notice. No asset reuse clearance established.",
+    "accessLimits": "The artifact distinguishes full passage consultation from search excerpts and unaccessed candidates. Search-result excerpts are not represented as full reading."
+  },
+  "crossEpisodeCautions": [
+    "Athanasius is a primary witness for episodes 1, 2 and 4, but an interested Nicene advocate; attribute his claims.",
+    "Sozomen is a fifth-century retrospective narrator for Liberius' exile; his reported speech is not a verbatim transcript.",
+    "The cited source for Rimini (Athanasius History of the Arians Part III §33) is mismatched; De Synodis is the relevant source family.",
+    "Ammianus 27.3 is independent contemporary evidence for the 366 violence; later Liber Pontificalis evidence must remain identified as later tradition.",
+    "Ambrose Letter 51 does not independently date itself to 390; treat that year as conventional external chronology."
+  ],
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}

@@ -378,7 +378,11 @@ ES: Puedo desearles suerte. No puedo inventar como hecho el resto de su viaje.
     }
   ],
   "terrainInstructions": "Local Antioch districts east of the schematic Orontes city reach, below or north of Silpius slopes as appropriate. No invented crossing, modern Antakya street grid, fourth-century basilica or later fortress. Exact terrain elevation, ancient banks and footprint checks pending. All local activities are fictional; long-distance journeys remain off-map.",
-  "mainRouteLengthStraightTiles": 519.94,
+  "corridorStraightLengthsTiles": {
+    "north-host-road": 285.74,
+    "east-host-road": 421.77,
+    "hosting-relief": 140.44
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -763,8 +767,9 @@ ES: Ayuda a hogares locales separados sin imponer conformidad religiosa.
     "originHub": "hub-1",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -892,8 +897,9 @@ ES: Una reparación artesanal voluntaria ofrece una reserva finita, no una insti
     "originHub": "hub-2",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -1026,8 +1032,9 @@ ES: Un comerciante separado apoya provisiones sin someter a un profeta a una pru
     "originHub": "hub-1",
     "receivingHub": "hub-2",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -1165,8 +1172,9 @@ ES: Dos viajeros opcionales nunca sustituyen a los seis huéspedes principales.
     "originHub": "hub-3",
     "receivingHub": "hub-1",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -1312,8 +1320,9 @@ ES: Notas locales ficticias explican la fuente normativa sin colocar su manuscri
     "originHub": "hub-3",
     "receivingHub": "hub-1",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -1324,9 +1333,9 @@ ES: Notas locales ficticias explican la fuente normativa sin colocar su manuscri
 
 ### Onward road guide / Guía del camino de continuación
 
-EN: Escort the local guide of onward road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of onward road guide to the marked road junction. Benefit: Mark the surveyed north-host-road corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del camino de continuación hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del camino de continuación hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado north-host-road; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Discloses a surveyed land detour for departure.
 
@@ -1387,12 +1396,12 @@ ES: Señala un desvío terrestre comprobado para la salida.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "north-host-road surveyed land corridor",
       "resources": {},
       "onceFlag": "19-hospitality-network-antioch.side-6.rewarded",
       "funding": "reserved-optional-stock",
       "changesHistoricalOutcome": false,
-      "corridorId": "relief"
+      "corridorId": "north-host-road"
     }
   ],
   "stateContract": {
@@ -1434,8 +1443,9 @@ ES: Señala un desvío terrestre comprobado para la salida.
     "originHub": "hub-1",
     "receivingHub": "hub-3",
     "corridorIds": [
-      "main",
-      "relief"
+      "north-host-road",
+      "east-host-road",
+      "hosting-relief"
     ],
     "maxRequiredRoundTrips": 1,
     "spawnOutsideReceivingZone": true,
@@ -1716,7 +1726,7 @@ ES: Señala un desvío terrestre comprobado para la salida.
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-5-goal / optional list from start | none | Recover both separate copies from hospitality working notes and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de notas de trabajo de acogida y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-5-complete / side-5 completed | none | Hospitality working notes completed. Its stated benefit has been granted once. | Notas de trabajo de acogida: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-5-lost / side-5 failed-optional | none | Hospitality working notes is unavailable after the loss of its unique participant or object. The main mission continues. | Notas de trabajo de acogida: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-6-goal / optional list from start | none | Escort the local guide of onward road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del camino de continuación hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-6-goal / optional list from start | none | Escort the local guide of onward road guide to the marked road junction. Benefit: Mark the surveyed north-host-road corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino de continuación hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado north-host-road; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-6-complete / side-6 completed | none | Onward road guide completed. Its stated benefit has been granted once. | Guía del camino de continuación: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.side-6-lost / side-6 failed-optional | none | Onward road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino de continuación: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.19-hospitality-network-antioch.odyssey.fact-outro / victory first | collection-narrator | Six fictional travelers received bounded help and continued along a local road. This does not demonstrate that every community followed the Didache, identify a prophet, or settle the document’s composition history. | Seis viajeros ficticios recibieron ayuda limitada y siguieron por un camino local. Esto no demuestra que todas las comunidades siguieran la Didaché, identifica a un profeta ni resuelve la historia de composición del documento. |

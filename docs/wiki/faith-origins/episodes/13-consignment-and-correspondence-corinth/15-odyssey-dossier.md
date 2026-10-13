@@ -352,7 +352,10 @@ ES: El horizonte no es un recibo de una travesía que no hemos mostrado.
     }
   ],
   "terrainInstructions": "Old city southwest of isthmus, eastern road toward Cenchreae on Saronic Gulf. Final yard inland northwest of shoreline, never over water. Do not put Rome, Jerusalem or Delphi inside this regional map. No modern canal or claim to know first-century pier shape.",
-  "mainRouteLengthStraightTiles": 166.78,
+  "corridorStraightLengthsTiles": {
+    "main": 166.78,
+    "relief": 166.78
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -584,9 +587,9 @@ ES: El horizonte no es un recibo de una travesía que no hemos mostrado.
 
 ### Eastern road guide / Guía del camino oriental
 
-EN: Escort the local guide of eastern road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of eastern road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del camino oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del camino oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Marks a land approach to Cenchreae, not a journey through the Saronic Gulf.
 
@@ -647,7 +650,7 @@ ES: Señala una aproximación terrestre a Céncreas, no una travesía por el gol
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "13-consignment-and-correspondence-corinth.side-1.rewarded",
       "funding": "reserved-optional-stock",
@@ -1658,7 +1661,7 @@ ES: Un almacén reparado no recrea un muelle antiguo excavado.
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.o3-goal / phase-3 active | none | Bring the same three staged carriers, the three consignments and both local journey notes to the inland Cenchreae departure yard. | Lleva los mismos tres portadores preparados, las tres remesas y ambas notas locales de viaje al patio interior de salida de Céncreas. |
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.o3-receipt / o3 latched once | none | The same carriers, original consignments and two notes reached the local departure district. | Los mismos portadores, las remesas originales y dos notas han llegado al barrio local de salida. |
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.o3-reaction / after o3 receipt | miriam-archive | The horizon is not a receipt for a voyage we have not shown. | El horizonte no es un recibo de una travesía que no hemos mostrado. |
-| scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.side-1-goal / optional list from start | none | Escort the local guide of eastern road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del camino oriental hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.side-1-goal / optional list from start | none | Escort the local guide of eastern road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino oriental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.side-1-complete / side-1 completed | none | Eastern road guide completed. Its stated benefit has been granted once. | Guía del camino oriental: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.side-1-lost / side-1 failed-optional | none | Eastern road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino oriental: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.13-consignment-and-correspondence-corinth.odyssey.side-2-goal / optional list from start | none | Escort the trader of port provision seller to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de vendedor de provisiones portuarias hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |

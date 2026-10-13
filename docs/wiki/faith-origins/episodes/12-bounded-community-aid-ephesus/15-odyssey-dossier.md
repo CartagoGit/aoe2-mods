@@ -333,7 +333,10 @@ ES: Son nuestras notas de trabajo. No las presentaré como una página perdida d
     }
   ],
   "terrainInstructions": "Three fictional inland recipients, land-only dispatch. Do not portray Corinth assembly members as historical Ephesian households. Boundaries follow real regional slopes only after DEM; no modern roads, Celsus facade or later Christian churches.",
-  "mainRouteLengthStraightTiles": 176.32,
+  "corridorStraightLengthsTiles": {
+    "main": 176.32,
+    "relief": 176.32
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -853,9 +856,9 @@ ES: Un intercambio interior evita convertir la navegación en un requisito ocult
 
 ### Terrace junction guide / Guía del cruce entre terrazas
 
-EN: Escort the local guide of terrace junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of terrace junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del cruce entre terrazas hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del cruce entre terrazas hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: A surveyed local route supports multi-post scheduling.
 
@@ -916,7 +919,7 @@ ES: Una ruta local comprobada apoya la planificación entre puestos.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "12-bounded-community-aid-ephesus.side-3.rewarded",
       "funding": "reserved-optional-stock",
@@ -1651,7 +1654,7 @@ ES: Se puede ayudar a los viajeros con independencia de la provisión principal.
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-2-goal / optional list from start | none | Escort the trader of port-road trader to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de comerciante del camino portuario hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-2-complete / side-2 completed | none | Port-road trader completed. Its stated benefit has been granted once. | Comerciante del camino portuario: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-2-lost / side-2 failed-optional | none | Port-road trader is unavailable after the loss of its unique participant or object. The main mission continues. | Comerciante del camino portuario: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-3-goal / optional list from start | none | Escort the local guide of terrace junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del cruce entre terrazas hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-3-goal / optional list from start | none | Escort the local guide of terrace junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del cruce entre terrazas hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-3-complete / side-3 completed | none | Terrace junction guide completed. Its stated benefit has been granted once. | Guía del cruce entre terrazas: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-3-lost / side-3 failed-optional | none | Terrace junction guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del cruce entre terrazas: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.12-bounded-community-aid-ephesus.odyssey.side-4-goal / optional list from start | none | Recover both separate copies from separate provision lists and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de listas separadas de provisión y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |

@@ -205,6 +205,21 @@ def audit_dossier(episode):
                         ),
                         f"{context}: derived payment receipt amount or owner drift",
                     )
+            elif req["kind"] == "area-state":
+                check(
+                    len(req["zones"]) == len(set(req["zones"]))
+                    and set(req["zones"]) <= set(zones)
+                    and 0 < req["requiredCount"] <= len(req["zones"]),
+                    f"{context}: impossible route observation",
+                )
+                check(
+                    req["state"] in ("visited-and-passable", "controlled-and-passable"),
+                    f"{context}: unknown route observation state",
+                )
+                check(
+                    set(req.get("blockingEnemies", [])) <= set(entities),
+                    f"{context}: undefined route blocker",
+                )
             else:
                 check(False, f"{context}: unsupported dossier predicate {req['kind']}")
     for group in episode["worldContract"]["survivorGroups"]:
@@ -309,5 +324,54 @@ def audit_dossier(episode):
             budget["mandatoryDeliveries"] == costs,
             f"{label}/{level}: main payment budget drift",
         )
+    opposition = episode.get("oppositionPlan")
+    if opposition:
+        rosters = opposition.get("byDifficulty", {})
+        check(
+            set(rosters) == set(episode["difficulty"]),
+            f"{label}: incomplete finite opposition profiles",
+        )
+        for level, roster in rosters.items():
+            ids = roster["initialEntityIds"]
+            check(
+                len(ids) == len(set(ids)) and set(ids) <= set(entities),
+                f"{label}/{level}: undefined or duplicate hostile identity",
+            )
+            check(
+                all(
+                    entities[e]["role"] == "fictional-hostile-patrol"
+                    for e in ids
+                    if e in entities
+                ),
+                f"{label}/{level}: civilian included in hostile roster",
+            )
+            check(
+                len(ids) == episode["difficulty"][level]["enemyTotalCap"]
+                and roster["productionEnabled"] is False
+                and roster["mobilizations"] == [],
+                f"{label}/{level}: finite opposition count or production drift",
+            )
+    else:
+        check(
+            all(b["enemyTotalCap"] == 0 for b in episode["difficulty"].values()),
+            f"{label}: enemies without explicit finite identity roster",
+        )
+    corridor_ids = {c["id"] for c in episode["mapPlan"]["corridors"]}
+    for side in episode["secondaryObjectives"]:
+        check(
+            bool(side["reachability"]["corridorIds"])
+            and set(side["reachability"]["corridorIds"]) <= corridor_ids,
+            f"{label}/{side['id']}: undefined optional access corridor",
+        )
+        for effect in side["effects"]:
+            if effect["kind"] == "mark-alternative-route":
+                check(
+                    effect.get("corridorId") in corridor_ids,
+                    f"{label}/{side['id']}: undefined information corridor",
+                )
+            if effect["kind"] == "reveal-enemy-approach":
+                check(
+                    False, f"{label}/{side['id']}: undeclared enemy reserve information"
+                )
     check_optional_objectives(episode, check, label)
     return failures

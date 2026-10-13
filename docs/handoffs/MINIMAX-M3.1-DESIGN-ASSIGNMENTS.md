@@ -1,6 +1,6 @@
 # Asignaciones y gates de MiniMax M3.1
 
-El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las dieciocho fichas ampliadas de faith-origins son borradores en revisión, no escenarios nativos.
+El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las diecinueve fichas ampliadas de faith-origins son borradores en revisión, no escenarios nativos.
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 
@@ -136,7 +136,7 @@ La [selección de las nueve odiseas](../design/odyssey-selections.md) contiene l
 
 ## Expedientes ampliados en revisión
 
-Dieciocho episodios de faith-origins (órdenes 1–16, 18 y 19; el 17 sigue pendiente) tienen expediente legible en `docs/wiki/faith-origins/episodes/<id>/15-odyssey-dossier.md` y fuente editable en `docs/design/odysseys/faith-origins.json`. Los generadores comparten identidad, transacciones, financiación, subtítulos y QA; los hechos, voz personal y decisiones de cada misión son autoría explícita del arquitecto. Hay 704 pantallas y 108 secundarios en los borradores ampliados. Los expedientes no están aprobados y sus planos SVG muestran controles geográficos, no terreno navegable. No produzcas binarios a partir de estos borradores.
+Diecinueve episodios de faith-origins (órdenes 1–19) tienen expediente legible en `docs/wiki/faith-origins/episodes/<id>/15-odyssey-dossier.md` y fuente editable en `docs/design/odysseys/faith-origins.json`. Los generadores comparten identidad, transacciones, financiación, subtítulos y QA; los hechos, voz personal y decisiones de cada misión son autoría explícita del arquitecto. Hay 743 pantallas y 114 secundarios en los borradores ampliados. Los expedientes no están aprobados y sus planos SVG muestran controles geográficos, no terreno navegable. No produzcas binarios a partir de estos borradores.
 
 
 ## Voces de las odiseas ampliadas

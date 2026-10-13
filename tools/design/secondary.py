@@ -25,7 +25,7 @@ def bilingual(en, es):
     return {'en': en, 'es-ES': es}
 
 
-def objective_text(kind, subject, reward):
+def objective_text(kind, subject, reward, information_benefit=None):
     name_en, name_es = subject['en'], subject['es-ES']
     texts = {
         'scout': (f'Scout both marked viewpoints of {name_en}.', f'Explora los dos miradores señalados de {name_es}.'),
@@ -43,6 +43,9 @@ def objective_text(kind, subject, reward):
         nouns_es = {'food': 'alimento', 'wood': 'madera', 'gold': 'oro', 'stone': 'piedra'}
         en += ' Benefit: ' + ', '.join(f'{v} {nouns_en[k]}' for k, v in reward.items()) + ', once.'
         es += ' Ventaja: ' + ', '.join(f'{v} de {nouns_es[k]}' for k, v in reward.items()) + ', una vez.'
+    elif information_benefit is not None:
+        en += ' Benefit: ' + information_benefit['en']
+        es += ' Ventaja: ' + information_benefit['es-ES']
     else:
         suffix = {
             'scout': ('Benefit: reveal the second reserve approach.', 'Ventaja: revela la aproximación de la segunda reserva.'),
@@ -109,7 +112,15 @@ def build_optional_objectives(scenario, authored):
             effect['alreadyReleasedPolicy'] = 'reveal current surviving members, never spawn a replacement'
         if kind == 'guide':
             effect['corridorId'] = 'relief'
-        text = objective_text(kind, item['subject'], REWARDS[kind])
+        information = item.get('information')
+        if information is not None:
+            if kind not in ('scout', 'watch', 'guide'):
+                raise ValueError('Only information tasks may override an information effect')
+            for field in ('rosterIds', 'alreadyReleasedPolicy', 'corridorId'):
+                effect.pop(field, None)
+            effect.update(information['effect'])
+        text = objective_text(kind, item['subject'], REWARDS[kind],
+                              information['benefit'] if information else None)
         result.append({
             'id': oid, 'kind': kind, 'title': item['title'], 'subject': item['subject'],
             'classification': 'fictional local activity anchored to the documented scenario; not an asserted ancient event',
@@ -140,6 +151,8 @@ def build_optional_objectives(scenario, authored):
                    'entity-loss-optional-only', 'early-main-victory-does-not-wait',
                    'no-reward-taken-from-protected-recovery'],
         })
+        if 'corridorIds' in item:
+            result[-1]['reachability']['corridorIds'] = list(item['corridorIds'])
     return result
 
 

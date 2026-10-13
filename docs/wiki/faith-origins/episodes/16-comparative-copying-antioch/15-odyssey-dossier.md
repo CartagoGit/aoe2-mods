@@ -309,7 +309,10 @@ ES: Dejaré el lugar desconocido en el margen. No me corresponde inventarlo como
     }
   ],
   "terrainInstructions": "Local Antioch districts east of the schematic Orontes city reach, below or north of Silpius slopes as appropriate. No invented crossing, modern Antakya street grid, fourth-century basilica or later fortress. Exact terrain elevation, ancient banks and footprint checks pending. All local activities are fictional; long-distance journeys remain off-map.",
-  "mainRouteLengthStraightTiles": 324.25,
+  "corridorStraightLengthsTiles": {
+    "main": 324.25,
+    "relief": 324.25
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -504,9 +507,9 @@ ES: Dejaré el lugar desconocido en el margen. No me corresponde inventarlo como
 
 ### Northern storage survey / Reconocimiento del depósito norte
 
-EN: Scout both marked viewpoints of northern storage survey. Benefit: reveal the second reserve approach.
+EN: Scout both marked viewpoints of northern storage survey. Benefit: Mark the surveyed main corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Explora los dos miradores señalados de reconocimiento del depósito norte. Ventaja: revela la aproximación de la segunda reserva.
+ES: Explora los dos miradores señalados de reconocimiento del depósito norte. Ventaja: Señala una vez el corredor trazado main; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Survey two real land approaches before dispatch; no authorial birthplace is revealed.
 
@@ -558,16 +561,13 @@ ES: Reconoce dos accesos terrestres antes del envío; no se revela un lugar de n
   },
   "effects": [
     {
-      "kind": "reveal-enemy-approach",
-      "target": "wave-2 approach",
+      "kind": "mark-alternative-route",
+      "target": "main surveyed land corridor",
       "resources": {},
       "onceFlag": "16-comparative-copying-antioch.side-1.rewarded",
       "funding": "reserved-optional-stock",
       "changesHistoricalOutcome": false,
-      "rosterIds": [
-        "wave-2"
-      ],
-      "alreadyReleasedPolicy": "reveal current surviving members, never spawn a replacement"
+      "corridorId": "main"
     }
   ],
   "stateContract": {
@@ -1179,9 +1179,9 @@ ES: La ayuda es independiente del contrato de copias.
 
 ### Valley-side guide / Guía del lado del valle
 
-EN: Escort the local guide of valley-side guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of valley-side guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del lado del valle hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del lado del valle hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: A guide marks surveyed land access; never an unverified Orontes bridge.
 
@@ -1242,7 +1242,7 @@ ES: Un guía señala un acceso terrestre comprobado; nunca un puente del Orontes
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "16-comparative-copying-antioch.side-6.rewarded",
       "funding": "reserved-optional-stock",
@@ -1556,7 +1556,7 @@ ES: Un guía señala un acceso terrestre comprobado; nunca un puente del Orontes
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.o3-goal / phase-3 active | none | Deliver both labelled copies to the northern preservation court. | Entrega ambas copias etiquetadas al patio septentrional de conservación. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.o3-receipt / o3 latched once | none | Both distinct copies arrived, with their local provenance unchanged. | Ambas copias distintas han llegado conservando su procedencia local. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.o3-reaction / after o3 receipt | miriam-archive | I will leave the unknown place in the margin. It is not mine to invent as history. | Dejaré el lugar desconocido en el margen. No me corresponde inventarlo como historia. |
-| scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-1-goal / optional list from start | none | Scout both marked viewpoints of northern storage survey. Benefit: reveal the second reserve approach. | Explora los dos miradores señalados de reconocimiento del depósito norte. Ventaja: revela la aproximación de la segunda reserva. |
+| scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-1-goal / optional list from start | none | Scout both marked viewpoints of northern storage survey. Benefit: Mark the surveyed main corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Explora los dos miradores señalados de reconocimiento del depósito norte. Ventaja: Señala una vez el corredor trazado main; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-1-complete / side-1 completed | none | Northern storage survey completed. Its stated benefit has been granted once. | Reconocimiento del depósito norte: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-1-lost / side-1 failed-optional | none | Northern storage survey is unavailable after the loss of its unique participant or object. The main mission continues. | Reconocimiento del depósito norte: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-2-goal / optional list from start | none | Recover both separate copies from independent labels and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de etiquetas independientes y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
@@ -1571,7 +1571,7 @@ ES: Un guía señala un acceso terrestre comprobado; nunca un puente del Orontes
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-5-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at roadside working households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares trabajadores del camino. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-5-complete / side-5 completed | none | Roadside working households completed. Its stated benefit has been granted once. | Hogares trabajadores del camino: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-5-lost / side-5 failed-optional | none | Roadside working households is unavailable after the loss of its unique participant or object. The main mission continues. | Hogares trabajadores del camino: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-6-goal / optional list from start | none | Escort the local guide of valley-side guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del lado del valle hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-6-goal / optional list from start | none | Escort the local guide of valley-side guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del lado del valle hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-6-complete / side-6 completed | none | Valley-side guide completed. Its stated benefit has been granted once. | Guía del lado del valle: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.side-6-lost / side-6 failed-optional | none | Valley-side guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del lado del valle: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.16-comparative-copying-antioch.odyssey.fact-outro / victory first | collection-narrator | The fictional local copying circuit has preserved separate working notes. Its success establishes neither the date and place of Mark’s composition nor the historical truth of every narrated action. | El circuito local ficticio de copias ha conservado notas de trabajo separadas. Su éxito no determina fecha y lugar de composición de Marcos ni la historicidad de todas las acciones narradas. |

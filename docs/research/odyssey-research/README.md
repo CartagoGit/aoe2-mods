@@ -41,7 +41,7 @@ Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tien
 
 ## Consultas del tercer acto y corpus judío
 
-Los [18 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–16, 18 y 19; Jerusalén 70 sigue pendiente. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
+Los [19 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–19; Jerusalén 70 conserva su desenlace histórico fijo y atribuye las fuentes sin fusionarlas. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
 
 - [Finale de Milán 303–313](faith-finale-source-audit.json): distingue reunión/acuerdo en Milán, publicación del rescripto en Nicomedia y una orden genérica de restitución; no prueba una restitución local concreta.
 - [Auditoría judía inicial, episodios 1–6](jewish-first-act-source-audit.json): tradiciones sobre Yavneh, Akiva y reforma fiscal; no un concilio único ni abolición acreditada del fiscus.
@@ -49,3 +49,5 @@ Los [18 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órd
 - [Auditoría judía tardía, episodios 18–30](jewish-late-source-audit.json): arqueología, compilaciones y disposiciones legales; promulgación no implica cumplimiento y c.425 sigue siendo un límite editorial.
 
 Estas recopilaciones son investigación delegada, pendiente de interpretación del arquitecto y revisión independiente. No fijan objetivos, poblaciones, mapas o mecánicas ni aprueban una campaña.
+
+- [Primer acto de Roma, seis consultas](rome-first-act-source-audit.json): distingue viaje de Atanasio, cronología disputada de Sardica, exilio de Liberio, fuente candidata incorrecta de Rimini, relato de violencia de Amiano y penitencia en Ambrosio. La corrección de selecciones y aprobación siguen pendientes de interpretación del arquitecto.

@@ -298,7 +298,10 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
     }
   ],
   "terrainInstructions": "Limestone plateau, southern ravines and eastern ridge. No navigable Kidron river, no Dome of the Rock or Ottoman walls. Household compounds are fictitious and avoid sacred platforms.",
-  "mainRouteLengthStraightTiles": 92.03,
+  "corridorStraightLengthsTiles": {
+    "main": 92.03,
+    "relief": 92.03
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -1093,9 +1096,9 @@ ES: Una remesa finita ayuda al refugio.
 
 ### Ridge road guide / Guía del camino de la cresta
 
-EN: Escort the local guide of ridge road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Locates a land route without making the Kidron navigable.
 
@@ -1156,7 +1159,7 @@ ES: Localiza una ruta terrestre sin hacer navegable el Cedrón.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "02-civilian-refuge-jerusalem.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1622,7 +1625,7 @@ ES: Los viajeros opcionales no pueden completar el registro principal.
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-goal / optional list from start | none | Escort the trader of olive road trader to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de comerciante del camino de los olivos hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-complete / side-4 completed | none | Olive road trader completed. Its stated benefit has been granted once. | Comerciante del camino de los olivos: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-lost / side-4 failed-optional | none | Olive road trader is unavailable after the loss of its unique participant or object. The main mission continues. | Comerciante del camino de los olivos: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of ridge road guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-complete / side-5 completed | none | Ridge road guide completed. Its stated benefit has been granted once. | Guía del camino de la cresta: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-lost / side-5 failed-optional | none | Ridge road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino de la cresta: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |

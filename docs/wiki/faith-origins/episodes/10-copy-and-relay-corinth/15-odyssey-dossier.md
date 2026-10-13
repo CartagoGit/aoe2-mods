@@ -307,7 +307,10 @@ ES: Su siguiente viaje queda fuera del mapa. No podemos afirmar que lo hemos vis
     }
   ],
   "terrainInstructions": "North road arrival and inland city court connect toward eastern inland post. Do not place Thessalonica or Macedonia inside Corinth bbox. Long-distance correspondence is off-map; harbor basin/movement needs native footprint audit.",
-  "mainRouteLengthStraightTiles": 179.58,
+  "corridorStraightLengthsTiles": {
+    "main": 179.58,
+    "relief": 179.58
+  },
   "interestSpacingTiles": [
     25,
     55
@@ -626,9 +629,9 @@ ES: Notas ficticias separadas desbloquean contexto atribuido sin convertirse en 
 
 ### Inland junction guide / Guía del cruce interior
 
-EN: Escort the local guide of inland junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged.
+EN: Escort the local guide of inland junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
 
-ES: Escolta al guía local de guía del cruce interior hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga.
+ES: Escolta al guía local de guía del cruce interior hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
 
 EN: Marks a parallel land route between relay courts.
 
@@ -689,7 +692,7 @@ ES: Señala un camino terrestre paralelo entre los patios del relevo.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief corridor",
+      "target": "relief surveyed land corridor",
       "resources": {},
       "onceFlag": "10-copy-and-relay-corinth.side-2.rewarded",
       "funding": "reserved-optional-stock",
@@ -1556,7 +1559,7 @@ ES: Las llegadas opcionales no completan el recuento de los dos portadores princ
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-1-goal / optional list from start | none | Recover both separate copies from local hospitality notes and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de notas locales de hospitalidad y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-1-complete / side-1 completed | none | Local hospitality notes completed. Its stated benefit has been granted once. | Notas locales de hospitalidad: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-1-lost / side-1 failed-optional | none | Local hospitality notes is unavailable after the loss of its unique participant or object. The main mission continues. | Notas locales de hospitalidad: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-2-goal / optional list from start | none | Escort the local guide of inland junction guide to the marked road junction. Benefit: mark the surveyed alternative corridor; terrain and enemy strength remain unchanged. | Escolta al guía local de guía del cruce interior hasta el cruce señalado. Ventaja: señala el corredor alternativo trazado; no cambia el terreno ni la fuerza enemiga. |
+| scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-2-goal / optional list from start | none | Escort the local guide of inland junction guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del cruce interior hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-2-complete / side-2 completed | none | Inland junction guide completed. Its stated benefit has been granted once. | Guía del cruce interior: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-2-lost / side-2 failed-optional | none | Inland junction guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del cruce interior: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.10-copy-and-relay-corinth.odyssey.side-3-goal / optional list from start | none | Escort the trader of courier provisions to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de provisiones de correo hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
