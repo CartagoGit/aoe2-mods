@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 7
+    "authoredDossierCount": 8
   },
   "continuity": {
     "recommendedPrevious": [
@@ -556,6 +556,8 @@ Relato de Eusebio presenta el conflicto como problema de unidad.
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/08-disputed-correspondence-alexandria/15-odyssey-dossier.md) — independent approval pending
 
 [Consulted source](https://www.newadvent.org/fathers/25022.htm): Eusebius VC II.61–64 checked for dispute background and imperial intervention.
 
