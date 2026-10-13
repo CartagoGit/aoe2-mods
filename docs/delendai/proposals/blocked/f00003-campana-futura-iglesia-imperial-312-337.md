@@ -203,7 +203,8 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Act**: act-2
 - **ScenarioId**: 11-council-record-escort-antioch
 - **Order**: 11
-- **HistoricalFrame**: 325 CE; geography=antioch; core=council-record-escort
+- **HistoricalFrame**: c.324–325 CE; exact date/order relative to imperial letter debated; geography=antioch; core=council-record-escort
+- **ChronologyCaution**: S13→S16 es orden de autoría editorial; no prueba que el sínodo siguiera a la carta imperial. La carta transmitida niega comunión, no acredita destitución del cargo; refiere Ancira como lugar futuro, no Nicea.
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/11-council-record-escort-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."

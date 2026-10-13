@@ -475,7 +475,7 @@ La fecha depende de reconstrucción; Hechos es narrativa teológica.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/09-district-production-corinth/15-odyssey-dossier.md) — independent approval pending
 
@@ -499,7 +499,7 @@ Ciudad de composición probable, no segura.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/10-copy-and-relay-corinth/15-odyssey-dossier.md) — independent approval pending
 
@@ -523,7 +523,7 @@ Lugar y fecha dependen de la hipótesis sobre destinatarios.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/11-distributed-preservation-ephesus/15-odyssey-dossier.md) — independent approval pending
 
@@ -547,7 +547,7 @@ Fecha/lugar convencionales, discutibles.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/12-bounded-community-aid-ephesus/15-odyssey-dossier.md) — independent approval pending
 
@@ -575,7 +575,7 @@ La fecha y ubicación se reconstruyen por indicios internos.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/13-consignment-and-correspondence-corinth/15-odyssey-dossier.md) — independent approval pending
 
@@ -599,7 +599,7 @@ Relato de Hechos no equivale a registro judicial independiente.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/14-administrative-intrigue-caesarea/15-odyssey-dossier.md) — independent approval pending
 
@@ -625,7 +625,7 @@ Testimonio romano retrospectivo y hostil; no persecución imperial general.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/15-evacuation-and-recovery-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
@@ -649,7 +649,7 @@ Datación y lugar siguen debatidos.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/16-comparative-copying-antioch/15-odyssey-dossier.md) — independent approval pending
 
@@ -677,7 +677,7 @@ Josefo participó en la guerra y escribe bajo patronazgo romano.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/02-after-the-siege/15-odyssey-dossier.md) — independent approval pending
 
@@ -721,7 +721,7 @@ No se fija el lugar como hecho.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/18-parallel-archive-logistics-antioch/15-odyssey-dossier.md) — independent approval pending
 
@@ -753,7 +753,7 @@ Fecha y lugar amplios; texto compuesto.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/19-hospitality-network-antioch/15-odyssey-dossier.md) — independent approval pending
 
@@ -781,7 +781,7 @@ La datación alrededor de 96 es aproximada.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/20-reconciliation-deliveries-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
@@ -809,7 +809,7 @@ Correspondencia provincial; no prueba política uniforme.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/03-the-governors-question/15-odyssey-dossier.md) — independent approval pending
 
@@ -837,7 +837,7 @@ Apología normativa, no censo de práctica.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/22-reading-and-relief-rome-ostia/15-odyssey-dossier.md) — independent approval pending
 
@@ -865,7 +865,7 @@ Fragmentario; fecha aproximada.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/23-petition-escort-sardes/15-odyssey-dossier.md) — independent approval pending
 
@@ -893,7 +893,7 @@ Relato martirial y memoria comunitaria; escala local.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/24-witness-and-evacuation-lyon/15-odyssey-dossier.md) — independent approval pending
 
@@ -923,7 +923,7 @@ Polemista contra grupos rivales.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/25-archive-comparison-lyon/15-odyssey-dossier.md) — independent approval pending
 
@@ -951,7 +951,7 @@ Defensa retórica, no descripción neutral.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/26-legal-record-network-carthage/15-odyssey-dossier.md) — independent approval pending
 
@@ -983,7 +983,7 @@ Texto compuesto; fecha cercana al evento, autoría discutida.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/27-household-aid-and-memory-carthage/15-odyssey-dossier.md) — independent approval pending
 
@@ -1011,7 +1011,7 @@ La aplicación varió localmente; papiros son testimonio regional.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/28-certificate-and-refuge-egypt-middle-nile/15-odyssey-dossier.md) — independent approval pending
 
@@ -1047,7 +1047,7 @@ Cartas cristianas comprometidas; alcance regional.
 
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/29-bounded-evacuation-carthage/15-odyssey-dossier.md) — independent approval pending
 
@@ -1083,7 +1083,7 @@ Eusebio escribe como superviviente; intensidad diversa por región.
 
 Knowledge: fictional personal local experience plus sourced reports from other regions. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
 [Authored episode dossier](episodes/04-a-different-dawn/15-odyssey-dossier.md) — independent approval pending
 

@@ -181,10 +181,10 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
 ```json
 {
   "bbox": [
-    36.12,
-    33.4,
-    36.48,
-    33.65
+    36.25,
+    33.47,
+    36.355,
+    33.535
   ],
   "terrainProfile": "damascus",
   "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
@@ -193,12 +193,12 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
     {
       "id": "hub-1",
       "centre": [
-        140.07,
-        180.59
+        61.4,
+        150.49
       ],
       "lonLat": [
         36.265,
-        33.514
+        33.508
       ],
       "name": {
         "en": "Western oasis post",
@@ -210,16 +210,16 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
     {
       "id": "hub-2",
       "centre": [
-        171.18,
-        182.61
+        168.06,
+        171.23
       ],
       "lonLat": [
         36.302,
-        33.512
+        33.502
       ],
       "name": {
-        "en": "City relay court",
-        "es-ES": "Patio de relevo urbano"
+        "en": "Southern city relay court",
+        "es-ES": "Patio de relevo del sector urbano sur"
       },
       "radiusTiles": 12,
       "certainty": "architect fictional activity district within real geography; footprint pending"
@@ -227,12 +227,12 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
     {
       "id": "hub-3",
       "centre": [
-        203.13,
-        171.52
+        277.6,
+        178.14
       ],
       "lonLat": [
         36.34,
-        33.523
+        33.5
       ],
       "name": {
         "en": "Eastern orchard station",
@@ -251,7 +251,8 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
         "hub-3"
       ],
       "mode": "land",
-      "widthTiles": 10
+      "widthTiles": 10,
+      "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
     },
     {
       "id": "relief",
@@ -262,13 +263,13 @@ ES: Un mensajero lleva un mensaje local. El relato posterior pertenece a otra pa
       ],
       "mode": "land",
       "widthTiles": 6,
-      "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+      "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
     }
   ],
-  "terrainInstructions": "Oasis and gardens on the Barada system; steep high ground west/northwest, not across the eastern orchard plain. Ancient canal alignments uncertain; no Umayyad mosque before706, no invented cross-desert Arabia leg.",
+  "terrainInstructions": "Local southern Damascus oasis frame; all fictional courts and both proposed land corridors stay south of the schematic Barada control. Western/northwestern uplands are mostly off-frame; eastern orchards remain lowland. Ancient branches, canal alignments and footprints remain unverified. No assumed ford, bridge, Umayyad mosque before 706, or guessed Arabia leg.",
   "corridorStraightLengthsTiles": {
-    "main": 65.0,
-    "relief": 65.0
+    "main": 218.42,
+    "relief": 218.42
   },
   "interestSpacingTiles": [
     25,
@@ -971,13 +972,13 @@ ES: Los suministros finitos viajan de forma local.
 
 ### Orchard path guide / Guía del sendero de huertos
 
-EN: Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
+EN: Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive main access.
 
-ES: Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
+ES: Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente ni cambia el terreno ni da acceso principal exclusivo.
 
-EN: Marks a valid land route beside canals.
+EN: Marks the narrower southern land alternative; no surveyed crossing is claimed.
 
-ES: Señala un camino terrestre válido junto a canales.
+ES: Señala la alternativa terrestre meridional más estrecha; no acredita ningún cruce topográfico.
 
 ```json
 {
@@ -1034,7 +1035,7 @@ ES: Señala un camino terrestre válido junto a canales.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief surveyed land corridor",
+      "target": "relief proposed southern land corridor",
       "resources": {},
       "onceFlag": "04-testimony-relay-damascus.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1477,7 +1478,7 @@ ES: Alojamiento voluntario, no itinerario paulino documentado.
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.handover / after fact-intro | collection-narrator | The campaign narrator now speaks from inherited records and accounts. | El narrador de la campaña toma la palabra a partir de escritos y relatos heredados. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.persona-intro / after handover | miriam-archive | He gives a reason for his journey. I keep his reason beside his name. I cannot use it to supply roads he never described. | Él da una razón para su viaje. Conservo esa razón junto a su nombre. No puedo usarla para añadir caminos que nunca describió. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.route-help / available from start; repeatable without effect | none | The relay stays in the Damascus oasis. Canal crossings require surveyed land access; Arabia is discussed off-map. | El relevo permanece en el oasis de Damasco. Los cruces de canales requieren accesos terrestres trazados; Arabia se trata fuera del mapa. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.route-help / available from start; repeatable without effect | none | Follow the southern oasis land circuit between the three disclosed courts. No river crossing is required or assumed. The narrower parallel relief path needs terrain and footprint verification; Arabia remains off-map. | Sigue el circuito terrestre del oasis sur entre los tres patios señalados. No exige ni presupone cruzar el río. El sendero paralelo de auxilio requiere verificar terreno y parcelas; Arabia queda fuera del mapa. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-goal / phase-1 active | none | Collect the fictional local message at the western oasis post. It is not a copy of Galatians. | Recoge el mensaje local ficticio en el puesto del oasis occidental. No es una copia de Gálatas. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.o1-receipt / o1 latched once | none | One fictional local message is registered; it does not add a historical witness. | Se registra un mensaje local ficticio; no añade un testigo histórico. |
@@ -1500,7 +1501,7 @@ ES: Alojamiento voluntario, no itinerario paulino documentado.
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-4-goal / optional list from start | none | Escort the trader of oasis consignment to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de remesa del oasis hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-4-complete / side-4 completed | none | Oasis consignment completed. Its stated benefit has been granted once. | Remesa del oasis: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-4-lost / side-4 failed-optional | none | Oasis consignment is unavailable after the loss of its unique participant or object. The main mission continues. | Remesa del oasis: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-5-goal / optional list from start | none | Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
+| scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-5-goal / optional list from start | none | Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive main access. | Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente ni cambia el terreno ni da acceso principal exclusivo. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-5-complete / side-5 completed | none | Orchard path guide completed. Its stated benefit has been granted once. | Guía del sendero de huertos: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-5-lost / side-5 failed-optional | none | Orchard path guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del sendero de huertos: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from visiting caravan families to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de familias de caravanas visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |
@@ -1587,6 +1588,7 @@ ES: Alojamiento voluntario, no itinerario paulino documentado.
       "courier and testimony token remain distinct",
       "no guessed itinerary across Arabia",
       "canal path cannot be rasterized as continuous land",
+      "All three receiver radii and both full-width corridors must remain on the southern bank of the schematic control; unresolved native canals block promotion, not trigger an invented bridge.",
       "skip all optional objectives and win at each difficulty",
       "complete all optionals at each difficulty without spending protected recovery stock",
       "save/load before and after every delivery, payment, optional reward and terminal latch",

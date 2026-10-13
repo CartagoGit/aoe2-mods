@@ -8253,10 +8253,10 @@
       "mapSize": 340,
       "mapPlan": {
         "bbox": [
-          36.12,
-          33.4,
-          36.48,
-          33.65
+          36.25,
+          33.47,
+          36.355,
+          33.535
         ],
         "terrainProfile": "damascus",
         "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
@@ -8265,12 +8265,12 @@
           {
             "id": "hub-1",
             "centre": [
-              140.07,
-              180.59
+              61.4,
+              150.49
             ],
             "lonLat": [
               36.265,
-              33.514
+              33.508
             ],
             "name": {
               "en": "Western oasis post",
@@ -8282,16 +8282,16 @@
           {
             "id": "hub-2",
             "centre": [
-              171.18,
-              182.61
+              168.06,
+              171.23
             ],
             "lonLat": [
               36.302,
-              33.512
+              33.502
             ],
             "name": {
-              "en": "City relay court",
-              "es-ES": "Patio de relevo urbano"
+              "en": "Southern city relay court",
+              "es-ES": "Patio de relevo del sector urbano sur"
             },
             "radiusTiles": 12,
             "certainty": "architect fictional activity district within real geography; footprint pending"
@@ -8299,12 +8299,12 @@
           {
             "id": "hub-3",
             "centre": [
-              203.13,
-              171.52
+              277.6,
+              178.14
             ],
             "lonLat": [
               36.34,
-              33.523
+              33.5
             ],
             "name": {
               "en": "Eastern orchard station",
@@ -8323,7 +8323,8 @@
               "hub-3"
             ],
             "mode": "land",
-            "widthTiles": 10
+            "widthTiles": 10,
+            "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
           },
           {
             "id": "relief",
@@ -8334,13 +8335,13 @@
             ],
             "mode": "land",
             "widthTiles": 6,
-            "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+            "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
           }
         ],
-        "terrainInstructions": "Oasis and gardens on the Barada system; steep high ground west/northwest, not across the eastern orchard plain. Ancient canal alignments uncertain; no Umayyad mosque before706, no invented cross-desert Arabia leg.",
+        "terrainInstructions": "Local southern Damascus oasis frame; all fictional courts and both proposed land corridors stay south of the schematic Barada control. Western/northwestern uplands are mostly off-frame; eastern orchards remain lowland. Ancient branches, canal alignments and footprints remain unverified. No assumed ford, bridge, Umayyad mosque before 706, or guessed Arabia leg.",
         "corridorStraightLengthsTiles": {
-          "main": 65.0,
-          "relief": 65.0
+          "main": 218.42,
+          "relief": 218.42
         },
         "interestSpacingTiles": [
           25,
@@ -8670,6 +8671,7 @@
           "courier and testimony token remain distinct",
           "no guessed itinerary across Arabia",
           "canal path cannot be rasterized as continuous land",
+          "All three receiver radii and both full-width corridors must remain on the southern bank of the schematic control; unresolved native canals block promotion, not trigger an invented bridge.",
           "skip all optional objectives and win at each difficulty",
           "complete all optionals at each difficulty without spending protected recovery stock",
           "save/load before and after every delivery, payment, optional reward and terminal latch",
@@ -9329,12 +9331,12 @@
           },
           "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
           "rationale": {
-            "en": "Marks a valid land route beside canals.",
-            "es-ES": "Señala un camino terrestre válido junto a canales."
+            "en": "Marks the narrower southern land alternative; no surveyed crossing is claimed.",
+            "es-ES": "Señala la alternativa terrestre meridional más estrecha; no acredita ningún cruce topográfico."
           },
           "text": {
-            "en": "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-            "es-ES": "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+            "en": "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive main access.",
+            "es-ES": "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente ni cambia el terreno ni da acceso principal exclusivo."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -9390,7 +9392,7 @@
           "effects": [
             {
               "kind": "mark-alternative-route",
-              "target": "relief surveyed land corridor",
+              "target": "relief proposed southern land corridor",
               "resources": {},
               "onceFlag": "04-testimony-relay-damascus.side-5.rewarded",
               "funding": "reserved-optional-stock",
@@ -10002,8 +10004,8 @@
           "id": "route-help",
           "key": "scenario.faith-origins.04-testimony-relay-damascus.odyssey.route-help",
           "text": {
-            "en": "The relay stays in the Damascus oasis. Canal crossings require surveyed land access; Arabia is discussed off-map.",
-            "es-ES": "El relevo permanece en el oasis de Damasco. Los cruces de canales requieren accesos terrestres trazados; Arabia se trata fuera del mapa."
+            "en": "Follow the southern oasis land circuit between the three disclosed courts. No river crossing is required or assumed. The narrower parallel relief path needs terrain and footprint verification; Arabia remains off-map.",
+            "es-ES": "Sigue el circuito terrestre del oasis sur entre los tres patios señalados. No exige ni presupone cruzar el río. El sendero paralelo de auxilio requiere verificar terreno y parcelas; Arabia queda fuera del mapa."
           },
           "condition": "available from start; repeatable without effect",
           "narrator": "none",
@@ -10011,14 +10013,15 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "The relay stays in the Damascus oasis. Canal crossings require surveyed land access; Arabia is discussed off-map."
+              "Follow the southern oasis land circuit between the three disclosed courts. No river crossing is required or assumed. The narrower parallel relief path needs terrain and footprint verification; Arabia remains off-map."
             ],
             "es-ES": [
-              "El relevo permanece en el oasis de Damasco. Los cruces de canales requieren accesos terrestres trazados; Arabia se trata fuera del mapa."
+              "Sigue el circuito terrestre del oasis sur entre los tres patios señalados. No exige ni presupone cruzar el río. El sendero paralelo de auxilio requiere verificar terreno y parcelas; Arabia queda fuera",
+              "del mapa."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 11
+          "voiceDurationSecondsEstimated": 16
         },
         {
           "id": "economy-help",
@@ -10508,8 +10511,8 @@
           "id": "side-5-goal",
           "key": "scenario.faith-origins.04-testimony-relay-damascus.odyssey.side-5-goal",
           "text": {
-            "en": "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-            "es-ES": "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+            "en": "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive main access.",
+            "es-ES": "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente ni cambia el terreno ni da acceso principal exclusivo."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -10517,16 +10520,16 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain",
-              "known without this task."
+              "Escort the local guide of orchard path guide to the marked road junction. Benefit: Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive",
+              "main access."
             ],
             "es-ES": [
-              "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores",
-              "principales ya son conocidos sin esta tarea."
+              "Escolta al guía local de guía del sendero de huertos hasta el cruce señalado. Ventaja: Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente",
+              "ni cambia el terreno ni da acceso principal exclusivo."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 18
+          "voiceDurationSecondsEstimated": 19
         },
         {
           "id": "side-5-complete",
@@ -84381,7 +84384,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84430,7 +84433,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84479,7 +84482,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84541,7 +84544,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84590,7 +84593,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84648,7 +84651,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84697,7 +84700,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84755,7 +84758,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84840,7 +84843,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": true
     },
     {
@@ -84905,7 +84908,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -84963,7 +84966,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85021,7 +85024,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85079,7 +85082,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": true
     },
     {
@@ -85137,7 +85140,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85195,7 +85198,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85262,7 +85265,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85320,7 +85323,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85385,7 +85388,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85443,7 +85446,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85520,7 +85523,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85600,7 +85603,7 @@
         "mode": "inherited letters and later sources",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -85665,7 +85668,7 @@
         "mode": "fictional personal local experience plus sourced reports from other regions",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": true
     }
   ],
@@ -86991,17 +86994,17 @@
           },
           "lonLat": [
             36.265,
-            33.514
+            33.508
           ]
         },
         {
           "name": {
-            "en": "City relay court",
-            "es-ES": "Patio de relevo urbano"
+            "en": "Southern city relay court",
+            "es-ES": "Patio de relevo del sector urbano sur"
           },
           "lonLat": [
             36.302,
-            33.512
+            33.502
           ]
         },
         {
@@ -87011,7 +87014,7 @@
           },
           "lonLat": [
             36.34,
-            33.523
+            33.5
           ]
         }
       ],
@@ -87202,8 +87205,8 @@
             "es-ES": "guía del sendero de huertos"
           },
           "rationale": {
-            "en": "Marks a valid land route beside canals.",
-            "es-ES": "Señala un camino terrestre válido junto a canales."
+            "en": "Marks the narrower southern land alternative; no surveyed crossing is claimed.",
+            "es-ES": "Señala la alternativa terrestre meridional más estrecha; no acredita ningún cruce topográfico."
           },
           "kind": "guide",
           "corridorIds": [
@@ -87213,12 +87216,12 @@
           "information": {
             "effect": {
               "kind": "mark-alternative-route",
-              "target": "relief surveyed land corridor",
+              "target": "relief proposed southern land corridor",
               "corridorId": "relief"
             },
             "benefit": {
-              "en": "Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-              "es-ES": "Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+              "en": "Mark the proposed southern relief circuit once. This supplies route information; no verified bridge, terrain change or exclusive main access.",
+              "es-ES": "Señala una vez el circuito meridional de auxilio propuesto. Aporta información de ruta; no acredita un puente ni cambia el terreno ni da acceso principal exclusivo."
             }
           }
         },
@@ -87242,15 +87245,16 @@
           ]
         }
       ],
-      "terrainInstructions": "Oasis and gardens on the Barada system; steep high ground west/northwest, not across the eastern orchard plain. Ancient canal alignments uncertain; no Umayyad mosque before706, no invented cross-desert Arabia leg.",
+      "terrainInstructions": "Local southern Damascus oasis frame; all fictional courts and both proposed land corridors stay south of the schematic Barada control. Western/northwestern uplands are mostly off-frame; eastern orchards remain lowland. Ancient branches, canal alignments and footprints remain unverified. No assumed ford, bridge, Umayyad mosque before 706, or guessed Arabia leg.",
       "routeHelp": {
-        "en": "The relay stays in the Damascus oasis. Canal crossings require surveyed land access; Arabia is discussed off-map.",
-        "es-ES": "El relevo permanece en el oasis de Damasco. Los cruces de canales requieren accesos terrestres trazados; Arabia se trata fuera del mapa."
+        "en": "Follow the southern oasis land circuit between the three disclosed courts. No river crossing is required or assumed. The narrower parallel relief path needs terrain and footprint verification; Arabia remains off-map.",
+        "es-ES": "Sigue el circuito terrestre del oasis sur entre los tres patios señalados. No exige ni presupone cruzar el río. El sendero paralelo de auxilio requiere verificar terreno y parcelas; Arabia queda fuera del mapa."
       },
       "qaCases": [
         "courier and testimony token remain distinct",
         "no guessed itinerary across Arabia",
-        "canal path cannot be rasterized as continuous land"
+        "canal path cannot be rasterized as continuous land",
+        "All three receiver radii and both full-width corridors must remain on the southern bank of the schematic control; unresolved native canals block promotion, not trigger an invented bridge."
       ],
       "episodeId": "04-testimony-relay-damascus",
       "startingResources": {
@@ -87296,7 +87300,8 @@
             "hub-3"
           ],
           "mode": "land",
-          "widthTiles": 10
+          "widthTiles": 10,
+          "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
         },
         {
           "id": "relief",
@@ -87307,7 +87312,7 @@
           ],
           "mode": "land",
           "widthTiles": 6,
-          "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+          "routePolicy": "Same-bank southern local circuit; diagram centreline only. Parallel path offsets, canal avoidance and traversable full width require native verification."
         }
       ],
       "dramatizationNotice": {
@@ -87385,6 +87390,12 @@
           "historicalOutcomeUnchanged": true,
           "costOfOpportunity": "Voluntary arrivals protect distinct optional households; no substitution for main participants."
         }
+      ],
+      "mapBBox": [
+        36.25,
+        33.47,
+        36.355,
+        33.535
       ]
     },
     {

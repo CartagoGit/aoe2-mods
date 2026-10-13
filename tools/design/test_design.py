@@ -362,6 +362,19 @@ class DesignAcceptanceTests(unittest.TestCase):
         self.assertTrue(any("share one authoring slice" in error for error in errors))
         self.assertTrue(any("promotion precedes" in error for error in errors))
 
+    def test_odyssey_status_rejects_false_approval_and_stale_artifact_coverage(self):
+        assignments = json.loads((ROOT / "docs/design/assignments.json").read_text())
+        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_assignments.validator.py"))["audit_assignments"]
+        self.assertEqual(audit(ROOT, self.odysseys, assignments), [])
+        for status in ("approved-complete-dossier", "selection only"):
+            with self.subTest(status=status):
+                invalid = copy.deepcopy(assignments)
+                invalid["assignments"][0]["episodeSlices"][0]["dossierStatus"] = status
+                self.assertTrue(any("dossier status diverges" in error for error in audit(ROOT, self.odysseys, invalid)))
+        missing = copy.deepcopy(self.odysseys)
+        missing[0]["episodes"] = []
+        self.assertTrue(any("dossier status diverges" in error for error in audit(ROOT, missing, assignments)))
+
     def test_clipped_geographic_layer_keeps_crossing_without_interior_vertices(self):
         helper = runpy.run_path(str(ROOT / "tools/design/geographic_layers.helper.py"))
         layer = {

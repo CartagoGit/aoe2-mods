@@ -5,6 +5,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
+DRAFT_DOSSIER_STATUS = 'authored full draft; independent source/geometry/native/balance gates pending'
+SELECTION_ONLY_STATUS = 'selection and mechanic authored; full world/objective/balance/screen/map dossier pending'
+
+
+def authored_dossier_status(campaign, episode_id):
+    """Describe artifact coverage; this renderer cannot issue an approval."""
+    return (DRAFT_DOSSIER_STATUS
+            if any(e['id'] == episode_id for e in campaign.get('episodes', []))
+            else SELECTION_ONLY_STATUS)
+
 
 def load_json(relative):
     return json.loads((ROOT / relative).read_text(encoding='utf-8'))

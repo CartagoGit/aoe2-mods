@@ -33530,6 +33530,3121 @@
           "voiceDurationSecondsEstimated": 7
         }
       ]
+    },
+    {
+      "id": "11-council-record-escort-antioch",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "Before the Lakeside Council",
+        "es-ES": "Antes del concilio junto al lago"
+      },
+      "dateRange": "c.324–325 CE; exact date and order relative to the imperial letter debated",
+      "event": {
+        "en": "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets are fictional.",
+        "es-ES": "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos. La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes locales son ficticios."
+      },
+      "historicalOutcome": {
+        "en": "Three fictional packets reached their assigned courts and their original clerks returned after their own delivery receipts. This local work does not authenticate the transmitted letter or settle its accusations, author or chronology. Its reference to Ancyra remains distinct from the later council at Nicaea.",
+        "es-ES": "Tres paquetes ficticios llegaron a sus patios asignados y sus escribientes originales regresaron tras sus propios recibos de entrega. Este trabajo local no autentica la carta transmitida ni resuelve sus acusaciones, autoría o cronología. Su referencia a Ancira sigue siendo distinta del concilio posterior de Nicea."
+      },
+      "sourcePassages": [
+        {
+          "classification": "architect interpretation; independent historical approval pending",
+          "selectedClaim": {
+            "en": "A transmitted synodal letter attributed to Antioch around324–325 reports refusing communion to three bishops and names a future meeting at Ancyra. Its exact date, authorship, textual history and order relative to imperial intervention remain disputed.",
+            "es-ES": "Una carta sinodal transmitida y atribuida a Antioquía hacia324–325 refiere negar comunión a tres obispos y nombra una reunión futura en Ancira. Su fecha exacta, autoría, historia textual y orden respecto a la intervención imperial siguen discutidos."
+          },
+          "architectCorrection": {
+            "date": "2026-10-13",
+            "author": "gpt-6",
+            "approval": "independent historical review pending",
+            "reason": "Directly read transmitted letter, retroversion/translation note and competing scholarly reconstructions; refusal of communion is not demonstrated loss of office. The display order is an editorial sequence, not a settled relative date."
+          }
+        },
+        {
+          "consultedUrl": "https://www.newadvent.org/fathers/26011.htm",
+          "passage": "Socrates HE I.25 checked only for post-Nicaea Antioch context; it does not establish the selected pre-Nicaea suspension claim. Wiley article not consulted.",
+          "limitations": "Potential confusion with the Antioch synod after Nicaea; specialist article remains unconsulted.",
+          "status": "unavailable",
+          "supportedClaim": "The proposed pre-Nicaea Antioch synod and suspensions are not confirmed by the passage actually checked. / El sínodo antioqueno previo a Nicea y las suspensiones propuestas no quedan confirmados por el pasaje realmente consultado.",
+          "consultationDate": "2026-10-12",
+          "coverageActuallyRead": "Socrates passage checked, but it does not support this event.",
+          "approval": "collection only; exact claim still requires architect and independent review"
+        },
+        {
+          "consultedUrl": "https://www.fourthcentury.com/wp-content/uploads/2024/05/Dok-20-Urkunde-18-1.pdf",
+          "passage": "Urk18/Dok20, editorial note and §§1–15 including colophon",
+          "coverageActuallyRead": "Architect read the displayed seven-page primary-text translation/Greek retroversion, especially gathering at Antioch, non-communion to Theodotus/Narcissus/Eusebius and future Ancyra.",
+          "limitations": "Greek is a reconstruction from Syriac, not a preserved original. English translator Aaron West. Header/colophon and Greek heading differ on recipient; no exact venue, attested escort or removal from episcopal office. January325 in editorial header is a reconstruction, not the letter’s date.",
+          "consultationDate": "2026-10-13",
+          "approval": "architect interpretation; independent approval pending"
+        },
+        {
+          "consultedUrl": "https://kath-akademie-bayern.de/en/mediathek-eintrag/das-schreiben-der-synode-von-antiochia-324-325-urk-18-ueberlieferungsgeschichtliche-einordnung-edition-uebersetzung-und-kommentar/",
+          "passage": "Matthias Simperl presentation, Scholarly disputes, transmission and324/25 revaluations sections",
+          "coverageActuallyRead": "Architect read authenticity debate, four Syriac witness discussion and argument placing synod before Constantine intervention.",
+          "limitations": "Presentation of an academic argument, not full critical monograph consultation; motives and attribution to Eustathius remain the author’s reconstruction.",
+          "consultationDate": "2026-10-13",
+          "approval": "architect interpretation; independent approval pending"
+        },
+        {
+          "consultedUrl": "https://theologicalstudies.net/wp-content/uploads/2025/09/The-Council-of-Nicaea-325_-Reassessing-the-Role-of-Eusebius-of-Caesarea.pdf",
+          "passage": "Samuel Fernandez2025, Ossius in Alexandria/Antioch, printed378–379 andnotes66–68",
+          "coverageActuallyRead": "Architect read these selected pages, including early325 after Ossius Alexandrianstay, the letter as sole testimony and disagreement with Simperl.",
+          "limitations": "Selected pages only, not full25-page article. Reconstruction differs from Simperl; no exact meeting date or court/escort footprint. The modern scholarly date/order is not an ancient subscription.",
+          "consultationDate": "2026-10-13",
+          "approval": "architect interpretation; independent approval pending"
+        }
+      ],
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "coreMechanic": "council-record-escort",
+      "geographyId": "antioch",
+      "mapSize": 360,
+      "mapPlan": {
+        "bbox": [
+          36.14,
+          36.185,
+          36.205,
+          36.25
+        ],
+        "terrainProfile": "antioch",
+        "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
+        "projection": "WGS84, cosine-corrected longitude, square padding",
+        "hubs": [
+          {
+            "id": "hub-1",
+            "centre": [
+              169.55,
+              226.35
+            ],
+            "lonLat": [
+              36.17,
+              36.208
+            ],
+            "name": {
+              "en": "Common local copying court",
+              "es-ES": "Patio común local de copias"
+            },
+            "radiusTiles": 12,
+            "certainty": "architect fictional activity district within real geography; footprint pending"
+          },
+          {
+            "id": "hub-2",
+            "centre": [
+              145.68,
+              147.45
+            ],
+            "lonLat": [
+              36.164,
+              36.224
+            ],
+            "name": {
+              "en": "Fictional northwestern reception court",
+              "es-ES": "Patio receptor ficticio noroccidental"
+            },
+            "radiusTiles": 12,
+            "certainty": "architect fictional activity district within real geography; footprint pending"
+          },
+          {
+            "id": "hub-3",
+            "centre": [
+              241.17,
+              172.1
+            ],
+            "lonLat": [
+              36.188,
+              36.219
+            ],
+            "name": {
+              "en": "Fictional eastern reception court",
+              "es-ES": "Patio receptor ficticio oriental"
+            },
+            "radiusTiles": 12,
+            "certainty": "architect fictional activity district within real geography; footprint pending"
+          },
+          {
+            "id": "hub-4",
+            "centre": [
+              237.19,
+              48.82
+            ],
+            "lonLat": [
+              36.187,
+              36.244
+            ],
+            "name": {
+              "en": "Fictional northern reception court",
+              "es-ES": "Patio receptor ficticio norteño"
+            },
+            "radiusTiles": 12,
+            "certainty": "architect fictional activity district within real geography; footprint pending"
+          },
+          {
+            "id": "hub-5",
+            "centre": [
+              225.25,
+              255.94
+            ],
+            "lonLat": [
+              36.184,
+              36.202
+            ],
+            "name": {
+              "en": "Ordinary southeastern work shelter",
+              "es-ES": "Cobertizo ordinario sureste de trabajo"
+            },
+            "radiusTiles": 12,
+            "certainty": "architect fictional activity district within real geography; footprint pending"
+          }
+        ],
+        "corridors": [
+          {
+            "id": "northwest-record-circuit",
+            "hubOrder": [
+              "hub-1",
+              "hub-2"
+            ],
+            "mode": "land",
+            "widthTiles": 10
+          },
+          {
+            "id": "east-record-circuit",
+            "hubOrder": [
+              "hub-1",
+              "hub-3"
+            ],
+            "mode": "land",
+            "widthTiles": 10
+          },
+          {
+            "id": "north-record-circuit",
+            "hubOrder": [
+              "hub-1",
+              "hub-2",
+              "hub-4"
+            ],
+            "mode": "land",
+            "widthTiles": 10
+          },
+          {
+            "id": "east-north-alternative",
+            "hubOrder": [
+              "hub-1",
+              "hub-3",
+              "hub-4"
+            ],
+            "mode": "land",
+            "widthTiles": 8
+          },
+          {
+            "id": "southeast-work-link",
+            "hubOrder": [
+              "hub-1",
+              "hub-5",
+              "hub-3"
+            ],
+            "mode": "land",
+            "widthTiles": 8
+          }
+        ],
+        "terrainInstructions": "One local Antioch frame east of the schematic Orontes reach, with north-valley routes and Silpius foothill context south/east. Five fictional work/receiving courts do not identify an actual synodal church, episcopal house, imperial envoy route or three accused bishops’ residences. No mandatory river or island crossing. Do not use Golden Octagon dedicated 341, later city walls, crusader fort, Ottoman urban fabric or a modern Antakya grid as 324/325 structures. Some earlier churches existed, but exact synod venue and dated footprints are unverified. Ancient banks, road/elevation phases and paths need independent audit.",
+        "corridorStraightLengthsTiles": {
+          "northwest-record-circuit": 82.43,
+          "east-record-circuit": 89.85,
+          "north-record-circuit": 216.98,
+          "east-north-alternative": 213.19,
+          "southeast-work-link": 148.41
+        },
+        "interestSpacingTiles": [
+          25,
+          55
+        ],
+        "minimumUsableAreaFraction": 0.45,
+        "activeAreaPolicy": "main districts, finite supply hinterland and six optional circuits; survey usable terrain, not rectangle area",
+        "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+        "geographicLayers": [
+          {
+            "assetId": "ne-odyssey-coastline",
+            "interpretation": "modern regional shoreline control; not ancient harbor geometry"
+          },
+          {
+            "assetId": "regional-rivers_lake_centerlines",
+            "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
+          }
+        ],
+        "schematicWaterControl": {
+          "coordinates": [
+            [
+              36.17,
+              36.1
+            ],
+            [
+              36.16,
+              36.19
+            ],
+            [
+              36.155,
+              36.205
+            ],
+            [
+              36.135,
+              36.25
+            ],
+            [
+              36.07,
+              36.29
+            ]
+          ],
+          "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+          "renderAs": "river-line"
+        },
+        "performanceBudget": {
+          "activeMilitaryCap": 240,
+          "activeCivilianCap": 80,
+          "decorativeObjectsCap": 1600,
+          "activeTriggersTargetMax": 350,
+          "benchmarkStatus": "pending game measurement"
+        },
+        "asset": "docs/design/maps/imperial-church/odyssey/11-council-record-escort-antioch.svg"
+      },
+      "worldContract": {
+        "version": 1,
+        "classification": "authored design specification; not native implementation",
+        "entities": [
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.setting-note-1",
+            "role": "fictional-local-working-note",
+            "initialHub": "hub-2",
+            "offsetTiles": [
+              -14,
+              8
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.communion-note-1",
+            "role": "fictional-local-working-note",
+            "initialHub": "hub-3",
+            "offsetTiles": [
+              0,
+              8
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.venue-note-1",
+            "role": "fictional-local-working-note",
+            "initialHub": "hub-4",
+            "offsetTiles": [
+              14,
+              8
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.setting-packet-1",
+            "role": "fictional-local-labelled-packet",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -14,
+              22
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.communion-packet-1",
+            "role": "fictional-local-labelled-packet",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              0,
+              22
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.venue-packet-1",
+            "role": "fictional-local-labelled-packet",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              14,
+              22
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+            "role": "fictional-original-local-clerk",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -14,
+              36
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+            "role": "fictional-original-local-clerk",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -12,
+              36
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.original-clerks-3",
+            "role": "fictional-original-local-clerk",
+            "initialHub": "hub-1",
+            "offsetTiles": [
+              -10,
+              36
+            ],
+            "identity": "explicitly fictional gameplay identity",
+            "finite": true,
+            "replacement": "none; no free resurrection",
+            "initiallyDelivered": false,
+            "originRule": "separate pickup position outside every receiving zone",
+            "generationPolicy": "preplaced and available",
+            "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness"
+          }
+        ],
+        "zones": [
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.destination-1",
+            "hub": "hub-1",
+            "offsetTiles": [
+              0,
+              0
+            ],
+            "radiusTiles": 3,
+            "purpose": "fictional receiving district; not an excavated ancient address"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.destination-2",
+            "hub": "hub-2",
+            "offsetTiles": [
+              0,
+              0
+            ],
+            "radiusTiles": 3,
+            "purpose": "fictional receiving district; not an excavated ancient address"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.destination-3",
+            "hub": "hub-3",
+            "offsetTiles": [
+              0,
+              0
+            ],
+            "radiusTiles": 3,
+            "purpose": "fictional receiving district; not an excavated ancient address"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.destination-4",
+            "hub": "hub-4",
+            "offsetTiles": [
+              0,
+              0
+            ],
+            "radiusTiles": 3,
+            "purpose": "fictional receiving district; not an excavated ancient address"
+          },
+          {
+            "id": "imperial-church.11-council-record-escort-antioch.destination-5",
+            "hub": "hub-5",
+            "offsetTiles": [
+              0,
+              0
+            ],
+            "radiusTiles": 3,
+            "purpose": "fictional receiving district; not an excavated ancient address"
+          }
+        ],
+        "objectGroups": {
+          "setting-note": [
+            "imperial-church.11-council-record-escort-antioch.setting-note-1"
+          ],
+          "communion-note": [
+            "imperial-church.11-council-record-escort-antioch.communion-note-1"
+          ],
+          "venue-note": [
+            "imperial-church.11-council-record-escort-antioch.venue-note-1"
+          ],
+          "setting-packet": [
+            "imperial-church.11-council-record-escort-antioch.setting-packet-1"
+          ],
+          "communion-packet": [
+            "imperial-church.11-council-record-escort-antioch.communion-packet-1"
+          ],
+          "venue-packet": [
+            "imperial-church.11-council-record-escort-antioch.venue-packet-1"
+          ],
+          "original-clerks": [
+            "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+            "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+            "imperial-church.11-council-record-escort-antioch.original-clerks-3"
+          ]
+        },
+        "survivorGroups": [
+          {
+            "entities": [
+              "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+              "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+              "imperial-church.11-council-record-escort-antioch.original-clerks-3"
+            ],
+            "minimumAliveOrAlreadySafe": 3
+          }
+        ],
+        "entityIdentityPolicy": "same explicit identity persists across all phases and save/load; no substitution by a similarly named unit"
+      },
+      "objectivePlan": [
+        {
+          "id": "o1",
+          "phase": "phase-1",
+          "after": [],
+          "text": {
+            "en": "Collect the three distinct original local notes and deliver each to common copying.",
+            "es-ES": "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+          },
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "collected",
+                "id": "req-1",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.setting-note-1"
+                ],
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-2",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.setting-note-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.setting-note-1": "imperial-church.11-council-record-escort-antioch.destination-1"
+                },
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "collected",
+                "id": "req-3",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.communion-note-1"
+                ],
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-4",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.communion-note-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.communion-note-1": "imperial-church.11-council-record-escort-antioch.destination-1"
+                },
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "collected",
+                "id": "req-5",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.venue-note-1"
+                ],
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-6",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.venue-note-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.venue-note-1": "imperial-church.11-council-record-escort-antioch.destination-1"
+                },
+                "oncePerEntity": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "receiptText": {
+            "en": "Three separate local originals are ready, without merging their subjects.",
+            "es-ES": "Tres originales locales separados están preparados, sin fusionar sus asuntos."
+          },
+          "personaReaction": {
+            "en": "A report, a decision, an expectation. One label would have done an injustice to all three.",
+            "es-ES": "Un informe, una decisión, una expectativa. Una etiqueta habría hecho una injusticia a los tres."
+          }
+        },
+        {
+          "id": "o2",
+          "phase": "phase-2",
+          "after": [
+            "o1"
+          ],
+          "text": {
+            "en": "Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note.",
+            "es-ES": "Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida."
+          },
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "resource-transaction",
+                "amounts": {
+                  "wood": 90,
+                  "gold": 30
+                },
+                "id": "req-1",
+                "receivingZones": [
+                  "imperial-church.11-council-record-escort-antioch.destination-1"
+                ],
+                "allocations": {
+                  "imperial-church.11-council-record-escort-antioch.destination-1": {
+                    "wood": 90,
+                    "gold": 30
+                  }
+                },
+                "account": "spendable",
+                "paidFlag": "imperial-church.11-council-record-escort-antioch.o2.req-1.paid",
+                "once": true,
+                "atomic": true
+              },
+              {
+                "kind": "derived-token",
+                "once": true,
+                "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+                "id": "req-2",
+                "inputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.setting-note-1"
+                ],
+                "outputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.setting-packet-1"
+                ],
+                "requiredPaymentReceipts": [
+                  {
+                    "flag": "imperial-church.11-council-record-escort-antioch.o2.req-1.paid",
+                    "fromObjective": "o2",
+                    "amounts": {
+                      "wood": 90,
+                      "gold": 30
+                    },
+                    "newDebit": false
+                  }
+                ]
+              },
+              {
+                "kind": "derived-token",
+                "once": true,
+                "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+                "id": "req-3",
+                "inputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.communion-note-1"
+                ],
+                "outputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.communion-packet-1"
+                ],
+                "requiredPaymentReceipts": [
+                  {
+                    "flag": "imperial-church.11-council-record-escort-antioch.o2.req-1.paid",
+                    "fromObjective": "o2",
+                    "amounts": {
+                      "wood": 90,
+                      "gold": 30
+                    },
+                    "newDebit": false
+                  }
+                ]
+              },
+              {
+                "kind": "derived-token",
+                "once": true,
+                "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+                "id": "req-4",
+                "inputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.venue-note-1"
+                ],
+                "outputEntities": [
+                  "imperial-church.11-council-record-escort-antioch.venue-packet-1"
+                ],
+                "requiredPaymentReceipts": [
+                  {
+                    "flag": "imperial-church.11-council-record-escort-antioch.o2.req-1.paid",
+                    "fromObjective": "o2",
+                    "amounts": {
+                      "wood": 90,
+                      "gold": 30
+                    },
+                    "newDebit": false
+                  }
+                ]
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "receiptText": {
+            "en": "Three packets have distinct inputs and the same exact funded receipt; no second debit.",
+            "es-ES": "Tres paquetes tienen entradas distintas y el mismo recibo exacto de financiación; sin segundo cobro."
+          },
+          "personaReaction": {
+            "en": "The workshop charges once. A grand title must not charge three times for the same ink.",
+            "es-ES": "El taller cobra una vez. Un título grandioso no debe cobrar tres veces por la misma tinta."
+          }
+        },
+        {
+          "id": "o3",
+          "phase": "phase-3",
+          "after": [
+            "o2"
+          ],
+          "text": {
+            "en": "Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there.",
+            "es-ES": "Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro."
+          },
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-state",
+                "requiredCount": 3,
+                "state": "arrived",
+                "id": "req-1",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-3"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-1": "imperial-church.11-council-record-escort-antioch.destination-2",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-2": "imperial-church.11-council-record-escort-antioch.destination-3",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-3": "imperial-church.11-council-record-escort-antioch.destination-4"
+                },
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-2",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.setting-packet-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.setting-packet-1": "imperial-church.11-council-record-escort-antioch.destination-2"
+                },
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-3",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.communion-packet-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.communion-packet-1": "imperial-church.11-council-record-escort-antioch.destination-3"
+                },
+                "oncePerEntity": true
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 1,
+                "state": "arrived",
+                "id": "req-4",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.venue-packet-1"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.venue-packet-1": "imperial-church.11-council-record-escort-antioch.destination-4"
+                },
+                "oncePerEntity": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "receiptText": {
+            "en": "Each original clerk and its correctly labelled packet reached its own assigned court.",
+            "es-ES": "Cada escribiente original y su paquete bien rotulado llegaron a su propio patio asignado."
+          },
+          "personaReaction": {
+            "en": "The northern door does not become Ancyra merely because its packet mentions it.",
+            "es-ES": "La puerta norteña no se convierte en Ancira porque su paquete la mencione."
+          }
+        },
+        {
+          "id": "o4",
+          "phase": "phase-4",
+          "after": [
+            "o3"
+          ],
+          "text": {
+            "en": "After their individual receiving-court receipts, observe the three original clerks’ departures and return all three to common work.",
+            "es-ES": "Tras sus recibos individuales de los patios receptores, observa las salidas de los tres escribientes originales y devuelve a los tres al trabajo común."
+          },
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "ordered-departure",
+                "receiptObjective": "o3",
+                "receiptRequirement": "req-1",
+                "departureEnabledOnlyAfterReceipt": true,
+                "id": "req-1",
+                "departingEntities": [
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-3"
+                ]
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 3,
+                "state": "arrived",
+                "arrivalAfterDeparture": {
+                  "objective": "o4",
+                  "requirement": "req-1"
+                },
+                "id": "req-2",
+                "entities": [
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-1",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-2",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-3"
+                ],
+                "destinations": {
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-1": "imperial-church.11-council-record-escort-antioch.destination-1",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-2": "imperial-church.11-council-record-escort-antioch.destination-1",
+                  "imperial-church.11-council-record-escort-antioch.original-clerks-3": "imperial-church.11-council-record-escort-antioch.destination-1"
+                },
+                "oncePerEntity": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "receiptText": {
+            "en": "The same three original clerks returned after their own receipt-backed departures.",
+            "es-ES": "Los mismos tres escribientes originales regresaron tras sus propias salidas respaldadas por recibo."
+          },
+          "personaReaction": {
+            "en": "The people came home. Their packets do not oblige history to become simpler.",
+            "es-ES": "Las personas volvieron a casa. Sus paquetes no obligan a la historia a hacerse más sencilla."
+          }
+        }
+      ],
+      "goals": [
+        {
+          "en": "Collect the three distinct original local notes and deliver each to common copying.",
+          "es-ES": "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+        },
+        {
+          "en": "Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note.",
+          "es-ES": "Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida."
+        },
+        {
+          "en": "Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there.",
+          "es-ES": "Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro."
+        },
+        {
+          "en": "After their individual receiving-court receipts, observe the three original clerks’ departures and return all three to common work.",
+          "es-ES": "Tras sus recibos individuales de los patios receptores, observa las salidas de los tres escribientes originales y devuelve a los tres al trabajo común."
+        }
+      ],
+      "historicalBrief": {
+        "en": "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets are fictional.",
+        "es-ES": "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos. La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes locales son ficticios."
+      },
+      "sourceIds": [
+        "odyssey-source.imperial-church.11-council-record-escort-antioch"
+      ],
+      "dramatizationNotice": {
+        "en": "The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.",
+        "es-ES": "Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida."
+      },
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "editorialReviewNotes": {
+        "date": "2026-10-13",
+        "author": "gpt-6",
+        "status": "independent historical/editorial approval pending",
+        "voice": "Marcus recalls fictional family labels and later clerical practice, without prebirth presence or knowledge of modern critical scholarship. The common narrator carries modern transmission and date cautions."
+      },
+      "status": "authored-dossier; source approval, map geometry, native capabilities and game balance pending",
+      "artDirection": {
+        "style": "sober late Roman Antioch working courts and foothill context, restrained administrative humor",
+        "historicalControls": "No exact bishop residence, Golden Octagon dedicated in 341, medieval manuscript or modern critical edition in 324–325. Fictional clerks do not stand for the three accused bishops.",
+        "referenceAssets": [],
+        "productionApproved": false
+      },
+      "failureRecovery": {
+        "mainIdentityLoss": "explicitly irrecoverable main-object loss causes defeat; survivor groups tolerate only their declared loss margin",
+        "optionalIdentityLoss": "only corresponding task becomes failed-optional",
+        "recoveryImplementation": "inventory/replacement capability pending; reserved resources alone cannot resurrect an identity"
+      },
+      "requiredCapabilities": [
+        {
+          "id": "composed-world-ledger",
+          "status": "reference model implemented; native implementation pending"
+        },
+        {
+          "id": "geographic-land-corridors",
+          "status": "real-world plan authored; DEM/footprints/pathfinding pending"
+        },
+        {
+          "id": "two-narrator-sequence",
+          "status": "caption text authored; certified native Sequence Items pending"
+        },
+        {
+          "id": "receipt-gated-ordered-departure",
+          "status": "reference implemented; native observers and real navigation pending"
+        }
+      ],
+      "qa": {
+        "staticStatus": "checked separately by dossier validator",
+        "nativeStatus": "pending",
+        "gameVerified": false,
+        "cases": [
+          "Three local notes retain distinct identities; no later critical edition or medieval Syriac manuscript appears in 324–325.",
+          "Each packet derives from its own collected note and exact o2 funding receipt; shared receipt never creates three debits.",
+          "Each of the three original clerks has its own court; three arrivals at one court cannot satisfy this distribution.",
+          "Packet arrival cannot authorize a clerk departure.",
+          "Each clerk requires its own o3 arrival receipt, o4 departure and guarded return; an earlier visit to common work cannot satisfy the return.",
+          "All three original clerks are essential; an optional guide cannot replace a lost clerk.",
+          "Communion exclusion stays attributed; no office-removal command or theological correctness score.",
+          "Ancyra named in the letter is neither Nicaea nor a local Antioch district.",
+          "The c.324–325 date and order relative to the imperial letter are debated; do not present this editorial sequence as a settled fact.",
+          "Do not place the Golden Octagon dedicated in 341 or identify modern Antakya ruins as the exact synod site.",
+          "The reference arrival predicate proves destinations; it does not prove carried inventory or coupled travel.",
+          "skip all optional objectives and win at each difficulty",
+          "complete all optionals at each difficulty without spending protected recovery stock",
+          "save/load before and after every delivery, payment, optional reward and terminal latch",
+          "lose an optional identity: only that task fails",
+          "test every corridor and receiving footprint in the real map"
+        ]
+      },
+      "secondaryObjectives": [
+        {
+          "id": "side-1",
+          "kind": "scout",
+          "title": {
+            "en": "Two northern approaches",
+            "es-ES": "Dos accesos norteños"
+          },
+          "subject": {
+            "en": "two northern approaches",
+            "es-ES": "dos accesos norteños"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "Mark both proposed local approaches without claiming a datedsynod arrival route.",
+            "es-ES": "Señala ambos accesos locales propuestos sin afirmar una ruta fechada de llegada al sínodo."
+          },
+          "text": {
+            "en": "Scout both marked viewpoints of two northern approaches. Benefit: Mark the proposed north-record-circuit once; main receivers remain disclosed independently.",
+            "es-ES": "Explora los dos miradores señalados de dos accesos norteños. Ventaja: Señala una vez north-record-circuit propuesto; los receptores principales se indican por separado."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "visit-zones",
+                "zones": [
+                  "11-council-record-escort-antioch.side-1.zone-1",
+                  "11-council-record-escort-antioch.side-1.zone-2"
+                ],
+                "actor": "any-player-controlled-unit",
+                "requiredCount": 2,
+                "observationsPersistent": true,
+                "countInitialVisibility": false
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-1.zone-1",
+                "hub": "hub-1",
+                "offsetTiles": [
+                  -8,
+                  0
+                ],
+                "radiusTiles": 3
+              },
+              {
+                "id": "11-council-record-escort-antioch.side-1.zone-2",
+                "hub": "hub-3",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "mark-alternative-route",
+              "target": "north-record-circuit fictional approach",
+              "resources": {},
+              "onceFlag": "11-council-record-escort-antioch.side-1.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false,
+              "corridorId": "north-record-circuit"
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-1.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-3",
+            "receivingHub": "hub-2",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        },
+        {
+          "id": "side-2",
+          "kind": "copy",
+          "title": {
+            "en": "A letter is not minutes",
+            "es-ES": "Una carta no es actas"
+          },
+          "subject": {
+            "en": "a letter is not minutes",
+            "es-ES": "una carta no es actas"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "Optional narrated context distinguishes transmitted letter, accused positions and uncertain date; no later criticaledition is placed in325.",
+            "es-ES": "El contexto narrado opcional distingue carta transmitida, posiciones acusadas y fecha incierta; no coloca una edición crítica posterior en325."
+          },
+          "text": {
+            "en": "Recover both separate copies from a letter is not minutes and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+            "es-ES": "Recupera las dos copias distintas de una carta no es actas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-arrival",
+                "entities": [
+                  "11-council-record-escort-antioch.side-2.entity-1",
+                  "11-council-record-escort-antioch.side-2.entity-2"
+                ],
+                "destinations": {
+                  "11-council-record-escort-antioch.side-2.entity-1": "11-council-record-escort-antioch.side-2.zone-1",
+                  "11-council-record-escort-antioch.side-2.entity-2": "11-council-record-escort-antioch.side-2.zone-1"
+                },
+                "requiredCount": 2,
+                "aliveAtDelivery": true,
+                "oncePerEntity": true,
+                "noSubstitutes": true,
+                "initialPlacementDoesNotCount": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [
+              {
+                "id": "11-council-record-escort-antioch.side-2.entity-1",
+                "role": "copy",
+                "initialHub": "hub-3",
+                "offsetTiles": [
+                  -6,
+                  3
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              },
+              {
+                "id": "11-council-record-escort-antioch.side-2.entity-2",
+                "role": "copy",
+                "initialHub": "hub-3",
+                "offsetTiles": [
+                  -6,
+                  6
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              }
+            ],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-2.zone-1",
+                "hub": "hub-1",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "unlock-context-and-hint",
+              "target": "documented context and a main-goal hint",
+              "resources": {},
+              "onceFlag": "11-council-record-escort-antioch.side-2.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false,
+              "sourceIds": [
+                "odyssey-source.imperial-church.11-council-record-escort-antioch"
+              ],
+              "historicalNote": {
+                "en": "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets are fictional.",
+                "es-ES": "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos. La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes locales son ficticios."
+              },
+              "hint": {
+                "en": "Collect the three distinct original local notes and deliver each to common copying.",
+                "es-ES": "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+              }
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-2.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-3",
+            "receivingHub": "hub-1",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        },
+        {
+          "id": "side-3",
+          "kind": "aid",
+          "title": {
+            "en": "Neighbors outside the dispute",
+            "es-ES": "Vecinos fuera de la disputa"
+          },
+          "subject": {
+            "en": "neighbors outside the dispute",
+            "es-ES": "vecinos fuera de la disputa"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "Independent voluntary household aid asks no doctrinal declaration or faction loyalty.",
+            "es-ES": "La ayuda voluntaria doméstica independiente no pide declaración doctrinal ni lealtad de facción."
+          },
+          "text": {
+            "en": "Bring each of the two aid crates to its assigned household at neighbors outside the dispute. Benefit: 100 food, 50 wood, once.",
+            "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en vecinos fuera de la disputa. Ventaja: 100 de alimento, 50 de madera, una vez."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-arrival",
+                "entities": [
+                  "11-council-record-escort-antioch.side-3.entity-1",
+                  "11-council-record-escort-antioch.side-3.entity-2"
+                ],
+                "destinations": {
+                  "11-council-record-escort-antioch.side-3.entity-1": "11-council-record-escort-antioch.side-3.zone-1",
+                  "11-council-record-escort-antioch.side-3.entity-2": "11-council-record-escort-antioch.side-3.zone-2"
+                },
+                "requiredCount": 2,
+                "aliveAtDelivery": true,
+                "oncePerEntity": true,
+                "noSubstitutes": true,
+                "initialPlacementDoesNotCount": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [
+              {
+                "id": "11-council-record-escort-antioch.side-3.entity-1",
+                "role": "aid",
+                "initialHub": "hub-1",
+                "offsetTiles": [
+                  -6,
+                  3
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              },
+              {
+                "id": "11-council-record-escort-antioch.side-3.entity-2",
+                "role": "aid",
+                "initialHub": "hub-1",
+                "offsetTiles": [
+                  -6,
+                  6
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              }
+            ],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-3.zone-1",
+                "hub": "hub-2",
+                "offsetTiles": [
+                  -8,
+                  0
+                ],
+                "radiusTiles": 3
+              },
+              {
+                "id": "11-council-record-escort-antioch.side-3.zone-2",
+                "hub": "hub-2",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "finite-supply-withdrawal",
+              "target": "optional supply stock",
+              "resources": {
+                "food": 100,
+                "wood": 50
+              },
+              "onceFlag": "11-council-record-escort-antioch.side-3.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-3.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-1",
+            "receivingHub": "hub-2",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        },
+        {
+          "id": "side-4",
+          "kind": "repair",
+          "title": {
+            "en": "The ordinary southern shelter",
+            "es-ES": "El cobertizo ordinario sureño"
+          },
+          "subject": {
+            "en": "the ordinary southern shelter",
+            "es-ES": "el cobertizo ordinario sureño"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "Repair a separate working store for bounded resources; no church or saint is restored by a stock payment.",
+            "es-ES": "Repara un almacén separado para recursos limitados; pagar existencias no restaura una iglesia ni un santo."
+          },
+          "text": {
+            "en": "Pay 50 wood and restore the damaged store of the ordinary southern shelter to full health. Benefit: 200 food, 100 wood, once.",
+            "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de el cobertizo ordinario sureño. Ventaja: 200 de alimento, 100 de madera, una vez."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-health",
+                "entity": "11-council-record-escort-antioch.side-4.entity-1",
+                "health": "full",
+                "paymentReceipt": "11-council-record-escort-antioch.side-4.payment",
+                "restoration": "atomic 50-wood repair transaction restores full health; no additional engine repair charge"
+              },
+              {
+                "kind": "atomic-payment",
+                "resources": {
+                  "wood": 50
+                },
+                "receipt": "11-council-record-escort-antioch.side-4.payment",
+                "afterArrival": false,
+                "once": true,
+                "protectedRecoveryCannotBeSpent": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [
+              {
+                "id": "11-council-record-escort-antioch.side-4.entity-1",
+                "role": "repair",
+                "initialHub": "hub-2",
+                "offsetTiles": [
+                  -6,
+                  3
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": false,
+                "initialHealthFraction": 0.5,
+                "damageSource": "fictional prior damage"
+              }
+            ],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-4.zone-1",
+                "hub": "hub-2",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "finite-supply-withdrawal",
+              "target": "optional supply stock",
+              "resources": {
+                "food": 200,
+                "wood": 100
+              },
+              "onceFlag": "11-council-record-escort-antioch.side-4.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-4.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-2",
+            "receivingHub": "hub-2",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        },
+        {
+          "id": "side-5",
+          "kind": "trade",
+          "title": {
+            "en": "One local writing consignment",
+            "es-ES": "Una remesa local de escritura"
+          },
+          "subject": {
+            "en": "one local writing consignment",
+            "es-ES": "una remesa local de escritura"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "One finite exchange supports ordinary work, not episcopal reinstatement or imperial influence.",
+            "es-ES": "Un intercambio finito apoya trabajo ordinario, no restitución episcopal ni influencia imperial."
+          },
+          "text": {
+            "en": "Escort the trader of one local writing consignment to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
+            "es-ES": "Escolta al comerciante de una remesa local de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-arrival",
+                "entities": [
+                  "11-council-record-escort-antioch.side-5.entity-1"
+                ],
+                "destinations": {
+                  "11-council-record-escort-antioch.side-5.entity-1": "11-council-record-escort-antioch.side-5.zone-1"
+                },
+                "requiredCount": 1,
+                "aliveAtDelivery": true,
+                "oncePerEntity": true,
+                "noSubstitutes": true,
+                "initialPlacementDoesNotCount": true
+              },
+              {
+                "kind": "atomic-payment",
+                "resources": {
+                  "gold": 50
+                },
+                "receipt": "11-council-record-escort-antioch.side-5.payment",
+                "afterArrival": true,
+                "once": true,
+                "protectedRecoveryCannotBeSpent": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [
+              {
+                "id": "11-council-record-escort-antioch.side-5.entity-1",
+                "role": "trade",
+                "initialHub": "hub-1",
+                "offsetTiles": [
+                  -6,
+                  3
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              }
+            ],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-5.zone-1",
+                "hub": "hub-2",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "finite-supply-withdrawal",
+              "target": "optional supply stock",
+              "resources": {
+                "food": 150,
+                "wood": 50
+              },
+              "onceFlag": "11-council-record-escort-antioch.side-5.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-5.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-1",
+            "receivingHub": "hub-2",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        },
+        {
+          "id": "side-6",
+          "kind": "guide",
+          "title": {
+            "en": "The eastern northern circuit",
+            "es-ES": "El circuito norteño por el este"
+          },
+          "subject": {
+            "en": "the eastern northern circuit",
+            "es-ES": "el circuito norteño por el este"
+          },
+          "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+          "rationale": {
+            "en": "Mark an alternate land connection without turning a proposal at Ancyra into a local destination.",
+            "es-ES": "Señala un enlace terrestre alternativo sin convertir una propuesta en Ancira en destino local."
+          },
+          "text": {
+            "en": "Escort the local guide of the eastern northern circuit to the marked road junction. Benefit: Mark the proposed east-north-alternative once; main receivers remain disclosed independently.",
+            "es-ES": "Escolta al guía local de el circuito norteño por el este hasta el cruce señalado. Ventaja: Señala una vez east-north-alternative propuesto; los receptores principales se indican por separado."
+          },
+          "mandatory": false,
+          "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+          "dependencies": [],
+          "predicate": {
+            "operator": "all",
+            "requirements": [
+              {
+                "kind": "entity-arrival",
+                "entities": [
+                  "11-council-record-escort-antioch.side-6.entity-1"
+                ],
+                "destinations": {
+                  "11-council-record-escort-antioch.side-6.entity-1": "11-council-record-escort-antioch.side-6.zone-1"
+                },
+                "requiredCount": 1,
+                "aliveAtDelivery": true,
+                "oncePerEntity": true,
+                "noSubstitutes": true,
+                "initialPlacementDoesNotCount": true
+              }
+            ],
+            "neverUseTimerInstead": true
+          },
+          "world": {
+            "entities": [
+              {
+                "id": "11-council-record-escort-antioch.side-6.entity-1",
+                "role": "guide",
+                "initialHub": "hub-1",
+                "offsetTiles": [
+                  -6,
+                  3
+                ],
+                "finite": true,
+                "initiallyDelivered": false,
+                "historicalPerson": false,
+                "playerControllable": true
+              }
+            ],
+            "zones": [
+              {
+                "id": "11-council-record-escort-antioch.side-6.zone-1",
+                "hub": "hub-3",
+                "offsetTiles": [
+                  8,
+                  0
+                ],
+                "radiusTiles": 3
+              }
+            ]
+          },
+          "effects": [
+            {
+              "kind": "mark-alternative-route",
+              "target": "east-north-alternative fictional approach",
+              "resources": {},
+              "onceFlag": "11-council-record-escort-antioch.side-6.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false,
+              "corridorId": "east-north-alternative"
+            }
+          ],
+          "completionFlag": "11-council-record-escort-antioch.side-6.completed",
+          "stateContract": {
+            "states": [
+              "available",
+              "completed",
+              "failed-optional",
+              "closed-at-terminal"
+            ],
+            "requiresNonterminalScenario": true,
+            "persistentAcrossSave": true,
+            "completionAndEffectsAtomic": true,
+            "paymentBeforeReward": true,
+            "paymentIsNotCompletion": true,
+            "failedGoalCannotReward": true,
+            "latchAtFirstCompletion": true,
+            "noMainVictoryDependency": true,
+            "rewardTransaction": [
+              "verify all predicate ledgers and nonterminal state",
+              "verify reserved stock",
+              "debit reserved stock",
+              "credit spendable stock",
+              "set reward onceFlag",
+              "set completionFlag"
+            ],
+            "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+            "persistentLedgers": [
+              "visited-zone IDs",
+              "delivered-entity IDs",
+              "payment receipt",
+              "reserved-stock remainder",
+              "reward onceFlag",
+              "completionFlag",
+              "failed-optional flag"
+            ],
+            "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+          },
+          "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+          "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+          "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+          "reachability": {
+            "originHub": "hub-1",
+            "receivingHub": "hub-3",
+            "corridorIds": [
+              "northwest-record-circuit",
+              "east-record-circuit",
+              "north-record-circuit",
+              "east-north-alternative",
+              "southeast-work-link"
+            ],
+            "maxRequiredRoundTrips": 1,
+            "spawnOutsideReceivingZone": true,
+            "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+          },
+          "qa": [
+            "skip-all-main-still-solvent",
+            "complete-in-each-difficulty",
+            "save-before-and-after-reward",
+            "repeat-arrival-no-double-reward",
+            "entity-loss-optional-only",
+            "early-main-victory-does-not-wait",
+            "no-reward-taken-from-protected-recovery"
+          ]
+        }
+      ],
+      "secondaryBudget": {
+        "reservedRewards": {
+          "food": 450,
+          "wood": 200,
+          "gold": 0,
+          "stone": 0
+        },
+        "maxOptionalCosts": {
+          "food": 0,
+          "wood": 50,
+          "gold": 50,
+          "stone": 0
+        },
+        "reallocatedCacheAllowance": {
+          "food": 600,
+          "wood": 300,
+          "gold": 150,
+          "stone": 0
+        },
+        "fundingPolicy": "reward stock is segregated from the finite total bank; no duplicate caches",
+        "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+      },
+      "difficulty": {
+        "easy": {
+          "basis": "static feasibility estimate; native calibration and fun/playability assessment pending",
+          "startingResources": {
+            "food": 402,
+            "wood": 172,
+            "gold": 86,
+            "stone": 0
+          },
+          "gatherableBank": {
+            "food": 1118,
+            "wood": 798,
+            "gold": 234,
+            "stone": 100
+          },
+          "mandatoryDeliveries": {
+            "food": 0,
+            "wood": 90,
+            "gold": 30,
+            "stone": 0
+          },
+          "protectedRecoveryStock": {
+            "food": 300,
+            "wood": 200,
+            "gold": 100,
+            "stone": 0
+          },
+          "replacementBudget": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "supplyMargins": {
+            "food": 650,
+            "wood": 400,
+            "gold": 150,
+            "stone": 100
+          },
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          },
+          "maxVillagers": 12,
+          "enemyTotalCap": 0,
+          "enemyProduction": false,
+          "regeneratingResources": false,
+          "roughDurationMinutes": [
+            30,
+            55
+          ],
+          "difficultyLevers": "12 workers; fully marked route; independent pickups can be completed in any order.",
+          "movementPolicy": "native movement/health/damage unchanged; no difficulty cheats",
+          "mainFeasibleSkippingAllOptionals": true,
+          "allOptionalCostsAffordable": true
+        },
+        "standard": {
+          "basis": "static feasibility estimate; native calibration and fun/playability assessment pending",
+          "startingResources": {
+            "food": 350,
+            "wood": 150,
+            "gold": 75,
+            "stone": 0
+          },
+          "gatherableBank": {
+            "food": 1170,
+            "wood": 820,
+            "gold": 245,
+            "stone": 100
+          },
+          "mandatoryDeliveries": {
+            "food": 0,
+            "wood": 90,
+            "gold": 30,
+            "stone": 0
+          },
+          "protectedRecoveryStock": {
+            "food": 300,
+            "wood": 200,
+            "gold": 100,
+            "stone": 0
+          },
+          "replacementBudget": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "supplyMargins": {
+            "food": 650,
+            "wood": 400,
+            "gold": 150,
+            "stone": 100
+          },
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          },
+          "maxVillagers": 9,
+          "enemyTotalCap": 0,
+          "enemyProduction": false,
+          "regeneratingResources": false,
+          "roughDurationMinutes": [
+            35,
+            65
+          ],
+          "difficultyLevers": "9 workers; geographic approach markers with local fog; plan deliveries and gathering in parallel.",
+          "movementPolicy": "native movement/health/damage unchanged; no difficulty cheats",
+          "mainFeasibleSkippingAllOptionals": true,
+          "allOptionalCostsAffordable": true
+        },
+        "hard": {
+          "basis": "static feasibility estimate; native calibration and fun/playability assessment pending",
+          "startingResources": {
+            "food": 297,
+            "wood": 127,
+            "gold": 63,
+            "stone": 0
+          },
+          "gatherableBank": {
+            "food": 1223,
+            "wood": 843,
+            "gold": 257,
+            "stone": 100
+          },
+          "mandatoryDeliveries": {
+            "food": 0,
+            "wood": 90,
+            "gold": 30,
+            "stone": 0
+          },
+          "protectedRecoveryStock": {
+            "food": 300,
+            "wood": 200,
+            "gold": 100,
+            "stone": 0
+          },
+          "replacementBudget": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "supplyMargins": {
+            "food": 650,
+            "wood": 400,
+            "gold": 150,
+            "stone": 100
+          },
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          },
+          "maxVillagers": 6,
+          "enemyTotalCap": 0,
+          "enemyProduction": false,
+          "regeneratingResources": false,
+          "roughDurationMinutes": [
+            40,
+            75
+          ],
+          "difficultyLevers": "6 workers; fewer initial supplies; all essential receiving zones and costs remain disclosed; no invented hostile army or secret deadline.",
+          "movementPolicy": "native movement/health/damage unchanged; no difficulty cheats",
+          "mainFeasibleSkippingAllOptionals": true,
+          "allOptionalCostsAffordable": true
+        }
+      },
+      "playstyles": [
+        {
+          "id": "parallel-three-court-copying",
+          "optionalObjectives": [
+            "side-1",
+            "side-6"
+          ],
+          "costOfOpportunity": "Split collection/clerks over the northwestern and eastern branches; more simultaneous movement and original identities to track.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        },
+        {
+          "id": "shelter-and-document-context",
+          "optionalObjectives": [
+            "side-2",
+            "side-4"
+          ],
+          "costOfOpportunity": "Read optional source limits and fund separate work support while reserving the sole90wood/30gold main payment.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        },
+        {
+          "id": "neighbors-and-trade",
+          "optionalObjectives": [
+            "side-3",
+            "side-5"
+          ],
+          "costOfOpportunity": "Support households and materials with independent units while three original clerks complete their assigned return chain.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        }
+      ],
+      "gameplayIdentity": {
+        "problem": "three distinct scope-labelled originals, matching local packets and individually receipted original-clerk returns",
+        "decision": "parallel collection/dispatch or sequential couriers, two northern approaches, separate shelter/context versus household/trade work",
+        "densityPlan": "five local Antioch courts on 360 tiles; six optional branches; no hidden ecclesiastical battle or compulsory river crossing",
+        "replay": "worker split, dispatch order and optional portfolios vary; accusations, venue uncertainty and source chronology remain qualified",
+        "fixedOutcome": "no player-authored canon, voted creed, episcopal deposition, historical letter authentication or settled sequence"
+      },
+      "stateMachine": {
+        "states": [
+          "briefing",
+          "phase-1",
+          "phase-2",
+          "phase-3",
+          "phase-4",
+          "victory",
+          "defeat"
+        ],
+        "phaseTransitions": [
+          {
+            "from": "briefing",
+            "to": "phase-1",
+            "on": "intro-accepted"
+          },
+          {
+            "from": "phase-1",
+            "to": "phase-2",
+            "on": "objective-latched",
+            "objectiveId": "o1"
+          },
+          {
+            "from": "phase-2",
+            "to": "phase-3",
+            "on": "objective-latched",
+            "objectiveId": "o2"
+          },
+          {
+            "from": "phase-3",
+            "to": "phase-4",
+            "on": "objective-latched",
+            "objectiveId": "o3"
+          },
+          {
+            "from": "phase-4",
+            "to": "victory",
+            "on": "objective-latched",
+            "objectiveId": "o4"
+          }
+        ],
+        "terminalPriority": "defeat first; close side rewards; one terminal latch",
+        "saveLoad": "persist object identities, arrivals, collected facts, receipts, phase elapsed time and side reward balances",
+        "campaignProgressWrite": false
+      },
+      "screens": [
+        {
+          "id": "title",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.title",
+          "text": {
+            "en": "Before the Lakeside Council",
+            "es-ES": "Antes del concilio junto al lago"
+          },
+          "condition": "always",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Before the Lakeside Council"
+            ],
+            "es-ES": [
+              "Antes del concilio junto al lago"
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 3
+        },
+        {
+          "id": "fact-intro",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.fact-intro",
+          "text": {
+            "en": "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets are fictional.",
+            "es-ES": "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos. La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes locales son ficticios."
+          },
+          "condition": "intro first",
+          "narrator": "collection-narrator",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their",
+              "offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets",
+              "are fictional."
+            ],
+            "es-ES": [
+              "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos.",
+              "La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes",
+              "locales son ficticios."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 31
+        },
+        {
+          "id": "handover",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.handover",
+          "text": {
+            "en": "The campaign narrator now speaks from inherited records and accounts.",
+            "es-ES": "El narrador de la campaña toma la palabra a partir de escritos y relatos heredados."
+          },
+          "condition": "after fact-intro",
+          "narrator": "collection-narrator",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The campaign narrator now speaks from inherited records and accounts."
+            ],
+            "es-ES": [
+              "El narrador de la campaña toma la palabra a partir de escritos y relatos heredados."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "persona-intro",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.persona-intro",
+          "text": {
+            "en": "My father’s box said “minutes.” Inside were reports, requests and one perfectly useless shopping list. I learned to distrust a splendid label. These inherited Antioch papers ask for the same care: what someone says happened, what they ordered, and what they hoped might come next must not be stapled into one certainty.",
+            "es-ES": "La caja de mi padre decía «actas». Dentro había informes, peticiones y una lista de compras perfectamente inútil. Aprendí a desconfiar de una etiqueta espléndida. Estos papeles antioquenos heredados piden el mismo cuidado: lo que alguien cuenta que ocurrió, lo que dispuso y lo que esperaba para después no deben coserse en una sola certeza."
+          },
+          "condition": "after handover",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "My father’s box said “minutes.” Inside were reports, requests and one perfectly useless shopping list. I learned to distrust a splendid label. These inherited Antioch papers ask for the same care: what",
+              "someone says happened, what they ordered, and what they hoped might come next must not be stapled into one certainty."
+            ],
+            "es-ES": [
+              "La caja de mi padre decía «actas». Dentro había informes, peticiones y una lista de compras perfectamente inútil. Aprendí a desconfiar de una etiqueta espléndida. Estos papeles antioquenos heredados piden el mismo",
+              "cuidado: lo que alguien cuenta que ocurrió, lo que dispuso y lo que esperaba para después no deben coserse en una sola certeza."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 26
+        },
+        {
+          "id": "historical-license",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.historical-license",
+          "text": {
+            "en": "The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.",
+            "es-ES": "Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida."
+          },
+          "condition": "after persona-intro",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in",
+              "attributed narration."
+            ],
+            "es-ES": [
+              "Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas",
+              "permanecen en la narración atribuida."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 18
+        },
+        {
+          "id": "route-help",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.route-help",
+          "text": {
+            "en": "Collect three distinct original local notes—assembly setting, reported communion decision, proposed future venue—and bring them to common copying. Pay 90 wood and 30 gold once to make three packets, each from its own collected note and that exact payment. Send one original clerk and its assigned packet to each of the three disclosed local courts. These are separate arrival identities; no carried inventory or physical co-travel is claimed. After each clerk’s own court arrival and observed departure, return that same clerk to common work. There is no creed vote, office-removal command, historically attested escort or forced theological agreement.",
+            "es-ES": "Recoge tres notas locales originales distintas —marco de la reunión, decisión de comunión referida y lugar futuro propuesto— y llévalas al patio común. Paga una vez 90 de madera y 30 de oro para preparar tres paquetes, cada uno con su propia nota recogida y ese pago exacto. Envía un escribiente original y su paquete asignado a cada uno de los tres patios locales indicados. Son identidades separadas de llegada; no se afirma inventario transportado ni viaje físicamente conjunto. Tras la llegada de cada escribiente a su patio y su salida observada propia, devuelve ese mismo escribiente al trabajo común. No hay votación de credo, orden de destitución, escolta históricamente acreditada ni acuerdo teológico forzoso."
+          },
+          "condition": "available from start; repeatable without effect",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Collect three distinct original local notes—assembly setting, reported communion decision, proposed future venue—and bring them to common copying. Pay 90 wood and 30 gold once to make three packets, each from its",
+              "own collected note and that exact payment. Send one original clerk and its assigned packet to each of the three disclosed local courts. These are separate arrival identities; no carried inventory or",
+              "physical co-travel is claimed. After each clerk’s own court arrival and observed departure, return that same clerk to common work. There is no creed vote, office-removal command, historically attested escort or forced",
+              "theological agreement."
+            ],
+            "es-ES": [
+              "Recoge tres notas locales originales distintas —marco de la reunión, decisión de comunión referida y lugar futuro propuesto— y llévalas al patio común. Paga una vez 90 de madera y 30 de",
+              "oro para preparar tres paquetes, cada uno con su propia nota recogida y ese pago exacto. Envía un escribiente original y su paquete asignado a cada uno de los tres patios locales",
+              "indicados. Son identidades separadas de llegada; no se afirma inventario transportado ni viaje físicamente conjunto. Tras la llegada de cada escribiente a su patio y su salida observada propia, devuelve ese mismo",
+              "escribiente al trabajo común. No hay votación de credo, orden de destitución, escolta históricamente acreditada ni acuerdo teológico forzoso."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 54
+        },
+        {
+          "id": "economy-help",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.economy-help",
+          "text": {
+            "en": "Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once.",
+            "es-ES": "Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez."
+          },
+          "condition": "always",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once."
+            ],
+            "es-ES": [
+              "Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 12
+        },
+        {
+          "id": "o1-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-goal",
+          "text": {
+            "en": "Collect the three distinct original local notes and deliver each to common copying.",
+            "es-ES": "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+          },
+          "condition": "phase-1 active",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Collect the three distinct original local notes and deliver each to common copying."
+            ],
+            "es-ES": [
+              "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 8
+        },
+        {
+          "id": "o1-receipt",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-receipt",
+          "text": {
+            "en": "Three separate local originals are ready, without merging their subjects.",
+            "es-ES": "Tres originales locales separados están preparados, sin fusionar sus asuntos."
+          },
+          "condition": "o1 latched once",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Three separate local originals are ready, without merging their subjects."
+            ],
+            "es-ES": [
+              "Tres originales locales separados están preparados, sin fusionar sus asuntos."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 5
+        },
+        {
+          "id": "o1-reaction",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-reaction",
+          "text": {
+            "en": "A report, a decision, an expectation. One label would have done an injustice to all three.",
+            "es-ES": "Un informe, una decisión, una expectativa. Una etiqueta habría hecho una injusticia a los tres."
+          },
+          "condition": "after o1 receipt",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "A report, a decision, an expectation. One label would have done an injustice to all three."
+            ],
+            "es-ES": [
+              "Un informe, una decisión, una expectativa. Una etiqueta habría hecho una injusticia a los tres."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 8
+        },
+        {
+          "id": "o2-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-goal",
+          "text": {
+            "en": "Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note.",
+            "es-ES": "Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida."
+          },
+          "condition": "phase-2 active",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note."
+            ],
+            "es-ES": [
+              "Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 10
+        },
+        {
+          "id": "o2-receipt",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-receipt",
+          "text": {
+            "en": "Three packets have distinct inputs and the same exact funded receipt; no second debit.",
+            "es-ES": "Tres paquetes tienen entradas distintas y el mismo recibo exacto de financiación; sin segundo cobro."
+          },
+          "condition": "o2 latched once",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Three packets have distinct inputs and the same exact funded receipt; no second debit."
+            ],
+            "es-ES": [
+              "Tres paquetes tienen entradas distintas y el mismo recibo exacto de financiación; sin segundo cobro."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "o2-reaction",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-reaction",
+          "text": {
+            "en": "The workshop charges once. A grand title must not charge three times for the same ink.",
+            "es-ES": "El taller cobra una vez. Un título grandioso no debe cobrar tres veces por la misma tinta."
+          },
+          "condition": "after o2 receipt",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The workshop charges once. A grand title must not charge three times for the same ink."
+            ],
+            "es-ES": [
+              "El taller cobra una vez. Un título grandioso no debe cobrar tres veces por la misma tinta."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 8
+        },
+        {
+          "id": "o3-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o3-goal",
+          "text": {
+            "en": "Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there.",
+            "es-ES": "Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro."
+          },
+          "condition": "phase-3 active",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there."
+            ],
+            "es-ES": [
+              "Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 11
+        },
+        {
+          "id": "o3-receipt",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o3-receipt",
+          "text": {
+            "en": "Each original clerk and its correctly labelled packet reached its own assigned court.",
+            "es-ES": "Cada escribiente original y su paquete bien rotulado llegaron a su propio patio asignado."
+          },
+          "condition": "o3 latched once",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Each original clerk and its correctly labelled packet reached its own assigned court."
+            ],
+            "es-ES": [
+              "Cada escribiente original y su paquete bien rotulado llegaron a su propio patio asignado."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "o3-reaction",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o3-reaction",
+          "text": {
+            "en": "The northern door does not become Ancyra merely because its packet mentions it.",
+            "es-ES": "La puerta norteña no se convierte en Ancira porque su paquete la mencione."
+          },
+          "condition": "after o3 receipt",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The northern door does not become Ancyra merely because its packet mentions it."
+            ],
+            "es-ES": [
+              "La puerta norteña no se convierte en Ancira porque su paquete la mencione."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 6
+        },
+        {
+          "id": "o4-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o4-goal",
+          "text": {
+            "en": "After their individual receiving-court receipts, observe the three original clerks’ departures and return all three to common work.",
+            "es-ES": "Tras sus recibos individuales de los patios receptores, observa las salidas de los tres escribientes originales y devuelve a los tres al trabajo común."
+          },
+          "condition": "phase-4 active",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "After their individual receiving-court receipts, observe the three original clerks’ departures and return all three to common work."
+            ],
+            "es-ES": [
+              "Tras sus recibos individuales de los patios receptores, observa las salidas de los tres escribientes originales y devuelve a los tres al trabajo común."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 12
+        },
+        {
+          "id": "o4-receipt",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o4-receipt",
+          "text": {
+            "en": "The same three original clerks returned after their own receipt-backed departures.",
+            "es-ES": "Los mismos tres escribientes originales regresaron tras sus propias salidas respaldadas por recibo."
+          },
+          "condition": "o4 latched once",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The same three original clerks returned after their own receipt-backed departures."
+            ],
+            "es-ES": [
+              "Los mismos tres escribientes originales regresaron tras sus propias salidas respaldadas por recibo."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 6
+        },
+        {
+          "id": "o4-reaction",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.o4-reaction",
+          "text": {
+            "en": "The people came home. Their packets do not oblige history to become simpler.",
+            "es-ES": "Las personas volvieron a casa. Sus paquetes no obligan a la historia a hacerse más sencilla."
+          },
+          "condition": "after o4 receipt",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The people came home. Their packets do not oblige history to become simpler."
+            ],
+            "es-ES": [
+              "Las personas volvieron a casa. Sus paquetes no obligan a la historia a hacerse más sencilla."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 8
+        },
+        {
+          "id": "side-1-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-1-goal",
+          "text": {
+            "en": "Scout both marked viewpoints of two northern approaches. Benefit: Mark the proposed north-record-circuit once; main receivers remain disclosed independently.",
+            "es-ES": "Explora los dos miradores señalados de dos accesos norteños. Ventaja: Señala una vez north-record-circuit propuesto; los receptores principales se indican por separado."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Scout both marked viewpoints of two northern approaches. Benefit: Mark the proposed north-record-circuit once; main receivers remain disclosed independently."
+            ],
+            "es-ES": [
+              "Explora los dos miradores señalados de dos accesos norteños. Ventaja: Señala una vez north-record-circuit propuesto; los receptores principales se indican por separado."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 11
+        },
+        {
+          "id": "side-1-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-1-complete",
+          "text": {
+            "en": "Two northern approaches completed. Its stated benefit has been granted once.",
+            "es-ES": "Dos accesos norteños: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-1 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Two northern approaches completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "Dos accesos norteños: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 6
+        },
+        {
+          "id": "side-1-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-1-lost",
+          "text": {
+            "en": "Two northern approaches is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "Dos accesos norteños: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-1 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Two northern approaches is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "Dos accesos norteños: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 9
+        },
+        {
+          "id": "side-2-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-2-goal",
+          "text": {
+            "en": "Recover both separate copies from a letter is not minutes and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+            "es-ES": "Recupera las dos copias distintas de una carta no es actas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Recover both separate copies from a letter is not minutes and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint."
+            ],
+            "es-ES": [
+              "Recupera las dos copias distintas de una carta no es actas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 13
+        },
+        {
+          "id": "side-2-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-2-complete",
+          "text": {
+            "en": "A letter is not minutes completed. Its stated benefit has been granted once.",
+            "es-ES": "Una carta no es actas: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-2 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "A letter is not minutes completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "Una carta no es actas: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "side-2-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-2-lost",
+          "text": {
+            "en": "A letter is not minutes is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "Una carta no es actas: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-2 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "A letter is not minutes is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "Una carta no es actas: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 10
+        },
+        {
+          "id": "side-3-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-3-goal",
+          "text": {
+            "en": "Bring each of the two aid crates to its assigned household at neighbors outside the dispute. Benefit: 100 food, 50 wood, once.",
+            "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en vecinos fuera de la disputa. Ventaja: 100 de alimento, 50 de madera, una vez."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Bring each of the two aid crates to its assigned household at neighbors outside the dispute. Benefit: 100 food, 50 wood, once."
+            ],
+            "es-ES": [
+              "Lleva cada una de las dos cajas de ayuda a su hogar asignado en vecinos fuera de la disputa. Ventaja: 100 de alimento, 50 de madera, una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 13
+        },
+        {
+          "id": "side-3-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-3-complete",
+          "text": {
+            "en": "Neighbors outside the dispute completed. Its stated benefit has been granted once.",
+            "es-ES": "Vecinos fuera de la disputa: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-3 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Neighbors outside the dispute completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "Vecinos fuera de la disputa: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "side-3-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-3-lost",
+          "text": {
+            "en": "Neighbors outside the dispute is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "Vecinos fuera de la disputa: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-3 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Neighbors outside the dispute is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "Vecinos fuera de la disputa: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 9
+        },
+        {
+          "id": "side-4-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-4-goal",
+          "text": {
+            "en": "Pay 50 wood and restore the damaged store of the ordinary southern shelter to full health. Benefit: 200 food, 100 wood, once.",
+            "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de el cobertizo ordinario sureño. Ventaja: 200 de alimento, 100 de madera, una vez."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Pay 50 wood and restore the damaged store of the ordinary southern shelter to full health. Benefit: 200 food, 100 wood, once."
+            ],
+            "es-ES": [
+              "Paga 50 de madera y repara por completo el almacén dañado de el cobertizo ordinario sureño. Ventaja: 200 de alimento, 100 de madera, una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 12
+        },
+        {
+          "id": "side-4-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-4-complete",
+          "text": {
+            "en": "The ordinary southern shelter completed. Its stated benefit has been granted once.",
+            "es-ES": "El cobertizo ordinario sureño: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-4 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The ordinary southern shelter completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "El cobertizo ordinario sureño: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 6
+        },
+        {
+          "id": "side-4-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-4-lost",
+          "text": {
+            "en": "The ordinary southern shelter is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "El cobertizo ordinario sureño: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-4 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The ordinary southern shelter is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "El cobertizo ordinario sureño: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 9
+        },
+        {
+          "id": "side-5-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-5-goal",
+          "text": {
+            "en": "Escort the trader of one local writing consignment to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
+            "es-ES": "Escolta al comerciante de una remesa local de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Escort the trader of one local writing consignment to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once."
+            ],
+            "es-ES": [
+              "Escolta al comerciante de una remesa local de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 15
+        },
+        {
+          "id": "side-5-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-5-complete",
+          "text": {
+            "en": "One local writing consignment completed. Its stated benefit has been granted once.",
+            "es-ES": "Una remesa local de escritura: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-5 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "One local writing consignment completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "Una remesa local de escritura: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "side-5-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-5-lost",
+          "text": {
+            "en": "One local writing consignment is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "Una remesa local de escritura: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-5 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "One local writing consignment is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "Una remesa local de escritura: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 9
+        },
+        {
+          "id": "side-6-goal",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-6-goal",
+          "text": {
+            "en": "Escort the local guide of the eastern northern circuit to the marked road junction. Benefit: Mark the proposed east-north-alternative once; main receivers remain disclosed independently.",
+            "es-ES": "Escolta al guía local de el circuito norteño por el este hasta el cruce señalado. Ventaja: Señala una vez east-north-alternative propuesto; los receptores principales se indican por separado."
+          },
+          "condition": "optional list from start",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Escort the local guide of the eastern northern circuit to the marked road junction. Benefit: Mark the proposed east-north-alternative once; main receivers remain disclosed independently."
+            ],
+            "es-ES": [
+              "Escolta al guía local de el circuito norteño por el este hasta el cruce señalado. Ventaja: Señala una vez east-north-alternative propuesto; los receptores principales se indican por separado."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 13
+        },
+        {
+          "id": "side-6-complete",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-6-complete",
+          "text": {
+            "en": "The eastern northern circuit completed. Its stated benefit has been granted once.",
+            "es-ES": "El circuito norteño por el este: completado. Su ventaja indicada se ha concedido una vez."
+          },
+          "condition": "side-6 completed",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The eastern northern circuit completed. Its stated benefit has been granted once."
+            ],
+            "es-ES": [
+              "El circuito norteño por el este: completado. Su ventaja indicada se ha concedido una vez."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        },
+        {
+          "id": "side-6-lost",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.side-6-lost",
+          "text": {
+            "en": "The eastern northern circuit is unavailable after the loss of its unique participant or object. The main mission continues.",
+            "es-ES": "El circuito norteño por el este: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+          },
+          "condition": "side-6 failed-optional",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The eastern northern circuit is unavailable after the loss of its unique participant or object. The main mission continues."
+            ],
+            "es-ES": [
+              "El circuito norteño por el este: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 10
+        },
+        {
+          "id": "fact-outro",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.fact-outro",
+          "text": {
+            "en": "Three fictional packets reached their assigned courts and their original clerks returned after their own delivery receipts. This local work does not authenticate the transmitted letter or settle its accusations, author or chronology. Its reference to Ancyra remains distinct from the later council at Nicaea.",
+            "es-ES": "Tres paquetes ficticios llegaron a sus patios asignados y sus escribientes originales regresaron tras sus propios recibos de entrega. Este trabajo local no autentica la carta transmitida ni resuelve sus acusaciones, autoría o cronología. Su referencia a Ancira sigue siendo distinta del concilio posterior de Nicea."
+          },
+          "condition": "victory first",
+          "narrator": "collection-narrator",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Three fictional packets reached their assigned courts and their original clerks returned after their own delivery receipts. This local work does not authenticate the transmitted letter or settle its accusations, author or",
+              "chronology. Its reference to Ancyra remains distinct from the later council at Nicaea."
+            ],
+            "es-ES": [
+              "Tres paquetes ficticios llegaron a sus patios asignados y sus escribientes originales regresaron tras sus propios recibos de entrega. Este trabajo local no autentica la carta transmitida ni resuelve sus acusaciones, autoría",
+              "o cronología. Su referencia a Ancira sigue siendo distinta del concilio posterior de Nicea."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 22
+        },
+        {
+          "id": "persona-outro",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.persona-outro",
+          "text": {
+            "en": "I put three labels on three packets, then waited for three people to come home. My father’s box is still called “minutes.” Perhaps I shall cross that out. The work inside will survive a less impressive name.",
+            "es-ES": "Puse tres etiquetas en tres paquetes y esperé a que tres personas volvieran a casa. La caja de mi padre aún se llama «actas». Quizá lo tache. El trabajo que guarda sobrevivirá a un nombre menos impresionante."
+          },
+          "condition": "after fact-outro",
+          "narrator": "imperial-clerk",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "I put three labels on three packets, then waited for three people to come home. My father’s box is still called “minutes.” Perhaps I shall cross that out. The work inside will",
+              "survive a less impressive name."
+            ],
+            "es-ES": [
+              "Puse tres etiquetas en tres paquetes y esperé a que tres personas volvieran a casa. La caja de mi padre aún se llama «actas». Quizá lo tache. El trabajo que guarda sobrevivirá",
+              "a un nombre menos impresionante."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 18
+        },
+        {
+          "id": "defeat",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.defeat",
+          "text": {
+            "en": "The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat.",
+            "es-ES": "El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota."
+          },
+          "condition": "main defeat; close side rewards first",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat."
+            ],
+            "es-ES": [
+              "El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 10
+        },
+        {
+          "id": "recovery-help",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.recovery-help",
+          "text": {
+            "en": "Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost.",
+            "es-ES": "La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable."
+          },
+          "condition": "help; never implies an unsupported recovery action",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost."
+            ],
+            "es-ES": [
+              "La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 15
+        },
+        {
+          "id": "next-episode",
+          "key": "scenario.imperial-church.11-council-record-escort-antioch.odyssey.next-episode",
+          "text": {
+            "en": "Continue with Many Voices beside the Lake. This episode does not complete the campaign.",
+            "es-ES": "Continúa con Muchas voces junto al lago. Este episodio no termina la campaña."
+          },
+          "condition": "after persona-outro",
+          "narrator": "none",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Continue with Many Voices beside the Lake. This episode does not complete the campaign."
+            ],
+            "es-ES": [
+              "Continúa con Muchas voces junto al lago. Este episodio no termina la campaña."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 7
+        }
+      ]
     }
   ],
   "editorialContract": {
@@ -33585,7 +36700,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 10
+    "authoredDossierCount": 11
   },
   "acts": [
     {
@@ -33897,7 +37012,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": true
     },
     {
@@ -33954,7 +37069,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34011,7 +37126,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34079,7 +37194,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34147,7 +37262,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34223,7 +37338,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34300,7 +37415,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34376,7 +37491,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34452,7 +37567,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34511,7 +37626,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -34522,7 +37637,7 @@
         "en": "Before the Lakeside Council",
         "es-ES": "Antes del concilio junto al lago"
       },
-      "date": "325 CE",
+      "date": "c.324–325 CE; exact date and order relative to the imperial letter debated",
       "geographyId": "antioch",
       "coreMechanic": "council-record-escort",
       "historicalSelection": {
@@ -34541,7 +37656,43 @@
           "consultationDate": "2026-10-12",
           "coverageActuallyRead": "Socrates passage checked, but it does not support this event.",
           "approval": "collection only; exact claim still requires architect and independent review"
-        }
+        },
+        "architectCorrection": {
+          "date": "2026-10-13",
+          "author": "gpt-6",
+          "approval": "independent historical review pending",
+          "reason": "Directly read transmitted letter, retroversion/translation note and competing scholarly reconstructions; refusal of communion is not demonstrated loss of office. The display order is an editorial sequence, not a settled relative date."
+        },
+        "selectedClaim": {
+          "en": "A transmitted synodal letter attributed to Antioch around324–325 reports refusing communion to three bishops and names a future meeting at Ancyra. Its exact date, authorship, textual history and order relative to imperial intervention remain disputed.",
+          "es-ES": "Una carta sinodal transmitida y atribuida a Antioquía hacia324–325 refiere negar comunión a tres obispos y nombra una reunión futura en Ancira. Su fecha exacta, autoría, historia textual y orden respecto a la intervención imperial siguen discutidos."
+        },
+        "additionalConsultations": [
+          {
+            "consultedUrl": "https://www.fourthcentury.com/wp-content/uploads/2024/05/Dok-20-Urkunde-18-1.pdf",
+            "passage": "Urk18/Dok20, editorial note and §§1–15 including colophon",
+            "coverageActuallyRead": "Architect read the displayed seven-page primary-text translation/Greek retroversion, especially gathering at Antioch, non-communion to Theodotus/Narcissus/Eusebius and future Ancyra.",
+            "limitations": "Greek is a reconstruction from Syriac, not a preserved original. English translator Aaron West. Header/colophon and Greek heading differ on recipient; no exact venue, attested escort or removal from episcopal office. January325 in editorial header is a reconstruction, not the letter’s date.",
+            "consultationDate": "2026-10-13",
+            "approval": "architect interpretation; independent approval pending"
+          },
+          {
+            "consultedUrl": "https://kath-akademie-bayern.de/en/mediathek-eintrag/das-schreiben-der-synode-von-antiochia-324-325-urk-18-ueberlieferungsgeschichtliche-einordnung-edition-uebersetzung-und-kommentar/",
+            "passage": "Matthias Simperl presentation, Scholarly disputes, transmission and324/25 revaluations sections",
+            "coverageActuallyRead": "Architect read authenticity debate, four Syriac witness discussion and argument placing synod before Constantine intervention.",
+            "limitations": "Presentation of an academic argument, not full critical monograph consultation; motives and attribution to Eustathius remain the author’s reconstruction.",
+            "consultationDate": "2026-10-13",
+            "approval": "architect interpretation; independent approval pending"
+          },
+          {
+            "consultedUrl": "https://theologicalstudies.net/wp-content/uploads/2025/09/The-Council-of-Nicaea-325_-Reassessing-the-Role-of-Eusebius-of-Caesarea.pdf",
+            "passage": "Samuel Fernandez2025, Ossius in Alexandria/Antioch, printed378–379 andnotes66–68",
+            "coverageActuallyRead": "Architect read these selected pages, including early325 after Ossius Alexandrianstay, the letter as sole testimony and disagreement with Simperl.",
+            "limitations": "Selected pages only, not full25-page article. Reconstruction differs from Simperl; no exact meeting date or court/escort footprint. The modern scholarly date/order is not an ancient subscription.",
+            "consultationDate": "2026-10-13",
+            "approval": "architect interpretation; independent approval pending"
+          }
+        ]
       },
       "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
       "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
@@ -34551,7 +37702,7 @@
         "mode": "inherited family papers, not direct adult memory",
         "noOmniscience": true
       },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "contractStatus": "authored full draft; independent source/geometry/native/balance gates pending",
       "existingContract": false
     },
     {
@@ -41932,6 +45083,733 @@
         "densityPlan": "four mainland courts and six independent optional branches on400 tiles; coast and lake shape regional context without unsupported required voyage",
         "replay": "worker split and bounded support choices; delivery never measures assent or changes the historical continuation of controversy",
         "fixedOutcome": "Eusebius reports continuing disagreement; the player cannot settle the Alexandrian controversy or choose a correct creed"
+      }
+    },
+    {
+      "order": 11,
+      "mapSize": 360,
+      "factualIntro": {
+        "en": "A transmitted letter attributed to a synod at Antioch around 324–325 reports refusing communion to three bishops and envisages a future meeting at Ancyra. That is no proof of removal from their offices. The exact date and order relative to the imperial letter are debated; this episode is an editorial return to Antioch before Nicaea, not a settled sequence. Its local clerks and packets are fictional.",
+        "es-ES": "Una carta transmitida y atribuida a un sínodo de Antioquía hacia 324–325 refiere negar comunión a tres obispos y prevé una reunión futura en Ancira. Eso no prueba destitución de sus cargos. La fecha exacta y el orden respecto a la carta imperial se debaten; este episodio es un regreso editorial a Antioquía antes de Nicea, no una secuencia resuelta. Sus escribientes y paquetes locales son ficticios."
+      },
+      "personalIntro": {
+        "en": "My father’s box said “minutes.” Inside were reports, requests and one perfectly useless shopping list. I learned to distrust a splendid label. These inherited Antioch papers ask for the same care: what someone says happened, what they ordered, and what they hoped might come next must not be stapled into one certainty.",
+        "es-ES": "La caja de mi padre decía «actas». Dentro había informes, peticiones y una lista de compras perfectamente inútil. Aprendí a desconfiar de una etiqueta espléndida. Estos papeles antioquenos heredados piden el mismo cuidado: lo que alguien cuenta que ocurrió, lo que dispuso y lo que esperaba para después no deben coserse en una sola certeza."
+      },
+      "factualOutro": {
+        "en": "Three fictional packets reached their assigned courts and their original clerks returned after their own delivery receipts. This local work does not authenticate the transmitted letter or settle its accusations, author or chronology. Its reference to Ancyra remains distinct from the later council at Nicaea.",
+        "es-ES": "Tres paquetes ficticios llegaron a sus patios asignados y sus escribientes originales regresaron tras sus propios recibos de entrega. Este trabajo local no autentica la carta transmitida ni resuelve sus acusaciones, autoría o cronología. Su referencia a Ancira sigue siendo distinta del concilio posterior de Nicea."
+      },
+      "personalOutro": {
+        "en": "I put three labels on three packets, then waited for three people to come home. My father’s box is still called “minutes.” Perhaps I shall cross that out. The work inside will survive a less impressive name.",
+        "es-ES": "Puse tres etiquetas en tres paquetes y esperé a que tres personas volvieran a casa. La caja de mi padre aún se llama «actas». Quizá lo tache. El trabajo que guarda sobrevivirá a un nombre menos impresionante."
+      },
+      "terrainInstructions": "One local Antioch frame east of the schematic Orontes reach, with north-valley routes and Silpius foothill context south/east. Five fictional work/receiving courts do not identify an actual synodal church, episcopal house, imperial envoy route or three accused bishops’ residences. No mandatory river or island crossing. Do not use Golden Octagon dedicated 341, later city walls, crusader fort, Ottoman urban fabric or a modern Antakya grid as 324/325 structures. Some earlier churches existed, but exact synod venue and dated footprints are unverified. Ancient banks, road/elevation phases and paths need independent audit.",
+      "routeHelp": {
+        "en": "Collect three distinct original local notes—assembly setting, reported communion decision, proposed future venue—and bring them to common copying. Pay 90 wood and 30 gold once to make three packets, each from its own collected note and that exact payment. Send one original clerk and its assigned packet to each of the three disclosed local courts. These are separate arrival identities; no carried inventory or physical co-travel is claimed. After each clerk’s own court arrival and observed departure, return that same clerk to common work. There is no creed vote, office-removal command, historically attested escort or forced theological agreement.",
+        "es-ES": "Recoge tres notas locales originales distintas —marco de la reunión, decisión de comunión referida y lugar futuro propuesto— y llévalas al patio común. Paga una vez 90 de madera y 30 de oro para preparar tres paquetes, cada uno con su propia nota recogida y ese pago exacto. Envía un escribiente original y su paquete asignado a cada uno de los tres patios locales indicados. Son identidades separadas de llegada; no se afirma inventario transportado ni viaje físicamente conjunto. Tras la llegada de cada escribiente a su patio y su salida observada propia, devuelve ese mismo escribiente al trabajo común. No hay votación de credo, orden de destitución, escolta históricamente acreditada ni acuerdo teológico forzoso."
+      },
+      "qaCases": [
+        "Three local notes retain distinct identities; no later critical edition or medieval Syriac manuscript appears in 324–325.",
+        "Each packet derives from its own collected note and exact o2 funding receipt; shared receipt never creates three debits.",
+        "Each of the three original clerks has its own court; three arrivals at one court cannot satisfy this distribution.",
+        "Packet arrival cannot authorize a clerk departure.",
+        "Each clerk requires its own o3 arrival receipt, o4 departure and guarded return; an earlier visit to common work cannot satisfy the return.",
+        "All three original clerks are essential; an optional guide cannot replace a lost clerk.",
+        "Communion exclusion stays attributed; no office-removal command or theological correctness score.",
+        "Ancyra named in the letter is neither Nicaea nor a local Antioch district.",
+        "The c.324–325 date and order relative to the imperial letter are debated; do not present this editorial sequence as a settled fact.",
+        "Do not place the Golden Octagon dedicated in 341 or identify modern Antakya ruins as the exact synod site.",
+        "The reference arrival predicate proves destinations; it does not prove carried inventory or coupled travel."
+      ],
+      "episodeId": "11-council-record-escort-antioch",
+      "startingResources": {
+        "food": 350,
+        "wood": 150,
+        "gold": 75,
+        "stone": 0
+      },
+      "protectedRecoveryStock": {
+        "food": 300,
+        "wood": 200,
+        "gold": 100,
+        "stone": 0
+      },
+      "replacementBudget": {
+        "food": 120,
+        "wood": 80,
+        "gold": 40,
+        "stone": 0
+      },
+      "discretionaryMargin": {
+        "food": 650,
+        "wood": 400,
+        "gold": 150,
+        "stone": 100
+      },
+      "enemyCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "difficultyLevers": {
+        "easy": "12 workers; fully marked route; independent pickups can be completed in any order.",
+        "standard": "9 workers; geographic approach markers with local fog; plan deliveries and gathering in parallel.",
+        "hard": "6 workers; fewer initial supplies; all essential receiving zones and costs remain disclosed; no invented hostile army or secret deadline."
+      },
+      "corridors": [
+        {
+          "id": "northwest-record-circuit",
+          "hubOrder": [
+            "hub-1",
+            "hub-2"
+          ],
+          "mode": "land",
+          "widthTiles": 10
+        },
+        {
+          "id": "east-record-circuit",
+          "hubOrder": [
+            "hub-1",
+            "hub-3"
+          ],
+          "mode": "land",
+          "widthTiles": 10
+        },
+        {
+          "id": "north-record-circuit",
+          "hubOrder": [
+            "hub-1",
+            "hub-2",
+            "hub-4"
+          ],
+          "mode": "land",
+          "widthTiles": 10
+        },
+        {
+          "id": "east-north-alternative",
+          "hubOrder": [
+            "hub-1",
+            "hub-3",
+            "hub-4"
+          ],
+          "mode": "land",
+          "widthTiles": 8
+        },
+        {
+          "id": "southeast-work-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-5",
+            "hub-3"
+          ],
+          "mode": "land",
+          "widthTiles": 8
+        }
+      ],
+      "dramatizationNotice": {
+        "en": "The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.",
+        "es-ES": "Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida."
+      },
+      "defeatText": {
+        "en": "The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat.",
+        "es-ES": "El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota."
+      },
+      "recoveryText": {
+        "en": "Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost.",
+        "es-ES": "La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable."
+      },
+      "failureRecovery": {
+        "mainIdentityLoss": "explicitly irrecoverable main-object loss causes defeat; survivor groups tolerate only their declared loss margin",
+        "optionalIdentityLoss": "only corresponding task becomes failed-optional",
+        "recoveryImplementation": "inventory/replacement capability pending; reserved resources alone cannot resurrect an identity"
+      },
+      "requiredCapabilities": [
+        {
+          "id": "composed-world-ledger",
+          "status": "reference model implemented; native implementation pending"
+        },
+        {
+          "id": "geographic-land-corridors",
+          "status": "real-world plan authored; DEM/footprints/pathfinding pending"
+        },
+        {
+          "id": "two-narrator-sequence",
+          "status": "caption text authored; certified native Sequence Items pending"
+        },
+        {
+          "id": "receipt-gated-ordered-departure",
+          "status": "reference implemented; native observers and real navigation pending"
+        }
+      ],
+      "artDirection": {
+        "style": "sober late Roman Antioch working courts and foothill context, restrained administrative humor",
+        "historicalControls": "No exact bishop residence, Golden Octagon dedicated in 341, medieval manuscript or modern critical edition in 324–325. Fictional clerks do not stand for the three accused bishops.",
+        "referenceAssets": [],
+        "productionApproved": false
+      },
+      "editorialReviewNotes": {
+        "date": "2026-10-13",
+        "author": "gpt-6",
+        "status": "independent historical/editorial approval pending",
+        "voice": "Marcus recalls fictional family labels and later clerical practice, without prebirth presence or knowledge of modern critical scholarship. The common narrator carries modern transmission and date cautions."
+      },
+      "mapBBox": [
+        36.14,
+        36.185,
+        36.205,
+        36.25
+      ],
+      "districts": [
+        {
+          "name": {
+            "en": "Common local copying court",
+            "es-ES": "Patio común local de copias"
+          },
+          "lonLat": [
+            36.17,
+            36.208
+          ]
+        },
+        {
+          "name": {
+            "en": "Fictional northwestern reception court",
+            "es-ES": "Patio receptor ficticio noroccidental"
+          },
+          "lonLat": [
+            36.164,
+            36.224
+          ]
+        },
+        {
+          "name": {
+            "en": "Fictional eastern reception court",
+            "es-ES": "Patio receptor ficticio oriental"
+          },
+          "lonLat": [
+            36.188,
+            36.219
+          ]
+        },
+        {
+          "name": {
+            "en": "Fictional northern reception court",
+            "es-ES": "Patio receptor ficticio norteño"
+          },
+          "lonLat": [
+            36.187,
+            36.244
+          ]
+        },
+        {
+          "name": {
+            "en": "Ordinary southeastern work shelter",
+            "es-ES": "Cobertizo ordinario sureste de trabajo"
+          },
+          "lonLat": [
+            36.184,
+            36.202
+          ]
+        }
+      ],
+      "objectGroups": [
+        {
+          "key": "setting-note",
+          "count": 1,
+          "role": "fictional-local-working-note",
+          "originHub": "hub-2",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "offsetBaseTiles": [
+            -14,
+            8
+          ]
+        },
+        {
+          "key": "communion-note",
+          "count": 1,
+          "role": "fictional-local-working-note",
+          "originHub": "hub-3",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "offsetBaseTiles": [
+            0,
+            8
+          ]
+        },
+        {
+          "key": "venue-note",
+          "count": 1,
+          "role": "fictional-local-working-note",
+          "originHub": "hub-4",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "offsetBaseTiles": [
+            14,
+            8
+          ]
+        },
+        {
+          "key": "setting-packet",
+          "count": 1,
+          "role": "fictional-local-labelled-packet",
+          "originHub": "hub-1",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+          "offsetBaseTiles": [
+            -14,
+            22
+          ]
+        },
+        {
+          "key": "communion-packet",
+          "count": 1,
+          "role": "fictional-local-labelled-packet",
+          "originHub": "hub-1",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+          "offsetBaseTiles": [
+            0,
+            22
+          ]
+        },
+        {
+          "key": "venue-packet",
+          "count": 1,
+          "role": "fictional-local-labelled-packet",
+          "originHub": "hub-1",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "generationPolicy": "created once from collected inputs and explicitly declared exact payment receipts in its active phase",
+          "offsetBaseTiles": [
+            14,
+            22
+          ]
+        },
+        {
+          "key": "original-clerks",
+          "count": 3,
+          "role": "fictional-original-local-clerk",
+          "originHub": "hub-1",
+          "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
+          "offsetBaseTiles": [
+            -14,
+            36
+          ]
+        }
+      ],
+      "mainObjectives": [
+        {
+          "text": {
+            "en": "Collect the three distinct original local notes and deliver each to common copying.",
+            "es-ES": "Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias."
+          },
+          "requirements": [
+            {
+              "kind": "entity-state",
+              "group": "setting-note",
+              "requiredCount": 1,
+              "state": "collected"
+            },
+            {
+              "kind": "entity-state",
+              "group": "setting-note",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-1"
+            },
+            {
+              "kind": "entity-state",
+              "group": "communion-note",
+              "requiredCount": 1,
+              "state": "collected"
+            },
+            {
+              "kind": "entity-state",
+              "group": "communion-note",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-1"
+            },
+            {
+              "kind": "entity-state",
+              "group": "venue-note",
+              "requiredCount": 1,
+              "state": "collected"
+            },
+            {
+              "kind": "entity-state",
+              "group": "venue-note",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-1"
+            }
+          ],
+          "receiptText": {
+            "en": "Three separate local originals are ready, without merging their subjects.",
+            "es-ES": "Tres originales locales separados están preparados, sin fusionar sus asuntos."
+          },
+          "personaReaction": {
+            "en": "A report, a decision, an expectation. One label would have done an injustice to all three.",
+            "es-ES": "Un informe, una decisión, una expectativa. Una etiqueta habría hecho una injusticia a los tres."
+          }
+        },
+        {
+          "text": {
+            "en": "Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note.",
+            "es-ES": "Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida."
+          },
+          "requirements": [
+            {
+              "kind": "resource-transaction",
+              "amounts": {
+                "wood": 90,
+                "gold": 30
+              },
+              "receivingHubs": [
+                "hub-1"
+              ],
+              "allocationByHub": {
+                "hub-1": {
+                  "wood": 90,
+                  "gold": 30
+                }
+              }
+            },
+            {
+              "kind": "derived-token",
+              "inputGroups": [
+                "setting-note"
+              ],
+              "outputGroup": "setting-packet",
+              "once": true,
+              "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+              "requiredPaymentRequirements": [
+                {
+                  "objective": "o2",
+                  "requirement": "req-1"
+                }
+              ]
+            },
+            {
+              "kind": "derived-token",
+              "inputGroups": [
+                "communion-note"
+              ],
+              "outputGroup": "communion-packet",
+              "once": true,
+              "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+              "requiredPaymentRequirements": [
+                {
+                  "objective": "o2",
+                  "requirement": "req-1"
+                }
+              ]
+            },
+            {
+              "kind": "derived-token",
+              "inputGroups": [
+                "venue-note"
+              ],
+              "outputGroup": "venue-packet",
+              "once": true,
+              "deriveWhen": "collected local working identities and exact funded receipt in active phase",
+              "requiredPaymentRequirements": [
+                {
+                  "objective": "o2",
+                  "requirement": "req-1"
+                }
+              ]
+            }
+          ],
+          "receiptText": {
+            "en": "Three packets have distinct inputs and the same exact funded receipt; no second debit.",
+            "es-ES": "Tres paquetes tienen entradas distintas y el mismo recibo exacto de financiación; sin segundo cobro."
+          },
+          "personaReaction": {
+            "en": "The workshop charges once. A grand title must not charge three times for the same ink.",
+            "es-ES": "El taller cobra una vez. Un título grandioso no debe cobrar tres veces por la misma tinta."
+          }
+        },
+        {
+          "text": {
+            "en": "Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there.",
+            "es-ES": "Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro."
+          },
+          "requirements": [
+            {
+              "kind": "entity-state",
+              "group": "original-clerks",
+              "requiredCount": 3,
+              "state": "arrived",
+              "destinationHubsByOrdinal": [
+                "hub-2",
+                "hub-3",
+                "hub-4"
+              ]
+            },
+            {
+              "kind": "entity-state",
+              "group": "setting-packet",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-2"
+            },
+            {
+              "kind": "entity-state",
+              "group": "communion-packet",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-3"
+            },
+            {
+              "kind": "entity-state",
+              "group": "venue-packet",
+              "requiredCount": 1,
+              "state": "arrived",
+              "destinationHub": "hub-4"
+            }
+          ],
+          "receiptText": {
+            "en": "Each original clerk and its correctly labelled packet reached its own assigned court.",
+            "es-ES": "Cada escribiente original y su paquete bien rotulado llegaron a su propio patio asignado."
+          },
+          "personaReaction": {
+            "en": "The northern door does not become Ancyra merely because its packet mentions it.",
+            "es-ES": "La puerta norteña no se convierte en Ancira porque su paquete la mencione."
+          }
+        },
+        {
+          "text": {
+            "en": "After their individual receiving-court receipts, observe the three original clerks’ departures and return all three to common work.",
+            "es-ES": "Tras sus recibos individuales de los patios receptores, observa las salidas de los tres escribientes originales y devuelve a los tres al trabajo común."
+          },
+          "requirements": [
+            {
+              "kind": "ordered-departure",
+              "receiptObjective": "o3",
+              "receiptRequirement": "req-1",
+              "departingGroup": "original-clerks",
+              "departureEnabledOnlyAfterReceipt": true
+            },
+            {
+              "kind": "entity-state",
+              "group": "original-clerks",
+              "requiredCount": 3,
+              "state": "arrived",
+              "destinationHub": "hub-1",
+              "arrivalAfterDeparture": {
+                "objective": "o4",
+                "requirement": "req-1"
+              }
+            }
+          ],
+          "receiptText": {
+            "en": "The same three original clerks returned after their own receipt-backed departures.",
+            "es-ES": "Los mismos tres escribientes originales regresaron tras sus propias salidas respaldadas por recibo."
+          },
+          "personaReaction": {
+            "en": "The people came home. Their packets do not oblige history to become simpler.",
+            "es-ES": "Las personas volvieron a casa. Sus paquetes no obligan a la historia a hacerse más sencilla."
+          }
+        }
+      ],
+      "survivorGroups": [
+        {
+          "group": "original-clerks",
+          "minimumAliveOrAlreadySafe": 3
+        }
+      ],
+      "optionalTasks": [
+        {
+          "kind": "scout",
+          "title": {
+            "en": "Two northern approaches",
+            "es-ES": "Dos accesos norteños"
+          },
+          "subject": {
+            "en": "two northern approaches",
+            "es-ES": "dos accesos norteños"
+          },
+          "rationale": {
+            "en": "Mark both proposed local approaches without claiming a datedsynod arrival route.",
+            "es-ES": "Señala ambos accesos locales propuestos sin afirmar una ruta fechada de llegada al sínodo."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ],
+          "information": {
+            "effect": {
+              "kind": "mark-alternative-route",
+              "target": "north-record-circuit fictional approach",
+              "corridorId": "north-record-circuit"
+            },
+            "benefit": {
+              "en": "Mark the proposed north-record-circuit once; main receivers remain disclosed independently.",
+              "es-ES": "Señala una vez north-record-circuit propuesto; los receptores principales se indican por separado."
+            }
+          }
+        },
+        {
+          "kind": "copy",
+          "title": {
+            "en": "A letter is not minutes",
+            "es-ES": "Una carta no es actas"
+          },
+          "subject": {
+            "en": "a letter is not minutes",
+            "es-ES": "una carta no es actas"
+          },
+          "rationale": {
+            "en": "Optional narrated context distinguishes transmitted letter, accused positions and uncertain date; no later criticaledition is placed in325.",
+            "es-ES": "El contexto narrado opcional distingue carta transmitida, posiciones acusadas y fecha incierta; no coloca una edición crítica posterior en325."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ]
+        },
+        {
+          "kind": "aid",
+          "title": {
+            "en": "Neighbors outside the dispute",
+            "es-ES": "Vecinos fuera de la disputa"
+          },
+          "subject": {
+            "en": "neighbors outside the dispute",
+            "es-ES": "vecinos fuera de la disputa"
+          },
+          "rationale": {
+            "en": "Independent voluntary household aid asks no doctrinal declaration or faction loyalty.",
+            "es-ES": "La ayuda voluntaria doméstica independiente no pide declaración doctrinal ni lealtad de facción."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ]
+        },
+        {
+          "kind": "repair",
+          "title": {
+            "en": "The ordinary southern shelter",
+            "es-ES": "El cobertizo ordinario sureño"
+          },
+          "subject": {
+            "en": "the ordinary southern shelter",
+            "es-ES": "el cobertizo ordinario sureño"
+          },
+          "rationale": {
+            "en": "Repair a separate working store for bounded resources; no church or saint is restored by a stock payment.",
+            "es-ES": "Repara un almacén separado para recursos limitados; pagar existencias no restaura una iglesia ni un santo."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ]
+        },
+        {
+          "kind": "trade",
+          "title": {
+            "en": "One local writing consignment",
+            "es-ES": "Una remesa local de escritura"
+          },
+          "subject": {
+            "en": "one local writing consignment",
+            "es-ES": "una remesa local de escritura"
+          },
+          "rationale": {
+            "en": "One finite exchange supports ordinary work, not episcopal reinstatement or imperial influence.",
+            "es-ES": "Un intercambio finito apoya trabajo ordinario, no restitución episcopal ni influencia imperial."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ]
+        },
+        {
+          "kind": "guide",
+          "title": {
+            "en": "The eastern northern circuit",
+            "es-ES": "El circuito norteño por el este"
+          },
+          "subject": {
+            "en": "the eastern northern circuit",
+            "es-ES": "el circuito norteño por el este"
+          },
+          "rationale": {
+            "en": "Mark an alternate land connection without turning a proposal at Ancyra into a local destination.",
+            "es-ES": "Señala un enlace terrestre alternativo sin convertir una propuesta en Ancira en destino local."
+          },
+          "corridorIds": [
+            "northwest-record-circuit",
+            "east-record-circuit",
+            "north-record-circuit",
+            "east-north-alternative",
+            "southeast-work-link"
+          ],
+          "information": {
+            "effect": {
+              "kind": "mark-alternative-route",
+              "target": "east-north-alternative fictional approach",
+              "corridorId": "east-north-alternative"
+            },
+            "benefit": {
+              "en": "Mark the proposed east-north-alternative once; main receivers remain disclosed independently.",
+              "es-ES": "Señala una vez east-north-alternative propuesto; los receptores principales se indican por separado."
+            }
+          }
+        }
+      ],
+      "playstyles": [
+        {
+          "id": "parallel-three-court-copying",
+          "optionalObjectives": [
+            "side-1",
+            "side-6"
+          ],
+          "costOfOpportunity": "Split collection/clerks over the northwestern and eastern branches; more simultaneous movement and original identities to track.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        },
+        {
+          "id": "shelter-and-document-context",
+          "optionalObjectives": [
+            "side-2",
+            "side-4"
+          ],
+          "costOfOpportunity": "Read optional source limits and fund separate work support while reserving the sole90wood/30gold main payment.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        },
+        {
+          "id": "neighbors-and-trade",
+          "optionalObjectives": [
+            "side-3",
+            "side-5"
+          ],
+          "costOfOpportunity": "Support households and materials with independent units while three original clerks complete their assigned return chain.",
+          "mainObjectivesUnchanged": true,
+          "historicalOutcomeUnchanged": true
+        }
+      ],
+      "gameplayIdentity": {
+        "problem": "three distinct scope-labelled originals, matching local packets and individually receipted original-clerk returns",
+        "decision": "parallel collection/dispatch or sequential couriers, two northern approaches, separate shelter/context versus household/trade work",
+        "densityPlan": "five local Antioch courts on 360 tiles; six optional branches; no hidden ecclesiastical battle or compulsory river crossing",
+        "replay": "worker split, dispatch order and optional portfolios vary; accusations, venue uncertainty and source chronology remain qualified",
+        "fixedOutcome": "no player-authored canon, voted creed, episcopal deposition, historical letter authentication or settled sequence"
       }
     }
   ],
