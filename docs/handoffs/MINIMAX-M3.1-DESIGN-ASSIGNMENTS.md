@@ -1,6 +1,6 @@
 # Asignaciones y gates de MiniMax M3.1
 
-El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las tres de apertura imperial son borradores en revisión, pendientes de escenario nativo.
+El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las cinco de apertura imperial son borradores en revisión, pendientes de escenario nativo.
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 
@@ -147,3 +147,5 @@ Marcus mantiene `imperial-clerk`, pero en la odisea ampliada su vida es c.334–
 
 
 La apertura de imperial-church tiene dossiers individuales para los órdenes 1–3: sector táctico terrestre del Puente Milvio, preparación local en Milán y patios ficticios en Nicomedia. Entrada, objetivos, voz, pagos, fuerzas finitas y QA están especificados. Son 33 expedientes ampliados en total (1.317 pantallas, 198 secundarios); su revisión histórica y capacidades nativas siguen pendientes. El control territorial sostenido usa la semántica de derrota inmediata de la referencia: no inventar un periodo de gracia. No extraer cifras militares del roster ficticio como datos históricos.
+
+Roma (orden 4) mantiene dos cadenas de solicitudes/registros y dos retornos distintos, cada uno respaldado por su propia recepción y salida. Arlés (orden 5) prepara tres puestos terrestres y distribuye seis ayudantes y tres asignaciones de120 de alimento antes de archivar un registro ficticio. Ni la audiencia ni las decisiones conciliares se convierten en votación jugable; no usar Ostia como sede por figurar un obispo de esa ciudad. Hay 35 borradores (1.401 pantallas, 210 secundarios), todos sujetos a los gates históricos/nativos.

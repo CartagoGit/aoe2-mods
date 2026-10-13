@@ -325,6 +325,72 @@
       "modifications": "Original Commons file retained without local changes.",
       "attributionRequired": true,
       "shareAlikeRequired": true
+    },
+    {
+      "id": "arles-theatre-modern",
+      "path": "docs/research/odyssey-research/images/roman-theatre-arles.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Roman_Theatre_at_Arles,_France_(7179293588).jpg",
+      "downloadUrl": "https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/b/bd/Roman_Theatre_at_Arles%2C_France_%287179293588%29.jpg",
+      "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Roman_Theatre_at_Arles%2C_France_%287179293588%29.jpg",
+      "author": "Larry (Flickr user microbe; page credits Larry from Charlottetown)",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "consulted": "2026-10-13",
+      "bytes": 1829188,
+      "sha256": "d6bed4183dad170a5fcb8f02ba2ac54d4fc80b64a5251c50cd0818088d042568",
+      "dimensions": [
+        3648,
+        2736
+      ],
+      "usage": "Local visual research only. Current archaeological remains of the Gallo-Roman theatre at Arles.",
+      "anachronismsAndLimits": "Present-day conservation and urban surroundings, not an intact 314 CE view; no claim about the theatre’s exact use/state in 314. Commons file page also records reviewed Flickr licensing.",
+      "productionApproved": false,
+      "modifications": "CDN-served recompressed copy, not byte-identical to Wikimedia original; no local edits. Original endpoint returned429.",
+      "downloadProvenance": "Downloaded proxy copy has same pixel dimensions but differs in byte count from Wikimedia original metadata; treat as a proxy-derived research copy, not checksum-identical original. Direct original endpoint returned Wikimedia 429."
+    },
+    {
+      "id": "arles-amphitheatre-modern",
+      "path": "docs/research/odyssey-research/images/arles-amphitheatre.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arles_amphitheater.jpg",
+      "downloadUrl": "https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/8/8e/Arles_amphitheater.jpg",
+      "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Arles_amphitheater.jpg",
+      "author": "Stefan Bauer (Ferras)",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "consulted": "2026-10-13",
+      "bytes": 227793,
+      "sha256": "035d80d1c0bfeae6b5ddf2c6f28ea1f30ebafd3a50c68f436d887d6abb084476",
+      "dimensions": [
+        990,
+        645
+      ],
+      "usage": "Local visual research only. Present-day Arles amphitheatre, also catalogued by French heritage database Mérimée PA00081119.",
+      "anachronismsAndLimits": "Modern remains, repairs and present-day appearance; the ancient arena’s later residential/fortified phases mean it cannot stand for a pristine fourth-century amphitheatre. Image is only 990×645 pixels. Derivative/adapted distribution subject to share-alike.",
+      "productionApproved": false,
+      "modifications": "CDN-served recompressed copy, not byte-identical to Wikimedia original; no local edits. Original endpoint returned429.",
+      "downloadProvenance": "Downloaded proxy copy has same pixel dimensions but differs in byte count from Wikimedia original metadata; treat as a proxy-derived research copy, not checksum-identical original. Direct original endpoint returned Wikimedia 429."
+    },
+    {
+      "id": "arles-rhone-modern",
+      "path": "docs/research/odyssey-research/images/rhone-arles-modern.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rhone_river_Tour_de_l%27%C3%A9corchoir_in_Arles_View_from_river.jpg",
+      "downloadUrl": "https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/6/66/Rhone_river_Tour_de_l%27%C3%A9corchoir_in_Arles_View_from_river.jpg",
+      "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Rhone_river_Tour_de_l%27%C3%A9corchoir_in_Arles_View_from_river.jpg",
+      "author": "ГРИЩУК ЮН (Commons user Грищук ЮН)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "consulted": "2026-10-13",
+      "bytes": 3619064,
+      "sha256": "1db1eb018adf775a47264196e3ba430a13cb31fa7a780f0b255f4209e0aefd00",
+      "dimensions": [
+        3264,
+        2448
+      ],
+      "usage": "Local visual research only. Modern Rhône waterside view in Arles, described as view from river near the Tour de l’écorchoir and a bridge.",
+      "anachronismsAndLimits": "Modern quay, tower and bridge are not evidence for 314 shoreline, bridge, docks or river engineering. Page flags that its top-level description lacks detail; use the detailed licensing description. Share-alike applies to adaptations.",
+      "productionApproved": false,
+      "modifications": "CDN-served recompressed copy, not byte-identical to Wikimedia original; no local edits. Original endpoint returned429.",
+      "downloadProvenance": "Downloaded proxy copy has same pixel dimensions but differs in byte count from Wikimedia original metadata; treat as a proxy-derived research copy, not checksum-identical original. Direct original endpoint returned Wikimedia 429."
     }
   ]
 }
