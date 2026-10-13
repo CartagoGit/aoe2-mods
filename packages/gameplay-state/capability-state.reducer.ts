@@ -1,13 +1,12 @@
-import {
-  paymentReceiptMatches,
-  paymentReceiptPrecedesObjective,
-} from "../gameplay-validation/payment-receipt.helper";
+import { isSameOrRequiredPredecessor } from "../gameplay-validation/objective-ancestry.helper";
+import { paymentReceiptMatches } from "../gameplay-validation/payment-receipt.helper";
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import type { CapabilityAction } from "./capability-action.model";
 import {
   addFact,
   arrivalKey,
   asRecord,
+  departureObservedForArrival,
   factKey,
   hasArrival,
   objectiveRequirements,
@@ -136,7 +135,7 @@ export function reduceCapabilityState(
       (req.requiredPaymentReceipts ?? []).some(
         (receipt) =>
           !paymentReceiptMatches(profile, receipt) ||
-          !paymentReceiptPrecedesObjective(
+          !isSameOrRequiredPredecessor(
             profile,
             receipt.fromObjective,
             action.objectiveId,
@@ -175,7 +174,13 @@ export function reduceCapabilityState(
         .filter(
           (req) =>
             (req.kind === "entity-state" &&
-              req.destinations?.[action.entityId] === action.zoneId) ||
+              req.destinations?.[action.entityId] === action.zoneId &&
+              departureObservedForArrival(
+                profile,
+                state,
+                req,
+                action.entityId,
+              )) ||
             (req.kind === "paired-delivery" &&
               req.destination === action.zoneId &&
               req.pairs.some(
@@ -566,6 +571,7 @@ export function reduceCapabilityState(
     if (
       !req ||
       req.kind !== "ordered-departure" ||
+      !isActive(profile, state, action.objectiveId) ||
       !req.departingEntities.includes(action.entityId) ||
       !departureReceiptSatisfied(profile, state, req) ||
       state.entityStates[action.entityId] === "destroyed"
@@ -574,6 +580,12 @@ export function reduceCapabilityState(
     next = {
       ...state,
       departedEntities: [...state.departedEntities, action.entityId],
+      requirementFacts: addFact(
+        state,
+        action.objectiveId,
+        req.id,
+        action.entityId,
+      ),
     };
   } else if (action.type === "enter-phase") {
     const transition = profile.stateMachine.phaseTransitions.find(

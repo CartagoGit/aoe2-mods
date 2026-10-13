@@ -5,6 +5,7 @@ import {
   factKey,
   factsFor,
   hasArrival,
+  hasRequirementArrival,
   objectiveRequirements,
 } from "./capability-ledgers.helper";
 import type { CapabilitySnapshot } from "./capability-snapshot.schema";
@@ -61,7 +62,7 @@ export function mainRequirementSatisfied(
       );
       if (requirement.state === "arrived") {
         const delivered = candidates.filter((id) =>
-          hasArrival(state, id, requirement.destinations?.[id] ?? ""),
+          hasRequirementArrival(state, objectiveId, requirement, id),
         );
         const assignedZones = new Set(
           Object.values(requirement.destinations ?? {}),

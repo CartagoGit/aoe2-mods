@@ -76,6 +76,12 @@ const entityStatePredicate = z.strictObject({
   oncePerEntity: z.literal(true),
   destinations: z.record(contractId, contractId).optional(),
   arrivalRule: nonEmpty.optional(),
+  arrivalAfterDeparture: z
+    .strictObject({
+      objective: contractId,
+      requirement: contractId,
+    })
+    .optional(),
   distinctDestinationCount: z.number().int().positive().optional(),
   minimumPerDestination: z.number().int().positive().optional(),
   eligibilityRule: nonEmpty.optional(),

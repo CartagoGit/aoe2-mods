@@ -3,10 +3,9 @@ import type {
   CapabilityProfileV2,
   MainObjective,
 } from "../schemas/scenario-capability.schema";
-import {
-  paymentReceiptMatches,
-  paymentReceiptPrecedesObjective,
-} from "./payment-receipt.helper";
+import { isSameOrRequiredPredecessor } from "./objective-ancestry.helper";
+import { paymentReceiptMatches } from "./payment-receipt.helper";
+import { validateRequirementCausality } from "./requirement-causality.validator";
 
 const resourceNames = ["food", "wood", "gold", "stone"] as const;
 export function validateScenarioCapability(
@@ -202,6 +201,26 @@ export function validateScenarioCapability(
       const zoneRefs: string[] = [];
       switch (req.kind) {
         case "entity-state":
+          if (req.arrivalAfterDeparture) {
+            const ref = req.arrivalAfterDeparture;
+            const departure = objectives
+              .get(ref.objective)
+              ?.predicate.requirements.find((r) => r.id === ref.requirement);
+            if (
+              req.state !== "arrived" ||
+              !req.destinations ||
+              departure?.kind !== "ordered-departure" ||
+              !req.entities.every((id) =>
+                departure.departingEntities.includes(id),
+              ) ||
+              !isSameOrRequiredPredecessor(profile, ref.objective, objective.id)
+            )
+              add(
+                "capability.arrival-departure",
+                reqContext,
+                "La llegada debe referenciar una salida de las mismas identidades en este objetivo o en un predecesor obligatorio",
+              );
+          }
           if (new Set(req.entities).size !== req.entities.length)
             add(
               "capability.entity-identity-duplicate",
@@ -550,7 +569,7 @@ export function validateScenarioCapability(
                 "La fabricación exige un recibo con productor único e importe exacto",
               );
             if (
-              !paymentReceiptPrecedesObjective(
+              !isSameOrRequiredPredecessor(
                 profile,
                 receipt.fromObjective,
                 objective.id,
@@ -973,7 +992,7 @@ export function validateScenarioCapability(
       "Producción enemiga debe estar desactivada para el roster finito",
     );
 
-  return out;
+  return [...out, ...validateRequirementCausality(profile)];
 }
 
 export function capabilityObjectiveRequirements(objective: MainObjective) {
