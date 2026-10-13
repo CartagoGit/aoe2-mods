@@ -3,7 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Fifteen Days, Many Voices</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">320 × 320 · jerusalem · N ↑ E →</text>
-<polyline points="395.42,322.95 398.50,399.12 435.50,500.67" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"/>
+<polyline data-corridor="main" points="395.42,322.95 398.50,399.12 435.50,500.67" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="395.42,322.95 398.50,399.12 435.50,500.67" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed district connection, intermediate path pending</title></polyline>
 <circle cx="395.42" cy="322.95" r="20" fill="none" stroke="#91512f"/>
 <text x="418.42" y="322.95" font-family="sans-serif">1</text>
 <text x="730" y="190" font-family="sans-serif" font-size="12">1: Northwest archive stores</text>
@@ -17,7 +18,8 @@
 <text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
 <text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
 <text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="516" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
 <text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [35.12, 31.7, 35.3, 31.86]; cosine-corrected longitude; approximate districts</text>
 </svg>

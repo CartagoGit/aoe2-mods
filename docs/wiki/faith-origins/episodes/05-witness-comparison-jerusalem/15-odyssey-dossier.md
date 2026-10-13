@@ -124,6 +124,16 @@ ES: Financia la comparación con 30 de madera y prepara un resumen matizado usan
       ],
       "outputEntities": [
         "faith-origins.05-witness-comparison-jerusalem.qualified-summary-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.05-witness-comparison-jerusalem.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 30
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -285,6 +295,11 @@ ES: Deja visible el año incierto junto a los quince días.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

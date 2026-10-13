@@ -37,3 +37,15 @@ Los [ocho primeros expedientes](../../wiki/faith-origins/14-odyssey-arc.md) tien
 [Seven episode/source consultations and three places](faith-act2-source-geography-audit.json) retain partial access and provenance disputes. The authorial claim in1Cor16:8 is checked separately from exact composition date. The seven new dossiers distinguish fictional working notes from canonical originals. [Five downloaded ASCSA datasets](corinth-gis-audit.json) add archaeological and relief research controls with checksums and [credits](CREDITS.md); mixed dates and the contour raster’s undeclared CRS prevent automatic use as first-century footprints.
 
 [Auditoría de los30episodios de first-caliphs](first-caliphs-source-audit-v2.json) conserva las consultas pendientes, relatos tardíos y alternativas de calendario. Sus propuestas de corrección aún necesitan decisión editorial y no modifican automáticamente la cronología seleccionada.
+
+
+## Consultas del tercer acto y corpus judío
+
+Los [18 dossiers ampliados](../../wiki/faith-origins/14-odyssey-arc.md) son órdenes 1–16, 18 y 19; Jerusalén 70 sigue pendiente. Las fuentes añadidas de Marcos 1, Mateo 1, Lucas 3:23–38 y Didaché 11–13 conservan fecha de consulta y límites en cada selección. No se descargan traducciones modernas para reutilizarlas como guion ni se colocan autógrafos canónicos en las actividades ficticias.
+
+- [Finale de Milán 303–313](faith-finale-source-audit.json): distingue reunión/acuerdo en Milán, publicación del rescripto en Nicomedia y una orden genérica de restitución; no prueba una restitución local concreta.
+- [Auditoría judía inicial, episodios 1–6](jewish-first-act-source-audit.json): tradiciones sobre Yavneh, Akiva y reforma fiscal; no un concilio único ni abolición acreditada del fiscus.
+- [Auditoría judía intermedia, episodios 7–17](jewish-middle-source-audit.json): rebeliones, archivos de cuevas, ciudadanía, Dura y círculos amoraicos, con accesos parciales explícitos.
+- [Auditoría judía tardía, episodios 18–30](jewish-late-source-audit.json): arqueología, compilaciones y disposiciones legales; promulgación no implica cumplimiento y c.425 sigue siendo un límite editorial.
+
+Estas recopilaciones son investigación delegada, pendiente de interpretación del arquitecto y revisión independiente. No fijan objetivos, poblaciones, mapas o mecánicas ni aprueban una campaña.

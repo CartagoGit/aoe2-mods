@@ -145,6 +145,17 @@ ES: Paga una sola vez 40 de madera y 20 de oro y elabora un registro local de en
       ],
       "outputEntities": [
         "faith-origins.14-administrative-intrigue-caesarea.local-dispatch-register-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.14-administrative-intrigue-caesarea.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 40,
+            "gold": 20
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -319,6 +330,7 @@ ES: Puedo registrar una salida local. No puedo leer todas las intenciones detrá
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

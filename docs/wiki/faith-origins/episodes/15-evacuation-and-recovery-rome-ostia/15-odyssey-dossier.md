@@ -191,6 +191,17 @@ ES: Lleva los cuatro arcones al refugio, paga una sola vez 300 de alimento y 80 
       "outputEntities": [
         "faith-origins.15-evacuation-and-recovery-rome-ostia.local-departure-notes-1",
         "faith-origins.15-evacuation-and-recovery-rome-ostia.local-departure-notes-2"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.15-evacuation-and-recovery-rome-ostia.o2.req-2.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "food": 300,
+            "wood": 80
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -408,6 +419,44 @@ ES: Una salida local es cuanto puede prometer esta ficción. No puede reescribir
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": {
+    "coordinates": [
+      [
+        12.477,
+        41.95
+      ],
+      [
+        12.47,
+        41.925
+      ],
+      [
+        12.47,
+        41.9
+      ],
+      [
+        12.475,
+        41.87
+      ],
+      [
+        12.42,
+        41.85
+      ],
+      [
+        12.4,
+        41.8
+      ],
+      [
+        12.28,
+        41.76
+      ],
+      [
+        12.23,
+        41.73
+      ]
+    ],
+    "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+    "renderAs": "river-line"
+  },
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

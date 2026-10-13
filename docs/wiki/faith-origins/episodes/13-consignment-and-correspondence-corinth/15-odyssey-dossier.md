@@ -370,6 +370,7 @@ ES: El horizonte no es un recibo de una travesía que no hemos mostrado.
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

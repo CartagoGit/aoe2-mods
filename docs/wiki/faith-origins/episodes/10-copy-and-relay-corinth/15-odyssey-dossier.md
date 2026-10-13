@@ -139,6 +139,16 @@ ES: Paga 40 de madera por un aviso ficticio de salida elaborado a partir de las 
       ],
       "outputEntities": [
         "faith-origins.10-copy-and-relay-corinth.dispatch-notice-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.10-copy-and-relay-corinth.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 40
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -315,6 +325,7 @@ ES: Su siguiente viaje queda fuera del mapa. No podemos afirmar que lo hemos vis
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

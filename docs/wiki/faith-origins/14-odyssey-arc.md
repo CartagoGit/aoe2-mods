@@ -57,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 15
+    "authoredDossierCount": 18
   },
   "continuity": {
     "recommendedPrevious": [],
@@ -651,6 +651,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/16-comparative-copying-antioch/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: The Gospel of Mark presents a narrative about Jesus and locates its opening in a Second Temple Jewish setting.
 
 ES: El Evangelio de Marcos presenta un relato sobre Jesús y sitúa su comienzo en el contexto judío del Segundo Templo.
@@ -660,6 +662,10 @@ ES: El Evangelio de Marcos presenta un relato sobre Jesús y sitúa su comienzo 
 Limit: Mark's date is commonly placed around the Jewish War but debated; text does not identify its author or place of composition. Do not state that this source proves it was written during the war or in Antioch.
 
 Status: disputed
+
+[Additional consulted passage](https://www.biblegateway.com/passage/?search=Mark+1&version=NRSVUE): Mark1; architect read chapter and footnotes
+
+Limit: Textual opening and attributed ministry narrative; not composition date/place, local Antioch manuscript, or proof of every miracle.
 
 ### 17. The Names Beyond the Siege
 
@@ -703,6 +709,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/18-parallel-archive-logistics-antioch/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Matthew and Luke preserve distinct narrative presentations of Jesus; their texts can be compared for differing genealogies and infancy narratives.
 
 ES: Mateo y Lucas conservan presentaciones narrativas distintas de Jesús; sus textos permiten comparar genealogías y relatos de infancia diferentes.
@@ -712,6 +720,14 @@ ES: Mateo y Lucas conservan presentaciones narrativas distintas de Jesús; sus t
 Limit: The claim that they were tailored for distinct communities is scholarly inference; neither texts nor Oxford abstract consulted here proves specific communities or provenance in Antioch.
 
 Status: disputed
+
+[Additional consulted passage](https://www.biblegateway.com/passage/?search=Matthew+1&version=NRSVUE): Matthew1; architect read genealogy and birth narrative
+
+Limit: Different textual genealogy; not proof of a specific Antioch audience or authorial location.
+
+[Additional consulted passage](https://www.biblegateway.com/passage/?search=Luke+3:23-38&version=NRSVUE): Luke3:23–38; architect read displayed genealogy and footnotes
+
+Limit: Genealogy differs fromMatthew1; no harmonization, audience/place inference or use of modern translation as physical ancient object.
 
 ### 19. The House Before the Road
 
@@ -725,6 +741,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/19-hospitality-network-antioch/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: The Didache contains instructions on baptism, communal prayer, itinerant teachers, and local leadership.
 
 ES: La Didaché contiene instrucciones sobre bautismo, oración comunitaria, maestros itinerantes y liderazgo local.
@@ -734,6 +752,10 @@ ES: La Didaché contiene instrucciones sobre bautismo, oración comunitaria, mae
 Limit: Its date and place of composition remain disputed; Syrian provenance is a proposal, not established fact. The earlychristianwritings page is an edition/translation resource, while the Cambridge source is abstract only.
 
 Status: consulted
+
+[Additional consulted passage](https://www.earlychristianwritings.com/text/didache-hoole.html): Didache11–13; architect read itinerant/settled visitor instructions
+
+Limit: Normative text, not universal practice or securely dated Antioch institution; text not copied verbatim into player dialogue.
 
 ### 20. A Letter Across the Divide
 
@@ -753,7 +775,7 @@ ES: 1 Clemente es una carta de la iglesia de Roma que pide reconciliación en un
 
 [Consulted source](https://www.earlychristianwritings.com/1clement.html): 1 Clement 1–3 and 47–59: letter addresses the Corinthian church, laments dissension and removal of presbyters, and urges restoration.
 
-Limit: The letter itself does not name its author as Clement; the Roman origin and late-first-century date are conventional early-Christian scholarly reconstructions. The claimed intervention is supported, but exact c.95 date is not stated in the text.
+Limit: The opening directly identifies the Roman sender and Corinthian addressee. The text does not name Clement as author; c.95 is conventional and not stated in the letter. A particular Roman copying address remains fiction.
 
 Status: consulted
 

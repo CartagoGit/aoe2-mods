@@ -224,12 +224,39 @@ def diagram(episode, geographic_layers):
             lines.append(
                 f'<polyline points="{coordinates}" fill="none" stroke="{layer["colour"]}" stroke-width="2"/>'
             )
-    coords = " ".join(
-        f"{x:.2f},{y:.2f}" for x, y in map(point, episode["mapPlan"]["hubs"])
-    )
-    lines.append(
-        f'<polyline points="{coords}" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"/>'
-    )
+    schematic = episode["mapPlan"].get("schematicWaterControl")
+    if schematic and len(schematic.get("coordinates", [])) >= 2:
+        index = layers_helper.index_layer(
+            {
+                "features": [
+                    {
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": schematic["coordinates"],
+                        }
+                    }
+                ]
+            }
+        )
+        for segment in layers_helper.clipped_tile_segments(
+            index, episode["mapPlan"]["bbox"], size
+        ):
+            coords = " ".join(
+                f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment
+            )
+            lines.append(
+                f'<polyline data-control="schematic-water" points="{coords}" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>{html.escape(schematic["certainty"])}</title></polyline>'
+            )
+    hubs = {hub["id"]: hub for hub in episode["mapPlan"]["hubs"]}
+    for corridor in episode["mapPlan"]["corridors"]:
+        coords = " ".join(
+            f"{x:.2f},{y:.2f}"
+            for x, y in (point(hubs[hid]) for hid in corridor["hubOrder"])
+        )
+        colour = "#91512f" if corridor["widthTiles"] >= 10 else "#757547"
+        lines.append(
+            f'<polyline data-corridor="{html.escape(corridor["id"])}" points="{coords}" fill="none" stroke="{colour}" stroke-width="3" stroke-dasharray="8 6"><title>{html.escape(corridor["id"])}: proposed district connection, intermediate path pending</title></polyline>'
+        )
     for i, h in enumerate(episode["mapPlan"]["hubs"], 1):
         x, y = point(h)
         lines += [
@@ -243,6 +270,7 @@ def diagram(episode, geographic_layers):
             "Dashed connector: proposed route",
             "Not a surveyed path or terrain raster",
             "Blue: modern geographic water controls",
+            "Dashed blue: schematic regional water",
             "Native footprints and navigation pending",
         ]
     ):

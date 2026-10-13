@@ -6,39 +6,109 @@ import runpy
 import unittest
 import tempfile
 import hashlib
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from geography import clip_segment, tile_point
 from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
-    def test_expanded_persona_cannot_change_identity_or_become_historical_evidence(self):
-        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
+    def test_map_diagram_preserves_two_hosting_branches_and_their_actual_final_district(
+        self,
+    ):
+        episode = self.draft(19)
+        renderer = runpy.run_path(
+            str(ROOT / "tools/design/episode_dossiers.script.py")
+        )["diagram"]
+        svg = ET.fromstring(renderer(episode, []))
+        paths = {
+            node.attrib["data-corridor"]: node.attrib["points"].split()
+            for node in svg.iter()
+            if "data-corridor" in node.attrib
+        }
+        self.assertEqual(
+            set(paths), {"north-host-road", "east-host-road", "hosting-relief"}
+        )
+        self.assertEqual(len(paths["north-host-road"]), 3)
+        self.assertEqual(len(paths["east-host-road"]), 3)
+        self.assertEqual(paths["north-host-road"][-1], paths["east-host-road"][-1])
+        self.assertNotEqual(paths["north-host-road"][0], paths["east-host-road"][0])
+        self.assertEqual(len(paths["hosting-relief"]), 2)
+
+    def test_derivation_cannot_use_a_smaller_or_future_payment_receipt(self):
+        draft = self.draft(9)
+        requirement = draft["objectivePlan"][1]["predicate"]["requirements"][1]
+        requirement["requiredPaymentReceipts"][0]["amounts"]["wood"] = 1
+        self.assertTrue(
+            any(
+                "derived payment receipt amount or owner drift" in error
+                for error in self.dossier_validator(draft)
+            )
+        )
+        draft = self.draft(9)
+        payment = draft["objectivePlan"][1]["predicate"]["requirements"].pop(0)
+        payment["id"] = "future-production-payment"
+        draft["objectivePlan"][2]["predicate"]["requirements"].append(payment)
+        receipt = draft["objectivePlan"][1]["predicate"]["requirements"][0][
+            "requiredPaymentReceipts"
+        ][0]
+        receipt["fromObjective"] = "o3"
+        self.assertTrue(
+            any(
+                "derived payment comes from a future objective" in error
+                for error in self.dossier_validator(draft)
+            )
+        )
+
+    def test_expanded_persona_cannot_change_identity_or_become_historical_evidence(
+        self,
+    ):
+        voices = json.loads(
+            (ROOT / "docs/design/voices/odyssey-narrators.json").read_text()
+        )
         voices["narrators"][0]["id"] = "historical-eye-witness"
         voices["narrators"][0]["episodeKnowledgePlan"][0]["biographyIsEvidence"] = True
-        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        audit = runpy.run_path(
+            str(ROOT / "tools/design/odyssey_narrators.validator.py")
+        )["audit_narrators"]
         errors = audit(voices, self.odysseys)
         self.assertTrue(any("identity differs" in error for error in errors))
-        self.assertTrue(any("became historical witness evidence" in error for error in errors))
+        self.assertTrue(
+            any("became historical witness evidence" in error for error in errors)
+        )
 
     def test_expanded_persona_rejects_wrong_lifespan_and_missing_emotional_act(self):
-        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
+        voices = json.loads(
+            (ROOT / "docs/design/voices/odyssey-narrators.json").read_text()
+        )
         voices["narrators"][0]["deathYearApprox"] = 200
         voices["narrators"][0]["fiveActEmotionalArc"].pop()
-        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        audit = runpy.run_path(
+            str(ROOT / "tools/design/odyssey_narrators.validator.py")
+        )["audit_narrators"]
         errors = audit(voices, self.odysseys)
         self.assertTrue(any("invalid narrator lifespan" in error for error in errors))
         self.assertTrue(any("five ordered acts" in error for error in errors))
 
     def test_marcus_cannot_inherit_legacy_eyewitness_or_mismatched_episode(self):
-        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
-        marcus = next(row for row in voices["narrators"] if row["campaignId"] == "imperial-church")
-        marcus["episodeKnowledgePlan"][0]["mode"] = "fictional-local-life-plus-received-reports"
+        voices = json.loads(
+            (ROOT / "docs/design/voices/odyssey-narrators.json").read_text()
+        )
+        marcus = next(
+            row for row in voices["narrators"] if row["campaignId"] == "imperial-church"
+        )
+        marcus["episodeKnowledgePlan"][0]["mode"] = (
+            "fictional-local-life-plus-received-reports"
+        )
         marcus["episodeKnowledgePlan"][0]["scenarioId"] = "some-other-episode"
-        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        audit = runpy.run_path(
+            str(ROOT / "tools/design/odyssey_narrators.validator.py")
+        )["audit_narrators"]
         errors = audit(voices, self.odysseys)
         self.assertTrue(any("Marcus cannot remember" in error for error in errors))
-        self.assertTrue(any("knowledge plan scenarioId drift" in error for error in errors))
+        self.assertTrue(
+            any("knowledge plan scenarioId drift" in error for error in errors)
+        )
 
     def test_odyssey_assignments_reject_shared_slice_and_early_promotion(self):
         assignments = json.loads((ROOT / "docs/design/assignments.json").read_text())

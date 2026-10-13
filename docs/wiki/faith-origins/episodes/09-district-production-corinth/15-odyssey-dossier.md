@@ -131,6 +131,17 @@ ES: Paga 100 de madera y 50 de oro en el taller y transforma una sola vez los tr
         "faith-origins.09-district-production-corinth.finished-bundles-2",
         "faith-origins.09-district-production-corinth.finished-bundles-3",
         "faith-origins.09-district-production-corinth.finished-bundles-4"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.09-district-production-corinth.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 100,
+            "gold": 50
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -298,6 +309,7 @@ ES: Dos destinos, cuatro objetos: que el total no oculte una dirección equivoca
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,

@@ -126,6 +126,17 @@ ES: Financia el patio de copias con 40 de madera y 20 de oro y prepara un regist
       ],
       "outputEntities": [
         "faith-origins.01-administrative-records-caesarea.register-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.01-administrative-records-caesarea.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 40,
+            "gold": 20
+          },
+          "newDebit": false
+        }
       ]
     }
   ],
@@ -287,6 +298,7 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       "interpretation": "modern regional river controls where available; minor channels and ancient courses require separate evidence"
     }
   ],
+  "schematicWaterControl": null,
   "performanceBudget": {
     "activeMilitaryCap": 240,
     "activeCivilianCap": 80,
