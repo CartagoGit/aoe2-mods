@@ -241,6 +241,64 @@
       },
       "anachronisms": "No modern Fourviere basilica/tunnel, later cathedral or funerary churches, exact amphitheater imprisonment cell or modern river quay assumed in177–200.",
       "approval": "regional proposal only; no approved historic household addresses, DEM or native pathfinding"
+    },
+    {
+      "id": "egypt-middle-nile",
+      "name": "Oxyrhynchus/el-Bahnasa beside Bahr Yussuf, western Middle Nile valley",
+      "bbox": [
+        30.61,
+        28.515,
+        30.68,
+        28.565
+      ],
+      "representativePoint": [
+        30.65172,
+        28.542574
+      ],
+      "representativePointUsage": "CNR-ISPC named ancient-place gazetteer control; datum unspecified and point is not a building address",
+      "coordinateStatus": "approximate regional frame; fictional care yards and250channel course uncertified",
+      "sources": [
+        {
+          "url": "https://chloe.cnr.it/s/DHeLO/item/1543",
+          "locator": "Oxyrhynchus/Pemje names and latitude/longitude; datum not stated",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+          "locator": "1998 site plans, modern settlement west of BahrYussuf branch and ferry description; not250hydrology",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Western Nile valley, desert edge west, BahrYussuf branch east of local districts, principal Nile farther east outside crop. Graded floodplain/field activity not continuous desert.",
+      "waterControlStatus": "relative bank sketch only; ancient/current course changes and feeder canals require dated GIS; no native rasterization",
+      "waterControlLine": {
+        "coordinates": [
+          [
+            30.661,
+            28.515
+          ],
+          [
+            30.663,
+            28.53
+          ],
+          [
+            30.664,
+            28.54
+          ],
+          [
+            30.665,
+            28.553
+          ],
+          [
+            30.665,
+            28.565
+          ]
+        ],
+        "certainty": "architect schematic eastern branch relation, not surveyed250channel or modern vector; do not rasterize as native water",
+        "renderAs": "river-line"
+      },
+      "anachronisms": "No Byzantine principal church, later mosque, modern village/grid/canal or nineteenth-century papyrus excavation as250scene.",
+      "approval": "regional candidate only; exact land mask, date-specific banks, footprints and native navigation pending"
     }
   ]
 }

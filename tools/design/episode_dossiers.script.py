@@ -106,6 +106,10 @@ def wiki(campaign, episode):
             "```",
             "",
         ]
+    if "finaleContract" in episode:
+        base += ["## Campaign finale and optional successor recommendations", "",
+                 "Design-only continuity contract. Native variable writes, menu rendering and save/load behavior remain unverified.", "",
+                 "```json", json.dumps(episode["finaleContract"], ensure_ascii=False, indent=2), "```", ""]
     base += [
         "## Geographic districts and routes",
         "",
@@ -325,6 +329,7 @@ def run(check=False):
         }
     )
     count = 0
+    baseline = read("docs/design/catalog.json")["campaigns"]
     for campaign_row in read("docs/design/odyssey-policy.json")["campaigns"]:
         path = f"docs/design/odysseys/{campaign_row['id']}.json"
         campaign = read(path)
@@ -344,8 +349,9 @@ def run(check=False):
                 plan,
                 profiles[selection["geographyId"]],
                 next_selection,
+                baseline,
             )
-            failures = validator.audit_dossier(episode)
+            failures = validator.audit_dossier(episode, campaign, baseline)
             if failures:
                 raise ValueError("\n".join(failures))
             episodes.append(episode)

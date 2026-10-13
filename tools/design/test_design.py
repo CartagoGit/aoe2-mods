@@ -13,6 +13,55 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def finale_errors(self, draft):
+        return self.dossier_validator(draft, self.odysseys[0], self.catalogue["campaigns"])
+
+    def test_finale_requires_canonical_last_episode_and_complete_choice(self):
+        draft = self.draft(30)
+        self.assertEqual(self.finale_errors(draft), [])
+        self.assertTrue(any("canonical campaign context" in error for error in self.dossier_validator(draft)))
+        draft["id"] = self.draft(29)["id"]
+        draft["order"] = 29
+        self.assertTrue(any("intermediate episode" in error for error in self.finale_errors(draft)))
+        draft = self.draft(30)
+        draft.pop("finaleContract")
+        self.assertTrue(any("needs a finale contract" in error for error in self.finale_errors(draft)))
+
+    def test_finale_rejects_progress_erasure_defeat_writes_and_automatic_launch(self):
+        for section, field, value in [
+            ("victoryCommit", "resetOtherKeys", True),
+            ("victoryCommit", "preserveOtherKeys", False),
+            ("victoryCommit", "onDefeat", "write chosen key"),
+            ("selectionPolicy", "writesProgress", True),
+            ("recommendationPolicy", "autoLaunch", True),
+            ("recommendationPolicy", "enforcePrerequisite", True),
+        ]:
+            with self.subTest(field=field):
+                draft = self.draft(30)
+                draft["finaleContract"][section][field] = value
+                self.assertTrue(any("unsafe finale" in error for error in self.finale_errors(draft)))
+
+    def test_finale_rejects_wrong_successor_namespace_and_skipped_selection(self):
+        for field, value in [("progressKey", "progress.other.completed"), ("successor", None)]:
+            draft = self.draft(30)
+            draft["finaleContract"]["routeChoices"][0][field] = value
+            self.assertTrue(any("unsafe finale" in error for error in self.finale_errors(draft)))
+        draft = self.draft(30)
+        draft["stateMachine"]["phaseTransitions"][-2]["to"] = "victory"
+        self.assertTrue(any("bypasses pending route" in error for error in self.finale_errors(draft)))
+        draft = self.draft(30)
+        draft["finaleContract"]["routeChoices"].pop()
+        self.assertTrue(any("every canonical route" in error for error in self.finale_errors(draft)))
+
+    def test_finale_rejects_missing_spanish_or_wrong_successor_screen(self):
+        draft = self.draft(30)
+        del draft["finaleContract"]["choicePrompt"]["es-ES"]
+        self.assertTrue(any("finale localization" in error for error in self.finale_errors(draft)))
+        draft = self.draft(30)
+        screen = next(s for s in draft["screens"] if s["id"] == "next-campaign-jewish-perspective")
+        screen["text"]["en"] = "Start an unrelated campaign automatically."
+        self.assertTrue(any("incorrect finale screen" in error for error in self.finale_errors(draft)))
+
     def test_departure_cannot_use_a_future_receipt_or_arrival_of_different_actors(self):
         draft = self.draft(21)
         departure = draft["objectivePlan"][3]["predicate"]["requirements"][0]

@@ -57,7 +57,7 @@
       "Act targets are editorial guides: this selection follows sourced chronology rather than forcing six episodes into every act.",
       "Milan 313 is a local fictional archive setting; do not claim every prior persecution took place in Milan."
     ],
-    "authoredDossierCount": 25
+    "authoredDossierCount": 30
   },
   "continuity": {
     "recommendedPrevious": [],
@@ -953,6 +953,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/26-legal-record-network-carthage/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Tertullian protests condemnation without inquiry and describes communal worship and care practices.
 
 ES: Tertuliano protesta contra condenas sin investigación y describe culto comunitario y prácticas de asistencia.
@@ -962,6 +964,14 @@ ES: Tertuliano protesta contra condenas sin investigación y describe culto comu
 Limit: The Apology is forensic rhetoric and advocacy, not a neutral legal register. The selection's c.197 date is conventional; ch.39 does not prove specific locations or every practice across Christians.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/0301.htm): Apology1–2, architect read defense and legal inquiry argument
+
+Limit: Subsequent direct retrieval timed out/HTTP403; do not claim full page or ch3/40–42 read by architect. For ch39 see separate complete chapter consultation.
+
+[Additional consulted passage](https://logoslibrary.org/tertullian/apology/39.html): Apology39, complete displayed chapter in S.Thelwall translation
+
+Limit: Advocacy and self-description, voluntary contribution/aid themes; no exact197local address, universal practice or authentic local legal register.
 
 ### 27. What the Record Cannot Hold
 
@@ -975,6 +985,8 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/27-household-aid-and-memory-carthage/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: The Passion preserves a near-contemporary Christian account of Perpetua and Felicity's imprisonment and execution at Carthage.
 
 ES: La Pasión conserva un relato cristiano cercano a los hechos sobre el encarcelamiento y ejecución de Perpetua y Felicidad en Cartago.
@@ -984,6 +996,10 @@ ES: La Pasión conserva un relato cristiano cercano a los hechos sobre el encarc
 Limit: The work has a complex literary/redactional history and theological vision material; date 203 is conventional and the page's introductory header is secondary. Treat visions as the text's claims, not verified supernatural events.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/0324.htm): Passion, displayed chapters1–3 and5–6; first-person attributed account, visions, editor’s continuation and deaths
+
+Limit: Older page chapter grouping differs from modern sections3–10/16–21. Literary/redactional attribution; no invented voice, execution rescue, miraculous immunity or definite extant amphitheater identification.
 
 ### 28. The Seal on the Certificate
 
@@ -997,15 +1013,29 @@ Knowledge: inherited letters and later sources. one local map; uncertain authori
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
-Architect-corrected claim EN: A surviving Egyptian certificate records a household's sacrifice during Decius' reign, demonstrating documentary compliance with a sacrifice requirement.
+[Authored episode dossier](episodes/28-certificate-and-refuge-egypt-middle-nile/15-odyssey-dossier.md) — independent approval pending
 
-ES: Un certificado egipcio conservado registra el sacrificio de una familia durante el reinado de Decio y documenta el cumplimiento de un requisito sacrificial.
+Architect-corrected claim EN: P.Oxy. XII 1464 records Gaion’s household declaration of sacrifice and request for certification at Oxyrhynchus on 27 June 250; the document does not establish their religion or independently verify the declared acts.
+
+ES: P.Oxy. XII 1464 recoge la declaración de sacrificio del hogar de Gaion y su petición de certificación en Oxirrinco el 27 de junio de 250; el documento no establece su religión ni verifica por sí mismo los actos declarados.
 
 [Consulted source](https://searcharchives.bl.uk/catalog/040-002105490): British Library Archives catalogue, Papyrus 2457 / P.Oxy. XII 1464 description: a libellus records Aurelius Gaion, wife, and children performing sacrifice and libation before officials at Oxyrhynchus under Decius.
 
 Limit: The papyrus records this named household only; it does not prove a uniform empire-wide edict or universal enforcement, nor persecution of Christians specifically. Official catalog describes artifact; earlier P.Oxy project URL is broad and did not establish P.Oxy.1464.
 
 Status: consulted
+
+[Additional consulted passage](https://searcharchives.bl.uk/catalog/040-002105490): Papyrus2457 catalogue full record, dated27June250
+
+Limit: Gaion declaration not independent proof; family faith unknown; damaged original; digitized images unavailable. No facsimile reproduced.
+
+[Additional consulted passage](https://chloe.cnr.it/s/DHeLO/item/1543): CNR-ISPC gazetteer Oxyrhynchus/Pemje point fields
+
+Limit: Datum unspecified, approximate named-site anchor, not c250building footprint.
+
+[Additional consulted passage](https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds): Site plans, Bahr Yussuf/modern settlement and later church phases
+
+Limit: 1998 exhibition, no250river raster; modern village west of branch and broad ferry description not a proved250crossing.
 
 ### 29. A Harbour Under Orders
 
@@ -1018,6 +1048,8 @@ Cartas cristianas comprometidas; alcance regional.
 Knowledge: inherited letters and later sources. one local map; uncertain authorial provenance is not asserted by the map; letters travel off-map between regional scenes
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+[Authored episode dossier](episodes/29-bounded-evacuation-carthage/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Cyprian reports Valerian's anti-clerical order and Roman executions; Pontius narrates Cyprian's arrest, sentence, and execution at Carthage.
 
@@ -1033,6 +1065,14 @@ Limit: The letter does not itself attest Cyprian's own death; Pontius' near-cont
 
 Status: consulted
 
+[Additional consulted passage](https://www.newadvent.org/fathers/050681.htm): Cyprian, Epistle81.1–2 (other editions80), complete displayed letter
+
+Limit: Report of Roman measures and executions, not firsthand account of his own future execution. Different edicts and regional implementation must remain separate.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/0505.htm): Pontius15–18, architect read arrest, overnight custody, tribunal and death
+
+Limit: Christian commemorative framing and reported dialogue, not neutral motives, contemporary cadastral coordinates, divine causation or permission for player to change death.
+
 ### 30. A Different Dawn
 
 [Candidate source](https://www.newadvent.org/fathers/250108.htm): Eusebius, HE 8
@@ -1045,6 +1085,8 @@ Knowledge: fictional personal local experience plus sourced reports from other r
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/04-a-different-dawn/15-odyssey-dossier.md) — independent approval pending
+
 Architect-corrected claim EN: Eusebius records the Great Persecution's measures against churches and Christian texts and reports punishments in several provinces.
 
 ES: Eusebio registra medidas de la Gran Persecución contra iglesias y textos cristianos, e informa de castigos en varias provincias.
@@ -1054,3 +1096,11 @@ ES: Eusebio registra medidas de la Gran Persecución contra iglesias y textos cr
 Limit: Eusebius is a Christian historian and his rhetoric interprets events providentially; implementation differed by region and date. This source does not document a specific Milan archive or single uniform local event, nor all the 303–313 range.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/250108.htm): HEVIII2–3and5
+
+Limit: Christian interpretation and selective testimony; no uniform303–313Milan persecution or particular restored archive.
+
+[Additional consulted passage](https://bkv.unifr.ch/en/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/49/de-mortibus-persecutorum): De mortibus persecutorum48.1–13, root read complete Latin edition
+
+Limit: Milan agreement versus Nicomedia publication13June313; transmitted legal text not specific Milan property delivery. No wholesale modern translation reproduced.
