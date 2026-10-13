@@ -474,6 +474,7 @@ function referenceFixture(
   return {
     candidate,
     step,
+    initial,
     entered: step(initial, {
       type: "enter-phase",
       phase: "phase-1",
@@ -493,6 +494,203 @@ const arrivalRequirement = (
   requiredCount: 1,
   oncePerEntity: true,
   destinations: { [entityId]: zoneId },
+});
+
+function fundedDerivationFixture(
+  receiptOverride: Partial<
+    NonNullable<
+      Extract<Requirement, { kind: "derived-token" }>["requiredPaymentReceipts"]
+    >[number]
+  > = {},
+) {
+  const payment: Extract<Requirement, { kind: "resource-transaction" }> = {
+    id: "production-payment",
+    kind: "resource-transaction",
+    amounts: { food: 1 },
+    receivingZones: ["zone-dest"],
+    allocations: { "zone-dest": { food: 1 } },
+    paidFlag: "production-paid",
+    account: "spendable",
+    atomic: true,
+    once: true,
+    commit: "atomic",
+  };
+  const derive: Extract<Requirement, { kind: "derived-token" }> = {
+    id: "funded-derive",
+    kind: "derived-token",
+    inputEntities: ["cargo-a"],
+    outputEntities: ["receiver-a"],
+    once: true,
+    deriveWhen: "collected material and exact payment in the active phase",
+    requiredPaymentReceipts: [
+      {
+        flag: "production-paid",
+        fromObjective: "objective-a",
+        amounts: { food: 1 },
+        newDebit: false,
+        ...receiptOverride,
+      },
+    ],
+  };
+  const fixture = referenceFixture([
+    {
+      id: "collect-material",
+      kind: "entity-state",
+      state: "collected",
+      entities: ["cargo-a"],
+      requiredCount: 1,
+      oncePerEntity: true,
+    },
+    payment,
+    derive,
+    arrivalRequirement("arrive-output", "receiver-a", "zone-dest"),
+  ]);
+  return { ...fixture, derive, payment };
+}
+
+describe("funded production causality", () => {
+  const deriveAction = {
+    type: "derive-token",
+    objectiveId: "objective-a",
+    requirementId: "funded-derive",
+  } as const;
+  const collectAction = {
+    type: "observe-entity-state",
+    objectiveId: "objective-a",
+    requirementId: "collect-material",
+    entityId: "cargo-a",
+  } as const;
+  const payAction = {
+    type: "pay-main",
+    objectiveId: "objective-a",
+    requirementId: "production-payment",
+  } as const;
+
+  test("collected inputs cannot create an output before payment or outside its phase", () => {
+    const f = fundedDerivationFixture();
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    const collected = f.step(f.entered, collectAction);
+    expect(f.step(collected, deriveAction)).toEqual(collected);
+    const earlyPaid = f.step(f.step(f.initial, collectAction), payAction);
+    expect(earlyPaid.paidReceipts).toEqual(["production-paid"]);
+    expect(f.step(earlyPaid, deriveAction)).toEqual(earlyPaid);
+    const prematureArrival = f.step(collected, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-dest",
+    });
+    expect(prematureArrival.arrivalLedger).toEqual([]);
+  });
+
+  test("exact paid production survives save/load and repeated actions without another debit", () => {
+    const f = fundedDerivationFixture();
+    const paid = f.step(f.step(f.entered, collectAction), payAction);
+    const produced = f.step(JSON.parse(JSON.stringify(paid)), deriveAction);
+    expect(produced.requirementFacts["objective-a.funded-derive"]).toEqual([
+      "receiver-a",
+    ]);
+    expect(produced.spendable.food).toBe(0);
+    expect(f.step(produced, deriveAction)).toEqual(produced);
+    expect(f.step(produced, payAction)).toEqual(produced);
+    const arrived = f.step(produced, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-dest",
+    });
+    expect(f.step(arrived, latch).objectiveLatches).toEqual(["objective-a"]);
+  });
+
+  test("unrelated, partial or future-objective receipts cannot authorize production", () => {
+    for (const override of [
+      { flag: "unrelated-paid" },
+      { amounts: { food: 2 } },
+      { fromObjective: "future-objective" },
+    ]) {
+      const f = fundedDerivationFixture(override);
+      expect(
+        validateScenarioCapability(f.candidate).some(
+          (issue) => issue.code === "capability.derived-payment",
+        ),
+      ).toBe(true);
+      const paid = f.step(f.step(f.entered, collectAction), payAction);
+      expect(f.step(paid, deriveAction)).toEqual(paid);
+    }
+    const f = fundedDerivationFixture({ fromObjective: "future-objective" });
+    const current = f.candidate.objectivePlan[0];
+    if (!current) throw new Error("Missing production objective");
+    const future = structuredClone(current);
+    future.id = "future-objective";
+    future.after = ["objective-a"];
+    future.predicate.requirements = [f.payment];
+    future.predicate.requiredLedgers = [f.payment.id];
+    current.predicate.requirements = current.predicate.requirements.filter(
+      (req) => req.id !== f.payment.id,
+    );
+    f.candidate.objectivePlan.push(future);
+    expect(
+      validateScenarioCapability(f.candidate).some(
+        (issue) => issue.code === "capability.derived-payment-order",
+      ),
+    ).toBe(true);
+    let invalidState = createCapabilitySnapshot(f.candidate, {
+      spendable: { food: 1 },
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    invalidState = f.step(invalidState, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 100,
+    });
+    invalidState = f.step(invalidState, collectAction);
+    invalidState = f.step(invalidState, {
+      ...payAction,
+      objectiveId: "future-objective",
+    });
+    expect(invalidState.paidReceipts).toEqual(["production-paid"]);
+    expect(f.step(invalidState, deriveAction)).toEqual(invalidState);
+  });
+
+  test("an exact mandatory predecessor receipt funds production without charging twice", () => {
+    const f = fundedDerivationFixture({ fromObjective: "objective-before" });
+    const current = f.candidate.objectivePlan[0];
+    if (!current) throw new Error("Missing production objective");
+    const previous = structuredClone(current);
+    previous.id = "objective-before";
+    previous.after = [];
+    previous.countLedger.id = "previous-payment-ledger";
+    previous.predicate.requirements = [f.payment];
+    previous.predicate.requiredLedgers = [f.payment.id];
+    current.after = ["objective-before"];
+    current.predicate.requirements = current.predicate.requirements.filter(
+      (req) => req.id !== f.payment.id,
+    );
+    current.predicate.requiredLedgers = current.predicate.requirements.map(
+      (req) => req.id,
+    );
+    f.candidate.objectivePlan.unshift(previous);
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    let state = createCapabilitySnapshot(f.candidate, {
+      spendable: { food: 1 },
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    state = f.step(state, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 100,
+    });
+    state = f.step(state, collectAction);
+    state = f.step(state, { ...payAction, objectiveId: "objective-before" });
+    expect(f.step(state, deriveAction)).toEqual(state);
+    state = f.step(state, { ...latch, objectiveId: "objective-before" });
+    const produced = f.step(JSON.parse(JSON.stringify(state)), deriveAction);
+    expect(produced.requirementFacts["objective-a.funded-derive"]).toEqual([
+      "receiver-a",
+    ]);
+    expect(produced.spendable.food).toBe(0);
+    expect(produced.paidReceipts).toEqual(["production-paid"]);
+  });
 });
 const latch = { type: "latch-objective", objectiveId: "objective-a" } as const;
 

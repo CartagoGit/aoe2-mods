@@ -203,6 +203,10 @@ const derivedTokenPredicate = z.strictObject({
   outputEntities: z.array(contractId).min(1),
   once: z.literal(true),
   deriveWhen: nonEmpty,
+  requiredPaymentReceipts: z
+    .array(receiptExistsPredicate.omit({ id: true, kind: true }))
+    .min(1)
+    .optional(),
 });
 const orderedDeparturePredicate = z.strictObject({
   id: contractId,
