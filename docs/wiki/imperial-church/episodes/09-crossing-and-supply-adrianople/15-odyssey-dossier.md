@@ -402,7 +402,7 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
 {
   "historicalPolicy": "fictional local screen and skirmish pocket, not a mapped ancient battlefield or army strengths",
   "worldSelectionPolicy": "only selected initial identities exist; maximum unused group identities are absent",
-  "engagementPolicy": "all selected opponents confined to a narrow disclosed short east-approach pocket near the inland assembly, outside the receiving zone itself; longer east detour, landing, river and all western optional branches remain outside leashes. Exact footprints and combat calibration pending; no navy, waves, production or roaming attack on the only boat.",
+  "engagementPolicy": "all selected opponents confined to a narrow disclosed short east-approach pocket near the inland assembly, outside the receiving zone itself; longer east detour, landing, river and all western optional branches remain outside leashes. Exact footprints and combat calibration pending; no navy, waves, production or roaming attack on the only boat. Proposed hostile spawn offsets are south of assembly, along the short landing approach, not northwest on the longer-detour connector; native leash width and separation remain to certify.",
   "byDifficulty": {
     "easy": {
       "productionEnabled": false,
@@ -1214,8 +1214,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -16
+        -14,
+        30
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1230,8 +1230,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -16
+        -12,
+        30
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1246,8 +1246,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -16
+        -10,
+        30
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1262,8 +1262,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -16
+        -8,
+        30
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1278,8 +1278,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -14
+        -14,
+        32
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1294,8 +1294,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -14
+        -12,
+        32
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1310,8 +1310,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -14
+        -10,
+        32
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1326,8 +1326,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -14
+        -8,
+        32
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1342,8 +1342,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -12
+        -14,
+        34
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1358,8 +1358,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -12
+        -12,
+        34
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1374,8 +1374,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -12
+        -10,
+        34
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1390,8 +1390,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -12
+        -8,
+        34
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1406,8 +1406,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -10
+        -14,
+        36
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1422,8 +1422,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -10
+        -12,
+        36
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1438,8 +1438,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -10
+        -10,
+        36
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1454,8 +1454,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -10
+        -8,
+        36
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1470,8 +1470,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -8
+        -14,
+        38
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1486,8 +1486,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -8
+        -12,
+        38
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1502,8 +1502,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -8
+        -10,
+        38
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1518,8 +1518,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -8
+        -8,
+        38
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1534,8 +1534,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -6
+        -14,
+        40
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1550,8 +1550,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -6
+        -12,
+        40
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1566,8 +1566,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -6
+        -10,
+        40
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1582,8 +1582,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -6
+        -8,
+        40
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1598,8 +1598,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -26,
-        -4
+        -14,
+        42
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1614,8 +1614,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -24,
-        -4
+        -12,
+        42
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1630,8 +1630,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -22,
-        -4
+        -10,
+        42
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
@@ -1646,8 +1646,8 @@ ES: Ese camino más largo puede ahorrar una lista más corta de pésames. Dejar�
       "role": "fictional-hostile-patrol",
       "initialHub": "hub-4",
       "offsetTiles": [
-        -20,
-        -4
+        -8,
+        42
       ],
       "identity": "explicitly fictional gameplay identity",
       "finite": true,
