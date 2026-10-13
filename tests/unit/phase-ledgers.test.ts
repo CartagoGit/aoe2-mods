@@ -1593,3 +1593,98 @@ describe("arrival after an observed departure", () => {
     ).toBe(true);
   });
 });
+
+describe("continuous control interval contracts", () => {
+  function controlProfile() {
+    return referenceFixture(
+      [
+        {
+          id: "control",
+          kind: "area-state",
+          state: "controlled-and-passable",
+          zones: ["zone-dest"],
+          requiredCount: 1,
+          mustRemainUntilObjective: "objective-c",
+        },
+      ],
+      (candidate) => {
+        const source = candidate.objectivePlan[0];
+        if (!source) throw new Error("Missing control source");
+        for (const [id, after, reqId, zone] of [
+          ["objective-b", "objective-a", "intermediate", "zone-other"],
+          ["objective-c", "objective-b", "onward", "zone-dest"],
+        ] as const) {
+          candidate.objectivePlan.push({
+            ...structuredClone(source),
+            id,
+            after: [after],
+            predicate: {
+              ...source.predicate,
+              requirements: [arrivalRequirement(reqId, "unit-a", zone)],
+              requiredLedgers: [reqId],
+            },
+          });
+        }
+      },
+    ).candidate;
+  }
+
+  test("a mandatory transitive successor closes a valid control interval", () => {
+    const candidate = controlProfile();
+    expect(validateScenarioCapability(candidate)).toEqual([]);
+    expect(compileCapabilityProfile(candidate).objectivePlan).toHaveLength(3);
+  });
+
+  test("missing, self and prior targets fail the compiler gate", () => {
+    for (const target of ["missing", "objective-a", "objective-before"]) {
+      const candidate = controlProfile();
+      const source = candidate.objectivePlan[0];
+      if (!source) throw new Error("Missing source");
+      const control = source.predicate.requirements[0];
+      if (!control || control.kind !== "area-state")
+        throw new Error("Missing control requirement");
+      control.mustRemainUntilObjective = target;
+      if (target === "objective-before") {
+        const prior = structuredClone(candidate.objectivePlan[1]);
+        if (!prior) throw new Error("Missing prior template");
+        prior.id = target;
+        prior.after = [];
+        source.after = [target];
+        candidate.objectivePlan.unshift(prior);
+      }
+      expect(
+        validateScenarioCapability(candidate).map((i) => i.code),
+      ).toContain("capability.control-interval");
+      expect(() => compileCapabilityProfile(candidate)).toThrow(
+        "capability.control-interval",
+      );
+    }
+  });
+
+  test("a later listed independent objective cannot end continuous control", () => {
+    const candidate = controlProfile();
+    const target = candidate.objectivePlan[2];
+    if (!target) throw new Error("Missing target");
+    target.after = [];
+    expect(validateScenarioCapability(candidate).map((i) => i.code)).toContain(
+      "capability.control-interval",
+    );
+    expect(() => compileCapabilityProfile(candidate)).toThrow(
+      "capability.control-interval",
+    );
+  });
+
+  test("a historical visit cannot stand for an interval of current control", () => {
+    const candidate = controlProfile();
+    const control = candidate.objectivePlan[0]?.predicate.requirements[0];
+    if (!control || control.kind !== "area-state")
+      throw new Error("Missing control requirement");
+    control.state = "visited-and-passable";
+    expect(validateScenarioCapability(candidate).map((i) => i.code)).toContain(
+      "capability.control-interval",
+    );
+    expect(() => compileCapabilityProfile(candidate)).toThrow(
+      "capability.control-interval",
+    );
+  });
+});
