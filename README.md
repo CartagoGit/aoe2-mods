@@ -31,7 +31,7 @@ Lee [plan](docs/production/plan.md), [arquitectura](docs/architecture/overview.m
 
 ## Catálogo preparado por el arquitecto
 
-El alcance vigente son [nueve odiseas y 273 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. La [planificación](docs/design/odyssey-production-plan.md) y d00002 siguen en curso. Hay veinticinco dossiers ampliados (órdenes 1–25) de *Embers of the Covenant*, con 987 pantallas bilingües y 150 objetivos secundarios; requieren revisión histórica independiente, terreno navegable y calibración en AoE2. No son veinticinco escenarios jugables ni desbloquean la autoría histórica de MiniMax.
+El alcance vigente son [nueve odiseas y 273 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. La [planificación](docs/design/odyssey-production-plan.md) y d00002 siguen en curso. Hay treinta dossiers ampliados (órdenes 1–30) de *Embers of the Covenant*, con 1.191 pantallas bilingües y 180 objetivos secundarios; requieren revisión histórica independiente, terreno navegable y calibración en AoE2. No son treinta escenarios jugables ni desbloquean la autoría histórica de MiniMax.
 
 El [catálogo anterior](docs/design/README.md) conserva 39 contratos históricos, 1.496 pantallas EN/es-ES, 234 secundarios, nueve biblias de narrador y 26 entornos geográficos. La investigación incluye 14 referencias originales y [dieciséis nuevos recursos locales](docs/research/odyssey-research/reference-manifest.json), con créditos, licencias y hashes. Las [asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) distinguen esa base de las odiseas pendientes. Las capacidades y pruebas del motor mantienen sus gates antes de producir contenido.
 

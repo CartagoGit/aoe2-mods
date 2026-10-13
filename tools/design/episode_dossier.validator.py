@@ -1,10 +1,14 @@
 """Check authored episode contracts without asserting native behavior or balance."""
 
 import math
+import runpy
+from pathlib import Path
 from secondary import check_optional_objectives
 
+audit_finale = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))["audit_finale"]
 
-def audit_dossier(episode):
+
+def audit_dossier(episode, campaign=None, baseline=None):
     failures = []
 
     def check(condition, message):
@@ -40,10 +44,7 @@ def audit_dossier(episode):
         len(objectives) == len(episode["objectivePlan"]),
         f"{label}: duplicate main objective",
     )
-    check(
-        episode["stateMachine"]["campaignProgressWrite"] is False,
-        f"{label}: intermediate episode can end campaign",
-    )
+    failures.extend(audit_finale(episode, campaign, baseline))
     check(
         episode["qa"]["gameVerified"] is False,
         f"{label}: design promoted to game verification",

@@ -7,8 +7,12 @@ historical events, infers goals from prose, or emits native campaign content.
 
 import copy
 import math
+import runpy
+from pathlib import Path
 from geography import tile_point
 from secondary import RESOURCES, REWARDS, COSTS, bilingual, build_optional_objectives
+
+build_finale = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))["build_finale"]
 
 
 def amounts(values=None):
@@ -461,10 +465,27 @@ def dossier_screens(cid, selection, authored, episode, narrator_id, next_selecti
                 "collection-narrator",
             )
         )
+    finale = episode.get("finaleContract")
+    if finale:
+        result += [
+            add("route-choice", finale["choicePrompt"], "route-selection active; no progress write"),
+            add("campaign-complete", finale["completionMessage"], "after persona-outro"),
+        ]
+        for route in finale["routeChoices"]:
+            result.append(add(f"choose-{route['id']}", route["choiceLabel"],
+                              "route-selection active; selectable without prior completion"))
+            target = route["successor"]
+            recommendation = {
+                locale: (f"{target['title'][locale]} ({target['publicId']}). " if target else "")
+                + route["chronologyWarning"][locale]
+                for locale in ("en", "es-ES")
+            }
+            result.append(add(f"next-campaign-{route['id']}", recommendation,
+                              f"after campaign-complete; selected or accumulated route {route['id']}"))
     return result
 
 
-def build_dossier(campaign, selection, authored, profile, next_selection):
+def build_dossier(campaign, selection, authored, profile, next_selection, baseline=None):
     cid = campaign["campaignId"]
     plan = map_plan(cid, selection, authored, profile)
     world, objectives = world_and_objectives(cid, selection, authored, plan["hubs"])
@@ -476,7 +497,11 @@ def build_dossier(campaign, selection, authored, profile, next_selection):
         "dateRange": selection["date"],
         "event": authored["factualIntro"],
         "historicalOutcome": authored["factualOutro"],
-        "sourcePassages": [
+        "sourcePassages": ([{
+            "classification": "architect interpretation; independent historical approval pending",
+            "selectedClaim": selection["historicalSelection"]["selectedClaim"],
+            "architectCorrection": selection["historicalSelection"]["architectCorrection"],
+        }] if selection["historicalSelection"].get("architectCorrection") else []) + [
             selection["historicalSelection"].get(
                 "sourceConsultation", selection["historicalSelection"]
             )
@@ -576,6 +601,16 @@ def build_dossier(campaign, selection, authored, profile, next_selection):
         "saveLoad": "persist object identities, arrivals, collected facts, receipts, phase elapsed time and side reward balances",
         "campaignProgressWrite": False,
     }
+    if authored.get("finale"):
+        finale = build_finale(campaign, selection, authored["finale"], baseline)
+        draft["finaleContract"] = finale
+        machine = draft["stateMachine"]
+        machine["campaignProgressWrite"] = True
+        machine["states"].insert(-2, "route-selection")
+        machine["phaseTransitions"][-1]["to"] = "route-selection"
+        machine["phaseTransitions"].append({
+            "from": "route-selection", "to": "victory", "on": "valid-route-selected",
+        })
     draft["screens"] = dossier_screens(
         cid,
         selection,
