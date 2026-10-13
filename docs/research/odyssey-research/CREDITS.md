@@ -37,3 +37,11 @@ Five local research archives are credited to James A. Herbst, Corinth Excavation
 - `carthage-amphitheatre.jpg`: Noomen9, [source](https://commons.wikimedia.org/wiki/File:Amphith%C3%A9%C3%A2tre_romain_de_Carthage_24.jpg), [CC BY-SA4.0](https://creativecommons.org/licenses/by-sa/4.0/); preserve share-alike for adaptations.
 
 Commons-served1280pixel thumbnails retained without local changes, with bytes/SHA256 in the manifest. Root reopened license clauses and inspected all photographs: current visitor facilities, restored fabric and modern trees appear. These are archaeological reference photographs only; never ancient intact views, Christian meeting addresses or proof of Perpetua/Felicity’s arena. The temporary museum PDF/second-century reconstruction was consulted outside the repository; no open reuse license established and its drawing is not shipped.
+
+## Oxyrhynchus and Mediolanum references, 13 October 2026
+
+- `oxyrhynchus-locator.png`: NordNordWest, after Yomangani, [source and PD-self dedication](https://commons.wikimedia.org/wiki/File:Karte_Oxyrhynchos.png). Modern locator only; not an ancient local plan. The grant is uploader public-domain dedication, not an identified CC0 declaration.
+- `milan-circus-remains.jpg`: Zanner, [source and PD-self dedication](https://commons.wikimedia.org/wiki/File:Basamento_circo.jpg). Modern remains photograph; current walls and surviving fragments cannot depict an intact 313 circus.
+- `mediolanum-multiphase-plan.svg`: Cristiano64, MacMoreno and Arrow303, [source](https://commons.wikimedia.org/wiki/File:Mediolanum_Romana.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Original retained unchanged; attribution and share-alike apply to adaptations. Community map combines III–V century features and is a research lead, never dated archaeological geometry.
+
+The architect reopened file-page licensing and inspected all three originals/preview. Hashes and exact bytes are recorded in the manifest. No candidate is approved for production. UCL’s copyrighted plan and the Milan amphitheatre photograph requiring separate heritage authorization were excluded.

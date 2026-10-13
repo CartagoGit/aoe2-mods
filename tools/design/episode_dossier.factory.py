@@ -12,7 +12,10 @@ from pathlib import Path
 from geography import tile_point
 from secondary import RESOURCES, REWARDS, COSTS, bilingual, build_optional_objectives
 
-build_finale = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))["build_finale"]
+continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
+build_finale = continuity["build_finale"]
+build_entry = continuity["build_entry"]
+entry_screens = continuity["entry_screens"]
 
 
 def amounts(values=None):
@@ -90,6 +93,11 @@ def world_and_objectives(cid, selection, authored, hubs):
                 }
             if req["kind"] == "area-state":
                 req["zones"] = [destinations[hub] for hub in req.pop("zoneHubs")]
+                if "blockingEnemyGroups" in req:
+                    req["blockingEnemies"] = [
+                        entity_id for key in req.pop("blockingEnemyGroups")
+                        for entity_id in groups[key]
+                    ]
             if "inputGroups" in req:
                 inputs = req.pop("inputGroups")
                 field = (
@@ -389,6 +397,9 @@ def dossier_screens(cid, selection, authored, episode, narrator_id, next_selecti
             ),
         ),
     ]
+    if episode.get("entryContract"):
+        result += [add(key, text, condition, voice)
+                   for key, text, condition, voice in entry_screens(episode["entryContract"])]
     for objective in episode["objectivePlan"]:
         result += [
             add(
@@ -601,6 +612,8 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
         "saveLoad": "persist object identities, arrivals, collected facts, receipts, phase elapsed time and side reward balances",
         "campaignProgressWrite": False,
     }
+    if authored.get("entry"):
+        draft["entryContract"] = build_entry(campaign, selection, authored["entry"], baseline)
     if authored.get("finale"):
         finale = build_finale(campaign, selection, authored["finale"], baseline)
         draft["finaleContract"] = finale

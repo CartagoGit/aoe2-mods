@@ -5,7 +5,9 @@ import runpy
 from pathlib import Path
 from secondary import check_optional_objectives
 
-audit_finale = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))["audit_finale"]
+continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
+audit_finale = continuity["audit_finale"]
+audit_entry = continuity["audit_entry"]
 
 
 def audit_dossier(episode, campaign=None, baseline=None):
@@ -45,6 +47,7 @@ def audit_dossier(episode, campaign=None, baseline=None):
         f"{label}: duplicate main objective",
     )
     failures.extend(audit_finale(episode, campaign, baseline))
+    failures.extend(audit_entry(episode, campaign, baseline))
     check(
         episode["qa"]["gameVerified"] is False,
         f"{label}: design promoted to game verification",
@@ -290,6 +293,12 @@ def audit_dossier(episode, campaign=None, baseline=None):
                     set(req.get("blockingEnemies", [])) <= set(entities),
                     f"{context}: undefined route blocker",
                 )
+                until = req.get("mustRemainUntilObjective")
+                if until:
+                    future = next((i for i, row in enumerate(episode["objectivePlan"])
+                                   if row["id"] == until), -1)
+                    check(future > position and req["state"] == "controlled-and-passable",
+                          f"{context}: invalid continuous control interval")
             else:
                 check(False, f"{context}: unsupported dossier predicate {req['kind']}")
     for group in episode["worldContract"]["survivorGroups"]:
@@ -421,6 +430,10 @@ def audit_dossier(episode, campaign=None, baseline=None):
                 and roster["mobilizations"] == [],
                 f"{label}/{level}: finite opposition count or production drift",
             )
+            blockers = {enemy for objective in episode["objectivePlan"]
+                        for requirement in objective["predicate"]["requirements"]
+                        for enemy in requirement.get("blockingEnemies", [])}
+            check(blockers <= set(ids), f"{label}/{level}: mandatory blocker not instantiated")
     else:
         check(
             all(b["enemyTotalCap"] == 0 for b in episode["difficulty"].values()),

@@ -13,6 +13,60 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def imperial_draft(self, order=1):
+        return copy.deepcopy(next(e for e in self.odysseys[1]["episodes"] if e["order"] == order))
+
+    def imperial_errors(self, draft):
+        return self.dossier_validator(draft, self.odysseys[1], self.catalogue["campaigns"])
+
+    def test_entry_requires_first_episode_and_canonical_predecessor(self):
+        draft = self.imperial_draft()
+        self.assertEqual(self.imperial_errors(draft), [])
+        self.assertTrue(any("canonical campaign context" in e for e in self.dossier_validator(draft)))
+        draft.pop("entryContract")
+        self.assertTrue(any("needs a predecessor entry" in e for e in self.imperial_errors(draft)))
+        draft = self.imperial_draft(2)
+        draft["entryContract"] = self.imperial_draft()["entryContract"]
+        self.assertTrue(any("first episode" in e for e in self.imperial_errors(draft)))
+        draft = self.imperial_draft()
+        draft["entryContract"]["predecessors"][0]["progressKey"] = "progress.other.done"
+        self.assertTrue(any("unsafe entry predecessor" in e for e in self.imperial_errors(draft)))
+
+    def test_entry_rejects_hard_gates_progress_writes_and_missing_localization(self):
+        for field, value in [("enforcePrerequisite", True), ("proceedWithoutPredecessor", False),
+                             ("recapAvailableAlways", False), ("writesProgress", True)]:
+            with self.subTest(field=field):
+                draft = self.imperial_draft()
+                draft["entryContract"][field] = value
+                self.assertTrue(any("unsafe entry predecessor" in e for e in self.imperial_errors(draft)))
+        draft = self.imperial_draft()
+        del draft["entryContract"]["recap"]["es-ES"]
+        self.assertTrue(any("incomplete entry localization" in e for e in self.imperial_errors(draft)))
+        draft = self.imperial_draft()
+        next(s for s in draft["screens"] if s["id"].startswith("recommended-"))["condition"] = "block start until predecessor"
+        self.assertTrue(any("incorrect entry screen" in e for e in self.imperial_errors(draft)))
+
+    def test_continuous_control_cannot_end_in_its_own_or_a_past_objective(self):
+        for target in ("o1", "o2", "absent"):
+            draft = self.imperial_draft()
+            draft["objectivePlan"][1]["predicate"]["requirements"][0]["mustRemainUntilObjective"] = target
+            self.assertTrue(any("invalid continuous control interval" in e for e in self.imperial_errors(draft)))
+        draft = self.imperial_draft()
+        draft["objectivePlan"][1]["predicate"]["requirements"][0]["state"] = "visited-and-passable"
+        self.assertTrue(any("invalid continuous control interval" in e for e in self.imperial_errors(draft)))
+
+    def test_mandatory_guards_are_instantiated_in_every_difficulty_roster(self):
+        draft = self.imperial_draft()
+        blockers = draft["objectivePlan"][1]["predicate"]["requirements"][0]["blockingEnemies"]
+        self.assertEqual(len(blockers), 6)
+        for level in ("easy", "standard", "hard"):
+            self.assertTrue(set(blockers) <= set(draft["oppositionPlan"]["byDifficulty"][level]["initialEntityIds"]))
+            invalid = copy.deepcopy(draft)
+            roster = invalid["oppositionPlan"]["byDifficulty"][level]["initialEntityIds"]
+            roster.remove(blockers[0])
+            invalid["difficulty"][level]["enemyTotalCap"] -= 1
+            self.assertTrue(any("mandatory blocker not instantiated" in e for e in self.imperial_errors(invalid)))
+
     def finale_errors(self, draft):
         return self.dossier_validator(draft, self.odysseys[0], self.catalogue["campaigns"])
 
@@ -56,6 +110,9 @@ class DesignAcceptanceTests(unittest.TestCase):
     def test_finale_rejects_missing_spanish_or_wrong_successor_screen(self):
         draft = self.draft(30)
         del draft["finaleContract"]["choicePrompt"]["es-ES"]
+        self.assertTrue(any("finale localization" in error for error in self.finale_errors(draft)))
+        draft = self.draft(30)
+        del draft["finaleContract"]["routeChoices"][0]["chronologyWarning"]["es-ES"]
         self.assertTrue(any("finale localization" in error for error in self.finale_errors(draft)))
         draft = self.draft(30)
         screen = next(s for s in draft["screens"] if s["id"] == "next-campaign-jewish-perspective")

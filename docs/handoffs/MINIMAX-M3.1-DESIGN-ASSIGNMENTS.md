@@ -1,6 +1,6 @@
 # Asignaciones y gates de MiniMax M3.1
 
-El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins son borradores en revisión, no escenarios nativos.
+El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las tres de apertura imperial son borradores en revisión, pendientes de escenario nativo.
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 
@@ -144,3 +144,6 @@ Treinta episodios de faith-origins (órdenes 1–30) tienen expediente legible e
 La autoridad de diseño de voz ampliada es [odyssey-narrators.json](../design/voices/odyssey-narrators.json), con nueve fichas legibles en ese directorio y un plan de acceso al conocimiento para cada uno de los 273 episodios. La voz objetiva resume hechos y límites documentales antes de dar paso a la persona ficticia de campaña. No conviertas biografías inventadas en fuentes antiguas ni atribuyas acceso a concilios, revelaciones o motivos privados. Cada dossier debe precisar la colocación local; una edad compatible no demuestra presencia.
 
 Marcus mantiene `imperial-clerk`, pero en la odisea ampliada su vida es c.334–403, frente al arco legado c.290–350. No copies recuerdos de 312 a los nuevos textos. La migración debe aprobarse antes de promoción nativa. Las biblias ampliadas siguen pendientes de revisión editorial y no autorizan nuevas campañas ni generación pagada de audio.
+
+
+La apertura de imperial-church tiene dossiers individuales para los órdenes 1–3: sector táctico terrestre del Puente Milvio, preparación local en Milán y patios ficticios en Nicomedia. Entrada, objetivos, voz, pagos, fuerzas finitas y QA están especificados. Son 33 expedientes ampliados en total (1.317 pantallas, 198 secundarios); su revisión histórica y capacidades nativas siguen pendientes. El control territorial sostenido usa la semántica de derrota inmediata de la referencia: no inventar un periodo de gracia. No extraer cifras militares del roster ficticio como datos históricos.
