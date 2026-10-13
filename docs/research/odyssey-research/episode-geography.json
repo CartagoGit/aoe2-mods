@@ -299,6 +299,72 @@
       },
       "anachronisms": "No Byzantine principal church, later mosque, modern village/grid/canal or nineteenth-century papyrus excavation as250scene.",
       "approval": "regional candidate only; exact land mask, date-specific banks, footprints and native navigation pending"
+    },
+    {
+      "id": "arles",
+      "name": "Arelate and local left-bank Rhône approaches",
+      "bbox": [
+        4.6,
+        43.65,
+        4.68,
+        43.72
+      ],
+      "coordinateStatus": "architect approximate regional crop; fictional reception courts, not ancient council venue or survey",
+      "representativePoint": [
+        4.6309653,
+        43.6776223
+      ],
+      "representativePointUsage": "candidate modern OSM place anchor only; no council location claimed",
+      "sources": [
+        {
+          "url": "https://www.openstreetmap.org/relation/73911",
+          "locator": "candidate place feature retained from source collection; ODbL1.0 attribution",
+          "consulted": "2026-10-12 collector"
+        },
+        {
+          "url": "https://dossiersinventaire.maregionsud.fr/dossier/IA13004079",
+          "locator": "Presentation/history/description: city left bank, Trinquetaille right bank, boat-bridge uncertainties and later embankments",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            4.625,
+            43.71
+          ],
+          [
+            4.625,
+            43.69
+          ],
+          [
+            4.622,
+            43.68
+          ],
+          [
+            4.615,
+            43.67
+          ],
+          [
+            4.61,
+            43.65
+          ]
+        ],
+        "certainty": "architect schematic modern Rhône regional control; not dated314 banks or bridge footprint",
+        "renderAs": "river-line"
+      },
+      "terrain": "Rhône edge and local city-side lowland with gentle ordinary work-yard access; elevation raster and ancient flood zones unverified",
+      "water": "Rhône west of fictional mandatory courts; Trinquetaille opposite, no mandatory crossing",
+      "hills": "No invented cliffs or mountain passes inside the local frame; exact microtopography pending",
+      "roads": "Proposed local city-side land links only; distant delegate travel remains off-map",
+      "anachronisms": "No modern fixed bridge, embankment, railways, Arles–Fos canal or medieval cathedral façade; boat-bridge chronology disputed",
+      "sourceIds": [],
+      "referenceAsset": null,
+      "landmarks": [],
+      "layerSources": [
+        "natural-earth"
+      ],
+      "approval": "research candidate; independent ancient-footprint, DEM and pathfinding checks pending"
     }
   ]
 }

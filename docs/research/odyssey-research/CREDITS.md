@@ -45,3 +45,13 @@ Commons-served1280pixel thumbnails retained without local changes, with bytes/SH
 - `mediolanum-multiphase-plan.svg`: Cristiano64, MacMoreno and Arrow303, [source](https://commons.wikimedia.org/wiki/File:Mediolanum_Romana.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Original retained unchanged; attribution and share-alike apply to adaptations. Community map combines III–V century features and is a research lead, never dated archaeological geometry.
 
 The architect reopened file-page licensing and inspected all three originals/preview. Hashes and exact bytes are recorded in the manifest. No candidate is approved for production. UCL’s copyrighted plan and the Milan amphitheatre photograph requiring separate heritage authorization were excluded.
+
+## Arles references, 2026-10-13
+
+These three files are CDN-recompressed research copies; pixel dimensions are preserved but bytes differ from the Wikimedia originals, which returned HTTP429. No local image edits. Hashes identify the actual local copies; none is production approved.
+
+- `docs/research/odyssey-research/images/roman-theatre-arles.jpg` — Larry (Flickr user microbe; page credits Larry from Charlottetown). [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/); [source](https://commons.wikimedia.org/wiki/File:Roman_Theatre_at_Arles,_France_(7179293588).jpg). Present-day conservation and urban surroundings, not an intact 314 CE view; no claim about the theatre’s exact use/state in 314. Commons file page also records reviewed Flickr licensing.
+
+- `docs/research/odyssey-research/images/arles-amphitheatre.jpg` — Stefan Bauer (Ferras). [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/); [source](https://commons.wikimedia.org/wiki/File:Arles_amphitheater.jpg). Modern remains, repairs and present-day appearance; the ancient arena’s later residential/fortified phases mean it cannot stand for a pristine fourth-century amphitheatre. Image is only 990×645 pixels. Derivative/adapted distribution subject to share-alike.
+
+- `docs/research/odyssey-research/images/rhone-arles-modern.jpg` — ГРИЩУК ЮН (Commons user Грищук ЮН). [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/); [source](https://commons.wikimedia.org/wiki/File:Rhone_river_Tour_de_l%27%C3%A9corchoir_in_Arles_View_from_river.jpg). Modern quay, tower and bridge are not evidence for 314 shoreline, bridge, docks or river engineering. Page flags that its top-level description lacks detail; use the detailed licensing description. Share-alike applies to adaptations.

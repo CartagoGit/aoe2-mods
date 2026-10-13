@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 3
+    "authoredDossierCount": 5
   },
   "continuity": {
     "recommendedPrevious": [
@@ -387,11 +387,25 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/04-rival-delegation-reception-rome-ostia/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The transmitted letter directs the African dispute to Rome; Optatus later gives a Roman hearing and decision for Caecilian. Ostia is an attendee’s see, not an attested hearing venue. Polemical framing, consular wording and party identity require comparison.
+
+ES: La carta transmitida remite la disputa africana a Roma; Optato relata después una audiencia romana y decisión favorable a Ceciliano. Ostia es sede de un participante, no sede documentada de audiencia. El marco polémico, la fórmula consular y la identidad de la parte requieren contraste.
+
 Source consultation pending: No exact passage directly consulted for the dossier’s Rome/Ostia hearings; Eusebius HE X.5 mentions a Roman decision only indirectly in the contextual tradition.
 
 Limit: Dossier URLs (Fourth Century/Optatus) not opened in this pass; Rome/Ostia may conflate distinct hearings. Needs primary passage before treating as established.
 
 Status: unavailable
+
+[Additional consulted passage](https://www.newadvent.org/fathers/250110.htm): Eusebius HE X.5.18–20
+
+Limit: Transmitted legal invitation, not private deliberation or proof of fairness.
+
+[Additional consulted passage](https://www.tertullian.org/fathers/optatus_01_book1.htm): Optatus I.22–25 and edition notes188–192
+
+Limit: Retrospective polemic; note190 contrasts consular wording with Augustine. No Ostia hearing or exact playable room follows.
 
 ### 5. The Road to Arles
 
@@ -405,11 +419,25 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/05-delegate-logistics-arles/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The transmitted invitation prescribes travel to Arles, public conveyance and arrival before the August date. The preserved synodal letter addresses absent Sylvester and states decisions. Neither document proves every route, Constantine’s presence or universal compliance.
+
+ES: La invitación transmitida prescribe viaje a Arlés, transporte público y llegada antes de la fecha de agosto. La carta sinodal conservada se dirige a Silvestre ausente y expresa decisiones. Ningún documento prueba todas las rutas, la presencia de Constantino ni cumplimiento universal.
+
 [Consulted source](https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/): Council of Arles page, introductory lines 16–17 and references to canons 1, 8, 20.
 
 Limit: Page’s narrative introduction is modern editorial framing; it gives 1 August 314, while precise dating derives from scholarly reconstruction. Checked summary, not full canonical text.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/250110.htm): Eusebius HE X.5.21–24
+
+Limit: Normative transmitted invitation, not observed itinerary; no exact council venue or native timed travel.
+
+[Additional consulted passage](https://www.tertullian.org/fathers/optatus_11_appendices.htm): Appendix IV synodal letter to Sylvester, displayed pp389–393
+
+Limit: Did not read Munier critical edition or a complete separately numbered22-canon collection. Modern page claims Constantine attended; not adopted as verified fact.
 
 ### 6. The Field between Two Eagles
 
