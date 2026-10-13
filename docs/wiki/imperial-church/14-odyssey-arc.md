@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 13
+    "authoredDossierCount": 14
   },
   "continuity": {
     "recommendedPrevious": [
@@ -723,13 +723,35 @@ Fecha tradicional, ceremonia sobre proceso urbano anterior.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/03-new-capital/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The later Chronicon Paschale reports Constantinople’s naming and public festival in 330, conventionally dated 11 May. Urban works preceded and outlasted the ceremony. Eusebius presents Christian patronage and symbols through imperial praise; this is not evidence of a uniformly Christian population.
+
+ES: El posterior Chronicon Paschale refiere el nombramiento y la fiesta pública de Constantinopla en 330, fechados convencionalmente el 11 de mayo. Las obras urbanas precedieron y continuaron después de la ceremonia. Eusebio presenta patrocinio y símbolos cristianos mediante elogio imperial; no demuestra una población uniformemente cristiana.
 
 Source consultation pending: Chronicon Paschale not directly consulted; Britannica URL not consulted.
 
 Limit: 11 May is a conventional date but remains unverified in this audit; avoid implying all construction occurred on dedication day.
 
 Status: unavailable
+
+[Additional consulted passage](https://catholiclibrary.org/library/view?chunk.id=00000267&docId=/Fathers-Synchronized-EN/Chronicon_Paschale__Chronicon_paschale.en.html): Annal 330, printed equivalent pp.529–530; displayed lines 378–386
+
+Limit: Seventh-century chronicle, not eyewitness record. Five days before May Ides conventionally gives 11 May. Adjacent annal chronology and magistrate titles are not accepted wholesale. Its later bread-dole entry is not a 330 entitlement. Ceremony reports do not certify exact buildings or total construction completion.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25023.htm): VC III.48–49 and III.54
+
+Limit: Pro-imperial Christian panegyric; asserted suppression of cult practices does not certify universal enforcement or a single-faith population. Does not date all monuments to the dedication.
+
+[Additional consulted passage](https://www.ime.gr/chronos/projects/justinian/en/journey/j1a.html): Topography introduction, paragraphs on Constantinian expansion and later walls
+
+Limit: Broad position and multi-period account; fifth/sixth-century statistics and later Mese monuments are not 330 inventories. No exact Constantinian wall survey.
+
+[Additional consulted passage](https://jfa.arch.metu.edu.tr/uploads/docs/sayilar/sayi-33-1/121-145.pdf): Pelin Yoncaci Arslan 2016, selected printed pp.121–125
+
+Limit: Modern reconstruction from mixed literary/archaeological evidence, disputed exact geometry and statue symbolism; no image reuse license established. Later column repairs are not 330 fabric.
 
 ### 15. A Letter beyond the Frontier
 

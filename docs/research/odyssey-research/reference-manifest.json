@@ -443,6 +443,22 @@
       "productionApproved": false,
       "attributionRequired": true,
       "shareAlikeRequired": true
+    },
+    {
+      "id": "byzantine-constantinople-composite",
+      "path": "docs/research/odyssey-research/geography/byzantine-constantinople-composite.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Byzantine_Constantinople-en.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Byzantine_Constantinople-en.svg",
+      "author": "Cplakidas; code cleanup and editable-text layer by Semhur (2012 revision)",
+      "license": "CC BY-SA 3.0 Unported (selected from dual CC BY-SA 3.0/GFDL offer)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "accessed": "2026-10-14",
+      "sha256": "cf25d560381ec7fb33b4730fa815480b17b13177667dc1a73e37a22966fa0dd1",
+      "bytes": 3867401,
+      "usage": "Research-only mixed-period composite. Caption expressly warns features were not all contemporary. Regions circa425, later walls/churches/foreign quarters and modern shoreline overlay must be phase-filtered; not a330 survey.",
+      "productionApproved": false,
+      "modifications": "None; original SVG unchanged. Raster preview generated only in /tmp and inspected by architect.",
+      "attribution": "Byzantine Constantinople-en.svg by Cplakidas, code cleanup by Semhur, Wikimedia Commons, CC BY-SA3.0. Indicate modifications; adaptations require compatible ShareAlike terms."
     }
   ]
 }
