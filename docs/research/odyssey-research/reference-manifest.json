@@ -391,6 +391,40 @@
       "productionApproved": false,
       "modifications": "CDN-served recompressed copy, not byte-identical to Wikimedia original; no local edits. Original endpoint returned429.",
       "downloadProvenance": "Downloaded proxy copy has same pixel dimensions but differs in byte count from Wikimedia original metadata; treat as a proxy-derived research copy, not checksum-identical original. Direct original endpoint returned Wikimedia 429."
+    },
+    {
+      "id": "ne-odyssey-rivers10m",
+      "path": "docs/research/odyssey-research/geography/ne_10m_rivers_lake_centerlines.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "sourcePage": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+      "author": "Natural Earth contributors",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "accessed": "2026-10-13",
+      "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+      "bytes": 7307743,
+      "usage": "Modern generalized hydrography research; no ancient channel, ford, water depth or battlefield claim. Evros reach selected forAdrianople; minor tributaries unresolved.",
+      "version": "master snapshot identified bySHA256; no version inferred from download page",
+      "productionApproved": false,
+      "modifications": "Original fullGeoJSON retained; separateprofileusesunmodifiedEvros vertices for regional control."
+    },
+    {
+      "id": "belke2021-ports-offprint",
+      "path": "docs/research/odyssey-research/documents/belke2021-ports-offprint.pdf",
+      "downloadUrl": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf",
+      "sourcePage": "https://doi.org/10.11588/propylaeum.911.c12077",
+      "author": "Klaus Belke; volume edited by Falko Daim and Ewald Kislinger, RGZM2021; figure1 map E.Beer2016, captions A.Kulzer/K.Belke; front matter and credits retained",
+      "license": "Creative Commons Attribution-ShareAlike4.0 International (CC BY-SA4.0), explicitly printed on offprintPDFpage5; third-party figure reuse requires individual credit/license audit",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-13",
+      "sha256": "555e7f4613da090f85405223ccda5cd1ab0cc23b9c1181cd2f4ef4571fac6cb5",
+      "bytes": 7814649,
+      "modifications": "None; full mirrored73-page offprint retained including license, chapter, bibliography and credits; no cropped figure distributed. BrowserUser-Agent needed after initial403; no certificate bypass.",
+      "usage": "Research only. Selected Belkechapter passages/figure read, not full73pages. Multi-era harbors/silting; never a324 shoreline, imperial landing map or exact military route.",
+      "anachronismsAndLimits": "Roman jetties and later harbor/Skutarion phases distinct. OfficialPropylaeum access blocked byAnubis; the mirrored scholarly offprint supplied the actual bytes.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
     }
   ]
 }

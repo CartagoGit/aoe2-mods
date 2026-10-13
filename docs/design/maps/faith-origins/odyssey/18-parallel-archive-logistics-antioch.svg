@@ -6,9 +6,9 @@
 <polyline data-control="schematic-water" points="297.95,700.18 289.96,610.90" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="289.96,610.90 253.93,476.97" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="253.93,476.97 145.88,175.62" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
-<polyline data-corridor="north-chain" points="448.43,423.39 369.20,235.89 563.70,360.90" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-chain: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="south-chain" points="448.43,423.39 506.07,610.90 563.70,360.90" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-chain: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="relief" points="369.20,235.89 448.43,423.39 506.07,610.90" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-chain" points="448.43,423.39 369.20,235.89 563.70,360.90" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-chain: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="south-chain" points="448.43,423.39 506.07,610.90 563.70,360.90" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-chain: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="369.20,235.89 448.43,423.39 506.07,610.90" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="448.43" cy="423.39" r="20" fill="none" stroke="#91512f"/>
 <text x="471.43" y="423.39" font-family="sans-serif">1</text>
 <text x="730" y="190" font-family="sans-serif" font-size="12">1: Shared local collection court</text>
@@ -22,11 +22,12 @@
 <text x="586.70" y="360.90" font-family="sans-serif">4</text>
 <text x="730" y="340" font-family="sans-serif" font-size="12">4: Eastern two-label archive</text>
 <text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
-<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
-<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="516" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
-<text x="730" y="540" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
-<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="564" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="588" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [36.14, 36.18, 36.205, 36.245]; cosine-corrected longitude; approximate districts</text>
 </svg>

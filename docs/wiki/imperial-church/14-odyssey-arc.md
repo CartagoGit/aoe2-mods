@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 8
+    "authoredDossierCount": 10
   },
   "continuity": {
     "recommendedPrevious": [
@@ -521,11 +521,29 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/09-crossing-and-supply-adrianople/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Constantine defeated Licinius in the Adrianople/Hebrus region before the later Bithynian operations;3July324 is conventional chronology, not dated in the displayed Zosimus account.
+
+ES: Constantino derrotó a Licinio en la región de Adriánopolis/Hebro antes de las operaciones bitinias posteriores; el3de julio de324 es cronología convencional, no fecha indicada en el relato mostrado de Zósimo.
+
 [Consulted source](https://www.newadvent.org/fathers/25022.htm): No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.
 
 Limit: Date and military detail remain unverified in this audit; should retain as conventional only with a better source.
 
 Status: unavailable
+
+[Additional consulted passage](https://www.tertullian.org/fathers/zosimus02_book2.htm): New History II; printed47–48 Adrianople/Hebrus crossing and retreat
+
+Limit: Later hostile account; not a precise calendar date, GPS crossing/battlefield, neutral casualty total or private dialogue.
+
+[Additional consulted passage](https://roman-emperors.sites.luc.edu/licinius.htm): Michael DiMaio, Second Civil War and Death paragraphs
+
+Limit: Modern scholarly reference updated1997, not a primary ancient date attestation; summary and interpretive dates retain review gate.
+
+[Additional consulted passage](https://dergipark.org.tr/en/download/article-file/6126842): Yildirim2015; abstract and opening pp181–183; regional map figure1 onPDFpage2
+
+Limit: Not full24-page archaeological analysis read; medieval/modern city plans elsewhere not adopted as324 footprint. Exact ford and ancient channels unverified.
 
 ### 9. Across the Bright Shore
 
@@ -539,11 +557,29 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/10-land-and-strait-logistics-chrysopolis/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The final324 military sequence includes the Asian-shore victory conventionally dated18September atChrysopolis and Licinius’ subsequent surrender. Zosimus’ northern crossing narrative does not survey this local supply route.
+
+ES: La secuencia militar final de324 incluye la victoria asiática fechada convencionalmente el18de septiembre enCrisópolis y la rendición posterior deLicinio. El relato de cruce norteño deZósimo no prospecta esta ruta local de provisiones.
+
 [Consulted source](https://www.newadvent.org/fathers/25022.htm): No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.
 
 Limit: Do not merge both battles as one event; precise conventional dates need source support.
 
 Status: unavailable
+
+[Additional consulted passage](https://www.tertullian.org/fathers/zosimus02_book2.htm): New History II; printed49–50 Asian shore and battle/surrender sequence
+
+Limit: Later hostile account; not a precise calendar date, GPS crossing/battlefield, neutral casualty total or private dialogue.
+
+[Additional consulted passage](https://roman-emperors.sites.luc.edu/licinius.htm): Michael DiMaio, Second Civil War and Death paragraphs
+
+Limit: Modern scholarly reference updated1997, not a primary ancient date attestation; summary and interpretive dates retain review gate.
+
+[Additional consulted passage](https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf): Belke2021 chapter pp223–224 and227–228; map figure pp226
+
+Limit: Only selected chapter passages, not full73-page offprint; multi-era coast and later Skutarion ruins not324 quay. Official Propylaeum access denied; mirrored scholarly PDF consulted.
 
 ### 10. Words over Alexandria
 

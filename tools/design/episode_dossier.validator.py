@@ -6,6 +6,7 @@ from pathlib import Path
 from secondary import check_optional_objectives
 
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
+transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
 audit_finale = continuity["audit_finale"]
 audit_entry = continuity["audit_entry"]
 
@@ -129,8 +130,8 @@ def audit_dossier(episode, campaign=None, baseline=None):
                             set(r["entities"])
                             for r in source["predicate"]["requirements"]
                             if r["id"] in ledger["fromRequirements"]
-                            and r["kind"] == "entity-state"
-                            and r["state"] == "arrived"
+                            and (r["kind"] == "transport-journey" or
+                                 (r["kind"] == "entity-state" and r["state"] == "arrived"))
                         ]
                         common = (
                             set.intersection(*arrival_sets) if arrival_sets else set()
@@ -240,6 +241,8 @@ def audit_dossier(episode, campaign=None, baseline=None):
                         ),
                         f"{context}: derived payment receipt amount or owner drift",
                     )
+            elif req["kind"] == "transport-journey":
+                transport["audit_requirement"](req, episode, position, check, context)
             elif req["kind"] == "ordered-departure":
                 check(
                     len(req["departingEntities"]) == len(set(req["departingEntities"]))

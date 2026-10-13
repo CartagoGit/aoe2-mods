@@ -13,6 +13,65 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def journey_draft(self):
+        return self.imperial_draft(8)
+
+    def test_water_journeys_keep_shared_capacity_and_unimplemented_gate(self):
+        draft = self.journey_draft()
+        self.assertEqual(self.imperial_errors(draft), [])
+        draft["transportPlan"]["sharedManifestAuthority"] = False
+        self.assertTrue(any("unimplemented capability gate" in e for e in self.imperial_errors(draft)))
+        draft = self.journey_draft()
+        draft["transportPlan"]["implementationStatus"] = "native-implemented"
+        self.assertTrue(any("unimplemented capability gate" in e for e in self.imperial_errors(draft)))
+        draft = self.journey_draft()
+        draft["requiredCapabilities"] = [c for c in draft["requiredCapabilities"]
+                                        if c["id"] != "manifest-backed-water-journeys"]
+        self.assertTrue(any("unimplemented capability gate" in e for e in self.imperial_errors(draft)))
+
+    def test_water_journeys_reject_land_routes_wrong_shores_and_stale_receipts(self):
+        for change in ("land", "wrong-shore", "wrong-passenger", "future"):
+            with self.subTest(change=change):
+                draft = self.journey_draft()
+                journey = draft["objectivePlan"][1]["predicate"]["requirements"][0]
+                if change == "land":
+                    next(c for c in draft["mapPlan"]["corridors"] if c["id"] == "lower-ferry")["mode"] = "land"
+                elif change == "wrong-shore":
+                    journey["destinationZone"] = journey["originZone"]
+                elif change == "wrong-passenger":
+                    journey["readyReceipt"]["requirement"] = "req-3"
+                else:
+                    journey["readyReceipt"]["objective"] = "o3"
+                self.assertTrue(any("journey" in e for e in self.imperial_errors(draft)))
+
+    def test_water_journeys_reject_missing_steps_duplicate_actors_and_empty_capacity(self):
+        for change in ("transit", "identity", "duplicate", "passenger-as-carrier", "capacity"):
+            with self.subTest(change=change):
+                draft = self.journey_draft()
+                journey = draft["objectivePlan"][1]["predicate"]["requirements"][0]
+                if change == "transit":
+                    journey["eventOrder"].remove("water-transit")
+                elif change == "identity":
+                    journey["proofPolicy"]["sameCarrierWithinJourney"] = False
+                elif change == "duplicate":
+                    journey["entities"].append(journey["entities"][0])
+                elif change == "passenger-as-carrier":
+                    journey["carriers"][0] = journey["entities"][0]
+                else:
+                    draft["transportPlan"]["capacityByCarrier"][journey["carriers"][0]] = 0
+                self.assertTrue(any("journey" in e or "carrier capacity" in e
+                                    for e in self.imperial_errors(draft)))
+
+    def test_chrysopolis_optionals_stay_on_the_authored_european_bank(self):
+        draft = self.imperial_draft(9)
+        self.assertEqual(self.imperial_errors(draft), [])
+        for side in draft["secondaryObjectives"]:
+            self.assertEqual(side["reachability"]["corridorIds"], ["west-support"])
+            self.assertTrue(all(e["initialHub"] == "hub-1" for e in side["world"]["entities"]))
+            self.assertTrue(all(z["hub"] in {"hub-1", "hub-7"} for z in side["world"]["zones"]))
+        draft["secondaryObjectives"][0]["world"]["zones"][0]["hub"] = "absent"
+        self.assertTrue(any("undefined side hub" in e for e in self.imperial_errors(draft)))
+
     def test_authored_chronology_rejects_post_victory_correspondence_before_war(self):
         helper = runpy.run_path(str(ROOT / 'tools/design/odyssey_catalog.helper.py'))
         policy, campaigns = helper['odyssey_catalog']()

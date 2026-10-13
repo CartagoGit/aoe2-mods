@@ -3,10 +3,10 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Bread Read Aloud</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · rome-ostia · N ↑ E →</text>
-<polyline data-corridor="north-relief" points="390.80,400.32 333.20,206.87" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-relief: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="south-relief" points="390.80,400.32 304.41,613.13" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-relief: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="east-relief" points="390.80,400.32 599.58,380.99" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-relief: proposed district connection, intermediate path pending</title></polyline>
-<polyline data-corridor="relief" points="333.20,206.87 599.58,380.99 304.41,613.13" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-relief" points="390.80,400.32 333.20,206.87" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-relief: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="south-relief" points="390.80,400.32 304.41,613.13" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-relief: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-relief" points="390.80,400.32 599.58,380.99" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-relief: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="333.20,206.87 599.58,380.99 304.41,613.13" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="390.80" cy="400.32" r="20" fill="none" stroke="#91512f"/>
 <text x="413.80" y="400.32" font-family="sans-serif">1</text>
 <text x="730" y="190" font-family="sans-serif" font-size="12">1: Central reading and accounting court</text>
@@ -20,11 +20,12 @@
 <text x="622.58" y="380.99" font-family="sans-serif">4</text>
 <text x="730" y="340" font-family="sans-serif" font-size="12">4: Eastern relief post</text>
 <text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
-<text x="730" y="444" font-family="sans-serif" font-size="12">Dashed connector: proposed route</text>
-<text x="730" y="468" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="492" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="516" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
-<text x="730" y="540" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
-<text x="730" y="560" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="564" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="588" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [12.48, 41.87, 12.555, 41.93]; cosine-corrected longitude; approximate districts</text>
 </svg>
