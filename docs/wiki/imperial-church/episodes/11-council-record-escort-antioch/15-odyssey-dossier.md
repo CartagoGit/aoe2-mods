@@ -176,9 +176,9 @@ ES: Un informe, una decisión, una expectativa. Una etiqueta habría hecho una i
 
 ### o2 / phase-2
 
-EN: Pay90 wood and30 gold once, then derive each labelled packet from its own collected original note.
+EN: Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note.
 
-ES: Paga una vez90 de madera y30 de oro, y deriva cada paquete rotulado de su propia nota original recogida.
+ES: Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida.
 
 ```json
 {
@@ -1944,7 +1944,7 @@ ES: Señala un enlace terrestre alternativo sin convertir una propuesta en Ancir
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-goal / phase-1 active | none | Collect the three distinct original local notes and deliver each to common copying. | Recoge las tres notas locales originales distintas y entrega cada una al patio común de copias. |
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-receipt / o1 latched once | none | Three separate local originals are ready, without merging their subjects. | Tres originales locales separados están preparados, sin fusionar sus asuntos. |
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o1-reaction / after o1 receipt | imperial-clerk | A report, a decision, an expectation. One label would have done an injustice to all three. | Un informe, una decisión, una expectativa. Una etiqueta habría hecho una injusticia a los tres. |
-| scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-goal / phase-2 active | none | Pay90 wood and30 gold once, then derive each labelled packet from its own collected original note. | Paga una vez90 de madera y30 de oro, y deriva cada paquete rotulado de su propia nota original recogida. |
+| scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-goal / phase-2 active | none | Pay 90 wood and 30 gold once, then derive each labelled packet from its own collected original note. | Paga una vez 90 de madera y 30 de oro, y deriva cada paquete rotulado de su propia nota original recogida. |
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-receipt / o2 latched once | none | Three packets have distinct inputs and the same exact funded receipt; no second debit. | Tres paquetes tienen entradas distintas y el mismo recibo exacto de financiación; sin segundo cobro. |
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o2-reaction / after o2 receipt | imperial-clerk | The workshop charges once. A grand title must not charge three times for the same ink. | El taller cobra una vez. Un título grandioso no debe cobrar tres veces por la misma tinta. |
 | scenario.imperial-church.11-council-record-escort-antioch.odyssey.o3-goal / phase-3 active | none | Send the three original clerks to their own assigned courts, and deliver the matching setting, communion and venue packets there. | Envía los tres escribientes originales a sus propios patios asignados y entrega allí los paquetes correspondientes de marco, comunión y lugar futuro. |
@@ -2051,7 +2051,7 @@ ES: Señala un enlace terrestre alternativo sin convertir una propuesta en Ancir
   ],
   "artDirection": {
     "style": "sober late Roman Antioch working courts and foothill context, restrained administrative humor",
-    "historicalControls": "no exact bishop residence,Golden Octagon341,medieval manuscripts or moderncriticaledition inside324/325; fictionalclerksnotaccusedbishops",
+    "historicalControls": "No exact bishop residence, Golden Octagon dedicated in 341, medieval manuscript or modern critical edition in 324–325. Fictional clerks do not stand for the three accused bishops.",
     "referenceAssets": [],
     "productionApproved": false
   },
@@ -2060,17 +2060,17 @@ ES: Señala un enlace terrestre alternativo sin convertir una propuesta en Ancir
     "nativeStatus": "pending",
     "gameVerified": false,
     "cases": [
-      "three localnotes remain distinct; no misplaced latercriticaledition or medieval Syriacmanuscript",
-      "each packet derives from its own collectednote and exacto2 fundedreceipt; a common fundingreceipt never means threecharges",
-      "each of three original clerks has one assigned court; all three arrivals at one court fail",
-      "a packet’sarrival cannotauthorize aclerk’sdeparture",
-      "eachclerks owno3receiptenables its owno4departure and guardedreturn; earlycommonvisitdoesnotcount",
-      "all threeoriginal clerksrequired; optional guide cannot replace one",
-      "communion exclusion remains attributed; no removalfromoffice or doctrinalcorrectnessscore",
-      "Ancyra in the letter is not Nicaea and not a local Antiochdistrict",
-      "date c324–325 and order relative to the imperial letter remain debated; do not imply that it followed the letter as fact",
-      "Golden Octagon341or modern Antakya ruinsnotexact325synodsite",
-      "nativearrivalpredicateproves destinations, notheldinventory orcoupled travel",
+      "Three local notes retain distinct identities; no later critical edition or medieval Syriac manuscript appears in 324–325.",
+      "Each packet derives from its own collected note and exact o2 funding receipt; shared receipt never creates three debits.",
+      "Each of the three original clerks has its own court; three arrivals at one court cannot satisfy this distribution.",
+      "Packet arrival cannot authorize a clerk departure.",
+      "Each clerk requires its own o3 arrival receipt, o4 departure and guarded return; an earlier visit to common work cannot satisfy the return.",
+      "All three original clerks are essential; an optional guide cannot replace a lost clerk.",
+      "Communion exclusion stays attributed; no office-removal command or theological correctness score.",
+      "Ancyra named in the letter is neither Nicaea nor a local Antioch district.",
+      "The c.324–325 date and order relative to the imperial letter are debated; do not present this editorial sequence as a settled fact.",
+      "Do not place the Golden Octagon dedicated in 341 or identify modern Antakya ruins as the exact synod site.",
+      "The reference arrival predicate proves destinations; it does not prove carried inventory or coupled travel.",
       "skip all optional objectives and win at each difficulty",
       "complete all optionals at each difficulty without spending protected recovery stock",
       "save/load before and after every delivery, payment, optional reward and terminal latch",
