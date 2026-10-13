@@ -53,6 +53,16 @@ def audit_selections(policy, campaigns):
             if first['coreMechanic'] == second['coreMechanic'] == third['coreMechanic']:
                 require(bool(third.get('repeatCoreReason')), f"{cid}/{third['id']}: three consecutive identical cores without a reason")
         require(len({e['coreMechanic'] for e in episodes}) >= 4, f'{cid}: insufficient authored core variety')
+        by_id = {e['id']: e for e in episodes}
+        for constraint in campaign.get('chronologyConstraints', []):
+            earlier = by_id.get(constraint.get('before'))
+            later = by_id.get(constraint.get('after'))
+            require(
+                earlier is not None and later is not None
+                and earlier['order'] < later['order']
+                and bool(constraint.get('basis')),
+                f"{cid}: authored chronology constraint violated: {constraint.get('before')} -> {constraint.get('after')}",
+            )
         continuity = campaign['continuityContract']
         require(continuity['proceedWithoutPredecessor'] is True, f'{cid}: predecessor progress would gate play')
     require(total == policy['targetScenarioCount'], 'Total selected count differs from policy')

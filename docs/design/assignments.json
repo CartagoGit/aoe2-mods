@@ -348,17 +348,17 @@
           "actId": "act-2",
           "episodeIds": [
             "07-court-record-logistics-rome-ostia",
-            "08-disputed-correspondence-alexandria",
             "09-crossing-and-supply-adrianople",
             "10-land-and-strait-logistics-chrysopolis",
+            "08-disputed-correspondence-alexandria",
             "11-council-record-escort-antioch",
             "02-nicaea"
           ],
           "sliceIds": [
             "S12",
-            "S13",
             "S14",
             "S15",
+            "S13",
             "S16",
             "S4"
           ]
@@ -470,24 +470,24 @@
           "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
         },
         {
-          "episodeId": "08-disputed-correspondence-alexandria",
-          "order": 8,
-          "actId": "act-2",
-          "sliceId": "S13",
-          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
-        },
-        {
           "episodeId": "09-crossing-and-supply-adrianople",
-          "order": 9,
+          "order": 8,
           "actId": "act-2",
           "sliceId": "S14",
           "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
         },
         {
           "episodeId": "10-land-and-strait-logistics-chrysopolis",
-          "order": 10,
+          "order": 9,
           "actId": "act-2",
           "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-disputed-correspondence-alexandria",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S13",
           "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
         },
         {

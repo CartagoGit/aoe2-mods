@@ -39,7 +39,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 | Acto | Título fuente | Episodios en orden | Slices asignados |
 |---|---|---|---|
 | act-1 | Eagle Over the River | 1, 2, 3, 4, 5, 6 | S3, S7, S8, S9, S10, S11 |
-| act-2 | A Creed in Many Tongues | 7, 8, 9, 10, 11, 12 | S12, S13, S14, S15, S16, S4 |
+| act-2 | A Creed in Many Tongues | 7, 8, 9, 10, 11, 12 | S12, S14, S15, S13, S16, S4 |
 | act-3 | Stone and Succession | 13, 14, 15, 16, 17, 18, 19 | S17, S5, S18, S19, S20, S21, S22 |
 | act-4 | Councils Without Concord | 20, 21, 22, 23, 24, 25 | S23, S24, S25, S26, S27, S28 |
 | act-5 | The Weight of Orthodoxy | 26, 27, 28, 29 | S29, S30, S31, S32 |
@@ -156,48 +156,48 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
   - "Materializar únicamente el expediente aprobado imperial-church/07-court-record-logistics-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S13 — Episodio 8: Words over Alexandria
+### S14 — Episodio 8: The Maritsa Crossing
 - **Status**: pending
 - **DependsOn**: [S12]
-- **Files**: `staging/campaigns/imperial-church/scenarios/08-disputed-correspondence-alexandria`, `docs/qa/imperial-church/episodes/08-disputed-correspondence-alexandria`
-- **Gate**: e2e
-- **Act**: act-2
-- **ScenarioId**: 08-disputed-correspondence-alexandria
-- **Order**: 8
-- **HistoricalFrame**: 324–325 CE; geography=alexandria; core=disputed-correspondence
-- acceptance:
-  - "Materializar únicamente el expediente aprobado imperial-church/08-disputed-correspondence-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
-
-### S14 — Episodio 9: The Maritsa Crossing
-- **Status**: pending
-- **DependsOn**: [S13]
 - **Files**: `staging/campaigns/imperial-church/scenarios/09-crossing-and-supply-adrianople`, `docs/qa/imperial-church/episodes/09-crossing-and-supply-adrianople`
 - **Gate**: e2e
 - **Act**: act-2
 - **ScenarioId**: 09-crossing-and-supply-adrianople
-- **Order**: 9
+- **Order**: 8
 - **HistoricalFrame**: 3 July 324 CE, conventional; geography=adrianople; core=crossing-and-supply
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/09-crossing-and-supply-adrianople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S15 — Episodio 10: Across the Bright Shore
+### S15 — Episodio 9: Across the Bright Shore
 - **Status**: pending
 - **DependsOn**: [S14]
 - **Files**: `staging/campaigns/imperial-church/scenarios/10-land-and-strait-logistics-chrysopolis`, `docs/qa/imperial-church/episodes/10-land-and-strait-logistics-chrysopolis`
 - **Gate**: e2e
 - **Act**: act-2
 - **ScenarioId**: 10-land-and-strait-logistics-chrysopolis
-- **Order**: 10
+- **Order**: 9
 - **HistoricalFrame**: 18 September 324 CE, conventional; geography=chrysopolis; core=land-and-strait-logistics
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/10-land-and-strait-logistics-chrysopolis: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S16 — Episodio 11: Before the Lakeside Council
+### S13 — Episodio 10: Words over Alexandria
 - **Status**: pending
 - **DependsOn**: [S15]
+- **Files**: `staging/campaigns/imperial-church/scenarios/08-disputed-correspondence-alexandria`, `docs/qa/imperial-church/episodes/08-disputed-correspondence-alexandria`
+- **Gate**: e2e
+- **Act**: act-2
+- **ScenarioId**: 08-disputed-correspondence-alexandria
+- **Order**: 10
+- **HistoricalFrame**: 324–325 CE; geography=alexandria; core=disputed-correspondence
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/08-disputed-correspondence-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S16 — Episodio 11: Before the Lakeside Council
+- **Status**: pending
+- **DependsOn**: [S13]
 - **Files**: `staging/campaigns/imperial-church/scenarios/11-council-record-escort-antioch`, `docs/qa/imperial-church/episodes/11-council-record-escort-antioch`
 - **Gate**: e2e
 - **Act**: act-2

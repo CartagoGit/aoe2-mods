@@ -23322,8 +23322,8 @@
           "id": "next-episode",
           "key": "scenario.imperial-church.07-court-record-logistics-rome-ostia.odyssey.next-episode",
           "text": {
-            "en": "Continue with Words over Alexandria. This episode does not complete the campaign.",
-            "es-ES": "Continúa con Palabras sobre Alejandría. Este episodio no termina la campaña."
+            "en": "Continue with The Maritsa Crossing. This episode does not complete the campaign.",
+            "es-ES": "Continúa con El paso del Maritsa. Este episodio no termina la campaña."
           },
           "condition": "after persona-outro",
           "narrator": "none",
@@ -23331,10 +23331,10 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Continue with Words over Alexandria. This episode does not complete the campaign."
+              "Continue with The Maritsa Crossing. This episode does not complete the campaign."
             ],
             "es-ES": [
-              "Continúa con Palabras sobre Alejandría. Este episodio no termina la campaña."
+              "Continúa con El paso del Maritsa. Este episodio no termina la campaña."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
@@ -23471,9 +23471,9 @@
       },
       "episodeIds": [
         "07-court-record-logistics-rome-ostia",
-        "08-disputed-correspondence-alexandria",
         "09-crossing-and-supply-adrianople",
         "10-land-and-strait-logistics-chrysopolis",
+        "08-disputed-correspondence-alexandria",
         "11-council-record-escort-antioch",
         "02-nicaea"
       ],
@@ -24115,48 +24115,8 @@
       "existingContract": false
     },
     {
-      "id": "08-disputed-correspondence-alexandria",
-      "order": 8,
-      "actId": "act-2",
-      "title": {
-        "en": "Words over Alexandria",
-        "es-ES": "Palabras sobre Alejandría"
-      },
-      "date": "324–325 CE",
-      "geographyId": "alexandria",
-      "coreMechanic": "disputed-correspondence",
-      "historicalSelection": {
-        "corpusEventId": 43,
-        "sourceUrl": "https://www.newadvent.org/fathers/25021.htm",
-        "passage": "Eusebius, Life of Constantine II.64–73",
-        "qualification": "Relato de Eusebio presenta el conflicto como problema de unidad.",
-        "candidateEvent": "Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.",
-        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
-        "sourceConsultation": {
-          "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
-          "passage": "Eusebius VC II.61–64 checked for dispute background and imperial intervention.",
-          "limitations": "Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.",
-          "status": "consulted",
-          "supportedClaim": "Supports a dispute involving Arius and Alexander that drew imperial correspondence and wider church attention in Eusebius’ narrative. / Apoya que la disputa entre Arrio y Alejandro atrajo correspondencia imperial y atención eclesiástica más amplia en el relato de Eusebio.",
-          "consultationDate": "2026-10-12",
-          "coverageActuallyRead": "VC II.61–64 checked; whole book not read.",
-          "approval": "collection only; exact claim still requires architect and independent review"
-        }
-      },
-      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
-      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
-      "knowledgeBasis": {
-        "speaker": "imperial-clerk",
-        "proposedLifespan": "c.334–403",
-        "mode": "inherited family papers, not direct adult memory",
-        "noOmniscience": true
-      },
-      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
-      "existingContract": false
-    },
-    {
       "id": "09-crossing-and-supply-adrianople",
-      "order": 9,
+      "order": 8,
       "actId": "act-2",
       "title": {
         "en": "The Maritsa Crossing",
@@ -24196,7 +24156,7 @@
     },
     {
       "id": "10-land-and-strait-logistics-chrysopolis",
-      "order": 10,
+      "order": 9,
       "actId": "act-2",
       "title": {
         "en": "Across the Bright Shore",
@@ -24222,6 +24182,65 @@
           "coverageActuallyRead": "No exact battle locator found.",
           "approval": "collection only; exact claim still requires architect and independent review"
         }
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "inherited family papers, not direct adult memory",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "08-disputed-correspondence-alexandria",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "Words over Alexandria",
+        "es-ES": "Palabras sobre Alejandría"
+      },
+      "date": "324–325 CE",
+      "geographyId": "alexandria",
+      "coreMechanic": "disputed-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 43,
+        "sourceUrl": "https://www.newadvent.org/fathers/25021.htm",
+        "passage": "Eusebius, Life of Constantine II.64–73",
+        "qualification": "Relato de Eusebio presenta el conflicto como problema de unidad.",
+        "candidateEvent": "Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability",
+        "sourceConsultation": {
+          "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
+          "passage": "Eusebius VC II.61–64 checked for dispute background and imperial intervention.",
+          "limitations": "Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.",
+          "status": "consulted",
+          "supportedClaim": "Supports a dispute involving Arius and Alexander that drew imperial correspondence and wider church attention in Eusebius’ narrative. / Apoya que la disputa entre Arrio y Alejandro atrajo correspondencia imperial y atención eclesiástica más amplia en el relato de Eusebio.",
+          "consultationDate": "2026-10-12",
+          "coverageActuallyRead": "VC II.61–64 checked; whole book not read.",
+          "approval": "collection only; exact claim still requires architect and independent review"
+        },
+        "architectChronologyCorrection": {
+          "date": "2026-10-13",
+          "author": "gpt-6",
+          "claim": {
+            "en": "The letter transmitted by Eusebius is framed after the decisive victory and a Nicomedia visit, not as the cause of the324 battles. Its exact date remains unestablished by the text.",
+            "es-ES": "La carta transmitida por Eusebio se sitúa tras la victoria decisiva y una visita a Nicomedia, no como causa de las batallas de324. El texto no establece su fecha exacta."
+          },
+          "approval": "independent source approval pending"
+        },
+        "additionalConsultations": [
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
+            "passage": "VC II.61–73, especiallyII.67 andII.72 post-victory/Nicomedia framing andII.73 continued dispute",
+            "coverageActuallyRead": "Architect read the displayed narrative, transmitted letter and continuation. II.69 includes apparent editorial/markup corruption; no corrupted wording is adopted or quoted.",
+            "limitations": "Richardson1890 translation revised onNewAdvent; noGreek critical apparatus or exactletterdate. Eusebius is panegyrical; imperial characterization of the dispute as minor remains attributed, never the agnostic narrator’s verdict.",
+            "consultationDate": "2026-10-13",
+            "approval": "architect interpretation; independent approval pending"
+          }
+        ]
       },
       "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
       "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
@@ -29490,5 +29509,23 @@
         "fixedOutcome": "no decree enacted by player, compulsory conversion, manumission transaction or universal compliance score"
       }
     }
-  ]
+  ],
+  "chronologyConstraints": [
+    {
+      "before": "09-crossing-and-supply-adrianople",
+      "after": "10-land-and-strait-logistics-chrysopolis",
+      "basis": "Conventional324 military sequence: Adrianople/Hebrus before the final Bithynian engagement; exact days remain qualified."
+    },
+    {
+      "before": "10-land-and-strait-logistics-chrysopolis",
+      "after": "08-disputed-correspondence-alexandria",
+      "basis": "Eusebius VC II.67 andII.72 place the transmitted imperial letter in a post-victory/Nicomedia context. No exact date is given;324–325 remains a qualified frame before the proposed325 council sequence."
+    }
+  ],
+  "chronologyCorrection": {
+    "date": "2026-10-13",
+    "author": "gpt-6",
+    "reason": "Post-victory correspondence follows the324 military episodes; semantic episode IDs and assigned slice IDs remain stable. Exact letter day and pre-Nicaea Antioch source review pending.",
+    "approval": "architect ordering correction; independent approval pending"
+  }
 }

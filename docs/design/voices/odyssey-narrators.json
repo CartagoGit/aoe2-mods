@@ -844,23 +844,8 @@
           "completeDossierPlacementRequired": true
         },
         {
-          "scenarioId": "08-disputed-correspondence-alexandria",
-          "order": 8,
-          "actId": "act-2",
-          "historicalDate": "324–325 CE",
-          "geographyId": "alexandria",
-          "mode": "inherited-account",
-          "access": {
-            "en": "Inherited writings and transmitted accounts; no personal memory of the historical event.",
-            "es-ES": "Escritos heredados y relatos transmitidos; sin recuerdo personal del hecho histórico."
-          },
-          "historicalEyewitnessClaimAllowed": false,
-          "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
-        },
-        {
           "scenarioId": "09-crossing-and-supply-adrianople",
-          "order": 9,
+          "order": 8,
           "actId": "act-2",
           "historicalDate": "3 July 324 CE, conventional",
           "geographyId": "adrianople",
@@ -875,10 +860,25 @@
         },
         {
           "scenarioId": "10-land-and-strait-logistics-chrysopolis",
-          "order": 10,
+          "order": 9,
           "actId": "act-2",
           "historicalDate": "18 September 324 CE, conventional",
           "geographyId": "chrysopolis",
+          "mode": "inherited-account",
+          "access": {
+            "en": "Inherited writings and transmitted accounts; no personal memory of the historical event.",
+            "es-ES": "Escritos heredados y relatos transmitidos; sin recuerdo personal del hecho histórico."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
+          "scenarioId": "08-disputed-correspondence-alexandria",
+          "order": 10,
+          "actId": "act-2",
+          "historicalDate": "324–325 CE",
+          "geographyId": "alexandria",
           "mode": "inherited-account",
           "access": {
             "en": "Inherited writings and transmitted accounts; no personal memory of the historical event.",

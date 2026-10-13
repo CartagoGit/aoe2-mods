@@ -13,6 +13,22 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_authored_chronology_rejects_post_victory_correspondence_before_war(self):
+        helper = runpy.run_path(str(ROOT / 'tools/design/odyssey_catalog.helper.py'))
+        policy, campaigns = helper['odyssey_catalog']()
+        self.assertEqual(helper['audit_selections'](policy, campaigns), [])
+        imperial = next(c for c in campaigns if c['campaignId'] == 'imperial-church')
+        by_id = {e['id']: e for e in imperial['episodeSelection']}
+        before = by_id['10-land-and-strait-logistics-chrysopolis']
+        after = by_id['08-disputed-correspondence-alexandria']
+        before['order'], after['order'] = after['order'], before['order']
+        imperial['episodeSelection'].sort(key=lambda e: e['order'])
+        self.assertTrue(any('chronology constraint violated' in e
+                            for e in helper['audit_selections'](policy, campaigns)))
+        imperial['chronologyConstraints'][0]['before'] = 'absent'
+        self.assertTrue(any('absent ->' in e
+                            for e in helper['audit_selections'](policy, campaigns)))
+
     def imperial_draft(self, order=1):
         return copy.deepcopy(next(e for e in self.odysseys[1]["episodes"] if e["order"] == order))
 
