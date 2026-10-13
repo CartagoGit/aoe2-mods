@@ -132,6 +132,8 @@ def verify(root=ROOT, catalogue=None):
         odysseys = [read(f'docs/design/odysseys/{row["id"]}.json') for row in policy['campaigns']]
         audit_assignments = runpy.run_path(str(ROOT / 'tools/design/odyssey_assignments.validator.py'))['audit_assignments']
         errors.extend(audit_assignments(root, odysseys, assignment_document))
+        audit_narrators = runpy.run_path(str(ROOT / 'tools/design/odyssey_narrators.validator.py'))['audit_narrators']
+        errors.extend(audit_narrators(read('docs/design/voices/odyssey-narrators.json'), odysseys))
     return errors, {'campaigns':len(campaigns), 'historicalScenarios':sum(len(c['scenarios']) for c in campaigns), 'technicalScenarios':len(data['pilots']), 'historicalScreens':len(keys), 'regions':len(profiles), 'sources':len(sources), 'downloadedReferences':len(manifest['assets'])}
 
 

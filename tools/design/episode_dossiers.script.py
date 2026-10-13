@@ -321,6 +321,7 @@ def run(check=False):
                 episode["mapPlan"]["asset"], diagram(episode, geographic_layers), check
             )
         campaign["episodes"] = episodes
+        campaign["editorialContract"]["authoredDossierCount"] = len(episodes)
         campaign["status"] = (
             "explicit episode dossiers authored; independent approval and remaining episodes pending"
         )

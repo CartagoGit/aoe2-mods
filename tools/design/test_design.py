@@ -12,6 +12,34 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_expanded_persona_cannot_change_identity_or_become_historical_evidence(self):
+        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
+        voices["narrators"][0]["id"] = "historical-eye-witness"
+        voices["narrators"][0]["episodeKnowledgePlan"][0]["biographyIsEvidence"] = True
+        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        errors = audit(voices, self.odysseys)
+        self.assertTrue(any("identity differs" in error for error in errors))
+        self.assertTrue(any("became historical witness evidence" in error for error in errors))
+
+    def test_expanded_persona_rejects_wrong_lifespan_and_missing_emotional_act(self):
+        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
+        voices["narrators"][0]["deathYearApprox"] = 200
+        voices["narrators"][0]["fiveActEmotionalArc"].pop()
+        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        errors = audit(voices, self.odysseys)
+        self.assertTrue(any("invalid narrator lifespan" in error for error in errors))
+        self.assertTrue(any("five ordered acts" in error for error in errors))
+
+    def test_marcus_cannot_inherit_legacy_eyewitness_or_mismatched_episode(self):
+        voices = json.loads((ROOT / "docs/design/voices/odyssey-narrators.json").read_text())
+        marcus = next(row for row in voices["narrators"] if row["campaignId"] == "imperial-church")
+        marcus["episodeKnowledgePlan"][0]["mode"] = "fictional-local-life-plus-received-reports"
+        marcus["episodeKnowledgePlan"][0]["scenarioId"] = "some-other-episode"
+        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_narrators.validator.py"))["audit_narrators"]
+        errors = audit(voices, self.odysseys)
+        self.assertTrue(any("Marcus cannot remember" in error for error in errors))
+        self.assertTrue(any("knowledge plan scenarioId drift" in error for error in errors))
+
     def test_odyssey_assignments_reject_shared_slice_and_early_promotion(self):
         assignments = json.loads((ROOT / "docs/design/assignments.json").read_text())
         invalid = copy.deepcopy(assignments)

@@ -6,6 +6,8 @@
 
 ## Campaign voice and continuity
 
+[Expanded narrator bible and per-episode knowledge framing](../../design/voices/jewish-tradition.md) — fictional biography; independent approval pending.
+
 ```json
 {
   "editorial": {

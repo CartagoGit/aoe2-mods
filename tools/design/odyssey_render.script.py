@@ -3,6 +3,7 @@
 import argparse
 import importlib.util
 import json
+import runpy
 from pathlib import Path
 
 helper_path = Path(__file__).with_name("odyssey_catalog.helper.py")
@@ -18,6 +19,10 @@ def cell(value):
 def render(check=False):
     policy, campaigns = catalog.odyssey_catalog()
     failures = catalog.audit_selections(policy, campaigns)
+    voices = catalog.load_json("docs/design/voices/odyssey-narrators.json")
+    audit_narrators = runpy.run_path(str(helper_path.with_name("odyssey_narrators.validator.py")))["audit_narrators"]
+    render_narrator = runpy.run_path(str(helper_path.with_name("odyssey_narrators.renderer.py")))["render_narrator"]
+    failures.extend(audit_narrators(voices, campaigns))
     if failures:
         raise ValueError("\n".join(failures))
     outputs = {}
@@ -33,6 +38,8 @@ def render(check=False):
     ]
     for campaign in campaigns:
         cid = campaign["campaignId"]
+        narrator = next(row for row in voices["narrators"] if row["campaignId"] == cid)
+        outputs[f"docs/design/voices/{cid}.md"] = render_narrator(campaign, narrator, voices["commonNarrator"])
         editorial = campaign["editorialContract"]
         episodes = campaign["episodeSelection"]
         audited = sum(
@@ -57,6 +64,8 @@ def render(check=False):
             "**Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.",
             "",
             "## Campaign voice and continuity",
+            "",
+            f"[Expanded narrator bible and per-episode knowledge framing](../../design/voices/{cid}.md) — fictional biography; independent approval pending.",
             "",
             "```json",
             json.dumps(
