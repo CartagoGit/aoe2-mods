@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 5
+    "authoredDossierCount": 7
   },
   "continuity": {
     "recommendedPrevious": [
@@ -451,11 +451,29 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/06-finite-field-withdrawal-cibalae/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Zosimus narrates Constantine’s victory near Cibalae and Licinius’ subsequent withdrawal toward Sirmium. The exact year314/316 and battlefield footprint remain disputed or unverified; the local auxiliary convoy does not represent the emperor’s entire retreat.
+
+ES: Zósimo narra la victoria de Constantino junto a Cibalae y la retirada posterior de Licinio hacia Sirmio. El año exacto314/316 y la huella del campo siguen discutidos o sin verificar; el convoy auxiliar local no representa toda la retirada del emperador.
+
 Source consultation pending: No accessible primary/academic passage opened for Cibalae in this pass; dossier relies on Britannica.
 
 Limit: Dating 314 vs 316 is disputed; Britannica URL not consulted. Do not present either year as settled here.
 
 Status: unavailable
+
+[Additional consulted passage](https://www.tertullian.org/fathers/zosimus02_book2.htm): Zosimus New History II, displayed Cibalis battle/retreat paragraphs (II.18–20 locator to compare)
+
+Limit: Later hostile narrative; displayed passage does not settle314/316 or exact317 settlement date. No modern battlefield coordinate or high mountain inferred.
+
+[Additional consulted passage](https://grad-vinkovci.hr/geoprometni-polozaj): Municipal geography/elevation paragraph
+
+Limit: Modern regional control only, not ancient wetlands, road or battlefield survey.
+
+[Additional consulted passage](https://grad-vinkovci.hr/povijest-grada): Municipal history, Roman Cibalae paragraph
+
+Limit: Official municipal summary does not resolve scholarly314/316 dispute; unrelated later monastery chronology not adopted.
 
 ### 7. A Day beneath the Law
 
@@ -469,6 +487,12 @@ Knowledge: inherited family papers, not direct adult memory. one local map; dist
 
 Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
 
+[Authored episode dossier](episodes/07-court-record-logistics-rome-ostia/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: CJ3.12.2 preserves7March321 urban rest and the rural agricultural exception. CTh2.8.1 separately permits emancipation/manumission and their acts, published at Caralis3July321. Norms and later interpretation do not prove universal enforcement or mandatory conversion.
+
+ES: CJ3.12.2 conserva descanso urbano y excepción agrícola rural del7de marzo de321. CTh2.8.1 permite por separado emancipación/manumisión y sus actas, publicado en Caralis el3de julio de321. Las normas y la interpretación posterior no prueban aplicación universal ni conversión obligatoria.
+
 [Corrected primary passage](https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm): Codex Justinianus 3.12.2 (3.12.3 in older numbering), Constantine to Helpidius. Later codification preserves a 321 constitution. City rest and rural agricultural exception differ from the June permission for manumission in CTh 2.8.1. No uniform compliance or mandated conversion follows from the text.
 
 [Consulted source](https://www.thelatinlibrary.com/codtheod.html): Codex Theodosianus 2.8.1 (Constantine to Elpidius; Latin transcription, 3 July 321).
@@ -476,6 +500,14 @@ Dossier status: selection and mechanic authored; full world/objective/balance/sc
 Limit: The cited law does not contain the agricultural-work exception; that appears in a different legal context. Replace or remove that claim. Website is a transcription rather than critical edition.
 
 Status: disputed
+
+[Additional consulted passage](https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm): CJ3.12.2, Constantine to Helpidius, datedPP VNONMART321
+
+Limit: Later codification/transcription; no321 Rome enactment venue or uniform compliance. Number3.12.3 in some older references must be matched by text.
+
+[Additional consulted passage](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/CTh02.html): CTh2.8.1 including subscription and separately labelled Interpretatio
+
+Limit: This is not the agricultural-exception text. Caralis is the displayed publication place; local Rome gameplay is fiction. Later interpretative text is separate, not an additional contemporary decree.
 
 ### 8. Words over Alexandria
 

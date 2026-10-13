@@ -365,6 +365,71 @@
         "natural-earth"
       ],
       "approval": "research candidate; independent ancient-footprint, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "cibalae",
+      "name": "Cibalae/Vinkovci and local north-Bosut lowland",
+      "bbox": [
+        18.74,
+        45.275,
+        18.85,
+        45.34
+      ],
+      "coordinateStatus": "architect approximate regional frame; all local assembly/field courts fictional, exact battlefield unverified",
+      "representativePoint": [
+        18.8045248,
+        45.2883771
+      ],
+      "representativePointUsage": "modern candidate OSM place anchor, not ancient battlefield or deployment",
+      "sources": [
+        {
+          "url": "https://grad-vinkovci.hr/geoprometni-polozaj",
+          "locator": "Bosut region between Danube/Sava; modern elevation78–125m",
+          "consulted": "2026-10-13 architect"
+        },
+        {
+          "url": "https://grad-vinkovci.hr/povijest-grada",
+          "locator": "Roman Cibalae identification; municipal314 date does not resolve dispute",
+          "consulted": "2026-10-13 architect"
+        },
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Cibalis battle/retreat paragraphs; exact modern footprint not identified",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            18.747,
+            45.285
+          ],
+          [
+            18.774,
+            45.28
+          ],
+          [
+            18.8,
+            45.284
+          ],
+          [
+            18.825,
+            45.283
+          ],
+          [
+            18.847,
+            45.278
+          ]
+        ],
+        "certainty": "architect schematic Bosut regional control; not measured ancient banks, marshes or battle footprint",
+        "renderAs": "river-line"
+      },
+      "terrain": "local lowland north-bank courts; no giant mountain asserted from late literary description",
+      "water": "Bosut south of mandatory local routes; ancient marshes, channel and flood zones unverified",
+      "hills": "modern municipal region78–125m; exact local gradients and correspondence with Zosimus pending",
+      "roads": "proposed local land branches; full Licinius route toward Sirmium remains off-map",
+      "anachronisms": "no modern railways, channelization or later façades; no literal modern street grid",
+      "approval": "research candidate; independent battlefield, ancient-bank, DEM and pathfinding checks pending"
     }
   ]
 }
