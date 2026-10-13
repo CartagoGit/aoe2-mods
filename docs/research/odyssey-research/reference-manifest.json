@@ -425,6 +425,24 @@
       "productionApproved": false,
       "attributionRequired": true,
       "shareAlikeRequired": true
+    },
+    {
+      "id": "roman-jerusalem-schematic",
+      "path": "docs/research/odyssey-research/geography/roman-jerusalem-schematic.svg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Roman_Jerusalem.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Roman_Jerusalem.svg",
+      "author": "Maajid Shafi (Commons user SPQR10), own work, 30 September 2020",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-13",
+      "sha256": "12032037b27afd973683ae9e9f8b618073c00327ce2f705d8e1aac3db2c2494a",
+      "bytes": 17356,
+      "modifications": "None; original SVG bytes retained. Temporary PNG rendering is only a review preview.",
+      "usage": "Research only: modern basic schematic of Hadrianic Aelia Capitolina, not a surveyed 326–330 plan or authoritative temple identification.",
+      "anachronismsAndLimits": "Its Roman street and landmark labels require archaeological phase checking. No ancient parcel, relief, cult attribution or later Christian complex is certified.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
     }
   ]
 }
