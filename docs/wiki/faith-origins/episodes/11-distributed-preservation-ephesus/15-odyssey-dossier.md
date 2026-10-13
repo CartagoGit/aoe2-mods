@@ -174,6 +174,16 @@ ES: Elabora un registro local de conservación a partir de las cuatro notas reco
       ],
       "outputEntities": [
         "faith-origins.11-distributed-preservation-ephesus.local-preservation-register-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.11-distributed-preservation-ephesus.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 80
+          },
+          "newDebit": false
+        }
       ]
     },
     {

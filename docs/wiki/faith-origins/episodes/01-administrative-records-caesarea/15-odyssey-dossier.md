@@ -126,6 +126,17 @@ ES: Financia el patio de copias con 40 de madera y 20 de oro y prepara un regist
       ],
       "outputEntities": [
         "faith-origins.01-administrative-records-caesarea.register-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.01-administrative-records-caesarea.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 40,
+            "gold": 20
+          },
+          "newDebit": false
+        }
       ]
     }
   ],

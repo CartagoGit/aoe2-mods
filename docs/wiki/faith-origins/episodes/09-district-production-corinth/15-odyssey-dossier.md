@@ -131,6 +131,17 @@ ES: Paga 100 de madera y 50 de oro en el taller y transforma una sola vez los tr
         "faith-origins.09-district-production-corinth.finished-bundles-2",
         "faith-origins.09-district-production-corinth.finished-bundles-3",
         "faith-origins.09-district-production-corinth.finished-bundles-4"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.09-district-production-corinth.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 100,
+            "gold": 50
+          },
+          "newDebit": false
+        }
       ]
     }
   ],

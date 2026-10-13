@@ -139,6 +139,16 @@ ES: Paga 40 de madera por un aviso ficticio de salida elaborado a partir de las 
       ],
       "outputEntities": [
         "faith-origins.10-copy-and-relay-corinth.dispatch-notice-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.10-copy-and-relay-corinth.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 40
+          },
+          "newDebit": false
+        }
       ]
     }
   ],

@@ -125,6 +125,7 @@ def verify(root=ROOT, catalogue=None):
     if odyssey_manifest.is_file():
         errors.extend(audit_references(root, json.loads(odyssey_manifest.read_text(encoding='utf-8'))))
     assignment_document = read('docs/design/assignments.json')
+    expanded_counts = {}
     assignments = assignment_document['assignments']
     check({a['campaignId'] for a in assignments} == ids, 'Missing official proposal per campaign')
     if assignment_document.get('scope', '').startswith('273-episode'):
@@ -134,7 +135,16 @@ def verify(root=ROOT, catalogue=None):
         errors.extend(audit_assignments(root, odysseys, assignment_document))
         audit_narrators = runpy.run_path(str(ROOT / 'tools/design/odyssey_narrators.validator.py'))['audit_narrators']
         errors.extend(audit_narrators(read('docs/design/voices/odyssey-narrators.json'), odysseys))
-    return errors, {'campaigns':len(campaigns), 'historicalScenarios':sum(len(c['scenarios']) for c in campaigns), 'technicalScenarios':len(data['pilots']), 'historicalScreens':len(keys), 'regions':len(profiles), 'sources':len(sources), 'downloadedReferences':len(manifest['assets'])}
+        expanded_counts = {
+            'expandedSelectedEpisodes': sum(len(c['episodeSelection']) for c in odysseys),
+            'expandedDraftDossiers': sum(len(c.get('episodes', [])) for c in odysseys),
+            'expandedApprovedDossiers': sum(e.get('contractStatus') == 'approved-complete-dossier' for c in odysseys for e in c['episodeSelection']),
+            'expandedDraftScreens': sum(len(e['screens']) for c in odysseys for e in c.get('episodes', [])),
+            'expandedOptionalDrafts': sum(len(e['secondaryObjectives']) for c in odysseys for e in c.get('episodes', [])),
+            'expandedNarratorDrafts': len(read('docs/design/voices/odyssey-narrators.json')['narrators']),
+            'additionalDownloadedReferences': len(read('docs/research/odyssey-research/reference-manifest.json')['assets']),
+        }
+    return errors, {'campaigns':len(campaigns), 'historicalScenarios':sum(len(c['scenarios']) for c in campaigns), 'technicalScenarios':len(data['pilots']), 'historicalScreens':len(keys), 'regions':len(profiles), 'sources':len(sources), 'downloadedReferences':len(manifest['assets']), **expanded_counts}
 
 
 if __name__ == '__main__':

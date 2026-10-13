@@ -191,6 +191,17 @@ ES: Lleva los cuatro arcones al refugio, paga una sola vez 300 de alimento y 80 
       "outputEntities": [
         "faith-origins.15-evacuation-and-recovery-rome-ostia.local-departure-notes-1",
         "faith-origins.15-evacuation-and-recovery-rome-ostia.local-departure-notes-2"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.15-evacuation-and-recovery-rome-ostia.o2.req-2.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "food": 300,
+            "wood": 80
+          },
+          "newDebit": false
+        }
       ]
     }
   ],

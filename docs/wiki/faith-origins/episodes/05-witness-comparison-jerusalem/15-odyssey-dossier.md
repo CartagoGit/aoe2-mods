@@ -124,6 +124,16 @@ ES: Financia la comparación con 30 de madera y prepara un resumen matizado usan
       ],
       "outputEntities": [
         "faith-origins.05-witness-comparison-jerusalem.qualified-summary-1"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.05-witness-comparison-jerusalem.o2.req-1.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "wood": 30
+          },
+          "newDebit": false
+        }
       ]
     }
   ],

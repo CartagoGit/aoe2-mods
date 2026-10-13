@@ -199,6 +199,16 @@ ES: Elabora tres notas ficticias de recepción a partir de las cajas recogidas y
         "faith-origins.12-bounded-community-aid-ephesus.local-receiving-notes-1",
         "faith-origins.12-bounded-community-aid-ephesus.local-receiving-notes-2",
         "faith-origins.12-bounded-community-aid-ephesus.local-receiving-notes-3"
+      ],
+      "requiredPaymentReceipts": [
+        {
+          "flag": "faith-origins.12-bounded-community-aid-ephesus.o2.req-2.paid",
+          "fromObjective": "o2",
+          "amounts": {
+            "food": 300
+          },
+          "newDebit": false
+        }
       ]
     },
     {

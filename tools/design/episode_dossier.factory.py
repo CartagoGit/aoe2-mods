@@ -88,6 +88,13 @@ def world_and_objectives(cid, selection, authored, hubs):
                 req[field] = [entity_id for key in inputs for entity_id in groups[key]]
             if "outputGroup" in req:
                 req["outputEntities"] = groups[req.pop("outputGroup")]
+            if req["kind"] == "derived-token":
+                refs = req.pop("requiredPaymentRequirements", None)
+                if refs is None:
+                    raise ValueError(
+                        "Derivation needs an explicit payment policy; [] means authored unfunded derivation"
+                    )
+                req["_paymentRefs"] = refs
             if req["kind"] == "resource-transaction":
                 req["receivingZones"] = [
                     destinations[hub] for hub in req.pop("receivingHubs")
@@ -124,6 +131,42 @@ def world_and_objectives(cid, selection, authored, hubs):
             objectives[-1]["predicate"]["exportedLedgers"] = authored[
                 "exportedLedgers"
             ][f"o{order}"]
+    for objective in objectives:
+        for requirement in objective["predicate"]["requirements"]:
+            if requirement["kind"] != "derived-token":
+                continue
+            references = requirement.pop("_paymentRefs")
+            receipts = []
+            for reference in references:
+                producer = next(
+                    (o for o in objectives if o["id"] == reference["objective"]), None
+                )
+                payment = (
+                    next(
+                        (
+                            r
+                            for r in producer["predicate"]["requirements"]
+                            if r["id"] == reference["requirement"]
+                        ),
+                        None,
+                    )
+                    if producer
+                    else None
+                )
+                if not payment or payment["kind"] != "resource-transaction":
+                    raise ValueError(
+                        "Derived payment reference must name a resource transaction"
+                    )
+                receipts.append(
+                    {
+                        "flag": payment["paidFlag"],
+                        "fromObjective": producer["id"],
+                        "amounts": copy.deepcopy(payment["amounts"]),
+                        "newDebit": False,
+                    }
+                )
+            if receipts:
+                requirement["requiredPaymentReceipts"] = receipts
     return {
         "version": 1,
         "classification": "authored design specification; not native implementation",

@@ -176,6 +176,35 @@ def audit_dossier(episode):
                     set(req["inputEntities"]) <= collected,
                     f"{context}: derivation without input collection",
                 )
+                for receipt in req.get("requiredPaymentReceipts", []):
+                    producers = [
+                        (index, source, payment)
+                        for index, source in enumerate(episode["objectivePlan"])
+                        for payment in source["predicate"]["requirements"]
+                        if payment["kind"] == "resource-transaction"
+                        and payment["paidFlag"] == receipt["flag"]
+                    ]
+                    check(
+                        len(producers) == 1,
+                        f"{context}: derived payment needs one producer",
+                    )
+                    if len(producers) != 1:
+                        continue
+                    source_index, source, payment = producers[0]
+                    check(
+                        source_index <= position,
+                        f"{context}: derived payment comes from a future objective",
+                    )
+                    check(
+                        source["id"] == receipt["fromObjective"]
+                        and receipt.get("newDebit") is False
+                        and all(
+                            payment["amounts"].get(resource, 0)
+                            == receipt["amounts"].get(resource, 0)
+                            for resource in ("food", "wood", "gold", "stone")
+                        ),
+                        f"{context}: derived payment receipt amount or owner drift",
+                    )
             else:
                 check(False, f"{context}: unsupported dossier predicate {req['kind']}")
     for group in episode["worldContract"]["survivorGroups"]:
