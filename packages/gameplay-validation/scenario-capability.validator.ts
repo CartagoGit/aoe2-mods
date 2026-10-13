@@ -3,7 +3,10 @@ import type {
   CapabilityProfileV2,
   MainObjective,
 } from "../schemas/scenario-capability.schema";
-import { paymentReceiptMatches } from "./payment-receipt.helper";
+import {
+  paymentReceiptMatches,
+  paymentReceiptPrecedesObjective,
+} from "./payment-receipt.helper";
 
 const resourceNames = ["food", "wood", "gold", "stone"] as const;
 export function validateScenarioCapability(
@@ -539,6 +542,26 @@ export function validateScenarioCapability(
               reqContext,
               "Cada salida derivada necesita un ID único y persistente",
             );
+          for (const receipt of req.requiredPaymentReceipts ?? []) {
+            if (!paymentReceiptMatches(profile, receipt))
+              add(
+                "capability.derived-payment",
+                reqContext,
+                "La fabricación exige un recibo con productor único e importe exacto",
+              );
+            if (
+              !paymentReceiptPrecedesObjective(
+                profile,
+                receipt.fromObjective,
+                objective.id,
+              )
+            )
+              add(
+                "capability.derived-payment-order",
+                reqContext,
+                "El pago de fabricación debe pertenecer al mismo objetivo o a un predecesor obligatorio",
+              );
+          }
           break;
         case "ordered-departure":
           entityRefs.push(...req.departingEntities);

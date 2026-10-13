@@ -1,3 +1,7 @@
+import {
+  paymentReceiptMatches,
+  paymentReceiptPrecedesObjective,
+} from "../gameplay-validation/payment-receipt.helper";
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import type { CapabilityAction } from "./capability-action.model";
 import {
@@ -123,9 +127,23 @@ export function reduceCapabilityState(
     if (
       !req ||
       req.kind !== "derived-token" ||
+      !isActive(profile, state, action.objectiveId) ||
       req.inputEntities.some(
-        (id) => !state.observedEntityStates[id]?.includes("collected"),
-      )
+        (id) =>
+          !state.observedEntityStates[id]?.includes("collected") ||
+          state.entityStates[id] === "destroyed",
+      ) ||
+      (req.requiredPaymentReceipts ?? []).some(
+        (receipt) =>
+          !paymentReceiptMatches(profile, receipt) ||
+          !paymentReceiptPrecedesObjective(
+            profile,
+            receipt.fromObjective,
+            action.objectiveId,
+          ) ||
+          !state.paidReceipts.includes(receipt.flag),
+      ) ||
+      req.outputEntities.some((id) => state.entityStates[id] === "destroyed")
     )
       return state;
     let requirementFacts = state.requirementFacts;
