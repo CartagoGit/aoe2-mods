@@ -24,6 +24,19 @@ ES: Los participantes, registros, cantidades y rutas jugables son una reconstruc
 {
   "sourcePassages": [
     {
+      "classification": "architect interpretation; independent historical approval pending",
+      "selectedClaim": {
+        "en": "A council met at Tyre in 335 under imperial direction. Eusebius praises the imperial demand for settlement; Athanasius later contests the proceedings and transmits protests. These are interested accounts, not a neutral transcript. The Jerusalem dedication is a separate event and city. No particular council building or waterfront venue is established here.",
+        "es-ES": "En 335 se reunió un concilio en Tiro por dirección imperial. Eusebio elogia la exigencia imperial de arreglo; Atanasio impugna después los procedimientos y transmite protestas. Son relatos interesados, no una transcripción neutral. La dedicación de Jerusalén es otro acontecimiento y otra ciudad. Aquí no se acredita un edificio conciliar concreto ni una sede junto al agua."
+      },
+      "architectCorrection": {
+        "date": "2026-10-14",
+        "author": "gpt-6",
+        "approval": "independent review pending",
+        "reason": "Prior supportedClaim/sourceConsultation overstates naming Athanasius in VC41–47. Eusebius frames disputes and imperial settlement; Athanasius supplies a participant counter-account. Neither narrative is a neutral transcript. Use selectedClaim and additionalConsultations; old candidate remains provenance."
+      }
+    },
+    {
       "consultedUrl": "https://www.newadvent.org/fathers/25024.htm",
       "passage": "Eusebius VC IV.41–47 checked: Tyre proceedings and Jerusalem dedication (IV.47).",
       "limitations": "The source is hostile/panegyrical toward Athanasius; separate the Tyre council from Jerusalem dedication. Chronology is not precise enough to imply immediate sequence without qualification.",
