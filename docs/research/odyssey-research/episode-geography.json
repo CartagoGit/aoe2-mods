@@ -583,6 +583,109 @@
       "roads": "localEuropean support andAsian receiving circuits; no full imperial crossing orChalcedonbattlefield reconstruction",
       "anachronisms": "noBosphorusbridge,Marmaray,Ottomanmosque,laterSkutarionpalace orJustinianicharbor",
       "approval": "research candidate; ancientcoast,harborphase,DEM and realwater/land navigation pending"
+    },
+    {
+      "id": "nicomedia",
+      "name": "Local Nicomedia inland north-gulf approaches",
+      "bbox": [
+        29.905,
+        40.758,
+        29.995,
+        40.822
+      ],
+      "coordinatesStatus": "approximate modern anchor and fictional local courts; ancient city footprint unverified",
+      "north": "top",
+      "terrain": "Inland north-gulf urban slopes with ordinary gardens; graded hill approaches needed",
+      "water": "Golfo de Nicomedia al oeste; escorrentías locales sin inventar un gran río.",
+      "hills": "Laderas norte/sur; paso principal longitudinal.",
+      "roads": "Nicomedia sobre eje costero; ramal interior separado de costa.",
+      "anachronisms": "Sin autovías ni costa industrial.",
+      "sourceIds": [
+        "pliny",
+        "byzantium"
+      ],
+      "referenceAsset": "nicomedia-modern-locator",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Nicomedia regional anchor",
+          "lonLat": [
+            29.924,
+            40.766
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "pliny",
+        "byzantium"
+      ],
+      "inheritedRegionProfile": "bithynia",
+      "coordinateStatus": "architect local framing inside existing Bithynia; fiction courts and approximate modern anchor, not surveyed ancient footprints",
+      "sources": [
+        {
+          "url": "https://www.classics.ox.ac.uk/node/4988256",
+          "locator": "ARCON project introduction identifies Nicomedia/modern Izmit and mapping in progress; no exact ancient plan consulted",
+          "consulted": "2026-10-14"
+        }
+      ],
+      "waterControlStatus": "No ancient shoreline mask; modern coast is a separate coarse clipped control, local streams not surveyed",
+      "approval": "architect regional candidate; independent archaeology, DEM/land mask and native navigation pending"
+    },
+    {
+      "id": "tyre",
+      "name": "Tyre former-island and eastern-mainland regional context",
+      "bbox": [
+        35.175,
+        33.24,
+        35.252,
+        33.3
+      ],
+      "north": "top",
+      "coordinatesStatus": "modern regional context only; fictional local mainland courts, not a certified335 urban plan",
+      "terrain": "Low coastal tombolo context west, eastern mainland ordinary courts and inland relief requiring dated controls",
+      "water": "Mediterranean west; island/tombolo and submerged harbor phases vary, no exact335 shoreline mask",
+      "hills": "Inland eastern grades require DEM and phase review",
+      "roads": "Proposed eastern mainland circuits only, no required island/causeway crossing",
+      "anachronisms": "No modern park boundary, medieval fortification or unphased later harbor/hippodrome transplanted",
+      "sourceIds": [],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "modern-property-anchor",
+          "name": "UNESCO modern Tyre regional point, not council venue",
+          "lonLat": [
+            35.195833,
+            33.269167
+          ],
+          "certainty": "modern broad locator only; exact synod venue unknown"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "No surveyed335 water polygon or local stream control",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth"
+      ],
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/299/",
+          "locator": "modern regional/property description; ancient council address unestablished"
+        },
+        {
+          "url": "https://doi.org/10.1073/pnas.0611325104",
+          "locator": "Marriner etal2007 geoarchaeology; fig6 contrasts332BCE/2000CE, not335"
+        }
+      ],
+      "approval": "architect regional candidate; independent archaeology, land mask, relief and native navigation pending"
     }
   ]
 }

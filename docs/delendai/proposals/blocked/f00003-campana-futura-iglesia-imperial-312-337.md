@@ -256,7 +256,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Act**: act-3
 - **ScenarioId**: 15-long-distance-dispatch-nicomedia
 - **Order**: 15
-- **HistoricalFrame**: c. 332–333 CE; destination off-map; geography=nicomedia; core=long-distance-dispatch
+- **HistoricalFrame**: Undated letter within 324–337 CE; retrospective local interlude after 330; geography=nicomedia; core=long-distance-dispatch
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/15-long-distance-dispatch-nicomedia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."

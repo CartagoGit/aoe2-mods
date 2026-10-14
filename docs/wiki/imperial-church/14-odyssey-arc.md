@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 14
+    "authoredDossierCount": 16
   },
   "continuity": {
     "recommendedPrevious": [
@@ -175,7 +175,7 @@ Historical year band: [326, 337]. Patrocinio y capital; incertidumbres privadas 
 |---|---|---|---|---|
 | 13 / 13-finite-works-logistics-jerusalem | Stone above the Old City / Piedra sobre la ciudad antigua | 326–330 CE; individual works dates qualified | jerusalem | finite-works-logistics |
 | 14 / 03-new-capital | A City beneath a New Sky / Una ciudad bajo un cielo nuevo | 11 May 330 CE; fictional works approach before dedication | constantinople | urban-logistics |
-| 15 / 15-long-distance-dispatch-nicomedia | A Letter beyond the Frontier / Una carta más allá de la frontera | c. 332–333 CE; destination off-map | nicomedia | long-distance-dispatch |
+| 15 / 15-long-distance-dispatch-nicomedia | A Letter beyond the Frontier / Una carta más allá de la frontera | Undated letter within 324–337 CE; retrospective local interlude after 330 | nicomedia | long-distance-dispatch |
 | 16 / 16-witness-record-comparison-tyre | The Council on the Shore / El concilio en la costa | 335 CE; Tyre council focus | tyre | witness-record-comparison |
 | 17 / 17-rumour-and-source-investigation-constantinople | The Empty Appointment / La cita vacía | 336 CE | constantinople | rumour-and-source-investigation |
 | 18 / 18-administrative-transition-nicomedia | The Court without Its Emperor / La corte sin su emperador | 22 May 337 CE | nicomedia | administrative-transition |
@@ -763,13 +763,31 @@ Eusebio presenta al emperador como protector universal; sesgo panegírico.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/15-long-distance-dispatch-nicomedia/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Eusebius transmits an imperial letter about Christians under the Persian king. Its date, circumstances and independent attestation remain debated; a 324–337 interval is a modern scholarly frame, with an earlier date argued more likely. Neither actual Persian receipt/effect nor a Nicomedia dispatch site is certified here.
+
+ES: Eusebio transmite una carta imperial sobre cristianos bajo el rey persa. Su fecha, circunstancias y testimonio independiente siguen discutidos; el intervalo 324–337 es un marco académico moderno, con una fecha temprana defendida como más probable. Aquí no se acredita recepción o efecto real en Persia ni un lugar de despacho en Nicomedia.
 
 [Consulted source](https://www.newadvent.org/fathers/25024.htm): Eusebius VC IV.8–13 checked: embassy and Constantine’s letter to the Persian king.
 
 Limit: Eusebius does not establish the dossier’s c.332–333 date in this passage; identify the recipient as Sapor/Shapur only as Eusebius names him. Panegyrical source, not Persian-side confirmation.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25024.htm): VC IV.8–13
+
+Limit: Imperial panegyric transmits a letter; no precise date, writing city, historical carrier itinerary, Persian response or causal persecution proof. Literal wording is not used as an authentic player quotation.
+
+[Additional consulted passage](https://sites.duke.edu/clas/files/2016/10/smith_constantine.pdf): Kyle Smith2016, selected printed pp.28–32; PDF zero-based pages49–53
+
+Limit: Modern argument considers likely authenticity/early date while retaining debate. Independent confirmation of another Constantinian document is not confirmation of this particular letter. Interpretations of reception and effects remain hypotheses, not game triggers.
+
+[Additional consulted passage](https://www.classics.ox.ac.uk/node/4988256): Oxford ARCON institutional project introduction and status
+
+Limit: Identifies Nicomedia/Izmit and current archaeological mapping work, not an imperial dispatch site or precise fourth-century city plan.
 
 ### 16. The Council on the Shore
 
@@ -781,7 +799,13 @@ Narrativas de sínodo y consagración son interesadas.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/16-witness-record-comparison-tyre/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: A council met at Tyre in 335 under imperial direction. Eusebius praises the imperial demand for settlement; Athanasius later contests the proceedings and transmits protests. These are interested accounts, not a neutral transcript. The Jerusalem dedication is a separate event and city. No particular council building or waterfront venue is established here.
+
+ES: En 335 se reunió un concilio en Tiro por dirección imperial. Eusebio elogia la exigencia imperial de arreglo; Atanasio impugna después los procedimientos y transmite protestas. Son relatos interesados, no una transcripción neutral. La dedicación de Jerusalén es otro acontecimiento y otra ciudad. Aquí no se acredita un edificio conciliar concreto ni una sede junto al agua.
 
 [Corrected primary passage](https://www.newadvent.org/fathers/25024.htm): Eusebius, Life of Constantine IV.41–47. Book III URL in raw candidate does not contain this locator. Eusebius is a partisan biographer.
 
@@ -790,6 +814,22 @@ Dossier status: selection and mechanic authored; full world/objective/balance/sc
 Limit: The source is hostile/panegyrical toward Athanasius; separate the Tyre council from Jerusalem dedication. Chronology is not precise enough to imply immediate sequence without qualification.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25024.htm): VC IV.40–47; Tyre41–42, Jerusalem43–47
+
+Limit: Panegyric, imperial compulsion and settlement rhetoric are source-attributed; no neutral verdict, excavated venue or exact interval to Jerusalem. Marianus reception and Eusebius orations belong to Jerusalem, not Tyre.
+
+[Additional consulted passage](https://www.ewtn.com/catholicism/library/apology-against-the-arians-11607): Athanasius Apologia contra Arianos §§71–84
+
+Limit: Retrospective advocate and embedded documents; accusations of coercion, falsification and motive are allegations, not an adjudicated game truth. Modern comparative criticism is never a physical335 book.
+
+[Additional consulted passage](https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Levant/Tyr/Tyr-Marriner2007.pdf): Marriner, Morhange and Meulé2007, PNAS104(22):9218–9223, DOI10.1073/pnas.0611325104; selected introduction, subsidence discussion, conclusion and fig.6
+
+Limit: Fig.6 contrasts332BCE and2000CE, not335CE. Sedimentation and late-Roman subsidence preclude transplanting either shore. No council-venue evidence; ©NAS2007, no explicit free-reuse license identified.
+
+[Additional consulted passage](https://whc.unesco.org/en/list/299/): Tyre property description and modern point metadata
+
+Limit: Headland and mainland archaeological areas identify broad context only. Page text hasCCBYSAIGO3 terms; map/individual-image rights require separate proof. Modern site point is not a council address.
 
 ### 17. The Empty Appointment
 
