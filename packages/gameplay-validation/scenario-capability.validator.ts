@@ -662,6 +662,14 @@ export function validateScenarioCapability(
             `Zona no declarada: ${id}`,
           );
     }
+    for (const id of duplicates(
+      (predicate.exportedLedgers ?? []).map((ledger) => ledger.id),
+    ))
+      add(
+        "capability.exported-ledger-id",
+        `${context}.${id}`,
+        "Un objetivo no puede exportar dos ledgers con el mismo ID",
+      );
     for (const exported of predicate.exportedLedgers ?? []) {
       if (exported.fromRequirements.some((id) => !reqIds.includes(id)))
         add(
@@ -960,6 +968,14 @@ export function validateScenarioCapability(
         id,
         "Unidad inicial no está en el worldContract finito",
       );
+  for (const id of duplicates(
+    profile.enemyRoster.mobilizations.map((wave) => wave.id),
+  ))
+    add(
+      "capability.enemy-wave-id",
+      id,
+      "Cada movilización del perfil debe tener un ID único",
+    );
   const mobilized = new Set<string>();
   for (const wave of profile.enemyRoster.mobilizations) {
     for (const id of wave.entityIds) {
