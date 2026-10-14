@@ -1,6 +1,6 @@
 # Composed capability identifiers / formal-review corrections
 
-Author gpt-6 · 14 October 2026 · i00003/S1. Base 018c92b2d5eb92a8c978726890e37389acb4d292 includes the independent gpt-6.1-sol `changes_requested` verdict. Correction review is pending; the implementer does not approve this slice.
+Author gpt-6 · 14 October 2026 · i00003/S1. Base 018c92b2d5eb92a8c978726890e37389acb4d292 includes the independent gpt-6.1-sol `changes_requested` verdict. The fresh independent reviewer gpt-6-sol approved S1 on integrated ebc0b366; formal approval was published on develop at17cf455825124215edeff3771733929521df9bdd. The implementer did not approve this slice.
 
 The formal reviewer reproduced two accepted but ambiguous contracts. A main objective could export two `served` ledgers from different arrival requirements: consumer validation selected the first producer, while reference evaluation overwrote its namespaced result with the second. A delivered original then became ineligible for its legitimate withdrawal. Two disjoint enemy mobilizations named `wave-a` also passed validation, but runtime lookup could reach only the first group.
 

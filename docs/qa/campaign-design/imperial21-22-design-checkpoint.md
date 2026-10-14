@@ -28,4 +28,4 @@ Existing credited circus photo and multiphase Mediolanum SVG are reused as resea
 
 ## Verification
 
-Regeneration and design integrity pass with52 drafts,2,118 screens and315 sides. Full gate and existing Python design suite are recorded after execution. No adapter edits, new native export, AoE2 execution or balance/historical approval claimed. Official publication certifies merge against current develop.
+Regeneration and design integrity pass with52 drafts,2,118 screens and315 sides. Existing Python design suite passed50/50 tests. Declared full gate passed89/89 Bun tests and301 assertions, typecheck, formatting, documentation and campaign validation. No adapter edits, new native export, AoE2 execution or balance/historical approval claimed. Official publication certifies merge against current develop.
