@@ -30,12 +30,14 @@ Revisión independiente GPT-6.1 reprodujo que tras llegar a otra zona el histori
 - global_gate: e2e
 
 ### S1 — Contrato y referencia de presencia actual
-- **Status**: pending
+- **Status**: review
 - **Files**: `packages/schemas`, `packages/gameplay-state`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tests/unit/entity-presence.test.ts`, `docs/decisions/0005-live-entity-presence.md`
 - **Gate**: e2e
 - acceptance:
   - "Predicado live-entity-presence con IDs únicos, destinos por entidad, mínimo factible y posición/vida actuales. Observaciones reversibles tipadas y snapshot inmutable; desconocido o fuera de zona no satisface. Llegadas históricas permanecen inmutables."
   - "Reevaluar antes de latch/terminal en el mismo tick. Guardado/carga con fingerprint y refresco de posiciones, movimientos a otra zona, salida/reentrada, identidad equivocada, muerte previa y presencia insuficiente. Modelo/código nuevo requiere revisión independiente propia."
+- review-state: in_review
+- review-implementer: gpt-6-sol
 
 ### S2 — Observadores espaciales nativos
 - **Status**: pending
