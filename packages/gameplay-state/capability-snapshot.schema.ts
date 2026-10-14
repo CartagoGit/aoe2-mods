@@ -53,6 +53,15 @@ export const capabilitySnapshotSchema = z.strictObject({
   heldSeconds: z.record(z.string(), z.number().int().nonnegative()),
   deadlineWarnings: stringList,
   departedEntities: stringList,
+  liveSpatialObservation: z
+    .strictObject({
+      sequence: z.number().int().safe().nonnegative().nullable(),
+      entities: z.record(
+        z.string(),
+        z.strictObject({ alive: z.boolean(), zones: stringList }),
+      ),
+    })
+    .optional(),
 });
 
 export type CapabilitySnapshot = z.infer<typeof capabilitySnapshotSchema>;

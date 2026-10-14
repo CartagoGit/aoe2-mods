@@ -12,6 +12,7 @@ import {
   type CapabilitySnapshot,
   capabilitySnapshotSchema,
 } from "./capability-snapshot.schema";
+import { profileHasLivePresence } from "./live-entity-presence.helper";
 import {
   EMPTY_RESOURCES,
   normalizeResources,
@@ -75,6 +76,9 @@ export function createCapabilitySnapshot(
     heldSeconds: {},
     deadlineWarnings: [],
     departedEntities: [],
+    ...(profileHasLivePresence(profile)
+      ? { liveSpatialObservation: { sequence: null, entities: {} } }
+      : {}),
   };
   return finalize(profile, snapshot);
 }
@@ -131,6 +135,21 @@ export function finalize(
     heldSeconds: Object.fromEntries(
       Object.entries(state.heldSeconds).sort(([a], [b]) => a.localeCompare(b)),
     ),
+    ...(state.liveSpatialObservation
+      ? {
+          liveSpatialObservation: {
+            sequence: state.liveSpatialObservation.sequence,
+            entities: Object.fromEntries(
+              Object.entries(state.liveSpatialObservation.entities)
+                .sort(([a], [b]) => a.localeCompare(b))
+                .map(([id, observation]) => [
+                  id,
+                  { ...observation, zones: sortUnique(observation.zones) },
+                ]),
+            ),
+          },
+        }
+      : {}),
   });
 }
 
