@@ -1188,6 +1188,146 @@ describe("delivery destination distribution", () => {
 });
 
 describe("identity and continuously active protection", () => {
+  test("duplicate exported ledger IDs cannot overwrite a delivered original with another producer", () => {
+    const f = referenceFixture(
+      [
+        arrivalRequirement("receive-a", "unit-a", "zone-dest"),
+        arrivalRequirement("receive-b", "receiver-a", "zone-dest"),
+      ],
+      (candidate) => {
+        const source = candidate.objectivePlan[0];
+        if (!source) throw new Error("Missing ledger source");
+        source.predicate.exportedLedgers = ["receive-a", "receive-b"].map(
+          (requirement) => ({
+            id: "served",
+            operator: "intersection",
+            fromRequirements: [requirement],
+            minimumCount: 1,
+          }),
+        );
+        const successor = structuredClone(source);
+        successor.id = "objective-b";
+        successor.after = [source.id];
+        const withdrawal = arrivalRequirement(
+          "withdraw",
+          "unit-a",
+          "zone-other",
+        );
+        if (withdrawal.kind !== "entity-state")
+          throw new Error("Missing withdrawal requirement");
+        withdrawal.eligibleEntitiesFromLedger = {
+          objective: source.id,
+          ledger: "served",
+        };
+        successor.predicate.requirements = [withdrawal];
+        successor.predicate.requiredLedgers = [withdrawal.id];
+        delete successor.predicate.exportedLedgers;
+        candidate.objectivePlan.push(successor);
+      },
+    );
+    expect(validateScenarioCapability(f.candidate)).toContainEqual(
+      expect.objectContaining({
+        code: "capability.exported-ledger-id",
+        path: "objective-a.served",
+      }),
+    );
+    expect(() => compileCapabilityProfile(f.candidate)).toThrow(
+      "capability.exported-ledger-id",
+    );
+  });
+
+  test("the same exported ledger name is valid in different objective scopes", () => {
+    const f = referenceFixture(
+      [arrivalRequirement("receive-a", "unit-a", "zone-dest")],
+      (candidate) => {
+        const source = candidate.objectivePlan[0];
+        if (!source) throw new Error("Missing ledger source");
+        source.predicate.exportedLedgers = [
+          {
+            id: "served",
+            operator: "intersection",
+            fromRequirements: ["receive-a"],
+            minimumCount: 1,
+          },
+        ];
+        const successor = structuredClone(source);
+        successor.id = "objective-b";
+        successor.after = [source.id];
+        successor.predicate.requirements = [
+          arrivalRequirement("receive-b", "receiver-a", "zone-other"),
+        ];
+        successor.predicate.requiredLedgers = ["receive-b"];
+        successor.predicate.exportedLedgers = [
+          {
+            id: "served",
+            operator: "intersection",
+            fromRequirements: ["receive-b"],
+            minimumCount: 1,
+          },
+        ];
+        candidate.objectivePlan.push(successor);
+      },
+    );
+    expect(validateScenarioCapability(f.candidate)).toEqual([]);
+    expect(compileCapabilityProfile(f.candidate).objectivePlan).toHaveLength(2);
+    let state = f.step(f.entered, {
+      type: "record-arrival",
+      entityId: "unit-a",
+      zoneId: "zone-dest",
+    });
+    state = f.step(state, latch);
+    state = f.step(state, {
+      type: "record-arrival",
+      entityId: "receiver-a",
+      zoneId: "zone-other",
+    });
+    state = f.step(state, {
+      type: "latch-objective",
+      objectiveId: "objective-b",
+    });
+    expect(state.exportedLedgers["objective-a.served"]).toEqual(["unit-a"]);
+    expect(state.exportedLedgers["objective-b.served"]).toEqual(["receiver-a"]);
+    expect(state.objectiveLatches).toEqual(["objective-a", "objective-b"]);
+  });
+
+  test("duplicate wave IDs reject disjoint rosters instead of releasing only the first group", () => {
+    const candidate = structuredClone(profile);
+    candidate.worldContract.entities.push(entity("guard-b"));
+    candidate.enemyRoster.initialEntityIds.push("guard-b");
+    candidate.enemyRoster.mobilizations.push({
+      id: "wave-a",
+      entityIds: ["guard-b"],
+      releasedOnce: true,
+    });
+    expect(validateScenarioCapability(candidate)).toContainEqual(
+      expect.objectContaining({
+        code: "capability.enemy-wave-id",
+        path: "wave-a",
+      }),
+    );
+    expect(() => compileCapabilityProfile(candidate)).toThrow(
+      "capability.enemy-wave-id",
+    );
+    const other = candidate.enemyRoster.mobilizations[1];
+    if (!other) throw new Error("Missing second wave");
+    other.id = "wave-b";
+    expect(validateScenarioCapability(candidate)).toEqual([]);
+    expect(
+      compileCapabilityProfile(candidate).enemyRoster.mobilizations,
+    ).toHaveLength(2);
+    let state = createCapabilitySnapshot(candidate, {
+      spendable: {},
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    for (const waveId of ["wave-b", "wave-a", "wave-b"])
+      state = reduceCapabilityState(candidate, state, {
+        type: "release-wave",
+        waveId,
+      });
+    expect(state.releasedRosterIds).toEqual(["guard-a", "guard-b"]);
+  });
+
   test("peaceful profiles support one real payee and no military roster", () => {
     const payment: Requirement = {
       id: "payment",
