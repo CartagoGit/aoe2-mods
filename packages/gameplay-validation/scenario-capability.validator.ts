@@ -21,6 +21,11 @@ export function validateScenarioCapability(
   const zones = new Map(profile.worldContract.zones.map((z) => [z.id, z]));
   const objectives = new Map(profile.objectivePlan.map((o) => [o.id, o]));
   const objectiveIds = profile.objectivePlan.map((o) => o.id);
+  const hasLivePresence = profile.objectivePlan.some((objective) =>
+    objective.predicate.requirements.some(
+      (req) => req.kind === "current-entity-presence",
+    ),
+  );
   const sideIds = new Set(profile.secondaryObjectives.map((o) => o.id));
   const phaseIds = new Set(profile.stateMachine.states);
   const reqOwners = new Map<string, string>();
@@ -200,6 +205,23 @@ export function validateScenarioCapability(
       const entityRefs: string[] = [];
       const zoneRefs: string[] = [];
       switch (req.kind) {
+        case "current-entity-presence": {
+          entityRefs.push(...req.entities);
+          zoneRefs.push(...Object.values(req.destinations));
+          const mapped = Object.keys(req.destinations);
+          if (
+            req.requiredCount > new Set(req.entities).size ||
+            mapped.length !== req.entities.length ||
+            mapped.some((id) => !req.entities.includes(id)) ||
+            req.entities.some((id) => !req.destinations[id])
+          )
+            add(
+              "capability.live-presence-contract",
+              reqContext,
+              "La presencia exige identidades únicas, un destino por entidad y un mínimo factible",
+            );
+          break;
+        }
         case "entity-state":
           if (req.arrivalAfterDeparture) {
             const ref = req.arrivalAfterDeparture;
@@ -704,6 +726,16 @@ export function validateScenarioCapability(
         "capability.phase-transition-objective",
         key,
         "Transición requiere un objetivo existente",
+      );
+    if (
+      hasLivePresence &&
+      transition.to === "victory" &&
+      (transition.on !== "objective-latched" || !transition.objectiveId)
+    )
+      add(
+        "capability.live-presence-terminal",
+        key,
+        "La victoria con presencia actual requiere un objetivo explícito para reevaluación",
       );
   }
   for (const objective of profile.objectivePlan) {

@@ -31,6 +31,13 @@ import {
   capabilitySnapshotSchema,
 } from "./capability-snapshot.schema";
 import {
+  applyLiveSpatialBatch,
+  livePresenceStillSatisfiedForVictory,
+  objectiveHasLivePresence,
+  profileHasLivePresence,
+  victoryNeedsLivePresence,
+} from "./live-entity-presence.helper";
+import {
   credit,
   debit,
   EMPTY_RESOURCES,
@@ -43,7 +50,7 @@ export function reduceCapabilityState(
   input: CapabilitySnapshot,
   action: CapabilityAction,
 ): CapabilitySnapshot {
-  const state = capabilitySnapshotSchema.parse(input);
+  let state = capabilitySnapshotSchema.parse(input);
   if (state.contractFingerprint !== capabilityFingerprint(profile))
     throw new Error(
       "capability.snapshot-contract-mismatch: saved state belongs to a different objective contract",
@@ -51,8 +58,31 @@ export function reduceCapabilityState(
   if (state.terminal) return state;
   if (hasIrrecoverableLoss(profile, state))
     return finishTerminal(state, "defeat");
+  if (profileHasLivePresence(profile) && !state.liveSpatialObservation)
+    throw new Error(
+      "capability.live-presence-snapshot: missing observation state",
+    );
+  let freshLiveBatch = false;
+  if ("liveSpatialBatch" in action && action.liveSpatialBatch !== undefined) {
+    const updated = applyLiveSpatialBatch(
+      profile,
+      state,
+      action.liveSpatialBatch,
+    );
+    if (!updated) {
+      if (action.type === "tick" && action.defeatConditions.length > 0)
+        return finalize(profile, finishTerminal(state, "defeat"));
+      return state;
+    }
+    state = updated;
+    freshLiveBatch = true;
+    if (hasIrrecoverableLoss(profile, state))
+      return finalize(profile, finishTerminal(state, "defeat"));
+  }
   let next = state;
-  if (action.type === "observe-zone") {
+  if (action.type === "observe-live-spatial-batch") {
+    if (!freshLiveBatch) return state;
+  } else if (action.type === "observe-zone") {
     if (!profile.worldContract.zones.some((zone) => zone.id === action.zoneId))
       return state;
     next = {
@@ -306,6 +336,7 @@ export function reduceCapabilityState(
         "area-state",
         "civilian-protection",
         "entity-state",
+        "current-entity-presence",
       ].includes(req.kind)
     )
       return state;
@@ -607,6 +638,21 @@ export function reduceCapabilityState(
         !state.objectiveLatches.includes(transition.objectiveId))
     )
       return state;
+    if (
+      action.phase === "victory" &&
+      profileHasLivePresence(profile) &&
+      (transition.on !== "objective-latched" ||
+        !transition.objectiveId ||
+        !state.objectiveLatches.includes(transition.objectiveId) ||
+        (victoryNeedsLivePresence(profile, state, transition.objectiveId) &&
+          (!freshLiveBatch ||
+            !livePresenceStillSatisfiedForVictory(
+              profile,
+              state,
+              transition.objectiveId,
+            ))))
+    )
+      return state;
     next = {
       ...state,
       phase: action.phase,
@@ -629,6 +675,7 @@ export function reduceCapabilityState(
     if (
       !objective ||
       !isActive(profile, state, objective.id) ||
+      (objectiveHasLivePresence(profile, objective.id) && !freshLiveBatch) ||
       !objectiveSatisfied(profile, state, objective.id)
     )
       return state;
@@ -676,7 +723,18 @@ export function reduceCapabilityState(
             item.to === "victory" &&
             item.objectiveId === objectiveId,
         );
-        return !!transition && state.objectiveLatches.includes(objectiveId);
+        return (
+          !!transition &&
+          transition.on === "objective-latched" &&
+          state.objectiveLatches.includes(objectiveId) &&
+          (!victoryNeedsLivePresence(profile, state, objectiveId) ||
+            (freshLiveBatch &&
+              livePresenceStillSatisfiedForVictory(
+                profile,
+                state,
+                objectiveId,
+              )))
+        );
       });
       if (won)
         next = {
