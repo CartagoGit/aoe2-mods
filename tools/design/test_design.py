@@ -94,6 +94,33 @@ class DesignAcceptanceTests(unittest.TestCase):
     def imperial_errors(self, draft):
         return self.dossier_validator(draft, self.odysseys[1], self.catalogue["campaigns"])
 
+    def test_live_presence_cannot_be_replaced_with_historical_arrival(self):
+        draft = self.imperial_draft(22)
+        self.assertEqual(self.imperial_errors(draft), [])
+        requirement = draft["objectivePlan"][2]["predicate"]["requirements"][2]
+        requirement.update(kind="entity-state", state="arrived")
+        self.assertTrue(any("current presence replaced with delivery history" in e
+                            for e in self.imperial_errors(draft)))
+
+    def test_live_presence_rejects_false_support_and_invalid_assignments(self):
+        for change in ("native", "missing-capability", "missing-zone", "duplicate", "ledger"):
+            with self.subTest(change=change):
+                draft = self.imperial_draft(22)
+                requirement = draft["objectivePlan"][2]["predicate"]["requirements"][2]
+                if change == "native":
+                    requirement["implementationStatus"] = "native-implemented"
+                elif change == "missing-capability":
+                    draft["requiredCapabilities"] = [c for c in draft["requiredCapabilities"]
+                                                     if c["id"] != "live-entity-presence"]
+                elif change == "missing-zone":
+                    requirement["destinations"] = {}
+                elif change == "duplicate":
+                    requirement["entities"].append(requirement["entities"][0])
+                else:
+                    requirement["deliveryLedgerSubstitute"] = True
+                self.assertTrue(any("current presence" in e
+                                    for e in self.imperial_errors(draft)))
+
     def test_entry_requires_first_episode_and_canonical_predecessor(self):
         draft = self.imperial_draft()
         self.assertEqual(self.imperial_errors(draft), [])

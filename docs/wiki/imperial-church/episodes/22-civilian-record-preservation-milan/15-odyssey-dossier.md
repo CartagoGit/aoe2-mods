@@ -312,9 +312,9 @@ ES: Una gran pila sería más fácil de contar y más fácil de perder.
 
 ### o3 / phase-3
 
-EN: After their own store arrivals, send the same three reporting clerks out and return them to the southern reporting yard. Custodians and original bundles stay at their assigned stores.
+EN: After their own store arrivals, send the same three reporting clerks out and return them to the southern reporting yard. To complete reporting, each store must currently contain its original bundle and original custodian, alive. An earlier delivery alone is insufficient.
 
-ES: Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escribientes de informe y devuélvelos al patio meridional de informes. Los custodios y legajos originales permanecen en sus depósitos asignados.
+ES: Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escribientes de informe y devuélvelos al patio meridional de informes. Para completar los informes, cada depósito debe contener en ese momento su legajo y custodio originales, vivos. Una entrega anterior no basta.
 
 ```json
 {
@@ -354,48 +354,61 @@ ES: Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escr
       "oncePerEntity": true
     },
     {
-      "kind": "entity-state",
+      "kind": "current-entity-presence",
       "requiredCount": 1,
-      "state": "arrived",
+      "observable": "current-alive-position",
+      "reevaluateBeforeTerminal": true,
+      "deliveryLedgerSubstitute": false,
+      "implementationStatus": "unimplemented",
+      "proposalId": "i00005",
       "id": "req-3",
       "entities": [
         "imperial-church.22-civilian-record-preservation-milan.western-civilian-bundle-1"
       ],
       "destinations": {
         "imperial-church.22-civilian-record-preservation-milan.western-civilian-bundle-1": "imperial-church.22-civilian-record-preservation-milan.destination-2"
-      },
-      "oncePerEntity": true
+      }
     },
     {
-      "kind": "entity-state",
+      "kind": "current-entity-presence",
       "requiredCount": 1,
-      "state": "arrived",
+      "observable": "current-alive-position",
+      "reevaluateBeforeTerminal": true,
+      "deliveryLedgerSubstitute": false,
+      "implementationStatus": "unimplemented",
+      "proposalId": "i00005",
       "id": "req-4",
       "entities": [
         "imperial-church.22-civilian-record-preservation-milan.northeastern-civilian-bundle-1"
       ],
       "destinations": {
         "imperial-church.22-civilian-record-preservation-milan.northeastern-civilian-bundle-1": "imperial-church.22-civilian-record-preservation-milan.destination-3"
-      },
-      "oncePerEntity": true
+      }
     },
     {
-      "kind": "entity-state",
+      "kind": "current-entity-presence",
       "requiredCount": 1,
-      "state": "arrived",
+      "observable": "current-alive-position",
+      "reevaluateBeforeTerminal": true,
+      "deliveryLedgerSubstitute": false,
+      "implementationStatus": "unimplemented",
+      "proposalId": "i00005",
       "id": "req-5",
       "entities": [
         "imperial-church.22-civilian-record-preservation-milan.southeastern-civilian-bundle-1"
       ],
       "destinations": {
         "imperial-church.22-civilian-record-preservation-milan.southeastern-civilian-bundle-1": "imperial-church.22-civilian-record-preservation-milan.destination-4"
-      },
-      "oncePerEntity": true
+      }
     },
     {
-      "kind": "entity-state",
+      "kind": "current-entity-presence",
       "requiredCount": 3,
-      "state": "arrived",
+      "observable": "current-alive-position",
+      "reevaluateBeforeTerminal": true,
+      "deliveryLedgerSubstitute": false,
+      "implementationStatus": "unimplemented",
+      "proposalId": "i00005",
       "id": "req-6",
       "entities": [
         "imperial-church.22-civilian-record-preservation-milan.original-store-custodians-1",
@@ -406,17 +419,16 @@ ES: Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escr
         "imperial-church.22-civilian-record-preservation-milan.original-store-custodians-1": "imperial-church.22-civilian-record-preservation-milan.destination-2",
         "imperial-church.22-civilian-record-preservation-milan.original-store-custodians-2": "imperial-church.22-civilian-record-preservation-milan.destination-3",
         "imperial-church.22-civilian-record-preservation-milan.original-store-custodians-3": "imperial-church.22-civilian-record-preservation-milan.destination-4"
-      },
-      "oncePerEntity": true
+      }
     }
   ],
   "neverUseTimerInstead": true
 }
 ```
 
-EN: Three original clerks returned after their own visits; all three stored bundles and custodians remain separately accounted for.
+EN: The three original clerks returned after their own visits; live presence of each original bundle and custodian in its assigned store is required at completion.
 
-ES: Regresaron tres escribientes originales tras sus propias visitas; siguen constando por separado los tres legajos guardados y custodios.
+ES: Los tres escribientes originales regresaron tras sus propias visitas; al completar se exige presencia actual de cada legajo y custodio originales en su depósito asignado.
 
 EN: I can report where we left the papers. I cannot say where the war will end.
 
@@ -1957,7 +1969,7 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
       40,
       75
     ],
-    "difficultyLevers": "6 workers and lower starting stock; decide between parallel stocking or sequential store visits, then report without withdrawing custodians. No replacement of main identities, fictitious Milan army, confiscation clock or forced political allegiance.",
+    "difficultyLevers": "6 workers and lower starting stock; decide between parallel stocking or sequential store visits, then finish reporting with original bundles and custodians currently at their assigned stores. No replacement of main identities, fictitious Milan army, confiscation clock or forced political allegiance.",
     "movementPolicy": "native movement/health/damage unchanged; no difficulty cheats",
     "mainFeasibleSkippingAllOptionals": true,
     "allOptionalCostsAffordable": true
@@ -1974,7 +1986,7 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.handover / after fact-intro | collection-narrator | Marcus now recalls ordinary work as a fictional apprentice in Milan. The historical news from Gaul remains a received report. | Marco recuerda ahora trabajo cotidiano como aprendiz ficticio en Milán. Las noticias históricas desde la Galia siguen siendo un informe recibido. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.persona-intro / after handover | imperial-clerk | At sixteen I was allowed to copy headings, never to decide them. A report from Gaul reached our imagined Milan workshop, and the master made me keep the household lists apart from the political news. I wanted one tidy stack. He wanted three places where ordinary names could still be found if our own work stopped. | A los dieciséis me permitían copiar encabezamientos, nunca decidirlos. Un informe desde la Galia llegó a nuestro taller imaginado de Milán y el maestro me hizo separar las listas de hogares de las noticias políticas. Yo quería una pila ordenada. Él quería tres lugares donde aún se pudieran encontrar nombres corrientes si se interrumpía nuestro trabajo. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
-| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.route-help / available from start; repeatable without effect | none | Keep three civilian bundles distinct and send each to its own marked store. Each store needs one original custodian, one original reporting clerk and 100 food/60 wood/20 stone. When the reporting phase begins, the three clerks leave the stores they actually visited and go to the southern reporting yard. The three custodians and bundles remain at their assigned stores. Custodian visits cannot substitute for clerk visits; optional movers cannot substitute for either. This is civilian work in a fictional Milan workshop, while the historical news from Gaul remains unchanged. | Conserva distintos los tres legajos civiles y envía cada uno a su depósito señalado. Cada depósito necesita un custodio original, un escribiente original de informe y 100 alimento/60 madera/20 piedra. Cuando comienza la fase de informes, los tres escribientes salen de los depósitos que realmente visitaron y van al patio meridional de informes. Los tres custodios y legajos permanecen en sus depósitos asignados. Las visitas de custodios no sustituyen las de escribientes; quienes se trasladan opcionalmente no sustituyen a ninguno. Es trabajo civil en un taller ficticio de Milán mientras las noticias históricas desde la Galia permanecen sin cambios. |
+| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.route-help / available from start; repeatable without effect | none | Keep three civilian bundles distinct and send each to its own marked store. Each store needs one original custodian, one original reporting clerk and 100 food/60 wood/20 stone. When the reporting phase begins, the three clerks leave the stores they actually visited and go to the southern reporting yard. When reporting completes, all three original bundles and custodians must be alive and currently inside their assigned stores. Recorded delivery alone is insufficient. Custodian visits cannot substitute for clerk visits; optional movers cannot substitute for either. This is civilian work in a fictional Milan workshop, while the historical news from Gaul remains unchanged. | Conserva distintos los tres legajos civiles y envía cada uno a su depósito señalado. Cada depósito necesita un custodio original, un escribiente original de informe y 100 alimento/60 madera/20 piedra. Cuando comienza la fase de informes, los tres escribientes salen de los depósitos que realmente visitaron y van al patio meridional de informes. Al completar los informes, los tres legajos y custodios originales deben estar vivos y dentro de sus depósitos asignados en ese momento. El registro de entrega anterior no basta. Las visitas de custodios no sustituyen las de escribientes; quienes se trasladan opcionalmente no sustituyen a ninguno. Es trabajo civil en un taller ficticio de Milán mientras las noticias históricas desde la Galia permanecen sin cambios. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o1-goal / phase-1 active | none | Register the three distinct civilian bundles, three original store custodians and three reporting clerks. Visit all three marked stores. | Registra los tres legajos civiles distintos, tres custodios originales y tres escribientes de informe. Visita los tres depósitos señalados. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o1-receipt / o1 latched once | none | Three separate storage destinations and nine original working identities are registered. | Quedan registrados tres destinos separados de depósito y nueve identidades originales de trabajo. |
@@ -1982,8 +1994,8 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o2-goal / phase-2 active | none | Deliver each original bundle to its assigned store, with one custodian and one reporting clerk at each. Pay 100 food,60 wood and 20 stone per store, once. | Entrega cada legajo original en su depósito asignado, con un custodio y un escribiente de informe en cada uno. Paga una vez 100 alimento,60 madera y 20 piedra por depósito. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o2-receipt / o2 latched once | none | Each store has its own bundle, custodian, reporting clerk and exact working allocation. | Cada depósito tiene su legajo propio, custodio, escribiente de informe y asignación exacta de trabajo. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o2-reaction / after o2 receipt | imperial-clerk | One large pile would be easier to count and easier to lose. | Una gran pila sería más fácil de contar y más fácil de perder. |
-| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o3-goal / phase-3 active | none | After their own store arrivals, send the same three reporting clerks out and return them to the southern reporting yard. Custodians and original bundles stay at their assigned stores. | Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escribientes de informe y devuélvelos al patio meridional de informes. Los custodios y legajos originales permanecen en sus depósitos asignados. |
-| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o3-receipt / o3 latched once | none | Three original clerks returned after their own visits; all three stored bundles and custodians remain separately accounted for. | Regresaron tres escribientes originales tras sus propias visitas; siguen constando por separado los tres legajos guardados y custodios. |
+| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o3-goal / phase-3 active | none | After their own store arrivals, send the same three reporting clerks out and return them to the southern reporting yard. To complete reporting, each store must currently contain its original bundle and original custodian, alive. An earlier delivery alone is insufficient. | Tras sus propias llegadas a los depósitos, haz salir a los mismos tres escribientes de informe y devuélvelos al patio meridional de informes. Para completar los informes, cada depósito debe contener en ese momento su legajo y custodio originales, vivos. Una entrega anterior no basta. |
+| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o3-receipt / o3 latched once | none | The three original clerks returned after their own visits; live presence of each original bundle and custodian in its assigned store is required at completion. | Los tres escribientes originales regresaron tras sus propias visitas; al completar se exige presencia actual de cada legajo y custodio originales en su depósito asignado. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.o3-reaction / after o3 receipt | imperial-clerk | I can report where we left the papers. I cannot say where the war will end. | Puedo informar de dónde dejamos los papeles. No puedo decir dónde acabará la guerra. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.side-1-goal / optional list from start | none | Recover both separate copies from the civilian and political working labels and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de las etiquetas de trabajo civiles y políticas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.side-1-complete / side-1 completed | none | Civilian and political headings completed. Its stated benefit has been granted once. | Encabezamientos civiles y políticos: completado. Su ventaja indicada se ha concedido una vez. |
@@ -2007,7 +2019,7 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.persona-outro / after fact-outro | imperial-clerk | I came back with three addresses and fewer confident headings. We had stored our own work; we had not stored the future. Five years later the pressure reaching Milan would be different, and I would have to learn again which words belonged to the people speaking and which to the account I was keeping. | Regresé con tres direcciones y menos encabezamientos seguros. Habíamos guardado nuestro trabajo; no habíamos guardado el futuro. Cinco años después la presión que llegaría a Milán sería distinta y tendría que aprender otra vez qué palabras pertenecían a quienes hablaban y cuáles a la cuenta que yo llevaba. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.defeat / main defeat; close side rewards first | none | The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat. | El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota. |
 | scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.recovery-help / help; never implies an unsupported recovery action | none | Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost. | La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable. |
-| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.next-episode / after persona-outro | none | Continue with Seals at the Western Synod. This episode does not complete the campaign. | Continúa con Sellos en el sínodo occidental. Este episodio no termina la campaña. |
+| scenario.imperial-church.22-civilian-record-preservation-milan.odyssey.next-episode / after persona-outro | none | Continue with The Seal and the Exile. This episode does not complete the campaign. | Continúa con El sello y el destierro. Este episodio no termina la campaña. |
 
 ## Production, recovery and verification
 
@@ -2072,6 +2084,11 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
     {
       "id": "receipt-gated-ordered-departure",
       "status": "reference implemented; native observers and real navigation pending"
+    },
+    {
+      "id": "live-entity-presence",
+      "status": "specified; reference and native implementations pending",
+      "proposalId": "i00005"
     }
   ],
   "artDirection": {
@@ -2093,11 +2110,12 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
       "Three custodians and three reporting clerks have separate IDs and one ordinal destination each.",
       "Departure matches own o2 req5 reporting-clerk receipt, never custodian req4 or bundle receipt.",
       "Early southern-yard arrival does not satisfy ordered reporting return; active phase, observed departure and guarded arrival required.",
-      "Three bundles and three custodians remain at assigned stores in final phase; report return alone fails.",
+      "After recorded delivery, move a bundle or custodian away: final stays incomplete. Return the same alive identity to its assigned store, then recheck current presence before terminal. Arrival history alone never suffices.",
       "No free substitutes or optional-loss main defeat; all six optional tasks can be omitted in all difficulties.",
       "No350 sole emperor, Milan killing, fabricated purge, army, church confiscation or fire.",
       "Marcus16 is a fictional ordinary apprentice in Milan; Gaul news is received, no private emperor motive.",
       "Roman local water, ditches, wall phases, full widths and native walkability remain pending.",
+      "live-entity-presence is only specified under i00005; reference/native implementation pending, no delivery flag or timer may emulate it.",
       "skip all optional objectives and win at each difficulty",
       "complete all optionals at each difficulty without spending protected recovery stock",
       "save/load before and after every delivery, payment, optional reward and terminal latch",

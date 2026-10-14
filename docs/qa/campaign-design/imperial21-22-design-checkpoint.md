@@ -29,3 +29,8 @@ Existing credited circus photo and multiphase Mediolanum SVG are reused as resea
 ## Verification
 
 Regeneration and design integrity pass with52 drafts,2,118 screens and315 sides. Existing Python design suite passed50/50 tests. Declared full gate passed89/89 Bun tests and301 assertions, typecheck, formatting, documentation and campaign validation. No adapter edits, new native export, AoE2 execution or balance/historical approval claimed. Official publication certifies merge against current develop.
+
+
+## Superseding presence correction,14October2026
+
+Later independentGPT6.1 review showed that recorded arrivals do not certify current residence. Current21 only requires recorded host receptions and all original households alive; current22 explicitly requires live presence of its three original bundles/custodians at completion under unimplementedi00005. The earlier wording above about staying is superseded by [current correction](imperial23-24-design-checkpoint.md) and current authored dossiers. No native or historical approval follows.

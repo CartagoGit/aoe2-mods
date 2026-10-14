@@ -72,7 +72,30 @@ def audit_dossier(episode, campaign=None, baseline=None):
             f"{context}: duplicate main requirement",
         )
         for req in requirements.values():
-            if req["kind"] == "entity-state":
+            if req["kind"] == "current-entity-presence":
+                check(
+                    len(set(req["entities"])) == len(req["entities"])
+                    and set(req["entities"]) <= set(entities)
+                    and 0 < req["requiredCount"] <= len(req["entities"])
+                    and set(req.get("destinations", {})) == set(req["entities"])
+                    and set(req.get("destinations", {}).values()) <= set(zones),
+                    f"{context}: invalid current presence identities or zones",
+                )
+                capability = next(
+                    (c for c in episode["requiredCapabilities"]
+                     if c["id"] == "live-entity-presence"), None
+                )
+                check(
+                    req.get("observable") == "current-alive-position"
+                    and req.get("reevaluateBeforeTerminal") is True
+                    and req.get("deliveryLedgerSubstitute") is False
+                    and req.get("implementationStatus") == "unimplemented"
+                    and req.get("proposalId") == "i00005"
+                    and capability is not None
+                    and capability.get("status") == "specified; reference and native implementations pending",
+                    f"{context}: current presence needs its unimplemented capability gate",
+                )
+            elif req["kind"] == "entity-state":
                 check(
                     len(set(req["entities"])) == len(req["entities"]),
                     f"{context}: duplicate entity in counter",
@@ -304,6 +327,28 @@ def audit_dossier(episode, campaign=None, baseline=None):
                           f"{context}: invalid continuous control interval")
             else:
                 check(False, f"{context}: unsupported dossier predicate {req['kind']}")
+    presence = episode.get("presencePlan")
+    if presence:
+        check(
+            presence.get("capabilityId") == "live-entity-presence"
+            and presence.get("implementationStatus") == "unimplemented"
+            and presence.get("proposalId") == "i00005"
+            and presence.get("evaluation") == "current state before terminal latch, not historical arrivals",
+            f"{label}: current presence plan needs its unimplemented capability gate",
+        )
+        bindings = presence.get("bindings", [])
+        check(bool(bindings), f"{label}: current presence plan has no bindings")
+        for binding in bindings:
+            objective = objectives.get(binding.get("objective"))
+            requirement = next(
+                (r for r in objective["predicate"]["requirements"]
+                 if r["id"] == binding.get("requirement")), None
+            ) if objective else None
+            check(
+                requirement is not None
+                and requirement["kind"] == "current-entity-presence",
+                f"{label}: current presence replaced with delivery history",
+            )
     for group in episode["worldContract"]["survivorGroups"]:
         check(
             len(group["entities"]) == len(set(group["entities"])),

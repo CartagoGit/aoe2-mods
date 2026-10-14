@@ -326,5 +326,16 @@
       "Retained Mechir 13/14 and treated parenthetical dates only as conventional civil/Julian conversions; no proleptic Gregorian certification.",
       "Corrected Burgess carryover pagination reference to order 19; Manchester printed/PDF pagination remains pending verification."
     ]
+  },
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": false,
+    "reading": "Architect consulted Markauskas2015 printed72–74 directly, including footnotes131–145; physicalPDF72–74,zero71–73, confirmed by printed footer. Full259-page volume/manuscripts not read. Temporary research download only, author copyright, no PDF copied to project assets.",
+    "corrections": [
+      "Printed72–73Milan355 and Hilarynonattendance are distinct from later73–74Rimini359; cite footnotes134–136 forMilan,140–145forRimini.",
+      "Raw HistoriaAcephala attribution is anonymous; sourceAthanasius applies only Apologia deFuga.",
+      "No Gregorianconversioncertified fromparentheticaloldtranslations; Mechir13/14 preserved in authored24."
+    ]
   }
 }
