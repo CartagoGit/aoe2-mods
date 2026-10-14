@@ -476,6 +476,23 @@
       "productionApproved": false,
       "attributionRequired": true,
       "shareAlikeRequired": true
+    },
+    {
+      "id": "serdica-decumanus-modern",
+      "path": "docs/research/odyssey-research/images/serdica-decumanus-modern.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/SerdicaDecumanus.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:SerdicaDecumanus.jpg",
+      "author": "Grantscharoff,1September2011,own work",
+      "license": "CC BY-SA3.0 Unported",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "consulted": "2026-10-14",
+      "bytes": 147096,
+      "sha256": "5853f1c7e701645163b93f63ab60d6fd57ecd582180274917094263142742ef9",
+      "modifications": "None; original720×404JPEG retained, architect inspected actual raster",
+      "usage": "Labeled current decumanus archaeological/conservation reference. Modern rails/display and mixed fabric visible; no343reconstruction, geographic projection,bbox or council venue.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
     }
   ]
 }

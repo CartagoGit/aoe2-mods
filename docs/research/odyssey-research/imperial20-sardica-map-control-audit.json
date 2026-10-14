@@ -1,0 +1,22 @@
+{
+  "episodeId": "20-separate-reception-logistics-sardica",
+  "order": 20,
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": false,
+  "hubCount": 6,
+  "minimumHubSeparationTiles": 80.31,
+  "nearestPair": [
+    "hub-1",
+    "hub-6"
+  ],
+  "allHubRadiiAndMainOffsetsInFrame": true,
+  "allRoutesLandMode": true,
+  "noWaterPolygonOrDEMProvided": true,
+  "waterMeaning": "No visible clipped control does not establish absence ofVladaya/local drainage or thermal infrastructure; no historical343 land mask/navigation certified.",
+  "architectRasterInspected": true,
+  "svgSha256": "9360a1ba52d25fca7161861444d63853cd06eb5adfcd59726ba3c7dc826d345f",
+  "referencePhotoPixelInspection": "Original720×404decumanus photo inspected; modern railings/display, no georeferenced city plan or certified343phase",
+  "nativeAndBalance": "pending"
+}

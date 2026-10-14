@@ -321,7 +321,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Act**: act-4
 - **ScenarioId**: 20-separate-reception-logistics-sardica
 - **Order**: 20
-- **HistoricalFrame**: 343 CE; alternative342/344not excluded; geography=sardica; core=separate-reception-logistics
+- **HistoricalFrame**: 343 CE as an editorial frame; 342/344 alternatives and source chronology qualified; geography=sardica; core=separate-reception-logistics
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/20-separate-reception-logistics-sardica: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."

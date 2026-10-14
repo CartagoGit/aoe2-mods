@@ -67,3 +67,7 @@ These three files are CDN-recompressed research copies; pixel dimensions are pre
 ## Nicomedia regional locator, 14 October2026
 
 `geography/nicomedia-modern-locator.png`: San Jose, 19 January2006, [source](https://commons.wikimedia.org/wiki/File:Karte_Nikomedia.png), [CC BY-SA3.0](https://creativecommons.org/licenses/by-sa/3.0/) selected from the file’s dual offer. Original PNG unchanged; exact bytes and SHA-256 in reference-manifest.json. Attribution and ShareAlike apply to adaptations. Architect inspected the raster: contemporary borders/national labels and broad relief; no ancient street plan or imperial-letter address. Research only, production approval false.
+
+## Serdica decumanus reference,14October2026
+
+`images/serdica-decumanus-modern.jpg`: Grantscharoff,1September2011, [source](https://commons.wikimedia.org/wiki/File:SerdicaDecumanus.jpg), [CC BY-SA3.0](https://creativecommons.org/licenses/by-sa/3.0/). Original720×404JPEG unchanged; bytes/SHA256 in manifest. Architect inspected actual raster, with conservation rails/display and mixed visible fabric. Research only, no dated343scene, georeferenced plan or certified council building. Attribution and ShareAlike apply to adaptations.

@@ -686,6 +686,55 @@
         }
       ],
       "approval": "architect regional candidate; independent archaeology, land mask, relief and native navigation pending"
+    },
+    {
+      "id": "sardica",
+      "name": "Serdica/centralSofia basin local reception context",
+      "bbox": [
+        23.29,
+        42.675,
+        23.355,
+        42.72
+      ],
+      "coordinatesStatus": "modern regional locator and fictional local activity districts; no surveyed343 urban parcels",
+      "north": "top",
+      "terrain": "Sofia basin and low local grades;Vitosha southern context outside local frame",
+      "water": "Vladaya/local drainage and thermal-water infrastructure require dated control; no inventedIskar city crossing",
+      "hills": "No fictitious mountain gate or deep gorge within ordinary city courts",
+      "roads": "Proposed local streets; ancient decumanus/core and wall limits require separate phases",
+      "anachronisms": "Exclude modern subway,Largo,mosque,lateVgate tower andVIresidence/extra walls",
+      "sourceIds": [],
+      "referenceAsset": "serdica-decumanus-modern",
+      "landmarks": [
+        {
+          "id": "serdica-modern-core",
+          "name": "Modern centralSerdica locator, not council venue",
+          "lonLat": [
+            23.321,
+            42.698
+          ],
+          "certainty": "approximate modern regional anchor; no certified343building"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "No surveyed343streams/water polygons supplied",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth"
+      ],
+      "sources": [
+        {
+          "url": "https://sofiahistorymuseum.bg/en/chain-offices/serdica-ancient-cultural-and-communicative-complex",
+          "locator": "Institutional modern site/phase overview; basilica as venue qualifiedpresumably"
+        },
+        {
+          "url": "https://www.sofiahistorymuseum.bg/en/chain-offices/west-gate-of-serdica-archeological-park",
+          "locator": "II/III–IV walls versus lateV/VI phases distinguished"
+        }
+      ],
+      "approval": "architect regional candidate; independent dated archaeology,DEM/streams/road footprints/native navigation pending"
     }
   ]
 }
