@@ -32,14 +32,16 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
 - global_gate: e2e
 
 ### S1 — Contratos de fases y transacciones idempotentes
-- **Status**: pending
+- **Status**: in-progress
 - **Files**: `packages/schemas`, `packages/gameplay-validation`, `packages/gameplay-state`, `packages/scenario-compiler`, `packages/aoe2-adapter/native-campaign.renderer.ts`, `tests/unit/phase-ledgers.test.ts`, `docs/decisions/0004-composed-objectives-profile-v2.md`, `docs/architecture/overview.md`
 - **Gate**: e2e
 - acceptance:
   - "Operaciones de objectivePlan explícitas, entrega por entidad sin doble cobro, recurso total atómico, supervivientes 6/8, phase-clock relativo; reusar bring/resource/diplomacy cuando sean suficientes."
   - "Pruebas de destrucción temprana, reentrada, múltiples predicados/tick, copias, pago único y guardado; ADR y migración sin renumerar IDs."
-- review-state: in_review
+- review-state: changes_requested
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-sol
+- review-log: requested_changes by gpt-6.1-sol — P1: duplicate exportedLedgers IDs pass structural validation/compilation and overwrite recipient identities in computeExportedLedgers. Independent reproduction on integrated 0fd5e0d: objective-a exports served twice from receive-a/receive-b; compiler accepts, served becomes [receiver-a], valid unit-a withdrawal cannot latch despite both deliveries. Reject duplicate ledger IDs per objective and add an adversarial compiler/reducer regression. P2: duplicate enemyRoster.mobilizations IDs also pass; reducer.find releases only first cohort. Reject duplicate wave IDs. Independent gate passes 86/86,289 expectations and export3variants/2round-trips, gameVerified=false; passing tests do not close these findings. No verdict on S2/S3/S4 or historical/native/game QA.
 
 ### S2 — Mapa y transporte geográfico
 - **Status**: pending
