@@ -383,9 +383,9 @@ ES: La nota registra nuestra acogida imaginada, no es una carta real.
 
 ### o4 / phase-4
 
-EN: Bring all three distinct check-in notes to the central reception accounts. Each household pair keeps its assigned host.
+EN: Bring all three distinct check-in notes to the central reception accounts. Each household pair’s earlier reception is recorded at its assigned host; this does not require it to remain there.
 
-ES: Lleva las tres notas distintas de acogida a las cuentas centrales. Cada pareja de hogares conserva su anfitrión asignado.
+ES: Lleva las tres notas distintas de acogida a las cuentas centrales. La acogida anterior de cada pareja de hogares consta en su anfitrión asignado; no exige que permanezca allí.
 
 ```json
 {
@@ -429,60 +429,15 @@ ES: Lleva las tres notas distintas de acogida a las cuentas centrales. Cada pare
         "imperial-church.21-returning-households-escort-alexandria.southern-checkin-note-1": "imperial-church.21-returning-households-escort-alexandria.destination-3"
       },
       "oncePerEntity": true
-    },
-    {
-      "kind": "entity-state",
-      "requiredCount": 2,
-      "state": "arrived",
-      "id": "req-4",
-      "entities": [
-        "imperial-church.21-returning-households-escort-alexandria.western-returning-households-1",
-        "imperial-church.21-returning-households-escort-alexandria.western-returning-households-2"
-      ],
-      "destinations": {
-        "imperial-church.21-returning-households-escort-alexandria.western-returning-households-1": "imperial-church.21-returning-households-escort-alexandria.destination-4",
-        "imperial-church.21-returning-households-escort-alexandria.western-returning-households-2": "imperial-church.21-returning-households-escort-alexandria.destination-4"
-      },
-      "oncePerEntity": true
-    },
-    {
-      "kind": "entity-state",
-      "requiredCount": 2,
-      "state": "arrived",
-      "id": "req-5",
-      "entities": [
-        "imperial-church.21-returning-households-escort-alexandria.eastern-returning-households-1",
-        "imperial-church.21-returning-households-escort-alexandria.eastern-returning-households-2"
-      ],
-      "destinations": {
-        "imperial-church.21-returning-households-escort-alexandria.eastern-returning-households-1": "imperial-church.21-returning-households-escort-alexandria.destination-5",
-        "imperial-church.21-returning-households-escort-alexandria.eastern-returning-households-2": "imperial-church.21-returning-households-escort-alexandria.destination-5"
-      },
-      "oncePerEntity": true
-    },
-    {
-      "kind": "entity-state",
-      "requiredCount": 2,
-      "state": "arrived",
-      "id": "req-6",
-      "entities": [
-        "imperial-church.21-returning-households-escort-alexandria.southern-returning-households-1",
-        "imperial-church.21-returning-households-escort-alexandria.southern-returning-households-2"
-      ],
-      "destinations": {
-        "imperial-church.21-returning-households-escort-alexandria.southern-returning-households-1": "imperial-church.21-returning-households-escort-alexandria.destination-6",
-        "imperial-church.21-returning-households-escort-alexandria.southern-returning-households-2": "imperial-church.21-returning-households-escort-alexandria.destination-6"
-      },
-      "oncePerEntity": true
     }
   ],
   "neverUseTimerInstead": true
 }
 ```
 
-EN: Three separate local reception records are accounted for; all six original households remain safe.
+EN: Three separate local reception records are accounted for; all six original households must still be alive.
 
-ES: Constan tres registros locales separados de acogida; los seis hogares originales permanecen a salvo.
+ES: Constan tres registros locales separados de acogida; los seis hogares originales deben seguir vivos.
 
 EN: The total matters. So does every address beneath it.
 
@@ -2245,7 +2200,7 @@ ES: Observa accesos continentales propuestos, no una procesión triunfal autént
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.handover / after fact-intro | collection-narrator | Marcus now speaks from received family accounts. He was about twelve and was not present in Alexandria. | Marco toma la palabra a partir de relatos familiares recibidos. Tenía unos doce años y no estaba en Alejandría. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.persona-intro / after handover | imperial-clerk | I was twelve, far from these streets. The account reached me through family papers, and I understood a return as one line being restored to its proper heading. Years later I learned how little a heading tells the people waiting for a bed. This is their imagined work, remembered through a story I received. | Tenía doce años y estaba lejos de estas calles. El relato me llegó por papeles familiares y entendí el regreso como una línea devuelta a su encabezamiento correcto. Años después aprendí lo poco que un encabezamiento dice a quienes esperan una cama. Este es su trabajo imaginado, recordado mediante una historia que recibí. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.historical-license / after persona-intro | none | The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration. | Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida. |
-| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.route-help / available from start; repeatable without effect | none | Three original household pairs have three different hosts. Their 150 food shares are equal, but wood is 30 west,40 east and 30 south. The same three original helpers split one per host. Each host prepares its own check-in note after that reception and provision payment; take the three different notes to the central accounts. The households stay at their assigned hosts. Optional wayfarers are separate, and no objective moves the historical bishop or reconstructs his route. | Tres parejas originales de hogares tienen tres anfitriones distintos. Sus asignaciones de 150 alimento son iguales, pero la madera es 30 al oeste,40 al este y 30 al sur. Los mismos tres ayudantes originales se reparten uno por anfitrión. Cada anfitrión prepara su nota propia tras esa acogida y el pago de provisiones; lleva las tres notas diferentes a las cuentas centrales. Los hogares permanecen con sus anfitriones asignados. Los caminantes opcionales son independientes y ningún objetivo mueve al obispo histórico ni reconstruye su ruta. |
+| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.route-help / available from start; repeatable without effect | none | Three original household pairs have three different hosts. Their 150 food shares are equal, but wood is 30 west,40 east and 30 south. The same three original helpers split one per host. Each host prepares its own check-in note after that reception and provision payment; take the three different notes to the central accounts. Their earlier receptions stay recorded; this circuit does not certify current residence. Optional wayfarers are separate, and no objective moves the historical bishop or reconstructs his route. | Tres parejas originales de hogares tienen tres anfitriones distintos. Sus asignaciones de 150 alimento son iguales, pero la madera es 30 al oeste,40 al este y 30 al sur. Los mismos tres ayudantes originales se reparten uno por anfitrión. Cada anfitrión prepara su nota propia tras esa acogida y el pago de provisiones; lleva las tres notas diferentes a las cuentas centrales. Sus acogidas anteriores siguen registradas; este circuito no acredita residencia actual. Los caminantes opcionales son independientes y ningún objetivo mueve al obispo histórico ni reconstruye su ruta. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.economy-help / always | none | Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once. | Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o1-goal / phase-1 active | none | Visit the three marked hosts and register all six original returning households and three local helpers. | Visita los tres anfitriones señalados y registra los seis hogares originales que regresan y los tres ayudantes locales. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o1-receipt / o1 latched once | none | All three hosts and the nine original local participants are registered. | Quedan registrados los tres anfitriones y los nueve participantes locales originales. |
@@ -2256,8 +2211,8 @@ ES: Observa accesos continentales propuestos, no una procesión triunfal autént
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o3-goal / phase-3 active | none | Send one original helper to each host. Prepare each separate check-in note from its own received household pair and the provision payment already made. | Envía un ayudante original a cada anfitrión. Prepara cada nota separada de acogida a partir de su propia pareja de hogares recibida y del pago de provisiones ya realizado. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o3-receipt / o3 latched once | none | One helper and one distinct local note are assigned to each host; the provisions are not charged again. | Cada anfitrión tiene un ayudante y una nota local distinta; las provisiones no vuelven a cobrarse. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o3-reaction / after o3 receipt | imperial-clerk | The note is a record of our imagined reception, not a royal letter. | La nota registra nuestra acogida imaginada, no es una carta real. |
-| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o4-goal / phase-4 active | none | Bring all three distinct check-in notes to the central reception accounts. Each household pair keeps its assigned host. | Lleva las tres notas distintas de acogida a las cuentas centrales. Cada pareja de hogares conserva su anfitrión asignado. |
-| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o4-receipt / o4 latched once | none | Three separate local reception records are accounted for; all six original households remain safe. | Constan tres registros locales separados de acogida; los seis hogares originales permanecen a salvo. |
+| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o4-goal / phase-4 active | none | Bring all three distinct check-in notes to the central reception accounts. Each household pair’s earlier reception is recorded at its assigned host; this does not require it to remain there. | Lleva las tres notas distintas de acogida a las cuentas centrales. La acogida anterior de cada pareja de hogares consta en su anfitrión asignado; no exige que permanezca allí. |
+| scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o4-receipt / o4 latched once | none | Three separate local reception records are accounted for; all six original households must still be alive. | Constan tres registros locales separados de acogida; los seis hogares originales deben seguir vivos. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.o4-reaction / after o4 receipt | imperial-clerk | The total matters. So does every address beneath it. | El total importa. También cada dirección que hay debajo. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.side-1-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at the independent neighbors’ courts. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en los patios de los vecinos independientes. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.imperial-church.21-returning-households-escort-alexandria.odyssey.side-1-complete / side-1 completed | none | Neighbors outside the main reception completed. Its stated benefit has been granted once. | Vecinos ajenos a la acogida principal: completado. Su ventaja indicada se ha concedido una vez. |
@@ -2374,7 +2329,7 @@ ES: Observa accesos continentales propuestos, no una procesión triunfal autént
       "Three helpers map ordinally one to each host; three arrivals at one court fail.",
       "Each local note derives from its own collected household group and exacto2 req4 payment, without charging again.",
       "All three distinct notes must arrive at accounts; one note copied three times fails.",
-      "Main households stay at their assigned receivers in the final phase, alive; no departure of the bishop is simulated.",
+      "Main households must remain alive; host arrival is historical reception only, not current residence or bishop movement.",
       "All seven sides can be omitted; no hidden deadline, initial visibility completion or optional-loss main defeat.",
       "Marcus about12 has received family stories, no adult clerk memories or Alexandria placement.",
       "Anonymous annalist is not Athanasius authoring his autobiography; Paophi24 and conversion remain qualified.",

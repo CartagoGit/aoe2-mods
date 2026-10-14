@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 22
+    "authoredDossierCount": 24
   },
   "continuity": {
     "recommendedPrevious": [
@@ -214,8 +214,8 @@ Historical year band: [343, 359]. Sardica, exilios y fórmulas rivales; Marcus c
 | 20 / 20-separate-reception-logistics-sardica | The Council That Divided / El concilio que se dividió | 343 CE as an editorial frame; 342/344 alternatives and source chronology qualified | sardica | separate-reception-logistics |
 | 21 / 21-returning-households-escort-alexandria | The Road Back to Alexandria / El camino de vuelta a Alejandría | 21 October 346 CE | alexandria | returning-households-escort |
 | 22 / 22-civilian-record-preservation-milan | The Dispatch from Gaul / El despacho desde la Galia | 350 CE; reception of news, killing site not asserted; Constantius not yet sole emperor | milan | civilian-record-preservation |
-| 23 / 23-bounded-political-pressure-milan | Seals at the Western Synod / Sellos en el sínodo occidental | 355 CE; Milan hearing focus | milan | bounded-political-pressure |
-| 24 / 24-night-civilian-withdrawal-alexandria | The Night of the Open Doors / La noche de las puertas abiertas | 356 CE; Alexandria local event, no omniscient private dialogue | alexandria | night-civilian-withdrawal |
+| 23 / 23-bounded-political-pressure-milan | The Seal and the Exile / El sello y el destierro | 355 CE; Milan hearing focus | milan | bounded-political-pressure |
+| 24 / 24-night-civilian-withdrawal-alexandria | The Night of the Open Doors / La noche de las puertas abiertas | 356 CE; night of Mechir13/14 in the anonymous chronicle, civil conversion qualified | alexandria | night-civilian-withdrawal |
 | 25 / 25-delegate-and-draft-network-rimini | A Formula on the Adriatic Road / Una fórmula en la calzada del Adriático | 359 CE; Western council, Seleucia off-map comparison | rimini | delegate-and-draft-network |
 
 The proposed act curve is a calibration hypothesis. It cannot add fictional military opposition to a peaceful event or change a documented outcome.
@@ -1063,9 +1063,9 @@ Limit: LateIII/earlyIV wall rebuilding and eastern extension provide broad urban
 
 Limit: LateIII/earlyIV circus is distinct from itsVIII–IXbell-tower adaptation and later events. No350 dispatch reception venue, route widths, exact ancient drainage or figure reuse right established.
 
-### 23. Seals at the Western Synod
+### 23. The Seal and the Exile
 
-[Candidate source](https://www.newadvent.org/fathers/2820.htm): Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm
+[Candidate source](https://www.newadvent.org/fathers/2820.htm): Sozomen HE IV.9, Milan council passage, distinguished from later Alexandria account; Markauskas2015 printed72–73
 
 Research candidate (not yet approved narration): Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.
 
@@ -1073,7 +1073,9 @@ La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atana
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/23-bounded-political-pressure-milan/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops were exiled.
 
@@ -1081,17 +1083,25 @@ ES: Sozomeno describe un concilio en Milán en el que se presionó a los obispos
 
 [Consulted source](https://www.newadvent.org/fathers/2820.htm): Athanasius Historia Acephala and Apologia de Fuga checked for February 356 church raid/escape; no evidence for the Milan hearing in this source.
 
-Limit: Episode has wrong local event/date alignment: Milan hearing and Alexandria raid are distinct episodes. Athanasius is a partisan witness; figures and adversary descriptions require caution.
+Limit: Historical collection record retained as provenance, superseded for current selection. Episode has wrong local event/date alignment: Milan hearing and Alexandria raid are distinct episodes. Athanasius is a partisan witness; figures and adversary descriptions require caution.
 
-Status: disputed
+Status: superseded-candidate-only
 
 [Additional consulted passage](https://www.newadvent.org/fathers/26024.htm): Sozomen, Ecclesiastical HistoryIV.9, Milan council
 
 Limit: Later partisan church history; its theological judgements are attributed to the author. Conventional355 date and exact local hearing logistics are not independent court records. This event is distinct from the Alexandria night raid in356.
 
+[Additional consulted passage](https://www.newadvent.org/fathers/26024.htm): Sozomen HE IV.9, council paragraph and immediate outcome
+
+Limit: Later pro-Nicene narration; fear/fraud/motives and providential judgment are authorial. No reliable exact attendance, synod room or private transcript. Avoid importing his inconsistent bishop/place label or assembled exile list as attendance proof.
+
+[Additional consulted passage](https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF): Melissa Markauskas2015, From Privilege to Proscription, selected printed72–74; physical PDF72–74, zero71–73
+
+Limit: Milan355, differentiated responses and Hilary nonattendance; synod and separate Liberius legal anecdote distinct. Rimini359 belongs to next episode. Secondary argument, no venue plan. Copyright retained by author, temporary research PDF not copied into project assets.
+
 ### 24. The Night of the Open Doors
 
-[Candidate source](https://www.newadvent.org/fathers/2820.htm): Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm
+[Candidate source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala IV.5, with later transfer V.6 distinguished; Athanasius Apologia de Fuga24–25
 
 Research candidate (not yet approved narration): Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.
 
@@ -1099,17 +1109,31 @@ La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atana
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
-Architect-corrected claim EN: Athanasius reports a nighttime military entry into a church in Alexandria and his escape in 356. This is his partisan testimony, not a neutral transcript or an episode at Milan.
+[Authored episode dossier](episodes/24-night-civilian-withdrawal-alexandria/15-odyssey-dossier.md) — independent approval pending
 
-ES: Atanasio relata una entrada militar nocturna en una iglesia de Alejandría y su huida en 356. Es su testimonio partidista, no una transcripción neutral ni un episodio ocurrido en Milán.
+Architect-corrected claim EN: Athanasius describes a nighttime military assault and his escape from an Alexandrian church. The anonymous Historia Acephala IV.5 identifies Theonas and the night of Mechir13/14; exact civil conversion and building footprint are qualified. Later church transfer and George’s357 arrival are separate. Eight playable civilians, their road junction and finite combat roster are explicit local fiction, not a verified assault headcount or control of the bishop’s fate.
+
+ES: Atanasio describe un asalto militar nocturno y su huida de una iglesia alejandrina. La Historia Acephala anónima IV.5 identifica Theonas y la noche de Mequir13/14; se cualifican conversión civil exacta y huella del edificio. El traslado posterior de iglesias y la llegada de Jorge en357 son hechos separados. Los ocho civiles jugables, su cruce de caminos y plantilla finita de combate son ficción local explícita, no cifras acreditadas del asalto ni control del destino del obispo.
 
 [Consulted source](https://www.newadvent.org/fathers/2814.htm): Athanasius Historia Acephala / Apologia de Fuga; exact raid account checked.
 
-Limit: Potential duplicate with episode 23; source is partisan and the reported troop count is not independently verified. Keep only if the two episodes have distinct historical content.
+Limit: Historical collection record retained as provenance, superseded for current selection. Potential duplicate with episode 23; source is partisan and the reported troop count is not independently verified. Keep only if the two episodes have distinct historical content.
 
-Status: disputed
+Status: superseded-candidate-only
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2814.htm): Athanasius Apologia de Fuga24–25; §6 read only to distinguish later sequence
+
+Limit: Apologetic self-defense and providential framing are attributed. More-than5000 is source assertion, not independently verified or native population requirement. No verbatim dialogue or theological damage modifier.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala IV.5 and V.6
+
+Limit: Fragment/old edition conversions, no certified civil-calendar conversion or excavated356church parcel. June356church transfer/George357 differ from initialFebruary night.
+
+[Additional consulted passage](https://www.cealex.org/evenement/cartalex-is-online/): CEAlex CartAlex layer dates and institutional GIS announcement
+
+Limit: Multi-date controls do not certify Theonas address,356streets/coastline or reuse license. No institutional map copied.
 
 ### 25. A Formula on the Adriatic Road
 
