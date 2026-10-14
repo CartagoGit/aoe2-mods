@@ -26,4 +26,4 @@ Tyre’s six fictional mainland courts never identify a beach synod venue and no
 
 ## Validation
 
-Regeneration and design integrity passed with the counts above. Full declared validation gate result recorded after execution; no adapter edits, native export or actual game QA claimed. Official DelendAI publication tests the proposed merge against develop.
+Regeneration and design integrity passed with the counts above. Full declared validation gate passed:86 Bun tests /289 assertions, type/format, documentation and campaign checks; no adapter edits, native export or actual game QA claimed. Official DelendAI publication tests the proposed merge against develop.
