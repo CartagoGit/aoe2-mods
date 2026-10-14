@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 19
+    "authoredDossierCount": 20
   },
   "continuity": {
     "recommendedPrevious": [
@@ -211,7 +211,7 @@ Historical year band: [343, 359]. Sardica, exilios y fórmulas rivales; Marcus c
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
-| 20 / 20-separate-reception-logistics-sardica | The Council That Divided / El concilio que se dividió | 343 CE; alternative342/344not excluded | sardica | separate-reception-logistics |
+| 20 / 20-separate-reception-logistics-sardica | The Council That Divided / El concilio que se dividió | 343 CE as an editorial frame; 342/344 alternatives and source chronology qualified | sardica | separate-reception-logistics |
 | 21 / 21-returning-households-escort-alexandria | The Road Back to Alexandria / El camino de vuelta a Alejandría | 21 October 346 CE | alexandria | returning-households-escort |
 | 22 / 22-civilian-record-preservation-milan | The Dispatch from Gaul / El despacho desde la Galia | 350 CE; reception of news, killing site not asserted; Constantius not yet sole emperor | milan | civilian-record-preservation |
 | 23 / 23-bounded-political-pressure-milan | Seals at the Western Synod / Sellos en el sínodo occidental | 355 CE; Milan hearing focus | milan | bounded-political-pressure |
@@ -953,13 +953,35 @@ La fecha exacta se debate entre 342–344, con 343 habitual. Los cánones sobrev
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/20-separate-reception-logistics-sardica/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Socrates describes western and eastern bishops coming to Sardica, refusing a common conference over participation of Athanasius and Paul, then an eastern withdrawal to a separate council at Philippopolis. His 347 chronology is not adopted here;343 is a qualified editorial frame. Local reception courts are fiction, not two actual synods in the same city or a certified basilica venue.
+
+ES: Sócrates describe la llegada a Sárdica de obispos occidentales y orientales, rechazo de conferencia común por participación de Atanasio y Pablo y posterior retirada oriental a un concilio separado en Filipópolis. Aquí no se adopta su cronología de 347;343 es un marco editorial cualificado. Los patios locales de recepción son ficticios, no dos sínodos reales en la misma ciudad ni sede basilical acreditada.
 
 [Consulted source](https://www.newadvent.org/fathers/3815.htm): Sardica canons page: introduction and selected canons; Anastos link not opened.
 
 Limit: Page’s own date discussion is inconsistent/uncertain (343/344; wider alternatives); avoid a precise date without resolving textual chronology.
 
 Status: disputed
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26012.htm): SocratesHEII20
+
+Limit: Fifth-century Nicene narrative; doctrinal labels/numbers/motive are attributed. Gives347, not selected343. Eastern separate council isPhilippopolis, not local eastern court inSardica. No exact venue or joint reconciliation.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/3815.htm): Old editorial chronology introduction and Greek/Latin canons3–5
+
+Limit: Historical nineteenth-century editorial discussion and variant transmissions, not settled current consensus.343/344 discussion internally inconsistent wording; no proof of precise starting day. Canonical appeals are prescriptions, not every-case enforcement or a universal papacy game score.
+
+[Additional consulted passage](https://sofiahistorymuseum.bg/en/chain-offices/serdica-ancient-cultural-and-communicative-complex): Institutional site description and phase/venue qualifications
+
+Limit: Visible structures mixII–III/IV–VI and later phases. Protogenes basilica as council venue is explicitlypresumably, not a certified address. Leontius residence lateVI cannot be343. Current conservation/exhibition not ancient state.
+
+[Additional consulted passage](https://www.sofiahistorymuseum.bg/en/chain-offices/west-gate-of-serdica-archeological-park): West gate and fortification phase overview
+
+Limit: EarliestII wall/III–IV reconstruction distinct from pentagonal gate tower aftermidV and addedV–VI belt. No copying current walls into343 or historical public-gate dimensions from undated image.
 
 ### 21. The Road Back to Alexandria
 

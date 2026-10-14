@@ -31,3 +31,6 @@ Architect inspected all three episode SVG rasters and corrected19’s initial sa
 ## Validation
 
 Regeneration and static design integrity pass with the counts above. Full declared gate passed:86 Bun tests/289 assertions, type/format, documentation and campaign checks. No adapter edits, native export, actual played balance or formal approval claimed. DelendAI publication validates the proposed merge against develop.
+
+
+The [independent technical review](imperial17-19-independent-review.md) by gpt-6.1-sol found no new P1/P2 in these static episode contracts. It independently read only the sources itemized there and does not approve full history/native/playability. The [mechanical peer audit](../../research/odyssey-research/imperial15-19-peer-map-control-audit.json) by gpt-6-luna checks29 hubs/87 main identities and offset zones, with the actual650/399 scale; it certifies no ancient terrain. Later infrastructure uniqueness corrections are documented separately and do not promote any historical draft.
