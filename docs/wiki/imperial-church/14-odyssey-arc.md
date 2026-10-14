@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 16
+    "authoredDossierCount": 19
   },
   "continuity": {
     "recommendedPrevious": [
@@ -841,13 +841,31 @@ Relatos sobre circunstancias milagrosas son polémicos.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/17-rumour-and-source-investigation-constantinople/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Later church historians place Arius’s death at Constantinople before an anticipated readmission.336 is one defended modern chronology, not a date numbered by SozomenII 29–30. Bodily circumstances, exact site, causes and providential explanations are uncertain or polemical. This fictional local rumour exercise certifies no cause and stages no death.
+
+ES: Historiadores eclesiásticos posteriores sitúan la muerte de Arrio en Constantinopla antes de una readmisión prevista.336 es una cronología moderna defendida, no una fecha numerada por SozomenoII 29–30. Las circunstancias corporales, lugar exacto, causas y explicaciones providenciales son inciertos o polémicos. Este ejercicio local ficticio de rumores no acredita causa ni escenifica una muerte.
 
 [Consulted source](https://www.newadvent.org/fathers/26022.htm): Sozomen HE II.30 (New Advent 26022), account of Arius’ death.
 
 Limit: Sozomen presents the death as providential punishment and explicitly reports hearsay; date 336 is not established by this passage. The cited dossier URL 26023 is Book III and is wrong for II.29.
 
 Status: disputed
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26022.htm): SozomenHEII29–30
+
+Limit: Fifth-century providential author; reports competing explanations and embeds Athanasius account. Not contemporary neutral medical/venue evidence, no numbered336 date. Candidate26023 is wrong book.
+
+[Additional consulted passage](https://academic.oup.com/past/issue/227/1): Publisher issue metadata; EllenMuehlberger2015, Past&Present227(1):3–29, DOI10.1093/pastj/gtu042
+
+Limit: Initial delegated author SarahBond was wrong and is corrected. Paper examines legendary/rumour development and later represented space; does not establish actual336 latrine coordinates or death cause. No figure/PDF copied.
+
+[Additional consulted passage](https://academic.oup.com/jts/article-abstract/60/1/109/1684824): TimothyBarnes2009, TheExileandRecallsofArius, abstract, DOI10.1093/jts/flp003
+
+Limit: Argues335 recall/336 death against earlier dating. Supports a defended chronology rather than unquestioned precise date or graphic narrative.
 
 ### 18. The Court without Its Emperor
 
@@ -859,13 +877,31 @@ Bautismo de Silvestre es leyenda posterior.
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/18-administrative-transition-nicomedia/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Eusebius reports Constantine’s final illness, baptism in Nicomedia’s suburbs, Pentecost death and transfer of his body to Constantinople.22May 337 is a conventional calendrical date, not a numeral in VCIV 64. Eusebius names no baptizer; Jerome later names Eusebius of Nicomedia with a polemical gloss. Exact villa/site and motive remain unverified here.
+
+ES: Eusebio refiere enfermedad final de Constantino, bautismo en los alrededores de Nicomedia, muerte en Pentecostés y traslado de su cuerpo a Constantinopla.22mayo 337 es una fecha calendárica convencional, no un número enVCIV 64. Eusebio no nombra oficiante; Jerónimo nombra después a Eusebio de Nicomedia con comentario polémico. Villa o lugar exactos y motivo siguen sin acreditarse aquí.
 
 [Consulted source](https://www.newadvent.org/fathers/25024.htm): Eusebius VC IV.61–64 checked for baptism and death at Nicomedia.
 
 Limit: The narrative is an imperial Christian encomium; day 22 May is not independently verified by the passage checked.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/25024.htm): VCIV61–66
+
+Limit: Christian imperial encomium; reconstructed speeches not stenography. Nicomedia suburbs and Pentecost named, no exact22May numeral, officiating bishop name or Achyron villa in this span. Body transfer to Constantinople off-map, itinerary not supplied.
+
+[Additional consulted passage](https://www.tertullian.org/fathers/jerome_chronicle_03_part2.htm): Chronicle annal337 baptism note and nearby death notice
+
+Limit: Late-fourth-century chronicle names EusebiusNic and appends doctrinal blame. Nearby death notice lies in a confusing year-column sequence and readsAncyra nearNicomedia; no corrected precise villa coordinate is inferred. Not eyewitness diary.
+
+[Additional consulted passage](https://bmcr.brynmawr.edu/2006/2006.04.03/): JanDrijvers2006 review of MarilenaAmerise2005, selected source survey
+
+Limit: Corrects initial delegated authorHansPohlsander. Review prints377 in illness sentence, a typo excluded from chronology; its22May337 date is conventional. Achyron probable, not recovered game building. No deliberate omission motive treated as established.
 
 ### 19. Three Seals, One Inheritance
 
@@ -877,13 +913,35 @@ La sucesión estuvo marcada por violencia contra miembros de la familia imperial
 
 Knowledge: inherited family papers, not direct adult memory. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/19-competing-dispatches-constantinople/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: After Constantine’s death, sources report succession arrangements and Dalmatius’s killing by soldiers. Eutropius says Constantius permitted rather than ordered it; later accounts and modern criticism contest responsibility. Some surviving accounts share a lost-source tradition. Constantinople here is court context, not a proven massacre address. Local household defense is disclosed fiction, not rescuing named historical victims.
+
+ES: Tras la muerte de Constantino, las fuentes refieren arreglos sucesorios y muerte de Dalmacio a manos de soldados. Eutropio dice que Constancio permitió más que ordenó el hecho; relatos posteriores y crítica moderna discuten responsabilidad. Algunos relatos conservados comparten una tradición de fuente perdida. Constantinopla aquí es contexto de corte, no dirección acreditada de la matanza. La defensa local de hogares es ficción declarada, no rescate de víctimas históricas nombradas.
 
 [Consulted source](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.1 / II.25 identified as relevant narrative; checked introductory framing and selected passage context.
 
 Limit: Not a contemporary dispatch; exact territorial division and timing need passage-level audit before detailed map/campaign claims.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26012.htm): SocratesHEII2 andII25
+
+Limit: Fifth-century Nicene historian; court doctrinal motives attributed. II25 retrospectively describes Dalmatius killed by troops without Constantius ordering/forbidding; later340/350 events are not337 gameplay. II2 eastern will-share does not prove instantaneous permanent partition.
+
+[Additional consulted passage](https://dcc.dickinson.edu/eutropius/10-9): EutropiusBreviarium10.9.1;10.9.2 laterAquileia distinct
+
+Limit: Compressed politically framed source; permitted rather than ordered wording does not independently prove complete command/motive. Aquileia340 and Constans350 deaths remain outside337.
+
+[Additional consulted passage](https://www.gottwein.de/Lat/AurVict/vict_epit41.php): AnonymousEpitomedeCaesaribus41.15–20 Latin
+
+Limit: Anonymous later epitome, not AureliusVictor proper despite page branding. Regional-share list includesDalmatius/Hannibalianus and compresses events; no permanent instantaneous three-only constitutional partition or killing address inferred.
+
+[Additional consulted passage](https://constantinethegreatcoins.com/articles/Burgess_THE_SUMMER_OF_BLOOD_The_Great_Massacre_of_337_and_the_Promotion_of_the_Sons_of_Constantine.pdf): BurgessDOP62(2008), selected printed14–15: physicalPDF11–12, zero-based10–11; note45/source dependence
+
+Limit: Corrects delegated claimzero-index10=printed15: actualzero10=printed14. Reconstructs lostKaisergeschichte dependence, official versions and alternative accusations. Modern scholarly inference attributed, no automatic motive/adjudication. No explicit figure/free-reuse license checked; no copied projectPDF.
 
 ### 20. The Council That Divided
 
