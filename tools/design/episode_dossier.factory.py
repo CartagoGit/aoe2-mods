@@ -376,9 +376,12 @@ def dossier_screens(cid, selection, authored, episode, narrator_id, next_selecti
         ),
         add(
             "handover",
-            bilingual(
-                "The campaign narrator now speaks from inherited records and accounts.",
-                "El narrador de la campaña toma la palabra a partir de escritos y relatos heredados.",
+            authored.get(
+                "handover",
+                bilingual(
+                    "The campaign narrator now speaks from inherited records and accounts.",
+                    "El narrador de la campaña toma la palabra a partir de escritos y relatos heredados.",
+                ),
             ),
             "after fact-intro",
             "collection-narrator",
