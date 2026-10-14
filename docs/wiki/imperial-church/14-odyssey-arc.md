@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 20
+    "authoredDossierCount": 22
   },
   "continuity": {
     "recommendedPrevious": [
@@ -985,21 +985,43 @@ Limit: EarliestII wall/III–IV reconstruction distinct from pentagonal gate tow
 
 ### 21. The Road Back to Alexandria
 
-[Candidate source](https://www.newadvent.org/fathers/2820.htm): Athanasius, Historia Acephala §§1–2; Socrates, Ecclesiastical History II, regreso y carta imperial: https://www.newadvent.org/fathers/26012.htm
+[Candidate source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala I.1–2, transmitted among Athanasian material; Socrates HE II.23, selected return letters
 
 Research candidate (not yet approved narration): Atanasio vuelve a Alejandría tras su exilio, respaldado por cartas de Constancio II y Constante.
 
 La Historia Acephala conserva cronología alejandrina valiosa; sus lagunas y transmisión fragmentaria aconsejan mantener fecha como día calendárico convertido desde el calendario local.
 
-Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+Knowledge: received family accounts; Marcus about12, no adult clerk recollection or placement in Alexandria. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/21-returning-households-escort-alexandria/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: An anonymous Alexandrian chronicle places Athanasius’ return after time in Rome and Italy on Paophi 24, rendered as 21 October 346 in the consulted edition. Socrates transmits letters concerning his recall. Six local returning households and their reception courts are disclosed fiction; no historical entourage, population count or route of the bishop is reconstructed.
+
+ES: Una crónica alejandrina anónima sitúa el regreso de Atanasio tras su estancia en Roma e Italia en Paofi 24, convertido en 21 de octubre de 346 por la edición consultada. Sócrates transmite cartas relativas a su retorno. Los seis hogares locales que regresan y sus patios de acogida son ficción declarada; no se reconstruyen séquito histórico, cifras de población ni ruta del obispo.
 
 [Consulted source](https://www.newadvent.org/fathers/2820.htm): Historia Acephala §I.2; Socrates HE II contextual account.
 
-Limit: Athanasius’ chronicle is aligned with his side of the dispute; support from imperial letters is broadly reported, but the exact political motives should not be inferred.
+Limit: Anonymous annalistic fragment about Athanasius, not his own autobiographical chronicle. The old edition supplies calendar conversion and bracketed repairs. Transmitted return letters do not certify private motives, ordinary household identities or exact local receiving addresses.
 
 Status: consulted
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala I.1–2
+
+Limit: Paophi24 and old edition conversion; bracketed emendations visible. Not a list of ordinary household migrants, precise entrance gate or historical receiving courtyard.
+
+[Additional consulted passage](https://ccel.org/ccel/schaff/npnf204/npnf204.xxv.ii.i.html): Archibald Robertson, old NPNF editorial introduction to Historia Acephala
+
+Limit: Anonymous annalist under Theophilus, imperfect Latin transmission and internal chronology repairs; editor argues chronological value. His reconstruction is attributed, not a modern consensus or independent author identification from a web heading.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.23, introduction, three imperial letters and opening of Julius letter
+
+Limit: Later Nicene historical narrative transmitting letters. No private royal motives, independent authentication of every letter or exact reception district. No claim to have read the full chapter.
+
+[Additional consulted passage](https://www.cealex.org/evenement/cartalex-is-online/): CEAlex CartAlex institutional announcement
+
+Limit: 1866 reconstruction,1993 archaeological plan and1933–1948 cadastre are distinct layers, not a346 shoreline or dated household parcel. No map reuse license established, no institutional figure copied.
 
 ### 22. The Dispatch from Gaul
 
@@ -1011,7 +1033,9 @@ Socrates vincula el cambio político con nuevos conflictos eclesiásticos, pero 
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/22-civilian-record-preservation-milan/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Later church histories report that Constans was killed in Gaul during the usurpation of Magnentius in 350. Constantius II still faced a rival; this Milan setting receives news from Gaul rather than depicting the killing.
 
@@ -1022,6 +1046,22 @@ ES: Las historias eclesiásticas posteriores relatan que Constante murió en la 
 Limit: Candidate is wrong to say Constantius II became sole emperor in 350; Magnentius remained a rival until defeated in 353. Geographic focus Milan is reception of news, not death site.
 
 Status: disputed
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.25
+
+Limit: Later Nicene ecclesiastical account; war is not reduced to theology, private motives are attributed. Milan is fictional reception, not the killing site. Constantius faces a western rival in350.
+
+[Additional consulted passage](https://www.thelatinlibrary.com/eutropius/eutropius10.shtml): Eutropius Breviarium X.9–12
+
+Limit: Constans killing near the Spanish frontier/Helena is not a Milan killing. Do not pull Magnentius final defeat into350. Exact killing site and event-specific Milan parcel not certified.
+
+[Additional consulted passage](https://www.museoarcheologicomilano.it/it/pagine-virtual-tour/la-torre-poligonale-e-le-mura): Municipal museum description of Maximian wall phases
+
+Limit: LateIII/earlyIV wall rebuilding and eastern extension provide broad urban context. Later medieval names/decorations are not350. Textual descriptions do not identify a storage court or prove absence of ancient small waterways.
+
+[Additional consulted passage](https://www.museoarcheologicomilano.it/web/museo-archeologico-milano/scopri-il-museo/le-torri-romane-e-il-monastero-maggiore/la-torre-del-circo): Municipal museum circus and tower phase description
+
+Limit: LateIII/earlyIV circus is distinct from itsVIII–IXbell-tower adaptation and later events. No350 dispatch reception venue, route widths, exact ancient drainage or figure reuse right established.
 
 ### 23. Seals at the Western Synod
 
