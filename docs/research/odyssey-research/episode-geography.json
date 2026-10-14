@@ -735,6 +735,43 @@
         }
       ],
       "approval": "architect regional candidate; independent dated archaeology,DEM/streams/road footprints/native navigation pending"
+    },
+    {
+      "id": "rimini",
+      "name": "Ariminum, Adriatic urban core and local approaches",
+      "bbox": [
+        12.551,
+        44.053,
+        12.579,
+        44.0655
+      ],
+      "coordinateStatus": "modern approximate anchors; all gameplay courts fictional and359footprints unapproved",
+      "representativePoint": [
+        12.568,
+        44.059
+      ],
+      "representativePointUsage": "modern civic/core orientation only, not synod location or native spawn",
+      "sources": [
+        {
+          "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c.rel_.archeo_0_0.pdf",
+          "locator": "selectedPDF46–48/printed47–49; roads/monuments and phase/unknown-building cautions",
+          "consulted": "2026-10-14"
+        },
+        {
+          "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c_1_2a.pdf",
+          "locator": "cartaarcheologicaC1.2a,actualone-pagepixels inspected; mixedperiodinventory not359landmask",
+          "consulted": "2026-10-14"
+        },
+        {
+          "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c_1_2b.pdf",
+          "locator": "cartaarcheologicaC1.2b,actualpixels inspected; broadmunicipality not359cityparcel",
+          "consulted": "2026-10-14"
+        }
+      ],
+      "terrain": "Adriatic low coastal plain; Covignano/Appennine upland outside this localframe. Proposed urban/periurban land courts, not surveyed excavation addresses.",
+      "waterControlStatus": "Ancient Marecchia/Ausa/Patara reaches and shore/harbor uncertain; modernriverdiversion and missingclippedline cannot certifydryland. Main links require fullwidthbanks/drainage/crossingchecks; no mandatory bridge/sea crossing.",
+      "anachronisms": "No CastelSismondo,TempioMalatestiano, laterarchbattlements, modernriverdiversion or moderntransformationplate as359plan.",
+      "approval": "architect regional candidate; datedhydrology/landmask/phase/DEM/pathfinding and independent archaeologicalauditpending"
     }
   ]
 }

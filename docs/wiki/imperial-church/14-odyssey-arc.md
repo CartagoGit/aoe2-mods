@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 24
+    "authoredDossierCount": 25
   },
   "continuity": {
     "recommendedPrevious": [
@@ -216,7 +216,7 @@ Historical year band: [343, 359]. Sardica, exilios y fórmulas rivales; Marcus c
 | 22 / 22-civilian-record-preservation-milan | The Dispatch from Gaul / El despacho desde la Galia | 350 CE; reception of news, killing site not asserted; Constantius not yet sole emperor | milan | civilian-record-preservation |
 | 23 / 23-bounded-political-pressure-milan | The Seal and the Exile / El sello y el destierro | 355 CE; Milan hearing focus | milan | bounded-political-pressure |
 | 24 / 24-night-civilian-withdrawal-alexandria | The Night of the Open Doors / La noche de las puertas abiertas | 356 CE; night of Mechir13/14 in the anonymous chronicle, civil conversion qualified | alexandria | night-civilian-withdrawal |
-| 25 / 25-delegate-and-draft-network-rimini | A Formula on the Adriatic Road / Una fórmula en la calzada del Adriático | 359 CE; Western council, Seleucia off-map comparison | rimini | delegate-and-draft-network |
+| 25 / 25-delegate-and-draft-network-rimini | The Winter of Divided Voices / El invierno de las voces divididas | 359 CE; Western council, Seleucia off-map comparison | rimini | delegate-and-draft-network |
 
 The proposed act curve is a calibration hypothesis. It cannot add fictional military opposition to a peaceful event or change a documented outcome.
 
@@ -1135,9 +1135,9 @@ Limit: Fragment/old edition conversions, no certified civil-calendar conversion 
 
 Limit: Multi-date controls do not certify Theonas address,356streets/coastline or reuse license. No institutional map copied.
 
-### 25. A Formula on the Adriatic Road
+### 25. The Winter of Divided Voices
 
-[Candidate source](https://www.newadvent.org/fathers/26012.htm): Socrates, Ecclesiastical History II.37–41; la cronología secundaria alojada por CCEL también registra 359: https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf
+[Candidate source](https://www.newadvent.org/fathers/26012.htm): Sulpicius Severus Chronica II.41–44; Socrates HE II.37 with chronology cautions; Markauskas2015 printed73–74
 
 Research candidate (not yet approved narration): Constancio convoca simultáneamente un concilio occidental en Rimini y uno oriental en Seleucia para buscar una fórmula doctrinal común; ambos producen controversias y no una unidad estable.
 
@@ -1145,13 +1145,39 @@ Socrates escribe en el siglo V y es pro-niceno. Los sínodos no fueron una únic
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/25-delegate-and-draft-network-rimini/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: In 359 the western council met at Ariminum, separately from Seleucia. Later pro-Nicene accounts describe rival drafts, delegations, pressure and an eventual disputed settlement. Exact meeting places and a neutral transcript remain unverified.
+
+ES: En 359 el concilio occidental se reunió en Arímino, separado de Seleucia. Relatos posteriores favorables a Nicea describen borradores rivales, delegaciones, presión y un acuerdo final disputado. La sede exacta y una transcripción neutral siguen sin verificar.
 
 [Consulted source](https://www.newadvent.org/fathers/26012.htm): Socrates HE II.37 and II.39–40: Ariminum and Seleucia both met in 359, Seleucia divided into factions; the text places Seleucia meeting on 27 September.
 
 Limit: Socrates is a fifth-century pro-Nicene narrator. The selected page supports that these were separate synods, not that they pursued an identical formula or produced a single outcome.
 
 Status: consulted
+
+[Additional consulted passage](https://www.thelatinlibrary.com/sulpiciusseveruschron2.html): Chronica II.41–44; II.42 distinguishes Seleucia
+
+Limit: Later pro-Nicene account: numbers, age contrasts, alleged fraud and motives remain source claims. Winter/seven-month language attributed, not a real-time survival countdown. Church/empty hall not securely located; Taurus prefect distinct from magistri officialibus. No authentic council draft, signature or bishop role spawned.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26012.htm): HE II.37, complete chapter selected directly
+
+Limit: Fifth-century pro-Nicene history and embedded documents, Greek transmission of Latin drafts. Do not infer neutral verbatim transcript, motives, modern faction taxonomy or exact council room. Embedded Liberius exile sequence is chronologically unsafe; do not move his355exile into359. Nice in Thrace is not Nicaea in Bithynia.
+
+[Additional consulted passage](https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF): Markauskas2015, selected printed73–74; PDFphysical73–74
+
+Limit: Praetorian prefect Taurus, fiscal council arrangements and legal context. No ancient building footprint, creed truth verdict or universal acceptance practice. CopyrightedPDF temporary only.
+
+[Additional consulted passage](https://www.comune.rimini.it/sites/default/files/2021-07/c.rel_.archeo_0_0.pdf): Municipal archaeological report selected PDF46–48, printed47–49; VIII.2 and beginningVIII.3
+
+Limit: Multiphase roads/walls/monuments, uncertain harbor/public buildings and later contraction. Broad urban periods do not certify359 footprint or council venue; later Christian archaeological traces do not disprove fourth-century literary church reports. Report/platemaps not imported as licensed assets.
+
+[Additional consulted passage](https://www.comune.rimini.it/sites/default/files/2021-07/c_1_1_1.pdf): C1.1.1, Analisi evolutiva del centro storico, legend and one-page actualpixels
+
+Limit: Despite generic title this is modern urban transformation, not Roman/359phaseplan. Used only to flag later rebuilding and modern footprint risk. Copyright unresolved, temp only.
 
 ### 26. The Temples Open Again
 

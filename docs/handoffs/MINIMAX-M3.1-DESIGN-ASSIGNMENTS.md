@@ -1,6 +1,6 @@
 # Asignaciones y gates de MiniMax M3.1
 
-El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y las siete de apertura imperial son borradores en revisión, pendientes de escenario nativo.
+El alcance vigente son nueve odiseas y273episodios. Cada episodio tiene un slice mecánico explícito en su propuesta oficial. Las propuestas permanecen bloqueadas: el arquitecto debe cerrar todos los dossiers, capacidades, geografía y nivelación antes de entregar autoría. Las treinta fichas ampliadas de faith-origins y los veinticinco de la odisea imperial son borradores en revisión, pendientes de escenario nativo.
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 

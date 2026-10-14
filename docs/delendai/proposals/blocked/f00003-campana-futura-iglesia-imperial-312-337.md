@@ -378,7 +378,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
   - "Materializar únicamente el expediente aprobado imperial-church/24-night-civilian-withdrawal-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S28 — Episodio 25: A Formula on the Adriatic Road
+### S28 — Episodio 25: The Winter of Divided Voices
 - **Status**: pending
 - **DependsOn**: [S27]
 - **Files**: `staging/campaigns/imperial-church/scenarios/25-delegate-and-draft-network-rimini`, `docs/qa/imperial-church/episodes/25-delegate-and-draft-network-rimini`

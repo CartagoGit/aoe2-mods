@@ -493,6 +493,44 @@
       "productionApproved": false,
       "attributionRequired": true,
       "shareAlikeRequired": true
+    },
+    {
+      "id": "rimini-augustus-arch-modern",
+      "path": "docs/research/odyssey-research/images/rimini-augustus-arch-modern.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Arco_di_Augusto_-_Rimini%2C_Italia.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arco_di_Augusto_-_Rimini,_Italia.jpg",
+      "author": "Gretelix",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-14",
+      "bytes": 1764789,
+      "sha256": "d818161ff161752435df2bfcf0913441f450c740ca16ea7015909955a2d3eec1",
+      "modifications": "None; originalJPEG retained; architect viewedactualpixels",
+      "usage": "Modern survivingmonument researchreference only; no359background,reconstruction,synodvenue or datedbank/crossingcertificate.",
+      "anachronismsAndLimits": "This is a present-day nighttime photograph of the standing monument and its present surroundings, not a reconstruction of Rimini in 359. The visible masonry/upper portions and adjacent structures are present-day fabric; this photograph cannot distinguish Roman fabric from later repair or alteration and must not be used to assert a precise 359 appearance. The file page labels the monument generically as Arco di Augusto; no archaeological phase analysis is provided on that page.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true,
+      "attribution": "Gretelix, ‘Arco di Augusto - Rimini, Italia.jpg’, Wikimedia Commons, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Arco_di_Augusto_-_Rimini,_Italia.jpg (accessed 2026-10-14). Changes: none if used as-is."
+    },
+    {
+      "id": "rimini-tiberius-bridge-modern",
+      "path": "docs/research/odyssey-research/images/rimini-tiberius-bridge-modern.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tiberius-Br%C3%BCcke.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tiberius-Br%C3%BCcke.JPG",
+      "author": "Heiko Trurnit",
+      "license": "Creative Commons Attribution-ShareAlike 2.5 Generic (CC BY-SA 2.5)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "consulted": "2026-10-14",
+      "bytes": 3326190,
+      "sha256": "687e0c44fee5a5f932a42842b453abbbf64f65234600282e16fffadd416c8cd9",
+      "modifications": "None; originalJPEG retained; architect viewedactualpixels",
+      "usage": "Modern survivingmonument researchreference only; no359background,reconstruction,synodvenue or datedbank/crossingcertificate.",
+      "anachronismsAndLimits": "This is a modern photograph of the extant bridge and river; it is not a reconstruction of the bridge or river setting in 359. The Commons caption's 14-21 CE dating is file-page metadata, not an archaeological phase report. Current visible fabric, setting, and repairs cannot by themselves establish the bridge's exact 359 appearance or use. Use only as an object/location reference; do not treat the image as evidence of the council venue or as a period-accurate scene.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true,
+      "attribution": "Heiko Trurnit, ‘Tiberius-Brücke.JPG’, Wikimedia Commons, CC BY-SA 2.5, https://commons.wikimedia.org/wiki/File:Tiberius-Br%C3%BCcke.JPG (accessed 2026-10-14). Changes: none if used as-is."
     }
   ]
 }
