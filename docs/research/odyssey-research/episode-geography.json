@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "id": "caesarea",
+      "name": "Caesarea Maritima and coastal approaches",
+      "bbox": [
+        34.87,
+        32.475,
+        34.965,
+        32.535
+      ],
+      "coordinateStatus": "approximate real-world regional framing; named gameplay districts are fictional and not archaeological addresses",
+      "representativePoint": [
+        34.892471,
+        32.501074
+      ],
+      "representativePointUsage": "gazetteer anchor only; may describe harbor extent, not land spawn",
+      "sources": [
+        {
+          "url": "https://gazetteer.dainst.org/doc/2043494.html",
+          "locator": "Location field, accuracy label3; coordinates in latitude/longitude",
+          "consulted": "2026-10-12"
+        },
+        {
+          "url": "https://en.parks.org.il/new/spectacular-vaults-and-treasures-caesarea-harbor-visitors-center/",
+          "locator": "Harbor vaults and restored visitor center section",
+          "consulted": "2026-10-12"
+        }
+      ],
+      "terrain": "coastal plain; Mediterranean west; interior activity districts east; no claimed surveyed ancient coastline",
+      "waterControlStatus": "modern coastline data must be clipped separately; ancient harbor/coast reconstruction pending",
+      "anachronisms": "no Crusader structures or modern museum in first-century scene; aqueduct phases must be individually dated",
+      "approval": "architect regional candidate; DEM/land mask and independent archaeological audit pending"
+    },
+    {
+      "id": "corinth",
+      "name": "Ancient Corinth, Lechaion and eastern Cenchreae approaches",
+      "bbox": [
+        22.83,
+        37.875,
+        23.065,
+        37.975
+      ],
+      "representativePoint": [
+        22.878323,
+        37.90521
+      ],
+      "representativePointUsage": "modern museum gazetteer control only, not ancient workshop/assembly address",
+      "coordinateStatus": "architect regional bbox and fictional districts; ancient road footprints not certified",
+      "sources": [
+        {
+          "url": "https://gazetteer.dainst.org/doc/2299325.html",
+          "locator": "Location field for modern Archaeological Museum of Ancient Corinth, accuracy3",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://dataservices.ascsa.org/excavations/ancient-corinth/about-the-excavations-1/history-timeline",
+          "locator": "Location/Habitation; search result accessible, direct request timed out",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://lechaion.org/our-excavations/",
+          "locator": "Project scope and AreasA–C; direct page",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Corinthian Gulf north; Acrocorinth south of old city; Saronic Gulf east; distinct harbors, no nineteenth-century Corinth Canal. North–south upper/lower urban terraces need separate terrain calibration.",
+      "waterControlStatus": "modern coast clipped as control; ancient harbor basins, sea level and road geometry pending",
+      "anachronisms": "no modern canal, no Frankish citadel, no later Christian basilicas treated as first-century churches",
+      "approval": "regional authoring candidate; GIS/DEM/footprints/independent archaeological review pending"
+    },
+    {
+      "id": "ephesus",
+      "name": "Roman Ephesus and Kaystros estuary approaches",
+      "bbox": [
+        27.255,
+        37.875,
+        27.405,
+        37.995
+      ],
+      "coordinateStatus": "architect regional frame; exact first-century building/shoreline coordinates not certified",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1018/",
+          "locator": "Description and Outstanding Universal Value: settlements, changing coastline, harbor basin, Kaystros",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Former Kaystros estuary; Roman city amid slopes with harbor access toward west. Modern shoreline is a control and must not replace first-century estuary reconstruction.",
+      "waterControlStatus": "ancient harbor/estuary reconstruction and dated terrain/elevation masks pending",
+      "anachronisms": "no later Celsus library facade or fifth-century pilgrimage churches as first-century setting; no modern Selcuk/visitor infrastructure",
+      "approval": "architect regional candidate; no archaeological address or native pathfinding certification"
+    },
+    {
+      "id": "sardes",
+      "name": "Sardis lower Tmolus foothills and eastern Pactolus approaches",
+      "bbox": [
+        28.015,
+        38.465,
+        28.085,
+        38.525
+      ],
+      "representativePoint": [
+        28.04527777777778,
+        38.481944444444444
+      ],
+      "representativePointUsage": "UNESCO whole Sardis property control; never a household, authorial desk or spawn address",
+      "coordinateStatus": "architect regional frame and fictional activity districts; no second-century footprint certification",
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/1731/maps/",
+          "locator": "component1731-001 Sardis, N38 28 55 E28 2 43; whole property anchor only",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://www.sardisexpedition.org/en/essays/r8-ramage-ch2-hob-introduction",
+          "locator": "Geological history, Pactolus fan, changed courses, HoB, Late Roman walls; Figure2.2 map attribution",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://www.sardisexpedition.org/en/essays/about-synagogue",
+          "locator": "later synagogue phases and restoration, not Melito-era reconstruction",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Tmolus foothills south, Hermus plain north; acropolis steep; Pactolus alluvial fan not an automatic flat urban grid",
+      "waterControlStatus": "schematic Pactolus only; channel has moved and later walls altered drainage; native ancient channel/elevation survey pending",
+      "waterControlLine": {
+        "coordinates": [
+          [
+            28.031,
+            38.465
+          ],
+          [
+            28.031,
+            38.475
+          ],
+          [
+            28.036,
+            38.488
+          ],
+          [
+            28.038,
+            38.502
+          ],
+          [
+            28.034,
+            38.515
+          ],
+          [
+            28.03,
+            38.525
+          ]
+        ],
+        "certainty": "architect schematic relation only, not surveyed current or ancient river centerline; do not rasterize as native water",
+        "renderAs": "river-line"
+      },
+      "anachronisms": "No modern highway/visitor facilities, restored Marble Court or late-antique synagogue mosaics in170–180 scene.",
+      "approval": "regional proposal only; independent archaeological audit, DEM and native corridors pending"
+    },
+    {
+      "id": "lyon",
+      "name": "Lugdunum western hill districts and Saone-side controls",
+      "bbox": [
+        4.78,
+        45.74,
+        4.87,
+        45.805
+      ],
+      "representativePoint": [
+        4.828085,
+        45.771954
+      ],
+      "representativePointUsage": "already-downloaded Natural Earth modern Lyon anchor only; not ancient workshop, tribunal or settlement centroid",
+      "coordinateStatus": "architect local western hill frame; all household courts are fictional and exact gradients remain pending",
+      "sources": [
+        {
+          "url": "https://lugdunum.grandlyon.com/en/a-museum-of-sites/lyon-s-origins",
+          "locator": "Roman foundation/Fourviere development, river neighborhoods, persecution177 and later funerary basilicas",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://lugdunum.grandlyon.com/fr/content/download/528/3680?version=8",
+          "locator": "printed page26 (PDF page26), Plan de Lyon au2esiecle; architect inspected image and legend separating current/hypothetical ancient rivers, supposed city extent, uncertain forum/circus. Golvin panorama is interpretative. PDF fetched temporarily outside repo; no open reuse license verified.",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/",
+          "locator": "manifest ne-odyssey-populated-places, NAME=Lyon; modern representative coordinates",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Fourviere hill west of Saone, Croix-Rousse/Condate across its northern bend; Rhone farther east; ancient/current confluence and streets not interchangeable",
+      "waterControlStatus": "Saone sketch records relative bank only; museum plan distinguishes ancient/current courses. Rhone remains outside the local western activity crop; surveyed second-century hydrology pending",
+      "waterControlLine": {
+        "coordinates": [
+          [
+            4.812,
+            45.805
+          ],
+          [
+            4.813,
+            45.788
+          ],
+          [
+            4.813,
+            45.782
+          ],
+          [
+            4.817,
+            45.776
+          ],
+          [
+            4.828,
+            45.771
+          ],
+          [
+            4.829,
+            45.766
+          ],
+          [
+            4.825,
+            45.759
+          ],
+          [
+            4.823,
+            45.753
+          ],
+          [
+            4.816,
+            45.745
+          ],
+          [
+            4.81,
+            45.74
+          ]
+        ],
+        "certainty": "architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water",
+        "renderAs": "river-line"
+      },
+      "anachronisms": "No modern Fourviere basilica/tunnel, later cathedral or funerary churches, exact amphitheater imprisonment cell or modern river quay assumed in177–200.",
+      "approval": "regional proposal only; no approved historic household addresses, DEM or native pathfinding"
+    },
+    {
+      "id": "egypt-middle-nile",
+      "name": "Oxyrhynchus/el-Bahnasa beside Bahr Yussuf, western Middle Nile valley",
+      "bbox": [
+        30.61,
+        28.515,
+        30.68,
+        28.565
+      ],
+      "representativePoint": [
+        30.65172,
+        28.542574
+      ],
+      "representativePointUsage": "CNR-ISPC named ancient-place gazetteer control; datum unspecified and point is not a building address",
+      "coordinateStatus": "approximate regional frame; fictional care yards and250channel course uncertified",
+      "sources": [
+        {
+          "url": "https://chloe.cnr.it/s/DHeLO/item/1543",
+          "locator": "Oxyrhynchus/Pemje names and latitude/longitude; datum not stated",
+          "consulted": "2026-10-13"
+        },
+        {
+          "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+          "locator": "1998 site plans, modern settlement west of BahrYussuf branch and ferry description; not250hydrology",
+          "consulted": "2026-10-13"
+        }
+      ],
+      "terrain": "Western Nile valley, desert edge west, BahrYussuf branch east of local districts, principal Nile farther east outside crop. Graded floodplain/field activity not continuous desert.",
+      "waterControlStatus": "relative bank sketch only; ancient/current course changes and feeder canals require dated GIS; no native rasterization",
+      "waterControlLine": {
+        "coordinates": [
+          [
+            30.661,
+            28.515
+          ],
+          [
+            30.663,
+            28.53
+          ],
+          [
+            30.664,
+            28.54
+          ],
+          [
+            30.665,
+            28.553
+          ],
+          [
+            30.665,
+            28.565
+          ]
+        ],
+        "certainty": "architect schematic eastern branch relation, not surveyed250channel or modern vector; do not rasterize as native water",
+        "renderAs": "river-line"
+      },
+      "anachronisms": "No Byzantine principal church, later mosque, modern village/grid/canal or nineteenth-century papyrus excavation as250scene.",
+      "approval": "regional candidate only; exact land mask, date-specific banks, footprints and native navigation pending"
+    },
+    {
+      "id": "arles",
+      "name": "Arelate and local left-bank Rhône approaches",
+      "bbox": [
+        4.6,
+        43.65,
+        4.68,
+        43.72
+      ],
+      "coordinateStatus": "architect approximate regional crop; fictional reception courts, not ancient council venue or survey",
+      "representativePoint": [
+        4.6309653,
+        43.6776223
+      ],
+      "representativePointUsage": "candidate modern OSM place anchor only; no council location claimed",
+      "sources": [
+        {
+          "url": "https://www.openstreetmap.org/relation/73911",
+          "locator": "candidate place feature retained from source collection; ODbL1.0 attribution",
+          "consulted": "2026-10-12 collector"
+        },
+        {
+          "url": "https://dossiersinventaire.maregionsud.fr/dossier/IA13004079",
+          "locator": "Presentation/history/description: city left bank, Trinquetaille right bank, boat-bridge uncertainties and later embankments",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            4.625,
+            43.71
+          ],
+          [
+            4.625,
+            43.69
+          ],
+          [
+            4.622,
+            43.68
+          ],
+          [
+            4.615,
+            43.67
+          ],
+          [
+            4.61,
+            43.65
+          ]
+        ],
+        "certainty": "architect schematic modern Rhône regional control; not dated314 banks or bridge footprint",
+        "renderAs": "river-line"
+      },
+      "terrain": "Rhône edge and local city-side lowland with gentle ordinary work-yard access; elevation raster and ancient flood zones unverified",
+      "water": "Rhône west of fictional mandatory courts; Trinquetaille opposite, no mandatory crossing",
+      "hills": "No invented cliffs or mountain passes inside the local frame; exact microtopography pending",
+      "roads": "Proposed local city-side land links only; distant delegate travel remains off-map",
+      "anachronisms": "No modern fixed bridge, embankment, railways, Arles–Fos canal or medieval cathedral façade; boat-bridge chronology disputed",
+      "sourceIds": [],
+      "referenceAsset": null,
+      "landmarks": [],
+      "layerSources": [
+        "natural-earth"
+      ],
+      "approval": "research candidate; independent ancient-footprint, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "cibalae",
+      "name": "Cibalae/Vinkovci and local north-Bosut lowland",
+      "bbox": [
+        18.74,
+        45.275,
+        18.85,
+        45.34
+      ],
+      "coordinateStatus": "architect approximate regional frame; all local assembly/field courts fictional, exact battlefield unverified",
+      "representativePoint": [
+        18.8045248,
+        45.2883771
+      ],
+      "representativePointUsage": "modern candidate OSM place anchor, not ancient battlefield or deployment",
+      "sources": [
+        {
+          "url": "https://grad-vinkovci.hr/geoprometni-polozaj",
+          "locator": "Bosut region between Danube/Sava; modern elevation78–125m",
+          "consulted": "2026-10-13 architect"
+        },
+        {
+          "url": "https://grad-vinkovci.hr/povijest-grada",
+          "locator": "Roman Cibalae identification; municipal314 date does not resolve dispute",
+          "consulted": "2026-10-13 architect"
+        },
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Cibalis battle/retreat paragraphs; exact modern footprint not identified",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            18.747,
+            45.285
+          ],
+          [
+            18.774,
+            45.28
+          ],
+          [
+            18.8,
+            45.284
+          ],
+          [
+            18.825,
+            45.283
+          ],
+          [
+            18.847,
+            45.278
+          ]
+        ],
+        "certainty": "architect schematic Bosut regional control; not measured ancient banks, marshes or battle footprint",
+        "renderAs": "river-line"
+      },
+      "terrain": "local lowland north-bank courts; no giant mountain asserted from late literary description",
+      "water": "Bosut south of mandatory local routes; ancient marshes, channel and flood zones unverified",
+      "hills": "modern municipal region78–125m; exact local gradients and correspondence with Zosimus pending",
+      "roads": "proposed local land branches; full Licinius route toward Sirmium remains off-map",
+      "anachronisms": "no modern railways, channelization or later façades; no literal modern street grid",
+      "approval": "research candidate; independent battlefield, ancient-bank, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandrian mainland between Mediterranean harbors and Lake Mareotis",
+      "bbox": [
+        29.88,
+        31.13,
+        29.99,
+        31.24
+      ],
+      "coordinateStatus": "approximate modern regional crop; local working courts fictional, no exact fourth-century parcel or episcopal venue",
+      "representativePoint": [
+        29.9187,
+        31.1994
+      ],
+      "representativePointUsage": "modern regional locator only, not an ancient source event address",
+      "sources": [
+        {
+          "url": "https://www.cealex.org/promotion-and-dissemination/exhibitions/the-harbours-of-alexandria/harbours-antiquity/",
+          "locator": "Lakeside port, Kibotos, Heptastadion and Pharos sections including captions/phase and reconstruction limits",
+          "consulted": "2026-10-13 architect"
+        }
+      ],
+      "terrain": "low mainland city band between sea and lake; subsidence and buried port phases prevent literal use of modern shore",
+      "water": "Mediterranean harbors north; Mareotis/lake-canals context south; no mandatory Heptastadion, sea or lake crossing",
+      "hills": "no invented mountain gate or harbor cliff; DEM and dated parcel elevations pending",
+      "roads": "proposed ordinary mainland circuits; no actual imperial messenger route identified",
+      "anachronisms": "no Qaitbayfort, moderncorniche, modernrailways or unreviewed canal; Ptolemaic300–100BCE map not a324 plan",
+      "waterControlStatus": "modern natural-earth controls require review and are not ancient coastline; CEAlex copyrighted images not downloaded or used without reuse rights",
+      "layerSources": [
+        "natural-earth"
+      ],
+      "approval": "research candidate; exact ancient-bank, canal, DEM and pathfinding checks pending"
+    },
+    {
+      "id": "adrianople",
+      "name": "Adrianople/Hadrianopolis lower Hebrus regional banks",
+      "bbox": [
+        26.48,
+        41.59,
+        26.66,
+        41.72
+      ],
+      "coordinateStatus": "modern regional frame; fictional convoy districts, no exact324 ford or battlefield",
+      "representativePoint": [
+        26.5556,
+        41.6769
+      ],
+      "representativePointUsage": "modernEdirne place locator, not ancient battle or crossing coordinate",
+      "sources": [
+        {
+          "url": "https://dergipark.org.tr/en/download/article-file/6126842",
+          "locator": "opening regional rivers/roads discussion only; full paper/site-plan phases not approved",
+          "consulted": "2026-10-13 architect partial"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            26.459972,
+            41.679023
+          ],
+          [
+            26.475678,
+            41.675971
+          ],
+          [
+            26.491954,
+            41.681016
+          ],
+          [
+            26.491466,
+            41.674018
+          ],
+          [
+            26.493663,
+            41.670844
+          ],
+          [
+            26.497081,
+            41.669379
+          ],
+          [
+            26.499441,
+            41.667344
+          ],
+          [
+            26.534272,
+            41.666571
+          ],
+          [
+            26.560802,
+            41.654812
+          ],
+          [
+            26.580496,
+            41.635688
+          ],
+          [
+            26.5949,
+            41.612738
+          ],
+          [
+            26.594737,
+            41.605251
+          ],
+          [
+            26.595795,
+            41.597846
+          ],
+          [
+            26.598155,
+            41.591091
+          ]
+        ],
+        "certainty": "modern generalizedEvros/Maritsa line selected without editing vertices from downloadedNaturalEarth10m snapshot; no324 channel or ford inferred",
+        "renderAs": "modern-river-line"
+      },
+      "terrain": "lowland riverbank logistics with downstream crossing district; no giant mountain or378 battlefield conflation",
+      "water": "modernHebrus control; Tunca/Arda minor reaches absent from this generalized layer and require independent dated confluence data",
+      "hills": "DEM, historic floods and native slopes unverified",
+      "roads": "fictional bank circuits and local ferries, notConstantine actual tactics",
+      "anachronisms": "noSelimiye mosque,Ottoman bridge,railway or modernchannel works",
+      "approval": "research candidate; datedbanks, exactreceivers, ferry navigation, DEM and battlefield check pending"
+    },
+    {
+      "id": "chrysopolis",
+      "name": "Bosphorus two-shore local supply nearChrysopolis",
+      "bbox": [
+        28.96,
+        40.98,
+        29.07,
+        41.075
+      ],
+      "coordinateStatus": "modern regional frame; fictional banks/receivers, not military landing",
+      "representativePoint": [
+        29.015,
+        41.026
+      ],
+      "representativePointUsage": "modernUskudar regional locator, not324 quay",
+      "sources": [
+        {
+          "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf",
+          "locator": "Belke2021 geographic preliminaries andChrysopolis sections, figure1; partialchapter consultation",
+          "consulted": "2026-10-13 architect partial"
+        }
+      ],
+      "terrain": "European bank northofGoldenHorn, openBosphorus and Asian landing/inland districts; no land passage across strait",
+      "water": "modern coast differs from former silted bay; original324 shore and landing sectors pending; allboatpathsfictional",
+      "hills": "bank/hillside relief and exact gradients needDEM",
+      "roads": "localEuropean support andAsian receiving circuits; no full imperial crossing orChalcedonbattlefield reconstruction",
+      "anachronisms": "noBosphorusbridge,Marmaray,Ottomanmosque,laterSkutarionpalace orJustinianicharbor",
+      "approval": "research candidate; ancientcoast,harborphase,DEM and realwater/land navigation pending"
+    },
+    {
+      "id": "nicomedia",
+      "name": "Local Nicomedia inland north-gulf approaches",
+      "bbox": [
+        29.905,
+        40.758,
+        29.995,
+        40.822
+      ],
+      "coordinatesStatus": "approximate modern anchor and fictional local courts; ancient city footprint unverified",
+      "north": "top",
+      "terrain": "Inland north-gulf urban slopes with ordinary gardens; graded hill approaches needed",
+      "water": "Golfo de Nicomedia al oeste; escorrentías locales sin inventar un gran río.",
+      "hills": "Laderas norte/sur; paso principal longitudinal.",
+      "roads": "Nicomedia sobre eje costero; ramal interior separado de costa.",
+      "anachronisms": "Sin autovías ni costa industrial.",
+      "sourceIds": [
+        "pliny",
+        "byzantium"
+      ],
+      "referenceAsset": "nicomedia-modern-locator",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Nicomedia regional anchor",
+          "lonLat": [
+            29.924,
+            40.766
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "pliny",
+        "byzantium"
+      ],
+      "inheritedRegionProfile": "bithynia",
+      "coordinateStatus": "architect local framing inside existing Bithynia; fiction courts and approximate modern anchor, not surveyed ancient footprints",
+      "sources": [
+        {
+          "url": "https://www.classics.ox.ac.uk/node/4988256",
+          "locator": "ARCON project introduction identifies Nicomedia/modern Izmit and mapping in progress; no exact ancient plan consulted",
+          "consulted": "2026-10-14"
+        }
+      ],
+      "waterControlStatus": "No ancient shoreline mask; modern coast is a separate coarse clipped control, local streams not surveyed",
+      "approval": "architect regional candidate; independent archaeology, DEM/land mask and native navigation pending"
+    },
+    {
+      "id": "tyre",
+      "name": "Tyre former-island and eastern-mainland regional context",
+      "bbox": [
+        35.175,
+        33.24,
+        35.252,
+        33.3
+      ],
+      "north": "top",
+      "coordinatesStatus": "modern regional context only; fictional local mainland courts, not a certified335 urban plan",
+      "terrain": "Low coastal tombolo context west, eastern mainland ordinary courts and inland relief requiring dated controls",
+      "water": "Mediterranean west; island/tombolo and submerged harbor phases vary, no exact335 shoreline mask",
+      "hills": "Inland eastern grades require DEM and phase review",
+      "roads": "Proposed eastern mainland circuits only, no required island/causeway crossing",
+      "anachronisms": "No modern park boundary, medieval fortification or unphased later harbor/hippodrome transplanted",
+      "sourceIds": [],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "modern-property-anchor",
+          "name": "UNESCO modern Tyre regional point, not council venue",
+          "lonLat": [
+            35.195833,
+            33.269167
+          ],
+          "certainty": "modern broad locator only; exact synod venue unknown"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "No surveyed335 water polygon or local stream control",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth"
+      ],
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/list/299/",
+          "locator": "modern regional/property description; ancient council address unestablished"
+        },
+        {
+          "url": "https://doi.org/10.1073/pnas.0611325104",
+          "locator": "Marriner etal2007 geoarchaeology; fig6 contrasts332BCE/2000CE, not335"
+        }
+      ],
+      "approval": "architect regional candidate; independent archaeology, land mask, relief and native navigation pending"
+    },
+    {
+      "id": "sardica",
+      "name": "Serdica/centralSofia basin local reception context",
+      "bbox": [
+        23.29,
+        42.675,
+        23.355,
+        42.72
+      ],
+      "coordinatesStatus": "modern regional locator and fictional local activity districts; no surveyed343 urban parcels",
+      "north": "top",
+      "terrain": "Sofia basin and low local grades;Vitosha southern context outside local frame",
+      "water": "Vladaya/local drainage and thermal-water infrastructure require dated control; no inventedIskar city crossing",
+      "hills": "No fictitious mountain gate or deep gorge within ordinary city courts",
+      "roads": "Proposed local streets; ancient decumanus/core and wall limits require separate phases",
+      "anachronisms": "Exclude modern subway,Largo,mosque,lateVgate tower andVIresidence/extra walls",
+      "sourceIds": [],
+      "referenceAsset": "serdica-decumanus-modern",
+      "landmarks": [
+        {
+          "id": "serdica-modern-core",
+          "name": "Modern centralSerdica locator, not council venue",
+          "lonLat": [
+            23.321,
+            42.698
+          ],
+          "certainty": "approximate modern regional anchor; no certified343building"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "No surveyed343streams/water polygons supplied",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth"
+      ],
+      "sources": [
+        {
+          "url": "https://sofiahistorymuseum.bg/en/chain-offices/serdica-ancient-cultural-and-communicative-complex",
+          "locator": "Institutional modern site/phase overview; basilica as venue qualifiedpresumably"
+        },
+        {
+          "url": "https://www.sofiahistorymuseum.bg/en/chain-offices/west-gate-of-serdica-archeological-park",
+          "locator": "II/III–IV walls versus lateV/VI phases distinguished"
+        }
+      ],
+      "approval": "architect regional candidate; independent dated archaeology,DEM/streams/road footprints/native navigation pending"
+    }
+  ]
+}
