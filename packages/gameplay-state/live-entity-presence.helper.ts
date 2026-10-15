@@ -5,6 +5,7 @@ import {
 } from "../schemas/live-spatial-batch.schema";
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import type { MainRequirement } from "./capability-action.model";
+import { generationReady } from "./capability-generation.helper";
 import type { CapabilitySnapshot } from "./capability-snapshot.schema";
 
 type PresenceRequirement = Extract<
@@ -105,6 +106,7 @@ export function applyLiveSpatialBatch(
 }
 
 export function livePresenceSatisfied(
+  profile: CapabilityProfileV2,
   state: CapabilitySnapshot,
   requirement: PresenceRequirement,
 ) {
@@ -115,6 +117,7 @@ export function livePresenceSatisfied(
       const current = observed.entities[id];
       return (
         current?.alive === true &&
+        generationReady(profile, state, id) &&
         state.entityStates[id] !== "destroyed" &&
         current.zones.includes(requirement.destinations[id] ?? "")
       );
@@ -138,7 +141,7 @@ export function livePresenceStillSatisfiedForVictory(
       objective.predicate.requirements.every(
         (req) =>
           req.kind !== "current-entity-presence" ||
-          livePresenceSatisfied(state, req),
+          livePresenceSatisfied(profile, state, req),
       ),
     );
 }
