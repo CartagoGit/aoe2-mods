@@ -799,6 +799,45 @@
       "waterControlStatus": "Natural Earth modern coastline is a coarse control only; ancient shoreline, harbor, fill and small drainage channels remain unverified",
       "anachronisms": "No White Tower, Ottoman sea wall, modern promenade, Aristotelous redevelopment, later Byzantine domes or complete modern restored monument as a certified 380 structure. Galerian palace remains are regional context, not the proven law-issuance room.",
       "approval": "architect geographic proposal; dated shore, slope/DEM, phase-specific streets and independent archaeological/native pathfinding review pending"
+    },
+    {
+      "id": "sirmium",
+      "name": "Sirmium and the northern Sava terrace around modern Sremska Mitrovica",
+      "bbox": [
+        19.575,
+        44.948,
+        19.65,
+        44.996
+      ],
+      "coordinateStatus": "architect approximate regional candidate, not ancient urban footprint or exact379terrain; no gameplay courts chosen yet",
+      "representativePoint": [
+        19.61017,
+        44.96648
+      ],
+      "representativePointUsage": "DARE settlement-level WGS84 point with published2000m precision; not a palace, circus, wall, safe spawn or accession point",
+      "sources": [
+        {
+          "url": "https://imperium.ahlfeldt.se/places/10865.html",
+          "locator": "Settlement record10865, WGS84 latitude44.96648 longitude19.61017, precision2000m; licenseCCBYSA3.0",
+          "consulted": "2026-10-15",
+          "attribution": "Digital Atlas of the Roman Empire / Imperium contributors",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "url": "https://ai.ac.rs/en/7729/",
+          "locator": "Selected site paragraphs: partial remains under modern city, Sava setting, marshes and Čikas stream, palace/circus orientation",
+          "consulted": "2026-10-15"
+        },
+        {
+          "url": "https://istrazivanja.ff.uns.ac.rs/index.php/istr/article/download/2130/2151/3896",
+          "locator": "Vasin2019 selected physical PDF13–14, printed57–58; broad landform context in a medieval-urbanization study",
+          "consulted": "2026-10-15"
+        }
+      ],
+      "terrain": "North/left bank of Sava, terrace at the floodplain contact and wet surroundings. Preserve the river and distinguish potentially marshy alluvial ground from comparatively higher terrace after dated verification. Do not turn broad modern vacant space into certified Roman dry land.",
+      "waterControlStatus": "Modern river data is a coarse control. Exact379Sava banks, minor channels, oxbows, aits, crossing and flood extent require dated archaeology and terrain review. No compulsory river crossing is assigned.",
+      "anachronisms": "No modern roof/walkways, regulated river, later medieval churches or later burnt horizons as379scenery. Palace and circus remains do not certify an accession platform or room. Floor/mosaic phase and surrounding street parcels need individual dating.",
+      "approval": "architect regional research candidate; no full episode map, exact venue, DEM/ancient landmask or native navigation approved"
     }
   ]
 }

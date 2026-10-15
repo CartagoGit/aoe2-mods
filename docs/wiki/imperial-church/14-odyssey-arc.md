@@ -46,7 +46,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "34 selections with bounded source consultations; five additional full dossiers and all independent historical approvals pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; four full dossiers and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 29
+    "authoredDossierCount": 30
   },
   "continuity": {
     "recommendedPrevious": [
@@ -1258,17 +1258,31 @@ Do not certify a New River villa coordinate, derive a Gregorian date from an edi
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
-Architect-corrected claim EN: The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall.
+[Authored episode dossier](episodes/30-policy-reversal-alexandria/15-odyssey-dossier.md) — independent approval pending
 
-ES: La crónica anónima refiere una nueva orden, resistencia local, partida oculta de Atanasio y posterior regreso por orden imperial.
+Architect-corrected claim EN: An anonymous Alexandrian chronicle reports a renewed expulsion order in 365, a dispute over whether it applied to Athanasius, his concealed withdrawal and an imperial letter followed by his return in 366. Its account does not locate the villa or provide a neutral legal judgment.
+
+ES: Una crónica alejandrina anónima refiere una nueva orden de expulsión en 365, una disputa sobre si afectaba a Atanasio, su retirada oculta y una carta imperial seguida de su regreso en 366. Su relato no localiza la villa ni ofrece un juicio jurídico neutral.
 
 [Consulted source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala X.15–XI.16
 
 Limit: Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Historia Acephala X.15–XI.16, XII.17 chronological control
+
+Limit: Athanasius-favorable anonymous account, not his autobiography. The New River, villa and church apartment are unlocated. Imperial letter, local announcement and return are distinct. Source calendar and later editorial civil dates remain qualified.
+
+[Additional consulted passage](https://www.cambridge.org/core/journals/antiquity/article/streets-and-houses-of-roman-alexandria-revisited/71B9F539334D3FCA6A222D43FF0219D2): Majcherek2021, abstract and excavation discussion through street-grid paragraph; early Roman phase cautions
+
+Limit: Local excavation does not certify a complete365 city grid, the New River, a villa or a channel crossing. Early Roman houses are not assumed unchanged in the later fourth century.
+
+[Additional consulted passage](https://egymonuments.gov.eg/archaeological-sites/kom-el-dikka/): Official institutional description of Roman/Byzantine residential and civic remains
+
+Limit: Modern archaeological visitor site, not a365 snapshot. Lecture halls, baths, odeon and mosaic phases need individual dating before scenery selection.
 
 ### 29. The Empty Chair
 

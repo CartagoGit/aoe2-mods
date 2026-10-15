@@ -569,6 +569,44 @@
       "attributionRequired": true,
       "shareAlikeRequired": true,
       "productionApproved": false
+    },
+    {
+      "id": "sirmium-palace-modern-excavation",
+      "path": "docs/research/odyssey-research/images/sirmium-palace-modern-excavation.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sirmium%2C_Imperial_Palace.jpg",
+      "author": "sm022",
+      "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "consulted": "2026-10-15",
+      "sha256": "6cbf99afa0880d7d4b9d1aa6f520ce5ad917af67d08da8c1e6d0d75ea10f40b2",
+      "bytes": 1488612,
+      "modifications": "None; original JPEG retained. Collector and architect inspected the actual downloaded image pixels.",
+      "usage": "Modern archaeological material/site reference only, not a379scene or certified accession location.",
+      "anachronismsAndLimits": "Useful only as a visual reference for presently exposed archaeological masonry and visitor-site condition. Not an ancient reconstruction, not proof of a 379 appearance, and not evidence of an accession location.",
+      "attribution": "sm022, ‘Sirmium, Imperial Palace’, CC BY 3.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg). No edits made.",
+      "attributionRequired": true,
+      "shareAlikeRequired": false,
+      "productionApproved": false
+    },
+    {
+      "id": "sirmium-mosaic-modern-detail",
+      "path": "docs/research/odyssey-research/images/sirmium-mosaic-modern-detail.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "author": "Dekanski",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-15",
+      "sha256": "91f811e4b440dfe7334610497a047d5e0d9a7a8f9826d6c9e976ef9721443d4a",
+      "bytes": 4161796,
+      "modifications": "None; original JPEG retained. Collector and architect inspected the actual downloaded image pixels.",
+      "usage": "Modern archaeological material/site reference only, not a379scene or certified accession location.",
+      "anachronismsAndLimits": "Reference for present exposed floor materials/pattern and modern preservation only. It does not establish date of that floor as specifically 379 or depict the proclamation site.",
+      "attribution": "Dekanski, ‘Сирмиум 06’, CC BY-SA 4.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg). No edits made; adaptations, if any, must retain compatible share-alike terms.",
+      "attributionRequired": true,
+      "shareAlikeRequired": true,
+      "productionApproved": false
     }
   ]
 }
