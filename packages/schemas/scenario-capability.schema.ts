@@ -245,6 +245,13 @@ const phaseDeadlinePredicate = z.strictObject({
   }),
   warningSeconds: z.number().int().positive(),
 });
+const liveEntityPresencePredicate = z.strictObject({
+  id: contractId,
+  kind: z.literal("current-entity-presence"),
+  entities: z.array(contractId).min(1),
+  destinations: z.record(contractId, contractId),
+  requiredCount: z.number().int().positive(),
+});
 export const worldPredicateSchema = z.discriminatedUnion("kind", [
   entityStatePredicate,
   areaStatePredicate,
@@ -260,6 +267,7 @@ export const worldPredicateSchema = z.discriminatedUnion("kind", [
   orderedDeparturePredicate,
   forbiddenEntryPredicate,
   phaseDeadlinePredicate,
+  liveEntityPresencePredicate,
 ]);
 const composedPredicateSchema = z.strictObject({
   operator: z.literal("all"),

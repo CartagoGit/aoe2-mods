@@ -9,6 +9,7 @@ import {
   objectiveRequirements,
 } from "./capability-ledgers.helper";
 import type { CapabilitySnapshot } from "./capability-snapshot.schema";
+import { livePresenceSatisfied } from "./live-entity-presence.helper";
 import { RESOURCES } from "./resource-accounts.helper";
 
 export function secondaryRequirementsSatisfied(
@@ -44,6 +45,8 @@ export function mainRequirementSatisfied(
 ): boolean {
   const facts = factsFor(state, objectiveId, requirement.id);
   switch (requirement.kind) {
+    case "current-entity-presence":
+      return livePresenceSatisfied(state, requirement);
     case "entity-state": {
       const eligible = requirement.eligibleEntitiesFromLedger
         ? new Set(
