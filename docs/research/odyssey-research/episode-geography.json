@@ -772,6 +772,33 @@
       "waterControlStatus": "Ancient Marecchia/Ausa/Patara reaches and shore/harbor uncertain; modernriverdiversion and missingclippedline cannot certifydryland. Main links require fullwidthbanks/drainage/crossingchecks; no mandatory bridge/sea crossing.",
       "anachronisms": "No CastelSismondo,TempioMalatestiano, laterarchbattlements, modernriverdiversion or moderntransformationplate as359plan.",
       "approval": "architect regional candidate; datedhydrology/landmask/phase/DEM/pathfinding and independent archaeologicalauditpending"
+    },
+    {
+      "id": "thessalonica",
+      "name": "Late Roman Thessalonica, inland civic districts above the Thermaic waterfront",
+      "bbox": [
+        22.926,
+        40.628,
+        22.978,
+        40.659
+      ],
+      "coordinateStatus": "approximate architect local frame and fictional work courts; no certified ancient street, building, imperial seat or dispatch route",
+      "sources": [
+        {
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+          "locator": "Subscription identifies Thessalonica, not a building or parcel",
+          "consulted": "2026-10-15"
+        },
+        {
+          "url": "https://thessaloniki.gr/wp-content/uploads/2019/11/Thessaloniki-Monuments-Map-ENG-Web.pdf",
+          "locator": "Physical PDF page 5 / printed 4–5 Roman monument text; physical page 12 / printed 18–19 map visually inspected",
+          "consulted": "2026-10-15"
+        }
+      ],
+      "terrain": "Thermaic Gulf waterfront to the south/southwest; inland urban terrain rises toward the north/northeast. Preserve slope, terraces and drainage after DEM/archaeological verification. Proposed courts are inland; do not level the upper city or turn the modern waterfront into an ancient road.",
+      "waterControlStatus": "Natural Earth modern coastline is a coarse control only; ancient shoreline, harbor, fill and small drainage channels remain unverified",
+      "anachronisms": "No White Tower, Ottoman sea wall, modern promenade, Aristotelous redevelopment, later Byzantine domes or complete modern restored monument as a certified 380 structure. Galerian palace remains are regional context, not the proven law-issuance room.",
+      "approval": "architect geographic proposal; dated shore, slope/DEM, phase-specific streets and independent archaeological/native pathfinding review pending"
     }
   ]
 }

@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 27
+    "authoredDossierCount": 29
   },
   "continuity": {
     "recommendedPrevious": [
@@ -1253,13 +1253,27 @@ Es una norma legal dirigida a Constantinopla, no prueba de cumplimiento uniforme
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/28-law-and-local-reception-thessalonica/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: A constitution issued at Thessalonica on 27 February 380 bears the names of Gratian, Valentinian and Theodosius and addresses the people of Constantinople. It prescribes a religious norm; the text does not measure its reception or enforcement.
+
+ES: Una constitución emitida en Tesalónica el 27 de febrero de 380 lleva los nombres de Graciano, Valentiniano y Teodosio y se dirige al pueblo de Constantinopla. Prescribe una norma religiosa; el texto no mide su recepción ni cumplimiento.
 
 [Consulted source](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm): CTh 16.1.2 Latin text and editorial heading checked.
 
 Limit: The constitution is addressed to the people of Constantinople though issued at Thessalonica; it does not prove uniform enforcement, conversion, or universal application. Header date/location should be checked in a critical edition if exact day matters.
 
 Status: consulted
+
+[Additional consulted passage](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm): CTh XVI.1.2: complete short Latin constitution, heading and subscription
+
+Limit: The compilation transmits a norm. No individual local receipt, dispatch route, exact room, universal conversion or uniform enforcement is established.
+
+[Additional consulted passage](https://thessaloniki.gr/wp-content/uploads/2019/11/Thessaloniki-Monuments-Map-ENG-Web.pdf): Municipality 2013: physical PDF page 5 (printed 4–5), page 12 (printed 18–19), copyright back cover
+
+Limit: Not a georeferenced 380 plan, dated coast or DEM. Exact place of law issue remains unknown. Copyrighted PDF consulted temporarily, not redistributed.
 
 ### 29. Under the Same Eastern Sky
 
@@ -1271,13 +1285,35 @@ El credo conocido como niceno-constantinopolitano se atestigua textualmente en C
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/29-council-and-final-perspective-constantinople/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: The council at Constantinople in 381 reaffirmed Nicene faith. Its transmitted canons distinguish diocesan administration from Constantinople’s honorary rank after Rome. Later transmission of the creed and later synodal letters are separate evidence; this is not the modern Catholic–Orthodox division.
+
+ES: El concilio de Constantinopla de 381 reafirmó la fe nicena. Sus cánones transmitidos distinguen la administración diocesana del rango honorífico de Constantinopla tras Roma. La transmisión posterior del credo y las cartas sinodales posteriores son testimonios distintos; no es la división moderna entre católicos y ortodoxos.
 
 [Consulted source](https://www.papalencyclicals.net/councils/ecum02.htm): Council of Constantinople I page, canon 3 and editorial transmission note.
 
 Limit: Canon is about precedence/honor, not a modern Catholic/Orthodox split or unrestricted jurisdiction. Creed text transmission is separate; page is a translation/compilation.
 
 Status: consulted
+
+[Additional consulted passage](https://www.ccel.org/ccel/schaff/npnf214.ix.viii.iv.html): Percival/NPNF XIV, CanonIII body and selected editorial notes
+
+Limit: Modern transcription of old translation, not Greek manuscript. The body states honor after Rome because New Rome; later commentators disagree about wider interpretation. No immediate schism or complete jurisdiction follows.
+
+[Additional consulted passage](https://www.ccel.org/ccel/schaff/npnf214.ix.viii.iii.html): CanonII body
+
+Limit: Normative text, not observed compliance or a modern national church map. Greek apparatus and complete later reception not examined.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/3808.htm): Canon1, synodal letter to Theodosius; comparison of short-page numbering
+
+Limit: Incomplete/misnumbered web rendering is rejected for canonIII numbering. Do not transplant its subsequent numbers into authored content.
+
+[Additional consulted passage](https://www.papalencyclicals.net/councils/ecum02.htm): Tanner editorial introduction: transmission/382 letter/later canons; canonIII cross-check
+
+Limit: Editorial transmission note only; no modern translation copied. No original council minutes, complete manuscript tradition or later reception independently verified.
 
 [Source-audit passage](https://www.papalencyclicals.net/councils/ecum02.htm): Constantinople I: canon 3; creed and canons, but status/transmission caveat
 
