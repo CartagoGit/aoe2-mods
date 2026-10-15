@@ -7,7 +7,7 @@ Each campaign has five acts and its own situated fictional narrator. The shared 
 | Campaign | Selected episodes | Acts | Source-check annotations | Authored expanded drafts | Approved expanded dossiers |
 |---|---:|---:|---:|---:|---:|
 | [Embers of the Covenant](../wiki/faith-origins/14-odyssey-arc.md) | 30 | 5 | 30 | 30 | 0 |
-| [The Eagle and the Cross](../wiki/imperial-church/14-odyssey-arc.md) | 29 | 5 | 29 | 24 | 0 |
+| [The Eagle and the Cross](../wiki/imperial-church/14-odyssey-arc.md) | 29 | 5 | 29 | 25 | 0 |
 | [Keepers of the Unbroken Word](../wiki/jewish-tradition/14-odyssey-arc.md) | 30 | 5 | 17 | 0 | 0 |
 | [The Keys of the Eternal City](../wiki/church-of-rome/14-odyssey-arc.md) | 32 | 5 | 19 | 0 | 0 |
 | [Beyond the Golden Gate](../wiki/new-rome/14-odyssey-arc.md) | 32 | 5 | 16 | 0 | 0 |

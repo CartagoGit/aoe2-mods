@@ -580,6 +580,7 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
                 "subject": task["subject"],
                 "rationale": task["rationale"],
                 "corridorIds": task["corridorIds"],
+                **({"instruction": copy.deepcopy(task["instruction"])} if "instruction" in task else {}),
                 **({"placement": copy.deepcopy(task["placement"])} if "placement" in task else {}),
                 **(
                     {"information": copy.deepcopy(task["information"])}
