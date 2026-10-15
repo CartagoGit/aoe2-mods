@@ -12,7 +12,7 @@ date: 2026-10-12
 
 ## goal
 
-Ampliar la base aprobada de39escenarios a nueve odiseas independientes con objetivo editorial273episodios (30/29/30/32/32/30/28/32/30), ajustable solo por evidencia y calidad, sin relleno. El arquitecto cierra cronología, arcos, cada pantalla EN/es, narradores, objetivos, mapas reales gigantes y nivelación antes de MiniMax.
+Ampliar la base aprobada de39escenarios a nueve odiseas independientes con objetivo editorial278episodios (30/34/30/32/32/30/28/32/30), ajustable solo por evidencia y calidad, sin relleno. El arquitecto cierra cronología, arcos, cada pantalla EN/es, narradores, objetivos, mapas reales gigantes y nivelación antes de MiniMax.
 
 ## why
 
@@ -52,7 +52,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - **Files**: `docs/design/odysseys/imperial-church.json`, `docs/wiki/imperial-church/**`, `docs/design/maps/imperial-church/**`
 - **Gate**: e2e
 - acceptance:
-  - "Objetivo editorial29episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
+  - "Objetivo editorial34episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
 
@@ -143,7 +143,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro.
 - Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico.
 - Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos.
-- Objetivo editorial29episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro.
+- Objetivo editorial34episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro.
 - Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico.
 - Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos.
 - Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro.
@@ -174,3 +174,8 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 ## Requisitos adicionales del propietario
 
 La migración de TypeScript a nombres responsabilidad.tipo.ts sin index/barrels pertenece a i00004. Todos los escenarios deben ofrecer6–8objetivos secundarios viables, cuatro mecánicas y tres formas de jugar; cada tarea fija sus requisitos compuestos, recompensa o consecuencia finita, coste de oportunidad, estado persistente y fallos opcionales que no bloquean la victoria principal. Los fondos se reasignan sin sumar depósitos anteriores; los receptores y miradores son independientes y se auditan espacialmente. Estos criterios se aplican a todos los episodios nuevos además de la base39.
+
+
+## Enmienda de cobertura imperial, 2026-10-15
+
+Cinco puntos de inflexión365–380 amplían imperial-church de29a34selecciones y el total273a278. Véase docs/design/imperial-coverage-amendment.md. Se conservan todos los IDs previos, cinco actos y claves de progreso; el final sigue siendo el escenario semántico29-council-and-final-perspective-constantinople, ahora orden34. Son selecciones con fuentes acotadas, no cinco dossiers aprobados ni autoría desbloqueada.

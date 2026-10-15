@@ -4,6 +4,7 @@ import copy
 import json
 import runpy
 import unittest
+from unittest.mock import patch
 import tempfile
 import hashlib
 import xml.etree.ElementTree as ET
@@ -13,6 +14,29 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_scope_prose_cannot_disable_expanded_assignment_and_voice_audits(self):
+        original_read = Path.read_text
+
+        def altered_read(path, *args, **kwargs):
+            text = original_read(path, *args, **kwargs)
+            if path == ROOT / 'docs/design/assignments.json':
+                data = json.loads(text)
+                data['scope'] = 'future editorial target; arbitrary prose'
+                data['assignments'][0]['episodeSlices'][0]['sliceId'] = 'S99999'
+                return json.dumps(data)
+            if path == ROOT / 'docs/design/voices/odyssey-narrators.json':
+                data = json.loads(text)
+                data['narrators'][0]['episodeKnowledgePlan'][0]['scenarioId'] = 'absent'
+                return json.dumps(data)
+            return text
+
+        with patch.object(Path, 'read_text', altered_read):
+            errors, counts = verify()
+        self.assertTrue(any('proposal identity/order diverges' in e for e in errors))
+        self.assertTrue(any('knowledge plan scenarioId drift' in e for e in errors))
+        self.assertEqual(counts['expandedSelectedEpisodes'], sum(
+            len(campaign['episodeSelection']) for campaign in self.odysseys))
+
     def test_invalid_authored_observation_hubs_never_fall_back_to_default_sites(self):
         from secondary import build_optional_objectives
         campaign = json.loads((ROOT / 'docs/design/odysseys/imperial-church.json').read_text())

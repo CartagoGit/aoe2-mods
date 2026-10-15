@@ -33,10 +33,11 @@ def render(check=False):
         for row in assignment["episodeSlices"]:
             row["dossierStatus"] = catalog.authored_dossier_status(campaign, row["episodeId"])
     outputs["docs/design/assignments.json"] = json.dumps(assignments, ensure_ascii=False, indent=2) + "\n"
+    selected_total = sum(len(c["episodeSelection"]) for c in campaigns)
     index = [
         "# Historical odyssey selections",
         "",
-        "273 selected episodes across nine campaigns. This is an editorial selection, not 273 completed dossiers or playable maps. The approved baseline catalogue still contains 39 historical missions. Source checks, complete objectives, map footprints, all player-facing text and native difficulty calibration remain separate acceptance gates.",
+        f"{selected_total} selected episodes across nine campaigns. This is an editorial selection, not {selected_total} completed dossiers or playable maps. The approved baseline catalogue still contains 39 historical missions. Source checks, complete objectives, map footprints, all player-facing text and native difficulty calibration remain separate acceptance gates.",
         "",
         "Each campaign has five acts and its own situated fictional narrator. The shared factual narrator opens and closes each episode before yielding to that person. English titles are the source; Spanish titles are supplied. The original raw corpus preserves research provenance even when an architect correction supersedes a candidate.",
         "",
@@ -192,7 +193,7 @@ def render(check=False):
         "",
         "Every episode must receive 6–8 optional objectives, at least four secondary mechanics and three combinable playstyles. Optional loss cannot defeat a main objective; rewards require unique delivery receipts, finite reserved stock and atomic persistent completion. Main success must remain feasible when all optional tasks are skipped.",
         "",
-        "The catalogue currently has 234 authored optional objectives for the 39 baseline historical missions. No generated title table proves the 273 extended scenarios have these contracts already.",
+        f"The catalogue currently has 234 authored optional objectives for the 39 baseline historical missions. No generated title table proves the {selected_total} extended scenarios have these contracts already.",
         "",
         "[Production plan](odyssey-production-plan.md) · [Policy](odyssey-policy.json) · [Baseline catalogue](README.md) · [Research provenance](../research/odyssey-research/README.md)",
         "",

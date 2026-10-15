@@ -703,8 +703,8 @@
         {
           "actId": "act-5",
           "personalDevelopment": {
-            "en": "Learns to preserve dissent and changing reception alongside decisions",
-            "es-ES": "Aprende a conservar disenso y recepción cambiante junto a las decisiones"
+            "en": "Learns to preserve dissent and changing reception while later reversals, death and military disaster break his trust in tidy endings; the final council becomes a handover, not universal closure.",
+            "es-ES": "Aprende a conservar disenso y recepción cambiante mientras reversiones, muerte y desastre militar quiebran su confianza en finales pulcros; el concilio final se convierte en relevo, no en cierre universal."
           }
         }
       ],
@@ -723,7 +723,7 @@
       ],
       "migration": {
         "baselineLife": "c.290–350 in the 39 scenario archive",
-        "expandedLife": "c.334–403 controls this 29 episode odyssey",
+        "expandedLife": "c.334–403 controls this 34 episode odyssey",
         "rule": "Do not copy legacy 312 eyewitness narration into expanded material. Preserve narrator ID; revise dates/voice through architect-approved source migration before native promotion."
       },
       "portrait": {
@@ -1153,8 +1153,68 @@
           "completeDossierPlacement": "Received Alexandrian and Persian accounts at28–29 during eastern clerical work. No physical attendance in Alexandria, bishop’s refuge or Persian battle/tent."
         },
         {
-          "scenarioId": "28-law-and-local-reception-thessalonica",
+          "scenarioId": "30-policy-reversal-alexandria",
           "order": 28,
+          "actId": "act-5",
+          "historicalDate": "365–366 CE; source calendar and consular formulas qualified",
+          "geographyId": "alexandria",
+          "mode": "received-report",
+          "access": {
+            "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
+            "es-ES": "Relatos recibidos con sus límites documentales. La experiencia administrativa cotidiana ficticia aporta reacción personal, nunca acceso como testigo histórico; la colocación exacta debe redactarse en el dossier completo."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
+          "scenarioId": "31-contested-succession-alexandria",
+          "order": 29,
+          "actId": "act-5",
+          "historicalDate": "373 CE conventional; Socrates’ consular synchronism conflicts",
+          "geographyId": "alexandria",
+          "mode": "received-report",
+          "access": {
+            "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
+            "es-ES": "Relatos recibidos con sus límites documentales. La experiencia administrativa cotidiana ficticia aporta reacción personal, nunca acceso como testigo histórico; la colocación exacta debe redactarse en el dossier completo."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
+          "scenarioId": "32-defeat-and-withdrawal-adrianople",
+          "order": 30,
+          "actId": "act-5",
+          "historicalDate": "378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion",
+          "geographyId": "adrianople",
+          "mode": "received-report",
+          "access": {
+            "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
+            "es-ES": "Relatos recibidos con sus límites documentales. La experiencia administrativa cotidiana ficticia aporta reacción personal, nunca acceso como testigo histórico; la colocación exacta debe redactarse en el dossier completo."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
+          "scenarioId": "33-accession-and-reassembly-sirmium",
+          "order": 31,
+          "actId": "act-5",
+          "historicalDate": "379 CE; exact accession day requires chronology comparison",
+          "geographyId": "sirmium",
+          "mode": "received-report",
+          "access": {
+            "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
+            "es-ES": "Relatos recibidos con sus límites documentales. La experiencia administrativa cotidiana ficticia aporta reacción personal, nunca acceso como testigo histórico; la colocación exacta debe redactarse en el dossier completo."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
+          "scenarioId": "28-law-and-local-reception-thessalonica",
+          "order": 32,
           "actId": "act-5",
           "historicalDate": "27 February 380 CE",
           "geographyId": "thessalonica",
@@ -1169,8 +1229,23 @@
           "completeDossierPlacement": "Marcus46 receives the law’s report during invented later clerical work. No Thessalonica drafting room, imperial issue or Constantinopolitan reception eyewitness. Ordinary younger-copyist scene is fictional biography."
         },
         {
+          "scenarioId": "34-church-transfer-constantinople",
+          "order": 33,
+          "actId": "act-5",
+          "historicalDate": "November380 CE; arrival and church transfer are distinct source dates",
+          "geographyId": "constantinople",
+          "mode": "received-report",
+          "access": {
+            "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
+            "es-ES": "Relatos recibidos con sus límites documentales. La experiencia administrativa cotidiana ficticia aporta reacción personal, nunca acceso como testigo histórico; la colocación exacta debe redactarse en el dossier completo."
+          },
+          "historicalEyewitnessClaimAllowed": false,
+          "biographyIsEvidence": false,
+          "completeDossierPlacementRequired": true
+        },
+        {
           "scenarioId": "29-council-and-final-perspective-constantinople",
-          "order": 29,
+          "order": 34,
           "actId": "act-5",
           "historicalDate": "381 CE",
           "geographyId": "constantinople",
