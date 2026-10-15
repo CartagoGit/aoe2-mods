@@ -531,6 +531,44 @@
       "attributionRequired": true,
       "shareAlikeRequired": true,
       "attribution": "Heiko Trurnit, ‘Tiberius-Brücke.JPG’, Wikimedia Commons, CC BY-SA 2.5, https://commons.wikimedia.org/wiki/File:Tiberius-Br%C3%BCcke.JPG (accessed 2026-10-14). Changes: none if used as-is."
+    },
+    {
+      "id": "thessalonica-galerius-arch-modern",
+      "path": "docs/research/odyssey-research/images/thessalonica-galerius-arch-modern.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arch_of_Galerius,_Thessaloniki.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Arch_of_Galerius%2C_Thessaloniki.jpg",
+      "author": "Digitalphilologist",
+      "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-15",
+      "sha256": "4f6ae65baa91b38d33b60daf8d700d0c3bbb2ab7fa396a0cb29ecd1993fa1168",
+      "bytes": 5821603,
+      "modifications": "None; original JPEG retained. Collector and architect inspected actual image pixels.",
+      "usage": "Modern archaeological remains and material reference only; not a 380 background, complete reconstruction or certified imperial venue.",
+      "anachronismsAndLimits": "A modern photograph of a monument associated with the late Roman/early 4th-century city, not visual evidence of its exact appearance in 380. Surviving sections and present restoration/conservation state cannot establish original completeness, height, colors, or nearby urban context. Does not locate or certify an imperial headquarters or palace.",
+      "attribution": "Digitalphilologist, ‘Arch of Galerius, Thessaloniki’, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Arch_of_Galerius,_Thessaloniki.jpg. No changes made.",
+      "attributionRequired": true,
+      "shareAlikeRequired": true,
+      "productionApproved": false
+    },
+    {
+      "id": "thessalonica-roman-forum-modern",
+      "path": "docs/research/odyssey-research/images/thessalonica-roman-forum-modern.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Forum_Romanum_Thessaloniki.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Forum_Romanum_Thessaloniki.jpg",
+      "author": "Elke Brüser (Commons account: Federlesen)",
+      "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "consulted": "2026-10-15",
+      "sha256": "878846ccd478cd2e1d6b268e990892986b06e4be296dc88bae992231457c2183",
+      "bytes": 2380992,
+      "modifications": "None; original JPEG retained. Collector and architect inspected actual image pixels.",
+      "usage": "Modern archaeological remains and material reference only; not a 380 background, complete reconstruction or certified imperial venue.",
+      "anachronismsAndLimits": "Modern excavation photograph; it does not show the forum as it appeared in 380. Visible remains reflect excavation, later alterations and conservation; do not infer a complete ancient plan or phase from this image alone. Modern apartment buildings dominate the background and are not period scenery. The forum does not establish an imperial headquarters location.",
+      "attribution": "Elke Brüser, ‘Forum Romanum Thessaloniki’, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Forum_Romanum_Thessaloniki.jpg. No changes made.",
+      "attributionRequired": true,
+      "shareAlikeRequired": true,
+      "productionApproved": false
     }
   ]
 }
