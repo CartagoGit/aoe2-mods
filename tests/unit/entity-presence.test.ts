@@ -323,6 +323,153 @@ describe("live entity presence reference", () => {
     expect(latch(delivered, outside).objectiveLatches).toEqual([]);
   });
 
+  test("a declared derived identity counts only after its collected input is derived", () => {
+    const profile = structuredClone(base);
+    const producer = structuredClone(profile.objectivePlan[0]);
+    if (!producer) throw new Error("Missing producer objective");
+    producer.id = "producer";
+    producer.after = [];
+    producer.predicate.requirements = [
+      {
+        id: "collect-input",
+        kind: "entity-state",
+        state: "collected",
+        entities: ["lookalike"],
+        requiredCount: 1,
+        oncePerEntity: true,
+      },
+      {
+        id: "derive-custodian",
+        kind: "derived-token",
+        inputEntities: ["lookalike"],
+        outputEntities: ["custodian-1"],
+        once: true,
+        deriveWhen: "after the named input is collected",
+      },
+    ];
+    producer.predicate.requiredLedgers = ["collect-input", "derive-custodian"];
+    profile.objectivePlan.push(producer);
+    expect(validateScenarioCapability(profile)).toEqual([]);
+    let state = createCapabilitySnapshot(profile, {
+      spendable: {},
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 0,
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "bundle-1",
+      zoneId: "store-1",
+    });
+    const attempt = (sequence: number) =>
+      ({
+        type: "latch-objective",
+        objectiveId: "return",
+        liveSpatialBatch: completeBatch(sequence),
+      }) as const;
+    state = reduceCapabilityState(profile, state, attempt(1));
+    expect(state.objectiveLatches).toEqual([]);
+    state = reduceCapabilityState(profile, state, {
+      type: "observe-entity-state",
+      objectiveId: "producer",
+      requirementId: "collect-input",
+      entityId: "lookalike",
+    });
+    state = reduceCapabilityState(profile, state, attempt(2));
+    expect(state.objectiveLatches).toEqual([]);
+    state = reduceCapabilityState(profile, state, {
+      type: "derive-token",
+      objectiveId: "producer",
+      requirementId: "derive-custodian",
+    });
+    expect(state.requirementFacts["producer.derive-custodian"]).toEqual([
+      "custodian-1",
+    ]);
+    const saved = JSON.parse(JSON.stringify(state));
+    expect(
+      reduceCapabilityState(profile, saved, attempt(3)).objectiveLatches,
+    ).toEqual(["return"]);
+  });
+
+  test("a generated receipt needs its exact originating arrival before presence can count", () => {
+    const profile = structuredClone(base);
+    const producer = structuredClone(profile.objectivePlan[0]);
+    if (!producer) throw new Error("Missing producer objective");
+    producer.id = "producer";
+    producer.after = [];
+    producer.predicate.requirements = [
+      {
+        id: "wagon",
+        kind: "entity-state",
+        state: "arrived",
+        entities: ["lookalike"],
+        requiredCount: 1,
+        oncePerEntity: true,
+        destinations: { lookalike: "store-1" },
+      },
+      {
+        id: "generated-custodian",
+        kind: "entity-state",
+        state: "arrived",
+        entities: ["custodian-1"],
+        requiredCount: 1,
+        oncePerEntity: true,
+        destinations: { "custodian-1": "store-1" },
+        generatedByReceipts: [
+          {
+            fromObjective: "producer",
+            fromRequirement: "wagon",
+            receivedEntity: "lookalike",
+            destination: "store-1",
+            output: "custodian-1",
+          },
+        ],
+      },
+    ];
+    producer.predicate.requiredLedgers = ["wagon", "generated-custodian"];
+    profile.objectivePlan.push(producer);
+    expect(validateScenarioCapability(profile)).toEqual([]);
+    let state = createCapabilitySnapshot(profile, {
+      spendable: {},
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 0,
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "bundle-1",
+      zoneId: "store-1",
+    });
+    const attempt = (sequence: number) =>
+      reduceCapabilityState(profile, state, {
+        type: "latch-objective",
+        objectiveId: "return",
+        liveSpatialBatch: completeBatch(sequence),
+      });
+    expect(attempt(1).objectiveLatches).toEqual([]);
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "lookalike",
+      zoneId: "store-2",
+    });
+    expect(attempt(2).objectiveLatches).toEqual([]);
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "lookalike",
+      zoneId: "store-1",
+    });
+    expect(state.requirementFacts["producer.wagon"]).toEqual(["lookalike"]);
+    expect(attempt(3).objectiveLatches).toEqual(["return"]);
+  });
+
   test("a six-of-eight quorum accepts six live originals without observing the other two", () => {
     const profile = structuredClone(base);
     const extras = ["custodian-4", "custodian-5"];
@@ -436,7 +583,12 @@ describe("live entity presence reference", () => {
     const continued = tick(saved, moved);
     expect(continued.terminal).toBeNull();
     expect(continued.arrivalLedger).toEqual(latched.arrivalLedger);
-    expect(tick(saved, completeBatch(1))).toEqual(saved);
+    const staleTick = tick(saved, completeBatch(1));
+    expect(staleTick.terminal).toBeNull();
+    expect(staleTick.phaseElapsedSeconds).toBe(1);
+    expect(staleTick.liveSpatialObservation).toEqual(
+      saved.liveSpatialObservation,
+    );
     expect(tick(saved, completeBatch(2)).terminal).toBe("victory");
     expect(
       reduceCapabilityState(base, saved, {
@@ -514,6 +666,131 @@ describe("live entity presence reference", () => {
       liveSpatialBatch: malformed,
     });
     expect(explicitDefeat.terminal).toBe("defeat");
+  });
+
+  test("invalid or stale presence batches cannot suppress an expired deadline or certify victory", () => {
+    const profile = structuredClone(base);
+    const watch = structuredClone(profile.objectivePlan[0]);
+    if (!watch) throw new Error("Missing deadline objective");
+    watch.id = "deadline-watch";
+    watch.after = [];
+    watch.predicate.requirements = [
+      {
+        id: "deadline",
+        kind: "phase-deadline",
+        phase: "phase-1",
+        clock: "relative-to-phase-entry",
+        onExpiry: "defeat",
+        secondsByDifficulty: { easy: 10, standard: 10, hard: 10 },
+        warningSeconds: 2,
+      },
+    ];
+    watch.predicate.requiredLedgers = ["deadline"];
+    profile.objectivePlan.push(watch);
+    expect(validateScenarioCapability(profile)).toEqual([]);
+    let state = createCapabilitySnapshot(profile, {
+      spendable: {},
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 0,
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "bundle-1",
+      zoneId: "store-1",
+    });
+    const latched = reduceCapabilityState(profile, state, {
+      type: "latch-objective",
+      objectiveId: "return",
+      liveSpatialBatch: completeBatch(1),
+    });
+    expect(latched.objectiveLatches).toEqual(["return"]);
+    const duplicate = completeBatch(2);
+    duplicate.entities.push({ ...firstEntity(duplicate) });
+    for (const prior of [state, latched, JSON.parse(JSON.stringify(latched))])
+      for (const batch of prior === state
+        ? [duplicate]
+        : [duplicate, completeBatch(1)]) {
+        const result = reduceCapabilityState(profile, prior, {
+          type: "tick",
+          nowSeconds: 11,
+          difficulty: "standard",
+          defeatConditions: [],
+          victoryConditions: ["return"],
+          liveSpatialBatch: batch,
+        });
+        expect(result.terminal).toBe("defeat");
+        expect(result.liveSpatialObservation).toEqual(
+          prior.liveSpatialObservation,
+        );
+      }
+    const beforeDeadline = reduceCapabilityState(profile, latched, {
+      type: "tick",
+      nowSeconds: 5,
+      difficulty: "standard",
+      defeatConditions: [],
+      victoryConditions: ["return"],
+      liveSpatialBatch: duplicate,
+    });
+    expect(beforeDeadline.terminal).toBeNull();
+    expect(beforeDeadline.phaseElapsedSeconds).toBe(5);
+    const dead = completeBatch(2);
+    firstEntity(dead).alive = false;
+    firstEntity(dead).zones = [];
+    const movedAndDead = reduceCapabilityState(profile, latched, {
+      type: "tick",
+      nowSeconds: 5,
+      difficulty: "standard",
+      defeatConditions: [],
+      victoryConditions: ["return"],
+      liveSpatialBatch: dead,
+    });
+    expect(movedAndDead.terminal).toBeNull();
+    expect(movedAndDead.entityStates["bundle-1"]).toBe("destroyed");
+    expect(
+      reduceCapabilityState(profile, movedAndDead, {
+        type: "tick",
+        nowSeconds: 11,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: ["return"],
+        liveSpatialBatch: duplicate,
+      }).terminal,
+    ).toBe("defeat");
+
+    const withoutPresence = structuredClone(profile);
+    const returnObjective = withoutPresence.objectivePlan[0];
+    if (!returnObjective) throw new Error("Missing return objective");
+    returnObjective.predicate.requirements =
+      returnObjective.predicate.requirements.filter(
+        (requirement) => requirement.kind !== "current-entity-presence",
+      );
+    returnObjective.predicate.requiredLedgers = ["first-receipt"];
+    expect(validateScenarioCapability(withoutPresence)).toEqual([]);
+    let oldState = createCapabilitySnapshot(withoutPresence, {
+      spendable: {},
+      protectedRecovery: {},
+      optionalReserve: {},
+    });
+    oldState = reduceCapabilityState(withoutPresence, oldState, {
+      type: "enter-phase",
+      phase: "phase-1",
+      nowSeconds: 0,
+    });
+    const oldExpired = reduceCapabilityState(withoutPresence, oldState, {
+      type: "tick",
+      nowSeconds: 11,
+      difficulty: "standard",
+      defeatConditions: [],
+      victoryConditions: [],
+      liveSpatialBatch: duplicate,
+    });
+    expect(oldExpired.terminal).toBe("defeat");
+    expect(oldExpired.liveSpatialObservation).toBeUndefined();
   });
 
   test("invalid contracts reject duplicates, unknown zones, missing destinations and impossible thresholds", () => {
