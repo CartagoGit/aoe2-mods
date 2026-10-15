@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "273 chronological selections authored; complete episodic dossiers and independent approval pending",
+  "status": "278 chronological selections authored; complete episodic dossiers and independent approval pending",
   "baseline": {
     "commit": "dec7fc1cfc6fa0472c0d16482877b1e86ac1e88f",
     "historicalScenarios": 39,
@@ -18,7 +18,7 @@
     "en",
     "es-ES"
   ],
-  "targetScenarioCount": 273,
+  "targetScenarioCount": 278,
   "campaigns": [
     {
       "id": "faith-origins",
@@ -55,7 +55,7 @@
     },
     {
       "id": "imperial-church",
-      "targetScenarios": 29,
+      "targetScenarios": 34,
       "period": {
         "earliestYear": 312,
         "latestYear": 381
@@ -63,9 +63,9 @@
       "actEpisodeTargets": [
         6,
         6,
+        7,
         6,
-        6,
-        5
+        9
       ],
       "minimumAuthoredFields": [
         "event",

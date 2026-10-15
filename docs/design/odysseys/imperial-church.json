@@ -86946,8 +86946,8 @@
         "es-ES": "En 362 Atanasio regresó a Alejandría y más tarde se retiró después de que Juliano le ordenara salir. La carta imperial distingue regreso al hogar de regreso a la iglesia; una crónica anónima alejandrina refiere instrucciones locales de otro modo. Son relatos interesados, no un veredicto jurídico neutral. La muerte de Juliano en la expedición persa de 363 es un hecho posterior y distante. Esta reconstrucción local sigue trabajo de hogares ficticios y registros separados, sin convertir a Atanasio en una escolta jugable."
       },
       "historicalOutcome": {
-        "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the law issued at Thessalonica in 380; the intervening years are not presented as an immediate change.",
-        "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio trata de la ley emitida en Tesalónica en 380; los años intermedios no se presentan como un cambio inmediato."
+        "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the new orders, local opposition and further withdrawal and recall reported at Alexandria in 365–366. These are later events, not the next morning.",
+        "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio pasa a las nuevas órdenes, oposición local y otra retirada y regreso por orden imperial referidos en Alejandría en 365–366. Son hechos posteriores, no la mañana siguiente."
       },
       "sourcePassages": [
         {
@@ -87897,7 +87897,8 @@
         "arrivalPresence": "Hosting/onward receipts and delivered note content are historical observations, never current custody, carried inventory or simultaneous physical residence. All original identities must remain alive.",
         "calendar": "Broad362–363 retained; do not silently use the mirror356catalogdate, editorFebruary21footnote as letter text, or city deathannouncement as battlefield death date.",
         "timelineCausality": "Both original context deliveries are requirements of o3, so its latch precedes o4 timeline generation. o4/req-1 funds o4/req-2; o4/req-3 is the original generated timeline delivery. No reliance on a future same-phase delivery to prove earlier generation inputs.",
-        "personalScenes": "Invented ordinary clerical recollections: damp packet/senior25, porter/carrying pole26, torn sheet/colleague27. These are not source quotations, archaeological objects or historical witnesses. The common handover labels the fictional placement; personal speech avoids workflow commentary. Historical decisions and distant battles remain received reports."
+        "personalScenes": "Invented ordinary clerical recollections: damp packet/senior25, porter/carrying pole26, torn sheet/colleague27. These are not source quotations, archaeological objects or historical witnesses. The common handover labels the fictional placement; personal speech avoids workflow commentary. Historical decisions and distant battles remain received reports.",
+        "coverageAmendment": "Next selection is now365–366, not380. Five source-qualified additions preserve the existing final ID and narrative identity; their full dossiers and history/map/balance review remain pending."
       },
       "status": "authored-dossier; source approval, map geometry, native capabilities and game balance pending",
       "artDirection": {
@@ -90231,8 +90232,8 @@
           "id": "fact-outro",
           "key": "scenario.imperial-church.27-return-and-departure-records-alexandria.odyssey.fact-outro",
           "text": {
-            "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the law issued at Thessalonica in 380; the intervening years are not presented as an immediate change.",
-            "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio trata de la ley emitida en Tesalónica en 380; los años intermedios no se presentan como un cambio inmediato."
+            "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the new orders, local opposition and further withdrawal and recall reported at Alexandria in 365–366. These are later events, not the next morning.",
+            "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio pasa a las nuevas órdenes, oposición local y otra retirada y regreso por orden imperial referidos en Alejandría en 365–366. Son hechos posteriores, no la mañana siguiente."
           },
           "condition": "victory first",
           "narrator": "collection-narrator",
@@ -90241,17 +90242,17 @@
           "captionSegments": {
             "en": [
               "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current",
-              "residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the law",
-              "issued at Thessalonica in 380; the intervening years are not presented as an immediate change."
+              "residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the new",
+              "orders, local opposition and further withdrawal and recall reported at Alexandria in 365–366. These are later events, not the next morning."
             ],
             "es-ES": [
               "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni",
-              "acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio trata",
-              "de la ley emitida en Tesalónica en 380; los años intermedios no se presentan como un cambio inmediato."
+              "acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio pasa",
+              "a las nuevas órdenes, oposición local y otra retirada y regreso por orden imperial referidos en Alejandría en 365–366. Son hechos posteriores, no la mañana siguiente."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 38
+          "voiceDurationSecondsEstimated": 42
         },
         {
           "id": "persona-outro",
@@ -90327,8 +90328,8 @@
           "id": "next-episode",
           "key": "scenario.imperial-church.27-return-and-departure-records-alexandria.odyssey.next-episode",
           "text": {
-            "en": "Continue with The Weight of an Imperial Word. This episode does not complete the campaign.",
-            "es-ES": "Continúa con El peso de una palabra imperial. Este episodio no termina la campaña."
+            "en": "Continue with Beyond the Quiet River. This episode does not complete the campaign.",
+            "es-ES": "Continúa con Más allá del río silencioso. Este episodio no termina la campaña."
           },
           "condition": "after persona-outro",
           "narrator": "none",
@@ -90336,20 +90337,20 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Continue with The Weight of an Imperial Word. This episode does not complete the campaign."
+              "Continue with Beyond the Quiet River. This episode does not complete the campaign."
             ],
             "es-ES": [
-              "Continúa con El peso de una palabra imperial. Este episodio no termina la campaña."
+              "Continúa con Más allá del río silencioso. Este episodio no termina la campaña."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 7
+          "voiceDurationSecondsEstimated": 6
         }
       ]
     },
     {
       "id": "28-law-and-local-reception-thessalonica",
-      "order": 28,
+      "order": 32,
       "actId": "act-5",
       "title": {
         "en": "The Weight of an Imperial Word",
@@ -90361,8 +90362,8 @@
         "es-ES": "El 27 de febrero de 380 se emitió en Tesalónica una constitución en nombre de Graciano, Valentiniano y Teodosio. Su encabezamiento se dirige al pueblo de Constantinopla. Prescribe la fe asociada con Dámaso de Roma y Pedro de Alejandría y amenaza a quienes clasifica como disidentes. Una prescripción no demuestra aceptación inmediata ni cumplimiento uniforme. Esta reconstrucción sigue preparativos y entregas locales ficticios; el destinatario distante permanece fuera del mapa."
       },
       "historicalOutcome": {
-        "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the council at Constantinople in 381 and the different questions preserved in its texts.",
-        "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa al concilio de Constantinopla de 381 y a las distintas cuestiones conservadas en sus textos."
+        "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the separately reported arrival and church-possession changes at Constantinople in November 380.",
+        "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa a la llegada y los cambios de posesión de iglesias referidos por separado en Constantinopla en noviembre de 380."
       },
       "sourcePassages": [
         {
@@ -93835,8 +93836,8 @@
           "id": "fact-outro",
           "key": "scenario.imperial-church.28-law-and-local-reception-thessalonica.odyssey.fact-outro",
           "text": {
-            "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the council at Constantinople in 381 and the different questions preserved in its texts.",
-            "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa al concilio de Constantinopla de 381 y a las distintas cuestiones conservadas en sus textos."
+            "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the separately reported arrival and church-possession changes at Constantinople in November 380.",
+            "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa a la llegada y los cambios de posesión de iglesias referidos por separado en Constantinopla en noviembre de 380."
           },
           "condition": "victory first",
           "narrator": "collection-narrator",
@@ -93845,17 +93846,16 @@
           "captionSegments": {
             "en": [
               "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The",
-              "law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the council at Constantinople in 381 and the different questions preserved in",
-              "its texts."
+              "law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the separately reported arrival and church-possession changes at Constantinople in November 380."
             ],
             "es-ES": [
               "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes.",
-              "La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa al concilio de Constantinopla de 381 y a las distintas cuestiones conservadas en",
-              "sus textos."
+              "La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa a la llegada y los cambios de posesión de iglesias referidos por separado",
+              "en Constantinopla en noviembre de 380."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 31
+          "voiceDurationSecondsEstimated": 33
         },
         {
           "id": "persona-outro",
@@ -93929,8 +93929,8 @@
           "id": "next-episode",
           "key": "scenario.imperial-church.28-law-and-local-reception-thessalonica.odyssey.next-episode",
           "text": {
-            "en": "Continue with Under the Same Eastern Sky. This episode does not complete the campaign.",
-            "es-ES": "Continúa con Bajo el mismo cielo oriental. Este episodio no termina la campaña."
+            "en": "Continue with The Doors of New Rome. This episode does not complete the campaign.",
+            "es-ES": "Continúa con Las puertas de Nueva Roma. Este episodio no termina la campaña."
           },
           "condition": "after persona-outro",
           "narrator": "none",
@@ -93938,10 +93938,10 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Continue with Under the Same Eastern Sky. This episode does not complete the campaign."
+              "Continue with The Doors of New Rome. This episode does not complete the campaign."
             ],
             "es-ES": [
-              "Continúa con Bajo el mismo cielo oriental. Este episodio no termina la campaña."
+              "Continúa con Las puertas de Nueva Roma. Este episodio no termina la campaña."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
@@ -93951,7 +93951,7 @@
     },
     {
       "id": "29-council-and-final-perspective-constantinople",
-      "order": 29,
+      "order": 34,
       "actId": "act-5",
       "title": {
         "en": "Under the Same Eastern Sky",
@@ -94896,7 +94896,7 @@
         "status": "independent review pending",
         "voice": "Marcus47 has fictional ordinary local life at Constantinople; no council chamber, bishop’s private motives or knowledge of451. Shelf/younger-clerk/bread scene is author-created biography.",
         "sourceIntegrity": "Use CCEL CanonIII for the honor text. NewAdvent3808 omits it and renumbers Maximus; do not repeat that transcription defect as ancient evidence.",
-        "finale": "Finale is drafted for current selection29, not approval of the whole campaign. Resolve363–380coverage before closing the architecture; any added earlier selection must preserve this final episode’s identity and canonical route keys.",
+        "finale": "Final semantic ID29 is display order34 in the34-selection arc. It remains the sole finale, with unchanged canonical route keys. Five added source-qualified selections still require full dossiers, historical review, maps and game calibration before closing the architecture.",
         "arrivalPresence": "All final receptions are historical records, not carrying, custody or co-presence. All9original identities survive.",
         "finaleTimingCorrection": "Independent snapshot review found fact-outro runs after victory, when a route is already selected. Outro now describes the selected recommendation; the actual request to choose remains in the pre-victory route-choice screen."
       },
@@ -97250,7 +97250,7 @@
     "publicId": "CDF-C01",
     "internalName": "CDF_ImperialChurch",
     "sourceLocale": "en",
-    "targetEpisodeCount": 29,
+    "targetEpisodeCount": 34,
     "narratorId": "imperial-clerk",
     "personaLens": {
       "en": "Supply clerks and inherited state papers",
@@ -97278,7 +97278,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "29 consultations attached; corrected selected claims prevail over conflicting raw candidates; independent historical approval pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; five additional full dossiers and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -97287,7 +97287,7 @@
       "knowledge": "312–337 inherited documents; early childhood never adult eyewitness; later dated visits explicitly recorded episode by episode",
       "status": "authored decision; baseline catalogue/voice bible migration occurs with expanded campaign dossier"
     },
-    "selectedEpisodeCount": 29,
+    "selectedEpisodeCount": 34,
     "selectionNotes": [
       "Helena death328–330andCrispus/Fausta326remain cautious background, not invented detective missions at uncertain locations.",
       "Paschal decisions are integrated withNicea; capital expansion is integrated with330.",
@@ -97469,7 +97469,7 @@
         361,
         381
       ],
-      "dramaticPurpose": "Juliano, ley de380 y concilio de381; el poder prescribe una norma sin probar su aceptación uniforme.",
+      "dramaticPurpose": "Reversiones de política, sucesión, derrota y recomposición antes de la ley de380, los cambios de acceso urbano y la coda conciliar de381. Prescripción y aceptación siguen siendo distintas.",
       "difficultyCurve": {
         "easy": {
           "militaryPressureMultiplier": 0.95,
@@ -97492,10 +97492,31 @@
       "episodeIds": [
         "26-plural-civic-logistics-constantinople",
         "27-return-and-departure-records-alexandria",
+        "30-policy-reversal-alexandria",
+        "31-contested-succession-alexandria",
+        "32-defeat-and-withdrawal-adrianople",
+        "33-accession-and-reassembly-sirmium",
         "28-law-and-local-reception-thessalonica",
+        "34-church-transfer-constantinople",
         "29-council-and-final-perspective-constantinople"
       ],
-      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending",
+      "pacingPlan": {
+        "status": "architect ordered arc; episode contracts and game pacing pending",
+        "sequence": [
+          "opening civic change361–362",
+          "return/departure362–363",
+          "discreet support365–366",
+          "contested succession373",
+          "military withdrawal378",
+          "reassembly379",
+          "law and addressee February380",
+          "changed urban access November380",
+          "reflective council coda381"
+        ],
+        "noUniformCrescendo": true,
+        "militaryPressureOnlyWhereHistoricallySupported": true
+      }
     }
   ],
   "continuityContract": {
@@ -99585,8 +99606,200 @@
       "existingContract": false
     },
     {
-      "id": "28-law-and-local-reception-thessalonica",
+      "id": "30-policy-reversal-alexandria",
       "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "Beyond the Quiet River",
+        "es-ES": "Más allá del río silencioso"
+      },
+      "date": "365–366 CE; source calendar and consular formulas qualified",
+      "geographyId": "alexandria",
+      "coreMechanic": "policy-reversal-and-discreet-support",
+      "historicalSelection": {
+        "sourceUrl": "https://www.newadvent.org/fathers/2820.htm",
+        "passage": "Anonymous Historia Acephala X.15–XI.16",
+        "selectedClaim": {
+          "en": "The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall.",
+          "es-ES": "La crónica anónima refiere una nueva orden, resistencia local, partida oculta de Atanasio y posterior regreso por orden imperial."
+        },
+        "qualification": "Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.",
+        "approval": "architect selection; complete dossier and independent historical approval pending",
+        "architectCorrection": {
+          "date": "2026-10-15",
+          "author": "gpt-6",
+          "reason": "Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.",
+          "approval": "independent review pending"
+        },
+        "sourceConsultation": {
+          "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+          "passage": "Anonymous Historia Acephala X.15–XI.16",
+          "status": "consulted as bounded source collection; full dossier pending",
+          "consultationDate": "2026-10-15",
+          "coverageActuallyRead": "Root selected reading and the separately attributed Luna passage audit are documented in imperial363-380-primary-audit.json and imperial-coverage-amendment.md; no manuscript or complete critical apparatus inspected.",
+          "limitations": "Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.",
+          "approval": "collection and architect selection only; no historical/game approval"
+        },
+        "candidateEvent": "The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "31-contested-succession-alexandria",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "The Empty Chair",
+        "es-ES": "La silla vacía"
+      },
+      "date": "373 CE conventional; Socrates’ consular synchronism conflicts",
+      "geographyId": "alexandria",
+      "coreMechanic": "contested-succession-and-local-continuity",
+      "historicalSelection": {
+        "sourceUrl": "https://www.newadvent.org/fathers/2820.htm",
+        "passage": "Historia Acephala XII.17 and XIII.19; Socrates HE IV.20–22, with chronology conflict",
+        "selectedClaim": {
+          "en": "Athanasius’ death and the contested succession changed Alexandrian church leadership. The adopted 373 frame is not obtained by silently correcting Socrates’ conflicting synchronism.",
+          "es-ES": "La muerte de Atanasio y la sucesión disputada cambiaron el liderazgo eclesial alejandrino. El marco adoptado de 373 no procede de corregir en silencio el sincronismo contradictorio de Sócrates."
+        },
+        "qualification": "Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.",
+        "approval": "architect selection; complete dossier and independent historical approval pending",
+        "architectCorrection": {
+          "date": "2026-10-15",
+          "author": "gpt-6",
+          "reason": "Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.",
+          "approval": "independent review pending"
+        },
+        "sourceConsultation": {
+          "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+          "passage": "Historia Acephala XII.17 and XIII.19; Socrates HE IV.20–22, with chronology conflict",
+          "status": "consulted as bounded source collection; full dossier pending",
+          "consultationDate": "2026-10-15",
+          "coverageActuallyRead": "Root selected reading and the separately attributed Luna passage audit are documented in imperial363-380-primary-audit.json and imperial-coverage-amendment.md; no manuscript or complete critical apparatus inspected.",
+          "limitations": "Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.",
+          "approval": "collection and architect selection only; no historical/game approval"
+        },
+        "candidateEvent": "Athanasius’ death and the contested succession changed Alexandrian church leadership. The adopted 373 frame is not obtained by silently correcting Socrates’ conflicting synchronism."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "32-defeat-and-withdrawal-adrianople",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "Where the Eagles Fell",
+        "es-ES": "Donde cayeron las águilas"
+      },
+      "date": "378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion",
+      "geographyId": "adrianople",
+      "coreMechanic": "finite-post-defeat-withdrawal",
+      "historicalSelection": {
+        "sourceUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+        "passage": "Ammianus XXXI.11–13, especially12.10 and13.12–17",
+        "selectedClaim": {
+          "en": "Ammianus describes a Roman defeat near Hadrianopolis and preserves competing accounts of Valens’ death. Local survivor gameplay must not reverse that outcome.",
+          "es-ES": "Amiano describe una derrota romana cerca de Adrianópolis y conserva relatos contrapuestos de la muerte de Valente. El juego local de supervivientes no puede invertir ese desenlace."
+        },
+        "qualification": "No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.",
+        "approval": "architect selection; complete dossier and independent historical approval pending",
+        "architectCorrection": {
+          "date": "2026-10-15",
+          "author": "gpt-6",
+          "reason": "No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.",
+          "approval": "independent review pending"
+        },
+        "sourceConsultation": {
+          "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+          "passage": "Ammianus XXXI.11–13, especially12.10 and13.12–17",
+          "status": "consulted as bounded source collection; full dossier pending",
+          "consultationDate": "2026-10-15",
+          "coverageActuallyRead": "Root selected reading and the separately attributed Luna passage audit are documented in imperial363-380-primary-audit.json and imperial-coverage-amendment.md; no manuscript or complete critical apparatus inspected.",
+          "limitations": "No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.",
+          "approval": "collection and architect selection only; no historical/game approval"
+        },
+        "candidateEvent": "Ammianus describes a Roman defeat near Hadrianopolis and preserves competing accounts of Valens’ death. Local survivor gameplay must not reverse that outcome."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium",
+      "order": 31,
+      "actId": "act-5",
+      "title": {
+        "en": "The Burden of the Purple",
+        "es-ES": "El peso de la púrpura"
+      },
+      "date": "379 CE; exact accession day requires chronology comparison",
+      "geographyId": "sirmium",
+      "coreMechanic": "post-crisis-reassembly-and-accession",
+      "historicalSelection": {
+        "sourceUrl": "https://www.newadvent.org/fathers/26015.htm",
+        "passage": "Socrates HE V.2–3",
+        "selectedClaim": {
+          "en": "Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history.",
+          "es-ES": "Sócrates refiere la elevación de Teodosio en Sirmio y un panorama religioso todavía dividido tras Valente. El nombramiento es historia fija narrada."
+        },
+        "qualification": "The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.",
+        "approval": "architect selection; complete dossier and independent historical approval pending",
+        "architectCorrection": {
+          "date": "2026-10-15",
+          "author": "gpt-6",
+          "reason": "The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.",
+          "approval": "independent review pending"
+        },
+        "sourceConsultation": {
+          "consultedUrl": "https://www.newadvent.org/fathers/26015.htm",
+          "passage": "Socrates HE V.2–3",
+          "status": "consulted as bounded source collection; full dossier pending",
+          "consultationDate": "2026-10-15",
+          "coverageActuallyRead": "Root selected reading and the separately attributed Luna passage audit are documented in imperial363-380-primary-audit.json and imperial-coverage-amendment.md; no manuscript or complete critical apparatus inspected.",
+          "limitations": "The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.",
+          "approval": "collection and architect selection only; no historical/game approval"
+        },
+        "candidateEvent": "Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-law-and-local-reception-thessalonica",
+      "order": 32,
       "actId": "act-5",
       "title": {
         "en": "The Weight of an Imperial Word",
@@ -99653,8 +99866,56 @@
       "existingContract": false
     },
     {
+      "id": "34-church-transfer-constantinople",
+      "order": 33,
+      "actId": "act-5",
+      "title": {
+        "en": "The Doors of New Rome",
+        "es-ES": "Las puertas de Nueva Roma"
+      },
+      "date": "November380 CE; arrival and church transfer are distinct source dates",
+      "geographyId": "constantinople",
+      "coreMechanic": "changed-urban-access-and-local-care",
+      "historicalSelection": {
+        "sourceUrl": "https://www.newadvent.org/fathers/26015.htm",
+        "passage": "Socrates HE V.6–7",
+        "selectedClaim": {
+          "en": "Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.",
+          "es-ES": "Sócrates narra por separado la llegada de Teodosio y los cambios de posesión de iglesias en Constantinopla. Su interpretación teológica queda atribuida; no es cumplimiento automático de la ley de febrero."
+        },
+        "qualification": "Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.",
+        "approval": "architect selection; complete dossier and independent historical approval pending",
+        "architectCorrection": {
+          "date": "2026-10-15",
+          "author": "gpt-6",
+          "reason": "Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.",
+          "approval": "independent review pending"
+        },
+        "sourceConsultation": {
+          "consultedUrl": "https://www.newadvent.org/fathers/26015.htm",
+          "passage": "Socrates HE V.6–7",
+          "status": "consulted as bounded source collection; full dossier pending",
+          "consultationDate": "2026-10-15",
+          "coverageActuallyRead": "Root selected reading and the separately attributed Luna passage audit are documented in imperial363-380-primary-audit.json and imperial-coverage-amendment.md; no manuscript or complete critical apparatus inspected.",
+          "limitations": "Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.",
+          "approval": "collection and architect selection only; no historical/game approval"
+        },
+        "candidateEvent": "Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law."
+      },
+      "locationPolicy": "one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence",
+      "historicalPersonPolicy": "no private emperor dialogue claimed as historical testimony; figures are contextual narration unless an explicitly certified proxy role is assigned",
+      "knowledgeBasis": {
+        "speaker": "imperial-clerk",
+        "proposedLifespan": "c.334–403",
+        "mode": "fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
       "id": "29-council-and-final-perspective-constantinople",
-      "order": 29,
+      "order": 34,
       "actId": "act-5",
       "title": {
         "en": "Under the Same Eastern Sky",
@@ -118989,8 +119250,8 @@
         "es-ES": "El primer relato decía que había regresado. Ya había dejado un espacio en el registro cuando el siguiente dio otro sentido a la palabra. A los veintiocho años aún odiaba tachar un buen encabezamiento. Apreté demasiado y rasgué la hoja fina. El hombre que tenía al lado le dio la vuelta y empezó una segunda columna. No fingió que la primera nunca se hubiera escrito."
       },
       "factualOutro": {
-        "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the law issued at Thessalonica in 380; the intervening years are not presented as an immediate change.",
-        "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio trata de la ley emitida en Tesalónica en 380; los años intermedios no se presentan como un cambio inmediato."
+        "en": "Both fictional household cohorts completed onward journeys authorized by their own earlier reception records, and a qualified local timeline was delivered. These receipts do not trace Athanasius’ route or certify anyone’s current residence. Julian’s later death belongs to the Persian campaign, with no verified assailant supplied by the selected Ammianus passage. Its announcement at Alexandria occurred later. The next episode moves to the new orders, local opposition and further withdrawal and recall reported at Alexandria in 365–366. These are later events, not the next morning.",
+        "es-ES": "Ambos grupos de hogares ficticios completaron trayectos posteriores autorizados por sus propios registros anteriores de acogida y se entregó una cronología local matizada. Los recibos no trazan el itinerario de Atanasio ni acreditan permanencia actual. La muerte posterior de Juliano pertenece a la campaña persa; el pasaje elegido de Amiano no identifica al agresor. Su anuncio en Alejandría fue posterior. El próximo episodio pasa a las nuevas órdenes, oposición local y otra retirada y regreso por orden imperial referidos en Alejandría en 365–366. Son hechos posteriores, no la mañana siguiente."
       },
       "personalOutro": {
         "en": "I kept the torn sheet. When news came of Julian’s death I wanted one firm sentence to close that bundle of papers. Yet I had never seen the battlefield; I knew only what the messenger had brought. I left the attacker unnamed. Years later, when another emperor’s law arrived, my handwriting had grown smaller. The gap between those headings was a part of my life, not an empty line.",
@@ -119148,7 +119409,8 @@
         "arrivalPresence": "Hosting/onward receipts and delivered note content are historical observations, never current custody, carried inventory or simultaneous physical residence. All original identities must remain alive.",
         "calendar": "Broad362–363 retained; do not silently use the mirror356catalogdate, editorFebruary21footnote as letter text, or city deathannouncement as battlefield death date.",
         "timelineCausality": "Both original context deliveries are requirements of o3, so its latch precedes o4 timeline generation. o4/req-1 funds o4/req-2; o4/req-3 is the original generated timeline delivery. No reliance on a future same-phase delivery to prove earlier generation inputs.",
-        "personalScenes": "Invented ordinary clerical recollections: damp packet/senior25, porter/carrying pole26, torn sheet/colleague27. These are not source quotations, archaeological objects or historical witnesses. The common handover labels the fictional placement; personal speech avoids workflow commentary. Historical decisions and distant battles remain received reports."
+        "personalScenes": "Invented ordinary clerical recollections: damp packet/senior25, porter/carrying pole26, torn sheet/colleague27. These are not source quotations, archaeological objects or historical witnesses. The common handover labels the fictional placement; personal speech avoids workflow commentary. Historical decisions and distant battles remain received reports.",
+        "coverageAmendment": "Next selection is now365–366, not380. Five source-qualified additions preserve the existing final ID and narrative identity; their full dossiers and history/map/balance review remain pending."
       },
       "mapBBox": [
         29.915,
@@ -119833,7 +120095,7 @@
       }
     },
     {
-      "order": 28,
+      "order": 32,
       "mapSize": 400,
       "factualIntro": {
         "en": "On 27 February 380 a constitution was issued at Thessalonica in the names of Gratian, Valentinian and Theodosius. Its heading addresses the people of Constantinople. It prescribes the faith associated with Damasus of Rome and Peter of Alexandria and threatens those it classifies as dissenters. A prescription is not evidence of immediate acceptance or uniform enforcement. This reconstruction follows fictional local preparation and handovers; the distant addressee remains outside the map.",
@@ -119844,8 +120106,8 @@
         "es-ES": "Un copista más joven señaló los tres nombres del encabezamiento y preguntó si eso hacía tres testigos. Estuve a punto de darle la respuesta fácil. En cambio, giré la hoja y le pedí que señalara dónde se había emitido y a quién se dirigía. Encontró dos ciudades. Pareció fastidiado; recordé mi propia juventud. A mí ya me dolía la mano antes de acabar el trabajo de la mañana."
       },
       "factualOutro": {
-        "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the council at Constantinople in 381 and the different questions preserved in its texts.",
-        "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa al concilio de Constantinopla de 381 y a las distintas cuestiones conservadas en sus textos."
+        "en": "Two fictional local products reached different receiving courts, and both original couriers returned on their own recorded handovers. Those local receipts establish neither delivery to Constantinople nor compliance by its inhabitants. The law remains a historical prescription with a named addressee, not a count of converted people. The next episode moves to the separately reported arrival and church-possession changes at Constantinople in November 380.",
+        "es-ES": "Dos productos locales ficticios llegaron a patios receptores distintos y ambos mensajeros originales regresaron tras sus propias entregas registradas. Esos recibos locales no acreditan llegada a Constantinopla ni cumplimiento por sus habitantes. La ley sigue siendo una prescripción histórica con destinatario expreso, no un recuento de conversiones. El siguiente episodio pasa a la llegada y los cambios de posesión de iglesias referidos por separado en Constantinopla en noviembre de 380."
       },
       "personalOutro": {
         "en": "The younger man returned the sheet with the two places underlined. He had left a blank after the question about what people would do. I wanted to fill it. For once I let the space stand. I rubbed my stiff fingers and checked the couriers’ names; there was still work that a register could honestly answer for.",
@@ -120794,7 +121056,7 @@
       }
     },
     {
-      "order": 29,
+      "order": 34,
       "mapSize": 400,
       "factualIntro": {
         "en": "In 381 a council at Constantinople reaffirmed Nicene faith. Its transmitted canons address religious teaching, territorial administration and the city’s honorary rank after Rome as New Rome. These provisions did not instantly end disagreement or create today’s denominations. Later letters and the surviving transmission of the associated creed require their own dates. Our local reconstruction separates three working contexts before the campaign offers a choice of historical perspective.",
@@ -120962,7 +121224,7 @@
         "status": "independent review pending",
         "voice": "Marcus47 has fictional ordinary local life at Constantinople; no council chamber, bishop’s private motives or knowledge of451. Shelf/younger-clerk/bread scene is author-created biography.",
         "sourceIntegrity": "Use CCEL CanonIII for the honor text. NewAdvent3808 omits it and renumbers Maximus; do not repeat that transcription defect as ancient evidence.",
-        "finale": "Finale is drafted for current selection29, not approval of the whole campaign. Resolve363–380coverage before closing the architecture; any added earlier selection must preserve this final episode’s identity and canonical route keys.",
+        "finale": "Final semantic ID29 is display order34 in the34-selection arc. It remains the sole finale, with unchanged canonical route keys. Five added source-qualified selections still require full dossiers, historical review, maps and game calibration before closing the architecture.",
         "arrivalPresence": "All final receptions are historical records, not carrying, custody or co-presence. All9original identities survive.",
         "finaleTimingCorrection": "Independent snapshot review found fact-outro runs after victory, when a route is already selected. Outro now describes the selected recommendation; the actual request to choose remains in the pre-victory route-choice screen."
       },
@@ -121675,6 +121937,41 @@
       "before": "10-land-and-strait-logistics-chrysopolis",
       "after": "08-disputed-correspondence-alexandria",
       "basis": "Eusebius VC II.67 andII.72 place the transmitted imperial letter in a post-victory/Nicomedia context. No exact date is given;324–325 remains a qualified frame before the proposed325 council sequence."
+    },
+    {
+      "before": "27-return-and-departure-records-alexandria",
+      "after": "30-policy-reversal-alexandria",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "30-policy-reversal-alexandria",
+      "after": "31-contested-succession-alexandria",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "31-contested-succession-alexandria",
+      "after": "32-defeat-and-withdrawal-adrianople",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "32-defeat-and-withdrawal-adrianople",
+      "after": "33-accession-and-reassembly-sirmium",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "33-accession-and-reassembly-sirmium",
+      "after": "28-law-and-local-reception-thessalonica",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "28-law-and-local-reception-thessalonica",
+      "after": "34-church-transfer-constantinople",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
+    },
+    {
+      "before": "34-church-transfer-constantinople",
+      "after": "29-council-and-final-perspective-constantinople",
+      "basis": "Coverage amendment: keep source-qualified policy/succession/military/arrival sequence and preserve every semantic identity."
     }
   ],
   "chronologyCorrection": {
@@ -121682,5 +121979,19 @@
     "author": "gpt-6",
     "reason": "Post-victory correspondence follows the324 military episodes; semantic episode IDs and assigned slice IDs remain stable. Exact letter day and pre-Nicaea Antioch source review pending.",
     "approval": "architect ordering correction; independent approval pending"
+  },
+  "coverageAmendment": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "decision": "five new evidence-based turning points; preserve original IDs and final perspective routes",
+    "document": "docs/design/imperial-coverage-amendment.md",
+    "newIds": [
+      "30-policy-reversal-alexandria",
+      "31-contested-succession-alexandria",
+      "32-defeat-and-withdrawal-adrianople",
+      "33-accession-and-reassembly-sirmium",
+      "34-church-transfer-constantinople"
+    ],
+    "historicalApproval": false
   }
 }

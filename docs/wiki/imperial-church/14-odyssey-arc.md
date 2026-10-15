@@ -1,6 +1,6 @@
 # The Eagle and the Cross / El águila y la cruz
 
-`imperial-church` · CDF-C01 · 29 selected episodes · source locale `en`
+`imperial-church` · CDF-C01 · 34 selected episodes · source locale `en`
 
 **Status:** chronological selections and main-mechanic choices authored. Complete expanded dossiers, playable maps and measured balancing are pending. Do not assign these selections to MiniMax as completed authoring briefs.
 
@@ -18,7 +18,7 @@
     "publicId": "CDF-C01",
     "internalName": "CDF_ImperialChurch",
     "sourceLocale": "en",
-    "targetEpisodeCount": 29,
+    "targetEpisodeCount": 34,
     "narratorId": "imperial-clerk",
     "personaLens": {
       "en": "Supply clerks and inherited state papers",
@@ -46,7 +46,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "29 consultations attached; corrected selected claims prevail over conflicting raw candidates; independent historical approval pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; five additional full dossiers and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -55,7 +55,7 @@
       "knowledge": "312–337 inherited documents; early childhood never adult eyewitness; later dated visits explicitly recorded episode by episode",
       "status": "authored decision; baseline catalogue/voice bible migration occurs with expanded campaign dossier"
     },
-    "selectedEpisodeCount": 29,
+    "selectedEpisodeCount": 34,
     "selectionNotes": [
       "Helena death328–330andCrispus/Fausta326remain cautious background, not invented detective missions at uncertain locations.",
       "Paschal decisions are integrated withNicea; capital expansion is integrated with330.",
@@ -244,14 +244,19 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-5: The Weight of Orthodoxy / El peso de la ortodoxia
 
-Historical year band: [361, 381]. Juliano, ley de380 y concilio de381; el poder prescribe una norma sin probar su aceptación uniforme.
+Historical year band: [361, 381]. Reversiones de política, sucesión, derrota y recomposición antes de la ley de380, los cambios de acceso urbano y la coda conciliar de381. Prescripción y aceptación siguen siendo distintas.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
 | 26 / 26-plural-civic-logistics-constantinople | Altars of a New Reign / Los altares de un nuevo reinado | December 361–early 362 CE; policy sequence, no fixed local reopening day | constantinople | plural-civic-logistics |
 | 27 / 27-return-and-departure-records-alexandria | The Return That Did Not Last / El regreso que no duró | 362–363 CE; exile policies focus, Persian campaign reported off-map | alexandria | return-and-departure-records |
-| 28 / 28-law-and-local-reception-thessalonica | The Weight of an Imperial Word / El peso de una palabra imperial | 27 February 380 CE | thessalonica | law-and-local-reception |
-| 29 / 29-council-and-final-perspective-constantinople | Under the Same Eastern Sky / Bajo el mismo cielo oriental | 381 CE | constantinople | council-and-final-perspective |
+| 28 / 30-policy-reversal-alexandria | Beyond the Quiet River / Más allá del río silencioso | 365–366 CE; source calendar and consular formulas qualified | alexandria | policy-reversal-and-discreet-support |
+| 29 / 31-contested-succession-alexandria | The Empty Chair / La silla vacía | 373 CE conventional; Socrates’ consular synchronism conflicts | alexandria | contested-succession-and-local-continuity |
+| 30 / 32-defeat-and-withdrawal-adrianople | Where the Eagles Fell / Donde cayeron las águilas | 378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion | adrianople | finite-post-defeat-withdrawal |
+| 31 / 33-accession-and-reassembly-sirmium | The Burden of the Purple / El peso de la púrpura | 379 CE; exact accession day requires chronology comparison | sirmium | post-crisis-reassembly-and-accession |
+| 32 / 28-law-and-local-reception-thessalonica | The Weight of an Imperial Word / El peso de una palabra imperial | 27 February 380 CE | thessalonica | law-and-local-reception |
+| 33 / 34-church-transfer-constantinople | The Doors of New Rome / Las puertas de Nueva Roma | November380 CE; arrival and church transfer are distinct source dates | constantinople | changed-urban-access-and-local-care |
+| 34 / 29-council-and-final-perspective-constantinople | Under the Same Eastern Sky / Bajo el mismo cielo oriental | 381 CE | constantinople | council-and-final-perspective |
 
 The proposed act curve is a calibration hypothesis. It cannot add fictional military opposition to a peaceful event or change a documented outcome.
 
@@ -1243,7 +1248,95 @@ Limit: Sourcecalendar/translation has date/formula issues: returnMechir27, stayt
 
 Limit: Ammianusservedonthecampaign but selectedpassage doesnotestablish hisphysicalwitnessofthewound/tentdialogue. Lastspeech, portents,virtue,polemicalorprovidentialinterpretation remain authorial. No namedkiller, divinetarget,playableemperorrescue,preciseunverifiedbattletileor localAlexandriabattle. AllPersiangeography off-map.
 
-### 28. The Weight of an Imperial Word
+### 28. Beyond the Quiet River
+
+[Candidate source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala X.15–XI.16
+
+Research candidate (not yet approved narration): The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall.
+
+Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.
+
+Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall.
+
+ES: La crónica anónima refiere una nueva orden, resistencia local, partida oculta de Atanasio y posterior regreso por orden imperial.
+
+[Consulted source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala X.15–XI.16
+
+Limit: Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.
+
+Status: consulted as bounded source collection; full dossier pending
+
+### 29. The Empty Chair
+
+[Candidate source](https://www.newadvent.org/fathers/2820.htm): Historia Acephala XII.17 and XIII.19; Socrates HE IV.20–22, with chronology conflict
+
+Research candidate (not yet approved narration): Athanasius’ death and the contested succession changed Alexandrian church leadership. The adopted 373 frame is not obtained by silently correcting Socrates’ conflicting synchronism.
+
+Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.
+
+Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: Athanasius’ death and the contested succession changed Alexandrian church leadership. The adopted 373 frame is not obtained by silently correcting Socrates’ conflicting synchronism.
+
+ES: La muerte de Atanasio y la sucesión disputada cambiaron el liderazgo eclesial alejandrino. El marco adoptado de 373 no procede de corregir en silencio el sincronismo contradictorio de Sócrates.
+
+[Consulted source](https://www.newadvent.org/fathers/2820.htm): Historia Acephala XII.17 and XIII.19; Socrates HE IV.20–22, with chronology conflict
+
+Limit: Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.
+
+Status: consulted as bounded source collection; full dossier pending
+
+### 30. Where the Eagles Fell
+
+[Candidate source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html): Ammianus XXXI.11–13, especially12.10 and13.12–17
+
+Research candidate (not yet approved narration): Ammianus describes a Roman defeat near Hadrianopolis and preserves competing accounts of Valens’ death. Local survivor gameplay must not reverse that outcome.
+
+No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.
+
+Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: Ammianus describes a Roman defeat near Hadrianopolis and preserves competing accounts of Valens’ death. Local survivor gameplay must not reverse that outcome.
+
+ES: Amiano describe una derrota romana cerca de Adrianópolis y conserva relatos contrapuestos de la muerte de Valente. El juego local de supervivientes no puede invertir ese desenlace.
+
+[Consulted source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html): Ammianus XXXI.11–13, especially12.10 and13.12–17
+
+Limit: No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.
+
+Status: consulted as bounded source collection; full dossier pending
+
+### 31. The Burden of the Purple
+
+[Candidate source](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.2–3
+
+Research candidate (not yet approved narration): Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history.
+
+The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.
+
+Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history.
+
+ES: Sócrates refiere la elevación de Teodosio en Sirmio y un panorama religioso todavía dividido tras Valente. El nombramiento es historia fija narrada.
+
+[Consulted source](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.2–3
+
+Limit: The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.
+
+Status: consulted as bounded source collection; full dossier pending
+
+### 32. The Weight of an Imperial Word
 
 [Candidate source](https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm): Codex Theodosianus 16.1.2, Edictum de fide catholica; edición de texto latino y encabezamiento consultados.
 
@@ -1275,7 +1368,29 @@ Limit: The compilation transmits a norm. No individual local receipt, dispatch r
 
 Limit: Not a georeferenced 380 plan, dated coast or DEM. Exact place of law issue remains unknown. Copyrighted PDF consulted temporarily, not redistributed.
 
-### 29. Under the Same Eastern Sky
+### 33. The Doors of New Rome
+
+[Candidate source](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.6–7
+
+Research candidate (not yet approved narration): Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
+
+Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.
+
+Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
+
+Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+
+Architect-corrected claim EN: Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
+
+ES: Sócrates narra por separado la llegada de Teodosio y los cambios de posesión de iglesias en Constantinopla. Su interpretación teológica queda atribuida; no es cumplimiento automático de la ley de febrero.
+
+[Consulted source](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.6–7
+
+Limit: Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.
+
+Status: consulted as bounded source collection; full dossier pending
+
+### 34. Under the Same Eastern Sky
 
 [Candidate source](https://www.papalencyclicals.net/councils/ecum02.htm): Credo y cánones del Concilio de Constantinopla I; la página señala el problema de la transmisión del credo y el estatus inicialmente limitado del concilio.
 

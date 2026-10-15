@@ -16,7 +16,7 @@ last-transition-at: 2026-10-12T04:20:24.800Z
 
 ## goal
 
-MiniMax M3.1 materializa `imperial-church` / CDF-C01 como odisea independiente de 29 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. Esta propuesta permanece bloqueada: una selección de episodios no es un contrato aprobado.
+MiniMax M3.1 materializa `imperial-church` / CDF-C01 como odisea independiente de 34 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. Esta propuesta permanece bloqueada: una selección de episodios no es un contrato aprobado.
 
 ## why
 
@@ -42,7 +42,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 | act-2 | A Creed in Many Tongues | 7, 8, 9, 10, 11, 12 | S12, S14, S15, S13, S16, S4 |
 | act-3 | Stone and Succession | 13, 14, 15, 16, 17, 18, 19 | S17, S5, S18, S19, S20, S21, S22 |
 | act-4 | Councils Without Concord | 20, 21, 22, 23, 24, 25 | S23, S24, S25, S26, S27, S28 |
-| act-5 | The Weight of Orthodoxy | 26, 27, 28, 29 | S29, S30, S31, S32 |
+| act-5 | The Weight of Orthodoxy | 26, 27, 28, 29, 30, 31, 32, 33, 34 | S29, S30, S33, S34, S35, S36, S31, S37, S32 |
 
 ## slices
 
@@ -53,7 +53,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Files**: `docs/qa/imperial-church/design-conformance.md`
 - **Gate**: e2e
 - acceptance:
-  - "Verificar los 29 expedientes completos de imperial-church, cinco actos, pasajes consultados y revisión independiente del arquitecto. Si falta un objetivo, mapa, pantalla o nivelación, informar la brecha; no decidirlo MiniMax."
+  - "Verificar los 34 expedientes completos de imperial-church, cinco actos, pasajes consultados y revisión independiente del arquitecto. Si falta un objetivo, mapa, pantalla o nivelación, informar la brecha; no decidirlo MiniMax."
   - "Contrastar IDs estables, sourceLocale=en, EN/es-ES completos, voz factual común antes de persona situada y orden de campaña no bloqueante; conservar estados pendientes de otros idiomas y medios."
 
 ### S2 — Metadatos, pantallas de campaña y medios en staging
@@ -417,27 +417,92 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
   - "Materializar únicamente el expediente aprobado imperial-church/27-return-and-departure-records-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S31 — Episodio 28: The Weight of an Imperial Word
+### S33 — Episodio 28: Beyond the Quiet River
 - **Status**: pending
 - **DependsOn**: [S30]
+- **Files**: `staging/campaigns/imperial-church/scenarios/30-policy-reversal-alexandria`, `docs/qa/imperial-church/episodes/30-policy-reversal-alexandria`
+- **Gate**: e2e
+- **Act**: act-5
+- **ScenarioId**: 30-policy-reversal-alexandria
+- **Order**: 28
+- **HistoricalFrame**: 365–366 CE; source calendar and consular formulas qualified; geography=alexandria; core=policy-reversal-and-discreet-support
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/30-policy-reversal-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S34 — Episodio 29: The Empty Chair
+- **Status**: pending
+- **DependsOn**: [S33]
+- **Files**: `staging/campaigns/imperial-church/scenarios/31-contested-succession-alexandria`, `docs/qa/imperial-church/episodes/31-contested-succession-alexandria`
+- **Gate**: e2e
+- **Act**: act-5
+- **ScenarioId**: 31-contested-succession-alexandria
+- **Order**: 29
+- **HistoricalFrame**: 373 CE conventional; Socrates’ consular synchronism conflicts; geography=alexandria; core=contested-succession-and-local-continuity
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/31-contested-succession-alexandria: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S35 — Episodio 30: Where the Eagles Fell
+- **Status**: pending
+- **DependsOn**: [S34]
+- **Files**: `staging/campaigns/imperial-church/scenarios/32-defeat-and-withdrawal-adrianople`, `docs/qa/imperial-church/episodes/32-defeat-and-withdrawal-adrianople`
+- **Gate**: e2e
+- **Act**: act-5
+- **ScenarioId**: 32-defeat-and-withdrawal-adrianople
+- **Order**: 30
+- **HistoricalFrame**: 378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion; geography=adrianople; core=finite-post-defeat-withdrawal
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/32-defeat-and-withdrawal-adrianople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S36 — Episodio 31: The Burden of the Purple
+- **Status**: pending
+- **DependsOn**: [S35]
+- **Files**: `staging/campaigns/imperial-church/scenarios/33-accession-and-reassembly-sirmium`, `docs/qa/imperial-church/episodes/33-accession-and-reassembly-sirmium`
+- **Gate**: e2e
+- **Act**: act-5
+- **ScenarioId**: 33-accession-and-reassembly-sirmium
+- **Order**: 31
+- **HistoricalFrame**: 379 CE; exact accession day requires chronology comparison; geography=sirmium; core=post-crisis-reassembly-and-accession
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/33-accession-and-reassembly-sirmium: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S31 — Episodio 32: The Weight of an Imperial Word
+- **Status**: pending
+- **DependsOn**: [S36]
 - **Files**: `staging/campaigns/imperial-church/scenarios/28-law-and-local-reception-thessalonica`, `docs/qa/imperial-church/episodes/28-law-and-local-reception-thessalonica`
 - **Gate**: e2e
 - **Act**: act-5
 - **ScenarioId**: 28-law-and-local-reception-thessalonica
-- **Order**: 28
+- **Order**: 32
 - **HistoricalFrame**: 27 February 380 CE; geography=thessalonica; core=law-and-local-reception
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/28-law-and-local-reception-thessalonica: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
-### S32 — Episodio 29: Under the Same Eastern Sky
+### S37 — Episodio 33: The Doors of New Rome
 - **Status**: pending
 - **DependsOn**: [S31]
+- **Files**: `staging/campaigns/imperial-church/scenarios/34-church-transfer-constantinople`, `docs/qa/imperial-church/episodes/34-church-transfer-constantinople`
+- **Gate**: e2e
+- **Act**: act-5
+- **ScenarioId**: 34-church-transfer-constantinople
+- **Order**: 33
+- **HistoricalFrame**: November380 CE; arrival and church transfer are distinct source dates; geography=constantinople; core=changed-urban-access-and-local-care
+- acceptance:
+  - "Materializar únicamente el expediente aprobado imperial-church/34-church-transfer-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+
+### S32 — Episodio 34: Under the Same Eastern Sky
+- **Status**: pending
+- **DependsOn**: [S37]
 - **Files**: `staging/campaigns/imperial-church/scenarios/29-council-and-final-perspective-constantinople`, `docs/qa/imperial-church/episodes/29-council-and-final-perspective-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
 - **ScenarioId**: 29-council-and-final-perspective-constantinople
-- **Order**: 29
+- **Order**: 34
 - **HistoricalFrame**: 381 CE; geography=constantinople; core=council-and-final-perspective
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/29-council-and-final-perspective-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
@@ -449,12 +514,12 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Files**: `staging/campaigns/imperial-church`, `campaigns/imperial-church`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/imperial-church/delivery`
 - **Gate**: e2e
 - acceptance:
-  - "Promover exactamente los 29 episodios en su orden aprobado, junto a IDs/glosario bajo propiedad conjunta. staging:check sin --partial, bun run validate y build/export/candidate según perfil acreditado; no renumerar IDs ni sustituir escenario por fixture."
+  - "Promover exactamente los 34 episodios en su orden aprobado, junto a IDs/glosario bajo propiedad conjunta. staging:check sin --partial, bun run validate y build/export/candidate según perfil acreditado; no renumerar IDs ni sustituir escenario por fixture."
   - "Evidencia de AoE2 por hash/build/locales/tres dificultades, objetivos opcionales ignorados/completos y performance. Calibración final pertenece al arquitecto/tester; revisión independiente, integración oficial y estados lingüísticos/media reales antes de release."
 
 ## acceptance
 
-- 29 escenarios de esta odisea, cinco actos, cada slice y objetivo trazable al dossier aprobado.
+- 34 escenarios de esta odisea, cinco actos, cada slice y objetivo trazable al dossier aprobado.
 - Gates previos reales; sin atribuir a MiniMax el cierre de decisiones históricas, geográficas o arquitectónicas.
 - Independencia jugable, recomendaciones correctas, identidad estable, memoria acumulativa y progreso solo en el final efectivo.
 - Predicados acreditados, 6–8 secundarios por episodio, solvencia de ambos extremos y QA medido; no aprobar por documentación estática.

@@ -323,7 +323,7 @@
       "campaignId": "imperial-church",
       "proposalId": "f00003",
       "path": "blocked/f00003-campana-futura-iglesia-imperial-312-337.md",
-      "targetEpisodeCount": 29,
+      "targetEpisodeCount": 34,
       "acts": [
         {
           "actId": "act-1",
@@ -408,13 +408,23 @@
           "episodeIds": [
             "26-plural-civic-logistics-constantinople",
             "27-return-and-departure-records-alexandria",
+            "30-policy-reversal-alexandria",
+            "31-contested-succession-alexandria",
+            "32-defeat-and-withdrawal-adrianople",
+            "33-accession-and-reassembly-sirmium",
             "28-law-and-local-reception-thessalonica",
+            "34-church-transfer-constantinople",
             "29-council-and-final-perspective-constantinople"
           ],
           "sliceIds": [
             "S29",
             "S30",
+            "S33",
+            "S34",
+            "S35",
+            "S36",
             "S31",
+            "S37",
             "S32"
           ]
         }
@@ -610,15 +620,50 @@
           "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
         },
         {
-          "episodeId": "28-law-and-local-reception-thessalonica",
+          "episodeId": "30-policy-reversal-alexandria",
           "order": 28,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "31-contested-succession-alexandria",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S34",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "32-defeat-and-withdrawal-adrianople",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S35",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "33-accession-and-reassembly-sirmium",
+          "order": 31,
+          "actId": "act-5",
+          "sliceId": "S36",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-law-and-local-reception-thessalonica",
+          "order": 32,
           "actId": "act-5",
           "sliceId": "S31",
           "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
         },
         {
+          "episodeId": "34-church-transfer-constantinople",
+          "order": 33,
+          "actId": "act-5",
+          "sliceId": "S37",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
           "episodeId": "29-council-and-final-perspective-constantinople",
-          "order": 29,
+          "order": 34,
           "actId": "act-5",
           "sliceId": "S32",
           "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
@@ -2890,5 +2935,5 @@
   "designProposal": "d00002",
   "englishProposal": "i00002",
   "baselineDesignProposal": "d00001",
-  "scope": "273-episode odysseys; proposal structure assigned; dossier and execution gates pending"
+  "scope": "278-episode odysseys; proposal structure assigned; dossier and execution gates pending"
 }
