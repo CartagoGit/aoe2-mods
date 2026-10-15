@@ -1,6 +1,6 @@
 # Live entity presence / implementation contract
 
-Architect gpt-6, 14 October 2026. Official proposal [i00005](../delendai/proposals/ready/infras/i00005-presencia-actual-de-entidades-distinta-del-historial-de-entregas.md). Specification only: reference implementation, native observers and actual AoE2 QA remain pending. The approved i00003/S1 semantics are preserved.
+Architect gpt-6, 14 October 2026. Official proposal [i00005](../delendai/proposals/ready/infras/i00005-presencia-actual-de-entidades-distinta-del-historial-de-entregas.md). Reference implementation completed and independently approved in i00005/S1 on15October2026; native observers and actual AoE2 QA remain pending. The approved i00003/S1 semantics are preserved.
 
 ## Problem and required behavior
 
@@ -52,3 +52,12 @@ The trusted native observer produces these inputs; tests may supply them explici
 i00005/S2 additionally requires the native foundation in i00003/S3. Bind the current-position/health observer to real unit IDs and tested zone geometry. A current-membership batch cannot be implemented by a historical Enter Area receipt, timeout or script Boolean. Capture XS/parser/build versions, callbacks, round-trips, same-tick ordering and saved-game behavior. Actual game evidence remains a separate gate.
 
 i00005/S3 updates the dossier support states and designated handoff only after actual implementation and independent review. MiniMax may then materialize the exact approved content contract. Until those gates close, Milan22 stays a full **design draft with an unimplemented requirement**, rather than an implementable historical campaign.
+
+
+## Reference delivery, 15 October 2026
+
+Implementation corrections landed in `983ef905`; formal fresh review landed in `d793ae4652e64df87afd5015ed24fbfaa31ad707`. [GPT-6.1 technical reevaluation](../qa/campaign-design/entity-presence-gpt61-round2.md) confirmed both prior findings were corrected. Its formal approval was rejected by the runtime’s reviewer rotation rule; [fresh gpt-6-luna review](../qa/campaign-design/entity-presence-luna-fresh-review.md) independently inspected the diff and executed checks before formal approval. Both reports retain their actual scope.
+
+The shared generation helper now prevents a future derived token or receipt-generated identity from counting as present before its producer has run. A rejected spatial batch does not prevent a tick from processing an independent deadline or defeat. Own reviewer checks passed102tests/389assertions and export3variants/2round-trips with unsupported mode rejected and gameVerified=false.
+
+Milan22 records this reference provenance separately. Its requirement implementationStatus remains unimplemented for native materialization; required-capability status now accurately distinguishes the reviewed reference from the pending native implementation. This documentation correction does not execute or approve S2/S3, unlock campaign authorship, certify current observations in AoE2 or prove historical geography. Those gates remain as stated above.

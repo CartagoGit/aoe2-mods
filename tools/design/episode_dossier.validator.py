@@ -92,7 +92,7 @@ def audit_dossier(episode, campaign=None, baseline=None):
                     and req.get("implementationStatus") == "unimplemented"
                     and req.get("proposalId") == "i00005"
                     and capability is not None
-                    and capability.get("status") == "specified; reference and native implementations pending",
+                    and capability.get("status") == "reference model implemented; native implementation pending",
                     f"{context}: current presence needs its unimplemented capability gate",
                 )
             elif req["kind"] == "entity-state":

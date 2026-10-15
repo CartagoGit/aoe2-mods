@@ -2087,7 +2087,7 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
     },
     {
       "id": "live-entity-presence",
-      "status": "specified; reference and native implementations pending",
+      "status": "reference model implemented; native implementation pending",
       "proposalId": "i00005"
     }
   ],

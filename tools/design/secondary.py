@@ -67,6 +67,7 @@ def objective_text(kind, subject, reward, information_benefit=None, instruction=
 def build_optional_objectives(scenario, authored):
     """Authors choose every task/context; only IDs, ledgers, captions and bounded math are shared."""
     result = []
+    known_hubs = {hub['id'] for hub in scenario['mapPlan']['hubs']}
     for number, item in enumerate(authored, 1):
         kind = item['kind']
         oid = f'side-{number}'
@@ -75,8 +76,12 @@ def build_optional_objectives(scenario, authored):
         destination = 'hub-1' if kind in ('extract', 'copy') else ('hub-3' if kind == 'guide' else 'hub-2')
         placement = item.get('placement', {})
         if (not isinstance(placement, dict)
-                or set(placement) - {'originHub', 'receivingHub', 'observationHubs'}):
-            raise ValueError('Unknown optional placement fields; use originHub, receivingHub and observationHubs')
+                or set(placement) - {'originHub', 'receivingHub', 'observationHubs', 'entityOffsetsTiles'}):
+            raise ValueError('Unknown optional placement fields; use explicit hubs and entityOffsetsTiles')
+        for field in ('originHub', 'receivingHub'):
+            if field in placement and (not isinstance(placement[field], str)
+                                       or placement[field] not in known_hubs):
+                raise ValueError(f'Optional {field} must name an existing hub')
         origin = placement.get('originHub', origin)
         destination = placement.get('receivingHub', destination)
         entity_count = 2 if kind in ('aid', 'copy', 'extract') else 1
@@ -88,14 +93,27 @@ def build_optional_objectives(scenario, authored):
         ]
         if kind == 'repair':
             entities[0].update(initialHub=origin, initialHealthFraction=0.5, damageSource='fictional prior damage')
+        if 'entityOffsetsTiles' in placement:
+            offsets = placement['entityOffsetsTiles']
+            if (not isinstance(offsets, list) or len(offsets) != len(entities)
+                    or any(not isinstance(point, list) or len(point) != 2
+                           or any(not isinstance(value, (int, float)) or isinstance(value, bool)
+                                  or not math.isfinite(value) for value in point)
+                           for point in offsets)):
+                raise ValueError('Optional entityOffsetsTiles needs one finite coordinate pair per identity')
+            for entity, point in zip(entities, offsets):
+                entity['offsetTiles'] = list(point)
         zones = [
             {'id': f'{ns}.zone-{i}', 'hub': ('hub-2' if i == 1 else 'hub-3') if kind == 'watch' else ('hub-1' if i == 1 else 'hub-3') if kind == 'scout' else destination, 'offsetTiles': [0, -8 if i == 1 else 8] if kind == 'watch' else [-8 if i == 1 and kind in ('aid', 'scout') else 8, 0], 'radiusTiles': 3}
             for i in range(1, 3 if kind in ('aid', 'scout', 'watch') else 2)
         ]
-        if placement.get('observationHubs'):
-            if kind not in ('scout', 'watch') or len(placement['observationHubs']) != len(zones):
+        if 'observationHubs' in placement:
+            points = placement['observationHubs']
+            if (kind not in ('scout', 'watch') or not isinstance(points, list)
+                    or len(points) != len(zones)
+                    or any(not isinstance(hub, str) or hub not in known_hubs for hub in points)):
                 raise ValueError('Observation placement needs one hub per scout/watch zone')
-            for zone, hub in zip(zones, placement['observationHubs']):
+            for zone, hub in zip(zones, points):
                 zone['hub'] = hub
         requirements = []
         if kind in ('scout', 'watch'):

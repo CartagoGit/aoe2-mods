@@ -13,6 +13,38 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_invalid_authored_observation_hubs_never_fall_back_to_default_sites(self):
+        from secondary import build_optional_objectives
+        campaign = json.loads((ROOT / 'docs/design/odysseys/imperial-church.json').read_text())
+        episode = next(e for e in campaign['episodes'] if e['order'] == 26)
+        task = copy.deepcopy(next(b for b in campaign['episodeBlueprints']
+                                  if b['order'] == 26)['optionalTasks'][0])
+        task['placement']['observationHubs'] = ['hub-3', 'hub-4']
+        valid = build_optional_objectives(episode, [task])[0]
+        self.assertEqual([zone['hub'] for zone in valid['world']['zones']], ['hub-3', 'hub-4'])
+        for invalid in ([], None, '', ['hub-3'], ['absent', 'hub-4'], [7, 'hub-4']):
+            with self.subTest(hubs=invalid):
+                task['placement']['observationHubs'] = invalid
+                with self.assertRaisesRegex(ValueError, 'one hub per scout/watch zone'):
+                    build_optional_objectives(episode, [task])
+
+    def test_authored_side_actor_offsets_separate_shared_origin_actors(self):
+        from secondary import build_optional_objectives
+        campaign = json.loads((ROOT / 'docs/design/odysseys/imperial-church.json').read_text())
+        episode = next(e for e in campaign['episodes'] if e['order'] == 26)
+        task = copy.deepcopy(next(b for b in campaign['episodeBlueprints']
+                                  if b['order'] == 26)['optionalTasks'][-1])
+        task['placement']['entityOffsetsTiles'] = [[-10, -6]]
+        side = build_optional_objectives(episode, [task])[0]
+        self.assertEqual(side['world']['entities'][0]['offsetTiles'], [-10, -6])
+        self.assertNotEqual(side['world']['entities'][0]['offsetTiles'], [-6, 3])
+        self.assertEqual(side['effects'][0]['kind'], 'mark-alternative-route')
+        for invalid in ([], [[float('nan'), 0]], [[1, 2], [3, 4]], [[True, 0]]):
+            with self.subTest(offsets=invalid):
+                task['placement']['entityOffsetsTiles'] = invalid
+                with self.assertRaisesRegex(ValueError, 'finite coordinate pair per identity'):
+                    build_optional_objectives(episode, [task])
+
     def test_optional_authored_placement_never_silently_uses_defaults(self):
         from secondary import build_optional_objectives
         campaign = json.loads((ROOT / 'docs/design/odysseys/imperial-church.json').read_text())

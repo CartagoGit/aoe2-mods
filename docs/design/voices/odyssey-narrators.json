@@ -646,6 +646,12 @@
           "classification": "author-created personal biography, never historical witness evidence"
         },
         {
+          "yearBand": "late361–early362, temporary visit",
+          "place": "Constantinople ordinary civic work yards",
+          "knowledgeAccess": "Fictional temporary clerical work visit within eastern office years; imperial orders are received reports, no palace/ritual eyewitness.",
+          "classification": "author-created personal biography, never historical witness evidence"
+        },
+        {
           "yearBand": "c.376–381",
           "place": "Constantinople",
           "knowledgeAccess": "adult local administrative experience; public outcomes, no council deliberation access",
@@ -1118,7 +1124,7 @@
           "scenarioId": "26-plural-civic-logistics-constantinople",
           "order": 26,
           "actId": "act-5",
-          "historicalDate": "361 CE",
+          "historicalDate": "December 361–early 362 CE; policy sequence, no fixed local reopening day",
           "geographyId": "constantinople",
           "mode": "fictional-local-life-plus-received-reports",
           "access": {
@@ -1127,7 +1133,8 @@
           },
           "historicalEyewitnessClaimAllowed": false,
           "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
+          "completeDossierPlacementRequired": true,
+          "completeDossierPlacement": "Fictional temporary ordinary work visit at27 inlate361; public policy received, private audience and ritual experience not claimed."
         },
         {
           "scenarioId": "27-return-and-departure-records-alexandria",
@@ -1142,7 +1149,8 @@
           },
           "historicalEyewitnessClaimAllowed": false,
           "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
+          "completeDossierPlacementRequired": true,
+          "completeDossierPlacement": "Received Alexandrian and Persian accounts at28–29 during eastern clerical work. No physical attendance in Alexandria, bishop’s refuge or Persian battle/tent."
         },
         {
           "scenarioId": "28-law-and-local-reception-thessalonica",
