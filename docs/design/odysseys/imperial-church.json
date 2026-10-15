@@ -80689,7 +80689,7 @@
             "widthTiles": 6
           }
         ],
-        "terrainInstructions": "Ariminum Adriatic low plain and local urban/periurban courts. Core modern anchors only; do not claim excavated359workshops. Tiberius bridge and Augustus arch need fabric/phase-qualified proxies; photo shows later repairs and modern setting, arch battlements not359 proof. Keep proposed main network city-side of old Marecchia and north of historical Ausa after dated bank/crossing verification. Patara drainage and minorwater can invalidate straightlinks: survey fullwidth and mark certified crossings or reroute within declared localframe before native promotion. No mandatory Tiberius bridge crossing, Adriatic embarkation, reconstructed harbor, medievalCastelSismondo/TempioMalatestiano or modernriverdiversion. Modern transformationplateC1.1.1 excludes later footprint, not359 reconstruction. Seleucia, NiceinThrace and imperialcourtjourneys are off-map, never renamedlocal districts.",
+        "terrainInstructions": "Ariminum on the Adriatic low plain, with fictional local urban and periurban work courts. Modern coordinates are approximate controls, not excavated 359 addresses. The Tiberius bridge and Augustus arch require dated fabric and phase checks; present photographs include later repairs, modern surroundings and arch battlements. Proposed main routes must remain on the city side of the old Marecchia and north of the historical Ausa, subject to dated bank verification. Patara drainage and smaller waterways may invalidate straight links: inspect full route widths and certify crossings or reroute within the local frame before native promotion. No mandatory bridge crossing, sea voyage or reconstructed harbor. Exclude Castel Sismondo, Tempio Malatestiano and modern river diversions. Municipal C1.1.1 illustrates nineteenth- and twentieth-century transformations, not the Roman city. Seleucia, Nice in Thrace and imperial audiences remain off-map.",
         "corridorStraightLengthsTiles": {
           "western-account-circuit": 207.26,
           "eastern-account-circuit": 345.58,
@@ -80749,7 +80749,7 @@
             "role": "fictional-separate-context-note",
             "initialHub": "hub-3",
             "offsetTiles": [
-              0,
+              -14,
               8
             ],
             "identity": "explicitly fictional gameplay identity",
@@ -81318,8 +81318,8 @@
             "o2"
           ],
           "text": {
-            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once.",
-            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total."
+            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once.",
+            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total."
           },
           "predicate": {
             "operator": "all",
@@ -81534,8 +81534,8 @@
           "es-ES": "Paga una vez 120 de madera y 30 de oro en el taller central. Elabora una copia matizada de cada relato por separado y un índice ordinario de la nota de provisiones."
         },
         {
-          "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once.",
-          "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total."
+          "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once.",
+          "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total."
         },
         {
           "en": "After each cohort’s own reception, send all three original western and all three original eastern assistants back to the northern local return court. Deliver the ordinary index separately to the southern archive.",
@@ -81559,7 +81559,8 @@
         "author": "gpt-6",
         "status": "independent review pending",
         "voice": "Marcus25 receives accounts; later sorting memories belong to fictional personalexperience, never Ariminum council/imperialaudience witness. No fifth-century Socrates text placed as359physicalobject.",
-        "arrivalPresence": "Final contract uses historical delivery receipts and causal returns; it makes no simultaneous custody, residence, carried cargo or currentcopyposition claim."
+        "arrivalPresence": "Final contract uses historical delivery receipts and causal returns; it makes no simultaneous custody, residence, carried cargo or currentcopyposition claim.",
+        "secondaryColocation": "Two optional receiving circles share a court position intentionally: household 2 and the repair work area; guide junction and wayfarer rest point. Distinct original identities, health/payment versus arrival and separate once-only ledgers prevent cross-completion. The second main account note is moved outside the optional viewpoint to avoid initial overlap; initial visibility never counts as a visit."
       },
       "status": "authored-dossier; source approval, map geometry, native capabilities and game balance pending",
       "artDirection": {
@@ -81599,18 +81600,19 @@
         "nativeStatus": "pending",
         "gameVerified": false,
         "cases": [
-          "western arrival cannot authorize eastern departure",
-          "copy receipt cannot authorize assistant departure",
-          "exact120Fpercourt not240Fatonecourt",
-          "all three original assistantspercohortreturn after own phase-activedeparture",
-          "copies retain separateworkinglabels; no generatedcanonicaldraft/signature",
-          "optional wayfarer never substitutesmainassistant",
-          "skipall optional solvent acrossall levels",
-          "Taurus isprefect, notmagisterofficiorum",
-          "SocratesLiberiusexilechronology notimported359",
-          "Seleucia/NiceinThrace/imperialcourtremainoffmap",
-          "municipalmoderntransformationplate not359reconstruction",
-          "lossoptionalactor failsitsown taskonly",
+          "A western assistant receipt cannot authorize eastern departure.",
+          "A copy receipt cannot authorize assistant departure.",
+          "Require 120 food at each court, not 240 at one court.",
+          "All three original assistants in each cohort return only after their own receipt and phase-active departure.",
+          "Copies preserve separate labels; no authentic creed or signature is generated.",
+          "Optional wayfarers never replace main assistants.",
+          "All three difficulties remain solvent when every optional objective is skipped.",
+          "Taurus is a praetorian prefect, distinct from the magister officiorum.",
+          "Do not import the Liberius exile sequence in Socrates as a 359 event.",
+          "Seleucia, Nice in Thrace and imperial journeys remain off-map.",
+          "The municipal modern transformation plate is not a reconstruction of 359.",
+          "Losing an optional actor fails only its own optional task.",
+          "Every secondary uses its authored origin, receiving or observation hubs; reject unknown placement keys.",
           "skip all optional objectives and win at each difficulty",
           "complete all optionals at each difficulty without spending protected recovery stock",
           "save/load before and after every delivery, payment, optional reward and terminal latch",
@@ -81636,8 +81638,8 @@
             "es-ES": "Notas opcionales de atribución distinguen relatos recibidos, voces documentales y cronología incierta. Aportan contexto, nunca una puntuación de verdad doctrinal."
           },
           "text": {
-            "en": "Recover both separate copies from names without a doctrinal verdict and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
-            "es-ES": "Recupera las dos copias distintas de nombres sin veredicto doctrinal y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+            "en": "Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+            "es-ES": "Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -81669,7 +81671,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-1.entity-1",
                 "role": "copy",
-                "initialHub": "hub-3",
+                "initialHub": "hub-7",
                 "offsetTiles": [
                   -6,
                   3
@@ -81682,7 +81684,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-1.entity-2",
                 "role": "copy",
-                "initialHub": "hub-3",
+                "initialHub": "hub-7",
                 "offsetTiles": [
                   -6,
                   6
@@ -81766,7 +81768,7 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-3",
+            "originHub": "hub-7",
             "receivingHub": "hub-1",
             "corridorIds": [
               "western-account-circuit",
@@ -81806,8 +81808,8 @@
             "es-ES": "El auxilio voluntario aporta una recompensa finita independiente de ambos grupos principales de ayudantes."
           },
           "text": {
-            "en": "Bring each of the two aid crates to its assigned household at separate local working households. Benefit: 100 food, 50 wood, once.",
-            "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares locales trabajadores separados. Ventaja: 100 de alimento, 50 de madera, una vez."
+            "en": "Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once.",
+            "es-ES": "Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -81839,7 +81841,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-2.entity-1",
                 "role": "aid",
-                "initialHub": "hub-1",
+                "initialHub": "hub-4",
                 "offsetTiles": [
                   -6,
                   3
@@ -81852,7 +81854,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-2.entity-2",
                 "role": "aid",
-                "initialHub": "hub-1",
+                "initialHub": "hub-4",
                 "offsetTiles": [
                   -6,
                   6
@@ -81866,7 +81868,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-2.zone-1",
-                "hub": "hub-2",
+                "hub": "hub-6",
                 "offsetTiles": [
                   -8,
                   0
@@ -81875,7 +81877,7 @@
               },
               {
                 "id": "25-delegate-and-draft-network-rimini.side-2.zone-2",
-                "hub": "hub-2",
+                "hub": "hub-6",
                 "offsetTiles": [
                   8,
                   0
@@ -81937,8 +81939,8 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-1",
-            "receivingHub": "hub-2",
+            "originHub": "hub-4",
+            "receivingHub": "hub-6",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -81977,8 +81979,8 @@
             "es-ES": "Una reparación cotidiana pagada libera existencias finitas de trabajo. No se inventa incendio ni daño histórico del concilio."
           },
           "text": {
-            "en": "Pay 50 wood and restore the damaged store of southern work shelter to full health. Benefit: 200 food, 100 wood, once.",
-            "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
+            "en": "Pay 50 wood once to restore the southern work shelter completely. Benefit: 200 food, 100 wood, once.",
+            "es-ES": "Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -82011,7 +82013,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-3.entity-1",
                 "role": "repair",
-                "initialHub": "hub-2",
+                "initialHub": "hub-6",
                 "offsetTiles": [
                   -6,
                   3
@@ -82027,7 +82029,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-3.zone-1",
-                "hub": "hub-2",
+                "hub": "hub-6",
                 "offsetTiles": [
                   8,
                   0
@@ -82089,8 +82091,8 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-2",
-            "receivingHub": "hub-2",
+            "originHub": "hub-6",
+            "receivingHub": "hub-6",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -82129,8 +82131,8 @@
             "es-ES": "Un intercambio local apoya provisiones; no compra favor ni aprobación imperial."
           },
           "text": {
-            "en": "Escort the trader of bounded writing-stock exchange to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
-            "es-ES": "Escolta al comerciante de intercambio limitado de material de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+            "en": "Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment. Benefit: 150 food, 50 wood, once.",
+            "es-ES": "Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local. Ventaja: 150 de alimento, 50 de madera, una vez."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -82170,7 +82172,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-4.entity-1",
                 "role": "trade",
-                "initialHub": "hub-1",
+                "initialHub": "hub-5",
                 "offsetTiles": [
                   -6,
                   3
@@ -82184,7 +82186,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-4.zone-1",
-                "hub": "hub-2",
+                "hub": "hub-4",
                 "offsetTiles": [
                   8,
                   0
@@ -82246,8 +82248,8 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-1",
-            "receivingHub": "hub-2",
+            "originHub": "hub-5",
+            "receivingHub": "hub-4",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -82286,8 +82288,8 @@
             "es-ES": "Señala una alternativa meridional propuesta tras revisar terreno; no revela una sala sinodal ni permite un viaje a una corte lejana."
           },
           "text": {
-            "en": "Escort the local guide of southern local approach to the marked road junction. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
-            "es-ES": "Escolta al guía local de acceso local meridional hasta el cruce señalado. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+            "en": "Escort the southwest guide to the southeast junction to identify the southern local alternative. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
+            "es-ES": "Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -82317,7 +82319,7 @@
               {
                 "id": "25-delegate-and-draft-network-rimini.side-5.entity-1",
                 "role": "guide",
-                "initialHub": "hub-1",
+                "initialHub": "hub-4",
                 "offsetTiles": [
                   -6,
                   3
@@ -82331,7 +82333,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-5.zone-1",
-                "hub": "hub-3",
+                "hub": "hub-5",
                 "offsetTiles": [
                   8,
                   0
@@ -82391,8 +82393,8 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-1",
-            "receivingHub": "hub-3",
+            "originHub": "hub-4",
+            "receivingHub": "hub-5",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -82431,8 +82433,8 @@
             "es-ES": "Una observación señala la alternativa norte. No existe oleada hostil ni plazo secreto para obispos que esperan."
           },
           "text": {
-            "en": "Visit both observation posts overlooking northern local route survey. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
-            "es-ES": "Visita los dos puestos de observación sobre reconocimiento local del itinerario norte. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+            "en": "Visit both marked viewpoints at the northern return court and eastern account court. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
+            "es-ES": "Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -82459,7 +82461,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-6.zone-1",
-                "hub": "hub-2",
+                "hub": "hub-7",
                 "offsetTiles": [
                   0,
                   -8
@@ -82528,8 +82530,8 @@
           "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
-            "originHub": "hub-3",
-            "receivingHub": "hub-2",
+            "originHub": "hub-7",
+            "receivingHub": "hub-3",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -82568,8 +82570,8 @@
             "es-ES": "Dos caminantes locales opcionales tienen su propio recibo de llegada segura y nunca sustituyen a un ayudante principal."
           },
           "text": {
-            "en": "Bring both voluntary evacuee groups from independent ordinary wayfarers to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-            "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de caminantes cotidianos independientes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+            "en": "Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once.",
+            "es-ES": "Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro, una vez."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -82628,7 +82630,7 @@
             "zones": [
               {
                 "id": "25-delegate-and-draft-network-rimini.side-7.zone-1",
-                "hub": "hub-1",
+                "hub": "hub-5",
                 "offsetTiles": [
                   8,
                   0
@@ -82691,7 +82693,7 @@
           "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
           "reachability": {
             "originHub": "hub-3",
-            "receivingHub": "hub-1",
+            "receivingHub": "hub-5",
             "corridorIds": [
               "western-account-circuit",
               "eastern-account-circuit",
@@ -82945,7 +82947,7 @@
       "gameplayIdentity": {
         "problem": "two separately authorized local return cohorts and one independent provision-index delivery",
         "decision": "serial or parallel courier teams, with attribution/survey, finite provisioning or ordinary-care optional portfolios",
-        "densityPlan": "seven fictional local courts, five land-corridor plans and seven independent optional branches in400frame; distant events stay off-map",
+        "densityPlan": "Seven fictional local courts and seven independently placed optional activities use northern, southern, western and eastern circuits. The remaining 400-tile frame needs a dated landscape and neighborhood-density pass; a diagram or map size does not certify an interesting fully populated map.",
         "replay": "start first or second account, choose northern/southern approach and split workers across independent care/supply/context; no theological vote or authentic council delegate counter",
         "historicalBoundary": "Retain historical dispute, pressure and resulting formula as qualified narrative. No timer turns source winter into inevitable civilian death. Local originals are fictional and not historical bishop headcounts."
       },
@@ -83293,8 +83295,8 @@
           "id": "o3-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o3-goal",
           "text": {
-            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once.",
-            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total."
+            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once.",
+            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total."
           },
           "condition": "phase-3 active",
           "narrator": "none",
@@ -83302,14 +83304,15 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once."
+              "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once."
             ],
             "es-ES": [
-              "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total."
+              "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en",
+              "total."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 15
+          "voiceDurationSecondsEstimated": 16
         },
         {
           "id": "o3-receipt",
@@ -83426,8 +83429,8 @@
           "id": "side-1-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-1-goal",
           "text": {
-            "en": "Recover both separate copies from names without a doctrinal verdict and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
-            "es-ES": "Recupera las dos copias distintas de nombres sin veredicto doctrinal y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+            "en": "Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+            "es-ES": "Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83435,14 +83438,14 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Recover both separate copies from names without a doctrinal verdict and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint."
+              "Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint."
             ],
             "es-ES": [
-              "Recupera las dos copias distintas de nombres sin veredicto doctrinal y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+              "Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 12
+          "voiceDurationSecondsEstimated": 13
         },
         {
           "id": "side-1-complete",
@@ -83492,8 +83495,8 @@
           "id": "side-2-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-2-goal",
           "text": {
-            "en": "Bring each of the two aid crates to its assigned household at separate local working households. Benefit: 100 food, 50 wood, once.",
-            "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares locales trabajadores separados. Ventaja: 100 de alimento, 50 de madera, una vez."
+            "en": "Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once.",
+            "es-ES": "Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83501,10 +83504,10 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Bring each of the two aid crates to its assigned household at separate local working households. Benefit: 100 food, 50 wood, once."
+              "Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once."
             ],
             "es-ES": [
-              "Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares locales trabajadores separados. Ventaja: 100 de alimento, 50 de madera, una vez."
+              "Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
@@ -83558,8 +83561,8 @@
           "id": "side-3-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-3-goal",
           "text": {
-            "en": "Pay 50 wood and restore the damaged store of southern work shelter to full health. Benefit: 200 food, 100 wood, once.",
-            "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
+            "en": "Pay 50 wood once to restore the southern work shelter completely. Benefit: 200 food, 100 wood, once.",
+            "es-ES": "Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83567,10 +83570,10 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Pay 50 wood and restore the damaged store of southern work shelter to full health. Benefit: 200 food, 100 wood, once."
+              "Pay 50 wood once to restore the southern work shelter completely. Benefit: 200 food, 100 wood, once."
             ],
             "es-ES": [
-              "Paga 50 de madera y repara por completo el almacén dañado de cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
+              "Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
@@ -83624,8 +83627,8 @@
           "id": "side-4-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-4-goal",
           "text": {
-            "en": "Escort the trader of bounded writing-stock exchange to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
-            "es-ES": "Escolta al comerciante de intercambio limitado de material de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+            "en": "Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment. Benefit: 150 food, 50 wood, once.",
+            "es-ES": "Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local. Ventaja: 150 de alimento, 50 de madera, una vez."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83633,14 +83636,15 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Escort the trader of bounded writing-stock exchange to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once."
+              "Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment. Benefit: 150 food, 50 wood, once."
             ],
             "es-ES": [
-              "Escolta al comerciante de intercambio limitado de material de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+              "Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local. Ventaja: 150 de alimento, 50 de madera,",
+              "una vez."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 15
+          "voiceDurationSecondsEstimated": 16
         },
         {
           "id": "side-4-complete",
@@ -83690,8 +83694,8 @@
           "id": "side-5-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-5-goal",
           "text": {
-            "en": "Escort the local guide of southern local approach to the marked road junction. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
-            "es-ES": "Escolta al guía local de acceso local meridional hasta el cruce señalado. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+            "en": "Escort the southwest guide to the southeast junction to identify the southern local alternative. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
+            "es-ES": "Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83699,14 +83703,14 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Escort the local guide of southern local approach to the marked road junction. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task."
+              "Escort the southwest guide to the southeast junction to identify the southern local alternative. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task."
             ],
             "es-ES": [
-              "Escolta al guía local de acceso local meridional hasta el cruce señalado. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+              "Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 13
+          "voiceDurationSecondsEstimated": 14
         },
         {
           "id": "side-5-complete",
@@ -83756,8 +83760,8 @@
           "id": "side-6-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-6-goal",
           "text": {
-            "en": "Visit both observation posts overlooking northern local route survey. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
-            "es-ES": "Visita los dos puestos de observación sobre reconocimiento local del itinerario norte. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+            "en": "Visit both marked viewpoints at the northern return court and eastern account court. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.",
+            "es-ES": "Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83765,14 +83769,14 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Visit both observation posts overlooking northern local route survey. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task."
+              "Visit both marked viewpoints at the northern return court and eastern account court. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task."
             ],
             "es-ES": [
-              "Visita los dos puestos de observación sobre reconocimiento local del itinerario norte. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
+              "Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 13
+          "voiceDurationSecondsEstimated": 15
         },
         {
           "id": "side-6-complete",
@@ -83822,8 +83826,8 @@
           "id": "side-7-goal",
           "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-7-goal",
           "text": {
-            "en": "Bring both voluntary evacuee groups from independent ordinary wayfarers to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-            "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de caminantes cotidianos independientes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+            "en": "Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once.",
+            "es-ES": "Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro, una vez."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -83831,14 +83835,15 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Bring both voluntary evacuee groups from independent ordinary wayfarers to the receiving refuge alive. Benefit: 100 food, 25 gold, once."
+              "Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once."
             ],
             "es-ES": [
-              "Lleva con vida los dos grupos de evacuados voluntarios de caminantes cotidianos independientes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+              "Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro,",
+              "una vez."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 12
+          "voiceDurationSecondsEstimated": 16
         },
         {
           "id": "side-7-complete",
@@ -83998,6 +84003,30 @@
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
           "voiceDurationSecondsEstimated": 6
+        },
+        {
+          "id": "act-turning-point",
+          "key": "scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.act-turning-point",
+          "text": {
+            "en": "Councils Without Concord ends with the disputed Ariminum settlement and separate eastern proceedings. Continue with The Temples Open Again in the next act, The Weight of Orthodoxy. A new reign begins; this campaign is not complete.",
+            "es-ES": "Concilios sin concordia termina con el acuerdo disputado de Arímino y deliberaciones orientales separadas. Continúa con Los templos vuelven a abrirse en el siguiente acto, El peso de la ortodoxia. Comienza un nuevo reinado; esta campaña no está completa."
+          },
+          "condition": "after next-episode",
+          "narrator": "collection-narrator",
+          "skippable": true,
+          "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+          "captionSegments": {
+            "en": [
+              "Councils Without Concord ends with the disputed Ariminum settlement and separate eastern proceedings. Continue with The Temples Open Again in the next act, The Weight of Orthodoxy. A new reign begins; this",
+              "campaign is not complete."
+            ],
+            "es-ES": [
+              "Concilios sin concordia termina con el acuerdo disputado de Arímino y deliberaciones orientales separadas. Continúa con Los templos vuelven a abrirse en el siguiente acto, El peso de la ortodoxia. Comienza un",
+              "nuevo reinado; esta campaña no está completa."
+            ]
+          },
+          "nativeSurface": "pending certified SequenceItems/message adapter",
+          "voiceDurationSecondsEstimated": 18
         }
       ]
     }
@@ -103989,24 +104018,25 @@
         "en": "The two returning groups are our fiction. I can count their names without counting bishops as votes. In the margin I leave room for what a report cannot tell me. Soon a new reign will bring other headings; I have learned to mistrust how quickly a heading promises an ending.",
         "es-ES": "Los dos grupos que regresan son nuestra ficción. Puedo contar sus nombres sin contar obispos como votos. En el margen dejo espacio para lo que un informe no puede contarme. Pronto otro reinado traerá nuevos encabezamientos; he aprendido a desconfiar de lo rápido que un encabezamiento promete un final."
       },
-      "terrainInstructions": "Ariminum Adriatic low plain and local urban/periurban courts. Core modern anchors only; do not claim excavated359workshops. Tiberius bridge and Augustus arch need fabric/phase-qualified proxies; photo shows later repairs and modern setting, arch battlements not359 proof. Keep proposed main network city-side of old Marecchia and north of historical Ausa after dated bank/crossing verification. Patara drainage and minorwater can invalidate straightlinks: survey fullwidth and mark certified crossings or reroute within declared localframe before native promotion. No mandatory Tiberius bridge crossing, Adriatic embarkation, reconstructed harbor, medievalCastelSismondo/TempioMalatestiano or modernriverdiversion. Modern transformationplateC1.1.1 excludes later footprint, not359 reconstruction. Seleucia, NiceinThrace and imperialcourtjourneys are off-map, never renamedlocal districts.",
+      "terrainInstructions": "Ariminum on the Adriatic low plain, with fictional local urban and periurban work courts. Modern coordinates are approximate controls, not excavated 359 addresses. The Tiberius bridge and Augustus arch require dated fabric and phase checks; present photographs include later repairs, modern surroundings and arch battlements. Proposed main routes must remain on the city side of the old Marecchia and north of the historical Ausa, subject to dated bank verification. Patara drainage and smaller waterways may invalidate straight links: inspect full route widths and certify crossings or reroute within the local frame before native promotion. No mandatory bridge crossing, sea voyage or reconstructed harbor. Exclude Castel Sismondo, Tempio Malatestiano and modern river diversions. Municipal C1.1.1 illustrates nineteenth- and twentieth-century transformations, not the Roman city. Seleucia, Nice in Thrace and imperial audiences remain off-map.",
       "routeHelp": {
         "en": "Work within the local Ariminum frame. Keep the western and eastern assistant identities separate; each return needs its own reception. Main destinations are disclosed. Straight lines need dated drainage, bank and full-width checks before native play. No sea crossing or journey to Seleucia.",
         "es-ES": "Trabaja dentro del marco local de Arímino. Mantén separadas las identidades occidentales y orientales; cada regreso necesita su propia acogida. Los destinos principales están indicados. Las líneas rectas necesitan revisar drenajes, orillas y anchura antes de juego nativo. No hay travesía marítima ni viaje a Seleucia."
       },
       "qaCases": [
-        "western arrival cannot authorize eastern departure",
-        "copy receipt cannot authorize assistant departure",
-        "exact120Fpercourt not240Fatonecourt",
-        "all three original assistantspercohortreturn after own phase-activedeparture",
-        "copies retain separateworkinglabels; no generatedcanonicaldraft/signature",
-        "optional wayfarer never substitutesmainassistant",
-        "skipall optional solvent acrossall levels",
-        "Taurus isprefect, notmagisterofficiorum",
-        "SocratesLiberiusexilechronology notimported359",
-        "Seleucia/NiceinThrace/imperialcourtremainoffmap",
-        "municipalmoderntransformationplate not359reconstruction",
-        "lossoptionalactor failsitsown taskonly"
+        "A western assistant receipt cannot authorize eastern departure.",
+        "A copy receipt cannot authorize assistant departure.",
+        "Require 120 food at each court, not 240 at one court.",
+        "All three original assistants in each cohort return only after their own receipt and phase-active departure.",
+        "Copies preserve separate labels; no authentic creed or signature is generated.",
+        "Optional wayfarers never replace main assistants.",
+        "All three difficulties remain solvent when every optional objective is skipped.",
+        "Taurus is a praetorian prefect, distinct from the magister officiorum.",
+        "Do not import the Liberius exile sequence in Socrates as a 359 event.",
+        "Seleucia, Nice in Thrace and imperial journeys remain off-map.",
+        "The municipal modern transformation plate is not a reconstruction of 359.",
+        "Losing an optional actor fails only its own optional task.",
+        "Every secondary uses its authored origin, receiving or observation hubs; reject unknown placement keys."
       ],
       "episodeId": "25-delegate-and-draft-network-rimini",
       "startingResources": {
@@ -104147,7 +104177,8 @@
         "author": "gpt-6",
         "status": "independent review pending",
         "voice": "Marcus25 receives accounts; later sorting memories belong to fictional personalexperience, never Ariminum council/imperialaudience witness. No fifth-century Socrates text placed as359physicalobject.",
-        "arrivalPresence": "Final contract uses historical delivery receipts and causal returns; it makes no simultaneous custody, residence, carried cargo or currentcopyposition claim."
+        "arrivalPresence": "Final contract uses historical delivery receipts and causal returns; it makes no simultaneous custody, residence, carried cargo or currentcopyposition claim.",
+        "secondaryColocation": "Two optional receiving circles share a court position intentionally: household 2 and the repair work area; guide junction and wayfarer rest point. Distinct original identities, health/payment versus arrival and separate once-only ledgers prevent cross-completion. The second main account note is moved outside the optional viewpoint to avoid initial overlap; initial visibility never counts as a visit."
       },
       "mapBBox": [
         12.551,
@@ -104246,7 +104277,7 @@
           "originHub": "hub-3",
           "historicalMaterialPolicy": "fictional local participants or working items; no canonical autograph, authentic quotation or independent historical witness",
           "offsetBaseTiles": [
-            0,
+            -14,
             8
           ]
         },
@@ -104467,8 +104498,8 @@
         },
         {
           "text": {
-            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once.",
-            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total."
+            "en": "Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once.",
+            "es-ES": "Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total."
           },
           "requirements": [
             {
@@ -104637,11 +104668,8 @@
             "es-ES": "Notas opcionales de atribución distinguen relatos recibidos, voces documentales y cronología incierta. Aportan contexto, nunca una puntuación de verdad doctrinal."
           },
           "placement": {
-            "hub": "hub-1",
-            "offsetTiles": [
-              21,
-              -17
-            ]
+            "originHub": "hub-7",
+            "receivingHub": "hub-1"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104649,7 +104677,11 @@
             "provision-archive-circuit",
             "southern-relief-circuit",
             "northern-relief-circuit"
-          ]
+          ],
+          "instruction": {
+            "en": "Bring both separately labelled local context notes from the northern court to the central copyist.",
+            "es-ES": "Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central."
+          }
         },
         {
           "kind": "aid",
@@ -104666,11 +104698,8 @@
             "es-ES": "El auxilio voluntario aporta una recompensa finita independiente de ambos grupos principales de ayudantes."
           },
           "placement": {
-            "hub": "hub-4",
-            "offsetTiles": [
-              -21,
-              17
-            ]
+            "originHub": "hub-4",
+            "receivingHub": "hub-6"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104678,7 +104707,11 @@
             "provision-archive-circuit",
             "southern-relief-circuit",
             "northern-relief-circuit"
-          ]
+          ],
+          "instruction": {
+            "en": "Bring the two original aid crates from the southwest court to their two separate households beside the southern archive.",
+            "es-ES": "Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur."
+          }
         },
         {
           "kind": "repair",
@@ -104695,11 +104728,8 @@
             "es-ES": "Una reparación cotidiana pagada libera existencias finitas de trabajo. No se inventa incendio ni daño histórico del concilio."
           },
           "placement": {
-            "hub": "hub-6",
-            "offsetTiles": [
-              -21,
-              17
-            ]
+            "originHub": "hub-6",
+            "receivingHub": "hub-6"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104707,7 +104737,11 @@
             "provision-archive-circuit",
             "southern-relief-circuit",
             "northern-relief-circuit"
-          ]
+          ],
+          "instruction": {
+            "en": "Pay 50 wood once to restore the southern work shelter completely.",
+            "es-ES": "Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo."
+          }
         },
         {
           "kind": "trade",
@@ -104724,11 +104758,8 @@
             "es-ES": "Un intercambio local apoya provisiones; no compra favor ni aprobación imperial."
           },
           "placement": {
-            "hub": "hub-5",
-            "offsetTiles": [
-              21,
-              17
-            ]
+            "originHub": "hub-5",
+            "receivingHub": "hub-4"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104736,7 +104767,11 @@
             "provision-archive-circuit",
             "southern-relief-circuit",
             "northern-relief-circuit"
-          ]
+          ],
+          "instruction": {
+            "en": "Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment.",
+            "es-ES": "Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local."
+          }
         },
         {
           "kind": "guide",
@@ -104753,11 +104788,8 @@
             "es-ES": "Señala una alternativa meridional propuesta tras revisar terreno; no revela una sala sinodal ni permite un viaje a una corte lejana."
           },
           "placement": {
-            "hub": "hub-4",
-            "offsetTiles": [
-              -21,
-              -17
-            ]
+            "originHub": "hub-4",
+            "receivingHub": "hub-5"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104776,6 +104808,10 @@
               "en": "Mark this local alternative once; all main recipients remain visible without the optional task.",
               "es-ES": "Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
             }
+          },
+          "instruction": {
+            "en": "Escort the southwest guide to the southeast junction to identify the southern local alternative.",
+            "es-ES": "Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional."
           }
         },
         {
@@ -104793,10 +104829,11 @@
             "es-ES": "Una observación señala la alternativa norte. No existe oleada hostil ni plazo secreto para obispos que esperan."
           },
           "placement": {
-            "hub": "hub-7",
-            "offsetTiles": [
-              21,
-              -17
+            "originHub": "hub-7",
+            "receivingHub": "hub-3",
+            "observationHubs": [
+              "hub-7",
+              "hub-3"
             ]
           },
           "corridorIds": [
@@ -104816,6 +104853,10 @@
               "en": "Mark this local alternative once; all main recipients remain visible without the optional task.",
               "es-ES": "Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario."
             }
+          },
+          "instruction": {
+            "en": "Visit both marked viewpoints at the northern return court and eastern account court.",
+            "es-ES": "Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato."
           }
         },
         {
@@ -104833,11 +104874,8 @@
             "es-ES": "Dos caminantes locales opcionales tienen su propio recibo de llegada segura y nunca sustituyen a un ayudante principal."
           },
           "placement": {
-            "hub": "hub-3",
-            "offsetTiles": [
-              21,
-              17
-            ]
+            "originHub": "hub-3",
+            "receivingHub": "hub-5"
           },
           "corridorIds": [
             "western-account-circuit",
@@ -104845,7 +104883,11 @@
             "provision-archive-circuit",
             "southern-relief-circuit",
             "northern-relief-circuit"
-          ]
+          ],
+          "instruction": {
+            "en": "Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts.",
+            "es-ES": "Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes."
+          }
         }
       ],
       "playstyles": [
@@ -104884,13 +104926,17 @@
       "gameplayIdentity": {
         "problem": "two separately authorized local return cohorts and one independent provision-index delivery",
         "decision": "serial or parallel courier teams, with attribution/survey, finite provisioning or ordinary-care optional portfolios",
-        "densityPlan": "seven fictional local courts, five land-corridor plans and seven independent optional branches in400frame; distant events stay off-map",
+        "densityPlan": "Seven fictional local courts and seven independently placed optional activities use northern, southern, western and eastern circuits. The remaining 400-tile frame needs a dated landscape and neighborhood-density pass; a diagram or map size does not certify an interesting fully populated map.",
         "replay": "start first or second account, choose northern/southern approach and split workers across independent care/supply/context; no theological vote or authentic council delegate counter",
         "historicalBoundary": "Retain historical dispute, pressure and resulting formula as qualified narrative. No timer turns source winter into inevitable civilian death. Local originals are fictional and not historical bishop headcounts."
       },
       "handover": {
         "en": "Marcus speaks from received accounts and his later experience of sorting reports. He was not a witness in the Ariminum council or its imperial audiences.",
         "es-ES": "Marco habla desde relatos recibidos y su experiencia posterior de ordenar informes. No presenció el concilio de Arímino ni sus audiencias imperiales."
+      },
+      "actTransition": {
+        "en": "Councils Without Concord ends with the disputed Ariminum settlement and separate eastern proceedings. Continue with The Temples Open Again in the next act, The Weight of Orthodoxy. A new reign begins; this campaign is not complete.",
+        "es-ES": "Concilios sin concordia termina con el acuerdo disputado de Arímino y deliberaciones orientales separadas. Continúa con Los templos vuelven a abrirse en el siguiente acto, El peso de la ortodoxia. Comienza un nuevo reinado; esta campaña no está completa."
       }
     }
   ],

@@ -13,6 +13,32 @@ from verify import ROOT, verify
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_optional_authored_placement_never_silently_uses_defaults(self):
+        from secondary import build_optional_objectives
+        campaign = json.loads((ROOT / 'docs/design/odysseys/imperial-church.json').read_text())
+        episode = next(e for e in campaign['episodes'] if e['order'] == 25)
+        task = copy.deepcopy(next(b for b in campaign['episodeBlueprints']
+                                  if b['order'] == 25)['optionalTasks'][0])
+        for bad in ({'hub': 'hub-7'}, {'originHub': 'hub-7', 'offsetTiles': [21, -17]}):
+            with self.subTest(placement=bad):
+                task['placement'] = bad
+                with self.assertRaisesRegex(ValueError, 'Unknown optional placement fields'):
+                    build_optional_objectives(episode, [task])
+
+    def test_optional_editorial_instruction_keeps_funded_benefit(self):
+        from secondary import objective_text
+        subject = {'en': 'local household yard', 'es-ES': 'patio de hogares locales'}
+        text = objective_text('aid', subject, {'food': 100, 'wood': 50},
+                              instruction={'en': 'Take the two original crates to their separate hosts.',
+                                           'es-ES': 'Lleva las dos cajas originales a sus anfitriones separados.'})
+        self.assertTrue(text['en'].startswith('Take the two original crates'))
+        self.assertTrue(text['en'].endswith('Benefit: 100 food, 50 wood, once.'))
+        self.assertTrue(text['es-ES'].endswith('Ventaja: 100 de alimento, 50 de madera, una vez.'))
+        for invalid in ({'en': 'Only English'}, {'en': '', 'es-ES': 'Texto'}):
+            with self.subTest(instruction=invalid):
+                with self.assertRaisesRegex(ValueError, 'nonempty English and Spanish'):
+                    objective_text('aid', subject, {}, instruction=invalid)
+
     def journey_draft(self):
         return self.imperial_draft(8)
 

@@ -329,9 +329,9 @@ ES: De esta mesa no nace ningún credo ni firma auténticos.
 
 ### o3 / phase-3
 
-EN: Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once.
+EN: Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once.
 
-ES: Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total.
+ES: Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total.
 
 ```json
 {
@@ -726,7 +726,7 @@ ES: Dos acogidas, dos regresos. Un total demasiado limpio borraría sus caminos.
       "widthTiles": 6
     }
   ],
-  "terrainInstructions": "Ariminum Adriatic low plain and local urban/periurban courts. Core modern anchors only; do not claim excavated359workshops. Tiberius bridge and Augustus arch need fabric/phase-qualified proxies; photo shows later repairs and modern setting, arch battlements not359 proof. Keep proposed main network city-side of old Marecchia and north of historical Ausa after dated bank/crossing verification. Patara drainage and minorwater can invalidate straightlinks: survey fullwidth and mark certified crossings or reroute within declared localframe before native promotion. No mandatory Tiberius bridge crossing, Adriatic embarkation, reconstructed harbor, medievalCastelSismondo/TempioMalatestiano or modernriverdiversion. Modern transformationplateC1.1.1 excludes later footprint, not359 reconstruction. Seleucia, NiceinThrace and imperialcourtjourneys are off-map, never renamedlocal districts.",
+  "terrainInstructions": "Ariminum on the Adriatic low plain, with fictional local urban and periurban work courts. Modern coordinates are approximate controls, not excavated 359 addresses. The Tiberius bridge and Augustus arch require dated fabric and phase checks; present photographs include later repairs, modern surroundings and arch battlements. Proposed main routes must remain on the city side of the old Marecchia and north of the historical Ausa, subject to dated bank verification. Patara drainage and smaller waterways may invalidate straight links: inspect full route widths and certify crossings or reroute within the local frame before native promotion. No mandatory bridge crossing, sea voyage or reconstructed harbor. Exclude Castel Sismondo, Tempio Malatestiano and modern river diversions. Municipal C1.1.1 illustrates nineteenth- and twentieth-century transformations, not the Roman city. Seleucia, Nice in Thrace and imperial audiences remain off-map.",
   "corridorStraightLengthsTiles": {
     "western-account-circuit": 207.26,
     "eastern-account-circuit": 345.58,
@@ -791,7 +791,7 @@ ES: Dos acogidas, dos regresos. Un total demasiado limpio borraría sus caminos.
       "role": "fictional-separate-context-note",
       "initialHub": "hub-3",
       "offsetTiles": [
-        0,
+        -14,
         8
       ],
       "identity": "explicitly fictional gameplay identity",
@@ -1127,9 +1127,9 @@ ES: Dos acogidas, dos regresos. Un total demasiado limpio borraría sus caminos.
 
 ### Names without a doctrinal verdict / Nombres sin veredicto doctrinal
 
-EN: Recover both separate copies from names without a doctrinal verdict and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.
+EN: Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint.
 
-ES: Recupera las dos copias distintas de nombres sin veredicto doctrinal y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal.
+ES: Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal.
 
 EN: Optional attribution notes distinguish received reports, source voices and uncertain chronology. They grant context, never a creed truth score.
 
@@ -1166,7 +1166,7 @@ ES: Notas opcionales de atribución distinguen relatos recibidos, voces document
       {
         "id": "25-delegate-and-draft-network-rimini.side-1.entity-1",
         "role": "copy",
-        "initialHub": "hub-3",
+        "initialHub": "hub-7",
         "offsetTiles": [
           -6,
           3
@@ -1179,7 +1179,7 @@ ES: Notas opcionales de atribución distinguen relatos recibidos, voces document
       {
         "id": "25-delegate-and-draft-network-rimini.side-1.entity-2",
         "role": "copy",
-        "initialHub": "hub-3",
+        "initialHub": "hub-7",
         "offsetTiles": [
           -6,
           6
@@ -1259,7 +1259,7 @@ ES: Notas opcionales de atribución distinguen relatos recibidos, voces document
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-3",
+    "originHub": "hub-7",
     "receivingHub": "hub-1",
     "corridorIds": [
       "western-account-circuit",
@@ -1277,9 +1277,9 @@ ES: Notas opcionales de atribución distinguen relatos recibidos, voces document
 
 ### Separate local working households / Hogares locales trabajadores separados
 
-EN: Bring each of the two aid crates to its assigned household at separate local working households. Benefit: 100 food, 50 wood, once.
+EN: Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once.
 
-ES: Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares locales trabajadores separados. Ventaja: 100 de alimento, 50 de madera, una vez.
+ES: Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez.
 
 EN: Voluntary assistance gives one finite supply award independently of both mandatory assistant cohorts.
 
@@ -1316,7 +1316,7 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
       {
         "id": "25-delegate-and-draft-network-rimini.side-2.entity-1",
         "role": "aid",
-        "initialHub": "hub-1",
+        "initialHub": "hub-4",
         "offsetTiles": [
           -6,
           3
@@ -1329,7 +1329,7 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
       {
         "id": "25-delegate-and-draft-network-rimini.side-2.entity-2",
         "role": "aid",
-        "initialHub": "hub-1",
+        "initialHub": "hub-4",
         "offsetTiles": [
           -6,
           6
@@ -1343,7 +1343,7 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-2.zone-1",
-        "hub": "hub-2",
+        "hub": "hub-6",
         "offsetTiles": [
           -8,
           0
@@ -1352,7 +1352,7 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
       },
       {
         "id": "25-delegate-and-draft-network-rimini.side-2.zone-2",
-        "hub": "hub-2",
+        "hub": "hub-6",
         "offsetTiles": [
           8,
           0
@@ -1410,8 +1410,8 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-1",
-    "receivingHub": "hub-2",
+    "originHub": "hub-4",
+    "receivingHub": "hub-6",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -1428,9 +1428,9 @@ ES: El auxilio voluntario aporta una recompensa finita independiente de ambos gr
 
 ### Southern work shelter / Cobertizo meridional de trabajo
 
-EN: Pay 50 wood and restore the damaged store of southern work shelter to full health. Benefit: 200 food, 100 wood, once.
+EN: Pay 50 wood once to restore the southern work shelter completely. Benefit: 200 food, 100 wood, once.
 
-ES: Paga 50 de madera y repara por completo el almacén dañado de cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez.
+ES: Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez.
 
 EN: One paid ordinary repair opens finite work stock. No historically attested council fire or damage is invented.
 
@@ -1468,7 +1468,7 @@ ES: Una reparación cotidiana pagada libera existencias finitas de trabajo. No s
       {
         "id": "25-delegate-and-draft-network-rimini.side-3.entity-1",
         "role": "repair",
-        "initialHub": "hub-2",
+        "initialHub": "hub-6",
         "offsetTiles": [
           -6,
           3
@@ -1484,7 +1484,7 @@ ES: Una reparación cotidiana pagada libera existencias finitas de trabajo. No s
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-3.zone-1",
-        "hub": "hub-2",
+        "hub": "hub-6",
         "offsetTiles": [
           8,
           0
@@ -1542,8 +1542,8 @@ ES: Una reparación cotidiana pagada libera existencias finitas de trabajo. No s
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-2",
-    "receivingHub": "hub-2",
+    "originHub": "hub-6",
+    "receivingHub": "hub-6",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -1560,9 +1560,9 @@ ES: Una reparación cotidiana pagada libera existencias finitas de trabajo. No s
 
 ### Bounded writing-stock exchange / Intercambio limitado de material de escritura
 
-EN: Escort the trader of bounded writing-stock exchange to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.
+EN: Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment. Benefit: 150 food, 50 wood, once.
 
-ES: Escolta al comerciante de intercambio limitado de material de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez.
+ES: Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local. Ventaja: 150 de alimento, 50 de madera, una vez.
 
 EN: One local exchange supports supplies; no purchased imperial favor or approval.
 
@@ -1607,7 +1607,7 @@ ES: Un intercambio local apoya provisiones; no compra favor ni aprobación imper
       {
         "id": "25-delegate-and-draft-network-rimini.side-4.entity-1",
         "role": "trade",
-        "initialHub": "hub-1",
+        "initialHub": "hub-5",
         "offsetTiles": [
           -6,
           3
@@ -1621,7 +1621,7 @@ ES: Un intercambio local apoya provisiones; no compra favor ni aprobación imper
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-4.zone-1",
-        "hub": "hub-2",
+        "hub": "hub-4",
         "offsetTiles": [
           8,
           0
@@ -1679,8 +1679,8 @@ ES: Un intercambio local apoya provisiones; no compra favor ni aprobación imper
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-1",
-    "receivingHub": "hub-2",
+    "originHub": "hub-5",
+    "receivingHub": "hub-4",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -1697,9 +1697,9 @@ ES: Un intercambio local apoya provisiones; no compra favor ni aprobación imper
 
 ### Southern local approach / Acceso local meridional
 
-EN: Escort the local guide of southern local approach to the marked road junction. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.
+EN: Escort the southwest guide to the southeast junction to identify the southern local alternative. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.
 
-ES: Escolta al guía local de acceso local meridional hasta el cruce señalado. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario.
+ES: Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario.
 
 EN: Marks a proposed southern alternative after terrain checks; it does not reveal a synod hall or enable a long-distance court journey.
 
@@ -1734,7 +1734,7 @@ ES: Señala una alternativa meridional propuesta tras revisar terreno; no revela
       {
         "id": "25-delegate-and-draft-network-rimini.side-5.entity-1",
         "role": "guide",
-        "initialHub": "hub-1",
+        "initialHub": "hub-4",
         "offsetTiles": [
           -6,
           3
@@ -1748,7 +1748,7 @@ ES: Señala una alternativa meridional propuesta tras revisar terreno; no revela
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-5.zone-1",
-        "hub": "hub-3",
+        "hub": "hub-5",
         "offsetTiles": [
           8,
           0
@@ -1804,8 +1804,8 @@ ES: Señala una alternativa meridional propuesta tras revisar terreno; no revela
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-1",
-    "receivingHub": "hub-3",
+    "originHub": "hub-4",
+    "receivingHub": "hub-5",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -1822,9 +1822,9 @@ ES: Señala una alternativa meridional propuesta tras revisar terreno; no revela
 
 ### Northern local route survey / Reconocimiento local del itinerario norte
 
-EN: Visit both observation posts overlooking northern local route survey. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.
+EN: Visit both marked viewpoints at the northern return court and eastern account court. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task.
 
-ES: Visita los dos puestos de observación sobre reconocimiento local del itinerario norte. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario.
+ES: Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario.
 
 EN: One observation marks the northern alternative. There is no hostile wave or secret expiry for waiting bishops.
 
@@ -1856,7 +1856,7 @@ ES: Una observación señala la alternativa norte. No existe oleada hostil ni pl
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-6.zone-1",
-        "hub": "hub-2",
+        "hub": "hub-7",
         "offsetTiles": [
           0,
           -8
@@ -1921,8 +1921,8 @@ ES: Una observación señala la alternativa norte. No existe oleada hostil ni pl
     "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
   },
   "reachability": {
-    "originHub": "hub-3",
-    "receivingHub": "hub-2",
+    "originHub": "hub-7",
+    "receivingHub": "hub-3",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -1939,9 +1939,9 @@ ES: Una observación señala la alternativa norte. No existe oleada hostil ni pl
 
 ### Independent ordinary wayfarers / Caminantes cotidianos independientes
 
-EN: Bring both voluntary evacuee groups from independent ordinary wayfarers to the receiving refuge alive. Benefit: 100 food, 25 gold, once.
+EN: Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once.
 
-ES: Lleva con vida los dos grupos de evacuados voluntarios de caminantes cotidianos independientes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez.
+ES: Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro, una vez.
 
 EN: Two optional local wayfarers have their own safe receipt and never replace any main assistant.
 
@@ -2005,7 +2005,7 @@ ES: Dos caminantes locales opcionales tienen su propio recibo de llegada segura 
     "zones": [
       {
         "id": "25-delegate-and-draft-network-rimini.side-7.zone-1",
-        "hub": "hub-1",
+        "hub": "hub-5",
         "offsetTiles": [
           8,
           0
@@ -2064,7 +2064,7 @@ ES: Dos caminantes locales opcionales tienen su propio recibo de llegada segura 
   },
   "reachability": {
     "originHub": "hub-3",
-    "receivingHub": "hub-1",
+    "receivingHub": "hub-5",
     "corridorIds": [
       "western-account-circuit",
       "eastern-account-circuit",
@@ -2334,31 +2334,31 @@ ES: Dos caminantes locales opcionales tienen su propio recibo de llegada segura 
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o2-goal / phase-2 active | none | Pay 120 wood and 30 gold once at the central workshop. Derive one qualified copy from each account separately and an ordinary index from the provision note. | Paga una vez 120 de madera y 30 de oro en el taller central. Elabora una copia matizada de cada relato por separado y un índice ordinario de la nota de provisiones. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o2-receipt / o2 latched once | none | Three different working outputs have one exact funded workshop receipt. | Tres productos distintos de trabajo tienen un recibo exacto de financiación del taller. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o2-reaction / after o2 receipt | imperial-clerk | No authentic creed or signature is born at this table. | De esta mesa no nace ningún credo ni firma auténticos. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o3-goal / phase-3 active | none | Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court,240 total, once. | Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio,240 en total. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o3-goal / phase-3 active | none | Deliver the first copy and three western assistants to the western court, and the second copy and three eastern assistants east. Pay 120 food at each court, 240 total, once. | Entrega la primera copia y tres ayudantes occidentales al patio occidental, y la segunda copia y tres ayudantes orientales al oriental. Paga una vez 120 de alimento en cada patio, 240 en total. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o3-receipt / o3 latched once | none | Both distinct context copies, each assigned original cohort and both exact provision shares are recorded. | Quedan registradas las dos copias distintas, cada grupo original asignado y ambas partes exactas de provisiones. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o3-reaction / after o3 receipt | imperial-clerk | The food supports imagined workers. It buys neither assent nor a bishop’s release. | El alimento apoya a trabajadores imaginados. No compra consentimiento ni la liberación de un obispo. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o4-goal / phase-4 active | none | After each cohort’s own reception, send all three original western and all three original eastern assistants back to the northern local return court. Deliver the ordinary index separately to the southern archive. | Tras la acogida propia de cada grupo, devuelve a los tres ayudantes originales occidentales y a los tres orientales al patio septentrional de regreso local. Entrega por separado el índice ordinario al archivo meridional. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o4-receipt / o4 latched once | none | Six original assistants completed separately authorized local returns; the index has its own archive receipt. Historical copies record delivery, not current residence. | Seis ayudantes originales completaron regresos locales autorizados por separado; el índice tiene su propio recibo de archivo. Las copias registran entrega, no permanencia actual. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.o4-reaction / after o4 receipt | imperial-clerk | Two receptions, two returns. A single neat total would erase their paths. | Dos acogidas, dos regresos. Un total demasiado limpio borraría sus caminos. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-1-goal / optional list from start | none | Recover both separate copies from names without a doctrinal verdict and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Recupera las dos copias distintas de nombres sin veredicto doctrinal y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-1-goal / optional list from start | none | Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint. | Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-1-complete / side-1 completed | none | Names without a doctrinal verdict completed. Its stated benefit has been granted once. | Nombres sin veredicto doctrinal: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-1-lost / side-1 failed-optional | none | Names without a doctrinal verdict is unavailable after the loss of its unique participant or object. The main mission continues. | Nombres sin veredicto doctrinal: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-2-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at separate local working households. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en hogares locales trabajadores separados. Ventaja: 100 de alimento, 50 de madera, una vez. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-2-goal / optional list from start | none | Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once. | Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-2-complete / side-2 completed | none | Separate local working households completed. Its stated benefit has been granted once. | Hogares locales trabajadores separados: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-2-lost / side-2 failed-optional | none | Separate local working households is unavailable after the loss of its unique participant or object. The main mission continues. | Hogares locales trabajadores separados: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-3-goal / optional list from start | none | Pay 50 wood and restore the damaged store of southern work shelter to full health. Benefit: 200 food, 100 wood, once. | Paga 50 de madera y repara por completo el almacén dañado de cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-3-goal / optional list from start | none | Pay 50 wood once to restore the southern work shelter completely. Benefit: 200 food, 100 wood, once. | Paga una vez 50 de madera para restaurar por completo el cobertizo meridional de trabajo. Ventaja: 200 de alimento, 100 de madera, una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-3-complete / side-3 completed | none | Southern work shelter completed. Its stated benefit has been granted once. | Cobertizo meridional de trabajo: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-3-lost / side-3 failed-optional | none | Southern work shelter is unavailable after the loss of its unique participant or object. The main mission continues. | Cobertizo meridional de trabajo: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-4-goal / optional list from start | none | Escort the trader of bounded writing-stock exchange to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de intercambio limitado de material de escritura hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-4-goal / optional list from start | none | Escort the southeast writing-stock trader to the southwest receiving court, then pay 50 gold once for a single local consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de material de escritura del sureste al patio receptor suroccidental y paga una vez 50 de oro por una sola remesa local. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-4-complete / side-4 completed | none | Bounded writing-stock exchange completed. Its stated benefit has been granted once. | Intercambio limitado de material de escritura: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-4-lost / side-4 failed-optional | none | Bounded writing-stock exchange is unavailable after the loss of its unique participant or object. The main mission continues. | Intercambio limitado de material de escritura: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-5-goal / optional list from start | none | Escort the local guide of southern local approach to the marked road junction. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task. | Escolta al guía local de acceso local meridional hasta el cruce señalado. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-5-goal / optional list from start | none | Escort the southwest guide to the southeast junction to identify the southern local alternative. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task. | Escolta al guía del suroeste al cruce suroriental para identificar la alternativa local meridional. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-5-complete / side-5 completed | none | Southern local approach completed. Its stated benefit has been granted once. | Acceso local meridional: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-5-lost / side-5 failed-optional | none | Southern local approach is unavailable after the loss of its unique participant or object. The main mission continues. | Acceso local meridional: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-6-goal / optional list from start | none | Visit both observation posts overlooking northern local route survey. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task. | Visita los dos puestos de observación sobre reconocimiento local del itinerario norte. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-6-goal / optional list from start | none | Visit both marked viewpoints at the northern return court and eastern account court. Benefit: Mark this local alternative once; all main recipients remain visible without the optional task. | Visita ambos miradores señalados en el patio septentrional de regreso y el patio oriental del segundo relato. Ventaja: Señala una vez esta alternativa local; los destinatarios principales siguen visibles sin el secundario. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-6-complete / side-6 completed | none | Northern local route survey completed. Its stated benefit has been granted once. | Reconocimiento local del itinerario norte: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-6-lost / side-6 failed-optional | none | Northern local route survey is unavailable after the loss of its unique participant or object. The main mission continues. | Reconocimiento local del itinerario norte: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-7-goal / optional list from start | none | Bring both voluntary evacuee groups from independent ordinary wayfarers to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de caminantes cotidianos independientes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-7-goal / optional list from start | none | Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once. | Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro, una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-7-complete / side-7 completed | none | Independent ordinary wayfarers completed. Its stated benefit has been granted once. | Caminantes cotidianos independientes: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.side-7-lost / side-7 failed-optional | none | Independent ordinary wayfarers is unavailable after the loss of its unique participant or object. The main mission continues. | Caminantes cotidianos independientes: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.fact-outro / victory first | collection-narrator | Later accounts describe acceptance of a disputed formula under pressure, followed by continued disagreement. That outcome remains fixed. Two separate fictional assistant cohorts completed their own local returns, and a provision index reached its archive. These receipts record delivery, without certifying current residence or reproducing synodal signatures. The next act begins with Julian’s reign and changing religious policy; Seleucia and imperial journeys remain off-map. | Relatos posteriores describen la aceptación de una fórmula disputada bajo presión, seguida de desacuerdo persistente. Ese resultado permanece fijado. Dos grupos ficticios separados de ayudantes completaron sus propios regresos locales y un índice de provisiones llegó al archivo. Los recibos registran entrega sin acreditar permanencia actual ni reproducir firmas sinodales. El siguiente acto comienza con el reinado de Juliano y cambios de política religiosa; Seleucia y los viajes imperiales siguen fuera del mapa. |
@@ -2366,6 +2366,7 @@ ES: Dos caminantes locales opcionales tienen su propio recibo de llegada segura 
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.defeat / main defeat; close side rewards first | none | The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat. | El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.recovery-help / help; never implies an unsupported recovery action | none | Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost. | La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable. |
 | scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.next-episode / after persona-outro | none | Continue with The Temples Open Again. This episode does not complete the campaign. | Continúa con Los templos vuelven a abrirse. Este episodio no termina la campaña. |
+| scenario.imperial-church.25-delegate-and-draft-network-rimini.odyssey.act-turning-point / after next-episode | collection-narrator | Councils Without Concord ends with the disputed Ariminum settlement and separate eastern proceedings. Continue with The Temples Open Again in the next act, The Weight of Orthodoxy. A new reign begins; this campaign is not complete. | Concilios sin concordia termina con el acuerdo disputado de Arímino y deliberaciones orientales separadas. Continúa con Los templos vuelven a abrirse en el siguiente acto, El peso de la ortodoxia. Comienza un nuevo reinado; esta campaña no está completa. |
 
 ## Production, recovery and verification
 
@@ -2453,18 +2454,19 @@ ES: Dos caminantes locales opcionales tienen su propio recibo de llegada segura 
     "nativeStatus": "pending",
     "gameVerified": false,
     "cases": [
-      "western arrival cannot authorize eastern departure",
-      "copy receipt cannot authorize assistant departure",
-      "exact120Fpercourt not240Fatonecourt",
-      "all three original assistantspercohortreturn after own phase-activedeparture",
-      "copies retain separateworkinglabels; no generatedcanonicaldraft/signature",
-      "optional wayfarer never substitutesmainassistant",
-      "skipall optional solvent acrossall levels",
-      "Taurus isprefect, notmagisterofficiorum",
-      "SocratesLiberiusexilechronology notimported359",
-      "Seleucia/NiceinThrace/imperialcourtremainoffmap",
-      "municipalmoderntransformationplate not359reconstruction",
-      "lossoptionalactor failsitsown taskonly",
+      "A western assistant receipt cannot authorize eastern departure.",
+      "A copy receipt cannot authorize assistant departure.",
+      "Require 120 food at each court, not 240 at one court.",
+      "All three original assistants in each cohort return only after their own receipt and phase-active departure.",
+      "Copies preserve separate labels; no authentic creed or signature is generated.",
+      "Optional wayfarers never replace main assistants.",
+      "All three difficulties remain solvent when every optional objective is skipped.",
+      "Taurus is a praetorian prefect, distinct from the magister officiorum.",
+      "Do not import the Liberius exile sequence in Socrates as a 359 event.",
+      "Seleucia, Nice in Thrace and imperial journeys remain off-map.",
+      "The municipal modern transformation plate is not a reconstruction of 359.",
+      "Losing an optional actor fails only its own optional task.",
+      "Every secondary uses its authored origin, receiving or observation hubs; reject unknown placement keys.",
       "skip all optional objectives and win at each difficulty",
       "complete all optionals at each difficulty without spending protected recovery stock",
       "save/load before and after every delivery, payment, optional reward and terminal latch",

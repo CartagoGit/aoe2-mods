@@ -25,7 +25,7 @@ def bilingual(en, es):
     return {'en': en, 'es-ES': es}
 
 
-def objective_text(kind, subject, reward, information_benefit=None):
+def objective_text(kind, subject, reward, information_benefit=None, instruction=None):
     name_en, name_es = subject['en'], subject['es-ES']
     texts = {
         'scout': (f'Scout both marked viewpoints of {name_en}.', f'Explora los dos miradores señalados de {name_es}.'),
@@ -37,7 +37,14 @@ def objective_text(kind, subject, reward, information_benefit=None):
         'extract': (f'Bring both voluntary evacuee groups from {name_en} to the receiving refuge alive.', f'Lleva con vida los dos grupos de evacuados voluntarios de {name_es} al refugio receptor.'),
         'watch': (f'Visit both observation posts overlooking {name_en}.', f'Visita los dos puestos de observación sobre {name_es}.'),
     }
-    en, es = texts[kind]
+    if instruction is not None:
+        if (not isinstance(instruction, dict) or set(instruction) != {'en', 'es-ES'}
+                or not all(isinstance(value, str) and value.strip()
+                           for value in instruction.values())):
+            raise ValueError('Optional instruction needs nonempty English and Spanish text')
+        en, es = instruction['en'], instruction['es-ES']
+    else:
+        en, es = texts[kind]
     if reward:
         nouns_en = {'food': 'food', 'wood': 'wood', 'gold': 'gold', 'stone': 'stone'}
         nouns_es = {'food': 'alimento', 'wood': 'madera', 'gold': 'oro', 'stone': 'piedra'}
@@ -67,6 +74,9 @@ def build_optional_objectives(scenario, authored):
         origin = 'hub-2' if kind == 'repair' else 'hub-1' if kind in ('aid', 'guide', 'trade') else 'hub-3'
         destination = 'hub-1' if kind in ('extract', 'copy') else ('hub-3' if kind == 'guide' else 'hub-2')
         placement = item.get('placement', {})
+        if (not isinstance(placement, dict)
+                or set(placement) - {'originHub', 'receivingHub', 'observationHubs'}):
+            raise ValueError('Unknown optional placement fields; use originHub, receivingHub and observationHubs')
         origin = placement.get('originHub', origin)
         destination = placement.get('receivingHub', destination)
         entity_count = 2 if kind in ('aid', 'copy', 'extract') else 1
@@ -128,7 +138,8 @@ def build_optional_objectives(scenario, authored):
                 effect.pop(field, None)
             effect.update(information['effect'])
         text = objective_text(kind, item['subject'], REWARDS[kind],
-                              information['benefit'] if information else None)
+                              information['benefit'] if information else None,
+                              item.get('instruction'))
         result.append({
             'id': oid, 'kind': kind, 'title': item['title'], 'subject': item['subject'],
             'classification': 'fictional local activity anchored to the documented scenario; not an asserted ancient event',
