@@ -391,7 +391,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
   - "Materializar únicamente el expediente aprobado imperial-church/25-delegate-and-draft-network-rimini: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
-### S29 — Episodio 26: The Temples Open Again
+### S29 — Episodio 26: Altars of a New Reign
 - **Status**: pending
 - **DependsOn**: [S28]
 - **Files**: `staging/campaigns/imperial-church/scenarios/26-plural-civic-logistics-constantinople`, `docs/qa/imperial-church/episodes/26-plural-civic-logistics-constantinople`
@@ -399,7 +399,7 @@ Fuente editorial: `docs/design/odysseys/imperial-church.json`. Índice: `docs/wi
 - **Act**: act-5
 - **ScenarioId**: 26-plural-civic-logistics-constantinople
 - **Order**: 26
-- **HistoricalFrame**: 361 CE; geography=constantinople; core=plural-civic-logistics
+- **HistoricalFrame**: December 361–early 362 CE; policy sequence, no fixed local reopening day; geography=constantinople; core=plural-civic-logistics
 - acceptance:
   - "Materializar únicamente el expediente aprobado imperial-church/26-plural-civic-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
   - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."

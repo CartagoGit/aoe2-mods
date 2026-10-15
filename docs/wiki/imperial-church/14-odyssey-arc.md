@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 25
+    "authoredDossierCount": 27
   },
   "continuity": {
     "recommendedPrevious": [
@@ -248,7 +248,7 @@ Historical year band: [361, 381]. Juliano, ley de380 y concilio de381; el poder 
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
-| 26 / 26-plural-civic-logistics-constantinople | The Temples Open Again / Los templos vuelven a abrirse | 361 CE | constantinople | plural-civic-logistics |
+| 26 / 26-plural-civic-logistics-constantinople | Altars of a New Reign / Los altares de un nuevo reinado | December 361–early 362 CE; policy sequence, no fixed local reopening day | constantinople | plural-civic-logistics |
 | 27 / 27-return-and-departure-records-alexandria | The Return That Did Not Last / El regreso que no duró | 362–363 CE; exile policies focus, Persian campaign reported off-map | alexandria | return-and-departure-records |
 | 28 / 28-law-and-local-reception-thessalonica | The Weight of an Imperial Word / El peso de una palabra imperial | 27 February 380 CE | thessalonica | law-and-local-reception |
 | 29 / 29-council-and-final-perspective-constantinople | Under the Same Eastern Sky / Bajo el mismo cielo oriental | 381 CE | constantinople | council-and-final-perspective |
@@ -1179,9 +1179,9 @@ Limit: Multiphase roads/walls/monuments, uncertain harbor/public buildings and l
 
 Limit: Despite generic title this is modern urban transformation, not Roman/359phaseplan. Used only to flag later rebuilding and modern footprint risk. Copyright unresolved, temp only.
 
-### 26. The Temples Open Again
+### 26. Altars of a New Reign
 
-[Candidate source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html): Ammianus Marcellinus, Res Gestae XXII.2; fuente de un contemporáneo pagano que sirvió en la campaña persa.
+[Candidate source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html): Ammianus Res Gestae XXII.2.1–5 and XXII.5.1–4
 
 Research candidate (not yet approved narration): Juliano entra en Constantinopla tras la muerte de Constancio II y asume el gobierno único; reabre templos y restablece sacrificios públicos.
 
@@ -1189,7 +1189,13 @@ Ammiano admira a Juliano. Las prácticas religiosas se reanudaron por decreto y 
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/26-plural-civic-logistics-constantinople/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Ammianus describes Julian entering Constantinople after Constantius’ death and later ordering temples opened and sacrifice restored. His explanation of the emperor’s motives is authorial interpretation; the decree does not establish uniform implementation or belief.
+
+ES: Amiano describe la entrada de Juliano en Constantinopla tras la muerte de Constancio y su posterior orden de abrir templos y restablecer sacrificios. Su explicación de los motivos imperiales es interpretación del autor; el decreto no demuestra aplicación ni creencia uniformes.
 
 [Consulted source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html): Ammianus XXII.2 §1 checked for Julian’s entry into Constantinople and sole rule.
 
@@ -1197,9 +1203,13 @@ Limit: This passage does not support reopening temples/restoring sacrifices; tha
 
 Status: disputed
 
+[Additional consulted passage](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html): XXII.2.1–5 and XXII.5.1–4; especially2.4 and5.2
+
+Limit: Later fourth-century narrator and former officer, not a neutral stenographer of the palace. Entry11December in this edition; use broad working frame for subsequent policy. Reopening/sacrifice orders do not quantify each local temple, acceptance or practice. Christian discord and imperial calculation in5.4 remain attributed interpretation; no recycled hostile generalization or authentic dialogue.
+
 ### 27. The Return That Did Not Last
 
-[Candidate source](https://romanletters.org/letters/julian_emperor/24/): Julian, Letter 24 to the Alexandrians (362), sobre el retorno de Atanasio; Ammianus, Res Gestae XXIII–XXV, campaña y muerte en 363: https://tertullian.org/fathers/ammianus_25_book25.htm
+[Candidate source](https://www.tertullian.org/fathers/julian_apostate_letters_1_trans.htm): Julian Letter24 in Wright1923 translation; anonymous HistoriaAcephalaVII9–11/VIII12–13; AmmianusXXV.3.1–23 for off-map report
 
 Research candidate (not yet approved narration): Juliano permite el regreso de obispos exiliados y luego vuelve a expulsar a Atanasio de Alejandría; su campaña contra Persia termina con su muerte en Mesopotamia.
 
@@ -1207,13 +1217,31 @@ Juliano presenta su conducta como aplicación de la ley; cartas imperiales son r
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/27-return-and-departure-records-alexandria/15-odyssey-dossier.md) — independent approval pending
+
+Architect-corrected claim EN: Athanasius returned to Alexandria in 362 and later left after Julian ordered his departure. Julian’s own letter and the anonymous chronicle frame the return differently. Julian died during his Persian expedition in 363; that distant event and its later announcement at Alexandria remain distinct.
+
+ES: Atanasio regresó a Alejandría en 362 y más tarde partió después de que Juliano ordenara su salida. La carta de Juliano y la crónica anónima presentan el regreso de forma diferente. Juliano murió durante su expedición persa en 363; ese hecho distante y su posterior anuncio en Alejandría siguen separados.
 
 [Consulted source](https://romanletters.org/letters/julian_emperor/24/): Julian Letter 24 checked for order that Athanasius leave Alexandria; Ammianus XXV checked for death during Persian campaign.
 
 Limit: Julian’s letter is polemical; exact wound cause and killer are uncertain. The Persian campaign/death is not a local Alexandria event—present as reported news, not on-map action.
 
-Status: consulted
+Status: superseded-candidate-only
+
+[Additional consulted passage](https://www.tertullian.org/fathers/julian_apostate_letters_1_trans.htm): W.C.Wright1923 translation, Letter24, both shortparagraphs and notes; selected no wholecorpus claim
+
+Limit: Official imperial polemic, not independent proof of lawfulness or public sentiment. Date362/Constantinople and February21return date appear in editorialheading/footnote, not text ofletter. Modernizedmirror inserts explanations; neither its catalogdate nor insertedprivatecharacterization is adopted as an ancient statement. No manuscript inspected or Greek apparatus collated.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Anonymous HistoriaAcephalaVII9–11 andVIII12–13, selectedparagraphs
+
+Limit: Sourcecalendar/translation has date/formula issues: returnMechir27, staythroughPaophi26, departurepublicationPaophi27; broad362frame retained without certifying exact civilcalendarconversion. Deathannouncement inAlexandria in363 differs from deathatPersianfront. Chronicle says prefectorderedreturntoChurch whileJulianlaterclaimsreturnpermissiononlytohomecountries: preserve interested institutionalaccounts, do not silently harmonize or adjudicate legality. Claimedextraordinary/providentialevents not objective facts.
+
+[Additional consulted passage](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/25*.html): AmmianusXXV.3.1–23, especially3.6–9/3.23
+
+Limit: Ammianusservedonthecampaign but selectedpassage doesnotestablish hisphysicalwitnessofthewound/tentdialogue. Lastspeech, portents,virtue,polemicalorprovidentialinterpretation remain authorial. No namedkiller, divinetarget,playableemperorrescue,preciseunverifiedbattletileor localAlexandriabattle. AllPersiangeography off-map.
 
 ### 28. The Weight of an Imperial Word
 
