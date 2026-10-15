@@ -2,6 +2,7 @@ import { isSameOrRequiredPredecessor } from "../gameplay-validation/objective-an
 import { paymentReceiptMatches } from "../gameplay-validation/payment-receipt.helper";
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import type { CapabilityAction } from "./capability-action.model";
+import { generationReady } from "./capability-generation.helper";
 import {
   addFact,
   arrivalKey,
@@ -14,7 +15,6 @@ import {
 } from "./capability-ledgers.helper";
 import {
   departureReceiptSatisfied,
-  generationReady,
   hasIrrecoverableLoss,
   isActive,
   objectiveSatisfied,
@@ -70,14 +70,15 @@ export function reduceCapabilityState(
       action.liveSpatialBatch,
     );
     if (!updated) {
-      if (action.type === "tick" && action.defeatConditions.length > 0)
+      // A bad observation cannot certify presence, but time and independent
+      // defeat conditions still advance on a tick.
+      if (action.type !== "tick") return state;
+    } else {
+      state = updated;
+      freshLiveBatch = true;
+      if (hasIrrecoverableLoss(profile, state))
         return finalize(profile, finishTerminal(state, "defeat"));
-      return state;
     }
-    state = updated;
-    freshLiveBatch = true;
-    if (hasIrrecoverableLoss(profile, state))
-      return finalize(profile, finishTerminal(state, "defeat"));
   }
   let next = state;
   if (action.type === "observe-live-spatial-batch") {
