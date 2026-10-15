@@ -30,12 +30,16 @@ Revisión independiente GPT-6.1 reprodujo que tras llegar a otra zona el histori
 - global_gate: e2e
 
 ### S1 — Contrato y referencia de presencia actual
-- **Status**: pending
+- **Status**: in-progress
 - **Files**: `packages/schemas`, `packages/gameplay-state`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tests/unit/entity-presence.test.ts`, `docs/decisions/0005-live-entity-presence.md`
 - **Gate**: e2e
 - acceptance:
   - "Predicado live-entity-presence con IDs únicos, destinos por entidad, mínimo factible y posición/vida actuales. Observaciones reversibles tipadas y snapshot inmutable; desconocido o fuera de zona no satisface. Llegadas históricas permanecen inmutables."
   - "Reevaluar antes de latch/terminal en el mismo tick. Guardado/carga con fingerprint y refresco de posiciones, movimientos a otra zona, salida/reentrada, identidad equivocada, muerte previa y presencia insuficiente. Modelo/código nuevo requiere revisión independiente propia."
+- review-state: changes_requested
+- review-implementer: gpt-6-sol
+- review-reviewer: gpt-6.1-sol
+- review-log: requested_changes by gpt-6.1-sol — Independent review of integrated8c55de534460c859c5f187bc6ccd4274d92075fb. P1: current-entity-presence counts an unproduced derived-token output: valid profile declares custodian-1 produced by producer.derive; fresh six-actor batch latches return with no derivation fact. livePresenceSatisfied omits generationReady used by existing entity observers. Repro /tmp/gpt61-i00005-generated-repro.ts. P1: invalid/stale live batch returns before automatic deadline defeat; valid deadline10s, tick now11 gives defeat without batch but null terminal with duplicate-identity batch. Repro /tmp/gpt61-i00005-invalid-deadline-repro.ts. Preserve whole-batch rejection and prohibit stale positive reuse while retaining independent defeat priority. Own validate passes99/99 tests357expects; these cross-contract cases are uncovered. Detailed report /tmp/gpt61-i00005-S1-review.md. S2/S3/native/history excluded.
 
 ### S2 — Observadores espaciales nativos
 - **Status**: pending
