@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Empty Appointment geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Empty Appointment</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · constantinople · N ↑ E →</text>
+<polyline points="670.19,619.35 616.69,634.55" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="616.69,634.55 333.31,611.08" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="333.31,611.08 219.54,512.92" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="219.54,512.92 144.39,497.99" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="144.39,497.99 89.83,531.56" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline data-corridor="western-notice-approach" points="168.95,418.75 314.06,313.85" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-notice-approach: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-cancellation-loop" points="327.23,558.59 445.94,348.81 314.06,313.85" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-cancellation-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="eastern-interpretation-loop" points="538.28,471.19 445.94,348.81 314.06,313.85" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>eastern-interpretation-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northwest-qualified-archive" points="314.06,313.85 234.91,243.93" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northwest-qualified-archive: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-shelving-connection" points="314.06,313.85 445.94,348.81" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-shelving-connection: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="314.06" cy="313.85" r="20" fill="none" stroke="#91512f"/>
+<text x="337.06" y="313.85" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional inland report sorting court</text>
+<circle cx="168.95" cy="418.75" r="20" fill="none" stroke="#91512f"/>
+<text x="191.95" y="418.75" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional western appointment-notice</text>
+<text x="730" y="254" font-family="sans-serif" font-size="12">shelter</text>
+<circle cx="327.23" cy="558.59" r="20" fill="none" stroke="#91512f"/>
+<text x="350.23" y="558.59" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional southern cancellation-report</text>
+<text x="730" y="304" font-family="sans-serif" font-size="12">yard</text>
+<circle cx="538.28" cy="471.19" r="20" fill="none" stroke="#91512f"/>
+<text x="561.28" y="471.19" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional eastern interpretation-report</text>
+<text x="730" y="354" font-family="sans-serif" font-size="12">court</text>
+<circle cx="234.91" cy="243.93" r="20" fill="none" stroke="#91512f"/>
+<text x="257.91" y="243.93" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional northwest qualified archive</text>
+<circle cx="445.94" cy="348.81" r="20" fill="none" stroke="#91512f"/>
+<text x="468.94" y="348.81" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: Fictional central separate-label</text>
+<text x="730" y="454" font-family="sans-serif" font-size="12">shelving</text>
+<text x="730" y="475" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="499" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="523" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="547" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="571" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="595" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="619" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="643" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [28.942, 41.0, 28.986, 41.029]; cosine-corrected longitude; approximate districts</text>
+</svg>
