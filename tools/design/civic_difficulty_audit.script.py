@@ -8,6 +8,7 @@ import argparse
 import datetime
 import hashlib
 import json
+import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -54,8 +55,25 @@ def deadline_fields(episode):
     def normalized(value):
         return "".join(char.lower() for char in value if char.isalnum())
 
+    def positive_limit(value):
+        if type(value) is int:
+            return value > 0
+        if type(value) is float:
+            return math.isfinite(value) and value > 0
+        if isinstance(value, dict):
+            return any(positive_limit(item) for key, item in value.items()
+                       if key in (*LEVELS, "seconds", "secondsByDifficulty"))
+        return False
+
     def walk(value, path=""):
         if isinstance(value, dict):
+            if value.get("kind") == "phase-deadline":
+                limits = value.get("secondsByDifficulty")
+                if not isinstance(limits, dict) or set(limits) != set(LEVELS) or not all(
+                    type(item) is int and item > 0 for item in limits.values()
+                ):
+                    raise ValueError(f"{path}: invalid phase deadline limits")
+                found.append(f"{path}/secondsByDifficulty")
             for key, item in value.items():
                 child = f"{path}/{key}"
                 name = normalized(key)
@@ -64,10 +82,9 @@ def deadline_fields(episode):
                     "warningseconds", "offsetseconds",
                 ))
                 if not excluded and any(term in name for term in (
-                    "deadline", "timelimit", "countdown", "expires", "clock",
-                )) and bool(item):
-                    if not isinstance(item, (int, float)) or item > 0:
-                        found.append(child)
+                    "deadline", "timelimit", "countdown", "expires",
+                )) and positive_limit(item):
+                    found.append(child)
                 walk(item, child)
         elif isinstance(value, list):
             for index, item in enumerate(value):
