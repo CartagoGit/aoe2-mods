@@ -16,7 +16,7 @@ type PresenceRequirement = Extract<
 const isLivePresenceRequirement = (req: MainRequirement) =>
   req.kind === "current-entity-presence" ||
   req.kind === "checkpoint-entity-presence";
-const isContinuousLivePresenceRequirement = (req: MainRequirement) =>
+const isTerminalPresenceRequirement = (req: MainRequirement) =>
   req.kind === "current-entity-presence";
 
 export function profileHasLivePresence(profile: CapabilityProfileV2) {
@@ -36,16 +36,14 @@ export function objectiveHasLivePresence(
   );
 }
 
-function objectiveHasContinuousLivePresence(
+function objectiveHasTerminalPresence(
   profile: CapabilityProfileV2,
   objectiveId: string,
 ) {
   return profile.objectivePlan.some(
     (objective) =>
       objective.id === objectiveId &&
-      objective.predicate.requirements.some(
-        isContinuousLivePresenceRequirement,
-      ),
+      objective.predicate.requirements.some(isTerminalPresenceRequirement),
   );
 }
 
@@ -170,6 +168,6 @@ export function victoryNeedsLivePresence(
     (objective) =>
       state.objectiveLatches.includes(objective.id) &&
       isSameOrRequiredPredecessor(profile, objective.id, victoryObjectiveId) &&
-      objectiveHasContinuousLivePresence(profile, objective.id),
+      objectiveHasTerminalPresence(profile, objective.id),
   );
 }
