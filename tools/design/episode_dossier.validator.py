@@ -95,6 +95,37 @@ def audit_dossier(episode, campaign=None, baseline=None):
                     and capability.get("status") == "reference model implemented; native implementation pending",
                     f"{context}: current presence needs its unimplemented capability gate",
                 )
+            elif req["kind"] == "checkpoint-entity-presence":
+                check(
+                    len(set(req["entities"])) == len(req["entities"])
+                    and set(req["entities"]) <= set(entities)
+                    and 0 < req["requiredCount"] <= len(req["entities"])
+                    and set(req.get("destinations", {})) == set(req["entities"])
+                    and set(req.get("destinations", {}).values()) <= set(zones),
+                    f"{context}: invalid checkpoint presence identities or zones",
+                )
+                check(
+                    not any(
+                        transition.get("to") == "victory"
+                        and transition.get("objectiveId") == objective["id"]
+                        for transition in episode["stateMachine"]["phaseTransitions"]
+                    ),
+                    f"{context}: checkpoint presence must be an intermediate objective",
+                )
+                capability = next(
+                    (c for c in episode["requiredCapabilities"]
+                     if c["id"] == "checkpoint-entity-presence"), None
+                )
+                check(
+                    req.get("observable") == "current-alive-position"
+                    and req.get("latchAtObjectiveCompletion") is True
+                    and req.get("deliveryLedgerSubstitute") is False
+                    and req.get("implementationStatus") == "unimplemented"
+                    and req.get("proposalId") == "i00006"
+                    and capability is not None
+                    and capability.get("status") == "reference model implemented; native implementation pending",
+                    f"{context}: checkpoint presence needs its i00006 pending gate",
+                )
             elif req["kind"] == "entity-state":
                 check(
                     len(set(req["entities"])) == len(req["entities"]),
@@ -349,6 +380,37 @@ def audit_dossier(episode, campaign=None, baseline=None):
                 and requirement["kind"] == "current-entity-presence",
                 f"{label}: current presence replaced with delivery history",
             )
+    checkpoint_bindings = [
+        {"objective": objective["id"], "requirement": req["id"]}
+        for objective in episode["objectivePlan"]
+        for req in objective["predicate"]["requirements"]
+        if req["kind"] == "checkpoint-entity-presence"
+    ]
+    checkpoint_plan = episode.get("checkpointPresencePlan")
+    if checkpoint_bindings:
+        checkpoint_capability = next(
+            (c for c in episode["requiredCapabilities"]
+             if c["id"] == "checkpoint-entity-presence"), None
+        )
+        check(
+            checkpoint_plan is not None
+            and checkpoint_plan.get("capabilityId") == "checkpoint-entity-presence"
+            and checkpoint_plan.get("implementationStatus") == "unimplemented"
+            and checkpoint_plan.get("proposalId") == "i00006"
+            and checkpoint_plan.get("bindings") == checkpoint_bindings,
+            f"{label}: checkpoint presence plan needs the exact i00006 pending gate and bindings",
+        )
+        check(
+            checkpoint_capability is not None
+            and checkpoint_capability.get("status")
+            == "reference model implemented; native implementation pending",
+            f"{label}: checkpoint presence capability must remain native pending",
+        )
+    else:
+        check(
+            checkpoint_plan is None,
+            f"{label}: checkpoint presence plan has no matching requirement",
+        )
     for group in episode["worldContract"]["survivorGroups"]:
         check(
             len(group["entities"]) == len(set(group["entities"])),

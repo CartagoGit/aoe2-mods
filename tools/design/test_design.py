@@ -597,6 +597,47 @@ class DesignAcceptanceTests(unittest.TestCase):
         self.assertTrue(any("impossible counter" in error for error in errors))
         self.assertTrue(any("duplicate survivor" in error for error in errors))
 
+    def test_checkpoint_presence_requires_i00006_gate_and_cannot_be_terminal(self):
+        draft = self.draft(2)
+        objective = draft["objectivePlan"][1]
+        entity = next(iter(draft["worldContract"]["entities"]))["id"]
+        zone = next(iter(draft["worldContract"]["zones"]))["id"]
+        requirement = {
+            "id": "checkpoint-test",
+            "kind": "checkpoint-entity-presence",
+            "entities": [entity],
+            "destinations": {entity: zone},
+            "requiredCount": 1,
+            "observable": "current-alive-position",
+            "latchAtObjectiveCompletion": True,
+            "deliveryLedgerSubstitute": False,
+            "implementationStatus": "unimplemented",
+            "proposalId": "i00006",
+        }
+        objective["predicate"]["requirements"].append(requirement)
+        objective["predicate"].setdefault("requiredLedgers", []).append(requirement["id"])
+        draft["requiredCapabilities"].append({
+            "id": "checkpoint-entity-presence",
+            "status": "reference model implemented; native implementation pending",
+        })
+        draft["checkpointPresencePlan"] = {
+            "capabilityId": "checkpoint-entity-presence",
+            "implementationStatus": "unimplemented",
+            "proposalId": "i00006",
+            "bindings": [{"objective": objective["id"], "requirement": requirement["id"]}],
+        }
+        errors = self.dossier_validator(draft)
+        self.assertFalse(any("checkpoint presence needs its i00006 pending gate" in e for e in errors))
+        draft["requiredCapabilities"][-1]["status"] = "implemented"
+        errors = self.dossier_validator(draft)
+        self.assertTrue(any("checkpoint presence needs its i00006 pending gate" in e for e in errors))
+        self.assertTrue(any("checkpoint presence capability must remain native pending" in e for e in errors))
+        draft["requiredCapabilities"][-1]["status"] = "reference model implemented; native implementation pending"
+        transition = next(t for t in draft["stateMachine"]["phaseTransitions"] if t.get("to") == "victory")
+        transition["objectiveId"] = objective["id"]
+        errors = self.dossier_validator(draft)
+        self.assertTrue(any("checkpoint presence must be an intermediate objective" in e for e in errors))
+
     def test_expanded_withdrawal_cannot_use_unsupplied_recipient_ledger(self):
         draft = self.draft(2)
         draft["objectivePlan"][2]["predicate"]["requirements"][0][

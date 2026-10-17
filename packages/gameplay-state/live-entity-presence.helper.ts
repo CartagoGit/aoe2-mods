@@ -10,14 +10,16 @@ import type { CapabilitySnapshot } from "./capability-snapshot.schema";
 
 type PresenceRequirement = Extract<
   MainRequirement,
-  { kind: "current-entity-presence" }
+  { kind: "current-entity-presence" | "checkpoint-entity-presence" }
 >;
+
+const isLivePresenceRequirement = (req: MainRequirement) =>
+  req.kind === "current-entity-presence" ||
+  req.kind === "checkpoint-entity-presence";
 
 export function profileHasLivePresence(profile: CapabilityProfileV2) {
   return profile.objectivePlan.some((objective) =>
-    objective.predicate.requirements.some(
-      (req) => req.kind === "current-entity-presence",
-    ),
+    objective.predicate.requirements.some(isLivePresenceRequirement),
   );
 }
 
@@ -28,9 +30,7 @@ export function objectiveHasLivePresence(
   return profile.objectivePlan.some(
     (objective) =>
       objective.id === objectiveId &&
-      objective.predicate.requirements.some(
-        (req) => req.kind === "current-entity-presence",
-      ),
+      objective.predicate.requirements.some(isLivePresenceRequirement),
   );
 }
 

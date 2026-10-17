@@ -23,7 +23,9 @@ export function validateScenarioCapability(
   const objectiveIds = profile.objectivePlan.map((o) => o.id);
   const hasLivePresence = profile.objectivePlan.some((objective) =>
     objective.predicate.requirements.some(
-      (req) => req.kind === "current-entity-presence",
+      (req) =>
+        req.kind === "current-entity-presence" ||
+        req.kind === "checkpoint-entity-presence",
     ),
   );
   const sideIds = new Set(profile.secondaryObjectives.map((o) => o.id));
@@ -205,7 +207,8 @@ export function validateScenarioCapability(
       const entityRefs: string[] = [];
       const zoneRefs: string[] = [];
       switch (req.kind) {
-        case "current-entity-presence": {
+        case "current-entity-presence":
+        case "checkpoint-entity-presence": {
           entityRefs.push(...req.entities);
           zoneRefs.push(...Object.values(req.destinations));
           const mapped = Object.keys(req.destinations);
@@ -219,6 +222,19 @@ export function validateScenarioCapability(
               "capability.live-presence-contract",
               reqContext,
               "La presencia exige identidades únicas, un destino por entidad y un mínimo factible",
+            );
+          if (
+            req.kind === "checkpoint-entity-presence" &&
+            profile.stateMachine.phaseTransitions.some(
+              (transition) =>
+                transition.to === "victory" &&
+                transition.objectiveId === objective.id,
+            )
+          )
+            add(
+              "capability.checkpoint-presence-terminal",
+              reqContext,
+              "El checkpoint de presencia solo puede gobernar un objetivo intermedio",
             );
           break;
         }

@@ -47,6 +47,7 @@ export function mainRequirementSatisfied(
   const facts = factsFor(state, objectiveId, requirement.id);
   switch (requirement.kind) {
     case "current-entity-presence":
+    case "checkpoint-entity-presence":
       return livePresenceSatisfied(profile, state, requirement);
     case "entity-state": {
       const eligible = requirement.eligibleEntitiesFromLedger
