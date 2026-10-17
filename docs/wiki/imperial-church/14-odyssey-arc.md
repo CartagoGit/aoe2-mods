@@ -46,7 +46,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "34 selections with bounded source consultations; five additional full dossiers and all independent historical approvals pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; three full dossiers and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 29
+    "authoredDossierCount": 31
   },
   "continuity": {
     "recommendedPrevious": [
@@ -1258,17 +1258,31 @@ Do not certify a New River villa coordinate, derive a Gregorian date from an edi
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
-Architect-corrected claim EN: The anonymous chronicle reports a new order, local resistance, Athanasius’ concealed departure and later recall.
+[Authored episode dossier](episodes/30-policy-reversal-alexandria/15-odyssey-dossier.md) — independent approval pending
 
-ES: La crónica anónima refiere una nueva orden, resistencia local, partida oculta de Atanasio y posterior regreso por orden imperial.
+Architect-corrected claim EN: An anonymous Alexandrian chronicle reports a renewed expulsion order in 365, a dispute over whether it applied to Athanasius, his concealed withdrawal and an imperial letter followed by his return in 366. Its account does not locate the villa or provide a neutral legal judgment.
+
+ES: Una crónica alejandrina anónima refiere una nueva orden de expulsión en 365, una disputa sobre si afectaba a Atanasio, su retirada oculta y una carta imperial seguida de su regreso en 366. Su relato no localiza la villa ni ofrece un juicio jurídico neutral.
 
 [Consulted source](https://www.newadvent.org/fathers/2820.htm): Anonymous Historia Acephala X.15–XI.16
 
 Limit: Do not certify a New River villa coordinate, derive a Gregorian date from an editorial parenthesis, make a historical bishop playable or treat the official fine as player religious currency.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Historia Acephala X.15–XI.16, XII.17 chronological control
+
+Limit: Athanasius-favorable anonymous account, not his autobiography. The New River, villa and church apartment are unlocated. Imperial letter, local announcement and return are distinct. Source calendar and later editorial civil dates remain qualified.
+
+[Additional consulted passage](https://www.cambridge.org/core/journals/antiquity/article/streets-and-houses-of-roman-alexandria-revisited/71B9F539334D3FCA6A222D43FF0219D2): Majcherek2021, abstract and excavation discussion through street-grid paragraph; early Roman phase cautions
+
+Limit: Local excavation does not certify a complete365 city grid, the New River, a villa or a channel crossing. Early Roman houses are not assumed unchanged in the later fourth century.
+
+[Additional consulted passage](https://egymonuments.gov.eg/archaeological-sites/kom-el-dikka/): Official institutional description of Roman/Byzantine residential and civic remains
+
+Limit: Modern archaeological visitor site, not a365 snapshot. Lecture halls, baths, odeon and mosaic phases need individual dating before scenery selection.
 
 ### 29. The Empty Chair
 
@@ -1280,17 +1294,39 @@ Socrates IV.20 names the second consulate of Gratian and Probus, identified as37
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
-Architect-corrected claim EN: Athanasius’ death and the contested succession changed Alexandrian church leadership. The adopted 373 frame is not obtained by silently correcting Socrates’ conflicting synchronism.
+[Authored episode dossier](episodes/31-contested-succession-alexandria/15-odyssey-dossier.md) — independent approval pending
 
-ES: La muerte de Atanasio y la sucesión disputada cambiaron el liderazgo eclesial alejandrino. El marco adoptado de 373 no procede de corregir en silencio el sincronismo contradictorio de Sócrates.
+Architect-corrected claim EN: Athanasius’ death, conventionally dated 373, was followed by Peter’s succession and a struggle over Alexandrian church possession. Later Nicene historians report imperial intervention, Peter’s imprisonment and flight, and Lucius’ installation. Socrates’ own consular synchronism points to 371 in the translation’s note; it is preserved rather than silently repaired.
+
+ES: A la muerte de Atanasio, fechada convencionalmente en 373, siguieron la sucesión de Pedro y una disputa por la posesión de las iglesias alejandrinas. Historiadores nicenos posteriores refieren intervención imperial, prisión y huida de Pedro e instalación de Lucio. El sincronismo consular de Sócrates apunta a 371 según la nota de traducción; se conserva sin corregirlo en silencio.
 
 [Consulted source](https://www.newadvent.org/fathers/2820.htm): Historia Acephala XII.17 and XIII.19; Socrates HE IV.20–22, with chronology conflict
 
 Limit: Socrates IV.20 names the second consulate of Gratian and Probus, identified as371 by the old translator’s note. Preserve this against the373chronology from other evidence; allegations remain attributed and exact civil-day conversion unverified.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://www.newadvent.org/fathers/2820.htm): Historia Acephala XII.17 and XIII.19
+
+Limit: Anonymous favorable chronicle, not Athanasius’ autobiography. Its consular/calendar formula and editorial May3conversion are not a verified Gregorian day. No exact succession room, funeral route or urban battle plan.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26014.htm): Socrates HE IV.20–22, with IV.1 as prior-claimant context
+
+Limit: Later Nicene historian, not an eyewitness assertion. Providential causation, hostile labels and ethnic stereotypes remain the author’s framing. Peter’s letters cited by Socrates were not independently read. No two modern translations count as two independent ancient witnesses.
+
+[Additional consulted passage](https://www.ccel.org/ccel/schaff/npnf202.ii.vii.xx.html): Socrates IV.20 and NPNF editorial footnote616
+
+Limit: This is an editor’s comparison, not a fresh reading of Jerome or a correction to Socrates’ words. Do not claim his consular phrase converts to373.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26026.htm): Sozomen HE VI.19
+
+Limit: Not demonstrated independent eyewitness corroboration of Socrates. Descriptions of cruelty and generalization about parties stay attributed; no playable massacre, torture sequence or game-unit count is derived. VI.20desert/island material is outside this local episode.
+
+[Additional consulted passage](https://athanasius.phil.uni-erlangen.de/athanasius-life-and-works.html): Uta Heil, introduction and selected1.12–1.13paragraphs, especially death endpoint
+
+Limit: Its displayed death day differs from the older translation’s parenthesis; retain year373only. Modern synthesis is not a new ancient witness or geographic survey. Unread editions, Jerome, Peter’s letters and manuscript apparatus remain pending.
 
 ### 30. Where the Eagles Fell
 

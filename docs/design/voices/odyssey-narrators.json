@@ -640,9 +640,9 @@
           "classification": "author-created personal biography, never historical witness evidence"
         },
         {
-          "yearBand": "c.360–370",
+          "yearBand": "c.360–375",
           "place": "provincial eastern offices",
-          "knowledgeAccess": "fictional clerical work; changing orders and reported religious disputes",
+          "knowledgeAccess": "Fictional provincial clerical work receiving changing orders and reports, including Alexandria373; no episcopal/prison eyewitness or certified dispatch route.",
           "classification": "author-created personal biography, never historical witness evidence"
         },
         {
@@ -1165,7 +1165,8 @@
           },
           "historicalEyewitnessClaimAllowed": false,
           "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
+          "completeDossierPlacementRequired": true,
+          "completeDossierPlacement": "Marcus31–32 receives Alexandrian reports in fictional eastern clerical work. The bread woman and reed scene is invented ordinary life; no episcopal search, New River villa, imperial audience or disaster eyewitness."
         },
         {
           "scenarioId": "31-contested-succession-alexandria",
@@ -1180,7 +1181,8 @@
           },
           "historicalEyewitnessClaimAllowed": false,
           "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
+          "completeDossierPlacementRequired": true,
+          "completeDossierPlacement": "Marcus39receives succession/displacement reports in fictional eastern provincial office. Absent colleague caring for sick father and second cup are invented biography. No Alexandrian deathbed, church transfer, prison, Peter flight or imperial audience witness."
         },
         {
           "scenarioId": "32-defeat-and-withdrawal-adrianople",

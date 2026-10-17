@@ -12,7 +12,7 @@ El contenido publicado por una comunidad de fe describe también su propia memor
 
 ## Selección y auditorías posteriores
 
-El arquitecto ha seleccionado [273 episodios](../../design/odyssey-selections.md), con identidades estables, títulos EN/es, cinco actos por campaña y operaciones principales diferentes. La selección no acredita expedientes completos ni mapas jugables. Los candidatos originales se conservan para trazabilidad; una corrección en `historicalSelection.selectedClaim`, `auditedSourcePassages` o `researchAudit` prevalece sobre la fila original.
+El arquitecto ha seleccionado [278 episodios](../../design/odyssey-selections.md), con identidades estables, títulos EN/es, cinco actos por campaña y operaciones principales diferentes. La selección no acredita expedientes completos ni mapas jugables. Los candidatos originales se conservan para trazabilidad; una corrección en `historicalSelection.selectedClaim`, `auditedSourcePassages` o `researchAudit` prevalece sobre la fila original.
 
 - [Auditoría occidental y oriental](western-source-audit.json): cada registro distingue pasaje comprobado de `pending_source_check`, incluye URL corregida, afirmación respaldada y alcance leído.
 - [Auditoría independiente de la fitna](fitna-editorial-audit.md): geografía imprecisa, cronología, consolidaciones y ficciones civiles permitidas.
@@ -76,3 +76,14 @@ La auditoría de17–19 corrige tres datos de recopilación: Muehlberger2015 es 
 
 
 Rímini359: [consulta del arquitecto](imperial25-source-audit.json) distingue los relatos de Sulpicio Severo y Sócrates, el prefecto Taurus, la cronología de Liberio y la separación respecto a Seleucia. El [registro visual](rimini359-visual-reference-candidates.json) y el manifiesto conservan dos fotografías originales modernas de monumentos, con licencia, crédito y hash. Los PDF municipales permanecen como consultas temporales: no se incorporan sus imágenes sin licencia. C1.1.1 muestra cambios de los siglosXIX–XX, no fases romanas. Las imágenes actuales no certifican359, la sede conciliar ni una orilla navegable.
+
+
+## Estado de investigación al 17 de octubre de 2026
+
+La selección vigente tiene278episodios y61dossiers redactados, con2.511pantallas EN/es-ES y377secundarios;217selecciones no tienen dossier. Las secciones anteriores conservan cortes históricos de recopilación, no recuentos actuales de producción. Hay36recursos adicionales realmente locales, todavía sin aprobación de producción.
+
+- [Alejandría365–366](imperial30-source-audit.json) y [límites geográficos](alexandria365-geography-audit.json): New River/villa sin localizar; la [revisión técnica](../../qa/campaign-design/imperial30-independent-review.md) no equivale a aprobación histórica o nativa.
+- [Sucesión alejandrina373](imperial31-source-audit.json): sincronismo deSócrates371distinto del marco convencional373; intervención, prisión, huida y posesión separadas. La escena de hogares y presión local es ficción declarada.
+- [Adrianópolis378 y DSM](adrianople378-geography-and-dem-candidates.json): hora octava, no radio de ocho millas; se corrigió también la transcripción latina del recolector a `octava tandem hora`. Posición anterior a quince millas tampoco localiza la batalla.
+- [Procesamiento del relieve moderno](edirne-modern-dsm-processing.json), [licencia y avisos](geography/edirne-modern-dsm-license.md) y [vista local](images/edirne-modern-dsm-regional-preview.png): recorte lossless de4.1MB más vista de1.2MB. No es terreno desnudo, hidrología antigua ni mapa de batalla certificado.
+- [Auditoría mecánica actual](civic-difficulty-mechanical-audit.json) y [snapshot previo de60](civic-difficulty-mechanical-audit-2026-10-15.json):54candidatos de riesgo y siete con hostiles; no medidas de diversión ni balance.
