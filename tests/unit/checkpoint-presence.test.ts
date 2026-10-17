@@ -35,7 +35,7 @@ type MutableProfile = {
   worldContract: { zones: unknown[] };
 };
 
-function profileWithCheckpoint() {
+function profileWithCheckpoint(finalPresence = true) {
   const profile = structuredClone(makeProfile()) as unknown as MutableProfile;
   profile.worldContract.zones.push(zone("other-receiver", 90));
   const first = profile.objectivePlan[0];
@@ -70,9 +70,20 @@ function profileWithCheckpoint() {
   final.predicate.requiredLedgers = final.predicate.requiredLedgers.filter(
     (id) => id !== payment.id,
   );
-  final.predicate.requirements = final.predicate.requirements.map((req) =>
-    req.id === presence.id ? { ...req, kind: "current-entity-presence" } : req,
-  );
+  final.predicate.requirements = final.predicate.requirements.map((req) => {
+    if (req.id !== presence.id) return req;
+    return finalPresence
+      ? { ...req, kind: "current-entity-presence" }
+      : {
+          id: req.id,
+          kind: "entity-state",
+          state: "arrived",
+          entities: ["bundle-1"],
+          requiredCount: 1,
+          oncePerEntity: true,
+          destinations: { "bundle-1": "store-1" },
+        };
+  });
   profile.objectivePlan.push(final);
   profile.stateMachine.states.push("phase-2");
   profile.stateMachine.phaseTransitions = [
@@ -248,6 +259,102 @@ describe("checkpoint entity presence reference", () => {
         liveSpatialBatch: movedAfterLatch,
       }).terminal,
     ).toBeNull();
+  });
+
+  test("a checkpoint alone does not impose a terminal batch on a receipt-only final objective", () => {
+    const profile = profileWithCheckpoint(false);
+    let state = enter(profile);
+    state = reduceCapabilityState(profile, state, {
+      type: "pay-main",
+      objectiveId: "return",
+      requirementId: "checkpoint-payment",
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "record-arrival",
+      entityId: "bundle-1",
+      zoneId: "store-1",
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "latch-objective",
+      objectiveId: "return",
+      liveSpatialBatch: batch(1),
+    });
+    expect(state.objectiveLatches).toEqual(["return"]);
+    state = reduceCapabilityState(profile, state, {
+      type: "enter-phase",
+      phase: "phase-2",
+      nowSeconds: 1,
+    });
+    state = reduceCapabilityState(profile, state, {
+      type: "latch-objective",
+      objectiveId: "final-return",
+    });
+    expect(state.objectiveLatches).toEqual(["final-return", "return"]);
+    const saved = JSON.parse(JSON.stringify(state));
+    expect(
+      reduceCapabilityState(profile, saved, {
+        type: "tick",
+        nowSeconds: 2,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: ["final-return"],
+      }).terminal,
+    ).toBe("victory");
+    expect(
+      reduceCapabilityState(profile, saved, {
+        type: "enter-phase",
+        phase: "victory",
+        nowSeconds: 2,
+      }).terminal,
+    ).toBe("victory");
+
+    const legacy = capabilityProfileV2Schema.parse(makeProfile());
+    let legacyState = enter(legacy);
+    legacyState = reduceCapabilityState(legacy, legacyState, {
+      type: "record-arrival",
+      entityId: "bundle-1",
+      zoneId: "store-1",
+    });
+    legacyState = reduceCapabilityState(legacy, legacyState, {
+      type: "latch-objective",
+      objectiveId: "return",
+      liveSpatialBatch: batch(1),
+    });
+    const legacySaved = JSON.parse(JSON.stringify(legacyState));
+    expect(
+      reduceCapabilityState(legacy, legacySaved, {
+        type: "tick",
+        nowSeconds: 1,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: ["return"],
+      }).terminal,
+    ).toBeNull();
+    expect(
+      reduceCapabilityState(legacy, legacySaved, {
+        type: "enter-phase",
+        phase: "victory",
+        nowSeconds: 1,
+      }).terminal,
+    ).toBeNull();
+    expect(
+      reduceCapabilityState(legacy, legacySaved, {
+        type: "tick",
+        nowSeconds: 1,
+        difficulty: "standard",
+        defeatConditions: [],
+        victoryConditions: ["return"],
+        liveSpatialBatch: batch(2),
+      }).terminal,
+    ).toBe("victory");
+    expect(
+      reduceCapabilityState(legacy, legacySaved, {
+        type: "enter-phase",
+        phase: "victory",
+        nowSeconds: 1,
+        liveSpatialBatch: batch(2),
+      }).terminal,
+    ).toBe("victory");
   });
 
   test("stale, unknown, dead, lookalike, wrong-zone and premature derivation cannot certify a checkpoint", () => {
