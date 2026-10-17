@@ -13,3 +13,10 @@ Si una sesión se interrumpe: leer AGENTS y handoffs; consultar Git, unidad y lo
 El perfil actual exige un gate declarado en el HEAD de develop antes de aceptar merges. Declararlo solo dentro del candidato no satisface esa política. Si el repositorio de arranque no lo tiene, la integración queda bloqueada hasta bootstrap legítimo por el propietario; no omitirlo ni hacer push manual de develop.
 
 Cuando se trabaja en el worktree que imprime work enter, hacer git add/commit únicamente dentro de él, con identidad real y alcance revisado. work checkpoint desde el MCP sin checkout captura el checkout compartido; no usarlo como sustituto de commit en otra unidad. La recuperación del trabajo retirado y su ref se consulta al runtime; nunca confundir el dossier local de revisión con una unidad editable.
+
+
+## Recuperación de una escritura accidental en el checkout compartido
+
+En esta versión, el CLI instalado ofrece `work rescue` aunque el enum de la herramienta MCP `work` no lo expone. Consultar el `work --help` real antes de usarlo. Si una operación del runtime deja cambios accidentales en el checkout compartido, inspeccionar y atribuir primero esos cambios; no asumir que cambios de otra persona son descartables. El rescate oficial conserva el árbol observado en una referencia `refs/rescued/...` antes de restaurarlo, e informa de su preservación remota. Registrar el resultado y comprobar después el HEAD y el estado real del checkout: publicar en el remoto no demuestra que la copia local esté actualizada.
+
+El caso de f00003 se resolvió adoptando el pathname canónico emitido por el runtime, dentro de la misma carpeta de estado, y actualizando sus dos referencias activas. Se conservaron íntegros el cuerpo, frontmatter, ID y lifecycle de la propuesta. No restaurar por costumbre el nombre legado tras futuras operaciones: las instrucciones activas ya usan el canónico. El [checkpoint de Adrianópolis](../qa/campaign-design/imperial32-design-checkpoint.md) conserva los hashes, revisiones y recuperación observada.
