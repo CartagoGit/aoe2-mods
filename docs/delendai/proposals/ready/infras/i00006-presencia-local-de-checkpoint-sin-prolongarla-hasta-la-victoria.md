@@ -29,7 +29,7 @@ Revisión independiente de f35ad5c: o2 requiere cuatro originales a pie al oeste
 - global_gate: e2e
 
 ### S1 — Contrato aditivo y referencia de checkpoint
-- **Status**: pending
+- **Status**: review
 - **Files**: `packages/schemas`, `packages/gameplay-state`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tools/design/episode_dossier.validator.py`, `tools/design/test_design.py`, `tests/unit/checkpoint-presence.test.ts`, `docs/design/checkpoint-entity-presence.md`, `docs/decisions/0006-checkpoint-entity-presence.md`
 - **Gate**: e2e
 - acceptance:
@@ -37,6 +37,8 @@ Revisión independiente de f35ad5c: o2 requiere cuatro originales a pie al oeste
   - "Reutilizar observación, generación causal, validación y cardinalidad. Checkpoint se fija una vez en su fase; no reevalúa su presencia como ancestro al terminal. current-entity-presence conserva todos sus checks terminales y comportamiento de perfiles previos."
   - "Pruebas end-to-end de referencia: reunión intermedia simultánea, retirada posterior a otro receptor y victoria con batch fresco final; salida/unknown/dead/wrongzone/replacement/stale, derivación prematura, guardado/carga, pago una vez y prioridad de derrota. La presencia final continua sigue bloqueando si se abandona."
   - "SchemaVersion1/perfilv2/IDs intactos; perfiles no opt-in conservan fingerprints/snapshots. Exportador sigue rechazando capacidades nativas no implementadas. bun run validate y test:export si afecta adaptador; revisión de modelo independiente."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S2 — Observer nativo y certificación de alcance temporal
 - **Status**: pending
