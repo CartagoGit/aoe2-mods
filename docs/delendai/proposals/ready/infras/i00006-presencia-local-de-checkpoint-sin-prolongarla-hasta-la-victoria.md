@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: campaign-design
 date: 2026-10-17
+shipped-in:
+  - "84d4f2da0053fdaaa749dd9ee469d4e823dfc685"
 ---
 
 # i00006 — Presencia local de checkpoint sin prolongarla hasta la victoria
@@ -29,7 +31,7 @@ Revisión independiente de f35ad5c: o2 requiere cuatro originales a pie al oeste
 - global_gate: e2e
 
 ### S1 — Contrato aditivo y referencia de checkpoint
-- **Status**: review
+- **Status**: done
 - **Files**: `packages/schemas`, `packages/gameplay-state`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tools/design/episode_dossier.validator.py`, `tools/design/test_design.py`, `tests/unit/checkpoint-presence.test.ts`, `docs/design/checkpoint-entity-presence.md`, `docs/decisions/0006-checkpoint-entity-presence.md`
 - **Gate**: e2e
 - acceptance:
@@ -37,8 +39,10 @@ Revisión independiente de f35ad5c: o2 requiere cuatro originales a pie al oeste
   - "Reutilizar observación, generación causal, validación y cardinalidad. Checkpoint se fija una vez en su fase; no reevalúa su presencia como ancestro al terminal. current-entity-presence conserva todos sus checks terminales y comportamiento de perfiles previos."
   - "Pruebas end-to-end de referencia: reunión intermedia simultánea, retirada posterior a otro receptor y victoria con batch fresco final; salida/unknown/dead/wrongzone/replacement/stale, derivación prematura, guardado/carga, pago una vez y prioridad de derrota. La presencia final continua sigue bloqueando si se abandona."
   - "SchemaVersion1/perfilv2/IDs intactos; perfiles no opt-in conservan fingerprints/snapshots. Exportador sigue rechazando capacidades nativas no implementadas. bun run validate y test:export si afecta adaptador; revisión de modelo independiente."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 84d4f2da0053, validate exit 0, tests 107/107; acceptance 4/4: (1) Strict schema/compiler and own checkpoint-only direct-terminal rejection; own prepared adversarial latch cases reject history/flag/stale/unknown/wrong/dead. (2) Shared generation and spatial helpers inspected. Own derived identity causality succeeds only after producer; legacy intermediate current still rechecked on bo… (3) Own independent fixture499assertions,90joint subsets to both terminal APIs, save/load receipt-only fix, final abandonment, payment idempotency and defeat prior… (4) Integrated own validate107/107424assertions exit0. Own export3variants2roundtrips unsupportedModeRejected=true gameVerified=false. Snapshot/fingerprint unchang… — Approve S1 only after independent technical rounds and integrated own validation. Candidate39a9beda plus submit62bf2e5/pathname-onlyde508b8 identical runtime tree. P2in1fc9f94 fixed ine532b40. Report /tmp/checkpoint-presence-independent-review.md. Excludes S2/S3/native/game/history/content promotion.
 
 ### S2 — Observer nativo y certificación de alcance temporal
 - **Status**: pending
