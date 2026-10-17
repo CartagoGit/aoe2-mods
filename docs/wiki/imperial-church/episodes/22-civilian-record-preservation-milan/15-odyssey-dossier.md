@@ -2091,6 +2091,41 @@ ES: Dos observaciones señalan la alternativa septentrional propuesta de suminis
       "proposalId": "i00005"
     }
   ],
+  "presencePlan": {
+    "capabilityId": "live-entity-presence",
+    "proposalId": "i00005",
+    "implementationStatus": "unimplemented",
+    "evaluation": "current state before terminal latch, not historical arrivals",
+    "bindings": [
+      {
+        "objective": "o3",
+        "requirement": "req-3"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-4"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-5"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-6"
+      }
+    ],
+    "scope": "Three original bundles and three original custodians must be alive/currently present in assigned stores when reporting return completes. Leaving earlier keeps the final incomplete until restored; no irreversible residence latch or asserted immobility.",
+    "nativeGate": "No historical content promotion until independently reviewed reference and native observation are implemented; arrived flags never substitute.",
+    "referenceApproval": {
+      "status": "implemented and independently reviewed",
+      "implementationMerge": "983ef905ac0957b4a0b303e28b340abb8ff24056",
+      "formalReviewMerge": "d793ae4652e64df87afd5015ed24fbfaa31ad707",
+      "reviewer": "gpt-6-luna",
+      "technicalReevaluation": "gpt-6.1-sol",
+      "nativeStatus": "unimplemented",
+      "gameVerified": false
+    }
+  },
   "artDirection": {
     "style": "ordinary late Roman local work and household courts, phase-qualified civic context",
     "historicalControls": "No certified historical event address, authentic document facsimile or private imperial scene. Existing licensed resources remain research only. Circus photo is current remains; schematic combinesIII–Vphases, not350geometry. No medieval tower loggia or basilica phase imported.",

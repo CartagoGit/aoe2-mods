@@ -1370,7 +1370,7 @@ Limit: A translation discrepancy, not a measured route. Do not infer an author�
 
 Research candidate (not yet approved narration): Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history.
 
-The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.
+Socrates NPNF V.2 gives16January, whereas Marcellinus379.1 givesXIIIIkalendasFebruarias, conventionally19January; the selected modern synthesis adopts19January. Preserve these transmitted distinctions without a manuscript collation or silently corrected quotation. Use year379only pending chronology review. Accession is fixed history, not bought by player payments; the religious survey is not simultaneous uniform implementation. No exact proclamation room or ancient landmask is certified.
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
@@ -1385,6 +1385,26 @@ ES: Sócrates refiere la elevación de Teodosio en Sirmio y un panorama religios
 Limit: The translated V.2 gives January16 and a consular formula. Do not silently replace its day from a different chronology or infer simultaneous implementation of every recall and policy; no Sirmium map is certified yet.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.2–3; V.6–7 as later-event control
+
+Limit: Later Nicene author. Universal praise, confession labels and motives are attributed, not an objective competence rating or an independently proved private council. Later episcopal outcomes in a survey paragraph are not all instantaneous379changes. V.6arrival24November and V.7transfer26November are separate from accession.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26027.htm): Sozomen HE VII.1–2; VII.4–5 as scope control
+
+Limit: Nicene retrospective framing, no exact accession day in this selected passage and no established independence from Socrates. Law, recall, local reception and later possession of churches cannot be compressed into one playable coronation. Do not turn its generalizations into a complete geographical census.
+
+[Additional consulted passage](https://www.thelatinlibrary.com/marcellinus1.html): Marcellinus Comes Chronicon, preface and379.1–2;380entry as chronology control
+
+Limit: Sixth-century chronicle with favorable Catholic/Theodosian evaluation; not a379eyewitness. Army victories in379.2 lack local tactical detail and are not a reason to invent a Sirmium battle. Its380December church-restoration month differs from Socrates’November report; preserve the distinction for episode34. Italica origin in the entry is not an approved birthplace scene.
+
+[Additional consulted passage](https://www.roman-emperors.sites.luc.edu/theo1.htm): David Woods, TheodosiusI, selected Origin and Early Career and initial Foreign Policy paragraphs; author/date/footer checked
+
+Limit: Specific reconstructive arguments about retirement, the father’s death, motives, military seniority or exact transfer dates are the author’s arguments, not imported as established facts. A modern summary is not another ancient witness or a surveyed379map.
+
+[Additional consulted passage](https://ai.ac.rs/en/7729/): Institute of Archaeology, Sirmium project, selected site/urban areas/communication/palatial remains paragraphs
+
+Limit: No exact379proclamation room, urban dry-ground mask, intact street footprint or seasonal inundation. Modern site images are archaeological context, not accession documentation.
 
 ### 32. The Weight of an Imperial Word
 
@@ -1424,7 +1444,7 @@ Limit: Not a georeferenced 380 plan, dated coast or DEM. Exact place of law issu
 
 Research candidate (not yet approved narration): Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
 
-Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.
+Socrates V.6 reports arrival24November and V.7 church possession26November380 as separate events; Marcellinus380 instead places church restoration inDecember. Preserve the discrepancy, not a harmonized exact calendar. Sozomen’s later enlarged Anastasia building and attributed miracles do not certify the380venue or terrain. Gregory’s later resignation and381council must remain distinct fromNovember380. No exact church footprint, universal compliance or playable forced conversion follows.
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
@@ -1439,6 +1459,18 @@ ES: Sócrates narra por separado la llegada de Teodosio y los cambios de posesi�
 Limit: Keep November24arrival and November26transfer as separately reported dates; no universal compliance, modern denominational schism, certified church parcel or playable forced conversion.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.6–8, especiallyV.6arrival andV.7transfer
+
+Limit: Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action toNovember380without comparing chronology and381council evidence.
+
+[Additional consulted passage](https://www.newadvent.org/fathers/26027.htm): Sozomen HE VII.4–5, withVII.7–8as council context
+
+Limit: No independent eyewitness proof or complete urban transfer register. Miracles and the etymology of Anastasia are attributed beliefs/traditions, not geographic proof or mandatory gameplay powers. Later magnificent church fabric cannot be pasted onto380. Law, arrival and physical possession are not one single instant.
+
+[Additional consulted passage](https://www.thelatinlibrary.com/marcellinus1.html): Marcellinus Comes Chronicon380entry, labelled MommsenChronicaMinoraII1894
+
+Limit: That month differs from Socrates’Novemberreport. Do not relabel it November, claim all chronicles agree, or assign the exact same dated transfer from modern harmonization alone. Its favorable confessional language remains attributed.
 
 ### 34. Under the Same Eastern Sky
 

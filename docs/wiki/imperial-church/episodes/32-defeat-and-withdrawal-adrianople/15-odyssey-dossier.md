@@ -143,13 +143,13 @@ ES: En una misma comprobación, reúne a cuatro rezagados originales a pie vivos
   "operator": "all",
   "requirements": [
     {
-      "kind": "current-entity-presence",
+      "kind": "checkpoint-entity-presence",
       "requiredCount": 4,
       "observable": "current-alive-position",
-      "reevaluateBeforeTerminal": true,
       "deliveryLedgerSubstitute": false,
       "implementationStatus": "unimplemented",
-      "proposalId": "i00005",
+      "proposalId": "i00006",
+      "latchAtObjectiveCompletion": true,
       "id": "req-1",
       "entities": [
         "imperial-church.32-defeat-and-withdrawal-adrianople.original-foot-stragglers-1",
@@ -169,13 +169,13 @@ ES: En una misma comprobación, reúne a cuatro rezagados originales a pie vivos
       }
     },
     {
-      "kind": "current-entity-presence",
+      "kind": "checkpoint-entity-presence",
       "requiredCount": 2,
       "observable": "current-alive-position",
-      "reevaluateBeforeTerminal": true,
       "deliveryLedgerSubstitute": false,
       "implementationStatus": "unimplemented",
-      "proposalId": "i00005",
+      "proposalId": "i00006",
+      "latchAtObjectiveCompletion": true,
       "id": "req-2",
       "entities": [
         "imperial-church.32-defeat-and-withdrawal-adrianople.original-mounted-scouts-1",
@@ -2855,8 +2855,65 @@ ES: Viajeros opcionales independientes pueden marcharse con la columna; ninguno 
     {
       "id": "live-entity-presence",
       "status": "reference model implemented; native implementation pending"
+    },
+    {
+      "id": "checkpoint-entity-presence",
+      "status": "reference model implemented; native implementation pending"
     }
   ],
+  "presencePlan": {
+    "capabilityId": "live-entity-presence",
+    "proposalId": "i00005",
+    "implementationStatus": "unimplemented",
+    "evaluation": "current state before terminal latch, not historical arrivals",
+    "bindings": [
+      {
+        "objective": "o3",
+        "requirement": "req-1"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-2"
+      }
+    ],
+    "scope": "Final current presence only: any4of6foot and2of4mounted at southwest beforeo3completion and victory; no frozen members, old-arrival substitute or optional replacement. The separateo2checkpoint can be left.",
+    "nativeGate": "i00005S2observer plus i00003native composition and genuine actor packing, terrain, AI bounds and gameplay QA pending.",
+    "referenceApproval": {
+      "status": "implemented and independently reviewed",
+      "implementationMerge": "983ef905ac0957b4a0b303e28b340abb8ff24056",
+      "formalReviewMerge": "d793ae4652e64df87afd5015ed24fbfaa31ad707",
+      "reviewer": "gpt-6-luna",
+      "technicalReevaluation": "gpt-6.1-sol",
+      "nativeStatus": "unimplemented",
+      "gameVerified": false
+    }
+  },
+  "checkpointPresencePlan": {
+    "capabilityId": "checkpoint-entity-presence",
+    "proposalId": "i00006",
+    "implementationStatus": "unimplemented",
+    "bindings": [
+      {
+        "objective": "o2",
+        "requirement": "req-1"
+      },
+      {
+        "objective": "o2",
+        "requirement": "req-2"
+      }
+    ],
+    "scope": "At o2latch only: any4of6foot at west simultaneously with any2of4mounted central in one fresh valid observation. Both stations may be left after latch. No victory-time recheck of this completed intermediate muster.",
+    "nativeGate": "Reference implemented and independently reviewed; native observer, same-tick ordering, geometry, actor packing and gameplay pending. No production content approval.",
+    "referenceApproval": {
+      "status": "implemented and independently reviewed",
+      "implementationCommit": "39a9beda79fd95c7f3f14e2702d095d68b7e212b",
+      "formalReviewMerge": "4248102f523d5edd0554e59bc11f15ed2cf79199",
+      "implementer": "gpt-6-luna",
+      "reviewer": "gpt-6.1-sol",
+      "nativeStatus": "unimplemented",
+      "gameVerified": false
+    }
+  },
   "artDirection": {
     "style": "Late Roman Thracian rolling country and a fragmented withdrawal, with ordinary people as well as military support",
     "historicalControls": "Modern DSM only as regional relief proxy; no ancient village, medieval bridge, modern road grid, Selimiye mosque, Valens cottage or religious caricature. No automatic blue-water mask. Exact military proxies and terrain phases need approval.",

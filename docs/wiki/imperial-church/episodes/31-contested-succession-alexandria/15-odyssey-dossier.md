@@ -2841,6 +2841,33 @@ ES: Su viaje opcional no cumple ninguno de los mínimos principales de tres sobr
       "status": "reference model implemented; native implementation pending"
     }
   ],
+  "presencePlan": {
+    "capabilityId": "live-entity-presence",
+    "proposalId": "i00005",
+    "implementationStatus": "unimplemented",
+    "evaluation": "current state before terminal latch, not historical arrivals",
+    "bindings": [
+      {
+        "objective": "o3",
+        "requirement": "req-2"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-3"
+      }
+    ],
+    "scope": "Two distinct final live quorums, any3of4central originals west and any3of4northeastern originals southeast; no frozen members or continuous residence. Historical provision receipts do not prove present custody.",
+    "nativeGate": "Reference independently reviewed; native observation, route safety, actor packing and actual gameplay pending.",
+    "referenceApproval": {
+      "status": "implemented and independently reviewed",
+      "implementationMerge": "983ef905ac0957b4a0b303e28b340abb8ff24056",
+      "formalReviewMerge": "d793ae4652e64df87afd5015ed24fbfaa31ad707",
+      "reviewer": "gpt-6-luna",
+      "technicalReevaluation": "gpt-6.1-sol",
+      "nativeStatus": "unimplemented",
+      "gameVerified": false
+    }
+  },
   "artDirection": {
     "style": "Late Roman Alexandrian ordinary households and the anxiety of a disputed succession",
     "historicalControls": "No certified prison, episcopal throne, church interior, Rome-bound harbor, ethnic caricature or religion-specific enemy physique. Early Roman street/domestic references require later-phase review. The empty chair is an invented clerical-life image.",

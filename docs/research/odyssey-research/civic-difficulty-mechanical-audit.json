@@ -8,7 +8,7 @@
   "sourceSha256": {
     "docs/design/odyssey-policy.json": "3f78d4e64415982016db2f7feb14b03b0e0db3d5ddeb77ee51b389a0b397e42a",
     "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
-    "docs/design/odysseys/imperial-church.json": "b0af53ba3d75818cd11d079751945e9826cd88339f184fcb08e4effc8f0f3b68",
+    "docs/design/odysseys/imperial-church.json": "163da74d001d0f245c21e33aa0161fe049c1e99529b4e2953b09dd7aa0791293",
     "docs/design/odysseys/jewish-tradition.json": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
     "docs/design/odysseys/church-of-rome.json": "5fa7772ca5b33e25dbc8267007816acb088e48c28f82aa286dff26d62eedc1a4",
     "docs/design/odysseys/new-rome.json": "99da4a9277885cf4d87bd0b3a798a236a698542d4b4f078a768993611b85c7da",
@@ -4925,6 +4925,7 @@
         "explicitStructuredDeadlinePresent": false,
         "deadlineFields": [],
         "otherMainPredicateKinds": [
+          "checkpoint-entity-presence",
           "current-entity-presence",
           "entity-state",
           "resource-transaction"
