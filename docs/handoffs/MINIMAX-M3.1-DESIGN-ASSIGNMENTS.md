@@ -7,7 +7,7 @@ Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odysse
 | Campaña / título inglés | Propuesta oficial | Episodios | Slices |
 |---|---|---:|---|
 | faith-origins / Embers of the Covenant | [f00004](../delendai/proposals/blocked/f00004-autoria-designada-embers-of-the-covenant.md) | 30 | S1 conformidad; S2 metadatos; 30 slices individuales; S7 promoción |
-| imperial-church / The Eagle and the Cross | [f00003](../delendai/proposals/blocked/f00003-campana-futura-iglesia-imperial-312-337.md) | 34 | S1 conformidad; S2 metadatos; 34 slices individuales; S6 promoción |
+| imperial-church / The Eagle and the Cross | [f00003](../delendai/proposals/blocked/f00003-autoria-designada-the-eagle-and-the-cross.md) | 34 | S1 conformidad; S2 metadatos; 34 slices individuales; S6 promoción |
 | jewish-tradition / Keepers of the Unbroken Word | [f00005](../delendai/proposals/blocked/f00005-autoria-designada-keepers-of-the-unbroken-word.md) | 30 | S1 conformidad; S2 metadatos; 30 slices individuales; S7 promoción |
 | church-of-rome / The Keys of the Eternal City | [f00006](../delendai/proposals/blocked/f00006-autoria-designada-the-keys-of-the-eternal-city.md) | 32 | S1 conformidad; S2 metadatos; 32 slices individuales; S7 promoción |
 | new-rome / Beyond the Golden Gate | [f00007](../delendai/proposals/blocked/f00007-autoria-designada-beyond-the-golden-gate.md) | 32 | S1 conformidad; S2 metadatos; 32 slices individuales; S8 promoción |
