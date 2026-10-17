@@ -133,6 +133,11 @@ def verify(root=ROOT, catalogue=None):
     errors.extend(audit_assignments(root, odysseys, assignment_document))
     audit_narrators = runpy.run_path(str(ROOT / 'tools/design/odyssey_narrators.validator.py'))['audit_narrators']
     errors.extend(audit_narrators(read('docs/design/voices/odyssey-narrators.json'), odysseys))
+    civic_audit = runpy.run_path(str(ROOT / 'tools/design/civic_difficulty_audit.script.py'))
+    try:
+        civic_audit['check_report'](read(civic_audit['REPORT']), civic_audit['build_audit'](root))
+    except (ValueError, KeyError, TypeError) as error:
+        errors.append(f'Civic difficulty audit: {error}')
     expanded_counts = {
         'expandedSelectedEpisodes': sum(len(c['episodeSelection']) for c in odysseys),
         'expandedDraftDossiers': sum(len(c.get('episodes', [])) for c in odysseys),

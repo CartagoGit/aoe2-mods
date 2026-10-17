@@ -18,12 +18,12 @@ LEVELS = ("easy", "standard", "hard")
 RESOURCES = {"food", "wood", "gold", "stone"}
 
 
-def read(path):
-    return json.loads((ROOT / path).read_text(encoding="utf-8"))
+def read(path, root=ROOT):
+    return json.loads((root / path).read_text(encoding="utf-8"))
 
 
-def fingerprints(paths):
-    return {path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+def fingerprints(paths, root=ROOT):
+    return {path: hashlib.sha256((root / path).read_bytes()).hexdigest()
             for path in paths}
 
 
@@ -147,14 +147,14 @@ def episode_audit(campaign, episode):
     }
 
 
-def build_audit():
-    policy = read(POLICY)
+def build_audit(root=ROOT):
+    policy = read(POLICY, root)
     paths = [f"docs/design/odysseys/{item['id']}.json" for item in policy["campaigns"]]
-    before = fingerprints([POLICY, *paths])
-    campaigns = [read(path) for path in paths]
+    before = fingerprints([POLICY, *paths], root)
+    campaigns = [read(path, root) for path in paths]
     records = [episode_audit(campaign["campaignId"], episode)
                for campaign in campaigns for episode in campaign["episodes"]]
-    after = fingerprints([POLICY, *paths])
+    after = fingerprints([POLICY, *paths], root)
     if before != after:
         raise ValueError("Sources changed during audit; rerun on a stable snapshot")
     risks = [record for record in records if record["staticRiskCandidate"]]
@@ -188,6 +188,11 @@ def build_audit():
     }
 
 
+def check_report(report, audit):
+    if report.get("schemaVersion") != 2 or any(report.get(key) != value for key, value in audit.items()):
+        raise ValueError("Stale mechanical audit; regenerate with --write --author REAL_ID --date YYYY-MM-DD")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write", action="store_true", help="Replace the current report; default checks only")
@@ -205,8 +210,7 @@ def main():
         (ROOT / REPORT).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     else:
         report = read(REPORT)
-        if report.get("schemaVersion") != 2 or any(report.get(key) != value for key, value in audit.items()):
-            raise ValueError("Stale mechanical audit; regenerate with --write --author REAL_ID --date YYYY-MM-DD")
+        check_report(report, audit)
     print(json.dumps(audit["counts"], ensure_ascii=False))
 
 

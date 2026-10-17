@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from geography import clip_segment, tile_point
 from verify import ROOT, verify
+from test_civic_difficulty_audit import CivicDifficultyAuditTests
 
 
 class DesignAcceptanceTests(unittest.TestCase):

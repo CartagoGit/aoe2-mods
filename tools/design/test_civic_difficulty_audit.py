@@ -49,6 +49,14 @@ class CivicDifficultyAuditTests(unittest.TestCase):
         with self.assertRaises(KeyError):
             audit["episode_audit"]("example", missing_budget)
 
+    def test_changed_source_hash_or_metric_requires_report_regeneration(self):
+        expected = {"sourceSha256": {"example.json": "new"}, "counts": {"dossierCount": 2}}
+        for changed in ("sourceSha256", "counts"):
+            report = {"schemaVersion": 2, **copy.deepcopy(expected)}
+            report[changed] = {}
+            with self.subTest(changed=changed), self.assertRaisesRegex(ValueError, "Stale mechanical audit"):
+                audit["check_report"](report, expected)
+
 
 if __name__ == "__main__":
     unittest.main()
