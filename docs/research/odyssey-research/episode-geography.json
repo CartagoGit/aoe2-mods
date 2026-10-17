@@ -838,6 +838,57 @@
       "waterControlStatus": "Modern river data is a coarse control. Exact379Sava banks, minor channels, oxbows, aits, crossing and flood extent require dated archaeology and terrain review. No compulsory river crossing is assigned.",
       "anachronisms": "No modern roof/walkways, regulated river, later medieval churches or later burnt horizons as379scenery. Palace and circus remains do not certify an accession platform or room. Floor/mosaic phase and surrounding street parcels need individual dating.",
       "approval": "architect regional research candidate; no full episode map, exact venue, DEM/ancient landmask or native navigation approved"
+    },
+    {
+      "id": "adrianople378",
+      "name": "Hadrianopolis378regional withdrawal sector, northeast of modern Edirne",
+      "bbox": [
+        26.6,
+        41.7,
+        26.76,
+        41.87
+      ],
+      "coordinateStatus": "Real regional frame, fictional gameplay grounds. Not an exact battle-site proposal or378landmask.",
+      "representativePoint": [
+        26.5556,
+        41.6769
+      ],
+      "representativePointUsage": "Modern city orientation off-map southwest; no ancient gate, city admission or historical retreat-road claim.",
+      "terrain": "Rolling Thracian terrain. Modern DSM samples show northern/eastern uplands, lower central/west/southwest corridors and a rising southern shoulder. Preserve qualified relative relief; surface features are modern and require phase filtering.",
+      "waterControlStatus": "No certified378minor streams, dry reception surface, channel banks or crossing footprints. Blue DSM colors are low elevation, not mapped water. No compulsory Hebrus/Tundzha/Arda crossing.",
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "No selected ancient local hydrography. Do not reuse324ferry line.",
+        "renderAs": "river-line"
+      },
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+          "locator": "Ammianus31.12.3/10–17,31.13.1–19;31.15.1–4as aftermath control",
+          "consulted": "2026-10-17"
+        },
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Ammian/31%2A.html",
+          "locator": "31.12.3/10–11",
+          "consulted": "2026-10-17"
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/source/378adrianople.asp",
+          "locator": "Short Yonge1862selection, march clause",
+          "consulted": "2026-10-17"
+        },
+        {
+          "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+          "locator": "Modern DSM product; local crop/source hash and licence recorded in edirne-modern-dsm-processing.json",
+          "consulted": "2026-10-17"
+        }
+      ],
+      "referenceAssets": [
+        "edirne-modern-dsm-regional-crop",
+        "edirne-modern-dsm-regional-preview"
+      ],
+      "anachronisms": "No modern Edirne mosque, Ottoman/medieval bridge, modern road/field pattern, authenticated emperor cottage, circular camp or ancient marsh deduced from a modern surface raster.",
+      "approval": "Architect regional design-only proposal; exact dated archaeology/DTM-filtering/ancient hydrology/footprints/pathfinding and independent history/native/game approval pending."
     }
   ]
 }

@@ -87,3 +87,10 @@ La selección vigente tiene278episodios y61dossiers redactados, con2.511pantalla
 - [Adrianópolis378 y DSM](adrianople378-geography-and-dem-candidates.json): hora octava, no radio de ocho millas; se corrigió también la transcripción latina del recolector a `octava tandem hora`. Posición anterior a quince millas tampoco localiza la batalla.
 - [Procesamiento del relieve moderno](edirne-modern-dsm-processing.json), [licencia y avisos](geography/edirne-modern-dsm-license.md) y [vista local](images/edirne-modern-dsm-regional-preview.png): recorte lossless de4.1MB más vista de1.2MB. No es terreno desnudo, hidrología antigua ni mapa de batalla certificado.
 - [Auditoría mecánica actual](civic-difficulty-mechanical-audit.json) y [snapshot previo de60](civic-difficulty-mechanical-audit-2026-10-15.json):54candidatos de riesgo y siete con hostiles; no medidas de diversión ni balance.
+
+
+### Adrianópolis378: ampliación del mismo17de octubre
+
+El corte actual pasa a62dossiers,2.553pantallas y384secundarios;216selecciones siguen sin dossier. Hay36recursos adicionales locales, sin nuevos binarios en esta ampliación. [Fuente histórica](imperial32-source-audit.json), [relieve y decisiones](adrianople378-relief-design.md), [muestras completas](adrianople378-relief-sampling.json) y [marco de control](imperial32-map-control-audit.json) corresponden al ID32/orden30. Se verificaron1414valores del DSM y sus índices contra el TIFF integrado, con4335aserciones de comprobación de datos; no son pruebas de motor. La etiqueta equivocada de identidad/puntos del informe preliminar deLuna se conserva como corrección de procedencia, no como autoría del usuario.
+
+La [auditoría cívica actual](civic-difficulty-mechanical-audit.json) mantiene54candidatos estáticos y pasa a ocho con hostiles. El [corte previo de61](civic-difficulty-mechanical-audit-61-2026-10-17.json) conserva sus hashes y métricas reales. Todas las aprobaciones históricas/nativas/jugadas siguen pendientes.

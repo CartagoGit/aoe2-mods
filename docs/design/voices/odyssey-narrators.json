@@ -1189,7 +1189,7 @@
           "order": 30,
           "actId": "act-5",
           "historicalDate": "378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion",
-          "geographyId": "adrianople",
+          "geographyId": "adrianople378",
           "mode": "received-report",
           "access": {
             "en": "Received source-qualified accounts. Fictional ordinary clerical experience supplies a personal reaction, never historical eyewitness access; exact placement must be authored in the full dossier.",
@@ -1197,7 +1197,8 @@
           },
           "historicalEyewitnessClaimAllowed": false,
           "biographyIsEvidence": false,
-          "completeDossierPlacementRequired": true
+          "completeDossierPlacementRequired": true,
+          "completeDossierPlacement": "Marcus44in fictional Constantinopolitan clerical life receives reports. Neighbor’s boy, pebbles and cloth are invented ordinary biography. No battle, fatal-wound, cottage, corpse, retreat-route or siege eyewitness. Local play is explicitly imagined and the later narrative source is not a378dispatch he has read."
         },
         {
           "scenarioId": "33-accession-and-reassembly-sirmium",

@@ -46,7 +46,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "34 selections with bounded source consultations; three full dossiers and all independent historical approvals pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; two full dossiers and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 31
+    "authoredDossierCount": 32
   },
   "continuity": {
     "recommendedPrevious": [
@@ -252,7 +252,7 @@ Historical year band: [361, 381]. Reversiones de política, sucesión, derrota y
 | 27 / 27-return-and-departure-records-alexandria | The Return That Did Not Last / El regreso que no duró | 362–363 CE; exile policies focus, Persian campaign reported off-map | alexandria | return-and-departure-records |
 | 28 / 30-policy-reversal-alexandria | Beyond the Quiet River / Más allá del río silencioso | 365–366 CE; source calendar and consular formulas qualified | alexandria | policy-reversal-and-discreet-support |
 | 29 / 31-contested-succession-alexandria | The Empty Chair / La silla vacía | 373 CE conventional; Socrates’ consular synchronism conflicts | alexandria | contested-succession-and-local-continuity |
-| 30 / 32-defeat-and-withdrawal-adrianople | Where the Eagles Fell / Donde cayeron las águilas | 378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion | adrianople | finite-post-defeat-withdrawal |
+| 30 / 32-defeat-and-withdrawal-adrianople | Where the Eagles Fell / Donde cayeron las águilas | 378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion | adrianople378 | finite-post-defeat-withdrawal |
 | 31 / 33-accession-and-reassembly-sirmium | The Burden of the Purple / El peso de la púrpura | 379 CE; exact accession day requires chronology comparison | sirmium | post-crisis-reassembly-and-accession |
 | 32 / 28-law-and-local-reception-thessalonica | The Weight of an Imperial Word / El peso de una palabra imperial | 27 February 380 CE | thessalonica | law-and-local-reception |
 | 33 / 34-church-transfer-constantinople | The Doors of New Rome / Las puertas de Nueva Roma | November380 CE; arrival and church transfer are distinct source dates | constantinople | changed-urban-access-and-local-care |
@@ -1338,17 +1338,31 @@ No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
 
-Architect-corrected claim EN: Ammianus describes a Roman defeat near Hadrianopolis and preserves competing accounts of Valens’ death. Local survivor gameplay must not reverse that outcome.
+[Authored episode dossier](episodes/32-defeat-and-withdrawal-adrianople/15-odyssey-dossier.md) — independent approval pending
 
-ES: Amiano describe una derrota romana cerca de Adrianópolis y conserva relatos contrapuestos de la muerte de Valente. El juego local de supervivientes no puede invertir ese desenlace.
+Architect-corrected claim EN: The Roman army was defeated near Hadrianopolis in 378 and Valens died. Ammianus preserves conflicting death accounts and describes scattered survivors. Their local escape does not reverse the defeat, and survival did not guarantee admission to the city.
+
+ES: El ejército romano fue derrotado cerca de Adrianópolis en 378 y Valente murió. Amiano conserva versiones distintas de su muerte y describe supervivientes dispersos. Su fuga local no invierte la derrota, y sobrevivir no garantizaba entrar en la ciudad.
 
 [Consulted source](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html): Ammianus XXXI.11–13, especially12.10 and13.12–17
 
 Limit: No exact battlefield or wagon-circle coordinate, emperor rescue, verified fatal-wound witness, religious cause or unlimited enemy production follows from the passage.
 
 Status: consulted as bounded source collection; full dossier pending
+
+[Additional consulted passage](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html): Ammianus31.12.3/10–17,31.13.1–19;31.15.1–4as aftermath control
+
+Limit: Retrospective literary military narrative. Motives, ethnic stereotypes and broad casualty ratios belong to the author’s account, not measured tactical data or a license to portray religious guilt. No exact modern battlefield, circle, cottage, formation or universal route.
+
+[Additional consulted passage](https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Ammian/31%2A.html): 31.12.3/10–11
+
+Limit: The eighth hour is not an eight-mile radius; the earlier fifteen-mile position is not the final battle coordinate. Exact local-time/Gregorian conversion not performed.
+
+[Additional consulted passage](https://sourcebooks.web.fordham.edu/source/378adrianople.asp): Short Yonge1862selection, march clause
+
+Limit: A translation discrepancy, not a measured route. Do not infer an author’s dependence on Yonge from the same number alone.
 
 ### 31. The Burden of the Purple
 
