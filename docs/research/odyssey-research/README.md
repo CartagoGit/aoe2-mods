@@ -87,3 +87,23 @@ La selección vigente tiene278episodios y61dossiers redactados, con2.511pantalla
 - [Adrianópolis378 y DSM](adrianople378-geography-and-dem-candidates.json): hora octava, no radio de ocho millas; se corrigió también la transcripción latina del recolector a `octava tandem hora`. Posición anterior a quince millas tampoco localiza la batalla.
 - [Procesamiento del relieve moderno](edirne-modern-dsm-processing.json), [licencia y avisos](geography/edirne-modern-dsm-license.md) y [vista local](images/edirne-modern-dsm-regional-preview.png): recorte lossless de4.1MB más vista de1.2MB. No es terreno desnudo, hidrología antigua ni mapa de batalla certificado.
 - [Auditoría mecánica actual](civic-difficulty-mechanical-audit.json) y [snapshot previo de60](civic-difficulty-mechanical-audit-2026-10-15.json):54candidatos de riesgo y siete con hostiles; no medidas de diversión ni balance.
+
+
+### Adrianópolis378: ampliación del mismo17de octubre
+
+El corte actual pasa a62dossiers,2.553pantallas y384secundarios;216selecciones siguen sin dossier. Hay36recursos adicionales locales, sin nuevos binarios en esta ampliación. [Fuente histórica](imperial32-source-audit.json), [relieve y decisiones](adrianople378-relief-design.md), [muestras completas](adrianople378-relief-sampling.json) y [marco de control](imperial32-map-control-audit.json) corresponden al ID32/orden30. Se verificaron1414valores del DSM y sus índices contra el TIFF integrado, con4335aserciones de comprobación de datos; no son pruebas de motor. La etiqueta equivocada de identidad/puntos del informe preliminar deLuna se conserva como corrección de procedencia, no como autoría del usuario.
+
+La [auditoría cívica actual](civic-difficulty-mechanical-audit.json) mantiene54candidatos estáticos y pasa a ocho con hostiles. El [corte previo de61](civic-difficulty-mechanical-audit-61-2026-10-17.json) conserva sus hashes y métricas reales. Todas las aprobaciones históricas/nativas/jugadas siguen pendientes.
+
+
+### Controles de fuentes para los dos dossiers imperiales restantes
+
+[Marco de Sirmio379](imperial33-source-audit.json): lectura directa seleccionada deSócrates,Sozomeno,Marcelino y síntesis deDavidWoods;16de enero en la traducción deSócrates frente aXIIIIkalendasFebruarias/19de enero enMarcelino. El comentario críticoKFHist no pudo recuperarse (418/403), por lo que sus fragmentos de búsqueda no se presentan como lectura completa. [Transferencias deConstantinopla380](imperial34-source-audit.json): llegada24/transferencia26de noviembre enSócrates, frente al mes de diciembre enMarcelino. Ninguno de estos dos registros es un dossier completo, una reconstrucción urbana aprobada o permiso de materialización; el recuento sigue62.
+
+### Reproducción de la auditoría mecánica
+
+La auditoría actual se genera con `python3 tools/design/civic_difficulty_audit.script.py --write --author REAL_ID --date YYYY-MM-DD` y se comprueba ejecutando el mismo script sin argumentos. Lee las nueve campañas de la política y solamente sus dossiers `episodes[]`; conserva hashes y declara cobertura cero donde todavía no hay dossier. El [corte de62del17deoctubre](civic-difficulty-mechanical-audit-62-2026-10-17.json) conserva la recopilación de Luna y su seguimiento original. La nueva ejecución se atribuye al agente que realmente la ejecuta. La [aceptación de jugabilidad](../../design/civic-playability-acceptance.md) sigue pendiente; este informe no mide diversión ni acredita dificultad.
+
+El gate de diseño rechaza hashes o métricas obsoletos de esta auditoría. Las cinco regresiones específicas forman parte de `tools/design/test_design.py`; notas narrativas, modo del reloj y objetos de límites nulos no cuentan como presión temporal.
+
+Las recopilaciones de lectura de Luna del18deoctubre quedan en [Sirmium379](sirmium379-geography-collection.md) y [Gregorio/Constantinopla380–381](constantinople380-gregory-collection.md). La primera no sitúa una sala de accesión ni un muelle antiguo. La segunda distingue el discurso de despedida de381 de los relatos posteriores sobre380 y no autentica un diálogo imperial ni una parcela de iglesia. Son investigación atribuida y acotada para los dos dossiers todavía pendientes, sin aprobación histórica independiente.

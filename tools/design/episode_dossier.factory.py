@@ -541,11 +541,11 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
         "artDirection": authored["artDirection"],
         "failureRecovery": authored["failureRecovery"],
         "requiredCapabilities": authored["requiredCapabilities"],
-        **(
-            {"presencePlan": copy.deepcopy(authored["presencePlan"])}
-            if authored.get("presencePlan")
-            else {}
-        ),
+        **{
+            key: copy.deepcopy(authored[key])
+            for key in ("presencePlan", "checkpointPresencePlan")
+            if authored.get(key)
+        },
         "qa": {
             "staticStatus": "checked separately by dossier validator",
             "nativeStatus": "pending",

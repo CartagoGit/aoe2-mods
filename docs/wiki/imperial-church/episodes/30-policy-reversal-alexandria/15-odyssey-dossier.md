@@ -2140,6 +2140,33 @@ ES: Distingue el texto de la fuente de una glosa geográfica posterior; ninguno 
       "status": "reference implemented; native observers and real navigation pending"
     }
   ],
+  "presencePlan": {
+    "capabilityId": "live-entity-presence",
+    "proposalId": "i00005",
+    "implementationStatus": "unimplemented",
+    "evaluation": "current state before terminal latch, not historical arrivals",
+    "bindings": [
+      {
+        "objective": "o2",
+        "requirement": "req-1"
+      },
+      {
+        "objective": "o3",
+        "requirement": "req-4"
+      }
+    ],
+    "scope": "Any four of six original volunteers, individually assigned northwest1–3/southeast4–6. Reevaluate at both objective completions; no fixed first-four cohort or continuous residence claim.",
+    "nativeGate": "Reference implementation is independently reviewed; native observations, actor packing and real game tests remain required. Never substitute arrived flags.",
+    "referenceApproval": {
+      "status": "implemented and independently reviewed",
+      "implementationMerge": "983ef905ac0957b4a0b303e28b340abb8ff24056",
+      "formalReviewMerge": "d793ae4652e64df87afd5015ed24fbfaa31ad707",
+      "reviewer": "gpt-6-luna",
+      "technicalReevaluation": "gpt-6.1-sol",
+      "nativeStatus": "unimplemented",
+      "gameVerified": false
+    }
+  },
   "artDirection": {
     "style": "Ordinary late Roman Alexandrian courtyard work and a quiet neighborhood network",
     "historicalControls": "Partial archaeological domestic references with phase limits. No located New River, church apartment, villa, bishop rescue route or literal fourth-century version of a modern excavation. No later lecture-hall cluster assumed contemporary.",

@@ -208,6 +208,8 @@ def wiki(campaign, episode):
                     "stateMachine",
                     "failureRecovery",
                     "requiredCapabilities",
+                    "presencePlan",
+                    "checkpointPresencePlan",
                     "transportPlan",
                     "artDirection",
                     "qa",

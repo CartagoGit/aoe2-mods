@@ -1,0 +1,64 @@
+{
+  "episodeId": "33-accession-and-reassembly-sirmium",
+  "displayOrder": 31,
+  "title": {"en": "The Burden of the Purple", "es-ES": "El peso de la púrpura"},
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "status": "bounded architect source research; full gameplay/world/screen dossier not yet authored",
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/26015.htm",
+      "locator": "Socrates HE V.2–3; V.6–7 as later-event control",
+      "actuallyRead": "Root read the complete selected accession and religious-landscape chapters, plus selected later-arrival/transfer passages. NPNF translation, not Greek critical text or manuscripts.",
+      "supported": "Gratian associates Theodosius at Sirmium under Ausonius/Olybrius, with war responsibility; V.2 literally gives16January. V.3 describes multiple competing episcopal positions rather than immediate uniform settlement.",
+      "limits": "Later Nicene author. Universal praise, confession labels and motives are attributed, not an objective competence rating or an independently proved private council. Later episcopal outcomes in a survey paragraph are not all instantaneous379changes. V.6arrival24November and V.7transfer26November are separate from accession."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26027.htm",
+      "locator": "Sozomen HE VII.1–2; VII.4–5 as scope control",
+      "actuallyRead": "Root read selected complete initial chapters and later baptism/law/transfer paragraphs. No Peter letters, decrees, Greek apparatus or author dependency reconstruction.",
+      "supported": "Theodosius is associated at Sirmich/Sirmium amid demands in Illyria/Thrace and Gaul. The religious survey describes unsettled relations.",
+      "limits": "Nicene retrospective framing, no exact accession day in this selected passage and no established independence from Socrates. Law, recall, local reception and later possession of churches cannot be compressed into one playable coronation. Do not turn its generalizations into a complete geographical census."
+    },
+    {
+      "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+      "locator": "Marcellinus Comes Chronicon, preface and379.1–2;380entry as chronology control",
+      "actuallyRead": "Root directly read the Latin selected entries in the page labelled Mommsen Chronica MinoraII1894. No facsimile or critical apparatus freshly inspected.",
+      "supported": "379.1 names Gratian, Sirmium and Ausonius/Olybrius and givesXIIIIkalendasFebruarias, the conventional Roman inclusive date19January. This is a different transmitted day from the Socrates translation’s16January.",
+      "limits": "Sixth-century chronicle with favorable Catholic/Theodosian evaluation; not a379eyewitness. Army victories in379.2 lack local tactical detail and are not a reason to invent a Sirmium battle. Its380December church-restoration month differs from Socrates’November report; preserve the distinction for episode34. Italica origin in the entry is not an approved birthplace scene."
+    },
+    {
+      "url": "https://www.roman-emperors.sites.luc.edu/theo1.htm",
+      "locator": "David Woods, TheodosiusI, selected Origin and Early Career and initial Foreign Policy paragraphs; author/date/footer checked",
+      "actuallyRead": "Root read selected scholarly encyclopedia sections. Page identifies David Woods, University College Cork, copyright1998, updated2February1999. Not the full cited bibliography or a current consensus survey.",
+      "supported": "Modern scholarly synthesis adopts19January379 and separates accession at Sirmium from a subsequent Thessalonican military base and debated administrative transfers.",
+      "limits": "Specific reconstructive arguments about retirement, the father’s death, motives, military seniority or exact transfer dates are the author’s arguments, not imported as established facts. A modern summary is not another ancient witness or a surveyed379map."
+    },
+    {
+      "url": "https://ai.ac.rs/en/7729/",
+      "locator": "Institute of Archaeology, Sirmium project, selected site/urban areas/communication/palatial remains paragraphs",
+      "actuallyRead": "Root freshly read selected institutional site description: partial excavation,66ha core, Sava, surrounding marshes, Čikas and buildings. Bibliography listed but individual cited monographs not read.",
+      "supported": "Sirmium under modern Sremska Mitrovica has a terrace/river and wet-surroundings setting; excavated buildings and their phases constrain scenery.",
+      "limits": "No exact379proclamation room, urban dry-ground mask, intact street footprint or seasonal inundation. Modern site images are archaeological context, not accession documentation."
+    }
+  ],
+  "chronologyDecision": {
+    "episodeFrame": "379CE only until the independent chronology review decides whether an exact day belongs in the final text.",
+    "attestedRepresentations": ["Socrates NPNF V.2:16January", "Marcellinus379.1:XIIIIkalendasFebruarias, conventionally19January", "DavidWoods synthesis:19January379"],
+    "notPerformed": "No Gregorian conversion, manuscript collation, critical emendation or proof that the transmitted Socrates day is the original reading. Do not silently replace source words."
+  },
+  "accessLimit": {
+    "kfhist": "Official KFHist G1/G2web/PDF references were discovered. Direct web retrieval failed and curl returned418; the critical text/commentary was not freshly read. Search excerpts are discovery only, not a substitute for complete passage reading.",
+    "notConsulted": ["KFHist critical commentary/fragments31and33", "Original Marcellinus manuscript or Mommsen facsimile apparatus", "Full Consularia Constantinopolitana", "Primary Themistius speeches and Zosimus for379campaigns"]
+  },
+  "architectureBoundaries": [
+    "Accession remains fixed narrated history, not a purchase, doctrine vote, playable crown assembly or reward for local delivery.",
+    "No invented siege, invasion of Sirmium, uniform recall reception, religious enemy roster or compulsory baptism follows from these passages.",
+    "A local licensed reassembly may be designed later, but tasks, unit numbers, payments, routes and difficulty are not yet assigned. No placeholder copier chain counts as approved gameplay.",
+    "Use separate real Sirmium regional profile and dated terrain checks. Two modern archaeological reference photos already have local manifest entries; neither identifies the proclamation venue.",
+    "Marcus is about45in his fictional Constantinopolitan clerical period, receiving accounts; no automatic Sirmium audience or emperor’s private discussion witness. Exact fictional personal scene remains to be authored.",
+    "Next narrative order is the existing Thessalonica380law episode, display32, before November380transfer and final381council. No campaign-completion flag at this intermediate episode."
+  ],
+  "historicalApproval": false,
+  "nativeOrGameApproval": false
+}
