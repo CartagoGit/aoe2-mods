@@ -112,9 +112,9 @@ ES: Aprende a conservar disenso y recepción cambiante mientras reversiones, mue
       "classification": "author-created personal biography, never historical witness evidence"
     },
     {
-      "yearBand": "c.360–370",
+      "yearBand": "c.360–375",
       "place": "provincial eastern offices",
-      "knowledgeAccess": "fictional clerical work; changing orders and reported religious disputes",
+      "knowledgeAccess": "Fictional provincial clerical work receiving changing orders and reports, including Alexandria373; no episcopal/prison eyewitness or certified dispatch route.",
       "classification": "author-created personal biography, never historical witness evidence"
     },
     {

@@ -607,6 +607,44 @@
       "attributionRequired": true,
       "shareAlikeRequired": true,
       "productionApproved": false
+    },
+    {
+      "sourcePage": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E026_00_DEM/Copernicus_DSM_COG_10_N41_00_E026_00_DEM.tif",
+      "author": "DLR e.V.; Airbus Defence and Space GmbH; provided under Copernicus by EU and ESA. Project crop/visualization by gpt-6.",
+      "license": "Copernicus WorldDEM-30free-and-open licence; rights of reproduction, distribution and modification, with article6source/modified-data notice, liability and downstream obligations. Not public domain or CC.",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "licenseNotice": "docs/research/odyssey-research/geography/edirne-modern-dsm-license.md",
+      "consulted": "2026-10-17",
+      "attributionRequired": true,
+      "shareAlikeRequired": false,
+      "productionApproved": false,
+      "usage": "Modern regional topographic research near Edirne/Adrianople. Does not identify378battlefield, ancient roads, vegetation, rivers, coast or military positions.",
+      "anachronismsAndLimits": "DSM includes modern buildings, infrastructure and vegetation plus edited water surfaces. No bare-earth DTM or378terrain claim. No endorsement by Copernicus, EU, ESA or providers.",
+      "id": "edirne-modern-dsm-regional-crop",
+      "path": "docs/research/odyssey-research/geography/edirne-modern-dsm-regional-crop.tif",
+      "bytes": 4070054,
+      "sha256": "7495100ff4e45717006daaaae3996dc0f91d06df524a656405703ff51457546e",
+      "modifications": "Integer pixel-aligned rectangular crop and lossless DEFLATE re-encoding; no resampling, elevation edits, fill or historical features added. Every sample bitwise/equality checked against source window. PixelIsPoint interpretation and source-window sample bytes verified after writing."
+    },
+    {
+      "sourcePage": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E026_00_DEM/Copernicus_DSM_COG_10_N41_00_E026_00_DEM.tif",
+      "author": "DLR e.V.; Airbus Defence and Space GmbH; provided under Copernicus by EU and ESA. Project crop/visualization by gpt-6.",
+      "license": "Copernicus WorldDEM-30free-and-open licence; rights of reproduction, distribution and modification, with article6source/modified-data notice, liability and downstream obligations. Not public domain or CC.",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "licenseNotice": "docs/research/odyssey-research/geography/edirne-modern-dsm-license.md",
+      "consulted": "2026-10-17",
+      "attributionRequired": true,
+      "shareAlikeRequired": false,
+      "productionApproved": false,
+      "usage": "Modern regional topographic research near Edirne/Adrianople. Does not identify378battlefield, ancient roads, vegetation, rivers, coast or military positions.",
+      "anachronismsAndLimits": "DSM includes modern buildings, infrastructure and vegetation plus edited water surfaces. No bare-earth DTM or378terrain claim. No endorsement by Copernicus, EU, ESA or providers.",
+      "id": "edirne-modern-dsm-regional-preview",
+      "path": "docs/research/odyssey-research/images/edirne-modern-dsm-regional-preview.png",
+      "bytes": 1193762,
+      "sha256": "1d7ae44d05f26eeee30db5ef29711111ee37272fca8bd5f9062184f484538312",
+      "modifications": "Colorized modern surface-height visualization from the lossless crop, north up; percentile display upper limit only, no sample edits. Research labels and axes added; not a historical reconstruction."
     }
   ]
 }

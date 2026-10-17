@@ -2,7 +2,7 @@
 
 Owner: architect, d00002/S2–S10 for the relevant odyssey, consolidated by S11. This is a design and playtest requirement, not a new runtime capability or a passed game test. MiniMax receives only the resulting approved episode instructions. It must not choose new deadlines, enemies, resource costs or map geometry to solve an open design issue.
 
-The [60-dossier mechanical snapshot](../research/odyssey-research/civic-difficulty-mechanical-audit.json) records source hashes and a consistent before/after read. It finds 54 episodes with no structured hostile/deadline pressure and the same accessible resource envelope across difficulty levels. That filter identifies work to inspect. It does not prove that a logistics puzzle lacks decisions, nor that a battle is interesting. No dossier has passed this practical acceptance merely because it has enough screens, a large rectangle or three worker counts.
+The [61-dossier mechanical snapshot](../research/odyssey-research/civic-difficulty-mechanical-audit.json) records source hashes and a consistent before/after read. It finds 54 episodes with no structured hostile/deadline pressure and the same accessible resource envelope across difficulty levels. That filter identifies work to inspect. It does not prove that a logistics puzzle lacks decisions, nor that a battle is interesting. No dossier has passed this practical acceptance merely because it has enough screens, a large rectangle or three worker counts.
 
 ## Decisions required before mechanical handoff
 

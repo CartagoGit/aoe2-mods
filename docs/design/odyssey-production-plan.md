@@ -84,15 +84,15 @@ Las tres estrategias declaran los secundarios que aprovechan y su coste de oport
 
 ## Estado actual y puertas pendientes
 
-A 15 de octubre de 2026, la selección contiene **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. Hay **60 dossiers redactados**, **2.469 pantallas EN/es-ES** y **370 secundarios**; quedan **218 selecciones sin dossier** y no hay dossiers ampliados aprobados. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
+A 17 de octubre de 2026, la selección contiene **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. Hay **61 dossiers redactados**, **2.511 pantallas EN/es-ES** y **377 secundarios**; quedan **217 selecciones sin dossier** y no hay dossiers ampliados aprobados. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
 
 | Odisea | Dossiers / selección | Órdenes con dossier | Pendiente del arquitecto |
 |---|---:|---|---|
 | Embers of the Covenant | 30 / 30 | 1–30 | Revisión histórica/editorial, relieve y huellas, capacidades nativas, jugabilidad y dificultad |
-| The Eagle and the Cross | 30 / 34 | 1–28, 32, 34 | Dossiers de los órdenes 29–31 y 33; los mismos gates históricos, geográficos, nativos y de juego |
+| The Eagle and the Cross | 31 / 34 | 1–29, 32, 34 | Dossiers de los órdenes 30–31 y 33; los mismos gates históricos, geográficos, nativos y de juego |
 | Otras siete odiseas | 0 / 214 | Ninguno | Interpretación de fuentes recopiladas y diseño completo por episodio |
 
-Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 34 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
+Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 36 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
 
 ## Cobertura imperial y trabajo designado
 
@@ -100,13 +100,15 @@ La [enmienda](imperial-coverage-amendment.md) se integró oficialmente en `8a37f
 
 Los IDs nuevos 30/31/32/33/34 se presentan en los órdenes 28/29/30/31/33, slices S33/S34/S35/S36/S37. Los antiguos IDs 28/29 son ahora órdenes 32/34 y conservan S31/S32. Después de S30 se ejecuta S33→S34→S35→S36→S31→S37→S32; promoción S6 depende del último S32. El concilio381 sigue siendo el único final imperial. [Asignaciones](../handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) conserva la matriz de las nueve campañas.
 
-*Beyond the Quiet River*, orden28, añade una red local ficticia en Alejandría365–366: seis voluntarios originales, cualquier mínimo simultáneo de cuatro en sus puestos asignados y un recadero distinto con salida causal. Tres lotes tienen reparto2/1; los pagos suman380F240W. Siete secundarios se pueden omitir. La presencia se comprueba al completar o2 y o3; no se congela a los primeros cuatro ni se exige residencia continua. El New River y la villa no se localizan. La crónica, los meses históricos y la carta/regreso permanecen separados del trabajo jugable. Su revisión independiente está pendiente.
+*Beyond the Quiet River*, orden28, añade una red local ficticia en Alejandría365–366: seis voluntarios originales, cualquier mínimo simultáneo de cuatro en sus puestos asignados y un recadero distinto con salida causal. Tres lotes tienen reparto2/1; los pagos suman380F240W. Siete secundarios se pueden omitir. La presencia se comprueba al completar o2 y o3; no se congela a los primeros cuatro ni se exige residencia continua. El New River y la villa no se localizan. La crónica, los meses históricos y la carta/regreso permanecen separados del trabajo jugable. Su [revisión técnica independiente](../qa/campaign-design/imperial30-independent-review.md) no detecta P1/P2 en e90ae5f; historia, terreno y juego siguen pendientes.
 
-Los siguientes dossiers son la sucesión alejandrina convencionalmente fechada373 (con sincronismo contradictorio en Sócrates), la derrota de Adrianópolis378, la reorganización de Sirmio379 (día de acceso sin resolver) y las transferencias urbanas de noviembre380. Sirmio tiene perfil regional y dos fotografías arqueológicas modernas: no identifican el lugar de proclamación ni la hidrología de379. Ninguna selección sustituye un dossier completo.
+*The Empty Chair*, orden29/S34, añade dos grupos distintos de cuatro hogares originales: hacen falta tres de cada uno en receptores diferentes, con presencia actual al final. No vale juntar seis supervivientes si un grupo queda en dos. Dos lotes y pagos460F220W tienen destinos propios. Catorce escoltas y8/14/20hostiles son ficción táctica finita; no se exige matar, rescatar aPedro ni recapturar iglesias. Revisión independiente pendiente.
+
+Los siguientes dossiers son la derrota de Adrianópolis378, la reorganización de Sirmio379 (día de acceso sin resolver) y las transferencias urbanas de noviembre380. Sirmio tiene perfil regional y dos fotografías arqueológicas modernas: no identifican el lugar de proclamación ni la hidrología de379. Ninguna selección sustituye un dossier completo.
 
 ## Jugabilidad cívica y dificultad
 
-La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanical-audit.json) identifica 54 candidatos a riesgo entre 60 dossiers: no tienen hostiles/plazo estructurados y el stock accesible es igual en las tres dificultades. Es un filtro estático, no una prueba de falta de interés. Los otros seis tampoco tienen balance jugado aprobado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
+La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanical-audit.json) identifica 54 candidatos a riesgo entre 61 dossiers: no tienen hostiles/plazo estructurados y el stock accesible es igual en las tres dificultades. Es un filtro estático, no una prueba de falta de interés. Los otros siete tampoco tienen balance jugado aprobado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
 
 ## Capacidades y continuidad que siguen gobernando la entrega
 

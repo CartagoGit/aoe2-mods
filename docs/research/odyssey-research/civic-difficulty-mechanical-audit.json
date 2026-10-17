@@ -3,37 +3,39 @@
   "architectApproval": false,
   "readOnly": true,
   "snapshot": {
-    "date": "2026-10-15",
-    "realIdentity": "gpt-6-luna",
+    "date": "2026-10-17",
+    "realIdentity": "gpt-6",
     "concurrentReadConsistency": {
       "beforeSha256": {
         "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
-        "docs/design/odysseys/imperial-church.json": "07d1a8acb1497e0e8e36c6d106a45bf674b374acb821ea707eeb22d9e8461cad"
+        "docs/design/odysseys/imperial-church.json": "83832e242a959688f714f07796f0f975a3ab7b528fb1211ea24e14e7ad032686"
       },
       "afterSha256": {
         "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
-        "docs/design/odysseys/imperial-church.json": "07d1a8acb1497e0e8e36c6d106a45bf674b374acb821ea707eeb22d9e8461cad"
+        "docs/design/odysseys/imperial-church.json": "83832e242a959688f714f07796f0f975a3ab7b528fb1211ea24e14e7ad032686"
       },
       "unchangedDuringAudit": true
     },
     "derivedSnapshotCheck": {
-      "episodes": 60,
-      "screens": 2469,
-      "secondaryObjectives": 370,
-      "matchesCurrent60EpisodeSnapshot": true
+      "episodes": 61,
+      "screens": 2511,
+      "secondaryObjectives": 377,
+      "matchesCurrent61EpisodeSnapshot": true
     },
     "finalRefresh": {
-      "date": "2026-10-15",
-      "realIdentity": "gpt-6-luna",
+      "date": "2026-10-17",
+      "realIdentity": "gpt-6",
       "mechanicalDataMatchesPreviousAudit": true,
-      "changedEpisodeKeys": [],
+      "changedEpisodeKeys": [
+        "imperial-church:31-contested-succession-alexandria (new dossier)"
+      ],
       "editorialSourceAuditStatusChangeNotPartOfMechanicalFields": true,
       "readConsistency": true
     }
   },
   "scope": {
-    "checkout": "own architect work unit, snapshot identified by source hashes",
-    "instructionsRead": "AGENTS.md in the inspected checkout; read-only collection",
+    "checkout": "own architect work unit, exact source snapshot identified by SHA256",
+    "instructionsRead": "Project instructions supplied for this read-only task; source snapshot and report inspected without repository/Git/DelendAI operations.",
     "sourceFiles": [
       "docs/design/odysseys/faith-origins.json",
       "docs/design/odysseys/imperial-church.json"
@@ -43,7 +45,7 @@
       "faith-origins",
       "imperial-church"
     ],
-    "dossiersAudited": 60,
+    "dossiersAudited": 61,
     "coverage": "All current faith-origins and imperial-church episodes[] dossiers at the recorded source hashes; other campaigns and selections without dossiers excluded.",
     "fieldMethod": {
       "enemyCount": "enemyTotalCap per easy/standard/hard; cross-checked worldContract.entities roles containing hostile/enemy. scheduledWaveCount sums authored difficulty waves if present.",
@@ -60,22 +62,22 @@
     ]
   },
   "counts": {
-    "dossierCount": 60,
+    "dossierCount": 61,
     "byCampaign": {
       "faith-origins": 30,
-      "imperial-church": 30
+      "imperial-church": 31
     },
     "staticRiskCandidates": 54,
     "staticRiskCandidatesByCampaign": {
       "faith-origins": 29,
       "imperial-church": 25
     },
-    "withFiniteHostiles": 6,
+    "withFiniteHostiles": 7,
     "withExplicitStructuredDeadlines": 0,
-    "sameAccessibleBudgetsAcrossDifficulties": 60,
-    "totalMainObjectives": 206,
-    "totalSecondaryObjectives": 370,
-    "totalScreens": 2469
+    "sameAccessibleBudgetsAcrossDifficulties": 61,
+    "totalMainObjectives": 209,
+    "totalSecondaryObjectives": 377,
+    "totalScreens": 2511
   },
   "staticRiskEpisodes": [
     {
@@ -355,6 +357,7 @@
       "order": 1,
       "episodeId": "01-administrative-records-caesarea",
       "coreMechanic": "administrative-records",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -430,6 +433,7 @@
       "order": 2,
       "episodeId": "02-civilian-refuge-jerusalem",
       "coreMechanic": "civilian-refuge",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -504,6 +508,7 @@
       "order": 3,
       "episodeId": "03-shared-provision-jerusalem",
       "coreMechanic": "shared-provision",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -578,6 +583,7 @@
       "order": 4,
       "episodeId": "04-testimony-relay-damascus",
       "coreMechanic": "testimony-relay",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -652,6 +658,7 @@
       "order": 5,
       "episodeId": "05-witness-comparison-jerusalem",
       "coreMechanic": "witness-comparison",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -727,6 +734,7 @@
       "order": 6,
       "episodeId": "01-roads-of-antioch",
       "coreMechanic": "network-escort",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -801,6 +809,7 @@
       "order": 7,
       "episodeId": "07-household-relocation-rome-ostia",
       "coreMechanic": "household-relocation",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -875,6 +884,7 @@
       "order": 8,
       "episodeId": "08-delegate-logistics-jerusalem",
       "coreMechanic": "delegate-logistics",
+      "screenCount": 40,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -949,6 +959,7 @@
       "order": 9,
       "episodeId": "09-district-production-corinth",
       "coreMechanic": "district-production",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1024,6 +1035,7 @@
       "order": 10,
       "episodeId": "10-copy-and-relay-corinth",
       "coreMechanic": "copy-and-relay",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1099,6 +1111,7 @@
       "order": 11,
       "episodeId": "11-distributed-preservation-ephesus",
       "coreMechanic": "distributed-preservation",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1174,6 +1187,7 @@
       "order": 12,
       "episodeId": "12-bounded-community-aid-ephesus",
       "coreMechanic": "bounded-community-aid",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1249,6 +1263,7 @@
       "order": 13,
       "episodeId": "13-consignment-and-correspondence-corinth",
       "coreMechanic": "consignment-and-correspondence",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1323,6 +1338,7 @@
       "order": 14,
       "episodeId": "14-administrative-intrigue-caesarea",
       "coreMechanic": "administrative-intrigue",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1398,6 +1414,7 @@
       "order": 15,
       "episodeId": "15-evacuation-and-recovery-rome-ostia",
       "coreMechanic": "evacuation-and-recovery",
+      "screenCount": 40,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1473,6 +1490,7 @@
       "order": 16,
       "episodeId": "16-comparative-copying-antioch",
       "coreMechanic": "comparative-copying",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1549,6 +1567,7 @@
       "order": 17,
       "episodeId": "02-after-the-siege",
       "coreMechanic": "civilian-evacuation",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 6,
         "standard": 10,
@@ -1625,6 +1644,7 @@
       "order": 18,
       "episodeId": "18-parallel-archive-logistics-antioch",
       "coreMechanic": "parallel-archive-logistics",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1701,6 +1721,7 @@
       "order": 19,
       "episodeId": "19-hospitality-network-antioch",
       "coreMechanic": "hospitality-network",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1775,6 +1796,7 @@
       "order": 20,
       "episodeId": "20-reconciliation-deliveries-rome-ostia",
       "coreMechanic": "reconciliation-deliveries",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1851,6 +1873,7 @@
       "order": 21,
       "episodeId": "03-the-governors-question",
       "coreMechanic": "administrative-intrigue",
+      "screenCount": 43,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -1928,6 +1951,7 @@
       "order": 22,
       "episodeId": "22-reading-and-relief-rome-ostia",
       "coreMechanic": "reading-and-relief",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2004,6 +2028,7 @@
       "order": 23,
       "episodeId": "23-petition-escort-sardes",
       "coreMechanic": "petition-escort",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2080,6 +2105,7 @@
       "order": 24,
       "episodeId": "24-witness-and-evacuation-lyon",
       "coreMechanic": "witness-and-evacuation",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2155,6 +2181,7 @@
       "order": 25,
       "episodeId": "25-archive-comparison-lyon",
       "coreMechanic": "archive-comparison",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2231,6 +2258,7 @@
       "order": 26,
       "episodeId": "26-legal-record-network-carthage",
       "coreMechanic": "legal-record-network",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2308,6 +2336,7 @@
       "order": 27,
       "episodeId": "27-household-aid-and-memory-carthage",
       "coreMechanic": "household-aid-and-memory",
+      "screenCount": 40,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2383,6 +2412,7 @@
       "order": 28,
       "episodeId": "28-certificate-and-refuge-egypt-middle-nile",
       "coreMechanic": "certificate-and-refuge",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2459,6 +2489,7 @@
       "order": 29,
       "episodeId": "29-bounded-evacuation-carthage",
       "coreMechanic": "bounded-evacuation",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2534,6 +2565,7 @@
       "order": 30,
       "episodeId": "04-a-different-dawn",
       "coreMechanic": "supply-and-testimony",
+      "screenCount": 44,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2610,6 +2642,7 @@
       "order": 1,
       "episodeId": "01-milvian-bridge",
       "coreMechanic": "river-battle",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 16,
         "standard": 26,
@@ -2686,6 +2719,7 @@
       "order": 2,
       "episodeId": "02-bounded-negotiation-milan",
       "coreMechanic": "bounded-negotiation",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2763,6 +2797,7 @@
       "order": 3,
       "episodeId": "03-property-and-record-restoration-nicomedia",
       "coreMechanic": "property-and-record-restoration",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2840,6 +2875,7 @@
       "order": 4,
       "episodeId": "04-rival-delegation-reception-rome-ostia",
       "coreMechanic": "rival-delegation-reception",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2917,6 +2953,7 @@
       "order": 5,
       "episodeId": "05-delegate-logistics-arles",
       "coreMechanic": "delegate-logistics",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -2994,6 +3031,7 @@
       "order": 6,
       "episodeId": "06-finite-field-withdrawal-cibalae",
       "coreMechanic": "finite-field-withdrawal",
+      "screenCount": 40,
       "enemyTotalCapByDifficulty": {
         "easy": 18,
         "standard": 28,
@@ -3070,6 +3108,7 @@
       "order": 7,
       "episodeId": "07-court-record-logistics-rome-ostia",
       "coreMechanic": "court-record-logistics",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3147,6 +3186,7 @@
       "order": 8,
       "episodeId": "09-crossing-and-supply-adrianople",
       "coreMechanic": "crossing-and-supply",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 12,
         "standard": 20,
@@ -3223,6 +3263,7 @@
       "order": 9,
       "episodeId": "10-land-and-strait-logistics-chrysopolis",
       "coreMechanic": "land-and-strait-logistics",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3299,6 +3340,7 @@
       "order": 10,
       "episodeId": "08-disputed-correspondence-alexandria",
       "coreMechanic": "disputed-correspondence",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3376,6 +3418,7 @@
       "order": 11,
       "episodeId": "11-council-record-escort-antioch",
       "coreMechanic": "council-record-escort",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3453,6 +3496,7 @@
       "order": 12,
       "episodeId": "02-nicaea",
       "coreMechanic": "delegate-logistics",
+      "screenCount": 43,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3530,6 +3574,7 @@
       "order": 13,
       "episodeId": "13-finite-works-logistics-jerusalem",
       "coreMechanic": "finite-works-logistics",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3606,6 +3651,7 @@
       "order": 14,
       "episodeId": "03-new-capital",
       "coreMechanic": "urban-logistics",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3683,6 +3729,7 @@
       "order": 15,
       "episodeId": "15-long-distance-dispatch-nicomedia",
       "coreMechanic": "long-distance-dispatch",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3760,6 +3807,7 @@
       "order": 16,
       "episodeId": "16-witness-record-comparison-tyre",
       "coreMechanic": "witness-record-comparison",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3837,6 +3885,7 @@
       "order": 17,
       "episodeId": "17-rumour-and-source-investigation-constantinople",
       "coreMechanic": "rumour-and-source-investigation",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3915,6 +3964,7 @@
       "order": 18,
       "episodeId": "18-administrative-transition-nicomedia",
       "coreMechanic": "administrative-transition",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -3992,6 +4042,7 @@
       "order": 19,
       "episodeId": "19-competing-dispatches-constantinople",
       "coreMechanic": "competing-dispatches",
+      "screenCount": 43,
       "enemyTotalCapByDifficulty": {
         "easy": 16,
         "standard": 24,
@@ -4069,6 +4120,7 @@
       "order": 20,
       "episodeId": "20-separate-reception-logistics-sardica",
       "coreMechanic": "separate-reception-logistics",
+      "screenCount": 48,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4146,6 +4198,7 @@
       "order": 21,
       "episodeId": "21-returning-households-escort-alexandria",
       "coreMechanic": "returning-households-escort",
+      "screenCount": 45,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4223,6 +4276,7 @@
       "order": 22,
       "episodeId": "22-civilian-record-preservation-milan",
       "coreMechanic": "civilian-record-preservation",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4301,6 +4355,7 @@
       "order": 23,
       "episodeId": "23-bounded-political-pressure-milan",
       "coreMechanic": "bounded-political-pressure",
+      "screenCount": 45,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4378,6 +4433,7 @@
       "order": 24,
       "episodeId": "24-night-civilian-withdrawal-alexandria",
       "coreMechanic": "night-civilian-withdrawal",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 16,
         "standard": 22,
@@ -4454,6 +4510,7 @@
       "order": 25,
       "episodeId": "25-delegate-and-draft-network-rimini",
       "coreMechanic": "delegate-and-draft-network",
+      "screenCount": 46,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4531,6 +4588,7 @@
       "order": 26,
       "episodeId": "26-plural-civic-logistics-constantinople",
       "coreMechanic": "plural-civic-logistics",
+      "screenCount": 39,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4607,6 +4665,7 @@
       "order": 27,
       "episodeId": "27-return-and-departure-records-alexandria",
       "coreMechanic": "return-and-departure-records",
+      "screenCount": 45,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4684,6 +4743,7 @@
       "order": 28,
       "episodeId": "30-policy-reversal-alexandria",
       "coreMechanic": "policy-reversal-and-discreet-support",
+      "screenCount": 42,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4758,9 +4818,87 @@
     },
     {
       "campaign": "imperial-church",
+      "order": 29,
+      "episodeId": "31-contested-succession-alexandria",
+      "coreMechanic": "contested-succession-and-local-continuity",
+      "screenCount": 42,
+      "enemyTotalCapByDifficulty": {
+        "easy": 8,
+        "standard": 14,
+        "hard": 20
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 20,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 8,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 14,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 20,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
       "order": 32,
       "episodeId": "28-law-and-local-reception-thessalonica",
       "coreMechanic": "law-and-local-reception",
+      "screenCount": 48,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
@@ -4838,6 +4976,7 @@
       "order": 34,
       "episodeId": "29-council-and-final-perspective-constantinople",
       "coreMechanic": "council-and-final-perspective",
+      "screenCount": 44,
       "enemyTotalCapByDifficulty": {
         "easy": 0,
         "standard": 0,
