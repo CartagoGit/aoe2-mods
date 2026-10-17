@@ -99,3 +99,7 @@ La [auditoría cívica actual](civic-difficulty-mechanical-audit.json) mantiene5
 ### Controles de fuentes para los dos dossiers imperiales restantes
 
 [Marco de Sirmio379](imperial33-source-audit.json): lectura directa seleccionada deSócrates,Sozomeno,Marcelino y síntesis deDavidWoods;16de enero en la traducción deSócrates frente aXIIIIkalendasFebruarias/19de enero enMarcelino. El comentario críticoKFHist no pudo recuperarse (418/403), por lo que sus fragmentos de búsqueda no se presentan como lectura completa. [Transferencias deConstantinopla380](imperial34-source-audit.json): llegada24/transferencia26de noviembre enSócrates, frente al mes de diciembre enMarcelino. Ninguno de estos dos registros es un dossier completo, una reconstrucción urbana aprobada o permiso de materialización; el recuento sigue62.
+
+### Reproducción de la auditoría mecánica
+
+La auditoría actual se genera con `python3 tools/design/civic_difficulty_audit.script.py --write --author REAL_ID --date YYYY-MM-DD` y se comprueba ejecutando el mismo script sin argumentos. Lee las nueve campañas de la política y solamente sus dossiers `episodes[]`; conserva hashes y declara cobertura cero donde todavía no hay dossier. El [corte de62del17deoctubre](civic-difficulty-mechanical-audit-62-2026-10-17.json) conserva la recopilación de Luna y su seguimiento original. La nueva ejecución se atribuye al agente que realmente la ejecuta. La [aceptación de jugabilidad](../../design/civic-playability-acceptance.md) sigue pendiente; este informe no mide diversión ni acredita dificultad.
