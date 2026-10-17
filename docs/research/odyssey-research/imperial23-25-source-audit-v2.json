@@ -1,0 +1,341 @@
+{
+  "audit": "Source collection audit, imperial-church orders 23-25",
+  "consultationDate": "2026-10-14",
+  "worktreeReadOnly": true,
+  "repositoryOrGitMutations": false,
+  "architectApproval": false,
+  "approvalScope": "Source collection only; no objective, map, architecture, or history design approved.",
+  "methodAndLimits": {
+    "selectionFileActuallyRead": "docs/design/odysseys/imperial-church.json, episodeSelection orders 23-25",
+    "coverage": "Read selection records and consulted primary-source web texts and selected academic/institutional page passages as itemized below. Did not inspect or certify a complete critical edition, complete monograph, excavated building plan, or event-specific archaeological footprint.",
+    "imageHandling": "No map/image copied. CartAlex was consulted as textual landing-page metadata only; its interactive map layers and raster/vector figures were not inspected pixel-by-pixel. No license for reuse established.",
+    "attributionCorrectionsChecked": [
+      "Repository search confirms Ellen Muehlberger, not Sarah Bond, is credited for the 2015 Past & Present article about the legend of Arius' death. This is unrelated to orders 23-25 and is noted to prevent carryover attribution error.",
+      "Repository search confirms the short review of Marilena Amerise is attributed to Jan Drijvers, not Hans Pohlsander; unrelated to these three orders.",
+      "Repository search confirms Burgess PDF physical pages 11–12 correspond to printed pages 14–15 in the cited order-19 material; unrelated here. No figure inspected or reproduced."
+    ],
+    "candidateVsConsulted": "A source URL in a dossier is only a candidate unless listed as actually consulted below. Failed or partial consultations are explicitly retained."
+  },
+  "episodes": [
+    {
+      "episodeId": "23-bounded-political-pressure-milan",
+      "orderAtCollection": 23,
+      "architectApproval": false,
+      "selectionRead": {
+        "dateAsSelected": "355 CE; Milan hearing focus",
+        "selectedClaim": "Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops exiled.",
+        "sourceCorrection": "The raw candidate is the Alexandria 356 raid and must not be narrated as the Milan 355 proceeding."
+      },
+      "sources": [
+        {
+          "kind": "primary narrative, later ecclesiastical history",
+          "author": "Sozomen (Salamanes Hermeias Sozomenos), Ecclesiastical History IV.9",
+          "compositionDate": "mid-5th century, commonly c. 440s; exact year not asserted here",
+          "urlCandidate": "https://www.newadvent.org/fathers/26024.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/26024.htm",
+          "exactLocator": "Book IV, chapter 9, lines 65-72 in consulted New Advent rendering; especially council, pressure/condemnation and exiles at lines 65-70.",
+          "coverageActuallyRead": "Read the retrieved chapter-9 passage via page search/open excerpt; not the whole book or Greek text/critical apparatus.",
+          "supports": [
+            "A council convened at Milan; pressure concerning Athanasius' condemnation/exile; Sozomen's account names dissenters and exile."
+          ],
+          "doesNotSupport": [
+            "A verbatim transcript, neutral motive attribution, exact hearing room, precise day/month, independently verified attendance figures, or any Alexandrian church raid in 355."
+          ],
+          "biasAndUncertainty": "Fifth-century pro-Nicene church historian, writing long after the event; his language about fear/fraud/ignorance and imperial conspiracy is authorial interpretation. He reports over 300 western bishops, a number independently challenged in Socrates/NPNF editorial notes (possible textual corruption to 30)."
+        },
+        {
+          "kind": "primary narrative, near-contemporary Christian polemic",
+          "author": "Athanasius of Alexandria, Apologia de Fuga sua (Apologia de Fuga); not Apologia ad Constantium.",
+          "publicationDate": "4th century; relevant work commonly placed c. 356-357; exact publication sequence not resolved in this consultation",
+          "urlCandidate": "https://www.newadvent.org/fathers/2814.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/2814.htm (only relevant displayed sections were searched; this is Apologia de Fuga, not a Milan-hearing record)",
+          "exactLocator": "Apologia de Fuga §§6 and 24–25 in displayed English translation concern Alexandria and flight; this is not a Milan-hearing record.",
+          "coverageActuallyRead": "Targeted web find results around §§6 and 24–25 only; not full work/critical edition. URL 2814 is Apologia de Fuga, not Apologia ad Constantium.",
+          "supports": [
+            "Athanasius presents his flight from an Alexandrian nighttime church assault as justified."
+          ],
+          "doesNotSupport": [
+            "Milan council proceedings."
+          ],
+          "biasAndUncertainty": "Interested defense by the accused bishop; preserve as his testimony rather than independent corroboration."
+        },
+        {
+          "kind": "academic primary-source analysis",
+          "author": "Melissa Markauskas, From Privilege to Proscription: The Transformation of Episcopal Conflict Across the Long Fourth Century, PhD thesis, University of Manchester",
+          "publicationDate": "2015",
+          "urlCandidate": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+          "urlActuallyConsulted": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+          "exactLocator": "Printed pp. 72-73 (PDF physical pages 72-73 as page labels P71-73 in parser); section 1.2.1 begins discussion of 355 Milan and 359 Rimini; footnote 136 cites Socrates HE II.37 and Sozomen HE IV.9.",
+          "coverageActuallyRead": "Read selected searchable page passages and footnotes, not full thesis. PDF has 259 pages. Page mapping remains provisional; root reviewer has not verified Manchester printed/PDF pages.",
+          "supports": [
+            "Milan chosen because Constantius was present; exile and episcopal legal strategy are situated in political context."
+          ],
+          "doesNotSupport": [
+            "Archaeological location of the council venue or exact proceedings transcript."
+          ],
+          "biasAndUncertainty": "Academic thesis; its interpretation is secondary scholarship, not an ancient witness. Full bibliography/argument beyond selected pages not assessed.",
+          "paginationVerificationStatus": "Printed-versus-PDF pagination not independently verified by root reviewer; retain locator as provisional and do not cite as confirmed page mapping."
+        }
+      ],
+      "geographyAndAnachronisms": {
+        "institutionalControlCandidate": "Comune di Milano / Museo Archeologico di Milano archaeological itinerary, https://www.museoarcheologicomilano.it/it/oltre-il-museo/itinerari-archeologici ; institutional search result identifies an itinerary through Mediolanum, but page opening failed in this pass.",
+        "actuallyConsultedInstitutionalMapControl": "No event-specific 355 map or map layer inspected. A Lombardy heritage-hosted Roman Mediolanum publication/map surfaced at https://www.architettonicimilano.lombardia.beniculturali.it/wp-content/uploads/Pagani_La-decorazione-parietale-romana-di-Meidiolanum_digital.pdf, but only search-result text was seen, not the PDF figure itself.",
+        "mapCoverageActuallyRead": "No pixel inspection; no explicit reuse license verified.",
+        "controls": "Milan is inland on the Po plain. Do not import present Duomo, medieval canal, modern street grid, or a Roman-period building footprint into a hypothetical synod venue without dated archaeological evidence. The 355 assembly's exact place/building is not established by sources read.",
+        "anachronisms": "Keep the February 356 Alexandria raid outside this Milan 355 episode. Do not imply the 355 council occurred in the exact same venue as the separate 355 audience/interrogation of Liberius absent independent support."
+      },
+      "architectCorrection": {
+        "date": "2026-10-14",
+        "author": "gpt-6",
+        "approval": "false; source-record correction only",
+        "provenance": "Root reviewer instruction; Manchester printed/PDF page mapping remains unverified and pending independent check.",
+        "changes": [
+          "Corrected Athanasius URL 2814 to Apologia de Fuga; it is not Apologia ad Constantium."
+        ]
+      }
+    },
+    {
+      "episodeId": "24-night-civilian-withdrawal-alexandria",
+      "orderAtCollection": 24,
+      "architectApproval": false,
+      "selectionRead": {
+        "dateAsSelected": "356 CE; Alexandria local event",
+        "sourceTextClaim": "Athanasius reports nighttime soldiers entering a church and his escape; Historia Acephala identifies Church of Theonas and Coptic dates 13/14 Mechir.",
+        "calendarAssessment": "Preserve the source dates Mechir 13/14. Older editions supply parenthetical civil-calendar conversions, which should be attributed to the edition and labeled as conventional Julian/civil conversion; this audit does not certify a proleptic Gregorian date."
+      },
+      "sources": [
+        {
+          "kind": "primary chronological chronicle; anonymous Alexandrian source transmitted under Athanasius corpus",
+          "author": "Anonymous compiler of Historia Acephala (annalist); do not automatically equate with the Festal Index sometimes called Chronicon Athanasianum.",
+          "compositionDate": "late 4th or early 5th century commonly proposed; exact date/authorship unsettled",
+          "urlCandidate": "https://www.newadvent.org/fathers/2820.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/2820.htm",
+          "exactLocator": "Section IV.5: Syrianus and Hilary arrive 10 Tybi; night entry into Church of Theonas on 13 Mechir, the night before 14; Athanasius escapes on 14 Mechir. The later church transfer belongs to V.6 (not IV.6); George arrives 30 Mechir per the consulted translation.",
+          "coverageActuallyRead": "Read the retrieved English page lines 19–22 for IV.5 and the later transfer passage V.6. The translation’s parenthetical date conversions were visible; they are not asserted here as proleptic Gregorian. No critical edition or Coptic manuscript apparatus consulted.",
+          "supports": [
+            "Chronicle's sequence and Coptic date; Church of Theonas; night entry; escape; later separate church transfer and George arrival."
+          ],
+          "doesNotSupport": [
+            "By itself, a certain proleptic Gregorian date, exact building footprint, objective troop count, or motive for every actor.",
+            "Do not treat Historia Acephala as automatically identical with the Festal Index/Chronicon Athanasianum."
+          ],
+          "biasAndUncertainty": "An anonymous, date-conscious Alexandrian annalist distinct from Athanasius’ own apologetic account; textual gaps/corruption and source relationships require caution. Robertson’s introduction distinguishes the annalist from the Festal Index conventionally called Chronicon Athanasianum; no manuscript/edition identity is assumed."
+        },
+        {
+          "kind": "primary apologetic testimony",
+          "author": "Athanasius of Alexandria, Apologia de Fuga sua",
+          "compositionDate": "c. 357 CE conventionally assigned; author-date page from Friedrich-Alexander University Erlangen academic project describes work as 357",
+          "urlCandidate": "https://www.newadvent.org/fathers/2814.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/2814.htm",
+          "exactLocator": "§§24-25 (New Advent displayed lines 128-137); §6 is a separate later sequence and should not be conflated with the initial Syrianus assault.",
+          "coverageActuallyRead": "Targeted displayed paragraphs §§24-25 via web find, including lines 130-134; not full Greek text or a critical apparatus.",
+          "supports": [
+            "Athanasius says it was night, Syrianus arrived with soldiers, forced entry occurred, he directed congregants to leave, and clergy/monks led him out."
+          ],
+          "doesNotSupport": [
+            "A neutral transcript, independently verified figure of more than 5,000 soldiers, exact Coptic date from this passage, exact church identification as Theonas from this passage alone, or dialogue as verbatim historical record."
+          ],
+          "biasAndUncertainty": "First-person polemical self-defense defending flight against accusations of cowardice; the providential framing and troop count are the author's claims."
+        },
+        {
+          "kind": "academic source commentary",
+          "author": "Archibald Robertson, introduction/notes in NPNF series II, vol. IV, Athanasius: Select Works and Letters (1892 edition); modern web host CCEL",
+          "publicationDate": "1892 translation/editorial volume; not the date of underlying ancient works",
+          "urlCandidate": "https://www.ccel.org/ccel/schaff/npnf204.v.ii.ix.html",
+          "urlActuallyConsulted": "https://www.ccel.org/ccel/schaff/npnf204.v.ii.ix.html",
+          "exactLocator": "Displayed editorial lines 47-55 and notes 72-73 discuss the interval to George's arrival, common chronological source of Historia Acephala/Festal Index, and why Apologia de Fuga's narrative sequence alone can mislead chronology.",
+          "coverageActuallyRead": "Read selected commentary/notes only; not the complete volume or modern scholarship reviewing Robertson.",
+          "supports": [
+            "The raid, transfer of churches, and George's later arrival are not to be collapsed into one contiguous event; older chronology debates the relation between narrative order and calendar chronology."
+          ],
+          "doesNotSupport": [
+            "A definitive updated calendar conversion independently verified against a modern critical edition."
+          ],
+          "biasAndUncertainty": "Nineteenth-century editorial chronology is useful but dated; its conclusions should not replace current critical edition scholarship."
+        },
+        {
+          "kind": "academic institutional chronology overview",
+          "author": "Athanasius: Life and Works project, Friedrich-Alexander-Universität Erlangen-Nürnberg (project page; individual page author/date not displayed in retrieved result)",
+          "publicationDate": "Page date not supplied; accessed 2026-10-14",
+          "urlCandidate": "https://www.athanasius.theologie.uni-erlangen.de/athanasius-life-and-works.html",
+          "urlActuallyConsulted": "https://www.athanasius.theologie.uni-erlangen.de/athanasius-life-and-works.html (search-result text only; page not opened in this pass)",
+          "exactLocator": "Search-result text dates Apologia de Fuga sua to 357 and Historia Arianorum to end 357/beginning 358.",
+          "coverageActuallyRead": "Search snippet only; this is not full-page consultation and not a substitute for primary text."
+        }
+      ],
+      "geographyAndAnachronisms": {
+        "institutionalControlActuallyConsulted": "CEAlex, CartAlex launch information: https://www.cealex.org/evenement/cartalex-is-online/ (consulted text lines 11-24 and team lines 28-37); interactive layers at https://maps.cealex.org/maps/alex/ were a candidate but not opened/visually inspected.",
+        "cartographicControl": "CEAlex describes georeferenced historic layers: Mahmud Bey el-Falaki reconstruction (1866), Barbara Tkaczow plan (1993), Survey of Egypt cadastre (1933-1948), and archaeological discoveries. These are scholarly reconstruction/cadastre control, not direct 356 shoreline/building evidence.",
+        "mapAndLicense": "No figure pixels inspected; no reuse license found in consulted announcement; do not copy. The current shoreline and submerged Eastern Harbour evidence cannot directly locate Church of Theonas or prove its 356 surroundings.",
+        "phaseCautions": "The Alexandrian coastline has substantial ancient/modern geomorphological uncertainty. Harbor/island reconstructions primarily address Hellenistic/Roman harbor phases; not a 356 church-campus plan. Do not put the attack automatically at a modern named church or use current street footprints as ancient streets.",
+        "anachronisms": "The later June 356 transfer of churches and George's February 357 arrival are chronologically distinct from the night raid in February 356. The selection date should retain 356 and its local event setting, with month-calendar conversion marked uncertain."
+      },
+      "architectCorrection": {
+        "date": "2026-10-14",
+        "author": "gpt-6",
+        "approval": "false; source-record correction only",
+        "provenance": "Root reviewer correction after collection.",
+        "changes": [
+          "Distinguished Historia Acephala annalist from the Festal Index called Chronicon Athanasianum, following Robertson introduction.",
+          "Changed later church transfer locator to V.6; raid remains IV.5.",
+          "Preserved Mechir 13/14 and removed any assertion that the translator’s parenthetical civil-date conversion is proleptic Gregorian."
+        ]
+      }
+    },
+    {
+      "episodeId": "25-delegate-and-draft-network-rimini",
+      "orderAtCollection": 25,
+      "architectApproval": false,
+      "selectionRead": {
+        "dateAsSelected": "359 CE; Western council, Seleucia off-map comparison",
+        "selectedClaim": "Parallel western Ariminum and eastern Seleucia councils, not a single meeting or unified resolution.",
+        "correction": "For the event label use ancient Ariminum (modern Rimini). Do not equate Sulpicius' 'magistri officialibus' with a singular office-holder titled magister officiorum; the text identifies Taurus as praefectus, while later administrative evidence/secondary scholarship specifies praetorian prefect."
+      },
+      "sources": [
+        {
+          "kind": "primary narrative, later Latin Christian chronicle with eyewitness/hearsay distinctions",
+          "author": "Sulpicius Severus, Chronica II.41-43",
+          "compositionDate": "c. 403-404, conventionally; exact composition chronology not fixed to a single day/year",
+          "urlCandidate": "https://wwww.thelatinlibrary.com/sulpiciusseveruschron2.html",
+          "urlActuallyConsulted": "https://wwww.thelatinlibrary.com/sulpiciusseveruschron2.html",
+          "exactLocator": "Book II §§41-43; consulted lines 181-189 show §41.1-8 and opening §42. Section 41.1: Taurus is 'praefecto'; §41.2 says 'magistri officialibus' were sent through provinces; §§41.5-8 describe separate church/empty building meeting spaces and delegations.",
+          "coverageActuallyRead": "Read displayed Latin §§41-42 targeted lines only; English NPNF parallel was surfaced in search results but not used as independent corroboration. Not whole Chronicle/critical apparatus.",
+          "supports": [
+            "Emperor ordered synod at Ariminum; Taurus called praefectus, promised consulship; officials summoned/compelled western bishops, public annona/cellaria; factional split, distinct worship spaces and delegations."
+          ],
+          "doesNotSupport": [
+            "Taurus' title as magister officiorum; exact proceedings dates; a single simultaneous session with Seleucia; precise identity/position of the church and vacant hall; reliable neutral headcount."
+          ],
+          "biasAndUncertainty": "Sulpicius writes decades later from a western Nicene perspective; explicitly reports part of his account as what bishop Gavidus used to say and marks his own disagreement (§41.4). Polemical labels and staged spatial contrast are his narrative."
+        },
+        {
+          "kind": "primary narrative, fifth-century ecclesiastical historian",
+          "author": "Socrates of Constantinople, Ecclesiastical History II.37 and II.39-41",
+          "compositionDate": "mid-5th century, commonly c. 439; precise date not independently verified here",
+          "urlCandidate": "https://www.ccel.org/ccel/s/schaff/npnf202/npnf202.ii.v.xxxvii.html",
+          "urlActuallyConsulted": "https://www.ccel.org/ccel/s/schaff/npnf202/npnf202.ii.v.xxxvii.html (search/open failed in this pass); available related chapter actually consulted: https://ccel.org/ccel/schaff/npnf202/npnf202.ii.v.xxxvi.html, which is Milan only, not Ariminum.",
+          "exactLocator": "Desired II.37 (Ariminum) not read directly. For separate eastern council: II.39, retrieved at https://www.ccel.org/ccel/schaff/npnf202/npnf202.ii.v.xxxix.html, lines 27-40, which explicitly dates Seleucia to consulship of Eusebius and Hypatius (359), says 27 September, and describes division.",
+          "coverageActuallyRead": "II.39 targeted passage read; II.37 consultation failed and remains unconsulted. Do not claim direct consultation of Socrates' Ariminum narrative from this pass.",
+          "supports": [
+            "Two different councils in 359; the consulted Seleucia passage is a rival/eastern council and describes factional division."
+          ],
+          "doesNotSupport": [
+            "Ariminum procedural details in this pass or the two councils sharing one decision/date/session."
+          ],
+          "biasAndUncertainty": "Fifth-century ecclesiastical narrative; chronology/interpretation require comparison with nearer participant sources."
+        },
+        {
+          "kind": "academic secondary source, full institutional repository thesis consulted selectively",
+          "author": "Melissa Markauskas, From Privilege to Proscription: The Transformation of Episcopal Conflict Across the Long Fourth Century, PhD thesis, University of Manchester",
+          "publicationDate": "2015",
+          "urlCandidate": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+          "urlActuallyConsulted": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+          "exactLocator": "Printed pp. 73-74 (PDF parser page labels P72-74): §1.2.1 'Council of Rimini (359)', Taurus described as praetorian prefect; notes 140-145 cite PLRE, Sulpicius, council letter CSEL 65, Socrates/Sozomen. Page 73 footnote 140 includes legal evidence of office; it does not say magister officiorum.",
+          "coverageActuallyRead": "Read title page and selected pages/notes only of 259-page PDF; not the whole thesis. Page mapping remains provisional; root reviewer has not verified Manchester printed/PDF pages.",
+          "supports": [
+            "Academic identification of Taurus as praetorian prefect, his role enforcing imperial constraints, the subsidized travel/maintenance context, and distinct subsequent events."
+          ],
+          "doesNotSupport": [
+            "Exact urban venue/archaeological location or complete episode chronology."
+          ],
+          "biasAndUncertainty": "Thesis interpretation, not a primary source; office identification triangulates sources and PLRE reference.",
+          "paginationVerificationStatus": "Printed-versus-PDF pagination not independently verified by root reviewer; retain locator as provisional and do not cite as confirmed page mapping."
+        },
+        {
+          "kind": "institutional prosopographical research resource",
+          "author": "Connecting Late Antiquities, Flavius Taurus entry (PLRE-based research interface; entry author/date not displayed)",
+          "publicationDate": "Not displayed; accessed 2026-10-14",
+          "urlCandidate": "https://connectinglateantiquities.org/text.html?id=plre-1-taurus-3",
+          "urlActuallyConsulted": "https://connectinglateantiquities.org/text.html?id=plre-1-taurus-3",
+          "exactLocator": "Displayed lines 36-40: cites Sulpicius Chron. II.41 'Tauro praefecto', Ariminum council letter 'praefectum praetorii Taurum' (CSEL LXV 88), consulship 361, and laws styling him PPO.",
+          "coverageActuallyRead": "Read displayed prosopographical text lines 36-40; underlying PLRE/CSEL documents were not independently opened.",
+          "supports": [
+            "Taurus was a prefect and the council correspondence styles him praefectus praetorio; this supports praetorian-prefect identification."
+          ],
+          "doesNotSupport": [
+            "Title magister officiorum or a direct source claim that Taurus himself was magister officiorum."
+          ],
+          "biasAndUncertainty": "Prosopography is a synthesis; source chain is stated but underlying CSEL pages not checked in this pass."
+        },
+        {
+          "kind": "academic/institutional geographical control",
+          "author": "Comune di Rimini, Quadro conoscitivo, municipal urban-planning and heritage inventory",
+          "publicationDate": "Current webpage; individual attached map dates/authorities are not resolved in this pass",
+          "urlCandidate": "https://www.comune.rimini.it/amministrazione/documenti-e-dati/documento-di-programmazione-e-rendicontazione/quadro-conoscitivo",
+          "urlActuallyConsulted": "https://www.comune.rimini.it/amministrazione/documenti-e-dati/documento-di-programmazione-e-rendicontazione/quadro-conoscitivo",
+          "exactLocator": "Webpage lines 116-144 lists archaeological report, historic-center evolution, archaeological maps c.1.2a/b, Roman-level stratigraphic thickness map c.1.3, deposit conservation maps c.1.4a/b, and constraints maps.",
+          "coverageActuallyRead": "Read page list/metadata only. PDFs are multi-megabyte; did not download them, inspect map pixels, or read report text.",
+          "supports": [
+            "Official municipal repository exposes archaeology mapping and Roman stratigraphic controls appropriate for later research."
+          ],
+          "doesNotSupport": [
+            "Location of the 359 council building or a dated 359 plan from list metadata alone."
+          ],
+          "biasAndUncertainty": "Municipal planning data; attached map production dates, authorship and licensing must be checked before using any layer. No reuse permission identified."
+        }
+      ],
+      "geographyAndAnachronisms": {
+        "institutionalControl": "Municipality's archaeological map inventory is a candidate for georeferenced follow-up; not inspected. Princeton Encyclopedia of Classical Sites entry surfaced as a secondary geographic candidate at https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aid%3Dariminum; it states Rimini lies on Adriatic between Marecchia and Ausa rivers and was a council seat in 359, but only search-result text was consulted.",
+        "phaseCautions": "Current Roman monuments and archaeological maps aggregate phases. Do not infer the synod met in surviving basilica, a specific extant church, modern cathedral, Arch of Augustus area, or any excavated feature without dated source evidence. The historical report of a church and intentionally vacant aedes does not securely identify modern remains.",
+        "parallelCouncils": "Seleucia is in Isauria (modern Silifke region in southern Türkiye), not a Rimini district; it is an off-map dispatch/comparison, not a locally traversable destination. Socrates' consulted II.39 places its meeting on 27 September 359, but this does not establish simultaneous opening/closing dates for Ariminum.",
+        "license": "No explicit reuse license for municipal maps or Princeton encyclopedia content was found/checked. Do not copy figures."
+      },
+      "architectCorrection": {
+        "date": "2026-10-14",
+        "author": "gpt-6",
+        "approval": "false; source-record correction only",
+        "provenance": "Root reviewer instruction; Manchester printed/PDF page mapping remains unverified and pending independent check."
+      }
+    }
+  ],
+  "failedOrIncompleteConsultations": [
+    {
+      "urlCandidate": "https://www.newadvent.org/fathers/26012.htm",
+      "result": "Web open returned internal error. Socrates Ariminum narrative II.37 therefore not directly read at that URL."
+    },
+    {
+      "urlCandidate": "https://www.ccel.org/ccel/s/schaff/npnf202/npnf202.ii.v.xxxvii.html",
+      "result": "Socrates II.37 candidate could not be opened in this pass; do not cite as consulted."
+    },
+    {
+      "urlCandidate": "https://www.museoarcheologicomilano.it/it/oltre-il-museo/itinerari-archeologici",
+      "result": "Search result showed official itinerary description; direct web open failed. No map layer inspected."
+    },
+    {
+      "urlCandidate": "https://maps.cealex.org/maps/alex/",
+      "result": "CEAlex landing page advertises GIS; interactive map itself was not opened or visually inspected."
+    },
+    {
+      "urlCandidate": "Comune di Rimini attached archaeological PDFs from Quadro conoscitivo",
+      "result": "Only index metadata was read; no large PDFs downloaded, and no figure/caption/text page from those PDFs was actually consulted."
+    }
+  ],
+  "crossEpisodeCautions": [
+    "Order 23 Milan 355 and order 24 Alexandria 356 are distinct local events. Retain the inherited-source/dispatch distinction; do not use order 24's source passage to substantiate an order 23 hearing.",
+    "Order 24 distinguishes the initial Syrianus assault and flight from later 356 church seizures and George's arrival in 357. A Gregorian conversion of the Coptic 13/14 Mechir date needs an edition/calendar note.",
+    "Order 25 must preserve Ariminum's western-council process separately from Seleucia's eastern council. Sulpicius says 'Taurus praefectus' and 'magistri officialibus'; later correspondence/prosopography supports 'praetorian prefect'. Avoid 'Magister officiorum' as Taurus' title."
+  ],
+  "architectCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "false; source-record corrections only",
+    "provenance": "Root reviewer message; the initial collection contained these mechanical attribution/locator/date-calibration errors.",
+    "changes": [
+      "Corrected URL 2814 identification to Apologia de Fuga.",
+      "Distinguished Historia Acephala from Chronicon Athanasianum/Festal Index; raid IV.5, church transfer V.6.",
+      "Retained Mechir 13/14 and treated parenthetical dates only as conventional civil/Julian conversions; no proleptic Gregorian certification.",
+      "Corrected Burgess carryover pagination reference to order 19; Manchester printed/PDF pagination remains pending verification."
+    ]
+  },
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": false,
+    "reading": "Architect consulted Markauskas2015 printed72–74 directly, including footnotes131–145; physicalPDF72–74,zero71–73, confirmed by printed footer. Full259-page volume/manuscripts not read. Temporary research download only, author copyright, no PDF copied to project assets.",
+    "corrections": [
+      "Printed72–73Milan355 and Hilarynonattendance are distinct from later73–74Rimini359; cite footnotes134–136 forMilan,140–145forRimini.",
+      "Raw HistoriaAcephala attribution is anonymous; sourceAthanasius applies only Apologia deFuga.",
+      "No Gregorianconversioncertified fromparentheticaloldtranslations; Mechir13/14 preserved in authored24."
+    ]
+  }
+}

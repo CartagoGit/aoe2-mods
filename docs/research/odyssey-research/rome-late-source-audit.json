@@ -1,0 +1,274 @@
+{
+  "campaignId": "church-of-rome",
+  "scope": "episodeSelection orders 19–32 in docs/design/odysseys/church-of-rome.json; read-only source-access/claim audit",
+  "episodes": [
+    {
+      "order": 19,
+      "id": "19-finite-building-conversion-rome-ostia",
+      "date": "609 or 613; exact dedication debated",
+      "place": "Pantheon, Rome",
+      "sources": [
+        {
+          "url": "https://portal.sds.ox.ac.uk/articles/online_resource/E01429_The_short_Life_of_Boniface_IV_bishop_of_Rome_ob_615_S00841_in_the_Liber_Pontificalis_written_in_Latin_in_Rome_early_in_the_7th_c_mentions_his_conversion_of_the_Pantheon_into_the_church_of_the_blessed_Mary_ever-virgin_S00033_and_of_Al/13807430",
+          "locator": "Liber Pontificalis, Vita Bonifatii IV c.69; Latin and Davis translation displayed in Oxford Cult of Saints record",
+          "consulted": "Record/result text and passage read; Latin says Boniface petitioned Phocas for the Pantheon and made it a church of Mary and all martyrs.",
+          "supports": "The conversion tradition and dedication, as reported by the Liber Pontificalis.",
+          "limits": "The passage supplies no year. Cambridge study https://www.cambridge.org/core/journals/papers-of-the-british-school-at-rome/article/papacy-and-byzantium-in-the-seventh-and-early-eighthcentury-sections-of-the-liber-pontificalis/BD2854E7D258B73EF5E3E780EDBA3550 was consulted at abstract/search-result scope: discusses 13 May 613 against traditional 609 and says dating cannot be certain. Do not state either date as settled."
+        }
+      ],
+      "assessment": "Strong support for the attributed conversion account, weak support for exact year."
+    },
+    {
+      "order": 20,
+      "id": "20-council-record-comparison-rome-ostia",
+      "date": "October 649",
+      "place": "Lateran basilica, Rome",
+      "sources": [
+        {
+          "url": "https://scholarworks.iu.edu/journals/index.php/tmr/article/view/20195",
+          "locator": "Review of Richard Price, Acts of the Lateran Synod of 649",
+          "consulted": "Accessible review/abstract read, not Price's full JSTOR introduction or full acts.",
+          "supports": "The acts survive in Latin and Greek; scholarship reviewed there argues the Latin is largely translated from Greek, revising the older assumption that Greek translated a Latin original.",
+          "limits": "The source does not verify the exact count of 106 bishops or every doctrinal formulation. The episode's JSTOR pointer was not accessible beyond available metadata. Acts are near-event documentary material, but their transmission and later interpretation matter; avoid a simplistic inevitable Rome-versus-empire narrative."
+        }
+      ],
+      "assessment": "Synod and condemnation are plausible established event; exact attendance/count needs a page-level source actually consulted."
+    },
+    {
+      "order": 21,
+      "id": "21-exile-relief-and-copying-cherson",
+      "date": "Arrest 653; arrival Cherson May 655; death disputed 655/656",
+      "place": "Rome, Constantinople, then Cherson (Crimea)",
+      "sources": [
+        {
+          "url": "https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html",
+          "locator": "Allen & Neil, Maximus the Confessor and his Companions, excerpt §7 and notes 4–5",
+          "consulted": "Passage and notes read.",
+          "supports": "Martin was arrested, tried in Constantinople, had death sentence commuted to exile, and reached Cherson in May 655; excerpt reports death-date alternatives 16 September 655 or 13 April 656.",
+          "limits": "Modern scholarly excerpt of a source dossier, not Martin's own full acts. Use 'according to the account' for procedural detail; death date remains unresolved. KCL Prosopography page https://pbe.kcl.ac.uk/data/D53/F51.htm search result notes another indiction-based alternative, further demonstrating chronology conflict."
+        }
+      ],
+      "assessment": "Exile route is supported; end date is disputed."
+    },
+    {
+      "order": 22,
+      "id": "22-finite-material-records-rome-ostia",
+      "date": "663",
+      "place": "Pantheon, Rome; Constans II's Italian journey",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP%2A/Pantheon.html",
+          "locator": "Platner & Ashby, Pantheon entry, paragraph on bronze roofing; cites Liber Pontificalis",
+          "consulted": "Passage surfaced in search/opened result; secondary gazetteer, not the underlying LP passage itself.",
+          "supports": "A traditional account attributes removal of bronze roof tiles to Constans II in 663.",
+          "limits": "Not an archaeological demonstration of which metal was removed or its quantity. Avoid the dramatic claim that all bronze was stripped, and do not confuse roof tiles with other bronze fittings. The episode's linked Catholic Encyclopedia was not independently opened in this check. Pantheon museum overview https://pantheon.museum/the-pantheon/history/ also reports gilded bronze tiles stripped in 663, but is a modern summary, not an ancient witness."
+        }
+      ],
+      "assessment": "Date/event is a commonly repeated textual tradition; scope and material specifics need qualification."
+    },
+    {
+      "order": 23,
+      "id": "23-delegation-and-document-escort-constantinople",
+      "date": "680–681",
+      "place": "Constantinople, imperial palace / council venue",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3813.htm",
+          "locator": "Acts of Constantinople III; opening sessions, Agatho's letter and Roman legates",
+          "consulted": "Page opened and relevant text checked.",
+          "supports": "Agatho's letter was read and Roman representatives participated in the council; council proceedings condemn Monothelite doctrine and Theodore of Pharan, Sergius, Cyrus, Pyrrhus and others.",
+          "limits": "This is a later English translation/edition of conciliar acts, with ecclesiastical framing. It proves what the acts record, not a neutral account of all participants' motives or immediate universal acceptance."
+        }
+      ],
+      "assessment": "Core council and papal delegation supported by the acts; frame doctrinal terms as the council's own."
+    },
+    {
+      "order": 24,
+      "id": "24-disputed-document-reception-rome-ostia",
+      "date": "692",
+      "place": "Council at Trullo, Constantinople; later reception at Rome",
+      "sources": [
+        {
+          "url": "https://mail.myriobiblos.gr/texts/english/milton1_11.html",
+          "locator": "Milton V. Anastos, 'The Constantinopolitan Council in Trullo (692)'",
+          "consulted": "Accessible passage/result reviewed; not a critical edition of Sergius's correspondence.",
+          "supports": "Secondary account discusses the council's canons and Roman objections/refusal to accept/sign some canons; the episode's broad dispute is credible.",
+          "limits": "The wording 'Sergius refuses to sign the canons sent to Rome' compresses a complex reception history and needs a primary letter or LP passage locator. Fordham's canon text https://sourcebooks.web.fordham.edu/basis/trullo.asp was checked for canons, not this refusal; its editorial introduction is not primary evidence. Avoid depicting a single uncomplicated papal veto."
+        }
+      ],
+      "assessment": "Dispute is real but event formulation/source locator should distinguish council acts from later Roman reception."
+    },
+    {
+      "order": 25,
+      "id": "25-artisan-and-council-logistics-rome-ostia",
+      "date": "731; council date sometimes given November 1, while related notices differ",
+      "place": "Rome; council associated with St Peter's",
+      "sources": [
+        {
+          "url": "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_%28Enciclopedia-Italiana%29/",
+          "locator": "Treccani, Iconoclastia, section on Gregory III",
+          "consulted": "Institutional encyclopedia entry consulted at search-result scope; full precise paragraph not confirmed.",
+          "supports": "Reports Gregory III's Roman synod and condemnation of iconoclasm in 731.",
+          "limits": "Secondary overview. PBE https://pbe.kcl.ac.uk/data/D31/F00.htm search-result entry instead characterizes a council at Rome c.732; sources may conflate papal election/first synod and the later council. Do not claim a single exact day or that Gregory's decision proves empire-wide systematic image destruction. Fordham's 731 papal letter https://sourcebooks.web.fordham.edu/source/731Greg3.asp is a separate letter on sale of Christians for sacrifice, not evidence for the image synod; avoid conflating documents."
+        }
+      ],
+      "assessment": "Broad synodal response supported in secondary references; exact date/event sequence deserves a primary LP locator."
+    },
+    {
+      "order": 26,
+      "id": "26-delegate-and-oath-logistics-saint-denis",
+      "date": "754; crossing and anointing",
+      "place": "Alpine route and Frankish royal setting; Saint-Denis focus is not the documented Alpine crossing location",
+      "sources": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/source/lorsch1.asp",
+          "locator": "Lorsch Annals, entry 754",
+          "consulted": "Entry excerpt read: says Stephen received a promise from Pippin to defend the Roman church and anointed the king and sons Charles and Carloman.",
+          "supports": "A later Frankish annal records a promise and anointing in 754.",
+          "limits": "This annal does not establish a precise Alpine route, a Saint-Denis scene, or treaty boundaries. Cambridge study https://www.cambridge.org/core/journals/studies-in-church-history/article/origins-of-royal-anointing/C070A88A22A870E86202BC8AF0F35C90 consulted at abstract scope reports disputed traditions for 751/754 and notes the Royal Frankish Annals do not date a ceremony. Episode points Fordham's Donation intro, not this primary annal; its candidate bundles crossing, anointing, and protection. Keep each detail attributed and separate."
+        }
+      ],
+      "assessment": "Anointing/protection tradition exists, but exact location and treaty details aren't proven by cited excerpt."
+    },
+    {
+      "order": 27,
+      "id": "03-roads-to-pavia",
+      "date": "754–756",
+      "place": "Frankish crossings into Italy; Lombard territories and Rome",
+      "sources": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/einhard.asp",
+          "locator": "Einhard, Life of Charlemagne chs. 6 and 28 (as cited)",
+          "consulted": "Cited locator checked against the episode; Einhard is not the relevant witness for Pippin's 754–756 campaigns (ch. 28 concerns Charlemagne/800; ch. 6 Charlemagne's campaigns). The supplied citations do not support the stated Pippin settlement.",
+          "supports": "No claim about the Donation of Pippin or its boundaries is established by these citations.",
+          "limits": "This is a source mismatch. Use a properly located papal biography/Frankish annal and distinguish Pippin's interventions in 754/756 from later reconstructions of territorial transfers. Do not draw exact boundaries from a summary."
+        }
+      ],
+      "assessment": "As currently sourced, key content is unsupported; correct documentary references before treating as sourced episode."
+    },
+    {
+      "order": 28,
+      "id": "28-finite-siege-and-civilian-withdrawal-pavia",
+      "date": "773–774; Pavia taken in 774",
+      "place": "Pavia/Ticinum, Lombard capital",
+      "sources": [
+        {
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne chs. 6 and 27 as cited",
+          "consulted": "Cited link and locator inspected; they provide broad Charlemagne campaign context, not a directly consulted detailed Pavia siege account or civilian withdrawal record.",
+          "supports": "Einhard ch. 6 gives a retrospective summary of Charlemagne's Lombard campaign; not sufficient to substantiate a civilian evacuation scene.",
+          "limits": "Primary annal page at Regnum Francorum Online https://francia.ahlfeldt.se/page/documents/14301, entry 774-04, was consulted in search result: says Pavia was captured with Desiderius, wife, daughter and palace treasure. KCL PBE https://pbe.kcl.ac.uk/data/D22/F03.htm similarly summarizes capture after Easter 774, but is secondary prosopography. Neither supports 'civilian withdrawal'. Avoid inserting evacuation as historical fact; Pavia as named siege site is supported, but do not infer an exact siege perimeter or civilian route."
+        }
+      ],
+      "assessment": "Campaign and capture are supported; civilian-withdrawal mechanic is unverified fictional framing."
+    },
+    {
+      "order": 29,
+      "id": "29-delegate-logistics-and-copying-nicaea",
+      "date": "787",
+      "place": "Nicaea, Bithynia",
+      "sources": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/nicea2.asp",
+          "locator": "Acts of Nicaea II, opening/session I and papal letter",
+          "consulted": "Primary acts text excerpt read; also cross-checked accessible acts page https://www.catecharium.com/archive/works/nicaea-ii-787/3, session I.",
+          "supports": "Hadrian's letter was read and papal legates attended. Acts articulate the council's position on veneration of images.",
+          "limits": "Council's own terms should be attributed; don't collapse veneration into worship or imply unanimous/instant acceptance across Christianity. Translation/editorial introduction is not contemporary evidence."
+        }
+      ],
+      "assessment": "Legation and acts supported by council record."
+    },
+    {
+      "order": 30,
+      "id": "30-symbolic-consignment-and-couriers-rome-ostia",
+      "date": "Election 795; keys/banner sent early 796 in Frankish annal chronology",
+      "place": "Rome to Charlemagne's court (whereabouts depends on annal itinerary)",
+      "sources": [
+        {
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne, entry/year 796 rather than cited Schaff section",
+          "consulted": "Relevant annalistic report encountered via searchable historical compilation quoting Einhard; direct source text not fully opened in this audit.",
+          "supports": "The tradition that Leo sent keys of St Peter's confession and Rome's banner, requesting an envoy to bind Romans by oaths, appears in Frankish annalistic reporting; a consulted derivative page https://deltoi.com/it/muratori/annali-italia/chapter-0796 gives the translated passage and attributes it to Frankish Annals/Einhard.",
+          "limits": "Episode source is Schaff, a 19th-century secondary synthesis. Date discrepancy: Leo's election late Dec 795, dispatch is recorded under 796. The symbols do not alone prove transfer of sovereignty; later historians disagreed over meaning. Need cite critical edition/translation of Annales regni Francorum directly for final dossier."
+        }
+      ],
+      "assessment": "Material act has early narrative support, but chronology/source should be corrected and political meaning left open."
+    },
+    {
+      "order": 31,
+      "id": "31-refuge-and-petition-escort-paderborn",
+      "date": "799",
+      "place": "Assault in Rome; Leo later at Paderborn with Charlemagne",
+      "sources": [
+        {
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne ch. 28",
+          "consulted": "Chapter locator consulted by search; retrospective biography. Separate RFA 799 excerpt available via secondary reproduction https://deltoi.com/it/muratori/annali-italia/chapter-0799, not treated as a critical edition.",
+          "supports": "Einhard reports Leo was attacked by Romans, escaped to St Peter's, then went to Charlemagne; RFA tradition places Charlemagne and Leo at Paderborn and records his reception there.",
+          "limits": "Einhard wrote later and frames events politically; accusations against Leo and assault details are contested/mediated. RFA and LP tell differently inflected accounts. Paderborn is supported as the Frankish court meeting place, but not every escort detail or a precise local route. The linked Einhard page alone does not substantiate every step."
+        }
+      ],
+      "assessment": "Broad flight and meeting supported by Carolingian narratives; attribute and avoid presenting allegations as adjudicated fact."
+    },
+    {
+      "order": 32,
+      "id": "04-a-crown-at-dawn",
+      "date": "25 December 800",
+      "place": "St Peter's basilica, Rome",
+      "sources": [
+        {
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne ch. 28",
+          "consulted": "Relevant chapter searched/read in translation context; Einhard's text says Leo crowned Charles at Christmas mass and that Charles later said he would not have entered the church had he known the pope's plan.",
+          "supports": "Crowning by Leo at St Peter's on Christmas is also narrated in the later Liber Pontificalis life of Leo III; Frankish annals record coronation/acclamation but differ in emphasis.",
+          "limits": "Einhard wrote after Charles's death and presents the surprise as Charles's claimed position; not proof of his private mental state. A search result for the 800 Frankish annal notes some contemporary Frankish annals omit the coronation while Lorsch/Moissac provide fuller versions; don't call consensus uniform. No source consulted proves dawn specifically; title only. Keep the date and site, attribute the scene."
+        }
+      ],
+      "assessment": "Coronation is well attested, surprise is a reported claim with likely literary/political function."
+    }
+  ],
+  "geographyAudit": {
+    "usedProfiles": [
+      "rome-ostia",
+      "cherson",
+      "constantinople",
+      "saint-denis",
+      "pavia",
+      "nicaea",
+      "paderborn"
+    ],
+    "presentInDesignGeography": [
+      "rome-ostia",
+      "constantinople",
+      "pavia",
+      "nicaea"
+    ],
+    "missingFromDesignGeography": [
+      "cherson",
+      "saint-denis",
+      "paderborn"
+    ],
+    "presentInEpisodeGeography": [],
+    "missingFromEpisodeGeography": [
+      "rome-ostia",
+      "cherson",
+      "constantinople",
+      "saint-denis",
+      "pavia",
+      "nicaea",
+      "paderborn"
+    ],
+    "note": "Compared profile IDs in docs/design/geography.json and docs/research/odyssey-research/episode-geography.json. That research file uses a different profile-key convention; no direct matches were found. This only reports catalog presence, not geographic correctness or invented coordinates."
+  },
+  "crossEpisodeCautions": [
+    "The linked Einhard chs. 6 and 28 do not support Pippin's 754–756 agreements; episode 27 has a material source mismatch.",
+    "Einhard ch. 6/27 and the available annal passage do not document civilian withdrawal at Pavia; treat as fictional scenario framing.",
+    "The 795 keys/banner episode is generally recorded under 796 in Frankish annal chronology; symbols do not establish a formal sovereignty transfer.",
+    "The Gregory III synod's exact date has variant presentations (731 versus c.732); distinguish the synod from the separate papal letter in the 731 Fordham source.",
+    "No map, image, or geography asset license was cleared by these source checks. Accessible historical text does not grant reuse rights."
+  ],
+  "accessLimits": "Marks source access at passage, abstract, or search-result scope. Several selected links (JSTOR Price, Treccani, Catholic Encyclopedia) were not fully read in this run; no search snippet is represented as full-book consultation. No large copyrighted passages reproduced.",
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="Stone above the Old City geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">Stone above the Old City</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · jerusalem · N ↑ E →</text>
+<polyline data-corridor="western-work-approach" points="251.30,245.98 422.89,498.31" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-work-approach: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northern-stock-loop" points="251.30,245.98 444.35,170.28 551.59,271.22 422.89,498.31" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northern-stock-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-binder-link" points="337.11,624.48 422.89,498.31" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-binder-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="western-supply-alternative" points="251.30,245.98 337.11,624.48 422.89,498.31" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>western-supply-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northern-account-return" points="422.89,498.31 444.35,170.28" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>northern-account-return: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="251.30" cy="245.98" r="20" fill="none" stroke="#91512f"/>
+<text x="274.30" y="245.98" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional northwestern material staging</text>
+<text x="730" y="204" font-family="sans-serif" font-size="12">yard</text>
+<circle cx="422.89" cy="498.31" r="20" fill="none" stroke="#91512f"/>
+<text x="445.89" y="498.31" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional work reception west of the</text>
+<text x="730" y="254" font-family="sans-serif" font-size="12">monument district</text>
+<circle cx="551.59" cy="271.22" r="20" fill="none" stroke="#91512f"/>
+<text x="574.59" y="271.22" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional northeastern timber receiving</text>
+<text x="730" y="304" font-family="sans-serif" font-size="12">stock</text>
+<circle cx="337.11" cy="624.48" r="20" fill="none" stroke="#91512f"/>
+<text x="360.11" y="624.48" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional southern binder preparation</text>
+<text x="730" y="354" font-family="sans-serif" font-size="12">yard</text>
+<circle cx="444.35" cy="170.28" r="20" fill="none" stroke="#91512f"/>
+<text x="467.35" y="170.28" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional northern work and account</text>
+<text x="730" y="404" font-family="sans-serif" font-size="12">shelter</text>
+<text x="730" y="425" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="449" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="473" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="497" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="521" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="545" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="569" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="593" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [35.213, 31.771, 35.235, 31.794]; cosine-corrected longitude; approximate districts</text>
+</svg>

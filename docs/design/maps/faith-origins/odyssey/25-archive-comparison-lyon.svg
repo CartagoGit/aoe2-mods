@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="Voices Against the Fragments geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">Voices Against the Fragments</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · lyon · N ↑ E →</text>
+<polyline data-control="schematic-water" points="424.99,119.82 465.88,207.76" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="465.88,207.76 600.84,295.68" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="600.84,295.68 613.09,383.62" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="613.09,383.62 564.03,506.72" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="564.03,506.72 539.49,612.24" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="539.49,612.24 485.81,700.18" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic Saone relation, no surveyed ancient channel; do not rasterize as native water</title></polyline>
+<polyline data-corridor="main" points="367.72,489.14 208.25,436.38 294.12,242.92" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-road" points="367.72,489.14 416.81,594.66 208.25,436.38" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-road: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="208.25,436.38 416.81,594.66 294.12,242.92" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="367.72" cy="489.14" r="20" fill="none" stroke="#91512f"/>
+<text x="390.72" y="489.14" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Western local pickup court</text>
+<circle cx="208.25" cy="436.38" r="20" fill="none" stroke="#91512f"/>
+<text x="231.25" y="436.38" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Westward provision court</text>
+<circle cx="294.12" cy="242.92" r="20" fill="none" stroke="#91512f"/>
+<text x="317.12" y="242.92" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Northwestern preservation yard</text>
+<circle cx="416.81" cy="594.66" r="20" fill="none" stroke="#91512f"/>
+<text x="439.81" y="594.66" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Southern inland reception yard</text>
+<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="564" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="588" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [4.788, 45.748, 4.832, 45.781]; cosine-corrected longitude; approximate districts</text>
+</svg>

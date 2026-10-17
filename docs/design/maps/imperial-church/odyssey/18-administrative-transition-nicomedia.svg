@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Court without Its Emperor geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Court without Its Emperor</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · nicomedia · N ↑ E →</text>
+<polyline data-corridor="household-work-handoff" points="151.72,435.54 337.43,558.20 407.08,425.33" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>household-work-handoff: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="service-work-handoff" points="321.96,272.02 577.33,312.91 407.08,425.33" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>service-work-handoff: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="local-outgoing-relay" points="407.08,425.33 561.84,527.54" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>local-outgoing-relay: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-household-alternative" points="151.72,435.54 407.08,425.33 337.43,558.20" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-household-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-service-alternative" points="321.96,272.02 407.08,425.33 577.33,312.91" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-service-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="151.72" cy="435.54" r="20" fill="none" stroke="#91512f"/>
+<text x="174.72" y="435.54" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional western household-work origin</text>
+<circle cx="321.96" cy="272.02" r="20" fill="none" stroke="#91512f"/>
+<text x="344.96" y="272.02" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional northern service-work origin</text>
+<circle cx="337.43" cy="558.20" r="20" fill="none" stroke="#91512f"/>
+<text x="360.43" y="558.20" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional southern household receiver</text>
+<circle cx="577.33" cy="312.91" r="20" fill="none" stroke="#91512f"/>
+<text x="600.33" y="312.91" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional northeast service receiver</text>
+<circle cx="407.08" cy="425.33" r="20" fill="none" stroke="#91512f"/>
+<text x="430.08" y="425.33" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional central personnel-account</text>
+<text x="730" y="404" font-family="sans-serif" font-size="12">court</text>
+<circle cx="561.84" cy="527.54" r="20" fill="none" stroke="#91512f"/>
+<text x="584.84" y="527.54" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: Fictional eastern local outgoing relay</text>
+<text x="730" y="475" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="499" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="523" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="547" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="571" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="595" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="619" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="643" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [29.915, 40.767, 29.99, 40.812]; cosine-corrected longitude; approximate districts</text>
+</svg>

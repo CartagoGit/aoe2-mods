@@ -1,0 +1,39 @@
+# Civic episode playability acceptance
+
+Owner: architect, d00002/S2–S10 for the relevant odyssey, consolidated by S11. This is a design and playtest requirement, not a new runtime capability or a passed game test. MiniMax receives only the resulting approved episode instructions. It must not choose new deadlines, enemies, resource costs or map geometry to solve an open design issue.
+
+The [61-dossier mechanical snapshot](../research/odyssey-research/civic-difficulty-mechanical-audit.json) records source hashes and a consistent before/after read. It finds 54 episodes with no structured hostile/deadline pressure and the same accessible resource envelope across difficulty levels. That filter identifies work to inspect. It does not prove that a logistics puzzle lacks decisions, nor that a battle is interesting. No dossier has passed this practical acceptance merely because it has enough screens, a large rectangle or three worker counts.
+
+## Decisions required before mechanical handoff
+
+For each episode, its architect must state the player's central problem, at least two viable plans with different opportunity costs, the consequence of a poor allocation and the available recovery. Distinct prose around identical fetch chains is insufficient. Distinct IDs and exact receipts prevent exploits; they are not, by themselves, a source of tension or replay value.
+
+The authored map must make those plans legible: useful resource areas, safe staging, alternate connections and secondary activities within the real regional frame. Extra travel across empty terrain is not a substitute for density. No unsupported ancient street, river crossing or historical battle may be added to create an obstacle. Large maps may contain quiet landscape, but all required repeated travel needs a purpose and measured route budget.
+
+Each difficulty needs an explicit decision that becomes more demanding: coordination, exposure, resource allocation, information interpretation or a historically justified tactical problem. Merely lowering workers, withholding the objective description or stretching completion time does not pass. A reflective coda may deliberately offer less pressure; its exception needs an explicit role in act pacing and independent editorial/playtest agreement. It must not be advertised as a severe tactical challenge.
+
+## Test matrix and evidence
+
+Test each difficulty with all secondary tasks skipped, all completed, and the three authored portfolios. Portfolios may overlap; record actual actions rather than counting a shared action as several independent strategies. Repeat a failed or ambiguous case after the architect's revision. Do not fabricate a successful game session from reference reducer behavior.
+
+For each run record the game build/platform, map and artifact hash, profile, prior familiarity, route, payments, losses, optional choices, recovery used and elapsed game time. Mark intervals spent making decisions, moving while another decision remains available, gathering with useful allocation choices, and waiting with no useful action. Command spam does not turn waiting into a decision. Summarize the largest unavoidable wait and why it occurred.
+
+An unavoidable interval above 90 game seconds with no useful choice, or more than 25% of a run in that condition, triggers an architect review. These are initial review thresholds, not measured properties of the current maps or universal claims about enjoyable play. An exception must explain its narrative purpose and why it remains acceptable in the actual run. There is no automatic approval below those thresholds.
+
+Compare easy, standard and hard on the same portfolio. Identify the decision that changed and its consequence. If only time to gather changed, return the episode to the architect. Check that a new player can understand required costs/destinations and can recover from a permitted mistake; hard must not depend on a hidden critical path, an obligatory secondary reward or an unannounced death clock.
+
+## Concrete application: Beyond the Quiet River
+
+The authored problem is a two-station network with six original volunteers and a live quorum of any four, plus a separately identified runner. Every volunteer has one assigned station; 1–3 are northwest and 4–6 southeast. All 15 four-person subsets are valid when correctly positioned: 3+1, 2+2 and 1+3 distributions are possible. The first four observed are never frozen. Two originals can remain free for ordinary movement and viewpoint work; they do not become gatherers or substitutes for unique secondary actors by assertion.
+
+Compare three concrete plans: establish 2+2 staffing then perform the runner circuit; use 3+1 and reassign before final handover to combine nearby tasks; fund shelter/trade investment before restoring the quorum and making the final payment. Direct gathering remains viable with all seven secondaries skipped. Quantify route lengths, useful choices and investment benefit rather than assuming these plans are equally good.
+
+Check current staffing at completion of o2 and o3. Moving one of only four present actors away keeps the active checkpoint incomplete; restoring any eligible original repairs it. No continuous residence between checkpoints is claimed. Third original volunteer loss makes the main contract impossible; losing only optional neighbors never does. Historical arrival, old observation, the wrong assigned station and replacement actors cannot satisfy current presence.
+
+The budget is 380 food and 240 wood: northwest 160F/80W, southeast 100F/100W, then southeast 120F/60W. Supply lots 1–2 go northwest and lot3 southeast. The runner's o2/req-4 receipt alone authorizes o3/req-1 departure and the qualified southeast arrival in o3/req-2. Native staffing observers and real actor packing remain gated by i00005/S2 and the relevant map QA.
+
+This is currently a calm management design with no hostile or deadline. The quorum introduces a coordination rule; it does not establish meaningful difficulty or fun without observation. If all plans collapse to effortless stationing followed by idle gathering, revise the playable design and economy before approval. Do not invent a bishop pursuit, flood, riot battle or mandatory timer to conceal that result. The imperial recall remains an off-map historical report, independent of player spending.
+
+## Closing a finding
+
+The relevant existing dossier slice retains ownership of historical/geographic/gameplay decisions. Record the failing run, the architect's concrete revision, the new artifact hash and the repeated result. Update that episode's approved brief and structured design together, obtain independent review and preserve native capability gates. A technical source/proposal migration review does not close these playability findings.
