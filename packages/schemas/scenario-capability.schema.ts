@@ -252,6 +252,13 @@ const liveEntityPresencePredicate = z.strictObject({
   destinations: z.record(contractId, contractId),
   requiredCount: z.number().int().positive(),
 });
+const checkpointEntityPresencePredicate = z.strictObject({
+  id: contractId,
+  kind: z.literal("checkpoint-entity-presence"),
+  entities: z.array(contractId).min(1),
+  destinations: z.record(contractId, contractId),
+  requiredCount: z.number().int().positive(),
+});
 export const worldPredicateSchema = z.discriminatedUnion("kind", [
   entityStatePredicate,
   areaStatePredicate,
@@ -268,6 +275,7 @@ export const worldPredicateSchema = z.discriminatedUnion("kind", [
   forbiddenEntryPredicate,
   phaseDeadlinePredicate,
   liveEntityPresencePredicate,
+  checkpointEntityPresencePredicate,
 ]);
 const composedPredicateSchema = z.strictObject({
   operator: z.literal("all"),

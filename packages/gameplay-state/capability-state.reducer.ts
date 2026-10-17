@@ -338,6 +338,7 @@ export function reduceCapabilityState(
         "civilian-protection",
         "entity-state",
         "current-entity-presence",
+        "checkpoint-entity-presence",
       ].includes(req.kind)
     )
       return state;
