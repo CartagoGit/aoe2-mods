@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: campaign-design
 date: 2026-10-18
+shipped-in:
+  - "bb33a0564c3961f2a3a86a21904299013402b85a"
 ---
 
 # i00007 — Alternative fulfillment plans with atomic reservation and persistent recipe identity
@@ -29,15 +31,17 @@ Reproduction: docs/research/odyssey-research/imperial34-care-allocation-plan.jso
 - global_gate: e2e
 
 ### S1 — Architect decision and explicit choice/reservation semantics
-- **Status**: review
+- **Status**: done
 - **Files**: `docs/architecture/alternative-fulfillment.md`, `docs/qa/alternative-fulfillment/decision`
 - **Gate**: type
 - acceptance:
   - "Inspect installed contracts/reference/native operations and issue a bounded ADR choosing a proven reuse path or an explicit compatible capability design; do not alter existing contracts merely to make this episode pass."
   - "Specify unique service/recipe identity, preview without debit, exactly one choice per service, joint affordability and atomic reservation, once-only debits, pre-work cancellation versus post-work commitment, explicit refund/recovery/lost-output behavior and defeat-first terminal handling."
   - "State exact output identities, prerequisites, physical reception and survivor rules; payment is neither delivered cargo nor ownership/belief. Define save/load and all-skip/all-complete/three-portfolio acceptance. Independent review required before implementation."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at bb33a0564c39, validate exit 0, tests 108/108; acceptance 3/3: (1) Verified against the 14-file source-inspection record (SHA-256s matched base 216c033e) and architecture decision: existing v1/v2 contracts stay unchanged; v3 i… (2) Inspected the bounded decision and C01-C33 case file; it defines plan/recipe identity, preview/reserve/commit/cancel, terminal ordering, replay and output qual… (3) The ADR/case file specify output identity, prereqs, reception and survivor conditions, distinguish payment from receipt/ownership, and define save/load, all-sk…
 
 ### S2 — Only after ADR: compatible reference implementation and compiler rejection
 - **Status**: pending
