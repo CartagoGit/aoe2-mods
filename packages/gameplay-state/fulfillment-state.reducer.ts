@@ -85,7 +85,7 @@ export function previewFulfillment(
   )
     return null;
   const total = recipeTotal(recipes);
-  return {
+  return structuredClone({
     selection,
     total,
     spendable: { ...state.core.spendable },
@@ -94,7 +94,7 @@ export function previewFulfillment(
       ? debit(state.core.spendable, total)
       : null,
     recipes,
-  };
+  });
 }
 
 /** Versioned composition, reusing the v2 reducer and its actual observation helpers. */
