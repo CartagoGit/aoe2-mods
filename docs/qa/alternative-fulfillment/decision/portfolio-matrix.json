@@ -4114,7 +4114,6 @@
     }
   ],
   "counts": {
-    "allSkipRecipePairs": 19,
     "portfolioExpectations": 95,
     "beforeFundingWitnesses": 24,
     "allSkipPairsByDifficulty": {
@@ -4122,10 +4121,22 @@
       "standard": 7,
       "hard": 3
     },
-    "pairsWithSomePreFundingAidByDifficulty": {
+    "allSkipDifficultyRecipePairs": 19,
+    "uniqueRecipePairs": 9,
+    "beforeFundingWitnessesByDifficulty": {
       "easy": 9,
       "standard": 8,
       "hard": 7
+    },
+    "nonEmptyOptionalPrefixesByDifficulty": {
+      "easy": 0,
+      "standard": 1,
+      "hard": 4
+    },
+    "newlyAffordablePairsAfterOptionalsByDifficulty": {
+      "easy": 0,
+      "standard": 1,
+      "hard": 4
     }
   },
   "nativeImplemented": false,
