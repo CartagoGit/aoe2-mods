@@ -1,14 +1,17 @@
 import { duplicates, type Issue, issue } from "../core/diagnostics.helper";
+import type { CapabilityProfile } from "../schemas/alternative-fulfillment.schema";
+import { sharedCapabilityProfile } from "../schemas/alternative-fulfillment.schema";
 import type {
   CapabilityProfileV2,
   MainObjective,
 } from "../schemas/scenario-capability.schema";
+import { validateAlternativeFulfillment } from "./alternative-fulfillment.validator";
 import { isSameOrRequiredPredecessor } from "./objective-ancestry.helper";
 import { paymentReceiptMatches } from "./payment-receipt.helper";
 import { validateRequirementCausality } from "./requirement-causality.validator";
 
 const resourceNames = ["food", "wood", "gold", "stone"] as const;
-export function validateScenarioCapability(
+function validateSharedScenarioCapability(
   profile: CapabilityProfileV2,
 ): Issue[] {
   const districtIds = profile.districts;
@@ -1076,4 +1079,15 @@ export function validateScenarioCapability(
 
 export function capabilityObjectiveRequirements(objective: MainObjective) {
   return objective.predicate.requirements;
+}
+
+export function validateScenarioCapability(
+  profile: CapabilityProfile,
+): Issue[] {
+  return profile.schemaVersion === 3
+    ? [
+        ...validateSharedScenarioCapability(sharedCapabilityProfile(profile)),
+        ...validateAlternativeFulfillment(profile),
+      ]
+    : validateSharedScenarioCapability(profile);
 }
