@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 COMPILER = runpy.run_path(str(ROOT / "tools/map/geographic_raster.compiler.py"))
+EXTENT = runpy.run_path(str(ROOT / "tools/map/geographic_extent_audit.script.py"))
 FRAME = runpy.run_path(str(ROOT / "tools/map/geographic_frame.helper.py"))
 SCRIPT = ROOT / "tools/map/geographic_raster.script.py"
 REAL_GRID = ROOT / "tests/maps/fixtures/edirne-dsm-sample-grid.json"
@@ -117,6 +118,50 @@ class GeographicRasterTests(unittest.TestCase):
             before = source.read_bytes()
             self.assertNotEqual(self.cli(source, source).returncode, 0)
             self.assertEqual(source.read_bytes(), before)
+
+    def test_padded_reference_gap_and_half_cell_gap_are_separate(self):
+        episode = {"id": "synthetic", "order": 1, "geographyId": "region", "mapSize": 300,
+                   "mapPlan": {"bbox": [-0.1, -0.1, 0.1, 0.1]}}
+        record = EXTENT["audit_episode"]("campaign", episode, {"bbox": [-0.1, -0.1, 0.1, 0.1]})
+        self.assertTrue(record["requestedBBoxWithinReference"])
+        self.assertFalse(record["paddedSampleCentersWithinReference"])
+        self.assertTrue(record["coverageReviewNeeded"])
+        frame = FRAME["make_frame"](episode["mapPlan"]["bbox"], 300)
+        record = EXTENT["audit_episode"]("campaign", episode, {"bbox": frame.bounds_at(0, 299)})
+        self.assertTrue(record["paddedSampleCentersWithinReference"])
+        self.assertTrue(record["onlyOuterHalfCellExceedsReference"])
+        record = EXTENT["audit_episode"]("campaign", episode, {"bbox": [-0.2, -0.2, 0.2, 0.2]})
+        self.assertFalse(record["coverageReviewNeeded"])
+
+    def test_extent_audit_preserves_zero_dossier_campaign_and_rejects_missing_source(self):
+        policy = {"campaigns": [{"id": "a"}, {"id": "b"}]}
+        episode = {"id": "synthetic", "order": 1, "geographyId": "region", "mapSize": 300,
+                   "mapPlan": {"bbox": [-0.1, -0.1, 0.1, 0.1]}}
+        campaigns = [{"campaignId": "a", "episodes": [episode], "episodeSelection": [episode]},
+                     {"campaignId": "b", "episodes": [], "episodeSelection": [{"id": "pending"}]}]
+        report = EXTENT["build_report"](policy, campaigns, {"region": {"bbox": [-0.2, -0.2, 0.2, 0.2]}}, {})
+        self.assertEqual(report["authoredDossiers"], 1)
+        self.assertEqual(report["selectedEpisodes"], 2)
+        self.assertEqual(report["campaignCoverage"][1]["authoredDossiers"], 0)
+        self.assertFalse(report["gameVerified"])
+        with self.assertRaisesRegex(ValueError, "Missing geographic reference"):
+            EXTENT["build_report"](policy, campaigns, {}, {})
+        del campaigns[1]["episodes"]
+        with self.assertRaisesRegex(ValueError, "explicitly declare"):
+            EXTENT["build_report"](policy, campaigns, {"region": {"bbox": [-0.2, -0.2, 0.2, 0.2]}}, {})
+
+    def test_actual_extent_cli_is_complete_without_granting_approval(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / "extent.json"
+            result = subprocess.run([sys.executable, str(ROOT / "tools/map/geographic_extent_audit.script.py"),
+                                     "--output", str(output)], cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            report = json.loads(output.read_text())
+            self.assertEqual(report["authoredDossiers"], len(report["records"]))
+            self.assertEqual(report["extentQuestions"], sum(row["coverageReviewNeeded"] for row in report["records"]))
+            self.assertEqual(len(report["campaignCoverage"]), len(json.loads((ROOT / "docs/design/odyssey-policy.json").read_text())["campaigns"]))
+            self.assertTrue(report["sourceSemanticHashes"])
+            self.assertFalse(report["gameVerified"])
 
 
 if __name__ == "__main__":
