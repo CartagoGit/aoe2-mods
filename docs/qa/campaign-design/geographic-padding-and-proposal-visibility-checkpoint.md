@@ -27,3 +27,7 @@ The connected status tool reports `maintenance.maintains=false`, `code.stale=fal
 The supported follow-up is for that maintainer to inspect its effective proposals directory, compare the actual i00003 file hash against the integrated version, and repeat proposal_get there. Until the official view agrees, consumers must read the full integrated proposal and preserve both pending Sirmium requirements. This operational discrepancy does not approve S3/S4, block unrelated design work, or justify editing the runtime in this project. Luna independently repeated the bounded read-only diagnosis after officially retiring its delivered review unit.
 
 Integrated i00003 Markdown SHA-256: `28679fce59a3aec16da3b961e069fdfb174668a516f52861f4e8a639ad65fc39`.
+
+## Subsequent official confirmation
+
+After the next certified delivery at develop `327cc45675ec2e3eed83e819158e17b7b21e476a`, the official i00003 detail view returned S3 four criteria and S4 three, including both Sirmium requirements. The visibility discrepancy above is now resolved by observation; its exact transient cause was not established. No runtime edit, restart or manual checkout repair was used. The new i00007 also became visible as ready with three pending slices and three acceptance criteria per slice. The first immediate query after publication preceded this convergence; work status then reported the current integration base and subsequent reads agreed. These observations are not implementation or approval of any of those pending requirements.
