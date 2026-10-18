@@ -3,6 +3,7 @@ import {
   sharedCapabilityProfile,
 } from "../schemas/alternative-fulfillment.schema";
 import type { CapabilityAction } from "./capability-action.model";
+import { generationReady } from "./capability-generation.helper";
 import { hasIrrecoverableLoss } from "./capability-predicates.validator";
 import { finishTerminal } from "./capability-snapshot.factory";
 import { reduceCapabilityState } from "./capability-state.reducer";
@@ -125,7 +126,13 @@ export function reduceFulfillmentState(
     type: "tick",
     nowSeconds: action.nowSeconds,
     difficulty: state.core.difficulty,
-    defeatConditions: [],
+    defeatConditions:
+      action.type === "shared" &&
+      action.action.type === "tick" &&
+      action.action.nowSeconds === action.nowSeconds &&
+      action.action.difficulty === state.core.difficulty
+        ? action.action.defeatConditions
+        : [],
     victoryConditions: [],
   });
   if (clock.terminal) return finalized(profile, { ...state, core: clock });
@@ -160,6 +167,7 @@ export function reduceFulfillmentState(
       core: finishTerminal(observed, "defeat"),
     });
   const living = (id: string) =>
+    generationReady(base, observed, id) &&
     observed.entityStates[id] !== "destroyed" &&
     observed.liveSpatialObservation?.entities[id]?.alive === true;
   const at = (id: string, zone: string) =>
@@ -170,6 +178,11 @@ export function reduceFulfillmentState(
   if (action.type === "observe") return finalized(profile, current);
   if (action.type === "shared") {
     let shared: CapabilityAction = action.action;
+    if (
+      shared.type === "enter-phase" &&
+      shared.nowSeconds !== action.nowSeconds
+    )
+      return finalized(profile, current);
     if ("entityId" in shared && unavailable.has(shared.entityId))
       return finalized(profile, current);
     const ready =
