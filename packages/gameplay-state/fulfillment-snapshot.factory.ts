@@ -119,6 +119,15 @@ export function validateFulfillmentSnapshot(
       fail("resource conservation");
   }
   const active = state.active;
+  if (
+    active &&
+    !state.core.terminal &&
+    state.core.phase !== profile.fulfillmentPlan.phase &&
+    (active.status !== "committed" ||
+      active.completedServices.length !==
+        profile.fulfillmentPlan.services.length)
+  )
+    fail("unfinished plan outside work phase");
   if (state.attemptCounter > Math.floor(Number.MAX_SAFE_INTEGER / 2))
     fail("attempt exhaustion");
   if (!active) {
