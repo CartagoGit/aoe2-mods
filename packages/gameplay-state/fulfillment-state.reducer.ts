@@ -170,20 +170,21 @@ export function reduceFulfillmentState(
   if (action.type === "observe") return finalized(profile, current);
   if (action.type === "shared") {
     let shared: CapabilityAction = action.action;
-    if ("entityId" in shared && unavailable.has(shared.entityId)) return state;
+    if ("entityId" in shared && unavailable.has(shared.entityId))
+      return finalized(profile, current);
     const ready =
       current.active?.status === "committed" &&
       current.active.completedServices.length ===
         profile.fulfillmentPlan.services.length &&
       fulfillmentPresent(profile, current);
     if (shared.type === "enter-phase" && shared.phase === "victory" && !ready)
-      return state;
+      return finalized(profile, current);
     if (shared.type === "tick") {
       if (
         shared.nowSeconds !== action.nowSeconds ||
         shared.difficulty !== state.core.difficulty
       )
-        return state;
+        return finalized(profile, current);
       shared = {
         ...shared,
         victoryConditions: ready ? shared.victoryConditions : [],
@@ -198,7 +199,8 @@ export function reduceFulfillmentState(
       next.core = finishTerminal(core, "defeat");
     return finalized(profile, next);
   }
-  if (observed.phase !== profile.fulfillmentPlan.phase) return state;
+  if (observed.phase !== profile.fulfillmentPlan.phase)
+    return finalized(profile, current);
   if (action.type === "reserve") {
     const recipes = selectedRecipes(profile, action.selection);
     if (
@@ -209,9 +211,9 @@ export function reduceFulfillmentState(
       action.attempt > Math.floor(Number.MAX_SAFE_INTEGER / 2) ||
       !sameResources(action.expectedSpendable, observed.spendable)
     )
-      return state;
+      return finalized(profile, current);
     const total = recipeTotal(recipes);
-    if (!enough(observed.spendable, total)) return state;
+    if (!enough(observed.spendable, total)) return finalized(profile, current);
     const selection = profile.fulfillmentPlan.services.map(
       (service, index) => ({
         serviceId: service.id,
@@ -243,9 +245,9 @@ export function reduceFulfillmentState(
     action.attempt !== active.attempt ||
     action.revision !== state.revision
   )
-    return state;
+    return finalized(profile, current);
   if (action.type === "cancel") {
-    if (active.status !== "reserved") return state;
+    if (active.status !== "reserved") return finalized(profile, current);
     return finalized(profile, {
       ...current,
       core: {
@@ -266,7 +268,7 @@ export function reduceFulfillmentState(
         (recipe) => ![recipe.workerId, ...recipe.recipientIds].every(living),
       )
     )
-      return state;
+      return finalized(profile, current);
     return finalized(profile, {
       ...current,
       escrow: { ...EMPTY_RESOURCES },
@@ -280,13 +282,13 @@ export function reduceFulfillmentState(
       },
     });
   }
-  if (active.status !== "committed") return state;
+  if (active.status !== "committed") return finalized(profile, current);
   const selected = active.selection.find(
     (item) =>
       item.serviceId === action.serviceId && item.recipeId === action.recipeId,
   );
   const recipe = allRecipes.find((item) => item.id === selected?.recipeId);
-  if (!recipe) return state;
+  if (!recipe) return finalized(profile, current);
   const sequence = action.liveSpatialBatch.sequence;
   if (action.type === "depart-for-work") {
     if (
@@ -295,7 +297,7 @@ export function reduceFulfillmentState(
       !living(recipe.workerId) ||
       at(recipe.workerId, recipe.workZoneId)
     )
-      return state;
+      return finalized(profile, current);
     return finalized(profile, {
       ...current,
       active: {
@@ -310,7 +312,7 @@ export function reduceFulfillmentState(
       sequence <= (active.departures[recipe.id] ?? Infinity) ||
       !at(recipe.workerId, recipe.workZoneId)
     )
-      return state;
+      return finalized(profile, current);
     return finalized(profile, {
       ...current,
       active: { ...active, work: { ...active.work, [recipe.id]: sequence } },
@@ -321,7 +323,7 @@ export function reduceFulfillmentState(
       active.work[recipe.id] === undefined ||
       active.generated.includes(recipe.id)
     )
-      return state;
+      return finalized(profile, current);
     return finalized(profile, {
       ...current,
       active: { ...active, generated: [...active.generated, recipe.id] },
@@ -335,7 +337,7 @@ export function reduceFulfillmentState(
         at(id, recipe.receptionZoneId),
       )
     )
-      return state;
+      return finalized(profile, current);
     return finalized(profile, {
       ...current,
       active: {
@@ -344,5 +346,5 @@ export function reduceFulfillmentState(
       },
     });
   }
-  return state;
+  return finalized(profile, current);
 }
