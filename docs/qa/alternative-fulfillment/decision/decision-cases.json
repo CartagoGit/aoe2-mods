@@ -685,9 +685,22 @@
         "rejectedBeforeMutation": true,
         "note": "Do not wrap integers, approximate an unsupported branch count, or invent a missing native operation."
       }
+    },
+    {
+      "id": "C33",
+      "title": "Successor fingerprint includes plan semantics",
+      "preconditions": "Valid saved v3 reservation; legacy v2 fingerprint remains unchanged.",
+      "conceptualSteps": [
+        "Change one recipe cost, output ID, destination or prerequisite while keeping old world fields.",
+        "Try loading the original v3 snapshot under the changed plan."
+      ],
+      "expected": {
+        "loadRejectedBeforeMutation": true,
+        "note": "V3 fingerprint covers full immutable plan plus shared semantics; the old v2 fingerprint alone cannot detect these changes. No cached spatial batch is relabeled as fresh after load."
+      }
     }
   ],
-  "reviewStatus": "independent review pending",
+  "reviewStatus": "operational approval is tracked by live DelendAI and the independent report; these are normative cases",
   "nativeImplemented": false,
   "gameVerified": false
 }

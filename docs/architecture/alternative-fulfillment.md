@@ -1,6 +1,6 @@
 # Alternative fulfillment: architect decision
 
-18 October 2026 · gpt-6 · i00007/S1 · decision proposed for independent review. This document specifies a reusable capability. It does not implement a selector, payment reservation, actor generation, native UI or the Constantinople dossier. No current campaign, public schema, snapshot format, string reservation or progress key changes in S1.
+18 October 2026 · gpt-6 · i00007/S1 · architect-authored decision; official acceptance is tracked in DelendAI and the independent report. This document specifies a reusable capability. It does not implement a selector, payment reservation, actor generation, native UI or the Constantinople dossier. No current campaign, public schema, snapshot format, string reservation or progress key changes in S1.
 
 ## Decision and inspected implementation
 
@@ -32,7 +32,7 @@ New reference actions must be explicitly dispatched by the selected profile vers
 
 ## Immutable authoring inputs
 
-A plan has a stable `planId`, activation phase, ordered service IDs, and finite alternative recipes per service. Each recipe declares its own ID, whole nonnegative cost vector, exact input/output identities, work prerequisites, receiving zones and completion requirements. Each service selects exactly one of its own recipes. Costs are computed from that immutable registry; the input command never supplies a trusted cost, credit, refund or paid flag.
+The first successor profile supports exactly one joint plan per scenario; there are no parallel nested reservations or multiple-plan scheduling in this capability. A plan has a stable `planId`, activation phase, ordered service IDs, and finite alternative recipes per service. Each recipe declares its own ID, whole nonnegative cost vector, exact input/output identities, work prerequisites, receiving zones and completion requirements. Each service selects exactly one of its own recipes. Costs are computed from that immutable registry; the input command never supplies a trusted cost, credit, refund or paid flag.
 
 A joint selection contains every required service exactly once. Reject omitted, duplicate, unknown or cross-service recipe IDs, unsupported account types, invalid/safe-integer-overflow amounts and cyclic work/derivation dependencies. Recipe work cannot depend on an output of an unselected alternative. Ordinary shared workers may be reused in sequential tasks only when the declared prerequisites and actual movement permit it; a single actor never occupies two separated zones in one observation.
 
@@ -59,7 +59,7 @@ The reserve command includes an expected spendable vector from the displayed pre
 
 All selected services commit together. There is no partial reservation, per-service cancellation or post-work refund in this first operation. The compiler derives the per-recipe shares from the same total transfer: later service receipts do **not** debit those shares again. A zero-cost recipe still needs a valid selected attempt and explicit commitment; `enough(0)` is not permission to generate an output repeatedly.
 
-The state keeps spendable, escrow and committed expenditure distinct. For each resource, the initial total of spendable + protected recovery + optional reserve equals their current balances + current escrow + committed main expenditure + paid optional expenditure, assuming no separately declared external transfer. Optional rewards transfer from their finite reserve into spendable. Cancellation transfers escrow back, not a newly computed price or the whole starting budget. This equation is an acceptance invariant, not a claim that the current reducer implements escrow.
+The state keeps spendable, escrow and committed expenditure distinct. For each resource, the initial total of spendable + protected recovery + optional reserve equals their current balances + current escrow + committed main expenditure (both these selected commitments and any other declared fixed main payments) + paid optional expenditure, assuming no separately declared external transfer. Optional rewards transfer from their finite reserve into spendable. Cancellation transfers escrow back, not a newly computed price or the whole starting budget. This equation is an acceptance invariant, not a claim that the current reducer implements escrow.
 
 ## Terminal ordering, failures and recovery
 
@@ -98,11 +98,13 @@ The completion predicate is **all services**, where each service requires **only
 
 ## Save/load and input boundary
 
-Persist contract fingerprint, version, difficulty, phase, spendable/escrow/other accounts, current attempt counter and lifecycle revision, exact selection, status, committed shares and qualifying work/output/service receipts with the complete world state. Validate identity membership, totals, uniqueness and lifecycle/account consistency on load; do not infer missing data or recompute a refund from current content. A mismatched contract or corrupt escrow rejects before mutation.
+Persist contract fingerprint, version, difficulty, phase, spendable/escrow/other accounts, current attempt counter and lifecycle revision, exact selection, status, committed shares and qualifying work/output/service receipts with the complete world state. The v3 fingerprint must cover the complete immutable plan, recipe costs, input/output identities, work and reception prerequisites as well as the shared world/objective/state-machine semantics. The existing v2 fingerprint omits the new plan and cannot be reused unchanged for v3. Changing even one selected cost or destination must invalidate a saved v3 state. Keep the v2 fingerprint itself unchanged.
+
+Validate identity membership, totals, uniqueness and lifecycle/account consistency on load; do not infer missing data or recompute a refund from current content. A mismatched contract or corrupt escrow rejects before mutation.
 
 Persisted receipts are tied to their attempt; an old recipe's payment cannot unlock a different recipe after reload. Re-entry does not reserve or commit again. Saving immediately before and after reserve, cancel, commit, output creation, service completion and terminal is required. Loading an earlier legitimate save rolls back the entire timeline, including world outputs and resource sources; this design does not promise an external anti-rollback ledger.
 
-Drop stale UI/native input queued across load and rebuild the preview from the restored snapshot. The eventual native controller must prove that behavior; lifecycle counters do not by themselves identify an input from a discarded timeline. Save/load must preserve the actual engine world and the matching reference state, not merely a JSON field containing `selected=true`.
+Drop stale UI/native input queued across load and rebuild the preview from the restored snapshot. Historical observations may remain recorded, but only a new authoritative post-load observation of the restored world can satisfy new living-input, work or final-presence checks. Do not renumber a cached observation to make it fresh. The eventual native controller must prove that behavior; lifecycle counters do not by themselves identify an input from a discarded timeline. Save/load must preserve the actual engine world and the matching reference state, not merely a JSON field containing `selected=true`.
 
 The player interaction protocol is preview → explicit reserve → visible cancellable reservation → explicit start-work. Every displayed step states the full two-service cost, stock, remaining work and cancellation boundary in EN/es-ES. This is a semantic UI requirement, not a claim that AoE2 has a custom modal/menu API. S3 must bind it to an actual supported input/template mechanism, disclose that concrete mechanism and certify it in the game. If that cannot be done faithfully, the capability stays rejected and the architect revises the design. Campaign progress variables cannot emulate this local protocol.
 

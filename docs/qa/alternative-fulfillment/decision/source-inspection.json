@@ -66,6 +66,16 @@
       "path": "docs/research/odyssey-research/imperial34-care-allocation-audit.json",
       "sha256": "5c4629e6a53aeef20f6181166f8dae718c9276923250015e3ccb84511ff39aaa",
       "inspection": "Checked 9/7/3 affordability, not native or escrow behavior."
+    },
+    {
+      "path": "packages/gameplay-state/capability-snapshot.factory.ts",
+      "sha256": "8d28a608aae75f4c1180a06a5581beae2f98fa189396f24cc0c4f07bdad7abe8",
+      "inspection": "Existing snapshot creation/finalization and semantic fingerprint are v2-specific; successor must reuse shared normalization and extend fingerprint coverage without changing v2 hashes."
+    },
+    {
+      "path": "packages/scenario-compiler/capability.compiler.ts",
+      "sha256": "4db60c76ebd3f058548881c2d23c8a320f594e83ec24241263ca613e532839e6",
+      "inspection": "Strict v2 parse/validation/compiler output; future opt-in v3 must be explicit and not leak into existing source."
     }
   ],
   "externalEngineInspection": "None in S1. Actual native input/UI, fractional resource representation, generation and persistence remain S3 evidence requirements.",
