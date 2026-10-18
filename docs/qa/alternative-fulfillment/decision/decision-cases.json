@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "classification": "normative architecture review cases; not executable DSL, implemented reference transitions or game tests",
+  "proposal": "i00007",
+  "slice": "S1",
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "resourceUnit": "whole nonnegative game-resource accounting units, no documented historical quantity",
+  "technicalNamespace": "fulfillment-fixture",
+  "initialHardStock": {
+    "food": 300,
+    "wood": 220,
+    "gold": 120,
+    "stone": 0
+  },
+  "operations": "Conceptual prose names only; current contracts expose none of the new reserve/cancel/commit actions.",
+  "cases": [
+    {
+      "id": "C01",
+      "title": "Free preview",
+      "preconditions": "Initial hard stock; no selected attempt.",
+      "conceptualSteps": [
+        "Preview meal-direct + shelter-rented.",
+        "Change draft to meal-purchased + shelter-local-kit."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 300,
+          "wood": 220,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": [],
+        "note": "No attempt, payment or service completion created."
+      }
+    },
+    {
+      "id": "C02",
+      "title": "Whole affordable reservation",
+      "preconditions": "Initial hard stock; current preview balance matches.",
+      "conceptualSteps": [
+        "Reserve meal-direct + shelter-rented as attempt1/revision0."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "attempt": 1,
+        "revision": 1,
+        "status": "reserved",
+        "outputs": []
+      }
+    },
+    {
+      "id": "C03",
+      "title": "Duplicate reserve",
+      "preconditions": "C02 state.",
+      "conceptualSteps": [
+        "Repeat the identical reserve command."
+      ],
+      "expected": {
+        "state": "identical to C02; no second debit or escrow credit"
+      }
+    },
+    {
+      "id": "C04",
+      "title": "Unaffordable pair remains atomic",
+      "preconditions": "Initial hard stock.",
+      "conceptualSteps": [
+        "Reserve meal-direct + shelter-materials (320F240W)."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 300,
+          "wood": 220,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "attempt": 0,
+        "revision": 0,
+        "outputs": [],
+        "rejected": true
+      }
+    },
+    {
+      "id": "C05",
+      "title": "Cancel before work",
+      "preconditions": "C02 state.",
+      "conceptualSteps": [
+        "Cancel attempt1/revision1."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 300,
+          "wood": 220,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "attempt": 1,
+        "revision": 2,
+        "status": "cancelled",
+        "outputs": []
+      }
+    },
+    {
+      "id": "C06",
+      "title": "Repeated cancel",
+      "preconditions": "C05 state.",
+      "conceptualSteps": [
+        "Repeat cancellation of attempt1."
+      ],
+      "expected": {
+        "state": "identical to C05; no extra refund"
+      }
+    },
+    {
+      "id": "C07",
+      "title": "Cancelled attempt cannot revive",
+      "preconditions": "C05 state.",
+      "conceptualSteps": [
+        "Replay reserve for attempt1."
+      ],
+      "expected": {
+        "state": "identical to C05; a fresh reserve requires attempt2 and current revision"
+      }
+    },
+    {
+      "id": "C08",
+      "title": "New reservation after cancellation",
+      "preconditions": "C05 state; complete valid fresh preview.",
+      "conceptualSteps": [
+        "Reserve meal-purchased + shelter-local-kit as attempt2/revision2."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 100,
+          "wood": 60,
+          "gold": 0,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "attempt": 2,
+        "revision": 3,
+        "status": "reserved",
+        "outputs": []
+      }
+    },
+    {
+      "id": "C09",
+      "title": "Joint commitment is expenditure, not service completion",
+      "preconditions": "C02 state; fresh observations establish all original required inputs living; no defeat.",
+      "conceptualSteps": [
+        "Commit attempt1/revision1."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "attempt": 1,
+        "revision": 2,
+        "status": "committed",
+        "selectedRecipes": [
+          "meal-direct",
+          "shelter-rented"
+        ],
+        "outputs": [],
+        "completedServices": []
+      }
+    },
+    {
+      "id": "C10",
+      "title": "No post-commit cancellation",
+      "preconditions": "C09 state.",
+      "conceptualSteps": [
+        "Cancel attempt1.",
+        "Repeat commit attempt1.",
+        "Try to replace shelter-rented with shelter-local-kit."
+      ],
+      "expected": {
+        "state": "identical to C09; no refund, repeated expenditure or replacement selection"
+      }
+    },
+    {
+      "id": "C11",
+      "title": "Reservation cannot authorize physical work",
+      "preconditions": "C02 state.",
+      "conceptualSteps": [
+        "Try to derive selected meal-direct-parcel.",
+        "Try to latch meal service."
+      ],
+      "expected": {
+        "state": "identical to C02; no output or completion receipt"
+      }
+    },
+    {
+      "id": "C12",
+      "title": "Wrong selected recipe",
+      "preconditions": "C09 state.",
+      "conceptualSteps": [
+        "Try to derive meal-hearth-parcel.",
+        "Present shelter-kit-parcel at host-court."
+      ],
+      "expected": {
+        "newOutputs": [],
+        "newServiceReceipts": [],
+        "rejected": true
+      }
+    },
+    {
+      "id": "C13",
+      "title": "Wrong attempt cannot authorize generation",
+      "preconditions": "A committed attempt2 exists; attempt1 was cancelled.",
+      "conceptualSteps": [
+        "Supply a cancelled-attempt1 receipt as input to attempt2 work."
+      ],
+      "expected": {
+        "newOutputs": [],
+        "newServiceReceipts": [],
+        "rejected": true
+      }
+    },
+    {
+      "id": "C14",
+      "title": "Optional aid and cancellation conserve stock",
+      "preconditions": "C02 state; actual existing aid predicates and finite reward source fully satisfied.",
+      "conceptualSteps": [
+        "Existing optional engine awards 100F50W once from its own reserve.",
+        "Cancel attempt1.",
+        "Repeat the optional award and cancellation."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 400,
+          "wood": 270,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReserveReduction": {
+          "food": 100,
+          "wood": 50,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": [],
+        "note": "Only the original escrow is refunded; independently earned aid remains; no duplicate award."
+      }
+    },
+    {
+      "id": "C15",
+      "title": "Escrow does not pay an optional debit",
+      "preconditions": "Hard meal-shared-hearth + shelter-rented reserved: spendable80F20W10G; escrow220F200W110G.",
+      "conceptualSteps": [
+        "Attempt optional repair debit50W before any aid reward."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 80,
+          "wood": 20,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "optionalDebit": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReward": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "rejected": true
+      }
+    },
+    {
+      "id": "C16",
+      "title": "Affordable optional prefix",
+      "preconditions": "Same state as C15; aid predicates satisfied and reserve funded; later repair predicates can actually be fulfilled.",
+      "conceptualSteps": [
+        "Award aid100F50W once.",
+        "Pay repair50W.",
+        "After actual repair completion, award200F100W once."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 380,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "optionalExpenditure": {
+          "food": 0,
+          "wood": 50,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReserveReduction": {
+          "food": 300,
+          "wood": 150,
+          "gold": 0,
+          "stone": 0
+        },
+        "note": "Payment precedes its own reward. This is an accounting example, not a movement/repair schedule."
+      }
+    },
+    {
+      "id": "C17",
+      "title": "Once-only qualified output",
+      "preconditions": "C09 state; correct fresh original meal-worker observation and exact direct-source prerequisites fulfilled.",
+      "conceptualSteps": [
+        "Derive fulfillment-fixture.meal-direct-parcel from its own committed work.",
+        "Repeat the exact derivation and observation."
+      ],
+      "expected": {
+        "eligibleOutputIds": [
+          "fulfillment-fixture.meal-direct-parcel"
+        ],
+        "maximumGeneratedCountForThatId": 1,
+        "completedServices": []
+      }
+    },
+    {
+      "id": "C18",
+      "title": "Defeat wins over commitment",
+      "preconditions": "C02 state; authoritative batch establishes loss of an irreplaceable required original recipient and main defeat.",
+      "conceptualSteps": [
+        "In the same batch, request commit and award a previously unresolved optional."
+      ],
+      "expected": {
+        "terminal": "defeat",
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "newOutputs": [],
+        "newRewards": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "note": "Terminal freezes the unspent reservation; no automatic refund or work."
+      }
+    },
+    {
+      "id": "C19",
+      "title": "Funding cannot win",
+      "preconditions": "C02 or C09 state; selected physical work and final presence incomplete.",
+      "conceptualSteps": [
+        "Request terminal victory through each terminal API."
+      ],
+      "expected": {
+        "terminal": null,
+        "victoryRejected": true
+      }
+    },
+    {
+      "id": "C20",
+      "title": "Version/fingerprint/escrow corruption",
+      "preconditions": "A saved v3 attempt exists.",
+      "conceptualSteps": [
+        "Try loading a v2 snapshot, a different contract fingerprint, or a v3 snapshot whose escrow does not equal its reserved recipes."
+      ],
+      "expected": {
+        "loadRejectedBeforeMutation": true,
+        "note": "No inferred escrow, silent migration or guessed refund."
+      }
+    },
+    {
+      "id": "C21",
+      "title": "Zero-cost recipe is still gated",
+      "preconditions": "Artificial otherwise valid plan with zero cost in both selected services.",
+      "conceptualSteps": [
+        "Reserve.",
+        "Try output before commitment.",
+        "Commit, fulfill actual work, then repeat output derivation."
+      ],
+      "expected": {
+        "debit": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "beforeCommitOutputs": [],
+        "maximumGeneratedCountPerDeclaredSelectedOutput": 1,
+        "note": "Zero-cost does not make a prerequisite automatically true or remove explicit commitment."
+      }
+    },
+    {
+      "id": "C22",
+      "title": "Final presence belongs to originals and selected outputs",
+      "preconditions": "C09 state; work/reception history exists.",
+      "conceptualSteps": [
+        "Present a replacement household, the unselected meal parcel, a stale batch, or unknown living state at final victory."
+      ],
+      "expected": {
+        "victoryRejected": true,
+        "note": "Same fresh batch must include selected outputs plus original meal recipient and both original households at their recipe-specific destinations."
+      }
+    },
+    {
+      "id": "C23",
+      "title": "Source placement is not reception",
+      "preconditions": "Selected output is initially latent; source and receiving zones are disjoint.",
+      "conceptualSteps": [
+        "Present source placement, an early arrival before eligibility or an arrival from another entity as final receipt."
+      ],
+      "expected": {
+        "newServiceReceipts": [],
+        "victoryRejected": true
+      }
+    },
+    {
+      "id": "C24",
+      "title": "All candidate allocation pairs",
+      "preconditions": "Use the exact immutable economic-study costs and starting stocks; no optional reward used.",
+      "conceptualSteps": [
+        "Enumerate all9 joint selections in each difficulty."
+      ],
+      "expected": {
+        "allSkipAffordableByDifficulty": {
+          "easy": 9,
+          "standard": 7,
+          "hard": 3
+        },
+        "note": "This count does not prove reservation, work geometry or challenge."
+      }
+    },
+    {
+      "id": "C25",
+      "title": "Native fractional stock is not rounded",
+      "preconditions": "The eventual native observer cannot represent the actual resource balance exactly in the supported contract.",
+      "conceptualSteps": [
+        "Try confirming a plan through an invented rounded stock reading."
+      ],
+      "expected": {
+        "nativeCapabilityRejected": true,
+        "mutations": [],
+        "note": "No native observer is implemented in S1."
+      }
+    },
+    {
+      "id": "C26",
+      "title": "Lost selected output does not refund or regenerate",
+      "preconditions": "C09 state; selected output has become available once and is irreversibly destroyed; minimal fixture has no replacement source.",
+      "conceptualSteps": [
+        "Try cancel, re-derive, choose alternative recipe or award main completion."
+      ],
+      "expected": {
+        "mainFailure": true,
+        "newOutputs": [],
+        "refund": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "note": "A future campaign recovery branch must have its own explicit finite certified identity/source/cost; none is supplied here."
+      }
+    },
+    {
+      "id": "C27",
+      "title": "Optional-only loss",
+      "preconditions": "Any valid nonterminal main state; an optional-only identity is destroyed.",
+      "conceptualSteps": [
+        "Fail that optional task.",
+        "Try claiming its reward."
+      ],
+      "expected": {
+        "mainDefeatCausedByThisLoss": false,
+        "reward": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "mainOriginalIdentitiesUnchanged": true
+      }
+    },
+    {
+      "id": "C28",
+      "title": "Client cannot set price/refund/receipt",
+      "preconditions": "Initial or reserved state.",
+      "conceptualSteps": [
+        "Send command fields with a custom amount, negative price, protected-recovery source or client-selected paid flag."
+      ],
+      "expected": {
+        "commandRejected": true,
+        "mutations": []
+      }
+    },
+    {
+      "id": "C29",
+      "title": "Incomplete or mixed service selection",
+      "preconditions": "Initial hard stock.",
+      "conceptualSteps": [
+        "Omit shelter, repeat meal, use shelter-rented as a meal recipe, or include an unknown extra service."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 300,
+          "wood": 220,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "commandRejected": true
+      }
+    },
+    {
+      "id": "C30",
+      "title": "Stale preview after optional change",
+      "preconditions": "C01 preview expected300F220W120G; actual optional aid then changes spendable to400F270W120G.",
+      "conceptualSteps": [
+        "Confirm using the old displayed balance."
+      ],
+      "expected": {
+        "spendable": {
+          "food": 400,
+          "wood": 270,
+          "gold": 120,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "confirmationRejected": true,
+        "note": "Refresh and explicit reconfirmation required even though the new balance is higher."
+      }
+    },
+    {
+      "id": "C31",
+      "title": "Full save timeline and input restoration",
+      "preconditions": "Valid save immediately before/after reserve, cancel, commit, output, service completion or terminal.",
+      "conceptualSteps": [
+        "Restore the complete matching snapshot and world.",
+        "Discard commands queued in the previous loaded timeline.",
+        "Re-enter current phase."
+      ],
+      "expected": {
+        "extraDebits": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "extraCredits": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "extraOutputs": [],
+        "note": "Earlier legitimate saves restore the complete earlier timeline. No external anti-rollback ledger is claimed; native queue behavior needs S3 evidence."
+      }
+    },
+    {
+      "id": "C32",
+      "title": "Structural bound and integer overflow",
+      "preconditions": "Plan declares unsafe summed amounts, a cyclic work dependency, missing world IDs or unsupported native performance/input limits.",
+      "conceptualSteps": [
+        "Validate or compile before running the plan."
+      ],
+      "expected": {
+        "rejectedBeforeMutation": true,
+        "note": "Do not wrap integers, approximate an unsupported branch count, or invent a missing native operation."
+      }
+    }
+  ],
+  "reviewStatus": "independent review pending",
+  "nativeImplemented": false,
+  "gameVerified": false
+}
