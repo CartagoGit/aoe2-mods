@@ -204,11 +204,20 @@ export function reduceFulfillmentState(
       return finalized(profile, current);
     if ("entityId" in shared && unavailable.has(shared.entityId))
       return finalized(profile, current);
-    const ready =
+    const fulfilled =
       current.active?.status === "committed" &&
       current.active.completedServices.length ===
-        profile.fulfillmentPlan.services.length &&
-      fulfillmentPresent(profile, current);
+        profile.fulfillmentPlan.services.length;
+    const ready = fulfilled && fulfillmentPresent(profile, current);
+    // An unfinished plan cannot be stranded outside its activation phase.
+    if (
+      shared.type === "enter-phase" &&
+      observed.phase === profile.fulfillmentPlan.phase &&
+      shared.phase !== observed.phase &&
+      shared.phase !== "defeat" &&
+      !fulfilled
+    )
+      return finalized(profile, current);
     if (shared.type === "enter-phase" && shared.phase === "victory" && !ready)
       return finalized(profile, current);
     if (shared.type === "tick") {
