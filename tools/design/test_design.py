@@ -639,6 +639,29 @@ class DesignAcceptanceTests(unittest.TestCase):
         errors = self.dossier_validator(draft)
         self.assertTrue(any("checkpoint presence must be an intermediate objective" in e for e in errors))
 
+    def test_dossier_phase_deadline_rejects_hidden_invalid_or_promoted_clock(self):
+        campaign = next(c for c in self.odysseys if c['campaignId'] == 'imperial-church')
+        source = next(e for e in campaign['episodes'] if e['id'].startswith('33-'))
+        self.assertEqual(self.dossier_validator(source), [])
+        for case in ('phase', 'zero', 'warning', 'bindings', 'translation', 'native'):
+            draft = copy.deepcopy(source)
+            deadline = next(r for r in draft['objectivePlan'][0]['predicate']['requirements']
+                            if r['kind'] == 'phase-deadline')
+            if case == 'phase':
+                deadline['phase'] = 'phase-absent'
+            elif case == 'zero':
+                deadline['secondsByDifficulty']['hard'] = 0
+            elif case == 'warning':
+                deadline['warningSeconds'] = deadline['secondsByDifficulty']['hard']
+            elif case == 'bindings':
+                draft['deadlinePlan']['bindings'][0]['requirement'] = 'missing'
+            elif case == 'translation':
+                del draft['deadlinePlan']['warningText']['es-ES']
+            else:
+                draft['deadlinePlan']['implementationStatus'] = 'implemented'
+            with self.subTest(case=case):
+                self.assertTrue(any('deadline' in e for e in self.dossier_validator(draft)))
+
     def test_expanded_withdrawal_cannot_use_unsupplied_recipient_ledger(self):
         draft = self.draft(2)
         draft["objectivePlan"][2]["predicate"]["requirements"][0][

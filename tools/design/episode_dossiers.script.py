@@ -210,6 +210,7 @@ def wiki(campaign, episode):
                     "requiredCapabilities",
                     "presencePlan",
                     "checkpointPresencePlan",
+                    "deadlinePlan",
                     "transportPlan",
                     "artDirection",
                     "qa",

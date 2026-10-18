@@ -326,7 +326,7 @@ def difficulty_profiles(authored, reward_stock, optional_cost):
             "enemyTotalCap": authored["enemyCounts"][level],
             "enemyProduction": False,
             "regeneratingResources": False,
-            "roughDurationMinutes": duration,
+            "roughDurationMinutes": authored.get("durationMinutesByDifficulty", {}).get(level, duration),
             "difficultyLevers": authored["difficultyLevers"][level],
             "movementPolicy": "native movement/health/damage unchanged; no difficulty cheats",
             "mainFeasibleSkippingAllOptionals": all(
@@ -403,6 +403,12 @@ def dossier_screens(cid, selection, authored, episode, narrator_id, next_selecti
             ),
         ),
     ]
+    if episode.get("deadlinePlan"):
+        result += [
+            add("deadline-help", authored["deadlinePlan"]["helpText"], "briefing before clock starts; help repeatable"),
+            add("deadline-warning", authored["deadlinePlan"]["warningText"],
+                "authored phase warning once; remaining game time, never dialogue wall time"),
+        ]
     if episode.get("entryContract"):
         result += [add(key, text, condition, voice)
                    for key, text, condition, voice in entry_screens(episode["entryContract"])]
@@ -543,7 +549,7 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
         "requiredCapabilities": authored["requiredCapabilities"],
         **{
             key: copy.deepcopy(authored[key])
-            for key in ("presencePlan", "checkpointPresencePlan")
+            for key in ("presencePlan", "checkpointPresencePlan", "deadlinePlan")
             if authored.get(key)
         },
         "qa": {
