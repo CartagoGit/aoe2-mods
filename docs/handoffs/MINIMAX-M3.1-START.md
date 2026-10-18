@@ -31,7 +31,7 @@ Para sesiones posteriores usa el prompt de WORKFLOW. La publicación del mod, la
 
 ## Ampliación de diseño vigente
 
-El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+El encargo vigente usa inglés como fuente inicial y nueve odiseas con 278 episodios seleccionados; los 39 contratos del catálogo previo conservan su identidad. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
 
 ## Estado de la ampliación de 278 episodios
 

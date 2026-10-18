@@ -1,33 +1,55 @@
 # Backlog designado y orden de ejecución
 
-Estos IDs fueron creados por el servidor el 2026-10-12. Son referencias observadas, no IDs que el agente deba fabricar. Recupera sus estados, rutas y dependencias actuales de DelendAI; las transiciones oficiales pueden cambiar la ubicación.
+Recupera del servidor DelendAI el estado, ruta, aceptación y dependencias de cada propuesta antes de trabajar. Los IDs siguientes fueron asignados por el servidor; no son números que otro agente deba fabricar. La base de trabajo es develop y toda edición pertenece a una unidad oficial aislada. Publicación oficial y gate, sin commits manuales de develop.
 
-Estado de entrega: i00001 done, revisada formalmente por gpt-6.1-sol e integrada. f00001 ready; comenzar únicamente S1. s00001/f00002/f00003 siguen blocked por pruebas de motor y dependencias de contenido. BASE READY no supone GAME VERIFIED.
+La primera tarea designada para MiniMax continúa siendo **f00001/S1, piloto técnico**, si su estado vivo lo permite. El alcance histórico vigente son nueve odiseas, 278 selecciones y cinco actos por campaña. Hay 63 dossiers de diseño redactados, 215 selecciones sin dossier y ninguna aprobación ampliada de juego. La base anterior de 39 contratos conserva identidad; no es la extensión final del catálogo.
 
-| Propuesta observada | Responsable | Slices y dependencia |
+## Infraestructura y arquitectura
+
+| Propuesta | Responsable | Alcance y gate pendiente |
 |---|---|---|
-| i00001 Fábrica de campañas | Arquitecto | S1 infraestructura, auditoría, revisión e integración |
-| s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | S1 progreso/rutas; S2 locales/coexistencia; S3 plantillas/audio; S4 dificultad/rango; S5 instalación y experimento RoR |
-| f00001 Piloto técnico de rutas | M3.1 contenido | S1 dossier; S2 bundles en staging; S3 materialización conjunta/IDs/glosario; S4 informe. Tras i00001 revisada/integrada |
-| f00002 Piloto Puente Milvio | M3.1 contenido | S1 evidencia; S2 bundle en staging; S3 materialización/IDs/glosario; S4 QA. Tras piloto técnico revisado y capacidades de motor acreditadas |
-| f00003 Iglesia imperial 312–337 | M3.1 contenido | S1 dossier; S2 metadatos en staging; S3 batalla312; S4 diplomacia325; S5 economía330 y bundle completo; S6 materialización/IDs/QA. Tras pilotos y adaptación necesaria |
+| i00001 Fábrica de campañas | Arquitecto; entrega integrada y revisión formal registrada | BASE READY; el fixture exportado no acredita una campaña histórica jugada |
+| i00002 Inglés fuente explícito | Arquitecto; integrada | Conserva el fixture legado y los IDs |
+| i00004 Naming descriptivo | Arquitecto; integrada | Producción TypeScript `<responsabilidad>.<tipo>.ts`, sin barrels ni index.ts |
+| i00003 Capacidades compuestas/mapa/nativo | Arquitecto | S1 de referencia integrado; S2 geografía/transporte, S3 composición/oposición/reloj y S4 narrativa/progreso siguen pendientes. Raster y auditoría parcial no completan S2 |
+| i00005 Presencia actual | Arquitecto | S1 de referencia revisado; observación/exportación/pruebas nativas siguen sus slices pendientes |
+| i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
+| i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión explícita; S2 referencia/compilador solo tras decisión; S3 nativo/UI/motor con prerrequisitos externos. Ningún slice implementado por el estudio económico |
+| s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
+| d00002 Odiseas extensas | Arquitecto | S1 arquitectura común; S2–S10 una campaña cada uno; S11 consolidación y traspaso. Continúa en curso |
 
-El brief inicial está en docs/wiki/route-pilot/00-brief.md; S1 lo revisa, S2 prepara ambos bundles y S3 los materializa junto a sus IDs. Las matrices tests/compatibility/*.json son planes pendientes. Seguir [staging](../guides/staging.md); ninguna entrega integra campañas incompletas ni espera IDs de un slice posterior.
+La [matriz de asignaciones](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md), las propuestas completas y los dossiers individuales gobiernan cada episodio. No se delegan decisiones pendientes de historia, nivelación, terreno ni contratos al agente de contenido.
 
-La primera tarea que se asignará a M3.1 es S1 del piloto técnico. Sigue la propuesta completa y el brief, sin decidir nuevos formatos. Es posible crear fuentes del piloto antes de acreditar el motor; su entrega publicable permanece bloqueada hasta la compatibilidad. El piloto histórico no desbloquea la campaña futura por su mera existencia.
+## Propuestas de contenido
 
-## Dependencias de contenido y de infraestructura
+| Propuesta | Campaña / entrega | Extensión y estado del diseño |
+|---|---|---|
+| f00001 | Piloto técnico de rutas independientes | S1 dossier, S2 staging, S3 materialización conjunta con IDs/glosario, S4 informe; conservar su alcance acotado |
+| f00002 | Piloto narrativo de Puente Milvio | Tras el piloto técnico y capacidades nativas; no abre automáticamente una saga |
+| f00003 | The Eagle and the Cross | 34 selecciones, 33 dossiers (órdenes 1–32 y 34). Constantinopla380, orden33/S37, continúa sin dossier completo |
+| f00004 | Embers of the Covenant | 30 selecciones y 30 dossiers sin aprobación histórica, de terreno ni juego |
+| f00005 | Keepers of the Unbroken Word | 30 selecciones; ningún dossier ampliado completo |
+| f00006 | The Keys of the Eternal City | 32 selecciones; ningún dossier ampliado completo |
+| f00007 | Beyond the Golden Gate | 32 selecciones; ningún dossier ampliado completo |
+| f00008 | Beneath the Desert Stars | 30 selecciones; ningún dossier ampliado completo |
+| f00009 | The Shattered Oath | 28 selecciones; ningún dossier ampliado completo |
+| f00010 | From Damascus to the Far Horizon | 32 selecciones; ningún dossier ampliado completo |
+| f00011 | The River Remembers | 30 selecciones; ningún dossier ampliado completo |
 
-La coexistencia lingüística, rango de cadenas y plantillas nativas son decisiones del arquitecto con evidencia del juego. Un gate local no las confirma. s00001 requiere un tester con instalación legal de AoE2 y versión registrada. No delegar en M3.1 la afirmación de que estas capacidades funcionan sin probarlas.
+Las nueve propuestas históricas conservan sus bloqueos y dependencias. Las selecciones, las biblias de narrador y una tabla no autorizan producir contenido. La propuesta de cada campaña contiene sus slices por acto/episodio y la promoción conjunta; recuperar siempre la versión integrada actual. No usar el antiguo reparto de tres misiones imperiales como instrucciones vigentes.
 
-Si la mecánica histórica del brief requiere condiciones/efectos que no están en el DSL actual (diálogo UI propio, conquista/economía compleja, navegación), abrir una propuesta de ampliación de infraestructura con contratos y round-trip antes de autoría de ese escenario. M3.1 registra la necesidad; el arquitecto la implementa y revisa. No sustituir dichas mecánicas por un temporizador silencioso.
+El brief inicial del piloto está en [00-brief](../wiki/route-pilot/00-brief.md); S1 lo revisa, S2 prepara ambos bundles y S3 los materializa junto con sus IDs. Ver [staging](../guides/staging.md). Su fuente puede prepararse antes de acreditar el motor; su entrega publicable conserva el gate de compatibilidad. No integrar campañas incompletas ni esperar IDs de un slice posterior.
 
-## Desbloqueo y cierre
+## Constantinopla y criterios que no deben perderse
 
-Las dependencias están descritas en las propuestas y este registro; la versión instalada admite DependsOn dentro de slices, pero no un argumento de dependencias entre propuestas en create_proposal. Usa estados oficiales bloqueados y motivo explícito mientras sus requisitos falten. No editar frontmatter para desbloquear.
+El [estudio de asignación finita](../design/episode-plans/imperial-church/34-care-allocation.study.md) tiene nueve combinaciones y asequibilidad all-skip de 9/7/3. i00007 registra la operación faltante; esa aritmética no implementa una elección, reserva, terreno ni reto jugado. MiniMax no debe traducirla a pagos fijos simultáneos ni diseñar sus identidades, costes o recorridos.
 
-Una revisión independiente pendiente no desaparece al cambiar de modelo. Un lock caducado se consulta y reclama de nuevo con la identidad correcta. La integración se efectúa solo por work publish según el servidor; un rechazo conserva la unidad y documenta la condición necesaria. Consultar audit antes de empezar.
+La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) detecta una divergencia posterior a la integración: el archivo de i00003 en develop y el parser local reconocen cuatro criterios de S3 y tres de S4; la instancia conectada todavía devolvía tres y dos. Leer el Markdown integrado completo y conservar el reloj relativo y el control previo al briefing de Sirmio aunque falten en esa vista. No asumir aprobación ni exención. El mantenedor de la instancia debe verificar la fuente servida.
 
-## Ampliación de diseño vigente
+## Dependencias y cierre
 
-El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+La versión observada admite DependsOn dentro de slices; create_proposal no ofrece un argumento de dependencias entre propuestas. Los prerrequisitos externos figuran en su aceptación y en los bloqueos oficiales: comprobarlos explícitamente antes de actuar, sin desbloquear editando frontmatter. i00007/S3 no se vuelve implementable por completar S2 si i00003 o las pruebas de motor siguen pendientes.
+
+Si una operación no existe, el arquitecto registra y resuelve su propuesta; MiniMax conserva el bloqueo y no fabrica un binario, un flag de pausa ni una mecánica alternativa. El contenido sigue inglés fuente y español completo, fuente histórica atribuida, narrador común objetivo antes de la persona de campaña, recomendaciones no bloqueantes y progreso acumulativo sin borrar otras rutas.
+
+Ejecutar los [gates](MINIMAX-M3.1-QUALITY-GATES.md), solicitar revisión por modelo distinto y publicar por DelendAI. Una revisión pendiente no desaparece al cambiar de modelo. Un rechazo conserva la unidad y el motivo; no resetear ni forzar develop. No distribuir mods ni generar medios de pago masivamente sin autorización específica.

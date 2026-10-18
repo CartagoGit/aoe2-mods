@@ -645,6 +645,25 @@
       "bytes": 1193762,
       "sha256": "1d7ae44d05f26eeee30db5ef29711111ee37272fca8bd5f9062184f484538312",
       "modifications": "Colorized modern surface-height visualization from the lossless crop, north up; percentile display upper limit only, no sample edits. Research labels and axes added; not a historical reconstruction."
+    },
+    {
+      "id": "constantinople-modern-dsm-reference",
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-dsm-reference.tif",
+      "bytes": 167144,
+      "sha256": "25b1a91f7bee6511fe80732f8d3179f994d2976cbc9811de72f92b67846ab228",
+      "sourcePage": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E028_00_DEM/Copernicus_DSM_COG_10_N41_00_E028_00_DEM.tif",
+      "author": "DLR e.V.; Airbus Defence and Space GmbH; provided under Copernicus by EU and ESA. Source collection gpt-6-luna; coverage normalization and independent pixel/georeference verification gpt-6.",
+      "license": "Copernicus WorldDEM-30 free-and-open licence, with required original/modified-data/liability notices, no endorsement and downstream article6 obligations; not public domain or CC.",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "licenseNotice": "docs/research/odyssey-research/geography/constantinople-modern-dsm-license.md",
+      "consulted": "2026-10-18",
+      "attributionRequired": true,
+      "shareAlikeRequired": false,
+      "productionApproved": false,
+      "usage": "Modern surface-height research in a bounded European-side Istanbul region. Not a whole-city380terrain map or location of an ancient institution.",
+      "anachronismsAndLimits": "Modern DSM includes buildings, infrastructure, vegetation and edited surfaces. Negative heights do not imply water or passability. No ancient coastline, city wall, church parcel, path or native map approval.",
+      "modifications": "Integer pixel-aligned crop and lossless DEFLATE re-encoding only. No resampling, value edits, filling, warping, derived terrain or historical features. Exact original samples extend east/south enough to contain the complete requested bbox; no gap filling."
     }
   ]
 }

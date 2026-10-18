@@ -32,4 +32,9 @@ Si cambia el ZIP, la evidencia vinculada al hash anterior deja de acreditar el c
 
 ## Ampliación de diseño vigente
 
-El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+El encargo vigente usa inglés como fuente inicial y nueve odiseas con 278 episodios seleccionados; los 39 contratos del catálogo previo conservan su identidad. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+
+
+## Estudios del arquitecto
+
+Cuando se modifique el diseño, ejecutar además `python3 tools/design/test_design.py` y sus generadores/verificadores. El estudio económico candidato de Constantinopla se comprueba con `python3 tools/design/finite_allocation_audit.script.py` y `python3 tools/design/test_finite_allocation_audit.py`; son cuatro pruebas separadas del gate Bun, no pruebas nativas ni aprobación de jugabilidad. El fingerprint incluye el plan y los importes compartidos resueltos, no toda la semántica del módulo de secundarios. MiniMax no implementa i00007 ni decide sus recetas por pasar estas comprobaciones.

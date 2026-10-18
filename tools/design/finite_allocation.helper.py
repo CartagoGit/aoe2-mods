@@ -12,6 +12,7 @@ import json
 from secondary import COSTS, RESOURCES, REWARDS
 
 LEVELS = ("easy", "standard", "hard")
+MAX_SERVICES = 8
 MAX_COMBINATIONS = 4096
 MAX_OPTIONALS = 12
 MAX_ANALYSIS_STATES = 65536
@@ -75,8 +76,8 @@ def resolved_inputs(plan):
         raise ValueError("All three operating-stock profiles are required")
     stocks = {level: amounts(profiles[level]) for level in LEVELS}
     services = plan.get("services")
-    if not isinstance(services, list) or not services:
-        raise ValueError("At least one service is required")
+    if not isinstance(services, list) or not 1 <= len(services) <= MAX_SERVICES:
+        raise ValueError("Expected one to eight explicit services")
     service_ids, recipe_ids, resolved, combinations = set(), set(), [], 1
     for service in services:
         sid = identifier(service["id"])

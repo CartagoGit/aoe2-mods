@@ -63,6 +63,15 @@ class FiniteAllocationTests(unittest.TestCase):
                 mutate(plan)
                 with self.assertRaises(ValueError):
                     build_report(plan)
+        many = copy.deepcopy(self.plan)
+        many["services"] = [{"id": f"service-{i}", "recipes": [
+            {"id": f"recipe-{i}", "cost": {}}]} for i in range(9)]
+        with self.assertRaisesRegex(ValueError, "one to eight"):
+            build_report(many)
+        many = copy.deepcopy(self.plan)
+        many["optionalTasks"] = [{"id": f"side-{i}", "kind": "copy"} for i in range(12)]
+        with self.assertRaisesRegex(ValueError, "Combined"):
+            build_report(many)
         plan = copy.deepcopy(self.plan)
         plan["operatingStockByDifficulty"]["hard"] = {}
         with self.assertRaisesRegex(ValueError, "depends on optional"):
