@@ -1,5 +1,6 @@
 import type { CapabilityProfileV2 } from "../schemas/scenario-capability.schema";
 import { computeExportedLedgers, factKey } from "./capability-ledgers.helper";
+import { secondaryRequirementsSatisfied } from "./capability-predicates.validator";
 import type { CapabilitySnapshot } from "./capability-snapshot.schema";
 import { sameValue } from "./fulfillment-plan.helper";
 
@@ -105,8 +106,15 @@ export function validateFulfillmentCore(
       else if (req.kind === "derived-token") values = req.outputEntities;
       else if (req.kind === "paired-delivery")
         values = req.pairs.map((pair) => `${pair.cargo}:${pair.receiver}`);
-      else if (req.kind === "resource-transaction") values = [req.paidFlag];
-      else if (req.kind === "ordered-departure") values = req.departingEntities;
+      else if (req.kind === "resource-transaction") {
+        values = [req.paidFlag];
+        if (
+          core.paidReceipts.includes(req.paidFlag) !==
+          (core.requirementFacts[key]?.includes(req.paidFlag) === true)
+        )
+          fail("fixed payment receipt");
+      } else if (req.kind === "ordered-departure")
+        values = req.departingEntities;
       if (req.kind === "route-choice")
         routes.set(key, new Set(req.allowedRoutes.map((route) => route.id)));
       if (req.kind === "phase-deadline") warnings.add(key);
@@ -116,6 +124,8 @@ export function validateFulfillmentCore(
     }
   for (const side of profile.secondaryObjectives) {
     const completed = core.secondaryStates[side.id] === "completed";
+    if (completed && !secondaryRequirementsSatisfied(profile, core, side.id))
+      fail("unearned optional completion");
     facts.set(factKey(side.id, "completed"), new Set([side.completionFlag]));
     if (
       completed !==
