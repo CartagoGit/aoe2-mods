@@ -92,7 +92,7 @@ A 18 de octubre de 2026, la selección contiene **278 episodios** y **305 slices
 | The Eagle and the Cross | 33 / 34 | 1–32, 34 | Dossier del orden 33; los mismos gates históricos, geográficos, nativos y de juego |
 | Otras siete odiseas | 0 / 214 | Ninguno | Interpretación de fuentes recopiladas y diseño completo por episodio |
 
-Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 36 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
+Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 37 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
 
 ## Cobertura imperial y trabajo designado
 

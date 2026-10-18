@@ -31,7 +31,7 @@ Para sesiones posteriores usa el prompt de WORKFLOW. La publicación del mod, la
 
 ## Ampliación de diseño vigente
 
-El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+El encargo vigente usa inglés como fuente inicial y nueve odiseas con 278 episodios seleccionados; los 39 contratos del catálogo previo conservan su identidad. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
 
 ## Estado de la ampliación de 278 episodios
 
@@ -45,3 +45,8 @@ El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron ofi
 
 
 La preparación geográfica dispone de [raster de alturas y auditoría de extensión](../architecture/geographic-maps.md), componentes revisados técnicamente e integrados bajo i00003/S2. S2 continúa pendiente de huellas, puentes y transporte/navegación nativos. La auditoría reproducible señala 26 revisiones de cobertura regional entre 63 dossiers; no son 26 errores históricos demostrados. La corrección del SVG muestra controles en todo el margen cuadrado y no convierte las líneas modernas en costa antigua ni terreno jugable. Las decisiones de cobertura de faith-origins e imperial-church siguen a cargo del arquitecto.
+
+
+Constantinopla380 continúa sin dossier completo. El arquitecto ha preparado un [estudio de asignación finita](../design/episode-plans/imperial-church/34-care-allocation.study.md) y DelendAI ha creado [i00007](../delendai/proposals/ready/infras/i00007-alternative-fulfillment-plans-with-atomic-reservation-and-persistent-recipe-identity.md) para decidir y acreditar la capacidad faltante de selección/reserva de alternativas. La enumeración económica 9/7/3 no es una operación del adaptador ni nivelación jugada. MiniMax no debe convertirla en pagos fijos simultáneos, decidir sus mapas ni diseñar contratos. El catálogo conserva 63 dossiers y 215 selecciones sin expediente completo.
+
+La [comprobación posterior a la publicación geográfica](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) encontró una divergencia pendiente: develop integrado y parser local muestran los requisitos S3/S4 de Sirmio como4/3, pero la instancia conectada sigue mostrando3/2. Leer la propuesta completa integrada y conservar ambos requisitos; no interpretar su ausencia en la vista como una exención. Su mantenedor debe comprobar la fuente que sirve.
