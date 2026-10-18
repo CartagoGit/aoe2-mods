@@ -37,7 +37,7 @@ Reproduction: docs/research/odyssey-research/imperial34-care-allocation-plan.jso
   - "Specify unique service/recipe identity, preview without debit, exactly one choice per service, joint affordability and atomic reservation, once-only debits, pre-work cancellation versus post-work commitment, explicit refund/recovery/lost-output behavior and defeat-first terminal handling."
   - "State exact output identities, prerequisites, physical reception and survivor rules; payment is neither delivered cargo nor ownership/belief. Define save/load and all-skip/all-complete/three-portfolio acceptance. Independent review required before implementation."
 - review-state: in_review
-- review-implementer: gpt-6
+- review-implementer: gpt-6-luna
 
 ### S2 — Only after ADR: compatible reference implementation and compiler rejection
 - **Status**: pending
