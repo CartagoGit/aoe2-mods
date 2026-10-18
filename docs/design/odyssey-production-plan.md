@@ -84,12 +84,12 @@ Las tres estrategias declaran los secundarios que aprovechan y su coste de oport
 
 ## Estado actual y puertas pendientes
 
-A 17 de octubre de 2026, la selección contiene **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. Hay **62 dossiers redactados**, **2.553 pantallas EN/es-ES** y **384 secundarios**; quedan **216 selecciones sin dossier** y no hay dossiers ampliados aprobados. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
+A 18 de octubre de 2026, la selección contiene **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. Hay **63 dossiers redactados**, **2.594 pantallas EN/es-ES** y **391 secundarios**; quedan **215 selecciones sin dossier** y no hay dossiers ampliados aprobados. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
 
 | Odisea | Dossiers / selección | Órdenes con dossier | Pendiente del arquitecto |
 |---|---:|---|---|
 | Embers of the Covenant | 30 / 30 | 1–30 | Revisión histórica/editorial, relieve y huellas, capacidades nativas, jugabilidad y dificultad |
-| The Eagle and the Cross | 32 / 34 | 1–30, 32, 34 | Dossiers de los órdenes 31 y 33; los mismos gates históricos, geográficos, nativos y de juego |
+| The Eagle and the Cross | 33 / 34 | 1–32, 34 | Dossier del orden 33; los mismos gates históricos, geográficos, nativos y de juego |
 | Otras siete odiseas | 0 / 214 | Ninguno | Interpretación de fuentes recopiladas y diseño completo por episodio |
 
 Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 36 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
@@ -106,11 +106,11 @@ Los IDs nuevos 30/31/32/33/34 se presentan en los órdenes 28/29/30/31/33, slice
 
 *Where the Eagles Fell*, orden30/S35, añade una retirada regional ficticia tras la derrota de378. Cualquier grupo de4sobre6rezagados a pie debe coincidir al oeste con2sobre4exploradores montados en el centro; después ambos mínimos deben estar presentes en la acogida suroccidental. No se fija a los primeros integrantes ni se mantiene el puesto central tras o2. Pago final180F80W, catorce tropas de apoyo y8/14/22hostiles finitos. Siete secundarios y tres planes combinables. El [expediente del relieve](../research/odyssey-research/adrianople378-relief-design.md) compara rutas y conserva los límites de la fuente y del DSM moderno. La [primera revisión independiente](../qa/campaign-design/imperial32-independent-review.md) detectó P1: la presencia anterior se reexigía al terminal e impedía la retirada. i00006/S1 añade el checkpoint explícito, integrado y [aprobado formalmente](../qa/campaign-design/checkpoint-presence-independent-review.md) en4248102. Este dossier opta ahora por checkpoint en o2 y conserva presencia actual final en o3; la [reevaluación independiente](../qa/campaign-design/imperial32-independent-review-round2.md) cierra el P1 del modelo con90combinaciones/499aserciones y ambas APIs de victoria. S2/S3, terreno histórico, IA acotada y juego siguen pendientes.
 
-Los siguientes dossiers son la reorganización de Sirmio379 (día de acceso sin resolver) y las transferencias urbanas de noviembre380. Sirmio tiene perfil regional y dos fotografías arqueológicas modernas: no identifican el lugar de proclamación ni la hidrología de379. Ninguna selección sustituye un dossier completo.
+El siguiente dossier pendiente son las transferencias urbanas de noviembre380. Sirmio379 tiene ahora un borrador completo de diseño (día de acceso sin resolver). Sirmio tiene perfil regional y dos fotografías arqueológicas modernas: no identifican el lugar de proclamación ni la hidrología de379. Ninguna selección sustituye un dossier completo.
 
 ## Jugabilidad cívica y dificultad
 
-La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanical-audit.json) identifica 54 candidatos a riesgo entre 62 dossiers: no tienen hostiles/plazo estructurados y el stock accesible es igual en las tres dificultades. Es un filtro estático, no una prueba de falta de interés. Los otros ocho tampoco tienen balance jugado aprobado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
+La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanical-audit.json) identifica 54 candidatos a riesgo entre 63 dossiers: no tienen hostiles/plazo estructurados y el stock accesible es igual en las tres dificultades. Es un filtro estático, no una prueba de falta de interés. Los ocho con oposición finita y el nuevo plazo de preparación tampoco tienen balance jugado aprobado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
 
 ## Capacidades y continuidad que siguen gobernando la entrega
 

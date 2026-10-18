@@ -335,6 +335,25 @@ def audit_dossier(episode, campaign=None, baseline=None):
                     and receipt["state"] == "arrived",
                     f"{context}: departure lacks an actual arrival receipt",
                 )
+            elif req["kind"] == "phase-deadline":
+                limits = req.get("secondsByDifficulty", {})
+                warning = req.get("warningSeconds")
+                valid_limits = isinstance(limits, dict) and set(limits) == {"easy", "standard", "hard"} and all(
+                    type(value) is int and value > 0 for value in limits.values()
+                )
+                check(
+                    valid_limits and type(warning) is int and warning > 0
+                    and warning < min(limits.values()),
+                    f"{context}: invalid phase deadline limits or warning",
+                )
+                check(
+                    req.get("phase") == objective["phase"]
+                    and req.get("clock") == "relative-to-phase-entry"
+                    and req.get("onExpiry") == "main-defeat"
+                    and req.get("implementationStatus") == "unimplemented"
+                    and req.get("proposalId") == "i00003",
+                    f"{context}: phase deadline needs its matching phase and pending native gate",
+                )
             elif req["kind"] == "area-state":
                 check(
                     len(req["zones"]) == len(set(req["zones"]))
@@ -411,6 +430,33 @@ def audit_dossier(episode, campaign=None, baseline=None):
             checkpoint_plan is None,
             f"{label}: checkpoint presence plan has no matching requirement",
         )
+    deadline_bindings = [
+        {"objective": objective["id"], "requirement": req["id"]}
+        for objective in episode["objectivePlan"]
+        for req in objective["predicate"]["requirements"]
+        if req["kind"] == "phase-deadline"
+    ]
+    deadline_plan = episode.get("deadlinePlan")
+    if deadline_bindings:
+        check(
+            isinstance(deadline_plan, dict)
+            and deadline_plan.get("capabilityId") == "phase-relative-deadline"
+            and deadline_plan.get("proposalId") == "i00003"
+            and deadline_plan.get("implementationStatus") == "unimplemented"
+            and deadline_plan.get("bindings") == deadline_bindings,
+            f"{label}: deadline plan needs exact bindings and pending native gate",
+        )
+        capability = next((c for c in episode["requiredCapabilities"]
+                           if c["id"] == "phase-relative-deadline"), None)
+        check(capability is not None and capability.get("status")
+              == "reference model implemented; native implementation pending",
+              f"{label}: phase deadline capability must remain native pending")
+        for key in ("helpText", "warningText"):
+            text = deadline_plan.get(key, {}) if isinstance(deadline_plan, dict) else {}
+            check(isinstance(text, dict) and set(text) == {"en", "es-ES"} and all(text.values()),
+                  f"{label}: missing bilingual deadline {key}")
+    else:
+        check(deadline_plan is None, f"{label}: deadline plan has no matching requirement")
     for group in episode["worldContract"]["survivorGroups"]:
         check(
             len(group["entities"]) == len(set(group["entities"])),

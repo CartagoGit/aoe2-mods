@@ -66,6 +66,8 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
   - "Round-trip y xs-check; bun run test:export; navegación y fases con evidencia de motor requieren s00001 y tester."
   - "Acreditar oposición local acotada: origen y selección finita exacta, adquisición/ataque/proyectiles y regreso/pérdida de blanco tras cruzar límite. La región autorada no es una capacidad IR/IA existente: contratos y adaptador deben rechazar límites no soportados. Reproducción de contenido: imperial-church/32-defeat-and-withdrawal-adrianople, sector central/oriental candidato con reunión montada dentro y orígenes, salida y bancos fuera; probar objetivos fuera, kite hasta límite, guardado/carga con blanco retenido, alcance máximo y todas las dificultades. No sustituir por temporizador, enemigo inmóvil ni persecución global. Reutilizable para otros dossiers de presión finita; ningún valor de esquema cambia por un problema de contenido."
 
+  - "Acreditar reloj relativo de fase y ventana visible: imperial-church/33-accession-and-reassembly-sirmium usa preparación1200/960/720segundos, aviso180segundos una vez y fase final sin reloj. Certificar tiempo de juego guardado/cargado, derrota prioritaria al vencer, no reinicio por reentrada, y cese al latch de preparación. El dossier no prueba valores viables en el motor; calibración y observaciones siguen pendientes."
+
 ### S4 — Plantillas de dos narradores y progreso
 - **Status**: pending
 - **DependsOn**: [S3]
@@ -74,6 +76,8 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
 - acceptance:
   - "Native SequenceItems común→persona en intro/outro, captions EN/es, variantes progreso ausente/presente/ambas/desconocido, recomendación estática nunca bloqueante."
   - "Probar en AoE2 con hash/build/perfil guardado/locales; registrar capacidad implementada frente a GAME VERIFIED."
+
+  - "Antes de aceptar el briefing de Sirmio379 no se permite mover actores, recolectar o cobrar secundarios para preparar por adelantado la fase cronometrada. La secuencia narrativa y las pausas no consumen tiempo jugable. Certificar el control nativo de entrada y el instante de inicio; no presentar inputs del modelo de referencia como permisos reales del jugador. Operación no disponible requiere infraestructura explícita, nunca un flag ficticio de pausa."
 
 ## acceptance
 

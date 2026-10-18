@@ -1,0 +1,23 @@
+# Sirmium 379 — The Burden of the Purple
+
+18 October 2026, architect gpt-6, isolated d00002 unit based on officially integrated develop65bafb11. ID33-accession-and-reassembly-sirmium, display31, future f00003/S36. Design-only draft; no native, historical, terrain or playability approval.
+
+## Authored operation
+
+One eight-person fictional crew pool supplies three simultaneous pairs at separate west/central/east posts. Three unique abstract supply units1/2/3 have those respective first destinations. Their real arrivals plus current checkpoint presence, three separate paid shares and the three crew pairs must coincide before a visible fictional preparation window ends. Minimal assignments: C(8,2)×C(6,2)×C(4,2)=2520, assuming physically consistent disjoint zone observations. The reference consumes supplied memberships; it does not itself prove geographical exclusivity. No frozen pairs or optional substitute.
+
+Staging payments are west90F60W, central70F80W, east80F40W:240F180W. Clock starts after briefing acceptance,1200/960/720game seconds by difficulty;180second warning once. The existing phase-deadline reference is selected without changing source/profile schemas. Native pre-start input/economy control, visible countdown and saved elapsed time are explicit i00003 pending requirements, not working permissions inferred from model actions. These timing values are initial architect hypotheses; not measured balance or proof of hard viability.
+
+After staging, all posts are released and the clock ends. The same three supply identities make actual receipt-qualified onward departures to the northeast. Final arrival is conditioned on o2/req-1, authorized by each own o1/req-3reception. Final live presence requires all three supplies and any six of eight original crew; final120F80Wonce. Main total360F260W. Two crew losses tolerated, third irrecoverable; each supply unique. Final phase and seven optional tasks are untimed after staging, all may be skipped. Three combinable plans: parallel pairs/direct gathering; western repair investment; eastern trade and relay. No enemies, local siege, forced religious action or emperor escort.
+
+## Sources, biography and geography
+
+Fresh bounded selected reading: SocratesV2–3, SozomenVII1–2 and Marcellinus379.1–2/380 Latin control. Year379only;16January in Socrates translation versus conventional inclusive19January from Marcellinus remains unresolved in the source ledger. Imperial appointment is fixed history, not a reward for preparation or player spending. No critical manuscripts or palace proclamation room inspected. Common factual voice precedes Marcus45, receiving reports at his fictional Constantinopolitan workplace. Sister, cloak and stitching are wholly invented ordinary biography; no Sirmium or imperial private witness.
+
+The8grounds use a northern regional frame within the existing Sirmium profile,400square tiles. Luna's separately attributed read-only collection validates bbox containment, low-precision DARE anchor semantics and modern generalized Sava outside frame, not379dry ground or street grid. Two existing licensed modern archaeological photos remain research only; no new downloaded binary. Exact resources, gatherer spawn, actor packing, dated terrain and native paths require architect/native review before MiniMax materializes.
+
+## Shared infrastructure and current checks
+
+The dossier factory now explicitly copies optional deadlinePlan and optional duration hypotheses; older62episode/blueprint objects remain structurally identical to65bafb11. Two bilingual clock help/warning screens are generated only for opt-in episodes. Dossier validation rejects mismatched phase, invalid limits/warning, absent native gate, missing binding/translation or false native promotion. One adversarial Python test covers those cases after verifying a valid source. i00003 body-only pending acceptance adds native clock/start controls; frontmatter/lifecycle unchanged.
+
+Sequential dossier/render/verify passed63drafts/278selections,2594bilingual screens,391secondaries,36additional references and zero expanded approvals. Current mechanical audit:54static candidates,8with finite hostiles,1with a structured deadline,63same accessible budgets. Clock presence is not proof of interest. Own Python64tests passed. Main all-skip accessible envelope1250F840W210G140Sfor every profile; static solvency does not establish enough time. bun run validate is running; final result and independent model/geometry review still pending. No adapter change or new export/AoE2 evidence claimed.

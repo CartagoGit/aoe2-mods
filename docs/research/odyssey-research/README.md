@@ -91,14 +91,14 @@ La selección vigente tiene278episodios y61dossiers redactados, con2.511pantalla
 
 ### Adrianópolis378: ampliación del mismo17de octubre
 
-El corte actual pasa a62dossiers,2.553pantallas y384secundarios;216selecciones siguen sin dossier. Hay36recursos adicionales locales, sin nuevos binarios en esta ampliación. [Fuente histórica](imperial32-source-audit.json), [relieve y decisiones](adrianople378-relief-design.md), [muestras completas](adrianople378-relief-sampling.json) y [marco de control](imperial32-map-control-audit.json) corresponden al ID32/orden30. Se verificaron1414valores del DSM y sus índices contra el TIFF integrado, con4335aserciones de comprobación de datos; no son pruebas de motor. La etiqueta equivocada de identidad/puntos del informe preliminar deLuna se conserva como corrección de procedencia, no como autoría del usuario.
+El corte histórico de Adrianópolis del17deoctubre pasó a62dossiers,2.553pantallas y384secundarios;216selecciones siguen sin dossier. Hay36recursos adicionales locales, sin nuevos binarios en esta ampliación. [Fuente histórica](imperial32-source-audit.json), [relieve y decisiones](adrianople378-relief-design.md), [muestras completas](adrianople378-relief-sampling.json) y [marco de control](imperial32-map-control-audit.json) corresponden al ID32/orden30. Se verificaron1414valores del DSM y sus índices contra el TIFF integrado, con4335aserciones de comprobación de datos; no son pruebas de motor. La etiqueta equivocada de identidad/puntos del informe preliminar deLuna se conserva como corrección de procedencia, no como autoría del usuario.
 
 La [auditoría cívica actual](civic-difficulty-mechanical-audit.json) mantiene54candidatos estáticos y pasa a ocho con hostiles. El [corte previo de61](civic-difficulty-mechanical-audit-61-2026-10-17.json) conserva sus hashes y métricas reales. Todas las aprobaciones históricas/nativas/jugadas siguen pendientes.
 
 
 ### Controles de fuentes para los dos dossiers imperiales restantes
 
-[Marco de Sirmio379](imperial33-source-audit.json): lectura directa seleccionada deSócrates,Sozomeno,Marcelino y síntesis deDavidWoods;16de enero en la traducción deSócrates frente aXIIIIkalendasFebruarias/19de enero enMarcelino. El comentario críticoKFHist no pudo recuperarse (418/403), por lo que sus fragmentos de búsqueda no se presentan como lectura completa. [Transferencias deConstantinopla380](imperial34-source-audit.json): llegada24/transferencia26de noviembre enSócrates, frente al mes de diciembre enMarcelino. Ninguno de estos dos registros es un dossier completo, una reconstrucción urbana aprobada o permiso de materialización; el recuento sigue62.
+[Marco de Sirmio379](imperial33-source-audit.json): lectura directa seleccionada deSócrates,Sozomeno,Marcelino y síntesis deDavidWoods;16de enero en la traducción deSócrates frente aXIIIIkalendasFebruarias/19de enero enMarcelino. El comentario críticoKFHist no pudo recuperarse (418/403), por lo que sus fragmentos de búsqueda no se presentan como lectura completa. [Transferencias deConstantinopla380](imperial34-source-audit.json): llegada24/transferencia26de noviembre enSócrates, frente al mes de diciembre enMarcelino. Estos registros de fuentes no son por sí solos una reconstrucción urbana aprobada ni permiso de materialización. Sirmio tiene ahora dossier de diseño; Constantinopla380 todavía no. El recuento actual es63borradores.
 
 ### Reproducción de la auditoría mecánica
 
@@ -107,3 +107,10 @@ La auditoría actual se genera con `python3 tools/design/civic_difficulty_audit.
 El gate de diseño rechaza hashes o métricas obsoletos de esta auditoría. Las cinco regresiones específicas forman parte de `tools/design/test_design.py`; notas narrativas, modo del reloj y objetos de límites nulos no cuentan como presión temporal.
 
 Las recopilaciones de lectura de Luna del18deoctubre quedan en [Sirmium379](sirmium379-geography-collection.md) y [Gregorio/Constantinopla380–381](constantinople380-gregory-collection.md). La primera no sitúa una sala de accesión ni un muelle antiguo. La segunda distingue el discurso de despedida de381 de los relatos posteriores sobre380 y no autentica un diálogo imperial ni una parcela de iglesia. Son investigación atribuida y acotada para los dos dossiers todavía pendientes, sin aprobación histórica independiente.
+
+
+### Sirmio379: The Burden of the Purple
+
+El borrador del ID33, orden31/S36, añade41pantallas bilingües y siete secundarios. Hay63dossiers/278selecciones,2.594pantallas y391secundarios;215selecciones siguen sin dossier y todas las aprobaciones históricas/nativas/jugadas siguen pendientes. La [recopilación geométrica de Luna](sirmium33-frame-collection.json) acota el frame regional, el punto DARE y los recursos visuales ya existentes. No se añade un nuevo binario ni cambia el total de36referencias. La fuente cronológica conserva16de enero enSócrates frente a19en la lectura inclusiva deMarcelino; el juego usa379sin fijar día.
+
+La preparación local es ficción explícita: tres remesas con destinos distintos, tres parejas simultáneas elegidas de ocho originales y un plazo visible de20/16/12minutos de juego. Después se libera la reunión y la salida causal es una fase sin plazo. Total principal360de alimento260de madera. El filtro mecánico registra ahora un deadline estructurado y ocho dossiers con hostiles; mantiene54candidatos estáticos, sin que ninguno de esos conteos pruebe dificultad real. Controles nativos del inicio, recursos, footprints y calibración quedan en sus gates de infraestructura.

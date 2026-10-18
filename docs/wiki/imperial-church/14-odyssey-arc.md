@@ -46,7 +46,7 @@
     ],
     "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
     "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
-    "sourceAuditStatus": "34 selections with bounded source consultations; two full dossiers and all independent historical approvals pending",
+    "sourceAuditStatus": "34 selections with bounded source consultations; one complete dossier and all independent historical approvals pending",
     "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
     "narratorMigration": {
       "proposedLifespan": "c.334–403",
@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 32
+    "authoredDossierCount": 33
   },
   "continuity": {
     "recommendedPrevious": [
@@ -1374,7 +1374,9 @@ Socrates NPNF V.2 gives16January, whereas Marcellinus379.1 givesXIIIIkalendasFeb
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/33-accession-and-reassembly-sirmium/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Socrates reports Theodosius’ elevation at Sirmium and a still-divided religious landscape after Valens. The appointment is fixed narrated history.
 
