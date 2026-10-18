@@ -6,10 +6,12 @@ import {
   capabilityProfileV3Schema,
   sharedCapabilityProfile,
 } from "../schemas/alternative-fulfillment.schema";
+import { generationReady } from "./capability-generation.helper";
 import {
   capabilityFingerprint,
   createCapabilitySnapshot,
 } from "./capability-snapshot.factory";
+import { validateFulfillmentCore } from "./fulfillment-core-snapshot.validator";
 import {
   committedShares,
   recipeTotal,
@@ -86,6 +88,7 @@ export function validateFulfillmentSnapshot(
   input: unknown,
 ): FulfillmentSnapshot {
   const state = fulfillmentSnapshotSchema.parse(input);
+  validateFulfillmentCore(sharedCapabilityProfile(profile), state.core);
   const fail = (detail: string): never => {
     throw new Error(`fulfillment.snapshot-invalid: ${detail}`);
   };
@@ -278,6 +281,7 @@ export function fulfillmentPresent(
         [recipe.outputEntityId, ...recipe.recipientIds].every(
           (id) =>
             state.core.entityStates[id] !== "destroyed" &&
+            generationReady(sharedCapabilityProfile(profile), state.core, id) &&
             state.core.liveSpatialObservation?.entities[id]?.alive === true &&
             state.core.liveSpatialObservation.entities[id]?.zones.includes(
               recipe.receptionZoneId,
@@ -296,6 +300,7 @@ export function loadFulfillmentSnapshot(
   profile: CapabilityProfileV3,
   input: unknown,
 ) {
+  assertValid(validateScenarioCapability(profile));
   return {
     snapshot: validateFulfillmentSnapshot(profile, input),
     inputContext: createFulfillmentInputContext(),

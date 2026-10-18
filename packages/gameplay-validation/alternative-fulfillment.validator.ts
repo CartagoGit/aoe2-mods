@@ -20,6 +20,19 @@ export function validateAlternativeFulfillment(
     recipe.workerId,
     ...recipe.recipientIds,
   ]);
+  const sharedGenerated = profile.objectivePlan.flatMap((objective) =>
+    objective.predicate.requirements.flatMap((req) =>
+      req.kind === "derived-token"
+        ? req.outputEntities
+        : req.kind === "entity-state"
+          ? (req.generatedByReceipts ?? []).map((receipt) => receipt.output)
+          : [],
+    ),
+  );
+  if (originals.some((id) => sharedGenerated.includes(id)))
+    add(
+      "First reference implementation accepts original inputs only, never shared generated identities",
+    );
   const entities = new Map(
     profile.worldContract.entities.map((entity) => [entity.id, entity]),
   );

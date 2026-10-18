@@ -179,6 +179,12 @@ export function reduceFulfillmentState(
   if (action.type === "shared") {
     let shared: CapabilityAction = action.action;
     if (
+      shared.type === "destroy-entity" &&
+      observed.liveSpatialObservation?.entities[shared.entityId]?.alive !==
+        false
+    )
+      return finalized(profile, current);
+    if (
       shared.type === "enter-phase" &&
       shared.nowSeconds !== action.nowSeconds
     )
