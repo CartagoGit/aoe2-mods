@@ -44,7 +44,7 @@ El brief inicial del piloto está en [00-brief](../wiki/route-pilot/00-brief.md)
 
 El [estudio de asignación finita](../design/episode-plans/imperial-church/34-care-allocation.study.md) tiene nueve combinaciones y asequibilidad all-skip de 9/7/3. i00007 registra la operación faltante; esa aritmética no implementa una elección, reserva, terreno ni reto jugado. MiniMax no debe traducirla a pagos fijos simultáneos ni diseñar sus identidades, costes o recorridos.
 
-La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) detecta una divergencia posterior a la integración: el archivo de i00003 en develop y el parser local reconocen cuatro criterios de S3 y tres de S4; la instancia conectada todavía devolvía tres y dos. Leer el Markdown integrado completo y conservar el reloj relativo y el control previo al briefing de Sirmio aunque falten en esa vista. No asumir aprobación ni exención. El mantenedor de la instancia debe verificar la fuente servida.
+La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) ya confirmó en la API oficial los cuatro criterios S3 y tres S4 de i00003 después de integrar 327cc456. Conservar el reloj relativo y el control previo al briefing de Sirmio. La divergencia inicial quedó resuelta sin cambios del runtime; no se determinó su causa transitoria exacta. i00007 también es visible como ready con sus tres slices pendientes. Leer siempre la propuesta integrada completa y recuperar el estado vivo; visibilidad no equivale a implementación ni aprobación.
 
 ## Dependencias y cierre
 
