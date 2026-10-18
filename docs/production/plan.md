@@ -44,3 +44,6 @@ Treinta dossiers ampliados de faith-origins están redactados (1.191 pantallas y
 
 
 Las [nueve biblias de narrador ampliadas](../design/voices/odyssey-narrators.json) fijan biografía ficticia, tono, itinerario, evolución en cinco actos y acceso al conocimiento para cada episodio. La revisión editorial sigue pendiente. El plan de voz no sustituye los dossiers, las fuentes ni la colocación local de las escenas.
+
+
+El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](../design/episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) conserva el orden 33 sin dossier completo hasta resolver un problema jugable propio. Hay 63 borradores completos de diseño y 215 selecciones sin dossier, ninguna aprobación ampliada de juego.
