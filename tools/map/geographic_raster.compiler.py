@@ -50,6 +50,10 @@ def sample_bilinear(source, lon_lat):
     if x < -tolerance or y < -tolerance or x > width - 1 + tolerance or y > height - 1 + tolerance:
         return None, "outside-source-sample-centers"
     x, y = min(max(x, 0), width - 1), min(max(y, 0), height - 1)
+    # Coordinates reconstructed from decimal origins/steps may miss an exact
+    # integer by machine noise. Do not give a nodata neighbor a spurious weight.
+    x = round(x) if abs(x - round(x)) <= tolerance else x
+    y = round(y) if abs(y - round(y)) <= tolerance else y
     left, top = math.floor(x), math.floor(y)
     right, bottom = min(left + 1, width - 1), min(top + 1, height - 1)
     fx, fy = x - left, y - top
@@ -63,6 +67,8 @@ def sample_bilinear(source, lon_lat):
         if sample is None:
             return None, "source-nodata"
         value += sample * weight
+    if not math.isfinite(value):
+        raise ValueError("Interpolation did not produce a finite metre height")
     return round(value, 6), None
 
 

@@ -54,6 +54,9 @@ class GeographicRasterTests(unittest.TestCase):
         source["rows"][1][1] = None
         self.assertEqual(COMPILER["sample_bilinear"](source, [10, 51]), (100.0, None))
         self.assertEqual(COMPILER["sample_bilinear"](source, [10.05, 50.95])[1], "source-nodata")
+        interior = plane()
+        interior["rows"][0][1] = None
+        self.assertEqual(COMPILER["sample_bilinear"](interior, [10.1, 50.9]), (112.0, None))
         with self.assertRaisesRegex(ValueError, "Incomplete sample coverage"):
             COMPILER["compile_height_candidate"](source, BBOX, 300)
         # Authored rectangle fits the source, but its square padding does not.
