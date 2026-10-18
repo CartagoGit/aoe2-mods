@@ -12,6 +12,12 @@ export function validateFulfillmentCore(
     throw new Error(`fulfillment.snapshot-invalid: ${detail}`);
   };
   const phases = new Set(profile.stateMachine.states);
+  if (
+    !core.liveSpatialObservation ||
+    (core.liveSpatialObservation.sequence === null &&
+      Object.keys(core.liveSpatialObservation.entities).length > 0)
+  )
+    fail("live observation envelope");
   const entities = new Set([
     ...profile.worldContract.entities.map((entity) => entity.id),
     ...profile.secondaryObjectives.flatMap((side) =>

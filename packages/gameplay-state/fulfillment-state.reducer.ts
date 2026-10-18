@@ -178,6 +178,19 @@ export function reduceFulfillmentState(
   if (action.type === "observe") return finalized(profile, current);
   if (action.type === "shared") {
     let shared: CapabilityAction = action.action;
+    const worldIds = new Set([
+      ...profile.worldContract.entities.map((entity) => entity.id),
+      ...profile.secondaryObjectives.flatMap((side) =>
+        side.world.entities.map((entity) => entity.id),
+      ),
+    ]);
+    if (
+      ("actorId" in shared && !worldIds.has(shared.actorId)) ||
+      ("entityId" in shared && !worldIds.has(shared.entityId)) ||
+      ("cargoId" in shared && !worldIds.has(shared.cargoId)) ||
+      ("receiverId" in shared && !worldIds.has(shared.receiverId))
+    )
+      return finalized(profile, current);
     if (
       shared.type === "destroy-entity" &&
       observed.liveSpatialObservation?.entities[shared.entityId]?.alive !==
