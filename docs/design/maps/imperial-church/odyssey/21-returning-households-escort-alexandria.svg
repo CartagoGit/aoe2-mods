@@ -3,6 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Road Back to Alexandria</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="western-host-link" points="156.43,421.13 251.56,487.85 394.27,398.87" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-host-link: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="eastern-host-link" points="156.43,421.13 394.27,398.87 527.46,454.49" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-host-link: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-host-link" points="156.43,421.13 251.56,487.85 403.78,576.83 394.27,398.87" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-host-link: proposed land district connection, intermediate path pending</title></polyline>

@@ -3,8 +3,13 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">A Harbour Under Orders</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · carthage · N ↑ E →</text>
-<polyline points="448.62,700.19 481.77,612.58" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="481.77,612.58 626.66,467.73" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,659.46 99.98,684.38" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="99.98,684.38 80.28,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="435.42,735.00 481.77,612.58" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="481.77,612.58 703.76,390.68" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="703.76,390.68 705.00,387.19" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,179.71 655.74,109.76" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="655.74,109.76 638.40,85.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="north-road" points="442.88,591.36 230.08,470.45 394.52,228.64" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-road" points="442.88,591.36 230.08,470.45 539.60,410.00" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="394.52,228.64 539.60,410.00 442.88,591.36" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>

@@ -3,6 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Court without Its Emperor</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · nicomedia · N ↑ E →</text>
+<polyline points="55.00,704.81 199.78,731.51" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="199.78,731.51 200.95,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="household-work-handoff" points="151.72,435.54 337.43,558.20 407.08,425.33" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>household-work-handoff: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="service-work-handoff" points="321.96,272.02 577.33,312.91 407.08,425.33" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>service-work-handoff: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="local-outgoing-relay" points="407.08,425.33 561.84,527.54" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>local-outgoing-relay: proposed land district connection, intermediate path pending</title></polyline>

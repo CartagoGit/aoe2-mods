@@ -3,6 +3,12 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Bread Read Aloud</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · rome-ostia · N ↑ E →</text>
+<polyline points="55.00,469.12 73.05,491.76" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="73.05,491.76 65.43,605.11" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="65.43,605.11 55.00,641.28" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="55.36,85.00 55.00,86.74" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="55.00,546.83 74.03,700.17" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="74.03,700.17 55.00,709.47" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-relief" points="390.80,400.32 333.20,206.87" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-relief: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="south-relief" points="390.80,400.32 304.41,613.13" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-relief: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-relief" points="390.80,400.32 599.58,380.99" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-relief: proposed land district connection, intermediate path pending</title></polyline>

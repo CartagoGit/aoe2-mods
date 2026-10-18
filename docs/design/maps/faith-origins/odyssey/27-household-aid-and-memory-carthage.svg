@@ -3,8 +3,13 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">What the Record Cannot Hold</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · carthage · N ↑ E →</text>
-<polyline points="448.60,700.18 481.77,612.57" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="481.77,612.57 626.66,467.74" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,659.46 99.99,684.39" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="99.99,684.39 80.28,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="435.42,735.00 481.77,612.57" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="481.77,612.57 703.75,390.68" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="703.75,390.68 705.00,387.19" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,179.71 655.73,109.77" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="655.73,109.77 638.41,85.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="north-road" points="442.88,591.37 230.07,470.46 394.50,228.63" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-road" points="442.88,591.37 230.07,470.46 539.60,410.00" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="394.50,228.63 539.60,410.00 442.88,591.37" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>

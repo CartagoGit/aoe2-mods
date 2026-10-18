@@ -33,3 +33,8 @@ El reporte distingue pruebas estáticas, round-trip, observaciones del juego y r
 ## Ampliación de diseño vigente
 
 El usuario ha fijado inglés como fuente inicial y un catálogo de nueve campañas/39escenarios. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
+
+
+## Integridad de los criterios servidos
+
+En el runtime observado, los ítems indentados de cada lista `acceptance` deben permanecer contiguos: una línea en blanco termina su lectura en la vista de slices. Los requisitos de reloj relativo de Sirmio y control previo al briefing ya existían en i00003, pero dos líneas vacías los ocultaban. El arquitecto corrigió únicamente esa separación, sin alterar sus textos, frontmatter, estados, dependencias o firmas de revisión. El parser instalado reconoce ahora cuatro criterios en S3 y tres en S4; la vista del servidor debe comprobarse tras la integración oficial. Leer también el documento completo: una vista reducida no autoriza a omitir un requisito visible en la fuente ni a inventar una operación nativa.

@@ -3,12 +3,18 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Altars of a New Reign</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · constantinople · N ↑ E →</text>
-<polyline points="670.17,613.29 663.74,621.42" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,131.67 702.59,135.27" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="702.59,135.27 683.69,225.67" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="683.69,225.67 689.98,296.63" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="689.98,296.63 703.63,374.52" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="703.63,374.52 705.00,376.64" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,569.40 663.74,621.42" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="663.74,621.42 604.97,638.12" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="604.97,638.12 327.90,615.17" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="327.90,615.17 216.65,519.18" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="216.65,519.18 143.18,504.57" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="143.18,504.57 89.81,537.41" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="143.18,504.57 69.69,549.77" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="69.69,549.77 55.00,569.89" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="western-civic-branch" points="257.48,478.37 231.69,392.91 438.04,444.18" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-civic-branch: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="northern-civic-branch" points="257.48,478.37 438.04,444.18 412.24,256.17" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northern-civic-branch: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-civic-branch" points="257.48,478.37 450.93,580.92 605.69,478.37" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>southern-civic-branch: proposed land district connection, intermediate path pending</title></polyline>

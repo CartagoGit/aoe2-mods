@@ -5,6 +5,7 @@ import html
 import textwrap
 import importlib.util
 import json
+import runpy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -23,6 +24,7 @@ factory = module("episode_dossier.factory")
 validator = module("episode_dossier.validator")
 layers_helper = module("geographic_layers.helper")
 catalog = module("odyssey_catalog.helper")
+frame_helper = runpy.run_path(str(ROOT / "tools/map/geographic_frame.helper.py"))
 
 
 def read(path):
@@ -228,6 +230,8 @@ def wiki(campaign, episode):
 def diagram(episode, geographic_layers):
     size = episode["mapSize"]
     factor = 650 / (size - 1)
+    projection_bbox = episode["mapPlan"]["bbox"]
+    clip_bbox = frame_helper["make_frame"](projection_bbox, size).bounds_at(0, size - 1)
     point = lambda h: (55 + h["centre"][0] * factor, 85 + h["centre"][1] * factor)
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
@@ -238,7 +242,7 @@ def diagram(episode, geographic_layers):
     ]
     for layer in geographic_layers:
         segments = layers_helper.clipped_tile_segments(
-            layer["index"], episode["mapPlan"]["bbox"], size
+            layer["index"], projection_bbox, size, clip_bbox=clip_bbox
         )
         for segment in segments:
             coordinates = " ".join(
@@ -265,7 +269,7 @@ def diagram(episode, geographic_layers):
         water_kind = "modern-river-control" if modern else "schematic-water"
         dash = "" if modern else 'stroke-dasharray="4 5"'
         for segment in layers_helper.clipped_tile_segments(
-            index, episode["mapPlan"]["bbox"], size
+            index, projection_bbox, size, clip_bbox=clip_bbox
         ):
             coords = " ".join(
                 f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment

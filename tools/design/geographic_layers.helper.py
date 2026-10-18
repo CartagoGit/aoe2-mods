@@ -19,9 +19,15 @@ def index_layer(layer):
     return lines
 
 
-def clipped_tile_segments(indexed_lines, bbox, size):
+def clipped_tile_segments(indexed_lines, bbox, size, *, clip_bbox=None):
+    """Clip to an explicit viewport while retaining the original projection.
+
+    Existing callers keep their original rectangle/rounding. A wider clipping
+    envelope must not also become a wider projection and move existing points.
+    """
     result = []
-    west, south, east, north = bbox
+    viewport = bbox if clip_bbox is None else clip_bbox
+    west, south, east, north = viewport
     for bounds, coordinates in indexed_lines:
         if (
             bounds[2] < west
@@ -31,7 +37,7 @@ def clipped_tile_segments(indexed_lines, bbox, size):
         ):
             continue
         for a, b in zip(coordinates, coordinates[1:]):
-            clipped = clip_segment(a, b, bbox)
+            clipped = clip_segment(a, b, viewport, precision=6 if clip_bbox is None else None)
             if clipped:
                 result.append([tile_point(bbox, point, size) for point in clipped])
     return result

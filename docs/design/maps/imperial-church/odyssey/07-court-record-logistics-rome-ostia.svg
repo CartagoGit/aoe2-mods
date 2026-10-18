@@ -3,12 +3,29 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">A Day beneath the Law</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · rome-ostia · N ↑ E →</text>
-<polyline points="240.36,119.83 231.43,203.40" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="243.34,85.00 243.61,89.41" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="243.61,89.41 231.43,203.40" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="231.43,203.40 170.99,276.45" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="170.99,276.45 149.68,277.04" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="240.36,119.83 231.43,203.40" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="170.99,276.45 55.00,279.67" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="55.00,339.22 84.76,355.78" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="84.76,355.78 110.54,403.03" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="110.54,403.03 109.13,465.36" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="109.13,465.36 74.92,539.67" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="74.92,539.67 79.50,545.42" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="243.34,85.00 243.61,89.41" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="243.61,89.41 231.43,203.40" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="231.43,203.40 170.99,276.45" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="170.99,276.45 149.68,277.04" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="170.99,276.45 55.00,279.67" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="55.00,339.22 84.76,355.78" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="84.76,355.78 110.54,403.03" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="110.54,403.03 109.13,465.36" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="109.13,465.36 74.92,539.67" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="74.92,539.67 131.63,610.83" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="131.63,610.83 125.54,701.51" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="125.54,701.51 115.88,735.00" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="143.93,158.50 103.61,351.97" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="103.61,351.97 103.61,545.42" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="103.61,545.42 127.14,735.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-rural-work" points="276.36,468.04 414.55,197.21" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-rural-work: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-rural-archive" points="276.36,468.04 546.98,235.90 541.23,622.81" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-rural-archive: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="urban-context-circuit" points="276.36,468.04 218.77,568.64 541.23,622.81" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>urban-context-circuit: proposed land district connection, intermediate path pending</title></polyline>

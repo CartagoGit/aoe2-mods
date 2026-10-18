@@ -3,8 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Many Voices beside the Lake</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · nicaea · N ↑ E →</text>
-<polyline data-control="schematic-water" points="126.91,422.09 163.72,482.54" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
-<polyline data-control="schematic-water" points="163.72,482.54 126.91,553.67" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="55.00,304.01 163.72,482.54" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="163.72,482.54 55.00,692.60" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="western-host-loop" points="403.00,204.46 274.16,289.09 412.21,422.09" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-host-loop: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="eastern-host-loop" points="403.00,204.46 495.05,277.00 412.21,422.09" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-host-loop: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="common-farewell-link" points="412.21,422.09 403.00,204.46" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>common-farewell-link: proposed land district connection, intermediate path pending</title></polyline>

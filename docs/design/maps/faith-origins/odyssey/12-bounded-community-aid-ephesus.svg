@@ -3,7 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Many Hands in One House</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">380 × 380 · ephesus · N ↑ E →</text>
-<polyline points="93.91,257.41 136.98,330.87" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,191.01 136.98,330.87" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="136.98,330.87 169.26,438.90" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="169.26,438.90 114.61,487.31" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="114.61,487.31 130.75,531.78" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -11,7 +11,7 @@
 <polyline points="133.55,571.15 126.11,610.71" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="126.11,610.71 114.61,655.58" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="114.61,655.58 95.99,690.01" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="95.99,690.01 93.91,691.83" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="95.99,690.01 55.00,726.06" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="main" points="471.55,501.89 486.81,332.62 582.17,240.73" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="471.55,501.89 486.81,332.62 582.17,240.73" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="471.55" cy="501.89" r="20" fill="none" stroke="#91512f"/>

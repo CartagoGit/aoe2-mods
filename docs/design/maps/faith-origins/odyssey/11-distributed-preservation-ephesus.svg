@@ -3,7 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Argument Across the Water</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · ephesus · N ↑ E →</text>
-<polyline points="93.91,257.40 136.97,330.88" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,191.01 136.97,330.88" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="136.97,330.88 169.25,438.92" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="169.25,438.92 114.62,487.31" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="114.62,487.31 130.75,531.80" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -11,7 +11,7 @@
 <polyline points="133.56,571.14 126.10,610.70" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="126.10,610.70 114.62,655.57" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="114.62,655.57 95.99,690.01" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="95.99,690.01 93.91,691.84" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="95.99,690.01 55.00,726.07" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="main" points="452.48,385.81 494.43,226.23 448.66,569.60" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="452.48,385.81 494.43,226.23 448.66,569.60" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="452.48" cy="385.81" r="20" fill="none" stroke="#91512f"/>

@@ -511,6 +511,26 @@ class DesignAcceptanceTests(unittest.TestCase):
             ],
         )
 
+    def test_geographic_padding_is_clipped_without_rescaling_existing_controls(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/geographic_layers.helper.py"))
+        frame = runpy.run_path(str(ROOT / "tools/map/geographic_frame.helper.py"))["make_frame"]([0, 0, 1, 1], 400)
+        coordinates = [[-0.05, 0.5], [-0.01, 0.5]]
+        indexed = helper["index_layer"]({"features": [{"geometry": {"type": "LineString", "coordinates": coordinates}}]})
+        self.assertEqual(helper["clipped_tile_segments"](indexed, [0, 0, 1, 1], 400), [])
+        self.assertEqual(helper["clipped_tile_segments"](indexed, [0, 0, 1, 1], 400,
+                                                        clip_bbox=frame.bounds_at(0, 399)),
+                         [[tile_point([0, 0, 1, 1], point, 400) for point in coordinates]])
+        crossing = helper["index_layer"]({"features": [{"geometry": {"type": "LineString", "coordinates": [[-2, 0.5], [2, 0.5]]}}]})
+        self.assertEqual(helper["clipped_tile_segments"](crossing, [0, 0, 1, 1], 400,
+                                                        clip_bbox=frame.bounds_at(0, 399)),
+                         [[[0.0, 199.5], [399.0, 199.5]]])
+
+    def test_exact_clip_keeps_a_vertical_line_position_and_legacy_rounding(self):
+        exact = clip_segment([0.123456789, -1], [0.123456789, 2], [0, 0, 1, 1], precision=None)
+        self.assertEqual(exact, [[0.123456789, 0.0], [0.123456789, 1.0]])
+        self.assertEqual(clip_segment([0.123456789, -1], [0.123456789, 2], [0, 0, 1, 1]),
+                         [[0.123457, 0.0], [0.123457, 1.0]])
+
     def test_expanded_captions_cannot_drop_historical_qualification(self):
         draft = self.draft()
         draft["screens"][1]["captionSegments"]["en"] = ["An invented certainty"]

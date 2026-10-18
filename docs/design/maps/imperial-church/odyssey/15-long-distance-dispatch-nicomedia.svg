@@ -3,6 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">A Letter beyond the Frontier</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · nicomedia · N ↑ E →</text>
+<polyline points="55.00,704.81 199.78,731.51" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="199.78,731.51 200.95,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="western-context-link" points="136.24,496.88 244.58,394.67" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-context-link: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-context-loop" points="244.58,394.67 407.08,558.20 499.93,445.77" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-context-loop: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="eastern-local-handoff" points="244.58,394.67 561.84,312.91" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-local-handoff: proposed land district connection, intermediate path pending</title></polyline>
