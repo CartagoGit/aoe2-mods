@@ -76,17 +76,63 @@ export const zoneIds = {
   hostWorksite: "fulfillment-fixture.host-worksite",
 } as const;
 
-const stockByDifficulty = {
-  easy: { food: 420, wood: 380, gold: 260, stone: 0 },
-  standard: { food: 340, wood: 280, gold: 150, stone: 0 },
-  hard: { food: 300, wood: 220, gold: 120, stone: 0 },
-} as const;
-export const optionalRewardReserve = {
-  food: 400,
-  wood: 150,
-  gold: 25,
-  stone: 0,
-} as const;
+const normativePlan = JSON.parse(
+  readFileSync(
+    new URL(
+      "../../../docs/research/odyssey-research/imperial34-care-allocation-plan.json",
+      import.meta.url,
+    ),
+    "utf8",
+  ),
+) as {
+  operatingStockByDifficulty: Record<
+    "easy" | "standard" | "hard",
+    Record<string, number>
+  >;
+  services: Array<{
+    id: string;
+    recipes: Array<{ id: string; cost: Record<string, number> }>;
+  }>;
+};
+const normativeMatrix = JSON.parse(
+  readFileSync(
+    new URL(
+      "../../../docs/qa/alternative-fulfillment/decision/portfolio-matrix.json",
+      import.meta.url,
+    ),
+    "utf8",
+  ),
+) as {
+  initialOptionalRewardReserve: Record<string, number>;
+  optionalMechanics: Record<
+    string,
+    { kind: string; cost: Record<string, number>; reward: Record<string, number> }
+  >;
+};
+const resources = (source: Record<string, number>) => ({
+  food: source.food ?? 0,
+  wood: source.wood ?? 0,
+  gold: source.gold ?? 0,
+  stone: source.stone ?? 0,
+});
+const stockByDifficulty = Object.fromEntries(
+  Object.entries(normativePlan.operatingStockByDifficulty).map(
+    ([difficulty, stock]) => [difficulty, resources(stock)],
+  ),
+) as Record<"easy" | "standard" | "hard", ReturnType<typeof resources>>;
+export const optionalRewardReserve = resources(
+  normativeMatrix.initialOptionalRewardReserve,
+);
+const recipeCost = (id: string) => {
+  const found = normativePlan.services
+    .flatMap((service) => service.recipes)
+    .find((item) => item.id === id);
+  if (!found) throw new Error(`Missing normative recipe cost: ${id}`);
+  return resources(found.cost);
+};
+const optionalMechanics = Object.values(normativeMatrix.optionalMechanics);
+const optionalMechanicForKind = (kind: string) =>
+  optionalMechanics.find((item) => item.kind === kind);
 
 const recipe = (
   id: string,
@@ -216,21 +262,15 @@ function optionalObjective(index: number) {
     base.effects = [
       kind === "aid"
         ? effect("finite-supply-withdrawal", {
-            food: 100,
-            wood: 50,
-            gold: 0,
-            stone: 0,
+            ...resources(optionalMechanicForKind(kind)?.reward ?? {}),
           })
         : kind === "extract"
           ? effect("finite-supply-withdrawal", {
-              food: 100,
-              wood: 0,
-              gold: 25,
-              stone: 0,
+              ...resources(optionalMechanicForKind(kind)?.reward ?? {}),
             })
           : effect(
               "unlock-context-and-hint",
-              { food: 0, wood: 0, gold: 0, stone: 0 },
+              resources(optionalMechanicForKind(kind)?.reward ?? {}),
               {
                 sourceIds: ["fixture-source-a", "fixture-source-b"],
                 historicalNote: {
@@ -249,7 +289,7 @@ function optionalObjective(index: number) {
     base.effects = [
       effect(
         "mark-alternative-route",
-        { food: 0, wood: 0, gold: 0, stone: 0 },
+        resources(optionalMechanicForKind(kind)?.reward ?? {}),
         { corridorId: `${id}.relief` },
       ),
     ];
@@ -269,7 +309,7 @@ function optionalObjective(index: number) {
     base.effects = [
       effect(
         "reveal-enemy-approach",
-        { food: 0, wood: 0, gold: 0, stone: 0 },
+        resources(optionalMechanicForKind(kind)?.reward ?? {}),
         {
           rosterIds: kind === "scout" ? ["wave-2"] : ["wave-1", "wave-3"],
           alreadyReleasedPolicy:
@@ -292,7 +332,10 @@ function optionalObjective(index: number) {
       },
       {
         kind: "atomic-payment",
-        resources: { wood: 50 },
+        resources: resources(
+          normativeMatrix.optionalMechanics["damaged-civilian-store"]?.cost ??
+            {},
+        ),
         receipt: `${id}.payment`,
         afterArrival: false,
         once: true,
@@ -301,10 +344,10 @@ function optionalObjective(index: number) {
     ];
     base.effects = [
       effect("finite-supply-withdrawal", {
-        food: 200,
-        wood: 100,
-        gold: 0,
-        stone: 0,
+        ...resources(
+          normativeMatrix.optionalMechanics["damaged-civilian-store"]?.reward ??
+            {},
+        ),
       }),
     ];
   }
@@ -323,10 +366,10 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
   const outputs = Object.values(outputIds);
   const objective = base.objectivePlan[0];
   if (!objective) throw new Error("Missing common main objective");
-  objective.entities = originals.map(actor);
-  objective.threshold = originals.length;
-  objective.countLedger.required = originals.length;
-  objective.predicate.requiredCount = originals.length;
+  objective.entities = [fixtureIds.mealRecipient].map(actor);
+  objective.threshold = 1;
+  objective.countLedger.required = 1;
+  objective.predicate.requiredCount = 1;
   for (const requirement of objective.predicate.requirements) {
     if (
       requirement.kind === "entity-state" &&
@@ -336,15 +379,11 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
       requirement.destinations = { [fixtureIds.mealWorker]: "store-1" };
     }
     if (requirement.kind === "current-entity-presence") {
-      requirement.entities = originals;
+      requirement.entities = [fixtureIds.mealRecipient];
       requirement.destinations = {
-        [fixtureIds.mealWorker]: "store-1",
-        [fixtureIds.shelterWorker]: "store-2",
         [fixtureIds.mealRecipient]: zoneIds.mealReception,
-        [fixtureIds.householdA]: zoneIds.materialsCourt,
-        [fixtureIds.householdB]: zoneIds.materialsCourt,
       };
-      requirement.requiredCount = originals.length;
+      requirement.requiredCount = 1;
     }
   }
   const zones = [
@@ -375,7 +414,9 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
       ...base.secondaryBudget,
       reservedRewards: budgetResources,
       reallocatedCacheAllowance: budgetResources,
-      maxOptionalCosts: { food: 0, wood: 50, gold: 0, stone: 0 },
+      maxOptionalCosts: resources(
+        normativeMatrix.optionalMechanics["damaged-civilian-store"]?.cost ?? {},
+      ),
     },
   }) satisfies CapabilityProfileV2;
   const profile = capabilityProfileV3Schema.parse({
@@ -390,7 +431,7 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
           recipes: [
             recipe(
               recipeIds.mealDirect,
-              { food: 240, wood: 40, gold: 0, stone: 0 },
+              recipeCost("meal-direct"),
               fixtureIds.mealWorker,
               zoneIds.mealDirectSource,
               outputIds.mealDirect,
@@ -399,7 +440,7 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
             ),
             recipe(
               recipeIds.mealHearth,
-              { food: 160, wood: 140, gold: 0, stone: 0 },
+              recipeCost("meal-shared-hearth"),
               fixtureIds.mealWorker,
               zoneIds.hearthWorksite,
               outputIds.mealHearth,
@@ -408,7 +449,7 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
             ),
             recipe(
               recipeIds.mealPurchased,
-              { food: 100, wood: 40, gold: 100, stone: 0 },
+              recipeCost("meal-purchased"),
               fixtureIds.mealWorker,
               zoneIds.merchantWorksite,
               outputIds.mealPurchased,
@@ -422,7 +463,7 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
           recipes: [
             recipe(
               recipeIds.shelterMaterials,
-              { food: 80, wood: 200, gold: 0, stone: 0 },
+              recipeCost("shelter-materials"),
               fixtureIds.shelterWorker,
               zoneIds.materialsSource,
               outputIds.shelterMaterials,
@@ -431,20 +472,20 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
             ),
             recipe(
               recipeIds.shelterKit,
-              { food: 100, wood: 120, gold: 20, stone: 0 },
+              recipeCost("shelter-local-kit"),
               fixtureIds.shelterWorker,
               zoneIds.kitWorksite,
               outputIds.shelterKit,
-              zoneIds.materialsCourt,
+              zoneIds.kitCourt,
               [fixtureIds.householdA, fixtureIds.householdB],
             ),
             recipe(
               recipeIds.shelterRented,
-              { food: 60, wood: 60, gold: 110, stone: 0 },
+              recipeCost("shelter-rented"),
               fixtureIds.shelterWorker,
               zoneIds.hostWorksite,
               outputIds.shelterRented,
-              zoneIds.materialsCourt,
+              zoneIds.hostCourt,
               [fixtureIds.householdA, fixtureIds.householdB],
             ),
           ],
@@ -518,7 +559,9 @@ export function liveBatch(
     entities: entities.flatMap((item) => {
       if (seen.has(item.id) || unavailable.has(item.id)) return [];
       seen.add(item.id);
-      const isDead = dead.includes(item.id);
+      const isDead =
+        dead.includes(item.id) ||
+        state.core.entityStates[item.id] === "destroyed";
       const position = positions[item.id];
       return [
         {
@@ -603,3 +646,5 @@ export function dispatch(
     context,
   );
 }
+
+import { readFileSync } from "node:fs";
