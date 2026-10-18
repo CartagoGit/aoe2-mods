@@ -3,7 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Across the Bright Shore</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · chrysopolis · N ↑ E →</text>
-<polyline points="533.64,119.81 471.51,216.32" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="551.75,85.00 541.18,108.12" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="541.18,108.12 471.51,216.32" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="471.51,216.32 417.79,260.03" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="417.79,260.03 301.87,297.38" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="301.87,297.38 248.18,337.57" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -15,13 +16,13 @@
 <polyline points="216.80,564.55 215.74,611.78" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="215.74,611.78 177.44,660.06" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="177.44,660.06 147.68,668.53" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="147.68,668.53 102.29,664.77" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="615.55,119.81 567.23,202.23" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="147.68,668.53 55.00,660.84" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="635.96,85.00 567.23,202.23" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="567.23,202.23 435.88,351.32" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="435.88,351.32 315.18,418.63" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="315.18,418.63 361.43,531.06" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="361.43,531.06 385.36,649.15" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="385.36,649.15 403.49,700.17" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="385.36,649.15 415.87,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="west-support" points="219.91,293.07 167.63,275.73 200.31,379.68" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>west-support: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="local-strait-passage" points="200.31,379.68 357.13,431.65" fill="none" stroke="#368da3" stroke-width="3" stroke-dasharray="8 6"><title>local-strait-passage: proposed water district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="northern-local-water-loop" points="200.31,379.68 481.28,241.10 357.13,431.65" fill="none" stroke="#368da3" stroke-width="3" stroke-dasharray="8 6"><title>northern-local-water-loop: proposed water district connection, intermediate path pending</title></polyline>

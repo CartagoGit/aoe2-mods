@@ -12,7 +12,7 @@ def tile_point(bbox, lon_lat, size):
     return [round(x * (size - 1), 2), round(y * (size - 1), 2)]
 
 
-def clip_segment(a, b, bbox):
+def clip_segment(a, b, bbox, precision=6):
     """Liang–Barsky clipping, keeping intersection points rather than dropping vertices."""
     xmin, ymin, xmax, ymax = bbox
     dx, dy = b[0] - a[0], b[1] - a[1]
@@ -30,8 +30,9 @@ def clip_segment(a, b, bbox):
             upper = min(upper, ratio)
         if lower > upper:
             return None
-    return [[round(a[0] + lower * dx, 6), round(a[1] + lower * dy, 6)],
-            [round(a[0] + upper * dx, 6), round(a[1] + upper * dy, 6)]]
+    points = [[a[0] + lower * dx, a[1] + lower * dy],
+              [a[0] + upper * dx, a[1] + upper * dy]]
+    return points if precision is None else [[round(value, precision) for value in point] for point in points]
 
 
 def geometry_lines(geometry):

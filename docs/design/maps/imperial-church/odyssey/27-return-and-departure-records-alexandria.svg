@@ -3,6 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Return That Did Not Last</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="western-hosting-circuit" points="184.97,421.13 270.59,298.78 251.56,565.71" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-hosting-circuit: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="eastern-hosting-circuit" points="403.78,421.13 536.98,298.78 546.49,565.71" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-hosting-circuit: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="working-record-link" points="184.97,421.13 403.78,421.13" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>working-record-link: proposed land district connection, intermediate path pending</title></polyline>

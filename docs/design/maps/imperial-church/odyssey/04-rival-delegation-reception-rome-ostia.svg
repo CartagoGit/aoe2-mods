@@ -3,6 +3,9 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The African Petition</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · rome-ostia · N ↑ E →</text>
+<polyline points="55.00,447.14 65.33,460.09" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="65.33,460.09 55.00,613.83" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="55.00,677.61 62.12,735.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-reception-chain" points="336.80,206.87 185.60,337.46 585.20,395.48" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-reception-chain: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="south-reception-chain" points="293.59,598.61 423.20,598.61 585.20,395.48" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-reception-chain: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="working-yard-link" points="185.60,337.46 423.20,598.61" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>working-yard-link: proposed land district connection, intermediate path pending</title></polyline>

@@ -3,9 +3,9 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The House Before the Road</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · antioch · N ↑ E →</text>
-<polyline data-control="schematic-water" points="297.96,700.17 289.94,610.90" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="301.07,735.00 289.94,610.90" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="289.94,610.90 253.93,476.97" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
-<polyline data-control="schematic-water" points="253.93,476.97 145.87,175.63" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="253.93,476.97 113.37,85.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-host-road" points="398.02,209.10 369.20,387.68 556.49,173.39" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-host-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-host-road" points="563.69,351.96 470.06,593.04 556.49,173.39" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-host-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="hosting-relief" points="369.20,387.68 470.06,593.04" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>hosting-relief: proposed land district connection, intermediate path pending</title></polyline>

@@ -3,9 +3,10 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Council on the Shore</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · tyre · N ↑ E →</text>
-<polyline points="307.31,155.49 121.97,294.14" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="365.73,85.00 328.99,139.26" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="328.99,139.26 121.97,294.14" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="121.97,294.14 323.49,587.88" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="323.49,587.88 314.06,664.51" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="323.49,587.88 305.37,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="north-report-circuit" points="447.70,259.60 573.45,317.45 457.38,410.00" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-report-circuit: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="south-report-circuit" points="457.38,583.53 592.81,525.68 457.38,410.00" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-report-circuit: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-context-relay" points="457.38,410.00 534.76,421.57" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>east-context-relay: proposed land district connection, intermediate path pending</title></polyline>

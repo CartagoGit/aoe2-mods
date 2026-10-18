@@ -3,6 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Night of the Open Doors</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="mainland-withdrawal-road" points="165.94,421.13 394.27,410.00 403.78,587.96" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>mainland-withdrawal-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="western-shelter-alternative" points="165.94,421.13 251.56,543.47 403.78,587.96" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-shelter-alternative: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="northern-context-link" points="165.94,421.13 308.65,298.78 394.27,410.00" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>northern-context-link: proposed land district connection, intermediate path pending</title></polyline>

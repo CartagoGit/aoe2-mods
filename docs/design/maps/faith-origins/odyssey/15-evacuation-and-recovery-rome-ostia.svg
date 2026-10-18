@@ -3,14 +3,19 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Ash over the Seven Hills</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · rome-ostia · N ↑ E →</text>
-<polyline points="122.23,119.83 117.64,129.80" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="122.23,119.83 117.64,129.80" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="117.64,235.15 147.66,272.82" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="124.27,85.00 123.55,116.95" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="123.55,116.95 86.86,196.58" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="86.86,196.58 91.78,202.73" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="124.27,85.00 123.55,116.95" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="123.55,116.95 86.86,196.58" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="86.86,196.58 147.66,272.82" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="147.66,272.82 141.13,369.97" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="141.13,369.97 117.64,451.41" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline data-control="schematic-water" points="117.64,119.83 117.64,202.73" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline points="141.13,369.97 106.97,488.37" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="106.97,488.37 86.86,626.03" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="86.86,626.03 55.00,725.16" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="117.64,85.00 117.64,202.73" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="117.64,202.73 148.49,451.46" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
-<polyline data-control="schematic-water" points="148.49,451.46 117.64,466.53" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="148.49,451.46 55.00,497.12" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="main" points="321.35,293.93 241.11,459.75 543.59,575.82" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="321.35,293.93 241.11,459.75 543.59,575.82" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="321.35" cy="293.93" r="20" fill="none" stroke="#91512f"/>

@@ -3,18 +3,25 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The River beneath the Eagle</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · milvio · N ↑ E →</text>
-<polyline points="616.17,512.68 540.43,604.25" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="657.94,85.00 631.89,161.37" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="631.89,161.37 643.16,339.59" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="643.16,339.59 625.92,500.89" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="625.92,500.89 540.43,604.25" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="540.43,604.25 348.90,609.59" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="348.90,609.59 348.90,677.77" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="348.90,677.77 389.12,700.17" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="616.17,512.68 540.43,604.25" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="348.90,677.77 418.48,716.54" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="418.48,716.54 428.56,735.00" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="642.41,327.88 643.16,339.59" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="643.16,339.59 625.92,500.89" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="625.92,500.89 540.43,604.25" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="540.43,604.25 348.90,609.59" fill="none" stroke="#5aa4b8" stroke-width="2"/>
 <polyline points="348.90,609.59 348.90,677.77" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline points="348.90,677.77 389.12,700.17" fill="none" stroke="#5aa4b8" stroke-width="2"/>
-<polyline data-control="schematic-water" points="515.18,119.83 502.15,382.63" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline points="348.90,677.77 418.48,716.54" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="418.48,716.54 428.56,735.00" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="516.91,85.00 502.15,382.63" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="502.15,382.63 412.58,590.68" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-control="schematic-water" points="412.58,590.68 323.00,645.43" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
-<polyline data-control="schematic-water" points="323.00,645.43 343.35,700.17" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="323.00,645.43 356.30,735.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-field-road" points="428.86,240.27 437.00,415.47 380.00,524.98" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-field-road: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="west-flank" points="428.86,240.27 233.42,338.83 306.71,470.23 380.00,524.98" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>west-flank: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="field-link" points="437.00,415.47 306.71,470.23" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>field-link: proposed land district connection, intermediate path pending</title></polyline>

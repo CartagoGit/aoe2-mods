@@ -3,8 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Doors Returned</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · bithynia · N ↑ E →</text>
-<polyline points="89.81,653.40 245.94,682.19" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="245.94,682.19 246.06,682.54" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,646.98 245.94,682.19" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="245.94,682.19 263.49,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="north-access" points="251.03,520.73 154.31,571.83 315.52,222.62" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-access: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-access" points="251.03,520.73 154.31,571.83 573.45,469.62" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-access: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="inland-link" points="315.52,222.62 573.45,469.62 251.03,520.73" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>inland-link: proposed land district connection, intermediate path pending</title></polyline>

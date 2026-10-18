@@ -3,7 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Weaver&#x27;s Harbour</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">380 × 380 · corinth · N ↑ E →</text>
-<polyline points="670.18,422.98 638.11,409.26" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,437.87 638.11,409.26" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="638.11,409.26 615.20,419.57" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="615.20,419.57 595.70,418.42" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="595.70,418.42 574.19,412.69" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -13,8 +13,14 @@
 <polyline points="538.62,461.61 535.01,497.79" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="535.01,497.79 513.29,514.10" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="513.29,514.10 497.62,544.17" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="497.62,544.17 501.61,566.53" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="89.82,290.67 145.11,339.56" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="497.62,544.17 508.47,605.05" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="508.47,605.05 540.63,652.44" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="540.63,652.44 589.27,642.39" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="589.27,642.39 632.28,664.92" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="632.28,664.92 691.16,672.57" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="691.16,672.57 705.00,670.77" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,267.74 68.34,271.66" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="68.34,271.66 145.11,339.56" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="145.11,339.56 181.69,364.53" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="181.69,364.53 219.87,370.66" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="219.87,370.66 258.27,363.78" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -24,7 +30,13 @@
 <polyline points="357.34,344.42 377.03,343.53" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="377.03,343.53 393.51,333.58" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="393.51,333.58 443.35,257.79" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="443.35,257.79 444.76,253.47" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="443.35,257.79 448.79,240.97" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="448.79,240.97 424.47,204.28" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="424.47,204.28 388.49,167.60" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="388.49,167.60 360.16,150.91" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="360.16,150.91 321.57,138.29" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="321.57,138.29 260.67,88.22" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="260.67,88.22 218.24,85.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="main" points="237.99,466.36 250.34,381.82 447.92,450.70" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="237.99,466.36 250.34,381.82 447.92,450.70" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="237.99" cy="466.36" r="20" fill="none" stroke="#91512f"/>

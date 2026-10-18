@@ -3,6 +3,12 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">A Letter Across the Divide</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">380 × 380 · rome-ostia · N ↑ E →</text>
+<polyline points="55.00,469.12 73.04,491.76" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="73.04,491.76 65.43,605.12" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="65.43,605.12 55.00,641.27" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="55.36,85.00 55.00,86.73" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="55.00,546.83 74.02,700.18" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="74.02,700.18 55.00,709.48" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
 <polyline data-corridor="north-drafts" points="362.01,400.33 318.81,235.89 520.39,410.00 599.58,264.91" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-drafts: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="south-drafts" points="362.01,400.33 297.20,603.46 520.39,410.00 599.58,264.91" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-drafts: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="318.81,235.89 362.01,400.33 297.20,603.46" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>

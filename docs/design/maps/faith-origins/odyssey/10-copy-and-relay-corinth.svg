@@ -3,7 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Before the First Letter Faded</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · corinth · N ↑ E →</text>
-<polyline points="670.18,422.98 638.10,409.26" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,437.88 638.10,409.26" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="638.10,409.26 615.19,419.58" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="615.19,419.58 595.69,418.42" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="595.69,418.42 574.20,412.70" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -13,8 +13,14 @@
 <polyline points="538.63,461.62 535.00,497.80" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="535.00,497.80 513.30,514.09" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="513.30,514.09 497.62,544.16" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="497.62,544.16 501.62,566.54" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="89.82,290.68 145.11,339.57" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="497.62,544.16 508.48,605.05" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="508.48,605.05 540.64,652.44" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="540.64,652.44 589.27,642.39" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="589.27,642.39 632.27,664.93" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="632.27,664.93 691.17,672.57" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="691.17,672.57 705.00,670.76" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,267.72 68.34,271.67" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="68.34,271.67 145.11,339.57" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="145.11,339.57 181.69,364.54" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="181.69,364.54 219.87,370.66" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="219.87,370.66 258.26,363.78" fill="none" stroke="#247b96" stroke-width="2"/>
@@ -24,7 +30,13 @@
 <polyline points="357.33,344.40 377.03,343.52" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="377.03,343.52 393.53,333.58" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="393.53,333.58 443.35,257.78" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="443.35,257.78 444.75,253.46" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="443.35,257.78 448.78,240.96" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="448.78,240.96 424.47,204.28" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="424.47,204.28 388.49,167.60" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="388.49,167.60 360.16,150.91" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="360.16,150.91 321.57,138.29" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="321.57,138.29 260.66,88.22" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="260.66,88.22 218.24,85.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="main" points="287.39,372.43 238.00,456.97 465.21,460.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="287.39,372.43 238.00,456.97 465.21,460.10" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="287.39" cy="372.43" r="20" fill="none" stroke="#91512f"/>

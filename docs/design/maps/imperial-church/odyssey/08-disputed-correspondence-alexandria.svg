@@ -3,6 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">Words over Alexandria</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="north-notice-chain" points="251.56,432.24 318.16,298.78" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-notice-chain: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="east-onward-chain" points="318.16,298.78 556.01,309.89" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-onward-chain: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-support-circuit" points="251.56,432.24 375.24,532.34 556.01,309.89" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-support-circuit: proposed land district connection, intermediate path pending</title></polyline>

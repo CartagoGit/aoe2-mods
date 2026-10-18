@@ -3,8 +3,8 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Governor&#x27;s Question</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">380 × 380 · bithynia · N ↑ E →</text>
-<polyline points="89.82,653.40 245.94,682.18" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="245.94,682.18 246.06,682.55" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="55.00,646.98 245.94,682.18" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="245.94,682.18 263.50,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="main" points="276.82,418.52 367.10,231.14 521.87,384.45 612.15,529.25" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>main: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="relief" points="276.82,418.52 521.87,384.45 612.15,529.25" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
 <circle cx="276.82" cy="418.52" r="20" fill="none" stroke="#91512f"/>

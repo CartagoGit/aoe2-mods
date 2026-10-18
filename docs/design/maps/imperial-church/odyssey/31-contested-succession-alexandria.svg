@@ -3,6 +3,7 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Empty Chair</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="northern-household-relief" points="536.98,298.78 270.59,298.78 184.97,421.13" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northern-household-relief: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-household-relief" points="184.97,421.13 251.56,554.58 536.98,554.58" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>southern-household-relief: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="central-southern-link" points="384.76,410.00 251.56,554.58" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-southern-link: proposed land district connection, intermediate path pending</title></polyline>

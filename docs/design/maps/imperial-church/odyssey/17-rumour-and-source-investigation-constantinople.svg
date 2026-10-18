@@ -3,11 +3,16 @@
 <rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
 <text x="40" y="35" font-family="sans-serif" font-size="22">The Empty Appointment</text>
 <text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · constantinople · N ↑ E →</text>
-<polyline points="670.19,619.35 616.69,634.55" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,175.38 697.20,212.75" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="697.20,212.75 703.63,285.31" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="703.63,285.31 705.00,293.15" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,581.92 676.78,617.48" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="676.78,617.48 616.69,634.55" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="616.69,634.55 333.31,611.08" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="333.31,611.08 219.54,512.92" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline points="219.54,512.92 144.39,497.99" fill="none" stroke="#247b96" stroke-width="2"/>
-<polyline points="144.39,497.99 89.83,531.56" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="144.39,497.99 69.24,544.22" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="69.24,544.22 55.00,563.70" fill="none" stroke="#247b96" stroke-width="2"/>
 <polyline data-corridor="western-notice-approach" points="168.95,418.75 314.06,313.85" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-notice-approach: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="southern-cancellation-loop" points="327.23,558.59 445.94,348.81 314.06,313.85" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-cancellation-loop: proposed land district connection, intermediate path pending</title></polyline>
 <polyline data-corridor="eastern-interpretation-loop" points="538.28,471.19 445.94,348.81 314.06,313.85" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>eastern-interpretation-loop: proposed land district connection, intermediate path pending</title></polyline>
