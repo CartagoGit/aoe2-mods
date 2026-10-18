@@ -456,10 +456,10 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
 ```json
 {
   "bbox": [
-    19.595,
-    44.972,
-    19.642,
-    44.993
+    19.6,
+    44.971,
+    19.632,
+    44.992
   ],
   "terrainProfile": "sirmium",
   "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
@@ -468,11 +468,11 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-1",
       "centre": [
-        74.43,
-        140.56
+        54.77,
+        97.2
       ],
       "lonLat": [
-        19.602,
+        19.603,
         44.988
       ],
       "name": {
@@ -485,11 +485,11 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-2",
       "centre": [
-        195.71,
-        129.84
+        188.37,
+        81.46
       ],
       "lonLat": [
-        19.618,
+        19.615,
         44.989
       ],
       "name": {
@@ -502,12 +502,12 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-3",
       "centre": [
-        74.43,
-        237.01
+        54.77,
+        254.59
       ],
       "lonLat": [
-        19.602,
-        44.979
+        19.603,
+        44.978
       ],
       "name": {
         "en": "Fictional western preparation post",
@@ -519,11 +519,11 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-4",
       "centre": [
-        195.71,
-        215.57
+        188.37,
+        207.37
       ],
       "lonLat": [
-        19.618,
+        19.615,
         44.981
       ],
       "name": {
@@ -536,12 +536,12 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-5",
       "centre": [
-        324.57,
-        226.29
+        333.09,
+        238.85
       ],
       "lonLat": [
-        19.635,
-        44.98
+        19.628,
+        44.979
       ],
       "name": {
         "en": "Fictional eastern preparation post",
@@ -553,11 +553,11 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-6",
       "centre": [
-        332.15,
-        140.56
+        333.09,
+        97.2
       ],
       "lonLat": [
-        19.636,
+        19.628,
         44.988
       ],
       "name": {
@@ -570,12 +570,12 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-7",
       "centre": [
-        135.07,
-        279.87
+        121.57,
+        317.54
       ],
       "lonLat": [
-        19.61,
-        44.975
+        19.609,
+        44.974
       ],
       "name": {
         "en": "Fictional southwestern work shelter",
@@ -587,11 +587,11 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
     {
       "id": "hub-8",
       "centre": [
-        241.19,
-        151.28
+        255.16,
+        112.93
       ],
       "lonLat": [
-        19.624,
+        19.621,
         44.987
       ],
       "name": {
@@ -677,13 +677,13 @@ ES: Sostuve la tela mientras ella terminaba. Por una vez, mis manos habían lleg
   ],
   "terrainInstructions": "Local fictional grounds north of the Sirmium settlement anchor. DARE city locator19.61017,44.96648 lies south of this frame, with published2000m precision; it is not a palace coordinate. Natural Earth modern Sava line is outside this frame, not a source for ancient dry ground. Keep broad terrace/alluvial surroundings qualified: no flat ancient street grid, exact379marsh boundary, dated bridge, ford, quay, ferry, palace room or city gate is established. Southern approach and all full-width routes require dated archaeology, ground/footprint checks and native pathfinding. No compulsory river crossing or invented inundation hazard. Two local modern archaeological photos guide materials only, not the placement of the accession. Candidate finite operating supply areas: food near northwestern crew origin and central post, wood west and east, gold at northern origin and eastern post, stone near southwestern shelter; protected recovery and optional rewards stay segregated from harvestable operating bank. Architect must certify exact resource-node footprints, yields and gatherer spawn before native promotion; MiniMax cannot choose those values. Main crew are not automatically gatherers, and supply-unit identities do not implement cargo inventory.",
   "corridorStraightLengthsTiles": {
-    "western-preparation-loop": 259.09,
-    "central-preparation-spine": 85.73,
-    "eastern-preparation-loop": 162.44,
-    "cross-post-link": 252.47,
-    "northern-dispatch-alternative": 360.07,
-    "central-dispatch-link": 170.34,
-    "eastern-dispatch-link": 86.06
+    "western-preparation-loop": 378.02,
+    "central-preparation-spine": 125.91,
+    "eastern-preparation-loop": 221.92,
+    "cross-post-link": 289.8,
+    "northern-dispatch-alternative": 445.25,
+    "central-dispatch-link": 195.17,
+    "eastern-dispatch-link": 141.65
   },
   "interestSpacingTiles": [
     25,
