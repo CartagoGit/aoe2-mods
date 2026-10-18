@@ -134,9 +134,11 @@ export function validateFulfillmentCore(
         new Set(
           req.kind === "visit-zones"
             ? req.zones
-            : req.kind === "entity-health"
-              ? [req.entity]
-              : [],
+            : req.kind === "entity-arrival"
+              ? req.entities
+              : req.kind === "entity-health"
+                ? [req.entity]
+                : [],
         ),
       );
       if (

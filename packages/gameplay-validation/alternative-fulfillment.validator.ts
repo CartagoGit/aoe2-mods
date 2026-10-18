@@ -118,6 +118,17 @@ export function validateAlternativeFulfillment(
     survivors: profile.worldContract.survivorGroups,
     enemies: profile.enemyRoster,
   });
+  // V2's auxiliary arrival facts use a filtered index. Restrict the opt-in
+  // successor rather than changing old receipts or accepting ambiguous facts.
+  for (const side of profile.secondaryObjectives) {
+    const arrivals = side.predicate.requirements.flatMap((req, index) =>
+      req.kind === "entity-arrival" ? [index] : [],
+    );
+    if (arrivals.length > 1 || (arrivals.length === 1 && arrivals[0] !== 0))
+      add(
+        `Shared optional arrival must be a single leading predicate: ${side.id}`,
+      );
+  }
   if (outputs.some((id) => sharedReferences.includes(JSON.stringify(id))))
     add(
       "Recipe outputs cannot also occur in shared predicates, optional worlds, survivor groups or enemy rosters",
