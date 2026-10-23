@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { capabilityProfileV2Schema } from "./scenario-capability.schema";
+import { capabilityProfileSchema } from "./alternative-fulfillment.schema";
 
 export const id = z.string().regex(/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/);
 export const key = z.string().regex(/^[a-z][a-z0-9-]*(?:\.[a-z][a-z0-9-]*)+$/);
@@ -205,7 +205,7 @@ export const eventSchema = z.strictObject({
 });
 export const scenarioSchema = z.strictObject({
   schemaVersion: z.literal(1),
-  capabilityProfile: capabilityProfileV2Schema.optional(),
+  capabilityProfile: capabilityProfileSchema.optional(),
   id: z.string().regex(/^[0-9]{2}-[a-z][a-z0-9-]*$/),
   titleKey: key,
   messages: z
