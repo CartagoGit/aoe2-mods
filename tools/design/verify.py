@@ -138,6 +138,17 @@ def verify(root=ROOT, catalogue=None):
         civic_audit['check_report'](read(civic_audit['REPORT']), civic_audit['build_audit'](root))
     except (ValueError, KeyError, TypeError) as error:
         errors.append(f'Civic difficulty audit: {error}')
+    crosswalk = runpy.run_path(str(ROOT / 'tools/design/research_crosswalk.script.py'))
+    try:
+        crosswalk_errors, coverage = crosswalk['MODULE']['audit_crosswalk'](
+            root, odysseys, read(crosswalk['CROSSWALK_PATH']))
+        errors.extend(crosswalk_errors)
+        if coverage is not None:
+            expected = crosswalk['render_report'](coverage)
+            if (root / crosswalk['REPORT_PATH']).read_text(encoding='utf-8') != expected:
+                errors.append('Research crosswalk: stale report; regenerate with research_crosswalk.script.py --write')
+    except (ValueError, TypeError, KeyError, OSError) as error:
+        errors.append(f'Research crosswalk: {error}')
     expanded_counts = {
         'expandedSelectedEpisodes': sum(len(c['episodeSelection']) for c in odysseys),
         'expandedDraftDossiers': sum(len(c.get('episodes', [])) for c in odysseys),

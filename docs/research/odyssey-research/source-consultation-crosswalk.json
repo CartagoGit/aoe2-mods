@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "first-caliphs-audit-v2",
+      "path": "docs/research/odyssey-research/first-caliphs-source-audit-v2.json",
+      "sha256": "3e504bed658dcf082991056074c28f90a482ad0bf76b06f7da0c3e3c724c0be6",
+      "campaignIds": [
+        "first-caliphs"
+      ]
+    }
+  ],
+  "consultations": [
+    {
+      "id": "brockopp-bounded-introduction",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://assets.cambridge.org/97805217/13726/excerpt/9780521713726_excerpt.pdf",
+      "title": "Jonathan E. Brockopp, Introduction, The Cambridge Companion to Muhammad",
+      "locator": "Printed pp.4,6–7 (PDF pp.4,6–7 of10)",
+      "access": "excerpt",
+      "readScope": "Read only these pages; no critical source collation.",
+      "finding": "The introduction recounts tradition, disputed early adherence, emigration/boycott and the Hijra in622.",
+      "limits": "Not independent proof of revelation, precise emigration/boycott years, routes or buildings."
+    },
+    {
+      "id": "berkey-origins-summary",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.cambridge.org/highereducation/books/the-formation-of-islam/0C58C7DC69FC4FFE20933C00B54D839F/the-origins-of-the-muslim-community/86DD5D5461286D6EA3B6EB4B9A120B5E",
+      "title": "Jonathan P. Berkey, The origins of the Muslim community, The Formation of Islam",
+      "locator": "Author metadata and chapter summary; chapter pp.61–69",
+      "access": "summary",
+      "readScope": "Read publisher metadata and summary only; chapter full text unavailable here.",
+      "finding": "Publisher identifies Berkey; summary frames origins as Muslim narrative, not independent contemporary testimony.",
+      "limits": "Does not establish precise613 preaching chronology, earliest membership order, headcount or local buildings."
+    },
+    {
+      "id": "aqaba-dissertation-access-failed",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://escholarship.org/uc/item/87q494b4",
+      "title": "Repository item supplied for Aqaba pledge research; bibliographic identity unverified here",
+      "locator": "Public item URL only",
+      "access": "unavailable",
+      "readScope": "Browser returned a JavaScript anti-bot page, with no dissertation passage.",
+      "finding": null,
+      "limits": "No reading, author, pledge count, treaty text, date, party number or place is verified by this attempt."
+    },
+    {
+      "id": "poonawala-expeditions-passage",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "title": "Ismail K. Poonawala, Ali b. Abi Taleb i. Life, Encyclopaedia Iranica",
+      "locator": "Opening life section, paragraph beginning with Ali’s courage during expeditions",
+      "access": "article-passage",
+      "readScope": "Read the opening expedition paragraph and cited IbnHisham/Waqidi references in HTML; not the full article or medieval texts.",
+      "finding": "The article explicitly frames Ali’s expedition heroics as legendary reports.",
+      "limits": "No independent casualty totals, Badr date624, tactical sequence or precise battlefield geometry is established by this paragraph."
+    },
+    {
+      "id": "khandaq-retrieved-scope-warning",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/khandaq/",
+      "title": "Michael G. Morony, Khandaq, Encyclopaedia Iranica",
+      "locator": "Opening definition and Sasanian frontier paragraphs only",
+      "access": "article-passage",
+      "readScope": "Browser exposed these paragraphs; subsequent retrievals timed out or returned HTTP403.",
+      "finding": "Retrieved paragraphs concern Sasanian ditches, not the cited Medinan chronology.",
+      "limits": "At this initial attempt the full article was not retrieved and the specific Medina passage remained unconfirmed. A later PDF consultation is recorded separately."
+    },
+    {
+      "id": "morony-medina-paragraph",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/khandaq/?generate_pdf=1",
+      "title": "Michael G. Morony, Khandaq, Encyclopaedia Iranica",
+      "locator": "Publisher PDF p.2, final historical body paragraph before modern usage; visible citation to Balʿami I, pp.202–7",
+      "access": "article-passage",
+      "readScope": "Read the Medinan paragraph in the publisher PDF and its visible citation, after the earlier partial HTML retrieval; not Balʿami or the other medieval works.",
+      "finding": "Morony describes Medina’s trench against a Meccan attack in627; Salman’s advice is qualified as an attribution.",
+      "limits": "Modern scholarly summary, not independent medieval source collation or calendar verification; no trench dimensions, ancient landscape, troop totals or playable map is established."
+    }
+  ],
+  "bindings": [
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "01-testimony-and-household-supply-mecca",
+      "selectionSha256": "3c1a556785f14eb7998d498dcb579dd08bf1f566f7bd6e7503f1189ea88b3dd4",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/0",
+      "architectCheck": {
+        "consultationIds": [
+          "brockopp-bounded-introduction"
+        ],
+        "scopeNote": "Contextual tradition only; personal narration cannot turn revelation into an independently observed event.",
+        "corrections": [
+          "Fresh reading uses printed page4, not unstable browser line numbers."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "02-civilian-network-and-records-mecca",
+      "selectionSha256": "9f6c11cba98bfbd53099874cd1f3a3c4ce09452eca2007364f0a5a249bf35daf",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/1",
+      "architectCheck": {
+        "consultationIds": [
+          "berkey-origins-summary",
+          "brockopp-bounded-introduction"
+        ],
+        "scopeNote": "The chapter summary and a separate bounded excerpt are different access levels. Neither approves this episode.",
+        "corrections": [
+          "The archived and canonical locator misattributes The Formation of Islam to Gerald R. Hawting; the publisher names Jonathan P. Berkey.",
+          "The early-adherence discussion is on Brockopp printed page6 in the consulted publisher PDF. No full Berkey chapter reading is claimed."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "03-finite-emigration-consignments-mecca",
+      "selectionSha256": "219ffe617955b47ff5c6102c60a97c51f46c34d824d21a441a296c723c808e62",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/2",
+      "architectCheck": {
+        "consultationIds": [
+          "brockopp-bounded-introduction"
+        ],
+        "scopeNote": "The selected c615 dating, journey and supply activity still require source-specific verification.",
+        "corrections": [
+          "Fresh access used the Cambridge publisher excerpt, printed page7; the Pageplace preview URL in the archive was not opened in this consultation."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "04-bounded-household-provision-mecca",
+      "selectionSha256": "339e60e095037ccf6dc8e5def7da22f20533944a7dafe602f3cf44bd1a3cafb1",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/3",
+      "architectCheck": {
+        "consultationIds": [
+          "brockopp-bounded-introduction"
+        ],
+        "scopeNote": "Exact years, pact details and physical household locations remain unsupported here.",
+        "corrections": [
+          "Use the printed page7 passage for this bounded check; earlier PDF line numbers are not stable citations."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "05-delegate-logistics-and-receipts-mina-aqaba",
+      "selectionSha256": "6589e15bbefca5d20d0d60b79a322feec320854447bf4ed6980dcb27427379ee",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/4",
+      "architectCheck": {
+        "consultationIds": [
+          "aqaba-dissertation-access-failed"
+        ],
+        "scopeNote": "First-pledge chronology and participants remain a source-check task. An inaccessible landing page is not a consulted dissertation.",
+        "corrections": []
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "06-bounded-reception-planning-mina-aqaba",
+      "selectionSha256": "1bbcc512a3c4ea3d8ec2c8e7d4151a40a164428e5190b6e8e4081249a89cf783",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/5",
+      "architectCheck": {
+        "consultationIds": [
+          "aqaba-dissertation-access-failed"
+        ],
+        "scopeNote": "Second-pledge chronology and participants remain a source-check task, separate from episode5.",
+        "corrections": []
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "01-the-oasis-road",
+      "selectionSha256": "000c120a7dcfd234b6b42efeff1d0f711670836bbb8203bdb0fad6d12df80ef7",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/6",
+      "architectCheck": {
+        "consultationIds": [
+          "brockopp-bounded-introduction"
+        ],
+        "scopeNote": "This checks only broad migration context. Later calendar institution and a precise journey date need a separate source.",
+        "corrections": [
+          "The fresh reading is Brockopp printed page7, not the Iranica chronology entry that the archived audit did not confirm."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "08-finite-battle-supply-and-withdrawal-badr",
+      "selectionSha256": "f734d9050cd3046c21a405fa6f1a2d6343f5d9a67db68d69f3980058d28e648a",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/7",
+      "architectCheck": {
+        "consultationIds": [
+          "poonawala-expeditions-passage"
+        ],
+        "scopeNote": "A modern summary of later reports supplies a caution, not verification of the full battle scenario.",
+        "corrections": [
+          "HTML expedition paragraph was consulted, not a new PDF reading. Date624 and local battle details remain unchecked by this paragraph."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "09-finite-withdrawal-and-care-uhud",
+      "selectionSha256": "2abf10343cd4a8e839c33d6151fd36abbd581f2a42abd1214e63a68a1f90c634",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/8",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "10-finite-defence-and-trench-supply-medina",
+      "selectionSha256": "b5e1721b22fab68b7f31c58e3eb9d58ed8c4dcced680c63596d5bff4e63f86f3",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/9",
+      "architectCheck": {
+        "consultationIds": [
+          "khandaq-retrieved-scope-warning",
+          "morony-medina-paragraph"
+        ],
+        "scopeNote": "The earlier partial HTML retrieval raised a source-scope warning. Subsequent direct publisher PDF reading located the Medinan paragraph; this resolves the retrieval gap for that attributed reference, without historical or terrain approval.",
+        "corrections": [
+          "Do not inherit the archived full_article_consulted label as fresh whole-article verification. Preserve the earlier limited attempt and the subsequent paragraph-level reading separately. Treat the advice attributed to Salman as an attribution, not an established objective cause."
+        ]
+      }
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "11-bounded-negotiation-and-supply-hudaybiyya",
+      "selectionSha256": "2489957ec963813133c6fa5d56999c16536dab4d44f1ee6cb37134036f2129e8",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/10",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "12-finite-siege-and-civilian-extraction-khaybar",
+      "selectionSha256": "c0ce474f6fb4f05355dacb869ad95ca54d0e2be048014e2683c63fea1c4761dd",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/11",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "13-civilian-provision-under-entry-mecca",
+      "selectionSha256": "b632745b51e4186dfc1ad6f06a8d468ee474fbf49ab3911a72ec2b856ab8e7f7",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/12",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "14-witness-and-transition-records-medina",
+      "selectionSha256": "e3e061b173a7bb831a777f2d69a8079b46eaf6745674a6982baccce2a896c843",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/13",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "15-disputed-tax-and-provincial-records-medina",
+      "selectionSha256": "7108c17b58e19d55e90d766b3c0435071706fc6beaf3e9416cd6dbdcc2915aee",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/14",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "02-the-roads-of-yamama",
+      "selectionSha256": "f97192f352ffa4ad8fb39a2f916f3e2ee4e3691c0873f1cd588a9de3201668b0",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/15",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "17-finite-river-withdrawal-kufa-euphrates",
+      "selectionSha256": "ef14ac2f9b51ef5bdd4f49bb66dda56dbc384ba519f10d18369fbcf328655e06",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/16",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "18-surrender-and-civilian-records-damascus",
+      "selectionSha256": "837b5fc452661fc1ea20444fc5a7f6e442a4219190a23995a1303dab95243509",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/17",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "03-the-edge-of-the-river",
+      "selectionSha256": "98d51fc1f1fd1a5890b110a99abf17e243e6ae9707640c52ca044434f42a5059",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/18",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "04-fields-of-the-sawad",
+      "selectionSha256": "6fee897921f3761246ec044dcaf779526723d07b7dbfddc359becfc7511c9496",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/19",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+      "selectionSha256": "d8725321f003a8a67d077c6f79c51344795e735371c636ad11cbc37fe16a8ebd",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/20",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "22-property-and-surrender-records-jerusalem",
+      "selectionSha256": "ca5b894a9665d0e7d41da6f0e53182c04cf7aa06de6b9eedc987631771647c11",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/21",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "23-peaceful-supply-and-record-reception-antioch",
+      "selectionSha256": "e1b0f945ed7c078b7d2517c09476bba8c96277ca4b8270029088632833724e31",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/22",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "05-a-camp-beside-the-nile",
+      "selectionSha256": "01a660c781c22da94ef2db8e036361ff58a5c13b0be640cdb731a674cbea7b01",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/23",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+      "selectionSha256": "f7165799939cc5a66684571a627fe7ab0bebf3e819e23018aad86745c045142e",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/24",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "26-administrative-transition-and-care-medina",
+      "selectionSha256": "e042451b96de2247bbf65b8c2ef5a73ac6ebe9750d9ec0d612fac2ddbdabac30",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/25",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "27-finite-coastal-expedition-and-supply-cyprus",
+      "selectionSha256": "5c7544946f9165cc7cbb5f6b482c0a08517835f2d8f9ced498d369d8189432a9",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/26",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "28-civilian-refuge-and-source-comparison-merv",
+      "selectionSha256": "2884786cda71ecf5dc7ab6ce4c769d2014e55b57b1050c4a03080821915f9c91",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/27",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "29-finite-naval-withdrawal-and-care-finike",
+      "selectionSha256": "a8ea512577521bd7cfaf67883aed2e8c07c2fb8e004e36bb303f563061830c46",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/28",
+      "architectCheck": null
+    },
+    {
+      "campaignId": "first-caliphs",
+      "scenarioId": "30-civilian-records-and-final-perspective-medina",
+      "selectionSha256": "ddb961c938206bf796dd25eb73da3da903f4b3b86e94be7af51371f419c2d805",
+      "sourceId": "first-caliphs-audit-v2",
+      "recordPointer": "/events/29",
+      "architectCheck": null
+    }
+  ]
+}

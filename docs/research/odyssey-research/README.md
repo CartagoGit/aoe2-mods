@@ -130,3 +130,22 @@ La [recopilación de apertura judía](jewish-opening-primary-collection.json), a
 ## Consulta acotada de episodios judíos 5–8
 
 La [colección contrastada del 23 de octubre](jewish-episodes-05-08-primary-collection.md), con [matriz de fuentes](jewish-episodes-05-08-primary-collection.json), conserva las selecciones de Roma–Ostia96, Lodc.100–135, Cirene115–117 y Alejandría115–117. Separa reforma fiscal de abolición, registra atribuciones rabínicas alternativas y distingue los relatos retrospectivos de Dión/Eusebio de la geografía todavía pendiente. No añade dossiers, imágenes, hechos aprobados ni evidencia de juego.
+
+
+## Trazabilidad por identidad de episodio
+
+El [cruce de consultas](source-consultation-crosswalk.md) se genera desde un [registro interno](source-consultation-crosswalk.json) y complementa las anotaciones dentro de las selecciones. El primer lote enlaza los 30 registros de `first-caliphs-source-audit-v2.json` por campaña declarada, ID semántico y puntero JSON exactos. No se enlazan por el número de presentación, coincidencias vagas de título o una URL general. Sus bytes y la selección significativa llevan hashes: si cambian, hay que revisar el vínculo antes de regenerar el informe.
+
+Se conservan las declaraciones originales de acceso sin atribuirlas al arquitecto. El registro nuevo identifica seis consultas acotadas propias de GPT-6 para nueve episodios: siete con algún pasaje accesible y dos con acceso fallido. Un pasaje accesible puede no respaldar la afirmación buscada; no es una puntuación de aceptación. Los otros 21 vínculos no tienen comprobación nueva del arquitecto. La lectura parcial no equivale a leer el libro o artículo completo; no se aprueban hechos, dossiers, mapas ni juego. Las fuentes ausentes de este registro pueden tener investigación anterior en otros archivos.
+
+La consulta del editor corrige la atribución a Hawting de *The Formation of Islam*: la ficha nombra a Jonathan P. Berkey. Las diferencias de URL, localizador y fecha entre auditoría y selección se muestran; no se copia automáticamente una versión sobre otra. La fecha de Yamama diverge entre el registro archivado y la selección, por lo que conserva su revisión específica pendiente. El antiguo campo `sourceFile` de la auditoría contiene una ruta de trabajo obsoleta; el cruce no la usa ni la presenta como procedencia actual.
+
+El registro es una fuente de investigación interna; no cambia el esquema de campañas, el perfil del motor ni los IDs. Su validador comprueba identidad, punteros, alcance declarado y conservación de procedencia; no puede demostrar que una persona leyó un texto ni medir su veracidad. `verify.py` lo ejecuta siempre y rechaza informes desactualizados. No sustituye las propuestas, revisiones o decisiones del servidor DelendAI.
+
+```sh
+python3 tools/design/research_crosswalk.script.py --write
+python3 tools/design/research_crosswalk.script.py
+python3 tools/design/test_research_crosswalk.py
+```
+
+El primer comando regenera únicamente el informe de investigación; los otros comprueban sin escribir campañas. El gate documental ejecuta también las regresiones mediante `test_design.py`. S1 mantiene pendientes el resto del cruce y la revisión editorial de hitos/curvas; MiniMax sigue las asignaciones y bloqueos vigentes.
