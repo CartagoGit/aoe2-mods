@@ -27,3 +27,10 @@ La investigación delegada conserva consultas, variantes y límites; la nueva [c
 También permanece pendiente la revisión editorial de hitos y de las curvas de acto. No se implementa una prueba automática que pretenda medir interés narrativo o rigor histórico a partir de un texto. La auditoría humana deberá justificar divisiones, repeticiones y cambios de contexto, manteniendo las restricciones de las fuentes y de reutilización de medios.
 
 Los 215 episodios sin dossier no se usan por sí solos para declarar fallida esta arquitectura común: su redacción y aprobación pertenecen a las campañas S2–S10. El estado general conserva 278 selecciones, 63 borradores ampliados y ninguna aprobación ampliada de juego. Nada de esta reconciliación desbloquea MiniMax histórico, i00007/S3, navegación o ejecución en AoE2.
+
+
+## Comprobaciones del componente
+
+`python3 tools/design/test_design.py` pasa 68 pruebas, incluidas las dos regresiones nuevas; `python3 tools/design/odyssey_render.script.py --check` conserva nueve campañas y 278 selecciones, sin regenerar dossiers. La primera validación completa detectó correctamente que la política nueva invalidaba el fingerprint de la auditoría cívica. Se regeneró mediante su comando existente, con autor y fecha reales; el diff cambia únicamente fecha y hash de la política. Sus 63 dossiers y 54 candidatos a riesgo permanecen iguales. Esa actualización no corrige ni aprueba esos riesgos.
+
+La integración del componente requiere el gate completo y una revisión independiente acotada. No se solicita `approve` del slice S1 entero por corregir su distribución de actos; el contraste histórico y la revisión editorial descritos arriba siguen pendientes.
