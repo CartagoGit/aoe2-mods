@@ -1,30 +1,32 @@
 # Revisión independiente de i00007/S2
 
-18 de octubre de 2026 · revisor `gpt-6.1-sol` · implementadores `gpt-6` y `gpt-6-luna`.
+23 de octubre de 2026 · revisor `gpt-6.1-sol` · implementadores `gpt-6` y `gpt-6-luna`.
 
-Estado: revisión técnica de fuente completada hasta `a945a2625b008cf81fdf1b25f30d5a3bd44e52a6`; pruebas finales, hash integrado y aprobación formal pendientes. Este borrador no acredita una aprobación de DelendAI.
+Revisión técnica del candidato `cffa31053532c2003f4123326bf570a0218a0ac5` completada sin hallazgos abiertos. La integración oficial y el registro formal de aprobación siguen pendientes al escribir este informe. Este documento por sí solo no es una aprobación de DelendAI.
 
-La revisión se realiza en la unidad oficial `wip/gpt-6.1-sol/review/i00007-S2-g1/fulfillment-reference-review`, sesión `2fcc367e`. El revisor no ha modificado la implementación ni las pruebas. Se consultaron el overview, las capacidades vivas y la cola de revisión de DelendAI, además de las instrucciones, traspasos, propuesta y [ADR aprobado](../../../docs/architecture/alternative-fulfillment.md).
+El revisor reanudó mediante `work enter` la unidad oficial `wip/gpt-6.1-sol/review/i00007-S2-g1/fulfillment-reference-review`, sesión `2fcc367e`, consultó overview, capacidades vivas, propuesta y cola de revisión, y leyó instrucciones, traspasos y [ADR aprobado](../../../docs/architecture/alternative-fulfillment.md). Incorporó el candidato a su propia unidad para ejecutarlo. No modificó implementación ni pruebas; reclamó exclusivamente este informe. El borrador anterior y sus siete reproducciones permanecen en el historial de `554d6e94e3bd35f19eb32364e7121042c166f6f7`; esta continuación inspeccionó el código actual y ejecutó sus regresiones, sin presentar aquellas ejecuciones anteriores como nuevas.
 
-## Hallazgos reproducidos y correcciones
+## Hallazgos de esta continuación
 
-| Caso | Reproducción independiente | Corrección inspeccionada |
+| Hallazgo reproducido | Resultado anterior | Corrección y comprobación final |
 |---|---|---|
-| Prioridad de derrota | Un `shared tick` con derrota conocida y lote espacial desconocido conservaba `terminal=null`. | `79c6771` evalúa esa derrota antes del rechazo espacial. Repetido: derrota con escrow intacto. |
-| Elegibilidad causal | Un trabajador declarado como salida derivada compartida no producida permitía comprometer una receta; `generationReady=false`. | `79c6771` consulta elegibilidad; `0b6f69d` limita los inputs del primer v3 a originales y rechaza productores compartidos. |
-| Restauración del core | Se aceptaban fase u objetivo desconocidos, secundario ausente, recompensa desconocida y terminal incompatible con su fase. | `0b6f69d` añade validación semántica exclusiva del envoltorio v3. Las cinco reproducciones rechazan. |
-| Acciones compartidas externas | `destroy-entity/constructor` y `record-forbidden-entry/unknown` podían lanzar al validar el estado delegado. | `0b6f69d` y `e3e2d01` comprueban muerte autoritativa y pertenencia de identidades antes de delegar. |
-| Observación restaurada | El campo de observación podía faltar, provocando un fallo en la próxima transición. | `e3e2d01` exige el envelope y rechaza entidades con secuencia nula. |
-| Salida de fase | Reservar, abandonar la fase del plan y cancelar dejaba una reserva inaccesible en un mundo no terminal. | `9db42be` impide abandonar un plan incompleto. Repetido: la cancelación sigue disponible y devuelve exactamente el escrow. |
-| Reserva restaurada fuera de fase | Alterar una reserva a otra fase declarada conservando membership permitía cargar el mismo bloqueo. | `a945a26` rechaza planes activos incompletos fuera de su fase, conservando el escrow congelado en derrota. |
+| Trabajo en el patio receptor de otra alternativa | Cambiar `meal-direct.workZoneId` a `materials-court` producía cero diagnósticos: la comparación cubría solamente la recepción de la misma receta. | El validador compara cada zona de trabajo con todas las recepciones, por identidad y huella. La misma reproducción devuelve `fulfillment.contract`; hay regresiones de identidad y solapamiento. |
+| Cierre terminal de un secundario en un mundo activo | Cambiar un secundario a `closed-at-terminal` conservando `terminal=null` permitía cargar el estado. | La carga rechaza ambos sentidos de la inconsistencia terminal/secundarios. La reproducción falla con `fulfillment.snapshot-invalid: terminal optional lifecycle`; regresión automatizada incluida. |
+| Cobertura de guardado y carga incompleta | Los checkpoints solo comprobaban igualdad y rechazo del epoch anterior, sin continuar el mundo restaurado ni cargar terminales válidos. | Diez checkpoints cubren reserva, cancelación, compromiso, salida, trabajo, generación, recepción, prefín y terminales. Se continúa con el contexto nuevo, se repiten reserva/compromiso/generación sin doble cargo ni salida, se alcanza victoria y se comprueba inmovilidad terminal. |
 
-No quedan hallazgos de fuente abiertos de estas reproducciones. La comprobación final de las regresiones automatizadas permanece pendiente.
+Se revisó también la corrección del fixture: las alternativas de refugio usan `materials-court`, `kit-court` y `host-court` respectivamente. La presencia compartida final exige al receptor de comida; v3 añade las salidas seleccionadas y los dos hogares originales en su patio propio. No se exige al trabajador volver a un almacén ajeno al ADR. Una prueba positiva permite perderlo después de registrar su trabajo y completar después la entrega con los destinatarios reales.
 
-## Compatibilidad y límites
+## Aceptación comprobada
 
-Se compararon directamente con `4be89b5b2801f54503d3a1cc4763ea942f975850`: esquema v2, esquema/factory/reducer del snapshot v2, fixture de checkpoint y lock de cadenas conservan sus bytes. El modelo de acciones añade un parser compartido y el compilador proyecta explícitamente v3 sobre la maquinaria existente; no se copia el motor de referencia.
+La implementación sigue S1 mediante un perfil y snapshot v3 estrictamente optativos. Mantiene la envoltura de escenario v1, proyecta explícitamente el contrato compartido sobre v2 y reutiliza su reducer, transacciones de recursos y observador espacial. La selección y los costes proceden del registro; escrow, gasto comprometido, gasto fijo y gasto opcional se contabilizan por separado. No hay un comando nuevo de crédito libre o escritura arbitraria de predicados que complete una receta.
 
-El revisor recalculó estos resultados del fixture legado con stock `10F/20W/30G/40S` y las demás cuentas vacías:
+Las pruebas ejecutadas incluyen 27 ensayos de reserva por dificultad/pareja, los 95 recorridos de referencia de la matriz y los 24 testigos anteriores a la financiación mediante acciones opcionales reales de la referencia. Cubren selección parcial, duplicada, desconocida o de otro servicio; insolvencia conjunta; costes cero, fraccionarios y desbordados; preview obsoleto; cuentas protegidas; recompensa posterior al pago; cancelación y devolución única; bloqueo tras compromiso; trabajo, salidas y recibos cualificados; patio incorrecto; pérdida de salida o destinatario frente a pérdida exclusivamente opcional; y ambas APIs terminales con presencia fresca. Ocho carreras adicionales observan la muerte de una salida o destinatario en el mismo lote que solicita victoria. Los guardados prueban fingerprint, shares, escrow, identidad, versión y rotación del contexto de entrada.
+
+Los límites de referencia son explícitos: un plan, hasta ocho servicios y ocho recetas por servicio, máximo 4096 selecciones, trabajadores distintos entre servicios, inputs originales, una zona por identidad y lote, y como máximo un predicado inicial de llegada por secundario. Este último límite conserva los recibos heredados sin modificar v2.
+
+## Compatibilidad
+
+La comparación directa con `4be89b5b2801f54503d3a1cc4763ea942f975850` no muestra cambios en el esquema v2, reducer/factory/esquema del snapshot v2, fixture de checkpoint ni lock de cadenas. Se recalcularon en la ejecución independiente los hashes del fixture v2 con stock `10F/20W/30G/40S` y las demás cuentas vacías:
 
 | Evidencia v2 | SHA-256 |
 |---|---|
@@ -32,12 +34,20 @@ El revisor recalculó estos resultados del fixture legado con stock `10F/20W/30G
 | Snapshot canónico inicial | `0b3281bdca1992db26f0a1c1f38be1ab8a4e1f32da38da025dad8c0a58aafbab` |
 | IR canónico compilado | `bd53f051c74e7abf75dba31f6a7c30fff0bb9124906756cc7213161fb0e6b329` |
 
-Los límites v3 son explícitos: un plan, hasta ocho servicios y ocho recetas por servicio, máximo 4096 selecciones, trabajadores distintos entre servicios, inputs originales, una zona por identidad en cada observación y como máximo un predicado de llegada inicial por secundario. El último límite evita una colisión de índices de los recibos heredados sin modificar v2. El fingerprint v3 cubre el plan completo y el contexto efímero rota al cargar.
+## Ejecución independiente
 
-El adaptador nativo y Python siguen rechazando perfiles compuestos. La generación se representa como elegibilidad causal de una identidad latente de referencia. Ningún dato de este informe acredita creación física de unidades, UI, navegación, geografía, dificultad, diversión o pruebas de AoE2. S3 y los gates de autoría histórica continúan pendientes.
+En la unidad del revisor, con el candidato incorporado en `a82889d5c60ff63b743c8bb25d129d652d4bff5b`:
 
-## Validación
+- `bun run validate`: salida 0; 142 pruebas, 2069 aserciones, comprobación documental y una campaña validadas. Incluye las 34 pruebas del nuevo fixture.
+- `bun run test:export`: salida 0; tres variantes, dos round-trips, `unsupportedModeRejected=true`, `gameVerified=false`.
+- Repetición directa de las dos reproducciones anteriores: ambas rechazan tras la corrección.
+- Renderer nativo: prueba automatizada de rechazo explícito del perfil v3 antes de abrir plantillas o escribir artefactos.
+- Python: se alimentó `export_scenario` con el resultado real de `compileCapabilityProfile(v3)` dentro de su envoltura ScenarioIR v2; rechazo explícito `capability-not-implemented`, sin exportación.
 
-Ejecución independiente intermedia en `65acde00491507b046ac7034446af5082a18a246`: `bun run validate`, salida 0; 108 tests, 426 aserciones, comprobación documental y una campaña validadas. El adaptador no cambia en S2.
+La exportación usó `COF_PYTHON=/home/cartago/_projects/games/aoe2-mods/.venv/bin/python` y `RGE_CAMPAIGN_BIN=/home/cartago/_projects/games/aoe2-mods/.cache/toolchain/3c40203b650de9888ca82fae1276ea67bf3d3d93/rge_campaign`, las herramientas fijadas del checkout compartido, porque la unidad aislada no contiene una `.venv` propia. No se instaló ni modificó el adaptador. La validación intermedia anterior a la corrección había fallado por formato del fixture; su ejecución final pasa sin ese error.
 
-La ejecución final del candidato completo y su evidencia integrada se añadirán al concluir las pruebas adversariales pendientes. Las 33 decisiones, 95 expectativas financieras y 24 testigos especificados por S1 no se presentan aquí como pruebas de juego.
+## Límites y siguiente gate
+
+La generación es elegibilidad causal de una identidad latente en la referencia. Los 95 recorridos, 24 testigos y 33 decisiones normativas de S1 no son pruebas de juego. Los round-trips pertenecen al fixture exportable existente, no al perfil v3. No se acredita UI, generación física de unidades, navegación, geografía histórica, calibración, diversión ni ejecución en AoE2. El adaptador continúa rechazando el perfil compuesto. S3 y los gates de autoría histórica siguen pendientes.
+
+Falta únicamente registrar el veredicto independiente con el hash efectivamente integrado después de la publicación oficial y su gate. El implementador no queda autoaprobado por este informe.
