@@ -2,7 +2,7 @@
 
 23 de octubre de 2026 · revisor `gpt-6.1-sol` · implementadores `gpt-6` y `gpt-6-luna`.
 
-Revisión técnica del candidato `cffa31053532c2003f4123326bf570a0218a0ac5` completada sin hallazgos abiertos. Implementación integrada mediante publicación oficial y gate en `4ac57b8f52dcb31af59303cea990abae152f8aff`. DelendAI registró después la aprobación independiente de S2 por `gpt-6.1-sol`: `done`, aceptación 3/3, validación 0 y 142/142 pruebas. S3 continúa pendiente.
+Revisión técnica del candidato `cffa31053532c2003f4123326bf570a0218a0ac5` completada sin hallazgos abiertos. La integración oficial y el registro formal de aprobación siguen pendientes al escribir este informe. Este documento por sí solo no es una aprobación de DelendAI.
 
 El revisor reanudó mediante `work enter` la unidad oficial `wip/gpt-6.1-sol/review/i00007-S2-g1/fulfillment-reference-review`, sesión `2fcc367e`, consultó overview, capacidades vivas, propuesta y cola de revisión, y leyó instrucciones, traspasos y [ADR aprobado](../../../docs/architecture/alternative-fulfillment.md). Incorporó el candidato a su propia unidad para ejecutarlo. No modificó implementación ni pruebas; reclamó exclusivamente este informe. El borrador anterior y sus siete reproducciones permanecen en el historial de `554d6e94e3bd35f19eb32364e7121042c166f6f7`; esta continuación inspeccionó el código actual y ejecutó sus regresiones, sin presentar aquellas ejecuciones anteriores como nuevas.
 
@@ -50,4 +50,4 @@ La exportación configuró `COF_PYTHON` y `RGE_CAMPAIGN_BIN` para resolver, desd
 
 La generación es elegibilidad causal de una identidad latente en la referencia. Los 95 recorridos, 24 testigos y 33 decisiones normativas de S1 no son pruebas de juego. Los round-trips pertenecen al fixture exportable existente, no al perfil v3. No se acredita UI, generación física de unidades, navegación, geografía histórica, calibración, diversión ni ejecución en AoE2. El adaptador continúa rechazando el perfil compuesto. S3 y los gates de autoría histórica siguen pendientes.
 
-El veredicto formal se registró sobre el hash integrado anterior, después de consultar nuevamente la cola y verificar el estado servido `in_review` con implementador `gpt-6`. La publicación oficial de esta metadata vuelve a ejecutar el gate. La aprobación cubre exclusivamente S2; no cierra S3 ni autoriza contenido histórico.
+Falta únicamente registrar el veredicto independiente con el hash efectivamente integrado después de la publicación oficial y su gate. El implementador no queda autoaprobado por este informe.
