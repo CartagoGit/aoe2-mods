@@ -727,6 +727,25 @@ class DesignAcceptanceTests(unittest.TestCase):
             any("initial arrival incorrectly counts" in error for error in errors)
         )
 
+    def test_act_targets_reject_drift_even_when_campaign_total_stays_equal(self):
+        self.assertEqual(self.odyssey_helper['audit_selections'](self.odyssey_policy, self.odysseys), [])
+        invalid = copy.deepcopy(self.odyssey_policy)
+        targets = invalid['campaigns'][0]['actEpisodeTargets']
+        targets[0] -= 1
+        targets[1] += 1
+        errors = self.odyssey_helper['audit_selections'](invalid, self.odysseys)
+        self.assertTrue(any('act targets differ from authored membership' in e for e in errors))
+        self.assertFalse(any('act target total differs' in e for e in errors))
+
+    def test_act_targets_require_five_positive_integer_counts_and_correct_total(self):
+        for targets in (None, [], [1, 2, 3, 4], [0, 7, 6, 6, 11],
+                        [True, 7, 6, 6, 10], [8.0, 7, 6, 6, 3], [8, 7, 6, 6, 4]):
+            with self.subTest(targets=targets):
+                invalid = copy.deepcopy(self.odyssey_policy)
+                invalid['campaigns'][0]['actEpisodeTargets'] = targets
+                errors = self.odyssey_helper['audit_selections'](invalid, self.odysseys)
+                self.assertTrue(any('act targets must' in e or 'act target total differs' in e for e in errors))
+
     def test_odyssey_expansion_cannot_discard_baseline_semantic_identity(self):
         invalid = copy.deepcopy(self.odysseys)
         episode = next(

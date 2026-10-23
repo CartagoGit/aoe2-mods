@@ -34,7 +34,8 @@ def audit_selections(policy, campaigns):
             failures.append(message)
 
     baseline = {c['id']: c for c in load_json('docs/design/catalog.json')['campaigns']}
-    targets = {c['id']: c['targetScenarios'] for c in policy['campaigns']}
+    campaign_policies = {c['id']: c for c in policy['campaigns']}
+    targets = {cid: c['targetScenarios'] for cid, c in campaign_policies.items()}
     require({c['campaignId'] for c in campaigns} == set(targets), 'Campaign identities differ from policy')
     total = 0
     for campaign in campaigns:
@@ -49,6 +50,14 @@ def audit_selections(policy, campaigns):
         require(old_ids <= set(ids), f'{cid}: a baseline semantic identity was lost')
         acts = {a['id']: a for a in campaign['acts']}
         require(len(acts) == 5, f'{cid}: five acts required')
+        act_targets = campaign_policies[cid].get('actEpisodeTargets')
+        valid_targets = (isinstance(act_targets, list) and len(act_targets) == 5
+                         and all(type(count) is int and count > 0 for count in act_targets))
+        require(valid_targets, f'{cid}: act targets must contain five positive integers')
+        if valid_targets:
+            require(sum(act_targets) == targets[cid], f'{cid}: act target total differs from campaign target')
+            require([len(act['episodeIds']) for act in campaign['acts']] == act_targets,
+                    f'{cid}: act targets differ from authored membership')
         assigned = [i for a in acts.values() for i in a['episodeIds']]
         require(len(assigned) == len(set(assigned)) and set(assigned) == set(ids), f'{cid}: missing or multiply assigned act episode')
         for episode in episodes:
