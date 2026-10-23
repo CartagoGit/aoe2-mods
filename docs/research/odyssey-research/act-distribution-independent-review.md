@@ -1,6 +1,6 @@
 # Revisión independiente acotada: coherencia de actos
 
-23 de octubre de 2026 · d00002/S1 · revisión de `3995bcdf14b725dcd79b0f5c79a65f8f608f6867` y actualización de fingerprint `c38c58c`.
+23 de octubre de 2026 · d00002/S1 · revisora independiente: `gpt-6-luna`; implementador: `gpt-6`. Unidad review: `wip/gpt-6-luna/review/d00002-S1-g1/act-distribution-review`. Commits revisados: `3995bcdf14b725dcd79b0f5c79a65f8f608f6867` y actualización de fingerprint `c38c58c`.
 
 ## Alcance y resultado
 
@@ -19,6 +19,8 @@ El checkpoint común también identifica como pendiente enlazar, selección por 
 Los generadores de dossiers y secundarios son una arquitectura existente con contratos y validaciones explícitas del contenido autoral; el cambio revisado no amplía esos contratos ni acredita que generen mapas nativos. La ausencia de dossiers de 215 selecciones no se usa aquí como fallo automático del componente común: redacción y aprobaciones de campaña corresponden a S2–S10. No hay aprobación ampliada de juego derivada de esta revisión.
 
 ## Comprobaciones ejecutadas
+
+Las comprobaciones siguientes se ejecutaron sobre el mismo tip de implementación (`c38c58c`) mientras el informe estaba temporalmente en la unidad inicial mal clasificada como `implement`. El informe se trasladó intacto a la unidad oficial `review`; este ajuste de registro de unidad/atribución no cambió código ni datos, por lo que no se repitieron las pruebas.
 
 - `python3 tools/design/test_design.py`: 68 pruebas, correctas; incluye las dos regresiones de distribución.
 - `python3 tools/design/odyssey_render.script.py --check`: 9 campañas y 278 selecciones comprobadas; los dossiers ampliados siguen sin certificación.
