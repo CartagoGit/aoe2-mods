@@ -71,14 +71,19 @@ def unique_rows(rows, label):
     return result
 
 
-def checked_sources(root, rows):
+def checked_sources(root, rows, campaign_ids):
     sources = unique_rows(rows, 'Sources')
     result = {}
     base = (root / RESEARCH_DIR).resolve()
     if not base.is_relative_to(root.resolve()):
         raise ValueError('Research directory must remain inside the project')
     for identity, row in sources.items():
-        exact_fields(row, ('id', 'path', 'sha256'), f'Source {identity}')
+        exact_fields(row, ('id', 'path', 'sha256', 'campaignIds'), f'Source {identity}')
+        scope = row['campaignIds']
+        if (not isinstance(scope, list) or not scope
+                or any(not isinstance(cid, str) or cid not in campaign_ids for cid in scope)
+                or len(scope) != len(set(scope))):
+            raise ValueError('Source campaign scope must name distinct canonical campaigns')
         text(row['path'], 'Source path')
         relative = Path(row['path'])
         if relative.is_absolute() or '..' in relative.parts or '\\' in row['path']:
@@ -91,7 +96,7 @@ def checked_sources(root, rows):
         raw = path.read_bytes()
         if hashlib.sha256(raw).hexdigest() != row['sha256']:
             raise ValueError(f'Stale archived source bytes: {identity}')
-        result[identity] = {'path': row['path'], 'document': json.loads(raw)}
+        result[identity] = {'path': row['path'], 'campaignIds': scope, 'document': json.loads(raw)}
     return result
 
 
@@ -120,7 +125,6 @@ def validate_crosswalk(root, campaigns, data):
     exact_fields(data, ('schemaVersion', 'sources', 'consultations', 'bindings'), 'Crosswalk')
     if type(data['schemaVersion']) is not int or data['schemaVersion'] != 1:
         raise ValueError('Unsupported research crosswalk version')
-    sources = checked_sources(root, data['sources'])
     consultations = checked_consultations(data['consultations'])
     selected = {}
     summary = []
@@ -136,6 +140,7 @@ def validate_crosswalk(root, campaigns, data):
             if key in selected:
                 raise ValueError('Duplicate canonical selection')
             selected[key] = episode
+    sources = checked_sources(root, data['sources'], {row['campaignId'] for row in summary})
     if not isinstance(data['bindings'], list):
         raise ValueError('Bindings must be a list')
     used_sources, used_consultations, seen = set(), set(), set()
@@ -156,6 +161,8 @@ def validate_crosswalk(root, campaigns, data):
         source = sources.get(binding['sourceId'])
         if not source:
             raise ValueError('Binding refers to an unknown archived source')
+        if key[0] not in source['campaignIds']:
+            raise ValueError('Binding campaign is outside the archived source scope')
         used_sources.add(binding['sourceId'])
         record = record_at(source['document'], binding['recordPointer'])
         if not isinstance(record, dict) or record.get('id') != key[1]:

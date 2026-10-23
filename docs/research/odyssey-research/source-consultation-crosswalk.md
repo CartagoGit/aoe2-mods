@@ -31,7 +31,7 @@ Access in the next table is the archived author’s declaration, not a new readi
 | first-caliphs/01-the-oasis-road | [/events/6](first-caliphs-source-audit-v2.json#/events/6) | page_opened_specific_entry_not_confirmed | brockopp-bounded-introduction | none in compared fields |
 | first-caliphs/08-finite-battle-supply-and-withdrawal-badr | [/events/7](first-caliphs-source-audit-v2.json#/events/7) | full_article_pdf_consulted | poonawala-expeditions-passage | none in compared fields |
 | first-caliphs/09-finite-withdrawal-and-care-uhud | [/events/8](first-caliphs-source-audit-v2.json#/events/8) | full_article_pdf_consulted | none recorded | none in compared fields |
-| first-caliphs/10-finite-defence-and-trench-supply-medina | [/events/9](first-caliphs-source-audit-v2.json#/events/9) | full_article_consulted | khandaq-retrieved-scope-warning | source URL, locator |
+| first-caliphs/10-finite-defence-and-trench-supply-medina | [/events/9](first-caliphs-source-audit-v2.json#/events/9) | full_article_consulted | khandaq-retrieved-scope-warning, morony-medina-paragraph | source URL, locator |
 | first-caliphs/11-bounded-negotiation-and-supply-hudaybiyya | [/events/10](first-caliphs-source-audit-v2.json#/events/10) | full_article_consulted | none recorded | none in compared fields |
 | first-caliphs/12-finite-siege-and-civilian-extraction-khaybar | [/events/11](first-caliphs-source-audit-v2.json#/events/11) | full_article_pdf_consulted | none recorded | none in compared fields |
 | first-caliphs/13-civilian-provision-under-entry-mecca | [/events/12](first-caliphs-source-audit-v2.json#/events/12) | full_article_pdf_consulted | none recorded | source URL, locator |
@@ -113,7 +113,19 @@ Browser exposed these paragraphs; subsequent retrievals timed out or returned HT
 
 Retrieved paragraphs concern Sasanian ditches, not the cited Medinan chronology.
 
-Limits: Full article not retrieved. The archive’s627 claim still needs its specific passage or another source.
+Limits: At this initial attempt the full article was not retrieved and the specific Medina passage remained unconfirmed. A later PDF consultation is recorded separately.
+
+### morony-medina-paragraph
+
+2026-10-23 · gpt-6 · `article-passage`
+
+[Michael G. Morony, Khandaq, Encyclopaedia Iranica](https://www.iranicaonline.org/articles/khandaq/?generate_pdf=1) — Publisher PDF p.2, final historical body paragraph before modern usage; visible citation to Balʿami I, pp.202–7
+
+Read the Medinan paragraph in the publisher PDF and its visible citation, after the earlier partial HTML retrieval; not Balʿami or the other medieval works.
+
+Morony describes Medina’s trench against a Meccan attack in627; Salman’s advice is qualified as an attribution.
+
+Limits: Modern scholarly summary, not independent medieval source collation or calendar verification; no trench dimensions, ancient landscape, troop totals or playable map is established.
 
 ## Binding-specific cautions and corrections
 
@@ -147,8 +159,8 @@ Limits: Full article not retrieved. The archive’s627 claim still needs its spe
 
 - HTML expedition paragraph was consulted, not a new PDF reading. Date624 and local battle details remain unchecked by this paragraph.
 
-**first-caliphs/10-finite-defence-and-trench-supply-medina**: Partial retrieval raises a source-scope warning. It does not verify the archive’s claimed Medina passage and does not establish that the full article lacks one.
+**first-caliphs/10-finite-defence-and-trench-supply-medina**: The earlier partial HTML retrieval raised a source-scope warning. Subsequent direct publisher PDF reading located the Medinan paragraph; this resolves the retrieval gap for that attributed reference, without historical or terrain approval.
 
-- Do not inherit the archived full_article_consulted label as a fresh verification of Medina or627. Recover and inspect the actual cited passage before using this claim.
+- Do not inherit the archived full_article_consulted label as fresh whole-article verification. Preserve the earlier limited attempt and the subsequent paragraph-level reading separately. Treat the advice attributed to Salman as an attribution, not an established objective cause.
 
 No historical authoring or native gate is unlocked. The crosswalk is not a replacement for DelendAI review or its live proposal state.

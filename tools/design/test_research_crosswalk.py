@@ -34,6 +34,7 @@ class ResearchCrosswalkTests(unittest.TestCase):
         self.path.write_text(json.dumps(self.source))
         self.data = {'schemaVersion': 1,
                      'sources': [{'id': 'archive', 'path': self.path.relative_to(self.root).as_posix(),
+                                  'campaignIds': ['test-campaign'],
                                   'sha256': hashlib.sha256(self.path.read_bytes()).hexdigest()}],
                      'consultations': [],
                      'bindings': [{'campaignId': 'test-campaign', 'scenarioId': self.episode['id'],
@@ -41,7 +42,8 @@ class ResearchCrosswalkTests(unittest.TestCase):
                                    'sourceId': 'archive', 'recordPointer': '/events/0', 'architectCheck': None}]}
 
     def audit(self, data=None, campaigns=None):
-        return API['audit_crosswalk'](self.root, campaigns or self.campaigns, data or self.data)
+        return API['audit_crosswalk'](self.root, self.campaigns if campaigns is None else campaigns,
+                                     self.data if data is None else data)
 
     def add_consultation(self, access='excerpt'):
         self.data['consultations'] = [{'id': 'fresh-read', 'realIdentity': 'test-reader', 'date': '2026-10-23',
@@ -71,6 +73,18 @@ class ResearchCrosswalkTests(unittest.TestCase):
             with self.subTest(field=field, value=value):
                 invalid = copy.deepcopy(self.data)
                 invalid['bindings'][0][field] = value
+                self.assertTrue(self.audit(invalid)[0])
+
+    def test_source_campaign_scope_rejects_rehashed_same_id_from_another_campaign(self):
+        invalid = copy.deepcopy(self.data)
+        binding = invalid['bindings'][0]
+        binding['campaignId'] = 'unlinked-campaign'
+        binding['selectionSha256'] = API['selection_fingerprint']('unlinked-campaign', self.episode)
+        self.assertTrue(any('outside the archived source scope' in error for error in self.audit(invalid)[0]))
+        for scope in [[], 'test-campaign', ['absent'], ['test-campaign', 'test-campaign'], [[]]]:
+            with self.subTest(scope=scope):
+                invalid = copy.deepcopy(self.data)
+                invalid['sources'][0]['campaignIds'] = scope
                 self.assertTrue(self.audit(invalid)[0])
 
     def test_stale_selection_and_archived_bytes_fail_without_editing_canonical_data(self):
@@ -161,6 +175,8 @@ class ResearchCrosswalkTests(unittest.TestCase):
         self.assertIn('date', yamama['differences'])
         mismatch = next(row for row in report['records'] if row['scenarioId'] == '10-finite-defence-and-trench-supply-medina')
         self.assertIn('scope warning', mismatch['architectCheck']['scopeNote'])
+        self.assertEqual(mismatch['architectCheck']['consultationIds'],
+                         ['khandaq-retrieved-scope-warning', 'morony-medina-paragraph'])
         self.assertIn('not a support or acceptance score', RENDERER['render_report'](report))
         self.assertIn('Jonathan P. Berkey', RENDERER['render_report'](report))
         self.assertEqual((ROOT / API['REPORT_PATH']).read_text(), RENDERER['render_report'](report))

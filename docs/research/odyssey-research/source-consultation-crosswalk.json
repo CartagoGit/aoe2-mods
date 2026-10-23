@@ -4,7 +4,10 @@
     {
       "id": "first-caliphs-audit-v2",
       "path": "docs/research/odyssey-research/first-caliphs-source-audit-v2.json",
-      "sha256": "3e504bed658dcf082991056074c28f90a482ad0bf76b06f7da0c3e3c724c0be6"
+      "sha256": "3e504bed658dcf082991056074c28f90a482ad0bf76b06f7da0c3e3c724c0be6",
+      "campaignIds": [
+        "first-caliphs"
+      ]
     }
   ],
   "consultations": [
@@ -66,7 +69,19 @@
       "access": "article-passage",
       "readScope": "Browser exposed these paragraphs; subsequent retrievals timed out or returned HTTP403.",
       "finding": "Retrieved paragraphs concern Sasanian ditches, not the cited Medinan chronology.",
-      "limits": "Full article not retrieved. The archive’s627 claim still needs its specific passage or another source."
+      "limits": "At this initial attempt the full article was not retrieved and the specific Medina passage remained unconfirmed. A later PDF consultation is recorded separately."
+    },
+    {
+      "id": "morony-medina-paragraph",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/khandaq/?generate_pdf=1",
+      "title": "Michael G. Morony, Khandaq, Encyclopaedia Iranica",
+      "locator": "Publisher PDF p.2, final historical body paragraph before modern usage; visible citation to Balʿami I, pp.202–7",
+      "access": "article-passage",
+      "readScope": "Read the Medinan paragraph in the publisher PDF and its visible citation, after the earlier partial HTML retrieval; not Balʿami or the other medieval works.",
+      "finding": "Morony describes Medina’s trench against a Meccan attack in627; Salman’s advice is qualified as an attribution.",
+      "limits": "Modern scholarly summary, not independent medieval source collation or calendar verification; no trench dimensions, ancient landscape, troop totals or playable map is established."
     }
   ],
   "bindings": [
@@ -212,11 +227,12 @@
       "recordPointer": "/events/9",
       "architectCheck": {
         "consultationIds": [
-          "khandaq-retrieved-scope-warning"
+          "khandaq-retrieved-scope-warning",
+          "morony-medina-paragraph"
         ],
-        "scopeNote": "Partial retrieval raises a source-scope warning. It does not verify the archive’s claimed Medina passage and does not establish that the full article lacks one.",
+        "scopeNote": "The earlier partial HTML retrieval raised a source-scope warning. Subsequent direct publisher PDF reading located the Medinan paragraph; this resolves the retrieval gap for that attributed reference, without historical or terrain approval.",
         "corrections": [
-          "Do not inherit the archived full_article_consulted label as a fresh verification of Medina or627. Recover and inspect the actual cited passage before using this claim."
+          "Do not inherit the archived full_article_consulted label as fresh whole-article verification. Preserve the earlier limited attempt and the subsequent paragraph-level reading separately. Treat the advice attributed to Salman as an attribution, not an established objective cause."
         ]
       }
     },
