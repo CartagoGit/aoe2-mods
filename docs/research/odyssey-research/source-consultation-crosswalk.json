@@ -55,6 +55,18 @@
       "readScope": "Read the opening expedition paragraph and cited IbnHisham/Waqidi references in HTML; not the full article or medieval texts.",
       "finding": "The article explicitly frames Ali’s expedition heroics as legendary reports.",
       "limits": "No independent casualty totals, Badr date624, tactical sequence or precise battlefield geometry is established by this paragraph."
+    },
+    {
+      "id": "khandaq-retrieved-scope-warning",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/khandaq/",
+      "title": "Michael G. Morony, Khandaq, Encyclopaedia Iranica",
+      "locator": "Opening definition and Sasanian frontier paragraphs only",
+      "access": "article-passage",
+      "readScope": "Browser exposed these paragraphs; subsequent retrievals timed out or returned HTTP403.",
+      "finding": "Retrieved paragraphs concern Sasanian ditches, not the cited Medinan chronology.",
+      "limits": "Full article not retrieved. The archive’s627 claim still needs its specific passage or another source."
     }
   ],
   "bindings": [
@@ -198,7 +210,15 @@
       "selectionSha256": "b5e1721b22fab68b7f31c58e3eb9d58ed8c4dcced680c63596d5bff4e63f86f3",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/9",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "khandaq-retrieved-scope-warning"
+        ],
+        "scopeNote": "Partial retrieval raises a source-scope warning. It does not verify the archive’s claimed Medina passage and does not establish that the full article lacks one.",
+        "corrections": [
+          "Do not inherit the archived full_article_consulted label as a fresh verification of Medina or627. Recover and inspect the actual cited passage before using this claim."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",

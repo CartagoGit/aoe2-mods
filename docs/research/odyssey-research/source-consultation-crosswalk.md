@@ -2,7 +2,7 @@
 
 Research linkage only. Archived declarations, fresh bounded consultations and historical approval are different things. No row approves a dossier, map, campaign or game behavior.
 
-This sidecar supplements existing inline annotations; unlinked here does not mean no earlier research exists. Hashes and exact semantic identities prevent silent source or selection substitution. Missing architect checks remain missing.
+This sidecar supplements existing inline annotations; unlinked here does not mean no earlier research exists. Hashes and exact semantic identities prevent silent source or selection substitution. Missing architect checks remain missing. A readable passage can be irrelevant or contradict the intended claim; its count is not a support or acceptance score.
 
 | Campaign | Selected | Linked archive records | Architect checks | With a readable passage | Only unavailable/metadata | Linked without architect check | Unlinked here |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -11,7 +11,7 @@ This sidecar supplements existing inline annotations; unlinked here does not mea
 | jewish-tradition | 30 | 0 | 0 | 0 | 0 | 0 | 30 |
 | church-of-rome | 32 | 0 | 0 | 0 | 0 | 0 | 32 |
 | new-rome | 32 | 0 | 0 | 0 | 0 | 0 | 32 |
-| first-caliphs | 30 | 30 | 8 | 6 | 2 | 22 | 0 |
+| first-caliphs | 30 | 30 | 9 | 7 | 2 | 21 | 0 |
 | first-fitna | 28 | 0 | 0 | 0 | 0 | 0 | 28 |
 | umayyads | 32 | 0 | 0 | 0 | 0 | 0 | 32 |
 | house-of-ali | 30 | 0 | 0 | 0 | 0 | 0 | 30 |
@@ -31,7 +31,7 @@ Access in the next table is the archived author’s declaration, not a new readi
 | first-caliphs/01-the-oasis-road | [/events/6](first-caliphs-source-audit-v2.json#/events/6) | page_opened_specific_entry_not_confirmed | brockopp-bounded-introduction | none in compared fields |
 | first-caliphs/08-finite-battle-supply-and-withdrawal-badr | [/events/7](first-caliphs-source-audit-v2.json#/events/7) | full_article_pdf_consulted | poonawala-expeditions-passage | none in compared fields |
 | first-caliphs/09-finite-withdrawal-and-care-uhud | [/events/8](first-caliphs-source-audit-v2.json#/events/8) | full_article_pdf_consulted | none recorded | none in compared fields |
-| first-caliphs/10-finite-defence-and-trench-supply-medina | [/events/9](first-caliphs-source-audit-v2.json#/events/9) | full_article_consulted | none recorded | source URL, locator |
+| first-caliphs/10-finite-defence-and-trench-supply-medina | [/events/9](first-caliphs-source-audit-v2.json#/events/9) | full_article_consulted | khandaq-retrieved-scope-warning | source URL, locator |
 | first-caliphs/11-bounded-negotiation-and-supply-hudaybiyya | [/events/10](first-caliphs-source-audit-v2.json#/events/10) | full_article_consulted | none recorded | none in compared fields |
 | first-caliphs/12-finite-siege-and-civilian-extraction-khaybar | [/events/11](first-caliphs-source-audit-v2.json#/events/11) | full_article_pdf_consulted | none recorded | none in compared fields |
 | first-caliphs/13-civilian-provision-under-entry-mecca | [/events/12](first-caliphs-source-audit-v2.json#/events/12) | full_article_pdf_consulted | none recorded | source URL, locator |
@@ -103,6 +103,18 @@ The article explicitly frames Ali’s expedition heroics as legendary reports.
 
 Limits: No independent casualty totals, Badr date624, tactical sequence or precise battlefield geometry is established by this paragraph.
 
+### khandaq-retrieved-scope-warning
+
+2026-10-23 · gpt-6 · `article-passage`
+
+[Michael G. Morony, Khandaq, Encyclopaedia Iranica](https://www.iranicaonline.org/articles/khandaq/) — Opening definition and Sasanian frontier paragraphs only
+
+Browser exposed these paragraphs; subsequent retrievals timed out or returned HTTP403.
+
+Retrieved paragraphs concern Sasanian ditches, not the cited Medinan chronology.
+
+Limits: Full article not retrieved. The archive’s627 claim still needs its specific passage or another source.
+
 ## Binding-specific cautions and corrections
 
 **first-caliphs/01-testimony-and-household-supply-mecca**: Contextual tradition only; personal narration cannot turn revelation into an independently observed event.
@@ -134,5 +146,9 @@ Limits: No independent casualty totals, Badr date624, tactical sequence or preci
 **first-caliphs/08-finite-battle-supply-and-withdrawal-badr**: A modern summary of later reports supplies a caution, not verification of the full battle scenario.
 
 - HTML expedition paragraph was consulted, not a new PDF reading. Date624 and local battle details remain unchecked by this paragraph.
+
+**first-caliphs/10-finite-defence-and-trench-supply-medina**: Partial retrieval raises a source-scope warning. It does not verify the archive’s claimed Medina passage and does not establish that the full article lacks one.
+
+- Do not inherit the archived full_article_consulted label as a fresh verification of Medina or627. Recover and inspect the actual cited passage before using this claim.
 
 No historical authoring or native gate is unlocked. The crosswalk is not a replacement for DelendAI review or its live proposal state.

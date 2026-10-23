@@ -156,9 +156,12 @@ class ResearchCrosswalkTests(unittest.TestCase):
         self.assertEqual(sum(row['selected'] for row in report['campaigns']), 278)
         row = next(row for row in report['campaigns'] if row['campaignId'] == 'first-caliphs')
         self.assertEqual((row['linked'], row['architectChecks'], row['withPassageRead'],
-                          row['onlyUnavailableOrMetadata'], row['linkedWithoutArchitectCheck']), (30, 8, 6, 2, 22))
+                          row['onlyUnavailableOrMetadata'], row['linkedWithoutArchitectCheck']), (30, 9, 7, 2, 21))
         yamama = next(row for row in report['records'] if row['scenarioId'] == '02-the-roads-of-yamama')
         self.assertIn('date', yamama['differences'])
+        mismatch = next(row for row in report['records'] if row['scenarioId'] == '10-finite-defence-and-trench-supply-medina')
+        self.assertIn('scope warning', mismatch['architectCheck']['scopeNote'])
+        self.assertIn('not a support or acceptance score', RENDERER['render_report'](report))
         self.assertIn('Jonathan P. Berkey', RENDERER['render_report'](report))
         self.assertEqual((ROOT / API['REPORT_PATH']).read_text(), RENDERER['render_report'](report))
 

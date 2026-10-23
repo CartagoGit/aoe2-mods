@@ -19,7 +19,7 @@ def cell(value):
 def render_report(report):
     lines = ['# Source consultation crosswalk', '',
              'Research linkage only. Archived declarations, fresh bounded consultations and historical approval are different things. No row approves a dossier, map, campaign or game behavior.', '',
-             'This sidecar supplements existing inline annotations; unlinked here does not mean no earlier research exists. Hashes and exact semantic identities prevent silent source or selection substitution. Missing architect checks remain missing.', '',
+             'This sidecar supplements existing inline annotations; unlinked here does not mean no earlier research exists. Hashes and exact semantic identities prevent silent source or selection substitution. Missing architect checks remain missing. A readable passage can be irrelevant or contradict the intended claim; its count is not a support or acceptance score.', '',
              '| Campaign | Selected | Linked archive records | Architect checks | With a readable passage | Only unavailable/metadata | Linked without architect check | Unlinked here |',
              '|---|---:|---:|---:|---:|---:|---:|---:|']
     for row in report['campaigns']:
