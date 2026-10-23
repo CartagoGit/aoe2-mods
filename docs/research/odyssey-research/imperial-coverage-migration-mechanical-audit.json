@@ -1,0 +1,200 @@
+{
+  "audit": "imperial coverage migration mechanical consistency",
+  "architectApproval": false,
+  "readOnly": true,
+  "referenceCommit": "12b0488 (old imperial selection comparison)",
+  "checks": {
+    "policy_target_278": true,
+    "campaign_targets_sum_278": true,
+    "imperial_target_34": true,
+    "all_39_baseline_semantic_ids_preserved": true,
+    "all_29_pre_migration_imperial_ids_preserved": true,
+    "imperial_orders_contiguous_1_34": true,
+    "act_counts_6_6_7_6_9": true,
+    "new_ids_at_orders_28_29_30_31_33": true,
+    "law_28_at_32": true,
+    "final_29_at_34": true,
+    "selection34_drafts29": true,
+    "assignment34_rows": true,
+    "new_slice_map_S33_S34_S35_S36_S37": true,
+    "promotion_stays_S6": true,
+    "narrator_plan_matches34": true,
+    "selection_act_id_membership_exact": true,
+    "proposal_dependency_chain_S30_S33_S34_S35_S36_S31_S37_S32": true,
+    "proposal_each_slice_scenario_order_matches_assignments": true,
+    "promotion_S6_depends_final_S32": true,
+    "single_campaign_finale_still_semantic_29": true,
+    "five_new_rows_have_attributed_locators_and_qualifications": true,
+    "amendment_table_maps_orders_ids_and_slices": true,
+    "proposal_frontmatter_f00003_status_metadata_present": true,
+    "d00002_frontmatter_intact": true,
+    "d00002_handoff_note_states_278_and_not_dossiers": true,
+    "handoff_work_totals_59_existing_219_missing": true
+  },
+  "counts": {
+    "policySelectionTotal": 278,
+    "imperialSelections": 34,
+    "imperialDrafts": 29,
+    "imperialUndraftedSelections": 5,
+    "allSelectionTotal": 278,
+    "allExistingDrafts": 59,
+    "allUndraftedSelections": 219,
+    "proposalEpisodeSlices": 34,
+    "proposalSlicesTotal": 305
+  },
+  "requestedChain": {
+    "expected": [
+      [
+        "S30",
+        "S29"
+      ],
+      [
+        "S33",
+        "S30"
+      ],
+      [
+        "S34",
+        "S33"
+      ],
+      [
+        "S35",
+        "S34"
+      ],
+      [
+        "S36",
+        "S35"
+      ],
+      [
+        "S31",
+        "S36"
+      ],
+      [
+        "S37",
+        "S31"
+      ],
+      [
+        "S32",
+        "S37"
+      ]
+    ],
+    "actual": [
+      [
+        "S30",
+        "S29"
+      ],
+      [
+        "S33",
+        "S30"
+      ],
+      [
+        "S34",
+        "S33"
+      ],
+      [
+        "S35",
+        "S34"
+      ],
+      [
+        "S36",
+        "S35"
+      ],
+      [
+        "S31",
+        "S36"
+      ],
+      [
+        "S37",
+        "S31"
+      ],
+      [
+        "S32",
+        "S37"
+      ]
+    ],
+    "promotionSlice": "S6"
+  },
+  "finaleDrafts": [
+    [
+      "faith-origins",
+      "04-a-different-dawn"
+    ],
+    [
+      "imperial-church",
+      "29-council-and-final-perspective-constantinople"
+    ]
+  ],
+  "stale29EpisodeClaims": [
+    {
+      "file": "docs/design/odysseys/imperial-church.json",
+      "line": 94899,
+      "text": "\"finale\": \"Finale is drafted for current selection29, not approval of the whole campaign. Resolve363–380coverage before closing the architecture; any added earlier selection must preserve this final episode’s identity and canonical route keys.\","
+    },
+    {
+      "file": "docs/design/odysseys/imperial-church.json",
+      "line": 121227,
+      "text": "\"finale\": \"Finale is drafted for current selection29, not approval of the whole campaign. Resolve363–380coverage before closing the architecture; any added earlier selection must preserve this final episode’s identity and canonical route keys.\","
+    },
+    {
+      "file": "docs/design/voices/odyssey-narrators.json",
+      "line": 726,
+      "text": "\"expandedLife\": \"c.334–403 controls this 29 episode odyssey\","
+    },
+    {
+      "file": "docs/design/voices/imperial-church.md",
+      "line": 140,
+      "text": "\"expandedLife\": \"c.334–403 controls this 29 episode odyssey\","
+    }
+  ],
+  "findings": [
+    {
+      "severity": "P2",
+      "issue": "Narrator migration metadata still says Marcus controls a 29-episode odyssey",
+      "locations": [
+        "docs/design/voices/odyssey-narrators.json:726",
+        "docs/design/voices/imperial-church.md:140"
+      ],
+      "impact": "Generated personal narrator bible contradicts the 34-selection plan even though episodeKnowledgePlan now has 34 rows."
+    },
+    {
+      "severity": "P2",
+      "issue": "Two finale contract fields still say “current selection29”",
+      "locations": [
+        "docs/design/odysseys/imperial-church.json:94899",
+        "docs/design/odysseys/imperial-church.json:121227"
+      ],
+      "impact": "They correctly say resolve 363–380 coverage before closing, but the literal selection count is stale after migration; the final semantic ID is still correctly order 34."
+    },
+    {
+      "severity": "note",
+      "issue": "f00003 S1 acceptance says to verify 34 complete dossiers while only 29 drafts exist at this migration point",
+      "impact": "This is a future blocking acceptance criterion, not evidence the migration created five dossiers. Amendment and counts correctly state 59 total drafts across the collection and 219 undrafted selections."
+    }
+  ],
+  "limits": [
+    "No history/architecture/gameplay/QA approval.",
+    "The new passages are mechanically attributed and qualified here; this audit does not re-validate their historical interpretation.",
+    "No repository writes were made."
+  ],
+  "followUp": {
+    "checkedAt": "2026-10-15",
+    "readOnly": true,
+    "architectApproval": false,
+    "regenerationCheck": "python3 tools/design/odyssey_render.script.py --check passed: 9 campaigns / 278 selections; expanded dossiers not certified",
+    "checks": {
+      "canonical_narrator_metadata_says_34": true,
+      "generated_narrator_markdown_says_34": true,
+      "finale_field_explicitly_preserves_semantic_id29_at_order34": true,
+      "finale_says_five_added_dossiers_pending": true,
+      "generated_selection_wiki_reflects_34_and_pending_dossiers": true,
+      "draft_count_remains_29_not_claimed_as_34": true
+    },
+    "observedValues": {
+      "expandedLife": "c.334–403 controls this 34 episode odyssey",
+      "generatedNarratorLine": "\"expandedLife\": \"c.334–403 controls this 34 episode odyssey\",",
+      "finaleContract": "Final semantic ID29 is display order34 in the34-selection arc. It remains the sole finale, with unchanged canonical route keys. Five added source-qualified selections still require full dossiers, historical review, maps and game calibration before closing the architecture.",
+      "authoredImperialDrafts": 29,
+      "selectedImperialEpisodes": 34
+    },
+    "result": "Both previously reported P2 wording issues are corrected in canonical files and generated narrator/wiki outputs. The 29-draft count is intentionally retained: the five added selections still lack full dossiers."
+  }
+}

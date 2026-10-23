@@ -1,0 +1,148 @@
+{
+  "audit": "Imperial Church episode map control audit, orders 12–14",
+  "sourceFile": "docs/design/odysseys/imperial-church.json",
+  "worktree": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+  "architectApproval": false,
+  "readOnly": true,
+  "repositoryOrGitChanges": false,
+  "method": {
+    "source": "Read mapPlan records and the referenced SVGs; parsed SVG polylines/circles/text; rasterized each SVG for visual label/control inspection.",
+    "maps": [
+      "docs/design/maps/imperial-church/odyssey/02-nicaea.svg",
+      "docs/design/maps/imperial-church/odyssey/13-finite-works-logistics-jerusalem.svg",
+      "docs/design/maps/imperial-church/odyssey/03-new-capital.svg"
+    ],
+    "scale": "Each SVG map frame is 650 × 650 px for a declared 400 × 400 tile map, or 1.625 px/tile. The displayed 20 px hub circles correspond to the declared 12-tile radius. Nominal corridor half-widths were compared as 4–5 tiles; SVG route stroke is only 3 px and does not visually encode the full game corridor width.",
+    "geometricCheck": "Checked hub center/radius within the map frame; pairwise center distances; route centerline to explicit SVG water-control polyline minimum distance; approximate clearance after corridor half-width. No assumption that a line is a filled water mask."
+  },
+  "episodeFindings": [
+    {
+      "order": 12,
+      "episodeId": "02-nicaea",
+      "mapAsset": "docs/design/maps/imperial-church/odyssey/02-nicaea.svg",
+      "framePx": {
+        "x": [
+          55,
+          705
+        ],
+        "y": [
+          85,
+          735
+        ]
+      },
+      "hubCount": 6,
+      "allHubCirclesInsideFrame": true,
+      "nearestHubPair": {
+        "hubs": [
+          "hub-1",
+          "hub-3"
+        ],
+        "centreDistanceTiles": 72.12,
+        "radiiSumTiles": 24,
+        "gapBetweenDeclaredRadiusEdgesTiles": 48.12
+      },
+      "waterControl": "Only a two-segment dashed schematic-water fragment is drawn near the western side of the frame. The plan's longer schematic lake trace mostly lies outside this local bbox. It is a line/outline, not a lake polygon or playable-water mask.",
+      "routeCheck": {
+        "allCorridorsMode": "land",
+        "allRouteCenterlinesRemainEastOfDrawnSchematicFragment": true,
+        "minimumCenterlineClearanceToDrawnWaterLineTiles": 109.65,
+        "closestCorridor": "southern-notice-loop",
+        "approximateClearanceAfterLargestHalfWidthTiles": 104.65,
+        "lineIntersection": false
+      },
+      "sameBankAssessment": "All hubs and route vertices lie well to the east/right of the partial schematic trace, consistent with the plan's intended inland-side layout. Because the trace is not a closed shoreline polygon and the lake is not represented as a water mask, this is a drawing-relative statement only; no ancient bank or pathability is certified.",
+      "labels": "Right-rail labels and footer fit in the SVG viewBox in raster inspection; no obvious clipping.",
+      "issue": "The displayed water control is only a short fragment rather than a filled lake or continuous coast. It is enough to check that current land routes do not cross that fragment, but not enough to validate land/water pathability."
+    },
+    {
+      "order": 13,
+      "episodeId": "13-finite-works-logistics-jerusalem",
+      "mapAsset": "docs/design/maps/imperial-church/odyssey/13-finite-works-logistics-jerusalem.svg",
+      "framePx": {
+        "x": [
+          55,
+          705
+        ],
+        "y": [
+          85,
+          735
+        ]
+      },
+      "hubCount": 5,
+      "allHubCirclesInsideFrame": true,
+      "nearestHubPair": {
+        "hubs": [
+          "hub-3",
+          "hub-5"
+        ],
+        "centreDistanceTiles": 90.63,
+        "radiiSumTiles": 24,
+        "gapBetweenDeclaredRadiusEdgesTiles": 66.63
+      },
+      "waterControl": "No water-control polyline or polygon is rendered in this SVG; schematicWaterControl.coordinates is empty. Terrain instructions call the Kidron a valley, mostly off-frame, and not navigable.",
+      "routeCheck": {
+        "allCorridorsMode": "land",
+        "routeWaterClearanceTiles": null,
+        "geometricCrossingAssessment": "Not testable: no water geometry is drawn."
+      },
+      "sameBankAssessment": "All route vertices and hubs are in-frame, but no banks/water feature are encoded; same-bank status cannot be assessed mechanically.",
+      "labels": "Right-rail labels and footer fit in the SVG viewBox in raster inspection; no obvious clipping.",
+      "issue": "No hydrologic control is present, so the routes cannot be checked against the Kidron valley/drainage or terrain relief. This is a source/control gap, not evidence that the land routes cross water."
+    },
+    {
+      "order": 14,
+      "episodeId": "03-new-capital",
+      "mapAsset": "docs/design/maps/imperial-church/odyssey/03-new-capital.svg",
+      "framePx": {
+        "x": [
+          55,
+          705
+        ],
+        "y": [
+          85,
+          735
+        ]
+      },
+      "hubCount": 6,
+      "allHubCirclesInsideFrame": true,
+      "nearestHubPair": {
+        "hubs": [
+          "hub-3",
+          "hub-6"
+        ],
+        "centreDistanceTiles": 45.78,
+        "radiiSumTiles": 24,
+        "gapBetweenDeclaredRadiusEdgesTiles": 21.78
+      },
+      "waterControl": "Five connected solid-blue line segments trace a southern edge/coastal control within the frame. There is no filled sea polygon. No Golden Horn branch/control appears at this map's displayed resolution; neither the SVG nor the source record supplies a water polygon or navigable strait geometry here.",
+      "routeCheck": {
+        "allCorridorsMode": "land",
+        "allRouteCenterlinesAvoidDrawnBlueWaterLine": true,
+        "minimumCenterlineClearanceToDrawnWaterLineTiles": 20.11,
+        "closestCorridors": [
+          "western-work-loop",
+          "southern-services-loop"
+        ],
+        "largestRelevantHalfWidthTiles": 5,
+        "approximateClearanceAfterLargestHalfWidthTiles": 15.11,
+        "lineIntersection": false,
+        "status": "No line crossing found in the schematic. Clearance is measured to a line representation only, not to actual water extent or a navigable channel."
+      },
+      "sameBankAssessment": "All hubs and land-route vertices appear north/inland of the single southern blue trace in the SVG. This indicates same side of the displayed line only; without a polygon it does not establish bank or land continuity.",
+      "labels": "Right-rail labels and footer fit in the SVG viewBox in raster inspection; no obvious clipping.",
+      "issue": "Golden Horn, Bosphorus passage, and water extents are not mapped as controls at this scale. The displayed southern polyline cannot certify 330 coastline or navigation. Nearest route approach is finite but not an intersection."
+    }
+  ],
+  "crossMapFindings": [
+    "No hub/zone circles lie outside the displayed map frame; no declared hub radii overlap one another in these three maps.",
+    "All declared corridors are land mode; there are no ships or boat-marked routes to flag.",
+    "Order 13 has no rendered water control; order 12 has only an open schematic fragment; order 14 has a coastal line but no water fill. None are land masks.",
+    "Raster inspection found no obvious label/footer clipping. Labels occupy the separate right rail; this checks SVG rendering only, not any eventual in-game UI rendering.",
+    "The diagram's flat land-colored rectangle is a schematic map panel, not evidence that every point is physically land or traversable."
+  ],
+  "limits": [
+    "This is a mechanical check of mapPlan coordinates and SVG drawing only. No DEM, terrain raster, native map pathfinding, shoreline polygon, hydrographic dataset, archaeological footprint, or in-game map was loaded.",
+    "A line intersection would only trigger review; no intersection does not certify historical shoreline, terrain continuity, route legality, or 330 CE geography.",
+    "Modern shoreline controls, where represented, are not ancient shoreline reconstructions. No claims are made that the displayed waterways correspond exactly to historical coastlines."
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "audit": {
+    "title": "Imperial Church order 25 Rimini mechanical map/objective review",
+    "reviewDate": "2026-10-15",
+    "unit": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+    "episodeId": "25-delegate-and-draft-network-rimini",
+    "orderAtCollection": 25,
+    "filesRead": [
+      "docs/design/odysseys/imperial-church.json (episodes[-1], episodeBlueprints[-1])",
+      "docs/design/maps/imperial-church/odyssey/25-delegate-and-draft-network-rimini.svg",
+      "docs/wiki/imperial-church/episodes/25-delegate-and-draft-network-rimini/15-odyssey-dossier.md"
+    ],
+    "svgSha256": "1d8552ad2b46c128f4ea5b209f96aacaebcd2424cbfb446ce8ebc65737fd7b1e",
+    "architectApproval": false,
+    "scope": "Mechanical structure, spatial checks, objective references, text clarity/formatting; not an approval of history, drainage, terrain, native implementation, or gameplay balance.",
+    "mutations": {
+      "repository": false,
+      "git": false,
+      "proposal": false
+    },
+    "methods": [
+      "Read the selected episode at episodes[-1] and its matching campaign blueprint at episodeBlueprints[-1].",
+      "Checked geographic coordinates against the repository helper tools/design/geography.py tile_point (WGS84, cosine-corrected longitude, padded square, mapSize-1 = 399).",
+      "Checked SVG center conversion with the renderer's factor 650/(size-1) and map origin (55,85); parsed SVG structure and rendered it locally for label/map review.",
+      "Computed hub pair distances, destination-zone frame margins, entity and optional placement point bounds, and corridor centerline half-width margins in the declared 0..399 frame.",
+      "Compared exact objective requirement IDs, arrival destinations, departure receipt references, resource transactions, and static difficulty budget arithmetic."
+    ],
+    "limits": [
+      "Straight polylines and their widths are authored proposals. Their geometry does not prove traversable land, ancient land cover, or a route free of minor channels.",
+      "The SVG has no visible water controls or terrain raster. Absence of a line or water polygon is not evidence of dry ground.",
+      "Budget values are static estimates. Native implementation, resource access, pathfinding, and game QA remain pending."
+    ]
+  },
+  "counts": {
+    "mapSize": 400,
+    "hubs": 7,
+    "worldContractEntities": 12,
+    "receivingZones": 7,
+    "mainObjectives": 4,
+    "landCorridors": 5,
+    "optionalTasks": 7,
+    "svg": {
+      "text": 26,
+      "circle": 7,
+      "polyline": 5,
+      "rect": 2,
+      "title": 5
+    },
+    "svgWaterOrTerrainFeatures": 0,
+    "notes": "Five SVG polylines correspond to the five corridor IDs; circles are hub markers, not destination-zone radii. The broad square is a uniform background, not a terrain or water mask.",
+    "worldContractZones": 7,
+    "secondaryWorldEntities": 9,
+    "secondaryWorldZones": 9,
+    "totalEntitiesAcrossMainAndSecondary": 21,
+    "totalZonesAcrossMainAndSecondary": 16,
+    "optionalTaskDefinitionsWithSeparateWorlds": 7
+  },
+  "projectionAndSpatialChecks": {
+    "bboxWgs84": [
+      12.551,
+      44.053,
+      12.579,
+      44.0655
+    ],
+    "projectionHelper": "tools/design/geography.py tile_point",
+    "projectionResult": "All seven stored hub centers exactly match tile_point(bbox, hub.lonLat, 400) at the stored 0.01-tile precision.",
+    "svgTransform": {
+      "tileToSvgFactor": "650/399 = 1.6290727 px per tile",
+      "origin": [
+        55,
+        85
+      ],
+      "mapRect": {
+        "x": 55,
+        "y": 85,
+        "width": 650,
+        "height": 650
+      }
+    },
+    "renderedHubRadius": {
+      "svgPixels": 20,
+      "equivalentTiles": 12.2769,
+      "declaredRadiusTiles": 12,
+      "assessment": "Approximate visual match; circles depict hub disks, not destination radii."
+    },
+    "hubPairClearance": {
+      "allCentersWithinFrame": true,
+      "minimumCenterDistanceTiles": 56.66,
+      "minimumEdgeClearanceWithDeclared12TileRadii": 32.66,
+      "pair": [
+        "hub-1",
+        "hub-7"
+      ]
+    },
+    "entities": {
+      "mainWorldContractEntities": 12,
+      "secondaryTaskWorldEntities": 9,
+      "totalPointCoordinatesWithinFrame": true,
+      "allMainEntitiesOutsideAllMainReceivingZones": true,
+      "allSecondaryEntitiesOutsideTheirOwnTaskReceivingZoneDisks": true,
+      "crossTaskSpatialIntersections": [
+        {
+          "entity": "main second-local-account-1",
+          "positionTiles": [
+            314.01,
+            185.37
+          ],
+          "overlap": "side-6 zone-2 is centered at this exact position (eastern account court viewpoint, radius 3).",
+          "assessment": "Optional observation zone includes the starting position of the main account note; task predicate semantics/interaction may make this harmless, but flag the spatial coupling for review."
+        }
+      ],
+      "note": "Secondary task worlds are separate from worldContract; their counts must be added to report 21 objects and 16 zones. This is a geometry audit, not a claim that entering a circle automatically completes a task."
+    },
+    "receivingZones": {
+      "mainWorldContractZones": 7,
+      "secondaryTaskWorldZones": 9,
+      "totalZones": 16,
+      "all16DisksWithinFrame": true,
+      "radiusTiles": 3,
+      "minimumFrameMarginTiles": 81.99,
+      "closestToFrame": "main destination-3"
+    },
+    "optionalTaskCenters": {
+      "allOriginReceivingAndObservationPointsWithinFrame": true,
+      "all9SecondaryEntityPointsWithinFrame": true,
+      "all9SecondaryZoneDisksWithinFrame": true,
+      "note": "Placements are carried by separate secondary objective worlds, not a flat `placement` key in the campaign blueprint. Side 6 uses two observation zones: hub-7 + [0,-8] and hub-3 + [0,8]."
+    },
+    "corridorWidths": {
+      "all5CenterlinesInsideFrame": true,
+      "all5FullWidthsInsideFrame": true,
+      "minimumFrameMarginAfterHalfWidthTiles": 80.99,
+      "corridor": "eastern-account-circuit",
+      "widths": {
+        "western-account-circuit": 8,
+        "eastern-account-circuit": 8,
+        "provision-archive-circuit": 8,
+        "southern-relief-circuit": 6,
+        "northern-relief-circuit": 6
+      },
+      "widthCheck": "All polyline vertices lie within the tile square; because each segment is linear, axis-aligned frame extrema occur at endpoints. Margin includes half the declared full width.",
+      "waterAndTerrain": "No water mask/control appears in this SVG. Corridor width and frame compliance do not certify passage over terrain or water."
+    },
+    "visualInspection": {
+      "renderedSvg": true,
+      "frameAndLegendLabelsClipped": false,
+      "observations": [
+        "Large tile rectangle is visually empty aside from seven hub circles and five direct dashed corridor polylines.",
+        "No local landform, road, drainage, coastline, river, water polygon, destination disk, or entity marker is drawn.",
+        "Labels and legend remain inside the 1050x850 viewBox. Hub 5's name is split over two adjacent text lines (‘Fictional southeast provision-list’ / ‘court’), but neither is clipped.",
+        "Legend says brown dashed lines are proposed land routes, but also says the SVG is not a surveyed path or terrain raster and native footprints/navigation are pending.",
+        "The SVG is unchanged by optional subworld regeneration and depicts only the 7 main hubs and 5 main corridors; none of the 9 optional entities or 9 optional zones appears in it."
+      ]
+    },
+    "spatialIntersectionsBetweenOptionalZones": [
+      {
+        "zoneA": "side-2 zone-2",
+        "zoneB": "side-3 zone-1",
+        "centersTiles": [
+          207.5,
+          262.35
+        ],
+        "centerDistanceTiles": 0,
+        "eachRadiusTiles": 3,
+        "interpretation": "Exact shared target circle: second household recipient and repair shelter target are co-located."
+      },
+      {
+        "zoneA": "side-5 zone-1",
+        "zoneB": "side-7 zone-1",
+        "centersTiles": [
+          296.56,
+          241.11
+        ],
+        "centerDistanceTiles": 0,
+        "eachRadiusTiles": 3,
+        "interpretation": "Exact shared destination circle: southern local approach junction and wayfarer rest court are co-located."
+      }
+    ]
+  },
+  "objectiveAndEconomyChecks": {
+    "cohortCount": "6 original assistants in two separate cohorts of 3; all six IDs are distinct.",
+    "receiptAndReturnChain": [
+      {
+        "cohort": "western",
+        "receipt": "o3/req-3",
+        "kind": "entity-state arrived",
+        "count": 3,
+        "destination": "destination-2 western court",
+        "departure": "o4/req-1 ordered-departure, receiptObjective=o3, receiptRequirement=req-3",
+        "return": "o4/req-2 entity-state arrived after departure to destination-7"
+      },
+      {
+        "cohort": "eastern",
+        "receipt": "o3/req-4",
+        "kind": "entity-state arrived",
+        "count": 3,
+        "destination": "destination-3 eastern court",
+        "departure": "o4/req-3 ordered-departure, receiptObjective=o3, receiptRequirement=req-4",
+        "return": "o4/req-4 entity-state arrived after departure to destination-7"
+      }
+    ],
+    "chainAssessment": "Each cohort's own reception authorizes only its own departure requirement; each return arrival is linked to its corresponding departure. The requirements preserve 3+3 cohort identities. This is schema-level inspection, not runtime testing.",
+    "resourceTransactions": [
+      {
+        "objective": "o2/req-1",
+        "exactPayment": {
+          "wood": 120,
+          "gold": 30
+        },
+        "once": true,
+        "atomic": true,
+        "allocation": "120 wood and 30 gold at destination-1 workshop"
+      },
+      {
+        "objective": "o3/req-5",
+        "exactPayment": {
+          "food": 240
+        },
+        "once": true,
+        "atomic": true,
+        "allocations": {
+          "destination-2": {
+            "food": 120
+          },
+          "destination-3": {
+            "food": 120
+          }
+        },
+        "assessment": "Exactly 120 food per court, 240 total; no one-court 240 allocation in the predicate."
+      }
+    ],
+    "skipAllOptionalStaticBudget": {
+      "reservedOptionalRewardsRemovedBeforeMainBudget": true,
+      "difficultyLevels": {
+        "easy": {
+          "availableWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "mainDeliveryPlusProtectedRecoveryAndMargin": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "staticSolvent": true
+        },
+        "standard": {
+          "availableWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "mainDeliveryPlusProtectedRecoveryAndMargin": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "staticSolvent": true
+        },
+        "hard": {
+          "availableWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "mainDeliveryPlusProtectedRecoveryAndMargin": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          },
+          "staticSolvent": true
+        }
+      },
+      "calculationNotes": [
+        "The profile's `accessibleWithoutOptionalRewards` fields equal start plus finite gatherable bank minus reserved optional awards: food 1190, wood 720, gold 260, stone 160 at all three levels.",
+        "At all levels, accessibleWithoutOptionalRewards equals mandatory deliveries + protected recovery stock + replacement budget + supplyMargins for all four resources. The static skip-all arithmetic is internally consistent; it is not native or gameplay verification."
+      ],
+      "gameplayStatus": "Static budget profile only; no resources gathered, objectives played, or native behavior verified."
+    }
+  },
+  "textAndLabelReview": {
+    "formattingIssues": [
+      {
+        "field": "screens[o3-goal].text.en",
+        "text": "Pay 120 food at each court, 240 total, once.",
+        "issue": "Comma spacing was corrected in the regenerated player text."
+      },
+      {
+        "field": "screens[o3-goal].text.es-ES",
+        "text": "Paga una vez 120 de alimento en cada patio, 240 en total.",
+        "issue": "Comma spacing was corrected in the regenerated player text."
+      }
+    ],
+    "playerTextCandidatesForEditorialReview": [
+      {
+        "field": "screens[side-1-goal].text.en / es-ES",
+        "textEn": "Bring both separately labelled local context notes from the northern court to the central copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "textEsEs": "Lleva las dos notas locales de contexto, etiquetadas por separado, del patio norte al copista central. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal.",
+        "issue": "Mechanically understandable; minor phrasing review only: “Benefit: unlock” is an imperative-like infinitive in English, while the Spanish benefit is a direct statement."
+      },
+      {
+        "field": "screens[side-2-goal].text.en / es-ES",
+        "textEn": "Bring the two original aid crates from the southwest court to their two separate households beside the southern archive. Benefit: 100 food, 50 wood, once.",
+        "textEsEs": "Lleva las dos cajas originales de ayuda del patio suroccidental a sus dos hogares separados junto al archivo sur. Ventaja: 100 de alimento, 50 de madera, una vez.",
+        "issue": "Now names two original crates and two separate households clearly. Location is described as beside the archive; target zone layout is separate at archive area. No obvious mechanical issue."
+      },
+      {
+        "field": "screens[side-7-goal].text.en / es-ES",
+        "textEn": "Accompany both original voluntary wayfarers from the eastern court alive to the southeast rest court. They are independent of both main assistant cohorts. Benefit: 100 food, 25 gold, once.",
+        "textEsEs": "Acompaña con vida a los dos caminantes voluntarios originales del patio oriental al patio suroriental de descanso. Son independientes de ambos grupos principales de ayudantes. Ventaja: 100 de alimento, 25 de oro, una vez.",
+        "issue": "Root correction clearly distinguishes wayfarers from evacuees and both required assistant cohorts."
+      }
+    ],
+    "nonIssues": [
+      "The 3+3 assistant groups are described as original fictional assistants, not historical bishops/delegates.",
+      "The objective/outcome says receipts record delivery and explicitly does not certify current residence; this avoids a hidden stay/presence claim.",
+      "No pasted number without a preceding comma-space besides the two 240 strings was identified in the examined main objective captions.",
+      "The pre-regeneration secondary blueprint used ignored `hub`/`offsetTiles` placement keys. Root replaced them with `originHub`, `receivingHub`, and `observationHubs`; generated secondary entities/zones now carry concrete positions and the schema generation rejects unknown keys.",
+      "The earlier side-7 “voluntary evacuee groups” phrasing was replaced with “original voluntary wayfarers”; do not treat the pre-correction phrasing as current player text."
+    ]
+  },
+  "recommendationNotes": [
+    "Review the two exact overlaps between separate optional destination circles, and the main account-note start position coincident with an optional viewpoint zone. They may be intentional shared local areas; this audit does not infer a defect.",
+    "The regenerated optional text now distinguishes wayfarers from the main assistant cohorts. Retain the corrected comma spacing and readable recipient phrasing.",
+    "Treat the unchanged SVG as an empty schematic route layout, not a geographic terrain map or a certification that the proposed land links are traversable; optional secondary locations are not drawn."
+  ],
+  "architectFollowUp": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "historicalOrNativeApproval": false,
+    "decision": "Keep two shared optional court positions with identity-disjoint predicates and independent receipts; no task substitutes another. Move second-local-account original by14tiles west away from optional viewpoint. Correct comma spacing in main texts. Act-transition added after review snapshot: current46screens,2251total.",
+    "limit": "Source report preserves its reviewed pre-follow-up geometry/text. Native terrain, water, density, clocks and game calibration still pending."
+  }
+}

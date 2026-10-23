@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "campaignSource": "docs/design/odysseys/imperial-church.json",
+  "episodeId": "33-accession-and-reassembly-sirmium",
+  "objectiveId": "o1",
+  "stagingAssignments": [
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-1",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-2",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-3",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-4",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-5",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-6",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-1",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-2",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4"
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-3",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5"
+    }
+  ],
+  "assumptions": {
+    "movementTilesPerGameSecond": [
+      0.45,
+      0.6,
+      0.8
+    ],
+    "netResourcePerWorkerGameSecond": [
+      0.15,
+      0.2,
+      0.3
+    ],
+    "pathLengthFactors": [
+      1.0,
+      1.2
+    ],
+    "collectionSeconds": 30,
+    "economicSetupSeconds": 45,
+    "finalCoordinationSeconds": 45,
+    "provenance": "All numeric speed, rate, detour and overhead samples are architect hypotheses, not measured engine statistics or selected unit proxies.",
+    "routePolicy": "Shortest paths on authored bidirectional land corridor centerlines; start/end offset connector lengths added. Routes may need longer native paths.",
+    "parallelismPolicy": "Each staged actor can move independently while an entirely separate 12/9/6-worker pool gathers. Fixed integer food/wood allocation, no worker reassignment. All workers and their 45-second setup are assumptions; neither spawn nor resource placement is implemented.",
+    "paymentPolicy": "Exact stage debit read from o1 resource transactions; 45-second final coordination allowance assumes local payment/positioning can complete there. No optional rewards, protected recovery or borrowed phase-2 stock is spent."
+  },
+  "limits": [
+    "This is not a feasible schedule certificate, lower bound, upper bound, game test or calibrated difficulty. Unmodelled operations can invalidate any inside-window sample.",
+    "Collection, payment, packing, interaction availability, collision/congestion, loaded/empty proxy speed, terrain slope, game pause, input order and observer latency need native measurement.",
+    "Available worker counts do not prove actual preplaced gatherers, accessible node yields, drop-site distances or rates. Main crew are separate from assumed gatherers.",
+    "All seven secondaries are skipped. Early repair/trade portfolios require their own paid route/economic schedules; benefits are not free starting stock.",
+    "A sample exactly at expiry fails: the reference deadline is strict and defeat wins the race.",
+    "Final untimed dispatch, optional circuits and fun/pacing are outside this first-phase estimate. No history, terrain, native or game status changes."
+  ]
+}
