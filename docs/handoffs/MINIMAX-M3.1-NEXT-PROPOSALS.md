@@ -14,7 +14,7 @@ La primera tarea designada para MiniMax continúa siendo **f00001/S1, piloto té
 | i00003 Capacidades compuestas/mapa/nativo | Arquitecto | S1 de referencia integrado; S2 geografía/transporte, S3 composición/oposición/reloj y S4 narrativa/progreso siguen pendientes. Raster y auditoría parcial no completan S2 |
 | i00005 Presencia actual | Arquitecto | S1 de referencia revisado; observación/exportación/pruebas nativas siguen sus slices pendientes |
 | i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
-| i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión explícita; S2 referencia/compilador solo tras decisión; S3 nativo/UI/motor con prerrequisitos externos. Ningún slice implementado por el estudio económico |
+| i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión aprobada; S2 referencia optativa v3 integrada en 4ac57b8f y aprobación independiente publicada en 66468212; S3 nativo/UI/motor pendiente de i00003 y s00001. El estudio económico por sí solo no implementa ningún slice |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
 | d00002 Odiseas extensas | Arquitecto | S1 arquitectura común; S2–S10 una campaña cada uno; S11 consolidación y traspaso. Continúa en curso |
 
@@ -42,9 +42,9 @@ El brief inicial del piloto está en [00-brief](../wiki/route-pilot/00-brief.md)
 
 ## Constantinopla y criterios que no deben perderse
 
-El [estudio de asignación finita](../design/episode-plans/imperial-church/34-care-allocation.study.md) tiene nueve combinaciones y asequibilidad all-skip de 9/7/3. i00007 registra la operación faltante; esa aritmética no implementa una elección, reserva, terreno ni reto jugado. MiniMax no debe traducirla a pagos fijos simultáneos ni diseñar sus identidades, costes o recorridos.
+El [estudio de asignación finita](../design/episode-plans/imperial-church/34-care-allocation.study.md) conserva nueve combinaciones y asequibilidad all-skip de 9/7/3. El [ADR](../architecture/alternative-fulfillment.md) y la [referencia revisada](../../tests/alternative-fulfillment/reference/README.md) resuelven S1–S2; la aritmética aislada no acredita la operación nativa, el terreno ni un reto jugado. MiniMax no debe traducir alternativas a pagos fijos simultáneos ni diseñar sus identidades, costes o recorridos. Constantinopla380 sigue sin dossier completo.
 
-La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) ya confirmó en la API oficial los cuatro criterios S3 y tres S4 de i00003 después de integrar 327cc456. Conservar el reloj relativo y el control previo al briefing de Sirmio. La divergencia inicial quedó resuelta sin cambios del runtime; no se determinó su causa transitoria exacta. i00007 también es visible como ready con sus tres slices pendientes. Leer siempre la propuesta integrada completa y recuperar el estado vivo; visibilidad no equivale a implementación ni aprobación.
+La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-proposal-visibility-checkpoint.md) ya confirmó en la API oficial los cuatro criterios S3 y tres S4 de i00003 después de integrar 327cc456. Conservar el reloj relativo y el control previo al briefing de Sirmio. La divergencia inicial quedó resuelta sin cambios del runtime; no se determinó su causa transitoria exacta. El 23 de octubre se confirmó formalmente i00007/S2 `done` mediante `proposal_review action=status`, con implementador GPT-6 y revisor GPT-6.1; la aprobación está integrada en 66468212. Leer siempre la propuesta completa y recuperar el estado vivo; una vista resumida o anterior no sustituye el veredicto ni desbloquea S3.
 
 ## Dependencias y cierre
 
