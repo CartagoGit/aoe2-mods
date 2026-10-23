@@ -44,7 +44,7 @@ Reproduction: docs/research/odyssey-research/imperial34-care-allocation-plan.jso
 - review-log: approved by gpt-6-luna — verified at bb33a0564c39, validate exit 0, tests 108/108; acceptance 3/3: (1) Verified against the 14-file source-inspection record (SHA-256s matched base 216c033e) and architecture decision: existing v1/v2 contracts stay unchanged; v3 i… (2) Inspected the bounded decision and C01-C33 case file; it defines plan/recipe identity, preview/reserve/commit/cancel, terminal ordering, replay and output qual… (3) The ADR/case file specify output identity, prereqs, reception and survivor conditions, distinguish payment from receipt/ownership, and define save/load, all-sk…
 
 ### S2 — Only after ADR: compatible reference implementation and compiler rejection
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `packages/schemas`, `packages/gameplay-state`, `packages/gameplay-validation`, `packages/scenario-compiler`, `tests/alternative-fulfillment/reference`
 - **Gate**: type
@@ -52,6 +52,8 @@ Reproduction: docs/research/odyssey-research/imperial34-care-allocation-plan.jso
   - "Proceed only under the accepted S1 design; retain preexisting profile/source compatibility, IDs and fixtures. Reuse actual resource transactions and immutable reducer; do not copy the reference engine or simulate an unimplemented native operation as available."
   - "Adversarial tests: all nine candidate combinations per difficulty; unaffordable joint transaction no partial debit; repeated/reentered/loaded selection no second charge/output; mixed recipe receipts, cancellation after commitment, wrong/duplicate output, optional reward before payment, lost recipient and terminal races."
   - "Keep unsupported native export rejected explicitly. A resource-state enumeration and reference tests are not native or game evidence."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S3 — Native composition, bilingual choice UI and bounded engine evidence
 - **Status**: pending
