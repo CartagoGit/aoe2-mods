@@ -170,7 +170,7 @@ class ResearchCrosswalkTests(unittest.TestCase):
         self.assertEqual(sum(row['selected'] for row in report['campaigns']), 278)
         row = next(row for row in report['campaigns'] if row['campaignId'] == 'first-caliphs')
         self.assertEqual((row['linked'], row['architectChecks'], row['withPassageRead'],
-                          row['onlyUnavailableOrMetadata'], row['linkedWithoutArchitectCheck']), (30, 9, 7, 2, 21))
+                          row['onlyUnavailableOrMetadata'], row['linkedWithoutArchitectCheck']), (30, 30, 28, 2, 0))
         yamama = next(row for row in report['records'] if row['scenarioId'] == '02-the-roads-of-yamama')
         self.assertIn('date', yamama['differences'])
         mismatch = next(row for row in report['records'] if row['scenarioId'] == '10-finite-defence-and-trench-supply-medina')
