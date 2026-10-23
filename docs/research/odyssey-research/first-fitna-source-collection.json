@@ -1,0 +1,832 @@
+{
+  "title": "Research-only source collection — first-fitna, 28 selected episodes",
+  "created": "2026-10-23",
+  "researcherIdentity": "gpt-6-luna",
+  "proposal": "d00002",
+  "slice": "S1",
+  "topic": "first-fitna-source-collection",
+  "status": "research-only; not a source audit verdict, historical approval, dossier, or architecture decision",
+  "selectionBasis": "docs/design/odysseys/first-fitna.json (canonical episodeSelection array; IDs/orders/corpusEventIds copied without changes)",
+  "scope": "Specific public passages read during this run and bound to the 28 existing semantic IDs. No inherited local consultation status is treated as a new reading.",
+  "sources": {
+    "iranica-ali-poonawala": {
+      "title": "ʿAlī b. Abī Ṭāleb i. Life",
+      "author": "Ismail K. Poonawala",
+      "selectedUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "publication": "15 December 1985; last updated 10 July 2018",
+      "sourceType": "modern scholarly encyclopedia synthesis",
+      "accessMethod": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode.",
+      "readThisRun": true,
+      "wholeArticleRead": false,
+      "underlyingWorksRead": false,
+      "languageNote": "No Arabic text, full cited medieval works, or inscriptions were read."
+    },
+    "iranica-hasan-madelung": {
+      "title": "Ḥasan b. ʿAlī b. Abī Ṭāleb",
+      "author": "Wilferd Madelung",
+      "selectedUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "readUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+      "publication": "15 December 2003; last updated 6 June 2013",
+      "sourceType": "modern scholarly encyclopedia synthesis",
+      "accessMethod": "The HTML page was opened; scrolling it timed out. The separate public PDF was opened and the specific extracted page/line passages recorded per episode were read.",
+      "readThisRun": true,
+      "wholeArticleRead": false,
+      "underlyingWorksRead": false,
+      "languageNote": "No Arabic text or full cited medieval works were read."
+    }
+  },
+  "episodes": [
+    {
+      "selection": {
+        "semanticId": "01-news-from-medina",
+        "order": 1,
+        "title": {
+          "en": "News from Medina",
+          "es-ES": "Noticias desde Medina"
+        },
+        "date": "mid656 CE",
+        "geographyId": "medina",
+        "corpusEventId": 178,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 52; provincial opposition arrives",
+        "canonicalQualification": "Las fuentes divergen sobre actores, motivaciones y secuencia del sitio.",
+        "candidateEvent": "Grupos provinciales de Egipto, Kufa y Basra llegan a Medina en medio del descontento contra Uthman.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 3, lines 90–94; browser excerpt L90–L94@P2",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The synthesis places provincial groups from Egypt, Kufa, and Basra in Medina in mid-35/656.",
+        "limits": "Retrospective scholarly synthesis citing later accounts; it does not give individual itineraries or a contemporary register."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "02-civilian-refuge-and-record-preservation-medina",
+        "order": 2,
+        "title": {
+          "en": "After the Sealed Door",
+          "es-ES": "Después de la puerta sellada"
+        },
+        "date": "656 CE; murder is reported, not playable",
+        "geographyId": "medina",
+        "corpusEventId": 179,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 60; aftermath of Uthman’s murder",
+        "canonicalQualification": "La responsabilidad individual y detalles del asesinato están disputados.",
+        "candidateEvent": "Uthman es asesinado; los omeyas abandonan Medina y grupos provinciales dominan la situación.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 133–142; browser excerpt L133–L142@P3",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article says most Umayyads left Medina after Uthman’s murder and reports provincial groups in control; it describes the invitation to Ali and his hesitation.",
+        "limits": "The article summarizes transmitted accounts; responsibility for the murder and the sequence remain matters for attributed reporting."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "03-administrative-transition-medina",
+        "order": 3,
+        "title": {
+          "en": "A Seal Accepted in Uncertainty",
+          "es-ES": "Un sello aceptado en la incertidumbre"
+        },
+        "date": "656 CE; motives attributed",
+        "geographyId": "medina",
+        "corpusEventId": 180,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 60; invitation and acceptance",
+        "canonicalQualification": "No fijar día exacto.",
+        "candidateEvent": "Ali acepta el califato tras vacilar varios días.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 135–142; browser excerpt L135–L142@P3",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that Ali accepted the caliphate reluctantly after hesitation lasting several days.",
+        "limits": "The passage gives no exact day and is a modern synthesis of later reports."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "04-disputed-correspondence-mecca",
+        "order": 4,
+        "title": {
+          "en": "The Message on the Pilgrim Road",
+          "es-ES": "El mensaje en el camino peregrino"
+        },
+        "date": "656 CE",
+        "geographyId": "mecca",
+        "corpusEventId": 181,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 63; Aisha returns to Mecca",
+        "canonicalQualification": "Motivación personal reportada por fuentes sesgadas, no presentar como certeza.",
+        "candidateEvent": "Aisha regresa a La Meca y se incorpora a la oposición a Ali.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 152–157; browser excerpt L152–L157@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that Aisha returned to Medina, learned of Uthman’s murder and Ali’s caliphate, then turned back to Mecca.",
+        "limits": "A motive in this passage is attributed to transmitted accounts; no private speech was consulted."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "05-rival-petition-and-witness-records-medina",
+        "order": 5,
+        "title": {
+          "en": "Two Names in the Dispatch",
+          "es-ES": "Dos nombres en el despacho"
+        },
+        "date": "656 CE",
+        "geographyId": "medina",
+        "corpusEventId": 182,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 64–65; departure and accusation",
+        "canonicalQualification": "Causalidad y negociación se transmiten por relatos retrospectivos.",
+        "candidateEvent": "Talha y Zubayr rompen con Ali y responsabilizan a su gobierno por no procesar a los asesinos de Uthman.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 160–170; browser excerpt L160–L170@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports Talha and Zubayr leaving Medina for Mecca and Basra, assigning them a demand to prosecute Uthman’s killers.",
+        "limits": "These are retrospectively transmitted political claims; the article also distinguishes Umayyad objectives."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "06-arriving-delegation-and-supply-basra",
+        "order": 6,
+        "title": {
+          "en": "Toward the River City",
+          "es-ES": "Hacia la ciudad del río"
+        },
+        "date": "656 CE; travelArabiaoff-map",
+        "geographyId": "basra",
+        "corpusEventId": 183,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 66; march to Basra",
+        "canonicalQualification": "Ruta aproximada.",
+        "candidateEvent": "Talha y Zubayr avanzan hacia Basra buscando respaldo político y militar.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 163–172; browser excerpt L163–L172@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article says Talha and Zubayr moved toward Basra to find forces and resources for Iraqi support.",
+        "limits": "The source gives an attributed objective and broad route, not a surveyed itinerary."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "07-civilian-extraction-under-unrest-basra",
+        "order": 7,
+        "title": {
+          "en": "The Streets between the Camps",
+          "es-ES": "Las calles entre los campamentos"
+        },
+        "date": "656 CE",
+        "geographyId": "basra",
+        "corpusEventId": 184,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 66; rebels occupy Basra",
+        "canonicalQualification": "Las cifras y el orden de incidentes son inciertos.",
+        "candidateEvent": "Los rebeldes toman Basra y ocurre violencia en la ciudad.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 168–176; browser excerpt L168–L176@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that rebels occupied Basra and killed many people before Ali’s forces and negotiations led to the Camel battle.",
+        "limits": "It supplies no civilian extraction record, count, roster, or local map."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "02-between-the-camps",
+        "order": 8,
+        "title": {
+          "en": "Between the Camps",
+          "es-ES": "Entre los campamentos"
+        },
+        "date": "656 CE",
+        "geographyId": "basra",
+        "corpusEventId": 185,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 67; Battle of the Camel",
+        "canonicalQualification": "El nombre alude al camello de Aisha en el centro; no convertir relatos heroicos en hechos precisos.",
+        "candidateEvent": "Batalla del Camello entre Ali y las fuerzas reunidas en torno a Aisha, Talha y Zubayr.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 171–176; browser excerpt L171–L176@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports a failed peaceful settlement and the Battle of the Camel, associating its name with Aisha’s presence on a camel.",
+        "limits": "The passage is a retrospective synthesis; the named account is not a verbatim contemporary battle record."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "09-bounded-distribution-and-receipts-basra",
+        "order": 9,
+        "title": {
+          "en": "Accounts after the Battle",
+          "es-ES": "Cuentas después de la batalla"
+        },
+        "date": "656 CE; distribution accounts attributed",
+        "geographyId": "basra",
+        "corpusEventId": 186,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 68; entry into Basra and bayt al-mal",
+        "canonicalQualification": "La fuente presenta una política atribuida a Ali; no usar como dato cuantitativo.",
+        "candidateEvent": "Ali entra en Basra y distribuye por partes iguales el tesoro público entre sus partidarios.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 4–5, lines 177–180; browser excerpt L177–L180@P4",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article says Ali entered Basra and divided money in the public treasury equally among his supporters.",
+        "limits": "The article presents this as a reported policy; it provides no quantitative ledger for a playable inventory."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "10-camp-and-household-reception-kufa",
+        "order": 10,
+        "title": {
+          "en": "The Quarter on the Kufa Road",
+          "es-ES": "El barrio en el camino de Kufa"
+        },
+        "date": "656/657 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 187,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 68; move to Kufa",
+        "canonicalQualification": "Cronología convencional 657; el traslado fue un proceso.",
+        "candidateEvent": "Ali se traslada a Kufa para reforzar su base frente a Muawiya.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 5, lines 182–190; browser excerpt L182–L190@P5",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports Ali’s move to Kufa to gain support against Muawiya and describes a coalition there.",
+        "limits": "This passage gives no exact day for the move; descriptions of motives are retrospective."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "11-two-way-correspondence-kufa",
+        "order": 11,
+        "title": {
+          "en": "Words across a Divided Road",
+          "es-ES": "Palabras sobre un camino dividido"
+        },
+        "date": "656–657 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 188,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 71; opening negotiations",
+        "canonicalQualification": "Correspondencia transmitida en fuentes posteriores.",
+        "candidateEvent": "Ali abre negociaciones con Muawiya para obtener su reconocimiento.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports Ali opening negotiations with Muawiya over allegiance and provincial authority.",
+        "limits": "The article summarizes positions in later chronicles; its reported exchanges are not authenticated verbatim letters."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "12-rival-claims-and-dispatch-comparison-damascus",
+        "order": 12,
+        "title": {
+          "en": "A Reply from Damascus",
+          "es-ES": "Una respuesta desde Damasco"
+        },
+        "date": "656–657 CE",
+        "geographyId": "damascus",
+        "corpusEventId": 189,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 71–72; Muawiya’s position",
+        "canonicalQualification": "Explicación política transmitida por historiografía retrospectiva.",
+        "candidateEvent": "Muawiya exige autonomía siria y reclama castigo por el asesinato de Uthman; no jura lealtad a Ali.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article presents Muawiya’s demand for Syrian autonomy and for Uthman’s killers, and Ali’s competing position.",
+        "limits": "The passage is a modern synthesis of transmitted political claims, not a contemporaneous transcript."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "03-water-and-words",
+        "order": 13,
+        "title": {
+          "en": "Water and Words",
+          "es-ES": "Agua y palabras"
+        },
+        "date": "657 CE; fiercefighting191integrated",
+        "geographyId": "siffin",
+        "corpusEventId": 190,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 73; armies meet at Siffin",
+        "canonicalQualification": "Ubicación regional; no inferir coordenadas del campamento.",
+        "candidateEvent": "Los ejércitos se concentran en la llanura de Siffin.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 6, lines 202–215; browser excerpt L202–L215@P5",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article places the armies on the plain of Siffin toward the end of 36/657 and describes a prolonged confrontation with negotiations and combat.",
+        "limits": "The passage gives a regional plain, not coordinates for camps or a surveyed battlefield footprint."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "14-ceasefire-withdrawal-and-care-siffin",
+        "order": 14,
+        "title": {
+          "en": "When the Fighting Was Stopped",
+          "es-ES": "Cuando se detuvo la lucha"
+        },
+        "date": "657 CE; Qur'an-folioaccount192attributed",
+        "geographyId": "siffin",
+        "corpusEventId": 193,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 75–77; acceptance of arbitration",
+        "canonicalQualification": "Atribuciones de diálogos no son citas verificables.",
+        "candidateEvent": "La mayoría de la fuerza de Ali impone aceptar arbitraje; Ali detiene el combate.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 6, lines 216–225; browser excerpt L216–L225@P5",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports pressure in Ali’s camp to accept a settlement, a cessation of fighting, and a proposal for arbiters.",
+        "limits": "The reported conversations are retrospective; no dialogue is treated here as verified quotation."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "15-paired-protocol-delivery-siffin",
+        "order": 15,
+        "title": {
+          "en": "Terms beside the River",
+          "es-ES": "Condiciones junto al río"
+        },
+        "date": "657 CE",
+        "geographyId": "siffin",
+        "corpusEventId": 194,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 77–80; arbitration terms",
+        "canonicalQualification": "Términos transmitidos por historiadores posteriores.",
+        "candidateEvent": "Se acuerda que cada lado nombre un árbitro y que se use el Corán como marco.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 6, lines 238–245; browser excerpt L238–L245@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article summarizes the written arbitration agreement’s reported terms and notes that the wording expanded beyond the Quran to Sunna.",
+        "limits": "It cites later scholarship and chronicles; the terms are not presented as a surviving document read in this task."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "16-witness-and-record-comparison-kufa",
+        "order": 16,
+        "title": {
+          "en": "The Names Chosen for Arbitration",
+          "es-ES": "Los nombres elegidos para el arbitraje"
+        },
+        "date": "657/658 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 195,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 78–81; dispute over arbiter",
+        "canonicalQualification": "Nombres y motivaciones tal como aparecen en tradición narrativa.",
+        "candidateEvent": "La elección de Abu Musa como árbitro suscita divisiones en el campamento de Ali.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 6, lines 228–237, and PDF p. 7, lines 245–267; browser excerpts L228–L237@P6 and L245–L267@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article describes the dispute over who the arbiter represented and reports Abu Musa’s appointment amid division in Ali’s camp.",
+        "limits": "Motive explanations are the article’s reading of retrospective narratives; they are not independently verified here."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "17-voluntary-household-relocation-harura",
+        "order": 17,
+        "title": {
+          "en": "The Road through Harura",
+          "es-ES": "El camino por Harura"
+        },
+        "date": "657/658 CE",
+        "geographyId": "harura",
+        "corpusEventId": 196,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 82–85; secession and Harura",
+        "canonicalQualification": "La etiqueta jariyí se consolida retrospectivamente; no tratar como secta madura ya constituida.",
+        "candidateEvent": "Opositores al arbitraje se separan y se reúnen en Harura.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 7, lines 262–267; browser excerpt L262–L267@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that some qorrāʾ stopped at Harura and that opponents later seceded and gathered at Nahrawan.",
+        "limits": "The article itself describes the label Khawarij as arising in this narrative sequence; no later sect identity is projected as direct contemporary self-description."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "18-separate-delegation-logistics-dumat-al-jandal",
+        "order": 18,
+        "title": {
+          "en": "Papers at Dumat al-Jandal",
+          "es-ES": "Documentos en Dumat al-Jandal"
+        },
+        "date": "February658 approximate; Ramadan37AHaccordingPoonawala",
+        "geographyId": "dumat-al-jandal",
+        "corpusEventId": 197,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 86; first meeting appears to occur",
+        "canonicalQualification": "El artículo dice “appears”; fecha gregoriana aproximada y resultado no público.",
+        "candidateEvent": "Primera reunión de árbitros en Dumat al-Jandal según el relato citado por Poonawala.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 7, lines 268–272; browser excerpt L268–L272@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article says the arbiters’ first meeting appears to have occurred at Dumat al-Jandal around Ramadan 37/February 658 and that its verdict was not public.",
+        "limits": "The wording is expressly tentative (“appears”); the passage says both parties learned the verdict, not that it was publicly issued."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "19-disputed-correspondence-and-provision-kufa",
+        "order": 19,
+        "title": {
+          "en": "The Reply That Would Not Settle",
+          "es-ES": "La respuesta que no resolvía"
+        },
+        "date": "658 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 198,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 87; Ali protests arbitration result",
+        "canonicalQualification": "No hubo un resultado aceptado uniformemente.",
+        "candidateEvent": "Ali rechaza el resultado atribuido a la reunión de árbitros y trata de reunir otra fuerza.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 7, lines 271–275; browser excerpt L271–L275@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that Ali protested the arbitration outcome as contrary to Quran and Sunna.",
+        "limits": "The result is described through retrospective sources; no surviving protest text was read."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "04-the-canal-road",
+        "order": 20,
+        "title": {
+          "en": "The Canal Road",
+          "es-ES": "El camino del canal"
+        },
+        "date": "658 CE conventional",
+        "geographyId": "nahrawan",
+        "corpusEventId": 199,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 88; Nahrawan campaign",
+        "canonicalQualification": "Fecha 658 convencional; cifras y detalles de la matanza dependen de tradición y son discutidos.",
+        "candidateEvent": "Ali marcha contra los disidentes reunidos en Nahrawan y vence; se producen deserciones de su ejército.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 7, lines 277–283; browser excerpt L277–L283@P6",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article describes Ali turning to Nahrawan, offering quarter to those who submitted, and then attacking; it says the resulting massacre was widely condemned.",
+        "limits": "It is a secondary summary of contested events; the passage does not establish counts or local casualty records."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "21-civilian-record-preservation-fustat",
+        "order": 21,
+        "title": {
+          "en": "The Egyptian Dispatch",
+          "es-ES": "El despacho egipcio"
+        },
+        "date": "658 CE; Egyptloss not660; correctionrequiresexactpassage",
+        "geographyId": "fustat",
+        "corpusEventId": 202,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 91; loss of Egypt and Hijaz",
+        "canonicalQualification": "Original candidate202combines distinct places and dates incorrectly. Use selectedClaim only after checking the exact Iranica/Tabari passage; source audit remains pending.",
+        "candidateEvent": "Ali pierde el control de Egipto y del Hijaz ante el avance de Muawiya.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "In this read passage, the article says that by the end of 39/660 Ali had lost control of Egypt and Hijaz.",
+        "limits": "The same selected locator is also bound to episode 24; this record reports the passage wording without deciding either selection’s chronology."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "22-delegate-reception-and-source-comparison-adhruh",
+        "order": 22,
+        "title": {
+          "en": "A Seat Empty at Adhruh",
+          "es-ES": "Un asiento vacío en Adhruh"
+        },
+        "date": "January659 approximate; Shaban38AHaccordingPoonawala",
+        "geographyId": "adhruh",
+        "corpusEventId": 200,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párrs. 89–90; meeting at Adhruh",
+        "canonicalQualification": "Resultado público discrepante en las fuentes; ubicación se identifica tradicionalmente.",
+        "candidateEvent": "Árbitros y notables se reúnen en Adhruh; Ali no tiene representantes presentes según Poonawala.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 8, lines 284–295; browser excerpt L284–L295@P7",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article says the arbiters and notables, excluding Ali’s representatives, appear to have met at Adhruh in Shaʿban 38/January 659; it recounts differing outcomes.",
+        "limits": "The text uses tentative phrasing and later reports; no precise archaeological location or public transcript is established here."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "23-bounded-rural-relief-kufa",
+        "order": 23,
+        "title": {
+          "en": "The Farms beyond the Patrols",
+          "es-ES": "Las granjas más allá de las patrullas"
+        },
+        "date": "659–660 CE; onefictionallocalraid, remoteincursionsreported",
+        "geographyId": "kufa",
+        "corpusEventId": 201,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 91; incursions",
+        "canonicalQualification": "Proceso con varios episodios; no localizable como una batalla singular.",
+        "candidateEvent": "Muawiya efectúa incursiones en zonas de Iraq y Arabia.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article describes Muawiya’s incursions into Iraq and Arabia and the loss of Ali’s control in Egypt and Hijaz by the end of 39/660.",
+        "limits": "A regional political summary does not identify one local raid or its exact site."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "24-civilian-refuge-and-dispatch-medina",
+        "order": 24,
+        "title": {
+          "en": "News from the Hijaz Roads",
+          "es-ES": "Noticias desde los caminos del Hiyaz"
+        },
+        "date": "660 CE; BusrraidsseparatefromEgypt658",
+        "geographyId": "medina",
+        "corpusEventId": 202,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 91; loss of Egypt and Hijaz",
+        "canonicalQualification": "Original candidate202combines distinct places and dates incorrectly. Use selectedClaim only after checking the exact Iranica/Tabari passage; source audit remains pending.",
+        "candidateEvent": "Ali pierde el control de Egipto y del Hijaz ante el avance de Muawiya.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "In this read passage, the article says that by the end of 39/660 Ali had lost control of Egypt and Hijaz.",
+        "limits": "The same selected locator is also bound to episode 21; this record reports the passage wording without deciding either selection’s chronology."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "25-care-and-record-preservation-kufa",
+        "order": 25,
+        "title": {
+          "en": "The Night of the Last Report",
+          "es-ES": "La noche del último parte"
+        },
+        "date": "January661 approximate; woundanddeath204consolidated",
+        "geographyId": "kufa",
+        "corpusEventId": 203,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+        "canonicalPassage": "Párr. 91; attack in mosque",
+        "canonicalQualification": "La identidad y motivación se transmiten por fuentes medievales.",
+        "candidateEvent": "Ali es herido por Abd al-Rahman b. Muljam mientras reza en una mezquita de Kufa.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-ali-poonawala",
+        "readUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+        "stableLocator": "PDF p. 8, lines 299–303; browser excerpt L299–L303@P7",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports that Ali was struck with a poisoned sword in a Kufa mosque and died two days later in Ramadan 40/January 661.",
+        "limits": "The attacker and motive are given through later historical narrative; this is not contemporary testimony."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "26-administrative-transition-and-household-supply-kufa",
+        "order": 26,
+        "title": {
+          "en": "The Seal after the Loss",
+          "es-ES": "El sello después de la pérdida"
+        },
+        "date": "661 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 205,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "canonicalPassage": "Secciones iniciales del artículo sobre califato de Hasan",
+        "canonicalQualification": "Fecha de proclamación suele expresarse 661, pero puede caer en 40/41 AH.",
+        "candidateEvent": "Hasan asume el control de la comunidad en Iraq tras la muerte de Ali.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-hasan-madelung",
+        "readUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+        "stableLocator": "PDF p. 2, lines 53–65; browser excerpt L53–L65@P1",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports Kufan backing for Hasan after Ali’s death and describes Hasan’s stated preference for peace and amnesty.",
+        "limits": "The text’s displayed date line reads “19 Ramażān 28/28 January 660”; it is transcribed as displayed and not resolved here. The passage relies on later sources."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "27-paired-protocol-and-bounded-negotiation-kufa",
+        "order": 27,
+        "title": {
+          "en": "A Letter with an Open Seal",
+          "es-ES": "Una carta con un sello abierto"
+        },
+        "date": "661 CE",
+        "geographyId": "kufa",
+        "corpusEventId": 206,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "canonicalPassage": "PDF pp. 2–3, párrs. 96–110",
+        "canonicalQualification": "Términos concretos son transmitidos en fuentes posteriores y difieren entre cronistas.",
+        "candidateEvent": "Muawiya envía propuestas de pacto a Hasan; una carta con sello permite a Hasan proponer condiciones.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-hasan-madelung",
+        "readUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+        "stableLocator": "PDF pp. 3–4, lines 95–112; browser excerpts L95–L112@P2–P3",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article reports exchanges of envoys, proposed terms, a sealed blank sheet for Hasan’s stipulations, and Hasan’s transfer of control of Iraq in Rabi II 41/August 661.",
+        "limits": "These are the synthesis’s reports of later chronicles, not an independently inspected original letter or Arabic text."
+      }
+    },
+    {
+      "selection": {
+        "semanticId": "05-two-archives",
+        "order": 28,
+        "title": {
+          "en": "Two Archives beneath One Roof",
+          "es-ES": "Dos archivos bajo un techo"
+        },
+        "date": "August661 approximate; RabiII41AH",
+        "geographyId": "kufa",
+        "corpusEventId": 207,
+        "canonicalSourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+        "canonicalPassage": "PDF p. 3, párr. 111",
+        "canonicalQualification": "La fecha gregoriana/lunar puede variar por conversión.",
+        "candidateEvent": "Hasan cede el control de Iraq a Muawiya tras siete meses.",
+        "approvalMarker": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "bindingStatus": "exact canonical semantic ID and corpusEventId copied from current selection",
+      "evidence": {
+        "sourceId": "iranica-hasan-madelung",
+        "readUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+        "stableLocator": "PDF p. 4, lines 111–127; browser excerpt L111–L127@P3",
+        "accessStatus": "specific public passage text read in browser this run; whole article not read",
+        "readThisRun": true,
+        "findingCompact": "The article describes the public transfer at Kufa, Muawiya’s reported address and Hasan’s return to Medina with his family.",
+        "limits": "The article itself reports competing/changed statements about terms; this collection does not authenticate a speech or letter."
+      }
+    }
+  ],
+  "crossEpisodeNotes": [
+    "Episodes 21 and 24 are both bound to the same canonical Iranica locator, PDF p. 8, lines 296–299; the read passage mentions loss of control of Egypt and Hijaz by the end of 39/660. This records the source text and does not resolve either selection.",
+    "The Poonawala article is the sole source read for selections 1–25; the Madelung article is the sole source read for selections 26–28. All are modern scholarly syntheses.",
+    "The cited al-Tabari, al-Baladhuri, al-Waqidi, Masudi and other historical works were not read in this task. No primary Arabic passage, inscription, or complete book was consulted.",
+    "No campaign dossier or map was created, no selected identity/date was changed, and no historical approval is implied."
+  ],
+  "decisionStatus": "architect review pending; no judgment recorded by collector"
+}
