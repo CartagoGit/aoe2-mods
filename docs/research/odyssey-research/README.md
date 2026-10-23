@@ -125,3 +125,8 @@ La [referencia DSM moderna de Constantinopla](constantinople-modern-dsm-processi
 Las secciones anteriores conservan cortes históricos de trabajo. El total actual del manifiesto es 37 recursos y ninguna referencia nueva tiene aprobación de producción.
 
 La [recopilación de apertura judía](jewish-opening-primary-collection.json), atribuida a gpt-6-luna, reúne consultas acotadas para los episodios 1–4. Separa Josefo, tradiciones rabínicas redactadas después, comentarios modernos y datos arqueológicos; registra accesos parciales, edición no identificada y la ausencia de una parcela/fecha segura para una escuela o debate. El arquitecto recibió la colección sin adoptar automáticamente sus conclusiones como aprobación histórica: cada afirmación deberá contrastarse al escribir el dossier. No cambia las selecciones ni crea una academia excavada, ruta de huida o «concilio de Jamnia».
+
+
+## Consulta acotada de episodios judíos 5–8
+
+La [colección contrastada del 23 de octubre](jewish-episodes-05-08-primary-collection.md), con [matriz de fuentes](jewish-episodes-05-08-primary-collection.json), conserva las selecciones de Roma–Ostia96, Lodc.100–135, Cirene115–117 y Alejandría115–117. Separa reforma fiscal de abolición, registra atribuciones rabínicas alternativas y distingue los relatos retrospectivos de Dión/Eusebio de la geografía todavía pendiente. No añade dossiers, imágenes, hechos aprobados ni evidencia de juego.
