@@ -1,0 +1,76 @@
+{
+  "architectApproval": false,
+  "status": "metadata verified; downloads blocked by Wikimedia 429 after retry-after window; no image files saved",
+  "downloadPolicy": "Requested files only from HTTPS Commons upload.wikimedia.org originals. One retry after the server Retry-After: 10 response; original and thumbnail URLs continued returning HTTP 429. No TLS bypass, alternate proxy, or CDN mirror used.",
+  "images": [
+    {
+      "place": "Alexandria",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ptolemaic_Alexandria_Map_-_en.svg",
+      "title": "Ptolemaic Alexandria Map - en.svg",
+      "whatItShows": "Map identified on Commons as Alexandria between 300 and 100 BCE.",
+      "author": "Limpzen (French original); Redx360 (English translation)",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePageConsulted": "Summary, lines 120–123; license, lines 130–140; file info, lines 102–103 and 172–173.",
+      "listedDimensionsPx": {
+        "width": 1702,
+        "height": 1065
+      },
+      "listedBytes": 54718,
+      "downloadUrlAttempted": "https://upload.wikimedia.org/wikipedia/commons/2/26/Ptolemaic_Alexandria_Map_-_en.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadStatus": "HTTP 429 on initial request and one retry after Retry-After: 10; thumbnail URL also returned HTTP 429.",
+      "downloadedFile": null,
+      "actualDimensionsPx": null,
+      "bytes": null,
+      "sha256": null,
+      "cdnOrModification": "No CDN copy or transformed rendition obtained; no local modification.",
+      "chronologyAndUseLimits": "Explicitly Ptolemaic, 300–100 BCE; not a plan of Alexandria in 324 CE. Its age and reconstruction choices prevent treating street/coastline detail as fourth-century geometry."
+    },
+    {
+      "place": "Edirne (Tunca river)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Edirne_Tunca_river_in_2009_6125.jpg",
+      "title": "Edirne Tunca river in 2009 6125.jpg",
+      "whatItShows": "Commons caption: “A rustic part of this river.” Photo point listed at 41.676613, 26.541488; capture dated 9 December 2008 (filename says 2009).",
+      "author": "Dosseman",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePageConsulted": "Summary, lines 120–125; license, lines 130–143; dimensions/data, lines 101–103 and 207–209.",
+      "listedDimensionsPx": {
+        "width": 4256,
+        "height": 2832
+      },
+      "listedBytes": 8269706,
+      "downloadUrlAttempted": "https://upload.wikimedia.org/wikipedia/commons/1/11/Edirne_Tunca_river_in_2009_6125.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadStatus": "HTTP 429 on first request after waiting the Retry-After interval; thumbnail URL also returned HTTP 429.",
+      "downloadedFile": null,
+      "actualDimensionsPx": null,
+      "bytes": null,
+      "sha256": null,
+      "cdnOrModification": "No CDN copy or transformed rendition obtained; no local modification.",
+      "chronologyAndUseLimits": "Modern riverbank photograph; useful only as a contemporary locator/landscape reference. It does not establish fourth-century river course, bank, bridge, ford, or battle position."
+    },
+    {
+      "place": "Üsküdar / Bosphorus",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Istanbul_Üsküdar_Bosporus_b.jpg",
+      "title": "Istanbul Üsküdar Bosporus b.jpg",
+      "whatItShows": "Modern Bosphorus view, described as Istanbul Bosphorus, photographed 16 November 2018; listed viewpoint 41.026944, 29.013889.",
+      "author": "Josef Moser",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePageConsulted": "Summary, lines 120–125; license, lines 130–143; dimensions/data, lines 101–103 and 205–207.",
+      "listedDimensionsPx": {
+        "width": 4128,
+        "height": 3096
+      },
+      "listedBytes": 7881349,
+      "downloadUrlAttempted": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Istanbul_%C3%9Csk%C3%BCdar_Bosporus_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadStatus": "HTTP 429 on first request after waiting the Retry-After interval; thumbnail URL also returned HTTP 429.",
+      "downloadedFile": null,
+      "actualDimensionsPx": null,
+      "bytes": null,
+      "sha256": null,
+      "cdnOrModification": "No CDN copy or transformed rendition obtained; no local modification.",
+      "chronologyAndUseLimits": "Modern Bosphorus view, not evidence for the shoreline, harbor works, ferries, crossings, or military geometry of 324 CE."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "scenarioVersion": "1.59",
+  "parserVersion": "0.9.6",
+  "stringRangeStatus": "fixture-only",
+  "mode": "aoe2-de",
+  "rgeCommit": "3c40203b650de9888ca82fae1276ea67bf3d3d93",
+  "difficultyProfiles": {
+    "easy": 3,
+    "standard": 2,
+    "hard": 1
+  },
+  "difficultyMappingVerified": false
+}

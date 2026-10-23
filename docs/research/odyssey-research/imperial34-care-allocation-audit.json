@@ -1,0 +1,1069 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "34-church-transfer-constantinople",
+  "status": "candidate finite accounting; not a dossier, runtime choice or game verification",
+  "resolvedInputsSha256": "f607654d908e22b31349c933f5d2e145b819ba1bd59e9e1afa5231c8f934a3b4",
+  "combinationCount": 9,
+  "optionalTasks": [
+    {
+      "id": "neighbor-provisions",
+      "kind": "aid",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 100,
+        "wood": 50,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "voluntary-household-return",
+      "kind": "extract",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 100,
+        "wood": 0,
+        "gold": 25,
+        "stone": 0
+      }
+    },
+    {
+      "id": "source-comparison",
+      "kind": "copy",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "local-wayfinding",
+      "kind": "guide",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "slope-survey",
+      "kind": "scout",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "service-observation",
+      "kind": "watch",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "damaged-civilian-store",
+      "kind": "repair",
+      "cost": {
+        "food": 0,
+        "wood": 50,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 200,
+        "wood": 100,
+        "gold": 0,
+        "stone": 0
+      }
+    }
+  ],
+  "reservedOptionalRewards": {
+    "food": 400,
+    "wood": 150,
+    "gold": 25,
+    "stone": 0
+  },
+  "profiles": {
+    "easy": {
+      "operatingStock": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "allSkipAffordableCount": 9,
+      "allOptionalsAfterFundingAffordableCount": 9,
+      "affordableAfterSomeOptionalsCount": 9,
+      "combinations": [
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 320,
+            "wood": 240,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 100,
+            "wood": 140,
+            "gold": 260,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 500,
+            "wood": 240,
+            "gold": 285,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 340,
+            "wood": 160,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 80,
+            "wood": 220,
+            "gold": 240,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 480,
+            "wood": 320,
+            "gold": 265,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 300,
+            "wood": 100,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 120,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 520,
+            "wood": 380,
+            "gold": 175,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 240,
+            "wood": 340,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 180,
+            "wood": 40,
+            "gold": 260,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 96,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 580,
+            "wood": 140,
+            "gold": 285,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 260,
+            "wood": 260,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 160,
+            "wood": 120,
+            "gold": 240,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 560,
+            "wood": 220,
+            "gold": 265,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 220,
+            "wood": 200,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 200,
+            "wood": 180,
+            "gold": 150,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 600,
+            "wood": 280,
+            "gold": 175,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 180,
+            "wood": 240,
+            "gold": 100,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 240,
+            "wood": 140,
+            "gold": 160,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 640,
+            "wood": 240,
+            "gold": 185,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 200,
+            "wood": 160,
+            "gold": 120,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 220,
+            "wood": 220,
+            "gold": 140,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 620,
+            "wood": 320,
+            "gold": 165,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 160,
+            "wood": 100,
+            "gold": 210,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 260,
+            "wood": 280,
+            "gold": 50,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 660,
+            "wood": 380,
+            "gold": 75,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        }
+      ]
+    },
+    "standard": {
+      "operatingStock": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "allSkipAffordableCount": 7,
+      "allOptionalsAfterFundingAffordableCount": 7,
+      "affordableAfterSomeOptionalsCount": 8,
+      "combinations": [
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 320,
+            "wood": 240,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 20,
+            "wood": 40,
+            "gold": 150,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 96,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 420,
+            "wood": 140,
+            "gold": 175,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 340,
+            "wood": 160,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 0,
+            "wood": 120,
+            "gold": 130,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 400,
+            "wood": 220,
+            "gold": 155,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 300,
+            "wood": 100,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 40,
+            "wood": 180,
+            "gold": 40,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 440,
+            "wood": 280,
+            "gold": 65,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 240,
+            "wood": 340,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": [
+            "neighbor-provisions",
+            "damaged-civilian-store"
+          ]
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 260,
+            "wood": 260,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 80,
+            "wood": 20,
+            "gold": 130,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 96,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 480,
+            "wood": 120,
+            "gold": 155,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 220,
+            "wood": 200,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 520,
+            "wood": 180,
+            "gold": 65,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 180,
+            "wood": 240,
+            "gold": 100,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 160,
+            "wood": 40,
+            "gold": 50,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 96,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 560,
+            "wood": 140,
+            "gold": 75,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 200,
+            "wood": 160,
+            "gold": 120,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 140,
+            "wood": 120,
+            "gold": 30,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 540,
+            "wood": 220,
+            "gold": 55,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 160,
+            "wood": 100,
+            "gold": 210,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": false,
+          "examplePreFundingOptionals": null
+        }
+      ]
+    },
+    "hard": {
+      "operatingStock": {
+        "food": 300,
+        "wood": 220,
+        "gold": 120,
+        "stone": 0
+      },
+      "allSkipAffordableCount": 3,
+      "allOptionalsAfterFundingAffordableCount": 3,
+      "affordableAfterSomeOptionalsCount": 7,
+      "combinations": [
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 320,
+            "wood": 240,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": [
+            "neighbor-provisions"
+          ]
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 340,
+            "wood": 160,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": [
+            "neighbor-provisions"
+          ]
+        },
+        {
+          "recipes": [
+            "meal-direct",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 300,
+            "wood": 100,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 0,
+            "wood": 120,
+            "gold": 10,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 400,
+            "wood": 220,
+            "gold": 35,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 240,
+            "wood": 340,
+            "gold": 0,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": false,
+          "examplePreFundingOptionals": null
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 260,
+            "wood": 260,
+            "gold": 20,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": [
+            "neighbor-provisions"
+          ]
+        },
+        {
+          "recipes": [
+            "meal-shared-hearth",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 220,
+            "wood": 200,
+            "gold": 110,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 80,
+            "wood": 20,
+            "gold": 10,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 96,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 480,
+            "wood": 120,
+            "gold": 35,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-materials"
+          ],
+          "cost": {
+            "food": 180,
+            "wood": 240,
+            "gold": 100,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": [
+            "neighbor-provisions"
+          ]
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-local-kit"
+          ],
+          "cost": {
+            "food": 200,
+            "wood": 160,
+            "gold": 120,
+            "stone": 0
+          },
+          "allSkipAffordable": true,
+          "allSkipRemainder": {
+            "food": 100,
+            "wood": 60,
+            "gold": 0,
+            "stone": 0
+          },
+          "reachableOptionalSubsetsAfterFunding": 128,
+          "allOptionalsAfterFundingAffordable": true,
+          "allOptionalsExampleOrder": [
+            "neighbor-provisions",
+            "voluntary-household-return",
+            "source-comparison",
+            "local-wayfinding",
+            "slope-survey",
+            "service-observation",
+            "damaged-civilian-store"
+          ],
+          "allOptionalsRemainder": {
+            "food": 500,
+            "wood": 160,
+            "gold": 25,
+            "stone": 0
+          },
+          "affordableAfterSomeOptionals": true,
+          "examplePreFundingOptionals": []
+        },
+        {
+          "recipes": [
+            "meal-purchased",
+            "shelter-rented"
+          ],
+          "cost": {
+            "food": 160,
+            "wood": 100,
+            "gold": 210,
+            "stone": 0
+          },
+          "allSkipAffordable": false,
+          "allSkipRemainder": null,
+          "reachableOptionalSubsetsAfterFunding": 0,
+          "allOptionalsAfterFundingAffordable": false,
+          "allOptionalsExampleOrder": null,
+          "allOptionalsRemainder": null,
+          "affordableAfterSomeOptionals": false,
+          "examplePreFundingOptionals": null
+        }
+      ]
+    }
+  },
+  "nativeImplemented": false,
+  "gameVerified": false,
+  "limits": [
+    "Resource accounting assumes all listed operating stock is actually accessible.",
+    "Optional prefix reachability assumes spatial/actor predicates succeed; not a movement schedule.",
+    "No recipe output, work site, terrain, time, challenge, history or native operation is certified.",
+    "Only supplied operating stock and once-only successful optional rewards are used; no recovery reserve or future income."
+  ]
+}

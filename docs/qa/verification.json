@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "checked": "2026-10-12",
+  "implementer": "gpt-6",
+  "base": "develop",
+  "commands": [
+    {
+      "command": "bun run validate",
+      "exitCode": 0,
+      "testsPassing": 41,
+      "testsTotal": 41,
+      "expectCalls": 124
+    },
+    {
+      "command": "bun run test:export",
+      "exitCode": 0,
+      "scenarioRoundTrips": 3,
+      "campaignContainerRoundTrips": 3,
+      "unsupportedModeRejected": true
+    },
+    {
+      "command": "bun run schema:export",
+      "exitCode": 0
+    },
+    {
+      "command": "bun run i18n:check",
+      "exitCode": 0,
+      "catalogs": 2,
+      "approvedCatalogs": 0
+    },
+    {
+      "command": "bun run assets:check",
+      "exitCode": 0,
+      "productionAssets": 0
+    },
+    {
+      "command": "bun run audio:check",
+      "exitCode": 0,
+      "productionRecordings": 0
+    },
+    {
+      "command": "python3 -m py_compile tools/python/setup.py tools/python/export_aoe2.py",
+      "exitCode": 0
+    },
+    {
+      "command": "DelendAI CLI validate (source entrypoint supplied by runtime)",
+      "exitCode": 0,
+      "declared": true,
+      "passed": true,
+      "journalled": true,
+      "testsPassing": 41,
+      "testsTotal": 41
+    }
+  ],
+  "fixture": {
+    "zipSha256": "3d45e9519daa60de18573ff64f4aa958eb7165c0068a863a99f1f6a448420ca9",
+    "nativeReport": {
+      "status": "EXPORT READY (binary subset)",
+      "campaignSha256": "4866a1d34c6e242c18395bfe11fef0cb04dbe85dbe71c0bf8b307ac1916f7adf",
+      "scenarioReports": [
+        {
+          "id": "01-technical-battle",
+          "sha256": "596845b314f56ab1a36dc45fea1b7a8ab3ab6af859f8ebb21616cd0181e230e5",
+          "triggers": 13,
+          "units": 2,
+          "version": "1.59"
+        }
+      ],
+      "gameVerified": false,
+      "pending": [
+        "slideshow-layout",
+        "difficulty-runtime",
+        "multi-mod-localization",
+        "save-load-progression",
+        "audio-engine-paths"
+      ]
+    },
+    "notForPublication": true
+  },
+  "review": {
+    "status": "done",
+    "implementer": "gpt-6",
+    "reviewer": "gpt-6.1-sol",
+    "submittedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6",
+    "technical": {
+      "status": "conformant",
+      "instance": "/root/independent_review",
+      "actualModel": "gpt-6",
+      "findings": 8,
+      "correctedFindings": 8,
+      "baselineCommit": "4f6ea4ada828bb4a77f69f64d87faf8a1a89540e",
+      "reviewedCommit": "2843c0df707df45e633f22d5fc87e04c66d2b0b6"
+    },
+    "formalBlocker": null,
+    "formalAttempt": {
+      "agent": "gpt-6.1-sol",
+      "reviewedCommit": "e4f5fc9bacd56f7d7197b9b4c711c985b138a911",
+      "identityAccepted": true,
+      "validateExitCode": 0,
+      "testsPassing": 41,
+      "testsTotal": 41,
+      "expectCalls": 124,
+      "roundTrips": 3,
+      "verdictRegistered": true
+    },
+    "approvedCommit": "69cf3e72ecdfb952d0cc7998790544cb73305068",
+    "verdictCommit": "6d17864eabde271ee5255dd9d2a618478a3bbdf1",
+    "verdictLandingCommit": "5ae5d2c47902ebb63617ccaf0ddab066443030f2"
+  },
+  "integration": {
+    "status": "integrated",
+    "workflow": "DelendAI work publish",
+    "integrationSha": "69cf3e72ecdfb952d0cc7998790544cb73305068",
+    "againstIntegrationSha": "4139908a3941897103ddff8ded27f5d4f6d2b3ef",
+    "declared": true,
+    "passed": true,
+    "gateCommands": [
+      "bun install --frozen-lockfile",
+      "bun run validate"
+    ],
+    "bootstrapOwnerAuthorized": true
+  },
+  "gameExecuted": false,
+  "remoteCiExecuted": false,
+  "productionReady": false,
+  "proposal": {
+    "id": "i00001",
+    "status": "done",
+    "closeTransitionId": "0b1a5610-b4e6-4f65-a4e6-fffcd5bbacaa"
+  },
+  "handoff": {
+    "proposal": "f00001",
+    "status": "ready",
+    "firstSlice": "S1",
+    "agentRole": "MiniMax M3.1 content author",
+    "scope": "docs/wiki/route-pilot"
+  },
+  "baseReady": true
+}

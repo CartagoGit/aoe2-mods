@@ -1,0 +1,303 @@
+{
+  "campaignId": "imperial-church",
+  "scope": "Órdenes 1–10 cotejadas con las selecciones actuales en imperial-church.json. Recopilación únicamente; no es aprobación narrativa, de diseño o histórica.",
+  "selectionSource": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "episodes": [
+    {
+      "order": 1,
+      "id": "01-milvian-bridge",
+      "selectedDate": "28 October 312 CE",
+      "selectedPlace": "milvio / Rome",
+      "selectedClaim": "Constantino derrota a Majencio en Puente Milvio y entra en Roma.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25021.htm",
+          "locator": "Eusebius, Life of Constantine I.35–39",
+          "consulted": "Página completa consultada mediante búsqueda y apertura; pasajes de la aproximación, muerte de Maxentius al cruzar el Tíber y entrada de Constantino en Roma.",
+          "supports": "Eusebio presenta la victoria de Constantino sobre Maxentius, su muerte en el Tíber durante la retirada y la entrada triunfal en Roma.",
+          "limitations": "Eusebio formula el episodio como victoria providencial y modelo bíblico. Estos capítulos no fijan la fecha del 28 de octubre ni nombran inequívocamente el puente como Pons Milvius. La narración no es topografía precisa del campo."
+        },
+        {
+          "url": "https://www.tertullian.org/fathers/lactantius_de_mortibus_persecutorum.htm",
+          "locator": "Lactantius, De mortibus persecutorum 44 (referencia de selección)",
+          "consulted": "No se logró abrir el texto completo en esta consulta; no usar como pasaje verificado.",
+          "supports": "No evaluado en esta auditoría.",
+          "limitations": "La fecha exacta y la identificación del puente requieren una fuente con pasaje abierto y localizador; no atribuirlas a Eusebio I.35–39."
+        }
+      ],
+      "correctionsSuggested": "Mantener victoria/entrada como relato de Eusebio; calificar fecha exacta y nombre del puente como datos no verificados por el pasaje consultado.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 2,
+      "id": "02-bounded-negotiation-milan",
+      "selectedDate": "313 CE",
+      "selectedPlace": "Milan",
+      "selectedClaim": "Constantino y Licinio negocian tolerancia religiosa en Milán.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/250110.htm",
+          "locator": "Eusebius, Ecclesiastical History X.5, especially the inserted imperial rescript",
+          "consulted": "Lectura del capítulo X.5 y del texto del rescripto traducido allí.",
+          "supports": "El texto transmitido atribuye a Constantino y Licinio una política que permite a cada cual elegir observancia religiosa, e incluye restitución de propiedad comunitaria cristiana.",
+          "limitations": "El capítulo es un transmisor cristiano posterior y la forma conservada es un rescripto, no acta ni transcripción de una conversación. Que ambos gobernantes se reunieran/negociaran en Milán se afirma en el marco editorial y en Lactancio, no se demuestra por el rescripto mismo. El rótulo ‘Edicto de Milán’ es convencional/moderno."
+        },
+        {
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm",
+          "locator": "Lactantius, De mortibus persecutorum 48 (citado en la selección)",
+          "consulted": "La URL indicada no se abrió en lectura directa durante esta consulta.",
+          "supports": "No contado como pasaje consultado.",
+          "limitations": "La frase ‘negocian tolerancia’ es una síntesis de contexto, no palabras documentadas de diálogo privado."
+        }
+      ],
+      "correctionsSuggested": "Separar el hecho del rescripto/política de tolerancia de la reconstrucción del encuentro o negociación en Milán; atribuir la primera al documento transmitido por Eusebio.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 3,
+      "id": "03-property-and-record-restoration-nicomedia",
+      "selectedDate": "13 June 313 CE",
+      "selectedPlace": "Nicomedia",
+      "selectedClaim": "Licinio publica en Nicomedia la política de libertad y restitución de propiedades.",
+      "sources": [
+        {
+          "url": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+          "locator": "Fordham sourcebook reproduction of Eusebius, HE X.5; compare Lactantius DMP 48",
+          "consulted": "Se consultó el texto traducido del rescripto y las líneas sobre libertad religiosa y restitución; esta reproducción cita HE X.5.",
+          "supports": "El rescripto transmitido proclama libertad de elección religiosa y retorno de bienes comunitarios cristianos; el texto se presenta como orden enviada a funcionarios provinciales.",
+          "limitations": "La fecha del 13 de junio y promulgación en Nicomedia corresponden a Lactancio DMP 48, que no se abrió directamente en este pase. HE X.5 no establece por sí mismo esa fecha/lugar para la publicación. Una orden legal no prueba restitución uniforme o efectiva en cada localidad."
+        }
+      ],
+      "correctionsSuggested": "Atribuir fecha y Nicomedia a Lactancio 48 (pendiente lectura directa); no atribuir esos datos al pasaje de Eusebio X.5 consultado. Mantener cautela sobre ejecución práctica.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 4,
+      "id": "04-rival-delegation-reception-rome-ostia",
+      "selectedDate": "313–314 CE; Roman hearing focus",
+      "selectedPlace": "Rome / Ostia",
+      "selectedClaim": "La disputa donatista llega a audiencias imperiales y sínodos regionales.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/optatus_01_book1.htm",
+          "locator": "Optatus, Against the Donatists I, section on the Roman hearing under Miltiades; attendees and date discussion",
+          "consulted": "Pasaje consultado; Optatus relata una audiencia/sínodo en Roma, atribuye el procedimiento a Constantino y enumera obispos, entre ellos el de Ostia.",
+          "supports": "La fuente retrospectiva católica relata el juicio eclesiástico romano sobre Caecilian/Donatus y una decisión favorable a Caecilian.",
+          "limitations": "Optatus es polémico y escribe después de los hechos. Ostia aparece como sede de un obispo participante en el listado, no como lugar de una segunda audiencia demostrada. El texto presenta diferencias de datación frente a Agustín y una ambigüedad sobre qué Donatus se identifica."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/200110.htm",
+          "locator": "Eusebius, Ecclesiastical History X.5, contextual reference to African dispute/Roman decision",
+          "consulted": "Capítulo consultado de forma general; no se encontró en él evidencia para una audiencia en Ostia.",
+          "supports": "Contexto general de intervención imperial y remisión de controversia cristiana, con valor menor que Optatus para el procedimiento romano.",
+          "limitations": "No respalda por sí solo la fórmula plural ‘audiencias imperiales y sínodos regionales’ con geografía Rome/Ostia."
+        }
+      ],
+      "correctionsSuggested": "No presentar Ostia como lugar de audiencia: el pasaje abierto localiza la reunión en Roma; Ostia está en la lista de asistentes. Revisar si el episodio debe identificar estrictamente la audiencia romana y dejar otras instancias como contexto atribuido.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 5,
+      "id": "05-delegate-logistics-arles",
+      "selectedDate": "314 CE",
+      "selectedPlace": "Arles",
+      "selectedClaim": "Concilio de Arlés aborda donatismo, disciplina y fecha de Pascua.",
+      "sources": [
+        {
+          "url": "https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/",
+          "locator": "Introductory notes; canons 1, 8 and 20 identified in the page; acts transmitted with Optatus",
+          "consulted": "Se leyó la introducción editorial y su resumen de los cánones, no una edición crítica íntegra de las actas.",
+          "supports": "El concilio de Arles se asocia al expediente donatista; el canon 1 trata la fecha de Pascua y hay cánones disciplinarios. La página indica 1 August 314.",
+          "limitations": "La fecha precisa es reconstrucción historiográfica, no necesariamente una fecha declarada inequívocamente en los cánones. La transmisión de actas tiene historia manuscrita; la página consultada es una introducción moderna y no prueba logística local, rutas ni edificios concretos."
+        }
+      ],
+      "correctionsSuggested": "Conservar año y relación general con la disputa, atribuir fecha precisa a la reconstrucción editorial/histórica y no inferir detalles del lugar o logística a partir de los cánones resumidos.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 6,
+      "id": "06-finite-field-withdrawal-cibalae",
+      "selectedDate": "314 or 316 CE; disputed",
+      "selectedPlace": "Cibalae (Cibalis; modern Vinkovci area, not a precisely fixed battlefield)",
+      "selectedClaim": "Constantino y Licinio libran guerra en Cibalae; pactan reparto territorial en 317.",
+      "sources": [
+        {
+          "url": "https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.18/",
+          "locator": "Zosimus, New History 2.18.1–5",
+          "consulted": "Lectura directa de la traducción publicada en Livius. El pasaje sitúa el cuartel de Licinio en Cibalis, describe ciudad en altura, acceso abrupto/pantanoso y llanura; narra la batalla y la retirada a Sirmium.",
+          "supports": "Apoya que Zósimo narra un combate de Constantino y Licinio en Cibalis y describe el relieve en términos generales. La continuación inmediata de la fuente de 1814 narra una tregua posterior y reparto territorial; véase https://www.tertullian.org/fathers/zosimus02_book2.htm, §§ del texto alrededor de líneas 115–120 (New History 2.18–19 según la división de traducción).",
+          "limitations": "Zósimo escribe a comienzos del siglo VI; la traducción inglesa accesible es de 1814. El pasaje no fecha el combate. La discusión moderna consultada confirma desacuerdo entre cronologías que dan 314 y 316: Barnes, ‘Lactantius and Constantine’, resultado/abstract y PDF consultados parcialmente: https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/lactantius-and-constantine/532E3839E4C73676B2922AD5298A365A y https://constantinethegreatcoins.com/articles/Barnes_Lactantius_and_Constantine.pdf. No usar ese resumen como demostración exhaustiva de la fecha. El paisaje literario no localiza el punto del choque mediante coordenadas modernas."
+        }
+      ],
+      "correctionsSuggested": "La fecha dual/disputada es prudente. No convertir el paisaje narrado en un battlefield footprint moderno; diferenciar batalla, persecución y tregua posterior en vez de afirmar pacto de paz de 317 como parte del mismo momento sin fuente adicional consultada.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 7,
+      "id": "07-court-record-logistics-rome-ostia",
+      "selectedDate": "321 CE",
+      "selectedPlace": "Rome / Ostia",
+      "selectedClaim": "Una ley imperial limita actividad judicial dominical y permite labor agrícola.",
+      "sources": [
+        {
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm",
+          "locator": "Codex Justinianus 3.12.2, constitution attributed to Constantine; dated 5 March 321 in the transcription",
+          "consulted": "Lectura directa de la transcripción latina universitaria. El texto manda que jueces, población urbana y oficios descansen el venerable día del Sol; permite a quienes están en el campo trabajar la agricultura cuando lo requiere el tiempo o la estación.",
+          "supports": "Apoya ambas partes del contenido legal: suspensión urbana/judicial y excepción agrícola rural.",
+          "limitations": "La selección cita Codex Theodosianus 2.8.1, pero el pasaje que contiene explícitamente la excepción agrícola es CJ 3.12.2. No confundir sus referencias. La transcripción del Codex de Justiniano es una codificación posterior de una constitución imperial, no el original físico de 321 ni prueba del cumplimiento efectivo. El edicto no está localizado en Roma u Ostia."
+        },
+        {
+          "url": "https://www.thelatinlibrary.com/codtheod.html",
+          "locator": "Codex Theodosianus 2.8.1, referencia usada por selección",
+          "consulted": "La URL se abrió/buscó como transcripción; el texto referido no es el pasaje de la excepción agrícola.",
+          "supports": "No sirve como soporte de la cláusula agrícola descrita.",
+          "limitations": "La referencia seleccionada parece errónea para la afirmación compuesta."
+        }
+      ],
+      "correctionsSuggested": "Cambiar referencia al pasaje agrícola por CJ 3.12.2 o eliminar esa cláusula; no presentar una ley general como una audiencia/escena ocurrida en Roma u Ostia sin evidencia independiente.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 8,
+      "id": "08-disputed-correspondence-alexandria",
+      "selectedDate": "324–325 CE",
+      "selectedPlace": "Alexandria (correspondence attributed to the dispute)",
+      "selectedClaim": "Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.",
+      "sources": [
+        {
+          "url": "https://catholiclibrary.org/library/view?chunk.id=00000007&docId=Fathers-Synchronized-EN/Eusebius_Caesariensis__Vita_Constantini.en.html",
+          "locator": "Eusebius, Life of Constantine II.61–73 (table of contents locators); especially II.61–64 and II.73",
+          "consulted": "Se consultó la tabla de contenido y encabezados/pin summaries, no el texto íntegro del bloque. Estos localizan el origen de la controversia en Alejandría, una carta imperial a Alejandro y Arrio y persistencia del conflicto tras la carta.",
+          "supports": "Eusebio estructura la disputa como procedente de Alejandría y describe el intento de mediación epistolar imperial; los títulos sitúan la persistencia después de la carta.",
+          "limitations": "El contenido narrativo completo de II.61–73 no quedó accesible en la extracción; no afirmar detalles internos de cartas a partir del índice. El relato es selectivo y pro-Constantiniano. ‘Redes episcopales’ es síntesis editorial, no frase/pasaje directamente verificado. El rango 324–325 requiere apoyo cronológico adicional."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/25022.htm",
+          "locator": "Eusebius, Life of Constantine Book II, cited in selection",
+          "consulted": "La búsqueda confirmó encabezados II.64–73, pero la apertura de la página agotó tiempo; no se leyó allí el cuerpo de esos capítulos.",
+          "supports": "Confirma existencia de los capítulos/carta en la edición; no aporta aquí detalle cotejado.",
+          "limitations": "No tratar consulta fallida como lectura. No se comprobó fecha exacta ni extensión geográfica de la correspondencia."
+        }
+      ],
+      "correctionsSuggested": "Describir de manera atribuida el conflicto alejandrino y la carta imperial; retirar o apoyar por otra fuente la generalización ‘redes episcopales’ y el intervalo exacto 324–325.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 9,
+      "id": "09-crossing-and-supply-adrianople",
+      "selectedDate": "3 July 324 CE, conventional",
+      "selectedPlace": "Adrianople / Hebrus (Maritsa) region",
+      "selectedClaim": "Constantino derrota a Licinio en Adrianópolis y Chrysopolis; queda como único emperador.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Zosimus, New History, passage found at lines 126–130 of the 1814 translation; second war narrative",
+          "consulted": "Lectura directa de las líneas sobre el campamento de Licinio en Adrianópolis, el ejército de Constantino junto al Hebro, cruce, victoria narrada, huida a Bizancio y continuación del asedio.",
+          "supports": "Zósimo distingue batalla en la región de Adrianópolis y describe relación regional con el Hebro, una colina y el campamento; narra retirada de Licinio hacia Bizancio.",
+          "limitations": "El pasaje no proporciona el 3 de julio; cifra de bajas y detalles tácticos pertenecen a Zósimo y no deben tratarse como corroborados. La selección agrupa también Crisópolis y la condición de emperador único, que ocurren tras más operaciones. Es autor del siglo VI y texto inglés traducido en 1814. Sus menciones de la confluencia/colina no dan coordenadas del campo."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/25022.htm",
+          "locator": "Eusebius, Life of Constantine II, battle narrative",
+          "consulted": "La búsqueda de la edición encontró su resumen de victoria en ‘primer’ y ‘segundo’ conflictos con Licinio; apertura directa del texto completo expiró por timeout.",
+          "supports": "Solo indicación general en el resultado; no contado como pasaje completo leído.",
+          "limitations": "No confirma fecha precisa ni permite asignar por sí solo los dos topónimos a cada batalla."
+        }
+      ],
+      "correctionsSuggested": "Separar Adrianópolis de Crisópolis y de la consolidación política posterior. Mantener ‘3 de julio’ como convencional hasta cotejar fuente cronológica explícita; ninguna geografía de batalla debe exceder los términos regionales que da Zósimo.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 10,
+      "id": "10-land-and-strait-logistics-chrysopolis",
+      "selectedDate": "18 September 324 CE, conventional",
+      "selectedPlace": "Chrysopolis / Chalcedon–Bosphorus region",
+      "selectedClaim": "Constantino derrota a Licinio en Adrianópolis y Chrysopolis; queda como único emperador.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Zosimus, New History, lines 137–141 of the 1814 translation",
+          "consulted": "Lectura directa: Licinio deja Bizancio y se dirige a Calcedonia; Constantino desembarca en el promontorio sagrado; el choque final se sitúa explícitamente entre Calcedonia y ese promontorio y los bizantinos/calcedonios abren las puertas tras la derrota.",
+          "supports": "Apoya el combate decisivo final en el lado asiático, en la región entre Calcedonia y el promontorio sagrado, seguido por rendición/apertura de puertas en Bizancio y Calcedonia.",
+          "limitations": "En este pasaje Zósimo no llama al campo de batalla ‘Crisópolis’; no fija 18 de septiembre. No trasladar el sitio del choque exactamente al núcleo de Üsküdar/Crisópolis: el relato sitúa el combate entre Calcedonia y promontorio sagrado. El resultado político final sigue más operaciones y ejecución posterior de Licinio; no convertirlo en simultáneo con el combate. Un extracto secundario de Excerpta Valesiana ubica una batalla ‘at Chrysopolis’, pero no se leyó íntegramente aquí: https://penelope.uchicago.edu/Thayer/e/roman/texts/excerpta_valesiana/1*.html."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/25022.htm",
+          "locator": "Eusebius, Life of Constantine II, cited for wars with Licinius",
+          "consulted": "Búsqueda devuelve resumen general de los dos conflictos; cuerpo de capítulos no abierto por timeout.",
+          "supports": "El resultado de búsqueda alude a dos victorias sobre Licinio, pero no fue utilizado para fijar lugar/fecha de Crisópolis.",
+          "limitations": "Fecha convencional y localización del título requieren verificación textual específica. No fusionar las acciones de Adrianópolis y Crisópolis."
+        }
+      ],
+      "correctionsSuggested": "Diferenciar el lugar llamado Crisópolis del campo de batalla descrito por Zósimo; describir como región Calcedonia–promontorio hasta contar con localizador primario más preciso. Atribuir 18 septiembre a cronología secundaria concreta pendiente de cotejo.",
+      "independentApprovalPending": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/25021.htm",
+      "title": "Eusebius, Life of Constantine, Book I",
+      "consultedScope": "I.35–39 para victoria/retirada de Maxentius y entrada en Roma; la fecha del 28 de octubre no se encontró allí."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/250110.htm",
+      "title": "Eusebius, Ecclesiastical History, Book X",
+      "consultedScope": "X.5, traducción del rescripto de libertad religiosa y restitución."
+    },
+    {
+      "url": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+      "title": "Fordham sourcebook: Edict of Milan (rescript transmitted by Eusebius)",
+      "consultedScope": "Texto traducido de HE X.5; libertad de religión y restitución; no es el original material."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/optatus_01_book1.htm",
+      "title": "Optatus, Against the Donatists, Book I",
+      "consultedScope": "Sección sobre audiencia romana bajo Miltiades, listado de asistentes y notas de divergencia cronológica; lectura directa."
+    },
+    {
+      "url": "https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/",
+      "title": "The Acts of the Council of Arles",
+      "consultedScope": "Introducción editorial y resumen de cánones; lectura parcial, no texto crítico íntegro."
+    },
+    {
+      "url": "https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.18/",
+      "title": "Zosimus, New History 2.18 (Livius) ",
+      "consultedScope": "2.18.1–5, lectura directa de la traducción inglesa de 1814; Cibalis, aproximación, relieve y combate."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+      "title": "Zosimus, New History, Book II, 1814 English translation",
+      "consultedScope": "Secciones alrededor de 115–120 y 126–141 para retirada/truce and second-war geography; lectura directa mediante página/find."
+    },
+    {
+      "url": "https://catholiclibrary.org/library/view?chunk.id=00000007&docId=Fathers-Synchronized-EN/Eusebius_Caesariensis__Vita_Constantini.en.html",
+      "title": "Eusebius, Life of Constantine (Catholic Library synchronized text)",
+      "consultedScope": "Tabla de contenido/pin summaries para II.61–73, no cuerpo íntegro de esos capítulos."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Corpus/CJ3.htm",
+      "title": "Codex Justinianus, Book III transcription",
+      "consultedScope": "CJ 3.12.2 en latín: descanso dominical urbano/judicial y permiso agrícola rural."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/lactantius-and-constantine/532E3839E4C73676B2922AD5298A365A",
+      "title": "T. D. Barnes, ‘Lactantius and Constantine’, Journal of Roman Studies",
+      "consultedScope": "Abstract/search-result excerpt on divergent 314/316 chronologies for Cibalae; no full article access."
+    },
+    {
+      "url": "https://constantinethegreatcoins.com/articles/Barnes_Lactantius_and_Constantine.pdf",
+      "title": "T. D. Barnes, ‘Lactantius and Constantine’ PDF copy",
+      "consultedScope": "Search/index excerpt only for chronology discussion; not relied on as full reading."
+    }
+  ],
+  "limitations": [
+    "Search snippets and page tables of contents were identified as such and were not counted as full-text reading.",
+    "No modern battlefield coordinates or exact battle footprints were inferred from present-day city names.",
+    "Several selected dates (28 October 312, 3 July 324 and 18 September 324) remain conventional rather than verified by the primary passages read here.",
+    "Religious/political accounts are attributed to their authors; Eusebius is a Christian imperial panegyrist, Optatus a later Catholic polemicist, and Zosimus a sixth-century pagan historian available here in an 1814 translation.",
+    "Independent review and approval remain pending for all ten episode claims."
+  ],
+  "independentApprovalPending": true,
+  "architectApproval": false,
+  "collectionAgent": "gpt-6-luna"
+}
