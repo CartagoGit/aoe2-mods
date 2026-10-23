@@ -44,7 +44,7 @@ En la unidad del revisor, con el candidato incorporado en `a82889d5c60ff63b743c8
 - Renderer nativo: prueba automatizada de rechazo explícito del perfil v3 antes de abrir plantillas o escribir artefactos.
 - Python: se alimentó `export_scenario` con el resultado real de `compileCapabilityProfile(v3)` dentro de su envoltura ScenarioIR v2; rechazo explícito `capability-not-implemented`, sin exportación.
 
-La exportación configuró `COF_PYTHON` y `RGE_CAMPAIGN_BIN` para resolver, desde el checkout compartido, `.venv/bin/python` y `.cache/toolchain/3c40203b650de9888ca82fae1276ea67bf3d3d93/rge_campaign`, las herramientas fijadas del proyecto, porque la unidad aislada no contiene una `.venv` propia. No se instaló ni modificó el adaptador. La validación intermedia anterior a la corrección había fallado por formato del fixture; su ejecución final pasa sin ese error.
+La exportación usó `COF_PYTHON=/home/cartago/_projects/games/aoe2-mods/.venv/bin/python` y `RGE_CAMPAIGN_BIN=/home/cartago/_projects/games/aoe2-mods/.cache/toolchain/3c40203b650de9888ca82fae1276ea67bf3d3d93/rge_campaign`, las herramientas fijadas del checkout compartido, porque la unidad aislada no contiene una `.venv` propia. No se instaló ni modificó el adaptador. La validación intermedia anterior a la corrección había fallado por formato del fixture; su ejecución final pasa sin ese error.
 
 ## Límites y siguiente gate
 
