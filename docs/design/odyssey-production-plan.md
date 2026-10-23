@@ -126,3 +126,10 @@ El [registro histórico](../qa/campaign-design/odyssey-design-progress-history.m
 
 
 El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) conserva el orden 33 sin dossier completo hasta resolver un problema jugable propio. Hay 63 borradores completos de diseño y 215 selecciones sin dossier, ninguna aprobación ampliada de juego.
+
+
+## Coherencia de actos — 23 de octubre de 2026
+
+La auditoría común encontró siete repartos `actEpisodeTargets` que todavía conservaban cuotas iniciales y divergían de las selecciones cronológicas ya escritas. La política adopta ahora los tamaños de `acts[].episodeIds`, en su orden existente: no se mueve, crea, elimina ni renumera ningún episodio para satisfacer una cuota. El validador compartido exige cinco enteros positivos, suma igual al total de campaña y coincidencia con esa distribución; comprueba también una divergencia que conserva la suma. Esto no aprueba los hitos, las fuentes ni la dificultad de ningún acto.
+
+S1 sigue abierto. Falta completar el vínculo por selección entre las consultas delegadas y la decisión histórica del arquitecto, además de la revisión editorial de hitos y curvas; las fuentes con acceso fallido o parcial no se convierten en hechos aprobados. Los expedientes completos y sus aprobaciones históricas, geográficas y de juego pertenecen a S2–S10. Ver [checkpoint de arquitectura común](../research/odyssey-research/common-architecture-checkpoint.md).

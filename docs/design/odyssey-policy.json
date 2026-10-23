@@ -28,11 +28,11 @@
         "latestYear": 313
       },
       "actEpisodeTargets": [
+        8,
+        7,
         6,
         6,
-        6,
-        6,
-        6
+        3
       ],
       "minimumAuthoredFields": [
         "event",
@@ -94,10 +94,10 @@
         "latestYear": 425
       },
       "actEpisodeTargets": [
-        6,
-        6,
-        6,
-        6,
+        5,
+        7,
+        5,
+        7,
         6
       ],
       "minimumAuthoredFields": [
@@ -160,10 +160,10 @@
         "latestYear": 843
       },
       "actEpisodeTargets": [
-        6,
-        6,
-        6,
-        7,
+        8,
+        9,
+        5,
+        3,
         7
       ],
       "minimumAuthoredFields": [
@@ -193,11 +193,11 @@
         "latestYear": 656
       },
       "actEpisodeTargets": [
-        6,
-        6,
-        6,
-        6,
-        6
+        7,
+        7,
+        7,
+        5,
+        4
       ],
       "minimumAuthoredFields": [
         "event",
@@ -228,8 +228,8 @@
       "actEpisodeTargets": [
         5,
         6,
-        6,
-        6,
+        5,
+        7,
         5
       ],
       "minimumAuthoredFields": [
@@ -259,11 +259,11 @@
         "latestYear": 750
       },
       "actEpisodeTargets": [
-        6,
-        6,
+        3,
+        9,
         7,
-        7,
-        6
+        8,
+        5
       ],
       "minimumAuthoredFields": [
         "event",
@@ -292,11 +292,11 @@
         "latestYear": 680
       },
       "actEpisodeTargets": [
+        5,
+        5,
         6,
-        6,
-        6,
-        6,
-        6
+        7,
+        7
       ],
       "minimumAuthoredFields": [
         "event",
