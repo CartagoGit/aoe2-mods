@@ -82,6 +82,150 @@
       "readScope": "Read the Medinan paragraph in the publisher PDF and its visible citation, after the earlier partial HTML retrieval; not Balʿami or the other medieval works.",
       "finding": "Morony describes Medina’s trench against a Meccan attack in627; Salman’s advice is qualified as an attribution.",
       "limits": "Modern scholarly summary, not independent medieval source collation or calendar verification; no trench dimensions, ancient landscape, troop totals or playable map is established."
+    },
+    {
+      "id": "hamidullah-hudaybiyya-passages",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "title": "Muhammed Hamidullah, Hudeybiye Antlasmasi, TDV Islam Ansiklopedisi; updated by DIA",
+      "locator": "Publisher metadata; opening location paragraph and agreement narrative through its listed terms",
+      "access": "article-passage",
+      "readScope": "Read these Turkish HTML passages, not the cited medieval treaty sources or the whole bibliography.",
+      "finding": "The entry places Hudaybiyya west of Mecca and dates the agreement to 6/628; it also contains prejudicial collective characterizations.",
+      "limits": "No precise ancient site or independently collated treaty is established. Reject its generalizations about Jewish trustworthiness and tribal character as objective narrative, NPC behavior or faction mechanics."
+    },
+    {
+      "id": "morony-arabia-iraq-passages",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/arab-ii/?generate_pdf=1",
+      "title": "Michael G. Morony, Arab ii. Arab Conquest of Iran, Encyclopaedia Iranica",
+      "locator": "PDF p.1 opening caution; p2 Arabia/Mecca/Yamama; pp.3–4 Battle of the Bridge paragraph",
+      "access": "article-passage",
+      "readScope": "Read these paragraphs and visible chronology only, not the entire 18pages or cited sources.",
+      "finding": "Morony warns of contradictory accounts, summarizes Mecca 630 and post-632 regional opposition/tribute, dates Yamama 633 and the Bridge 634.",
+      "limits": "These are attributed secondary chronologies. No calendar recalculation, fixed troop counts, local civilian events, river course, bridge location or playable terrain follows."
+    },
+    {
+      "id": "yarshater-selected-year-rows",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/?generate_pdf=1",
+      "title": "Ehsan Yarshater, Chronology of Iranian History Part1, Encyclopaedia Iranica",
+      "locator": "PDF pp.13–14, rows 632,632–34,635,644,644–56,651; compared 644 with dedicated Hormozan entry",
+      "access": "article-passage",
+      "readScope": "Read these year rows and adjacent context, not all 33 pages or their underlying sources.",
+      "finding": "The table gives broad dates but its644 assassin attribution conflicts with the dedicated Hormozan article.",
+      "limits": "Do not treat an entire chronology as certified because one year agrees. This table supplies no surrender terms, tax policy, motives, or independent proof of 651 over 652."
+    },
+    {
+      "id": "shahbazi-hormozan-assassination-distinction",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/hormozan/?generate_pdf=1",
+      "title": "Alireza Shapur Shahbazi, Hormozan, Encyclopaedia Iranica",
+      "locator": "PDF p.2 paragraph on Umar’s assassination and Hormozan’s subsequent killing, with visible citations",
+      "access": "article-passage",
+      "readScope": "Read this paragraph and its citation list, not the cited Baladhori, Tabari or Balami editions.",
+      "finding": "The article names Abu Lo’lo’ as Umar’s assassin and separately reports UbaydAllah’s accusation and killing of Hormozan.",
+      "limits": "A reported accusation does not establish a conspiracy. Neither this reading nor an NPC dramatization verifies every circumstance of either death."
+    },
+    {
+      "id": "lewental-qadesiya-source-criticism",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/qadesiya-battle/",
+      "title": "D. Gershon Lewental, Qadesiya, Battle of, Encyclopaedia Iranica",
+      "locator": "Opening date/force-size paragraphs and historiographic embellishment/topoi discussion",
+      "access": "article-passage",
+      "readScope": "Read these HTML paragraphs, not Lewental’s dissertation, the numismatic study or medieval annals.",
+      "finding": "The entry presents competing chronologies and cautions that storytellers shaped much of the battle narrative.",
+      "limits": "Do not prescribe an exact date, troop totals, storm, hero action or tactical sequence as verified mechanics. No archaeological battlefield footprint is established."
+    },
+    {
+      "id": "baladhuri-yarmuk-translation",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://sourcebooks.web.fordham.edu/source/yarmuk.asp",
+      "title": "Al-Baladhuri, Yarmuk selection, Fordham Medieval Sourcebook; Hitti/Murgotten translation",
+      "locator": "Displayed battle and aftermath selection; source attribution to The Origins of the Islamic State I,207–211",
+      "access": "translated-passage",
+      "readScope": "Read the displayed translated selection and editorial/source notes, not the complete work or Arabic text.",
+      "finding": "The later account narrates a Muslim victory and differing reports about participants and aftermath.",
+      "limits": "Editorial dating and transmitted numbers are not independent battle measurements. Divine causation, speeches, universal welcome and chained troops must not become objective facts or compulsory mechanics. The host restricts commercial reproduction; no passage is copied into production."
+    },
+    {
+      "id": "egypt-two-translated-accounts",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://sourcebooks.web.fordham.edu/source/642Egypt-conq2.asp",
+      "title": "Accounts of the Arab Conquest of Egypt, Fordham Medieval Sourcebook",
+      "locator": "History of the Patriarchs selection; al-Baladhuri selection, including explicit transition to the year25 episode; source notes",
+      "access": "translated-passage",
+      "readScope": "Read the displayed Evetts/Hitti translated selections and editorial notes; not complete works or critical originals.",
+      "finding": "The ecclesiastical and conquest accounts differ; al-Baladhuri separately introduces a later Byzantine return in year25.",
+      "limits": "Do not merge initial conquest and later recapture, harmonize conflicting accounts, validate speeches or make religious polemic objective. Exact dates, headcounts and city geometry need separate review. The hosted electronic form restricts commercial reuse; no translated passage is reproduced."
+    },
+    {
+      "id": "kroger-ctesiphon-passage",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/ctesiphon/?generate_pdf=1",
+      "title": "Jens Kröger, Ctesiphon, Encyclopaedia Iranica",
+      "locator": "PDF p.6 conquest paragraph; pp.2–4 selected topographical cautions and Tigris changes",
+      "access": "article-passage",
+      "readScope": "Read these passages and visible references, not all seven pages or cited chronicles and excavation reports.",
+      "finding": "The summary dates capture to March 637 and describes a complex urban landscape with unresolved identifications and river changes.",
+      "limits": "No exact river crossing, ancient course or playable footprint is verified. Its chronology must be compared with the wider conquest sequence; do not inherit precise dates automatically."
+    },
+    {
+      "id": "schick-jerusalem-summary",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.cambridge.org/core/books/abs/christian-communities-of-palestine-from-byzantine-to-islamic-rule/islamic-conquest-the-mid630s-to-640/75A757E519D6EF48BD198F3BDBAFADC3",
+      "title": "Robert Schick, The Islamic Conquest: the Mid-630s to 640, The Christian Communities of Palestine from Byzantine to Islamic Rule",
+      "locator": "Public chapter summary, The Events of the Conquest; chapter pp.68–84",
+      "access": "summary",
+      "readScope": "Read the publisher-hosted summary and author metadata only; full chapter not accessed.",
+      "finding": "The summary qualifies Jerusalem’s surrender date as perhaps 638.",
+      "limits": "No surrender clauses, authentic document, exact day, religious policy or eyewitness report is established by this summary."
+    },
+    {
+      "id": "kaegi-northern-syria-chronology",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://almuslih.org/wp-content/uploads/Library/Kaegi%2C%20W%20-%20Byzantium.pdf",
+      "title": "Walter E. Kaegi, Byzantium and the Early Islamic Conquests (1992)",
+      "locator": "Printed p.146 (PDF p.159), tentative chronology and note 84; compared printed p.158 (PDF p.171)",
+      "access": "article-passage",
+      "readScope": "Read these pages in a third-party-hosted book copy, not the whole book or its cited primary sources.",
+      "finding": "The tentative chronology places Antioch’s occupation in 638 without further armed resistance; note 84 explicitly calls the chronology controversial.",
+      "limits": "The archived p.158 locator is incorrect for this passage. No invented siege, universal welcome or permanent peace follows. Dates for Damascus/Jerusalem differ from other summaries. Copyrighted book: no PDF or pages are added to the project."
+    },
+    {
+      "id": "osullivan-public-naval-notes",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+      "title": "Shaun O’Sullivan, Sebeos’ account of an Arab attack on Constantinople in 654",
+      "locator": "Public publisher notes 15–16,40–42 and author metadata",
+      "access": "excerpt",
+      "readScope": "Read these accessible notes only; not the full paywalled article, Soli inscription edition or chronicles.",
+      "finding": "The notes compare Cyprus 649/650 and Phoenix 654–655 reports. O’Sullivan treats fleet estimates as plausible in his reconstruction, while reporting Stratos’s objection.",
+      "limits": "Do not attribute Stratos’s rejection to O’Sullivan, adopt fleet/captive totals as exact, certify a 655 garrison location or treat the proposed 654 Constantinople reconstruction as settled."
+    },
+    {
+      "id": "poonawala-medina-crisis-passage",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-23",
+      "url": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "title": "Ismail K. Poonawala, Ali b. Abi Taleb i. Life, Encyclopaedia Iranica",
+      "locator": "PDF pp.3–4, provincial groups in mid-35/656 and mediation/siege paragraphs",
+      "access": "article-passage",
+      "readScope": "Read these paragraphs and visible references; not the full eleven-page article or the cited medieval/modern studies.",
+      "finding": "The summary describes provincial opposition reaching Medina and Ali’s mediation during the crisis before Uthman’s death.",
+      "limits": "Do not turn reconstructed private motives or accusations into omniscient narration, verified culpability or a player assassination objective."
     }
   ],
   "bindings": [
@@ -217,7 +361,15 @@
       "selectionSha256": "2abf10343cd4a8e839c33d6151fd36abbd581f2a42abd1214e63a68a1f90c634",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/8",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "poonawala-expeditions-passage"
+        ],
+        "scopeNote": "The reused expedition paragraph mentions Uhud/Oḥod as transmitted valor narrative.",
+        "corrections": [
+          "It does not independently establish 625, casualties, refuge geometry or the order of battlefield events."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -242,7 +394,15 @@
       "selectionSha256": "2489957ec963813133c6fa5d56999c16536dab4d44f1ee6cb37134036f2129e8",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/10",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "hamidullah-hudaybiyya-passages"
+        ],
+        "scopeNote": "Modern reference location and agreement narrative checked; its prejudicial generalizations are rejected.",
+        "corrections": [
+          "No collective ethnic/religious character or unverifiable quotation becomes objective narration, faction AI or treaty text."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -250,7 +410,15 @@
       "selectionSha256": "c0ce474f6fb4f05355dacb869ad95ca54d0e2be048014e2683c63fea1c4761dd",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/11",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "poonawala-expeditions-passage"
+        ],
+        "scopeNote": "Khaybar appears in the reused expedition paragraph, with heroics framed as legend.",
+        "corrections": [
+          "No independent 628 date or literal door-shield mechanic is established."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -258,7 +426,15 @@
       "selectionSha256": "b632745b51e4186dfc1ad6f06a8d468ee474fbf49ab3911a72ec2b856ab8e7f7",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/12",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "morony-arabia-iraq-passages"
+        ],
+        "scopeNote": "Mecca is contextual background in a conquest-of-Iran synthesis.",
+        "corrections": [
+          "No local civilian incident or exact entry sequence is established."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -266,7 +442,15 @@
       "selectionSha256": "e3e061b173a7bb831a777f2d69a8079b46eaf6745674a6982baccce2a896c843",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/13",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "yarshater-selected-year-rows"
+        ],
+        "scopeNote": "Only broad 632 death/succession rows were checked; table reliability is limited.",
+        "corrections": [
+          "No succession tradition receives objective legitimacy."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -274,7 +458,16 @@
       "selectionSha256": "7108c17b58e19d55e90d766b3c0435071706fc6beaf3e9416cd6dbdcc2915aee",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/14",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "yarshater-selected-year-rows",
+          "morony-arabia-iraq-passages"
+        ],
+        "scopeNote": "Compare broad reign dates with regional opposition and tribute reports.",
+        "corrections": [
+          "The later Ridda label does not prove a single religious motive, tax system or universal apostasy."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -282,7 +475,15 @@
       "selectionSha256": "f97192f352ffa4ad8fb39a2f916f3e2ee4e3691c0873f1cd588a9de3201668b0",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/15",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "morony-arabia-iraq-passages"
+        ],
+        "scopeNote": "The archived Yamama date remains attributed to this synthesis.",
+        "corrections": [
+          "Retain the displayed date disagreement; no silent replacement of canonical chronology."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -290,7 +491,15 @@
       "selectionSha256": "ef14ac2f9b51ef5bdd4f49bb66dda56dbc384ba519f10d18369fbcf328655e06",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/16",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "morony-arabia-iraq-passages"
+        ],
+        "scopeNote": "The Bridge paragraph was checked as a secondary account.",
+        "corrections": [
+          "No modern coordinate, exact bridge or river reconstruction follows."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -298,7 +507,16 @@
       "selectionSha256": "837b5fc452661fc1ea20444fc5a7f6e442a4219190a23995a1303dab95243509",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/17",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "yarshater-selected-year-rows",
+          "kaegi-northern-syria-chronology"
+        ],
+        "scopeNote": "The 635 table row conflicts with Kaegi’s tentative late 636/early 637 surrender chronology.",
+        "corrections": [
+          "Distinguish chronology proposals and source layers before fixing the episode; no treaty clauses follow from either summary."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -306,7 +524,15 @@
       "selectionSha256": "98d51fc1f1fd1a5890b110a99abf17e243e6ae9707640c52ca044434f42a5059",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/18",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "baladhuri-yarmuk-translation"
+        ],
+        "scopeNote": "Later translated narrative checked; editorial dating differs from eyewitness evidence.",
+        "corrections": [
+          "Do not implement transmitted mass casualties, chained soldiers, divine aid or unanimous civilian welcome as verified history."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -314,7 +540,15 @@
       "selectionSha256": "6fee897921f3761246ec044dcaf779526723d07b7dbfddc359becfc7511c9496",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/19",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "lewental-qadesiya-source-criticism"
+        ],
+        "scopeNote": "Competing chronologies and narrative embellishments are explicit.",
+        "corrections": [
+          "The canonical range remains; no exact calendar day or reconstructed army totals are certified."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -322,7 +556,15 @@
       "selectionSha256": "d8725321f003a8a67d077c6f79c51344795e735371c636ad11cbc37fe16a8ebd",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/20",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "kroger-ctesiphon-passage"
+        ],
+        "scopeNote": "Conquest and selected topographical cautions checked as secondary synthesis.",
+        "corrections": [
+          "March637 and the regional campaign sequence require comparison; present river geometry cannot certify ancient crossings."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -330,7 +572,16 @@
       "selectionSha256": "ca5b894a9665d0e7d41da6f0e53182c04cf7aa06de6b9eedc987631771647c11",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/21",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "schick-jerusalem-summary",
+          "kaegi-northern-syria-chronology"
+        ],
+        "scopeNote": "Schick qualifies 638; Kaegi’s tentative chronology uses 637.",
+        "corrections": [
+          "Retain the qualified range and attribution; no exact surrender terms or day are established."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -338,7 +589,15 @@
       "selectionSha256": "e1b0f945ed7c078b7d2517c09476bba8c96277ca4b8270029088632833724e31",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/22",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "kaegi-northern-syria-chronology"
+        ],
+        "scopeNote": "The stated Antioch passage was located in a tentative chronology.",
+        "corrections": [
+          "Correct the archived locator to printed p.146/PDF p.159, not printed p.158; preserve the original audit. No added siege contradicts this source’s absence of further resistance."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -346,7 +605,15 @@
       "selectionSha256": "01a660c781c22da94ef2db8e036361ff58a5c13b0be640cdb731a674cbea7b01",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/23",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "egypt-two-translated-accounts"
+        ],
+        "scopeNote": "The later ecclesiastical account’s Babylon/Fustat passage was read in translation.",
+        "corrections": [
+          "Separate its confessional explanation and retrospective terminology from objective chronology and ancient urban footprints."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -354,7 +621,15 @@
       "selectionSha256": "f7165799939cc5a66684571a627fe7ab0bebf3e819e23018aad86745c045142e",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/24",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "egypt-two-translated-accounts"
+        ],
+        "scopeNote": "The compilation contains distinct initial-conquest and later-return episodes.",
+        "corrections": [
+          "Do not transplant the year 25 Manuwil/Manuel return, wall destruction or captive-taking into a 641/642 mission; compare source layers without harmonizing them."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -362,7 +637,16 @@
       "selectionSha256": "e042451b96de2247bbf65b8c2ef5a73ac6ebe9750d9ec0d612fac2ddbdabac30",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/25",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "yarshater-selected-year-rows",
+          "shahbazi-hormozan-assassination-distinction"
+        ],
+        "scopeNote": "A specific published contradiction was checked, not deferred as mere table detail.",
+        "corrections": [
+          "Do not repeat the chronology’s Hormozan-as-assassin attribution. The dedicated article distinguishes Abu Lo’lo’s assassination of Umar from Hormozan’s subsequent killing; a conspiracy accusation is not proof."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -370,7 +654,15 @@
       "selectionSha256": "5c7544946f9165cc7cbb5f6b482c0a08517835f2d8f9ced498d369d8189432a9",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/26",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "osullivan-public-naval-notes"
+        ],
+        "scopeNote": "Public notes compare attacks rather than certify one uncontested naval chronology.",
+        "corrections": [
+          "Keep 649/650 distinct; no exact landing site, captives, fleet or garrison is verified."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -378,7 +670,15 @@
       "selectionSha256": "2884786cda71ecf5dc7ab6ce4c769d2014e55b57b1050c4a03080821915f9c91",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/27",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "yarshater-selected-year-rows"
+        ],
+        "scopeNote": "Only the table’s 651 entry was read for this episode.",
+        "corrections": [
+          "This does not settle 651/652, circumstances or location of Yazdegerd’s death."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -386,7 +686,15 @@
       "selectionSha256": "a8ea512577521bd7cfaf67883aed2e8c07c2fb8e004e36bb303f563061830c46",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/28",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "osullivan-public-naval-notes"
+        ],
+        "scopeNote": "The notes qualify naval chronology and discuss differing judgments of fleet figures.",
+        "corrections": [
+          "The archived wording obscures the author split: Stratos objects; O’Sullivan finds figures plausible within his reconstruction. Neither supplies certified scenario fleet counts."
+        ]
+      }
     },
     {
       "campaignId": "first-caliphs",
@@ -394,7 +702,15 @@
       "selectionSha256": "ddb961c938206bf796dd25eb73da3da903f4b3b86e94be7af51371f419c2d805",
       "sourceId": "first-caliphs-audit-v2",
       "recordPointer": "/events/29",
-      "architectCheck": null
+      "architectCheck": {
+        "consultationIds": [
+          "poonawala-medina-crisis-passage"
+        ],
+        "scopeNote": "Selected Medina 656 paragraphs read as a modern reconstruction of later reports.",
+        "corrections": [
+          "Retain attributed source layers; no culpability verdict, private omniscience or objective assassination task."
+        ]
+      }
     }
   ]
 }
