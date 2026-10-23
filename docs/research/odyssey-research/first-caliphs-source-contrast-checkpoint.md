@@ -30,3 +30,9 @@ No complete book, translated selection or new image is added to the repository. 
 The earlier [independent crosswalk review](source-crosswalk-independent-review.md) reviews the first component at its recorded candidate and its then-current nine checks. Its dated counts are not evidence for this subsequent batch. This batch needs its own bounded independent review and the official integration gate; no `approve` of the whole S1 is requested.
 
 Still open: Aqaba source access/identity, collation of primary and specialized scholarship where needed, disputed chronology choices, the remaining eight campaigns’ crosswalks, editorial milestones and curves, expanded dossiers, ancient geography, native capabilities and engine calibration. Eighteen readable/failed consultation records do not close any of those gates. MiniMax’s assigned first task remains the technical pilot, subject to live DelendAI status.
+
+## Publication evidence
+
+The implementer’s `bun run validate` on `62a649f` exited 0: 142 tests and 2069 assertions passed, documentation/links were valid and one campaign was checked. Ten focused crosswalk tests also passed. The subsequent [independent report](first-caliphs-source-contrast-independent-review.md) records its own source readings and different validation result; those runs are not interchangeable.
+
+The first official publication attempt against `606a0f4a` was refused by its gate. Installation passed; validation had 140 tests pass and two existing fulfillment tests time out (95 portfolios: 42.19864s against 30s; lifecycle load: 5.69098s against 5s), with 2069 assertions and 68.39s overall. Nothing from this second component landed. The work and review remain preserved in the official unit; no test limit or process in another repository was changed. A later attempt must obtain its own successful official certification before integration can be reported.
