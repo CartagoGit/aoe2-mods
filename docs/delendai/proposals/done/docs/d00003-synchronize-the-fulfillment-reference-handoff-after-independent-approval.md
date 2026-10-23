@@ -2,12 +2,16 @@
 id: d00003
 title: "Synchronize the fulfillment reference handoff after independent approval"
 kind: docs
-status: ready
+status: done
 type: proposal
 track: campaign-design
 date: 2026-10-23
 shipped-in:
   - "634530668e79d327b8e0707a373f3f30924d9359"
+last-transition-id: 8f9937cc-f5ce-408a-be2c-f870f117eb3b
+last-correlation-id: 8f9937cc-f5ce-408a-be2c-f870f117eb3b
+last-transition-from: ready
+last-transition-at: 2026-10-23T07:07:32.125Z
 ---
 
 # d00003 — Synchronize the fulfillment reference handoff after independent approval
