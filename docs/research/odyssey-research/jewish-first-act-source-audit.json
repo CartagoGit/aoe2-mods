@@ -1,0 +1,225 @@
+{
+  "campaignId": "jewish-tradition",
+  "episodes": [
+    {
+      "id": "01-a-city-of-names",
+      "order": 1,
+      "date": "70 CE",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+          "locator": "Josephus, Jewish War 6.4–7; Whiston translation, sections on the siege/fire of the Temple",
+          "consulted": "Read the translated Book VI passage: the Temple burning sequence, the competing roles of Roman soldiers/Jewish defenders, Titus’ reported attempts to restrain the fire, and the date in the translator/editor chronology.",
+          "supports": "Josephus gives a detailed participant-era account of the siege and Temple destruction in 70 CE.",
+          "qualification": "Josephus wrote under Flavian patronage and shapes blame and imperial conduct rhetorically. His account does not establish Titus’ private intent or resolve every detail of how the final fire began. Translation consulted, not Greek critical apparatus."
+        }
+      ],
+      "assessment": "Use as an attributed primary narrative. The Temple’s destruction is supported; causal details and motives should remain attributed to Josephus."
+    },
+    {
+      "id": "02-refuge-and-school-supply-yavneh",
+      "order": 2,
+      "date": "c.70–80 CE (traditional framing; event date not independently fixed)",
+      "sources": [
+        {
+          "url": "https://www.sefaria.org/Mishnah_Rosh_Hashanah.4.1?with=Commentary",
+          "locator": "Mishnah Rosh Hashanah 4:1; Sefaria searchable excerpt",
+          "consulted": "Search-index excerpt states the dispute over sounding the shofar on Shabbat after the Temple’s destruction: one view limits the practice to Yavneh where the court sat; another extends it to Yavneh and any place with a court. Direct page loaded as a JavaScript shell, so the passage was available in search excerpt rather than fully rendered page.",
+          "supports": "A later mishnaic legal memory associates a post-Temple practice and court with Yavneh, while preserving disagreement.",
+          "qualification": "The Mishnah was redacted around 200 CE; not contemporary minutes of a 70 CE event. The text does not establish a single founding council or a precise date."
+        },
+        {
+          "url": "https://www.sefaria.org/Gittin.55b-56b",
+          "locator": "Babylonian Talmud, Gittin 56b; Sefaria searchable excerpt",
+          "consulted": "Search excerpt checked for the story in which Yohanan ben Zakkai asks Vespasian for Yavne and its sages.",
+          "supports": "The later rabbinic story preserves an origin memory linking Yohanan, Vespasian, and Yavne.",
+          "qualification": "This is a much later literary account, not a contemporary record of negotiations in 70 CE; treat the scene as tradition, not verified dialogue."
+        },
+        {
+          "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26592&mag_id=137",
+          "locator": "Israel Antiquities Authority, Tel Yavne Area G6 report, lines 23, 27, 99–101",
+          "consulted": "Read the report’s excavation context and its description of an Early Roman cemetery dated from the late first to mid-second century CE.",
+          "supports": "Archaeological activity/deposits at Yavne in the relevant broad period.",
+          "qualification": "The report concerns a particular salvage-excavation area and cemetery. It does not identify an academy, council, or specific rabbinic institution; failure to identify one here is not proof that none existed."
+        }
+      ],
+      "assessment": "A Yavneh setting is supportable as a tradition about post-Temple scholarly/legal activity, but a one-time institutional foundation or council is not established."
+    },
+    {
+      "id": "03-distributed-study-network-yavneh",
+      "order": 3,
+      "date": "c.80–100 CE (broad editorial range)",
+      "sources": [
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "locator": "Lawrence H. Schiffman, From Text to Tradition excerpt, ‘The Redaction of the Mishnah’, lines 19–30",
+          "consulted": "Read the full displayed excerpt on mishnaic redaction, transmission, and centers including Yavneh, Usha, Beth Shearim, and Sepphoris.",
+          "supports": "A gradual and geographically shifting process of tannaitic transmission; redaction and selection are debated, with the Mishnah redacted around 200 CE.",
+          "qualification": "This is a modern scholarly excerpt, not a contemporary source. It cannot prove a unified Yavneh academy network or map a standardized institutional system to 80–100 CE. The article’s phrasing ‘Yavneh academy’ is itself a modern synthesis."
+        }
+      ],
+      "assessment": "Describe distributed activity and later preservation of traditions cautiously; avoid implying a single, fully organized academy or community-wide settlement."
+    },
+    {
+      "id": "04-witness-comparison-yavneh",
+      "order": 4,
+      "date": "c.90–100 CE as an editorial frame; the cited dispute is not dated/localized by its text",
+      "sources": [
+        {
+          "url": "https://www.posenlibrary.com/entry/scrolls-defile-hands",
+          "locator": "‘Scrolls That Defile the Hands’, lines 29–45; Mishnah Yadayim 3:5 in translation",
+          "consulted": "Read the displayed translation and source note. It dates the Mishnah entry broadly 70–220 and presents named disputes over whether Ecclesiastes and Song of Songs ‘defile the hands’, including a position attributed to Akiva.",
+          "supports": "A later mishnaic text preserves debate over the ritual status of these writings.",
+          "qualification": "This is a ritual purity discussion, not minutes of a canon council. The text does not state it occurred at Yavneh or in 90–100 CE. Named attributions survive through later redaction."
+        },
+        {
+          "url": "https://cojs.org/the_significance_of_yavneh-_pharisees-_rabbis-_and_the_end_of_jewish_sectarianism-_shaye_j-d-_cohen-_hebrew_union_college_annual_55/",
+          "locator": "Shaye J. D. Cohen, ‘The Significance of Yavneh’, displayed excerpt, lines 18 and 105–107",
+          "consulted": "Read excerpt describing the Yavneh origin account as legend and rejecting the idea that canonization began/ended at Yavneh or that one event expelled heretics/books.",
+          "supports": "Modern scholarly caution against treating Yavneh as a single canon-closing synod.",
+          "qualification": "Excerpt only; it does not settle every question about the development of individual scriptural collections."
+        },
+        {
+          "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+          "locator": "Mariusz Rosik, abstract, lines 14–23",
+          "consulted": "Read article metadata and abstract, not full article. Abstract discusses the ‘myth of Jamnia’ and argues that among several conventional claims only exclusion of Christians is supported by its source analysis.",
+          "supports": "Confirms an active scholarly dispute over what, if anything, happened at Jamnia.",
+          "qualification": "Abstract-level access only; do not cite it as if the article’s detailed argument was read. Its abstract’s strong conclusion about exclusion requires assessment against broader scholarship and is not adopted as fact here."
+        }
+      ],
+      "assessment": "Do not locate the Mishnah debate at Yavneh or turn it into a dated council. Traditions about canon and group boundaries accumulated over time."
+    },
+    {
+      "id": "05-fiscal-record-reconciliation-rome-ostia",
+      "order": 5,
+      "date": "96 CE reform context; extant coin example dated 97 CE",
+      "sources": [
+        {
+          "url": "https://lexundria.com/suet_dom/12.2/r",
+          "locator": "Suetonius, Domitian 12.2, J. C. Rolfe translation, displayed lines 3–8",
+          "consulted": "Read passage stating that the Jewish tax was exacted with utmost rigor and describing prosecutions of people living as Jews or concealing their origin to evade payment.",
+          "supports": "A Roman literary source reports harsh Domitianic enforcement of the fiscus Judaicus.",
+          "qualification": "Suetonius is a later Roman biographer, not a tax register. This passage does not establish exact empire-wide compliance rates or Nerva’s subsequent legal wording."
+        },
+        {
+          "url": "https://search.smb.museum/object/obj-2353116",
+          "locator": "Staatliche Museen zu Berlin coin record, displayed lines 35–46 and 60–67",
+          "consulted": "Read object dating (97 CE, Rome) and the coin legend FISCI IVDAICI CALVMNIA SVBLATA; museum description interprets it as removing abuses associated with the tax.",
+          "supports": "A physical coin from 97 CE publicly advertises removal of ‘calumny’ associated with the fiscus Judaicus.",
+          "qualification": "A coin legend demonstrates public messaging, not the detailed legal implementation or abolition of the tax. The museum record’s interpretation is an institutional catalogue description."
+        },
+        {
+          "url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/nerva-the-fiscus-judaicus-and-jewish-identity/F09E1469321C1546ED49B92930850BFD",
+          "locator": "Martin Goodman, ‘Nerva, the Fiscus Judaicus and Jewish Identity’, JRS 79 (1989), abstract/extract lines 453–457",
+          "consulted": "Read the visible abstract/extract: Nerva changed the manner of exaction in 96; coin publicized it; exact meaning of calumnia is unspecified; tax did not cease. Goodman proposes that hidden/private adherents may have been freed from the tax.",
+          "supports": "Scholarly interpretation that reform concerned exaction/abuse rather than abolition.",
+          "qualification": "Only abstract/extract was accessible, not full paper. Goodman’s proposal about concealed identity is explicitly interpretive, not established legal fact. The consulted Berlin object itself is dated 97 CE."
+        }
+      ],
+      "assessment": "Distinguish Domitianic enforcement, Nerva’s advertised reform and the continued tax. Neither abolition nor the exact legal scope is demonstrated by these sources."
+    },
+    {
+      "id": "06-teaching-record-escort-lod",
+      "order": 6,
+      "date": "c.100–132/135 CE; Akiva’s dates and activity chronology remain approximate",
+      "sources": [
+        {
+          "url": "https://www.israeliarchaeology.org/lydda/vol-2-2024/the-sages-group-in-lod-at-its-peak-during-the-yavneh-period-70-132-ce/?lang=en",
+          "locator": "Israeli Archaeology Institute, ‘The Sages Group in Lod…’, 2024, displayed sections on Akiva/Tarfon and Lod; lines around 124–129, 161, 174–199",
+          "consulted": "Read the modern synthesis connecting Akiva and other sages to Lod using Mishnah/Tosefta/Sifrei traditions. The author explicitly marks several reconstructions as possible/probable.",
+          "supports": "A scholarly, qualified case for Lod as a center of rabbinic activity and Akiva’s association with the region in the early second century.",
+          "qualification": "Modern synthesis of later literary sources, not contemporary documentary or excavated proof of a particular school building, meeting, or dated visit."
+        },
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "locator": "Lawrence H. Schiffman excerpt, lines 28–31",
+          "consulted": "Read discussion stating Akiva flourished around 80–132 CE; later tradition and many scholars ascribe the Mishnah’s classification system to him, but responsibility cannot be determined precisely; later work continued at Usha.",
+          "supports": "Broad floruit and cautious account of Akiva’s traditional scholarly role.",
+          "qualification": "Modern overview; ‘academy’ and system attribution are interpretive. It does not independently establish a precise death year or scene."
+        },
+        {
+          "url": "https://www.sefaria.org/Berakhot.61b?with=Tanakh+ConnectionsList",
+          "locator": "Babylonian Talmud, Berakhot 61b; searchable excerpt",
+          "consulted": "Search excerpt checked for the later narrative of Akiva teaching publicly, arrest, and execution under Roman persecution.",
+          "supports": "Evidence for later rabbinic memory of Akiva as teacher and martyr.",
+          "qualification": "The Bavli is centuries later than the events it narrates; it cannot fix Akiva’s exact death date or authenticate private speech. Do not state c.135 as a precisely documented year."
+        }
+      ],
+      "assessment": "Use Akiva as a figure in later rabbinic tradition with a broad early-second-century setting; avoid asserting exact itinerary, death date, or contemporaneous classroom scene."
+    }
+  ],
+  "crossEpisodeCautions": [
+    "Yavneh is attested in later rabbinic memory and modern scholarship as one center among several; sources read here do not substantiate a single founding event or universal council.",
+    "The cited Yadayim debate is not dated or located at Yavneh; do not present c.90–100 as a source-attested meeting date or claim that a council fixed the canon.",
+    "No blanket exclusion of Jews from Jerusalem with a secure date was identified in the first six episodes or sources consulted. Any later claim of a broad city ban needs its own direct passage and careful distinction between access, residence, and legal restrictions.",
+    "Fiscus evidence supports strict Domitianic enforcement and Nerva’s advertised removal of calumnia/abuse, not abolition. Nerva’s exact legal measure and scope are not stated by the coin; the Goodman hypothesis was read only in an abstract/extract.",
+    "Rabbinic corpora preserve named earlier traditions but were compiled/redacted later; distinguish an attributed tannaitic statement from a contemporary verbatim record."
+  ],
+  "sourcesConsulted": [
+    {
+      "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+      "title": "Josephus, Jewish War Book VI, Whiston translation",
+      "consultedScope": "Book VI passages on siege and Temple fire; translated primary narrative."
+    },
+    {
+      "url": "https://www.sefaria.org/Mishnah_Rosh_Hashanah.4.1?with=Commentary",
+      "title": "Mishnah Rosh Hashanah 4:1",
+      "consultedScope": "Search-index passage excerpt; full page rendered as JS shell."
+    },
+    {
+      "url": "https://www.sefaria.org/Gittin.55b-56b",
+      "title": "Babylonian Talmud, Gittin 56b",
+      "consultedScope": "Search-index excerpt for Yavne-and-sages story; later tradition."
+    },
+    {
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26592&mag_id=137",
+      "title": "Israel Antiquities Authority, Tel Yavne Area G6 excavation report",
+      "consultedScope": "Opened report; excavation context and Early Roman cemetery dating."
+    },
+    {
+      "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "title": "Lawrence H. Schiffman, Tannaitic Literature (circa 70–3rd century CE)",
+      "consultedScope": "Full displayed excerpt on redaction, transmission centers, Akiva, and approximate dates."
+    },
+    {
+      "url": "https://www.posenlibrary.com/entry/scrolls-defile-hands",
+      "title": "Scrolls That Defile the Hands",
+      "consultedScope": "Displayed translation/source note for Mishnah Yadayim 3:5."
+    },
+    {
+      "url": "https://cojs.org/the_significance_of_yavneh-_pharisees-_rabbis-_and_the_end_of_jewish_sectarianism-_shaye_j-d-_cohen-_hebrew_union_college_annual_55/",
+      "title": "Shaye J. D. Cohen, The Significance of Yavneh",
+      "consultedScope": "Displayed excerpt only on Yavneh legend and limits of canonization claim."
+    },
+    {
+      "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+      "title": "Mariusz Rosik, The Christian Question in Jamnia Academy at the End of the 1st Century AD?",
+      "consultedScope": "Abstract and metadata only; full article not read."
+    },
+    {
+      "url": "https://lexundria.com/suet_dom/12.2/r",
+      "title": "Suetonius, Domitian 12.2",
+      "consultedScope": "Displayed translation of the Jewish-tax enforcement passage."
+    },
+    {
+      "url": "https://search.smb.museum/object/obj-2353116",
+      "title": "Staatliche Museen zu Berlin coin record, Fisci Judaici calumnia sublata",
+      "consultedScope": "Artifact date, inscription, and museum catalogue interpretation."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/nerva-the-fiscus-judaicus-and-jewish-identity/F09E1469321C1546ED49B92930850BFD",
+      "title": "Martin Goodman, Nerva, the Fiscus Judaicus and Jewish Identity",
+      "consultedScope": "Abstract/extract only; not full paper."
+    },
+    {
+      "url": "https://www.israeliarchaeology.org/lydda/vol-2-2024/the-sages-group-in-lod-at-its-peak-during-the-yavneh-period-70-132-ce/?lang=en",
+      "title": "The Sages Group in Lod at its Peak during the Yavneh Period",
+      "consultedScope": "Modern scholarly synthesis of later rabbinic texts; read sections on Akiva, Tarfon, Lod and interpretive caveats."
+    },
+    {
+      "url": "https://www.sefaria.org/Berakhot.61b?with=Tanakh+ConnectionsList",
+      "title": "Babylonian Talmud, Berakhot 61b",
+      "consultedScope": "Search-index excerpt only for later Akiva martyrdom tradition."
+    }
+  ]
+}

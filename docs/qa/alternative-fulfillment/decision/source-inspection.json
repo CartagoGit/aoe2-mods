@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "classification": "source inspection for architecture decision; not capability implementation or game evidence",
+  "proposal": "i00007",
+  "slice": "S1",
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "baseCommit": "216c033eacf91d003e20340c7d532eea80521e4e",
+  "files": [
+    {
+      "path": "packages/schemas/scenario-capability.schema.ts",
+      "sha256": "c230a5d99f21110cf8db61d041bb5e7d65851d84cd4bd2a26f29656c4b21fd5d",
+      "inspection": "Strict v2 requirements, all-composed objective predicates, fixed accounts/paid flags, route choice requires progress keys and fixed derivation receipts."
+    },
+    {
+      "path": "packages/gameplay-state/capability-action.model.ts",
+      "sha256": "33d65515f26e8c58f9de84ef0d4d94ad70b7a768bf21fa23dc3d7d94f87ce078",
+      "inspection": "Existing action union has pay-main and choose-route; no joint-reserve/cancel/commit-selection action."
+    },
+    {
+      "path": "packages/gameplay-state/resource-accounts.helper.ts",
+      "sha256": "65f435d210d47283ba414375eb62452417b9379d7c10f64666a8cca761e05c1b",
+      "inspection": "Shared normalize/enough/debit/credit resource primitives to reuse."
+    },
+    {
+      "path": "packages/gameplay-state/capability-state.reducer.ts",
+      "sha256": "21db0793280f59150883df8abc198b4e3c13dea5e23676add8c237c6415fc1e3",
+      "inspection": "Current once-only fixed payment, route selection, optional funding and terminal/reference transitions; no reservation escrow."
+    },
+    {
+      "path": "packages/gameplay-state/capability-snapshot.schema.ts",
+      "sha256": "e10b5b16353ef72c411b469e2dd9597968694fe693ffd1366b51f60a553a201f",
+      "inspection": "Strict snapshot-v2 shape: spendable/protected/optional reserve and receipts; no escrow or attempt-qualified plan state."
+    },
+    {
+      "path": "packages/gameplay-state/capability-generation.helper.ts",
+      "sha256": "01394995ab872f75a580c3ac88b0211c019475568fbf7b298d64269ac4e9da0d",
+      "inspection": "Shared causal output eligibility; new selected-attempt receipt integration is required, not already implemented."
+    },
+    {
+      "path": "packages/gameplay-state/live-entity-presence.helper.ts",
+      "sha256": "17faae726fa9c9fd2dc58cc4e0eb9659053ed1ed5b94cdb08c08e16c55ded972",
+      "inspection": "Existing living spatial observation and fresh-generation semantics to preserve."
+    },
+    {
+      "path": "packages/aoe2-adapter/native-campaign.renderer.ts",
+      "sha256": "5725694a956a98d2a8c50134e07fe85a24efaff5e33c2018930b06cf423bddef",
+      "inspection": "Any capabilityProfile is currently rejected before native campaign rendering."
+    },
+    {
+      "path": "tools/python/export_aoe2.py",
+      "sha256": "c63b1859c5d91d7d878806d4710ee5eccb570d58c3f444951c9884d4f4cacaa9",
+      "inspection": "Composed capability profiles explicitly rejected at the Python export boundary."
+    },
+    {
+      "path": "tools/design/finite_allocation.helper.py",
+      "sha256": "0878240a81e94c644c20274fea33ab6bd800275131c45ad7045fa90792254ccb",
+      "inspection": "Independent economic study: budget and optional-prefix enumeration, not selection/reservation runtime."
+    },
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-plan.json",
+      "sha256": "fc990f2f8ee66ad4828568d1a53eac3b6cc324f0a230c4687a6e874e66967b34",
+      "inspection": "Actual candidate costs and profile budgets; no full world/dossier."
+    },
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-audit.json",
+      "sha256": "5c4629e6a53aeef20f6181166f8dae718c9276923250015e3ccb84511ff39aaa",
+      "inspection": "Checked 9/7/3 affordability, not native or escrow behavior."
+    },
+    {
+      "path": "packages/gameplay-state/capability-snapshot.factory.ts",
+      "sha256": "8d28a608aae75f4c1180a06a5581beae2f98fa189396f24cc0c4f07bdad7abe8",
+      "inspection": "Existing snapshot creation/finalization and semantic fingerprint are v2-specific; successor must reuse shared normalization and extend fingerprint coverage without changing v2 hashes."
+    },
+    {
+      "path": "packages/scenario-compiler/capability.compiler.ts",
+      "sha256": "4db60c76ebd3f058548881c2d23c8a320f594e83ec24241263ca613e532839e6",
+      "inspection": "Strict v2 parse/validation/compiler output; future opt-in v3 must be explicit and not leak into existing source."
+    }
+  ],
+  "externalEngineInspection": "None in S1. Actual native input/UI, fractional resource representation, generation and persistence remain S3 evidence requirements.",
+  "publicContractsChanged": false,
+  "nativeImplemented": false,
+  "gameVerified": false
+}

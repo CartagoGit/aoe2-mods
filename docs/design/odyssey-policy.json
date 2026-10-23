@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "status": "278 chronological selections authored; complete episodic dossiers and independent approval pending",
+  "baseline": {
+    "commit": "dec7fc1cfc6fa0472c0d16482877b1e86ac1e88f",
+    "historicalScenarios": 39,
+    "historicalScreens": 950
+  },
+  "reference": {
+    "url": "https://www.ageofempires.com/mods/details/550831",
+    "reportedName": "Bernard Nolan",
+    "reportedScenarioCount": 29,
+    "inspection": "public shell retrieved; Detail API HTTP401; actual scenarios not inspected",
+    "reuseRights": "not established"
+  },
+  "sourceLocale": "en",
+  "requiredLocales": [
+    "en",
+    "es-ES"
+  ],
+  "targetScenarioCount": 278,
+  "campaigns": [
+    {
+      "id": "faith-origins",
+      "targetScenarios": 30,
+      "period": {
+        "earliestYear": 27,
+        "latestYear": 313
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "imperial-church",
+      "targetScenarios": 34,
+      "period": {
+        "earliestYear": 312,
+        "latestYear": 381
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        7,
+        6,
+        9
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "jewish-tradition",
+      "targetScenarios": 30,
+      "period": {
+        "earliestYear": 70,
+        "latestYear": 425
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "church-of-rome",
+      "targetScenarios": 32,
+      "period": {
+        "earliestYear": 337,
+        "latestYear": 800
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "new-rome",
+      "targetScenarios": 32,
+      "period": {
+        "earliestYear": 337,
+        "latestYear": 843
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        7,
+        7
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "first-caliphs",
+      "targetScenarios": 30,
+      "period": {
+        "earliestYear": 610,
+        "latestYear": 656
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "first-fitna",
+      "targetScenarios": 28,
+      "period": {
+        "earliestYear": 656,
+        "latestYear": 661
+      },
+      "actEpisodeTargets": [
+        5,
+        6,
+        6,
+        6,
+        5
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "umayyads",
+      "targetScenarios": 32,
+      "period": {
+        "earliestYear": 661,
+        "latestYear": 750
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        7,
+        7,
+        6
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    },
+    {
+      "id": "house-of-ali",
+      "targetScenarios": 30,
+      "period": {
+        "earliestYear": 656,
+        "latestYear": 680
+      },
+      "actEpisodeTargets": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "minimumAuthoredFields": [
+        "event",
+        "dateRange",
+        "sourcePassages",
+        "historicalOutcome",
+        "geography",
+        "knowledgeBasis",
+        "objectives",
+        "worldContract",
+        "difficulty",
+        "screens",
+        "artDirection",
+        "qa",
+        "secondaryObjectives",
+        "secondaryBudget",
+        "playstyles"
+      ],
+      "status": "selection-authored-full-contract-pending"
+    }
+  ],
+  "qualityRules": {
+    "noInventedBattleForQuota": true,
+    "preserveExistingSemanticIds": true,
+    "repeatMechanicRequiresReason": true,
+    "futureNarrationForbidden": true,
+    "userProgressNeverLocksCampaign": true,
+    "allSecondaryPredicatesRequired": true,
+    "budgetDoesNotProveGameBalance": true,
+    "unavailableCapabilitiesBlockAuthoring": true
+  },
+  "secondaryObjectives": {
+    "minimumPerHistoricalScenario": 6,
+    "maximumPerHistoricalScenario": 8,
+    "minimumDistinctMechanics": 4,
+    "minimumExplicitPlaystyles": 3,
+    "mandatorySolventWithoutAllSideGoals": true,
+    "eachRewardFiniteAndPersistent": true,
+    "sideFailureCannotDefeatMainGoal": true,
+    "disjointReceivingAndObservationZones": true,
+    "historicalOutcomeImmutable": true,
+    "nativeQAStatus": "pending"
+  },
+  "mechanicVarietyPolicy": {
+    "consecutiveCoreMechanicMaximum": 2,
+    "repeatRequiresAuthoredReason": true,
+    "militaryPressureOnlyWithDeclaredHistoricalOrFictionalBasis": true,
+    "peacefulEventMustNotCreateFictionalBattleForQuota": true,
+    "globalSecondaryKindsDoNotCountAsDistinctMissionCore": true,
+    "difficultyChangesPressureAndWindowsNotHistoricalOutcome": true
+  }
+}

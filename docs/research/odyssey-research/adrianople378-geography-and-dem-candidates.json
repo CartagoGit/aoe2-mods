@@ -1,0 +1,142 @@
+{
+  "task": {
+    "episodeId": "32-defeat-and-withdrawal-adrianople",
+    "order": 30,
+    "event": "Adrianople (Hadrianopolis), 378 CE; Valens defeated and killed",
+    "disambiguation": "This is the battle of 378, not the separate Constantine–Licinius battle / Maritsa-Hebrus crossing episode of 324 (episode 09-crossing-and-supply-adrianople). Do not transfer the 324 river-crossing geography to this battle.",
+    "purpose": "Read-only historical geography and modern DEM candidates for architect evaluation. No map design or military layout is proposed."
+  },
+  "geographyAssessment": {
+    "conclusion": "Use Adrianople/Edirne and the surrounding Thracian plain as a regional anchor only. The exact battlefield and Gothic wagon camp are not securely identified by the consulted evidence. Do not label Büyükdöllük, Muratçalı, Demirhanlı, or a coordinate as the certified site or scholarly consensus.",
+    "ammianus": {
+      "source": "Ammianus Marcellinus, Res Gestae 31.12.1-11 and 31.13.1-17; Rolfe translation, LacusCurtius/University of Chicago",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+      "passagesActuallyRead": "31.12.1-11 in full context; 31.13.1-17; especially 31.12.3, 31.12.10-11 and 31.13.8, 31.13.12-17.",
+      "whatItSays": [
+        "At 31.12.3, the Goths are said to be fifteen miles from the city during the days before the engagement, on their way toward the station at Nice. This describes their earlier position, not the battlefield distance.",
+        "At 31.12.4 Valens reaches the vicinity of an Adrianople suburb and camps; at 31.12.10 he leaves baggage near the city walls and the army marches out.",
+        "At 31.12.11 the Latin/Rolfe rendering says the Roman army saw the Gothic wagons at the eighth hour of the day after a long march over rough ground. The Latin expression is temporal (octava tandem hora), not an eight-mile distance. It gives no direction or precise route.",
+        "At 31.13.12-17 Ammianus explicitly reports uncertain and competing accounts of Valens’ death; one account locates a cottage only ‘near by’, not at an identified site."
+      ],
+      "translationCaution": "Yonge’s 1862 translation on Fordham renders the clause as ‘after marching eight miles’. This conflicts with Rolfe’s ‘at the eighth hour’ and the Latin octava tandem hora. Do not turn the Yonge wording into a measured eight-mile battlefield radius. The Fordham webpage was read directly; it labels the translation as Yonge 1862, book XXXI, chs. 12–14.",
+      "fordhamUrl": "https://sourcebooks.web.fordham.edu/source/378adrianople.asp"
+    },
+    "academicAndReferenceLiterature": [
+      {
+        "source": "A. D. Lee, ‘Adrianople, battle of’, The Encyclopedia of Ancient History (first published 2012)",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/9781444338386.wbeah19003",
+        "actuallyRead": "Abstract and relevant battle-description section, webpage lines 54-60.",
+        "finding": "Lee stresses substantial uncertainty in the battle details and that Ammianus’ literary/classicizing purposes make the description unsuitable for confident tactical reconstruction. This supports withholding precise site and tactical claims."
+      },
+      {
+        "source": "Robert Eisenberg, ‘The Battle of Adrianople: A Reappraisal’, Hirundo 8 (2009–10), McGill Classics PDF",
+        "url": "https://www.mcgill.ca/classics/files/classics/2009-10-10.pdf",
+        "actuallyRead": "PDF pages 1-2 (printed pp. 108-109), including the location discussion and its notes.",
+        "finding": "Eisenberg says the ancient sources do not establish an exact site and proposes the Muratçalı area, citing local terrain/spring and an eight-mile reading. This is a proposal, not a confirmed archaeological location or consensus. Its eight-mile premise appears to depend on the Yonge-style translation of octava tandem hora; contrast the Rolfe translation and Latin at Ammianus 31.12.11. Treat the specific proposal as disputed and do not use its distance as settled evidence."
+      },
+      {
+        "source": "A. D. Lee / reference summary as above; current modern site-identification examples",
+        "url": "https://www.livius.org/articles/battle/adrianople/",
+        "actuallyRead": "Entire short article webpage; it is explicitly marked as a stub.",
+        "finding": "Livius places the meeting near Büyükdöllük, about 13 km north of Edirne. This illustrates a different modern pinpoint than Eisenberg’s Muratçalı proposal; Livius labels its article a stub and supplies no archaeological demonstration on the page. Not a consensus claim."
+      },
+      {
+        "source": "Vici.org, ‘Battle of Adrianople in 378’",
+        "url": "https://vici.org/vici/21869/",
+        "actuallyRead": "Entire site record, including its annotation and metadata.",
+        "finding": "The record pins the event to Muratçalı and names Büyükdöllük, but provides no archaeological argument and points users to Livius/Wikipedia. Treat as a modern catalog annotation, not independent battlefield verification. Its annotation is CC BY-SA 3.0; metadata is CC0."
+      },
+      {
+        "source": "Aleš Mučka, ‘Bitva u Adrianopole 378 n. l.’, Auriga (2019), publication record at Masaryk University",
+        "url": "https://is.muni.cz/publication/1569757/en/Bitva-u-Adrianopole-378-n-l/Mucka",
+        "actuallyRead": "Masaryk University publication metadata and abstract only; the linked article PDF was not read.",
+        "finding": "Peer-reviewed article metadata confirms scholarly reassessment of causes and historiography; it does not, in the abstract read, identify an exact battlefield location."
+      }
+    ],
+    "siteCandidatesAndDisputes": [
+      {
+        "candidate": "Regional Adrianople/Edirne and Thracian plain",
+        "status": "Best-supported level of precision in the material consulted; modern city anchor only, no exact ancient footprint asserted."
+      },
+      {
+        "candidate": "Büyükdöllük, north of Edirne (Livius says roughly 13 km)",
+        "status": "Published modern pinpoint, but the consulted short page is a stub without archaeological demonstration. Candidate only."
+      },
+      {
+        "candidate": "Muratçalı area (Eisenberg proposal; Vici pin)",
+        "status": "Scholarly proposal based partly on topographic plausibility and the contested eight-mile reading; not verified."
+      },
+      {
+        "candidate": "Demirhanlı/east of city",
+        "status": "A third location appears in a tertiary summary of competing theories, premised on a due-east march. No primary or specialist source supporting it was read during this task; do not elevate it."
+      }
+    ],
+    "spatialLimits": [
+      "Ammianus supports a march from near the city to the enemy wagon encampment and a battle in open country; his passage does not name a modern village, river crossing, hill, or battlefield coordinate.",
+      "The prior fifteen-mile distance concerns a Goth force before the engagement; the eighth-hour statement is time, not distance.",
+      "No archaeological battlefield survey or excavated 378 battle assemblage was found in the sources read. A precise position remains uncertified in this research."
+    ],
+    "failedOrLimitedAccess": [
+      "No access failure occurred for the cited pages. The Mučka article PDF was not opened; only the university’s publication record and abstract were read.",
+      "A 2024 Byzantina Symmeikta article found in search results concerns the earlier Marcianople conflict (377), not the Adrianople battlefield; it was not used to locate the 378 event."
+    ]
+  },
+  "demCandidate": {
+    "recommendedCandidate": "Copernicus DEM GLO-30 public COG tile covering Edirne and nearby candidate areas",
+    "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E026_00_DEM/Copernicus_DSM_COG_10_N41_00_E026_00_DEM.tif",
+    "tile": "Copernicus_DSM_COG_10_N41_00_E026_00_DEM",
+    "downloadedTo": "Temporary source tile identified by SHA256; project stores only the bounded lossless crop and preview",
+    "downloadedBytes": 46590021,
+    "sha256": "579dddab8eb8c2a6d32aac8cf6dd6737a75d8c92d052cdcb55477441419dc38c",
+    "formatAndDimensions": "Cloud Optimized GeoTIFF (TIFF), DEFLATE compressed, 3600 x 3600 pixels, 32-bit floating point, one 1-degree tile; file command confirmed TIFF and dimensions. It is ~46.6 MB. Original Copernicus DGED/DTED product formats are GeoTIFF/DTED; the public S3 mirror supplies COG GeoTIFF.",
+    "resolution": "GLO-30, 1 arc-second (~30 m at the equator; local east-west ground spacing is smaller at Edirne latitude).",
+    "horizontalCrsDatum": "WGS 84-G1150 geographic coordinates, EPSG:4326, for DGED/DTED delivery per Copernicus Product Handbook.",
+    "verticalDatumAndUnits": "EGM2008, EPSG:3855; metres.",
+    "productNature": "Digital Surface Model (DSM): current reflective surface includes vegetation, buildings and infrastructure; it is not a bare-earth DTM and does not represent the 378 landscape. Copernicus says water bodies are edited/flattened and river flow is made consistent. Use only as a modern topographic reference, not as a historical terrain reconstruction.",
+    "licenseAndAttribution": {
+      "license": "Copernicus GLO-30 public is free for general public use under the Copernicus WorldDEM license and related ESA/Copernicus terms; consult the current license before redistribution.",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "officialDatasetPage": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "requiredSourceNoticeForGLO30": "© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+      "modifiedDataNotice": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+      "sourceProvenance": "Copernicus DEM DGED derived from edited WorldDEM (TanDEM-X); the official product page states local infilling may draw on ASTER, SRTM90/SRTM30/SRTM30plus, GMTED2010, TerraSAR-X, ALOS World 3D, and national DEM sources. Product attributes and license statement read on the Copernicus Data Space page; S3 COG structure/readme read at the public AWS mirror."
+    },
+    "accessConditions": "The official Copernicus Data Space states registered general-public users may view/download GLO-30 and GLO-90, subject to registration and applicable license. This AWS public COG mirror served the tile anonymously at research time; HTTP HEAD returned 200 and 46,590,021 bytes. Access conditions may change.",
+    "verificationSourcesActuallyRead": [
+      {
+        "title": "Copernicus Data Space, Copernicus DEM product page",
+        "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+        "coverage": "Read product type DSM (including buildings/vegetation), resolution, access and license notes, source infill information, format, CRS/datum and quality metadata."
+      },
+      {
+        "title": "AWS public Copernicus DEM COG readme",
+        "url": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+        "coverage": "Read GLO-30 Public access status, Cloud Optimized GeoTIFF format, tile dimensions/organization and license statement. Downloaded only the single Edirne 1-degree tile (~46.6 MB), not a bulk dataset."
+      },
+      {
+        "title": "Copernicus DEM GLO-30 license PDF",
+        "url": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+        "coverage": "License URL identified from official product documentation; PDF text was not independently inspected in this task. Check it before any redistribution."
+      }
+    ],
+    "historicalCaveat": "No DEM, including this recent Copernicus DSM or SRTM, can be treated as the actual land surface, vegetation, hydrology, roads, cultivation, or battlefield conditions of 378. A historian/architect should decide whether modern relief is only a visual regional proxy."
+  },
+  "collector": "gpt-6-luna",
+  "date": "2026-10-17",
+  "architectFollowup": {
+    "author": "gpt-6",
+    "date": "2026-10-17",
+    "directReading": "Root read selected Ammianus31.12.3/10–11 in Rolfe and Latin temporal phrase, and the short Fordham/Yonge rendering. Root read complete GLO-30licence, AWSreadme and official product metadata.",
+    "notReadByArchitect": "Eisenberg PDF, Lee reference entry, Livius/Vici/Mučka texts were not independently read in this follow-up; preserve collector scopes and caveats. The proposed dependency of an eight-mile premise is a hypothesis, not proof about an author’s translation choice.",
+    "decision": "No eight-mile or fifteen-mile battlefield ring. Import a modern regional DSM crop and visual preview only, not a selected exact battlefield or authored378mission map.",
+    "localData": "edirne-modern-dsm-processing.json",
+    "historicalOrNativeApproval": false,
+    "latinTranscriptionCorrection": {
+      "originalCollectionPhrase": "ad octavam",
+      "directlyReadPhrase": "octava tandem hora",
+      "locator": "Ammianus31.12.11Latin LacusCurtius",
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Ammian/31%2A.html",
+      "consequence": "Temporal reading remains valid, but the collector’s supposed exact Latin phrase was not the wording actually displayed. No eight-mile distance follows."
+    }
+  }
+}
