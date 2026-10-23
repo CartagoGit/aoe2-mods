@@ -87,19 +87,26 @@ export function validateAlternativeFulfillment(
       add(`Duplicate recipient in ${recipe.id}`);
     const source = zones.get(recipe.workZoneId);
     const reception = zones.get(recipe.receptionZoneId);
-    if (!source || !reception || source.id === reception.id)
-      add(`Work and reception must use distinct declared zones: ${recipe.id}`);
-    if (
-      source &&
-      reception &&
-      source.hub === reception.hub &&
-      Math.hypot(
-        source.offsetTiles[0] - reception.offsetTiles[0],
-        source.offsetTiles[1] - reception.offsetTiles[1],
-      ) <=
-        source.radiusTiles + reception.radiusTiles
-    )
-      add(`Work and reception footprints overlap: ${recipe.id}`);
+    if (!source || !reception)
+      add(`Work and reception must use declared zones: ${recipe.id}`);
+    if (!source) continue;
+    for (const destinationId of new Set(
+      recipes.map((item) => item.receptionZoneId),
+    )) {
+      const destination = zones.get(destinationId);
+      if (!destination) continue;
+      if (source.id === destination.id)
+        add(`Work must be distinct from every reception: ${recipe.id}`);
+      else if (
+        source.hub === destination.hub &&
+        Math.hypot(
+          source.offsetTiles[0] - destination.offsetTiles[0],
+          source.offsetTiles[1] - destination.offsetTiles[1],
+        ) <=
+          source.radiusTiles + destination.radiusTiles
+      )
+        add(`Work and reception footprints overlap: ${recipe.id}`);
+    }
   }
   for (const resource of RESOURCES) {
     const maximum = plan.services.reduce(

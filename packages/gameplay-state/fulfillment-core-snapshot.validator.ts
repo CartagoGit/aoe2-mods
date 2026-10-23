@@ -56,8 +56,10 @@ export function validateFulfillmentCore(
     fail("secondary membership");
   subset(Object.keys(core.secondaryStates), sides, "secondary identity");
   if (
-    core.terminal &&
-    Object.values(core.secondaryStates).includes("available")
+    (core.terminal &&
+      Object.values(core.secondaryStates).includes("available")) ||
+    (!core.terminal &&
+      Object.values(core.secondaryStates).includes("closed-at-terminal"))
   )
     fail("terminal optional lifecycle");
   subset(

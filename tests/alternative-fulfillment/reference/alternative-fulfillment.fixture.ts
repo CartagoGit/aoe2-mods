@@ -106,7 +106,11 @@ const normativeMatrix = JSON.parse(
   initialOptionalRewardReserve: Record<string, number>;
   optionalMechanics: Record<
     string,
-    { kind: string; cost: Record<string, number>; reward: Record<string, number> }
+    {
+      kind: string;
+      cost: Record<string, number>;
+      reward: Record<string, number>;
+    }
   >;
 };
 const resources = (source: Record<string, number>) => ({
@@ -375,8 +379,10 @@ export function makeFulfillmentProfile(): CapabilityProfileV3 {
       requirement.kind === "entity-state" &&
       requirement.id === "first-receipt"
     ) {
-      requirement.entities = [fixtureIds.mealWorker];
-      requirement.destinations = { [fixtureIds.mealWorker]: "store-1" };
+      requirement.entities = [fixtureIds.mealRecipient];
+      requirement.destinations = {
+        [fixtureIds.mealRecipient]: zoneIds.mealReception,
+      };
     }
     if (requirement.kind === "current-entity-presence") {
       requirement.entities = [fixtureIds.mealRecipient];
