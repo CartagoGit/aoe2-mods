@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
+import { renderNativeCampaign } from "../../../packages/aoe2-adapter/native-campaign.renderer";
 import { canonical, hash } from "../../../packages/core/serialization.helper";
 import {
   capabilityFingerprint,
@@ -16,11 +17,13 @@ import {
   reduceFulfillmentState,
 } from "../../../packages/gameplay-state/fulfillment-state.reducer";
 import { validateScenarioCapability } from "../../../packages/gameplay-validation/scenario-capability.validator";
+import type { StringLock } from "../../../packages/localization/localization.catalog";
 import { compileCapabilityProfile } from "../../../packages/scenario-compiler/capability.compiler";
 import {
   capabilityProfileV3Schema,
   sharedCapabilityProfile,
 } from "../../../packages/schemas/alternative-fulfillment.schema";
+import type { Campaign } from "../../../packages/schemas/campaign.schema";
 import { makeProfile } from "../../unit/checkpoint-presence.fixture";
 import {
   accountsFor as accounts,
@@ -29,7 +32,6 @@ import {
   fixtureIds,
   fulfillmentCommand,
   liveBatch,
-  mainOriginalIds,
   makeFulfillmentProfile,
   outputIds,
   recipeIds,
@@ -115,6 +117,41 @@ const matrixOptionalIds: Record<string, string> = {
   "service-observation": "fulfillment-fixture.optional-6",
   "damaged-civilian-store": "fulfillment-fixture.optional-7",
 };
+
+function required<T>(value: T | undefined): T {
+  if (value === undefined)
+    throw new Error("Missing required reference fixture value");
+  return value;
+}
+
+function selectedRecipeFor(
+  profile: ReturnType<typeof makeFulfillmentProfile>,
+  selected: ReturnType<typeof selection>[number],
+) {
+  const service = required(
+    profile.fulfillmentPlan.services.find(
+      (item) => item.id === selected.serviceId,
+    ),
+  );
+  return required(
+    service.recipes.find((item) => item.id === selected.recipeId),
+  );
+}
+
+function finalPositionsFor(
+  profile: ReturnType<typeof makeFulfillmentProfile>,
+  planSelection: ReturnType<typeof selection>,
+) {
+  return Object.fromEntries(
+    planSelection.flatMap((selected) => {
+      const recipe = selectedRecipeFor(profile, selected);
+      return [recipe.outputEntityId, ...recipe.recipientIds].map((id) => [
+        id,
+        recipe.receptionZoneId,
+      ]);
+    }),
+  );
+}
 
 const resourceKey = (resources: Record<string, number>) =>
   [resources.food, resources.wood, resources.gold, resources.stone].join(":");
@@ -227,7 +264,7 @@ function completeSelectedPlan(
   context: ReturnType<typeof enterFulfillment>["context"],
   planSelection: ReturnType<typeof selection>,
   attempt: number,
-  terminalApi: "enter-phase" | "tick",
+  terminalApi: "enter-phase" | "tick" | "none",
 ) {
   let state = initial;
   for (const selected of planSelection) {
@@ -255,34 +292,12 @@ function completeSelectedPlan(
     if (!state.active?.completedServices.includes(service.id))
       throw new Error(`Selected service did not complete: ${service.id}`);
   }
-  const finalPositions = {
-    [fixtureIds.mealWorker]: "store-1",
-    [fixtureIds.mealRecipient]: zoneIds.mealReception,
-    ...Object.fromEntries(
-      planSelection.map((selected) => {
-        const recipe = profile.fulfillmentPlan.services
-          .find((service) => service.id === selected.serviceId)
-          ?.recipes.find((item) => item.id === selected.recipeId);
-        return [recipe?.outputEntityId ?? "", recipe?.receptionZoneId ?? ""];
-      }),
-    ),
-    ...Object.fromEntries(
-      planSelection.flatMap((selected) => {
-        const recipe = profile.fulfillmentPlan.services
-          .find((service) => service.id === selected.serviceId)
-          ?.recipes.find((item) => item.id === selected.recipeId);
-        return (recipe?.recipientIds ?? []).map((id) => [
-          id,
-          recipe?.receptionZoneId ?? "",
-        ]);
-      }),
-    ),
-  };
+  const finalPositions = finalPositionsFor(profile, planSelection);
   state = dispatch(profile, state, context, "shared", {
     action: {
       type: "record-arrival",
-      entityId: fixtureIds.mealWorker,
-      zoneId: "store-1",
+      entityId: fixtureIds.mealRecipient,
+      zoneId: zoneIds.mealReception,
     },
     positions: finalPositions,
   });
@@ -292,6 +307,7 @@ function completeSelectedPlan(
   });
   if (!state.core.objectiveLatches.includes("return"))
     throw new Error("Final current-presence objective did not latch");
+  if (terminalApi === "none") return state;
   state = dispatch(profile, state, context, "shared", {
     action:
       terminalApi === "enter-phase"
@@ -677,8 +693,8 @@ describe("alternative fulfillment reference fixture", () => {
     state = dispatch(profile, state, context, "shared", {
       action: {
         type: "record-arrival",
-        entityId: mainOriginalIds[0],
-        zoneId: "store-1",
+        entityId: fixtureIds.mealRecipient,
+        zoneId: zoneIds.mealReception,
       },
       positions,
     });
@@ -781,6 +797,16 @@ describe("alternative fulfillment reference fixture", () => {
     const profile = makeFulfillmentProfile();
     const valid = createSnapshot(profile, "standard");
     const invalidSnapshots = [
+      {
+        ...valid,
+        core: {
+          ...valid.core,
+          secondaryStates: {
+            ...valid.core.secondaryStates,
+            [required(profile.secondaryObjectives[0]).id]: "closed-at-terminal",
+          },
+        },
+      },
       { ...valid, core: { ...valid.core, phase: "unknown-phase" } },
       {
         ...valid,
@@ -1121,8 +1147,8 @@ describe("alternative fulfillment reference fixture", () => {
     active = dispatch(profile, active, second.context, "shared", {
       action: {
         type: "record-arrival",
-        entityId: fixtureIds.mealWorker,
-        zoneId: "store-1",
+        entityId: fixtureIds.mealRecipient,
+        zoneId: zoneIds.mealReception,
       },
       positions: finalPositions,
     });
@@ -1201,6 +1227,16 @@ describe("alternative fulfillment reference fixture", () => {
   test("selection and recipe validation reject partial, duplicate, mixed, unknown, and unsafe plans atomically", () => {
     const profile = makeFulfillmentProfile();
     const malformedSelections = [
+      [
+        {
+          serviceId: fixtureIds.mealService,
+          recipeId: recipeIds.shelterMaterials,
+        },
+        {
+          serviceId: fixtureIds.shelterService,
+          recipeId: recipeIds.shelterMaterials,
+        },
+      ],
       [{ serviceId: fixtureIds.mealService, recipeId: recipeIds.mealDirect }],
       [
         { serviceId: fixtureIds.mealService, recipeId: recipeIds.mealDirect },
@@ -1429,6 +1465,32 @@ describe("alternative fulfillment reference fixture", () => {
 
   test("schema and scenario validation enforce plan bounds, distinct workers, and acyclic generation inputs", () => {
     const base = makeFulfillmentProfile();
+    for (const overlapById of [true, false]) {
+      const overlapping = structuredClone(base);
+      const meal = required(
+        required(overlapping.fulfillmentPlan.services[0]).recipes[0],
+      );
+      const court = required(
+        overlapping.worldContract.zones.find(
+          (zone) => zone.id === zoneIds.materialsCourt,
+        ),
+      );
+      if (overlapById) meal.workZoneId = court.id;
+      else {
+        const work = required(
+          overlapping.worldContract.zones.find(
+            (zone) => zone.id === meal.workZoneId,
+          ),
+        );
+        work.hub = court.hub;
+        work.offsetTiles = [...court.offsetTiles];
+      }
+      expect(
+        validateScenarioCapability(overlapping).some(
+          (item) => item.code === "fulfillment.contract",
+        ),
+      ).toBe(true);
+    }
     const overServices = structuredClone(base);
     overServices.fulfillmentPlan.services = Array.from(
       { length: 9 },
@@ -1436,7 +1498,9 @@ describe("alternative fulfillment reference fixture", () => {
         id: `service-${i}`,
         recipes: [
           {
-            ...structuredClone(base.fulfillmentPlan.services[0]!.recipes[0]!),
+            ...structuredClone(
+              required(required(base.fulfillmentPlan.services[0]).recipes[0]),
+            ),
             id: `recipe-${i}`,
             workerId: fixtureIds.mealWorker,
             outputEntityId: outputIds.mealDirect,
@@ -1448,10 +1512,12 @@ describe("alternative fulfillment reference fixture", () => {
       false,
     );
     const overRecipes = structuredClone(base);
-    overRecipes.fulfillmentPlan.services[0]!.recipes = Array.from(
+    required(overRecipes.fulfillmentPlan.services[0]).recipes = Array.from(
       { length: 9 },
       (_, i) => ({
-        ...structuredClone(base.fulfillmentPlan.services[0]!.recipes[0]!),
+        ...structuredClone(
+          required(required(base.fulfillmentPlan.services[0]).recipes[0]),
+        ),
         id: `meal-recipe-${i}`,
       }),
     );
@@ -1460,15 +1526,16 @@ describe("alternative fulfillment reference fixture", () => {
     );
 
     const sharedWorker = structuredClone(base);
-    sharedWorker.fulfillmentPlan.services[1]!.recipes[0]!.workerId =
-      fixtureIds.mealWorker;
+    required(
+      required(sharedWorker.fulfillmentPlan.services[1]).recipes[0],
+    ).workerId = fixtureIds.mealWorker;
     expect(
       validateScenarioCapability(sharedWorker).some(
         (item) => item.code === "fulfillment.contract",
       ),
     ).toBe(true);
     const cycle = structuredClone(base);
-    cycle.fulfillmentPlan.services[0]!.recipes[0]!.workerId =
+    required(required(cycle.fulfillmentPlan.services[0]).recipes[0]).workerId =
       outputIds.mealDirect;
     expect(
       validateScenarioCapability(cycle).some(
@@ -1551,6 +1618,7 @@ describe("alternative fulfillment reference fixture", () => {
       recipeId: recipeIds.mealDirect,
       positions: { [fixtureIds.mealWorker]: zoneIds.mealDirectSource },
     });
+    checkpoints.push(state);
     state = dispatch(profile, state, context, "generate-output", {
       attempt: 2,
       revision: state.revision,
@@ -1569,6 +1637,23 @@ describe("alternative fulfillment reference fixture", () => {
       },
     });
     checkpoints.push(state);
+    state = completeSelectedPlan(
+      profile,
+      state,
+      context,
+      selection(),
+      2,
+      "none",
+    );
+    checkpoints.push(state);
+    checkpoints.push(
+      completeSelectedPlan(profile, state, context, selection(), 2, "tick"),
+    );
+    checkpoints.push(
+      dispatch(profile, required(checkpoints[1]), context, "observe", {
+        dead: [fixtureIds.mealRecipient],
+      }),
+    );
     for (const checkpoint of checkpoints) {
       const loaded = loadFulfillmentSnapshot(profile, checkpoint);
       expect(loaded.snapshot).toEqual(checkpoint);
@@ -1580,20 +1665,109 @@ describe("alternative fulfillment reference fixture", () => {
         loaded.inputContext,
       );
       expect(staleReplay).toEqual(loaded.snapshot);
+      let resumed = loaded.snapshot;
+      const newContext = loaded.inputContext;
+      if (resumed.core.terminal) {
+        expect(
+          dispatch(profile, resumed, newContext, "cancel", {
+            attempt: resumed.attemptCounter,
+            revision: resumed.revision,
+          }),
+        ).toEqual(resumed);
+        expect(
+          dispatch(profile, resumed, newContext, "shared", {
+            action: { type: "enter-phase", phase: "victory", nowSeconds: 0 },
+          }),
+        ).toEqual(resumed);
+        continue;
+      }
+      if (!resumed.active) {
+        resumed = dispatch(profile, resumed, newContext, "reserve", {
+          attempt: resumed.attemptCounter + 1,
+          revision: resumed.revision,
+          selection: selection(),
+          expectedSpendable: resumed.core.spendable,
+        });
+      }
+      const active = required(resumed.active ?? undefined);
+      const beforeReplay = resumed;
+      resumed = dispatch(profile, resumed, newContext, "reserve", {
+        attempt: resumed.attemptCounter + 1,
+        revision: resumed.revision,
+        selection: selection(),
+        expectedSpendable: resumed.core.spendable,
+      });
+      expect(resumed.core.spendable).toEqual(beforeReplay.core.spendable);
+      expect(resumed.escrow).toEqual(beforeReplay.escrow);
+      expect(resumed.attemptCounter).toBe(beforeReplay.attemptCounter);
+      resumed = dispatch(profile, resumed, newContext, "commit", {
+        attempt: active.attempt,
+        revision: resumed.revision,
+      });
+      const paid = resumed;
+      resumed = dispatch(profile, resumed, newContext, "commit", {
+        attempt: active.attempt,
+        revision: resumed.revision,
+      });
+      expect(resumed.committedExpenditure).toEqual(paid.committedExpenditure);
+      expect(resumed.core.spendable).toEqual(paid.core.spendable);
+      expect(resumed.revision).toBe(paid.revision);
+      resumed = completeSelectedPlan(
+        profile,
+        resumed,
+        newContext,
+        selection(),
+        active.attempt,
+        "none",
+      );
+      const completed = resumed;
+      resumed = dispatch(profile, resumed, newContext, "generate-output", {
+        attempt: active.attempt,
+        revision: resumed.revision,
+        serviceId: fixtureIds.mealService,
+        recipeId: recipeIds.mealDirect,
+        positions: finalPositionsFor(profile, selection()),
+      });
+      expect(resumed.active?.generated).toEqual(completed.active?.generated);
+      expect(resumed.active?.generated.length).toBe(2);
+      expect(resumed.committedExpenditure).toEqual(paid.committedExpenditure);
+      resumed = completeSelectedPlan(
+        profile,
+        resumed,
+        newContext,
+        selection(),
+        active.attempt,
+        "tick",
+      );
+      expect(resumed.core.terminal).toBe("victory");
+      expect(loadFulfillmentSnapshot(profile, resumed).snapshot).toEqual(
+        resumed,
+      );
     }
+    for (const schemaVersion of [2, 4])
+      expect(() =>
+        loadFulfillmentSnapshot(profile, { ...initial, schemaVersion }),
+      ).toThrow();
+    const badShares = structuredClone(required(checkpoints[3]));
+    if (!badShares.active) throw new Error("Missing committed checkpoint");
+    badShares.active.committedShares = [];
+    expect(() => loadFulfillmentSnapshot(profile, badShares)).toThrow();
     const badEscrow = {
-      ...checkpoints[1]!,
+      ...required(checkpoints[1]),
       escrow: { food: 0, wood: 0, gold: 0, stone: 0 },
     };
     expect(() => loadFulfillmentSnapshot(profile, badEscrow)).toThrow();
     const changedCost = structuredClone(profile);
-    changedCost.fulfillmentPlan.services[0]!.recipes[0]!.cost.food += 1;
+    required(
+      required(changedCost.fulfillmentPlan.services[0]).recipes[0],
+    ).cost.food += 1;
     expect(() =>
       loadFulfillmentSnapshot(changedCost, checkpoints[1]),
     ).toThrow();
     const changedDestination = structuredClone(profile);
-    changedDestination.fulfillmentPlan.services[0]!
-      .recipes[0]!.receptionZoneId = zoneIds.materialsCourt;
+    required(
+      required(changedDestination.fulfillmentPlan.services[0]).recipes[0],
+    ).receptionZoneId = zoneIds.materialsCourt;
     expect(() =>
       loadFulfillmentSnapshot(changedDestination, checkpoints[1]),
     ).toThrow();
@@ -1602,6 +1776,125 @@ describe("alternative fulfillment reference fixture", () => {
     expect(capabilityProfileV3Schema.safeParse(changedVersion).success).toBe(
       false,
     );
+  });
+
+  test("native renderer rejects the opt-in v3 profile before opening templates or writing artifacts", async () => {
+    const campaign = {
+      id: "test-campaign",
+      scenarios: [{ capabilityProfile: makeFulfillmentProfile() }],
+    } as Campaign;
+    await expect(
+      renderNativeCampaign(
+        "/missing",
+        campaign,
+        { ids: {} } as StringLock,
+        "/unused",
+      ),
+    ).rejects.toThrow("capability-not-implemented");
+  });
+
+  test("fresh output or recipient death in the victory batch wins both terminal races", () => {
+    const profile = makeFulfillmentProfile();
+    for (const terminalApi of ["enter-phase", "tick"] as const) {
+      for (const victim of [
+        outputIds.mealDirect,
+        outputIds.shelterMaterials,
+        fixtureIds.mealRecipient,
+        fixtureIds.householdB,
+      ]) {
+        const { state: initial, context } = enterFulfillment(profile);
+        let state = dispatch(profile, initial, context, "reserve", {
+          attempt: 1,
+          revision: 0,
+          selection: selection(),
+          expectedSpendable: initial.core.spendable,
+        });
+        state = dispatch(profile, state, context, "commit", {
+          attempt: 1,
+          revision: state.revision,
+        });
+        state = completeSelectedPlan(
+          profile,
+          state,
+          context,
+          selection(),
+          1,
+          "none",
+        );
+        expect(state.core.terminal).toBeNull();
+        expect(state.core.objectiveLatches).toContain("return");
+        const defeated = dispatch(profile, state, context, "shared", {
+          action:
+            terminalApi === "enter-phase"
+              ? { type: "enter-phase", phase: "victory", nowSeconds: 0 }
+              : {
+                  type: "tick",
+                  nowSeconds: 0,
+                  difficulty: "standard",
+                  defeatConditions: [],
+                  victoryConditions: ["return"],
+                },
+          positions: finalPositionsFor(profile, selection()),
+          dead: [victim],
+        });
+        expect(defeated.core.terminal).toBe("defeat");
+        expect(defeated.committedExpenditure).toEqual(
+          state.committedExpenditure,
+        );
+        expect(defeated.core.spendable).toEqual(state.core.spendable);
+        expect(defeated.active?.generated).toEqual(state.active?.generated);
+        const loaded = loadFulfillmentSnapshot(profile, defeated);
+        expect(
+          dispatch(profile, loaded.snapshot, loaded.inputContext, "shared", {
+            action: { type: "enter-phase", phase: "victory", nowSeconds: 0 },
+            positions: finalPositionsFor(profile, selection()),
+          }),
+        ).toEqual(defeated);
+      }
+    }
+  });
+
+  test("losing a worker after recorded work preserves its output and allows the actual recipients to win", () => {
+    const profile = makeFulfillmentProfile();
+    const { state: initial, context } = enterFulfillment(profile);
+    let state = dispatch(profile, initial, context, "reserve", {
+      attempt: 1,
+      revision: 0,
+      selection: selection(),
+      expectedSpendable: initial.core.spendable,
+    });
+    state = dispatch(profile, state, context, "commit", {
+      attempt: 1,
+      revision: state.revision,
+    });
+    state = dispatch(profile, state, context, "depart-for-work", {
+      attempt: 1,
+      revision: state.revision,
+      serviceId: fixtureIds.mealService,
+      recipeId: recipeIds.mealDirect,
+    });
+    state = dispatch(profile, state, context, "record-work", {
+      attempt: 1,
+      revision: state.revision,
+      serviceId: fixtureIds.mealService,
+      recipeId: recipeIds.mealDirect,
+      positions: { [fixtureIds.mealWorker]: zoneIds.mealDirectSource },
+    });
+    state = dispatch(profile, state, context, "observe", {
+      dead: [fixtureIds.mealWorker],
+    });
+    expect(state.core.terminal).toBeNull();
+    state = completeSelectedPlan(
+      profile,
+      state,
+      context,
+      selection(),
+      1,
+      "tick",
+    );
+    expect(state.core.entityStates[fixtureIds.mealWorker]).toBe("destroyed");
+    expect(state.core.terminal).toBe("victory");
+    expect(loadFulfillmentSnapshot(profile, state).snapshot).toEqual(state);
   });
 
   test("generated output or recipient loss defeats before either victory API, while optional-only loss gives no reward", () => {
@@ -1693,10 +1986,14 @@ describe("alternative fulfillment reference fixture", () => {
         attempt: 1,
         revision: state.revision,
       });
-      const service = profile.fulfillmentPlan.services.find(
-        (item) => item.id === fixtureIds.shelterService,
-      )!;
-      const recipe = service.recipes.find((item) => item.id === recipeId)!;
+      const service = required(
+        profile.fulfillmentPlan.services.find(
+          (item) => item.id === fixtureIds.shelterService,
+        ),
+      );
+      const recipe = required(
+        service.recipes.find((item) => item.id === recipeId),
+      );
       state = dispatch(profile, state, context, "depart-for-work", {
         attempt: 1,
         revision: state.revision,
