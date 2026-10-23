@@ -34,3 +34,12 @@ Los 215 episodios sin dossier no se usan por sí solos para declarar fallida est
 `python3 tools/design/test_design.py` pasa 68 pruebas, incluidas las dos regresiones nuevas; `python3 tools/design/odyssey_render.script.py --check` conserva nueve campañas y 278 selecciones, sin regenerar dossiers. La primera validación completa detectó correctamente que la política nueva invalidaba el fingerprint de la auditoría cívica. Se regeneró mediante su comando existente, con autor y fecha reales; el diff cambia únicamente fecha y hash de la política. Sus 63 dossiers y 54 candidatos a riesgo permanecen iguales. Esa actualización no corrige ni aprueba esos riesgos.
 
 La integración del componente requiere el gate completo y una revisión independiente acotada. No se solicita `approve` del slice S1 entero por corregir su distribución de actos; el contraste histórico y la revisión editorial descritos arriba siguen pendientes.
+
+
+## Cruce de consultas — continuación del 23 de octubre
+
+El [informe reproducible de consultas](source-consultation-crosswalk.md) comienza a cubrir la brecha de vínculo por selección. Añade 30 registros de la auditoría islámica existente mediante identidades semánticas y punteros exactos; las cifras anteriores de anotaciones dentro de los JSON de campaña no cambian. El registro lateral conserva las selecciones sin modificarlas y distingue la declaración archivada de la consulta nueva del arquitecto.
+
+Se registran ocho comprobaciones acotadas: seis con texto accesible y dos cuyo repositorio solo mostró una barrera de JavaScript. Otros 22 registros enlazados no tienen lectura nueva del arquitecto. Se corrige una atribución bibliográfica y se muestran las discordancias del archivo original; no se afirma resolver por ello las fechas, la geografía ni las condiciones de ninguno de los 30 escenarios. Los nombres y rangos de campaña permanecen intactos.
+
+S1 continúa pendiente. La validez del cruce es integridad de investigación, no aprobación histórica: faltan extenderlo al resto de selecciones y contrastar sus afirmaciones, además del juicio editorial de hitos y curvas. Ningún contador de enlaces levanta gates de autoría, motor o nivelación.

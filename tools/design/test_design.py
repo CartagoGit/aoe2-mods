@@ -12,9 +12,26 @@ from pathlib import Path
 from geography import clip_segment, tile_point
 from verify import ROOT, verify
 from test_civic_difficulty_audit import CivicDifficultyAuditTests
+from test_research_crosswalk import ResearchCrosswalkTests
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_source_crosswalk_claims_cannot_bypass_global_documentation_gate(self):
+        original_read = Path.read_text
+
+        def false_approval(path, *args, **kwargs):
+            text = original_read(path, *args, **kwargs)
+            if path == ROOT / 'docs/research/odyssey-research/source-consultation-crosswalk.json':
+                data = json.loads(text)
+                data['historicalApproval'] = True
+                return json.dumps(data)
+            return text
+
+        with patch.object(Path, 'read_text', false_approval):
+            errors, counts = verify()
+        self.assertTrue(any('Research crosswalk:' in error for error in errors))
+        self.assertEqual(counts['expandedApprovedDossiers'], 0)
+
     def test_scope_prose_cannot_disable_expanded_assignment_and_voice_audits(self):
         original_read = Path.read_text
 
