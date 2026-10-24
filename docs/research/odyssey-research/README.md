@@ -162,3 +162,5 @@ Las [fichas editoriales de los 45 actos](act-editorial-review.md), con [registro
 - [Siete contrastes acotados del arquitecto](ali-family-architect-source-contrast.md), separados de la declaración del recopilador: cronologías, arbitrajes, retirada, cautivos, memoria religiosa y límites de diálogo. Conservan hashes de ambas recopilaciones.
 
 Estos archivos no amplían silenciosamente el cruce normalizado de consultas: este sigue enlazando 30 selecciones de first-caliphs, con dos accesos de Aqaba fallidos. Las 58 selecciones de las dos nuevas recopilaciones no son 58 hechos aprobados. Falta completar los vínculos y decisiones históricos de S1; los 63 borradores, 215 selecciones sin dossier y 54 candidatos estáticos a riesgo cívico no cambian.
+
+La revisión independiente de este componente detectó 21 localizadores de First Fitna con páginas inconsistentes. El arquitecto comprobó las transiciones del PDF oficial y conserva [la corrección explícita](ali-family-architect-source-contrast.md#pagination-correction-after-independent-review), junto al localizador archivado: no se reescriben los bytes ni la declaración original de Luna.
