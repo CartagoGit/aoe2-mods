@@ -9,21 +9,13 @@ from itertools import product
 import hashlib
 import json
 
-from secondary import COSTS, RESOURCES, REWARDS
+from secondary import COSTS, RESOURCES, REWARDS, resource_amounts as amounts
 
 LEVELS = ("easy", "standard", "hard")
 MAX_SERVICES = 8
 MAX_COMBINATIONS = 4096
 MAX_OPTIONALS = 12
 MAX_ANALYSIS_STATES = 65536
-
-
-def amounts(value):
-    if not isinstance(value, dict) or set(value) - set(RESOURCES):
-        raise ValueError("Unknown resource or invalid resource vector")
-    if any(type(amount) is not int or amount < 0 for amount in value.values()):
-        raise ValueError("Resource amounts must be nonnegative integers")
-    return {key: value.get(key, 0) for key in RESOURCES}
 
 
 def identifier(value):

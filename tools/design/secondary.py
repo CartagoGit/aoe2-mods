@@ -1,7 +1,13 @@
 """Build and audit authored optional objectives; these are design contracts, not native triggers."""
 import math
+import runpy
+from pathlib import Path
 
-RESOURCES = ('food', 'wood', 'gold', 'stone')
+numbers = runpy.run_path(str(Path(__file__).with_name('design_numbers.helper.py')))
+RESOURCES = numbers['RESOURCES']
+is_positive_integer = numbers['is_positive_integer']
+resource_amounts = numbers['resource_amounts']
+audit_objective_numbers = numbers['audit_objective_numbers']
 REWARDS = {
     'scout': {}, 'aid': {'food': 100, 'wood': 50}, 'copy': {},
     'repair': {'food': 200, 'wood': 100},
@@ -195,6 +201,33 @@ def build_optional_objectives(scenario, authored):
 
 def check_optional_objectives(scenario, check, label):
     objectives = scenario.get('secondaryObjectives', [])
+    numeric_errors = []
+    vectors = []
+    for objective in objectives:
+        context = f'{label}/{objective["id"]}'
+        for requirement in objective['predicate']['requirements']:
+            if requirement['kind'] in ('entity-arrival', 'visit-zones'):
+                if not is_positive_integer(requirement.get('requiredCount')):
+                    numeric_errors.append(f'{context}: optional counter must be a positive integer')
+            if requirement['kind'] == 'atomic-payment':
+                vectors.append((context + ': optional payment', requirement.get('resources')))
+        vectors.extend((context + ': optional reward', effect.get('resources'))
+                       for effect in objective['effects'])
+    for level, budget in scenario['difficulty'].items():
+        for field in ('startingResources', 'gatherableBank', 'mandatoryDeliveries',
+                      'replacementBudget', 'protectedRecoveryStock', 'supplyMargins'):
+            vectors.append((f'{label}/{level}/{field}', budget.get(field)))
+    for field in ('reservedRewards', 'maxOptionalCosts'):
+        vectors.append((f'{label}/secondaryBudget/{field}', scenario.get('secondaryBudget', {}).get(field)))
+    for context, vector in vectors:
+        try:
+            resource_amounts(vector)
+        except ValueError as error:
+            numeric_errors.append(f'{context}: {error}')
+    for error in numeric_errors:
+        check(False, error)
+    if numeric_errors:
+        return
     check(6 <= len(objectives) <= 8, f'{label}: require 6–8 authored secondary objectives')
     check(len({o['kind'] for o in objectives}) >= 4, f'{label}: insufficient optional mechanic variety')
     check(len({o['id'] for o in objectives}) == len(objectives), f'{label}: duplicate optional ID')

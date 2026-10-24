@@ -3,7 +3,7 @@
 import math
 import runpy
 from pathlib import Path
-from secondary import check_optional_objectives
+from secondary import check_optional_objectives, audit_objective_numbers
 
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
 transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
@@ -12,7 +12,9 @@ audit_entry = continuity["audit_entry"]
 
 
 def audit_dossier(episode, campaign=None, baseline=None):
-    failures = []
+    failures = audit_objective_numbers(episode)
+    if failures:
+        return failures
 
     def check(condition, message):
         if not condition:

@@ -16,6 +16,171 @@ from test_research_crosswalk import ResearchCrosswalkTests
 
 
 class DesignAcceptanceTests(unittest.TestCase):
+    def test_main_counters_reject_empty_negative_fractional_and_boolean_thresholds(self):
+        examples = {}
+        for campaign in self.odysseys:
+            for episode in campaign.get('episodes', []):
+                for oi, objective in enumerate(episode['objectivePlan']):
+                    for ri, requirement in enumerate(objective['predicate']['requirements']):
+                        if 'requiredCount' in requirement:
+                            examples.setdefault(requirement['kind'], (campaign, episode, oi, ri))
+        self.assertEqual(set(examples), {
+            'entity-state', 'current-entity-presence', 'checkpoint-entity-presence',
+            'area-state', 'transport-journey',
+        })
+        for kind, (campaign, episode, oi, ri) in examples.items():
+            self.assertEqual(self.dossier_validator(episode, campaign, self.catalogue['campaigns']), [])
+            for value in (0, -1, True, False, 0.5, 1.0, None, '1', float('nan'), float('inf')):
+                with self.subTest(kind=kind, value=value):
+                    invalid = copy.deepcopy(episode)
+                    invalid['objectivePlan'][oi]['predicate']['requirements'][ri]['requiredCount'] = value
+                    errors = self.dossier_validator(invalid, campaign, self.catalogue['campaigns'])
+                    self.assertTrue(any('counter must be a positive integer' in e for e in errors))
+            invalid = copy.deepcopy(episode)
+            del invalid['objectivePlan'][oi]['predicate']['requirements'][ri]['requiredCount']
+            self.assertTrue(any('counter must be a positive integer' in e
+                                for e in self.dossier_validator(invalid, campaign, self.catalogue['campaigns'])))
+
+    def test_survival_and_ledger_minima_reject_malformed_counts_before_comparison(self):
+        survivor_episode = next(
+            e for c in self.odysseys for e in c.get('episodes', [])
+            if e['worldContract']['survivorGroups']
+        )
+        ledger_episode = next(
+            e for c in self.odysseys for e in c.get('episodes', [])
+            if any(o['predicate'].get('exportedLedgers') for o in e['objectivePlan'])
+        )
+        for value in (0, -1, True, 0.5, None, '1'):
+            with self.subTest(value=value):
+                invalid = copy.deepcopy(survivor_episode)
+                invalid['worldContract']['survivorGroups'][0]['minimumAliveOrAlreadySafe'] = value
+                self.assertTrue(any('survival threshold must be a positive integer' in e
+                                    for e in self.dossier_validator(invalid)))
+                invalid = copy.deepcopy(ledger_episode)
+                objective = next(o for o in invalid['objectivePlan'] if o['predicate'].get('exportedLedgers'))
+                objective['predicate']['exportedLedgers'][0]['minimumCount'] = value
+                self.assertTrue(any('ledger minimum must be a positive integer' in e
+                                    for e in self.dossier_validator(invalid)))
+
+    def test_empty_authored_collection_is_rejected_before_dossier_rendering(self):
+        pipeline = runpy.run_path(str(ROOT / 'tools/design/episode_dossiers.script.py'))
+        original_read = pipeline['read']
+
+        def empty_collection(path):
+            data = original_read(path)
+            if path == 'docs/design/odysseys/faith-origins.json':
+                data['episodeBlueprints'][0]['mainObjectives'][0]['requirements'][0]['requiredCount'] = 0
+            return data
+
+        with patch.dict(pipeline['run'].__globals__, {'read': empty_collection}):
+            with self.assertRaisesRegex(ValueError, 'counter must be a positive integer'):
+                pipeline['run'](check=True)
+
+    def test_legacy_objectives_share_strict_count_validation(self):
+        from objectives import check_objectives
+        scenario = self.catalogue['campaigns'][0]['scenarios'][0]
+        for field in ('requiredCount', 'distinctDestinationCount', 'minimumPerDestination'):
+            for value in (0, -1, True, 0.5, '1', None):
+                with self.subTest(field=field, value=value):
+                    invalid = copy.deepcopy(scenario)
+                    req = next(r for o in invalid['objectivePlan'] for r in o['predicate']['requirements']
+                               if r['kind'] == 'entity-state')
+                    req[field] = value
+                    errors = []
+                    check_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'legacy')
+                    self.assertTrue(any('counter must be a positive integer' in e for e in errors))
+
+    def test_optional_counts_are_strict_in_both_catalogue_and_expanded_dossiers(self):
+        from secondary import check_optional_objectives
+        catalogues = (
+            [s for c in self.catalogue['campaigns'] for s in c['scenarios']],
+            [e for c in self.odysseys for e in c.get('episodes', [])],
+        )
+        for candidates in catalogues:
+            for kind in ('entity-arrival', 'visit-zones'):
+                original = next(s for s in candidates if any(
+                    r['kind'] == kind for o in s['secondaryObjectives'] for r in o['predicate']['requirements']))
+                for value in (0, -1, True, 0.5, 1.0, None, '1'):
+                    with self.subTest(scenario=original['id'], kind=kind, value=value):
+                        invalid = copy.deepcopy(original)
+                        req = next(r for o in invalid['secondaryObjectives'] for r in o['predicate']['requirements']
+                                   if r['kind'] == kind)
+                        req['requiredCount'] = value
+                        errors = []
+                        check_optional_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'side')
+                        self.assertTrue(any('optional counter must be a positive integer' in e for e in errors))
+
+    def test_conserved_payment_totals_cannot_hide_invalid_individual_allocations(self):
+        from objectives import check_objectives
+        originals = (self.catalogue['campaigns'][0]['scenarios'][0], self.draft(11))
+        for original in originals:
+            for value in (-1, True, 0.5, float('nan'), float('inf')):
+                with self.subTest(scenario=original['id'], value=value):
+                    invalid = copy.deepcopy(original)
+                    req = next(r for o in invalid['objectivePlan'] for r in o['predicate']['requirements']
+                               if r['kind'] == 'resource-transaction')
+                    resource, total = next((k, v) for k, v in req['amounts'].items() if v > 0)
+                    allocations = list(req['allocations'].values())
+                    self.assertGreaterEqual(len(allocations), 2)
+                    for row in allocations:
+                        row[resource] = 0
+                    allocations[0][resource], allocations[1][resource] = value, total - value
+                    if original is originals[0]:
+                        errors = []
+                        check_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'legacy')
+                    else:
+                        errors = self.dossier_validator(invalid)
+                    self.assertTrue(any('Resource amounts must be nonnegative integers' in e for e in errors))
+            invalid = copy.deepcopy(original)
+            req = next(r for o in invalid['objectivePlan'] for r in o['predicate']['requirements']
+                       if r['kind'] == 'resource-transaction')
+            req['amounts']['unknown'] = 999
+            next(iter(req['allocations'].values()))['unknown'] = 999
+            if original is originals[0]:
+                errors = []
+                check_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'legacy')
+            else:
+                errors = self.dossier_validator(invalid)
+            self.assertTrue(any('Unknown resource' in e for e in errors))
+
+    def test_legacy_stock_and_compound_totals_use_the_shared_resource_validator(self):
+        from objectives import check_objectives
+        scenario = next(s for c in self.catalogue['campaigns'] for s in c['scenarios']
+                        if any(r['kind'] == 'minimum-stock' for o in s['objectivePlan']
+                               for r in o['predicate']['requirements']))
+        for target in ('stock', 'compound-total'):
+            invalid = copy.deepcopy(scenario)
+            if target == 'stock':
+                req = next(r for o in invalid['objectivePlan'] for r in o['predicate']['requirements']
+                           if r['kind'] == 'minimum-stock')
+                req['amounts']['food'] = -1
+            else:
+                invalid['objectivePlan'][0]['predicate']['resourceAmounts']['unknown'] = 1
+            errors = []
+            check_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'legacy')
+            self.assertTrue(any('Resource amounts must be nonnegative integers' in e or 'Unknown resource' in e
+                                for e in errors))
+
+    def test_optional_payments_rewards_and_budgets_reject_invalid_resource_vectors(self):
+        from secondary import check_optional_objectives
+        for value in (-1, True, 0.5, None, '1'):
+            for target in ('payment', 'reward', 'stock', 'reserve'):
+                with self.subTest(value=value, target=target):
+                    invalid = self.draft()
+                    if target == 'payment':
+                        req = next(r for o in invalid['secondaryObjectives'] for r in o['predicate']['requirements']
+                                   if r['kind'] == 'atomic-payment')
+                        req['resources']['wood'] = value
+                    elif target == 'reward':
+                        invalid['secondaryObjectives'][0]['effects'][0]['resources']['food'] = value
+                    elif target == 'stock':
+                        invalid['difficulty']['hard']['startingResources']['food'] = value
+                    else:
+                        invalid['secondaryBudget']['reservedRewards']['food'] = value
+                    errors = []
+                    check_optional_objectives(invalid, lambda ok, message: errors.append(message) if not ok else None, 'side')
+                    self.assertTrue(any('Resource amounts must be nonnegative integers' in e for e in errors))
+
     def test_source_crosswalk_claims_cannot_bypass_global_documentation_gate(self):
         original_read = Path.read_text
 
