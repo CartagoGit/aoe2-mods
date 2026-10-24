@@ -6,6 +6,8 @@ Tras revisión independiente e integración oficial de la infraestructura en dev
 
 En esta entrega i00001 está done, con revisión formal de GPT-6.1 y gate de integración pasado. f00001/S1, preparado por el arquitecto y revisado formalmente por `gpt-6-luna`, está `done`; sus metadatos se integraron en `3c41b4f5` y el producto en `06e688e`. MiniMax no ha ejecutado trabajo: su siguiente slice mecánico designado es f00001/S2, actualmente pendiente por cuota del proveedor. Recupera el estado actual del servidor antes de actuar.
 
+Registro de procedencia: las actualizaciones de estado del handoff realizadas en `575ea5a7fb4572a3bdf11481f8b0f1f0b6597a47` y `ce2e91fd33482b9e785a437cd9f52fd245aab83f` fueron redactadas por `gpt-6-luna`. La identidad de autor/committer Git heredada en esos dos commits no corresponde a la autoría del contenido.
+
 El piloto técnico de rutas puede avanzar por slices cerrados sin esperar a que terminen las nueve odiseas, pero esto no altera los bloqueos oficiales de autoría histórica. El piloto narrativo viene después. No empezar por una campaña completa. Los IDs observados se documentan en NEXT-PROPOSALS; recupera los actuales del servidor.
 
 ## Prompt inicial completo
