@@ -21,7 +21,7 @@ The consultation record carefully bounds the historical sources. Saudipedia's Ba
 
 ## Validation scope
 
-I checked file hashes, source byte counts, TIFF dimensions/tags, source-window pixel equality with two independent decoders, preview hashes/orientation, padded-bound coverage, the manifest's unchanged 39-entry prefix, and the referenced official product/licence pages. I did not run `bun run validate` or other heavy project checks while the root validation was in progress. Static inspection does not prove ancient geography, archaeological identification, terrain passability, native map correctness, or gameplay.
+I checked file hashes, source byte counts, TIFF dimensions/tags, source-window pixel equality with two independent decoders, preview hashes/orientation and matching header/footer regions, padded-bound coverage, the manifest's unchanged 39-entry prefix, and the referenced official product/licence pages. `bun run validate` passed on this review worktree: TypeScript/Biome checks, 142 tests with 2,069 expectations, documentation and local-link checks, and validation of one campaign. Static inspection and these automated checks do not prove ancient geography, archaeological identification, terrain passability, native map correctness, or gameplay.
 
 The formal DelendAI review queue was empty at the time this report was prepared; no formal S7 review or approval is claimed here.
 
