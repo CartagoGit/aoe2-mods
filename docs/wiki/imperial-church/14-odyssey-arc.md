@@ -207,7 +207,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-4: Councils Without Concord / Concilios sin concordia
 
-Historical year band: [343, 359]. Sardica, exilios y fórmulas rivales; Marcus crece entre papeles familiares y empieza a trabajar.
+Historical year band: [342, 359]. Sardica, exilios y fórmulas rivales; Marcus crece entre papeles familiares y empieza a trabajar.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|

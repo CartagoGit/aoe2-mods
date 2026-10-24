@@ -161,7 +161,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-3: Water and Broken Words / Agua y palabras quebradas
 
-Historical year band: [657, 657]. Siffin, agua, combate y arbitraje; decisiones jugables logísticas no revierten la crisis histórica.
+Historical year band: [656, 658]. Siffin, agua, combate y arbitraje; decisiones jugables logísticas no revierten la crisis histórica.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
@@ -197,7 +197,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-4: The Price of Arbitration / El precio del arbitraje
 
-Historical year band: [658, 660]. Harura, Nahrawan, reuniones y pérdida de apoyos; dataciones alternativas y relatos tendenciosos visibles.
+Historical year band: [657, 660]. Harura, Nahrawan, reuniones y pérdida de apoyos; dataciones alternativas y relatos tendenciosos visibles.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
@@ -235,7 +235,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-5: The Oath That Could Not Hold / El juramento que no pudo durar
 
-Historical year band: [661, 661]. Muerte deAli, Hasan y pacto; el final deja escoger perspectiva omeya o de la casa deAli sin declarar vencedor moral.
+Historical year band: [660, 661]. Muerte deAli, Hasan y pacto; el final deja escoger perspectiva omeya o de la casa deAli sin declarar vencedor moral.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|

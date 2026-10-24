@@ -1,21 +1,21 @@
 {
   "schemaVersion": 2,
   "snapshot": {
-    "date": "2026-10-23",
+    "date": "2026-10-24",
     "realIdentity": "gpt-6",
     "method": "tools/design/civic_difficulty_audit.script.py"
   },
   "sourceSha256": {
     "docs/design/odyssey-policy.json": "44f2126ea6f5dd0969445602230245db0adb7da3f636d0e932acd89d68f8f8fc",
     "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
-    "docs/design/odysseys/imperial-church.json": "c4ded052c88bbf285fc7e18d08cc852d249e4b2094601162ca6d5936e9afd5be",
+    "docs/design/odysseys/imperial-church.json": "7d1183c4bf3483eb1cf8f69eb1842545b9467dd2c42c6796bef3c8a883ee68df",
     "docs/design/odysseys/jewish-tradition.json": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
-    "docs/design/odysseys/church-of-rome.json": "5fa7772ca5b33e25dbc8267007816acb088e48c28f82aa286dff26d62eedc1a4",
+    "docs/design/odysseys/church-of-rome.json": "2f16b67dd2c9b1381311596080988ed96d927323f741382f6ceec82f077ad885",
     "docs/design/odysseys/new-rome.json": "99da4a9277885cf4d87bd0b3a798a236a698542d4b4f078a768993611b85c7da",
-    "docs/design/odysseys/first-caliphs.json": "15656ef2a71a87589b80be28732c8b25536b15ae2456149a5c384378a0b22767",
-    "docs/design/odysseys/first-fitna.json": "36e7f6f43946ce9acd89fbfb2e90134ffbbfa3d8b8e3ecf6a2c2972e1ef392b7",
+    "docs/design/odysseys/first-caliphs.json": "2b86695a649e539bced604a6bd505683fb66b77678a154f0a525bf0a757351c0",
+    "docs/design/odysseys/first-fitna.json": "36c56f6a38185b7761dda3e549b165cd3aa0dab2a96ec4981000a4d22c6d59c4",
     "docs/design/odysseys/umayyads.json": "ceafcad8d3f8b61eaf180a9daee82c623c7f5acc052fef92a9a4a31add93d402",
-    "docs/design/odysseys/house-of-ali.json": "46991c010a3ba555ac8205390bc900b1ab084bf6d8a329644d083d66934262b6"
+    "docs/design/odysseys/house-of-ali.json": "ab16494bd49144ba3ba243e4231bdf97b1dec8fdc29dfbe1f8b6fbf1f5565a05"
   },
   "scope": "All policy campaigns; only authored episodes[] dossiers counted",
   "riskRule": "No structured hostile cap/entity, no positive structured deadline key, identical accessible budgets across all three difficulties",
