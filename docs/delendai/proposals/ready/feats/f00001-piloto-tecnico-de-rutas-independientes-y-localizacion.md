@@ -33,12 +33,14 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - global_gate: e2e
 
 ### S1 — Especificación y matriz del laboratorio
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/wiki/route-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Definir mapas mínimos, victoria A/B, replay, recapitulación y lista cerrada de textos/personajes; no atribuir hechos históricos a fixtures."
   - "Casos nuevo perfil, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Borradores completos de los dos mods
 - **Status**: pending
