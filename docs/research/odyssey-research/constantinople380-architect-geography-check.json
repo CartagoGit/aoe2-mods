@@ -1,0 +1,828 @@
+{
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "episodeId": "34-church-transfer-constantinople",
+  "classification": "bounded architect geographic consultation; no ancient map approval",
+  "consultations": [
+    {
+      "id": "columbia-land-walls-20261024",
+      "url": "https://mcid.mcah.columbia.edu/istanbul-documentation-project/land-walls-constantinople",
+      "locator": "description lines30–39",
+      "readScope": "Public monument description; no dynamic plans or complete bibliography inspected.",
+      "finding": "The later land-wall system cannot be drawn in380. The summary does not provide a verified Constantinian wall line.",
+      "limits": "Do not turn ambiguous summary wording into absence of all archaeological remains; images not licensed here."
+    },
+    {
+      "id": "metu-column-20261024",
+      "url": "https://jfa.arch.metu.edu.tr/uploads/docs/sayilar/sayi-33-1/121-145.pdf",
+      "locator": "printed pp122–123, text and Fig1 on122; first physical page also exposed as context",
+      "readScope": "Selected text on forum/topography and reconstructed street layout; figure1 visually inspected from temporary rendered PDF page.",
+      "finding": "The figure is an academic synthesis from earlier maps. Use broad ridges and the east–west urban orientation as controls, not its speculative streets as surveyed380features.",
+      "limits": "No georeferencing of that copyrighted figure, coordinate extraction, full article reading or image redistribution claimed.",
+      "temporaryPdfSha256": "ea7abf822622a3279efa443710797359afde67f6f1a46abb5706087f6e54c33b"
+    },
+    {
+      "id": "yenikapi-20261024",
+      "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Yenikapi-Algan2011.pdf",
+      "locator": "editorial notice physicalp1; abstract and study-area passage pp2–3",
+      "readScope": "Selected copyright notice, abstract and peninsula/Lykos study-area paragraphs; not whole paper or figure9 visual analysis.",
+      "finding": "Local coastal sedimentation and human modification prevent treating the modern southern margin as an exact380shore.",
+      "limits": "Port construction chronology is broad; no dated whole-peninsula coastline or licensed figure follows. Author copy forbids redistribution."
+    },
+    {
+      "id": "galata-museum-20261024",
+      "url": "https://turkishmuseums.kprod.kultur.gov.tr/museum/detail/22341-istanbul-galata-tower-museum/22341/4",
+      "locator": "institutional search extraction, opening geographic paragraph",
+      "readScope": "Indexed public description of Galata north of GoldenHorn and modern tower phase; no full page, coordinate record or site plan read.",
+      "finding": "North-bank Galata cannot silently replace a selected peninsula activity; modern tower fabric is later than380.",
+      "limits": "No exact point or year380terrain is established by this indexed description."
+    },
+    {
+      "id": "osm-rights-overpass-20261024",
+      "urls": [
+        "https://www.openstreetmap.org/copyright",
+        "https://wiki.openstreetmap.org/wiki/Overpass_API"
+      ],
+      "readScope": "Read map-data licensing/attribution paragraphs and Overpass read-only query description; no code or software-license reuse inferred.",
+      "finding": "One bounded query returned60current coastline ways; original response retained and all1184vertices/IDs/tags compared to the conversion.",
+      "limits": "Data license ODbL is distinct from wiki/software licenses. Current ways are not ancient shore, full water mask or navigation evidence."
+    }
+  ],
+  "localDsm": {
+    "path": "docs/research/odyssey-research/geography/constantinople-modern-dsm-reference.tif",
+    "sha256": "25b1a91f7bee6511fe80732f8d3179f994d2976cbc9811de72f92b67846ab228",
+    "decoder": "Pillow12.3.0",
+    "sampling": "nearest original sample centre using recorded affine and Point interpretation; no interpolation or altitude rescaling",
+    "retainedActivityPoints": [
+      {
+        "id": "starting-court",
+        "lonLat": [
+          28.9718,
+          41.0145
+        ],
+        "tile": [
+          265.21,
+          283.45
+        ],
+        "nearestCropPixel": [
+          186,
+          164
+        ],
+        "modernDsmMetres": 33.819698333740234,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Clerk's Courtyard",
+          "es-ES": "El patio del escribiente"
+        }
+      },
+      {
+        "id": "meal-reception",
+        "lonLat": [
+          28.9705,
+          41.0148
+        ],
+        "tile": [
+          254.92,
+          280.3
+        ],
+        "nearestCropPixel": [
+          182,
+          163
+        ],
+        "modernDsmMetres": 23.93682861328125,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Neighbors' Table",
+          "es-ES": "La mesa de los vecinos"
+        }
+      },
+      {
+        "id": "materials-court",
+        "lonLat": [
+          28.9555,
+          41.0198
+        ],
+        "tile": [
+          136.17,
+          227.83
+        ],
+        "nearestCropPixel": [
+          128,
+          145
+        ],
+        "modernDsmMetres": 45.7375602722168,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Shelter Yard",
+          "es-ES": "El patio de refugio occidental"
+        }
+      },
+      {
+        "id": "kit-court",
+        "lonLat": [
+          28.959,
+          41.0167
+        ],
+        "tile": [
+          163.88,
+          260.36
+        ],
+        "nearestCropPixel": [
+          140,
+          156
+        ],
+        "modernDsmMetres": 32.46766662597656,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Interior Shelter Yard",
+          "es-ES": "El patio de refugio interior"
+        }
+      },
+      {
+        "id": "host-court",
+        "lonLat": [
+          28.9682,
+          41.0105
+        ],
+        "tile": [
+          236.71,
+          325.42
+        ],
+        "nearestCropPixel": [
+          174,
+          178
+        ],
+        "modernDsmMetres": 52.55756759643555,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Southern Host's Courtyard",
+          "es-ES": "El patio del anfitrión del sur"
+        }
+      },
+      {
+        "id": "meal-direct-source",
+        "lonLat": [
+          28.979,
+          41.01
+        ],
+        "tile": [
+          322.21,
+          330.67
+        ],
+        "nearestCropPixel": [
+          212,
+          180
+        ],
+        "modernDsmMetres": 28.03335952758789,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Prepared Consignment",
+          "es-ES": "La remesa preparada"
+        }
+      },
+      {
+        "id": "hearth-worksite",
+        "lonLat": [
+          28.963,
+          41.0152
+        ],
+        "tile": [
+          195.54,
+          276.1
+        ],
+        "nearestCropPixel": [
+          155,
+          161
+        ],
+        "modernDsmMetres": 60.81117630004883,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Shared Hearth",
+          "es-ES": "El fogón compartido"
+        }
+      },
+      {
+        "id": "merchant-worksite",
+        "lonLat": [
+          28.9488,
+          41.0208
+        ],
+        "tile": [
+          83.12,
+          217.34
+        ],
+        "nearestCropPixel": [
+          104,
+          141
+        ],
+        "modernDsmMetres": 68.17587280273438,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Merchant",
+          "es-ES": "El mercader occidental"
+        }
+      },
+      {
+        "id": "materials-source",
+        "lonLat": [
+          28.9475,
+          41.0178
+        ],
+        "tile": [
+          72.83,
+          248.82
+        ],
+        "nearestCropPixel": [
+          99,
+          152
+        ],
+        "modernDsmMetres": 51.34332275390625,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Timber Yard",
+          "es-ES": "El depósito de madera"
+        }
+      },
+      {
+        "id": "kit-worksite",
+        "lonLat": [
+          28.9685,
+          41.0132
+        ],
+        "tile": [
+          239.08,
+          297.09
+        ],
+        "nearestCropPixel": [
+          175,
+          168
+        ],
+        "modernDsmMetres": 42.009490966796875,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Local Workshop",
+          "es-ES": "El taller local"
+        }
+      },
+      {
+        "id": "host-worksite",
+        "lonLat": [
+          28.977,
+          41.013
+        ],
+        "tile": [
+          306.38,
+          299.19
+        ],
+        "nearestCropPixel": [
+          205,
+          169
+        ],
+        "modernDsmMetres": 24.360506057739258,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Host's Meeting Place",
+          "es-ES": "El lugar de encuentro con el anfitrión"
+        }
+      },
+      {
+        "id": "western-junction",
+        "lonLat": [
+          28.957,
+          41.0155
+        ],
+        "tile": [
+          148.04,
+          272.95
+        ],
+        "nearestCropPixel": [
+          133,
+          160
+        ],
+        "modernDsmMetres": 41.24913787841797,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Turn",
+          "es-ES": "El desvío occidental"
+        }
+      },
+      {
+        "id": "north-viewpoint",
+        "lonLat": [
+          28.953,
+          41.0215
+        ],
+        "tile": [
+          116.38,
+          209.99
+        ],
+        "nearestCropPixel": [
+          119,
+          139
+        ],
+        "modernDsmMetres": 51.80297088623047,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Upper Viewpoint",
+          "es-ES": "El mirador alto"
+        }
+      },
+      {
+        "id": "south-viewpoint",
+        "lonLat": [
+          28.9655,
+          41.009
+        ],
+        "tile": [
+          215.33,
+          341.16
+        ],
+        "nearestCropPixel": [
+          164,
+          184
+        ],
+        "modernDsmMetres": 61.49425506591797,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Southern Viewpoint",
+          "es-ES": "El mirador sur"
+        }
+      },
+      {
+        "id": "north-care-yard",
+        "lonLat": [
+          28.9465,
+          41.026
+        ],
+        "tile": [
+          64.92,
+          162.77
+        ],
+        "nearestCropPixel": [
+          95,
+          122
+        ],
+        "modernDsmMetres": 73.94901275634766,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Northern Supply Yard",
+          "es-ES": "El patio de suministros del norte"
+        }
+      },
+      {
+        "id": "north-store",
+        "lonLat": [
+          28.95,
+          41.0275
+        ],
+        "tile": [
+          92.62,
+          147.03
+        ],
+        "nearestCropPixel": [
+          108,
+          117
+        ],
+        "modernDsmMetres": 63.54361343383789,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        }
+      },
+      {
+        "id": "north-reader",
+        "lonLat": [
+          28.9505,
+          41.03
+        ],
+        "tile": [
+          96.58,
+          120.8
+        ],
+        "nearestCropPixel": [
+          110,
+          108
+        ],
+        "modernDsmMetres": 16.28090476989746,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Reader's Shelter",
+          "es-ES": "El refugio del lector"
+        }
+      },
+      {
+        "id": "north-reception",
+        "lonLat": [
+          28.954,
+          41.025
+        ],
+        "tile": [
+          124.29,
+          173.27
+        ],
+        "nearestCropPixel": [
+          122,
+          126
+        ],
+        "modernDsmMetres": 29.807132720947266,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Northern Neighbors",
+          "es-ES": "Los vecinos del norte"
+        }
+      },
+      {
+        "id": "western-guide",
+        "lonLat": [
+          28.9435,
+          41.023
+        ],
+        "tile": [
+          41.17,
+          194.25
+        ],
+        "nearestCropPixel": [
+          85,
+          133
+        ],
+        "modernDsmMetres": 67.89196014404297,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Waiting Guide",
+          "es-ES": "El guía que espera"
+        }
+      }
+    ],
+    "revisedExploratoryPoints": [
+      {
+        "id": "meal-reception",
+        "lonLat": [
+          28.975,
+          41.0178
+        ],
+        "modernDsmMetres": 0.0,
+        "reason": "zero-valued modern sample; initial northern placement rejected pending shore checks"
+      },
+      {
+        "id": "kit-court",
+        "lonLat": [
+          28.9632,
+          41.023
+        ],
+        "modernDsmMetres": 0.0,
+        "reason": "zero-valued modern sample in GoldenHorn approach; move activity inland"
+      },
+      {
+        "id": "hearth-worksite",
+        "lonLat": [
+          28.9653,
+          41.0205
+        ],
+        "modernDsmMetres": 2.942305326461792,
+        "reason": "low/near-shore candidate replaced by interior activity proposal"
+      },
+      {
+        "id": "materials-source",
+        "lonLat": [
+          28.9445,
+          41.02
+        ],
+        "modernDsmMetres": 48.975101470947266,
+        "reason": "move farther into proposed activity network; no claim of ancient boundary certainty"
+      },
+      {
+        "id": "kit-worksite",
+        "lonLat": [
+          28.9728,
+          41.0268
+        ],
+        "modernDsmMetres": 49.95224380493164,
+        "reason": "positive surface sample lies north of GoldenHorn; wrong bank for this selected peninsula scene"
+      },
+      {
+        "id": "north-viewpoint",
+        "lonLat": [
+          28.963,
+          41.025
+        ],
+        "modernDsmMetres": 0.0,
+        "reason": "zero-valued modern sample; reject as a viewpoint"
+      }
+    ],
+    "limits": "Modern buildings/vegetation, mixed dates and shoreline changes remain. A height value is neither terrain approval nor bank/land classification. No new elevation raster or binary asset was created.",
+    "samplingCount": 19
+  },
+  "decision": "Use only the interior fictional activity proposals for further full-width assessment; preserve rejected candidates and their actual samples, do not silently overwrite an alleged historical point.",
+  "historicalApproval": false,
+  "nativeApproval": false,
+  "gameApproval": false,
+  "modernShoreControl": {
+    "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.geojson",
+    "sha256": "529eb5556e12a6ff88f75242ae4aebb0949c4764b9a1c956595cdf1f4ae2709d",
+    "clippedControlSegments": 513,
+    "status": "detailed modern mapped line acquired; neither an ancient coast nor a water/land polygon",
+    "corridorLineClearance": [
+      {
+        "corridorId": "central-court",
+        "nearestCurrentCoastlineDistanceTiles": 35.6606,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 32.6606,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "east-source",
+        "nearestCurrentCoastlineDistanceTiles": 38.4881,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 35.4881,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "east-return",
+        "nearestCurrentCoastlineDistanceTiles": 35.8509,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 32.8509,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "central-reception",
+        "nearestCurrentCoastlineDistanceTiles": 37.2415,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 34.2415,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "ridge-hearth",
+        "nearestCurrentCoastlineDistanceTiles": 38.1997,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 35.1997,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "ridge-junction",
+        "nearestCurrentCoastlineDistanceTiles": 52.5175,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 49.5175,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "west-supply",
+        "nearestCurrentCoastlineDistanceTiles": 81.4278,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 78.4278,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "western-trade",
+        "nearestCurrentCoastlineDistanceTiles": 94.7568,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 91.7568,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "western-reception",
+        "nearestCurrentCoastlineDistanceTiles": 61.652,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 58.652,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "interior-kit",
+        "nearestCurrentCoastlineDistanceTiles": 52.5175,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 49.5175,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "kit-source",
+        "nearestCurrentCoastlineDistanceTiles": 38.2234,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 35.2234,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "kit-to-hearth",
+        "nearestCurrentCoastlineDistanceTiles": 52.3881,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 49.3881,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "southern-host",
+        "nearestCurrentCoastlineDistanceTiles": 38.2234,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 35.2234,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "southern-view",
+        "nearestCurrentCoastlineDistanceTiles": 85.7895,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 82.7895,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-view",
+        "nearestCurrentCoastlineDistanceTiles": 61.652,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 58.652,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-care-approach",
+        "nearestCurrentCoastlineDistanceTiles": 62.444,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 59.444,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-care-loop",
+        "nearestCurrentCoastlineDistanceTiles": 30.7819,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 27.7819,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-reader-link",
+        "nearestCurrentCoastlineDistanceTiles": 13.4113,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 10.4113,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-reception-link",
+        "nearestCurrentCoastlineDistanceTiles": 13.4113,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 10.4113,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "north-return",
+        "nearestCurrentCoastlineDistanceTiles": 40.1555,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 37.1555,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      },
+      {
+        "corridorId": "guide-link",
+        "nearestCurrentCoastlineDistanceTiles": 100.5683,
+        "halfWidthTiles": 3.0,
+        "remainingMarginTiles": 97.5683,
+        "centrelineCrossesCurrentControl": false,
+        "bufferMeetsCurrentLine": false
+      }
+    ],
+    "optionalZoneLineClearance": [
+      {
+        "zoneId": "34-church-transfer-constantinople.side-1.zone-1",
+        "centreTiles": [
+          116.29,
+          173.27
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 42.2389
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-1.zone-2",
+        "centreTiles": [
+          132.29000000000002,
+          173.27
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 34.7572
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-2.zone-1",
+        "centreTiles": [
+          144.17,
+          227.83
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 56.0058
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-3.zone-1",
+        "centreTiles": [
+          203.54,
+          276.1
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 49.0405
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-4.zone-1",
+        "centreTiles": [
+          156.04,
+          272.95
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 76.1899
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-5.zone-1",
+        "centreTiles": [
+          108.38,
+          209.99
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 73.7568
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-5.zone-2",
+        "centreTiles": [
+          223.33,
+          341.16
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 105.0685
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-6.zone-1",
+        "centreTiles": [
+          136.17,
+          219.83
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 56.5592
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-6.zone-2",
+        "centreTiles": [
+          236.71,
+          333.42
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 93.4515
+      },
+      {
+        "zoneId": "34-church-transfer-constantinople.side-7.zone-1",
+        "centreTiles": [
+          100.62,
+          147.03
+        ],
+        "radiusTiles": 3,
+        "nearestCurrentLineTiles": 24.94
+      }
+    ],
+    "scope": "2Dclearance to the retained current coastline line using projected/rounded coordinates; no building footprint, slope, terrain classification, historical shore or pathfinding certification",
+    "minimumCorridorMarginTiles": 10.4113
+  }
+}

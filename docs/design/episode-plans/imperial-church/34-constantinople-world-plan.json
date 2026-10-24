@@ -1,0 +1,3600 @@
+{
+  "classification": "authored world and workload plan; not a completed dossier, executable profile or native map",
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "proposal": "d00002",
+  "slice": "S3",
+  "campaignId": "imperial-church",
+  "episodeId": "34-church-transfer-constantinople",
+  "displayOrder": 33,
+  "mechanicalAuthoringAssignment": "f00003/S37",
+  "title": {
+    "en": "The Doors of New Rome",
+    "es-ES": "Las puertas de Nueva Roma"
+  },
+  "sourceInputs": [
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-plan.json",
+      "sha256": "fc990f2f8ee66ad4828568d1a53eac3b6cc324f0a230c4687a6e874e66967b34"
+    },
+    {
+      "path": "docs/research/odyssey-research/constantinople-modern-dsm-processing.json",
+      "sha256": "58de7a6dc6b934df2c02664d9cd20c3ac81cd9795c8b197b0aef7c09199406f0"
+    },
+    {
+      "path": "docs/research/odyssey-research/constantinople380-phase-geography-collection.json",
+      "sha256": "59662e66e2a9a2d8dc00900dfef622bab4864d50c724eaa47101bccfb6bdd39f"
+    },
+    {
+      "path": "tools/map/geographic_frame.helper.py",
+      "sha256": "05ef18a14d47c7691d94d31626e3ac2e6d6fc53748aeaf2b0e316472545dde70"
+    },
+    {
+      "path": "tools/design/secondary.py",
+      "sha256": "3575e4432639270b667ba67cae71202624cab01a3af773cbbaf487474bef0ce8"
+    },
+    {
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.geojson",
+      "sha256": "529eb5556e12a6ff88f75242ae4aebb0949c4764b9a1c956595cdf1f4ae2709d"
+    },
+    {
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.raw.json",
+      "sha256": "2fb54f325f22d6d56fd6e97ae90e1422c8bcad323981c8fcfe68fb7a115c516f"
+    }
+  ],
+  "historicalBoundary": "November380 convention; preserve Socrates24/26November versus MarcellinusDecember. Civilian services are voluntary invented local actions; cannot cause or purchase the church possession transfer, belief or a historical person.",
+  "rhythmDecision": {
+    "role": "recovery and allocation interlude after the Adrianople loss and Sirmium preparation pressure; no copied siege or global preparation clock",
+    "difficultySource": "finite allocation restricts combinations; resource preference competes with explicit spatial workload and voluntary optional help before funding",
+    "qualityLimit": "An allocation choice and routes do not yet prove an interesting RTS mission. Native route/task interaction and independent editorial approval are required before promotion; no claim that hard has measured tactical pressure."
+  },
+  "map": {
+    "sizeTiles": 400,
+    "bbox": [
+      28.941,
+      41.009,
+      28.986,
+      41.036
+    ],
+    "bboxPurpose": "activity frame inside the established Constantinople regional profile; not whole ancient city bounds",
+    "sampleCentreExtent": [
+      28.938299999999998,
+      41.00348781241589,
+      28.9887,
+      41.04151218758411
+    ],
+    "outerCellExtent": [
+      28.938236842105262,
+      41.00344016282295,
+      28.988763157894738,
+      41.041559837177054
+    ],
+    "projection": "existing cosine-corrected square padding, tools/map/geographic_frame.helper.py; full padded extent used for controls",
+    "dsmCoverage": "full padded frame lies within the normalized modern crop sample-centre bounds; no inference of ancient coastline",
+    "places": [
+      {
+        "id": "starting-court",
+        "lonLat": [
+          28.9718,
+          41.0145
+        ],
+        "tile": [
+          265.21,
+          283.45
+        ],
+        "nearestCropPixel": [
+          186,
+          164
+        ],
+        "modernDsmMetres": 33.819698333740234,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Clerk's Courtyard",
+          "es-ES": "El patio del escribiente"
+        }
+      },
+      {
+        "id": "meal-reception",
+        "lonLat": [
+          28.9705,
+          41.0148
+        ],
+        "tile": [
+          254.92,
+          280.3
+        ],
+        "nearestCropPixel": [
+          182,
+          163
+        ],
+        "modernDsmMetres": 23.93682861328125,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Neighbors' Table",
+          "es-ES": "La mesa de los vecinos"
+        }
+      },
+      {
+        "id": "materials-court",
+        "lonLat": [
+          28.9555,
+          41.0198
+        ],
+        "tile": [
+          136.17,
+          227.83
+        ],
+        "nearestCropPixel": [
+          128,
+          145
+        ],
+        "modernDsmMetres": 45.7375602722168,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Shelter Yard",
+          "es-ES": "El patio de refugio occidental"
+        }
+      },
+      {
+        "id": "kit-court",
+        "lonLat": [
+          28.959,
+          41.0167
+        ],
+        "tile": [
+          163.88,
+          260.36
+        ],
+        "nearestCropPixel": [
+          140,
+          156
+        ],
+        "modernDsmMetres": 32.46766662597656,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Interior Shelter Yard",
+          "es-ES": "El patio de refugio interior"
+        }
+      },
+      {
+        "id": "host-court",
+        "lonLat": [
+          28.9682,
+          41.0105
+        ],
+        "tile": [
+          236.71,
+          325.42
+        ],
+        "nearestCropPixel": [
+          174,
+          178
+        ],
+        "modernDsmMetres": 52.55756759643555,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Southern Host's Courtyard",
+          "es-ES": "El patio del anfitrión del sur"
+        }
+      },
+      {
+        "id": "meal-direct-source",
+        "lonLat": [
+          28.979,
+          41.01
+        ],
+        "tile": [
+          322.21,
+          330.67
+        ],
+        "nearestCropPixel": [
+          212,
+          180
+        ],
+        "modernDsmMetres": 28.03335952758789,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Prepared Consignment",
+          "es-ES": "La remesa preparada"
+        }
+      },
+      {
+        "id": "hearth-worksite",
+        "lonLat": [
+          28.963,
+          41.0152
+        ],
+        "tile": [
+          195.54,
+          276.1
+        ],
+        "nearestCropPixel": [
+          155,
+          161
+        ],
+        "modernDsmMetres": 60.81117630004883,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Shared Hearth",
+          "es-ES": "El fogón compartido"
+        }
+      },
+      {
+        "id": "merchant-worksite",
+        "lonLat": [
+          28.9488,
+          41.0208
+        ],
+        "tile": [
+          83.12,
+          217.34
+        ],
+        "nearestCropPixel": [
+          104,
+          141
+        ],
+        "modernDsmMetres": 68.17587280273438,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Merchant",
+          "es-ES": "El mercader occidental"
+        }
+      },
+      {
+        "id": "materials-source",
+        "lonLat": [
+          28.9475,
+          41.0178
+        ],
+        "tile": [
+          72.83,
+          248.82
+        ],
+        "nearestCropPixel": [
+          99,
+          152
+        ],
+        "modernDsmMetres": 51.34332275390625,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Timber Yard",
+          "es-ES": "El depósito de madera"
+        }
+      },
+      {
+        "id": "kit-worksite",
+        "lonLat": [
+          28.9685,
+          41.0132
+        ],
+        "tile": [
+          239.08,
+          297.09
+        ],
+        "nearestCropPixel": [
+          175,
+          168
+        ],
+        "modernDsmMetres": 42.009490966796875,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Local Workshop",
+          "es-ES": "El taller local"
+        }
+      },
+      {
+        "id": "host-worksite",
+        "lonLat": [
+          28.977,
+          41.013
+        ],
+        "tile": [
+          306.38,
+          299.19
+        ],
+        "nearestCropPixel": [
+          205,
+          169
+        ],
+        "modernDsmMetres": 24.360506057739258,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Host's Meeting Place",
+          "es-ES": "El lugar de encuentro con el anfitrión"
+        }
+      },
+      {
+        "id": "western-junction",
+        "lonLat": [
+          28.957,
+          41.0155
+        ],
+        "tile": [
+          148.04,
+          272.95
+        ],
+        "nearestCropPixel": [
+          133,
+          160
+        ],
+        "modernDsmMetres": 41.24913787841797,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Western Turn",
+          "es-ES": "El desvío occidental"
+        }
+      },
+      {
+        "id": "north-viewpoint",
+        "lonLat": [
+          28.953,
+          41.0215
+        ],
+        "tile": [
+          116.38,
+          209.99
+        ],
+        "nearestCropPixel": [
+          119,
+          139
+        ],
+        "modernDsmMetres": 51.80297088623047,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Upper Viewpoint",
+          "es-ES": "El mirador alto"
+        }
+      },
+      {
+        "id": "south-viewpoint",
+        "lonLat": [
+          28.9655,
+          41.009
+        ],
+        "tile": [
+          215.33,
+          341.16
+        ],
+        "nearestCropPixel": [
+          164,
+          184
+        ],
+        "modernDsmMetres": 61.49425506591797,
+        "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+        "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Southern Viewpoint",
+          "es-ES": "El mirador sur"
+        }
+      },
+      {
+        "id": "north-care-yard",
+        "lonLat": [
+          28.9465,
+          41.026
+        ],
+        "tile": [
+          64.92,
+          162.77
+        ],
+        "nearestCropPixel": [
+          95,
+          122
+        ],
+        "modernDsmMetres": 73.94901275634766,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Northern Supply Yard",
+          "es-ES": "El patio de suministros del norte"
+        }
+      },
+      {
+        "id": "north-store",
+        "lonLat": [
+          28.95,
+          41.0275
+        ],
+        "tile": [
+          92.62,
+          147.03
+        ],
+        "nearestCropPixel": [
+          108,
+          117
+        ],
+        "modernDsmMetres": 63.54361343383789,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        }
+      },
+      {
+        "id": "north-reader",
+        "lonLat": [
+          28.9505,
+          41.03
+        ],
+        "tile": [
+          96.58,
+          120.8
+        ],
+        "nearestCropPixel": [
+          110,
+          108
+        ],
+        "modernDsmMetres": 16.28090476989746,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Reader's Shelter",
+          "es-ES": "El refugio del lector"
+        }
+      },
+      {
+        "id": "north-reception",
+        "lonLat": [
+          28.954,
+          41.025
+        ],
+        "tile": [
+          124.29,
+          173.27
+        ],
+        "nearestCropPixel": [
+          122,
+          126
+        ],
+        "modernDsmMetres": 29.807132720947266,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Northern Neighbors",
+          "es-ES": "Los vecinos del norte"
+        }
+      },
+      {
+        "id": "western-guide",
+        "lonLat": [
+          28.9435,
+          41.023
+        ],
+        "tile": [
+          41.17,
+          194.25
+        ],
+        "nearestCropPixel": [
+          85,
+          133
+        ],
+        "modernDsmMetres": 67.89196014404297,
+        "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+        "modernHeightUse": "modern surface sample only; not bare earth or year380",
+        "zoneRadiusTiles": 3,
+        "name": {
+          "en": "The Waiting Guide",
+          "es-ES": "El guía que espera"
+        }
+      }
+    ],
+    "corridors": [
+      {
+        "id": "central-court",
+        "pointIds": [
+          "starting-court",
+          "host-worksite"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 44.076,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "east-source",
+        "pointIds": [
+          "host-worksite",
+          "meal-direct-source"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 35.236,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "east-return",
+        "pointIds": [
+          "host-worksite",
+          "meal-reception"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 54.818,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "central-reception",
+        "pointIds": [
+          "starting-court",
+          "meal-reception"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 10.761,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "ridge-hearth",
+        "pointIds": [
+          "starting-court",
+          "hearth-worksite"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 70.057,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "ridge-junction",
+        "pointIds": [
+          "hearth-worksite",
+          "western-junction"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 47.604,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "west-supply",
+        "pointIds": [
+          "western-junction",
+          "materials-source"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 78.986,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "western-trade",
+        "pointIds": [
+          "materials-source",
+          "merchant-worksite"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 33.119,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "western-reception",
+        "pointIds": [
+          "merchant-worksite",
+          "materials-court"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 54.077,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "interior-kit",
+        "pointIds": [
+          "hearth-worksite",
+          "kit-court"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 35.357,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "kit-source",
+        "pointIds": [
+          "starting-court",
+          "kit-worksite"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 29.476,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "kit-to-hearth",
+        "pointIds": [
+          "kit-worksite",
+          "hearth-worksite"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 48.335,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "southern-host",
+        "pointIds": [
+          "starting-court",
+          "host-court"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 50.732,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "southern-view",
+        "pointIds": [
+          "host-court",
+          "south-viewpoint"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 26.549,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "north-view",
+        "pointIds": [
+          "materials-court",
+          "north-viewpoint"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 26.644,
+        "classification": "authored fictional walking connection; not surveyed ancient street or certified passability",
+        "nativeStatus": "pending full-width terrain/building and pathfinding check"
+      },
+      {
+        "id": "north-care-approach",
+        "pointIds": [
+          "merchant-worksite",
+          "north-care-yard"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 57.525,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      },
+      {
+        "id": "north-care-loop",
+        "pointIds": [
+          "north-care-yard",
+          "north-store"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 31.86,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      },
+      {
+        "id": "north-reader-link",
+        "pointIds": [
+          "north-store",
+          "north-reader"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 26.527,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      },
+      {
+        "id": "north-reception-link",
+        "pointIds": [
+          "north-reader",
+          "north-reception"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 59.338,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      },
+      {
+        "id": "north-return",
+        "pointIds": [
+          "north-reception",
+          "north-viewpoint"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 37.562,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      },
+      {
+        "id": "guide-link",
+        "pointIds": [
+          "western-guide",
+          "materials-source"
+        ],
+        "widthTiles": 6,
+        "centrelineLengthTiles": 63.089,
+        "classification": "fictional walking connection; no ancient street or current/native passability assertion",
+        "nativeStatus": "pending complete corridor/footprint checks"
+      }
+    ],
+    "terrainPolicy": [
+      "Golden Horn north; peninsula activities remain on south bank. Positive DSM samples alone cannot identify the bank or prove land.",
+      "Preserve broad peninsula hills; do not convert building-inclusive DSM heights directly to ancient ground or flat AoE platforms.",
+      "Do not copy later Theodosian walls, 537 Hagia Sophia, later monumental Anastasia, Ottoman fabric, modern quays or bridges.",
+      "Work yards, receiving courts and paths are declared fiction. No gate, church parcel, ancient street width or local residence is authenticated by its marker.",
+      "Protect the uncertain Yenikapi coastal zone; no mission uses the harbor as an authenticated380landing.",
+      "Full-width candidate corridors still require dated feature/land checks, building footprints, recovery and game navigation.",
+      "Detailed OSM current shoreline now supplements the generalized NaturalEarth control; the blank plot remains unclassified and neither source is a380shoreline. All21candidate buffers avoid the retained current line, but no land mask, footprints, slope or ancient-route proof follows."
+    ],
+    "modernShoreControl": {
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.geojson",
+      "sha256": "529eb5556e12a6ff88f75242ae4aebb0949c4764b9a1c956595cdf1f4ae2709d",
+      "clippedControlSegments": 513,
+      "status": "detailed modern mapped line acquired; neither an ancient coast nor a water/land polygon",
+      "corridorLineClearance": [
+        {
+          "corridorId": "central-court",
+          "nearestCurrentCoastlineDistanceTiles": 35.6606,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 32.6606,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "east-source",
+          "nearestCurrentCoastlineDistanceTiles": 38.4881,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 35.4881,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "east-return",
+          "nearestCurrentCoastlineDistanceTiles": 35.8509,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 32.8509,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "central-reception",
+          "nearestCurrentCoastlineDistanceTiles": 37.2415,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 34.2415,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "ridge-hearth",
+          "nearestCurrentCoastlineDistanceTiles": 38.1997,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 35.1997,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "ridge-junction",
+          "nearestCurrentCoastlineDistanceTiles": 52.5175,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 49.5175,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "west-supply",
+          "nearestCurrentCoastlineDistanceTiles": 81.4278,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 78.4278,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "western-trade",
+          "nearestCurrentCoastlineDistanceTiles": 94.7568,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 91.7568,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "western-reception",
+          "nearestCurrentCoastlineDistanceTiles": 61.652,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 58.652,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "interior-kit",
+          "nearestCurrentCoastlineDistanceTiles": 52.5175,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 49.5175,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "kit-source",
+          "nearestCurrentCoastlineDistanceTiles": 38.2234,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 35.2234,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "kit-to-hearth",
+          "nearestCurrentCoastlineDistanceTiles": 52.3881,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 49.3881,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "southern-host",
+          "nearestCurrentCoastlineDistanceTiles": 38.2234,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 35.2234,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "southern-view",
+          "nearestCurrentCoastlineDistanceTiles": 85.7895,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 82.7895,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-view",
+          "nearestCurrentCoastlineDistanceTiles": 61.652,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 58.652,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-care-approach",
+          "nearestCurrentCoastlineDistanceTiles": 62.444,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 59.444,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-care-loop",
+          "nearestCurrentCoastlineDistanceTiles": 30.7819,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 27.7819,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-reader-link",
+          "nearestCurrentCoastlineDistanceTiles": 13.4113,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 10.4113,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-reception-link",
+          "nearestCurrentCoastlineDistanceTiles": 13.4113,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 10.4113,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "north-return",
+          "nearestCurrentCoastlineDistanceTiles": 40.1555,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 37.1555,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        },
+        {
+          "corridorId": "guide-link",
+          "nearestCurrentCoastlineDistanceTiles": 100.5683,
+          "halfWidthTiles": 3.0,
+          "remainingMarginTiles": 97.5683,
+          "centrelineCrossesCurrentControl": false,
+          "bufferMeetsCurrentLine": false
+        }
+      ],
+      "optionalZoneLineClearance": [
+        {
+          "zoneId": "34-church-transfer-constantinople.side-1.zone-1",
+          "centreTiles": [
+            116.29,
+            173.27
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 42.2389
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-1.zone-2",
+          "centreTiles": [
+            132.29000000000002,
+            173.27
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 34.7572
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-2.zone-1",
+          "centreTiles": [
+            144.17,
+            227.83
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 56.0058
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-3.zone-1",
+          "centreTiles": [
+            203.54,
+            276.1
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 49.0405
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-4.zone-1",
+          "centreTiles": [
+            156.04,
+            272.95
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 76.1899
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-5.zone-1",
+          "centreTiles": [
+            108.38,
+            209.99
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 73.7568
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-5.zone-2",
+          "centreTiles": [
+            223.33,
+            341.16
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 105.0685
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-6.zone-1",
+          "centreTiles": [
+            136.17,
+            219.83
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 56.5592
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-6.zone-2",
+          "centreTiles": [
+            236.71,
+            333.42
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 93.4515
+        },
+        {
+          "zoneId": "34-church-transfer-constantinople.side-7.zone-1",
+          "centreTiles": [
+            100.62,
+            147.03
+          ],
+          "radiusTiles": 3,
+          "nearestCurrentLineTiles": 24.94
+        }
+      ],
+      "scope": "2Dclearance to the retained current coastline line using projected/rounded coordinates; no building footprint, slope, terrain classification, historical shore or pathfinding certification",
+      "minimumCorridorMarginTiles": 10.4113
+    }
+  },
+  "actors": [
+    {
+      "id": "imperial-church.34-church-transfer-constantinople.meal-worker",
+      "role": "fictional voluntary service worker",
+      "originPointId": "starting-court",
+      "offsetTiles": [
+        -6,
+        -4
+      ],
+      "finite": true,
+      "replacement": "none"
+    },
+    {
+      "id": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+      "role": "fictional voluntary service worker",
+      "originPointId": "starting-court",
+      "offsetTiles": [
+        -6,
+        4
+      ],
+      "finite": true,
+      "replacement": "none"
+    },
+    {
+      "id": "imperial-church.34-church-transfer-constantinople.meal-recipient",
+      "role": "fictional original consenting recipient",
+      "originPointId": "starting-court",
+      "offsetTiles": [
+        5,
+        -5
+      ],
+      "finite": true,
+      "replacement": "none"
+    },
+    {
+      "id": "imperial-church.34-church-transfer-constantinople.household-a",
+      "role": "fictional original consenting household",
+      "originPointId": "starting-court",
+      "offsetTiles": [
+        6,
+        1
+      ],
+      "finite": true,
+      "replacement": "none"
+    },
+    {
+      "id": "imperial-church.34-church-transfer-constantinople.household-b",
+      "role": "fictional original consenting household",
+      "originPointId": "starting-court",
+      "offsetTiles": [
+        6,
+        7
+      ],
+      "finite": true,
+      "replacement": "none"
+    }
+  ],
+  "services": [
+    {
+      "id": "meal-service",
+      "recipes": [
+        {
+          "id": "meal-direct",
+          "cost": {
+            "food": 240,
+            "wood": 40
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+          "workPointId": "meal-direct-source",
+          "receptionPointId": "meal-reception",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-direct-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.meal-recipient"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "host-worksite",
+            "meal-direct-source"
+          ],
+          "outputDeliveryPointIds": [
+            "meal-direct-source",
+            "host-worksite",
+            "meal-reception"
+          ],
+          "plannedCentrelineTiles": 169.366,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "Prepared Provisions",
+            "es-ES": "Provisiones preparadas"
+          }
+        },
+        {
+          "id": "meal-shared-hearth",
+          "cost": {
+            "food": 160,
+            "wood": 140
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+          "workPointId": "hearth-worksite",
+          "receptionPointId": "meal-reception",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-shared-hearth-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.meal-recipient"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "hearth-worksite"
+          ],
+          "outputDeliveryPointIds": [
+            "hearth-worksite",
+            "starting-court",
+            "meal-reception"
+          ],
+          "plannedCentrelineTiles": 150.875,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "At the Shared Hearth",
+            "es-ES": "Junto al fogón compartido"
+          }
+        },
+        {
+          "id": "meal-purchased",
+          "cost": {
+            "food": 100,
+            "wood": 40,
+            "gold": 100
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+          "workPointId": "merchant-worksite",
+          "receptionPointId": "meal-reception",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-purchased-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.meal-recipient"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "hearth-worksite",
+            "western-junction",
+            "materials-source",
+            "merchant-worksite"
+          ],
+          "outputDeliveryPointIds": [
+            "merchant-worksite",
+            "materials-source",
+            "western-junction",
+            "hearth-worksite",
+            "starting-court",
+            "meal-reception"
+          ],
+          "plannedCentrelineTiles": 470.294,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "A Merchant's Consignment",
+            "es-ES": "La remesa del mercader"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shelter-service",
+      "recipes": [
+        {
+          "id": "shelter-materials",
+          "cost": {
+            "food": 80,
+            "wood": 200
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+          "workPointId": "materials-source",
+          "receptionPointId": "materials-court",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-materials-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.household-a",
+            "imperial-church.34-church-transfer-constantinople.household-b"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "hearth-worksite",
+            "western-junction",
+            "materials-source"
+          ],
+          "outputDeliveryPointIds": [
+            "materials-source",
+            "merchant-worksite",
+            "materials-court"
+          ],
+          "plannedCentrelineTiles": 283.843,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "Build from Delivered Materials",
+            "es-ES": "Preparar con materiales entregados"
+          }
+        },
+        {
+          "id": "shelter-local-kit",
+          "cost": {
+            "food": 100,
+            "wood": 120,
+            "gold": 20
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+          "workPointId": "kit-worksite",
+          "receptionPointId": "kit-court",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-local-kit-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.household-a",
+            "imperial-church.34-church-transfer-constantinople.household-b"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "kit-worksite"
+          ],
+          "outputDeliveryPointIds": [
+            "kit-worksite",
+            "hearth-worksite",
+            "kit-court"
+          ],
+          "plannedCentrelineTiles": 113.168,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "Prepare a Local Kit",
+            "es-ES": "Preparar un equipo local"
+          }
+        },
+        {
+          "id": "shelter-rented",
+          "cost": {
+            "food": 60,
+            "wood": 60,
+            "gold": 110
+          },
+          "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+          "workPointId": "host-worksite",
+          "receptionPointId": "host-court",
+          "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-rented-output",
+          "recipientIds": [
+            "imperial-church.34-church-transfer-constantinople.household-a",
+            "imperial-church.34-church-transfer-constantinople.household-b"
+          ],
+          "workerApproachPointIds": [
+            "starting-court",
+            "host-worksite"
+          ],
+          "outputDeliveryPointIds": [
+            "host-worksite",
+            "starting-court",
+            "host-court"
+          ],
+          "plannedCentrelineTiles": 138.884,
+          "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+          "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag",
+          "name": {
+            "en": "A Willing Host",
+            "es-ES": "Un anfitrión dispuesto"
+          }
+        }
+      ]
+    }
+  ],
+  "ninePlanComparison": [
+    {
+      "mealRecipeId": "meal-direct",
+      "shelterRecipeId": "shelter-materials",
+      "cost": {
+        "food": 320,
+        "wood": 240,
+        "gold": 0,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 453.209,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-direct",
+      "shelterRecipeId": "shelter-local-kit",
+      "cost": {
+        "food": 340,
+        "wood": 160,
+        "gold": 20,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 282.534,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-direct",
+      "shelterRecipeId": "shelter-rented",
+      "cost": {
+        "food": 300,
+        "wood": 100,
+        "gold": 110,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": true
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 308.25,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-shared-hearth",
+      "shelterRecipeId": "shelter-materials",
+      "cost": {
+        "food": 240,
+        "wood": 340,
+        "gold": 0,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": false,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 434.718,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-shared-hearth",
+      "shelterRecipeId": "shelter-local-kit",
+      "cost": {
+        "food": 260,
+        "wood": 260,
+        "gold": 20,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 264.043,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-shared-hearth",
+      "shelterRecipeId": "shelter-rented",
+      "cost": {
+        "food": 220,
+        "wood": 200,
+        "gold": 110,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": true
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 289.759,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-purchased",
+      "shelterRecipeId": "shelter-materials",
+      "cost": {
+        "food": 180,
+        "wood": 240,
+        "gold": 100,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 754.137,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-purchased",
+      "shelterRecipeId": "shelter-local-kit",
+      "cost": {
+        "food": 200,
+        "wood": 160,
+        "gold": 120,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": true,
+        "hard": true
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 583.462,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    },
+    {
+      "mealRecipeId": "meal-purchased",
+      "shelterRecipeId": "shelter-rented",
+      "cost": {
+        "food": 160,
+        "wood": 100,
+        "gold": 210,
+        "stone": 0
+      },
+      "allSkipAffordable": {
+        "easy": true,
+        "standard": false,
+        "hard": false
+      },
+      "combinedWorkerAndOutputCentrelineTiles": 609.178,
+      "workloadLimit": "sum of two independently controlled workers plus output delivery lengths; not critical path, completion time, recipient travel or pathfinding"
+    }
+  ],
+  "operatingStockByDifficulty": {
+    "easy": {
+      "food": 420,
+      "wood": 380,
+      "gold": 260
+    },
+    "standard": {
+      "food": 340,
+      "wood": 280,
+      "gold": 150
+    },
+    "hard": {
+      "food": 300,
+      "wood": 220,
+      "gold": 120
+    }
+  },
+  "paymentAndRecovery": [
+    "Preview and route information are free. Show both selected methods, joint total and resulting balance before confirming.",
+    "Reserve exactly one complete affordable selection atomically. No partial service debit, future reward, protected stock or menu default can fund it.",
+    "Before commitment cancel once and restore only the same escrow; optional progress/earned credit remains as specified by the accepted reference.",
+    "After commitment preserve recipe and original identity; no free method switch/refund or resurrected recipient/output. Follow i00007 reference life-cycle and death priority.",
+    "An optional actor loss fails only its side task; required recipient/selected output losses obey the existing reference terminal rules. No historical death or coerced creed is a game target."
+  ],
+  "optionalPortfolioPlan": [
+    {
+      "id": "provision-first",
+      "taskIds": [
+        "neighbor-provisions",
+        "damaged-civilian-store"
+      ],
+      "reason": "Information and earlier aid can fund a repair that is unaffordable from hard shared-hearth+rented remaining20W."
+    },
+    {
+      "id": "informed-movement",
+      "taskIds": [
+        "slope-survey",
+        "local-wayfinding",
+        "service-observation"
+      ],
+      "reason": "See actual work destinations and route lengths before committing; information does not alter terrain or open a new road."
+    },
+    {
+      "id": "household-source-care",
+      "taskIds": [
+        "voluntary-household-return",
+        "source-comparison"
+      ],
+      "reason": "Help distinct optional originals and retain attributed date comparison; neither replaces main household IDs."
+    }
+  ],
+  "optionalWorldStatus": "Seven individual side contracts materialized through the existing shared helper; original identities, destinations, disjoint circles, finite costs/rewards and state/persistence are explicit. Placement is candidate geometry, not native footprint/terrain certification.",
+  "continuity": {
+    "previousEpisodeId": "28-law-and-local-reception-thessalonica",
+    "nextEpisodeId": "29-council-and-final-perspective-constantinople",
+    "campaignCompletion": false,
+    "policy": "Point to the381council next; no early campaign flag, successor choice or compulsory predecessor. Marcus remains the same campaign persona."
+  },
+  "nativeCapabilityBoundary": {
+    "profile": "composed-world-ledger opt-in v3 reference",
+    "reference": "i00007/S1–S2 independently approved; retrieve live state",
+    "pending": [
+      "i00003 native composition/terrain/transport/input as relevant",
+      "i00007/S3 native/UI/engine integration",
+      "s00001 real-engine evidence"
+    ],
+    "designFactoryBoundary": "The existing side-objective builder materializes these seven contracts; the full dossier factory still does not project this v3alternative main plan. Do not replace exclusive recipes with simultaneous fixed debits. A reusable typed projection and explicit validation must precede full-dossier/native promotion."
+  },
+  "acceptanceStillOpen": [
+    "independent historical/geographic review of phase-specific placement",
+    "every candidate full-width route and work/reception circle checked against relevant controls and native footprints",
+    "physical recipient routes and output carrying/observation on actual map, without alias or phantom cargo",
+    "independent check of these seven typed side-objective worlds, physical reserve materialization and complete EN/es-ES main/side screen inventory",
+    "reusable design projection for v3 without changing approved source envelope or string identity",
+    "all-skip, all-complete and three portfolios at each difficulty with real game observations before game approval"
+  ],
+  "countsUnchanged": {
+    "completeDesignDrafts": 63,
+    "selectionOnly": 215,
+    "expandedGameApprovals": 0
+  },
+  "authoredOptionalTasks": [
+    {
+      "slotId": "neighbor-provisions",
+      "kind": "aid",
+      "title": {
+        "en": "A Table Kept Open",
+        "es-ES": "Una mesa que sigue abierta"
+      },
+      "subject": {
+        "en": "two neighboring households",
+        "es-ES": "dos hogares vecinos"
+      },
+      "rationale": {
+        "en": "Two separately identified consignments aid consenting fictional households without creed eligibility.",
+        "es-ES": "Dos remesas con identidades distintas ayudan a hogares ficticios voluntarios sin requisitos de credo."
+      },
+      "placement": {
+        "originHub": "north-care-yard",
+        "receivingHub": "north-reception"
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ]
+    },
+    {
+      "slotId": "voluntary-household-return",
+      "kind": "extract",
+      "title": {
+        "en": "The Longer Way Home",
+        "es-ES": "El camino largo a casa"
+      },
+      "subject": {
+        "en": "two voluntary neighboring groups",
+        "es-ES": "dos grupos vecinos voluntarios"
+      },
+      "rationale": {
+        "en": "These optional originals are distinct from the two main-service households.",
+        "es-ES": "Estos originales opcionales son distintos de los dos hogares del servicio principal."
+      },
+      "placement": {
+        "originHub": "north-care-yard",
+        "receivingHub": "materials-court",
+        "entityOffsetsTiles": [
+          [
+            -9,
+            3
+          ],
+          [
+            -9,
+            7
+          ]
+        ]
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ]
+    },
+    {
+      "slotId": "source-comparison",
+      "kind": "copy",
+      "title": {
+        "en": "Two Dates in the Margin",
+        "es-ES": "Dos fechas al margen"
+      },
+      "subject": {
+        "en": "two fictional working copies",
+        "es-ES": "dos copias de trabajo ficticias"
+      },
+      "rationale": {
+        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380.",
+        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI."
+      },
+      "placement": {
+        "originHub": "north-reader",
+        "receivingHub": "hearth-worksite"
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ]
+    },
+    {
+      "slotId": "local-wayfinding",
+      "kind": "guide",
+      "title": {
+        "en": "A Neighbor's Route",
+        "es-ES": "La ruta de un vecino"
+      },
+      "subject": {
+        "en": "one local guide",
+        "es-ES": "un guía local"
+      },
+      "rationale": {
+        "en": "Escort the same original guide and mark the already proposed western supply connection; no road opens.",
+        "es-ES": "Escolta al mismo guía original y señala la conexión occidental de suministro ya propuesta; no se abre ningún camino."
+      },
+      "placement": {
+        "originHub": "western-guide",
+        "receivingHub": "western-junction",
+        "entityOffsetsTiles": [
+          [
+            -5,
+            2
+          ]
+        ]
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ],
+      "information": {
+        "effect": {
+          "kind": "mark-alternative-route",
+          "target": "west-supply",
+          "corridorId": "west-supply"
+        },
+        "benefit": {
+          "en": "Mark the existing western supply link and its actual work-site target.",
+          "es-ES": "Señala la conexión occidental existente y su punto de trabajo real."
+        }
+      }
+    },
+    {
+      "slotId": "slope-survey",
+      "kind": "scout",
+      "title": {
+        "en": "Above the Waterline",
+        "es-ES": "Por encima del agua"
+      },
+      "subject": {
+        "en": "two interior viewpoints",
+        "es-ES": "dos miradores interiores"
+      },
+      "rationale": {
+        "en": "Observe both authored sites; reveal the existing northern care circuit rather than enemies, a new path or ancient shoreline certainty.",
+        "es-ES": "Observa ambos lugares diseñados; señala el circuito asistencial norte existente, sin enemigos, caminos nuevos ni certeza sobre la costa antigua."
+      },
+      "placement": {
+        "originHub": "starting-court",
+        "receivingHub": "north-viewpoint",
+        "observationHubs": [
+          "north-viewpoint",
+          "south-viewpoint"
+        ]
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ],
+      "information": {
+        "effect": {
+          "kind": "mark-alternative-route",
+          "target": "north-care-loop",
+          "corridorId": "north-care-loop"
+        },
+        "benefit": {
+          "en": "Mark the existing care loop; all costs and destinations remain available without this task.",
+          "es-ES": "Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+        }
+      }
+    },
+    {
+      "slotId": "service-observation",
+      "kind": "watch",
+      "title": {
+        "en": "Room for the Next Household",
+        "es-ES": "Sitio para el siguiente hogar"
+      },
+      "subject": {
+        "en": "two service approaches",
+        "es-ES": "dos accesos de servicio"
+      },
+      "rationale": {
+        "en": "Visit separate observation circles outside both real receiving circles to distinguish alternative shelter courts; a past visit cannot substitute for required current recipients.",
+        "es-ES": "Visita círculos de observación separados de los receptores para distinguir patios alternativos; una visita pasada no sustituye la presencia actual de destinatarios."
+      },
+      "placement": {
+        "originHub": "starting-court",
+        "receivingHub": "host-court",
+        "observationHubs": [
+          "materials-court",
+          "host-court"
+        ]
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ],
+      "information": {
+        "effect": {
+          "kind": "mark-alternative-route",
+          "target": "southern-host",
+          "corridorId": "southern-host"
+        },
+        "benefit": {
+          "en": "Mark the existing southern host approach and explain the selected-court requirement.",
+          "es-ES": "Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+        }
+      }
+    },
+    {
+      "slotId": "damaged-civilian-store",
+      "kind": "repair",
+      "title": {
+        "en": "Timber Put to Use",
+        "es-ES": "Madera bien empleada"
+      },
+      "subject": {
+        "en": "one fictional damaged civilian store",
+        "es-ES": "un almacén civil dañado ficticio"
+      },
+      "rationale": {
+        "en": "A50wood atomic restoration and actual full-health receipt precede its funded reward. Prior damage is fiction, not an ancient disaster.",
+        "es-ES": "Una restauración atómica de50madera y su recibo real de salud completa preceden la recompensa financiada. El daño previo es ficción, no un desastre antiguo."
+      },
+      "placement": {
+        "originHub": "north-store",
+        "receivingHub": "north-store",
+        "entityOffsetsTiles": [
+          [
+            -4,
+            -4
+          ]
+        ]
+      },
+      "corridorIds": [
+        "central-court",
+        "east-source",
+        "east-return",
+        "central-reception",
+        "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "interior-kit",
+        "kit-source",
+        "kit-to-hearth",
+        "southern-host",
+        "southern-view",
+        "north-view",
+        "north-care-approach",
+        "north-care-loop",
+        "north-reader-link",
+        "north-reception-link",
+        "north-return",
+        "guide-link"
+      ]
+    }
+  ],
+  "secondaryObjectives": [
+    {
+      "id": "side-1",
+      "kind": "aid",
+      "title": {
+        "en": "A Table Kept Open",
+        "es-ES": "Una mesa que sigue abierta"
+      },
+      "subject": {
+        "en": "two neighboring households",
+        "es-ES": "dos hogares vecinos"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Two separately identified consignments aid consenting fictional households without creed eligibility.",
+        "es-ES": "Dos remesas con identidades distintas ayudan a hogares ficticios voluntarios sin requisitos de credo."
+      },
+      "text": {
+        "en": "Bring each of the two aid crates to its assigned household at two neighboring households. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en dos hogares vecinos. Ventaja: 100 de alimento, 50 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-1.entity-1",
+              "34-church-transfer-constantinople.side-1.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-1.entity-1": "34-church-transfer-constantinople.side-1.zone-1",
+              "34-church-transfer-constantinople.side-1.entity-2": "34-church-transfer-constantinople.side-1.zone-2"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-1.entity-1",
+            "role": "aid",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-1.entity-2",
+            "role": "aid",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-1.zone-1",
+            "hub": "north-reception",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-1.zone-2",
+            "hub": "north-reception",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "wood": 50
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-1.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-1.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-care-yard",
+        "receivingHub": "north-reception",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "neighbor-provisions"
+    },
+    {
+      "id": "side-2",
+      "kind": "extract",
+      "title": {
+        "en": "The Longer Way Home",
+        "es-ES": "El camino largo a casa"
+      },
+      "subject": {
+        "en": "two voluntary neighboring groups",
+        "es-ES": "dos grupos vecinos voluntarios"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "These optional originals are distinct from the two main-service households.",
+        "es-ES": "Estos originales opcionales son distintos de los dos hogares del servicio principal."
+      },
+      "text": {
+        "en": "Bring both voluntary evacuee groups from two voluntary neighboring groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos grupos vecinos voluntarios al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-2.entity-1",
+              "34-church-transfer-constantinople.side-2.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-2.entity-1": "34-church-transfer-constantinople.side-2.zone-1",
+              "34-church-transfer-constantinople.side-2.entity-2": "34-church-transfer-constantinople.side-2.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-2.entity-1",
+            "role": "extract",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -9,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-2.entity-2",
+            "role": "extract",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -9,
+              7
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-2.zone-1",
+            "hub": "materials-court",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "gold": 25
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-2.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-2.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-care-yard",
+        "receivingHub": "materials-court",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "voluntary-household-return"
+    },
+    {
+      "id": "side-3",
+      "kind": "copy",
+      "title": {
+        "en": "Two Dates in the Margin",
+        "es-ES": "Dos fechas al margen"
+      },
+      "subject": {
+        "en": "two fictional working copies",
+        "es-ES": "dos copias de trabajo ficticias"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380.",
+        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI."
+      },
+      "text": {
+        "en": "Recover both separate copies from two fictional working copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias distintas de dos copias de trabajo ficticias y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-3.entity-1",
+              "34-church-transfer-constantinople.side-3.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-3.entity-1": "34-church-transfer-constantinople.side-3.zone-1",
+              "34-church-transfer-constantinople.side-3.entity-2": "34-church-transfer-constantinople.side-3.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-3.entity-1",
+            "role": "copy",
+            "initialHub": "north-reader",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-3.entity-2",
+            "role": "copy",
+            "initialHub": "north-reader",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-3.zone-1",
+            "hub": "hearth-worksite",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "unlock-context-and-hint",
+          "target": "documented context and a main-goal hint",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-3.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "sourceIds": [
+            "odyssey-source.imperial-church.34-church-transfer-constantinople"
+          ],
+          "historicalNote": {
+            "en": "Late380 church possession changed under imperial power; surviving accounts differ on the month. This is retrospective collection commentary, not a document available to the380persona.",
+            "es-ES": "A finales de380 cambió la posesión de iglesias por el poder imperial; los relatos conservados difieren en el mes. Este comentario retrospectivo de colección no es un documento disponible para la persona de380."
+          },
+          "hint": {
+            "en": "Complete both voluntary services with one funded plan and the same original living recipients.",
+            "es-ES": "Completa ambos servicios voluntarios con un plan financiado y los mismos destinatarios originales vivos."
+          }
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-3.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-reader",
+        "receivingHub": "hearth-worksite",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "source-comparison"
+    },
+    {
+      "id": "side-4",
+      "kind": "guide",
+      "title": {
+        "en": "A Neighbor's Route",
+        "es-ES": "La ruta de un vecino"
+      },
+      "subject": {
+        "en": "one local guide",
+        "es-ES": "un guía local"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Escort the same original guide and mark the already proposed western supply connection; no road opens.",
+        "es-ES": "Escolta al mismo guía original y señala la conexión occidental de suministro ya propuesta; no se abre ningún camino."
+      },
+      "text": {
+        "en": "Escort the local guide of one local guide to the marked road junction. Benefit: Mark the existing western supply link and its actual work-site target.",
+        "es-ES": "Escolta al guía local de un guía local hasta el cruce señalado. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-4.entity-1"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-4.entity-1": "34-church-transfer-constantinople.side-4.zone-1"
+            },
+            "requiredCount": 1,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-4.entity-1",
+            "role": "guide",
+            "initialHub": "western-guide",
+            "offsetTiles": [
+              -5,
+              2
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-4.zone-1",
+            "hub": "western-junction",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "west-supply",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-4.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "west-supply"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-4.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "western-guide",
+        "receivingHub": "western-junction",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "local-wayfinding"
+    },
+    {
+      "id": "side-5",
+      "kind": "scout",
+      "title": {
+        "en": "Above the Waterline",
+        "es-ES": "Por encima del agua"
+      },
+      "subject": {
+        "en": "two interior viewpoints",
+        "es-ES": "dos miradores interiores"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Observe both authored sites; reveal the existing northern care circuit rather than enemies, a new path or ancient shoreline certainty.",
+        "es-ES": "Observa ambos lugares diseñados; señala el circuito asistencial norte existente, sin enemigos, caminos nuevos ni certeza sobre la costa antigua."
+      },
+      "text": {
+        "en": "Scout both marked viewpoints of two interior viewpoints. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
+        "es-ES": "Explora los dos miradores señalados de dos miradores interiores. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "34-church-transfer-constantinople.side-5.zone-1",
+              "34-church-transfer-constantinople.side-5.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-5.zone-1",
+            "hub": "north-viewpoint",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-5.zone-2",
+            "hub": "south-viewpoint",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "north-care-loop",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-5.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "north-care-loop"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-5.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "starting-court",
+        "receivingHub": "north-viewpoint",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "slope-survey"
+    },
+    {
+      "id": "side-6",
+      "kind": "watch",
+      "title": {
+        "en": "Room for the Next Household",
+        "es-ES": "Sitio para el siguiente hogar"
+      },
+      "subject": {
+        "en": "two service approaches",
+        "es-ES": "dos accesos de servicio"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Visit separate observation circles outside both real receiving circles to distinguish alternative shelter courts; a past visit cannot substitute for required current recipients.",
+        "es-ES": "Visita círculos de observación separados de los receptores para distinguir patios alternativos; una visita pasada no sustituye la presencia actual de destinatarios."
+      },
+      "text": {
+        "en": "Visit both observation posts overlooking two service approaches. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
+        "es-ES": "Visita los dos puestos de observación sobre dos accesos de servicio. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "34-church-transfer-constantinople.side-6.zone-1",
+              "34-church-transfer-constantinople.side-6.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-6.zone-1",
+            "hub": "materials-court",
+            "offsetTiles": [
+              0,
+              -8
+            ],
+            "radiusTiles": 3
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-6.zone-2",
+            "hub": "host-court",
+            "offsetTiles": [
+              0,
+              8
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "southern-host",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-6.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "southern-host"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-6.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "starting-court",
+        "receivingHub": "host-court",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "service-observation"
+    },
+    {
+      "id": "side-7",
+      "kind": "repair",
+      "title": {
+        "en": "Timber Put to Use",
+        "es-ES": "Madera bien empleada"
+      },
+      "subject": {
+        "en": "one fictional damaged civilian store",
+        "es-ES": "un almacén civil dañado ficticio"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "A50wood atomic restoration and actual full-health receipt precede its funded reward. Prior damage is fiction, not an ancient disaster.",
+        "es-ES": "Una restauración atómica de50madera y su recibo real de salud completa preceden la recompensa financiada. El daño previo es ficción, no un desastre antiguo."
+      },
+      "text": {
+        "en": "Pay 50 wood and restore the damaged store of one fictional damaged civilian store to full health. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de un almacén civil dañado ficticio. Ventaja: 200 de alimento, 100 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-health",
+            "entity": "34-church-transfer-constantinople.side-7.entity-1",
+            "health": "full",
+            "paymentReceipt": "34-church-transfer-constantinople.side-7.payment",
+            "restoration": "atomic 50-wood repair transaction restores full health; no additional engine repair charge"
+          },
+          {
+            "kind": "atomic-payment",
+            "resources": {
+              "wood": 50
+            },
+            "receipt": "34-church-transfer-constantinople.side-7.payment",
+            "afterArrival": false,
+            "once": true,
+            "protectedRecoveryCannotBeSpent": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-7.entity-1",
+            "role": "repair",
+            "initialHub": "north-store",
+            "offsetTiles": [
+              -4,
+              -4
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": false,
+            "initialHealthFraction": 0.5,
+            "damageSource": "fictional prior damage"
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-7.zone-1",
+            "hub": "north-store",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 200,
+            "wood": 100
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-7.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-7.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-store",
+        "receivingHub": "north-store",
+        "corridorIds": [
+          "central-court",
+          "east-source",
+          "east-return",
+          "central-reception",
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "interior-kit",
+          "kit-source",
+          "kit-to-hearth",
+          "southern-host",
+          "southern-view",
+          "north-view",
+          "north-care-approach",
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link",
+          "north-return",
+          "guide-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ],
+      "slotId": "damaged-civilian-store"
+    }
+  ],
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 0,
+      "stone": 0
+    },
+    "policy": "Reward reserve is segregated from operating allocation. No harvested, future or protected funds enter9/7/3all-skip accounting. Atomic rule from shared secondary mechanics remains native-pending."
+  },
+  "screenStoryboard": [
+    {
+      "id": "fact-intro",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "In late 380, Theodosius entered Constantinople and ordered changes in church possession. Socrates places the arrival and transfer on separate November days; Marcellinus records the restoration he favored in December. These later accounts do not establish what every inhabitant believed. The following local service story is invented.",
+        "es-ES": "A finales de 380, Teodosio entró en Constantinopla y ordenó cambios en la posesión de iglesias. Sócrates sitúa la llegada y el traspaso en días distintos de noviembre; Marcelino fecha en diciembre la restauración que favorecía. Estos relatos posteriores no establecen qué creía cada habitante. La siguiente historia asistencial local es inventada."
+      },
+      "trigger": "before personal introduction",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "handover",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Marcus, the clerk whose account accompanies this campaign, now describes a day among fictional neighbors. His judgments are his own.",
+        "es-ES": "Marcus, el escribiente cuyo relato acompaña esta campaña, describe ahora una jornada entre vecinos ficticios. Sus juicios le pertenecen."
+      },
+      "trigger": "after factual introduction",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "personal-intro",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "I had written a fine heading about concord. My neighbor read it upside down and asked where her mother could sit that evening. I explained what I thought the emperor intended. She asked again about the chair. I turned the sheet over and began a different list.",
+        "es-ES": "Había escrito un encabezamiento solemne sobre la concordia. Mi vecina lo leyó del revés y preguntó dónde podría sentarse su madre aquella tarde. Le expliqué lo que yo creía que pretendía el emperador. Volvió a preguntar por la silla. Di la vuelta a la hoja y empecé otra lista."
+      },
+      "trigger": "after handover",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "main-goal",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Arrange both voluntary services: one meal and shelter for the same two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected result to its own court. Keep the original recipients alive and present at the end.",
+        "es-ES": "Organiza ambos servicios voluntarios: una comida y alojamiento para los mismos dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a su patio correspondiente. Conserva vivos y presentes a los destinatarios originales al final."
+      },
+      "trigger": "main objective list",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "preview-help",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Compare the joint cost, the remaining supplies and both work routes before confirming. Preview is free. The three meal methods lead to one reception; each shelter method has its own receiving court. All main destinations and costs are visible without optional tasks.",
+        "es-ES": "Compara el coste conjunto, los suministros restantes y ambos recorridos antes de confirmar. La consulta es gratuita. Los tres métodos de comida llevan a una recepción; cada método de alojamiento tiene su propio patio receptor. Los destinos y costes principales están visibles aunque omitas los secundarios."
+      },
+      "trigger": "first plan preview or help",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "budget-help",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Your operating allocation is finite. Easy provides 420 food,380 wood and 260 gold; standard 340,280 and 150; hard 300,220 and 120. The separate optional reward reserve is not spendable until its task succeeds. Every difficulty has a solution that skips every optional task.",
+        "es-ES": "Tu asignación operativa es finita. Fácil ofrece 420 alimento,380 madera y 260 oro; normal 340,280 y 150; difícil 300,220 y 120. La reserva separada de recompensas opcionales no se puede gastar hasta cumplir su tarea. Todas las dificultades permiten terminar omitiendo todos los secundarios."
+      },
+      "trigger": "economy help",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unaffordable-plan",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "The complete plan costs more than your available allocation. Nothing has been charged. Choose another pair or earn optional assistance before funding. A reward cannot pay its own upfront cost.",
+        "es-ES": "El plan completo cuesta más que tu asignación disponible. No se ha cobrado nada. Elige otra pareja o consigue ayuda opcional antes de financiarlo. Una recompensa no puede pagar su propio coste inicial."
+      },
+      "trigger": "failed whole-plan affordability check",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "reservation-help",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "You may cancel and choose again before any selected work begins. Cancellation returns only the reserved plan cost. Once work starts, the selected methods are fixed; no free refund, replacement household or substitute result is available.",
+        "es-ES": "Puedes cancelar y volver a elegir antes de que empiece cualquier trabajo seleccionado. La cancelación devuelve únicamente el coste reservado del plan. Una vez iniciado el trabajo, los métodos quedan fijados: no hay devolución gratuita, hogar de reemplazo ni resultado sustituto."
+      },
+      "trigger": "before confirmation and on help",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "cancelled",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "A crossed-out estimate is cheaper than a promise already put to work. We can choose again.",
+        "es-ES": "Un presupuesto tachado cuesta menos que una promesa que ya se ha puesto en marcha. Podemos volver a elegir."
+      },
+      "trigger": "successful pre-work cancellation",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-help",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Send each assigned worker to the selected work site. After the work is recorded, take that method's own result to its receiving court. Paying, visiting the wrong site or delivering another method's result does not complete a service.",
+        "es-ES": "Envía a cada trabajador asignado al lugar de trabajo seleccionado. Tras registrar el trabajo, lleva el resultado propio de ese método a su patio receptor. Pagar, visitar otro lugar o entregar el resultado de otro método no completa un servicio."
+      },
+      "trigger": "after whole-plan funding",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-meal-direct",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: Prepared Provisions. Cost: 240 food, 40 wood. Work at The Prepared Consignment; then take the result to The Neighbors' Table. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: Provisiones preparadas. Coste: 240 de alimento, 40 de madera. Trabaja en La remesa preparada; después lleva el resultado a La mesa de los vecinos. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-meal-shared-hearth",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: At the Shared Hearth. Cost: 160 food, 140 wood. Work at The Shared Hearth; then take the result to The Neighbors' Table. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: Junto al fogón compartido. Coste: 160 de alimento, 140 de madera. Trabaja en El fogón compartido; después lleva el resultado a La mesa de los vecinos. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-meal-purchased",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: A Merchant's Consignment. Cost: 100 food, 40 wood, 100 gold. Work at The Western Merchant; then take the result to The Neighbors' Table. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: La remesa del mercader. Coste: 100 de alimento, 40 de madera, 100 de oro. Trabaja en El mercader occidental; después lleva el resultado a La mesa de los vecinos. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-shelter-materials",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: Build from Delivered Materials. Cost: 80 food, 200 wood. Work at The Timber Yard; then take the result to The Western Shelter Yard. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: Preparar con materiales entregados. Coste: 80 de alimento, 200 de madera. Trabaja en El depósito de madera; después lleva el resultado a El patio de refugio occidental. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-shelter-local-kit",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: Prepare a Local Kit. Cost: 100 food, 120 wood, 20 gold. Work at The Local Workshop; then take the result to The Interior Shelter Yard. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: Preparar un equipo local. Coste: 100 de alimento, 120 de madera, 20 de oro. Trabaja en El taller local; después lleva el resultado a El patio de refugio interior. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "work-shelter-rented",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Selected method: A Willing Host. Cost: 60 food, 60 wood, 110 gold. Work at The Host's Meeting Place; then take the result to The Southern Host's Courtyard. The assigned worker must reach the work site before its own result is available.",
+        "es-ES": "Método seleccionado: Un anfitrión dispuesto. Coste: 60 de alimento, 60 de madera, 110 de oro. Trabaja en El lugar de encuentro con el anfitrión; después lleva el resultado a El patio del anfitrión del sur. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+      },
+      "trigger": "instructions for the actual selected recipe",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "meal-received",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "One line has become a meal at the right table. Keep its recipient here while we finish the other service.",
+        "es-ES": "Una línea se ha convertido en una comida en la mesa adecuada. Mantén aquí a su destinatario mientras terminamos el otro servicio."
+      },
+      "trigger": "qualified meal output receipt",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "shelter-received",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The same two households, at the court we actually arranged. I shall not replace either name with a convenient mark.",
+        "es-ES": "Los mismos dos hogares, en el patio que hemos preparado de verdad. No sustituiré ninguno de sus nombres por una marca cómoda."
+      },
+      "trigger": "qualified shelter output receipt",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "final-presence-help",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Both receipts remain recorded, but success also requires every original recipient alive at its selected court now. A past arrival does not count as current presence. Return a departing recipient before completing the other service.",
+        "es-ES": "Ambos recibos quedan registrados, pero el éxito también exige que cada destinatario original esté vivo ahora en su patio seleccionado. Una llegada pasada no cuenta como presencia actual. Haz regresar a quien se aleje antes de completar el otro servicio."
+      },
+      "trigger": "receipt exists but final living presence not satisfied",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-neighbor-provisions",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Bring each of the two aid crates to its assigned household at two neighboring households. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en dos hogares vecinos. Ventaja: 100 de alimento, 50 de madera, una vez."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-neighbor-provisions",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "Two deliveries, two households. The spare timber is real enough; the generous heading may wait.",
+        "es-ES": "Dos entregas, dos hogares. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-neighbor-provisions",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The missing consignment cannot be wished into the other crate. This aid task closes; our main services remain possible.",
+        "es-ES": "La remesa perdida no aparece por desearla en la otra caja. Esta ayuda se cierra; los servicios principales siguen siendo posibles."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-voluntary-household-return",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Bring both voluntary evacuee groups from two voluntary neighboring groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos grupos vecinos voluntarios al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-voluntary-household-return",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "They chose the receiving yard and reached it together. These are their names, not substitutes for another family.",
+        "es-ES": "Eligieron el patio receptor y llegaron juntos. Estos son sus nombres, no sustitutos de otra familia."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-voluntary-household-return",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "We cannot repeat their journey with strangers and call it the same arrival. This optional task has ended.",
+        "es-ES": "No podemos repetir su recorrido con desconocidos y llamarlo la misma llegada. Esta tarea opcional ha terminado."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-source-comparison",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Recover both separate copies from two fictional working copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias distintas de dos copias de trabajo ficticias y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-source-comparison",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "Both copies have reached the reader. Two separate sheets deserve two separate entries.",
+        "es-ES": "Ambas copias han llegado al lector. Dos hojas distintas merecen dos anotaciones distintas."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-source-comparison",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "One working copy is missing. Leave that line incomplete; do not make a second original out of the first.",
+        "es-ES": "Falta una copia de trabajo. Deja esa línea incompleta; no conviertas la primera en un segundo original."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-local-wayfinding",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Escort the local guide of one local guide to the marked road junction. Benefit: Mark the existing western supply link and its actual work-site target.",
+        "es-ES": "Escolta al guía local de un guía local hasta el cruce señalado. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-local-wayfinding",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The guide has shown the existing turn. Ink can mark a road; it cannot build one.",
+        "es-ES": "El guía ha señalado el desvío existente. La tinta puede marcar un camino; no construirlo."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-local-wayfinding",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "We have lost this guide's help. The western connection still exists; the main destinations are still marked.",
+        "es-ES": "Hemos perdido la ayuda de este guía. La conexión occidental sigue existiendo; los destinos principales continúan señalados."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-slope-survey",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Scout both marked viewpoints of two interior viewpoints. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
+        "es-ES": "Explora los dos miradores señalados de dos miradores interiores. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-slope-survey",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "Both viewpoints are recorded. The long circuit is still long, but we can see what it serves.",
+        "es-ES": "Ambos miradores quedan registrados. El circuito largo sigue siendo largo, pero vemos a qué sirve."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-slope-survey",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "This survey closes with the other unfinished tasks. It grants no late supplies and changes no road.",
+        "es-ES": "Esta exploración se cierra con las demás tareas sin terminar. No concede suministros tardíos ni cambia ningún camino."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-service-observation",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Visit both observation posts overlooking two service approaches. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
+        "es-ES": "Visita los dos puestos de observación sobre dos accesos de servicio. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-service-observation",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "Two approaches, different courts. The word shelter no longer hides which door we mean.",
+        "es-ES": "Dos accesos, patios distintos. La palabra alojamiento ya no oculta a qué puerta nos referimos."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-service-observation",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The observation remains incomplete. Use the already visible selected court; no service depends on this note.",
+        "es-ES": "La observación queda incompleta. Usa el patio seleccionado que ya está visible; ningún servicio depende de esta nota."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "offer-damaged-civilian-store",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Pay 50 wood and restore the damaged store of one fictional damaged civilian store to full health. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de un almacén civil dañado ficticio. Ventaja: 200 de alimento, 100 de madera, una vez."
+      },
+      "trigger": "optional objective offered from start",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "complete-damaged-civilian-store",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The store is restored, and its reserved supplies can be issued once. A payment without the work would have repaired only my accounts.",
+        "es-ES": "El almacén está restaurado y sus suministros reservados pueden entregarse una vez. Un pago sin trabajo sólo habría reparado mis cuentas."
+      },
+      "trigger": "optional predicate and atomic reward completed once",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "unavailable-damaged-civilian-store",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "The store can no longer be restored in this task. Its reserved stock remains unearned; the main services do not fail with it.",
+        "es-ES": "Ya no se puede restaurar el almacén en esta tarea. Sus existencias reservadas siguen sin ganarse; los servicios principales no fracasan por ello."
+      },
+      "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "retrospective-source-note",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "The work copies in this fictional 380 scene are not the books of Socrates or Marcellinus. Those later writers place the possession change in different months. Their disagreement is retained for the player; Marcus does not read these later works in 380.",
+        "es-ES": "Las copias de trabajo de esta escena ficticia de 380 no son los libros de Sócrates ni Marcelino. Esos autores posteriores sitúan el cambio de posesión en meses distintos. Su discrepancia se conserva para el jugador; Marcus no lee estas obras posteriores en 380."
+      },
+      "trigger": "source-comparison contextual note; outside persona knowledge",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "main-defeat",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "An original required recipient or a committed selected result has been lost. This local plan cannot be completed with a replacement. Load an earlier save or restart; the historical church-possession account does not change.",
+        "es-ES": "Se ha perdido un destinatario original obligatorio o un resultado seleccionado ya comprometido. Este plan local no se puede completar con un reemplazo. Carga una partida anterior o reinicia; el relato histórico de la posesión de iglesias no cambia."
+      },
+      "trigger": "required terminal loss; death checked before simultaneous success",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "victory-fact",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Both invented local services have been completed with their original recipients. This does not explain, approve or reverse the imperial change in church possession. The next episode concerns the council of 381 and the disputes that continued.",
+        "es-ES": "Ambos servicios locales inventados se han completado con sus destinatarios originales. Esto no explica, aprueba ni revierte el cambio imperial de posesión de iglesias. El siguiente episodio trata del concilio de 381 y de las disputas que continuaron."
+      },
+      "trigger": "both qualified services and fresh living-recipient presence, before victory",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "victory-personal",
+      "narrator": "imperial-clerk",
+      "text": {
+        "en": "My heading still said concord. Beneath it were two completed services and names I had nearly reduced to a phrase. I kept the heading, crossed it out, and left the rest legible.",
+        "es-ES": "Mi encabezamiento seguía diciendo concordia. Debajo había dos servicios cumplidos y nombres que casi había reducido a una frase. Conservé el encabezamiento, lo taché y dejé legible lo demás."
+      },
+      "trigger": "after factual outcome",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    },
+    {
+      "id": "continue-next",
+      "narrator": "collection-narrator",
+      "text": {
+        "en": "Continue within The Eagle and the Cross with episode 34, Under the Same Eastern Sky, set in 381. This is the penultimate episode. The campaign's recommendations for other odysseys belong to that final episode.",
+        "es-ES": "Continúa dentro de El águila y la cruz con el episodio 34, Bajo el mismo cielo oriental, ambientado en 381. Este es el penúltimo episodio. Las recomendaciones de otras odiseas corresponden a ese episodio final."
+      },
+      "trigger": "after personal outcome; before normal episode victory/menu return",
+      "skippable": true,
+      "classification": "original authored design text; no historical quotation or recorded voice"
+    }
+  ],
+  "screenStatus": "45original EN/es-ES screens with authored UI names; independent editorial/translation review, caption segmentation and native presentation pending. No string IDs allocated."
+}
