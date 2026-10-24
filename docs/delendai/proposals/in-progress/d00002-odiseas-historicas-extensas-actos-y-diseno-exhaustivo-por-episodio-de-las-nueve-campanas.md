@@ -6,6 +6,8 @@ status: in-progress
 type: proposal
 track: historical-odysseys
 date: 2026-10-12
+shipped-in:
+  - "924ebde26047fa275683957c2b550d690dcf4207"
 ---
 
 # d00002 — Odiseas historicas extensas: actos y diseno exhaustivo por episodio de las nueve campanas
@@ -29,14 +31,16 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - global_gate: e2e
 
 ### S1 — Arquitectura editorial de odiseas, investigación y generación reutilizable
-- **Status**: review
+- **Status**: done
 - **Files**: `tools/design/**`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/design/odyssey-selections.md`, `docs/research/odyssey-research/**`
 - **Gate**: e2e
 - acceptance:
   - "Plan explícito de nueve odiseas por actos y curva de dificultad, criterio de hito documentado sin relleno y límites históricos/licencias."
   - "Investigación delegada contrastada por arquitecto; generadores comunes y validación de contratos sin clonar lógica por escenario."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 924ebde26047, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Revisión integral independiente en docs/research/odyssey-research/common-architecture-independent-review.md (61037d9): recomputadas nueve campañas, 45 actos, 2… (2) Lectura integral de recopilaciones, contrastes, proyecciones y módulos compartidos; 278 vínculos conservan atribuciones y límites sin presentar 121 comprobacio… — Revisión independiente integral de S1, informe docs/research/odyssey-research/common-architecture-independent-review.md integrado en 924ebde26047fa275683957c2b550d690dcf4207. Ambos criterios comunes satisfechos; dos P2 numéricos reproducidos y cerrados en1290bdf. Validación propia final: salida0, 142/142 pruebas, 2069 aserciones y90 regresiones de diseño. El gate oficial certificó instalación congelada y validate del merge integrado. Se conserva el alcance de arquitectura común: no aprueba S2–S11, historia o geografía de cada episodio, calibración, derechos de distribución, capacidades nativas ni juego. No exige157 nuevas lecturas ni215 dossiers de otros slices. Implementador gpt-6 distinto del revisor gpt-6.1-sol; submit oficial1dfd385 fusionado, no emitido por este revisor.
 
 ### S2 — Embers of the Covenant: expediente de odisea y episodios
 - **Status**: pending
