@@ -1,6 +1,6 @@
 # Technical laboratory screens
 
-Two fictional campaigns, 32×32 exception. English source with complete Spanish; all persistence/UI tests remain pending.
+Two fictional campaigns, 32×32 exception. English source with complete Spanish; all persistence/UI tests remain pending. This preliminary surface list is retained as design context. The complete and current source copy is the [closed text inventory](15-text-inventory.json), with explicit handovers, distinct archivist voice, sufficient recaps and generic source outro; use it for materialisation rather than copying outdated rows below.
 
 ## The Roads Remember
 
