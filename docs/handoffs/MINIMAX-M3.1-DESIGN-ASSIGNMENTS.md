@@ -4,6 +4,8 @@ El alcance vigente son nueve odiseas y278episodios. Cada episodio tiene un slice
 
 Lee [plan](../design/odyssey-production-plan.md), [selecciones](../design/odyssey-selections.md), [asignaciones estructuradas](../design/assignments.json), [arquitectura](../architecture/overview.md) y el traspaso. Recupera estados vivos de DelendAI antes de elegir cualquier slice.
 
+**Estado actualizado, 24 de octubre de 2026:** d00002/S1 está `done` con aprobación formal independiente de GPT-6.1; se corrigieron y verificaron dos familias P2 de validación numérica. La evidencia está en [aceptación](../research/odyssey-research/common-architecture-acceptance.md) y [revisión independiente](../research/odyssey-research/common-architecture-independent-review.md). S2–S11 siguen `pending`; hay 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas, 391 secundarios y cero aprobaciones ampliadas. MiniMax permanece bloqueado para autoría histórica; su primera tarea designada sigue f00001/S1, sujeta al estado vivo del servidor.
+
 | Campaña / título inglés | Propuesta oficial | Episodios | Slices |
 |---|---|---:|---|
 | faith-origins / Embers of the Covenant | [f00004](../delendai/proposals/blocked/f00004-autoria-designada-embers-of-the-covenant.md) | 30 | S1 conformidad; S2 metadatos; 30 slices individuales; S7 promoción |

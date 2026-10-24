@@ -53,3 +53,9 @@ La versión observada admite DependsOn dentro de slices; create_proposal no ofre
 Si una operación no existe, el arquitecto registra y resuelve su propuesta; MiniMax conserva el bloqueo y no fabrica un binario, un flag de pausa ni una mecánica alternativa. El contenido sigue inglés fuente y español completo, fuente histórica atribuida, narrador común objetivo antes de la persona de campaña, recomendaciones no bloqueantes y progreso acumulativo sin borrar otras rutas.
 
 Ejecutar los [gates](MINIMAX-M3.1-QUALITY-GATES.md), solicitar revisión por modelo distinto y publicar por DelendAI. Una revisión pendiente no desaparece al cambiar de modelo. Un rechazo conserva la unidad y el motivo; no resetear ni forzar develop. No distribuir mods ni generar medios de pago masivamente sin autorización específica.
+
+## Estado operativo de d00002/S1 — 24 de octubre de 2026
+
+DelendAI registra **S1 `done`** y una revisión formal `approve` de GPT-6.1; la aprobación y metadatos quedaron integrados en `b9cff83e76b3eaee75cef789b5ace09a1c6b417b` (producto `924ebde2`). Se cumplieron los dos criterios formales. La revisión independiente corrigió las dos familias P2 numéricas (contadores y vectores de recursos); su evidencia y alcance constan en [aceptación común](../research/odyssey-research/common-architecture-acceptance.md) y [revisión independiente](../research/odyssey-research/common-architecture-independent-review.md). La verificación registrada fue 142 pruebas Bun, 2.069 aserciones y 90 pruebas de diseño; no acredita juego ni aprobación de contenido ampliado.
+
+S2–S11 siguen `pending`. El catálogo conserva 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 objetivos secundarios; hay cero aprobaciones ampliadas. La producción histórica de MiniMax sigue bloqueada. Su primera tarea designada continúa siendo f00001/S1 (piloto técnico), siempre tras recuperar del servidor su estado vivo. Esta actualización no cierra ningún slice distinto de S1.
