@@ -16,11 +16,13 @@ Permitir autoría de fuentes de episodios aprobados tras metadatos comunes, cons
 
 ## why
 
-TODO: why this work matters now.
+El propietario pide que MiniMax materialice episodios ya preparados mientras el arquitecto termina los siguientes. El validador actual confunde orden del jugador y orden de trabajo: obliga a una cadena serial de autoría. Debe aceptar la nueva planificación sin permitir promoción temprana, ciclos o pérdida de identidades.
 
 ## non-goals
 
-- TODO: what this proposal deliberately skips.
+- No implementar campañas, nuevos esquemas de escenario, operaciones nativas, cambios de IDs/progreso ni aprobación de contenido.
+- No copiar el runtime de DelendAI: este validador sólo comprueba documentos y asignaciones del proyecto, como ya hacía.
+- No desbloquear propuestas históricas ni editar sus estados. La enmienda de planificación se entrega por d00002/S11 y conserva sus gates.
 
 ## slices
 
