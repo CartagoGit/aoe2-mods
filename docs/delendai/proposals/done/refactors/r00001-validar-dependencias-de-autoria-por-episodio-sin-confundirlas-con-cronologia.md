@@ -2,14 +2,14 @@
 id: r00001
 title: "Validar dependencias de autoría por episodio sin confundirlas con cronología"
 kind: refactor
-status: review
+status: done
 type: proposal
 track: campaign-factory
 date: 2026-10-24
-last-transition-id: 387ebba4-9262-460c-ae13-44aca5e09eca
-last-correlation-id: 387ebba4-9262-460c-ae13-44aca5e09eca
-last-transition-from: in-progress
-last-transition-at: 2026-10-24T20:43:46.050Z
+last-transition-id: f6891988-e749-4afe-bab3-de8feeb7fdaa
+last-correlation-id: f6891988-e749-4afe-bab3-de8feeb7fdaa
+last-transition-from: review
+last-transition-at: 2026-10-24T21:01:52.756Z
 shipped-in:
   - "56290e10233fa54e133007b9340c99eb259fe366"
 ---
