@@ -193,5 +193,11 @@
     "No Quran/hadith quote is certified by a tourism page; narrator knowledge and attribution remain separately authored.",
     "No revealed cause or collective religious judgement is an objective gameplay fact.",
     "No modern DSM is bare earth or an early-Islamic elevation model. No vegetation, water or passability inferred from elevation alone."
-  ]
+  ],
+  "modernDsmReference": {
+    "processingPath": "docs/research/odyssey-research/hijaz-modern-dsm-processing.json",
+    "processingSha256": "f16dfe43b6f20f76dd050f922ce55216e96632c8f36293b7a5a0e86bb129f408",
+    "status": "four exact source-window crops and scientific previews prepared; independently reviewed extraction/promotion still pending",
+    "validation": "two decoders agree exactly on every source-window/crop sample; complete padded outer-cell coverage checked; no canonical profile inserted or native terrain written"
+  }
 }
