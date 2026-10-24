@@ -2,14 +2,14 @@
 id: r00001
 title: "Validar dependencias de autoría por episodio sin confundirlas con cronología"
 kind: refactor
-status: in-progress
+status: review
 type: proposal
 track: campaign-factory
 date: 2026-10-24
-last-transition-id: a3b9ff69-98c8-46b9-8768-c6a17de82875
-last-correlation-id: a3b9ff69-98c8-46b9-8768-c6a17de82875
-last-transition-from: ready
-last-transition-at: 2026-10-24T20:43:43.025Z
+last-transition-id: 387ebba4-9262-460c-ae13-44aca5e09eca
+last-correlation-id: 387ebba4-9262-460c-ae13-44aca5e09eca
+last-transition-from: in-progress
+last-transition-at: 2026-10-24T20:43:46.050Z
 ---
 
 # r00001 — Validar dependencias de autoría por episodio sin confundirlas con cronología
@@ -33,13 +33,16 @@ El propietario pide que MiniMax materialice episodios ya preparados mientras el 
 - global_gate: none
 
 ### S1 — Auditoría de dependencias y pruebas adversas
-- **Status**: pending
+- **Status**: review
 - **Files**: `tools/design/odyssey_assignments.validator.py`, `tools/design/test_design.py`
 - **Gate**: e2e
 - acceptance:
   - "Aceptar el grafo vigente en cadena y episodios independientes tras S2 sin cambiar orden de presentación ni identidad de episodios/slices."
   - "Rechazar ciclos, referencias desconocidas/duplicadas, episodios sin S2 como ancestro y promoción que no espere todos los episodios; conservar detección de estados de dossier y slots divergentes."
   - "Pruebas focalizadas significativas y bun run validate; revisión independiente y publicación oficial. No modificar contratos, IDs, gameplay ni estados de las propuestas históricas."
+- review-state: in_review
+- review-implementer: gpt-6
+- shipped-in: `ebac7f36553f`
 
 ## acceptance
 
