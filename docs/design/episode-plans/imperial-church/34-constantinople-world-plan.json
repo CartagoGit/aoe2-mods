@@ -482,8 +482,8 @@
         "modernHeightUse": "modern surface sample only; not bare earth or year380",
         "zoneRadiusTiles": 3,
         "name": {
-          "en": "The Northern Neighbors",
-          "es-ES": "Los vecinos del norte"
+          "en": "The Northern Reception Yard",
+          "es-ES": "El patio receptor del norte"
         }
       },
       {
@@ -1565,7 +1565,11 @@
         "north-reception-link",
         "north-return",
         "guide-link"
-      ]
+      ],
+      "instruction": {
+        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte."
+      }
     },
     {
       "slotId": "voluntary-household-return",
@@ -1618,7 +1622,11 @@
         "north-reception-link",
         "north-return",
         "guide-link"
-      ]
+      ],
+      "instruction": {
+        "en": "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard.",
+        "es-ES": "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental."
+      }
     },
     {
       "slotId": "source-comparison",
@@ -1661,7 +1669,11 @@
         "north-reception-link",
         "north-return",
         "guide-link"
-      ]
+      ],
+      "instruction": {
+        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido."
+      }
     },
     {
       "slotId": "local-wayfinding",
@@ -1721,6 +1733,10 @@
           "en": "Mark the existing western supply link and its actual work-site target.",
           "es-ES": "Señala la conexión occidental existente y su punto de trabajo real."
         }
+      },
+      "instruction": {
+        "en": "Escort the marked local guide to the Western Turn.",
+        "es-ES": "Escolta al guía local señalado hasta el desvío occidental."
       }
     },
     {
@@ -1779,6 +1795,10 @@
           "en": "Mark the existing care loop; all costs and destinations remain available without this task.",
           "es-ES": "Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
         }
+      },
+      "instruction": {
+        "en": "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint.",
+        "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur."
       }
     },
     {
@@ -1837,6 +1857,10 @@
           "en": "Mark the existing southern host approach and explain the selected-court requirement.",
           "es-ES": "Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
         }
+      },
+      "instruction": {
+        "en": "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard.",
+        "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur."
       }
     },
     {
@@ -1886,7 +1910,11 @@
         "north-reception-link",
         "north-return",
         "guide-link"
-      ]
+      ],
+      "instruction": {
+        "en": "Restore the marked damaged store to full health through its single 50-wood repair action.",
+        "es-ES": "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera."
+      }
     }
   ],
   "secondaryObjectives": [
@@ -1907,8 +1935,8 @@
         "es-ES": "Dos remesas con identidades distintas ayudan a hogares ficticios voluntarios sin requisitos de credo."
       },
       "text": {
-        "en": "Bring each of the two aid crates to its assigned household at two neighboring households. Benefit: 100 food, 50 wood, once.",
-        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en dos hogares vecinos. Ventaja: 100 de alimento, 50 de madera, una vez."
+        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2095,8 +2123,8 @@
         "es-ES": "Estos originales opcionales son distintos de los dos hogares del servicio principal."
       },
       "text": {
-        "en": "Bring both voluntary evacuee groups from two voluntary neighboring groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-        "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos grupos vecinos voluntarios al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+        "en": "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental. Ventaja: 100 de alimento, 25 de oro, una vez."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2274,8 +2302,8 @@
         "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI."
       },
       "text": {
-        "en": "Recover both separate copies from two fictional working copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
-        "es-ES": "Recupera las dos copias distintas de dos copias de trabajo ficticias y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2355,8 +2383,8 @@
             "odyssey-source.imperial-church.34-church-transfer-constantinople"
           ],
           "historicalNote": {
-            "en": "Late380 church possession changed under imperial power; surviving accounts differ on the month. This is retrospective collection commentary, not a document available to the380persona.",
-            "es-ES": "A finales de380 cambió la posesión de iglesias por el poder imperial; los relatos conservados difieren en el mes. Este comentario retrospectivo de colección no es un documento disponible para la persona de380."
+            "en": "Late 380 church possession changed under imperial power; surviving accounts differ on the month. This is retrospective collection commentary, not a document available to the persona in 380.",
+            "es-ES": "A finales de 380 cambió la posesión de iglesias por el poder imperial; los relatos conservados difieren en el mes. Este comentario retrospectivo de colección no es un documento disponible para la persona en 380."
           },
           "hint": {
             "en": "Complete both voluntary services with one funded plan and the same original living recipients.",
@@ -2461,8 +2489,8 @@
         "es-ES": "Escolta al mismo guía original y señala la conexión occidental de suministro ya propuesta; no se abre ningún camino."
       },
       "text": {
-        "en": "Escort the local guide of one local guide to the marked road junction. Benefit: Mark the existing western supply link and its actual work-site target.",
-        "es-ES": "Escolta al guía local de un guía local hasta el cruce señalado. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+        "en": "Escort the marked local guide to the Western Turn. Benefit: Mark the existing western supply link and its actual work-site target.",
+        "es-ES": "Escolta al guía local señalado hasta el desvío occidental. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2623,8 +2651,8 @@
         "es-ES": "Observa ambos lugares diseñados; señala el circuito asistencial norte existente, sin enemigos, caminos nuevos ni certeza sobre la costa antigua."
       },
       "text": {
-        "en": "Scout both marked viewpoints of two interior viewpoints. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
-        "es-ES": "Explora los dos miradores señalados de dos miradores interiores. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+        "en": "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
+        "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2777,8 +2805,8 @@
         "es-ES": "Visita círculos de observación separados de los receptores para distinguir patios alternativos; una visita pasada no sustituye la presencia actual de destinatarios."
       },
       "text": {
-        "en": "Visit both observation posts overlooking two service approaches. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
-        "es-ES": "Visita los dos puestos de observación sobre dos accesos de servicio. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+        "en": "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
+        "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2931,8 +2959,8 @@
         "es-ES": "Una restauración atómica de50madera y su recibo real de salud completa preceden la recompensa financiada. El daño previo es ficción, no un desastre antiguo."
       },
       "text": {
-        "en": "Pay 50 wood and restore the damaged store of one fictional damaged civilian store to full health. Benefit: 200 food, 100 wood, once.",
-        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de un almacén civil dañado ficticio. Ventaja: 200 de alimento, 100 de madera, una vez."
+        "en": "Restore the marked damaged store to full health through its single 50-wood repair action. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera. Ventaja: 200 de alimento, 100 de madera, una vez."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -3109,7 +3137,20 @@
       },
       "trigger": "before personal introduction",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "In late 380, Theodosius entered Constantinople and ordered changes in church possession. Socrates places the arrival and transfer on separate November days; Marcellinus records the restoration he favored in December. These later",
+          "accounts do not establish what every inhabitant believed. The following local service story is invented."
+        ],
+        "es-ES": [
+          "A finales de 380, Teodosio entró en Constantinopla y ordenó cambios en la posesión de iglesias. Sócrates sitúa la llegada y el traspaso en días distintos de noviembre; Marcelino fecha en diciembre",
+          "la restauración que favorecía. Estos relatos posteriores no establecen qué creía cada habitante. La siguiente historia asistencial local es inventada."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 24
     },
     {
       "id": "handover",
@@ -3120,7 +3161,18 @@
       },
       "trigger": "after factual introduction",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Marcus, the clerk whose account accompanies this campaign, now describes a day among fictional neighbors. His judgments are his own."
+        ],
+        "es-ES": [
+          "Marcus, el escribiente cuyo relato acompaña esta campaña, describe ahora una jornada entre vecinos ficticios. Sus juicios le pertenecen."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 10
     },
     {
       "id": "personal-intro",
@@ -3131,7 +3183,20 @@
       },
       "trigger": "after handover",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "I had written a fine heading about concord. My neighbor read it upside down and asked where her mother could sit that evening. I explained what I thought the emperor intended. She",
+          "asked again about the chair. I turned the sheet over and began a different list."
+        ],
+        "es-ES": [
+          "Había escrito un encabezamiento solemne sobre la concordia. Mi vecina lo leyó del revés y preguntó dónde podría sentarse su madre aquella tarde. Le expliqué lo que yo creía que pretendía el",
+          "emperador. Volvió a preguntar por la silla. Di la vuelta a la hoja y empecé otra lista."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 23
     },
     {
       "id": "main-goal",
@@ -3142,7 +3207,20 @@
       },
       "trigger": "main objective list",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Arrange both voluntary services: one meal and shelter for the same two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected",
+          "result to its own court. Keep the original recipients alive and present at the end."
+        ],
+        "es-ES": [
+          "Organiza ambos servicios voluntarios: una comida y alojamiento para los mismos dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a",
+          "su patio correspondiente. Conserva vivos y presentes a los destinatarios originales al final."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 22
     },
     {
       "id": "preview-help",
@@ -3153,18 +3231,44 @@
       },
       "trigger": "first plan preview or help",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Compare the joint cost, the remaining supplies and both work routes before confirming. Preview is free. The three meal methods lead to one reception; each shelter method has its own receiving court.",
+          "All main destinations and costs are visible without optional tasks."
+        ],
+        "es-ES": [
+          "Compara el coste conjunto, los suministros restantes y ambos recorridos antes de confirmar. La consulta es gratuita. Los tres métodos de comida llevan a una recepción; cada método de alojamiento tiene su",
+          "propio patio receptor. Los destinos y costes principales están visibles aunque omitas los secundarios."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 22
     },
     {
       "id": "budget-help",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Your operating allocation is finite. Easy provides 420 food,380 wood and 260 gold; standard 340,280 and 150; hard 300,220 and 120. The separate optional reward reserve is not spendable until its task succeeds. Every difficulty has a solution that skips every optional task.",
-        "es-ES": "Tu asignación operativa es finita. Fácil ofrece 420 alimento,380 madera y 260 oro; normal 340,280 y 150; difícil 300,220 y 120. La reserva separada de recompensas opcionales no se puede gastar hasta cumplir su tarea. Todas las dificultades permiten terminar omitiendo todos los secundarios."
+        "en": "Your operating allocation is finite. Easy: 420 food, 380 wood and 260 gold. Standard: 340 food, 280 wood and 150 gold. Hard: 300 food, 220 wood and 120 gold. Optional rewards remain separate until earned. Every difficulty can be completed without any optional task.",
+        "es-ES": "Tu asignación operativa es finita. Fácil: 420 de alimento, 380 de madera y 260 de oro. Normal: 340 de alimento, 280 de madera y 150 de oro. Difícil: 300 de alimento, 220 de madera y 120 de oro. Las recompensas opcionales permanecen separadas hasta ganarlas. Todas las dificultades permiten terminar sin hacer tareas opcionales."
       },
       "trigger": "economy help",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Your operating allocation is finite. Easy: 420 food, 380 wood and 260 gold. Standard: 340 food, 280 wood and 150 gold. Hard: 300 food, 220 wood and 120 gold. Optional rewards remain",
+          "separate until earned. Every difficulty can be completed without any optional task."
+        ],
+        "es-ES": [
+          "Tu asignación operativa es finita. Fácil: 420 de alimento, 380 de madera y 260 de oro. Normal: 340 de alimento, 280 de madera y 150 de oro. Difícil: 300 de alimento, 220",
+          "de madera y 120 de oro. Las recompensas opcionales permanecen separadas hasta ganarlas. Todas las dificultades permiten terminar sin hacer tareas opcionales."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 25
     },
     {
       "id": "unaffordable-plan",
@@ -3175,7 +3279,19 @@
       },
       "trigger": "failed whole-plan affordability check",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The complete plan costs more than your available allocation. Nothing has been charged. Choose another pair or earn optional assistance before funding. A reward cannot pay its own upfront cost."
+        ],
+        "es-ES": [
+          "El plan completo cuesta más que tu asignación disponible. No se ha cobrado nada. Elige otra pareja o consigue ayuda opcional antes de financiarlo. Una recompensa no puede pagar su propio coste",
+          "inicial."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
     },
     {
       "id": "reservation-help",
@@ -3186,7 +3302,20 @@
       },
       "trigger": "before confirmation and on help",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "You may cancel and choose again before any selected work begins. Cancellation returns only the reserved plan cost. Once work starts, the selected methods are fixed; no free refund, replacement household or",
+          "substitute result is available."
+        ],
+        "es-ES": [
+          "Puedes cancelar y volver a elegir antes de que empiece cualquier trabajo seleccionado. La cancelación devuelve únicamente el coste reservado del plan. Una vez iniciado el trabajo, los métodos quedan fijados: no",
+          "hay devolución gratuita, hogar de reemplazo ni resultado sustituto."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 19
     },
     {
       "id": "cancelled",
@@ -3197,7 +3326,18 @@
       },
       "trigger": "successful pre-work cancellation",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A crossed-out estimate is cheaper than a promise already put to work. We can choose again."
+        ],
+        "es-ES": [
+          "Un presupuesto tachado cuesta menos que una promesa que ya se ha puesto en marcha. Podemos volver a elegir."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "work-help",
@@ -3208,7 +3348,20 @@
       },
       "trigger": "after whole-plan funding",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Send each assigned worker to the selected work site. After the work is recorded, take that method's own result to its receiving court. Paying, visiting the wrong site or delivering another method's",
+          "result does not complete a service."
+        ],
+        "es-ES": [
+          "Envía a cada trabajador asignado al lugar de trabajo seleccionado. Tras registrar el trabajo, lleva el resultado propio de ese método a su patio receptor. Pagar, visitar otro lugar o entregar el",
+          "resultado de otro método no completa un servicio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 19
     },
     {
       "id": "work-meal-direct",
@@ -3219,7 +3372,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: Prepared Provisions. Cost: 240 food, 40 wood. Work at The Prepared Consignment; then take the result to The Neighbors' Table. The assigned worker must reach the work site before its",
+          "own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: Provisiones preparadas. Coste: 240 de alimento, 40 de madera. Trabaja en La remesa preparada; después lleva el resultado a La mesa de los vecinos. El trabajador asignado debe llegar al",
+          "lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 20
     },
     {
       "id": "work-meal-shared-hearth",
@@ -3230,7 +3396,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: At the Shared Hearth. Cost: 160 food, 140 wood. Work at The Shared Hearth; then take the result to The Neighbors' Table. The assigned worker must reach the work site",
+          "before its own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: Junto al fogón compartido. Coste: 160 de alimento, 140 de madera. Trabaja en El fogón compartido; después lleva el resultado a La mesa de los vecinos. El trabajador asignado debe",
+          "llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
     },
     {
       "id": "work-meal-purchased",
@@ -3241,7 +3420,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: A Merchant's Consignment. Cost: 100 food, 40 wood, 100 gold. Work at The Western Merchant; then take the result to The Neighbors' Table. The assigned worker must reach the work",
+          "site before its own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: La remesa del mercader. Coste: 100 de alimento, 40 de madera, 100 de oro. Trabaja en El mercader occidental; después lleva el resultado a La mesa de los vecinos. El",
+          "trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 23
     },
     {
       "id": "work-shelter-materials",
@@ -3252,7 +3444,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: Build from Delivered Materials. Cost: 80 food, 200 wood. Work at The Timber Yard; then take the result to The Western Shelter Yard. The assigned worker must reach the work",
+          "site before its own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: Preparar con materiales entregados. Coste: 80 de alimento, 200 de madera. Trabaja en El depósito de madera; después lleva el resultado a El patio de refugio occidental. El trabajador asignado",
+          "debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 22
     },
     {
       "id": "work-shelter-local-kit",
@@ -3263,7 +3468,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: Prepare a Local Kit. Cost: 100 food, 120 wood, 20 gold. Work at The Local Workshop; then take the result to The Interior Shelter Yard. The assigned worker must reach",
+          "the work site before its own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: Preparar un equipo local. Coste: 100 de alimento, 120 de madera, 20 de oro. Trabaja en El taller local; después lleva el resultado a El patio de refugio interior. El",
+          "trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 23
     },
     {
       "id": "work-shelter-rented",
@@ -3274,7 +3492,20 @@
       },
       "trigger": "instructions for the actual selected recipe",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Selected method: A Willing Host. Cost: 60 food, 60 wood, 110 gold. Work at The Host's Meeting Place; then take the result to The Southern Host's Courtyard. The assigned worker must reach",
+          "the work site before its own result is available."
+        ],
+        "es-ES": [
+          "Método seleccionado: Un anfitrión dispuesto. Coste: 60 de alimento, 60 de madera, 110 de oro. Trabaja en El lugar de encuentro con el anfitrión; después lleva el resultado a El patio del",
+          "anfitrión del sur. El trabajador asignado debe llegar al lugar de trabajo antes de que esté disponible su resultado propio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 24
     },
     {
       "id": "meal-received",
@@ -3285,7 +3516,18 @@
       },
       "trigger": "qualified meal output receipt",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "One line has become a meal at the right table. Keep its recipient here while we finish the other service."
+        ],
+        "es-ES": [
+          "Una línea se ha convertido en una comida en la mesa adecuada. Mantén aquí a su destinatario mientras terminamos el otro servicio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
     },
     {
       "id": "shelter-received",
@@ -3296,7 +3538,18 @@
       },
       "trigger": "qualified shelter output receipt",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The same two households, at the court we actually arranged. I shall not replace either name with a convenient mark."
+        ],
+        "es-ES": [
+          "Los mismos dos hogares, en el patio que hemos preparado de verdad. No sustituiré ninguno de sus nombres por una marca cómoda."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
     },
     {
       "id": "final-presence-help",
@@ -3307,18 +3560,42 @@
       },
       "trigger": "receipt exists but final living presence not satisfied",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Both receipts remain recorded, but success also requires every original recipient alive at its selected court now. A past arrival does not count as current presence. Return a departing recipient before completing",
+          "the other service."
+        ],
+        "es-ES": [
+          "Ambos recibos quedan registrados, pero el éxito también exige que cada destinatario original esté vivo ahora en su patio seleccionado. Una llegada pasada no cuenta como presencia actual. Haz regresar a quien",
+          "se aleje antes de completar el otro servicio."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 19
     },
     {
       "id": "offer-neighbor-provisions",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Bring each of the two aid crates to its assigned household at two neighboring households. Benefit: 100 food, 50 wood, once.",
-        "es-ES": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en dos hogares vecinos. Ventaja: 100 de alimento, 50 de madera, una vez."
+        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once."
+        ],
+        "es-ES": [
+          "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
     },
     {
       "id": "complete-neighbor-provisions",
@@ -3329,7 +3606,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Two deliveries, two households. The spare timber is real enough; the generous heading may wait."
+        ],
+        "es-ES": [
+          "Dos entregas, dos hogares. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 8
     },
     {
       "id": "unavailable-neighbor-provisions",
@@ -3340,18 +3628,40 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The missing consignment cannot be wished into the other crate. This aid task closes; our main services remain possible."
+        ],
+        "es-ES": [
+          "La remesa perdida no aparece por desearla en la otra caja. Esta ayuda se cierra; los servicios principales siguen siendo posibles."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 10
     },
     {
       "id": "offer-voluntary-household-return",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Bring both voluntary evacuee groups from two voluntary neighboring groups to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-        "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos grupos vecinos voluntarios al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+        "en": "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental. Ventaja: 100 de alimento, 25 de oro, una vez."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard. Benefit: 100 food, 25 gold, once."
+        ],
+        "es-ES": [
+          "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental. Ventaja: 100 de alimento, 25 de oro, una vez."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
     },
     {
       "id": "complete-voluntary-household-return",
@@ -3362,7 +3672,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "They chose the receiving yard and reached it together. These are their names, not substitutes for another family."
+        ],
+        "es-ES": [
+          "Eligieron el patio receptor y llegaron juntos. Estos son sus nombres, no sustitutos de otra familia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "unavailable-voluntary-household-return",
@@ -3373,18 +3694,41 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "We cannot repeat their journey with strangers and call it the same arrival. This optional task has ended."
+        ],
+        "es-ES": [
+          "No podemos repetir su recorrido con desconocidos y llamarlo la misma llegada. Esta tarea opcional ha terminado."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "offer-source-comparison",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Recover both separate copies from two fictional working copies and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
-        "es-ES": "Recupera las dos copias distintas de dos copias de trabajo ficticias y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint."
+        ],
+        "es-ES": [
+          "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo",
+          "principal."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
     },
     {
       "id": "complete-source-comparison",
@@ -3395,7 +3739,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Both copies have reached the reader. Two separate sheets deserve two separate entries."
+        ],
+        "es-ES": [
+          "Ambas copias han llegado al lector. Dos hojas distintas merecen dos anotaciones distintas."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 6
     },
     {
       "id": "unavailable-source-comparison",
@@ -3406,18 +3761,40 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "One working copy is missing. Leave that line incomplete; do not make a second original out of the first."
+        ],
+        "es-ES": [
+          "Falta una copia de trabajo. Deja esa línea incompleta; no conviertas la primera en un segundo original."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "offer-local-wayfinding",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Escort the local guide of one local guide to the marked road junction. Benefit: Mark the existing western supply link and its actual work-site target.",
-        "es-ES": "Escolta al guía local de un guía local hasta el cruce señalado. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+        "en": "Escort the marked local guide to the Western Turn. Benefit: Mark the existing western supply link and its actual work-site target.",
+        "es-ES": "Escolta al guía local señalado hasta el desvío occidental. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Escort the marked local guide to the Western Turn. Benefit: Mark the existing western supply link and its actual work-site target."
+        ],
+        "es-ES": [
+          "Escolta al guía local señalado hasta el desvío occidental. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 10
     },
     {
       "id": "complete-local-wayfinding",
@@ -3428,7 +3805,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The guide has shown the existing turn. Ink can mark a road; it cannot build one."
+        ],
+        "es-ES": [
+          "El guía ha señalado el desvío existente. La tinta puede marcar un camino; no construirlo."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 8
     },
     {
       "id": "unavailable-local-wayfinding",
@@ -3439,18 +3827,40 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "We have lost this guide's help. The western connection still exists; the main destinations are still marked."
+        ],
+        "es-ES": [
+          "Hemos perdido la ayuda de este guía. La conexión occidental sigue existiendo; los destinos principales continúan señalados."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 8
     },
     {
       "id": "offer-slope-survey",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Scout both marked viewpoints of two interior viewpoints. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
-        "es-ES": "Explora los dos miradores señalados de dos miradores interiores. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+        "en": "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
+        "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint. Benefit: Mark the existing care loop; all costs and destinations remain available without this task."
+        ],
+        "es-ES": [
+          "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
     },
     {
       "id": "complete-slope-survey",
@@ -3461,7 +3871,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Both viewpoints are recorded. The long circuit is still long, but we can see what it serves."
+        ],
+        "es-ES": [
+          "Ambos miradores quedan registrados. El circuito largo sigue siendo largo, pero vemos a qué sirve."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 8
     },
     {
       "id": "unavailable-slope-survey",
@@ -3472,18 +3893,41 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "This survey closes with the other unfinished tasks. It grants no late supplies and changes no road."
+        ],
+        "es-ES": [
+          "Esta exploración se cierra con las demás tareas sin terminar. No concede suministros tardíos ni cambia ningún camino."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "offer-service-observation",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Visit both observation posts overlooking two service approaches. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
-        "es-ES": "Visita los dos puestos de observación sobre dos accesos de servicio. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+        "en": "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
+        "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard. Benefit: Mark the existing southern host approach and explain the selected-court requirement."
+        ],
+        "es-ES": [
+          "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el",
+          "patio seleccionado."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
     },
     {
       "id": "complete-service-observation",
@@ -3494,7 +3938,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Two approaches, different courts. The word shelter no longer hides which door we mean."
+        ],
+        "es-ES": [
+          "Dos accesos, patios distintos. La palabra alojamiento ya no oculta a qué puerta nos referimos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 7
     },
     {
       "id": "unavailable-service-observation",
@@ -3505,18 +3960,40 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The observation remains incomplete. Use the already visible selected court; no service depends on this note."
+        ],
+        "es-ES": [
+          "La observación queda incompleta. Usa el patio seleccionado que ya está visible; ningún servicio depende de esta nota."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
     },
     {
       "id": "offer-damaged-civilian-store",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Pay 50 wood and restore the damaged store of one fictional damaged civilian store to full health. Benefit: 200 food, 100 wood, once.",
-        "es-ES": "Paga 50 de madera y repara por completo el almacén dañado de un almacén civil dañado ficticio. Ventaja: 200 de alimento, 100 de madera, una vez."
+        "en": "Restore the marked damaged store to full health through its single 50-wood repair action. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera. Ventaja: 200 de alimento, 100 de madera, una vez."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Restore the marked damaged store to full health through its single 50-wood repair action. Benefit: 200 food, 100 wood, once."
+        ],
+        "es-ES": [
+          "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera. Ventaja: 200 de alimento, 100 de madera, una vez."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
     },
     {
       "id": "complete-damaged-civilian-store",
@@ -3527,7 +4004,18 @@
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The store is restored, and its reserved supplies can be issued once. A payment without the work would have repaired only my accounts."
+        ],
+        "es-ES": [
+          "El almacén está restaurado y sus suministros reservados pueden entregarse una vez. Un pago sin trabajo sólo habría reparado mis cuentas."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
     },
     {
       "id": "unavailable-damaged-civilian-store",
@@ -3538,7 +4026,18 @@
       },
       "trigger": "unique optional identity lost, or terminal closes an incomplete observation task; no main defeat",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The store can no longer be restored in this task. Its reserved stock remains unearned; the main services do not fail with it."
+        ],
+        "es-ES": [
+          "Ya no se puede restaurar el almacén en esta tarea. Sus existencias reservadas siguen sin ganarse; los servicios principales no fracasan por ello."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
     },
     {
       "id": "retrospective-source-note",
@@ -3549,7 +4048,20 @@
       },
       "trigger": "source-comparison contextual note; outside persona knowledge",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The work copies in this fictional 380 scene are not the books of Socrates or Marcellinus. Those later writers place the possession change in different months. Their disagreement is retained for the",
+          "player; Marcus does not read these later works in 380."
+        ],
+        "es-ES": [
+          "Las copias de trabajo de esta escena ficticia de 380 no son los libros de Sócrates ni Marcelino. Esos autores posteriores sitúan el cambio de posesión en meses distintos. Su discrepancia se",
+          "conserva para el jugador; Marcus no lee estas obras posteriores en 380."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
     },
     {
       "id": "main-defeat",
@@ -3560,7 +4072,20 @@
       },
       "trigger": "required terminal loss; death checked before simultaneous success",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "An original required recipient or a committed selected result has been lost. This local plan cannot be completed with a replacement. Load an earlier save or restart; the historical church-possession account does",
+          "not change."
+        ],
+        "es-ES": [
+          "Se ha perdido un destinatario original obligatorio o un resultado seleccionado ya comprometido. Este plan local no se puede completar con un reemplazo. Carga una partida anterior o reinicia; el relato histórico",
+          "de la posesión de iglesias no cambia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
     },
     {
       "id": "victory-fact",
@@ -3571,7 +4096,20 @@
       },
       "trigger": "both qualified services and fresh living-recipient presence, before victory",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Both invented local services have been completed with their original recipients. This does not explain, approve or reverse the imperial change in church possession. The next episode concerns the council of 381",
+          "and the disputes that continued."
+        ],
+        "es-ES": [
+          "Ambos servicios locales inventados se han completado con sus destinatarios originales. Esto no explica, aprueba ni revierte el cambio imperial de posesión de iglesias. El siguiente episodio trata del concilio de 381",
+          "y de las disputas que continuaron."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
     },
     {
       "id": "victory-personal",
@@ -3582,19 +4120,42 @@
       },
       "trigger": "after factual outcome",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "My heading still said concord. Beneath it were two completed services and names I had nearly reduced to a phrase. I kept the heading, crossed it out, and left the rest legible."
+        ],
+        "es-ES": [
+          "Mi encabezamiento seguía diciendo concordia. Debajo había dos servicios cumplidos y nombres que casi había reducido a una frase. Conservé el encabezamiento, lo taché y dejé legible lo demás."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
     },
     {
       "id": "continue-next",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Continue within The Eagle and the Cross with episode 34, Under the Same Eastern Sky, set in 381. This is the penultimate episode. The campaign's recommendations for other odysseys belong to that final episode.",
-        "es-ES": "Continúa dentro de El águila y la cruz con el episodio 34, Bajo el mismo cielo oriental, ambientado en 381. Este es el penúltimo episodio. Las recomendaciones de otras odiseas corresponden a ese episodio final."
+        "en": "Next is episode 34, Under the Same Eastern Sky, set in 381: the finale of The Eagle and the Cross. Recommendations for other odysseys appear after completing that finale.",
+        "es-ES": "El siguiente es el episodio 34, Bajo el mismo cielo oriental, ambientado en 381: el final de El águila y la cruz. Las recomendaciones de otras odiseas aparecen después de completar ese episodio final."
       },
       "trigger": "after personal outcome; before normal episode victory/menu return",
       "skippable": true,
-      "classification": "original authored design text; no historical quotation or recorded voice"
+      "classification": "original authored design text; no historical quotation or recorded voice",
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Next is episode 34, Under the Same Eastern Sky, set in 381: the finale of The Eagle and the Cross. Recommendations for other odysseys appear after completing that finale."
+        ],
+        "es-ES": [
+          "El siguiente es el episodio 34, Bajo el mismo cielo oriental, ambientado en 381: el final de El águila y la cruz. Las recomendaciones de otras odiseas aparecen después de completar ese",
+          "episodio final."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
     }
   ],
-  "screenStatus": "45original EN/es-ES screens with authored UI names; independent editorial/translation review, caption segmentation and native presentation pending. No string IDs allocated."
+  "screenStatus": "45 original EN/es-ES screens with authored UI names and captions from the existing factory; independent editorial/translation review and native presentation pending. Duration is an estimate, no audio generated and no string IDs allocated."
 }
