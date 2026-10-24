@@ -1,5 +1,6 @@
 """Validate compound authoring contracts without pretending they are executable DSL."""
 import math
+from secondary import RESOURCES, audit_objective_numbers
 
 ENTITY_STATES = {
     'arrived', 'alive', 'alive-and-held', 'collected', 'destroyed', 'prepared',
@@ -11,10 +12,14 @@ KINDS = {
     'hold-area', 'receipt-exists', 'derived-token', 'ordered-departure',
     'forbidden-entry', 'phase-deadline',
 }
-RESOURCES = ('food', 'wood', 'gold', 'stone')
 
 
 def check_objectives(scenario, check, label):
+    numeric_errors = audit_objective_numbers(scenario)
+    for error in numeric_errors:
+        check(False, error)
+    if numeric_errors:
+        return
     world = scenario.get('worldContract', {})
     entities = {e['id']: e for e in world.get('entities', [])}
     zones = {z['id']: z for z in world.get('zones', [])}
