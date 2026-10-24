@@ -16,7 +16,7 @@ last-transition-at: 2026-10-12T14:25:03.276Z
 
 ## goal
 
-MiniMax M3.1 materializa `house-of-ali` / CDF-I03 como odisea independiente de 30 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. Esta propuesta permanece bloqueada: una selección de episodios no es un contrato aprobado.
+MiniMax M3.1 materializa `house-of-ali` / CDF-I03 como odisea independiente de 30 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. La propuesta conserva su estado operativo hasta comprobar los gates. Una selección no es un contrato aprobado: sólo se materializa el subconjunto con paquete individual aprobado para fuentes; el resto de la odisea puede seguir en diseño.
 
 ## why
 
@@ -30,7 +30,11 @@ La ampliación del propietario reemplaza la extensión de la base de 39 misiones
 
 ## prerequisites
 
-`d00002` completo y revisado para esta odisea; `i00003` con las capacidades usadas implementadas; `f00001` y `f00002` pilotos acreditados; `s00001` con evidencia de motor. Recuperar dependencias y estados vivos de DelendAI. No cambiar blocked por tener este documento ni por contar carpetas.
+Autoría de fuentes en paralelo: `d00002/S1` integrado y revisado; arquitectura editorial de esta campaña y al menos un expediente individual aprobados para fuentes; esquema y referencia reutilizable de todas sus operaciones disponibles; flujo de staging del piloto `f00001/S2` revisado. No se exige terminar los expedientes de los cinco actos ni de otras odiseas para empezar un episodio preparado. S1 mantiene una matriz por episodio; cada slice comprueba su propio paquete aprobado, sin delegar diseño a MiniMax.
+
+Esta habilitación sirve sólo para fuentes en staging. La referencia tipada no certifica terreno, exportación o motor. Capacidades nativas de `i00003` y propuestas especializadas, pilotos `f00001`/`f00002`, plantillas reales y evidencia `s00001` se exigen antes de exportar/promover las operaciones que las usan, y siguen pendientes cuando no exista evidencia. No sustituir operaciones ni prometer una campaña jugable por cerrar un slice de fuentes. La promoción exige todos los expedientes y episodios de esta odisea completos/revisados, sus dependencias nativas y su QA real.
+
+Recuperar estados vivos de DelendAI. Esta enmienda no cambia por sí sola blocked, no concede aprobación a ningún dossier y no permite saltar una dependencia real. El [paquete por entrega](../../../handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md) fija el traspaso y la devolución de hallazgos.
 
 ## fuentes de trabajo y actos
 
@@ -53,7 +57,7 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Files**: `docs/qa/house-of-ali/design-conformance.md`
 - **Gate**: e2e
 - acceptance:
-  - "Verificar los 30 expedientes completos de house-of-ali, cinco actos, pasajes consultados y revisión independiente del arquitecto. Si falta un objetivo, mapa, pantalla o nivelación, informar la brecha; no decidirlo MiniMax."
+  - "Verificar el manifiesto completo de 30 episodios y cinco actos de house-of-ali, con estado por episodio. Para iniciar fuentes basta al menos un expediente individual completo y aprobado para ese alcance, sus pasajes consultados, decisiones de geografía/narrador/objetivos/nivelación cerradas y revisión independiente. Los demás quedan pendientes; MiniMax informa brechas, no las decide."
   - "Contrastar IDs estables, sourceLocale=en, EN/es-ES completos, voz factual común antes de persona situada y orden de campaña no bloqueante; conservar estados pendientes de otros idiomas y medios."
 
 ### S2 — Metadatos, pantallas de campaña y medios en staging
@@ -75,12 +79,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 1
 - **HistoricalFrame**: 656 CE; geography=medina; core=witness-and-transition-records
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/01-witness-and-transition-records-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/01-witness-and-transition-records-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S9 — Episodio 2: The Doors before the Battle
 - **Status**: pending
-- **DependsOn**: [S8]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/02-civilian-refuge-and-petition-basra`, `docs/qa/house-of-ali/episodes/02-civilian-refuge-and-petition-basra`
 - **Gate**: e2e
 - **Act**: act-1
@@ -88,12 +92,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 2
 - **HistoricalFrame**: 656 CE; geography=basra; core=civilian-refuge-and-petition
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/02-civilian-refuge-and-petition-basra: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/02-civilian-refuge-and-petition-basra: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S10 — Episodio 3: The Dust beyond Basra
 - **Status**: pending
-- **DependsOn**: [S9]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/03-finite-battle-withdrawal-and-care-basra`, `docs/qa/house-of-ali/episodes/03-finite-battle-withdrawal-and-care-basra`
 - **Gate**: e2e
 - **Act**: act-1
@@ -101,12 +105,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 3
 - **HistoricalFrame**: 656 CE; geography=basra; core=finite-battle-withdrawal-and-care
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/03-finite-battle-withdrawal-and-care-basra: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/03-finite-battle-withdrawal-and-care-basra: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S3 — Episodio 4: The Kufan Hearth
 - **Status**: pending
-- **DependsOn**: [S10]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/01-the-kufan-hearth`, `docs/qa/house-of-ali/episodes/01-the-kufan-hearth`
 - **Gate**: e2e
 - **Act**: act-1
@@ -114,12 +118,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 4
 - **HistoricalFrame**: 656/657 CE; geography=kufa; core=household-reception-and-workshop-supply
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/01-the-kufan-hearth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/01-the-kufan-hearth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S11 — Episodio 5: The Egyptian Letter
 - **Status**: pending
-- **DependsOn**: [S3]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/05-off-map-dispatch-and-source-comparison-fustat`, `docs/qa/house-of-ali/episodes/05-off-map-dispatch-and-source-comparison-fustat`
 - **Gate**: e2e
 - **Act**: act-1
@@ -127,12 +131,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 5
 - **HistoricalFrame**: c.656–657 CE; Kharbitareports, settlementnotfalselylocated; geography=fustat; core=off-map-dispatch-and-source-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/05-off-map-dispatch-and-source-comparison-fustat: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado house-of-ali/05-off-map-dispatch-and-source-comparison-fustat: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S4 — Episodio 6: A Cup at Siffin
 - **Status**: pending
-- **DependsOn**: [S11]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/02-a-cup-at-siffin`, `docs/qa/house-of-ali/episodes/02-a-cup-at-siffin`
 - **Gate**: e2e
 - **Act**: act-2
@@ -140,12 +144,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 6
 - **HistoricalFrame**: 657 CE; geography=siffin; core=finite-water-and-care-corridor
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/02-a-cup-at-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/02-a-cup-at-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S12 — Episodio 7: The Leaves above the Spears
 - **Status**: pending
-- **DependsOn**: [S4]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/07-ceasefire-withdrawal-and-records-siffin`, `docs/qa/house-of-ali/episodes/07-ceasefire-withdrawal-and-records-siffin`
 - **Gate**: e2e
 - **Act**: act-2
@@ -153,12 +157,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 7
 - **HistoricalFrame**: 657 CE; attributedchronicleaccount; geography=siffin; core=ceasefire-withdrawal-and-records
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/07-ceasefire-withdrawal-and-records-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/07-ceasefire-withdrawal-and-records-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S13 — Episodio 8: The Reply beside the Water
 - **Status**: pending
-- **DependsOn**: [S12]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/08-paired-protocol-delivery-siffin`, `docs/qa/house-of-ali/episodes/08-paired-protocol-delivery-siffin`
 - **Gate**: e2e
 - **Act**: act-2
@@ -166,12 +170,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 8
 - **HistoricalFrame**: 657 CE; geography=siffin; core=paired-protocol-delivery
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/08-paired-protocol-delivery-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/08-paired-protocol-delivery-siffin: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S14 — Episodio 9: The Names in the Copied Terms
 - **Status**: pending
-- **DependsOn**: [S13]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/09-witness-and-text-comparison-kufa`, `docs/qa/house-of-ali/episodes/09-witness-and-text-comparison-kufa`
 - **Gate**: e2e
 - **Act**: act-2
@@ -179,12 +183,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 9
 - **HistoricalFrame**: 657/658 CE; geography=kufa; core=witness-and-text-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/09-witness-and-text-comparison-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/09-witness-and-text-comparison-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S15 — Episodio 10: A House on the Harura Road
 - **Status**: pending
-- **DependsOn**: [S14]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/10-voluntary-household-relocation-harura`, `docs/qa/house-of-ali/episodes/10-voluntary-household-relocation-harura`
 - **Gate**: e2e
 - **Act**: act-2
@@ -192,12 +196,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 10
 - **HistoricalFrame**: 657/658 CE; Nahrawanlateroff-map; geography=harura; core=voluntary-household-relocation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/10-voluntary-household-relocation-harura: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado house-of-ali/10-voluntary-household-relocation-harura: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S16 — Episodio 11: Beyond the Canal's Silence
 - **Status**: pending
-- **DependsOn**: [S15]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/11-finite-civilian-withdrawal-and-care-nahrawan`, `docs/qa/house-of-ali/episodes/11-finite-civilian-withdrawal-and-care-nahrawan`
 - **Gate**: e2e
 - **Act**: act-3
@@ -205,12 +209,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 11
 - **HistoricalFrame**: 658 CE; geography=nahrawan; core=finite-civilian-withdrawal-and-care
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/11-finite-civilian-withdrawal-and-care-nahrawan: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/11-finite-civilian-withdrawal-and-care-nahrawan: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S17 — Episodio 12: Reports from the Empty Seat
 - **Status**: pending
-- **DependsOn**: [S16]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/12-delegation-and-source-comparison-adhruh`, `docs/qa/house-of-ali/episodes/12-delegation-and-source-comparison-adhruh`
 - **Gate**: e2e
 - **Act**: act-3
@@ -218,12 +222,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 12
 - **HistoricalFrame**: 659 CE; geography=adhruh; core=delegation-and-source-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/12-delegation-and-source-comparison-adhruh: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/12-delegation-and-source-comparison-adhruh: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S5 — Episodio 13: The Seal after Ali
 - **Status**: pending
-- **DependsOn**: [S17]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/03-the-sealed-copy`, `docs/qa/house-of-ali/episodes/03-the-sealed-copy`
 - **Gate**: e2e
 - **Act**: act-3
@@ -231,12 +235,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 13
 - **HistoricalFrame**: 661 CE; geography=kufa; core=administrative-transition-and-copying
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/03-the-sealed-copy: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/03-the-sealed-copy: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S18 — Episodio 14: The Letter with Room for Terms
 - **Status**: pending
-- **DependsOn**: [S5]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/14-paired-protocol-and-negotiation-kufa`, `docs/qa/house-of-ali/episodes/14-paired-protocol-and-negotiation-kufa`
 - **Gate**: e2e
 - **Act**: act-3
@@ -244,12 +248,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 14
 - **HistoricalFrame**: 661 CE; geography=kufa; core=paired-protocol-and-negotiation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/14-paired-protocol-and-negotiation-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/14-paired-protocol-and-negotiation-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S19 — Episodio 15: The Oath That Changed the Road
 - **Status**: pending
-- **DependsOn**: [S18]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/15-finite-distribution-and-receipts-kufa`, `docs/qa/house-of-ali/episodes/15-finite-distribution-and-receipts-kufa`
 - **Gate**: e2e
 - **Act**: act-3
@@ -257,12 +261,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 15
 - **HistoricalFrame**: August661 approximate; geography=kufa; core=finite-distribution-and-receipts
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/15-finite-distribution-and-receipts-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/15-finite-distribution-and-receipts-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S20 — Episodio 16: The Assembly's Last Account
 - **Status**: pending
-- **DependsOn**: [S19]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/16-ceremony-and-record-preservation-kufa`, `docs/qa/house-of-ali/episodes/16-ceremony-and-record-preservation-kufa`
 - **Gate**: e2e
 - **Act**: act-3
@@ -270,12 +274,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 16
 - **HistoricalFrame**: 661 CE; publictransferattributed; geography=kufa; core=ceremony-and-record-preservation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/16-ceremony-and-record-preservation-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado house-of-ali/16-ceremony-and-record-preservation-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S21 — Episodio 17: A Household Returned to Medina
 - **Status**: pending
-- **DependsOn**: [S20]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/17-returning-household-and-workshop-supply-medina`, `docs/qa/house-of-ali/episodes/17-returning-household-and-workshop-supply-medina`
 - **Gate**: e2e
 - **Act**: act-4
@@ -283,12 +287,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 17
 - **HistoricalFrame**: 661 CE; separatelocalreturn, notsecondtransfer; geography=medina; core=returning-household-and-workshop-supply
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/17-returning-household-and-workshop-supply-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/17-returning-household-and-workshop-supply-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S22 — Episodio 18: The Record after Hasan
 - **Status**: pending
-- **DependsOn**: [S21]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/18-mourning-and-witness-preservation-medina`, `docs/qa/house-of-ali/episodes/18-mourning-and-witness-preservation-medina`
 - **Gate**: e2e
 - **Act**: act-4
@@ -296,12 +300,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 18
 - **HistoricalFrame**: 669/670 CE; disputeddateandpoisoningclaims; geography=medina; core=mourning-and-witness-preservation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/18-mourning-and-witness-preservation-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/18-mourning-and-witness-preservation-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S23 — Episodio 19: A New Name from Damascus
 - **Status**: pending
-- **DependsOn**: [S22]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/19-off-map-succession-dispatch-medina`, `docs/qa/house-of-ali/episodes/19-off-map-succession-dispatch-medina`
 - **Gate**: e2e
 - **Act**: act-4
@@ -309,12 +313,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 19
 - **HistoricalFrame**: 680 CE; YazidsuccessionDamascusreported; geography=medina; core=off-map-succession-dispatch
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/19-off-map-succession-dispatch-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/19-off-map-succession-dispatch-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S24 — Episodio 20: The Road out of Medina
 - **Status**: pending
-- **DependsOn**: [S23]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/20-finite-household-departure-medina`, `docs/qa/house-of-ali/episodes/20-finite-household-departure-medina`
 - **Gate**: e2e
 - **Act**: act-4
@@ -322,12 +326,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 20
 - **HistoricalFrame**: 680 CE; historicalfiguresoff-map; geography=medina; core=finite-household-departure
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/20-finite-household-departure-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/20-finite-household-departure-medina: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S25 — Episodio 21: Letters Reaching Mecca
 - **Status**: pending
-- **DependsOn**: [S24]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/21-two-way-correspondence-and-witnesses-mecca`, `docs/qa/house-of-ali/episodes/21-two-way-correspondence-and-witnesses-mecca`
 - **Gate**: e2e
 - **Act**: act-4
@@ -335,12 +339,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 21
 - **HistoricalFrame**: June680 approximate; calendarconversionqualified; geography=mecca; core=two-way-correspondence-and-witnesses
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/21-two-way-correspondence-and-witnesses-mecca: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/21-two-way-correspondence-and-witnesses-mecca: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S26 — Episodio 22: The Emissary in Kufa
 - **Status**: pending
-- **DependsOn**: [S25]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/22-delegation-reception-and-support-records-kufa`, `docs/qa/house-of-ali/episodes/22-delegation-reception-and-support-records-kufa`
 - **Gate**: e2e
 - **Act**: act-4
@@ -348,12 +352,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 22
 - **HistoricalFrame**: 680 CE; geography=kufa; core=delegation-reception-and-support-records
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/22-delegation-reception-and-support-records-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/22-delegation-reception-and-support-records-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S27 — Episodio 23: The City after the Arrests
 - **Status**: pending
-- **DependsOn**: [S26]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/23-civilian-refuge-and-record-extraction-kufa`, `docs/qa/house-of-ali/episodes/23-civilian-refuge-and-record-extraction-kufa`
 - **Gate**: e2e
 - **Act**: act-4
@@ -361,12 +365,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 23
 - **HistoricalFrame**: 680 CE; executionsreportednotplayergoal; geography=kufa; core=civilian-refuge-and-record-extraction
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/23-civilian-refuge-and-record-extraction-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado house-of-ali/23-civilian-refuge-and-record-extraction-kufa: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S28 — Episodio 24: Before the News Could Catch the Road
 - **Status**: pending
-- **DependsOn**: [S27]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/24-finite-caravan-consignments-mecca`, `docs/qa/house-of-ali/episodes/24-finite-caravan-consignments-mecca`
 - **Gate**: e2e
 - **Act**: act-5
@@ -374,12 +378,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 24
 - **HistoricalFrame**: September680 approximate; exitdatevariants; geography=mecca; core=finite-caravan-consignments
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/24-finite-caravan-consignments-mecca: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/24-finite-caravan-consignments-mecca: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S29 — Episodio 25: The Closed Roads of Qadisiyya
 - **Status**: pending
-- **DependsOn**: [S28]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/25-bounded-civilian-route-and-care-qadisiyya`, `docs/qa/house-of-ali/episodes/25-bounded-civilian-route-and-care-qadisiyya`
 - **Gate**: e2e
 - **Act**: act-5
@@ -387,12 +391,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 25
 - **HistoricalFrame**: 680 CE; geography=qadisiyya; core=bounded-civilian-route-and-care
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/25-bounded-civilian-route-and-care-qadisiyya: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/25-bounded-civilian-route-and-care-qadisiyya: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S30 — Episodio 26: A Dispatch at Zubala
 - **Status**: pending
-- **DependsOn**: [S29]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/26-source-comparison-and-voluntary-return-zubala`, `docs/qa/house-of-ali/episodes/26-source-comparison-and-voluntary-return-zubala`
 - **Gate**: e2e
 - **Act**: act-5
@@ -400,12 +404,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 26
 - **HistoricalFrame**: 680 CE; Thalabiyyaseparatepriorreport, notsameplace; geography=zubala; core=source-comparison-and-voluntary-return
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/26-source-comparison-and-voluntary-return-zubala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/26-source-comparison-and-voluntary-return-zubala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S31 — Episodio 27: Where the Road Turned Away
 - **Status**: pending
-- **DependsOn**: [S30]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/27-off-map-dispatch-and-route-replanning-qadisiyya`, `docs/qa/house-of-ali/episodes/27-off-map-dispatch-and-route-replanning-qadisiyya`
 - **Gate**: e2e
 - **Act**: act-5
@@ -413,12 +417,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 27
 - **HistoricalFrame**: 680 CE; DhuHusamencounterreported, exactsiteunresolved; geography=qadisiyya; core=off-map-dispatch-and-route-replanning
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/27-off-map-dispatch-and-route-replanning-qadisiyya: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/27-off-map-dispatch-and-route-replanning-qadisiyya: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S32 — Episodio 28: The Camp on the Open Plain
 - **Status**: pending
-- **DependsOn**: [S31]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/28-finite-camp-and-household-provision-karbala`, `docs/qa/house-of-ali/episodes/28-finite-camp-and-household-provision-karbala`
 - **Gate**: e2e
 - **Act**: act-5
@@ -426,12 +430,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 28
 - **HistoricalFrame**: earlyOctober680 conventional; geography=karbala; core=finite-camp-and-household-provision
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/28-finite-camp-and-household-provision-karbala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/28-finite-camp-and-household-provision-karbala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S33 — Episodio 29: Messages before the River Closed
 - **Status**: pending
-- **DependsOn**: [S32]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/29-separate-reception-and-record-escort-karbala`, `docs/qa/house-of-ali/episodes/29-separate-reception-and-record-escort-karbala`
 - **Gate**: e2e
 - **Act**: act-5
@@ -439,12 +443,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 29
 - **HistoricalFrame**: earlyOctober680 conventional; geography=karbala; core=separate-reception-and-record-escort
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/29-separate-reception-and-record-escort-karbala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado house-of-ali/29-separate-reception-and-record-escort-karbala: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S6 — Episodio 30: The Water That Remains
 - **Status**: pending
-- **DependsOn**: [S33]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/house-of-ali/scenarios/04-the-water-that-remains`, `docs/qa/house-of-ali/episodes/04-the-water-that-remains`
 - **Gate**: e2e
 - **Act**: act-5
@@ -452,12 +456,12 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 - **Order**: 30
 - **HistoricalFrame**: October680 conventional; battle262historicaloutcomeinfinale; geography=karbala; core=bounded-water-and-civilian-extraction
 - acceptance:
-  - "Materializar únicamente el expediente aprobado house-of-ali/04-the-water-that-remains: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado house-of-ali/04-the-water-that-remains: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
 
 ### S7 — Promoción conjunta y entrega acreditada
 - **Status**: pending
-- **DependsOn**: [S6]
+- **DependsOn**: [S8, S9, S10, S3, S11, S4, S12, S13, S14, S15, S16, S17, S5, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S6]
 - **Files**: `staging/campaigns/house-of-ali`, `campaigns/house-of-ali`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/house-of-ali/delivery`
 - **Gate**: e2e
 - acceptance:
@@ -467,6 +471,6 @@ Fuente editorial: `docs/design/odysseys/house-of-ali.json`. Índice: `docs/wiki/
 ## acceptance
 
 - 30 escenarios de esta odisea, cinco actos, cada slice y objetivo trazable al dossier aprobado.
-- Gates previos reales; sin atribuir a MiniMax el cierre de decisiones históricas, geográficas o arquitectónicas.
+- Gates por entrega reales: fuentes por episodio aprobado, promoción sólo con la odisea completa y sus pruebas nativas; sin atribuir a MiniMax decisiones históricas, geográficas o arquitectónicas.
 - Independencia jugable, recomendaciones correctas, identidad estable, memoria acumulativa y progreso solo en el final efectivo.
 - Predicados acreditados, 6–8 secundarios por episodio, solvencia de ambos extremos y QA medido; no aprobar por documentación estática.

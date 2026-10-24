@@ -16,7 +16,7 @@ last-transition-at: 2026-10-12T14:24:02.846Z
 
 ## goal
 
-MiniMax M3.1 materializa `faith-origins` / CDF-C00 como odisea independiente de 30 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. Esta propuesta permanece bloqueada: una selección de episodios no es un contrato aprobado.
+MiniMax M3.1 materializa `faith-origins` / CDF-C00 como odisea independiente de 30 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. La propuesta conserva su estado operativo hasta comprobar los gates. Una selección no es un contrato aprobado: sólo se materializa el subconjunto con paquete individual aprobado para fuentes; el resto de la odisea puede seguir en diseño.
 
 ## why
 
@@ -30,7 +30,11 @@ La ampliación del propietario reemplaza la extensión de la base de 39 misiones
 
 ## prerequisites
 
-`d00002` completo y revisado para esta odisea; `i00003` con las capacidades usadas implementadas; `f00001` y `f00002` pilotos acreditados; `s00001` con evidencia de motor. Recuperar dependencias y estados vivos de DelendAI. No cambiar blocked por tener este documento ni por contar carpetas.
+Autoría de fuentes en paralelo: `d00002/S1` integrado y revisado; arquitectura editorial de esta campaña y al menos un expediente individual aprobados para fuentes; esquema y referencia reutilizable de todas sus operaciones disponibles; flujo de staging del piloto `f00001/S2` revisado. No se exige terminar los expedientes de los cinco actos ni de otras odiseas para empezar un episodio preparado. S1 mantiene una matriz por episodio; cada slice comprueba su propio paquete aprobado, sin delegar diseño a MiniMax.
+
+Esta habilitación sirve sólo para fuentes en staging. La referencia tipada no certifica terreno, exportación o motor. Capacidades nativas de `i00003` y propuestas especializadas, pilotos `f00001`/`f00002`, plantillas reales y evidencia `s00001` se exigen antes de exportar/promover las operaciones que las usan, y siguen pendientes cuando no exista evidencia. No sustituir operaciones ni prometer una campaña jugable por cerrar un slice de fuentes. La promoción exige todos los expedientes y episodios de esta odisea completos/revisados, sus dependencias nativas y su QA real.
+
+Recuperar estados vivos de DelendAI. Esta enmienda no cambia por sí sola blocked, no concede aprobación a ningún dossier y no permite saltar una dependencia real. El [paquete por entrega](../../../handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md) fija el traspaso y la devolución de hallazgos.
 
 ## fuentes de trabajo y actos
 
@@ -53,7 +57,7 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Files**: `docs/qa/faith-origins/design-conformance.md`
 - **Gate**: e2e
 - acceptance:
-  - "Verificar los 30 expedientes completos de faith-origins, cinco actos, pasajes consultados y revisión independiente del arquitecto. Si falta un objetivo, mapa, pantalla o nivelación, informar la brecha; no decidirlo MiniMax."
+  - "Verificar el manifiesto completo de 30 episodios y cinco actos de faith-origins, con estado por episodio. Para iniciar fuentes basta al menos un expediente individual completo y aprobado para ese alcance, sus pasajes consultados, decisiones de geografía/narrador/objetivos/nivelación cerradas y revisión independiente. Los demás quedan pendientes; MiniMax informa brechas, no las decide."
   - "Contrastar IDs estables, sourceLocale=en, EN/es-ES completos, voz factual común antes de persona situada y orden de campaña no bloqueante; conservar estados pendientes de otros idiomas y medios."
 
 ### S2 — Metadatos, pantallas de campaña y medios en staging
@@ -75,12 +79,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 1
 - **HistoricalFrame**: 27–36 CE; geography=caesarea; core=administrative-records
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/01-administrative-records-caesarea: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/01-administrative-records-caesarea: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S9 — Episodio 2: When the City Held Its Breath
 - **Status**: pending
-- **DependsOn**: [S8]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/02-civilian-refuge-jerusalem`, `docs/qa/faith-origins/episodes/02-civilian-refuge-jerusalem`
 - **Gate**: e2e
 - **Act**: act-1
@@ -88,12 +92,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 2
 - **HistoricalFrame**: c. 30–33 CE; geography=jerusalem; core=civilian-refuge
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/02-civilian-refuge-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/02-civilian-refuge-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S10 — Episodio 3: A Table in Jerusalem
 - **Status**: pending
-- **DependsOn**: [S9]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/03-shared-provision-jerusalem`, `docs/qa/faith-origins/episodes/03-shared-provision-jerusalem`
 - **Gate**: e2e
 - **Act**: act-1
@@ -101,12 +105,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 3
 - **HistoricalFrame**: c. 30–40 CE; geography=jerusalem; core=shared-provision
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/03-shared-provision-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/03-shared-provision-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S11 — Episodio 4: The Road He Remembered
 - **Status**: pending
-- **DependsOn**: [S10]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/04-testimony-relay-damascus`, `docs/qa/faith-origins/episodes/04-testimony-relay-damascus`
 - **Gate**: e2e
 - **Act**: act-1
@@ -114,12 +118,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 4
 - **HistoricalFrame**: c. 33–36 CE; geography=damascus; core=testimony-relay
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/04-testimony-relay-damascus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/04-testimony-relay-damascus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S12 — Episodio 5: Fifteen Days, Many Voices
 - **Status**: pending
-- **DependsOn**: [S11]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/05-witness-comparison-jerusalem`, `docs/qa/faith-origins/episodes/05-witness-comparison-jerusalem`
 - **Gate**: e2e
 - **Act**: act-1
@@ -127,12 +131,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 5
 - **HistoricalFrame**: c. 36–40 CE; geography=jerusalem; core=witness-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/05-witness-comparison-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/05-witness-comparison-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S3 — Episodio 6: Letters on the Orontes
 - **Status**: pending
-- **DependsOn**: [S12]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/01-roads-of-antioch`, `docs/qa/faith-origins/episodes/01-roads-of-antioch`
 - **Gate**: e2e
 - **Act**: act-1
@@ -140,12 +144,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 6
 - **HistoricalFrame**: c. 40–49 CE; conventional early-network reconstruction; geography=antioch; core=network-escort
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/01-roads-of-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/01-roads-of-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S13 — Episodio 7: The Doors That Closed
 - **Status**: pending
-- **DependsOn**: [S3]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/07-household-relocation-rome-ostia`, `docs/qa/faith-origins/episodes/07-household-relocation-rome-ostia`
 - **Gate**: e2e
 - **Act**: act-1
@@ -153,12 +157,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 7
 - **HistoricalFrame**: c. 49 CE; geography=rome-ostia; core=household-relocation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/07-household-relocation-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/07-household-relocation-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S14 — Episodio 8: A Place for the Stranger
 - **Status**: pending
-- **DependsOn**: [S13]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/08-delegate-logistics-jerusalem`, `docs/qa/faith-origins/episodes/08-delegate-logistics-jerusalem`
 - **Gate**: e2e
 - **Act**: act-1
@@ -166,12 +170,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 8
 - **HistoricalFrame**: c. 49–50 CE; identification of meetings disputed; geography=jerusalem; core=delegate-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/08-delegate-logistics-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado faith-origins/08-delegate-logistics-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S15 — Episodio 9: The Weaver's Harbour
 - **Status**: pending
-- **DependsOn**: [S14]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/09-district-production-corinth`, `docs/qa/faith-origins/episodes/09-district-production-corinth`
 - **Gate**: e2e
 - **Act**: act-2
@@ -179,12 +183,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 9
 - **HistoricalFrame**: c. 50–52 CE; geography=corinth; core=district-production
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/09-district-production-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/09-district-production-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S16 — Episodio 10: Before the First Letter Faded
 - **Status**: pending
-- **DependsOn**: [S15]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/10-copy-and-relay-corinth`, `docs/qa/faith-origins/episodes/10-copy-and-relay-corinth`
 - **Gate**: e2e
 - **Act**: act-2
@@ -192,12 +196,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 10
 - **HistoricalFrame**: c. 50–51 CE; geography=corinth; core=copy-and-relay
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/10-copy-and-relay-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/10-copy-and-relay-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S17 — Episodio 11: The Argument Across the Water
 - **Status**: pending
-- **DependsOn**: [S16]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/11-distributed-preservation-ephesus`, `docs/qa/faith-origins/episodes/11-distributed-preservation-ephesus`
 - **Gate**: e2e
 - **Act**: act-2
@@ -205,12 +209,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 11
 - **HistoricalFrame**: c. 54–55 CE; writing location uncertain; geography=ephesus; core=distributed-preservation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/11-distributed-preservation-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/11-distributed-preservation-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S18 — Episodio 12: Many Hands in One House
 - **Status**: pending
-- **DependsOn**: [S17]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/12-bounded-community-aid-ephesus`, `docs/qa/faith-origins/episodes/12-bounded-community-aid-ephesus`
 - **Gate**: e2e
 - **Act**: act-2
@@ -218,12 +222,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 12
 - **HistoricalFrame**: c. 54–55 CE; geography=ephesus; core=bounded-community-aid
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/12-bounded-community-aid-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/12-bounded-community-aid-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S19 — Episodio 13: Words for a Distant City
 - **Status**: pending
-- **DependsOn**: [S18]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/13-consignment-and-correspondence-corinth`, `docs/qa/faith-origins/episodes/13-consignment-and-correspondence-corinth`
 - **Gate**: e2e
 - **Act**: act-2
@@ -231,12 +235,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 13
 - **HistoricalFrame**: c. 56–58 CE; geography=corinth; core=consignment-and-correspondence
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/13-consignment-and-correspondence-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/13-consignment-and-correspondence-corinth: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S20 — Episodio 14: The Appeal Beside the Sea
 - **Status**: pending
-- **DependsOn**: [S19]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/14-administrative-intrigue-caesarea`, `docs/qa/faith-origins/episodes/14-administrative-intrigue-caesarea`
 - **Gate**: e2e
 - **Act**: act-2
@@ -244,12 +248,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 14
 - **HistoricalFrame**: c. 57–60 CE; geography=caesarea; core=administrative-intrigue
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/14-administrative-intrigue-caesarea: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/14-administrative-intrigue-caesarea: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S21 — Episodio 15: Ash over the Seven Hills
 - **Status**: pending
-- **DependsOn**: [S20]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/15-evacuation-and-recovery-rome-ostia`, `docs/qa/faith-origins/episodes/15-evacuation-and-recovery-rome-ostia`
 - **Gate**: e2e
 - **Act**: act-2
@@ -257,12 +261,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 15
 - **HistoricalFrame**: 64 CE; geography=rome-ostia; core=evacuation-and-recovery
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/15-evacuation-and-recovery-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado faith-origins/15-evacuation-and-recovery-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S22 — Episodio 16: A Story in the Shadow of War
 - **Status**: pending
-- **DependsOn**: [S21]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/16-comparative-copying-antioch`, `docs/qa/faith-origins/episodes/16-comparative-copying-antioch`
 - **Gate**: e2e
 - **Act**: act-3
@@ -270,12 +274,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 16
 - **HistoricalFrame**: c. 65–70 CE; authorial location not known; geography=antioch; core=comparative-copying
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/16-comparative-copying-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/16-comparative-copying-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S4 — Episodio 17: The Names Beyond the Siege
 - **Status**: pending
-- **DependsOn**: [S22]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/02-after-the-siege`, `docs/qa/faith-origins/episodes/02-after-the-siege`
 - **Gate**: e2e
 - **Act**: act-3
@@ -283,12 +287,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 17
 - **HistoricalFrame**: 70 CE; geography=jerusalem; core=civilian-evacuation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/02-after-the-siege: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/02-after-the-siege: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S23 — Episodio 18: Two Voices, Unfinished Margins
 - **Status**: pending
-- **DependsOn**: [S4]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/18-parallel-archive-logistics-antioch`, `docs/qa/faith-origins/episodes/18-parallel-archive-logistics-antioch`
 - **Gate**: e2e
 - **Act**: act-3
@@ -296,12 +300,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 18
 - **HistoricalFrame**: c. 80–90 CE; location is fictional local circulation, not authorial provenance; geography=antioch; core=parallel-archive-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/18-parallel-archive-logistics-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/18-parallel-archive-logistics-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S24 — Episodio 19: The House Before the Road
 - **Status**: pending
-- **DependsOn**: [S23]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/19-hospitality-network-antioch`, `docs/qa/faith-origins/episodes/19-hospitality-network-antioch`
 - **Gate**: e2e
 - **Act**: act-3
@@ -309,12 +313,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 19
 - **HistoricalFrame**: c. 90–100 CE; Syrian provenance proposed; geography=antioch; core=hospitality-network
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/19-hospitality-network-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/19-hospitality-network-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S25 — Episodio 20: A Letter Across the Divide
 - **Status**: pending
-- **DependsOn**: [S24]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/20-reconciliation-deliveries-rome-ostia`, `docs/qa/faith-origins/episodes/20-reconciliation-deliveries-rome-ostia`
 - **Gate**: e2e
 - **Act**: act-3
@@ -322,12 +326,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 20
 - **HistoricalFrame**: c. 95 CE; geography=rome-ostia; core=reconciliation-deliveries
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/20-reconciliation-deliveries-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/20-reconciliation-deliveries-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S5 — Episodio 21: The Governor's Question
 - **Status**: pending
-- **DependsOn**: [S25]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/03-the-governors-question`, `docs/qa/faith-origins/episodes/03-the-governors-question`
 - **Gate**: e2e
 - **Act**: act-3
@@ -335,12 +339,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 21
 - **HistoricalFrame**: c. 112 CE; geography=bithynia; core=administrative-intrigue
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/03-the-governors-question: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado faith-origins/03-the-governors-question: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S26 — Episodio 22: Bread Read Aloud
 - **Status**: pending
-- **DependsOn**: [S5]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/22-reading-and-relief-rome-ostia`, `docs/qa/faith-origins/episodes/22-reading-and-relief-rome-ostia`
 - **Gate**: e2e
 - **Act**: act-4
@@ -348,12 +352,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 22
 - **HistoricalFrame**: c. 150–160 CE; geography=rome-ostia; core=reading-and-relief
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/22-reading-and-relief-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/22-reading-and-relief-rome-ostia: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S27 — Episodio 23: A Petition from Sardes
 - **Status**: pending
-- **DependsOn**: [S26]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/23-petition-escort-sardes`, `docs/qa/faith-origins/episodes/23-petition-escort-sardes`
 - **Gate**: e2e
 - **Act**: act-4
@@ -361,12 +365,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 23
 - **HistoricalFrame**: c. 170–180 CE; geography=sardes; core=petition-escort
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/23-petition-escort-sardes: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/23-petition-escort-sardes: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S28 — Episodio 24: The River Kept Their Names
 - **Status**: pending
-- **DependsOn**: [S27]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/24-witness-and-evacuation-lyon`, `docs/qa/faith-origins/episodes/24-witness-and-evacuation-lyon`
 - **Gate**: e2e
 - **Act**: act-4
@@ -374,12 +378,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 24
 - **HistoricalFrame**: 177 CE; geography=lyon; core=witness-and-evacuation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/24-witness-and-evacuation-lyon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/24-witness-and-evacuation-lyon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S29 — Episodio 25: Voices Against the Fragments
 - **Status**: pending
-- **DependsOn**: [S28]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/25-archive-comparison-lyon`, `docs/qa/faith-origins/episodes/25-archive-comparison-lyon`
 - **Gate**: e2e
 - **Act**: act-4
@@ -387,12 +391,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 25
 - **HistoricalFrame**: c. 180–200 CE; geography=lyon; core=archive-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/25-archive-comparison-lyon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/25-archive-comparison-lyon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S30 — Episodio 26: The Advocate's Harbour
 - **Status**: pending
-- **DependsOn**: [S29]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/26-legal-record-network-carthage`, `docs/qa/faith-origins/episodes/26-legal-record-network-carthage`
 - **Gate**: e2e
 - **Act**: act-4
@@ -400,12 +404,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 26
 - **HistoricalFrame**: c. 197 CE; geography=carthage; core=legal-record-network
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/26-legal-record-network-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/26-legal-record-network-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S31 — Episodio 27: What the Record Cannot Hold
 - **Status**: pending
-- **DependsOn**: [S30]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/27-household-aid-and-memory-carthage`, `docs/qa/faith-origins/episodes/27-household-aid-and-memory-carthage`
 - **Gate**: e2e
 - **Act**: act-4
@@ -413,12 +417,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 27
 - **HistoricalFrame**: 203 CE; geography=carthage; core=household-aid-and-memory
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/27-household-aid-and-memory-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado faith-origins/27-household-aid-and-memory-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S32 — Episodio 28: The Seal on the Certificate
 - **Status**: pending
-- **DependsOn**: [S31]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/28-certificate-and-refuge-egypt-middle-nile`, `docs/qa/faith-origins/episodes/28-certificate-and-refuge-egypt-middle-nile`
 - **Gate**: e2e
 - **Act**: act-5
@@ -426,12 +430,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 28
 - **HistoricalFrame**: 249–251 CE; geography=egypt-middle-nile; core=certificate-and-refuge
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/28-certificate-and-refuge-egypt-middle-nile: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/28-certificate-and-refuge-egypt-middle-nile: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S33 — Episodio 29: A Harbour Under Orders
 - **Status**: pending
-- **DependsOn**: [S32]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/29-bounded-evacuation-carthage`, `docs/qa/faith-origins/episodes/29-bounded-evacuation-carthage`
 - **Gate**: e2e
 - **Act**: act-5
@@ -439,12 +443,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 29
 - **HistoricalFrame**: 257–258 CE; geography=carthage; core=bounded-evacuation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/29-bounded-evacuation-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado faith-origins/29-bounded-evacuation-carthage: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S6 — Episodio 30: A Different Dawn
 - **Status**: pending
-- **DependsOn**: [S33]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/faith-origins/scenarios/04-a-different-dawn`, `docs/qa/faith-origins/episodes/04-a-different-dawn`
 - **Gate**: e2e
 - **Act**: act-5
@@ -452,12 +456,12 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 - **Order**: 30
 - **HistoricalFrame**: 303–313 CE; Milan local archive is dramatization, persecution and restitution vary regionally; geography=milan; core=supply-and-testimony
 - acceptance:
-  - "Materializar únicamente el expediente aprobado faith-origins/04-a-different-dawn: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado faith-origins/04-a-different-dawn: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
 
 ### S7 — Promoción conjunta y entrega acreditada
 - **Status**: pending
-- **DependsOn**: [S6]
+- **DependsOn**: [S8, S9, S10, S11, S12, S3, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S4, S23, S24, S25, S5, S26, S27, S28, S29, S30, S31, S32, S33, S6]
 - **Files**: `staging/campaigns/faith-origins`, `campaigns/faith-origins`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/faith-origins/delivery`
 - **Gate**: e2e
 - acceptance:
@@ -467,6 +471,6 @@ Fuente editorial: `docs/design/odysseys/faith-origins.json`. Índice: `docs/wiki
 ## acceptance
 
 - 30 escenarios de esta odisea, cinco actos, cada slice y objetivo trazable al dossier aprobado.
-- Gates previos reales; sin atribuir a MiniMax el cierre de decisiones históricas, geográficas o arquitectónicas.
+- Gates por entrega reales: fuentes por episodio aprobado, promoción sólo con la odisea completa y sus pruebas nativas; sin atribuir a MiniMax decisiones históricas, geográficas o arquitectónicas.
 - Independencia jugable, recomendaciones correctas, identidad estable, memoria acumulativa y progreso solo en el final efectivo.
 - Predicados acreditados, 6–8 secundarios por episodio, solvencia de ambos extremos y QA medido; no aprobar por documentación estática.

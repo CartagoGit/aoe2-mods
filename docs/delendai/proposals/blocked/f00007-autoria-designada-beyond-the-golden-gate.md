@@ -16,7 +16,7 @@ last-transition-at: 2026-10-12T14:24:28.544Z
 
 ## goal
 
-MiniMax M3.1 materializa `new-rome` / CDF-C04 como odisea independiente de 32 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. Esta propuesta permanece bloqueada: una selección de episodios no es un contrato aprobado.
+MiniMax M3.1 materializa `new-rome` / CDF-C04 como odisea independiente de 32 episodios y cinco actos. Inglés inicial y español completo. El arquitecto aporta antes de la autoría cada expediente, fuente, voz, terreno, objetivo, presupuesto y decisión de continuidad. La propuesta conserva su estado operativo hasta comprobar los gates. Una selección no es un contrato aprobado: sólo se materializa el subconjunto con paquete individual aprobado para fuentes; el resto de la odisea puede seguir en diseño.
 
 ## why
 
@@ -30,7 +30,11 @@ La ampliación del propietario reemplaza la extensión de la base de 39 misiones
 
 ## prerequisites
 
-`d00002` completo y revisado para esta odisea; `i00003` con las capacidades usadas implementadas; `f00001` y `f00002` pilotos acreditados; `s00001` con evidencia de motor. Recuperar dependencias y estados vivos de DelendAI. No cambiar blocked por tener este documento ni por contar carpetas.
+Autoría de fuentes en paralelo: `d00002/S1` integrado y revisado; arquitectura editorial de esta campaña y al menos un expediente individual aprobados para fuentes; esquema y referencia reutilizable de todas sus operaciones disponibles; flujo de staging del piloto `f00001/S2` revisado. No se exige terminar los expedientes de los cinco actos ni de otras odiseas para empezar un episodio preparado. S1 mantiene una matriz por episodio; cada slice comprueba su propio paquete aprobado, sin delegar diseño a MiniMax.
+
+Esta habilitación sirve sólo para fuentes en staging. La referencia tipada no certifica terreno, exportación o motor. Capacidades nativas de `i00003` y propuestas especializadas, pilotos `f00001`/`f00002`, plantillas reales y evidencia `s00001` se exigen antes de exportar/promover las operaciones que las usan, y siguen pendientes cuando no exista evidencia. No sustituir operaciones ni prometer una campaña jugable por cerrar un slice de fuentes. La promoción exige todos los expedientes y episodios de esta odisea completos/revisados, sus dependencias nativas y su QA real.
+
+Recuperar estados vivos de DelendAI. Esta enmienda no cambia por sí sola blocked, no concede aprobación a ningún dossier y no permite saltar una dependencia real. El [paquete por entrega](../../../handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md) fija el traspaso y la devolución de hallazgos.
 
 ## fuentes de trabajo y actos
 
@@ -53,7 +57,7 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Files**: `docs/qa/new-rome/design-conformance.md`
 - **Gate**: e2e
 - acceptance:
-  - "Verificar los 32 expedientes completos de new-rome, cinco actos, pasajes consultados y revisión independiente del arquitecto. Si falta un objetivo, mapa, pantalla o nivelación, informar la brecha; no decidirlo MiniMax."
+  - "Verificar el manifiesto completo de 32 episodios y cinco actos de new-rome, con estado por episodio. Para iniciar fuentes basta al menos un expediente individual completo y aprobado para ese alcance, sus pasajes consultados, decisiones de geografía/narrador/objetivos/nivelación cerradas y revisión independiente. Los demás quedan pendientes; MiniMax informa brechas, no las decide."
   - "Contrastar IDs estables, sourceLocale=en, EN/es-ES completos, voz factual común antes de persona situada y orden de campaña no bloqueante; conservar estados pendientes de otros idiomas y medios."
 
 ### S2 — Metadatos, pantallas de campaña y medios en staging
@@ -75,12 +79,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 1
 - **HistoricalFrame**: 337 CE; Nicomedia death reported; geography=constantinople; core=administrative-transition
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/01-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/01-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S10 — Episodio 2: The City's Place in the Canon
 - **Status**: pending
-- **DependsOn**: [S9]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/02-council-and-city-logistics-constantinople`, `docs/qa/new-rome/episodes/02-council-and-city-logistics-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -88,12 +92,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 2
 - **HistoricalFrame**: 381 CE; geography=constantinople; core=council-and-city-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/02-council-and-city-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/02-council-and-city-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S11 — Episodio 3: Two Courts beneath One Memory
 - **Status**: pending
-- **DependsOn**: [S10]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/03-competing-dispatches-constantinople`, `docs/qa/new-rome/episodes/03-competing-dispatches-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -101,12 +105,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 3
 - **HistoricalFrame**: 395 CE; deathMilan off-map; geography=constantinople; core=competing-dispatches
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/03-competing-dispatches-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/03-competing-dispatches-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S12 — Episodio 4: The Bishop Who Was Sent Away
 - **Status**: pending
-- **DependsOn**: [S11]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/04-civilian-refuge-and-dispatch-constantinople`, `docs/qa/new-rome/episodes/04-civilian-refuge-and-dispatch-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -114,12 +118,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 4
 - **HistoricalFrame**: 404 CE; geography=constantinople; core=civilian-refuge-and-dispatch
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/04-civilian-refuge-and-dispatch-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/04-civilian-refuge-and-dispatch-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S13 — Episodio 5: Rooms for the Written Word
 - **Status**: pending
-- **DependsOn**: [S12]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/05-finite-school-works-constantinople`, `docs/qa/new-rome/episodes/05-finite-school-works-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -127,12 +131,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 5
 - **HistoricalFrame**: 425 CE; school institution, not modern university; geography=constantinople; core=finite-school-works
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/05-finite-school-works-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/05-finite-school-works-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S14 — Episodio 6: Before the Delegates Arrived
 - **Status**: pending
-- **DependsOn**: [S13]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/06-separate-session-logistics-ephesus`, `docs/qa/new-rome/episodes/06-separate-session-logistics-ephesus`
 - **Gate**: e2e
 - **Act**: act-1
@@ -140,12 +144,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 6
 - **HistoricalFrame**: 431 CE; geography=ephesus; core=separate-session-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/06-separate-session-logistics-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/06-separate-session-logistics-ephesus: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S15 — Episodio 7: A Return after the Exile
 - **Status**: pending
-- **DependsOn**: [S14]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/07-ceremony-and-household-logistics-constantinople`, `docs/qa/new-rome/episodes/07-ceremony-and-household-logistics-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -153,12 +157,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 7
 - **HistoricalFrame**: 438 CE; relics transfer; geography=constantinople; core=ceremony-and-household-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/07-ceremony-and-household-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/07-ceremony-and-household-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S16 — Episodio 8: The Law Gathered into Books
 - **Status**: pending
-- **DependsOn**: [S15]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/08-distributed-record-collation-constantinople`, `docs/qa/new-rome/episodes/08-distributed-record-collation-constantinople`
 - **Gate**: e2e
 - **Act**: act-1
@@ -166,12 +170,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 8
 - **HistoricalFrame**: 438 CE; publication/439effective distinguished; geography=constantinople; core=distributed-record-collation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/08-distributed-record-collation-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado new-rome/08-distributed-record-collation-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S3 — Episodio 9: Across the Strait
 - **Status**: pending
-- **DependsOn**: [S16]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/01-across-the-strait`, `docs/qa/new-rome/episodes/01-across-the-strait`
 - **Gate**: e2e
 - **Act**: act-2
@@ -179,12 +183,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 9
 - **HistoricalFrame**: 451 CE; geography=chalcedon; core=delegate-and-ferry-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/01-across-the-strait: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/01-across-the-strait: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S17 — Episodio 10: The Emperor at the City's Edge
 - **Status**: pending
-- **DependsOn**: [S3]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/10-ceremony-route-and-provision-constantinople`, `docs/qa/new-rome/episodes/10-ceremony-route-and-provision-constantinople`
 - **Gate**: e2e
 - **Act**: act-2
@@ -192,12 +196,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 10
 - **HistoricalFrame**: 457 CE; geography=constantinople; core=ceremony-route-and-provision
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/10-ceremony-route-and-provision-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/10-ceremony-route-and-provision-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S18 — Episodio 11: A Letter That Could Not Unite
 - **Status**: pending
-- **DependsOn**: [S17]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/11-disputed-correspondence-constantinople`, `docs/qa/new-rome/episodes/11-disputed-correspondence-constantinople`
 - **Gate**: e2e
 - **Act**: act-2
@@ -205,12 +209,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 11
 - **HistoricalFrame**: 482 CE; geography=constantinople; core=disputed-correspondence
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/11-disputed-correspondence-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/11-disputed-correspondence-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S19 — Episodio 12: One Seal after Two Emperors
 - **Status**: pending
-- **DependsOn**: [S18]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/12-administrative-transition-constantinople`, `docs/qa/new-rome/episodes/12-administrative-transition-constantinople`
 - **Gate**: e2e
 - **Act**: act-2
@@ -218,12 +222,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 12
 - **HistoricalFrame**: 1 August527 CE; co-rule sinceApril; geography=constantinople; core=administrative-transition
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/12-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/12-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S4 — Episodio 13: The City in Ashes
 - **Status**: pending
-- **DependsOn**: [S19]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/02-the-city-in-ashes`, `docs/qa/new-rome/episodes/02-the-city-in-ashes`
 - **Gate**: e2e
 - **Act**: act-2
@@ -231,12 +235,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 13
 - **HistoricalFrame**: January532 CE; geography=constantinople; core=civilian-evacuation-under-unrest
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/02-the-city-in-ashes: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/02-the-city-in-ashes: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S20 — Episodio 14: Stone beneath the Great Dome
 - **Status**: pending
-- **DependsOn**: [S4]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/14-finite-construction-logistics-constantinople`, `docs/qa/new-rome/episodes/14-finite-construction-logistics-constantinople`
 - **Gate**: e2e
 - **Act**: act-2
@@ -244,12 +248,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 14
 - **HistoricalFrame**: 532–537 CE; dedication537; geography=constantinople; core=finite-construction-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/14-finite-construction-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/14-finite-construction-logistics-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S21 — Episodio 15: The Orontes after the Flames
 - **Status**: pending
-- **DependsOn**: [S20]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/15-bounded-civilian-extraction-antioch`, `docs/qa/new-rome/episodes/15-bounded-civilian-extraction-antioch`
 - **Gate**: e2e
 - **Act**: act-2
@@ -257,12 +261,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 15
 - **HistoricalFrame**: 540 CE; geography=antioch; core=bounded-civilian-extraction
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/15-bounded-civilian-extraction-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/15-bounded-civilian-extraction-antioch: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S5 — Episodio 16: The Empty Granary
 - **Status**: pending
-- **DependsOn**: [S21]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/03-the-empty-granary`, `docs/qa/new-rome/episodes/03-the-empty-granary`
 - **Gate**: e2e
 - **Act**: act-2
@@ -270,12 +274,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 16
 - **HistoricalFrame**: 542 CE; geography=constantinople; core=care-and-food-allocation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/03-the-empty-granary: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/03-the-empty-granary: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S22 — Episodio 17: The Chapters on the Table
 - **Status**: pending
-- **DependsOn**: [S5]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/17-council-record-comparison-constantinople`, `docs/qa/new-rome/episodes/17-council-record-comparison-constantinople`
 - **Gate**: e2e
 - **Act**: act-2
@@ -283,12 +287,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 17
 - **HistoricalFrame**: 553 CE; geography=constantinople; core=council-record-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/17-council-record-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado new-rome/17-council-record-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S23 — Episodio 18: A City between Two Armies
 - **Status**: pending
-- **DependsOn**: [S22]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/18-finite-siege-and-ferry-supply-constantinople`, `docs/qa/new-rome/episodes/18-finite-siege-and-ferry-supply-constantinople`
 - **Gate**: e2e
 - **Act**: act-3
@@ -296,12 +300,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 18
 - **HistoricalFrame**: 626 CE; geography=constantinople; core=finite-siege-and-ferry-supply
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/18-finite-siege-and-ferry-supply-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/18-finite-siege-and-ferry-supply-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S24 — Episodio 19: News from the Holy City
 - **Status**: pending
-- **DependsOn**: [S23]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/19-civilian-record-and-property-logistics-jerusalem`, `docs/qa/new-rome/episodes/19-civilian-record-and-property-logistics-jerusalem`
 - **Gate**: e2e
 - **Act**: act-3
@@ -309,12 +313,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 19
 - **HistoricalFrame**: 637/638 CE; capitulation reports qualified; geography=jerusalem; core=civilian-record-and-property-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/19-civilian-record-and-property-logistics-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/19-civilian-record-and-property-logistics-jerusalem: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S25 — Episodio 20: Ships in the Uncertain Years
 - **Status**: pending
-- **DependsOn**: [S24]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/20-coastal-watch-and-bounded-convoy-constantinople`, `docs/qa/new-rome/episodes/20-coastal-watch-and-bounded-convoy-constantinople`
 - **Gate**: e2e
 - **Act**: act-3
@@ -322,12 +326,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 20
 - **HistoricalFrame**: c.674–678 CE; continuous siege disputed; geography=constantinople; core=coastal-watch-and-bounded-convoy
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/20-coastal-watch-and-bounded-convoy-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/20-coastal-watch-and-bounded-convoy-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S26 — Episodio 21: Eighteen Sessions by the Palace
 - **Status**: pending
-- **DependsOn**: [S25]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/21-delegation-and-text-comparison-constantinople`, `docs/qa/new-rome/episodes/21-delegation-and-text-comparison-constantinople`
 - **Gate**: e2e
 - **Act**: act-3
@@ -335,12 +339,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 21
 - **HistoricalFrame**: 680–681 CE; geography=constantinople; core=delegation-and-text-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/21-delegation-and-text-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/21-delegation-and-text-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S6 — Episodio 22: Winter at the Walls
 - **Status**: pending
-- **DependsOn**: [S26]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/04-winter-at-the-walls`, `docs/qa/new-rome/episodes/04-winter-at-the-walls`
 - **Gate**: e2e
 - **Act**: act-3
@@ -348,12 +352,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 22
 - **HistoricalFrame**: 717–718 CE; geography=constantinople; core=finite-winter-siege-and-supply
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/04-winter-at-the-walls: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado new-rome/04-winter-at-the-walls: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S27 — Episodio 23: An Image beneath the Orders
 - **Status**: pending
-- **DependsOn**: [S6]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/23-artisan-record-and-protection-constantinople`, `docs/qa/new-rome/episodes/23-artisan-record-and-protection-constantinople`
 - **Gate**: e2e
 - **Act**: act-4
@@ -361,12 +365,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 23
 - **HistoricalFrame**: c.726–730 CE; policy chronology disputed; geography=constantinople; core=artisan-record-and-protection
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/23-artisan-record-and-protection-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/23-artisan-record-and-protection-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S28 — Episodio 24: The Assembly at Hieria
 - **Status**: pending
-- **DependsOn**: [S27]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/24-council-and-workshop-logistics-chalcedon`, `docs/qa/new-rome/episodes/24-council-and-workshop-logistics-chalcedon`
 - **Gate**: e2e
 - **Act**: act-4
@@ -374,12 +378,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 24
 - **HistoricalFrame**: 754 CE; reconstructed from later opposing acts; geography=chalcedon; core=council-and-workshop-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/24-council-and-workshop-logistics-chalcedon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/24-council-and-workshop-logistics-chalcedon: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S7 — Episodio 25: Pieces of a Memory
 - **Status**: pending
-- **DependsOn**: [S28]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/05-pieces-of-a-memory`, `docs/qa/new-rome/episodes/05-pieces-of-a-memory`
 - **Gate**: e2e
 - **Act**: act-4
@@ -387,12 +391,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 25
 - **HistoricalFrame**: 787 CE; former843epilogue now separatefinale; geography=nicaea; core=restoration-and-council-logistics
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/05-pieces-of-a-memory: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado new-rome/05-pieces-of-a-memory: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio. Presenta el punto de inflexión del acto aprobado."
 
 ### S29 — Episodio 26: The Court under Irene
 - **Status**: pending
-- **DependsOn**: [S7]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/26-civilian-supply-and-succession-records-constantinople`, `docs/qa/new-rome/episodes/26-civilian-supply-and-succession-records-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -400,12 +404,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 26
 - **HistoricalFrame**: 797 CE; geography=constantinople; core=civilian-supply-and-succession-records
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/26-civilian-supply-and-succession-records-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/26-civilian-supply-and-succession-records-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S30 — Episodio 27: A Crown beyond the Western Sea
 - **Status**: pending
-- **DependsOn**: [S29]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/27-off-map-dispatch-and-comparison-constantinople`, `docs/qa/new-rome/episodes/27-off-map-dispatch-and-comparison-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -413,12 +417,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 27
 - **HistoricalFrame**: 800 CE; crowningRome off-map; geography=constantinople; core=off-map-dispatch-and-comparison
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/27-off-map-dispatch-and-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/27-off-map-dispatch-and-comparison-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S31 — Episodio 28: The Seal That Changed Hands
 - **Status**: pending
-- **DependsOn**: [S30]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/28-administrative-transition-constantinople`, `docs/qa/new-rome/episodes/28-administrative-transition-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -426,12 +430,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 28
 - **HistoricalFrame**: 802 CE; geography=constantinople; core=administrative-transition
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/28-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/28-administrative-transition-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S32 — Episodio 29: The Roads below Pliska
 - **Status**: pending
-- **DependsOn**: [S31]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/29-finite-withdrawal-and-relief-pliska`, `docs/qa/new-rome/episodes/29-finite-withdrawal-and-relief-pliska`
 - **Gate**: e2e
 - **Act**: act-5
@@ -439,12 +443,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 29
 - **HistoricalFrame**: 811 CE; battle-site footprint uncertain; geography=pliska; core=finite-withdrawal-and-relief
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/29-finite-withdrawal-and-relief-pliska: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/29-finite-withdrawal-and-relief-pliska: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S33 — Episodio 30: A Report from the Thracian Field
 - **Status**: pending
-- **DependsOn**: [S32]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/30-civilian-refuge-and-dispatch-adrianople`, `docs/qa/new-rome/episodes/30-civilian-refuge-and-dispatch-adrianople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -452,12 +456,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 30
 - **HistoricalFrame**: 813 CE; Versinikia regional location uncertain; geography=adrianople; core=civilian-refuge-and-dispatch
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/30-civilian-refuge-and-dispatch-adrianople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/30-civilian-refuge-and-dispatch-adrianople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S34 — Episodio 31: The Covered Workshop
 - **Status**: pending
-- **DependsOn**: [S33]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/31-artisan-and-archive-preservation-constantinople`, `docs/qa/new-rome/episodes/31-artisan-and-archive-preservation-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -465,12 +469,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 31
 - **HistoricalFrame**: 815 CE; geography=constantinople; core=artisan-and-archive-preservation
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/31-artisan-and-archive-preservation-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
+  - "Materializar únicamente el expediente aprobado new-rome/31-artisan-and-archive-preservation-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Episodio intermedio: no escribe final de campaña; muestra siguiente episodio."
 
 ### S35 — Episodio 32: The Mosaic Returned
 - **Status**: pending
-- **DependsOn**: [S34]
+- **DependsOn**: [S2]
 - **Files**: `staging/campaigns/new-rome/scenarios/32-restoration-and-final-perspective-constantinople`, `docs/qa/new-rome/episodes/32-restoration-and-final-perspective-constantinople`
 - **Gate**: e2e
 - **Act**: act-5
@@ -478,12 +482,12 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 - **Order**: 32
 - **HistoricalFrame**: 843 CE; geography=constantinople; core=restoration-and-final-perspective
 - acceptance:
-  - "Materializar únicamente el expediente aprobado new-rome/32-restoration-and-final-perspective-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Si expediente o capacidad no está aprobado, este slice no es ejecutable."
-  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación real. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
+  - "Materializar únicamente el expediente aprobado new-rome/32-restoration-and-final-perspective-constantinople: hechos y licencias acotados, geografía real 300–400, predicados AND/IDs/recibos/derrotas, economía y perfiles easy/standard/hard, EN/es-ES y secuencia común→persona. Antes de reclamar, comprobar el paquete individual aprobado para fuentes y la referencia tipada de las operaciones usadas. Una referencia no es capacidad nativa: conservar explícitos exportación, terreno y QA de motor pendientes. Si el expediente o contrato de referencia falta, este slice no es ejecutable; no improvisarlo."
+  - "Implementar sus 6–8 secundarios, al menos cuatro mecánicas y tres estrategias combinables: ventajas finitas/persistentes, pérdida opcional sin derrota principal, solvencia saltando todos y completando todos. QA específico, llegadas tempranas, bajas, doble cobro, guardado y navegación: adjuntar casos específicos y mantener ejecución nativa pendiente si aún no está acreditada. Este slice entrega fuentes; no certifica GAME VERIFIED ni altera operaciones para aparentarlo. Único episodio final: escribe la ruta elegida a1 preservando otras y recomienda el sucesor según elección; nunca exige predecesora ni autolanza campaña. Presenta el punto de inflexión del acto aprobado."
 
 ### S8 — Promoción conjunta y entrega acreditada
 - **Status**: pending
-- **DependsOn**: [S35]
+- **DependsOn**: [S9, S10, S11, S12, S13, S14, S15, S16, S3, S17, S18, S19, S4, S20, S21, S5, S22, S23, S24, S25, S26, S6, S27, S28, S7, S29, S30, S31, S32, S33, S34, S35]
 - **Files**: `staging/campaigns/new-rome`, `campaigns/new-rome`, `config/string-ids.lock.json`, `config/glossary.json`, `docs/qa/new-rome/delivery`
 - **Gate**: e2e
 - acceptance:
@@ -493,6 +497,6 @@ Fuente editorial: `docs/design/odysseys/new-rome.json`. Índice: `docs/wiki/new-
 ## acceptance
 
 - 32 escenarios de esta odisea, cinco actos, cada slice y objetivo trazable al dossier aprobado.
-- Gates previos reales; sin atribuir a MiniMax el cierre de decisiones históricas, geográficas o arquitectónicas.
+- Gates por entrega reales: fuentes por episodio aprobado, promoción sólo con la odisea completa y sus pruebas nativas; sin atribuir a MiniMax decisiones históricas, geográficas o arquitectónicas.
 - Independencia jugable, recomendaciones correctas, identidad estable, memoria acumulativa y progreso solo en el final efectivo.
 - Predicados acreditados, 6–8 secundarios por episodio, solvencia de ambos extremos y QA medido; no aprobar por documentación estática.
