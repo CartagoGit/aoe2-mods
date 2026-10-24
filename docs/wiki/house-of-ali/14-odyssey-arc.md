@@ -82,7 +82,7 @@ Only the final expanded episode may complete this campaign or present the succes
 
 ## act-1: Clay in an Uneasy City / Barro en una ciudad inquieta
 
-Historical year band: [656, 656]. Dina niña recibe historias de su tío; hogares deKufa y redes políticas no sustituyen fuentes históricas.
+Historical year band: [656, 657]. Dina niña recibe historias de su tío; hogares deKufa y redes políticas no sustituyen fuentes históricas.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-2: Two Banks, One Cup / Dos riberas, una copa
 
-Historical year band: [657, 657]. Siffin desde cuidado y abastecimiento; mismoscarros y registros reales, sin prodigios de curación.
+Historical year band: [657, 658]. Siffin desde cuidado y abastecimiento; mismoscarros y registros reales, sin prodigios de curación.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|

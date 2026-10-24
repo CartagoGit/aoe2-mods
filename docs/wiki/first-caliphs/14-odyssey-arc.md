@@ -228,7 +228,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-5: A Horizon Divided / Un horizonte dividido
 
-Historical year band: [651, 656]. Cambios imperiales y nuevas rutas navales culminan en crisis deMedina; la continuidad invita a First Fitna.
+Historical year band: [649, 656]. Cambios imperiales y nuevas rutas navales culminan en crisis deMedina; la continuidad invita a First Fitna.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|

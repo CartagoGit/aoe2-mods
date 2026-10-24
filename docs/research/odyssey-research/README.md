@@ -151,3 +151,14 @@ python3 tools/design/test_research_crosswalk.py
 El primer comando regenera únicamente el informe de investigación; los otros comprueban sin escribir campañas. El gate documental ejecuta también las regresiones mediante `test_design.py`. S1 mantiene pendientes el resto del cruce y la revisión editorial de hitos/curvas; MiniMax sigue las asignaciones y bloqueos vigentes.
 
 El [contraste del segundo lote](first-caliphs-source-contrast-checkpoint.md) documenta contradicciones de la cronología, atribuciones y paginación, distingue fases de Alejandría y conserva pendientes las dos consultas de Aqaba. Las fuentes se leen con crítica incluso cuando son enciclopedias académicas; ni las generalizaciones confesionales ni las cifras transmitidas se convierten automáticamente en narrativa objetiva o mecánicas.
+
+
+## Dirección de los 45 actos y consultas de la familia de Ali — 24 de octubre
+
+Las [fichas editoriales de los 45 actos](act-editorial-review.md), con [registro de decisiones](act-editorial-review.json), fijan entrada, inflexión, salida, presión/recuperación y una exigencia de diferenciación para cada acto de las nueve campañas. Son dirección del arquitecto fechada, pendiente de revisión independiente; no dossiers completos ni curvas medidas. Ocho bandas anuales de acto se ajustan al marco de sus episodios ya seleccionados, incluidas alternativas inciertas. Se conservan fechas de episodio, IDs, orden, contratos, voces y continuidad.
+
+- [First Fitna: 28 selecciones](first-fitna-source-collection.md), recopilación de Luna con pasajes y alcance de lectura por ID canónico.
+- [House of Ali: 30 selecciones](house-of-ali-source-collection.md), recopilación de Luna; el intento inaccesible del volumen XVII permanece sin lectura.
+- [Siete contrastes acotados del arquitecto](ali-family-architect-source-contrast.md), separados de la declaración del recopilador: cronologías, arbitrajes, retirada, cautivos, memoria religiosa y límites de diálogo. Conservan hashes de ambas recopilaciones.
+
+Estos archivos no amplían silenciosamente el cruce normalizado de consultas: este sigue enlazando 30 selecciones de first-caliphs, con dos accesos de Aqaba fallidos. Las 58 selecciones de las dos nuevas recopilaciones no son 58 hechos aprobados. Falta completar los vínculos y decisiones históricos de S1; los 63 borradores, 215 selecciones sin dossier y 54 candidatos estáticos a riesgo cívico no cambian.

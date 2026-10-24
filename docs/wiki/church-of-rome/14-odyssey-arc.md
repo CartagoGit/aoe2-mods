@@ -156,7 +156,7 @@ The proposed act curve is a calibration hypothesis. It cannot add fictional mili
 
 ## act-3: Through the Gothic Ashes / Entre las cenizas godas
 
-Historical year band: [536, 596]. Guerras y abastecimiento de Roma; Gregorio combina cuidados, negociaciones y enlaces exteriores.
+Historical year band: [536, 597]. Guerras y abastecimiento de Roma; Gregorio combina cuidados, negociaciones y enlaces exteriores.
 
 | Order / semantic ID | English / Español | Date | Local geography | Main operation |
 |---|---|---|---|---|

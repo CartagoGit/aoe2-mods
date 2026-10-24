@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "consultedOn": "2026-10-24",
+  "scope": "Bounded architect comparison of selected passages supporting two delegated collections. Not approval of58 episodes, native maps, chronology or source crosswalk coverage.",
+  "collections": [
+    {
+      "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+      "sha256": "440bea65af4495e82cfa865f0062152e2a420ca6adb3b0d82d238bded24efc59",
+      "collector": "gpt-6-luna"
+    },
+    {
+      "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+      "sha256": "37df93a7288e0ff024cdc2ee76b2cdfdd3159d134b954230df14f8dc090396b1",
+      "collector": "gpt-6-luna"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "poonawala-conflict-passages",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "title": "Ismail K. Poonawala, Ali i. Life",
+      "locator": "PDF pp.4–9; mediation/Camel, Kufa/Siffin, arbitration/Nahrawan, end 660 and death paragraph",
+      "access": "article-passage",
+      "readScope": "Read these passages and visible citations, not the entire article or cited medieval works.",
+      "finding": "The summary distinguishes phases and warns of sectarian historiography; its end 660 statement aggregates territorial losses.",
+      "limits": "Do not infer every loss happened in 660 or certify private motives, speeches, dates or local map coordinates."
+    },
+    {
+      "id": "madelung-hasan-passages",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+      "title": "Wilferd Madelung, Hasan b. Ali",
+      "locator": "PDF pp.2–6; backing, negotiations, surrender/return and death/burial",
+      "access": "article-passage",
+      "readScope": "Read the selected PDF paragraphs; direct HTML opening timed out and visual PDF retrieval returned 403. No cited medieval texts read.",
+      "finding": "The retrieved date line for Ali’s death is anomalous compared with the same article’s 661 transfer and other works.",
+      "limits": "Preserve the anomaly as retrieved text, not an alternate campaign date. Check the print edition before attributing the error to the author; poisoning blame and reported dialogue remain qualified."
+    },
+    {
+      "id": "madelung-chronological-survey",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://almuslih.org/wp-content/uploads/Library/Madelung%2C%20W%20-%20The%20succession.pdf",
+      "title": "Wilferd Madelung, The Succession to Muhammad (1997)",
+      "locator": "Printed chronological survey p.xvi, PDF p.18, selected 658–680 rows",
+      "access": "excerpt",
+      "readScope": "Read only these chronology rows and the copyright/title metadata in a third-party book copy; not the full book.",
+      "finding": "The survey places Ali’s death in 661, Egypt’s conquest in 658, and offers a Dumat timing different from Poonawala’s February framing.",
+      "limits": "Do not certify an exact converted day or select one chronology silently. The book is copyrighted and is not downloaded into the project."
+    },
+    {
+      "id": "madelung-hosayn-route-and-reports",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/?generate_pdf=1",
+      "title": "Wilferd Madelung, Hosayn b. Ali i. Life",
+      "locator": "PDF pp.5–11; letters, route/news stations, attributed proposals and survivors",
+      "access": "article-passage",
+      "readScope": "Read these narrative passages and visible citations; no inscription, Arabic critical edition or cited study collated.",
+      "finding": "The narrative distinguishes news at Thalabiyya from Zubala and contests the attributed three-option offer; it explicitly records survivors.",
+      "limits": "No reconstructed private conversation, exact troop roster, modern route coordinate, ancient river course or omniscient motive becomes established narration."
+    },
+    {
+      "id": "litvak-karbala-opening",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.iranicaonline.org/articles/karbala/",
+      "title": "Meir Litvak, Karbala",
+      "locator": "Opening battle/captivity account and subsequent pilgrimage-development paragraphs",
+      "access": "article-passage",
+      "readScope": "Read only these HTML paragraphs, not the whole entry or its cited works.",
+      "finding": "The entry separates battle/captivity from later shrine and pilgrimage developments.",
+      "limits": "Do not project a later sacred city, shrines, walls or institutional rituals into the 680 camp; its numbers are transmitted, not engine budgets."
+    },
+    {
+      "id": "ayoub-ashura-piety",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.iranicaonline.org/articles/asura/",
+      "title": "Mahmoud M. Ayoub, Ashura",
+      "locator": "Definition, chronology discussion and Ashura in Shiite piety opening",
+      "access": "article-passage",
+      "readScope": "Read these HTML sections, not the whole article or cited hadith/historical texts.",
+      "finding": "The entry treats observance and later meaning alongside the historical tragedy.",
+      "limits": "Devotional interpretation is attributed belief, not objective divine causation, a homogeneous community response or a gameplay power."
+    },
+    {
+      "id": "tabari-brockett-kharbita",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://fliphtml5.com/qzpe/qric/History_of_Al_Tabari_-_Vol_16/",
+      "title": "Al-Tabari, The Community Divided, vol. XVI; translated Adrian Brockett (1997)",
+      "locator": "Displayed title/copyright; printed pp.179–180 and 183–184, especially truce and explicit opposing succession reports",
+      "access": "translated-passage",
+      "readScope": "Read only these displayed translated passages and attribution; no Arabic edition, full volume or vol. XVII comparison read.",
+      "finding": "The compilation gives a reported Kharbita truce and explicitly juxtaposes opposing governor-order reports.",
+      "limits": "No authentic letter dialogue, exact chronology, universal loyalty or geographical identification follows. The third-party hosted translation is copyrighted and no source passage or book is copied into production."
+    }
+  ],
+  "unconfirmedComparison": "The collector’s JSTOR vol.XVII failure remains its own failed attempt. GPT-6 has not read that volume or repeated that access attempt in this contrast."
+}
