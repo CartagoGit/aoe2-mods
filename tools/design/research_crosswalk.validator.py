@@ -71,12 +71,45 @@ def unique_rows(rows, label):
     return result
 
 
-def checked_sources(root, rows, campaign_ids):
-    sources = unique_rows(rows, 'Sources')
-    result = {}
+def checked_archive(root, archive, label):
+    """Share byte and path checks for archives and their declared input snapshots."""
+    exact_fields(archive, ('path', 'sha256'), label)
     base = (root / RESEARCH_DIR).resolve()
     if not base.is_relative_to(root.resolve()):
         raise ValueError('Research directory must remain inside the project')
+    text(archive['path'], 'Source path')
+    relative = Path(archive['path'])
+    if relative.is_absolute() or '..' in relative.parts or '\\' in archive['path']:
+        raise ValueError('Source path must remain inside the research directory')
+    path = (root / relative).resolve()
+    if not path.is_relative_to(base) or path == base or path.suffix != '.json':
+        raise ValueError('Source path must name a local research JSON file')
+    if not isinstance(archive['sha256'], str) or not re.fullmatch('[0-9a-f]{64}', archive['sha256']):
+        raise ValueError('Source SHA-256 must identify the archived bytes')
+    raw = path.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != archive['sha256']:
+        raise ValueError(f'Stale archived source bytes: {label}')
+    return json.loads(raw)
+
+
+def checked_upstream_snapshots(root, document):
+    """A projection cannot hide changed declared inputs behind its own fresh hash."""
+    if not isinstance(document, dict) or 'upstreamSnapshots' not in document:
+        return
+    snapshots = document['upstreamSnapshots']
+    if not isinstance(snapshots, list):
+        raise ValueError('Upstream snapshots must be a list')
+    paths = set()
+    for snapshot in snapshots:
+        checked_archive(root, snapshot, 'Upstream snapshot')
+        if snapshot['path'] in paths:
+            raise ValueError('Duplicate upstream snapshot path')
+        paths.add(snapshot['path'])
+
+
+def checked_sources(root, rows, campaign_ids):
+    sources = unique_rows(rows, 'Sources')
+    result = {}
     for identity, row in sources.items():
         exact_fields(row, ('id', 'path', 'sha256', 'campaignIds'), f'Source {identity}')
         scope = row['campaignIds']
@@ -84,19 +117,9 @@ def checked_sources(root, rows, campaign_ids):
                 or any(not isinstance(cid, str) or cid not in campaign_ids for cid in scope)
                 or len(scope) != len(set(scope))):
             raise ValueError('Source campaign scope must name distinct canonical campaigns')
-        text(row['path'], 'Source path')
-        relative = Path(row['path'])
-        if relative.is_absolute() or '..' in relative.parts or '\\' in row['path']:
-            raise ValueError('Source path must remain inside the research directory')
-        path = (root / relative).resolve()
-        if not path.is_relative_to(base) or path == base or path.suffix != '.json':
-            raise ValueError('Source path must name a local research JSON file')
-        if not isinstance(row['sha256'], str) or not re.fullmatch('[0-9a-f]{64}', row['sha256']):
-            raise ValueError('Source SHA-256 must identify the archived bytes')
-        raw = path.read_bytes()
-        if hashlib.sha256(raw).hexdigest() != row['sha256']:
-            raise ValueError(f'Stale archived source bytes: {identity}')
-        result[identity] = {'path': row['path'], 'campaignIds': scope, 'document': json.loads(raw)}
+        document = checked_archive(root, {key: row[key] for key in ('path', 'sha256')}, identity)
+        checked_upstream_snapshots(root, document)
+        result[identity] = {'path': row['path'], 'campaignIds': scope, 'document': document}
     return result
 
 

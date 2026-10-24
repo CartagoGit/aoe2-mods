@@ -54,6 +54,51 @@ class ResearchCrosswalkTests(unittest.TestCase):
         self.data['bindings'][0]['architectCheck'] = {
             'consultationIds': ['fresh-read'], 'scopeNote': 'Different source explicitly attributed', 'corrections': []}
 
+    def save_source(self):
+        self.path.write_text(json.dumps(self.source))
+        self.data['sources'][0]['sha256'] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+
+    def add_upstream(self):
+        upstream = self.path.with_name('original-declaration.json')
+        upstream.write_text(json.dumps({'scope': 'Archived declaration, not a new reading'}))
+        self.source['upstreamSnapshots'] = [{
+            'path': upstream.relative_to(self.root).as_posix(),
+            'sha256': hashlib.sha256(upstream.read_bytes()).hexdigest()}]
+        self.save_source()
+        return upstream
+
+    def test_projection_hash_cannot_hide_a_stale_input_or_inflate_reads(self):
+        upstream = self.add_upstream()
+        errors, report = self.audit()
+        self.assertEqual(errors, [])
+        self.assertEqual(report['campaigns'][0]['architectChecks'], 0)
+        self.assertEqual(report['campaigns'][0]['withPassageRead'], 0)
+        upstream.write_text(upstream.read_text() + '\n')
+        self.save_source()
+        self.assertTrue(any('Stale archived' in error for error in self.audit()[0]))
+
+    def test_upstream_snapshots_reject_malformed_duplicate_and_escape_records(self):
+        self.add_upstream()
+        original = copy.deepcopy(self.source['upstreamSnapshots'][0])
+        invalid_rows = [None, {}, 'not a list', [None], [original, original],
+                        [{**original, 'sha256': 'invalid'}], [{**original, 'approved': True}]]
+        for path in ['/tmp/audit.json', '../audit.json', 'docs/design/catalog.json', r'..\audit.json']:
+            invalid_rows.append([{**original, 'path': path}])
+        for rows in invalid_rows:
+            with self.subTest(rows=rows):
+                self.source['upstreamSnapshots'] = rows
+                self.save_source()
+                self.assertTrue(self.audit()[0])
+
+    def test_upstream_symlink_cannot_escape_even_with_matching_hash(self):
+        upstream = self.add_upstream()
+        with tempfile.TemporaryDirectory() as external:
+            outside = Path(external) / 'original.json'
+            outside.write_bytes(upstream.read_bytes())
+            upstream.unlink()
+            upstream.symlink_to(outside)
+            self.assertTrue(self.audit()[0])
+
     def test_archived_full_read_cannot_become_a_new_architect_read(self):
         errors, report = self.audit()
         self.assertEqual(errors, [])
