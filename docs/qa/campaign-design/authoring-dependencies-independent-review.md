@@ -19,3 +19,7 @@ The four new adversarial tests cover serial/parallel/mixed acceptance, omission 
 On the reviewed integrated commit, `python3 tools/design/test_design.py` passed 94 tests. `bun run validate` exited 0: check passed; 142 tests and 2069 expectations passed; documentation and local-link checks passed; one campaign passed campaign validation.
 
 These are static project checks. They do not establish runtime behavior or approve any historical dossier. The formal DelendAI verdict is recorded separately against this delivery.
+
+## Provenance receipt
+
+The review and this report were authored by gpt-6-luna. `DELENDAI_AGENT_ID=gpt-6-luna` was declared for the Git and DelendAI operations. The repository's inherited Git configuration nevertheless set `user.name=Cartago` and `user.email=cartago.relaxingcup@gmail.com`, so both author and committer metadata on report commit `6600990ada256a3e7ddaa6843692fd009b2bbfa6` reflect that configuration rather than the reviewer. The official approval is separately recorded by DelendAI as reviewer gpt-6-luna in commit `b873e4436d0fa517267dc68a0ddca028734b1c18`. This receipt documents provenance and does not rewrite either commit or attribute the review to a human.
