@@ -6,7 +6,7 @@ Documento de infraestructura que prepara la autoría de f00001. S1 revisa y deta
 
 route-pilot: CDF-T01 / CDF_RoutePilot. route-successor: CDF-T02 / CDF_RouteSuccessor. Cada mod contiene un escenario independiente 01-route-choice y 01-recap respectivamente. Fecha y geografía se identifican como laboratorio ficticio; no inventar fuentes históricas. Campaña no destinada al catálogo comercial.
 
-Mapa inicial 32×32, terreno grass-1, sin agua ni elevación; inicio (6,16). Facciones: humano slot1 y adversario slot2, civilización técnica justificada como representación de prueba. Objetivos A y B: castillos en (24,8) y (24,24), sin superponer huellas ni cerrar pasillos. Tropas técnicas humanas: héroe guard/character esencial en (6,16) y dos battering-ram en (8,14)/(8,18). El adversario no reconstruye castillos y no tiene recursos ni economía oculta. El tester comprobará que las unidades/edificios y caminos tienen posiciones válidas en el motor.
+Mapa inicial 32×32, terreno grass-1, sin agua ni elevación; inicio (6,16). Facciones: humano slot1 y adversario slot2, civilización técnica justificada como representación de prueba. Objetivos A y B: castillos en (24,8) y (24,24), sin superponer huellas ni cerrar pasillos. Tropas técnicas humanas: unidad guard esencial (tipo de catálogo militia, sin atribución de héroe histórico) en (6,16) y dos battering-ram en (8,14)/(8,18). El adversario no reconstruye castillos y no tiene recursos ni economía oculta. El tester comprobará que las unidades/edificios y caminos tienen posiciones válidas en el motor.
 
 Objetivo común prepare de 1s, destruir A o destruir B. victory.objectives=[prepare]; victory.routes ordenada A,B, cada ruta exige su objetivo y escribe progress.route-pilot.route-a o progress.route-pilot.route-b. El terminal común decide una sola victoria por partida; si ambos objetivos se cumplen en el mismo tick, prioridad A según orden de exportación, pendiente de acreditación. Rejugar B nunca elimina A, y viceversa. Derrota: héroe esencial o timeout900s; arbitraje derrota primero. No bloquear objetivos destruidos antes de prepare: la condición de unidad destruida debe persistir.
 
@@ -23,3 +23,6 @@ Ejecutar planes tests/compatibility/progression.json y localization.json: perfil
 ## Pantallas e idioma vigentes
 
 [Contrato bilingüe de pantallas](14-screen-contract.md) fija EN/es-ES, títulos y narradores de T01/T02. El laboratorio nuevo declara sourceLocale=en; el fixture previo conserva es-ES. El observador de T01 y el archivista de T02 son personas ficticias distintas del laboratorio; no se atribuyen vivencias históricas.
+
+
+La [especificación cerrada de implementación](02-implementation-specification.md), la [matriz de pruebas](03-acceptance-matrix.md) y el [inventario completo EN/es-ES](15-text-inventory.json) detallan S1. Sus instrucciones exactas y textos actualizados prevalecen sobre los resúmenes de este brief y las filas preliminares de14-screen-contract. No declaran pruebas del motor ni aprobación formal.

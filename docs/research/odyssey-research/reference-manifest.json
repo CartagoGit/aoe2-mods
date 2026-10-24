@@ -664,6 +664,40 @@
       "usage": "Modern surface-height research in a bounded European-side Istanbul region. Not a whole-city380terrain map or location of an ancient institution.",
       "anachronismsAndLimits": "Modern DSM includes buildings, infrastructure, vegetation and edited surfaces. Negative heights do not imply water or passability. No ancient coastline, city wall, church parcel, path or native map approval.",
       "modifications": "Integer pixel-aligned crop and lossless DEFLATE re-encoding only. No resampling, value edits, filling, warping, derived terrain or historical features. Exact original samples extend east/south enough to contain the complete requested bbox; no gap filling."
+    },
+    {
+      "id": "constantinople-modern-osm-coastline-raw",
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.raw.json",
+      "sourcePage": "https://www.openstreetmap.org/copyright",
+      "downloadUrl": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bway%5B%22natural%22%3D%22coastline%22%5D%2841.000%2C28.930%2C41.045%2C29.010%29%3Bout+geom%3B",
+      "author": "OpenStreetMap contributors; query served by Overpass API",
+      "license": "Open Data Commons Open Database License 1.0 (ODbL); data attribution and applicable share-alike obligations retained",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "accessed": "2026-10-24",
+      "bytes": 88776,
+      "sha256": "2fb54f325f22d6d56fd6e97ae90e1422c8bcad323981c8fcfe68fb7a115c516f",
+      "usage": "Research-only modern shoreline/bank control. Queries select whole ways intersecting the bbox; coordinates can extend outside it. No380coastline, land mask, bridge, walkability or phase approval.",
+      "modifications": "None; exact88,776byte response preserved as downloaded.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
+    },
+    {
+      "id": "constantinople-modern-osm-coastline-geojson",
+      "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.geojson",
+      "sourcePage": "https://www.openstreetmap.org/copyright",
+      "downloadUrl": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bway%5B%22natural%22%3D%22coastline%22%5D%2841.000%2C28.930%2C41.045%2C29.010%29%3Bout+geom%3B",
+      "author": "OpenStreetMap contributors; query served by Overpass API",
+      "license": "Open Data Commons Open Database License 1.0 (ODbL); data attribution and applicable share-alike obligations retained",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "accessed": "2026-10-24",
+      "bytes": 132804,
+      "sha256": "529eb5556e12a6ff88f75242ae4aebb0949c4764b9a1c956595cdf1f4ae2709d",
+      "usage": "Research-only modern shoreline/bank control. Queries select whole ways intersecting the bbox; coordinates can extend outside it. No380coastline, land mask, bridge, walkability or phase approval.",
+      "modifications": "Converted each way geometry from explicit lat/lon fields to GeoJSON lon/lat; retained all coordinates, way IDs, node IDs and tags. No clipping, simplification, joining, polygonization or elevation change.",
+      "productionApproved": false,
+      "attributionRequired": true,
+      "shareAlikeRequired": true
     }
   ]
 }
