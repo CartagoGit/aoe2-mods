@@ -4,9 +4,9 @@
 
 Tras revisión independiente e integración oficial de la infraestructura en develop. Consulta la auditoría: EXPORT READY del fixture permite empezar contenido acotado; no autoriza publicar un mod ni afirmar GAME VERIFIED. Las comprobaciones del motor pertenecen al arquitecto/tester en la propuesta de compatibilidad. El agente de contenido no debe asumirlas resueltas.
 
-En esta entrega i00001 está done, con revisión formal de GPT-6.1 y gate de integración pasado; f00001 está ready. La primera tarea autorizada es f00001/S1. Recuperar el estado actual del servidor antes de actuar.
+En esta entrega i00001 está done, con revisión formal de GPT-6.1 y gate de integración pasado. La especificación de f00001/S1 y su matriz de aceptación fueron preparadas por el arquitecto y están pendientes de revisión formal; MiniMax no ha ejecutado trabajo. Tras la integración y aceptación oficial de S1, el siguiente slice mecánico designado será f00001/S2. Recupera el estado actual del servidor antes de actuar.
 
-La primera tarea designada es la especificación del piloto técnico de rutas; el piloto narrativo viene después. No empezar por una campaña completa. Los IDs observados se documentan en NEXT-PROPOSALS; recupera los actuales del servidor.
+El piloto técnico de rutas puede avanzar por slices cerrados sin esperar a que terminen las nueve odiseas, pero esto no altera los bloqueos oficiales de autoría histórica. El piloto narrativo viene después. No empezar por una campaña completa. Los IDs observados se documentan en NEXT-PROPOSALS; recupera los actuales del servidor.
 
 ## Prompt inicial completo
 
@@ -57,4 +57,10 @@ La [comprobación de visibilidad](../qa/campaign-design/geographic-padding-and-p
 
 DelendAI registra **S1 `done`** y una revisión formal `approve` de GPT-6.1; la aprobación y metadatos quedaron integrados en `b9cff83e76b3eaee75cef789b5ace09a1c6b417b` (producto `924ebde2`). Se cumplieron los dos criterios formales. El arquitecto corrigió las dos familias P2 numéricas (contadores y vectores de recursos) y GPT-6.1 verificó las correcciones; la evidencia y el alcance constan en [aceptación común](../research/odyssey-research/common-architecture-acceptance.md) y [revisión independiente](../research/odyssey-research/common-architecture-independent-review.md). La verificación registrada fue 142 pruebas Bun, 2.069 aserciones y 90 pruebas de diseño; no acredita juego ni aprobación de contenido ampliado.
 
-S2–S11 siguen `pending`. El catálogo conserva 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 objetivos secundarios; hay cero aprobaciones ampliadas. La producción histórica de MiniMax sigue bloqueada. Su primera tarea designada continúa siendo f00001/S1 (piloto técnico), siempre tras recuperar del servidor su estado vivo. Esta actualización no cierra ningún slice distinto de S1.
+S2–S11 siguen `pending`. El catálogo conserva 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 objetivos secundarios; hay cero aprobaciones ampliadas. La producción histórica de MiniMax sigue bloqueada.
+
+El plan parcial de Constantinopla, con 45 pantallas EN/es-ES y siete objetivos secundarios, está en [plan de mundo](../design/episode-plans/imperial-church/34-constantinople-world-plan.md) y su [revisión independiente](../research/odyssey-research/constantinople380-world-plan-luna-review.md). Sigue siendo un plan auxiliar, no el dossier 64; sus 45 pantallas y siete secundarios quedan fuera de los totales de 63 dossiers, 2.594 pantallas y 391 secundarios.
+
+La secuencia de MiniMax se gestiona por slices con aceptación propia: no requiere esperar a que terminen las nueve odiseas, ni desbloquea por sí sola propuestas históricas. Para el piloto, f00001/S1 es una especificación del arquitecto y su matriz de aceptación, pendientes de revisión independiente formal; MiniMax aún no ha trabajado. El intento OpenCode MiniMax-M3.1-Flash del 24 de octubre fue rechazado antes de ejecutar herramientas (HTTP 429/2056, límite de Token Plan); la consulta separada de cuota OAuth MMX indicó 0 % semanal general. La sesión `ses_e90709888ffegF4vCs3Axe1zWY` no dejó ediciones. No cambiar de proveedor/modelo ni comprar créditos. Tras integración y aprobación formal de f00001/S1, el siguiente trabajo mecánico designado será f00001/S2. Consulta la [especificación](../wiki/route-pilot/02-implementation-specification.md) y la [matriz de aceptación](../wiki/route-pilot/03-acceptance-matrix.md); cada estado vivo lo determina DelendAI.
+
+Esta actualización no cierra ningún slice distinto de S1.
