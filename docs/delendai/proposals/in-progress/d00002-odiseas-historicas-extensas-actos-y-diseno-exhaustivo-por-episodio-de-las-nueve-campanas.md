@@ -29,12 +29,14 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - global_gate: e2e
 
 ### S1 — Arquitectura editorial de odiseas, investigación y generación reutilizable
-- **Status**: pending
+- **Status**: review
 - **Files**: `tools/design/**`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/design/odyssey-selections.md`, `docs/research/odyssey-research/**`
 - **Gate**: e2e
 - acceptance:
   - "Plan explícito de nueve odiseas por actos y curva de dificultad, criterio de hito documentado sin relleno y límites históricos/licencias."
   - "Investigación delegada contrastada por arquitecto; generadores comunes y validación de contratos sin clonar lógica por escenario."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Embers of the Covenant: expediente de odisea y episodios
 - **Status**: pending
