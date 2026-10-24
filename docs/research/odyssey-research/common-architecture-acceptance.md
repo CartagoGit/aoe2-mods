@@ -79,3 +79,14 @@ En el componente integrado `990cfe13`, `bun run validate` pasó por el gate ofic
 El catálogo conserva 63 borradores ampliados, 2.594 pantallas bilingües, 391 secundarios y 215 selecciones sin dossier. No hay aprobación ampliada histórica/geográfica/jugada. El próximo expediente imperial es Constantinopla 380, orden 33, todavía con brief y estudio de alternativas, sin dossier completo.
 
 Una eventual aprobación formal de S1 sólo satisfaría esa dependencia de planificación. No aprueba automáticamente S2–S10/S11, i00003 nativo, i00007/S3 ni s00001; tampoco permite a MiniMax diseñar o materializar episodios históricos bloqueados. Su primera tarea designada sigue siendo f00001/S1 al recuperar el estado vivo del servidor. El arquitecto continuará los expedientes y la geografía y resolverá los hallazgos de la revisión independiente.
+
+
+## Correcciones encontradas en la revisión integral
+
+La revisión de GPT-6.1 encontró dos familias P2 en la validación común: contadores que admitían cero, negativos, booleanos o fracciones, y pagos cuya suma conservada ocultaba asignaciones negativas/fraccionarias o recursos desconocidos. Se corrigieron en el candidato `1290bdf`, conservado automáticamente por el runtime en la unidad de implementación. El implementador no lo reescribe ni lo presenta como aprobación independiente.
+
+El helper puro [design_numbers.helper.py](../../../tools/design/design_numbers.helper.py) comparte enteros positivos y vectores de recursos no negativos con claves canónicas. Los validadores de objetivos antiguos y ampliados usan la misma comprobación previa, incluyendo mínimos de ledgers/supervivencia y distribución. Los secundarios validan sus contadores, pagos, recompensas y presupuestos; el análisis finito reutiliza la misma función `amounts`, conservando su semántica anterior. Ningún importe, selección, identidad, objetivo, mapa o cadena canónica cambia.
+
+Ocho regresiones nuevas ejercitan los cinco tipos de contador ampliado, el catálogo anterior, mínimos, secundarios, asignaciones adversariales con total conservado, claves desconocidas, reservas y rechazo de una recogida vacía antes de renderizar el dossier. Las siete primeras pasaron juntas en 0,987 s; el caso adicional de stock mínimo y total compuesto pasó en 0,207 s. La primera ejecución ampliada de diseño pasó 85 pruebas antes de completar esta familia de correcciones. La suite actual contiene 90 pruebas de diseño y forma parte de `docs:check`.
+
+Sobre el candidato estable `1290bdf`, `bun run validate` terminó correctamente: 142 pruebas de código, 2.069 aserciones, suite Bun 32,97 s, tipado/lint, comprobación documental con las regresiones de diseño y validación de la campaña técnica. Log local: `/tmp/common-architecture-stable-validate.log`. El adaptador no cambia y no se atribuye una nueva exportación ni prueba del juego. El revisor debe confirmar estas correcciones y registrar su propio resultado; el veredicto formal sigue pendiente.
