@@ -1,0 +1,494 @@
+{
+  "classification": "closed architect-authored source inventory; not allocated string IDs or approved translation/audio",
+  "proposal": "f00001",
+  "slice": "S1",
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "sourceLocale": "en",
+  "review": "draft",
+  "characters": [
+    "collection-narrator",
+    "route-observer",
+    "route-archivist"
+  ],
+  "speakingCharacterPolicy": "No additional speakers; unnamed map units are technical UI labels.",
+  "textCount": 43,
+  "strings": [
+    {
+      "key": "campaign.route-pilot.title",
+      "speaker": "none",
+      "surface": "always",
+      "text": {
+        "en": "The Roads Remember",
+        "es-ES": "Los caminos recuerdan"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.titleKey"
+    },
+    {
+      "key": "campaign.route-pilot.fact",
+      "speaker": "collection-narrator",
+      "surface": "always",
+      "text": {
+        "en": "This is a fictional technical laboratory. It checks independent campaigns, cumulative choices and recaps, without representing a historical event.",
+        "es-ES": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-pilot.personal",
+      "speaker": "route-observer",
+      "surface": "always",
+      "text": {
+        "en": "I keep the record of these paths. Choose one, then return to discover that remembering another does not erase the first.",
+        "es-ES": "Guardo el registro de estos caminos. Elige uno y vuelve para comprobar que recordar otro no borra el primero."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-pilot.advice",
+      "speaker": "collection-narrator",
+      "surface": "always",
+      "text": {
+        "en": "Destroy A for Route A or B for Route B. Your record remembers both after replay. Continue with An Open Chronicle (CDF-T02).",
+        "es-ES": "Destruye A para la ruta A o B para la ruta B. El registro recuerda ambas tras rejugar. Continúa con Una crónica abierta (CDF-T02)."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-pilot.instructions",
+      "speaker": "collection-narrator",
+      "surface": "instructions",
+      "text": {
+        "en": "Keep the marked guard alive. Destroy Target A for Route A or Target B for Route B after preparation. A target destroyed early still counts. If both fall together before the ending, Route A has declared priority.",
+        "es-ES": "Conserva con vida al guardia señalado. Destruye el objetivo A para la ruta A o el objetivo B para la ruta B después de la preparación. Un objetivo destruido antes también cuenta. Si ambos caen juntos antes del final, la ruta A tiene prioridad declarada."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.instructions"
+    },
+    {
+      "key": "campaign.route-pilot.hints",
+      "speaker": "collection-narrator",
+      "surface": "corresponding laboratory state",
+      "text": {
+        "en": "The two routes remain available on replay; completing B does not remove A.",
+        "es-ES": "Las dos rutas siguen disponibles al rejugar; completar B no elimina A."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.hints"
+    },
+    {
+      "key": "campaign.route-pilot.scouts",
+      "speaker": "collection-narrator",
+      "surface": "corresponding laboratory state",
+      "text": {
+        "en": "The lab is 32 × 32. Your guard starts west; the two targets are northeast and southeast.",
+        "es-ES": "El laboratorio mide 32 × 32. Tu guardia empieza al oeste; los dos objetivos están al noreste y sureste."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.scouts"
+    },
+    {
+      "key": "campaign.route-pilot.history",
+      "speaker": "collection-narrator",
+      "surface": "corresponding laboratory state",
+      "text": {
+        "en": "No historical event is represented. This checks engine behaviour with a fictional layout.",
+        "es-ES": "No se representa un hecho histórico. Se comprueba el motor con una disposición ficticia."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.history"
+    },
+    {
+      "key": "campaign.route-pilot.loss",
+      "speaker": "collection-narrator",
+      "surface": "corresponding laboratory state",
+      "text": {
+        "en": "Your essential guard was lost or the test window expired. Reload or restart.",
+        "es-ES": "Has perdido al guardia esencial o ha terminado el plazo de prueba. Carga o reinicia."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.loss"
+    },
+    {
+      "key": "campaign.route-pilot.victory-a",
+      "speaker": "collection-narrator",
+      "surface": "conditional native Route A outro, pending real template/engine evidence",
+      "text": {
+        "en": "Route A is recorded. Continue with An Open Chronicle (CDF-T02); replay may also record Route B.",
+        "es-ES": "La ruta A queda registrada. Continúa con Una crónica abierta (CDF-T02); al rejugar puedes registrar también la ruta B."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-pilot.victory-b",
+      "speaker": "collection-narrator",
+      "surface": "conditional native Route B outro, pending real template/engine evidence",
+      "text": {
+        "en": "Route B is recorded. Continue with An Open Chronicle (CDF-T02); replay preserves Route A if it was previously recorded.",
+        "es-ES": "La ruta B queda registrada. Continúa con Una crónica abierta (CDF-T02); al rejugar se conserva la ruta A si se había registrado antes."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.title",
+      "speaker": "none",
+      "surface": "always",
+      "text": {
+        "en": "An Open Chronicle",
+        "es-ES": "Una crónica abierta"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.titleKey"
+    },
+    {
+      "key": "campaign.route-successor.fact",
+      "speaker": "collection-narrator",
+      "surface": "always",
+      "text": {
+        "en": "This is a fictional technical laboratory. It checks independent campaigns, cumulative choices and recaps, without representing a historical event.",
+        "es-ES": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-successor.personal",
+      "speaker": "route-archivist",
+      "surface": "after handover",
+      "text": {
+        "en": "I keep what the ledger can tell us, and mark what it cannot. You may open this chronicle with both earlier paths, one path, or no earlier record at all.",
+        "es-ES": "Conservo lo que el registro puede contarnos y señalo lo que no puede. Puedes abrir esta crónica con ambos caminos anteriores, con uno o sin ningún registro previo."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-successor.advice",
+      "speaker": "collection-narrator",
+      "surface": "always",
+      "text": {
+        "en": "Recommended earlier: The Roads Remember (CDF-T01). That fictional laboratory offered Route A and Route B as alternative endings; replay could retain both. You may begin here without it. This source fixture shows a static summary and does not inspect your previous record.",
+        "es-ES": "Se recomienda jugar antes Los caminos recuerdan (CDF-T01). Aquel laboratorio ficticio ofrecía las rutas A y B como finales alternativos; al rejugar podían conservarse ambas. Puedes empezar aquí sin jugarlo. Este fixture de fuentes muestra un resumen estático y no consulta tu registro previo."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-successor.recap-missing",
+      "speaker": "collection-narrator",
+      "surface": "successful read: A absent/zero, B absent/zero",
+      "text": {
+        "en": "The earlier laboratory offered Route A and Route B, two alternative endings that could be accumulated by replay. Neither is recorded here. You may continue without playing it.",
+        "es-ES": "El laboratorio anterior ofrecía las rutas A y B, dos finales alternativos que podían acumularse al rejugar. Aquí no consta ninguno. Puedes continuar sin haberlo jugado."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.recap-a",
+      "speaker": "collection-narrator",
+      "surface": "successful read: A=1, B absent/zero",
+      "text": {
+        "en": "The earlier laboratory offered two alternative endings, Route A and Route B. Route A is recorded here. Route B remains optional on replay; you can continue now.",
+        "es-ES": "El laboratorio anterior ofrecía dos finales alternativos, las rutas A y B. Aquí consta la ruta A. La ruta B sigue siendo opcional al rejugar; puedes continuar ahora."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.recap-b",
+      "speaker": "collection-narrator",
+      "surface": "successful read: A absent/zero, B=1",
+      "text": {
+        "en": "The earlier laboratory offered two alternative endings, Route A and Route B. Route B is recorded here. Route A remains optional on replay; you can continue now.",
+        "es-ES": "El laboratorio anterior ofrecía dos finales alternativos, las rutas A y B. Aquí consta la ruta B. La ruta A sigue siendo opcional al rejugar; puedes continuar ahora."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.recap-both",
+      "speaker": "collection-narrator",
+      "surface": "successful read: A=1, B=1",
+      "text": {
+        "en": "The earlier laboratory offered Route A and Route B as alternative endings. Both are recorded here after replay. The ledger has retained both choices; you can continue now.",
+        "es-ES": "El laboratorio anterior ofrecía las rutas A y B como finales alternativos. Aquí constan ambas después de rejugar. El registro conserva las dos elecciones; puedes continuar ahora."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.recap-unknown",
+      "speaker": "collection-narrator",
+      "surface": "read unavailable/error, never treat as known empty profile",
+      "text": {
+        "en": "Earlier progress could not be read. The previous laboratory offered Route A and Route B, alternative endings accumulated by replay. Either, both, or neither may have been completed. You may continue; no prerequisite blocks you.",
+        "es-ES": "No se ha podido leer el progreso anterior. El laboratorio previo ofrecía las rutas A y B, finales alternativos acumulables al rejugar. Puede haberse completado una, ambas o ninguna. Puedes continuar; ningún requisito te bloquea."
+      },
+      "sourceDisposition": "native-pending-documentary-only",
+      "sourceBinding": "none: omit from S2 runtime catalogues/lines; requires certified conditional presentation"
+    },
+    {
+      "key": "campaign.route-successor.victory",
+      "speaker": "collection-narrator",
+      "surface": "corresponding laboratory state",
+      "text": {
+        "en": "The recap test is complete. Return to the campaign menu.",
+        "es-ES": "La prueba de recapitulación ha terminado. Vuelve al menú de campañas."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.victory and narrative.outro; campaign.epilogue may reuse same text with distinct line ID"
+    },
+    {
+      "key": "campaign.route-successor.instructions",
+      "speaker": "collection-narrator",
+      "surface": "instructions",
+      "text": {
+        "en": "Read or skip the campaign recap before starting. The scenario ends after ten seconds of active scenario time; it tests presentation, not historical gameplay.",
+        "es-ES": "Lee o salta la recapitulación de campaña antes de empezar. El escenario termina tras diez segundos de tiempo activo; prueba presentación, no juego histórico."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.instructions"
+    },
+    {
+      "key": "campaign.route-pilot.description",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "A fictional laboratory for two independent endings and cumulative replay.",
+        "es-ES": "Un laboratorio ficticio de dos finales independientes y progreso acumulativo al rejugar."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.descriptionKey"
+    },
+    {
+      "key": "campaign.route-successor.description",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "An independent fictional recap laboratory that also welcomes new profiles.",
+        "es-ES": "Un laboratorio ficticio de recapitulación independiente que también admite perfiles nuevos."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.descriptionKey"
+    },
+    {
+      "key": "campaign.route-pilot.handover",
+      "speaker": "collection-narrator",
+      "surface": "after factual introduction",
+      "text": {
+        "en": "The route observer will now explain the experiment in their own words.",
+        "es-ES": "El observador de rutas explicará ahora el experimento con sus propias palabras."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-successor.handover",
+      "speaker": "collection-narrator",
+      "surface": "after factual introduction",
+      "text": {
+        "en": "The archivist will now explain how the earlier records are read.",
+        "es-ES": "El archivista explicará ahora cómo se leen los registros anteriores."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+    },
+    {
+      "key": "campaign.route-pilot.victory",
+      "speaker": "collection-narrator",
+      "surface": "unconditional source outro; does not assert native progress verification",
+      "text": {
+        "en": "The chosen route has ended. Continue with An Open Chronicle (CDF-T02), or replay this laboratory to try the other route.",
+        "es-ES": "La ruta elegida ha terminado. Continúa con Una crónica abierta (CDF-T02) o rejuega este laboratorio para probar la otra ruta."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.messages.victory and narrative.outro; campaign.epilogue may reuse same text with distinct line ID"
+    },
+    {
+      "key": "scenario.route-pilot-choice.title",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "A Choice of Roads",
+        "es-ES": "Una elección de caminos"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.titleKey"
+    },
+    {
+      "key": "scenario.route-pilot-choice.prepare",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Wait for the one-second laboratory preparation.",
+        "es-ES": "Espera la preparación de un segundo del laboratorio."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching objective.textKey"
+    },
+    {
+      "key": "scenario.route-pilot-choice.destroy-a",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Destroy Target A to complete Route A.",
+        "es-ES": "Destruye el objetivo A para completar la ruta A."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching objective.textKey"
+    },
+    {
+      "key": "scenario.route-pilot-choice.destroy-b",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Destroy Target B to complete Route B.",
+        "es-ES": "Destruye el objetivo B para completar la ruta B."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching objective.textKey"
+    },
+    {
+      "key": "scenario.route-pilot-choice.guard-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Essential Guard",
+        "es-ES": "Guardia esencial"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.ram-north-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Northern Ram",
+        "es-ES": "Ariete del norte"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.ram-south-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Southern Ram",
+        "es-ES": "Ariete del sur"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.target-a-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Target A",
+        "es-ES": "Objetivo A"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.target-b-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Target B",
+        "es-ES": "Objetivo B"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.player-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Laboratory Player",
+        "es-ES": "Jugador del laboratorio"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-pilot-choice.targets-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Laboratory Targets",
+        "es-ES": "Objetivos del laboratorio"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-successor-recap.title",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "An Independent Beginning",
+        "es-ES": "Un comienzo independiente"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.titleKey"
+    },
+    {
+      "key": "scenario.route-successor-recap.finish-recap",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Wait for the ten-second presentation test to finish.",
+        "es-ES": "Espera a que termine la prueba de presentación de diez segundos."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching objective.textKey"
+    },
+    {
+      "key": "scenario.route-successor-recap.intro",
+      "speaker": "collection-narrator",
+      "surface": "short in-scenario intro; full recap before scenario load",
+      "text": {
+        "en": "You may begin here. This brief scenario ends automatically.",
+        "es-ES": "Puedes empezar aquí. Este breve escenario termina automáticamente."
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "scenario.narrative.intro, single short line"
+    },
+    {
+      "key": "scenario.route-successor-recap.marker-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Laboratory Marker",
+        "es-ES": "Marcador del laboratorio"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    },
+    {
+      "key": "scenario.route-successor-recap.player-name",
+      "speaker": "none",
+      "surface": "schema label",
+      "text": {
+        "en": "Laboratory Reader",
+        "es-ES": "Lector del laboratorio"
+      },
+      "sourceDisposition": "s2-materialize",
+      "sourceBinding": "matching unit.nameKey or faction.nameKey from fixed map"
+    }
+  ],
+  "nativeConditionalSurfaces": "Intent only until accredited template/progress-read operators and engine evidence are supplied. Do not lower conditional endings into unconditional source lines.",
+  "s2MaterializedTextCount": 36,
+  "nativePendingDocumentaryTextCount": 7
+}
