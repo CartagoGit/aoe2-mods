@@ -641,6 +641,70 @@ class DesignAcceptanceTests(unittest.TestCase):
             any("knowledge plan scenarioId drift" in error for error in errors)
         )
 
+    @staticmethod
+    def authoring_graph(parallel=False):
+        dependencies = {
+            "S1": [], "S2": ["S1"], "S3": ["S2"],
+            "S7": ["S2"] if parallel else ["S3"],
+            "S8": ["S2"] if parallel else ["S7"],
+            "S6": ["S3", "S7", "S8"] if parallel else ["S8"],
+        }
+        return {sid: "- **DependsOn**: [" + ", ".join(deps) + "]\n"
+                for sid, deps in dependencies.items()}
+
+    @staticmethod
+    def audit_authoring_graph(slices):
+        audit = runpy.run_path(str(ROOT / "tools/design/odyssey_assignments.validator.py"))[
+            "audit_authoring_dependencies"]
+        return audit(slices, ["S3", "S7", "S8"], "S6")
+
+    def test_authoring_dependencies_accept_serial_parallel_and_mixed_work(self):
+        for parallel in (False, True):
+            self.assertEqual(self.audit_authoring_graph(self.authoring_graph(parallel)), [])
+        mixed = self.authoring_graph(True)
+        mixed["S8"] = "- **DependsOn**: [S7]\n"
+        mixed["S6"] = "- **DependsOn**: [S3, S8]\n"
+        self.assertEqual(self.audit_authoring_graph(mixed), [])
+
+    def test_authoring_promotion_must_await_every_parallel_episode(self):
+        for omitted in ("S3", "S7", "S8"):
+            with self.subTest(omitted=omitted):
+                graph = self.authoring_graph(True)
+                graph["S6"] = "- **DependsOn**: [" + ", ".join(
+                    sid for sid in ("S3", "S7", "S8") if sid != omitted) + "]\n"
+                self.assertTrue(any("promotion precedes" in e for e in self.audit_authoring_graph(graph)))
+
+    def test_authoring_dependencies_reject_cycles_unknown_and_duplicate_edges(self):
+        mutations = {
+            "cycle": ("S7", "- **DependsOn**: [S8]\n"),
+            "unknown dependency": ("S3", "- **DependsOn**: [S99]\n"),
+            "duplicate dependency": ("S3", "- **DependsOn**: [S2, S2]\n"),
+        }
+        for expected, (sid, body) in mutations.items():
+            with self.subTest(expected=expected):
+                graph = self.authoring_graph()
+                graph[sid] = body
+                self.assertTrue(any(expected in e for e in self.audit_authoring_graph(graph)))
+        graph = self.authoring_graph(True)
+        graph["S3"] = "- **DependsOn**: [S3, S2]\n"
+        self.assertTrue(any("cycle" in e for e in self.audit_authoring_graph(graph)))
+
+    def test_authoring_dependencies_reject_missing_metadata_and_malformed_fields(self):
+        for body in ("", "- **DependsOn**: [S1]\n", "- **DependsOn**: []\n"):
+            graph = self.authoring_graph(True)
+            graph["S7"] = body
+            self.assertTrue(any("bypasses shared metadata" in e for e in self.audit_authoring_graph(graph)))
+        for body in ("- **DependsOn**: S2\n", "- **DependsOn**: [S2] trailing\n",
+                     "- **DependsOn**: [S2]\n- **DependsOn**: [S1]\n"):
+            graph = self.authoring_graph(True)
+            graph["S3"] = body
+            self.assertTrue(any("malformed" in e for e in self.audit_authoring_graph(graph)))
+        for sid, body in (("S1", "- **DependsOn**: [S3]\n"),
+                          ("S2", "- **DependsOn**: []\n")):
+            graph = self.authoring_graph(True)
+            graph[sid] = body
+            self.assertTrue(any("metadata: S1" in e for e in self.audit_authoring_graph(graph)))
+
     def test_odyssey_assignments_reject_shared_slice_and_early_promotion(self):
         assignments = json.loads((ROOT / "docs/design/assignments.json").read_text())
         invalid = copy.deepcopy(assignments)
