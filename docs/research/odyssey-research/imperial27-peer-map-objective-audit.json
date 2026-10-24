@@ -1,0 +1,265 @@
+{
+  "audit": {
+    "title": "Imperial Church order 27 Alexandria mechanical map/objective audit",
+    "reviewDate": "2026-10-15",
+    "unit": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+    "episodeId": "27-return-and-departure-records-alexandria",
+    "orderAtCollection": 27,
+    "filesRead": [
+      "docs/design/odysseys/imperial-church.json (episode order 27 and matching episodeBlueprints entry)",
+      "docs/design/maps/imperial-church/odyssey/27-return-and-departure-records-alexandria.svg"
+    ],
+    "svgSha256": "ff43545f5b32796111a1f37c46f6a213cca86ebd87f56f39a4f800dc43340d4e",
+    "architectApproval": false,
+    "scope": "Mechanical identity, requirement, resource, frame, and geometric object/zone review. No history, terrain, drainage, native-navigation, or gameplay approval.",
+    "mutations": {
+      "repository": false,
+      "git": false,
+      "proposal": false
+    },
+    "method": [
+      "Applied tools/design/geography.py tile_point to each hub coordinate using the stored WGS84 bbox and map size 400.",
+      "Checked SVG transform with renderer factor 650/(400-1), origin (55,85), and tile frame 0..399.",
+      "Computed centers, radii, offsets, full corridor-width bounds, actor point collisions, zone coincidences, and player-UI clipping from JSON and SVG geometry.",
+      "Checked each objective requirement kind/id/entity list/destination/payment against the described sequence, survivorGroups, and difficulty budget fields.",
+      "Scanned current screen text for compacted number punctuation and visible internal IDs."
+    ],
+    "limits": [
+      "SVG contains no rendered modern water-control segments, although mapPlan lists modern shoreline/river control sources. Water-distance checking is therefore not possible from this SVG.",
+      "No visible water lines is not evidence of dry land; no ancient land mask, terrain raster, dated shoreline, or native pathfinding is supplied here.",
+      "Static resource arithmetic is not a playthrough or native runtime verification."
+    ]
+  },
+  "counts": {
+    "mapSize": 400,
+    "mainHubs": 6,
+    "mainEntities": 9,
+    "mainReceivingZones": 6,
+    "secondaryObjectives": 7,
+    "secondaryEntities": 9,
+    "secondaryZones": 9,
+    "totalEntityCenters": 18,
+    "totalReceivingZoneDisks": 15,
+    "mainLandCorridors": 5,
+    "playstyles": 3,
+    "enemyCounts": {
+      "easy": 0,
+      "standard": 0,
+      "hard": 0
+    },
+    "visibleSvg": {
+      "hubs": 6,
+      "circles": 6,
+      "corridorPolylines": 5,
+      "blueWaterLines": 0,
+      "textNodes": 28
+    }
+  },
+  "mainIdentityAndSequence": {
+    "mainIdentityComposition": {
+      "westernHouseholds": 3,
+      "easternHouseholds": 3,
+      "retrospectiveLocalContextNotes": 2,
+      "qualifiedLocalTimeline": 1,
+      "totalMainIdentities": 9,
+      "historicalMaterialPolicy": "The two notes and timeline are fictional/local retrospective working records, not original imperial letters. The household IDs are fictional voluntary households, not historical bishops."
+    },
+    "o2": {
+      "requirement": "o2/req-1: all three western household IDs arrive at destination-2; all three eastern household IDs arrive at destination-3.",
+      "funding": "o2/req-3: once-only 180 food and 120 wood, split 90 food + 60 wood to each host (destinations 2 and 3).",
+      "assessment": "Each cohort receives its own separate host receipt; the other cohort's destination cannot satisfy it."
+    },
+    "o3": {
+      "western": {
+        "receipt": "o2/req-1",
+        "departure": "o3/req-1",
+        "returnArrival": "o3/req-2",
+        "destination": "destination-5 southwest onward court",
+        "count": 3
+      },
+      "eastern": {
+        "receipt": "o2/req-2",
+        "departure": "o3/req-3",
+        "returnArrival": "o3/req-4",
+        "destination": "destination-6 southeast onward court",
+        "count": 3
+      },
+      "funding": "o3/req-5: once-only 240 food and 120 wood, split 120 food + 60 wood to each onward court (destinations 5 and 6).",
+      "contextNoteReceipts": [
+        {
+          "requirement": "o3/req-6",
+          "entity": "return-local-context-1",
+          "kind": "entity-state arrived",
+          "destination": "destination-4 central qualified-record workshop"
+        },
+        {
+          "requirement": "o3/req-7",
+          "entity": "departure-local-context-1",
+          "kind": "entity-state arrived",
+          "destination": "destination-4 central qualified-record workshop"
+        }
+      ],
+      "assessment": "Each ordered departure is linked to its own cohort's prior o2 receipt; each arrival is linked to its own o3 departure and mapped to its own onward destination. Early arrival does not satisfy arrivalAfterDeparture, and a wrong cohort cannot fill the other cohort's entity/destination map. Both note receipts are conjuncts of o3 and therefore must latch before the later o4 phase."
+    },
+    "o4": {
+      "funding": "o4/req-1: once-only 100 wood + 20 gold at destination-4 central workshop.",
+      "derivedRequirement": "o4/req-2 derives the single qualified-local-timeline-1 from the two named local context notes and the exact o4/req-1 payment receipt.",
+      "timelineReceipt": "o4/req-3: the timeline arrives at destination-1 western incoming yard.",
+      "assessment": "The generated object is one explicitly fictional, funded timeline, not a canonical historical document."
+    },
+    "totalMandatoryResourceCost": {
+      "food": 420,
+      "wood": 340,
+      "gold": 20,
+      "stone": 0
+    },
+    "survivalAndPresence": {
+      "survivorGroups": "Three western household IDs, three eastern household IDs, each of the two local notes, and the timeline each have alive-or-already-safe minimum equal to their full declared count.",
+      "currentEntityPresenceRequirementCount": 0,
+      "currentResidenceAssessment": "No terminal-time residence check is present. Later household arrival history is distinct from asserting that the households remain at an earlier host. The ordered-departure requirements do verify sequence and subsequent arrival, not indefinite residence."
+    }
+  },
+  "staticBudget": {
+    "reservedOptionalRewards": {
+      "food": 550,
+      "wood": 200,
+      "gold": 25,
+      "stone": 0
+    },
+    "eachDifficultyAccessibleWithoutOptionalRewards": {
+      "food": 1390,
+      "wood": 980,
+      "gold": 250,
+      "stone": 160
+    },
+    "eachDifficultyMandatoryPlusProtectedRecoveryPlusReplacementPlusMargin": {
+      "food": 1390,
+      "wood": 980,
+      "gold": 250,
+      "stone": 160
+    },
+    "levels": {
+      "easy": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      },
+      "standard": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      },
+      "hard": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      }
+    },
+    "assessment": "Static accessible balances exactly match mandatory costs plus protected recovery stock, replacement budget, and declared supply margins at all three levels. This validates arithmetic only, not native access or fun/playability."
+  },
+  "geometry": {
+    "bboxWgs84": [
+      29.915,
+      31.173,
+      29.976,
+      31.215
+    ],
+    "projection": {
+      "helper": "tools/design/geography.py tile_point",
+      "result": "All six stored hub centers exactly match tile_point(bbox, hub.lonLat, 400) at stored two-decimal precision.",
+      "svgScale": "650/399 = 1.6290727 px/tile",
+      "svgOrigin": [
+        55,
+        85
+      ],
+      "mapRect": {
+        "x": 55,
+        "y": 85,
+        "width": 650,
+        "height": 650
+      }
+    },
+    "hubs": {
+      "allSixCentersAndRadius12DisksWithinFrame": true,
+      "minimumHubDiskFrameMarginTiles": 67.78,
+      "minimumPairwiseEdgeClearanceAfterRadius12Tiles": 67.67,
+      "minimumPair": [
+        "hub-1",
+        "hub-2"
+      ]
+    },
+    "entitiesAndZones": {
+      "all18EntityCentersWithinFrame": true,
+      "minimumEntityFrameMarginTiles": 65.78,
+      "all15ZoneDisksWithinFrame": true,
+      "zoneRadiusTiles": 3,
+      "minimumZoneFrameMarginTiles": 76.78,
+      "exactActorCenterCollisions": 0,
+      "minimumActorCenterSeparationTiles": 2.0,
+      "nearestActors": [
+        "western-original-households-1/2/3 and eastern-original-households-1/2/3 adjacent cohort members"
+      ],
+      "actorCollisionLimit": "No entity footprint/radius or native placement collision model is declared; 2-tile center spacing is a coordinate result, not a no-collision guarantee.",
+      "sameCenterOptionalZones": [
+        {
+          "worlds": [
+            "side-1",
+            "side-4"
+          ],
+          "center": [
+            222.1,
+            206.33
+          ],
+          "radiusEach": 3,
+          "note": "Distinct optional ledgers share one exact central receiving disk."
+        },
+        {
+          "worlds": [
+            "side-3",
+            "side-5"
+          ],
+          "center": [
+            128.66,
+            295.08
+          ],
+          "radiusEach": 3,
+          "note": "Distinct optional ledgers share one exact southwestern target disk."
+        }
+      ],
+      "zoneAssessment": "The coincident circles are separate objective-world ledgers. No entity centers coincide; the nearest entity-to-any-zone edge clearance is 3.32 tiles. The shared receiving locations may be intentional; this is flagged for review rather than declared a defect."
+    },
+    "corridors": {
+      "allFiveCenterlinesAndFullWidthsWithinFrame": true,
+      "widthsTiles": {
+        "western-hosting-circuit": 10,
+        "eastern-hosting-circuit": 10,
+        "working-record-link": 8,
+        "northern-relief": 8,
+        "southern-relief": 8
+      },
+      "minimumFrameMarginAfterHalfWidthTiles": 74.78,
+      "minimumMarginCorridor": "western-hosting-circuit",
+      "assessment": "Frame check only; straight polyline does not certify land traversal."
+    },
+    "waterAndVisualMap": {
+      "visibleModernWaterSegments": 0,
+      "mapPlanLists": [
+        "ne-odyssey-coastline: modern regional shoreline control, not ancient harbor geometry",
+        "regional-rivers_lake_centerlines: modern controls where available; minor channels and ancient courses need separate evidence"
+      ],
+      "distanceToDisplayedWater": "Not measurable: no blue geographic-control line is rendered in this SVG.",
+      "ancientLandMaskOrWaterPolygon": false,
+      "inspection": "Rendered the SVG; it shows six hub circles, five proposed dashed land polylines, a blank uniform terrain square, and a legend. No water line, terrain raster, or optional entities/zones are shown. The legend and labels are inside the viewBox; none is clipped.",
+      "limit": "Missing visible control lines do not establish dry land, ancient shoreline, or traversability."
+    }
+  },
+  "textReview": {
+    "mainGoalAssessment": "Current bilingual o2/o3/o4 objective strings make the per-host resource shares, cohort order, separate note receipts, funded timeline, and retrospective-not-original distinction clear.",
+    "formatting": "No comma-number spacing defects or visible internal entity IDs were found in current screen strings.",
+    "secondaryActorSeparation": "Guide, household aid actors, and voluntary wayfarers use separate authored identity records and coordinates; no exact center collision was found. Cohort actors are 2 tiles apart at closest centers, as recorded above.",
+    "historicalAndNativeStatus": "This text audit does not validate historical claims, certify map locations, or assert game QA/native support."
+  },
+  "architectFollowUp": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "decision": "Keep the two shared receiving work areas, with identity-disjoint predicates and independent once-only ledgers. Actual actors have distinct centers. Tight original-household spacing and all building/unit footprints still require calibrated native placement. No ancestor arrival, wrong-cohort receipt or unproduced timeline may substitute for the explicit causal chain.",
+    "historicalOrNativeApproval": false
+  }
+}
