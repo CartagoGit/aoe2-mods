@@ -2,14 +2,16 @@
 id: f00001
 title: "Piloto tecnico de rutas independientes y localizacion"
 kind: feat
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-12
-last-transition-id: c0eedc78-28dc-4ca9-aaa3-4226f3efd47c
-last-correlation-id: c0eedc78-28dc-4ca9-aaa3-4226f3efd47c
-last-transition-from: blocked
-last-transition-at: 2026-10-12T11:57:38.189Z
+last-transition-id: af9b14e8-7aa7-4b0b-a05b-b63dbd6cbaf5
+last-correlation-id: af9b14e8-7aa7-4b0b-a05b-b63dbd6cbaf5
+last-transition-from: ready
+last-transition-at: 2026-10-24T20:37:48.494Z
+shipped-in:
+  - "06e688e87a0b3617ad8049b073b8f9f35e832b00"
 ---
 
 # f00001 — Piloto tecnico de rutas independientes y localizacion
@@ -33,12 +35,16 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - global_gate: e2e
 
 ### S1 — Especificación y matriz del laboratorio
-- **Status**: pending
+- **Status**: done
 - **Files**: `docs/wiki/route-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Definir mapas mínimos, victoria A/B, replay, recapitulación y lista cerrada de textos/personajes; no atribuir hechos históricos a fixtures."
   - "Casos nuevo perfil, A, B, ambas, guardar/cargar, victoria simultánea y cambio de idioma."
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 06e688e87a0b, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Integrated docs/wiki/route-pilot/02-implementation-specification.md and 15-text-inventory.json describe both maps, the A/B oracle, replay, recap truth table an… (2) docs/wiki/route-pilot/03-acceptance-matrix.md enumerates the profile, route order, save/load, simultaneous terminal and localization cases; native outcomes rem… — Independent review of integrated S1 specification. The 36 source strings are materializable; seven conditional texts remain documentary only. Adaptive recap/profile reads, native layouts and gameplay remain pending and outside S1. bun run validate exited 0 (142/142 tests, 2069 expectations). Verdict is limited to S1 specification and does not approve S2–S4 or gameplay. No formal review round was opened.
 
 ### S2 — Borradores completos de los dos mods
 - **Status**: pending
