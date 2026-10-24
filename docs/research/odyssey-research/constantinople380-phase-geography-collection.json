@@ -1,0 +1,87 @@
+{
+  "collection": "Constantinople 380: fase geográfica y arqueológica",
+  "created": "2026-10-18",
+  "authorIdentity": "gpt-6-luna",
+  "scope": "Recopilación acotada de fuentes leídas para controles de topografía, muralla, costa y Anastasia. No propone coordenadas de iglesia ni campamento, y no elige gameplay.",
+  "sources": [
+    {
+      "id": "columbia-istanbul-documentation-land-walls",
+      "title": "Land Walls of Constantinople",
+      "authors": [
+        "Istanbul Documentation Project, Media Center for Art History, Columbia University"
+      ],
+      "publication": "Istanbul Documentation Project, ficha de monumento arqueológico y descripción histórica",
+      "url": "https://mcid.mcah.columbia.edu/istanbul-documentation-project/land-walls-constantinople",
+      "pages": "Cuerpo web, líneas 30-39 del texto extraído",
+      "passagesRead": "La ficha distingue las fortificaciones constantinianas del sistema terrestre iniciado bajo Teodosio II y el prefecto Antemio en 412, con fecha de 413 para la línea conocida. Dice que el trazado más antiguo se ha relacionado alguna vez con un fragmento de Isa Kapısı, atribución asociada a Mango. La ficha no da coordenadas del muro constantiniano.",
+      "supports": "Para el año 380, no proyectar la línea conocida de las murallas terrestres de Teodosio II como si ya delimitara la ciudad. Este recurso no ofrece una polilínea fiable de la muralla constantiniana ni una localización precisa de su extremo occidental.",
+      "limits": "La ficha ofrece un resumen, no una publicación de excavación ni el detalle de la discusión. Presenta la atribución de un fragmento de Isa Kapısı como asociación historiográfica y no como identificación demostrada. La frase sobre ausencia de evidencia arqueológica fiable es ambigua; no se usa para negar restos conservados ni para fijar una línea.",
+      "imageRights": "No se reutilizan imágenes. Los planes del proyecto se cargan dinámicamente y la licencia de cada imagen no se verificó; citar solamente."
+    },
+    {
+      "id": "yoncaci-arslan-metu-jfa-2016",
+      "title": "Towards a New Honorific Column: The Column of Constantine in Early Byzantine Urban Landscape",
+      "authors": [
+        "Pelin Yoncacı Arslan"
+      ],
+      "publication": "METU Journal of the Faculty of Architecture 33(1), 2016, pp. 121-145; DOI 10.4305/METU.JFA.2016.1.5122",
+      "url": "https://jfa.arch.metu.edu.tr/uploads/docs/sayilar/sayi-33-1/121-145.pdf",
+      "pages": "pp. 121-123 (PDF pp. 0-2), sobre todo líneas 76-107, 113-125, 137-154",
+      "passagesRead": "El artículo sitúa el foro de Constantino en la segunda colina de la península y describe un relieve escalonado hacia la Propóntide; dice que la Mese se prolongó hasta las nuevas murallas, casi 3 km más allá de los límites severianos, y que la Puerta Áurea constantiniana estaba en el extremo occidental de esa avenida. La figura 1 se titula ciudad de Constantinopla en el siglo IV y declara que es imagen de la autora basada en mapas de Bardill, Mango y Berger. En las notas, el trazado de calles tempranas se explica como reconstrucción basada en fuentes bizantinas y se indica que Ken Dark discutió problemas del método de Berger.",
+      "supports": "La península tiene alturas y pendientes que importan a escala urbana: la colina del foro y el descenso hacia el Marmara son un control físico para una escena. El artículo permite mostrar en general un núcleo oriental y extensión occidental amurallada, pero la línea de la figura 1 es una síntesis cartográfica académica, no levantamiento arqueológico de 380.",
+      "limits": "El pasaje no ofrece un modelo digital de elevación ni coordenadas de la muralla. El esquema de calles y la posición de estructuras particulares tienen distintos grados de inferencia; la autora advierte reconstrucciones alternativas en el propio análisis del foro.",
+      "imageRights": "El PDF es un artículo de revista; la figura 1 se atribuye a la autora y a mapas publicados por terceros. No se identificó licencia abierta de la figura; no copiar ni reutilizar imagen sin permiso/licencia verificada."
+    },
+    {
+      "id": "algan-et-al-yenikapi-2011",
+      "title": "Holocene coastal change in the ancient harbor of Yenikapı–İstanbul and its impact on cultural history",
+      "authors": [
+        "Oya Algan",
+        "M. Namık Yalçın",
+        "Mehmet Özdoğan",
+        "Yücel Yılmaz",
+        "Erol Sarı",
+        "Elmas Kırcı-Elmas",
+        "İsak Yılmaz",
+        "Özlem Bulkan",
+        "Demet Ongan",
+        "Cem Gazioğlu",
+        "Atike Nazik",
+        "Mehmet Ali Polat",
+        "Engin Meriç"
+      ],
+      "publication": "Quaternary Research 76 (2011), pp. 30-45; DOI 10.1016/j.yqres.2011.04.002; equipo incluye İstanbul University y personal del İstanbul Archaeology Museum",
+      "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Yenikapi-Algan2011.pdf",
+      "institutionalRecord": "https://avesis.istanbul.edu.tr/yayin/5019e9ee-4387-4ed9-841a-0d79f8a81627/holocene-coastal-change-in-the-ancient-harbor-of-yenikapi-istanbul-and-its-impact-on-cultural-history",
+      "pages": "PDF pp. 1-4 y 14-15 (revista pp. 30-33, 43-44); abstract y estudio de área en líneas 50-60, 110-147; síntesis de Figura 9 en líneas 954-957; conclusión 987-1006",
+      "passagesRead": "La excavación de Yenikapı junto al Marmara reveló transgresión y progradación costera. El artículo dice que la construcción del puerto bizantino —datado ampliamente en el siglo IV, atribuido por fuentes históricas bien a Constantino I o bien a Teodosio I— formó una pequeña cuenca restringida; la sedimentación aumentó luego por progradación y actividad humana. El área estudiada está en la costa sur de la península histórica; el antiguo Lykos/Bayrampaşa Deresi drenaba allí hasta que su cauce se rellenó en la década de 1950. Figura 9 representa de forma reconstruida el intervalo AD 70-650 con puertos teodosianos y otros puertos.",
+      "supports": "La costa moderna no debe trasladarse sin ajustes a la ciudad tardorromana. La desembocadura del Lykos, una ensenada/puerto y terrenos de sedimentación son relevantes para el sector Yenikapı; existe progradación desde aproximadamente 3 ka BP y un puerto construido/artificial en el periodo romano tardío.",
+      "limits": "La datación inicial del puerto no está resuelta entre Constantino y Teodosio; no permite asegurar que el puerto monumental completo existiera ya en 380. La figura 9 cubre siglos y es reconstrucción regional, no una línea de costa fechada con precisión para un año. Sus resultados son locales a Yenikapı y no autorizan dibujar una paleocosta precisa alrededor de toda la península ni ubicar murallas marítimas en 380.",
+      "imageRights": "La copia consultada se identifica como copia personal de autor para investigación/educación no comercial (pp. 0-1, aviso editorial); el aviso prohíbe redistribuir/publicar copias en sitios propios o de terceros. No reutilizar Figuras 1-9; las imágenes de Google Earth y mapas base tienen además procedencias/licencias propias. Uso aquí solo del texto y referencias bibliográficas."
+    },
+    {
+      "id": "socrates-ecclesiastical-history-vii-7-ccel",
+      "title": "Socrates, Ecclesiastical History, Book V, Chapter 7 (CCEL/NPNF translation)",
+      "author": "Socrates of Constantinople",
+      "url": "https://ccel.org/ccel/schaff/npnf202.ii.viii.viii.html",
+      "locator": "Capítulo VII, líneas 27-39; leer especialmente 28-31 y la nota editorial de 38-39",
+      "passagesRead": "El narrador Socrates afirma que Gregory, tras su traslado a Constantinopla, reunía a su comunidad en un pequeño oratorio dentro de la ciudad, junto al cual emperadores construyeron después una iglesia magnífica llamada Anastasia. Sigue con el regreso de Teodosio y la expulsión de los arrianos, fechada por la nota editorial del volumen en 380. La nota traductora advierte que Gregory parece haber usado él mismo el nombre Anastasia para la casa-oratorio, por lo que Socrates podría referirse a que los emperadores adoptaron el nombre al construir la iglesia mayor en lugar de la capilla original.",
+      "supports": "Se debe distinguir un espacio de reunión pequeño de la iglesia monumental posterior; no tratar Anastasia en 380 como una basílica grande ya acabada. El relato apoya la secuencia de uso pequeño seguido por ampliación, no el plano ni el emplazamiento exacto.",
+      "limits": "Socrates escribe décadas después de los sucesos y es un historiador eclesiástico posterior, no testigo directo del comienzo del ministerio de Gregory. El lugar de la pequeña casa-oratorio no queda identificado por el pasaje. El capítulo y la nota no establecen una ubicación con coordenadas, barrio o parcela.",
+      "imageRights": "La fuente es una interfaz de lectura de una traducción histórica NPNF; no se reutilizan imágenes. No se verificó en esta consulta la licencia de la traducción; citar y parafrasear brevemente."
+    }
+  ],
+  "phaseControls": [
+    "Muralla: la ficha del Istanbul Documentation Project fecha en 412 el inicio de la construcción de las murallas terrestres bajo Teodosio II y da 413 como cronología del sistema conocido; ambas son posteriores a 380. La atribución de un fragmento de Isa Kapısı a las defensas constantinianas es historiográfica. Ninguna fuente consultada permite trazar una línea exacta certificada para la fase 380.",
+    "Topografía: una representación de escala urbana puede conservar la península, colinas y descensos hacia el Golden Horn y el Marmara. No inferir de una figura de reconstrucción un perfil de elevación métrico.",
+    "Costa: Yenikapı sufrió progradación, aportes del Lykos y obra portuaria. La datación del puerto entre Constantino y Teodosio es ambigua; no anclar la escena de 380 a una forma de puerto, muelle o muro litoral precisa.",
+    "Anastasia: representar como máximo la posibilidad textual de un pequeño oratorio/casa usado para asambleas; la iglesia mayor es posterior en el relato. No fijar edificio, huella o barrio con este pasaje.",
+    "Los pasajes consultados no sustentan coordenadas de iglesia o campamento extramuros. Ninguna se propone. El escenario puede representar ambas caras de una muralla solo como marco esquemático con ubicación incierta, sin afirmar qué segmento exacto cruza una transición narrativa."
+  ],
+  "accessNotes": [
+    "La ficha institucional AVESIS de la Universidad de Estambul permitió leer metadatos y abstract del artículo de Algan, pero la apertura directa de la página agotó el tiempo (HTTP/tool timeout); el cuerpo del artículo sí se leyó en copia de autor alojada por ancientportsantiques.com, que muestra aviso de copyright/uso restringido.",
+    "La metadata de la ficha IRCICA de una carta arqueológica de Constantinopla (1938, escala 1:10.000) se inspeccionó, pero se excluyó porque se titula 'au moyen age' y no es un mapa de fase 380; sus metadatos no sustentan el trazado de la muralla constantiniana.",
+    "No se descargó material gráfico. No se verificó una licencia abierta de las figuras del artículo METU, del artículo Algan ni de la traducción de Socrates."
+  ],
+  "resourceStatus": "Texto y síntesis; sin imágenes descargadas. El composite CC-BY-SA 3.0 existente en el proyecto es un recurso separado y no se validó ni reutilizó aquí."
+}

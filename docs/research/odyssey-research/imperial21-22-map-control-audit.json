@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": false,
+  "episodes": [
+    {
+      "order": 21,
+      "episodeId": "21-returning-households-escort-alexandria",
+      "hubCount": 6,
+      "mainEntityCount": 12,
+      "optionalEntityCount": 9,
+      "optionalZoneCount": 9,
+      "minimumHubSeparationTiles": 71.33,
+      "nearestPair": [
+        "hub-1",
+        "hub-4"
+      ],
+      "hubRadiiMainAndOptionalOffsetsInFrame": true,
+      "noNativeOrAncientLandMask": true,
+      "waterMeaning": "Missing clipped coarse modern water line does not prove absence of ancient shoreline, small drainage or wall ditches. No full width route walkability/DEM/dated parcel certified.",
+      "architectRasterInspected": true,
+      "svgSha256": "6336e5f54144db57aaaae886563f81f75147ae8ce1848c563dbe710705c2f35e"
+    },
+    {
+      "order": 22,
+      "episodeId": "22-civilian-record-preservation-milan",
+      "hubCount": 6,
+      "mainEntityCount": 9,
+      "optionalEntityCount": 8,
+      "optionalZoneCount": 8,
+      "minimumHubSeparationTiles": 87.67,
+      "nearestPair": [
+        "hub-1",
+        "hub-5"
+      ],
+      "hubRadiiMainAndOptionalOffsetsInFrame": true,
+      "noNativeOrAncientLandMask": true,
+      "waterMeaning": "Missing clipped coarse modern water line does not prove absence of ancient shoreline, small drainage or wall ditches. No full width route walkability/DEM/dated parcel certified.",
+      "architectRasterInspected": true,
+      "svgSha256": "aafbbe7ebcdece85545cf48c65cf8dd2ec21e0456adc9011c057753dfa0886c1"
+    }
+  ],
+  "nativeAndBalance": "pending"
+}

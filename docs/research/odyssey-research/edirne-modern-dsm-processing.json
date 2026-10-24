@@ -1,0 +1,59 @@
+{
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E026_00_DEM/Copernicus_DSM_COG_10_N41_00_E026_00_DEM.tif",
+  "sourceSha256": "579dddab8eb8c2a6d32aac8cf6dd6737a75d8c92d052cdcb55477441419dc38c",
+  "sourceBytes": 46590021,
+  "requestedBBox": [
+    26.4,
+    41.6,
+    26.8,
+    41.9
+  ],
+  "actualBounds": [
+    26.39986111111111,
+    41.59986111111111,
+    26.80013888888889,
+    41.90013888888889
+  ],
+  "pixelWindow": {
+    "columnOffset": 1440,
+    "rowOffset": 360,
+    "width": 1441,
+    "height": 1081
+  },
+  "crs": "EPSG:4326",
+  "transform": [
+    0.0002777777777777778,
+    0.0,
+    26.39986111111111,
+    0.0,
+    -0.0002777777777777778,
+    41.90013888888889
+  ],
+  "nodata": null,
+  "rangeMetres": [
+    19.276844024658203,
+    407.2218017578125
+  ],
+  "classification": "modern DSM regional research reference; no ancient terrain or battlefield approval",
+  "modifications": "Integer pixel-aligned rectangular crop and lossless DEFLATE re-encoding; no resampling, elevation edits, fill or historical features added. Every sample bitwise/equality checked against source window.",
+  "toolVersions": {
+    "rasterio": "1.4.4",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  },
+  "cropBytes": 4070054,
+  "cropSha256": "7495100ff4e45717006daaaae3996dc0f91d06df524a656405703ff51457546e",
+  "previewSha256": "1d7ae44d05f26eeee30db5ef29711111ee37272fca8bd5f9062184f484538312",
+  "previewBytes": 1193762,
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "localCropPath": "docs/research/odyssey-research/geography/edirne-modern-dsm-regional-crop.tif",
+  "localPreviewPath": "docs/research/odyssey-research/images/edirne-modern-dsm-regional-preview.png",
+  "licenseNoticePath": "docs/research/odyssey-research/geography/edirne-modern-dsm-license.md",
+  "architectPreviewInspected": true,
+  "licenseScopeRead": "Complete three-page GLO-30 licence, including articles4and6, AWS data-processing/readme and official Copernicus product metadata. EPSG4326 verified in local TIFF; EGM2008 and WGS84-G1150 are product-documentation metadata, not an ancient survey.",
+  "reproduction": "Temporary geospatial research preparation using rasterio1.4.4, numpy2.2.6andmatplotlib3.10.9. Integer source window and affine transform recorded above; no library added to project runtime. Full source tile retained only temporarily; source URL/hash allow retrieval.",
+  "sampleBytesIdenticalToSourceWindow": true,
+  "sourceAndCropRasterInterpretation": "PixelIsPoint; AREA_OR_POINT=Point, affine unchanged",
+  "georeferenceFollowup": "Preliminary crop defaulted AREA_OR_POINTtoArea. Corrected before commit to preserve source Point interpretation; reopened and verified tag, unchanged affine and identical sample bytes."
+}

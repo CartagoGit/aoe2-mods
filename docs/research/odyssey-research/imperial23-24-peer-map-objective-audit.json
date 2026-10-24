@@ -1,0 +1,2753 @@
+{
+  "auditType": "mechanical map/objective audit",
+  "source": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "readOnly": true,
+  "architectApproval": false,
+  "historicalApproval": false,
+  "nativeMapApproval": false,
+  "gameplayApproval": false,
+  "method": {
+    "projection": "tools/design/geography.py tile_point convention: midpoint latitude cosine, span=max((east-west)*cos(midLat),north-south)*1.12; centered bbox; coordinate factor size-1=399",
+    "routeBounds": "Declared corridor hubOrder connected as centerline segments and conservatively buffered by half width; interior segment extrema lie between endpoints.",
+    "svg": "Compared static SVG frame, hub circles and route vertices; text-node placement evaluated against viewBox, not glyph pixels.",
+    "limits": [
+      "Coordinates do not certify terrain, walkability, entity footprint/collision, ancient shoreline, or native trigger behavior.",
+      "Null/empty water control means no drawable water geometry to intersect and does not establish dry land.",
+      "Static feasibility and QA declarations were read, not executed; no native/game verification."
+    ]
+  },
+  "episodes": [
+    {
+      "orderAtCollection": 23,
+      "episodeId": "23-bounded-political-pressure-milan",
+      "projectionAndHubCheck": {
+        "bbox": [
+          9.15,
+          45.445,
+          9.22,
+          45.49
+        ],
+        "mapSize": 400,
+        "hubCount": 6,
+        "allHubRadii12": true,
+        "maxProjectionErrorTiles": 0.0,
+        "hubResiduals": [
+          {
+            "hub": "hub-1",
+            "declared": [
+              189.32,
+              232.16
+            ],
+            "calculated": [
+              189.32,
+              232.16
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-2",
+            "declared": [
+              92.62,
+              203.13
+            ],
+            "calculated": [
+              92.62,
+              203.13
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-3",
+            "declared": [
+              291.11,
+              130.56
+            ],
+            "calculated": [
+              291.11,
+              130.56
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-4",
+            "declared": [
+              306.37,
+              304.72
+            ],
+            "calculated": [
+              306.37,
+              304.72
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-5",
+            "declared": [
+              179.14,
+              101.53
+            ],
+            "calculated": [
+              179.14,
+              101.53
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-6",
+            "declared": [
+              179.14,
+              319.24
+            ],
+            "calculated": [
+              179.14,
+              319.24
+            ],
+            "errorTiles": 0.0
+          }
+        ],
+        "hubBounds": [
+          {
+            "hub": "hub-1",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 154.84
+          },
+          {
+            "hub": "hub-2",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 80.62
+          },
+          {
+            "hub": "hub-3",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 95.89
+          },
+          {
+            "hub": "hub-4",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 80.63
+          },
+          {
+            "hub": "hub-5",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 89.53
+          },
+          {
+            "hub": "hub-6",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 67.76
+          }
+        ],
+        "closestHubPairs": [
+          {
+            "a": "hub-1",
+            "b": "hub-6",
+            "centerDistance": 87.67,
+            "edgeGapR12": 63.67
+          },
+          {
+            "a": "hub-1",
+            "b": "hub-2",
+            "centerDistance": 100.96,
+            "edgeGapR12": 76.96
+          },
+          {
+            "a": "hub-3",
+            "b": "hub-5",
+            "centerDistance": 115.67,
+            "edgeGapR12": 91.67
+          }
+        ]
+      },
+      "mainEntityCount": 8,
+      "mainEntities": [
+        {
+          "id": "incoming-local-context-1",
+          "group": "incoming-local-context",
+          "hub": "hub-5",
+          "offset": [
+            -14,
+            8
+          ],
+          "xy": [
+            165.14,
+            109.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "assent-local-context-1",
+          "group": "assent-local-context",
+          "hub": "hub-2",
+          "offset": [
+            0,
+            8
+          ],
+          "xy": [
+            92.62,
+            211.13
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "dissent-local-context-1",
+          "group": "dissent-local-context",
+          "hub": "hub-3",
+          "offset": [
+            14,
+            8
+          ],
+          "xy": [
+            305.11,
+            138.56
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-outgoing-assistants-1",
+          "group": "original-outgoing-assistants",
+          "hub": "hub-5",
+          "offset": [
+            -14,
+            16
+          ],
+          "xy": [
+            165.14,
+            117.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-outgoing-assistants-2",
+          "group": "original-outgoing-assistants",
+          "hub": "hub-5",
+          "offset": [
+            -12,
+            16
+          ],
+          "xy": [
+            167.14,
+            117.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "qualified-assent-copy-1",
+          "group": "qualified-assent-copy",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            16
+          ],
+          "xy": [
+            189.32,
+            248.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "qualified-dissent-copy-1",
+          "group": "qualified-dissent-copy",
+          "hub": "hub-1",
+          "offset": [
+            14,
+            16
+          ],
+          "xy": [
+            203.32,
+            248.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "ordinary-outgoing-list-1",
+          "group": "ordinary-outgoing-list",
+          "hub": "hub-1",
+          "offset": [
+            -14,
+            24
+          ],
+          "xy": [
+            175.32,
+            256.15999999999997
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allMainEntitiesInFrameAndFinite": true,
+      "mainZones": [
+        {
+          "id": "destination-1",
+          "hub": "hub-1",
+          "center": [
+            189.32,
+            232.16
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-2",
+          "hub": "hub-2",
+          "center": [
+            92.62,
+            203.13
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-3",
+          "hub": "hub-3",
+          "center": [
+            291.11,
+            130.56
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-4",
+          "hub": "hub-4",
+          "center": [
+            306.37,
+            304.72
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-5",
+          "hub": "hub-5",
+          "center": [
+            179.14,
+            101.53
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-6",
+          "hub": "hub-6",
+          "center": [
+            179.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "allMainZonesInFrame": true,
+      "optionalEntityCount": 9,
+      "optionalEntities": [
+        {
+          "id": "entity-1",
+          "side": "side-1",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            173.14,
+            104.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-1",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            173.14,
+            107.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-2",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            86.62,
+            206.13
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-2",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            86.62,
+            209.13
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-3",
+          "hub": "hub-6",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            173.14,
+            322.24
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-4",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            173.14,
+            104.53
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-5",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            86.62,
+            206.13
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-7",
+          "hub": "hub-4",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            300.37,
+            307.72
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-7",
+          "hub": "hub-4",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            300.37,
+            310.72
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allOptionalEntitiesInFrameAndFinite": true,
+      "optionalZones": [
+        {
+          "id": "zone-1",
+          "side": "side-1",
+          "hub": "hub-1",
+          "center": [
+            197.32,
+            232.16
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-2",
+          "hub": "hub-6",
+          "center": [
+            171.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-2",
+          "hub": "hub-6",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-3",
+          "hub": "hub-1",
+          "center": [
+            197.32,
+            232.16
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-4",
+          "hub": "hub-4",
+          "center": [
+            314.37,
+            304.72
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-5",
+          "hub": "hub-6",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-6",
+          "hub": "hub-3",
+          "center": [
+            291.11,
+            122.56
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-6",
+          "hub": "hub-4",
+          "center": [
+            306.37,
+            312.72
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-7",
+          "hub": "hub-6",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "allOptionalZonesInFrame": true,
+      "corridors": [
+        {
+          "id": "incoming-work-link",
+          "mode": "land",
+          "hubOrder": [
+            "hub-5",
+            "hub-1"
+          ],
+          "widthTiles": 10,
+          "routeLengthTiles": 131.03,
+          "frameClearanceAfterHalfWidth": 96.53,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "western-context-link",
+          "mode": "land",
+          "hubOrder": [
+            "hub-2",
+            "hub-1",
+            "hub-6"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 188.64,
+          "frameClearanceAfterHalfWidth": 75.76,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "eastern-context-link",
+          "mode": "land",
+          "hubOrder": [
+            "hub-3",
+            "hub-1",
+            "hub-4"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 281.53,
+          "frameClearanceAfterHalfWidth": 88.63,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "western-preservation-alternative",
+          "mode": "land",
+          "hubOrder": [
+            "hub-2",
+            "hub-6",
+            "hub-1"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 232.47,
+          "frameClearanceAfterHalfWidth": 75.76,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "eastern-outgoing-alternative",
+          "mode": "land",
+          "hubOrder": [
+            "hub-3",
+            "hub-4",
+            "hub-6"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 302.88,
+          "frameClearanceAfterHalfWidth": 75.76,
+          "fullWidthInsideFrame": true
+        }
+      ],
+      "allRoutesFullWidthInFrame": true,
+      "schematicWaterControl": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "svg": {
+        "path": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/maps/imperial-church/odyssey/23-bounded-political-pressure-milan.svg",
+        "viewBox": "0 0 1050 850",
+        "circleCount": 6,
+        "routeCount": 5,
+        "routeIds": [
+          "eastern-context-link",
+          "eastern-outgoing-alternative",
+          "incoming-work-link",
+          "western-context-link",
+          "western-preservation-alternative"
+        ],
+        "routeIdsMatchPlan": true,
+        "textCount": 26,
+        "textInternalIdLeaks": [],
+        "titleAndFooterWithinPage": true,
+        "routeVerticesMatchDeclaredHubOrder": true,
+        "routeVertexChecks": [
+          {
+            "corridorId": "incoming-work-link",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                179.14,
+                101.53
+              ],
+              [
+                189.32,
+                232.16
+              ]
+            ]
+          },
+          {
+            "corridorId": "western-context-link",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                92.62,
+                203.13
+              ],
+              [
+                189.32,
+                232.16
+              ],
+              [
+                179.14,
+                319.24
+              ]
+            ]
+          },
+          {
+            "corridorId": "eastern-context-link",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                291.11,
+                130.56
+              ],
+              [
+                189.32,
+                232.16
+              ],
+              [
+                306.37,
+                304.72
+              ]
+            ]
+          },
+          {
+            "corridorId": "western-preservation-alternative",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                92.62,
+                203.13
+              ],
+              [
+                179.14,
+                319.24
+              ],
+              [
+                189.32,
+                232.16
+              ]
+            ]
+          },
+          {
+            "corridorId": "eastern-outgoing-alternative",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                291.11,
+                130.56
+              ],
+              [
+                306.37,
+                304.72
+              ],
+              [
+                179.14,
+                319.24
+              ]
+            ]
+          }
+        ],
+        "technicalRouteTooltipTexts": [
+          "incoming-work-link: proposed land district connection, intermediate path pending",
+          "western-context-link: proposed land district connection, intermediate path pending",
+          "eastern-context-link: proposed land district connection, intermediate path pending",
+          "western-preservation-alternative: proposed land district connection, intermediate path pending",
+          "eastern-outgoing-alternative: proposed land district connection, intermediate path pending"
+        ],
+        "technicalRouteTooltipsContainInternalCorridorIds": true,
+        "tooltipScope": "The SVG route <title> metadata exposes internal corridor IDs as technical hover/accessibility labels; scenario screen/objective text itself has no detected internal-ID leakage.",
+        "allTextAnchorCoordinatesInsideViewBox": true,
+        "textAnchorCoordinatesOutsideViewBox": [],
+        "glyphBoundsPixelInspection": "Not performed; text anchor positions are within viewBox.",
+        "waterOrRiverPolylineCount": 0
+      },
+      "playerFacingInternalIdLeaks": [],
+      "objectiveAndDifficultyAudit": {
+        "mainObjectiveCount": 4,
+        "secondaryObjectiveCount": 7,
+        "threePlaystyles": {
+          "separate-contexts": [
+            "side-1",
+            "side-5"
+          ],
+          "work-and-provisions": [
+            "side-2",
+            "side-3",
+            "side-4"
+          ],
+          "outgoing-routes-and-travel": [
+            "side-6",
+            "side-7"
+          ]
+        },
+        "sideCoverageExactlyOnce": true,
+        "allOptionalEntitiesFinite": true,
+        "staticSkipAllDifficultyDeclarations": {
+          "easy": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          },
+          "standard": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          },
+          "hard": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          }
+        },
+        "qaStatic": {
+          "staticStatus": "checked separately by dossier validator",
+          "nativeStatus": "pending",
+          "gameVerified": false,
+          "cases": [
+            "Three distinct local note identities cannot be replaced with three assent copies.",
+            "One120W30G payment funds all three declared outputs; no repeated charge, imperial autograph or forged ancient signature.",
+            "Assent and dissent outputs keep distinct local destinations, not a doctrinal score.",
+            "Two assistants’ owno3 req4 reception authorizes departure, not outgoing listreq3 or context copies.",
+            "Main assistants return after active departure; optional travelers never substitute and cannot alter historical exile.",
+            "All seven optional tasks can be omitted; optional loss never main defeat.",
+            "No355Alexandria raid, Hilary attendance, reliable300bishop count or certified council room.",
+            "Marcus21 is local ordinary copyist fiction only, never private synod witness.",
+            "skip all optional objectives and win at each difficulty",
+            "complete all optionals at each difficulty without spending protected recovery stock",
+            "save/load before and after every delivery, payment, optional reward and terminal latch",
+            "lose an optional identity: only that task fails",
+            "test every corridor and receiving footprint in the real map"
+          ]
+        },
+        "nativeOrGameExecuted": false,
+        "contextInputs": {
+          "incoming-local-context": 1,
+          "assent-local-context": 1,
+          "dissent-local-context": 1
+        },
+        "outputs": {
+          "qualified-assent-copy": 1,
+          "qualified-dissent-copy": 1,
+          "ordinary-outgoing-list": 1
+        },
+        "fundedDerivedOutputs": {
+          "qualified-assent-copy": [
+            {
+              "objective": "o2",
+              "requirement": "req-1"
+            }
+          ],
+          "qualified-dissent-copy": [
+            {
+              "objective": "o2",
+              "requirement": "req-1"
+            }
+          ],
+          "ordinary-outgoing-list": [
+            {
+              "objective": "o2",
+              "requirement": "req-1"
+            }
+          ]
+        },
+        "outputsAllRequireSinglePayment": true,
+        "assistants": 2,
+        "assistantO3Receipt": {
+          "kind": "entity-state",
+          "group": "original-outgoing-assistants",
+          "requiredCount": 2,
+          "state": "arrived",
+          "destinationHub": "hub-4"
+        },
+        "orderedDeparture": {
+          "kind": "ordered-departure",
+          "receiptObjective": "o3",
+          "receiptRequirement": "req-4",
+          "departingGroup": "original-outgoing-assistants",
+          "departureEnabledOnlyAfterReceipt": true
+        },
+        "noBishopVoteArmyMechanic": true,
+        "historicalSourceBiasIsCaveated": true
+      },
+      "architectApproval": false,
+      "selectedChronologySourceAuthorshipNote": {
+        "sourcePassages": [
+          {
+            "classification": "architect interpretation; independent historical approval pending",
+            "selectedClaim": {
+              "en": "Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops were exiled.",
+              "es-ES": "Sozomeno describe un concilio en Milán en el que se presionó a los obispos para condenar a Atanasio y se exilió a obispos disidentes."
+            },
+            "architectCorrection": {
+              "date": "2026-10-14",
+              "author": "gpt-6",
+              "approval": "independent review pending",
+              "reason": "Milan355 proceedings distinct from Alexandria356 and Liberius separate interrogation. Do not copy source headcounts, Alba bishop label or imply Hilary attendedMilan; scholarship says he did not. Civilian context labels are fiction, not authentic synodal signatures, recovered acts or a doctrinal verdict. Title changed, stable IDs retained."
+            }
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+            "passage": "Athanasius Historia Acephala and Apologia de Fuga checked for February 356 church raid/escape; no evidence for the Milan hearing in this source.",
+            "limitations": "Episode has wrong local event/date alignment: Milan hearing and Alexandria raid are distinct episodes. Athanasius is a partisan witness; figures and adversary descriptions require caution.",
+            "status": "disputed",
+            "supportedClaim": "The source supports Athanasius’ account of a nighttime raid and escape at a church in Alexandria, not the Milan synod/hearing in 355. / La fuente respalda el relato de Atanasio sobre una incursión nocturna y su huida en Alejandría, no una audiencia en Milán en 355.",
+            "consultationDate": "2026-10-12",
+            "coverageActuallyRead": "Relevant short texts checked; narrative scope not neutral.",
+            "approval": "collection only; exact claim still requires architect and independent review"
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/26024.htm",
+            "passage": "Sozomen, Ecclesiastical HistoryIV.9, Milan council",
+            "supportedClaim": {
+              "en": "Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops were exiled.",
+              "es-ES": "Sozomeno describe un concilio en Milán en el que se presionó a los obispos para condenar a Atanasio y se exilió a obispos disidentes."
+            },
+            "limitations": "Later partisan church history; its theological judgements are attributed to the author. Conventional355 date and exact local hearing logistics are not independent court records. This event is distinct from the Alexandria night raid in356.",
+            "consultationDate": "2026-10-13",
+            "status": "consulted-primary-narrative-with-bias",
+            "coverageActuallyRead": "Chapter9 on the Milan council; other chapters are not evidence for local proceedings"
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/26024.htm",
+            "passage": "Sozomen HE IV.9, council paragraph and immediate outcome",
+            "coverageActuallyRead": "Architect directly read chapter9; later Alexandria paragraph is recognized as a different event, not a355Milan raid.",
+            "limitations": "Later pro-Nicene narration; fear/fraud/motives and providential judgment are authorial. No reliable exact attendance, synod room or private transcript. Avoid importing his inconsistent bishop/place label or assembled exile list as attendance proof.",
+            "consultationDate": "2026-10-14",
+            "approval": "independent review pending"
+          },
+          {
+            "consultedUrl": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+            "passage": "Melissa Markauskas2015, From Privilege to Proscription, selected printed72–74; physical PDF72–74, zero71–73",
+            "coverageActuallyRead": "Architect directly read selected printed pages72–74 with footnotes131–145 and verified pagination; not whole259-page thesis.",
+            "limitations": "Milan355, differentiated responses and Hilary nonattendance; synod and separate Liberius legal anecdote distinct. Rimini359 belongs to next episode. Secondary argument, no venue plan. Copyright retained by author, temporary research PDF not copied into project assets.",
+            "consultationDate": "2026-10-14",
+            "approval": "independent review pending"
+          }
+        ],
+        "scope": "mechanical audit only; no source passage independently re-evaluated"
+      },
+      "corridorDeclaredLengthCheck": [
+        {
+          "id": "incoming-work-link",
+          "computedTiles": 131.03,
+          "declaredTiles": 131.03,
+          "matches": true
+        },
+        {
+          "id": "western-context-link",
+          "computedTiles": 188.64,
+          "declaredTiles": 188.64,
+          "matches": true
+        },
+        {
+          "id": "eastern-context-link",
+          "computedTiles": 281.53,
+          "declaredTiles": 281.53,
+          "matches": true
+        },
+        {
+          "id": "western-preservation-alternative",
+          "computedTiles": 232.47,
+          "declaredTiles": 232.47,
+          "matches": true
+        },
+        {
+          "id": "eastern-outgoing-alternative",
+          "computedTiles": 302.88,
+          "declaredTiles": 302.88,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "orderAtCollection": 24,
+      "episodeId": "24-night-civilian-withdrawal-alexandria",
+      "projectionAndHubCheck": {
+        "bbox": [
+          29.915,
+          31.173,
+          29.976,
+          31.215
+        ],
+        "mapSize": 400,
+        "hubCount": 6,
+        "allHubRadii12": true,
+        "maxProjectionErrorTiles": 0.0,
+        "hubResiduals": [
+          {
+            "hub": "hub-1",
+            "declared": [
+              68.1,
+              206.33
+            ],
+            "calculated": [
+              68.1,
+              206.33
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-2",
+            "declared": [
+              155.7,
+              131.23
+            ],
+            "calculated": [
+              155.7,
+              131.23
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-3",
+            "declared": [
+              208.26,
+              199.5
+            ],
+            "calculated": [
+              208.26,
+              199.5
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-4",
+            "declared": [
+              301.7,
+              199.5
+            ],
+            "calculated": [
+              301.7,
+              199.5
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-5",
+            "declared": [
+              120.66,
+              281.43
+            ],
+            "calculated": [
+              120.66,
+              281.43
+            ],
+            "errorTiles": 0.0
+          },
+          {
+            "hub": "hub-6",
+            "declared": [
+              214.1,
+              308.74
+            ],
+            "calculated": [
+              214.1,
+              308.74
+            ],
+            "errorTiles": 0.0
+          }
+        ],
+        "hubBounds": [
+          {
+            "hub": "hub-1",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 56.1
+          },
+          {
+            "hub": "hub-2",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 119.23
+          },
+          {
+            "hub": "hub-3",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 178.74
+          },
+          {
+            "hub": "hub-4",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 85.3
+          },
+          {
+            "hub": "hub-5",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 105.57
+          },
+          {
+            "hub": "hub-6",
+            "radius": 12,
+            "inside0to399": true,
+            "edgeClearanceTiles": 78.26
+          }
+        ],
+        "closestHubPairs": [
+          {
+            "a": "hub-2",
+            "b": "hub-3",
+            "centerDistance": 86.16,
+            "edgeGapR12": 62.16
+          },
+          {
+            "a": "hub-1",
+            "b": "hub-5",
+            "centerDistance": 91.67,
+            "edgeGapR12": 67.67
+          },
+          {
+            "a": "hub-3",
+            "b": "hub-4",
+            "centerDistance": 93.44,
+            "edgeGapR12": 69.44
+          }
+        ]
+      },
+      "mainEntityCount": 57,
+      "mainEntities": [
+        {
+          "id": "original-local-civilians-1",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            8
+          ],
+          "xy": [
+            68.1,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-2",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            2,
+            8
+          ],
+          "xy": [
+            70.1,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-3",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            4,
+            8
+          ],
+          "xy": [
+            72.1,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-4",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            6,
+            8
+          ],
+          "xy": [
+            74.1,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-5",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            10
+          ],
+          "xy": [
+            68.1,
+            216.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-6",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            2,
+            10
+          ],
+          "xy": [
+            70.1,
+            216.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-7",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            4,
+            10
+          ],
+          "xy": [
+            72.1,
+            216.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-local-civilians-8",
+          "group": "original-local-civilians",
+          "hub": "hub-1",
+          "offset": [
+            6,
+            10
+          ],
+          "xy": [
+            74.1,
+            216.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "ordinary-household-note-1",
+          "group": "ordinary-household-note",
+          "hub": "hub-2",
+          "offset": [
+            -14,
+            8
+          ],
+          "xy": [
+            141.7,
+            139.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-1",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -24,
+            -12
+          ],
+          "xy": [
+            44.099999999999994,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-2",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -22,
+            -12
+          ],
+          "xy": [
+            46.099999999999994,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-3",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -20,
+            -12
+          ],
+          "xy": [
+            48.099999999999994,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-4",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -18,
+            -12
+          ],
+          "xy": [
+            50.099999999999994,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-5",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -24,
+            -10
+          ],
+          "xy": [
+            44.099999999999994,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-6",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -22,
+            -10
+          ],
+          "xy": [
+            46.099999999999994,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-7",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -20,
+            -10
+          ],
+          "xy": [
+            48.099999999999994,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-8",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -18,
+            -10
+          ],
+          "xy": [
+            50.099999999999994,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-9",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -24,
+            -8
+          ],
+          "xy": [
+            44.099999999999994,
+            198.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-infantry-10",
+          "group": "friendly-infantry",
+          "hub": "hub-1",
+          "offset": [
+            -22,
+            -8
+          ],
+          "xy": [
+            46.099999999999994,
+            198.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-spears-1",
+          "group": "friendly-spears",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            -16
+          ],
+          "xy": [
+            68.1,
+            190.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-spears-2",
+          "group": "friendly-spears",
+          "hub": "hub-1",
+          "offset": [
+            2,
+            -16
+          ],
+          "xy": [
+            70.1,
+            190.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-spears-3",
+          "group": "friendly-spears",
+          "hub": "hub-1",
+          "offset": [
+            4,
+            -16
+          ],
+          "xy": [
+            72.1,
+            190.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-spears-4",
+          "group": "friendly-spears",
+          "hub": "hub-1",
+          "offset": [
+            6,
+            -16
+          ],
+          "xy": [
+            74.1,
+            190.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-1",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            20,
+            -12
+          ],
+          "xy": [
+            88.1,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-2",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            22,
+            -12
+          ],
+          "xy": [
+            90.1,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-3",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            24,
+            -12
+          ],
+          "xy": [
+            92.1,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-4",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            26,
+            -12
+          ],
+          "xy": [
+            94.1,
+            194.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-5",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            20,
+            -10
+          ],
+          "xy": [
+            88.1,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "friendly-archers-6",
+          "group": "friendly-archers",
+          "hub": "hub-1",
+          "offset": [
+            22,
+            -10
+          ],
+          "xy": [
+            90.1,
+            196.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "fixed-junction-guards-1",
+          "group": "fixed-junction-guards",
+          "hub": "hub-3",
+          "offset": [
+            -8,
+            8
+          ],
+          "xy": [
+            200.26,
+            207.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "fixed-junction-guards-2",
+          "group": "fixed-junction-guards",
+          "hub": "hub-3",
+          "offset": [
+            -6,
+            8
+          ],
+          "xy": [
+            202.26,
+            207.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "fixed-junction-guards-3",
+          "group": "fixed-junction-guards",
+          "hub": "hub-3",
+          "offset": [
+            -4,
+            8
+          ],
+          "xy": [
+            204.26,
+            207.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "fixed-junction-guards-4",
+          "group": "fixed-junction-guards",
+          "hub": "hub-3",
+          "offset": [
+            -2,
+            8
+          ],
+          "xy": [
+            206.26,
+            207.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-1",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -14,
+            18
+          ],
+          "xy": [
+            194.26,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-2",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -12,
+            18
+          ],
+          "xy": [
+            196.26,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-3",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -10,
+            18
+          ],
+          "xy": [
+            198.26,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-4",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -8,
+            18
+          ],
+          "xy": [
+            200.26,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-5",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -14,
+            20
+          ],
+          "xy": [
+            194.26,
+            219.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-6",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -12,
+            20
+          ],
+          "xy": [
+            196.26,
+            219.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-7",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -10,
+            20
+          ],
+          "xy": [
+            198.26,
+            219.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-8",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -8,
+            20
+          ],
+          "xy": [
+            200.26,
+            219.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-9",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -14,
+            22
+          ],
+          "xy": [
+            194.26,
+            221.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-10",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -12,
+            22
+          ],
+          "xy": [
+            196.26,
+            221.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-11",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -10,
+            22
+          ],
+          "xy": [
+            198.26,
+            221.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-12",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -8,
+            22
+          ],
+          "xy": [
+            200.26,
+            221.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-13",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -14,
+            24
+          ],
+          "xy": [
+            194.26,
+            223.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-14",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -12,
+            24
+          ],
+          "xy": [
+            196.26,
+            223.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-15",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -10,
+            24
+          ],
+          "xy": [
+            198.26,
+            223.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-junction-infantry-16",
+          "group": "extra-junction-infantry",
+          "hub": "hub-3",
+          "offset": [
+            -8,
+            24
+          ],
+          "xy": [
+            200.26,
+            223.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-1",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            14,
+            16
+          ],
+          "xy": [
+            315.7,
+            215.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-2",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            16,
+            16
+          ],
+          "xy": [
+            317.7,
+            215.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-3",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            18,
+            16
+          ],
+          "xy": [
+            319.7,
+            215.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-4",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            20,
+            16
+          ],
+          "xy": [
+            321.7,
+            215.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-5",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            14,
+            18
+          ],
+          "xy": [
+            315.7,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-6",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            16,
+            18
+          ],
+          "xy": [
+            317.7,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-7",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            18,
+            18
+          ],
+          "xy": [
+            319.7,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "extra-eastern-ranged-8",
+          "group": "extra-eastern-ranged",
+          "hub": "hub-4",
+          "offset": [
+            20,
+            18
+          ],
+          "xy": [
+            321.7,
+            217.5
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allMainEntitiesInFrameAndFinite": true,
+      "mainZones": [
+        {
+          "id": "destination-1",
+          "hub": "hub-1",
+          "center": [
+            68.1,
+            206.33
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-2",
+          "hub": "hub-2",
+          "center": [
+            155.7,
+            131.23
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-3",
+          "hub": "hub-3",
+          "center": [
+            208.26,
+            199.5
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-4",
+          "hub": "hub-4",
+          "center": [
+            301.7,
+            199.5
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-5",
+          "hub": "hub-5",
+          "center": [
+            120.66,
+            281.43
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "destination-6",
+          "hub": "hub-6",
+          "center": [
+            214.1,
+            308.74
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "allMainZonesInFrame": true,
+      "optionalEntityCount": 9,
+      "optionalEntities": [
+        {
+          "id": "entity-1",
+          "side": "side-2",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            114.66,
+            284.43
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-3",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            149.7,
+            134.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-3",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            149.7,
+            137.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-4",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            114.66,
+            284.43
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-5",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            114.66,
+            284.43
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-6",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            149.7,
+            134.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-6",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            149.7,
+            137.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-7",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "xy": [
+            149.7,
+            134.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-7",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "xy": [
+            149.7,
+            137.23
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allOptionalEntitiesInFrameAndFinite": true,
+      "optionalZones": [
+        {
+          "id": "zone-1",
+          "side": "side-1",
+          "hub": "hub-3",
+          "center": [
+            208.26,
+            191.5
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-1",
+          "hub": "hub-4",
+          "center": [
+            301.7,
+            207.5
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-2",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            308.74
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-3",
+          "hub": "hub-5",
+          "center": [
+            112.66,
+            281.43
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-3",
+          "hub": "hub-5",
+          "center": [
+            128.66,
+            281.43
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-4",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            308.74
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-5",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            308.74
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-6",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            308.74
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-7",
+          "hub": "hub-5",
+          "center": [
+            128.66,
+            281.43
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "allOptionalZonesInFrame": true,
+      "corridors": [
+        {
+          "id": "mainland-withdrawal-road",
+          "mode": "land",
+          "hubOrder": [
+            "hub-1",
+            "hub-3",
+            "hub-6"
+          ],
+          "widthTiles": 12,
+          "routeLengthTiles": 249.72,
+          "frameClearanceAfterHalfWidth": 62.1,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "western-shelter-alternative",
+          "mode": "land",
+          "hubOrder": [
+            "hub-1",
+            "hub-5",
+            "hub-6"
+          ],
+          "widthTiles": 10,
+          "routeLengthTiles": 189.01,
+          "frameClearanceAfterHalfWidth": 63.1,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "northern-context-link",
+          "mode": "land",
+          "hubOrder": [
+            "hub-1",
+            "hub-2",
+            "hub-3"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 201.54,
+          "frameClearanceAfterHalfWidth": 64.1,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "eastern-patrol-approach",
+          "mode": "land",
+          "hubOrder": [
+            "hub-4",
+            "hub-3"
+          ],
+          "widthTiles": 10,
+          "routeLengthTiles": 93.44,
+          "frameClearanceAfterHalfWidth": 92.3,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "southern-supply-link",
+          "mode": "land",
+          "hubOrder": [
+            "hub-5",
+            "hub-3",
+            "hub-6"
+          ],
+          "widthTiles": 8,
+          "routeLengthTiles": 229.34,
+          "frameClearanceAfterHalfWidth": 86.26,
+          "fullWidthInsideFrame": true
+        }
+      ],
+      "allRoutesFullWidthInFrame": true,
+      "schematicWaterControl": null,
+      "svg": {
+        "path": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/maps/imperial-church/odyssey/24-night-civilian-withdrawal-alexandria.svg",
+        "viewBox": "0 0 1050 850",
+        "circleCount": 6,
+        "routeCount": 5,
+        "routeIds": [
+          "eastern-patrol-approach",
+          "mainland-withdrawal-road",
+          "northern-context-link",
+          "southern-supply-link",
+          "western-shelter-alternative"
+        ],
+        "routeIdsMatchPlan": true,
+        "textCount": 24,
+        "textInternalIdLeaks": [],
+        "titleAndFooterWithinPage": true,
+        "routeVerticesMatchDeclaredHubOrder": true,
+        "routeVertexChecks": [
+          {
+            "corridorId": "mainland-withdrawal-road",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                68.1,
+                206.33
+              ],
+              [
+                208.26,
+                199.5
+              ],
+              [
+                214.1,
+                308.74
+              ]
+            ]
+          },
+          {
+            "corridorId": "western-shelter-alternative",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                68.1,
+                206.33
+              ],
+              [
+                120.66,
+                281.43
+              ],
+              [
+                214.1,
+                308.74
+              ]
+            ]
+          },
+          {
+            "corridorId": "northern-context-link",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                68.1,
+                206.33
+              ],
+              [
+                155.7,
+                131.23
+              ],
+              [
+                208.26,
+                199.5
+              ]
+            ]
+          },
+          {
+            "corridorId": "eastern-patrol-approach",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                301.7,
+                199.5
+              ],
+              [
+                208.26,
+                199.5
+              ]
+            ]
+          },
+          {
+            "corridorId": "southern-supply-link",
+            "svgVerticesMatchHubRoute": true,
+            "svgVertices": [
+              [
+                120.66,
+                281.43
+              ],
+              [
+                208.26,
+                199.5
+              ],
+              [
+                214.1,
+                308.74
+              ]
+            ]
+          }
+        ],
+        "technicalRouteTooltipTexts": [
+          "mainland-withdrawal-road: proposed land district connection, intermediate path pending",
+          "western-shelter-alternative: proposed land district connection, intermediate path pending",
+          "northern-context-link: proposed land district connection, intermediate path pending",
+          "eastern-patrol-approach: proposed land district connection, intermediate path pending",
+          "southern-supply-link: proposed land district connection, intermediate path pending"
+        ],
+        "technicalRouteTooltipsContainInternalCorridorIds": true,
+        "tooltipScope": "The SVG route <title> metadata exposes internal corridor IDs as technical hover/accessibility labels; scenario screen/objective text itself has no detected internal-ID leakage.",
+        "allTextAnchorCoordinatesInsideViewBox": true,
+        "textAnchorCoordinatesOutsideViewBox": [],
+        "glyphBoundsPixelInspection": "Not performed; text anchor positions are within viewBox.",
+        "waterOrRiverPolylineCount": 0
+      },
+      "playerFacingInternalIdLeaks": [],
+      "objectiveAndDifficultyAudit": {
+        "mainObjectiveCount": 3,
+        "secondaryObjectiveCount": 7,
+        "threePlaystyles": {
+          "route-control-and-scouting": [
+            "side-1",
+            "side-2"
+          ],
+          "refuge-supply-investment": [
+            "side-3",
+            "side-4",
+            "side-5"
+          ],
+          "independent-withdrawal-and-context": [
+            "side-6",
+            "side-7"
+          ]
+        },
+        "sideCoverageExactlyOnce": true,
+        "allOptionalEntitiesFinite": true,
+        "staticSkipAllDifficultyDeclarations": {
+          "easy": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          },
+          "standard": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          },
+          "hard": {
+            "skipAll": true,
+            "allOptionalsAffordable": true,
+            "basis": "static feasibility estimate; native calibration and fun/playability assessment pending"
+          }
+        },
+        "qaStatic": {
+          "staticStatus": "checked separately by dossier validator",
+          "nativeStatus": "pending",
+          "gameVerified": false,
+          "cases": [
+            "Any six ofeight original IDs qualify; initial six collected are not a frozeneligibility ledger.",
+            "Two original losses remain solvable, including a survivor not counted in initialsix; third causes immediate main defeat.",
+            "No all-eightordereddeparture, derivation from all-eightcollected or hidden requirement defeats allowedloss budget.",
+            "Four fixedjunctionguards remain in everydifficulty; onlyselectedextraIDsinstantiate, no invisible maximumreserve.",
+            "Singlejunctioncontrol stays active untilo3; westernalternative doesnot remove it, no graceclock.",
+            "Atleast sixalive arrivals and originalnote plus240F60Wrefuge allocationrequired; arrival doesnot prove heldcargo.",
+            "Twenty initialfriendlymilitaryIDs only;productiondisabled,replacementzero,rewardsnotextrafriendlytroops.",
+            "All seven sides can be skipped, optionalcivilianlossnevermain defeat, no rewardafterterminal.",
+            "No source5000soldier counttreatedverified, providential damage or omniscienthistoricaldoor dialogue.",
+            "AnonymousMechir13/14chronicle distinct from laterchurchtransfer andGeorge357;Marcus receivesnews inMilan.",
+            "skip all optional objectives and win at each difficulty",
+            "complete all optionals at each difficulty without spending protected recovery stock",
+            "save/load before and after every delivery, payment, optional reward and terminal latch",
+            "lose an optional identity: only that task fails",
+            "test every corridor and receiving footprint in the real map"
+          ]
+        },
+        "nativeOrGameExecuted": false,
+        "originalCivilians": 8,
+        "o1CollectedCount": 6,
+        "o1EligibleIDs": 8,
+        "o3ArriveCount": 6,
+        "o3EligibleIDs": 8,
+        "anySixOfEightRepeated": true,
+        "survivorThresholds": [
+          {
+            "entities": [
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-1",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-2",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-3",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-4",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-5",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-6",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-7",
+              "imperial-church.24-night-civilian-withdrawal-alexandria.original-local-civilians-8"
+            ],
+            "minimumAliveOrAlreadySafe": 6
+          },
+          {
+            "entities": [
+              "imperial-church.24-night-civilian-withdrawal-alexandria.ordinary-household-note-1"
+            ],
+            "minimumAliveOrAlreadySafe": 1
+          }
+        ],
+        "thirdLossDefeatClaimPresent": true,
+        "noFrozenSixOrAllEightRule": true,
+        "essentialHouseholdNote": {
+          "groupCount": 1,
+          "requiredAtO1": true,
+          "requiredAtO3": true
+        },
+        "junctionControlUntilO3": true,
+        "junctionLossImmediateAfterO2": true,
+        "westernAlternativeSideDoesNotCancelMandatoryControl": true,
+        "entityGroupCounts": {
+          "original-local-civilians": 8,
+          "ordinary-household-note": 1,
+          "friendly-infantry": 10,
+          "friendly-spears": 4,
+          "friendly-archers": 6,
+          "fixed-junction-guards": 4,
+          "extra-junction-infantry": 16,
+          "extra-eastern-ranged": 8
+        },
+        "difficultyMilitaryDeclarations": {
+          "easy": {
+            "enemyTotalCap": 16,
+            "fixedGuards": 4,
+            "extraInfantry": 8,
+            "extraRanged": 4,
+            "friendlyInitial": 20,
+            "friendlyReplacementBudget": {
+              "food": 0,
+              "wood": 0,
+              "gold": 0,
+              "stone": 0
+            }
+          },
+          "standard": {
+            "enemyTotalCap": 22,
+            "fixedGuards": 4,
+            "extraInfantry": 12,
+            "extraRanged": 6,
+            "friendlyInitial": 20,
+            "friendlyReplacementBudget": {
+              "food": 0,
+              "wood": 0,
+              "gold": 0,
+              "stone": 0
+            }
+          },
+          "hard": {
+            "enemyTotalCap": 28,
+            "fixedGuards": 4,
+            "extraInfantry": 16,
+            "extraRanged": 8,
+            "friendlyInitial": 20,
+            "friendlyReplacementBudget": {
+              "food": 0,
+              "wood": 0,
+              "gold": 0,
+              "stone": 0
+            }
+          }
+        },
+        "expectedDifficultyCapsMatch": {
+          "easy": true,
+          "standard": true,
+          "hard": true
+        },
+        "enemyRosterPool": {
+          "fixed": 4,
+          "extraInfantryPool": 16,
+          "extraRangedPool": 8,
+          "exactCountsRepresentable": true
+        },
+        "originalPoolBinding": {
+          "survivalPoolExactlyEightCivilians": true,
+          "o1AndO3EligibilityUseSameEight": true,
+          "optionalGroupsCannotSubstitute": "o3 predicate enumerates only the eight original-local-civilians IDs; optional travelers are separate identities.",
+          "householdNoteSingleOriginalEssentialAtO1AndO3": true,
+          "historicalSourceCasualtyOrSoldierCountsNotUsedAsPlayableRoster": true,
+          "sourceNote": "mechanical identity binding only; no independent historic source audit."
+        },
+        "westernAlternativeAndJunctionControl": {
+          "optionalEffect": [
+            {
+              "kind": "mark-alternative-route",
+              "target": "western-shelter-alternative",
+              "resources": {},
+              "onceFlag": "24-night-civilian-withdrawal-alexandria.side-2.rewarded",
+              "funding": "reserved-optional-stock",
+              "changesHistoricalOutcome": false,
+              "corridorId": "western-shelter-alternative"
+            }
+          ],
+          "mandatoryControlUntil": "o3",
+          "controlDeclaration": "o2 requirement mustRemainUntilObjective=o3",
+          "inferenceLimit": "Declarations contain no alternate-control removal effect, but this is not trigger/game execution evidence."
+        }
+      },
+      "architectApproval": false,
+      "selectedChronologySourceAuthorshipNote": {
+        "sourcePassages": [
+          {
+            "classification": "architect interpretation; independent historical approval pending",
+            "selectedClaim": {
+              "en": "Athanasius describes a nighttime military assault and his escape from an Alexandrian church. The anonymous Historia Acephala IV.5 identifies Theonas and the night of Mechir13/14; exact civil conversion and building footprint are qualified. Later church transfer and George’s357 arrival are separate. Eight playable civilians, their road junction and finite combat roster are explicit local fiction, not a verified assault headcount or control of the bishop’s fate.",
+              "es-ES": "Atanasio describe un asalto militar nocturno y su huida de una iglesia alejandrina. La Historia Acephala anónima IV.5 identifica Theonas y la noche de Mequir13/14; se cualifican conversión civil exacta y huella del edificio. El traslado posterior de iglesias y la llegada de Jorge en357 son hechos separados. Los ocho civiles jugables, su cruce de caminos y plantilla finita de combate son ficción local explícita, no cifras acreditadas del asalto ni control del destino del obispo."
+            },
+            "architectCorrection": {
+              "date": "2026-10-14",
+              "author": "gpt-6",
+              "approval": "independent review pending",
+              "reason": "Anonymous chronicle, not Athanasius autobiography; do not conflate initialSyrianus night assault with later church transfer or George357. Apologia§6 contains a later sequence; use24–25 for flight. PreserveMechir13/14 rather than unverified Gregorian conversion. Fictional civilian6of8withdrawal uses direct identities; all-entity ordered-departure would soft-lock after two permitted losses and is deliberately not used."
+            }
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/2814.htm",
+            "passage": "Athanasius Historia Acephala / Apologia de Fuga; exact raid account checked.",
+            "limitations": "Potential duplicate with episode 23; source is partisan and the reported troop count is not independently verified. Keep only if the two episodes have distinct historical content.",
+            "status": "disputed",
+            "supportedClaim": "Supports Athanasius’ report that soldiers entered a church in Alexandria at night and that he escaped. / Respalda el informe de Atanasio de que soldados entraron de noche en una iglesia de Alejandría y él escapó.",
+            "consultationDate": "2026-10-12",
+            "coverageActuallyRead": "Relevant sections checked in both short texts.",
+            "approval": "collection only; exact claim still requires architect and independent review"
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/2814.htm",
+            "passage": "Athanasius Apologia de Fuga24–25; §6 read only to distinguish later sequence",
+            "coverageActuallyRead": "Architect directly read24–25 with surrounding displayed account and6 as a contrast, not full critical Greek edition.",
+            "limitations": "Apologetic self-defense and providential framing are attributed. More-than5000 is source assertion, not independently verified or native population requirement. No verbatim dialogue or theological damage modifier.",
+            "consultationDate": "2026-10-14",
+            "approval": "independent review pending"
+          },
+          {
+            "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+            "passage": "Anonymous Historia Acephala IV.5 and V.6",
+            "coverageActuallyRead": "Architect directly read named church/night13before14Mechir, subsequent church transfer and George357arrival.",
+            "limitations": "Fragment/old edition conversions, no certified civil-calendar conversion or excavated356church parcel. June356church transfer/George357 differ from initialFebruary night.",
+            "consultationDate": "2026-10-14",
+            "approval": "independent review pending"
+          },
+          {
+            "consultedUrl": "https://www.cealex.org/evenement/cartalex-is-online/",
+            "passage": "CEAlex CartAlex layer dates and institutional GIS announcement",
+            "coverageActuallyRead": "Architect read announcement text and metadata, not interactive map pixels.",
+            "limitations": "Multi-date controls do not certify Theonas address,356streets/coastline or reuse license. No institutional map copied.",
+            "consultationDate": "2026-10-14",
+            "approval": "independent review pending"
+          }
+        ],
+        "scope": "mechanical audit only; no source passage independently re-evaluated"
+      },
+      "corridorDeclaredLengthCheck": [
+        {
+          "id": "mainland-withdrawal-road",
+          "computedTiles": 249.72,
+          "declaredTiles": 249.72,
+          "matches": true
+        },
+        {
+          "id": "western-shelter-alternative",
+          "computedTiles": 189.01,
+          "declaredTiles": 189.01,
+          "matches": true
+        },
+        {
+          "id": "northern-context-link",
+          "computedTiles": 201.54,
+          "declaredTiles": 201.54,
+          "matches": true
+        },
+        {
+          "id": "eastern-patrol-approach",
+          "computedTiles": 93.44,
+          "declaredTiles": 93.44,
+          "matches": true
+        },
+        {
+          "id": "southern-supply-link",
+          "computedTiles": 229.34,
+          "declaredTiles": 229.34,
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

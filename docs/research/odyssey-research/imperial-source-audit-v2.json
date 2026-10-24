@@ -1,0 +1,453 @@
+{
+  "campaignId": "imperial-church",
+  "auditVersion": 2,
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/25021.htm",
+      "title": "Eusebius, Life of Constantine I",
+      "consultedScope": "Opened Book I; checked I.35–38 on campaign against Maxentius. Panegyrical Christian narrative."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25022.htm",
+      "title": "Eusebius, Life of Constantine II",
+      "consultedScope": "Opened Book II; checked controversy and correspondence chapters around II.61–73. Does not date the initial dispute precisely."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25023.htm",
+      "title": "Eusebius, Life of Constantine III",
+      "consultedScope": "Opened Book III; checked III.25–40 on Jerusalem building program; ideological account."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25024.htm",
+      "title": "Eusebius, Life of Constantine IV",
+      "consultedScope": "Opened Book IV; checked IV.8–13, IV.41–47, IV.61–64. Panegyric; date/claims need corroboration."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/200110.htm",
+      "title": "Eusebius, Ecclesiastical History X",
+      "consultedScope": "Opened Book X and checked X.5 rescript text concerning religious freedom/restoration, reproducing Lactantius."
+    },
+    {
+      "url": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+      "title": "Fordham Sourcebook, “Edict of Milan”",
+      "consultedScope": "Read editorial note and rescript translation; note identifies Latin version in Lactantius and Greek in Eusebius HE X.5. Not the signed instrument from a Milan archive."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm",
+      "title": "Lactantius, De mortibus persecutorum 48 (hosted Latin text)",
+      "consultedScope": "The URL is present in dossier; it was not directly opened in this audit. Use consulted Fordham/Eusebius X.5 instead."
+    },
+    {
+      "url": "https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/",
+      "title": "Acts and Synodal Letter of Arles (314), modern source page",
+      "consultedScope": "Read editorial introduction, canons summary and edition references; not a line-by-line collation of the underlying Latin transcription."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3801.htm",
+      "title": "First Council of Nicaea: canons and post-council letter",
+      "consultedScope": "Opened page; checked canon 20 (kneeling posture) and letter paragraph on Easter agreement. Translation page, not manuscript apparatus."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3815.htm",
+      "title": "Council of Sardica: introduction and canons",
+      "consultedScope": "Opened page; checked introductory date discussion and selected canons. Page itself notes date/text-history uncertainty; not independent resolution of date."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26012.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History II",
+      "consultedScope": "Opened Book II and checked source framing plus sections relevant to return/exile and later controversies. Fifth-century, pro-Nicene narrative, not contemporary witness."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "title": "Athanasius, Historia Acephala",
+      "consultedScope": "Opened short text; checked §I.2 for exact return date 21 October 346. Alexandrian/partisan perspective."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2814.htm",
+      "title": "Athanasius, Apologia de Fuga",
+      "consultedScope": "Opened text; checked account of nighttime church raid/escape. Apologetic first-person account; not neutral census of troops."
+    },
+    {
+      "url": "https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+      "title": "Socrates and Sozomen, Book IV, chapter 1 (CCEL)",
+      "consultedScope": "Opened passage on Constans/Magnentius and political settlement; older translation/editorial presentation."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/ammianus_22_book22.htm",
+      "title": "Ammianus Marcellinus, Res Gestae XXII",
+      "consultedScope": "Opened XXII.2; checked Julian’s entry into Constantinople and assumption of sole rule. Contemporary pagan historian with his own judgments."
+    },
+    {
+      "url": "https://romanletters.org/letters/julian_emperor/24/",
+      "title": "Julian, Letter 24 to the Alexandrians",
+      "consultedScope": "Opened translation; checked expulsion order concerning Athanasius. Imperial polemic, not neutral report of popular opinion."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/ammianus_25_book25.htm",
+      "title": "Ammianus Marcellinus, Res Gestae XXV",
+      "consultedScope": "Opened; checked account of Julian’s wound/death and burial direction near Tarsus; eyewitness historian, precise wound-cause remains disputed."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "title": "Codex Theodosianus 16.1.2, Edictum de fide catholica",
+      "consultedScope": "Opened Latin text and editorial header. Supports legal prescription; does not establish uniform enforcement or social conversion."
+    },
+    {
+      "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "title": "Council of Constantinople I, creed/canons translation",
+      "consultedScope": "Opened page; checked canon 3 and editorial transmission note. Compiled translation, not contemporary acts/manuscript apparatus."
+    },
+    {
+      "url": "https://www.thelatinlibrary.com/codtheod.html",
+      "title": "Codex Theodosianus II (Latin Library transcription)",
+      "consultedScope": "Opened and checked CTh 2.8.1. Website transcription; date/addressee and exception wording checked, not a critical edition."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26022.htm",
+      "title": "Sozomen, Ecclesiastical History II",
+      "consultedScope": "Opened/found II.30; checked narrative of Arius’ death. Fifth-century pro-Nicene polemic, with providential framing, not neutral forensic evidence."
+    },
+    {
+      "url": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+      "title": "Encyclopaedia Britannica, Constantine I",
+      "consultedScope": "Dossier URL was not successfully consulted for this audit; battle chronology remains unverified here."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+      "title": "Ammianus Marcellinus, Res Gestae XXII (Chicago-hosted text)",
+      "consultedScope": "Opened XXII.2; no exact evidence located there for reopening temples/sacrifices."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "title": "Athanasius, Historia Acephala",
+      "consultedScope": "See source record above; duplicate URL retained only once in sources."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26011.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History I",
+      "consultedScope": "Opened Book I and checked Antioch-related context; the examined passage is later than the proposed pre-Nicaea synod and does not establish the selection."
+    }
+  ],
+  "episodes": [
+    {
+      "order": 1,
+      "episodeId": "01-milvian-bridge",
+      "consultedUrl": "https://www.newadvent.org/fathers/25021.htm",
+      "passages": "Eusebius VC I.35–38; checked narrative of final advance and Maxentius’ death near Rome; Lactantius 44 not consulted directly in this pass.",
+      "claimENes": "Supports a Constantine victory over Maxentius and entry into Rome in Eusebius’ account. / Respalda la victoria de Constantino sobre Majencio y su entrada en Roma según Eusebio.",
+      "limitations": "No exact 28 October date established by checked Eusebius passage; victory/bridge details are framed as Christian providence in a panegyric.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Eusebius VC I.35–38 page/find passages; not Lactantius 44."
+    },
+    {
+      "order": 2,
+      "episodeId": "02-bounded-negotiation-milan",
+      "consultedUrl": "https://www.newadvent.org/fathers/200110.htm",
+      "passages": "Eusebius HE X.5 / Fordham translation of rescript; checked editorial note describing Milan meeting.",
+      "claimENes": "Supports a policy agreement attributed to the rulers at Milan, followed by a rescript granting religious freedom. / Apoya un acuerdo político atribuido a los gobernantes en Milán, seguido de un rescripto de libertad religiosa.",
+      "limitations": "The “negotiation” phrasing is an inference; surviving text is later rescript, not minutes of a conversation. Lactantius page URL in dossier was not opened.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Fordham note and translated rescript; Eusebius HE X.5 checked."
+    },
+    {
+      "order": 3,
+      "episodeId": "03-property-and-record-restoration-nicomedia",
+      "consultedUrl": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+      "passages": "Eusebius HE X.5 as reproduced in Fordham; lines on Nicomedia and restitution.",
+      "claimENes": "Supports Licinius’ Nicomedian publication of a rescript ordering freedom of worship and restoration of communal property. / Apoya la publicación nicomediense de un rescripto de Licinio que ordena libertad de culto y restitución de bienes comunitarios.",
+      "limitations": "The text is not the original Milan instrument; legal order is not proof of uniform practical restitution.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Fordham editorial note and rescript translation; Eusebius HE X.5 checked."
+    },
+    {
+      "order": 4,
+      "episodeId": "04-rival-delegation-reception-rome-ostia",
+      "consultedUrl": null,
+      "passages": "No exact passage directly consulted for the dossier’s Rome/Ostia hearings; Eusebius HE X.5 mentions a Roman decision only indirectly in the contextual tradition.",
+      "claimENes": "A Donatist dispute and episcopal/imperial adjudication are broadly attested by later sources, but this particular source audit does not verify the proposed hearings or location. / Las fuentes posteriores atestiguan en términos generales la disputa donatista y su arbitraje episcopal/imperial, pero esta auditoría no verifica las audiencias ni el lugar propuestos.",
+      "limitations": "Dossier URLs (Fourth Century/Optatus) not opened in this pass; Rome/Ostia may conflate distinct hearings. Needs primary passage before treating as established.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "No qualifying exact passage consulted."
+    },
+    {
+      "order": 5,
+      "episodeId": "05-delegate-logistics-arles",
+      "consultedUrl": "https://christearlychurch.co.uk/text/the-acts-of-the-council-of-arles/",
+      "passages": "Council of Arles page, introductory lines 16–17 and references to canons 1, 8, 20.",
+      "claimENes": "Supports a 314 council convened after the Caecilian/Donatist dispute, with canons addressing Pascha, baptism and episcopal consecration. / Respalda un concilio de 314 convocado tras la disputa de Ceciliano y los donatistas, con cánones sobre Pascua, bautismo y consagraciones episcopales.",
+      "limitations": "Page’s narrative introduction is modern editorial framing; it gives 1 August 314, while precise dating derives from scholarly reconstruction. Checked summary, not full canonical text.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Editorial introduction and canon summary only."
+    },
+    {
+      "order": 6,
+      "episodeId": "06-finite-field-withdrawal-cibalae",
+      "consultedUrl": null,
+      "passages": "No accessible primary/academic passage opened for Cibalae in this pass; dossier relies on Britannica.",
+      "claimENes": "The claimed battle and 317 settlement were not verified in consulted material. / La batalla y el acuerdo de 317 no se verificaron en material consultado.",
+      "limitations": "Dating 314 vs 316 is disputed; Britannica URL not consulted. Do not present either year as settled here.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "No qualifying passage consulted."
+    },
+    {
+      "order": 7,
+      "episodeId": "07-court-record-logistics-rome-ostia",
+      "consultedUrl": "https://www.thelatinlibrary.com/codtheod.html",
+      "passages": "Codex Theodosianus 2.8.1 (Constantine to Elpidius; Latin transcription, 3 July 321).",
+      "claimENes": "Supports restrictions on judicial business on Sunday, with emancipation/manumission allowed. / Respalda restricciones a la actividad judicial dominical, con excepción para manumisiones.",
+      "limitations": "The cited law does not contain the agricultural-work exception; that appears in a different legal context. Replace or remove that claim. Website is a transcription rather than critical edition.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Checked CTh 2.8.1 text and adjacent law; agricultural exception absent here."
+    },
+    {
+      "order": 8,
+      "episodeId": "08-disputed-correspondence-alexandria",
+      "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
+      "passages": "Eusebius VC II.61–64 checked for dispute background and imperial intervention.",
+      "claimENes": "Supports a dispute involving Arius and Alexander that drew imperial correspondence and wider church attention in Eusebius’ narrative. / Apoya que la disputa entre Arrio y Alejandro atrajo correspondencia imperial y atención eclesiástica más amplia en el relato de Eusebio.",
+      "limitations": "Eusebius’ account is selective and pro-Constantinian; date range 324–325 and the phrase “networks” are editorial synthesis, not an exact dated event.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "VC II.61–64 checked; whole book not read."
+    },
+    {
+      "order": 9,
+      "episodeId": "09-crossing-and-supply-adrianople",
+      "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
+      "passages": "No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.",
+      "claimENes": "The checked material does not establish Adrianople on 3 July or distinguish this battle from Chrysopolis. / El material consultado no establece Adrianópolis el 3 de julio ni separa esa batalla de Crisópolis.",
+      "limitations": "Date and military detail remain unverified in this audit; should retain as conventional only with a better source.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "No exact battle locator found."
+    },
+    {
+      "order": 10,
+      "episodeId": "10-land-and-strait-logistics-chrysopolis",
+      "consultedUrl": "https://www.newadvent.org/fathers/25022.htm",
+      "passages": "No precise battle passage opened; Eusebius VC II checked generally, Britannica not consulted.",
+      "claimENes": "The checked material does not independently verify the 18 September date or Chrysopolis location. / El material consultado no verifica independientemente la fecha del 18 de septiembre ni el lugar de Crisópolis.",
+      "limitations": "Do not merge both battles as one event; precise conventional dates need source support.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "No exact battle locator found."
+    },
+    {
+      "order": 11,
+      "episodeId": "11-council-record-escort-antioch",
+      "consultedUrl": "https://www.newadvent.org/fathers/26011.htm",
+      "passages": "Socrates HE I.25 checked only for post-Nicaea Antioch context; it does not establish the selected pre-Nicaea suspension claim. Wiley article not consulted.",
+      "claimENes": "The proposed pre-Nicaea Antioch synod and suspensions are not confirmed by the passage actually checked. / El sínodo antioqueno previo a Nicea y las suspensiones propuestas no quedan confirmados por el pasaje realmente consultado.",
+      "limitations": "Potential confusion with the Antioch synod after Nicaea; specialist article remains unconsulted.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Socrates passage checked, but it does not support this event."
+    },
+    {
+      "order": 12,
+      "episodeId": "02-nicaea",
+      "consultedUrl": "https://www.newadvent.org/fathers/3801.htm",
+      "passages": "Nicaea page: canon 20; post-council letter paragraph on Easter (lines 93–95).",
+      "claimENes": "Supports council canons including Sunday/Pentecost prayer posture and a reported agreement to celebrate Easter together. / Respalda cánones como la postura de oración en domingo/Pentecostés y un acuerdo comunicado sobre la celebración común de Pascua.",
+      "limitations": "Canon 20 is not an Easter-calendar canon. The surviving letter is a post-council report; it does not supply a detailed computational rule or prove uniform compliance.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Canon 20 and letter passage checked, not manuscript history."
+    },
+    {
+      "order": 13,
+      "episodeId": "13-finite-works-logistics-jerusalem",
+      "consultedUrl": "https://www.newadvent.org/fathers/25023.htm",
+      "passages": "Eusebius VC III.25–40 checked for imperial church-building at Jerusalem.",
+      "claimENes": "Supports Constantine’s sponsored construction at Jerusalem, including the church complex associated with the tomb of Jesus in Eusebius’ account. / Respalda el patrocinio de construcciones constantinianas en Jerusalén, incluido el complejo asociado al sepulcro según Eusebio.",
+      "limitations": "Eusebius is a Christian panegyrist; source establishes patronage and his identification, not independent proof of the biblical site or the exact dating of each work.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "VC III.25–40 read in relevant sections."
+    },
+    {
+      "order": 14,
+      "episodeId": "03-new-capital",
+      "consultedUrl": null,
+      "passages": "Chronicon Paschale not directly consulted; Britannica URL not consulted.",
+      "claimENes": "Ceremonial dedication of Constantinople in 330 is not independently substantiated by a primary passage checked here. / La dedicación ceremonial de Constantinopla en 330 no queda corroborada aquí por un pasaje primario consultado.",
+      "limitations": "11 May is a conventional date but remains unverified in this audit; avoid implying all construction occurred on dedication day.",
+      "status": "unavailable",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "No source passage consulted."
+    },
+    {
+      "order": 15,
+      "episodeId": "15-long-distance-dispatch-nicomedia",
+      "consultedUrl": "https://www.newadvent.org/fathers/25024.htm",
+      "passages": "Eusebius VC IV.8–13 checked: embassy and Constantine’s letter to the Persian king.",
+      "claimENes": "Supports Eusebius’ report that Constantine wrote to the Persian king advocating for Christians under his rule. / Respalda el informe de Eusebio de que Constantino escribió al rey persa en defensa de los cristianos de su territorio.",
+      "limitations": "Eusebius does not establish the dossier’s c.332–333 date in this passage; identify the recipient as Sapor/Shapur only as Eusebius names him. Panegyrical source, not Persian-side confirmation.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "VC IV.8–13 checked."
+    },
+    {
+      "order": 16,
+      "episodeId": "16-witness-record-comparison-tyre",
+      "consultedUrl": "https://www.newadvent.org/fathers/25024.htm",
+      "passages": "Eusebius VC IV.41–47 checked: Tyre proceedings and Jerusalem dedication (IV.47).",
+      "claimENes": "Supports a council at Tyre involving charges against Athanasius and a later dedication of the Jerusalem complex in Eusebius’ account. / Respalda un concilio en Tiro con acusaciones contra Atanasio y una posterior dedicación del complejo jerosolimitano según Eusebio.",
+      "limitations": "The source is hostile/panegyrical toward Athanasius; separate the Tyre council from Jerusalem dedication. Chronology is not precise enough to imply immediate sequence without qualification.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "VC IV.41–47 checked."
+    },
+    {
+      "order": 17,
+      "episodeId": "17-rumour-and-source-investigation-constantinople",
+      "consultedUrl": "https://www.newadvent.org/fathers/26022.htm",
+      "passages": "Sozomen HE II.30 (New Advent 26022), account of Arius’ death.",
+      "claimENes": "Supports a later tradition that Arius died at Constantinople on the eve of a planned readmission. / Respalda una tradición posterior según la cual Arrio murió en Constantinopla la víspera de una readmisión prevista.",
+      "limitations": "Sozomen presents the death as providential punishment and explicitly reports hearsay; date 336 is not established by this passage. The cited dossier URL 26023 is Book III and is wrong for II.29.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Chapter 30 lines found/read; polemical account, not contemporary evidence."
+    },
+    {
+      "order": 18,
+      "episodeId": "18-administrative-transition-nicomedia",
+      "consultedUrl": "https://www.newadvent.org/fathers/25024.htm",
+      "passages": "Eusebius VC IV.61–64 checked for baptism and death at Nicomedia.",
+      "claimENes": "Supports Constantine’s baptism by Eusebius of Nicomedia and death at Nicomedia in 337 in Eusebius’ account. / Respalda el bautismo por Eusebio de Nicomedia y la muerte de Constantino en Nicomedia en 337 según Eusebio.",
+      "limitations": "The narrative is an imperial Christian encomium; day 22 May is not independently verified by the passage checked.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "VC IV.61–64 checked."
+    },
+    {
+      "order": 19,
+      "episodeId": "19-competing-dispatches-constantinople",
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passages": "Socrates HE II.1 / II.25 identified as relevant narrative; checked introductory framing and selected passage context.",
+      "claimENes": "Supports post-Constantinian imperial succession narrated by Socrates, a fifth-century historian. / Respalda la sucesión imperial posterior a Constantino en el relato del historiador del siglo V Sócrates.",
+      "limitations": "Not a contemporary dispatch; exact territorial division and timing need passage-level audit before detailed map/campaign claims.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Book II page opened; limited chapter checks, not all cited sections."
+    },
+    {
+      "order": 20,
+      "episodeId": "20-separate-reception-logistics-sardica",
+      "consultedUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "passages": "Sardica canons page: introduction and selected canons; Anastos link not opened.",
+      "claimENes": "Supports Sardica’s canons and appellate procedures, but this audit did not verify the claim of distinct east/west sessions from an exact narrative passage. / Respalda los cánones de Sardica y procedimientos de apelación, pero no verifica aquí mediante pasaje narrativo la afirmación de sesiones separadas entre este y oeste.",
+      "limitations": "Page’s own date discussion is inconsistent/uncertain (343/344; wider alternatives); avoid a precise date without resolving textual chronology.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Intro and selected canons checked; Anastos not consulted."
+    },
+    {
+      "order": 21,
+      "episodeId": "21-returning-households-escort-alexandria",
+      "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+      "passages": "Historia Acephala §I.2; Socrates HE II contextual account.",
+      "claimENes": "Supports Athanasius’ return to Alexandria on 21 October 346 after time in Rome/Italy. / Respalda el regreso de Atanasio a Alejandría el 21 de octubre de 346 tras su estancia en Roma e Italia.",
+      "limitations": "Athanasius’ chronicle is aligned with his side of the dispute; support from imperial letters is broadly reported, but the exact political motives should not be inferred.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Historia Acephala §I.2 read directly; Socrates page checked as context."
+    },
+    {
+      "order": 22,
+      "episodeId": "22-civilian-record-preservation-milan",
+      "consultedUrl": "https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+      "passages": "Socrates/CCEL passage on Constans’ death in Gaul in 350 and Magnentius.",
+      "claimENes": "Supports Constans’ death during Magnentius’ usurpation and Magnentius’ control in the West. / Respalda la muerte de Constante durante la usurpación de Magnencio y el control magnenciano de Occidente.",
+      "limitations": "Candidate is wrong to say Constantius II became sole emperor in 350; Magnentius remained a rival until defeated in 353. Geographic focus Milan is reception of news, not death site.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Relevant narrative passage opened; source is later ecclesiastical history."
+    },
+    {
+      "order": 23,
+      "episodeId": "23-bounded-political-pressure-milan",
+      "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+      "passages": "Athanasius Historia Acephala and Apologia de Fuga checked for February 356 church raid/escape; no evidence for the Milan hearing in this source.",
+      "claimENes": "The source supports Athanasius’ account of a nighttime raid and escape at a church in Alexandria, not the Milan synod/hearing in 355. / La fuente respalda el relato de Atanasio sobre una incursión nocturna y su huida en Alejandría, no una audiencia en Milán en 355.",
+      "limitations": "Episode has wrong local event/date alignment: Milan hearing and Alexandria raid are distinct episodes. Athanasius is a partisan witness; figures and adversary descriptions require caution.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Relevant short texts checked; narrative scope not neutral."
+    },
+    {
+      "order": 24,
+      "episodeId": "24-night-civilian-withdrawal-alexandria",
+      "consultedUrl": "https://www.newadvent.org/fathers/2814.htm",
+      "passages": "Athanasius Historia Acephala / Apologia de Fuga; exact raid account checked.",
+      "claimENes": "Supports Athanasius’ report that soldiers entered a church in Alexandria at night and that he escaped. / Respalda el informe de Atanasio de que soldados entraron de noche en una iglesia de Alejandría y él escapó.",
+      "limitations": "Potential duplicate with episode 23; source is partisan and the reported troop count is not independently verified. Keep only if the two episodes have distinct historical content.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Relevant sections checked in both short texts."
+    },
+    {
+      "order": 25,
+      "episodeId": "25-delegate-and-draft-network-rimini",
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passages": "Socrates HE II.37 and II.39–40: Ariminum and Seleucia both met in 359, Seleucia divided into factions; the text places Seleucia meeting on 27 September.",
+      "claimENes": "Supports the parallel western council at Ariminum and eastern council at Seleucia in 359, with disagreement and factional division. / Respalda los sínodos paralelos de Arímino y Seleucia en 359, con desacuerdo y división en facciones.",
+      "limitations": "Socrates is a fifth-century pro-Nicene narrator. The selected page supports that these were separate synods, not that they pursued an identical formula or produced a single outcome.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Socrates HE II.37 and II.39–40 checked via find excerpts; not the entire book."
+    },
+    {
+      "order": 26,
+      "episodeId": "26-plural-civic-logistics-constantinople",
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+      "passages": "Ammianus XXII.2 §1 checked for Julian’s entry into Constantinople and sole rule.",
+      "claimENes": "Supports Julian entering Constantinople after Constantius’ death and becoming sole ruler. / Respalda la entrada de Juliano en Constantinopla tras la muerte de Constancio y su gobierno único.",
+      "limitations": "This passage does not support reopening temples/restoring sacrifices; that needs a separate exact source. Ammianus is an admiring pagan narrator.",
+      "status": "disputed",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "XXII.2 §1 checked; no temple-policy passage located."
+    },
+    {
+      "order": 27,
+      "episodeId": "27-return-and-departure-records-alexandria",
+      "consultedUrl": "https://romanletters.org/letters/julian_emperor/24/",
+      "passages": "Julian Letter 24 checked for order that Athanasius leave Alexandria; Ammianus XXV checked for death during Persian campaign.",
+      "claimENes": "Supports Julian ordering Athanasius out of Alexandria and Ammianus’ account of Julian’s fatal wound/death on the Persian campaign, near the Tigris/Mesopotamian theater. / Respalda la orden de expulsión de Atanasio y el relato de Amiano sobre la herida mortal y muerte de Juliano durante la campaña persa, en el teatro mesopotámico.",
+      "limitations": "Julian’s letter is polemical; exact wound cause and killer are uncertain. The Persian campaign/death is not a local Alexandria event—present as reported news, not on-map action.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Julian Letter 24 and Ammianus XXV relevant lines checked."
+    },
+    {
+      "order": 28,
+      "episodeId": "28-law-and-local-reception-thessalonica",
+      "consultedUrl": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "passages": "CTh 16.1.2 Latin text and editorial heading checked.",
+      "claimENes": "Supports an imperial law prescribing the faith associated with Damasus and Peter for inhabitants of Constantinople and labeling dissenting groups as heretics. / Respalda una ley imperial que prescribe la fe asociada con Dámaso y Pedro para los habitantes de Constantinopla y califica de herejes a grupos disidentes.",
+      "limitations": "The constitution is addressed to the people of Constantinople though issued at Thessalonica; it does not prove uniform enforcement, conversion, or universal application. Header date/location should be checked in a critical edition if exact day matters.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Latin text and page heading read."
+    },
+    {
+      "order": 29,
+      "episodeId": "29-council-and-final-perspective-constantinople",
+      "consultedUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "passages": "Council of Constantinople I page, canon 3 and editorial transmission note.",
+      "claimENes": "Supports canon 3’s honor ranking of Constantinople after Rome because it is New Rome. / Respalda el rango honorífico de Constantinopla después de Roma en el canon 3, por ser Nueva Roma.",
+      "limitations": "Canon is about precedence/honor, not a modern Catholic/Orthodox split or unrestricted jurisdiction. Creed text transmission is separate; page is a translation/compilation.",
+      "status": "consulted",
+      "date": "2026-10-12",
+      "coverageActuallyRead": "Canon 3 and editorial note checked; not manuscript apparatus."
+    }
+  ],
+  "architectStatus": "collection only; flagged chronological and geographic issues require architect correction"
+}
