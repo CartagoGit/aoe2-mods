@@ -1737,12 +1737,12 @@
         ]
       },
       "corridorIds": [
-        "north-view",
-        "western-reception",
-        "western-trade",
-        "west-supply",
-        "ridge-junction",
         "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
+        "north-view",
         "southern-host",
         "southern-view"
       ],
@@ -1762,6 +1762,12 @@
         "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur."
       },
       "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
+        "materials-court",
         "north-viewpoint",
         "materials-court",
         "merchant-worksite",
@@ -1797,11 +1803,11 @@
         ]
       },
       "corridorIds": [
-        "western-reception",
-        "western-trade",
-        "west-supply",
-        "ridge-junction",
         "ridge-hearth",
+        "ridge-junction",
+        "west-supply",
+        "western-trade",
+        "western-reception",
         "southern-host"
       ],
       "information": {
@@ -1820,6 +1826,11 @@
         "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur."
       },
       "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
         "materials-court",
         "merchant-worksite",
         "materials-source",
@@ -2673,12 +2684,12 @@
         "originHub": "starting-court",
         "receivingHub": "north-viewpoint",
         "corridorIds": [
-          "north-view",
-          "western-reception",
-          "western-trade",
-          "west-supply",
-          "ridge-junction",
           "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "north-view",
           "southern-host",
           "southern-view"
         ],
@@ -2686,6 +2697,12 @@
         "spawnOutsideReceivingZone": true,
         "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
         "routePointIds": [
+          "starting-court",
+          "hearth-worksite",
+          "western-junction",
+          "materials-source",
+          "merchant-worksite",
+          "materials-court",
           "north-viewpoint",
           "materials-court",
           "merchant-worksite",
@@ -2696,7 +2713,7 @@
           "host-court",
           "south-viewpoint"
         ],
-        "centrelineLengthTiles": 387.768,
+        "centrelineLengthTiles": 698.256,
         "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
@@ -2827,17 +2844,22 @@
         "originHub": "starting-court",
         "receivingHub": "host-court",
         "corridorIds": [
-          "western-reception",
-          "western-trade",
-          "west-supply",
-          "ridge-junction",
           "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
           "southern-host"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
         "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
         "routePointIds": [
+          "starting-court",
+          "hearth-worksite",
+          "western-junction",
+          "materials-source",
+          "merchant-worksite",
           "materials-court",
           "merchant-worksite",
           "materials-source",
@@ -2846,7 +2868,7 @@
           "starting-court",
           "host-court"
         ],
-        "centrelineLengthTiles": 334.575,
+        "centrelineLengthTiles": 618.419,
         "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [

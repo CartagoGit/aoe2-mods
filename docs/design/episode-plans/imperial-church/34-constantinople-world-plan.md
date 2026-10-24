@@ -147,6 +147,6 @@ Cada contrato enumera ahora sus conexiones consecutivas reales del plan, en luga
 | The Longer Way Home | The Northern Supply Yard → The Western Merchant → The Western Shelter Yard |
 | Two Dates in the Margin | The Reader's Shelter → The Damaged Store → The Northern Supply Yard → The Western Merchant → The Timber Yard → The Western Turn → The Shared Hearth |
 | A Neighbor's Route | The Waiting Guide → The Timber Yard → The Western Turn |
-| Above the Waterline | The Upper Viewpoint → The Western Shelter Yard → The Western Merchant → The Timber Yard → The Western Turn → The Shared Hearth → The Clerk's Courtyard → The Southern Host's Courtyard → The Southern Viewpoint |
-| Room for the Next Household | The Western Shelter Yard → The Western Merchant → The Timber Yard → The Western Turn → The Shared Hearth → The Clerk's Courtyard → The Southern Host's Courtyard |
+| Above the Waterline | The Clerk's Courtyard → The Shared Hearth → The Western Turn → The Timber Yard → The Western Merchant → The Western Shelter Yard → The Upper Viewpoint → The Western Shelter Yard → The Western Merchant → The Timber Yard → The Western Turn → The Shared Hearth → The Clerk's Courtyard → The Southern Host's Courtyard → The Southern Viewpoint |
+| Room for the Next Household | The Clerk's Courtyard → The Shared Hearth → The Western Turn → The Timber Yard → The Western Merchant → The Western Shelter Yard → The Western Merchant → The Timber Yard → The Western Turn → The Shared Hearth → The Clerk's Courtyard → The Southern Host's Courtyard |
 | Timber Put to Use | The Clerk's Courtyard → The Shared Hearth → The Western Turn → The Timber Yard → The Western Merchant → The Northern Supply Yard → The Damaged Store |
