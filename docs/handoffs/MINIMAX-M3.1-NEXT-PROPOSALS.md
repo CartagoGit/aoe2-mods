@@ -2,7 +2,7 @@
 
 Recupera del servidor DelendAI el estado, ruta, aceptación y dependencias de cada propuesta antes de trabajar. Los IDs siguientes fueron asignados por el servidor; no son números que otro agente deba fabricar. La base de trabajo es develop y toda edición pertenece a una unidad oficial aislada. Publicación oficial y gate, sin commits manuales de develop.
 
-**f00001/S1, piloto técnico**, fue especificado por el arquitecto, aprobado formalmente por GPT-6-Luna e integrado (`06e688e`, metadatos `3c41b4f5`); el slice está `done`. MiniMax no ha realizado trabajo. Su siguiente slice mecánico designado es **f00001/S2**, pendiente por cuota del proveedor. El alcance histórico vigente son nueve odiseas, 278 selecciones y cinco actos por campaña. Hay 63 dossiers de diseño redactados, 215 selecciones sin dossier y ninguna aprobación ampliada de juego. La base anterior de 39 contratos conserva identidad; no es la extensión final del catálogo.
+**f00001/S1, piloto técnico**, fue especificado por el arquitecto, aprobado formalmente por `gpt-6-luna` e integrado (`06e688e`, metadatos `3c41b4f5`); el slice está `done`. MiniMax no ha realizado trabajo. Su siguiente slice mecánico designado es **f00001/S2**, pendiente por cuota del proveedor. El alcance histórico vigente son nueve odiseas, 278 selecciones y cinco actos por campaña. Hay 63 dossiers de diseño redactados, 215 selecciones sin dossier y ninguna aprobación ampliada de juego. La base anterior de 39 contratos conserva identidad; no es la extensión final del catálogo.
 
 ## Infraestructura y arquitectura
 
