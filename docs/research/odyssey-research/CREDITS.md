@@ -71,3 +71,8 @@ These three files are CDN-recompressed research copies; pixel dimensions are pre
 ## Serdica decumanus reference,14October2026
 
 `images/serdica-decumanus-modern.jpg`: Grantscharoff,1September2011, [source](https://commons.wikimedia.org/wiki/File:SerdicaDecumanus.jpg), [CC BY-SA3.0](https://creativecommons.org/licenses/by-sa/3.0/). Original720×404JPEG unchanged; bytes/SHA256 in manifest. Architect inspected actual raster, with conservation rails/display and mixed visible fabric. Research only, no dated343scene, georeferenced plan or certified council building. Attribution and ShareAlike apply to adaptations.
+
+
+## Constantinople modern OSM shoreline,24October2026
+
+`geography/constantinople-modern-osm-coastline.raw.json` preserves the exact public Overpass response; `geography/constantinople-modern-osm-coastline.geojson` converts its60coastline ways to GeoJSON without simplifying/joining coordinates. © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [ODbL1.0](https://opendatacommons.org/licenses/odbl/1-0/). Attribution and applicable data share-alike obligations remain. The raw and derived files are separate inventoried resources, with bytes/SHA, query and snapshot time in the manifest and [provenance](constantinople-modern-osm-coastline-provenance.json). These are current mapped shores, including modern works, not a380shoreline, land mask, bridge or navigable terrain. Research-only; neither resource is approved for mod distribution.
