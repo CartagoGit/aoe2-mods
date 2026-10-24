@@ -12,17 +12,17 @@ Read those English sections only; not the nomination dossier, inscriptions, exca
 
 The page places the necropolis and Jewish renewal in a broad second–fourth-century context, associated with Judah the Patriarch, and distinguishes later abandonment.
 
-Limits: No exact 425 end of the patriarchate, closure of the Jerusalem Talmud, archive, local study event, identical Mishnah/Talmud corpus or lifetime of a fictional narrator is established. The source’s broad after135 framing is not Judah’s biographical birth/accession date. Description license does not license every linked photograph.
+Limits: No exact 425 end of the patriarchate, closure of the Jerusalem Talmud, archive, local study event, identical Mishnah/Talmud corpus or lifetime of a fictional narrator is established. The source’s broad after 135 framing is not Judah’s biographical birth/accession date. Description license does not license every linked photograph.
 
 ## cth-patriarchal-tax-retrospective-429
 
-[Theodosian Code16.8.29, Latin Library transcription](https://www.thelatinlibrary.com/theodosius/theod16.shtml) — CTh16.8.29, dateline30May429; compared16.8.22(20October415) only as preceding legal context
+[Theodosian Code16.8.29, Latin Library transcription](https://www.thelatinlibrary.com/theodosius/theod16.shtml) — CTh16.8.29, dateline30 May 429; compared16.8.22(20 October 415) only as preceding legal context
 
 Read these two Latin clauses and supplied datelines in the web transcription. No manuscript/critical edition or modern translation collated.
 
 The429 clause refers retrospectively to the demise of patriarchs and redirects former payments; the415 clause addresses Gamaliel’s honor/jurisdiction.
 
-Limits: A 429 law does not state an exact 425 abolition date, prove universal enforcement or date the Talmud’s completion. It is later dossier context, not a document available to a 425 narrator. Legal invective remains attributed imperial language; no own translation quoted as authoritative.
+Limits: A429 law does not state an exact 425 abolition date, prove universal enforcement or date the Talmud’s completion. It is later dossier context, not a document available to a425 narrator. Legal invective remains attributed imperial language; no own translation quoted as authoritative.
 
 ## Decisions retained
 
