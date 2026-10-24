@@ -2,7 +2,7 @@
 
 Recupera del servidor DelendAI el estado, ruta, aceptación y dependencias de cada propuesta antes de trabajar. Los IDs siguientes fueron asignados por el servidor; no son números que otro agente deba fabricar. La base de trabajo es develop y toda edición pertenece a una unidad oficial aislada. Publicación oficial y gate, sin commits manuales de develop.
 
-La primera tarea designada para MiniMax continúa siendo **f00001/S1, piloto técnico**, si su estado vivo lo permite. El alcance histórico vigente son nueve odiseas, 278 selecciones y cinco actos por campaña. Hay 63 dossiers de diseño redactados, 215 selecciones sin dossier y ninguna aprobación ampliada de juego. La base anterior de 39 contratos conserva identidad; no es la extensión final del catálogo.
+La especificación de **f00001/S1, piloto técnico**, está preparada por el arquitecto y pendiente de revisión formal; MiniMax no ha realizado trabajo. Tras integración y aceptación oficial, su siguiente slice mecánico designado será **f00001/S2**. El alcance histórico vigente son nueve odiseas, 278 selecciones y cinco actos por campaña. Hay 63 dossiers de diseño redactados, 215 selecciones sin dossier y ninguna aprobación ampliada de juego. La base anterior de 39 contratos conserva identidad; no es la extensión final del catálogo.
 
 ## Infraestructura y arquitectura
 
@@ -24,7 +24,7 @@ La [matriz de asignaciones](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md), las propuestas 
 
 | Propuesta | Campaña / entrega | Extensión y estado del diseño |
 |---|---|---|
-| f00001 | Piloto técnico de rutas independientes | S1 dossier, S2 staging, S3 materialización conjunta con IDs/glosario, S4 informe; conservar su alcance acotado |
+| f00001 | Piloto técnico de rutas independientes | S1 especificación del arquitecto/revisión; S2 staging, S3 materialización conjunta con IDs/glosario, S4 informe; conservar su alcance acotado |
 | f00002 | Piloto narrativo de Puente Milvio | Tras el piloto técnico y capacidades nativas; no abre automáticamente una saga |
 | f00003 | The Eagle and the Cross | 34 selecciones, 33 dossiers (órdenes 1–32 y 34). Constantinopla380, orden33/S37, continúa sin dossier completo |
 | f00004 | Embers of the Covenant | 30 selecciones y 30 dossiers sin aprobación histórica, de terreno ni juego |
@@ -53,3 +53,15 @@ La versión observada admite DependsOn dentro de slices; create_proposal no ofre
 Si una operación no existe, el arquitecto registra y resuelve su propuesta; MiniMax conserva el bloqueo y no fabrica un binario, un flag de pausa ni una mecánica alternativa. El contenido sigue inglés fuente y español completo, fuente histórica atribuida, narrador común objetivo antes de la persona de campaña, recomendaciones no bloqueantes y progreso acumulativo sin borrar otras rutas.
 
 Ejecutar los [gates](MINIMAX-M3.1-QUALITY-GATES.md), solicitar revisión por modelo distinto y publicar por DelendAI. Una revisión pendiente no desaparece al cambiar de modelo. Un rechazo conserva la unidad y el motivo; no resetear ni forzar develop. No distribuir mods ni generar medios de pago masivamente sin autorización específica.
+
+## Estado operativo de d00002/S1 — 24 de octubre de 2026
+
+DelendAI registra **S1 `done`** y una revisión formal `approve` de GPT-6.1; la aprobación y metadatos quedaron integrados en `b9cff83e76b3eaee75cef789b5ace09a1c6b417b` (producto `924ebde2`). Se cumplieron los dos criterios formales. El arquitecto corrigió las dos familias P2 numéricas (contadores y vectores de recursos) y GPT-6.1 verificó las correcciones; la evidencia y el alcance constan en [aceptación común](../research/odyssey-research/common-architecture-acceptance.md) y [revisión independiente](../research/odyssey-research/common-architecture-independent-review.md). La verificación registrada fue 142 pruebas Bun, 2.069 aserciones y 90 pruebas de diseño; no acredita juego ni aprobación de contenido ampliado.
+
+S2–S11 siguen `pending`. El catálogo conserva 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 objetivos secundarios; hay cero aprobaciones ampliadas. La producción histórica de MiniMax sigue bloqueada.
+
+El plan parcial de Constantinopla, con 45 pantallas EN/es-ES y siete objetivos secundarios, está en [plan de mundo](../design/episode-plans/imperial-church/34-constantinople-world-plan.md) y su [revisión independiente](../research/odyssey-research/constantinople380-world-plan-luna-review.md). Sigue siendo un plan auxiliar, no el dossier 64; sus 45 pantallas y siete secundarios quedan fuera de los totales de 63 dossiers, 2.594 pantallas y 391 secundarios.
+
+La secuencia de MiniMax se gestiona por slices con aceptación propia: no requiere esperar a que terminen las nueve odiseas, ni desbloquea por sí sola propuestas históricas. Para el piloto, f00001/S1 es una especificación del arquitecto y su matriz de aceptación, pendientes de revisión independiente formal; MiniMax aún no ha trabajado. El intento OpenCode MiniMax-M3.1-Flash del 24 de octubre fue rechazado antes de ejecutar herramientas (HTTP 429/2056, límite de Token Plan); la consulta separada de cuota OAuth MMX indicó 0 % semanal general. La sesión `ses_e90709888ffegF4vCs3Axe1zWY` no dejó ediciones. No cambiar de proveedor/modelo ni comprar créditos. Tras integración y aprobación formal de f00001/S1, el siguiente trabajo mecánico designado será f00001/S2. Consulta la [especificación](../wiki/route-pilot/02-implementation-specification.md) y la [matriz de aceptación](../wiki/route-pilot/03-acceptance-matrix.md); cada estado vivo lo determina DelendAI.
+
+Esta actualización no cierra ningún slice distinto de S1.
