@@ -40,6 +40,10 @@
     {
       "path": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.raw.json",
       "sha256": "2fb54f325f22d6d56fd6e97ae90e1422c8bcad323981c8fcfe68fb7a115c516f"
+    },
+    {
+      "path": "docs/design/odysseys/imperial-church.json",
+      "sha256": "7d1183c4bf3483eb1cf8f69eb1842545b9467dd2c42c6796bef3c8a883ee68df"
     }
   ],
   "historicalBoundary": "November380 convention; preserve Socrates24/26November versus MarcellinusDecember. Civilian services are voluntary invented local actions; cannot cause or purchase the church possession transfer, belief or a historical person.",
@@ -1552,12 +1556,12 @@
         "es-ES": "Una mesa que sigue abierta"
       },
       "subject": {
-        "en": "two neighboring households",
-        "es-ES": "dos hogares vecinos"
+        "en": "two household collection posts",
+        "es-ES": "dos puestos de recogida de hogares"
       },
       "rationale": {
-        "en": "Two separately identified consignments aid consenting fictional households without creed eligibility.",
-        "es-ES": "Dos remesas con identidades distintas ayudan a hogares ficticios voluntarios sin requisitos de credo."
+        "en": "Two separately identified consignments reach separately marked collection posts assigned to fictional consenting households. Household members remain off scene; this task checks the crates at their assigned posts, not recipient presence. No creed eligibility.",
+        "es-ES": "Dos remesas con identidades distintas llegan a puestos de recogida señalados por separado para hogares ficticios voluntarios. Sus miembros quedan fuera de escena; la tarea comprueba las cajas en sus puestos asignados, no la presencia de destinatarios. Sin requisitos de credo."
       },
       "placement": {
         "originHub": "north-care-yard",
@@ -1569,8 +1573,8 @@
         "north-reception-link"
       ],
       "instruction": {
-        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard.",
-        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte."
+        "en": "Bring each marked aid crate to its own marked household collection post in the Northern Reception Yard. Household members are off scene; the two crate arrivals complete this task.",
+        "es-ES": "Lleva cada caja de ayuda señalada a su puesto de recogida de hogar correspondiente, también señalado, en el patio receptor del norte. Los miembros de esos hogares quedan fuera de escena; las dos llegadas de cajas completan esta tarea."
       },
       "routePointIds": [
         "north-care-yard",
@@ -1634,8 +1638,8 @@
         "es-ES": "dos copias de trabajo ficticias"
       },
       "rationale": {
-        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380.",
-        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI."
+        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380. The reader is off scene; this task checks two originals at a collection desk, not a reader actor.",
+        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI. El lector queda fuera de escena; la tarea comprueba dos originales en una mesa receptora, no un actor lector."
       },
       "placement": {
         "originHub": "north-reader",
@@ -1650,8 +1654,8 @@
         "ridge-junction"
       ],
       "instruction": {
-        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth.",
-        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido."
+        "en": "Recover the two marked working copies at the Reader's Shelter and place both at the marked collection desk beside the Shared Hearth. The reader is off scene; both copy arrivals complete this task.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y deposita ambas en la mesa receptora señalada junto al fogón compartido. El lector queda fuera de escena; las dos llegadas de copias completan esta tarea."
       },
       "routePointIds": [
         "north-reader",
@@ -1897,17 +1901,17 @@
         "es-ES": "Una mesa que sigue abierta"
       },
       "subject": {
-        "en": "two neighboring households",
-        "es-ES": "dos hogares vecinos"
+        "en": "two household collection posts",
+        "es-ES": "dos puestos de recogida de hogares"
       },
       "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
       "rationale": {
-        "en": "Two separately identified consignments aid consenting fictional households without creed eligibility.",
-        "es-ES": "Dos remesas con identidades distintas ayudan a hogares ficticios voluntarios sin requisitos de credo."
+        "en": "Two separately identified consignments reach separately marked collection posts assigned to fictional consenting households. Household members remain off scene; this task checks the crates at their assigned posts, not recipient presence. No creed eligibility.",
+        "es-ES": "Dos remesas con identidades distintas llegan a puestos de recogida señalados por separado para hogares ficticios voluntarios. Sus miembros quedan fuera de escena; la tarea comprueba las cajas en sus puestos asignados, no la presencia de destinatarios. Sin requisitos de credo."
       },
       "text": {
-        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once.",
-        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
+        "en": "Bring each marked aid crate to its own marked household collection post in the Northern Reception Yard. Household members are off scene; the two crate arrivals complete this task. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada caja de ayuda señalada a su puesto de recogida de hogar correspondiente, también señalado, en el patio receptor del norte. Los miembros de esos hogares quedan fuera de escena; las dos llegadas de cajas completan esta tarea. Ventaja: 100 de alimento, 50 de madera, una vez."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -2247,12 +2251,12 @@
       },
       "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
       "rationale": {
-        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380.",
-        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI."
+        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380. The reader is off scene; this task checks two originals at a collection desk, not a reader actor.",
+        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI. El lector queda fuera de escena; la tarea comprueba dos originales en una mesa receptora, no un actor lector."
       },
       "text": {
-        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint.",
-        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+        "en": "Recover the two marked working copies at the Reader's Shelter and place both at the marked collection desk beside the Shared Hearth. The reader is off scene; both copy arrivals complete this task. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y deposita ambas en la mesa receptora señalada junto al fogón compartido. El lector queda fuera de escena; las dos llegadas de copias completan esta tarea. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
       },
       "mandatory": false,
       "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -3515,8 +3519,8 @@
       "id": "offer-neighbor-provisions",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once.",
-        "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
+        "en": "Bring each marked aid crate to its own marked household collection post in the Northern Reception Yard. Household members are off scene; the two crate arrivals complete this task. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada caja de ayuda señalada a su puesto de recogida de hogar correspondiente, también señalado, en el patio receptor del norte. Los miembros de esos hogares quedan fuera de escena; las dos llegadas de cajas completan esta tarea. Ventaja: 100 de alimento, 50 de madera, una vez."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
@@ -3524,21 +3528,23 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard. Benefit: 100 food, 50 wood, once."
+          "Bring each marked aid crate to its own marked household collection post in the Northern Reception Yard. Household members are off scene; the two crate arrivals complete this task. Benefit: 100 food,",
+          "50 wood, once."
         ],
         "es-ES": [
-          "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte. Ventaja: 100 de alimento, 50 de madera, una vez."
+          "Lleva cada caja de ayuda señalada a su puesto de recogida de hogar correspondiente, también señalado, en el patio receptor del norte. Los miembros de esos hogares quedan fuera de escena; las",
+          "dos llegadas de cajas completan esta tarea. Ventaja: 100 de alimento, 50 de madera, una vez."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 15
+      "voiceDurationSecondsEstimated": 23
     },
     {
       "id": "complete-neighbor-provisions",
       "narrator": "imperial-clerk",
       "text": {
-        "en": "Two deliveries, two households. The spare timber is real enough; the generous heading may wait.",
-        "es-ES": "Dos entregas, dos hogares. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
+        "en": "Two crates, two marked collection posts. The households can collect them later. The spare timber is real enough; the generous heading may wait.",
+        "es-ES": "Dos cajas, dos puestos de recogida señalados. Los hogares podrán recogerlas después. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
@@ -3546,14 +3552,14 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "Two deliveries, two households. The spare timber is real enough; the generous heading may wait."
+          "Two crates, two marked collection posts. The households can collect them later. The spare timber is real enough; the generous heading may wait."
         ],
         "es-ES": [
-          "Dos entregas, dos hogares. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
+          "Dos cajas, dos puestos de recogida señalados. Los hogares podrán recogerlas después. La madera que queda es bastante real; el encabezamiento generoso puede esperar."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 8
+      "voiceDurationSecondsEstimated": 12
     },
     {
       "id": "unavailable-neighbor-provisions",
@@ -3647,8 +3653,8 @@
       "id": "offer-source-comparison",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint.",
-        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+        "en": "Recover the two marked working copies at the Reader's Shelter and place both at the marked collection desk beside the Shared Hearth. The reader is off scene; both copy arrivals complete this task. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y deposita ambas en la mesa receptora señalada junto al fogón compartido. El lector queda fuera de escena; las dos llegadas de copias completan esta tarea. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
       },
       "trigger": "optional objective offered from start",
       "skippable": true,
@@ -3656,22 +3662,23 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth. Benefit: unlock a historical note and an explicit main-goal hint."
+          "Recover the two marked working copies at the Reader's Shelter and place both at the marked collection desk beside the Shared Hearth. The reader is off scene; both copy arrivals complete this",
+          "task. Benefit: unlock a historical note and an explicit main-goal hint."
         ],
         "es-ES": [
-          "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo",
-          "principal."
+          "Recupera las dos copias de trabajo señaladas en el refugio del lector y deposita ambas en la mesa receptora señalada junto al fogón compartido. El lector queda fuera de escena; las dos",
+          "llegadas de copias completan esta tarea. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 16
+      "voiceDurationSecondsEstimated": 24
     },
     {
       "id": "complete-source-comparison",
       "narrator": "imperial-clerk",
       "text": {
-        "en": "Both copies have reached the reader. Two separate sheets deserve two separate entries.",
-        "es-ES": "Ambas copias han llegado al lector. Dos hojas distintas merecen dos anotaciones distintas."
+        "en": "Both working copies are on the collection desk. Two separate sheets deserve two separate entries; the reader need not stand here for me to record their arrival.",
+        "es-ES": "Ambas copias de trabajo están en la mesa receptora. Dos hojas distintas merecen dos anotaciones distintas; no hace falta que el lector esté aquí para que registre su llegada."
       },
       "trigger": "optional predicate and atomic reward completed once",
       "skippable": true,
@@ -3679,14 +3686,14 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "Both copies have reached the reader. Two separate sheets deserve two separate entries."
+          "Both working copies are on the collection desk. Two separate sheets deserve two separate entries; the reader need not stand here for me to record their arrival."
         ],
         "es-ES": [
-          "Ambas copias han llegado al lector. Dos hojas distintas merecen dos anotaciones distintas."
+          "Ambas copias de trabajo están en la mesa receptora. Dos hojas distintas merecen dos anotaciones distintas; no hace falta que el lector esté aquí para que registre su llegada."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 6
+      "voiceDurationSecondsEstimated": 14
     },
     {
       "id": "unavailable-source-comparison",
@@ -4093,5 +4100,35 @@
       "voiceDurationSecondsEstimated": 16
     }
   ],
-  "screenStatus": "45 original EN/es-ES screens with authored UI names and captions from the existing factory; independent editorial/translation review and native presentation pending. Duration is an estimate, no audio generated and no string IDs allocated."
+  "screenStatus": "45 original EN/es-ES screens with authored UI names and captions from the existing factory; independent editorial/translation review and native presentation pending. Duration is an estimate, no audio generated and no string IDs allocated.",
+  "sourceBindings": [
+    {
+      "id": "odyssey-source.imperial-church.34-church-transfer-constantinople",
+      "scope": "authored-plan episode source binding; follows the existing dossier convention, not an allocated global string ID",
+      "citations": [
+        {
+          "id": "socrates-he-v-6-7",
+          "scope": "local authored-plan citation key, not an allocated global string or campaign source-registry ID",
+          "url": "https://www.newadvent.org/fathers/26015.htm",
+          "locator": "Socrates HE V.6–7",
+          "consultationEvidence": {
+            "path": "docs/design/odysseys/imperial-church.json",
+            "pointer": "/episodeSelection/32/historicalSelection"
+          },
+          "qualification": "Existing bounded architect reading only; preserve retrospective confessional viewpoints and November/December disagreement; no new historical approval."
+        },
+        {
+          "id": "marcellinus-chronicon-380",
+          "scope": "local authored-plan citation key, not an allocated global string or campaign source-registry ID",
+          "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+          "locator": "Marcellinus Comes, Chronicon, entry380",
+          "consultationEvidence": {
+            "path": "docs/design/odysseys/imperial-church.json",
+            "pointer": "/episodeSelection/32/historicalSelection/additionalConsultations/2"
+          },
+          "qualification": "Existing bounded architect reading only; preserve retrospective confessional viewpoints and November/December disagreement; no new historical approval."
+        }
+      ]
+    }
+  ]
 }
