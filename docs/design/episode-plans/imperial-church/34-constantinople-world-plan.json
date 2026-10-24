@@ -1033,7 +1033,11 @@
         -4
       ],
       "finite": true,
-      "replacement": "none"
+      "replacement": "none",
+      "name": {
+        "en": "Meal worker",
+        "es-ES": "Trabajador de la comida"
+      }
     },
     {
       "id": "imperial-church.34-church-transfer-constantinople.shelter-worker",
@@ -1044,7 +1048,11 @@
         4
       ],
       "finite": true,
-      "replacement": "none"
+      "replacement": "none",
+      "name": {
+        "en": "Shelter worker",
+        "es-ES": "Trabajador del alojamiento"
+      }
     },
     {
       "id": "imperial-church.34-church-transfer-constantinople.meal-recipient",
@@ -1055,7 +1063,11 @@
         -5
       ],
       "finite": true,
-      "replacement": "none"
+      "replacement": "none",
+      "name": {
+        "en": "Meal recipient",
+        "es-ES": "Destinatario de la comida"
+      }
     },
     {
       "id": "imperial-church.34-church-transfer-constantinople.household-a",
@@ -1066,7 +1078,11 @@
         1
       ],
       "finite": true,
-      "replacement": "none"
+      "replacement": "none",
+      "name": {
+        "en": "First household",
+        "es-ES": "Primer hogar"
+      }
     },
     {
       "id": "imperial-church.34-church-transfer-constantinople.household-b",
@@ -1077,7 +1093,11 @@
         7
       ],
       "finite": true,
-      "replacement": "none"
+      "replacement": "none",
+      "name": {
+        "en": "Second household",
+        "es-ES": "Segundo hogar"
+      }
     }
   ],
   "services": [
@@ -1544,32 +1564,20 @@
         "receivingHub": "north-reception"
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
-        "north-care-approach",
         "north-care-loop",
         "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "north-reception-link"
       ],
       "instruction": {
         "en": "Bring each of the two marked aid crates to its assigned neighboring household at the Northern Reception Yard.",
         "es-ES": "Lleva cada una de las dos cajas de ayuda señaladas al hogar vecino que le corresponde en el patio receptor del norte."
-      }
+      },
+      "routePointIds": [
+        "north-care-yard",
+        "north-store",
+        "north-reader",
+        "north-reception"
+      ]
     },
     {
       "slotId": "voluntary-household-return",
@@ -1601,32 +1609,18 @@
         ]
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
         "north-care-approach",
-        "north-care-loop",
-        "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "western-reception"
       ],
       "instruction": {
         "en": "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard.",
         "es-ES": "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental."
-      }
+      },
+      "routePointIds": [
+        "north-care-yard",
+        "merchant-worksite",
+        "materials-court"
+      ]
     },
     {
       "slotId": "source-comparison",
@@ -1648,32 +1642,26 @@
         "receivingHub": "hearth-worksite"
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
-        "north-care-approach",
-        "north-care-loop",
         "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "north-care-loop",
+        "north-care-approach",
+        "western-trade",
+        "west-supply",
+        "ridge-junction"
       ],
       "instruction": {
         "en": "Recover the two marked working copies at the Reader's Shelter and deliver both to the reader at the Shared Hearth.",
         "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y entrega ambas al lector en el fogón compartido."
-      }
+      },
+      "routePointIds": [
+        "north-reader",
+        "north-store",
+        "north-care-yard",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite"
+      ]
     },
     {
       "slotId": "local-wayfinding",
@@ -1701,27 +1689,8 @@
         ]
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
-        "north-care-approach",
-        "north-care-loop",
-        "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "guide-link",
+        "west-supply"
       ],
       "information": {
         "effect": {
@@ -1737,7 +1706,12 @@
       "instruction": {
         "en": "Escort the marked local guide to the Western Turn.",
         "es-ES": "Escolta al guía local señalado hasta el desvío occidental."
-      }
+      },
+      "routePointIds": [
+        "western-guide",
+        "materials-source",
+        "western-junction"
+      ]
     },
     {
       "slotId": "slope-survey",
@@ -1763,27 +1737,14 @@
         ]
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
         "north-view",
-        "north-care-approach",
-        "north-care-loop",
-        "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "western-reception",
+        "western-trade",
+        "west-supply",
+        "ridge-junction",
+        "ridge-hearth",
+        "southern-host",
+        "southern-view"
       ],
       "information": {
         "effect": {
@@ -1799,7 +1760,18 @@
       "instruction": {
         "en": "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint.",
         "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur."
-      }
+      },
+      "routePointIds": [
+        "north-viewpoint",
+        "materials-court",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite",
+        "starting-court",
+        "host-court",
+        "south-viewpoint"
+      ]
     },
     {
       "slotId": "service-observation",
@@ -1825,27 +1797,12 @@
         ]
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
-        "ridge-hearth",
-        "ridge-junction",
-        "west-supply",
-        "western-trade",
         "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
-        "north-care-approach",
-        "north-care-loop",
-        "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "western-trade",
+        "west-supply",
+        "ridge-junction",
+        "ridge-hearth",
+        "southern-host"
       ],
       "information": {
         "effect": {
@@ -1861,7 +1818,16 @@
       "instruction": {
         "en": "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard.",
         "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur."
-      }
+      },
+      "routePointIds": [
+        "materials-court",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite",
+        "starting-court",
+        "host-court"
+      ]
     },
     {
       "slotId": "damaged-civilian-store",
@@ -1889,32 +1855,26 @@
         ]
       },
       "corridorIds": [
-        "central-court",
-        "east-source",
-        "east-return",
-        "central-reception",
         "ridge-hearth",
         "ridge-junction",
         "west-supply",
         "western-trade",
-        "western-reception",
-        "interior-kit",
-        "kit-source",
-        "kit-to-hearth",
-        "southern-host",
-        "southern-view",
-        "north-view",
         "north-care-approach",
-        "north-care-loop",
-        "north-reader-link",
-        "north-reception-link",
-        "north-return",
-        "guide-link"
+        "north-care-loop"
       ],
       "instruction": {
         "en": "Restore the marked damaged store to full health through its single 50-wood repair action.",
         "es-ES": "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera."
-      }
+      },
+      "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
+        "north-care-yard",
+        "north-store"
+      ]
     }
   ],
   "secondaryObjectives": [
@@ -2069,31 +2029,21 @@
         "originHub": "north-care-yard",
         "receivingHub": "north-reception",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
-          "north-care-approach",
           "north-care-loop",
           "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "north-reception-link"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "north-care-yard",
+          "north-store",
+          "north-reader",
+          "north-reception"
+        ],
+        "centrelineLengthTiles": 117.724,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -2248,31 +2198,19 @@
         "originHub": "north-care-yard",
         "receivingHub": "materials-court",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
           "north-care-approach",
-          "north-care-loop",
-          "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "western-reception"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "north-care-yard",
+          "merchant-worksite",
+          "materials-court"
+        ],
+        "centrelineLengthTiles": 111.602,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -2435,31 +2373,27 @@
         "originHub": "north-reader",
         "receivingHub": "hearth-worksite",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
-          "north-care-approach",
-          "north-care-loop",
           "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "north-care-loop",
+          "north-care-approach",
+          "western-trade",
+          "west-supply",
+          "ridge-junction"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "north-reader",
+          "north-store",
+          "north-care-yard",
+          "merchant-worksite",
+          "materials-source",
+          "western-junction",
+          "hearth-worksite"
+        ],
+        "centrelineLengthTiles": 275.621,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -2597,31 +2531,19 @@
         "originHub": "western-guide",
         "receivingHub": "western-junction",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
-          "north-care-approach",
-          "north-care-loop",
-          "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "guide-link",
+          "west-supply"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "western-guide",
+          "materials-source",
+          "western-junction"
+        ],
+        "centrelineLengthTiles": 142.075,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -2751,31 +2673,31 @@
         "originHub": "starting-court",
         "receivingHub": "north-viewpoint",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
           "north-view",
-          "north-care-approach",
-          "north-care-loop",
-          "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "western-reception",
+          "western-trade",
+          "west-supply",
+          "ridge-junction",
+          "ridge-hearth",
+          "southern-host",
+          "southern-view"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "north-viewpoint",
+          "materials-court",
+          "merchant-worksite",
+          "materials-source",
+          "western-junction",
+          "hearth-worksite",
+          "starting-court",
+          "host-court",
+          "south-viewpoint"
+        ],
+        "centrelineLengthTiles": 387.768,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -2905,31 +2827,27 @@
         "originHub": "starting-court",
         "receivingHub": "host-court",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
-          "ridge-hearth",
-          "ridge-junction",
-          "west-supply",
-          "western-trade",
           "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
-          "north-care-approach",
-          "north-care-loop",
-          "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "western-trade",
+          "west-supply",
+          "ridge-junction",
+          "ridge-hearth",
+          "southern-host"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "materials-court",
+          "merchant-worksite",
+          "materials-source",
+          "western-junction",
+          "hearth-worksite",
+          "starting-court",
+          "host-court"
+        ],
+        "centrelineLengthTiles": 334.575,
+        "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -3074,31 +2992,27 @@
         "originHub": "north-store",
         "receivingHub": "north-store",
         "corridorIds": [
-          "central-court",
-          "east-source",
-          "east-return",
-          "central-reception",
           "ridge-hearth",
           "ridge-junction",
           "west-supply",
           "western-trade",
-          "western-reception",
-          "interior-kit",
-          "kit-source",
-          "kit-to-hearth",
-          "southern-host",
-          "southern-view",
-          "north-view",
           "north-care-approach",
-          "north-care-loop",
-          "north-reader-link",
-          "north-reception-link",
-          "north-return",
-          "guide-link"
+          "north-care-loop"
         ],
         "maxRequiredRoundTrips": 1,
         "spawnOutsideReceivingZone": true,
-        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river",
+        "routePointIds": [
+          "starting-court",
+          "hearth-worksite",
+          "western-junction",
+          "materials-source",
+          "merchant-worksite",
+          "north-care-yard",
+          "north-store"
+        ],
+        "centrelineLengthTiles": 319.151,
+        "interpretation": "route for inspecting the existing store only; accepted atomic repair does not acquire an extra worker-presence or travel prerequisite here"
       },
       "qa": [
         "skip-all-main-still-solvent",
@@ -3202,8 +3116,8 @@
       "id": "main-goal",
       "narrator": "collection-narrator",
       "text": {
-        "en": "Arrange both voluntary services: one meal and shelter for the same two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected result to its own court. Keep the original recipients alive and present at the end.",
-        "es-ES": "Organiza ambos servicios voluntarios: una comida y alojamiento para los mismos dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a su patio correspondiente. Conserva vivos y presentes a los destinatarios originales al final."
+        "en": "Arrange a meal for its original recipient and shelter for the two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected result to its own court. Keep all three original recipients alive and present at their respective courts at the end.",
+        "es-ES": "Organiza una comida para su destinatario original y alojamiento para los dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a su patio correspondiente. Conserva vivos y presentes a los tres destinatarios originales en sus respectivos patios al final."
       },
       "trigger": "main objective list",
       "skippable": true,
@@ -3211,16 +3125,16 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "Arrange both voluntary services: one meal and shelter for the same two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected",
-          "result to its own court. Keep the original recipients alive and present at the end."
+          "Arrange a meal for its original recipient and shelter for the two original households. Choose one method for each service, fund the complete plan, carry out its work and bring each selected",
+          "result to its own court. Keep all three original recipients alive and present at their respective courts at the end."
         ],
         "es-ES": [
-          "Organiza ambos servicios voluntarios: una comida y alojamiento para los mismos dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a",
-          "su patio correspondiente. Conserva vivos y presentes a los destinatarios originales al final."
+          "Organiza una comida para su destinatario original y alojamiento para los dos hogares originales. Elige un método por servicio, financia el plan completo, realiza su trabajo y lleva cada resultado seleccionado a",
+          "su patio correspondiente. Conserva vivos y presentes a los tres destinatarios originales en sus respectivos patios al final."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 22
+      "voiceDurationSecondsEstimated": 24
     },
     {
       "id": "preview-help",
@@ -4067,8 +3981,8 @@
       "id": "main-defeat",
       "narrator": "collection-narrator",
       "text": {
-        "en": "An original required recipient or a committed selected result has been lost. This local plan cannot be completed with a replacement. Load an earlier save or restart; the historical church-possession account does not change.",
-        "es-ES": "Se ha perdido un destinatario original obligatorio o un resultado seleccionado ya comprometido. Este plan local no se puede completar con un reemplazo. Carga una partida anterior o reinicia; el relato histórico de la posesión de iglesias no cambia."
+        "en": "A required original recipient, a selected result after commitment, or an assigned worker before completing its work has been lost. This local plan cannot be completed with replacements. Load an earlier save or restart. A worker lost after completing its work does not undo that result; the historical account is unchanged.",
+        "es-ES": "Se ha perdido un destinatario original obligatorio, un resultado seleccionado después del compromiso o un trabajador asignado antes de completar su trabajo. Este plan local no se puede terminar con reemplazos. Carga una partida anterior o reinicia. Perder a un trabajador después de completar su trabajo no anula ese resultado; el relato histórico no cambia."
       },
       "trigger": "required terminal loss; death checked before simultaneous success",
       "skippable": true,
@@ -4076,16 +3990,16 @@
       "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
       "captionSegments": {
         "en": [
-          "An original required recipient or a committed selected result has been lost. This local plan cannot be completed with a replacement. Load an earlier save or restart; the historical church-possession account does",
-          "not change."
+          "A required original recipient, a selected result after commitment, or an assigned worker before completing its work has been lost. This local plan cannot be completed with replacements. Load an earlier save",
+          "or restart. A worker lost after completing its work does not undo that result; the historical account is unchanged."
         ],
         "es-ES": [
-          "Se ha perdido un destinatario original obligatorio o un resultado seleccionado ya comprometido. Este plan local no se puede completar con un reemplazo. Carga una partida anterior o reinicia; el relato histórico",
-          "de la posesión de iglesias no cambia."
+          "Se ha perdido un destinatario original obligatorio, un resultado seleccionado después del compromiso o un trabajador asignado antes de completar su trabajo. Este plan local no se puede terminar con reemplazos. Carga",
+          "una partida anterior o reinicia. Perder a un trabajador después de completar su trabajo no anula ese resultado; el relato histórico no cambia."
         ]
       },
       "nativeSurface": "pending certified SequenceItems/message adapter",
-      "voiceDurationSecondsEstimated": 18
+      "voiceDurationSecondsEstimated": 26
     },
     {
       "id": "victory-fact",
