@@ -10,6 +10,8 @@ last-transition-id: 387ebba4-9262-460c-ae13-44aca5e09eca
 last-correlation-id: 387ebba4-9262-460c-ae13-44aca5e09eca
 last-transition-from: in-progress
 last-transition-at: 2026-10-24T20:43:46.050Z
+shipped-in:
+  - "56290e10233fa54e133007b9340c99eb259fe366"
 ---
 
 # r00001 — Validar dependencias de autoría por episodio sin confundirlas con cronología
@@ -33,16 +35,18 @@ El propietario pide que MiniMax materialice episodios ya preparados mientras el 
 - global_gate: none
 
 ### S1 — Auditoría de dependencias y pruebas adversas
-- **Status**: review
+- **Status**: done
 - **Files**: `tools/design/odyssey_assignments.validator.py`, `tools/design/test_design.py`
 - **Gate**: e2e
 - acceptance:
   - "Aceptar el grafo vigente en cadena y episodios independientes tras S2 sin cambiar orden de presentación ni identidad de episodios/slices."
   - "Rechazar ciclos, referencias desconocidas/duplicadas, episodios sin S2 como ancestro y promoción que no espere todos los episodios; conservar detección de estados de dossier y slots divergentes."
   - "Pruebas focalizadas significativas y bun run validate; revisión independiente y publicación oficial. No modificar contratos, IDs, gameplay ni estados de las propuestas históricas."
-- review-state: in_review
-- review-implementer: gpt-6
 - shipped-in: `ebac7f36553f`
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 56290e10233f, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 3/3: (1) Inspected audit_authoring_dependencies and audit_assignments at 56290e1: the DAG permits serial, independent, and mixed dependencies; the canonical episodeSele… (2) The four added focused tests cover cycles, unknown/duplicate edges, malformed/missing metadata ancestry, and promotion omitting each episode. Existing assignme… (3) Ran `python3 tools/design/test_design.py` (94/94) and `bun run validate` (exit 0; 142/142 Bun tests, 2069 expectations, docs and campaign validation passed). T… — Independent review of delivery 56290e10233fa54e133007b9340c99eb259fe366. I verified the DAG contract, preservation of canonical episode identity/order and dossier status, all three acceptance criteria, and the declared non-goals. The focused design suite and bun run validate passed independently. This approves r00001/S1 only; no campaign or historical dossier approval is implied.
 
 ## acceptance
 
