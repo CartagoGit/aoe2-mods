@@ -91,3 +91,34 @@ The vol. XVII comparison remains unconfirmed here; the collector’s failed atte
 All 28 first-fitna selections and all 30 household selections are bound to exact current semantic IDs in their collections. The root verifies those references and selected passages, not every underlying source claim, date conversion or modern-site identification. The existing source-consultation crosswalk remains first-caliphs-only: these files are not silently counted there or used to unlock historical MiniMax authoring.
 
 Remaining historical/primary-source comparison, geography, complete objectives, three-difficulty budgets, native capabilities and real AoE2 tests retain their separate gates.
+
+
+## Pagination correction after independent review
+
+GPT-6.1 identified inconsistent page labels in the first-fitna collector’s archived locators. The architect reopened the official Poonawala PDF and checked the relevant page transitions on 24 October. The correction below supersedes the affected page labels for navigation; the original JSON/Markdown and their pinned bytes remain preserved as the collector’s actual declaration. Findings, canonical selections and reading attribution are unchanged. PDF pages are one-based; browser `P` indices are zero-based. Extracted lines sometimes include a following running header.
+
+| Stable scenario ID | Corrected PDF navigation |
+|---|---|
+| `04-disputed-correspondence-mecca` | PDF p.5; lines 152–157 (zero-based P4) |
+| `05-rival-petition-and-witness-records-medina` | PDF p.5; lines 160–170 (P4) |
+| `06-arriving-delegation-and-supply-basra` | PDF p.5; lines 163–172 (P4) |
+| `07-civilian-extraction-under-unrest-basra` | PDF p.5; lines 168–176 (P4) |
+| `02-between-the-camps` | PDF p.5; lines 171–176 (P4) |
+| `09-bounded-distribution-and-receipts-basra` | PDF p.5; lines 177–180 (P4; extracted line 180 includes next-page running header) |
+| `10-camp-and-household-reception-kufa` | PDF p.6; lines 182–190 (P5) |
+| `11-two-way-correspondence-kufa` | PDF p.6; lines 191–201 (P5) |
+| `12-rival-claims-and-dispatch-comparison-damascus` | PDF p.6; lines 191–201 (P5) |
+| `14-ceasefire-withdrawal-and-care-siffin` | PDF pp.6–7; lines 216–225 (P5–P6) |
+| `15-paired-protocol-delivery-siffin` | PDF p.7; lines 238–245 (P6) |
+| `16-witness-and-record-comparison-kufa` | PDF p.7, lines 228–237 (P6); pp.7–8, lines 245–267 (P6–P7) |
+| `17-voluntary-household-relocation-harura` | PDF p.8; lines 262–267 (P7) |
+| `18-separate-delegation-logistics-dumat-al-jandal` | PDF p.8; lines 268–272 (P7) |
+| `19-disputed-correspondence-and-provision-kufa` | PDF p.8; lines 271–275 (P7) |
+| `04-the-canal-road` | PDF p.8; lines 277–283 (P7) |
+| `21-civilian-record-preservation-fustat` | PDF p.9; lines 296–299 (P8) |
+| `22-delegate-reception-and-source-comparison-adhruh` | PDF pp.8–9; lines 284–295 (P7–P8) |
+| `23-bounded-rural-relief-kufa` | PDF p.9; lines 296–299 (P8) |
+| `24-civilian-refuge-and-dispatch-medina` | PDF p.9; lines 296–299 (P8) |
+| `25-care-and-record-preservation-kufa` | PDF p.9; lines 299–303 (P8) |
+
+The remaining first-fitna locators are not corrected by this table. Browser line numbers are a retrieval aid, not permanent print locators. This correction addresses source navigation, without approving each reported event or claiming visual PDF inspection.

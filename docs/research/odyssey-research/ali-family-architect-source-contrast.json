@@ -101,5 +101,140 @@
       "limits": "No authentic letter dialogue, exact chronology, universal loyalty or geographical identification follows. The third-party hosted translation is copyrighted and no source passage or book is copied into production."
     }
   ],
-  "unconfirmedComparison": "The collector’s JSTOR vol.XVII failure remains its own failed attempt. GPT-6 has not read that volume or repeated that access attempt in this contrast."
+  "unconfirmedComparison": "The collector’s JSTOR vol.XVII failure remains its own failed attempt. GPT-6 has not read that volume or repeated that access attempt in this contrast.",
+  "collectionLocatorCorrections": {
+    "author": "gpt-6",
+    "date": "2026-10-24",
+    "trigger": "Independent GPT-6.1 review identified inconsistent pagination in Luna’s archived collection; architect reopened the official PDF and checked the relevant extracted page transitions.",
+    "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+    "scope": "Pagination correction only. PDF pages are one-based; browser P indices are zero-based and extracted lines can include a following running header. Original collection bytes and its reading declaration remain preserved. This does not add a historical approval or attribute a new reading to Luna.",
+    "records": [
+      {
+        "scenarioId": "04-disputed-correspondence-mecca",
+        "orderAtReview": 4,
+        "archivedLocator": "PDF p. 4, lines 152–157; browser excerpt L152–L157@P4",
+        "correctedLocator": "PDF p.5; lines 152–157 (zero-based P4)"
+      },
+      {
+        "scenarioId": "05-rival-petition-and-witness-records-medina",
+        "orderAtReview": 5,
+        "archivedLocator": "PDF p. 4, lines 160–170; browser excerpt L160–L170@P4",
+        "correctedLocator": "PDF p.5; lines 160–170 (P4)"
+      },
+      {
+        "scenarioId": "06-arriving-delegation-and-supply-basra",
+        "orderAtReview": 6,
+        "archivedLocator": "PDF p. 4, lines 163–172; browser excerpt L163–L172@P4",
+        "correctedLocator": "PDF p.5; lines 163–172 (P4)"
+      },
+      {
+        "scenarioId": "07-civilian-extraction-under-unrest-basra",
+        "orderAtReview": 7,
+        "archivedLocator": "PDF p. 4, lines 168–176; browser excerpt L168–L176@P4",
+        "correctedLocator": "PDF p.5; lines 168–176 (P4)"
+      },
+      {
+        "scenarioId": "02-between-the-camps",
+        "orderAtReview": 8,
+        "archivedLocator": "PDF p. 4, lines 171–176; browser excerpt L171–L176@P4",
+        "correctedLocator": "PDF p.5; lines 171–176 (P4)"
+      },
+      {
+        "scenarioId": "09-bounded-distribution-and-receipts-basra",
+        "orderAtReview": 9,
+        "archivedLocator": "PDF p. 4–5, lines 177–180; browser excerpt L177–L180@P4",
+        "correctedLocator": "PDF p.5; lines 177–180 (P4; extracted line 180 includes next-page running header)"
+      },
+      {
+        "scenarioId": "10-camp-and-household-reception-kufa",
+        "orderAtReview": 10,
+        "archivedLocator": "PDF p. 5, lines 182–190; browser excerpt L182–L190@P5",
+        "correctedLocator": "PDF p.6; lines 182–190 (P5)"
+      },
+      {
+        "scenarioId": "11-two-way-correspondence-kufa",
+        "orderAtReview": 11,
+        "archivedLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "correctedLocator": "PDF p.6; lines 191–201 (P5)"
+      },
+      {
+        "scenarioId": "12-rival-claims-and-dispatch-comparison-damascus",
+        "orderAtReview": 12,
+        "archivedLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "correctedLocator": "PDF p.6; lines 191–201 (P5)"
+      },
+      {
+        "scenarioId": "14-ceasefire-withdrawal-and-care-siffin",
+        "orderAtReview": 14,
+        "archivedLocator": "PDF p. 6, lines 216–225; browser excerpt L216–L225@P5",
+        "correctedLocator": "PDF pp.6–7; lines 216–225 (P5–P6)"
+      },
+      {
+        "scenarioId": "15-paired-protocol-delivery-siffin",
+        "orderAtReview": 15,
+        "archivedLocator": "PDF p. 6, lines 238–245; browser excerpt L238–L245@P6",
+        "correctedLocator": "PDF p.7; lines 238–245 (P6)"
+      },
+      {
+        "scenarioId": "16-witness-and-record-comparison-kufa",
+        "orderAtReview": 16,
+        "archivedLocator": "PDF p. 6, lines 228–237, and PDF p. 7, lines 245–267; browser excerpts L228–L237@P6 and L245–L267@P6",
+        "correctedLocator": "PDF p.7, lines 228–237 (P6); pp.7–8, lines 245–267 (P6–P7)"
+      },
+      {
+        "scenarioId": "17-voluntary-household-relocation-harura",
+        "orderAtReview": 17,
+        "archivedLocator": "PDF p. 7, lines 262–267; browser excerpt L262–L267@P6",
+        "correctedLocator": "PDF p.8; lines 262–267 (P7)"
+      },
+      {
+        "scenarioId": "18-separate-delegation-logistics-dumat-al-jandal",
+        "orderAtReview": 18,
+        "archivedLocator": "PDF p. 7, lines 268–272; browser excerpt L268–L272@P6",
+        "correctedLocator": "PDF p.8; lines 268–272 (P7)"
+      },
+      {
+        "scenarioId": "19-disputed-correspondence-and-provision-kufa",
+        "orderAtReview": 19,
+        "archivedLocator": "PDF p. 7, lines 271–275; browser excerpt L271–L275@P6",
+        "correctedLocator": "PDF p.8; lines 271–275 (P7)"
+      },
+      {
+        "scenarioId": "04-the-canal-road",
+        "orderAtReview": 20,
+        "archivedLocator": "PDF p. 7, lines 277–283; browser excerpt L277–L283@P6",
+        "correctedLocator": "PDF p.8; lines 277–283 (P7)"
+      },
+      {
+        "scenarioId": "21-civilian-record-preservation-fustat",
+        "orderAtReview": 21,
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "correctedLocator": "PDF p.9; lines 296–299 (P8)"
+      },
+      {
+        "scenarioId": "22-delegate-reception-and-source-comparison-adhruh",
+        "orderAtReview": 22,
+        "archivedLocator": "PDF p. 8, lines 284–295; browser excerpt L284–L295@P7",
+        "correctedLocator": "PDF pp.8–9; lines 284–295 (P7–P8)"
+      },
+      {
+        "scenarioId": "23-bounded-rural-relief-kufa",
+        "orderAtReview": 23,
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "correctedLocator": "PDF p.9; lines 296–299 (P8)"
+      },
+      {
+        "scenarioId": "24-civilian-refuge-and-dispatch-medina",
+        "orderAtReview": 24,
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "correctedLocator": "PDF p.9; lines 296–299 (P8)"
+      },
+      {
+        "scenarioId": "25-care-and-record-preservation-kufa",
+        "orderAtReview": 25,
+        "archivedLocator": "PDF p. 8, lines 299–303; browser excerpt L299–L303@P7",
+        "correctedLocator": "PDF p.9; lines 299–303 (P8)"
+      }
+    ]
+  }
 }
