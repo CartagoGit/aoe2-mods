@@ -1,0 +1,197 @@
+{
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "scope": "Fresh bounded architect reading of three public primary institutional webpages; no chosen battle coordinates or new map profile; no independent historical approval.",
+  "consultations": [
+    {
+      "url": "https://saudipedia.com/en/the-site-of-the-battle-of-badr",
+      "publishedDate": "2022-12-27",
+      "actuallyRead": "Complete article body/landmark sections and date box; lines12–30,48–59.",
+      "supports": "Modern Badr regional context, attributed near/far-ridge traditions and relative distances from water; not a measured early-seventh-century battlefield plan.",
+      "limitations": "Page says623; preserve as a source anomaly, do not overwrite the canon date from this page. No exact coordinates or image redistribution licence. The article cites Quran8:42, but that is not a fresh reading of Quran/Arabic here."
+    },
+    {
+      "url": "https://momah.gov.sa/en/branches/badr-governorate-municipality",
+      "publishedUpdate": "2026-04-22 14:04 in record; page footer separately2026-10-14",
+      "actuallyRead": "Administrative record fields87–130 and public site/rights header/footer.",
+      "publishedGeometry": "POINT (38.793525 23.780115)",
+      "geometryRole": "Modern municipality administrative point only, WKT longitude latitude. It does not locate wells, camps or the battlefield.",
+      "limitations": "No battlefield coordinates inferred and no general reuse licence verified."
+    },
+    {
+      "url": "https://saudipedia.com/en/mount-uhud",
+      "publishedDate": "2021-02-09",
+      "actuallyRead": "Body11–35, especially geographical description28–33 and modern boundaries; traditions kept attributed.",
+      "supports": "Range north of Medina with multiple peaks/valleys, broad dimensions and published maximum1077m; these are modern descriptive controls.",
+      "limitations": "No coordinate or DEM. Rainwater retention and current roads/lighting do not certify seventh-century permanent water or paths. No sacred reported speech adopted as an authentic narrator line; no downloadable asset licensed."
+    },
+    {
+      "url": "https://umrah.nusuk.sa/MakkahAndMadinah",
+      "actuallyRead": "Selected site entries: Hudaybiyya52–56, Bayah/Mina59–62, Badr190–194 and Uhud196–200. Followed their four visitor-location hyperlinks; did not inspect Google Maps imagery.",
+      "supports": "Current visitor markers distinguish four localities; Mina is outside central Makkah and is not Jordanian Aqaba.",
+      "limitations": "Markers are modern visitor points, not surveyed early-Islamic camps/wells. Hudaybiyya is labelled627here versus628in the canonical academic source. Later mosque fabric is not an early seventh-century structure. Confessional claims and reported speech are not agnostic-narrator facts. No photographs downloaded or licensed."
+    },
+    {
+      "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "author": "Muhammed Hamidullah; updated by DIA",
+      "publication": "TDV Islam Ansiklopedisi18(1998),297–299; current web text",
+      "actuallyRead": "Bounded geography/date paragraphs98–101, author/publication fields and bibliography references to Hawting/Gorke183–190; reuse restriction217–218. Not a fresh reading of every treaty narrative paragraph or its cited original chronicles.",
+      "supports": "West of Makkah on old Jeddah road; article dates traditional treatyMarch628/6AH and treats later settlement separately.",
+      "limitations": "Approximate distance is not an archaeological coordinate. Do not import modern settlement or mosque into628. Confessional political/group judgements are not objective narration. No complete article/figures copied; cite brief paraphrases only."
+    }
+  ],
+  "proposal": "d00002",
+  "slice": "S7",
+  "classification": "bounded architect source contrast and candidate regional frames; not promoted geography profiles or historical/native approval",
+  "canonicalInput": {
+    "path": "docs/design/odysseys/first-caliphs.json",
+    "sha256": "2b86695a649e539bced604a6bd505683fb66b77678a154f0a525bf0a757351c0",
+    "changed": false
+  },
+  "publishedModernMarkers": [
+    {
+      "geographyId": "badr",
+      "sourceUrl": "https://momah.gov.sa/en/branches/badr-governorate-municipality",
+      "asPublished": "POINT (38.793525 23.780115)",
+      "sourceCoordinateOrder": "WKT longitude latitude",
+      "lonLat": [
+        38.793525,
+        23.780115
+      ],
+      "featureRole": "municipal administrative point; not battlefield"
+    },
+    {
+      "geographyId": "badr",
+      "sourceUrl": "https://umrah.nusuk.sa/MakkahAndMadinah",
+      "sourceLinkLabel": "Badr — Go To Location",
+      "targetUrl": "https://www.google.com/maps/search/23.7754167,%2038.7934167",
+      "sourceCoordinateOrder": "URL latitude longitude",
+      "lonLat": [
+        38.7934167,
+        23.7754167
+      ],
+      "featureRole": "modern visitor marker; not certified camp or well"
+    },
+    {
+      "geographyId": "uhud",
+      "sourceUrl": "https://umrah.nusuk.sa/MakkahAndMadinah",
+      "sourceLinkLabel": "Sayyid al-Shuhada in Uhud — Go To Location",
+      "targetUrl": "https://www.google.com/maps/search/24.5074773,%2039.6122760",
+      "sourceCoordinateOrder": "URL latitude longitude",
+      "lonLat": [
+        39.612276,
+        24.5074773
+      ],
+      "featureRole": "modern memorial/visitor marker; not whole mountain range or battlefield outline"
+    },
+    {
+      "geographyId": "hudaybiyya",
+      "sourceUrl": "https://umrah.nusuk.sa/MakkahAndMadinah",
+      "sourceLinkLabel": "Al-Hudaybiya Site — Go To Location",
+      "targetUrl": "https://www.google.com/maps/search/21.4386278,%2039.6281972",
+      "sourceCoordinateOrder": "URL latitude longitude",
+      "lonLat": [
+        39.6281972,
+        21.4386278
+      ],
+      "featureRole": "modern visitor marker; no identified ancient tree, well or treaty camp parcel"
+    },
+    {
+      "geographyId": "mina-aqaba",
+      "sourceUrl": "https://umrah.nusuk.sa/MakkahAndMadinah",
+      "sourceLinkLabel": "The Bayah Mosque in Mina — Go To Location",
+      "targetUrl": "https://www.google.com/maps/search/21.4247500,%2039.8676111",
+      "sourceCoordinateOrder": "URL latitude longitude",
+      "lonLat": [
+        39.8676111,
+        21.42475
+      ],
+      "featureRole": "later mosque visitor marker; not a621/622building footprint"
+    }
+  ],
+  "candidateRegionalFrames": [
+    {
+      "geographyId": "badr",
+      "bbox": [
+        38.74,
+        23.73,
+        38.85,
+        23.83
+      ],
+      "order": "west south east north",
+      "selectedBy": "gpt-6",
+      "classification": "architect-selected exploratory bounds around published modern controls, not published historical bounds",
+      "sizeTiles": 400,
+      "requires": [
+        "modern DSM sampling over full cosine-padded square including outer cells",
+        "archaeological/historical corridor and water contrast",
+        "independent geometry review",
+        "native footprints/navigation and difficulty calibration before gameplay approval"
+      ]
+    },
+    {
+      "geographyId": "uhud",
+      "bbox": [
+        39.55,
+        24.49,
+        39.69,
+        24.57
+      ],
+      "order": "west south east north",
+      "selectedBy": "gpt-6",
+      "classification": "architect-selected exploratory bounds around published modern controls, not published historical bounds",
+      "sizeTiles": 400,
+      "requires": [
+        "modern DSM sampling over full cosine-padded square including outer cells",
+        "archaeological/historical corridor and water contrast",
+        "independent geometry review",
+        "native footprints/navigation and difficulty calibration before gameplay approval"
+      ]
+    },
+    {
+      "geographyId": "hudaybiyya",
+      "bbox": [
+        39.58,
+        21.39,
+        39.68,
+        21.48
+      ],
+      "order": "west south east north",
+      "selectedBy": "gpt-6",
+      "classification": "architect-selected exploratory bounds around published modern controls, not published historical bounds",
+      "sizeTiles": 400,
+      "requires": [
+        "modern DSM sampling over full cosine-padded square including outer cells",
+        "archaeological/historical corridor and water contrast",
+        "independent geometry review",
+        "native footprints/navigation and difficulty calibration before gameplay approval"
+      ]
+    },
+    {
+      "geographyId": "mina-aqaba",
+      "bbox": [
+        39.84,
+        21.4,
+        39.9,
+        21.45
+      ],
+      "order": "west south east north",
+      "selectedBy": "gpt-6",
+      "classification": "architect-selected exploratory bounds around published modern controls, not published historical bounds",
+      "sizeTiles": 400,
+      "requires": [
+        "modern DSM sampling over full cosine-padded square including outer cells",
+        "archaeological/historical corridor and water contrast",
+        "independent geometry review",
+        "native footprints/navigation and difficulty calibration before gameplay approval"
+      ]
+    }
+  ],
+  "missingProfileCountPolicy": "These4candidate frames are not inserted into the profile registry; the22missing canonical geography IDs remain unresolved until reviewed promotion.",
+  "historicalRestrictions": [
+    "No ancient building, camp, well or road is pinned by a current visitor marker.",
+    "No Quran/hadith quote is certified by a tourism page; narrator knowledge and attribution remain separately authored.",
+    "No revealed cause or collective religious judgement is an objective gameplay fact.",
+    "No modern DSM is bare earth or an early-Islamic elevation model. No vegetation, water or passability inferred from elevation alone."
+  ]
+}
