@@ -467,7 +467,7 @@ Island expeditions and distant imperial change lead to an unresolved Medinan cri
 
 Pressure and recovery: Naval withdrawal is acute; household/records aftermath provides a sober change of perspective.
 
-Required distinction: Cyprus 649 belongs here despite the current 651 heading; fleets, landing sites and 656 private motives remain unverified.
+Required distinction: Cyprus 649 belongs here despite the former 651 heading; fleets, landing sites and 656 private motives remain unverified.
 
 ## The Shattered Oath
 
