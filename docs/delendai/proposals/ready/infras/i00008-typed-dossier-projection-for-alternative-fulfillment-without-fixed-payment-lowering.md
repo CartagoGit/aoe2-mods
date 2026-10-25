@@ -67,11 +67,12 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 ### S3 — Design pipeline integration and handoff
 - **Status**: pending
 - **DependsOn**: [S2]
-- **Files**: `docs/architecture/overview.md`, `docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md`, `docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md`, `docs/qa/fulfillment-dossier-projection/independent-review.md`
+- **Files**: `docs/architecture/overview.md`, `docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md`, `docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md`, `docs/qa/fulfillment-dossier-projection/independent-review.md`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/test_civic_difficulty_audit.py`, `tests/unit/fulfillment-dossier.test.ts`, `docs/design/civic-playability-acceptance.md`, `docs/handoffs/LLM-WORK-ALLOCATION.md`, `docs/production/plan.md`, `README.md`
 - **Gate**: e2e
 - acceptance:
   - "Document concrete commands, source authority, version dispatch and failure behavior without historical dossier-count changes."
   - "Keep full historical dossier in d00002/S3 and native/UI/engine evidence in i00007/S3, i00003 and s00001; no historical authoring unlocked by infrastructure alone."
+  - "Dispatch the global civic audit on the explicit v3 designProfile using authored accounts, selection views and enemyRoster; reject malformed or unknown data, preserve exact legacy report data and all historical source/artifact counts, and prove compatibility through the genuine artificial composed fixture."
 - review-state: changes_requested
 - review-implementer: gpt-6-luna
 - review-reviewer: gpt-6
@@ -86,3 +87,7 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - Run focused tests and bun run validate, then independent review and official publication. No native adapter, shared schema, historical content, ID or string-lock changes.
 - Document concrete commands, source authority, version dispatch and failure behavior without historical dossier-count changes.
 - Keep full historical dossier in d00002/S3 and native/UI/engine evidence in i00007/S3, i00003 and s00001; no historical authoring unlocked by infrastructure alone.
+
+## S3 bounded integration amendment — 25 October 2026
+
+Root reproduced the remaining global civic-audit failure after successful temporary v3 composition: KeyError(accessibleWithoutOptionalRewards). The [closed packet](../../../../handoffs/FULFILLMENT-DOSSIER-S3-PACKET.md) defines the explicit reporting branch, legacy invariance and exact handoff work. Files add only that internal auditor, its existing regressions and status documentation. No public/runtime contract, selected episode, ID range or historical content changes. The global transition accidentally queued S3 for review alongside S2; the independent request-changes action records its undelivered state. This amendment does not alter the accepted S1/S2 verdicts.
