@@ -34,12 +34,14 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - global_gate: none
 
 ### S1 — Architect decision and projection acceptance contract
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/architecture/fulfillment-dossier-projection.md`, `docs/qa/fulfillment-dossier-projection/acceptance-matrix.json`
 - **Gate**: e2e
 - acceptance:
   - "Define a single authoritative v3 profile with derived dossier views, exact source-to-zone mapping, shared objective versus fulfillment completion, financial proofs and immutable legacy boundary."
   - "Close responsibilities, rejection cases and mechanical implementation instructions; independent review before S2."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Reusable opt-in projection, validation and rendering
 - **Status**: pending
