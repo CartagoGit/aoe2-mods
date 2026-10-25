@@ -757,12 +757,13 @@
       "scope": "design factory only; existing v2 reference worldContract already represents an arbitrary explicit survivor entity set",
       "observed": "world_and_objectives materializes each authored survivor row using exactly one group key. Four two-person origin groups cannot be pooled into one six-of-eight survivor set through that source path. Omitting the pool also omits advertised impossible-threshold defeat; four separate per-court minima impose a different rule.",
       "requiredResult": "Keep four origin courts and one union of exactly eight originals with minimum6, plus original bearer losses. Project an explicitly authored validated entity set without changing public schema or IDs.",
-      "status": "infrastructure authoring requirement recorded; not implemented or an instruction to MiniMax to invent an alias or weaken loss rules",
+      "status": "registered i00010/S1 decision and closed mechanical packet; implementation S2 pending and serialized after i00009/S2; no working new selector claimed",
       "evidence": [
         "tools/design/episode_dossier.factory.py::world_and_objectives survivorGroups comprehension",
         "packages/schemas/scenario-capability.schema.ts::survivorGroupSchema",
         "packages/gameplay-state/capability-predicates.validator.ts survivorGroups loss check"
-      ]
+      ],
+      "proposal": "i00010"
     }
   },
   "continuity": {
