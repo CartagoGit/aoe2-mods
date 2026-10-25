@@ -15,6 +15,55 @@ from test_civic_difficulty_audit import CivicDifficultyAuditTests
 from test_research_crosswalk import ResearchCrosswalkTests
 
 
+class FulfillmentBridgeAcceptanceTests(unittest.TestCase):
+    def test_bridge_fails_closed_when_bun_or_json_response_is_unavailable(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/fulfillment-dossier.helper.py"))
+        with patch.object(helper["shutil"], "which", return_value=None):
+            with self.assertRaisesRegex(RuntimeError, "Bun is required"):
+                helper["project_batch"]([{"episodeId": "fixture.episode"}])
+
+        completed = type("Completed", (), {"returncode": 0, "stdout": "not-json", "stderr": ""})()
+        with patch.object(helper["shutil"], "which", return_value="/fixture/bun"), \
+             patch.object(helper["subprocess"], "run", return_value=completed):
+            with self.assertRaisesRegex(RuntimeError, "malformed JSON"):
+                helper["project_batch"]([{"episodeId": "fixture.episode"}])
+
+    def test_v3_auditor_dispatches_before_legacy_and_detects_derived_view_drift(self):
+        validator = runpy.run_path(str(ROOT / "tools/design/episode_dossier.validator.py"))
+        self.assertTrue(validator["audit_dossier"]({"id": "fixture", "designProfile": "future-profile"})[0]
+                        .endswith("unsupported designProfile 'future-profile'"))
+        episode = {
+            "id": "fixture.episode",
+            "designProfile": "alternative-fulfillment-v3",
+            "referenceCapabilityProfile": {
+                "schemaVersion": 3,
+                "worldContract": {"entities": []},
+                "objectivePlan": [],
+                "stateMachine": {},
+                "secondaryObjectives": [],
+                "secondaryBudget": {},
+                "fulfillmentPlan": {"services": []},
+            },
+            "worldContract": {"entities": [{"id": "drift"}]},
+            "geographyId": "fixture.region",
+            "mapPlan": {
+                "terrainProfile": "fixture.region",
+                "hubs": [{"id": "fixture.hub", "centre": [100, 100]}],
+                "points": [{"id": "fixture.point", "tile": [120, 100]}],
+            },
+            "mapBindings": {
+                "hubs": [{"id": "fixture.hub", "centre": [100, 100]}],
+                "points": [{"pointId": "fixture.point", "tile": [120, 100]}],
+            },
+        }
+        errors = validator["audit_dossier"](episode)
+        self.assertTrue(any("derived worldContract differs" in error for error in errors))
+        self.assertFalse(any("historical map" in error for error in errors))
+        episode["mapBindings"]["points"][0]["tile"] = [121, 100]
+        errors = validator["audit_dossier"](episode)
+        self.assertTrue(any("projected point-zone bindings differ" in error for error in errors))
+
+
 class DesignAcceptanceTests(unittest.TestCase):
     def test_main_counters_reject_empty_negative_fractional_and_boolean_thresholds(self):
         examples = {}

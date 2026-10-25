@@ -12,6 +12,10 @@ audit_entry = continuity["audit_entry"]
 
 
 def audit_dossier(episode, campaign=None, baseline=None):
+    if "designProfile" in episode:
+        if episode.get("designProfile") != "alternative-fulfillment-v3":
+            return [f"{episode.get('id', 'unknown-episode')}: unsupported designProfile {episode.get('designProfile')!r}"]
+        return audit_fulfillment_dossier(episode)
     failures = audit_objective_numbers(episode)
     if failures:
         return failures
@@ -615,4 +619,103 @@ def audit_dossier(episode, campaign=None, baseline=None):
                     False, f"{label}/{side['id']}: undeclared enemy reserve information"
                 )
     check_optional_objectives(episode, check, label)
+    return failures
+
+
+def audit_fulfillment_dossier(episode):
+    """Audit composed v3 documentary views without treating them as runtime proof."""
+    failures = []
+    label = episode.get("id", "unknown-episode")
+
+    def check(condition, message):
+        if not condition:
+            failures.append(f"{label}: {message}")
+
+    profile = episode.get("referenceCapabilityProfile")
+    check(isinstance(profile, dict) and profile.get("schemaVersion") == 3,
+          "missing explicit v3 reference profile")
+    if not isinstance(profile, dict):
+        return failures
+    for field in ("worldContract", "objectivePlan", "stateMachine", "secondaryObjectives", "secondaryBudget"):
+        check(episode.get(field) == profile.get(field),
+              f"derived {field} differs from referenceCapabilityProfile")
+    check(episode.get("difficulty") == episode.get("selectionAnalysisByDifficulty"),
+          "difficulty must be an exact view of selectionAnalysisByDifficulty")
+    check(set(episode.get("selectionAnalysisByDifficulty", {})) == {"easy", "standard", "hard"},
+          "selection analysis must cover exactly easy/standard/hard")
+    check(set(episode.get("accountsByDifficulty", {})) == {"easy", "standard", "hard"},
+          "authored accounts must cover exactly easy/standard/hard")
+    qa = episode.get("qa") if isinstance(episode.get("qa"), dict) else {}
+    check(qa.get("gameVerified") is False
+          and qa.get("nativeStatus") == "pending",
+          "v3 dossier cannot claim native or game verification")
+    check(not any("receiptText" in row or "personaReaction" in row
+                  for row in episode.get("objectivePlan", [])),
+          "shared v3 objectives cannot acquire legacy receipt narration")
+    check(not any(key in episode.get("difficulty", {}).get(level, {})
+                  for key in ("gatherableBank", "mandatoryDeliveries", "enemyTotalCap", "roughDurationMinutes")
+                  for level in ("easy", "standard", "hard")),
+          "difficulty view contains legacy or unmeasured fields")
+    map_plan = episode.get("mapPlan") if isinstance(episode.get("mapPlan"), dict) else {}
+    map_bindings = episode.get("mapBindings") if isinstance(episode.get("mapBindings"), dict) else {}
+    check(map_plan.get("terrainProfile") == episode.get("geographyId"),
+          "mapPlan terrainProfile differs from selected geographyId")
+    authored_hubs = map_plan.get("hubs", [])
+    projected_hubs = map_bindings.get("hubs", [])
+    if isinstance(authored_hubs, list) and isinstance(projected_hubs, list):
+        check({row.get("id"): row.get("centre") for row in authored_hubs if isinstance(row, dict)}
+              == {row.get("id"): row.get("centre") for row in projected_hubs if isinstance(row, dict)}
+              and len([row for row in authored_hubs if isinstance(row, dict)]) == len(authored_hubs)
+              and len([row for row in projected_hubs if isinstance(row, dict)]) == len(projected_hubs),
+              "projected map hubs differ from authored mapPlan IDs/centres")
+    authored_points = map_plan.get("points", [])
+    projected_points = map_bindings.get("points", [])
+    if isinstance(authored_points, list) and isinstance(projected_points, list):
+        point_tiles = {row.get("id"): row.get("tile") for row in authored_points if isinstance(row, dict)}
+        point_rows_valid = len([row for row in authored_points if isinstance(row, dict)]) == len(authored_points)
+        check(point_rows_valid and len(point_tiles) == len(authored_points)
+              and all(isinstance(row, dict) and row.get("pointId") in point_tiles
+                      and row.get("tile") == point_tiles.get(row.get("pointId"))
+                      for row in projected_points),
+              "projected point-zone bindings differ from authored mapPlan point IDs/tiles")
+    profile_services = profile.get("fulfillmentPlan", {}).get("services", [])
+    service_rows = episode.get("fulfillmentServices", [])
+    check([row.get("serviceId") for row in service_rows]
+          == [row.get("id") for row in profile_services],
+          "fulfillment services do not preserve authored order and identity")
+    for source, projected in zip(profile_services, service_rows):
+        source_recipes = [row.get("id") for row in source.get("recipes", [])]
+        projected_recipes = [row.get("recipeId") for row in projected.get("recipes", [])]
+        check(source_recipes == projected_recipes,
+              f"service {source.get('id')} recipes differ from the authored plan")
+    screens = episode.get("screens", [])
+    screen_ids = [row.get("id") for row in screens if isinstance(row, dict)]
+    check(len(screen_ids) == len(screens) and len(set(screen_ids)) == len(screen_ids),
+          "screen identities must be unique")
+    roles = episode.get("screenRoles", {})
+    check(set(roles) == {"title", "factualIntro", "handover", "personalIntro", "factualOutro", "personalOutro", "defeat", "continuation"}
+          and set(roles.values()) <= set(screen_ids)
+          and len(set(roles.values())) == len(roles), "screen role bindings are incomplete, duplicate or unresolved")
+    check([row.get("id") for row in screens[:4]] == [roles.get(key) for key in ("title", "factualIntro", "handover", "personalIntro")],
+          "first four screens do not match the authored opening roles")
+    screen_map = {row.get("id"): row for row in screens if isinstance(row, dict)}
+    if set(roles) == {"title", "factualIntro", "handover", "personalIntro", "factualOutro", "personalOutro", "defeat", "continuation"}:
+        if all(screen_id in screen_map for screen_id in roles.values()):
+            check(screen_map[roles["factualIntro"]].get("text") == episode.get("event")
+                  and screen_map[roles["factualOutro"]].get("text") == episode.get("historicalOutcome"),
+                  "factual screen text differs from the episode frame")
+            check(all(screen_map[roles[key]].get("narrator") == "collection-narrator"
+                      for key in ("factualIntro", "factualOutro", "handover")),
+                  "factual/hand-over narrator binding drift")
+            selected_narrator = episode.get("knowledgeBasis", {}).get("speaker")
+            check(all(screen_map[roles[key]].get("narrator") == selected_narrator
+                      for key in ("personalIntro", "personalOutro")),
+                  "personal narrator binding drift")
+    expected_entities = {row.get("id") for row in profile.get("worldContract", {}).get("entities", [])}
+    policies = episode.get("historicalMaterialPolicyByEntity", {})
+    check(set(policies) == expected_entities and all(isinstance(v, str) and v.strip() for v in policies.values()),
+          "documentary entity policies must exactly cover main-world identities")
+    continuation = episode.get("continuation") if isinstance(episode.get("continuation"), dict) else {}
+    check(continuation.get("campaignComplete") is False,
+          "intermediate continuation cannot claim campaign completion")
     return failures
