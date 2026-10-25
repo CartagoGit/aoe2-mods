@@ -1,0 +1,358 @@
+{
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "proposal": "d00002",
+  "slice": "S7",
+  "classification": "four lossless modern DSM research crops and scientific previews; canonical profiles unchanged",
+  "sourceDownloads": [
+    {
+      "tile": "Copernicus_DSM_COG_10_N23_00_E038_00_DEM",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E038_00_DEM/Copernicus_DSM_COG_10_N23_00_E038_00_DEM.tif",
+      "path": "/tmp/hijaz-dsm-source-tiles/Copernicus_DSM_COG_10_N23_00_E038_00_DEM.tif",
+      "bytes": 21006686,
+      "sha256": "b993b5222df3e870dd47cac9da8bca957ea5744dcb9496b4d93f90a1bfbb3796",
+      "headers": {
+        "ETag": "\"08aebce2ca46ea192bea32a7b77eb407\"",
+        "Last-Modified": "Mon, 09 May 2022 14:09:44 GMT",
+        "Content-Length": "21006686"
+      }
+    },
+    {
+      "tile": "Copernicus_DSM_COG_10_N24_00_E039_00_DEM",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N24_00_E039_00_DEM/Copernicus_DSM_COG_10_N24_00_E039_00_DEM.tif",
+      "path": "/tmp/hijaz-dsm-source-tiles/Copernicus_DSM_COG_10_N24_00_E039_00_DEM.tif",
+      "bytes": 41944053,
+      "sha256": "096c7f5bdbcc0697b85fb67abf60e675e51b06b57ed55d4bd3fbcb56c7eb75ca",
+      "headers": {
+        "ETag": "\"7d27494cc3186b33fbb8c6022f74ecb9\"",
+        "Last-Modified": "Mon, 09 May 2022 14:10:20 GMT",
+        "Content-Length": "41944053"
+      }
+    },
+    {
+      "tile": "Copernicus_DSM_COG_10_N21_00_E039_00_DEM",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N21_00_E039_00_DEM/Copernicus_DSM_COG_10_N21_00_E039_00_DEM.tif",
+      "path": "/tmp/hijaz-dsm-source-tiles/Copernicus_DSM_COG_10_N21_00_E039_00_DEM.tif",
+      "bytes": 42186525,
+      "sha256": "67cadfa6e9133bb27d8cf4ddc3cea7fefa8969579987aaa73d09baccb2092beb",
+      "headers": {
+        "ETag": "\"f291f5e126cf95e057b2047d7a36554a\"",
+        "Last-Modified": "Mon, 09 May 2022 14:08:39 GMT",
+        "Content-Length": "42186525"
+      }
+    }
+  ],
+  "awsMirrorReadmeUrl": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+  "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+  "software": {
+    "rasterio": "1.4.4",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  },
+  "crops": [
+    {
+      "geographyId": "badr",
+      "status": "exploratory modern DSM reference; no profile promotion or historical/native approval",
+      "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E038_00_DEM/Copernicus_DSM_COG_10_N23_00_E038_00_DEM.tif",
+      "sourceSha256": "b993b5222df3e870dd47cac9da8bca957ea5744dcb9496b4d93f90a1bfbb3796",
+      "sourceBytes": 21006686,
+      "sourceHttpHeaders": {
+        "ETag": "\"08aebce2ca46ea192bea32a7b77eb407\"",
+        "Last-Modified": "Mon, 09 May 2022 14:09:44 GMT",
+        "Content-Length": "21006686"
+      },
+      "requestedBBox": [
+        38.74,
+        23.73,
+        38.85,
+        23.83
+      ],
+      "requestedBBoxOrder": "west south east north",
+      "paddedMapOuterCellBounds": [
+        38.73324561403509,
+        23.723488532009256,
+        38.85675438596491,
+        23.836511467990746
+      ],
+      "cropPixelWindow": {
+        "columnOffset": 2639,
+        "rowOffset": 588,
+        "width": 447,
+        "height": 409
+      },
+      "cropDimensions": [
+        447,
+        409
+      ],
+      "cropTransform": [
+        0.0002777777777777778,
+        0.0,
+        38.73291666666667,
+        0.0,
+        -0.0002777777777777778,
+        23.836805555555554
+      ],
+      "cropSampleCenterBounds": [
+        38.73305555555556,
+        23.723333333333333,
+        38.856944444444444,
+        23.836666666666666
+      ],
+      "cropOuterCellBounds": [
+        38.73291666666667,
+        23.72319444444444,
+        38.857083333333335,
+        23.836805555555554
+      ],
+      "cropPath": "docs/research/odyssey-research/geography/badr-modern-dsm-regional-crop.tif",
+      "cropBytes": 523430,
+      "cropSha256": "f8461ce811192da1cc1bba60c0392c436c6418bcff1829d7ebd7e2cd765831b6",
+      "horizontalCrs": "EPSG:4326",
+      "rasterInterpretation": "Point",
+      "nodata": null,
+      "dtype": "float32",
+      "verticalReference": "EGM2008/metres attributed to product documentation and existing project licence/provenance notice; no vertical datum tag is asserted",
+      "rangeMetres": [
+        69.42729187011719,
+        576.3088989257812
+      ],
+      "sampleCount": 182823,
+      "finiteSamples": 182823,
+      "extraction": "integer-aligned crop; lossless DEFLATE, no interpolation, warp, fill, elevation edit or terrain conversion",
+      "verification": "every decoded crop sample equals its original integer source window in rasterio and independent Pillow; CRS/affine/dtype/nodata/Point GeoKeys and complete padded outer-cell coverage checked",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/hijaz-modern-dsm-license.md",
+      "mapSizeCandidate": 400,
+      "historicalLimits": "modern buildings/vegetation possible; published visitor marker is not an ancient camp/well/building coordinate; no water/passability mask or game terrain written",
+      "previewPath": "docs/research/odyssey-research/images/badr-modern-dsm-regional-preview.png",
+      "previewSha256": "dc81d51279f01845b9e197276311f728644e62adcb8017e5ff76228da9c39498"
+    },
+    {
+      "geographyId": "uhud",
+      "status": "exploratory modern DSM reference; no profile promotion or historical/native approval",
+      "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N24_00_E039_00_DEM/Copernicus_DSM_COG_10_N24_00_E039_00_DEM.tif",
+      "sourceSha256": "096c7f5bdbcc0697b85fb67abf60e675e51b06b57ed55d4bd3fbcb56c7eb75ca",
+      "sourceBytes": 41944053,
+      "sourceHttpHeaders": {
+        "ETag": "\"7d27494cc3186b33fbb8c6022f74ecb9\"",
+        "Last-Modified": "Mon, 09 May 2022 14:10:20 GMT",
+        "Content-Length": "41944053"
+      },
+      "requestedBBox": [
+        39.55,
+        24.49,
+        39.69,
+        24.57
+      ],
+      "requestedBBoxOrder": "west south east north",
+      "paddedMapOuterCellBounds": [
+        39.54140350877193,
+        24.4584973126407,
+        39.698596491228066,
+        24.601502687359304
+      ],
+      "cropPixelWindow": {
+        "columnOffset": 1949,
+        "rowOffset": 1434,
+        "width": 567,
+        "height": 517
+      },
+      "cropDimensions": [
+        567,
+        517
+      ],
+      "cropTransform": [
+        0.0002777777777777778,
+        0.0,
+        39.54125,
+        0.0,
+        -0.0002777777777777778,
+        24.601805555555554
+      ],
+      "cropSampleCenterBounds": [
+        39.54138888888889,
+        24.458333333333332,
+        39.698611111111106,
+        24.601666666666667
+      ],
+      "cropOuterCellBounds": [
+        39.54125,
+        24.458194444444445,
+        39.69875,
+        24.601805555555554
+      ],
+      "cropPath": "docs/research/odyssey-research/geography/uhud-modern-dsm-regional-crop.tif",
+      "cropBytes": 718678,
+      "cropSha256": "7d2166c1a723568353c3cf16a1cdf7c9df0c55decd5ddec54bdcd568f98cf75c",
+      "horizontalCrs": "EPSG:4326",
+      "rasterInterpretation": "Point",
+      "nodata": null,
+      "dtype": "float32",
+      "verticalReference": "EGM2008/metres attributed to product documentation and existing project licence/provenance notice; no vertical datum tag is asserted",
+      "rangeMetres": [
+        565.8316040039062,
+        1101.9871826171875
+      ],
+      "sampleCount": 293139,
+      "finiteSamples": 293139,
+      "extraction": "integer-aligned crop; lossless DEFLATE, no interpolation, warp, fill, elevation edit or terrain conversion",
+      "verification": "every decoded crop sample equals its original integer source window in rasterio and independent Pillow; CRS/affine/dtype/nodata/Point GeoKeys and complete padded outer-cell coverage checked",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/hijaz-modern-dsm-license.md",
+      "mapSizeCandidate": 400,
+      "historicalLimits": "modern buildings/vegetation possible; published visitor marker is not an ancient camp/well/building coordinate; no water/passability mask or game terrain written",
+      "previewPath": "docs/research/odyssey-research/images/uhud-modern-dsm-regional-preview.png",
+      "previewSha256": "b1d81acbbad055075eaa5c22b812a6145c2e9b3ff2f29bda4ae6519dad2a9d51"
+    },
+    {
+      "geographyId": "hudaybiyya",
+      "status": "exploratory modern DSM reference; no profile promotion or historical/native approval",
+      "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N21_00_E039_00_DEM/Copernicus_DSM_COG_10_N21_00_E039_00_DEM.tif",
+      "sourceSha256": "67cadfa6e9133bb27d8cf4ddc3cea7fefa8969579987aaa73d09baccb2092beb",
+      "sourceBytes": 42186525,
+      "sourceHttpHeaders": {
+        "ETag": "\"f291f5e126cf95e057b2047d7a36554a\"",
+        "Last-Modified": "Mon, 09 May 2022 14:08:39 GMT",
+        "Content-Length": "42186525"
+      },
+      "requestedBBox": [
+        39.58,
+        21.39,
+        39.68,
+        21.48
+      ],
+      "requestedBBoxOrder": "west south east north",
+      "paddedMapOuterCellBounds": [
+        39.5738596491228,
+        21.382742722716188,
+        39.68614035087719,
+        21.487257277283817
+      ],
+      "cropPixelWindow": {
+        "columnOffset": 2065,
+        "rowOffset": 1845,
+        "width": 407,
+        "height": 379
+      },
+      "cropDimensions": [
+        407,
+        379
+      ],
+      "cropTransform": [
+        0.0002777777777777778,
+        0.0,
+        39.57347222222222,
+        0.0,
+        -0.0002777777777777778,
+        21.48763888888889
+      ],
+      "cropSampleCenterBounds": [
+        39.57361111111111,
+        21.3825,
+        39.686388888888885,
+        21.4875
+      ],
+      "cropOuterCellBounds": [
+        39.57347222222222,
+        21.38236111111111,
+        39.686527777777776,
+        21.48763888888889
+      ],
+      "cropPath": "docs/research/odyssey-research/geography/hudaybiyya-modern-dsm-regional-crop.tif",
+      "cropBytes": 417252,
+      "cropSha256": "8f831f04aeea3b9fd55736ff96bece0243f715a90ba4e0a68ff899c5b8e96c66",
+      "horizontalCrs": "EPSG:4326",
+      "rasterInterpretation": "Point",
+      "nodata": null,
+      "dtype": "float32",
+      "verticalReference": "EGM2008/metres attributed to product documentation and existing project licence/provenance notice; no vertical datum tag is asserted",
+      "rangeMetres": [
+        118.83306121826172,
+        435.4360046386719
+      ],
+      "sampleCount": 154253,
+      "finiteSamples": 154253,
+      "extraction": "integer-aligned crop; lossless DEFLATE, no interpolation, warp, fill, elevation edit or terrain conversion",
+      "verification": "every decoded crop sample equals its original integer source window in rasterio and independent Pillow; CRS/affine/dtype/nodata/Point GeoKeys and complete padded outer-cell coverage checked",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/hijaz-modern-dsm-license.md",
+      "mapSizeCandidate": 400,
+      "historicalLimits": "modern buildings/vegetation possible; published visitor marker is not an ancient camp/well/building coordinate; no water/passability mask or game terrain written",
+      "previewPath": "docs/research/odyssey-research/images/hudaybiyya-modern-dsm-regional-preview.png",
+      "previewSha256": "718ace4c8fa8983d76b9f7da2f46459aa6e5227d87b322d2794692feaefa7781"
+    },
+    {
+      "geographyId": "mina-aqaba",
+      "status": "exploratory modern DSM reference; no profile promotion or historical/native approval",
+      "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N21_00_E039_00_DEM/Copernicus_DSM_COG_10_N21_00_E039_00_DEM.tif",
+      "sourceSha256": "67cadfa6e9133bb27d8cf4ddc3cea7fefa8969579987aaa73d09baccb2092beb",
+      "sourceBytes": 42186525,
+      "sourceHttpHeaders": {
+        "ETag": "\"f291f5e126cf95e057b2047d7a36554a\"",
+        "Last-Modified": "Mon, 09 May 2022 14:08:39 GMT",
+        "Content-Length": "42186525"
+      },
+      "requestedBBox": [
+        39.84,
+        21.4,
+        39.9,
+        21.45
+      ],
+      "requestedBBoxOrder": "west south east north",
+      "paddedMapOuterCellBounds": [
+        39.836315789473694,
+        21.393643485651996,
+        39.903684210526315,
+        21.456356514348
+      ],
+      "cropPixelWindow": {
+        "columnOffset": 3010,
+        "rowOffset": 1957,
+        "width": 245,
+        "height": 227
+      },
+      "cropDimensions": [
+        245,
+        227
+      ],
+      "cropTransform": [
+        0.0002777777777777778,
+        0.0,
+        39.83597222222222,
+        0.0,
+        -0.0002777777777777778,
+        21.456527777777776
+      ],
+      "cropSampleCenterBounds": [
+        39.83611111111111,
+        21.39361111111111,
+        39.903888888888886,
+        21.45638888888889
+      ],
+      "cropOuterCellBounds": [
+        39.83597222222222,
+        21.393472222222222,
+        39.90402777777777,
+        21.456527777777776
+      ],
+      "cropPath": "docs/research/odyssey-research/geography/mina-aqaba-modern-dsm-regional-crop.tif",
+      "cropBytes": 155228,
+      "cropSha256": "5e6b44e93037868eda1130dc218e9805a58a532b2c0bcdb05bf92aa8340b9c2e",
+      "horizontalCrs": "EPSG:4326",
+      "rasterInterpretation": "Point",
+      "nodata": null,
+      "dtype": "float32",
+      "verticalReference": "EGM2008/metres attributed to product documentation and existing project licence/provenance notice; no vertical datum tag is asserted",
+      "rangeMetres": [
+        283.02801513671875,
+        863.2285766601562
+      ],
+      "sampleCount": 55615,
+      "finiteSamples": 55615,
+      "extraction": "integer-aligned crop; lossless DEFLATE, no interpolation, warp, fill, elevation edit or terrain conversion",
+      "verification": "every decoded crop sample equals its original integer source window in rasterio and independent Pillow; CRS/affine/dtype/nodata/Point GeoKeys and complete padded outer-cell coverage checked",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/hijaz-modern-dsm-license.md",
+      "mapSizeCandidate": 400,
+      "historicalLimits": "modern buildings/vegetation possible; published visitor marker is not an ancient camp/well/building coordinate; no water/passability mask or game terrain written",
+      "previewPath": "docs/research/odyssey-research/images/mina-aqaba-modern-dsm-regional-preview.png",
+      "previewSha256": "83f0780f5f06e45296fa534170549f10ffb6d4ee07ef78e59223d953eaa733ea"
+    }
+  ]
+}
