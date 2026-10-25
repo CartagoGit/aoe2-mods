@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: campaign-factory
 date: 2026-10-25
+shipped-in:
+  - "2bd271486fba1b19376ff942a529fd6bb752db56"
 ---
 
 # i00009 — Authored secondary rewards through existing finite-account contracts
@@ -30,14 +32,16 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
 - global_gate: type
 
 ### S1 — Architect decision, real reproduction and closed implementation packet
-- **Status**: review
+- **Status**: done
 - **Files**: `docs/architecture/authored-secondary-rewards.md`, `docs/handoffs/AUTHORED-SECONDARY-REWARDS-PACKET.md`
 - **Gate**: type
 - acceptance:
   - "Specify one optional internal authoring field resourceReward for existing finite-supply-withdrawal kinds only, using shared strict resource validation; omission preserves byte-identical legacy output and costs remain unchanged."
   - "Specify truthful zero-reward presentation, actual-contract-derived reward/cost budgets, finite reserved funding, failure cases and explicit no native/historical approval. Include a bounded real reproduction of the current missing projection and a closed artificial mechanical task."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 2bd271486fba, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet limit the field to aid/extract/repair/trade, reuse design_numbers.helper.py resource_amounts, preserve omitted defaults and fixed repai… (2) Decision gives exact EN/es-ES zero captions and invalid/misplaced cases, derives totals from actual effects and atomic-payment contracts, keeps finite reserved… — Independent review of i00009/S1 decision only at integrated product 2bd271486fba1b19376ff942a529fd6bb752db56. S2 implementation, native behavior, historical authoring, and S3 remain pending.
 
 ### S2 — Reusable optional reward projection and budget derivation
 - **Status**: pending
