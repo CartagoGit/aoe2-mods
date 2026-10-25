@@ -34,7 +34,7 @@
         "es-ES": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico."
       },
       "sourceDisposition": "s2-materialize",
-      "sourceBinding": "campaign.introduction line, unique ID, listed speaker"
+      "sourceBinding": "campaign.introduction line and scenario 01-route-choice narrative.intro line; distinct line IDs, same textKey and collection-narrator speaker"
     },
     {
       "key": "campaign.route-pilot.personal",
