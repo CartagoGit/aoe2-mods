@@ -280,9 +280,21 @@ def diagram(episode, geographic_layers):
     projection_bbox = episode["mapPlan"]["bbox"]
     clip_bbox = frame_helper["make_frame"](projection_bbox, size).bounds_at(0, size - 1)
     point = lambda h: (55 + h["centre"][0] * factor, 85 + h["centre"][1] * factor)
+    authored_hubs = episode["mapPlan"]["hubs"]
+    last_hub_label_y = max(
+        (
+            140 + index * 50
+            + (len(textwrap.wrap(f"{index}: {hub['name']['en']}", width=42)) - 1) * 14
+            for index, hub in enumerate(authored_hubs, 1)
+        ),
+        default=0,
+    )
+    legend_y = max(420, 175 + len(authored_hubs) * 50)
+    last_legend_y = legend_y + 7 * 24
+    canvas_height = max(850, int(max(last_hub_label_y, last_legend_y, 780) + 28))
     lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
-        '<rect width="1050" height="850" fill="#f6f0dc"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 {canvas_height}" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
+        f'<rect width="1050" height="{canvas_height}" fill="#f6f0dc"/>',
         '<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>',
         f'<text x="40" y="35" font-family="sans-serif" font-size="22">{html.escape(episode["title"]["en"])}</text>',
         f'<text x="40" y="63" font-family="sans-serif" font-size="15">{size} × {size} · {html.escape(episode["geographyId"])} · N ↑ E →</text>',
@@ -334,7 +346,7 @@ def diagram(episode, geographic_layers):
         lines.append(
             f'<polyline data-corridor="{html.escape(corridor["id"])}" points="{coords}" fill="none" stroke="{colour}" stroke-width="3" stroke-dasharray="8 6"><title>{html.escape(corridor["id"])}: proposed {html.escape(corridor["mode"])} district connection, intermediate path pending</title></polyline>'
         )
-    for i, h in enumerate(episode["mapPlan"]["hubs"], 1):
+    for i, h in enumerate(authored_hubs, 1):
         x, y = point(h)
         lines += [
             f'<circle cx="{x:.2f}" cy="{y:.2f}" r="20" fill="none" stroke="#91512f"/>',
@@ -343,7 +355,6 @@ def diagram(episode, geographic_layers):
         ]
         for row, label in enumerate(textwrap.wrap(f"{i}: {h['name']['en']}", width=42)):
             lines.append(f'<text x="730" y="{140 + i * 50 + row * 14}" font-family="sans-serif" font-size="12">{html.escape(label)}</text>')
-    legend_y = max(420, 175 + len(episode["mapPlan"]["hubs"]) * 50)
     for i, text in enumerate(
         [
             "Geographic district controls only",

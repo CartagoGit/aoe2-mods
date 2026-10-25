@@ -290,18 +290,26 @@ describe("typed fulfillment dossier projection", () => {
     edgeZone.radiusTiles = 2;
     const edgeRequest = requestFor(edgeProfile);
     at(edgeRequest.hubs, 0).centre = [0, 0];
-    const edgePoint = found(edgeRequest.pointZoneBindings.find((point) => point.zoneId === edgeZone.id));
-    edgePoint.tile = [1, 100];
-    expect(() => projectFulfillmentDossiers({ requests: [edgeRequest] })).toThrow(
-      /zone footprint outside map bounds/,
+    const edgePoint = found(
+      edgeRequest.pointZoneBindings.find(
+        (point) => point.zoneId === edgeZone.id,
+      ),
     );
+    edgePoint.tile = [1, 100];
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [edgeRequest] }),
+    ).toThrow(/zone footprint outside map bounds/);
 
     const within = requestFor();
     at(within.pointZoneBindings, 0).tile[0] += 0.000001 - 0.000000001;
-    expect(projectFulfillmentDossiers({ requests: [within] }).projections).toHaveLength(1);
+    expect(
+      projectFulfillmentDossiers({ requests: [within] }).projections,
+    ).toHaveLength(1);
     const atLimit = requestFor();
     at(atLimit.pointZoneBindings, 0).tile[0] += 0.000001;
-    expect(projectFulfillmentDossiers({ requests: [atLimit] }).projections).toHaveLength(1);
+    expect(
+      projectFulfillmentDossiers({ requests: [atLimit] }).projections,
+    ).toHaveLength(1);
     const outside = requestFor();
     at(outside.pointZoneBindings, 0).tile[0] += 0.000001 + 0.000000001;
     expect(() => projectFulfillmentDossiers({ requests: [outside] })).toThrow(
@@ -312,21 +320,21 @@ describe("typed fulfillment dossier projection", () => {
   test("requires distinct plan screens and distinct service goal/completion IDs", () => {
     const repeatedPlan = requestFor();
     repeatedPlan.planScreenIds.started = repeatedPlan.planScreenIds.reserved;
-    expect(() => projectFulfillmentDossiers({ requests: [repeatedPlan] })).toThrow(
-      /plan screen IDs must be distinct/,
-    );
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [repeatedPlan] }),
+    ).toThrow(/plan screen IDs must be distinct/);
     const reusedConfirmation = requestFor();
     at(reusedConfirmation.serviceBindings, 0).completeScreenId =
       reusedConfirmation.planScreenIds.reserved;
-    expect(() => projectFulfillmentDossiers({ requests: [reusedConfirmation] })).toThrow(
-      /cannot reuse reserved\/started confirmation/,
-    );
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [reusedConfirmation] }),
+    ).toThrow(/cannot reuse reserved\/started confirmation/);
     const sameGoalAndComplete = requestFor();
     const service = at(sameGoalAndComplete.serviceBindings, 0);
     service.completeScreenId = service.goalScreenId;
-    expect(() => projectFulfillmentDossiers({ requests: [sameGoalAndComplete] })).toThrow(
-      /goal and completion screens must differ/,
-    );
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [sameGoalAndComplete] }),
+    ).toThrow(/goal and completion screens must differ/);
   });
 
   test("rejects overlapping work and reception footprints even for distinct zones in one hub", () => {
@@ -360,12 +368,24 @@ describe("typed fulfillment dossier projection", () => {
     const profile = makeFulfillmentProfile();
     profile.districts.push("fixture.second-hub");
     const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
-    const workZone = found(profile.worldContract.zones.find((zone) => zone.id === recipe.workZoneId));
-    const receptionZone = found(profile.worldContract.zones.find((zone) => zone.id === recipe.receptionZoneId));
+    const workZone = found(
+      profile.worldContract.zones.find((zone) => zone.id === recipe.workZoneId),
+    );
+    const receptionZone = found(
+      profile.worldContract.zones.find(
+        (zone) => zone.id === recipe.receptionZoneId,
+      ),
+    );
     receptionZone.hub = "fixture.second-hub";
     const request = requestFor(profile);
-    const workPoint = found(request.pointZoneBindings.find((point) => point.zoneId === workZone.id));
-    const receptionPoint = found(request.pointZoneBindings.find((point) => point.zoneId === receptionZone.id));
+    const workPoint = found(
+      request.pointZoneBindings.find((point) => point.zoneId === workZone.id),
+    );
+    const receptionPoint = found(
+      request.pointZoneBindings.find(
+        (point) => point.zoneId === receptionZone.id,
+      ),
+    );
     at(request.hubs, 1).centre = [
       workPoint.tile[0] - receptionZone.offsetTiles[0],
       workPoint.tile[1] - receptionZone.offsetTiles[1],
@@ -499,7 +519,15 @@ describe("typed fulfillment dossier projection", () => {
         episodeId: string;
         optionalPrefixAnalysisByDifficulty: Record<
           string,
-          { reachableSubsetCount: number; protectedRecoveryExcluded: boolean }
+          {
+            reachableSubsetCount: number;
+            protectedRecoveryExcluded: boolean;
+            examples: Array<{ completedTaskIds: string[] }>;
+          }
+        >;
+        selectionAnalysisByDifficulty: Record<
+          string,
+          { affordableSelections: string[][] }
         >;
       }>;
     };
@@ -514,22 +542,38 @@ describe("typed fulfillment dossier projection", () => {
         ?.protectedRecoveryExcluded,
     ).toBe(true);
     const projection = response.projections[0];
-    expect(projection?.selectionAnalysisByDifficulty.easy.affordableSelections).toHaveLength(9);
-    expect(projection?.selectionAnalysisByDifficulty.standard.affordableSelections).toHaveLength(7);
-    expect(projection?.selectionAnalysisByDifficulty.hard.affordableSelections).toHaveLength(3);
+    expect(
+      projection?.selectionAnalysisByDifficulty.easy?.affordableSelections,
+    ).toHaveLength(9);
+    expect(
+      projection?.selectionAnalysisByDifficulty.standard?.affordableSelections,
+    ).toHaveLength(7);
+    expect(
+      projection?.selectionAnalysisByDifficulty.hard?.affordableSelections,
+    ).toHaveLength(3);
     expect(projectFulfillmentDossiers({ requests: [request] })).toEqual(
       projectFulfillmentDossiers({ requests: [request] }),
     );
     const kindsById = Object.fromEntries(
-      (request.referenceCapabilityProfile as ReturnType<typeof makeFulfillmentProfile>)
-        .secondaryObjectives.map((side) => [side.id, side.kind]),
+      (
+        request.referenceCapabilityProfile as ReturnType<
+          typeof makeFulfillmentProfile
+        >
+      ).secondaryObjectives.map((side) => [side.id, side.kind]),
     );
-    const hardExamples = projection?.optionalPrefixAnalysisByDifficulty.hard.examples ?? [];
-    expect(hardExamples.some((example) => {
-      const aid = example.completedTaskIds.findIndex((id) => kindsById[id] === "aid");
-      const repair = example.completedTaskIds.findIndex((id) => kindsById[id] === "repair");
-      return aid >= 0 && repair > aid;
-    })).toBe(true);
+    const hardExamples =
+      projection?.optionalPrefixAnalysisByDifficulty.hard?.examples ?? [];
+    expect(
+      hardExamples.some((example) => {
+        const aid = example.completedTaskIds.findIndex(
+          (id) => kindsById[id] === "aid",
+        );
+        const repair = example.completedTaskIds.findIndex(
+          (id) => kindsById[id] === "repair",
+        );
+        return aid >= 0 && repair > aid;
+      }),
+    ).toBe(true);
   });
 
   test("runs a complete artificial three-service blueprint through bridge, composer, audit, wiki, and SVG", async () => {
@@ -548,16 +592,29 @@ describe("typed fulfillment dossier projection", () => {
       continuation: "service.fulfillment-fixture.shelter-service.goal",
     };
     const roleText = {
-      factualIntro: { en: "A synthetic documented frame.", "es-ES": "Un marco documentado sintético." },
-      factualOutro: { en: "A synthetic documented outcome.", "es-ES": "Un resultado documentado sintético." },
+      factualIntro: {
+        en: "A synthetic documented frame.",
+        "es-ES": "Un marco documentado sintético.",
+      },
+      factualOutro: {
+        en: "A synthetic documented outcome.",
+        "es-ES": "Un resultado documentado sintético.",
+      },
     };
     const narrator = "fixture.narrator";
     for (const screen of request.screens) {
       if (screen.id === roles.factualIntro) screen.text = roleText.factualIntro;
       if (screen.id === roles.factualOutro) screen.text = roleText.factualOutro;
-      if (screen.id === roles.factualIntro || screen.id === roles.factualOutro || screen.id === roles.handover)
+      if (
+        screen.id === roles.factualIntro ||
+        screen.id === roles.factualOutro ||
+        screen.id === roles.handover
+      )
         screen.narrator = "collection-narrator";
-      if (screen.id === roles.personalIntro || screen.id === roles.personalOutro)
+      if (
+        screen.id === roles.personalIntro ||
+        screen.id === roles.personalOutro
+      )
         screen.narrator = narrator;
       if (screen.id === roles.title) screen.narrator = "none";
       const text = screen.text as { en: string; "es-ES": string };
@@ -566,9 +623,9 @@ describe("typed fulfillment dossier projection", () => {
     const bbox = [-1, -1, 1, 1];
     const size = request.mapSize;
     const span = 2 * 1.12;
-    const lonLatFor = (tile: number[]) => [
-      ((tile[0]! / (size - 1) - 0.5) * span),
-      ((0.5 - tile[1]! / (size - 1)) * span),
+    const lonLatFor = (tile: readonly [number, number]) => [
+      (tile[0] / (size - 1) - 0.5) * span,
+      (0.5 - tile[1] / (size - 1)) * span,
     ];
     const hubs = request.hubs.map((hub) => ({
       id: hub.id,
@@ -587,13 +644,22 @@ describe("typed fulfillment dossier projection", () => {
     }));
     const corridorIds = new Set<string>();
     for (const side of profile.secondaryObjectives) {
-      side.reachability.corridorIds.forEach((id) => corridorIds.add(id));
+      side.reachability.corridorIds.forEach((id) => {
+        corridorIds.add(id);
+      });
       for (const effect of side.effects)
-        if (effect.kind === "mark-alternative-route") corridorIds.add(effect.corridorId);
+        if (effect.kind === "mark-alternative-route" && effect.corridorId)
+          corridorIds.add(effect.corridorId);
     }
+    const fixtureHubId = found(request.hubs[0]).id;
+    const portfolioSideIds = profile.secondaryObjectives
+      .slice(0, 5)
+      .map((side) => side.id);
+    if (portfolioSideIds.length !== 5)
+      throw new Error("fixture requires five distinct optional IDs");
     const corridors = [...corridorIds].map((id) => ({
       id,
-      hubOrder: [request.hubs[0]!.id, request.hubs[0]!.id],
+      hubOrder: [fixtureHubId, fixtureHubId],
       mode: "land",
       widthTiles: 1,
     }));
@@ -602,7 +668,10 @@ describe("typed fulfillment dossier projection", () => {
     const dossierMetadata = {
       factualIntro,
       factualOutro,
-      dramatizationNotice: { en: "Synthetic only.", "es-ES": "Sólo sintético." },
+      dramatizationNotice: {
+        en: "Synthetic only.",
+        "es-ES": "Sólo sintético.",
+      },
       mapPlan: {
         bbox,
         terrainProfile: "fixture.region",
@@ -617,16 +686,28 @@ describe("typed fulfillment dossier projection", () => {
         asset: "docs/design/maps/fixture/odyssey/fixture-intermediate.svg",
       },
       historicalMaterialPolicyByEntity: Object.fromEntries(
-        profile.worldContract.entities.map((entity) => [entity.id, "Synthetic fixture identity; no historical claim."]),
+        profile.worldContract.entities.map((entity) => [
+          entity.id,
+          "Synthetic fixture identity; no historical claim.",
+        ]),
       ),
-      artDirection: { style: "synthetic fixture", historicalControls: [], referenceAssets: [], productionApproved: false },
-      failureRecovery: { policy: "Synthetic fixture; no gameplay behavior asserted." },
-      requiredCapabilities: [{ id: "fixture.capability", status: "pending; synthetic fixture" }],
+      artDirection: {
+        style: "synthetic fixture",
+        historicalControls: [],
+        referenceAssets: [],
+        productionApproved: false,
+      },
+      failureRecovery: {
+        policy: "Synthetic fixture; no gameplay behavior asserted.",
+      },
+      requiredCapabilities: [
+        { id: "fixture.capability", status: "pending; synthetic fixture" },
+      ],
       qaCases: ["Synthetic bridge and composition path only."],
       playstyles: [
-        [profile.secondaryObjectives[0]!.id, profile.secondaryObjectives[1]!.id],
-        [profile.secondaryObjectives[2]!.id, profile.secondaryObjectives[3]!.id],
-        [profile.secondaryObjectives[4]!.id],
+        [at(portfolioSideIds, 0), at(portfolioSideIds, 1)],
+        [at(portfolioSideIds, 2), at(portfolioSideIds, 3)],
+        [at(portfolioSideIds, 4)],
       ].map((optionalObjectives, index) => ({
         id: `fixture.playstyle.${index + 1}`,
         optionalObjectives,
@@ -634,26 +715,47 @@ describe("typed fulfillment dossier projection", () => {
         mainObjectivesUnchanged: true,
         historicalOutcomeUnchanged: true,
       })),
-      gameplayIdentity: Object.fromEntries(["problem", "decision", "density", "replay"].map((key) => [key, "Synthetic test fixture only."])),
+      gameplayIdentity: Object.fromEntries(
+        ["problem", "decision", "density", "replay"].map((key) => [
+          key,
+          "Synthetic test fixture only.",
+        ]),
+      ),
       editorialReviewNotes: { status: "synthetic test; review pending" },
       screenRoles: roles,
-      continuation: { nextEpisodeId: "fixture.next", campaignComplete: false, sourceScreenId: roles.continuation },
+      continuation: {
+        nextEpisodeId: "fixture.next",
+        campaignComplete: false,
+        sourceScreenId: roles.continuation,
+      },
     };
     const blueprint = {
       designProfile: "alternative-fulfillment-v3",
       ...request,
       dossierMetadata,
     };
-    const campaign = { campaignId: "fixture", editorialContract: { publicId: "fixture", narratorId: narrator } };
+    const campaign = {
+      campaignId: "fixture",
+      editorialContract: { publicId: "fixture", narratorId: narrator },
+    };
     const selection = {
-      id: selectionId, order: 2, actId: "fixture.act", title: { en: "Fixture", "es-ES": "Prueba" },
-      date: "synthetic", knowledgeBasis: { speaker: narrator }, coreMechanic: "synthetic typed projection",
-      geographyId: "fixture.region", historicalPersonPolicy: "No historical person represented.",
+      id: selectionId,
+      order: 2,
+      actId: "fixture.act",
+      title: { en: "Fixture", "es-ES": "Prueba" },
+      date: "synthetic",
+      knowledgeBasis: { speaker: narrator },
+      coreMechanic: "synthetic typed projection",
+      geographyId: "fixture.region",
+      historicalPersonPolicy: "No historical person represented.",
       historicalSelection: { selectedClaim: "Synthetic fixture claim." },
     };
 
     const root = new URL("../..", import.meta.url).pathname;
-    const helper = new URL("../../tools/design/fulfillment-dossier.helper.py", import.meta.url).pathname;
+    const helper = new URL(
+      "../../tools/design/fulfillment-dossier.helper.py",
+      import.meta.url,
+    ).pathname;
     const bridgeInput = `/tmp/fulfillment-bridge-${crypto.randomUUID()}.json`;
     writeFileSync(bridgeInput, JSON.stringify({ requests: [request] }));
     const bridge = Bun.spawnSync(["python3", helper], {
@@ -664,9 +766,20 @@ describe("typed fulfillment dossier projection", () => {
     });
     unlinkSync(bridgeInput);
     expect(bridge.exitCode, bridge.stderr.toString()).toBe(0);
-    const projection = (JSON.parse(bridge.stdout.toString()) as { projections: Array<Record<string, unknown>> }).projections[0];
-    if (!projection) throw new Error("bridge returned no artificial projection");
-    const payload = JSON.stringify({ campaign, selection, blueprint, projection, request });
+    const projection = (
+      JSON.parse(bridge.stdout.toString()) as {
+        projections: Array<Record<string, unknown>>;
+      }
+    ).projections[0];
+    if (!projection)
+      throw new Error("bridge returned no artificial projection");
+    const payload = JSON.stringify({
+      campaign,
+      selection,
+      blueprint,
+      projection,
+      request,
+    });
     const python = [
       "import importlib.util,json,sys",
       "from pathlib import Path",
@@ -685,6 +798,9 @@ describe("typed fulfillment dossier projection", () => {
       "profile_drift=copy.deepcopy(e); profile_drift['referenceCapabilityProfile']['fulfillmentPlan']['services'][0]['recipes'][0]['cost']['food']+=1; assert validator.audit_dossier(profile_drift,p['campaign'],projection_context={'request':req,'projection':p['projection']})",
       "wiki=pipeline.fulfillment_wiki(p['campaign'],e); svg=pipeline.diagram(e,[])",
       "assert 'Alternative services' in wiki and 'Authored presentation' in wiki and '<svg' in svg",
+      "import xml.etree.ElementTree as ET",
+      "tall=copy.deepcopy(e); base_hub=tall['mapPlan']['hubs'][0]['id']; tall['mapPlan']['hubs']=[{'id': (base_hub if i==1 else f'{base_hub}.{i}'),'centre':[min(20+i*18,380),60],'lonLat':[0,0],'name':{'en':f'Synthetic district {i}','es-ES':f'Distrito sintético {i}'},'radiusTiles':3,'certainty':'synthetic only'} for i in range(1,20)]",
+      "tall_svg=pipeline.diagram(tall,[]); root_svg=ET.fromstring(tall_svg); canvas_height=float(root_svg.attrib['viewBox'].split()[3]); text_rows=root_svg.findall('{http://www.w3.org/2000/svg}text'); final_label=next(row for row in text_rows if row.text=='19: Synthetic district 19'); final_legend=next(row for row in text_rows if row.text=='No ancient shore or elevation inferred'); assert canvas_height>850 and canvas_height>=max(float(final_label.attrib['y']),float(final_legend.attrib['y']))+12",
       "print(json.dumps({'audit':errors,'wiki':wiki,'svg':svg,'serviceCount':len(e['fulfillmentServices']),'portfolioCount':len(e['playstyles'])}))",
     ].join("\n");
     const composeInput = `/tmp/fulfillment-compose-${crypto.randomUUID()}.json`;
@@ -697,7 +813,12 @@ describe("typed fulfillment dossier projection", () => {
     });
     unlinkSync(composeInput);
     expect(composed.exitCode, composed.stderr.toString()).toBe(0);
-    const output = JSON.parse(composed.stdout.toString()) as { serviceCount: number; portfolioCount: number; wiki: string; svg: string };
+    const output = JSON.parse(composed.stdout.toString()) as {
+      serviceCount: number;
+      portfolioCount: number;
+      wiki: string;
+      svg: string;
+    };
     expect(output.serviceCount).toBe(3);
     expect(output.portfolioCount).toBe(3);
     expect(output.wiki).toContain("Synthetic only.");
