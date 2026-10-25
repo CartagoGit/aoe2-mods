@@ -36,6 +36,31 @@ type ResourceVector = {
   gold: number;
   stone: number;
 };
+type DifficultyLevel = "easy" | "standard" | "hard";
+type SelectionAnalysisRow = {
+  recipeIds: string[];
+  totalCost: FulfillmentResources;
+  affordable: boolean;
+  spendableRemainder:
+    | FulfillmentResources
+    | { food: null; wood: null; gold: null; stone: null };
+};
+type DifficultySelectionAnalysis = {
+  spendable: FulfillmentResources;
+  protectedRecovery: FulfillmentResources;
+  optionalReserve: FulfillmentResources;
+  selections: SelectionAnalysisRow[];
+  affordableSelections: string[][];
+};
+type OptionalFinancialTask = {
+  id: string;
+  cost: FulfillmentResources;
+  reward: FulfillmentResources;
+};
+type OptionalFinancialInputs = {
+  optionalTasks: OptionalFinancialTask[];
+  status: string;
+};
 const account = z.strictObject({
   spendable: resources,
   protectedRecovery: resources,
@@ -130,8 +155,11 @@ export type DossierProjection = {
       cost: FulfillmentResources;
     }>;
   }>;
-  selectionAnalysisByDifficulty: Record<string, unknown>;
-  optionalFinancialInputs: Record<string, unknown>;
+  selectionAnalysisByDifficulty: Record<
+    DifficultyLevel,
+    DifficultySelectionAnalysis
+  >;
+  optionalFinancialInputs: OptionalFinancialInputs;
   mapBindings: {
     hubs: ProjectionRequest["hubs"];
     points: Array<
@@ -576,14 +604,17 @@ function projectOne(value: unknown): DossierProjection {
       }
     rows.splice(0, rows.length, ...next);
   }
-  const selectionAnalysisByDifficulty: Record<string, unknown> = {};
+  const selectionAnalysisByDifficulty = {} as Record<
+    DifficultyLevel,
+    DifficultySelectionAnalysis
+  >;
   for (const level of ["easy", "standard", "hard"] as const) {
     const spendable = request.accountsByDifficulty[level].spendable;
-    const selectionRows = rows.map((row) => {
+    const selectionRows: SelectionAnalysisRow[] = rows.map((row) => {
       const affordable = enough(spendable, row.cost);
       const remainder = affordable
         ? debit(spendable, row.cost)
-        : Object.fromEntries(RESOURCES.map((resource) => [resource, null]));
+        : { food: null, wood: null, gold: null, stone: null };
       return {
         recipeIds: row.recipeIds,
         totalCost: row.cost,

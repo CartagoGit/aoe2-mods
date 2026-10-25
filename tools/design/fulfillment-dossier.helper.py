@@ -17,6 +17,7 @@ BRIDGE = Path(__file__).with_name("fulfillment-dossier.script.ts")
 ALLOCATION_HELPER = Path(__file__).with_name("finite_allocation.helper.py")
 LEVELS = ("easy", "standard", "hard")
 RESOURCES = ("food", "wood", "gold", "stone")
+MAX_SAFE_INTEGER = 2**53 - 1
 
 
 def _optional_states():
@@ -35,8 +36,44 @@ def _with_optional_analysis(projection, accounts_by_difficulty):
     for level in LEVELS:
         account = accounts_by_difficulty[level]
         stock = {key: account["spendable"].get(key, 0) for key in RESOURCES}
+        _check_safe_balance(stock, f"{level} pre-funding stock")
         states = optional_states(stock, inputs)
+        _check_safe_states(states, f"{level} pre-funding analysis")
+        after_funding = []
+        for selection in projection["selectionAnalysisByDifficulty"][level]["selections"]:
+            row = {
+                "recipeIds": selection["recipeIds"],
+                "mainAffordable": selection["affordable"],
+                "initialRemainder": (
+                    selection["spendableRemainder"] if selection["affordable"] else None
+                ),
+                "scope": "after-main-funding",
+            }
+            if selection["affordable"]:
+                remainder = selection["spendableRemainder"]
+                _check_safe_balance(remainder, f"{level} funded remainder {selection['recipeIds']}")
+                funded_states = optional_states(remainder, inputs)
+                _check_safe_states(funded_states, f"{level} after-funding analysis {selection['recipeIds']}")
+                all_optional_mask = (1 << len(inputs)) - 1
+                row.update({
+                    "reachableSubsetCount": len(funded_states),
+                    "allOptionalTasksAffordable": all_optional_mask in funded_states,
+                    "examples": [
+                        {"completedTaskIds": order, "spendableAfterTransfers": balance}
+                        for balance, order in funded_states.values()
+                    ],
+                    "status": "candidate financial prefixes after this main selection; spatial predicates and actor availability are assumed successful",
+                })
+            else:
+                row.update({
+                    "reachableSubsetCount": None,
+                    "allOptionalTasksAffordable": None,
+                    "examples": None,
+                    "reason": "main selection is not affordable from initial spendable stock; no after-funding witness",
+                })
+            after_funding.append(row)
         output[level] = {
+            "scope": "before-main-funding",
             "reachableSubsetCount": len(states),
             "allOptionalTasksAffordable": (1 << len(inputs)) - 1 in states,
             "allSkipStock": stock,
@@ -47,8 +84,26 @@ def _with_optional_analysis(projection, accounts_by_difficulty):
             "protectedRecoveryExcluded": True,
             "optionalReserveIsFiniteRewardStock": account["optionalReserve"],
             "status": "candidate financial prefix only; assumes spatial predicates and actor availability succeed",
+            "afterFundingSelections": after_funding,
+            "mainAffordableSelectionCount": sum(row["mainAffordable"] for row in after_funding),
+            "allOptionalTasksAffordableAfterFundingCount": sum(
+                row["allOptionalTasksAffordable"] is True for row in after_funding
+            ),
         }
     return {**projection, "optionalPrefixAnalysisByDifficulty": output}
+
+
+def _check_safe_balance(balance, label):
+    if not isinstance(balance, dict) or set(balance) != set(RESOURCES):
+        raise ValueError(f"{label} has an invalid resource vector")
+    for resource, value in balance.items():
+        if type(value) is not int or value < 0 or value > MAX_SAFE_INTEGER:
+            raise ValueError(f"{label} overflows safe integer {resource}")
+
+
+def _check_safe_states(states, label):
+    for balance, _order in states.values():
+        _check_safe_balance(balance, label)
 
 
 def project_batch(requests, *, root=ROOT):
