@@ -16,6 +16,8 @@ REPORT = "docs/research/odyssey-research/civic-difficulty-mechanical-audit.json"
 POLICY = "docs/design/odyssey-policy.json"
 LEVELS = ("easy", "standard", "hard")
 RESOURCES = {"food", "wood", "gold", "stone"}
+V3_DESIGN_PROFILE = "alternative-fulfillment-v3"
+MAX_SAFE_INTEGER = 2**53 - 1
 
 
 def read(path, root=ROOT):
@@ -94,7 +96,7 @@ def deadline_fields(episode):
     return sorted(found)
 
 
-def episode_audit(campaign, episode):
+def _legacy_episode_audit(campaign, episode):
     difficulty = episode["difficulty"]
     if set(difficulty) != set(LEVELS):
         raise ValueError(f"{campaign}/{episode['id']}: missing difficulty profile")
@@ -147,6 +149,142 @@ def episode_audit(campaign, episode):
     }
 
 
+def _require_resource_vector(value, label):
+    if not isinstance(value, dict) or set(value) != RESOURCES:
+        raise ValueError(f"{label}: expected complete resource vector")
+    for resource, amount in value.items():
+        if type(amount) is not int or amount < 0 or amount > MAX_SAFE_INTEGER:
+            raise ValueError(f"{label}/{resource}: expected nonnegative safe integer")
+    return value
+
+
+def _v3_enemy_roster(profile, campaign, episode_id):
+    roster = profile.get("enemyRoster")
+    expected = {"initialEntityIds", "productionEnabled", "mobilizations", "unspentPolicy"}
+    label = f"{campaign}/{episode_id}/referenceCapabilityProfile/enemyRoster"
+    if not isinstance(roster, dict) or set(roster) != expected:
+        raise ValueError(f"{label}: missing or malformed roster")
+    if (
+        not isinstance(roster["initialEntityIds"], list)
+        or any(not isinstance(item, str) or not item for item in roster["initialEntityIds"])
+        or roster["productionEnabled"] is not False
+        or not isinstance(roster["mobilizations"], list)
+        or roster["unspentPolicy"] != "remain-in-reserve"
+    ):
+        raise ValueError(f"{label}: missing or malformed roster")
+    for index, mobilization in enumerate(roster["mobilizations"]):
+        if (
+            not isinstance(mobilization, dict)
+            or set(mobilization) != {"id", "entityIds", "releasedOnce"}
+            or not isinstance(mobilization["id"], str)
+            or not mobilization["id"]
+            or not isinstance(mobilization["entityIds"], list)
+            or not mobilization["entityIds"]
+            or any(not isinstance(item, str) or not item for item in mobilization["entityIds"])
+            or mobilization["releasedOnce"] is not True
+        ):
+            raise ValueError(f"{label}/mobilizations/{index}: malformed entry")
+    return roster
+
+
+def _v3_episode_audit(campaign, episode):
+    episode_id = episode.get("id")
+    label = f"{campaign}/{episode_id}"
+    profile = episode.get("referenceCapabilityProfile")
+    if not isinstance(profile, dict) or type(profile.get("schemaVersion")) is not int or profile["schemaVersion"] != 3:
+        raise ValueError(f"{label}: missing schemaVersion 3 reference profile")
+
+    difficulty = episode.get("difficulty")
+    selection_analysis = episode.get("selectionAnalysisByDifficulty")
+    if not isinstance(selection_analysis, dict) or set(selection_analysis) != set(LEVELS):
+        raise ValueError(f"{label}: missing selection analysis for all difficulties")
+    if difficulty != selection_analysis:
+        raise ValueError(f"{label}: difficulty must exactly match selectionAnalysisByDifficulty")
+
+    accounts = episode.get("accountsByDifficulty")
+    if not isinstance(accounts, dict) or set(accounts) != set(LEVELS):
+        raise ValueError(f"{label}: missing complete accountsByDifficulty")
+    affordable_counts = {}
+    budgets = {}
+    for level in LEVELS:
+        account = accounts[level]
+        if not isinstance(account, dict) or set(account) != {"spendable", "protectedRecovery", "optionalReserve"}:
+            raise ValueError(f"{label}/{level}: malformed account")
+        spendable = _require_resource_vector(account["spendable"], f"{label}/{level}/spendable")
+        protected = _require_resource_vector(account["protectedRecovery"], f"{label}/{level}/protectedRecovery")
+        _require_resource_vector(account["optionalReserve"], f"{label}/{level}/optionalReserve")
+        budgets[level] = spendable
+
+        view = selection_analysis[level]
+        if not isinstance(view, dict):
+            raise ValueError(f"{label}/{level}: malformed selection analysis")
+        if view.get("spendable") != spendable or view.get("protectedRecovery") != protected:
+            raise ValueError(f"{label}/{level}: selection analysis account views differ from authored accounts")
+        if not isinstance(view.get("selections"), list) or not isinstance(view.get("affordableSelections"), list):
+            raise ValueError(f"{label}/{level}: malformed selection rows")
+        affordable_counts[level] = len(view["affordableSelections"])
+
+    roster = _v3_enemy_roster(profile, campaign, episode_id)
+    world = profile.get("worldContract")
+    if not isinstance(world, dict) or not isinstance(world.get("entities"), list):
+        raise ValueError(f"{label}: malformed reference profile worldContract")
+    entities = world["entities"]
+    if any(not isinstance(entity, dict) or not isinstance(entity.get("role"), str) for entity in entities):
+        raise ValueError(f"{label}: malformed main-world entity role")
+    hostile_roles = sum(
+        any(word in entity["role"].lower() for word in ("hostile", "enemy"))
+        for entity in entities
+    )
+    roster_hostiles = bool(roster["initialEntityIds"]) or any(
+        mobilization["entityIds"] for mobilization in roster["mobilizations"]
+    )
+    has_hostiles = roster_hostiles or hostile_roles > 0
+
+    objective_plan = profile.get("objectivePlan")
+    secondary_objectives = profile.get("secondaryObjectives")
+    if not isinstance(objective_plan, list) or not isinstance(secondary_objectives, list):
+        raise ValueError(f"{label}: malformed objective views in reference profile")
+    deadlines = deadline_fields({
+        "objectivePlan": objective_plan,
+        "secondaryObjectives": secondary_objectives,
+    })
+    same_budget = budgets["easy"] == budgets["standard"] == budgets["hard"]
+    return {
+        "campaign": campaign,
+        "order": episode.get("order"),
+        "episodeId": episode_id,
+        "designProfile": V3_DESIGN_PROFILE,
+        "coreMechanic": episode.get("coreMechanic"),
+        "pressureMechanism": {
+            "finiteHostilesPresent": has_hostiles,
+            "explicitStructuredDeadlinePresent": bool(deadlines),
+            "deadlineFields": deadlines,
+            "otherMainPredicateKinds": predicate_kinds(objective_plan),
+            "otherSecondaryPredicateKinds": predicate_kinds(secondary_objectives),
+        },
+        "mainObjectiveCount": len(objective_plan),
+        "secondaryObjectiveCount": len(secondary_objectives),
+        "hostileRoleEntityCount": hostile_roles,
+        "authoredEnemyRoster": roster,
+        "budgetBasis": "v3 initial spendable operating account; excludes protected recovery and unearned optional rewards",
+        "accountsByDifficulty": accounts,
+        "selectionAnalysisByDifficulty": selection_analysis,
+        "affordableSelectionCountByDifficulty": affordable_counts,
+        "accessibleBudgetSameAcrossDifficulties": same_budget,
+        "staticRiskCandidate": not has_hostiles and not deadlines and same_budget,
+    }
+
+
+def episode_audit(campaign, episode):
+    if not isinstance(episode, dict):
+        raise ValueError(f"{campaign}: episode must be an object")
+    if "designProfile" not in episode:
+        return _legacy_episode_audit(campaign, episode)
+    if episode["designProfile"] != V3_DESIGN_PROFILE:
+        raise ValueError(f"{campaign}/{episode.get('id')}: unsupported designProfile {episode['designProfile']!r}")
+    return _v3_episode_audit(campaign, episode)
+
+
 def build_audit(root=ROOT):
     policy = read(POLICY, root)
     paths = [f"docs/design/odysseys/{item['id']}.json" for item in policy["campaigns"]]
@@ -158,16 +296,19 @@ def build_audit(root=ROOT):
     if before != after:
         raise ValueError("Sources changed during audit; rerun on a stable snapshot")
     risks = [record for record in records if record["staticRiskCandidate"]]
+    limits = [
+        "Static inspection only: no historical, architectural, native or playability approval.",
+        "Role names and deadline keys are heuristic signals, not evidence of working AoE2 opposition.",
+        "Logistics, terrain, allocation and optional opportunity costs require separate design/playtest assessment.",
+        "A dossier without a risk flag does not thereby pass difficulty, balance or engagement QA.",
+    ]
+    if any(record.get("designProfile") == V3_DESIGN_PROFILE for record in records):
+        limits.append("Finite v3 financial alternatives are not gathering, timing or game evidence.")
     return {
         "sourceSha256": before,
         "scope": "All policy campaigns; only authored episodes[] dossiers counted",
         "riskRule": "No structured hostile cap/entity, no positive structured deadline key, identical accessible budgets across all three difficulties",
-        "limits": [
-            "Static inspection only: no historical, architectural, native or playability approval.",
-            "Role names and deadline keys are heuristic signals, not evidence of working AoE2 opposition.",
-            "Logistics, terrain, allocation and optional opportunity costs require separate design/playtest assessment.",
-            "A dossier without a risk flag does not thereby pass difficulty, balance or engagement QA.",
-        ],
+        "limits": limits,
         "counts": {
             "dossierCount": len(records),
             "byCampaign": {c["campaignId"]: len(c["episodes"]) for c in campaigns},
