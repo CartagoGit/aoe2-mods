@@ -71,11 +71,20 @@ def fulfillment_wiki(campaign, episode):
     for level in ("easy", "standard", "hard"):
         analysis = episode["selectionAnalysisByDifficulty"][level]
         optional = episode["optionalPrefixAnalysisByDifficulty"][level]
+        after_funding = {
+            tuple(row["recipeIds"]): row
+            for row in optional["afterFundingSelections"]
+        }
         rows += [f"### {level}", "", "Accounts:", "", "```json", json.dumps(episode["accountsByDifficulty"][level], ensure_ascii=False, indent=2), "```", "",
-                 f"Reachable optional financial subsets: {optional['reachableSubsetCount']} of {2 ** len(profile['secondaryObjectives'])}; all optional tasks affordable in a prefix: {optional['allOptionalTasksAffordable']}. Spatial predicates and actor availability are assumed successful.", "",
-                 "| Recipe selection | Total cost | Affordable | Spendable remainder |", "|---|---|---:|---|"]
+                 f"Before main funding: {optional['reachableSubsetCount']} of {2 ** len(profile['secondaryObjectives'])} optional subsets are reachable from initial spendable stock; all optional tasks are reachable in that prefix: {optional['allOptionalTasksAffordable']}. This prefix does not include a service selection.", "",
+                 f"After main funding: {optional['mainAffordableSelectionCount']} of {len(analysis['selections'])} recipe selections are affordable from initial spendable stock; {optional['allOptionalTasksAffordableAfterFundingCount']} affordable selections permit all optional tasks in an affordable prefix. Unaffordable selections have no after-funding witness. These are finite accounting cases and assume spatial predicates and actor availability succeed.", "",
+                 "| Recipe selection | Total cost | Main affordable | Spendable stock after main selection | Reachable optional subsets after funding | All optional tasks affordable after funding |", "|---|---|---:|---|---:|---|"]
         for row in analysis["selections"]:
-            rows.append(f"| {', '.join(f'`{item}`' for item in row['recipeIds'])} | `{json.dumps(row['totalCost'], sort_keys=True)}` | {row['affordable']} | `{json.dumps(row['spendableRemainder'], sort_keys=True)}` |")
+            funded = after_funding[tuple(row["recipeIds"])]
+            remainder = json.dumps(funded["initialRemainder"], sort_keys=True) if row["affordable"] else "—"
+            reachable = funded["reachableSubsetCount"] if row["affordable"] else "—"
+            all_optionals = funded["allOptionalTasksAffordable"] if row["affordable"] else "—"
+            rows.append(f"| {', '.join(f'`{item}`' for item in row['recipeIds'])} | `{json.dumps(row['totalCost'], sort_keys=True)}` | {row['affordable']} | `{remainder}` | {reachable} | {all_optionals} |")
         rows.append("")
     rows += ["## Optional objectives", "", "The exact authored v3 contracts follow; their presence does not establish task reachability in the game.", "", "```json",
              json.dumps(profile["secondaryObjectives"], ensure_ascii=False, indent=2), "```", "",

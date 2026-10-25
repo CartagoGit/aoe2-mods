@@ -523,12 +523,31 @@ describe("typed fulfillment dossier projection", () => {
             reachableSubsetCount: number;
             protectedRecoveryExcluded: boolean;
             examples: Array<{ completedTaskIds: string[] }>;
+            scope: string;
+            afterFundingSelections: Array<{
+              recipeIds: string[];
+              mainAffordable: boolean;
+              initialRemainder: Record<string, number> | null;
+              scope: string;
+              reachableSubsetCount: number | null;
+              allOptionalTasksAffordable: boolean | null;
+              examples: Array<{ completedTaskIds: string[] }> | null;
+              reason?: string;
+            }>;
+            mainAffordableSelectionCount: number;
+            allOptionalTasksAffordableAfterFundingCount: number;
           }
         >;
         selectionAnalysisByDifficulty: Record<
           string,
-          { affordableSelections: string[][] }
+          { affordableSelections: string[][]; selections: unknown[] }
         >;
+        optionalFinancialInputs: {
+          optionalTasks: Array<{
+            id: string;
+            cost: { food: number; wood: number; gold: number; stone: number };
+          }>;
+        };
       }>;
     };
     expect(response.projections).toHaveLength(1);
@@ -551,6 +570,12 @@ describe("typed fulfillment dossier projection", () => {
     expect(
       projection?.selectionAnalysisByDifficulty.hard?.affordableSelections,
     ).toHaveLength(3);
+    const hardAnalysis = projection?.optionalPrefixAnalysisByDifficulty.hard;
+    expect(hardAnalysis?.scope).toBe("before-main-funding");
+    expect(hardAnalysis?.afterFundingSelections).toHaveLength(
+      projection?.selectionAnalysisByDifficulty.hard?.selections.length ?? -1,
+    );
+    expect(hardAnalysis?.mainAffordableSelectionCount).toBe(3);
     expect(projectFulfillmentDossiers({ requests: [request] })).toEqual(
       projectFulfillmentDossiers({ requests: [request] }),
     );
@@ -561,18 +586,41 @@ describe("typed fulfillment dossier projection", () => {
         >
       ).secondaryObjectives.map((side) => [side.id, side.kind]),
     );
-    const hardExamples =
-      projection?.optionalPrefixAnalysisByDifficulty.hard?.examples ?? [];
+    const hardSelection = found(
+      hardAnalysis?.afterFundingSelections.find(
+        (row) =>
+          row.recipeIds.includes(recipeIds.mealHearth) &&
+          row.recipeIds.includes(recipeIds.shelterRented),
+      ),
+    );
+    expect(hardSelection.scope).toBe("after-main-funding");
+    expect(hardSelection.mainAffordable).toBe(true);
+    expect(hardSelection.initialRemainder?.wood).toBe(20);
+    const aidId = Object.keys(kindsById).find((id) => kindsById[id] === "aid");
+    const repairId = Object.keys(kindsById).find(
+      (id) => kindsById[id] === "repair",
+    );
+    expect(aidId).toBeDefined();
+    expect(repairId).toBeDefined();
     expect(
-      hardExamples.some((example) => {
-        const aid = example.completedTaskIds.findIndex(
-          (id) => kindsById[id] === "aid",
-        );
-        const repair = example.completedTaskIds.findIndex(
-          (id) => kindsById[id] === "repair",
-        );
-        return aid >= 0 && repair > aid;
-      }),
+      projection?.optionalFinancialInputs.optionalTasks.find(
+        (task) => task.id === repairId,
+      )?.cost.wood,
+    ).toBe(50);
+    expect(
+      hardSelection.examples?.some(
+        (example) =>
+          example.completedTaskIds.length === 1 &&
+          example.completedTaskIds[0] === repairId,
+      ),
+    ).toBe(false);
+    expect(
+      hardSelection.examples?.some(
+        (example) =>
+          example.completedTaskIds.length === 2 &&
+          example.completedTaskIds[0] === aidId &&
+          example.completedTaskIds[1] === repairId,
+      ),
     ).toBe(true);
   });
 
@@ -797,7 +845,7 @@ describe("typed fulfillment dossier projection", () => {
       "for field,mutate in [('service',lambda d: d['fulfillmentServices'][0]['recipes'][0]['cost'].__setitem__('food',d['fulfillmentServices'][0]['recipes'][0]['cost']['food']+1)),('worker',lambda d: d['fulfillmentServices'][0]['recipes'][0].__setitem__('workerId','fixture.drift-worker')),('recipient',lambda d: d['fulfillmentServices'][0]['recipes'][0]['recipientIds'].append('fixture.drift-recipient')),('analysis',lambda d: d['selectionAnalysisByDifficulty']['hard']['spendable'].__setitem__('food',-1)),('financial',lambda d: d['optionalFinancialInputs']['optionalTasks'][0]['cost'].__setitem__('food',999))]:\n d=copy.deepcopy(e); mutate(d); assert validator.audit_dossier(d,p['campaign'],projection_context={'request':req,'projection':p['projection']}), field",
       "profile_drift=copy.deepcopy(e); profile_drift['referenceCapabilityProfile']['fulfillmentPlan']['services'][0]['recipes'][0]['cost']['food']+=1; assert validator.audit_dossier(profile_drift,p['campaign'],projection_context={'request':req,'projection':p['projection']})",
       "wiki=pipeline.fulfillment_wiki(p['campaign'],e); svg=pipeline.diagram(e,[])",
-      "assert 'Alternative services' in wiki and 'Authored presentation' in wiki and '<svg' in svg",
+      "assert 'Alternative services' in wiki and 'Authored presentation' in wiki and 'Before main funding:' in wiki and 'After main funding:' in wiki and 'Reachable optional subsets after funding' in wiki and '<svg' in svg",
       "import xml.etree.ElementTree as ET",
       "tall=copy.deepcopy(e); base_hub=tall['mapPlan']['hubs'][0]['id']; tall['mapPlan']['hubs']=[{'id': (base_hub if i==1 else f'{base_hub}.{i}'),'centre':[min(20+i*18,380),60],'lonLat':[0,0],'name':{'en':f'Synthetic district {i}','es-ES':f'Distrito sintético {i}'},'radiusTiles':3,'certainty':'synthetic only'} for i in range(1,20)]",
       "tall_svg=pipeline.diagram(tall,[]); root_svg=ET.fromstring(tall_svg); canvas_height=float(root_svg.attrib['viewBox'].split()[3]); text_rows=root_svg.findall('{http://www.w3.org/2000/svg}text'); final_label=next(row for row in text_rows if row.text=='19: Synthetic district 19'); final_legend=next(row for row in text_rows if row.text=='No ancient shore or elevation inferred'); assert canvas_height>850 and canvas_height>=max(float(final_label.attrib['y']),float(final_legend.attrib['y']))+12",
