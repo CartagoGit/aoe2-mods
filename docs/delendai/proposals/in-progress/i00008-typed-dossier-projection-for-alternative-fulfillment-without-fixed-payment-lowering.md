@@ -2,10 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-25
+last-transition-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
+last-correlation-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
+last-transition-from: ready
+last-transition-at: 2026-10-25T01:26:46.091Z
 ---
 
 # i00008 — Typed dossier projection for alternative fulfillment without fixed-payment lowering
@@ -30,12 +34,14 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - global_gate: none
 
 ### S1 — Architect decision and projection acceptance contract
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/architecture/fulfillment-dossier-projection.md`, `docs/qa/fulfillment-dossier-projection/acceptance-matrix.json`
 - **Gate**: e2e
 - acceptance:
   - "Define a single authoritative v3 profile with derived dossier views, exact source-to-zone mapping, shared objective versus fulfillment completion, financial proofs and immutable legacy boundary."
   - "Close responsibilities, rejection cases and mechanical implementation instructions; independent review before S2."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Reusable opt-in projection, validation and rendering
 - **Status**: pending
