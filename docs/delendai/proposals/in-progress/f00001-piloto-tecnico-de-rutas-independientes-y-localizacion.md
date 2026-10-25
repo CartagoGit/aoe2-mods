@@ -12,6 +12,7 @@ last-transition-from: ready
 last-transition-at: 2026-10-24T20:37:48.494Z
 shipped-in:
   - "06e688e87a0b3617ad8049b073b8f9f35e832b00"
+  - "9d5e744b0b33a005e2e01b14a2215275acf6b35a"
 ---
 
 # f00001 — Piloto tecnico de rutas independientes y localizacion
@@ -47,7 +48,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - review-log: approved by gpt-6-luna — verified at 06e688e87a0b, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Integrated docs/wiki/route-pilot/02-implementation-specification.md and 15-text-inventory.json describe both maps, the A/B oracle, replay, recap truth table an… (2) docs/wiki/route-pilot/03-acceptance-matrix.md enumerates the profile, route order, save/load, simultaneous terminal and localization cases; native outcomes rem… — Independent review of integrated S1 specification. The 36 source strings are materializable; seven conditional texts remain documentary only. Adaptive recap/profile reads, native layouts and gameplay remain pending and outside S1. bun run validate exited 0 (142/142 tests, 2069 expectations). Verdict is limited to S1 specification and does not approve S2–S4 or gameplay. No formal review round was opened.
 
 ### S2 — Borradores completos de los dos mods
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`
 - **Gate**: e2e
@@ -55,8 +56,10 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
   - "Fuentes completas de ambos mods en staging: escenarios, metadatos, narradores, 17 catálogos draft con claves semánticas y manifiestos licenciados."
   - "Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes; terminal común; predecesora opcional y sucesora autocontenida."
   - "bun run staging:check route-pilot y bun run staging:check route-successor pasan sin --partial. No activar carpetas en campaigns ni modificar el lock en este slice."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6
+- review-log: approved by gpt-6 — verified at 9d5e744b0b33, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed four source files and exact 23+13 key inventories across all 17 configured draft locales; EN/es-ES match architect inventory. Fictional narrators and … (2) Verified ordered routes and permanent distinct keys, prepare prerequisite and defeat-first single-terminal source; T02 has no route/progress mutation or prereq… (3) Both independent complete staging checks returned complete=true,pending=[],issues=[]. Final independent bun run validate passed142/142 tests2069expectations, d… — Independent review of gpt-6-luna implementation, final duration correction 6be2353, officially published at 9d5e744b. Both complete staging checks and independent final validate passed. All source acceptance criteria met; translations remain draft, native and engine evidence pending. Details in docs/qa/route-pilot/s2-source-bundle-independent-review.md.
 
 ### S3 — Materialización conjunta, IDs y glosario
 - **Status**: pending
