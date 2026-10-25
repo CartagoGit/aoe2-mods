@@ -29,12 +29,14 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 - global_gate: type
 
 ### S1 — Architect pooled-original mapping decision and closed packet
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/architecture/pooled-survivor-projection.md`, `docs/handoffs/POOLED-SURVIVOR-PROJECTION-PACKET.md`
 - **Gate**: type
 - acceptance:
   - "Specify a strict internal choice of one existing group or a nonempty unique groups array, stable flattening of already generated main IDs, valid positive minimum no greater than unique pool size, and explicit diagnostics for malformed/unknown/duplicate inputs, with real artificial reproduction."
   - "Keep unchanged public reference loss/current-presence contracts, actor origins and identity, legacy output, external i00009/S2 serialization requirement, no historical authorization and independent verification boundaries."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Implement strict survivor projection and verify the existing loss reference
 - **Status**: pending
