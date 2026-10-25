@@ -203,8 +203,16 @@ def _v3_episode_audit(campaign, episode):
     selection_analysis = episode.get("selectionAnalysisByDifficulty")
     if not isinstance(selection_analysis, dict) or set(selection_analysis) != set(LEVELS):
         raise ValueError(f"{label}: missing selection analysis for all difficulties")
-    if difficulty != selection_analysis:
-        raise ValueError(f"{label}: difficulty must exactly match selectionAnalysisByDifficulty")
+    try:
+        difficulty_json = json.dumps(difficulty, sort_keys=True, allow_nan=False)
+        selection_analysis_json = json.dumps(selection_analysis, sort_keys=True, allow_nan=False)
+    except (TypeError, ValueError, OverflowError, RecursionError) as error:
+        raise ValueError(
+            f"{label}: difficulty and selectionAnalysisByDifficulty must be JSON-serializable "
+            f"for exact comparison: {error}"
+        ) from error
+    if difficulty_json != selection_analysis_json:
+        raise ValueError(f"{label}: difficulty must exactly match selectionAnalysisByDifficulty as JSON")
 
     accounts = episode.get("accountsByDifficulty")
     if not isinstance(accounts, dict) or set(accounts) != set(LEVELS):
