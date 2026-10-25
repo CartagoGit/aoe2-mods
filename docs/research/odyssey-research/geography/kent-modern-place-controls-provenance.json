@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "collector": "gpt-6-luna",
+  "collector": "gpt-6",
   "independentContrast": "gpt-6 reread all three OSM node JSON responses on 2026-10-25 and compared exact IDs/names/coordinates. Browser API opens failed; ordinary HTTPS JSON fetch succeeded.",
   "sourceCollection": "Bounded collection supplied by gpt-6-luna; original notes retained in the working session. No statement here promotes a source or profile.",
   "artifact": {
@@ -118,5 +118,6 @@
     "Modern village/city labels are not a sixth-century landfall or archaeology boundary.",
     "No channel or route geometry is supplied; the 597 shoreline and Wantsum crossing remain unresolved.",
     "A report-area National Grid reference, a modern satnav point and a UNESCO church component must not be silently substituted for these nodes or an event location."
-  ]
+  ],
+  "priorSourceCollectionBy": "gpt-6-luna"
 }
