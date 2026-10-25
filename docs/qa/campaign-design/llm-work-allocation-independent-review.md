@@ -12,9 +12,9 @@ This is a scoped document review. It does not approve S11 as a whole or the six 
 
 ## Findings
 
-One non-blocking wording correction is recommended in the S2 packet. It says that empty optional dependencies are required because the reused financial helper does not schedule dependency-gated tasks. The helper indeed ignores dependency fields, but the existing `validateSharedScenarioCapability` already rejects every side objective with nonempty `dependencies` (`capability.secondary-optional`). The packet should identify that existing semantic-validator rejection as the input boundary as well as noting that `optional_states` has no dependency scheduler. This does not require a schema or validator change, and the current instruction to reject rather than erase dependencies is safe.
+The initial candidate had one non-blocking wording gap: it attributed empty optional dependencies only to the accounting helper, although the existing `validateSharedScenarioCapability` already rejects every side objective with nonempty `dependencies` (`capability.secondary-optional`). Architect commit `83560f4f0a378deceb648cf2ee8130d192bb63e5` corrected the packet to require preserving that existing validator rejection and separately state that the helper has no dependency scheduler. I confirm the finding is closed; it needs no schema or validator change.
 
-I found no other discrepancy within the requested scope. The implementation limitations describe a design projection and do not imply that code, native behavior, a historical dossier or game verification already exists.
+I found no remaining discrepancy within the requested scope. The implementation limitations describe a design projection and do not imply that code, native behavior, a historical dossier or game verification already exists.
 
 ## Cross-check evidence
 
