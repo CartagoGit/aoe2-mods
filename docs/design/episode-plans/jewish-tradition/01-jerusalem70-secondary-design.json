@@ -53,8 +53,8 @@
         "es-ES": "Una puerta abierta"
       },
       "goal": {
-        "en": "Bring both separate consenting neighboring groups to their marked places in the temporary receiving district alive. They do not count among the eight main households.",
-        "es-ES": "Lleva con vida ambos grupos vecinos voluntarios a sus lugares señalados en el distrito receptor provisional. No cuentan entre los ocho hogares principales."
+        "en": "Bring both distinct consenting neighboring groups alive to the same marked neighboring-household court in the temporary receiving district. They do not count among the eight main households.",
+        "es-ES": "Lleva con vida los dos grupos vecinos voluntarios distintos al mismo patio señalado para hogares vecinos del distrito receptor provisional. No cuentan entre los ocho hogares principales."
       },
       "benefit": {
         "en": "Two additional fictional neighboring groups reach temporary shelter. This intrinsic local outcome gives no extra resources, healing, military unit or historical safe-conduct.",
@@ -85,7 +85,23 @@
       "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
       "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
       "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
-      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh.",
+      "receivingDecision": {
+        "zoneCount": 1,
+        "bothOriginalsRequired": true,
+        "sameOptionalZone": true,
+        "candidateZoneOffsetTiles": [
+          8,
+          0
+        ],
+        "candidateRadiusTiles": 3,
+        "mainFinalZoneOffsetTiles": [
+          0,
+          0
+        ],
+        "mainFinalRadiusTiles": 3,
+        "separation": "Eight-tile centre separation gives two tiles between the nominal radius3 circles; full native footprints and access remain pending. The two optional originals share one optional receiving zone; neither enters the main original identity set."
+      }
     },
     {
       "id": "side-3",
@@ -99,8 +115,8 @@
         "es-ES": "Escolta al guía local original hasta el recodo occidental señalado. El acceso occidental ya está disponible y se indica aunque omitas esta tarea."
       },
       "benefit": {
-        "en": "Mark the authored western-main connection once; no gate opens, slope changes or road appears.",
-        "es-ES": "Señala una vez la conexión occidental western-main ya diseñada; no se abre una puerta, cambia una pendiente ni aparece un camino."
+        "en": "Mark the existing western approach once; no gate opens, slope changes or road appears.",
+        "es-ES": "Señala una vez el acceso occidental ya disponible; no se abre una puerta, cambia una pendiente ni aparece un camino."
       },
       "planOriginHub": "muster",
       "planReceivingHub": "western-turn",
@@ -140,8 +156,8 @@
         "es-ES": "Visita ambos lugares de observación señalados en el mirador oriental y el recodo central. Los destinos principales se indican en los objetivos desde el comienzo."
       },
       "benefit": {
-        "en": "Mark the already available eastern-main approach and its return junction so the divided escort can be planned; reveal no unplaced army or guaranteed safe route.",
-        "es-ES": "Señala el acceso eastern-main ya disponible y su cruce de retorno para planear la escolta dividida; no revela un ejército sin colocar ni garantiza una ruta segura."
+        "en": "Mark the existing eastern approach and its return junction so the divided escort can be planned; reveal no unplaced army or guaranteed safe route.",
+        "es-ES": "Señala el acceso oriental ya disponible y su cruce de retorno para planear la escolta dividida; no revela un ejército sin colocar ni garantiza una ruta segura."
       },
       "planOriginHub": "eastern-lookout",
       "planReceivingHub": "central-turn",
@@ -314,7 +330,8 @@
       "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
       "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
       "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
-      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh.",
+      "compositionDecision": "When composing the real authored blueprint, map goal to instruction and benefit plus informationDecision to the existing information override, with observationHubs hub-13/hub-17. Do not use scout default wave roster or default scout caption. This documentary object is not an executable optionalTasks row."
     }
   ],
   "economyDecision": {
