@@ -30,12 +30,14 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
 - global_gate: type
 
 ### S1 — Architect decision, real reproduction and closed implementation packet
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/architecture/authored-secondary-rewards.md`, `docs/handoffs/AUTHORED-SECONDARY-REWARDS-PACKET.md`
 - **Gate**: type
 - acceptance:
   - "Specify one optional internal authoring field resourceReward for existing finite-supply-withdrawal kinds only, using shared strict resource validation; omission preserves byte-identical legacy output and costs remain unchanged."
   - "Specify truthful zero-reward presentation, actual-contract-derived reward/cost budgets, finite reserved funding, failure cases and explicit no native/historical approval. Include a bounded real reproduction of the current missing projection and a closed artificial mechanical task."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Reusable optional reward projection and budget derivation
 - **Status**: pending
