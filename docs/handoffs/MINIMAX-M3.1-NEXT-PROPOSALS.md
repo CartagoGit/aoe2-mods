@@ -4,6 +4,8 @@ Recupera del servidor DelendAI el estado, ruta, aceptación y dependencias de ca
 
 **f00001/S1, piloto técnico**, fue especificado por el arquitecto, aprobado formalmente por `gpt-6-luna` e integrado (`06e688e`, metadatos `3c41b4f5`); está `done`. f00001/S2 fue implementado por `gpt-6-luna`, revisado por GPT-6 e integrado en `9d5e744b`. La consulta viva de DelendAI todavía registra f00001 `in-progress` y S2 `review`; no afirmar `done` hasta que el veredicto formal se integre en el servidor. S3 se inicia solo después de ese estado oficial. El propietario autorizó a Luna para este trabajo mecánico durante la cuota agotada de MiniMax, sin cambio de proveedor ni compra de créditos. El alcance histórico vigente son nueve odiseas y 278 selecciones: 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. La base anterior de 39 contratos conserva identidad.
 
+Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md); ambos complementan estos IDs y estados del servidor.
+
 ## Infraestructura y arquitectura
 
 | Propuesta | Responsable | Alcance y gate pendiente |

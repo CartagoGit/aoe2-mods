@@ -158,7 +158,9 @@ La especificación de f00001/S1 y su [matriz de aceptación](../wiki/route-pilot
 
 ## Estado operativo sincronizado — 25 de octubre de 2026
 
-La consulta viva de DelendAI registra d00002/S1 `done` y S2–S11 `pending`. El estado editorial suma 278 selecciones, 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. La auditoría mecánica identifica 54 candidatos estáticos de riesgo cívico; no son defectos demostrados ni balance jugado. Hay 26 perfiles geográficos y 47 recursos de investigación; cuatro datos modernos del Hijaz no reducen las 22 selecciones que siguen sin perfil.
+Consulta el [reparto de trabajo](../handoffs/LLM-WORK-ALLOCATION.md) y la [cola de paquetes](../handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md) para las asignaciones vigentes.
+
+La consulta viva de DelendAI registra d00002/S1 `done` y S2–S11 `pending`. El estado editorial suma 278 selecciones, 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. La auditoría mecánica identifica 54 candidatos estáticos de riesgo cívico; no son defectos demostrados ni balance jugado. Hay 26 perfiles geográficos y 47 recursos de investigación; cuatro datos modernos del Hijaz no resuelven las 22 identidades geográficas faltantes, que afectan a 25 selecciones.
 
 f00001/S2 fue implementado mecánicamente por `gpt-6-luna`, revisado por GPT-6 e integrado en `9d5e744b`. La consulta de propuesta disponible al redactar este corte sigue mostrando S2 `review`, no `done`; S3 solo puede comenzar cuando el veredicto formal esté integrado en DelendAI. El propietario autorizó a Luna para este trabajo mecánico durante la cuota agotada de MiniMax; no hubo cambio automático de proveedor ni compra de créditos. La integración no acredita ejecución nativa ni verificación en AoE2.
 

@@ -33,11 +33,13 @@ Para sesiones posteriores usa el prompt de WORKFLOW. La publicación del mod, la
 
 ## Ampliación de diseño vigente
 
+Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md) para saber qué trabajo está asignado; recupera siempre el estado del servidor.
+
 El encargo vigente usa inglés como fuente inicial y nueve odiseas con 278 episodios seleccionados; los 39 contratos del catálogo previo conservan su identidad. La planificación específica está en [catálogo](../design/README.md), [contrato](../design/production-contract.md) y [asignaciones porcampaña](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md). Esos dossiers sustituyen los briefs provisionales en decisiones editoriales; conservan IDs existentes y los gates de pilotos/capacidades/motor. MiniMax verifica y materializa, no diseña historia, narradores, mapas ni nuevas economías. Recuperar estados oficiales antes de elegir slice.
 
 ## Estado de la ampliación de 278 episodios
 
-El alcance histórico actual es d00002: nueve odiseas con cinco actos y 278 selecciones, no 39 escenarios como extensión final. Hay 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. Existen 47 recursos de investigación y 26 perfiles geográficos; cuatro datos modernos del Hijaz no reducen las 22 selecciones geográficas aún sin perfil. La auditoría cívica registra 54 candidatos de riesgo estáticos, no defectos demostrados ni dificultad aprobada. Las nueve propuestas históricas siguen bloqueadas; recupera los estados vivos y respeta dependencias antes de autoría.
+El alcance histórico actual es d00002: nueve odiseas con cinco actos y 278 selecciones, no 39 escenarios como extensión final. Hay 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. Existen 47 recursos de investigación y 26 perfiles geográficos; cuatro datos modernos del Hijaz no resuelven las 22 identidades geográficas faltantes, que afectan a 25 selecciones. La auditoría cívica registra 54 candidatos de riesgo estáticos, no defectos demostrados ni dificultad aprobada. Las nueve propuestas históricas siguen bloqueadas; recupera los estados vivos y respeta dependencias antes de autoría.
 
 
 La ampliación imperial de cobertura365–380 conserva los IDs y cambia solo el orden de presentación de la ley380 y el concilio381, ahora32y34. Los cinco episodios nuevos tienen slices designados: los órdenes28–31 tienen dossier en revisión y el orden33 sigue sin dossier completo. El total es63borradores; hay 215 selecciones pendientes de dossier. No interpretar la migración de278como permiso para decidir su geografía o nivelación.
