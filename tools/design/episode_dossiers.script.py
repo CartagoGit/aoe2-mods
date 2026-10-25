@@ -407,6 +407,7 @@ def run(check=False):
         v3_plans = [plan for plan in campaign.get("episodeBlueprints", [])
                     if isinstance(plan, dict) and "designProfile" in plan]
         v3_projections = {}
+        v3_projection_contexts = {}
         if v3_plans:
             request_fields = (
                 "episodeId", "referenceCapabilityProfile", "accountsByDifficulty", "mapSize",
@@ -419,6 +420,10 @@ def run(check=False):
                 batch.append({field: plan[field] for field in request_fields if field in plan})
             projected = fulfillment.project_batch(batch)
             v3_projections = {row["episodeId"]: row for row in projected["projections"]}
+            v3_projection_contexts = {
+                request["episodeId"]: {"request": request, "projection": row}
+                for request, row in zip(batch, projected["projections"])
+            }
         episodes = []
         for plan in campaign["episodeBlueprints"]:
             selection = selected[plan["episodeId"]]
@@ -443,7 +448,10 @@ def run(check=False):
                 episode = factory.build_dossier(
                     campaign, selection, plan, geography_profile, next_selection, baseline,
                 )
-            failures = validator.audit_dossier(episode, campaign, baseline)
+            failures = validator.audit_dossier(
+                episode, campaign, baseline,
+                projection_context=v3_projection_contexts.get(plan.get("episodeId")),
+            )
             if failures:
                 raise ValueError("\n".join(failures))
             if selection.get("contractStatus") == "approved-complete-dossier":

@@ -1,6 +1,7 @@
 """Check authored episode contracts without asserting native behavior or balance."""
 
 import math
+import importlib.util
 import runpy
 from pathlib import Path
 from secondary import check_optional_objectives, audit_objective_numbers
@@ -11,11 +12,11 @@ audit_finale = continuity["audit_finale"]
 audit_entry = continuity["audit_entry"]
 
 
-def audit_dossier(episode, campaign=None, baseline=None):
+def audit_dossier(episode, campaign=None, baseline=None, projection_context=None):
     if "designProfile" in episode:
         if episode.get("designProfile") != "alternative-fulfillment-v3":
             return [f"{episode.get('id', 'unknown-episode')}: unsupported designProfile {episode.get('designProfile')!r}"]
-        return audit_fulfillment_dossier(episode)
+        return audit_fulfillment_dossier(episode, projection_context)
     failures = audit_objective_numbers(episode)
     if failures:
         return failures
@@ -622,7 +623,17 @@ def audit_dossier(episode, campaign=None, baseline=None):
     return failures
 
 
-def audit_fulfillment_dossier(episode):
+def _project_fulfillment_request(request):
+    helper_path = Path(__file__).with_name("fulfillment-dossier.helper.py")
+    spec = importlib.util.spec_from_file_location("fulfillment_dossier_helper", helper_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot load fulfillment bridge helper: {helper_path}")
+    helper = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(helper)
+    return helper.project_batch([request])["projections"][0]
+
+
+def audit_fulfillment_dossier(episode, projection_context=None):
     """Audit composed v3 documentary views without treating them as runtime proof."""
     failures = []
     label = episode.get("id", "unknown-episode")
@@ -636,6 +647,64 @@ def audit_fulfillment_dossier(episode):
           "missing explicit v3 reference profile")
     if not isinstance(profile, dict):
         return failures
+    bindings = episode.get("authoringPresentationBindings")
+    binding_fields = {"recipeBindings", "serviceBindings", "planScreenIds"}
+    check(isinstance(bindings, dict) and set(bindings) == binding_fields,
+          "missing exact authoring presentation bindings")
+    map_bindings = episode.get("mapBindings")
+    projection_request = None
+    if isinstance(bindings, dict) and set(bindings) == binding_fields and isinstance(map_bindings, dict):
+        projected_points = map_bindings.get("points", [])
+        raw_points = []
+        if isinstance(projected_points, list):
+            for row in projected_points:
+                if not isinstance(row, dict) or set(row) != {
+                    "pointId", "tile", "zoneId", "hubId", "offsetTiles", "absoluteTile", "radiusTiles"
+                }:
+                    raw_points = []
+                    break
+                raw_points.append({key: row[key] for key in ("pointId", "tile", "zoneId", "hubId", "offsetTiles")})
+        projection_request = {
+            "episodeId": episode.get("id"),
+            "referenceCapabilityProfile": profile,
+            "accountsByDifficulty": episode.get("accountsByDifficulty"),
+            "mapSize": episode.get("mapSize"),
+            "hubs": map_bindings.get("hubs"),
+            "pointZoneBindings": raw_points,
+            "recipeBindings": bindings.get("recipeBindings"),
+            "serviceBindings": bindings.get("serviceBindings"),
+            "planScreenIds": bindings.get("planScreenIds"),
+            "screens": episode.get("screens"),
+        }
+    else:
+        check(False, "cannot reconstruct typed request from authoring/map bindings")
+    stored_projection = episode.get("bridgeDossierProjection")
+    projection = None
+    if projection_request is not None:
+        if projection_context is not None:
+            context_request = projection_context.get("request") if isinstance(projection_context, dict) else None
+            projection = projection_context.get("projection") if isinstance(projection_context, dict) else None
+            check(context_request == projection_request,
+                  "reconstructed typed request differs from the verified projection context")
+        else:
+            try:
+                projection = _project_fulfillment_request(projection_request)
+            except Exception as error:
+                check(False, f"typed v3 profile/request failed bridge revalidation: {error}")
+    check(isinstance(stored_projection, dict) and stored_projection == projection,
+          "stored bridge projection differs from revalidated profile and authored bindings")
+    if isinstance(projection, dict):
+        for episode_field, projection_field in (
+            ("worldContract", "worldContract"), ("objectivePlan", "objectivePlan"),
+            ("stateMachine", "stateMachine"), ("secondaryObjectives", "secondaryObjectives"),
+            ("secondaryBudget", "secondaryBudget"), ("fulfillmentServices", "fulfillmentServices"),
+            ("selectionAnalysisByDifficulty", "selectionAnalysisByDifficulty"),
+            ("optionalFinancialInputs", "optionalFinancialInputs"),
+            ("optionalPrefixAnalysisByDifficulty", "optionalPrefixAnalysisByDifficulty"),
+            ("mapBindings", "mapBindings"), ("planScreenIds", "planScreenIds"), ("screens", "screens"),
+        ):
+            check(episode.get(episode_field) == projection.get(projection_field),
+                  f"derived {episode_field} differs from revalidated bridge projection")
     for field in ("worldContract", "objectivePlan", "stateMachine", "secondaryObjectives", "secondaryBudget"):
         check(episode.get(field) == profile.get(field),
               f"derived {field} differs from referenceCapabilityProfile")
@@ -683,11 +752,6 @@ def audit_fulfillment_dossier(episode):
     check([row.get("serviceId") for row in service_rows]
           == [row.get("id") for row in profile_services],
           "fulfillment services do not preserve authored order and identity")
-    for source, projected in zip(profile_services, service_rows):
-        source_recipes = [row.get("id") for row in source.get("recipes", [])]
-        projected_recipes = [row.get("recipeId") for row in projected.get("recipes", [])]
-        check(source_recipes == projected_recipes,
-              f"service {source.get('id')} recipes differ from the authored plan")
     screens = episode.get("screens", [])
     screen_ids = [row.get("id") for row in screens if isinstance(row, dict)]
     check(len(screen_ids) == len(screens) and len(set(screen_ids)) == len(screen_ids),

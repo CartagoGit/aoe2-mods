@@ -812,8 +812,7 @@ def _validate_fulfillment_metadata(campaign, selection, blueprint, metadata, nar
     if len(set(playstyle_ids)) != len(playstyle_ids):
         raise ValueError(f"{episode_id}: playstyle ids must be distinct")
     portfolio_signatures = {
-        (tuple(style["optionalObjectives"]), style["costOfOpportunity"])
-        for style in playstyles
+        frozenset(style["optionalObjectives"]) for style in playstyles
     }
     if len(portfolio_signatures) != len(playstyles):
         raise ValueError(f"{episode_id}: playstyle portfolios must be distinct")
@@ -956,6 +955,12 @@ def build_fulfillment_dossier(campaign, selection, blueprint, projection, geogra
         "geographyId": selection["geographyId"],
         "mapSize": blueprint["mapSize"],
         "mapPlan": map_plan,
+        "authoringPresentationBindings": {
+            "recipeBindings": copy.deepcopy(blueprint["recipeBindings"]),
+            "serviceBindings": copy.deepcopy(blueprint["serviceBindings"]),
+            "planScreenIds": copy.deepcopy(blueprint["planScreenIds"]),
+        },
+        "bridgeDossierProjection": copy.deepcopy(projection),
         "mapBindings": projection["mapBindings"],
         "referenceCapabilityProfile": profile,
         "worldContract": projection["worldContract"],
