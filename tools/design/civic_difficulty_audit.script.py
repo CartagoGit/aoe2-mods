@@ -191,8 +191,13 @@ def _v3_episode_audit(campaign, episode):
     episode_id = episode.get("id")
     label = f"{campaign}/{episode_id}"
     profile = episode.get("referenceCapabilityProfile")
-    if not isinstance(profile, dict) or type(profile.get("schemaVersion")) is not int or profile["schemaVersion"] != 3:
-        raise ValueError(f"{label}: missing schemaVersion 3 reference profile")
+    if (
+        not isinstance(profile, dict)
+        or profile.get("profile") != "composed-world-ledger"
+        or type(profile.get("schemaVersion")) is not int
+        or profile["schemaVersion"] != 3
+    ):
+        raise ValueError(f"{label}: expected composed-world-ledger schemaVersion 3 reference profile")
 
     difficulty = episode.get("difficulty")
     selection_analysis = episode.get("selectionAnalysisByDifficulty")
@@ -218,7 +223,13 @@ def _v3_episode_audit(campaign, episode):
         view = selection_analysis[level]
         if not isinstance(view, dict):
             raise ValueError(f"{label}/{level}: malformed selection analysis")
-        if view.get("spendable") != spendable or view.get("protectedRecovery") != protected:
+        view_spendable = _require_resource_vector(
+            view.get("spendable"), f"{label}/{level}/selectionAnalysis/spendable"
+        )
+        view_protected = _require_resource_vector(
+            view.get("protectedRecovery"), f"{label}/{level}/selectionAnalysis/protectedRecovery"
+        )
+        if view_spendable != spendable or view_protected != protected:
             raise ValueError(f"{label}/{level}: selection analysis account views differ from authored accounts")
         if not isinstance(view.get("selections"), list) or not isinstance(view.get("affordableSelections"), list):
             raise ValueError(f"{label}/{level}: malformed selection rows")

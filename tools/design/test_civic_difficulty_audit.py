@@ -27,6 +27,7 @@ def v3_episode():
             "affordableSelections": [["fixture.recipe"]] if index != 1 else [],
         }
     profile = {
+        "profile": "composed-world-ledger",
         "schemaVersion": 3,
         "worldContract": {"entities": []},
         "objectivePlan": [],
@@ -80,6 +81,15 @@ class CivicDifficultyAuditTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsupported designProfile"):
             audit["episode_audit"]("fixture", unknown)
 
+        for profile_mutation in (
+            lambda profile: profile.pop("profile"),
+            lambda profile: profile.__setitem__("profile", "unrecognized-profile"),
+        ):
+            malformed = copy.deepcopy(episode)
+            profile_mutation(malformed["referenceCapabilityProfile"])
+            with self.assertRaisesRegex(ValueError, "expected composed-world-ledger schemaVersion 3"):
+                audit["episode_audit"]("fixture", malformed)
+
         for mutate in (
             lambda row: row.pop("accountsByDifficulty"),
             lambda row: row["selectionAnalysisByDifficulty"].pop("hard"),
@@ -98,6 +108,19 @@ class CivicDifficultyAuditTests(unittest.TestCase):
             episode["selectionAnalysisByDifficulty"]["hard"]["spendable"]["wood"] = amount
             episode["difficulty"] = copy.deepcopy(episode["selectionAnalysisByDifficulty"])
             with self.subTest(amount=amount), self.assertRaisesRegex(ValueError, "safe integer"):
+                audit["episode_audit"]("fixture", episode)
+
+    def test_v3_rejects_boolean_or_fractional_account_views_even_when_equal_to_authored_integer(self):
+        for invalid in (True, 1.0):
+            episode = v3_episode()
+            for level in audit["LEVELS"]:
+                episode["accountsByDifficulty"][level]["spendable"]["food"] = 1
+                episode["selectionAnalysisByDifficulty"][level]["spendable"]["food"] = 1
+            episode["selectionAnalysisByDifficulty"]["easy"]["spendable"]["food"] = invalid
+            episode["difficulty"] = copy.deepcopy(episode["selectionAnalysisByDifficulty"])
+            with self.subTest(value=invalid), self.assertRaisesRegex(
+                ValueError, "selectionAnalysis/spendable/food.*safe integer"
+            ):
                 audit["episode_audit"]("fixture", episode)
 
     def test_v3_roster_sets_finite_pressure_without_relabeling_roles(self):
@@ -143,13 +166,61 @@ class CivicDifficultyAuditTests(unittest.TestCase):
         record = audit["episode_audit"]("fixture", episode)
         self.assertTrue(record["pressureMechanism"]["explicitStructuredDeadlinePresent"])
 
-    def test_legacy_audit_data_still_matches_the_63_dossier_report_exactly(self):
+    def test_legacy_episode_path_matches_fixed_baseline_record(self):
+        budget = {key: 10 for key in audit["RESOURCES"]}
+        episode = {
+            "id": "legacy.fixture",
+            "order": 1,
+            "coreMechanic": "legacy audit fixture",
+            "difficulty": {
+                level: {
+                    "accessibleWithoutOptionalRewards": dict(budget),
+                    "enemyTotalCap": 0,
+                    **({"waves": [{}]} if level == "standard" else {}),
+                }
+                for level in audit["LEVELS"]
+            },
+            "worldContract": {"entities": []},
+            "objectivePlan": [],
+            "secondaryObjectives": [],
+        }
+        expected = {
+            "campaign": "fixture",
+            "order": 1,
+            "episodeId": "legacy.fixture",
+            "coreMechanic": "legacy audit fixture",
+            "enemyTotalCapByDifficulty": {level: 0 for level in audit["LEVELS"]},
+            "enemyScheduledReleaseCounts": {"easy": 0, "standard": 1, "hard": 0},
+            "hostileRoleEntityCount": 0,
+            "pressureMechanism": {
+                "finiteHostilesPresent": False,
+                "explicitStructuredDeadlinePresent": False,
+                "deadlineFields": [],
+                "otherMainPredicateKinds": [],
+                "otherSecondaryPredicateKinds": [],
+            },
+            "mainObjectiveCount": 0,
+            "secondaryObjectiveCount": 0,
+            "difficulty": {
+                level: {
+                    "enemyTotalCap": 0,
+                    "initialEnemy": None,
+                    "scheduledWaveCount": int(level == "standard"),
+                    "maxVillagers": None,
+                    "accessibleWithoutOptionalRewards": budget,
+                }
+                for level in audit["LEVELS"]
+            },
+            "accessibleBudgetSameAcrossDifficulties": True,
+            "staticRiskCandidate": True,
+        }
+        self.assertEqual(audit["episode_audit"]("fixture", episode), expected)
+
+    def test_current_legacy_report_matches_current_source_fingerprints(self):
         report = audit["read"](audit["REPORT"])
         current = audit["build_audit"]()
         audit["check_report"](report, current)
         self.assertEqual(current, {key: report[key] for key in current})
-        self.assertEqual(current["counts"]["dossierCount"], 63)
-        self.assertEqual(current["counts"]["staticRiskCandidates"], 54)
 
     def test_v3_limit_is_added_only_when_v3_records_exist(self):
         episode = v3_episode()
