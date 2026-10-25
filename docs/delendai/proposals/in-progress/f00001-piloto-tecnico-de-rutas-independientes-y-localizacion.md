@@ -62,7 +62,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - review-log: approved by gpt-6 — verified at 9d5e744b0b33, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed four source files and exact 23+13 key inventories across all 17 configured draft locales; EN/es-ES match architect inventory. Fictional narrators and … (2) Verified ordered routes and permanent distinct keys, prepare prerequisite and defeat-first single-terminal source; T02 has no route/progress mutation or prereq… (3) Both independent complete staging checks returned complete=true,pending=[],issues=[]. Final independent bun run validate passed142/142 tests2069expectations, d… — Independent review of gpt-6-luna implementation, final duration correction 6be2353, officially published at 9d5e744b. Both complete staging checks and independent final validate passed. All source acceptance criteria met; translations remain draft, native and engine evidence pending. Details in docs/qa/route-pilot/s2-source-bundle-independent-review.md.
 
 ### S3 — Materialización conjunta, IDs y glosario
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2]
 - **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`, `campaigns/route-pilot`, `campaigns/route-successor`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
@@ -70,6 +70,8 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
   - "Reclamar todas las rutas del slice y promover ambos bundles completos en una misma entrega; ajustar asset.path al destino final y validar sus bytes/hashes."
   - "Ejecutar ids:allocate después de materializar y antes del commit; IDs previos inmutables, namespaces únicos, glosario completo por locale."
   - "bun run validate y export de ambos mods pasan; el commit incluye fuentes, escenarios, catálogos y lock, sin referencias pendientes."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S4 — Verificación y dossier de entrega
 - **Status**: pending
