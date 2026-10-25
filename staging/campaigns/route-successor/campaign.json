@@ -172,6 +172,46 @@
       }
     },
     {
+      "locale": "ja",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "新しいプレイヤープロファイルでも利用できる、独立した架空の振り返り用ラボ。",
+        "scenario.route-successor-recap.player-name": "ラボの読者",
+        "scenario.route-successor-recap.intro": "ここから始められます。この短いシナリオは自動的に終了します。",
+        "campaign.route-successor.personal": "私は記録簿から分かることを残し、分からないことには印を付けます。この年代記は、先の道筋が両方、片方、またはどちらも記録されていない状態から始められます。",
+        "scenario.route-successor-recap.title": "独立した始まり",
+        "scenario.route-successor-recap.marker-name": "ラボの目印",
+        "campaign.route-successor.victory": "振り返りテストが完了しました。キャンペーンメニューに戻ってください。",
+        "campaign.route-successor.advice": "先に遊ぶ作品：『道は覚えている』（CDF-T01）。この架空のラボにはルートAとルートBという別々の結末があり、再プレイすれば両方を記録できました。これを遊ばずに始めてもかまいません。このソース用見本データは固定の要約を表示するだけで、以前の記録を読み取りません。",
+        "scenario.route-successor-recap.finish-recap": "10秒間の表示テストが終わるまで待ってください。",
+        "campaign.route-successor.title": "開かれた年代記",
+        "campaign.route-successor.instructions": "開始前にキャンペーンの振り返りを読むか、スキップしてください。シナリオはアクティブ時間で10秒後に終了します。これは歴史的なゲームプレイではなく、表示を確認するテストです。",
+        "campaign.route-successor.handover": "記録係がこれから、以前の記録をどう読むか説明します。",
+        "campaign.route-successor.fact": "これは架空の技術検証ラボです。歴史上の出来事を再現せずに、独立したキャンペーン、累積する選択、振り返りを確認します。"
+      }
+    },
+    {
+      "locale": "ko",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "새 플레이어 프로필도 환영하는 독립형 가상 요약 실험실입니다.",
+        "scenario.route-successor-recap.player-name": "실험실 독자",
+        "scenario.route-successor-recap.intro": "여기서 시작할 수 있습니다. 이 짧은 시나리오는 자동으로 끝납니다.",
+        "campaign.route-successor.personal": "기록부가 알려 주는 것은 보존하고 알 수 없는 것은 따로 표시합니다. 이전 경로가 둘 다, 하나만, 또는 전혀 기록되지 않은 상태로 이 연대기를 시작할 수 있습니다.",
+        "scenario.route-successor-recap.title": "독립적인 시작",
+        "scenario.route-successor-recap.marker-name": "실험실 표식",
+        "campaign.route-successor.victory": "요약 테스트가 끝났습니다. 캠페인 메뉴로 돌아가세요.",
+        "campaign.route-successor.advice": "이전 작품 추천: 길은 기억한다(CDF-T01). 이 가상의 실험실에는 경로 A와 경로 B라는 서로 다른 결말이 있었고, 다시 플레이하면 둘 다 기록할 수 있었습니다. 이 작품을 플레이하지 않아도 여기서 시작할 수 있습니다. 이 원본 예시 데이터는 정적인 요약만 보여 주며 이전 기록을 읽지 않습니다.",
+        "scenario.route-successor-recap.finish-recap": "10초 표시 테스트가 끝날 때까지 기다리세요.",
+        "campaign.route-successor.title": "열린 연대기",
+        "campaign.route-successor.instructions": "시작 전에 캠페인 요약을 읽거나 건너뛰세요. 시나리오는 실제 시나리오 시간 10초 후 끝납니다. 역사적 게임플레이가 아니라 표시 기능을 점검합니다.",
+        "campaign.route-successor.handover": "이제 기록 관리자가 이전 기록을 읽는 방법을 설명합니다.",
+        "campaign.route-successor.fact": "이곳은 가상의 기술 실험실입니다. 역사적 사건을 재현하지 않고 독립 캠페인, 누적되는 선택, 요약 기능을 점검합니다."
+      }
+    },
+    {
       "locale": "pt-BR",
       "status": "draft",
       "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
@@ -212,6 +252,26 @@
       }
     },
     {
+      "locale": "zh-Hans",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "一个可供新玩家档案进入的独立虚构回顾实验室。",
+        "scenario.route-successor-recap.player-name": "实验室读者",
+        "scenario.route-successor-recap.intro": "你可以从这里开始。这个简短场景会自动结束。",
+        "campaign.route-successor.personal": "我会保存记录能够说明的内容，并标明它无法说明的部分。你可以在此前两条路线都已记录、只记录一条，或完全没有此前记录的情况下开启这部编年史。",
+        "scenario.route-successor-recap.title": "独立的开端",
+        "scenario.route-successor-recap.marker-name": "实验室标记",
+        "campaign.route-successor.victory": "回顾测试已完成。请返回战役菜单。",
+        "campaign.route-successor.advice": "建议先玩：《道路铭记》（CDF-T01）。那个虚构实验室提供路线A和路线B这两个不同结局；再次游玩可以保留两者。你也可以不玩它而直接从这里开始。此源数据夹具只显示静态摘要，不会读取你的先前记录。",
+        "scenario.route-successor-recap.finish-recap": "请等待十秒展示测试结束。",
+        "campaign.route-successor.title": "开放编年史",
+        "campaign.route-successor.instructions": "开始前，请阅读或跳过战役回顾。场景将在场景实际运行时间10秒后结束；此测试检查展示效果，不是历史游戏内容。",
+        "campaign.route-successor.handover": "档案管理员现在将说明如何读取先前记录。",
+        "campaign.route-successor.fact": "这是一个虚构的技术实验室，用于检查独立战役、累积选择和回顾内容，不代表任何历史事件。"
+      }
+    },
+    {
       "locale": "es-LATAM",
       "status": "draft",
       "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
@@ -232,6 +292,26 @@
       }
     },
     {
+      "locale": "zh-Hant",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "一個也歡迎新玩家檔案使用的獨立虛構回顧實驗室。",
+        "scenario.route-successor-recap.player-name": "實驗室讀者",
+        "scenario.route-successor-recap.intro": "你可以從這裡開始。這個簡短場景會自動結束。",
+        "campaign.route-successor.personal": "我會保存紀錄能說明的內容，並標明它無法說明的部分。你可以在先前兩條路線都已記錄、只記錄一條，或完全沒有先前紀錄的情況下開啟這部編年史。",
+        "scenario.route-successor-recap.title": "獨立的開端",
+        "scenario.route-successor-recap.marker-name": "實驗室標記",
+        "campaign.route-successor.victory": "回顧測試已完成。請返回戰役選單。",
+        "campaign.route-successor.advice": "建議先玩：《道路銘記》（CDF-T01）。那個虛構實驗室提供路線A與路線B這兩個不同結局；再次遊玩可以保留兩者。你也可以不玩它而直接從這裡開始。此來源資料夾具只顯示靜態摘要，不會讀取你的先前紀錄。",
+        "scenario.route-successor-recap.finish-recap": "請等待十秒呈現測試結束。",
+        "campaign.route-successor.title": "開放編年史",
+        "campaign.route-successor.instructions": "開始前，請閱讀或略過戰役回顧。場景會在場景實際運行時間10秒後結束；此測試檢查呈現效果，不是歷史遊戲內容。",
+        "campaign.route-successor.handover": "檔案管理員現在會說明如何讀取先前紀錄。",
+        "campaign.route-successor.fact": "這是一個虛構的技術實驗室，用來檢查獨立戰役、累積選擇與回顧內容，不代表任何歷史事件。"
+      }
+    },
+    {
       "locale": "tr",
       "status": "draft",
       "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
@@ -249,6 +329,26 @@
         "scenario.route-successor-recap.intro": "Buradan başlayabilirsin. Bu kısa senaryo kendiliğinden biter.",
         "scenario.route-successor-recap.marker-name": "Laboratuvar İşareti",
         "scenario.route-successor-recap.player-name": "Laboratuvar Okuyucusu"
+      }
+    },
+    {
+      "locale": "vi",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "Phòng thử nghiệm tóm lược hư cấu, độc lập và cũng dành cho hồ sơ người chơi mới.",
+        "scenario.route-successor-recap.player-name": "Người đọc trong phòng thử nghiệm",
+        "scenario.route-successor-recap.intro": "Bạn có thể bắt đầu ở đây. Màn chơi ngắn này sẽ tự động kết thúc.",
+        "campaign.route-successor.personal": "Tôi lưu lại những gì sổ ghi chép cho biết và đánh dấu những điều nó không thể cho biết. Bạn có thể mở biên niên sử này khi cả hai tuyến trước, chỉ một tuyến hoặc chưa tuyến nào được ghi nhận.",
+        "scenario.route-successor-recap.title": "Khởi đầu độc lập",
+        "scenario.route-successor-recap.marker-name": "Đánh dấu phòng thử nghiệm",
+        "campaign.route-successor.victory": "Đã hoàn tất thử nghiệm tóm lược. Hãy quay lại menu chiến dịch.",
+        "campaign.route-successor.advice": "Đề xuất chơi trước: Những con đường còn ghi dấu (CDF-T01). Phòng thử nghiệm hư cấu đó có hai kết thúc thay thế là Tuyến A và Tuyến B; chơi lại có thể lưu cả hai. Bạn vẫn có thể bắt đầu ở đây mà không cần chơi phòng đó. Mẫu dữ liệu nguồn này chỉ hiển thị bản tóm tắt tĩnh và không đọc hồ sơ trước của bạn.",
+        "scenario.route-successor-recap.finish-recap": "Hãy đợi thử nghiệm trình bày mười giây kết thúc.",
+        "campaign.route-successor.title": "Biên niên sử rộng mở",
+        "campaign.route-successor.instructions": "Hãy đọc hoặc bỏ qua phần tóm lược chiến dịch trước khi bắt đầu. Màn chơi kết thúc sau mười giây thời gian hoạt động của màn chơi; đây là thử nghiệm trình bày, không phải lối chơi lịch sử.",
+        "campaign.route-successor.handover": "Người lưu trữ sẽ giải thích cách đọc những hồ sơ trước đây.",
+        "campaign.route-successor.fact": "Đây là phòng thử nghiệm kỹ thuật hư cấu. Phòng này kiểm tra các chiến dịch độc lập, lựa chọn được tích lũy và phần tóm lược, không tái hiện sự kiện lịch sử."
       }
     },
     {
@@ -289,6 +389,46 @@
         "scenario.route-successor-recap.intro": "Możesz zacząć tutaj. Ten krótki scenariusz kończy się automatycznie.",
         "scenario.route-successor-recap.marker-name": "Znacznik laboratoryjny",
         "scenario.route-successor-recap.player-name": "Czytelnik laboratoryjny"
+      }
+    },
+    {
+      "locale": "hi",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "नई खिलाड़ी प्रोफ़ाइलों का भी स्वागत करने वाली स्वतंत्र काल्पनिक पुनरावलोकन परीक्षणशाला।",
+        "scenario.route-successor-recap.player-name": "परीक्षणशाला का पाठक",
+        "scenario.route-successor-recap.intro": "आप यहाँ से शुरू कर सकते हैं। यह छोटा परिदृश्य अपने आप समाप्त होगा।",
+        "campaign.route-successor.personal": "लेखा-पुस्तिका जो बता सकती है, मैं उसे रखता हूँ और जो नहीं बता सकती, उसे चिह्नित करता हूँ। आप इस वृत्तांत को पहले के दोनों मार्गों, केवल एक मार्ग, या बिना किसी पुराने लेखे के खोल सकते हैं।",
+        "scenario.route-successor-recap.title": "एक स्वतंत्र शुरुआत",
+        "scenario.route-successor-recap.marker-name": "परीक्षणशाला चिह्न",
+        "campaign.route-successor.victory": "पुनरावलोकन परीक्षण पूरा हुआ। अभियान मेनू पर लौटें।",
+        "campaign.route-successor.advice": "पहले खेलने की सिफारिश: रास्ते याद रखते हैं (CDF-T01)। उस काल्पनिक परीक्षणशाला में मार्ग A और मार्ग B दो वैकल्पिक अंत थे; दोबारा खेलने पर दोनों दर्ज रह सकते थे। आप उसे खेले बिना यहाँ शुरू कर सकते हैं। यह स्रोत नमूना केवल स्थिर सारांश दिखाता है और आपका पिछला लेखा नहीं पढ़ता।",
+        "scenario.route-successor-recap.finish-recap": "दस सेकंड के प्रस्तुति परीक्षण के समाप्त होने तक प्रतीक्षा करें।",
+        "campaign.route-successor.title": "एक खुला वृत्तांत",
+        "campaign.route-successor.instructions": "शुरू करने से पहले अभियान का पुनरावलोकन पढ़ें या छोड़ दें। परिदृश्य के सक्रिय समय के दस सेकंड बाद यह समाप्त होता है; यह प्रस्तुति की जाँच है, ऐतिहासिक खेल नहीं।",
+        "campaign.route-successor.handover": "अभिलेखपाल अब बताएगा कि पहले के लेखे कैसे पढ़े जाते हैं।",
+        "campaign.route-successor.fact": "यह एक काल्पनिक तकनीकी परीक्षणशाला है। यह किसी ऐतिहासिक घटना को दर्शाए बिना स्वतंत्र अभियानों, संचित विकल्पों और पुनरावलोकन की जाँच करती है।"
+      }
+    },
+    {
+      "locale": "ms",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "Makmal imbas kembali fiksyen yang berdiri sendiri dan turut menerima profil baharu.",
+        "scenario.route-successor-recap.player-name": "Pembaca Makmal",
+        "scenario.route-successor-recap.intro": "Anda boleh bermula di sini. Senario ringkas ini tamat secara automatik.",
+        "campaign.route-successor.personal": "Saya menyimpan perkara yang dapat diberitahu oleh lejar dan menandakan perkara yang tidak dapat dipastikannya. Anda boleh membuka kronik ini dengan kedua-dua laluan terdahulu, satu laluan sahaja, atau tanpa sebarang catatan terdahulu.",
+        "scenario.route-successor-recap.title": "Permulaan Bebas",
+        "scenario.route-successor-recap.marker-name": "Penanda Makmal",
+        "campaign.route-successor.victory": "Ujian imbas kembali selesai. Kembali ke menu kempen.",
+        "campaign.route-successor.advice": "Disyorkan untuk dimainkan dahulu: Jalan-Jalan yang Diingati (CDF-T01). Makmal fiksyen itu menawarkan Laluan A dan Laluan B sebagai pengakhiran berbeza; bermain semula boleh mengekalkan kedua-duanya. Anda boleh bermula di sini tanpa memainkannya. Contoh data sumber ini memaparkan ringkasan statik sahaja dan tidak membaca catatan terdahulu anda.",
+        "scenario.route-successor-recap.finish-recap": "Tunggu ujian paparan sepuluh saat selesai.",
+        "campaign.route-successor.title": "Kronik Terbuka",
+        "campaign.route-successor.instructions": "Baca atau langkau imbas kembali kempen sebelum bermula. Senario tamat selepas sepuluh saat masa senario aktif; ujian ini menyemak paparan, bukan permainan sejarah.",
+        "campaign.route-successor.handover": "Pengarkib akan menerangkan cara catatan terdahulu dibaca.",
+        "campaign.route-successor.fact": "Ini makmal teknikal fiksyen. Makmal ini menguji kempen bebas, pilihan terkumpul dan imbas kembali tanpa menggambarkan peristiwa sejarah."
       }
     }
   ],
