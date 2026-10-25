@@ -11,5 +11,10 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true
   },
-  "include": ["packages/**/*.ts", "tools/cli/**/*.ts", "tests/**/*.ts"]
+  "include": [
+    "packages/**/*.ts",
+    "tools/cli/**/*.ts",
+    "tools/design/**/*.ts",
+    "tests/**/*.ts"
+  ]
 }

@@ -8,6 +8,8 @@ En esta entrega i00001 y f00001/S1 están `done`. f00001/S2 fue implementado por
 
 Registro de procedencia: las actualizaciones de estado del handoff realizadas en `575ea5a7fb4572a3bdf11481f8b0f1f0b6597a47` y `ce2e91fd33482b9e785a437cd9f52fd245aab83f` fueron redactadas por `gpt-6-luna`. La identidad de autor/committer Git heredada en esos dos commits no corresponde a la autoría del contenido.
 
+Instrucción expresa del propietario, 25 de octubre de 2026: los próximos commits conservan el autor Git del usuario configurado, Cartago. No forzar el nombre/correo del modelo con `git -c user.name`, `git -c user.email`, `--author` o variables `GIT_AUTHOR_*`/`GIT_COMMITTER_*`. La identidad real del modelo permanece en `DELENDAI_AGENT_ID`, su sesión/unidad y la auditoría de DelendAI según la configuración instalada. El autor Git del propietario no acredita revisión humana. No reescribir commits anteriores ni cambiar la configuración global; las integraciones y pushes siguen mediante la publicación oficial.
+
 El piloto técnico de rutas puede avanzar por slices cerrados sin esperar a que terminen las nueve odiseas, pero esto no altera los bloqueos oficiales de autoría histórica. El piloto narrativo viene después. No empezar por una campaña completa. Los IDs observados se documentan en NEXT-PROPOSALS; recupera los actuales del servidor.
 
 ## Prompt inicial completo

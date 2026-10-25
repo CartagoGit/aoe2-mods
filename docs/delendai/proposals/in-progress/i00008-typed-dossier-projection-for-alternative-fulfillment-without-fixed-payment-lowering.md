@@ -48,7 +48,7 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - review-log: approved by gpt-6-luna — verified at 11fcf956f319, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Reviewed architecture and acceptance matrix; they define one strict v3 source, derived views, exact zone/point bindings, separate shared and fulfillment termin… (2) Responsibilities, bridge shape, failure handling, unsupported semantics and S2 gate are explicit; confirmed S1 only and implementation remains pending. — Independent design review on integrated 11fcf956. bun run validate exited 0: 142/142 tests, 2069 expectations. The 34 S2 matrix cases remain specified-not-executed; this approves S1 design only, not mapper implementation, S2, native, or gameplay.
 
 ### S2 — Reusable opt-in projection, validation and rendering
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `tools/design/fulfillment-dossier.mapper.ts`, `tools/design/fulfillment-dossier.script.ts`, `tools/design/fulfillment-dossier.helper.py`, `tools/design/episode_dossier.factory.py`, `tools/design/episode_dossier.validator.py`, `tools/design/episode_dossiers.script.py`, `tools/design/render.py`, `tools/design/test_design.py`, `tests/unit/fulfillment-dossier.test.ts`, `tsconfig.json`
 - **Gate**: e2e
@@ -56,6 +56,8 @@ The existing dossier factory derives budgets from fixed resource-transaction req
   - "Reuse capabilityProfileV3Schema and validateScenarioCapability. Keep exact authored recipes, identities, costs and lifecycle; reject unknown mappings/versions, drift between views, unsupported semantics or simultaneous fixed-payment lowering."
   - "Use artificial fixtures and adversarial tests for affordability, cost/reserve isolation, zones, outputs, terminal gates and truthful evidence. Verify all legacy dossier/wiki/map outputs unchanged."
   - "Run focused tests and bun run validate, then independent review and official publication. No native adapter, shared schema, historical content, ID or string-lock changes."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S3 — Design pipeline integration and handoff
 - **Status**: pending
