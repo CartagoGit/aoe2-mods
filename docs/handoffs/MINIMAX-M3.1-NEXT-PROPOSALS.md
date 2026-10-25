@@ -18,7 +18,7 @@ Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y l
 | i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
 | i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión aprobada; S2 referencia optativa v3 integrada en 4ac57b8f y aprobación independiente publicada en 66468212; S3 nativo/UI/motor pendiente de i00003 y s00001. El estudio económico por sí solo no implementa ningún slice |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
-| d00002 Odiseas extensas | Arquitecto | S1 arquitectura común; S2–S10 una campaña cada uno; S11 consolidación y traspaso. Continúa en curso |
+| d00002 Odiseas extensas | Arquitecto | S1 arquitectura común `done`; S2–S10 una campaña cada uno y S11 consolidación/traspaso siguen `pending` según estado recuperado |
 
 La [matriz de asignaciones](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md), las propuestas completas y los dossiers individuales gobiernan cada episodio. No se delegan decisiones pendientes de historia, nivelación, terreno ni contratos al agente de contenido.
 
