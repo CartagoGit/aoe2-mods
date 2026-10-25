@@ -2,14 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: in-progress
+status: review
 type: proposal
 track: campaign-factory
 date: 2026-10-25
-last-transition-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
-last-correlation-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
-last-transition-from: ready
-last-transition-at: 2026-10-25T01:26:46.091Z
+last-transition-id: 5f7f5a37-b8d1-4cb3-90cc-efcdcfef8a55
+last-correlation-id: 5f7f5a37-b8d1-4cb3-90cc-efcdcfef8a55
+last-transition-from: in-progress
+last-transition-at: 2026-10-25T13:24:20.246Z
 shipped-in:
   - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
 ---
@@ -46,6 +46,7 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - review-implementer: gpt-6
 - review-reviewer: gpt-6-luna
 - review-log: approved by gpt-6-luna — verified at 11fcf956f319, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Reviewed architecture and acceptance matrix; they define one strict v3 source, derived views, exact zone/point bindings, separate shared and fulfillment termin… (2) Responsibilities, bridge shape, failure handling, unsupported semantics and S2 gate are explicit; confirmed S1 only and implementation remains pending. — Independent design review on integrated 11fcf956. bun run validate exited 0: 142/142 tests, 2069 expectations. The 34 S2 matrix cases remain specified-not-executed; this approves S1 design only, not mapper implementation, S2, native, or gameplay.
+- shipped-in: `11fcf956f319`
 
 ### S2 — Reusable opt-in projection, validation and rendering
 - **Status**: review
@@ -58,15 +59,18 @@ The existing dossier factory derives budgets from fixed resource-transaction req
   - "Run focused tests and bun run validate, then independent review and official publication. No native adapter, shared schema, historical content, ID or string-lock changes."
 - review-state: in_review
 - review-implementer: gpt-6-luna
+- shipped-in: `6f06737db6df`
 
 ### S3 — Design pipeline integration and handoff
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2]
 - **Files**: `docs/architecture/overview.md`, `docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md`, `docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md`, `docs/qa/fulfillment-dossier-projection/independent-review.md`
 - **Gate**: e2e
 - acceptance:
   - "Document concrete commands, source authority, version dispatch and failure behavior without historical dossier-count changes."
   - "Keep full historical dossier in d00002/S3 and native/UI/engine evidence in i00007/S3, i00003 and s00001; no historical authoring unlocked by infrastructure alone."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ## acceptance
 
