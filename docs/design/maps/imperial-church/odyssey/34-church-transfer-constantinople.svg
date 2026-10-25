@@ -90,11 +90,11 @@
 <text x="145.07" y="401.45" font-family="sans-serif">19</text>
 <text x="730" y="1090" font-family="sans-serif" font-size="12">19: The Waiting Guide</text>
 <text x="730" y="1125" font-family="sans-serif" font-size="12">Geographic district controls only</text>
-<text x="730" y="1149" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
-<text x="730" y="1173" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
-<text x="730" y="1197" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
-<text x="730" y="1221" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
-<text x="730" y="1245" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="1149" font-family="sans-serif" font-size="12">Solid blue: modern geographic water</text>
+<text x="730" y="1173" font-family="sans-serif" font-size="12">controls</text>
+<text x="730" y="1197" font-family="sans-serif" font-size="12">Olive dashed: proposed narrow land</text>
+<text x="730" y="1221" font-family="sans-serif" font-size="12">connections under 10 tiles</text>
+<text x="730" y="1245" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
 <text x="730" y="1269" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
 <text x="730" y="1293" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
 <text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [28.941, 41.009, 28.986, 41.036]; cosine-corrected longitude; approximate districts</text>

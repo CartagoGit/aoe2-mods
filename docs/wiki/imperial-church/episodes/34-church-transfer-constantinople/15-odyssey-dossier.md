@@ -4,7 +4,7 @@ authored-dossier; source approval, map geometry, native capabilities and game ba
 
 Design-only draft. Historical, geographic, native and game review remain pending; this typed projection is not an implemented map or played route.
 
-CDF-C01 · `34-church-transfer-constantinople` · November380 CE; arrival and church transfer are distinct source dates · 400×400
+CDF-C01 · `34-church-transfer-constantinople` · November 380 CE; arrival and church transfer are distinct source dates · 400×400
 
 ## Historical frame and source record
 
@@ -32,7 +32,7 @@ ES: Los trabajadores, destinatarios, resultados, hogares, patios y actividades s
       "architectCorrection": {
         "date": "2026-10-17",
         "author": "gpt-6",
-        "reason": "Socrates V.6 reports arrival24November and V.7 church possession26November380 as separate events; Marcellinus380 instead places church restoration inDecember. Preserve the discrepancy, not a harmonized exact calendar. Sozomen’s later enlarged Anastasia building and attributed miracles do not certify the380venue or terrain. Gregory’s later resignation and381council must remain distinct fromNovember380. No exact church footprint, universal compliance or playable forced conversion follows.",
+        "reason": "Socrates V.6 reports arrival 24 November and V.7 church possession26November 380 as separate events; Marcellinus 380 instead places church restoration in December. Preserve the discrepancy, not a harmonized exact calendar. Sozomen’s later enlarged Anastasia building and attributed miracles do not certify the 380 venue or terrain. Gregory’s later resignation and 381 council must remain distinct from November 380. No exact church footprint, universal compliance or playable forced conversion follows.",
         "approval": "independent review pending"
       }
     },
@@ -49,7 +49,7 @@ ES: Los trabajadores, destinatarios, resultados, hogares, patios y actividades s
       "consultedUrl": "https://www.newadvent.org/fathers/26015.htm",
       "passage": "Socrates HE V.6–8, especiallyV.6arrival andV.7transfer",
       "coverageActuallyRead": "Root read selected complete arrival, church-transfer and council chapters in NPNF English translation; no Greek apparatus or Gregory’s poem.",
-      "limitations": "Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action toNovember380without comparing chronology and381council evidence.",
+      "limitations": "Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7 also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action to November 380 without comparing chronology and 381 council evidence.",
       "consultationDate": "2026-10-17",
       "approval": "bounded architect collection; independent historical review pending"
     },
