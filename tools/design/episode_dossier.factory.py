@@ -756,6 +756,7 @@ def _validate_fulfillment_envelope(campaign, selection, blueprint, geography_pro
 def _validate_fulfillment_metadata(campaign, selection, blueprint, metadata, narrator_id,
                                    geography_profile):
     episode_id = selection["id"]
+    map_plan = metadata["mapPlan"]
     profile = blueprint["referenceCapabilityProfile"]
     if not isinstance(profile, dict) or profile.get("schemaVersion") != 3:
         raise ValueError(f"{episode_id}: referenceCapabilityProfile must explicitly have schemaVersion 3")
@@ -896,6 +897,18 @@ def build_fulfillment_dossier(campaign, selection, blueprint, projection, geogra
             actual = row["centre"] if label == "hub" else row["tile"]
             if actual != expected:
                 raise ValueError(f"{episode_id}: {label} {row['id']} tile does not match authored lonLat and map frame")
+            if (not isinstance(actual, list) or len(actual) != 2
+                    or any(not isinstance(value, (int, float)) or isinstance(value, bool)
+                           or not math.isfinite(value) or value < 0 or value > blueprint["mapSize"] - 1
+                           for value in actual)):
+                raise ValueError(f"{episode_id}: {label} {row['id']} lies outside map tile bounds")
+            if label == "hub":
+                radius = row["radiusTiles"]
+                if (not isinstance(radius, (int, float)) or isinstance(radius, bool)
+                        or not math.isfinite(radius) or radius < 0
+                        or any(value - radius < 0 or value + radius > blueprint["mapSize"] - 1
+                               for value in actual)):
+                    raise ValueError(f"{episode_id}: hub {row['id']} footprint outside map tile bounds")
     hub_ids = set(authored_hubs)
     corridor_ids = set()
     for corridor in map_plan["corridors"]:
@@ -943,6 +956,7 @@ def build_fulfillment_dossier(campaign, selection, blueprint, projection, geogra
         "geographyId": selection["geographyId"],
         "mapSize": blueprint["mapSize"],
         "mapPlan": map_plan,
+        "mapBindings": projection["mapBindings"],
         "referenceCapabilityProfile": profile,
         "worldContract": projection["worldContract"],
         "objectivePlan": projection["objectivePlan"],

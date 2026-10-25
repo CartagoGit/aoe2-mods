@@ -63,6 +63,146 @@ class FulfillmentBridgeAcceptanceTests(unittest.TestCase):
         errors = validator["audit_dossier"](episode)
         self.assertTrue(any("projected point-zone bindings differ" in error for error in errors))
 
+    def test_artificial_blueprint_composes_audits_and_renders_without_legacy_receipts(self):
+        factory = runpy.run_path(str(ROOT / "tools/design/episode_dossier.factory.py"))
+        validator = runpy.run_path(str(ROOT / "tools/design/episode_dossier.validator.py"))
+        pipeline = runpy.run_path(str(ROOT / "tools/design/episode_dossiers.script.py"))
+        episode_id = "fixture.intermediate"
+        bbox = [0, 0, 1, 1]
+        map_size = 300
+        hub_tile = tile_point(bbox, [0.5, 0.5], map_size)
+        point_tile = tile_point(bbox, [0.55, 0.5], map_size)
+
+        def screen(screen_id, narrator, text):
+            return {
+                "id": screen_id,
+                "key": f"scenario.fixture.{episode_id}.{screen_id}",
+                "text": text,
+                "condition": "authored fixture condition",
+                "narrator": narrator,
+                "skippable": True,
+                "captionPolicy": "lossless fixture caption",
+                "captionSegments": {locale: [value] for locale, value in text.items()},
+                "nativeSurface": "pending",
+                "voiceDurationSecondsEstimated": 2,
+            }
+
+        factual_intro = {"en": "A documented event.", "es-ES": "Un hecho documentado."}
+        factual_outro = {"en": "The documented outcome.", "es-ES": "El desenlace documentado."}
+        ids = ["fixture.title", "fixture.factual-intro", "fixture.handover",
+               "fixture.personal-intro", "fixture.factual-outro", "fixture.personal-outro",
+               "fixture.defeat", "fixture.continuation"]
+        screens = [
+            screen(ids[0], "none", {"en": "Fixture title", "es-ES": "Título de prueba"}),
+            screen(ids[1], "collection-narrator", factual_intro),
+            screen(ids[2], "collection-narrator", {"en": "Now choose.", "es-ES": "Elige ahora."}),
+            screen(ids[3], "fixture.narrator", {"en": "A personal view.", "es-ES": "Una voz personal."}),
+            screen(ids[4], "collection-narrator", factual_outro),
+            screen(ids[5], "fixture.narrator", {"en": "A reflection.", "es-ES": "Una reflexión."}),
+            screen(ids[6], "none", {"en": "Defeat.", "es-ES": "Derrota."}),
+            screen(ids[7], "none", {"en": "Continue.", "es-ES": "Continuar."}),
+        ]
+        roles = dict(zip(("title", "factualIntro", "handover", "personalIntro",
+                          "factualOutro", "personalOutro", "defeat", "continuation"), ids))
+        hub = {"id": "fixture.hub", "centre": hub_tile, "lonLat": [0.5, 0.5],
+               "name": {"en": "Fixture hub", "es-ES": "Centro de prueba"},
+               "radiusTiles": 3, "certainty": "synthetic only"}
+        point = {"id": "fixture.point", "lonLat": [0.55, 0.5], "tile": point_tile,
+                 "name": {"en": "Fixture point", "es-ES": "Punto de prueba"},
+                 "certainty": "synthetic only"}
+        profile = {
+            "schemaVersion": 3,
+            "districts": ["fixture.hub"],
+            "worldContract": {"entities": [{"id": "fixture.actor"}], "zones": []},
+            "objectivePlan": [{"id": "fixture.goal", "phase": "phase-1",
+                                "text": {"en": "A goal", "es-ES": "Un objetivo"},
+                                "predicate": {"operator": "all", "requirements": []}}],
+            "stateMachine": {"states": ["phase-1"]},
+            "secondaryObjectives": [],
+            "secondaryBudget": {"reservedRewards": {"food": 0, "wood": 0, "gold": 0, "stone": 0}},
+            "fulfillmentPlan": {"services": []},
+        }
+        blueprint = {
+            "designProfile": "alternative-fulfillment-v3",
+            "episodeId": episode_id,
+            "referenceCapabilityProfile": profile,
+            "accountsByDifficulty": {level: {} for level in ("easy", "standard", "hard")},
+            "mapSize": map_size,
+            "hubs": [{"id": "fixture.hub", "centre": hub_tile}],
+            "pointZoneBindings": [{"pointId": "fixture.point", "tile": point_tile,
+                                   "zoneId": "fixture.zone", "hubId": "fixture.hub",
+                                   "offsetTiles": [0, 0]}],
+            "recipeBindings": [],
+            "serviceBindings": [],
+            "planScreenIds": {"preview": ids[0], "reserved": ids[1], "cancelled": ids[2],
+                               "started": ids[3], "complete": ids[4]},
+            "screens": screens,
+            "dossierMetadata": {
+                "factualIntro": factual_intro,
+                "factualOutro": factual_outro,
+                "dramatizationNotice": {"en": "No scene is asserted.", "es-ES": "No se afirma ninguna escena."},
+                "mapPlan": {"bbox": bbox, "terrainProfile": "fixture.region", "orientation": "north-up",
+                            "projection": "synthetic frame", "hubs": [hub], "points": [point],
+                            "corridors": [], "terrainInstructions": "Synthetic test controls only.",
+                            "geographicLayers": [], "geometryStatus": "pending",
+                            "asset": "docs/design/maps/fixture/odyssey/fixture-intermediate.svg"},
+                "historicalMaterialPolicyByEntity": {"fixture.actor": "Synthetic only; no historical claim."},
+                "artDirection": {"style": "fixture", "historicalControls": [], "referenceAssets": [],
+                                 "productionApproved": False},
+                "failureRecovery": {"recovery": "No gameplay operation asserted."},
+                "requiredCapabilities": [{"id": "fixture.capability", "status": "pending"}],
+                "qaCases": ["Synthetic screen and map binding fixture."],
+                "playstyles": [
+                    {"id": f"fixture.style.{index}", "optionalObjectives": [],
+                     "costOfOpportunity": f"fixture opportunity {index}",
+                     "mainObjectivesUnchanged": True, "historicalOutcomeUnchanged": True}
+                    for index in range(3)
+                ],
+                "gameplayIdentity": {field: f"Synthetic {field}." for field in ("problem", "decision", "density", "replay")},
+                "editorialReviewNotes": {"status": "synthetic; approval pending"},
+                "screenRoles": roles,
+                "continuation": {"nextEpisodeId": "fixture.next", "campaignComplete": False,
+                                 "sourceScreenId": ids[7]},
+            },
+        }
+        campaign = {"campaignId": "fixture", "editorialContract":
+                    {"publicId": "fixture", "narratorId": "fixture.narrator"}}
+        selection = {
+            "id": episode_id, "order": 2, "actId": "fixture.act",
+            "title": {"en": "Fixture title", "es-ES": "Título de prueba"},
+            "date": "synthetic", "knowledgeBasis": {"speaker": "fixture.narrator"},
+            "coreMechanic": "synthetic reference projection", "geographyId": "fixture.region",
+            "historicalPersonPolicy": "No historical person represented.",
+            "historicalSelection": {"selectedClaim": "Artificial fixture claim."},
+        }
+        projection = {
+            "episodeId": episode_id, "referenceCapabilityProfile": profile,
+            "worldContract": profile["worldContract"], "objectivePlan": profile["objectivePlan"],
+            "stateMachine": profile["stateMachine"], "secondaryObjectives": profile["secondaryObjectives"],
+            "secondaryBudget": profile["secondaryBudget"], "fulfillmentServices": [],
+            "selectionAnalysisByDifficulty": {
+                level: {"selections": []} for level in ("easy", "standard", "hard")
+            },
+            "optionalPrefixAnalysisByDifficulty": {
+                level: {"reachableSubsetCount": 0, "allOptionalTasksAffordable": False}
+                for level in ("easy", "standard", "hard")
+            },
+            "mapBindings": {"hubs": blueprint["hubs"],
+                            "points": [{"pointId": "fixture.point", "tile": point_tile}]},
+        }
+        episode = factory["build_fulfillment_dossier"](
+            campaign, selection, blueprint, projection, {"bbox": bbox},
+            {"id": "fixture.previous"}, {"id": "fixture.next"},
+        )
+        self.assertEqual(validator["audit_dossier"](episode), [])
+        self.assertNotIn("receiptText", episode["objectivePlan"][0])
+        wiki = pipeline["fulfillment_wiki"](campaign, episode)
+        svg = pipeline["diagram"](episode, [])
+        self.assertIn("Alternative services", wiki)
+        self.assertIn("Authored presentation", wiki)
+        self.assertNotIn('data-corridor=', svg)
+        self.assertIn("Fixture hub", svg)
+
 
 class DesignAcceptanceTests(unittest.TestCase):
     def test_main_counters_reject_empty_negative_fractional_and_boolean_thresholds(self):
