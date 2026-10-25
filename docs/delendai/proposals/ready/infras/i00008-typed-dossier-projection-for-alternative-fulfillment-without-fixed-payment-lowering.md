@@ -2,14 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: review
+status: ready
 type: proposal
 track: campaign-factory
 date: 2026-10-25
-last-transition-id: 5f7f5a37-b8d1-4cb3-90cc-efcdcfef8a55
-last-correlation-id: 5f7f5a37-b8d1-4cb3-90cc-efcdcfef8a55
-last-transition-from: in-progress
-last-transition-at: 2026-10-25T13:24:20.246Z
+last-transition-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
+last-correlation-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
+last-transition-from: review
+last-transition-at: 2026-10-25T13:31:10.522Z
 shipped-in:
   - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
   - "6f06737db6dfd3ccc2251e375398c5c2201eb4cb"
@@ -65,15 +65,17 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - review-log: approved by gpt-6 — verified at 6f06737db6df, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Independent source review of 9c20f205 integrated at6f06737; strict schema/semantic reuse, exact selected service views, retained binding re-projection, drift/u… (2) 15 mapper tests and Python bridge cases plus independent valid-boundary and after-funding probes; existing general reducer tests retained. Direct comparison ag… (3) Reviewer independent bun run validate exit0:157tests/13files,2134expectations; source report a311e43 integrated. Official product6f06737 passed installation/va… — Independent reviewer gpt-6 approves only integrated S2 infrastructure6f06737; implementer gpt-6-luna. Report docs/qa/fulfillment-dossier-projection/independent-review.md. 157tests passed independently; no native/historical/game approval.
 
 ### S3 — Design pipeline integration and handoff
-- **Status**: review
+- **Status**: pending
 - **DependsOn**: [S2]
 - **Files**: `docs/architecture/overview.md`, `docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md`, `docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md`, `docs/qa/fulfillment-dossier-projection/independent-review.md`
 - **Gate**: e2e
 - acceptance:
   - "Document concrete commands, source authority, version dispatch and failure behavior without historical dossier-count changes."
   - "Keep full historical dossier in d00002/S3 and native/UI/engine evidence in i00007/S3, i00003 and s00001; no historical authoring unlocked by infrastructure alone."
-- review-state: in_review
+- review-state: changes_requested
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6
+- review-log: requested_changes by gpt-6 — S3 has no delivered implementation: the proposal-level transition for S2 also marked pending S3 review. Request S3 changes before integration: concrete accepted S2 handoff commands/status and compatible global civic audit. Reproduced using an uninserted composed51-screen/seven-secondary temporary preview: civic_difficulty_audit.script.py::episode_audit raises KeyError('accessibleWithoutOptionalRewards'). Preserve current63/215 counts and all public/native contracts. Architect closed packet will govern a Files-scoped amendment; no legacy field emulation, no historical insertion.
 
 ## acceptance
 
