@@ -7,7 +7,7 @@ Corte: 25 de octubre de 2026. Instrucción del propietario: el arquitecto decide
 | Odisea | Episodios seleccionados | Dossiers completos de diseño en borrador | Dossiers todavía por redactar |
 |---|---:|---:|---:|
 | Embers of the Covenant |30|30|0|
-| The Eagle and the Cross |34|33|1|
+| The Eagle and the Cross |34|34|0|
 | Keepers of the Unbroken Word |30|0|30|
 | The Keys of the Eternal City |32|0|32|
 | Beyond the Golden Gate |32|0|32|
@@ -15,17 +15,17 @@ Corte: 25 de octubre de 2026. Instrucción del propietario: el arquitecto decide
 | The Shattered Oath |28|0|28|
 | From Damascus to the Far Horizon |32|0|32|
 | The River Remembers |30|0|30|
-| **Total** |**278**|**63**|**215**|
+| **Total** |**278**|**64**|**214**|
 
-Los 63 borradores contienen 2.594 pantallas EN/es-ES y 391 secundarios. Siguen necesitando revisión histórica/editorial, terreno y calibración. No equivalen a 63 paquetes aprobados para autoría ni a escenarios jugados. El plan auxiliar de Constantinopla380 y su perfil candidato no incrementan esos totales. Hay cero aprobaciones ampliadas de juego.
+Los 64 borradores contienen 2.645 pantallas EN/es-ES y 398 secundarios. Siguen necesitando revisión histórica/editorial, terreno y calibración. No equivalen a paquetes aprobados para autoría ni a escenarios jugados. Constantinopla380 (ID 34, orden 33) forma parte de esos totales; su plan de mundo y perfil de referencia son materiales auxiliares, no mapas jugados. Hay cero aprobaciones ampliadas de juego.
 
-Quedan 54 casos señalados por la auditoría cívica que requieren decisiones sobre dificultad/ritmo; no son 54 fallos de motor demostrados. Faltan 22 identidades geográficas en el registro para 25 selecciones. Los cuatro recortes DSM del Hiyaz aportan evidencia de relieve moderno, pero no incorporan esos cuatro perfiles ni certifican el paisaje antiguo. El manifiesto conserva 47 recursos locales, con 26 perfiles canónicos; no se suman imágenes como si fueran mapas jugables.
+El informe mecánico cívico actual tiene 64 filas y 54 candidatos estáticos; en una métrica distinta, 63 filas muestran el mismo presupuesto accesible entre dificultades. Requieren decisiones sobre dificultad/ritmo, pero no son fallos de motor demostrados. La nota de cobertura geográfica conserva 22 identidades pendientes para 25 selecciones. Los cuatro recortes DSM del Hiyaz y las dos referencias DSM modernas de Jerusalén aportan datos modernos, no perfiles antiguos ni mapas jugables. El manifiesto registra 49 recursos locales y `geography.json` 26 perfiles canónicos.
 
 ## Reparto por modelo
 
 | Modelo/rol | Trabajo que conserva o recibe | Condición para darlo por terminado |
 |---|---|---|
-| gpt-6, arquitecto | Completar 215 dossiers, revisar 63 borradores, resolver 54 casos cívicos y 22 perfiles, cerrar historia, geografía, narración, pantallas, objetivos, dificultad y continuidad. Diseñar cualquier capacidad realmente ausente y supervisar los diffs delegados. | Paquete individual completo, operaciones disponibles en el contrato, evidencia atribuida y revisión independiente del alcance aprobado. Nunca aprobar su propia implementación. |
+| gpt-6, arquitecto | Completar 214 dossiers, revisar los 64 borradores, resolver los 54 candidatos estáticos señalados por el informe cívico actual y las 22 identidades de cobertura, cerrar historia, geografía, narración, pantallas, objetivos, dificultad y continuidad. Diseñar cualquier capacidad realmente ausente y supervisar los diffs delegados. | Paquete individual completo, operaciones disponibles en el contrato, evidencia atribuida y revisión independiente del alcance aprobado. Nunca aprobar su propia implementación. |
 | gpt-6-luna, recopilación/materialización | Consultas acotadas con localizadores, inventarios, hashes, comparación de datos, borradores lingüísticos y código/fuentes cuando las decisiones estén cerradas. Puede implementar paquetes inicialmente previstos para MiniMax por autorización expresa del propietario. | Artefactos concretos, claims propios, checks pertinentes, límites registrados y revisión por un modelo distinto. No sustituye investigación por snippets ni decide arquitectura/historia para desbloquearse. |
 | MiniMax M3.1, materialización | Recibir el próximo slice mecánico que el arquitecto asigne al recuperar cuota, después pilotos y los 278 episodios de 9 campañas de forma gradual. Comparte el pool de trabajo mecánico con Luna: un slice tiene un solo implementador activo. | Cumplir el paquete y aceptación oficiales, corregir hallazgos y pasar gate/revisión. Ninguna nueva decisión de mapa, economía, historia o contrato por su cuenta. |
 | Revisor independiente | gpt-6 para entregas Luna/MiniMax; Luna para entregas gpt-6; GPT-6.1 cuando esté disponible y corresponda a una revisión asignada. Comprobar independencia real, diff, casos negativos y evidencia del commit exacto. | Veredicto formal correspondiente al slice y alcance, integrado por DelendAI. La existencia de un informe no cierra sola un slice. |
@@ -47,4 +47,4 @@ La revisión independiente ejecutó ambos checks completos de staging y validate
 
 Las capacidades nativas pendientes, plantillas reales, exportación soportada, carga en AoE2, rutas/huellas, guardado, progreso, presentación y calibración requieren sus evidencias propias. Pueden necesitar un tester con el juego disponible. La aprobación de textos en 17 idiomas y medios/voz conserva su revisión específica. No distribuir mods ni lanzar generación pagada masiva por completar un dossier o un piloto.
 
-Para el trabajo concreto, seguir la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md), la [especificación del piloto](../wiki/route-pilot/02-implementation-specification.md) y las propuestas actuales. i00008/S1 está `done` (revisión Luna 2/2; metadatos integrados en `137fdd73`), y S2 está `done` (producto `6f06737`, veredicto `e08a5cb`). S3 actualiza el auditor cívico de forma opt-in y sincroniza estos handoffs; sigue en implementación y no equivale a revisión/integración, al dossier64 ni a soporte nativo. El informe cívico legacy de 63 dossiers se conserva sin regenerar. `readiness_timing_audit` solo cubre su plan legacy, no los perfiles v3.
+Para el trabajo concreto, seguir la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md), la [especificación del piloto](../wiki/route-pilot/02-implementation-specification.md) y las propuestas actuales. i00008/S1 está `done` (revisión Luna 2/2; metadatos integrados en `137fdd73`), S2 está `done` (producto `6f06737`, veredicto `e08a5cb`) y S3 está `done` (producto `c5533f7`, revisión formal `3746e076`). S3 añadió la rama opt-in al auditor y preservó entonces la salida previa; tras insertar el nuevo dossier y regenerar, el informe actual tiene 64 filas y 54 candidatos, con 63 filas que muestran presupuesto accesible idéntico. No añade soporte nativo. `readiness_timing_audit` sigue cubriendo solo su plan legacy, no los perfiles v3.
