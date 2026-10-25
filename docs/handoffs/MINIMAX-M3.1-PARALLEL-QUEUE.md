@@ -17,6 +17,8 @@ El primer lanzamiento real por OpenCode, configurado como `minimax/MiniMax-M3.1-
 
 El [reparto por LLM](LLM-WORK-ALLOCATION.md) detalla los volúmenes restantes y las correcciones observadas en la primera implementación.
 
+La implementación i00008/S2 tiene un [paquete mecánico específico](FULFILLMENT-DOSSIER-S2-PACKET.md), con el subconjunto económico, límites del análisis reutilizado y cobertura de typecheck. El cambio de Files añade sólo tsconfig.json para ese último fin; no altera S1, contratos públicos o estados históricos.
+
 ## Gates según el trabajo concreto
 
 1. **Diseño individual aprobado para fuentes.** El arquitecto entrega dossier completo de ese episodio, narrador/voz situada, pasajes consultados y cautelas, plano geográfico y limitaciones, objetivos principales/secundarios, economías/variantes, estados/persistencia, inventario de pantallas y continuidad exacta. Una revisión independiente identifica el commit aprobado y el alcance de esa aprobación. Un borrador o una selección no basta. La revisión como diseño no se presenta como prueba de mapa nativo o calibración jugada.
