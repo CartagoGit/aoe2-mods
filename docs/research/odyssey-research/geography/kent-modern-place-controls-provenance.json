@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "collector": "gpt-6-luna",
+  "independentContrast": "gpt-6 reread all three OSM node JSON responses on 2026-10-25 and compared exact IDs/names/coordinates. Browser API opens failed; ordinary HTTPS JSON fetch succeeded.",
+  "sourceCollection": "Bounded collection supplied by gpt-6-luna; original notes retained in the working session. No statement here promotes a source or profile.",
+  "artifact": {
+    "path": "docs/research/odyssey-research/geography/kent-modern-place-controls.geojson",
+    "sha256": "f1d5bcae3325bad14800468c6b6ac0393536e6fccf5bc742562fbfd3e922934f",
+    "bytes": 2253
+  },
+  "copyright": "OpenStreetMap contributors",
+  "license": "Open Database License 1.0 (ODbL)",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attributionUrl": "https://www.openstreetmap.org/copyright",
+  "productionApproved": false,
+  "records": [
+    {
+      "url": "https://www.openstreetmap.org/api/0.6/node/29038127.json",
+      "accessed": "2026-10-25",
+      "sha256": "a1b5ed1be3780f4987297f21200f2a16bdc104c00ed9e0aafd9cf60e90271c26",
+      "bytes": 538,
+      "record": {
+        "type": "node",
+        "id": 29038127,
+        "lat": 51.3787239,
+        "lon": 1.1978418,
+        "timestamp": "2015-09-12T15:23:38Z",
+        "version": 2,
+        "changeset": 33982311,
+        "user": "Gregory Williams",
+        "uid": 7037,
+        "tags": {
+          "is_in": "Kent,England,United Kingdom",
+          "name": "Reculver",
+          "place": "hamlet",
+          "wikidata": "Q3307700"
+        }
+      },
+      "scope": "Modern Reculver hamlet label; not an ancient fort, shoreline, crossing or landing point."
+    },
+    {
+      "url": "https://www.openstreetmap.org/api/0.6/node/9827276975.json",
+      "accessed": "2026-10-25",
+      "sha256": "5a48f10af991c5e3f1f7e85c6a6c5056f6f21a2769a145e1c024a4b4000af696",
+      "bytes": 556,
+      "record": {
+        "type": "node",
+        "id": 9827276975,
+        "lat": 51.2954693,
+        "lon": 1.3252361,
+        "timestamp": "2022-06-18T07:55:49Z",
+        "version": 1,
+        "changeset": 122535343,
+        "user": "OnwardTravel",
+        "uid": 13750939,
+        "tags": {
+          "addr:country": "GB",
+          "name": "Richborough",
+          "place": "village",
+          "wikidata": "Q2607619",
+          "wikipedia": "en:Richborough"
+        }
+      },
+      "scope": "Modern Richborough village label; not the Roman fort, an island boundary or Augustine landing."
+    },
+    {
+      "url": "https://www.openstreetmap.org/api/0.6/node/17916174.json",
+      "accessed": "2026-10-25",
+      "sha256": "a56c60d851fde7051ac344140d0af6f8bea8ed5e54b4da1fb0833ae701502908",
+      "bytes": 1235,
+      "record": {
+        "type": "node",
+        "id": 17916174,
+        "lat": 51.2800275,
+        "lon": 1.0802533,
+        "timestamp": "2025-10-26T10:32:31Z",
+        "version": 49,
+        "changeset": 173787781,
+        "user": "indigomc",
+        "uid": 136860,
+        "tags": {
+          "alt_name:br": "Kergent",
+          "is_in": "Kent, England, UK",
+          "is_in:country": "United Kingdom",
+          "is_in:country_code": "GB",
+          "is_in:county": "Kent",
+          "name": "Canterbury",
+          "name:ar": "كانتربيري",
+          "name:bn": "ক্যান্টারবুরি",
+          "name:br": "Kergent",
+          "name:cy": "Caergaint",
+          "name:en": "Canterbury",
+          "name:fr": "Cantorbéry",
+          "name:hu": "Canterbury",
+          "name:kn": "ಕಾಂಟರ್ಬರಿ",
+          "name:ko": "캔터베리",
+          "name:la": "Cantuaria",
+          "name:lt": "Kenterberis",
+          "name:lv": "Kanterburija",
+          "name:mk": "Кантербери",
+          "name:ml": "കാൻ്റർബറി",
+          "name:ru": "Кентербери",
+          "name:sr": "Кентербери",
+          "name:uk": "Кентербері",
+          "name:ur": "کینٹربری",
+          "old_name:nl": "Kantelberg",
+          "place": "city",
+          "population": "43400",
+          "wikidata": "Q29303",
+          "wikipedia": "en:Canterbury"
+        }
+      },
+      "scope": "Modern Canterbury city label; not a sixth-century boundary, church parcel or grant site."
+    }
+  ],
+  "limits": [
+    "No map tiles downloaded. Only three raw place-node records are retained.",
+    "Modern village/city labels are not a sixth-century landfall or archaeology boundary.",
+    "No channel or route geometry is supplied; the 597 shoreline and Wantsum crossing remain unresolved.",
+    "A report-area National Grid reference, a modern satnav point and a UNESCO church component must not be silently substituted for these nodes or an event location."
+  ]
+}
