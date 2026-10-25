@@ -70,8 +70,8 @@
       "accessed": "2026-10-25",
       "accessStatus": "Relevant body text read directly; no underlying borehole log or map sheet opened.",
       "passagesRead": "The memoir describes silty clay, peat and fine-sand deposits formed in salt-marsh and intertidal settings in the former Wantsum and Lydden Valley. It gives a peat bed in a Sandwich By-pass trial borehole at TR 323 592, 4.3 m below OD, with radiocarbon age 5315 ± 1000 BP; overlying silty clays were deposited with rising sea level up to the present. It summarizes broad coastal evolution and later medieval reclamation.",
-      "supports": "The source directly supports Holocene marine/intertidal and salt-marsh deposits beneath parts of the former channel, and documents the uncertainty of a very broad early-Holocene radiocarbon determination. It is a geological context source rather than a 597 reconstruction.",
-      "limits": "The reported date is millennia too old and has a ±1000-year uncertainty; it cannot date 6th–7th-century conditions. A single borehole at the south of the former channel cannot determine channel width, tide, ford locations, shoreline or hydrology around Ebbsfleet/Thanet in 596–597. The memoir's broad historical evolution does not provide annual-resolution geography.",
+      "supports": "The source directly supports Holocene marine/intertidal and salt-marsh deposits beneath parts of the former channel, and records a Holocene date far earlier than the target period, with the uncertainty printed in the memoir (5315 ± 1000 BP). It is a geological context source rather than a 597 reconstruction.",
+      "limits": "The reported date is far earlier than the target period and has a ±1000-year uncertainty; this review does not recalibrate it or assign a chronozone. A single borehole at the south of the former channel cannot determine channel width, tide, ford locations, shoreline or hydrology around Ebbsfleet/Thanet in 596–597. The memoir's broad historical evolution does not provide annual-resolution geography.",
       "rights": "No map or borehole graphic copied. BGS reuse terms for this memoir were not checked; text cited and paraphrased only."
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "kent-q02",
       "query": "Wantsum Channel sediment core radiocarbon dates sixth seventh century tidal sequence",
-      "result": "Found BGS report of a Sandwich-area early-Holocene date with large uncertainty, and UCL pipeline publication describing local marsh/estuarine stratigraphy; no directly useful 6th–7th-century shoreline date exposed.",
+      "result": "Found BGS report of a Sandwich-area Holocene date far earlier than the target period, with the uncertainty printed in the memoir, and UCL pipeline publication describing local marsh/estuarine stratigraphy; no directly useful 6th–7th-century shoreline date exposed.",
       "status": "selected primary/institutional passages read"
     },
     {
