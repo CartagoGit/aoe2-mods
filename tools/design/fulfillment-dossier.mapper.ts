@@ -1,5 +1,10 @@
 import { z } from "zod";
-import { RESOURCES } from "../../packages/gameplay-state/resource-accounts.helper";
+import {
+  debit,
+  enough,
+  normalizeResources,
+  RESOURCES,
+} from "../../packages/gameplay-state/resource-accounts.helper";
 import { validateScenarioCapability } from "../../packages/gameplay-validation/scenario-capability.validator";
 import {
   type CapabilityProfileV3,
@@ -232,8 +237,7 @@ function optionalFinancialInputs(
       );
     const cost = { food: 0, wood: 0, gold: 0, stone: 0 };
     if (payments[0])
-      for (const resource of RESOURCES)
-        cost[resource] = payments[0].resources[resource] ?? 0;
+      Object.assign(cost, normalizeResources(payments[0].resources));
     const withdrawals = side.effects.filter(
       (effect) => effect.kind === "finite-supply-withdrawal",
     );
@@ -244,8 +248,7 @@ function optionalFinancialInputs(
       );
     const reward = { food: 0, wood: 0, gold: 0, stone: 0 };
     if (withdrawals[0])
-      for (const resource of RESOURCES)
-        reward[resource] = withdrawals[0].resources[resource] ?? 0;
+      Object.assign(reward, normalizeResources(withdrawals[0].resources));
     for (const effect of side.effects) {
       if (
         effect !== withdrawals[0] &&
@@ -333,7 +336,7 @@ function projectOne(value: unknown): DossierProjection {
   for (const hub of request.hubs) {
     if (
       hub.centre.some(
-        (coordinate) => coordinate < 0 || coordinate > request.mapSize,
+        (coordinate) => coordinate < 0 || coordinate > request.mapSize - 1,
       )
     )
       fail(request.episodeId, `hub outside map bounds: ${hub.id}`);
@@ -398,7 +401,7 @@ function projectOne(value: unknown): DossierProjection {
         );
       if (
         absoluteTile[axis] - zone.radiusTiles < 0 ||
-        absoluteTile[axis] + zone.radiusTiles > request.mapSize
+        absoluteTile[axis] + zone.radiusTiles > request.mapSize - 1
       )
         fail(
           request.episodeId,
@@ -440,6 +443,29 @@ function projectOne(value: unknown): DossierProjection {
   const screenById = new Map(
     request.screens.map((screen) => [screen.id, screen]),
   );
+  for (const screen of request.screens) {
+    for (const locale of ["en", "es-ES"] as const) {
+      const expected = screen.text[locale]
+        .split(/\s+/)
+        .filter(Boolean)
+        .join(" ");
+      const chunks = screen.captionSegments[locale];
+      if (
+        chunks.some(
+          (chunk) => chunk.trim().split(/\s+/).filter(Boolean).length > 32,
+        )
+      )
+        fail(
+          request.episodeId,
+          `caption segment exceeds 32 words: ${screen.id}/${locale}`,
+        );
+      if (chunks.join(" ").split(/\s+/).filter(Boolean).join(" ") !== expected)
+        fail(
+          request.episodeId,
+          `caption segments lose or alter screen text: ${screen.id}/${locale}`,
+        );
+    }
+  }
   const requireScreen = (id: string) => {
     if (!screenById.has(id))
       fail(request.episodeId, `unknown screen binding: ${id}`);
@@ -535,7 +561,7 @@ function projectOne(value: unknown): DossierProjection {
       for (const recipe of service.recipes) {
         const cost = safeVectorSum(
           row.cost,
-          recipe.cost,
+          normalizeResources(recipe.cost),
           request.episodeId,
           "selection cost",
         );
@@ -547,15 +573,10 @@ function projectOne(value: unknown): DossierProjection {
   for (const level of ["easy", "standard", "hard"] as const) {
     const spendable = request.accountsByDifficulty[level].spendable;
     const selectionRows = rows.map((row) => {
-      const affordable = RESOURCES.every(
-        (resource) => row.cost[resource] <= (spendable[resource] ?? 0),
-      );
-      const remainder = Object.fromEntries(
-        RESOURCES.map((resource) => [
-          resource,
-          affordable ? (spendable[resource] ?? 0) - row.cost[resource] : null,
-        ]),
-      );
+      const affordable = enough(spendable, row.cost);
+      const remainder = affordable
+        ? debit(spendable, row.cost)
+        : Object.fromEntries(RESOURCES.map((resource) => [resource, null]));
       return {
         recipeIds: row.recipeIds,
         totalCost: row.cost,

@@ -244,6 +244,40 @@ describe("typed fulfillment dossier projection", () => {
     );
   });
 
+  test("rejects captions that lose text or exceed the 32-word display limit", () => {
+    const lost = requestFor();
+    const lostCaptions = at(lost.screens, 0).captionSegments as {
+      en: string[];
+      "es-ES": string[];
+    };
+    lostCaptions.en = [];
+    expect(() => projectFulfillmentDossiers({ requests: [lost] })).toThrow(
+      /caption segments lose or alter screen text/,
+    );
+
+    const tooLong = requestFor();
+    const longCaptions = at(tooLong.screens, 0).captionSegments as {
+      en: string[];
+      "es-ES": string[];
+    };
+    longCaptions.en = [
+      Array.from({ length: 33 }, (_, index) => `word${index}`).join(" "),
+    ];
+    expect(() => projectFulfillmentDossiers({ requests: [tooLong] })).toThrow(
+      /caption segment exceeds 32 words/,
+    );
+  });
+
+  test("rejects coordinates on the exclusive map edge", () => {
+    const profile = makeFulfillmentProfile();
+    profile.districts.push("fixture.unused-district");
+    const request = requestFor(profile);
+    at(request.hubs, 1).centre = [request.mapSize, request.mapSize];
+    expect(() => projectFulfillmentDossiers({ requests: [request] })).toThrow(
+      /hub outside map bounds/,
+    );
+  });
+
   test("rejects overlapping work and reception footprints even for distinct zones in one hub", () => {
     const profile = makeFulfillmentProfile();
     const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
