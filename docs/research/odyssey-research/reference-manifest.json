@@ -826,6 +826,38 @@
       "modifications": "Grayscale scientific rendering of the exact integer crop, with modern visitor/admin markers and research frame; matplotlib, no ancient reconstruction.",
       "usage": "modern buildings/vegetation possible; published visitor marker is not an ancient camp/well/building coordinate; no water/passability mask or game terrain written",
       "productionApproved": false
+    },
+    {
+      "id": "jerusalem-modern-dsm-regional-crop",
+      "path": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-regional-crop.tif",
+      "sourcePage": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+      "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E035_00_DEM/Copernicus_DSM_COG_10_N31_00_E035_00_DEM.tif",
+      "author": "DLR / Airbus Defence and Space; Copernicus / EU and ESA; local processing by gpt-6-luna",
+      "license": "Copernicus WorldDEM-30/GLO-30 licence, required source/modified-data/liability notices in linked local licence notice",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+      "consulted": "2026-10-25",
+      "productionApproved": false,
+      "sha256": "c50ef78b9ffd0e98cd373933a21b382ad9b202f9cad192018bfccd92bddaad1a",
+      "bytes": 184672,
+      "modifications": "Integer pixel-aligned crop and lossless DEFLATE re-encoding only. No resampling, reprojection, value edits, filling, smoothing, warping or terrain derivation.",
+      "usage": "Modern surface including buildings, infrastructure and vegetation; regional research reference only. Not bare earth, 70 CE terrain, archaeological footprints, surveyed routes, a navigability mask or an approved game map."
+    },
+    {
+      "id": "jerusalem-modern-dsm-regional-preview",
+      "path": "docs/research/odyssey-research/images/jerusalem-modern-dsm-regional-preview.png",
+      "sourcePage": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+      "downloadUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E035_00_DEM/Copernicus_DSM_COG_10_N31_00_E035_00_DEM.tif",
+      "author": "DLR / Airbus Defence and Space; Copernicus / EU and ESA; local processing by gpt-6-luna",
+      "license": "Copernicus WorldDEM-30/GLO-30 licence, required source/modified-data/liability notices in linked local licence notice",
+      "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+      "licenseNoticePath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+      "consulted": "2026-10-25",
+      "productionApproved": false,
+      "sha256": "ad9334218cafa27354ad00b0859cc45bb5e4c36f2f7c6849ab58021b7b8a3bfa",
+      "bytes": 263436,
+      "modifications": "Scientific display of the exact modern regional DSM crop with a 2nd–98th percentile linear stretch, labelled axes and metre colorbar. Source values unchanged; no ancient reconstruction.",
+      "usage": "Modern surface including buildings, infrastructure and vegetation; regional research reference only. Not bare earth, 70 CE terrain, archaeological footprints, surveyed routes, a navigability mask or an approved game map."
     }
   ]
 }
