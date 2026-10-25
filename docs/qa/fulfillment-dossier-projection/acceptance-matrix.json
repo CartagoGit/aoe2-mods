@@ -5,7 +5,7 @@
   "proposalId": "i00008",
   "sliceId": "S1",
   "sourceAuthority": "docs/architecture/fulfillment-dossier-projection.md",
-  "caseCount": 29,
+  "caseCount": 32,
   "cases": [
     {
       "id": "dispatch-legacy",
@@ -207,6 +207,27 @@
       "id": "truthful-boundary",
       "inputOrMutation": "successful schema/reference/accounting suite",
       "requiredResult": "no dossier64, historical approval, native capability, balance or GAME VERIFIED claim",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "same-hub-distinct-points",
+      "inputOrMutation": "two nonoverlapping work/reception zones in one hub, distinct point IDs and matching offsets",
+      "requiredResult": "resolve each recipe to its exact zone; no assumption that pointId equals hubId",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-alias-collision",
+      "inputOrMutation": "same pointId bound to two different zone IDs or same zone bound twice",
+      "requiredResult": "reject ambiguous point/zone mapping before resolving recipe bindings",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-offset-drift",
+      "inputOrMutation": "point binding claims a hub/offset different from its profile zone",
+      "requiredResult": "reject disagreement; profile zone remains sole geometric authority",
       "owner": "i00008/S2",
       "status": "specified-not-executed"
     }
