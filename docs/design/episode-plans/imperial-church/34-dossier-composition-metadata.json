@@ -843,15 +843,7 @@
         "widthTiles": 6
       }
     ],
-    "terrainInstructions": [
-      "Golden Horn north; peninsula activities remain on south bank. Positive DSM samples alone cannot identify the bank or prove land.",
-      "Preserve broad peninsula hills; do not convert building-inclusive DSM heights directly to ancient ground or flat AoE platforms.",
-      "Do not copy later Theodosian walls, 537 Hagia Sophia, later monumental Anastasia, Ottoman fabric, modern quays or bridges.",
-      "Work yards, receiving courts and paths are declared fiction. No gate, church parcel, ancient street width or local residence is authenticated by its marker.",
-      "Protect the uncertain Yenikapi coastal zone; no mission uses the harbor as an authenticated380landing.",
-      "Full-width candidate corridors still require dated feature/land checks, building footprints, recovery and game navigation.",
-      "Detailed OSM current shoreline now supplements the generalized NaturalEarth control; the blank plot remains unclassified and neither source is a380shoreline. All21candidate buffers avoid the retained current line, but no land mask, footprints, slope or ancient-route proof follows."
-    ],
+    "terrainInstructions": "Golden Horn north; peninsula activities remain on south bank. Positive DSM samples alone cannot identify the bank or prove land.\n\nPreserve broad peninsula hills; do not convert building-inclusive DSM heights directly to ancient ground or flat AoE platforms.\n\nDo not copy later Theodosian walls, 537 Hagia Sophia, later monumental Anastasia, Ottoman fabric, modern quays or bridges.\n\nWork yards, receiving courts and paths are declared fiction. No gate, church parcel, ancient street width or local residence is authenticated by its marker.\n\nProtect the uncertain Yenikapi coastal zone; no mission uses the harbor as an authenticated380landing.\n\nFull-width candidate corridors still require dated feature/land checks, building footprints, recovery and game navigation.\n\nDetailed OSM current shoreline now supplements the generalized NaturalEarth control; the blank plot remains unclassified and neither source is a380shoreline. All21candidate buffers avoid the retained current line, but no land mask, footprints, slope or ancient-route proof follows.",
     "geographicLayers": [
       {
         "assetId": "ne-odyssey-coastline",
