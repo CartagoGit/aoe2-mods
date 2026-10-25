@@ -94,7 +94,7 @@
   "productClassification": "Modern 30 m digital surface model (DSM), including buildings, infrastructure and vegetation; research reference only. Not bare-earth terrain, ancient surface, archaeological footprint, historical site placement or game/map authorization.",
   "verticalReference": "EGM2008 (EPSG:3855), metres, according to Copernicus GLO-30 product documentation; the downloaded TIFF does not expose a vertical-datum tag, so this is documentation attribution only.",
   "horizontalReference": "WGS84-G1150 / EPSG:4326, per Copernicus GLO-30 product documentation; the TIFF CRS tag reports EPSG:4326.",
-  "sourceStatisticsMetres": {
+  "cropStatisticsMetres": {
     "min": 473.4389343261719,
     "max": 838.0693359375,
     "mean": 717.04443359375,
