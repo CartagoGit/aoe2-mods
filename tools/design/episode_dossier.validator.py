@@ -691,7 +691,10 @@ def audit_fulfillment_dossier(episode, projection_context=None):
                 projection = _project_fulfillment_request(projection_request)
             except Exception as error:
                 check(False, f"typed v3 profile/request failed bridge revalidation: {error}")
-    check(isinstance(stored_projection, dict) and stored_projection == projection,
+    retained_projection = ({key: value for key, value in projection.items()
+                           if key not in {"episodeId", "referenceCapabilityProfile"}}
+                          if isinstance(projection, dict) else None)
+    check(isinstance(stored_projection, dict) and stored_projection == retained_projection,
           "stored bridge projection differs from revalidated profile and authored bindings")
     if isinstance(projection, dict):
         for episode_field, projection_field in (
