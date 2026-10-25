@@ -1,0 +1,1315 @@
+{
+  "auditVersion": 2,
+  "basis": "57 episodeSelection geographyIds absent from docs/design/geography.json plus high-priority disputed battle/route sites explicitly requested; this is a source-audit workfile, not approval of coordinates or map design.",
+  "comparison": {
+    "baseline": "docs/design/geography.json profiles",
+    "newEpisodeGeographyIds": 57,
+    "newProfileIds": [
+      "adhruh",
+      "adrianople",
+      "alexandria",
+      "aphrodisias",
+      "arles",
+      "badr",
+      "balkh",
+      "beroea-thrace",
+      "bukhara",
+      "caesarea",
+      "cherson",
+      "chrysopolis",
+      "cibalae",
+      "corinth",
+      "ctesiphon",
+      "cyprus",
+      "cyrene",
+      "dumat-al-jandal",
+      "egypt-middle-nile",
+      "ephesus",
+      "fergana",
+      "finike",
+      "hammath-tiberias",
+      "harura",
+      "hudaybiyya",
+      "huqoq",
+      "jabiya",
+      "judean-desert",
+      "judean-hills",
+      "kent",
+      "khaybar",
+      "khwarazm",
+      "kufa-euphrates",
+      "lod",
+      "lyon",
+      "mecca",
+      "merv",
+      "mina-aqaba",
+      "nicomedia",
+      "paderborn",
+      "paykand",
+      "pliska",
+      "pumbedita",
+      "ramitin",
+      "ravenna",
+      "rimini",
+      "saint-denis",
+      "samarkand",
+      "sardes",
+      "sardica",
+      "sepphoris",
+      "tashkent",
+      "thessalonica",
+      "tyre",
+      "uhud",
+      "yavneh",
+      "zubala"
+    ]
+  },
+  "locations": [
+    {
+      "profileId": "adhruh",
+      "dateRange": "659 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Párr. 89; arbiters and notables meet",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "house-of-ali",
+        "episodeId": "12-delegation-and-source-comparison-adhruh",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "adrianople",
+      "dateRange": "3 July 324 CE, conventional",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+      "locator": "Eusebius VC II; resumen cronológico",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "09-crossing-and-supply-adrianople",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "ajnadayn",
+      "dateRange": "634 CE, traditional dating varies",
+      "locationRangeUncertainty": "Traditional Arabic geographical notices place Ajnadayn between Ramla and Bayt Jibrin; proposed exact identifications (including Janaba / Elah Valley) remain disputed. No battle point or troop placement can be fixed from this notice.",
+      "primaryUrl": "https://arab-ency.com.sy/overview/1486",
+      "locator": "الموسوعة العربية, “أجنادين”; opened lines 153–157: between Ramla and Bayt Jibrin; mentions proposed modern Janaba identifications.",
+      "terrainWaterAccessStatements": [
+        "Only regional relation between Ramla and Bayt Jibrin is directly stated; terrain, water, and exact access routes require further corroboration."
+      ],
+      "anachronismNotes": [
+        "Avoid pinning the battle to a single modern ruin or assigning modern road/water features to the battlefield.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-locator-only"
+    },
+    {
+      "profileId": "alexandria",
+      "dateRange": "641/642 CE traditional",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://egymonuments.gov.eg/collections/alexandria/",
+      "locator": "Lines 132–134: narrow land between Mediterranean and Lake Mareotis; Heptastadion to Pharos created Eastern/Western Ports.",
+      "terrainWaterAccessStatements": [
+        "Ancient Alexandria occupied a narrow strip between the Mediterranean and Lake Mareotis; Heptastadion linked Pharos and divided port waters."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-archaeology",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "aphrodisias",
+      "dateRange": "late4th century CE; dating debated",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://aphrodisias.classics.ox.ac.uk/tr/tr-jewishcom.html",
+      "locator": "Oxford Aphrodisias Excavations, “Jewish Community List”; inscripción monumental de 2,8 m, descripción de las listas en las líneas 39–41 de la página. Contexto de los problemas de datación: https://archiv.ub.uni-heidelberg.de/propylaeumdok/667/1/Chaniotis_The_Jews_of_Aphrodisias_2002.pdf.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "24-epigraphic-donor-logistics-aphrodisias",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "arles",
+      "dateRange": "314 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.fourthcentury.com/early-church-councils/",
+      "locator": "Canones de Arlés, colección de fuentes",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "05-delegate-logistics-arles",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "badr",
+      "dateRange": "624 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Poonawala, “Ali: Life,” sección sobre expediciones y referencia a Ibn Hisham/Waqidi",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "08-finite-battle-supply-and-withdrawal-badr",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "balkh",
+      "dateRange": "710 CE; captureofNizakreported, notplayerexecution",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/tentativelists/1928",
+      "locator": "Statement describes city west of Mazar-i-Sharif and Oxus course near city in antiquity; note tentative-list status.",
+      "terrainWaterAccessStatements": [
+        "The ancient Oxus course ran close to Balkh; modern UNESCO tentative-list description places site south of the Amu Darya."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-geography",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "18-civilian-record-and-refuge-balkh",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "beroea-thrace",
+      "dateRange": "355–357 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+      "locator": "Sozomeno, Historia eclesiástica IV.11, especialmente pasajes consultados en líneas 102 y 106–109. Debate cronológico y testimonial: https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/liberius-athanasius-and-the-roman-synod/67FF35EAED46A369C33FCFD72FAC1775.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "03-exile-supply-and-correspondence-beroea-thrace",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "bukhara",
+      "dateRange": "709 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "“Arab ii,” Qutayba entry of 90/709; also Iranica “Bukhara ii”",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "17-tribute-and-household-receipts-bukhara",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "caesarea",
+      "dateRange": "27–36 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/tentativelists/1480/",
+      "locator": "Description lines 81–84: Mediterranean bays/shallow inlets, anchorage; no local rivers/springs; water aqueduct from Shuni springs 7.5 km northeast.",
+      "terrainWaterAccessStatements": [
+        "Caesarea lay by Mediterranean bays/shallow inlets used for anchorage; the Roman/Byzantine city had no rivers or springs and received water by aqueduct from Shuni springs ~7.5 km northeast."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-site-description",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "01-administrative-records-caesarea",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "cherson",
+      "dateRange": "655 CE; death655/656qualified",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html",
+      "locator": "Allen y Neil, Maximus the Confessor and his Companions, extracto de OUP, sección 7, especialmente párrafos que sitúan juicio en Constantinopla y llegada de Martín a Cherson en mayo de 655; notas 4–5 discuten discrepancia de su fecha de muerte.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "21-exile-relief-and-copying-cherson",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "chrysopolis",
+      "dateRange": "18 September 324 CE, conventional",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+      "locator": "Eusebius VC II; resumen cronológico",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "10-land-and-strait-logistics-chrysopolis",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "cibalae",
+      "dateRange": "314 or 316 CE; dating disputed",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+      "locator": "Britannica, Constantine, chronology",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "06-finite-field-withdrawal-cibalae",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "corinth",
+      "dateRange": "c. 50–52 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://dcc.dickinson.edu/greek-new-testament/acts/18",
+      "locator": "Acts 18; ancla cronológica: inscripción de Galión en Delfos",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "09-district-production-corinth",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "ctesiphon",
+      "dateRange": "637 CE conventional; Nihavand later reported",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ctesiphon/",
+      "locator": "“Ctesiphon,” párrafo sobre conquista de marzo 637",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "cyprus",
+      "dateRange": "649 CE conventional",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+      "locator": "Article note 40: sources and the basilica inscription at Soli attest first attacks dated 649 and 650; location of any garrison is unknown.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "27-finite-coastal-expedition-and-supply-cyprus",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "cyrene",
+      "dateRange": "115–117 CE; local reconstruction",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+      "locator": "Dio Cassius 68.32; síntesis de fuentes",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "07-civilian-refuge-cyrene",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "dayr-al-jamajim",
+      "dateRange": "701 CE; some scholarly sources differ on final engagement dating",
+      "locationRangeUncertainty": "Medieval gazetteer locates Dayr al-Jamajim seven farsakhs from Kufa on the wilderness edge along the Basra route; distance unit and exact point are not a modern coordinate.",
+      "primaryUrl": "https://islamic-content.com/t/6979",
+      "locator": "Yaqut al-Hamawi, *Muʿjam al-Buldan*, entry “Dayr al-Jamajim” as reproduced; opened result states “ظاهر الكوفة على سبعة فراسخ ... للسالك إلى البصرة”; later entries give variant dating and descriptions.",
+      "terrainWaterAccessStatements": [
+        "Gazetteer describes outskirts of Kufa, desert edge, route toward Basra; variant transmission includes Euphrates-side wording, so hydrology/site placement is unresolved."
+      ],
+      "anachronismNotes": [
+        "Keep a broad Kufa hinterland setting and flag variant accounts; do not place on a precise modern map based only on farsakh distance.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-medieval-gazetteer"
+    },
+    {
+      "profileId": "dhu-husam",
+      "dateRange": "680 CE; route narrative in later transmitted accounts",
+      "locationRangeUncertainty": "Dhu Husam is a route-stop name in narrative sources; exact archaeological identification is unresolved here. Do not conflate it with Zubala or assert coordinates.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "Iranica, “Ḥosayn b. ʿAli I”; selection cites paragraphs 74–77 for reported Dhu Husam encounter; exact site identification not established in this audit.",
+      "terrainWaterAccessStatements": [
+        "No independently verified site-scale terrain/water/access facts yet."
+      ],
+      "anachronismNotes": [
+        "Route itinerary has layers of transmission; keep event attribution explicit and location broad. No exact point or precise route line.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification"
+    },
+    {
+      "profileId": "dumat-al-jandal",
+      "dateRange": "February658 approximate; Ramadan37AHaccordingPoonawala",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Párr. 86; first meeting appears to occur",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-fitna",
+        "episodeId": "18-separate-delegation-logistics-dumat-al-jandal",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "egypt-middle-nile",
+      "dateRange": "249–251 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.papyrology.ox.ac.uk/POxy/",
+      "locator": "P.Oxy. 1464 y otros libelli",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "28-certificate-and-refuge-egypt-middle-nile",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "ephesus",
+      "dateRange": "c. 54–55 CE; writing location uncertain",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/list/1018/",
+      "locator": "Brief synthesis and lines 4–5, 54: Kaystros estuary; successive settlements moved west with retreating coast; harbor channel/basin.",
+      "terrainWaterAccessStatements": [
+        "Ephesus formed in the Kaystros estuary; settlements followed a westward-retreating coastline; Roman harbor included channel and basin."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-heritage",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "11-distributed-preservation-ephesus",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "fahl",
+      "dateRange": "634/635 CE in some chronologies",
+      "locationRangeUncertainty": "Battle is associated with Fahl/Pella and environs; event may be described broadly in the Jordan Valley, but battle line placement is not located by the archaeological site itself.",
+      "primaryUrl": "https://www.jstor.org/stable/jj.14443782",
+      "locator": "McNicoll et al., *Pella in Jordan*, “Introduction” (pp. 7–12), JSTOR lines 109–110: ancient Pella/Tabaqat Fahl in lower foothills east Jordan Valley, ~5 km east of Jordan River; perennial spring and route junction. This supports site geography, not battle positions.",
+      "terrainWaterAccessStatements": [
+        "Pella site sits on lower foothills of the East Jordan Valley; perennial spring; near north-south Damascus–Arabia and east-west plateau–coast routes."
+      ],
+      "anachronismNotes": [
+        "Do not equate Pella archaeological footprint with the entire battlefield; do not place later modern settlements or roads as ancient geometry.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-site-geography-only"
+    },
+    {
+      "profileId": "fergana",
+      "dateRange": "715 CE; commanderhistoricaldeathreported",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "“Arab ii,” final Qutayba paragraph; “Khorasan iv” says ca. August 715",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "25-finite-withdrawal-and-record-preservation-fergana",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "finike",
+      "dateRange": "654–655 CE; conversion variants",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+      "locator": "Article notes 35, 41–42: al-Tabari dates the Battle of the Masts to 34 AH; the article discusses competing accounts and dates.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "29-finite-naval-withdrawal-and-care-finike",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "hammath-tiberias",
+      "dateRange": "4th century CE; archaeological range, not an exact dedication",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://cja.huji.ac.il/browser.php?id=644&mode=alone",
+      "locator": "Hebrew University Center for Jewish Art, object record “Hammath Tiberias Synagogue”; Oxford chapter “Ancient Synagogues in Palestine: An Overview” discusses a fourth-century date and competing early/late-fourth-century datings: https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "18-finite-mosaic-works-hammath-tiberias",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "harura",
+      "dateRange": "657/658 CE; Nahrawanlateroff-map",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Párrs. 82–85; secession",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "house-of-ali",
+        "episodeId": "10-voluntary-household-relocation-harura",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "hudaybiyya",
+      "dateRange": "March628 CE;6AH",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "locator": "TDV İslâm Ansiklopedisi, “Hudeybiye Antlaşması,” pasajes sobre la salida desde Medina para la ʿumra y la negociación del acuerdo (6/628); artículo sitúa Hudaybiyya al oeste de La Meca.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "11-bounded-negotiation-and-supply-hudaybiyya",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "huqoq",
+      "dateRange": "late4th–early5th century CE; c.400",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11813141/",
+      "locator": "Magness et al., “Understanding the history of the late Roman synagogue at Huqoq in Israel’s Galilee through radiocarbon dating and observations on site formation,” PLOS ONE 20.2 (2025), especially abstract and sections “Late Roman synagogue” and “Conclusion” (construction around end 4th/beginning 5th c.; lines 130, 145, 300–312 in consulted version).",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "26-finite-community-construction-huqoq",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "jabiya",
+      "dateRange": "684 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.jstor.org/stable/jj.18252825",
+      "locator": "Al-Ṭabarī vol. 20, years 64–65; translator’s foreword and year 65 section",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "06-separate-delegation-and-supply-jabiya",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "jamal-basra",
+      "dateRange": "656 CE",
+      "locationRangeUncertainty": "Battle vicinity outside Basra; one modern Iraqi journal abstract places conflict in al-Zawaya north of Basra but exact limits/point require review of full paper and sources.",
+      "primaryUrl": "https://iasj.mohesr.gov.iq/journals/journal/issue/8341",
+      "locator": "Basra Studies Journal, issue 13 listing/abstract: conclusion places battle in northern Basra, al-Zawaya, about two leagues from central city; full article not opened.",
+      "terrainWaterAccessStatements": [
+        "Basra regional source describes early Basra near Shatt al-Arab and old settlement Khurayba; no battle-specific watercourse/approach verified."
+      ],
+      "anachronismNotes": [
+        "Do not treat “two leagues” as a surveyed coordinate or assume current urban grid. Battle called Basra/Jamal in narrative tradition.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-abstract-only"
+    },
+    {
+      "profileId": "judean-desert",
+      "dateRange": "132–135 CE; cave records, not an invented battle",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+      "locator": "Museo de Israel, monedas y documentos",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "11-archive-extraction-judean-desert",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "judean-hills",
+      "dateRange": "132–135 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+      "locator": "Museo de Israel, monedas y documentos",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "10-finite-mint-consignments-judean-hills",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "kent",
+      "dateRange": "596–597 CE; Rome dispatch prologue",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://sourcebooks.fordham.edu/source/gregory1.asp",
+      "locator": "Gregory’s letters concerning Augustine’s mission",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "18-hospitality-and-mission-supply-kent",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "khaybar",
+      "dateRange": "628 CE conventional",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "“Ali: Life,” referencias a Ibn Hisham II, pp. 349–350; Waqidi",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "12-finite-siege-and-civilian-extraction-khaybar",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "khwarazm",
+      "dateRange": "712 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/list/543",
+      "locator": "Description: south of Amu Darya, in Khorezm, last caravan stop before desert toward Persia; this refers to Khiva/Itchan Kala and cannot stand for all Khwarazm.",
+      "terrainWaterAccessStatements": [
+        "For Khiva/Itchan Kala only: south of Amu Darya, caravan stop before crossing desert toward Persia."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-local-subsite-not-region",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "21-bounded-river-trade-and-receipts-khwarazm",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "kufa-euphrates",
+      "dateRange": "October634 CE approximate",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "“Arab ii,” episodio de la batalla del puente (Shaban 13/Oct 634)",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "17-finite-river-withdrawal-kufa-euphrates",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "lod",
+      "dateRange": "c.100–135 CE; Akiva traditionally diesc.135, not150–180",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "locator": "Literatura tannaita, visión general",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "06-teaching-record-escort-lod",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "lyon",
+      "dateRange": "177 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.newadvent.org/fathers/250106.htm",
+      "locator": "Eusebius, HE 5.1",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "24-witness-and-evacuation-lyon",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "mecca",
+      "dateRange": "683 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.jstor.org/stable/jj.18252825",
+      "locator": "Al-Ṭabarī vol. 20, year 64 (683–684), pp. 1–123; JSTOR excerpt lines 102–109 reports 40-day siege and retreat after Yazid’s death",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "05-finite-siege-and-household-relief-mecca",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "merv",
+      "dateRange": "705 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/list/886",
+      "locator": "Brief synthesis and criterion: Merv oasis on the Murgab; settlement sequence follows changing riverbed that shifted east to west.",
+      "terrainWaterAccessStatements": [
+        "Merv is an oasis-city system tied to the Murgab river; its urban centres shifted with the changing riverbed."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-geography",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "14-provincial-dispatch-and-provision-merv",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "mina-aqaba",
+      "dateRange": "621 CE traditional; firstpledge, notsecond",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://escholarship.org/uc/item/87q494b4",
+      "locator": "Shuayb, dissertation, Aqaba pledges discussion: the next year's group is described as twelve men, including Aws and Khazraj members, with Mus'ab ibn Umayr sent to Yathrib; source labels the first two pledge traditions and their sequence.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "05-delegate-logistics-and-receipts-mina-aqaba",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "nahrawan",
+      "dateRange": "658 CE, commonly; source chronology should be checked",
+      "locationRangeUncertainty": "Campaign/battle associated with Nahrawan canal east of the Tigris; battle site within the canal corridor not fixed here.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Iranica “ʿAli b. Abi Ṭāleb I: Life,” paragraph 88 as cited by episode dossier; battle-narrative reference, not independent geographic site survey.",
+      "terrainWaterAccessStatements": [
+        "The Nahrawan canal corridor and eastern Tigris bank are likely relevant; direct academic canal geography source still pending."
+      ],
+      "anachronismNotes": [
+        "Do not depict modern Baghdad suburb footprint or treat the entire canal system as one precise battle point.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification"
+    },
+    {
+      "profileId": "nicomedia",
+      "dateRange": "13 June 313 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+      "locator": "Lactantius 48; texto del rescripto",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "03-property-and-record-restoration-nicomedia",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "paderborn",
+      "dateRange": "799 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "locator": "Einhard, Life of Charlemagne 28; Royal Frankish Annals 799",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "31-refuge-and-petition-escort-paderborn",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "paykand",
+      "dateRange": "706 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/document/221298",
+      "locator": "2025 OUV statement, Bukhara urban/crossroads history; not a site-specific locator for Paykand, so only a regional context source.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-site-specific-geography",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "15-finite-siege-and-trade-recovery-paykand",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "pliska",
+      "dateRange": "811 CE; battle-site footprint uncertain",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+      "locator": "Theophanes, Chronicle AM 6303",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "new-rome",
+        "episodeId": "29-finite-withdrawal-and-relief-pliska",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "pumbedita",
+      "dateRange": "c.250–300 CE; precise institutional chronology qualified",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://academic.oup.com/book/4297",
+      "locator": "Halivni, Formation of Babylonian Talmud, abstract",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "17-cross-river-study-logistics-pumbedita",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "qadisiyya",
+      "dateRange": "636/637 CE; precise calendar year and narrative chronology debated",
+      "locationRangeUncertainty": "Archaeological/remote-sensing study proposes a likely site; battle location should remain a regional/probabilistic area rather than an exact battle coordinate. Older scholarship describes a waystation whose location was forgotten.",
+      "primaryUrl": "https://www.cambridge.org/core/journals/antiquity/article/locating-alqadisiyyah-mapping-iraqs-most-famous-early-islamic-conquest-site/21B9442A0AF8C5AF41F67D7F270B0E34",
+      "locator": "Deadman et al., “Locating al-Qadisiyyah,” Abstract and Introduction (2024/2025): abstract says “likely location”; lines 543, 551–554 describe Darb Zubaydah survey and battle between floodplain and desert.",
+      "terrainWaterAccessStatements": [
+        "The study places its survey area in southwest Iraq; historical battle setting described between fertile Mesopotamian floodplain and desert. Specific trench/forts/river features require direct article section review before map use."
+      ],
+      "anachronismNotes": [
+        "Battle date often rounded to 636 but article uses c. 637/8 in abstract and 636/637 in introduction; keep qualified. Likely-site identification is not a GPS battle formation.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-academic-locator"
+    },
+    {
+      "profileId": "ramitin",
+      "dateRange": "707 CE; localityidentificationqualified",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "“Arab ii,” Qutayba campaign sequence, 88/707",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "16-finite-relief-and-withdrawal-ramitin",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "ravenna",
+      "dateRange": "476 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.britannica.com/event/fall-of-Rome",
+      "locator": "Fall of Western Roman Empire overview",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "08-administrative-transition-ravenna",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "rimini",
+      "dateRange": "359 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.newadvent.org/fathers/28153.htm",
+      "locator": "Athanasius, History of the Arians, §33 and surrounding account",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "04-draft-and-delegate-network-rimini",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "saint-denis",
+      "dateRange": "754 CE; Saint-Denis local focus",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "locator": "Fordham Sourcebook introduction, Pepin and Stephen II",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "26-delegate-and-oath-logistics-saint-denis",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "samarkand",
+      "dateRange": "712 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://whc.unesco.org/en/list/603/",
+      "locator": "Brief synthesis: city in a large oasis in the Zerafshan River valley; Afrosiab archaeological reserve northeast of historic town.",
+      "terrainWaterAccessStatements": [
+        "Samarkand lies in a large oasis in the Zerafshan valley; UNESCO describes Afrosiab as the ancient-city site northeast of historic town."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-official-geography",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "22-finite-siege-and-property-records-samarkand",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "sardes",
+      "dateRange": "c. 170–180 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.earlychristianwritings.com/melito.html",
+      "locator": "Melito, Apology fragments",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "faith-origins",
+        "episodeId": "23-petition-escort-sardes",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "sardica",
+      "dateRange": "343 CE; chronology qualified",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "locator": "Council of Sardica; historical note places synod in 343, potentially autumn.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "church-of-rome",
+        "episodeId": "02-separate-delegation-logistics-sardica",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "sepphoris",
+      "dateRange": "351/352 CE; late partisan reports and scale disputed",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://en.wikisource.org/wiki/Ecclesiastical_history_(Socrates_Scholasticus)/Book_II/Chapter_XXXIII",
+      "locator": "Socrates Scholasticus, Ecclesiastical History II.33, “Of the Jews inhabiting Dio-Cæsarea in Palestine”; parallel report: Sozomen, Ecclesiastical History IV.7, https://orthodoxchurchfathers.com/fathers/npnf202/npnf2031.html.",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "19-bounded-civilian-withdrawal-sepphoris",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "siffin",
+      "dateRange": "657 CE",
+      "locationRangeUncertainty": "Siffin is conventionally located on the Euphrates near Raqqa; exact ancient settlement footprint and combat positions remain unverified in this audit.",
+      "primaryUrl": "https://old.bigenc.ru/world_history/text/3667006",
+      "locator": "Большая российская энциклопедия, “Сиффин”; search result passage: right bank of middle Euphrates near al-Raqqa; chronology May–July 657, chronology/synchrony unclear.",
+      "terrainWaterAccessStatements": [
+        "Source states right bank of middle Euphrates near Raqqa. No precise ford, canal, battlefield line, or modern site equivalence established."
+      ],
+      "anachronismNotes": [
+        "Use a broad Euphrates-region play space; avoid precise troop positions and modern shoreline assumptions.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-reference-snippet"
+    },
+    {
+      "profileId": "tashkent",
+      "dateRange": "714 CE; Fergana/Isfijabreportedoff-map",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "“Arab ii,” campaigns to 95/714",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "umayyads",
+        "episodeId": "24-finite-caravan-and-relief-tashkent",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "thessalonica",
+      "dateRange": "14 March388 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://thessaloniki.gr/thessaloniki-at-a-glance/?lang=en",
+      "locator": "Lines 200–202: modern city arcs around top of Thermaic Gulf and fertile surroundings. Modern civic page used only for stable regional placement; needs ancient-period corroboration.",
+      "terrainWaterAccessStatements": [
+        "Municipal source places modern city on arc of coast at head of Thermaic Gulf; this is a regional anchor only and not proof of the ancient shoreline."
+      ],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "consulted-modern-municipal-geography",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "22-law-and-community-records-thessalonica",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "tyre",
+      "dateRange": "335 CE; Tyre council focus",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.newadvent.org/fathers/25023.htm",
+      "locator": "Eusebius, Life of Constantine IV.41–47; III.28",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "imperial-church",
+        "episodeId": "16-witness-record-comparison-tyre",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "uhud",
+      "dateRange": "625 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "“Ali: Life,” pasaje sobre defensa en Uhud y bibliografía de Ibn Hisham/Waqidi",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "first-caliphs",
+        "episodeId": "09-finite-withdrawal-and-care-uhud",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "yavneh",
+      "dateRange": "c.70–80 CE",
+      "locationRangeUncertainty": "Pending source-level geographic audit; no battle footprint or precise ancient location assumed.",
+      "primaryUrl": "https://www.jewishvirtuallibrary.org/yavneh",
+      "locator": "Fuentes rabínicas compiladas después; overview",
+      "terrainWaterAccessStatements": [],
+      "anachronismNotes": [
+        "Modern coordinate/toponym is only an anchor; do not transfer modern roads, watercourses, shorelines, infrastructure, or exact footprints to the historical map without period evidence.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification",
+      "episodeCitationContext": {
+        "campaignId": "jewish-tradition",
+        "episodeId": "02-refuge-and-school-supply-yavneh",
+        "citationScope": "historical episode selection; not yet verified for geographic claims"
+      }
+    },
+    {
+      "profileId": "zubala",
+      "dateRange": "680 CE; separate report/stop in route narrative",
+      "locationRangeUncertainty": "Zubala is a distinct stop from Thaʿlabiyya in the dossier; its modern identification and precise historical route position remain unverified here.",
+      "primaryUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "Iranica, “Ḥosayn b. ʿAli I”; selection cites paragraphs 71–73; dossier explicitly warns report is separate from Thaʿlabiyya.",
+      "terrainWaterAccessStatements": [
+        "No independently verified site-scale terrain/water/access facts yet."
+      ],
+      "anachronismNotes": [
+        "Do not merge Zubala with Thaʿlabiyya or infer exact GPS coordinates from modern toponym similarity.",
+        "Do not turn a representative gazetteer point or present-day place centroid into an exact ancient settlement or battle coordinate; prefer a labelled regional footprint when evidence is broad."
+      ],
+      "consultedStatus": "pending-geographic-verification"
+    }
+  ],
+  "sourcesConsulted": [
+    {
+      "url": "https://www.cambridge.org/core/journals/antiquity/article/locating-alqadisiyyah-mapping-iraqs-most-famous-early-islamic-conquest-site/21B9442A0AF8C5AF41F67D7F270B0E34",
+      "title": "Deadman et al., Locating al-Qadisiyyah: mapping Iraq’s most famous early Islamic conquest site",
+      "consultedScope": "Abstract and Introduction; likely site, survey method, relative floodplain/desert setting; article locator no exact battle coordinate."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/qadesiya-battle/",
+      "title": "Encyclopaedia Iranica, Qādesiya, Battle of",
+      "consultedScope": "Paragraphs 36–45, 1912 rediscovery/waystation, historiographic uncertainty and narrative source criticism."
+    },
+    {
+      "url": "https://arab-ency.com.sy/overview/1486",
+      "title": "الموسوعة العربية, أجنادين",
+      "consultedScope": "Entry lines 153–157, between Ramla and Bayt Jibrin; proposed modern Janaba identifications. No exact battlefield footprint."
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.14443782",
+      "title": "McNicoll et al., Pella in Jordan: The Hellenistic and Roman Periods",
+      "consultedScope": "Introduction, pp. 7–12, site location, Jordan Valley foothills, perennial spring, major regional routes."
+    },
+    {
+      "url": "https://old.bigenc.ru/world_history/text/3667006",
+      "title": "Большая российская энциклопедия, Сиффин",
+      "consultedScope": "Search result reference text only: right bank of middle Euphrates near Raqqa; battle chronology caveat. Page body not accessible in open result."
+    },
+    {
+      "url": "https://islamic-content.com/t/6979",
+      "title": "Yaqut al-Hamawi, Muʿjam al-Buldan, Dayr al-Jamajim entry (digital transcription)",
+      "consultedScope": "Search-result entry text: seven farsakhs from Kufa, desert edge, way to Basra; variants noted. Needs edition/page verification."
+    },
+    {
+      "url": "https://iasj.mohesr.gov.iq/journals/journal/issue/8341",
+      "title": "Basra Studies Journal, issue 13, article on the location of the Battle of al-Jamal",
+      "consultedScope": "Search result abstract only: proposes al-Zawaya north of Basra; full paper not inspected."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/kufa/",
+      "title": "Encyclopaedia Iranica, Kufa",
+      "consultedScope": "Paragraphs 30–44: Kufa south of Baghdad, garrison city; urban/political context; not exact local terrain survey."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/603/",
+      "title": "UNESCO WHC, Samarkand – Crossroad of Cultures",
+      "consultedScope": "Brief synthesis: city in a large oasis in the Zerafshan River valley; Afrosiab archaeological reserve northeast of historic town."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/886",
+      "title": "UNESCO WHC, State Historical and Cultural Park Ancient Merv",
+      "consultedScope": "Brief synthesis and criterion: Merv oasis on the Murgab; settlement sequence follows changing riverbed that shifted east to west."
+    },
+    {
+      "url": "https://whc.unesco.org/en/tentativelists/1928",
+      "title": "UNESCO WHC Tentative List, City of Balkh (antique Bactria)",
+      "consultedScope": "Statement describes city west of Mazar-i-Sharif and Oxus course near city in antiquity; note tentative-list status."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/543",
+      "title": "UNESCO WHC, Itchan Kala",
+      "consultedScope": "Description: south of Amu Darya, in Khorezm, last caravan stop before desert toward Persia; this refers to Khiva/Itchan Kala and cannot stand for all Khwarazm."
+    },
+    {
+      "url": "https://whc.unesco.org/en/document/221298",
+      "title": "UNESCO WHC, Historic Centre of Bukhara (OUV statement)",
+      "consultedScope": "2025 OUV statement, Bukhara urban/crossroads history; not a site-specific locator for Paykand, so only a regional context source."
+    },
+    {
+      "url": "https://egymonuments.gov.eg/collections/alexandria/",
+      "title": "Egypt Ministry of Tourism and Antiquities, Alexandria",
+      "consultedScope": "Lines 132–134: narrow land between Mediterranean and Lake Mareotis; Heptastadion to Pharos created Eastern/Western Ports."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1018/",
+      "title": "UNESCO WHC, Ephesus",
+      "consultedScope": "Brief synthesis and lines 4–5, 54: Kaystros estuary; successive settlements moved west with retreating coast; harbor channel/basin."
+    },
+    {
+      "url": "https://whc.unesco.org/en/tentativelists/1480/",
+      "title": "UNESCO WHC Tentative List, Caesarea",
+      "consultedScope": "Description lines 81–84: Mediterranean bays/shallow inlets, anchorage; no local rivers/springs; water aqueduct from Shuni springs 7.5 km northeast."
+    },
+    {
+      "url": "https://thessaloniki.gr/thessaloniki-at-a-glance/?lang=en",
+      "title": "Municipality of Thessaloniki, Thessaloniki at a glance",
+      "consultedScope": "Lines 200–202: modern city arcs around top of Thermaic Gulf and fertile surroundings. Modern civic page used only for stable regional placement; needs ancient-period corroboration."
+    }
+  ]
+}
