@@ -36,7 +36,8 @@
           "wikidata": "Q3307700"
         }
       },
-      "scope": "Modern Reculver hamlet label; not an ancient fort, shoreline, crossing or landing point."
+      "scope": "Modern Reculver hamlet label; not an ancient fort, shoreline, crossing or landing point.",
+      "rawResponseUtf8": "{\"version\":\"0.6\",\"generator\":\"openstreetmap-cgimap 2.1.0 (2356398 spike-08.openstreetmap.org)\",\"copyright\":\"OpenStreetMap and contributors\",\"attribution\":\"http://www.openstreetmap.org/copyright\",\"license\":\"http://opendatacommons.org/licenses/odbl/1-0/\",\"elements\":[{\"type\":\"node\",\"id\":29038127,\"lat\":51.3787239,\"lon\":1.1978418,\"timestamp\":\"2015-09-12T15:23:38Z\",\"version\":2,\"changeset\":33982311,\"user\":\"Gregory Williams\",\"uid\":7037,\"tags\":{\"is_in\":\"Kent,England,United Kingdom\",\"name\":\"Reculver\",\"place\":\"hamlet\",\"wikidata\":\"Q3307700\"}}]}"
     },
     {
       "url": "https://www.openstreetmap.org/api/0.6/node/9827276975.json",
@@ -61,7 +62,8 @@
           "wikipedia": "en:Richborough"
         }
       },
-      "scope": "Modern Richborough village label; not the Roman fort, an island boundary or Augustine landing."
+      "scope": "Modern Richborough village label; not the Roman fort, an island boundary or Augustine landing.",
+      "rawResponseUtf8": "{\"version\":\"0.6\",\"generator\":\"openstreetmap-cgimap 2.1.0 (2356396 spike-08.openstreetmap.org)\",\"copyright\":\"OpenStreetMap and contributors\",\"attribution\":\"http://www.openstreetmap.org/copyright\",\"license\":\"http://opendatacommons.org/licenses/odbl/1-0/\",\"elements\":[{\"type\":\"node\",\"id\":9827276975,\"lat\":51.2954693,\"lon\":1.3252361,\"timestamp\":\"2022-06-18T07:55:49Z\",\"version\":1,\"changeset\":122535343,\"user\":\"OnwardTravel\",\"uid\":13750939,\"tags\":{\"addr:country\":\"GB\",\"name\":\"Richborough\",\"place\":\"village\",\"wikidata\":\"Q2607619\",\"wikipedia\":\"en:Richborough\"}}]}"
     },
     {
       "url": "https://www.openstreetmap.org/api/0.6/node/17916174.json",
@@ -110,7 +112,8 @@
           "wikipedia": "en:Canterbury"
         }
       },
-      "scope": "Modern Canterbury city label; not a sixth-century boundary, church parcel or grant site."
+      "scope": "Modern Canterbury city label; not a sixth-century boundary, church parcel or grant site.",
+      "rawResponseUtf8": "{\"version\":\"0.6\",\"generator\":\"openstreetmap-cgimap 2.1.0 (2187427 spike-08.openstreetmap.org)\",\"copyright\":\"OpenStreetMap and contributors\",\"attribution\":\"http://www.openstreetmap.org/copyright\",\"license\":\"http://opendatacommons.org/licenses/odbl/1-0/\",\"elements\":[{\"type\":\"node\",\"id\":17916174,\"lat\":51.2800275,\"lon\":1.0802533,\"timestamp\":\"2025-10-26T10:32:31Z\",\"version\":49,\"changeset\":173787781,\"user\":\"indigomc\",\"uid\":136860,\"tags\":{\"alt_name:br\":\"Kergent\",\"is_in\":\"Kent, England, UK\",\"is_in:country\":\"United Kingdom\",\"is_in:country_code\":\"GB\",\"is_in:county\":\"Kent\",\"name\":\"Canterbury\",\"name:ar\":\"كانتربيري\",\"name:bn\":\"ক্যান্টারবুরি\",\"name:br\":\"Kergent\",\"name:cy\":\"Caergaint\",\"name:en\":\"Canterbury\",\"name:fr\":\"Cantorbéry\",\"name:hu\":\"Canterbury\",\"name:kn\":\"ಕಾಂಟರ್ಬರಿ\",\"name:ko\":\"캔터베리\",\"name:la\":\"Cantuaria\",\"name:lt\":\"Kenterberis\",\"name:lv\":\"Kanterburija\",\"name:mk\":\"Кантербери\",\"name:ml\":\"കാൻ്റർബറി\",\"name:ru\":\"Кентербери\",\"name:sr\":\"Кентербери\",\"name:uk\":\"Кентербері\",\"name:ur\":\"کینٹربری\",\"old_name:nl\":\"Kantelberg\",\"place\":\"city\",\"population\":\"43400\",\"wikidata\":\"Q29303\",\"wikipedia\":\"en:Canterbury\"}}]}"
     }
   ],
   "limits": [
@@ -119,5 +122,6 @@
     "No channel or route geometry is supplied; the 597 shoreline and Wantsum crossing remain unresolved.",
     "A report-area National Grid reference, a modern satnav point and a UNESCO church component must not be silently substituted for these nodes or an event location."
   ],
-  "priorSourceCollectionBy": "gpt-6-luna"
+  "priorSourceCollectionBy": "gpt-6-luna",
+  "rawResponsePolicy": "Each rawResponseUtf8 retains the complete exact HTTPS response body whose bytes/hash are recorded. The live server generator or other response metadata may change later; revalidate the captured body locally and compare current node identities/coordinates separately."
 }
