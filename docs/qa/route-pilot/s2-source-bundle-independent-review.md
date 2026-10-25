@@ -1,0 +1,23 @@
+# Independent review of the two laboratory source bundles
+
+Reviewer: gpt-6. Implementer: gpt-6-luna. Date: 2026-10-25. Delivery: `5092107ee1dd913bed88ff6398b0a3145aea3135`, updated by `6be2353` after review; base includes the independently reviewed briefing amendment integrated at `c77052b2`. This is review of f00001/S2 source materialization only. Formal acceptance and publication are recorded separately in DelendAI.
+
+## Findings and correction
+
+No blocking source-contract defect remains in the reviewed delivery. The initial implementation assigned five seconds to every narrative line, including the long successor recap. I requested the existing design factory's reading estimate, `max(2, ceil(max(EN words, es-ES words) / 130 * 60))`. The implementer changed only line durations in `6be2353`; I independently checked all fourteen lines. The long campaign recap now has 21 estimated seconds. T02's short scenario reminder remains five seconds and its objective timer remains ten active scenario seconds from load. These estimates do not certify native presentation or audio timing.
+
+The baseline contained neither bundle. The delivery adds only four source JSON files under the two allowed staging directories. Automatic DelendAI snapshots `637bfa7` and `85bbb27` preserved the implementer's initial files using inherited human Git authorship; the signed implementation commit explicitly records their actual gpt-6-luna provenance. No human authorship is inferred from those snapshots. Architect-authored specifications and the later binding correction remain separately attributed.
+
+## Acceptance evidence
+
+Both campaigns retain their fixed public/internal identities, source English and fixture status. Each has exactly the seventeen configured locale catalogues, all draft. T01 contains 23 runtime keys and T02 contains 13; EN and es-ES values exactly match the closed inventory. None of the seven documentary conditional intentions enters runtime catalogues or unbound events. I sampled the additional draft translations for route/priority/predecessor meaning; this is not approval of fluency, terminology or all fifteen locales. Linguistic review remains pending, including localized AoE unit terminology.
+
+The common fictional framing precedes an explicit handover to the distinct observer/archivist personas. The required T01 scenario intro uses the existing factual key with its own line ID, following the reviewed amendment. The successor states the optional predecessor and sufficient static recap without claiming to inspect a saved record. Both `recommendedPrevious` arrays are empty and `enforceRequirement` is false, as the approved source limitation requires.
+
+I checked the two 32×32 artificial grass layouts, exact militia/ram/castle identities and positions, essential guard and 900-second timeout, one-second preparation, ordered A/B route conditions and cumulative progress-key namespaces, zero-resource finite factions, identical technical difficulty profiles and absence of extra content triggers. T02 has its one nonessential marker, no opponent, no route/progress mutation and the specified ten-second objective. The source contains no invented historical claims, acquired media, voice recording or licence assertions. Assets/media are empty; this requires no licensed media download.
+
+`bun run staging:check route-pilot` and `bun run staging:check route-successor` passed independently without `--partial`: complete=true, pending=[], issues=[]. `bun run validate` passed independently on the final duration-corrected delivery: TypeScript/Biome, 142 Bun tests, zero failures, 2,069 expectations, documentation/local links and validation of the one active campaign. The staging checks are separate evidence for these two inactive bundles. A separate source comparison checked all configured locales, exact EN/es-ES keys/texts, documentary exclusions, geometry/terminal parameters and every duration estimate. No adapter changed; no new export or engine result is claimed.
+
+## Remaining gates
+
+The bundles remain in staging. No historical campaign, string lock, glossary or active campaign directory is changed by S2. S3 still owns joint promotion, IDs/glossary and supported export. S4 and the native infrastructure proposals still require real engine/template evidence: actual footprints/pathfinding, castle behavior under generated AI triggers, no-opponent auto-victory behavior, route persistence, conditional recap/input/read-error handling, save/load and coexistence. All compatibility and scenario QA entries remain pending. This review does not confer GAME VERIFIED, PRODUCTION READY, translated-language approval or native conditional presentation.
