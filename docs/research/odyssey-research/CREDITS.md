@@ -76,3 +76,8 @@ These three files are CDN-recompressed research copies; pixel dimensions are pre
 ## Constantinople modern OSM shoreline,24October2026
 
 `geography/constantinople-modern-osm-coastline.raw.json` preserves the exact public Overpass response; `geography/constantinople-modern-osm-coastline.geojson` converts its60coastline ways to GeoJSON without simplifying/joining coordinates. © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [ODbL1.0](https://opendatacommons.org/licenses/odbl/1-0/). Attribution and applicable data share-alike obligations remain. The raw and derived files are separate inventoried resources, with bytes/SHA, query and snapshot time in the manifest and [provenance](constantinople-modern-osm-coastline-provenance.json). These are current mapped shores, including modern works, not a380shoreline, land mask, bridge or navigable terrain. Research-only; neither resource is approved for mod distribution.
+
+
+## Hijaz modern DSM research crops — 24 October 2026
+
+Four lossless regional GLO-30 crops and four scientific height previews for Badr, Uhud, Hudaybiyya and Mina-Aqaba: DLR/Airbus under Copernicus/EU/ESA, local processing gpt-6. See [required notices](geography/hijaz-modern-dsm-license.md) and [exact source/crop provenance](hijaz-modern-dsm-processing.json). Contemporary visitor/administrative markers are published by Nusuk or the Saudi municipal ministry; they are not archaeological event coordinates. No photographs or Google Maps imagery were copied. Historical/native use remains unapproved.

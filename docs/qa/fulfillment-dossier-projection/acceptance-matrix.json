@@ -1,0 +1,261 @@
+{
+  "classification": "architect acceptance specification; not executed test or game evidence",
+  "author": "gpt-6",
+  "date": "2026-10-25",
+  "proposalId": "i00008",
+  "sliceId": "S1",
+  "sourceAuthority": "docs/architecture/fulfillment-dossier-projection.md",
+  "caseCount": 34,
+  "cases": [
+    {
+      "id": "dispatch-legacy",
+      "inputOrMutation": "existing 63 blueprints without discriminator",
+      "requiredResult": "legacy dossier/wiki/map artifacts content-identical; no v3 fields",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "dispatch-opt-in",
+      "inputOrMutation": "explicit alternative-fulfillment-v3 and valid complete profile",
+      "requiredResult": "deterministic derived views retain the validated exact plan",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "unknown-profile",
+      "inputOrMutation": "unknown discriminator, missing profile or schemaVersion other than 3",
+      "requiredResult": "reject with episode-local diagnostic; no legacy fallback",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "strict-schema",
+      "inputOrMutation": "unknown field or malformed v3 profile",
+      "requiredResult": "reuse schema failure; no silently stripped fields",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "semantic-validation",
+      "inputOrMutation": "unknown identity, shared worker across services or generated original input",
+      "requiredResult": "existing semantic diagnostics preserved",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "typed-mapping",
+      "inputOrMutation": "explicit point-to-zone and recipe presentation bindings",
+      "requiredResult": "all declared identities/costs/zones preserved without campaign literals",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "binding-drift",
+      "inputOrMutation": "missing/duplicate point or cross-service output/recipient binding",
+      "requiredResult": "reject binding, identify exact offending ID",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "view-drift",
+      "inputOrMutation": "alter a derived world/objective/state/secondary/service view",
+      "requiredResult": "reject mismatch with single authoritative reference profile",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "exclusive-costs",
+      "inputOrMutation": "two services with unequal alternative costs",
+      "requiredResult": "one recipe per service; never create all-recipe fixed-payment predicates",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "fixed-main-cost",
+      "inputOrMutation": "add shared resource-transaction or nonzero predicate.resourceAmounts",
+      "requiredResult": "reject explicit first-mapper limitation, without altering schema",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "numeric-accounts",
+      "inputOrMutation": "negative/fractional/boolean/nonfinite/unsafe amount or aggregate overflow",
+      "requiredResult": "reject before enumeration/account comparison",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "all-skip",
+      "inputOrMutation": "no affordable complete selection in one difficulty despite possible optional aid",
+      "requiredResult": "reject that difficulty; aid cannot satisfy all-skip obligation",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "budget-isolation",
+      "inputOrMutation": "choice affordable only by spending protected or optional reserve",
+      "requiredResult": "choice remains unaffordable; accounts stay distinct",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "reserve-duplication",
+      "inputOrMutation": "add reallocatedCacheAllowance to optional/spendable stock or mismatch optionalReserve",
+      "requiredResult": "reject inconsistent funding; no duplicate optional source",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "enumeration-bounds",
+      "inputOrMutation": "8x8 bounds, 4096 boundary and oversized product",
+      "requiredResult": "reuse v3 supported bounds; reject oversized structures",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "nonconsumer-fixture",
+      "inputOrMutation": "artificial 3-service plan with different recipe counts/costs",
+      "requiredResult": "generic projection works without Constantinople constants",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "consumer-accounting",
+      "inputOrMutation": "explicit 2-service artificial regression based on dated allocation study",
+      "requiredResult": "9/7/3 all-skip counts; counts labelled accounting only",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "optional-prefix",
+      "inputOrMutation": "hard shared-hearth/rented leaves20W; repair costs50W; aid grants50W",
+      "requiredResult": "repair-first unavailable; aid-then-repair affordable; use existing accounting helper",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "absolute-geometry",
+      "inputOrMutation": "work/reception zones on distinct hubs overlap in absolute tile coordinates",
+      "requiredResult": "reject overlap despite distinct hub IDs",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "map-bounds",
+      "inputOrMutation": "zone centre inside map but full circle crosses edge",
+      "requiredResult": "reject full-footprint violation; no pathfinding claim",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "shared-versus-service",
+      "inputOrMutation": "shared objective latched while plan only reserved or incomplete",
+      "requiredResult": "no service-complete/victory presentation; genuine reducer gate retains selected work",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "selected-output",
+      "inputOrMutation": "wrong-recipe output or generic fact substituted for selected generated identity",
+      "requiredResult": "genuine reference reducer rejects causal substitution",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "terminal-batch",
+      "inputOrMutation": "selected receipts present but required recipient dead or absent in latest batch",
+      "requiredResult": "genuine reducer prevents victory and applies known-loss priority",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "secondary-preservation",
+      "inputOrMutation": "seven explicit authored optional contracts with three portfolios",
+      "requiredResult": "exact predicates/effects/funding/state and IDs retained; no regeneration by kind",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "screen-binding",
+      "inputOrMutation": "unbound service/recipe ID or reservation text claiming work complete",
+      "requiredResult": "reject binding; distinguish preview/reserve/cancel/start/reception",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "caption-content",
+      "inputOrMutation": "long EN/es-ES screen supplied to existing caption helper",
+      "requiredResult": "same complete text, chunks at most32words; native/audio status stays pending",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "bridge-failure",
+      "inputOrMutation": "Bun unavailable, malformed JSON or nonzero validation subprocess",
+      "requiredResult": "generation fails with useful diagnostics; no skipped validation",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "determinism",
+      "inputOrMutation": "same valid source and accounts projected twice",
+      "requiredResult": "identical canonical design output without timestamps/random IDs",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "truthful-boundary",
+      "inputOrMutation": "successful schema/reference/accounting suite",
+      "requiredResult": "no dossier64, historical approval, native capability, balance or GAME VERIFIED claim",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "same-hub-distinct-points",
+      "inputOrMutation": "two nonoverlapping work/reception zones in one hub, distinct point IDs and matching offsets",
+      "requiredResult": "resolve each recipe to its exact zone; no assumption that pointId equals hubId",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-alias-collision",
+      "inputOrMutation": "same pointId bound to two different zone IDs or same zone bound twice",
+      "requiredResult": "reject ambiguous point/zone mapping before resolving recipe bindings",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-offset-drift",
+      "inputOrMutation": "point binding claims a hub/offset different from its profile zone",
+      "requiredResult": "reject disagreement; profile zone remains sole geometric authority",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "authored-point-relocation",
+      "inputOrMutation": "legitimate pointId but authored tile differs from hub-centre plus zone offset",
+      "requiredResult": "reject relocation; never derive away an existing map-point disagreement",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-floating-tolerance",
+      "inputOrMutation": "finite coordinate differences at and above0.000001tile on either axis",
+      "requiredResult": "allow only arithmetic tolerance<=0.000001; reject greater drift without snapping",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    }
+  ],
+  "requiredChecks": [
+    "focused mapper/reference/bridge adversarial tests",
+    "all63legacy dossiers and their rendered artifacts unchanged",
+    "bun run validate",
+    "independent model review and official DelendAI gate"
+  ],
+  "nativeBoundary": [
+    "i00007/S3",
+    "i00003",
+    "s00001"
+  ],
+  "historicalDossierOwner": "d00002/S3"
+}
