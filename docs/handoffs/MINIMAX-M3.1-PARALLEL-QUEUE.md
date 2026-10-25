@@ -2,17 +2,22 @@
 
 Decisión del propietario: el arquitecto sigue cerrando diseño mientras MiniMax materializa entregas ya preparadas. No se espera a terminar las nueve odiseas. Se usan propuestas, unidades, locks y revisiones del DelendAI conectado; este documento es un paquete de instrucciones, no una segunda cola o implementación de su runtime.
 
-## Estado recuperado el24de octubre de2026
+## Estado recuperado el 25 de octubre de 2026
 
 | Entrega | Trabajo del arquitecto | Encargo de MiniMax y bloqueo real |
 |---|---|---|
 | f00001/S1, laboratorio de rutas | Especificación, inventario bilingüe y matriz redactados por gpt-6, integrados en06e688e y aprobados independientemente por gpt-6-luna; metadatos integrados en3c41b4f5. | El servidor confirma S1 done; no adjudicar a MiniMax el texto del arquitecto. |
-| f00001/S2 | S1 ya aprobado cierra mapas, identidades, objetivos, textos y límites nativos. | Primera materialización designada: ambos bundles en staging,36claves representables en17catálogos draft;7intenciones condicionales sólo documentales. S1 está satisfecho; falta cuota del proveedor para el trabajador designado. |
-| f00001/S3 | Revisar ambos bundles y sus medios; reservar propiedad global de IDs/glosario. | Promoción conjunta únicamente tras S2, validación/export del perfil realmente soportado; no afirmar recap adaptativo implementado. |
+| f00001/S2 | S1 y su corrección de briefing están integrados y revisados. | Luna materializó los dos bundles, 36 claves runtime y 17 catálogos draft por bundle; 7 intenciones nativas quedan fuera. Producto integrado en9d5e744b y aprobación independiente gpt-6 integrada en137fdd73. El servidor confirmó S2 done,3/3; recuperar su estado antes de S3. |
+| f00001/S3 | Revisar aceptación integrada de S2 y reservar propiedad conjunta de staging, campañas, IDs/glosario. | Siguiente trabajo mecánico del piloto tras S2 done: promoción conjunta y exportación soportada. La asignación concreta a Luna o MiniMax la hace el arquitecto; no afirmar recap adaptativo implementado. |
 | f00001/S4 | Arquitecto/tester verifica el motor y las capacidades ausentes. | Registrar evidencia real del artefacto; no completar por una suite estática verde. |
+| i00008 | Decisión del arquitecto y revisión independiente integradas en11fcf956; aprobación S1 de Luna2/2 integrada en137fdd73. El servidor confirmó S1 done;34casos prospectivos y tres slices en la propuesta. | S2 implementará proyección/validación/render reutilizable sin convertir alternativas en pagos fijos. No implementar antes de recuperar S1 done. No crea por sí sola el dossier 64 ni soporte nativo. |
 | f00002 y f00003–f00011 | Preparar primer expediente individual aprobado, metadatos comunes y mapa/operaciones como diseño, con revisión independiente. | Ningún capítulo histórico está concedido por este documento. Consultar estado vivo y recibir paquete individual; lo demás sigue bloqueado. |
 
-El primer lanzamiento real por OpenCode, configurado como `minimax/MiniMax-M3.1-Flash`, recibió HTTP429/código2056: Token Plan usage limit. La sesión `ses_e90709888ffegF4vCs3Axe1zWY` no produjo edición, commit, unidad DelendAI ni muestra de calidad de código. La consulta OAuth de mmx mostró0% de cuota semanal general. No confundir autenticación con cuota disponible ni atribuir esta incidencia a calidad de MiniMax. No comprar créditos, cambiar de modelo ni arrancar una escalada automática por ese fallo. El siguiente intento recuperará el estado real y tomará sólo la tarea designada entonces.
+El primer lanzamiento real por OpenCode, configurado como `minimax/MiniMax-M3.1-Flash`, recibió HTTP429/código2056: Token Plan usage limit. La sesión `ses_e90709888ffegF4vCs3Axe1zWY` no produjo edición, commit, unidad DelendAI ni muestra de calidad de código. La consulta OAuth de mmx mostró 0 % de cuota semanal general y la consulta del 25 de octubre mantenía ese bloqueo. No confundir autenticación con cuota disponible ni atribuir esta incidencia a calidad de MiniMax. No comprar créditos ni arrancar una escalada automática por ese fallo. El propietario autorizó después delegar también la materialización a Luna: esa asignación explícita produjo S2, sin atribuir el resultado a MiniMax. El siguiente intento recuperará el estado real y tomará sólo la tarea designada entonces.
+
+El [reparto por LLM](LLM-WORK-ALLOCATION.md) detalla los volúmenes restantes y las correcciones observadas en la primera implementación.
+
+La implementación i00008/S2 tiene un [paquete mecánico específico](FULFILLMENT-DOSSIER-S2-PACKET.md), con el subconjunto económico, límites del análisis reutilizado y cobertura de typecheck. El cambio de Files añade sólo tsconfig.json para ese último fin; no altera S1, contratos públicos o estados históricos.
 
 ## Gates según el trabajo concreto
 
@@ -39,7 +44,9 @@ El arquitecto asigna una sola entrega inicial y proporciona estos datos concreto
 | Escalación | Ante contradicción: reproducción mínima, campo/operación ausente, decisión que debe tomar el arquitecto; conservar el resto del trabajo autorizado. |
 | Entrega | Ref, checkout, sesión propia, claim, commit, diff, logs reales, limitaciones, próxima tarea designada. Sin aprobación propia. |
 
-Para el laboratorio, usar [especificación](../wiki/route-pilot/02-implementation-specification.md), [matriz](../wiki/route-pilot/03-acceptance-matrix.md) e [inventario](../wiki/route-pilot/15-text-inventory.json), cuando estén integrados y revisados. No copiar la versión preliminar de pantallas generadas por encima de la decisión cerrada. Las36claves de S2 y las7intenciones nativas pendientes están separadas por `sourceDisposition`; no añadir las7a un catálogo de ejecución ni enlazarlas con eventos falsos para eludir el validador.
+Para el laboratorio, usar [especificación](../wiki/route-pilot/02-implementation-specification.md), [matriz](../wiki/route-pilot/03-acceptance-matrix.md) e [inventario](../wiki/route-pilot/15-text-inventory.json), cuando estén integrados y revisados. No copiar la versión preliminar de pantallas generadas por encima de la decisión cerrada. Las 36 claves de S2 y las 7 intenciones nativas pendientes están separadas por `sourceDisposition`; no añadir las7a un catálogo de ejecución ni enlazarlas con eventos falsos para eludir el validador.
+
+Las líneas obligatorias deben tener un binding explícito, incluido el intro de escenario. Repetir una clave existente no crea una clave nueva y cada línea conserva su ID propio. Para duraciones estimadas de fuente se usa la regla existente `max(2, ceil(max(palabras EN, palabras es-ES) / 130 * 60))`; la medida nativa sigue pendiente. Son correcciones derivadas de defectos observados, no nuevos requisitos inventados para cada tarea.
 
 ## Ciclo de supervisión
 
