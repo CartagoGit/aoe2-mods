@@ -10,6 +10,8 @@ last-transition-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
 last-correlation-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
 last-transition-from: ready
 last-transition-at: 2026-10-25T01:26:46.091Z
+shipped-in:
+  - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
 ---
 
 # i00008 — Typed dossier projection for alternative fulfillment without fixed-payment lowering
@@ -34,14 +36,16 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - global_gate: none
 
 ### S1 — Architect decision and projection acceptance contract
-- **Status**: review
+- **Status**: done
 - **Files**: `docs/architecture/fulfillment-dossier-projection.md`, `docs/qa/fulfillment-dossier-projection/acceptance-matrix.json`
 - **Gate**: e2e
 - acceptance:
   - "Define a single authoritative v3 profile with derived dossier views, exact source-to-zone mapping, shared objective versus fulfillment completion, financial proofs and immutable legacy boundary."
   - "Close responsibilities, rejection cases and mechanical implementation instructions; independent review before S2."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 11fcf956f319, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Reviewed architecture and acceptance matrix; they define one strict v3 source, derived views, exact zone/point bindings, separate shared and fulfillment termin… (2) Responsibilities, bridge shape, failure handling, unsupported semantics and S2 gate are explicit; confirmed S1 only and implementation remains pending. — Independent design review on integrated 11fcf956. bun run validate exited 0: 142/142 tests, 2069 expectations. The 34 S2 matrix cases remain specified-not-executed; this approves S1 design only, not mapper implementation, S2, native, or gameplay.
 
 ### S2 — Reusable opt-in projection, validation and rendering
 - **Status**: pending
