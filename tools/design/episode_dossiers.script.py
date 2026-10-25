@@ -298,28 +298,17 @@ def diagram(episode, geographic_layers):
         ),
         default=0,
     )
-    legend_y = max(420, 175 + len(authored_hubs) * 50)
-    last_legend_y = legend_y + 7 * 24
-    canvas_height = max(850, int(max(last_hub_label_y, last_legend_y, 780) + 28))
-    lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 {canvas_height}" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
-        f'<rect width="1050" height="{canvas_height}" fill="#f6f0dc"/>',
-        '<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>',
-        f'<text x="40" y="35" font-family="sans-serif" font-size="22">{html.escape(episode["title"]["en"])}</text>',
-        f'<text x="40" y="63" font-family="sans-serif" font-size="15">{size} × {size} · {html.escape(episode["geographyId"])} · N ↑ E →</text>',
-    ]
-    for layer in geographic_layers:
-        segments = layers_helper.clipped_tile_segments(
-            layer["index"], projection_bbox, size, clip_bbox=clip_bbox
+    geographic_segments = [
+        (
+            layer,
+            layers_helper.clipped_tile_segments(
+                layer["index"], projection_bbox, size, clip_bbox=clip_bbox
+            ),
         )
-        for segment in segments:
-            coordinates = " ".join(
-                f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment
-            )
-            lines.append(
-                f'<polyline points="{coordinates}" fill="none" stroke="{layer["colour"]}" stroke-width="2"/>'
-            )
+        for layer in geographic_layers
+    ]
     schematic = episode["mapPlan"].get("schematicWaterControl")
+    schematic_segments = []
     if schematic and len(schematic.get("coordinates", [])) >= 2:
         index = layers_helper.index_layer(
             {
@@ -333,12 +322,72 @@ def diagram(episode, geographic_layers):
                 ]
             }
         )
+        schematic_segments = layers_helper.clipped_tile_segments(
+            index, projection_bbox, size, clip_bbox=clip_bbox
+        )
+    v3_map = episode.get("designProfile") == "alternative-fulfillment-v3"
+    if v3_map:
+        legend_entries = ["Geographic district controls only"]
+        has_modern_water = any(segments for _, segments in geographic_segments) or (
+            schematic
+            and schematic.get("renderAs") == "modern-river-line"
+            and schematic_segments
+        )
+        if has_modern_water:
+            legend_entries.append("Solid blue: modern geographic water controls")
+        corridors = episode["mapPlan"]["corridors"]
+        if any(c["mode"] == "water" for c in corridors):
+            legend_entries.append("Cyan dashed: proposed water district connection")
+        if any(c["mode"] == "land" and c["widthTiles"] < 10 for c in corridors):
+            legend_entries.append("Olive dashed: proposed narrow land connections under 10 tiles")
+        if any(c["mode"] == "land" and c["widthTiles"] >= 10 for c in corridors):
+            legend_entries.append("Brown dashed: proposed wide land connections (10+ tiles)")
+        if schematic_segments and schematic.get("renderAs") != "modern-river-line":
+            legend_entries.append("Dashed blue: schematic regional water")
+        legend_entries.extend(
+            [
+                "Not a surveyed path or terrain raster",
+                "Native footprints and navigation pending",
+            ]
+        )
+    else:
+        legend_entries = [
+            "Geographic district controls only",
+            "Brown dashed: proposed land route",
+            "Cyan dashed: proposed boat passage",
+            "Not a surveyed path or terrain raster",
+            "Blue: modern geographic water controls",
+            "Dashed blue: schematic regional water",
+            "Native footprints and navigation pending",
+        ]
+    rendered_legend_entries = (
+        [line for entry in legend_entries for line in textwrap.wrap(entry, width=42)]
+        if v3_map
+        else legend_entries
+    )
+    legend_y = max(420, 175 + len(authored_hubs) * 50)
+    last_legend_y = legend_y + len(rendered_legend_entries) * 24
+    canvas_height = max(850, int(max(last_hub_label_y, last_legend_y, 780) + 28))
+    lines = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 {canvas_height}" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
+        f'<rect width="1050" height="{canvas_height}" fill="#f6f0dc"/>',
+        '<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>',
+        f'<text x="40" y="35" font-family="sans-serif" font-size="22">{html.escape(episode["title"]["en"])}</text>',
+        f'<text x="40" y="63" font-family="sans-serif" font-size="15">{size} × {size} · {html.escape(episode["geographyId"])} · N ↑ E →</text>',
+    ]
+    for layer, segments in geographic_segments:
+        for segment in segments:
+            coordinates = " ".join(
+                f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment
+            )
+            lines.append(
+                f'<polyline points="{coordinates}" fill="none" stroke="{layer["colour"]}" stroke-width="2"/>'
+            )
+    if schematic_segments:
         modern = schematic.get("renderAs") == "modern-river-line"
         water_kind = "modern-river-control" if modern else "schematic-water"
         dash = "" if modern else 'stroke-dasharray="4 5"'
-        for segment in layers_helper.clipped_tile_segments(
-            index, projection_bbox, size, clip_bbox=clip_bbox
-        ):
+        for segment in schematic_segments:
             coords = " ".join(
                 f"{55 + x * factor:.2f},{85 + y * factor:.2f}" for x, y in segment
             )
@@ -364,22 +413,12 @@ def diagram(episode, geographic_layers):
         ]
         for row, label in enumerate(textwrap.wrap(f"{i}: {h['name']['en']}", width=42)):
             lines.append(f'<text x="730" y="{140 + i * 50 + row * 14}" font-family="sans-serif" font-size="12">{html.escape(label)}</text>')
-    for i, text in enumerate(
-        [
-            "Geographic district controls only",
-            "Brown dashed: proposed land route",
-            "Cyan dashed: proposed boat passage",
-            "Not a surveyed path or terrain raster",
-            "Blue: modern geographic water controls",
-            "Dashed blue: schematic regional water",
-            "Native footprints and navigation pending",
-        ]
-    ):
+    for i, text in enumerate(rendered_legend_entries):
         lines.append(
             f'<text x="730" y="{legend_y + i * 24}" font-family="sans-serif" font-size="12">{text}</text>'
         )
     lines.append(
-        f'<text x="730" y="{legend_y + 7 * 24}" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
+        f'<text x="730" y="{legend_y + len(rendered_legend_entries) * 24}" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
     )
     lines += [
         f'<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox {episode["mapPlan"]["bbox"]}; cosine-corrected longitude; approximate districts</text>',

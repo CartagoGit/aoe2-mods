@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 33
+    "authoredDossierCount": 34
   },
   "continuity": {
     "recommendedPrevious": [
@@ -255,7 +255,7 @@ Historical year band: [361, 381]. Reversiones de política, sucesión, derrota y
 | 30 / 32-defeat-and-withdrawal-adrianople | Where the Eagles Fell / Donde cayeron las águilas | 378 CE; conventional Roman-calendar August 9, not a verified Gregorian conversion | adrianople378 | finite-post-defeat-withdrawal |
 | 31 / 33-accession-and-reassembly-sirmium | The Burden of the Purple / El peso de la púrpura | 379 CE; exact accession day requires chronology comparison | sirmium | post-crisis-reassembly-and-accession |
 | 32 / 28-law-and-local-reception-thessalonica | The Weight of an Imperial Word / El peso de una palabra imperial | 27 February 380 CE | thessalonica | law-and-local-reception |
-| 33 / 34-church-transfer-constantinople | The Doors of New Rome / Las puertas de Nueva Roma | November380 CE; arrival and church transfer are distinct source dates | constantinople | changed-urban-access-and-local-care |
+| 33 / 34-church-transfer-constantinople | The Doors of New Rome / Las puertas de Nueva Roma | November 380 CE; arrival and church transfer are distinct source dates | constantinople | changed-urban-access-and-local-care |
 | 34 / 29-council-and-final-perspective-constantinople | Under the Same Eastern Sky / Bajo el mismo cielo oriental | 381 CE | constantinople | council-and-final-perspective |
 
 The proposed act curve is a calibration hypothesis. It cannot add fictional military opposition to a peaceful event or change a documented outcome.
@@ -1446,11 +1446,13 @@ Limit: Not a georeferenced 380 plan, dated coast or DEM. Exact place of law issu
 
 Research candidate (not yet approved narration): Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
 
-Socrates V.6 reports arrival24November and V.7 church possession26November380 as separate events; Marcellinus380 instead places church restoration inDecember. Preserve the discrepancy, not a harmonized exact calendar. Sozomen’s later enlarged Anastasia building and attributed miracles do not certify the380venue or terrain. Gregory’s later resignation and381council must remain distinct fromNovember380. No exact church footprint, universal compliance or playable forced conversion follows.
+Socrates V.6 reports arrival 24 November and V.7 church possession26November 380 as separate events; Marcellinus 380 instead places church restoration in December. Preserve the discrepancy, not a harmonized exact calendar. Sozomen’s later enlarged Anastasia building and attributed miracles do not certify the 380 venue or terrain. Gregory’s later resignation and 381 council must remain distinct from November 380. No exact church footprint, universal compliance or playable forced conversion follows.
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/34-church-transfer-constantinople/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
 
@@ -1464,7 +1466,7 @@ Status: consulted as bounded source collection; full dossier pending
 
 [Additional consulted passage](https://www.newadvent.org/fathers/26015.htm): Socrates HE V.6–8, especiallyV.6arrival andV.7transfer
 
-Limit: Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action toNovember380without comparing chronology and381council evidence.
+Limit: Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7 also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action to November 380 without comparing chronology and 381 council evidence.
 
 [Additional consulted passage](https://www.newadvent.org/fathers/26027.htm): Sozomen HE VII.4–5, withVII.7–8as council context
 

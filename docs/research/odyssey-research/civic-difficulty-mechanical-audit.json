@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
   "snapshot": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "realIdentity": "gpt-6",
     "method": "tools/design/civic_difficulty_audit.script.py"
   },
   "sourceSha256": {
     "docs/design/odyssey-policy.json": "44f2126ea6f5dd0969445602230245db0adb7da3f636d0e932acd89d68f8f8fc",
     "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
-    "docs/design/odysseys/imperial-church.json": "7d1183c4bf3483eb1cf8f69eb1842545b9467dd2c42c6796bef3c8a883ee68df",
+    "docs/design/odysseys/imperial-church.json": "e15c0f183b5d6fe0c7061530480221fef541573bd2e314d0d615f73f7b45b25b",
     "docs/design/odysseys/jewish-tradition.json": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
     "docs/design/odysseys/church-of-rome.json": "2f16b67dd2c9b1381311596080988ed96d927323f741382f6ceec82f077ad885",
     "docs/design/odysseys/new-rome.json": "99da4a9277885cf4d87bd0b3a798a236a698542d4b4f078a768993611b85c7da",
@@ -23,13 +23,14 @@
     "Static inspection only: no historical, architectural, native or playability approval.",
     "Role names and deadline keys are heuristic signals, not evidence of working AoE2 opposition.",
     "Logistics, terrain, allocation and optional opportunity costs require separate design/playtest assessment.",
-    "A dossier without a risk flag does not thereby pass difficulty, balance or engagement QA."
+    "A dossier without a risk flag does not thereby pass difficulty, balance or engagement QA.",
+    "Finite v3 financial alternatives are not gathering, timing or game evidence."
   ],
   "counts": {
-    "dossierCount": 63,
+    "dossierCount": 64,
     "byCampaign": {
       "faith-origins": 30,
-      "imperial-church": 33,
+      "imperial-church": 34,
       "jewish-tradition": 0,
       "church-of-rome": 0,
       "new-rome": 0,
@@ -53,9 +54,9 @@
     "withFiniteHostiles": 8,
     "withExplicitStructuredDeadlines": 1,
     "sameAccessibleBudgetsAcrossDifficulties": 63,
-    "totalMainObjectives": 214,
-    "totalSecondaryObjectives": 391,
-    "totalScreens": 2594
+    "totalMainObjectives": 215,
+    "totalSecondaryObjectives": 398,
+    "totalScreens": 2645
   },
   "staticRiskEpisodes": [
     {
@@ -315,6 +316,11 @@
     },
     {
       "campaign": "imperial-church",
+      "order": 28,
+      "episodeId": "30-policy-reversal-alexandria"
+    },
+    {
+      "campaign": "imperial-church",
       "order": 32,
       "episodeId": "28-law-and-local-reception-thessalonica"
     },
@@ -322,11 +328,6 @@
       "campaign": "imperial-church",
       "order": 34,
       "episodeId": "29-council-and-final-perspective-constantinople"
-    },
-    {
-      "campaign": "imperial-church",
-      "order": 28,
-      "episodeId": "30-policy-reversal-alexandria"
     }
   ],
   "episodes": [
@@ -4604,157 +4605,6 @@
     },
     {
       "campaign": "imperial-church",
-      "order": 32,
-      "episodeId": "28-law-and-local-reception-thessalonica",
-      "coreMechanic": "law-and-local-reception",
-      "enemyTotalCapByDifficulty": {
-        "easy": 0,
-        "standard": 0,
-        "hard": 0
-      },
-      "enemyScheduledReleaseCounts": {
-        "easy": 0,
-        "standard": 0,
-        "hard": 0
-      },
-      "hostileRoleEntityCount": 0,
-      "pressureMechanism": {
-        "finiteHostilesPresent": false,
-        "explicitStructuredDeadlinePresent": false,
-        "deadlineFields": [],
-        "otherMainPredicateKinds": [
-          "derived-token",
-          "entity-state",
-          "ordered-departure",
-          "resource-transaction"
-        ],
-        "otherSecondaryPredicateKinds": [
-          "atomic-payment",
-          "entity-arrival",
-          "entity-health",
-          "visit-zones"
-        ]
-      },
-      "mainObjectiveCount": 4,
-      "secondaryObjectiveCount": 8,
-      "difficulty": {
-        "easy": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 12,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1170,
-            "wood": 900,
-            "gold": 260,
-            "stone": 140
-          }
-        },
-        "standard": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 9,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1170,
-            "wood": 900,
-            "gold": 260,
-            "stone": 140
-          }
-        },
-        "hard": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 6,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1170,
-            "wood": 900,
-            "gold": 260,
-            "stone": 140
-          }
-        }
-      },
-      "accessibleBudgetSameAcrossDifficulties": true,
-      "staticRiskCandidate": true
-    },
-    {
-      "campaign": "imperial-church",
-      "order": 34,
-      "episodeId": "29-council-and-final-perspective-constantinople",
-      "coreMechanic": "council-and-final-perspective",
-      "enemyTotalCapByDifficulty": {
-        "easy": 0,
-        "standard": 0,
-        "hard": 0
-      },
-      "enemyScheduledReleaseCounts": {
-        "easy": 0,
-        "standard": 0,
-        "hard": 0
-      },
-      "hostileRoleEntityCount": 0,
-      "pressureMechanism": {
-        "finiteHostilesPresent": false,
-        "explicitStructuredDeadlinePresent": false,
-        "deadlineFields": [],
-        "otherMainPredicateKinds": [
-          "derived-token",
-          "entity-state",
-          "resource-transaction"
-        ],
-        "otherSecondaryPredicateKinds": [
-          "atomic-payment",
-          "entity-arrival",
-          "entity-health",
-          "visit-zones"
-        ]
-      },
-      "mainObjectiveCount": 3,
-      "secondaryObjectiveCount": 6,
-      "difficulty": {
-        "easy": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 12,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1250,
-            "wood": 940,
-            "gold": 260,
-            "stone": 220
-          }
-        },
-        "standard": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 9,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1250,
-            "wood": 940,
-            "gold": 260,
-            "stone": 220
-          }
-        },
-        "hard": {
-          "enemyTotalCap": 0,
-          "initialEnemy": null,
-          "scheduledWaveCount": 0,
-          "maxVillagers": 6,
-          "accessibleWithoutOptionalRewards": {
-            "food": 1250,
-            "wood": 940,
-            "gold": 260,
-            "stone": 220
-          }
-        }
-      },
-      "accessibleBudgetSameAcrossDifficulties": true,
-      "staticRiskCandidate": true
-    },
-    {
-      "campaign": "imperial-church",
       "order": 28,
       "episodeId": "30-policy-reversal-alexandria",
       "coreMechanic": "policy-reversal-and-discreet-support",
@@ -5059,6 +4909,921 @@
       },
       "accessibleBudgetSameAcrossDifficulties": true,
       "staticRiskCandidate": false
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 32,
+      "episodeId": "28-law-and-local-reception-thessalonica",
+      "coreMechanic": "law-and-local-reception",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 8,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 33,
+      "episodeId": "34-church-transfer-constantinople",
+      "designProfile": "alternative-fulfillment-v3",
+      "coreMechanic": "changed-urban-access-and-local-care",
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 1,
+      "secondaryObjectiveCount": 7,
+      "hostileRoleEntityCount": 0,
+      "authoredEnemyRoster": {
+        "initialEntityIds": [],
+        "productionEnabled": false,
+        "mobilizations": [],
+        "unspentPolicy": "remain-in-reserve"
+      },
+      "budgetBasis": "v3 initial spendable operating account; excludes protected recovery and unearned optional rewards",
+      "accountsByDifficulty": {
+        "easy": {
+          "spendable": {
+            "food": 420,
+            "wood": 380,
+            "gold": 260,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          }
+        },
+        "standard": {
+          "spendable": {
+            "food": 340,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          }
+        },
+        "hard": {
+          "spendable": {
+            "food": 300,
+            "wood": 220,
+            "gold": 120,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          }
+        }
+      },
+      "selectionAnalysisByDifficulty": {
+        "easy": {
+          "spendable": {
+            "food": 420,
+            "wood": 380,
+            "gold": 260,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 320,
+                "wood": 240,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 100,
+                "wood": 140,
+                "gold": 260,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 340,
+                "wood": 160,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 80,
+                "wood": 220,
+                "gold": 240,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 300,
+                "wood": 100,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 120,
+                "wood": 280,
+                "gold": 150,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 240,
+                "wood": 340,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 180,
+                "wood": 40,
+                "gold": 260,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 260,
+                "wood": 260,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 160,
+                "wood": 120,
+                "gold": 240,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 220,
+                "wood": 200,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 200,
+                "wood": 180,
+                "gold": 150,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 180,
+                "wood": 240,
+                "gold": 100,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 240,
+                "wood": 140,
+                "gold": 160,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 200,
+                "wood": 160,
+                "gold": 120,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 220,
+                "wood": 220,
+                "gold": 140,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 100,
+                "gold": 210,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 260,
+                "wood": 280,
+                "gold": 50,
+                "stone": 0
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "meal-direct",
+              "shelter-materials"
+            ],
+            [
+              "meal-direct",
+              "shelter-local-kit"
+            ],
+            [
+              "meal-direct",
+              "shelter-rented"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-materials"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-local-kit"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-rented"
+            ],
+            [
+              "meal-purchased",
+              "shelter-materials"
+            ],
+            [
+              "meal-purchased",
+              "shelter-local-kit"
+            ],
+            [
+              "meal-purchased",
+              "shelter-rented"
+            ]
+          ]
+        },
+        "standard": {
+          "spendable": {
+            "food": 340,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 320,
+                "wood": 240,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 20,
+                "wood": 40,
+                "gold": 150,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 340,
+                "wood": 160,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 0,
+                "wood": 120,
+                "gold": 130,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 300,
+                "wood": 100,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 40,
+                "wood": 180,
+                "gold": 40,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 240,
+                "wood": 340,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 260,
+                "wood": 260,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 80,
+                "wood": 20,
+                "gold": 130,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 220,
+                "wood": 200,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 120,
+                "wood": 80,
+                "gold": 40,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 180,
+                "wood": 240,
+                "gold": 100,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 160,
+                "wood": 40,
+                "gold": 50,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 200,
+                "wood": 160,
+                "gold": 120,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 140,
+                "wood": 120,
+                "gold": 30,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 100,
+                "gold": 210,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "meal-direct",
+              "shelter-materials"
+            ],
+            [
+              "meal-direct",
+              "shelter-local-kit"
+            ],
+            [
+              "meal-direct",
+              "shelter-rented"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-local-kit"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-rented"
+            ],
+            [
+              "meal-purchased",
+              "shelter-materials"
+            ],
+            [
+              "meal-purchased",
+              "shelter-local-kit"
+            ]
+          ]
+        },
+        "hard": {
+          "spendable": {
+            "food": 300,
+            "wood": 220,
+            "gold": 120,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 320,
+                "wood": 240,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 340,
+                "wood": 160,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-direct",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 300,
+                "wood": 100,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 0,
+                "wood": 120,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 240,
+                "wood": 340,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 260,
+                "wood": 260,
+                "gold": 20,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-shared-hearth",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 220,
+                "wood": 200,
+                "gold": 110,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 80,
+                "wood": 20,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-materials"
+              ],
+              "totalCost": {
+                "food": 180,
+                "wood": 240,
+                "gold": 100,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-local-kit"
+              ],
+              "totalCost": {
+                "food": 200,
+                "wood": 160,
+                "gold": 120,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 100,
+                "wood": 60,
+                "gold": 0,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "meal-purchased",
+                "shelter-rented"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 100,
+                "gold": 210,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "meal-direct",
+              "shelter-rented"
+            ],
+            [
+              "meal-shared-hearth",
+              "shelter-rented"
+            ],
+            [
+              "meal-purchased",
+              "shelter-local-kit"
+            ]
+          ]
+        }
+      },
+      "affordableSelectionCountByDifficulty": {
+        "easy": 9,
+        "standard": 7,
+        "hard": 3
+      },
+      "accessibleBudgetSameAcrossDifficulties": false,
+      "staticRiskCandidate": false
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 34,
+      "episodeId": "29-council-and-final-perspective-constantinople",
+      "coreMechanic": "council-and-final-perspective",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true
     }
   ]
 }
