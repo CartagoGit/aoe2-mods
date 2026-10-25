@@ -113,48 +113,52 @@ function requestFor(profile = makeFulfillmentProfile()) {
   };
 }
 
+function threeServiceProfile() {
+  const profile = makeFulfillmentProfile();
+  const baseEntity = profile.worldContract.entities[0];
+  const baseZone = profile.worldContract.zones[0];
+  if (!baseEntity || !baseZone) throw new Error("missing fixture records");
+  return capabilityProfileV3Schema.parse({
+    ...profile,
+    worldContract: {
+      ...profile.worldContract,
+      entities: [
+        ...profile.worldContract.entities,
+        { ...baseEntity, id: "fixture.third-worker" },
+        { ...baseEntity, id: "fixture.third-output" },
+      ],
+      zones: [
+        ...profile.worldContract.zones,
+        { ...baseZone, id: "fixture.third-work", offsetTiles: [270, 0] },
+        { ...baseZone, id: "fixture.third-reception", offsetTiles: [290, 0] },
+      ],
+    },
+    fulfillmentPlan: {
+      ...profile.fulfillmentPlan,
+      services: [
+        ...profile.fulfillmentPlan.services,
+        {
+          id: "fixture.third-service",
+          recipes: [
+            {
+              id: "fixture.third-recipe",
+              cost: { food: 17, wood: 3, gold: 0, stone: 0 },
+              workerId: "fixture.third-worker",
+              workZoneId: "fixture.third-work",
+              outputEntityId: "fixture.third-output",
+              receptionZoneId: "fixture.third-reception",
+              recipientIds: [fixtureIds.mealRecipient],
+            },
+          ],
+        },
+      ],
+    },
+  });
+}
+
 describe("typed fulfillment dossier projection", () => {
   test("keeps dotted authored IDs and exact alternatives with an artificial three-service profile", () => {
-    const profile = makeFulfillmentProfile();
-    const baseEntity = profile.worldContract.entities[0];
-    const baseZone = profile.worldContract.zones[0];
-    if (!baseEntity || !baseZone) throw new Error("missing fixture records");
-    const extended = capabilityProfileV3Schema.parse({
-      ...profile,
-      worldContract: {
-        ...profile.worldContract,
-        entities: [
-          ...profile.worldContract.entities,
-          { ...baseEntity, id: "fixture.third-worker" },
-          { ...baseEntity, id: "fixture.third-output" },
-        ],
-        zones: [
-          ...profile.worldContract.zones,
-          { ...baseZone, id: "fixture.third-work", offsetTiles: [270, 0] },
-          { ...baseZone, id: "fixture.third-reception", offsetTiles: [290, 0] },
-        ],
-      },
-      fulfillmentPlan: {
-        ...profile.fulfillmentPlan,
-        services: [
-          ...profile.fulfillmentPlan.services,
-          {
-            id: "fixture.third-service",
-            recipes: [
-              {
-                id: "fixture.third-recipe",
-                cost: { food: 17, wood: 3, gold: 0, stone: 0 },
-                workerId: "fixture.third-worker",
-                workZoneId: "fixture.third-work",
-                outputEntityId: "fixture.third-output",
-                receptionZoneId: "fixture.third-reception",
-                recipientIds: [fixtureIds.mealRecipient],
-              },
-            ],
-          },
-        ],
-      },
-    });
+    const extended = threeServiceProfile();
     const request = requestFor(extended);
     const projection = projectFulfillmentDossiers({ requests: [request] })
       .projections[0];
@@ -278,6 +282,49 @@ describe("typed fulfillment dossier projection", () => {
     );
   });
 
+  test("checks the full zone footprint against tile centres and honors authored tolerance", () => {
+    const edgeProfile = makeFulfillmentProfile();
+    const edgeZone = at(edgeProfile.worldContract.zones, 0);
+    edgeZone.offsetTiles = [1, 100];
+    edgeZone.radiusTiles = 2;
+    const edgeRequest = requestFor(edgeProfile);
+    at(edgeRequest.hubs, 0).centre = [0, 0];
+    const edgePoint = found(edgeRequest.pointZoneBindings.find((point) => point.zoneId === edgeZone.id));
+    edgePoint.tile = [1, 100];
+    expect(() => projectFulfillmentDossiers({ requests: [edgeRequest] })).toThrow(
+      /zone footprint outside map bounds/,
+    );
+
+    const within = requestFor();
+    at(within.pointZoneBindings, 0).tile[0] += 0.000001 - 0.000000001;
+    expect(projectFulfillmentDossiers({ requests: [within] }).projections).toHaveLength(1);
+    const outside = requestFor();
+    at(outside.pointZoneBindings, 0).tile[0] += 0.000001 + 0.000000001;
+    expect(() => projectFulfillmentDossiers({ requests: [outside] })).toThrow(
+      /authored tile disagrees/,
+    );
+  });
+
+  test("requires distinct plan screens and distinct service goal/completion IDs", () => {
+    const repeatedPlan = requestFor();
+    repeatedPlan.planScreenIds.started = repeatedPlan.planScreenIds.reserved;
+    expect(() => projectFulfillmentDossiers({ requests: [repeatedPlan] })).toThrow(
+      /plan screen IDs must be distinct/,
+    );
+    const reusedConfirmation = requestFor();
+    at(reusedConfirmation.serviceBindings, 0).completeScreenId =
+      reusedConfirmation.planScreenIds.reserved;
+    expect(() => projectFulfillmentDossiers({ requests: [reusedConfirmation] })).toThrow(
+      /cannot reuse reserved\/started confirmation/,
+    );
+    const sameGoalAndComplete = requestFor();
+    const service = at(sameGoalAndComplete.serviceBindings, 0);
+    service.completeScreenId = service.goalScreenId;
+    expect(() => projectFulfillmentDossiers({ requests: [sameGoalAndComplete] })).toThrow(
+      /goal and completion screens must differ/,
+    );
+  });
+
   test("rejects overlapping work and reception footprints even for distinct zones in one hub", () => {
     const profile = makeFulfillmentProfile();
     const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
@@ -302,6 +349,26 @@ describe("typed fulfillment dossier projection", () => {
     );
     expect(() => projectFulfillmentDossiers({ requests: [request] })).toThrow(
       /Work and reception footprints overlap/,
+    );
+  });
+
+  test("rejects work and reception overlap across different hubs", () => {
+    const profile = makeFulfillmentProfile();
+    profile.districts.push("fixture.second-hub");
+    const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
+    const workZone = found(profile.worldContract.zones.find((zone) => zone.id === recipe.workZoneId));
+    const receptionZone = found(profile.worldContract.zones.find((zone) => zone.id === recipe.receptionZoneId));
+    receptionZone.hub = "fixture.second-hub";
+    const request = requestFor(profile);
+    const workPoint = found(request.pointZoneBindings.find((point) => point.zoneId === workZone.id));
+    const receptionPoint = found(request.pointZoneBindings.find((point) => point.zoneId === receptionZone.id));
+    at(request.hubs, 1).centre = [
+      workPoint.tile[0] - receptionZone.offsetTiles[0],
+      workPoint.tile[1] - receptionZone.offsetTiles[1],
+    ];
+    receptionPoint.tile = [...workPoint.tile];
+    expect(() => projectFulfillmentDossiers({ requests: [request] })).toThrow(
+      /work\/reception footprints overlap/,
     );
   });
 
@@ -442,5 +509,22 @@ describe("typed fulfillment dossier projection", () => {
       response.projections[0]?.optionalPrefixAnalysisByDifficulty.standard
         ?.protectedRecoveryExcluded,
     ).toBe(true);
+    const projection = response.projections[0];
+    expect(projection?.selectionAnalysisByDifficulty.easy.affordableSelections).toHaveLength(9);
+    expect(projection?.selectionAnalysisByDifficulty.standard.affordableSelections).toHaveLength(7);
+    expect(projection?.selectionAnalysisByDifficulty.hard.affordableSelections).toHaveLength(3);
+    expect(projectFulfillmentDossiers({ requests: [request] })).toEqual(
+      projectFulfillmentDossiers({ requests: [request] }),
+    );
+    const kindsById = Object.fromEntries(
+      (request.referenceCapabilityProfile as ReturnType<typeof makeFulfillmentProfile>)
+        .secondaryObjectives.map((side) => [side.id, side.kind]),
+    );
+    const hardExamples = projection?.optionalPrefixAnalysisByDifficulty.hard.examples ?? [];
+    expect(hardExamples.some((example) => {
+      const aid = example.completedTaskIds.findIndex((id) => kindsById[id] === "aid");
+      const repair = example.completedTaskIds.findIndex((id) => kindsById[id] === "repair");
+      return aid >= 0 && repair > aid;
+    })).toBe(true);
   });
 });
