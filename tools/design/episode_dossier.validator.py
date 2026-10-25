@@ -678,7 +678,6 @@ def audit_fulfillment_dossier(episode, projection_context=None):
         }
     else:
         check(False, "cannot reconstruct typed request from authoring/map bindings")
-    stored_projection = episode.get("bridgeDossierProjection")
     projection = None
     if projection_request is not None:
         if projection_context is not None:
@@ -691,12 +690,11 @@ def audit_fulfillment_dossier(episode, projection_context=None):
                 projection = _project_fulfillment_request(projection_request)
             except Exception as error:
                 check(False, f"typed v3 profile/request failed bridge revalidation: {error}")
-    retained_projection = ({key: value for key, value in projection.items()
-                           if key not in {"episodeId", "referenceCapabilityProfile"}}
-                          if isinstance(projection, dict) else None)
-    check(isinstance(stored_projection, dict) and stored_projection == retained_projection,
-          "stored bridge projection differs from revalidated profile and authored bindings")
     if isinstance(projection, dict):
+        check(episode.get("id") == projection.get("episodeId"),
+              "episode id differs from revalidated bridge projection")
+        check(profile == projection.get("referenceCapabilityProfile"),
+              "referenceCapabilityProfile differs from revalidated bridge profile")
         for episode_field, projection_field in (
             ("worldContract", "worldContract"), ("objectivePlan", "objectivePlan"),
             ("stateMachine", "stateMachine"), ("secondaryObjectives", "secondaryObjectives"),

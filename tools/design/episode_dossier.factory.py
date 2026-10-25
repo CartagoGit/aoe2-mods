@@ -938,9 +938,6 @@ def build_fulfillment_dossier(campaign, selection, blueprint, projection, geogra
         selection["historicalSelection"].get("sourceConsultation", selection["historicalSelection"])
     ] + selection["historicalSelection"].get("additionalConsultations", [])
     screens = blueprint["screens"]
-    retained_projection = copy.deepcopy(projection)
-    retained_projection.pop("episodeId", None)
-    retained_projection.pop("referenceCapabilityProfile", None)
     return {
         "designProfile": blueprint["designProfile"],
         "id": episode_id,
@@ -963,9 +960,6 @@ def build_fulfillment_dossier(campaign, selection, blueprint, projection, geogra
             "serviceBindings": copy.deepcopy(blueprint["serviceBindings"]),
             "planScreenIds": copy.deepcopy(blueprint["planScreenIds"]),
         },
-        # Episode id and the single canonical profile live on the episode itself.
-        # Every remaining bridge field is retained here without a duplicate profile.
-        "bridgeDossierProjection": retained_projection,
         "mapBindings": projection["mapBindings"],
         "referenceCapabilityProfile": profile,
         "worldContract": projection["worldContract"],
