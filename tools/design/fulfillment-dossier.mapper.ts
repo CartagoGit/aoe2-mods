@@ -470,7 +470,10 @@ function projectOne(value: unknown): DossierProjection {
     if (!screenById.has(id))
       fail(request.episodeId, `unknown screen binding: ${id}`);
   };
-  Object.values(request.planScreenIds).forEach(requireScreen);
+  const planScreenValues = Object.values(request.planScreenIds);
+  if (new Set(planScreenValues).size !== planScreenValues.length)
+    fail(request.episodeId, "plan screen IDs must be distinct");
+  planScreenValues.forEach(requireScreen);
   const serviceBindings = assertUnique(
     request.serviceBindings,
     (row) => row.serviceId,
@@ -490,6 +493,10 @@ function projectOne(value: unknown): DossierProjection {
       fail(request.episodeId, `missing service binding ${service.id}`);
     requireScreen(serviceBinding.goalScreenId);
     requireScreen(serviceBinding.completeScreenId);
+    if (serviceBinding.goalScreenId === serviceBinding.completeScreenId)
+      fail(request.episodeId, `service goal and completion screens must differ: ${service.id}`);
+    if ([request.planScreenIds.reserved, request.planScreenIds.started].includes(serviceBinding.completeScreenId))
+      fail(request.episodeId, `service completion screen cannot reuse reserved/started confirmation: ${service.id}`);
     const projectedRecipes = service.recipes.map((recipe) => {
       const binding = bindingsByRecipe.get(recipe.id);
       if (!binding || binding.serviceId !== service.id)

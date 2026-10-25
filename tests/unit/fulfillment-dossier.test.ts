@@ -1,4 +1,5 @@
 import { describe, expect, test } from "bun:test";
+import { unlinkSync, writeFileSync } from "node:fs";
 import { capabilityProfileV3Schema } from "../../packages/schemas/alternative-fulfillment.schema";
 import { projectFulfillmentDossiers } from "../../tools/design/fulfillment-dossier.mapper";
 import {
@@ -113,48 +114,52 @@ function requestFor(profile = makeFulfillmentProfile()) {
   };
 }
 
+function threeServiceProfile() {
+  const profile = makeFulfillmentProfile();
+  const baseEntity = profile.worldContract.entities[0];
+  const baseZone = profile.worldContract.zones[0];
+  if (!baseEntity || !baseZone) throw new Error("missing fixture records");
+  return capabilityProfileV3Schema.parse({
+    ...profile,
+    worldContract: {
+      ...profile.worldContract,
+      entities: [
+        ...profile.worldContract.entities,
+        { ...baseEntity, id: "fixture.third-worker" },
+        { ...baseEntity, id: "fixture.third-output" },
+      ],
+      zones: [
+        ...profile.worldContract.zones,
+        { ...baseZone, id: "fixture.third-work", offsetTiles: [270, 0] },
+        { ...baseZone, id: "fixture.third-reception", offsetTiles: [290, 0] },
+      ],
+    },
+    fulfillmentPlan: {
+      ...profile.fulfillmentPlan,
+      services: [
+        ...profile.fulfillmentPlan.services,
+        {
+          id: "fixture.third-service",
+          recipes: [
+            {
+              id: "fixture.third-recipe",
+              cost: { food: 17, wood: 3, gold: 0, stone: 0 },
+              workerId: "fixture.third-worker",
+              workZoneId: "fixture.third-work",
+              outputEntityId: "fixture.third-output",
+              receptionZoneId: "fixture.third-reception",
+              recipientIds: [fixtureIds.mealRecipient],
+            },
+          ],
+        },
+      ],
+    },
+  });
+}
+
 describe("typed fulfillment dossier projection", () => {
   test("keeps dotted authored IDs and exact alternatives with an artificial three-service profile", () => {
-    const profile = makeFulfillmentProfile();
-    const baseEntity = profile.worldContract.entities[0];
-    const baseZone = profile.worldContract.zones[0];
-    if (!baseEntity || !baseZone) throw new Error("missing fixture records");
-    const extended = capabilityProfileV3Schema.parse({
-      ...profile,
-      worldContract: {
-        ...profile.worldContract,
-        entities: [
-          ...profile.worldContract.entities,
-          { ...baseEntity, id: "fixture.third-worker" },
-          { ...baseEntity, id: "fixture.third-output" },
-        ],
-        zones: [
-          ...profile.worldContract.zones,
-          { ...baseZone, id: "fixture.third-work", offsetTiles: [270, 0] },
-          { ...baseZone, id: "fixture.third-reception", offsetTiles: [290, 0] },
-        ],
-      },
-      fulfillmentPlan: {
-        ...profile.fulfillmentPlan,
-        services: [
-          ...profile.fulfillmentPlan.services,
-          {
-            id: "fixture.third-service",
-            recipes: [
-              {
-                id: "fixture.third-recipe",
-                cost: { food: 17, wood: 3, gold: 0, stone: 0 },
-                workerId: "fixture.third-worker",
-                workZoneId: "fixture.third-work",
-                outputEntityId: "fixture.third-output",
-                receptionZoneId: "fixture.third-reception",
-                recipientIds: [fixtureIds.mealRecipient],
-              },
-            ],
-          },
-        ],
-      },
-    });
+    const extended = threeServiceProfile();
     const request = requestFor(extended);
     const projection = projectFulfillmentDossiers({ requests: [request] })
       .projections[0];
@@ -278,6 +283,60 @@ describe("typed fulfillment dossier projection", () => {
     );
   });
 
+  test("checks the full zone footprint against tile centres and honors authored tolerance", () => {
+    const edgeProfile = makeFulfillmentProfile();
+    const edgeZone = at(edgeProfile.worldContract.zones, 0);
+    edgeZone.offsetTiles = [1, 100];
+    edgeZone.radiusTiles = 2;
+    const edgeRequest = requestFor(edgeProfile);
+    at(edgeRequest.hubs, 0).centre = [0, 0];
+    const edgePoint = found(
+      edgeRequest.pointZoneBindings.find(
+        (point) => point.zoneId === edgeZone.id,
+      ),
+    );
+    edgePoint.tile = [1, 100];
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [edgeRequest] }),
+    ).toThrow(/zone footprint outside map bounds/);
+
+    const within = requestFor();
+    at(within.pointZoneBindings, 0).tile[0] += 0.000001 - 0.000000001;
+    expect(
+      projectFulfillmentDossiers({ requests: [within] }).projections,
+    ).toHaveLength(1);
+    const atLimit = requestFor();
+    at(atLimit.pointZoneBindings, 0).tile[0] += 0.000001;
+    expect(
+      projectFulfillmentDossiers({ requests: [atLimit] }).projections,
+    ).toHaveLength(1);
+    const outside = requestFor();
+    at(outside.pointZoneBindings, 0).tile[0] += 0.000001 + 0.000000001;
+    expect(() => projectFulfillmentDossiers({ requests: [outside] })).toThrow(
+      /authored tile disagrees/,
+    );
+  });
+
+  test("requires distinct plan screens and distinct service goal/completion IDs", () => {
+    const repeatedPlan = requestFor();
+    repeatedPlan.planScreenIds.started = repeatedPlan.planScreenIds.reserved;
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [repeatedPlan] }),
+    ).toThrow(/plan screen IDs must be distinct/);
+    const reusedConfirmation = requestFor();
+    at(reusedConfirmation.serviceBindings, 0).completeScreenId =
+      reusedConfirmation.planScreenIds.reserved;
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [reusedConfirmation] }),
+    ).toThrow(/cannot reuse reserved\/started confirmation/);
+    const sameGoalAndComplete = requestFor();
+    const service = at(sameGoalAndComplete.serviceBindings, 0);
+    service.completeScreenId = service.goalScreenId;
+    expect(() =>
+      projectFulfillmentDossiers({ requests: [sameGoalAndComplete] }),
+    ).toThrow(/goal and completion screens must differ/);
+  });
+
   test("rejects overlapping work and reception footprints even for distinct zones in one hub", () => {
     const profile = makeFulfillmentProfile();
     const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
@@ -302,6 +361,38 @@ describe("typed fulfillment dossier projection", () => {
     );
     expect(() => projectFulfillmentDossiers({ requests: [request] })).toThrow(
       /Work and reception footprints overlap/,
+    );
+  });
+
+  test("rejects work and reception overlap across different hubs", () => {
+    const profile = makeFulfillmentProfile();
+    profile.districts.push("fixture.second-hub");
+    const recipe = at(at(profile.fulfillmentPlan.services, 0).recipes, 0);
+    const workZone = found(
+      profile.worldContract.zones.find((zone) => zone.id === recipe.workZoneId),
+    );
+    const receptionZone = found(
+      profile.worldContract.zones.find(
+        (zone) => zone.id === recipe.receptionZoneId,
+      ),
+    );
+    receptionZone.hub = "fixture.second-hub";
+    const request = requestFor(profile);
+    const workPoint = found(
+      request.pointZoneBindings.find((point) => point.zoneId === workZone.id),
+    );
+    const receptionPoint = found(
+      request.pointZoneBindings.find(
+        (point) => point.zoneId === receptionZone.id,
+      ),
+    );
+    at(request.hubs, 1).centre = [
+      workPoint.tile[0] - receptionZone.offsetTiles[0],
+      workPoint.tile[1] - receptionZone.offsetTiles[1],
+    ];
+    receptionPoint.tile = [...workPoint.tile];
+    expect(() => projectFulfillmentDossiers({ requests: [request] })).toThrow(
+      /work\/reception footprints overlap/,
     );
   });
 
@@ -428,7 +519,15 @@ describe("typed fulfillment dossier projection", () => {
         episodeId: string;
         optionalPrefixAnalysisByDifficulty: Record<
           string,
-          { reachableSubsetCount: number; protectedRecoveryExcluded: boolean }
+          {
+            reachableSubsetCount: number;
+            protectedRecoveryExcluded: boolean;
+            examples: Array<{ completedTaskIds: string[] }>;
+          }
+        >;
+        selectionAnalysisByDifficulty: Record<
+          string,
+          { affordableSelections: string[][] }
         >;
       }>;
     };
@@ -442,5 +541,287 @@ describe("typed fulfillment dossier projection", () => {
       response.projections[0]?.optionalPrefixAnalysisByDifficulty.standard
         ?.protectedRecoveryExcluded,
     ).toBe(true);
+    const projection = response.projections[0];
+    expect(
+      projection?.selectionAnalysisByDifficulty.easy?.affordableSelections,
+    ).toHaveLength(9);
+    expect(
+      projection?.selectionAnalysisByDifficulty.standard?.affordableSelections,
+    ).toHaveLength(7);
+    expect(
+      projection?.selectionAnalysisByDifficulty.hard?.affordableSelections,
+    ).toHaveLength(3);
+    expect(projectFulfillmentDossiers({ requests: [request] })).toEqual(
+      projectFulfillmentDossiers({ requests: [request] }),
+    );
+    const kindsById = Object.fromEntries(
+      (
+        request.referenceCapabilityProfile as ReturnType<
+          typeof makeFulfillmentProfile
+        >
+      ).secondaryObjectives.map((side) => [side.id, side.kind]),
+    );
+    const hardExamples =
+      projection?.optionalPrefixAnalysisByDifficulty.hard?.examples ?? [];
+    expect(
+      hardExamples.some((example) => {
+        const aid = example.completedTaskIds.findIndex(
+          (id) => kindsById[id] === "aid",
+        );
+        const repair = example.completedTaskIds.findIndex(
+          (id) => kindsById[id] === "repair",
+        );
+        return aid >= 0 && repair > aid;
+      }),
+    ).toBe(true);
+  });
+
+  test("runs a complete artificial three-service blueprint through bridge, composer, audit, wiki, and SVG", async () => {
+    const profile = threeServiceProfile();
+    const request = requestFor(profile);
+    const selectionId = "fixture.intermediate";
+    request.episodeId = selectionId;
+    const roles = {
+      title: "plan.preview",
+      factualIntro: "plan.reserved",
+      handover: "plan.cancelled",
+      personalIntro: "plan.started",
+      factualOutro: "plan.complete",
+      personalOutro: "service.fulfillment-fixture.meal-service.goal",
+      defeat: "service.fulfillment-fixture.meal-service.complete",
+      continuation: "service.fulfillment-fixture.shelter-service.goal",
+    };
+    const roleText = {
+      factualIntro: {
+        en: "A synthetic documented frame.",
+        "es-ES": "Un marco documentado sintético.",
+      },
+      factualOutro: {
+        en: "A synthetic documented outcome.",
+        "es-ES": "Un resultado documentado sintético.",
+      },
+    };
+    const narrator = "fixture.narrator";
+    for (const screen of request.screens) {
+      if (screen.id === roles.factualIntro) screen.text = roleText.factualIntro;
+      if (screen.id === roles.factualOutro) screen.text = roleText.factualOutro;
+      if (
+        screen.id === roles.factualIntro ||
+        screen.id === roles.factualOutro ||
+        screen.id === roles.handover
+      )
+        screen.narrator = "collection-narrator";
+      if (
+        screen.id === roles.personalIntro ||
+        screen.id === roles.personalOutro
+      )
+        screen.narrator = narrator;
+      if (screen.id === roles.title) screen.narrator = "none";
+      const text = screen.text as { en: string; "es-ES": string };
+      screen.captionSegments = { en: [text.en], "es-ES": [text["es-ES"]] };
+    }
+    const bbox = [-1, -1, 1, 1];
+    const size = request.mapSize;
+    const span = 2 * 1.12;
+    const lonLatFor = (tile: readonly [number, number]) => [
+      (tile[0] / (size - 1) - 0.5) * span,
+      (0.5 - tile[1] / (size - 1)) * span,
+    ];
+    const hubs = request.hubs.map((hub) => ({
+      id: hub.id,
+      centre: hub.centre,
+      lonLat: lonLatFor(hub.centre),
+      name: { en: hub.id, "es-ES": hub.id },
+      radiusTiles: 3,
+      certainty: "synthetic test fixture only",
+    }));
+    const points = request.pointZoneBindings.map((point) => ({
+      id: point.pointId,
+      lonLat: lonLatFor(point.tile),
+      tile: point.tile,
+      name: { en: point.pointId, "es-ES": point.pointId },
+      certainty: "synthetic test fixture only",
+    }));
+    const corridorIds = new Set<string>();
+    for (const side of profile.secondaryObjectives) {
+      side.reachability.corridorIds.forEach((id) => {
+        corridorIds.add(id);
+      });
+      for (const effect of side.effects)
+        if (effect.kind === "mark-alternative-route" && effect.corridorId)
+          corridorIds.add(effect.corridorId);
+    }
+    const fixtureHubId = found(request.hubs[0]).id;
+    const portfolioSideIds = profile.secondaryObjectives
+      .slice(0, 5)
+      .map((side) => side.id);
+    if (portfolioSideIds.length !== 5)
+      throw new Error("fixture requires five distinct optional IDs");
+    const corridors = [...corridorIds].map((id) => ({
+      id,
+      hubOrder: [fixtureHubId, fixtureHubId],
+      mode: "land",
+      widthTiles: 1,
+    }));
+    const factualIntro = roleText.factualIntro;
+    const factualOutro = roleText.factualOutro;
+    const dossierMetadata = {
+      factualIntro,
+      factualOutro,
+      dramatizationNotice: {
+        en: "Synthetic only.",
+        "es-ES": "Sólo sintético.",
+      },
+      mapPlan: {
+        bbox,
+        terrainProfile: "fixture.region",
+        orientation: "north-up",
+        projection: "synthetic WGS84 test frame",
+        hubs,
+        points,
+        corridors,
+        terrainInstructions: "Synthetic test controls only.",
+        geographicLayers: [],
+        geometryStatus: "fixture only; no geographic assertion",
+        asset: "docs/design/maps/fixture/odyssey/fixture-intermediate.svg",
+      },
+      historicalMaterialPolicyByEntity: Object.fromEntries(
+        profile.worldContract.entities.map((entity) => [
+          entity.id,
+          "Synthetic fixture identity; no historical claim.",
+        ]),
+      ),
+      artDirection: {
+        style: "synthetic fixture",
+        historicalControls: [],
+        referenceAssets: [],
+        productionApproved: false,
+      },
+      failureRecovery: {
+        policy: "Synthetic fixture; no gameplay behavior asserted.",
+      },
+      requiredCapabilities: [
+        { id: "fixture.capability", status: "pending; synthetic fixture" },
+      ],
+      qaCases: ["Synthetic bridge and composition path only."],
+      playstyles: [
+        [at(portfolioSideIds, 0), at(portfolioSideIds, 1)],
+        [at(portfolioSideIds, 2), at(portfolioSideIds, 3)],
+        [at(portfolioSideIds, 4)],
+      ].map((optionalObjectives, index) => ({
+        id: `fixture.playstyle.${index + 1}`,
+        optionalObjectives,
+        costOfOpportunity: `Synthetic opportunity ${index + 1}`,
+        mainObjectivesUnchanged: true,
+        historicalOutcomeUnchanged: true,
+      })),
+      gameplayIdentity: Object.fromEntries(
+        ["problem", "decision", "density", "replay"].map((key) => [
+          key,
+          "Synthetic test fixture only.",
+        ]),
+      ),
+      editorialReviewNotes: { status: "synthetic test; review pending" },
+      screenRoles: roles,
+      continuation: {
+        nextEpisodeId: "fixture.next",
+        campaignComplete: false,
+        sourceScreenId: roles.continuation,
+      },
+    };
+    const blueprint = {
+      designProfile: "alternative-fulfillment-v3",
+      ...request,
+      dossierMetadata,
+    };
+    const campaign = {
+      campaignId: "fixture",
+      editorialContract: { publicId: "fixture", narratorId: narrator },
+    };
+    const selection = {
+      id: selectionId,
+      order: 2,
+      actId: "fixture.act",
+      title: { en: "Fixture", "es-ES": "Prueba" },
+      date: "synthetic",
+      knowledgeBasis: { speaker: narrator },
+      coreMechanic: "synthetic typed projection",
+      geographyId: "fixture.region",
+      historicalPersonPolicy: "No historical person represented.",
+      historicalSelection: { selectedClaim: "Synthetic fixture claim." },
+    };
+
+    const root = new URL("../..", import.meta.url).pathname;
+    const helper = new URL(
+      "../../tools/design/fulfillment-dossier.helper.py",
+      import.meta.url,
+    ).pathname;
+    const bridgeInput = `/tmp/fulfillment-bridge-${crypto.randomUUID()}.json`;
+    writeFileSync(bridgeInput, JSON.stringify({ requests: [request] }));
+    const bridge = Bun.spawnSync(["python3", helper], {
+      cwd: root,
+      stdin: Bun.file(bridgeInput),
+      stdout: "pipe",
+      stderr: "pipe",
+    });
+    unlinkSync(bridgeInput);
+    expect(bridge.exitCode, bridge.stderr.toString()).toBe(0);
+    const projection = (
+      JSON.parse(bridge.stdout.toString()) as {
+        projections: Array<Record<string, unknown>>;
+      }
+    ).projections[0];
+    if (!projection)
+      throw new Error("bridge returned no artificial projection");
+    const payload = JSON.stringify({
+      campaign,
+      selection,
+      blueprint,
+      projection,
+      request,
+    });
+    const python = [
+      "import importlib.util,json,sys",
+      "from pathlib import Path",
+      `root=Path(${JSON.stringify(root)})`,
+      "sys.path.insert(0,str(root/'tools/design'))",
+      "def load(name):\n p=root/'tools/design'/f'{name}.py'\n s=importlib.util.spec_from_file_location(name,p)\n m=importlib.util.module_from_spec(s)\n s.loader.exec_module(m)\n return m",
+      "factory=load('episode_dossier.factory'); validator=load('episode_dossier.validator'); pipeline=load('episode_dossiers.script')",
+      "p=json.load(sys.stdin); e=factory.build_fulfillment_dossier(p['campaign'],p['selection'],p['blueprint'],p['projection'],{'bbox':[-1,-1,1,1]}, {'id':'fixture.previous'}, {'id':'fixture.next'})",
+      "req={k:p['request'][k] for k in ('episodeId','referenceCapabilityProfile','accountsByDifficulty','mapSize','hubs','pointZoneBindings','recipeBindings','serviceBindings','planScreenIds','screens')}",
+      "errors=validator.audit_dossier(e,p['campaign'],projection_context={'request':req,'projection':p['projection']})",
+      "assert not errors, errors",
+      "assert 'bridgeDossierProjection' not in e and e['referenceCapabilityProfile']==p['projection']['referenceCapabilityProfile'] and e['id']==p['projection']['episodeId']",
+      "import copy",
+      "duplicate_portfolios=copy.deepcopy(p['blueprint']); a,b=duplicate_portfolios['dossierMetadata']['playstyles'][:2]; b['optionalObjectives']=list(reversed(a['optionalObjectives'])); b['costOfOpportunity']='Different wording must not make a duplicate task set distinct';\ntry: factory.build_fulfillment_dossier(p['campaign'],p['selection'],duplicate_portfolios,p['projection'],{'bbox':[-1,-1,1,1]}, {'id':'fixture.previous'}, {'id':'fixture.next'}); raise AssertionError('duplicate portfolios accepted')\nexcept ValueError as error: assert 'portfolios must be distinct' in str(error), error",
+      "for field,mutate in [('service',lambda d: d['fulfillmentServices'][0]['recipes'][0]['cost'].__setitem__('food',d['fulfillmentServices'][0]['recipes'][0]['cost']['food']+1)),('worker',lambda d: d['fulfillmentServices'][0]['recipes'][0].__setitem__('workerId','fixture.drift-worker')),('recipient',lambda d: d['fulfillmentServices'][0]['recipes'][0]['recipientIds'].append('fixture.drift-recipient')),('analysis',lambda d: d['selectionAnalysisByDifficulty']['hard']['spendable'].__setitem__('food',-1)),('financial',lambda d: d['optionalFinancialInputs']['optionalTasks'][0]['cost'].__setitem__('food',999))]:\n d=copy.deepcopy(e); mutate(d); assert validator.audit_dossier(d,p['campaign'],projection_context={'request':req,'projection':p['projection']}), field",
+      "profile_drift=copy.deepcopy(e); profile_drift['referenceCapabilityProfile']['fulfillmentPlan']['services'][0]['recipes'][0]['cost']['food']+=1; assert validator.audit_dossier(profile_drift,p['campaign'],projection_context={'request':req,'projection':p['projection']})",
+      "wiki=pipeline.fulfillment_wiki(p['campaign'],e); svg=pipeline.diagram(e,[])",
+      "assert 'Alternative services' in wiki and 'Authored presentation' in wiki and '<svg' in svg",
+      "import xml.etree.ElementTree as ET",
+      "tall=copy.deepcopy(e); base_hub=tall['mapPlan']['hubs'][0]['id']; tall['mapPlan']['hubs']=[{'id': (base_hub if i==1 else f'{base_hub}.{i}'),'centre':[min(20+i*18,380),60],'lonLat':[0,0],'name':{'en':f'Synthetic district {i}','es-ES':f'Distrito sintético {i}'},'radiusTiles':3,'certainty':'synthetic only'} for i in range(1,20)]",
+      "tall_svg=pipeline.diagram(tall,[]); root_svg=ET.fromstring(tall_svg); canvas_height=float(root_svg.attrib['viewBox'].split()[3]); text_rows=root_svg.findall('{http://www.w3.org/2000/svg}text'); final_label=next(row for row in text_rows if row.text=='19: Synthetic district 19'); final_legend=next(row for row in text_rows if row.text=='No ancient shore or elevation inferred'); assert canvas_height>850 and canvas_height>=max(float(final_label.attrib['y']),float(final_legend.attrib['y']))+12",
+      "print(json.dumps({'audit':errors,'wiki':wiki,'svg':svg,'serviceCount':len(e['fulfillmentServices']),'portfolioCount':len(e['playstyles'])}))",
+    ].join("\n");
+    const composeInput = `/tmp/fulfillment-compose-${crypto.randomUUID()}.json`;
+    writeFileSync(composeInput, payload);
+    const composed = Bun.spawnSync(["python3", "-c", python], {
+      cwd: root,
+      stdin: Bun.file(composeInput),
+      stdout: "pipe",
+      stderr: "pipe",
+    });
+    unlinkSync(composeInput);
+    expect(composed.exitCode, composed.stderr.toString()).toBe(0);
+    const output = JSON.parse(composed.stdout.toString()) as {
+      serviceCount: number;
+      portfolioCount: number;
+      wiki: string;
+      svg: string;
+    };
+    expect(output.serviceCount).toBe(3);
+    expect(output.portfolioCount).toBe(3);
+    expect(output.wiki).toContain("Synthetic only.");
+    expect(output.svg).toContain("Fixture");
   });
 });
