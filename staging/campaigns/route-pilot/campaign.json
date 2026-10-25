@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "route-pilot",
+  "publicId": "CDF-T01",
+  "internalName": "CDF_RoutePilot",
+  "sourceLocale": "en",
+  "titleKey": "campaign.route-pilot.title",
+  "descriptionKey": "campaign.route-pilot.description",
+  "mode": "aoe2-de",
+  "status": "fixture",
+  "recommendedPrevious": [],
+  "enforceRequirement": false,
+  "generalNarrator": {
+    "id": "collection-narrator",
+    "role": "general",
+    "identity": "Fictional collection voice; no human identity or recording claimed.",
+    "kind": "fictional",
+    "perspective": "Factual framing of an explicitly fictional engineering fixture.",
+    "register": "Plain and precise.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "Labels the laboratory as fictional and makes no historical claims.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "campaignNarrator": {
+    "id": "route-observer",
+    "role": "campaign",
+    "identity": "Fictional route observer.",
+    "kind": "fictional",
+    "perspective": "Curious observer describing only the test setup and its choices.",
+    "register": "Practical and concise.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "A fictional persona explains independent route selection and replay.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "characters": [],
+  "sources": [],
+  "claims": [],
+  "introduction": [
+    {
+      "id": "intro-1",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-pilot.fact",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-2",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-pilot.handover",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-3",
+      "speaker": "route-observer",
+      "textKey": "campaign.route-pilot.personal",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-4",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-pilot.advice",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    }
+  ],
+  "epilogue": [
+    {
+      "id": "epilogue-complete",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-pilot.victory",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    }
+  ],
+  "scenarioFiles": [
+    "scenarios/01-route-choice/scenario.json"
+  ],
+  "localization": [
+    {
+      "locale": "en",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-pilot.title": "The Roads Remember",
+        "campaign.route-pilot.fact": "This is a fictional technical laboratory. It checks independent campaigns, cumulative choices and recaps, without representing a historical event.",
+        "campaign.route-pilot.personal": "I keep the record of these paths. Choose one, then return to discover that remembering another does not erase the first.",
+        "campaign.route-pilot.advice": "Destroy A for Route A or B for Route B. Your record remembers both after replay. Continue with An Open Chronicle (CDF-T02).",
+        "campaign.route-pilot.instructions": "Keep the marked guard alive. Destroy Target A for Route A or Target B for Route B after preparation. A target destroyed early still counts. If both fall together before the ending, Route A has declared priority.",
+        "campaign.route-pilot.hints": "The two routes remain available on replay; completing B does not remove A.",
+        "campaign.route-pilot.scouts": "The lab is 32 × 32. Your guard starts west; the two targets are northeast and southeast.",
+        "campaign.route-pilot.history": "No historical event is represented. This checks engine behaviour with a fictional layout.",
+        "campaign.route-pilot.loss": "Your essential guard was lost or the test window expired. Reload or restart.",
+        "campaign.route-pilot.description": "A fictional laboratory for two independent endings and cumulative replay.",
+        "campaign.route-pilot.handover": "The route observer will now explain the experiment in their own words.",
+        "campaign.route-pilot.victory": "The chosen route has ended. Continue with An Open Chronicle (CDF-T02), or replay this laboratory to try the other route.",
+        "scenario.route-pilot-choice.title": "A Choice of Roads",
+        "scenario.route-pilot-choice.prepare": "Wait for the one-second laboratory preparation.",
+        "scenario.route-pilot-choice.destroy-a": "Destroy Target A to complete Route A.",
+        "scenario.route-pilot-choice.destroy-b": "Destroy Target B to complete Route B.",
+        "scenario.route-pilot-choice.guard-name": "Essential Guard",
+        "scenario.route-pilot-choice.ram-north-name": "Northern Ram",
+        "scenario.route-pilot-choice.ram-south-name": "Southern Ram",
+        "scenario.route-pilot-choice.target-a-name": "Target A",
+        "scenario.route-pilot-choice.target-b-name": "Target B",
+        "scenario.route-pilot-choice.player-name": "Laboratory Player",
+        "scenario.route-pilot-choice.targets-name": "Laboratory Targets"
+      }
+    },
+    {
+      "locale": "es-ES",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-pilot.title": "Los caminos recuerdan",
+        "campaign.route-pilot.fact": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico.",
+        "campaign.route-pilot.personal": "Guardo el registro de estos caminos. Elige uno y vuelve para comprobar que recordar otro no borra el primero.",
+        "campaign.route-pilot.advice": "Destruye A para la ruta A o B para la ruta B. El registro recuerda ambas tras rejugar. Continúa con Una crónica abierta (CDF-T02).",
+        "campaign.route-pilot.instructions": "Conserva con vida al guardia señalado. Destruye el objetivo A para la ruta A o el objetivo B para la ruta B después de la preparación. Un objetivo destruido antes también cuenta. Si ambos caen juntos antes del final, la ruta A tiene prioridad declarada.",
+        "campaign.route-pilot.hints": "Las dos rutas siguen disponibles al rejugar; completar B no elimina A.",
+        "campaign.route-pilot.scouts": "El laboratorio mide 32 × 32. Tu guardia empieza al oeste; los dos objetivos están al noreste y sureste.",
+        "campaign.route-pilot.history": "No se representa un hecho histórico. Se comprueba el motor con una disposición ficticia.",
+        "campaign.route-pilot.loss": "Has perdido al guardia esencial o ha terminado el plazo de prueba. Carga o reinicia.",
+        "campaign.route-pilot.description": "Un laboratorio ficticio de dos finales independientes y progreso acumulativo al rejugar.",
+        "campaign.route-pilot.handover": "El observador de rutas explicará ahora el experimento con sus propias palabras.",
+        "campaign.route-pilot.victory": "La ruta elegida ha terminado. Continúa con Una crónica abierta (CDF-T02) o rejuega este laboratorio para probar la otra ruta.",
+        "scenario.route-pilot-choice.title": "Una elección de caminos",
+        "scenario.route-pilot-choice.prepare": "Espera la preparación de un segundo del laboratorio.",
+        "scenario.route-pilot-choice.destroy-a": "Destruye el objetivo A para completar la ruta A.",
+        "scenario.route-pilot-choice.destroy-b": "Destruye el objetivo B para completar la ruta B.",
+        "scenario.route-pilot-choice.guard-name": "Guardia esencial",
+        "scenario.route-pilot-choice.ram-north-name": "Ariete del norte",
+        "scenario.route-pilot-choice.ram-south-name": "Ariete del sur",
+        "scenario.route-pilot-choice.target-a-name": "Objetivo A",
+        "scenario.route-pilot-choice.target-b-name": "Objetivo B",
+        "scenario.route-pilot-choice.player-name": "Jugador del laboratorio",
+        "scenario.route-pilot-choice.targets-name": "Objetivos del laboratorio"
+      }
+    }
+  ],
+  "assets": [],
+  "editorial": {
+    "neutrality": "Fictional technical fixture; no historical subject or claim.",
+    "sensitiveDepictions": "No sensitive historical depiction; abstract laboratory only.",
+    "anachronisms": "The setting is explicitly fictional and uses game units only as technical markers.",
+    "review": "draft",
+    "reviewer": "Awaiting independent editorial review."
+  },
+  "compatibility": [
+    {
+      "id": "game-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "save-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "progress-cross-campaign",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "multi-mod-i18n",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "difficulty",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "slideshow",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "audio",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    }
+  ]
+}

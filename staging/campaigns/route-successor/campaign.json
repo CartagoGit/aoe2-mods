@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "route-successor",
+  "publicId": "CDF-T02",
+  "internalName": "CDF_RouteSuccessor",
+  "sourceLocale": "en",
+  "titleKey": "campaign.route-successor.title",
+  "descriptionKey": "campaign.route-successor.description",
+  "mode": "aoe2-de",
+  "status": "fixture",
+  "recommendedPrevious": [],
+  "enforceRequirement": false,
+  "generalNarrator": {
+    "id": "collection-narrator",
+    "role": "general",
+    "identity": "Fictional collection voice; no human identity or recording claimed.",
+    "kind": "fictional",
+    "perspective": "Factual framing of an explicitly fictional engineering fixture.",
+    "register": "Plain and precise.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "Labels the laboratory as fictional and makes no historical claims.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "campaignNarrator": {
+    "id": "route-archivist",
+    "role": "campaign",
+    "identity": "Fictional archivist.",
+    "kind": "fictional",
+    "perspective": "Careful narrator who distinguishes what the static fixture says from data it does not inspect.",
+    "register": "Patient and precise; records rather than commands.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "A fictional persona introduces a standalone recap-presentation test.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "characters": [],
+  "sources": [],
+  "claims": [],
+  "introduction": [
+    {
+      "id": "intro-1",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.fact",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-2",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.handover",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-3",
+      "speaker": "route-archivist",
+      "textKey": "campaign.route-successor.personal",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    },
+    {
+      "id": "intro-4",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.advice",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    }
+  ],
+  "epilogue": [
+    {
+      "id": "epilogue-complete",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.victory",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 5
+    }
+  ],
+  "scenarioFiles": [
+    "scenarios/01-recap/scenario.json"
+  ],
+  "localization": [
+    {
+      "locale": "en",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "An Open Chronicle",
+        "campaign.route-successor.fact": "This is a fictional technical laboratory. It checks independent campaigns, cumulative choices and recaps, without representing a historical event.",
+        "campaign.route-successor.personal": "I keep what the ledger can tell us, and mark what it cannot. You may open this chronicle with both earlier paths, one path, or no earlier record at all.",
+        "campaign.route-successor.advice": "Recommended earlier: The Roads Remember (CDF-T01). That fictional laboratory offered Route A and Route B as alternative endings; replay could retain both. You may begin here without it. This source fixture shows a static summary and does not inspect your previous record.",
+        "campaign.route-successor.victory": "The recap test is complete. Return to the campaign menu.",
+        "campaign.route-successor.instructions": "Read or skip the campaign recap before starting. The scenario ends after ten seconds of active scenario time; it tests presentation, not historical gameplay.",
+        "campaign.route-successor.description": "An independent fictional recap laboratory that also welcomes new profiles.",
+        "campaign.route-successor.handover": "The archivist will now explain how the earlier records are read.",
+        "scenario.route-successor-recap.title": "An Independent Beginning",
+        "scenario.route-successor-recap.finish-recap": "Wait for the ten-second presentation test to finish.",
+        "scenario.route-successor-recap.intro": "You may begin here. This brief scenario ends automatically.",
+        "scenario.route-successor-recap.marker-name": "Laboratory Marker",
+        "scenario.route-successor-recap.player-name": "Laboratory Reader"
+      }
+    },
+    {
+      "locale": "es-ES",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Una crónica abierta",
+        "campaign.route-successor.fact": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico.",
+        "campaign.route-successor.personal": "Conservo lo que el registro puede contarnos y señalo lo que no puede. Puedes abrir esta crónica con ambos caminos anteriores, con uno o sin ningún registro previo.",
+        "campaign.route-successor.advice": "Se recomienda jugar antes Los caminos recuerdan (CDF-T01). Aquel laboratorio ficticio ofrecía las rutas A y B como finales alternativos; al rejugar podían conservarse ambas. Puedes empezar aquí sin jugarlo. Este fixture de fuentes muestra un resumen estático y no consulta tu registro previo.",
+        "campaign.route-successor.victory": "La prueba de recapitulación ha terminado. Vuelve al menú de campañas.",
+        "campaign.route-successor.instructions": "Lee o salta la recapitulación de campaña antes de empezar. El escenario termina tras diez segundos de tiempo activo; prueba presentación, no juego histórico.",
+        "campaign.route-successor.description": "Un laboratorio ficticio de recapitulación independiente que también admite perfiles nuevos.",
+        "campaign.route-successor.handover": "El archivista explicará ahora cómo se leen los registros anteriores.",
+        "scenario.route-successor-recap.title": "Un comienzo independiente",
+        "scenario.route-successor-recap.finish-recap": "Espera a que termine la prueba de presentación de diez segundos.",
+        "scenario.route-successor-recap.intro": "Puedes empezar aquí. Este breve escenario termina automáticamente.",
+        "scenario.route-successor-recap.marker-name": "Marcador del laboratorio",
+        "scenario.route-successor-recap.player-name": "Lector del laboratorio"
+      }
+    }
+  ],
+  "assets": [],
+  "editorial": {
+    "neutrality": "Fictional technical fixture; no historical subject or claim.",
+    "sensitiveDepictions": "No sensitive historical depiction; abstract laboratory only.",
+    "anachronisms": "The setting is explicitly fictional and uses game units only as technical markers.",
+    "review": "draft",
+    "reviewer": "Awaiting independent editorial review."
+  },
+  "compatibility": [
+    {
+      "id": "game-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "save-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "progress-cross-campaign",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "multi-mod-i18n",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "difficulty",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "slideshow",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "audio",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    }
+  ]
+}
