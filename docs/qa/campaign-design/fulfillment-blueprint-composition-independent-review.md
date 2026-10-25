@@ -2,17 +2,21 @@
 
 Reviewer: `gpt-6-luna` · 2026-10-25 · d00002/S11, scoped to the new “Closed blueprint envelope and composition” section in the S2 packet.
 
-Compared root commits `fc0a51e` and `4ae8934` (including the ten-field correction) against the i00008/S1 decision, the current v3 schema, dossier factory/validator and the authored Constantinople screens. This is a document-level review of the composition contract, not an S11/S2 approval, a profile or history approval, or an assertion that a composer has been implemented.
+Compared root commits `fc0a51e`, `4ae8934` and the correction `ba1f8be` against the i00008/S1 decision, the current v3 schema, dossier factory/validator and the authored Constantinople screens. This is a document-level review of the composition contract, not an S11/S2 approval, a profile or history approval, or an assertion that a composer has been implemented.
 
-## Findings
+## Initial findings
 
-1. **Screen-role target IDs are not required to be pairwise distinct.** `screenRoles` requires the eight named roles to reference supplied screens, and screen records themselves have unique IDs/keys. The packet does not say the eight role values must be unique. Consequently, different roles such as `factualOutro` and `continuation` could bind the same screen while passing the stated envelope, despite the screen role table representing distinct authored beats. The four opening positions constrain the first four roles, but do not resolve aliases among `factualOutro`, `personalOutro`, `defeat`, and `continuation`. Add an explicit distinct-target check (or document any deliberately shared role pair) before the envelope is called closed.
+1. **Screen-role target IDs were not required to be pairwise distinct.** `screenRoles` required the eight named roles to reference supplied screens, and screen records themselves had unique IDs/keys, but the packet did not say the eight role values must be unique. Different roles could therefore alias one screen.
 
-2. **The map-field allowlist is referenced but not enumerated or located.** `mapPlan` lists its core fields, then permits “other existing documentary map fields” through an explicitly declared allowlist. No allowlist or authoritative location for it is identified in this section or the referenced ADR. That leaves the accepted nested map shape ambiguous: an implementer cannot know which existing fields must survive projection, and an auditor cannot distinguish an allowed field from an unknown one. Name the allowlist or make the listed map fields the complete accepted set, with any extra fields handled through a separately versioned decision.
+2. **The map-field allowlist was referenced but not enumerated or located.** `mapPlan` listed core fields, then permitted “other existing documentary map fields” through an unspecified allowlist, leaving the accepted nested map shape ambiguous.
 
-3. **Preserving authored closing IDs needs an explicit v3 validation route.** The packet correctly says not to rename screen IDs to legacy constants and binds roles by supplied IDs. The existing `tools/design/episode_dossier.validator.py::audit_dossier` nevertheless directly indexes `fact-outro` and `persona-outro`; the current Constantinople source uses `victory-fact` and `victory-personal`, so feeding those authored screens through that audit raises a missing-key error. The legacy branch can remain unchanged, but the composition instructions should explicitly require role-aware v3 audit dispatch (or equivalent common-check extraction) instead of applying those legacy ID assumptions to v3. The opening roles do match the existing first-four sequence in the current screen source.
+3. **Preserving authored closing IDs lacked an explicit v3 validation route.** The packet correctly prohibited renaming screen IDs to legacy constants and bound roles by supplied IDs. The existing `tools/design/episode_dossier.validator.py::audit_dossier` directly indexes `fact-outro` and `persona-outro`; the current Constantinople source uses `victory-fact` and `victory-personal`, so legacy checks would raise a missing-key error on those authored IDs.
 
-4. **The derived-view list does not explicitly name `secondaryBudget`.** The ADR says that `secondaryBudget`, like `worldContract`, `objectivePlan`, `stateMachine`, and `secondaryObjectives`, is an exact derived copy of its profile field. The packet says “objective/world/state/secondary views” remain exact copies, which could mean only `secondaryObjectives`, and elsewhere only says the accounts are supplied separately. Spell out all five view names so a composer cannot omit `secondaryBudget` or treat it as independently authored metadata.
+4. **The derived-view list did not explicitly name `secondaryBudget`.** The ADR requires it, like `worldContract`, `objectivePlan`, `stateMachine`, and `secondaryObjectives`, to be an exact derived copy of its profile field. “Secondary views” could mean only `secondaryObjectives`.
+
+## Follow-up on `ba1f8be`
+
+All four points are resolved in the packet update. The eight `screenRoles` targets must now be distinct; the eleven required and seven optional `mapPlan` fields are enumerated and other fields rejected; audit dispatch checks `designProfile` before legacy-only checks and the v3 closing narrator check resolves role IDs; and the packet names all five exact profile-derived views, including `secondaryBudget`. I found no remaining discrepancy in this scoped section.
 
 ## Checks that aligned
 
