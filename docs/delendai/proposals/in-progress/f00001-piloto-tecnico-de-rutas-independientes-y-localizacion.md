@@ -47,7 +47,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - review-log: approved by gpt-6-luna — verified at 06e688e87a0b, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Integrated docs/wiki/route-pilot/02-implementation-specification.md and 15-text-inventory.json describe both maps, the A/B oracle, replay, recap truth table an… (2) docs/wiki/route-pilot/03-acceptance-matrix.md enumerates the profile, route order, save/load, simultaneous terminal and localization cases; native outcomes rem… — Independent review of integrated S1 specification. The 36 source strings are materializable; seven conditional texts remain documentary only. Adaptive recap/profile reads, native layouts and gameplay remain pending and outside S1. bun run validate exited 0 (142/142 tests, 2069 expectations). Verdict is limited to S1 specification and does not approve S2–S4 or gameplay. No formal review round was opened.
 
 ### S2 — Borradores completos de los dos mods
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`
 - **Gate**: e2e
@@ -55,6 +55,8 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
   - "Fuentes completas de ambos mods en staging: escenarios, metadatos, narradores, 17 catálogos draft con claves semánticas y manifiestos licenciados."
   - "Claves progress.route-pilot.route-a y progress.route-pilot.route-b permanentes; terminal común; predecesora opcional y sucesora autocontenida."
   - "bun run staging:check route-pilot y bun run staging:check route-successor pasan sin --partial. No activar carpetas en campaigns ni modificar el lock en este slice."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S3 — Materialización conjunta, IDs y glosario
 - **Status**: pending
