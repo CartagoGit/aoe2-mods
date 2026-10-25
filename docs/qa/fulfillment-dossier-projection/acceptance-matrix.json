@@ -5,7 +5,7 @@
   "proposalId": "i00008",
   "sliceId": "S1",
   "sourceAuthority": "docs/architecture/fulfillment-dossier-projection.md",
-  "caseCount": 32,
+  "caseCount": 34,
   "cases": [
     {
       "id": "dispatch-legacy",
@@ -228,6 +228,20 @@
       "id": "point-offset-drift",
       "inputOrMutation": "point binding claims a hub/offset different from its profile zone",
       "requiredResult": "reject disagreement; profile zone remains sole geometric authority",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "authored-point-relocation",
+      "inputOrMutation": "legitimate pointId but authored tile differs from hub-centre plus zone offset",
+      "requiredResult": "reject relocation; never derive away an existing map-point disagreement",
+      "owner": "i00008/S2",
+      "status": "specified-not-executed"
+    },
+    {
+      "id": "point-floating-tolerance",
+      "inputOrMutation": "finite coordinate differences at and above0.000001tile on either axis",
+      "requiredResult": "allow only arithmetic tolerance<=0.000001; reject greater drift without snapping",
       "owner": "i00008/S2",
       "status": "specified-not-executed"
     }
