@@ -4,7 +4,7 @@
 
 Tras revisión independiente e integración oficial de la infraestructura en develop. Consulta la auditoría: EXPORT READY del fixture permite empezar contenido acotado; no autoriza publicar un mod ni afirmar GAME VERIFIED. Las comprobaciones del motor pertenecen al arquitecto/tester en la propuesta de compatibilidad. El agente de contenido no debe asumirlas resueltas.
 
-En esta entrega i00001 y f00001/S1 están `done`. f00001/S2 fue implementado por `gpt-6-luna`, revisado por GPT-6 e integrado en `9d5e744b`; la consulta viva de DelendAI aún muestra la propuesta `in-progress` y S2 `review`, no `done`. No iniciar S3 hasta que el veredicto formal aparezca integrado en el estado oficial. El propietario autorizó a Luna a realizar trabajo mecánico del piloto mientras MiniMax carece de cuota; no hubo cambio automático de proveedor ni compra de créditos. Recupera el estado vivo antes de actuar.
+En esta entrega i00001 y f00001/S1 están `done`. f00001/S2 fue implementado por `gpt-6-luna`, revisado por GPT-6 con aceptación 3/3 y está `done` tras integrar el producto `9d5e744b` y el veredicto formal `137fdd73`. Recupera el estado vivo para conocer el slice siguiente. El propietario asignó explícitamente a Luna el trabajo mecánico de S2; no hubo compra de créditos ni generación pagada de medios. Recupera el estado vivo antes de actuar.
 
 Registro de procedencia: las actualizaciones de estado del handoff realizadas en `575ea5a7fb4572a3bdf11481f8b0f1f0b6597a47` y `ce2e91fd33482b9e785a437cd9f52fd245aab83f` fueron redactadas por `gpt-6-luna`. La identidad de autor/committer Git heredada en esos dos commits no corresponde a la autoría del contenido.
 
@@ -13,7 +13,7 @@ El piloto técnico de rutas puede avanzar por slices cerrados sin esperar a que 
 ## Prompt inicial completo
 
 ```text
-Trabaja bajo la identidad real y el modelo declarados en tu unidad oficial. Para el trabajo mecánico del piloto f00001/S2, el propietario autorizó a `gpt-6-luna` durante la falta de cuota de MiniMax; esa autorización no cambia automáticamente el proveedor ni desbloquea autoría histórica. Implementa únicamente el slice designado, declara tu identidad y nunca te presentes como el arquitecto ni reutilices su lock o revisión.
+Trabaja bajo la identidad real y el modelo declarados en tu unidad oficial. El propietario asignó explícitamente a `gpt-6-luna` el trabajo mecánico de f00001/S2; esta asignación no se extiende a otros slices ni desbloquea autoría histórica. Implementa únicamente el slice designado, declara tu identidad y nunca te presentes como el arquitecto ni reutilices su lock o revisión.
 
 1. Lee AGENTS.md, README.md, docs/production/plan.md, docs/production/requirements-traceability.md, docs/architecture/overview.md, docs/standards/naming.md y todos los documentos docs/handoffs/MINIMAX-M3.1-*.md. Comprueba el estado de Git, la base develop, unidades pendientes y cambios de terceros. No trabajes en main ni hagas cambios manuales en develop.
 2. Conecta al DelendAI instalado. Consulta su overview y descubre en tiempo de ejecución las capacidades y esquemas para listar propuestas, consultar detalles/dependencias, entrar en una unidad aislada, reclamar archivos, checkpoints, validación, revisión y publicación. No inventes herramientas, IDs ni frontmatter. Sigue las instrucciones servidas por esa versión.
@@ -39,7 +39,7 @@ El encargo vigente usa inglés como fuente inicial y nueve odiseas con 278 episo
 
 ## Estado de la ampliación de 278 episodios
 
-El alcance histórico actual es d00002: nueve odiseas con cinco actos y 278 selecciones, no 39 escenarios como extensión final. Hay 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. Existen 47 recursos de investigación y 26 perfiles geográficos; cuatro datos modernos del Hijaz no resuelven las 22 identidades geográficas faltantes, que afectan a 25 selecciones. La auditoría cívica registra 54 candidatos de riesgo estáticos, no defectos demostrados ni dificultad aprobada. Las nueve propuestas históricas siguen bloqueadas; recupera los estados vivos y respeta dependencias antes de autoría.
+El alcance histórico actual es d00002: nueve odiseas con cinco actos y 278 selecciones, no 39 escenarios como extensión final. Hay 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. Existen 47 recursos de investigación y 26 perfiles geográficos; ocho recursos modernos del Hijaz (cuatro recortes DSM y cuatro vistas) no resuelven las 22 identidades geográficas faltantes, que afectan a 25 selecciones. La auditoría cívica registra 54 candidatos de riesgo estáticos, no defectos demostrados ni dificultad aprobada. Las nueve propuestas históricas siguen bloqueadas; recupera los estados vivos y respeta dependencias antes de autoría.
 
 
 La ampliación imperial de cobertura365–380 conserva los IDs y cambia solo el orden de presentación de la ley380 y el concilio381, ahora32y34. Los cinco episodios nuevos tienen slices designados: los órdenes28–31 tienen dossier en revisión y el orden33 sigue sin dossier completo. El total es63borradores; hay 215 selecciones pendientes de dossier. No interpretar la migración de278como permiso para decidir su geografía o nivelación.
