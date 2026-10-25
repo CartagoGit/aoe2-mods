@@ -50,7 +50,7 @@
       "textKey": "campaign.route-pilot.fact",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 9
     },
     {
       "id": "intro-2",
@@ -58,7 +58,7 @@
       "textKey": "campaign.route-pilot.handover",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 6
     },
     {
       "id": "intro-3",
@@ -66,7 +66,7 @@
       "textKey": "campaign.route-pilot.personal",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 10
     },
     {
       "id": "intro-4",
@@ -74,7 +74,7 @@
       "textKey": "campaign.route-pilot.advice",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 12
     }
   ],
   "epilogue": [
@@ -84,7 +84,7 @@
       "textKey": "campaign.route-pilot.victory",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 10
     }
   ],
   "scenarioFiles": [

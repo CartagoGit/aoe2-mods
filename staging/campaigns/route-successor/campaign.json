@@ -50,7 +50,7 @@
       "textKey": "campaign.route-successor.fact",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 9
     },
     {
       "id": "intro-2",
@@ -58,7 +58,7 @@
       "textKey": "campaign.route-successor.handover",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 6
     },
     {
       "id": "intro-3",
@@ -66,7 +66,7 @@
       "textKey": "campaign.route-successor.personal",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 14
     },
     {
       "id": "intro-4",
@@ -74,7 +74,7 @@
       "textKey": "campaign.route-successor.advice",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 21
     }
   ],
   "epilogue": [
@@ -84,7 +84,7 @@
       "textKey": "campaign.route-successor.victory",
       "claimIds": [],
       "delivery": "Clear, concise fictional technical narration",
-      "durationSeconds": 5
+      "durationSeconds": 6
     }
   ],
   "scenarioFiles": [
