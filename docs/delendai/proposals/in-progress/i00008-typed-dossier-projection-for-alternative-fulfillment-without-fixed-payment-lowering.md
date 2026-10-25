@@ -2,10 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-25
+last-transition-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
+last-correlation-id: 230e7a4c-2ea0-4980-af53-65eefdf955fc
+last-transition-from: ready
+last-transition-at: 2026-10-25T01:26:46.091Z
 ---
 
 # i00008 — Typed dossier projection for alternative fulfillment without fixed-payment lowering
