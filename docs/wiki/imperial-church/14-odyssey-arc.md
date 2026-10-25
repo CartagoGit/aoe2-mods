@@ -63,7 +63,7 @@
       "Sole rule is not asserted in350: Magnentius survives until353.",
       "Rome/eastern successors open337 and disclose the return in chronology after the381finale."
     ],
-    "authoredDossierCount": 33
+    "authoredDossierCount": 34
   },
   "continuity": {
     "recommendedPrevious": [
@@ -1450,7 +1450,9 @@ Socrates V.6 reports arrival24November and V.7 church possession26November380 as
 
 Knowledge: fictional dated clerk experience with local placement specified in the complete dossier; external affairs remain reports. one local map; distant events use explicitly attributed dispatches; imperial motive never asserted from silence
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/34-church-transfer-constantinople/15-odyssey-dossier.md) — independent approval pending
 
 Architect-corrected claim EN: Socrates separately narrates Theodosius’ arrival and church-possession changes at Constantinople. His theological framing is attributed; it is not automatic implementation of the February law.
 
