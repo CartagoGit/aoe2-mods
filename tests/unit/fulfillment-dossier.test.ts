@@ -834,11 +834,16 @@ describe("typed fulfillment dossier projection", () => {
       `root=Path(${JSON.stringify(root)})`,
       "sys.path.insert(0,str(root/'tools/design'))",
       "def load(name):\n p=root/'tools/design'/f'{name}.py'\n s=importlib.util.spec_from_file_location(name,p)\n m=importlib.util.module_from_spec(s)\n s.loader.exec_module(m)\n return m",
-      "factory=load('episode_dossier.factory'); validator=load('episode_dossier.validator'); pipeline=load('episode_dossiers.script')",
+      "factory=load('episode_dossier.factory'); validator=load('episode_dossier.validator'); pipeline=load('episode_dossiers.script'); civic=load('civic_difficulty_audit.script')",
       "p=json.load(sys.stdin); e=factory.build_fulfillment_dossier(p['campaign'],p['selection'],p['blueprint'],p['projection'],{'bbox':[-1,-1,1,1]}, {'id':'fixture.previous'}, {'id':'fixture.next'})",
       "req={k:p['request'][k] for k in ('episodeId','referenceCapabilityProfile','accountsByDifficulty','mapSize','hubs','pointZoneBindings','recipeBindings','serviceBindings','planScreenIds','screens')}",
       "errors=validator.audit_dossier(e,p['campaign'],projection_context={'request':req,'projection':p['projection']})",
       "assert not errors, errors",
+      "civic_row=civic.episode_audit(p['campaign']['campaignId'],e)",
+      "assert civic_row['designProfile']=='alternative-fulfillment-v3' and civic_row['accountsByDifficulty']==req['accountsByDifficulty']",
+      "assert civic_row['selectionAnalysisByDifficulty']==p['projection']['selectionAnalysisByDifficulty'] and civic_row['authoredEnemyRoster']==p['projection']['referenceCapabilityProfile']['enemyRoster']",
+      "assert civic_row['affordableSelectionCountByDifficulty']=={level:len(p['projection']['selectionAnalysisByDifficulty'][level]['affordableSelections']) for level in ('easy','standard','hard')}",
+      "assert civic_row['budgetBasis']=='v3 initial spendable operating account; excludes protected recovery and unearned optional rewards' and 'enemyTotalCapByDifficulty' not in civic_row",
       "assert 'bridgeDossierProjection' not in e and e['referenceCapabilityProfile']==p['projection']['referenceCapabilityProfile'] and e['id']==p['projection']['episodeId']",
       "import copy",
       "duplicate_portfolios=copy.deepcopy(p['blueprint']); a,b=duplicate_portfolios['dossierMetadata']['playstyles'][:2]; b['optionalObjectives']=list(reversed(a['optionalObjectives'])); b['costOfOpportunity']='Different wording must not make a duplicate task set distinct';\ntry: factory.build_fulfillment_dossier(p['campaign'],p['selection'],duplicate_portfolios,p['projection'],{'bbox':[-1,-1,1,1]}, {'id':'fixture.previous'}, {'id':'fixture.next'}); raise AssertionError('duplicate portfolios accepted')\nexcept ValueError as error: assert 'portfolios must be distinct' in str(error), error",
@@ -849,7 +854,7 @@ describe("typed fulfillment dossier projection", () => {
       "import xml.etree.ElementTree as ET",
       "tall=copy.deepcopy(e); base_hub=tall['mapPlan']['hubs'][0]['id']; tall['mapPlan']['hubs']=[{'id': (base_hub if i==1 else f'{base_hub}.{i}'),'centre':[min(20+i*18,380),60],'lonLat':[0,0],'name':{'en':f'Synthetic district {i}','es-ES':f'Distrito sintético {i}'},'radiusTiles':3,'certainty':'synthetic only'} for i in range(1,20)]",
       "tall_svg=pipeline.diagram(tall,[]); root_svg=ET.fromstring(tall_svg); canvas_height=float(root_svg.attrib['viewBox'].split()[3]); text_rows=root_svg.findall('{http://www.w3.org/2000/svg}text'); final_label=next(row for row in text_rows if row.text=='19: Synthetic district 19'); final_legend=next(row for row in text_rows if row.text=='No ancient shore or elevation inferred'); assert canvas_height>850 and canvas_height>=max(float(final_label.attrib['y']),float(final_legend.attrib['y']))+12",
-      "print(json.dumps({'audit':errors,'wiki':wiki,'svg':svg,'serviceCount':len(e['fulfillmentServices']),'portfolioCount':len(e['playstyles'])}))",
+      "print(json.dumps({'audit':errors,'civic':civic_row,'wiki':wiki,'svg':svg,'serviceCount':len(e['fulfillmentServices']),'portfolioCount':len(e['playstyles'])}))",
     ].join("\n");
     const composeInput = `/tmp/fulfillment-compose-${crypto.randomUUID()}.json`;
     writeFileSync(composeInput, payload);
@@ -864,11 +869,21 @@ describe("typed fulfillment dossier projection", () => {
     const output = JSON.parse(composed.stdout.toString()) as {
       serviceCount: number;
       portfolioCount: number;
+      civic: {
+        designProfile: string;
+        affordableSelectionCountByDifficulty: Record<string, number>;
+      };
       wiki: string;
       svg: string;
     };
     expect(output.serviceCount).toBe(3);
     expect(output.portfolioCount).toBe(3);
+    expect(output.civic.designProfile).toBe("alternative-fulfillment-v3");
+    expect(output.civic.affordableSelectionCountByDifficulty).toEqual({
+      easy: 9,
+      standard: 6,
+      hard: 2,
+    });
     expect(output.wiki).toContain("Synthetic only.");
     expect(output.svg).toContain("Fixture");
   });
