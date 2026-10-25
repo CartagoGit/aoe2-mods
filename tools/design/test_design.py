@@ -15,6 +15,119 @@ from test_civic_difficulty_audit import CivicDifficultyAuditTests
 from test_research_crosswalk import ResearchCrosswalkTests
 
 
+class FulfillmentBridgeAcceptanceTests(unittest.TestCase):
+    def test_optional_analysis_rejects_unsafe_reward_balance(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/fulfillment-dossier.helper.py"))
+        projection = {
+            "optionalFinancialInputs": {
+                "optionalTasks": [
+                    {
+                        "id": "fixture.reward-overflow",
+                        "cost": {"food": 0, "wood": 0, "gold": 0, "stone": 0},
+                        "reward": {"food": 1, "wood": 0, "gold": 0, "stone": 0},
+                    }
+                ]
+            },
+            "selectionAnalysisByDifficulty": {
+                level: {"selections": []} for level in ("easy", "standard", "hard")
+            },
+        }
+        accounts = {
+            level: {
+                "spendable": {"food": 2**53 - 1, "wood": 0, "gold": 0, "stone": 0},
+                "optionalReserve": {"food": 0, "wood": 0, "gold": 0, "stone": 0},
+            }
+            for level in ("easy", "standard", "hard")
+        }
+        with self.assertRaisesRegex(ValueError, "overflows safe integer food"):
+            helper["_with_optional_analysis"](projection, accounts)
+
+    def test_unaffordable_main_selection_has_no_after_funding_witness(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/fulfillment-dossier.helper.py"))
+        projection = {
+            "optionalFinancialInputs": {"optionalTasks": []},
+            "selectionAnalysisByDifficulty": {
+                level: {
+                    "selections": [{
+                        "recipeIds": ["fixture.recipe"],
+                        "affordable": False,
+                        "spendableRemainder": {"food": None, "wood": None, "gold": None, "stone": None},
+                    }]
+                }
+                for level in ("easy", "standard", "hard")
+            },
+        }
+        accounts = {
+            level: {
+                "spendable": {"food": 0, "wood": 0, "gold": 0, "stone": 0},
+                "optionalReserve": {"food": 0, "wood": 0, "gold": 0, "stone": 0},
+            }
+            for level in ("easy", "standard", "hard")
+        }
+        result = helper["_with_optional_analysis"](projection, accounts)
+        row = result["optionalPrefixAnalysisByDifficulty"]["hard"]["afterFundingSelections"][0]
+        self.assertIsNone(row["initialRemainder"])
+        self.assertIsNone(row["reachableSubsetCount"])
+        self.assertIsNone(row["allOptionalTasksAffordable"])
+        self.assertIsNone(row["examples"])
+        self.assertIn("no after-funding witness", row["reason"])
+
+    def test_bridge_fails_closed_when_bun_or_json_response_is_unavailable(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/fulfillment-dossier.helper.py"))
+        with patch.object(helper["shutil"], "which", return_value=None):
+            with self.assertRaisesRegex(RuntimeError, "Bun is required"):
+                helper["project_batch"]([{"episodeId": "fixture.episode"}])
+
+        completed = type("Completed", (), {"returncode": 0, "stdout": "not-json", "stderr": ""})()
+        with patch.object(helper["shutil"], "which", return_value="/fixture/bun"), \
+             patch.object(helper["subprocess"], "run", return_value=completed):
+            with self.assertRaisesRegex(RuntimeError, "malformed JSON"):
+                helper["project_batch"]([{"episodeId": "fixture.episode"}])
+
+    def test_v3_auditor_dispatches_before_legacy_and_detects_derived_view_drift(self):
+        validator = runpy.run_path(str(ROOT / "tools/design/episode_dossier.validator.py"))
+        self.assertTrue(validator["audit_dossier"]({"id": "fixture", "designProfile": "future-profile"})[0]
+                        .endswith("unsupported designProfile 'future-profile'"))
+        episode = {
+            "id": "fixture.episode",
+            "designProfile": "alternative-fulfillment-v3",
+            "referenceCapabilityProfile": {
+                "schemaVersion": 3,
+                "worldContract": {"entities": []},
+                "objectivePlan": [],
+                "stateMachine": {},
+                "secondaryObjectives": [],
+                "secondaryBudget": {},
+                "fulfillmentPlan": {"services": []},
+            },
+            "worldContract": {"entities": [{"id": "drift"}]},
+            "geographyId": "fixture.region",
+            "mapPlan": {
+                "terrainProfile": "fixture.region",
+                "hubs": [{"id": "fixture.hub", "centre": [100, 100]}],
+                "points": [{"id": "fixture.point", "tile": [120, 100]}],
+            },
+            "mapBindings": {
+                "hubs": [{"id": "fixture.hub", "centre": [100, 100]}],
+                "points": [{"pointId": "fixture.point", "tile": [120, 100]}],
+            },
+        }
+        errors = validator["audit_dossier"](episode)
+        self.assertTrue(any("derived worldContract differs" in error for error in errors))
+        self.assertFalse(any("historical map" in error for error in errors))
+        episode["mapBindings"]["points"][0]["tile"] = [121, 100]
+        errors = validator["audit_dossier"](episode)
+        self.assertTrue(any("projected point-zone bindings differ" in error for error in errors))
+
+    def test_bridge_preserves_nonzero_projector_failure(self):
+        helper = runpy.run_path(str(ROOT / "tools/design/fulfillment-dossier.helper.py"))
+        completed = type("Completed", (), {"returncode": 2, "stdout": "", "stderr": "invalid profile"})()
+        with patch.object(helper["shutil"], "which", return_value="/fixture/bun"), \
+             patch.object(helper["subprocess"], "run", return_value=completed):
+            with self.assertRaisesRegex(RuntimeError, "invalid profile"):
+                helper["project_batch"]([{"episodeId": "fixture.episode"}])
+
+
 class DesignAcceptanceTests(unittest.TestCase):
     def test_main_counters_reject_empty_negative_fractional_and_boolean_thresholds(self):
         examples = {}

@@ -24,6 +24,7 @@ factory = module("episode_dossier.factory")
 validator = module("episode_dossier.validator")
 layers_helper = module("geographic_layers.helper")
 catalog = module("odyssey_catalog.helper")
+fulfillment = module("fulfillment-dossier.helper")
 frame_helper = runpy.run_path(str(ROOT / "tools/map/geographic_frame.helper.py"))
 
 
@@ -45,6 +46,59 @@ def pair(text):
     return f"EN: {text['en']}\n\nES: {text['es-ES']}"
 
 
+def fulfillment_wiki(campaign, episode):
+    profile = episode["referenceCapabilityProfile"]
+    rows = [
+        f"# {episode['order']}. {episode['title']['en']}", "", episode["status"], "",
+        "Design-only draft. Historical, geographic, native and game review remain pending; this typed projection is not an implemented map or played route.", "",
+        f"{campaign['editorialContract']['publicId']} · `{episode['id']}` · {episode['dateRange']} · {episode['mapSize']}×{episode['mapSize']}", "",
+        "## Historical frame and source record", "", pair(episode["event"]), "", pair(episode["historicalOutcome"]), "",
+        pair(episode["dramatizationNotice"]), "", "```json",
+        json.dumps({"sourcePassages": episode["sourcePassages"], "knowledgeBasis": episode["knowledgeBasis"]}, ensure_ascii=False, indent=2),
+        "```", "", "## Shared objective and typed profile", "",
+    ]
+    for objective in profile["objectivePlan"]:
+        rows += [f"### {objective['id']} / {objective['phase']}", "", pair(objective["text"]), "", "```json",
+                 json.dumps(objective["predicate"], ensure_ascii=False, indent=2), "```", ""]
+    rows += ["## Alternative services", "", "A selection is one authored recipe per service. Costs are alternatives and are never lowered to simultaneous fixed-payment predicates.", ""]
+    for service in episode["fulfillmentServices"]:
+        rows += [f"### {service['serviceId']}", "", f"Goal screen: `{service['goalScreenId']}` · completion screen: `{service['completeScreenId']}`", ""]
+        for recipe in service["recipes"]:
+            rows += [f"#### {recipe['recipeId']} — {recipe['title']['en']}", "", pair(recipe["title"]), "",
+                     f"Work point `{recipe['workPointId']}` → reception point `{recipe['receptionPointId']}`; worker `{recipe['workerId']}`; output `{recipe['outputEntityId']}`; recipients: {', '.join(f'`{item}`' for item in recipe['recipientIds'])}.", "",
+                     "Cost: `" + json.dumps(recipe["cost"], sort_keys=True) + "`.", ""]
+    rows += ["## Difficulty accounting", "", "Finite selection arithmetic only; it is not resource gathering, a schedule or a playthrough.", ""]
+    for level in ("easy", "standard", "hard"):
+        analysis = episode["selectionAnalysisByDifficulty"][level]
+        optional = episode["optionalPrefixAnalysisByDifficulty"][level]
+        after_funding = {
+            tuple(row["recipeIds"]): row
+            for row in optional["afterFundingSelections"]
+        }
+        rows += [f"### {level}", "", "Accounts:", "", "```json", json.dumps(episode["accountsByDifficulty"][level], ensure_ascii=False, indent=2), "```", "",
+                 f"Before main funding: {optional['reachableSubsetCount']} of {2 ** len(profile['secondaryObjectives'])} optional subsets are reachable from initial spendable stock; all optional tasks are reachable in that prefix: {optional['allOptionalTasksAffordable']}. This prefix does not include a service selection.", "",
+                 f"After main funding: {optional['mainAffordableSelectionCount']} of {len(analysis['selections'])} recipe selections are affordable from initial spendable stock; {optional['allOptionalTasksAffordableAfterFundingCount']} affordable selections permit all optional tasks in an affordable prefix. Unaffordable selections have no after-funding witness. These are finite accounting cases and assume spatial predicates and actor availability succeed.", "",
+                 "| Recipe selection | Total cost | Main affordable | Spendable stock after main selection | Reachable optional subsets after funding | All optional tasks affordable after funding |", "|---|---|---:|---|---:|---|"]
+        for row in analysis["selections"]:
+            funded = after_funding[tuple(row["recipeIds"])]
+            remainder = json.dumps(funded["initialRemainder"], sort_keys=True) if row["affordable"] else "—"
+            reachable = funded["reachableSubsetCount"] if row["affordable"] else "—"
+            all_optionals = funded["allOptionalTasksAffordable"] if row["affordable"] else "—"
+            rows.append(f"| {', '.join(f'`{item}`' for item in row['recipeIds'])} | `{json.dumps(row['totalCost'], sort_keys=True)}` | {row['affordable']} | `{remainder}` | {reachable} | {all_optionals} |")
+        rows.append("")
+    rows += ["## Optional objectives", "", "The exact authored v3 contracts follow; their presence does not establish task reachability in the game.", "", "```json",
+             json.dumps(profile["secondaryObjectives"], ensure_ascii=False, indent=2), "```", "",
+             "## Geography and map controls", "", f"[Proposed map](../../../../design/maps/{episode['mapPlan']['asset'].split('/')[-3]}/odyssey/{episode['id']}.svg)", "",
+             "```json", json.dumps(episode["mapPlan"], ensure_ascii=False, indent=2), "```", "",
+             "## Authored presentation", ""]
+    for screen in episode["screens"]:
+        role = next((key for key, value in episode["screenRoles"].items() if value == screen["id"]), "unassigned authored screen")
+        rows += [f"### {screen['id']} ({role})", "", pair(screen["text"]), "", f"Condition: {screen['condition']} · narrator: {screen['narrator']} · native surface: {screen['nativeSurface']}.", ""]
+    rows += ["## QA and capability limits", "", "```json", json.dumps({"qa": episode["qa"], "requiredCapabilities": episode["requiredCapabilities"], "continuation": episode["continuation"], "gameplayIdentity": episode["gameplayIdentity"], "failureRecovery": episode["failureRecovery"]}, ensure_ascii=False, indent=2), "```", "",
+             "A reference-profile projection is not native support. Native rendering, actual UI, audio, world footprints, pathfinding, difficulty, engine behavior and historical approval remain separate gates.", ""]
+    return "\n".join(rows)
+
+
 def table(rows):
     def cell(value):
         return str(value).replace("|", "\\|").replace("\n", "<br>")
@@ -55,6 +109,8 @@ def table(rows):
 
 
 def wiki(campaign, episode):
+    if "referenceCapabilityProfile" in episode:
+        return fulfillment_wiki(campaign, episode)
     base = [
         f"# {episode['order']}. {episode['title']['en']}",
         "",
@@ -233,9 +289,21 @@ def diagram(episode, geographic_layers):
     projection_bbox = episode["mapPlan"]["bbox"]
     clip_bbox = frame_helper["make_frame"](projection_bbox, size).bounds_at(0, size - 1)
     point = lambda h: (55 + h["centre"][0] * factor, 85 + h["centre"][1] * factor)
+    authored_hubs = episode["mapPlan"]["hubs"]
+    last_hub_label_y = max(
+        (
+            140 + index * 50
+            + (len(textwrap.wrap(f"{index}: {hub['name']['en']}", width=42)) - 1) * 14
+            for index, hub in enumerate(authored_hubs, 1)
+        ),
+        default=0,
+    )
+    legend_y = max(420, 175 + len(authored_hubs) * 50)
+    last_legend_y = legend_y + 7 * 24
+    canvas_height = max(850, int(max(last_hub_label_y, last_legend_y, 780) + 28))
     lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
-        '<rect width="1050" height="850" fill="#f6f0dc"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 {canvas_height}" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
+        f'<rect width="1050" height="{canvas_height}" fill="#f6f0dc"/>',
         '<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>',
         f'<text x="40" y="35" font-family="sans-serif" font-size="22">{html.escape(episode["title"]["en"])}</text>',
         f'<text x="40" y="63" font-family="sans-serif" font-size="15">{size} × {size} · {html.escape(episode["geographyId"])} · N ↑ E →</text>',
@@ -287,7 +355,7 @@ def diagram(episode, geographic_layers):
         lines.append(
             f'<polyline data-corridor="{html.escape(corridor["id"])}" points="{coords}" fill="none" stroke="{colour}" stroke-width="3" stroke-dasharray="8 6"><title>{html.escape(corridor["id"])}: proposed {html.escape(corridor["mode"])} district connection, intermediate path pending</title></polyline>'
         )
-    for i, h in enumerate(episode["mapPlan"]["hubs"], 1):
+    for i, h in enumerate(authored_hubs, 1):
         x, y = point(h)
         lines += [
             f'<circle cx="{x:.2f}" cy="{y:.2f}" r="20" fill="none" stroke="#91512f"/>',
@@ -296,7 +364,6 @@ def diagram(episode, geographic_layers):
         ]
         for row, label in enumerate(textwrap.wrap(f"{i}: {h['name']['en']}", width=42)):
             lines.append(f'<text x="730" y="{140 + i * 50 + row * 14}" font-family="sans-serif" font-size="12">{html.escape(label)}</text>')
-    legend_y = max(420, 175 + len(episode["mapPlan"]["hubs"]) * 50)
     for i, text in enumerate(
         [
             "Geographic district controls only",
@@ -357,22 +424,54 @@ def run(check=False):
         if not campaign.get("episodeBlueprints"):
             continue
         selected = {e["id"]: e for e in campaign["episodeSelection"]}
+        v3_plans = [plan for plan in campaign.get("episodeBlueprints", [])
+                    if isinstance(plan, dict) and "designProfile" in plan]
+        v3_projections = {}
+        v3_projection_contexts = {}
+        if v3_plans:
+            request_fields = (
+                "episodeId", "referenceCapabilityProfile", "accountsByDifficulty", "mapSize",
+                "hubs", "pointZoneBindings", "recipeBindings", "serviceBindings", "planScreenIds", "screens",
+            )
+            batch = []
+            for plan in v3_plans:
+                # Deliberately extract only the closed ProjectionRequest; the envelope
+                # and metadata are checked independently by the v3 composer.
+                batch.append({field: plan[field] for field in request_fields if field in plan})
+            projected = fulfillment.project_batch(batch)
+            v3_projections = {row["episodeId"]: row for row in projected["projections"]}
+            v3_projection_contexts = {
+                request["episodeId"]: {"request": request, "projection": row}
+                for request, row in zip(batch, projected["projections"])
+            }
         episodes = []
         for plan in campaign["episodeBlueprints"]:
             selection = selected[plan["episodeId"]]
+            previous_selection = next(
+                (s for s in selected.values() if s["order"] == selection["order"] - 1),
+                None,
+            )
             next_selection = next(
                 (s for s in selected.values() if s["order"] == selection["order"] + 1),
                 None,
             )
-            episode = factory.build_dossier(
-                campaign,
-                selection,
-                plan,
-                profiles[selection["geographyId"]],
-                next_selection,
-                baseline,
+            geography_profile = profiles[selection["geographyId"]]
+            if "designProfile" in plan:
+                projection = v3_projections.get(plan.get("episodeId"))
+                if projection is None:
+                    raise ValueError(f"Missing typed projection result for {plan.get('episodeId')}")
+                episode = factory.build_fulfillment_dossier(
+                    campaign, selection, plan, projection, geography_profile,
+                    previous_selection, next_selection, baseline,
+                )
+            else:
+                episode = factory.build_dossier(
+                    campaign, selection, plan, geography_profile, next_selection, baseline,
+                )
+            failures = validator.audit_dossier(
+                episode, campaign, baseline,
+                projection_context=v3_projection_contexts.get(plan.get("episodeId")),
             )
-            failures = validator.audit_dossier(episode, campaign, baseline)
             if failures:
                 raise ValueError("\n".join(failures))
             if selection.get("contractStatus") == "approved-complete-dossier":
