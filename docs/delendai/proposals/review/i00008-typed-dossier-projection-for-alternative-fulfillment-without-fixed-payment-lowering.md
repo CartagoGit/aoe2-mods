@@ -12,6 +12,7 @@ last-transition-from: in-progress
 last-transition-at: 2026-10-25T13:24:20.246Z
 shipped-in:
   - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
+  - "6f06737db6dfd3ccc2251e375398c5c2201eb4cb"
 ---
 
 # i00008 — Typed dossier projection for alternative fulfillment without fixed-payment lowering
@@ -49,7 +50,7 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - shipped-in: `11fcf956f319`
 
 ### S2 — Reusable opt-in projection, validation and rendering
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `tools/design/fulfillment-dossier.mapper.ts`, `tools/design/fulfillment-dossier.script.ts`, `tools/design/fulfillment-dossier.helper.py`, `tools/design/episode_dossier.factory.py`, `tools/design/episode_dossier.validator.py`, `tools/design/episode_dossiers.script.py`, `tools/design/render.py`, `tools/design/test_design.py`, `tests/unit/fulfillment-dossier.test.ts`, `tsconfig.json`
 - **Gate**: e2e
@@ -57,9 +58,11 @@ The existing dossier factory derives budgets from fixed resource-transaction req
   - "Reuse capabilityProfileV3Schema and validateScenarioCapability. Keep exact authored recipes, identities, costs and lifecycle; reject unknown mappings/versions, drift between views, unsupported semantics or simultaneous fixed-payment lowering."
   - "Use artificial fixtures and adversarial tests for affordability, cost/reserve isolation, zones, outputs, terminal gates and truthful evidence. Verify all legacy dossier/wiki/map outputs unchanged."
   - "Run focused tests and bun run validate, then independent review and official publication. No native adapter, shared schema, historical content, ID or string-lock changes."
-- review-state: in_review
-- review-implementer: gpt-6-luna
 - shipped-in: `6f06737db6df`
+- review-state: done
+- review-implementer: gpt-6-luna
+- review-reviewer: gpt-6
+- review-log: approved by gpt-6 — verified at 6f06737db6df, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Independent source review of 9c20f205 integrated at6f06737; strict schema/semantic reuse, exact selected service views, retained binding re-projection, drift/u… (2) 15 mapper tests and Python bridge cases plus independent valid-boundary and after-funding probes; existing general reducer tests retained. Direct comparison ag… (3) Reviewer independent bun run validate exit0:157tests/13files,2134expectations; source report a311e43 integrated. Official product6f06737 passed installation/va… — Independent reviewer gpt-6 approves only integrated S2 infrastructure6f06737; implementer gpt-6-luna. Report docs/qa/fulfillment-dossier-projection/independent-review.md. 157tests passed independently; no native/historical/game approval.
 
 ### S3 — Design pipeline integration and handoff
 - **Status**: review
