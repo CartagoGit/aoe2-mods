@@ -13,6 +13,7 @@ last-transition-at: 2026-10-24T20:37:48.494Z
 shipped-in:
   - "06e688e87a0b3617ad8049b073b8f9f35e832b00"
   - "9d5e744b0b33a005e2e01b14a2215275acf6b35a"
+  - "3d955598cd163fe41356b4a8f38e415630549522"
 ---
 
 # f00001 — Piloto tecnico de rutas independientes y localizacion
@@ -62,7 +63,7 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - review-log: approved by gpt-6 — verified at 9d5e744b0b33, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed four source files and exact 23+13 key inventories across all 17 configured draft locales; EN/es-ES match architect inventory. Fictional narrators and … (2) Verified ordered routes and permanent distinct keys, prepare prerequisite and defeat-first single-terminal source; T02 has no route/progress mutation or prereq… (3) Both independent complete staging checks returned complete=true,pending=[],issues=[]. Final independent bun run validate passed142/142 tests2069expectations, d… — Independent review of gpt-6-luna implementation, final duration correction 6be2353, officially published at 9d5e744b. Both complete staging checks and independent final validate passed. All source acceptance criteria met; translations remain draft, native and engine evidence pending. Details in docs/qa/route-pilot/s2-source-bundle-independent-review.md.
 
 ### S3 — Materialización conjunta, IDs y glosario
-- **Status**: pending
+- **Status**: done
 - **DependsOn**: [S2]
 - **Files**: `staging/campaigns/route-pilot`, `staging/campaigns/route-successor`, `campaigns/route-pilot`, `campaigns/route-successor`, `config/string-ids.lock.json`, `config/glossary.json`
 - **Gate**: e2e
@@ -70,6 +71,10 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
   - "Reclamar todas las rutas del slice y promover ambos bundles completos en una misma entrega; ajustar asset.path al destino final y validar sus bytes/hashes."
   - "Ejecutar ids:allocate después de materializar y antes del commit; IDs previos inmutables, namespaces únicos, glosario completo por locale."
   - "bun run validate y export de ambos mods pasan; el commit incluye fuentes, escenarios, catálogos y lock, sin referencias pendientes."
+- review-state: done
+- review-implementer: gpt-6-luna
+- review-reviewer: gpt-6
+- review-log: approved by gpt-6 — verified at 3d955598cd16, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Both complete source bundles promoted together in70c3950; four JSON files byte-identical to accepted staging, retained frozen snapshots/receipts. Assets empty:… (2) Independent comparison:9previous IDs and retired unchanged;36new unique IDs equal23+13authored runtime keys. Allocation afterbothbundles;17complete draft catal… (3) Independent validate157/157tests2134expectations,3campaigns; test:export3variants2roundtrips; bothbinaryexports pass usingverifiedpinnedtoolchain. Source/ZIP h… — Independent S3 approval only; implementer gpt-6-luna reviewer gpt-6. Integrated3d955598 product independently validated and both binary exports reproduced. Receipt/report docs/qa/route-pilot/s3-joint-promotion-independent-review.md. No GAME VERIFIED, native conditional recap, historical authoring or translation approval. S4 remains pending.
 
 ### S4 — Verificación y dossier de entrega
 - **Status**: pending
