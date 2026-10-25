@@ -1063,5 +1063,155 @@
         "es-ES": "El guía que espera"
       }
     }
-  }
+  },
+  "presentationSource": {
+    "path": "docs/design/episode-plans/imperial-church/34-profile-ui-supplement.json",
+    "sha256": "5e35b496c3140045c580c1ba48db71af6015b50bb6651c0c2cb0347fd372528b"
+  },
+  "projectionPresentation": {
+    "planScreenIds": {
+      "preview": "preview-help",
+      "reserved": "plan-reserved",
+      "cancelled": "cancelled",
+      "started": "plan-committed",
+      "complete": "victory-fact"
+    },
+    "serviceBindings": [
+      {
+        "serviceId": "meal-service",
+        "goalScreenId": "meal-service-goal",
+        "completeScreenId": "meal-received"
+      },
+      {
+        "serviceId": "shelter-service",
+        "goalScreenId": "shelter-service-goal",
+        "completeScreenId": "shelter-received"
+      }
+    ],
+    "recipeBindings": [
+      {
+        "serviceId": "meal-service",
+        "recipeId": "meal-direct",
+        "workPointId": "meal-direct-source",
+        "receptionPointId": "meal-reception",
+        "title": {
+          "en": "Prepared Provisions",
+          "es-ES": "Provisiones preparadas"
+        },
+        "goalScreenId": "work-meal-direct"
+      },
+      {
+        "serviceId": "meal-service",
+        "recipeId": "meal-shared-hearth",
+        "workPointId": "hearth-worksite",
+        "receptionPointId": "meal-reception",
+        "title": {
+          "en": "At the Shared Hearth",
+          "es-ES": "Junto al fogón compartido"
+        },
+        "goalScreenId": "work-meal-shared-hearth"
+      },
+      {
+        "serviceId": "meal-service",
+        "recipeId": "meal-purchased",
+        "workPointId": "merchant-worksite",
+        "receptionPointId": "meal-reception",
+        "title": {
+          "en": "A Merchant's Consignment",
+          "es-ES": "La remesa del mercader"
+        },
+        "goalScreenId": "work-meal-purchased"
+      },
+      {
+        "serviceId": "shelter-service",
+        "recipeId": "shelter-materials",
+        "workPointId": "materials-source",
+        "receptionPointId": "materials-court",
+        "title": {
+          "en": "Build from Delivered Materials",
+          "es-ES": "Preparar con materiales entregados"
+        },
+        "goalScreenId": "work-shelter-materials"
+      },
+      {
+        "serviceId": "shelter-service",
+        "recipeId": "shelter-local-kit",
+        "workPointId": "kit-worksite",
+        "receptionPointId": "kit-court",
+        "title": {
+          "en": "Prepare a Local Kit",
+          "es-ES": "Preparar un equipo local"
+        },
+        "goalScreenId": "work-shelter-local-kit"
+      },
+      {
+        "serviceId": "shelter-service",
+        "recipeId": "shelter-rented",
+        "workPointId": "host-worksite",
+        "receptionPointId": "host-court",
+        "title": {
+          "en": "A Willing Host",
+          "es-ES": "Un anfitrión dispuesto"
+        },
+        "goalScreenId": "work-shelter-rented"
+      }
+    ]
+  },
+  "screenSources": [
+    "docs/design/episode-plans/imperial-church/34-constantinople-world-plan.json",
+    "docs/design/episode-plans/imperial-church/34-profile-ui-supplement.json"
+  ],
+  "combinedScreenOrder": [
+    "title",
+    "fact-intro",
+    "handover",
+    "personal-intro",
+    "main-goal",
+    "shared-attendance-goal",
+    "meal-service-goal",
+    "shelter-service-goal",
+    "preview-help",
+    "budget-help",
+    "unaffordable-plan",
+    "reservation-help",
+    "plan-reserved",
+    "plan-committed",
+    "cancelled",
+    "work-help",
+    "work-meal-direct",
+    "work-meal-shared-hearth",
+    "work-meal-purchased",
+    "work-shelter-materials",
+    "work-shelter-local-kit",
+    "work-shelter-rented",
+    "meal-received",
+    "shelter-received",
+    "final-presence-help",
+    "offer-neighbor-provisions",
+    "complete-neighbor-provisions",
+    "unavailable-neighbor-provisions",
+    "offer-voluntary-household-return",
+    "complete-voluntary-household-return",
+    "unavailable-voluntary-household-return",
+    "offer-source-comparison",
+    "complete-source-comparison",
+    "unavailable-source-comparison",
+    "offer-local-wayfinding",
+    "complete-local-wayfinding",
+    "unavailable-local-wayfinding",
+    "offer-slope-survey",
+    "complete-slope-survey",
+    "unavailable-slope-survey",
+    "offer-service-observation",
+    "complete-service-observation",
+    "unavailable-service-observation",
+    "offer-damaged-civilian-store",
+    "complete-damaged-civilian-store",
+    "unavailable-damaged-civilian-store",
+    "retrospective-source-note",
+    "main-defeat",
+    "victory-fact",
+    "victory-personal",
+    "continue-next"
+  ]
 }
