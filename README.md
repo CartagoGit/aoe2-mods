@@ -21,7 +21,7 @@ En Linux/macOS puede ser necesario usar `python3`. El adaptador usa `.venv` auto
 
 ## Estado y alcance
 
-BASE READY: infraestructura integrada mediante DelendAI, gate certificado y revisión formal independiente por GPT-6.1. i00001 cerrada; La especificación de f00001/S1 fue cerrada por el arquitecto y revisada independientemente; tras su aceptación formal, la primera materialización de MiniMax será f00001/S2. Ver auditoría y recuperar el estado vivo antes de trabajar.
+BASE READY: infraestructura integrada mediante DelendAI, gate certificado y revisiones independientes. i00001 está cerrada; d00002/S1 está `done`. f00001/S2 fue implementado por `gpt-6-luna`, revisado por GPT-6 e integrado en `9d5e744b`; la revisión formal aún no está reflejada como `done` en la consulta viva de DelendAI (f00001 está `in-progress`, S2 `review`). No iniciar S3 hasta que el estado oficial registre el veredicto final. El propietario autorizó a Luna a hacer trabajo mecánico del piloto durante la cuota agotada de MiniMax; no se cambió proveedor ni se compraron créditos. Recupera el estado vivo antes de actuar.
 
 Existe un fixture técnico de dos objetivos y dos traducciones de muestra. No hay campañas históricas completas ni 17 traducciones aprobadas. La exportación binaria pasa el round-trip de escenario y contenedor; la carga en AoE2 aún necesita evidencia. No se declara PRODUCTION READY.
 
@@ -31,9 +31,9 @@ Lee [plan](docs/production/plan.md), [arquitectura](docs/architecture/overview.m
 
 ## Catálogo preparado por el arquitecto
 
-El alcance vigente son [nueve odiseas y 278 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. La [planificación](docs/design/odyssey-production-plan.md) y d00002 siguen en curso. Hay treinta dossiers ampliados (órdenes 1–30) de *Embers of the Covenant* y treinta y tres de los treinta y cuatro seleccionados de *The Eagle and the Cross* (órdenes 1–32 y 34), con 2.594 pantallas bilingües y 391 objetivos secundarios; requieren revisión histórica independiente, terreno navegable y calibración en AoE2. Son borradores de diseño, pendientes de materialización y pruebas de juego; no desbloquean la autoría histórica de MiniMax.
+El alcance vigente son [nueve odiseas y 278 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. La [planificación](docs/design/odyssey-production-plan.md) y d00002 siguen en curso: 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas bilingües y 391 objetivos secundarios; siguen pendientes la revisión histórica, el terreno navegable, la calibración en AoE2 y la aprobación ampliada. No se autoriza autoría histórica por completar el piloto técnico.
 
-El [catálogo anterior](docs/design/README.md) conserva 39 contratos históricos, 1.496 pantallas EN/es-ES, 234 secundarios, nueve biblias de narrador y 26 entornos geográficos. La investigación incluye 14 referencias originales y [cuarenta y siete nuevos recursos locales](docs/research/odyssey-research/reference-manifest.json), con créditos, licencias y hashes. Las [asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) distinguen esa base de las odiseas pendientes. El trabajo en paralelo se asigna por [entrega preparada](docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md): fuentes en staging de episodios aprobados, con gates nativos y pruebas del motor antes de exportación/promoción.
+El [catálogo anterior](docs/design/README.md) conserva 39 contratos históricos, 1.496 pantallas EN/es-ES, 234 secundarios, nueve biblias de narrador y 26 perfiles geográficos. El manifiesto contiene 47 recursos locales, incluidos cuatro datos modernos del Hijaz; estos no reducen las 22 selecciones geográficas aún sin perfil. La investigación mantiene créditos, licencias y hashes. Las [asignaciones](docs/handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md) distinguen esa base de las odiseas pendientes. El trabajo paralelo se asigna por [entrega preparada](docs/handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md): fuentes en staging de episodios aprobados, con gates nativos y pruebas del motor antes de exportación/promoción.
 
 ```sh
 python3 tools/design/render.py
