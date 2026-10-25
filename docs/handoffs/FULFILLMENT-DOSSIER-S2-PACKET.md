@@ -20,7 +20,7 @@ Review and official publication are required before S2 done. The implementer nev
 
 ## Closed blueprint envelope and composition
 
-The internal opt-in blueprint has exactly `designProfile`, the eleven fields of `ProjectionRequest` from the ADR, and `dossierMetadata`. The discriminator is exactly `alternative-fulfillment-v3`. The profile occurs once at `blueprint.referenceCapabilityProfile`; there is no nested alternative request, path-only profile, inferred version or legacy `authored` fallback. `episodeId` must equal the selected episode ID. Extract only those eleven request fields for the typed batch bridge. Metadata is never passed into or added to the strict runtime profile.
+The internal opt-in blueprint has exactly `designProfile`, the ten fields of `ProjectionRequest` from the ADR, and `dossierMetadata`. The discriminator is exactly `alternative-fulfillment-v3`. The profile occurs once at `blueprint.referenceCapabilityProfile`; there is no nested alternative request, path-only profile, inferred version or legacy `authored` fallback. `episodeId` must equal the selected episode ID. Extract only those ten request fields for the typed batch bridge. Metadata is never passed into or added to the strict runtime profile.
 
 `dossierMetadata` has the following required fields and no unknown fields. These are authored documentary inputs, not new gameplay operations:
 
