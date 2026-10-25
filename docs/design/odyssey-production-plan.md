@@ -84,15 +84,17 @@ Las tres estrategias declaran los secundarios que aprovechan y su coste de oport
 
 ## Estado actual y puertas pendientes
 
-A 18 de octubre de 2026, la selección contiene **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. Hay **63 dossiers redactados**, **2.594 pantallas EN/es-ES** y **391 secundarios**; quedan **215 selecciones sin dossier** y no hay dossiers ampliados aprobados. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
+A 18 de octubre de 2026, la selección contenía **278 episodios** y **305 slices de autoría**: 278 individuales y 27 de conformidad, metadatos y promoción. En ese corte había **63 dossiers redactados**, **2.594 pantallas EN/es-ES** y **391 secundarios**; quedaban **215 selecciones sin dossier**. Este es un registro histórico; la actualización vigente aparece más abajo. El catálogo anterior conserva sus 39 identidades, 1.496 pantallas y claves de progreso.
 
 | Odisea | Dossiers / selección | Órdenes con dossier | Pendiente del arquitecto |
 |---|---:|---|---|
 | Embers of the Covenant | 30 / 30 | 1–30 | Revisión histórica/editorial, relieve y huellas, capacidades nativas, jugabilidad y dificultad |
-| The Eagle and the Cross | 33 / 34 | 1–32, 34 | Dossier del orden 33; los mismos gates históricos, geográficos, nativos y de juego |
+| The Eagle and the Cross | 34 / 34 | 1–34 | Revisión histórica/editorial, geografía, capacidades nativas, jugabilidad y dificultad |
 | Otras siete odiseas | 0 / 214 | Ninguno | Interpretación de fuentes recopiladas y diseño completo por episodio |
 
-Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 37 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
+La tabla refleja el estado actual: **64 dossiers**, **2.645 pantallas EN/es-ES**, **398 secundarios** y **214 selecciones sin dossier**. No implica aprobación ampliada.
+
+Las nueve biblias de narrador fijan biografía ficticia, cinco actos y acceso al conocimiento por episodio en [su fuente canónica](voices/odyssey-narrators.json). Los 49 recursos locales adicionales del [manifiesto](../research/odyssey-research/reference-manifest.json) tienen procedencia; ninguno acredita por sí solo una escena histórica ni arte de producción. Las dos referencias DSM de Jerusalén son superficie moderna para investigación regional, no terreno de 70 CE. La referencia Bernard Nolan continúa sin escenarios descargados o licencia de reutilización acreditada.
 
 ## Cobertura imperial y trabajo designado
 
@@ -108,11 +110,11 @@ Los IDs nuevos 30/31/32/33/34 se presentan en los órdenes 28/29/30/31/33, slice
 
 *The Burden of the Purple*, orden 31/S36, prepara tres puestos con tres remesas distintas y parejas elegidas de un mismo grupo de ocho originales. Requiere seis personas distintas repartidas2/2/2 y cada remesa en su puesto en una única observación de checkpoint. El plazo visible es ficción logística:20/16/12minutos, aviso a3; después termina y la salida causal queda sin plazo. El final reúne seis originales y las tres remesas presentes en el despacho nororiental. Total360F260W, siete secundarios y tres enfoques combinables. Nombramiento imperial, controversias y fechas transmitidas quedan separados del trabajo local. La [auditoría de marco](../research/odyssey-research/imperial33-map-control-audit.json) comprueba también el cuadrado completo, sin acreditar terreno antiguo ni navegación. Revisión técnica final y calibración pendientes.
 
-El siguiente dossier pendiente son las transferencias urbanas de noviembre380. Sirmio379 tiene ahora un borrador completo de diseño (día de acceso sin resolver). Sirmio tiene perfil regional y dos fotografías arqueológicas modernas: no identifican el lugar de proclamación ni la hidrología de379. Ninguna selección sustituye un dossier completo.
+El dossier de las transferencias urbanas de noviembre380 ya está redactado como ID 34, orden 33. Conserva perfil de referencia y 51 pantallas en orden combinado; sus coordenadas, fuentes modernas y suplemento UI son auxiliares y no establecen mapa jugado ni ubicación arqueológica. Sirmio379 tiene borrador completo de diseño (día de acceso sin resolver). Su perfil regional y fotografías arqueológicas modernas no identifican el lugar de proclamación ni la hidrología de379.
 
 ## Jugabilidad cívica y dificultad
 
-La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanical-audit.json) identifica 54 candidatos a riesgo entre 63 dossiers: no tienen hostiles/plazo estructurados y el stock accesible es igual en las tres dificultades. Es un filtro estático, no una prueba de falta de interés. Los ocho con oposición finita y el nuevo plazo de preparación tampoco tienen balance jugado aprobado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
+La [auditoría mecánica legacy](../research/odyssey-research/civic-difficulty-mechanical-audit.json) conserva 54 candidatos a riesgo entre sus 63 filas; no es un recálculo del dossier 64. El filtro identifica registros sin hostiles/plazo estructurados y con el mismo stock accesible entre dificultades. No prueba falta de interés ni balance jugado. Se aplica el [contrato de aceptación cívica](civic-playability-acceptance.md): menos trabajadores o más minutos no bastan para aprobar dificultad. El arquitecto conserva los cambios de economía, distribución, objetivos y ritmo; MiniMax no resuelve esas decisiones.
 
 ## Capacidades y continuidad que siguen gobernando la entrega
 
@@ -125,7 +127,7 @@ La [auditoría mecánica](../research/odyssey-research/civic-difficulty-mechanic
 El [registro histórico](../qa/campaign-design/odyssey-design-progress-history.md) conserva los cortes anteriores y sus cautelas; sus números no son el estado actual. d00002/S1–S11 continúa abierto según DelendAI. El traspaso histórico a MiniMax sigue bloqueado hasta cerrar cada requisito que le corresponda.
 
 
-El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) conserva el orden 33 sin dossier completo hasta resolver un problema jugable propio. Hay 63 borradores completos de diseño y 215 selecciones sin dossier, ninguna aprobación ampliada de juego.
+El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) acompaña al dossier ID 34, orden 33. El paquete de referencia está redactado, sin aprobación histórica o nativa ni prueba de juego. El catálogo cuenta 64 borradores y 214 selecciones sin dossier.
 
 
 ## Coherencia de actos — 23 de octubre de 2026
@@ -152,7 +154,7 @@ d00002/S1 está `done` con aprobación formal de GPT-6.1 integrada en `b9cff83e7
 
 ## Corte histórico de Constantinopla y cola — 24 de octubre de 2026
 
-El [plan de mundo auxiliar de The Doors of New Rome](episode-plans/imperial-church/34-constantinople-world-plan.md) especifica 45 pantallas EN/es-ES y siete objetivos secundarios; la [revisión independiente](../research/odyssey-research/constantinople380-world-plan-luna-review.md) comprobó su consistencia estática. El plan permanece fuera del total de dossiers, pantallas y secundarios: no es el dossier 64 y no altera 63/2.594/391. No acredita mapa antiguo, ejecución nativa, dificultad jugada o aprobación histórica. El [manifiesto](../research/odyssey-research/reference-manifest.json) cuenta actualmente 39 recursos; las menciones anteriores a 37 describen el corte fechado del 18 de octubre.
+El [plan de mundo auxiliar de The Doors of New Rome](episode-plans/imperial-church/34-constantinople-world-plan.md) especifica 45 pantallas fuente y siete secundarios; el [suplemento UI](episode-plans/imperial-church/34-profile-ui-supplement.json) agrega seis para un total dossier de 51 pantallas y siete secundarios en ID 34, orden 33. La [revisión independiente del plan](../research/odyssey-research/constantinople380-world-plan-luna-review.md) comprobó consistencia estática; no acredita mapa antiguo, ejecución nativa, dificultad jugada o aprobación histórica. El episodio forma parte de los totales vigentes 64/2.645/398. El [manifiesto](../research/odyssey-research/reference-manifest.json) contiene 49 recursos.
 
 La especificación de f00001/S1 y su [matriz de aceptación](../wiki/route-pilot/03-acceptance-matrix.md) fueron aprobadas formalmente e integradas; en este corte f00001/S2 seguía pendiente por cuota. El intento de iniciar MiniMax M3.1 Flash por OpenCode fue rechazado antes de trabajo por HTTP429/2056 (Token Plan); la cuota semanal general de MMX OAuth informó 0 % y la sesión no produjo ediciones. La secuencia puede avanzar por slices aceptados sin esperar a las nueve campañas, pero mantiene los gates específicos y no desbloquea propuestas automáticamente.
 
@@ -160,8 +162,8 @@ La especificación de f00001/S1 y su [matriz de aceptación](../wiki/route-pilot
 
 Consulta el [reparto de trabajo](../handoffs/LLM-WORK-ALLOCATION.md) y la [cola de paquetes](../handoffs/MINIMAX-M3.1-PARALLEL-QUEUE.md) para las asignaciones vigentes.
 
-La consulta viva de DelendAI registra d00002/S1 `done` y S2–S11 `pending`. El estado editorial suma 278 selecciones, 63 dossiers, 215 selecciones sin dossier, 2.594 pantallas y 391 secundarios. La auditoría mecánica identifica 54 candidatos estáticos de riesgo cívico; no son defectos demostrados ni balance jugado. Hay 26 perfiles geográficos y 47 recursos de investigación; ocho recursos modernos del Hijaz (cuatro recortes DSM y cuatro vistas) no resuelven las 22 identidades geográficas faltantes, que afectan a 25 selecciones.
+El estado recuperado de DelendAI registra d00002/S1 `done` y S2–S11 `pending`. El estado editorial suma 278 selecciones, 64 dossiers, 214 selecciones sin dossier, 2.645 pantallas y 398 secundarios. La auditoría mecánica legacy conserva 54 candidatos estáticos de riesgo en 63 filas; no son defectos demostrados ni balance jugado. Hay 26 perfiles geográficos y 49 recursos de investigación; los ocho recursos modernos del Hiyaz y dos DSM de Jerusalén no resuelven la nota de cobertura de 22 identidades faltantes que afectan a 25 selecciones.
 
 f00001/S2 fue implementado mecánicamente por `gpt-6-luna`, revisado por GPT-6 e integrado en `9d5e744b`. El veredicto formal integrado en `137fdd73` registra S2 `done` con revisión GPT-6, 3/3. El propietario asignó explícitamente a Luna este trabajo mecánico; no hubo compra de créditos ni generación pagada de medios. La integración no acredita ejecución nativa ni verificación en AoE2.
 
-i00008/S1 está `done` tras revisión independiente de Luna (2/2); su matriz contiene 34 casos. S2 y S3 siguen `pending` para implementación de código y el mapper no está implementado. La aceptación de S1 no acredita una herramienta reusable ni desbloquea la autoría histórica.
+i00008/S1 está `done` tras revisión independiente de Luna (2/2); su matriz contiene 34 casos prospectivos. S2 está `done` con producto `6f06737` y veredicto `e08a5cb`; S3 está `done` con producto `c5533f7` y revisión integrada `3746e076`. S3 habilita el despacho cívico opt-in y conserva las 63 filas del informe legacy; el mapper nativo sigue sin implementarse. Estas aceptaciones no acreditan herramienta de tiempos v3 ni desbloquean la autoría histórica.
