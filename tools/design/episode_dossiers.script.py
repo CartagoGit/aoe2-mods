@@ -360,8 +360,13 @@ def diagram(episode, geographic_layers):
             "Dashed blue: schematic regional water",
             "Native footprints and navigation pending",
         ]
+    rendered_legend_entries = (
+        [line for entry in legend_entries for line in textwrap.wrap(entry, width=42)]
+        if v3_map
+        else legend_entries
+    )
     legend_y = max(420, 175 + len(authored_hubs) * 50)
-    last_legend_y = legend_y + len(legend_entries) * 24
+    last_legend_y = legend_y + len(rendered_legend_entries) * 24
     canvas_height = max(850, int(max(last_hub_label_y, last_legend_y, 780) + 28))
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 {canvas_height}" role="img" aria-label="{html.escape(episode["title"]["en"])} geographic districts">',
@@ -408,12 +413,12 @@ def diagram(episode, geographic_layers):
         ]
         for row, label in enumerate(textwrap.wrap(f"{i}: {h['name']['en']}", width=42)):
             lines.append(f'<text x="730" y="{140 + i * 50 + row * 14}" font-family="sans-serif" font-size="12">{html.escape(label)}</text>')
-    for i, text in enumerate(legend_entries):
+    for i, text in enumerate(rendered_legend_entries):
         lines.append(
             f'<text x="730" y="{legend_y + i * 24}" font-family="sans-serif" font-size="12">{text}</text>'
         )
     lines.append(
-        f'<text x="730" y="{legend_y + len(legend_entries) * 24}" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
+        f'<text x="730" y="{legend_y + len(rendered_legend_entries) * 24}" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>'
     )
     lines += [
         f'<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox {episode["mapPlan"]["bbox"]}; cosine-corrected longitude; approximate districts</text>',
