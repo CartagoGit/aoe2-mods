@@ -1,0 +1,1067 @@
+{
+  "schemaVersion": 1,
+  "classification": "candidate reference-profile bindings; design-only; not a complete dossier, executable campaign, or native map",
+  "author": "gpt-6-luna",
+  "review": "draft",
+  "profilePath": "docs/design/episode-plans/imperial-church/34-reference-capability-profile.json",
+  "sourcePlan": {
+    "path": "docs/design/episode-plans/imperial-church/34-constantinople-world-plan.json",
+    "sha256": "9e93ba37d40f9fa81c5a7722e4a04aa307e59c7442f5bd2c51d779747ed4c178"
+  },
+  "consultedDecisions": [
+    {
+      "path": "docs/design/episode-plans/imperial-church/34-constantinople-world-plan.json",
+      "sha256": "9e93ba37d40f9fa81c5a7722e4a04aa307e59c7442f5bd2c51d779747ed4c178"
+    },
+    {
+      "path": "docs/design/episode-plans/imperial-church/34-reference-profile-authoring-decision.md",
+      "sha256": "437295d6559f67958c3d0d996d23c62e74eca95f59da8e26446c46d24cb9cd5c"
+    },
+    {
+      "path": "docs/architecture/fulfillment-dossier-projection.md",
+      "sha256": "adba167d61d5e13d4ab1e4a2e48a970cc4595a82cbaa36d69abdd8b97f4ff3da"
+    },
+    {
+      "path": "docs/architecture/alternative-fulfillment.md",
+      "sha256": "96e4fe0f1c3a978a74f33b7f56e4fd10f07b44de124fab3e62d0d24c73c16a3c"
+    },
+    {
+      "path": "docs/design/episode-plans/imperial-church/34-care-allocation.study.md",
+      "sha256": "a8b92b86cd33db3339adb9e90d066a769810f116ae6efa01b75b0690b0d5d4cb"
+    },
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-plan.json",
+      "sha256": "fc990f2f8ee66ad4828568d1a53eac3b6cc324f0a230c4687a6e874e66967b34"
+    }
+  ],
+  "counts": {
+    "hubs": 19,
+    "mainZones": 10,
+    "recipes": 6,
+    "secondaryObjectives": 7
+  },
+  "mapFrame": {
+    "sizeTiles": 400,
+    "bbox": [
+      28.941,
+      41.009,
+      28.986,
+      41.036
+    ],
+    "bboxPurpose": "activity frame inside the established Constantinople regional profile; not whole ancient city bounds",
+    "projection": "existing cosine-corrected square padding, tools/map/geographic_frame.helper.py; full padded extent used for controls",
+    "geometryStatus": "authored proposal; no ancient map, native footprint, or pathfinding certification"
+  },
+  "hubs": [
+    {
+      "id": "starting-court",
+      "centre": [
+        265.21,
+        283.45
+      ]
+    },
+    {
+      "id": "meal-reception",
+      "centre": [
+        254.92,
+        280.3
+      ]
+    },
+    {
+      "id": "materials-court",
+      "centre": [
+        136.17,
+        227.83
+      ]
+    },
+    {
+      "id": "kit-court",
+      "centre": [
+        163.88,
+        260.36
+      ]
+    },
+    {
+      "id": "host-court",
+      "centre": [
+        236.71,
+        325.42
+      ]
+    },
+    {
+      "id": "meal-direct-source",
+      "centre": [
+        322.21,
+        330.67
+      ]
+    },
+    {
+      "id": "hearth-worksite",
+      "centre": [
+        195.54,
+        276.1
+      ]
+    },
+    {
+      "id": "merchant-worksite",
+      "centre": [
+        83.12,
+        217.34
+      ]
+    },
+    {
+      "id": "materials-source",
+      "centre": [
+        72.83,
+        248.82
+      ]
+    },
+    {
+      "id": "kit-worksite",
+      "centre": [
+        239.08,
+        297.09
+      ]
+    },
+    {
+      "id": "host-worksite",
+      "centre": [
+        306.38,
+        299.19
+      ]
+    },
+    {
+      "id": "western-junction",
+      "centre": [
+        148.04,
+        272.95
+      ]
+    },
+    {
+      "id": "north-viewpoint",
+      "centre": [
+        116.38,
+        209.99
+      ]
+    },
+    {
+      "id": "south-viewpoint",
+      "centre": [
+        215.33,
+        341.16
+      ]
+    },
+    {
+      "id": "north-care-yard",
+      "centre": [
+        64.92,
+        162.77
+      ]
+    },
+    {
+      "id": "north-store",
+      "centre": [
+        92.62,
+        147.03
+      ]
+    },
+    {
+      "id": "north-reader",
+      "centre": [
+        96.58,
+        120.8
+      ]
+    },
+    {
+      "id": "north-reception",
+      "centre": [
+        124.29,
+        173.27
+      ]
+    },
+    {
+      "id": "western-guide",
+      "centre": [
+        41.17,
+        194.25
+      ]
+    }
+  ],
+  "pointZoneBindings": [
+    {
+      "pointId": "meal-direct-source",
+      "tile": [
+        322.21,
+        330.67
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.meal-direct-source.zone",
+      "hubId": "meal-direct-source",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "meal-reception",
+      "tile": [
+        254.92,
+        280.3
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+      "hubId": "meal-reception",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "hearth-worksite",
+      "tile": [
+        195.54,
+        276.1
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.hearth-worksite.zone",
+      "hubId": "hearth-worksite",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "merchant-worksite",
+      "tile": [
+        83.12,
+        217.34
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.merchant-worksite.zone",
+      "hubId": "merchant-worksite",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "materials-source",
+      "tile": [
+        72.83,
+        248.82
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.materials-source.zone",
+      "hubId": "materials-source",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "materials-court",
+      "tile": [
+        136.17,
+        227.83
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.materials-court.zone",
+      "hubId": "materials-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "kit-worksite",
+      "tile": [
+        239.08,
+        297.09
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.kit-worksite.zone",
+      "hubId": "kit-worksite",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "kit-court",
+      "tile": [
+        163.88,
+        260.36
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.kit-court.zone",
+      "hubId": "kit-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "host-worksite",
+      "tile": [
+        306.38,
+        299.19
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.host-worksite.zone",
+      "hubId": "host-worksite",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "host-court",
+      "tile": [
+        236.71,
+        325.42
+      ],
+      "zoneId": "imperial-church.34-church-transfer-constantinople.host-court.zone",
+      "hubId": "host-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    }
+  ],
+  "recipePresentation": {
+    "meal-direct": {
+      "serviceId": "meal-service",
+      "label": {
+        "en": "Prepared Provisions",
+        "es-ES": "Provisiones preparadas"
+      },
+      "workPointId": "meal-direct-source",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.meal-direct-source.zone",
+      "receptionPointId": "meal-reception",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "host-worksite",
+        "meal-direct-source"
+      ],
+      "outputDeliveryPointIds": [
+        "meal-direct-source",
+        "host-worksite",
+        "meal-reception"
+      ],
+      "plannedCentrelineTiles": 169.366,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    },
+    "meal-shared-hearth": {
+      "serviceId": "meal-service",
+      "label": {
+        "en": "At the Shared Hearth",
+        "es-ES": "Junto al fogón compartido"
+      },
+      "workPointId": "hearth-worksite",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.hearth-worksite.zone",
+      "receptionPointId": "meal-reception",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "hearth-worksite"
+      ],
+      "outputDeliveryPointIds": [
+        "hearth-worksite",
+        "starting-court",
+        "meal-reception"
+      ],
+      "plannedCentrelineTiles": 150.875,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    },
+    "meal-purchased": {
+      "serviceId": "meal-service",
+      "label": {
+        "en": "A Merchant's Consignment",
+        "es-ES": "La remesa del mercader"
+      },
+      "workPointId": "merchant-worksite",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.merchant-worksite.zone",
+      "receptionPointId": "meal-reception",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite"
+      ],
+      "outputDeliveryPointIds": [
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite",
+        "starting-court",
+        "meal-reception"
+      ],
+      "plannedCentrelineTiles": 470.294,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    },
+    "shelter-materials": {
+      "serviceId": "shelter-service",
+      "label": {
+        "en": "Build from Delivered Materials",
+        "es-ES": "Preparar con materiales entregados"
+      },
+      "workPointId": "materials-source",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.materials-source.zone",
+      "receptionPointId": "materials-court",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.materials-court.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source"
+      ],
+      "outputDeliveryPointIds": [
+        "materials-source",
+        "merchant-worksite",
+        "materials-court"
+      ],
+      "plannedCentrelineTiles": 283.843,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    },
+    "shelter-local-kit": {
+      "serviceId": "shelter-service",
+      "label": {
+        "en": "Prepare a Local Kit",
+        "es-ES": "Preparar un equipo local"
+      },
+      "workPointId": "kit-worksite",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.kit-worksite.zone",
+      "receptionPointId": "kit-court",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.kit-court.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "kit-worksite"
+      ],
+      "outputDeliveryPointIds": [
+        "kit-worksite",
+        "hearth-worksite",
+        "kit-court"
+      ],
+      "plannedCentrelineTiles": 113.168,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    },
+    "shelter-rented": {
+      "serviceId": "shelter-service",
+      "label": {
+        "en": "A Willing Host",
+        "es-ES": "Un anfitrión dispuesto"
+      },
+      "workPointId": "host-worksite",
+      "workZoneId": "imperial-church.34-church-transfer-constantinople.host-worksite.zone",
+      "receptionPointId": "host-court",
+      "receptionZoneId": "imperial-church.34-church-transfer-constantinople.host-court.zone",
+      "workerApproachPointIds": [
+        "starting-court",
+        "host-worksite"
+      ],
+      "outputDeliveryPointIds": [
+        "host-worksite",
+        "starting-court",
+        "host-court"
+      ],
+      "plannedCentrelineTiles": 138.884,
+      "workPolicy": "actual selected worker at own work zone after irreversible commitment; selected recipe alone enables its original output; arrival/payment alone cannot stand in for work",
+      "deliveryPolicy": "selected output physically arrives at its own receiving zone; same original recipients alive in that zone at final evaluation; no clone, wrong-recipe token, default court or historical custody flag"
+    }
+  },
+  "optionalPresentation": {
+    "side-1": {
+      "slotId": "neighbor-provisions",
+      "routePointIds": [
+        "north-care-yard",
+        "north-store",
+        "north-reader",
+        "north-reception"
+      ],
+      "centrelineLengthTiles": 117.724,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-2": {
+      "slotId": "voluntary-household-return",
+      "routePointIds": [
+        "north-care-yard",
+        "merchant-worksite",
+        "materials-court"
+      ],
+      "centrelineLengthTiles": 111.602,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-3": {
+      "slotId": "source-comparison",
+      "routePointIds": [
+        "north-reader",
+        "north-store",
+        "north-care-yard",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite"
+      ],
+      "centrelineLengthTiles": 275.621,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-4": {
+      "slotId": "local-wayfinding",
+      "routePointIds": [
+        "western-guide",
+        "materials-source",
+        "western-junction"
+      ],
+      "centrelineLengthTiles": 142.075,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-5": {
+      "slotId": "slope-survey",
+      "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
+        "materials-court",
+        "north-viewpoint",
+        "materials-court",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite",
+        "starting-court",
+        "host-court",
+        "south-viewpoint"
+      ],
+      "centrelineLengthTiles": 698.256,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-6": {
+      "slotId": "service-observation",
+      "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
+        "materials-court",
+        "merchant-worksite",
+        "materials-source",
+        "western-junction",
+        "hearth-worksite",
+        "starting-court",
+        "host-court"
+      ],
+      "centrelineLengthTiles": 618.419,
+      "interpretation": "authored access/observation sequence; two recipients/copies remain separate; no duration or actual terrain proof"
+    },
+    "side-7": {
+      "slotId": "damaged-civilian-store",
+      "routePointIds": [
+        "starting-court",
+        "hearth-worksite",
+        "western-junction",
+        "materials-source",
+        "merchant-worksite",
+        "north-care-yard",
+        "north-store"
+      ],
+      "centrelineLengthTiles": 319.151,
+      "interpretation": "route for inspecting the existing store only; accepted atomic repair does not acquire an extra worker-presence or travel prerequisite here"
+    }
+  },
+  "accountInputs": {
+    "operatingStockByDifficulty": {
+      "easy": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "standard": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "hard": {
+        "food": 300,
+        "wood": 220,
+        "gold": 120,
+        "stone": 0
+      }
+    },
+    "protectedRecovery": {
+      "food": 0,
+      "wood": 0,
+      "gold": 0,
+      "stone": 0
+    },
+    "optionalReserve": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "meaning": "Reference input accounts only; operating stock is not a native gatherable bank or a measured game budget."
+  },
+  "screenInventoryBoundary": {
+    "sourceStoryboardCount": 45,
+    "sourceStatus": "45 original EN/es-ES screens with authored UI names and captions from the existing factory; independent editorial/translation review and native presentation pending. Duration is an estimate, no audio generated and no string IDs allocated.",
+    "sharedAttendanceText": {
+      "en": "Bring the meal recipient to the receiving court.",
+      "es-ES": "Lleva al destinatario de la comida al patio receptor."
+    },
+    "note": "The prior 45-screen storyboard is auxiliary source material; this profile does not claim a complete final dossier screen inventory or allocated string IDs."
+  },
+  "nativeBoundary": {
+    "nativeStatus": "pending",
+    "gameEvidence": "No game execution or gameplay observation is included.",
+    "notImplementedHere": [
+      "native UI/input",
+      "output generation in AoE2",
+      "physical output carrying and observation",
+      "terrain/pathfinding",
+      "game balance and gameplay review"
+    ]
+  },
+  "hubGeography": {
+    "starting-court": {
+      "id": "starting-court",
+      "lonLat": [
+        28.9718,
+        41.0145
+      ],
+      "tile": [
+        265.21,
+        283.45
+      ],
+      "nearestCropPixel": [
+        186,
+        164
+      ],
+      "modernDsmMetres": 33.819698333740234,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Clerk's Courtyard",
+        "es-ES": "El patio del escribiente"
+      }
+    },
+    "meal-reception": {
+      "id": "meal-reception",
+      "lonLat": [
+        28.9705,
+        41.0148
+      ],
+      "tile": [
+        254.92,
+        280.3
+      ],
+      "nearestCropPixel": [
+        182,
+        163
+      ],
+      "modernDsmMetres": 23.93682861328125,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Neighbors' Table",
+        "es-ES": "La mesa de los vecinos"
+      }
+    },
+    "materials-court": {
+      "id": "materials-court",
+      "lonLat": [
+        28.9555,
+        41.0198
+      ],
+      "tile": [
+        136.17,
+        227.83
+      ],
+      "nearestCropPixel": [
+        128,
+        145
+      ],
+      "modernDsmMetres": 45.7375602722168,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Western Shelter Yard",
+        "es-ES": "El patio de refugio occidental"
+      }
+    },
+    "kit-court": {
+      "id": "kit-court",
+      "lonLat": [
+        28.959,
+        41.0167
+      ],
+      "tile": [
+        163.88,
+        260.36
+      ],
+      "nearestCropPixel": [
+        140,
+        156
+      ],
+      "modernDsmMetres": 32.46766662597656,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Interior Shelter Yard",
+        "es-ES": "El patio de refugio interior"
+      }
+    },
+    "host-court": {
+      "id": "host-court",
+      "lonLat": [
+        28.9682,
+        41.0105
+      ],
+      "tile": [
+        236.71,
+        325.42
+      ],
+      "nearestCropPixel": [
+        174,
+        178
+      ],
+      "modernDsmMetres": 52.55756759643555,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Southern Host's Courtyard",
+        "es-ES": "El patio del anfitrión del sur"
+      }
+    },
+    "meal-direct-source": {
+      "id": "meal-direct-source",
+      "lonLat": [
+        28.979,
+        41.01
+      ],
+      "tile": [
+        322.21,
+        330.67
+      ],
+      "nearestCropPixel": [
+        212,
+        180
+      ],
+      "modernDsmMetres": 28.03335952758789,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Prepared Consignment",
+        "es-ES": "La remesa preparada"
+      }
+    },
+    "hearth-worksite": {
+      "id": "hearth-worksite",
+      "lonLat": [
+        28.963,
+        41.0152
+      ],
+      "tile": [
+        195.54,
+        276.1
+      ],
+      "nearestCropPixel": [
+        155,
+        161
+      ],
+      "modernDsmMetres": 60.81117630004883,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Shared Hearth",
+        "es-ES": "El fogón compartido"
+      }
+    },
+    "merchant-worksite": {
+      "id": "merchant-worksite",
+      "lonLat": [
+        28.9488,
+        41.0208
+      ],
+      "tile": [
+        83.12,
+        217.34
+      ],
+      "nearestCropPixel": [
+        104,
+        141
+      ],
+      "modernDsmMetres": 68.17587280273438,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Western Merchant",
+        "es-ES": "El mercader occidental"
+      }
+    },
+    "materials-source": {
+      "id": "materials-source",
+      "lonLat": [
+        28.9475,
+        41.0178
+      ],
+      "tile": [
+        72.83,
+        248.82
+      ],
+      "nearestCropPixel": [
+        99,
+        152
+      ],
+      "modernDsmMetres": 51.34332275390625,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Timber Yard",
+        "es-ES": "El depósito de madera"
+      }
+    },
+    "kit-worksite": {
+      "id": "kit-worksite",
+      "lonLat": [
+        28.9685,
+        41.0132
+      ],
+      "tile": [
+        239.08,
+        297.09
+      ],
+      "nearestCropPixel": [
+        175,
+        168
+      ],
+      "modernDsmMetres": 42.009490966796875,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Local Workshop",
+        "es-ES": "El taller local"
+      }
+    },
+    "host-worksite": {
+      "id": "host-worksite",
+      "lonLat": [
+        28.977,
+        41.013
+      ],
+      "tile": [
+        306.38,
+        299.19
+      ],
+      "nearestCropPixel": [
+        205,
+        169
+      ],
+      "modernDsmMetres": 24.360506057739258,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Host's Meeting Place",
+        "es-ES": "El lugar de encuentro con el anfitrión"
+      }
+    },
+    "western-junction": {
+      "id": "western-junction",
+      "lonLat": [
+        28.957,
+        41.0155
+      ],
+      "tile": [
+        148.04,
+        272.95
+      ],
+      "nearestCropPixel": [
+        133,
+        160
+      ],
+      "modernDsmMetres": 41.24913787841797,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Western Turn",
+        "es-ES": "El desvío occidental"
+      }
+    },
+    "north-viewpoint": {
+      "id": "north-viewpoint",
+      "lonLat": [
+        28.953,
+        41.0215
+      ],
+      "tile": [
+        116.38,
+        209.99
+      ],
+      "nearestCropPixel": [
+        119,
+        139
+      ],
+      "modernDsmMetres": 51.80297088623047,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Upper Viewpoint",
+        "es-ES": "El mirador alto"
+      }
+    },
+    "south-viewpoint": {
+      "id": "south-viewpoint",
+      "lonLat": [
+        28.9655,
+        41.009
+      ],
+      "tile": [
+        215.33,
+        341.16
+      ],
+      "nearestCropPixel": [
+        164,
+        184
+      ],
+      "modernDsmMetres": 61.49425506591797,
+      "classification": "fictional activity-site proposal within real peninsula; no excavated address",
+      "modernHeightUse": "modern surface sample only; buildings/vegetation possible; not year-380 ground or AoE elevation",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Southern Viewpoint",
+        "es-ES": "El mirador sur"
+      }
+    },
+    "north-care-yard": {
+      "id": "north-care-yard",
+      "lonLat": [
+        28.9465,
+        41.026
+      ],
+      "tile": [
+        64.92,
+        162.77
+      ],
+      "nearestCropPixel": [
+        95,
+        122
+      ],
+      "modernDsmMetres": 73.94901275634766,
+      "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+      "modernHeightUse": "modern surface sample only; not bare earth or year380",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Northern Supply Yard",
+        "es-ES": "El patio de suministros del norte"
+      }
+    },
+    "north-store": {
+      "id": "north-store",
+      "lonLat": [
+        28.95,
+        41.0275
+      ],
+      "tile": [
+        92.62,
+        147.03
+      ],
+      "nearestCropPixel": [
+        108,
+        117
+      ],
+      "modernDsmMetres": 63.54361343383789,
+      "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+      "modernHeightUse": "modern surface sample only; not bare earth or year380",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Damaged Store",
+        "es-ES": "El almacén dañado"
+      }
+    },
+    "north-reader": {
+      "id": "north-reader",
+      "lonLat": [
+        28.9505,
+        41.03
+      ],
+      "tile": [
+        96.58,
+        120.8
+      ],
+      "nearestCropPixel": [
+        110,
+        108
+      ],
+      "modernDsmMetres": 16.28090476989746,
+      "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+      "modernHeightUse": "modern surface sample only; not bare earth or year380",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Reader's Shelter",
+        "es-ES": "El refugio del lector"
+      }
+    },
+    "north-reception": {
+      "id": "north-reception",
+      "lonLat": [
+        28.954,
+        41.025
+      ],
+      "tile": [
+        124.29,
+        173.27
+      ],
+      "nearestCropPixel": [
+        122,
+        126
+      ],
+      "modernDsmMetres": 29.807132720947266,
+      "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+      "modernHeightUse": "modern surface sample only; not bare earth or year380",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Northern Reception Yard",
+        "es-ES": "El patio receptor del norte"
+      }
+    },
+    "western-guide": {
+      "id": "western-guide",
+      "lonLat": [
+        28.9435,
+        41.023
+      ],
+      "tile": [
+        41.17,
+        194.25
+      ],
+      "nearestCropPixel": [
+        85,
+        133
+      ],
+      "modernDsmMetres": 67.89196014404297,
+      "classification": "fictional optional activity-site proposal; not an excavated late-Roman address",
+      "modernHeightUse": "modern surface sample only; not bare earth or year380",
+      "zoneRadiusTiles": 3,
+      "name": {
+        "en": "The Waiting Guide",
+        "es-ES": "El guía que espera"
+      }
+    }
+  }
+}
