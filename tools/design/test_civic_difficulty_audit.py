@@ -101,6 +101,37 @@ class CivicDifficultyAuditTests(unittest.TestCase):
             with self.subTest(malformed=malformed), self.assertRaises(ValueError):
                 audit["episode_audit"]("fixture", malformed)
 
+    def test_v3_difficulty_view_requires_exact_json_values_but_ignores_object_key_order(self):
+        valid = v3_episode()
+        valid["difficulty"] = {
+            level: dict(reversed(list(view.items())))
+            for level, view in valid["selectionAnalysisByDifficulty"].items()
+        }
+        audit["episode_audit"]("fixture", valid)
+
+        cases = (
+            ("spendable Boolean", lambda view: view["easy"]["spendable"].__setitem__("food", True)),
+            ("spendable float", lambda view: view["easy"]["spendable"].__setitem__("food", 1.0)),
+            ("affordable Boolean", lambda view: view["easy"]["selections"][0].__setitem__("affordable", 1)),
+        )
+        for name, mutate in cases:
+            with self.subTest(name=name):
+                episode = v3_episode()
+                if name == "spendable Boolean" or name == "spendable float":
+                    episode["accountsByDifficulty"]["easy"]["spendable"]["food"] = 1
+                    episode["selectionAnalysisByDifficulty"]["easy"]["spendable"]["food"] = 1
+                    episode["difficulty"] = copy.deepcopy(episode["selectionAnalysisByDifficulty"])
+                mutate(episode["difficulty"])
+                with self.assertRaisesRegex(
+                    ValueError, "difficulty must exactly match selectionAnalysisByDifficulty as JSON"
+                ):
+                    audit["episode_audit"]("fixture", episode)
+
+        non_json = v3_episode()
+        non_json["difficulty"]["easy"]["spendable"]["food"] = float("nan")
+        with self.assertRaisesRegex(ValueError, "must be JSON-serializable for exact comparison"):
+            audit["episode_audit"]("fixture", non_json)
+
     def test_v3_consumed_resource_amounts_must_be_non_boolean_nonnegative_safe_integers(self):
         for amount in (True, False, -1, 1.5, 2**53, None):
             episode = v3_episode()
