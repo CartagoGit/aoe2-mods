@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-engine-test-receipt; documentary, not a runtime contract",
+  "date": "2026-10-26",
+  "proposal": "f00001",
+  "slice": "S4",
+  "sourceCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
+  "implementer": "gpt-6",
+  "artifactPurpose": "private testing; no public mod distribution",
+  "artifacts": [
+    {
+      "campaignId": "route-pilot",
+      "artifact": "route-pilot-fixture.zip",
+      "artifactSha256": "e97052c9d7a36770d92263490c536d3ced761dc2314418e33821de3c65bbc7a2",
+      "bytes": 21096,
+      "sourceSha256": "097c38b301eb2f37c9cf341090c60a0e8e41de4aeab343809b910e512898934d",
+      "campaignSha256": "9fcb5ced11abfec3ffe41e346f6d8c8c19708000b5601c16eb826ae845291b97",
+      "scenarioReports": [
+        {
+          "id": "01-route-choice",
+          "sha256": "00c78ee33dacbe05f069ad4902e039789a398e0a795f4200fea8658d55d4b4be",
+          "triggers": 15,
+          "units": 5,
+          "version": "1.59"
+        }
+      ],
+      "packagedFiles": [
+        "resources/_common/campaign/CDF_RoutePilot.aoe2campaign",
+        "resources/br/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/de/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/en/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/es/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/fr/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/hi/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/it/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/jp/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ko/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ms/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/mx/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/pl/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ru/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/tr/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/tw/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/vi/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/zh/strings/key-value/key-value-modded-strings-utf8.txt"
+      ],
+      "locales": [
+        "en",
+        "fr",
+        "it",
+        "de",
+        "ja",
+        "ko",
+        "pt-BR",
+        "ru",
+        "zh-Hans",
+        "es-LATAM",
+        "zh-Hant",
+        "tr",
+        "vi",
+        "es-ES",
+        "pl",
+        "hi",
+        "ms"
+      ],
+      "translationStatus": "draft",
+      "gameVerified": false,
+      "exportStatus": "EXPORT READY (binary subset)"
+    },
+    {
+      "campaignId": "route-successor",
+      "artifact": "route-successor-fixture.zip",
+      "artifactSha256": "8532e224ca30aeaa2d6e56ff5fe022d8721167c5655767551bb5ccc88a8fc4ce",
+      "bytes": 17541,
+      "sourceSha256": "046fd51e0094ae3ee2258e07731b8c3dba36a01268968ce7d3161458c5c8ec19",
+      "campaignSha256": "061bc1d08f264137a3355f1757c605bdb09313019725dc7a513b890c39fad9c1",
+      "scenarioReports": [
+        {
+          "id": "01-recap",
+          "sha256": "4ef3b362a9f4e3c12d679b4acd8bd602945a6af6dc6716cc126f82a56cb3174b",
+          "triggers": 7,
+          "units": 1,
+          "version": "1.59"
+        }
+      ],
+      "packagedFiles": [
+        "resources/_common/campaign/CDF_RouteSuccessor.aoe2campaign",
+        "resources/br/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/de/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/en/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/es/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/fr/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/hi/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/it/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/jp/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ko/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ms/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/mx/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/pl/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/ru/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/tr/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/tw/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/vi/strings/key-value/key-value-modded-strings-utf8.txt",
+        "resources/zh/strings/key-value/key-value-modded-strings-utf8.txt"
+      ],
+      "locales": [
+        "en",
+        "fr",
+        "it",
+        "de",
+        "ja",
+        "ko",
+        "pt-BR",
+        "ru",
+        "zh-Hans",
+        "es-LATAM",
+        "zh-Hant",
+        "tr",
+        "vi",
+        "es-ES",
+        "pl",
+        "hi",
+        "ms"
+      ],
+      "translationStatus": "draft",
+      "gameVerified": false,
+      "exportStatus": "EXPORT READY (binary subset)"
+    }
+  ],
+  "toolchain": {
+    "engineConfig": {
+      "schemaVersion": 1,
+      "scenarioVersion": "1.59",
+      "parserVersion": "0.9.6",
+      "stringRangeStatus": "fixture-only",
+      "mode": "aoe2-de",
+      "rgeCommit": "3c40203b650de9888ca82fae1276ea67bf3d3d93",
+      "difficultyProfiles": {
+        "easy": 3,
+        "standard": 2,
+        "hard": 1
+      },
+      "difficultyMappingVerified": false
+    },
+    "rgeCampaignBinarySha256": "1846fc5265d38aa8f963ecc75c0bf28264b813e138df732ce94377fe2697bcde"
+  },
+  "commands": [
+    {
+      "command": "bun run campaign:build route-pilot --export",
+      "exitCode": 0
+    },
+    {
+      "command": "bun run campaign:build route-successor --export",
+      "exitCode": 0
+    },
+    {
+      "command": "bun run test:export",
+      "exitCode": 0,
+      "variants": 3,
+      "roundTrips": 2,
+      "unsupportedModeRejected": true,
+      "gameVerified": false
+    }
+  ],
+  "gameBuild": null,
+  "platform": null,
+  "tester": null,
+  "independentReview": {
+    "technicalInspectionBy": "gpt-6-luna",
+    "scope": "Read-only comparison of both ZIP hashes, sizes and complete18-entry sets, draft languages, source profiles and all three documentary files; no game execution or validation-suite run by this inspection. No blocking documentary finding.",
+    "formalSliceVerdict": "pending"
+  },
+  "gameVerified": false,
+  "productionReady": false,
+  "nativeConditionalRecap": "unavailable in these artifacts; static source summary only",
+  "nativeNarrativeTemplates": "absent; fixture export, not campaign:candidate",
+  "persistentProgressObservability": "writes exported but not executed; no supported reader or same-tick harness in this kit",
+  "difficultyMappingVerified": false,
+  "remainingEvidence": [
+    "AoE2 load and actual game build/platform",
+    "native geometry/pathfinding/castle reaction and guard safety",
+    "single-terminal victory/defeat and save/load",
+    "real progress read and adaptive recap candidate before those tests",
+    "language folder mapping/strings and mod coexistence",
+    "native templates/layout/audio and editorial/release approval"
+  ]
+}
