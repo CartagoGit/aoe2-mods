@@ -32,7 +32,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 
 ### S1 — Arquitectura editorial de odiseas, investigación y generación reutilizable
 - **Status**: done
-- **Files**: `tools/design/**`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/design/odyssey-selections.md`, `docs/research/odyssey-research/**`
+- **Files**: `tools/design`, `docs/design/odyssey-policy.json`, `docs/design/odyssey-production-plan.md`, `docs/design/odyssey-selections.md`, `docs/research/odyssey-research`
 - **Gate**: e2e
 - acceptance:
   - "Plan explícito de nueve odiseas por actos y curva de dificultad, criterio de hito documentado sin relleno y límites históricos/licencias."
@@ -185,3 +185,7 @@ La migración de TypeScript a nombres responsabilidad.tipo.ts sin index/barrels 
 ## Enmienda de cobertura imperial, 2026-10-15
 
 Cinco puntos de inflexión365–380 amplían imperial-church de29a34selecciones y el total273a278. Véase docs/design/imperial-coverage-amendment.md. Se conservan todos los IDs previos, cinco actos y claves de progreso; el final sigue siendo el escenario semántico29-council-and-final-perspective-constantinople, ahora orden34. Son selecciones con fuentes acotadas, no cinco dossiers aprobados ni autoría desbloqueada.
+
+## Normalización de rutas declaradas de S1 — 26 de octubre de 2026
+
+S1 declaraba `tools/design/**` y `docs/research/odyssey-research/**`. DelendAI verifica los artefactos de un slice completado comprobando cada ruta declarada de forma literal y con `git ls-files`, de modo que un glob `**` no se puede resolver y se reporta como artefacto ausente, bloqueando la cascada con `done-slice-artifact-drift`. Se declaran ahora los árboles como directorio. El alcance no cambia: `git ls-files -- 'tools/design'` y `git ls-files -- 'tools/design/**'` resuelven exactamente el mismo conjunto de ficheros rastreados, y lo mismo para `docs/research/odyssey-research`. No cambian estado, aceptación, veredicto, revisor, IDs, contratos, contadores de dossiers ni alcance de S2–S11.
