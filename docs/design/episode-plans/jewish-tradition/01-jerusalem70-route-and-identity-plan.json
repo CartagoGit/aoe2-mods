@@ -26,10 +26,10 @@
     "geographyId": "jerusalem",
     "sizeTiles": 400,
     "bbox": [
-      35.224,
-      31.768,
-      35.241,
-      31.783
+      35.2265,
+      31.7702,
+      35.2357,
+      31.7758
     ],
     "projection": "existing tools/design/geography.py tile_point; north-up, cosine-corrected longitude, padded square; no camera calibration assumed",
     "regionalReference": "docs/research/odyssey-research/jerusalem-modern-dsm-processing.json",
@@ -46,12 +46,13 @@
           31.7752
         ],
         "centre": [
-          181.33,
-          206.62
+          218.86,
+          99.29
         ],
         "purpose": "briefing and regrouping",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-1"
       },
       {
         "id": "western-households",
@@ -64,12 +65,13 @@
           31.7745
         ],
         "centre": [
-          136.91,
-          223.25
+          133.67,
+          131.18
         ],
         "purpose": "main households 1–2",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-2"
       },
       {
         "id": "eastern-households",
@@ -82,12 +84,13 @@
           31.7741
         ],
         "centre": [
-          221.71,
-          232.75
+          296.31,
+          149.4
         ],
         "purpose": "main households 3–4",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-3"
       },
       {
         "id": "southern-households",
@@ -100,12 +103,13 @@
           31.7727
         ],
         "centre": [
-          199.5,
-          266.0
+          253.71,
+          213.16
         ],
         "purpose": "main households 5–6",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-4"
       },
       {
         "id": "central-households",
@@ -118,12 +122,13 @@
           31.7739
         ],
         "centre": [
-          177.29,
-          237.5
+          211.12,
+          158.51
         ],
         "purpose": "main households 7–8",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-5"
       },
       {
         "id": "western-record",
@@ -136,12 +141,13 @@
           31.7739
         ],
         "centre": [
-          120.76,
-          237.5
+          102.69,
+          158.51
         ],
         "purpose": "original household bundle 1 with its original bearer",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-6"
       },
       {
         "id": "central-record",
@@ -154,12 +160,13 @@
           31.773
         ],
         "centre": [
-          169.21,
-          258.88
+          195.63,
+          199.5
         ],
         "purpose": "original household bundle 2 with its original bearer",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-7"
       },
       {
         "id": "eastern-record",
@@ -172,12 +179,13 @@
           31.772
         ],
         "centre": [
-          233.82,
-          282.63
+          319.54,
+          245.05
         ],
         "purpose": "original household bundle 3 with its original bearer",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-8"
       },
       {
         "id": "central-turn",
@@ -190,12 +198,13 @@
           31.7728
         ],
         "centre": [
-          181.33,
-          263.63
+          218.86,
+          208.61
         ],
         "purpose": "central routing decision",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-9"
       },
       {
         "id": "western-turn",
@@ -208,12 +217,13 @@
           31.7719
         ],
         "centre": [
-          124.8,
-          285.0
+          110.44,
+          249.6
         ],
         "purpose": "western routing decision",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-10"
       },
       {
         "id": "southern-turn",
@@ -226,12 +236,13 @@
           31.7714
         ],
         "centre": [
-          173.25,
-          296.88
+          203.37,
+          272.38
         ],
         "purpose": "last shared approach",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-11"
       },
       {
         "id": "temporary-refuge",
@@ -244,12 +255,13 @@
           31.7708
         ],
         "centre": [
-          191.42,
-          311.12
+          238.22,
+          299.71
         ],
         "purpose": "single main receiving court; no siege-line escape",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": 3
+        "receivingRadiusTiles": 3,
+        "candidateAuthoringHubId": "hub-12"
       },
       {
         "id": "copy-desk",
@@ -262,12 +274,13 @@
           31.7714
         ],
         "centre": [
-          151.04,
-          296.88
+          160.78,
+          272.38
         ],
         "purpose": "optional record receiving district",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-13"
       },
       {
         "id": "optional-neighbors",
@@ -280,12 +293,13 @@
           31.7743
         ],
         "centre": [
-          155.08,
-          228.0
+          168.52,
+          140.29
         ],
         "purpose": "two optional originals, separate from main eight",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-14"
       },
       {
         "id": "western-lookout",
@@ -298,12 +312,13 @@
           31.773
         ],
         "centre": [
-          96.53,
-          258.88
+          56.23,
+          199.5
         ],
         "purpose": "optional observation",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-15"
       },
       {
         "id": "eastern-lookout",
@@ -316,12 +331,13 @@
           31.7733
         ],
         "centre": [
-          239.88,
-          251.75
+          331.16,
+          185.84
         ],
         "purpose": "optional observation",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-16"
       },
       {
         "id": "damaged-store",
@@ -334,12 +350,13 @@
           31.7712
         ],
         "centre": [
-          134.89,
-          301.63
+          129.8,
+          281.49
         ],
         "purpose": "fictional optional store, never a Temple structure",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-17"
       },
       {
         "id": "western-pressure-pocket",
@@ -352,12 +369,13 @@
           31.7747
         ],
         "centre": [
-          104.61,
-          218.5
+          71.71,
+          122.07
         ],
         "purpose": "candidate finite opponent approach, not excavated deployment",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-18"
       },
       {
         "id": "eastern-pressure-pocket",
@@ -370,12 +388,13 @@
           31.774
         ],
         "centre": [
-          249.98,
-          235.12
+          350.52,
+          153.95
         ],
         "purpose": "candidate finite opponent approach, not excavated deployment",
         "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
-        "receivingRadiusTiles": null
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-19"
       }
     ],
     "corridors": [
@@ -391,7 +410,7 @@
         ],
         "widthTiles": 8,
         "mode": "land",
-        "straightControlLengthTiles": 189.61,
+        "straightControlLengthTiles": 363.66,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -405,7 +424,7 @@
         ],
         "widthTiles": 8,
         "mode": "land",
-        "straightControlLengthTiles": 114.89,
+        "straightControlLengthTiles": 220.33,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -420,7 +439,7 @@
         ],
         "widthTiles": 8,
         "mode": "land",
-        "straightControlLengthTiles": 206.47,
+        "straightControlLengthTiles": 396.01,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -433,7 +452,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 92.4,
+        "straightControlLengthTiles": 177.2,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -446,7 +465,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 58.5,
+        "straightControlLengthTiles": 112.19,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -458,7 +477,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 42.94,
+        "straightControlLengthTiles": 82.35,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -470,7 +489,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 70.8,
+        "straightControlLengthTiles": 135.77,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -482,7 +501,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 57.76,
+        "straightControlLengthTiles": 110.76,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -493,7 +512,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 24.94,
+        "straightControlLengthTiles": 47.83,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       },
       {
@@ -504,7 +523,7 @@
         ],
         "widthTiles": 6,
         "mode": "land",
-        "straightControlLengthTiles": 28.37,
+        "straightControlLengthTiles": 54.4,
         "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
       }
     ],
@@ -515,7 +534,8 @@
           35.235,
           31.778
         ],
-        "basis": "existing regional approximate-modern anchor; only orientation, never a collectible/capture/repair site"
+        "basis": "existing regional approximate-modern anchor; only orientation, never a collectible/capture/repair site",
+        "presentation": "regional introduction/inset only; outside the playable local frame, no in-map target"
       },
       {
         "id": "olives-ridge-context",
@@ -523,7 +543,8 @@
           35.245,
           31.779
         ],
-        "basis": "existing regional approximate-modern anchor east of the local bbox; outside this active map, not an equivalent receiving refuge"
+        "basis": "existing regional approximate-modern anchor east of the local bbox; outside this active map, not an equivalent receiving refuge",
+        "presentation": "regional introduction/inset only; outside the playable local frame, no in-map target"
       }
     ],
     "excluded": [
@@ -532,7 +553,43 @@
       "No surveyed ancient street alignments inferred from straight graph edges",
       "No indispensable path outside the authored local frame",
       "No documented rescue, house address, exact siege phase or immunity claimed for the fictional receiving court"
-    ]
+    ],
+    "frameCheck": {
+      "pointExtent": [
+        35.225947999999995,
+        31.768620073976656,
+        35.236252,
+        31.777379926023343
+      ],
+      "outerCellExtent": [
+        35.22593508771929,
+        31.768609096718453,
+        35.2362649122807,
+        31.777390903281546
+      ],
+      "regionalModernDsmCoversAllOuterCells": true,
+      "previousNominalBBox": [
+        35.224,
+        31.768,
+        35.241,
+        31.783
+      ],
+      "previousControlEnvelope": {
+        "controlSpanTiles": [
+          153.45,
+          104.5
+        ],
+        "centreEnvelopeFraction": 0.1007
+      },
+      "currentControlEnvelope": {
+        "controlSpanTiles": [
+          294.29,
+          200.42
+        ],
+        "centreEnvelopeFraction": 0.3705
+      },
+      "interpretation": "The centre-envelope fraction describes the rectangle containing the19 activity controls only. It is neither usable terrain fraction, interest density, footpath coverage, ancient ground nor proof of a viable route."
+    }
   },
   "originalIdentities": {
     "mainHouseholds": [
@@ -695,7 +752,19 @@
       "Fixed courier/bundle identity is not an implemented cargo inventory",
       "No resource bonus advertised as useful without an actual supported spend",
       "No native output or historical permission inferred from this documentary JSON"
-    ]
+    ],
+    "authoringProjectionGap": {
+      "scope": "design factory only; existing v2 reference worldContract already represents an arbitrary explicit survivor entity set",
+      "observed": "world_and_objectives materializes each authored survivor row using exactly one group key. Four two-person origin groups cannot be pooled into one six-of-eight survivor set through that source path. Omitting the pool also omits advertised impossible-threshold defeat; four separate per-court minima impose a different rule.",
+      "requiredResult": "Keep four origin courts and one union of exactly eight originals with minimum6, plus original bearer losses. Project an explicitly authored validated entity set without changing public schema or IDs.",
+      "status": "i00010/S1 decision and mechanical packet independently approved with verdict f4a2599; implementation S2 pending and serialized after i00009/S2; no working new selector claimed",
+      "evidence": [
+        "tools/design/episode_dossier.factory.py::world_and_objectives survivorGroups comprehension",
+        "packages/schemas/scenario-capability.schema.ts::survivorGroupSchema",
+        "packages/gameplay-state/capability-predicates.validator.ts survivorGroups loss check"
+      ],
+      "proposal": "i00010"
+    }
   },
   "continuity": {
     "narratorId": "judith-copyist",
