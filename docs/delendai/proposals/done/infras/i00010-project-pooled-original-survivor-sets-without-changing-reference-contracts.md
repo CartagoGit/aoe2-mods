@@ -2,17 +2,17 @@
 id: i00010
 title: "Project pooled original survivor sets without changing reference contracts"
 kind: infra
-status: in-progress
+status: done
 type: proposal
 track: campaign-factory
 date: 2026-10-25
 shipped-in:
   - "6e3bbf51e05337dc054750bffed00f456805bc68"
   - "d86c561303916d658394b560030875fa045991b6"
-last-transition-id: 082c6ac1-d366-414d-8240-38812e493540
-last-correlation-id: 082c6ac1-d366-414d-8240-38812e493540
-last-transition-from: ready
-last-transition-at: 2026-10-26T02:23:23.654Z
+last-transition-id: 4ca65f4f-adf4-48a1-9faa-4f75b47b4061
+last-correlation-id: 4ca65f4f-adf4-48a1-9faa-4f75b47b4061
+last-transition-from: review
+last-transition-at: 2026-10-26T02:28:15.483Z
 ---
 
 # i00010 — Project pooled original survivor sets without changing reference contracts
@@ -46,6 +46,7 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 - review-implementer: gpt-6
 - review-reviewer: gpt-6-luna
 - review-log: approved by gpt-6-luna — verified at 6e3bbf51e053, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet define mutually exclusive group/groups selectors; reject missing, wrong-type, empty, duplicate, unknown and overlapping identities; pre… (2) The documents retain the two-field dossier projection and public schema/reducer, preserve all actor IDs/origins, require i00009/S2 before shared-factory implem… — Independent S1 review. Reproduced the documented current factory failure (`KeyError: 'group'`); the accepted design closes the mapping contract while preserving the public survivor semantics, identity, ordering, legacy output and all historical/native/game boundaries. `bun run validate` exit 0: 157/157 tests, 2,136 expect() calls, docs and campaign checks passed.
+- shipped-in: `6e3bbf51e053`
 
 ### S2 — Implement strict survivor projection and verify the existing loss reference
 - **Status**: done
@@ -60,6 +61,7 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 - review-implementer: minimax-m3.1-flash-preview
 - review-reviewer: gpt-6-luna
 - review-log: approved by gpt-6-luna — verified at d86c56130391, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Verified factory resolves mutually exclusive group/groups selectors in authored order, applies the existing is_positive_integer primitive and emits only entiti… (2) 14 focused Python tests passed. The test-only TS bridge takes real factory output, validates the artificial public v2 profile and semantic references, then inv… (3) Focused tests and bun run validate passed (157/157, 2,136 expectations; docs check and 3 campaigns passed). Factory source checks preserve 64 dossiers and lega… — Independent S2 review only; focused and validation logs are saved under /tmp/i00010-s2-independent-review/. The test-only TS bridge exercises the public reference validator and reducer; no native/game/history approval is claimed.
+- shipped-in: `d86c56130391`
 
 ## acceptance
 
