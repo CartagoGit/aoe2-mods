@@ -1,0 +1,90 @@
+{
+  "episodeId": "25-delegate-and-draft-network-rimini",
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Western Ariminum359 and eastern Seleucia remain separate. Taurus is praetorian prefect, not magister officiorum. Later pro-Nicene reports of pressure and winter cannot supply private motives, verified headcounts or a located synod room. Socrates II.37 embeds a Liberius exile sequence that must not be used to redate 355exile to359. Civilian copying/provision cohorts are explicit fiction, not historical delegations or voters."
+  },
+  "directReadingScope": [
+    {
+      "consultedUrl": "https://www.thelatinlibrary.com/sulpiciusseveruschron2.html",
+      "passage": "Chronica II.41–44; II.42 distinguishes Seleucia",
+      "coverageActuallyRead": "Architect read Latin41–44, including reported Gavidus testimony, local arrangements, separate Seleucia narrative, return/pressure and winter discussion. Not wholebook.",
+      "limitations": "Later pro-Nicene account: numbers, age contrasts, alleged fraud and motives remain source claims. Winter/seven-month language attributed, not a real-time survival countdown. Church/empty hall not securely located; Taurus prefect distinct from magistri officialibus. No authentic council draft, signature or bishop role spawned.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passage": "HE II.37, complete chapter selected directly",
+      "coverageActuallyRead": "Architect read entire37, including translated creed/letters, delays and Nice in Thrace distinction. No blanket II.38–41 direct-read claim.",
+      "limitations": "Fifth-century pro-Nicene history and embedded documents, Greek transmission of Latin drafts. Do not infer neutral verbatim transcript, motives, modern faction taxonomy or exact council room. Embedded Liberius exile sequence is chronologically unsafe; do not move his355exile into359. Nice in Thrace is not Nicaea in Bithynia.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+      "passage": "Markauskas2015, selected printed73–74; PDFphysical73–74",
+      "coverageActuallyRead": "Architect directly read selected printed pages73–74, including notes138–145; not entirethesis.",
+      "limitations": "Praetorian prefect Taurus, fiscal council arrangements and legal context. No ancient building footprint, creed truth verdict or universal acceptance practice. CopyrightedPDF temporary only.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.comune.rimini.it/sites/default/files/2021-07/c.rel_.archeo_0_0.pdf",
+      "passage": "Municipal archaeological report selected PDF46–48, printed47–49; VIII.2 and beginningVIII.3",
+      "coverageActuallyRead": "Architect read selectedpages; report50pages, not whole report. CartaC1.2a/b actual pixels viewed separately, not georeferenced or digitized.",
+      "limitations": "Multiphase roads/walls/monuments, uncertain harbor/public buildings and later contraction. Broad urban periods do not certify359 footprint or council venue; later Christian archaeological traces do not disprove fourth-century literary church reports. Report/platemaps not imported as licensed assets.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.comune.rimini.it/sites/default/files/2021-07/c_1_1_1.pdf",
+      "passage": "C1.1.1, Analisi evolutiva del centro storico, legend and one-page actualpixels",
+      "coverageActuallyRead": "Architect viewed plate; legend distinguishes XIXcentury and1915–1945 transformations.",
+      "limitations": "Despite generic title this is modern urban transformation, not Roman/359phaseplan. Used only to flag later rebuilding and modern footprint risk. Copyright unresolved, temp only.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "geography": {
+    "id": "rimini",
+    "name": "Ariminum, Adriatic urban core and local approaches",
+    "bbox": [
+      12.551,
+      44.053,
+      12.579,
+      44.0655
+    ],
+    "coordinateStatus": "modern approximate anchors; all gameplay courts fictional and359footprints unapproved",
+    "representativePoint": [
+      12.568,
+      44.059
+    ],
+    "representativePointUsage": "modern civic/core orientation only, not synod location or native spawn",
+    "sources": [
+      {
+        "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c.rel_.archeo_0_0.pdf",
+        "locator": "selectedPDF46–48/printed47–49; roads/monuments and phase/unknown-building cautions",
+        "consulted": "2026-10-14"
+      },
+      {
+        "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c_1_2a.pdf",
+        "locator": "cartaarcheologicaC1.2a,actualone-pagepixels inspected; mixedperiodinventory not359landmask",
+        "consulted": "2026-10-14"
+      },
+      {
+        "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c_1_2b.pdf",
+        "locator": "cartaarcheologicaC1.2b,actualpixels inspected; broadmunicipality not359cityparcel",
+        "consulted": "2026-10-14"
+      }
+    ],
+    "terrain": "Adriatic low coastal plain; Covignano/Appennine upland outside this localframe. Proposed urban/periurban land courts, not surveyed excavation addresses.",
+    "waterControlStatus": "Ancient Marecchia/Ausa/Patara reaches and shore/harbor uncertain; modernriverdiversion and missingclippedline cannot certifydryland. Main links require fullwidthbanks/drainage/crossingchecks; no mandatory bridge/sea crossing.",
+    "anachronisms": "No CastelSismondo,TempioMalatestiano, laterarchbattlements, modernriverdiversion or moderntransformationplate as359plan.",
+    "approval": "architect regional candidate; datedhydrology/landmask/phase/DEM/pathfinding and independent archaeologicalauditpending"
+  },
+  "historicalApproval": false,
+  "nativeAndBalance": "not approved"
+}

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1321" role="img" aria-label="The Doors of New Rome geographic districts">
+<rect width="1050" height="1321" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Doors of New Rome</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · constantinople · N ↑ E →</text>
+<polyline points="705.00,313.62 696.59,353.86" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="696.59,353.86 702.88,424.82" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="702.88,424.82 705.00,436.90" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="705.00,713.89 688.25,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="331.06,735.00 229.54,647.40" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="229.54,647.40 156.07,632.79" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="156.07,632.79 82.60,678.00" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="82.60,678.00 55.00,715.78" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline data-corridor="central-court" points="487.05,546.76 554.12,572.40" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-court: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-source" points="554.12,572.40 579.90,623.69" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>east-source: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-return" points="554.12,572.40 470.28,541.63" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>east-return: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-reception" points="487.05,546.76 470.28,541.63" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-reception: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="ridge-hearth" points="487.05,546.76 373.55,534.79" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>ridge-hearth: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="ridge-junction" points="373.55,534.79 296.17,529.66" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>ridge-junction: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="west-supply" points="296.17,529.66 173.65,490.35" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>west-supply: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="western-trade" points="173.65,490.35 190.41,439.06" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>western-trade: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="western-reception" points="190.41,439.06 276.83,456.15" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>western-reception: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="interior-kit" points="373.55,534.79 321.97,509.15" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>interior-kit: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="kit-source" points="487.05,546.76 444.48,568.98" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>kit-source: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="kit-to-hearth" points="444.48,568.98 373.55,534.79" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>kit-to-hearth: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-host" points="487.05,546.76 440.62,615.13" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-host: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-view" points="440.62,615.13 405.79,640.77" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-view: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-view" points="276.83,456.15 244.59,427.09" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-view: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-care-approach" points="190.41,439.06 160.76,350.16" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-care-approach: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-care-loop" points="160.76,350.16 205.88,324.52" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-care-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-reader-link" points="205.88,324.52 212.34,281.79" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-reader-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-reception-link" points="212.34,281.79 257.48,367.27" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-reception-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-return" points="257.48,367.27 244.59,427.09" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>north-return: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="guide-link" points="122.07,401.45 173.65,490.35" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>guide-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="487.05" cy="546.76" r="20" fill="none" stroke="#91512f"/>
+<text x="510.05" y="546.76" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: The Clerk&#x27;s Courtyard</text>
+<circle cx="470.28" cy="541.63" r="20" fill="none" stroke="#91512f"/>
+<text x="493.28" y="541.63" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: The Neighbors&#x27; Table</text>
+<circle cx="276.83" cy="456.15" r="20" fill="none" stroke="#91512f"/>
+<text x="299.83" y="456.15" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: The Western Shelter Yard</text>
+<circle cx="321.97" cy="509.15" r="20" fill="none" stroke="#91512f"/>
+<text x="344.97" y="509.15" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: The Interior Shelter Yard</text>
+<circle cx="440.62" cy="615.13" r="20" fill="none" stroke="#91512f"/>
+<text x="463.62" y="615.13" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: The Southern Host&#x27;s Courtyard</text>
+<circle cx="579.90" cy="623.69" r="20" fill="none" stroke="#91512f"/>
+<text x="602.90" y="623.69" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: The Prepared Consignment</text>
+<circle cx="373.55" cy="534.79" r="20" fill="none" stroke="#91512f"/>
+<text x="396.55" y="534.79" font-family="sans-serif">7</text>
+<text x="730" y="490" font-family="sans-serif" font-size="12">7: The Shared Hearth</text>
+<circle cx="190.41" cy="439.06" r="20" fill="none" stroke="#91512f"/>
+<text x="213.41" y="439.06" font-family="sans-serif">8</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">8: The Western Merchant</text>
+<circle cx="173.65" cy="490.35" r="20" fill="none" stroke="#91512f"/>
+<text x="196.65" y="490.35" font-family="sans-serif">9</text>
+<text x="730" y="590" font-family="sans-serif" font-size="12">9: The Timber Yard</text>
+<circle cx="444.48" cy="568.98" r="20" fill="none" stroke="#91512f"/>
+<text x="467.48" y="568.98" font-family="sans-serif">10</text>
+<text x="730" y="640" font-family="sans-serif" font-size="12">10: The Local Workshop</text>
+<circle cx="554.12" cy="572.40" r="20" fill="none" stroke="#91512f"/>
+<text x="577.12" y="572.40" font-family="sans-serif">11</text>
+<text x="730" y="690" font-family="sans-serif" font-size="12">11: The Host&#x27;s Meeting Place</text>
+<circle cx="296.17" cy="529.66" r="20" fill="none" stroke="#91512f"/>
+<text x="319.17" y="529.66" font-family="sans-serif">12</text>
+<text x="730" y="740" font-family="sans-serif" font-size="12">12: The Western Turn</text>
+<circle cx="244.59" cy="427.09" r="20" fill="none" stroke="#91512f"/>
+<text x="267.59" y="427.09" font-family="sans-serif">13</text>
+<text x="730" y="790" font-family="sans-serif" font-size="12">13: The Upper Viewpoint</text>
+<circle cx="405.79" cy="640.77" r="20" fill="none" stroke="#91512f"/>
+<text x="428.79" y="640.77" font-family="sans-serif">14</text>
+<text x="730" y="840" font-family="sans-serif" font-size="12">14: The Southern Viewpoint</text>
+<circle cx="160.76" cy="350.16" r="20" fill="none" stroke="#91512f"/>
+<text x="183.76" y="350.16" font-family="sans-serif">15</text>
+<text x="730" y="890" font-family="sans-serif" font-size="12">15: The Northern Supply Yard</text>
+<circle cx="205.88" cy="324.52" r="20" fill="none" stroke="#91512f"/>
+<text x="228.88" y="324.52" font-family="sans-serif">16</text>
+<text x="730" y="940" font-family="sans-serif" font-size="12">16: The Damaged Store</text>
+<circle cx="212.34" cy="281.79" r="20" fill="none" stroke="#91512f"/>
+<text x="235.34" y="281.79" font-family="sans-serif">17</text>
+<text x="730" y="990" font-family="sans-serif" font-size="12">17: The Reader&#x27;s Shelter</text>
+<circle cx="257.48" cy="367.27" r="20" fill="none" stroke="#91512f"/>
+<text x="280.48" y="367.27" font-family="sans-serif">18</text>
+<text x="730" y="1040" font-family="sans-serif" font-size="12">18: The Northern Reception Yard</text>
+<circle cx="122.07" cy="401.45" r="20" fill="none" stroke="#91512f"/>
+<text x="145.07" y="401.45" font-family="sans-serif">19</text>
+<text x="730" y="1090" font-family="sans-serif" font-size="12">19: The Waiting Guide</text>
+<text x="730" y="1125" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="1149" font-family="sans-serif" font-size="12">Solid blue: modern geographic water</text>
+<text x="730" y="1173" font-family="sans-serif" font-size="12">controls</text>
+<text x="730" y="1197" font-family="sans-serif" font-size="12">Olive dashed: proposed narrow land</text>
+<text x="730" y="1221" font-family="sans-serif" font-size="12">connections under 10 tiles</text>
+<text x="730" y="1245" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="1269" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="1293" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [28.941, 41.009, 28.986, 41.036]; cosine-corrected longitude; approximate districts</text>
+</svg>

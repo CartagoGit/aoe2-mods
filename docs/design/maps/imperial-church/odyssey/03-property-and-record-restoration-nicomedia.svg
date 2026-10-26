@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Doors Returned geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Doors Returned</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · bithynia · N ↑ E →</text>
+<polyline points="55.00,646.98 245.94,682.19" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline points="245.94,682.19 263.49,735.00" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline data-corridor="north-access" points="251.03,520.73 154.31,571.83 315.52,222.62" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-access: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-access" points="251.03,520.73 154.31,571.83 573.45,469.62" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-access: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="inland-link" points="315.52,222.62 573.45,469.62 251.03,520.73" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>inland-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="251.03" cy="520.73" r="20" fill="none" stroke="#91512f"/>
+<text x="274.03" y="520.73" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Local inland pickup court</text>
+<circle cx="154.31" cy="571.83" r="20" fill="none" stroke="#91512f"/>
+<text x="177.31" y="571.83" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Western local inventory yard</text>
+<circle cx="315.52" cy="222.62" r="20" fill="none" stroke="#91512f"/>
+<text x="338.52" y="222.62" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Northern fictional receiving yard</text>
+<circle cx="573.45" cy="469.62" r="20" fill="none" stroke="#91512f"/>
+<text x="596.45" y="469.62" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Eastern fictional receiving yard</text>
+<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="564" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="588" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [29.905, 40.758, 29.995, 40.822]; cosine-corrected longitude; approximate districts</text>
+</svg>

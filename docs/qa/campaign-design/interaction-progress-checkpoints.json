@@ -1,0 +1,110 @@
+{
+  "recordKind": "documentary-interaction-progress-checkpoints",
+  "recordVersion": 1,
+  "notice": "This is a documentation record, not a source-data schema, runtime queue, forecast, or per-model usage report.",
+  "observation": {
+    "id": "observation-001",
+    "statement": "first reconstructed interval; user interaction timestamps unavailable; not a measured per-model duration/token sample",
+    "clientCutDate": "2026-10-26",
+    "timezone": "Europe/Madrid",
+    "interval": {
+      "fromCommit": "c5533f777dfb7e0f9c9c76157109725aa5288ed8",
+      "toCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
+      "toCommitGitTimestamp": "2026-10-25T20:36:56+01:00",
+      "toCommitSubject": "merge: land refs/heads/wip/gpt-6-luna/review/i00009-S1-g1/authored-secondary-reward-decision-review on develop",
+      "cutDefinition": "The end cut is the develop tip identified at the start of this checkpoint task. The client date is recorded separately from the commit timestamp."
+    },
+    "baseline": {
+      "source": "README.md at c5533f777dfb7e0f9c9c76157109725aa5288ed8, lines 34-36",
+      "selectionCount": 278,
+      "designDossierCount": 63,
+      "selectionsWithoutDossier": 215,
+      "bilingualScreenCount": 2594,
+      "secondaryObjectiveCount": 391,
+      "localResearchResourceCount": 47,
+      "geographicProfileCount": 26,
+      "unresolvedGeographicIdentities": 22,
+      "selectionsAffectedByUnresolvedGeography": 25
+    },
+    "cut": {
+      "source": "README.md at d6acfed489e332a614d4a2731e450c53e619c65b, lines 34-36",
+      "selectionCount": 278,
+      "designDossierCount": 64,
+      "selectionsWithoutDossier": 214,
+      "bilingualScreenCount": 2645,
+      "secondaryObjectiveCount": 398,
+      "localResearchResourceCount": 49,
+      "geographicProfileCount": 26,
+      "unresolvedGeographicIdentities": 22,
+      "selectionsAffectedByUnresolvedGeography": 25
+    },
+    "delta": {
+      "selectionCount": 0,
+      "designDossierCount": 1,
+      "selectionsWithoutDossier": -1,
+      "bilingualScreenCount": 51,
+      "secondaryObjectiveCount": 7,
+      "localResearchResourceCount": 2,
+      "geographicProfileCount": 0,
+      "unresolvedGeographicIdentities": 0,
+      "selectionsAffectedByUnresolvedGeography": 0
+    },
+    "statusEventsBetweenCuts": [
+      {
+        "proposal": "i00008",
+        "slice": "S3",
+        "event": "formally closed",
+        "scope": "opt-in civic audit compatibility only; does not add native engine support"
+      },
+      {
+        "proposal": "i00009",
+        "slice": "S1",
+        "event": "independently approved",
+        "scope": "documentary decision only; no production or game evidence inferred"
+      }
+    ],
+    "pilotEvidenceAtCut": {
+      "f00001SourceExportedPilotCampaigns": ["route-pilot", "route-successor"],
+      "gameVerifiedCount": 0,
+      "evidenceReference": "docs/qa/route-pilot/s3-joint-promotion-independent-review.md",
+      "scope": "Historical source/export review records fixture exports; it does not show a successful AoE2 gameplay test."
+    },
+    "workAllocation": {
+      "architectRoot": [
+        "214 selections without dossiers",
+        "review of the 64 existing dossiers",
+        "54 civic flags",
+        "22 unresolved geographic identities affecting 25 selections"
+      ],
+      "mechanicalAuthoringPool": "Luna and MiniMax share a pool of 278 episode tasks; this is not 278 tasks per worker.",
+      "miniMaxObservedImplementationSample": 0,
+      "codexRemainingQuota": "unknown; not measured"
+    },
+    "separationAndExclusions": {
+      "designDraftsAreNotHistoricalOrEditorialApprovals": true,
+      "sourceExportsAreNotNativeOrGameVerification": true,
+      "nativeCapabilityEvidence": "No native/game verification count is inferred from the source-export records.",
+      "formalReviewEventsAreListedSeparatelyFromDesignAndGameCounts": true,
+      "unintegratedWork": "No unintegrated-work count is added; WIP is excluded from develop totals.",
+      "excludedLegacyContracts": 39,
+      "excludedJerusalemWipSecondaryObjectives": 7,
+      "exclusionNote": "Do not add the 39 legacy contracts or seven Jerusalem WIP secondary objectives to the selected-odyssey counts."
+    },
+    "measurementPolicy": {
+      "minimumComparableIntervalsBeforeMovingAverage": 3,
+      "interactionCounting": "Count each new user interaction. Do not count tool messages or context compactions as user interactions.",
+      "timeReporting": "Report hours only when directly measured from comparable start/end timestamps.",
+      "forbiddenInferences": [
+        "Do not convert one reconstructed interval into an average or ETA.",
+        "Do not present 214 remaining dossiers as an interaction or time estimate.",
+        "Do not infer model duration, token use, or remaining quota from repository progress."
+      ]
+    }
+  },
+  "provenance": {
+    "historicalBaselineCommit": "c5533f777dfb7e0f9c9c76157109725aa5288ed8",
+    "documentedCutCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
+    "worktreeBaseAtPreparation": "6e3bbf51e05337dc054750bffed00f456805bc68",
+    "worktreeBaseNote": "The isolated worktree began after the specified d6acfed cut. Metrics above are pinned to the requested d6acfed snapshot; no later worktree changes are included."
+  }
+}

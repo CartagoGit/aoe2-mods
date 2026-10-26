@@ -1,0 +1,47 @@
+{
+  "episodeId": "34-church-transfer-constantinople",
+  "displayOrder": 33,
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "status": "bounded source-control research; no full episode or native implementation",
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/26015.htm",
+      "locator": "Socrates HE V.6–8, especiallyV.6arrival andV.7transfer",
+      "actuallyRead": "Root read selected complete arrival, church-transfer and council chapters in NPNF English translation; no Greek apparatus or Gregory’s poem.",
+      "supported": "The translation dates imperial arrival24November and church-possession change26November in the380consular context. It reports an imperial demand for Nicene assent or departure and Demophilus’ extramural assemblies, with Lucius.",
+      "limits": "Retrospective Nicene framing. The narrator’s peace/orthodoxy judgments and reported speeches are not an objective moral verdict or independently authenticated verbatim dialogue. V.7also places a resignation of Gregory in its narrative sequence; do not automatically date every episcopal action toNovember380without comparing chronology and381council evidence."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26027.htm",
+      "locator": "Sozomen HE VII.4–5, withVII.7–8as council context",
+      "actuallyRead": "Root read selected law/arrival/transfer paragraphs and selected later council context, distinguishing earlier private oratory from later monumental building descriptions.",
+      "supported": "The account distinguishes imperial order, Demophilus’ departure, subsequent assemblies outside the city and Nicene possession. A small oratory is described with later reception and building history.",
+      "limits": "No independent eyewitness proof or complete urban transfer register. Miracles and the etymology of Anastasia are attributed beliefs/traditions, not geographic proof or mandatory gameplay powers. Later magnificent church fabric cannot be pasted onto380. Law, arrival and physical possession are not one single instant."
+    },
+    {
+      "url": "https://www.thelatinlibrary.com/marcellinus1.html",
+      "locator": "Marcellinus Comes Chronicon380entry, labelled MommsenChronicaMinoraII1894",
+      "actuallyRead": "Root read the complete selected Latin380entry in the web transcription; no facsimile manuscript or critical apparatus freshly inspected.",
+      "supported": "The later chronicle describes Gregory’s Anastasia ministry and a return of church possession to its favored Catholic group; it givesDecemberfor the restoration month.",
+      "limits": "That month differs from Socrates’Novemberreport. Do not relabel it November, claim all chronicles agree, or assign the exact same dated transfer from modern harmonization alone. Its favorable confessional language remains attributed."
+    }
+  ],
+  "chronologyDecision": "Use conventional November380for the selected episode while preserving the actual source dates and the MarcellinusDecembercontrol. No Gregorian conversion or full textual harmonization. The381council remains the separate final episode, display34.",
+  "geographicControls": [
+    "Use Constantinopolitan regional geography and phase-qualified late-fourth-century built form. No Justinianic HagiaSophia dome, later sea wall, modern shoreline or certified ancient gate from a modern locator.",
+    "The small Anastasia meeting place and a later monumental church are distinct descriptions. No exact380interior, room dimensions or household ownership is established by these passages.",
+    "Assemblies outside the city are source reports; they do not identify a safe playable camp or gate coordinate. All local receiving courts/routes need independent archaeological and footprint review."
+  ],
+  "designBoundaries": [
+    "Physical church possession, imperial enforcement and individual belief remain separate. No conversion score, doctrinal winner, theological punishment or unanimous popular assent.",
+    "Reported speeches may be paraphrased with attribution; no invented imperial or Demophilus dialogue becomes an authentic quote.",
+    "No city battle, riot roster, extermination or prison rescue follows from these selected passages. Any licensed local participants must be clearly fictional and not substitutes for historical coercion victims.",
+    "No gameplay unit may silently perform legal custody or ownership transfer merely from an arrival receipt. Unsupported operations require infrastructure registration and explicit gates.",
+    "Marcus is about46and may have fictional ordinary Constantinopolitan experience, but not automatic palace access, Demophilus’ private thoughts or eyewitness attendance in a particular church. Exact personal scene remains unauthored.",
+    "Do not authorize MiniMax to invent unit counts, payments, district geometry, difficulty, optional tasks or an unapproved narrative chronology. Full dossier remains pending."
+  ],
+  "notFreshlyRead": ["GregoryNazianzus DeVitaSua or other first-person works in a critical edition", "Full ConsulariaConstantinopolitana/ChroniconPaschale critical apparatus", "Phase-specific archaeology locating the exact transferred buildings in380"],
+  "historicalApproval": false,
+  "nativeOrGameApproval": false
+}

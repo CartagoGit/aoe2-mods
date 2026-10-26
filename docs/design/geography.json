@@ -1,0 +1,1944 @@
+{
+  "schemaVersion": 1,
+  "projection": "WGS84 north-up, cosine corrected longitude, padded square viewport; tile conversion explicitly recorded",
+  "profiles": [
+    {
+      "id": "antioch",
+      "name": "Antioch and Orontes",
+      "bbox": [
+        36.05,
+        36.1,
+        36.25,
+        36.3
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Valle aluvial cultivado; laderas pedregosas al sur/este.",
+      "water": "Orontes desde sur hacia norte y giro hacia costa al oeste.",
+      "hills": "Silpio al sur de la ciudad; no cordillera en medio de la llanura.",
+      "roads": "Ciudad y puentes junto al Orontes; salida regional hacia Siria/puerto.",
+      "anachronisms": "Sin basílicas del IV, fortalezas cruzadas ni urbanismo moderno.",
+      "sourceIds": [
+        "byzantium"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Orontes city bank",
+          "lonLat": [
+            36.155,
+            36.203
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Silpius slope",
+          "lonLat": [
+            36.167,
+            36.188
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "North valley road",
+          "lonLat": [
+            36.155,
+            36.25
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            36.17,
+            36.1
+          ],
+          [
+            36.16,
+            36.19
+          ],
+          [
+            36.155,
+            36.205
+          ],
+          [
+            36.135,
+            36.25
+          ],
+          [
+            36.07,
+            36.29
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "byzantium"
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem and approaches",
+      "bbox": [
+        35.12,
+        31.7,
+        35.3,
+        31.86
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Meseta calcárea mediterránea; olivares discontinuos, no selva.",
+      "water": "Valle del Cedrón al este; barranco, no río navegable.",
+      "hills": "Monte de los Olivos al este; valles al sur y oeste.",
+      "roads": "Accesos norte, oeste y camino oriental; preservar relación entre meseta y valles.",
+      "anachronisms": "No Cúpula de la Roca antes de 691 ni murallas otomanas de 1537.",
+      "sourceIds": [
+        "eusebius-iii"
+      ],
+      "referenceAsset": "dome-rock",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Temple platform",
+          "lonLat": [
+            35.235,
+            31.778
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Mount of Olives ridge",
+          "lonLat": [
+            35.245,
+            31.779
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southern valley road",
+          "lonLat": [
+            35.23,
+            31.75
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "eusebius-iii"
+      ]
+    },
+    {
+      "id": "bithynia",
+      "name": "Nicomedia and Bithynian roads",
+      "bbox": [
+        29.75,
+        40.55,
+        30.25,
+        40.95
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Valles húmedos con cultivos, bosques periféricos y colinas.",
+      "water": "Golfo de Nicomedia al oeste; escorrentías locales sin inventar un gran río.",
+      "hills": "Laderas norte/sur; paso principal longitudinal.",
+      "roads": "Nicomedia sobre eje costero; ramal interior separado de costa.",
+      "anachronisms": "Sin autovías ni costa industrial.",
+      "sourceIds": [
+        "pliny",
+        "byzantium"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Nicomedia regional anchor",
+          "lonLat": [
+            29.924,
+            40.766
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Gulf head",
+          "lonLat": [
+            29.91,
+            40.75
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Eastern inland road",
+          "lonLat": [
+            30.12,
+            40.77
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "pliny",
+        "byzantium"
+      ]
+    },
+    {
+      "id": "milan",
+      "name": "Mediolanum and Lombard plain",
+      "bbox": [
+        9.02,
+        45.3,
+        9.35,
+        45.65
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura del Po irrigada; agricultura, arbolado y caminos romanos.",
+      "water": "Canales menores como reconstrucción; no Navigli medievales como red antigua.",
+      "hills": "Relieve prácticamente llano en área urbana.",
+      "roads": "Ciudad, salidas por vías consulares; Alpes fuera del mapa local.",
+      "anachronisms": "No catedral gótica ni canales tardomedievales.",
+      "sourceIds": [
+        "lactantius"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Mediolanum civic core",
+          "lonLat": [
+            9.186,
+            45.464
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Northern approach",
+          "lonLat": [
+            9.18,
+            45.55
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southeast road",
+          "lonLat": [
+            9.24,
+            45.4
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "lactantius"
+      ]
+    },
+    {
+      "id": "milvio",
+      "name": "Pons Mulvius and northern Rome",
+      "bbox": [
+        12.4,
+        41.9,
+        12.56,
+        42.0
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Valle del Tíber, campos en la orilla norte, colinas laterales.",
+      "water": "Tíber de norte a sur con meandros; puente Milvio sobre cauce real.",
+      "hills": "Orillas elevadas y lomas al oeste/este; no cañón artificial.",
+      "roads": "Via Flaminia llega desde norte; Roma al sur del puente.",
+      "anachronisms": "Puente provisional/ruptura discutidos; paso alterno táctico rotulado reconstrucción. Sin torre de 1805.",
+      "sourceIds": [
+        "eusebius-ix",
+        "lactantius"
+      ],
+      "referenceAsset": "ponte-milvio",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Pons Mulvius site",
+          "lonLat": [
+            12.466,
+            41.936
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Flaminia north road",
+          "lonLat": [
+            12.468,
+            41.965
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southern Rome approach",
+          "lonLat": [
+            12.47,
+            41.92
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            12.48,
+            42.0
+          ],
+          [
+            12.477,
+            41.955
+          ],
+          [
+            12.466,
+            41.936
+          ],
+          [
+            12.455,
+            41.931
+          ],
+          [
+            12.46,
+            41.921
+          ],
+          [
+            12.47,
+            41.905
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "eusebius-ix",
+        "lactantius"
+      ]
+    },
+    {
+      "id": "nicaea",
+      "name": "Nicaea and Ascanian Lake",
+      "bbox": [
+        29.6,
+        40.34,
+        29.88,
+        40.53
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura oriental del lago con cultivos; colinas periféricas.",
+      "water": "Lago Ascanio/Iznik al oeste de la ciudad; salida por costa occidental.",
+      "hills": "Montañas norte/sur fuera del centro; pendientes transitables.",
+      "roads": "Ciudad junto a orilla este; camino de Nicomedia desde noroeste y ramal sur.",
+      "anachronisms": "No representar el concilio en Constantinopla ni inventar catedral gótica.",
+      "sourceIds": [
+        "nicaea",
+        "iconoclasm"
+      ],
+      "referenceAsset": "iznik-lake",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Nicaea civic core",
+          "lonLat": [
+            29.72,
+            40.429
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Lake east shore",
+          "lonLat": [
+            29.71,
+            40.43
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "North gate approach",
+          "lonLat": [
+            29.72,
+            40.46
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            29.6,
+            40.43
+          ],
+          [
+            29.65,
+            40.445
+          ],
+          [
+            29.7,
+            40.44
+          ],
+          [
+            29.712,
+            40.425
+          ],
+          [
+            29.695,
+            40.4
+          ],
+          [
+            29.63,
+            40.39
+          ],
+          [
+            29.6,
+            40.41
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "lake-outline"
+      },
+      "layerSources": [
+        "natural-earth",
+        "nicaea",
+        "iconoclasm"
+      ]
+    },
+    {
+      "id": "constantinople",
+      "name": "Byzantion / Constantinople peninsula",
+      "bbox": [
+        28.88,
+        40.96,
+        29.04,
+        41.07
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Península urbana y huertas de Tracia al oeste.",
+      "water": "Cuerno de Oro al norte; Bósforo al este; Propóntide al sur.",
+      "hills": "Lomas de península, sin montañas interiores.",
+      "roads": "Accesos terrestres desde oeste; puertos al sur/norte.",
+      "anachronisms": "Antes 413 no muralla teodosiana; antes 537 no Hagia Sophia actual; sin minaretes ni puente moderno del Bósforo.",
+      "sourceIds": [
+        "istanbul",
+        "byzantium"
+      ],
+      "referenceAsset": "theodosian-walls",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Historic peninsula core",
+          "lonLat": [
+            28.978,
+            41.009
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Land wall corridor",
+          "lonLat": [
+            28.925,
+            41.025
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Golden Horn quay",
+          "lonLat": [
+            28.965,
+            41.024
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "istanbul",
+        "byzantium"
+      ]
+    },
+    {
+      "id": "galilee",
+      "name": "Galilee, Sepphoris and Tiberias",
+      "bbox": [
+        35.113,
+        32.6,
+        35.65,
+        32.95
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Galilea con colinas cultivadas y asentamientos; costa del lago interior.",
+      "water": "Mar de Galilea al este; Jordán sale hacia sur, no al Mediterráneo.",
+      "hills": "Seforis al oeste elevada; Tiberíades en costa occidental del lago.",
+      "roads": "Camino de mesetas hacia Tiberíades y eje de poblados.",
+      "anachronisms": "No mezclar aldeas separadas 30 km como barrio continuo; escala regional comprimida.",
+      "sourceIds": [
+        "beth-shearim"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Tiberias west shore",
+          "lonLat": [
+            35.531,
+            32.79
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Bet Shearim",
+          "lonLat": [
+            35.128,
+            32.703
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Sepphoris area",
+          "lonLat": [
+            35.279,
+            32.754
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            35.55,
+            32.85
+          ],
+          [
+            35.58,
+            32.83
+          ],
+          [
+            35.59,
+            32.77
+          ],
+          [
+            35.56,
+            32.72
+          ],
+          [
+            35.54,
+            32.73
+          ],
+          [
+            35.53,
+            32.8
+          ],
+          [
+            35.55,
+            32.85
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "lake-outline"
+      },
+      "layerSources": [
+        "natural-earth",
+        "beth-shearim"
+      ]
+    },
+    {
+      "id": "dura",
+      "name": "Dura-Europos",
+      "bbox": [
+        40.67,
+        34.71,
+        40.77,
+        34.79
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Meseta árida, ciudad junto a escarpe sobre margen derecha.",
+      "water": "Éufrates al noreste/este del casco; no rodear ciudad con mar.",
+      "hills": "Escarpe este; llanura desértica oeste.",
+      "roads": "Cuadrícula excavada y puerta palmirena occidental como referencia; barrio de sinagoga junto a muro oeste.",
+      "anachronisms": "Sin santuario moderno ni cúpulas de época omeya.",
+      "sourceIds": [
+        "dura",
+        "dura-unesco"
+      ],
+      "referenceAsset": "dura-plan",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Western synagogue block",
+          "lonLat": [
+            40.727,
+            34.749
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Euphrates bluff",
+          "lonLat": [
+            40.737,
+            34.749
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southern road gate",
+          "lonLat": [
+            40.731,
+            34.744
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            40.74,
+            34.79
+          ],
+          [
+            40.742,
+            34.765
+          ],
+          [
+            40.74,
+            34.75
+          ],
+          [
+            40.755,
+            34.73
+          ],
+          [
+            40.77,
+            34.71
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "dura",
+        "dura-unesco"
+      ]
+    },
+    {
+      "id": "rome-ostia",
+      "name": "Rome, Portus and Ostia",
+      "bbox": [
+        12.18,
+        41.69,
+        12.56,
+        41.96
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Corredor entre litoral y Roma, cultivos/colinas y cauce.",
+      "water": "Tíber desemboca al suroeste; Portus al norte de desembocadura, Ostia al sur.",
+      "hills": "Roma elevada respecto al litoral; llano portuario.",
+      "roads": "Eje fluvial hacia Roma noreste; caminos paralelos a ambas orillas.",
+      "anachronisms": "Litoral antiguo más interior; línea moderna solo orientación, no coste reconstruida. Sin San Pedro renacentista.",
+      "sourceIds": [
+        "augustine",
+        "gregory-peace"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Rome civic centre",
+          "lonLat": [
+            12.486,
+            41.892
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Ostia harbour region",
+          "lonLat": [
+            12.288,
+            41.756
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Lower Tiber road",
+          "lonLat": [
+            12.4,
+            41.83
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            12.477,
+            41.95
+          ],
+          [
+            12.47,
+            41.925
+          ],
+          [
+            12.47,
+            41.9
+          ],
+          [
+            12.475,
+            41.87
+          ],
+          [
+            12.42,
+            41.85
+          ],
+          [
+            12.4,
+            41.8
+          ],
+          [
+            12.28,
+            41.76
+          ],
+          [
+            12.23,
+            41.73
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "augustine",
+        "gregory-peace"
+      ]
+    },
+    {
+      "id": "pavia",
+      "name": "Pavia and approaches",
+      "bbox": [
+        9.02,
+        45.05,
+        9.3,
+        45.35
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura agrícola; Pavía junto a Ticino.",
+      "water": "Ticino norte-sur y unión regional con Po al sur.",
+      "hills": "Relieve bajo; Alpes no dentro de ciudad.",
+      "roads": "Vía desde norte hacia ciudad y puertas; itinerarios alpinos se narran fuera del mapa.",
+      "anachronisms": "Sin armas de fuego ni castillos modernos. Donación de territorios no dibuja automáticamente un Estado actual.",
+      "sourceIds": [
+        "einhard"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Pavia Ticinum",
+          "lonLat": [
+            9.158,
+            45.185
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Ticino south bank",
+          "lonLat": [
+            9.156,
+            45.174
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Northern supply road",
+          "lonLat": [
+            9.16,
+            45.25
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            9.02,
+            45.21
+          ],
+          [
+            9.08,
+            45.2
+          ],
+          [
+            9.14,
+            45.177
+          ],
+          [
+            9.19,
+            45.18
+          ],
+          [
+            9.25,
+            45.16
+          ],
+          [
+            9.3,
+            45.13
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "einhard"
+      ]
+    },
+    {
+      "id": "chalcedon",
+      "name": "Chalcedon and Bosporus",
+      "bbox": [
+        28.98,
+        40.93,
+        29.12,
+        41.05
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Ciudad asiática costera y caminos locales.",
+      "water": "Bósforo al oeste; mar de Mármara al sur; Constantinopla enfrente noroeste.",
+      "hills": "Colinas asiáticas al este.",
+      "roads": "Muelles al oeste y caminos terrestres al este; cruce por barcos.",
+      "anachronisms": "No puente al otro continente; no colocar concilio en península europea.",
+      "sourceIds": [
+        "chalcedon",
+        "istanbul"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Chalcedon Kadikoy shore",
+          "lonLat": [
+            29.025,
+            40.991
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Bosphorus crossing destination",
+          "lonLat": [
+            29.015,
+            41.03
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Inland Asian road",
+          "lonLat": [
+            29.08,
+            40.99
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "chalcedon",
+        "istanbul"
+      ]
+    },
+    {
+      "id": "medina",
+      "name": "Yathrib / Medina oasis",
+      "bbox": [
+        39.45,
+        24.3,
+        39.8,
+        24.65
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Oasis agrícola entre campos de lava áridos; palmerales en torno a agua.",
+      "water": "Pozos/huertas locales; no río perenne ni océano.",
+      "hills": "Uhud al norte; harrat volcánicas al este/oeste, accesos por corredores.",
+      "roads": "Huertas, grupos de viviendas y caminos entre oasis; La Meca se indica al sur fuera del mapa.",
+      "anachronisms": "Sin gran mezquita monumental moderna ni cúpula verde. No representar al Profeta como unidad combatiente.",
+      "sourceIds": [
+        "donner",
+        "byzantium-islam"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Yathrib oasis centre",
+          "lonLat": [
+            39.611,
+            24.468
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Northern oasis",
+          "lonLat": [
+            39.61,
+            24.54
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Western oasis road",
+          "lonLat": [
+            39.55,
+            24.47
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "donner",
+        "byzantium-islam"
+      ]
+    },
+    {
+      "id": "yamama",
+      "name": "Yamama oasis corridor",
+      "bbox": [
+        46.35,
+        24.15,
+        47.0,
+        24.8
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Meseta árida de Najd, wadis y oasis separados.",
+      "water": "Wadis estacionales; pozos identificados, ninguna marea.",
+      "hills": "Mesetas y pasos con gradientes amplios.",
+      "roads": "Paso entre oasis y huertas; aproximación de caravana desde oeste.",
+      "anachronisms": "No llamar desierto vacío a una región agrícola; combate específico es reconstrucción sin orden de batalla seguro.",
+      "sourceIds": [
+        "donner"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Al Yamama regional locality",
+          "lonLat": [
+            46.73,
+            24.22
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Oasis approach",
+          "lonLat": [
+            46.69,
+            24.29
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Northern corridor",
+          "lonLat": [
+            46.72,
+            24.5
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "donner"
+      ]
+    },
+    {
+      "id": "yarmuk",
+      "name": "Yarmuk and Golan approaches",
+      "bbox": [
+        35.7,
+        32.63,
+        36.15,
+        33.02
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanuras/mesetas al norte de cañones; vegetación mediterránea discontinua.",
+      "water": "Yarmuk fluye hacia oeste y Jordán; barrancos al sur y oeste del campo esquemático.",
+      "hills": "Escarpes de cauce y Golan al norte; no cruzables por cualquier unidad.",
+      "roads": "Aproximaciones por meseta noreste; pasos al suroeste, despliegue exacto reconstruido.",
+      "anachronisms": "Sin puente ferroviario moderno ni oleadas equivalentes a cifras de crónica.",
+      "sourceIds": [
+        "yarmuk"
+      ],
+      "referenceAsset": "yarmuk-valley",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Regional plateau, not exact camp",
+          "lonLat": [
+            35.96,
+            32.85
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Yarmuk gorge corridor",
+          "lonLat": [
+            35.91,
+            32.7
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Western ravine approach",
+          "lonLat": [
+            35.79,
+            32.77
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            36.15,
+            32.72
+          ],
+          [
+            36.03,
+            32.71
+          ],
+          [
+            35.95,
+            32.7
+          ],
+          [
+            35.9,
+            32.71
+          ],
+          [
+            35.82,
+            32.7
+          ],
+          [
+            35.77,
+            32.65
+          ],
+          [
+            35.72,
+            32.645
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "yarmuk"
+      ]
+    },
+    {
+      "id": "qadisiyya",
+      "name": "Qadisiyya / Sawad approaches",
+      "bbox": [
+        43.75,
+        31.65,
+        44.65,
+        32.3
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Frontera entre estepa occidental y tierras irrigadas iraquíes.",
+      "water": "Canales/cauces en este; paleohidrografía incierta, no usar cauce moderno como prueba de 637.",
+      "hills": "Relieve muy llano; no crear cordilleras en el Sawad.",
+      "roads": "Ruta de al-Hira y campos; emplazamiento de batalla aproximado.",
+      "anachronisms": "Sitio y fecha discutidos; mapa se titula reconstrucción regional.",
+      "sourceIds": [
+        "qadisiyya"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Traditional battle region, uncertain",
+          "lonLat": [
+            44.22,
+            31.98
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Al Hira regional control",
+          "lonLat": [
+            44.36,
+            31.89
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Western dry approach",
+          "lonLat": [
+            44.03,
+            31.98
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            44.4,
+            32.3
+          ],
+          [
+            44.4,
+            32.1
+          ],
+          [
+            44.37,
+            31.95
+          ],
+          [
+            44.4,
+            31.8
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "qadisiyya"
+      ]
+    },
+    {
+      "id": "fustat",
+      "name": "Babylon, Fustat and Nile",
+      "bbox": [
+        31.15,
+        29.94,
+        31.35,
+        30.16
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Valle cultivado y borde desértico al este.",
+      "water": "Nilo de sur a norte al oeste de Fustat; delta fuera de zona norte.",
+      "hills": "Acantilados/meseta árida al este, llanura fluvial oeste.",
+      "roads": "Fortaleza de Babilonia en orilla oriental; ruta norte a Alejandría fuera del mapa.",
+      "anachronisms": "Alejandría no es barrio de Fustat; no pirámides junto a cada casa ni construcciones mamelucas.",
+      "sourceIds": [
+        "egypt"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Babylon fortress east bank",
+          "lonLat": [
+            31.23,
+            30.006
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Fustat region",
+          "lonLat": [
+            31.24,
+            30.015
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Nile receiving bank",
+          "lonLat": [
+            31.225,
+            30.04
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            31.23,
+            29.94
+          ],
+          [
+            31.223,
+            30.0
+          ],
+          [
+            31.22,
+            30.025
+          ],
+          [
+            31.224,
+            30.06
+          ],
+          [
+            31.233,
+            30.12
+          ],
+          [
+            31.24,
+            30.16
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "egypt"
+      ]
+    },
+    {
+      "id": "basra",
+      "name": "Early Basra and marsh edge",
+      "bbox": [
+        47.35,
+        30.15,
+        47.9,
+        30.75
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Asentamiento temprano al borde árido oeste de zonas irrigadas/pantanosas.",
+      "water": "Canales al este; Shatt al-Arab referencia regional, curso antiguo incierto.",
+      "hills": "Llano con islas secas; no montaña arbitraria.",
+      "roads": "Ruta hacia campamentos al oeste y embarcaderos al este.",
+      "anachronisms": "Basora temprana no se coloca en pleno casco moderno como certeza arqueológica.",
+      "sourceIds": [
+        "ali"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Early Basra Az Zubayr region",
+          "lonLat": [
+            47.7,
+            30.38
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Dry western approach",
+          "lonLat": [
+            47.58,
+            30.39
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Irrigated eastern margin",
+          "lonLat": [
+            47.81,
+            30.45
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "ali"
+      ]
+    },
+    {
+      "id": "siffin",
+      "name": "Siffin / Euphrates near Raqqa",
+      "bbox": [
+        38.55,
+        35.6,
+        39.2,
+        36.05
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura seca junto a Éufrates; acantilados bajos y acceso a agua.",
+      "water": "Éufrates atraviesa valle de noroeste a sureste; accesos de ambas fuerzas cerca del cauce.",
+      "hills": "Terrazas alejadas del río; no montaña central que parta el valle.",
+      "roads": "Ruta Siria desde oeste y ruta Iraq desde sureste; campamentos ubicación hipotética.",
+      "anachronisms": "No fijar campamentos exactos ni episodios de textos sagrados como mecanismo mágico.",
+      "sourceIds": [
+        "ali"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Traditional Siffin corridor, uncertain",
+          "lonLat": [
+            38.7,
+            35.72
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Raqqa regional river control",
+          "lonLat": [
+            39.01,
+            35.92
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Iraqi southeast approach",
+          "lonLat": [
+            39.03,
+            35.69
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            38.55,
+            35.72
+          ],
+          [
+            38.7,
+            35.73
+          ],
+          [
+            38.8,
+            35.79
+          ],
+          [
+            38.9,
+            35.85
+          ],
+          [
+            39.01,
+            35.92
+          ],
+          [
+            39.14,
+            35.8
+          ],
+          [
+            39.2,
+            35.73
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "ali"
+      ]
+    },
+    {
+      "id": "nahrawan",
+      "name": "Nahrawan canal region",
+      "bbox": [
+        44.4,
+        33.0,
+        44.85,
+        33.55
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura al este de Tigris con canales y diques.",
+      "water": "Canal de Nahrawan y Tigris como ejes separados; trazado antiguo incierto.",
+      "hills": "Terreno bajo; terraplenes, no cordillera.",
+      "roads": "Camino de Kufa a noreste narrado fuera del mapa; acceso local junto a canal.",
+      "anachronisms": "No incluir Bagdad abasí en 658.",
+      "sourceIds": [
+        "ali"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Nahrawan regional reconstruction",
+          "lonLat": [
+            44.69,
+            33.3
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Western canal approach",
+          "lonLat": [
+            44.57,
+            33.3
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Eastern withdrawal road",
+          "lonLat": [
+            44.77,
+            33.23
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            44.66,
+            33.55
+          ],
+          [
+            44.69,
+            33.3
+          ],
+          [
+            44.72,
+            33.15
+          ],
+          [
+            44.76,
+            33.0
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "ali"
+      ]
+    },
+    {
+      "id": "kufa",
+      "name": "Kufa and Euphrates margin",
+      "bbox": [
+        44.23,
+        31.93,
+        44.52,
+        32.16
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Asentamiento sobre margen de tierras irrigadas; estepa al oeste.",
+      "water": "Éufrates al este/noreste según ancla moderna; posición del VII aproximada.",
+      "hills": "Llano, bancos/drenajes; sin montaña artificial.",
+      "roads": "Plaza, administración, caminos a Basora y Siria; viviendas abiertas.",
+      "anachronisms": "Sin gran santuario de Najaf posterior ni mezquita actual completa.",
+      "sourceIds": [
+        "ali",
+        "hasan"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Kufa settlement centre",
+          "lonLat": [
+            44.399,
+            32.03
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Eastern river margin",
+          "lonLat": [
+            44.422,
+            32.05
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Western dry road",
+          "lonLat": [
+            44.32,
+            32.03
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            44.43,
+            32.16
+          ],
+          [
+            44.42,
+            32.1
+          ],
+          [
+            44.422,
+            32.05
+          ],
+          [
+            44.43,
+            32.0
+          ],
+          [
+            44.46,
+            31.93
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "ali",
+        "hasan"
+      ]
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus / Ghouta",
+      "bbox": [
+        36.12,
+        33.4,
+        36.48,
+        33.65
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Oasis Ghouta, campos y huertas junto a núcleo urbano.",
+      "water": "Barada entra desde noroeste y se dispersa hacia oasis oriental.",
+      "hills": "Qasioun al norte/noroeste; desierto al este, no Mediterráneo.",
+      "roads": "Caminos regionales a Palestina/sur y Iraq/este.",
+      "anachronisms": "No gran mezquita omeya monumental en 661: fase de al-Walid posterior.",
+      "sourceIds": [
+        "umayyad-art"
+      ],
+      "referenceAsset": "damascus-mosque",
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Damascus old city",
+          "lonLat": [
+            36.306,
+            33.512
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Qasioun slope",
+          "lonLat": [
+            36.28,
+            33.56
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Eastern Ghouta",
+          "lonLat": [
+            36.39,
+            33.51
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            36.12,
+            33.61
+          ],
+          [
+            36.23,
+            33.54
+          ],
+          [
+            36.3,
+            33.52
+          ],
+          [
+            36.34,
+            33.515
+          ],
+          [
+            36.45,
+            33.5
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "umayyad-art"
+      ]
+    },
+    {
+      "id": "carthage",
+      "name": "Carthage and Tunis lagoon",
+      "bbox": [
+        10.18,
+        36.7,
+        10.4,
+        36.92
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Costa mediterránea, promontorio urbano, campos de interior.",
+      "water": "Mar al norte/este; laguna al sur/oeste separada de puertos históricos.",
+      "hills": "Colina Byrsa y lomas interiores, sin desierto continuo.",
+      "roads": "Puertos al este y ruta terrestre interior; retirada naval accesible.",
+      "anachronisms": "Costas/lagunas alteradas; no fortificaciones españolas/otomanas.",
+      "sourceIds": [
+        "byzantium-islam"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Byrsa hill",
+          "lonLat": [
+            10.324,
+            36.853
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Ancient harbour area",
+          "lonLat": [
+            10.324,
+            36.84
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Inland approach",
+          "lonLat": [
+            10.27,
+            36.84
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "byzantium-islam"
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name": "Strait of Gibraltar / landing corridor",
+      "bbox": [
+        -5.7,
+        35.894999999999996,
+        -5.25,
+        36.25
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Costa rocosa, ensenadas y colinas del estrecho.",
+      "water": "África al sur, Iberia al norte; tramo de mar separa ambos.",
+      "hills": "Peñón/sierras al norte; ruta costera oeste y paso interior.",
+      "roads": "Desembarco junto a costa, no representar toda conquista peninsular en un mapa.",
+      "anachronisms": "No fuerte moderno; ubicación exacta de Guadalete no se afirma ni se traslada al estrecho.",
+      "sourceIds": [
+        "umayyad-art"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "North landing region",
+          "lonLat": [
+            -5.36,
+            36.11
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Rock geographic control",
+          "lonLat": [
+            -5.344,
+            36.14
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "African coast control",
+          "lonLat": [
+            -5.45,
+            35.91
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "umayyad-art"
+      ]
+    },
+    {
+      "id": "zab",
+      "name": "Great Zab / northern Iraq",
+      "bbox": [
+        43.05,
+        35.7,
+        43.75,
+        36.3
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanuras y estribaciones septentrionales iraquíes.",
+      "water": "Gran Zab desciende de noreste hacia Tigris al suroeste; localización de combate aproximada.",
+      "hills": "Colinas al noreste; llano para convoyes cerca de río.",
+      "roads": "Pasos y rutas hacia Mosul/oeste; Siria fuera del mapa.",
+      "anachronisms": "Sin castillos medievales tardíos ni plantear una victoria omeya histórica en 750.",
+      "sourceIds": [
+        "umayyad-art"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Great Zab regional crossing, uncertain",
+          "lonLat": [
+            43.49,
+            36.06
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Northeast river corridor",
+          "lonLat": [
+            43.7,
+            36.25
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southern withdrawal approach",
+          "lonLat": [
+            43.41,
+            35.88
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            43.75,
+            36.3
+          ],
+          [
+            43.7,
+            36.25
+          ],
+          [
+            43.6,
+            36.16
+          ],
+          [
+            43.49,
+            36.06
+          ],
+          [
+            43.43,
+            35.97
+          ],
+          [
+            43.3,
+            35.9
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "umayyad-art"
+      ]
+    },
+    {
+      "id": "karbala",
+      "name": "Karbala plain",
+      "bbox": [
+        43.85,
+        32.4,
+        44.15,
+        32.7
+      ],
+      "coordinatesStatus": "approximate-modern-place-anchors; historical battle positions uncertain",
+      "north": "top",
+      "terrain": "Llanura seca al oeste del eje del Éufrates con accesos a cultivos y agua.",
+      "water": "Río/canales al este; conexión de 680 reconstruida con cautela.",
+      "hills": "Relieve prácticamente llano; no dunas gigantes bloqueando una ciudad.",
+      "roads": "Ruta hacia Kufa al sureste; campamento fuera de santuario moderno.",
+      "anachronisms": "No cúpulas doradas/santuario actual ni caricaturas de figuras veneradas.",
+      "sourceIds": [
+        "husayn",
+        "karbala"
+      ],
+      "referenceAsset": null,
+      "landmarks": [
+        {
+          "id": "anchor-1",
+          "name": "Karbala regional locality",
+          "lonLat": [
+            44.025,
+            32.616
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-2",
+          "name": "Eastern watered margin",
+          "lonLat": [
+            44.105,
+            32.62
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        },
+        {
+          "id": "anchor-3",
+          "name": "Southeast Kufa road",
+          "lonLat": [
+            44.095,
+            32.5
+          ],
+          "certainty": "approximate-modern-location; no exact ancient footprint or troop position asserted"
+        }
+      ],
+      "waterControlLine": {
+        "coordinates": [
+          [
+            44.1,
+            32.7
+          ],
+          [
+            44.105,
+            32.62
+          ],
+          [
+            44.13,
+            32.5
+          ],
+          [
+            44.15,
+            32.4
+          ]
+        ],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "layerSources": [
+        "natural-earth",
+        "husayn",
+        "karbala"
+      ]
+    }
+  ]
+}

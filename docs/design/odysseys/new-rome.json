@@ -1,0 +1,1881 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "new-rome",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-across-the-strait": [
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the Chalcedon landing road",
+          "es-ES": "el camino del desembarcadero de Calcedonia"
+        },
+        "title": {
+          "en": "The Path Between — the Chalcedon landing road",
+          "es-ES": "El camino entre ambos — el camino del desembarcadero de Calcedonia"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the Chalcedon landing road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de el camino del desembarcadero de Calcedonia; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the council reception copies",
+          "es-ES": "las copias de recepción del concilio"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the council reception copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de recepción del concilio"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the council reception copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de las copias de recepción del concilio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the waiting shore households",
+          "es-ES": "los hogares que esperan en la costa"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the waiting shore households",
+          "es-ES": "Un lugar junto al hogar — los hogares que esperan en la costa"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the waiting shore households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de los hogares que esperan en la costa; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the landing supply post",
+          "es-ES": "el puesto de suministros del desembarcadero"
+        },
+        "title": {
+          "en": "One Honest Consignment — the landing supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros del desembarcadero"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the landing supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros del desembarcadero; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the shore depot",
+          "es-ES": "el depósito costero"
+        },
+        "title": {
+          "en": "Raise the Store Again — the shore depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito costero"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the shore depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de el depósito costero; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the land-delegation approaches",
+          "es-ES": "las aproximaciones de la delegación terrestre"
+        },
+        "title": {
+          "en": "The Road Seen First — the land-delegation approaches",
+          "es-ES": "El camino visto primero — las aproximaciones de la delegación terrestre"
+        },
+        "rationale": {
+          "en": "The documented setting of Across the Strait supports this bounded fictional local task. It concerns the land-delegation approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Al otro lado del estrecho permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de la delegación terrestre; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-the-city-in-ashes": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the threatened harbour quarter",
+          "es-ES": "el barrio amenazado del puerto"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the threatened harbour quarter",
+          "es-ES": "Quienes eligen marcharse — el barrio amenazado del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the threatened harbour quarter; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de el barrio amenazado del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the workshop families",
+          "es-ES": "las familias de los talleres"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the workshop families",
+          "es-ES": "Un lugar junto al hogar — las familias de los talleres"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the workshop families; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de las familias de los talleres; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the workshop-copy desk",
+          "es-ES": "la mesa de copias de los talleres"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the workshop-copy desk",
+          "es-ES": "Lo que el fuego no debe llevarse — la mesa de copias de los talleres"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the workshop-copy desk; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de la mesa de copias de los talleres; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the harbour relief store",
+          "es-ES": "el almacén de socorro del puerto"
+        },
+        "title": {
+          "en": "Raise the Store Again — the harbour relief store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de socorro del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the harbour relief store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de el almacén de socorro del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the streets outside the Hippodrome",
+          "es-ES": "las calles fuera del Hipódromo"
+        },
+        "title": {
+          "en": "The Path Between — the streets outside the Hippodrome",
+          "es-ES": "El camino entre ambos — las calles fuera del Hipódromo"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the streets outside the Hippodrome; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de las calles fuera del Hipódromo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the evacuation approaches",
+          "es-ES": "las aproximaciones de la evacuación"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the evacuation approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones de la evacuación"
+        },
+        "rationale": {
+          "en": "The documented setting of The City in Ashes supports this bounded fictional local task. It concerns the evacuation approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La ciudad entre cenizas permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de la evacuación; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-empty-granary": [
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the affected households",
+          "es-ES": "los hogares afectados"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the affected households",
+          "es-ES": "Un lugar junto al hogar — los hogares afectados"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the affected households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de los hogares afectados; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the second grain depot",
+          "es-ES": "el segundo depósito de grano"
+        },
+        "title": {
+          "en": "Raise the Store Again — the second grain depot",
+          "es-ES": "Levantar de nuevo el almacén — el segundo depósito de grano"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the second grain depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de el segundo depósito de grano; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the distribution records",
+          "es-ES": "los registros de distribución"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the distribution records",
+          "es-ES": "Lo que el fuego no debe llevarse — los registros de distribución"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the distribution records; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de los registros de distribución; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the harbour grain post",
+          "es-ES": "el puesto de grano del puerto"
+        },
+        "title": {
+          "en": "One Honest Consignment — the harbour grain post",
+          "es-ES": "Una remesa honrada — el puesto de grano del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the harbour grain post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de el puesto de grano del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the lower-contact delivery street",
+          "es-ES": "la calle de reparto de menor contacto"
+        },
+        "title": {
+          "en": "The Path Between — the lower-contact delivery street",
+          "es-ES": "El camino entre ambos — la calle de reparto de menor contacto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the lower-contact delivery street; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de la calle de reparto de menor contacto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the households seeking refuge",
+          "es-ES": "los hogares que buscan refugio"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the households seeking refuge",
+          "es-ES": "Quienes eligen marcharse — los hogares que buscan refugio"
+        },
+        "rationale": {
+          "en": "The documented setting of The Empty Granary supports this bounded fictional local task. It concerns the households seeking refuge; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El granero vacío permite esta tarea local ficticia y limitada. Se ocupa de los hogares que buscan refugio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-winter-at-the-walls": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the wall-repair depot",
+          "es-ES": "el depósito de reparación de la muralla"
+        },
+        "title": {
+          "en": "Raise the Store Again — the wall-repair depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito de reparación de la muralla"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the wall-repair depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de el depósito de reparación de la muralla; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the northern harbour approaches",
+          "es-ES": "las aproximaciones al puerto norte"
+        },
+        "title": {
+          "en": "The Road Seen First — the northern harbour approaches",
+          "es-ES": "El camino visto primero — las aproximaciones al puerto norte"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the northern harbour approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al puerto norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the land-wall reserve routes",
+          "es-ES": "las rutas de reserva de la muralla terrestre"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the land-wall reserve routes",
+          "es-ES": "Ojos más allá de la puerta — las rutas de reserva de la muralla terrestre"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the land-wall reserve routes; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de las rutas de reserva de la muralla terrestre; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the repair crews households",
+          "es-ES": "los hogares de las cuadrillas de reparación"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the repair crews households",
+          "es-ES": "Un lugar junto al hogar — los hogares de las cuadrillas de reparación"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the repair crews households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de los hogares de las cuadrillas de reparación; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the inner-wall supply lane",
+          "es-ES": "la calle de suministros al interior de la muralla"
+        },
+        "title": {
+          "en": "The Path Between — the inner-wall supply lane",
+          "es-ES": "El camino entre ambos — la calle de suministros al interior de la muralla"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the inner-wall supply lane; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de la calle de suministros al interior de la muralla; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the repair inventory",
+          "es-ES": "el inventario de reparación"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the repair inventory",
+          "es-ES": "Lo que el fuego no debe llevarse — el inventario de reparación"
+        },
+        "rationale": {
+          "en": "The documented setting of Winter at the Walls supports this bounded fictional local task. It concerns the repair inventory; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Invierno ante las murallas permite esta tarea local ficticia y limitada. Se ocupa de el inventario de reparación; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "05-pieces-of-a-memory": [
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the three workshop memories",
+          "es-ES": "las memorias de los tres talleres"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the three workshop memories",
+          "es-ES": "Lo que el fuego no debe llevarse — las memorias de los tres talleres"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the three workshop memories; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de las memorias de los tres talleres; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the Nicaea workshop road",
+          "es-ES": "el camino de los talleres de Nicea"
+        },
+        "title": {
+          "en": "The Path Between — the Nicaea workshop road",
+          "es-ES": "El camino entre ambos — el camino de los talleres de Nicea"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the Nicaea workshop road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de el camino de los talleres de Nicea; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the workshop supply post",
+          "es-ES": "el puesto de suministros de los talleres"
+        },
+        "title": {
+          "en": "One Honest Consignment — the workshop supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de los talleres"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the workshop supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de los talleres; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the archive supply store",
+          "es-ES": "el almacén de suministros del archivo"
+        },
+        "title": {
+          "en": "Raise the Store Again — the archive supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros del archivo"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the archive supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros del archivo; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the workshop households",
+          "es-ES": "los hogares de los talleres"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the workshop households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los talleres"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the workshop households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los talleres; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the travelling artisans families",
+          "es-ES": "las familias de artesanos itinerantes"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the travelling artisans families",
+          "es-ES": "Quienes eligen marcharse — las familias de artesanos itinerantes"
+        },
+        "rationale": {
+          "en": "The documented setting of Pieces of a Memory supports this bounded fictional local task. It concerns the travelling artisans families; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piezas de una memoria permite esta tarea local ficticia y limitada. Se ocupa de las familias de artesanos itinerantes; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "Beyond the Golden Gate",
+      "es-ES": "Más allá de la Puerta Dorada"
+    },
+    "publicId": "CDF-C04",
+    "internalName": "CDF_NewRome",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 32,
+    "narratorId": "anna-mosaicist",
+    "personaLens": {
+      "en": "Materials, repairs and workshop traditions",
+      "es-ES": "Materiales, reparaciones y tradiciones de taller"
+    },
+    "deliveryTone": {
+      "en": "sensory patience, anger held in check",
+      "es-ES": "paciencia sensorial, rabia contenida"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "anna-mosaicist",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-across-the-strait",
+      "02-the-city-in-ashes",
+      "03-the-empty-granary",
+      "04-winter-at-the-walls",
+      "05-pieces-of-a-memory"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 32,
+    "selectionNotes": [
+      "Act counts are subordinate to source chronology and are not filler quotas.",
+      "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
+      "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
+      "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "Heirs of the Eastern Gate",
+        "es-ES": "Herederos de la puerta oriental"
+      },
+      "historicalYearBand": [
+        337,
+        438
+      ],
+      "dramaticPurpose": "La capital recibe sucesión y nuevas instituciones;330 es recap contextual, no misión del periodo337–843.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-administrative-transition-constantinople",
+        "02-council-and-city-logistics-constantinople",
+        "03-competing-dispatches-constantinople",
+        "04-civilian-refuge-and-dispatch-constantinople",
+        "05-finite-school-works-constantinople",
+        "06-separate-session-logistics-ephesus",
+        "07-ceremony-and-household-logistics-constantinople",
+        "08-distributed-record-collation-constantinople"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "The Council and the City",
+        "es-ES": "El concilio y la ciudad"
+      },
+      "historicalYearBand": [
+        451,
+        553
+      ],
+      "dramaticPurpose": "Calcedonia, cortes, Nika, reconstrucción y peste; la voz objetiva contextualiza los sesgos de las crónicas.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-across-the-strait",
+        "10-ceremony-route-and-provision-constantinople",
+        "11-disputed-correspondence-constantinople",
+        "12-administrative-transition-constantinople",
+        "02-the-city-in-ashes",
+        "14-finite-construction-logistics-constantinople",
+        "15-bounded-civilian-extraction-antioch",
+        "03-the-empty-granary",
+        "17-council-record-comparison-constantinople"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Grain Beneath the Siege",
+        "es-ES": "Grano bajo el asedio"
+      },
+      "historicalYearBand": [
+        626,
+        718
+      ],
+      "dramaticPurpose": "Asedios y cambios de soberanía regional;674–678 es marco discutido, no certeza táctica año por año.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "18-finite-siege-and-ferry-supply-constantinople",
+        "19-civilian-record-and-property-logistics-jerusalem",
+        "20-coastal-watch-and-bounded-convoy-constantinople",
+        "21-delegation-and-text-comparison-constantinople",
+        "04-winter-at-the-walls"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "Images at the Edge",
+        "es-ES": "Imágenes en el límite"
+      },
+      "historicalYearBand": [
+        726,
+        787
+      ],
+      "dramaticPurpose": "Cronología de políticas iconoclastas incierta, posiciones diversas y Nicea787; Anna recuerda su oficio sin hablar por todos.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "23-artisan-record-and-protection-constantinople",
+        "24-council-and-workshop-logistics-chalcedon",
+        "05-pieces-of-a-memory"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Mosaic Restored",
+        "es-ES": "El mosaico restaurado"
+      },
+      "historicalYearBand": [
+        797,
+        843
+      ],
+      "dramaticPurpose": "Cortes y guerras hasta815y843; noticias de800llegan desde Roma, no son vivencia de Anna allí.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "26-civilian-supply-and-succession-records-constantinople",
+        "27-off-map-dispatch-and-comparison-constantinople",
+        "28-administrative-transition-constantinople",
+        "29-finite-withdrawal-and-relief-pliska",
+        "30-civilian-refuge-and-dispatch-adrianople",
+        "31-artisan-and-archive-preservation-constantinople",
+        "32-restoration-and-final-perspective-constantinople"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [
+      {
+        "campaignId": "imperial-church",
+        "route": "eastern-perspective"
+      }
+    ],
+    "nextRoutes": [
+      {
+        "id": "completed",
+        "key": "progress.new-rome.completed",
+        "next": null
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-administrative-transition-constantinople",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "The Gate after Its Founder",
+        "es-ES": "La puerta tras su fundador"
+      },
+      "date": "337 CE; Nicomedia death reported",
+      "geographyId": "constantinople",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "corpusEventId": 114,
+        "sourceUrl": "https://www.newadvent.org/fathers/25024.htm",
+        "passage": "Eusebius, Life of Constantine IV.64",
+        "qualification": "La capitalidad se consolida gradualmente.",
+        "candidateEvent": "Muerte de Constantino; sus hijos heredan el imperio y la capital oriental.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 114,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/25024.htm",
+          "correctUrlConsulted": "https://www.newadvent.org/fathers/25024.htm",
+          "passage": "Eusebius, Vita Constantini IV.64 (cierre de la vida y muerte de Constantino).",
+          "supportedClaim": "Constantino murió en 337 y sus hijos heredaron.",
+          "problems": "Pasaje es panegírico y registra muerte; sucesión compartida debe contrastarse con cronología imperial independiente. URL correcta para Book IV.64.",
+          "coverageRead": "Página primaria abrió correctamente; encabezamiento y localizador IV.64 identificados, pero el párrafo exacto no fue extraído en esta pasada.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-council-and-city-logistics-constantinople",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "The City's Place in the Canon",
+        "es-ES": "El lugar de la ciudad en el canon"
+      },
+      "date": "381 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "council-and-city-logistics",
+      "historicalSelection": {
+        "corpusEventId": 62,
+        "sourceUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+        "passage": "Credo y cánones del Concilio de Constantinopla I; la página señala el problema de la transmisión del credo y el estatus inicialmente limitado del concilio.",
+        "qualification": "El credo conocido como niceno-constantinopolitano se atestigua textualmente en Calcedonia (451); no atribuir sin reservas toda su forma conservada a actas contemporáneas de 381. El canon 3 trata rango, no una división moderna entre católicos y ortodoxos.",
+        "candidateEvent": "Un concilio en Constantinopla reafirma la fe nicena, trata controversias sobre el Espíritu y fija en canon 3 la precedencia honorífica del obispo de Constantinopla después de Roma.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 62,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "correctUrlConsulted": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "passage": "Constantinople I: canon 3; creed and canons, but status/transmission caveat",
+          "supportedClaim": "The source text supports a council traditionally dated 381 and canon 3 giving Constantinople honor after Rome because it is New Rome; creed transmission/history is separate from these canons.",
+          "problems": "Canon 3 does not establish papal/imperial jurisdiction or later East-West schism. Page is a compiled translation; it acknowledges transmission complexity.",
+          "coverageRead": "Opened council page and checked canon 3 and creed section; not manuscript apparatus.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-competing-dispatches-constantinople",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "Two Courts beneath One Memory",
+        "es-ES": "Dos cortes bajo una memoria"
+      },
+      "date": "395 CE; deathMilan off-map",
+      "geographyId": "constantinople",
+      "coreMechanic": "competing-dispatches",
+      "historicalSelection": {
+        "corpusEventId": 115,
+        "sourceUrl": "https://www.britannica.com/biography/Theodosius-I",
+        "passage": "Chronology and overview",
+        "qualification": "No hubo división legal absoluta del imperio en ese momento.",
+        "candidateEvent": "Muerte de Teodosio I precede división administrativa duradera entre cortes oriental y occidental.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-civilian-refuge-and-dispatch-constantinople",
+      "order": 4,
+      "actId": "act-1",
+      "title": {
+        "en": "The Bishop Who Was Sent Away",
+        "es-ES": "El obispo al que alejaron"
+      },
+      "date": "404 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "civilian-refuge-and-dispatch",
+      "historicalSelection": {
+        "corpusEventId": 116,
+        "sourceUrl": "https://www.newadvent.org/fathers/1912.htm",
+        "passage": "Palladius, Dialogue on the Life of John Chrysostom",
+        "qualification": "Fuente pro-Crisóstomo.",
+        "candidateEvent": "Juan Crisóstomo es depuesto y exiliado tras conflicto de corte y episcopado.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 116,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/1912.htm",
+          "correctUrlConsulted": "https://www.tertullian.org/fathers/palladius_dialogus_02_text.htm",
+          "passage": "Palladius, Dialogue on the Life of John Chrysostom, chapter/section “Chrysostom’s Second Expulsion” (site text around lines 187–202)",
+          "supportedClaim": "Supports armed force expelling Chrysostom and clergy from Constantinople and putting him on a ship at night; event belongs to 404 chronology.",
+          "problems": "Palladius writes a partisan defense of Chrysostom and is not neutral; the passage narrates violence but does not itself provide a precise calendar date. Original New Advent URL was unrelated Chrysostom homily, not Palladius.",
+          "coverageRead": "Opened translation and read expulsion passages around text lines 187–202; limited extract, not the full dialogue.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-finite-school-works-constantinople",
+      "order": 5,
+      "actId": "act-1",
+      "title": {
+        "en": "Rooms for the Written Word",
+        "es-ES": "Salas para la palabra escrita"
+      },
+      "date": "425 CE; school institution, not modern university",
+      "geographyId": "constantinople",
+      "coreMechanic": "finite-school-works",
+      "historicalSelection": {
+        "corpusEventId": 117,
+        "sourceUrl": "https://www.britannica.com/topic/University-of-Constantinople",
+        "passage": "Codex Theodosianus 14.9.3",
+        "qualification": "Las instituciones enseñaban materias variadas, no universidad moderna.",
+        "candidateEvent": "Teodosio II funda la universidad imperial de Constantinopla, fortaleciendo educación jurídica y literaria.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 117,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.britannica.com/topic/University-of-Constantinople",
+          "correctUrlConsulted": "https://www.forum.thelatinlibrary.com/theodosius/theod14.shtml",
+          "passage": "Codex Theodosianus 14.9.3, praescriptio and main provision (27 Feb 425)",
+          "supportedClaim": "Supports Theodosius II and Valentinian regulating an imperial auditorium at the Capitolium, specifying appointed Latin/Greek rhetors and grammarians plus philosophy and law teachers.",
+          "problems": "Does not support a modern “university foundation” claim. Better describe regulation/organization of imperial public teaching. Latin text dates 3 days before Kalends of March, Constantinople, consuls Theodosius XI and Valentinian.",
+          "coverageRead": "Read search-result excerpt of CTh 14.9.3 including staff list/dateline; direct HTML open failed, so accessibility/passages should be rechecked.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-separate-session-logistics-ephesus",
+      "order": 6,
+      "actId": "act-1",
+      "title": {
+        "en": "Before the Delegates Arrived",
+        "es-ES": "Antes de que llegaran los delegados"
+      },
+      "date": "431 CE",
+      "geographyId": "ephesus",
+      "coreMechanic": "separate-session-logistics",
+      "historicalSelection": {
+        "additionalMilestone": "extra:0",
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/basis/ephesus.asp",
+        "passage": "Actas del Concilio de Éfeso, sesión I y documentos asociados; traducción NPNF alojada por Fordham. Para caracterización académica consultada: https://www.cambridge.org/core/books/abs/cambridge-edition-of-early-christian-writings/acts-of-the-council-of-ephesus-juneoctober-431-selected-proceedings/B4E8190281A0B2F93C0B80DCE8537ED5.",
+        "qualification": "Las actas preservan la perspectiva de las facciones participantes; el grupo de Cirilo inició la sesión antes de la llegada de Juan de Antioquía. Evitar presentarlo como consenso pacífico y unánime.",
+        "candidateEvent": "El concilio reunido en Éfeso depone a Nestorio tras una disputa cristológica y eclesiopolítica entre las redes de Alejandría y Antioquía; la delegación de Juan de Antioquía llega después y celebra una asamblea rival.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "07-ceremony-and-household-logistics-constantinople",
+      "order": 7,
+      "actId": "act-1",
+      "title": {
+        "en": "A Return after the Exile",
+        "es-ES": "Un regreso después del exilio"
+      },
+      "date": "438 CE; relics transfer",
+      "geographyId": "constantinople",
+      "coreMechanic": "ceremony-and-household-logistics",
+      "historicalSelection": {
+        "corpusEventId": 118,
+        "sourceUrl": "https://www.newadvent.org/fathers/26017.htm",
+        "passage": "Socrates Scholasticus, Ecclesiastical History VII.45; encabezado del capítulo y consulado de Teodosio.",
+        "qualification": "Socrates escribe en el siglo V y es una fuente eclesiástica; la transferencia ocurrió décadas después de su muerte en 407.",
+        "candidateEvent": "Las reliquias de Juan Crisóstomo son trasladadas desde Comana a Constantinopla y depositadas en la iglesia de los Santos Apóstoles.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 118,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/26017.htm",
+          "correctUrlConsulted": "https://www.newadvent.org/fathers/26017.htm",
+          "passage": "Socrates Scholasticus, Church History VII.45.",
+          "supportedClaim": "En 438 los restos de Juan Crisóstomo fueron trasladados de Comana y recibidos en Constantinopla.",
+          "problems": "Corregido respecto a 410: el traslado fue en 438. Debe distinguirse la fecha del exilio/muerte (407) de la traslación. Socrates escribe retrospectivamente.",
+          "coverageRead": "Socrates Scholasticus HE VII.45 abierto y leído (líneas 333–336): da el traslado desde Comana a Constantinopla, 27 de enero en el 16.º consulado de Teodosio; la equivalencia moderna es 438.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "08-distributed-record-collation-constantinople",
+      "order": 8,
+      "actId": "act-1",
+      "title": {
+        "en": "The Law Gathered into Books",
+        "es-ES": "La ley reunida en libros"
+      },
+      "date": "438 CE; publication/439effective distinguished",
+      "geographyId": "constantinople",
+      "coreMechanic": "distributed-record-collation",
+      "historicalSelection": {
+        "corpusEventId": 119,
+        "sourceUrl": "https://sourcebooks.fordham.edu/source/codex-theod.asp",
+        "passage": "Codex Theodosianus, edicto de publicación",
+        "qualification": "Selección oficial de constituciones.",
+        "candidateEvent": "Se publica el Codex Theodosianus, compilación legal imperial.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 119,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://sourcebooks.fordham.edu/source/codex-theod.asp",
+          "correctUrlConsulted": "https://la.wikisource.org/wiki/Theodosii_novellae/1",
+          "passage": "Theodosian Novella 1, De Theodosiani codicis auctoritate (Feb 438); Bibliotheca legum chronology",
+          "supportedClaim": "Supports the Code receiving imperial authority/promulgation in February 438; academic legal reference gives effective date 1 Jan 439.",
+          "problems": "Do not conflate promulgation in 438 with entry into force in 439; East/West legal reception varied. Original Fordham page should be consulted directly before relying on its exact translation.",
+          "coverageRead": "Read Novella 1 search/index extract and University of Cologne Bibliotheca legum summary; not a full critical edition.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "01-across-the-strait",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "Across the Strait",
+        "es-ES": "Al otro lado del estrecho"
+      },
+      "date": "451 CE",
+      "geographyId": "chalcedon",
+      "coreMechanic": "delegate-and-ferry-logistics",
+      "historicalSelection": {
+        "corpusEventId": 120,
+        "sourceUrl": "https://www.newadvent.org/fathers/3811.htm",
+        "passage": "Acts and canons, especially canon 28",
+        "qualification": "Disputado por Roma y varios obispos orientales.",
+        "candidateEvent": "Concilio de Calcedonia define fórmula cristológica y canon de privilegio para Constantinopla.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 120,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/3811.htm",
+          "correctUrlConsulted": "https://www.newadvent.org/fathers/3811.htm",
+          "passage": "Acts and canons of Chalcedon, Canon 28 (page section around lines 390–400)",
+          "supportedClaim": "Supports Canon 28’s rationale of Constantinople as New Rome and allocation of equal ecclesiastical privileges / second rank, plus ordination jurisdiction in Pontic, Asian, Thracian dioceses.",
+          "problems": "The canon was contested by papal legates/Leo I; source wording must not imply uncontested universal recognition. The council’s Christological definition and canon 28 are distinct proceedings.",
+          "coverageRead": "Opened acts/canons; searched and read canon 28 text; translation/notes are 19th-century.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "10-ceremony-route-and-provision-constantinople",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "The Emperor at the City's Edge",
+        "es-ES": "El emperador en el límite de la ciudad"
+      },
+      "date": "457 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "ceremony-route-and-provision",
+      "historicalSelection": {
+        "corpusEventId": 121,
+        "sourceUrl": "https://www.britannica.com/biography/Leo-I-Byzantine-emperor",
+        "passage": "Chronicle tradition; overview",
+        "qualification": "Detalles del ritual derivan de fuentes posteriores.",
+        "candidateEvent": "León I es proclamado emperador en Constantinopla con participación del patriarca.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-disputed-correspondence-constantinople",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "A Letter That Could Not Unite",
+        "es-ES": "Una carta que no pudo unir"
+      },
+      "date": "482 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "disputed-correspondence",
+      "historicalSelection": {
+        "corpusEventId": 123,
+        "sourceUrl": "https://www.newadvent.org/cathen/07218b.htm",
+        "passage": "Henotikon text summarized; Evagrius HE III.14",
+        "qualification": "La política no consiguió consenso e inició cisma con Roma.",
+        "candidateEvent": "Zenón publica el Henotikon para reconciliar posiciones tras Calcedonia.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 123,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/cathen/07218b.htm",
+          "correctUrlConsulted": "https://www.tertullian.org/fathers/evagrius_3_book3.htm",
+          "passage": "Evagrius, Ecclesiastical History III.13–14; Henotikon text preserved in III.14",
+          "supportedClaim": "Supports Zeno’s letter addressed to clergy and laity of Alexandria, Egypt, Libya, and Pentapolis, invoking Nicaea and Constantinople/Ephesus to pursue unity; the text avoids a direct Chalcedonian two-natures formula.",
+          "problems": "The document’s intended audience is regional, not a universal imperial edict to all churches. Evagrius writes late 6th century and narrates retrospectively; 482 is accepted chronology but not explicitly dated in quoted document.",
+          "coverageRead": "Opened translation and read III.13–14 including document text; Walford translation only, not Greek critical edition.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "12-administrative-transition-constantinople",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "One Seal after Two Emperors",
+        "es-ES": "Un sello tras dos emperadores"
+      },
+      "date": "1 August527 CE; co-rule sinceApril",
+      "geographyId": "constantinople",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "additionalMilestone": "extra:1",
+        "sourceUrl": "https://www.thelatinlibrary.com/marcellinus2.html",
+        "passage": "Marcellinus Comes, Chronicon, entrada 527: consigna que Justino hizo a Justiniano participante y sucesor del reino el 1 de abril; contexto para el comienzo del gobierno único el 1 de agosto: https://www.iranicaonline.org/articles/justinian-i-flavius-petrus-sabbatius-justinianus/.",
+        "qualification": "“Coronación” no debe usarse para el evento del 1 de agosto: Marcellinus fecha la elevación como coemperador en abril. La fecha de gobierno único se reconstruye con la muerte de Justino en agosto.",
+        "candidateEvent": "A la muerte de Justino I, Justiniano pasa de coemperador a gobernante único en Constantinopla.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-the-city-in-ashes",
+      "order": 13,
+      "actId": "act-2",
+      "title": {
+        "en": "The City in Ashes",
+        "es-ES": "La ciudad entre cenizas"
+      },
+      "date": "January532 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "civilian-evacuation-under-unrest",
+      "historicalSelection": {
+        "corpusEventId": 124,
+        "sourceUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/1A*.html",
+        "passage": "Procopius, Wars I.24",
+        "qualification": "Procopio describe la represión con sesgo político.",
+        "candidateEvent": "Revuelta de Nika destruye la iglesia previa de Hagia Sophia y amenaza el gobierno de Justiniano.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 124,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/1A*.html",
+          "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/1F%2A.html",
+          "passage": "Procopius, Persian Wars I.24.1 and following",
+          "supportedClaim": "Supports the Nika insurrection in Byzantium/Constantinople, the “Nika” watchword, destruction/fire and threat to imperial rule as narrated by Procopius.",
+          "problems": "Correct URL was Wars/1F, not War/1A. Procopius is close to events but rhetorically frames them; avoid treating speeches as verbatim. The earlier Hagia Sophia destruction is part of the account, but separate fire chronology should be checked in text.",
+          "coverageRead": "Read search-result excerpt identifying I.24 and its opening; primary page directly identified, full passage should be opened for detailed wording.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "14-finite-construction-logistics-constantinople",
+      "order": 14,
+      "actId": "act-2",
+      "title": {
+        "en": "Stone beneath the Great Dome",
+        "es-ES": "Piedra bajo la gran cúpula"
+      },
+      "date": "532–537 CE; dedication537",
+      "geographyId": "constantinople",
+      "coreMechanic": "finite-construction-logistics",
+      "historicalSelection": {
+        "corpusEventId": 125,
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+        "passage": "Procopius, Buildings I.1",
+        "qualification": "Panegírico imperial; UNESCO confirma fecha y arquitectos.",
+        "candidateEvent": "Justinian y Theodora reconstruyen Hagia Sophia, dedicada en 537.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 125,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+          "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+          "passage": "Procopius, De Aedificiis I.1.",
+          "supportedClaim": "Justinian reconstruyó Hagia Sophia, dedicada en 537.",
+          "problems": "Buildings I.1 describe edificio y patrocinio pero la fecha de dedicación 537 debe confirmarse con Chronicon Paschale u otra fuente; no suponer que el pasaje proporciona toda la cronología. Procopio panegírico.",
+          "coverageRead": "Referencia citada identificada; el texto del pasaje no se abrió en esta pasada.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-bounded-civilian-extraction-antioch",
+      "order": 15,
+      "actId": "act-2",
+      "title": {
+        "en": "The Orontes after the Flames",
+        "es-ES": "El Orontes después de las llamas"
+      },
+      "date": "540 CE",
+      "geographyId": "antioch",
+      "coreMechanic": "bounded-civilian-extraction",
+      "historicalSelection": {
+        "additionalMilestone": "extra:2",
+        "sourceUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2B%2A.html",
+        "passage": "Procopio, Guerras persas II.8–10; contextualización de la incursión de 540 en https://online.ucpress.edu/SLA/article/7/2/201/196341/God-s-Wrath-over-Antioch-525-540-CEBeginning-of, especialmente discusión de la narrativa de Procopio y su valor como fuente.",
+        "qualification": "Procopio es fuente principal cercana, pero su narración tiene recursos dramáticos y sus obras difieren en tono; no repetir cifras de muertos/cautivos como datos comprobados sin corroboración.",
+        "candidateEvent": "Cosroes I captura y saquea Antioquía durante su incursión por la Siria romana; Procopio describe el asalto, el incendio y el traslado posterior de cautivos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-the-empty-granary",
+      "order": 16,
+      "actId": "act-2",
+      "title": {
+        "en": "The Empty Granary",
+        "es-ES": "El granero vacío"
+      },
+      "date": "542 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "care-and-food-allocation",
+      "historicalSelection": {
+        "baselineScenarioId": "03-the-empty-granary",
+        "baselineSourceIds": [
+          "byzantium",
+          "procopius-plague",
+          "harvard-plague"
+        ],
+        "sourceUrl": "https://www.metmuseum.org/essays/byzantium-ca-330-1453",
+        "passage": "Períodos y cultura material",
+        "qualification": "Crisis urbana vinculada a peste y suministros durante Justiniano; reparto del jugador es ficción. No simular curación doctrinal.",
+        "candidateEvent": "Crisis urbana vinculada a peste y suministros durante Justiniano; reparto del jugador es ficción. No simular curación doctrinal.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "17-council-record-comparison-constantinople",
+      "order": 17,
+      "actId": "act-2",
+      "title": {
+        "en": "The Chapters on the Table",
+        "es-ES": "Los capítulos sobre la mesa"
+      },
+      "date": "553 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "council-record-comparison",
+      "historicalSelection": {
+        "corpusEventId": 126,
+        "sourceUrl": "https://www.newadvent.org/fathers/3812.htm",
+        "passage": "Council acts",
+        "qualification": "La condena tuvo recepción regional desigual.",
+        "candidateEvent": "Segundo Concilio de Constantinopla aborda los Tres Capítulos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-finite-siege-and-ferry-supply-constantinople",
+      "order": 18,
+      "actId": "act-3",
+      "title": {
+        "en": "A City between Two Armies",
+        "es-ES": "Una ciudad entre dos ejércitos"
+      },
+      "date": "626 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "finite-siege-and-ferry-supply",
+      "historicalSelection": {
+        "corpusEventId": 127,
+        "sourceUrl": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+        "passage": "Chronicle traditions",
+        "qualification": "Cifras y milagros son retrospectivos.",
+        "candidateEvent": "Avaros y persas asedian Constantinopla mientras Heraclio combate en el este.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 127,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+          "correctUrlConsulted": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+          "passage": "Chronicle traditions (Theophanes, Chronographia AM 6118; localizador a verificar).",
+          "supportedClaim": "Avaros sitiaron Constantinopla en 626 mientras los persas amenazaban desde la orilla asiática; defensa bizantina repelió el asedio.",
+          "problems": "La URL de Britannica es síntesis terciaria; vincular una fuente primaria (Theophanes/Chronicon Paschale) con localizador. Cuidado, persas no son una fuerza de asedio conjunta en la misma ribera.",
+          "coverageRead": "Solo descripción/título de referencia identificado; source primary no consultado en esta pasada.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-civilian-record-and-property-logistics-jerusalem",
+      "order": 19,
+      "actId": "act-3",
+      "title": {
+        "en": "News from the Holy City",
+        "es-ES": "Noticias desde la ciudad santa"
+      },
+      "date": "637/638 CE; capitulation reports qualified",
+      "geographyId": "jerusalem",
+      "coreMechanic": "civilian-record-and-property-logistics",
+      "historicalSelection": {
+        "additionalMilestone": "extra:3",
+        "sourceUrl": "https://academic.oup.com/book/6524/chapter-abstract/150435622",
+        "passage": "Robert G. Hoyland, Witnesses to a World Crisis, capítulo sobre fuentes cristianas orientales del siglo VII; para fecha 638 y tradición sobre visita de Umar, véase el examen de Theophilus of Edessa’s Chronicle, entrada 638, contextualizado en https://www.jstor.org/stable/jj.38238823.",
+        "qualification": "La fecha oscila en las fuentes entre 636/637 y 638; los relatos detallados de capitulación y encuentro con Umar se transmiten en cronistas posteriores, no en un acta contemporánea segura. Sophronio ofrece testimonio contemporáneo del peligro en Palestina en su sermón de Navidad de 634, pero ese sermón no documenta la rendición de Jerusalén: https://christtheking.info/catholic-resources-on-adversus-judaeos/selections-of-st-sophronius-of-jerusalems-writings-on-the-jews/.",
+        "candidateEvent": "Jerusalén/Aelia Capitolina pasa al control árabe tras la guerra romano-persa; la conquista altera el marco político de sus comunidades cristianas orientales.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "20-coastal-watch-and-bounded-convoy-constantinople",
+      "order": 20,
+      "actId": "act-3",
+      "title": {
+        "en": "Ships in the Uncertain Years",
+        "es-ES": "Barcos en los años inciertos"
+      },
+      "date": "c.674–678 CE; continuous siege disputed",
+      "geographyId": "constantinople",
+      "coreMechanic": "coastal-watch-and-bounded-convoy",
+      "historicalSelection": {
+        "corpusEventId": 128,
+        "sourceUrl": "https://www.britannica.com/event/Arab-Byzantine-wars",
+        "passage": "Theophanes, Chronicle",
+        "qualification": "Cronología del primer asedio discutida; “fuego griego” no está documentado en todos los detalles.",
+        "candidateEvent": "Ataques árabes por mar y tierra fracasan ante murallas y flota imperial.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 128,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.britannica.com/event/Arab-Byzantine-wars",
+          "correctUrlConsulted": "https://www.medievalists.net/2022/07/was-constantinople-besieged-in-674-78/",
+          "passage": "Critical discussion of Theophanes’ chronological source compilation; cites Howard-Johnston and Jankowiak",
+          "supportedClaim": "Supports that the conventional continuous 674–678 siege chronology is contested; modern source criticism identifies editorial/source-chronology problems and alternative reconstructions.",
+          "problems": "This is a secondary explainer, not sufficient as final academic citation. Howard-Johnston argues no multi-year siege; Jankowiak places related operations earlier, late 660s. Keep as contested Arab operations around Constantinople, not a confidently dated continuous siege.",
+          "coverageRead": "Read article search extract; identified bibliography and competing arguments. Need primary Theophanes page and academic work directly consulted before final factual signoff.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "21-delegation-and-text-comparison-constantinople",
+      "order": 21,
+      "actId": "act-3",
+      "title": {
+        "en": "Eighteen Sessions by the Palace",
+        "es-ES": "Dieciocho sesiones junto al palacio"
+      },
+      "date": "680–681 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "delegation-and-text-comparison",
+      "historicalSelection": {
+        "additionalMilestone": "extra:4",
+        "sourceUrl": "https://www.newadvent.org/fathers/3813.htm",
+        "passage": "Acts of the Third Council of Constantinople, opening speech of papal legates and synodal proceedings; the session range is also recorded in the Prosopography of the Byzantine Empire, entry Petros 23: https://pbe.kcl.ac.uk/data/D62/F83.htm.",
+        "qualification": "The surviving acts are factionally situated and theological terminology is technical. This is distinct from the 553 council already in the corpus; avoid projecting later Roman/Orthodox confessional divisions backward.",
+        "candidateEvent": "The Third Council of Constantinople meets in eighteen sessions and rejects the doctrine of one will and one operation in Christ, condemning key advocates of monothelitism.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-winter-at-the-walls",
+      "order": 22,
+      "actId": "act-3",
+      "title": {
+        "en": "Winter at the Walls",
+        "es-ES": "Invierno junto a las murallas"
+      },
+      "date": "717–718 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "finite-winter-siege-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 129,
+        "sourceUrl": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+        "passage": "Theophanes, AM 6209",
+        "qualification": "Fuentes bizantinas magnifican bajas enemigas.",
+        "candidateEvent": "El asedio omeya termina tras resistencia bizantina, invierno severo y ayuda búlgara.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 129,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+          "correctUrlConsulted": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+          "passage": "Theophanes, Chronographia AM 6209.",
+          "supportedClaim": "Asedio omeya de 717–718 frustrado.",
+          "problems": "URL es secundaria; Theophanes es fuente posterior y presenta relato de los ataques. Añadir referencia académica para controversia de cronología/cifras y distinguir bloqueos terrestres y navales.",
+          "coverageRead": "No se inspeccionó fuente primaria en esta pasada.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "23-artisan-record-and-protection-constantinople",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "An Image beneath the Orders",
+        "es-ES": "Una imagen bajo las órdenes"
+      },
+      "date": "c.726–730 CE; policy chronology disputed",
+      "geographyId": "constantinople",
+      "coreMechanic": "artisan-record-and-protection",
+      "historicalSelection": {
+        "corpusEventId": 130,
+        "sourceUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+        "passage": "Oxford, Iconoclast Controversy 726–843",
+        "qualification": "Evitar escena dramática de destrucción de icono como hecho seguro.",
+        "candidateEvent": "León III inicia políticas contra ciertas imágenes; la cronología y el primer decreto son inciertos.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-council-and-workshop-logistics-chalcedon",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "The Assembly at Hieria",
+        "es-ES": "La asamblea en Hieria"
+      },
+      "date": "754 CE; reconstructed from later opposing acts",
+      "geographyId": "chalcedon",
+      "coreMechanic": "council-and-workshop-logistics",
+      "historicalSelection": {
+        "corpusEventId": 131,
+        "sourceUrl": "https://www.newadvent.org/fathers/3819.htm",
+        "passage": "Acts reconstructed from Nicaea II",
+        "qualification": "Actas originales perdidas; reconstrucción hostil.",
+        "candidateEvent": "Sínodo de Hieria respalda rechazo de imágenes bajo Constantino V.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 131,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/3819.htm",
+          "correctUrlConsulted": "https://www.newadvent.org/fathers/3819.htm",
+          "passage": "Actas del Concilio de Nicea II (787), pasajes de sesión 7 que citan/sintetizan Hieria (754).",
+          "supportedClaim": "Sínodo de Hieria definió iconoclasia imperial bajo Constantino V.",
+          "problems": "No sobreviven actas independientes de Hieria; conocemos posición sobre todo mediante refutación/reconstrucción en Nicea II. Etiquetar la mediación y no tratar como transcripción neutral.",
+          "coverageRead": "Página primaria de Nicea II abierta; reconstrucción exacta de la sección de Hieria aún por fijar.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-pieces-of-a-memory",
+      "order": 25,
+      "actId": "act-4",
+      "title": {
+        "en": "Pieces of a Memory",
+        "es-ES": "Fragmentos de una memoria"
+      },
+      "date": "787 CE; former843epilogue now separatefinale",
+      "geographyId": "nicaea",
+      "coreMechanic": "restoration-and-council-logistics",
+      "historicalSelection": {
+        "corpusEventId": 132,
+        "sourceUrl": "https://www.newadvent.org/fathers/3819.htm",
+        "passage": "Acts of Nicaea II",
+        "qualification": "Distingue veneración de adoración; traducciones varían.",
+        "candidateEvent": "Segundo Concilio de Nicea restaura veneración de imágenes y condena iconoclasmo.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 132,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.newadvent.org/fathers/3819.htm",
+          "correctUrlConsulted": "https://www.newadvent.org/fathers/3819.htm",
+          "passage": "Nicaea II, Session VII definition and anathemas on images",
+          "supportedClaim": "Supports council’s defense of images and distinction of honorific veneration from latreia/service; council rejects iconoclast position in its own wording.",
+          "problems": "“Restores” can suggest uniform immediate compliance; better say council defines/affirms veneration in 787. The page contains a translated excerpt, not all acts or subsequent enforcement history.",
+          "coverageRead": "Opened full acts page and read definition/anathema and final veneration paragraphs.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "26-civilian-supply-and-succession-records-constantinople",
+      "order": 26,
+      "actId": "act-5",
+      "title": {
+        "en": "The Court under Irene",
+        "es-ES": "La corte bajo Irene"
+      },
+      "date": "797 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "civilian-supply-and-succession-records",
+      "historicalSelection": {
+        "corpusEventId": 133,
+        "sourceUrl": "https://www.britannica.com/biography/Irene-Byzantine-empress",
+        "passage": "Theophanes, Chronicle AM 6289",
+        "qualification": "Theophanes iconófilo y hostil a rivales.",
+        "candidateEvent": "Irene depone a Constantino VI y gobierna como emperatriz.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-off-map-dispatch-and-comparison-constantinople",
+      "order": 27,
+      "actId": "act-5",
+      "title": {
+        "en": "A Crown beyond the Western Sea",
+        "es-ES": "Una corona más allá del mar occidental"
+      },
+      "date": "800 CE; crowningRome off-map",
+      "geographyId": "constantinople",
+      "coreMechanic": "off-map-dispatch-and-comparison",
+      "historicalSelection": {
+        "corpusEventId": 134,
+        "sourceUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+        "passage": "Einhard, Life of Charlemagne 28",
+        "qualification": "Einhard escribe décadas después y ofrece explicación política interesada.",
+        "candidateEvent": "Coronación imperial de Carlomagno en Roma desafía pretensión universal de Constantinopla.",
+        "approval": "research source checked with qualifications; architect dossier and independent approval pending",
+        "researchAudit": {
+          "eventId": 134,
+          "campaigns": [
+            "new-rome"
+          ],
+          "originalUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "correctUrlConsulted": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "passage": "Einhard, Vita Karoli Magni 28 (coronación en Roma).",
+          "supportedClaim": "León III coronó a Carlomagno emperador en Roma en Navidad del 800.",
+          "problems": "Fuera de la localización oriental de New Rome; la fuente de Einhard es retrospectiva y dice Carlomagno no conocía el plan. Si Anna está en Constantinopla, solo puede enterarse por noticias posteriores; no presentar testigo local en Roma. Evento quizá mantener como noticia exterior, no escena en Constantinopla.",
+          "coverageRead": "Fuente indicada en corpus; pasaje no extraído en esta pasada.",
+          "auditStatus": "reviewed_with_correction_or_caveat"
+        }
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-administrative-transition-constantinople",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "The Seal That Changed Hands",
+        "es-ES": "El sello que cambió de manos"
+      },
+      "date": "802 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "corpusEventId": 135,
+        "sourceUrl": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+        "passage": "Theophanes, Chronicle AM 6295",
+        "qualification": "Perspectiva iconófila del cronista.",
+        "candidateEvent": "Irene es depuesta; Nicéforo I toma el trono en Constantinopla.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-finite-withdrawal-and-relief-pliska",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "The Roads below Pliska",
+        "es-ES": "Los caminos bajo Pliska"
+      },
+      "date": "811 CE; battle-site footprint uncertain",
+      "geographyId": "pliska",
+      "coreMechanic": "finite-withdrawal-and-relief",
+      "historicalSelection": {
+        "corpusEventId": 136,
+        "sourceUrl": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+        "passage": "Theophanes, Chronicle AM 6303",
+        "qualification": "Fuentes de corte y crónica dramáticas.",
+        "candidateEvent": "Nicéforo muere en campaña contra los búlgaros en Pliska.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "30-civilian-refuge-and-dispatch-adrianople",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "A Report from the Thracian Field",
+        "es-ES": "Un parte desde el campo tracio"
+      },
+      "date": "813 CE; Versinikia regional location uncertain",
+      "geographyId": "adrianople",
+      "coreMechanic": "civilian-refuge-and-dispatch",
+      "historicalSelection": {
+        "corpusEventId": 137,
+        "sourceUrl": "https://www.britannica.com/biography/Leo-V-the-Armenian",
+        "passage": "Theophanes, Chronicle AM 6305",
+        "qualification": "Causas militares y religiosas se entrelazan después en relatos.",
+        "candidateEvent": "León V recupera el trono tras derrota de Miguel I en Versinikia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "31-artisan-and-archive-preservation-constantinople",
+      "order": 31,
+      "actId": "act-5",
+      "title": {
+        "en": "The Covered Workshop",
+        "es-ES": "El taller cubierto"
+      },
+      "date": "815 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "artisan-and-archive-preservation",
+      "historicalSelection": {
+        "corpusEventId": 138,
+        "sourceUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+        "passage": "Oxford, Iconoclast Controversy",
+        "qualification": "Evidencia documental fragmentaria.",
+        "candidateEvent": "Sínodo en Constantinopla reactiva políticas iconoclastas.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "32-restoration-and-final-perspective-constantinople",
+      "order": 32,
+      "actId": "act-5",
+      "title": {
+        "en": "The Mosaic Returned",
+        "es-ES": "El mosaico restituido"
+      },
+      "date": "843 CE",
+      "geographyId": "constantinople",
+      "coreMechanic": "restoration-and-final-perspective",
+      "historicalSelection": {
+        "corpusEventId": 139,
+        "sourceUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+        "passage": "Oxford, Iconoclast Controversy",
+        "qualification": "Sínodo local; término “ortodoxia” en sentido de fuente, no etiqueta de las iglesias modernas.",
+        "candidateEvent": "La regente Teodora restaura la veneración de imágenes en sínodo; comienza la conmemoración del Triunfo de la Ortodoxia.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "anna-mosaicist",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    }
+  ]
+}
