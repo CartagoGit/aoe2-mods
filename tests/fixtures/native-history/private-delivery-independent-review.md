@@ -2,7 +2,7 @@
 
 Reviewer: `gpt-6.1`; 26 October 2026. Own DelendAI review unit: i00003/S3, generation 3, session `caesarea-private-independent-review`.
 
-Product commit: `c55c3bd0104158f5e2cf40ccbec7782e327338e7`. The preserved implementation in parent `9145fed581904500d7e9dc53d5fb0bea02d965f5` is included in this reviewed tip. The final delta was independently inspected: exact six optional IDs and the private container name/title derived from the authored editorial contract. This review report awaits its authorized integration gate window.
+Product commit: `c55c3bd0104158f5e2cf40ccbec7782e327338e7`, officially integrated in `e443aaaa5281291acfa855c68a68d0da35cb1c02`. The preserved implementation in parent `9145fed581904500d7e9dc53d5fb0bea02d965f5` is included in this reviewed tip. The final delta was independently inspected: exact six optional IDs and the private container name/title derived from the authored editorial contract. The reviewer merged that integration into the isolated review unit before publishing this report.
 
 ## Scope and result
 
@@ -32,7 +32,7 @@ The private builder constructs a new explicit physical base through the shared f
 
 ## Evidence and limitations
 
-Reviewer-executed evidence: source/code inspection, source/binding digest comparison and the three focused validator mutations above. No Bun suite, native export build, game session or paid generation was run by this reviewer. The author's eight focused delivery tests were read; the author reports 35 combined native tests passing in 31.866 seconds and Ruff 0.14.4 checks passing. Those executions are author evidence, not independent executions claimed here. Final integration gates remain the author's separate responsibility; this report's publication runs its own official gate.
+Reviewer-executed evidence: source/code inspection, source/binding digest comparison and the three focused validator mutations above. Before report publication, no Bun suite, native export build, game session or paid generation was run by this reviewer. The author's eight focused delivery tests were read; the author reports 35 combined native tests passing in 31.866 seconds, Ruff 0.14.4 checks passing, local validation with 158 tests / 2,138 assertions and export verification with three variants / two round-trips / unsupported export rejection. Those executions are author evidence, not independent executions claimed here. Product integration `e443aaaa` passed its declared frozen-install and validation gate; this report's official publication runs its own declared gate. Neither gate establishes game behavior.
 
 Actual AoE2 observations remain necessary for original-handle APIs, selection, circular arrival, work-rate effects across task variants, atomic execution and same-tick defeat priority, caption scheduling, save/load persistence, geographic navigation and marker behavior. The map uses modern shoreline controls and flattened elevation, not an ancient harbor reconstruction. Difficulty, duration and reward utility remain uncalibrated. Auxiliary dossier SVG/straight-hub-chain metrics must not be presented as the new relief route's native geometry or measured duration.
 
