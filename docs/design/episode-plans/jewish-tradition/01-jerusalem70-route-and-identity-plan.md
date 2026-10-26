@@ -44,3 +44,8 @@ Judith remains an inherited-history narrator for 70, born centuries later. The s
 
 
 The [bilingual source script](01-jerusalem70-screen-script.json) now closes the core historical/personal, entry, three-objective, loss and recovery copy for this partial design. Existing factories derive 45 surfaces at the current canonical predecessor count; these are not 45 new counted catalogue screens. Pressure-specific warnings remain dependent on the actual finite tactical design.
+
+
+## Additional geographic reading — 26 October
+
+Root inspected the report’s linked [Figure 1](https://hadashot.iaa.org.il/Images/8408-8653-1.jpg) and [Figure 2](https://hadashot.iaa.org.il/Images/8408-8653-2.jpg), including their north arrows, scales and separation of excavation areas. These are modern survey context and excavation diagrams, not a reconstructed playable 70 street network. Temporary research copies were viewed outside the project; no reuse licence, distributed image, traced road or new registered asset is claimed. The journal’s [Map References instructions](https://hadashot.iaa.org.il/Guidelines_eng.aspx) explicitly specify the New Israel Grid for submitted references. This resolves the publication convention left uninspected in the opening brief; it does not itself perform a WGS84 transformation, certify an EPSG operation or locate every fictional hub. Retain the original published reference and verify any later conversion independently before adopting archaeological control points. The figures do not make all ten proposed land connections surveyed routes.
