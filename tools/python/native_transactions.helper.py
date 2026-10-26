@@ -55,12 +55,13 @@ def _amounts(value):
 
 
 def _required_flags(value):
+    if value is None:
+        return {}
     if type(value) is not dict:
         raise TypeError("required_flags must map trigger-variable IDs to exact integer values")
     flags = {}
     for variable, expected in value.items():
-        if type(expected) is not int:
-            raise TypeError(f"required_flags[{variable!r}] must be an exact integer")
+        expected = _exact_integer(expected, f"required_flags[{variable!r}]", -(2**31), 2**31 - 1)
         flags[_variable_id(variable, "required flag variable")] = expected
     return flags
 
@@ -102,7 +103,7 @@ def _flag_guards(flags):
     ]
 
 
-def render_payment_function(function_name, player, amounts, receipt_variable, required_flags={}):
+def render_payment_function(function_name, player, amounts, receipt_variable, required_flags=None):
     """Return XS that validates all inputs and stock before a one-time debit."""
     name = _function_name(function_name)
     owner = _player(player)
@@ -149,7 +150,7 @@ def render_payment_function(function_name, player, amounts, receipt_variable, re
 
 
 def render_reward_function(function_name, player, amounts, reserve_variables,
-                           completion_variable, required_flags={}):
+                           completion_variable, required_flags=None):
     """Return XS that atomically consumes named reserves and grants resources once."""
     name = _function_name(function_name)
     owner = _player(player)
