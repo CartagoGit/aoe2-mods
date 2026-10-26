@@ -3,8 +3,8 @@
 The design source projects one survivor row per authored selector. A row
 selects exactly one generated object group or a nonempty list of distinct
 generated object groups; the pooled row keeps the already generated
-identities, origins and order. These tests drive the real factory, the real
-dossier validation and the existing public loss evaluator.
+identities, origins and order. These tests drive the real factory, the shared
+numeric threshold audit and the existing public loss evaluator.
 """
 
 import copy
@@ -226,7 +226,7 @@ class PooledSurvivorProjectionTests(unittest.TestCase):
         for episode in episodes:
             self.assertEqual(self.numbers["audit_count_thresholds"](episode), [])
 
-    def test_artificial_factory_output_passes_the_existing_dossier_validation(self):
+    def test_artificial_factory_output_passes_the_numeric_threshold_audit(self):
         world = self.project(
             [{"groups": list(COURTS), "minimumAliveOrAlreadySafe": 6}]
         )
