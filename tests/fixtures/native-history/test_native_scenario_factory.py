@@ -219,22 +219,50 @@ class NativeScenarioFactoryTests(unittest.TestCase):
         unknown_version["schemaVersion"] = 3
         economic_ai = base_ir()
         economic_ai["scenario"]["factions"][1]["economy"]["model"] = "scripted"
-        for ir, message in (
-            (nonsquare, "mapa cuadrado"),
-            (composed_version, "schemaVersion 1"),
-            (composed_capability, "perfiles de capacidad"),
-            (composed_profile, "perfiles de capacidad"),
-            (unknown_version, "schemaVersion 1"),
-            (economic_ai, "aiScript PER explícito"),
+        for ir, factory_message, exporter_message in (
+            (nonsquare, "mapa cuadrado", "mapa cuadrado"),
+            (composed_version, "schemaVersion 1", "capability-not-implemented"),
+            (composed_capability, 'metadato de capacidad "capability"',
+             "capability-not-implemented"),
+            (composed_profile, 'metadato de capacidad "capabilityProfile"',
+             "capability-not-implemented"),
+            (unknown_version, "schemaVersion 1", "schemaVersion 1"),
+            (economic_ai, "aiScript PER explícito", "aiScript PER explícito"),
         ):
-            with self.subTest(message=message):
-                with self.assertRaisesRegex(ValueError, message):
+            with self.subTest(message=exporter_message):
+                with self.assertRaisesRegex(ValueError, factory_message):
                     quiet(create_native_scenario_base, ir, VERSION)
                 with tempfile.TemporaryDirectory() as temporary:
                     out = Path(temporary) / "rejected.aoe2scenario"
-                    with self.assertRaises(ValueError):
+                    with self.assertRaisesRegex(ValueError, exporter_message):
                         quiet(export_scenario, ir, out, VERSION)
                     self.assertFalse(out.exists())
+                    self.assertEqual([], list(Path(temporary).iterdir()))
+
+    def test_capability_metadata_is_rejected_by_presence_and_not_by_truthiness(self):
+        for owner, name, value in (
+            ("wrapper", "capability", {}),
+            ("wrapper", "capability", None),
+            ("scenario", "capability", {}),
+            ("scenario", "capability", None),
+            ("scenario", "capabilityProfile", {}),
+            ("scenario", "capabilityProfile", None),
+        ):
+            with self.subTest(owner=owner, name=name, value=value):
+                ir = base_ir()
+                if owner == "wrapper":
+                    ir[name] = value
+                else:
+                    ir["scenario"][name] = value
+                expected = f'metadato de capacidad "{name}"'
+                with self.assertRaisesRegex(ValueError, expected):
+                    quiet(create_native_scenario_base, ir, VERSION)
+                with tempfile.TemporaryDirectory() as temporary:
+                    out = Path(temporary) / "rejected.aoe2scenario"
+                    with self.assertRaisesRegex(ValueError, expected):
+                        quiet(export_scenario, ir, out, VERSION)
+                    self.assertFalse(out.exists())
+                    self.assertEqual([], list(Path(temporary).iterdir()))
 
     def test_legacy_exporter_keeps_its_unsupported_profile_diagnostic(self):
         composed = base_ir()
