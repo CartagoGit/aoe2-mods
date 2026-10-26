@@ -1,6 +1,6 @@
 # Reparto de trabajo y volumen pendiente
 
-Corte: 25 de octubre de 2026. Instrucción del propietario: el arquitecto decide y revisa; delega recopilación y materialización a Luna o MiniMax según disponibilidad. Se trabaja en paralelo por paquetes cerrados. Este documento describe responsabilidades y evidencia, no implementa una cola: recuperar siempre el estado del DelendAI conectado y sus claims/unidades.
+Corte: 26 de octubre de 2026. Instrucción del propietario: el arquitecto decide y revisa; delega recopilación y materialización a Luna o MiniMax según disponibilidad. Se trabaja en paralelo por paquetes cerrados. Este documento describe responsabilidades y evidencia, no implementa una cola: recuperar siempre el estado del DelendAI conectado y sus claims/unidades.
 
 ## Volumen de diseño histórico
 
@@ -48,3 +48,12 @@ La revisión independiente ejecutó ambos checks completos de staging y validate
 Las capacidades nativas pendientes, plantillas reales, exportación soportada, carga en AoE2, rutas/huellas, guardado, progreso, presentación y calibración requieren sus evidencias propias. Pueden necesitar un tester con el juego disponible. La aprobación de textos en 17 idiomas y medios/voz conserva su revisión específica. No distribuir mods ni lanzar generación pagada masiva por completar un dossier o un piloto.
 
 Para el trabajo concreto, seguir la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md), la [especificación del piloto](../wiki/route-pilot/02-implementation-specification.md) y las propuestas actuales. i00008/S1 está `done` (revisión Luna 2/2; metadatos integrados en `137fdd73`), S2 está `done` (producto `6f06737`, veredicto `e08a5cb`) y S3 está `done` (producto `c5533f7`, revisión formal `3746e076`). S3 añadió la rama opt-in al auditor y preservó entonces la salida previa; tras insertar el nuevo dossier y regenerar, el informe actual tiene 64 filas y 54 candidatos, con 63 filas que muestran presupuesto accesible idéntico. No añade soporte nativo. `readiness_timing_audit` sigue cubriendo solo su plan legacy, no los perfiles v3.
+
+
+## Medición por interacción y pruebas tempranas
+
+El [primer corte reconstruido](../qa/campaign-design/interaction-progress-checkpoints.md) fija la comparación c5533f7→d6acfed: +1dossier integrado, +51pantallas, +7secundarios y +2recursos locales; quedaron64/214/2645/398/49. Es un intervalo reconstruido, sin timestamps de mensajes ni consumo por modelo; no es una media ni una predicción. Los siguientes cortes deben usar snapshots integrados comparables, distinguir los mismos contadores y disponer de al menos tres intervalos antes de publicar una media móvil. No sumar mensajes de herramientas, compacciones ni trabajo WIP. La cuota restante no está medida.
+
+El propietario pidió probar la base en paralelo. La entrega f00001/S4 prepara un kit privado de los fixtures route-pilot/route-successor, con hashes, escenarios de diagnóstico separados, instrucciones y ficha de observación. Recuperar su producto y revisión actuales; el kit no demuestra que la UI o el juego hayan cargado. Primero probar carga, rutas A/B normales, derrota del guardia, guardado y EN/es. La sucesora tiene resumen estático: lector de progreso/recap adaptativo, arbitraje same-tick sin harness, plantillas/audio y calibración histórica conservan sus gates. No esperar los214dossiers para registrar estos primeros fallos reales.
+
+Dos decisiones mecánicas adicionales ya tienen paquetes cerrados: i00009/S1 recompensas opcionales authored/zero y i00010/S1 conjuntos de supervivientes originales (ambas con aprobación independiente; i00010 veredicto f4a2599). S2 de i00010 espera i00009/S2 aceptado e integrado porque comparten factory/runner; no trabajar los mismos archivos simultáneamente. La [incidencia de sesión vacía](../qa/campaign-design/delendai-unit-session-recovery-incident.md) documenta el rechazo inicial de i00009/S2 y limpieza oficial; comprobar la entrada nueva del trabajador antes de afirmar que está implementando. Ninguna decisión documental crea otro dossier o acredita un mapa nativo.
