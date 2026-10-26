@@ -2,14 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: ready
+status: review
 type: proposal
 track: campaign-factory
 date: 2026-10-25
-last-transition-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
-last-correlation-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
-last-transition-from: review
-last-transition-at: 2026-10-25T13:31:10.522Z
+last-transition-id: ab5c438d-eec0-47f7-aafa-aaebd0178171
+last-correlation-id: ab5c438d-eec0-47f7-aafa-aaebd0178171
+last-transition-from: in-progress
+last-transition-at: 2026-10-26T02:19:37.812Z
 shipped-in:
   - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
   - "6f06737db6dfd3ccc2251e375398c5c2201eb4cb"
@@ -81,6 +81,7 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 - review-log: resubmitted by gpt-6-luna — resubmitted; answers the request above: Implemented the opt-in civic audit dispatch and S3 handoff. Strict composed-world-ledger schema/profile and resource-vector checks; fixed legacy episode baseline; actual composed artificial fixture; focused and full validation pass. Independent review report a6d3e81 merged. Legacy 63-row report bytes preserved; no historical/native/game approval.
 - review-log: requested_changes by gpt-6.1-sol — Fresh independent review: P2 exact difficulty/selection view guard at civic auditor line206 accepts difficulty-only True or 1.0 where authored account and selection analysis contain integer1 because Python equality aliases bool/float/int. Independently reproduced both using existing v3_episode fixture. Validate duplicate difficulty with type-sensitive equality or equivalent strict checks; add both regression cases. Other scoped implementation and handoff coherent. Independent 14 Python and full bun run validate exit0:157tests/13files/2136assertions,3campaigns. Report docs/qa/fulfillment-dossier-projection/fresh-global-audit-review.md. No historical/native/game approval.
 - review-log: approved by gpt-6 — verified at c5533f777dfb, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Integrated S3 handoff documents explicit opt-in, bridge/composer/audit commands and fail-closed behavior; source remained 63 legacy episodes in this infrastruc… (2) Handoff and code preserve native rejection and content gates; no historical insertion, public schema, campaign identity or native adapter changes. (3) 15 independently passing Python tests cover actual composed artificial fixture, unknown/malformed cases, selection and duplicate-view bool/float/NaN drift, and… — Independent correction review of integrated c5533f777dfb7e0f9c9c76157109725aa5288ed8. GPT-6.1 finding answered by c8bd0a9: type-sensitive complete-view canonical JSON comparison rejects bool/int/float drift and NaN, accepts key reorder. Independently executed 15 Python tests and full validate (157 tests, 2136 assertions, 3 campaigns) on exact source; publication gate passed. Reports global-audit-independent-review.md and fresh-global-audit-review.md retained. No historical/native/game approval.
+- shipped-in: `c5533f777dfb`
 
 ## acceptance
 
@@ -94,4 +95,4 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 
 ## S3 bounded integration amendment — 25 October 2026
 
-Root reproduced the remaining global civic-audit failure after successful temporary v3 composition: KeyError(accessibleWithoutOptionalRewards). The [closed packet](../../../../handoffs/FULFILLMENT-DOSSIER-S3-PACKET.md) defines the explicit reporting branch, legacy invariance and exact handoff work. Files add only that internal auditor, its existing regressions and status documentation. No public/runtime contract, selected episode, ID range or historical content changes. The global transition accidentally queued S3 for review alongside S2; the independent request-changes action records its undelivered state. This amendment does not alter the accepted S1/S2 verdicts.
+Root reproduced the remaining global civic-audit failure after successful temporary v3 composition: KeyError(accessibleWithoutOptionalRewards). The [closed packet](../../../handoffs/FULFILLMENT-DOSSIER-S3-PACKET.md) defines the explicit reporting branch, legacy invariance and exact handoff work. Files add only that internal auditor, its existing regressions and status documentation. No public/runtime contract, selected episode, ID range or historical content changes. The global transition accidentally queued S3 for review alongside S2; the independent request-changes action records its undelivered state. This amendment does not alter the accepted S1/S2 verdicts.

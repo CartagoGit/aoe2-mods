@@ -2,12 +2,17 @@
 id: i00010
 title: "Project pooled original survivor sets without changing reference contracts"
 kind: infra
-status: ready
+status: done
 type: proposal
 track: campaign-factory
 date: 2026-10-25
 shipped-in:
   - "6e3bbf51e05337dc054750bffed00f456805bc68"
+  - "d86c561303916d658394b560030875fa045991b6"
+last-transition-id: 4ca65f4f-adf4-48a1-9faa-4f75b47b4061
+last-correlation-id: 4ca65f4f-adf4-48a1-9faa-4f75b47b4061
+last-transition-from: review
+last-transition-at: 2026-10-26T02:28:15.483Z
 ---
 
 # i00010 — Project pooled original survivor sets without changing reference contracts
@@ -41,9 +46,10 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 - review-implementer: gpt-6
 - review-reviewer: gpt-6-luna
 - review-log: approved by gpt-6-luna — verified at 6e3bbf51e053, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet define mutually exclusive group/groups selectors; reject missing, wrong-type, empty, duplicate, unknown and overlapping identities; pre… (2) The documents retain the two-field dossier projection and public schema/reducer, preserve all actor IDs/origins, require i00009/S2 before shared-factory implem… — Independent S1 review. Reproduced the documented current factory failure (`KeyError: 'group'`); the accepted design closes the mapping contract while preserving the public survivor semantics, identity, ordering, legacy output and all historical/native/game boundaries. `bun run validate` exit 0: 157/157 tests, 2,136 expect() calls, docs and campaign checks passed.
+- shipped-in: `6e3bbf51e053`
 
 ### S2 — Implement strict survivor projection and verify the existing loss reference
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/test_pooled_survivor_projection.py`, `tools/design/test_design.py`, `tests/unit/pooled-survivor-projection.fixture.ts`, `docs/qa/pooled-survivor-projection/acceptance.md`
 - **Gate**: type
@@ -51,8 +57,11 @@ Jerusalem70 deliberately has eight original household identities in four two-per
   - "After i00009/S2 is independently accepted and integrated, reuse existing group-ID generation and strict numeric primitives to project exactly one survivor row for any declared group union. Do not create or relocate an actor, invent a group alias in public output, or modify any runtime/public schema."
   - "Use real artificial factory output plus existing strict dossier/reference validation to test four groups of2 pooled at minimum6, unchanged single-group output, malformed/unknown/duplicate groups and minimum types/bounds; verify existing death logic tolerates2original losses and defeats on3 regardless of the origin court, with required defeat before possible victory."
   - "Preserve all64 current dossiers,2645screens,398secondaries,49reference records, existing generated artifacts/native rejection and IDs; run targeted/design/bun validation, record independent review and native/game/history limitations without authoring a historical campaign."
-- review-state: in_review
+- review-state: done
 - review-implementer: minimax-m3.1-flash-preview
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at d86c56130391, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Verified factory resolves mutually exclusive group/groups selectors in authored order, applies the existing is_positive_integer primitive and emits only entiti… (2) 14 focused Python tests passed. The test-only TS bridge takes real factory output, validates the artificial public v2 profile and semantic references, then inv… (3) Focused tests and bun run validate passed (157/157, 2,136 expectations; docs check and 3 campaigns passed). Factory source checks preserve 64 dossiers and lega… — Independent S2 review only; focused and validation logs are saved under /tmp/i00010-s2-independent-review/. The test-only TS bridge exercises the public reference validator and reducer; no native/game/history approval is claimed.
+- shipped-in: `d86c56130391`
 
 ## acceptance
 
