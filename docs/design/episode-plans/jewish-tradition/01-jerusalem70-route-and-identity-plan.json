@@ -1,0 +1,786 @@
+{
+  "documentType": "architect documentary decisions; not an executable contract or adapter DSL",
+  "author": "gpt-6",
+  "date": "2026-10-25",
+  "campaignId": "jewish-tradition",
+  "episodeId": "01-a-city-of-names",
+  "selectedOrder": 1,
+  "status": "partial root design; full dossier, economy/pressure calibration, screens and independent review pending",
+  "chronology": {
+    "frame": "70 CE; fictional local civilian interlude during the destruction sequence, no asserted exact day",
+    "fixedOutcome": "Temple and city destruction cannot be reversed by victory",
+    "sources": [
+      {
+        "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+        "locator": "War VI.4, VI.6–8, hosted Whiston translation",
+        "access": "bounded passages read by root; later narrative and rhetoric remain attributed"
+      },
+      {
+        "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26274",
+        "locator": "Levy and Baruch 2023, Volume135, introduction/chronology and Areas S11–S12",
+        "access": "bounded report read; first-century street/destruction distinguished from later overbuilding; no reuse of figures or inspected CRS"
+      }
+    ]
+  },
+  "mapPlan": {
+    "geographyId": "jerusalem",
+    "sizeTiles": 400,
+    "bbox": [
+      35.2265,
+      31.7702,
+      35.2357,
+      31.7758
+    ],
+    "projection": "existing tools/design/geography.py tile_point; north-up, cosine-corrected longitude, padded square; no camera calibration assumed",
+    "regionalReference": "docs/research/odyssey-research/jerusalem-modern-dsm-processing.json",
+    "regionalReferenceInterpretation": "modern surface including buildings/vegetation; no ancient ground, parcel, passability or game heights inferred",
+    "hubs": [
+      {
+        "id": "muster",
+        "name": {
+          "en": "Northern Gathering Court",
+          "es-ES": "Patio de reunión del norte"
+        },
+        "lonLat": [
+          35.2316,
+          31.7752
+        ],
+        "centre": [
+          218.86,
+          99.29
+        ],
+        "purpose": "briefing and regrouping",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-1"
+      },
+      {
+        "id": "western-households",
+        "name": {
+          "en": "Western Household Court",
+          "es-ES": "Patio de hogares occidental"
+        },
+        "lonLat": [
+          35.2294,
+          31.7745
+        ],
+        "centre": [
+          133.67,
+          131.18
+        ],
+        "purpose": "main households 1–2",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-2"
+      },
+      {
+        "id": "eastern-households",
+        "name": {
+          "en": "Eastern Household Court",
+          "es-ES": "Patio de hogares oriental"
+        },
+        "lonLat": [
+          35.2336,
+          31.7741
+        ],
+        "centre": [
+          296.31,
+          149.4
+        ],
+        "purpose": "main households 3–4",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-3"
+      },
+      {
+        "id": "southern-households",
+        "name": {
+          "en": "Southern Household Court",
+          "es-ES": "Patio de hogares meridional"
+        },
+        "lonLat": [
+          35.2325,
+          31.7727
+        ],
+        "centre": [
+          253.71,
+          213.16
+        ],
+        "purpose": "main households 5–6",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-4"
+      },
+      {
+        "id": "central-households",
+        "name": {
+          "en": "Central Household Court",
+          "es-ES": "Patio de hogares central"
+        },
+        "lonLat": [
+          35.2314,
+          31.7739
+        ],
+        "centre": [
+          211.12,
+          158.51
+        ],
+        "purpose": "main households 7–8",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-5"
+      },
+      {
+        "id": "western-record",
+        "name": {
+          "en": "Western Record Bearer",
+          "es-ES": "Portador occidental"
+        },
+        "lonLat": [
+          35.2286,
+          31.7739
+        ],
+        "centre": [
+          102.69,
+          158.51
+        ],
+        "purpose": "original household bundle 1 with its original bearer",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-6"
+      },
+      {
+        "id": "central-record",
+        "name": {
+          "en": "Central Record Bearer",
+          "es-ES": "Portador central"
+        },
+        "lonLat": [
+          35.231,
+          31.773
+        ],
+        "centre": [
+          195.63,
+          199.5
+        ],
+        "purpose": "original household bundle 2 with its original bearer",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-7"
+      },
+      {
+        "id": "eastern-record",
+        "name": {
+          "en": "Eastern Record Bearer",
+          "es-ES": "Portador oriental"
+        },
+        "lonLat": [
+          35.2342,
+          31.772
+        ],
+        "centre": [
+          319.54,
+          245.05
+        ],
+        "purpose": "original household bundle 3 with its original bearer",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-8"
+      },
+      {
+        "id": "central-turn",
+        "name": {
+          "en": "Central Turning",
+          "es-ES": "Recodo central"
+        },
+        "lonLat": [
+          35.2316,
+          31.7728
+        ],
+        "centre": [
+          218.86,
+          208.61
+        ],
+        "purpose": "central routing decision",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-9"
+      },
+      {
+        "id": "western-turn",
+        "name": {
+          "en": "Western Turning",
+          "es-ES": "Recodo occidental"
+        },
+        "lonLat": [
+          35.2288,
+          31.7719
+        ],
+        "centre": [
+          110.44,
+          249.6
+        ],
+        "purpose": "western routing decision",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-10"
+      },
+      {
+        "id": "southern-turn",
+        "name": {
+          "en": "Southern Turning",
+          "es-ES": "Recodo meridional"
+        },
+        "lonLat": [
+          35.2312,
+          31.7714
+        ],
+        "centre": [
+          203.37,
+          272.38
+        ],
+        "purpose": "last shared approach",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-11"
+      },
+      {
+        "id": "temporary-refuge",
+        "name": {
+          "en": "Temporary Receiving Court",
+          "es-ES": "Patio receptor provisional"
+        },
+        "lonLat": [
+          35.2321,
+          31.7708
+        ],
+        "centre": [
+          238.22,
+          299.71
+        ],
+        "purpose": "single main receiving court; no siege-line escape",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": 3,
+        "candidateAuthoringHubId": "hub-12"
+      },
+      {
+        "id": "copy-desk",
+        "name": {
+          "en": "The Copying Table",
+          "es-ES": "La mesa de copias"
+        },
+        "lonLat": [
+          35.2301,
+          31.7714
+        ],
+        "centre": [
+          160.78,
+          272.38
+        ],
+        "purpose": "optional record receiving district",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-13"
+      },
+      {
+        "id": "optional-neighbors",
+        "name": {
+          "en": "Neighboring Households",
+          "es-ES": "Hogares vecinos"
+        },
+        "lonLat": [
+          35.2303,
+          31.7743
+        ],
+        "centre": [
+          168.52,
+          140.29
+        ],
+        "purpose": "two optional originals, separate from main eight",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-14"
+      },
+      {
+        "id": "western-lookout",
+        "name": {
+          "en": "Western Viewpoint",
+          "es-ES": "Mirador occidental"
+        },
+        "lonLat": [
+          35.2274,
+          31.773
+        ],
+        "centre": [
+          56.23,
+          199.5
+        ],
+        "purpose": "optional observation",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-15"
+      },
+      {
+        "id": "eastern-lookout",
+        "name": {
+          "en": "Eastern Viewpoint",
+          "es-ES": "Mirador oriental"
+        },
+        "lonLat": [
+          35.2345,
+          31.7733
+        ],
+        "centre": [
+          331.16,
+          185.84
+        ],
+        "purpose": "optional observation",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-16"
+      },
+      {
+        "id": "damaged-store",
+        "name": {
+          "en": "Damaged Local Store",
+          "es-ES": "Almacén local dañado"
+        },
+        "lonLat": [
+          35.2293,
+          31.7712
+        ],
+        "centre": [
+          129.8,
+          281.49
+        ],
+        "purpose": "fictional optional store, never a Temple structure",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-17"
+      },
+      {
+        "id": "western-pressure-pocket",
+        "name": {
+          "en": "Western Patrol Pocket",
+          "es-ES": "Posición de patrulla occidental"
+        },
+        "lonLat": [
+          35.2278,
+          31.7747
+        ],
+        "centre": [
+          71.71,
+          122.07
+        ],
+        "purpose": "candidate finite opponent approach, not excavated deployment",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-18"
+      },
+      {
+        "id": "eastern-pressure-pocket",
+        "name": {
+          "en": "Eastern Patrol Pocket",
+          "es-ES": "Posición de patrulla oriental"
+        },
+        "lonLat": [
+          35.235,
+          31.774
+        ],
+        "centre": [
+          350.52,
+          153.95
+        ],
+        "purpose": "candidate finite opponent approach, not excavated deployment",
+        "certainty": "architect-authored fictional activity-site proposal; no surveyed 70 CE parcel",
+        "receivingRadiusTiles": null,
+        "candidateAuthoringHubId": "hub-19"
+      }
+    ],
+    "corridors": [
+      {
+        "id": "western-main",
+        "hubOrder": [
+          "muster",
+          "western-households",
+          "western-record",
+          "western-turn",
+          "southern-turn",
+          "temporary-refuge"
+        ],
+        "widthTiles": 8,
+        "mode": "land",
+        "straightControlLengthTiles": 363.66,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "central-main",
+        "hubOrder": [
+          "muster",
+          "central-households",
+          "central-turn",
+          "southern-turn",
+          "temporary-refuge"
+        ],
+        "widthTiles": 8,
+        "mode": "land",
+        "straightControlLengthTiles": 220.33,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "eastern-main",
+        "hubOrder": [
+          "muster",
+          "eastern-households",
+          "central-turn",
+          "southern-households",
+          "eastern-record",
+          "temporary-refuge"
+        ],
+        "widthTiles": 8,
+        "mode": "land",
+        "straightControlLengthTiles": 396.01,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "west-to-central",
+        "hubOrder": [
+          "western-record",
+          "central-households",
+          "central-record",
+          "central-turn"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 177.2,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "southern-link",
+        "hubOrder": [
+          "western-turn",
+          "damaged-store",
+          "copy-desk",
+          "southern-turn"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 112.19,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "neighbors-return",
+        "hubOrder": [
+          "western-households",
+          "optional-neighbors",
+          "central-households"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 82.35,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "western-observation",
+        "hubOrder": [
+          "western-record",
+          "western-lookout",
+          "western-turn"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 135.77,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "eastern-observation",
+        "hubOrder": [
+          "eastern-households",
+          "eastern-lookout",
+          "eastern-record"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 110.76,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "western-patrol-approach",
+        "hubOrder": [
+          "western-pressure-pocket",
+          "western-record"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 47.83,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      },
+      {
+        "id": "eastern-patrol-approach",
+        "hubOrder": [
+          "eastern-pressure-pocket",
+          "eastern-households"
+        ],
+        "widthTiles": 6,
+        "mode": "land",
+        "straightControlLengthTiles": 54.4,
+        "geometryStatus": "control-point graph only; actual street/slope/footprint and enemy reachability not certified"
+      }
+    ],
+    "contextControls": [
+      {
+        "id": "temple-platform-context",
+        "lonLat": [
+          35.235,
+          31.778
+        ],
+        "basis": "existing regional approximate-modern anchor; only orientation, never a collectible/capture/repair site",
+        "presentation": "regional introduction/inset only; outside the playable local frame, no in-map target"
+      },
+      {
+        "id": "olives-ridge-context",
+        "lonLat": [
+          35.245,
+          31.779
+        ],
+        "basis": "existing regional approximate-modern anchor east of the local bbox; outside this active map, not an equivalent receiving refuge",
+        "presentation": "regional introduction/inset only; outside the playable local frame, no in-map target"
+      }
+    ],
+    "excluded": [
+      "No navigable Kidron river, invented bridge, sewer shortcut or historical safe gate",
+      "No Dome of the Rock, Ottoman walls or later churches used as 70 CE landmarks",
+      "No surveyed ancient street alignments inferred from straight graph edges",
+      "No indispensable path outside the authored local frame",
+      "No documented rescue, house address, exact siege phase or immunity claimed for the fictional receiving court"
+    ],
+    "frameCheck": {
+      "pointExtent": [
+        35.225947999999995,
+        31.768620073976656,
+        35.236252,
+        31.777379926023343
+      ],
+      "outerCellExtent": [
+        35.22593508771929,
+        31.768609096718453,
+        35.2362649122807,
+        31.777390903281546
+      ],
+      "regionalModernDsmCoversAllOuterCells": true,
+      "previousNominalBBox": [
+        35.224,
+        31.768,
+        35.241,
+        31.783
+      ],
+      "previousControlEnvelope": {
+        "controlSpanTiles": [
+          153.45,
+          104.5
+        ],
+        "centreEnvelopeFraction": 0.1007
+      },
+      "currentControlEnvelope": {
+        "controlSpanTiles": [
+          294.29,
+          200.42
+        ],
+        "centreEnvelopeFraction": 0.3705
+      },
+      "interpretation": "The centre-envelope fraction describes the rectangle containing the19 activity controls only. It is neither usable terrain fraction, interest density, footpath coverage, ancient ground nor proof of a viable route."
+    }
+  },
+  "originalIdentities": {
+    "mainHouseholds": [
+      {
+        "id": "household-1",
+        "originHub": "western-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-2",
+        "originHub": "western-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-3",
+        "originHub": "eastern-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-4",
+        "originHub": "eastern-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-5",
+        "originHub": "southern-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-6",
+        "originHub": "southern-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-7",
+        "originHub": "central-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      },
+      {
+        "id": "household-8",
+        "originHub": "central-households",
+        "representation": "one original gameplay group marker, not a counted historical household"
+      }
+    ],
+    "mainRecordBearers": [
+      {
+        "id": "record-bearer-1",
+        "recordId": "household-bundle-1",
+        "originHub": "western-record",
+        "representation": "one original bearer with its fixed ordinary fictional household bundle; no separate cargo/drop/replacement mechanic implied"
+      },
+      {
+        "id": "record-bearer-2",
+        "recordId": "household-bundle-2",
+        "originHub": "central-record",
+        "representation": "one original bearer with its fixed ordinary fictional household bundle; no separate cargo/drop/replacement mechanic implied"
+      },
+      {
+        "id": "record-bearer-3",
+        "recordId": "household-bundle-3",
+        "originHub": "eastern-record",
+        "representation": "one original bearer with its fixed ordinary fictional household bundle; no separate cargo/drop/replacement mechanic implied"
+      }
+    ],
+    "optionalHouseholds": [
+      "optional-neighbor-1",
+      "optional-neighbor-2"
+    ],
+    "substitution": "none: optional people, trained replacements or duplicate names do not count as main originals"
+  },
+  "objectiveDecisions": [
+    {
+      "id": "o1",
+      "condition": "at least six distinct original main household identities physically reach the muster court alive after leaving their authored origins",
+      "eligibleOriginals": "mainHouseholds",
+      "requiredCount": 6,
+      "receivingHub": "muster",
+      "persistence": "one arrival receipt per original; receipt is not final presence",
+      "earlyProgress": "genuine early arrivals of any main identity persist; initial visibility or an unrelated optional arrival does not count"
+    },
+    {
+      "id": "o2",
+      "condition": "all three original record bearers physically reach the copy desk alive with their fixed original ordinary bundles",
+      "eligibleOriginals": "mainRecordBearers",
+      "requiredCount": 3,
+      "receivingHub": "copy-desk",
+      "persistence": "receipt per original bearer/bundle association; no copy or transaction can replace one",
+      "earlyProgress": "valid early receipt may persist without triggering a later phase before its prerequisite"
+    },
+    {
+      "id": "o3",
+      "condition": "at one fresh terminal evaluation, at least six of the original eight households AND all three original record bearers are alive and physically inside the same temporary receiving court",
+      "receivingHub": "temporary-refuge",
+      "householdRequiredCount": 6,
+      "recordBearerRequiredCount": 3,
+      "freshPresence": "current-entity-presence in existing i00005 reference; every subject uses the same authored zone; old arrival is insufficient",
+      "noExtraCondition": "no requirement to kill all enemies, complete any secondary, pay a fee, retain a particular optional person or reach Mount of Olives"
+    }
+  ],
+  "lossAndRecovery": {
+    "mainHouseholds": "two total losses tolerated; third distinct original loss makes six-of-eight impossible and causes defeat before simultaneous victory",
+    "mainRecordBearers": "any loss of an original bearer/bundle is advertised irreversible main defeat; no redundant-copy fiction or corpse-recovery operation",
+    "leavingReceivingCourt": "keeps final success incomplete until enough eligible originals return alive; it does not delete genuine historical arrival receipts",
+    "optionalLoss": "fails that optional only; no main deficit, negative stock or revenge wave",
+    "terminal": "one terminal latch; required loss before victory, close secondary rewards atomically; persist IDs, original associations, receipts and current-world input epoch",
+    "recovery": "regroup surviving originals and reroute them along already disclosed approaches before terminal loss; no resurrected original or invented neutral escort bargain"
+  },
+  "routePortfolios": [
+    {
+      "id": "consolidate",
+      "decision": "bring six or more households to muster, consolidate an escort, then retrieve the three bearers through west/central and eastern branches before final joint transfer",
+      "cost": "more backtracking and exposing a larger group at junctions",
+      "allOptionalsSkipped": true
+    },
+    {
+      "id": "divided-escort",
+      "decision": "use separate escorts to gather western and eastern originals/record bearers in parallel, regroup at central or southern turn and finish with fresh joint presence",
+      "cost": "less local cover per branch and higher attention demand; no guaranteed fast completion",
+      "allOptionalsSkipped": true
+    },
+    {
+      "id": "information-first",
+      "decision": "use the optional guide/lookouts before assigning the same already available routes",
+      "cost": "additional real travel; it must not reveal an otherwise hidden mandatory goal or create a road",
+      "mainThresholdsUnchanged": true
+    }
+  ],
+  "difficultyDecisions": {
+    "unchanged": [
+      "six of eight household originals",
+      "three original record bearers",
+      "single final court",
+      "normal movement, damage and health statistics",
+      "finite disclosed opposition, no production or reinforcement teleport",
+      "no countdown claiming to date the historical fire"
+    ],
+    "easy": "permit one cohesive escort and generous legible separation from preplaced local pressure; no compulsory sacrificial household",
+    "standard": "make western versus eastern coverage and the decision to consolidate meaningful; all-skip route must remain viable",
+    "hard": "require deliberate escort assignment at more than one junction; keep exactly the same casualty tolerance and visible main rules, never require optional aid",
+    "unresolvedBeforeMaterialization": [
+      "exact finite friendly/enemy roster and verified unit/civilization representation",
+      "actual walkable path lengths, patrol release predicates and retreat bounds",
+      "disjoint spendable/protected/optional accounts and a useful, supported use for each optional resource reward",
+      "per-difficulty no-optional tactical feasibility and native engine difficulty mapping"
+    ]
+  },
+  "capabilityDisposition": {
+    "reuse": [
+      "existing entity-state arrival receipts with original IDs",
+      "current-entity-presence reference for fresh final six-of-eight and all-three",
+      "existing optional original arrivals, zone visits, once-only resource accounts and context effects where expressed"
+    ],
+    "nativePending": [
+      "i00003 composed objectives, observers, finite opposition and save/load",
+      "i00005 native fresh presence",
+      "s00001 real AoE2 geometry, difficulty, terminal and usability proof"
+    ],
+    "forbiddenEmulation": [
+      "An arrival ledger is not current presence",
+      "Fixed courier/bundle identity is not an implemented cargo inventory",
+      "No resource bonus advertised as useful without an actual supported spend",
+      "No native output or historical permission inferred from this documentary JSON"
+    ],
+    "authoringProjectionGap": {
+      "scope": "design factory only; existing v2 reference worldContract already represents an arbitrary explicit survivor entity set",
+      "observed": "world_and_objectives materializes each authored survivor row using exactly one group key. Four two-person origin groups cannot be pooled into one six-of-eight survivor set through that source path. Omitting the pool also omits advertised impossible-threshold defeat; four separate per-court minima impose a different rule.",
+      "requiredResult": "Keep four origin courts and one union of exactly eight originals with minimum6, plus original bearer losses. Project an explicitly authored validated entity set without changing public schema or IDs.",
+      "status": "i00010/S1 decision and mechanical packet independently approved with verdict f4a2599; implementation S2 pending and serialized after i00009/S2; no working new selector claimed",
+      "evidence": [
+        "tools/design/episode_dossier.factory.py::world_and_objectives survivorGroups comprehension",
+        "packages/schemas/scenario-capability.schema.ts::survivorGroupSchema",
+        "packages/gameplay-state/capability-predicates.validator.ts survivorGroups loss check"
+      ],
+      "proposal": "i00010"
+    }
+  },
+  "continuity": {
+    "narratorId": "judith-copyist",
+    "knowledge": "fictional narrator born c.355;70 is inherited, never eyewitness",
+    "sequence": "qualified sober common history → explicit handover → Judith personal perspective",
+    "recommendedPrevious": "faith-origins Jewish-perspective route, recommendation only; entry allowed without completion",
+    "nextEpisodeId": "02-refuge-and-school-supply-yavneh",
+    "nextQualification": "continued lives/transmission; do not claim these fictional households founded an academy or fixed a canon",
+    "campaignComplete": false,
+    "progressWrite": false
+  },
+  "nextRootDecisions": [
+    "source-linked local footprint/slope and all corridors",
+    "finite opposing and escort identities plus exact pressure rules",
+    "secondary benefits/economy using real available operations",
+    "full EN-first/es-ES screen text including entry and loss help",
+    "complete canonical dossier and independent reviews before assigning mechanical authoring"
+  ]
+}

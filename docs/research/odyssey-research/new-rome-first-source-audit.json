@@ -1,0 +1,242 @@
+{
+  "campaignId": "new-rome",
+  "scope": "Orders 1–14 in docs/design/odysseys/new-rome.json; read-only fact/source audit. No episode, chronology, or map changed.",
+  "episodes": [
+    {
+      "order": 1,
+      "id": "01-administrative-transition-constantinople",
+      "date": "337 CE; Constantine died during Pentecost at/near Nicomedia; body transferred to Constantinople",
+      "place": "Nicomedia and Constantinople",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.63–66, especially IV.64–66",
+          "consulted": "Opened the full Book IV translation; IV.64 says he died at midday on Pentecost; IV.66 says soldiers carried his body from Nicomedia to the city named for him.",
+          "supports": "Death, transfer of body, and Eusebius's account that Constantine apportioned imperial inheritance among his sons (IV.63).",
+          "limits": "Eusebius is a near-contemporary Christian panegyrist; the account idealizes Constantine and frames succession as paternal inheritance. It does not document an orderly permanent division of empire or specific eastern/western administration after 337. Do not stage the death at Constantinople: the source says the body was moved from Nicomedia."
+        }
+      ],
+      "assessment": "Core death/translatio supported; succession characterization should avoid implying settled constitutional partition."
+    },
+    {
+      "order": 2,
+      "id": "02-council-and-city-logistics-constantinople",
+      "date": "381 CE",
+      "place": "Constantinople; exact session building not verified here",
+      "sources": [
+        {
+          "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "locator": "First Council of Constantinople, page historical/editorial introduction and 'exposition of the 150 fathers'",
+          "consulted": "Page opened. Its editorial note says canons 5–6 belong to a 382 synod, canon 7 derives from a letter; council reached ecumenical status through later reception, with creed linked to it at Chalcedon. The translated creed text is presented as the faith of the 150 fathers.",
+          "supports": "Later conciliar tradition associates the Holy Spirit exposition and creed with Constantinople I; Canon 3's rule gives Constantinople honor after Rome because it is New Rome.",
+          "limits": "The page's editorial material is modern, not acta of 381. The creed in its familiar form is textually attested in the Chalcedon record (451); avoid claiming this exact text survives as a contemporaneous signed 381 act. Canon 3 is a rank/honor and jurisdiction canon, not a modern denominational split. No session venue or city logistics established."
+        }
+      ],
+      "assessment": "The episode's own qualification about textual transmission is important and supported; do not literalize ceremonial/civic logistics."
+    },
+    {
+      "order": 3,
+      "id": "03-competing-dispatches-constantinople",
+      "date": "395 CE; Theodosius I died at Milan on 17 January",
+      "place": "Milan; subsequent courts at Constantinople and in the West",
+      "sources": [
+        {
+          "url": "https://www.britannica.com/biography/Theodosius-I",
+          "locator": "Chronology/overview (the episode's cited page)",
+          "consulted": "Only cited page identity/search metadata checked; full Britannica page not consulted.",
+          "supports": "A secondary overview is a lead for conventional 395 framing, but does not constitute consulted evidence here.",
+          "limits": "Primary narrative Socrates, Ecclesiastical History V (search-result passage in https://www.newadvent.org/fathers/26015.htm and parallel chapter at https://st-takla.org/books/en/ecf/202/2020191.html), says Theodosius died at Milan after Honorius arrived; that passage is a later 5th-century church history and needs precise chapter cross-check. Episode correctly cautions that 395 was not an absolute legal division. Separate courts and succession did not mean the polity instantly ceased to be one Roman Empire."
+        }
+      ],
+      "assessment": "Date/place are conventional; current cited secondary page was not fully read. Treat 'division' as evolving court governance."
+    },
+    {
+      "order": 4,
+      "id": "04-civilian-refuge-and-dispatch-constantinople",
+      "date": "404 CE",
+      "place": "Constantinople; exile destination not specified in cited URL",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/1912.htm",
+          "locator": "Actual page title: John Chrysostom, homily 'If Your Enemy Hunger, Feed Him' / 'To those who had not attended the assembly'",
+          "consulted": "Opened and inspected title and text; it is a homily, not Palladius's Dialogue on the Life of John Chrysostom and contains no 404 deposition/exile account at the cited passage.",
+          "supports": "The cited source does not support this episode claim.",
+          "limits": "Definite URL/source mismatch. A separately accessible transcription of Palladius, Dialogue, chapters on second expulsion is https://www.tertullian.org/fathers/palladius_dialogus_02_text.htm; search result was read, but full passage not checked in this audit. Palladius writes as a pro-Chrysostom advocate, not a neutral court record. A useful scholarly discussion notes the second exile chronology is debated: https://www.researchgate.net/publication/260299190_The_Date_of_Innocent_I%27s_Epistula_12_and_the_Second_Exile_of_John_Chrysostom (abstract/search scope only). Civilian refuge, household supply, and dispatch mechanics are not established by the cited source."
+        }
+      ],
+      "assessment": "Cited evidence fails; candidate needs corrected primary locator and explicit attribution to Chrysostom's supporters."
+    },
+    {
+      "order": 5,
+      "id": "05-finite-school-works-constantinople",
+      "date": "425 CE",
+      "place": "Constantinople; Capitolium auditorium named in the law",
+      "sources": [
+        {
+          "url": "https://www.thelatinlibrary.com/theodosius/theod14.shtml",
+          "locator": "Codex Theodosianus 14.9.3 pr.–1; constitution dated 27 February 425",
+          "consulted": "Latin law text opened/read. It regulates public/private teaching and specifies an imperial auditorium with Latin and Greek rhetoric/grammar teachers, one philosophy chair and two law teachers.",
+          "supports": "A state-supervised teaching establishment and public auditorium existed/was organized under Theodosius II in 425; exact roster is in the statute.",
+          "limits": "The law does not say 'founded a university' or create a modern university corporation. It governs teaching practices and appointments, and should be described as an imperial teaching/auditorium institution, not the founding of a modern university. The episode's cited Britannica page and Codex locator are mismatched at URL level: Britannica link is a secondary topic overview, while CTh 14.9.3 is a legal regulation."
+        }
+      ],
+      "assessment": "Institutional milestone supported with careful wording; avoid university-foundation shorthand."
+    },
+    {
+      "order": 6,
+      "id": "06-separate-session-logistics-ephesus",
+      "date": "431 CE; first session 22 June; John of Antioch arrived about 26/27 June in the Fordham edition's excursus",
+      "place": "Ephesus",
+      "sources": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/basis/ephesus.asp",
+          "locator": "Acts, session I and decree; editor's excursus on John of Antioch's conciliabulum",
+          "consulted": "Opened sourcebook and read passages: records Cyril's faction opened session before John arrived; later decree calls John's group a schism; editor describes his separate meeting and the preceding acts.",
+          "supports": "Session, Nestorius's deposition by the group assembled, arrival of John of Antioch after opening, and rival meeting are present in the transmitted acts/editorial excursus.",
+          "limits": "NPNF translation/edition and its 19th-century excursus are not neutral modern scholarship. It preserves factional accusations, reports involving imperial commander Candidian and soldiers (including disruptions to food), and portrays the rivals through a pro-Cyrillian lens. Avoid saying John simply 'celebrated' a legitimate rival council without explaining his own position; do not present allegations or the 200-vs-43 attendance figures as neutral settled counts. Cambridge link in episode was only consulted at abstract scope."
+        }
+      ],
+      "assessment": "Sequence supported, but source is factional and the session was contested; logistics around food/security are reports, not neutral observation."
+    },
+    {
+      "order": 7,
+      "id": "07-ceremony-and-household-logistics-constantinople",
+      "date": "27 January 438 (Socrates gives 16th consulate of Theodosius; commonly 438)",
+      "place": "Comana to Constantinople; deposit at Church of the Apostles",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/26017.htm",
+          "locator": "Socrates, Ecclesiastical History VII.45",
+          "consulted": "Opened and read chapter. Socrates says Proclus obtained imperial permission, brought John's body from Comana in a procession through Constantinople, and deposited it in the Church of the Apostles; gives 27 January and consular dating.",
+          "supports": "Translation/procession and destination; Socrates expressly frames it as reconciling people alienated by John's deposition.",
+          "limits": "Socrates wrote decades later and gives an ecclesiastical reconciliation narrative. The checked passage does not substantiate miracle details found in later hagiographic/saint-calendar retellings. Episode points to VII.45 accurately; avoid treating ceremony logistics, prayers, or crowd behavior beyond his report as independently observed."
+        }
+      ],
+      "assessment": "Core transfer and church supported by a 5th-century ecclesiastical historian; attribute causal/reconciliation interpretation."
+    },
+    {
+      "order": 8,
+      "id": "08-distributed-record-collation-constantinople",
+      "date": "Codex promulgated 15 February 438; effective 1 January 439",
+      "place": "Imperial government; promulgation addressed to the empire, not a single local scene",
+      "sources": [
+        {
+          "url": "https://sourcebooks.fordham.edu/source/codex-theod.asp",
+          "locator": "Episode says edict of publication; source URL could not be opened in web access. Cross-check text/source catalog: https://www.koeblergerhard.de/Fontes/CodexTheodosianus438.htm, promulgation material dated 15 February 438; scholarly legal-education thesis https://discovery.ucl.ac.uk/10130475/1/Gatto_E_Thesis_PhD.pdf says publication in 438, effective 439.",
+          "consulted": "Fordham URL open failed. Koebler resource surfaced the promulgation Latin (including instructions for transcription/copies) in search result, not a full critical-edition consultation. UCL thesis search excerpt read only.",
+          "supports": "Publication of a collected imperial code in 438 and later effective date 439 are distinct milestones.",
+          "limits": "Do not collapse publication and effective date into one date or portray it as a one-day city scene. Codification was a legal project, with regional laws and administrative implementation; 'distributed records' is an abstraction, not a directly documented mass delivery episode."
+        }
+      ],
+      "assessment": "Date distinction is strong; source link access failed and the proposed local logistics are not verified."
+    },
+    {
+      "order": 9,
+      "id": "01-across-the-strait",
+      "date": "451 CE",
+      "place": "Chalcedon, across the Bosporus from Constantinople",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3811.htm",
+          "locator": "Council of Chalcedon acts/definition and canon 28",
+          "consulted": "Opened source and read definition and Canon 28. Canon states equal privileges for New Rome relative to old Rome based on imperial status and assigns Constantinople ordination rights over metropolitans in Pontus, Asia and Thrace.",
+          "supports": "The council's Christological formula and Canon 28's institutional claim are documented in its acts.",
+          "limits": "The claim was contested at the council: the record includes Roman legates' protest (near the end of the page); Pope Leo later resisted confirmation of Canon 28. Distinguish the council's decision from universal acceptance. The episode's 'across the strait' title is geographical framing, not an attested crossing route or supply event."
+        }
+      ],
+      "assessment": "Core council content supported; jurisdictional result contested and the source itself records protest."
+    },
+    {
+      "order": 10,
+      "id": "10-ceremony-route-and-provision-constantinople",
+      "date": "457 CE; Leo I accession/coronation tradition, exact role of patriarch disputed",
+      "place": "Hebdomon outside Constantinople and/or subsequent church appearance, depending on source tradition",
+      "sources": [
+        {
+          "url": "https://www.britannica.com/biography/Leo-I-Byzantine-emperor",
+          "locator": "Britannica overview (episode's citation)",
+          "consulted": "Full page not read; search-results show competing summaries of patriarchal role.",
+          "supports": "Secondary overview is not adequate evidence by itself for detailed accession ritual.",
+          "limits": "Institutional/primary tradition is not uniform: the 10th-c De Ceremoniis preserves the Leo coronation protocol; modern scholarly discussion of Gilbert Dagron (search excerpt only) states that Leo placed the crown himself at Hebdomon, with Patriarch Anatolius appearing later at Hagia Sophia. Other later chroniclers attribute crown placement to Anatolius. The specific claim 'participation of the patriarch' thus needs qualification by source/date. Parade route, provisioning and household staging are not established by cited Britannica overview."
+        }
+      ],
+      "assessment": "Accession is certain; detailed ritual is a later and disputed reconstruction, and source is only secondary overview."
+    },
+    {
+      "order": 11,
+      "id": "11-disputed-correspondence-constantinople",
+      "date": "482 CE; rupture with Rome commonly dated 484, reconciliation 519",
+      "place": "Imperial edict addressed first to Egypt; conflict spans Constantinople, Alexandria, Rome",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/cathen/07218b.htm",
+          "locator": "Catholic Encyclopedia, Henoticon; text attributed to Evagrius HE III.14",
+          "consulted": "Opened and read sections on text, reception, Felix's 484 synod and 484–519 schism; page cites Evagrius and Liberatus for primary text.",
+          "supports": "Zeno issued an imperial formula meant to promote concord; it avoided explicit adoption of the two-natures formula while condemning Nestorius/Eutyches. Conflict with Rome escalated through Felix's action against Acacius in 484; communion dispute lasted to 519.",
+          "limits": "This is a 1910 Catholic Encyclopedia account with confessional language ('Catholic'/'Monophysite') and simplifications. A separate accessible Evagrius HE III.14 transcription/search result, https://earlychristianwritings.com/fathers/evagrius_3_book3.html, supports the edict and its Alexandria-focused delivery. Avoid saying a 'schism' began at issuance in 482: 482 Henotikon, 484 rupture/synod, 519 settlement are distinguishable dates. Not all eastern Christians accepted it; some Chalcedonians and anti-Chalcedonians objected for different reasons."
+        }
+      ],
+      "assessment": "Edict supported; episode date should refer to publication and label later rupture separately."
+    },
+    {
+      "order": 12,
+      "id": "12-administrative-transition-constantinople",
+      "date": "1 April 527 co-rule; Justin died about four months later, conventionally 1 August; Justinian then sole ruler",
+      "place": "Constantinople / imperial succession",
+      "sources": [
+        {
+          "url": "https://www.thelatinlibrary.com/marcellinus2.html",
+          "locator": "Marcellinus Comes, Chronicon, entry for 527",
+          "consulted": "Opened Latin chronicle and read entry. It says Justin made Justinian, previously designated nobilissimus, partner in the reign and successor on Kalends of April; Justin died 'the fourth month after this' in his ninth regnal year, second month.",
+          "supports": "Co-rule on 1 April and death approximately four months later. Iranica overview (https://www.iranicaonline.org/articles/justinian-i-flavius-petrus-sabbatius-justinianus/) listed by episode was not opened in this audit.",
+          "limits": "The chronicle's abbreviated dating supports month interval, while exact 1 August is conventionally reconstructed/cross-checked from other chronologies. The episode's distinction between co-rule and sole rule is sound; avoid calling August accession a coronation. Source does not establish a processional ceremony or provisioning details."
+        }
+      ],
+      "assessment": "The selected source supports April co-rule and interval to death; the precise August 1 day needs corroboration beyond this entry."
+    },
+    {
+      "order": 13,
+      "id": "02-the-city-in-ashes",
+      "date": "January 532; Nika revolt and fires",
+      "place": "Constantinople; Great Church/Sophia destroyed by fire",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/1A*.html",
+          "locator": "Procopius, Wars I.24",
+          "consulted": "The selected URL failed to open in web tool. Corroboration by Procopius, Buildings I.1 search result at https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Buildings/1A*.html says rioters fired the church called Sophia; accessible excerpt via https://pressbooks.cuny.edu/thebirthofeuropefall2022/chapter/primary-source-procopius-on-justinian-and-theodora/ quotes Wars I.24 for the insurrection.",
+          "supports": "Procopius's account supports urban uprising, violence/fire damage, and destruction of prior Hagia Sophia; later rebuilding follows.",
+          "limits": "Procopius wrote later and his account is politically/elite-framed; it labels rebels in hostile terms and includes a famous speech whose verbatim historicity cannot be established. Exact death toll and every destroyed block are not neutral facts. Selected source access failed; the quote is from an educational reproduction, not a fresh critical-edition reading. Civilian escape/provision logistics remain scenario invention."
+        }
+      ],
+      "assessment": "Core fire and uprising supported in Procopius, but access to selected URL failed and narrative rhetoric must be attributed."
+    },
+    {
+      "order": 14,
+      "id": "14-finite-construction-logistics-constantinople",
+      "date": "532–537; dedication 537",
+      "place": "Hagia Sophia, Constantinople",
+      "sources": [
+        {
+          "url": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+          "locator": "Procopius, Buildings I.1, Great Church account",
+          "consulted": "Opened Fordham text and read its intro/passages. It names Anthemius of Tralles and Isidore of Miletus, describes imperial direction and workmen from many lands; editor states completion/dedication in 537.",
+          "supports": "Justinian rebuilt the Great Church after the Nika fire; Procopius names architects and describes construction as a major imperial project. Contemporary account is Buildings I.1; date 537 comes from editorial framing/conventional chronology, not the quoted passage in the part read.",
+          "limits": "Buildings is encomiastic imperial prose: its extravagant scale/beauty and claims of the emperor's extraordinary contribution are rhetorical. The 537 dedication is supported by institutional heritage overview UNESCO https://whc.unesco.org/en/list/356/ (not opened in this audit), while the extant structure contains substantial later reconstruction. Current dome/roof/interior cannot be copied into 532–537 whole without phase separation; the first dome suffered collapse and rebuilding in 558–562 (secondary search result at https://projects.mcah.columbia.edu/courses/non-mma-pages/text_links/procopius). No labor roster, individual builders' voices, or exact provisioning route proven."
+        }
+      ],
+      "assessment": "Reconstruction and named architects are supported; distinguish the first 537 structure from later repairs/current fabric and attribute praise."
+    }
+  ],
+  "crossEpisodeFindings": [
+    "Episode 4's selected New Advent URL is not Palladius's Dialogue; it is a Chrysostom homily titled 'If Your Enemy Hunger, Feed Him'. This is a direct citation mismatch.",
+    "Episode 5's CTh 14.9.3 is a teaching/appointment regulation for the Capitolium auditorium; 'founded a university' is modern shorthand, not what the statute says.",
+    "Episode 8 must separate promulgation of the Theodosian Code in 438 from its effective date in 439; the cited Fordham URL could not be opened in this audit.",
+    "Episode 10's source does not substantiate detailed coronation procession logistics, and later accounts differ over whether Anatolius crowned Leo or was only present after Leo self-crowned.",
+    "Episode 11 should distinguish the 482 Henotikon from the 484 Roman-Acacian rupture and 519 resolution.",
+    "Across these episodes, gameplay terms such as refuge dispatch, ceremony route, school construction logistics, supply and household operations are not documentary claims unless explicitly described as fictional framing."
+  ],
+  "accessAndReuse": "Directly consulted scope is specified per record. Several pages failed or were available only via search excerpts; these are not treated as full-text reading. No image/map assets were downloaded and no reuse license was established.",
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}
