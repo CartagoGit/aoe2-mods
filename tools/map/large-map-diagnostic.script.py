@@ -204,6 +204,51 @@ def _read_json(path):
         raise RuntimeError(f"cannot read required JSON {path}: {error}") from error
 
 
+def inspect_native_diagnostic(path, transform):
+    """Decode the native bytes and record the artificial controls, not game QA."""
+    import contextlib
+    import io
+    from collections import Counter
+    from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
+    from AoE2ScenarioParser.datasets.terrains import TerrainId
+
+    terrain_ids = {"grass-1": int(TerrainId.GRASS_1), "road": int(TerrainId.ROAD),
+                   "dirt-1": int(TerrainId.DIRT_1), "snow": int(TerrainId.SNOW),
+                   "water-deep": int(TerrainId.WATER_DEEP)}
+    with contextlib.redirect_stdout(io.StringIO()):
+        scenario = AoE2DEScenario.from_file(str(path))
+    size = transform["size"]
+    tiles = scenario.map_manager.terrain
+    counts = Counter(tile.terrain_id for tile in tiles)
+    expected = {terrain_ids["grass-1"]: size * size - 36}
+    expected.update({terrain_ids[marker["terrain"]]: 9 for marker in transform["markers"]})
+    if scenario.map_manager.map_size != size or len(tiles) != size * size or dict(counts) != expected:
+        raise RuntimeError("decoded native map dimensions/terrain counts differ from the diagnostic")
+    if any(tile.elevation != 0 for tile in tiles):
+        raise RuntimeError("decoded native diagnostic has unexpected nonzero elevation")
+    cells = []
+    for marker in transform["markers"]:
+        terrain_id = terrain_ids[marker["terrain"]]
+        for x, y in marker["cells"]:
+            if scenario.map_manager.get_tile(x, y).terrain_id != terrain_id:
+                raise RuntimeError(f"decoded native marker differs at {x},{y}")
+            cells.append({"x": x, "y": y, "terrain": marker["terrain"], "terrainId": terrain_id})
+    positions = sorted((unit.x, unit.y) for player in scenario.unit_manager.units for unit in player)
+    expected_positions = sorted((point["x"] + 0.5, point["y"] + 0.5)
+                                for point in transform["transformedCoordinates"]["units"].values())
+    if positions != expected_positions:
+        raise RuntimeError("decoded native unit positions differ from the diagnostic")
+    return {"scenarioSha256": _sha256(path.read_bytes()), "mapSize": size,
+            "tileCount": len(tiles), "terrainIdByName": terrain_ids,
+            "terrainCountsByName": {name: counts[value] for name, value in terrain_ids.items()},
+            "allElevationsZero": True, "markerCellsChecked": len(cells), "markerCells": cells,
+            "unitPositions": positions,
+            "producerFunction": "tools/map/large-map-diagnostic.script.py::inspect_native_diagnostic",
+            "producerFileSha256": _sha256(Path(__file__).read_bytes()),
+            "reproductionCommand": [sys.executable, "tools/map/large-map-diagnostic.script.py", "--size", str(size)],
+            "scope": "native binary decode only; no game, camera, passability, history or performance verification"}
+
+
 def run_diagnostic(size=DEFAULT_SIZE):
     if isinstance(size, bool) or not isinstance(size, int) or size not in (300, 400):
         raise ValueError("diagnostic size must be the integer 300 or 400")
@@ -227,7 +272,14 @@ def run_diagnostic(size=DEFAULT_SIZE):
     export_root = build_root / "export"
     kit_root = build_root / "kit"
     dist_root = ROOT / "dist"
+    archive = dist_root / f"large-map-diagnostic-{size}.zip"
+    zip_temp = dist_root / f".large-map-diagnostic-{size}.zip.tmp"
+    receipt_path = build_root / "zip-receipt.json"
+    receipt_temp = build_root / ".zip-receipt.json.tmp"
     build_root.mkdir(parents=True, exist_ok=True)
+    # Invalidate the previous publication before replacing the kit/report it names.
+    for stale in (receipt_path, receipt_temp, zip_temp, archive, build_root / "native-inspection.json"):
+        stale.unlink(missing_ok=True)
     for generated_dir in (export_root, kit_root):
         if generated_dir.is_symlink():
             raise RuntimeError(f"refusing to replace generated output symlink: {generated_dir}")
@@ -262,6 +314,8 @@ def run_diagnostic(size=DEFAULT_SIZE):
     files = [{"archivePath": scenario_archive_path.as_posix(),
               "sourcePath": str(scenario_source.relative_to(ROOT)),
               "sha256": scenario_sha}]
+    inspection = inspect_native_diagnostic(scenario_target, transform)
+    (build_root / "native-inspection.json").write_text(json.dumps(inspection, indent=2) + "\n", encoding="utf-8")
 
     locales = []
     locale_sources = {
@@ -302,20 +356,21 @@ def run_diagnostic(size=DEFAULT_SIZE):
         ],
         "localeCatalogues": locales,
         "scenario": files[0],
-        "commands": commands,
+        "commands": list(commands),
         "exportCommand": commands[1],
         "externalZipReceipt": str((build_root / "zip-receipt.json").relative_to(ROOT)),
         "adapterReport": adapter_report,
+        "nativeInspection": inspection,
+        "archiveReceiptPolicy": "Packaging is complete only when the external receipt exists and its report SHA-256 matches this report. A missing receipt means packaging is incomplete.",
         "gameVerified": False,
         "historicalMap": False,
         "nativeTerrainFromDsm": False,
         "cameraCalibration": "pending",
         "pending": ["editor loading and orientation observation", "ordinary movement and save/load", "campaign launch and native campaign UI are excluded", "not a performance proof at campaign caps"],
     }
-    (kit_root / "diagnostic-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report_path = kit_root / "diagnostic-report.json"
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    archive = dist_root / f"large-map-diagnostic-{size}.zip"
-    zip_temp = dist_root / f".large-map-diagnostic-{size}.zip.tmp"
     try:
         commands.append(_run([sys.executable, "tools/python/export_aoe2.py", "zip", str(kit_root), str(zip_temp)]))
     except Exception:
@@ -324,10 +379,13 @@ def run_diagnostic(size=DEFAULT_SIZE):
     zip_temp.replace(archive)
     archive_sha = _sha256(archive.read_bytes())
     receipt = {"archive": str(archive.relative_to(ROOT)), "sha256": archive_sha,
-               "reportPath": str((kit_root / "diagnostic-report.json").relative_to(ROOT)),
+               "reportPath": str(report_path.relative_to(ROOT)),
+               "reportSha256": _sha256(report_path.read_bytes()),
+               "scenarioSha256": scenario_sha,
                "campaignBuildCommand": commands[0], "exportCommand": commands[1],
                "zipCommand": commands[-1]}
-    (build_root / "zip-receipt.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+    receipt_temp.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+    receipt_temp.replace(receipt_path)
     return {"report": report, "receipt": receipt}
 
 
@@ -344,7 +402,7 @@ def _kit_readme(size, transform):
         "The rest of the map is grass-1 at elevation 0; there are no walls, bridges, cliffs or historical layers.\n\n"
         "Editor test: treat the included scenario as a read-only original. Open it to inspect, then immediately use Save As "
         "to create a separate copy with a different filename before any edit or save. Record the original SHA-256 from "
-        "diagnostic-report.json and the copy's SHA-256; the copy must have a different name and hash. Never overwrite the "
+        "diagnostic-report.json and the copy's SHA-256; use a different filename. Identical bytes may have an identical hash. Never overwrite the "
         "included artifact. Enable the included locale-mod folder only if checking existing draft labels. Observe load success, "
         "take a screenshot showing the four terrain controls, move the existing guard along the ordinary diagonal toward the enemy, "
         "then save and reopen the named copy. Confirm the included original still matches its recorded hash. Record editor mode "
