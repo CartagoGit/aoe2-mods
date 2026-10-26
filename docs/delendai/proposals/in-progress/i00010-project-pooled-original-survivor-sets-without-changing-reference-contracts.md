@@ -2,13 +2,17 @@
 id: i00010
 title: "Project pooled original survivor sets without changing reference contracts"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-25
 shipped-in:
   - "6e3bbf51e05337dc054750bffed00f456805bc68"
   - "d86c561303916d658394b560030875fa045991b6"
+last-transition-id: 082c6ac1-d366-414d-8240-38812e493540
+last-correlation-id: 082c6ac1-d366-414d-8240-38812e493540
+last-transition-from: ready
+last-transition-at: 2026-10-26T02:23:23.654Z
 ---
 
 # i00010 — Project pooled original survivor sets without changing reference contracts
