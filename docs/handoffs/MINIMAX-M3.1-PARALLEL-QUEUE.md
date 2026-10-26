@@ -75,3 +75,9 @@ Desde 188c2f9 hasta dbee40d se integraron la implementación pooled y su revisi�
 El siguiente paquete documental disponible es [presencia](MINIMAX-M3.1-PRESENCE.md), todavía bloqueado para ejecución. El diagnóstico 400 sí tiene una ruta existente de exportación reutilizable y root ya produjo un primer kit privado; el estado de publicación de sus nuevos recibos se recupera de DelendAI. No anunciar un nuevo escenario histórico por ello.
 
 Cada trabajador usa exclusivamente su propia identidad, sesión y unidad oficial. No actuar dentro de una unidad ajena ni publicar usando `--agent` de otro modelo para rescatar trabajo durante una interrupción. Consultar el servidor y conservar el trabajo; las limpiezas permitidas del runtime no convierten el contenido parcial en aceptación completa. Antes de publicar, preservar kit y logs fuera de una worktree que el runtime puede retirar.
+
+## Estado posterior de la misma reanudación
+
+El paquete naval de i00003/S2 fue asignado a Luna y su producto `223740c7` se integró oficialmente en `8f6687f3`, con revisión técnica acotada root y gate. La unidad entregada se retiró conservando el producto; no es un encargo todavía activo ni aceptación de todo S2. El kit de 400 incluye barco, pasajero y franja artificial; la carga y el comportamiento de juego siguen pendientes.
+
+La investigación y seis textos fuente bilingües de Yavneh se integraron en `7361d603` como diseño previo al dossier; no desbloquean propuestas de autoría histórica. El manifiesto está en 50 referencias locales, los dossiers en 64 y los pendientes en 214. Consultar el servidor para la próxima asignación concreta. El paquete de presencia sigue bloqueado y el arquitecto continúa decisiones históricas, geográficas y económicas sin pedir a MiniMax que las invente.

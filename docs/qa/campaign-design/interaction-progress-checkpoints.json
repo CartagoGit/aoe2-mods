@@ -195,7 +195,7 @@
       "clientCutDate": "2026-10-26",
       "timezone": "Europe/Madrid",
       "fromCommit": "dbee40d02be6713388c4d5451d366d07adef0607",
-      "toCommit": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+      "toCommit": "7361d603043103787df888193bbd5f142c7c6336",
       "baseline": {
         "source": "README.md and design catalogue atdbee40d02be6713388c4d5451d366d07adef0607; integration history independently inspected",
         "selectionCount": 278,
@@ -209,7 +209,7 @@
         "selectionsAffectedByUnresolvedGeography": 25
       },
       "cut": {
-        "source": "README/design catalogue and reference manifest at6839db574a0c54aed6b8c7ea053df2c86288af08; verify.py reports0errors and50additional records",
+        "source": "Integrated source/design/reference state at 7361d603; unchanged documentary counters after transport diagnostic and Yavneh pre-dossier work.",
         "selectionCount": 278,
         "designDossierCount": 64,
         "selectionsWithoutDossier": 214,
@@ -252,6 +252,27 @@
           "item": "dated Wilson1865reference and research wiki",
           "integration": "6839db574a0c54aed6b8c7ea053df2c86288af08",
           "scope": "one provider preview, hash/dimensions/rights metadata, source attribution and century limits; unchanged identity/bbox/objectives. Reference manifest49→50, no geography approval or new dossier."
+        },
+        {
+          "item": "first-five faith origins economy inspection and transport packet",
+          "integration": "a72009a69a286fb18385062fa38aa68c4736af3b",
+          "scope": "five concrete cases within the existing54 civic flags, no canonical fixes; closed and independently read mechanical packet, no new full dossier"
+        },
+        {
+          "item": "transport-observation implementation by Luna and independent native review by root",
+          "integration": "8f6687f30d06bd1c2191fc0abecce87c4c95004f",
+          "product": "223740c7dc7ed7b02b8fa74a7fa01b88e404acaa",
+          "evidence": "10 focused Python cases; validate158tests/2138expectations; native export3variants/2round-trips; actual400 scenario independently decoded,9600rectangular cells+36markers,4 units and guard reference/TIMER1800 binding. Whole i00003/S2 and all game observations remain pending.",
+          "artifact": "transport-map-diagnostic-400-20261026.zip",
+          "artifactSha256": "4d2b8da93a8dedb740f51f43c48786480ff3eada20643d0da635eba205c5f595",
+          "scenarioSha256": "64d96f7bc09a9531016e5b65b1b9c27aadba6221aa67824771b7dd7efbfc8318",
+          "newHistoricalScenarios": 0
+        },
+        {
+          "item": "qualified Yavneh setting and six paired narrative source entries",
+          "integration": "7361d603043103787df888193bbd5f142c7c6336",
+          "product": "92cd59e",
+          "scope": "inland town separated from port; IAA geography, late narrative and scholarly interpretations distinguished; existing archived translator metadata qualified without rewriting source pins; no complete dossier, counted screens or local asset."
         }
       ],
       "actualGameVerificationCount": 0,
@@ -262,11 +283,19 @@
       "intervalComparableForHistoricalDossierThroughput": false,
       "forecast": "No interaction count or model-quota estimate. Three documentary observations do not make three comparable historical-authoring samples; the pinned intervals also do not claim contiguous coverage of every asynchronous message.",
       "pendingByRole": {
-        "architect": "214 dossiers, independent review of64drafts,54static civic flags,22geographic identities affecting25selections, native architecture and supervision",
+        "architect": "214 new dossiers; architectural refinement of64 existing drafts and coordination of independent review;54 static civic flags;22 geographic identities affecting25 selections; native architecture and supervision. The implementer never formally approves its own product.",
         "mechanicalWorkers": "MiniMax/Luna share the278episode materialization pool, assigned gradually; not278per model",
         "tester": "actual AoE2 load/movement/save/difficulty/campaign evidence, starting with private fixtures"
       },
-      "noPublicModDistribution": true
+      "noPublicModDistribution": true,
+      "earlierProductCutCommit": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+      "workerAvailabilityObservation": "Luna resumed successfully and completed bounded read-only research plus transport code; MiniMax completed bounded read-only reviews. No remaining quota is inferred.",
+      "supervisionCorrections": [
+        "Native essential binding must be read from the exported condition/reference, not inferred from the input transform.",
+        "Check the condition in its exact trigger; a correct reference moved to a different trigger must fail inspection.",
+        "Use the existing shared pinned Python via COF_PYTHON in isolated units; preserve the first missing-parser failure log, never install dependencies silently.",
+        "Preserve the default fixture and move a unit around actual water, never retain a diagonal-land instruction after adding a water rectangle."
+      ]
     }
   ]
 }
