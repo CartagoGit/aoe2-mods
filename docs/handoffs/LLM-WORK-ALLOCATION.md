@@ -19,7 +19,7 @@ Corte: 26 de octubre de 2026. Instrucción del propietario: el arquitecto decide
 
 Los 64 borradores contienen 2.645 pantallas EN/es-ES y 398 secundarios. Siguen necesitando revisión histórica/editorial, terreno y calibración. No equivalen a paquetes aprobados para autoría ni a escenarios jugados. Constantinopla380 (ID 34, orden 33) forma parte de esos totales; su plan de mundo y perfil de referencia son materiales auxiliares, no mapas jugados. Hay cero aprobaciones ampliadas de juego.
 
-El informe mecánico cívico actual tiene 64 filas y 54 candidatos estáticos; en una métrica distinta, 63 filas muestran el mismo presupuesto accesible entre dificultades. Requieren decisiones sobre dificultad/ritmo, pero no son fallos de motor demostrados. La nota de cobertura geográfica conserva 22 identidades pendientes para 25 selecciones. Los cuatro recortes DSM del Hiyaz y las dos referencias DSM modernas de Jerusalén aportan datos modernos, no perfiles antiguos ni mapas jugables. El manifiesto registra 49 recursos locales y `geography.json` 26 perfiles canónicos.
+El informe mecánico cívico actual tiene 64 filas y 54 candidatos estáticos; en una métrica distinta, 63 filas muestran el mismo presupuesto accesible entre dificultades. Requieren decisiones sobre dificultad/ritmo, pero no son fallos de motor demostrados. La nota de cobertura geográfica conserva 22 identidades pendientes para 25 selecciones. Los cuatro recortes DSM del Hiyaz y las dos referencias DSM modernas de Jerusalén aportan datos modernos, no perfiles antiguos ni mapas jugables. El manifiesto registra 50 recursos locales y `geography.json` 26 perfiles canónicos.
 
 ## Reparto por modelo
 
@@ -68,3 +68,6 @@ El corte 188c2f9→dbee40d ya contiene una implementación real MiniMax: i00010/
 El diseño parcial de Jerusalén quedó integrado en 4a0bdab: 20 entradas bilingües, 45 superficies prospectivas, sin nuevo dossier completo. El volumen sigue 64/214/2645/398/49, 54 señales cívicas y 22 identidades geográficas pendientes para 25 selecciones. Los 278 episodios mecánicos se reparten entre Luna/MiniMax cuando cada paquete esté cerrado; no son 278 para cada modelo. La media de interacciones no se calcula con dos intervalos que contienen tipos de trabajo distintos. Ver el segundo corte en el registro.
 
 Luna devolvió límite de cuota en el último intento de recopilación; no se infiere su capacidad futura ni la cuota restante del arquitecto. MiniMax sigue siendo utilizable para paquetes explícitos y revisión acotada. El [paquete de presencia](MINIMAX-M3.1-PRESENCE.md) resuelve el documento ausente, pero sigue bloqueado por capacidades nativas; no es permiso para producir historia.
+
+
+Actualización de recopilación: el manifiesto pasa de 49 a 50 recursos por el preview documentado del plano de Jerusalén 1865; no es terreno 70 ni nuevo dossier/geografía. Se mantienen 64/214/2645/398 y cero aprobación de juego. Los cortes d6acfed/dbee40d y las entregas previas que mencionan 49 siguen fechados; no se reescriben sus métricas.

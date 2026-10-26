@@ -858,6 +858,22 @@
       "bytes": 263436,
       "modifications": "Scientific display of the exact modern regional DSM crop with a 2nd–98th percentile linear stretch, labelled axes and metre colorbar. Source values unchanged; no ancient reconstruction.",
       "usage": "Modern surface including buildings, infrastructure and vegetation; regional research reference only. Not bare earth, 70 CE terrain, archaeological footprints, surveyed routes, a navigability mask or an approved game map."
+    },
+    {
+      "id": "jerusalem-wilson-1865-map-preview",
+      "path": "docs/research/odyssey-research/images/jerusalem-wilson-1865-map-preview.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg/3840px-1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg",
+      "author": "Charles W. Wilson and Ordnance Survey, under Henry James",
+      "license": "Public-domain status as declared by Commons (PD-old/PD-US; Public Domain Mark 1.0); attributed metadata, research use only pending production review",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "licenseNoticePath": "docs/research/odyssey-research/images/jerusalem-wilson-1865-map-license.md",
+      "consulted": "2026-10-26",
+      "productionApproved": false,
+      "sha256": "e36c3404672138e8db8252ac4255a899380f7187f30ae2abb8853870e71a3099",
+      "bytes": 7969031,
+      "modifications": "None; stored the provider-generated resized JPEG byte-for-byte. No local image edit or georeferencing.",
+      "usage": "Survey 1864–1865 comparison of urban/topographic context. Not 70 CE terrain/streets, surveyed gameplay controls, an escape route or an approved game map."
     }
   ]
 }

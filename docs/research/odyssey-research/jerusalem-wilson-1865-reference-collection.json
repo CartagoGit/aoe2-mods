@@ -1,0 +1,78 @@
+{
+  "recordKind": "historical-map reference collection; no executable geography",
+  "author": "gpt-6",
+  "date": "2026-10-26",
+  "campaignId": "jewish-tradition",
+  "episodeId": "01-a-city-of-names",
+  "assetId": "jerusalem-wilson-1865-map-preview",
+  "title": "Ordnance Survey of Jerusalem",
+  "creator": "Charles W. Wilson and Ordnance Survey, under Henry James",
+  "surveyDates": "1864–1865",
+  "publicationYear": 1865,
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg",
+  "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File:1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg&oldid=948152925",
+  "sourceStatedOrigin": "http://jerusalem.nottingham.ac.uk/items/show/102 (listed by Commons; not freshly opened here)",
+  "download": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg/3840px-1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg",
+    "bytes": 7969031,
+    "sha256": "e36c3404672138e8db8252ac4255a899380f7187f30ae2abb8853870e71a3099",
+    "contentType": "image/jpeg",
+    "etag": "b83ae9b12e61830a26d42cb6ce610cbd",
+    "lastModified": "Mon, 19 Oct 2026 03:45:30 GMT"
+  },
+  "localPath": "docs/research/odyssey-research/images/jerusalem-wilson-1865-map-preview.jpg",
+  "dimensionsPixels": [
+    3840,
+    5592
+  ],
+  "dimensionEvidence": "decoded by the local image-view tool; provider preview size also linked from the file page",
+  "originalNotDownloaded": {
+    "sourceReportedDimensionsPixels": [
+      12000,
+      17474
+    ],
+    "sourceReportedBytes": 130912631,
+    "note": "Do not attribute original-image dimensions/size or a locally verified original hash to this preview."
+  },
+  "localModifications": "None; stored the provider-generated resized JPEG byte-for-byte. No local image edit or georeferencing.",
+  "rightsMetadata": {
+    "statusAsDeclared": "PD-old/PD-US; Public Domain Mark 1.0",
+    "noticePath": "docs/research/odyssey-research/images/jerusalem-wilson-1865-map-license.md",
+    "productionApproved": false
+  },
+  "visualInspection": {
+    "method": "root viewed the downloaded file; delivered view was resized to 1312×1911, so no fine measurements, parcel tracing or small-label transcription is claimed",
+    "observations": [
+      "Broad urban footprint, surrounding slopes and valley contours appear together in the nineteenth-century survey.",
+      "The platform labelled Haram/Moriah and the eastern valley context are visually separable; drawn contours are not navigable water.",
+      "Later buildings, walled-city outlines and routes belong to the survey date and cannot be copied wholesale into 70 CE."
+    ],
+    "notEstablished": [
+      "first-century street availability",
+      "exact ancient household or archive parcels",
+      "70CE ground elevation",
+      "historical escape route or safe crossing",
+      "game grid or isometric camera calibration",
+      "native footprints or walkability"
+    ]
+  },
+  "relationToExistingSources": "Use as dated comparison alongside IAA 2023 excavation/stratigraphy and the modern DSM; none substitutes for the others. Do not derive a complete first-century network from this comparison.",
+  "alternativeCatalogueCaveat": {
+    "url": "https://geodiscovery.uwm.edu/catalog/stanford-pc094nm9075",
+    "note": "Aggregator rights text says public domain while its licence field says CC-BY-NC. That record is not used to license this downloaded Commons file. The Stanford primary purl did not open in the web tool; no full inspection or licence clearance from that portal is claimed."
+  },
+  "nextArchitectWork": [
+    "verify dated ground/footprints and route controls independently",
+    "only then choose georeference/control transformations and actual corridors"
+  ],
+  "countsEffect": {
+    "registeredReferenceRecordsBefore": 49,
+    "after": 50,
+    "newFullDossiers": 0,
+    "newCanonicalGeographies": 0,
+    "unresolvedGeographicIdentitiesStill": 22,
+    "selectionsAffectedStill": 25
+  },
+  "gameVerified": false,
+  "historicalMapApproved": false
+}
