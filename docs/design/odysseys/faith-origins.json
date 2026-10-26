@@ -488,7 +488,21 @@
               "hub-3"
             ],
             "mode": "land",
-            "widthTiles": 10
+            "widthTiles": 10,
+            "points": [
+              [
+                119.03,
+                187.94
+              ],
+              [
+                146.01,
+                159.5
+              ],
+              [
+                122.02,
+                109.73
+              ]
+            ]
           },
           {
             "id": "relief",
@@ -499,7 +513,29 @@
             ],
             "mode": "land",
             "widthTiles": 6,
-            "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+            "routePolicy": "fictional inland path established from scenario start using modern shoreline controls only; not an ancient surveyed path",
+            "points": [
+              [
+                119.03,
+                187.94
+              ],
+              [
+                168,
+                192
+              ],
+              [
+                184,
+                157
+              ],
+              [
+                168,
+                120
+              ],
+              [
+                122.02,
+                109.73
+              ]
+            ]
           }
         ],
         "terrainInstructions": "Mediterranean west, coastal plain east. The offshore gazetteer representative point is NOT an objective address. Keep all yards inland. No Crusader walls or modern museum; no assumption that all visible aqueduct phases existed under Pilate.",
@@ -691,8 +727,8 @@
             "o1"
           ],
           "text": {
-            "en": "Fund the copying court with 40 wood and 20 gold, and derive one register from all three records.",
-            "es-ES": "Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos."
+            "en": "Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records.",
+            "es-ES": "Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos."
           },
           "predicate": {
             "operator": "all",
@@ -740,6 +776,23 @@
                     "newDebit": false
                   }
                 ]
+              },
+              {
+                "kind": "entity-state",
+                "requiredCount": 3,
+                "state": "arrived",
+                "id": "req-3",
+                "entities": [
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-1",
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-2",
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-3"
+                ],
+                "destinations": {
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-1": "faith-origins.01-administrative-records-caesarea.destination-2",
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-2": "faith-origins.01-administrative-records-caesarea.destination-2",
+                  "faith-origins.01-administrative-records-caesarea.dedication-records-3": "faith-origins.01-administrative-records-caesarea.destination-2"
+                },
+                "oncePerEntity": true
               }
             ],
             "neverUseTimerInstead": true
@@ -798,8 +851,8 @@
           "es-ES": "Recoge tres registros ficticios distintos de dedicación en el patio de trabajo costero."
         },
         {
-          "en": "Fund the copying court with 40 wood and 20 gold, and derive one register from all three records.",
-          "es-ES": "Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos."
+          "en": "Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records.",
+          "es-ES": "Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos."
         },
         {
           "en": "Deliver the derived register to the north road archive.",
@@ -1259,8 +1312,8 @@
                 "role": "repair",
                 "initialHub": "hub-2",
                 "offsetTiles": [
-                  -6,
-                  3
+                  0,
+                  8
                 ],
                 "finite": true,
                 "initiallyDelivered": false,
@@ -1415,8 +1468,8 @@
                 "role": "trade",
                 "initialHub": "hub-1",
                 "offsetTiles": [
-                  -6,
-                  3
+                  -2,
+                  -6
                 ],
                 "finite": true,
                 "initiallyDelivered": false,
@@ -1559,8 +1612,8 @@
                 "role": "guide",
                 "initialHub": "hub-1",
                 "offsetTiles": [
-                  -6,
-                  3
+                  3,
+                  -6
                 ],
                 "finite": true,
                 "initiallyDelivered": false,
@@ -1703,8 +1756,8 @@
                 "role": "extract",
                 "initialHub": "hub-3",
                 "offsetTiles": [
-                  -6,
-                  3
+                  1,
+                  6
                 ],
                 "finite": true,
                 "initiallyDelivered": false,
@@ -1716,7 +1769,7 @@
                 "role": "extract",
                 "initialHub": "hub-3",
                 "offsetTiles": [
-                  -6,
+                  4,
                   6
                 ],
                 "finite": true,
@@ -1839,13 +1892,13 @@
           "startingResources": {
             "food": 402,
             "wood": 172,
-            "gold": 86,
+            "gold": 97,
             "stone": 0
           },
           "gatherableBank": {
             "food": 1218,
             "wood": 748,
-            "gold": 249,
+            "gold": 238,
             "stone": 100
           },
           "mandatoryDeliveries": {
@@ -1896,13 +1949,13 @@
           "startingResources": {
             "food": 350,
             "wood": 150,
-            "gold": 75,
+            "gold": 85,
             "stone": 0
           },
           "gatherableBank": {
             "food": 1270,
             "wood": 770,
-            "gold": 260,
+            "gold": 250,
             "stone": 100
           },
           "mandatoryDeliveries": {
@@ -1953,13 +2006,13 @@
           "startingResources": {
             "food": 297,
             "wood": 127,
-            "gold": 63,
+            "gold": 72,
             "stone": 0
           },
           "gatherableBank": {
             "food": 1323,
             "wood": 793,
-            "gold": 272,
+            "gold": 263,
             "stone": 100
           },
           "mandatoryDeliveries": {
@@ -2305,8 +2358,8 @@
           "id": "o2-goal",
           "key": "scenario.faith-origins.01-administrative-records-caesarea.odyssey.o2-goal",
           "text": {
-            "en": "Fund the copying court with 40 wood and 20 gold, and derive one register from all three records.",
-            "es-ES": "Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos."
+            "en": "Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records.",
+            "es-ES": "Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos."
           },
           "condition": "phase-2 active",
           "narrator": "none",
@@ -2314,14 +2367,14 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Fund the copying court with 40 wood and 20 gold, and derive one register from all three records."
+              "Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records."
             ],
             "es-ES": [
-              "Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos."
+              "Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 11
+          "voiceDurationSecondsEstimated": 15
         },
         {
           "id": "o2-receipt",
@@ -85766,8 +85819,8 @@
         },
         {
           "text": {
-            "en": "Fund the copying court with 40 wood and 20 gold, and derive one register from all three records.",
-            "es-ES": "Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos."
+            "en": "Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records.",
+            "es-ES": "Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos."
           },
           "requirements": [
             {
@@ -85798,6 +85851,13 @@
                   "requirement": "req-1"
                 }
               ]
+            },
+            {
+              "kind": "entity-state",
+              "group": "dedication-records",
+              "requiredCount": 3,
+              "state": "arrived",
+              "destinationHub": "hub-2"
             }
           ],
           "receiptText": {
@@ -85889,7 +85949,15 @@
           "corridorIds": [
             "main",
             "relief"
-          ]
+          ],
+          "placement": {
+            "entityOffsetsTiles": [
+              [
+                0,
+                8
+              ]
+            ]
+          }
         },
         {
           "title": {
@@ -85908,7 +85976,15 @@
           "corridorIds": [
             "main",
             "relief"
-          ]
+          ],
+          "placement": {
+            "entityOffsetsTiles": [
+              [
+                -2,
+                -6
+              ]
+            ]
+          }
         },
         {
           "title": {
@@ -85938,6 +86014,14 @@
               "en": "Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
               "es-ES": "Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
             }
+          },
+          "placement": {
+            "entityOffsetsTiles": [
+              [
+                3,
+                -6
+              ]
+            ]
           }
         },
         {
@@ -85957,7 +86041,19 @@
           "corridorIds": [
             "main",
             "relief"
-          ]
+          ],
+          "placement": {
+            "entityOffsetsTiles": [
+              [
+                1,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          }
         }
       ],
       "terrainInstructions": "Mediterranean west, coastal plain east. The offshore gazetteer representative point is NOT an objective address. Keep all yards inland. No Crusader walls or modern museum; no assumption that all visible aqueduct phases existed under Pilate.",
@@ -85976,7 +86072,7 @@
       "startingResources": {
         "food": 350,
         "wood": 150,
-        "gold": 75,
+        "gold": 85,
         "stone": 0
       },
       "protectedRecoveryStock": {
@@ -86016,7 +86112,21 @@
             "hub-3"
           ],
           "mode": "land",
-          "widthTiles": 10
+          "widthTiles": 10,
+          "points": [
+            [
+              119.03,
+              187.94
+            ],
+            [
+              146.01,
+              159.5
+            ],
+            [
+              122.02,
+              109.73
+            ]
+          ]
         },
         {
           "id": "relief",
@@ -86027,7 +86137,29 @@
           ],
           "mode": "land",
           "widthTiles": 6,
-          "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+          "routePolicy": "fictional inland path established from scenario start using modern shoreline controls only; not an ancient surveyed path",
+          "points": [
+            [
+              119.03,
+              187.94
+            ],
+            [
+              168,
+              192
+            ],
+            [
+              184,
+              157
+            ],
+            [
+              168,
+              120
+            ],
+            [
+              122.02,
+              109.73
+            ]
+          ]
         }
       ],
       "dramatizationNotice": {
