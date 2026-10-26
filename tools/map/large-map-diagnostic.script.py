@@ -27,6 +27,11 @@ MARKERS_400 = (
     ("data-south", 200, 380, "snow"),
     ("data-west", 20, 200, "water-deep"),
 )
+TRANSPORT_RECTANGLE_400 = (180, 80, 220, 320)  # half-open x0,y0,x1,y1
+TRANSPORT_UNITS_400 = (
+    {"id": "diagnostic-transport", "type": "transport-ship", "faction": "player", "x": 187, "y": 200},
+    {"id": "diagnostic-passenger", "type": "villager-male", "faction": "player", "x": 176, "y": 200},
+)
 
 
 def _sha256(data):
@@ -140,10 +145,47 @@ def _marker_cells(size):
     return markers
 
 
-def build_diagnostic_ir(source, size=DEFAULT_SIZE):
+def _transport_rectangle(size):
+    x0, y0, x1, y1 = TRANSPORT_RECTANGLE_400
+    left, top, right, bottom = (_scale_marker(value, size) for value in (x0, y0, x1, y1))
+    width = right - left
+    if width <= 7 or bottom <= top:
+        raise ValueError("transport-observation rectangle collapsed after scaling")
+    beach = [left, right - 1]
+    shallow = list(range(left + 1, left + 4)) + list(range(right - 4, right - 1))
+    deep = list(range(left + 4, right - 4))
+    return {"xStart": left, "xEndExclusive": right, "yStart": top, "yEndExclusive": bottom,
+            "beachColumns": beach, "shallowColumns": shallow, "deepColumns": deep,
+            "cellCount": width * (bottom - top)}
+
+
+def _overlay_transport_rectangle(map_spec, rectangle):
+    for y in range(rectangle["yStart"], rectangle["yEndExclusive"]):
+        for x in range(rectangle["xStart"], rectangle["xEndExclusive"]):
+            edge_distance = min(x - rectangle["xStart"], rectangle["xEndExclusive"] - 1 - x)
+            terrain = "beach" if edge_distance == 0 else (
+                "water-shallow" if edge_distance <= 3 else "water-deep")
+            map_spec["tiles"].append({"position": {"x": x, "y": y},
+                                      "terrain": terrain, "elevation": 0})
+
+
+def _transport_expected_counts(size, rectangle):
+    area = rectangle["cellCount"]
+    rows = rectangle["yEndExclusive"] - rectangle["yStart"]
+    beach = len(rectangle["beachColumns"]) * rows
+    shallow = len(rectangle["shallowColumns"]) * rows
+    deep = len(rectangle["deepColumns"]) * rows + 9  # existing west marker
+    return {"grass-1": size * size - area - 36, "water-deep": deep,
+            "water-shallow": shallow, "beach": beach, "road": 9,
+            "dirt-1": 9, "snow": 9}
+
+
+def build_diagnostic_ir(source, size=DEFAULT_SIZE, variant="scale"):
     """Deep-clone and transform the fixed 32-tile fixture without mutating input."""
     if isinstance(size, bool) or not isinstance(size, int) or size not in (300, 400):
         raise ValueError("diagnostic size must be the integer 300 or 400")
+    if variant not in ("scale", "transport-observation"):
+        raise ValueError("diagnostic variant must be scale or transport-observation")
     validate_diagnostic_source(source)
     clone = copy.deepcopy(source)
     scenario = clone["scenarios"][0]["scenario"]
@@ -168,17 +210,71 @@ def build_diagnostic_ir(source, size=DEFAULT_SIZE):
         {"position": {"x": x, "y": y}, "terrain": marker["terrain"], "elevation": 0}
         for marker in markers for x, y in marker["cells"]
     ]
+    details = {"size": size, "originalCoordinates": original,
+               "transformedCoordinates": {
+                   "mapStart": copy.deepcopy(map_spec["start"]),
+                   "units": {unit["id"]: copy.deepcopy(unit["position"]) for unit in scenario["units"]},
+                   "objectives": {objective["id"]: copy.deepcopy(objective["location"])
+                                  for objective in scenario["objectives"]}},
+               "markers": markers, "progressKeyRemovedFromClone": True,
+               "markerCellCount": 36}
+    if variant == "transport-observation":
+        factions = scenario.get("factions")
+        if (not isinstance(factions, list) or {row.get("id") for row in factions if isinstance(row, dict)}
+                != {"player", "enemy"} or len(factions) != 2):
+            raise ValueError("transport-observation source drift: expected player and enemy factions")
+        faction_by_id = {row["id"]: row for row in factions}
+        if (faction_by_id["player"].get("player") != 1 or faction_by_id["player"].get("role") != "human"
+                or faction_by_id["enemy"].get("player") != 2 or faction_by_id["enemy"].get("role") != "enemy"):
+            raise ValueError("transport-observation source drift: expected human player 1 and enemy player 2")
+        original_units = {row["id"]: row for row in scenario["units"]}
+        if (original_units["guard"].get("faction") != "player" or original_units["guard"].get("essential") is not True
+                or original_units["enemy-guard"].get("faction") != "enemy"
+                or original_units["enemy-guard"].get("essential") is not False):
+            raise ValueError("transport-observation source drift: expected only the player guard to be essential")
+        for faction in factions:
+            strategy = faction.get("strategy")
+            if (not isinstance(strategy, dict)
+                    or strategy.get("limits") != "Dos unidades como máximo"):
+                raise ValueError("transport-observation source drift: expected the two-unit faction limits")
+        faction_by_id["player"]["strategy"]["limits"] = (
+            "Tres unidades del jugador, incluidas dos unidades de observación no esenciales.")
+        defeat = scenario.get("defeat")
+        if (not isinstance(defeat, dict) or defeat.get("timeoutSeconds") != 600
+                or defeat.get("essentialUnits") != ["guard"]
+                or defeat.get("arbitration") != "defeat-first"):
+            raise ValueError("transport-observation source drift: expected defeat-first, guard-only, 600-second timeout")
+        rectangle = _transport_rectangle(size)
+        for unit in TRANSPORT_UNITS_400:
+            position = {"x": _scale_marker(unit["x"], size), "y": _scale_marker(unit["y"], size)}
+            scenario["units"].append({"id": unit["id"], "faction": unit["faction"],
+                                      "type": unit["type"], "position": position, "essential": False})
+        details["transformedCoordinates"]["units"].update(
+            {unit["id"]: copy.deepcopy(scenario["units"][-2 + index]["position"])
+             for index, unit in enumerate(TRANSPORT_UNITS_400)})
+        # Bind new unit positions and expected ownership/type to exact IDs.
+        player_by_faction = {row["id"]: row.get("player") for row in factions}
+        details["nativeUnits"] = [
+            {"id": unit["id"], "type": unit["type"], "faction": unit["faction"],
+             "player": player_by_faction[unit["faction"]],
+             "position": copy.deepcopy(unit["position"]), "essential": unit.get("essential", False)}
+            for unit in scenario["units"]]
+        details["originalEssentialUnits"] = [row for row in details["nativeUnits"] if row["essential"]]
+        scenario["defeat"]["timeoutSeconds"] = 1800
+        _overlay_transport_rectangle(map_spec, rectangle)
+        details.update({"variant": variant, "transportRectangle": rectangle,
+                        "expectedTerrainCounts": _transport_expected_counts(size, rectangle),
+                        "timeoutSeconds": 1800, "sourceTimeoutSeconds": 600})
     # This clone is deliberately disposable and must not write the fixture route.
     del scenario["victory"]["progressKey"]
-    transformed = {
-        "mapStart": copy.deepcopy(map_spec["start"]),
-        "units": {unit["id"]: copy.deepcopy(unit["position"]) for unit in scenario["units"]},
-        "objectives": {objective["id"]: copy.deepcopy(objective["location"])
-                       for objective in scenario["objectives"]},
-    }
-    return clone, {"size": size, "originalCoordinates": original,
-                   "transformedCoordinates": transformed, "markers": markers,
-                   "progressKeyRemovedFromClone": True, "markerCellCount": 36}
+    if variant == "scale":
+        details["transformedCoordinates"] = {
+            "mapStart": copy.deepcopy(map_spec["start"]),
+            "units": {unit["id"]: copy.deepcopy(unit["position"]) for unit in scenario["units"]},
+            "objectives": {objective["id"]: copy.deepcopy(objective["location"])
+                           for objective in scenario["objectives"]},
+        }
+    return clone, details
 
 
 def _run(argv, cwd=ROOT):
@@ -197,6 +293,33 @@ def _run(argv, cwd=ROOT):
     return record
 
 
+def _verify_native_defeat_binding(triggers, guard_reference_id, destroy_object_condition_id,
+                                  timer_condition_id, timeout):
+    guard_triggers = [trigger for trigger in triggers if trigger.name == "cdf-defeat-guard"]
+    timeout_triggers = [trigger for trigger in triggers if trigger.name == f"cdf-defeat-{timeout}"]
+    if len(guard_triggers) != 1 or len(timeout_triggers) != 1:
+        raise RuntimeError("decoded native defeat triggers do not match the guard and variant timeout")
+    guard_destroy_conditions = [condition for condition in guard_triggers[0].conditions
+                                if condition.condition_type == destroy_object_condition_id]
+    other_defeat_destroy_conditions = [
+        condition
+        for trigger in triggers
+        if trigger.name.startswith("cdf-defeat-") and trigger.name != guard_triggers[0].name
+        for condition in trigger.conditions
+        if condition.condition_type == destroy_object_condition_id
+    ]
+    if (len(guard_destroy_conditions) != 1 or other_defeat_destroy_conditions
+            or guard_destroy_conditions[0].unit_object != guard_reference_id):
+        raise RuntimeError("decoded native destroy-defeat condition is not bound to the original guard")
+    if not any(condition.condition_type == timer_condition_id and condition.timer == timeout
+               for condition in timeout_triggers[0].conditions):
+        raise RuntimeError("decoded native timeout defeat condition differs from the transport variant")
+    return {"trigger": guard_triggers[0].name, "conditionType": int(destroy_object_condition_id),
+            "unitReferenceId": int(guard_destroy_conditions[0].unit_object),
+            "guardReferenceId": int(guard_reference_id), "linkedToOriginalGuard": True,
+            "timeoutTrigger": timeout_triggers[0].name, "timeoutSeconds": timeout}
+
+
 def _read_json(path):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -210,18 +333,25 @@ def inspect_native_diagnostic(path, transform):
     import io
     from collections import Counter
     from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
+    from AoE2ScenarioParser.datasets.conditions import ConditionId
+    from AoE2ScenarioParser.datasets.units import UnitInfo
     from AoE2ScenarioParser.datasets.terrains import TerrainId
 
     terrain_ids = {"grass-1": int(TerrainId.GRASS_1), "road": int(TerrainId.ROAD),
                    "dirt-1": int(TerrainId.DIRT_1), "snow": int(TerrainId.SNOW),
-                   "water-deep": int(TerrainId.WATER_DEEP)}
+                   "water-deep": int(TerrainId.WATER_DEEP),
+                   "water-shallow": int(TerrainId.WATER_SHALLOW),
+                   "beach": int(TerrainId.BEACH)}
     with contextlib.redirect_stdout(io.StringIO()):
         scenario = AoE2DEScenario.from_file(str(path))
     size = transform["size"]
     tiles = scenario.map_manager.terrain
     counts = Counter(tile.terrain_id for tile in tiles)
-    expected = {terrain_ids["grass-1"]: size * size - 36}
-    expected.update({terrain_ids[marker["terrain"]]: 9 for marker in transform["markers"]})
+    if transform.get("variant") == "transport-observation":
+        expected = {terrain_ids[name]: count for name, count in transform["expectedTerrainCounts"].items()}
+    else:
+        expected = {terrain_ids["grass-1"]: size * size - 36}
+        expected.update({terrain_ids[marker["terrain"]]: 9 for marker in transform["markers"]})
     if scenario.map_manager.map_size != size or len(tiles) != size * size or dict(counts) != expected:
         raise RuntimeError("decoded native map dimensions/terrain counts differ from the diagnostic")
     if any(tile.elevation != 0 for tile in tiles):
@@ -233,25 +363,99 @@ def inspect_native_diagnostic(path, transform):
             if scenario.map_manager.get_tile(x, y).terrain_id != terrain_id:
                 raise RuntimeError(f"decoded native marker differs at {x},{y}")
             cells.append({"x": x, "y": y, "terrain": marker["terrain"], "terrainId": terrain_id})
-    positions = sorted((unit.x, unit.y) for player in scenario.unit_manager.units for unit in player)
-    expected_positions = sorted((point["x"] + 0.5, point["y"] + 0.5)
-                                for point in transform["transformedCoordinates"]["units"].values())
-    if positions != expected_positions:
-        raise RuntimeError("decoded native unit positions differ from the diagnostic")
+    rectangle_cells_checked = 0
+    rectangle = transform.get("transportRectangle")
+    if rectangle:
+        for y in range(rectangle["yStart"], rectangle["yEndExclusive"]):
+            for x in range(rectangle["xStart"], rectangle["xEndExclusive"]):
+                edge_distance = min(x - rectangle["xStart"], rectangle["xEndExclusive"] - 1 - x)
+                terrain = "beach" if edge_distance == 0 else (
+                    "water-shallow" if edge_distance <= 3 else "water-deep")
+                if scenario.map_manager.get_tile(x, y).terrain_id != terrain_ids[terrain]:
+                    raise RuntimeError(f"decoded transport rectangle differs at {x},{y}: expected {terrain}")
+                rectangle_cells_checked += 1
+    unit_observations = []
+    for player_index, player_units in enumerate(scenario.unit_manager.units):
+        for unit in player_units:
+            unit_type = getattr(unit, "unit_const", None)
+            unit_type_id = getattr(unit_type, "ID", unit_type)
+            owner = getattr(unit, "player_number", None)
+            if owner is None:
+                owner = player_index
+            unit_observations.append({"typeId": int(unit_type_id), "player": int(owner),
+                                      "x": unit.x, "y": unit.y,
+                                      "referenceId": getattr(unit, "reference_id", None)})
+    if transform.get("nativeUnits"):
+        expected_units = []
+        for expected_unit in transform["nativeUnits"]:
+            unit_enum = getattr(UnitInfo, expected_unit["type"].upper().replace("-", "_"), None)
+            if unit_enum is None:
+                raise RuntimeError(f"pinned parser lacks expected unit enum {expected_unit['type']}")
+            expected_native_row = {"typeId": int(unit_enum.ID), "player": expected_unit["player"],
+                                   "x": expected_unit["position"]["x"] + 0.5,
+                                   "y": expected_unit["position"]["y"] + 0.5}
+            matches = [row for row in unit_observations
+                       if all(row[field] == expected_native_row[field]
+                              for field in ("typeId", "player", "x", "y"))]
+            if len(matches) != 1 or matches[0]["referenceId"] is None:
+                raise RuntimeError(f"decoded native unit does not uniquely match {expected_unit['id']}")
+            expected_units.append({"id": expected_unit["id"], "type": expected_unit["type"],
+                                   "typeId": int(unit_enum.ID), "player": expected_unit["player"],
+                                   "x": expected_unit["position"]["x"] + 0.5,
+                                   "y": expected_unit["position"]["y"] + 0.5,
+                                   "essential": expected_unit["essential"],
+                                   "referenceId": matches[0]["referenceId"]})
+        observed_multiset = sorted((row["typeId"], row["player"], row["x"], row["y"])
+                                   for row in unit_observations)
+        expected_multiset = sorted((row["typeId"], row["player"], row["x"], row["y"])
+                                   for row in expected_units)
+        if observed_multiset != expected_multiset:
+            raise RuntimeError("decoded native unit types/owners/positions differ from the diagnostic")
+        if len(transform["originalEssentialUnits"]) != 1 or transform["originalEssentialUnits"][0]["id"] != "guard":
+            raise RuntimeError("transport diagnostic lost the original guard essential-unit binding")
+        guard_reference_id = next(row["referenceId"] for row in expected_units if row["id"] == "guard")
+        defeat_binding = _verify_native_defeat_binding(
+            scenario.trigger_manager.triggers, guard_reference_id, ConditionId.DESTROY_OBJECT,
+            ConditionId.TIMER,
+            transform["timeoutSeconds"])
+        essential_binding = {"id": "guard", "player": next(row["player"] for row in expected_units
+                                                                if row["id"] == "guard"),
+                             "typeId": next(row["typeId"] for row in expected_units if row["id"] == "guard"),
+                             "position": next({"x": row["x"], "y": row["y"]} for row in expected_units
+                                              if row["id"] == "guard"),
+                             "referenceId": guard_reference_id}
+    else:
+        positions = sorted((row["x"], row["y"]) for row in unit_observations)
+        expected_positions = sorted((point["x"] + 0.5, point["y"] + 0.5)
+                                    for point in transform["transformedCoordinates"]["units"].values())
+        if positions != expected_positions:
+            raise RuntimeError("decoded native unit positions differ from the diagnostic")
+        expected_units = []
+        essential_binding = None
+        defeat_binding = None
+    positions = sorted((row["x"], row["y"]) for row in unit_observations)
+    reproduction = [sys.executable, "tools/map/large-map-diagnostic.script.py", "--size", str(size)]
+    if transform.get("variant") == "transport-observation":
+        reproduction.extend(["--variant", "transport-observation"])
     return {"scenarioSha256": _sha256(path.read_bytes()), "mapSize": size,
             "tileCount": len(tiles), "terrainIdByName": terrain_ids,
             "terrainCountsByName": {name: counts[value] for name, value in terrain_ids.items()},
             "allElevationsZero": True, "markerCellsChecked": len(cells), "markerCells": cells,
-            "unitPositions": positions,
+            "transportRectangleCellsChecked": rectangle_cells_checked,
+            "unitObservations": unit_observations, "expectedUnits": expected_units,
+            "originalEssentialUnitBinding": essential_binding,
+            "nativeDefeatBinding": defeat_binding, "unitPositions": positions,
             "producerFunction": "tools/map/large-map-diagnostic.script.py::inspect_native_diagnostic",
             "producerFileSha256": _sha256(Path(__file__).read_bytes()),
-            "reproductionCommand": [sys.executable, "tools/map/large-map-diagnostic.script.py", "--size", str(size)],
+            "reproductionCommand": reproduction,
             "scope": "native binary decode only; no game, camera, passability, history or performance verification"}
 
 
-def run_diagnostic(size=DEFAULT_SIZE):
+def run_diagnostic(size=DEFAULT_SIZE, variant="scale"):
     if isinstance(size, bool) or not isinstance(size, int) or size not in (300, 400):
         raise ValueError("diagnostic size must be the integer 300 or 400")
+    if variant not in ("scale", "transport-observation"):
+        raise ValueError("diagnostic variant must be scale or transport-observation")
     commands = []
     commands.append(_run(["bun", "run", "campaign:build", SOURCE_CAMPAIGN]))
     source_ir_path = ROOT / "build" / SOURCE_CAMPAIGN / "campaign-ir.json"
@@ -261,19 +465,29 @@ def run_diagnostic(size=DEFAULT_SIZE):
     campaign_report = _read_json(source_report_path)
     if not isinstance(campaign_report.get("sourceSha256"), str) or not campaign_report["sourceSha256"]:
         raise RuntimeError("technical-pilot build report is missing its source hash")
-    clone, transform = build_diagnostic_ir(source, size)
+    clone, transform = build_diagnostic_ir(source, size, variant)
     engine_catalog = _read_json(ROOT / "config" / "engine-catalog.json")
     available_terrains = set(engine_catalog.get("terrains", []))
-    missing_terrains = sorted({row["terrain"] for row in transform["markers"]} - available_terrains)
+    required_terrains = {row["terrain"] for row in transform["markers"]}
+    if transform.get("variant") == "transport-observation":
+        required_terrains.update(("beach", "water-shallow", "water-deep"))
+    missing_terrains = sorted(required_terrains - available_terrains)
     if missing_terrains:
         raise RuntimeError(f"diagnostic terrain names absent from pinned engine catalogue: {missing_terrains}")
+    available_units = set(engine_catalog.get("units", []))
+    missing_units = sorted({row["type"] for row in transform.get("nativeUnits", [])} - available_units)
+    if missing_units:
+        raise RuntimeError(f"diagnostic unit names absent from pinned engine catalogue: {missing_units}")
 
-    build_root = ROOT / "build" / "large-map-diagnostic" / str(size)
+    product_slug = "transport-map-diagnostic" if variant == "transport-observation" else "large-map-diagnostic"
+    archive_stem = f"transport-map-diagnostic-{size}" if variant == "transport-observation" else f"large-map-diagnostic-{size}"
+    scenario_stem = f"CDF_Transport{size}_Diagnostic" if variant == "transport-observation" else f"CDF_LargeMap{size}_Diagnostic"
+    build_root = ROOT / "build" / product_slug / str(size)
     export_root = build_root / "export"
     kit_root = build_root / "kit"
     dist_root = ROOT / "dist"
-    archive = dist_root / f"large-map-diagnostic-{size}.zip"
-    zip_temp = dist_root / f".large-map-diagnostic-{size}.zip.tmp"
+    archive = dist_root / f"{archive_stem}.zip"
+    zip_temp = dist_root / f".{archive_stem}.zip.tmp"
     receipt_path = build_root / "zip-receipt.json"
     receipt_temp = build_root / ".zip-receipt.json.tmp"
     build_root.mkdir(parents=True, exist_ok=True)
@@ -302,7 +516,7 @@ def run_diagnostic(size=DEFAULT_SIZE):
     if not scenario_source.is_file():
         raise RuntimeError(f"native exporter did not produce {scenario_source.name}")
 
-    scenario_archive_path = Path("scenario") / f"CDF_LargeMap{size}_Diagnostic.aoe2scenario"
+    scenario_archive_path = Path("scenario") / f"{scenario_stem}.aoe2scenario"
     scenario_target = kit_root / scenario_archive_path
     scenario_target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(scenario_source, scenario_target)
@@ -340,23 +554,44 @@ def run_diagnostic(size=DEFAULT_SIZE):
     readme = _kit_readme(size, transform)
     (kit_root / "README.txt").write_text(readme, encoding="utf-8")
     report = {
-        "artifact": "private-artificial-large-map-editor-diagnostic",
+        "artifact": "private-artificial-transport-map-editor-diagnostic" if variant == "transport-observation"
+                    else "private-artificial-large-map-editor-diagnostic",
         "sourceCampaign": SOURCE_CAMPAIGN,
         "sourceSha256": campaign_report.get("sourceSha256"),
         "sourceIrPath": str(source_ir_path.relative_to(ROOT)),
         "sourceIrSha256": _sha256(source_ir_bytes),
         "diagnosticIrSha256": _sha256(diagnostic_ir_bytes),
         "size": size,
+        "variant": variant,
         "transformedCoordinates": transform,
-        "markerLegend": [
+        "markerLegend": ([
             "Grid data-north is a calibration label, not camera-orientation evidence.",
             "North marker is road; east is dirt-1; south is snow; west is water-deep.",
-            "The water marker is artificial and away from the diagonal start-to-target corridor; it proves no crossing or transport.",
+            "The water marker is an artificial terrain patch; it proves no crossing or transport behavior.",
             "All cells use elevation 0 over grass-1, with no walls or historical layer.",
-        ],
+        ] if variant == "scale" else [
+            "Grid labels identify test coordinates only; camera orientation and passability remain pending game observations.",
+            "The four 3x3 markers remain separate from the bounded artificial beach/shallow/deep rectangle.",
+            "Terrain names and a native binary decode alone do not establish boarding, unloading, route access or gameplay.",
+            "All terrain is flat at elevation 0; no bridge, cliff, current or historical coastline is asserted.",
+        ]),
+        "transportObservation": ({
+            "rectangle": transform["transportRectangle"],
+            "addedUnits": transform["nativeUnits"][2:],
+            "timeoutSeconds": 1800,
+            "inheritedObjectiveLimitations": [
+                "The existing objectives remain prepare then defeat enemy-guard.",
+                "They do not check boarding, unloading, land detours or boat loss.",
+                "Avoid losing the essential guard or defeating the enemy before observations finish.",
+            ],
+            "terrainCountsByName": transform["expectedTerrainCounts"],
+            "gameObservations": "all pending; no native export establishes gameplay support",
+        } if variant == "transport-observation" else None),
         "localeCatalogues": locales,
         "scenario": files[0],
         "commands": list(commands),
+        "diagnosticCommand": [sys.executable, "tools/map/large-map-diagnostic.script.py",
+                              "--size", str(size), "--variant", variant],
         "exportCommand": commands[1],
         "externalZipReceipt": str((build_root / "zip-receipt.json").relative_to(ROOT)),
         "adapterReport": adapter_report,
@@ -366,7 +601,15 @@ def run_diagnostic(size=DEFAULT_SIZE):
         "historicalMap": False,
         "nativeTerrainFromDsm": False,
         "cameraCalibration": "pending",
-        "pending": ["editor loading and orientation observation", "ordinary movement and save/load", "campaign launch and native campaign UI are excluded", "not a performance proof at campaign caps"],
+        "pending": (["manual boarding and passenger-in-boat observation", "unloading at opposite shore",
+                     "north and south land-detour walkability", "boat deletion with passenger aboard",
+                     "save/load before boarding, aboard and after unloading", "editor loading and terrain rendering",
+                     "gameVerified remains false; no victory/route/performance claim"]
+                    if variant == "transport-observation" else
+                    ["editor loading and orientation observation", "ordinary movement and save/load",
+                     "campaign launch and native campaign UI are excluded", "not a performance proof at campaign caps"]),
+        "timeoutSeconds": transform.get("timeoutSeconds", 600),
+        "inheritedCombatUnitCount": 2,
     }
     report_path = kit_root / "diagnostic-report.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -394,29 +637,72 @@ def _kit_readme(size, transform):
         f"- {m['id']}: {m['terrain']} at grid centre {m['centre'][0]},{m['centre'][1]}"
         for m in transform["markers"]
     )
+    transport_text = ""
+    terrain_context = (
+        "They use grid labels for coordinate orientation only; they do not calibrate the isometric camera. "
+        "The west water-deep marker is an artificial 3x3 patch, not a river or crossing. The rest of the map is grass-1 "
+        "at elevation 0; there are no walls, bridges, cliffs or historical layers.\n\n"
+        if transform.get("variant") != "transport-observation" else
+        "They use grid labels for coordinate orientation only; they do not calibrate the isometric camera. "
+        "The separate artificial beach/shallow/deep rectangle is specified below; it is not a dated coastline or certified route. "
+        "All terrain is elevation 0, with no walls, bridges, cliffs or historical layers.\n\n"
+    )
+    fixture_limits = (
+        "The inherited fixture has two combat units and a 600-second timeout; victory and performance are not guaranteed. "
+        if transform.get("variant") != "transport-observation" else
+        "The inherited fixture has two combat units and the variant has a 1800-second timeout; victory and performance are not guaranteed. "
+    )
+    movement_instruction = (
+        "move the existing guard along the ordinary diagonal toward the enemy"
+        if transform.get("variant") != "transport-observation" else
+        "avoid combat and observe the north/south land detours plus the transport states listed below"
+    )
+    screenshot_instruction = (
+        "take a screenshot showing the four terrain controls"
+        if transform.get("variant") != "transport-observation" else
+        "take screenshots showing the four terrain controls and the complete transport rectangle"
+    )
+    if transform.get("variant") == "transport-observation":
+        rectangle = transform["transportRectangle"]
+        transport_text = (
+            f"\n\nTransport observation variant: a flat artificial rectangle x=[{rectangle['xStart']},"
+            f"{rectangle['xEndExclusive']}) y=[{rectangle['yStart']},{rectangle['yEndExclusive']}) with one beach edge, "
+            "three shallow-water columns on each side, and deep water inside. The player has three units (the original guard, "
+            "a nonessential transport ship and a nonessential villager passenger); the enemy has one original militia. "
+            "Timeout is 1800 seconds. The inherited objectives still only prepare and defeat the enemy guard: they do not "
+            "confirm boarding, unloading, detours or passenger outcome. Do not defeat the enemy or lose the essential guard "
+            "before observations are complete. This is an artificial terrain fixture, not a coast or a route claim.\n\n"
+            "Record the exact game build, Steam/store, operating system and UI language. Observe editor load; ordinary boarding; "
+            "passenger actually inside the boat; unloading on the opposite side; north and south land detours; deletion of the "
+            "boat with the passenger aboard; and save/load before boarding, aboard, and after unloading. Record what happens "
+            "when the boat is deleted without assuming passenger death or survival. Leave every outcome pending if the editor "
+            "cannot expose it. Use a separate named copy for edits and saves; record its path and hash and confirm the included "
+            "original remains unchanged.\n"
+        )
     return (
         "Private AoE2:DE editor diagnostic — not a campaign release\n\n"
         f"Map: {size} x {size}. The only terrain markers are four disjoint 3x3 patches:\n{markers}\n\n"
-        "They use grid labels for coordinate orientation only; they do not calibrate the isometric camera. "
-        "The west water-deep marker is a modern artificial test patch, not a river, crossing or proof of boat support. "
-        "The rest of the map is grass-1 at elevation 0; there are no walls, bridges, cliffs or historical layers.\n\n"
+        f"{terrain_context}"
         "Editor test: treat the included scenario as a read-only original. Open it to inspect, then immediately use Save As "
         "to create a separate copy with a different filename before any edit or save. Record the original SHA-256 from "
         "diagnostic-report.json and the copy's SHA-256; use a different filename. Identical bytes may have an identical hash. Never overwrite the "
         "included artifact. Enable the included locale-mod folder only if checking existing draft labels. Observe load success, "
-        "take a screenshot showing the four terrain controls, move the existing guard along the ordinary diagonal toward the enemy, "
+        f"{screenshot_instruction}, "
+        f"{movement_instruction}, "
         "then save and reopen the named copy. Confirm the included original still matches its recorded hash. Record editor mode "
-        "separately from launching any campaign. The inherited fixture has only two combat units and a 600-second timeout; it "
-        "does not guarantee victory or provide a performance benchmark. This kit contains no campaign container and does not claim "
-        "game verification, balance, historical geography, transport, camera calibration or production readiness.\n"
+        f"separately from launching any campaign. {fixture_limits}It does not provide a performance benchmark. "
+        "This kit contains no campaign container and does not claim "
+        "game verification, balance, historical geography, transport, camera calibration or production readiness."
+        f"{transport_text}\n"
     )
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--size", type=int, choices=(300, 400), default=DEFAULT_SIZE)
+    parser.add_argument("--variant", choices=("scale", "transport-observation"), default="scale")
     args = parser.parse_args()
-    result = run_diagnostic(args.size)
+    result = run_diagnostic(args.size, args.variant)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
