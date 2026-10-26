@@ -2,14 +2,14 @@
 id: i00008
 title: "Typed dossier projection for alternative fulfillment without fixed-payment lowering"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-25
-last-transition-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
-last-correlation-id: cec1b74b-0cb3-486d-9063-abcc51d6e1d9
-last-transition-from: review
-last-transition-at: 2026-10-25T13:31:10.522Z
+last-transition-id: 6af583d5-359a-45a6-b001-136dd549d510
+last-correlation-id: 6af583d5-359a-45a6-b001-136dd549d510
+last-transition-from: ready
+last-transition-at: 2026-10-26T02:10:25.445Z
 shipped-in:
   - "11fcf956f31981af2d04f0d6aebf327b96d14e20"
   - "6f06737db6dfd3ccc2251e375398c5c2201eb4cb"
@@ -94,4 +94,4 @@ The existing dossier factory derives budgets from fixed resource-transaction req
 
 ## S3 bounded integration amendment — 25 October 2026
 
-Root reproduced the remaining global civic-audit failure after successful temporary v3 composition: KeyError(accessibleWithoutOptionalRewards). The [closed packet](../../../../handoffs/FULFILLMENT-DOSSIER-S3-PACKET.md) defines the explicit reporting branch, legacy invariance and exact handoff work. Files add only that internal auditor, its existing regressions and status documentation. No public/runtime contract, selected episode, ID range or historical content changes. The global transition accidentally queued S3 for review alongside S2; the independent request-changes action records its undelivered state. This amendment does not alter the accepted S1/S2 verdicts.
+Root reproduced the remaining global civic-audit failure after successful temporary v3 composition: KeyError(accessibleWithoutOptionalRewards). The [closed packet](../../../handoffs/FULFILLMENT-DOSSIER-S3-PACKET.md) defines the explicit reporting branch, legacy invariance and exact handoff work. Files add only that internal auditor, its existing regressions and status documentation. No public/runtime contract, selected episode, ID range or historical content changes. The global transition accidentally queued S3 for review alongside S2; the independent request-changes action records its undelivered state. This amendment does not alter the accepted S1/S2 verdicts.
