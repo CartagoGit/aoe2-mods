@@ -14,9 +14,11 @@ from secondary import RESOURCES, bilingual, build_optional_objectives
 
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
 transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
+numbers = runpy.run_path(str(Path(__file__).with_name("design_numbers.helper.py")))
 build_finale = continuity["build_finale"]
 build_entry = continuity["build_entry"]
 entry_screens = continuity["entry_screens"]
+is_positive_integer = numbers["is_positive_integer"]
 
 
 def amounts(values=None):
@@ -25,6 +27,47 @@ def amounts(values=None):
 
 def total(rows):
     return {key: sum(row.get(key, 0) for row in rows) for key in RESOURCES}
+
+
+def _survivor_pool(row, groups):
+    """Resolve exactly one survivor selector into already generated originals."""
+    has_group = "group" in row
+    has_groups = "groups" in row
+    if has_group and has_groups:
+        raise ValueError("Survivor row must select either group or groups, not both")
+    if not has_group and not has_groups:
+        raise ValueError("Survivor row must select one group or groups selector")
+    if has_group:
+        names = [row["group"]]
+    else:
+        names = row["groups"]
+        if not isinstance(names, list) or not names:
+            raise ValueError("Survivor groups must be a nonempty list of group names")
+    if any(not isinstance(name, str) or not name.strip() for name in names):
+        raise ValueError("Survivor group names must be nonempty strings")
+    if len(set(names)) != len(names):
+        raise ValueError("Survivor group names must be distinct")
+    entities = []
+    for name in names:
+        if name not in groups:
+            raise ValueError(f"Unknown survivor group: {name}")
+        members = groups[name]
+        if not members:
+            raise ValueError(f"Survivor group resolves to no original: {name}")
+        entities.extend(members)
+    if len(set(entities)) != len(entities):
+        raise ValueError("Survivor pool repeats an identity")
+    return entities
+
+
+def _survivor_minimum(row, pool_size):
+    """Accept only the shared positive-integer minimum within the pooled size."""
+    minimum = row.get("minimumAliveOrAlreadySafe")
+    if not is_positive_integer(minimum):
+        raise ValueError("Survivor minimum must be a positive integer")
+    if minimum > pool_size:
+        raise ValueError("Survivor minimum cannot exceed the pooled identity count")
+    return minimum
 
 
 def world_and_objectives(cid, selection, authored, hubs):
@@ -190,19 +233,22 @@ def world_and_objectives(cid, selection, authored, hubs):
                 )
             if receipts:
                 requirement["requiredPaymentReceipts"] = receipts
+    survivor_groups = []
+    for row in authored.get("survivorGroups", []):
+        pooled = _survivor_pool(row, groups)
+        survivor_groups.append(
+            {
+                "entities": pooled,
+                "minimumAliveOrAlreadySafe": _survivor_minimum(row, len(pooled)),
+            }
+        )
     return {
         "version": 1,
         "classification": "authored design specification; not native implementation",
         "entities": entities,
         "zones": zones,
         "objectGroups": groups,
-        "survivorGroups": [
-            {
-                "entities": groups[row["group"]],
-                "minimumAliveOrAlreadySafe": row["minimumAliveOrAlreadySafe"],
-            }
-            for row in authored.get("survivorGroups", [])
-        ],
+        "survivorGroups": survivor_groups,
         "entityIdentityPolicy": "same explicit identity persists across all phases and save/load; no substitution by a similarly named unit",
     }, objectives
 
