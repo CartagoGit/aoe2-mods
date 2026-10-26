@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: campaign-factory
 date: 2026-10-25
+shipped-in:
+  - "6e3bbf51e05337dc054750bffed00f456805bc68"
 ---
 
 # i00010 — Project pooled original survivor sets without changing reference contracts
@@ -29,14 +31,16 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 - global_gate: type
 
 ### S1 — Architect pooled-original mapping decision and closed packet
-- **Status**: review
+- **Status**: done
 - **Files**: `docs/architecture/pooled-survivor-projection.md`, `docs/handoffs/POOLED-SURVIVOR-PROJECTION-PACKET.md`
 - **Gate**: type
 - acceptance:
   - "Specify a strict internal choice of one existing group or a nonempty unique groups array, stable flattening of already generated main IDs, valid positive minimum no greater than unique pool size, and explicit diagnostics for malformed/unknown/duplicate inputs, with real artificial reproduction."
   - "Keep unchanged public reference loss/current-presence contracts, actor origins and identity, legacy output, external i00009/S2 serialization requirement, no historical authorization and independent verification boundaries."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 6e3bbf51e053, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet define mutually exclusive group/groups selectors; reject missing, wrong-type, empty, duplicate, unknown and overlapping identities; pre… (2) The documents retain the two-field dossier projection and public schema/reducer, preserve all actor IDs/origins, require i00009/S2 before shared-factory implem… — Independent S1 review. Reproduced the documented current factory failure (`KeyError: 'group'`); the accepted design closes the mapping contract while preserving the public survivor semantics, identity, ordering, legacy output and all historical/native/game boundaries. `bun run validate` exit 0: 157/157 tests, 2,136 expect() calls, docs and campaign checks passed.
 
 ### S2 — Implement strict survivor projection and verify the existing loss reference
 - **Status**: pending
