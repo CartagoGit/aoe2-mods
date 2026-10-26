@@ -14,6 +14,7 @@ shipped-in:
   - "06e688e87a0b3617ad8049b073b8f9f35e832b00"
   - "9d5e744b0b33a005e2e01b14a2215275acf6b35a"
   - "3d955598cd163fe41356b4a8f38e415630549522"
+  - "9eac67e546bf6c9697ea3678456154c4dd1825c0"
 ---
 
 # f00001 — Piloto tecnico de rutas independientes y localizacion
@@ -80,16 +81,18 @@ Demostrar el flujo completo antes de producir mapas históricos. Depende de base
 - shipped-in: `3d955598cd16`
 
 ### S4 — Verificación y dossier de entrega
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S3]
 - **Files**: `docs/qa/route-pilot`
 - **Gate**: e2e
 - acceptance:
   - "Registrar comandos, hashes y capacidades; bun run validate y export de ambas campañas."
   - "No cerrar GAME VERIFIED ni PRODUCTION READY sin pruebas reales vinculadas al ZIP; estado de traducciones/medios honesto."
-- review-state: in_review
-- review-implementer: gpt-6
 - shipped-in: `8032897e9dde`
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6-luna
+- review-log: approved by gpt-6-luna — verified at 9eac67e546bf, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) El manifiesto y kit registran comandos/capacidades. Verifiqué contra los artefactos privados los SHA-256 y bytes de los dos ZIP y los dos escenarios diagnóstic… (2) El manifiesto mantiene gameVerified=false y productionReady=false; los resultados están not-run/pending o blocked para casos de motor. Kit y notas aclaran que … — Aprobación acotada de S4 sobre 9eac67e546bf6c9697ea3678456154c4dd1825c0. Verifiqué en los artefactos externos los SHA-256, tamaños y entradas ZIP frente al manifiesto; coinciden los dos ZIP y los dos diagnósticos. Los registros root de validate/export muestran validate exit 0 (157/157, 2,136 expectativas, 3 campañas), export de ambos fixtures y suite de export con 3 variantes y 2 round trips; los inspeccioné, no ejecuté una suite completa independiente. El kit y el manifiesto conservan gameVerified=false y productionReady=false, indican traducciones como borrador y mantienen bloqueadas las pruebas que requieren el motor. No se afirma verificación de juego ni preparación de producción.
 
 ## acceptance
 
