@@ -4,7 +4,7 @@ import { pythonCommand } from "../../packages/aoe2-adapter/python-bridge.adapter
 
 const root = resolve(import.meta.dir, "../..");
 
-test("diagnóstico artificial grande clona solo posiciones y cuatro controles de terreno", async () => {
+test("diagnósticos de mapa grande preservan escala e incluyen transporte solo en variante optativa", async () => {
   const proc = Bun.spawn(
     [await pythonCommand(root), "tests/maps/test_large_map_diagnostic.py"],
     { cwd: root, stdout: "pipe", stderr: "pipe" },
