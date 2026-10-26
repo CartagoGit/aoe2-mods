@@ -120,7 +120,6 @@
       "captionSegments and duration estimates"
     ],
     "secondaryLostSurfacePolicy": "Only sides with a unique optional actor/object can actually fail after its loss. Observation-only side-4 and side-7 have no lost actor and cannot emit a fabricated loss event. Generated dormant captions do not grant such a state transition.",
-    "entryOrder": "recommendation/recap/chronology → factualIntro → handover → personalIntro → dramatization notice; no forced prerequisite",
     "outroOrder": "factualOutro → personalOutro → canonical next-episode recommendation",
     "nextEpisodeId": "02-refuge-and-school-supply-yavneh",
     "nextTitleAtThisCut": {
@@ -128,7 +127,10 @@
       "es-ES": "Una escuela sin murallas"
     },
     "finale": false,
-    "writesCampaignProgress": false
+    "writesCampaignProgress": false,
+    "desiredNativeEntryOrder": "recommendation/recap/chronology → factualIntro → handover → personalIntro → dramatization notice; no forced prerequisite",
+    "currentFactoryArrayOrder": "title, factualIntro, handover, personalIntro, historical-license, route-help, economy-help, then entry helper surfaces; entry conditions request before factualIntro but no native ordering is certified",
+    "orderingRequirement": "i00003/S4 must place entry recap/recommendation/chronology before the historical opening without changing common → handover → Judith. Conditions and array order currently disagree; do not infer a working reorder or treat this source as executable presentation."
   },
   "sourceQualifications": [
     "Josephus, War VI.4 and VI.6–8, bounded hosted Whiston translation read by root; responsibility/theological causes attributed, no casualty totals or ancient quotation",
@@ -136,6 +138,7 @@
   ],
   "pending": [
     "complete finite roster/pressure and native-supported tactical conditions before pressure-warning copy",
+    "i00003/S4 native entry ordering: current factory array and before-intro conditions differ; test actual entry sequence rather than assuming sort",
     "independent history/editorial review of these source texts",
     "canonical dossier composition, terrain/passability, native presentation and actual AoE2 testing"
   ]
