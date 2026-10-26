@@ -87,9 +87,9 @@ ES: Tres copias pueden repetir el mismo error. Conserva visibles sus cargos y pr
 
 ### o2 / phase-2
 
-EN: Fund the copying court with 40 wood and 20 gold, and derive one register from all three records.
+EN: Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records.
 
-ES: Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos.
+ES: Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos.
 
 ```json
 {
@@ -138,6 +138,23 @@ ES: Financia el patio de copias con 40 de madera y 20 de oro y prepara un regist
           "newDebit": false
         }
       ]
+    },
+    {
+      "kind": "entity-state",
+      "requiredCount": 3,
+      "state": "arrived",
+      "id": "req-3",
+      "entities": [
+        "faith-origins.01-administrative-records-caesarea.dedication-records-1",
+        "faith-origins.01-administrative-records-caesarea.dedication-records-2",
+        "faith-origins.01-administrative-records-caesarea.dedication-records-3"
+      ],
+      "destinations": {
+        "faith-origins.01-administrative-records-caesarea.dedication-records-1": "faith-origins.01-administrative-records-caesarea.destination-2",
+        "faith-origins.01-administrative-records-caesarea.dedication-records-2": "faith-origins.01-administrative-records-caesarea.destination-2",
+        "faith-origins.01-administrative-records-caesarea.dedication-records-3": "faith-origins.01-administrative-records-caesarea.destination-2"
+      },
+      "oncePerEntity": true
     }
   ],
   "neverUseTimerInstead": true
@@ -265,7 +282,21 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
         "hub-3"
       ],
       "mode": "land",
-      "widthTiles": 10
+      "widthTiles": 10,
+      "points": [
+        [
+          119.03,
+          187.94
+        ],
+        [
+          146.01,
+          159.5
+        ],
+        [
+          122.02,
+          109.73
+        ]
+      ]
     },
     {
       "id": "relief",
@@ -276,7 +307,29 @@ ES: Un registro cuidadoso es una victoria menor que un gran relato y una herenci
       ],
       "mode": "land",
       "widthTiles": 6,
-      "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+      "routePolicy": "fictional inland path established from scenario start using modern shoreline controls only; not an ancient surveyed path",
+      "points": [
+        [
+          119.03,
+          187.94
+        ],
+        [
+          168,
+          192
+        ],
+        [
+          184,
+          157
+        ],
+        [
+          168,
+          120
+        ],
+        [
+          122.02,
+          109.73
+        ]
+      ]
     }
   ],
   "terrainInstructions": "Mediterranean west, coastal plain east. The offshore gazetteer representative point is NOT an objective address. Keep all yards inland. No Crusader walls or modern museum; no assumption that all visible aqueduct phases existed under Pilate.",
@@ -773,8 +826,8 @@ ES: Un almacén local mejora los suministros finitos.
         "role": "repair",
         "initialHub": "hub-2",
         "offsetTiles": [
-          -6,
-          3
+          0,
+          8
         ],
         "finite": true,
         "initiallyDelivered": false,
@@ -909,8 +962,8 @@ ES: El comercio es independiente de la evidencia epigráfica.
         "role": "trade",
         "initialHub": "hub-1",
         "offsetTiles": [
-          -6,
-          3
+          -2,
+          -6
         ],
         "finite": true,
         "initiallyDelivered": false,
@@ -1033,8 +1086,8 @@ ES: Señala una ruta interior, nunca un camino por el mar.
         "role": "guide",
         "initialHub": "hub-1",
         "offsetTiles": [
-          -6,
-          3
+          3,
+          -6
         ],
         "finite": true,
         "initiallyDelivered": false,
@@ -1157,8 +1210,8 @@ ES: El traslado voluntario es una actividad ficticia.
         "role": "extract",
         "initialHub": "hub-3",
         "offsetTiles": [
-          -6,
-          3
+          1,
+          6
         ],
         "finite": true,
         "initiallyDelivered": false,
@@ -1170,7 +1223,7 @@ ES: El traslado voluntario es una actividad ficticia.
         "role": "extract",
         "initialHub": "hub-3",
         "offsetTiles": [
-          -6,
+          4,
           6
         ],
         "finite": true,
@@ -1322,13 +1375,13 @@ ES: El traslado voluntario es una actividad ficticia.
     "startingResources": {
       "food": 402,
       "wood": 172,
-      "gold": 86,
+      "gold": 97,
       "stone": 0
     },
     "gatherableBank": {
       "food": 1218,
       "wood": 748,
-      "gold": 249,
+      "gold": 238,
       "stone": 100
     },
     "mandatoryDeliveries": {
@@ -1379,13 +1432,13 @@ ES: El traslado voluntario es una actividad ficticia.
     "startingResources": {
       "food": 350,
       "wood": 150,
-      "gold": 75,
+      "gold": 85,
       "stone": 0
     },
     "gatherableBank": {
       "food": 1270,
       "wood": 770,
-      "gold": 260,
+      "gold": 250,
       "stone": 100
     },
     "mandatoryDeliveries": {
@@ -1436,13 +1489,13 @@ ES: El traslado voluntario es una actividad ficticia.
     "startingResources": {
       "food": 297,
       "wood": 127,
-      "gold": 63,
+      "gold": 72,
       "stone": 0
     },
     "gatherableBank": {
       "food": 1323,
       "wood": 793,
-      "gold": 272,
+      "gold": 263,
       "stone": 100
     },
     "mandatoryDeliveries": {
@@ -1505,7 +1558,7 @@ ES: El traslado voluntario es una actividad ficticia.
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o1-goal / phase-1 active | none | Collect three distinct fictional dedication records from the coastal work yard. | Recoge tres registros ficticios distintos de dedicación en el patio de trabajo costero. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o1-receipt / o1 latched once | none | Three separate administrative copies are registered; these are not modern excavated fragments. | Tres copias administrativas separadas están registradas; no son fragmentos excavados en la actualidad. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o1-reaction / after o1 receipt | miriam-archive | Three copies can repeat the same mistake. Keep their offices and origins visible. | Tres copias pueden repetir el mismo error. Conserva visibles sus cargos y procedencias. |
-| scenario.faith-origins.01-administrative-records-caesarea.odyssey.o2-goal / phase-2 active | none | Fund the copying court with 40 wood and 20 gold, and derive one register from all three records. | Financia el patio de copias con 40 de madera y 20 de oro y prepara un registro a partir de los tres documentos. |
+| scenario.faith-origins.01-administrative-records-caesarea.odyssey.o2-goal / phase-2 active | none | Bring the three original dedication-record bearers to the copying court, pay 40 wood and 20 gold, and issue one register from their records. | Lleva a los tres portadores originales de los registros de dedicación al patio de copias, paga 40 de madera y 20 de oro y expide un registro a partir de sus documentos. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o2-receipt / o2 latched once | none | Materials are paid once and the register retains all three source identities. | Los materiales se pagan una vez y el registro conserva las tres identidades de origen. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o2-reaction / after o2 receipt | miriam-archive | Copy only what the record states; do not give a title the weight of a trial transcript. | Copia solo lo que dice el documento; no concedas a un título el peso de una transcripción judicial. |
 | scenario.faith-origins.01-administrative-records-caesarea.odyssey.o3-goal / phase-3 active | none | Deliver the derived register to the north road archive. | Entrega el registro derivado en el archivo del camino norte. |
