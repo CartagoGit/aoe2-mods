@@ -188,6 +188,85 @@
         "new presence handoff preparation",
         "any WIP beyond the explicit closing cut"
       ]
+    },
+    {
+      "id": "observation-003",
+      "statement": "current resumed interaction after the supplied separate MiniMax conversation; closing product cut excludes this checkpoint-only commit",
+      "clientCutDate": "2026-10-26",
+      "timezone": "Europe/Madrid",
+      "fromCommit": "dbee40d02be6713388c4d5451d366d07adef0607",
+      "toCommit": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+      "baseline": {
+        "source": "README.md and design catalogue atdbee40d02be6713388c4d5451d366d07adef0607; integration history independently inspected",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "cut": {
+        "source": "README/design catalogue and reference manifest at6839db574a0c54aed6b8c7ea053df2c86288af08; verify.py reports0errors and50additional records",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 50,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "delta": {
+        "selectionCount": 0,
+        "designDossierCount": 0,
+        "selectionsWithoutDossier": 0,
+        "bilingualScreenCount": 0,
+        "secondaryObjectiveCount": 0,
+        "localResearchResourceCount": 1,
+        "geographicProfileCount": 0,
+        "unresolvedGeographicIdentities": 0,
+        "selectionsAffectedByUnresolvedGeography": 0
+      },
+      "deliveredChanges": [
+        {
+          "item": "actual400-square native editor diagnostic and reproducible inspection",
+          "integrations": [
+            "d164137e20d3bc63d75ca6edaa55b523745196be",
+            "6f3efcf80b9c6f279bb13c3b51354d755b9eb5ab"
+          ],
+          "evidence": "158 Bun tests/2138 expectations; export suite3variants/2round-trips; separate actual400export and decoded160000tiles/36markers/two positions; export/ZIP-failure regressions. MiniMax bounded technical review and follow-up; full S2 remains pending.",
+          "artifact": "large-map-diagnostic-400-20261026-r2.zip",
+          "artifactSha256": "0ce1728a36ebc09b27a38f456495343efac31e1c432fc436674a72f002868e79",
+          "newHistoricalScenarios": 0
+        },
+        {
+          "item": "reconciled MiniMax handoff and exact future presence-promotion packet",
+          "integration": "06f2cc7a510b607b828f2c857d591a0187bba5ef",
+          "scope": "independently inspected reference bindings clarified; i00005/S2 and i00003/S3 prerequisites remain pending; not an active historical assignment"
+        },
+        {
+          "item": "dated Wilson1865reference and research wiki",
+          "integration": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+          "scope": "one provider preview, hash/dimensions/rights metadata, source attribution and century limits; unchanged identity/bbox/objectives. Reference manifest49→50, no geography approval or new dossier."
+        }
+      ],
+      "actualGameVerificationCount": 0,
+      "miniMaxObservedCodeImplementationSamples": 1,
+      "miniMaxCompletedReadOnlyReviewTopicsThisInterval": 3,
+      "miniMaxBoundedReviewPassesThisInterval": 4,
+      "architectPartComplete": false,
+      "intervalComparableForHistoricalDossierThroughput": false,
+      "forecast": "No interaction count or model-quota estimate. Three documentary observations do not make three comparable historical-authoring samples; the pinned intervals also do not claim contiguous coverage of every asynchronous message.",
+      "pendingByRole": {
+        "architect": "214 dossiers, independent review of64drafts,54static civic flags,22geographic identities affecting25selections, native architecture and supervision",
+        "mechanicalWorkers": "MiniMax/Luna share the278episode materialization pool, assigned gradually; not278per model",
+        "tester": "actual AoE2 load/movement/save/difficulty/campaign evidence, starting with private fixtures"
+      },
+      "noPublicModDistribution": true
     }
   ]
 }
