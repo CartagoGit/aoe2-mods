@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
   "snapshot": {
-    "date": "2026-10-25",
-    "realIdentity": "gpt-6",
+    "date": "2026-10-26",
+    "realIdentity": "gpt-6-luna",
     "method": "tools/design/civic_difficulty_audit.script.py"
   },
   "sourceSha256": {
     "docs/design/odyssey-policy.json": "44f2126ea6f5dd0969445602230245db0adb7da3f636d0e932acd89d68f8f8fc",
-    "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+    "docs/design/odysseys/faith-origins.json": "f86bcecfc918beb8e0e94c9832d188ad619fb9693b5b8540b109afa046c417c2",
     "docs/design/odysseys/imperial-church.json": "e15c0f183b5d6fe0c7061530480221fef541573bd2e314d0d615f73f7b45b25b",
     "docs/design/odysseys/jewish-tradition.json": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
     "docs/design/odysseys/church-of-rome.json": "2f16b67dd2c9b1381311596080988ed96d927323f741382f6ceec82f077ad885",
