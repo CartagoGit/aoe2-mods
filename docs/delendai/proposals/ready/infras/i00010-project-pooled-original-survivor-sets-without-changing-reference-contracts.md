@@ -45,7 +45,7 @@ Jerusalem70 deliberately has eight original household identities in four two-per
 ### S2 — Implement strict survivor projection and verify the existing loss reference
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/test_pooled_survivor_projection.py`, `tools/design/test_design.py`, `docs/qa/pooled-survivor-projection/acceptance.md`
+- **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/test_pooled_survivor_projection.py`, `tools/design/test_design.py`, `tests/unit/pooled-survivor-projection.fixture.ts`, `docs/qa/pooled-survivor-projection/acceptance.md`
 - **Gate**: type
 - acceptance:
   - "After i00009/S2 is independently accepted and integrated, reuse existing group-ID generation and strict numeric primitives to project exactly one survivor row for any declared group union. Do not create or relocate an actor, invent a group alias in public output, or modify any runtime/public schema."

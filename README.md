@@ -21,7 +21,7 @@ En Linux/macOS puede ser necesario usar `python3`. El adaptador usa `.venv` auto
 
 ## Estado y alcance
 
-BASE READY: infraestructura integrada mediante DelendAI, gate certificado y revisiones independientes. i00001 está cerrada; d00002/S1 está `done`, mientras S2–S11 siguen pendientes según el estado recuperado para esta consolidación. f00001/S3 está `done` con producto `3d955598` y veredicto independiente `9c1486af`, integrados en `dc23f194`; S4 de motor sigue pendiente. i00008/S1–S3 están `done`; S3 usa la rama opt-in del auditor cívico y no añade soporte nativo. Ninguno de estos estados aprueba contenido histórico ni evidencia de juego. Recupera el estado vivo antes de actuar.
+BASE READY: infraestructura integrada mediante DelendAI, gate certificado y revisiones independientes. i00001 está cerrada; d00002/S1 está `done`, mientras S2–S11 siguen pendientes según el estado recuperado para esta consolidación. f00001/S1–S4 están `done`: S4 entrega el kit privado revisado (producto `9eac67e5`, veredicto `9047d995`), mientras las pruebas reales del motor siguen pendientes en s00001. i00008/S1–S3 están `done`; S3 usa la rama opt-in del auditor cívico y no añade soporte nativo. Ninguno de estos estados aprueba contenido histórico ni evidencia de juego. Recupera el estado vivo antes de actuar.
 
 Existe un fixture técnico de dos objetivos y dos traducciones de muestra. No hay campañas históricas completas ni 17 traducciones aprobadas. La exportación binaria pasa el round-trip de escenario y contenedor; la carga en AoE2 aún necesita evidencia. No se declara PRODUCTION READY.
 
@@ -40,3 +40,5 @@ python3 tools/design/render.py
 python3 tools/design/verify.py
 python3 tools/design/test_design.py
 ```
+
+La [primera prueba para Windows/Steam en español](docs/handoffs/PRIVATE-PILOTS-WINDOWS-STEAM-ES.md) permite probar los dos fixtures y sus escenarios originales de diagnóstico mientras continúa el diseño. El [registro de avance por interacción](docs/qa/campaign-design/interaction-progress-checkpoints.md) conserva cortes verificables. i00009/S2 de recompensas authored/zero está integrado y revisado (producto `0cf4d064`, veredicto `9f4be255`); i00010/S1 está aprobado y S2 de pooling sigue pendiente. Ninguno añade exportación de perfiles compuestos ni acredita un escenario histórico jugado.
