@@ -79,3 +79,7 @@ La ejecución de 400 × 400 posterior incorpora inspección nativa reproducible 
 
 
 Recopilación visual: se añade un preview del levantamiento de Jerusalén 1864–1865, con fuente, hash, derechos atribuidos y limitación cronológica explícita. El manifiesto suma 50 registros; el catálogo permanece en 64 dossiers / 214 pendientes / 2645 pantallas / 398 secundarios. No se convierten calles o edificios del siglo XIX en huellas del año 70.
+
+## Prioridad del propietario: primera campaña jugable en paralelo
+
+El 26 de octubre el propietario aclara que el objetivo es avanzar una primera campaña real mientras el arquitecto completa diseño y coordina MiniMax/Luna. El embarque del diagnóstico es una observación auxiliar, no una secuencia de pruebas triviales que deba bloquear ese trabajo. El [plan de entrega progresiva](../handoffs/FIRST-CAMPAIGN-VERTICAL-DELIVERY.md) comienza por faith-origins/01-administrative-records-caesarea. Se conserva el alcance de campaña independiente y la revisión por episodio; no se espera a cerrar los 214 dossiers para producir una primera iteración privada, ni se presenta esa iteración como la campaña completa.
