@@ -46,6 +46,18 @@ class AuthoredSecondaryRewardTests(unittest.TestCase):
         self.assertTrue(positive["text"]["en"].endswith("Benefit: 7 wood, once."))
         self.assertTrue(positive["text"]["es-ES"].endswith("Ventaja: 7 de madera, una vez."))
 
+        source_vector = {"wood": 7}
+        source_task = self.task("aid", resourceReward=source_vector)
+        defaults_before = copy.deepcopy(self.secondary["REWARDS"])
+        projected = builder(self.scenario(), [source_task])[0]
+        self.assertEqual(source_vector, {"wood": 7})
+        self.assertEqual(self.secondary["REWARDS"], defaults_before)
+        projected["effects"][0]["resources"]["wood"] = 99
+        repeated_projection = builder(self.scenario(), [source_task])[0]
+        self.assertEqual(repeated_projection["effects"][0]["resources"], {"wood": 7})
+        self.assertEqual(source_vector, {"wood": 7})
+        self.assertEqual(self.secondary["REWARDS"], defaults_before)
+
         for reward in ({}, {key: 0 for key in RESOURCES}):
             with self.subTest(reward=reward):
                 zero = builder(self.scenario(), [self.task("extract", resourceReward=reward)])[0]
@@ -57,7 +69,11 @@ class AuthoredSecondaryRewardTests(unittest.TestCase):
     def test_rejects_invalid_or_misplaced_resource_reward_without_mutation(self):
         builder = self.secondary["build_optional_objectives"]
         defaults = copy.deepcopy(self.secondary["REWARDS"])
-        invalid_vectors = (-1, True, 1.0, 0.5, "2", None, [], {"ore": 2}, {"wood": -1})
+        invalid_vectors = (
+            -1, True, 1.0, 0.5, "2", None, [], {"ore": 2}, {"wood": -1},
+            {"wood": True}, {"wood": 1.0}, {"wood": 0.5}, {"wood": "2"},
+            {"wood": None}, {"wood": []},
+        )
         for value in invalid_vectors:
             task = self.task("aid", resourceReward=value)
             before = copy.deepcopy(task)
