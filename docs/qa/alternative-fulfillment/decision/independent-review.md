@@ -1,0 +1,29 @@
+# Independent technical review: i00007/S1
+
+Reviewer: gpt-6-luna  
+Candidate reviewed incrementally: `95378e4`, `ff49a77ebdf899f30dcb5b584b1b9ca5b764302f`, `18d0b09` and `b01a6636fb3c1cc9fe3c504c6edfc0625c01f9d6` on `216c033eacf91d003e20340c7d532eea80521e4e`.
+Scope: architecture decision, its 33 normative cases, source-inspection record, compatibility claims and current repository validation. This review does not implement S2, assess historical accuracy or certify an engine/UI feature.
+
+## Findings
+
+I found no arithmetic inconsistency in the reservation, cancellation, commitment and optional-reward examples. Recomputing the initial examples gives: meal-direct plus shelter-rented costs 300F/100W/110G, leaving 0F/120W/10G from the stated hard stock; meal-direct plus shelter-materials costs 320F/240W and must be rejected unchanged; meal-purchased plus shelter-local-kit costs 200F/160W/120G, leaving 100F/60W/0G. In C14 the optional 100F/50W reward is independent of the reserved plan, and cancelling restores only its escrow. In C15/C16, escrow cannot pay the repair; the aid reward must first enter spendable stock, the repair debit occurs before its own reward, and the stated final balance follows. The lifecycle rules distinguish reserve, cancel, irreversible commit, qualified output and service completion; a reserved or paid plan cannot itself generate output or win. Defeat is specified to precede commit/reward work from the same authoritative batch. These are specification checks, not executions of a new reference reducer.
+
+The compatibility decision is appropriately additive and deferred: retain source envelope v1 and existing profile/snapshot v2 behavior, make a separate opt-in v3/snapshot-v3 design for S2, and do not reinterpret route choice, fixed payment or generic facts. The updated inspection record names 14 base files; all 14 SHA-256 values match their bytes at `216c033e`. The inspected resource helpers provide finite vector primitives, while current action and snapshot contracts have no escrow or plan attempt state. Existing renderer and Python export reject the composed profile. The decision correctly says S1 did not add a schema/action, that safe-integer limits must be implemented in the new profile rather than inferred from the current `number.int()` checks, and that native UI, fractional-resource representation and engine behavior remain unverified and S3-gated.
+
+The earlier P2 acceptance-traceability finding is resolved by `18d0b09`. Its new portfolio matrix identifies all-skip, all-complete, provision-first (aid + repair), informed movement (scout + guide + watch) and household/source care (extract + copy) for every affordable difficulty/recipe pair, with intermediate reserved/committed balances and portfolio reserve/spend outcomes. It also lists before-funding witnesses with explicit optional prefixes, prerequisites and balances. I independently recomputed all 95 funding-first portfolio expectations and all 24 before-funding witnesses using the plan and shared `COSTS`/`REWARDS`; all balances and prefix affordability checks matched, and each of the three input hashes matched its file.
+
+The P2 count-label issue is resolved by `b01a6636`. The matrix now distinguishes `allSkipDifficultyRecipePairs: 19` from `uniqueRecipePairs: 9`, names all 24 before-funding witnesses by difficulty (9/8/7), and separately records nonempty optional prefixes and newly affordable pairs (0/1/4 for easy/standard/hard). I checked these values against the rows; there are no empty-prefix rows counted as requiring optional aid.
+
+The `ff49a77` addition clarifies that exactly one joint plan exists per scenario, extends the proposed v3 fingerprint over plan/cost/input-output/work/reception and shared state-machine semantics, preserves the v2 fingerprint, and requires a new authoritative post-load observation rather than relabeling cached membership. C33 records the plan-mutation and stale-observation expectations. These close the earlier ambiguity about multiple plans and the fingerprint's scope; the v2 behavior remains untouched.
+
+The `18d0b09` portfolio matrix remains explicitly classified as normative accounting, not execution of selector, escrow, work, native UI or game. With `b01a6636`, its labels now match the row counts and its scope is clear.
+
+The fixture deliberately treats a worker’s post-commit arrival at a separate work zone as the work receipt. The decision states that this is only a causal identity fixture, not simulated cooking, repair or an interesting RTS task. That limit is clear and appropriate for S1, but the operation remains a promotion blocker: a campaign cannot represent meaningful work as empty travel and claim the infrastructure decision proved gameplay quality. Native input/menu support, atomicity in the target engine, save/load queue restoration, resource precision and actual output creation remain open external evidence; the decision does not claim them.
+
+## Verification
+
+- `bun run validate`: passed; 108 tests / 426 expectations, documentation checks and one campaign validation passed.
+- Updated source inspection: 14/14 source hashes matched the stated base.
+- Case file: valid JSON; 33 case IDs are unique (`C01`–`C33`). Portfolio matrix: 19 difficulty/recipe rows × 5 variants = 95 accounting expectations and 24 before-funding witnesses; all inputs and results independently reconciled, including corrected counts. Both files say these are normative/accounting examples, not executable transitions or game tests.
+
+I have not run `bun run test:export`; no adapter/export code changed, and the decision preserves the existing rejection for unsupported capability profiles. This report is a technical review of S1 evidence only; it is not a formal DelendAI approval and does not certify historical content, terrain, gameplay quality or native behavior.

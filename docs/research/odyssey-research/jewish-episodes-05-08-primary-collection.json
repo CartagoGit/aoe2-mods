@@ -1,0 +1,235 @@
+{
+  "title": "Research collection — Jewish tradition, episodes 05–08",
+  "created": "2026-10-23",
+  "status": "research-only; not approved; no campaign dossiers",
+  "selection_basis": "docs/wiki/jewish-tradition/14-odyssey-arc.md and docs/design/odyssey-selections.md",
+  "access_scope": {
+    "full_texts_read": false,
+    "machine_translation_used": false,
+    "images_included": false,
+    "sefaria_api": "Architect personally received HTTP200 and read specified passages and translation metadata; collector browser API access failed.",
+    "ocre": "Direct RIC 58 page access failed; lookup unapproved; no secondary Numista substitution."
+  },
+  "episodes": [
+    {
+      "id": "05",
+      "selection": "05-fiscal-record-reconciliation-rome-ostia",
+      "date": "96 CE",
+      "place": "Rome-Ostia",
+      "research_focus": "Fictional local fiscal archive; Suetonius on Domitianic enforcement and Dio on Nerva.",
+      "claims": [
+        {
+          "claim": "Suetonius reports rigorous enforcement under Domitian and recalls a public examination of a 90-year-old man.",
+          "status": "retrospective literary testimony",
+          "source_ids": [
+            "suetonius"
+          ],
+          "caveat": "Does not establish universal practice, tax creation by Domitian, or abolition by Nerva."
+        },
+        {
+          "claim": "Dio 68.1.2 says Nerva prohibited accusations of maiestas or adopting the Jewish mode of life.",
+          "status": "epitome testimony; legal interpretation uncertain",
+          "source_ids": [
+            "dio-68-1"
+          ],
+          "caveat": "Does not state that the fiscus itself was abolished."
+        }
+      ],
+      "dossierStatus": "not authored by this collection",
+      "constraints": [
+        "The selected96CE date is editorial; the fiscal archive, reconciliation task and Rome–Ostia journey are fictional unless independently established.",
+        "Berlin specimenRICII82 is dated97CE; do not present it as an object minted in96 or knowledge available to a96scene. OCRE58 remains unverified.",
+        "Dio and fiscal legend do not demonstrate abolition of the tax. Distinguish relief from accusations/enforcement from cancellation of every liability.",
+        "No surveyed archive building, ancient road alignment, port phase or playable area is established here."
+      ]
+    },
+    {
+      "id": "06",
+      "selection": "06-teaching-record-escort-lod",
+      "date": "c.100–135 CE",
+      "place": "Lod",
+      "research_focus": "Witness tradition with competing rabbinic attributions.",
+      "claims": [
+        {
+          "claim": "Mishnah RH 1:6 attributes the detention of more than forty pairs to Rabbi Akiva.",
+          "status": "rabbinic tradition",
+          "source_ids": [
+            "mishnah-rh-1-6"
+          ],
+          "caveat": "Not contemporaneous verification; date and reported number are not independently established."
+        },
+        {
+          "claim": "Bavli RH 22a, in a baraita attributed to Rabbi Yehuda, rejects Akiva and names Zefer, head of Geder.",
+          "status": "explicit alternative rabbinic tradition",
+          "source_ids": [
+            "bavli-rh-22a"
+          ],
+          "caveat": "Transliteration varies (Zefer/Shazpar). Neither attribution should be presented as settled contemporary fact."
+        }
+      ],
+      "dossierStatus": "not authored by this collection",
+      "constraints": [
+        "The selected c100–135CE band is an editorial envelope, not a date supplied byRH1.6 or22a.",
+        "The accessed English translation adds explanatory itinerary/destination wording. It cannot establish an early2ndcentury route to Jerusalem or a parcel atLod. Separate later tradition, translator gloss and period-specific geography.",
+        "Keep Akiva attribution and RabbiYehuda alternative naming Zefer(headGeder) distinct; do not turn either into an uncontested eyewitness fact.",
+        "No academy location, school footprint, road/river crossing or timed teaching escort is established by these passages."
+      ]
+    },
+    {
+      "id": "07",
+      "selection": "07-civilian-refuge-cyrene",
+      "date": "115–117 CE",
+      "place": "Cyrene",
+      "research_focus": "Local reconstruction of civilian refuge during revolt.",
+      "claims": [
+        {
+          "claim": "Dio 68.32 describes revolt in Cyrene and names Andreas as leader.",
+          "status": "epitome testimony",
+          "source_ids": [
+            "dio-68-32"
+          ],
+          "caveat": "Hostile literary framing and very large death tolls are not independently verified."
+        },
+        {
+          "claim": "Eusebius HE 4.2 describes events in Cyrene and names Lucuas.",
+          "status": "fourth-century retrospective historiography",
+          "source_ids": [
+            "eusebius-he-4-2"
+          ],
+          "caveat": "Different leader/frame than Dio; preserve source distinction."
+        }
+      ],
+      "dossierStatus": "not authored by this collection",
+      "constraints": [
+        "Dio and Eusebius are distinct retrospective transmissions; neither provides a neutral event log or verified casualty census.",
+        "Do not equate Andreas andLucuas without an explicit qualified argument; do not merge hostile atrocity rhetoric with objective collection narration.",
+        "Individual households, relief parties, witness notes and supply operations remain fictional; these passages do not attest those groups or identify their destinations.",
+        "Exact ancient refuge/harbour layout, dated coast, water access, terrain routes and scenario clock still require archaeological and geographic evidence."
+      ]
+    },
+    {
+      "id": "08",
+      "selection": "08-harbour-supply-and-witnesses-alexandria",
+      "date": "115–117 CE",
+      "place": "Alexandria",
+      "research_focus": "Local Egyptian reconstruction; distinguish reports and avoid generalized culpability.",
+      "claims": [
+        {
+          "claim": "Dio 68.32 reports violence in Egypt and Cyprus during the revolt.",
+          "status": "epitome testimony",
+          "source_ids": [
+            "dio-68-32"
+          ],
+          "caveat": "Do not transfer all claims about Cyrene to Alexandria or treat casualty totals as census."
+        },
+        {
+          "claim": "Eusebius HE 4.2 reports revolt in Alexandria/Egypt and Cyrene and Roman suppression.",
+          "status": "fourth-century retrospective historiography",
+          "source_ids": [
+            "eusebius-he-4-2"
+          ],
+          "caveat": "Not eyewitness testimony; do not merge with Dio as a single certain account."
+        }
+      ],
+      "dossierStatus": "not authored by this collection",
+      "constraints": [
+        "Dio and Eusebius are distinct retrospective transmissions; neither provides a neutral event log or verified casualty census.",
+        "Do not equate Andreas andLucuas without an explicit qualified argument; do not merge hostile atrocity rhetoric with objective collection narration.",
+        "Individual households, relief parties, witness notes and supply operations remain fictional; these passages do not attest those groups or identify their destinations.",
+        "Exact ancient refuge/harbour layout, dated coast, water access, terrain routes and scenario clock still require archaeological and geographic evidence.",
+        "Eusebius distinguishes violence inAlexandria and forces fromCyrene intoEgypt; a regional report is not evidence for a specific harbour encounter."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "suetonius",
+      "url": "https://www.posenlibrary.com/entry/invasive-tax-enforcement",
+      "kind": "ancient text in modern translation/editorial entry",
+      "access": "Passage and Rolfe translation viewed; entry dates work ca.117–122 CE.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "dio-68-1",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/68*.html",
+      "kind": "ancient text as epitome; old Loeb reproduction",
+      "access": "Relevant text viewed; site says not proofread.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "dio-68-32",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/68*.html",
+      "kind": "ancient text as epitome; old Loeb reproduction",
+      "access": "Relevant text viewed; numbers retained only as source claims.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "mishnah-rh-1-6",
+      "url": "https://www.sefaria.org/api/texts/Mishnah_Rosh_Hashanah.1.6?context=0",
+      "kind": "rabbinic text and William Davidson English, CC-BY-NC",
+      "access": "Architect read relevant specified passage via actual HTTP200 API; William Davidson Edition - English; versionSource https://korenpub.com/collections/the-noe-edition-koren-talmud-bavli-1; reported license CC-BY-NC. No translation is reproduced or approved for game distribution.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "bavli-rh-22a",
+      "url": "https://www.sefaria.org/api/texts/Rosh_Hashanah.22a?context=0",
+      "kind": "rabbinic text and William Davidson English, CC-BY-NC",
+      "access": "Architect read relevant specified passage via actual HTTP200 API; William Davidson Edition - English; versionSource https://korenpub.com/collections/the-noe-edition-koren-talmud-bavli-1; reported license CC-BY-NC. No translation is reproduced or approved for game distribution.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "berlin-obj-2353116",
+      "url": "https://search.smb.museum/object/obj-2353116",
+      "kind": "museum specimen metadata",
+      "access": "Opened: Ident.-Nr.18200252; 97 CE; 28.03g; 34mm; RIC II 82; tax legend.",
+      "checkedAt": "2026-10-23",
+      "rights": "Museum photo credit identifies SMB Münzkabinett/Lutz-JürgenLübke; no object-specific reuse license established. Metadata only, no photo downloaded or approved."
+    },
+    {
+      "id": "ocre-ric-58",
+      "url": "https://numismatics.org/ocre/id/ric.2.ner.58",
+      "kind": "coin type reference database",
+      "access": "Unverified lookup only: browser failure and architect directHTTP500. No type/date assertion or image acquired.",
+      "checkedAt": "2026-10-23"
+    },
+    {
+      "id": "eusebius-he-4-2",
+      "url": "https://www.newadvent.org/fathers/250104.htm",
+      "kind": "fourth-century historiography in English reproduction",
+      "access": "Architect read onlyHE4.2.1–5 here; collector consulted indexedPDF excerpt separately. No critical edition collation.",
+      "checkedAt": "2026-10-23",
+      "collectorUrl": "https://www.documentacatholicaomnia.eu/03d/0265-0339%2C_Eusebius_Caesariensis%2C_Church_History%2C_EN.pdf"
+    }
+  ],
+  "metadata": {
+    "schemaVersion": 1,
+    "date": "2026-10-23",
+    "unit": "d00002/S1",
+    "collector": "gpt-6-luna",
+    "architect": "gpt-6",
+    "scope": "Bounded research collection for existing selections05–08; no dossier, scenario, historical approval or game evidence."
+  },
+  "architectChecks": {
+    "date": "2026-10-23",
+    "personallyRead": [
+      "Suetonius Domitian12.2: Posen displayed passage and Rolfe1914 credit; not full book.",
+      "Dio68.1.2 and68.32.1–3: Chicago Loeb1925 epitome reproduction; not full critical edition.",
+      "MishnahRH1.6 and opening paragraph of BavliRH22a: Sefaria text API HTTP200, WilliamDavidsonEnglish, versionSourceKoren, licenseCC-BY-NC. BrowserHTML only loaded shell; no claim that shell exposed passage.",
+      "Berlin obj2353116: museum metadata, IdentNr18200252,97CE,COSIII,RICII82; no image download.",
+      "EusebiusHE4.2.1–5: NewAdvent English reproduction; not full book or critical collation."
+    ],
+    "failedAccess": [
+      "OCRE RICII Nerva58: browser inaccessible; direct HTTP attempted returned500 and guessed JSON endpoint404. No verified type/date claim is accepted here."
+    ],
+    "supersession": "Corrects the temporary collector draft which substituted a different Berlin denarius. That denarius is excluded. The earlier temporary24-source collection was unavailable in the recovered environment; no claim to have restored or checked it."
+  },
+  "authoringGate": {
+    "historicalApproval": false,
+    "geographyApproved": false,
+    "imagesApproved": false,
+    "gameVerified": false,
+    "expandedDossiersAdded": 0,
+    "localBinaryAssetsAdded": 0,
+    "next": "Prepare dated archaeological/geographic controls and qualified scholarly corroboration before an architect-authored dossier; independent historical, terrain and engine gates remain."
+  }
+}

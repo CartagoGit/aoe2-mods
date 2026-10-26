@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "id": "01-route-choice",
+  "titleKey": "scenario.route-pilot-choice.title",
+  "messages": {
+    "instructions": "campaign.route-pilot.instructions",
+    "hints": "campaign.route-pilot.hints",
+    "scouts": "campaign.route-pilot.scouts",
+    "history": "campaign.route-pilot.history",
+    "loss": "campaign.route-pilot.loss",
+    "victory": "campaign.route-pilot.victory"
+  },
+  "period": "No historical period; fictional technical laboratory.",
+  "date": "Fictional; no historical date.",
+  "location": "Artificial plain; no historical geography.",
+  "claimIds": [],
+  "characters": [],
+  "mechanic": "siege",
+  "secondaryMechanics": [
+    "Ordered objectives",
+    "Two independent route outcomes",
+    "Cumulative progress keys; engine behavior unverified"
+  ],
+  "map": {
+    "width": 32,
+    "height": 32,
+    "blocked": [],
+    "baseTerrain": "grass-1",
+    "tiles": [],
+    "start": {
+      "x": 6,
+      "y": 16
+    },
+    "geography": "Artificial plain; fictional layout without historical geographic claim."
+  },
+  "units": [
+    {
+      "id": "guard",
+      "faction": "player",
+      "type": "militia",
+      "nameKey": "scenario.route-pilot-choice.guard-name",
+      "position": {
+        "x": 6,
+        "y": 16
+      },
+      "essential": true
+    },
+    {
+      "id": "ram-north",
+      "faction": "player",
+      "type": "battering-ram",
+      "nameKey": "scenario.route-pilot-choice.ram-north-name",
+      "position": {
+        "x": 8,
+        "y": 14
+      },
+      "essential": false
+    },
+    {
+      "id": "ram-south",
+      "faction": "player",
+      "type": "battering-ram",
+      "nameKey": "scenario.route-pilot-choice.ram-south-name",
+      "position": {
+        "x": 8,
+        "y": 18
+      },
+      "essential": false
+    },
+    {
+      "id": "target-a",
+      "faction": "targets",
+      "type": "castle",
+      "nameKey": "scenario.route-pilot-choice.target-a-name",
+      "position": {
+        "x": 24,
+        "y": 8
+      },
+      "essential": false
+    },
+    {
+      "id": "target-b",
+      "faction": "targets",
+      "type": "castle",
+      "nameKey": "scenario.route-pilot-choice.target-b-name",
+      "position": {
+        "x": 24,
+        "y": 24
+      },
+      "essential": false
+    }
+  ],
+  "factions": [
+    {
+      "id": "player",
+      "player": 1,
+      "civilization": "byzantines",
+      "nameKey": "scenario.route-pilot-choice.player-name",
+      "justification": "Purely technical fixture label; no historical or ethnic inference.",
+      "claimIds": [],
+      "role": "human",
+      "economy": {
+        "model": "finite-reserve",
+        "initial": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "supply": "Finite initial units only; no production or reinforcements.",
+        "production": [],
+        "reserve": 3
+      },
+      "strategy": {
+        "goals": [
+          "Preserve the fixed laboratory setup."
+        ],
+        "mobilization": "Initial units only.",
+        "reactions": [
+          "Default game behavior is unverified."
+        ],
+        "limits": "No authored production, reinforcements, or scripted orders.",
+        "retreat": "No authored retreat behavior."
+      },
+      "reinforcements": []
+    },
+    {
+      "id": "targets",
+      "player": 2,
+      "civilization": "byzantines",
+      "nameKey": "scenario.route-pilot-choice.targets-name",
+      "justification": "Purely technical fixture label; no historical or ethnic inference.",
+      "claimIds": [],
+      "role": "enemy",
+      "economy": {
+        "model": "finite-reserve",
+        "initial": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "supply": "Finite initial units only; no production or reinforcements.",
+        "production": [],
+        "reserve": 2
+      },
+      "strategy": {
+        "goals": [
+          "Preserve the fixed laboratory setup."
+        ],
+        "mobilization": "Initial units only.",
+        "reactions": [
+          "Default game behavior is unverified."
+        ],
+        "limits": "No authored production, reinforcements, or scripted orders.",
+        "retreat": "No authored retreat behavior."
+      },
+      "reinforcements": []
+    }
+  ],
+  "objectives": [
+    {
+      "id": "prepare",
+      "textKey": "scenario.route-pilot-choice.prepare",
+      "kind": "main",
+      "requires": [],
+      "completion": {
+        "type": "timer",
+        "seconds": 1
+      },
+      "location": {
+        "x": 6,
+        "y": 16
+      }
+    },
+    {
+      "id": "destroy-a",
+      "textKey": "scenario.route-pilot-choice.destroy-a",
+      "kind": "main",
+      "requires": [
+        "prepare"
+      ],
+      "completion": {
+        "type": "destroy",
+        "unit": "target-a"
+      },
+      "location": {
+        "x": 24,
+        "y": 8
+      }
+    },
+    {
+      "id": "destroy-b",
+      "textKey": "scenario.route-pilot-choice.destroy-b",
+      "kind": "main",
+      "requires": [
+        "prepare"
+      ],
+      "completion": {
+        "type": "destroy",
+        "unit": "target-b"
+      },
+      "location": {
+        "x": 24,
+        "y": 24
+      }
+    }
+  ],
+  "victory": {
+    "objectives": [
+      "prepare"
+    ],
+    "routes": [
+      {
+        "id": "route-a",
+        "objectives": [
+          "destroy-a"
+        ],
+        "progressKey": "progress.route-pilot.route-a"
+      },
+      {
+        "id": "route-b",
+        "objectives": [
+          "destroy-b"
+        ],
+        "progressKey": "progress.route-pilot.route-b"
+      }
+    ]
+  },
+  "defeat": {
+    "essentialUnits": [
+      "guard"
+    ],
+    "timeoutSeconds": 900,
+    "arbitration": "defeat-first"
+  },
+  "variables": [],
+  "balance": {
+    "easy": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    },
+    "standard": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    },
+    "hard": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    }
+  },
+  "narrative": {
+    "intro": [
+      {
+        "id": "scenario-framing",
+        "speaker": "collection-narrator",
+        "textKey": "campaign.route-pilot.fact",
+        "claimIds": [],
+        "delivery": "Clear, concise fictional technical narration",
+        "durationSeconds": 9
+      }
+    ],
+    "events": [],
+    "outro": [
+      {
+        "id": "scenario-complete",
+        "speaker": "collection-narrator",
+        "textKey": "campaign.route-pilot.victory",
+        "claimIds": [],
+        "delivery": "Clear, concise fictional technical narration",
+        "durationSeconds": 10
+      }
+    ]
+  },
+  "technologies": [],
+  "triggers": [],
+  "rewards": [
+    "Record only the route selected by the existing route definition; persistence is unverified."
+  ],
+  "dependencies": [
+    "Native route ordering and persistent progress require engine verification."
+  ],
+  "media": [],
+  "qa": [
+    {
+      "id": "prepare-before-target-destruction",
+      "steps": [
+        "Destroy one target before the one-second prepare objective completes."
+      ],
+      "expected": "If the engine supports the specified route logic, the earlier destroyed-target condition remains eligible after prepare.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "same-tick-route-priority",
+      "steps": [
+        "Complete both target-destruction objectives in the same evaluation tick."
+      ],
+      "expected": "At most one terminal victory; the ordered route list gives A declared priority.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "defeat-first",
+      "steps": [
+        "Lose the essential guard in the same evaluation as a possible victory."
+      ],
+      "expected": "Defeat takes priority; neither progress key is written.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "progress-persistence",
+      "steps": [
+        "Complete Route A and later Route B on replay; repeat in reverse order."
+      ],
+      "expected": "Each selected route key persists and the other is not cleared.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "native-footprints-and-path",
+      "steps": [
+        "Inspect castle/ram footprints and paths before any engine test."
+      ],
+      "expected": "Candidate positions remain unverified until native footprint and path checks pass.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    }
+  ],
+  "metrics": {
+    "basis": "estimated",
+    "durationMinutes": [
+      2,
+      20
+    ],
+    "stagnation": "No observed play test. Timeout is 900 seconds; perceived stall points remain unmeasured.",
+    "alternativeRoutes": "Route A and Route B are alternative outcomes in the source definition; playability and balance are unmeasured."
+  }
+}

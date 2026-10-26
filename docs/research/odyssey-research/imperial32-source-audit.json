@@ -1,0 +1,51 @@
+{
+  "episodeId": "32-defeat-and-withdrawal-adrianople",
+  "displayOrder": 30,
+  "author": "gpt-6",
+  "date": "2026-10-17",
+  "status": "architect bounded source reading and authored design; independent historical/native/game review pending",
+  "sources": [
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+      "locator": "Ammianus31.12.3/10–17,31.13.1–19;31.15.1–4as aftermath control",
+      "actuallyRead": "Root read selected complete passages in Rolfe translation, distinguishing prebattle positioning, march/time, defeat/death variants and aftermath.",
+      "limits": "Retrospective literary military narrative. Motives, ethnic stereotypes and broad casualty ratios belong to the author’s account, not measured tactical data or a license to portray religious guilt. No exact modern battlefield, circle, cottage, formation or universal route."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Ammian/31%2A.html",
+      "locator": "31.12.3/10–11",
+      "actuallyRead": "Root directly checked the Latin temporal clause octava tandem hora and the separate quindecim milibus passuum phrase, no full manuscript apparatus.",
+      "limits": "The eighth hour is not an eight-mile radius; the earlier fifteen-mile position is not the final battle coordinate. Exact local-time/Gregorian conversion not performed."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/source/378adrianople.asp",
+      "locator": "Short Yonge1862selection, march clause",
+      "actuallyRead": "Root read the selected English march rendering eight miles, contrasted with Rolfe/Latin.",
+      "limits": "A translation discrepancy, not a measured route. Do not infer an author’s dependence on Yonge from the same number alone."
+    }
+  ],
+  "fixedHistoricalOutcome": "Roman defeat and Valens’ death. Accounts of fatal arrow versus cottage are alternatives; he is not a playable rescue objective. A successful local withdrawal does not reverse the battle. Do not equate all survivors with entry into Hadrianopolis:31.15.4reports soldiers and batmen barred from entering. A later siege is distinct from the battle.",
+  "calendar": "Conventional Roman-calendar9August378; no verified Gregorian conversion or exact eighth-hour modern clock.",
+  "mapDecisionCandidate": {
+    "region": "Edirne/Adrianople and Thracian rolling country, modern regional DSM reference only",
+    "proposedLocalBBox": [
+      26.6,
+      41.7,
+      26.76,
+      41.87
+    ],
+    "classification": "Selected design-only fictional withdrawal sector in real regional geography, NOT an identification of the battlefield",
+    "geographyProfileNeeded": "Separate378regional profile so the324lower-Hebrus ferry profile is not silently reused. Do not force a Hebrus crossing or mirror regional banks.",
+    "cityPlacement": "The existing modern Edirne locator26.5556,41.6769is outside this candidate local frame to the southwest; it is an off-map direction, not a certified ancient gate or shelter.",
+    "terrainBasis": "Modern Copernicus crop covers the candidate frame and wider padded area; use rolling upland/valley differences as a qualified research proxy, not a378DTM. Native height range0–7is supported by existing map contract; no specific elevation-band conversion or route safety approved yet.",
+    "unresolved": "Ancient local landmask, minor streams, road phases, exact receiving grounds, all actor footprints, unit proxies, AI acquisition/leashes, routes, difficulty and real active/idle behavior."
+  },
+  "historicalApproval": false,
+  "nativeOrGameApproval": false,
+  "gameplayDecision": {
+    "role": "Six invented foot stragglers, four invented mounted scouts and fourteen finite supporting troops withdraw through two staging checkpoints to one off-city reception area.",
+    "main": "Any four of six foot originals and any two of four mounted originals must be collected, simultaneously present at west/central checkpoints respectively, and later simultaneously present at the southwest receiver. Exact final180food/80wood payment. No frozen first quorum or continuous intermediate holding.",
+    "limits": "No playable Valens, body recovery, historical troop ratio, wagon-circle capture, city entry, forced loss, compulsory hostile kill or infinite pursuit. Enemy22maximum and all local courts are licensed tactical fiction.",
+    "referenceScope": "Explicit checkpoint presence ato2; terminal-current presence ato3. Historical outcome and all local quantities unchanged. Native support and independent game/historical approval remain pending."
+  }
+}

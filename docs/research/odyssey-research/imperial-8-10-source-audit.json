@@ -1,0 +1,200 @@
+{
+  "campaignId": "imperial-church",
+  "orders": [8, 9, 10],
+  "selectionSource": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "auditDate": "2026-10-13",
+  "auditType": "read-only collection of primary passages and geographical evidence",
+  "architectApproval": false,
+  "episodes": [
+    {
+      "order": 8,
+      "id": "08-disputed-correspondence-alexandria",
+      "dateSelected": "324–325 CE",
+      "geographyId": "alexandria",
+      "selectedClaim": "Arius and Alexander's dispute attracted imperial correspondence and wider episcopal/church attention in Eusebius's account.",
+      "historicalReferences": [
+        {
+          "url": "https://www.newadvent.org/fathers/25022.htm",
+          "locator": "Eusebius, Life of Constantine II.61–73, especially II.61.2–5, II.62, II.63, II.64–72 and II.73",
+          "classification": "primary ancient narrative; pro-Constantinian biography that embeds a purported imperial letter",
+          "coverageActuallyRead": "Fetched and read the complete English text of chapters II.61–73, not merely contents/headings. This is Ernest Cushing Richardson's 1890 translation in NPNF, revised on New Advent; no Greek critical apparatus was consulted.",
+          "passagesRead": "II.61 says the dispute originated in the Alexandrian church and Eusebius narrates its spread through Egypt, Libya, the Thebaid, other provinces and cities. II.62 says Alexandrian disputants sent emissaries to provincial bishops who took sides. II.63 says Constantine sent an envoy to negotiate peace and carried a letter. II.64–72 present the letter addressed to Alexander and Arius; II.69 attributes the immediate dispute to Alexander asking a question about scriptural law and Arius answering. II.72 says Constantine had been travelling east from Nicomedia but changed plans after hearing of the dispute. II.73 explicitly says the letter did not end the contention and that its effects extended through eastern provinces.",
+          "supports": "Eusebius represents a disagreement between Alexander and Arius as starting in Alexandria, spreading through ecclesiastical contacts, and prompting an imperial envoy and letter. Eusebius's account also says the letter failed to settle the dispute.",
+          "doesNotEstablish": "No absolute date is stated in these chapters. The conventional context is probably 324; the selection's 324–325 range is editorial and risks blending the letter with the Council of Nicaea (325). Eusebius does not present an independently preserved chancery original or describe a precise Alexandrian building/meeting. The purported letter's historicity/textual exactness is not independently corroborated here.",
+          "limitsAndBias": "Eusebius writes a highly favorable life of Constantine and frames the dispute as harmful factionalism and, through the embedded letter, as an issue the emperor wished to quiet. His account characterizes the original question as trivial, whereas the ensuing church conflict and later Nicaean treatment show this is Constantine's/Eusebius's framing, not a neutral measure of theological importance. Do not use the letter's first-person voice as authenticated verbatim speech without attribution.",
+          "accessNotes": "The New Advent text itself was read directly; chapter-level text available. Separately cross-checked its section divisions and several Greek/text-aligned passages with Sophia Scriptura based on Heikel's GCS 7 (1902), but did not collate the whole Greek text."
+        },
+        {
+          "url": "https://sophiascriptura.com/fathers/eusebius-vita-constantini/2-28-1/",
+          "locator": "Eusebius, Vita Constantini II.61.2–4 and II.64.1; Heikel GCS 7 Greek with supplied translation",
+          "classification": "primary text in modern aligned Greek/English digital edition",
+          "coverageActuallyRead": "Opened lines for II.61.2–4 and II.64.1 and the source's translation provenance note. These confirm Alexandrian origin/spread and the salutation to Alexander and Arius. Also read adjacent note that letter probably dates to 324 and runs through II.72.",
+          "supports": "Confirms passage numbering and source alignment; it labels the letter's date 'probably 324,' not a firm date.",
+          "limits": "This is a modern digital text/translation tied to Heikel's 1902 edition, not an independent ancient witness or a separately archived imperial letter."
+        }
+      ],
+      "geography": {
+        "url": "https://www.cealex.org/promotion-and-dissemination/exhibitions/the-harbours-of-alexandria/harbours-antiquity/",
+        "locator": "Centre d'Études Alexandrines, 'Harbours Antiquity', especially discussion of buried Mareotic lake port, Heptastadion, port basins and city grid",
+        "coverageActuallyRead": "Read page text on modern burial of the ancient lake port; reconstruction from old maps/geomorphology; canals, Heptastadion and perpendicular Canopic road network. Page captions identify its map source/archive and explicitly call some location presumed/reconstructed.",
+        "supports": "For broad setting only: ancient Alexandria had Mediterranean and Mareotic/lake-facing maritime connections, a causeway to Pharos, and an orthogonal road framework; much of the ancient waterfront is buried or submerged today.",
+        "limits": "This is not evidence that the Arius-Alexander dispute happened at a harbor, road, church ruin, or exact modern coordinate. Its map is an archaeological reconstruction, not a literal fourth-century plan; do not attach episcopal events to the port topography."
+      },
+      "dateAndPlaceCautions": [
+        "Eusebius's II.61–73 does not date the controversy or letter to a calendar year; the digital edition calls it probably 324. Keep 324–325 as a broad editorial frame only if the episode explicitly distinguishes the initial letter from the Council of Nicaea.",
+        "Eusebius identifies the Alexandrian church as the place of origin and describes later spread at regional scale. His rhetoric of a 'fire' and spread is not quantitative evidence for universal participation or direct personal involvement by every bishop.",
+        "No evidence consulted locates a named church, house, harbor, or street as the scene."
+      ],
+      "imageCandidates": [],
+      "architectApproval": false
+    },
+    {
+      "order": 9,
+      "id": "09-crossing-and-supply-adrianople",
+      "dateSelected": "3 July 324 CE, conventional",
+      "geographyId": "adrianople",
+      "selectedClaim": "Constantine defeated Licinius at Adrianople; this was a separate land battle before the later Bosphorus-area battle and final surrender.",
+      "historicalReferences": [
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Zosimus, New History II.22 (especially battle narrative; chapter/section numbering cross-checked against Livius 2.22 locator)",
+          "classification": "primary ancient narrative, c. early sixth century, preserved in later manuscript transmission",
+          "coverageActuallyRead": "Fetched and read directly in the 1814 English translation: the complete campaign narrative around printed pp.47–48, from Licinius encamping at Adrianople through the Hebrus crossing and camp capture, subsequent retreat to Byzantium, fleet transfer and Hellespont naval battle. The 1814 English text does not visually preserve modern subsection markers in the extracted page; Livius's separately numbered locator identifies the Adrianople sequence as II.22.3–4 onward.",
+          "passagesRead": "Narrative says Licinius encamped at Adrianople in Thrace; Constantine advanced from Thessalonica and camped beside the Hebrus; Licinius arrayed his troops along terrain near the town and toward a river junction; Constantine crossed at a narrow point, and the account ends in a Roman victory and Licinius retreating toward his ships.",
+          "supports": "An ancient source places the land campaign/battle in the Adrianople-Hebrus area and distinguishes it narratively from later siege/naval and Bithynian operations.",
+          "doesNotEstablish": "The narrative contains no calendar date '3 July.' The date is conventional and comes from chronographic/modern source synthesis, not the battle narrative passage just read. It provides no GPS-like crossing point, exact riverbank, precise town outskirts, or reliable casualty total.",
+          "limitsAndBias": "Zosimus is a late author writing in the early sixth century, several generations after Constantine, and has an anti-Constantinian stance. His extraordinary army strengths/casualties, troop placements and tactical dialogue are not independently verified by this single account. Treat narrative detail as attributed, not neutral military survey."
+        },
+        {
+          "url": "https://roman-emperors.sites.luc.edu/licinius.htm",
+          "locator": "De Imperatoribus Romanis, Licinius biography, paragraph on 324 campaign",
+          "classification": "modern scholarly reference page, not primary evidence",
+          "coverageActuallyRead": "Read paragraph that dates Hebrus engagement to 3 July 324, then fleet episode, retreat and Chrysopolis on 18 September.",
+          "supports": "Documents that 3 July is the conventional chronology adopted in this modern reference; it does not derive a date from Zosimus's own battle sentence.",
+          "limits": "Secondary reference; not an ancient date attestation. Its compact geographic summary should not be mistaken for a mapped archaeological footprint."
+        },
+        {
+          "url": "https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.22/",
+          "locator": "Livius transcription/translation of Zosimus II.22.3–4",
+          "classification": "modern page presenting primary ancient text",
+          "coverageActuallyRead": "The search result directly exposed the numbered text for II.22.3–4 (Licinius at Adrianople; armies arrayed toward river junction); the page timed out on a full open. Direct full passage was read at Tertullian link above.",
+          "supports": "Confirms modern subsection locator used for the passage.",
+          "limits": "Do not describe Livius as a second ancient witness. Full page not accessed in this pass."
+        }
+      ],
+      "geography": [
+        {
+          "url": "https://dergipark.org.tr/en/pub/tubaar/article/925502",
+          "locator": "Şahin Yıldırım, 'Hadrianopolis: A Citadel in Thrace', Turkish Academy of Sciences Journal of Archaeology (TÜBA-AR) 18 (2015), abstract and references",
+          "coverageActuallyRead": "Read Turkish and English abstract. It identifies the historic site with modern Edirne; describes regional setting at Meriç/Arda/Tunca river convergence and a major Europe-to-Anatolia route corridor; emphasizes that surviving remains of the Roman castrum are limited.",
+          "supports": "Broad site-level geography and the fact that the modern city of Edirne corresponds to Roman Hadrianopolis; regional river/plain context only.",
+          "limits": "Abstract only; full article and detailed archaeological plans were not read. It does not locate the 324 field or prove that ancient river channels match today's banks."
+        },
+        {
+          "url": "https://www.edirneozelidare.gov.tr/cografi-yapi-02-03-2013",
+          "locator": "Edirne İl Özel İdaresi, 'Coğrafi Yapı', current administrative geography",
+          "coverageActuallyRead": "Read published summary describing present Meriç, Tunca, Arda and Ergene watercourses, low plains and seasonal flow variations.",
+          "supports": "Present-day topographic context and modern hydrological seasonality in Edirne province.",
+          "limits": "Modern official geography; not a reconstruction of fourth-century hydrology. Present river levels, banks, confluences, national border and bridges cannot be projected onto 324."
+        }
+      ],
+      "dateAndPlaceCautions": [
+        "Eusebius VC II is not the exact battle source and does not provide this battle date. Zosimus's passage supplies the Adrianople/Hebrus region but no 3 July date.",
+        "The named ancient Hebrus is normally associated with modern Meriç/Evros, but neither source identifies a precise crossing coordinate. Keep the crossing and battlefield as a broad regional area.",
+        "Do not use modern Meriç bridge, current national border, Tunca/Meriç confluence detail, or modern roads as 324 proof."
+      ],
+      "imageCandidates": [],
+      "architectApproval": false
+    },
+    {
+      "order": 10,
+      "id": "10-land-and-strait-logistics-chrysopolis",
+      "dateSelected": "18 September 324 CE, conventional",
+      "geographyId": "chrysopolis",
+      "selectedClaim": "Constantine defeated Licinius in the final land battle near Chrysopolis/Üsküdar and became sole emperor after Licinius surrendered.",
+      "historicalReferences": [
+        {
+          "url": "https://www.tertullian.org/fathers/zosimus02_book2.htm",
+          "locator": "Zosimus, New History II.25–28; II.26 gives final engagement, II.28 gives Licinius's surrender (section numbers corroborated by Livius transcription)",
+          "classification": "primary ancient narrative, early sixth century, hostile/late perspective",
+          "coverageActuallyRead": "Fetched and read the complete relevant passage in the 1814 English translation around printed pp.49–50, including the move to Chalcedon, crossing to the Sacred Promontory, engagement, retreat to Nicomedia and Licinius's surrender. The battle's translation passages are mapped to II.25–26 and surrender to II.28 using Livius's explicitly numbered source pages.",
+          "passagesRead": "Zosimus says Licinius left besieged Byzantium for Chalcedon; Constantine crossed toward Bithynia and landed at the Sacred Promontory at the entrance to the Pontus, described as 200 stadia from Chalcedon; the engagement was 'between Chalcedon and the Sacred Promontory.' Licinius retreated to Nicomedia and later surrendered there. Zosimus II.28 says he handed Constantine the purple robe and asked pardon; Zosimus then accuses Constantine of violating an oath and executing him.",
+          "supports": "A final land engagement in the broader Chalcedon-to-Sacred-Promontory region, followed by Licinius's surrender at Nicomedia, in Zosimus's account.",
+          "doesNotEstablish": "This text does not name the engagement 'Battle of Chrysopolis' or identify the town of Chrysopolis as the precise battle site. It gives no exact date of 18 September and no reliable troop/casualty count. It does not prove a strait-crossing landing at the exact archaeological harbor in Üsküdar.",
+          "limitsAndBias": "Zosimus is a late, anti-Constantinian source. His figures (e.g., 130,000 with only 30,000 escaping) are implausibly precise and not verified here; his claim that Constantine broke an oath is a hostile moral judgment requiring attribution and corroboration. His geographical description is a corridor/sequence, not survey coordinates."
+        },
+        {
+          "url": "https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.26/",
+          "locator": "Zosimus II.26.1–3, translation of the final battle passage",
+          "classification": "modern presentation of primary source",
+          "coverageActuallyRead": "Read the complete numbered passage on the open page: Constantine sails to the Sacred Promontory at the entrance to Pontus, 200 stadia from Chalcedon; battle is located 'between Chalcedon and the Sacred Promontory'; report of victory; Licinius goes to Nicomedia.",
+          "supports": "Confirms exact wording and the broad regional locus; directly highlights that the passage does not itself identify Chrysopolis as the site.",
+          "limits": "Not independent from Zosimus; Livius notes this is an anonymous 1814 translation and supplies editor Jona Lendering's notes."
+        },
+        {
+          "url": "https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.28/",
+          "locator": "Zosimus II.28.1–2",
+          "classification": "modern presentation of primary source",
+          "coverageActuallyRead": "Read complete numbered passage. It says Licinius, besieged at Nicomedia, submitted, gave Constantine his purple robe and asked pardon; then gives Zosimus's account of his death.",
+          "supports": "Zosimus narrates the surrender at Nicomedia and subsequent execution, not a surrender on the battlefield at Chrysopolis.",
+          "limits": "The accusation of perjury is Zosimus's moral framing and needs to remain attributed."
+        },
+        {
+          "url": "https://www.livius.org/articles/place/constantinople-istanbul/constantines-city/",
+          "locator": "Livius, 'Constantine's City', paragraph on 18 September 324",
+          "classification": "modern historical synthesis",
+          "coverageActuallyRead": "Read search-exposed paragraph, which gives the conventional 18 September date and locates the battle near Chrysopolis, east of the Bosphorus opposite Byzantium.",
+          "supports": "Documents the modern conventional date/name/location summary used by this episode.",
+          "limits": "Secondary overview, not ancient testimony. It does not resolve the broader/differently worded geographic corridor in Zosimus."
+        }
+      ],
+      "geography": [
+        {
+          "url": "https://www.uskudar.bel.tr/en/main/pages/history-of-uskudar/313",
+          "locator": "Üsküdar Municipality, 'History of Üsküdar', section 'Chrysopolis'",
+          "coverageActuallyRead": "Read municipal history text stating Üsküdar's ancient name Chrysopolis, its position on the opposite shore from Byzantium and its connection to Bosporus currents; page also associates Constantine/Licinius's 324 final battle with Chrysopolis.",
+          "supports": "Modern municipal identification of ancient Chrysopolis with Üsküdar and broad Bosphorus relation.",
+          "limits": "The municipal history is a modern overview, not an archaeological location report or independent confirmation of exact battle footprint. Its battle claim reflects received historiography, unlike Zosimus's more expansive 'between Chalcedon and Sacred Promontory' wording."
+        },
+        {
+          "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf",
+          "locator": "Klaus Belke, 'Gates to Asia Minor: The Harbours Opposite Constantinople', section 'Chrysopolis', pp.227 onward (PDF pp.12–14; relevant lines 523–545)",
+          "classification": "scholarly archaeological/topographic chapter, in a collected volume",
+          "coverageActuallyRead": "Read the Chrysopolis section. It says the former harbor lies beneath an alluvial plain in central Üsküdar; two streams (Bülbül Deresi and Çavuş Deresi) fed the bay and alluvial deposits silted it; a Roman-era breakwater/pier and seawalls mark the harbor's northern edge near present Mihrimah Camii; wooden jetties c.100 m south are assigned to Roman imperial period. Later Byzantine remains and proposed palace/monastery identification are explicitly later and contested.",
+          "supports": "Broad paleogeography and evidence for Roman imperial harbor infrastructure at central Üsküdar; helps avoid treating the modern quay/bay shape as ancient.",
+          "limits": "Not a fourth-century battle-site identification. The harbor reconstruction is based on limited rescue excavation/geological survey and some identifications remain debated; do not equate its harbor footprint with battlefield or ancient landing. The chapter's pages span Hellenistic/Roman and much later Byzantine evidence; separate phases carefully."
+        }
+      ],
+      "dateAndPlaceCautions": [
+        "The date 18 September is conventional in modern accounts; Zosimus II.25–28 does not state the date. Modern reference/calendar sources are needed for any exact day, and it should remain qualified.",
+        "The ID 'chrysopolis' is common modern labeling, but Zosimus's II.26 engagement locator says 'between Chalcedon and the Sacred Promontory' and does not name Chrysopolis. This is an unresolved mismatch between the selection's precise place label and its cited ancient narrative, not proof the battle occurred at a different exact spot.",
+        "The location 'Sacred Promontory at the entrance to Pontus, 200 stadia from Chalcedon' is itself ancient wording; do not convert it to a modern cape/point without a source that securely identifies it.",
+        "Üsküdar's modern Bosphorus shore, present bridge/piers, and excavated Roman-period harbor works do not establish an exact 324 landing or combat position."
+      ],
+      "imageCandidates": [],
+      "architectApproval": false
+    }
+  ],
+  "sourcesConsulted": [
+    {"url":"https://www.newadvent.org/fathers/25022.htm","title":"Eusebius, Life of Constantine, Book II","scope":"Complete chapters II.61–73 read in Richardson/NPNF English translation."},
+    {"url":"https://sophiascriptura.com/fathers/eusebius-vita-constantini/2-28-1/","title":"Eusebius Vita Constantini, aligned with Heikel GCS 7","scope":"II.61.2–4 and II.64.1 passages and date note consulted; not full Greek critical collation."},
+    {"url":"https://www.tertullian.org/fathers/zosimus02_book2.htm","title":"Zosimus, New History, Book II","scope":"Relevant campaign narrative around printed pp.47–50 read directly in 1814 anonymous English translation."},
+    {"url":"https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.22/","title":"Zosimus II.22, Livius transcription","scope":"Search result exposed locators/text for 2.22.3–4; full page timed out. Direct passage read at Tertullian above."},
+    {"url":"https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.25/","title":"Zosimus II.25, Livius transcription","scope":"Full opened page, lines 11–14, transition from Byzantine siege to Chalcedon."},
+    {"url":"https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.26/","title":"Zosimus II.26, Livius transcription","scope":"Full numbered battle passage read."},
+    {"url":"https://www.livius.org/sources/content/zosimus/zosimus-new-history-2/zosimus-new-history-2.28/","title":"Zosimus II.28, Livius transcription","scope":"Full surrender passage read."},
+    {"url":"https://roman-emperors.sites.luc.edu/licinius.htm","title":"De Imperatoribus Romanis, Licinius","scope":"Modern reference paragraph on conventional dates/sequence read."},
+    {"url":"https://dergipark.org.tr/en/pub/tubaar/article/925502","title":"Şahin Yıldırım, Hadrianopolis: A Citadel in Thrace","scope":"English and Turkish abstracts only; not full article."},
+    {"url":"https://www.edirneozelidare.gov.tr/cografi-yapi-02-03-2013","title":"Edirne Provincial Special Administration, Geographical Structure","scope":"Modern geography summary read."},
+    {"url":"https://www.uskudar.bel.tr/en/main/pages/history-of-uskudar/313","title":"Üsküdar Municipality, History of Üsküdar","scope":"Chrysopolis section read; modern municipal overview."},
+    {"url":"https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Bosphorus-BlackSea/Chalcedon-Belke2021.pdf","title":"Klaus Belke, Gates to Asia Minor: The Harbours Opposite Constantinople","scope":"Chrysopolis section read; scholarly topographic synthesis."},
+    {"url":"https://www.cealex.org/promotion-and-dissemination/exhibitions/the-harbours-of-alexandria/harbours-antiquity/","title":"Centre d'Études Alexandrines, Ancient Harbours of Alexandria","scope":"Page text on lake port, canals, Heptastadion and plan read; site reports reconstructions and uncertainty."}
+  ],
+  "overallCautions": [
+    "No source supports exact battle footprints, individual crossing points, modern GPS positions, or an exact fourth-century harbor landing.",
+    "For dates 3 July and 18 September 324, retain 'conventional' and cite a chronological secondary authority; the specific Zosimus passages do not give these dates.",
+    "Do not merge Adrianople, the Hellespont naval action, and the final Bithynian/Bosphorus-area land engagement into one battle. Zosimus narrates these in sequence as distinct episodes.",
+    "All historical assessment and architectural approval remain with the parent architect; this audit only reports source access, supports, and limits."
+  ],
+  "architectApproval": false
+}
