@@ -567,7 +567,17 @@
       "next-episode"
     ],
     "nextEpisode": "02-civilian-refuge-jerusalem",
-    "campaignComplete": false
+    "campaignComplete": false,
+    "speakerLabels": {
+      "collection-narrator": {
+        "en": "Chronicle",
+        "es-ES": "Crónica"
+      },
+      "miriam-archive": {
+        "en": "Miriam of Caesarea",
+        "es-ES": "Miriam de Cesarea"
+      }
+    }
   },
   "historicalSources": [
     {
@@ -646,5 +656,5 @@
     "scope": "independent read-only opening source/binding inspection; revisions incorporated; not formal slice approval or a whole-campaign historical approval",
     "date": "2026-10-26"
   },
-  "nativeReadiness": "implementation and native round-trip in progress; no played mission claim"
+  "nativeReadiness": "native prototype implementation and first es-ES/standard binary round-trip completed in architect unit; code review, full variants and actual gameplay pending"
 }
