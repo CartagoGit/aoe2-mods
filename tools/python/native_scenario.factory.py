@@ -4,8 +4,9 @@ Extrae del exportador legado la parte ya implementada del escenario nativo para
 que un llamador futuro reutilice la misma base. Solo construye la envoltura
 base: objetivos, fases, reacciones, texto de disparadores, progreso, XS y
 escritura final siguen en el exportador legado. La base admite únicamente una
-envoltura schemaVersion 1 sin perfil de capacidad; una envoltura compuesta o
-desconocida se rechaza en lugar de degradarse a v1.
+envoltura schemaVersion 1; la presencia de cualquier metadato de capacidad
+(capability, scenario.capability o scenario.capabilityProfile) se rechaza aunque
+esté vacío o nulo, y una envoltura compuesta o desconocida no se degrada a v1.
 """
 import os
 import sys
@@ -37,8 +38,9 @@ def _reject_unknown_envelope(ir):
     spec = ir.get('scenario')
     if not isinstance(spec, dict):
         raise ValueError('native-base-unsupported: la envoltura nativa exige un escenario declarado')
-    if ir.get('capability') or spec.get('capability') or spec.get('capabilityProfile'):
-        raise ValueError('native-base-unsupported: la base nativa no admite perfiles de capacidad compuestos')
+    for owner, name in ((ir, 'capability'), (spec, 'capability'), (spec, 'capabilityProfile')):
+        if name in owner:
+            raise ValueError(f'native-base-unsupported: la base nativa no admite el metadato de capacidad "{name}"')
 
 
 def create_native_scenario_base(ir, version):
