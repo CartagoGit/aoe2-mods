@@ -94,8 +94,30 @@ class NativeResourceTransactionTests(unittest.TestCase):
         for flags in ({True: 1}, {1.0: 1}, {1: True}, {1: 1.0}, {65_536: 1}):
             with self.subTest(flags=flags), self.assertRaises((TypeError, ValueError)):
                 HELPER.render_payment_function("cdf_pay", 1, {}, 0, flags)
+        for expected in (-(2**31) - 1, 2**31):
+            with self.subTest(flag_value=expected), self.assertRaises(ValueError):
+                HELPER.render_payment_function("cdf_pay", 1, {}, 0, {1: expected})
+        self.assertIn("xsTriggerVariable(1) != -2147483648",
+                      HELPER.render_payment_function("cdf_min_flag", 1, {}, 0, {1: -(2**31)}))
+        self.assertIn("xsTriggerVariable(1) != 2147483647",
+                      HELPER.render_payment_function("cdf_max_flag", 1, {}, 0, {1: 2**31 - 1}))
         with self.assertRaises(ValueError):
             HELPER.render_payment_function("cdf_pay", 1, {"woodland": 2}, 0)
+
+    def test_flag_defaults_are_none_and_normalize_without_mutating_inputs(self):
+        import inspect
+
+        self.assertIsNone(inspect.signature(HELPER.render_payment_function)
+                          .parameters["required_flags"].default)
+        self.assertIsNone(inspect.signature(HELPER.render_reward_function)
+                          .parameters["required_flags"].default)
+        flags = {11: 1}
+        HELPER.render_payment_function("cdf_no_default_mutation", 1, {}, 10, flags)
+        HELPER.render_reward_function("cdf_no_default_mutation_reward", 1, {"food": 0},
+                                      {"food": 12}, 13, flags)
+        self.assertEqual(flags, {11: 1})
+        self.assertNotIn("xsTriggerVariable(11)",
+                         HELPER.render_payment_function("cdf_empty_default", 1, {}, 10))
 
     def test_rejects_aliases_between_state_variables_and_flags(self):
         invalid_calls = [
