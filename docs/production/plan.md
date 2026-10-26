@@ -68,3 +68,11 @@ La primera [comparación de progreso](../qa/campaign-design/interaction-progress
 
 
 La aclaración posterior del propietario mantiene los mods independientes de la tienda: Steam identifica su primer entorno de prueba, no una dependencia de distribución. El código de compilación/exportación no contiene llamadas o rutas Steam; el único enlace de Steam en config corresponde a la consulta de idiomas. Los formatos son AoE2:DE y la compatibilidad de cada instalación/build requiere pruebas propias; no se acredita consola, otra edición o Return of Rome por esa independencia. El [siguiente diagnóstico grande](../handoffs/LARGE-MAP-DIAGNOSTIC-PACKET.md) es un paquete parcial no asignado de i00003/S2, sin geografía histórica ni cierre de transporte/motor.
+
+
+## Reanudación contrastada con la sesión separada de MiniMax
+
+El servidor confirma i00008/i00009/i00010 cerradas. i00009/S3 está aprobado por MiniMax contra producto 34f87ce y publicado en 7cbac2b; root no repite ni se atribuye ese veredicto. El trabajo integrado de mapas a7f8dcd y Jerusalén 4a0bdab es parcial: no cierra i00003/S2 ni d00002/S4. El diagnóstico de 400 × 400 ya se ha exportado mediante el adaptador real y su binario se ha inspeccionado, con 158 pruebas / 2138 aserciones pasando y export 3 variantes / 2 round-trips. Carga/orientación/movimiento y performance siguen sin verificarse en AoE2. El [packet de presencia](../handoffs/MINIMAX-M3.1-PRESENCE.md) deja preparada la futura promoción de Milán 350, todavía bloqueada por la infraestructura nativa.
+
+
+La ejecución de 400 × 400 posterior incorpora inspección nativa reproducible y recibos enlazados por SHA, con regresiones de fallo de exportación/ZIP. La revisión técnica acotada de MiniMax confirmó las correcciones; no constituye aprobación de todo i00003/S2. Los artefactos privados r2 conservan escenarios originales, catálogos, comandos, logs y revisión, con juego verificado falso.

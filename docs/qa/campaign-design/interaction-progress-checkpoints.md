@@ -34,3 +34,10 @@ One reconstructed interval is insufficient for an average or ETA. Do not convert
 - Cut snapshot: [`README.md` at `d6acfed`](https://github.com/CartagoGit/aoe2-mods/blob/d6acfed489e332a614d4a2731e450c53e619c65b/README.md#L34-L36), [`production plan`](../../production/plan.md), and [`design assignments`](../../handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md).
 - Export scope: [`f00001/S3 independent report`](../route-pilot/s3-joint-promotion-independent-review.md) and [`quality gates`](../../handoffs/MINIMAX-M3.1-QUALITY-GATES.md).
 - Current documentary counters: [`README.md`](../../../README.md), [`production plan`](../../production/plan.md), and [`design assignments`](../../handoffs/MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md).
+
+
+## Observation 002 — recovered previous interaction including MiniMax
+
+The independently inspected interval is 188c2f9→dbee40d. Full design counts stayed 64/214/2645/398/49, so this interval adds zero complete dossiers, zero counted screens/secondaries and zero registered local references. It delivered the pooled-original factory feature/review, the reward guide/review, a partial 300/400 diagnostic implementation, 20 bilingual Jerusalem entries with a prospective 45-surface mapping, proposal closures and path/hygiene repairs. The supplied MiniMax transcript explains its separate work; Git/DelendAI establish what actually integrated. No root review verdict is claimed for i00009/S3, which MiniMax independently approved.
+
+The actual 400 binary export happened after dbee40d and belongs to the next cut; it must not be credited retroactively. MiniMax now has one observed code implementation, not zero, but no average historical-scenario production rate. This infrastructure-heavy interval is not interchangeable with the earlier 63→64 dossier interval. There are still insufficient comparable intervals for an honest interaction forecast, and no measured model quota. Actual AoE2 verification remains zero.

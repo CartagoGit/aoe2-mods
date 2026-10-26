@@ -66,3 +66,12 @@ Orden de paquetes de proyección: i00009/S1 aprobado → i00009/S2 materializaci
 El [registro por interacción](../qa/campaign-design/interaction-progress-checkpoints.md) mantiene cortes y deltas verificables. La primera comparación suma1 dossier/51 pantallas/7 secundarios/2 recursos; no permite estimar horas, cuota o interacciones restantes. Los64 dossiers siguen siendo borradores y los278 episodios forman un pool compartido entre implementadores, no una asignación duplicada para cada modelo.
 
 f00001/S4 quedó aceptado2/2 (producto 9eac67e5, veredicto 9047d995) como dossier de pruebas, con motor pendiente. i00009/S2 quedó aceptado3/3 en0cf4d064/9f4be255. La próxima implementación que puede designarse es i00010/S2 tras integrar su aclaración de Files/puente artificial; i00009/S3 queda como tarea documental separada. Windows/Steam/español es la plataforma de prueba declarada por el propietario; la build y todas las observaciones siguen pendientes.
+
+
+## Reanudación verificada
+
+Desde 188c2f9 hasta dbee40d se integraron la implementación pooled y su revisión (d86c5613/afa036fc), la guía de recompensas y su revisión (34f87ce/7cbac2b), el diagnóstico grande parcial (a7f8dcd), y las decisiones parciales de Jerusalén (4a0bdab). i00008/i00009/i00010 están done globalmente. Los contadores históricos no cambian: 64 dossiers, 214 pendientes, 2645 pantallas, 398 secundarios, 49 referencias; juego verificado 0.
+
+El siguiente paquete documental disponible es [presencia](MINIMAX-M3.1-PRESENCE.md), todavía bloqueado para ejecución. El diagnóstico 400 sí tiene una ruta existente de exportación reutilizable y root ya produjo un primer kit privado; el estado de publicación de sus nuevos recibos se recupera de DelendAI. No anunciar un nuevo escenario histórico por ello.
+
+Cada trabajador usa exclusivamente su propia identidad, sesión y unidad oficial. No actuar dentro de una unidad ajena ni publicar usando `--agent` de otro modelo para rescatar trabajo durante una interrupción. Consultar el servidor y conservar el trabajo; las limpiezas permitidas del runtime no convierten el contenido parcial en aceptación completa. Antes de publicar, preservar kit y logs fuera de una worktree que el runtime puede retirar.

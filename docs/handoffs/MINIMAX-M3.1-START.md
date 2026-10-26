@@ -73,3 +73,6 @@ Esta actualización no cierra ningún slice distinto de S1.
 
 
 Corte26 de octubre: i00009/S2 de proyección de recompensas está aprobado e integrado en producto0cf4d064/veredicto 9f4be255; i00010/S1 está aprobado y su [paquete S2](POOLED-SURVIVOR-PROJECTION-PACKET.md) incorpora el puente de referencia artificial TypeScript. El [kit Windows/Steam/español](PRIVATE-PILOTS-WINDOWS-STEAM-ES.md) acompaña al laboratorio técnico revisado; no acredita historia ni motor. El arquitecto sigue preparando episodios mientras un implementador trabaja exclusivamente en su slice designado.
+
+
+Reanudación del 26 de octubre: la sesión separada de MiniMax cerró i00008/i00009/i00010 y revisó i00009/S3. Reanudar desde el estado vivo, no repetir esos cierres ni tomar unidades ajenas como propias. Existe ahora [el paquete de presencia](MINIMAX-M3.1-PRESENCE.md), con dependencias nativas explícitas y sin asignación activa. El diagnóstico artificial grande y el texto parcial de Jerusalén están integrados; no son campañas terminadas. Usa el [registro por interacción](../qa/campaign-design/interaction-progress-checkpoints.md) para separar progreso de infraestructura y nuevos dossiers.

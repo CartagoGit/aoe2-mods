@@ -70,3 +70,10 @@ Esta actualización no cierra ningún slice distinto de S1.
 
 
 El corte26 de octubre añade i00009/S2 aceptado e integrado (0cf4d064/9f4be255) y i00010/S1 aprobado (f4a2599). El próximo paquete de código designable es i00010/S2 conforme al [packet actualizado](POOLED-SURVIVOR-PROJECTION-PACKET.md), que incluye un fixture TypeScript artificial dentro de su Files. Recuperar esa lista integrada antes de reclamar. i00009/S3 de guía/evidencia sigue separado y no aprueba historia. No confundir la consulta MiniMax de sólo lectura con implementación; los64 dossiers permanecen en borrador.
+
+
+## Estado recuperado desde la conversación externa — 26 de octubre
+
+i00008/i00009/i00010 están cerradas en DelendAI y sus productos/revisiones se conservan. No volver a reclamar sus S1 ni repetir la revisión de i00009/S3 (MiniMax, producto 34f87ce, revisión 7cbac2b). i00003/S2 sigue pending: a7f8dcd integra solo el diagnóstico artificial 300/400, no toda la aceptación de terreno/transporte; root está acreditando su exportación de 400 × 400. d00002/S4 también sigue pending: 4a0bdab integra decisiones y texto parcial de Jerusalén, no el dossier 65.
+
+La ausencia de [MINIMAX-M3.1-PRESENCE.md](MINIMAX-M3.1-PRESENCE.md) queda resuelta documentalmente. Es un paquete de preparación de i00005/S3, no una asignación activa: S2 y i00003/S3 siguen bloqueando la ejecución nativa. Root debe entregar operaciones reales y sus gates antes de asignarlo. La producción histórica f00003–f00011 conserva sus bloqueos; MiniMax no debe inventar el siguiente contenido para mantener actividad.

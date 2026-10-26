@@ -11,3 +11,10 @@ Root subsequently ran the official `work reap` dry run. It specifically classifi
 For future entries, retain the official result immediately and use the worker's own stable session. Review actions should use the explicit own checkout through the capability resolver: the CLI `review approve` wrapper selected `review/batch-all-g2/verdicts` during i00010/S1 despite an own review checkout, leading to a refusal against the worker's own claim. The explicit official MCP `proposal_review` with the correct checkout succeeded; the resulting independent verdict was published in `f4a2599b3ed6c1055d41c73de690c375ae7b752a`. This is an observed invocation correction, not authority to take a genuinely different unit.
 
 No proposal is marked done by this note. No user Git authorship, source identity, public contract or historical permission changes. All cleanup results and rejected operations remain in the runtime's logs; this document records the bounded outcome and distinguishes it from a general infrastructure fix.
+
+
+## Recovery after the separate MiniMax session
+
+The owner supplied the separate session transcript at the next interaction. Root checked the resulting integration head dbee40d, the actual source diff and live proposal review status before continuing. i00009/S3 is already approved by MiniMax on the Luna delivery; the old root review unit has no formal verdict to publish. Do not recreate or duplicate that completed review. The sparse map and Jerusalem partial documents are already integrated; their full slices remain pending.
+
+The transcript also records commands that pass another model’s identity or act from its worktree. They are not instructions to repeat that approach. Future workers must use their own identity/session/unit, and preserve unmerged work through the served recovery/retirement workflow. An interruption or a green gate does not authorize impersonating an absent model. No past Git authorship or integration history is rewritten by this note.

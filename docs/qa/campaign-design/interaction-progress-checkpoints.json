@@ -64,7 +64,10 @@
       }
     ],
     "pilotEvidenceAtCut": {
-      "f00001SourceExportedPilotCampaigns": ["route-pilot", "route-successor"],
+      "f00001SourceExportedPilotCampaigns": [
+        "route-pilot",
+        "route-successor"
+      ],
       "gameVerifiedCount": 0,
       "evidenceReference": "docs/qa/route-pilot/s3-joint-promotion-independent-review.md",
       "scope": "Historical source/export review records fixture exports; it does not show a successful AoE2 gameplay test."
@@ -106,5 +109,85 @@
     "documentedCutCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
     "worktreeBaseAtPreparation": "6e3bbf51e05337dc054750bffed00f456805bc68",
     "worktreeBaseNote": "The isolated worktree began after the specified d6acfed cut. Metrics above are pinned to the requested d6acfed snapshot; no later worktree changes are included."
-  }
+  },
+  "additionalObservations": [
+    {
+      "id": "observation-002",
+      "statement": "completed interval from the previous recovered turn-start commit to the new user attachment; includes separately executed MiniMax work, not solely root output",
+      "fromCommit": "188c2f9e182d8ea8b113eedd923178cfb2227af7",
+      "toCommit": "dbee40d02be6713388c4d5451d366d07adef0607",
+      "baseline": {
+        "source": "README.md at188c2f9e182d8ea8b113eedd923178cfb2227af7, confirmed design counts; tools/design/verify.py at the closing cut",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "cut": {
+        "source": "README.md and design catalogue atdbee40d02be6713388c4d5451d366d07adef0607; integration history independently inspected",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "delta": {
+        "selectionCount": 0,
+        "designDossierCount": 0,
+        "selectionsWithoutDossier": 0,
+        "bilingualScreenCount": 0,
+        "secondaryObjectiveCount": 0,
+        "localResearchResourceCount": 0,
+        "geographicProfileCount": 0,
+        "unresolvedGeographicIdentities": 0,
+        "selectionsAffectedByUnresolvedGeography": 0
+      },
+      "deliveredChanges": [
+        {
+          "item": "i00010/S2 pooled originals projection",
+          "product": "d86c561303916d658394b560030875fa045991b6",
+          "independentVerdict": "afa036fce11101273815ffc68db0d9241ac2aaf4",
+          "scope": "design factory and artificial real-reducer bridge; no native/game/history support"
+        },
+        {
+          "item": "i00009/S3 authoring documentation",
+          "product": "34f87ceca32d34afa20dd79483cda033cfa3d0b9",
+          "independentVerdict": "7cbac2b",
+          "scope": "documentation only; independent MiniMax review, not a root review verdict"
+        },
+        {
+          "item": "partial i00003/S2 sparse large-map diagnostic implementation",
+          "product": "a7f8dcd5fd3091868eeab73b0aad2206d419a85d",
+          "scope": "300/400 pure transform and orchestration; actual native400 execution occurred after this cut and is excluded here"
+        },
+        {
+          "item": "Jerusalem bilingual core script and pressure/funding decisions",
+          "product": "4a0bdab33edd8f544eff6823ac19c15b89b3f48c",
+          "scope": "20 bilingual authored entries,45 prospective generated surfaces; no new complete dossier or counted catalogue screens"
+        },
+        {
+          "item": "i00008/i00009/i00010 whole-proposal closures and d00002/S1 path repair",
+          "scope": "official operational changes observed in supplied MiniMax transcript and main integration history; not additional feature implementations"
+        }
+      ],
+      "actualGameVerificationCount": 0,
+      "miniMaxObservedCodeImplementationSamples": 1,
+      "intervalComparableForHistoricalDossierThroughput": false,
+      "throughputCaveat": "This interval concentrated on infrastructure and operational closure, unlike the earlier historical-dossier interval. Do not average their work as interchangeable scenario-authoring samples. No message timestamps, per-model quota or end-to-end production estimate is inferred.",
+      "unintegratedOrLaterWorkExcluded": [
+        "actual400native export/inspection after dbee40d",
+        "new presence handoff preparation",
+        "any WIP beyond the explicit closing cut"
+      ]
+    }
+  ]
 }
