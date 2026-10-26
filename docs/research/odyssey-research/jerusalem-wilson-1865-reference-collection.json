@@ -6,7 +6,7 @@
   "episodeId": "01-a-city-of-names",
   "assetId": "jerusalem-wilson-1865-map-preview",
   "title": "Ordnance Survey of Jerusalem",
-  "creator": "Charles W. Wilson and Ordnance Survey, under Henry James",
+  "creator": "Charles Wilson (author as listed by Commons)",
   "surveyDates": "1864–1865",
   "publicationYear": 1865,
   "sourcePage": "https://commons.wikimedia.org/wiki/File:1865_Ordnance_Survey_of_Jerusalem_Old_City_full_map.jpg",
@@ -18,7 +18,8 @@
     "sha256": "e36c3404672138e8db8252ac4255a899380f7187f30ae2abb8853870e71a3099",
     "contentType": "image/jpeg",
     "etag": "b83ae9b12e61830a26d42cb6ce610cbd",
-    "lastModified": "Mon, 19 Oct 2026 03:45:30 GMT"
+    "lastModified": "Mon, 19 Oct 2026 03:45:30 GMT",
+    "headerEvidence": "HTTP response fields captured by root during this download; not independently refetched by the reviewer."
   },
   "localPath": "docs/research/odyssey-research/images/jerusalem-wilson-1865-map-preview.jpg",
   "dimensionsPixels": [
@@ -41,7 +42,7 @@
     "productionApproved": false
   },
   "visualInspection": {
-    "method": "root viewed the downloaded file; delivered view was resized to 1312×1911, so no fine measurements, parcel tracing or small-label transcription is claimed",
+    "method": "Root viewed the downloaded file; the image-view tool reported a 1312×1911 delivered view. That tool observation was not independently reproduced; no fine measurements, parcel tracing or small-label transcription is claimed.",
     "observations": [
       "Broad urban footprint, surrounding slopes and valley contours appear together in the nineteenth-century survey.",
       "The platform labelled Haram/Moriah and the eastern valley context are visually separable; drawn contours are not navigable water.",
@@ -74,5 +75,12 @@
     "selectionsAffectedStill": 25
   },
   "gameVerified": false,
-  "historicalMapApproved": false
+  "historicalMapApproved": false,
+  "printedTitleAttribution": {
+    "publisher": "Ordnance Survey",
+    "direction": "Henry James",
+    "basis": "Root visual reading of the downloaded map title; additional credits were not independently verified by the metadata reviewer."
+  },
+  "surveyDateBasis": "Printed map title 1864–5 read by root; Commons metadata supplies publication year 1865.",
+  "projectBindingBasis": "Architect assignment checked against docs/design/odysseys/jewish-tradition.json episodeSelection; not asserted as Commons metadata."
 }

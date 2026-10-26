@@ -52,3 +52,6 @@ Root inspected the report’s linked [Figure 1](https://hadashot.iaa.org.il/Imag
 
 
 A [downloaded 1865 survey preview](../../../research/odyssey-research/images/jerusalem-wilson-1865-map-preview.jpg) and [collection/rights record](../../../research/odyssey-research/jerusalem-wilson-1865-reference-collection.json) now supply dated visual context. Root inspected the image, not a registered georeferenced layer. The broad western/eastern slopes and valleys are comparison material; the survey’s buildings, walls and routes are not certified 70 CE geometry. Do not trace them as all ten proposed corridors or infer a safe exit. No proposed hub, bbox, objective, campaign identity or native terrain is changed by the download. The manifest now has 50 registered reference records; geography coverage remains 26 profiles with 22 missing identities for 25 selections.
+
+
+The [research wiki page](../../../wiki/jewish-tradition/research/jerusalem-topography-reference.md) keeps these three dated evidence layers and the remaining terrain questions together for future authors.
