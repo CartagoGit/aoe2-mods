@@ -14,6 +14,7 @@ from verify import ROOT, verify
 from test_civic_difficulty_audit import CivicDifficultyAuditTests
 from test_research_crosswalk import ResearchCrosswalkTests
 from test_authored_secondary_rewards import AuthoredSecondaryRewardTests
+from test_pooled_survivor_projection import PooledSurvivorProjectionTests
 
 
 class FulfillmentBridgeAcceptanceTests(unittest.TestCase):
