@@ -2,7 +2,7 @@
 id: i00009
 title: "Authored secondary rewards through existing finite-account contracts"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-25
@@ -10,6 +10,10 @@ shipped-in:
   - "2bd271486fba1b19376ff942a529fd6bb752db56"
   - "0cf4d064beddbd736de942c0510de0ffabeb753b"
   - "34f87ceca32d34afa20dd79483cda033cfa3d0b9"
+last-transition-id: 88a19548-589c-4574-89d1-2ef6f6e88b12
+last-correlation-id: 88a19548-589c-4574-89d1-2ef6f6e88b12
+last-transition-from: ready
+last-transition-at: 2026-10-26T03:18:34.119Z
 ---
 
 # i00009 — Authored secondary rewards through existing finite-account contracts
