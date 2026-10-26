@@ -76,3 +76,6 @@ El servidor confirma i00008/i00009/i00010 cerradas. i00009/S3 está aprobado por
 
 
 La ejecución de 400 × 400 posterior incorpora inspección nativa reproducible y recibos enlazados por SHA, con regresiones de fallo de exportación/ZIP. La revisión técnica acotada de MiniMax confirmó las correcciones; no constituye aprobación de todo i00003/S2. Los artefactos privados r2 conservan escenarios originales, catálogos, comandos, logs y revisión, con juego verificado falso.
+
+
+Recopilación visual: se añade un preview del levantamiento de Jerusalén 1864–1865, con fuente, hash, derechos atribuidos y limitación cronológica explícita. El manifiesto suma 50 registros; el catálogo permanece en 64 dossiers / 214 pendientes / 2645 pantallas / 398 secundarios. No se convierten calles o edificios del siglo XIX en huellas del año 70.
