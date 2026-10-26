@@ -8,6 +8,7 @@ track: campaign-factory
 date: 2026-10-25
 shipped-in:
   - "2bd271486fba1b19376ff942a529fd6bb752db56"
+  - "0cf4d064beddbd736de942c0510de0ffabeb753b"
 ---
 
 # i00009 — Authored secondary rewards through existing finite-account contracts
@@ -44,7 +45,7 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
 - review-log: approved by gpt-6-luna — verified at 2bd271486fba, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet limit the field to aid/extract/repair/trade, reuse design_numbers.helper.py resource_amounts, preserve omitted defaults and fixed repai… (2) Decision gives exact EN/es-ES zero captions and invalid/misplaced cases, derives totals from actual effects and atomic-payment contracts, keeps finite reserved… — Independent review of i00009/S1 decision only at integrated product 2bd271486fba1b19376ff942a529fd6bb752db56. S2 implementation, native behavior, historical authoring, and S3 remain pending.
 
 ### S2 — Reusable optional reward projection and budget derivation
-- **Status**: pending
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `tools/design/secondary.py`, `tools/design/episode_dossier.factory.py`, `tools/design/test_authored_secondary_rewards.py`, `tools/design/test_design.py`
 - **Gate**: type
@@ -52,6 +53,10 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
   - "Implement only the accepted internal authoring projection, reuse shared numeric primitives and existing objective builder, reject malformed and unsupported overrides, and preserve existing optional costs, identities, once-only effects and main independence."
   - "Derive all secondary accounting from the generated existing contracts rather than duplicated global reward assumptions; exercise zero and positive overrides, pre-reward affordability, isolated finite reserve, reload/repeated-completion protection already supplied by the existing reference, and invalid type/resource inputs."
   - "Prove all64 current dossiers,2645screens,398secondaries,49reference records, public schemas, previous outputs and native failure behavior remain unchanged; run focused Python/design checks and bun run validate with an artificial fixture, no historical modification."
+- review-state: done
+- review-implementer: gpt-6-luna
+- review-reviewer: gpt-6
+- review-log: approved by gpt-6 — verified at 0cf4d064bedd, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed four-file implementation and follow-up5481: resource_amounts strict validation, override eligible kinds only, omission legacy and explicit zero captio… (2) Independent focused3tests pass; full factory fixture and independent audit, generated effects/payments sums, fixed50wood/50gold costs, cache-overflow rejection… (3) Independent dossier--check64 and verify64/2645/398/49 zeroerrors; validate157/157 with2136assertions and3campaigns, includes registered112Python design tests. … — Independent review of gpt-6-luna implementation including hardened vector/mutation tests. Actual root commands/logs /tmp/i00009-root-{focused,dossiers-check,verify,validate}.log pass. Three criteria conform; unchanged64/2645/398/49, strict validation and derived finite budgets. No native/historical/game approval. Prior close_slice validate-required attempt did not close the slice; official product gate and this peer verdict are distinct.
 
 ### S3 — Document supported commands and independent acceptance boundaries
 - **Status**: pending

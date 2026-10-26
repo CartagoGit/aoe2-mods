@@ -1,0 +1,385 @@
+{
+  "documentType": "architect documentary secondary decisions; not directly executable optionalTasks",
+  "author": "gpt-6",
+  "date": "2026-10-25",
+  "episodeId": "01-a-city-of-names",
+  "status": "seven specified designs; full canonical dossier, pressure/geometry/presentation and independent approval still pending",
+  "screenScope": "Goal/benefit text only; not a complete screen inventory or an increase to the398 counted secondaries",
+  "tasks": [
+    {
+      "id": "side-1",
+      "kind": "copy",
+      "title": {
+        "en": "A Second List",
+        "es-ES": "Una segunda lista"
+      },
+      "goal": {
+        "en": "Bring both separate invented household notes from the western record court to the copying table. These are optional notes, not the three main bundles.",
+        "es-ES": "Lleva las dos notas familiares ficticias distintas del patio occidental a la mesa de copias. Son notas opcionales, no los tres legajos principales."
+      },
+      "benefit": {
+        "en": "Unlock the source-qualified scenario context and a reminder of the six-of-eight main threshold; the notes are not an authentic census.",
+        "es-ES": "Desbloquea el contexto atribuido del escenario y un recordatorio del mínimo principal de seis de ocho; las notas no son un censo auténtico."
+      },
+      "planOriginHub": "western-record",
+      "planReceivingHub": "copy-desk",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-6",
+        "receivingHub": "hub-13"
+      },
+      "corridorIds": [
+        "west-to-central",
+        "southern-link"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 2,
+      "originalIds": [
+        "01-a-city-of-names.side-1.entity-1",
+        "01-a-city-of-names.side-1.entity-2"
+      ],
+      "resourceRewardDecision": "existing copy context effect; no resource reward",
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+    },
+    {
+      "id": "side-2",
+      "kind": "extract",
+      "title": {
+        "en": "A Door Left Open",
+        "es-ES": "Una puerta abierta"
+      },
+      "goal": {
+        "en": "Bring both distinct consenting neighboring groups alive to the same marked neighboring-household court in the temporary receiving district. They do not count among the eight main households.",
+        "es-ES": "Lleva con vida los dos grupos vecinos voluntarios distintos al mismo patio señalado para hogares vecinos del distrito receptor provisional. No cuentan entre los ocho hogares principales."
+      },
+      "benefit": {
+        "en": "Two additional fictional neighboring groups reach temporary shelter. This intrinsic local outcome gives no extra resources, healing, military unit or historical safe-conduct.",
+        "es-ES": "Dos grupos vecinos ficticios adicionales alcanzan un refugio provisional. Este resultado local propio no da recursos, curación, tropas ni un salvoconducto histórico."
+      },
+      "planOriginHub": "optional-neighbors",
+      "planReceivingHub": "temporary-refuge",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-14",
+        "receivingHub": "hub-12"
+      },
+      "corridorIds": [
+        "neighbors-return",
+        "central-main"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 2,
+      "originalIds": [
+        "01-a-city-of-names.side-2.entity-1",
+        "01-a-city-of-names.side-2.entity-2"
+      ],
+      "resourceRewardDecision": {
+        "intendedResourceReward": {},
+        "dependency": "i00009/S2 independently accepted before using resourceReward in an actual blueprint"
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh.",
+      "receivingDecision": {
+        "zoneCount": 1,
+        "bothOriginalsRequired": true,
+        "sameOptionalZone": true,
+        "candidateZoneOffsetTiles": [
+          8,
+          0
+        ],
+        "candidateRadiusTiles": 3,
+        "mainFinalZoneOffsetTiles": [
+          0,
+          0
+        ],
+        "mainFinalRadiusTiles": 3,
+        "separation": "Eight-tile centre separation gives two tiles between the nominal radius3 circles; full native footprints and access remain pending. The two optional originals share one optional receiving zone; neither enters the main original identity set."
+      }
+    },
+    {
+      "id": "side-3",
+      "kind": "guide",
+      "title": {
+        "en": "The Higher Turning",
+        "es-ES": "El recodo alto"
+      },
+      "goal": {
+        "en": "Escort the original local guide to the marked western turning. The western approach is already available and disclosed without this task.",
+        "es-ES": "Escolta al guía local original hasta el recodo occidental señalado. El acceso occidental ya está disponible y se indica aunque omitas esta tarea."
+      },
+      "benefit": {
+        "en": "Mark the existing western approach once; no gate opens, slope changes or road appears.",
+        "es-ES": "Señala una vez el acceso occidental ya disponible; no se abre una puerta, cambia una pendiente ni aparece un camino."
+      },
+      "planOriginHub": "muster",
+      "planReceivingHub": "western-turn",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-1",
+        "receivingHub": "hub-10"
+      },
+      "corridorIds": [
+        "western-main"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 1,
+      "originalIds": [
+        "01-a-city-of-names.side-3.entity-1"
+      ],
+      "informationDecision": {
+        "effectKind": "mark-alternative-route",
+        "corridorId": "western-main",
+        "target": "the existing western-main control chain; exact native terrain still pending"
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+    },
+    {
+      "id": "side-4",
+      "kind": "watch",
+      "title": {
+        "en": "What the Slope Conceals",
+        "es-ES": "Lo que oculta la ladera"
+      },
+      "goal": {
+        "en": "Visit both marked observation places at the eastern viewpoint and the central turning. The main destinations remain visible in the objectives from the start.",
+        "es-ES": "Visita ambos lugares de observación señalados en el mirador oriental y el recodo central. Los destinos principales se indican en los objetivos desde el comienzo."
+      },
+      "benefit": {
+        "en": "Mark the existing eastern approach and its return junction so the divided escort can be planned; reveal no unplaced army or guaranteed safe route.",
+        "es-ES": "Señala el acceso oriental ya disponible y su cruce de retorno para planear la escolta dividida; no revela un ejército sin colocar ni garantiza una ruta segura."
+      },
+      "planOriginHub": "eastern-lookout",
+      "planReceivingHub": "central-turn",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-16",
+        "receivingHub": "hub-9"
+      },
+      "corridorIds": [
+        "eastern-observation",
+        "eastern-main",
+        "central-main"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 0,
+      "observationPlanHubs": [
+        "eastern-lookout",
+        "central-turn"
+      ],
+      "observationAuthoringHubs": [
+        "hub-16",
+        "hub-9"
+      ],
+      "informationDecision": {
+        "effectKind": "mark-alternative-route",
+        "corridorId": "eastern-main",
+        "target": "existing eastern-main connection, not an enemy forecast"
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+    },
+    {
+      "id": "side-5",
+      "kind": "aid",
+      "title": {
+        "en": "A Bundle Kept Dry",
+        "es-ES": "Un fardo a salvo"
+      },
+      "goal": {
+        "en": "Deliver both original optional working bundles to their separate marked receiving places beside the neighboring households. They are ordinary supplies, not any main record.",
+        "es-ES": "Entrega los dos fardos de trabajo opcionales originales en sus lugares receptores separados junto a los hogares vecinos. Son suministros corrientes, no registros principales."
+      },
+      "benefit": {
+        "en": "The two invented aid consignments reach their own recipients. No resource bonus, healing, civilian replacement or claim of genuine ancient records is granted.",
+        "es-ES": "Las dos remesas ficticias de ayuda llegan a sus destinatarios. No se conceden recursos extra, curación, sustitutos civiles ni autenticidad de registros antiguos."
+      },
+      "planOriginHub": "eastern-households",
+      "planReceivingHub": "optional-neighbors",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-3",
+        "receivingHub": "hub-14"
+      },
+      "corridorIds": [
+        "eastern-main",
+        "neighbors-return"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 2,
+      "originalIds": [
+        "01-a-city-of-names.side-5.entity-1",
+        "01-a-city-of-names.side-5.entity-2"
+      ],
+      "resourceRewardDecision": {
+        "intendedResourceReward": {},
+        "dependency": "i00009/S2 independently accepted before using resourceReward in an actual blueprint"
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+    },
+    {
+      "id": "side-6",
+      "kind": "repair",
+      "title": {
+        "en": "A Place to Wait",
+        "es-ES": "Un lugar donde esperar"
+      },
+      "goal": {
+        "en": "Restore the marked damaged local store to full health for 50 wood. Completing the repair gives no extra resources.",
+        "es-ES": "Restaura por completo el almacén local dañado señalado por 50 de madera. Completar la reparación no concede recursos extra."
+      },
+      "benefit": {
+        "en": "The actual store object is restored. This does not repair the Temple, clear a road, heal people, create supplies or alter the historical destruction.",
+        "es-ES": "Se restaura el objeto real del almacén. Esto no repara el Templo, despeja un camino, cura personas, crea suministros ni altera la destrucción histórica."
+      },
+      "planOriginHub": "damaged-store",
+      "planReceivingHub": "damaged-store",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-17",
+        "receivingHub": "hub-17"
+      },
+      "corridorIds": [
+        "southern-link"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 1,
+      "originalIds": [
+        "01-a-city-of-names.side-6.entity-1"
+      ],
+      "initialHealthFraction": 0.5,
+      "cost": {
+        "wood": 50
+      },
+      "costDisposition": "existing fixed operation; no extra engine repair charge or configurable cost",
+      "resourceRewardDecision": {
+        "intendedResourceReward": {},
+        "dependency": "i00009/S2 independently accepted before using resourceReward in an actual blueprint"
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh."
+    },
+    {
+      "id": "side-7",
+      "kind": "scout",
+      "title": {
+        "en": "Names without an Answer",
+        "es-ES": "Nombres sin respuesta"
+      },
+      "goal": {
+        "en": "Read the two optional notes at the marked places beside the copying table and the damaged store.",
+        "es-ES": "Lee las dos notas opcionales en los lugares señalados junto a la mesa de copias y el almacén dañado."
+      },
+      "benefit": {
+        "en": "Unlock an attributed historical note and main-goal reminder. This is contextual reading, not scouting a new wave or authentic testimony by Judith.",
+        "es-ES": "Desbloquea una nota histórica atribuida y un recordatorio del objetivo principal. Es lectura contextual, no exploración de una nueva oleada ni testimonio auténtico de Judith."
+      },
+      "planOriginHub": "copy-desk",
+      "planReceivingHub": "damaged-store",
+      "candidateAuthoringPlacement": {
+        "originHub": "hub-13",
+        "receivingHub": "hub-17"
+      },
+      "corridorIds": [
+        "southern-link"
+      ],
+      "mainDependency": false,
+      "changesHistoricalOutcome": false,
+      "status": "architect documentary specification; no historical authoring approval or native implementation",
+      "originalCount": 0,
+      "observationPlanHubs": [
+        "copy-desk",
+        "damaged-store"
+      ],
+      "observationAuthoringHubs": [
+        "hub-13",
+        "hub-17"
+      ],
+      "informationDecision": {
+        "effectKind": "unlock-context-and-hint",
+        "sourcePolicy": "the exact consulted source/fiction qualifications in the full dossier; no invented quotation",
+        "historicalNote": {
+          "en": "Josephus is an attributed narrative of the destruction. These household lists and their gaps are invented; the player does not recover an authenticated ancient register.",
+          "es-ES": "Josefo es un relato atribuido de la destrucción. Estas listas familiares y sus huecos son ficticios; el jugador no recupera un registro antiguo autenticado."
+        },
+        "hint": {
+          "en": "Finish with at least six original households and all three original bearers alive in the temporary receiving court.",
+          "es-ES": "Termina con al menos seis hogares originales y los tres portadores originales vivos en el patio receptor provisional."
+        }
+      },
+      "placementPolicy": "Use the candidateAuthoringHubId mapping from the route plan. Existing optional identity/zone offsets remain within12 tiles, outside receiving circles at spawn; certify full footprints and all routes before native release.",
+      "unavailablePolicy": "Only this side fails if its unique optional original is lost; a viewpoint task does not invent a loseable actor. No main deficit or forced restart.",
+      "terminalPolicy": "Once-only completion/effect before main terminal closure, no credit after failure, repeated arrival or reload; existing optional state reference, native QA pending.",
+      "sourceBoundary": "All local participants, notes, stores and consignments are invented. They explain neither the destruction, a universal escape, a canon nor the foundation at Yavneh.",
+      "compositionDecision": "When composing the real authored blueprint, map goal to instruction and benefit plus informationDecision to the existing information override, with observationHubs hub-13/hub-17. Do not use scout default wave roster or default scout caption. This documentary object is not an executable optionalTasks row."
+    }
+  ],
+  "economyDecision": {
+    "mainPayments": {},
+    "effectiveOptionalRewardReserveIntended": {},
+    "fixedMaximumOptionalCost": {
+      "wood": 50
+    },
+    "startingWoodTargetBeforeAnySideReward": {
+      "easy": 69,
+      "standard": 60,
+      "hard": 51
+    },
+    "sourceBasis": "Legacy multiplier applied to authored starting wood60. This only makes the fixed50-wood repair affordable even if every other optional is skipped; it is not the whole economy or a difficulty challenge. Food/gold bonuses are deliberately absent because no approved use exists.",
+    "remaining": "finite main/escort/opposition accounts, actual ground resource placement and required recovery must be settled with the complete pressure design"
+  },
+  "portfolios": [
+    {
+      "id": "additional-care",
+      "tasks": [
+        "side-2",
+        "side-6"
+      ],
+      "tradeoff": "Separate optional neighbor escort and paid store restoration add people/routes and an explicit50wood opportunity cost; main thresholds unchanged."
+    },
+    {
+      "id": "informed-divided-escort",
+      "tasks": [
+        "side-3",
+        "side-4"
+      ],
+      "tradeoff": "Guide and two observations mark existing routes at real travel/attention cost, without concealing the mandatory goals."
+    },
+    {
+      "id": "records-and-interpretation",
+      "tasks": [
+        "side-1",
+        "side-5",
+        "side-7"
+      ],
+      "tradeoff": "Two extra note deliveries, two independent aid bundles and two reflection stops extend retrieval/interpretation without substituting for the three main records."
+    }
+  ],
+  "blockingDependencies": [
+    "i00009/S2: authoring zero bonuses cannot be treated as supported while pending",
+    "i00010/S2: pooled eight-original survival across four origin groups; S1 decision independently approved in f4a2599; implementation serialized after i00009/S2",
+    "native existing optional observations/atomic restore/completion/persistence and AoE2 QA in their proposals"
+  ],
+  "mainAndHistoryUnchanged": true,
+  "noMechanicalAuthoringPermission": true
+}
