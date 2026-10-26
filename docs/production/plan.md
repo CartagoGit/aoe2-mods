@@ -68,3 +68,6 @@ La primera [comparación de progreso](../qa/campaign-design/interaction-progress
 
 
 La aclaración posterior del propietario mantiene los mods independientes de la tienda: Steam identifica su primer entorno de prueba, no una dependencia de distribución. El código de compilación/exportación no contiene llamadas o rutas Steam; el único enlace de Steam en config corresponde a la consulta de idiomas. Los formatos son AoE2:DE y la compatibilidad de cada instalación/build requiere pruebas propias; no se acredita consola, otra edición o Return of Rome por esa independencia. El [siguiente diagnóstico grande](../handoffs/LARGE-MAP-DIAGNOSTIC-PACKET.md) es un paquete parcial no asignado de i00003/S2, sin geografía histórica ni cierre de transporte/motor.
+
+
+Actualización del mismo corte: MiniMax implementó i00010/S2, integrado en d86c5613 y aprobado por Luna 3/3 en afa036fc. La implementación y revisión verificaron 14 casos específicos y el gate de 157 pruebas Bun y 2136 aserciones, preservando 64/2645/398/49. El selector de grupos es ahora una operación real del factory de diseño; no es un exportador compuesto ni una prueba de AoE2. Luna implementa el diagnóstico 400 parcial de i00003/S2 con instrucciones cerradas; el kit real y su validación siguen pendientes.
