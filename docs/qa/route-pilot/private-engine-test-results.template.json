@@ -26,6 +26,38 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
+    },
+    {
+      "id": "EDITOR-DIAGNOSTIC-ROUTE-SUCCESSOR",
+      "campaignId": "route-successor",
+      "status": "pending",
+      "steps": "If testing the supplied unmodified diagnostic scenario directly, record its hash, keep the matching locale mod enabled, use the editor test facility, record actual controls and outcome. A saved/edited scenario is a different artifact. This does not pass campaign ZIP load or profile persistence.",
+      "artifactSha256": null,
+      "scenarioSha256": null,
+      "launchMode": "editor diagnostic; not campaign UI",
+      "uiDifficulty": null,
+      "uiLocale": null,
+      "observations": null,
+      "attachments": [],
+      "gameClockAtStart": null,
+      "gameClockAtEnd": null
+    },
+    {
+      "id": "EDITOR-DIAGNOSTIC-ROUTE-PILOT",
+      "campaignId": "route-pilot",
+      "status": "pending",
+      "steps": "If testing the supplied unmodified diagnostic scenario directly, record its hash, keep the matching locale mod enabled, use the editor test facility, record actual controls and outcome. A saved/edited scenario is a different artifact. This does not pass campaign ZIP load or profile persistence.",
+      "artifactSha256": null,
+      "scenarioSha256": null,
+      "launchMode": "editor diagnostic; not campaign UI",
+      "uiDifficulty": null,
+      "uiLocale": null,
+      "observations": null,
+      "attachments": [],
+      "gameClockAtStart": null,
       "gameClockAtEnd": null
     },
     {
@@ -39,7 +71,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "PATH-B",
@@ -52,7 +86,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "GUARD-LOSS",
@@ -65,7 +101,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "CASTLE-REACTION",
@@ -78,7 +116,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "SAVE-RELOAD",
@@ -91,7 +131,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "LOAD-T02-ALONE",
@@ -104,7 +146,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "LANGUAGE-EN-ES",
@@ -117,7 +161,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "PROFILE-A-B-BA",
@@ -130,7 +176,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "SAME-TICK",
@@ -143,7 +191,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "ADAPTIVE-RECAP",
@@ -156,7 +206,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     },
     {
       "id": "BALANCE-THREE-PROFILES",
@@ -169,7 +221,9 @@
       "observations": null,
       "attachments": [],
       "gameClockAtStart": null,
-      "gameClockAtEnd": null
+      "gameClockAtEnd": null,
+      "launchMode": null,
+      "scenarioSha256": null
     }
   ],
   "rules": [

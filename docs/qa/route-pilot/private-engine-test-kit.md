@@ -15,6 +15,8 @@ The [receipt](private-engine-test-manifest.json) identifies the exact source com
 
 The supplied JSON keeps these observations separate. Start with loading and normal A/B routes; do not make the first test session depend on the larger compatibility matrix. New map/pathfinding issues return to the architect with artifact hash, reproduction and actual result. Fixes create a new artifact and invalidate evidence for the changed bytes.
 
+The private kit also retains the two original separate exported scenarios under `diagnostics/<campaign-id>/`. Their hashes are listed in the receipt. If campaign UI is unavailable, the tester can attempt to open a copy through the scenario editor and use its test facility, keeping the matching locale mod enabled for strings. Record the real editor controls, selected language/difficulty, exact scenario hash and `launchMode=editor diagnostic`. Do not save or edit over the original. This is a separate way to investigate scenario load, movement and normal terminal behavior; it cannot pass campaign-menu load, cross-campaign persistence or missing narrative templates. Failure to load either form remains useful evidence. No custom editor harness or same-tick instrumentation is implied.
+
 ## Boundaries that affect the result
 
 T01 exports distinct progress writes, but this kit provides no accredited reader of profile flags. Winning A then B does not by itself demonstrate cumulative stored state. T02 does not inspect predecessor flags or select a conditional recap. The A/B/both/unknown recap and persistence cases stay blocked until a real native candidate can observe them. Do not report a static summary as a successful adaptive recap.

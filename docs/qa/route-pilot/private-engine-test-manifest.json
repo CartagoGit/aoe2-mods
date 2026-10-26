@@ -65,7 +65,13 @@
       ],
       "translationStatus": "draft",
       "gameVerified": false,
-      "exportStatus": "EXPORT READY (binary subset)"
+      "exportStatus": "EXPORT READY (binary subset)",
+      "diagnosticScenario": {
+        "kitPath": "diagnostics/route-pilot/01-route-choice.aoe2scenario",
+        "sha256": "00c78ee33dacbe05f069ad4902e039789a398e0a795f4200fea8658d55d4b4be",
+        "bytes": 1916,
+        "purpose": "The original separate exported scenario, unmodified. Opening/testing it directly diagnoses scenario behavior, not the campaign UI or persistent cross-campaign state."
+      }
     },
     {
       "campaignId": "route-successor",
@@ -124,7 +130,13 @@
       ],
       "translationStatus": "draft",
       "gameVerified": false,
-      "exportStatus": "EXPORT READY (binary subset)"
+      "exportStatus": "EXPORT READY (binary subset)",
+      "diagnosticScenario": {
+        "kitPath": "diagnostics/route-successor/01-recap.aoe2scenario",
+        "sha256": "4ef3b362a9f4e3c12d679b4acd8bd602945a6af6dc6716cc126f82a56cb3174b",
+        "bytes": 1393,
+        "purpose": "The original separate exported scenario, unmodified. Opening/testing it directly diagnoses scenario behavior, not the campaign UI or persistent cross-campaign state."
+      }
     }
   ],
   "toolchain": {
