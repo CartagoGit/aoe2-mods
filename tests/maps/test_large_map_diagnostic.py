@@ -1,9 +1,13 @@
 """Fast artificial tests for the isolated large-map diagnostic clone."""
 
 import copy
+import hashlib
+import json
 import runpy
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 
@@ -76,6 +80,64 @@ class LargeMapDiagnosticTests(unittest.TestCase):
             DIAGNOSTIC["_run"](command)
         self.assertIn("stdout:\nstdout sentinel", str(caught.exception))
         self.assertIn("stderr:\nstderr sentinel", str(caught.exception))
+
+    def test_failed_rerun_invalidates_old_archive_and_receipt(self):
+        run = DIAGNOSTIC["run_diagnostic"]
+        for failure in ("export", "zip"):
+            with self.subTest(stage=failure), tempfile.TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                source = root / "build/technical-pilot"
+                source.mkdir(parents=True)
+                (source / "campaign-ir.json").write_text(json.dumps(fixture()))
+                (source / "build-report.json").write_text(json.dumps({"sourceSha256": "artificial-source"}))
+                (root / "config").mkdir()
+                (root / "config/engine-catalog.json").write_text(json.dumps({
+                    "terrains": ["grass-1", "road", "dirt-1", "snow", "water-deep"]}))
+                for locale in ("en", "es"):
+                    path = source / f"mod/resources/{locale}/strings/key-value/key-value-modded-strings-utf8.txt"
+                    path.parent.mkdir(parents=True)
+                    path.write_text("artificial catalogue")
+                build = root / "build/large-map-diagnostic/400"
+                build.mkdir(parents=True)
+                receipt = build / "zip-receipt.json"
+                receipt.write_text("stale receipt")
+                archive = root / "dist/large-map-diagnostic-400.zip"
+                archive.parent.mkdir()
+                archive.write_bytes(b"stale archive")
+                calls = []
+
+                def fake_run(argv):
+                    calls.append(argv)
+                    if argv[0] == "bun":
+                        return {"argv": argv, "exitCode": 0}
+                    action = argv[2]
+                    if action == "build":
+                        if failure == "export":
+                            raise RuntimeError("export failure sentinel")
+                        export = Path(argv[-1])
+                        content = b"artificial bytes for orchestration test only"
+                        (export / "01-technical-battle.aoe2scenario").write_bytes(content)
+                        (export / "export-report.json").write_text(json.dumps({
+                            "gameVerified": False, "scenarioReports": [{"id": "01-technical-battle",
+                            "sha256": hashlib.sha256(content).hexdigest()}]}))
+                        return {"argv": argv, "exitCode": 0}
+                    Path(argv[-1]).write_bytes(b"incomplete zip")
+                    raise RuntimeError("zip failure sentinel")
+
+                with patch.dict(run.__globals__, {"ROOT": root, "_run": fake_run,
+                        "inspect_native_diagnostic": lambda *args: {"scope": "orchestration test stub only"}}):
+                    with self.assertRaisesRegex(RuntimeError, f"{failure} failure sentinel"):
+                        run(400)
+                self.assertFalse(receipt.exists())
+                self.assertFalse(archive.exists())
+                self.assertFalse((root / "dist/.large-map-diagnostic-400.zip.tmp").exists())
+                if failure == "export":
+                    self.assertEqual(len(calls), 2)
+                    self.assertFalse((build / "kit/diagnostic-report.json").exists())
+                else:
+                    self.assertEqual(len(calls), 3)
+                    report = json.loads((build / "kit/diagnostic-report.json").read_text())
+                    self.assertIn("missing receipt", report["archiveReceiptPolicy"])
 
     def test_fixed_transform_markers_and_clone_only_progress_removal(self):
         source = fixture()
