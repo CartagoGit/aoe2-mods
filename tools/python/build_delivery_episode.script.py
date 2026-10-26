@@ -409,6 +409,7 @@ def _build_preview(root, binding_path, output, locales, levels):
     version = json.loads((root / "config/engine.json").read_text())["scenarioVersion"]
     exporter = runpy.run_path(str(HERE / "export_aoe2.py"))
     reports = []
+    private_name = campaign["editorialContract"]["internalName"] + "_PrivateOpening"
     for locale in locales:
         for level in levels:
             folder = output / locale / level
@@ -423,14 +424,14 @@ def _build_preview(root, binding_path, output, locales, levels):
                 raise
             # Reuse the pinned container tool; this is a private single-episode
             # container, never a promoted 30-episode catalogue or global ID change.
-            container = folder / "CDF_FaithOrigins_PrivateOpening.aoe2campaign"
+            container = folder / (private_name + ".aoe2campaign")
             binary = str(exporter["rge_binary"]())
             subprocess.run(
                 [
                     binary,
                     "c",
                     str(container),
-                    "CDF_FaithOrigins_PrivateOpening",
+                    campaign["editorialContract"]["campaignTitle"][locale],
                     str(path),
                 ],
                 check=True,

@@ -186,6 +186,10 @@ def validate_delivery_contract(dossier, binding):
         "extract",
     ]:
         raise ValueError("unsupported optional delivery set")
+    if [o["id"] for o in dossier["secondaryObjectives"]] != [
+        f"side-{i}" for i in range(1, 7)
+    ]:
+        raise ValueError("unsupported optional identity set")
     for side in dossier["secondaryObjectives"]:
         if (
             side["predicate"]["operator"] != "all"
