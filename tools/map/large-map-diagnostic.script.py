@@ -344,7 +344,7 @@ def _kit_readme(size, transform):
         "The rest of the map is grass-1 at elevation 0; there are no walls, bridges, cliffs or historical layers.\n\n"
         "Editor test: treat the included scenario as a read-only original. Open it to inspect, then immediately use Save As "
         "to create a separate copy with a different filename before any edit or save. Record the original SHA-256 from "
-        "diagnostic-report.json and the copy's SHA-256; the copy must have a different name and hash. Never overwrite the "
+        "diagnostic-report.json and the copy's SHA-256; use a different filename. Identical bytes may have an identical hash. Never overwrite the "
         "included artifact. Enable the included locale-mod folder only if checking existing draft labels. Observe load success, "
         "take a screenshot showing the four terrain controls, move the existing guard along the ordinary diagonal toward the enemy, "
         "then save and reopen the named copy. Confirm the included original still matches its recorded hash. Record editor mode "
