@@ -2,6 +2,7 @@
 
 import copy
 import runpy
+import sys
 import unittest
 from pathlib import Path
 
@@ -65,6 +66,17 @@ def changed_paths(before, after, path=""):
 
 
 class LargeMapDiagnosticTests(unittest.TestCase):
+    def test_run_failure_keeps_stdout_and_stderr(self):
+        command = [
+            sys.executable,
+            "-c",
+            "import sys; print('stdout sentinel'); print('stderr sentinel', file=sys.stderr); sys.exit(7)",
+        ]
+        with self.assertRaisesRegex(RuntimeError, r"command failed \(7\)") as caught:
+            DIAGNOSTIC["_run"](command)
+        self.assertIn("stdout:\nstdout sentinel", str(caught.exception))
+        self.assertIn("stderr:\nstderr sentinel", str(caught.exception))
+
     def test_fixed_transform_markers_and_clone_only_progress_removal(self):
         source = fixture()
         original = copy.deepcopy(source)

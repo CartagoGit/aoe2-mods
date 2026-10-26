@@ -187,7 +187,12 @@ def _run(argv, cwd=ROOT):
     record = {"argv": [str(arg) for arg in argv], "cwd": str(cwd),
               "exitCode": proc.returncode, "stdout": proc.stdout, "stderr": proc.stderr}
     if proc.returncode:
-        detail = proc.stderr.strip() or proc.stdout.strip() or "no diagnostic output"
+        diagnostics = []
+        if proc.stdout.strip():
+            diagnostics.append(f"stdout:\n{proc.stdout.rstrip()}")
+        if proc.stderr.strip():
+            diagnostics.append(f"stderr:\n{proc.stderr.rstrip()}")
+        detail = "\n".join(diagnostics) or "no diagnostic output"
         raise RuntimeError(f"command failed ({proc.returncode}): {argv!r}\n{detail}")
     return record
 
@@ -337,11 +342,15 @@ def _kit_readme(size, transform):
         "They use grid labels for coordinate orientation only; they do not calibrate the isometric camera. "
         "The west water-deep marker is a modern artificial test patch, not a river, crossing or proof of boat support. "
         "The rest of the map is grass-1 at elevation 0; there are no walls, bridges, cliffs or historical layers.\n\n"
-        "Editor test: open the included scenario directly in the AoE2:DE editor; enable the included locale-mod folder "
-        "only if checking the existing draft labels. Observe load success, take a screenshot showing the four terrain controls, "
-        "move the existing guard along the ordinary diagonal toward the enemy, then save and reopen. Record editor mode separately "
-        "from launching any campaign. This kit contains no campaign container and does not claim game verification, balance, "
-        "historical geography, transport, camera calibration or production readiness.\n"
+        "Editor test: treat the included scenario as a read-only original. Open it to inspect, then immediately use Save As "
+        "to create a separate copy with a different filename before any edit or save. Record the original SHA-256 from "
+        "diagnostic-report.json and the copy's SHA-256; the copy must have a different name and hash. Never overwrite the "
+        "included artifact. Enable the included locale-mod folder only if checking existing draft labels. Observe load success, "
+        "take a screenshot showing the four terrain controls, move the existing guard along the ordinary diagonal toward the enemy, "
+        "then save and reopen the named copy. Confirm the included original still matches its recorded hash. Record editor mode "
+        "separately from launching any campaign. The inherited fixture has only two combat units and a 600-second timeout; it "
+        "does not guarantee victory or provide a performance benchmark. This kit contains no campaign container and does not claim "
+        "game verification, balance, historical geography, transport, camera calibration or production readiness.\n"
     )
 
 
