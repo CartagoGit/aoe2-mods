@@ -1,6 +1,6 @@
 # Primera prueba: Windows, Steam y español
 
-Preferencia confirmada por el propietario el 26 de octubre de 2026. La build exacta y los resultados de juego siguen pendientes. Esta guía acompaña al [kit de pruebas](../qa/route-pilot/private-engine-test-kit.md) y su [manifiesto de hashes](../qa/route-pilot/private-engine-test-manifest.json); no cambia los dos ZIP ni certifica la instalación local.
+Preferencia confirmada por el propietario el 26 de octubre de 2026. La build exacta y los resultados de juego siguen pendientes. Steam es el primer entorno de prueba; los ZIP usan formatos de AoE2:DE independientes de la tienda. La compatibilidad de otras instalaciones se registra por build y plataforma. Esta guía acompaña al [kit de pruebas](../qa/route-pilot/private-engine-test-kit.md) y su [manifiesto de hashes](../qa/route-pilot/private-engine-test-manifest.json); no cambia los dos ZIP ni certifica la instalación local.
 
 1. Entra en AoE2: Definitive Edition desde Steam, selecciona español y anota el número exacto de versión/build que muestra el juego. Usa el modo AoE2. Cierra el juego antes de copiar los archivos.
 2. Descomprime el paquete privado en una carpeta de trabajo. Conserva `route-pilot-fixture.zip` y `route-successor-fixture.zip`. En PowerShell comprueba cada uno con `Get-FileHash .\route-pilot-fixture.zip -Algorithm SHA256` y el comando equivalente para la sucesora. Deben coincidir con el manifiesto.
