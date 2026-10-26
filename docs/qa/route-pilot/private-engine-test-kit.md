@@ -43,3 +43,5 @@ Exports write `dist/<id>-fixture.zip`, `build/<id>/build-report.json` and `build
 ## Next parallel deliveries
 
 The architect continues historical dossiers and reusable missing operations while a tester exercises this kit. Luna or MiniMax implements only a closed assigned slice; the independent reviewer checks its exact product. The next candidate must address a demonstrated missing capability or a reviewed design, rather than silently adding historical content to this lab. A first historical playable slice needs its approved dossier, real geography/terrain, native operations and a reviewable small test objective set before growing into the full episode. Existing 400-tile plans remain plans until materialized and tested.
+
+Executed on this candidate: `bun run validate` passed157/157tests with2,136assertions and3campaigns; `bun run test:export` passed3variants/2round-trips and rejected unsupported mode. Both campaign export commands passed. These are execution records, not observed engine results. Independent ZIP/document inspection is described above; formal slice verdict remains pending.

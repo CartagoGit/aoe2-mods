@@ -172,6 +172,15 @@
       "roundTrips": 2,
       "unsupportedModeRejected": true,
       "gameVerified": false
+    },
+    {
+      "command": "bun run validate",
+      "exitCode": 0,
+      "testsPassing": 157,
+      "testsTotal": 157,
+      "expectations": 2136,
+      "campaignsValidated": 3,
+      "scope": "Independent of game execution; full validation on the merged own worktree."
     }
   ],
   "gameBuild": null,
