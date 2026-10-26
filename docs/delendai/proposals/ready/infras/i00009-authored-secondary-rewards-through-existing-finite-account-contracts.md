@@ -59,13 +59,15 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
 - review-log: approved by gpt-6 — verified at 0cf4d064bedd, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed four-file implementation and follow-up5481: resource_amounts strict validation, override eligible kinds only, omission legacy and explicit zero captio… (2) Independent focused3tests pass; full factory fixture and independent audit, generated effects/payments sums, fixed50wood/50gold costs, cache-overflow rejection… (3) Independent dossier--check64 and verify64/2645/398/49 zeroerrors; validate157/157 with2136assertions and3campaigns, includes registered112Python design tests. … — Independent review of gpt-6-luna implementation including hardened vector/mutation tests. Actual root commands/logs /tmp/i00009-root-{focused,dossiers-check,verify,validate}.log pass. Three criteria conform; unchanged64/2645/398/49, strict validation and derived finite budgets. No native/historical/game approval. Prior close_slice validate-required attempt did not close the slice; official product gate and this peer verdict are distinct.
 
 ### S3 — Document supported commands and independent acceptance boundaries
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2]
 - **Files**: `docs/guides/authored-secondary-rewards.md`, `docs/qa/authored-secondary-rewards/acceptance.md`
 - **Gate**: type
 - acceptance:
   - "Document the exact implemented input/output, supported reward kinds, rejection and legacy behavior, real commands/results and independent review status, with public contracts/native/game/historical gates explicitly unchanged."
   - "Keep Jerusalem70 and all other historical design choices in d00002; do not mark a useful reward, full dossier or historical mechanical packet approved merely because infrastructure tests pass."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ## acceptance
 
