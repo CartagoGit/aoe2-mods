@@ -755,11 +755,11 @@
     ],
     "authoringProjectionGap": {
       "scope": "design factory only; existing v2 reference worldContract already represents an arbitrary explicit survivor entity set",
-      "observed": "world_and_objectives materializes each authored survivor row using exactly one group key. Four two-person origin groups cannot be pooled into one six-of-eight survivor set through that source path. Omitting the pool also omits advertised impossible-threshold defeat; four separate per-court minima impose a different rule.",
+      "observed": "Before i00010/S2, world_and_objectives accepted exactly one group key per survivor row. Four origin courts could not form one six-of-eight pool without a missing source projection.",
       "requiredResult": "Keep four origin courts and one union of exactly eight originals with minimum6, plus original bearer losses. Project an explicitly authored validated entity set without changing public schema or IDs.",
-      "status": "i00010/S1 decision and mechanical packet independently approved with verdict f4a2599; implementation S2 pending and serialized after i00009/S2; no working new selector claimed",
+      "status": "Resolved design-source projection: i00010/S2 product d86c5613, independent 3/3 verdict afa036fc. Use the accepted internal groups selector; canonical composition and native behavior remain pending.",
       "evidence": [
-        "tools/design/episode_dossier.factory.py::world_and_objectives survivorGroups comprehension",
+        "tools/design/episode_dossier.factory.py::_survivor_pool and world_and_objectives",
         "packages/schemas/scenario-capability.schema.ts::survivorGroupSchema",
         "packages/gameplay-state/capability-predicates.validator.ts survivorGroups loss check"
       ],
@@ -780,7 +780,7 @@
     "source-linked local footprint/slope and all corridors",
     "finite opposing and escort identities plus exact pressure rules",
     "secondary benefits/economy using real available operations",
-    "full EN-first/es-ES screen text including entry and loss help",
-    "complete canonical dossier and independent reviews before assigning mechanical authoring"
+    "complete canonical dossier and independent reviews before assigning mechanical authoring",
+    "pressure-warning copy after finite tactical predicates; core bilingual script supplied in 01-jerusalem70-screen-script.json"
   ]
 }
