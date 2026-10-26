@@ -31,7 +31,8 @@ def bilingual(en, es):
     return {'en': en, 'es-ES': es}
 
 
-def objective_text(kind, subject, reward, information_benefit=None, instruction=None):
+def objective_text(kind, subject, reward, information_benefit=None, instruction=None,
+                   explicit_zero_reward=False):
     name_en, name_es = subject['en'], subject['es-ES']
     texts = {
         'scout': (f'Scout both marked viewpoints of {name_en}.', f'Explora los dos miradores señalados de {name_es}.'),
@@ -56,6 +57,9 @@ def objective_text(kind, subject, reward, information_benefit=None, instruction=
         nouns_es = {'food': 'alimento', 'wood': 'madera', 'gold': 'oro', 'stone': 'piedra'}
         en += ' Benefit: ' + ', '.join(f'{v} {nouns_en[k]}' for k, v in reward.items()) + ', once.'
         es += ' Ventaja: ' + ', '.join(f'{v} de {nouns_es[k]}' for k, v in reward.items()) + ', una vez.'
+    elif explicit_zero_reward:
+        en += ' No resource bonus. Completing this task achieves the optional local outcome described above.'
+        es += ' Sin bonificación de recursos. Al completar esta tarea se consigue el resultado local opcional indicado arriba.'
     elif information_benefit is not None:
         en += ' Benefit: ' + information_benefit['en']
         es += ' Ventaja: ' + information_benefit['es-ES']
@@ -76,6 +80,13 @@ def build_optional_objectives(scenario, authored):
     known_hubs = {hub['id'] for hub in scenario['mapPlan']['hubs']}
     for number, item in enumerate(authored, 1):
         kind = item['kind']
+        has_reward_override = 'resourceReward' in item
+        if has_reward_override and kind not in ('aid', 'extract', 'repair', 'trade'):
+            raise ValueError('resourceReward is only supported for aid, extract, repair and trade')
+        reward = REWARDS[kind]
+        if has_reward_override:
+            normalized = resource_amounts(item['resourceReward'])
+            reward = {key: normalized[key] for key in RESOURCES if normalized[key]}
         oid = f'side-{number}'
         ns = f'{scenario["id"]}.{oid}'
         origin = 'hub-2' if kind == 'repair' else 'hub-1' if kind in ('aid', 'guide', 'trade') else 'hub-3'
@@ -142,7 +153,7 @@ def build_optional_objectives(scenario, authored):
                                  'receipt': f'{ns}.payment', 'afterArrival': kind == 'trade',
                                  'once': True, 'protectedRecoveryCannotBeSpent': True})
         effect_kind, target = EFFECTS[kind]
-        effect = {'kind': effect_kind, 'target': target, 'resources': REWARDS[kind],
+        effect = {'kind': effect_kind, 'target': target, 'resources': dict(reward),
                   'onceFlag': f'{ns}.rewarded', 'funding': 'reserved-optional-stock',
                   'changesHistoricalOutcome': False}
         if kind == 'copy':
@@ -161,9 +172,10 @@ def build_optional_objectives(scenario, authored):
             for field in ('rosterIds', 'alreadyReleasedPolicy', 'corridorId'):
                 effect.pop(field, None)
             effect.update(information['effect'])
-        text = objective_text(kind, item['subject'], REWARDS[kind],
+        text = objective_text(kind, item['subject'], reward,
                               information['benefit'] if information else None,
-                              item.get('instruction'))
+                              item.get('instruction'),
+                              explicit_zero_reward=has_reward_override and not reward)
         result.append({
             'id': oid, 'kind': kind, 'title': item['title'], 'subject': item['subject'],
             'classification': 'fictional local activity anchored to the documented scenario; not an asserted ancient event',

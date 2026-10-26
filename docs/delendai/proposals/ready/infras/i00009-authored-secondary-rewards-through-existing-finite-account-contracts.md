@@ -44,7 +44,7 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
 - review-log: approved by gpt-6-luna — verified at 2bd271486fba, validate exit 0 and tests 157/157 claimed, no recorded run cited; acceptance 2/2: (1) The decision and packet limit the field to aid/extract/repair/trade, reuse design_numbers.helper.py resource_amounts, preserve omitted defaults and fixed repai… (2) Decision gives exact EN/es-ES zero captions and invalid/misplaced cases, derives totals from actual effects and atomic-payment contracts, keeps finite reserved… — Independent review of i00009/S1 decision only at integrated product 2bd271486fba1b19376ff942a529fd6bb752db56. S2 implementation, native behavior, historical authoring, and S3 remain pending.
 
 ### S2 — Reusable optional reward projection and budget derivation
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `tools/design/secondary.py`, `tools/design/episode_dossier.factory.py`, `tools/design/test_authored_secondary_rewards.py`, `tools/design/test_design.py`
 - **Gate**: type
@@ -52,6 +52,8 @@ The Jerusalem70 root design exposed an authoring-projection limitation: tools/de
   - "Implement only the accepted internal authoring projection, reuse shared numeric primitives and existing objective builder, reject malformed and unsupported overrides, and preserve existing optional costs, identities, once-only effects and main independence."
   - "Derive all secondary accounting from the generated existing contracts rather than duplicated global reward assumptions; exercise zero and positive overrides, pre-reward affordability, isolated finite reserve, reload/repeated-completion protection already supplied by the existing reference, and invalid type/resource inputs."
   - "Prove all64 current dossiers,2645screens,398secondaries,49reference records, public schemas, previous outputs and native failure behavior remain unchanged; run focused Python/design checks and bun run validate with an artificial fixture, no historical modification."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S3 — Document supported commands and independent acceptance boundaries
 - **Status**: pending
