@@ -2,6 +2,8 @@
 
 The owner has asked for the first historical campaign to become playable while the remaining architecture and dossiers advance. This is the opening of **Embers of the Covenant**, not another boat diagnostic. The accompanying [native binding](16-native-binding.json) fixes the physical interpretation and lists the remaining source refinements explicitly. It is a review candidate, not historical approval or a claim that a native mission already exists.
 
+Update (2026-10-26): the architect unit completed a native prototype implementation and the first es-ES/standard binary round-trip; code review, full variants and actual gameplay remain pending.
+
 ## Historical boundaries and narrative
 
 The surviving inscription is evidence for Pilate's **prefecture** and a dedication. Neither the lost wording nor the trial of Jesus can be recovered from it. The Israel Museum object record describes a reused stone in a theater stairway; its suggested original temple association is probable. Its English catalogue title and descriptive prose use “procurator”, whereas the translated surviving titulature reads prefect. The campaign's 27–36 CE selection is an editorial window, not a date inscribed on the stone. See the two institutional source records and qualifications in the binding.
