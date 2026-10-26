@@ -2,7 +2,7 @@
 
 Recupera del servidor DelendAI el estado, ruta, aceptación y dependencias de cada propuesta antes de trabajar. Los IDs siguientes fueron asignados por el servidor; no son números que otro agente deba fabricar. La base de trabajo es develop y toda edición pertenece a una unidad oficial aislada. Publicación oficial y gate, sin commits manuales de develop.
 
-**Estado operativo recuperado para esta consolidación:** f00001/S1–S3 están `done`; producto S3 `3d955598`, veredicto `9c1486af`, integrados en `dc23f194`. f00001/S4 de motor sigue pendiente. El alcance de diseño comprende nueve odiseas y 278 selecciones: 64 dossiers, 214 selecciones sin dossier, 2.645 pantallas y 398 secundarios. La base anterior de 39 contratos conserva identidad. Recupera siempre el estado vivo antes de asignar el siguiente slice.
+**Estado operativo recuperado para esta consolidación:** f00001/S1–S3 están `done`; producto S3 `3d955598`, veredicto `9c1486af`, integrados en `dc23f194`. f00001/S4 del dossier de pruebas está `done` (producto 9eac67e5, veredicto 9047d995); el motor sigue pendiente en s00001. El alcance de diseño comprende nueve odiseas y 278 selecciones: 64 dossiers, 214 selecciones sin dossier, 2.645 pantallas y 398 secundarios. La base anterior de 39 contratos conserva identidad. Recupera siempre el estado vivo antes de asignar el siguiente slice.
 
 Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md); ambos complementan estos IDs y estados del servidor.
 
@@ -67,3 +67,6 @@ En ese corte, el plan de mundo de Constantinopla con 45 pantallas y siete secund
 La secuencia de MiniMax se gestiona por slices con aceptación propia: no requiere esperar a que terminen las nueve odiseas, ni desbloquea por sí sola propuestas históricas. f00001/S1, especificado por el arquitecto, está `done` tras aprobación formal independiente e integración; MiniMax aún no ha trabajado. El intento OpenCode MiniMax-M3.1-Flash del 24 de octubre fue rechazado antes de ejecutar herramientas (HTTP 429/2056, límite de Token Plan); la consulta separada de cuota OAuth MMX indicó 0 % semanal general. La sesión `ses_e90709888ffegF4vCs3Axe1zWY` no dejó ediciones. En ese corte f00001/S2 seguía pendiente de cuota para el trabajador designado; consulta el estado sincronizado al inicio de este documento. Consulta la [especificación](../wiki/route-pilot/02-implementation-specification.md) y la [matriz de aceptación](../wiki/route-pilot/03-acceptance-matrix.md); cada estado vivo lo determina DelendAI.
 
 Esta actualización no cierra ningún slice distinto de S1.
+
+
+El corte26 de octubre añade i00009/S2 aceptado e integrado (0cf4d064/9f4be255) y i00010/S1 aprobado (f4a2599). El próximo paquete de código designable es i00010/S2 conforme al [packet actualizado](POOLED-SURVIVOR-PROJECTION-PACKET.md), que incluye un fixture TypeScript artificial dentro de su Files. Recuperar esa lista integrada antes de reclamar. i00009/S3 de guía/evidencia sigue separado y no aprueba historia. No confundir la consulta MiniMax de sólo lectura con implementación; los64 dossiers permanecen en borrador.
