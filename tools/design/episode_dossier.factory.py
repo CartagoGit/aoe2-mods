@@ -10,7 +10,7 @@ import math
 import runpy
 from pathlib import Path
 from geography import tile_point
-from secondary import RESOURCES, REWARDS, COSTS, bilingual, build_optional_objectives
+from secondary import RESOURCES, bilingual, build_optional_objectives
 
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
 transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
@@ -593,11 +593,25 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
                     if "information" in task
                     else {}
                 ),
+                **(
+                    {"resourceReward": copy.deepcopy(task["resourceReward"])}
+                    if "resourceReward" in task
+                    else {}
+                ),
             }
         )
     draft["secondaryObjectives"] = build_optional_objectives(draft, recipes)
-    rewards = total([REWARDS[task["kind"]] for task in authored["optionalTasks"]])
-    costs = total([COSTS.get(task["kind"], {}) for task in authored["optionalTasks"]])
+    rewards = total([
+        effect.get("resources", {})
+        for objective in draft["secondaryObjectives"]
+        for effect in objective["effects"]
+    ])
+    costs = total([
+        requirement.get("resources", {})
+        for objective in draft["secondaryObjectives"]
+        for requirement in objective["predicate"]["requirements"]
+        if requirement["kind"] == "atomic-payment"
+    ])
     draft["secondaryBudget"] = {
         "reservedRewards": rewards,
         "maxOptionalCosts": costs,

@@ -13,6 +13,7 @@ from geography import clip_segment, tile_point
 from verify import ROOT, verify
 from test_civic_difficulty_audit import CivicDifficultyAuditTests
 from test_research_crosswalk import ResearchCrosswalkTests
+from test_authored_secondary_rewards import AuthoredSecondaryRewardTests
 
 
 class FulfillmentBridgeAcceptanceTests(unittest.TestCase):
