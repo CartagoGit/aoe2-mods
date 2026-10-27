@@ -800,6 +800,28 @@ class NativeHouseholdControllerTests(unittest.TestCase):
             with self.subTest(mutation=mutation), self.assertRaises(ValueError):
                 ADAPTER["validate_household_contract"](dossier, binding)
 
+    def test_optional_placement_is_checked_at_the_native_snapped_start(self):
+        binding = copy.deepcopy(self.binding)
+        entity = next(
+            item
+            for item in binding["entities"]
+            if item["id"] == "02-civilian-refuge-jerusalem.side-1.entity-1"
+        )
+        zone = next(
+            item
+            for item in binding["zones"]
+            if item["id"] == "02-civilian-refuge-jerusalem.side-1.zone-1"
+        )
+        entity["position"] = [32.99, 30.99]
+        zone["centre"] = [30.0, 30.0]
+        self.assertGreater(
+            math.dist(entity["position"], zone["centre"]), zone["radius"]
+        )
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        self.assertEqual([32.99, 30.99], entity["position"])
+        ADAPTER["validate_household_contract"](self.dossier, self.binding)
+
     def test_unsupported_contracts_are_rejected_before_any_native_change(self):
         mutations = [
             lambda d, b: d["objectivePlan"][2]["predicate"]["requirements"].append(

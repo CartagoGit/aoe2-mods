@@ -215,6 +215,21 @@ def _snapped(position):
     return (math.floor(position[0]) + 0.5, math.floor(position[1]) + 0.5)
 
 
+def _snapped_view(binding):
+    """Return a nonmutating view whose entity positions are the native starts.
+
+    The shared optional rules compare entity positions with their receiving
+    circle, so they must see the position the engine actually uses. The input
+    binding is never modified.
+    """
+    view = dict(binding)
+    view["entities"] = [
+        dict(entity, position=list(_snapped(entity["position"])))
+        for entity in binding["entities"]
+    ]
+    return view
+
+
 def _check_placement(binding):
     size = binding["map"]["size"]
     if type(size) is not int or size <= 0:
@@ -467,7 +482,7 @@ def validate_household_contract(dossier, binding):
     validator = secondary.get("validate_native_secondary_contracts")
     if validator is None:
         raise ValueError("shared native secondary contract validator is unavailable")
-    validator(dossier, binding)
+    validator(dossier, _snapped_view(binding))
     ledger = objectives[0]["predicate"]["exportedLedgers"][0]["id"]
     receipt = objectives[1]["predicate"]["requirements"][0]["paidFlag"]
     return list(HOUSEHOLD_IDS), ledger, receipt
