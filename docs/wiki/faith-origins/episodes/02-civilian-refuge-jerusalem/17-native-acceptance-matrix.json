@@ -195,6 +195,20 @@
       "expected": "Common attributed fact then Miriam; next canonical episode03 recommendation, no campaign completion or mandatory predecessor lock.",
       "nativeExecuted": false,
       "gameExecuted": false
+    },
+    {
+      "id": "original-household-payment-selection",
+      "setup": "After o1 select H1 inside court; select H2 inside court again; test an optional bearer, dead original, garrisoned original, wrong-owner original and original outside court.",
+      "expected": "First valid original authorizes exactly one atomic 240-food debit. Repeated selection does not debit; invalid actors never authorize payment. Funds failure is retryable. No unique extra payer or simultaneous-six condition.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "court-historical-arrival-survivors-elsewhere",
+      "setup": "H1–H6 arrive alive at court, H1/H2 die, H7/H8 remain alive outside court.",
+      "expected": "O1 may resolve from six historical arrivals while the original survivor group remains at six. Do not add an alive-and-held O1 filter. H7/H8 can later join the dynamic ledger; O3 still requires six qualifying originals alive at atomic terminal commit.",
+      "nativeExecuted": false,
+      "gameExecuted": false
     }
   ],
   "referenceInspection": {
@@ -231,5 +245,14 @@
     "other29EpisodeObjectsUnchanged": true,
     "existingRequirementIdsPreserved": true,
     "nativeImplemented": false
+  },
+  "paymentInputDecision": {
+    "date": "2026-10-27",
+    "surface": "select any living original household currently inside court after o1",
+    "onceReceipt": "faith-origins.02-civilian-refuge-jerusalem.o2.req-1.paid",
+    "supersedes": "unverified selectable scenery flag proposal",
+    "preserves": "240-food spendable payment, original-eight identity, dynamic ledger and source IDs",
+    "nativeExecuted": false,
+    "gameExecuted": false
   }
 }
