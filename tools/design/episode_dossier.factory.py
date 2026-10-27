@@ -644,6 +644,11 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
                     if "resourceReward" in task
                     else {}
                 ),
+                **(
+                    {"resourceCost": copy.deepcopy(task["resourceCost"])}
+                    if "resourceCost" in task
+                    else {}
+                ),
             }
         )
     draft["secondaryObjectives"] = build_optional_objectives(draft, recipes)
