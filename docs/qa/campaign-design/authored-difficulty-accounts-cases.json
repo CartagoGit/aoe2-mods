@@ -241,7 +241,13 @@
         "stone": 0
       },
       "conservationChecked": true,
-      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed",
+      "derivedSupplyMargins": {
+        "food": 130,
+        "wood": 140,
+        "gold": 90,
+        "stone": 0
+      }
     },
     {
       "difficulty": "standard",
@@ -344,7 +350,13 @@
         "stone": 0
       },
       "conservationChecked": true,
-      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed",
+      "derivedSupplyMargins": {
+        "food": 90,
+        "wood": 90,
+        "gold": 60,
+        "stone": 0
+      }
     },
     {
       "difficulty": "hard",
@@ -447,7 +459,13 @@
         "stone": 0
       },
       "conservationChecked": true,
-      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed",
+      "derivedSupplyMargins": {
+        "food": 60,
+        "wood": 60,
+        "gold": 45,
+        "stone": 0
+      }
     }
   ],
   "prospectiveRejectionCases": [
@@ -600,7 +618,53 @@
       "change": "hard spendable.gold=0; aid gives10G but trade costs20G",
       "expected": "main remains all-skip feasible; reject promised all-complete route because no legal full mask",
       "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unknown-economy-mode",
+      "change": "derived economyProfile unknown",
+      "expected": "reject before v3/legacy numeric dispatch",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "v3-economy-marker",
+      "change": "any economyProfile supplied on alternative-fulfillment-v3 dossier",
+      "expected": "reject in common validator before v3 early return",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "wrong-new-margin",
+      "change": "new supplyMargins differs from S+B-M-Z",
+      "expected": "reject explicit numeric mode arithmetic",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "direct-output-marker-input",
+      "change": "source supplies economyProfile instead of authoredDifficultyAccounts",
+      "expected": "reject forbidden derived output marker as source bypass",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "legacy-default-checks",
+      "change": "marker absent but legacy compensated budget arithmetic changed",
+      "expected": "reject exactly as existing legacy checks; never reinterpret",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "timing-unsupported",
+      "change": "new or unknown economyProfile sent to legacy readiness timing auditor",
+      "expected": "explicit unsupported error before timing calculation/report",
+      "executedAgainstOptInFactory": false
     }
   ],
-  "compatibilityAcceptance": "No authoredDifficultyAccounts => compare complete pre/post outputs for all64current dossiers, including existing v3 branch unchanged. This comparison is an implementation acceptance requirement, not executed by this ADR."
+  "compatibilityAcceptance": "No authoredDifficultyAccounts => compare complete pre/post outputs for all64current dossiers, including existing v3 branch unchanged. This comparison is an implementation acceptance requirement, not executed by this ADR.",
+  "derivedEpisodeEconomyProfile": "authored-finite-accounts-v1",
+  "profileIsAuthoringMetadataNotGameplaySchema": true,
+  "coordinatedValidationDecision": {
+    "reviewFinding": "initial S1 incompatibility with legacy secondary numeric audit; initial version not approved",
+    "markerDispatch": "explicit derived episode economyProfile, absent=unchanged legacy; known opt-in=new numeric audit; unknown/v3+marker reject",
+    "newSupplyMargins": "S+B-M-Z",
+    "timingStatus": "explicitly rejected until separately reviewed support",
+    "old39ContractTools": "excluded from this opt-in",
+    "implementationExecuted": false
+  }
 }

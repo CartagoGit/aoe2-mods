@@ -39,14 +39,43 @@ The analyzer's temporary subtraction of Z protects a planning floor; it is not a
 
 The [bounded cases](../qa/campaign-design/authored-difficulty-accounts-cases.json) use artificial identities and seven task vectors. The actual shared analyzer was executed for three authored difficulty accounts, each with B0 and nonzero P. All128optional subsets are reachable after main payment while preserving Z, and the all-seven witnesses exhaust R exactly. Their different final spendable vectors are arithmetic evidence, not calibrated gameplay.
 
-The25negative/source-gate cases are prospective acceptance requirements. They have **not** been run against an implemented opt-in factory, because that operation does not yet exist. The cases distinguish malformed source, protected/reward borrowing, contradictory aliases, missing actual task inputs and an unapproved nonzero bank. A path may study a bank financially while remaining blocked for content/native approval; do not conflate the two gates.
+The31negative/source-gate cases are prospective acceptance requirements. They have **not** been run against an implemented opt-in factory, because that operation does not yet exist. The cases distinguish malformed source, protected/reward borrowing, contradictory aliases, missing actual task inputs and an unapproved nonzero bank. A path may study a bank financially while remaining blocked for content/native approval; do not conflate the two gates.
 
 ## Closed implementation assignment after independent S1 acceptance
 
-S2 owns only `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py` and `tools/design/test_authored_difficulty_accounts.py`. The helper validates/derives the new source envelope; the existing factory still composes the dossier. Reuse current resource normalization and optional-state functions. Do not duplicate the solver, optional mechanics, renderer, source schema or native exporter.
+S2 owns the eight exact factory/helper/validator/report/test Files listed in the coordinated validation decision below and in the proposal; the original three-File implementation scope was insufficient and is superseded. The helper validates/derives the new source envelope; the existing factory still composes the dossier. Reuse current resource normalization and optional-state functions. Do not duplicate the solver, optional mechanics, renderer, source schema or native exporter.
 
 If the existing three-argument `difficulty_profiles` needs actual side rows, add a compatible optional internal argument. Absence of those rows under the opt-in is an error; it cannot fall back to guessed preset costs. Calls without the opt-in keep their previous behavior. Extract side costs/rewards from actual built predicates/effects, with duplicate side IDs and unsafe sums rejected before analysis.
 
 Verify the real factory with all three positive cases and meaningful negative cases; compare every one of the64current legacy/v3 dossier outputs against its baseline when the field is absent, without changing their source files or catalogue counts. Preserve fingerprint/source/ID/state semantics and all unchanged default results. Complete `bun run validate` and official certification; a different model reviews the exact implementation. This packet does not grant self-approval, broad historical authoring or a native exporter bypass.
 
 A later jewish-tradition03 packet may use the accepted operation. Its screen inventory, fiction/source distinction, real frame, actor routes, optional benefits, deadlines and continuation require their own closed decisions. Different budgets alone do not prove a satisfying challenge.
+
+## Coordinated validation decision — 28 October2026; closes architecture P2
+
+The independent reviewer reproduced a real compatibility error in the initial decision: `secondary.py` recomputes legacy available stock as `start+B−R` and need as `M+Z+P`. Merely emitting S+B would produce nonoptional-stock drift, and the legacy margin check would apply the wrong definition. That initial design is not accepted as an implementation packet. The following explicit opt-in dispatch replaces that incomplete part; no check is disabled or selected by parsing the prose `basis`.
+
+The **derived episode dossier**, outside all public gameplay/profile schemas, gets `economyProfile: "authored-finite-accounts-v1"` only when this source-only opt-in is present. The author may not directly provide that output marker to bypass input validation. Marker absent retains the complete legacy path. Unknown marker rejects. The v3 dossier path rejects the presence of any economyProfile marker, including the known legacy opt-in: its existing typed accounts remain the sole v3 contract. Place this guard in the common episode validator before its existing v3 early dispatch; a secondary-only guard is insufficient.
+
+For the new mode define `supplyMargins = S+B−M−Z`, the free operating surplus excluding the unspent replacement floor. It must be nonnegative and reproduced exactly. P and R remain separate and never enter that margin. `secondaryBudget` and actual effects supply R; do not duplicate an independently spendable reward account. The new numeric branch reconstructs S/B/P/R/Z from actual dossier fields/predicates/effects, validates exact keys and safe intermediate totals, recomputes main all-skip feasibility, and independently verifies the actual all-complete optional-state witness. It may reuse the shared arithmetic and finite analyzer, but must not trust a stored true affordability flag or stored witness. It keeps every existing predicate, identity, health, arrival, payment, once-flag, effect and playstyle check outside the accounting branch.
+
+In `secondary.py::check_optional_objectives`, use explicit known-marker dispatch only for its current numeric financing section. The marker-absent formula and checks stay byte-semantically unchanged. Under the known new mode compare `accessible=S+B`, main need M+Z, exact surplus above, exact R, and the recomputed BFS. A malformed or unknown mode fails closed; it cannot fall through. The shared numeric primitive currently normalizes sparse resources, so exact four-key and safe-sum requirements remain this new branch's responsibility.
+
+The civic difficulty report must expose this explicit model and its assumptions beside the existing budget fields, without implying that the old compensated metric and the new segregated metric count the same accounts. Keep its original output unchanged for marker-absent episodes and its v3 branch unchanged; reject unknown markers and v3+marker. The expanded wiki renderer displays the explicit model for new episodes, retaining default output exactly when absent.
+
+`readiness_timing_audit.script.py` is deliberately **unsupported** for this new economy profile in this slice. Reject the known new marker and unknown markers explicitly before calculating or emitting any timing result. Do not silently run the old authored timing assumptions against the new model or present budget arithmetic as travel-time evidence. Enabling that operation needs a separately reviewed timing decision. This rejection is testable and does not remove the existing legacy timing path. The old39-contract `verify.py`, `render.py`, `objectives.py` and optional-design entry point receive no opt-in support or changes here.
+
+Exact S2 ownership is:
+
+- `tools/design/episode_dossier.factory.py`
+- `tools/design/authored_difficulty_accounts.helper.py`
+- `tools/design/secondary.py`
+- `tools/design/episode_dossier.validator.py`
+- `tools/design/civic_difficulty_audit.script.py`
+- `tools/design/readiness_timing_audit.script.py`
+- `tools/design/episode_dossiers.script.py`
+- `tools/design/test_authored_difficulty_accounts.py`
+
+Avoid a circular eager load `secondary → new helper → finite_allocation → secondary`. Load the new numeric audit helper lazily inside the opt-in branch after secondary's common constants/functions are initialized, using the established explicit helper loader. Exercise the real factory followed by audit_dossier/check_optional_objectives and civic dispatch, not just a private numeric helper. If this ownership still cannot support a real operation, stop with its actual diagnostic; no emulation or validator bypass is authorized.
+
+Add source/derived-mode tests for unknown markers, v3+marker, wrong supply margin, forbidden direct input marker, unchanged default numeric checks and explicit timing rejection. Compare all64default legacy/v3 dossiers, their generated wiki/SVG and civic report before/after, preserving hashes when the opt-in is absent. These are implementation acceptance requirements; no such implementation or comparison is claimed by this ADR.
