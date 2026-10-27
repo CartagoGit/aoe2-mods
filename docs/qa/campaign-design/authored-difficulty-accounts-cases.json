@@ -582,6 +582,24 @@
       "change": "nonzero B with no approved placed nodes",
       "expected": "static source can be studied, content/native approval stays blocked",
       "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "aggregate-overflow",
+      "change": "safe individual S/P/R exceed MAX_SAFE_INTEGER when combined",
+      "expected": "reject unsafe total before analysis",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "optional-count",
+      "change": "more than8 or fewer than6 authored side tasks",
+      "expected": "reject outside existing dossier6–8 task limit before subset analysis",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "no-full-witness",
+      "change": "hard spendable.gold=0; aid gives10G but trade costs20G",
+      "expected": "main remains all-skip feasible; reject promised all-complete route because no legal full mask",
+      "executedAgainstOptInFactory": false
     }
   ],
   "compatibilityAcceptance": "No authoredDifficultyAccounts => compare complete pre/post outputs for all64current dossiers, including existing v3 branch unchanged. This comparison is an implementation acceptance requirement, not executed by this ADR."
