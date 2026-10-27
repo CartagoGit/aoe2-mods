@@ -2,10 +2,14 @@
 id: i00014
 title: "Episode-02 household native builder: refuse the historical build, compile a labelled synthetic fixture"
 kind: infra
-status: ready
+status: review
 type: proposal
 track: campaign-design
 date: 2026-10-27
+last-transition-id: c2a881b5-b934-47ba-9cac-2d85809f83cb
+last-correlation-id: c2a881b5-b934-47ba-9cac-2d85809f83cb
+last-transition-from: in-progress
+last-transition-at: 2026-10-27T19:46:22.321Z
 ---
 
 # i00014 — Episode-02 household native builder: refuse the historical build, compile a labelled synthetic fixture
@@ -41,6 +45,7 @@ The architect's episode-02 decision and layout review name a missing capability 
   - "Compile the household controller on a separately labelled synthetic physical fixture derived from the binding's semantics, reusing the existing household adapter, shared base factory and optional-circuit adapter; keep the nonhistorical label in the scenario identity, the messages and the receipt, and record the real blockers, the synthetic label and the open game and historical gates."
 - review-state: in_review
 - review-implementer: minimax-m3.1-flash-preview
+- shipped-in: `e63985d11326`
 
 ## acceptance
 
