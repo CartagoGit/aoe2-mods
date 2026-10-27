@@ -2,14 +2,14 @@
 id: f00001
 title: "Piloto tecnico de rutas independientes y localizacion"
 kind: feat
-status: review
+status: done
 type: proposal
 track: campaign-factory
 date: 2026-10-12
-last-transition-id: 64a0d22d-2599-47cc-b1c2-6b45d2f6fe79
-last-correlation-id: 64a0d22d-2599-47cc-b1c2-6b45d2f6fe79
-last-transition-from: in-progress
-last-transition-at: 2026-10-26T00:09:16.642Z
+last-transition-id: ccc2159b-a5dd-4f3c-a629-04e62600abcf
+last-correlation-id: ccc2159b-a5dd-4f3c-a629-04e62600abcf
+last-transition-from: review
+last-transition-at: 2026-10-27T18:19:13.822Z
 shipped-in:
   - "06e688e87a0b3617ad8049b073b8f9f35e832b00"
   - "9d5e744b0b33a005e2e01b14a2215275acf6b35a"
