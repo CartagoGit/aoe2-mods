@@ -8,7 +8,7 @@ Documentary triage of the authored dossier data for d00002/S11. This is not a ga
 | DelendAI session | `7005c2a9` (own session, issued by `delendai work enter`) |
 | Work unit | `refs/heads/wip/minimax-m3.1-flash-preview/implement/d00002-S11-g11/catalogue-design-risk-inventory` |
 | Worktree | `.cache/delendai/.worktrees/minimax-m3.1-flash-preview-d00002-S11-g11` |
-| Source commit | `1a286985124d43ad43b9c3ade1c3047448fb3a82` (develop, after the Jerusalem source refinement was landed) |
+| Source commit | `6d824b010d001b1c11f16d06102cf484145c1d0d` (develop, after the Jerusalem source refinement and the shared native runtime extraction were landed) |
 | Date | 2026-10-27 |
 | Machine-readable companion | [`catalogue-design-risk-inventory.json`](catalogue-design-risk-inventory.json) |
 | Git author and committer | Cartago `<cartago.relaxingcup@gmail.com>` |
@@ -34,9 +34,9 @@ Documentary triage of the authored dossier data for d00002/S11. This is not a ga
 | `docs/research/odyssey-research/civic-difficulty-mechanical-audit.json` | `b2815ef32913d821fcaff5f9ae6d196bc695b04a64767305ddc513acb125224e` | civic difficulty audit |
 | `docs/design/odyssey-policy.json` | `44f2126ea6f5dd0969445602230245db0adb7da3f636d0e932acd89d68f8f8fc` | declared campaign coverage |
 
-The `faith-origins` hash is the one that changed with the Jerusalem source refinement landed at `1a28698`; the `imperial-church` hash is unchanged by it. Every pointer in the JSON resolves against the hash recorded for its own source.
+The `faith-origins` hash is the one that changed with the Jerusalem source refinement landed at `1a28698`; the `imperial-church` hash is unchanged by it. Both are unchanged by the later develop landings, so the recorded hashes are the current ones. Every pointer in the JSON resolves against the hash recorded for its own source.
 
-The explicit discriminator is `episode.designProfile`. An absent value selects the legacy v2 shape (63 dossiers); the explicit value `alternative-fulfillment-v3` selects the v3 shape (1 dossier: `imperial-church/34-church-transfer-constantinople`). Both shapes were analysed on their own terms. The v3 dossier is never stripped, downgraded to v2 or re-shaped, and its v3-only fields (`accountsByDifficulty`, `referenceCapabilityProfile.fulfillmentPlan`, `optionalFinancialInputs`) are read as authored.
+The explicit discriminator is `episode.designProfile`. **Only an absent `designProfile` selects the legacy v2 shape** (63 dossiers). The explicit value `alternative-fulfillment-v3` selects the v3 shape (1 dossier: `imperial-church/34-church-transfer-constantinople`). Any other present value would be an unsupported contract shape: it would be recorded as `unhandled` for every check and would never be analysed as legacy. The current sources hold no such value, so the inventory records zero unsupported rows, but the rule is implemented and the verifier enforces it. Both known shapes were analysed on their own terms. The v3 dossier is never stripped, downgraded to v2 or re-shaped, and its v3-only fields (`accountsByDifficulty`, `referenceCapabilityProfile.fulfillmentPlan`, `optionalFinancialInputs`) are read as authored.
 
 The civic difficulty audit's 54 static risk candidates measure a different property and are not reused, recounted or restated here as if they were these results.
 
@@ -84,7 +84,33 @@ The initial spendable stocks were compared against the payment totals read direc
 
 In 50 dossiers at least one difficulty profile ends with a negative margin in at least one resource. Every such row is **conditional**: the authored finite `gatherableBank` may legitimately fund the cost, and the dossier itself declares the margin as a static feasibility estimate with native calibration pending. Protected recovery stock and the optional payout reserve are recorded separately and are never subtracted; an optional reward is never treated as mandatory funding.
 
-Negative rows by resource: wood 92, gold 63, food 46, stone 15. Negative rows by campaign: `imperial-church` 91, `faith-origins` 28. The v3 dossier contributes 8 negative rows (2 selections on `standard`, 6 on `hard`), and the authored selection analysis already marks exactly those selections unaffordable.
+Negative rows by resource: wood 92, gold 63, food 46, stone 15. Legacy negative rows by campaign: `faith-origins` 28, `imperial-church` 83.
+
+#### The v3 dossier: combined margin against the explicit optional payment vector
+
+The v3 shape has no `mandatoryDeliveries` vector and no `resource-transaction` requirement, so its mandatory side is the composed selection: every authored selection bundles one recipe from each service, and the selection total cost is the payment. The selection-only margin is therefore `initial spendable - selection totalCost`, and it is preserved exactly as the authored selection analysis states it.
+
+That selection-only margin alone understates the worst case, because the v3 dossier also authors an explicit optional payment vector in `optionalFinancialInputs.optionalTasks[].cost`: **50 wood**, all of it on `side-7`, the `repair` optional task. The inventory therefore now records, per selection and per difficulty profile, a second margin:
+
+```
+combined margin = initial spendable - selection totalCost - explicit optional payment vector
+```
+
+Worked example, the exact case reviewed, on the `easy` profile of `imperial-church/34-church-transfer-constantinople`:
+
+| Term | Value | Pointer |
+|---|---|---|
+| Initial spendable, `easy` | food 420, **wood 380**, gold 260, stone 0 | `/episodes/32/accountsByDifficulty/easy/spendable` |
+| Selection index 3, `meal-shared-hearth` + `shelter-materials`, total cost | food 240, **wood 340**, gold 0, stone 0 | `/episodes/32/difficulty/easy/selections/3/totalCost` |
+| Explicit optional payment vector | food 0, **wood 50**, gold 0, stone 0 | `/episodes/32/optionalFinancialInputs/optionalTasks` |
+| Selection-only margin | food 180, **wood +40**, gold 260, stone 0 | computed |
+| **Combined margin** | food 180, **wood −10**, gold 260, stone 0 | computed |
+
+So the selection is affordable on its own, as the authored `affordable` flag states, and it becomes a 10-wood no-gathering shortfall once the explicit optional payment is also carried. This is a **conditional** shortfall: the authored finite gathering may legitimately fund it. It is not an engine defect, not an impossible mission, and not a claim that the optional payment is mandatory funding. The 50 wood belongs to an optional `repair` task that the player may skip, and the dossier's own optional framing allows a player to finish without it.
+
+Across the v3 dossier, 13 composed selections have a negative combined margin: 1 on `easy`, 5 on `standard` and 7 on `hard`. The 8 selections that are negative on the selection-only margin (`standard` 2, `hard` 6) are exactly the selections whose authored `affordable` flag is false, so the authored affordability analysis and this inventory agree. The JSON keeps both margins for all 9 selections of all 3 profiles, the per-profile combined negative counts, the binding combined selection and the explicit optional payment pointer.
+
+With the v3 dossier included, 124 negative rows in total: 111 legacy difficulty-profile rows and 13 v3 combined selection rows.
 
 Affected dossiers: `faith-origins/02-after-the-siege`, `faith-origins/03-the-governors-question`, `faith-origins/04-a-different-dawn`, `faith-origins/09-district-production-corinth`, `faith-origins/11-distributed-preservation-ephesus`, `faith-origins/12-bounded-community-aid-ephesus`, `faith-origins/14-administrative-intrigue-caesarea`, `faith-origins/15-evacuation-and-recovery-rome-ostia`, `faith-origins/16-comparative-copying-antioch`, `faith-origins/18-parallel-archive-logistics-antioch`, `faith-origins/20-reconciliation-deliveries-rome-ostia`, `faith-origins/22-reading-and-relief-rome-ostia`, `faith-origins/23-petition-escort-sardes`, `faith-origins/24-witness-and-evacuation-lyon`, `faith-origins/25-archive-comparison-lyon`, `faith-origins/26-legal-record-network-carthage`, `faith-origins/27-household-aid-and-memory-carthage`, `faith-origins/28-certificate-and-refuge-egypt-middle-nile`, `faith-origins/29-bounded-evacuation-carthage`; and 31 of the 34 `imperial-church` dossiers, that is every one except `imperial-church/01-milvian-bridge`, `imperial-church/06-finite-field-withdrawal-cibalae` and `imperial-church/09-crossing-and-supply-adrianople`.
 
@@ -129,7 +155,7 @@ The native footprint of every one of these buildings is still uncertified, so th
 
 - No native body footprint, radius, pathfinding result or engine behaviour is certified. A P1 overlap is an authored coordinate collision, not a proved native obstruction.
 - A P2 or P3 corridor observation says nothing about whether a route works in play. Only one dossier authors explicit corridor points, and that one is not flagged.
-- The P4 margins are conditional on authored gathering, not failures. No gathering rate, travel time or player behaviour was measured.
+- The P4 margins are conditional on authored gathering, not failures. No gathering rate, travel time or player behaviour was measured. The v3 combined margin is a worst case that also carries the authored optional payment vector; it never turns that optional payment into a mandatory cost, and the separate selection-only affordability is preserved.
 - The P5 caps are authored numbers. Whether worker units would be placed, and how many, is an open design decision for the owning dossier slice.
 - The P6 wording candidates are editorial proposals; the authored sentences are unchanged.
 - The 54 static risk candidates of the civic difficulty audit are a different metric and are not restated here.
@@ -141,7 +167,7 @@ The native footprint of every one of these buildings is still uncertified, so th
 2. Assign P1 per dossier slice. Each collision is two authored entity ids at one hub and offset, so a fix is a placement decision inside the owning slice, not a catalogue-wide change. No contract, identifier or count changes.
 3. Assign P2 and P3 to the map owner of the affected dossiers, and ask for an explicit alternate polyline or an explicit statement that the hub sequence is the whole authored geometry. One decision per dossier.
 4. Decide the thin authored clearance recorded under check 3. No authored building is inside its receiving circle, but 46 of the 70 recorded buildings sit about 0.6 authored tiles outside it. Confirm that margin as authored, or move the affected offsets inside the owning slice.
-5. Treat P4 as a confirmation exercise, not a repair list. The declared summary vectors already agree with the direct objective payment totals in all 63 legacy dossiers, so the remaining question is whether the authored gathering bank is intended to cover the negative rows, per dossier.
+5. Treat P4 as a confirmation exercise, not a repair list. The declared summary vectors already agree with the direct objective payment totals in all 63 legacy dossiers, so the remaining question is whether the authored gathering bank is intended to cover the negative rows, per dossier. For the v3 dossier the same question is asked against the combined margin, in particular the 10-wood shortfall of the `easy` selection index 3 once the authored 50-wood optional payment is carried.
 6. Treat P5 as one contract question for the architect: either the legacy shape should gain a worker binding, or the legacy dossiers should stop asserting a worker count that no authored entity realises. That decision belongs outside the dossier slices and outside this inventory.
 7. No change to the catalogue metrics: 64 dossiers, 214 pending selections, 2645 screens and 398 secondary objectives are unchanged by this work.
 
@@ -153,7 +179,8 @@ The verifier re-reads the recorded sources and confirms:
 
 - every recorded source SHA-256 still matches the file on disk, and every dossier row carries the hash of its own source;
 - every recorded JSON pointer resolves against the recorded source, including the nested actor, building, circle, corridor, cap, payment, subject and text pointers;
-- the budget arithmetic reproduces from the objective predicates: the direct mandatory and optional totals, the margin without gathering, the mandatory-only margin, the negative resource set, the declared-vector cross-checks and, for the v3 dossier, the unaffordable selection count and the binding selection;
+- the budget arithmetic reproduces from the objective predicates: the direct mandatory and optional totals, the margin without gathering, the mandatory-only margin, the negative resource set, the declared-vector cross-checks and, for the v3 dossier, the selection-only and combined margins of every selection, the optional payment vector, the combined negative counts, the binding selection and the authored affordability flags;
+- the discriminator rule holds: no row is labelled legacy when its source episode carries a `designProfile` key, no v3 row carries another value, no unsupported row is analysed instead of being recorded as `unhandled`, and the recorded shape counts match the rows;
 - the corridor identity and comparison basis reproduce from the source corridors;
 - the building distances, the absolute tiles, the hub distances and the inside-receiving-circle flags reproduce, and no dossier reports a building finding without an intrusion, or a clear result with one;
 - the collision tiles and actor counts reproduce, and no dossier with a duplicated authored position is reported as clear;
@@ -162,7 +189,7 @@ The verifier re-reads the recorded sources and confirms:
 - the row counts, the per-check findings, the finding evidence items, the recorded geometry items, the disposition totals and the finding pairs all reconcile with the rows;
 - the Markdown report states the same per-check counts and the same source hashes as the JSON.
 
-Result: 17 verification checks, 0 failures.
+Result: 19 verification checks, 0 failures.
 
 ## Limitations
 

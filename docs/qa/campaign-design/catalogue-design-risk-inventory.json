@@ -6,7 +6,7 @@
     "method": "one-off read-only analysis of the authored dossier sources; no repository tool, schema or dependency was added or mirrored",
     "unitRef": "refs/heads/wip/minimax-m3.1-flash-preview/implement/d00002-S11-g11/catalogue-design-risk-inventory",
     "session": "7005c2a9",
-    "sourceCommit": "1a286985124d43ad43b9c3ade1c3047448fb3a82"
+    "sourceCommit": "6d824b010d001b1c11f16d06102cf484145c1d0d"
   },
   "scope": {
     "definition": "Every materialized episodes[] dossier of the two campaigns that carry full dossier sources. episodeSelection[] and episodeBlueprints[] are never counted as dossiers.",
@@ -23,11 +23,13 @@
   },
   "discriminator": {
     "key": "episode.designProfile",
-    "rule": "An absent designProfile selects the legacy v2 contract shape; the explicit value alternative-fulfillment-v3 selects the alternative-fulfillment v3 shape. Both shapes are analysed on their own terms and v3 is never stripped or lowered to v2.",
+    "rule": "Only an absent designProfile selects the legacy v2 contract shape. The explicit value alternative-fulfillment-v3 selects the alternative-fulfillment v3 shape. Any other present value is an unsupported contract shape: it is recorded as unhandled for every check and is never analysed as legacy. Both known shapes are analysed on their own terms and v3 is never stripped or lowered to v2.",
     "shapes": {
       "legacy-v2": 63,
       "alternative-fulfillment-v3": 1
     },
+    "unsupportedPresentDiscriminatorRows": 0,
+    "unsupportedPresentDiscriminatorValues": [],
     "v3Dossier": "imperial-church/34-church-transfer-constantinople"
   },
   "checkDefinitions": {
@@ -239,6 +241,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/01-administrative-records-caesarea/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -839,6 +842,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -1435,6 +1439,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/03-shared-provision-jerusalem/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -1965,6 +1970,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/04-testimony-relay-damascus/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -2528,6 +2534,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/05-witness-comparison-jerusalem/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -3058,6 +3065,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/01-roads-of-antioch/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -3638,6 +3646,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/07-household-relocation-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -4259,6 +4268,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/08-delegate-logistics-jerusalem/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -4855,6 +4865,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/09-district-production-corinth/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -5483,6 +5494,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/10-copy-and-relay-corinth/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -6076,6 +6088,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/11-distributed-preservation-ephesus/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -6704,6 +6717,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/12-bounded-community-aid-ephesus/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -7390,6 +7404,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/13-consignment-and-correspondence-corinth/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -8054,6 +8069,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/14-administrative-intrigue-caesarea/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -8652,6 +8668,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/15-evacuation-and-recovery-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -9371,6 +9388,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/16-comparative-copying-antioch/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -9906,6 +9924,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/02-after-the-siege/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -10477,6 +10496,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/18-parallel-archive-logistics-antioch/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -11041,6 +11061,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/19-hospitality-network-antioch/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -11544,6 +11565,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/20-reconciliation-deliveries-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -12052,6 +12074,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/03-the-governors-question/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -12713,6 +12736,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/22-reading-and-relief-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -13295,6 +13319,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/23-petition-escort-sardes/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -13869,6 +13894,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/24-witness-and-evacuation-lyon/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -14538,6 +14564,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/25-archive-comparison-lyon/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -15112,6 +15139,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/26-legal-record-network-carthage/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -15744,6 +15772,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/27-household-aid-and-memory-carthage/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -16352,6 +16381,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/28-certificate-and-refuge-egypt-middle-nile/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -16919,6 +16949,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/29-bounded-evacuation-carthage/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -17578,6 +17609,7 @@
       "renderedDossierPath": "docs/wiki/faith-origins/episodes/04-a-different-dawn/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -18115,6 +18147,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/01-milvian-bridge/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -18955,6 +18988,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/02-bounded-negotiation-milan/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -19496,6 +19530,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/03-property-and-record-restoration-nicomedia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -20189,6 +20224,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/04-rival-delegation-reception-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -20812,6 +20848,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/05-delegate-logistics-arles/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -21419,6 +21456,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/06-finite-field-withdrawal-cibalae/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -21885,6 +21923,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/07-court-record-logistics-rome-ostia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -22423,6 +22462,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/09-crossing-and-supply-adrianople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -22891,6 +22931,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/10-land-and-strait-logistics-chrysopolis/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -23439,6 +23480,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/08-disputed-correspondence-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "finding",
@@ -23938,6 +23980,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/11-council-record-escort-antioch/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -24417,6 +24460,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/02-nicaea/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -25024,6 +25068,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/13-finite-works-logistics-jerusalem/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -25671,6 +25716,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/03-new-capital/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -26190,6 +26236,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/15-long-distance-dispatch-nicomedia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -26744,6 +26791,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/16-witness-record-comparison-tyre/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -27293,6 +27341,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/17-rumour-and-source-investigation-constantinople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -27840,6 +27889,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/18-administrative-transition-nicomedia/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -28362,6 +28412,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/19-competing-dispatches-constantinople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -28870,6 +28921,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/20-separate-reception-logistics-sardica/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -29386,6 +29438,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/21-returning-households-escort-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -29864,6 +29917,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/22-civilian-record-preservation-milan/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -30326,6 +30380,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/23-bounded-political-pressure-milan/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -30873,6 +30928,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/24-night-civilian-withdrawal-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -31422,6 +31478,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/25-delegate-and-draft-network-rimini/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -31930,6 +31987,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/26-plural-civic-logistics-constantinople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -32414,6 +32472,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/27-return-and-departure-records-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -32960,6 +33019,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/30-policy-reversal-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -33456,6 +33516,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/31-contested-succession-alexandria/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -34026,6 +34087,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/32-defeat-and-withdrawal-adrianople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -34519,6 +34581,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/33-accession-and-reassembly-sirmium/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -35022,6 +35085,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/28-law-and-local-reception-thessalonica/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -35562,6 +35626,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/34-church-transfer-constantinople/15-odyssey-dossier.md",
       "contractShape": "alternative-fulfillment-v3",
       "discriminatorEvidence": "/episodes/32/designProfile",
+      "designProfileValue": "alternative-fulfillment-v3",
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
@@ -36022,7 +36087,7 @@
         "initial-spendable-versus-payments": {
           "status": "finding",
           "disposition": "conditional-budget",
-          "summary": "2 of 3 difficulty profiles leave at least one authored composed selection outside the initial spendable stock. The authored selection analysis already marks those selections unaffordable, and the v3 profile is analysed on its own contract shape.",
+          "summary": "3 of 3 difficulty profiles have at least one composed selection whose combined margin is negative, that is the initial spendable stock minus the selection total cost minus the explicit optional payment vector. The shortfall is conditional: the authored finite gathering may legitimately fund it, and it is not an engine defect nor an impossible mission. The separate selection-only affordability is preserved.",
           "evidence": [
             {
               "evidenceKind": "budget-profile",
@@ -36061,9 +36126,83 @@
                 "gold": 0,
                 "stone": 0
               },
+              "explicitOptionalPaymentPointer": "/episodes/32/optionalFinancialInputs/optionalTasks",
+              "explicitOptionalPaymentEvidence": [
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/0",
+                  "optionalObjectiveId": "side-1",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/1",
+                  "optionalObjectiveId": "side-2",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/2",
+                  "optionalObjectiveId": "side-3",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/3",
+                  "optionalObjectiveId": "side-4",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/4",
+                  "optionalObjectiveId": "side-5",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/5",
+                  "optionalObjectiveId": "side-6",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/6",
+                  "optionalObjectiveId": "side-7",
+                  "cost": {
+                    "food": 0,
+                    "wood": 50,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                }
+              ],
+              "combinedMarginRule": "initial spendable - selection totalCost - explicit optional payment vector",
               "composedSelectionCount": 9,
               "authoredUnaffordableSelectionCount": 0,
-              "bindingSelection": {
+              "selectionOnlyBindingSelection": {
                 "selectionIndex": 3,
                 "recipeIds": [
                   "meal-shared-hearth",
@@ -36082,8 +36221,321 @@
                   "stone": 0
                 }
               },
-              "negativeMarginSelections": [],
-              "status": "covered"
+              "selectionOnlyNegativeSelections": [],
+              "combinedBindingSelection": {
+                "selectionIndex": 3,
+                "recipeIds": [
+                  "meal-shared-hearth",
+                  "shelter-materials"
+                ],
+                "totalCost": {
+                  "food": 240,
+                  "wood": 340,
+                  "gold": 0,
+                  "stone": 0
+                },
+                "selectionOnlyMargin": {
+                  "food": 180,
+                  "wood": 40,
+                  "gold": 260,
+                  "stone": 0
+                },
+                "combinedMargin": {
+                  "food": 180,
+                  "wood": -10,
+                  "gold": 260,
+                  "stone": 0
+                }
+              },
+              "combinedNegativeSelectionCount": 1,
+              "combinedNegativeSelections": [
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 180,
+                    "wood": 40,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 180,
+                    "wood": -10,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                }
+              ],
+              "selections": [
+                {
+                  "selectionIndex": 0,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 320,
+                    "wood": 240,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 100,
+                    "wood": 140,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 100,
+                    "wood": 90,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 1,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 340,
+                    "wood": 160,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 80,
+                    "wood": 220,
+                    "gold": 240,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 80,
+                    "wood": 170,
+                    "gold": 240,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 2,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 300,
+                    "wood": 100,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 120,
+                    "wood": 280,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 120,
+                    "wood": 230,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 180,
+                    "wood": 40,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 180,
+                    "wood": -10,
+                    "gold": 260,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 4,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 260,
+                    "wood": 260,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 160,
+                    "wood": 120,
+                    "gold": 240,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 160,
+                    "wood": 70,
+                    "gold": 240,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 5,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 220,
+                    "wood": 200,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 200,
+                    "wood": 180,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 200,
+                    "wood": 130,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 6,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 180,
+                    "wood": 240,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 240,
+                    "wood": 140,
+                    "gold": 160,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 240,
+                    "wood": 90,
+                    "gold": 160,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 7,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 200,
+                    "wood": 160,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 220,
+                    "wood": 220,
+                    "gold": 140,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 220,
+                    "wood": 170,
+                    "gold": 140,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 8,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 160,
+                    "wood": 100,
+                    "gold": 210,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 260,
+                    "wood": 280,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 260,
+                    "wood": 230,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                }
+              ],
+              "status": "conditional"
             },
             {
               "evidenceKind": "budget-profile",
@@ -36122,9 +36574,83 @@
                 "gold": 0,
                 "stone": 0
               },
+              "explicitOptionalPaymentPointer": "/episodes/32/optionalFinancialInputs/optionalTasks",
+              "explicitOptionalPaymentEvidence": [
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/0",
+                  "optionalObjectiveId": "side-1",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/1",
+                  "optionalObjectiveId": "side-2",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/2",
+                  "optionalObjectiveId": "side-3",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/3",
+                  "optionalObjectiveId": "side-4",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/4",
+                  "optionalObjectiveId": "side-5",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/5",
+                  "optionalObjectiveId": "side-6",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/6",
+                  "optionalObjectiveId": "side-7",
+                  "cost": {
+                    "food": 0,
+                    "wood": 50,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                }
+              ],
+              "combinedMarginRule": "initial spendable - selection totalCost - explicit optional payment vector",
               "composedSelectionCount": 9,
               "authoredUnaffordableSelectionCount": 2,
-              "bindingSelection": {
+              "selectionOnlyBindingSelection": {
                 "selectionIndex": 3,
                 "recipeIds": [
                   "meal-shared-hearth",
@@ -36143,7 +36669,7 @@
                   "stone": 0
                 }
               },
-              "negativeMarginSelections": [
+              "selectionOnlyNegativeSelections": [
                 {
                   "selectionIndex": 3,
                   "recipeIds": [
@@ -36191,6 +36717,447 @@
                   "authoredAffordableFlag": false
                 }
               ],
+              "combinedBindingSelection": {
+                "selectionIndex": 3,
+                "recipeIds": [
+                  "meal-shared-hearth",
+                  "shelter-materials"
+                ],
+                "totalCost": {
+                  "food": 240,
+                  "wood": 340,
+                  "gold": 0,
+                  "stone": 0
+                },
+                "selectionOnlyMargin": {
+                  "food": 100,
+                  "wood": -60,
+                  "gold": 150,
+                  "stone": 0
+                },
+                "combinedMargin": {
+                  "food": 100,
+                  "wood": -110,
+                  "gold": 150,
+                  "stone": 0
+                }
+              },
+              "combinedNegativeSelectionCount": 5,
+              "combinedNegativeSelections": [
+                {
+                  "selectionIndex": 0,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 320,
+                    "wood": 240,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 20,
+                    "wood": 40,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 20,
+                    "wood": -10,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 100,
+                    "wood": -60,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 100,
+                    "wood": -110,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 4,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 260,
+                    "wood": 260,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 80,
+                    "wood": 20,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 80,
+                    "wood": -30,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 6,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 180,
+                    "wood": 240,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 160,
+                    "wood": 40,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 160,
+                    "wood": -10,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 8,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 160,
+                    "wood": 100,
+                    "gold": 210,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 180,
+                    "wood": 180,
+                    "gold": -60,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 180,
+                    "wood": 130,
+                    "gold": -60,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "gold"
+                  ],
+                  "authoredAffordableFlag": false
+                }
+              ],
+              "selections": [
+                {
+                  "selectionIndex": 0,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 320,
+                    "wood": 240,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 20,
+                    "wood": 40,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 20,
+                    "wood": -10,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 1,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 340,
+                    "wood": 160,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 0,
+                    "wood": 120,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 0,
+                    "wood": 70,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 2,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 300,
+                    "wood": 100,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 40,
+                    "wood": 180,
+                    "gold": 40,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 40,
+                    "wood": 130,
+                    "gold": 40,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 100,
+                    "wood": -60,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 100,
+                    "wood": -110,
+                    "gold": 150,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "wood"
+                  ],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 4,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 260,
+                    "wood": 260,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 80,
+                    "wood": 20,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 80,
+                    "wood": -30,
+                    "gold": 130,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 5,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 220,
+                    "wood": 200,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 120,
+                    "wood": 80,
+                    "gold": 40,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 120,
+                    "wood": 30,
+                    "gold": 40,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 6,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 180,
+                    "wood": 240,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 160,
+                    "wood": 40,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 160,
+                    "wood": -10,
+                    "gold": 50,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 7,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 200,
+                    "wood": 160,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 140,
+                    "wood": 120,
+                    "gold": 30,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 140,
+                    "wood": 70,
+                    "gold": 30,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 8,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 160,
+                    "wood": 100,
+                    "gold": 210,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 180,
+                    "wood": 180,
+                    "gold": -60,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 180,
+                    "wood": 130,
+                    "gold": -60,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "gold"
+                  ],
+                  "combinedNegativeResources": [
+                    "gold"
+                  ],
+                  "authoredAffordableFlag": false
+                }
+              ],
               "status": "conditional"
             },
             {
@@ -36230,9 +37197,83 @@
                 "gold": 0,
                 "stone": 0
               },
+              "explicitOptionalPaymentPointer": "/episodes/32/optionalFinancialInputs/optionalTasks",
+              "explicitOptionalPaymentEvidence": [
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/0",
+                  "optionalObjectiveId": "side-1",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/1",
+                  "optionalObjectiveId": "side-2",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/2",
+                  "optionalObjectiveId": "side-3",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/3",
+                  "optionalObjectiveId": "side-4",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/4",
+                  "optionalObjectiveId": "side-5",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/5",
+                  "optionalObjectiveId": "side-6",
+                  "cost": {
+                    "food": 0,
+                    "wood": 0,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                },
+                {
+                  "pointer": "/episodes/32/optionalFinancialInputs/optionalTasks/6",
+                  "optionalObjectiveId": "side-7",
+                  "cost": {
+                    "food": 0,
+                    "wood": 50,
+                    "gold": 0,
+                    "stone": 0
+                  }
+                }
+              ],
+              "combinedMarginRule": "initial spendable - selection totalCost - explicit optional payment vector",
               "composedSelectionCount": 9,
               "authoredUnaffordableSelectionCount": 6,
-              "bindingSelection": {
+              "selectionOnlyBindingSelection": {
                 "selectionIndex": 3,
                 "recipeIds": [
                   "meal-shared-hearth",
@@ -36251,7 +37292,7 @@
                   "stone": 0
                 }
               },
-              "negativeMarginSelections": [
+              "selectionOnlyNegativeSelections": [
                 {
                   "selectionIndex": 0,
                   "recipeIds": [
@@ -36392,6 +37433,520 @@
                   "authoredAffordableFlag": false
                 }
               ],
+              "combinedBindingSelection": {
+                "selectionIndex": 3,
+                "recipeIds": [
+                  "meal-shared-hearth",
+                  "shelter-materials"
+                ],
+                "totalCost": {
+                  "food": 240,
+                  "wood": 340,
+                  "gold": 0,
+                  "stone": 0
+                },
+                "selectionOnlyMargin": {
+                  "food": 60,
+                  "wood": -120,
+                  "gold": 120,
+                  "stone": 0
+                },
+                "combinedMargin": {
+                  "food": 60,
+                  "wood": -170,
+                  "gold": 120,
+                  "stone": 0
+                }
+              },
+              "combinedNegativeSelectionCount": 7,
+              "combinedNegativeSelections": [
+                {
+                  "selectionIndex": 0,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 320,
+                    "wood": 240,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": -20,
+                    "wood": -20,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": -20,
+                    "wood": -70,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "food",
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 1,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 340,
+                    "wood": 160,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": -40,
+                    "wood": 60,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": -40,
+                    "wood": 10,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "food"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 60,
+                    "wood": -120,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 60,
+                    "wood": -170,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 4,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 260,
+                    "wood": 260,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 40,
+                    "wood": -40,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 40,
+                    "wood": -90,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 5,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 220,
+                    "wood": 200,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 80,
+                    "wood": 20,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 80,
+                    "wood": -30,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 6,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 180,
+                    "wood": 240,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 120,
+                    "wood": -20,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 120,
+                    "wood": -70,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 8,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 160,
+                    "wood": 100,
+                    "gold": 210,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 140,
+                    "wood": 120,
+                    "gold": -90,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 140,
+                    "wood": 70,
+                    "gold": -90,
+                    "stone": 0
+                  },
+                  "negativeResources": [
+                    "gold"
+                  ],
+                  "authoredAffordableFlag": false
+                }
+              ],
+              "selections": [
+                {
+                  "selectionIndex": 0,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 320,
+                    "wood": 240,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": -20,
+                    "wood": -20,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": -20,
+                    "wood": -70,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "food",
+                    "wood"
+                  ],
+                  "combinedNegativeResources": [
+                    "food",
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 1,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 340,
+                    "wood": 160,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": -40,
+                    "wood": 60,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": -40,
+                    "wood": 10,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "food"
+                  ],
+                  "combinedNegativeResources": [
+                    "food"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 2,
+                  "recipeIds": [
+                    "meal-direct",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 300,
+                    "wood": 100,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 0,
+                    "wood": 120,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 0,
+                    "wood": 70,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 3,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 240,
+                    "wood": 340,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 60,
+                    "wood": -120,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 60,
+                    "wood": -170,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "wood"
+                  ],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 4,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 260,
+                    "wood": 260,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 40,
+                    "wood": -40,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 40,
+                    "wood": -90,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "wood"
+                  ],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 5,
+                  "recipeIds": [
+                    "meal-shared-hearth",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 220,
+                    "wood": 200,
+                    "gold": 110,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 80,
+                    "wood": 20,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 80,
+                    "wood": -30,
+                    "gold": 10,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 6,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-materials"
+                  ],
+                  "totalCost": {
+                    "food": 180,
+                    "wood": 240,
+                    "gold": 100,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 120,
+                    "wood": -20,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 120,
+                    "wood": -70,
+                    "gold": 20,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "wood"
+                  ],
+                  "combinedNegativeResources": [
+                    "wood"
+                  ],
+                  "authoredAffordableFlag": false
+                },
+                {
+                  "selectionIndex": 7,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-local-kit"
+                  ],
+                  "totalCost": {
+                    "food": 200,
+                    "wood": 160,
+                    "gold": 120,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 100,
+                    "wood": 60,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 100,
+                    "wood": 10,
+                    "gold": 0,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [],
+                  "combinedNegativeResources": [],
+                  "authoredAffordableFlag": true
+                },
+                {
+                  "selectionIndex": 8,
+                  "recipeIds": [
+                    "meal-purchased",
+                    "shelter-rented"
+                  ],
+                  "totalCost": {
+                    "food": 160,
+                    "wood": 100,
+                    "gold": 210,
+                    "stone": 0
+                  },
+                  "selectionOnlyMargin": {
+                    "food": 140,
+                    "wood": 120,
+                    "gold": -90,
+                    "stone": 0
+                  },
+                  "combinedMargin": {
+                    "food": 140,
+                    "wood": 70,
+                    "gold": -90,
+                    "stone": 0
+                  },
+                  "selectionOnlyNegativeResources": [
+                    "gold"
+                  ],
+                  "combinedNegativeResources": [
+                    "gold"
+                  ],
+                  "authoredAffordableFlag": false
+                }
+              ],
               "status": "conditional"
             }
           ],
@@ -36399,6 +37954,17 @@
             "contractShape": "alternative-fulfillment-v3",
             "mandatoryPaymentSource": "referenceCapabilityProfile.fulfillmentPlan recipe costs; the composed selection bundles one recipe per service, so this contract shape has no separate mandatoryDeliveries vector and it is not lowered to the legacy shape",
             "optionalPaymentSource": "optionalFinancialInputs.optionalTasks[].cost",
+            "explicitOptionalPaymentVector": {
+              "food": 0,
+              "wood": 50,
+              "gold": 0,
+              "stone": 0
+            },
+            "explicitOptionalPaymentCount": 7,
+            "combinedMarginRule": "initial spendable - selection totalCost - explicit optional payment vector",
+            "selectionOnlyAffordabilityRetained": true,
+            "optionalPaymentIsNotMandatory": "The explicit optional payment vector is the cost of the authored optional tasks. The combined margin is the no-gathering worst case in which the player also pays that vector, and it does not make an optional payment mandatory. The separate selection-only affordability and its authored flag are kept intact so an expensive unchosen option is never alleged to be required.",
+            "conditionalShortfallReading": "A negative combined margin is a conditional no-gathering shortfall, not an engine defect and not an impossible mission.",
             "protectedRecoveryAndOptionalReserveExcludedFromMargin": true,
             "v3ShapePreserved": true
           }
@@ -36659,6 +38225,7 @@
       "renderedDossierPath": "docs/wiki/imperial-church/episodes/29-council-and-final-perspective-constantinople/15-odyssey-dossier.md",
       "contractShape": "legacy-v2",
       "discriminatorEvidence": "episode.designProfile absent",
+      "designProfileValue": null,
       "checks": {
         "initial-actor-position-collision": {
           "status": "clear",
