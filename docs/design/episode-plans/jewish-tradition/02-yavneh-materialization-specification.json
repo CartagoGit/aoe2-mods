@@ -13,6 +13,10 @@
     {
       "path": "docs/design/episode-plans/jewish-tradition/02-yavneh-profile-architect-decisions.json",
       "sha256": "5a7b63d3c00d8a748717298f48d4615ba1250317b73e5614f9533ac01c73de26"
+    },
+    {
+      "path": "docs/wiki/jewish-tradition/research/yavneh-allocation-decision.json",
+      "sha256": "80ec2b2bfe683f5c116f7bc082df801a5f308b9db3860018dc554ddf82c12f47"
     }
   ],
   "precedence": "This explicit seven-secondary revision overrides only the earlier combined-copy blocker, side bindings/portfolios and named source captions. Main world, main recipes, geography and all resource values are retained.",
@@ -286,7 +290,7 @@
       "receivingZones": [
         {
           "offsetTiles": [
-            8,
+            0,
             0
           ],
           "radiusTiles": 3
@@ -739,11 +743,10 @@
       "Meeting C and D require distinct actual receiving courts, both for the selected output and the unchanged original recipient.",
       "All selected results and three original recipients require fresh alive presence at their selected courts at final; historical receipt or attendance is insufficient.",
       "Loss of required recipient/indispensable selected result defeats before simultaneous victory; worker loss after completed work does not undo it.",
-      "Both original copy carriers must retain their west/north origins; i00011 must resolve explicit compatible semantics before composition, never giant offset aliases.",
       "Repair30W, trade20G and guests20F charge before reserve rewards. Require two aid originals and two guests, with no replacement or reward for optional loss.",
       "Save/load at reservation, cancellation, commitment, work/generation, every reception/reward and final arbitration; rotate observation epoch and reject queued stale actions.",
       "Verify all22 sites/27 interhub links/20 local approaches against approved terrain and actual circles/footprints; no modern river course or empty waterline certifies land.",
-      "Check all42 EN/es-ES screen texts, role order, source cautions, cost/work/court display, contextual service completion and the real next episode03.",
+      "Check all44 EN/es-ES screen texts, role order, source cautions, cost/work/court display, contextual service completion and the real next episode03.",
       "Native v3 and multi-origin modes remain rejected until their explicit real adapters and engine QA exist; no fallback to old conjunctive payments.",
       "Revised design: west and north copy each has exactly one original, its own true origin/route, scoped receipt/effect and independent failure. Opposite or spare carrier cannot complete it.",
       "Seven-task BFS24rows preserve8/5/3 and8/7/6; all directly affordable main choices also have all-seven witnesses after immediate funding.",
