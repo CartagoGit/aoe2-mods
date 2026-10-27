@@ -361,7 +361,9 @@ def validate_household_contract(dossier, binding):
     if validator is None:
         raise ValueError("shared native secondary contract validator is unavailable")
     validator(dossier, binding)
-    return list(HOUSEHOLD_IDS), LEDGER, RECEIPT
+    ledger = objectives[0]["predicate"]["exportedLedgers"][0]["id"]
+    receipt = objectives[1]["predicate"]["requirements"][0]["paidFlag"]
+    return list(HOUSEHOLD_IDS), ledger, receipt
 
 
 def _validate_native_handles(units, binding):
@@ -394,6 +396,14 @@ class HouseholdController(NativeMissionController):
         self.originals = list(binding["households"]["entities"])
         self.court_zone = binding["households"]["courtZone"]
         self.refuge_zone = binding["households"]["refugeZone"]
+        self.required_count = binding["households"]["requiredCount"]
+        self.survivor_minimum = dossier["worldContract"]["survivorGroups"][0][
+            "minimumAliveOrAlreadySafe"
+        ]
+        payment_requirement = dossier["objectivePlan"][1]["predicate"]["requirements"][0]
+        self.payment_cost = dict(payment_requirement["amounts"])
+        self.receipt = payment_requirement["paidFlag"]
+        self.ledger = dossier["objectivePlan"][0]["predicate"]["exportedLedgers"][0]["id"]
         self.court_arrival = [
             self.variable("court-arrival-" + str(index))
             for index in range(len(self.originals))
@@ -414,7 +424,7 @@ class HouseholdController(NativeMissionController):
             if item["to"] == "victory"
         )
         self.semantic_variables = {
-            RECEIPT: {"variable": self.payment, "trueValue": 1},
+            self.receipt: {"variable": self.payment, "trueValue": 1},
             f"{transition['on']}:{transition['objectiveId']}": {
                 "variable": self.latch,
                 "trueValue": 1,
@@ -442,7 +452,7 @@ class HouseholdController(NativeMissionController):
             lines.append("    }")
         lines.extend(
             [
-                "    if (cdf_alive < " + str(SURVIVOR_MINIMUM) + ") {",
+                "    if (cdf_alive < " + str(self.survivor_minimum) + ") {",
                 f"        xsSetTriggerVariable({self.terminal}, 2);",
                 f"        xsSetTriggerVariable({self.phase}, 14);",
                 "        return;",
@@ -451,7 +461,7 @@ class HouseholdController(NativeMissionController):
                 f"    if (xsTriggerVariable({self.phase}) != 3) {{ return; }}",
                 f"    if (xsTriggerVariable({self.payment}) != 1) {{ return; }}",
                 f"    if (xsTriggerVariable({self.terminal}) != 0) {{ return; }}",
-                "    if (cdf_qualified >= " + str(REQUIRED_COUNT) + ") {",
+                "    if (cdf_qualified >= " + str(self.required_count) + ") {",
                 f"        xsSetTriggerVariable({self.latch}, 1);",
                 f"        xsSetTriggerVariable({self.terminal}, 1);",
                 f"        xsSetTriggerVariable({self.phase}, 13);",
@@ -464,10 +474,10 @@ class HouseholdController(NativeMissionController):
         court = self.court_zone
         refuge = self.refuge_zone
         living = self.function(
-            _render_living_total, self.alive_functions(), SURVIVOR_MINIMUM
+            _render_living_total, self.alive_functions(), self.survivor_minimum
         )
         loss = self.function(
-            _render_living_loss, self.alive_functions(), SURVIVOR_MINIMUM
+            _render_living_loss, self.alive_functions(), self.survivor_minimum
         )
         loss_trigger = self.trigger("household-loss")
         self.condition(loss_trigger, loss)
@@ -499,7 +509,7 @@ class HouseholdController(NativeMissionController):
             self.set(refuge_observe, self.refuge_arrival[index], 1)
             self.set(refuge_observe, self.held[index], 1)
         court_total = self.function(
-            _render_flag_total, self.court_arrival, REQUIRED_COUNT
+            _render_flag_total, self.court_arrival, self.required_count
         )
         first = self.trigger("court-objective-reached", phase=1)
         self.objective_ui(
@@ -514,7 +524,7 @@ class HouseholdController(NativeMissionController):
         pay = self.function(
             self.transactions["render_payment_function"],
             1,
-            dict(PAYMENT_COST),
+            dict(self.payment_cost),
             self.payment,
             {self.ready: 1, self.terminal: 0, self.phase: 2},
         )
