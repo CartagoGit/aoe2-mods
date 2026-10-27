@@ -822,6 +822,47 @@ class NativeHouseholdControllerTests(unittest.TestCase):
         self.assertEqual([32.99, 30.99], entity["position"])
         ADAPTER["validate_household_contract"](self.dossier, self.binding)
 
+    def test_corridor_geometry_must_be_authored_and_usable(self):
+        def corridor(binding, index=1):
+            return binding["map"]["corridors"][index]
+
+        mutations = [
+            lambda d, b: corridor(b).__setitem__("points", []),
+            lambda d, b: corridor(b).__setitem__("points", [[12.0, 31.0]]),
+            lambda d, b: corridor(b).__setitem__(
+                "points", [[12.0, 31.0], [12.0, 31.0], [12.0, 31.0]]
+            ),
+            lambda d, b: corridor(b).__setitem__(
+                "points", [[12.0, 31.0], [float("nan"), 31.0]]
+            ),
+            lambda d, b: corridor(b).__setitem__(
+                "points", [[12.0, 31.0], [float("inf"), 31.0]]
+            ),
+            lambda d, b: corridor(b).__setitem__(
+                "points", [[12.0, 31.0], [200.0, 31.0]]
+            ),
+            lambda d, b: corridor(b).__setitem__(
+                "points", [[12.0, 31.0], "north-road"]
+            ),
+            lambda d, b: corridor(b).__setitem__("points", [[12.0, 31.0], [12.0]]),
+            lambda d, b: corridor(b).__setitem__("points", None),
+            lambda d, b: corridor(b).__setitem__("widthTiles", 0),
+            lambda d, b: corridor(b).__setitem__("widthTiles", -4),
+            lambda d, b: corridor(b).__setitem__("widthTiles", "4"),
+            lambda d, b: corridor(b).__setitem__("widthTiles", float("inf")),
+            lambda d, b: b["map"]["corridors"].append(
+                dict(corridor(b, 0), id="main")
+            ),
+            lambda d, b: b["map"]["corridors"].__setitem__(0, dict(corridor(b, 0), id="")),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+        ADAPTER["validate_household_contract"](self.dossier, self.binding)
+
     def test_unsupported_contracts_are_rejected_before_any_native_change(self):
         mutations = [
             lambda d, b: d["objectivePlan"][2]["predicate"]["requirements"].append(

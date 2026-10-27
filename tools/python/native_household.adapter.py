@@ -355,17 +355,67 @@ def _check_optional_payments(dossier, binding):
 
 
 def _check_corridors(dossier, binding):
-    corridors = {
-        corridor.get("id") for corridor in binding["map"].get("corridors", []) or []
-    }
-    for side in dossier["secondaryObjectives"]:
-        for effect in side["effects"]:
+    """Fail closed on the corridor geometry; no route is approved or invented."""
+    size = binding["map"]["size"]
+    if type(size) is not int or size <= 0:
+        raise ValueError("native map size must be a positive integer")
+    corridors = binding["map"].get("corridors")
+    if corridors is None:
+        corridors = []
+    if not isinstance(corridors, list):
+        raise ValueError("binding corridors must be a list")
+    seen = []
+    for corridor in corridors:
+        if (
+            not isinstance(corridor, dict)
+            or not isinstance(corridor.get("id"), str)
+            or not corridor["id"]
+        ):
+            raise ValueError("binding corridors need unique nonempty identifiers")
+        if corridor["id"] in seen:
+            raise ValueError("binding corridor identifiers must be unique")
+        seen.append(corridor["id"])
+        width = corridor.get("widthTiles")
+        if width is not None and (not _finite_number(width) or width <= 0):
+            raise ValueError("binding corridor width must be a positive finite number")
+        points = corridor.get("points")
+        if not isinstance(points, list) or len(points) < 2:
+            raise ValueError("binding corridors need at least two points")
+        for point in points:
             if (
-                effect["kind"] == "mark-alternative-route"
-                and effect.get("corridorId") not in corridors
+                not isinstance(point, (list, tuple))
+                or len(point) != 2
+                or any(
+                    not _finite_number(value) or not 0 <= value < size
+                    for value in point
+                )
             ):
                 raise ValueError(
+                    "binding corridor points must be finite pairs inside the map"
+                )
+    for side in dossier["secondaryObjectives"]:
+        for effect in side["effects"]:
+            if effect["kind"] != "mark-alternative-route":
+                continue
+            corridor = next(
+                (
+                    item
+                    for item in corridors
+                    if item["id"] == effect.get("corridorId")
+                ),
+                None,
+            )
+            if corridor is None:
+                raise ValueError(
                     "optional guide effect needs an authored corridor in the binding"
+                )
+            points = corridor["points"]
+            if not any(
+                math.dist(points[index], points[index + 1]) > 0
+                for index in range(len(points) - 1)
+            ):
+                raise ValueError(
+                    "the authored corridor must contain a nonzero segment"
                 )
 
 
