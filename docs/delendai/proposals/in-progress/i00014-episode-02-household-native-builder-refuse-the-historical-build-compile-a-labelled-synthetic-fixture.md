@@ -2,10 +2,14 @@
 id: i00014
 title: "Episode-02 household native builder: refuse the historical build, compile a labelled synthetic fixture"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: campaign-design
 date: 2026-10-27
+last-transition-id: f5307b3c-23a7-44b2-9d0e-ac0cfa113d1d
+last-correlation-id: f5307b3c-23a7-44b2-9d0e-ac0cfa113d1d
+last-transition-from: ready
+last-transition-at: 2026-10-27T19:45:42.960Z
 ---
 
 # i00014 — Episode-02 household native builder: refuse the historical build, compile a labelled synthetic fixture
