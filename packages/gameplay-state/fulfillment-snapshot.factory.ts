@@ -88,7 +88,8 @@ export function validateFulfillmentSnapshot(
   input: unknown,
 ): FulfillmentSnapshot {
   const state = fulfillmentSnapshotSchema.parse(input);
-  validateFulfillmentCore(sharedCapabilityProfile(profile), state.core);
+  const sharedProfile = sharedCapabilityProfile(profile);
+  validateFulfillmentCore(sharedProfile, state.core);
   const fail = (detail: string): never => {
     throw new Error(`fulfillment.snapshot-invalid: ${detail}`);
   };
@@ -96,7 +97,7 @@ export function validateFulfillmentSnapshot(
     state.contractFingerprint !== fulfillmentFingerprint(profile) ||
     state.planId !== profile.fulfillmentPlan.id ||
     state.core.contractFingerprint !==
-      capabilityFingerprint(sharedCapabilityProfile(profile))
+      capabilityFingerprint(sharedProfile)
   )
     fail("contract mismatch");
   const expense = sharedExpenditure(profile, state);
@@ -282,21 +283,24 @@ export function fulfillmentPresent(
   const active = state.active;
   if (!active || active.status !== "committed") return false;
   const recipes = selectedRecipes(profile, active.selection);
-  return (
-    !!recipes &&
-    recipes.every(
-      (recipe) =>
-        active.generated.includes(recipe.id) &&
-        [recipe.outputEntityId, ...recipe.recipientIds].every(
-          (id) =>
-            state.core.entityStates[id] !== "destroyed" &&
-            generationReady(sharedCapabilityProfile(profile), state.core, id) &&
-            state.core.liveSpatialObservation?.entities[id]?.alive === true &&
-            state.core.liveSpatialObservation.entities[id]?.zones.includes(
-              recipe.receptionZoneId,
-            ),
-        ),
-    )
+  if (!recipes) return false;
+  let sharedProfile: ReturnType<typeof sharedCapabilityProfile> | undefined;
+  return recipes.every(
+    (recipe) =>
+      active.generated.includes(recipe.id) &&
+      [recipe.outputEntityId, ...recipe.recipientIds].every(
+        (id) =>
+          state.core.entityStates[id] !== "destroyed" &&
+          generationReady(
+            (sharedProfile ??= sharedCapabilityProfile(profile)),
+            state.core,
+            id,
+          ) &&
+          state.core.liveSpatialObservation?.entities[id]?.alive === true &&
+          state.core.liveSpatialObservation.entities[id]?.zones.includes(
+            recipe.receptionZoneId,
+          ),
+      ),
   );
 }
 
