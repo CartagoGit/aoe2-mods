@@ -78,13 +78,21 @@ The `main` and `relief` corridors differ by hub sequence only, and neither autho
 
 The remaining 44 dossiers author no `main`/`relief` pair at all and are recorded as `not-applicable`, with their authored corridor ids listed per row.
 
-### P4 — Negative no-gathering margin (50 dossiers, 119 profile rows) — `conditional-budget`
+### P4 — Negative no-gathering margin (50 dossiers, 124 conditional cases) — `conditional-budget`
 
 The initial spendable stocks were compared against the payment totals read directly from the objective predicates, not from the declared summary vectors. The mandatory total is the sum of `objectivePlan[].predicate.requirements[]` of kind `resource-transaction`; the optional total is the sum of `secondaryObjectives[].predicate.requirements[]` of kind `atomic-payment`. In all 63 legacy dossiers the direct totals reproduce the declared `mandatoryDeliveries` and `maxOptionalCosts` vectors exactly, so the declared summaries are confirmed, not assumed.
 
-In 50 dossiers at least one difficulty profile ends with a negative margin in at least one resource. Every such row is **conditional**: the authored finite `gatherableBank` may legitimately fund the cost, and the dossier itself declares the margin as a static feasibility estimate with native calibration pending. Protected recovery stock and the optional payout reserve are recorded separately and are never subtracted; an optional reward is never treated as mandatory funding.
+In 50 dossiers at least one difficulty profile ends with a negative margin in at least one resource. Every such case is **conditional**: the authored finite `gatherableBank` may legitimately fund the cost, and the dossier itself declares the margin as a static feasibility estimate with native calibration pending. Protected recovery stock and the optional payout reserve are recorded separately and are never subtracted; an optional reward is never treated as mandatory funding.
 
-Negative rows by resource: wood 92, gold 63, food 46, stone 15. Legacy negative rows by campaign: `faith-origins` 28, `imperial-church` 83.
+The 124 conditional cases fall into two distinct case types, and they are counted separately because they are not the same unit of observation:
+
+| Case type | Unit of observation | Cases | Dossiers |
+|---|---|---:|---:|
+| Legacy v2 difficulty-profile case | one difficulty profile of one dossier, margin `spendable - mandatory - optional` | 111 | 49 |
+| v3 difficulty/selection case | one composed selection of one difficulty profile, margin `spendable - selection totalCost - explicit optional payment vector` | 13 | 1 |
+| **Total conditional cases** | | **124** | **50** |
+
+Legacy-only resource mentions across those 111 legacy difficulty-profile cases: **wood 92, gold 63, food 46, stone 15**. Legacy cases by campaign: `faith-origins` 28, `imperial-church` 83. A case may name more than one resource, so the resource mentions do not sum to the case count.
 
 #### The v3 dossier: combined margin against the explicit optional payment vector
 
@@ -108,9 +116,9 @@ Worked example, the exact case reviewed, on the `easy` profile of `imperial-chur
 
 So the selection is affordable on its own, as the authored `affordable` flag states, and it becomes a 10-wood no-gathering shortfall once the explicit optional payment is also carried. This is a **conditional** shortfall: the authored finite gathering may legitimately fund it. It is not an engine defect, not an impossible mission, and not a claim that the optional payment is mandatory funding. The 50 wood belongs to an optional `repair` task that the player may skip, and the dossier's own optional framing allows a player to finish without it.
 
-Across the v3 dossier, 13 composed selections have a negative combined margin: 1 on `easy`, 5 on `standard` and 7 on `hard`. The 8 selections that are negative on the selection-only margin (`standard` 2, `hard` 6) are exactly the selections whose authored `affordable` flag is false, so the authored affordability analysis and this inventory agree. The JSON keeps both margins for all 9 selections of all 3 profiles, the per-profile combined negative counts, the binding combined selection and the explicit optional payment pointer.
+Across the v3 dossier, 13 composed selections have a negative combined margin: 1 on `easy`, 5 on `standard` and 7 on `hard`. These are the 13 v3 difficulty/selection cases of the table above; they are not difficulty-profile rows and are not comparable with the 111 legacy cases one for one. The 8 selections that are negative on the selection-only margin (`standard` 2, `hard` 6) are exactly the selections whose authored `affordable` flag is false, so the authored affordability analysis and this inventory agree. The JSON keeps both margins for all 9 selections of all 3 profiles, the per-profile combined negative counts, the binding combined selection and the explicit optional payment pointer.
 
-With the v3 dossier included, 124 negative rows in total: 111 legacy difficulty-profile rows and 13 v3 combined selection rows.
+Combined resource mentions across all 124 conditional cases, legacy and v3 together: **food 48, wood 102, gold 65, stone 15**. The v3 share of those mentions is food 2, wood 10, gold 2, stone 0.
 
 Affected dossiers: `faith-origins/02-after-the-siege`, `faith-origins/03-the-governors-question`, `faith-origins/04-a-different-dawn`, `faith-origins/09-district-production-corinth`, `faith-origins/11-distributed-preservation-ephesus`, `faith-origins/12-bounded-community-aid-ephesus`, `faith-origins/14-administrative-intrigue-caesarea`, `faith-origins/15-evacuation-and-recovery-rome-ostia`, `faith-origins/16-comparative-copying-antioch`, `faith-origins/18-parallel-archive-logistics-antioch`, `faith-origins/20-reconciliation-deliveries-rome-ostia`, `faith-origins/22-reading-and-relief-rome-ostia`, `faith-origins/23-petition-escort-sardes`, `faith-origins/24-witness-and-evacuation-lyon`, `faith-origins/25-archive-comparison-lyon`, `faith-origins/26-legal-record-network-carthage`, `faith-origins/27-household-aid-and-memory-carthage`, `faith-origins/28-certificate-and-refuge-egypt-middle-nile`, `faith-origins/29-bounded-evacuation-carthage`; and 31 of the 34 `imperial-church` dossiers, that is every one except `imperial-church/01-milvian-bridge`, `imperial-church/06-finite-field-withdrawal-cibalae` and `imperial-church/09-crossing-and-supply-adrianople`.
 
