@@ -3,10 +3,13 @@
 Worker: `minimax-m3.1-flash-preview` · 27 October 2026 · proposal `d00002` · slice `S4` ·
 generation 2 · topic `yavneh-blueprint-materialization`.
 
-This is an implementation report for an **unregistered design candidate**. It does not
-count a canonical dossier, does not approve history, terrain, native support or gameplay,
-and does not approve its own slice. The candidate cannot be published until the architect's
-pinned source inputs land officially.
+**Update — 28 October 2026 (finalization).** The architect's four pinned source inputs
+landed officially on `develop` at `44e89db7e52228fbddda80be1adae18ae90595cf`, and an
+independent GPT-6.1-Sol technical review confirmed this candidate. The four open questions
+raised by the first version of this report are now **resolved** and recorded below. The
+candidate JSON and the SVG are **unchanged, byte for byte**; only this report was edited.
+This remains an **unregistered design candidate**: it does not count a canonical dossier,
+does not approve history, terrain, native support or gameplay, and does not approve S4.
 
 ## Delivered files (exactly three)
 
@@ -16,27 +19,95 @@ pinned source inputs land officially.
 | `docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg` | 14377 | `4696813df3d5a384586386a4c2dab18e23e5719206e138a656751a4d6c26d34d` |
 | `docs/qa/campaign-design/yavneh-blueprint-materialization-report.md` | this file | — |
 
+The candidate and the map were produced in commit `d6321cb88eb63e41346d9f30203fc2e9522d1ab0`
+and are **byte-identical after the finalization merge** of `44e89db7` and after the
+finalization pipeline re-run; only this report changed afterwards.
+
 No other tracked file, schema, code path, dependency, source campaign, identifier,
 geography registry, source registry or catalogue counter changed. Temporary assembly and
 verification scripts and evidence live only in the worker unit's ignored `.cache/yavneh/`.
 
 ## Pinned source inputs (read-only, not copied into tracked Files)
 
-Read from the architect's read-only unit
+Four inputs were pinned. At materialization time they were read from the architect's
+read-only unit
 `/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-d00002-S4-g2`
-at commit `458178f`:
+at commit `458178f`; two of them (world plan and allocation decision) were already
+integrated on `develop` and were read byte-identically from there.
 
-| Input | SHA-256 | Verified |
+| Input | SHA-256 | Status on 28 October 2026 |
 |---|---|---|
-| `docs/design/episode-plans/jewish-tradition/02-yavneh-materialization-specification.json` (revision 2) | `dd44ee643069ae6f38f3fa3457cc7c3768c233588720604422b2860b46835b57` | yes |
-| `docs/design/episode-plans/jewish-tradition/02-yavneh-profile-architect-decisions.json` | `5a7b63d3c00d8a748717298f48d4615ba1250317b73e5614f9533ac01c73de26` | yes (declared by the spec) |
-| `docs/design/episode-plans/jewish-tradition/02-yavneh-world-plan.json` | `388e2d27b707b35d73a07423c415653e02482a2620ea208ce4ee05cc03942046` | yes, byte-identical to the copy already on `develop` |
-| `docs/wiki/jewish-tradition/research/yavneh-allocation-decision.json` | `80ec2b2bfe683f5c116f7bc082df801a5f308b9db3860018dc554ddf82c12f47` | yes, byte-identical to the copy already on `develop` |
+| `docs/design/episode-plans/jewish-tradition/02-yavneh-materialization-specification.json` (revision 2) | `dd44ee643069ae6f38f3fa3457cc7c3768c233588720604422b2860b46835b57` | landed officially on `develop` at `44e89db7` |
+| `docs/design/episode-plans/jewish-tradition/02-yavneh-profile-architect-decisions.json` | `5a7b63d3c00d8a748717298f48d4615ba1250317b73e5614f9533ac01c73de26` | landed officially on `develop` at `44e89db7` |
+| `docs/design/episode-plans/jewish-tradition/02-yavneh-world-plan.json` | `388e2d27b707b35d73a07423c415653e02482a2620ea208ce4ee05cc03942046` | already integrated before materialization; unchanged |
+| `docs/wiki/jewish-tradition/research/yavneh-allocation-decision.json` | `80ec2b2bfe683f5c116f7bc082df801a5f308b9db3860018dc554ddf82c12f47` | already integrated before materialization; unchanged |
 
-The architect commits were not cherry-picked, the architect's agent and session were not
-used, and no source input was copied into tracked `Files`. The three source documents
-above still live only in the architect's unit and must land officially before this
-candidate can be published.
+Provenance, preserved: the architect commits were not cherry-picked, the architect's agent
+and session were not used, and no source input was copied into tracked `Files`. The first
+version of this report said that "the three source documents above still live only in the
+architect's unit"; that was inaccurate on two counts and is corrected here. The table lists
+**four** inputs, not three, and only the two architect-authored documents (the revision-2
+specification and the profile architect decisions) were architect-unit-only at
+materialization time — the world plan and the allocation decision were already integrated
+on `develop` and were consumed from there. The pending-source state is now **superseded**:
+all four inputs are canonical, and the finalization run re-verified all four SHA-256
+values from this unit's own merged `develop`.
+
+## Independent technical review (GPT-6.1-Sol)
+
+Root reports an independent conformity review of commit
+`d6321cb88eb63e41346d9f30203fc2e9522d1ab0` by **GPT-6.1-Sol**: 673 source/candidate checks
+and the actual `project_batch` → factory → audit run with **0 errors**, 44 screens and
+8/5/3 affordable selections, with a **byte-identical SVG**. Root's evidence artifacts are
+at `/home/cartago/.codex/artifacts/aoe2-mods/yavneh-blueprint-review-20261028/`.
+
+That review is a **technical conformity review of this candidate only**. It is not a broad
+`S4` approval, not a historical approval, not a native or game approval, and it does not
+create dossier 65.
+
+## Finalization pipeline re-run (28 October 2026)
+
+The focused real pipeline was re-run from the **committed candidate** and this unit's own
+canonical sources (after merging `44e89db7`), with every output written under the
+worker unit's ignored `.cache/yavneh/finalization/`. No tracked file was written, the
+assembly script was not re-run, and no architect worktree is required any more.
+
+| Result | Value |
+|---|---|
+| `project_batch` (real typed bridge, strict v3 schema + semantic validator) | ok, `02-refuge-and-school-supply-yavneh` |
+| `build_fulfillment_dossier` (real campaign, order-1/order-3 selections, unregistered region) | composed |
+| `audit_dossier` (real `projection_context`) | **`audit errors: []`** |
+| Screens / text variants | 44 / 88 |
+| Services / secondary objectives | 3 / 7 |
+| Affordable selections easy/standard/hard | 8 / 5 / 3 |
+| Re-rendered map vs committed map | **identical** (`renderedSvgMatchesCommittedSvg: true`) |
+| Candidate JSON SHA-256 after re-run | `6a4aebef62b240325407121b5366d5de2277d1a95eaeba1782645ea5411e7690` (unchanged) |
+| Map SVG SHA-256 after re-run | `4696813df3d5a384586386a4c2dab18e23e5719206e138a656751a4d6c26d34d` (unchanged) |
+
+Evidence files: `.cache/yavneh/finalization/projection-request.json`,
+`projection.json`, `episode.json`, `audit.json`, `rendered-map.svg` and
+`finalization-summary.json`.
+
+## Pipeline actually executed
+
+No operation was emulated, no validator was weakened and no operation was invented.
+The real components were used in this order.
+
+1. **`tools/design/fulfillment-dossier.helper.py::project_batch`** — one typed batch over
+   the real Bun bridge `tools/design/fulfillment-dossier.script.ts` →
+   `tools/design/fulfillment-dossier.mapper.ts` → `capabilityProfileV3Schema` (strict
+   `packages/schemas/alternative-fulfillment.schema.ts`) and
+   `validateScenarioCapability`. Result: `projection ok:
+   02-refuge-and-school-supply-yavneh`. The projection request is the candidate envelope
+   **minus** `designProfile` and `dossierMetadata`; no foreign key was inserted into the
+   strict request.
+2. **`tools/design/episode_dossier.factory.py::build_fulfillment_dossier`** — composed with
+   the real `jewish-tradition` campaign (`campaignId`, `editorialContract`), the real
+   selection `02-refuge-and-school-supply-yavneh` (order 2), the real order-1 selection
+   `01-a-city-of-names` and the real order-3 selection `03-distributed-study-network-yavneh`,
+   and an explicitly passed **unregistered** candidate regional profile
+   (`id=yavneh`, `bbox=[34.71, 31.83, 34.79, 31.9]`, `registrationStatus=unregistered
+   candidate region; not a canonical geography profile`). No canonical geography insertion
 
 ## Pipeline actually executed
 
@@ -79,7 +150,9 @@ import json
 b = json.load(open('docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-candidate.json'))
 print(json.dumps({"requests": [{k: v for k, v in b.items() if k not in ("designProfile", "dossierMetadata")}]}))
 PY
-python3 tools/design/fulfillment-dossier.helper.py < /tmp/yavneh-request.json > /tmp/yavneh-projection.json
+python3 tools/design/fulfillment-dossier.helper.py \
+  < .cache/yavneh/finalization/projection-request.json \
+  > .cache/yavneh/finalization/projection.json
 ```
 
 ```sh
@@ -95,7 +168,7 @@ factory = runpy.run_path(str(root / "tools/design/episode_dossier.factory.py"))
 validator = load("episode_dossier.validator"); pipeline = load("episode_dossiers.script")
 blueprint = json.load(open("docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-candidate.json"))
 campaign = json.load(open("docs/design/odysseys/jewish-tradition.json"))
-projection = json.load(open("/tmp/yavneh-projection.json"))["projections"][0]
+projection = json.load(open(".cache/yavneh/finalization/projection.json"))["projections"][0]
 selection = {r["id"]: r for r in campaign["episodeSelection"]}
 region = {"id": "yavneh", "bbox": [34.71, 31.83, 34.79, 31.9], "registrationStatus": "unregistered candidate region"}
 compose = factory["build_fulfillment_dossier"]
@@ -112,6 +185,10 @@ print("screens:", len(episode["screens"]), "services:", len(episode["fulfillment
 print("svg bytes:", len(pipeline.diagram(episode, [])))
 PY
 ```
+
+These commands read only the committed candidate and this unit's canonical sources and
+write only into the worker unit's ignored `.cache/yavneh/finalization/`; they do not
+depend on any architect worktree remaining alive.
 
 Observed output: `audit errors: []`, `screens: 44 services: 3`, `svg bytes: 14366`
 (the renderer returns 14366 characters; the committed UTF-8 file is 14377 bytes because
@@ -279,10 +356,11 @@ These are assembly decisions, not new design. Each one stays inside the pinned s
 ## Limits and what is NOT established
 
 - This is a **design candidate**. `gameVerified` is `false`, native status is `pending`,
-  and no native export, scenario run or play test was performed or is claimed.
-- No canonical dossier is created. The catalogue counters (64 dossiers / 214 selections
-  without a dossier / 2 645 screens / 398 secondary objectives / 50 research references)
-  are unchanged, and this candidate is **not** dossier 65.
+  and no native run, native export, scenario run or play test was performed or is
+  claimed. Nothing here is game or engine evidence.
+- No canonical dossier is created. No global or catalogue counter is changed or claimed:
+  the candidate adds no dossier, no selection, no screen and no secondary objective to
+  the catalogue, and it is **not** dossier 65.
 - No canonical geographic profile was inserted. The `yavneh` region was passed explicitly
   as an unregistered candidate with the source documentary citations (IAA Tel Yavne Area A
   figure 1–2 and the New Israel Grid convention); no ancient land, slope, watercourse,
@@ -299,17 +377,33 @@ These are assembly decisions, not new design. Each one stays inside the pinned s
 - `bun run validate`, `bun run test:export`, publication and retirement were **not** run
   here: root serializes them after independent review. The heavy repository-wide suites
   were deliberately skipped while another worker held the focused portfolio suite.
-- This report does not approve its own slice. Independent review by a different model is
-  required.
+- The independent GPT-6.1-Sol review is a technical conformity review of this candidate
+  only. This report does not approve S4 and does not approve its own slice.
+- No publication is authorized or performed at this point. When publication happens it
+  must log to a stable external path supplied by root, because the official publish step
+  can remove the worker unit and with it this unit's ignored `.cache/` evidence.
 
-## Open decisions for the architect
+## Resolved confirmations (28 October 2026)
 
-1. The two strict-schema literal strings (§"Two real schema rejections") replace the
-   architect's paraphrases inside the profile. Confirm that the contract literals are the
-   intended wording for the final dossier.
-2. The distinct per-side copy failure wording is a scoping edit of the shared source
-   sentence. Confirm it as the authored text for `side-2` and `side-3`.
-3. The optional goal texts reuse the pinned offer-screen texts verbatim; confirm that the
-   same sentence may serve as both the panel offer and the optional goal.
-4. The candidate cannot be published until the architect's four pinned source inputs land
-   officially on `develop`; the candidate was built against their pinned SHA-256 values.
+The four questions raised by the first version of this report are resolved by the
+architect. These are confirmations of the reviewed design, not new mechanics; the
+candidate JSON and the SVG were not changed for them.
+
+1. **Strict literals confirmed.** The two strict-schema literal strings
+   (§"Two real schema rejections") stand as the authored wording inside the profile. The
+   contract literals are used without any contract, schema or validator change; the
+   architect's paraphrases remain recorded here and in
+   `dossierMetadata.failureRecovery.nativeStatus`.
+2. **Scoped independent copy failure wording confirmed.** The distinct west/north failure
+   wording stays as authored for `side-2` and `side-3`; each copy task keeps its own
+   original, receipt and failure.
+3. **Offer text equals optional goal text confirmed.** Each exact pinned offer text is
+   reused as its optional goal text, so the option panel and the optional goal cannot
+   drift apart.
+4. **Pinned sources are canonical.** The architect's four pinned inputs landed officially
+   on `develop` at `44e89db7`; the earlier pending-source state is superseded and the
+   four SHA-256 values were re-verified from this unit's own merged `develop`.
+
+No further open question remains for this candidate. What remains outside it is
+unchanged: canonical dossier registration, historical, editorial, geographic, native and
+gameplay acceptance, the `i00011` general capability and the `S4` gate itself.
