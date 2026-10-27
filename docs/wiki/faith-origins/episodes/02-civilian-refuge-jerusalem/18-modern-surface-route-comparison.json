@@ -1,0 +1,5493 @@
+{
+  "date": "2026-10-27",
+  "author": "gpt-6",
+  "campaignId": "faith-origins",
+  "episodeId": "02-civilian-refuge-jerusalem",
+  "sourcePath": "docs/design/odysseys/faith-origins.json",
+  "sourceSha256": "f86bcecfc918beb8e0e94c9832d188ad619fb9693b5b8540b109afa046c417c2",
+  "dsmPath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-regional-crop.tif",
+  "dsmSha256": "c50ef78b9ffd0e98cd373933a21b382ad9b202f9cad192018bfccd92bddaad1a",
+  "dsmInterpretation": "Copernicus GLO-30 modern digital surface model, buildings/infrastructure/vegetation included; no ancient terrain conversion",
+  "dsmMetadataPath": "docs/research/odyssey-research/jerusalem-modern-dsm-processing.json",
+  "dsmLicensePath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+  "hubs": [
+    {
+      "id": "hub-1",
+      "centre": [
+        182.36,
+        148.69
+      ],
+      "lonLat": [
+        35.218,
+        31.791
+      ],
+      "name": {
+        "en": "Western household district",
+        "es-ES": "Barrio doméstico occidental"
+      },
+      "radiusTiles": 12,
+      "certainty": "architect fictional activity district within real geography; footprint pending"
+    },
+    {
+      "id": "hub-2",
+      "centre": [
+        200.05,
+        197.88
+      ],
+      "lonLat": [
+        35.229,
+        31.765
+      ],
+      "name": {
+        "en": "Southern receiving court",
+        "es-ES": "Patio receptor meridional"
+      },
+      "radiusTiles": 12,
+      "certainty": "architect fictional activity district within real geography; footprint pending"
+    },
+    {
+      "id": "hub-3",
+      "centre": [
+        201.66,
+        237.6
+      ],
+      "lonLat": [
+        35.23,
+        31.744
+      ],
+      "name": {
+        "en": "Southern road refuge",
+        "es-ES": "Refugio del camino sur"
+      },
+      "radiusTiles": 12,
+      "certainty": "architect fictional activity district within real geography; footprint pending"
+    }
+  ],
+  "routes": [
+    {
+      "id": "catalogue-straight",
+      "kind": "existing authored straight-chain diagnostic",
+      "lonLatPoints": [
+        [
+          35.218,
+          31.791
+        ],
+        [
+          35.229,
+          31.765
+        ],
+        [
+          35.23,
+          31.744
+        ]
+      ],
+      "projectedTilePoints": [
+        [
+          182.36,
+          148.69
+        ],
+        [
+          200.05,
+          197.88
+        ],
+        [
+          201.66,
+          237.6
+        ]
+      ],
+      "lengthMetresApproximate": 5415.46,
+      "lengthTilesApproximate": 92.03,
+      "sampling": "piecewise linear WGS84 lon/lat, intervals at most 30m using 111320m per degree and mean-latitude cosine",
+      "samples": [
+        {
+          "lonLat": [
+            35.218,
+            31.791
+          ],
+          "distanceMetres": 0.0,
+          "surfaceMetres": 803.0921630859375
+        },
+        {
+          "lonLat": [
+            35.21810679611651,
+            31.790747572815533
+          ],
+          "distanceMetres": 29.862,
+          "surfaceMetres": 805.138427734375
+        },
+        {
+          "lonLat": [
+            35.21821359223301,
+            31.79049514563107
+          ],
+          "distanceMetres": 59.725,
+          "surfaceMetres": 807.5733642578125
+        },
+        {
+          "lonLat": [
+            35.21832038834952,
+            31.790242718446603
+          ],
+          "distanceMetres": 89.587,
+          "surfaceMetres": 804.2955932617188
+        },
+        {
+          "lonLat": [
+            35.21842718446602,
+            31.789990291262136
+          ],
+          "distanceMetres": 119.449,
+          "surfaceMetres": 799.815673828125
+        },
+        {
+          "lonLat": [
+            35.21853398058253,
+            31.78973786407767
+          ],
+          "distanceMetres": 149.312,
+          "surfaceMetres": 793.126953125
+        },
+        {
+          "lonLat": [
+            35.21864077669903,
+            31.789485436893205
+          ],
+          "distanceMetres": 179.174,
+          "surfaceMetres": 793.0839233398438
+        },
+        {
+          "lonLat": [
+            35.21874757281554,
+            31.789233009708738
+          ],
+          "distanceMetres": 209.036,
+          "surfaceMetres": 791.1187133789062
+        },
+        {
+          "lonLat": [
+            35.21885436893204,
+            31.78898058252427
+          ],
+          "distanceMetres": 238.899,
+          "surfaceMetres": 791.92431640625
+        },
+        {
+          "lonLat": [
+            35.21896116504855,
+            31.788728155339808
+          ],
+          "distanceMetres": 268.761,
+          "surfaceMetres": 795.1082763671875
+        },
+        {
+          "lonLat": [
+            35.21906796116505,
+            31.78847572815534
+          ],
+          "distanceMetres": 298.624,
+          "surfaceMetres": 792.1309814453125
+        },
+        {
+          "lonLat": [
+            35.21917475728156,
+            31.788223300970873
+          ],
+          "distanceMetres": 328.486,
+          "surfaceMetres": 795.7139892578125
+        },
+        {
+          "lonLat": [
+            35.21928155339806,
+            31.787970873786406
+          ],
+          "distanceMetres": 358.348,
+          "surfaceMetres": 794.87060546875
+        },
+        {
+          "lonLat": [
+            35.21938834951457,
+            31.787718446601943
+          ],
+          "distanceMetres": 388.211,
+          "surfaceMetres": 794.3609008789062
+        },
+        {
+          "lonLat": [
+            35.21949514563107,
+            31.787466019417476
+          ],
+          "distanceMetres": 418.073,
+          "surfaceMetres": 796.1315307617188
+        },
+        {
+          "lonLat": [
+            35.21960194174758,
+            31.78721359223301
+          ],
+          "distanceMetres": 447.935,
+          "surfaceMetres": 799.302734375
+        },
+        {
+          "lonLat": [
+            35.21970873786408,
+            31.786961165048545
+          ],
+          "distanceMetres": 477.798,
+          "surfaceMetres": 802.5086669921875
+        },
+        {
+          "lonLat": [
+            35.21981553398059,
+            31.78670873786408
+          ],
+          "distanceMetres": 507.66,
+          "surfaceMetres": 805.7665405273438
+        },
+        {
+          "lonLat": [
+            35.21992233009709,
+            31.78645631067961
+          ],
+          "distanceMetres": 537.522,
+          "surfaceMetres": 808.8802490234375
+        },
+        {
+          "lonLat": [
+            35.220029126213596,
+            31.786203883495148
+          ],
+          "distanceMetres": 567.385,
+          "surfaceMetres": 812.5942993164062
+        },
+        {
+          "lonLat": [
+            35.2201359223301,
+            31.78595145631068
+          ],
+          "distanceMetres": 597.247,
+          "surfaceMetres": 810.044189453125
+        },
+        {
+          "lonLat": [
+            35.220242718446606,
+            31.785699029126214
+          ],
+          "distanceMetres": 627.109,
+          "surfaceMetres": 810.0780639648438
+        },
+        {
+          "lonLat": [
+            35.22034951456311,
+            31.785446601941747
+          ],
+          "distanceMetres": 656.972,
+          "surfaceMetres": 812.6626586914062
+        },
+        {
+          "lonLat": [
+            35.220456310679616,
+            31.785194174757283
+          ],
+          "distanceMetres": 686.834,
+          "surfaceMetres": 810.277099609375
+        },
+        {
+          "lonLat": [
+            35.22056310679612,
+            31.784941747572816
+          ],
+          "distanceMetres": 716.696,
+          "surfaceMetres": 811.8218994140625
+        },
+        {
+          "lonLat": [
+            35.220669902912626,
+            31.78468932038835
+          ],
+          "distanceMetres": 746.559,
+          "surfaceMetres": 811.1461791992188
+        },
+        {
+          "lonLat": [
+            35.22077669902913,
+            31.784436893203885
+          ],
+          "distanceMetres": 776.421,
+          "surfaceMetres": 809.5287475585938
+        },
+        {
+          "lonLat": [
+            35.220883495145635,
+            31.78418446601942
+          ],
+          "distanceMetres": 806.283,
+          "surfaceMetres": 807.5650024414062
+        },
+        {
+          "lonLat": [
+            35.22099029126214,
+            31.78393203883495
+          ],
+          "distanceMetres": 836.146,
+          "surfaceMetres": 806.043212890625
+        },
+        {
+          "lonLat": [
+            35.221097087378645,
+            31.783679611650484
+          ],
+          "distanceMetres": 866.008,
+          "surfaceMetres": 810.1150512695312
+        },
+        {
+          "lonLat": [
+            35.22120388349515,
+            31.78342718446602
+          ],
+          "distanceMetres": 895.871,
+          "surfaceMetres": 811.885009765625
+        },
+        {
+          "lonLat": [
+            35.221310679611655,
+            31.783174757281554
+          ],
+          "distanceMetres": 925.733,
+          "surfaceMetres": 810.2463989257812
+        },
+        {
+          "lonLat": [
+            35.22141747572816,
+            31.782922330097087
+          ],
+          "distanceMetres": 955.595,
+          "surfaceMetres": 810.2463989257812
+        },
+        {
+          "lonLat": [
+            35.221524271844665,
+            31.782669902912623
+          ],
+          "distanceMetres": 985.458,
+          "surfaceMetres": 805.9537353515625
+        },
+        {
+          "lonLat": [
+            35.22163106796117,
+            31.782417475728156
+          ],
+          "distanceMetres": 1015.32,
+          "surfaceMetres": 806.3844604492188
+        },
+        {
+          "lonLat": [
+            35.221737864077674,
+            31.78216504854369
+          ],
+          "distanceMetres": 1045.182,
+          "surfaceMetres": 803.6152954101562
+        },
+        {
+          "lonLat": [
+            35.22184466019418,
+            31.781912621359222
+          ],
+          "distanceMetres": 1075.045,
+          "surfaceMetres": 801.5960693359375
+        },
+        {
+          "lonLat": [
+            35.221951456310684,
+            31.78166019417476
+          ],
+          "distanceMetres": 1104.907,
+          "surfaceMetres": 799.9994506835938
+        },
+        {
+          "lonLat": [
+            35.22205825242719,
+            31.78140776699029
+          ],
+          "distanceMetres": 1134.769,
+          "surfaceMetres": 801.4125366210938
+        },
+        {
+          "lonLat": [
+            35.222165048543694,
+            31.781155339805824
+          ],
+          "distanceMetres": 1164.632,
+          "surfaceMetres": 797.7550048828125
+        },
+        {
+          "lonLat": [
+            35.2222718446602,
+            31.78090291262136
+          ],
+          "distanceMetres": 1194.494,
+          "surfaceMetres": 799.633056640625
+        },
+        {
+          "lonLat": [
+            35.222378640776704,
+            31.780650485436894
+          ],
+          "distanceMetres": 1224.356,
+          "surfaceMetres": 800.5155639648438
+        },
+        {
+          "lonLat": [
+            35.22248543689321,
+            31.780398058252427
+          ],
+          "distanceMetres": 1254.219,
+          "surfaceMetres": 798.5106811523438
+        },
+        {
+          "lonLat": [
+            35.22259223300971,
+            31.780145631067963
+          ],
+          "distanceMetres": 1284.081,
+          "surfaceMetres": 798.5106811523438
+        },
+        {
+          "lonLat": [
+            35.22269902912622,
+            31.779893203883496
+          ],
+          "distanceMetres": 1313.943,
+          "surfaceMetres": 797.9993286132812
+        },
+        {
+          "lonLat": [
+            35.22280582524272,
+            31.77964077669903
+          ],
+          "distanceMetres": 1343.806,
+          "surfaceMetres": 794.3145751953125
+        },
+        {
+          "lonLat": [
+            35.22291262135923,
+            31.779388349514562
+          ],
+          "distanceMetres": 1373.668,
+          "surfaceMetres": 790.68212890625
+        },
+        {
+          "lonLat": [
+            35.22301941747573,
+            31.7791359223301
+          ],
+          "distanceMetres": 1403.531,
+          "surfaceMetres": 795.2203369140625
+        },
+        {
+          "lonLat": [
+            35.22312621359224,
+            31.77888349514563
+          ],
+          "distanceMetres": 1433.393,
+          "surfaceMetres": 780.6635131835938
+        },
+        {
+          "lonLat": [
+            35.22323300970874,
+            31.778631067961165
+          ],
+          "distanceMetres": 1463.255,
+          "surfaceMetres": 782.92431640625
+        },
+        {
+          "lonLat": [
+            35.22333980582525,
+            31.7783786407767
+          ],
+          "distanceMetres": 1493.118,
+          "surfaceMetres": 777.7189331054688
+        },
+        {
+          "lonLat": [
+            35.22344660194175,
+            31.778126213592234
+          ],
+          "distanceMetres": 1522.98,
+          "surfaceMetres": 782.487548828125
+        },
+        {
+          "lonLat": [
+            35.22355339805825,
+            31.777873786407767
+          ],
+          "distanceMetres": 1552.842,
+          "surfaceMetres": 780.5152587890625
+        },
+        {
+          "lonLat": [
+            35.223660194174755,
+            31.7776213592233
+          ],
+          "distanceMetres": 1582.705,
+          "surfaceMetres": 776.2830810546875
+        },
+        {
+          "lonLat": [
+            35.22376699029126,
+            31.777368932038836
+          ],
+          "distanceMetres": 1612.567,
+          "surfaceMetres": 772.0639038085938
+        },
+        {
+          "lonLat": [
+            35.223873786407765,
+            31.77711650485437
+          ],
+          "distanceMetres": 1642.429,
+          "surfaceMetres": 772.7548217773438
+        },
+        {
+          "lonLat": [
+            35.22398058252427,
+            31.776864077669902
+          ],
+          "distanceMetres": 1672.292,
+          "surfaceMetres": 771.415771484375
+        },
+        {
+          "lonLat": [
+            35.224087378640775,
+            31.77661165048544
+          ],
+          "distanceMetres": 1702.154,
+          "surfaceMetres": 768.66064453125
+        },
+        {
+          "lonLat": [
+            35.22419417475728,
+            31.77635922330097
+          ],
+          "distanceMetres": 1732.016,
+          "surfaceMetres": 767.5512084960938
+        },
+        {
+          "lonLat": [
+            35.224300970873784,
+            31.776106796116505
+          ],
+          "distanceMetres": 1761.879,
+          "surfaceMetres": 767.854736328125
+        },
+        {
+          "lonLat": [
+            35.22440776699029,
+            31.775854368932038
+          ],
+          "distanceMetres": 1791.741,
+          "surfaceMetres": 769.7838134765625
+        },
+        {
+          "lonLat": [
+            35.224514563106794,
+            31.775601941747574
+          ],
+          "distanceMetres": 1821.603,
+          "surfaceMetres": 776.8052978515625
+        },
+        {
+          "lonLat": [
+            35.2246213592233,
+            31.775349514563107
+          ],
+          "distanceMetres": 1851.466,
+          "surfaceMetres": 772.539306640625
+        },
+        {
+          "lonLat": [
+            35.224728155339804,
+            31.77509708737864
+          ],
+          "distanceMetres": 1881.328,
+          "surfaceMetres": 773.6165161132812
+        },
+        {
+          "lonLat": [
+            35.22483495145631,
+            31.774844660194177
+          ],
+          "distanceMetres": 1911.191,
+          "surfaceMetres": 773.357421875
+        },
+        {
+          "lonLat": [
+            35.224941747572814,
+            31.77459223300971
+          ],
+          "distanceMetres": 1941.053,
+          "surfaceMetres": 773.4924926757812
+        },
+        {
+          "lonLat": [
+            35.22504854368932,
+            31.774339805825242
+          ],
+          "distanceMetres": 1970.915,
+          "surfaceMetres": 769.5699462890625
+        },
+        {
+          "lonLat": [
+            35.22515533980582,
+            31.77408737864078
+          ],
+          "distanceMetres": 2000.778,
+          "surfaceMetres": 760.9763793945312
+        },
+        {
+          "lonLat": [
+            35.22526213592233,
+            31.773834951456312
+          ],
+          "distanceMetres": 2030.64,
+          "surfaceMetres": 754.553955078125
+        },
+        {
+          "lonLat": [
+            35.22536893203883,
+            31.773582524271845
+          ],
+          "distanceMetres": 2060.502,
+          "surfaceMetres": 752.5924072265625
+        },
+        {
+          "lonLat": [
+            35.22547572815534,
+            31.773330097087378
+          ],
+          "distanceMetres": 2090.365,
+          "surfaceMetres": 749.615478515625
+        },
+        {
+          "lonLat": [
+            35.22558252427184,
+            31.773077669902914
+          ],
+          "distanceMetres": 2120.227,
+          "surfaceMetres": 746.5120239257812
+        },
+        {
+          "lonLat": [
+            35.22568932038835,
+            31.772825242718447
+          ],
+          "distanceMetres": 2150.089,
+          "surfaceMetres": 745.8256225585938
+        },
+        {
+          "lonLat": [
+            35.22579611650485,
+            31.77257281553398
+          ],
+          "distanceMetres": 2179.952,
+          "surfaceMetres": 736.58349609375
+        },
+        {
+          "lonLat": [
+            35.22590291262136,
+            31.772320388349517
+          ],
+          "distanceMetres": 2209.814,
+          "surfaceMetres": 734.76123046875
+        },
+        {
+          "lonLat": [
+            35.22600970873786,
+            31.77206796116505
+          ],
+          "distanceMetres": 2239.676,
+          "surfaceMetres": 723.5499877929688
+        },
+        {
+          "lonLat": [
+            35.22611650485437,
+            31.771815533980583
+          ],
+          "distanceMetres": 2269.539,
+          "surfaceMetres": 723.5499877929688
+        },
+        {
+          "lonLat": [
+            35.22622330097087,
+            31.771563106796116
+          ],
+          "distanceMetres": 2299.401,
+          "surfaceMetres": 724.9954833984375
+        },
+        {
+          "lonLat": [
+            35.22633009708738,
+            31.771310679611652
+          ],
+          "distanceMetres": 2329.263,
+          "surfaceMetres": 729.4813842773438
+        },
+        {
+          "lonLat": [
+            35.22643689320388,
+            31.771058252427185
+          ],
+          "distanceMetres": 2359.126,
+          "surfaceMetres": 727.4962158203125
+        },
+        {
+          "lonLat": [
+            35.22654368932039,
+            31.770805825242718
+          ],
+          "distanceMetres": 2388.988,
+          "surfaceMetres": 725.1895751953125
+        },
+        {
+          "lonLat": [
+            35.22665048543689,
+            31.770553398058254
+          ],
+          "distanceMetres": 2418.85,
+          "surfaceMetres": 719.3468017578125
+        },
+        {
+          "lonLat": [
+            35.2267572815534,
+            31.770300970873787
+          ],
+          "distanceMetres": 2448.713,
+          "surfaceMetres": 713.0488891601562
+        },
+        {
+          "lonLat": [
+            35.2268640776699,
+            31.77004854368932
+          ],
+          "distanceMetres": 2478.575,
+          "surfaceMetres": 710.5601806640625
+        },
+        {
+          "lonLat": [
+            35.22697087378641,
+            31.769796116504853
+          ],
+          "distanceMetres": 2508.438,
+          "surfaceMetres": 706.75830078125
+        },
+        {
+          "lonLat": [
+            35.22707766990291,
+            31.76954368932039
+          ],
+          "distanceMetres": 2538.3,
+          "surfaceMetres": 711.1741943359375
+        },
+        {
+          "lonLat": [
+            35.227184466019416,
+            31.769291262135923
+          ],
+          "distanceMetres": 2568.162,
+          "surfaceMetres": 702.3822021484375
+        },
+        {
+          "lonLat": [
+            35.22729126213592,
+            31.769038834951456
+          ],
+          "distanceMetres": 2598.025,
+          "surfaceMetres": 702.3822021484375
+        },
+        {
+          "lonLat": [
+            35.227398058252426,
+            31.768786407766992
+          ],
+          "distanceMetres": 2627.887,
+          "surfaceMetres": 702.2821044921875
+        },
+        {
+          "lonLat": [
+            35.22750485436893,
+            31.768533980582525
+          ],
+          "distanceMetres": 2657.749,
+          "surfaceMetres": 720.7283935546875
+        },
+        {
+          "lonLat": [
+            35.227611650485436,
+            31.768281553398058
+          ],
+          "distanceMetres": 2687.612,
+          "surfaceMetres": 729.1203002929688
+        },
+        {
+          "lonLat": [
+            35.22771844660194,
+            31.768029126213595
+          ],
+          "distanceMetres": 2717.474,
+          "surfaceMetres": 725.9761352539062
+        },
+        {
+          "lonLat": [
+            35.227825242718446,
+            31.767776699029127
+          ],
+          "distanceMetres": 2747.336,
+          "surfaceMetres": 733.9403686523438
+        },
+        {
+          "lonLat": [
+            35.22793203883495,
+            31.76752427184466
+          ],
+          "distanceMetres": 2777.199,
+          "surfaceMetres": 730.1293334960938
+        },
+        {
+          "lonLat": [
+            35.228038834951455,
+            31.767271844660193
+          ],
+          "distanceMetres": 2807.061,
+          "surfaceMetres": 738.2296142578125
+        },
+        {
+          "lonLat": [
+            35.22814563106796,
+            31.76701941747573
+          ],
+          "distanceMetres": 2836.923,
+          "surfaceMetres": 743.7819213867188
+        },
+        {
+          "lonLat": [
+            35.228252427184465,
+            31.766766990291263
+          ],
+          "distanceMetres": 2866.786,
+          "surfaceMetres": 752.5130615234375
+        },
+        {
+          "lonLat": [
+            35.22835922330097,
+            31.766514563106796
+          ],
+          "distanceMetres": 2896.648,
+          "surfaceMetres": 758.9789428710938
+        },
+        {
+          "lonLat": [
+            35.228466019417475,
+            31.766262135922332
+          ],
+          "distanceMetres": 2926.51,
+          "surfaceMetres": 758.9789428710938
+        },
+        {
+          "lonLat": [
+            35.22857281553398,
+            31.766009708737865
+          ],
+          "distanceMetres": 2956.373,
+          "surfaceMetres": 766.3450317382812
+        },
+        {
+          "lonLat": [
+            35.228679611650485,
+            31.765757281553398
+          ],
+          "distanceMetres": 2986.235,
+          "surfaceMetres": 773.021484375
+        },
+        {
+          "lonLat": [
+            35.22878640776699,
+            31.76550485436893
+          ],
+          "distanceMetres": 3016.098,
+          "surfaceMetres": 767.0938720703125
+        },
+        {
+          "lonLat": [
+            35.228893203883494,
+            31.765252427184468
+          ],
+          "distanceMetres": 3045.96,
+          "surfaceMetres": 764.897216796875
+        },
+        {
+          "lonLat": [
+            35.229,
+            31.765
+          ],
+          "distanceMetres": 3075.822,
+          "surfaceMetres": 763.5148315429688
+        },
+        {
+          "lonLat": [
+            35.22901282051282,
+            31.76473076923077
+          ],
+          "distanceMetres": 3105.818,
+          "surfaceMetres": 764.096923828125
+        },
+        {
+          "lonLat": [
+            35.22902564102564,
+            31.76446153846154
+          ],
+          "distanceMetres": 3135.813,
+          "surfaceMetres": 757.3629760742188
+        },
+        {
+          "lonLat": [
+            35.22903846153846,
+            31.76419230769231
+          ],
+          "distanceMetres": 3165.808,
+          "surfaceMetres": 749.19384765625
+        },
+        {
+          "lonLat": [
+            35.22905128205128,
+            31.763923076923078
+          ],
+          "distanceMetres": 3195.804,
+          "surfaceMetres": 749.12890625
+        },
+        {
+          "lonLat": [
+            35.2290641025641,
+            31.763653846153847
+          ],
+          "distanceMetres": 3225.799,
+          "surfaceMetres": 749.7205810546875
+        },
+        {
+          "lonLat": [
+            35.229076923076924,
+            31.763384615384616
+          ],
+          "distanceMetres": 3255.794,
+          "surfaceMetres": 744.5527954101562
+        },
+        {
+          "lonLat": [
+            35.22908974358974,
+            31.763115384615386
+          ],
+          "distanceMetres": 3285.79,
+          "surfaceMetres": 742.5404052734375
+        },
+        {
+          "lonLat": [
+            35.22910256410256,
+            31.762846153846155
+          ],
+          "distanceMetres": 3315.785,
+          "surfaceMetres": 735.7344970703125
+        },
+        {
+          "lonLat": [
+            35.22911538461538,
+            31.762576923076924
+          ],
+          "distanceMetres": 3345.78,
+          "surfaceMetres": 725.0001831054688
+        },
+        {
+          "lonLat": [
+            35.229128205128205,
+            31.762307692307694
+          ],
+          "distanceMetres": 3375.776,
+          "surfaceMetres": 709.9182739257812
+        },
+        {
+          "lonLat": [
+            35.22914102564103,
+            31.762038461538463
+          ],
+          "distanceMetres": 3405.771,
+          "surfaceMetres": 694.03076171875
+        },
+        {
+          "lonLat": [
+            35.22915384615384,
+            31.761769230769232
+          ],
+          "distanceMetres": 3435.766,
+          "surfaceMetres": 694.0635986328125
+        },
+        {
+          "lonLat": [
+            35.229166666666664,
+            31.7615
+          ],
+          "distanceMetres": 3465.761,
+          "surfaceMetres": 704.6304931640625
+        },
+        {
+          "lonLat": [
+            35.229179487179486,
+            31.76123076923077
+          ],
+          "distanceMetres": 3495.757,
+          "surfaceMetres": 711.4714965820312
+        },
+        {
+          "lonLat": [
+            35.22919230769231,
+            31.76096153846154
+          ],
+          "distanceMetres": 3525.752,
+          "surfaceMetres": 712.9561157226562
+        },
+        {
+          "lonLat": [
+            35.22920512820513,
+            31.76069230769231
+          ],
+          "distanceMetres": 3555.747,
+          "surfaceMetres": 707.96142578125
+        },
+        {
+          "lonLat": [
+            35.229217948717945,
+            31.76042307692308
+          ],
+          "distanceMetres": 3585.743,
+          "surfaceMetres": 707.96142578125
+        },
+        {
+          "lonLat": [
+            35.22923076923077,
+            31.760153846153848
+          ],
+          "distanceMetres": 3615.738,
+          "surfaceMetres": 696.6395874023438
+        },
+        {
+          "lonLat": [
+            35.22924358974359,
+            31.759884615384617
+          ],
+          "distanceMetres": 3645.733,
+          "surfaceMetres": 685.8836059570312
+        },
+        {
+          "lonLat": [
+            35.22925641025641,
+            31.759615384615383
+          ],
+          "distanceMetres": 3675.729,
+          "surfaceMetres": 685.3576049804688
+        },
+        {
+          "lonLat": [
+            35.229269230769226,
+            31.759346153846153
+          ],
+          "distanceMetres": 3705.724,
+          "surfaceMetres": 703.31396484375
+        },
+        {
+          "lonLat": [
+            35.22928205128205,
+            31.759076923076922
+          ],
+          "distanceMetres": 3735.719,
+          "surfaceMetres": 714.7982177734375
+        },
+        {
+          "lonLat": [
+            35.22929487179487,
+            31.75880769230769
+          ],
+          "distanceMetres": 3765.715,
+          "surfaceMetres": 725.3726806640625
+        },
+        {
+          "lonLat": [
+            35.22930769230769,
+            31.75853846153846
+          ],
+          "distanceMetres": 3795.71,
+          "surfaceMetres": 719.708251953125
+        },
+        {
+          "lonLat": [
+            35.229320512820514,
+            31.75826923076923
+          ],
+          "distanceMetres": 3825.705,
+          "surfaceMetres": 711.0340576171875
+        },
+        {
+          "lonLat": [
+            35.22933333333333,
+            31.758
+          ],
+          "distanceMetres": 3855.701,
+          "surfaceMetres": 704.425048828125
+        },
+        {
+          "lonLat": [
+            35.22934615384615,
+            31.75773076923077
+          ],
+          "distanceMetres": 3885.696,
+          "surfaceMetres": 709.669677734375
+        },
+        {
+          "lonLat": [
+            35.22935897435897,
+            31.757461538461538
+          ],
+          "distanceMetres": 3915.691,
+          "surfaceMetres": 715.84716796875
+        },
+        {
+          "lonLat": [
+            35.229371794871795,
+            31.757192307692307
+          ],
+          "distanceMetres": 3945.687,
+          "surfaceMetres": 719.7447509765625
+        },
+        {
+          "lonLat": [
+            35.22938461538461,
+            31.756923076923076
+          ],
+          "distanceMetres": 3975.682,
+          "surfaceMetres": 723.5499877929688
+        },
+        {
+          "lonLat": [
+            35.22939743589743,
+            31.756653846153846
+          ],
+          "distanceMetres": 4005.677,
+          "surfaceMetres": 735.7396240234375
+        },
+        {
+          "lonLat": [
+            35.229410256410254,
+            31.756384615384615
+          ],
+          "distanceMetres": 4035.673,
+          "surfaceMetres": 741.1985473632812
+        },
+        {
+          "lonLat": [
+            35.22942307692308,
+            31.756115384615384
+          ],
+          "distanceMetres": 4065.668,
+          "surfaceMetres": 744.1856689453125
+        },
+        {
+          "lonLat": [
+            35.2294358974359,
+            31.755846153846154
+          ],
+          "distanceMetres": 4095.663,
+          "surfaceMetres": 750.0602416992188
+        },
+        {
+          "lonLat": [
+            35.22944871794871,
+            31.755576923076923
+          ],
+          "distanceMetres": 4125.659,
+          "surfaceMetres": 756.7228393554688
+        },
+        {
+          "lonLat": [
+            35.229461538461535,
+            31.755307692307692
+          ],
+          "distanceMetres": 4155.654,
+          "surfaceMetres": 765.5505981445312
+        },
+        {
+          "lonLat": [
+            35.22947435897436,
+            31.75503846153846
+          ],
+          "distanceMetres": 4185.649,
+          "surfaceMetres": 775.5369873046875
+        },
+        {
+          "lonLat": [
+            35.22948717948718,
+            31.75476923076923
+          ],
+          "distanceMetres": 4215.645,
+          "surfaceMetres": 783.6700439453125
+        },
+        {
+          "lonLat": [
+            35.2295,
+            31.7545
+          ],
+          "distanceMetres": 4245.64,
+          "surfaceMetres": 784.961669921875
+        },
+        {
+          "lonLat": [
+            35.22951282051282,
+            31.75423076923077
+          ],
+          "distanceMetres": 4275.635,
+          "surfaceMetres": 786.4113159179688
+        },
+        {
+          "lonLat": [
+            35.22952564102564,
+            31.75396153846154
+          ],
+          "distanceMetres": 4305.631,
+          "surfaceMetres": 788.7310180664062
+        },
+        {
+          "lonLat": [
+            35.22953846153846,
+            31.753692307692308
+          ],
+          "distanceMetres": 4335.626,
+          "surfaceMetres": 791.3826904296875
+        },
+        {
+          "lonLat": [
+            35.22955128205128,
+            31.753423076923077
+          ],
+          "distanceMetres": 4365.621,
+          "surfaceMetres": 791.7971801757812
+        },
+        {
+          "lonLat": [
+            35.2295641025641,
+            31.753153846153847
+          ],
+          "distanceMetres": 4395.617,
+          "surfaceMetres": 794.6375732421875
+        },
+        {
+          "lonLat": [
+            35.22957692307692,
+            31.752884615384616
+          ],
+          "distanceMetres": 4425.612,
+          "surfaceMetres": 792.95263671875
+        },
+        {
+          "lonLat": [
+            35.22958974358974,
+            31.752615384615385
+          ],
+          "distanceMetres": 4455.607,
+          "surfaceMetres": 788.5009765625
+        },
+        {
+          "lonLat": [
+            35.229602564102564,
+            31.752346153846155
+          ],
+          "distanceMetres": 4485.603,
+          "surfaceMetres": 789.3181762695312
+        },
+        {
+          "lonLat": [
+            35.229615384615386,
+            31.752076923076924
+          ],
+          "distanceMetres": 4515.598,
+          "surfaceMetres": 790.3341064453125
+        },
+        {
+          "lonLat": [
+            35.2296282051282,
+            31.751807692307693
+          ],
+          "distanceMetres": 4545.593,
+          "surfaceMetres": 790.3341064453125
+        },
+        {
+          "lonLat": [
+            35.22964102564102,
+            31.751538461538463
+          ],
+          "distanceMetres": 4575.589,
+          "surfaceMetres": 788.9042358398438
+        },
+        {
+          "lonLat": [
+            35.229653846153845,
+            31.751269230769232
+          ],
+          "distanceMetres": 4605.584,
+          "surfaceMetres": 789.3923950195312
+        },
+        {
+          "lonLat": [
+            35.22966666666667,
+            31.751
+          ],
+          "distanceMetres": 4635.579,
+          "surfaceMetres": 788.0947875976562
+        },
+        {
+          "lonLat": [
+            35.22967948717948,
+            31.75073076923077
+          ],
+          "distanceMetres": 4665.575,
+          "surfaceMetres": 781.170654296875
+        },
+        {
+          "lonLat": [
+            35.229692307692304,
+            31.75046153846154
+          ],
+          "distanceMetres": 4695.57,
+          "surfaceMetres": 781.1600341796875
+        },
+        {
+          "lonLat": [
+            35.229705128205126,
+            31.75019230769231
+          ],
+          "distanceMetres": 4725.565,
+          "surfaceMetres": 778.6672973632812
+        },
+        {
+          "lonLat": [
+            35.22971794871795,
+            31.74992307692308
+          ],
+          "distanceMetres": 4755.561,
+          "surfaceMetres": 778.8414306640625
+        },
+        {
+          "lonLat": [
+            35.22973076923077,
+            31.749653846153848
+          ],
+          "distanceMetres": 4785.556,
+          "surfaceMetres": 776.7378540039062
+        },
+        {
+          "lonLat": [
+            35.229743589743585,
+            31.749384615384617
+          ],
+          "distanceMetres": 4815.551,
+          "surfaceMetres": 775.8653564453125
+        },
+        {
+          "lonLat": [
+            35.22975641025641,
+            31.749115384615383
+          ],
+          "distanceMetres": 4845.547,
+          "surfaceMetres": 772.817626953125
+        },
+        {
+          "lonLat": [
+            35.22976923076923,
+            31.748846153846152
+          ],
+          "distanceMetres": 4875.542,
+          "surfaceMetres": 772.4033813476562
+        },
+        {
+          "lonLat": [
+            35.22978205128205,
+            31.74857692307692
+          ],
+          "distanceMetres": 4905.537,
+          "surfaceMetres": 768.6181640625
+        },
+        {
+          "lonLat": [
+            35.229794871794866,
+            31.74830769230769
+          ],
+          "distanceMetres": 4935.533,
+          "surfaceMetres": 765.2432861328125
+        },
+        {
+          "lonLat": [
+            35.22980769230769,
+            31.74803846153846
+          ],
+          "distanceMetres": 4965.528,
+          "surfaceMetres": 759.0908813476562
+        },
+        {
+          "lonLat": [
+            35.22982051282051,
+            31.74776923076923
+          ],
+          "distanceMetres": 4995.523,
+          "surfaceMetres": 753.2039794921875
+        },
+        {
+          "lonLat": [
+            35.22983333333333,
+            31.7475
+          ],
+          "distanceMetres": 5025.519,
+          "surfaceMetres": 743.2384033203125
+        },
+        {
+          "lonLat": [
+            35.229846153846154,
+            31.747230769230768
+          ],
+          "distanceMetres": 5055.514,
+          "surfaceMetres": 733.672607421875
+        },
+        {
+          "lonLat": [
+            35.22985897435897,
+            31.746961538461537
+          ],
+          "distanceMetres": 5085.509,
+          "surfaceMetres": 722.7398681640625
+        },
+        {
+          "lonLat": [
+            35.22987179487179,
+            31.746692307692307
+          ],
+          "distanceMetres": 5115.505,
+          "surfaceMetres": 712.8796997070312
+        },
+        {
+          "lonLat": [
+            35.22988461538461,
+            31.746423076923076
+          ],
+          "distanceMetres": 5145.5,
+          "surfaceMetres": 708.4910888671875
+        },
+        {
+          "lonLat": [
+            35.229897435897435,
+            31.746153846153845
+          ],
+          "distanceMetres": 5175.495,
+          "surfaceMetres": 703.93408203125
+        },
+        {
+          "lonLat": [
+            35.22991025641026,
+            31.745884615384615
+          ],
+          "distanceMetres": 5205.491,
+          "surfaceMetres": 702.9998779296875
+        },
+        {
+          "lonLat": [
+            35.22992307692307,
+            31.745615384615384
+          ],
+          "distanceMetres": 5235.486,
+          "surfaceMetres": 701.5780639648438
+        },
+        {
+          "lonLat": [
+            35.229935897435894,
+            31.745346153846153
+          ],
+          "distanceMetres": 5265.481,
+          "surfaceMetres": 700.988037109375
+        },
+        {
+          "lonLat": [
+            35.229948717948716,
+            31.745076923076923
+          ],
+          "distanceMetres": 5295.477,
+          "surfaceMetres": 701.9561157226562
+        },
+        {
+          "lonLat": [
+            35.22996153846154,
+            31.744807692307692
+          ],
+          "distanceMetres": 5325.472,
+          "surfaceMetres": 702.4913330078125
+        },
+        {
+          "lonLat": [
+            35.22997435897435,
+            31.74453846153846
+          ],
+          "distanceMetres": 5355.467,
+          "surfaceMetres": 702.2389526367188
+        },
+        {
+          "lonLat": [
+            35.229987179487175,
+            31.74426923076923
+          ],
+          "distanceMetres": 5385.462,
+          "surfaceMetres": 700.1378173828125
+        },
+        {
+          "lonLat": [
+            35.23,
+            31.744
+          ],
+          "distanceMetres": 5415.458,
+          "surfaceMetres": 688.5247192382812
+        }
+      ],
+      "modernSurfaceDiagnostics": {
+        "minimumMetres": 685.3576049804688,
+        "maximumMetres": 812.6626586914062,
+        "accumulatedSampleRiseMetres": 309.98883056640625,
+        "accumulatedSampleFallMetres": 424.5562744140625,
+        "maximumAbsoluteSampleGradePercent": 61.771052689949286,
+        "intervalsOver15PercentAbsolute": 61,
+        "gradeWarning": "Modern buildings, vegetation and 30m sampling contaminate these figures; not ancient ground slope, route feasibility or game movement."
+      }
+    },
+    {
+      "id": "western-main-candidate",
+      "kind": "architect hypothetical modern-surface comparison; not approved route",
+      "lonLatPoints": [
+        [
+          35.218,
+          31.791
+        ],
+        [
+          35.219,
+          31.784
+        ],
+        [
+          35.219,
+          31.776
+        ],
+        [
+          35.22,
+          31.77
+        ],
+        [
+          35.229,
+          31.765
+        ],
+        [
+          35.227,
+          31.758
+        ],
+        [
+          35.228,
+          31.751
+        ],
+        [
+          35.23,
+          31.744
+        ]
+      ],
+      "projectedTilePoints": [
+        [
+          182.36,
+          148.69
+        ],
+        [
+          183.97,
+          161.93
+        ],
+        [
+          183.97,
+          177.07
+        ],
+        [
+          185.58,
+          188.42
+        ],
+        [
+          200.05,
+          197.88
+        ],
+        [
+          196.84,
+          211.12
+        ],
+        [
+          198.45,
+          224.36
+        ],
+        [
+          201.66,
+          237.6
+        ]
+      ],
+      "lengthMetresApproximate": 5756.42,
+      "lengthTilesApproximate": 97.81,
+      "sampling": "piecewise linear WGS84 lon/lat, intervals at most 30m using 111320m per degree and mean-latitude cosine",
+      "samples": [
+        {
+          "lonLat": [
+            35.218,
+            31.791
+          ],
+          "distanceMetres": 0.0,
+          "surfaceMetres": 803.0921630859375
+        },
+        {
+          "lonLat": [
+            35.21803703703704,
+            31.79074074074074
+          ],
+          "distanceMetres": 29.073,
+          "surfaceMetres": 805.138427734375
+        },
+        {
+          "lonLat": [
+            35.218074074074075,
+            31.790481481481482
+          ],
+          "distanceMetres": 58.145,
+          "surfaceMetres": 805.5048217773438
+        },
+        {
+          "lonLat": [
+            35.218111111111114,
+            31.790222222222223
+          ],
+          "distanceMetres": 87.218,
+          "surfaceMetres": 805.7230224609375
+        },
+        {
+          "lonLat": [
+            35.21814814814815,
+            31.789962962962964
+          ],
+          "distanceMetres": 116.291,
+          "surfaceMetres": 802.567626953125
+        },
+        {
+          "lonLat": [
+            35.21818518518519,
+            31.789703703703704
+          ],
+          "distanceMetres": 145.364,
+          "surfaceMetres": 800.4011840820312
+        },
+        {
+          "lonLat": [
+            35.218222222222224,
+            31.789444444444445
+          ],
+          "distanceMetres": 174.436,
+          "surfaceMetres": 796.6448974609375
+        },
+        {
+          "lonLat": [
+            35.21825925925926,
+            31.789185185185186
+          ],
+          "distanceMetres": 203.509,
+          "surfaceMetres": 791.5249633789062
+        },
+        {
+          "lonLat": [
+            35.2182962962963,
+            31.788925925925927
+          ],
+          "distanceMetres": 232.582,
+          "surfaceMetres": 795.3114624023438
+        },
+        {
+          "lonLat": [
+            35.218333333333334,
+            31.788666666666668
+          ],
+          "distanceMetres": 261.655,
+          "surfaceMetres": 797.4979858398438
+        },
+        {
+          "lonLat": [
+            35.21837037037037,
+            31.78840740740741
+          ],
+          "distanceMetres": 290.727,
+          "surfaceMetres": 798.828125
+        },
+        {
+          "lonLat": [
+            35.21840740740741,
+            31.78814814814815
+          ],
+          "distanceMetres": 319.8,
+          "surfaceMetres": 798.5452880859375
+        },
+        {
+          "lonLat": [
+            35.218444444444444,
+            31.78788888888889
+          ],
+          "distanceMetres": 348.873,
+          "surfaceMetres": 800.05322265625
+        },
+        {
+          "lonLat": [
+            35.21848148148148,
+            31.78762962962963
+          ],
+          "distanceMetres": 377.946,
+          "surfaceMetres": 801.3860473632812
+        },
+        {
+          "lonLat": [
+            35.21851851851852,
+            31.78737037037037
+          ],
+          "distanceMetres": 407.018,
+          "surfaceMetres": 801.3860473632812
+        },
+        {
+          "lonLat": [
+            35.21855555555556,
+            31.78711111111111
+          ],
+          "distanceMetres": 436.091,
+          "surfaceMetres": 806.50341796875
+        },
+        {
+          "lonLat": [
+            35.21859259259259,
+            31.78685185185185
+          ],
+          "distanceMetres": 465.164,
+          "surfaceMetres": 811.3056030273438
+        },
+        {
+          "lonLat": [
+            35.21862962962963,
+            31.78659259259259
+          ],
+          "distanceMetres": 494.237,
+          "surfaceMetres": 812.4983520507812
+        },
+        {
+          "lonLat": [
+            35.21866666666667,
+            31.78633333333333
+          ],
+          "distanceMetres": 523.309,
+          "surfaceMetres": 814.9276733398438
+        },
+        {
+          "lonLat": [
+            35.2187037037037,
+            31.786074074074072
+          ],
+          "distanceMetres": 552.382,
+          "surfaceMetres": 820.7509765625
+        },
+        {
+          "lonLat": [
+            35.21874074074074,
+            31.785814814814813
+          ],
+          "distanceMetres": 581.455,
+          "surfaceMetres": 818.2847900390625
+        },
+        {
+          "lonLat": [
+            35.21877777777778,
+            31.785555555555554
+          ],
+          "distanceMetres": 610.528,
+          "surfaceMetres": 811.2272338867188
+        },
+        {
+          "lonLat": [
+            35.21881481481481,
+            31.785296296296295
+          ],
+          "distanceMetres": 639.6,
+          "surfaceMetres": 817.4105834960938
+        },
+        {
+          "lonLat": [
+            35.21885185185185,
+            31.785037037037036
+          ],
+          "distanceMetres": 668.673,
+          "surfaceMetres": 820.7799072265625
+        },
+        {
+          "lonLat": [
+            35.21888888888889,
+            31.784777777777776
+          ],
+          "distanceMetres": 697.746,
+          "surfaceMetres": 812.5609741210938
+        },
+        {
+          "lonLat": [
+            35.21892592592593,
+            31.784518518518517
+          ],
+          "distanceMetres": 726.819,
+          "surfaceMetres": 810.1856689453125
+        },
+        {
+          "lonLat": [
+            35.21896296296296,
+            31.784259259259258
+          ],
+          "distanceMetres": 755.891,
+          "surfaceMetres": 812.2674560546875
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.784
+          ],
+          "distanceMetres": 784.964,
+          "surfaceMetres": 805.8120727539062
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.78373333333333
+          ],
+          "distanceMetres": 814.649,
+          "surfaceMetres": 799.64599609375
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.783466666666666
+          ],
+          "distanceMetres": 844.335,
+          "surfaceMetres": 795.153076171875
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7832
+          ],
+          "distanceMetres": 874.02,
+          "surfaceMetres": 795.153076171875
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.782933333333332
+          ],
+          "distanceMetres": 903.705,
+          "surfaceMetres": 793.0261840820312
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.782666666666664
+          ],
+          "distanceMetres": 933.391,
+          "surfaceMetres": 791.6400146484375
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7824
+          ],
+          "distanceMetres": 963.076,
+          "surfaceMetres": 792.611328125
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.782133333333334
+          ],
+          "distanceMetres": 992.761,
+          "surfaceMetres": 792.42333984375
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.781866666666666
+          ],
+          "distanceMetres": 1022.447,
+          "surfaceMetres": 794.544189453125
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.781599999999997
+          ],
+          "distanceMetres": 1052.132,
+          "surfaceMetres": 797.1716918945312
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.781333333333333
+          ],
+          "distanceMetres": 1081.817,
+          "surfaceMetres": 800.3704223632812
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.781066666666668
+          ],
+          "distanceMetres": 1111.503,
+          "surfaceMetres": 793.23291015625
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7808
+          ],
+          "distanceMetres": 1141.188,
+          "surfaceMetres": 790.388916015625
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.78053333333333
+          ],
+          "distanceMetres": 1170.873,
+          "surfaceMetres": 791.1506958007812
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.780266666666666
+          ],
+          "distanceMetres": 1200.559,
+          "surfaceMetres": 789.149658203125
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.78
+          ],
+          "distanceMetres": 1230.244,
+          "surfaceMetres": 794.6057739257812
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.779733333333333
+          ],
+          "distanceMetres": 1259.929,
+          "surfaceMetres": 791.1146240234375
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.779466666666664
+          ],
+          "distanceMetres": 1289.615,
+          "surfaceMetres": 785.7919311523438
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7792
+          ],
+          "distanceMetres": 1319.3,
+          "surfaceMetres": 783.27001953125
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.778933333333335
+          ],
+          "distanceMetres": 1348.985,
+          "surfaceMetres": 786.4707641601562
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.778666666666666
+          ],
+          "distanceMetres": 1378.671,
+          "surfaceMetres": 787.0084228515625
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.778399999999998
+          ],
+          "distanceMetres": 1408.356,
+          "surfaceMetres": 784.0672607421875
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.778133333333333
+          ],
+          "distanceMetres": 1438.041,
+          "surfaceMetres": 787.3176879882812
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.777866666666668
+          ],
+          "distanceMetres": 1467.727,
+          "surfaceMetres": 785.9937133789062
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7776
+          ],
+          "distanceMetres": 1497.412,
+          "surfaceMetres": 787.2468872070312
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.77733333333333
+          ],
+          "distanceMetres": 1527.097,
+          "surfaceMetres": 785.7488403320312
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.777066666666666
+          ],
+          "distanceMetres": 1556.783,
+          "surfaceMetres": 785.308349609375
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.7768
+          ],
+          "distanceMetres": 1586.468,
+          "surfaceMetres": 787.7144775390625
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.776533333333333
+          ],
+          "distanceMetres": 1616.153,
+          "surfaceMetres": 787.7144775390625
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.776266666666665
+          ],
+          "distanceMetres": 1645.839,
+          "surfaceMetres": 788.2631225585938
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.776
+          ],
+          "distanceMetres": 1675.524,
+          "surfaceMetres": 783.8413696289062
+        },
+        {
+          "lonLat": [
+            35.21904347826087,
+            31.775739130434783
+          ],
+          "distanceMetres": 1704.854,
+          "surfaceMetres": 787.2940673828125
+        },
+        {
+          "lonLat": [
+            35.21908695652174,
+            31.775478260869566
+          ],
+          "distanceMetres": 1734.184,
+          "surfaceMetres": 791.8483276367188
+        },
+        {
+          "lonLat": [
+            35.219130434782606,
+            31.77521739130435
+          ],
+          "distanceMetres": 1763.514,
+          "surfaceMetres": 793.2740478515625
+        },
+        {
+          "lonLat": [
+            35.21917391304348,
+            31.77495652173913
+          ],
+          "distanceMetres": 1792.844,
+          "surfaceMetres": 796.6854248046875
+        },
+        {
+          "lonLat": [
+            35.21921739130435,
+            31.774695652173914
+          ],
+          "distanceMetres": 1822.174,
+          "surfaceMetres": 796.7752685546875
+        },
+        {
+          "lonLat": [
+            35.21926086956522,
+            31.774434782608694
+          ],
+          "distanceMetres": 1851.504,
+          "surfaceMetres": 799.8203735351562
+        },
+        {
+          "lonLat": [
+            35.21930434782609,
+            31.774173913043477
+          ],
+          "distanceMetres": 1880.834,
+          "surfaceMetres": 796.7890014648438
+        },
+        {
+          "lonLat": [
+            35.21934782608696,
+            31.77391304347826
+          ],
+          "distanceMetres": 1910.164,
+          "surfaceMetres": 794.5750732421875
+        },
+        {
+          "lonLat": [
+            35.21939130434782,
+            31.773652173913042
+          ],
+          "distanceMetres": 1939.494,
+          "surfaceMetres": 788.555419921875
+        },
+        {
+          "lonLat": [
+            35.219434782608694,
+            31.773391304347825
+          ],
+          "distanceMetres": 1968.825,
+          "surfaceMetres": 787.2627563476562
+        },
+        {
+          "lonLat": [
+            35.219478260869565,
+            31.77313043478261
+          ],
+          "distanceMetres": 1998.155,
+          "surfaceMetres": 785.7339477539062
+        },
+        {
+          "lonLat": [
+            35.219521739130435,
+            31.77286956521739
+          ],
+          "distanceMetres": 2027.485,
+          "surfaceMetres": 785.6762084960938
+        },
+        {
+          "lonLat": [
+            35.219565217391306,
+            31.772608695652174
+          ],
+          "distanceMetres": 2056.815,
+          "surfaceMetres": 782.3362426757812
+        },
+        {
+          "lonLat": [
+            35.21960869565218,
+            31.772347826086957
+          ],
+          "distanceMetres": 2086.145,
+          "surfaceMetres": 782.2874755859375
+        },
+        {
+          "lonLat": [
+            35.21965217391304,
+            31.77208695652174
+          ],
+          "distanceMetres": 2115.475,
+          "surfaceMetres": 782.2874755859375
+        },
+        {
+          "lonLat": [
+            35.21969565217391,
+            31.771826086956523
+          ],
+          "distanceMetres": 2144.805,
+          "surfaceMetres": 781.5499877929688
+        },
+        {
+          "lonLat": [
+            35.21973913043478,
+            31.771565217391306
+          ],
+          "distanceMetres": 2174.135,
+          "surfaceMetres": 781.18994140625
+        },
+        {
+          "lonLat": [
+            35.21978260869565,
+            31.771304347826085
+          ],
+          "distanceMetres": 2203.465,
+          "surfaceMetres": 780.6290283203125
+        },
+        {
+          "lonLat": [
+            35.21982608695652,
+            31.771043478260868
+          ],
+          "distanceMetres": 2232.795,
+          "surfaceMetres": 779.7301025390625
+        },
+        {
+          "lonLat": [
+            35.219869565217394,
+            31.77078260869565
+          ],
+          "distanceMetres": 2262.125,
+          "surfaceMetres": 778.142333984375
+        },
+        {
+          "lonLat": [
+            35.21991304347826,
+            31.770521739130434
+          ],
+          "distanceMetres": 2291.455,
+          "surfaceMetres": 779.7664184570312
+        },
+        {
+          "lonLat": [
+            35.21995652173913,
+            31.770260869565217
+          ],
+          "distanceMetres": 2320.785,
+          "surfaceMetres": 779.38720703125
+        },
+        {
+          "lonLat": [
+            35.22,
+            31.77
+          ],
+          "distanceMetres": 2350.115,
+          "surfaceMetres": 777.685791015625
+        },
+        {
+          "lonLat": [
+            35.22026470588235,
+            31.76985294117647
+          ],
+          "distanceMetres": 2380.042,
+          "surfaceMetres": 773.4234619140625
+        },
+        {
+          "lonLat": [
+            35.2205294117647,
+            31.76970588235294
+          ],
+          "distanceMetres": 2409.969,
+          "surfaceMetres": 772.719482421875
+        },
+        {
+          "lonLat": [
+            35.22079411764706,
+            31.76955882352941
+          ],
+          "distanceMetres": 2439.897,
+          "surfaceMetres": 769.2074584960938
+        },
+        {
+          "lonLat": [
+            35.22105882352941,
+            31.769411764705882
+          ],
+          "distanceMetres": 2469.824,
+          "surfaceMetres": 766.500732421875
+        },
+        {
+          "lonLat": [
+            35.22132352941176,
+            31.769264705882353
+          ],
+          "distanceMetres": 2499.751,
+          "surfaceMetres": 763.6607666015625
+        },
+        {
+          "lonLat": [
+            35.221588235294114,
+            31.769117647058824
+          ],
+          "distanceMetres": 2529.678,
+          "surfaceMetres": 760.2408447265625
+        },
+        {
+          "lonLat": [
+            35.22185294117647,
+            31.768970588235295
+          ],
+          "distanceMetres": 2559.605,
+          "surfaceMetres": 757.7611694335938
+        },
+        {
+          "lonLat": [
+            35.22211764705882,
+            31.768823529411765
+          ],
+          "distanceMetres": 2589.532,
+          "surfaceMetres": 755.9475708007812
+        },
+        {
+          "lonLat": [
+            35.222382352941175,
+            31.768676470588236
+          ],
+          "distanceMetres": 2619.459,
+          "surfaceMetres": 754.0084228515625
+        },
+        {
+          "lonLat": [
+            35.222647058823526,
+            31.768529411764707
+          ],
+          "distanceMetres": 2649.386,
+          "surfaceMetres": 755.187744140625
+        },
+        {
+          "lonLat": [
+            35.222911764705884,
+            31.768382352941178
+          ],
+          "distanceMetres": 2679.313,
+          "surfaceMetres": 754.047119140625
+        },
+        {
+          "lonLat": [
+            35.223176470588236,
+            31.76823529411765
+          ],
+          "distanceMetres": 2709.24,
+          "surfaceMetres": 753.66064453125
+        },
+        {
+          "lonLat": [
+            35.22344117647059,
+            31.76808823529412
+          ],
+          "distanceMetres": 2739.168,
+          "surfaceMetres": 752.8101806640625
+        },
+        {
+          "lonLat": [
+            35.22370588235294,
+            31.76794117647059
+          ],
+          "distanceMetres": 2769.095,
+          "surfaceMetres": 751.07470703125
+        },
+        {
+          "lonLat": [
+            35.2239705882353,
+            31.76779411764706
+          ],
+          "distanceMetres": 2799.022,
+          "surfaceMetres": 752.1513061523438
+        },
+        {
+          "lonLat": [
+            35.22423529411765,
+            31.76764705882353
+          ],
+          "distanceMetres": 2828.949,
+          "surfaceMetres": 752.5315551757812
+        },
+        {
+          "lonLat": [
+            35.2245,
+            31.7675
+          ],
+          "distanceMetres": 2858.876,
+          "surfaceMetres": 753.72998046875
+        },
+        {
+          "lonLat": [
+            35.22476470588235,
+            31.76735294117647
+          ],
+          "distanceMetres": 2888.803,
+          "surfaceMetres": 754.5060424804688
+        },
+        {
+          "lonLat": [
+            35.2250294117647,
+            31.76720588235294
+          ],
+          "distanceMetres": 2918.73,
+          "surfaceMetres": 754.8695068359375
+        },
+        {
+          "lonLat": [
+            35.22529411764706,
+            31.76705882352941
+          ],
+          "distanceMetres": 2948.657,
+          "surfaceMetres": 757.4671630859375
+        },
+        {
+          "lonLat": [
+            35.22555882352941,
+            31.76691176470588
+          ],
+          "distanceMetres": 2978.584,
+          "surfaceMetres": 760.0988159179688
+        },
+        {
+          "lonLat": [
+            35.22582352941176,
+            31.766764705882352
+          ],
+          "distanceMetres": 3008.511,
+          "surfaceMetres": 760.8824462890625
+        },
+        {
+          "lonLat": [
+            35.226088235294114,
+            31.766617647058823
+          ],
+          "distanceMetres": 3038.438,
+          "surfaceMetres": 760.3328247070312
+        },
+        {
+          "lonLat": [
+            35.22635294117647,
+            31.766470588235293
+          ],
+          "distanceMetres": 3068.366,
+          "surfaceMetres": 768.2445678710938
+        },
+        {
+          "lonLat": [
+            35.22661764705882,
+            31.766323529411764
+          ],
+          "distanceMetres": 3098.293,
+          "surfaceMetres": 766.6273803710938
+        },
+        {
+          "lonLat": [
+            35.226882352941175,
+            31.766176470588235
+          ],
+          "distanceMetres": 3128.22,
+          "surfaceMetres": 774.786376953125
+        },
+        {
+          "lonLat": [
+            35.227147058823526,
+            31.766029411764706
+          ],
+          "distanceMetres": 3158.147,
+          "surfaceMetres": 771.1627197265625
+        },
+        {
+          "lonLat": [
+            35.227411764705884,
+            31.765882352941176
+          ],
+          "distanceMetres": 3188.074,
+          "surfaceMetres": 775.6774291992188
+        },
+        {
+          "lonLat": [
+            35.227676470588236,
+            31.765735294117647
+          ],
+          "distanceMetres": 3218.001,
+          "surfaceMetres": 775.2297973632812
+        },
+        {
+          "lonLat": [
+            35.22794117647059,
+            31.765588235294118
+          ],
+          "distanceMetres": 3247.928,
+          "surfaceMetres": 776.0840454101562
+        },
+        {
+          "lonLat": [
+            35.22820588235294,
+            31.76544117647059
+          ],
+          "distanceMetres": 3277.855,
+          "surfaceMetres": 774.6751708984375
+        },
+        {
+          "lonLat": [
+            35.2284705882353,
+            31.76529411764706
+          ],
+          "distanceMetres": 3307.782,
+          "surfaceMetres": 775.1265258789062
+        },
+        {
+          "lonLat": [
+            35.22873529411765,
+            31.76514705882353
+          ],
+          "distanceMetres": 3337.709,
+          "surfaceMetres": 769.5126342773438
+        },
+        {
+          "lonLat": [
+            35.229,
+            31.765
+          ],
+          "distanceMetres": 3367.637,
+          "surfaceMetres": 763.5148315429688
+        },
+        {
+          "lonLat": [
+            35.22892592592593,
+            31.76474074074074
+          ],
+          "distanceMetres": 3397.337,
+          "surfaceMetres": 764.096923828125
+        },
+        {
+          "lonLat": [
+            35.22885185185185,
+            31.764481481481482
+          ],
+          "distanceMetres": 3427.037,
+          "surfaceMetres": 757.3629760742188
+        },
+        {
+          "lonLat": [
+            35.22877777777778,
+            31.764222222222223
+          ],
+          "distanceMetres": 3456.737,
+          "surfaceMetres": 754.215576171875
+        },
+        {
+          "lonLat": [
+            35.2287037037037,
+            31.763962962962964
+          ],
+          "distanceMetres": 3486.437,
+          "surfaceMetres": 759.7703247070312
+        },
+        {
+          "lonLat": [
+            35.22862962962963,
+            31.763703703703705
+          ],
+          "distanceMetres": 3516.137,
+          "surfaceMetres": 756.6643676757812
+        },
+        {
+          "lonLat": [
+            35.22855555555555,
+            31.763444444444445
+          ],
+          "distanceMetres": 3545.837,
+          "surfaceMetres": 755.8644409179688
+        },
+        {
+          "lonLat": [
+            35.22848148148148,
+            31.763185185185186
+          ],
+          "distanceMetres": 3575.537,
+          "surfaceMetres": 746.3263549804688
+        },
+        {
+          "lonLat": [
+            35.2284074074074,
+            31.762925925925927
+          ],
+          "distanceMetres": 3605.238,
+          "surfaceMetres": 750.0020141601562
+        },
+        {
+          "lonLat": [
+            35.22833333333333,
+            31.762666666666668
+          ],
+          "distanceMetres": 3634.938,
+          "surfaceMetres": 738.9742431640625
+        },
+        {
+          "lonLat": [
+            35.22825925925926,
+            31.76240740740741
+          ],
+          "distanceMetres": 3664.638,
+          "surfaceMetres": 728.7122802734375
+        },
+        {
+          "lonLat": [
+            35.22818518518518,
+            31.76214814814815
+          ],
+          "distanceMetres": 3694.338,
+          "surfaceMetres": 719.7617797851562
+        },
+        {
+          "lonLat": [
+            35.22811111111111,
+            31.76188888888889
+          ],
+          "distanceMetres": 3724.038,
+          "surfaceMetres": 720.6488037109375
+        },
+        {
+          "lonLat": [
+            35.22803703703703,
+            31.76162962962963
+          ],
+          "distanceMetres": 3753.738,
+          "surfaceMetres": 729.313720703125
+        },
+        {
+          "lonLat": [
+            35.22796296296296,
+            31.76137037037037
+          ],
+          "distanceMetres": 3783.438,
+          "surfaceMetres": 735.7975463867188
+        },
+        {
+          "lonLat": [
+            35.227888888888884,
+            31.76111111111111
+          ],
+          "distanceMetres": 3813.138,
+          "surfaceMetres": 736.62353515625
+        },
+        {
+          "lonLat": [
+            35.22781481481481,
+            31.76085185185185
+          ],
+          "distanceMetres": 3842.839,
+          "surfaceMetres": 733.759033203125
+        },
+        {
+          "lonLat": [
+            35.227740740740735,
+            31.76059259259259
+          ],
+          "distanceMetres": 3872.539,
+          "surfaceMetres": 728.59130859375
+        },
+        {
+          "lonLat": [
+            35.227666666666664,
+            31.76033333333333
+          ],
+          "distanceMetres": 3902.239,
+          "surfaceMetres": 721.088134765625
+        },
+        {
+          "lonLat": [
+            35.22759259259259,
+            31.760074074074073
+          ],
+          "distanceMetres": 3931.939,
+          "surfaceMetres": 727.005126953125
+        },
+        {
+          "lonLat": [
+            35.227518518518515,
+            31.759814814814813
+          ],
+          "distanceMetres": 3961.639,
+          "surfaceMetres": 730.1698608398438
+        },
+        {
+          "lonLat": [
+            35.227444444444444,
+            31.759555555555554
+          ],
+          "distanceMetres": 3991.339,
+          "surfaceMetres": 739.2915649414062
+        },
+        {
+          "lonLat": [
+            35.227370370370366,
+            31.759296296296295
+          ],
+          "distanceMetres": 4021.039,
+          "surfaceMetres": 748.422119140625
+        },
+        {
+          "lonLat": [
+            35.227296296296295,
+            31.759037037037036
+          ],
+          "distanceMetres": 4050.739,
+          "surfaceMetres": 751.78125
+        },
+        {
+          "lonLat": [
+            35.22722222222222,
+            31.758777777777777
+          ],
+          "distanceMetres": 4080.44,
+          "surfaceMetres": 754.8564453125
+        },
+        {
+          "lonLat": [
+            35.227148148148146,
+            31.758518518518517
+          ],
+          "distanceMetres": 4110.14,
+          "surfaceMetres": 754.4694213867188
+        },
+        {
+          "lonLat": [
+            35.22707407407407,
+            31.75825925925926
+          ],
+          "distanceMetres": 4139.84,
+          "surfaceMetres": 760.076416015625
+        },
+        {
+          "lonLat": [
+            35.227,
+            31.758
+          ],
+          "distanceMetres": 4169.54,
+          "surfaceMetres": 760.86376953125
+        },
+        {
+          "lonLat": [
+            35.227037037037036,
+            31.75774074074074
+          ],
+          "distanceMetres": 4198.613,
+          "surfaceMetres": 765.2147827148438
+        },
+        {
+          "lonLat": [
+            35.22707407407407,
+            31.75748148148148
+          ],
+          "distanceMetres": 4227.686,
+          "surfaceMetres": 769.6781616210938
+        },
+        {
+          "lonLat": [
+            35.22711111111111,
+            31.75722222222222
+          ],
+          "distanceMetres": 4256.759,
+          "surfaceMetres": 770.0289306640625
+        },
+        {
+          "lonLat": [
+            35.227148148148146,
+            31.756962962962962
+          ],
+          "distanceMetres": 4285.831,
+          "surfaceMetres": 772.0142211914062
+        },
+        {
+          "lonLat": [
+            35.227185185185185,
+            31.756703703703703
+          ],
+          "distanceMetres": 4314.904,
+          "surfaceMetres": 774.6024169921875
+        },
+        {
+          "lonLat": [
+            35.22722222222222,
+            31.756444444444444
+          ],
+          "distanceMetres": 4343.977,
+          "surfaceMetres": 776.4674682617188
+        },
+        {
+          "lonLat": [
+            35.227259259259256,
+            31.756185185185185
+          ],
+          "distanceMetres": 4373.05,
+          "surfaceMetres": 778.7988891601562
+        },
+        {
+          "lonLat": [
+            35.227296296296295,
+            31.755925925925926
+          ],
+          "distanceMetres": 4402.123,
+          "surfaceMetres": 782.1923217773438
+        },
+        {
+          "lonLat": [
+            35.227333333333334,
+            31.755666666666666
+          ],
+          "distanceMetres": 4431.196,
+          "surfaceMetres": 783.0996704101562
+        },
+        {
+          "lonLat": [
+            35.227370370370366,
+            31.755407407407407
+          ],
+          "distanceMetres": 4460.269,
+          "surfaceMetres": 783.1825561523438
+        },
+        {
+          "lonLat": [
+            35.227407407407405,
+            31.755148148148148
+          ],
+          "distanceMetres": 4489.342,
+          "surfaceMetres": 783.1825561523438
+        },
+        {
+          "lonLat": [
+            35.227444444444444,
+            31.75488888888889
+          ],
+          "distanceMetres": 4518.415,
+          "surfaceMetres": 783.4042358398438
+        },
+        {
+          "lonLat": [
+            35.22748148148148,
+            31.75462962962963
+          ],
+          "distanceMetres": 4547.487,
+          "surfaceMetres": 783.8114624023438
+        },
+        {
+          "lonLat": [
+            35.227518518518515,
+            31.75437037037037
+          ],
+          "distanceMetres": 4576.56,
+          "surfaceMetres": 784.3363647460938
+        },
+        {
+          "lonLat": [
+            35.227555555555554,
+            31.75411111111111
+          ],
+          "distanceMetres": 4605.633,
+          "surfaceMetres": 785.217529296875
+        },
+        {
+          "lonLat": [
+            35.22759259259259,
+            31.753851851851852
+          ],
+          "distanceMetres": 4634.706,
+          "surfaceMetres": 794.6177368164062
+        },
+        {
+          "lonLat": [
+            35.22762962962963,
+            31.753592592592593
+          ],
+          "distanceMetres": 4663.779,
+          "surfaceMetres": 797.04931640625
+        },
+        {
+          "lonLat": [
+            35.227666666666664,
+            31.753333333333334
+          ],
+          "distanceMetres": 4692.852,
+          "surfaceMetres": 789.702880859375
+        },
+        {
+          "lonLat": [
+            35.2277037037037,
+            31.753074074074075
+          ],
+          "distanceMetres": 4721.925,
+          "surfaceMetres": 790.5106811523438
+        },
+        {
+          "lonLat": [
+            35.22774074074074,
+            31.752814814814815
+          ],
+          "distanceMetres": 4750.998,
+          "surfaceMetres": 791.1943359375
+        },
+        {
+          "lonLat": [
+            35.22777777777778,
+            31.752555555555556
+          ],
+          "distanceMetres": 4780.071,
+          "surfaceMetres": 792.6340942382812
+        },
+        {
+          "lonLat": [
+            35.22781481481481,
+            31.752296296296297
+          ],
+          "distanceMetres": 4809.144,
+          "surfaceMetres": 792.6502685546875
+        },
+        {
+          "lonLat": [
+            35.22785185185185,
+            31.752037037037038
+          ],
+          "distanceMetres": 4838.216,
+          "surfaceMetres": 794.7199096679688
+        },
+        {
+          "lonLat": [
+            35.22788888888889,
+            31.75177777777778
+          ],
+          "distanceMetres": 4867.289,
+          "surfaceMetres": 794.766845703125
+        },
+        {
+          "lonLat": [
+            35.22792592592593,
+            31.75151851851852
+          ],
+          "distanceMetres": 4896.362,
+          "surfaceMetres": 793.5723266601562
+        },
+        {
+          "lonLat": [
+            35.22796296296296,
+            31.75125925925926
+          ],
+          "distanceMetres": 4925.435,
+          "surfaceMetres": 793.5723266601562
+        },
+        {
+          "lonLat": [
+            35.228,
+            31.751
+          ],
+          "distanceMetres": 4954.508,
+          "surfaceMetres": 789.3389892578125
+        },
+        {
+          "lonLat": [
+            35.22807407407407,
+            31.750740740740742
+          ],
+          "distanceMetres": 4984.208,
+          "surfaceMetres": 790.5715942382812
+        },
+        {
+          "lonLat": [
+            35.22814814814815,
+            31.750481481481483
+          ],
+          "distanceMetres": 5013.909,
+          "surfaceMetres": 782.8985595703125
+        },
+        {
+          "lonLat": [
+            35.22822222222222,
+            31.750222222222224
+          ],
+          "distanceMetres": 5043.609,
+          "surfaceMetres": 781.756103515625
+        },
+        {
+          "lonLat": [
+            35.2282962962963,
+            31.749962962962964
+          ],
+          "distanceMetres": 5073.309,
+          "surfaceMetres": 778.9600219726562
+        },
+        {
+          "lonLat": [
+            35.22837037037037,
+            31.749703703703705
+          ],
+          "distanceMetres": 5103.01,
+          "surfaceMetres": 771.8551635742188
+        },
+        {
+          "lonLat": [
+            35.22844444444444,
+            31.749444444444446
+          ],
+          "distanceMetres": 5132.71,
+          "surfaceMetres": 766.9214477539062
+        },
+        {
+          "lonLat": [
+            35.22851851851852,
+            31.749185185185187
+          ],
+          "distanceMetres": 5162.411,
+          "surfaceMetres": 763.9729614257812
+        },
+        {
+          "lonLat": [
+            35.22859259259259,
+            31.748925925925928
+          ],
+          "distanceMetres": 5192.111,
+          "surfaceMetres": 759.7826538085938
+        },
+        {
+          "lonLat": [
+            35.22866666666667,
+            31.74866666666667
+          ],
+          "distanceMetres": 5221.811,
+          "surfaceMetres": 750.716552734375
+        },
+        {
+          "lonLat": [
+            35.22874074074074,
+            31.74840740740741
+          ],
+          "distanceMetres": 5251.512,
+          "surfaceMetres": 742.9246826171875
+        },
+        {
+          "lonLat": [
+            35.22881481481481,
+            31.74814814814815
+          ],
+          "distanceMetres": 5281.212,
+          "surfaceMetres": 740.2546997070312
+        },
+        {
+          "lonLat": [
+            35.22888888888889,
+            31.74788888888889
+          ],
+          "distanceMetres": 5310.912,
+          "surfaceMetres": 732.9782104492188
+        },
+        {
+          "lonLat": [
+            35.22896296296296,
+            31.747629629629632
+          ],
+          "distanceMetres": 5340.613,
+          "surfaceMetres": 725.5859985351562
+        },
+        {
+          "lonLat": [
+            35.22903703703704,
+            31.74737037037037
+          ],
+          "distanceMetres": 5370.313,
+          "surfaceMetres": 732.9207153320312
+        },
+        {
+          "lonLat": [
+            35.22911111111111,
+            31.74711111111111
+          ],
+          "distanceMetres": 5400.014,
+          "surfaceMetres": 723.5126342773438
+        },
+        {
+          "lonLat": [
+            35.22918518518519,
+            31.74685185185185
+          ],
+          "distanceMetres": 5429.714,
+          "surfaceMetres": 716.81201171875
+        },
+        {
+          "lonLat": [
+            35.22925925925926,
+            31.74659259259259
+          ],
+          "distanceMetres": 5459.414,
+          "surfaceMetres": 710.1922607421875
+        },
+        {
+          "lonLat": [
+            35.22933333333333,
+            31.746333333333332
+          ],
+          "distanceMetres": 5489.115,
+          "surfaceMetres": 706.2755737304688
+        },
+        {
+          "lonLat": [
+            35.22940740740741,
+            31.746074074074073
+          ],
+          "distanceMetres": 5518.815,
+          "surfaceMetres": 707.6107177734375
+        },
+        {
+          "lonLat": [
+            35.22948148148148,
+            31.745814814814814
+          ],
+          "distanceMetres": 5548.515,
+          "surfaceMetres": 706.3814086914062
+        },
+        {
+          "lonLat": [
+            35.22955555555556,
+            31.745555555555555
+          ],
+          "distanceMetres": 5578.216,
+          "surfaceMetres": 703.4624633789062
+        },
+        {
+          "lonLat": [
+            35.22962962962963,
+            31.745296296296296
+          ],
+          "distanceMetres": 5607.916,
+          "surfaceMetres": 706.1455078125
+        },
+        {
+          "lonLat": [
+            35.2297037037037,
+            31.745037037037036
+          ],
+          "distanceMetres": 5637.617,
+          "surfaceMetres": 710.5804443359375
+        },
+        {
+          "lonLat": [
+            35.22977777777778,
+            31.744777777777777
+          ],
+          "distanceMetres": 5667.317,
+          "surfaceMetres": 711.7977294921875
+        },
+        {
+          "lonLat": [
+            35.22985185185185,
+            31.744518518518518
+          ],
+          "distanceMetres": 5697.017,
+          "surfaceMetres": 710.315185546875
+        },
+        {
+          "lonLat": [
+            35.229925925925926,
+            31.74425925925926
+          ],
+          "distanceMetres": 5726.718,
+          "surfaceMetres": 700.1378173828125
+        },
+        {
+          "lonLat": [
+            35.23,
+            31.744
+          ],
+          "distanceMetres": 5756.418,
+          "surfaceMetres": 688.5247192382812
+        }
+      ],
+      "modernSurfaceDiagnostics": {
+        "minimumMetres": 688.5247192382812,
+        "maximumMetres": 820.7799072265625,
+        "accumulatedSampleRiseMetres": 246.91259765625,
+        "accumulatedSampleFallMetres": 361.48004150390625,
+        "maximumAbsoluteSampleGradePercent": 39.10084554745782,
+        "intervalsOver15PercentAbsolute": 50,
+        "gradeWarning": "Modern buildings, vegetation and 30m sampling contaminate these figures; not ancient ground slope, route feasibility or game movement."
+      }
+    },
+    {
+      "id": "western-relief-candidate",
+      "kind": "architect hypothetical modern-surface comparison; not approved route",
+      "lonLatPoints": [
+        [
+          35.218,
+          31.791
+        ],
+        [
+          35.208,
+          31.786
+        ],
+        [
+          35.207,
+          31.777
+        ],
+        [
+          35.212,
+          31.77
+        ],
+        [
+          35.219,
+          31.766
+        ],
+        [
+          35.229,
+          31.765
+        ],
+        [
+          35.222,
+          31.762
+        ],
+        [
+          35.221,
+          31.753
+        ],
+        [
+          35.223,
+          31.747
+        ],
+        [
+          35.23,
+          31.744
+        ]
+      ],
+      "projectedTilePoints": [
+        [
+          182.36,
+          148.69
+        ],
+        [
+          166.28,
+          158.15
+        ],
+        [
+          164.68,
+          175.18
+        ],
+        [
+          172.72,
+          188.42
+        ],
+        [
+          183.97,
+          195.98
+        ],
+        [
+          200.05,
+          197.88
+        ],
+        [
+          188.8,
+          203.55
+        ],
+        [
+          187.19,
+          220.58
+        ],
+        [
+          190.41,
+          231.93
+        ],
+        [
+          201.66,
+          237.6
+        ]
+      ],
+      "lengthMetresApproximate": 7951.57,
+      "lengthTilesApproximate": 135.1,
+      "sampling": "piecewise linear WGS84 lon/lat, intervals at most 30m using 111320m per degree and mean-latitude cosine",
+      "samples": [
+        {
+          "lonLat": [
+            35.218,
+            31.791
+          ],
+          "distanceMetres": 0.0,
+          "surfaceMetres": 803.0921630859375
+        },
+        {
+          "lonLat": [
+            35.21772972972973,
+            31.790864864864865
+          ],
+          "distanceMetres": 29.67,
+          "surfaceMetres": 804.09619140625
+        },
+        {
+          "lonLat": [
+            35.21745945945946,
+            31.79072972972973
+          ],
+          "distanceMetres": 59.34,
+          "surfaceMetres": 809.1185913085938
+        },
+        {
+          "lonLat": [
+            35.21718918918919,
+            31.790594594594594
+          ],
+          "distanceMetres": 89.01,
+          "surfaceMetres": 807.68505859375
+        },
+        {
+          "lonLat": [
+            35.21691891891892,
+            31.79045945945946
+          ],
+          "distanceMetres": 118.679,
+          "surfaceMetres": 807.6005859375
+        },
+        {
+          "lonLat": [
+            35.21664864864865,
+            31.790324324324324
+          ],
+          "distanceMetres": 148.349,
+          "surfaceMetres": 808.1118774414062
+        },
+        {
+          "lonLat": [
+            35.21637837837838,
+            31.79018918918919
+          ],
+          "distanceMetres": 178.019,
+          "surfaceMetres": 808.666015625
+        },
+        {
+          "lonLat": [
+            35.21610810810811,
+            31.790054054054053
+          ],
+          "distanceMetres": 207.689,
+          "surfaceMetres": 811.168701171875
+        },
+        {
+          "lonLat": [
+            35.21583783783784,
+            31.789918918918918
+          ],
+          "distanceMetres": 237.359,
+          "surfaceMetres": 812.515625
+        },
+        {
+          "lonLat": [
+            35.21556756756757,
+            31.789783783783783
+          ],
+          "distanceMetres": 267.029,
+          "surfaceMetres": 811.7119140625
+        },
+        {
+          "lonLat": [
+            35.2152972972973,
+            31.78964864864865
+          ],
+          "distanceMetres": 296.699,
+          "surfaceMetres": 809.095458984375
+        },
+        {
+          "lonLat": [
+            35.21502702702703,
+            31.789513513513516
+          ],
+          "distanceMetres": 326.369,
+          "surfaceMetres": 806.186279296875
+        },
+        {
+          "lonLat": [
+            35.214756756756756,
+            31.78937837837838
+          ],
+          "distanceMetres": 356.038,
+          "surfaceMetres": 805.76171875
+        },
+        {
+          "lonLat": [
+            35.214486486486486,
+            31.789243243243245
+          ],
+          "distanceMetres": 385.708,
+          "surfaceMetres": 804.1124877929688
+        },
+        {
+          "lonLat": [
+            35.214216216216215,
+            31.78910810810811
+          ],
+          "distanceMetres": 415.378,
+          "surfaceMetres": 803.065673828125
+        },
+        {
+          "lonLat": [
+            35.213945945945945,
+            31.788972972972974
+          ],
+          "distanceMetres": 445.048,
+          "surfaceMetres": 804.0374145507812
+        },
+        {
+          "lonLat": [
+            35.213675675675674,
+            31.78883783783784
+          ],
+          "distanceMetres": 474.718,
+          "surfaceMetres": 805.9508056640625
+        },
+        {
+          "lonLat": [
+            35.2134054054054,
+            31.788702702702704
+          ],
+          "distanceMetres": 504.388,
+          "surfaceMetres": 805.4235229492188
+        },
+        {
+          "lonLat": [
+            35.21313513513513,
+            31.78856756756757
+          ],
+          "distanceMetres": 534.058,
+          "surfaceMetres": 804.690673828125
+        },
+        {
+          "lonLat": [
+            35.21286486486487,
+            31.788432432432433
+          ],
+          "distanceMetres": 563.728,
+          "surfaceMetres": 805.3901977539062
+        },
+        {
+          "lonLat": [
+            35.2125945945946,
+            31.788297297297298
+          ],
+          "distanceMetres": 593.397,
+          "surfaceMetres": 804.7506713867188
+        },
+        {
+          "lonLat": [
+            35.21232432432433,
+            31.788162162162163
+          ],
+          "distanceMetres": 623.067,
+          "surfaceMetres": 804.4780883789062
+        },
+        {
+          "lonLat": [
+            35.21205405405406,
+            31.788027027027027
+          ],
+          "distanceMetres": 652.737,
+          "surfaceMetres": 807.65673828125
+        },
+        {
+          "lonLat": [
+            35.21178378378379,
+            31.787891891891892
+          ],
+          "distanceMetres": 682.407,
+          "surfaceMetres": 806.3965454101562
+        },
+        {
+          "lonLat": [
+            35.211513513513516,
+            31.787756756756757
+          ],
+          "distanceMetres": 712.077,
+          "surfaceMetres": 807.7056274414062
+        },
+        {
+          "lonLat": [
+            35.211243243243246,
+            31.78762162162162
+          ],
+          "distanceMetres": 741.747,
+          "surfaceMetres": 811.093994140625
+        },
+        {
+          "lonLat": [
+            35.210972972972975,
+            31.787486486486486
+          ],
+          "distanceMetres": 771.417,
+          "surfaceMetres": 811.093994140625
+        },
+        {
+          "lonLat": [
+            35.210702702702704,
+            31.78735135135135
+          ],
+          "distanceMetres": 801.087,
+          "surfaceMetres": 813.3544921875
+        },
+        {
+          "lonLat": [
+            35.210432432432434,
+            31.78721621621622
+          ],
+          "distanceMetres": 830.756,
+          "surfaceMetres": 813.9781494140625
+        },
+        {
+          "lonLat": [
+            35.21016216216216,
+            31.787081081081084
+          ],
+          "distanceMetres": 860.426,
+          "surfaceMetres": 811.8511352539062
+        },
+        {
+          "lonLat": [
+            35.20989189189189,
+            31.78694594594595
+          ],
+          "distanceMetres": 890.096,
+          "surfaceMetres": 812.1835327148438
+        },
+        {
+          "lonLat": [
+            35.20962162162162,
+            31.786810810810813
+          ],
+          "distanceMetres": 919.766,
+          "surfaceMetres": 810.6204223632812
+        },
+        {
+          "lonLat": [
+            35.20935135135135,
+            31.786675675675678
+          ],
+          "distanceMetres": 949.436,
+          "surfaceMetres": 815.9697265625
+        },
+        {
+          "lonLat": [
+            35.20908108108108,
+            31.786540540540543
+          ],
+          "distanceMetres": 979.106,
+          "surfaceMetres": 812.62890625
+        },
+        {
+          "lonLat": [
+            35.20881081081081,
+            31.786405405405407
+          ],
+          "distanceMetres": 1008.776,
+          "surfaceMetres": 810.8375244140625
+        },
+        {
+          "lonLat": [
+            35.20854054054054,
+            31.786270270270272
+          ],
+          "distanceMetres": 1038.446,
+          "surfaceMetres": 808.86328125
+        },
+        {
+          "lonLat": [
+            35.20827027027027,
+            31.786135135135137
+          ],
+          "distanceMetres": 1068.115,
+          "surfaceMetres": 804.3883666992188
+        },
+        {
+          "lonLat": [
+            35.208,
+            31.786
+          ],
+          "distanceMetres": 1097.785,
+          "surfaceMetres": 806.7811279296875
+        },
+        {
+          "lonLat": [
+            35.20797058823529,
+            31.78573529411765
+          ],
+          "distanceMetres": 1127.384,
+          "surfaceMetres": 805.387451171875
+        },
+        {
+          "lonLat": [
+            35.207941176470584,
+            31.785470588235295
+          ],
+          "distanceMetres": 1156.982,
+          "surfaceMetres": 805.7388916015625
+        },
+        {
+          "lonLat": [
+            35.207911764705884,
+            31.785205882352944
+          ],
+          "distanceMetres": 1186.58,
+          "surfaceMetres": 798.1299438476562
+        },
+        {
+          "lonLat": [
+            35.207882352941176,
+            31.78494117647059
+          ],
+          "distanceMetres": 1216.178,
+          "surfaceMetres": 795.5128784179688
+        },
+        {
+          "lonLat": [
+            35.20785294117647,
+            31.784676470588238
+          ],
+          "distanceMetres": 1245.776,
+          "surfaceMetres": 793.1536254882812
+        },
+        {
+          "lonLat": [
+            35.20782352941176,
+            31.784411764705883
+          ],
+          "distanceMetres": 1275.375,
+          "surfaceMetres": 792.7149658203125
+        },
+        {
+          "lonLat": [
+            35.207794117647055,
+            31.78414705882353
+          ],
+          "distanceMetres": 1304.973,
+          "surfaceMetres": 789.0883178710938
+        },
+        {
+          "lonLat": [
+            35.207764705882354,
+            31.783882352941177
+          ],
+          "distanceMetres": 1334.571,
+          "surfaceMetres": 784.785400390625
+        },
+        {
+          "lonLat": [
+            35.20773529411765,
+            31.783617647058826
+          ],
+          "distanceMetres": 1364.169,
+          "surfaceMetres": 784.6098022460938
+        },
+        {
+          "lonLat": [
+            35.20770588235294,
+            31.78335294117647
+          ],
+          "distanceMetres": 1393.767,
+          "surfaceMetres": 784.3550415039062
+        },
+        {
+          "lonLat": [
+            35.20767647058823,
+            31.78308823529412
+          ],
+          "distanceMetres": 1423.366,
+          "surfaceMetres": 782.5902099609375
+        },
+        {
+          "lonLat": [
+            35.207647058823525,
+            31.782823529411765
+          ],
+          "distanceMetres": 1452.964,
+          "surfaceMetres": 783.8219604492188
+        },
+        {
+          "lonLat": [
+            35.207617647058825,
+            31.782558823529413
+          ],
+          "distanceMetres": 1482.562,
+          "surfaceMetres": 783.7742919921875
+        },
+        {
+          "lonLat": [
+            35.20758823529412,
+            31.78229411764706
+          ],
+          "distanceMetres": 1512.16,
+          "surfaceMetres": 778.692626953125
+        },
+        {
+          "lonLat": [
+            35.20755882352941,
+            31.782029411764707
+          ],
+          "distanceMetres": 1541.758,
+          "surfaceMetres": 775.5875854492188
+        },
+        {
+          "lonLat": [
+            35.2075294117647,
+            31.781764705882352
+          ],
+          "distanceMetres": 1571.357,
+          "surfaceMetres": 774.7027587890625
+        },
+        {
+          "lonLat": [
+            35.207499999999996,
+            31.7815
+          ],
+          "distanceMetres": 1600.955,
+          "surfaceMetres": 773.0325927734375
+        },
+        {
+          "lonLat": [
+            35.207470588235296,
+            31.78123529411765
+          ],
+          "distanceMetres": 1630.553,
+          "surfaceMetres": 771.9723510742188
+        },
+        {
+          "lonLat": [
+            35.20744117647059,
+            31.780970588235295
+          ],
+          "distanceMetres": 1660.151,
+          "surfaceMetres": 779.6201782226562
+        },
+        {
+          "lonLat": [
+            35.20741176470588,
+            31.780705882352944
+          ],
+          "distanceMetres": 1689.749,
+          "surfaceMetres": 779.6201782226562
+        },
+        {
+          "lonLat": [
+            35.207382352941174,
+            31.78044117647059
+          ],
+          "distanceMetres": 1719.348,
+          "surfaceMetres": 775.9631958007812
+        },
+        {
+          "lonLat": [
+            35.207352941176474,
+            31.780176470588238
+          ],
+          "distanceMetres": 1748.946,
+          "surfaceMetres": 777.9801635742188
+        },
+        {
+          "lonLat": [
+            35.20732352941177,
+            31.779911764705883
+          ],
+          "distanceMetres": 1778.544,
+          "surfaceMetres": 780.8836059570312
+        },
+        {
+          "lonLat": [
+            35.20729411764706,
+            31.77964705882353
+          ],
+          "distanceMetres": 1808.142,
+          "surfaceMetres": 783.6682739257812
+        },
+        {
+          "lonLat": [
+            35.20726470588235,
+            31.779382352941177
+          ],
+          "distanceMetres": 1837.74,
+          "surfaceMetres": 785.152099609375
+        },
+        {
+          "lonLat": [
+            35.207235294117645,
+            31.779117647058825
+          ],
+          "distanceMetres": 1867.339,
+          "surfaceMetres": 783.358642578125
+        },
+        {
+          "lonLat": [
+            35.207205882352945,
+            31.77885294117647
+          ],
+          "distanceMetres": 1896.937,
+          "surfaceMetres": 783.1436157226562
+        },
+        {
+          "lonLat": [
+            35.20717647058824,
+            31.77858823529412
+          ],
+          "distanceMetres": 1926.535,
+          "surfaceMetres": 780.9367065429688
+        },
+        {
+          "lonLat": [
+            35.20714705882353,
+            31.778323529411765
+          ],
+          "distanceMetres": 1956.133,
+          "surfaceMetres": 781.7275390625
+        },
+        {
+          "lonLat": [
+            35.20711764705882,
+            31.778058823529413
+          ],
+          "distanceMetres": 1985.731,
+          "surfaceMetres": 781.5830688476562
+        },
+        {
+          "lonLat": [
+            35.207088235294115,
+            31.77779411764706
+          ],
+          "distanceMetres": 2015.33,
+          "surfaceMetres": 780.83056640625
+        },
+        {
+          "lonLat": [
+            35.207058823529415,
+            31.777529411764707
+          ],
+          "distanceMetres": 2044.928,
+          "surfaceMetres": 784.1337280273438
+        },
+        {
+          "lonLat": [
+            35.20702941176471,
+            31.777264705882352
+          ],
+          "distanceMetres": 2074.526,
+          "surfaceMetres": 786.18017578125
+        },
+        {
+          "lonLat": [
+            35.207,
+            31.777
+          ],
+          "distanceMetres": 2104.124,
+          "surfaceMetres": 784.6677856445312
+        },
+        {
+          "lonLat": [
+            35.20716129032258,
+            31.776774193548388
+          ],
+          "distanceMetres": 2133.533,
+          "surfaceMetres": 782.2001953125
+        },
+        {
+          "lonLat": [
+            35.20732258064516,
+            31.776548387096774
+          ],
+          "distanceMetres": 2162.941,
+          "surfaceMetres": 782.2001953125
+        },
+        {
+          "lonLat": [
+            35.20748387096774,
+            31.77632258064516
+          ],
+          "distanceMetres": 2192.349,
+          "surfaceMetres": 781.6624755859375
+        },
+        {
+          "lonLat": [
+            35.20764516129032,
+            31.77609677419355
+          ],
+          "distanceMetres": 2221.758,
+          "surfaceMetres": 779.1373901367188
+        },
+        {
+          "lonLat": [
+            35.2078064516129,
+            31.775870967741938
+          ],
+          "distanceMetres": 2251.166,
+          "surfaceMetres": 777.7382202148438
+        },
+        {
+          "lonLat": [
+            35.207967741935484,
+            31.775645161290324
+          ],
+          "distanceMetres": 2280.574,
+          "surfaceMetres": 767.4154052734375
+        },
+        {
+          "lonLat": [
+            35.208129032258064,
+            31.77541935483871
+          ],
+          "distanceMetres": 2309.983,
+          "surfaceMetres": 767.4154052734375
+        },
+        {
+          "lonLat": [
+            35.208290322580645,
+            31.775193548387097
+          ],
+          "distanceMetres": 2339.391,
+          "surfaceMetres": 767.2766723632812
+        },
+        {
+          "lonLat": [
+            35.208451612903225,
+            31.774967741935484
+          ],
+          "distanceMetres": 2368.799,
+          "surfaceMetres": 763.6632080078125
+        },
+        {
+          "lonLat": [
+            35.208612903225806,
+            31.77474193548387
+          ],
+          "distanceMetres": 2398.207,
+          "surfaceMetres": 754.6395874023438
+        },
+        {
+          "lonLat": [
+            35.208774193548386,
+            31.774516129032257
+          ],
+          "distanceMetres": 2427.616,
+          "surfaceMetres": 755.3416748046875
+        },
+        {
+          "lonLat": [
+            35.20893548387097,
+            31.774290322580647
+          ],
+          "distanceMetres": 2457.024,
+          "surfaceMetres": 755.4120483398438
+        },
+        {
+          "lonLat": [
+            35.20909677419355,
+            31.774064516129034
+          ],
+          "distanceMetres": 2486.432,
+          "surfaceMetres": 760.390625
+        },
+        {
+          "lonLat": [
+            35.20925806451613,
+            31.77383870967742
+          ],
+          "distanceMetres": 2515.841,
+          "surfaceMetres": 759.1886596679688
+        },
+        {
+          "lonLat": [
+            35.20941935483871,
+            31.773612903225807
+          ],
+          "distanceMetres": 2545.249,
+          "surfaceMetres": 765.0354614257812
+        },
+        {
+          "lonLat": [
+            35.209580645161296,
+            31.773387096774194
+          ],
+          "distanceMetres": 2574.657,
+          "surfaceMetres": 765.8751831054688
+        },
+        {
+          "lonLat": [
+            35.209741935483876,
+            31.77316129032258
+          ],
+          "distanceMetres": 2604.066,
+          "surfaceMetres": 773.809326171875
+        },
+        {
+          "lonLat": [
+            35.20990322580646,
+            31.772935483870967
+          ],
+          "distanceMetres": 2633.474,
+          "surfaceMetres": 781.081787109375
+        },
+        {
+          "lonLat": [
+            35.21006451612904,
+            31.772709677419353
+          ],
+          "distanceMetres": 2662.882,
+          "surfaceMetres": 782.9041137695312
+        },
+        {
+          "lonLat": [
+            35.21022580645162,
+            31.772483870967744
+          ],
+          "distanceMetres": 2692.291,
+          "surfaceMetres": 788.2454833984375
+        },
+        {
+          "lonLat": [
+            35.2103870967742,
+            31.77225806451613
+          ],
+          "distanceMetres": 2721.699,
+          "surfaceMetres": 786.1123046875
+        },
+        {
+          "lonLat": [
+            35.21054838709678,
+            31.772032258064517
+          ],
+          "distanceMetres": 2751.107,
+          "surfaceMetres": 785.3866577148438
+        },
+        {
+          "lonLat": [
+            35.21070967741936,
+            31.771806451612903
+          ],
+          "distanceMetres": 2780.516,
+          "surfaceMetres": 783.09423828125
+        },
+        {
+          "lonLat": [
+            35.21087096774194,
+            31.77158064516129
+          ],
+          "distanceMetres": 2809.924,
+          "surfaceMetres": 780.6607055664062
+        },
+        {
+          "lonLat": [
+            35.21103225806452,
+            31.771354838709676
+          ],
+          "distanceMetres": 2839.332,
+          "surfaceMetres": 771.537841796875
+        },
+        {
+          "lonLat": [
+            35.2111935483871,
+            31.771129032258063
+          ],
+          "distanceMetres": 2868.74,
+          "surfaceMetres": 770.7778930664062
+        },
+        {
+          "lonLat": [
+            35.21135483870968,
+            31.77090322580645
+          ],
+          "distanceMetres": 2898.149,
+          "surfaceMetres": 766.2052001953125
+        },
+        {
+          "lonLat": [
+            35.21151612903226,
+            31.77067741935484
+          ],
+          "distanceMetres": 2927.557,
+          "surfaceMetres": 765.37109375
+        },
+        {
+          "lonLat": [
+            35.21167741935484,
+            31.770451612903226
+          ],
+          "distanceMetres": 2956.965,
+          "surfaceMetres": 768.2855224609375
+        },
+        {
+          "lonLat": [
+            35.21183870967742,
+            31.770225806451613
+          ],
+          "distanceMetres": 2986.374,
+          "surfaceMetres": 770.6768798828125
+        },
+        {
+          "lonLat": [
+            35.212,
+            31.77
+          ],
+          "distanceMetres": 3015.782,
+          "surfaceMetres": 773.587646484375
+        },
+        {
+          "lonLat": [
+            35.21225925925926,
+            31.76985185185185
+          ],
+          "distanceMetres": 3045.346,
+          "surfaceMetres": 776.989501953125
+        },
+        {
+          "lonLat": [
+            35.21251851851852,
+            31.769703703703705
+          ],
+          "distanceMetres": 3074.911,
+          "surfaceMetres": 782.5601806640625
+        },
+        {
+          "lonLat": [
+            35.21277777777778,
+            31.769555555555556
+          ],
+          "distanceMetres": 3104.475,
+          "surfaceMetres": 786.8341674804688
+        },
+        {
+          "lonLat": [
+            35.21303703703704,
+            31.769407407407407
+          ],
+          "distanceMetres": 3134.039,
+          "surfaceMetres": 784.421630859375
+        },
+        {
+          "lonLat": [
+            35.2132962962963,
+            31.769259259259258
+          ],
+          "distanceMetres": 3163.603,
+          "surfaceMetres": 788.5438842773438
+        },
+        {
+          "lonLat": [
+            35.21355555555556,
+            31.769111111111112
+          ],
+          "distanceMetres": 3193.168,
+          "surfaceMetres": 791.5044555664062
+        },
+        {
+          "lonLat": [
+            35.21381481481482,
+            31.768962962962963
+          ],
+          "distanceMetres": 3222.732,
+          "surfaceMetres": 785.646484375
+        },
+        {
+          "lonLat": [
+            35.21407407407408,
+            31.768814814814814
+          ],
+          "distanceMetres": 3252.296,
+          "surfaceMetres": 783.2048950195312
+        },
+        {
+          "lonLat": [
+            35.214333333333336,
+            31.768666666666665
+          ],
+          "distanceMetres": 3281.861,
+          "surfaceMetres": 781.0436401367188
+        },
+        {
+          "lonLat": [
+            35.214592592592595,
+            31.76851851851852
+          ],
+          "distanceMetres": 3311.425,
+          "surfaceMetres": 780.22216796875
+        },
+        {
+          "lonLat": [
+            35.214851851851854,
+            31.76837037037037
+          ],
+          "distanceMetres": 3340.989,
+          "surfaceMetres": 782.0711059570312
+        },
+        {
+          "lonLat": [
+            35.21511111111111,
+            31.76822222222222
+          ],
+          "distanceMetres": 3370.553,
+          "surfaceMetres": 780.4834594726562
+        },
+        {
+          "lonLat": [
+            35.21537037037037,
+            31.76807407407407
+          ],
+          "distanceMetres": 3400.118,
+          "surfaceMetres": 772.7277221679688
+        },
+        {
+          "lonLat": [
+            35.21562962962963,
+            31.767925925925926
+          ],
+          "distanceMetres": 3429.682,
+          "surfaceMetres": 771.953125
+        },
+        {
+          "lonLat": [
+            35.21588888888889,
+            31.767777777777777
+          ],
+          "distanceMetres": 3459.246,
+          "surfaceMetres": 767.6734619140625
+        },
+        {
+          "lonLat": [
+            35.21614814814815,
+            31.767629629629628
+          ],
+          "distanceMetres": 3488.811,
+          "surfaceMetres": 762.6455688476562
+        },
+        {
+          "lonLat": [
+            35.21640740740741,
+            31.76748148148148
+          ],
+          "distanceMetres": 3518.375,
+          "surfaceMetres": 760.7042236328125
+        },
+        {
+          "lonLat": [
+            35.21666666666667,
+            31.767333333333333
+          ],
+          "distanceMetres": 3547.939,
+          "surfaceMetres": 757.0805053710938
+        },
+        {
+          "lonLat": [
+            35.21692592592593,
+            31.767185185185184
+          ],
+          "distanceMetres": 3577.503,
+          "surfaceMetres": 757.0262451171875
+        },
+        {
+          "lonLat": [
+            35.21718518518519,
+            31.767037037037035
+          ],
+          "distanceMetres": 3607.068,
+          "surfaceMetres": 753.022705078125
+        },
+        {
+          "lonLat": [
+            35.217444444444446,
+            31.766888888888886
+          ],
+          "distanceMetres": 3636.632,
+          "surfaceMetres": 752.0789184570312
+        },
+        {
+          "lonLat": [
+            35.217703703703705,
+            31.76674074074074
+          ],
+          "distanceMetres": 3666.196,
+          "surfaceMetres": 751.5824584960938
+        },
+        {
+          "lonLat": [
+            35.217962962962964,
+            31.76659259259259
+          ],
+          "distanceMetres": 3695.76,
+          "surfaceMetres": 752.4802856445312
+        },
+        {
+          "lonLat": [
+            35.218222222222224,
+            31.766444444444442
+          ],
+          "distanceMetres": 3725.325,
+          "surfaceMetres": 753.107177734375
+        },
+        {
+          "lonLat": [
+            35.21848148148148,
+            31.766296296296293
+          ],
+          "distanceMetres": 3754.889,
+          "surfaceMetres": 754.4933471679688
+        },
+        {
+          "lonLat": [
+            35.21874074074074,
+            31.766148148148147
+          ],
+          "distanceMetres": 3784.453,
+          "surfaceMetres": 751.6045532226562
+        },
+        {
+          "lonLat": [
+            35.219,
+            31.766
+          ],
+          "distanceMetres": 3814.018,
+          "surfaceMetres": 752.7088012695312
+        },
+        {
+          "lonLat": [
+            35.2193125,
+            31.76596875
+          ],
+          "distanceMetres": 3843.798,
+          "surfaceMetres": 749.8378295898438
+        },
+        {
+          "lonLat": [
+            35.219625,
+            31.7659375
+          ],
+          "distanceMetres": 3873.579,
+          "surfaceMetres": 748.8468627929688
+        },
+        {
+          "lonLat": [
+            35.2199375,
+            31.765906249999997
+          ],
+          "distanceMetres": 3903.359,
+          "surfaceMetres": 749.2182006835938
+        },
+        {
+          "lonLat": [
+            35.22025,
+            31.765874999999998
+          ],
+          "distanceMetres": 3933.14,
+          "surfaceMetres": 751.7070922851562
+        },
+        {
+          "lonLat": [
+            35.2205625,
+            31.76584375
+          ],
+          "distanceMetres": 3962.92,
+          "surfaceMetres": 754.5479125976562
+        },
+        {
+          "lonLat": [
+            35.220875,
+            31.7658125
+          ],
+          "distanceMetres": 3992.701,
+          "surfaceMetres": 753.0708618164062
+        },
+        {
+          "lonLat": [
+            35.2211875,
+            31.76578125
+          ],
+          "distanceMetres": 4022.481,
+          "surfaceMetres": 752.2619018554688
+        },
+        {
+          "lonLat": [
+            35.2215,
+            31.765749999999997
+          ],
+          "distanceMetres": 4052.262,
+          "surfaceMetres": 752.003173828125
+        },
+        {
+          "lonLat": [
+            35.2218125,
+            31.765718749999998
+          ],
+          "distanceMetres": 4082.043,
+          "surfaceMetres": 750.8197631835938
+        },
+        {
+          "lonLat": [
+            35.222125,
+            31.7656875
+          ],
+          "distanceMetres": 4111.823,
+          "surfaceMetres": 752.3456420898438
+        },
+        {
+          "lonLat": [
+            35.2224375,
+            31.76565625
+          ],
+          "distanceMetres": 4141.604,
+          "surfaceMetres": 750.3717651367188
+        },
+        {
+          "lonLat": [
+            35.22275,
+            31.765625
+          ],
+          "distanceMetres": 4171.384,
+          "surfaceMetres": 750.8870849609375
+        },
+        {
+          "lonLat": [
+            35.2230625,
+            31.76559375
+          ],
+          "distanceMetres": 4201.165,
+          "surfaceMetres": 752.6992797851562
+        },
+        {
+          "lonLat": [
+            35.223375,
+            31.765562499999998
+          ],
+          "distanceMetres": 4230.945,
+          "surfaceMetres": 752.261474609375
+        },
+        {
+          "lonLat": [
+            35.2236875,
+            31.76553125
+          ],
+          "distanceMetres": 4260.726,
+          "surfaceMetres": 753.1975708007812
+        },
+        {
+          "lonLat": [
+            35.224000000000004,
+            31.7655
+          ],
+          "distanceMetres": 4290.506,
+          "surfaceMetres": 751.8109130859375
+        },
+        {
+          "lonLat": [
+            35.2243125,
+            31.76546875
+          ],
+          "distanceMetres": 4320.287,
+          "surfaceMetres": 753.4696044921875
+        },
+        {
+          "lonLat": [
+            35.224625,
+            31.7654375
+          ],
+          "distanceMetres": 4350.068,
+          "surfaceMetres": 752.913330078125
+        },
+        {
+          "lonLat": [
+            35.2249375,
+            31.765406249999998
+          ],
+          "distanceMetres": 4379.848,
+          "surfaceMetres": 754.3341674804688
+        },
+        {
+          "lonLat": [
+            35.22525,
+            31.765375
+          ],
+          "distanceMetres": 4409.629,
+          "surfaceMetres": 756.9518432617188
+        },
+        {
+          "lonLat": [
+            35.2255625,
+            31.76534375
+          ],
+          "distanceMetres": 4439.409,
+          "surfaceMetres": 761.9520874023438
+        },
+        {
+          "lonLat": [
+            35.225875,
+            31.7653125
+          ],
+          "distanceMetres": 4469.19,
+          "surfaceMetres": 765.4309692382812
+        },
+        {
+          "lonLat": [
+            35.2261875,
+            31.76528125
+          ],
+          "distanceMetres": 4498.97,
+          "surfaceMetres": 767.0821533203125
+        },
+        {
+          "lonLat": [
+            35.2265,
+            31.76525
+          ],
+          "distanceMetres": 4528.751,
+          "surfaceMetres": 770.2002563476562
+        },
+        {
+          "lonLat": [
+            35.2268125,
+            31.76521875
+          ],
+          "distanceMetres": 4558.531,
+          "surfaceMetres": 780.7335815429688
+        },
+        {
+          "lonLat": [
+            35.227125,
+            31.7651875
+          ],
+          "distanceMetres": 4588.312,
+          "surfaceMetres": 780.5941162109375
+        },
+        {
+          "lonLat": [
+            35.2274375,
+            31.76515625
+          ],
+          "distanceMetres": 4618.093,
+          "surfaceMetres": 778.2962036132812
+        },
+        {
+          "lonLat": [
+            35.22775,
+            31.765125
+          ],
+          "distanceMetres": 4647.873,
+          "surfaceMetres": 778.6869506835938
+        },
+        {
+          "lonLat": [
+            35.2280625,
+            31.765093750000002
+          ],
+          "distanceMetres": 4677.654,
+          "surfaceMetres": 777.3296508789062
+        },
+        {
+          "lonLat": [
+            35.228375,
+            31.7650625
+          ],
+          "distanceMetres": 4707.434,
+          "surfaceMetres": 774.972900390625
+        },
+        {
+          "lonLat": [
+            35.2286875,
+            31.76503125
+          ],
+          "distanceMetres": 4737.215,
+          "surfaceMetres": 768.1253051757812
+        },
+        {
+          "lonLat": [
+            35.229,
+            31.765
+          ],
+          "distanceMetres": 4766.995,
+          "surfaceMetres": 763.5148315429688
+        },
+        {
+          "lonLat": [
+            35.22872,
+            31.76488
+          ],
+          "distanceMetres": 4796.673,
+          "surfaceMetres": 768.1253051757812
+        },
+        {
+          "lonLat": [
+            35.22844,
+            31.76476
+          ],
+          "distanceMetres": 4826.351,
+          "surfaceMetres": 770.8687133789062
+        },
+        {
+          "lonLat": [
+            35.22816,
+            31.76464
+          ],
+          "distanceMetres": 4856.028,
+          "surfaceMetres": 774.47119140625
+        },
+        {
+          "lonLat": [
+            35.22788,
+            31.76452
+          ],
+          "distanceMetres": 4885.706,
+          "surfaceMetres": 776.3218383789062
+        },
+        {
+          "lonLat": [
+            35.2276,
+            31.764400000000002
+          ],
+          "distanceMetres": 4915.384,
+          "surfaceMetres": 779.5580444335938
+        },
+        {
+          "lonLat": [
+            35.22732,
+            31.76428
+          ],
+          "distanceMetres": 4945.061,
+          "surfaceMetres": 779.15234375
+        },
+        {
+          "lonLat": [
+            35.22704,
+            31.76416
+          ],
+          "distanceMetres": 4974.739,
+          "surfaceMetres": 776.9203491210938
+        },
+        {
+          "lonLat": [
+            35.22676,
+            31.76404
+          ],
+          "distanceMetres": 5004.417,
+          "surfaceMetres": 774.43359375
+        },
+        {
+          "lonLat": [
+            35.22648,
+            31.76392
+          ],
+          "distanceMetres": 5034.094,
+          "surfaceMetres": 774.6381225585938
+        },
+        {
+          "lonLat": [
+            35.2262,
+            31.7638
+          ],
+          "distanceMetres": 5063.772,
+          "surfaceMetres": 774.609130859375
+        },
+        {
+          "lonLat": [
+            35.22592,
+            31.76368
+          ],
+          "distanceMetres": 5093.45,
+          "surfaceMetres": 769.4254760742188
+        },
+        {
+          "lonLat": [
+            35.22564,
+            31.763560000000002
+          ],
+          "distanceMetres": 5123.127,
+          "surfaceMetres": 764.3573608398438
+        },
+        {
+          "lonLat": [
+            35.22536,
+            31.76344
+          ],
+          "distanceMetres": 5152.805,
+          "surfaceMetres": 759.5806884765625
+        },
+        {
+          "lonLat": [
+            35.22508,
+            31.76332
+          ],
+          "distanceMetres": 5182.483,
+          "surfaceMetres": 756.777099609375
+        },
+        {
+          "lonLat": [
+            35.2248,
+            31.7632
+          ],
+          "distanceMetres": 5212.16,
+          "surfaceMetres": 755.6226806640625
+        },
+        {
+          "lonLat": [
+            35.22452,
+            31.763080000000002
+          ],
+          "distanceMetres": 5241.838,
+          "surfaceMetres": 754.8472900390625
+        },
+        {
+          "lonLat": [
+            35.22424,
+            31.76296
+          ],
+          "distanceMetres": 5271.516,
+          "surfaceMetres": 754.8746948242188
+        },
+        {
+          "lonLat": [
+            35.22396,
+            31.76284
+          ],
+          "distanceMetres": 5301.193,
+          "surfaceMetres": 752.8564453125
+        },
+        {
+          "lonLat": [
+            35.22368,
+            31.76272
+          ],
+          "distanceMetres": 5330.871,
+          "surfaceMetres": 753.3223876953125
+        },
+        {
+          "lonLat": [
+            35.2234,
+            31.7626
+          ],
+          "distanceMetres": 5360.549,
+          "surfaceMetres": 750.0476684570312
+        },
+        {
+          "lonLat": [
+            35.22312,
+            31.76248
+          ],
+          "distanceMetres": 5390.226,
+          "surfaceMetres": 750.7376708984375
+        },
+        {
+          "lonLat": [
+            35.22284,
+            31.76236
+          ],
+          "distanceMetres": 5419.904,
+          "surfaceMetres": 756.1737670898438
+        },
+        {
+          "lonLat": [
+            35.22256,
+            31.762240000000002
+          ],
+          "distanceMetres": 5449.582,
+          "surfaceMetres": 757.7351684570312
+        },
+        {
+          "lonLat": [
+            35.22228,
+            31.76212
+          ],
+          "distanceMetres": 5479.26,
+          "surfaceMetres": 753.25927734375
+        },
+        {
+          "lonLat": [
+            35.222,
+            31.762
+          ],
+          "distanceMetres": 5508.937,
+          "surfaceMetres": 754.3289184570312
+        },
+        {
+          "lonLat": [
+            35.221970588235294,
+            31.76173529411765
+          ],
+          "distanceMetres": 5538.535,
+          "surfaceMetres": 755.7529296875
+        },
+        {
+          "lonLat": [
+            35.22194117647059,
+            31.761470588235294
+          ],
+          "distanceMetres": 5568.134,
+          "surfaceMetres": 757.7925415039062
+        },
+        {
+          "lonLat": [
+            35.22191176470589,
+            31.761205882352943
+          ],
+          "distanceMetres": 5597.732,
+          "surfaceMetres": 759.5712890625
+        },
+        {
+          "lonLat": [
+            35.22188235294118,
+            31.76094117647059
+          ],
+          "distanceMetres": 5627.33,
+          "surfaceMetres": 756.7754516601562
+        },
+        {
+          "lonLat": [
+            35.22185294117647,
+            31.760676470588237
+          ],
+          "distanceMetres": 5656.929,
+          "surfaceMetres": 759.4459838867188
+        },
+        {
+          "lonLat": [
+            35.221823529411765,
+            31.760411764705882
+          ],
+          "distanceMetres": 5686.527,
+          "surfaceMetres": 757.3056640625
+        },
+        {
+          "lonLat": [
+            35.22179411764706,
+            31.76014705882353
+          ],
+          "distanceMetres": 5716.125,
+          "surfaceMetres": 757.1605834960938
+        },
+        {
+          "lonLat": [
+            35.22176470588235,
+            31.759882352941176
+          ],
+          "distanceMetres": 5745.723,
+          "surfaceMetres": 759.7330322265625
+        },
+        {
+          "lonLat": [
+            35.22173529411765,
+            31.759617647058825
+          ],
+          "distanceMetres": 5775.322,
+          "surfaceMetres": 759.59765625
+        },
+        {
+          "lonLat": [
+            35.22170588235294,
+            31.75935294117647
+          ],
+          "distanceMetres": 5804.92,
+          "surfaceMetres": 757.9501342773438
+        },
+        {
+          "lonLat": [
+            35.221676470588235,
+            31.75908823529412
+          ],
+          "distanceMetres": 5834.518,
+          "surfaceMetres": 757.4553833007812
+        },
+        {
+          "lonLat": [
+            35.22164705882353,
+            31.758823529411764
+          ],
+          "distanceMetres": 5864.116,
+          "surfaceMetres": 760.3904418945312
+        },
+        {
+          "lonLat": [
+            35.22161764705882,
+            31.758558823529413
+          ],
+          "distanceMetres": 5893.715,
+          "surfaceMetres": 760.9579467773438
+        },
+        {
+          "lonLat": [
+            35.221588235294114,
+            31.758294117647058
+          ],
+          "distanceMetres": 5923.313,
+          "surfaceMetres": 761.3207397460938
+        },
+        {
+          "lonLat": [
+            35.22155882352941,
+            31.758029411764706
+          ],
+          "distanceMetres": 5952.911,
+          "surfaceMetres": 760.9635620117188
+        },
+        {
+          "lonLat": [
+            35.221529411764706,
+            31.75776470588235
+          ],
+          "distanceMetres": 5982.51,
+          "surfaceMetres": 765.255615234375
+        },
+        {
+          "lonLat": [
+            35.2215,
+            31.7575
+          ],
+          "distanceMetres": 6012.108,
+          "surfaceMetres": 760.6991577148438
+        },
+        {
+          "lonLat": [
+            35.22147058823529,
+            31.75723529411765
+          ],
+          "distanceMetres": 6041.706,
+          "surfaceMetres": 762.912841796875
+        },
+        {
+          "lonLat": [
+            35.221441176470584,
+            31.756970588235294
+          ],
+          "distanceMetres": 6071.304,
+          "surfaceMetres": 761.5946655273438
+        },
+        {
+          "lonLat": [
+            35.221411764705884,
+            31.756705882352943
+          ],
+          "distanceMetres": 6100.903,
+          "surfaceMetres": 759.6886596679688
+        },
+        {
+          "lonLat": [
+            35.22138235294118,
+            31.756441176470588
+          ],
+          "distanceMetres": 6130.501,
+          "surfaceMetres": 761.3603515625
+        },
+        {
+          "lonLat": [
+            35.22135294117647,
+            31.756176470588237
+          ],
+          "distanceMetres": 6160.099,
+          "surfaceMetres": 764.8719482421875
+        },
+        {
+          "lonLat": [
+            35.22132352941176,
+            31.755911764705882
+          ],
+          "distanceMetres": 6189.697,
+          "surfaceMetres": 765.7501220703125
+        },
+        {
+          "lonLat": [
+            35.221294117647055,
+            31.75564705882353
+          ],
+          "distanceMetres": 6219.296,
+          "surfaceMetres": 763.4020385742188
+        },
+        {
+          "lonLat": [
+            35.22126470588235,
+            31.755382352941176
+          ],
+          "distanceMetres": 6248.894,
+          "surfaceMetres": 763.9657592773438
+        },
+        {
+          "lonLat": [
+            35.22123529411765,
+            31.755117647058825
+          ],
+          "distanceMetres": 6278.492,
+          "surfaceMetres": 763.9647216796875
+        },
+        {
+          "lonLat": [
+            35.22120588235294,
+            31.75485294117647
+          ],
+          "distanceMetres": 6308.091,
+          "surfaceMetres": 764.7679443359375
+        },
+        {
+          "lonLat": [
+            35.22117647058823,
+            31.75458823529412
+          ],
+          "distanceMetres": 6337.689,
+          "surfaceMetres": 764.7679443359375
+        },
+        {
+          "lonLat": [
+            35.221147058823526,
+            31.754323529411764
+          ],
+          "distanceMetres": 6367.287,
+          "surfaceMetres": 767.4974975585938
+        },
+        {
+          "lonLat": [
+            35.22111764705882,
+            31.754058823529412
+          ],
+          "distanceMetres": 6396.885,
+          "surfaceMetres": 771.0619506835938
+        },
+        {
+          "lonLat": [
+            35.22108823529411,
+            31.753794117647058
+          ],
+          "distanceMetres": 6426.484,
+          "surfaceMetres": 772.0133056640625
+        },
+        {
+          "lonLat": [
+            35.22105882352941,
+            31.753529411764706
+          ],
+          "distanceMetres": 6456.082,
+          "surfaceMetres": 772.2468872070312
+        },
+        {
+          "lonLat": [
+            35.221029411764704,
+            31.75326470588235
+          ],
+          "distanceMetres": 6485.68,
+          "surfaceMetres": 775.6864624023438
+        },
+        {
+          "lonLat": [
+            35.221,
+            31.753
+          ],
+          "distanceMetres": 6515.279,
+          "surfaceMetres": 776.8276977539062
+        },
+        {
+          "lonLat": [
+            35.22108333333333,
+            31.75275
+          ],
+          "distanceMetres": 6544.205,
+          "surfaceMetres": 777.24267578125
+        },
+        {
+          "lonLat": [
+            35.22116666666666,
+            31.7525
+          ],
+          "distanceMetres": 6573.131,
+          "surfaceMetres": 780.9074096679688
+        },
+        {
+          "lonLat": [
+            35.22125,
+            31.75225
+          ],
+          "distanceMetres": 6602.058,
+          "surfaceMetres": 785.2592163085938
+        },
+        {
+          "lonLat": [
+            35.221333333333334,
+            31.752
+          ],
+          "distanceMetres": 6630.984,
+          "surfaceMetres": 783.6749267578125
+        },
+        {
+          "lonLat": [
+            35.22141666666666,
+            31.75175
+          ],
+          "distanceMetres": 6659.91,
+          "surfaceMetres": 787.2636108398438
+        },
+        {
+          "lonLat": [
+            35.2215,
+            31.7515
+          ],
+          "distanceMetres": 6688.837,
+          "surfaceMetres": 786.54638671875
+        },
+        {
+          "lonLat": [
+            35.22158333333333,
+            31.75125
+          ],
+          "distanceMetres": 6717.763,
+          "surfaceMetres": 787.072021484375
+        },
+        {
+          "lonLat": [
+            35.221666666666664,
+            31.751
+          ],
+          "distanceMetres": 6746.69,
+          "surfaceMetres": 787.072021484375
+        },
+        {
+          "lonLat": [
+            35.22175,
+            31.75075
+          ],
+          "distanceMetres": 6775.616,
+          "surfaceMetres": 793.7915649414062
+        },
+        {
+          "lonLat": [
+            35.22183333333333,
+            31.7505
+          ],
+          "distanceMetres": 6804.542,
+          "surfaceMetres": 793.9523315429688
+        },
+        {
+          "lonLat": [
+            35.221916666666665,
+            31.75025
+          ],
+          "distanceMetres": 6833.469,
+          "surfaceMetres": 796.692626953125
+        },
+        {
+          "lonLat": [
+            35.221999999999994,
+            31.75
+          ],
+          "distanceMetres": 6862.395,
+          "surfaceMetres": 795.653076171875
+        },
+        {
+          "lonLat": [
+            35.22208333333333,
+            31.74975
+          ],
+          "distanceMetres": 6891.322,
+          "surfaceMetres": 804.1954345703125
+        },
+        {
+          "lonLat": [
+            35.222166666666666,
+            31.7495
+          ],
+          "distanceMetres": 6920.248,
+          "surfaceMetres": 803.313232421875
+        },
+        {
+          "lonLat": [
+            35.222249999999995,
+            31.74925
+          ],
+          "distanceMetres": 6949.174,
+          "surfaceMetres": 806.0658569335938
+        },
+        {
+          "lonLat": [
+            35.22233333333333,
+            31.749
+          ],
+          "distanceMetres": 6978.101,
+          "surfaceMetres": 807.5912475585938
+        },
+        {
+          "lonLat": [
+            35.22241666666667,
+            31.74875
+          ],
+          "distanceMetres": 7007.027,
+          "surfaceMetres": 814.2993774414062
+        },
+        {
+          "lonLat": [
+            35.2225,
+            31.7485
+          ],
+          "distanceMetres": 7035.954,
+          "surfaceMetres": 814.2993774414062
+        },
+        {
+          "lonLat": [
+            35.22258333333333,
+            31.74825
+          ],
+          "distanceMetres": 7064.88,
+          "surfaceMetres": 814.7050170898438
+        },
+        {
+          "lonLat": [
+            35.22266666666667,
+            31.748
+          ],
+          "distanceMetres": 7093.806,
+          "surfaceMetres": 807.4534301757812
+        },
+        {
+          "lonLat": [
+            35.22275,
+            31.74775
+          ],
+          "distanceMetres": 7122.733,
+          "surfaceMetres": 808.8450927734375
+        },
+        {
+          "lonLat": [
+            35.222833333333334,
+            31.7475
+          ],
+          "distanceMetres": 7151.659,
+          "surfaceMetres": 809.3358764648438
+        },
+        {
+          "lonLat": [
+            35.22291666666666,
+            31.74725
+          ],
+          "distanceMetres": 7180.586,
+          "surfaceMetres": 807.1202392578125
+        },
+        {
+          "lonLat": [
+            35.223,
+            31.747
+          ],
+          "distanceMetres": 7209.512,
+          "surfaceMetres": 801.6165771484375
+        },
+        {
+          "lonLat": [
+            35.223279999999995,
+            31.74688
+          ],
+          "distanceMetres": 7239.194,
+          "surfaceMetres": 798.9110717773438
+        },
+        {
+          "lonLat": [
+            35.22356,
+            31.74676
+          ],
+          "distanceMetres": 7268.877,
+          "surfaceMetres": 787.5081787109375
+        },
+        {
+          "lonLat": [
+            35.223839999999996,
+            31.74664
+          ],
+          "distanceMetres": 7298.559,
+          "surfaceMetres": 782.8499145507812
+        },
+        {
+          "lonLat": [
+            35.22412,
+            31.74652
+          ],
+          "distanceMetres": 7328.241,
+          "surfaceMetres": 771.460205078125
+        },
+        {
+          "lonLat": [
+            35.224399999999996,
+            31.7464
+          ],
+          "distanceMetres": 7357.923,
+          "surfaceMetres": 769.3248291015625
+        },
+        {
+          "lonLat": [
+            35.22468,
+            31.74628
+          ],
+          "distanceMetres": 7387.606,
+          "surfaceMetres": 770.93212890625
+        },
+        {
+          "lonLat": [
+            35.224959999999996,
+            31.74616
+          ],
+          "distanceMetres": 7417.288,
+          "surfaceMetres": 762.4332275390625
+        },
+        {
+          "lonLat": [
+            35.22524,
+            31.74604
+          ],
+          "distanceMetres": 7446.97,
+          "surfaceMetres": 757.6611938476562
+        },
+        {
+          "lonLat": [
+            35.225519999999996,
+            31.745919999999998
+          ],
+          "distanceMetres": 7476.652,
+          "surfaceMetres": 759.944091796875
+        },
+        {
+          "lonLat": [
+            35.2258,
+            31.7458
+          ],
+          "distanceMetres": 7506.335,
+          "surfaceMetres": 755.9063110351562
+        },
+        {
+          "lonLat": [
+            35.226079999999996,
+            31.74568
+          ],
+          "distanceMetres": 7536.017,
+          "surfaceMetres": 741.2979736328125
+        },
+        {
+          "lonLat": [
+            35.22636,
+            31.74556
+          ],
+          "distanceMetres": 7565.699,
+          "surfaceMetres": 741.0361938476562
+        },
+        {
+          "lonLat": [
+            35.226639999999996,
+            31.74544
+          ],
+          "distanceMetres": 7595.382,
+          "surfaceMetres": 745.1994018554688
+        },
+        {
+          "lonLat": [
+            35.22692,
+            31.74532
+          ],
+          "distanceMetres": 7625.064,
+          "surfaceMetres": 739.0160522460938
+        },
+        {
+          "lonLat": [
+            35.227199999999996,
+            31.7452
+          ],
+          "distanceMetres": 7654.746,
+          "surfaceMetres": 746.6085205078125
+        },
+        {
+          "lonLat": [
+            35.22748,
+            31.74508
+          ],
+          "distanceMetres": 7684.428,
+          "surfaceMetres": 737.6689453125
+        },
+        {
+          "lonLat": [
+            35.227759999999996,
+            31.74496
+          ],
+          "distanceMetres": 7714.111,
+          "surfaceMetres": 739.6170654296875
+        },
+        {
+          "lonLat": [
+            35.22804,
+            31.74484
+          ],
+          "distanceMetres": 7743.793,
+          "surfaceMetres": 733.7006225585938
+        },
+        {
+          "lonLat": [
+            35.22832,
+            31.74472
+          ],
+          "distanceMetres": 7773.475,
+          "surfaceMetres": 732.40966796875
+        },
+        {
+          "lonLat": [
+            35.2286,
+            31.7446
+          ],
+          "distanceMetres": 7803.157,
+          "surfaceMetres": 731.0741577148438
+        },
+        {
+          "lonLat": [
+            35.22888,
+            31.74448
+          ],
+          "distanceMetres": 7832.84,
+          "surfaceMetres": 719.3493041992188
+        },
+        {
+          "lonLat": [
+            35.22916,
+            31.74436
+          ],
+          "distanceMetres": 7862.522,
+          "surfaceMetres": 721.9097290039062
+        },
+        {
+          "lonLat": [
+            35.22944,
+            31.74424
+          ],
+          "distanceMetres": 7892.204,
+          "surfaceMetres": 711.9804077148438
+        },
+        {
+          "lonLat": [
+            35.22972,
+            31.74412
+          ],
+          "distanceMetres": 7921.887,
+          "surfaceMetres": 707.0418090820312
+        },
+        {
+          "lonLat": [
+            35.23,
+            31.744
+          ],
+          "distanceMetres": 7951.569,
+          "surfaceMetres": 688.5247192382812
+        }
+      ],
+      "modernSurfaceDiagnostics": {
+        "minimumMetres": 688.5247192382812,
+        "maximumMetres": 815.9697265625,
+        "accumulatedSampleRiseMetres": 297.47955322265625,
+        "accumulatedSampleFallMetres": 412.0469970703125,
+        "maximumAbsoluteSampleGradePercent": 62.38433261451722,
+        "intervalsOver15PercentAbsolute": 50,
+        "gradeWarning": "Modern buildings, vegetation and 30m sampling contaminate these figures; not ancient ground slope, route feasibility or game movement."
+      }
+    }
+  ],
+  "imagePath": "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/18-modern-surface-route-comparison.png",
+  "imageSha256": "355793403773be867c8cc94138a3a8c10b496a46b86b90f8af2559634a80099d",
+  "imagePurpose": "New scientific plot from existing measured raster, not an edited historical photograph or a playable map",
+  "sourceImagesCopied": false,
+  "routeApproved": false,
+  "gameVerified": false,
+  "decision": "Do not hand either candidate to a native map builder as certified geography. Inspect steep modern intervals against dated topography/ground/archaeology first. Keep H1 explicitly outside any asserted ancient neighbourhood footprint."
+}
