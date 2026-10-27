@@ -1,0 +1,75 @@
+{
+  "episodeId": "11-council-record-escort-antioch",
+  "architectApproval": false,
+  "auditStatus": "source collection only; independent/architectural approval pending",
+  "dateAndPlace": {
+    "placeSupported": "Antioch on the Orontes: the letter explicitly says the assembly met at the church/community in Antioch (Urk. 18 §§3–5).",
+    "dateRange": "Conventionally 324/325 or early 325, before Nicaea; the exact date is reconstructed, not given in the letter.",
+    "chronologyDifference": "Kinzig's 2023 article calls it spring 325; Samuel Fernández (2025) calls it early 325; Matthias Simperl's 2023/24 presentation and 2025 monograph argue for before Constantine's intervention, from autumn 324 to late winter 325. Those are incompatible reconstructions of sequence/date, not an exact day attested by the letter.",
+    "sequenceCaution": "The letter's §15 anticipates a synod at Ancyra as a place for the named bishops to repent. The document itself does not name Nicaea as the later venue; connecting Ancyra to Nicaea and fixing this letter before Nicaea relies on external chronology and the letter's transmission context."
+  },
+  "claims": {
+    "supportedWithQualification": [
+      "A synodal letter attributed to a gathering at Antioch reports that bishops from surrounding eastern regions assembled to address church disputes (§§2–5).",
+      "The opening list names Hosius/Ossius, Eustathius and numerous other bishops; §3 names Palestine, Arabia, Phoenicia, Coele-Syria, Cilicia and some from Cappadocia. The letter does not establish an exact attendance count independent of its transmitted list.",
+      "The letter presents a confession and describes doctrinal examination; it polemically says Theodotus of Laodicea, Narcissus of Neronias and Eusebius of Caesarea held contrary views (§§8–14).",
+      "In §14 the synod says it decided not to maintain communion with those three; §15 asks the recipient to avoid communion and identifies a future synod at Ancyra as an opportunity for repentance. This supports a temporary ecclesiastical exclusion/non-communion as represented by the letter."
+    ],
+    "notSupportedOrOverstated": [
+      "The letter does not say the three bishops were deposed from their sees or removed from episcopal office. Its operative wording is refusal of communion (Greek retroversion: mē koinōnein; English translation: ‘not to practice fellowship’). Calling this ‘suspension of bishops’ is only safe if clearly defined as suspension from communion, not office.",
+      "The document is a synodal letter, not minutes or a verbatim council record. It is partisan self-report; it does not independently prove the accusations against the three bishops.",
+      "The letter does not give an exact meeting date, exact headcount, neutral account of the debate, or a physical escort/convoy. Any escort/logistics scene is not documented by the consulted evidence."
+    ],
+    "authenticityAndTransmission": "Authenticity has been disputed since its discovery. Simperl's 2025 monograph argues for the letter's authenticity and a pre-Nicene context; the presentation I read says the tradition survives in Syriac translation through a late-seventh-century West-Syriac canon collection and medieval manuscripts, with the Greek original lost. Samuel Fernández's 2025 article treats it as the only testimony to the condemnation, while disagreeing with Simperl's reconstruction/attribution of authorship. The letter is therefore usable as a transmitted document, but its date, attribution, precise textual form and reported sanction require attribution and qualification.",
+    "textualCautions": [
+      "The accessible fourthcentury.com edition is a Greek retroversion from the Syriac of Paris, Bibl. Nat., Syr. 62, as printed by Opitz; the English translation is Aaron West's. It is not a direct surviving Greek manuscript or a newly collated Syriac manuscript edition.",
+      "Its heading is internally inconsistent: the Greek heading addresses Alexander, bishop of Thessalonica, while the supplied English renders ‘bishop of Constantinople’; the later colophon identifies him as bishop of New Rome/Constantinople. Do not treat recipient or heading as settled without the critical edition.",
+      "The list of senders/participants differs across manuscript witnesses and editorial traditions; the academy presentation reports four independent Syriac manuscripts and says earlier western witnesses reflect editorial intervention. Avoid an unqualified count such as 56 or 60+ attendees.",
+      "Do not conflate this pre-Nicene letter with the later Antioch synod and deposition of Eustathius. In New Advent's English translation of Socrates, the Eustathius deposition is HE I.24, after the discussion of Nicaea; HE I.25 is the following chapter about the presbyter who worked for Arius's recall."
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.fourthcentury.com/wp-content/uploads/2024/05/Dok-20-Urkunde-18-1.pdf",
+      "title": "Letter of the Synod of Antioch (324/325) (Dok. 20), Urkunde 18; English translation and Greek retroversion",
+      "classification": "Ancient document in a later Syriac transmission; modern edited retroversion/translation",
+      "consultedScope": "Read the 7-page PDF text, especially §§1–5 (pp. 1–2), §§14–15 (pp. 5–6), and the editorial note on p. 1. The translation says the assembly met in Antioch, lists regional origins, and says the synod would not maintain communion with Theodotus, Narcissus and Eusebius; it gives Ancyra as a future venue for repentance. The prefatory note identifies the Greek as a retroversion from the Syriac MS Paris, Bibl. Nat., Syr. 62, printed by Opitz, and credits the English translation to Aaron West."
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/erev.12782",
+      "title": "Wolfram Kinzig, “The Creed of Nicaea: Old Questions, New Answers,” The Ecumenical Review 75.2 (2023), DOI 10.1111/erev.12782",
+      "classification": "Peer-reviewed/open-access academic article; modern synthesis, not primary source",
+      "consultedScope": "Read the full article text served by Wiley, particularly prehistory section lines 83–99 and notes 6, 12, 16. Kinzig calls the synod spring 325, says it suspended communion with the three bishops until the next council, and says Eusebius may have been reinstated at Nicaea. His later phrase ‘suspension from office’ (line 99) should be checked against the quoted letter, whose explicit action is non-communion. Kinzig notes scholarly chronology disagreements and says the exact prehistory remains obscure."
+    },
+    {
+      "url": "https://kath-akademie-bayern.de/en/mediathek-eintrag/das-schreiben-der-synode-von-antiochia-324-325-urk-18-ueberlieferungsgeschichtliche-einordnung-edition-uebersetzung-und-kommentar/",
+      "title": "Matthias Simperl, “The Letter of the Synod of Antioch 324/325 (Document 18): Historical Classification, Edition, Translation and Commentary,” 2023 award lecture/presentation, published in 2024 issue",
+      "classification": "Academic presentation summarizing the author's dissertation and later monograph; not itself the full critical edition",
+      "consultedScope": "Read the full accessible presentation, especially sections on authenticity debate (lines 102–121), transmission (122–141), Antioch 324/25 reconstruction (142–154). It reports Harnack's forgery objection, Strutwolf's interpolation hypothesis and Brennecke/Heil's rebuttal; describes four Syriac manuscript witnesses and argues the letter itself is authentic while an attached historical note is later distortion. Simperl proposes Eustathius as initiator/author and dates the synod before Constantine's intervention. These are the author's arguments; the dissertation/edition itself was not read here."
+    },
+    {
+      "url": "https://doi.org/10.1515/9783111340418",
+      "title": "Matthias Simperl, Das Schreiben der Synode von Antiochia 324/25, De Gruyter, 2025",
+      "classification": "Academic monograph; metadata and publisher abstract only in this audit",
+      "consultedScope": "Search result/publisher metadata gives bibliographic details and says the book supplies a new edition based on an expanded manuscript basis and defends authenticity. Direct page open returned HTTP 405; no book chapter or argument was read, so claims above are attributed to the accessible presentation rather than treated as direct consultation of the monograph."
+    },
+    {
+      "url": "https://theologicalstudies.net/wp-content/uploads/2025/09/The-Council-of-Nicaea-325_-Reassessing-the-Role-of-Eusebius-of-Caesarea.pdf",
+      "title": "Samuel Fernández, “The Council of Nicaea 325: Reassessing the Role of Eusebius of Caesarea,” Theological Studies 86.3 (2025), DOI 10.1177/00405639251354957",
+      "classification": "Peer-reviewed academic article with primary-source analysis",
+      "consultedScope": "Read PDF pp. 13–14 (printed pp. 378–379), especially notes 66–68. Fernández calls the Antioch synod early 325, identifies the letter as the only witness to the condemnation, says it does not explain the reasons beyond the bishops' alleged doctrinal alignment, and explicitly differs from Simperl over who wrote it. This corroborates the existence of a transmitted claim but not a neutral finding of guilt or deposition from office."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26011.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History, Book I (English translation hosted by New Advent)",
+      "classification": "Later church history (fifth century), not contemporary evidence",
+      "consultedScope": "Read/find result at HE I.24–25. HE I.24 narrates a post-Nicene Antioch synod deposing Eustathius and subsequent city unrest; HE I.25 concerns a presbyter advocating Arius's recall. It does not attest the pre-Nicene Antioch letter's sanction and must not be used as support for this episode."
+    }
+  ],
+  "correctionsSuggestedForReview": [
+    "Retain the candidate only as an attributed report of the Antioch synodical letter, with date bracket 324/25 or early 325 pending architectural choice of chronology.",
+    "Replace unqualified ‘suspends bishops’ with ‘the letter says the synod refused communion to three bishops, with an opportunity to repent at a future synod’; do not imply removal from office.",
+    "Do not call the item a council record/minutes, and do not build a historically attested escort or dispatch event from this source alone.",
+    "Keep it distinct from Socrates HE I.24's post-Nicene deposition of Eustathius; note that HE I.25 is actually about Arius's recall."
+  ]
+}

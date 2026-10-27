@@ -1,0 +1,149 @@
+{
+  "subject": "Oxyrhynchus / el-Bahnasa, Middle Egypt, c. 250 CE",
+  "scope": "Read-only geographic and documentary source audit. No scenario or map decisions made; no repository changes. No image was selected or downloaded. Architect separately read BL catalogue, CNR point and Oxford site-plan/water paragraphs; full inaccessible articles remain unverified.",
+  "geography": {
+    "publishedGazetteerPoint": {
+      "latitude": 28.542574,
+      "longitude": 30.65172,
+      "coordinateSystem": "Displayed as decimal latitude/longitude by CNR-ISPC DHeLO/CHLOE record; the record does not state datum in the page text inspected.",
+      "identifier": "Pleiades 736983; Trismegistos 1524",
+      "source": "https://chloe.cnr.it/s/DHeLO/item/1543",
+      "locator": "Oxyrhynchus/Pemje location record, Description, Identifier and Latitude/Longitude fields",
+      "consulted": "Opened the record and read the place names, description, identifiers and published point coordinates.",
+      "qualification": "A gazetteer point for the named ancient place, not a surveyed boundary for the ancient city or a claim that all c.250 buildings occupied this point. Do not treat its decimal digits as ancient positional accuracy."
+    },
+    "waterAndSettlement": [
+      {
+        "source": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+        "locator": "The Site: Excavations and Finds, ‘View north along the Bahr Yussuf canal (1897)’ and ‘El-Bahnasa from the Air’",
+        "consulted": "Opened and read the site description: el-Bahnasa lies along the west bank of the Bahr Yussuf; the project says the named ‘canal’ is actually a natural Nile branch. It says there was no bridge in ancient times and crossing was by ferry. The aerial-site discussion places the Byzantine principal church site by the modern mosque and describes rescue excavations since 1982 and Kuwaiti-funded work in 1985–87.",
+        "supports": "Published archaeological-project description of modern village position relative to Bahr Yussuf, branch-vs-canal distinction, and the ferry/bridge distinction. It also notes that the modern village and cemetery cover parts of the archaeological remains.",
+        "qualification": "This page mixes archaeological observations with modern landscape description and some explicitly tentative identifications. The no-bridge/ferry statement is not tied to a quoted c.250 text in the consulted passage. Do not map the Byzantine church or later mosques into the 250 episode."
+      },
+      {
+        "source": "https://oxyrhynchus.web.ox.ac.uk/introduction",
+        "locator": "Introduction, John Rea exhibition text, paragraphs on Roman city and the map of Egypt (roughly ten miles from main Nile, on Bahr Yussuf branch)",
+        "consulted": "Opened and read the online exhibition text. It calls Oxyrhynchus a district seat/flourishing Roman town with temples, colonnaded streets and an open-air theatre; places it at the desert edge, roughly ten miles from the main Nile, on the Bahr Yussuf branch; says a modern village occupies part of the site.",
+        "supports": "Broad position east/west relationship: ancient town was at the desert edge on the Bahr Yussuf, distinct from the principal Nile channel; broad civic scale and administrative importance.",
+        "qualification": "The stated distance is a rough description on a historic map, not a GIS measurement. The page is an exhibition narrative rather than a detailed excavation monograph; it gives no exact c.250 shoreline or town boundary."
+      },
+      {
+        "source": "https://academic.oup.com/book/47028/chapter-abstract/422651068",
+        "locator": "Jane Rowlandson, Landowners and Tenants in Roman Egypt, Introduction chapter abstract/extract",
+        "consulted": "Search result exposed the chapter abstract: it places the ancient city about 180 km south of Cairo, at the meeting of an oasis desert route and Bahr Yusuf along the western Nile valley; identifies it as the nome’s administrative centre; says the ancient site was later abandoned and its limestone reused. Full chapter was not available in the browser pass.",
+        "supports": "Academic corroboration of the broad regional position and administrative function.",
+        "qualification": "Abstract/extract only, not full chapter. No precise ancient course, point, or c.250 settlement boundary verified from this text."
+      }
+    ],
+    "channelCourseAndPhases": [
+      {
+        "source": "https://www.sciencedirect.com/science/article/pii/S1040618213006460",
+        "locator": "‘The Middle Nile Valley: Elements in an approach to the structuring of the landscape from the Greco-Roman era to the nineteenth century’, accessible search extract: regional context, results/conclusion",
+        "consulted": "Search extract only; the page-open request failed. The extract says Nile and Bahr Youssef are the principal modern Middle Egypt watercourses; the Oxyrhynchite nome preserves traces of ancient settlement/infrastructure; GIS/remote sensing mapped archaeological sites, silted canals and dams; pre-modern flood basins and feeder/drainage channels changed over time.",
+        "supports": "The channel network and floodplain were managed and transformed; modern waterways cannot simply be projected backward unchanged.",
+        "qualification": "The full article, figures, methods and chronology were not read. Search extract cannot establish the exact c.250 position or course of a canal."
+      },
+      {
+        "source": "https://www.recercat.cat/bitstream/handle/2072/290814/2011-Subias-Oxyrhynchos.pdf?isAllowed=y&sequence=1",
+        "locator": "M. Subías, ‘Oxyrhynchos: Metropolis and Landscape’ (2011), search extract on river-port/quays and Bahr Yusef course",
+        "consulted": "Search extract only; opening the PDF returned 502. The indexed passage describes Oxyrhynchus as a river port with quays and dykes along the Bahr; it notes an inferred channel shift and explicitly says the relevant consolidation project lacks archaeological record.",
+        "supports": "Scholarly interpretation that the Bahr’s course shifted and the urban river edge may have been stabilized; also highlights that part of this reconstruction is inference, not an excavated project.",
+        "qualification": "No full-text access. Do not use speculative reconstruction as established geography; no surveyed ancient waterfront line can be derived here."
+      },
+      {
+        "source": "https://www.ucldigitalpress.co.uk/Book/Article/79/103/5919/",
+        "locator": "UCL Digital Press chapter page, search extract concerning Middle Nile canal system and Ptolemaic-era Bahr Yusuf management",
+        "consulted": "The webpage opened but displayed its publication interface without chapter text; a search extract says by the Ptolemaic period channel management diverted Bahr Yusuf across floodplain to supply Oxyrhynchus and later extended to the main Nile. The work states it is published under a Creative Commons licence, but the full licence details were not inspected.",
+        "supports": "A scholarly hypothesis that engineered channel management and natural watercourses were interlinked before Roman rule.",
+        "qualification": "Only search extract, no chapter passage read. Do not treat “diverted” as proof that the entire Bahr was an artificial canal, especially since the Oxford project describes it as a natural Nile branch. Full chapter and footnotes need checking."
+      }
+    ],
+    "geographicConclusion": "For c.250 the defensible regional description is a settlement at el-Bahnasa/Oxyrhynchus beside the Bahr Yussuf on the western side of the Nile valley, with the main Nile farther east and a desert edge/route to the west. The Bahr is described by the Oxford project as a natural Nile branch, while scholarly landscape research indicates artificial feeder canals, flood basins, levees and later channel shifts. Exact ancient bank line, crossing point, and neighborhood locations remain unverified from material fully read here."
+  },
+  "document": {
+    "object": "British Library Papyrus 2457 = P.Oxy. XII 1464 = TM 21866",
+    "date": "27 June 250 CE (catalogue date; papyrus gives Epeiph 3 in Decius’ first regnal year)",
+    "findspotAndProvenance": "Oxyrhynchus, Oxyrhynchite nome, Egypt",
+    "source": "https://searcharchives.bl.uk/catalog/040-002105490",
+    "locator": "British Library Archives and Manuscripts Catalogue, Papyrus 2457; title/scope and content, date range, physical characteristics, provenance and references",
+    "consulted": "Opened and read the direct catalogue record. It identifies the recto as a libellus/declaration: Aurelius Gaion says he, his wife and three children sacrificed, poured libations and tasted offerings before Oxyrhynchus’s sacrifice commissioners; he asks for certification. It names Aurelius Sarapion alias Chaeremon as the scribe writing for Gaion. The item is a damaged papyrus, 172 × 98 mm. The reverse has an unpublished third-century account. The catalogue states digitized images are currently unavailable.",
+    "interpretationLimits": [
+      "The document records a formal declaration by Gaion and the commissioners’ certification context; it does not independently prove every act reported actually occurred.",
+      "It does not identify Gaion, his wife, or children as Christian, non-Christian, coerced, or previously non-compliant. Do not infer faith or a conversion from the libellus.",
+      "The text says sacrifices/libations were performed and offerings tasted. The British Library catalogue contextualizes it as according to Decius’ decree; the papyrus’ quoted formula uses ‘divine decision/decree’ and dates itself to Decius’ first year.",
+      "The left edge and part of the lower papyrus are missing; catalogued digital image access was unavailable. The Papyri.info edition URL https://papyri.info/ddbdp/p.oxy;12;1464 was reached but returned an anti-bot/loading page, so its transcription was not directly read in this pass.",
+      "This one administrative document cannot by itself describe the policy’s enforcement across Egypt or the empire, local crowd dynamics, or a town-wide Christian response."
+    ],
+    "secondaryTextAid": {
+      "source": "https://attalus.org/docs/select2/p318.html",
+      "locator": "Select Papyri II.318, ‘Declaration of Pagan Sacrifice’, Greek text identified as P.Oxy. 1464",
+      "consulted": "Read the openly accessible English translation, including the date formula and the named family members; this is an edited translation, not the papyrus facsimile.",
+      "qualification": "Useful to cross-check the catalogue summary, but the direct British Library record is the primary institutional catalog source. Translation’s editorial lineage and reuse rights were not independently checked."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://chloe.cnr.it/s/DHeLO/item/1543",
+      "title": "DHeLO/CHLOE, Oxyrhynchus/Pemje",
+      "consultedScope": "Opened location record; names, cross-identifiers to Pleiades 736983 and TM 1524, and coordinates 28.542574 N, 30.65172 E.",
+      "access": "record_read"
+    },
+    {
+      "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+      "title": "The Oxyrhynchus Papyri Project, The Site: Excavations and Finds",
+      "consultedScope": "Read archaeological project descriptions of Bahr Yussuf, ancient ferry crossing, nearby village, site cover, excavation zones and later architectural phases.",
+      "access": "page_read"
+    },
+    {
+      "url": "https://oxyrhynchus.web.ox.ac.uk/introduction",
+      "title": "The Oxyrhynchus Papyri Project, Introduction / Oxyrhynchus: A City and its Texts",
+      "consultedScope": "Read exhibition narrative on Roman civic role, distance from main Nile, position on Bahr Yussuf and modern site overlay.",
+      "access": "page_read"
+    },
+    {
+      "url": "https://academic.oup.com/book/47028/chapter-abstract/422651068",
+      "title": "Jane Rowlandson, Landowners and Tenants in Roman Egypt, Introduction",
+      "consultedScope": "Accessible search extract/abstract only on regional position and nome administration; full text not accessed.",
+      "access": "abstract_extract_only"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1040618213006460",
+      "title": "The Middle Nile Valley: Elements in an approach to the structuring of the landscape from the Greco-Roman era to the nineteenth century",
+      "consultedScope": "Search-index extract on natural watercourses, channel/flood basin change and landscape GIS; open request failed.",
+      "access": "search_extract_only"
+    },
+    {
+      "url": "https://www.recercat.cat/bitstream/handle/2072/290814/2011-Subias-Oxyrhynchos.pdf?isAllowed=y&sequence=1",
+      "title": "M. Subías, Oxyrhynchos: Metropolis and Landscape",
+      "consultedScope": "Search extract about river port/quays and possible course shift; PDF open returned 502.",
+      "access": "search_extract_only"
+    },
+    {
+      "url": "https://www.ucldigitalpress.co.uk/Book/Article/79/103/5919/",
+      "title": "Water Societies and Technologies from the Past and the Present, UCL Digital Press chapter page",
+      "consultedScope": "Publication interface read; chapter content came from search extract on Ptolemaic channel-management hypothesis; chapter text not rendered in page open.",
+      "access": "page_interface_plus_search_extract"
+    },
+    {
+      "url": "https://searcharchives.bl.uk/catalog/040-002105490",
+      "title": "British Library Archives and Manuscripts Catalogue, Papyrus 2457",
+      "consultedScope": "Direct record read for identity, transcription summary, date, provenance, condition, access status and publication references.",
+      "access": "catalogue_record_read"
+    },
+    {
+      "url": "https://papyri.info/ddbdp/p.oxy;12;1464",
+      "title": "Duke Databank of Documentary Papyri / Papyri.info, P.Oxy. XII 1464",
+      "consultedScope": "Direct edition endpoint attempted; redirected to an anti-bot/loading page, no transcription available to read.",
+      "access": "access_failed"
+    },
+    {
+      "url": "https://attalus.org/docs/select2/p318.html",
+      "title": "Select Papyri II.318, Declaration of Pagan Sacrifice",
+      "consultedScope": "English edited translation read to cross-check the BL catalogue summary and date formula.",
+      "access": "translation_read"
+    }
+  ],
+  "assetRights": "No image was selected or downloaded. Oxford and British Library pages contain image/access notices; no image license was evaluated for production.",
+  "collectionAgent": "gpt-6-luna",
+  "architectApproval": false
+}

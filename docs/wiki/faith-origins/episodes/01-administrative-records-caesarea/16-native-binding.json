@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-historical-episode-native-binding",
+  "status": "architect closure candidate; independent review and native/game evidence pending",
+  "campaignId": "faith-origins",
+  "episodeId": "01-administrative-records-caesarea",
+  "sourcePath": "docs/design/odysseys/faith-origins.json",
+  "sourceSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+  "sourceDossierIndex": 0,
+  "locales": [
+    "en",
+    "es-ES"
+  ],
+  "intendedNativeAdapter": "bounded civilian delivery prototype; not a legacy export or general v2/v3 support claim",
+  "map": {
+    "size": 320,
+    "bbox": [
+      34.87,
+      32.475,
+      34.965,
+      32.535
+    ],
+    "frameHelper": "tools/map/geographic_frame.helper.py::make_frame",
+    "coastlineSource": "docs/research/odyssey-research/geography/ne_10m_coastline.geojson",
+    "coastlineSourceSha256": "6f75ae0e0de157b14946e2255eb1f5486d9a13819032e26d4610852d296788f6",
+    "coastlineInterpretation": "modern public-domain regional shoreline control, not a Roman harbor reconstruction; Mediterranean west, land east",
+    "nativeElevation": 0,
+    "nativeElevationClassification": "explicit flattened gameplay abstraction; no measured ancient elevation or DEM claim",
+    "corridors": [
+      {
+        "id": "main",
+        "widthTiles": 10,
+        "points": [
+          [
+            119.03,
+            187.94
+          ],
+          [
+            146.01,
+            159.5
+          ],
+          [
+            122.02,
+            109.73
+          ]
+        ]
+      },
+      {
+        "id": "relief",
+        "widthTiles": 6,
+        "points": [
+          [
+            119.03,
+            187.94
+          ],
+          [
+            168,
+            192
+          ],
+          [
+            184,
+            157
+          ],
+          [
+            168,
+            120
+          ],
+          [
+            122.02,
+            109.73
+          ]
+        ],
+        "polylineLengthTiles": 175.05
+      }
+    ],
+    "routePolicy": "fictional local paths, both present from start; relief detours inland and never creates terrain after reward",
+    "receivingFootprintPolicy": "no building or decoration intersects a receiving circle or the 2-tile clear approach outside it; circles stay distinct even when their centres were shared by the draft; quest markers are decorative and nonblocking",
+    "activeAreaAssessment": "local prologue on large regional frame; no assertion that 45 percent of the whole rectangle contains meaningful activity; density and duration await playtest",
+    "nativePositionPolicy": "physical unit base uses floor(design coordinate)+0.5 tile centres; maximum displacement sqrt(0.5), preserve identity/district and recheck approaches; receiving circles retain their declared continuous centres",
+    "legacyDistanceQualification": "dossier corridorStraightLengthsTiles measures only hubOrder chain (94.45 for both), not the relief polyline (175.05); never use the old metric or old SVG as actual native route or timing evidence"
+  },
+  "entities": [
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.dedication-records-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        109.03,
+        195.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -10,
+        8
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Dedication record 1 — coastal bearer",
+        "es-ES": "Registro de dedicación 1 — portador costero"
+      }
+    },
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.dedication-records-2",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        111.03,
+        195.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -8,
+        8
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Dedication record 2 — coastal bearer",
+        "es-ES": "Registro de dedicación 2 — portador costero"
+      }
+    },
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.dedication-records-3",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        113.03,
+        195.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        8
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Dedication record 3 — coastal bearer",
+        "es-ES": "Registro de dedicación 3 — portador costero"
+      }
+    },
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.register-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        136.01,
+        167.5
+      ],
+      "initialHub": "hub-2",
+      "offsetTiles": [
+        -10,
+        8
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Copyist — no register issued yet",
+        "es-ES": "Copista — registro aún no expedido"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-1.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        113.03,
+        190.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        3
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Household supplies 1 — west court",
+        "es-ES": "Suministros del hogar 1 — patio oeste"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-1.entity-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        113.03,
+        193.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Household supplies 2 — east court",
+        "es-ES": "Suministros del hogar 2 — patio este"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-2.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        116.02,
+        112.73
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        -6,
+        3
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Damaged label 1 — coastal copyist",
+        "es-ES": "Etiqueta dañada 1 — copista costero"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-2.entity-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        116.02,
+        115.73
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        -6,
+        6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Damaged label 2 — coastal copyist",
+        "es-ES": "Etiqueta dañada 2 — copista costero"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-3.entity-1",
+      "unitType": "house",
+      "player": 2,
+      "position": [
+        146.01,
+        167.5
+      ],
+      "initialHub": "hub-2",
+      "offsetTiles": [
+        0,
+        8
+      ],
+      "representation": "fixed damaged store",
+      "label": {
+        "en": "Damaged timber store — select to repair for 50 wood",
+        "es-ES": "Almacén dañado — selecciona para reparar por 50 madera"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-4.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        117.03,
+        181.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -2,
+        -6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Coastal trader — eastern receiving post",
+        "es-ES": "Comerciante costero — puesto receptor oriental"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-5.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        122.03,
+        181.94
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        3,
+        -6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "North road guide — northern junction",
+        "es-ES": "Guía del camino norte — cruce norte"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-6.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        123.02,
+        115.73
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        1,
+        6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Voluntary household 1 — coastal refuge",
+        "es-ES": "Hogar voluntario 1 — refugio costero"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-6.entity-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        126.02,
+        115.73
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        4,
+        6
+      ],
+      "representation": "fictional living bearer of this distinct record, consignment or household; never a literal ancient artifact",
+      "label": {
+        "en": "Voluntary household 2 — coastal refuge",
+        "es-ES": "Hogar voluntario 2 — refugio costero"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.destination-1",
+      "centre": [
+        119.03,
+        187.94
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Record collection",
+        "es-ES": "Recogida de registros"
+      }
+    },
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.destination-2",
+      "centre": [
+        146.01,
+        159.5
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Copying court",
+        "es-ES": "Patio de copias"
+      }
+    },
+    {
+      "id": "faith-origins.01-administrative-records-caesarea.destination-3",
+      "centre": [
+        122.02,
+        109.73
+      ],
+      "radius": 3,
+      "hub": "hub-3",
+      "label": {
+        "en": "North road archive",
+        "es-ES": "Archivo del camino norte"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-1.zone-1",
+      "centre": [
+        138.01,
+        159.5
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Western household supplies",
+        "es-ES": "Suministros del hogar oeste"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-1.zone-2",
+      "centre": [
+        154.01,
+        159.5
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Eastern household supplies",
+        "es-ES": "Suministros del hogar este"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-2.zone-1",
+      "centre": [
+        127.03,
+        178.94
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Coastal copyist: two labels",
+        "es-ES": "Copista costero: dos etiquetas"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-3.zone-1",
+      "centre": [
+        154.01,
+        168.5
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Timber store district",
+        "es-ES": "Distrito del almacén"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-4.zone-1",
+      "centre": [
+        154.01,
+        150.5
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Trader receiving post",
+        "es-ES": "Puesto receptor del comerciante"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-5.zone-1",
+      "centre": [
+        130.02,
+        109.73
+      ],
+      "radius": 3,
+      "hub": "hub-3",
+      "label": {
+        "en": "Guide road junction",
+        "es-ES": "Cruce del guía"
+      }
+    },
+    {
+      "id": "01-administrative-records-caesarea.side-6.zone-1",
+      "centre": [
+        127.03,
+        196.94
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Coastal voluntary refuge",
+        "es-ES": "Refugio voluntario costero"
+      }
+    }
+  ],
+  "collection": {
+    "entities": [
+      "faith-origins.01-administrative-records-caesarea.dedication-records-1",
+      "faith-origins.01-administrative-records-caesarea.dedication-records-2",
+      "faith-origins.01-administrative-records-caesarea.dedication-records-3"
+    ],
+    "zone": "faith-origins.01-administrative-records-caesarea.destination-1",
+    "action": "move each living original bearer into the collection circle; each identity recorded once; no timer, type count or replacement counts"
+  },
+  "copying": {
+    "inputEntities": [
+      "faith-origins.01-administrative-records-caesarea.dedication-records-1",
+      "faith-origins.01-administrative-records-caesarea.dedication-records-2",
+      "faith-origins.01-administrative-records-caesarea.dedication-records-3"
+    ],
+    "outputEntity": "faith-origins.01-administrative-records-caesarea.register-1",
+    "zone": "faith-origins.01-administrative-records-caesarea.destination-2",
+    "cost": {
+      "wood": 40,
+      "gold": 20
+    },
+    "paymentCommand": "select the original living copyist in the copying circle after each of the three collected original bearers has arrived there alive at least once; all originals remain alive until issuance; simultaneous presence is not required; atomic affordability check and one debit",
+    "bodyPolicy": "one preplaced uncommissioned copyist exists from start; a distinct logical register is issued only on paid derivation; same body ID thereafter; no free spawn, no early delivery credit, no ancient survivor copy",
+    "inputConsumption": "input identities are provenance, not destroyed or replaced by derivation",
+    "outputLabel": {
+      "en": "Courier — register of three records",
+      "es-ES": "Mensajero — registro de tres documentos"
+    }
+  },
+  "delivery": {
+    "entity": "faith-origins.01-administrative-records-caesarea.register-1",
+    "zone": "faith-origins.01-administrative-records-caesarea.destination-3",
+    "generationRequired": true,
+    "terminalLatch": "main terminal latch closes optional actions before the outcome captions; defeat is checked before success"
+  },
+  "optionalPayments": {
+    "side-3": {
+      "command": "select the original damaged store",
+      "cost": {
+        "wood": 50
+      },
+      "restoration": "capture original full HP before initial damage; paid transaction restores that original full HP, no native worker repair charge"
+    },
+    "side-4": {
+      "command": "select the original trader after its actual arrival is recorded",
+      "cost": {
+        "gold": 50
+      }
+    }
+  },
+  "accountPolicy": {
+    "nativePlayerStock": "only difficulty.startingResources is spendable native stock; gathering/building/production disabled in this bounded prototype; native economic work rate is zero for the civilian proxies in every profile, so manual repair cannot introduce a second repair payment; movement/HP/attack are not difficulty-scaled",
+    "optionalReserve": "initialize separate native persistent variables from secondaryBudget.reservedRewards; debit once before crediting native spendable resources",
+    "protectedRecovery": "not spendable; no implemented replacement, withdrawal or resurrection; retain separate explanatory accounting, never add it to native player stock",
+    "futureGathering": "gatherableBank, replacementBudget and maxVillagers are unimplemented authored design for this iteration, not secretly simulated resources; final campaign economy needs separate extension and calibration"
+  },
+  "difficulty": {
+    "easy": {
+      "startingResources": {
+        "food": 402,
+        "wood": 172,
+        "gold": 97,
+        "stone": 0
+      },
+      "assistance": "full path markers and all objective circles visible",
+      "claim": "functional assistance profile; no claim of calibrated challenge or played duration"
+    },
+    "standard": {
+      "startingResources": {
+        "food": 350,
+        "wood": 150,
+        "gold": 85,
+        "stone": 0
+      },
+      "assistance": "objective circles and corridor endpoints visible",
+      "claim": "functional assistance profile; no claim of calibrated challenge or played duration"
+    },
+    "hard": {
+      "startingResources": {
+        "food": 297,
+        "wood": 127,
+        "gold": 72,
+        "stone": 0
+      },
+      "assistance": "same disclosed goals and costs; fewer route markers",
+      "claim": "functional assistance profile; no claim of calibrated challenge or played duration"
+    }
+  },
+  "narration": {
+    "source": "existing 39 bilingual source screens",
+    "introOrder": [
+      "title",
+      "fact-intro",
+      "handover",
+      "persona-intro",
+      "historical-license",
+      "route-help",
+      "economy-help"
+    ],
+    "speakerPolicy": "neutral summary precedes the fictional Miriam of Caesarea; she speaks from later inherited sources, never witnesses a first-century event or the 1961 find",
+    "privateCaptionPolicy": "literal EN and es-ES text embedded in separate private native variants, no allocation or modification of global string IDs; no SequenceItems/certified slideshow/audio claim",
+    "outroOrder": [
+      "fact-outro",
+      "persona-outro",
+      "next-episode"
+    ],
+    "nextEpisode": "02-civilian-refuge-jerusalem",
+    "campaignComplete": false,
+    "speakerLabels": {
+      "collection-narrator": {
+        "en": "Chronicle",
+        "es-ES": "Crónica"
+      },
+      "miriam-archive": {
+        "en": "Miriam of Caesarea",
+        "es-ES": "Miriam de Cesarea"
+      }
+    }
+  },
+  "historicalSources": [
+    {
+      "url": "https://artsandculture.google.com/asset/latin-dedicatory-inscription-mentioning-pontius-pilate-the-procurator-of-judea-0002/SgGV0ad7K8m3BQ",
+      "institution": "Israel Museum, object record hosted by Google Arts & Culture",
+      "consulted": "2026-10-26",
+      "claim": "surviving inscription names Pontius Pilate prefect of Judaea and a dedication; reused in theater stairway; temple association probable",
+      "limits": "catalogue title and descriptive prose use procurator; translated surviving titulature reads prefect; 26–36 CE is catalogue dating, not an inscribed date; no licensed image copied"
+    },
+    {
+      "url": "https://static-en.parks.org.il/wp-content/uploads/2026/02/ENG_Caesarea-Park.pdf",
+      "institution": "Israel Nature and Parks Authority",
+      "consulted": "2026-10-26",
+      "claim": "western Mediterranean harbor and successive site phases; distinct Herodian inner/middle/open-sea basins",
+      "limits": "heritage brochure, not a dated street survey for 27–36 CE; no use of later aqueduct or theater fabric as first-century proof"
+    }
+  ],
+  "requiredAuthoredRefinements": [
+    {
+      "target": "mainObjectives[1] / o2",
+      "change": "append req-3 entity-state arrived for all three dedication-records at destination-2, once per entity; preserve req-1 payment and req-2 derivation IDs and receipt",
+      "reason": "the physical route to copying must be explicit in the source contract, not an undocumented native-only obstacle",
+      "status": "applied in source refinement commit 817c061"
+    },
+    {
+      "target": "optional side-4/5/6 origins",
+      "change": "use the explicit distinct offsets in entities; all remain within their original fictional activity districts",
+      "reason": "remove initial actor overlaps",
+      "status": "applied in source refinement commit 817c061"
+    },
+    {
+      "target": "map corridors",
+      "change": "preserve canonical hub centres and register the relief intermediate points here; do not represent old identical hub chains as distinct paths",
+      "reason": "a guide reward must point to an actual alternative route",
+      "status": "applied in source refinement commit 817c061"
+    },
+    {
+      "target": "side-2/3/4/6 receiving-zone offsets",
+      "change": "apply explicit distinct same-hub circle centres in zones; preserve all stable zone IDs and assigned destinations",
+      "reason": "avoid coincident courts and make each optional circuit legible",
+      "status": "physical court refinement explicit in this binding; canonical auxiliary geometry still needs reusable placement support"
+    },
+    {
+      "target": "opening startingResources.gold",
+      "change": "75 to85, yielding easy97/standard85/hard72 under the existing factory",
+      "reason": "main20gold + optional trade50gold must be affordable without relying on the optional household extraction reward",
+      "status": "applied in source refinement commit 817c061"
+    },
+    {
+      "target": "side-3 damaged-store origin",
+      "change": "same hub-2, offset [0,8], native centre[146.01,167.5]",
+      "reason": "previous [-6,3] origin intruded into household receiving-circle clear approach",
+      "status": "applied in source refinement commit 817c061"
+    }
+  ],
+  "acceptanceCases": [
+    "both routes entirely land under the declared modern-control abstraction; no blocked or overlapping receiving footprints",
+    "all 13 unique bodies; no substitution by matching type/name",
+    "all 3 records: partial, duplicate, death before collection, death before copying, and real arrival at copying court",
+    "underfunded main attempt spends nothing and creates no register; retry succeeds once after funds are available",
+    "pre-derivation archive visit grants nothing; successful derivation retains identity; output loss before final delivery defeats",
+    "side-1 assigned household separation; side-2 two originals; side-3 paid full repair; side-4 arrival then explicit payment; side-5 marks actual relief; side-6 both originals",
+    "skip every side and win on all profiles; complete every side with one reward debit each; lose one optional body and main remains possible",
+    "save/reload before and after collection/payment/derivation/each side reward/final delivery; native persistence requires actual game observation",
+    "terminal defeat outranks simultaneous victory; no late optional reward; next-episode text does not claim campaign completed"
+  ],
+  "gameVerified": false,
+  "identityLossPolicy": {
+    "inputs": "each original record bearer remains required alive until paid issuance; after issuance input bodies cease to be essential and lost inputs never erase issued provenance",
+    "output": "the original uncommissioned copyist is essential before issuance and the same courier is essential after issuance until final delivery; no replacement or free spawn",
+    "optional": "loss before that task completes fails only that task; completion already recorded remains latched",
+    "terminal": "the first terminal latch is final; later deaths during outcome captions cannot rewrite the completed delivery"
+  },
+  "historicalSourceReview": {
+    "reviewer": "gpt-6.1",
+    "scope": "independent read-only opening source/binding inspection; revisions incorporated; not formal slice approval or a whole-campaign historical approval",
+    "date": "2026-10-26"
+  },
+  "nativeReadiness": "native prototype implementation and first es-ES/standard binary round-trip completed in architect unit; code review, full variants and actual gameplay pending"
+}

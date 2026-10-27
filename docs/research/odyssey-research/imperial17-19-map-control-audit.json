@@ -1,0 +1,76 @@
+{
+  "campaignId": "imperial-church",
+  "orders": [
+    17,
+    18,
+    19
+  ],
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": false,
+  "scope": "Architect mechanical review only; modern lines are incomplete, no ancient land-mask or native behavior approval",
+  "episodes": [
+    {
+      "order": 17,
+      "id": "17-rumour-and-source-investigation-constantinople",
+      "hubCount": 6,
+      "allHubRadiiInFrame": true,
+      "allAuthoredMainEntityOffsetsInFrameWithTwoTileBuffer": true,
+      "minimumHubSeparationTiles": 64.82,
+      "nearestHubPair": [
+        "hub-1",
+        "hub-5"
+      ],
+      "clippedModernWaterSegmentCount": 5,
+      "minimumDrawnWaterClearanceAfterCorridorHalfWidthTiles": 17.96,
+      "minimumDrawnWaterClearanceAfterHubRadiusTiles": 9.96,
+      "minimumMainEntityOffsetTwoTileBufferToDrawnWaterTiles": 13.9,
+      "geometryMeaning": "Distances only to represented coarse modern controls, not complete water polygons,335/337 shore, DEM, unit hitboxes or navigation. Missing line does not certify land.",
+      "architectRasterInspected": true,
+      "svgSha256": "45baa2c3c2b3f9bc1a288e0c2d2b4b2a3ab0c017c22510f6ed35bcc916459789",
+      "nativeAndGameQA": "pending"
+    },
+    {
+      "order": 18,
+      "id": "18-administrative-transition-nicomedia",
+      "hubCount": 6,
+      "allHubRadiiInFrame": true,
+      "allAuthoredMainEntityOffsetsInFrameWithTwoTileBuffer": true,
+      "minimumHubSeparationTiles": 92.08,
+      "nearestHubPair": [
+        "hub-3",
+        "hub-5"
+      ],
+      "clippedModernWaterSegmentCount": 0,
+      "minimumDrawnWaterClearanceAfterCorridorHalfWidthTiles": null,
+      "minimumDrawnWaterClearanceAfterHubRadiusTiles": null,
+      "minimumMainEntityOffsetTwoTileBufferToDrawnWaterTiles": null,
+      "geometryMeaning": "Distances only to represented coarse modern controls, not complete water polygons,335/337 shore, DEM, unit hitboxes or navigation. Missing line does not certify land.",
+      "architectRasterInspected": true,
+      "svgSha256": "a59cc6d7e2ba482b7a4bc45e1e8995f544fa7b8d42986602096d3bc76ad8fa3a",
+      "nativeAndGameQA": "pending"
+    },
+    {
+      "order": 19,
+      "id": "19-competing-dispatches-constantinople",
+      "hubCount": 6,
+      "allHubRadiiInFrame": true,
+      "allAuthoredMainEntityOffsetsInFrameWithTwoTileBuffer": true,
+      "minimumHubSeparationTiles": 42.93,
+      "nearestHubPair": [
+        "hub-1",
+        "hub-6"
+      ],
+      "clippedModernWaterSegmentCount": 5,
+      "minimumDrawnWaterClearanceAfterCorridorHalfWidthTiles": 18.0,
+      "minimumDrawnWaterClearanceAfterHubRadiusTiles": 17.6,
+      "minimumMainEntityOffsetTwoTileBufferToDrawnWaterTiles": 33.75,
+      "geometryMeaning": "Distances only to represented coarse modern controls, not complete water polygons,335/337 shore, DEM, unit hitboxes or navigation. Missing line does not certify land.",
+      "architectRasterInspected": true,
+      "svgSha256": "0a80555622dc9a216e16c8466499db2cf7860d20f7fc87966edf35797a2be4bd",
+      "nativeAndGameQA": "pending",
+      "correction": "First safe hub6 at[28.948,41.009] intersected represented coast; rejected on raster review and moved to[28.948,41.012] within same fictional inland district. Fixed guards/extra pockets have separate compact offsets. Rechecked diagram routes and receivers, ancient shore and native leashes still pending."
+    }
+  ]
+}

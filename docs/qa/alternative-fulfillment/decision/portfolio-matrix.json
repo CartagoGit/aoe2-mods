@@ -1,0 +1,4144 @@
+{
+  "schemaVersion": 1,
+  "classification": "normative accounting acceptance matrix; no execution of new selector, escrow, work, native UI or game",
+  "proposal": "i00007",
+  "slice": "S1",
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "sourceInputs": [
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-plan.json",
+      "sha256": "fc990f2f8ee66ad4828568d1a53eac3b6cc324f0a230c4687a6e874e66967b34"
+    },
+    {
+      "path": "docs/research/odyssey-research/imperial34-care-allocation-audit.json",
+      "sha256": "5c4629e6a53aeef20f6181166f8dae718c9276923250015e3ccb84511ff39aaa"
+    },
+    {
+      "path": "tools/design/secondary.py",
+      "sha256": "7ae5a334c132f18023177a0849b1110e9bb3513c1c08c0de65e5f65e7d4ba940"
+    }
+  ],
+  "optionalMechanics": {
+    "neighbor-provisions": {
+      "kind": "aid",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 100,
+        "wood": 50,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    "voluntary-household-return": {
+      "kind": "extract",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 100,
+        "wood": 0,
+        "gold": 25,
+        "stone": 0
+      }
+    },
+    "source-comparison": {
+      "kind": "copy",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    "local-wayfinding": {
+      "kind": "guide",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    "slope-survey": {
+      "kind": "scout",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    "service-observation": {
+      "kind": "watch",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    "damaged-civilian-store": {
+      "kind": "repair",
+      "cost": {
+        "food": 0,
+        "wood": 50,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 200,
+        "wood": 100,
+        "gold": 0,
+        "stone": 0
+      }
+    }
+  },
+  "portfolios": [
+    {
+      "id": "all-skip",
+      "optionalOrder": []
+    },
+    {
+      "id": "all-complete",
+      "optionalOrder": [
+        "neighbor-provisions",
+        "voluntary-household-return",
+        "source-comparison",
+        "local-wayfinding",
+        "slope-survey",
+        "service-observation",
+        "damaged-civilian-store"
+      ]
+    },
+    {
+      "id": "provision-first",
+      "optionalOrder": [
+        "neighbor-provisions",
+        "damaged-civilian-store"
+      ]
+    },
+    {
+      "id": "informed-movement",
+      "optionalOrder": [
+        "slope-survey",
+        "local-wayfinding",
+        "service-observation"
+      ]
+    },
+    {
+      "id": "household-source-care",
+      "optionalOrder": [
+        "voluntary-household-return",
+        "source-comparison"
+      ]
+    }
+  ],
+  "initialOptionalRewardReserve": {
+    "food": 400,
+    "wood": 150,
+    "gold": 25,
+    "stone": 0
+  },
+  "commonPreconditions": [
+    "The technical fixture must actually establish all required optional actor/arrival/health/observation predicates before each shown award; these entries are not arbitrary credit commands.",
+    "The post-funding matrix reserves and commits the whole selected pair before performing the portfolio; selected work/output/service predicates remain separate and incomplete in the shown financial balances.",
+    "All five portfolio variants must later execute real selected work, receive exact outputs with original recipients, and reach both terminal APIs with fresh living presence. These monetary expectations alone never grant victory.",
+    "Before-funding witnesses require optional tasks to be physically available independently of funding; otherwise the world fixture must be corrected rather than pretending the witness is executable.",
+    "Restoring saves around every debit, credit, reserve, cancel, commit, output and terminal must preserve these balances and once-only effects without using protected recovery."
+  ],
+  "fundingFirst": [
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-materials"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 100,
+          "wood": 140,
+          "gold": 260,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 320,
+          "wood": 240,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 100,
+          "wood": 140,
+          "gold": 260,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 320,
+          "wood": 240,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 140,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 500,
+            "wood": 240,
+            "gold": 285,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 400,
+            "wood": 240,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 140,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 200,
+            "wood": 140,
+            "gold": 285,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 80,
+          "wood": 220,
+          "gold": 240,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 340,
+          "wood": 160,
+          "gold": 20,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 80,
+          "wood": 220,
+          "gold": 240,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 340,
+          "wood": 160,
+          "gold": 20,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 220,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 480,
+            "wood": 320,
+            "gold": 265,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 380,
+            "wood": 320,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 220,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 180,
+            "wood": 220,
+            "gold": 265,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 120,
+          "wood": 280,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 120,
+          "wood": 280,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 120,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 520,
+            "wood": 380,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 420,
+            "wood": 380,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 120,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 220,
+            "wood": 280,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-materials"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 180,
+          "wood": 40,
+          "gold": 260,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 240,
+          "wood": 340,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 180,
+          "wood": 40,
+          "gold": 260,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 240,
+          "wood": 340,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 180,
+            "wood": 40,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 580,
+            "wood": 140,
+            "gold": 285,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 480,
+            "wood": 140,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 180,
+            "wood": 40,
+            "gold": 260,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 280,
+            "wood": 40,
+            "gold": 285,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 160,
+          "wood": 120,
+          "gold": 240,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 260,
+          "wood": 260,
+          "gold": 20,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 160,
+          "wood": 120,
+          "gold": 240,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 260,
+          "wood": 260,
+          "gold": 20,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 160,
+            "wood": 120,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 560,
+            "wood": 220,
+            "gold": 265,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 460,
+            "wood": 220,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 160,
+            "wood": 120,
+            "gold": 240,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 260,
+            "wood": 120,
+            "gold": 265,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 200,
+          "wood": 180,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 200,
+          "wood": 180,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 200,
+            "wood": 180,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 600,
+            "wood": 280,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 500,
+            "wood": 280,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 200,
+            "wood": 180,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 300,
+            "wood": 180,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-materials"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 240,
+          "wood": 140,
+          "gold": 160,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 180,
+          "wood": 240,
+          "gold": 100,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 240,
+          "wood": 140,
+          "gold": 160,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 180,
+          "wood": 240,
+          "gold": 100,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 240,
+            "wood": 140,
+            "gold": 160,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 640,
+            "wood": 240,
+            "gold": 185,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 540,
+            "wood": 240,
+            "gold": 160,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 240,
+            "wood": 140,
+            "gold": 160,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 340,
+            "wood": 140,
+            "gold": 185,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 220,
+          "wood": 220,
+          "gold": 140,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 220,
+          "wood": 220,
+          "gold": 140,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 220,
+            "wood": 220,
+            "gold": 140,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 620,
+            "wood": 320,
+            "gold": 165,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 520,
+            "wood": 320,
+            "gold": 140,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 220,
+            "wood": 220,
+            "gold": 140,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 320,
+            "wood": 220,
+            "gold": 165,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 260,
+          "wood": 280,
+          "gold": 50,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 160,
+          "wood": 100,
+          "gold": 210,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 260,
+          "wood": 280,
+          "gold": 50,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 160,
+          "wood": 100,
+          "gold": 210,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 260,
+            "wood": 280,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 660,
+            "wood": 380,
+            "gold": 75,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 560,
+            "wood": 380,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 260,
+            "wood": 280,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 360,
+            "wood": 280,
+            "gold": 75,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-materials"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 20,
+          "wood": 40,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 320,
+          "wood": 240,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 20,
+          "wood": 40,
+          "gold": 150,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 320,
+          "wood": 240,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 20,
+            "wood": 40,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 420,
+            "wood": 140,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 320,
+            "wood": 140,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 20,
+            "wood": 40,
+            "gold": 150,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 120,
+            "wood": 40,
+            "gold": 175,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 130,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 340,
+          "wood": 160,
+          "gold": 20,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 130,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 340,
+          "wood": 160,
+          "gold": 20,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 0,
+            "wood": 120,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 400,
+            "wood": 220,
+            "gold": 155,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 300,
+            "wood": 220,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 0,
+            "wood": 120,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 120,
+            "gold": 155,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 40,
+          "wood": 180,
+          "gold": 40,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 40,
+          "wood": 180,
+          "gold": 40,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 40,
+            "wood": 180,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 440,
+            "wood": 280,
+            "gold": 65,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 340,
+            "wood": 280,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 40,
+            "wood": 180,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 140,
+            "wood": 180,
+            "gold": 65,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 80,
+          "wood": 20,
+          "gold": 130,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 260,
+          "wood": 260,
+          "gold": 20,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 80,
+          "wood": 20,
+          "gold": 130,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 260,
+          "wood": 260,
+          "gold": 20,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 20,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 480,
+            "wood": 120,
+            "gold": 155,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 380,
+            "wood": 120,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 20,
+            "gold": 130,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 180,
+            "wood": 20,
+            "gold": 155,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 120,
+          "wood": 80,
+          "gold": 40,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 120,
+          "wood": 80,
+          "gold": 40,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 520,
+            "wood": 180,
+            "gold": 65,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 420,
+            "wood": 180,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 120,
+            "wood": 80,
+            "gold": 40,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 220,
+            "wood": 80,
+            "gold": 65,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-materials"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 160,
+          "wood": 40,
+          "gold": 50,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 180,
+          "wood": 240,
+          "gold": 100,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 160,
+          "wood": 40,
+          "gold": 50,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 180,
+          "wood": 240,
+          "gold": 100,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 160,
+            "wood": 40,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 560,
+            "wood": 140,
+            "gold": 75,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 460,
+            "wood": 140,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 160,
+            "wood": 40,
+            "gold": 50,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 260,
+            "wood": 40,
+            "gold": 75,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 140,
+          "wood": 120,
+          "gold": 30,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 140,
+          "wood": 120,
+          "gold": 30,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 140,
+            "wood": 120,
+            "gold": 30,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 540,
+            "wood": 220,
+            "gold": 55,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 440,
+            "wood": 220,
+            "gold": 30,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 140,
+            "wood": 120,
+            "gold": 30,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 240,
+            "wood": 120,
+            "gold": 55,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 0,
+          "wood": 120,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 300,
+          "wood": 100,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 0,
+            "wood": 120,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 400,
+            "wood": 220,
+            "gold": 35,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 300,
+            "wood": 220,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 0,
+            "wood": 120,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 120,
+            "gold": 35,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 80,
+          "wood": 20,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 80,
+          "wood": 20,
+          "gold": 10,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 220,
+          "wood": 200,
+          "gold": 110,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 20,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 480,
+            "wood": 120,
+            "gold": 35,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 380,
+            "wood": 120,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 80,
+            "wood": 20,
+            "gold": 10,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 180,
+            "wood": 20,
+            "gold": 35,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "expectedAfterReserve": {
+        "spendable": {
+          "food": 100,
+          "wood": 60,
+          "gold": 0,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "outputs": []
+      },
+      "expectedAfterCommit": {
+        "spendable": {
+          "food": 100,
+          "wood": 60,
+          "gold": 0,
+          "stone": 0
+        },
+        "escrow": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "committedExpenditure": {
+          "food": 200,
+          "wood": 160,
+          "gold": 120,
+          "stone": 0
+        },
+        "outputs": [],
+        "completedServices": []
+      },
+      "portfolioExpectations": [
+        {
+          "portfolioId": "all-skip",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 60,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "all-complete",
+          "expectedFinalSpendable": {
+            "food": 500,
+            "wood": 160,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "provision-first",
+          "expectedFinalSpendable": {
+            "food": 400,
+            "wood": 160,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 100,
+            "wood": 0,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 50,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "informed-movement",
+          "expectedFinalSpendable": {
+            "food": 100,
+            "wood": 60,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 400,
+            "wood": 150,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        },
+        {
+          "portfolioId": "household-source-care",
+          "expectedFinalSpendable": {
+            "food": 200,
+            "wood": 60,
+            "gold": 25,
+            "stone": 0
+          },
+          "expectedOptionalReserveRemaining": {
+            "food": 300,
+            "wood": 150,
+            "gold": 0,
+            "stone": 0
+          },
+          "expectedOptionalExpenditure": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          }
+        }
+      ]
+    }
+  ],
+  "beforeFundingWitnesses": [
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 100,
+        "wood": 140,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 320,
+        "wood": 240,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 80,
+        "wood": 220,
+        "gold": 240,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 340,
+        "wood": 160,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 120,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 300,
+        "wood": 100,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 180,
+        "wood": 40,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 240,
+        "wood": 340,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 160,
+        "wood": 120,
+        "gold": 240,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 260,
+        "wood": 260,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 200,
+        "wood": 180,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 220,
+        "wood": 200,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 240,
+        "wood": 140,
+        "gold": 160,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 180,
+        "wood": 240,
+        "gold": 100,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 220,
+        "wood": 220,
+        "gold": 140,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 200,
+        "wood": 160,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "easy",
+      "recipes": [
+        "meal-purchased",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 420,
+        "wood": 380,
+        "gold": 260,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 260,
+        "wood": 280,
+        "gold": 50,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 160,
+        "wood": 100,
+        "gold": 210,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 20,
+        "wood": 40,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 320,
+        "wood": 240,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 0,
+        "wood": 120,
+        "gold": 130,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 340,
+        "wood": 160,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 40,
+        "wood": 180,
+        "gold": 40,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 300,
+        "wood": 100,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [
+        "neighbor-provisions",
+        "damaged-civilian-store"
+      ],
+      "expectedBeforeReserveSpendable": {
+        "food": 640,
+        "wood": 380,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 400,
+        "wood": 40,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 240,
+        "wood": 340,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 50,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 100,
+        "wood": 0,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": false
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 80,
+        "wood": 20,
+        "gold": 130,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 260,
+        "wood": 260,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 120,
+        "wood": 80,
+        "gold": 40,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 220,
+        "wood": 200,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 160,
+        "wood": 40,
+        "gold": 50,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 180,
+        "wood": 240,
+        "gold": 100,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "standard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 340,
+        "wood": 280,
+        "gold": 150,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 140,
+        "wood": 120,
+        "gold": 30,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 200,
+        "wood": 160,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-direct",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [
+        "neighbor-provisions"
+      ],
+      "expectedBeforeReserveSpendable": {
+        "food": 400,
+        "wood": 270,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 80,
+        "wood": 30,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 320,
+        "wood": 240,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 300,
+        "wood": 100,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": false
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-direct",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [
+        "neighbor-provisions"
+      ],
+      "expectedBeforeReserveSpendable": {
+        "food": 400,
+        "wood": 270,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 60,
+        "wood": 110,
+        "gold": 100,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 340,
+        "wood": 160,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 300,
+        "wood": 100,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": false
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-direct",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 300,
+        "wood": 220,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 0,
+        "wood": 120,
+        "gold": 10,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 300,
+        "wood": 100,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [
+        "neighbor-provisions"
+      ],
+      "expectedBeforeReserveSpendable": {
+        "food": 400,
+        "wood": 270,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 140,
+        "wood": 10,
+        "gold": 100,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 260,
+        "wood": 260,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 300,
+        "wood": 100,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": false
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-shared-hearth",
+        "shelter-rented"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 300,
+        "wood": 220,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 80,
+        "wood": 20,
+        "gold": 10,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 220,
+        "wood": 200,
+        "gold": 110,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-materials"
+      ],
+      "optionalOrderBeforeFunding": [
+        "neighbor-provisions"
+      ],
+      "expectedBeforeReserveSpendable": {
+        "food": 400,
+        "wood": 270,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 220,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 180,
+        "wood": 240,
+        "gold": 100,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 300,
+        "wood": 100,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": false
+    },
+    {
+      "difficulty": "hard",
+      "recipes": [
+        "meal-purchased",
+        "shelter-local-kit"
+      ],
+      "optionalOrderBeforeFunding": [],
+      "expectedBeforeReserveSpendable": {
+        "food": 300,
+        "wood": 220,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedAfterReserveSpendable": {
+        "food": 100,
+        "wood": 60,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedEscrow": {
+        "food": 200,
+        "wood": 160,
+        "gold": 120,
+        "stone": 0
+      },
+      "expectedOptionalExpenditure": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "expectedOptionalReserveRemaining": {
+        "food": 400,
+        "wood": 150,
+        "gold": 25,
+        "stone": 0
+      },
+      "alreadyAffordableWithoutOptionals": true
+    }
+  ],
+  "counts": {
+    "portfolioExpectations": 95,
+    "beforeFundingWitnesses": 24,
+    "allSkipPairsByDifficulty": {
+      "easy": 9,
+      "standard": 7,
+      "hard": 3
+    },
+    "allSkipDifficultyRecipePairs": 19,
+    "uniqueRecipePairs": 9,
+    "beforeFundingWitnessesByDifficulty": {
+      "easy": 9,
+      "standard": 8,
+      "hard": 7
+    },
+    "nonEmptyOptionalPrefixesByDifficulty": {
+      "easy": 0,
+      "standard": 1,
+      "hard": 4
+    },
+    "newlyAffordablePairsAfterOptionalsByDifficulty": {
+      "easy": 0,
+      "standard": 1,
+      "hard": 4
+    }
+  },
+  "nativeImplemented": false,
+  "gameVerified": false
+}
