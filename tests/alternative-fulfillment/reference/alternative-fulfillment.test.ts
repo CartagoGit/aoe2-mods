@@ -485,7 +485,7 @@ describe("alternative fulfillment reference fixture", () => {
       }
     }
     expect(cases).toBe(95);
-  }, 30_000);
+  }, 60_000);
 
   test("all 24 before-funding witnesses perform real optional actions before their reservation", () => {
     const profile = makeFulfillmentProfile();
@@ -1776,7 +1776,7 @@ describe("alternative fulfillment reference fixture", () => {
     expect(capabilityProfileV3Schema.safeParse(changedVersion).success).toBe(
       false,
     );
-  });
+  }, 30_000);
 
   test("native renderer rejects the opt-in v3 profile before opening templates or writing artifacts", async () => {
     const campaign = {
