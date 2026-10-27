@@ -690,6 +690,116 @@ class NativeHouseholdControllerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             ADAPTER["validate_household_contract"](self.dossier, binding)
 
+    def test_composed_profiles_and_contract_fields_are_refused(self):
+        mutations = [
+            lambda d, b: d.__setitem__("designProfile", "alternative-fulfillment-v3"),
+            lambda d, b: d.__setitem__("designProfile", None),
+            lambda d, b: d.__setitem__("capability", None),
+            lambda d, b: d.__setitem__("capabilityProfile", None),
+            lambda d, b: d.__setitem__("referenceCapabilityProfile", {}),
+            lambda d, b: d.__setitem__("sharedCapabilityProfile", {}),
+            lambda d, b: d.__setitem__("fulfillment", {}),
+            lambda d, b: d.__setitem__("fulfillmentContract", {}),
+            lambda d, b: b.__setitem__("designProfile", "alternative-fulfillment-v3"),
+            lambda d, b: b.__setitem__("capability", None),
+            lambda d, b: b.__setitem__("capabilityProfile", None),
+            lambda d, b: b.__setitem__("referenceCapabilityProfile", {}),
+            lambda d, b: b.__setitem__("sharedCapabilityProfile", {}),
+            lambda d, b: b.__setitem__("fulfillment", {}),
+            lambda d, b: b.__setitem__("fulfillmentContract", {}),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+
+    def test_only_player1_civilian_villagers_may_move_and_only_the_store_is_a_house(self):
+        mutations = [
+            lambda d, b: b["entities"][0].__setitem__("player", 2),
+            lambda d, b: b["entities"][0].__setitem__("player", True),
+            lambda d, b: b["entities"][0].__setitem__("unitType", "house"),
+            lambda d, b: b["entities"][0].__setitem__("unitType", "villager"),
+            lambda d, b: next(
+                e
+                for e in b["entities"]
+                if e["id"] == "02-civilian-refuge-jerusalem.side-1.entity-1"
+            ).__setitem__("player", 2),
+            lambda d, b: next(
+                e
+                for e in b["entities"]
+                if e["id"] == "02-civilian-refuge-jerusalem.side-4.entity-1"
+            ).__setitem__("unitType", "house"),
+            lambda d, b: next(
+                e
+                for e in b["entities"]
+                if e["id"] == "02-civilian-refuge-jerusalem.side-6.entity-2"
+            ).__setitem__("player", 2),
+            lambda d, b: next(
+                e
+                for e in b["entities"]
+                if e["id"] == "02-civilian-refuge-jerusalem.side-3.entity-1"
+            ).__setitem__("player", 1),
+            lambda d, b: next(
+                e
+                for e in b["entities"]
+                if e["id"] == "02-civilian-refuge-jerusalem.side-3.entity-1"
+            ).__setitem__("unitType", "villager-male"),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+
+    def test_labels_must_be_nonempty_localized_strings(self):
+        mutations = [
+            lambda d, b: b["entities"][0]["label"].__setitem__("en", ""),
+            lambda d, b: b["entities"][0]["label"].__setitem__("en", "   "),
+            lambda d, b: b["entities"][0]["label"].__setitem__("es-ES", None),
+            lambda d, b: b["entities"][0]["label"].pop("es-ES"),
+            lambda d, b: b["zones"][0]["label"].__setitem__("en", ""),
+            lambda d, b: b["zones"][0]["label"].__setitem__("es-ES", None),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+
+    def test_intro_and_outro_orders_are_fixed_and_factual_before_persona(self):
+        mutations = [
+            lambda d, b: b["narration"].__setitem__(
+                "introOrder", ["persona-intro", "fact-intro"]
+            ),
+            lambda d, b: b["narration"].__setitem__(
+                "introOrder",
+                [
+                    "title",
+                    "handover",
+                    "fact-intro",
+                    "persona-intro",
+                    "historical-license",
+                    "route-help",
+                    "economy-help",
+                ],
+            ),
+            lambda d, b: b["narration"]["introOrder"].pop(),
+            lambda d, b: b["narration"].__setitem__(
+                "outroOrder", ["persona-outro", "fact-outro", "next-episode"]
+            ),
+            lambda d, b: b["narration"]["outroOrder"].pop(),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+
     def test_unsupported_contracts_are_rejected_before_any_native_change(self):
         mutations = [
             lambda d, b: d["objectivePlan"][2]["predicate"]["requirements"].append(

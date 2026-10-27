@@ -43,6 +43,27 @@ MAIN_SCREENS = (
     "defeat",
     "recovery-help",
 )
+INTRO_ORDER = [
+    "title",
+    "fact-intro",
+    "handover",
+    "persona-intro",
+    "historical-license",
+    "route-help",
+    "economy-help",
+]
+OUTRO_ORDER = ["fact-outro", "persona-outro", "next-episode"]
+UNSUPPORTED_PROFILE_FIELDS = (
+    "designProfile",
+    "capability",
+    "capabilityProfile",
+    "referenceCapabilityProfile",
+    "sharedCapabilityProfile",
+    "fulfillment",
+    "fulfillmentContract",
+)
+CIVILIAN_TYPES = ("villager-male", "villager-female")
+LOCALES = ("en", "es-ES")
 
 
 def _render_flag_total(function_name, variables, threshold):
@@ -230,6 +251,52 @@ def _check_placement(binding):
             raise ValueError("receiving circle must fit inside the map")
 
 
+def _reject_unsupported_profiles(owner, label):
+    for field in UNSUPPORTED_PROFILE_FIELDS:
+        if field in owner:
+            raise ValueError(f"{label} must not carry a composed {field} field")
+
+
+def _is_player(body, player):
+    return type(body["player"]) is int and body["player"] == player
+
+
+def _check_bodies(dossier, binding):
+    by_id = {entity["id"]: entity for entity in binding["entities"]}
+    for entity in HOUSEHOLD_IDS:
+        body = by_id[entity]
+        if not _is_player(body, 1) or body["unitType"] not in CIVILIAN_TYPES:
+            raise ValueError(
+                "the eight household proxies must be player1 civilian villagers"
+            )
+    for side in dossier["secondaryObjectives"]:
+        for entity in side["world"]["entities"]:
+            body = by_id[entity["id"]]
+            if side["kind"] == "repair":
+                if not _is_player(body, 2) or body["unitType"] != "house":
+                    raise ValueError(
+                        "the optional repair store must be the original player2 house"
+                    )
+            elif not _is_player(body, 1) or body["unitType"] not in CIVILIAN_TYPES:
+                raise ValueError(
+                    "optional bearers must be player1 civilian villagers"
+                )
+    for entity in binding["entities"]:
+        labels = entity.get("label")
+        if not isinstance(labels, dict):
+            raise ValueError("native entity labels must be localized strings")
+        for locale in LOCALES:
+            if not isinstance(labels.get(locale), str) or not labels[locale].strip():
+                raise ValueError("native entity labels must be nonempty strings")
+    for zone in binding["zones"]:
+        labels = zone.get("label")
+        if not isinstance(labels, dict):
+            raise ValueError("native zone labels must be localized strings")
+        for locale in LOCALES:
+            if not isinstance(labels.get(locale), str) or not labels[locale].strip():
+                raise ValueError("native zone labels must be nonempty strings")
+
+
 def _check_narration(dossier, binding):
     narration = binding.get("narration")
     if not isinstance(narration, dict):
@@ -237,6 +304,10 @@ def _check_narration(dossier, binding):
     for key in ("introOrder", "outroOrder", "speakerLabels"):
         if not narration.get(key):
             raise ValueError("household binding narration is incomplete")
+    if list(narration["introOrder"]) != INTRO_ORDER:
+        raise ValueError("the household intro order is fixed and factual before persona")
+    if list(narration["outroOrder"]) != OUTRO_ORDER:
+        raise ValueError("the household outro order is fixed")
     screens = {screen["id"]: screen for screen in dossier["screens"]}
     for key in MAIN_SCREENS:
         if key not in screens:
@@ -293,6 +364,8 @@ def validate_household_contract(dossier, binding):
         raise ValueError("unsupported native household binding")
     if dossier["id"] != EPISODE_ID or binding["episodeId"] != EPISODE_ID:
         raise ValueError("household binding episode mismatch")
+    _reject_unsupported_profiles(dossier, "the private dossier")
+    _reject_unsupported_profiles(binding, "the private binding")
     objectives = dossier["objectivePlan"]
     if [objective["id"] for objective in objectives] != ["o1", "o2", "o3"]:
         raise ValueError("unsupported household objective graph")
@@ -387,6 +460,7 @@ def validate_household_contract(dossier, binding):
             if math.dist(start, zones[zone]["centre"]) <= zones[zone]["radius"]:
                 raise ValueError("original placement cannot count as a household arrival")
     _check_narration(dossier, binding)
+    _check_bodies(dossier, binding)
     _check_optional_payments(dossier, binding)
     _check_corridors(dossier, binding)
     secondary = runpy.run_path(str(HERE / "native_secondary.adapter.py"))
