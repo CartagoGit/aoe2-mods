@@ -154,9 +154,9 @@ ES: Un recibo resulta gris hasta que alguien necesita comer.
 
 ### o3 / phase-3
 
-EN: Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court.
+EN: Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved.
 
-ES: Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio.
+ES: Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida.
 
 ```json
 {
@@ -192,15 +192,46 @@ ES: Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; 
         "faith-origins.02-civilian-refuge-jerusalem.households-8": "faith-origins.02-civilian-refuge-jerusalem.destination-3"
       },
       "oncePerEntity": true
+    },
+    {
+      "id": "req-2",
+      "kind": "entity-state",
+      "requiredCount": 6,
+      "state": "alive-and-held",
+      "eligibleEntitiesFromLedger": {
+        "objective": "o1",
+        "ledger": "received-households"
+      },
+      "entities": [
+        "faith-origins.02-civilian-refuge-jerusalem.households-1",
+        "faith-origins.02-civilian-refuge-jerusalem.households-2",
+        "faith-origins.02-civilian-refuge-jerusalem.households-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-4",
+        "faith-origins.02-civilian-refuge-jerusalem.households-5",
+        "faith-origins.02-civilian-refuge-jerusalem.households-6",
+        "faith-origins.02-civilian-refuge-jerusalem.households-7",
+        "faith-origins.02-civilian-refuge-jerusalem.households-8"
+      ],
+      "destinations": {
+        "faith-origins.02-civilian-refuge-jerusalem.households-1": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-2": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-3": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-4": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-5": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-6": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-7": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-8": "faith-origins.02-civilian-refuge-jerusalem.destination-3"
+      },
+      "oncePerEntity": true
     }
   ],
   "neverUseTimerInstead": true
 }
 ```
 
-EN: Only households recorded at the receiving court may count at the final refuge.
+EN: Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved.
 
-ES: Solo cuentan en el refugio final los hogares registrados en el patio receptor.
+ES: Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final.
 
 EN: They are the same people at both gates. A ledger must remember that.
 
@@ -233,8 +264,8 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
         31.791
       ],
       "name": {
-        "en": "Western household district",
-        "es-ES": "Barrio doméstico occidental"
+        "en": "Northwestern household gathering",
+        "es-ES": "Reunión de hogares del noroeste"
       },
       "radiusTiles": 12,
       "certainty": "architect fictional activity district within real geography; footprint pending"
@@ -294,7 +325,7 @@ ES: Son las mismas personas en ambas puertas. Un registro debe recordarlo.
       ],
       "mode": "land",
       "widthTiles": 6,
-      "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+      "routePolicy": "proposed alternative land connection between the same districts; intermediate geometry and native pathfinding remain pending; no crossing is implied"
     }
   ],
   "terrainInstructions": "Limestone plateau, southern ravines and eastern ridge. No navigable Kidron river, no Dome of the Rock or Ottoman walls. Household compounds are fictitious and avoid sacred platforms.",
@@ -1096,9 +1127,9 @@ ES: Una remesa finita ayuda al refugio.
 
 ### Ridge road guide / Guía del camino de la cresta
 
-EN: Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.
+EN: Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created, no terrain is changed, and the main receiving districts are known without this task.
 
-ES: Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea.
+ES: Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea.
 
 EN: Locates a land route without making the Kidron navigable.
 
@@ -1159,7 +1190,7 @@ ES: Localiza una ruta terrestre sin hacer navegable el Cedrón.
   "effects": [
     {
       "kind": "mark-alternative-route",
-      "target": "relief surveyed land corridor",
+      "target": "relief alternative land-corridor information",
       "resources": {},
       "onceFlag": "02-civilian-refuge-jerusalem.side-5.rewarded",
       "funding": "reserved-optional-stock",
@@ -1218,9 +1249,9 @@ ES: Localiza una ruta terrestre sin hacer navegable el Cedrón.
 
 ### Two visiting households / Dos hogares visitantes
 
-EN: Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once.
+EN: Bring both voluntary visiting household groups alive to the western guest reception. Benefit: 100 food, 25 gold, once.
 
-ES: Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez.
+ES: Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes. Ventaja: 100 de alimento, 25 de oro, una vez.
 
 EN: Optional voluntary travelers cannot fill the main survivor ledger.
 
@@ -1610,8 +1641,8 @@ ES: Los viajeros opcionales no pueden completar el registro principal.
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o2-goal / phase-2 active | none | Deliver a single total of 240 food to the receiving court. | Entrega un único total de 240 de alimento en el patio receptor. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o2-receipt / o2 latched once | none | The 240-food receipt is paid once. | El recibo de 240 de alimento se paga una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o2-reaction / after o2 receipt | miriam-archive | A receipt is dull until someone must eat. | Un recibo resulta gris hasta que alguien necesita comer. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-goal / phase-3 active | none | Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court. | Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-receipt / o3 latched once | none | Only households recorded at the receiving court may count at the final refuge. | Solo cuentan en el refugio final los hogares registrados en el patio receptor. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-goal / phase-3 active | none | Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved. | Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-receipt / o3 latched once | none | Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved. | Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-reaction / after o3 receipt | miriam-archive | They are the same people at both gates. A ledger must remember that. | Son las mismas personas en ambas puertas. Un registro debe recordarlo. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-1-goal / optional list from start | none | Bring each of the two aid crates to its assigned household at unlisted neighbors. Benefit: 100 food, 50 wood, once. | Lleva cada una de las dos cajas de ayuda a su hogar asignado en vecinos sin registrar. Ventaja: 100 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-1-complete / side-1 completed | none | Unlisted neighbors completed. Its stated benefit has been granted once. | Vecinos sin registrar: completado. Su ventaja indicada se ha concedido una vez. |
@@ -1625,10 +1656,10 @@ ES: Los viajeros opcionales no pueden completar el registro principal.
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-goal / optional list from start | none | Escort the trader of olive road trader to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once. | Escolta al comerciante de comerciante del camino de los olivos hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-complete / side-4 completed | none | Olive road trader completed. Its stated benefit has been granted once. | Comerciante del camino de los olivos: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-4-lost / side-4 failed-optional | none | Olive road trader is unavailable after the loss of its unique participant or object. The main mission continues. | Comerciante del camino de los olivos: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task. | Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-goal / optional list from start | none | Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created, no terrain is changed, and the main receiving districts are known without this task. | Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-complete / side-5 completed | none | Ridge road guide completed. Its stated benefit has been granted once. | Guía del camino de la cresta: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-lost / side-5 failed-optional | none | Ridge road guide is unavailable after the loss of its unique participant or object. The main mission continues. | Guía del camino de la cresta: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
-| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-goal / optional list from start | none | Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once. | Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez. |
+| scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-goal / optional list from start | none | Bring both voluntary visiting household groups alive to the western guest reception. Benefit: 100 food, 25 gold, once. | Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes. Ventaja: 100 de alimento, 25 de oro, una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-complete / side-6 completed | none | Two visiting households completed. Its stated benefit has been granted once. | Dos hogares visitantes: completado. Su ventaja indicada se ha concedido una vez. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-lost / side-6 failed-optional | none | Two visiting households is unavailable after the loss of its unique participant or object. The main mission continues. | Dos hogares visitantes: no disponible tras perder a su participante u objeto único. La misión principal continúa. |
 | scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.fact-outro / victory first | collection-narrator | Local success changes no documented execution and proves no ancient refuge operation. The historical account and the fictional household task remain separate. | El éxito local no cambia la ejecución documentada ni demuestra una operación antigua de refugio. El relato histórico y la tarea doméstica ficticia siguen separados. |
