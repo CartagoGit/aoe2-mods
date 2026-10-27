@@ -96,8 +96,7 @@ export function validateFulfillmentSnapshot(
   if (
     state.contractFingerprint !== fulfillmentFingerprint(profile) ||
     state.planId !== profile.fulfillmentPlan.id ||
-    state.core.contractFingerprint !==
-      capabilityFingerprint(sharedProfile)
+    state.core.contractFingerprint !== capabilityFingerprint(sharedProfile)
   )
     fail("contract mismatch");
   const expense = sharedExpenditure(profile, state);
