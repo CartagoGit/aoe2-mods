@@ -49,3 +49,16 @@ La validación de S2 ejecutó 142 pruebas y 2069 aserciones, incluidas 34 de ref
 En una unidad aislada sin `.venv` propia puede usarse el `COF_PYTHON` documentado y `RGE_CAMPAIGN_BIN` apuntando a las herramientas fijadas del checkout compartido; no guardar rutas personales. Si faltan, seguir README y conservar el error real, nunca declarar el gate pasado por usar otro perfil. Repetir los comandos sobre el candidato propio cuando corresponda.
 
 MiniMax comienza únicamente por el slice designado f00001/S1 si su estado vivo lo permite. i00007/S3, i00003 nativo/plantillas/entrada y s00001 requieren su evidencia antes de promover el perfil compuesto. Los 63 borradores y 215 selecciones sin dossier y bloqueos históricos permanecen vigentes; esta revisión de referencia no es aprobación de historia, mapa, idioma o nivelación.
+
+
+## Native controller lessons from the household delivery
+
+These checks come from observed review findings, not hypothetical extra features. Include them in future closed native packets and use existing helpers.
+
+- Validate physical starts after the shared base's `floor(coordinate)+0.5` adjustment. Distinct design points may become the same native position; a point outside a design circle may start inside its native receiving circle. A non-mutating snapped binding view lets the existing secondary validator check the actual starts without copying six mechanic rules.
+- Use type-strict comparison for accepted source shapes. Python dictionary equality can accept `1` as `true` and `6.0` as integer 6. Reject non-finite values and unknown composed-profile fields instead of ignoring them.
+- Validate role as well as identity: controlled civilian proxies need the intended owner and a movable civilian type; a fixed store has its declared building role. Validate both EN/es-ES labels and the neutral-before-persona narration order.
+- A guide reward needs real geometry, not merely a corridor ID. Reject empty, one-point, repeated-only, malformed, non-finite or out-of-map route points before constructing a scenario. This check does not certify historical geography or engine pathfinding.
+- Put ready/phase/receipt/nonterminal guards before every mutation in a terminal action. Then refresh original survival, resolve irreversible loss first, and commit final objective and success together. An inactive or already terminal action must leave variables unchanged.
+- Tests must exercise the actual adapter, emitted code, real reducer or native serialization. A test-only duplicate of the intended formula does not establish implementation behavior. Distinguish XS static checking, native roundtrip, generated-code fragment execution with mocks and actual AoE2 gameplay.
+- Keep work in the assigned unit, use `proposals lock` for file ownership, preserve human Git authorship, and wait for the architect's serialized gate/publication window. Do not use `work claim` to acquire file ownership or re-read the entire catalogue after a closed correction has been assigned.
