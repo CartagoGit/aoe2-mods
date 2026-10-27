@@ -126,7 +126,7 @@ El arquitecto cerró además un diseño financiero parcial para Yavneh: tres ser
 |---|---|---|
 | Arquitecto gpt-6 |214 dossiers nuevos; revisión de64 existentes; geografía, dificultad, narración y capacidades aún faltantes. |Cierre físico de Jerusalén y dossier completo de Yavneh mientras se prueba la apertura y se ejecutan extracciones acotadas. |
 | MiniMax M3.1 |Materialización progresiva de los278 episodios, compartida con Luna; no278 adicionales por trabajador. |Firma común integrada; siguientes paquetes después de cerrar sus decisiones. |
-| Luna |Investigación y tareas mecánicas del mismo conjunto, sin volumen duplicado. |Proyección opt-in de costes secundarios, dos Files según [paquete](AUTHORED-SECONDARY-COST-PROJECTION-PACKET.md); no amplía el adaptador nativo. |
+| Luna |Investigación y tareas mecánicas del mismo conjunto, sin volumen duplicado. |Proyección opt-in de costes secundarios, tres Files según [paquete](AUTHORED-SECONDARY-COST-PROJECTION-PACKET.md); no amplía el adaptador nativo. |
 | GPT-6.1 |Revisiones independientes por producto y revisión formal solo cuando se complete cada slice. |Contrastar cálculos, datos y código concretos sin atribuir pruebas del motor. |
 
 Contadores sin cambios:278 selecciones/9 odiseas,64 dossiers borrador/214 por redactar,2.645 pantallas bilingües,398 secundarios,50 recursos registrados y26 perfiles. Un prototipo privado con seis variantes; cero campañas históricas completas y cero episodios históricos con prueba ampliada del motor. Los nuevos archivos, muestras y helpers no incrementan esos contadores. No existe una tasa comparable de dossiers por interacción para estimar conversaciones restantes.

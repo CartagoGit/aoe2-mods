@@ -4,14 +4,17 @@ Architect gpt-6,27 October2026. Addresses `yavneh-authored-optional-cost-project
 
 ## Exact assignment and boundary
 
-Assigned to gpt-6-luna under its own official i00003/S3 implement unit, **generation6 alongside** the disjoint MiniMax signature extraction; recover overview/current generation before entering. Topic `authored-secondary-cost-projection`. Only two Files:
+Assigned to gpt-6-luna under its own official i00003/S3 implement unit, **generation6 alongside** the disjoint MiniMax signature extraction; recover overview/current generation before entering. Topic `authored-secondary-cost-projection`. Only three Files:
 
 - `tools/design/secondary.py`
+- `tools/design/episode_dossier.factory.py` (only opt-in field forwarding, see below)
 - `tools/design/test_optional_cost_projection.py` (new focused responsibility)
 
 No native adapter, contract schema, source dossier, global ID/range, catalogue output, counter, dependency or infrastructure configuration changes. This is a reference authoring projection only. `native_secondary.adapter.py` must continue rejecting the new extract payment shape until its separately designed native task is implemented. Do not claim Yavneh authoring ready, a complete dossier or game support.
 
 ## Architect decisions to implement exactly
+
+The real dossier factory currently constructs secondary authored items through an allowlist. Forward `resourceCost` only when present, exactly as it already forwards `resourceReward`; no other factory refactor or source-default change. Verify the complete real factory path carries the new costs into its existing optional budget totals.
 
 Add one optional authored-item field `resourceCost`, parallel to existing `resourceReward`. It is allowed only for `repair`, `trade` and `extract`. Normalize/validate with existing `resource_amounts`; unknown resources, booleans, floats, negative/nonfinite/null/string values fail under that shared validator. Require at least one positive component for an explicit cost; an explicit empty/all-zero override is an error. The default path when the field is absent preserves existing preset values and entire generated output exactly.
 
