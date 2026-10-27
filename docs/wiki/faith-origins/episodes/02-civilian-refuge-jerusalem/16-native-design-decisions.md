@@ -1,6 +1,6 @@
 # When the City Held Its Breath: native design decisions
 
-Architect: gpt-6, 27 October 2026. Campaign identity remains `faith-origins`, **Embers of the Covenant**. This is the existing second selected episode, **When the City Held Its Breath / Cuando la ciudad contuvo el aliento**, c. 30–33 CE. These are concrete decisions for a future source amendment and bounded native packet; no second scenario is implemented by this document. The first Caesarea prototype can be played independently while this work continues.
+Architect: gpt-6, 27 October 2026. Campaign identity remains `faith-origins`, **Embers of the Covenant**. This is the existing second selected episode, **When the City Held Its Breath / Cuando la ciudad contuvo el aliento**, c. 30–33 CE. The source amendment below is integrated; these decisions now govern the pending bounded native packet. No second scenario is implemented by this document. The first Caesarea prototype can be played independently while this work continues.
 
 ## Historical event, fiction and narrator
 
@@ -25,7 +25,7 @@ There is a real liveness gap in the current dossier: six historical refuge arriv
 - The host records the held fact for an original observed alive on a final arrival. At evaluation, eligibility, that identity's recorded arrival, held fact and non-destroyed state must intersect. Two unrelated living originals cannot repair this count.
 - This does not promise current presence or physical detention. A living original may leave the circle after delivery. A destroyed original cannot count as alive, even though its historical receipt remains.
 
-Luna checked the pattern on an artificial valid v2 profile: after six deliveries, destroying two leaves the historical-arrived predicate true and the proposed alive-and-held predicate false. That is reference evidence for an existing primitive, not a compiled historical episode or a native test. The exact proposed requirement and twenty-one prospective cases are in [the matrix](17-native-acceptance-matrix.json). **The requirement is not yet inserted in the source.** Source materialization must preserve previous IDs, regenerate the affected dossier, and receive independent review before the new compiler accepts this episode.
+Luna checked the pattern on an artificial valid v2 profile: after six deliveries, destroying two leaves the historical-arrived predicate true and the proposed alive-and-held predicate false. That is reference evidence for an existing primitive, not a compiled historical episode or a native test. The exact proposed requirement and twenty-one prospective cases are in [the matrix](17-native-acceptance-matrix.json). The requirement is now inserted by the reviewed source amendment below. Source IDs and the affected dossier were preserved/regenerated; native acceptance remains pending.
 
 The additional requirement is checked **when its objective is evaluated**. It is not an automatic fresh terminal guard in the global reference reducer: a host can latch o3, process two deaths, then tick with the surviving global group still at six. The objective latch alone can remain sufficient for reference victory. Do not claim req-2 fixes that API gap globally.
 
@@ -56,7 +56,7 @@ This second quiet civilian episode teaches original-group intersection and loss 
 
 ## Geographic decision and measured comparison
 
-The current 340 × 340 frame is regional: bbox [35.12,31.70,35.30,31.86], with all three existing fictional hubs retained for inspection. Hub-1 at [35.218,31.791] is an exterior northwestern gathering point in this plan; it is **not an excavated western-city neighborhood**. Amend its description to “Northwestern household gathering / Reunión de hogares del noroeste” before physical delegation. Do not paint a complete first-century residential quarter there. Hubs 2 and 3 are fictional receiving/refuge points in the southern hinterland, not excavated safe houses.
+The current 340 × 340 frame is regional: bbox [35.12,31.70,35.30,31.86], with all three existing fictional hubs retained for inspection. Hub-1 at [35.218,31.791] is an exterior northwestern gathering point in this plan; it is **not an excavated western-city neighborhood**. Its source description is now “Northwestern household gathering / Reunión de hogares del noroeste”. Do not paint a complete first-century residential quarter there. Hubs 2 and 3 are fictional receiving/refuge points in the southern hinterland, not excavated safe houses.
 
 The archived modern DSM was checked by SHA-256 and sampled at all hubs: approximately 803.09 / 763.51 / 688.52 metres of **modern surface**. Buildings and vegetation are included. These are not first-century ground levels or AoE2 elevation assignments.
 
@@ -81,3 +81,12 @@ No IAA figure/photo is copied. The existing Wilson 1865 map is dated comparison 
 5. Independently review, build six variants and add the new mission to a private progressive container only after source/native checks pass. Preserve the independently playable first episode and exact artifact identities. Actual engine and difficulty observations remain their own evidence.
 
 Catalogue totals remain 64 drafts / 214 missing / 2,645 paired screens / 398 secondary contracts / 50 reference records. These decisions, prospective cases and the figure are not a new dossier, registered reference, native mission or historical approval.
+
+
+## Integrated source amendment and exact evidence
+
+Luna product `53f5275117eebbd1c8246b59fa19b44cb67c498a` integrated officially at `1a286985124d43ad43b9c3ade1c3047448fb3a82`, with the configured install/validate gate passing. Root independently compared the committed source: the other 29 episode objects and 29 blueprints are unchanged; episode01 world/text/requirements and its native binding are unchanged except the full-file source hash; episode02 retains world IDs, coordinates, prior requirements, 39 screen IDs, state machine and difficulty vectors. The append-only req-2, exterior hub label, guest reception wording and qualified route information match the decisions above.
+
+Current campaign source SHA-256: `0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a`. The first binding now pins that hash, while the immutable first private kit keeps its original source/binding/binary hashes. The comparison plot/data and acceptance baseline retain their earlier source hash as an explicitly dated design observation, not a regenerated current-source test.
+
+Focused source evidence: all 64 dossier checks, 14 pooled-survivor projection checks, dossier validation with no errors, and regenerated civic audit with unchanged 64/54/63 counters. This is scoped source integration, not native gameplay, final geographic binding or full S2 approval. The pending terminal freshness function and route approval remain prerequisites for a second playable mission.
