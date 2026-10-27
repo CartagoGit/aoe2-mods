@@ -10,6 +10,8 @@ last-transition-id: c2a881b5-b934-47ba-9cac-2d85809f83cb
 last-correlation-id: c2a881b5-b934-47ba-9cac-2d85809f83cb
 last-transition-from: in-progress
 last-transition-at: 2026-10-27T19:46:22.321Z
+shipped-in:
+  - "e63985d11326"
 ---
 
 # i00014 — Episode-02 household native builder: refuse the historical build, compile a labelled synthetic fixture
@@ -36,16 +38,18 @@ The architect's episode-02 decision and layout review name a missing capability 
 - global_gate: e2e
 
 ### S1 — Episode-02 household builder with historical-build refusal and a labelled synthetic compile
-- **Status**: review
+- **Status**: done
 - **Files**: `tools/python/build_household_episode.script.py`, `tests/fixtures/native-history/test_native_household_controller.py`, `docs/qa/campaign-design/household-ledger-builder.md`
 - **Gate**: e2e
 - acceptance:
   - "Verify the authored source through the binding's own sourceSha256, campaignId, episodeId and per-difficulty starting-resource vectors, and fail closed on any mismatch instead of continuing with a changed source."
   - "Refuse a historical build by reporting the binding's own named blockers (no approved route, no native elevation, no footprint inspection, binding not approved for a historical build) and leave the builder with no code path that can emit a historical Jerusalem campaign, container or mod."
   - "Compile the household controller on a separately labelled synthetic physical fixture derived from the binding's semantics, reusing the existing household adapter, shared base factory and optional-circuit adapter; keep the nonhistorical label in the scenario identity, the messages and the receipt, and record the real blockers, the synthetic label and the open game and historical gates."
-- review-state: in_review
-- review-implementer: minimax-m3.1-flash-preview
 - shipped-in: `e63985d11326`
+- review-state: done
+- review-implementer: minimax-m3.1-flash-preview
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at e63985d11326, validate exit 0 and tests 196/196 claimed, no recorded run cited; acceptance 3/3: (1) Independent source tamper probes reject changed SHA, campaignId, episodeId and startingResources for easy/standard/hard; all 35 household tests pass; source in… (2) Read delivered 08d3bd2 and integration e63985d11326 with no current 3-file drift; tested real draft refusal for missing relief corridor and named blockers incl… (3) Built six synthetic EN/es-ES difficulty variants with 152 triggers each, exact native signature readback and XS checks; synthetic scenario identity/messages/re… — Independent GPT-6.1 Sol review: no P1/P2 within i00014/S1. Evidence /home/cartago/_projects/games/aoe2-mods/.cache/artifacts/independent-i00014-gpt61-20261028/review.md ; 35 native tests +161 Bun tests,11 independent negative/immutability probes,6 synthetic native readback/XS variants. Export pass with configured shared pinned dependencies. No historical/native gameplay approval or broad slice approval.
 
 ## acceptance
 
