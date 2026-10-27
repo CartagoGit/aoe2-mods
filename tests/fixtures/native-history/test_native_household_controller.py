@@ -246,51 +246,6 @@ def find_xs(source, predicate, label):
     raise AssertionError("no native function matched " + label)
 
 
-def o1_latched(state):
-    """Mirror of the compiled court objective; it is not an engine execution.
-
-    The court ledger is historical and cumulative, so the count is not filtered
-    by current life; the survivor floor is checked separately.
-    """
-    court = sum(1 for identity in state.values() if identity["court"])
-    living = sum(1 for identity in state.values() if identity["alive"])
-    return court >= 6 and living >= 6
-
-
-def decide(state):
-    """Mirror of the compiled terminal action; it is not an engine execution.
-
-    `state` carries the eight original identities with their court arrival
-    fact, refuge arrival fact, held fact and current life. The function
-    reproduces the order of the compiled XS action: irreversible loss first,
-    then the qualified intersection, and it never returns a latched but
-    undecided terminal.
-    """
-    living = sum(1 for identity in state.values() if identity["alive"])
-    qualified = sum(
-        1
-        for identity in state.values()
-        if identity["alive"]
-        and identity["court"]
-        and identity["refuge"]
-        and identity["held"]
-    )
-    if living < 6:
-        return {"terminal": 2, "latch": 0, "living": living, "qualified": qualified}
-    if qualified >= 6:
-        return {"terminal": 1, "latch": 1, "living": living, "qualified": qualified}
-    return {"terminal": 0, "latch": 0, "living": living, "qualified": qualified}
-
-
-def households(**overrides):
-    state = {
-        entity: {"alive": True, "court": False, "refuge": False, "held": False}
-        for entity in HOUSEHOLDS
-    }
-    for entity, values in overrides.items():
-        state[entity].update(values)
-    return state
-
 
 class NativeHouseholdControllerTests(unittest.TestCase):
     @classmethod
@@ -457,6 +412,21 @@ class NativeHouseholdControllerTests(unittest.TestCase):
         self.assertLess(loss_at, qualified_at)
         self.assertLess(qualified_at, latch_at)
         self.assertLess(latch_at, terminal_at)
+        first_write = min(
+            match.start() for match in re.finditer(r"xsSetTriggerVariable", body)
+        )
+        for variable, expected in (
+            ("ready", 1),
+            ("phase", 3),
+            ("court-payment", 1),
+            ("terminal", 0),
+        ):
+            guard = (
+                f"if (xsTriggerVariable({self.variables[variable]}) != {expected})"
+            )
+            self.assertIn(guard, body)
+            self.assertLess(body.index(guard), first_write)
+            self.assertLess(body.index(guard), body.index("int cdf_alive = 0;"))
         queried = re.findall(r"if \((cdf_[A-Za-z0-9_]+)\(\)\) \{", body)
         self.assertEqual(8, len(queried))
         self.assertEqual(8, len(set(queried)))
@@ -558,6 +528,20 @@ class NativeHouseholdControllerTests(unittest.TestCase):
             )
             self.assertIn(payment_name + "()", action_body)
             self.assertIn("xsSetTriggerVariable", action_body)
+            first_write = min(
+                match.start()
+                for match in re.finditer(r"xsSetTriggerVariable", action_body)
+            )
+            for variable, expected in (
+                ("ready", 1),
+                ("phase", 2),
+                ("terminal", 0),
+            ):
+                guard = (
+                    f"if (xsTriggerVariable({self.variables[variable]}) != {expected})"
+                )
+                self.assertIn(guard, action_body)
+                self.assertLess(action_body.index(guard), first_write)
 
     def test_victory_never_depends_on_a_type_count_or_a_clock(self):
         for name in (
@@ -630,6 +614,81 @@ class NativeHouseholdControllerTests(unittest.TestCase):
             scenario.xs_manager.validate(
                 xs="bool cdf_household_broken() { return (undefined_symbol); }"
             )
+
+    def test_numeric_booleans_and_float_counts_are_not_accepted(self):
+        mutations = [
+            lambda d, b: d["objectivePlan"][0]["predicate"]["requirements"][0].__setitem__(
+                "oncePerEntity", 1
+            ),
+            lambda d, b: d["objectivePlan"][2]["predicate"]["requirements"][1].__setitem__(
+                "oncePerEntity", 1
+            ),
+            lambda d, b: d["objectivePlan"][1]["predicate"]["requirements"][0].__setitem__(
+                "once", 1
+            ),
+            lambda d, b: d["objectivePlan"][1]["predicate"]["requirements"][0].__setitem__(
+                "atomic", 1
+            ),
+            lambda d, b: d["objectivePlan"][1]["predicate"]["requirements"][0].__setitem__(
+                "amounts", {"food": 240.0}
+            ),
+            lambda d, b: d["objectivePlan"][0]["predicate"]["requirements"][0].__setitem__(
+                "requiredCount", 6.0
+            ),
+            lambda d, b: d["worldContract"]["survivorGroups"][0].__setitem__(
+                "minimumAliveOrAlreadySafe", 6.0
+            ),
+            lambda d, b: b["households"].__setitem__("requiredCount", 6.0),
+            lambda d, b: b["households"]["payment"].__setitem__("cost", {"food": 240.0}),
+            lambda d, b: b["optionalPayments"]["side-3"].__setitem__(
+                "cost", {"wood": 50.0}
+            ),
+        ]
+        for mutation in mutations:
+            dossier = copy.deepcopy(self.dossier)
+            binding = copy.deepcopy(self.binding)
+            mutation(dossier, binding)
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](dossier, binding)
+
+    def test_snapped_native_starts_cannot_collide(self):
+        binding = copy.deepcopy(self.binding)
+        binding["entities"][0]["position"] = [10.1, 30.1]
+        binding["entities"][1]["position"] = [10.9, 30.9]
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["entities"][0]["position"] = [10.4, 30.1]
+        binding["entities"][1]["position"] = [10.6, 30.9]
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+
+    def test_map_size_radius_and_snapped_household_placement_are_checked(self):
+        for size in (0, -64, 64.0, "64", True):
+            binding = copy.deepcopy(self.binding)
+            binding["map"]["size"] = size
+            with self.subTest(size=size), self.assertRaises(ValueError):
+                ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["zones"][0]["centre"] = [1.0, 1.0]
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["zones"][0]["centre"] = [63.0, 12.0]
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["zones"][0]["radius"] = 0
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["zones"][0]["radius"] = float("inf")
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
+        binding = copy.deepcopy(self.binding)
+        binding["entities"][0]["position"] = [39.6, 30.1]
+        with self.assertRaises(ValueError):
+            ADAPTER["validate_household_contract"](self.dossier, binding)
 
     def test_unsupported_contracts_are_rejected_before_any_native_change(self):
         mutations = [
@@ -721,61 +780,48 @@ class NativeHouseholdControllerTests(unittest.TestCase):
                 self.scenario, self.handles, self.dossier, self.binding, "fr"
             )
 
-    def test_prospective_reducer_cases_mirror_the_compiled_predicates(self):
-        # These are model cases over the compiled predicate semantics. They are
-        # not engine executions and they are not a native gameplay test.
-        late = households()
-        for index in range(6):
-            late[HOUSEHOLDS[index]]["court"] = True
-        self.assertTrue(o1_latched(late))
-        self.assertEqual(8, decide(late)["living"])
-        self.assertEqual(0, decide(late)["qualified"])
-        late[HOUSEHOLDS[0]]["alive"] = False
-        late[HOUSEHOLDS[1]]["alive"] = False
-        self.assertTrue(o1_latched(late))
-        self.assertEqual(6, decide(late)["living"])
-        late[HOUSEHOLDS[6]]["court"] = True
-        self.assertTrue(o1_latched(late))
-        for index in range(2, 6):
-            late[HOUSEHOLDS[index]]["refuge"] = True
-            late[HOUSEHOLDS[index]]["held"] = True
-        late[HOUSEHOLDS[6]]["refuge"] = True
-        late[HOUSEHOLDS[6]]["held"] = True
-        late[HOUSEHOLDS[7]]["court"] = True
-        late[HOUSEHOLDS[7]]["refuge"] = True
-        late[HOUSEHOLDS[7]]["held"] = True
-        self.assertEqual(6, decide(late)["qualified"])
-        self.assertEqual(1, decide(late)["terminal"])
-        self.assertEqual(1, decide(late)["latch"])
-        previsited = households()
-        previsited[HOUSEHOLDS[0]]["refuge"] = True
-        previsited[HOUSEHOLDS[0]]["held"] = True
-        self.assertEqual(0, decide(previsited)["qualified"])
-        previsited[HOUSEHOLDS[0]]["court"] = True
-        self.assertEqual(1, decide(previsited)["qualified"])
-        third_loss = households()
-        for index in range(3):
-            third_loss[HOUSEHOLDS[index]]["alive"] = False
-        self.assertEqual(2, decide(third_loss)["terminal"])
-        self.assertEqual(0, decide(third_loss)["latch"])
-        two_losses = households()
-        for index in range(2):
-            two_losses[HOUSEHOLDS[index]]["alive"] = False
-        for index in range(2, 8):
-            two_losses[HOUSEHOLDS[index]]["court"] = True
-            two_losses[HOUSEHOLDS[index]]["refuge"] = True
-            two_losses[HOUSEHOLDS[index]]["held"] = True
-        self.assertEqual(1, decide(two_losses)["terminal"])
-        dead_after_delivery = households()
-        for index in range(6):
-            dead_after_delivery[HOUSEHOLDS[index]]["court"] = True
-            dead_after_delivery[HOUSEHOLDS[index]]["refuge"] = True
-            dead_after_delivery[HOUSEHOLDS[index]]["held"] = True
-        self.assertEqual(1, decide(dead_after_delivery)["terminal"])
-        dead_after_delivery[HOUSEHOLDS[0]]["alive"] = False
-        self.assertEqual(0, decide(dead_after_delivery)["terminal"])
-        self.assertEqual(5, decide(dead_after_delivery)["qualified"])
-        self.assertEqual(0, decide(dead_after_delivery)["latch"])
+    def test_payment_surface_accepts_only_living_originals_inside_the_court(self):
+        selected = []
+        for index in range(8):
+            trigger = self.triggers[f"cdf-court-payment-{index}"]
+            selection = next(
+                c
+                for c in trigger.conditions
+                if c.condition_type == ConditionId.OBJECT_SELECTED
+            )
+            selected.append(selection.unit_object)
+            circles = [
+                c
+                for c in trigger.conditions
+                if c.condition_type == ConditionId.SCRIPT_CALL
+                and "xsGetGarrisonedInUnitId"
+                in dict(xs_bodies(self.xs)).get(c.xs_function, "")
+            ]
+            self.assertEqual(1, len(circles))
+            circle = dict(xs_bodies(self.xs))[circles[0].xs_function]
+            self.assertIn("xsGetUnitHitpoints", circle)
+            self.assertIn("xsGetUnitOwner", circle)
+            self.assertIn("xsGetGarrisonedInUnitId", circle)
+            self.assertIn("cdf_dx * cdf_dx + cdf_dy * cdf_dy", circle)
+        self.assertEqual(
+            sorted(self.handles[entity] for entity in HOUSEHOLDS), sorted(selected)
+        )
+        optional = [
+            handle
+            for entity, handle in self.handles.items()
+            if entity not in HOUSEHOLDS
+        ]
+        self.assertFalse(set(optional) & set(selected))
+        receipt = self.variables["court-payment"]
+        _, payment = find_xs(
+            self.xs,
+            lambda body: f"if (xsTriggerVariable({receipt}) != 0)" in body,
+            "the guarded court payment",
+        )
+        self.assertLess(
+            payment.index("xsPlayerAttribute"), payment.index("xsSetPlayerAttribute")
+        )
+        self.assertIn("xsSetTriggerVariable", payment)
 
 
 if __name__ == "__main__":

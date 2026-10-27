@@ -9,6 +9,7 @@ whole slice. Source and XS inspection support compilation evidence only; they
 do not execute the game engine.
 """
 
+import json
 import math
 import runpy
 from pathlib import Path
@@ -178,8 +179,25 @@ def _finite_number(value):
     return type(value) in (int, float) and math.isfinite(value)
 
 
+def _canonical(value, label):
+    """Return a type-strict canonical form; Python equality accepts 1 == True."""
+    try:
+        return json.dumps(
+            value, sort_keys=True, allow_nan=False, separators=(",", ":")
+        )
+    except (TypeError, ValueError) as error:
+        raise ValueError(f"{label} is not canonical JSON") from error
+
+
+def _snapped(position):
+    """Return the native start of a design position; the shared base snaps it."""
+    return (math.floor(position[0]) + 0.5, math.floor(position[1]) + 0.5)
+
+
 def _check_placement(binding):
     size = binding["map"]["size"]
+    if type(size) is not int or size <= 0:
+        raise ValueError("native map size must be a positive integer")
     positions = set()
     for entity in binding["entities"]:
         position = entity["position"]
@@ -188,20 +206,28 @@ def _check_placement(binding):
         ):
             raise ValueError("invalid native entity position")
         if (
-            tuple(position) in positions
+            _snapped(position) in positions
             or type(entity["player"]) is not int
             or entity["player"] not in (1, 2)
         ):
             raise ValueError("overlapping native bodies or unsupported owner")
-        positions.add(tuple(position))
+        positions.add(_snapped(position))
     for zone in binding["zones"]:
         centre = zone["centre"]
+        radius = zone["radius"]
         if len(centre) != 2 or any(
             not _finite_number(value) or not 0 <= value < size for value in centre
         ):
             raise ValueError("invalid native zone centre")
-        if not _finite_number(zone["radius"]) or zone["radius"] <= 0:
+        if not _finite_number(radius) or radius <= 0:
             raise ValueError("invalid native zone radius")
+        if (
+            centre[0] - radius < 0
+            or centre[1] - radius < 0
+            or centre[0] + radius > size
+            or centre[1] + radius > size
+        ):
+            raise ValueError("receiving circle must fit inside the map")
 
 
 def _check_narration(dossier, binding):
@@ -236,10 +262,9 @@ def _check_optional_payments(dossier, binding):
             if requirement["kind"] != "atomic-payment":
                 continue
             declared = payments.get(side["id"])
-            if (
-                not isinstance(declared, dict)
-                or declared.get("cost") != requirement["resources"]
-            ):
+            if not isinstance(declared, dict) or _canonical(
+                declared.get("cost"), "optional payment cost"
+            ) != _canonical(requirement["resources"], "optional payment requirement"):
                 raise ValueError("optional payment cost/binding mismatch")
 
 
@@ -291,7 +316,9 @@ def validate_household_contract(dossier, binding):
         raise ValueError("unsupported household terminal priority")
     expected = _expected_objectives()
     for index, predicate in enumerate(expected):
-        if objectives[index]["predicate"] != predicate:
+        if _canonical(
+            objectives[index]["predicate"], "household source predicate"
+        ) != _canonical(predicate, "expected household predicate"):
             raise ValueError(
                 f"household o{index + 1} source requirement shape mismatch"
             )
@@ -307,8 +334,14 @@ def validate_household_contract(dossier, binding):
     survivors = world["survivorGroups"]
     if (
         len(survivors) != 1
-        or survivors[0]["entities"] != list(HOUSEHOLD_IDS)
-        or survivors[0]["minimumAliveOrAlreadySafe"] != SURVIVOR_MINIMUM
+        or _canonical(
+            survivors[0].get("entities"), "survivor group entities"
+        )
+        != _canonical(list(HOUSEHOLD_IDS), "expected survivor entities")
+        or _canonical(
+            survivors[0].get("minimumAliveOrAlreadySafe"), "survivor minimum"
+        )
+        != _canonical(SURVIVOR_MINIMUM, "expected survivor minimum")
     ):
         raise ValueError("household survivor group mismatch")
     declared = binding.get("households")
@@ -324,7 +357,9 @@ def validate_household_contract(dossier, binding):
     if declared.get("courtZone") != COURT_ZONE or declared.get("refugeZone") != REFUGE_ZONE:
         raise ValueError("household binding zone reference mismatch")
     payment = declared.get("payment")
-    if not isinstance(payment, dict) or payment.get("cost") != dict(PAYMENT_COST):
+    if not isinstance(payment, dict) or _canonical(
+        payment.get("cost"), "household payment cost"
+    ) != _canonical(PAYMENT_COST, "expected household payment cost"):
         raise ValueError("household binding payment mismatch")
     expected_entities = list(HOUSEHOLD_IDS) + [
         entity["id"]
@@ -347,11 +382,9 @@ def validate_household_contract(dossier, binding):
     by_id = {entity["id"]: entity for entity in binding["entities"]}
     zones = {zone["id"]: zone for zone in binding["zones"]}
     for entity in HOUSEHOLD_IDS:
+        start = _snapped(by_id[entity]["position"])
         for zone in (COURT_ZONE, REFUGE_ZONE):
-            if (
-                math.dist(by_id[entity]["position"], zones[zone]["centre"])
-                <= zones[zone]["radius"]
-            ):
+            if math.dist(start, zones[zone]["centre"]) <= zones[zone]["radius"]:
                 raise ValueError("original placement cannot count as a household arrival")
     _check_narration(dossier, binding)
     _check_optional_payments(dossier, binding)
@@ -436,8 +469,20 @@ class HouseholdController(NativeMissionController):
         return [self.alive[entity] for entity in self.originals]
 
     def final_action_source(self):
-        """One guarded invocation: fresh loss decision first, then the terminal write."""
-        lines = ["    int cdf_alive = 0;", "    int cdf_qualified = 0;"]
+        """One guarded invocation: activation guards, then loss, then the terminal write.
+
+        The activation guards run before any mutation, so an inactive, wrong
+        phase, unpaid or already terminal action does nothing. The fresh census
+        then evaluates irreversible loss before the qualified success.
+        """
+        lines = [
+            f"    if (xsTriggerVariable({self.ready}) != 1) {{ return; }}",
+            f"    if (xsTriggerVariable({self.phase}) != 3) {{ return; }}",
+            f"    if (xsTriggerVariable({self.payment}) != 1) {{ return; }}",
+            f"    if (xsTriggerVariable({self.terminal}) != 0) {{ return; }}",
+            "    int cdf_alive = 0;",
+            "    int cdf_qualified = 0;",
+        ]
         for index, entity in enumerate(self.originals):
             lines.append(f"    if ({self.alive[entity]}()) {{")
             lines.append("        cdf_alive = cdf_alive + 1;")
@@ -457,10 +502,6 @@ class HouseholdController(NativeMissionController):
                 f"        xsSetTriggerVariable({self.phase}, 14);",
                 "        return;",
                 "    }",
-                f"    if (xsTriggerVariable({self.ready}) != 1) {{ return; }}",
-                f"    if (xsTriggerVariable({self.phase}) != 3) {{ return; }}",
-                f"    if (xsTriggerVariable({self.payment}) != 1) {{ return; }}",
-                f"    if (xsTriggerVariable({self.terminal}) != 0) {{ return; }}",
                 "    if (cdf_qualified >= " + str(self.required_count) + ") {",
                 f"        xsSetTriggerVariable({self.latch}, 1);",
                 f"        xsSetTriggerVariable({self.terminal}, 1);",
@@ -535,7 +576,16 @@ class HouseholdController(NativeMissionController):
             self.condition(action, self.in_zone(entity, court))
             self.call(
                 action,
-                "    if ("
+                "    if (xsTriggerVariable("
+                + str(self.ready)
+                + ") != 1) { return; }\n"
+                + "    if (xsTriggerVariable("
+                + str(self.phase)
+                + ") != 2) { return; }\n"
+                + "    if (xsTriggerVariable("
+                + str(self.terminal)
+                + ") != 0) { return; }\n"
+                + "    if ("
                 + loss
                 + "()) {\n"
                 + f"        xsSetTriggerVariable({self.terminal}, 2);\n"
