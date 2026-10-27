@@ -69,3 +69,11 @@ Code product `c55c3bd` integrated in `e443aaaa`. Independent GPT-6.1 review is t
 This interval demonstrates reusable native implementation and private delivery, not historical dossier throughput. There is still no defensible average of conversations remaining. The unchanged 214 design selections overlap with the 278 production episodes shared by MiniMax and Luna; neither count is per-worker or additive.
 
 Independent kit inspection after packaging (GPT-6.1, 27 October): no P1/P2 findings; CRC and all six hashes, native stocks, 143 triggers per variant and the guide actions agree. The reviewer opened all six scenarios and compared the exact packaged artifacts; no rebuild, broad test rerun or game execution. This is additional scoped evidence, not full slice acceptance.
+
+
+Observation004 also includes source product `53f5275` integrated in `1a286985`, and the reviewed second-episode design `74a59de`: unchanged29 other episode/blueprint objects, append-only existing-type survival requirement, correct optional guest destination text, explicit modern-geography limits, 21 prospective cases and 648 independently checked DSM samples. No second native scenario or new dossier is counted. The modern plot is a derived comparison, not a new registered research record, approved path or ancient terrain.
+
+The architect found an ambiguity/overcount in MiniMax's WIP centre-clearance inventory and returned it for correction; a second reviewer is checking pointers and combined budgets. Draft finding counts are intentionally excluded. The shared native runtime extraction is a separate closed task; its regression evidence cannot be counted as another historical episode.
+
+
+The three-file common-runtime extraction is now integrated: Luna product `501cde9`, official landing `dfeae904`, with [scoped independent review](shared-native-runtime-extraction-review.md). The existing eight native checks, complete semantic signature and exact XS agree with the immutable opening; validate158/2138 and export3/2 passed. No new tests, episodes or game observations are added by repeating those checks. Missing environment paths caused two preliminary export failures; the explicitly configured passing run is recorded separately.
