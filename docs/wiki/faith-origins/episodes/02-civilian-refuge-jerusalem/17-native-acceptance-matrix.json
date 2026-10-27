@@ -5,7 +5,7 @@
   "episodeId": "02-civilian-refuge-jerusalem",
   "sourcePath": "docs/design/odysseys/faith-origins.json",
   "sourceSha256": "f86bcecfc918beb8e0e94c9832d188ad619fb9693b5b8540b109afa046c417c2",
-  "status": "architect decisions and prospective acceptance; source amendment and native implementation not yet delivered",
+  "status": "source amendment integrated; prospective native acceptance, no second native mission implemented",
   "preserveRequirements": [
     "o1/req-1",
     "o2/req-1",
@@ -44,7 +44,7 @@
         "ledger": "received-households"
       }
     },
-    "implementationStatus": "not added to source or native compiler by this document",
+    "implementationStatus": "source amendment53f5275 integrated1a286985; native compiler pending",
     "schemaChange": false,
     "globalReducerChange": false
   },
@@ -223,5 +223,13 @@
     "fullSliceApproval": false,
     "nativeImplementationReviewed": false,
     "gameVerified": false
+  },
+  "materializedSource": {
+    "product": "53f5275117eebbd1c8246b59fa19b44cb67c498a",
+    "integration": "1a286985124d43ad43b9c3ade1c3047448fb3a82",
+    "sourceSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+    "other29EpisodeObjectsUnchanged": true,
+    "existingRequirementIdsPreserved": true,
+    "nativeImplemented": false
   }
 }
