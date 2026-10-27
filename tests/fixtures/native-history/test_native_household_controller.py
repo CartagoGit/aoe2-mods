@@ -21,9 +21,9 @@ from AoE2ScenarioParser.datasets.effects import EffectId
 from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
 
 ROOT = Path(__file__).resolve().parents[3]
+BUILDER = runpy.run_path(str(ROOT / "tools/python/build_delivery_episode.script.py"))
 FACTORY = runpy.run_path(str(ROOT / "tools/python/native_scenario.factory.py"))
 ADAPTER = runpy.run_path(str(ROOT / "tools/python/native_household.adapter.py"))
-SIGNATURE = runpy.run_path(str(ROOT / "tools/python/native_signature.helper.py"))
 DOSSIER = json.loads(
     (ROOT / "docs/design/odysseys/faith-origins.json").read_text(encoding="utf8")
 )["episodes"][1]
@@ -572,8 +572,8 @@ class NativeHouseholdControllerTests(unittest.TestCase):
         reopened.xs_manager.xs_check.raise_on_error = True
         reopened.xs_manager.validate_scenario_xs()
         self.assertEqual(
-            SIGNATURE["native_signature"](self.scenario),
-            SIGNATURE["native_signature"](reopened),
+            BUILDER["native_signature"](self.scenario),
+            BUILDER["native_signature"](reopened),
         )
         units = {
             unit.reference_id: unit.unit_const

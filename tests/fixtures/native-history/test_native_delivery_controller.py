@@ -16,7 +16,6 @@ from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
 ROOT = Path(__file__).resolve().parents[3]
 BUILDER = runpy.run_path(str(ROOT / "tools/python/build_delivery_episode.script.py"))
 ADAPTER = runpy.run_path(str(ROOT / "tools/python/native_delivery.adapter.py"))
-SIGNATURE = runpy.run_path(str(ROOT / "tools/python/native_signature.helper.py"))
 BINDING = (
     ROOT
     / "docs/wiki/faith-origins/episodes/01-administrative-records-caesarea/16-native-binding.json"
@@ -206,8 +205,8 @@ class NativeDeliveryControllerTests(unittest.TestCase):
             again.xs_manager.xs_check.raise_on_error = True
             again.xs_manager.validate_scenario_xs()
         self.assertEqual(
-            SIGNATURE["native_signature"](self.scenario),
-            SIGNATURE["native_signature"](again),
+            BUILDER["native_signature"](self.scenario),
+            BUILDER["native_signature"](again),
         )
         self.assertEqual(87, len(self.scenario.trigger_manager.variables))
 
