@@ -35,3 +35,8 @@ No northern pickup is moved west, no huge offset aliases a different hub, and no
 The canonical Yavneh profile/source registrations are still separate work. The proposed district and local frame are documentary candidates; no count of26 profiles or22 missing identities changes here. The actual first-century watercourse, land/elevation mask and every path/footprint still need historical/geographic review. Logical output slots at work-hub centres are not certified native spawn positions: simultaneous western results B/F require deliberate noncolliding native placements within genuine work geometry.
 
 The JSON fixes15 adversarial QA topics, actor/service identity, chosen-court checks, cancellation/refund boundaries, optional funding order and save/load epochs. Native v3 still depends on i00007/S3, i00003 and s00001. No fixed-payment conjunction, private reference harness or untested template supplies those operations. f00005/S8 remains unavailable for historical materialization; counts stay64 dossiers and214 missing.
+
+
+## Later explicit revision: existing-contract materialization
+
+[Revision2](02-yavneh-materialization-specification.md) supersedes the combined-copy blocker for this episode. It deliberately uses seven independent secondary quests, with one western and one northern original copy task, within the existing strict v3 contract. Main contracts above remain unchanged. The future composition has44 screens rather than this main supplement’s42. The generic combined-multi-origin capability remains unimplemented and belongs to i00011; no old validator or contract was relaxed. This earlier main-decision JSON stays pinned for traceability; consumers must apply the revision2 specification for the full candidate.

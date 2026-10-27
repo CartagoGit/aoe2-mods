@@ -1,0 +1,2473 @@
+{
+  "classification": "closed architect materialization instructions for a design candidate; no native or historical-authoring authorization",
+  "author": "gpt-6",
+  "date": "2026-10-27",
+  "campaignId": "jewish-tradition",
+  "episodeId": "02-refuge-and-school-supply-yavneh",
+  "revision": 2,
+  "sourceInputs": [
+    {
+      "path": "docs/design/episode-plans/jewish-tradition/02-yavneh-world-plan.json",
+      "sha256": "388e2d27b707b35d73a07423c415653e02482a2620ea208ce4ee05cc03942046"
+    },
+    {
+      "path": "docs/design/episode-plans/jewish-tradition/02-yavneh-profile-architect-decisions.json",
+      "sha256": "5a7b63d3c00d8a748717298f48d4615ba1250317b73e5614f9533ac01c73de26"
+    }
+  ],
+  "precedence": "This explicit seven-secondary revision overrides only the earlier combined-copy blocker, side bindings/portfolios and named source captions. Main world, main recipes, geography and all resource values are retained.",
+  "reusesExistingContract": true,
+  "requiresI00011ForThisEpisode": false,
+  "i00011Policy": "General future combined-multi-origin investigation only. No existing schema or validator is changed for this candidate.",
+  "sourceTextOverrides": {
+    "copy-offer": {
+      "en": "Bring the marked original western working-record carrier to the Reading Cloth. Benefit: an attributed note on remembered practice and the selected-court reminder. No resource reward.",
+      "es-ES": "Lleva al portador original señalado de la anotación occidental al paño de lectura. Ventaja: una nota atribuida sobre prácticas recordadas y el recordatorio de patios seleccionados. Sin recompensa de recursos."
+    },
+    "guide-offer": {
+      "en": "Bring the original local guide to the western junction. Benefit: mark the existing northern approach through the Timber Bench to the Northern Turn. The task creates no road or change in terrain.",
+      "es-ES": "Lleva al guía local original al cruce occidental. Ventaja: señala la aproximación norte existente por el banco de madera hasta el recodo del norte. La tarea no crea un camino ni cambia el terreno."
+    }
+  },
+  "sourceConditionOverrides": {
+    "copy-offer": "side-2 western original copy offer, independent from side-3",
+    "copy-complete": "earned side-2 western original arrival once; source note then copy-hint",
+    "copy-hint": "after side-2 copy-complete once; independent from side-3",
+    "guide-offer": "side-6 original guide offer; mark existing northern-approach only"
+  },
+  "additionalScreens": [
+    {
+      "id": "copy-north-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-north-offer",
+      "text": {
+        "en": "Bring the marked original northern working-record carrier to the Reading Cloth. Benefit: an attributed later-tradition note and a reminder that originals cannot be replaced. This task is independent of the western note and gives no resources.",
+        "es-ES": "Lleva al portador original señalado de la anotación del norte al paño de lectura. Ventaja: una nota atribuida de tradición posterior y un recordatorio de que los originales no se sustituyen. Esta tarea es independiente de la anotación occidental y no da recursos."
+      },
+      "condition": "side-3 offered from start, independent of side-2 and main goals; reread while available",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the marked original northern working-record carrier to the Reading Cloth. Benefit: an attributed later-tradition note and a reminder that originals cannot be replaced. This task is independent of the western note",
+          "and gives no resources."
+        ],
+        "es-ES": [
+          "Lleva al portador original señalado de la anotación del norte al paño de lectura. Ventaja: una nota atribuida de tradición posterior y un recordatorio de que los originales no se sustituyen. Esta",
+          "tarea es independiente de la anotación occidental y no da recursos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 20
+    },
+    {
+      "id": "copy-north-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-north-complete",
+      "text": {
+        "en": "The later Gittin 56a–b narrative associates Yavneh with a request during the siege; it is not a contemporary transcript. Our working record and carrier are fictional. A spare carrier cannot replace this original, or the original assigned to the separate western note.",
+        "es-ES": "El relato posterior de Guitín 56a–b asocia Yavneh con una petición durante el asedio; no es una transcripción contemporánea. Nuestra anotación de trabajo y su portador son ficticios. Un portador de repuesto no sustituye a este original ni al asignado a la anotación occidental independiente."
+      },
+      "condition": "earned side-3 original arrival once; independent failure/receipt; contextual note and identity hint",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The later Gittin 56a–b narrative associates Yavneh with a request during the siege; it is not a contemporary transcript. Our working record and carrier are fictional. A spare carrier cannot replace this",
+          "original, or the original assigned to the separate western note."
+        ],
+        "es-ES": [
+          "El relato posterior de Guitín 56a–b asocia Yavneh con una petición durante el asedio; no es una transcripción contemporánea. Nuestra anotación de trabajo y su portador son ficticios. Un portador de repuesto",
+          "no sustituye a este original ni al asignado a la anotación occidental independiente."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
+    }
+  ],
+  "sourceScreenPolicy": "Keep all40source IDs and other texts/narrators unchanged; apply two explicit text overrides and four condition overrides, append2base main screens and2north-copy screens via existing screen helper; final44screens/88texts",
+  "secondaryObjectives": [
+    {
+      "id": "side-1",
+      "analysisId": "aid",
+      "kind": "aid",
+      "title": {
+        "en": "A Share for the Northern Hearth",
+        "es-ES": "Una parte para el fogón del norte"
+      },
+      "originalWorldActorIds": [
+        "aid-cart-1",
+        "aid-cart-2"
+      ],
+      "originHub": "aid-pickup",
+      "receivingHub": "aid-court",
+      "originalOffsetsTiles": [
+        [
+          -4,
+          -5
+        ],
+        [
+          4,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            -8,
+            0
+          ],
+          "radiusTiles": 3
+        },
+        {
+          "offsetTiles": [
+            8,
+            0
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 40,
+        "wood": 40,
+        "gold": 20,
+        "stone": 0
+      },
+      "offerScreenId": "aid-offer",
+      "completeScreenId": "aid-complete",
+      "corridorIds": [
+        "path-aid-pickup-to-northern-junction",
+        "path-repair-yard-to-northern-junction",
+        "path-aid-court-to-repair-yard"
+      ],
+      "originalCount": 2,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-2",
+      "analysisId": "copy-west",
+      "kind": "copy",
+      "title": {
+        "en": "The Room Left in the Margin",
+        "es-ES": "El sitio que queda en el margen"
+      },
+      "originalWorldActorIds": [
+        "record-west-carrier"
+      ],
+      "originHub": "record-west",
+      "receivingHub": "reader-court",
+      "originalOffsetsTiles": [
+        [
+          0,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            0,
+            8
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "offerScreenId": "copy-offer",
+      "completeScreenId": "copy-complete",
+      "corridorIds": [
+        "path-record-west-to-merchant-work",
+        "path-merchant-work-to-western-junction",
+        "path-timber-work-to-western-junction",
+        "path-built-meeting-court-to-timber-work",
+        "path-reader-court-to-built-meeting-court"
+      ],
+      "originalCount": 1,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-3",
+      "analysisId": "copy-north",
+      "kind": "copy",
+      "title": {
+        "en": "A Tale Carried Further",
+        "es-ES": "Un relato que sigue su camino"
+      },
+      "originalWorldActorIds": [
+        "record-north-carrier"
+      ],
+      "originHub": "record-north",
+      "receivingHub": "reader-court",
+      "originalOffsetsTiles": [
+        [
+          0,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            0,
+            8
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "offerScreenId": "copy-north-offer",
+      "completeScreenId": "copy-north-complete",
+      "corridorIds": [
+        "path-northern-junction-to-record-north",
+        "path-northern-junction-to-timber-work",
+        "path-built-meeting-court-to-timber-work",
+        "path-reader-court-to-built-meeting-court"
+      ],
+      "originalCount": 1,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-4",
+      "analysisId": "repair",
+      "kind": "repair",
+      "title": {
+        "en": "A Roof for What Remains",
+        "es-ES": "Un techo para lo que queda"
+      },
+      "originalWorldActorIds": [
+        "damaged-store"
+      ],
+      "originHub": "repair-yard",
+      "receivingHub": "repair-yard",
+      "originalOffsetsTiles": [
+        [
+          6,
+          0
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            8,
+            0
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 30,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 20,
+        "gold": 0,
+        "stone": 0
+      },
+      "offerScreenId": "repair-offer",
+      "completeScreenId": "repair-complete",
+      "corridorIds": [
+        "path-starting-court-to-hearth-work",
+        "path-hearth-work-to-meal-court",
+        "path-meal-court-to-reader-court",
+        "path-reader-court-to-built-meeting-court",
+        "path-aid-court-to-built-meeting-court",
+        "path-aid-court-to-repair-yard"
+      ],
+      "originalCount": 1,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-5",
+      "analysisId": "trade",
+      "kind": "trade",
+      "title": {
+        "en": "A Fair Exchange at the Southern Yard",
+        "es-ES": "Un intercambio justo en el patio del sur"
+      },
+      "originalWorldActorIds": [
+        "trade-carrier"
+      ],
+      "originHub": "trade-pickup",
+      "receivingHub": "trade-court",
+      "originalOffsetsTiles": [
+        [
+          0,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            8,
+            0
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 20,
+        "stone": 0
+      },
+      "reward": {
+        "food": 20,
+        "wood": 0,
+        "gold": 10,
+        "stone": 0
+      },
+      "offerScreenId": "trade-offer",
+      "completeScreenId": "trade-complete",
+      "corridorIds": [
+        "path-merchant-work-to-trade-pickup",
+        "path-merchant-work-to-western-junction",
+        "path-western-junction-to-starting-court",
+        "path-starting-court-to-host-work",
+        "path-host-work-to-host-meeting-court",
+        "path-host-meeting-court-to-trade-court"
+      ],
+      "originalCount": 1,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-6",
+      "analysisId": "guide",
+      "kind": "guide",
+      "title": {
+        "en": "The Turn We Had Overlooked",
+        "es-ES": "El recodo que no habíamos visto"
+      },
+      "originalWorldActorIds": [
+        "guide"
+      ],
+      "originHub": "guide-pickup",
+      "receivingHub": "western-junction",
+      "originalOffsetsTiles": [
+        [
+          0,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            8,
+            0
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "offerScreenId": "guide-offer",
+      "completeScreenId": "guide-complete",
+      "corridorIds": [
+        "path-guide-pickup-to-record-west",
+        "path-record-west-to-merchant-work",
+        "path-merchant-work-to-western-junction"
+      ],
+      "originalCount": 1,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    },
+    {
+      "id": "side-7",
+      "analysisId": "guest",
+      "kind": "extract",
+      "title": {
+        "en": "Room at Another Hearth",
+        "es-ES": "Sitio junto a otro fogón"
+      },
+      "originalWorldActorIds": [
+        "guest-1",
+        "guest-2"
+      ],
+      "originHub": "guest-pickup",
+      "receivingHub": "guest-court",
+      "originalOffsetsTiles": [
+        [
+          -4,
+          -5
+        ],
+        [
+          4,
+          -5
+        ]
+      ],
+      "receivingZones": [
+        {
+          "offsetTiles": [
+            8,
+            0
+          ],
+          "radiusTiles": 3
+        }
+      ],
+      "cost": {
+        "food": 20,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 10,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "offerScreenId": "guest-offer",
+      "completeScreenId": "guest-complete",
+      "corridorIds": [
+        "path-record-north-to-guest-pickup",
+        "path-northern-junction-to-record-north",
+        "path-northern-junction-to-timber-work",
+        "path-timber-work-to-western-junction",
+        "path-western-junction-to-starting-court",
+        "path-starting-court-to-host-work",
+        "path-host-work-to-guest-court"
+      ],
+      "originalCount": 2,
+      "rationale": {
+        "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+        "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+      },
+      "originalIdentityRule": "complete-profile source directly declares these originals; for copy one original is legal under existing schema and both validators, without adding a helper option or changing its defaults"
+    }
+  ],
+  "secondaryPolicy": {
+    "path": "complete-profile v3 authoring; existing schema allows one-original copy, helper preset2 is not a contract limit",
+    "templates": "Reuse existing builder/strict schemas/common optional state/effect structures; final copy fields declare exactly one original/requiredCount1/destination per independent objective. No new helper option or public-contract change.",
+    "strictEnrichment": "Every secondary world entity/zone must satisfy current worldEntitySchema/worldZoneSchema; supply fictional identity/replacement/originRule and zone placement/protectedCivilian=false. Preserve IDs/once flags/receipts scoped by actual generated side ID.",
+    "payment": "repair30W,trade20G,guest20F cost before reward; same full-health receipt and afterArrival requirements; new native extract shape stays unsupported",
+    "copyWestEffect": "unlock-context-and-hint using existing Mishnah source copy-complete and copy-hint; resource reward empty; working record fictional, no autograph",
+    "copyNorthEffect": "unlock-context-and-hint using new later-tradition/identity text, no resources; one original north carrier, independent source/failure/receipt",
+    "copyReceivingGeometry": "Two scoped copy zones may deliberately share the same physical reader-court offset[0,8]/radius3. Each is tied to its own original; one arrival never substitutes for the other.",
+    "originalIdMapping": {
+      "aid-cart-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-1",
+      "aid-cart-2": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-2",
+      "record-west-carrier": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.entity-1",
+      "record-north-carrier": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.entity-1",
+      "damaged-store": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.entity-1",
+      "trade-carrier": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.entity-1",
+      "guide": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.entity-1",
+      "guest-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-1",
+      "guest-2": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-2"
+    },
+    "helperNamespace": "jewish-tradition.02-refuge-and-school-supply-yavneh",
+    "scopePolicy": "If reusing the helper for common structures, its artificial scenario id is the full namespace above. Final IDs, flags and receipts are source contract IDs, not numeric engine strings. No previous campaign source ID changes."
+  },
+  "guideInformationCorridor": {
+    "id": "northern-approach",
+    "hubOrder": [
+      "western-junction",
+      "timber-work",
+      "northern-junction"
+    ],
+    "mode": "land",
+    "widthTiles": 4,
+    "physicalMeaning": "information alias of two already proposed physical links; not a new road",
+    "approved": false
+  },
+  "accountsByDifficulty": {
+    "easy": {
+      "spendable": {
+        "food": 180,
+        "wood": 180,
+        "gold": 210,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    },
+    "standard": {
+      "spendable": {
+        "food": 150,
+        "wood": 130,
+        "gold": 140,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    },
+    "hard": {
+      "spendable": {
+        "food": 130,
+        "wood": 110,
+        "gold": 140,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    }
+  },
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 70,
+      "wood": 60,
+      "gold": 30,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 20,
+      "wood": 30,
+      "gold": 20,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 70,
+      "wood": 60,
+      "gold": 30,
+      "stone": 0
+    },
+    "fundingPolicy": "single finite optional reward account; descriptive allowance is not a second credit",
+    "nativeStatus": "reference specification; native QA pending"
+  },
+  "playstyles": [
+    {
+      "id": "the-hosts-door",
+      "optionalObjectives": [
+        "side-5",
+        "side-6"
+      ],
+      "candidateRecipeLabels": "ADF",
+      "financialOrder": [
+        "trade",
+        "guide",
+        "fund-main"
+      ],
+      "costOfOpportunity": "Escort the trader south and guide west before funding if gold would otherwise fall below the trade cost. Hard ADF after that trade uses its remaining130gold exactly; local meal and host reception compete with the western materials journey.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    },
+    {
+      "id": "the-northern-workshop",
+      "optionalObjectives": [
+        "side-1",
+        "side-4"
+      ],
+      "candidateRecipeLabels": "BCF",
+      "financialOrder": [
+        "fund-main",
+        "aid",
+        "repair"
+      ],
+      "costOfOpportunity": "The northern shelter consumes wood. On hard its direct BCF reservation leaves no wood; earn the two aid deliveries before paying30wood for the repair. The20wood repair reward cannot finance its own prerequisite.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    },
+    {
+      "id": "records-and-guests",
+      "optionalObjectives": [
+        "side-2",
+        "side-3",
+        "side-6",
+        "side-7"
+      ],
+      "candidateRecipeLabels": "BDE",
+      "financialOrder": [
+        "copy-west",
+        "copy-north",
+        "guide",
+        "guest",
+        "fund-main"
+      ],
+      "costOfOpportunity": "Read both separate working records and escort the optional guests before committing. Their hospitality consumes net10food. BDE remains directly affordable in all three difficulties; on hard its gold is then exhausted, so later trade needs separately earned aid.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    }
+  ],
+  "dossierMetadata": {
+    "factualIntro": {
+      "en": "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy.",
+      "es-ES": "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+    },
+    "factualOutro": {
+      "en": "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem.",
+      "es-ES": "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+    },
+    "dramatizationNotice": {
+      "en": "All local workers, recipients, supplies, records, rooms and errands are invented. No rabbinic autograph, exact academy parcel, contemporary negotiation or canon-closing event is represented. Judith’s account is fictional received memory; gameplay neither proves belief nor reverses Jerusalem’s destruction.",
+      "es-ES": "Todos los trabajadores, destinatarios, suministros, anotaciones, estancias y encargos locales son inventados. No se representan un autógrafo rabínico, una parcela exacta de academia, una negociación contemporánea ni un cierre del canon. El relato de Judith es memoria recibida ficticia; el juego no acredita creencias ni revierte la destrucción de Jerusalén."
+    },
+    "artDirection": {
+      "style": "Restrained ordinary early Roman-period inland civilian work; cloth, food baskets, reused timber and plain meeting space; fictional local people at human scale",
+      "historicalControls": "No later minaret, railway, excavated Persian winery or Byzantine industrial complex as70–80scenery. No exact academy reconstruction, holy-person unit, sacred autograph, canon ceremony, harbor or fabricated Soreq crossing.",
+      "referenceAssets": [],
+      "productionApproved": false
+    },
+    "failureRecovery": {
+      "beforeCommit": "Free preview; reject unaffordable input without debit; exact joint escrow refund once before irreversible commitment",
+      "afterCommit": "Keep selected identities/costs; wrong destination or absent recipient yields no receipt, use the same originals at correct court; no timer or substitute work",
+      "mainIdentityLoss": "Existing reference rules: original required recipient or indispensable generated selected result loss defeats first; selected worker loss before work defeats, loss after recorded work does not undo its result",
+      "optionalIdentityLoss": "Each independent side task fails only on its own lost original or object; west/north copies fail independently; no reward/resurrection/main defeat",
+      "resources": "Main all-skip8/5/3 choices; finite70F60W30G reward account separate from operating stock; no gathering, production, regeneration or replacement budget",
+      "nativeStatus": "Reference recovery descriptions require actual native composition/input/save-load/engine evidence"
+    },
+    "requiredCapabilities": [
+      {
+        "id": "alternative-fulfillment-v3",
+        "status": "actual reference model available; native selection/escrow/work/output/reception pending i00007/S3"
+      },
+      {
+        "id": "current-original-presence",
+        "status": "reference checks available; native terminal scheduling/save-load QA pending"
+      },
+      {
+        "id": "single-origin-independent-secondary",
+        "status": "one original per copy is legal in current complete-profile v3; actual typed full candidate still must be executed and reviewed"
+      },
+      {
+        "id": "authored-secondary-costs",
+        "status": "reference projection integrated b4bdc4ee; native extract arrival-plus-payment unsupported"
+      },
+      {
+        "id": "historical-terrain-and-footprints",
+        "status": "candidate frame and local paths authored; ancient land, slope, watercourse, footprints and native navigation unapproved"
+      },
+      {
+        "id": "ordered-two-narrator-captions",
+        "status": "EN/es-ES source44 screens specified; editorial/native/audio acceptance pending"
+      }
+    ],
+    "gameplayIdentity": {
+      "problem": "Keep three distinct voluntary local promises with exclusive methods, original workers/results/recipients and finite joint resources",
+      "decision": "Compare resource mixture, different work/reception circuits and optional aid/context before irreversible commitment; three candidate styles are financially feasible in each difficulty",
+      "density": "22 activity sites,27 physical interhub links,20 local approaches, six methods and7 independent secondary tasks; the guide information alias adds no physical road",
+      "replay": "Historical outcome stays fixed; replay changes ADF/BCF/BDE or other affordable methods, independent note completion and optional order",
+      "pacing": "Reflective civilian recovery episode after destruction, not another six-of-eight rescue, fake siege or deadline; challenge and travel remain uncalibrated",
+      "limits": "No game-verified difficulty or duration; an interesting RTS experience is an acceptance obligation, not an assertion from menus and graphs"
+    },
+    "qaCases": [
+      "Enumerate all24 direct financial choices and preserve8/5/3; existing optional-prefix BFS gives8/7/6, never promise hard ACE/BDF.",
+      "Exercise all nine style/difficulty prefixes with actual identities and travel; financial evidence alone is not a played style.",
+      "Attendance alone must neither reserve resources nor create work/output/service receipts or victory.",
+      "For each of six methods, reserve/cancel/refund once before commit and reject stale, partial or unaffordable choice without debit.",
+      "After commit, each exact original worker departs and performs its own selected work; another service worker or unselected method cannot qualify.",
+      "Only genuinely generated selected output can arrive; reject preplaced, wrong-recipe, duplicate and substitute results.",
+      "Meeting C and D require distinct actual receiving courts, both for the selected output and the unchanged original recipient.",
+      "All selected results and three original recipients require fresh alive presence at their selected courts at final; historical receipt or attendance is insufficient.",
+      "Loss of required recipient/indispensable selected result defeats before simultaneous victory; worker loss after completed work does not undo it.",
+      "Both original copy carriers must retain their west/north origins; i00011 must resolve explicit compatible semantics before composition, never giant offset aliases.",
+      "Repair30W, trade20G and guests20F charge before reserve rewards. Require two aid originals and two guests, with no replacement or reward for optional loss.",
+      "Save/load at reservation, cancellation, commitment, work/generation, every reception/reward and final arbitration; rotate observation epoch and reject queued stale actions.",
+      "Verify all22 sites/27 interhub links/20 local approaches against approved terrain and actual circles/footprints; no modern river course or empty waterline certifies land.",
+      "Check all42 EN/es-ES screen texts, role order, source cautions, cost/work/court display, contextual service completion and the real next episode03.",
+      "Native v3 and multi-origin modes remain rejected until their explicit real adapters and engine QA exist; no fallback to old conjunctive payments.",
+      "Revised design: west and north copy each has exactly one original, its own true origin/route, scoped receipt/effect and independent failure. Opposite or spare carrier cannot complete it.",
+      "Seven-task BFS24rows preserve8/5/3 and8/7/6; all directly affordable main choices also have all-seven witnesses after immediate funding.",
+      "The compound guide information corridor is exactly the two existing links through Timber Bench; no extra road, new terrain or duplicate physical route is created."
+    ],
+    "editorialReviewNotes": {
+      "author": "gpt-6",
+      "date": "2026-10-27",
+      "status": "design-only candidate; historical/editorial/geographic/native acceptance pending",
+      "narrator": "Judith355–435 receives earlier accounts. A timeless common narrator attributes the later Gittin narrative; Judith never claims to read the finalized later Babylonian Talmud.",
+      "copyRevision": "Explicitly redesign the former combined two-note goal as two independent side quests. This uses existing single-origin/one-original copy contracts; it is not claimed equivalent to an unsupported combined multi-origin transaction.",
+      "composition": "Build an actual complete-profile v3 candidate and run its genuine typed projector and dossier factory. Do not count a canonical dossier or unlock f00005/S8 until separate registration/review."
+    },
+    "continuation": {
+      "nextEpisodeId": "03-distributed-study-network-yavneh",
+      "campaignComplete": false,
+      "sourceScreenId": "continue-next"
+    },
+    "screenRoles": {
+      "title": "title",
+      "factualIntro": "intro-fact",
+      "handover": "intro-handover",
+      "personalIntro": "intro-personal",
+      "factualOutro": "victory-fact",
+      "personalOutro": "victory-personal",
+      "defeat": "defeat",
+      "continuation": "continue-next"
+    },
+    "playstyles": [
+      {
+        "id": "the-hosts-door",
+        "optionalObjectives": [
+          "side-5",
+          "side-6"
+        ],
+        "costOfOpportunity": "Escort the trader south and guide west before funding if gold would otherwise fall below the trade cost. Hard ADF after that trade uses its remaining130gold exactly; local meal and host reception compete with the western materials journey.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      },
+      {
+        "id": "the-northern-workshop",
+        "optionalObjectives": [
+          "side-1",
+          "side-4"
+        ],
+        "costOfOpportunity": "The northern shelter consumes wood. On hard its direct BCF reservation leaves no wood; earn the two aid deliveries before paying30wood for the repair. The20wood repair reward cannot finance its own prerequisite.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      },
+      {
+        "id": "records-and-guests",
+        "optionalObjectives": [
+          "side-2",
+          "side-3",
+          "side-6",
+          "side-7"
+        ],
+        "costOfOpportunity": "Read both separate working records and escort the optional guests before committing. Their hospitality consumes net10food. BDE remains directly affordable in all three difficulties; on hard its gold is then exhausted, so later trade needs separately earned aid.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      }
+    ],
+    "historicalMaterialPolicyByEntity": {
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-meal": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-consignment": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-assembled-shelter": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-offered-room": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-working-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-working-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation."
+    },
+    "mapPlan": {
+      "bbox": [
+        34.714,
+        31.846,
+        34.755,
+        31.884
+      ],
+      "terrainProfile": "yavneh",
+      "orientation": "north-up; real inland Yavneh region, fictional local activity sites; no claim to an academy address",
+      "projection": "existing geographic_frame.helper.py; cosine-corrected longitude and padded square, north-up",
+      "hubs": [
+        {
+          "id": "starting-court",
+          "centre": [
+            211.44,
+            255.75
+          ],
+          "lonLat": [
+            34.736,
+            31.859
+          ],
+          "name": {
+            "en": "The Shared Ledger",
+            "es-ES": "El registro compartido"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "hearth-work",
+          "centre": [
+            235.33,
+            237.0
+          ],
+          "lonLat": [
+            34.739,
+            31.861
+          ],
+          "name": {
+            "en": "The Local Hearth",
+            "es-ES": "El fogón local"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "meal-court",
+          "centre": [
+            251.25,
+            213.56
+          ],
+          "lonLat": [
+            34.741,
+            31.8635
+          ],
+          "name": {
+            "en": "The Neighbors’ Table",
+            "es-ES": "La mesa de los vecinos"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "timber-work",
+          "centre": [
+            179.59,
+            185.44
+          ],
+          "lonLat": [
+            34.732,
+            31.8665
+          ],
+          "name": {
+            "en": "The Timber Bench",
+            "es-ES": "El banco de madera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "built-meeting-court",
+          "centre": [
+            227.37,
+            162.0
+          ],
+          "lonLat": [
+            34.738,
+            31.869
+          ],
+          "name": {
+            "en": "The Prepared Meeting Court",
+            "es-ES": "El patio preparado para reunirse"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "host-work",
+          "centre": [
+            163.67,
+            293.25
+          ],
+          "lonLat": [
+            34.73,
+            31.855
+          ],
+          "name": {
+            "en": "The Host’s Preparation Yard",
+            "es-ES": "El patio de preparación del anfitrión"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "host-meeting-court",
+          "centre": [
+            187.56,
+            312.0
+          ],
+          "lonLat": [
+            34.733,
+            31.853
+          ],
+          "name": {
+            "en": "The Offered Room",
+            "es-ES": "La estancia ofrecida"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "materials-work",
+          "centre": [
+            251.25,
+            265.13
+          ],
+          "lonLat": [
+            34.741,
+            31.858
+          ],
+          "name": {
+            "en": "The Local Working Bench",
+            "es-ES": "La mesa de trabajo local"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "reader-court",
+          "centre": [
+            263.2,
+            192.94
+          ],
+          "lonLat": [
+            34.7425,
+            31.8657
+          ],
+          "name": {
+            "en": "The Reading Cloth",
+            "es-ES": "El paño de lectura"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "merchant-work",
+          "centre": [
+            88.03,
+            227.63
+          ],
+          "lonLat": [
+            34.7205,
+            31.862
+          ],
+          "name": {
+            "en": "The Western Trader",
+            "es-ES": "El comerciante occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "western-junction",
+          "centre": [
+            131.82,
+            227.63
+          ],
+          "lonLat": [
+            34.726,
+            31.862
+          ],
+          "name": {
+            "en": "The Western Junction",
+            "es-ES": "El cruce occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "northern-junction",
+          "centre": [
+            171.63,
+            143.25
+          ],
+          "lonLat": [
+            34.731,
+            31.871
+          ],
+          "name": {
+            "en": "The Northern Turn",
+            "es-ES": "El recodo del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "aid-pickup",
+          "centre": [
+            107.94,
+            143.25
+          ],
+          "lonLat": [
+            34.723,
+            31.871
+          ],
+          "name": {
+            "en": "The Waiting Aid",
+            "es-ES": "La ayuda que espera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "aid-court",
+          "centre": [
+            227.37,
+            105.75
+          ],
+          "lonLat": [
+            34.738,
+            31.875
+          ],
+          "name": {
+            "en": "The Northern Household",
+            "es-ES": "El hogar del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "record-west",
+          "centre": [
+            68.12,
+            283.88
+          ],
+          "lonLat": [
+            34.718,
+            31.856
+          ],
+          "name": {
+            "en": "The Western Working Record",
+            "es-ES": "La anotación de trabajo occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "record-north",
+          "centre": [
+            131.82,
+            68.25
+          ],
+          "lonLat": [
+            34.726,
+            31.879
+          ],
+          "name": {
+            "en": "The Northern Working Record",
+            "es-ES": "La anotación de trabajo del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "repair-yard",
+          "centre": [
+            195.52,
+            96.38
+          ],
+          "lonLat": [
+            34.734,
+            31.876
+          ],
+          "name": {
+            "en": "The Damaged Store",
+            "es-ES": "El almacén dañado"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "trade-pickup",
+          "centre": [
+            56.18,
+            171.38
+          ],
+          "lonLat": [
+            34.7165,
+            31.868
+          ],
+          "name": {
+            "en": "The Visiting Trader",
+            "es-ES": "El comerciante visitante"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "trade-court",
+          "centre": [
+            211.44,
+            340.13
+          ],
+          "lonLat": [
+            34.736,
+            31.85
+          ],
+          "name": {
+            "en": "The Southern Receiving Yard",
+            "es-ES": "El patio receptor del sur"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guide-pickup",
+          "centre": [
+            99.97,
+            321.38
+          ],
+          "lonLat": [
+            34.722,
+            31.852
+          ],
+          "name": {
+            "en": "The Waiting Guide",
+            "es-ES": "El guía que espera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guest-pickup",
+          "centre": [
+            76.09,
+            49.5
+          ],
+          "lonLat": [
+            34.719,
+            31.881
+          ],
+          "name": {
+            "en": "The Guest Household",
+            "es-ES": "El hogar invitado"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guest-court",
+          "centre": [
+            147.75,
+            358.88
+          ],
+          "lonLat": [
+            34.728,
+            31.848
+          ],
+          "name": {
+            "en": "The Additional Hearth",
+            "es-ES": "El fogón adicional"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        }
+      ],
+      "points": [
+        {
+          "id": "starting-court",
+          "lonLat": [
+            34.736,
+            31.859
+          ],
+          "tile": [
+            211.44,
+            255.75
+          ],
+          "name": {
+            "en": "The Shared Ledger",
+            "es-ES": "El registro compartido"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "hearth-work",
+          "lonLat": [
+            34.739,
+            31.861
+          ],
+          "tile": [
+            235.33,
+            237.0
+          ],
+          "name": {
+            "en": "The Local Hearth",
+            "es-ES": "El fogón local"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "meal-court",
+          "lonLat": [
+            34.741,
+            31.8635
+          ],
+          "tile": [
+            251.25,
+            213.56
+          ],
+          "name": {
+            "en": "The Neighbors’ Table",
+            "es-ES": "La mesa de los vecinos"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "timber-work",
+          "lonLat": [
+            34.732,
+            31.8665
+          ],
+          "tile": [
+            179.59,
+            185.44
+          ],
+          "name": {
+            "en": "The Timber Bench",
+            "es-ES": "El banco de madera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "built-meeting-court",
+          "lonLat": [
+            34.738,
+            31.869
+          ],
+          "tile": [
+            227.37,
+            162.0
+          ],
+          "name": {
+            "en": "The Prepared Meeting Court",
+            "es-ES": "El patio preparado para reunirse"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "host-work",
+          "lonLat": [
+            34.73,
+            31.855
+          ],
+          "tile": [
+            163.67,
+            293.25
+          ],
+          "name": {
+            "en": "The Host’s Preparation Yard",
+            "es-ES": "El patio de preparación del anfitrión"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "host-meeting-court",
+          "lonLat": [
+            34.733,
+            31.853
+          ],
+          "tile": [
+            187.56,
+            312.0
+          ],
+          "name": {
+            "en": "The Offered Room",
+            "es-ES": "La estancia ofrecida"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "materials-work",
+          "lonLat": [
+            34.741,
+            31.858
+          ],
+          "tile": [
+            251.25,
+            265.13
+          ],
+          "name": {
+            "en": "The Local Working Bench",
+            "es-ES": "La mesa de trabajo local"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "reader-court",
+          "lonLat": [
+            34.7425,
+            31.8657
+          ],
+          "tile": [
+            263.2,
+            192.94
+          ],
+          "name": {
+            "en": "The Reading Cloth",
+            "es-ES": "El paño de lectura"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "merchant-work",
+          "lonLat": [
+            34.7205,
+            31.862
+          ],
+          "tile": [
+            88.03,
+            227.63
+          ],
+          "name": {
+            "en": "The Western Trader",
+            "es-ES": "El comerciante occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "western-junction",
+          "lonLat": [
+            34.726,
+            31.862
+          ],
+          "tile": [
+            131.82,
+            227.63
+          ],
+          "name": {
+            "en": "The Western Junction",
+            "es-ES": "El cruce occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "northern-junction",
+          "lonLat": [
+            34.731,
+            31.871
+          ],
+          "tile": [
+            171.63,
+            143.25
+          ],
+          "name": {
+            "en": "The Northern Turn",
+            "es-ES": "El recodo del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "aid-pickup",
+          "lonLat": [
+            34.723,
+            31.871
+          ],
+          "tile": [
+            107.94,
+            143.25
+          ],
+          "name": {
+            "en": "The Waiting Aid",
+            "es-ES": "La ayuda que espera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "aid-court",
+          "lonLat": [
+            34.738,
+            31.875
+          ],
+          "tile": [
+            227.37,
+            105.75
+          ],
+          "name": {
+            "en": "The Northern Household",
+            "es-ES": "El hogar del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "record-west",
+          "lonLat": [
+            34.718,
+            31.856
+          ],
+          "tile": [
+            68.12,
+            283.88
+          ],
+          "name": {
+            "en": "The Western Working Record",
+            "es-ES": "La anotación de trabajo occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "record-north",
+          "lonLat": [
+            34.726,
+            31.879
+          ],
+          "tile": [
+            131.82,
+            68.25
+          ],
+          "name": {
+            "en": "The Northern Working Record",
+            "es-ES": "La anotación de trabajo del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "repair-yard",
+          "lonLat": [
+            34.734,
+            31.876
+          ],
+          "tile": [
+            195.52,
+            96.38
+          ],
+          "name": {
+            "en": "The Damaged Store",
+            "es-ES": "El almacén dañado"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "trade-pickup",
+          "lonLat": [
+            34.7165,
+            31.868
+          ],
+          "tile": [
+            56.18,
+            171.38
+          ],
+          "name": {
+            "en": "The Visiting Trader",
+            "es-ES": "El comerciante visitante"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "trade-court",
+          "lonLat": [
+            34.736,
+            31.85
+          ],
+          "tile": [
+            211.44,
+            340.13
+          ],
+          "name": {
+            "en": "The Southern Receiving Yard",
+            "es-ES": "El patio receptor del sur"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guide-pickup",
+          "lonLat": [
+            34.722,
+            31.852
+          ],
+          "tile": [
+            99.97,
+            321.38
+          ],
+          "name": {
+            "en": "The Waiting Guide",
+            "es-ES": "El guía que espera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guest-pickup",
+          "lonLat": [
+            34.719,
+            31.881
+          ],
+          "tile": [
+            76.09,
+            49.5
+          ],
+          "name": {
+            "en": "The Guest Household",
+            "es-ES": "El hogar invitado"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guest-court",
+          "lonLat": [
+            34.728,
+            31.848
+          ],
+          "tile": [
+            147.75,
+            358.88
+          ],
+          "name": {
+            "en": "The Additional Hearth",
+            "es-ES": "El fogón adicional"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        }
+      ],
+      "corridors": [
+        {
+          "id": "path-starting-court-to-hearth-work",
+          "hubOrder": [
+            "starting-court",
+            "hearth-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-hearth-work-to-meal-court",
+          "hubOrder": [
+            "hearth-work",
+            "meal-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-meal-court-to-reader-court",
+          "hubOrder": [
+            "meal-court",
+            "reader-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-reader-court-to-built-meeting-court",
+          "hubOrder": [
+            "reader-court",
+            "built-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-built-meeting-court-to-timber-work",
+          "hubOrder": [
+            "built-meeting-court",
+            "timber-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-timber-work-to-western-junction",
+          "hubOrder": [
+            "timber-work",
+            "western-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-western-junction-to-starting-court",
+          "hubOrder": [
+            "western-junction",
+            "starting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-starting-court-to-materials-work",
+          "hubOrder": [
+            "starting-court",
+            "materials-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-materials-work-to-reader-court",
+          "hubOrder": [
+            "materials-work",
+            "reader-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-starting-court-to-host-work",
+          "hubOrder": [
+            "starting-court",
+            "host-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-work-to-host-meeting-court",
+          "hubOrder": [
+            "host-work",
+            "host-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-meeting-court-to-trade-court",
+          "hubOrder": [
+            "host-meeting-court",
+            "trade-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-work-to-guest-court",
+          "hubOrder": [
+            "host-work",
+            "guest-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guest-court-to-guide-pickup",
+          "hubOrder": [
+            "guest-court",
+            "guide-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guide-pickup-to-record-west",
+          "hubOrder": [
+            "guide-pickup",
+            "record-west"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-record-west-to-merchant-work",
+          "hubOrder": [
+            "record-west",
+            "merchant-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-merchant-work-to-western-junction",
+          "hubOrder": [
+            "merchant-work",
+            "western-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-merchant-work-to-trade-pickup",
+          "hubOrder": [
+            "merchant-work",
+            "trade-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-trade-pickup-to-aid-pickup",
+          "hubOrder": [
+            "trade-pickup",
+            "aid-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-pickup-to-northern-junction",
+          "hubOrder": [
+            "aid-pickup",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-northern-junction-to-timber-work",
+          "hubOrder": [
+            "northern-junction",
+            "timber-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-northern-junction-to-record-north",
+          "hubOrder": [
+            "northern-junction",
+            "record-north"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-record-north-to-guest-pickup",
+          "hubOrder": [
+            "record-north",
+            "guest-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guest-pickup-to-aid-court",
+          "hubOrder": [
+            "guest-pickup",
+            "aid-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-court-to-repair-yard",
+          "hubOrder": [
+            "aid-court",
+            "repair-yard"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-repair-yard-to-northern-junction",
+          "hubOrder": [
+            "repair-yard",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-court-to-built-meeting-court",
+          "hubOrder": [
+            "aid-court",
+            "built-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "northern-approach",
+          "hubOrder": [
+            "western-junction",
+            "timber-work",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        }
+      ],
+      "terrainInstructions": "No approved ancient land/elevation/watercourse or native passability. Preserve the27physical links and20documented local approaches, including actual offset circles, only as proposed geometry. The28th corridor is a two-link information alias and creates no road. No modern Soreq course, invented bridge or large flattened courtyard is approved.",
+      "geographicLayers": [],
+      "geometryStatus": "candidate only; historical land, all full-width paths, footprints, native spawning and gameplay unapproved",
+      "asset": "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg",
+      "activeAreaPolicy": "22candidate activity areas and their proposed connections; keep native whole-frame geography/density/performance as an acceptance target, never a measured usable-land claim",
+      "schematicWaterControl": {
+        "coordinates": [],
+        "certainty": "first-century course unresolved; empty coordinates do not certify land",
+        "renderAs": "unresolved-reference"
+      },
+      "sourceBindings": {
+        "sourceIds": [
+          "odyssey-source.jewish-tradition.02-refuge-and-school-supply-yavneh"
+        ],
+        "citations": [
+          {
+            "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25883",
+            "passage": "Introduction and figures1–2, Tel Yavne Area A",
+            "qualification": "Modern tell/drainage and printed grid extents; no academy parcel or first-century watercourse"
+          },
+          {
+            "url": "https://hadashot.iaa.org.il/Guidelines_eng.aspx",
+            "passage": "Map References, New Israel Grid convention",
+            "qualification": "CRS identification only; printed map uncertainty remains"
+          }
+        ]
+      }
+    }
+  },
+  "mapComposition": {
+    "candidateRegion": {
+      "id": "yavneh",
+      "name": "Inland Yavneh: documentary region candidate",
+      "bbox": [
+        34.71,
+        31.83,
+        34.79,
+        31.9
+      ]
+    },
+    "localFrame": [
+      34.714,
+      31.846,
+      34.755,
+      31.884
+    ],
+    "mapSize": 400,
+    "hubRadiusTiles": 12,
+    "radiusMeaning": "candidate local activity clearance envelope for starts/offset circles/approaches, not a surveyed ancient court or approved clearing",
+    "mainZonesRadiusTiles": 2,
+    "hubsAndPoints": "Use22source places, exact shared projection; all22hubs; pointZoneBindings for9main zones only, extra activity points remain documentary",
+    "corridors": "Use all27source interhub edges with hubOrder[from,to],mode land,width4; append1compound information alias from guideInformationCorridor;20local approach bands remain explicit source geometry and terrain approval gate",
+    "hydrology": "unresolved; no fabricated waterline, ford or bridge. Empty control coordinates do not mean all ground is traversable.",
+    "mapFields": "Fill existing strict mapPlan fields only; preserve north-up projection, world-source references and geometry/native pending qualifications",
+    "asset": "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg",
+    "renderer": "tools/design/episode_dossiers.script.py diagram(episode,[]) using actual candidate dossier; do not write another map renderer"
+  },
+  "financialAnalysis": {
+    "source": "existing finite_allocation.helper.py optional_states/balance with exact seven authored cost/reward vectors; no preset build_report substitution",
+    "counts": {
+      "easy": {
+        "direct": 8,
+        "withOptionalPrefix": 8
+      },
+      "standard": {
+        "direct": 5,
+        "withOptionalPrefix": 7
+      },
+      "hard": {
+        "direct": 3,
+        "withOptionalPrefix": 6
+      }
+    },
+    "cases": [
+      {
+        "difficulty": "easy",
+        "recipeLabels": "ACE",
+        "mainCost": {
+          "food": 160,
+          "wood": 160,
+          "gold": 0,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "ACF",
+        "mainCost": {
+          "food": 140,
+          "wood": 130,
+          "gold": 60,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "ADE",
+        "mainCost": {
+          "food": 140,
+          "wood": 80,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "ADF",
+        "mainCost": {
+          "food": 120,
+          "wood": 50,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "BCE",
+        "mainCost": {
+          "food": 70,
+          "wood": 140,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "BCF",
+        "mainCost": {
+          "food": 50,
+          "wood": 110,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "BDE",
+        "mainCost": {
+          "food": 50,
+          "wood": 60,
+          "gold": 140,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "easy",
+        "recipeLabels": "BDF",
+        "mainCost": {
+          "food": 30,
+          "wood": 30,
+          "gold": 200,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "ACE",
+        "mainCost": {
+          "food": 160,
+          "wood": 160,
+          "gold": 0,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "aid",
+          "repair",
+          "fund-main",
+          "copy-west",
+          "copy-north",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "ACF",
+        "mainCost": {
+          "food": 140,
+          "wood": 130,
+          "gold": 60,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "ADE",
+        "mainCost": {
+          "food": 140,
+          "wood": 80,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "ADF",
+        "mainCost": {
+          "food": 120,
+          "wood": 50,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "BCE",
+        "mainCost": {
+          "food": 70,
+          "wood": 140,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "aid",
+          "fund-main",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "BCF",
+        "mainCost": {
+          "food": 50,
+          "wood": 110,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "BDE",
+        "mainCost": {
+          "food": 50,
+          "wood": 60,
+          "gold": 140,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "standard",
+        "recipeLabels": "BDF",
+        "mainCost": {
+          "food": 30,
+          "wood": 30,
+          "gold": 200,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": false,
+        "completeMainPlusSevenWitness": null,
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "ACE",
+        "mainCost": {
+          "food": 160,
+          "wood": 160,
+          "gold": 0,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": false,
+        "completeMainPlusSevenWitness": null,
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "ACF",
+        "mainCost": {
+          "food": 140,
+          "wood": 130,
+          "gold": 60,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "aid",
+          "repair",
+          "fund-main",
+          "copy-west",
+          "copy-north",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "ADE",
+        "mainCost": {
+          "food": 140,
+          "wood": 80,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "aid",
+          "fund-main",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "ADF",
+        "mainCost": {
+          "food": 120,
+          "wood": 50,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "BCE",
+        "mainCost": {
+          "food": 70,
+          "wood": 140,
+          "gold": 70,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "aid",
+          "repair",
+          "fund-main",
+          "copy-west",
+          "copy-north",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "BCF",
+        "mainCost": {
+          "food": 50,
+          "wood": 110,
+          "gold": 130,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "BDE",
+        "mainCost": {
+          "food": 50,
+          "wood": 60,
+          "gold": 140,
+          "stone": 0
+        },
+        "directAffordable": true,
+        "allSevenAfterImmediateFunding": true,
+        "reachableWithSomeOptionalPrefix": true,
+        "completeMainPlusSevenWitness": [
+          "fund-main",
+          "aid",
+          "copy-west",
+          "copy-north",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spatialPredicatesAssumedSuccessful": true
+      },
+      {
+        "difficulty": "hard",
+        "recipeLabels": "BDF",
+        "mainCost": {
+          "food": 30,
+          "wood": 30,
+          "gold": 200,
+          "stone": 0
+        },
+        "directAffordable": false,
+        "allSevenAfterImmediateFunding": null,
+        "reachableWithSomeOptionalPrefix": false,
+        "completeMainPlusSevenWitness": null,
+        "spatialPredicatesAssumedSuccessful": true
+      }
+    ],
+    "limitations": "financial reachability assuming actor/spatial success; no game duration, native completion or played difficulty"
+  },
+  "counts": {
+    "mainServices": 3,
+    "mainRecipes": 6,
+    "mainWorkers": 3,
+    "mainRecipients": 3,
+    "secondaryTasks": 7,
+    "optionalOriginalsAndObjects": 9,
+    "screens": 44,
+    "textVariants": 88,
+    "financialCases": 24
+  },
+  "workerAssignment": {
+    "model": "minimax-m3.1-flash-preview",
+    "proposal": "d00002",
+    "slice": "S4",
+    "generation": 2,
+    "topic": "yavneh-blueprint-materialization",
+    "files": [
+      "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-candidate.json",
+      "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg",
+      "docs/qa/campaign-design/yavneh-blueprint-materialization-report.md"
+    ],
+    "operations": "Actual typed project_batch, build_fulfillment_dossier and audit_dossier, with candidately labelled regional profile passed explicitly. No source campaign insertion, canonical geography/sources/IDs, native export or global count change.",
+    "delivery": "Focused real-pipeline evidence, exact files/Cartago commit, then stop for independent review before heavy gates/publication."
+  },
+  "fullCanonicalDossier": false,
+  "newDossiers": 0,
+  "nativeExecuted": false,
+  "gameVerified": false
+}

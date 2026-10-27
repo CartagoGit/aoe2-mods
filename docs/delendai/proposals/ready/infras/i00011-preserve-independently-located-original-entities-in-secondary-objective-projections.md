@@ -16,9 +16,11 @@ Resolve the reusable gap between per-original physical origins and single-origin
 
 ## why
 
-The reviewed Yavneh world candidate has two distinct working-record carriers at record-west and record-north. `tools/design/secondary.py` projects one placement.originHub into every original and then requires every initialHub to equal reachability.originHub. The typed `packages/gameplay-validation/scenario-capability.validator.ts` enforces that same invariant. The strict secondary schema permits one reachability.originHub and no invented per-origin metadata. Patching Python alone, silently changing the meaning of originHub, or flattening one pickup into another would hide the problem.
+The initial Yavneh world candidate placed a combined two-record task at record-west and record-north. `tools/design/secondary.py` projects one placement.originHub into every original and then requires every initialHub to equal reachability.originHub. The typed `packages/gameplay-validation/scenario-capability.validator.ts` enforces that same invariant. The strict secondary schema permits one reachability.originHub and no invented per-origin metadata. Patching Python alone, silently changing the meaning of originHub, or flattening one pickup into another would hide the problem.
 
-This also concerns future distributed archives, dispersed aid pickup and independently consenting civilian originals. This proposal records a genuine missing reusable operation; it does not declare a historical scenario implemented. The world candidate and financial witness remain useful while composition is blocked.
+Yavneh has since been explicitly redesigned as seven independent secondary quests, including two one-original copy tasks supported by the existing full-profile v3 contract. This proposal does not block that revised design and is not authority to alter a current validator. A truly combined future multi-origin transaction still requires its own proven need and architectural decision.
+
+This general investigation also concerns future distributed archives, dispersed aid pickup and independently consenting civilian originals. This proposal records a genuine missing reusable operation; it does not declare a historical scenario implemented. The world candidate and financial witness remain useful while composition is blocked.
 
 ## non-goals
 
