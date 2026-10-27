@@ -21,3 +21,10 @@ The [Geological Survey of Israel report GSI/08/2014](https://www.gov.il/BlobFold
 ## Decision carried forward
 
 Both route candidates still require a measured overlay and topographic interpretation. General westward drainage does not locate a safe footpath through each supplied coordinate. The map builder receives no licence to fill Hinnom, turn Kidron into navigable water, add a Roman bridge without evidence or substitute a later mapped street for an ancient road. The draft binding remains blocked for a historical build, while the native household controller can be tested on an explicitly synthetic physical fixture.
+
+
+## Complete design-frame surface reference
+
+The previous modern crop covered the activity cluster, not the entire padded 340 × 340 frame. The [new full-frame derivative](24-modern-surface-frame-crop.tif), [processing metadata](24-modern-surface-frame-metadata.json) and [scientific preview](24-modern-surface-frame-preview.png) cover every cell of the existing cosine-corrected frame. It is a lossless 763 × 649 source window with 495,187 surface samples from the already pinned Copernicus tile. Its source hash, exact integer window, WGS84 transform, complete-cell bounds and output/preview hashes are recorded. An alternative Pillow TIFF decoder reproduced every sample read by Rasterio; this is a decoder check by the same architect, not a separate model review.
+
+No values were filled, smoothed, resampled or converted to native elevation. Buildings and vegetation remain part of this modern DSM. The colours encode surface height, not water. This closes the data-coverage gap for later terrain inspection; it does not close the ancient-ground, route, native-footprint or engine gates. The existing source and licence obligations apply, with modification, liability and no-endorsement notices retained in the metadata and original licence note. The new window is a derivative of an existing source, not another registered historical reference.
