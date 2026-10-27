@@ -2,10 +2,14 @@
 id: i00012
 title: "Reuse one strict shared profile projection within each fulfillment validation call"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: general
 date: 2026-10-27
+last-transition-id: d7195e80-8a5e-4d53-bbc7-ba3e1bb0793d
+last-correlation-id: d7195e80-8a5e-4d53-bbc7-ba3e1bb0793d
+last-transition-from: ready
+last-transition-at: 2026-10-27T23:53:53.278Z
 ---
 
 # i00012 — Reuse one strict shared profile projection within each fulfillment validation call
