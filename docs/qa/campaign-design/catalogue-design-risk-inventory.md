@@ -8,7 +8,7 @@ Documentary triage of the authored dossier data for d00002/S11. This is not a ga
 | DelendAI session | `7005c2a9` (own session, issued by `delendai work enter`) |
 | Work unit | `refs/heads/wip/minimax-m3.1-flash-preview/implement/d00002-S11-g11/catalogue-design-risk-inventory` |
 | Worktree | `.cache/delendai/.worktrees/minimax-m3.1-flash-preview-d00002-S11-g11` |
-| Source commit | `6d824b010d001b1c11f16d06102cf484145c1d0d` (develop, after the Jerusalem source refinement and the shared native runtime extraction were landed) |
+| Source commit | `4ed41d3cf1ca389ea165e7c4062e2740f4ce35a2` (develop, after the Jerusalem source refinement, the shared native runtime extraction and the shared civilian native runtime handoff were landed) |
 | Date | 2026-10-27 |
 | Machine-readable companion | [`catalogue-design-risk-inventory.json`](catalogue-design-risk-inventory.json) |
 | Git author and committer | Cartago `<cartago.relaxingcup@gmail.com>` |

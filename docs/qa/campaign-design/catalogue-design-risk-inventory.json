@@ -6,7 +6,7 @@
     "method": "one-off read-only analysis of the authored dossier sources; no repository tool, schema or dependency was added or mirrored",
     "unitRef": "refs/heads/wip/minimax-m3.1-flash-preview/implement/d00002-S11-g11/catalogue-design-risk-inventory",
     "session": "7005c2a9",
-    "sourceCommit": "6d824b010d001b1c11f16d06102cf484145c1d0d"
+    "sourceCommit": "4ed41d3cf1ca389ea165e7c4062e2740f4ce35a2"
   },
   "scope": {
     "definition": "Every materialized episodes[] dossier of the two campaigns that carry full dossier sources. episodeSelection[] and episodeBlueprints[] are never counted as dossiers.",
