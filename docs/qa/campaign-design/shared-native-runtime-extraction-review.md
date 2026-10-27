@@ -13,4 +13,4 @@ Luna's recorded regression evidence:
 
 Logs: `/tmp/i00003-s3-shared-native-validate.log` and `/tmp/i00003-s3-shared-native-test-export.log`. Root independently performed source/AST inspection; the test results above are attributed to the implementer and were not rerun by the reviewer.
 
-No P1/P2 remains for this three-file refactor. Official publication and its gate are a separate runtime action. No historical approval, native household compiler, new terrain, game execution, save/load observation, performance calibration or general composed capability is certified by this report. The existing private opening kit is immutable.
+No P1/P2 remains for this three-file refactor. Official publication subsequently integrated the product at `dfeae904d98c2beec1f189a28546b005f4b4f05e`; the install/validate gate passed against `1a286985`. The worker then retired its own unit officially. No historical approval, native household compiler, new terrain, game execution, save/load observation, performance calibration or general composed capability is certified by this report. The existing private opening kit is immutable.
