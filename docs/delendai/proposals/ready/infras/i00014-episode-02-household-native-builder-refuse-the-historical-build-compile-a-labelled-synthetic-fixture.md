@@ -32,13 +32,15 @@ The architect's episode-02 decision and layout review name a missing capability 
 - global_gate: e2e
 
 ### S1 — Episode-02 household builder with historical-build refusal and a labelled synthetic compile
-- **Status**: pending
+- **Status**: review
 - **Files**: `tools/python/build_household_episode.script.py`, `tests/fixtures/native-history/test_native_household_controller.py`, `docs/qa/campaign-design/household-ledger-builder.md`
 - **Gate**: e2e
 - acceptance:
   - "Verify the authored source through the binding's own sourceSha256, campaignId, episodeId and per-difficulty starting-resource vectors, and fail closed on any mismatch instead of continuing with a changed source."
   - "Refuse a historical build by reporting the binding's own named blockers (no approved route, no native elevation, no footprint inspection, binding not approved for a historical build) and leave the builder with no code path that can emit a historical Jerusalem campaign, container or mod."
   - "Compile the household controller on a separately labelled synthetic physical fixture derived from the binding's semantics, reusing the existing household adapter, shared base factory and optional-circuit adapter; keep the nonhistorical label in the scenario identity, the messages and the receipt, and record the real blockers, the synthetic label and the open game and historical gates."
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ## acceptance
 
