@@ -81,12 +81,21 @@ def build_optional_objectives(scenario, authored):
     for number, item in enumerate(authored, 1):
         kind = item['kind']
         has_reward_override = 'resourceReward' in item
+        has_cost_override = 'resourceCost' in item
         if has_reward_override and kind not in ('aid', 'extract', 'repair', 'trade'):
             raise ValueError('resourceReward is only supported for aid, extract, repair and trade')
+        if has_cost_override and kind not in ('repair', 'trade', 'extract'):
+            raise ValueError('resourceCost is only supported for repair, trade and extract')
         reward = REWARDS[kind]
         if has_reward_override:
             normalized = resource_amounts(item['resourceReward'])
             reward = {key: normalized[key] for key in RESOURCES if normalized[key]}
+        if has_cost_override:
+            normalized_cost = resource_amounts(item['resourceCost'])
+            if not any(normalized_cost.values()):
+                raise ValueError('Explicit resourceCost must contain a positive amount')
+            if item.get('instruction') is None:
+                raise ValueError('Explicit resourceCost requires a bilingual instruction')
         oid = f'side-{number}'
         ns = f'{scenario["id"]}.{oid}'
         origin = 'hub-2' if kind == 'repair' else 'hub-1' if kind in ('aid', 'guide', 'trade') else 'hub-3'
@@ -140,7 +149,11 @@ def build_optional_objectives(scenario, authored):
         elif kind == 'repair':
             requirements.append({'kind': 'entity-health', 'entity': entities[0]['id'],
                                  'health': 'full', 'paymentReceipt': f'{ns}.payment',
-                                 'restoration': 'atomic 50-wood repair transaction restores full health; no additional engine repair charge'})
+                                 'restoration': (
+                                     'atomic authored-cost repair transaction restores full health; no additional engine repair charge'
+                                     if has_cost_override else
+                                     'atomic 50-wood repair transaction restores full health; no additional engine repair charge'
+                                 )})
         else:
             destinations = {e['id']: zones[i % len(zones)]['id'] for i, e in enumerate(entities)}
             requirements.append({'kind': 'entity-arrival', 'entities': [e['id'] for e in entities],
@@ -148,9 +161,11 @@ def build_optional_objectives(scenario, authored):
                                  'aliveAtDelivery': True, 'oncePerEntity': True,
                                  'noSubstitutes': True, 'initialPlacementDoesNotCount': True})
         cost = COSTS.get(kind, {})
+        if has_cost_override:
+            cost = {key: amount for key, amount in normalized_cost.items() if amount}
         if cost:
             requirements.append({'kind': 'atomic-payment', 'resources': cost,
-                                 'receipt': f'{ns}.payment', 'afterArrival': kind == 'trade',
+                                 'receipt': f'{ns}.payment', 'afterArrival': kind in ('trade', 'extract'),
                                  'once': True, 'protectedRecoveryCannotBeSpent': True})
         effect_kind, target = EFFECTS[kind]
         effect = {'kind': effect_kind, 'target': target, 'resources': dict(reward),
