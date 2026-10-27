@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-27",
+  "author": "gpt-6",
+  "campaignId": "faith-origins",
+  "episodeId": "02-civilian-refuge-jerusalem",
+  "sourcePath": "docs/design/odysseys/faith-origins.json",
+  "sourceSha256": "f86bcecfc918beb8e0e94c9832d188ad619fb9693b5b8540b109afa046c417c2",
+  "status": "architect decisions and prospective acceptance; source amendment and native implementation not yet delivered",
+  "preserveRequirements": [
+    "o1/req-1",
+    "o2/req-1",
+    "o3/req-1"
+  ],
+  "proposedExistingContractAddition": {
+    "objective": "o3",
+    "requirement": {
+      "id": "req-2",
+      "kind": "entity-state",
+      "state": "alive-and-held",
+      "entities": [
+        "faith-origins.02-civilian-refuge-jerusalem.households-1",
+        "faith-origins.02-civilian-refuge-jerusalem.households-2",
+        "faith-origins.02-civilian-refuge-jerusalem.households-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-4",
+        "faith-origins.02-civilian-refuge-jerusalem.households-5",
+        "faith-origins.02-civilian-refuge-jerusalem.households-6",
+        "faith-origins.02-civilian-refuge-jerusalem.households-7",
+        "faith-origins.02-civilian-refuge-jerusalem.households-8"
+      ],
+      "requiredCount": 6,
+      "oncePerEntity": true,
+      "destinations": {
+        "faith-origins.02-civilian-refuge-jerusalem.households-1": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-2": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-3": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-4": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-5": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-6": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-7": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+        "faith-origins.02-civilian-refuge-jerusalem.households-8": "faith-origins.02-civilian-refuge-jerusalem.destination-3"
+      },
+      "eligibleEntitiesFromLedger": {
+        "objective": "o1",
+        "ledger": "received-households"
+      }
+    },
+    "implementationStatus": "not added to source or native compiler by this document",
+    "schemaChange": false,
+    "globalReducerChange": false
+  },
+  "cases": [
+    {
+      "id": "identity-intersection",
+      "setup": "Court receives H1–H6; refuge receives H3–H8; all survive.",
+      "expected": "Only H3–H6 intersect: four, so no final latch.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "dynamic-ledger",
+      "setup": "O1 completes with H1–H6; H7 visits court afterward.",
+      "expected": "Court ledger grows to include H7; it is not frozen to the first six.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "any-six-of-eight",
+      "setup": "All eight visit court; any six later qualify at refuge and remain alive.",
+      "expected": "The six qualifying original identities can complete; no named-first-six restriction.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "third-loss",
+      "setup": "Three of the original eight are destroyed before the main terminal latch.",
+      "expected": "Five remain; defeat wins before victory, even if arrival facts remain.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "two-losses",
+      "setup": "Two originals are destroyed; the other six visit both courts and remain alive.",
+      "expected": "The declared survival margin permits completion.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "historical-ghosts",
+      "setup": "All eight visit court; H1–H6 visit refuge; H1 and H2 are then destroyed while H7/H8 remain outside final arrival.",
+      "expected": "Existing arrived req-1 alone can still count six. Proposed alive-and-held req-2 must count only four and prevent victory.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "latched-before-late-deaths",
+      "setup": "Six originals have arrived/held and o3 is latched; two delivered originals are then destroyed while H7/H8 alive outside refuge maintain global survivor6; a reference tick follows.",
+      "expected": "Reference latch alone may still permit victory: do not claim automatic terminal revalidation. Bounded native host must not expose this intermediate state: one guarded XS invocation checks fresh qualified living count and loss before atomically writing o3 latch plus terminal. Captions follow terminal.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "late-recovery-without-resurrection",
+      "setup": "After historical-ghosts, surviving H7/H8 also visit refuge.",
+      "expected": "Six living eligible originals now qualify; no dead ID is resurrected or substituted.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "early-final-visit",
+      "setup": "A living original visits final refuge before payment or before its court visit, then completes both historical arrival facts.",
+      "expected": "Historical arrival facts are cumulative under the selected existing semantics. The main sequence still requires O1 and O2; no unimplemented departure/phase-order condition is asserted.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "leave-refuge-alive",
+      "setup": "Six eligible originals arrive alive and remain alive, but one moves outside the refuge circle.",
+      "expected": "This selected cumulative delivery semantics does not require simultaneous current presence; do not add that hidden condition.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "destroyed-original-replacement",
+      "setup": "A new native unit of the same type reaches both destinations.",
+      "expected": "It never becomes an original household or inherits its arrival/held flags.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "garrison-observation",
+      "setup": "An original is garrisoned inside a building whose location is in a receiving circle.",
+      "expected": "Spatial native helper must reject it as an outdoor circle arrival; no timer/type-count fallback.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "optional-identities",
+      "setup": "Two visiting optional households arrive at the final destination.",
+      "expected": "No main household, eligibility or survival counter changes.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "food-underfunded",
+      "setup": "Authorize 240 food with only 239 spendable food.",
+      "expected": "No partial debit, receipt, protected-recovery use or phase advance.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "food-exact",
+      "setup": "Authorize 240 food with exactly 240 spendable food after O1.",
+      "expected": "One atomic debit and persistent receipt; repeated selection/save-load cannot debit again.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "all-optionals-skipped",
+      "setup": "Run each authored starting profile and skip every secondary.",
+      "expected": "Main food240 is affordable: easy162 / standard110 / hard57 food remains; no optional reward is mandatory.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "all-optional-costs",
+      "setup": "Pay main240food and optional50wood/50gold, without optional income.",
+      "expected": "Stocks remain nonnegative in all authored profiles; reserves are not included as spendable stock.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "terminal-and-side",
+      "setup": "A qualifying final delivery, third household loss and optional payout candidate occur in one engine step.",
+      "expected": "Evaluate irrecoverable loss first; one terminal latch; close all available side actions before any later reward. Actual scheduling still needs game evidence.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "save-load",
+      "setup": "Save/load before/after an arrival, late ledger addition, payment, held observation, optional reward and main terminal.",
+      "expected": "Original handles, both arrival sets, held facts, receipts, reserves and terminal survive; no replay payouts or frozen cohort.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "map-certainty",
+      "setup": "Builder is given either modern-surface route comparison.",
+      "expected": "Reject certification: these are hypotheses, not archaeological paths, a native raster or authorized bridges.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    },
+    {
+      "id": "locale-and-continuity",
+      "setup": "Play EN and es-ES variants and reach the end.",
+      "expected": "Common attributed fact then Miriam; next canonical episode03 recommendation, no campaign completion or mandatory predecessor lock.",
+      "nativeExecuted": false,
+      "gameExecuted": false
+    }
+  ],
+  "referenceInspection": {
+    "agent": "gpt-6-luna",
+    "scope": "valid artificial v2 profile and focused ephemeral traces; not this historical dossier compiled into runtime",
+    "evidence": "Luna reported validateScenarioCapability=[] and arrived true / alive-and-held false after two delivered originals were destroyed; four existing focused ledger/presence tests also passed.",
+    "ephemeralTracePath": "/tmp/held-trace.ts",
+    "independentHistoricalApproval": false,
+    "terminalLimitation": "Independent GPT-6.1 inspection found no general alive-and-held terminal revalidation after objective latch. The native host atomic-commit requirement is an explicit implementation acceptance, not an existing generic reducer guarantee."
+  },
+  "nativeImplemented": false,
+  "gameVerified": false,
+  "newDossiers": 0,
+  "independentDesignReview": {
+    "reviewer": "gpt-6.1-sol",
+    "date": "2026-10-27",
+    "scope": "four architecture/acceptance/modern-surface comparison files only; read-only independent review",
+    "result": "No P1/P2 remaining after the terminal freshness design correction",
+    "verified": [
+      "21 prospective native acceptance cases; not executed",
+      "648 DSM samples exact against pinned raster",
+      "source/DSM/PNG SHA-256 and three path lengths",
+      "existing reference requirement semantics and terminal latch limitation",
+      "historical source qualifications and unapproved route status"
+    ],
+    "fullSliceApproval": false,
+    "nativeImplementationReviewed": false,
+    "gameVerified": false
+  }
+}
