@@ -29,6 +29,12 @@ El build intermedio es determinista. Los binarios del parser pueden incluir meta
 
 Lee [plan](docs/production/plan.md), [arquitectura](docs/architecture/overview.md), [comandos](docs/guides/development.md), [preparación de contenido](docs/guides/staging.md), [capacidades](docs/research/aoe2-capabilities.md), [auditoría](docs/qa/audit.md) y [traspaso](docs/handoffs/MINIMAX-M3.1-START.md). Los archivos de `build/`, `dist/`, `.venv/` y `.cache/` son regenerables y no se editan.
 
+## Primera misión histórica privada
+
+Ya se ha generado la apertura de **Embers of the Covenant**, Cesarea: tres objetivos principales y seis secundarios, con seis variantes EN/es-ES × easy/standard/hard. La [guía de instalación y juego](docs/handoffs/PRIVATE-CAESAREA-OPENING.md) y el [recibo de compilación](docs/qa/campaign-design/caesarea-private-opening-build.json) identifican los archivos privados y sus hashes. El código está integrado en `e443aaaa` y la revisión técnica acotada en `6e1245e4`. Pasan 35 pruebas nativas enfocadas y 158 pruebas Bun; las seis variantes pasan escritura/lectura nativa, XS y extracción del contenedor.
+
+Es un prototipo de un episodio, con carga y gameplay en AoE2 pendientes. No constituye una campaña histórica completa ni habilita la exportación pública general de perfiles v2/v3. Las cifras de diseño siguen siendo 64 dossiers y 214 selecciones pendientes. Continuamos el segundo episodio y el diseño restante mientras se prueba esta misión.
+
 ## Catálogo preparado por el arquitecto
 
 El alcance vigente son [nueve odiseas y 278 episodios seleccionados](docs/design/odyssey-selections.md), organizados en cinco actos por campaña. El catálogo tiene 64 dossiers de diseño en borrador (30 de faith-origins y 34 de imperial-church), 214 selecciones sin dossier, 2.645 pantallas bilingües y 398 objetivos secundarios. Constantinopla380 es el dossier ID 34, orden 33; su plan de mundo auxiliar y perfil no certifican mapa jugable, revisión histórica ni ejecución nativa. Siguen pendientes la revisión histórica/editorial, el terreno navegable, la calibración en AoE2 y toda aprobación ampliada. No se autoriza autoría histórica por completar los pilotos técnicos. i00008/S3 conserva la compatibilidad legacy por registro y permite el despacho v3 opt-in; el informe regenerado tiene 64 filas, 54 candidatos estáticos y 63 casos con presupuesto accesible idéntico entre dificultades. No habilita exportación nativa.

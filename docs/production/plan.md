@@ -83,3 +83,10 @@ Recopilación visual: se añade un preview del levantamiento de Jerusalén 1864�
 ## Prioridad del propietario: primera campaña jugable en paralelo
 
 El 26 de octubre el propietario aclara que el objetivo es avanzar una primera campaña real mientras el arquitecto completa diseño y coordina MiniMax/Luna. El embarque del diagnóstico es una observación auxiliar, no una secuencia de pruebas triviales que deba bloquear ese trabajo. El [plan de entrega progresiva](../handoffs/FIRST-CAMPAIGN-VERTICAL-DELIVERY.md) comienza por faith-origins/01-administrative-records-caesarea. Se conserva el alcance de campaña independiente y la revisión por episodio; no se espera a cerrar los 214 dossiers para producir una primera iteración privada, ni se presenta esa iteración como la campaña completa.
+
+
+## Primera misión histórica privada — 27 de octubre de 2026
+
+El cambio de prioridad del propietario ya tiene un producto concreto: [Cesarea, apertura de la primera campaña](../handoffs/PRIVATE-CAESAREA-OPENING.md), con tres objetivos principales, seis secundarios y seis variantes EN/es-ES × easy/standard/hard. El código `c55c3bd` se integró en `e443aaaa`; la revisión independiente acotada está integrada en `6e1245e4`. El [recibo](../qa/campaign-design/caesarea-private-opening-build.json) conserva hashes del escenario, contenedor, ZIP por variante y kit privado. Pasan 35 pruebas nativas enfocadas y 158 pruebas Bun, más lectura/escritura y XS de las seis variantes. Ninguna de esas evidencias es una partida en AoE2.
+
+El prototipo no habilita el exportador público v2/v3 ni cierra los slices amplios. Quedan la prueba real de la misión, guardado/carga, rutas, interfaz y calibración; es una apertura civil sin combate ni plazo secreto. Mientras se prueba, el arquitecto diseña el episodio de Jerusalén y el resto de odiseas, MiniMax revisa mecánicamente los borradores existentes con paquete cerrado y Luna aporta investigación/semántica. El [reparto vigente](../handoffs/LLM-WORK-ALLOCATION.md) mantiene 64 dossiers/214 pendientes/2.645 pantallas/398 secundarios/50 referencias; un prototipo y sus seis variantes no crean seis episodios ni una campaña completa.

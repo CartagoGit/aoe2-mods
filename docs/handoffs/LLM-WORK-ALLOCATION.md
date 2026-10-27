@@ -1,6 +1,6 @@
 # Reparto de trabajo y volumen pendiente
 
-Corte: 26 de octubre de 2026. Instrucción del propietario: el arquitecto decide y revisa; delega recopilación y materialización a Luna o MiniMax según disponibilidad. Se trabaja en paralelo por paquetes cerrados. Este documento describe responsabilidades y evidencia, no implementa una cola: recuperar siempre el estado del DelendAI conectado y sus claims/unidades.
+Corte actualizado: 27 de octubre de 2026. Instrucción del propietario: el arquitecto decide y revisa; delega recopilación y materialización a Luna o MiniMax según disponibilidad. Se trabaja en paralelo por paquetes cerrados. Este documento describe responsabilidades y evidencia, no implementa una cola: recuperar siempre el estado del DelendAI conectado y sus claims/unidades.
 
 ## Volumen de diseño histórico
 
@@ -84,3 +84,19 @@ Luna implementó el paquete naval en `223740c7`, integrado por gate en `8f6687f3
 Root integró además `7361d603`: Yavneh interior frente a su puerto, cautelas de fuentes y seis pares de texto fuente de narración, entrada y continuidad, revisados en alcance por Luna. No es el dossier 65. El corte ampliado conserva 64 dossiers, 214 pendientes, 2.645 pantallas, 398 secundarios y 50 referencias. La única referencia local nueva de esta interacción sigue siendo el plano de 1865. El kit naval privado de 400 permite observar la base mientras continúa el diseño; juego verificado sigue falso. Ninguna nueva campaña histórica queda completamente diseñada o aprobada para materialización por este cierre.
 
 Siguiente trabajo del arquitecto: cerrar controles, huellas, rosters finitos y perfiles de Jerusalén 70; convertir Yavneh en un dossier individual completo, resolver los cinco casos económicos concretos y continuar los 214 dossiers pendientes. Los cinco casos de revisión pertenecen a los 64 existentes y no restan de los 214 nuevos. Los trabajadores reciben el próximo paquete cuando esas decisiones estén cerradas; el de presencia permanece bloqueado por infraestructura nativa. No se deja una asignación ficticia activa por tener un documento.
+
+
+## Corte vigente: primer episodio nativo entregado
+
+El prototipo de Cesarea ya tiene seis variantes privadas, tres objetivos principales y seis secundarios, con [guía](PRIVATE-CAESAREA-OPENING.md) y [hashes](../qa/campaign-design/caesarea-private-opening-build.json). El producto de código `c55c3bd` quedó integrado en `e443aaaa`; su revisión independiente acotada se documentó en `6e1245e4`. MiniMax terminó la extracción reutilizable de la base nativa; Luna terminó los helpers espaciales y transaccionales, y las correcciones de fuente/binding; el arquitecto terminó su integración y empaquetado. El subconjunto privado no aprueba los slices amplios ni habilita el exportador público compuesto. Se mantienen 0 misiones históricas con prueba completa en el juego.
+
+| Rol | Volumen pendiente en este corte | Trabajo que puede avanzar en paralelo |
+|---|---|---|
+| Arquitecto | 214 nuevos dossiers; revisión/corrección de los 64; cierre de geografía, dificultad, continuidad y capacidades nativas que falten. La calibración de la apertura y el diseño físico/semántico de Jerusalén siguen abiertos. | Decisiones del episodio siguiente, fuentes, rutas y contratos mientras se prueba la apertura y los trabajadores ejecutan paquetes cerrados. |
+| MiniMax M3.1 | Materialización gradual de los 278 episodios, compartida con Luna. Hay 1 prototipo privado, 0 campañas históricas completas y 0 episodios con prueba completa del motor. Esos 278 no se suman a los 214 de diseño. | Inventario mecánico de riesgos de los 64 borradores, conforme al paquete cerrado asignado; después, implementación del siguiente componente decidido. |
+| Luna | Recopilación y materialización del mismo pool, sin cuota separada prometida ni número adicional de escenarios. | Ya terminó el inventario de Jerusalén y la consulta arqueológica; inspecciona ahora las semánticas concretas del ledger de familias. Recibe nuevas fuentes o código solo con alcance explícito. |
+| GPT-6.1 / revisión independiente | Revisión de cada producto de root asignado, y veredictos formales cuando se cumpla todo el criterio del slice. | Revisión del kit, hashes y guía sin bloquear el diseño del siguiente episodio. No equivale a ejecutar AoE2. |
+
+El backlog geográfico y las banderas cívicas siguen siendo candidatos de revisión, no una cuenta de fallos de juego. No hay velocidad comparable de producción histórica por interacción; los intervalos de infraestructura no permiten calcular cuántas conversaciones o tokens faltan. Se conserva evidencia por producto y se actualizan los contadores solo al integrar.
+
+Lección operativa incorporada: una generación superior del mismo slice sustituye las unidades anteriores incluso entre agentes. Los trabajos paralelos del mismo slice usan la generación vigente y Files disjuntos; se consulta al runtime antes de abrirlos. Las entregas anteriores de MiniMax y Luna se conservaron y transfirieron oficialmente; no se cambia identidad para publicarlas ni se usa develop manualmente.
