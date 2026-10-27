@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "author": "gpt-6",
+  "classification": "architect source-only opt-in decision and bounded financial evidence; not implemented authoring operation",
+  "proposal": "i00013",
+  "slice": "S1",
+  "financialAnalysisExecuted": true,
+  "factoryOptInExecuted": false,
+  "nativeExecuted": false,
+  "gameVerified": false,
+  "sharedAnalyzer": {
+    "path": "tools/design/finite_allocation.helper.py",
+    "sha256": "25ee4dfe7aab140cdca0d518e4405c5a4cd425de4e49018a470e89674dd9e971",
+    "functions": [
+      "balance",
+      "optional_states"
+    ],
+    "noPresetBuildReport": true
+  },
+  "inputName": "authoredDifficultyAccounts",
+  "mainAndTasksAreArtificial": true,
+  "mandatoryCost": {
+    "food": 20,
+    "wood": 60,
+    "gold": 0,
+    "stone": 0
+  },
+  "replacementPlanningFloor": {
+    "food": 10,
+    "wood": 0,
+    "gold": 0,
+    "stone": 0
+  },
+  "optionalTasks": [
+    {
+      "id": "aid",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 30,
+        "wood": 20,
+        "gold": 10,
+        "stone": 0
+      }
+    },
+    {
+      "id": "copy",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "repair",
+      "cost": {
+        "food": 0,
+        "wood": 30,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 30,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "trade",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 20,
+        "stone": 0
+      },
+      "reward": {
+        "food": 10,
+        "wood": 10,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "scout",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "guide",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "id": "guest",
+      "cost": {
+        "food": 20,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    }
+  ],
+  "positiveCases": [
+    {
+      "difficulty": "easy",
+      "authoredAccount": {
+        "spendable": {
+          "food": 160,
+          "wood": 200,
+          "gold": 90,
+          "stone": 0
+        },
+        "gatherableBank": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "protectedRecovery": {
+          "food": 25,
+          "wood": 10,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReserve": {
+          "food": 40,
+          "wood": 60,
+          "gold": 10,
+          "stone": 0
+        }
+      },
+      "mainCost": {
+        "food": 20,
+        "wood": 60,
+        "gold": 0,
+        "stone": 0
+      },
+      "replacementPlanningFloorWithinSpendable": {
+        "food": 10,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "accessibleWithoutOptionalRewards": {
+        "food": 160,
+        "wood": 200,
+        "gold": 90,
+        "stone": 0
+      },
+      "mainAllSkipFeasible": true,
+      "freeAfterMainAndPlanningFloor": {
+        "food": 130,
+        "wood": 140,
+        "gold": 90,
+        "stone": 0
+      },
+      "allOptionalTasksAffordableAfterMain": true,
+      "optionalStatesReachable": 128,
+      "allSevenOrder": [
+        "aid",
+        "copy",
+        "repair",
+        "trade",
+        "scout",
+        "guide",
+        "guest"
+      ],
+      "freeAfterMainAndSeven": {
+        "food": 150,
+        "wood": 170,
+        "gold": 80,
+        "stone": 0
+      },
+      "endSpendableIncludingUnspentPlanningFloor": {
+        "food": 160,
+        "wood": 170,
+        "gold": 80,
+        "stone": 0
+      },
+      "protectedRecoveryUnchanged": {
+        "food": 25,
+        "wood": 10,
+        "gold": 0,
+        "stone": 0
+      },
+      "rewardReserveRemaining": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalPaid": {
+        "food": 20,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      },
+      "optionalRewards": {
+        "food": 40,
+        "wood": 60,
+        "gold": 10,
+        "stone": 0
+      },
+      "conservationChecked": true,
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+    },
+    {
+      "difficulty": "standard",
+      "authoredAccount": {
+        "spendable": {
+          "food": 120,
+          "wood": 150,
+          "gold": 60,
+          "stone": 0
+        },
+        "gatherableBank": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "protectedRecovery": {
+          "food": 25,
+          "wood": 10,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReserve": {
+          "food": 40,
+          "wood": 60,
+          "gold": 10,
+          "stone": 0
+        }
+      },
+      "mainCost": {
+        "food": 20,
+        "wood": 60,
+        "gold": 0,
+        "stone": 0
+      },
+      "replacementPlanningFloorWithinSpendable": {
+        "food": 10,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "accessibleWithoutOptionalRewards": {
+        "food": 120,
+        "wood": 150,
+        "gold": 60,
+        "stone": 0
+      },
+      "mainAllSkipFeasible": true,
+      "freeAfterMainAndPlanningFloor": {
+        "food": 90,
+        "wood": 90,
+        "gold": 60,
+        "stone": 0
+      },
+      "allOptionalTasksAffordableAfterMain": true,
+      "optionalStatesReachable": 128,
+      "allSevenOrder": [
+        "aid",
+        "copy",
+        "repair",
+        "trade",
+        "scout",
+        "guide",
+        "guest"
+      ],
+      "freeAfterMainAndSeven": {
+        "food": 110,
+        "wood": 120,
+        "gold": 50,
+        "stone": 0
+      },
+      "endSpendableIncludingUnspentPlanningFloor": {
+        "food": 120,
+        "wood": 120,
+        "gold": 50,
+        "stone": 0
+      },
+      "protectedRecoveryUnchanged": {
+        "food": 25,
+        "wood": 10,
+        "gold": 0,
+        "stone": 0
+      },
+      "rewardReserveRemaining": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalPaid": {
+        "food": 20,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      },
+      "optionalRewards": {
+        "food": 40,
+        "wood": 60,
+        "gold": 10,
+        "stone": 0
+      },
+      "conservationChecked": true,
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+    },
+    {
+      "difficulty": "hard",
+      "authoredAccount": {
+        "spendable": {
+          "food": 90,
+          "wood": 120,
+          "gold": 45,
+          "stone": 0
+        },
+        "gatherableBank": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "protectedRecovery": {
+          "food": 25,
+          "wood": 10,
+          "gold": 0,
+          "stone": 0
+        },
+        "optionalReserve": {
+          "food": 40,
+          "wood": 60,
+          "gold": 10,
+          "stone": 0
+        }
+      },
+      "mainCost": {
+        "food": 20,
+        "wood": 60,
+        "gold": 0,
+        "stone": 0
+      },
+      "replacementPlanningFloorWithinSpendable": {
+        "food": 10,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "accessibleWithoutOptionalRewards": {
+        "food": 90,
+        "wood": 120,
+        "gold": 45,
+        "stone": 0
+      },
+      "mainAllSkipFeasible": true,
+      "freeAfterMainAndPlanningFloor": {
+        "food": 60,
+        "wood": 60,
+        "gold": 45,
+        "stone": 0
+      },
+      "allOptionalTasksAffordableAfterMain": true,
+      "optionalStatesReachable": 128,
+      "allSevenOrder": [
+        "aid",
+        "copy",
+        "repair",
+        "trade",
+        "scout",
+        "guide",
+        "guest"
+      ],
+      "freeAfterMainAndSeven": {
+        "food": 80,
+        "wood": 90,
+        "gold": 35,
+        "stone": 0
+      },
+      "endSpendableIncludingUnspentPlanningFloor": {
+        "food": 90,
+        "wood": 90,
+        "gold": 35,
+        "stone": 0
+      },
+      "protectedRecoveryUnchanged": {
+        "food": 25,
+        "wood": 10,
+        "gold": 0,
+        "stone": 0
+      },
+      "rewardReserveRemaining": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalPaid": {
+        "food": 20,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      },
+      "optionalRewards": {
+        "food": 40,
+        "wood": 60,
+        "gold": 10,
+        "stone": 0
+      },
+      "conservationChecked": true,
+      "spatialAndBankAssumptions": "bank0; actor/route/spatial success assumed, not executed"
+    }
+  ],
+  "prospectiveRejectionCases": [
+    {
+      "id": "missing-difficulty",
+      "change": "delete hard",
+      "expected": "reject missing required difficulty",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unknown-difficulty",
+      "change": "add nightmare",
+      "expected": "reject unknown difficulty",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "missing-account",
+      "change": "delete hard.optionalReserve",
+      "expected": "reject missing account",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unknown-account",
+      "change": "add hard.cacheAllowance",
+      "expected": "reject unknown account",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "missing-resource",
+      "change": "delete hard.spendable.stone",
+      "expected": "reject incomplete canonical four-resource vector",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unknown-resource",
+      "change": "add hard.spendable.faith",
+      "expected": "reject unknown resource",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "negative",
+      "change": "hard.gatherableBank.food=-1",
+      "expected": "reject no negative compensation",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "boolean",
+      "change": "hard.spendable.food=true",
+      "expected": "reject boolean",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "fraction",
+      "change": "hard.spendable.food=1.5",
+      "expected": "reject fraction, never truncate",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unsafe",
+      "change": "hard.spendable.food=9007199254740992",
+      "expected": "reject unsafe integer",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "nonfinite",
+      "change": "hard.spendable.food=NaN/Infinity",
+      "expected": "reject non-JSON or nonfinite",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "conflicting-start-alias",
+      "change": "also author startingResources",
+      "expected": "reject ambiguous source",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "conflicting-margin-alias",
+      "change": "also author discretionaryMargin",
+      "expected": "reject ambiguous source",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "recovery-alias",
+      "change": "outside protectedRecoveryStock disagrees with P",
+      "expected": "reject contradictory policy",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "reward-shortfall",
+      "change": "R below exact task reward sum",
+      "expected": "reject reward account",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "reward-excess",
+      "change": "R above exact task reward sum",
+      "expected": "reject unassigned hidden reserve",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "protected-main",
+      "change": "S+B below M+Z, P large enough",
+      "expected": "reject main all-skip feasibility; P excluded",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "reward-main",
+      "change": "S+B below M+Z but aid would fund it",
+      "expected": "reject mandatory optional reliance",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "self-funding",
+      "change": "payment unavailable but its own reward would cover it",
+      "expected": "reject that ordering, no borrowing; other genuine prefix may remain legal",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "missing-task-inputs",
+      "change": "call opt-in difficulty helper without actual objectives",
+      "expected": "reject unavailable real analysis; no preset",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "duplicate-once",
+      "change": "same side ID repeats in input or witness",
+      "expected": "reject ambiguous duplicate; each original once",
+      "executedAgainstOptInFactory": false
+    },
+    {
+      "id": "unapproved-bank",
+      "change": "nonzero B with no approved placed nodes",
+      "expected": "static source can be studied, content/native approval stays blocked",
+      "executedAgainstOptInFactory": false
+    }
+  ],
+  "compatibilityAcceptance": "No authoredDifficultyAccounts => compare complete pre/post outputs for all64current dossiers, including existing v3 branch unchanged. This comparison is an implementation acceptance requirement, not executed by this ADR."
+}
