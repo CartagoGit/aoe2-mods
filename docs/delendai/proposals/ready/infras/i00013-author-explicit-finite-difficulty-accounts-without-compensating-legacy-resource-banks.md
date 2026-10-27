@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: general
 date: 2026-10-27
+shipped-in:
+  - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
 ---
 
 # i00013 — Author explicit finite difficulty accounts without compensating legacy resource banks
