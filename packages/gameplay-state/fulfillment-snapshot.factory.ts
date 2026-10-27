@@ -285,21 +285,20 @@ export function fulfillmentPresent(
   const recipes = selectedRecipes(profile, active.selection);
   if (!recipes) return false;
   let sharedProfile: ReturnType<typeof sharedCapabilityProfile> | undefined;
+  const isCurrentlyPresent = (id: string, receptionZoneId: string) => {
+    if (state.core.entityStates[id] === "destroyed") return false;
+    if (!sharedProfile) sharedProfile = sharedCapabilityProfile(profile);
+    if (!generationReady(sharedProfile, state.core, id)) return false;
+    const observation = state.core.liveSpatialObservation?.entities[id];
+    return (
+      observation?.alive === true && observation.zones.includes(receptionZoneId)
+    );
+  };
   return recipes.every(
     (recipe) =>
       active.generated.includes(recipe.id) &&
-      [recipe.outputEntityId, ...recipe.recipientIds].every(
-        (id) =>
-          state.core.entityStates[id] !== "destroyed" &&
-          generationReady(
-            (sharedProfile ??= sharedCapabilityProfile(profile)),
-            state.core,
-            id,
-          ) &&
-          state.core.liveSpatialObservation?.entities[id]?.alive === true &&
-          state.core.liveSpatialObservation.entities[id]?.zones.includes(
-            recipe.receptionZoneId,
-          ),
+      [recipe.outputEntityId, ...recipe.recipientIds].every((id) =>
+        isCurrentlyPresent(id, recipe.receptionZoneId),
       ),
   );
 }

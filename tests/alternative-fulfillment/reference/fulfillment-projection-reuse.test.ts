@@ -98,7 +98,9 @@ describe("fulfillment projection reuse", () => {
     const missingOutput = structuredClone(state);
     if (!missingOutput.core.liveSpatialObservation)
       throw new Error("Fixture requires live spatial observations");
-    delete missingOutput.core.liveSpatialObservation.entities[outputIds.mealDirect];
+    delete missingOutput.core.liveSpatialObservation.entities[
+      outputIds.mealDirect
+    ];
     expect(fulfillmentPresent(profile, missingOutput)).toBe(false);
 
     const missingRecipient = structuredClone(state);
