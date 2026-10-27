@@ -15,7 +15,7 @@ The second failure was Bun's implicit per-test default, because that test carrie
 
 ## The cause is contention, and the margin was already gone
 
-The architect's own archived validation runs for the same suite record the 95-row test at **23 234 ms**, **25 516 ms** and **28 258 ms** while the machine was otherwise idle. The explicit 30 000 ms budget was therefore already **92 % consumed before any contention**: the test had a margin of roughly 6 % over its own worst recorded baseline, and 4 000 ms over the middle one.
+The architect's own archived validation runs for the same suite record the 95-row test at **23 234 ms**, **25 516 ms** and **28 258 ms** while the machine was otherwise idle. The explicit 30 000 ms budget was therefore already **94.2 % consumed before any contention**: the test had a margin of roughly 6 % over its own worst recorded baseline, and 4 000 ms over the middle one.
 
 The workspace then ran several workers concurrently. The failing runs happened at a load average of **19.03 on 10 cores**, with `bun install`, `biome`, `vitest` and other suites in flight. The same test then took 39 030 ms in isolation, and the lifecycle-checkpoint test took 5 400 ms against a 2 200–3 300 ms baseline — an inflation of roughly 1.5–1.6×, consistent with pure CPU contention and with no change in the code under test.
 
@@ -28,7 +28,7 @@ The reference test file has not changed since `cffa310` (`fix(fulfillment): vali
 | 95 matrix portfolio rows | 23 234 / 25 516 / 28 258 ms | 30 000 ms | **60 000 ms** | 2.12× |
 | load preserves valid lifecycle checkpoints | 2 200–3 301 ms | 5 000 ms (implicit) | **30 000 ms** | 9.1× |
 
-The 60 000 ms budget keeps a **2.1× margin** over the worst recorded idle baseline, so a genuine 2× performance regression (≈ 51 s idle) still fails the test. The 30 000 ms budget matches the value the reference suite's sibling files already use (`tests/maps/geographic-raster.test.ts`, `tests/maps/large-map-diagnostic.test.ts`) and the DelendAI test-convention plugin's own `testTimeout: 30_000`; it is 9.1× the measured baseline and 5.5× the contended measurement.
+The 60 000 ms budget keeps a **2.1× margin** over the worst recorded idle baseline, so the aggregate watchdog would time out beyond60s. It does not detect every2× regression: doubling the worst recorded28.258s baseline gives56.516s, still below60s. The watchdog budget is not a performance-regression acceptance threshold. The 30 000 ms budget matches the value the reference suite's sibling files already use (`tests/maps/geographic-raster.test.ts`, `tests/maps/large-map-diagnostic.test.ts`) and the DelendAI test-convention plugin's own `testTimeout: 30_000`; it is 9.1× the measured baseline and 5.5× the contended measurement.
 
 ## Measured headroom in the same file, left unchanged on purpose
 
@@ -52,3 +52,7 @@ The heaviest test outside this file, `tests/maps/geographic-raster.test.ts` (3 6
 - It says nothing about engine, gameplay, balance, historical or localisation approval. The reference suite remains repository reference behaviour, not native execution.
 
 Commands used to obtain the baselines: `bun test tests/alternative-fulfillment/reference/alternative-fulfillment.test.ts` and `bun run validate` in the shared checkout, with the idle figures read from the architect's archived logs in `.cache/delendai/.worktrees/gpt-6-d00002-S4-g2/.cache/yavneh-typed-design/validate*.log` and the contended figures from the failing runs of 27 October 2026.
+
+## Arithmetic correction — 28 October2026
+
+gpt-6 checked the budget arithmetic while recovering the upstream product. The worst listed28,258ms baseline uses94.2% of30,000ms; a2× increase would fit within60,000ms. These two prose claims were corrected without changing any test, assertion, timeout, matrix row or production code. The earlier observations remain the original implementer's measurements; this correction is not an independent reproduction of the stated host load or a performance approval.
