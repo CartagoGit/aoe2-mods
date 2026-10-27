@@ -3061,8 +3061,8 @@
               31.791
             ],
             "name": {
-              "en": "Western household district",
-              "es-ES": "Barrio doméstico occidental"
+              "en": "Northwestern household gathering",
+              "es-ES": "Reunión de hogares del noroeste"
             },
             "radiusTiles": 12,
             "certainty": "architect fictional activity district within real geography; footprint pending"
@@ -3122,7 +3122,7 @@
             ],
             "mode": "land",
             "widthTiles": 6,
-            "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+            "routePolicy": "proposed alternative land connection between the same districts; intermediate geometry and native pathfinding remain pending; no crossing is implied"
           }
         ],
         "terrainInstructions": "Limestone plateau, southern ravines and eastern ridge. No navigable Kidron river, no Dome of the Rock or Ottoman walls. Household compounds are fictitious and avoid sacred platforms.",
@@ -3467,8 +3467,8 @@
             "o2"
           ],
           "text": {
-            "en": "Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court.",
-            "es-ES": "Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio."
+            "en": "Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved.",
+            "es-ES": "Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida."
           },
           "predicate": {
             "operator": "all",
@@ -3503,13 +3503,44 @@
                   "faith-origins.02-civilian-refuge-jerusalem.households-8": "faith-origins.02-civilian-refuge-jerusalem.destination-3"
                 },
                 "oncePerEntity": true
+              },
+              {
+                "id": "req-2",
+                "kind": "entity-state",
+                "requiredCount": 6,
+                "state": "alive-and-held",
+                "eligibleEntitiesFromLedger": {
+                  "objective": "o1",
+                  "ledger": "received-households"
+                },
+                "entities": [
+                  "faith-origins.02-civilian-refuge-jerusalem.households-1",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-2",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-4",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-5",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-6",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-7",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-8"
+                ],
+                "destinations": {
+                  "faith-origins.02-civilian-refuge-jerusalem.households-1": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-2": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-3": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-4": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-5": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-6": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-7": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+                  "faith-origins.02-civilian-refuge-jerusalem.households-8": "faith-origins.02-civilian-refuge-jerusalem.destination-3"
+                },
+                "oncePerEntity": true
               }
             ],
             "neverUseTimerInstead": true
           },
           "receiptText": {
-            "en": "Only households recorded at the receiving court may count at the final refuge.",
-            "es-ES": "Solo cuentan en el refugio final los hogares registrados en el patio receptor."
+            "en": "Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved.",
+            "es-ES": "Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final."
           },
           "personaReaction": {
             "en": "They are the same people at both gates. A ledger must remember that.",
@@ -3527,8 +3558,8 @@
           "es-ES": "Entrega un único total de 240 de alimento en el patio receptor."
         },
         {
-          "en": "Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court.",
-          "es-ES": "Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio."
+          "en": "Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved.",
+          "es-ES": "Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida."
         }
       ],
       "historicalBrief": {
@@ -4247,8 +4278,8 @@
             "es-ES": "Localiza una ruta terrestre sin hacer navegable el Cedrón."
           },
           "text": {
-            "en": "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-            "es-ES": "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+            "en": "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created, no terrain is changed, and the main receiving districts are known without this task.",
+            "es-ES": "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -4304,7 +4335,7 @@
           "effects": [
             {
               "kind": "mark-alternative-route",
-              "target": "relief surveyed land corridor",
+              "target": "relief alternative land-corridor information",
               "resources": {},
               "onceFlag": "02-civilian-refuge-jerusalem.side-5.rewarded",
               "funding": "reserved-optional-stock",
@@ -4389,8 +4420,8 @@
             "es-ES": "Los viajeros opcionales no pueden completar el registro principal."
           },
           "text": {
-            "en": "Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-            "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+            "en": "Bring both voluntary visiting household groups alive to the western guest reception. Benefit: 100 food, 25 gold, once.",
+            "es-ES": "Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes. Ventaja: 100 de alimento, 25 de oro, una vez."
           },
           "mandatory": false,
           "activation": "available from scenario start; known requirement and benefit shown in optional goals",
@@ -5092,8 +5123,8 @@
           "id": "o3-goal",
           "key": "scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-goal",
           "text": {
-            "en": "Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court.",
-            "es-ES": "Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio."
+            "en": "Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved.",
+            "es-ES": "Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida."
           },
           "condition": "phase-3 active",
           "narrator": "none",
@@ -5101,21 +5132,23 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court."
+              "Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this",
+              "objective is resolved."
             ],
             "es-ES": [
-              "Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio."
+              "Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas",
+              "finales deben seguir con vida."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 10
+          "voiceDurationSecondsEstimated": 18
         },
         {
           "id": "o3-receipt",
           "key": "scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.o3-receipt",
           "text": {
-            "en": "Only households recorded at the receiving court may count at the final refuge.",
-            "es-ES": "Solo cuentan en el refugio final los hogares registrados en el patio receptor."
+            "en": "Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved.",
+            "es-ES": "Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final."
           },
           "condition": "o3 latched once",
           "narrator": "none",
@@ -5123,14 +5156,14 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Only households recorded at the receiving court may count at the final refuge."
+              "Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved."
             ],
             "es-ES": [
-              "Solo cuentan en el refugio final los hogares registrados en el patio receptor."
+              "Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 6
+          "voiceDurationSecondsEstimated": 13
         },
         {
           "id": "o3-reaction",
@@ -5422,8 +5455,8 @@
           "id": "side-5-goal",
           "key": "scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-5-goal",
           "text": {
-            "en": "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-            "es-ES": "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+            "en": "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created, no terrain is changed, and the main receiving districts are known without this task.",
+            "es-ES": "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -5431,16 +5464,16 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain",
-              "known without this task."
+              "Escort the local guide of ridge road guide to the marked road junction. Benefit: Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created,",
+              "no terrain is changed, and the main receiving districts are known without this task."
             ],
             "es-ES": [
-              "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los",
-              "receptores principales ya son conocidos sin esta tarea."
+              "Escolta al guía local de guía del camino de la cresta hasta el cruce señalado. Ventaja: Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su",
+              "trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
-          "voiceDurationSecondsEstimated": 19
+          "voiceDurationSecondsEstimated": 26
         },
         {
           "id": "side-5-complete",
@@ -5490,8 +5523,8 @@
           "id": "side-6-goal",
           "key": "scenario.faith-origins.02-civilian-refuge-jerusalem.odyssey.side-6-goal",
           "text": {
-            "en": "Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
-            "es-ES": "Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+            "en": "Bring both voluntary visiting household groups alive to the western guest reception. Benefit: 100 food, 25 gold, once.",
+            "es-ES": "Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes. Ventaja: 100 de alimento, 25 de oro, una vez."
           },
           "condition": "optional list from start",
           "narrator": "none",
@@ -5499,10 +5532,10 @@
           "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
           "captionSegments": {
             "en": [
-              "Bring both voluntary evacuee groups from two visiting households to the receiving refuge alive. Benefit: 100 food, 25 gold, once."
+              "Bring both voluntary visiting household groups alive to the western guest reception. Benefit: 100 food, 25 gold, once."
             ],
             "es-ES": [
-              "Lleva con vida los dos grupos de evacuados voluntarios de dos hogares visitantes al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+              "Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes. Ventaja: 100 de alimento, 25 de oro, una vez."
             ]
           },
           "nativeSurface": "pending certified SequenceItems/message adapter",
@@ -86264,8 +86297,8 @@
       "districts": [
         {
           "name": {
-            "en": "Western household district",
-            "es-ES": "Barrio doméstico occidental"
+            "en": "Northwestern household gathering",
+            "es-ES": "Reunión de hogares del noroeste"
           },
           "lonLat": [
             35.218,
@@ -86358,8 +86391,8 @@
         },
         {
           "text": {
-            "en": "Bring at least six supplied households to the southern road refuge alive; use the arrival ledger from the court.",
-            "es-ES": "Lleva con vida al menos seis hogares abastecidos al refugio del camino sur; utiliza el registro de llegada del patio."
+            "en": "Bring at least six of the same eight households from the receiving court to the southern-road refuge alive; at least six of those same final arrivals must still be alive when this objective is resolved.",
+            "es-ES": "Lleva con vida al menos seis de los mismos ocho hogares desde el patio receptor hasta el refugio del camino sur; al resolver este objetivo, al menos seis de esas mismas llegadas finales deben seguir con vida."
           },
           "requirements": [
             {
@@ -86372,11 +86405,23 @@
                 "objective": "o1",
                 "ledger": "received-households"
               }
+            },
+            {
+              "id": "req-2",
+              "kind": "entity-state",
+              "group": "households",
+              "requiredCount": 6,
+              "state": "alive-and-held",
+              "destinationHub": "hub-3",
+              "eligibleEntitiesFromLedger": {
+                "objective": "o1",
+                "ledger": "received-households"
+              }
             }
           ],
           "receiptText": {
-            "en": "Only households recorded at the receiving court may count at the final refuge.",
-            "es-ES": "Solo cuentan en el refugio final los hogares registrados en el patio receptor."
+            "en": "Only court-received households count at the refuge, and at least six of those same arrivals must remain alive when the final objective is resolved.",
+            "es-ES": "Solo cuentan en el refugio los hogares recibidos en el patio, y al menos seis de esas mismas llegadas deben seguir con vida al resolver el objetivo final."
           },
           "personaReaction": {
             "en": "They are the same people at both gates. A ledger must remember that.",
@@ -86500,12 +86545,12 @@
           "information": {
             "effect": {
               "kind": "mark-alternative-route",
-              "target": "relief surveyed land corridor",
+              "target": "relief alternative land-corridor information",
               "corridorId": "relief"
             },
             "benefit": {
-              "en": "Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
-              "es-ES": "Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+              "en": "Mark the proposed relief land corridor once; its intermediate geometry and pathfinding remain pending. No enemy is created, no terrain is changed, and the main receiving districts are known without this task.",
+              "es-ES": "Señala una vez el corredor terrestre alternativo propuesto para el auxilio; su geometría intermedia y su trazado siguen pendientes. No se crea ningún enemigo ni se modifica el terreno, y los distritos receptores principales se conocen sin esta tarea."
             }
           }
         },
@@ -86526,7 +86571,14 @@
           "corridorIds": [
             "main",
             "relief"
-          ]
+          ],
+          "placement": {
+            "receivingHub": "hub-1"
+          },
+          "instruction": {
+            "en": "Bring both voluntary visiting household groups alive to the western guest reception.",
+            "es-ES": "Lleva con vida ambos grupos voluntarios de hogares visitantes a la recepción occidental de visitantes."
+          }
         }
       ],
       "terrainInstructions": "Limestone plateau, southern ravines and eastern ridge. No navigable Kidron river, no Dome of the Rock or Ottoman walls. Household compounds are fictitious and avoid sacred platforms.",
@@ -86595,7 +86647,7 @@
           ],
           "mode": "land",
           "widthTiles": 6,
-          "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+          "routePolicy": "proposed alternative land connection between the same districts; intermediate geometry and native pathfinding remain pending; no crossing is implied"
         }
       ],
       "dramatizationNotice": {
