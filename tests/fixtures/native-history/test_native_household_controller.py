@@ -23,10 +23,15 @@ from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
 ROOT = Path(__file__).resolve().parents[3]
 FACTORY = runpy.run_path(str(ROOT / "tools/python/native_scenario.factory.py"))
 ADAPTER = runpy.run_path(str(ROOT / "tools/python/native_household.adapter.py"))
+BUILDER = runpy.run_path(str(ROOT / "tools/python/build_household_episode.script.py"))
 SIGNATURE = runpy.run_path(str(ROOT / "tools/python/native_signature.helper.py"))
 DOSSIER = json.loads(
     (ROOT / "docs/design/odysseys/faith-origins.json").read_text(encoding="utf8")
 )["episodes"][1]
+BINDING_DRAFT = (
+    ROOT
+    / "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/19-native-binding-draft.json"
+)
 
 PREFIX = "faith-origins.02-civilian-refuge-jerusalem"
 HOUSEHOLDS = [f"{PREFIX}.households-{index}" for index in range(1, 9)]
@@ -995,6 +1000,171 @@ class NativeHouseholdControllerTests(unittest.TestCase):
             payment.index("xsPlayerAttribute"), payment.index("xsSetPlayerAttribute")
         )
         self.assertIn("xsSetTriggerVariable", payment)
+
+
+class HouseholdBuilderTests(unittest.TestCase):
+    """The builder refuses a historical build and compiles a labelled synthetic one.
+
+    No engine execution happens here either. The architect's private binding
+    draft stays unapproved and unbuilt: it carries no approved route, no native
+    elevation and no footprint inspection, so the builder reports those gates
+    and compiles the controller on a separately labelled synthetic frame.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.binding_path = BINDING_DRAFT
+        cls.campaign, cls.dossier, cls.binding = BUILDER[
+            "load_household_source"
+        ](ROOT, cls.binding_path)
+
+    def test_the_source_pins_are_verified_and_fail_closed(self):
+        tampered = copy.deepcopy(self.binding)
+        tampered["sourceSha256"] = "0" * 64
+        with tempfile.TemporaryDirectory(
+            prefix="native-household-source-", dir=ROOT / ".cache" / "scratch"
+        ) as temporary:
+            path = Path(temporary) / "binding.json"
+            path.write_text(json.dumps(tampered), encoding="utf8")
+            with self.assertRaises(ValueError) as error:
+                BUILDER["load_household_source"](ROOT, path)
+        self.assertIn("hash mismatch", str(error.exception))
+
+    def test_the_historical_build_blockers_name_every_open_gate(self):
+        blockers = BUILDER["historical_build_blockers"](self.binding)
+        joined = " | ".join(blockers)
+        self.assertIn("not approved for a historical build", joined)
+        self.assertIn("no approved topographic/route decision", joined)
+        self.assertIn("no authored corridor geometry", joined)
+        self.assertIn("no native elevation assignment", joined)
+        self.assertIn("dated-ground route/topographic decision", joined)
+        self.assertIn("real native building footprint and approach inspection", joined)
+        self.assertIn("engine pathfinding and difficulty playtest", joined)
+
+    def test_the_real_draft_is_not_compilable_because_its_corridor_is_missing(self):
+        with self.assertRaises(ValueError) as error:
+            ADAPTER["validate_household_contract"](self.dossier, self.binding)
+        self.assertIn("authored corridor", str(error.exception))
+
+    def test_the_builder_refuses_a_historical_build_with_the_named_gates(self):
+        with self.assertRaises(ValueError) as error:
+            BUILDER["refuse_historical_build"](self.binding)
+        self.assertIn("historical Jerusalem build refused", str(error.exception))
+        self.assertIn("no native elevation assignment", str(error.exception))
+
+    def test_the_synthetic_binding_keeps_the_authored_semantics(self):
+        synthetic = BUILDER["synthetic_physical_binding"](
+            self.binding, self.dossier
+        )
+        self.assertTrue(synthetic["synthetic"])
+        self.assertIn("nonhistorical", synthetic["syntheticNotice"])
+        self.assertEqual(
+            self.binding["households"], synthetic["households"]
+        )
+        self.assertEqual(
+            self.binding["optionalPayments"], synthetic["optionalPayments"]
+        )
+        self.assertEqual(self.binding["narration"], synthetic["narration"])
+        self.assertEqual(self.binding["difficulty"], synthetic["difficulty"])
+        self.assertEqual(
+            [entity["id"] for entity in self.binding["entities"]],
+            [entity["id"] for entity in synthetic["entities"]],
+        )
+        self.assertEqual(
+            [(entity["unitType"], entity["player"]) for entity in self.binding["entities"]],
+            [(entity["unitType"], entity["player"]) for entity in synthetic["entities"]],
+        )
+        self.assertEqual(
+            [zone["id"] for zone in self.binding["zones"]],
+            [zone["id"] for zone in synthetic["zones"]],
+        )
+
+    def test_the_synthetic_frame_drops_the_real_geometry(self):
+        synthetic = BUILDER["synthetic_physical_binding"](
+            self.binding, self.dossier
+        )
+        real_positions = {
+            entity["id"]: entity["position"] for entity in self.binding["entities"]
+        }
+        for entity in synthetic["entities"]:
+            self.assertNotEqual(
+                real_positions[entity["id"]], entity["position"]
+            )
+            self.assertNotIn("sourcePosition", entity)
+        self.assertNotIn("layoutEvidence", synthetic)
+        self.assertNotIn("nativeReadiness", synthetic)
+        self.assertFalse(synthetic["map"]["routeApproved"])
+        self.assertIsNone(synthetic["map"]["nativeElevation"])
+
+    def test_the_synthetic_frame_keeps_every_body_outside_every_circle(self):
+        synthetic = BUILDER["synthetic_physical_binding"](
+            self.binding, self.dossier
+        )
+        snapped = set()
+        for entity in synthetic["entities"]:
+            position = (
+                math.floor(entity["position"][0]) + 0.5,
+                math.floor(entity["position"][1]) + 0.5,
+            )
+            self.assertNotIn(position, snapped)
+            snapped.add(position)
+        for entity in synthetic["entities"]:
+            for zone in synthetic["zones"]:
+                clearance = (
+                    math.dist(entity["position"], zone["centre"]) - zone["radius"]
+                )
+                self.assertGreaterEqual(clearance, 3.0)
+
+    def test_the_synthetic_binding_satisfies_the_adapter_contract(self):
+        synthetic = BUILDER["synthetic_physical_binding"](
+            self.binding, self.dossier
+        )
+        ADAPTER["validate_household_contract"](self.dossier, synthetic)
+
+    def test_the_builder_compiles_the_labelled_synthetic_fixture(self):
+        scratch = ROOT / ".cache" / "scratch"
+        scratch.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(
+            prefix="native-household-build-", dir=scratch
+        ) as temporary:
+            output = Path(temporary) / "preview"
+            report = BUILDER["build_preview"](
+                ROOT,
+                self.binding_path,
+                output,
+                locales=("en",),
+                levels=("standard",),
+            )
+            receipt = json.loads(
+                (output / "en" / "standard" / "native-receipt.json").read_text(
+                    encoding="utf8"
+                )
+            )
+            scenario = output / "en" / "standard" / (
+                BUILDER["SYNTHETIC_SCENARIO_ID"] + ".aoe2scenario"
+            )
+            self.assertTrue(scenario.is_file())
+            self.assertTrue(
+                (output / "en" / "standard" / "native-controller.xs").is_file()
+            )
+            self.assertTrue(receipt["syntheticFixture"])
+            self.assertFalse(receipt["historicalApproval"])
+            self.assertFalse(receipt["gameVerified"])
+            self.assertFalse(receipt["generalComposedExportEnabled"])
+            self.assertIn("nonhistorical", receipt["syntheticNotice"])
+            self.assertEqual(17, receipt["initialUnitCountIncludingMarkers"])
+            self.assertGreater(receipt["triggers"], 0)
+            self.assertTrue(report["historicalBuild"]["refused"])
+            self.assertFalse(report["historicalBuild"]["attempted"])
+            self.assertFalse(report["gameVerified"])
+            self.assertTrue(report["historicalBuild"]["blockers"])
+            reopened = AoE2DEScenario.from_file(str(scenario))
+            self.assertEqual(
+                BUILDER["SYNTHETIC_SCENARIO_ID"], reopened.name
+            )
+            self.assertIn(
+                "nonhistorical", reopened.message_manager.instructions
+            )
 
 
 if __name__ == "__main__":
