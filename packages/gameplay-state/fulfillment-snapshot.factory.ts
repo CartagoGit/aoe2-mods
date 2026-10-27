@@ -287,7 +287,8 @@ export function fulfillmentPresent(
   let sharedProfile: ReturnType<typeof sharedCapabilityProfile> | undefined;
   const isCurrentlyPresent = (id: string, receptionZoneId: string) => {
     if (state.core.entityStates[id] === "destroyed") return false;
-    if (!sharedProfile) sharedProfile = sharedCapabilityProfile(profile);
+    if (sharedProfile === undefined)
+      sharedProfile = sharedCapabilityProfile(profile);
     if (!generationReady(sharedProfile, state.core, id)) return false;
     const observation = state.core.liveSpatialObservation?.entities[id];
     return (
