@@ -77,3 +77,6 @@ The architect found an ambiguity/overcount in MiniMax's WIP centre-clearance inv
 
 
 The three-file common-runtime extraction is now integrated: Luna product `501cde9`, official landing `dfeae904`, with [scoped independent review](shared-native-runtime-extraction-review.md). The existing eight native checks, complete semantic signature and exact XS agree with the immutable opening; validate158/2138 and export3/2 passed. No new tests, episodes or game observations are added by repeating those checks. Missing environment paths caused two preliminary export failures; the explicitly configured passing run is recorded separately.
+
+
+The MiniMax inventory is now integrated at `9ef440c5`, with [independent scoped review](catalogue-design-risk-independent-review.md). The final20 checks pass against the integrated two documents. Source/dossier counts are unchanged. Its124 conditional budget cases distinguish111 legacy profiles from13 v3 profile/selection combinations; they are not124 scenarios or proved failures. Exact actor coincidences, duplicate route geometry, missing worker rosters and editorial candidates remain architect triage, not authority for blind source edits.
