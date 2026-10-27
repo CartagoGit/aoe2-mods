@@ -18,6 +18,54 @@ import {
   zoneIds,
 } from "./alternative-fulfillment.fixture";
 
+function committedPresenceFixture() {
+  const profile = makeFulfillmentProfile();
+  const initial = createFulfillmentSnapshot(profile, accountsFor("standard"));
+  const state: FulfillmentSnapshot = {
+    ...initial,
+    active: {
+      attempt: 1,
+      selection: selection(),
+      status: "committed",
+      committedAtSequence: 0,
+      committedShares: [],
+      departures: {},
+      work: {},
+      generated: [recipeIds.mealDirect, recipeIds.shelterMaterials],
+      completedServices: [fixtureIds.mealService, fixtureIds.shelterService],
+    },
+    core: {
+      ...initial.core,
+      liveSpatialObservation: {
+        sequence: 1,
+        entities: {
+          [outputIds.mealDirect]: {
+            alive: true,
+            zones: [zoneIds.mealReception],
+          },
+          [fixtureIds.mealRecipient]: {
+            alive: true,
+            zones: [zoneIds.mealReception],
+          },
+          [outputIds.shelterMaterials]: {
+            alive: true,
+            zones: [zoneIds.materialsCourt],
+          },
+          [fixtureIds.householdA]: {
+            alive: true,
+            zones: [zoneIds.materialsCourt],
+          },
+          [fixtureIds.householdB]: {
+            alive: true,
+            zones: [zoneIds.materialsCourt],
+          },
+        },
+      },
+    },
+  };
+  return { profile, initial, state };
+}
+
 describe("fulfillment projection reuse", () => {
   test("validates a fresh projection after mutation of the same profile object", () => {
     const profile = makeFulfillmentProfile();
@@ -41,45 +89,7 @@ describe("fulfillment projection reuse", () => {
   });
 
   test("requires current output and recipient presence without mutating inputs", () => {
-    const profile = makeFulfillmentProfile();
-    const initial = createFulfillmentSnapshot(profile, accountsFor("standard"));
-    const observedEntities = {
-      [outputIds.mealDirect]: { alive: true, zones: [zoneIds.mealReception] },
-      [fixtureIds.mealRecipient]: {
-        alive: true,
-        zones: [zoneIds.mealReception],
-      },
-      [outputIds.shelterMaterials]: {
-        alive: true,
-        zones: [zoneIds.materialsCourt],
-      },
-      [fixtureIds.householdA]: {
-        alive: true,
-        zones: [zoneIds.materialsCourt],
-      },
-      [fixtureIds.householdB]: {
-        alive: true,
-        zones: [zoneIds.materialsCourt],
-      },
-    };
-    const state: FulfillmentSnapshot = {
-      ...initial,
-      active: {
-        attempt: 1,
-        selection: selection(),
-        status: "committed",
-        committedAtSequence: 0,
-        committedShares: [],
-        departures: {},
-        work: {},
-        generated: [recipeIds.mealDirect, recipeIds.shelterMaterials],
-        completedServices: [fixtureIds.mealService, fixtureIds.shelterService],
-      },
-      core: {
-        ...initial.core,
-        liveSpatialObservation: { sequence: 1, entities: observedEntities },
-      },
-    };
+    const { profile, state } = committedPresenceFixture();
     const beforeProfile = structuredClone(profile);
     const beforeState = structuredClone(state);
 
@@ -108,58 +118,13 @@ describe("fulfillment projection reuse", () => {
   });
 
   test("keeps projection lazy until a selected generated entity is checked", () => {
-    const profile = makeFulfillmentProfile();
-    const initial = createFulfillmentSnapshot(profile, accountsFor("standard"));
+    const { profile, initial, state } = committedPresenceFixture();
     const malformedProfile = {
       ...profile,
       objectivePlan: undefined,
     } as unknown as typeof profile;
     const inactive = initial;
     expect(fulfillmentPresent(malformedProfile, inactive)).toBe(false);
-
-    const valid = createFulfillmentSnapshot(profile, accountsFor("standard"));
-    const state: FulfillmentSnapshot = {
-      ...valid,
-      active: {
-        attempt: 1,
-        selection: selection(),
-        status: "committed",
-        committedAtSequence: 0,
-        committedShares: [],
-        departures: {},
-        work: {},
-        generated: [recipeIds.mealDirect, recipeIds.shelterMaterials],
-        completedServices: [fixtureIds.mealService, fixtureIds.shelterService],
-      },
-      core: {
-        ...valid.core,
-        liveSpatialObservation: {
-          sequence: 1,
-          entities: {
-            [outputIds.mealDirect]: {
-              alive: true,
-              zones: [zoneIds.mealReception],
-            },
-            [fixtureIds.mealRecipient]: {
-              alive: true,
-              zones: [zoneIds.mealReception],
-            },
-            [outputIds.shelterMaterials]: {
-              alive: true,
-              zones: [zoneIds.materialsCourt],
-            },
-            [fixtureIds.householdA]: {
-              alive: true,
-              zones: [zoneIds.materialsCourt],
-            },
-            [fixtureIds.householdB]: {
-              alive: true,
-              zones: [zoneIds.materialsCourt],
-            },
-          },
-        },
-      },
-    };
 
     const invalidSelection = structuredClone(state);
     if (!invalidSelection.active) throw new Error("Missing active selection");
