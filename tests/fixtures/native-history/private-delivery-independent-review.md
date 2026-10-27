@@ -47,3 +47,7 @@ The four optional receiving-court relocations for side-2/3/4/6 remain explicit p
 | `tests/fixtures/native-history/test_native_delivery_controller.py` | `fac137e0824947125d4765804d05707c92eebfded0794d6241b29c1bca4fcde7` |
 | `16-native-binding.json` | `b3f6eb2d6151981cfa5bd8c4ad57065e8f67ba129fc0c2a88554fdc7ae34ce2e` |
 | `docs/design/odysseys/faith-origins.json` | `f86bcecfc918beb8e0e94c9832d188ad619fb9693b5b8540b109afa046c417c2` |
+
+## Publication disposition — 27 October 2026
+
+The reviewer completed this limited audit independently. DelendAI rejected its publication from a verdict-only review unit before running a gate because this Markdown path is classified as a product document. The reviewer preserved the commits and retired that unit. The implementation owner then carried the unchanged report into its own implementation unit for normal documentary integration. That integration is not a formal `proposal_review approve`, and the broader S3 acceptance remains pending. The rejection log is preserved outside the worktree as `aoe2-caesarea-private-review-publication.log`.
