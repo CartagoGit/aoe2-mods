@@ -2,7 +2,7 @@
 
 Architect gpt-6 · 28 October2026 · d00002/S4 · candidate for independent scope review. This registers a documentary region, not an approved ancient map.
 
-The existing selection identity `yavneh` and the already reviewed materialization specification remain unchanged. Add exactly one supplemental profile in `docs/research/odyssey-research/episode-geography.json`: name **Inland Yavneh: documentary region candidate**, bbox `[34.71,31.83,34.79,31.90]`. Keep the local400frame `[34.714,31.846,34.755,31.884]`,22fictional sites,27physical interhub links and20local approaches from the world plan. Register no invented coastline, river polyline or bridge.
+The existing selection identity `yavneh` and the already reviewed materialization specification remain unchanged. Add exactly one supplemental profile in `docs/research/odyssey-research/episode-geography.json`: name **Inland Yavneh: documentary region candidate**, bbox `[34.71,31.83,34.79,31.90]`. Keep the local400frame `[34.714,31.846,34.755,31.884]`,22fictional sites,27physical interhub links and20local approaches from the world plan. Register no invented coastline, river polyline or bridge. The regional bbox contains the nominal local bbox, but it is not a mask or a guarantee that the square padded frame fits inside it: the padded western bound is34.70938110719235, around58m west of34.71. The separately checked DSM crop covers that padded edge. Keep this distinction explicit; registry containment of the nominal bbox cannot certify padded terrain or passability.
 
 ## What the evidence supports
 
