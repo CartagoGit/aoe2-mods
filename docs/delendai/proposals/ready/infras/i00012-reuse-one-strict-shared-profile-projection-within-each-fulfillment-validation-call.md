@@ -1,0 +1,57 @@
+---
+id: i00012
+title: "Reuse one strict shared profile projection within each fulfillment validation call"
+kind: infra
+status: ready
+type: proposal
+track: general
+date: 2026-10-27
+---
+
+# i00012 — Reuse one strict shared profile projection within each fulfillment validation call
+
+## goal
+
+Remove repeated strict v3-to-v2 projection within one synchronous validation/presence call, preserving public APIs, every rejection and all 95 portfolio checks; recover reliable official gate without changing timeout durations or caching between calls. The historical watchdog-granularity discussion and its later cancellation are separate from the local optimization.
+
+## why
+
+The architect's isolated Yavneh docs validate locally (158 tests/2,138 expectations; the95portfolio test23.23s and25.52s), but three official candidate gates rejected on preexisting30s/5s timeouts. Attempts02 and03 completed all2,138 expectations while the95portfolio test took31.08s and35.62s. Preserve these failures; do not change tests/timeouts or claim a landed candidate.
+
+Source inspection finds `validateFulfillmentSnapshot` parses the identical shared v2 projection twice per synchronous call; `fulfillmentPresent` parses it once for each selected result/recipient. A bounded local reuse eliminates those duplicate parses without reusing trust across calls. A same-process60-iteration microbenchmark observed113ms for shared projection,197ms for full fingerprint,404ms for snapshot validation. These are diagnostic observations, not a performance SLA. Reusing an Intl.Collator offered no material improvement and is not part of this proposal.
+
+## non-goals
+
+- No global/WeakMap/profile-identity cache, caller-supplied trusted context, frozen-profile requirement, skipped schema/fingerprint/snapshot validation, or new public contract.
+- No reduced95matrix coverage, timeout-duration/test-runner/config changes, canonical serialization changes, native support, campaign changes or historical content approval.
+
+## slices
+
+- global_gate: type
+
+### S1 — Local projection reuse and regression evidence
+- **Status**: pending
+- **Files**: `packages/gameplay-state/fulfillment-snapshot.factory.ts`, `tests/alternative-fulfillment/reference/fulfillment-projection-reuse.test.ts`
+- **Gate**: type
+- acceptance:
+  - "In validateFulfillmentSnapshot compute sharedCapabilityProfile(profile) once locally; pass that same strictly parsed value to validateFulfillmentCore and capabilityFingerprint. In fulfillmentPresent keep a function-local lazily initialized shared projection and evaluate it only at the existing generationReady operand, at most once per invocation. Do not move validation ahead of selectedRecipes/null, missing generated receipt, destroyed original or other existing short-circuits. Preserve short-circuit and malformed-profile behavior, public signatures, schema/fingerprint algorithms, every state/receipt/account/presence check, and source immutability. Malformed shared profiles must still return false when those earlier predicates short-circuit, and throw only if the original path reaches strict projection; add regression cases for each branch. Independent architecture review identified this P2 before implementation; no eager-loop projection is authorized."
+  - "Retain all existing95portfolio/adversarial flows, dispatches, observations, assertions and final arbitration unchanged; keep its aggregate test unchanged: the later upstream-recovery decision below supersedes the earlier proposed reorganization. Add meaningful regression that mutating the same profile object between distinct validation calls still rejects contract mismatch; changed result/recipient presence still fails; no cache or source mutation. Compare exact baseline fingerprints and replay outcomes on the existing fixture, and capture bounded before/after timings without flaky timing assertions."
+  - "Root and independent model review exact diff; bun run validate and official frozen-install/validate gate pass without timeout adjustment. No native adapter change; export only if a new concern warrants it. Product integration does not close any historical content slice."
+
+## acceptance
+
+- Strict validation and results remain equivalent; reuse is local to one invocation.
+- Gate evidence preserves previous rejected attempts and reports actual elapsed times with their environmental limits; test reorganization is not claimed as a runtime performance improvement.
+- Independent approval required; implementer never approves itself.
+
+## Reviewed watchdog-granularity decision
+
+The local projection change passed the standalone reference suite (95portfolio aggregate27.92s), yet the full suite still exceeded the existing aggregate watchdog33.99s/30 while completing2,153expectations. Do not publish that failed validation or hide it. Independent GPT-6.1 inspected the ADR, matrix, README and original test: no aggregate30second production SLO was found. Its review supports a functional table-driven organization, provided the changed scope of the watchdog is explicit. Root authorizes that bounded reorganization; this is not a claim of improved aggregate runtime.
+
+Flatten the same19funding rows × five expected portfolio identities into95unique tuples, with a stable original global case index1..95. Register95ordinary sequential test.each cases, each keeping the existing30,000ms watchdog and every original action/observation/expectation. Preserve the original one shared profile across all95flows and fresh state/context inside each flow. The stable index must preserve the original terminal alternation:48tick and47enter-phase resolutions. No mutable execution-order counter, concurrency, skip, fixture weakening, changed matrix data or reduced checks. Add an explicit dimension/uniqueness/expected-portfolio coverage check; keep every other existing reference test unchanged. Independent review must compare flow bodies and branch parity, then inspect the real full-suite result. Record aggregate elapsed time separately from the watchdog scope.
+
+## Upstream recovery — 28 October2026; active assignment
+
+On recovery, develop78e817c already contains the separate t00001 productebcbf4c integrated07364f8: it sets the aggregate95case watchdog to60s and lifecycle-load to30s without changing their flows/assertions. Those upstream edits were not made by this proposal. Root merged current develop into the documentation unit through its isolated checkout, preserved earlier failures, and cancelled the table-driven reorganization **before any such change was committed**. The earlier discussion remains an audit trail, not current implementation permission.
+
+The active i00012 assignment is again exactly two Files: the local snapshot factory reuse and its focused regression file. Do not edit, split, revert or further change the existing95matrix test or its current upstream budgets. The product has scoped independent conformity; its validation is being repeated against current develop. No performance guarantee or general gate recovery is claimed from the local optimization. Official certification and independent acceptance remain required.
