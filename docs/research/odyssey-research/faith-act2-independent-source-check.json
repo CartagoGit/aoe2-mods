@@ -1,0 +1,255 @@
+{
+  "audit": {
+    "commit": "5bb2d36ed1a98f2343110d0c0a680821357c87b4",
+    "scope": "Faith Origins ACT2 episodes 9-15; factual/source attribution and historical neutrality only",
+    "repositoryFilesRead": [
+      "docs/design/odysseys/faith-origins.json",
+      "docs/wiki/faith-origins/episodes/09-district-production-corinth/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/10-copy-and-relay-corinth/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/11-distributed-preservation-ephesus/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/12-bounded-community-aid-ephesus/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/13-consignment-and-correspondence-corinth/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/14-administrative-intrigue-caesarea/15-odyssey-dossier.md",
+      "docs/wiki/faith-origins/episodes/15-evacuation-and-recovery-rome-ostia/15-odyssey-dossier.md"
+    ],
+    "method": "Read the dossier sourcePassages and historical framing; opened accessible primary text/translations and selected scholarly records. A search snippet, inaccessible page, or book abstract is not treated as full-text consultation.",
+    "formalApproval": false,
+    "p1Findings": [],
+    "overall": "No P1 historical misstatement found in the seven audited dossier frames. Dates and locations are generally marked as reconstructions or disputed, and invented gameplay records/people are expressly separated from surviving letters and ancient testimony. Several selected scholarly URLs were unavailable or only abstract-level; the dossier itself often records that limitation."
+  },
+  "episodes": [
+    {
+      "id": "09-district-production-corinth",
+      "order": 9,
+      "dateClaim": "c. 50-52 CE",
+      "claim": "Acts 18 portrays Paul in Corinth with Prisca and Aquila, staying eighteen months and later appearing before Gallio; Gallio's proconsulship is used as a chronological anchor.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=Acts+18&version=NRSVUE",
+          "locator": "Acts 18:1-18, especially 18:2-3, 11-12",
+          "classification": "ancient literary source in modern translation",
+          "consultedScope": "Opened the passage; supports the narrative claims about the couple, Corinth, stated stay, and Gallio episode, not an independent employment or court record."
+        },
+        {
+          "url": "https://www.persee.fr/doc/reg_0035-2039_1967_num_80_379_3963",
+          "locator": "Plassart, 'L'inscription de Delphes mentionnant le proconsul Gallion' (Revue des Études Grecques 80, 1967), article record/abstract",
+          "classification": "modern epigraphic study; record/abstract consulted",
+          "consultedScope": "Search result/record links the Delphi inscription to Gallio and Acts chronology. The complete article and stone were not read in this audit; do not say the inscription independently proves Paul's exact arrival/departure dates."
+        },
+        {
+          "url": "https://dcc.dickinson.edu/greek-new-testament/acts/18",
+          "locator": "Acts 18 commentary selection listed by dossier",
+          "classification": "scholarly commentary",
+          "consultedScope": "Dossier says unavailable in prior consultation; this audit did not obtain its text. The dossier correctly lists BibleGateway as the actually consulted alternate."
+        }
+      ],
+      "qualification": "The broad c. 50-52 bracket is a plausible reconstruction from Acts plus the Gallio inscription's Claudian dating, not a date stated by Acts or a direct date for each episode event. Keep the 18-month duration attributed to Acts. Workshop, goods, work orders, participants, and deliveries are explicitly fictional; no Paul autograph or historical contract is represented.",
+      "assessment": "Supported with chronology qualification; no P1."
+    },
+    {
+      "id": "10-copy-and-relay-corinth",
+      "order": 10,
+      "dateClaim": "c. 50-51 CE; Corinth setting is reconstruction",
+      "claim": "1 Thessalonians names Paul, Silvanus, and Timothy and discusses news from Thessalonica; it does not state where it was written. Common dating around 50 is scholarly reconstruction.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1&version=NRSVUE",
+          "locator": "1 Thessalonians 1:1-10",
+          "classification": "ancient letter in modern translation",
+          "consultedScope": "Opened; supports the named senders and the letter's report about the Thessalonian community, not a Corinth writing address."
+        },
+        {
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "New Testament Christianity in the Roman World, book/chapter landing page",
+          "classification": "scholarly book metadata/abstract",
+          "consultedScope": "Landing page only; not evidence that the whole book or a detailed passage was read. The dossier explicitly marks this limitation."
+        },
+        {
+          "url": "https://www.cambridge.org/core/books/abs/companion-to-the-new-testament/1-thessalonians/237C6C9C14DD7D325F392F8508DC736A",
+          "locator": "Cambridge Companion chapter landing page",
+          "classification": "scholarly chapter metadata/abstract",
+          "consultedScope": "Located as a relevant further source but full chapter not consulted here; do not elevate its abstract to detailed verification."
+        }
+      ],
+      "qualification": "The primary letter does not name its place of composition. Corinth and c. 50-51 remain a reconstruction based on Pauline chronology/Acts and scholarship. The dossier explicitly makes this distinction. Local relay, fictional notes, derived dispatch notice, and carriers are not the surviving letter, its autograph, or documented couriers.",
+      "assessment": "Primary-text claim supported; date/place are properly qualified. No P1."
+    },
+    {
+      "id": "11-distributed-preservation-ephesus",
+      "order": 11,
+      "dateClaim": "c. 54-55 CE; writing location uncertain",
+      "claim": "Galatians presents Paul's argument concerning law, circumcision, and Gentile belonging; destination/date/provenance are disputed. Ephesus preservation scene does not establish composition there.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=Galatians&version=NRSVUE",
+          "locator": "Galatians 1-2 and 3:1-5",
+          "classification": "ancient letter in modern translation",
+          "consultedScope": "Opened; supports the fact that Paul argues about his commission and Gentile inclusion/circumcision. It does not establish date, destination, or composition place."
+        },
+        {
+          "url": "https://www.bibleodyssey.org/articles/galatians/",
+          "locator": "SBL Bible Odyssey article selected by dossier",
+          "classification": "scholarly reference article",
+          "consultedScope": "URL was unavailable in the earlier consultation recorded by dossier; it did not load in this audit. The dossier's explicitly stated limitation is sound."
+        },
+        {
+          "url": "https://assets.cambridge.org/97811084/26817/excerpt/9781108426817_excerpt.pdf",
+          "locator": "Cambridge University Press excerpt, Galatians chapter; search result exposed discussion of debated dates and provenance",
+          "classification": "scholarly book excerpt; discovery result only",
+          "consultedScope": "Found as a relevant source, but excerpt was not opened/read in this audit. Not used to certify the date."
+        }
+      ],
+      "qualification": "The dossier carefully distinguishes the polemic in Paul's letter from an objective account of every Jewish or Christian community, and says the Ephesian scene is fictional. c. 54-55 is one possible later-date reconstruction within a disputed range; it should not be presented as settled. Fictional notes/register are not Galatians manuscripts or proof of provenance.",
+      "assessment": "Historical framing is appropriately cautious; exact date remains a qualified hypothesis. No P1."
+    },
+    {
+      "id": "12-bounded-community-aid-ephesus",
+      "order": 12,
+      "dateClaim": "c. 54-55 CE; Ephesus is supported as a planned stay in the letter, not a documented address for every fictional activity",
+      "claim": "1 Corinthians 16:5-9 has Paul say he will remain in Ephesus until Pentecost; date and local aid operation remain reconstruction.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE",
+          "locator": "1 Corinthians 16:5-9",
+          "classification": "ancient letter in modern translation",
+          "consultedScope": "Opened; supports Paul's first-person plan to remain at Ephesus until Pentecost and his stated opportunity/opposition. It does not furnish an exact year or map address."
+        },
+        {
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "New Testament Christianity in the Roman World, book/chapter landing page",
+          "classification": "scholarly book metadata/abstract",
+          "consultedScope": "Abstract/landing metadata only, not full-text chronology evidence."
+        }
+      ],
+      "qualification": "The Ephesus setting has direct support in Paul's own letter as a stated stay; the exact year c. 54-55 and all fictional households, aid, objects, couriers, and neighborhood geometry need separate qualification/map review. Do not let a real letter passage authenticate the invented rescue/event.",
+      "assessment": "Place claim has primary textual support; date/activity are qualified reconstruction. No P1."
+    },
+    {
+      "id": "13-consignment-and-correspondence-corinth",
+      "order": 13,
+      "dateClaim": "c. 56-58 CE; Corinth writing setting is conventional inference, not stated in Romans",
+      "claim": "Romans 16 commends Phoebe, described as associated with Cenchreae; Romans itself does not explicitly say Paul wrote it at Corinth. Romans 1 says Paul had been prevented from visiting Rome.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=Romans+16&version=NRSVUE",
+          "locator": "Romans 16:1-2",
+          "classification": "ancient letter in modern translation",
+          "consultedScope": "Opened; Phoebe is commended and connected with the church at Cenchreae. This does not say she carried Romans, nor document the dossier's fictional consignment."
+        },
+        {
+          "url": "https://www.biblegateway.com/passage/?search=Romans+1%3A13&version=NRSVUE",
+          "locator": "Romans 1:13",
+          "classification": "ancient letter in modern translation",
+          "consultedScope": "Opened; Paul says he had often intended to come to the Roman addressees but had been prevented. This is not a claim that no Pauline community existed in Rome."
+        },
+        {
+          "url": "https://www.scielo.org.za/pdf/ids/v53n2/09.pdf",
+          "locator": "In die Skriflig article, search-result discussion of Cenchreae and a Corinth c. 57-58 reconstruction",
+          "classification": "modern scholarly article; search result only",
+          "consultedScope": "Located, but full text not opened in this audit; not used as direct verification of exact date or port geography."
+        }
+      ],
+      "qualification": "The dossier's local route ends at a fictional inland Cenchreae departure yard and explicitly says it is not proof Phoebe delivered Romans. No Phoebe playable unit should be instantiated; she is a named figure of the letter's textual framing only. Route/yard must not be presented as a historical place or ancient mail stop. Corinth as writing place/date is an inference from chronology and Romans 16 context, not a statement in the letter.",
+      "assessment": "Core text claims supported and safeguards are strong; fictional Cenchreae yard still needs map/geographic approval. No P1."
+    },
+    {
+      "id": "14-administrative-intrigue-caesarea",
+      "order": 14,
+      "dateClaim": "c. 57-60 CE",
+      "claim": "In Acts' narrative Paul appeals to Caesar before Festus while held at Caesarea.",
+      "sources": [
+        {
+          "url": "https://www.biblegateway.com/passage/?search=Acts+25%3A10-12&version=NRSVUE",
+          "locator": "Acts 25:10-12",
+          "classification": "ancient literary narrative in modern translation",
+          "consultedScope": "Opened; directly supports that Acts depicts the appeal before Festus. Acts 21-26 is the broader literary detention narrative, not an extant court transcript."
+        },
+        {
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Acts+21",
+          "locator": "Perseus selection recorded in dossier",
+          "classification": "ancient text portal",
+          "consultedScope": "Dossier instead records BibleGateway Acts 25:10-12 as the consulted passage; no claim is made that the selected Perseus URL was read."
+        }
+      ],
+      "qualification": "The dossier attributes the scene to Acts and disclaims a transcript, exact legal procedure, and invented rescue/trial. The broad c. 57-60 label is a conventional chronology bracket, not stated by Acts 25:10-12; fictional notes/courier and outcome are kept separate from the appeal. Caesarea is the narrative scene, while the design rightly excludes a post-departure Jerusalem setting.",
+      "assessment": "Narrative attribution is adequate; exact dates remain reconstruction. No P1."
+    },
+    {
+      "id": "15-evacuation-and-recovery-rome-ostia",
+      "order": 15,
+      "dateClaim": "64 CE",
+      "claim": "Tacitus, writing later, reports Nero's punishment of people he calls Christians following Rome's fire; he presents the arson charge as a rumor scapegoat, not proof Christians caused the fire.",
+      "sources": [
+        {
+          "url": "https://dcc.dickinson.edu/tacitus-annals/15-44",
+          "locator": "Tacitus, Annals 15.44.2-3; DCC Latin text and notes",
+          "classification": "ancient literary source with modern scholarly commentary",
+          "consultedScope": "Opened full passage and notes. 15.44.2 reports the fire, rumor, and Nero's punishment of Christians; 15.44.3 includes Tacitus' retrospective identification of Christus and execution under Pilate. Notes discuss scapegoating, uncertain numbers, text variant Christians/Chrestians, and anachronistic use of 'procurator' for Pilate."
+        },
+        {
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+          "locator": "Tacitus, Annals 15.44",
+          "classification": "ancient text portal",
+          "consultedScope": "Selected by dossier but did not load in prior consultation; DCC was the actually consulted alternate."
+        }
+      ],
+      "qualification": "Tacitus' claim must remain attributed to Tacitus through the narrator; he was not an eyewitness to Nero's punishment. Dossier does so in its historical frame ('Tacitus reports') and notes his later date. It correctly says the fictional evacuation is not independently documented, does not reverse deaths, and does not identify every punishment site or an empire-wide policy. Keep the Christus/Pilate claim attributed to Tacitus as well; the source's 'procurator' terminology is historically anachronistic, noted by DCC.",
+      "assessment": "Strong source attribution and explicit fictional boundary; no P1."
+    }
+  ],
+  "crossCuttingChecks": {
+    "derivedItemsAndAutographs": "In dossiers inspected, derived bundles, notices, registers, notes, and local deliveries are explicitly described as invented gameplay objects. They are not represented as Pauline autographs, historical correspondence records, Tacitus manuscripts, or discovered artifacts. No issue found.",
+    "narratorAttribution": "Shared framing says historical persons remain in attributed narration; no private speech or thought is attributed as authenticated historical testimony. Episode 15 specifically anchors its claim in 'Tacitus reports'; preserve that attribution across any common narrator retelling.",
+    "galatiansProvenance": "Episode 11 expressly says date/recipient/location are disputed and the Ephesian preservation setting is fictional, not the composition site. Do not convert its map location into an Ephesus provenance claim.",
+    "phoebeAndCenchreae": "Romans 16:1-2 supports association with Cenchreae, but not delivery of Romans. Episode 13 disclaims that inference and contains fictional local carriers; do not create a historical Phoebe unit. The inland Cenchreae departure yard is a scenario label, not a verified ancient mail facility.",
+    "accessLimitations": "Some selected DCC/Bible Odyssey/Perseus URLs did not load; the dossier records actual alternate URLs. OUP book pages were landing pages/abstracts only. Source records and snippets are not treated as full book/article consultation.",
+    "nonHistoricalReview": "No architecture, balance, native capability, map-footprint, or formal approval determination made."
+  },
+  "sourcesConsulted": [
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Acts+18&version=NRSVUE",
+      "title": "Acts 18 (NRSVUE)",
+      "consultedScope": "Opened Acts 18:1-18, modern translation of ancient literary narrative."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1&version=NRSVUE",
+      "title": "1 Thessalonians 1 (NRSVUE)",
+      "consultedScope": "Opened 1 Thessalonians 1:1-10."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Galatians&version=NRSVUE",
+      "title": "Galatians (NRSVUE)",
+      "consultedScope": "Opened letter text; checked 1-2 and 3:1-5 claims."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE",
+      "title": "1 Corinthians 16:5-9 (NRSVUE)",
+      "consultedScope": "Opened stated Ephesus stay and travel plan."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Romans+16&version=NRSVUE",
+      "title": "Romans 16 (NRSVUE)",
+      "consultedScope": "Opened 16:1-2 concerning Phoebe and Cenchreae."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Romans+1%3A13&version=NRSVUE",
+      "title": "Romans 1:13 (NRSVUE)",
+      "consultedScope": "Opened Paul's statement of intended but prevented visit to Rome."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Acts+25%3A10-12&version=NRSVUE",
+      "title": "Acts 25:10-12 (NRSVUE)",
+      "consultedScope": "Opened the appeal-to-Caesar passage."
+    },
+    {
+      "url": "https://dcc.dickinson.edu/tacitus-annals/15-44",
+      "title": "Tacitus, Annals 15.44, Dickinson College Commentaries",
+      "consultedScope": "Opened Latin text and scholarly notes, especially 15.44.2-3."
+    },
+    {
+      "url": "https://www.persee.fr/doc/reg_0035-2039_1967_num_80_379_3963",
+      "title": "Plassart, L'inscription de Delphes mentionnant le proconsul Gallion",
+      "consultedScope": "Article record/abstract and search metadata only; not the complete article or inscription."
+    }
+  ]
+}

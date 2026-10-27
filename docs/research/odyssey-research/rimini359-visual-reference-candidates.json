@@ -1,0 +1,90 @@
+{
+  "audit": {
+    "target": "Rimini 359 visual reference candidates",
+    "readOnlyRepository": true,
+    "repositoryOrGitChanged": false,
+    "architectApproval": false,
+    "gameOrHistoricalApproval": false,
+    "candidateLimit": 2,
+    "method": "Checked Commons file description pages for explicit reuse license, author, and original-file link. Downloaded only after the page clearly named a Creative Commons license; inspected the downloaded image pixels. Candidate imagery is modern documentation of extant monuments, not a reconstruction or proof of their exact appearance in 359.",
+    "userProvidedSourceContext": {
+      "url": "https://www.comune.rimini.it/sites/default/files/2021-07/c.rel_.archeo_0_0.pdf",
+      "relevantPdfPages": "46-48",
+      "reportedScope": "Chronologies and phases; not certification of a council venue.",
+      "accessInThisTask": "Not opened or visually inspected; this description is from the task instruction. Municipal PDF images are not treated as freely reusable."
+    }
+  },
+  "candidates": [
+    {
+      "site": "Arco di Augusto, Rimini",
+      "commonsFilePage": "https://commons.wikimedia.org/wiki/File:Arco_di_Augusto_-_Rimini,_Italia.jpg",
+      "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Arco_di_Augusto_-_Rimini%2C_Italia.jpg",
+      "author": "Gretelix",
+      "filePageStates": {
+        "source": "Own work",
+        "date": "13 April 2016",
+        "licenseExact": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attributionRequirements": "Give appropriate credit, link the license, and indicate changes; adaptations must be distributed under the same or a compatible license. Do not imply endorsement.",
+        "pageEvidence": "Commons page lines 129-151 and file history lines 171-176; page says own work and names Gretelix; original link is listed at line 113."
+      },
+      "suggestedAttribution": "Gretelix, ‘Arco di Augusto - Rimini, Italia.jpg’, Wikimedia Commons, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Arco_di_Augusto_-_Rimini,_Italia.jpg (accessed 2026-10-14). Changes: none if used as-is.",
+      "periodAndPhaseLimits": [
+        "This is a present-day nighttime photograph of the standing monument and its present surroundings, not a reconstruction of Rimini in 359.",
+        "The visible masonry/upper portions and adjacent structures are present-day fabric; this photograph cannot distinguish Roman fabric from later repair or alteration and must not be used to assert a precise 359 appearance.",
+        "The file page labels the monument generically as Arco di Augusto; no archaeological phase analysis is provided on that page."
+      ],
+      "asset": {
+        "downloadedTo": "/tmp/rimini359-assets/Arco_di_Augusto_-_Rimini_Italia.jpg",
+        "bytes": 1764789,
+        "sha256": "d818161ff161752435df2bfcf0913441f450c740ca16ea7015909955a2d3eec1",
+        "pixelsInspected": true
+      }
+    },
+    {
+      "site": "Ponte di Tiberio, Rimini",
+      "commonsFilePage": "https://commons.wikimedia.org/wiki/File:Tiberius-Br%C3%BCcke.JPG",
+      "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tiberius-Br%C3%BCcke.JPG",
+      "author": "Heiko Trurnit",
+      "filePageStates": {
+        "caption": "Tiberius Bridge in Rimini",
+        "description": "Tiberius-Brücke in Rimini 14-21 n.Chr.",
+        "source": "Own work",
+        "date": "September 2007",
+        "licenseExact": "Creative Commons Attribution-ShareAlike 2.5 Generic (CC BY-SA 2.5)",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "attributionRequirements": "Give appropriate credit, link the license, and indicate changes; adaptations must be distributed under the same or a compatible license. Do not imply endorsement.",
+        "pageEvidence": "Commons page lines 111-124 and 136-141; page names author, date, own-work source, caption, and exact license; original link at line 103."
+      },
+      "suggestedAttribution": "Heiko Trurnit, ‘Tiberius-Brücke.JPG’, Wikimedia Commons, CC BY-SA 2.5, https://commons.wikimedia.org/wiki/File:Tiberius-Br%C3%BCcke.JPG (accessed 2026-10-14). Changes: none if used as-is.",
+      "periodAndPhaseLimits": [
+        "This is a modern photograph of the extant bridge and river; it is not a reconstruction of the bridge or river setting in 359.",
+        "The Commons caption's 14-21 CE dating is file-page metadata, not an archaeological phase report. Current visible fabric, setting, and repairs cannot by themselves establish the bridge's exact 359 appearance or use.",
+        "Use only as an object/location reference; do not treat the image as evidence of the council venue or as a period-accurate scene."
+      ],
+      "asset": {
+        "downloadedTo": "/tmp/rimini359-assets/Tiberius-Bruecke.JPG",
+        "bytes": 3326190,
+        "sha256": "687e0c44fee5a5f932a42842b453abbbf64f65234600282e16fffadd416c8cd9",
+        "pixelsInspected": true
+      }
+    }
+  ],
+  "notSelected": "Municipal PDF plates and other uncatalogued images were not copied; no reconstruction image with an explicitly clear reuse license was identified in this two-candidate pass.",
+  "verification": {
+    "commonsPageTextRead": true,
+    "licenseEvidenceCapturedBeforeDownload": true,
+    "originalImagePixelsInspected": true,
+    "assetDirectory": "/tmp/rimini359-assets",
+    "noRepositoryFilesWritten": true
+  },
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "commonsPagesRead": true,
+    "bothOriginalRastersViewed": true,
+    "reusedWithoutChanges": true,
+    "productionApproved": false,
+    "urbanPlateCorrection": "C1.1.1 isXIXcentury/1915–1945transformation, notancientphases; reports/maps remain temporary because licensinguncleared."
+  }
+}

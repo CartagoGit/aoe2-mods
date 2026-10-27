@@ -1,0 +1,101 @@
+{
+  "episodeId": "imperial-church-14-constantinople-330",
+  "dateLabelAudited": "330 CE; conventional dedication date 11 May 330",
+  "architectApproval": false,
+  "researchOnly": true,
+  "sources": [
+    {
+      "url": "https://catholiclibrary.org/library/view?chunk.id=00000267&docId=/Fathers-Synchronized-EN/Chronicon_Paschale__Chronicon_paschale.en.html",
+      "type": "primary text in modern English translation",
+      "title": "Chronicon Paschale / Easter Chronicle, entry for Constantine's 25th regnal year",
+      "coverageActuallyRead": "Opened and read lines 378–382, especially 379–381. The passage states that Constantine named the city Constantinople five days before the Ides of May, on Monday, in the third indiction; describes its naming as a second Rome and records a public festival, hippodrome race, Zeuxippos baths and ceremonial image/column. It then says the emperor remained there and appointed major magistrates.",
+      "supports": "A dedication/naming festival in 330 conventionally converted as 11 May; public ceremonial elements and civic-institution claims as reported by the chronicle.",
+      "doesNotSupport": "The text does not document the precise footprint of the settlement, the inauguration of each building, or a verified layout of the city in 330. It cannot by itself establish literal public participation or a fully Christian civic identity.",
+      "biasAndLimits": "Chronicle compiled in the 7th century, roughly three centuries after the event, and has Christian/chronographic framing. It is a later report, not an eyewitness record. English translation accessed through a text-hosting library; the critical Greek edition itself was not read."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25023.htm",
+      "type": "primary text in 19th-century English translation",
+      "title": "Eusebius, Life of Constantine, Book III, chapters 48–49",
+      "coverageActuallyRead": "Read chapter 48–49 directly at lines 200–205 (New Advent page; translation in the NPNF tradition). Chapter 48 says Constantine embellished the namesake city with martyr memorials and other sacred buildings in and around it and presents a program against sacrifice/idol worship. Chapter 49 describes Good Shepherd and Daniel figures at public fountains and a jeweled Cross symbol in the palace ceiling.",
+      "supports": "Eusebius portrays sacred buildings and Christian signs in the city, while also reporting the stated suppression of sacrificial practices and the continued display/reuse of figural bronze objects in public places and the palace/hippodrome context elsewhere in the account (III.54). This is evidence of Eusebius' representation of the city, not a complete building inventory.",
+      "doesNotSupport": "Chapters 48–49 do not give a city plan, exact building locations, a single-faith population, or evidence that pagan material culture and practices vanished. The rhetoric of 'purging' is not proof of comprehensive enforcement. Eusebius does not give the 11 May dedication date in these chapters.",
+      "biasAndLimits": "Eusebius is an admiring, Christian imperial biographer and explicitly frames Constantine's urban works as service to God. His praise and claims about religious transformation should be treated as viewpoint-bearing literary testimony. The New Advent text is an old translation, not a critical edition."
+    },
+    {
+      "url": "https://www.ime.gr/chronos/projects/justinian/en/journey/j1a.html",
+      "type": "institutional educational synthesis",
+      "title": "A Journey through the Early Byzantine Period: Topography of the Queen City",
+      "coverageActuallyRead": "Read the page text at lines 7–9. It identifies Byzantium as a Megarian colony between Black Sea and Sea of Marmara, notes harbours at the Golden Horn, says Constantine built a western wall and added/expanded public works, streets, hippodrome, palace and churches, and explicitly dates Theodosian double land walls to 413–450.",
+      "supports": "Broad position and water-access characterization; a Constantinian western city wall; the important chronological distinction that Theodosian double land walls belong to 413 onward.",
+      "doesNotSupport": "No surveyed route/coordinates for the 330 wall or fourth-century exact topographic boundary. It does not justify using the 413 walls in a 330 depiction.",
+      "biasAndLimits": "Educational overview rather than a specialist archaeological report; no detailed bibliography visible in the read passage."
+    },
+    {
+      "url": "https://jfa.arch.metu.edu.tr/uploads/docs/sayilar/sayi-33-1/121-145.pdf",
+      "type": "academic article / modern reconstruction with archaeological discussion",
+      "title": "Towards a New Honorific Column (METU Journal of the Faculty of Architecture 33.1, 2016)",
+      "coverageActuallyRead": "Read PDF pages 1–2, lines 81–107 and 131–149. Discusses Constantine's Forum relative to a Severan gate and a hill, maps a fourth-century city using prior scholarship, and explicitly says the proposed forum footprint/reconstructions rely on limited archaeological evidence and textual data; the figure is the author's map based on Bardill, Mango and Berger.",
+      "supports": "There is scholarly geographic discussion of the forum/peninsula and known constraints; it shows that precise reconstruction remains debated. The fourth-century map is a modern reconstruction, not an ancient map.",
+      "doesNotSupport": "It does not establish the exact 330 map boundary, nor all buildings/roads plotted on its figure as coeval or archaeologically proven. It is not an independent primary source for the dedication.",
+      "biasAndLimits": "Specialist article, but the excerpted figure synthesizes secondary scholarship; article itself warns that alternate forum reconstructions remain possible."
+    },
+    {
+      "url": "https://whc.unesco.org/document/100746",
+      "type": "institutional geography report (modern heritage area, not ancient period map)",
+      "title": "UNESCO/ICOMOS joint mission report on Historic Areas of Istanbul (2008)",
+      "coverageActuallyRead": "Opened institutional PDF; read report references to Historic Peninsula, Bosphorus, Golden Horn, Sea of Marmara and modern protection zones, including lines 463–471. This is modern heritage geography.",
+      "supports": "The modern Historic Peninsula is bounded by the Golden Horn to the north, Bosphorus to the east, and Sea of Marmara to the south (also visible in cited UNESCO source search text). Useful only for broad present-day shoreline orientation.",
+      "doesNotSupport": "No shoreline reconstruction for 330, no ancient harbor or coast positions, and no fourth-century street/wall footprint.",
+      "biasAndLimits": "Institutional report about current heritage management and boundaries, not an ancient topography study."
+    },
+    {
+      "url": "https://openaccess.ircica.org/items/2d9ed1ae-f055-46c1-bce9-a79cea3f315f/full",
+      "type": "institutional map archive catalog record",
+      "title": "Byzance-Constantinople: Carte archeologique et topographique",
+      "coverageActuallyRead": "Read the catalog metadata: map issued 1938, scale 1:10,000, 68 x 92 cm, map series Etudes Byzantines: Carte 3, alternative title describes Constantinople in the Middle Ages. Image record available; map content was not inspected closely enough to validate individual features.",
+      "supports": "Existence of a historical archaeological/topographic map resource for Constantinople.",
+      "doesNotSupport": "It is not by its metadata a 330-specific survey; medieval title/focus makes it unsuitable as direct evidence for 330 without feature-by-feature phase checking.",
+      "biasAndLimits": "1938 map; catalog exposes metadata and image but no reuse license was verified. Do not presume production or derivative-use rights."
+    },
+    {
+      "url": "https://archives.saltresearch.org/handle/123456789/119999",
+      "type": "institutional map archive catalog record",
+      "title": "Ernest Mamboury, Carte topographique de Constantinople … jusqu'à la fin du XVe siècle (1951)",
+      "coverageActuallyRead": "Read metadata and rights statement, lines 10–27 and 53–82. It is a 1951 map based on official city plans, covering Istanbul to the end of the 15th century; stated CC BY-NC-ND 4.0 for individual research, noncommercial use, no derivatives.",
+      "supports": "A modern coast/urban plan and catalog provenance, but only as a later-period cartographic reference.",
+      "doesNotSupport": "No ancient coastline, Roman-era harbor, or 330 wall placement; map's long medieval span cannot be projected backward automatically.",
+      "biasAndLimits": "Rights expressly bar commercial use and derivatives under stated license; not a suitable reusable game-map source without additional permission."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Byzantine_Constantinople-en.svg",
+      "type": "modern derivative map / Wikimedia Commons file page",
+      "title": "Byzantine Constantinople-en.svg",
+      "coverageActuallyRead": "Read file description, sources, author/date and license, lines 122–128 and 129–202. Map is a 2008–2012 author-created composite based on Janin, Dumbarton Oaks Papers 54, NYU's Byzantine Churches of Istanbul project, and other published maps. CC BY-SA 3.0 and GFDL are offered.",
+      "supports": "A broad Byzantine topographic orientation map with attribution and share-alike licensing terms stated on the file page.",
+      "doesNotSupport": "It is explicitly a map of the Byzantine period, not a phase-locked 330 map. Many churches/roads/walls represent later centuries, so it must not be used as a 330 footprint without itemized dating. The file page does not establish 330 wall course.",
+      "biasAndLimits": "Derivative scholarly compilation by Sémhur/Cplakidas (file history); sources are mixed-period and the author notes possible errors/omissions. Attribution and ShareAlike obligations apply to adaptations."
+    },
+    {
+      "url": "https://www.britannica.com/place/Istanbul/History",
+      "type": "candidate secondary source; failed access",
+      "title": "Britannica Istanbul history candidate",
+      "coverageActuallyRead": "Search attempted candidate discovery; no Britannica article text successfully opened/read during this research. Search results yielded unrelated historic Britannica editions and generic summaries. No claim below is attributed to Britannica.",
+      "supports": "Nothing directly consulted.",
+      "doesNotSupport": "Cannot be cited as evidence for the 330 date, city layout, or Constantine's construction based on this access attempt.",
+      "biasAndLimits": "Access pending; exact candidate page may be different from the URL above."
+    }
+  ],
+  "chronologyAndGeography": {
+    "dateAssessment": "The Chronicon Paschale's wording 'five days before the Ides of May' is conventionally rendered as 11 May 330. This is a date reported by a seventh-century chronicle, not a contemporary dated dedication inscription consulted here. Eusebius VC III.48–49 does not supply that date.",
+    "locationAssessment": "Byzantium/Constantinople occupied the European peninsula between the Bosporus, Golden Horn and Sea of Marmara. Institutional/academic summaries support the broad terrain and water access; shoreline and harbor geometry in late antiquity should not be assumed identical to current maps.",
+    "fortificationAssessment": "A western Constantinian wall is supported by the institutional overview. Do not substitute the Theodosian double land walls begun in 413, later sea walls, Justinianic Hagia Sophia (537), or Valens Aqueduct (378) into a 330 depiction. The exact Constantinian wall line was not established by a directly consulted excavation plan in this audit.",
+    "urbanAndReligiousAssessment": "Eusebius describes churches and Christian symbols alongside the reported removal of sacrifice and worship of statues. His account is an apologetic Christian representation, not evidence that the urban landscape or population had become exclusively Christian."
+  },
+  "mapAndReuseNotes": [
+    "The Commons Byzantine-period map has an explicit CC BY-SA 3.0/GFDL license, but its mixed-period content makes it a locator/reference only for this 330 episode; reuse/adaptation triggers attribution and share-alike terms.",
+    "Salt Research's 1951 map carries CC BY-NC-ND 4.0 for individual research only; no commercial reuse or derivative works under its statement.",
+    "IRCICA catalog provides a medieval archaeological/topographic map scan, but I did not verify a reuse license.",
+    "The METU figure is explicitly a modern scholarly reconstruction from published maps; its attribution does not grant image reuse rights. No map image was downloaded or approved."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "dossier": "imperial-jerusalem",
+  "order": 13,
+  "orderedEpisodeWindow": "326–330 (as supplied by requester; activity in this window only)",
+  "architectApproval": false,
+  "scope": "Read-only source audit. No repository/Git changes and no architectural decision.",
+  "findings": [
+    {
+      "topic": "Eusebius VC III.25–40: patronage and works",
+      "supported": [
+        "Eusebius says Constantine ordered a house of prayer at the site, ordered the removal of the prior sanctuary/buildings/statues he associates with Venus, and the removal of earth/debris; he narrates discovery of a cave he identifies as the tomb.",
+        "He attributes substantial financial support to Constantine, orders to Eastern provincial governors to fund/complete the church, and administrative/logistical involvement by Dracilianus and a provincial governor.",
+        "Macarius is addressed as bishop and asked to advise on columns and marbles; the emperor says he would procure materials. Eusebius also attributes gifts of precious materials to Constantine.",
+        "The passage describes a complex of tomb monument/cave, open court/porticoes, a church east of the tomb, and associated architectural embellishment in the author's account."
+      ],
+      "unsupported_or_limited": [
+        "III.25–40 does not give an exact year for commencement. It cannot alone establish that construction began in 326.",
+        "The claimed prior Venus sanctuary, its destruction, and the identification of the exposed cave as Jesus's tomb are Eusebius's account and interpretation, not independently proven by this passage or by the cited excavation report.",
+        "This passage does not name Helena as patron or witness and does not narrate discovery of the Cross.",
+        "Eusebius is a pro-Constantinian author using triumphal Christian rhetoric; his text is primary evidence for the patronage narrative he presents, not a neutral excavation diary."
+      ],
+      "urlCandidate": "https://www.newadvent.org/fathers/25023.htm",
+      "urlActuallyConsulted": "https://www.newadvent.org/fathers/25023.htm",
+      "locator": "Eusebius, Life of Constantine III.25–40, especially III.25–31 for orders, financing, governors and Macarius; III.33–40 for Eusebius's description of the complex.",
+      "coverageActuallyRead": "Full online text of III.25–40; claims above are chapter-located, not inferred from a search snippet.",
+      "sourceType": "Primary literary source, fourth century; online translation/edition.",
+      "dateAndBias": "Eusebius wrote within Constantine's political-religious context and presents the emperor as Christian patron. Chronology of particular construction steps is not precise in these chapters."
+    },
+    {
+      "topic": "Dedicatory date versus ordered episode window",
+      "supported": [
+        "Eusebius IV associates dedication of the Jerusalem church with Constantine's tricennalia / thirtieth regnal year (IV.40–41 and IV.47); this is evidence for a 335 dedication, distinct from earlier patronage/construction."
+      ],
+      "unsupported_or_limited": [
+        "Do not make the dedication a 326–330 event. The ordered episode window ends before 335.",
+        "The consulted passage does not establish an exact dedication day."
+      ],
+      "urlCandidate": "https://www.newadvent.org/fathers/25024.htm",
+      "urlActuallyConsulted": "https://www.newadvent.org/fathers/25024.htm",
+      "locator": "Eusebius, Life of Constantine IV.40–41, IV.47.",
+      "coverageActuallyRead": "Relevant full chapter text, including the tricennalia/dedication framing and regnal-year statement.",
+      "sourceType": "Primary literary source.",
+      "dateAndBias": "Same panegyrical source context as Book III; useful for what Eusebius reports about dedication, not a construction log."
+    },
+    {
+      "topic": "Institutional archaeology and phases",
+      "supported": [
+        "IAA report on the 2022 excavation records quarry use, cultivation plots and graves before the Christian complex; it describes fourth-century channels/cisterns and early-Christian construction phases.",
+        "The report identifies fourth-century construction activity but reports contexts including coins of Constantius II and Valens (337–378); therefore the excavated sequence must not be flattened into one securely Constantinian building event.",
+        "The report says the eastern rotunda remains do not yet permit easy architectural reconstruction and notes differences between the excavated rotunda circumference and the present church.",
+        "A 2024 Custodia update relaying the excavation team says the identified Hadrianic-period cult structure is smaller than an earlier reconstruction and is hardly identifiable as a Capitolium; this cautions against stating Venus-temple identification as settled.",
+        "Sapienza's September 2026 institutional update says the excavation phase is complete but study, documentation, archaeometric work, and reconstruction of phases continue. The 2026 volume is announced/published as an open-access ebook by its publisher; its full text was not read for this audit."
+      ],
+      "unsupported_or_limited": [
+        "Neither cited excavation page independently certifies that the tomb is the historical tomb of Jesus or that a Venus temple was physically built directly over it.",
+        "Do not map the current church, medieval rotunda/chapels, Crusader fabric, or later restorations as a 325/326–330 plan.",
+        "The 2024 Custodia account is a project-team press update, not a substitute for full excavation publication; report its interpretation as attributed and provisional."
+      ],
+      "urlCandidate": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26542",
+      "urlActuallyConsulted": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=26542",
+      "locator": "Israel Antiquities Authority, Hadashot Arkheologiyot, Stasolla report published 1 September 2024 on the 2022 excavation; paragraphs and caption text exposed by browser.",
+      "coverageActuallyRead": "Full report page text, caption text and copyright note as exposed by browser. Figure pixels were not inspected; no visual or geometric verification is claimed.",
+      "sourceType": "Institutional archaeological field report.",
+      "dateAndBias": "2022 excavation season; report published 1 September 2024, preliminary and confined to sampled areas."
+    },
+    {
+      "topic": "New institutional publication/update",
+      "supported": [
+        "Sapienza University page dated 8 September 2026 reports excavations entrusted in 2019, fieldwork gaining momentum with floor restoration, excavation phase complete, and ongoing study/documentation/interpretation.",
+        "TS Edizioni publisher listing identifies Hagia Polis Project, vol. 1, Project and Methodology (2026), as an open-access PDF ebook with DOI 10.82021/9791254714621.",
+        "Custodia page dated 19 September 2026 reports presentation of the volume."
+      ],
+      "unsupported_or_limited": [
+        "The publisher product page and institutional announcements were consulted, but the full 604-page volume was not read. No claims about its detailed conclusions or plates are attributed here.",
+        "No map/image license was established for the volume's individual figures."
+      ],
+      "urlCandidate": "https://uniroma1.web.uniroma1.it/en/notizia/sapienza-presents-research-findings-and-progress-restoration-project-church-holy-sepulchre",
+      "urlActuallyConsulted": "https://uniroma1.web.uniroma1.it/en/notizia/sapienza-presents-research-findings-and-progress-restoration-project-church-holy-sepulchre",
+      "locator": "Sapienza institutional update, 8 Sep 2026, paragraphs 5–16; publisher listing for vol. 1, 2026.",
+      "coverageActuallyRead": "Full Sapienza update page. Publisher listing metadata/description only; no full book access/read.",
+      "sourceType": "Institutional project status and publisher bibliographic record.",
+      "dateAndBias": "Current institutional status as of September 2026; descriptions do not replace publication-level archaeological argument."
+    },
+    {
+      "topic": "Aelia Capitolina geography and cartographic controls",
+      "supported": [
+        "Atrash and Mazor's IAA-published 2022 article reconstructs Aelia Capitolina's urban plan and boundaries using epigraphy and accumulated archaeological evidence; it is a candidate control for Roman-period street orientation/bounds.",
+        "The consulted article landing page exposed its abstract and metadata, not the full article or map plates. Treat the paper as a candidate until full text/maps are checked.",
+        "A schematic Roman Jerusalem map on Wikimedia Commons is explicitly licensed CC BY-SA 4.0 on its file page; that is a reuse candidate only, not an archaeological authority.",
+        "Aelia Capitolina is a Roman-period geographic frame, but a Hadrianic/post-135 street reconstruction is not automatically a precise snapshot of 326–330."
+      ],
+      "unsupported_or_limited": [
+        "Do not use a present-day Old City / current Holy Sepulchre plan as a 325 plan.",
+        "Do not project medieval church footprint, later chapels/rotunda fabric, or modern street/custodial boundaries into the episode.",
+        "The IAA article page did not expose a reuse license; no figures should be copied absent explicit permission/license.",
+        "The Wikimedia schematic's CC BY-SA 4.0 allows reuse subject to attribution/share-alike, but its own modern reconstruction needs scholarly cross-checking before geographic reliance."
+      ],
+      "sources": [
+        {
+          "urlCandidate": "https://publications.iaa.org.il/cornerstone/vol10/iss1/13/",
+          "urlActuallyConsulted": "https://publications.iaa.org.il/cornerstone/vol10/iss1/13/",
+          "locator": "Atrash & Mazor, Cornerstone 10 (2022), Article 13, abstract and metadata.",
+          "coverageActuallyRead": "Landing-page abstract/metadata only, not full PDF or map plates.",
+          "sourceType": "Archaeology journal article; candidate geography control.",
+          "rights": "No explicit figure-reuse license found on consulted page."
+        },
+        {
+          "urlCandidate": "https://commons.wikimedia.org/wiki/File:Roman_Jerusalem.svg",
+          "urlActuallyConsulted": "https://commons.wikimedia.org/wiki/File:Roman_Jerusalem.svg",
+          "locator": "File page, author/date/license metadata and map description.",
+          "coverageActuallyRead": "File page metadata; schematic itself identified as modern map.",
+          "sourceType": "Modern schematic reconstruction, secondary cartographic aid.",
+          "rights": "CC BY-SA 4.0 shown on file page; attribution and share-alike conditions apply."
+        }
+      ]
+    },
+    {
+      "topic": "Helena and Cross traditions",
+      "supported": [
+        "Eusebius VC III.25–40 does not name Helena and does not report a discovery of the Cross; his narrative here centers Constantine, governors, Macarius, work and furnishings.",
+        "Do not use Helena as automatic proof of the exact commencement date, tomb identification, or Cross discovery in episode 13."
+      ],
+      "unsupported_or_limited": [
+        "This limited audit does not adjudicate the historicity of later Helena/Cross traditions; later accounts must be dated and attributed separately rather than back-projected into Eusebius III.25–40."
+      ],
+      "urlCandidate": "https://www.newadvent.org/fathers/25023.htm",
+      "urlActuallyConsulted": "https://www.newadvent.org/fathers/25023.htm",
+      "locator": "Eusebius, Life of Constantine III.25–40.",
+      "coverageActuallyRead": "Full specified chapter span."
+    }
+  ],
+  "practicalChronologyGuardrail": "For the ordered 326–330 episode, evidence supports imperial orders/patronage and construction activity in Eusebius's account, but not a securely exact start year. Keep the 335 dedication outside the episode. The site/temple/tomb identifications and later Helena/Cross narrative require attribution and must not be upgraded into archaeological certainty.",
+  "rightsGuardrail": "IAA images remain copyright protected; no explicit license for the article figures was established. Custodia September 2026 announcement restricts image/text reuse; its individual figures were not licensed or copied. Roman Jerusalem SVG is CC BY-SA 4.0 with attribution and ShareAlike; project copy is research only.",
+  "methodAndLimits": [
+    "Source URLs are distinguished between candidates and pages actually consulted.",
+    "Coverage reports whether full text, a report page, abstract, or metadata alone was read.",
+    "This is a source audit only; no map geometry was reviewed and no design/architecture decisions were made."
+  ]
+}

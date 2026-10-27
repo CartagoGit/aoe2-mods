@@ -1,0 +1,1498 @@
+{
+  "audit": {
+    "title": "Imperial Church 28 Thessalonica mechanical map and objective audit",
+    "reviewDate": "2026-10-15",
+    "unit": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+    "episodeId": "28-law-and-local-reception-thessalonica",
+    "order": 28,
+    "scope": "Read-only mechanical review of coordinate frame, entity/zone placement, corridor widths, duplication/proximity, main-only budget, and objective identity/payment/receipt/departure chain. No historical, terrain, native-navigation, architecture, or gameplay approval.",
+    "mutations": {
+      "repository": false,
+      "git": false,
+      "DelendAI": false
+    },
+    "filesRead": [
+      "docs/design/odysseys/imperial-church.json (episodes[] entry 28)",
+      "docs/design/maps/imperial-church/odyssey/28-law-and-local-reception-thessalonica.svg",
+      "tools/design/geography.py (tile_point)",
+      "tools/design/episode_dossier.validator.py (audit_dossier)",
+      "packages/schemas/scenario-capability.schema.ts (predicate schema)",
+      "docs/research/odyssey-research/thessalonica380-visual-reference-candidates.json",
+      "docs/research/odyssey-research/reference-manifest.json",
+      "docs/research/odyssey-research/images/thessalonica-galerius-arch-modern.jpg",
+      "docs/research/odyssey-research/images/thessalonica-roman-forum-modern.jpg",
+      "/tmp/thessaloniki-monuments.pdf physical page 12 (printed 18–19), physical page 19 back cover"
+    ],
+    "method": [
+      "Recomputed all hubs with existing geography.py tile_point and checked exact match at stored 2-decimal precision.",
+      "Read SVG as N up/E right; tile y increases south, so north tile coordinate is 399-y.",
+      "Applied authored hub-relative offsets and radii to every main/optional entity and zone; checked frame and pairwise proximities.",
+      "Measured every corridor polyline segment; used half its declared full width for conservative frame margins.",
+      "Ran existing read-only episode_dossier.validator.audit_dossier for episode 28: zero diagnostics.",
+      "Summed only main objective resource-transaction predicates; excluded secondary task rewards and costs from the main-solvency calculation."
+    ],
+    "limits": [
+      "SVG draws corridors with a fixed 3-pixel stroke, not their full declared width of 8/10 tiles; corridor frame margins are computed from the authored width.",
+      "No DEM/raster, ancient shore or land mask, building/unit footprint data, terrain collision model, or native pathfinding evidence. Modern coastline controls do not certify ancient land/water.",
+      "Municipal map is copyrighted and broad-period/current-street orientation only; consulted temporarily, not included.",
+      "Modern photographs and geotags cannot establish the exact 380 appearance or imperial office/headquarters.",
+      "Static authoring checks and arithmetic do not prove native triggers, playable economy, difficulty, pacing or a game run."
+    ]
+  },
+  "staticAuthoringAudit": {
+    "helper": "tools/design/episode_dossier.validator.py audit_dossier",
+    "diagnostics": [],
+    "result": "zero static dossier diagnostics; not native schema/runtime/game verification"
+  },
+  "counts": {
+    "mapSize": 400,
+    "tileBounds": "0..399 inclusive",
+    "mainHubs": 6,
+    "mainEntities": 7,
+    "optionalObjectives": 8,
+    "optionalEntities": 9,
+    "totalEntityCenters": 16,
+    "mainZones": 6,
+    "optionalZones": 11,
+    "totalZones": 17,
+    "mainCorridors": 5,
+    "screens": 48,
+    "enemyTotalCapByDifficulty": {
+      "easy": 0,
+      "standard": 0,
+      "hard": 0
+    }
+  },
+  "geometry": {
+    "bboxWgs84": [
+      22.926,
+      40.628,
+      22.978,
+      40.659
+    ],
+    "projection": "WGS84, cosine-corrected longitude, square padding",
+    "axisConvention": "N up; E right; tile y increases south",
+    "hubs": [
+      {
+        "id": "hub-1",
+        "name": "Fictional inland working-copy court",
+        "lonLat": [
+          22.944,
+          40.64
+        ],
+        "storedTileXY": [
+          144.69,
+          231.1
+        ],
+        "recomputedTileXY": [
+          144.69,
+          231.1
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 167.9
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 132.69,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-2",
+        "name": "Fictional western issue-context yard",
+        "lonLat": [
+          22.934,
+          40.642
+        ],
+        "storedTileXY": [
+          76.18,
+          213.04
+        ],
+        "recomputedTileXY": [
+          76.18,
+          213.04
+        ],
+        "tileEN": {
+          "east": 76.18,
+          "north": 185.96
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 64.18,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-3",
+        "name": "Fictional northeastern retained-record court",
+        "lonLat": [
+          22.955,
+          40.648
+        ],
+        "storedTileXY": [
+          220.05,
+          158.87
+        ],
+        "recomputedTileXY": [
+          220.05,
+          158.87
+        ],
+        "tileEN": {
+          "east": 220.05,
+          "north": 240.13
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 146.87,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-4",
+        "name": "Fictional southeastern local outbound court",
+        "lonLat": [
+          22.955,
+          40.635
+        ],
+        "storedTileXY": [
+          220.05,
+          276.25
+        ],
+        "recomputedTileXY": [
+          220.05,
+          276.25
+        ],
+        "tileEN": {
+          "east": 220.05,
+          "north": 122.75
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 110.75,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-5",
+        "name": "Fictional southwestern ordinary supply court",
+        "lonLat": [
+          22.934,
+          40.638
+        ],
+        "storedTileXY": [
+          76.18,
+          249.16
+        ],
+        "recomputedTileXY": [
+          76.18,
+          249.16
+        ],
+        "tileEN": {
+          "east": 76.18,
+          "north": 149.84
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 64.18,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-6",
+        "name": "Fictional northern courier return court",
+        "lonLat": [
+          22.944,
+          40.652
+        ],
+        "storedTileXY": [
+          144.69,
+          122.75
+        ],
+        "recomputedTileXY": [
+          144.69,
+          122.75
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 276.25
+        },
+        "radiusTiles": 12,
+        "frameMarginAfterRadius": 110.75,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      }
+    ],
+    "allHubPairDistances": [
+      {
+        "a": "hub-1",
+        "b": "hub-2",
+        "centerDistanceTiles": 70.85,
+        "edgeClearanceAfterBothHubRadii": 46.85
+      },
+      {
+        "a": "hub-1",
+        "b": "hub-3",
+        "centerDistanceTiles": 104.39,
+        "edgeClearanceAfterBothHubRadii": 80.39
+      },
+      {
+        "a": "hub-1",
+        "b": "hub-4",
+        "centerDistanceTiles": 87.85,
+        "edgeClearanceAfterBothHubRadii": 63.85
+      },
+      {
+        "a": "hub-1",
+        "b": "hub-5",
+        "centerDistanceTiles": 70.85,
+        "edgeClearanceAfterBothHubRadii": 46.85
+      },
+      {
+        "a": "hub-1",
+        "b": "hub-6",
+        "centerDistanceTiles": 108.35,
+        "edgeClearanceAfterBothHubRadii": 84.35
+      },
+      {
+        "a": "hub-2",
+        "b": "hub-3",
+        "centerDistanceTiles": 153.73,
+        "edgeClearanceAfterBothHubRadii": 129.73
+      },
+      {
+        "a": "hub-2",
+        "b": "hub-4",
+        "centerDistanceTiles": 157.14,
+        "edgeClearanceAfterBothHubRadii": 133.14
+      },
+      {
+        "a": "hub-2",
+        "b": "hub-5",
+        "centerDistanceTiles": 36.12,
+        "edgeClearanceAfterBothHubRadii": 12.12
+      },
+      {
+        "a": "hub-2",
+        "b": "hub-6",
+        "centerDistanceTiles": 113.34,
+        "edgeClearanceAfterBothHubRadii": 89.34
+      },
+      {
+        "a": "hub-3",
+        "b": "hub-4",
+        "centerDistanceTiles": 117.38,
+        "edgeClearanceAfterBothHubRadii": 93.38
+      },
+      {
+        "a": "hub-3",
+        "b": "hub-5",
+        "centerDistanceTiles": 169.86,
+        "edgeClearanceAfterBothHubRadii": 145.86
+      },
+      {
+        "a": "hub-3",
+        "b": "hub-6",
+        "centerDistanceTiles": 83.57,
+        "edgeClearanceAfterBothHubRadii": 59.57
+      },
+      {
+        "a": "hub-4",
+        "b": "hub-5",
+        "centerDistanceTiles": 146.4,
+        "edgeClearanceAfterBothHubRadii": 122.4
+      },
+      {
+        "a": "hub-4",
+        "b": "hub-6",
+        "centerDistanceTiles": 171.0,
+        "edgeClearanceAfterBothHubRadii": 147.0
+      },
+      {
+        "a": "hub-5",
+        "b": "hub-6",
+        "centerDistanceTiles": 143.78,
+        "edgeClearanceAfterBothHubRadii": 119.78
+      }
+    ],
+    "hubSummary": {
+      "minimumFrameMarginAfterRadiusTiles": 64.18,
+      "minimumPairwiseEdgeClearanceTiles": 12.12,
+      "closestPair": {
+        "a": "hub-2",
+        "b": "hub-5",
+        "centerDistanceTiles": 36.12,
+        "edgeClearanceAfterBothHubRadii": 12.12
+      }
+    },
+    "entities": [
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.issue-place-context-1",
+        "role": "fictional-local-working-context",
+        "group": "main",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -14,
+          8
+        ],
+        "tileXY": [
+          62.18000000000001,
+          221.04
+        ],
+        "tileEN": {
+          "east": 62.18,
+          "north": 177.96
+        },
+        "offsetRadius": 16.12,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 62.18
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.named-addressee-context-1",
+        "role": "fictional-local-working-context",
+        "group": "main",
+        "initialHub": "hub-3",
+        "offsetTiles": [
+          0,
+          8
+        ],
+        "tileXY": [
+          220.05,
+          166.87
+        ],
+        "tileEN": {
+          "east": 220.05,
+          "north": 232.13
+        },
+        "offsetRadius": 8.0,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 166.87
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.norm-and-evidence-context-1",
+        "role": "fictional-local-working-context",
+        "group": "main",
+        "initialHub": "hub-5",
+        "offsetTiles": [
+          14,
+          8
+        ],
+        "tileXY": [
+          90.18,
+          257.15999999999997
+        ],
+        "tileEN": {
+          "east": 90.18,
+          "north": 141.84
+        },
+        "offsetRadius": 16.12,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 90.18
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.outbound-original-courier-1",
+        "role": "fictional-local-courier",
+        "group": "main",
+        "initialHub": "hub-6",
+        "offsetTiles": [
+          -14,
+          16
+        ],
+        "tileXY": [
+          130.69,
+          138.75
+        ],
+        "tileEN": {
+          "east": 130.69,
+          "north": 260.25
+        },
+        "offsetRadius": 21.26,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 130.69
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.record-original-courier-1",
+        "role": "fictional-local-courier",
+        "group": "main",
+        "initialHub": "hub-6",
+        "offsetTiles": [
+          0,
+          16
+        ],
+        "tileXY": [
+          144.69,
+          138.75
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 260.25
+        },
+        "offsetRadius": 16.0,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 138.75
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.outbound-local-brief-1",
+        "role": "fictional-local-working-product",
+        "group": "main",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          14,
+          16
+        ],
+        "tileXY": [
+          158.69,
+          247.1
+        ],
+        "tileEN": {
+          "east": 158.69,
+          "north": 151.9
+        },
+        "offsetRadius": 21.26,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 151.9
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.retained-local-index-1",
+        "role": "fictional-local-working-product",
+        "group": "main",
+        "initialHub": "hub-1",
+        "offsetTiles": [
+          -14,
+          24
+        ],
+        "tileXY": [
+          130.69,
+          255.1
+        ],
+        "tileEN": {
+          "east": 130.69,
+          "north": 143.9
+        },
+        "offsetRadius": 27.78,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 130.69
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-1.entity-1",
+        "role": "copy",
+        "group": "side-1",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -6,
+          3
+        ],
+        "tileXY": [
+          70.18,
+          216.04
+        ],
+        "tileEN": {
+          "east": 70.18,
+          "north": 182.96
+        },
+        "offsetRadius": 6.71,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 70.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-1.entity-2",
+        "role": "copy",
+        "group": "side-1",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -6,
+          6
+        ],
+        "tileXY": [
+          70.18,
+          219.04
+        ],
+        "tileEN": {
+          "east": 70.18,
+          "north": 179.96
+        },
+        "offsetRadius": 8.49,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 70.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-2.entity-1",
+        "role": "aid",
+        "group": "side-2",
+        "initialHub": "hub-5",
+        "offsetTiles": [
+          -6,
+          3
+        ],
+        "tileXY": [
+          70.18,
+          252.16
+        ],
+        "tileEN": {
+          "east": 70.18,
+          "north": 146.84
+        },
+        "offsetRadius": 6.71,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 70.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-2.entity-2",
+        "role": "aid",
+        "group": "side-2",
+        "initialHub": "hub-5",
+        "offsetTiles": [
+          -6,
+          6
+        ],
+        "tileXY": [
+          70.18,
+          255.16
+        ],
+        "tileEN": {
+          "east": 70.18,
+          "north": 143.84
+        },
+        "offsetRadius": 8.49,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 70.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-3.entity-1",
+        "role": "repair",
+        "group": "side-3",
+        "initialHub": "hub-4",
+        "offsetTiles": [
+          -6,
+          3
+        ],
+        "tileXY": [
+          214.05,
+          279.25
+        ],
+        "tileEN": {
+          "east": 214.05,
+          "north": 119.75
+        },
+        "offsetRadius": 6.71,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-4.entity-1",
+        "role": "trade",
+        "group": "side-4",
+        "initialHub": "hub-2",
+        "offsetTiles": [
+          -10,
+          -6
+        ],
+        "tileXY": [
+          66.18,
+          207.04
+        ],
+        "tileEN": {
+          "east": 66.18,
+          "north": 191.96
+        },
+        "offsetRadius": 11.66,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 66.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-5.entity-1",
+        "role": "guide",
+        "group": "side-5",
+        "initialHub": "hub-5",
+        "offsetTiles": [
+          -10,
+          -6
+        ],
+        "tileXY": [
+          66.18,
+          243.16
+        ],
+        "tileEN": {
+          "east": 66.18,
+          "north": 155.84
+        },
+        "offsetRadius": 11.66,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 66.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-7.entity-1",
+        "role": "extract",
+        "group": "side-7",
+        "initialHub": "hub-3",
+        "offsetTiles": [
+          10,
+          -6
+        ],
+        "tileXY": [
+          230.05,
+          152.87
+        ],
+        "tileEN": {
+          "east": 230.05,
+          "north": 246.13
+        },
+        "offsetRadius": 11.66,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": true,
+        "frameMarginTiles": 152.87
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-7.entity-2",
+        "role": "extract",
+        "group": "side-7",
+        "initialHub": "hub-3",
+        "offsetTiles": [
+          10,
+          -9
+        ],
+        "tileXY": [
+          230.05,
+          149.87
+        ],
+        "tileEN": {
+          "east": 230.05,
+          "north": 249.13
+        },
+        "offsetRadius": 13.45,
+        "hubRadiusTiles": 12,
+        "withinHubRadius": false,
+        "frameMarginTiles": 149.87
+      }
+    ],
+    "zones": [
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-1",
+        "group": "main",
+        "hub": "hub-1",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          144.69,
+          231.1
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 167.9
+        },
+        "frameMarginAfterRadius": 141.69
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-2",
+        "group": "main",
+        "hub": "hub-2",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          76.18,
+          213.04
+        ],
+        "tileEN": {
+          "east": 76.18,
+          "north": 185.96
+        },
+        "frameMarginAfterRadius": 73.18
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-3",
+        "group": "main",
+        "hub": "hub-3",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          220.05,
+          158.87
+        ],
+        "tileEN": {
+          "east": 220.05,
+          "north": 240.13
+        },
+        "frameMarginAfterRadius": 155.87
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-4",
+        "group": "main",
+        "hub": "hub-4",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          220.05,
+          276.25
+        ],
+        "tileEN": {
+          "east": 220.05,
+          "north": 122.75
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-5",
+        "group": "main",
+        "hub": "hub-5",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          76.18,
+          249.16
+        ],
+        "tileEN": {
+          "east": 76.18,
+          "north": 149.84
+        },
+        "frameMarginAfterRadius": 73.18
+      },
+      {
+        "id": "imperial-church.28-law-and-local-reception-thessalonica.destination-6",
+        "group": "main",
+        "hub": "hub-6",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          144.69,
+          122.75
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 276.25
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-1.zone-1",
+        "group": "side-1",
+        "hub": "hub-1",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          152.69,
+          231.1
+        ],
+        "tileEN": {
+          "east": 152.69,
+          "north": 167.9
+        },
+        "frameMarginAfterRadius": 149.69
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-2.zone-1",
+        "group": "side-2",
+        "hub": "hub-6",
+        "offsetTiles": [
+          -8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          136.69,
+          122.75
+        ],
+        "tileEN": {
+          "east": 136.69,
+          "north": 276.25
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-2.zone-2",
+        "group": "side-2",
+        "hub": "hub-6",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          152.69,
+          122.75
+        ],
+        "tileEN": {
+          "east": 152.69,
+          "north": 276.25
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-3.zone-1",
+        "group": "side-3",
+        "hub": "hub-4",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          228.05,
+          276.25
+        ],
+        "tileEN": {
+          "east": 228.05,
+          "north": 122.75
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-4.zone-1",
+        "group": "side-4",
+        "hub": "hub-3",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          228.05,
+          158.87
+        ],
+        "tileEN": {
+          "east": 228.05,
+          "north": 240.13
+        },
+        "frameMarginAfterRadius": 155.87
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-5.zone-1",
+        "group": "side-5",
+        "hub": "hub-4",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          228.05,
+          276.25
+        ],
+        "tileEN": {
+          "east": 228.05,
+          "north": 122.75
+        },
+        "frameMarginAfterRadius": 119.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-6.zone-1",
+        "group": "side-6",
+        "hub": "hub-2",
+        "offsetTiles": [
+          0,
+          -8
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          76.18,
+          205.04
+        ],
+        "tileEN": {
+          "east": 76.18,
+          "north": 193.96
+        },
+        "frameMarginAfterRadius": 73.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-6.zone-2",
+        "group": "side-6",
+        "hub": "hub-6",
+        "offsetTiles": [
+          0,
+          8
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          144.69,
+          130.75
+        ],
+        "tileEN": {
+          "east": 144.69,
+          "north": 268.25
+        },
+        "frameMarginAfterRadius": 127.75
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-7.zone-1",
+        "group": "side-7",
+        "hub": "hub-5",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          84.18,
+          249.16
+        ],
+        "tileEN": {
+          "east": 84.18,
+          "north": 149.84
+        },
+        "frameMarginAfterRadius": 81.18
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-8.zone-1",
+        "group": "side-8",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          136.69,
+          231.1
+        ],
+        "tileEN": {
+          "east": 136.69,
+          "north": 167.9
+        },
+        "frameMarginAfterRadius": 133.69
+      },
+      {
+        "id": "28-law-and-local-reception-thessalonica.side-8.zone-2",
+        "group": "side-8",
+        "hub": "hub-4",
+        "offsetTiles": [
+          8,
+          0
+        ],
+        "radiusTiles": 3,
+        "tileXY": [
+          228.05,
+          276.25
+        ],
+        "tileEN": {
+          "east": 228.05,
+          "north": 122.75
+        },
+        "frameMarginAfterRadius": 119.75
+      }
+    ],
+    "proximity": {
+      "actorPairsAtOrBelow4Tiles": [
+        {
+          "distanceTiles": 3.0,
+          "a": "28-law-and-local-reception-thessalonica.side-1.entity-1",
+          "b": "28-law-and-local-reception-thessalonica.side-1.entity-2",
+          "groups": [
+            "side-1",
+            "side-1"
+          ]
+        },
+        {
+          "distanceTiles": 3.0,
+          "a": "28-law-and-local-reception-thessalonica.side-2.entity-1",
+          "b": "28-law-and-local-reception-thessalonica.side-2.entity-2",
+          "groups": [
+            "side-2",
+            "side-2"
+          ]
+        },
+        {
+          "distanceTiles": 3.0,
+          "a": "28-law-and-local-reception-thessalonica.side-7.entity-1",
+          "b": "28-law-and-local-reception-thessalonica.side-7.entity-2",
+          "groups": [
+            "side-7",
+            "side-7"
+          ]
+        }
+      ],
+      "nearestActorToAnyZoneEdgeClearanceTiles": 3.32,
+      "nearestActor": "28-law-and-local-reception-thessalonica.side-7.entity-1",
+      "nearestZone": "28-law-and-local-reception-thessalonica.side-4.zone-1",
+      "zoneOverlapPairs": [
+        {
+          "a": "28-law-and-local-reception-thessalonica.side-3.zone-1",
+          "b": "28-law-and-local-reception-thessalonica.side-5.zone-1",
+          "groups": [
+            "side-3",
+            "side-5"
+          ],
+          "centerDistanceTiles": 0.0,
+          "edgeClearanceTiles": -6.0,
+          "exactSameCenter": true
+        },
+        {
+          "a": "28-law-and-local-reception-thessalonica.side-3.zone-1",
+          "b": "28-law-and-local-reception-thessalonica.side-8.zone-2",
+          "groups": [
+            "side-3",
+            "side-8"
+          ],
+          "centerDistanceTiles": 0.0,
+          "edgeClearanceTiles": -6.0,
+          "exactSameCenter": true
+        },
+        {
+          "a": "28-law-and-local-reception-thessalonica.side-5.zone-1",
+          "b": "28-law-and-local-reception-thessalonica.side-8.zone-2",
+          "groups": [
+            "side-5",
+            "side-8"
+          ],
+          "centerDistanceTiles": 0.0,
+          "edgeClearanceTiles": -6.0,
+          "exactSameCenter": true
+        }
+      ],
+      "exactSharedZoneCenters": [
+        {
+          "tileXY": [
+            228.05,
+            276.25
+          ],
+          "tileEN": {
+            "east": 228.05,
+            "north": 122.75
+          },
+          "radiusTiles": 3,
+          "zones": [
+            {
+              "id": "28-law-and-local-reception-thessalonica.side-3.zone-1",
+              "group": "side-3"
+            },
+            {
+              "id": "28-law-and-local-reception-thessalonica.side-5.zone-1",
+              "group": "side-5"
+            },
+            {
+              "id": "28-law-and-local-reception-thessalonica.side-8.zone-2",
+              "group": "side-8"
+            }
+          ]
+        }
+      ],
+      "actorFootprintCollisionAssurance": "not determined: native footprints/collision radii are absent"
+    },
+    "frame": {
+      "minEntityCenterFrameMarginTiles": 62.18,
+      "minZoneFrameMarginAfterRadiusTiles": 73.18,
+      "minHubFrameMarginAfterRadiusTiles": 64.18,
+      "allEntityCentersInside": true,
+      "allZoneDisksInside": true,
+      "allHubDisksInside": true
+    },
+    "corridors": [
+      {
+        "id": "western-context-loop",
+        "mode": "land",
+        "hubOrder": [
+          "hub-2",
+          "hub-5",
+          "hub-1"
+        ],
+        "widthTiles": 10,
+        "widthMeaning": "declared full width; half-width applied to frame margin",
+        "segmentLengthsTiles": [
+          36.12,
+          70.85
+        ],
+        "polylineLengthTiles": 106.97,
+        "declaredStraightLengthTiles": 106.97,
+        "frameMarginAfterHalfWidth": 71.18
+      },
+      {
+        "id": "northeastern-record-circuit",
+        "mode": "land",
+        "hubOrder": [
+          "hub-1",
+          "hub-3",
+          "hub-6"
+        ],
+        "widthTiles": 8,
+        "widthMeaning": "declared full width; half-width applied to frame margin",
+        "segmentLengthsTiles": [
+          104.39,
+          83.57
+        ],
+        "polylineLengthTiles": 187.96,
+        "declaredStraightLengthTiles": 187.95,
+        "frameMarginAfterHalfWidth": 118.75
+      },
+      {
+        "id": "southeastern-outbound-circuit",
+        "mode": "land",
+        "hubOrder": [
+          "hub-1",
+          "hub-4",
+          "hub-6"
+        ],
+        "widthTiles": 10,
+        "widthMeaning": "declared full width; half-width applied to frame margin",
+        "segmentLengthsTiles": [
+          87.85,
+          171.0
+        ],
+        "polylineLengthTiles": 258.85,
+        "declaredStraightLengthTiles": 258.85,
+        "frameMarginAfterHalfWidth": 117.75
+      },
+      {
+        "id": "upper-relief",
+        "mode": "land",
+        "hubOrder": [
+          "hub-2",
+          "hub-6",
+          "hub-3"
+        ],
+        "widthTiles": 8,
+        "widthMeaning": "declared full width; half-width applied to frame margin",
+        "segmentLengthsTiles": [
+          113.34,
+          83.57
+        ],
+        "polylineLengthTiles": 196.91,
+        "declaredStraightLengthTiles": 196.91,
+        "frameMarginAfterHalfWidth": 72.18
+      },
+      {
+        "id": "lower-relief",
+        "mode": "land",
+        "hubOrder": [
+          "hub-5",
+          "hub-4"
+        ],
+        "widthTiles": 8,
+        "widthMeaning": "declared full width; half-width applied to frame margin",
+        "segmentLengthsTiles": [
+          146.4
+        ],
+        "polylineLengthTiles": 146.4,
+        "declaredStraightLengthTiles": 146.4,
+        "frameMarginAfterHalfWidth": 72.18
+      }
+    ],
+    "corridorFrame": {
+      "minimumMarginAfterHalfFullWidthTiles": 71.18,
+      "allCenterlinesPlusHalfWidthInsideFrame": true,
+      "assessment": "frame containment only, not a continuous land-route or pathfinding certification"
+    },
+    "svgVisualAudit": {
+      "hubMarkers": 6,
+      "corridorCenterlines": 5,
+      "fixedStrokeWidthPixels": 3,
+      "declaredWidthsTiles": {
+        "western-context-loop": 10,
+        "northeastern-record-circuit": 8,
+        "southeastern-outbound-circuit": 10,
+        "upper-relief": 8,
+        "lower-relief": 8
+      },
+      "modernShorelineControlSegments": 2,
+      "schematicWaterControl": null,
+      "ancientLandWaterMask": false
+    },
+    "entityHubRadii": {
+      "nominalHubRadiusTiles": 12,
+      "entitiesOutsideTheirInitialHubDiskCount": 7,
+      "entitiesOutsideTheirInitialHubDisk": [
+        "imperial-church.28-law-and-local-reception-thessalonica.issue-place-context-1",
+        "imperial-church.28-law-and-local-reception-thessalonica.norm-and-evidence-context-1",
+        "imperial-church.28-law-and-local-reception-thessalonica.outbound-original-courier-1",
+        "imperial-church.28-law-and-local-reception-thessalonica.record-original-courier-1",
+        "imperial-church.28-law-and-local-reception-thessalonica.outbound-local-brief-1",
+        "imperial-church.28-law-and-local-reception-thessalonica.retained-local-index-1",
+        "28-law-and-local-reception-thessalonica.side-7.entity-2"
+      ],
+      "interpretation": "These authored actors/products are still within map frame, but their offsets exceed the drawn 12-tile hub circle. The authoring helper does not enforce entity containment within that circle; confirm whether the circle is only a district marker or a placement footprint during native map review."
+    }
+  },
+  "mainObjectiveChain": {
+    "o1": "Collect three separate local contexts and deliver each to destination-1 (hub-1); collect both unique original couriers staged at hub-6.",
+    "o2": {
+      "payment": "one atomic once-only 160 wood + 40 gold transaction at destination-1, paidFlag o2.req-1.paid",
+      "generation": "two distinct once-only derived identities (outbound-local-brief-1, retained-local-index-1), each references the same three collected inputs and the exact o2 payment receipt; no new debit",
+      "assessment": "the two generated products do not substitute for one another"
+    },
+    "o3": {
+      "deliveries": "outbound brief + outbound courier to destination-4 (SE); retained index + record courier to destination-3 (NE)",
+      "payment": "one atomic once-only transaction with allocations: destination-4 gets 140 food + 60 wood; destination-3 gets 100 food + 60 wood (total 240 food + 120 wood)",
+      "receipts": "req-3 is outbound courier receipt at destination-4; req-4 is record courier receipt at destination-3",
+      "wording": "objective says pay once at each court; contract models a single atomic transaction with two receiver allocations, not two independent payment receipts"
+    },
+    "o4": {
+      "outboundCourier": "departure only after o3.req-3 (SE receipt), then same identity arrives at destination-6 (north) after its own departure",
+      "recordCourier": "departure only after o3.req-4 (NE receipt), then same identity arrives at destination-6 after its own departure",
+      "assessment": "separate matched receipt/departure/return chains; initial northern placement cannot satisfy arrivalAfterDeparture; no off-map Constantinople delivery is represented"
+    },
+    "causality": "Sequential o1→o2→o3→o4. Records of collection/receipt do not assert current custody. Generated products are fictional gameplay objects."
+  },
+  "mainOnlyBudget": {
+    "mainMandatoryTransactions": {
+      "food": 240,
+      "wood": 280,
+      "gold": 40,
+      "stone": 0
+    },
+    "breakdown": {
+      "o2": {
+        "wood": 160,
+        "gold": 40
+      },
+      "o3": {
+        "food": 240,
+        "wood": 120
+      }
+    },
+    "secondaryObjectivesExcluded": true,
+    "reservedOptionalRewards": {
+      "food": 550,
+      "wood": 200,
+      "gold": 25,
+      "stone": 0
+    },
+    "levels": {
+      "easy": {
+        "startingResources": {
+          "food": 229,
+          "wood": 161,
+          "gold": 69,
+          "stone": 23
+        },
+        "gatherableBank": {
+          "food": 1491,
+          "wood": 939,
+          "gold": 216,
+          "stone": 117
+        },
+        "grossAccessibleIncludingOptionalReserve": {
+          "food": 1720,
+          "wood": 1100,
+          "gold": 285,
+          "stone": 140
+        },
+        "reservedOptionalRewardsExcluded": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        },
+        "accessibleWithoutOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "accessibleAfterSubtractingReservedOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mandatoryPlusProtectedRecoveryPlusReplacementPlusMargin": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true,
+        "maxVillagers": 12,
+        "enemyTotalCap": 0,
+        "enemyProduction": false,
+        "durationEstimateMinutes": [
+          30,
+          55
+        ],
+        "difficultyAndPacing": "design estimate only; native calibration/playability not measured"
+      },
+      "standard": {
+        "startingResources": {
+          "food": 200,
+          "wood": 140,
+          "gold": 60,
+          "stone": 20
+        },
+        "gatherableBank": {
+          "food": 1520,
+          "wood": 960,
+          "gold": 225,
+          "stone": 120
+        },
+        "grossAccessibleIncludingOptionalReserve": {
+          "food": 1720,
+          "wood": 1100,
+          "gold": 285,
+          "stone": 140
+        },
+        "reservedOptionalRewardsExcluded": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        },
+        "accessibleWithoutOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "accessibleAfterSubtractingReservedOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mandatoryPlusProtectedRecoveryPlusReplacementPlusMargin": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true,
+        "maxVillagers": 9,
+        "enemyTotalCap": 0,
+        "enemyProduction": false,
+        "durationEstimateMinutes": [
+          35,
+          65
+        ],
+        "difficultyAndPacing": "design estimate only; native calibration/playability not measured"
+      },
+      "hard": {
+        "startingResources": {
+          "food": 170,
+          "wood": 119,
+          "gold": 51,
+          "stone": 17
+        },
+        "gatherableBank": {
+          "food": 1550,
+          "wood": 981,
+          "gold": 234,
+          "stone": 123
+        },
+        "grossAccessibleIncludingOptionalReserve": {
+          "food": 1720,
+          "wood": 1100,
+          "gold": 285,
+          "stone": 140
+        },
+        "reservedOptionalRewardsExcluded": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        },
+        "accessibleWithoutOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "accessibleAfterSubtractingReservedOptionalRewards": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mandatoryPlusProtectedRecoveryPlusReplacementPlusMargin": {
+          "food": 1170,
+          "wood": 900,
+          "gold": 260,
+          "stone": 140
+        },
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true,
+        "maxVillagers": 6,
+        "enemyTotalCap": 0,
+        "enemyProduction": false,
+        "durationEstimateMinutes": [
+          40,
+          75
+        ],
+        "difficultyAndPacing": "design estimate only; native calibration/playability not measured"
+      }
+    },
+    "assessment": "For each difficulty, accessibleWithoutOptionalRewards equals mandatory costs + protected recovery + replacement budget + margins. Gross start+gatherable stock includes exactly the segregated optional reward reserve above this main-only pool. Static arithmetic only."
+  },
+  "secondarySpatialReview": {
+    "exactSharedDisk": "hub-4 offset [8,0], center tileXY [228.05,276.25], E/N [228.05,122.75], radius 3: side-3.zone-1, side-5.zone-1 and side-8.zone-2 coincide. Optional repair, guide delivery and lower-circuit observation can all target this disk; flag for review, not declared defect.",
+    "smallestActorCenterSeparationTiles": 3.0,
+    "closePairs": [
+      {
+        "distanceTiles": 3.0,
+        "a": "28-law-and-local-reception-thessalonica.side-1.entity-1",
+        "b": "28-law-and-local-reception-thessalonica.side-1.entity-2",
+        "groups": [
+          "side-1",
+          "side-1"
+        ]
+      },
+      {
+        "distanceTiles": 3.0,
+        "a": "28-law-and-local-reception-thessalonica.side-2.entity-1",
+        "b": "28-law-and-local-reception-thessalonica.side-2.entity-2",
+        "groups": [
+          "side-2",
+          "side-2"
+        ]
+      },
+      {
+        "distanceTiles": 3.0,
+        "a": "28-law-and-local-reception-thessalonica.side-7.entity-1",
+        "b": "28-law-and-local-reception-thessalonica.side-7.entity-2",
+        "groups": [
+          "side-7",
+          "side-7"
+        ]
+      }
+    ],
+    "footprintCaveat": "3-tile center separations may still collide with actual native unit footprints."
+  },
+  "visualControls": {
+    "municipalPdf": "/tmp/thessaloniki-monuments.pdf",
+    "physicalPagesInspected": [
+      12,
+      19
+    ],
+    "printedPageLabels": "physical 12 shows printed 18–19",
+    "mapDescription": "Modern street map with broad-period Roman monument sites and coastline/grid inset. Orientation only; no georeferenced 380 landscape or ancient land/water evidence. Copyright/back cover on physical page 19; guide not redistributed.",
+    "photographs": [
+      {
+        "path": "docs/research/odyssey-research/images/thessalonica-galerius-arch-modern.jpg",
+        "bytes": 5821603,
+        "sha256": "4f6ae65baa91b38d33b60daf8d700d0c3bbb2ab7fa396a0cb29ecd1993fa1168"
+      },
+      {
+        "path": "docs/research/odyssey-research/images/thessalonica-roman-forum-modern.jpg",
+        "bytes": 2380992,
+        "sha256": "878846ccd478cd2e1d6b268e990892986b06e4be296dc88bae992231457c2183"
+      }
+    ],
+    "visualLimit": "Arch image is a modern partial masonry/relief monument beside current street/buildings; forum photo shows excavated low remains and current apartments. No reconstruction or period scene."
+  },
+  "approval": {
+    "historical": false,
+    "native": false,
+    "game": false,
+    "architecture": false
+  }
+}
