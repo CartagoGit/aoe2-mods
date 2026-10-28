@@ -889,6 +889,44 @@
       ],
       "anachronisms": "No modern Edirne mosque, Ottoman/medieval bridge, modern road/field pattern, authenticated emperor cottage, circular camp or ancient marsh deduced from a modern surface raster.",
       "approval": "Architect regional design-only proposal; exact dated archaeology/DTM-filtering/ancient hydrology/footprints/pathfinding and independent history/native/game approval pending."
+    },
+    {
+      "id": "yavneh",
+      "name": "Inland Yavneh: documentary region candidate",
+      "bbox": [
+        34.71,
+        31.83,
+        34.79,
+        31.9
+      ],
+      "coordinateStatus": "Architect documentary regional frame in WGS84 longitude/latitude; all22activity sites and27land links are fictional design geometry, not archaeological addresses or cleared ancient paths",
+      "sources": [
+        {
+          "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25883",
+          "locator": "Tel Yavne, Area A (2021), opening topography and dated strata; c60m tell on central kurkar ridge; modern Soreq relation only",
+          "consulted": "2026-10-28"
+        },
+        {
+          "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26592&mag_id=137",
+          "locator": "Tel Yavne, Area G6 (2024), opening NIG extent and Stratum XII; Roman cemetery, not an identified academy",
+          "consulted": "2026-10-28"
+        },
+        {
+          "url": "https://hadashot.iaa.org.il/Guidelines_eng.aspx",
+          "locator": "Map References: NIG and abbreviated ranges; photographs copyright protected",
+          "consulted": "2026-10-28"
+        }
+      ],
+      "representativePoint": [
+        34.748176316757096,
+        31.864613019924832
+      ],
+      "representativePointUsage": "Qualified midpoint of published G6 excavation NIG extent after EPSG2039 to EPSG4326; SE tell-margin sector only, never city/academy centroid, household address or spawn",
+      "terrain": "Inland southern coastal plain and kurkar ridge; tell summit relation retained, gentle local activity districts are hypothetical. GLO30 is modern surface with buildings/vegetation and must not set first-century native heights.",
+      "waterControlStatus": "Modern Soreq east then north of tell is contextual only; ancient channel, wetlands, fords and safe ground unresolved. No waterControlLine and no automatic all-land approval. Coastal Yavne-Yam is a distinct locality outside this local scene.",
+      "anachronisms": "No Byzantine/Islamic industrial street plan, Crusader fortress/church, later minaret, railway or modern neighborhood as70–80terrain. No excavated academy or closed-canon council is inferred.",
+      "approval": "Architect regional documentary candidate only; independent scope review, first-century land/water/footprints/elevation, native corridors and motor calibration remain pending",
+      "decisionReference": "docs/design/episode-plans/jewish-tradition/02-yavneh-regional-profile-decision.md"
     }
   ]
 }

@@ -2,10 +2,14 @@
 id: i00012
 title: "Reuse one strict shared profile projection within each fulfillment validation call"
 kind: infra
-status: ready
+status: review
 type: proposal
 track: general
 date: 2026-10-27
+last-transition-id: 19668e93-34a1-4324-a5a7-3d9faca977dc
+last-correlation-id: 19668e93-34a1-4324-a5a7-3d9faca977dc
+last-transition-from: in-progress
+last-transition-at: 2026-10-27T23:54:46.001Z
 ---
 
 # i00012 — Reuse one strict shared profile projection within each fulfillment validation call
@@ -30,13 +34,16 @@ Source inspection finds `validateFulfillmentSnapshot` parses the identical share
 - global_gate: type
 
 ### S1 — Local projection reuse and regression evidence
-- **Status**: pending
+- **Status**: review
 - **Files**: `packages/gameplay-state/fulfillment-snapshot.factory.ts`, `tests/alternative-fulfillment/reference/fulfillment-projection-reuse.test.ts`
 - **Gate**: type
 - acceptance:
   - "In validateFulfillmentSnapshot compute sharedCapabilityProfile(profile) once locally; pass that same strictly parsed value to validateFulfillmentCore and capabilityFingerprint. In fulfillmentPresent keep a function-local lazily initialized shared projection and evaluate it only at the existing generationReady operand, at most once per invocation. Do not move validation ahead of selectedRecipes/null, missing generated receipt, destroyed original or other existing short-circuits. Preserve short-circuit and malformed-profile behavior, public signatures, schema/fingerprint algorithms, every state/receipt/account/presence check, and source immutability. Malformed shared profiles must still return false when those earlier predicates short-circuit, and throw only if the original path reaches strict projection; add regression cases for each branch. Independent architecture review identified this P2 before implementation; no eager-loop projection is authorized."
   - "Retain all existing95portfolio/adversarial flows, dispatches, observations, assertions and final arbitration unchanged; keep its aggregate test unchanged: the later upstream-recovery decision below supersedes the earlier proposed reorganization. Add meaningful regression that mutating the same profile object between distinct validation calls still rejects contract mismatch; changed result/recipient presence still fails; no cache or source mutation. Compare exact baseline fingerprints and replay outcomes on the existing fixture, and capture bounded before/after timings without flaky timing assertions."
   - "Root and independent model review exact diff; bun run validate and official frozen-install/validate gate pass without timeout adjustment. No native adapter change; export only if a new concern warrants it. Product integration does not close any historical content slice."
+- shipped-in: `230173a9bb71`
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ## acceptance
 
