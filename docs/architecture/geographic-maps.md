@@ -96,3 +96,63 @@ The bounded MiniMax review of candidate 4f1c496 recomputed its stored bytes and 
 The `transport-observation` variant is an opt-in clone of the same compiled 32-square `technical-pilot`; `scale` remains the default and retains its prior output paths. At size 400, the artificial rectangle is x `[180,220)`, y `[80,320)`; at 300 it is x `[135,165)`, y `[60,240)`. Its outer column on each side is `beach`, the next three columns per side are `water-shallow`, and the interior is `water-deep`. The corresponding whole-map terrain counts are 150364/7689/1440/480/9/9/9 at 400 and 84564/3969/1080/360/9/9/9 at 300, in `grass-1`/`water-deep`/`water-shallow`/`beach`/`road`/`dirt-1`/`snow` order. All heights are zero and the existing four orientation markers remain disjoint.
 
 The clone adds a nonessential `transport-ship` at (187,200) and `villager-male` at (176,200), scaled independently for size 300, changes only its timeout from 600 to 1800 seconds, and adjusts the descriptive faction-limit text. The original guard remains the only essential unit; original objectives still only prepare then defeat the enemy guard. Native decode, if exported, can check terrain cells, counts, unit types, owners and positions. It cannot establish boarding, unloading, detours, boat-loss outcome or save/load behavior. The report and manual observation sheet must leave those outcomes pending; no campaign container, history, performance, victory or GAME VERIFIED claim follows. Export and manual editor observations remain separately recorded for this variant.
+
+## Adversarial transport and terrain fixtures — 28 October 2026
+
+`tools/map/transport_fixture.py` is a pure module that builds the five adversarial
+fixtures S2 asks for — `loading`, `disembarking`, `lost-boat`, `alternative-route` and
+`impassable-cliff` — and audits them. It changes no contract: the clone only uses the
+existing IR fields `map.tiles`, `map.blocked`, `map.start` and `units`, and the journey,
+the manifest, the dated layer and the crossings travel *next to* the IR in the fixture
+descriptor, never inside it. The twenty-four adversarial cases live in
+`tests/maps/test_transport_fixture.py` and run through the Bun wrapper
+`tests/maps/transport-fixture.test.ts`.
+
+Three disciplines carry the module.
+
+**A dated water layer, independent of height.** `build_water_layer` names a layer, its
+date basis and its interpretation; the layer is the only authority on where the water is
+and elevation is never consulted to derive it. `audit_layer_against_terrain` then refuses
+any cell whose painted terrain disagrees with the layer, so a water cell turned into land
+is an error rather than a warning. The fixture's own layer states that it is a synthetic
+diagnostic control with no historical date and no ancient water claim.
+
+**A footprint and a step rule.** A unit occupies a disc of radius one tile, so a cell is
+unusable when a water cell lies within Chebyshev distance two of it. The height rule is a
+step rule: a move is allowed only when the target cell is at most one native level above
+or below the cell the unit stands on. A cliff column of native level 7 that spans the
+whole frame is therefore impassable, and the same column with a graded pass — cliff cells
+dropped to level 1 over eleven rows — becomes crossable. The search is bounded by the
+frame; an unbounded one would wander the infinite plane.
+
+**A crossing discipline.** A land route may only cross water through a documented
+crossing. A bridge is a structure over the water: its cells keep the terrain the dated
+layer demands, and a bridge that paints land over the channel is refused. The fixtures
+prove both directions — the direct corridor across the channel is refused without a
+crossing, the land detour around the channel is clean, and a documented bridge makes the
+direct corridor legal without changing a single water cell.
+
+The journey reuses `tools/design/transport_journey.helper.py` rather than restating it:
+the event order and the nine proof flags are imported from the design contract, and the
+manifest's loss policy is the declared one — a destroyed carrier loses every passenger
+still aboard it, and a passenger who already disembarked survives independently. The
+fixture applies that policy to its own manifest, so the lost-boat case is decided by the
+declared rule rather than by prose.
+
+The performance caps are read from `docs/design/catalog.json`, where all 39 historical
+missions declare the same budget: 240 active military, 80 active civilian, 1600
+decorative objects and 350 active triggers, with the twenty-minute crowded corridor
+benchmark. `audit_perfcaps` compares the authored counts against them and **refuses** an
+unclassified unit type instead of counting it as nothing, so a cap can never be met by
+omission.
+
+### What this does not establish
+
+The adapter exposes no boarding, disembarkation or carrier-loss operation, and this
+module does not emulate one. The fixtures are a map and policy contract: they decide what
+the geometry permits and what the declared loss policy means, not what AoE2 does. Native
+boarding, unloading, detours, boat loss and save/load remain the manual observations the
+transport-observation variant already records, and they stay pending. The dated layer in
+these fixtures is synthetic; a dated land/water layer for a real region remains a
+research deliverable, and no historical terrain, passability, camera orientation or
+performance-at-cap measurement is claimed here. S2 continues pending.
