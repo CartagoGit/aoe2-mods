@@ -55,7 +55,8 @@
       "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
       "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
       "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
-    ]
+    ],
+    "authoredDossierCount": 1
   },
   "continuity": {
     "recommendedPrevious": [
@@ -297,7 +298,9 @@ No presentar como concilio que cerró canon o expulsó cristianos.
 
 Knowledge: inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports. one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints
 
-Dossier status: selection and mechanic authored; full world/objective/balance/screen/map dossier pending
+Dossier status: authored full draft; independent source/geometry/native/balance gates pending
+
+[Authored episode dossier](episodes/02-refuge-and-school-supply-yavneh/15-odyssey-dossier.md) — independent approval pending
 
 [Source-audit passage](https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/): COJS, Tannaitic Literature, lines 23–30: after temple destruction tannaitic activity is associated with Yavneh, Usha, Beth Shearim, Sepphoris; later tradition ties Akiva to Yavneh.
 

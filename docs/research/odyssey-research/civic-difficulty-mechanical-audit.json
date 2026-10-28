@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
   "snapshot": {
-    "date": "2026-10-27",
-    "realIdentity": "gpt-6-luna",
+    "date": "2026-10-28",
+    "realIdentity": "minimax-m3.1-flash-preview",
     "method": "tools/design/civic_difficulty_audit.script.py"
   },
   "sourceSha256": {
     "docs/design/odyssey-policy.json": "44f2126ea6f5dd0969445602230245db0adb7da3f636d0e932acd89d68f8f8fc",
     "docs/design/odysseys/faith-origins.json": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
     "docs/design/odysseys/imperial-church.json": "e15c0f183b5d6fe0c7061530480221fef541573bd2e314d0d615f73f7b45b25b",
-    "docs/design/odysseys/jewish-tradition.json": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
+    "docs/design/odysseys/jewish-tradition.json": "7b928a64f3003883cebb982762ce740bc205b837880a03c756da77351321c9a7",
     "docs/design/odysseys/church-of-rome.json": "2f16b67dd2c9b1381311596080988ed96d927323f741382f6ceec82f077ad885",
     "docs/design/odysseys/new-rome.json": "99da4a9277885cf4d87bd0b3a798a236a698542d4b4f078a768993611b85c7da",
     "docs/design/odysseys/first-caliphs.json": "2b86695a649e539bced604a6bd505683fb66b77678a154f0a525bf0a757351c0",
@@ -27,11 +27,11 @@
     "Finite v3 financial alternatives are not gathering, timing or game evidence."
   ],
   "counts": {
-    "dossierCount": 64,
+    "dossierCount": 65,
     "byCampaign": {
       "faith-origins": 30,
       "imperial-church": 34,
-      "jewish-tradition": 0,
+      "jewish-tradition": 1,
       "church-of-rome": 0,
       "new-rome": 0,
       "first-caliphs": 0,
@@ -54,9 +54,9 @@
     "withFiniteHostiles": 8,
     "withExplicitStructuredDeadlines": 1,
     "sameAccessibleBudgetsAcrossDifficulties": 63,
-    "totalMainObjectives": 215,
-    "totalSecondaryObjectives": 398,
-    "totalScreens": 2645
+    "totalMainObjectives": 216,
+    "totalSecondaryObjectives": 405,
+    "totalScreens": 2689
   },
   "staticRiskEpisodes": [
     {
@@ -5824,6 +5824,740 @@
       },
       "accessibleBudgetSameAcrossDifficulties": true,
       "staticRiskCandidate": true
+    },
+    {
+      "campaign": "jewish-tradition",
+      "order": 2,
+      "episodeId": "02-refuge-and-school-supply-yavneh",
+      "designProfile": "alternative-fulfillment-v3",
+      "coreMechanic": "refuge-and-school-supply",
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 1,
+      "secondaryObjectiveCount": 7,
+      "hostileRoleEntityCount": 0,
+      "authoredEnemyRoster": {
+        "initialEntityIds": [],
+        "productionEnabled": false,
+        "mobilizations": [],
+        "unspentPolicy": "remain-in-reserve"
+      },
+      "budgetBasis": "v3 initial spendable operating account; excludes protected recovery and unearned optional rewards",
+      "accountsByDifficulty": {
+        "easy": {
+          "spendable": {
+            "food": 180,
+            "wood": 180,
+            "gold": 210,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          }
+        },
+        "standard": {
+          "spendable": {
+            "food": 150,
+            "wood": 130,
+            "gold": 140,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          }
+        },
+        "hard": {
+          "spendable": {
+            "food": 130,
+            "wood": 110,
+            "gold": 140,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          }
+        }
+      },
+      "selectionAnalysisByDifficulty": {
+        "easy": {
+          "spendable": {
+            "food": 180,
+            "wood": 180,
+            "gold": 210,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 160,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 20,
+                "wood": 20,
+                "gold": 210,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 130,
+                "gold": 60,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 40,
+                "wood": 50,
+                "gold": 150,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 80,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 40,
+                "wood": 100,
+                "gold": 140,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 120,
+                "wood": 50,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 60,
+                "wood": 130,
+                "gold": 80,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 70,
+                "wood": 140,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 110,
+                "wood": 40,
+                "gold": 140,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 110,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 130,
+                "wood": 70,
+                "gold": 80,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 60,
+                "gold": 140,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 130,
+                "wood": 120,
+                "gold": 70,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 30,
+                "wood": 30,
+                "gold": 200,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 150,
+                "wood": 150,
+                "gold": 10,
+                "stone": 0
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "local-meal",
+              "assembled-shelter",
+              "local-working-materials"
+            ],
+            [
+              "local-meal",
+              "assembled-shelter",
+              "purchased-working-materials"
+            ],
+            [
+              "local-meal",
+              "offered-room",
+              "local-working-materials"
+            ],
+            [
+              "local-meal",
+              "offered-room",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "assembled-shelter",
+              "local-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "assembled-shelter",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "offered-room",
+              "local-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "offered-room",
+              "purchased-working-materials"
+            ]
+          ]
+        },
+        "standard": {
+          "spendable": {
+            "food": 150,
+            "wood": 130,
+            "gold": 140,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 160,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 130,
+                "gold": 60,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 10,
+                "wood": 0,
+                "gold": 80,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 80,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 10,
+                "wood": 50,
+                "gold": 70,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 120,
+                "wood": 50,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 30,
+                "wood": 80,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 70,
+                "wood": 140,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 110,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 100,
+                "wood": 20,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 60,
+                "gold": 140,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 100,
+                "wood": 70,
+                "gold": 0,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 30,
+                "wood": 30,
+                "gold": 200,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "local-meal",
+              "assembled-shelter",
+              "purchased-working-materials"
+            ],
+            [
+              "local-meal",
+              "offered-room",
+              "local-working-materials"
+            ],
+            [
+              "local-meal",
+              "offered-room",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "assembled-shelter",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "offered-room",
+              "local-working-materials"
+            ]
+          ]
+        },
+        "hard": {
+          "spendable": {
+            "food": 130,
+            "wood": 110,
+            "gold": 140,
+            "stone": 0
+          },
+          "protectedRecovery": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0
+          },
+          "optionalReserve": {
+            "food": 70,
+            "wood": 60,
+            "gold": 30,
+            "stone": 0
+          },
+          "selections": [
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 160,
+                "wood": 160,
+                "gold": 0,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 130,
+                "gold": 60,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 140,
+                "wood": 80,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "local-meal",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 120,
+                "wood": 50,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 10,
+                "wood": 60,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 70,
+                "wood": 140,
+                "gold": 70,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "assembled-shelter",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 110,
+                "gold": 130,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 80,
+                "wood": 0,
+                "gold": 10,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "local-working-materials"
+              ],
+              "totalCost": {
+                "food": 50,
+                "wood": 60,
+                "gold": 140,
+                "stone": 0
+              },
+              "affordable": true,
+              "spendableRemainder": {
+                "food": 80,
+                "wood": 50,
+                "gold": 0,
+                "stone": 0
+              }
+            },
+            {
+              "recipeIds": [
+                "purchased-consignment",
+                "offered-room",
+                "purchased-working-materials"
+              ],
+              "totalCost": {
+                "food": 30,
+                "wood": 30,
+                "gold": 200,
+                "stone": 0
+              },
+              "affordable": false,
+              "spendableRemainder": {
+                "food": null,
+                "wood": null,
+                "gold": null,
+                "stone": null
+              }
+            }
+          ],
+          "affordableSelections": [
+            [
+              "local-meal",
+              "offered-room",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "assembled-shelter",
+              "purchased-working-materials"
+            ],
+            [
+              "purchased-consignment",
+              "offered-room",
+              "local-working-materials"
+            ]
+          ]
+        }
+      },
+      "affordableSelectionCountByDifficulty": {
+        "easy": 8,
+        "standard": 5,
+        "hard": 3
+      },
+      "accessibleBudgetSameAcrossDifficulties": false,
+      "staticRiskCandidate": false
     }
   ]
 }
