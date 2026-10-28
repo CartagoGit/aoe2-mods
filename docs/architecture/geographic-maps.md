@@ -156,3 +156,43 @@ transport-observation variant already records, and they stay pending. The dated 
 these fixtures is synthetic; a dated land/water layer for a real region remains a
 research deliverable, and no historical terrain, passability, camera orientation or
 performance-at-cap measurement is claimed here. S2 continues pending.
+
+## Height-to-native-level compression — 28 October 2026
+
+`tools/map/terrain_quantiser.py` closes the link between the metre-height raster
+compiler above and the native 0–7 height range. It consumes the output of
+`tools/map/geographic_raster.compiler.py` directly, so the resampling and the compression
+share one projection, one resampling and one coordinate system.
+
+It implements the architect's published candidate band table from
+`docs/research/odyssey-research/adrianople378-relief-design.md` and nothing more: below
+70 m is level 0, 70 to below 100 is 1, 100 to below 130 is 2, 130 to below 160 is 3, 160
+to below 190 is 4, 190 to below 220 is 5, 220 to below 250 is 6, and 250 metres and above
+is 7. The result is a `native-height-candidate`, a research artifact with
+`nativeTerrainWritten` and `gameVerified` false.
+
+The architect's four cautions are enforced by the module and by the thirteen adversarial
+cases in `tests/maps/test_terrain_quantiser.py`.
+
+- **Absolute bands, never quantiles.** The level is a pure function of the modern height,
+  so two places at the same height always get the same level and a low district is never
+  stretched to fill the range. There is no per-district remapping and no mirroring, so the
+  regional orientation survives the compression.
+- **Native height 0 is not water.** The quantiser emits no water object of any kind. The
+  only water word in its output is the status that says so; the water of a map comes from
+  its dated layer, never from a height band.
+- **A cliff is not applied wherever a threshold is crossed.** A jump of two or more native
+  levels between adjacent cells is *detected* and reported as a cliff edge. A connected
+  graded transition is then *proposed* for each of those edges, cell by cell, and it is
+  never applied: the published levels keep the honest band and the candidate sits beside
+  them. Exact flattening for actor footprints and any relocation of actors need architect
+  review with evidence, so this module decides neither.
+- **Unknown ground stays unknown.** A nodata sample is never filled and a region the
+  raster does not cover keeps its unknown cells instead of being flattened into a level.
+
+The compressed levels are a candidate, not terrain. Neither the quantiser nor its tests
+assert a passable slope, a navigable surface, a dated hydrology or a game observation, and
+a one-level difference is not certified walkable. The remaining S2 acceptance — verified
+extraction for real regional elevation rasters, a dated regional land/water layer, native
+bridge and ferry operations and the AoE2 camera calibration — is untouched by this module
+and stays pending.
