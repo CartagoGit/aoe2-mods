@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "checked": "2026-10-12",
+  "source": "https://store.steampowered.com/app/813780/",
+  "targets": [
+    {
+      "locale": "en",
+      "engineFolder": "en",
+      "folderVerified": false
+    },
+    {
+      "locale": "fr",
+      "engineFolder": "fr",
+      "folderVerified": false
+    },
+    {
+      "locale": "it",
+      "engineFolder": "it",
+      "folderVerified": false
+    },
+    {
+      "locale": "de",
+      "engineFolder": "de",
+      "folderVerified": false
+    },
+    {
+      "locale": "ja",
+      "engineFolder": "jp",
+      "folderVerified": false
+    },
+    {
+      "locale": "ko",
+      "engineFolder": "ko",
+      "folderVerified": false
+    },
+    {
+      "locale": "pt-BR",
+      "engineFolder": "br",
+      "folderVerified": false
+    },
+    {
+      "locale": "ru",
+      "engineFolder": "ru",
+      "folderVerified": false
+    },
+    {
+      "locale": "zh-Hans",
+      "engineFolder": "zh",
+      "folderVerified": false
+    },
+    {
+      "locale": "es-LATAM",
+      "engineFolder": "mx",
+      "folderVerified": false
+    },
+    {
+      "locale": "zh-Hant",
+      "engineFolder": "tw",
+      "folderVerified": false
+    },
+    {
+      "locale": "tr",
+      "engineFolder": "tr",
+      "folderVerified": false
+    },
+    {
+      "locale": "vi",
+      "engineFolder": "vi",
+      "folderVerified": false
+    },
+    {
+      "locale": "es-ES",
+      "engineFolder": "es",
+      "folderVerified": false
+    },
+    {
+      "locale": "pl",
+      "engineFolder": "pl",
+      "folderVerified": false
+    },
+    {
+      "locale": "hi",
+      "engineFolder": "hi",
+      "folderVerified": false
+    },
+    {
+      "locale": "ms",
+      "engineFolder": "ms",
+      "folderVerified": false
+    }
+  ]
+}

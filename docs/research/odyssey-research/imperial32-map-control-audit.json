@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "episodeId": "32-defeat-and-withdrawal-adrianople",
+  "displayOrder": 30,
+  "scope": "Candidate frame arithmetic over all potentially authored identities and corridor half widths; actual instantiated profiles counted separately. Not an ancient land mask, road polygon, actor footprint, AI leash or native navigation certificate.",
+  "potentialCounts": {
+    "mainActorsAtMaximumRoster": 46,
+    "allActorsAtMaximumRoster": 53,
+    "allZones": 18
+  },
+  "profileCounts": {
+    "easy": {
+      "selectedInitialHostiles": 8,
+      "allSelectedMainAndOptionalActors": 39
+    },
+    "standard": {
+      "selectedInitialHostiles": 14,
+      "allSelectedMainAndOptionalActors": 45
+    },
+    "hard": {
+      "selectedInitialHostiles": 22,
+      "allSelectedMainAndOptionalActors": 53
+    }
+  },
+  "frameClearanceTiles": {
+    "entityCenters": 76.62,
+    "zoneRadii": 81.24,
+    "corridorHalfWidths": 78.24
+  },
+  "allInFrame": true,
+  "duplicateActorCenters": [],
+  "overlappingZoneCircles": [
+    [
+      "32-defeat-and-withdrawal-adrianople.side-2.zone-2",
+      "32-defeat-and-withdrawal-adrianople.side-3.zone-1"
+    ],
+    [
+      "32-defeat-and-withdrawal-adrianople.side-4.zone-2",
+      "32-defeat-and-withdrawal-adrianople.side-6.zone-1"
+    ],
+    [
+      "32-defeat-and-withdrawal-adrianople.side-4.zone-2",
+      "32-defeat-and-withdrawal-adrianople.side-7.zone-1"
+    ],
+    [
+      "32-defeat-and-withdrawal-adrianople.side-6.zone-1",
+      "32-defeat-and-withdrawal-adrianople.side-7.zone-1"
+    ]
+  ],
+  "overlapPolicy": "Different identities, payment/arrival/visit ledgers. One movement may legitimately visit a nearby lookout; it does not pay, repair or deliver another original. Native actor packing remains pending.",
+  "svgSha256": "b6f15f52d9807a5efc8ba49b41edc345e14fddfc9913fb1bf6ffd39da27fea93",
+  "architectRasterInspected": true,
+  "historicalOrNativeApproval": false
+}

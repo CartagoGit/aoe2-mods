@@ -1,0 +1,16 @@
+{
+  "baseline": "12b0488",
+  "input": "arbitrary scope label, invalid episode slice and invalid voice episode identity",
+  "before": {
+    "errors": [],
+    "expandedAuditRan": false
+  },
+  "after": {
+    "relevantDiagnostics": [
+      "faith-origins/S99999: proposal identity/order diverges",
+      "faith-origins/01-administrative-records-caesarea: knowledge plan scenarioId drift"
+    ],
+    "expandedSelectedEpisodes": 278
+  },
+  "scope": "reproduced validation bypass and fix; no native/game claim"
+}

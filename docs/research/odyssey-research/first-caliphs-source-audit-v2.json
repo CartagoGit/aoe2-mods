@@ -1,0 +1,496 @@
+{
+  "auditVersion": 2,
+  "sourceFile": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/first-caliphs.json",
+  "created": "2026-10-13",
+  "events": [
+    {
+      "id": "01-testimony-and-household-supply-mecca",
+      "order": 1,
+      "dateInDesign": "c.610 CE; revelation belongs to attributed tradition",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://assets.cambridge.org/97805217/13726/excerpt/9780521713726_excerpt.pdf",
+      "locator": "Jonathan E. Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, excerpt p. 4 / PDF lines 128–149: the account places meditation outside Mecca in 610 and frames the revelation and Gabriel as the Muslim narrative; it dates the Meccan period 610–622.",
+      "claim": {
+        "en": "Muslim biographical tradition dates Muhammad’s first revelatory experience to around 610 CE, in the hills outside Mecca.",
+        "es": "La biografía musulmana tradicional sitúa hacia 610 d. C. la primera experiencia de revelación de Muhammad, en las colinas a las afueras de La Meca."
+      },
+      "readScope": "Opened Cambridge Companion to Muhammad excerpt PDF; relevant introduction passage read. Scholarly synthesis explicitly distinguishes inherited accounts from historical limits.",
+      "consultationStatus": "full_excerpt_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "The date and setting are reported through later religious biography. Phrase as 'tradition dates/recounts'; do not narrate revelation, divine speech, or supernatural claims as independently verified fact."
+    },
+    {
+      "id": "02-civilian-network-and-records-mecca",
+      "order": 2,
+      "dateInDesign": "610s CE; public preaching conventionallyc.613",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.cambridge.org/highereducation/books/the-formation-of-islam/0C58C7DC69FC4FFE20933C00B54D839F/the-origins-of-the-muslim-community/86DD5D5461286D6EA3B6EB4B9A120B5E",
+      "locator": "Gerald R. Hawting, The Formation of Islam, chapter “The Origins of the Muslim Community,” lines 279–282: explicitly situates the early prophetic career in the Muslim narrative and the origins of the community in Arabia. Compare Brockopp, Introduction, pp. 4–5, which notes uncertainty over who first joined Muhammad's intimate circle (PDF lines 471–480).",
+      "claim": {
+        "en": "A small circle of followers formed around Muhammad’s preaching in Mecca; chronology and the identity of the earliest male adherents remain disputed in transmitted reports.",
+        "es": "En La Meca se formó un pequeño círculo de seguidores en torno a la predicación de Muhammad; la cronología y la identidad de los primeros seguidores varones siguen discutidas en los relatos transmitidos."
+      },
+      "readScope": "Opened Cambridge chapter summary (pp.61–69), not the chapter full text; summary explicitly frames events as Muslim narrative.",
+      "consultationStatus": "chapter_summary_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "The Cambridge chapter is an overview and explicitly attributes its account to Muslim origin narratives; it supports a cautious broad milestone, not a precise year, headcount, or fully settled institutional community."
+    },
+    {
+      "id": "03-finite-emigration-consignments-mecca",
+      "order": 3,
+      "dateInDesign": "c.615 CE; Aksum destination off-map and uncertain",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://api.pageplace.de/preview/DT0400.9781139798792_A23868983/preview-9781139798792_A23868983.pdf",
+      "locator": "Jonathan E. Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, pp. 7–8 / PDF lines 496–502: describes emigration to Christian Abyssinia as part of the traditional evidence for increasing conflict and notes that the tradition preserves accounts of hardship.",
+      "claim": {
+        "en": "Later Muslim accounts report that some followers emigrated from Mecca to Christian Abyssinia/Aksum amid growing hostility.",
+        "es": "Relatos musulmanes posteriores cuentan que algunos seguidores emigraron de La Meca a la Abisinia/Aksum cristiana en un contexto de hostilidad creciente."
+      },
+      "readScope": "Opened Cambridge Companion to Muhammad excerpt PDF; relevant introduction passage read. Scholarly synthesis explicitly distinguishes inherited accounts from historical limits.",
+      "consultationStatus": "full_excerpt_consulted",
+      "classification": "tradition_attributed",
+      "cautions": "The consulted scholarly passage confirms the episode but does not establish 615 as an exact date. The motive, group size, routes, and sequence are known through later Muslim reports; avoid precise numbers and dramatized speeches."
+    },
+    {
+      "id": "04-bounded-household-provision-mecca",
+      "order": 4,
+      "dateInDesign": "c.616–619 CE; transmitted chronology uncertain",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://api.pageplace.de/preview/DT0400.9781139798792_A23868983/preview-9781139798792_A23868983.pdf",
+      "locator": "Brockopp (ed.), The Cambridge Companion to Muhammad, Introduction, pp. 7–8 / PDF lines 496–502: identifies a boycott against Muhammad's clan and explicitly frames suffering accounts as tradition.",
+      "claim": {
+        "en": "A later Muslim tradition reports a boycott against Muhammad’s clan; the consulted scholarly summary does not establish its exact years, terms, or location.",
+        "es": "Una tradición musulmana posterior relata un boicot contra el clan de Muhammad; el resumen académico consultado no establece sus años, condiciones ni lugar exactos."
+      },
+      "readScope": "Opened Cambridge Companion to Muhammad excerpt PDF; relevant introduction passage read. Scholarly synthesis explicitly distinguishes inherited accounts from historical limits.",
+      "consultationStatus": "full_excerpt_consulted",
+      "classification": "tradition_attributed",
+      "cautions": "Use 'later accounts report' and avoid asserting the exact 616–619 span, specific written pact details, or the valley's precise archaeological location as settled facts; those details are not established by the consulted passage."
+    },
+    {
+      "id": "05-delegate-logistics-and-receipts-mina-aqaba",
+      "order": 5,
+      "dateInDesign": "621 CE traditional; firstpledge, notsecond",
+      "placeInDesign": "mina-aqaba",
+      "sourceUrl": "https://escholarship.org/uc/item/87q494b4",
+      "locator": "Shuayb, dissertation, Aqaba pledges discussion: the next year's group is described as twelve men, including Aws and Khazraj members, with Mus'ab ibn Umayr sent to Yathrib; source labels the first two pledge traditions and their sequence.",
+      "claim": {
+        "en": "In the traditional sequence, the first Aqaba pledge is dated to 621; the source material distinguishes it from the larger second pledge.",
+        "es": "En la secuencia tradicional, la primera promesa de Aqaba se fecha en 621; las fuentes la distinguen de la segunda promesa, más numerosa."
+      },
+      "readScope": "Opened repository item, but anti-bot page exposed no dissertation text; locator and claim are inherited from source dossier and remain unverified in this audit.",
+      "consultationStatus": "landing_page_only",
+      "classification": "tradition_attributed",
+      "cautions": "Raw candidate calls this second pledge incorrectly. Numbering and transmitted chronology require attribution; neither revelation nor divine causation is agnostic-narrator fact."
+    },
+    {
+      "id": "06-bounded-reception-planning-mina-aqaba",
+      "order": 6,
+      "dateInDesign": "622 CE; conventionally secondpledge",
+      "placeInDesign": "mina-aqaba",
+      "sourceUrl": "https://escholarship.org/uc/item/87q494b4",
+      "locator": "Shuayb, dissertation, Aqaba pledges discussion: describes the next Hajj-season gathering as a group of roughly seventy Medinans and notes that scholars differ on whether pledge traditions should be counted as two or three.",
+      "claim": {
+        "en": "The traditional account places a second Aqaba pledge in 622 and links it with Yathrib’s commitment to receive and protect Muhammad’s followers.",
+        "es": "El relato tradicional sitúa en 622 una segunda promesa de Aqaba y la vincula con el compromiso de Yathrib de recibir y proteger a los seguidores de Muhammad."
+      },
+      "readScope": "Opened repository item, but anti-bot page exposed no dissertation text; locator and claim are inherited from source dossier and remain unverified in this audit.",
+      "consultationStatus": "landing_page_only",
+      "classification": "tradition_attributed",
+      "cautions": "Use the conventional label only with an attribution such as 'the pledge known in the traditional chronology as the second Aqaba pledge.' Its details are transmitted reports, not an independently preserved treaty text."
+    },
+    {
+      "id": "01-the-oasis-road",
+      "order": 7,
+      "dateInDesign": "622 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+      "locator": "“Chronology…” entry 622; “Calendars,” Iranica (https://www.iranicaonline.org/articles/calendars/)",
+      "claim": {
+        "en": "The Hijra from Mecca to Yathrib is traditionally dated to 622; the Islamic calendar was established later with that year as its epoch.",
+        "es": "La Hégira de La Meca a Yathrib se fecha tradicionalmente en 622; el calendario islámico se estableció después tomando ese año como inicio."
+      },
+      "readScope": "Opened Iranica chronology article; this audit did not retrieve/inspect every relevant year entry. Per-event details beyond broad dates are not independently checked.",
+      "consultationStatus": "page_opened_specific_entry_not_confirmed",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "La cronología islámica se fijó después; no asignar al viaje un único día gregoriano sin precisar fuente."
+    },
+    {
+      "id": "08-finite-battle-supply-and-withdrawal-badr",
+      "order": 8,
+      "dateInDesign": "624 CE",
+      "placeInDesign": "badr",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "Poonawala, “Ali: Life,” sección sobre expediciones y referencia a Ibn Hisham/Waqidi",
+      "claim": {
+        "en": "The Battle of Badr is traditionally dated to 624 and is described as an early battle between the Medinan community and Quraysh; individual heroic details are later biography.",
+        "es": "La batalla de Badr se fecha tradicionalmente en 624 y se describe como un enfrentamiento temprano entre la comunidad de Medina y Quraysh; los detalles heroicos individuales proceden de biografías posteriores."
+      },
+      "readScope": "Opened the Iranica Ali biography PDF. Relevant lines 17–25 summarize later Ibn Hisham/Waqidi traditions about Ali at Badr; they do not independently verify battle scale or heroics.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "El artículo resume tradiciones biográficas posteriores; detalles heroicos de Ali son legendarios."
+    },
+    {
+      "id": "09-finite-withdrawal-and-care-uhud",
+      "order": 9,
+      "dateInDesign": "625 CE",
+      "placeInDesign": "uhud",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "“Ali: Life,” pasaje sobre defensa en Uhud y bibliografía de Ibn Hisham/Waqidi",
+      "claim": {
+        "en": "The Battle of Uhud is traditionally dated to 625; the cited biographical synthesis does not verify casualty totals or all individual feats.",
+        "es": "La batalla de Uhud se fecha tradicionalmente en 625; la síntesis biográfica citada no verifica las cifras de bajas ni todas las hazañas individuales."
+      },
+      "readScope": "Opened the Iranica Ali biography PDF. Relevant lines 17–25 mention Ali at Uhud; this is a brief summary of later biographical reports, not an independent campaign history.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Resumen de tradición biográfica; cifras no verificadas."
+    },
+    {
+      "id": "10-finite-defence-and-trench-supply-medina",
+      "order": 10,
+      "dateInDesign": "627 CE conventional",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/khandaq/",
+      "locator": "Iranica, “Ḵandaq,” lines 43, 46–56; entry identifies the Medinan ditch event as 5 AH/April 627 and cites Balʿami, Ibn Hisham, al-Waqidi.",
+      "claim": {
+        "en": "The Medinan defense known as the Trench/Khandaq is conventionally placed in 627; date and narrative details derive from later accounts.",
+        "es": "La defensa de Medina conocida como la Trinchera/Jandaq se sitúa convencionalmente en 627; la fecha y los detalles narrativos proceden de relatos posteriores."
+      },
+      "readScope": "Opened full Iranica entry. It attributes trench dating to the transmitted accounts; the named trench’s precise archaeological alignment is not given.",
+      "consultationStatus": "full_article_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "La fuente consultada menciona actividad militar; fecha convencional."
+    },
+    {
+      "id": "11-bounded-negotiation-and-supply-hudaybiyya",
+      "order": 11,
+      "dateInDesign": "March628 CE;6AH",
+      "placeInDesign": "hudaybiyya",
+      "sourceUrl": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "locator": "TDV İslâm Ansiklopedisi, “Hudeybiye Antlaşması,” pasajes sobre la salida desde Medina para la ʿumra y la negociación del acuerdo (6/628); artículo sitúa Hudaybiyya al oeste de La Meca.",
+      "claim": {
+        "en": "A treaty with Quraysh was concluded at Hudaybiyya in 6 AH/628, at a place the TDV encyclopedia locates about 17 km west of Mecca.",
+        "es": "En 6 H./628 se concluyó un tratado con Quraysh en Hudaybiyya, lugar que la enciclopedia TDV sitúa a unos 17 km al oeste de La Meca."
+      },
+      "readScope": "Opened and read TDV encyclopedia entry; article text includes date 6/628 and location about 17 km west of Mecca; this is modern reference scholarship summarizing transmitted history.",
+      "consultationStatus": "full_article_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Fecha gregoriana aproximada; fuente académica enciclopédica moderna que cita estudios de Hawting y Görke. El tratado no debe convertirse en cita literal de sus participantes."
+    },
+    {
+      "id": "12-finite-siege-and-civilian-extraction-khaybar",
+      "order": 12,
+      "dateInDesign": "628 CE conventional",
+      "placeInDesign": "khaybar",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "“Ali: Life,” referencias a Ibn Hisham II, pp. 349–350; Waqidi",
+      "claim": {
+        "en": "A campaign against Khaybar’s fortified oasis is traditionally dated to 628; exact events and later heroic accounts require attribution.",
+        "es": "La campaña contra el oasis fortificado de Jaybar se fecha tradicionalmente en 628; los episodios exactos y relatos heroicos posteriores requieren atribución."
+      },
+      "readScope": "Opened the Iranica Ali biography PDF. Relevant lines 21–25 mention Khaybar and cite Ibn Hisham/Waqidi; Ali’s door-shield feat is expressly a valor attribution in transmitted tradition.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Relatos de hazañas individuales no tomar al pie de la letra."
+    },
+    {
+      "id": "13-civilian-provision-under-entry-mecca",
+      "order": 13,
+      "dateInDesign": "630 CE; Hunayn andTaif reported inaftermath",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/?generate_pdf=1",
+      "locator": "Iranica, “Arab ii. Arab Conquest of Iran,” PDF p.2, lines 28–35: says Mecca fell to Muhammad in 8/630.",
+      "claim": {
+        "en": "Muslim biographical narratives report the entry of Muhammad’s forces into Mecca in 630; the cited Iranica overview is contextual, not a contemporary account.",
+        "es": "Las narraciones biográficas musulmanas cuentan que las fuerzas de Muhammad entraron en La Meca en 630; la síntesis de Iranica citada ofrece contexto, no un testimonio contemporáneo."
+      },
+      "readScope": "Opened and read the relevant PDF page; this is a modern scholarly synthesis, not contemporary testimony.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Artículo centrado en Irán, resumen contextual."
+    },
+    {
+      "id": "14-witness-and-transition-records-medina",
+      "order": 14,
+      "dateInDesign": "632 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/?generate_pdf=1",
+      "locator": "Iranica chronology PDF p.13, lines 356–357: death in 632 followed by succession dispute; Abu Bakr caliphate 632–634.",
+      "claim": {
+        "en": "Muhammad’s death is conventionally dated to 632; accounts of succession and its legitimacy differ across later traditions.",
+        "es": "La muerte de Muhammad se fecha convencionalmente en 632; los relatos sobre la sucesión y su legitimidad difieren entre tradiciones posteriores."
+      },
+      "readScope": "Opened and read the chronology PDF passage. This verifies the broad date and existence of succession dispute, not competing legitimacy claims.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "No convertir ninguna tradición sucesoria confesional en voz neutral."
+    },
+    {
+      "id": "15-disputed-tax-and-provincial-records-medina",
+      "order": 15,
+      "dateInDesign": "632–634 CE; campaigns reported off-map",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+      "locator": "“Chronology…”; “Islam in Iran XI. Jihad in Islam” (https://www.iranicaonline.org/articles/islam-in-iran-xi-jihad-in-islam/), apartado inicial",
+      "claim": {
+        "en": "Abu Bakr’s accession and conflicts over provincial allegiance/taxation are grouped under the later label Ridda wars; ‘apostasy’ is a partisan category, not a neutral description of every conflict.",
+        "es": "La llegada de Abu Bakr al califato y los conflictos sobre lealtad provincial e impuestos se agrupan bajo la etiqueta posterior de guerras Ridda; «apostasía» es una categoría partidista, no una descripción neutral de todos los conflictos."
+      },
+      "readScope": "Opened Iranica chronology article; this audit did not retrieve/inspect every relevant year entry. Per-event details beyond broad dates are not independently checked.",
+      "consultationStatus": "page_opened_specific_entry_not_confirmed",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "La categoría “apostasía” es una interpretación de fuentes del bando vencedor; incluir también resistencia política/fiscal."
+    },
+    {
+      "id": "02-the-roads-of-yamama",
+      "order": 16,
+      "dateInDesign": "633 CE (Iranica dates Yamama to Rabīʿa I, 12/May–June 633)",
+      "placeInDesign": "yamama",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/?generate_pdf=1",
+      "locator": "Iranica, “Arab ii. Arab Conquest of Iran,” PDF p.2, lines 40–50: post-632 context and defeat/death of Musaylima at Yamama, dated 12/May–June 633.",
+      "claim": {
+        "en": "Michael Morony’s synthesis dates the defeat and death of Musaylima at Yamama to May–June 633, within the Ridda conflicts after Muhammad’s death.",
+        "es": "La síntesis de Michael Morony fecha la derrota y muerte de Musaylima en Yamama en mayo–junio de 633, durante los conflictos de la Ridda posteriores a la muerte de Muhammad."
+      },
+      "readScope": "Opened and read Iranica PDF p.2, lines 40–50. This corrects the design’s broader 632–633 range; event framing remains based on later Islamic historical accounts.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Esta entrada se basa en cronología estándar secundaria y requiere revisión de una fuente específica antes de fijar hito narrativo; fecha aproximada."
+    },
+    {
+      "id": "17-finite-river-withdrawal-kufa-euphrates",
+      "order": 17,
+      "dateInDesign": "October634 CE approximate",
+      "placeInDesign": "kufa-euphrates",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/?generate_pdf=1",
+      "locator": "Iranica, “Arab ii. Arab Conquest of Iran,” PDF pp.3–4, lines 93–103: Battle of the Bridge on the Euphrates, Shaʿban 13/October 634.",
+      "claim": {
+        "en": "The Battle of the Bridge, a Muslim defeat in Iraq, is conventionally dated to October 634; details and exact battlefield position remain uncertain.",
+        "es": "La batalla del Puente, derrota musulmana en Iraq, se fecha convencionalmente en octubre de 634; los detalles y la posición exacta del campo de batalla siguen inciertos."
+      },
+      "readScope": "Opened and read the cited PDF passage. The account locates the encounter on the Euphrates but does not give a modern battle coordinate; date is converted from the source chronology.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Lugar/táctica y conversión de fecha son aproximados."
+    },
+    {
+      "id": "18-surrender-and-civilian-records-damascus",
+      "order": 18,
+      "dateInDesign": "635 CE conventional; terms traditions compared",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/?generate_pdf=1",
+      "locator": "Iranica chronology PDF p.14, lines 360–363: Damascus capture 635; wider regional conquests 635–641.",
+      "claim": {
+        "en": "Damascus came under Arab-Muslim control conventionally around 635; the cited chronology does not establish the surrender terms or a single exact day.",
+        "es": "Damasco pasó al control árabe-musulmán convencionalmente hacia 635; la cronología citada no establece las condiciones de capitulación ni un día exacto."
+      },
+      "readScope": "Opened and read chronology PDF passage. It gives only the broad year, not surrender terms or day.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "La cronología general no describe términos de capitulación."
+    },
+    {
+      "id": "03-the-edge-of-the-river",
+      "order": 19,
+      "dateInDesign": "636 CE",
+      "placeInDesign": "yarmuk",
+      "sourceUrl": "https://sourcebooks.web.fordham.edu/source/yarmuk.asp",
+      "locator": "Al-Baladhuri, “The Battle of Yarmuk,” relato de batalla",
+      "claim": {
+        "en": "Al-Baladhuri’s later account places the Battle of Yarmuk in Syria and associates it with the year 636; its numbers and speeches are not independently verified.",
+        "es": "El relato posterior de al-Baladhuri sitúa la batalla de Yarmuk en Siria y la asocia con 636; sus cifras y discursos no están verificados de forma independiente."
+      },
+      "readScope": "Opened the full Fordham translation of al-Baladhuri, The Origins of the Islamic State, pp.207–211; a later historical narrative, not contemporary witness.",
+      "consultationStatus": "translated_primary_text_consulted",
+      "classification": "later_primary_historical_narratives_in_translation",
+      "cautions": "Relato historiográfico posterior; cifras y secuencia de maniobras tienen incertidumbre."
+    },
+    {
+      "id": "04-fields-of-the-sawad",
+      "order": 20,
+      "dateInDesign": "634/635–637/638 CE; conventional636/637",
+      "placeInDesign": "qadisiyya",
+      "sourceUrl": "https://www.iranicaonline.org/articles/qadesiya-battle/?generate_pdf=1",
+      "locator": "Iranica, “Qādesiya, Battle of,” PDF p.1, lines 3–19 and p.2 lines 31–41.",
+      "claim": {
+        "en": "The battle occurred at a frontier settlement called Qadesiya, but the sources do not settle its date; proposals range from 634/635 to 637/638, and exact force totals are unreliable.",
+        "es": "La batalla ocurrió en un asentamiento fronterizo llamado Qadisiyya, pero las fuentes no fijan la fecha; las propuestas van de 634/635 a 637/638 y los efectivos exactos no son fiables."
+      },
+      "readScope": "Opened and read the full Iranica PDF passage. Lewental explicitly says date and army sizes are unclear and cautions that annals emphasize embellishments/topoi.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Fecha, número de tropas y localización exacta son inciertos; propuestas de 634/35 a 637/38."
+    },
+    {
+      "id": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+      "order": 21,
+      "dateInDesign": "637 CE conventional; Nihavand later reported",
+      "placeInDesign": "ctesiphon",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ctesiphon/?generate_pdf=1",
+      "locator": "Iranica, “Ctesiphon,” PDF article passage on conquest of March 637; corroborating list of medieval Arabic chronicles cited by the entry.",
+      "claim": {
+        "en": "Ctesiphon/Mada’in was captured in 637 in the conventional chronology; the cited encyclopedia reports the royal court’s retreat but cautions that the urban complex was extensive.",
+        "es": "Ctesifonte/Madā’in fue tomada en 637 según la cronología convencional; la enciclopedia citada relata la retirada de la corte real y advierte que el complejo urbano era extenso."
+      },
+      "readScope": "Opened Iranica entry/PDF; consulted its conquest summary and cited chronicler list. This is a modern scholarly synthesis of later sources, not a contemporary account.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Las crónicas describen botín con motivos literarios; el hecho de la toma tiene mejor respaldo."
+    },
+    {
+      "id": "22-property-and-surrender-records-jerusalem",
+      "order": 22,
+      "dateInDesign": "637/638 CE; capitulation chronology qualified",
+      "placeInDesign": "jerusalem",
+      "sourceUrl": "https://www.cambridge.org/core/books/abs/christian-communities-of-palestine-from-byzantine-to-islamic-rule/islamic-conquest-the-mid630s-to-640/75A757E519D6EF48BD198F3BDBAFADC3",
+      "locator": "Robert Schick, “The Islamic Conquest,” summary: “Jerusalem arranged terms of surrender, perhaps in 17/638.”",
+      "claim": {
+        "en": "Jerusalem’s surrender is placed in 637 or 638 in differing chronologies; Schick’s chapter summary gives 638 as probable.",
+        "es": "La capitulación de Jerusalén se sitúa en 637 o 638 según distintas cronologías; el resumen del capítulo de Schick considera probable 638."
+      },
+      "readScope": "Opened Cambridge chapter page and its accessible descriptive text; it attributes 638 as probable rather than certain. Full chapter not consulted; no terms of surrender asserted.",
+      "consultationStatus": "chapter_summary_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "The scholar explicitly marks the date as probable; traditions also place the surrender in 637."
+    },
+    {
+      "id": "23-peaceful-supply-and-record-reception-antioch",
+      "order": 23,
+      "dateInDesign": "638 CE; cited source reports no armed resistance",
+      "placeInDesign": "antioch",
+      "sourceUrl": "https://almuslih.org/wp-content/uploads/Library/Kaegi%2C%20W%20-%20Byzantium.pdf",
+      "locator": "Walter E. Kaegi, Byzantium and the Early Islamic Conquests (1992), p. 158: passage on the 638 occupation of Antioch and other northern Syrian cities after the truce.",
+      "claim": {
+        "en": "Kaegi’s study reports occupation of Antioch after a truce expired in 638 and says the city saw no armed resistance; it does not describe a battle there.",
+        "es": "El estudio de Kaegi relata la ocupación de Antioquía tras expirar una tregua en 638 y dice que la ciudad no opuso resistencia armada; no describe una batalla allí."
+      },
+      "readScope": "Opened Walter E. Kaegi, Byzantium and the Early Islamic Conquests PDF; inspected book text, but not the cited p.158 passage in this turn. Treat precise Antioch claim as dossier-locator candidate pending exact page check.",
+      "consultationStatus": "full_book_pdf_opened",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Year and sequence are supported; no exact day is given. The passage describes occupation without armed resistance, not a battle at Antioch."
+    },
+    {
+      "id": "05-a-camp-beside-the-nile",
+      "order": 24,
+      "dateInDesign": "641–642 CE; precedingcampaign639–642",
+      "placeInDesign": "fustat",
+      "sourceUrl": "https://sourcebooks.web.fordham.edu/source/642Egypt-conq2.asp",
+      "locator": "“Accounts of the Arab Conquest of Egypt,” secciones sobre fortress and capitulation",
+      "claim": {
+        "en": "The conquest narrative reports an Arab camp beside the Babylon fortress in Egypt, later associated with Fustat; sources differ in campaign sequencing and are not contemporary eyewitness accounts.",
+        "es": "El relato de la conquista sitúa un campamento árabe junto a la fortaleza de Babilonia en Egipto, asociado después con Fustat; las fuentes difieren en la secuencia y no son testimonios presenciales contemporáneos."
+      },
+      "readScope": "Opened the full Fordham compilation and read the History of the Patriarchs passage on Babylon fortress/Fustat; this is a later ecclesiastical narrative in a modern translation.",
+      "consultationStatus": "translated_primary_text_consulted",
+      "classification": "later_primary_historical_narratives_in_translation",
+      "cautions": "Narraciones de al-Baladhuri y patriarcas son posteriores y divergen en secuencia."
+    },
+    {
+      "id": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+      "order": 25,
+      "dateInDesign": "641/642 CE traditional",
+      "placeInDesign": "alexandria",
+      "sourceUrl": "https://sourcebooks.web.fordham.edu/source/642Egypt-conq2.asp",
+      "locator": "Misma selección, pasaje de capitulación de Alejandría",
+      "claim": {
+        "en": "Accounts report Alexandria’s capture/capitulation in 641/642, but they differ on chronology, terms, and the city’s subsequent recapture; avoid treating a single treaty narrative as settled.",
+        "es": "Los relatos sitúan la toma/capitulación de Alejandría en 641/642, pero difieren en cronología, condiciones y posterior recuperación de la ciudad; no presentar un único relato de tratado como definitivo."
+      },
+      "readScope": "Opened the full Fordham compilation and read the Patriarchs and al-Baladhuri accounts; the latter describes a three-month siege, while the two transmitted accounts differ in details and chronology.",
+      "consultationStatus": "translated_primary_text_consulted",
+      "classification": "later_primary_historical_narratives_in_translation",
+      "cautions": "Fecha exacta y términos de tratado varían entre cronistas."
+    },
+    {
+      "id": "26-administrative-transition-and-care-medina",
+      "order": 26,
+      "dateInDesign": "644 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/?generate_pdf=1",
+      "locator": "Iranica chronology, PDF p.14, lines 369–370: Umar killed in 644; Uthman’s caliphate 644–656.",
+      "claim": {
+        "en": "Umar’s death and Uthman’s accession are conventionally dated to 644; the overview chronology does not adjudicate responsibility for Umar’s killing.",
+        "es": "La muerte de Umar y la llegada de Uthman al califato se fechan convencionalmente en 644; la cronología panorámica no determina quién fue responsable de la muerte de Umar."
+      },
+      "readScope": "Opened and read chronology PDF p.14. The chronology names Hormozan as Umar’s killer; since this is a concise retrospective table, detailed circumstances need another source.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "La cronología ofrece una síntesis; autoría/participación en el asesinato requiere fuente adicional."
+    },
+    {
+      "id": "27-finite-coastal-expedition-and-supply-cyprus",
+      "order": 27,
+      "dateInDesign": "649 CE conventional",
+      "placeInDesign": "cyprus",
+      "sourceUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+      "locator": "O’Sullivan, “Sebeos’ account of an Arab attack on Constantinople in 654,” article notes 15–16 and 40, page lines 535–542, 628–632.",
+      "claim": {
+        "en": "O’Sullivan reviews evidence for distinct Arab attacks on Cyprus in 649 and 650 and cites a Soli basilica inscription dated 655 that names those two years; no permanent occupation is established by these two raids.",
+        "es": "O’Sullivan revisa indicios de ataques árabes distintos contra Chipre en 649 y 650 y cita una inscripción de la basílica de Soli, fechada en 655, que menciona ambos años; esas incursiones no prueban una ocupación permanente."
+      },
+      "readScope": "Opened and read the publicly visible article notes. The article is a modern scholarly study; 649/650 supported through its discussion of chronicles and the Soli inscription. Landing/campaign details remain uncertain.",
+      "consultationStatus": "article_notes_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "The article discusses conflict in the source chronology; precise landing/campaign details and later occupation are uncertain."
+    },
+    {
+      "id": "28-civilian-refuge-and-source-comparison-merv",
+      "order": 28,
+      "dateInDesign": "651/652 CE; death reported, not an assassination objective",
+      "placeInDesign": "merv",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/?generate_pdf=1",
+      "locator": "Iranica chronology PDF p.14, lines 371–372 gives 651; design also points to Iranica “Khorasan iv”/Tabari for 31/652.",
+      "claim": {
+        "en": "Yazdegerd III’s death near Marw is dated 651 or 652 in the cited secondary sources; do not state an exact day or treat the regicide account as uncontested.",
+        "es": "La muerte de Yazdegerd III cerca de Marw se fecha en 651 o 652 en las fuentes secundarias citadas; no dar un día exacto ni presentar como indiscutible el relato del regicidio."
+      },
+      "readScope": "Opened chronology PDF and Iranica Khorasan article; the exact Khorasan death passage was not retrievable in the current audit. Retain 651/652 range; precise circumstances remain attributed and disputed.",
+      "consultationStatus": "conflicting_secondary_chronologies_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Fuentes difieren 651 vs. 652; evitar fecha diaria."
+    },
+    {
+      "id": "29-finite-naval-withdrawal-and-care-finike",
+      "order": 29,
+      "dateInDesign": "654–655 CE; conversion variants",
+      "placeInDesign": "finike",
+      "sourceUrl": "https://www.cambridge.org/core/journals/byzantine-and-modern-greek-studies/article/abs/sebeos-account-of-an-arab-attack-on-constantinople-in-654/B067CB79A2ADF5B9A47165D72E00737D",
+      "locator": "O’Sullivan, “Sebeos’ account…,” article notes 35, 40–42, page lines 614–637.",
+      "claim": {
+        "en": "The article associates the Battle of the Masts/Phoenix with 34 AH, July 654–July 655, and reports that source dates and outcomes conflict; fleet-size figures are uncertain.",
+        "es": "El artículo asocia la batalla de los Mástiles/Fénix con 34 H., julio de 654–julio de 655, y advierte que las fechas y resultados de las fuentes discrepan; las cifras de las flotas son inciertas."
+      },
+      "readScope": "Opened and read the publicly visible article notes 35 and 41–42. It cites al-Tabari and Syriac/Byzantine chronicles, notes discrepancies and rejects overly confident fleet totals.",
+      "consultationStatus": "article_notes_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "The date spans 654–655 in sources; fleet totals and strategic outcome are contested, and the source cautions that several reports conflict."
+    },
+    {
+      "id": "30-civilian-records-and-final-perspective-medina",
+      "order": 30,
+      "dateInDesign": "mid656 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "Iranica, “ʿAlī b. Abī Ṭāleb i. Life,” PDF pp.3–4, lines 90–94 and 118–139: provincial groups reach Medina mid-35/656, siege, negotiation and death.",
+      "claim": {
+        "en": "Opposition groups reached Medina and Uthman was killed in 656 during the siege of his residence, according to later narratives; responsibility and sequence remain disputed.",
+        "es": "Grupos opositores llegaron a Medina y Uthman murió en 656 durante el sitio de su residencia, según relatos posteriores; la responsabilidad y la secuencia siguen discutidas."
+      },
+      "readScope": "Opened and read the accessible PDF passage. The article summarizes competing later reports, cites scholarship on Uthman’s murder, and describes Ali’s negotiation; culpability and exact sequence remain contested.",
+      "consultationStatus": "full_article_pdf_consulted",
+      "classification": "contemporary_scholarly_study_or_reference",
+      "cautions": "Circunstancias y culpabilidad disputadas; evento marca fin del rango de campaña."
+    }
+  ],
+  "sourceAuditNotes": [
+    "Order and IDs follow episodeSelection in the worktree file. Event design claims are summarized; no narrative, gameplay, or architecture decisions are made here.",
+    "“Primary historical source” means a later chronicle or ecclesiastical history used as evidence for the period, not a contemporary eyewitness account. The translated Fordham excerpts are explicitly medieval texts in modern translations.",
+    "Where a page was blocked, timed out, exposed only metadata/summary, or did not yield the exact cited passage, the event is marked unverified or candidate. A citation present in the design JSON is not by itself treated as a passage read.",
+    "For Muhammad’s revelation, supernatural claims are reported only as Muslim biographical tradition. No private speech or revelation is presented as neutral fact.",
+    "Place names identify broad episode geography, not exact archaeological footprints or battle positions. Where dates diverge, the claim preserves the range or conventional attribution.",
+    "Follow-up verification: Iranica “Arab ii” PDF now directly supports Yamama in 633 and the Bridge in October 634; this corrects event 16’s prior broad date and verifies event 17. The Qadesiya article explicitly allows 634/635 through 637/638.",
+    "Follow-up verification: Iranica Ḵandaq entry gives the Medinan trench event as 5 AH/April 627; O’Sullivan’s visible Cambridge article notes support Cyprus 649/650 and give a multi-source 34 AH/654–655 range for Phoenix/Battle of the Masts."
+  ]
+}

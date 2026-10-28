@@ -1,0 +1,52 @@
+{
+  "order": 20,
+  "episodeId": "20-separate-reception-logistics-sardica",
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "sourceCoverage": [
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passage": "SocratesHEII20",
+      "coverageActuallyRead": "Architect directly read full displayed chapter20 through ordinary HTML text.",
+      "limitations": "Fifth-century Nicene narrative; doctrinal labels/numbers/motive are attributed. Gives347, not selected343. Eastern separate council isPhilippopolis, not local eastern court inSardica. No exact venue or joint reconciliation.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "passage": "Old editorial chronology introduction and Greek/Latin canons3–5",
+      "coverageActuallyRead": "Architect read displayed introduction and selected canons3–5, not all canons/manuscripts.",
+      "limitations": "Historical nineteenth-century editorial discussion and variant transmissions, not settled current consensus.343/344 discussion internally inconsistent wording; no proof of precise starting day. Canonical appeals are prescriptions, not every-case enforcement or a universal papacy game score.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://sofiahistorymuseum.bg/en/chain-offices/serdica-ancient-cultural-and-communicative-complex",
+      "passage": "Institutional site description and phase/venue qualifications",
+      "coverageActuallyRead": "Architect read institutional description, not plans/image pixels.",
+      "limitations": "Visible structures mixII–III/IV–VI and later phases. Protogenes basilica as council venue is explicitlypresumably, not a certified address. Leontius residence lateVI cannot be343. Current conservation/exhibition not ancient state.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.sofiahistorymuseum.bg/en/chain-offices/west-gate-of-serdica-archeological-park",
+      "passage": "West gate and fortification phase overview",
+      "coverageActuallyRead": "Architect read complete short institutional description.",
+      "limitations": "EarliestII wall/III–IV reconstruction distinct from pentagonal gate tower aftermidV and addedV–VI belt. No copying current walls into343 or historical public-gate dimensions from undated image.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Resolve exact source for split: SocratesII20 places eastern separate council at Philippopolis, off-map, not a second Sardica court. His347 dating conflicts with chronology discussed in old Sardica introduction; retain qualified343 frame and candidate provenance. Museum council venue is presumably, not established."
+  },
+  "imagePixelsInspected": true,
+  "imageLimit": "Actual modern720×404decumanus photo only, no institutional map/figure inspected or copied.",
+  "chronology": "SourceSocrates347 notadopted; playable343qualified and originalcandidate kept; no precise beginning/end asserted.",
+  "geography": "LocalSofia frame;Philippopolis off-map, no two actual synods in one local frame.",
+  "nativeAndBalance": "not approved"
+}
