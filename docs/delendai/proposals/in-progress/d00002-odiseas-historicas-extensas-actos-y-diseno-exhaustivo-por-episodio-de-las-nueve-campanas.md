@@ -63,7 +63,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
 
 ### S4 — Keepers of the Unbroken Word: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `docs/design/odysseys/jewish-tradition.json`, `docs/wiki/jewish-tradition/**`, `docs/design/maps/jewish-tradition/**`
 - **Gate**: e2e
@@ -71,6 +71,8 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
   - "Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S5 — The Keys of the Eternal City: expediente de odisea y episodios
 - **Status**: pending
