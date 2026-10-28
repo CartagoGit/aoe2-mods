@@ -1,0 +1,20 @@
+{
+  "episodeId": "26-plural-civic-logistics-constantinople",
+  "historicalCorrection": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "XXII.2 supports accession/entry; XXII.5.2 supports temple and sacrifice policy. Broadened working date to December361–early362 rather than assert one reopening day. Ammianus admires Julian but also criticizes him; neither admiration, hostile generalizations nor inferred policy motives become the objective narrator’s own judgment. Civic logistics are fiction, not actual temple construction or a decree enforcement counter."
+  },
+  "consultations": [
+    {
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+      "passage": "XXII.2.1–5 and XXII.5.1–4; especially2.4 and5.2",
+      "coverageActuallyRead": "Architect directly read selected entry/accession chapter2 and religious policy5.1–4 in the displayed English edition; adjacent criticisms recognized as context, not wholebook reading.",
+      "limitations": "Later fourth-century narrator and former officer, not a neutral stenographer of the palace. Entry11December in this edition; use broad working frame for subsequent policy. Reopening/sacrifice orders do not quantify each local temple, acceptance or practice. Christian discord and imperial calculation in5.4 remain attributed interpretation; no recycled hostile generalization or authentic dialogue.",
+      "consultationDate": "2026-10-15",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalOrNativeApproval": false
+}

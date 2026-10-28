@@ -1,0 +1,123 @@
+{
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E028_00_DEM/Copernicus_DSM_COG_10_N41_00_E028_00_DEM.tif",
+  "sourceSha256": "d33df50121e0bb20e4801d8901832e368f756d740a71343c6070313ed6246377",
+  "sourceBytes": 19795395,
+  "sourceS3LastModified": "2022-05-09T14:21:57Z",
+  "sourceS3Etag": "9a4035d232b91ae0b1fd9dbf901d2283",
+  "sourceDimensions": [
+    3600,
+    3600
+  ],
+  "sourceDtype": "float32",
+  "sourceCrs": "EPSG:4326",
+  "sourceRasterInterpretation": "Point (AREA_OR_POINT=Point)",
+  "sourceNodata": null,
+  "sourceTransform": [
+    0.0002777777777777778,
+    0.0,
+    27.999861111111112,
+    0.0,
+    -0.0002777777777777778,
+    42.00013888888889
+  ],
+  "sourceOuterBounds": [
+    27.999861111111112,
+    41.00013888888889,
+    28.999861111111112,
+    42.00013888888889
+  ],
+  "sourceSampleCenterBounds": [
+    28.0,
+    41.00027777777778,
+    28.999722222222225,
+    42.0
+  ],
+  "sourceTileEdgeNote": "The AWS mirror readme states that the original bottom-most shared row was removed; the bottom-most sample center in this 3600-row public COG is 41.0002777778, not 41.0.",
+  "requestedBBox": [
+    28.92,
+    41.002,
+    28.999,
+    41.06
+  ],
+  "requestedBBoxOrder": "[west, south, east, north]",
+  "cropPixelWindow": {
+    "columnOffset": 3312,
+    "rowOffset": 3384,
+    "width": 286,
+    "height": 210
+  },
+  "cropDimensions": [
+    286,
+    210
+  ],
+  "cropSampleCenterBounds": [
+    28.92,
+    41.00194444444445,
+    28.99916666666667,
+    41.06
+  ],
+  "cropOuterCellBounds": [
+    28.919861111111114,
+    41.00180555555556,
+    28.99930555555556,
+    41.06013888888889
+  ],
+  "cropTransform": [
+    0.0002777777777777778,
+    0.0,
+    28.919861111111114,
+    0.0,
+    -0.0002777777777777778,
+    41.06013888888889
+  ],
+  "crs": "EPSG:4326",
+  "rasterInterpretation": "Point (AREA_OR_POINT=Point)",
+  "dtype": "float32",
+  "nodata": null,
+  "sampleCount": 60060,
+  "cropBytes": 167144,
+  "cropSha256": "25b1a91f7bee6511fe80732f8d3179f994d2976cbc9811de72f92b67846ab228",
+  "verification": "Architect reopened the normalized crop and compared every sample with its exact integer window in the original, and checked CRS, dtype, nodata, Point interpretation, affine and complete requested sample-center coverage. Independent PIL reading follows separately.",
+  "modifications": "Integer pixel-aligned crop and lossless DEFLATE re-encoding only. No resampling, value edits, filling, warping, derived terrain or historical features.",
+  "productClassification": "Modern 30 m digital surface model (surface includes buildings, infrastructure and vegetation); research reference only, not bare-earth terrain, ancient surface, coastline, historical site placement or game authorization.",
+  "verticalReference": "EGM2008 (EPSG:3855), metres, according to Copernicus product documentation; the downloaded TIFF has no vertical datum tag, so this is documentation attribution rather than a claim based on the file's tags.",
+  "horizontalReference": "WGS84-G1150 / EPSG:4326, according to Copernicus GLO-30 product documentation; the TIFF CRS tag itself reports EPSG:4326.",
+  "tools": {
+    "rasterio": "1.4.4",
+    "numpy": "2.2.6",
+    "python": "3.10.12"
+  },
+  "preparedUtcDate": "2026-10-18",
+  "preparedBy": "gpt-6-luna",
+  "temporaryOriginalPath": "/tmp/Copernicus_DSM_COG_10_N41_00_E028_00_DEM.tif",
+  "temporaryCropPath": "/tmp/constantinople-modern-dsm-covered-crop.tif",
+  "officialProductDocumentationUrl": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+  "awsMirrorReadmeUrl": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+  "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+  "rangeMetres": [
+    -13.957390785217285,
+    137.08737182617188
+  ],
+  "normalizationBy": "gpt-6",
+  "normalizationReason": "Extended the collector candidate one column east and one row south, using exact original samples, so the actual sample-center coverage contains the entire requested bbox. No extrapolation or sample resampling.",
+  "collectorCandidate": {
+    "dimensions": [
+      285,
+      209
+    ],
+    "sha256": "c70cf148fc41c91e59c2711202dd9fe53691d001edb6ae882597b53f0e55215e",
+    "status": "superseded; its eastern/southern sample centers did not cover the requested bbox"
+  },
+  "localCropPath": "docs/research/odyssey-research/geography/constantinople-modern-dsm-reference.tif",
+  "licenseNoticePath": "docs/research/odyssey-research/geography/constantinople-modern-dsm-license.md",
+  "reproduction": "Integer source window and source hash above; temporary rasterio/numpy environment only, no dependency added to the project.",
+  "independentSampleVerification": {
+    "agent": "gpt-6",
+    "method": "Pillow independent TIFF decoder + numpy exact comparison against original pixel window; decoded semantic GeoKeys, scale, Point tiepoint and absent nodata tag checked separately",
+    "sampleCount": 60060,
+    "allSamplesExactlyEqual": true,
+    "allSamplesFinite": true,
+    "rawGeoKeyArraysIdentical": false,
+    "geoKeyExplanation": "Re-encoding relocates double-parameter offsets; decoded GeoKey values are equal. Raw directory byte equality is not semantic CRS equality."
+  }
+}

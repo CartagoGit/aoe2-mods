@@ -1,0 +1,303 @@
+{
+  "audit": {
+    "title": "Imperial Church order 26 Constantinople mechanical map/objective audit",
+    "reviewDate": "2026-10-15",
+    "unit": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+    "episodeId": "26-plural-civic-logistics-constantinople",
+    "orderAtCollection": 26,
+    "filesRead": [
+      "docs/design/odysseys/imperial-church.json (episodes order 26 and matching episodeBlueprints entry)",
+      "docs/design/maps/imperial-church/odyssey/26-plural-civic-logistics-constantinople.svg"
+    ],
+    "svgSha256": "c9718246d48543e5850117a41f47c436df2419c741b4656c7cbd94b3755414a0",
+    "architectApproval": false,
+    "scope": "Mechanical requirements, object/zone geometry, budget arithmetic, frame bounds, and geometric proximity to modern water controls displayed in the SVG. No historical, terrain, native-navigation, or gameplay approval.",
+    "mutations": {
+      "repository": false,
+      "git": false,
+      "proposal": false
+    },
+    "method": [
+      "Applied tools/design/geography.py tile_point to each stored hub coordinate using the stated WGS84 bbox and map size 400.",
+      "Checked tile-to-SVG mapping with renderer factor 650/(400-1), origin (55,85), SVG frame, and 0..399 tile bounds.",
+      "Transformed all six visible blue geographic-control line segments from SVG pixels back into tile coordinates; measured point/segment and route-segment/segment distances, and subtracted declared zone radii or corridor half-widths where relevant.",
+      "Compared objective requirement IDs, helper-to-court destination map, note-to-court map, resource transaction allocations, survival groups, optional subworld positions, difficulty budget profiles, and player-facing objective screen text."
+    ],
+    "limits": [
+      "Distances to visible blue linework are geometric review signals only. These modern geographic controls do not define ancient shorelines, land availability, drainage, or safe terrain.",
+      "Corridor lines are straight proposals with declared widths; this audit does not certify intermediate paths or native pathfinding.",
+      "Budget results are static design arithmetic, not gathered-resource or in-game testing."
+    ]
+  },
+  "counts": {
+    "mapSize": 400,
+    "mainHubs": 6,
+    "mainEntities": 9,
+    "mainReceivingZones": 6,
+    "secondaryObjectives": 6,
+    "secondaryEntities": 7,
+    "secondaryZones": 8,
+    "totalEntities": 16,
+    "totalZones": 14,
+    "mainCorridors": 6,
+    "playstyles": 3,
+    "difficultyEnemyCounts": {
+      "easy": 0,
+      "standard": 0,
+      "hard": 0
+    },
+    "visibleSvg": {
+      "blueWaterControlSegments": 6,
+      "landCorridors": 6,
+      "hubs": 6,
+      "circles": 6,
+      "textNodes": 25
+    },
+    "enemyProduction": false,
+    "regeneratingResources": false
+  },
+  "objectivesAndEconomy": {
+    "mainIdentities": {
+      "helpers": 6,
+      "separatelyLabelledLocalSupplyNotes": 3,
+      "generatedTokens": 0,
+      "orderedDepartures": 0,
+      "returnArrivals": 0,
+      "currentEntityPresenceRequirements": 0,
+      "notes": "The main objective predicates use area-state, entity-state, and resource-transaction only. No derived-token requirement or assistant return/current-residence check is present. The world contract separately marks original identities finite and irreplaceable."
+    },
+    "o1": {
+      "visitRequirement": "area-state visited-and-passable for the three ordinary work-court zones",
+      "registration": "six specific original helper IDs and three specific original note IDs collected",
+      "assessment": "The three work courts and all destinations are explicitly disclosed."
+    },
+    "o2": {
+      "helperRequirement": "o2/req-1: all six original helpers arrive, two each at destination-2 western, destination-3 northern, and destination-5 southern courts.",
+      "fundingRequirement": "o2/req-2 resource-transaction, once and atomic: 360 food, 240 wood, 60 stone total.",
+      "allocations": {
+        "destination-2 western": {
+          "helpers": 2,
+          "food": 120,
+          "wood": 80,
+          "stone": 20
+        },
+        "destination-3 northern": {
+          "helpers": 2,
+          "food": 120,
+          "wood": 80,
+          "stone": 20
+        },
+        "destination-5 southern": {
+          "helpers": 2,
+          "food": 120,
+          "wood": 80,
+          "stone": 20
+        }
+      },
+      "assessment": "Every helper has one assigned receiving zone; a single full allocation at one court does not satisfy the three separate shares."
+    },
+    "o3": {
+      "noteRequirement": "o3/req-1: note 1 arrives at destination-2 west, note 2 at destination-3 north, note 3 at destination-5 south.",
+      "assessment": "Three distinct original note IDs have separate destinations. Prior helper receptions remain historical receipts; the objective text explicitly says they do not imply current residence. No current-presence or return requirement is present."
+    },
+    "survivalContract": {
+      "helperGroup": "all 6 original helper identities required alive or already safe",
+      "noteGroup": "all 3 original note identities required alive or already safe",
+      "source": "worldContract.survivorGroups minimumAliveOrAlreadySafe values are 6 and 3, respectively.",
+      "assessment": "This checks survival/identity preservation, not a present-day location at earlier work courts."
+    },
+    "staticSkipAllOptionalSolvency": {
+      "optionalRewardsReserved": {
+        "food": 450,
+        "wood": 200,
+        "gold": 0,
+        "stone": 0
+      },
+      "eachDifficultyAccessibleWithoutOptionalRewards": {
+        "food": 1330,
+        "wood": 880,
+        "gold": 210,
+        "stone": 240
+      },
+      "eachDifficultyMandatoryPlusProtectedRecoveryPlusReplacementPlusMargin": {
+        "food": 1330,
+        "wood": 880,
+        "gold": 210,
+        "stone": 240
+      },
+      "easy": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      },
+      "standard": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      },
+      "hard": {
+        "mainFeasibleSkippingAllOptionals": true,
+        "allOptionalCostsAffordable": true
+      },
+      "assessment": "All three static resource profiles balance exactly at the declared post-reward bank. This is arithmetic verification only; no gameplay or gathering was tested."
+    }
+  },
+  "geometry": {
+    "bboxWgs84": [
+      28.942,
+      41.0,
+      28.987,
+      41.03
+    ],
+    "projection": {
+      "helper": "tools/design/geography.py tile_point",
+      "result": "All six stored hub centers exactly match tile_point(bbox, hub.lonLat, 400) at stored two-decimal precision.",
+      "svgScale": "650/399 = 1.6290727 px/tile",
+      "svgOrigin": [
+        55,
+        85
+      ],
+      "svgMapRect": {
+        "x": 55,
+        "y": 85,
+        "width": 650,
+        "height": 650
+      }
+    },
+    "hubs": {
+      "allCentersAndRadius12DisksWithinFrame": true,
+      "minimumFrameMarginAfterRadiusTiles": 48.96,
+      "closestHubToFrame": "hub-4 eastern local note yard",
+      "minimumPairwiseClearanceAfterTwoRadius12DisksTiles": 30.8,
+      "closestPair": [
+        "hub-2",
+        "hub-6"
+      ],
+      "hub6CurrentLonLat": [
+        28.955,
+        41.011
+      ],
+      "hub6NearestVisibleBlueLineDistanceTiles": 35.34,
+      "hub6Radius12EdgeClearanceToVisibleLineTiles": 23.34,
+      "note": "Hub 6 matches the corrected coordinate supplied for this audit. Distance is to the nearest displayed modern line, not an ancient shore boundary."
+    },
+    "entitiesAndZones": {
+      "all16EntityPointsWithinFrame": true,
+      "minimumEntityPointFrameMarginTiles": 56.96,
+      "all14ReceivingDisksWithinFrame": true,
+      "zoneRadiusTiles": 3,
+      "minimumZoneFrameMarginTiles": 49.96,
+      "allEntitiesOutsideTheirOwnTaskReceivingDisks": true,
+      "minimumPointToVisibleBlueLineDistanceForEntitiesTiles": 18.68,
+      "closestEntity": "main original-civic-helpers-5",
+      "minimumVisibleLineClearanceAfterZoneRadiusTiles": 24.19,
+      "closestZone": "main destination-5 southern work court",
+      "zoneOverlapsForReview": [
+        {
+          "zoneA": "side-2 repair zone",
+          "zoneB": "side-6 guide destination zone",
+          "center": [
+            251.04,
+            304.42
+          ],
+          "centerDistance": 0,
+          "radii": [
+            3,
+            3
+          ],
+          "assessment": "Exact shared optional target disk; may be intended common southern-junction area."
+        },
+        {
+          "zoneA": "side-4 trade destination zone",
+          "zoneB": "side-5 copy destination zone",
+          "center": [
+            243.13,
+            220.48
+          ],
+          "centerDistance": 0,
+          "radii": [
+            3,
+            3
+          ],
+          "assessment": "Exact shared optional target disk at central yard; review whether the two recipients are intentionally co-located."
+        }
+      ],
+      "entityOverlapForReview": {
+        "entities": [
+          "side-3 aid crate 1",
+          "side-6 guide"
+        ],
+        "position": [
+          118.29,
+          244.47
+        ],
+        "assessment": "Distinct optional identities have the same starting point. They may be separately spawned/task-specific, but the shared coordinate is worth confirming."
+      }
+    },
+    "corridors": {
+      "allSixCenterlinesWithinFrame": true,
+      "allSixFullWidthsWithinFrame": true,
+      "widthsTiles": {
+        "western-civic-branch": 10,
+        "northern-civic-branch": 10,
+        "southern-civic-branch": 10,
+        "local-note-distribution": 8,
+        "northern-relief": 8,
+        "southern-relief": 8
+      },
+      "minimumFrameMarginAfterHalfWidthTiles": 55.96,
+      "corridorWithMinimumMargin": "southern-civic-branch",
+      "nearestVisibleBlueLineCenterlineDistanceTiles": {
+        "western-civic-branch": 35.34,
+        "northern-civic-branch": 35.34,
+        "southern-civic-branch": 27.19,
+        "local-note-distribution": 77.45,
+        "northern-relief": 77.82,
+        "southern-relief": 27.19
+      },
+      "nearestVisibleBlueLineClearanceAfterHalfWidthTiles": {
+        "western-civic-branch": 30.34,
+        "northern-civic-branch": 30.34,
+        "southern-civic-branch": 22.19,
+        "local-note-distribution": 73.45,
+        "northern-relief": 73.82,
+        "southern-relief": 23.19
+      },
+      "assessment": "No displayed blue segment intersects a declared full-width corridor in the current schematic geometry. Southern corridors are closest, with 22.19 tiles minimum edge-to-line gap under this calculation. This does not certify ancient land or actual pathfinding."
+    },
+    "visibleWaterControls": {
+      "count": 6,
+      "representation": "Six blue polylines are drawn. mapPlan lists modern regional shoreline and river-centerline sources; SVG paths are not individually tagged by source type.",
+      "mapPlanInterpretation": "Modern regional shoreline control, not ancient harbor geometry; modern river controls where available. Minor channels and ancient courses need separate evidence.",
+      "ancientWaterControlPolygon": false,
+      "ancientLandMask": false,
+      "note": "The SVG depicts modern control linework against an otherwise uniform tile square. It supplies no terrain raster, flood/shore polygon, elevation, or ancient bank mask. A route staying on one side of visible lines is a limited geometric observation, not a land-side certificate."
+    },
+    "renderedSvgInspection": {
+      "rendered": true,
+      "legendAndLabelsClipped": false,
+      "mapIsSchematic": true,
+      "notes": [
+        "Six hub circles, six dashed land corridors, and six blue modern control segments are visible; no optional entities or zones are shown.",
+        "Legend states the routes are proposals, not surveyed paths or a terrain raster, and that ancient shore/elevation are not inferred.",
+        "No boat route is actually drawn despite the generic cyan boat-passage legend entry."
+      ]
+    }
+  },
+  "textReview": {
+    "mainPlayerText": {
+      "o2.en": "Deliver the assigned pair of original helpers to each work court. Allocate exactly 120 food, 80 wood and 20 stone to each court once: 360 food, 240 wood and 60 stone total.",
+      "o2.es-ES": "Entrega la pareja asignada de ayudantes originales a cada patio. Asigna una vez exactamente 120 de alimento, 80 de madera y 20 de piedra a cada patio: 360 de alimento, 240 de madera y 60 de piedra en total.",
+      "o3.en": "Deliver the first original supply note west, the second north and the third south. Keep all six original helpers and all three notes intact; prior work-court receptions remain recorded without requiring current residence.",
+      "o3.es-ES": "Entrega la primera nota original al oeste, la segunda al norte y la tercera al sur. Conserva intactos los seis ayudantes originales y las tres notas; las acogidas anteriores siguen registradas sin exigir permanencia actual."
+    },
+    "formatting": "No comma-number spacing defect was found in the current main goal strings; resource quantities are separated and per-court versus total allocations are explicit.",
+    "genericOrAmbiguousPlayerText": [],
+    "internalQaText": "QA metadata includes compact shorthand `Exactly120F80W20S`; this is internal QA text rather than a player caption, so it is not logged as UI leakage."
+  },
+  "architectFollowUp": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "historicalOrNativeApproval": false,
+    "decision": "Guide origin is independently offset[-10,-6], avoiding exact overlap with the first aid crate. Two shared receiving circles intentionally share a work court but have disjoint original identities and independent health/payment/arrival ledgers. Native footprints still pending.",
+    "pacing": "No enemies or main deadline; lower worker count may mainly increase waiting. Static solvency does not establish meaningful difficulty. Require actual playtime, worker-use, optional completion and idle-time measurements before promotion."
+  }
+}

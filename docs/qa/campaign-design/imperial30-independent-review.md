@@ -1,0 +1,27 @@
+# Revisión independiente acotada — imperial30
+
+Revisor: gpt-6.1-sol. Candidato e90ae5f90e819317b940b5b31d6d99b171746964, base 8a37f763d1b0e5b2bb1866131c45636bb5c1f283. Unidad propia DelendAI wip/gpt-6.1-sol/review/batch-all-g8/verdicts, sesión 25bec362. Checkout compartido develop intacto. No cambios de implementación ni de contratos.
+
+Resultado: sin hallazgos P1/P2 nuevos en la revisión técnica/editorial acotada. El dossier puede continuar su revisión/integración de diseño como borrador. No constituye aprobación histórica global, cierre d00002, aprobación formal f00003/S33, capacidad nativa ni jugabilidad.
+
+## Evidencia
+
+- Overview conectado DelendAI y descubrimiento consultados, workflow recuperado. review_queue devolvió cero propuestas; no había ronda susceptible de aprobación. Se abrió unidad propia oficialmente y se incorporó el candidato por fast-forward dentro de ella. No se utilizó identidad/unidad del implementador.
+- Leídos README, plan, arquitectura, naming, handoffs de workflow/contexto/gates; fuente audit30, geografía, aplicación cívica y checkpoint.
+- Lectura directa de Historia Acephala X.15–XI.16 y control XII.17 en https://www.newadvent.org/fathers/2820.htm. La orden, discusión local, retirada nocturna y posterior carta/retorno se distinguen. El dossier conserva atribución partidista, calendario y dramatización. No presenta la villa o New River como coordenadas, no transforma la multa en pago del jugador, ni añade rescate episcopal o desastre obligatorio. Esta lectura acotada no resuelve todas las afirmaciones históricas de la campaña.
+- Comparación JSON independiente contra git show 8a37f763: los 29 episodios previos y sus 29 blueprints son estructuralmente idénticos. La modificación masiva visible es formato. Cambia el dossier nuevo semantic30/display28 y metadatos de cobertura; IDs/contratos activos, lock de strings y progreso no figuran entre archivos cambiados.
+- Fixture temporal propio /tmp/imperial30-reference-fixture.ts: 15 subconjuntos válidos, 74 aserciones, todas pasan contra el reductor y esquema tipados actuales. Proyecta explícitamente los predicados del dossier sobre el scaffold de referencia: elimina metadatos editoriales de presencia, añade descripción commit del pago y loss desde failureRecovery; no modifica archivos productivos ni afirma compilación nativa del dossier.
+- El fixture comprueba los 15 any4of6, asignación equivocada, visitas históricas insuficientes, cambio/restauración de cuarteto sin residencia continua, pérdida de dos/tres originales, vecino opcional irrelevante para derrota principal, serialización JSON, latch con observación fresca, pagos y cadena causal del recadero. Una llegada SE antigua no satisface la llegada cualificada; el latch o2 solo no sustituye req-4; después de recepción NW se exige departure y una llegada SE posterior. Los checkpoints o2 y o3 requieren presencia actual; guardar/cargar no autoriza un latch sin lote fresco.
+- Inspección estructurada: destinos 1–3 NW/4–6 SE en o2/req-1 y o3/req-4, umbral4, sin elegibilidad congelada; lotes1–2 NW/3 SE. Pagos160F80W +100F100W +120F60W =380F240W. El fixture verifica débito260F180W y120F60W.
+- Mapa SVG renderizado mediante ImageMagick y visto en /tmp/imperial30-review-map.png. Distritos NW/SE coherentes, rutas esquemáticas, sin villa/río ubicados. Recalculados19centros únicos y15zonas, márgenes73.78/68.78. Hash SVG21b795e8cf711838824e340e3c290db72f1a41ca82a964b4b5112cd2870b1760 coincide con audit. Se conserva la distinción entre marco aritmético y terreno/packing/pathfinding pendientes.
+- Stock all-skip recalculado por perfil: inicio+banco−reserva opcional coincide con accessibleWithoutOptionalRewards (1310F860W210G140S). Recompensas/recuperación no acreditan diversión ni viabilidad en motor.
+- bun run validate: exit0;102tests,389expectativas, documentación/enlaces y campaña válidos. El chequeo local incluye los enlaces rebajados del archivo histórico trasladado.
+- python3 tools/design/verify.py: exit0;60/278dossiers,0aprobados,2469pantallas,370secundarios,34referencias adicionales; sin errores.
+- python3 tools/design/test_design.py:57tests OK.
+- bun /tmp/imperial30-reference-fixture.ts: exit0;15subsets/74assertions.
+
+## Pendientes explícitos y límites
+
+La diferenciación de dificultades y el interés práctico quedan abiertos: el mismo presupuesto accesible y ausencia de hostiles/plazo no prueban decisiones interesantes. civic-playability-acceptance.md exige medidas reales de alternativas, espera, recuperación y perfiles antes del traspaso mecánico. Es una deuda de diseño ya reconocida, no un gate superado por este informe. Continúan revisión histórica/geográfica, native observers i00005/S2, packing/pathfinding, capacidades nativas relacionadas y QA AoE2. No se ejecutó test:export porque no cambió el adaptador y no se declara exportación o juego verificado. La unidad se retira oficialmente conservando tip y evidencia externa; no se registra aprobación de slice incompleto.
+
+Comandos reproducibles: export DELENDAI_AGENT_ID=gpt-6.1-sol; ejecutar desde la unidad propia los tres comandos de validación anteriores y bun /tmp/imperial30-reference-fixture.ts. Logs: /tmp/imperial30-review-validate.log y /tmp/imperial30-review-design-tests.log. El fixture es temporal y conserva imports absolutos de la unidad retirada; su código y el JSON extraído /tmp/imperial30-episode.json permanecen disponibles en esta sesión.

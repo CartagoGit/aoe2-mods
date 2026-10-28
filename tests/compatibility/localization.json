@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "proposal": "s00001",
+  "slice": "S2",
+  "scope": "localization",
+  "kind": "manual-engine-test-plan",
+  "status": "pending",
+  "reason": "AoE2 no ejecutado en este entorno",
+  "evidenceRequired": [
+    "gameBuild",
+    "platform",
+    "artifactSha256",
+    "reviewer",
+    "steps",
+    "observations",
+    "attachments"
+  ],
+  "cases": [
+    {
+      "id": "17-engine-folders",
+      "status": "pending"
+    },
+    {
+      "id": "all-alphabets",
+      "status": "pending"
+    },
+    {
+      "id": "2-mods",
+      "status": "pending"
+    },
+    {
+      "id": "5-mods",
+      "status": "pending"
+    },
+    {
+      "id": "10-mods",
+      "status": "pending"
+    },
+    {
+      "id": "reversed-priority",
+      "status": "pending"
+    },
+    {
+      "id": "language-switch",
+      "status": "pending"
+    },
+    {
+      "id": "update",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "scope": "Declared frame arithmetic only, not an ancient landmask or usable terrain certificate. Actor centers do not certify unit/building footprints.",
+  "episodes": [
+    {
+      "order": 26,
+      "episodeId": "26-plural-civic-logistics-constantinople",
+      "hubs": 6,
+      "minimumHubSeparationTiles": 54.8,
+      "nearestPair": [
+        "hub-2",
+        "hub-6"
+      ],
+      "totalMainAndOptionalEntities": 16,
+      "totalMainAndOptionalZones": 14,
+      "minimumEntityCenterFrameClearanceTiles": 56.96,
+      "minimumZoneRadiusFrameClearanceTiles": 49.96,
+      "minimumFullCorridorWidthFrameClearanceTiles": 55.96,
+      "allOffsetsRadiiAndFullWidthsInFrame": true,
+      "architectRasterInspected": true,
+      "svgSha256": "c9718246d48543e5850117a41f47c436df2419c741b4656c7cbd94b3755414a0",
+      "ancientLandAndNativeNavigationApproved": false
+    },
+    {
+      "order": 27,
+      "episodeId": "27-return-and-departure-records-alexandria",
+      "hubs": 6,
+      "minimumHubSeparationTiles": 91.67,
+      "nearestPair": [
+        "hub-1",
+        "hub-2"
+      ],
+      "totalMainAndOptionalEntities": 18,
+      "totalMainAndOptionalZones": 15,
+      "minimumEntityCenterFrameClearanceTiles": 65.78,
+      "minimumZoneRadiusFrameClearanceTiles": 76.78,
+      "minimumFullCorridorWidthFrameClearanceTiles": 74.78,
+      "allOffsetsRadiiAndFullWidthsInFrame": true,
+      "architectRasterInspected": true,
+      "svgSha256": "ff43545f5b32796111a1f37c46f6a213cca86ebd87f56f39a4f800dc43340d4e",
+      "ancientLandAndNativeNavigationApproved": false
+    }
+  ],
+  "historicalOrNativeApproval": false
+}
