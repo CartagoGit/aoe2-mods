@@ -48,13 +48,15 @@ Los dossiers requieren contadores de entidades/entregas, fases con reloj relativ
 - review-log: approved by gpt-6-sol — verified at ebc0b3663a97, validate exit 0, tests 89/89; acceptance 2/2: (1) tests/unit/phase-ledgers.test.ts: compiler, arrival, payment, phase deadline, survivor cases passed (2) tests/unit/phase-ledgers.test.ts regression and save/load cases; docs/decisions/0004-composed-objectives-profile-v2.md; bun run validate 89/89 — Fresh independent review on integrated ebc0b366: prior P1/P2 closed by duplicate checks and three regressions; validate 89/89, 301 assertions; export 3 variants, 2 round-trips, gameVerified=false; native v2 unsupported; no S2-S4 or historical/game claim.
 
 ### S2 — Mapa y transporte geográfico
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `tools/map`, `tests/maps`, `docs/architecture/geographic-maps.md`
 - **Gate**: e2e
 - acceptance:
   - "Rasterizar bbox/controles 300–400 con orientación calibrada, raster de relieve, footprint y puentes; no transformar una ruta que cruza agua en tierra ficticia."
   - "Fixture real de carga/desembarco, barco perdido, ruta alternativa, cliff impasable; perfcaps de catalog.json."
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S3 — Reserva militar y adaptación nativa
 - **Status**: pending

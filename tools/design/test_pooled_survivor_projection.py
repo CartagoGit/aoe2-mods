@@ -215,13 +215,13 @@ class PooledSurvivorProjectionTests(unittest.TestCase):
         for path in sorted((ROOT / "docs/design/odysseys").glob("*.json")):
             campaign = json.loads(path.read_text(encoding="utf-8"))
             episodes.extend(campaign.get("episodes", []))
-        self.assertEqual(len(episodes), 64)
+        self.assertEqual(len(episodes), 65)
         self.assertEqual(
-            sum(len(episode.get("screens", [])) for episode in episodes), 2645
+            sum(len(episode.get("screens", [])) for episode in episodes), 2689
         )
         self.assertEqual(
             sum(len(episode.get("secondaryObjectives", [])) for episode in episodes),
-            398,
+            405,
         )
         for episode in episodes:
             self.assertEqual(self.numbers["audit_count_thresholds"](episode), [])
