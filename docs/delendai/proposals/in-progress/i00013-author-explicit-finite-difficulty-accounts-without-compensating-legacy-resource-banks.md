@@ -2,12 +2,16 @@
 id: i00013
 title: "Author explicit finite difficulty accounts without compensating legacy resource banks"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: general
 date: 2026-10-27
 shipped-in:
   - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
+last-transition-id: 6987d739-cae7-41de-8842-e32c0cd6211f
+last-correlation-id: 6987d739-cae7-41de-8842-e32c0cd6211f
+last-transition-from: ready
+last-transition-at: 2026-10-28T00:04:48.769Z
 ---
 
 # i00013 — Author explicit finite difficulty accounts without compensating legacy resource banks
@@ -33,7 +37,7 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 
 ### S1 — Architect account boundaries and compatibility decision
 - **Status**: review
-- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/ready/infras/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
+- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/in-progress/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
 - **Gate**: type
 - acceptance:
   - "Define a source-only opt-in authoredDifficultyAccounts with exactly easy/standard/hard and each record exactly spendable, gatherableBank, protectedRecovery, optionalReserve; each requires exact four-resource keys, reuses existing numeric resource normalization and adds a safe-integer bound including intermediate sums at the new source boundary. The existing Python normalizer alone does not enforce that ceiling. No field means complete old behavior and byte-identical default outputs. No gameplay schema widening is authorized. Derived episode economyProfile authored-finite-accounts-v1 explicitly dispatches coordinated numeric validation; unknown and v3+marker reject, absent stays legacy. supplyMargins=S+B-M-Z. See the reviewed ADR amendment; the initial three-File design was not conformant."
