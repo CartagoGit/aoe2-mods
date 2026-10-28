@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "proposal": "s00001",
+  "slice": "S1",
+  "scope": "progression",
+  "kind": "manual-engine-test-plan",
+  "status": "pending",
+  "reason": "AoE2 no ejecutado en este entorno",
+  "evidenceRequired": [
+    "gameBuild",
+    "platform",
+    "artifactSha256",
+    "reviewer",
+    "steps",
+    "observations",
+    "attachments"
+  ],
+  "cases": [
+    {
+      "id": "fresh-profile",
+      "status": "pending"
+    },
+    {
+      "id": "route-a-then-b",
+      "status": "pending"
+    },
+    {
+      "id": "route-b-then-a",
+      "status": "pending"
+    },
+    {
+      "id": "both-same-tick",
+      "status": "pending"
+    },
+    {
+      "id": "save-before-victory",
+      "status": "pending"
+    },
+    {
+      "id": "load-after-route",
+      "status": "pending"
+    },
+    {
+      "id": "successor-alone",
+      "status": "pending"
+    },
+    {
+      "id": "language-change",
+      "status": "pending"
+    }
+  ]
+}

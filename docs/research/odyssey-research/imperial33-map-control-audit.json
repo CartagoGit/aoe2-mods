@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-18",
+  "realIdentity": "gpt-6",
+  "classification": "Architect geometric arithmetic only; no historical/native/pathfinding certification",
+  "episodeId": "33-accession-and-reassembly-sirmium",
+  "sourceCandidateCollection": "sirmium33-frame-collection.json (Luna preliminary wider frame retained unchanged)",
+  "finalFrame": [
+    19.6,
+    44.971,
+    19.632,
+    44.992
+  ],
+  "paddedSquareLonLat": [
+    19.59808,
+    44.9688245557402,
+    19.63392,
+    44.994175444259795
+  ],
+  "parentProfileBbox": [
+    19.575,
+    44.948,
+    19.65,
+    44.996
+  ],
+  "fullSquareInsideParent": true,
+  "projection": "Same cosine-corrected square padding as geography.tile_point; latitude midpoint cosine, factor1.12,399intervals",
+  "sourceSavaSha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+  "modernSavaSegmentIntersections": {
+    "authoredFrame": 0,
+    "fullPaddedSquare": 0
+  },
+  "actorCenters": [
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-1",
+      "centerTiles": [
+        40.77,
+        105.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-2",
+      "centerTiles": [
+        42.77,
+        105.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-3",
+      "centerTiles": [
+        44.77,
+        105.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-4",
+      "centerTiles": [
+        46.77,
+        105.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-5",
+      "centerTiles": [
+        40.77,
+        107.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-6",
+      "centerTiles": [
+        42.77,
+        107.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-7",
+      "centerTiles": [
+        44.77,
+        107.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-8",
+      "centerTiles": [
+        46.77,
+        107.2
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-1",
+      "centerTiles": [
+        174.37,
+        89.46
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-2",
+      "centerTiles": [
+        176.37,
+        89.46
+      ]
+    },
+    {
+      "id": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-3",
+      "centerTiles": [
+        178.37,
+        89.46
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-2.entity-1",
+      "centerTiles": [
+        115.57,
+        320.54
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-3.entity-1",
+      "centerTiles": [
+        200.37,
+        73.46
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-4.entity-1",
+      "centerTiles": [
+        245.16,
+        106.93
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-4.entity-2",
+      "centerTiles": [
+        245.16,
+        103.93
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-5.entity-1",
+      "centerTiles": [
+        198.37,
+        201.37
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-7.entity-1",
+      "centerTiles": [
+        66.77,
+        248.59
+      ]
+    },
+    {
+      "id": "33-accession-and-reassembly-sirmium.side-7.entity-2",
+      "centerTiles": [
+        66.77,
+        245.59
+      ]
+    }
+  ],
+  "actorCount": 18,
+  "allActorCentersUnique": true,
+  "zoneCount": 18,
+  "minimumFrameClearanceTiles": {
+    "actorCenters": 40.77,
+    "zoneCircles": 43.77,
+    "corridorHalfWidths": 49.77
+  },
+  "corridorStraightLengthsTiles": {
+    "western-preparation-loop": 378.02,
+    "central-preparation-spine": 125.91,
+    "eastern-preparation-loop": 221.92,
+    "cross-post-link": 289.8,
+    "northern-dispatch-alternative": 445.25,
+    "central-dispatch-link": 195.17,
+    "eastern-dispatch-link": 141.65
+  },
+  "svgSha256": "5f7fba11b49023d16f1275bd15bfe2cf4a4e9e76d8816f8431908a5cb11d5ecd",
+  "limits": [
+    "Frame containment and zero intersection with a generalized MODERN river line are not proof of379dry ground, ancient shoreline or marsh boundaries.",
+    "These18potential actor centers exclude unmaterialized12/9/6gatherers; exact native worker start and finite operating-bank resource footprints remain architect/native gates.",
+    "Clearance arithmetic uses centers, circle radii and corridor half widths, not actual unit/building footprints. Radius3station/final actor packing and native navigation remain unproven.",
+    "Reference observations may carry multiple zone IDs; physically disjoint staging posts require honest native observer geometry, not a model claim that arbitrary incompatible memberships are rejected.",
+    "No exact palace, city gate, dock, military formation or accession venue identified."
+  ]
+}

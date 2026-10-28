@@ -1,0 +1,44 @@
+{
+  "order": 23,
+  "episodeId": "23-bounded-political-pressure-milan",
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "sourceCoverage": [
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26024.htm",
+      "passage": "Sozomen, Ecclesiastical HistoryIV.9, Milan council",
+      "supportedClaim": {
+        "en": "Sozomen describes a council at Milan at which bishops were pressed to condemn Athanasius and dissenting bishops were exiled.",
+        "es-ES": "Sozomeno describe un concilio en Milán en el que se presionó a los obispos para condenar a Atanasio y se exilió a obispos disidentes."
+      },
+      "limitations": "Later partisan church history; its theological judgements are attributed to the author. Conventional355 date and exact local hearing logistics are not independent court records. This event is distinct from the Alexandria night raid in356.",
+      "consultationDate": "2026-10-13",
+      "status": "consulted-primary-narrative-with-bias",
+      "coverageActuallyRead": "Chapter9 on the Milan council; other chapters are not evidence for local proceedings"
+    },
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26024.htm",
+      "passage": "Sozomen HE IV.9, council paragraph and immediate outcome",
+      "coverageActuallyRead": "Architect directly read chapter9; later Alexandria paragraph is recognized as a different event, not a355Milan raid.",
+      "limitations": "Later pro-Nicene narration; fear/fraud/motives and providential judgment are authorial. No reliable exact attendance, synod room or private transcript. Avoid importing his inconsistent bishop/place label or assembled exile list as attendance proof.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://pure.manchester.ac.uk/ws/portalfiles/portal/54577636/FULL_TEXT.PDF",
+      "passage": "Melissa Markauskas2015, From Privilege to Proscription, selected printed72–74; physical PDF72–74, zero71–73",
+      "coverageActuallyRead": "Architect directly read selected printed pages72–74 with footnotes131–145 and verified pagination; not whole259-page thesis.",
+      "limitations": "Milan355, differentiated responses and Hilary nonattendance; synod and separate Liberius legal anecdote distinct. Rimini359 belongs to next episode. Secondary argument, no venue plan. Copyright retained by author, temporary research PDF not copied into project assets.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Milan355 proceedings distinct from Alexandria356 and Liberius separate interrogation. Do not copy source headcounts, Alba bishop label or imply Hilary attendedMilan; scholarship says he did not. Civilian context labels are fiction, not authentic synodal signatures, recovered acts or a doctrinal verdict. Title changed, stable IDs retained."
+  },
+  "nativeAndBalance": "not approved"
+}

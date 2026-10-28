@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/withmorten/rge_campaign",
+  "commit": "3c40203b650de9888ca82fae1276ea67bf3d3d93",
+  "license": "No license file at checked commit; do not redistribute source or executable. External build tool only.",
+  "files": {
+    "main.c": "7c737fc72a471cc4f17540de26e667453adaca232e649a2430a06aad858f66c6",
+    "util.c": "cac39543017d77e38f2ab43f1a75dbdcd4e788789542ebfb00a0a7089433ecb7",
+    "rge_campaign.h": "ce665ce3a627d44114ff425434fa55accf1bc5958c91fffa1806e0e8a5dadc30"
+  }
+}

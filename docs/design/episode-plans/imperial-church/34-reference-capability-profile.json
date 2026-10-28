@@ -1,0 +1,1689 @@
+{
+  "profile": "composed-world-ledger",
+  "schemaVersion": 3,
+  "districts": [
+    "starting-court",
+    "meal-reception",
+    "materials-court",
+    "kit-court",
+    "host-court",
+    "meal-direct-source",
+    "hearth-worksite",
+    "merchant-worksite",
+    "materials-source",
+    "kit-worksite",
+    "host-worksite",
+    "western-junction",
+    "north-viewpoint",
+    "south-viewpoint",
+    "north-care-yard",
+    "north-store",
+    "north-reader",
+    "north-reception",
+    "western-guide"
+  ],
+  "worldContract": {
+    "version": 1,
+    "classification": "authoring specification, not implemented DSL",
+    "entities": [
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-worker",
+        "role": "fictional voluntary service worker",
+        "initialHub": "starting-court",
+        "offsetTiles": [
+          -6,
+          -4
+        ],
+        "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.meal-worker; no historical person is represented.",
+        "finite": true,
+        "replacement": "none; no substitution of unique original identity",
+        "initiallyDelivered": false,
+        "originRule": "The authored initial position creates no delivery or work receipt.",
+        "playerControllable": true,
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+        "role": "fictional voluntary service worker",
+        "initialHub": "starting-court",
+        "offsetTiles": [
+          -6,
+          4
+        ],
+        "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.shelter-worker; no historical person is represented.",
+        "finite": true,
+        "replacement": "none; no substitution of unique original identity",
+        "initiallyDelivered": false,
+        "originRule": "The authored initial position creates no delivery or work receipt.",
+        "playerControllable": true,
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-recipient",
+        "role": "fictional original consenting recipient",
+        "initialHub": "starting-court",
+        "offsetTiles": [
+          5,
+          -5
+        ],
+        "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.meal-recipient; no historical person is represented.",
+        "finite": true,
+        "replacement": "none; no substitution of unique original identity",
+        "initiallyDelivered": false,
+        "originRule": "The authored initial position creates no delivery or work receipt.",
+        "playerControllable": true,
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.household-a",
+        "role": "fictional original consenting household",
+        "initialHub": "starting-court",
+        "offsetTiles": [
+          6,
+          1
+        ],
+        "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.household-a; no historical person is represented.",
+        "finite": true,
+        "replacement": "none; no substitution of unique original identity",
+        "initiallyDelivered": false,
+        "originRule": "The authored initial position creates no delivery or work receipt.",
+        "playerControllable": true,
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.household-b",
+        "role": "fictional original consenting household",
+        "initialHub": "starting-court",
+        "offsetTiles": [
+          6,
+          7
+        ],
+        "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.household-b; no historical person is represented.",
+        "finite": true,
+        "replacement": "none; no substitution of unique original identity",
+        "initiallyDelivered": false,
+        "originRule": "The authored initial position creates no delivery or work receipt.",
+        "playerControllable": true,
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-direct-output",
+        "role": "fictional selected-service result",
+        "initialHub": "meal-direct-source",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.meal-direct-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: meal-direct.",
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-shared-hearth-output",
+        "role": "fictional selected-service result",
+        "initialHub": "hearth-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.meal-shared-hearth-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: meal-shared-hearth.",
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-purchased-output",
+        "role": "fictional selected-service result",
+        "initialHub": "merchant-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.meal-purchased-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: meal-purchased.",
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.shelter-materials-output",
+        "role": "fictional selected-service result",
+        "initialHub": "materials-source",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.shelter-materials-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: shelter-materials.",
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.shelter-local-kit-output",
+        "role": "fictional selected-service result",
+        "initialHub": "kit-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.shelter-local-kit-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: shelter-local-kit.",
+        "historicalPerson": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.shelter-rented-output",
+        "role": "fictional selected-service result",
+        "initialHub": "host-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "identity": "Fictional selected-service result with stable identity imperial-church.34-church-transfer-constantinople.shelter-rented-output; not historical property or cargo evidence.",
+        "finite": true,
+        "replacement": "none; no substitute selected-service result",
+        "initiallyDelivered": false,
+        "originRule": "Declared at its authored work point but unavailable until this exact selected recipe has qualified post-commit work and the existing reference generation operation: shelter-rented.",
+        "historicalPerson": false
+      }
+    ],
+    "zones": [
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-direct-source.zone",
+        "hub": "meal-direct-source",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+        "hub": "meal-reception",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.hearth-worksite.zone",
+        "hub": "hearth-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.merchant-worksite.zone",
+        "hub": "merchant-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.materials-source.zone",
+        "hub": "materials-source",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.materials-court.zone",
+        "hub": "materials-court",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.kit-worksite.zone",
+        "hub": "kit-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.kit-court.zone",
+        "hub": "kit-court",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.host-worksite.zone",
+        "hub": "host-worksite",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      },
+      {
+        "id": "imperial-church.34-church-transfer-constantinople.host-court.zone",
+        "hub": "host-court",
+        "offsetTiles": [
+          0,
+          0
+        ],
+        "radiusTiles": 3,
+        "placement": "Fictional activity zone at the authored hub and offset; native footprint pending.",
+        "protectedCivilian": false
+      }
+    ],
+    "ledgerPolicy": "Arrival receipts are historical facts; current living presence is evaluated separately. Selected service completion requires fresh authoritative final presence for each selected output and its unchanged original recipients.",
+    "resourcePolicy": "Operating stock, protected recovery, joint reservation escrow, committed expenditure, and finite optional reserve are distinct accounts. Only the complete selected recipe combination is reserved; no unselected recipe is charged.",
+    "defeatPolicy": "Known main defeat takes priority over same-batch victory. Loss of a required original recipient or generated selected result defeats; worker loss after its qualified work receipt does not erase that work.",
+    "earlyDelivery": "Initial placement never creates arrival or work receipts. Only fresh authoritative observation of the exact living identity at its declared destination records arrival.",
+    "survivorGroups": [],
+    "enemyBinding": "No enemy identity or mobilization is authored; enemy production is disabled and any unspent roster remains in reserve."
+  },
+  "objectivePlan": [
+    {
+      "id": "attend-meal-court",
+      "text": {
+        "en": "Bring the meal recipient to the receiving court.",
+        "es-ES": "Lleva al destinatario de la comida al patio receptor."
+      },
+      "after": [],
+      "targetHub": "meal-reception",
+      "phase": "phase-1",
+      "completion": "The exact original meal recipient has an arrival receipt and is currently present alive at the meal receiving court.",
+      "countLedger": {
+        "id": "meal-attendance",
+        "oncePerEntity": true,
+        "required": 1
+      },
+      "earlyCompletion": "Latch attendance only from fresh authoritative observations of the original recipient at the declared destination; initial placement is not arrival.",
+      "effect": "Record shared meal-court attendance only; do not debit resources, complete a service, or generate an output.",
+      "capability": "Reference entity-arrival receipt plus current-entity-presence predicate; native implementation pending.",
+      "operation": "attend-meal-court",
+      "threshold": 1,
+      "entities": [
+        {
+          "id": "imperial-church.34-church-transfer-constantinople.meal-recipient",
+          "role": "fictional original consenting recipient",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            5,
+            -5
+          ],
+          "identity": "Fictional stable original identity: imperial-church.34-church-transfer-constantinople.meal-recipient; no historical person is represented.",
+          "finite": true,
+          "replacement": "none; no substitution of unique original identity",
+          "initiallyDelivered": false,
+          "originRule": "The authored initial position creates no delivery or work receipt.",
+          "playerControllable": true,
+          "historicalPerson": false
+        }
+      ],
+      "predicate": {
+        "operator": "all",
+        "operation": "attend-meal-court",
+        "requiredCount": 1,
+        "defeatBelowRemaining": null,
+        "resourceAmounts": {},
+        "phaseGated": true,
+        "neverUseTimerInstead": true,
+        "requirements": [
+          {
+            "id": "meal-recipient-arrival",
+            "kind": "entity-state",
+            "state": "arrived",
+            "entities": [
+              "imperial-church.34-church-transfer-constantinople.meal-recipient"
+            ],
+            "requiredCount": 1,
+            "oncePerEntity": true,
+            "destinations": {
+              "imperial-church.34-church-transfer-constantinople.meal-recipient": "imperial-church.34-church-transfer-constantinople.meal-reception.zone"
+            }
+          },
+          {
+            "id": "meal-recipient-current",
+            "kind": "current-entity-presence",
+            "entities": [
+              "imperial-church.34-church-transfer-constantinople.meal-recipient"
+            ],
+            "destinations": {
+              "imperial-church.34-church-transfer-constantinople.meal-recipient": "imperial-church.34-church-transfer-constantinople.meal-reception.zone"
+            },
+            "requiredCount": 1
+          }
+        ],
+        "requiredLedgers": [
+          "meal-recipient-arrival",
+          "meal-recipient-current"
+        ],
+        "allRequired": true
+      }
+    }
+  ],
+  "stateMachine": {
+    "states": [
+      "briefing",
+      "phase-1",
+      "victory",
+      "defeat"
+    ],
+    "transitions": [
+      "briefing → phase-1 on intro-accepted",
+      "phase-1 → victory on objective-latched for attend-meal-court, subject to the genuine v3 selected-service and final-presence gate"
+    ],
+    "phaseTransitions": [
+      {
+        "from": "briefing",
+        "to": "phase-1",
+        "on": "intro-accepted"
+      },
+      {
+        "from": "phase-1",
+        "to": "victory",
+        "on": "objective-latched",
+        "objectiveId": "attend-meal-court"
+      }
+    ],
+    "terminalPriority": "defeat evaluated first; one terminal latch, choice order documented",
+    "saveLoad": "Restore the complete reference snapshot and world; after load only a fresh observation epoch may satisfy new living-presence, work, or final-presence checks.",
+    "phaseClock": "relative to phase entry; no scenario-wide deadline is authored"
+  },
+  "secondaryObjectives": [
+    {
+      "id": "side-1",
+      "kind": "aid",
+      "title": {
+        "en": "A Table Kept Open",
+        "es-ES": "Una mesa que sigue abierta"
+      },
+      "subject": {
+        "en": "two household collection posts",
+        "es-ES": "dos puestos de recogida de hogares"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Two separately identified consignments reach separately marked collection posts assigned to fictional consenting households. Household members remain off scene; this task checks the crates at their assigned posts, not recipient presence. No creed eligibility.",
+        "es-ES": "Dos remesas con identidades distintas llegan a puestos de recogida señalados por separado para hogares ficticios voluntarios. Sus miembros quedan fuera de escena; la tarea comprueba las cajas en sus puestos asignados, no la presencia de destinatarios. Sin requisitos de credo."
+      },
+      "text": {
+        "en": "Bring each marked aid crate to its own marked household collection post in the Northern Reception Yard. Household members are off scene; the two crate arrivals complete this task. Benefit: 100 food, 50 wood, once.",
+        "es-ES": "Lleva cada caja de ayuda señalada a su puesto de recogida de hogar correspondiente, también señalado, en el patio receptor del norte. Los miembros de esos hogares quedan fuera de escena; las dos llegadas de cajas completan esta tarea. Ventaja: 100 de alimento, 50 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-1.entity-1",
+              "34-church-transfer-constantinople.side-1.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-1.entity-1": "34-church-transfer-constantinople.side-1.zone-1",
+              "34-church-transfer-constantinople.side-1.entity-2": "34-church-transfer-constantinople.side-1.zone-2"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-1.entity-1",
+            "role": "aid",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-1.entity-1; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-1.entity-2",
+            "role": "aid",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-1.entity-2; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-1.zone-1",
+            "hub": "north-reception",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-1.zone-2",
+            "hub": "north-reception",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "wood": 50
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-1.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-1.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-care-yard",
+        "receivingHub": "north-reception",
+        "corridorIds": [
+          "north-care-loop",
+          "north-reader-link",
+          "north-reception-link"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-2",
+      "kind": "extract",
+      "title": {
+        "en": "The Longer Way Home",
+        "es-ES": "El camino largo a casa"
+      },
+      "subject": {
+        "en": "two voluntary neighboring groups",
+        "es-ES": "dos grupos vecinos voluntarios"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "These optional originals are distinct from the two main-service households.",
+        "es-ES": "Estos originales opcionales son distintos de los dos hogares del servicio principal."
+      },
+      "text": {
+        "en": "Bring both marked voluntary groups alive from the Northern Supply Yard to the Western Shelter Yard. Benefit: 100 food, 25 gold, once.",
+        "es-ES": "Lleva con vida a los dos grupos voluntarios señalados desde el patio de suministros del norte hasta el patio de refugio occidental. Ventaja: 100 de alimento, 25 de oro, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-2.entity-1",
+              "34-church-transfer-constantinople.side-2.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-2.entity-1": "34-church-transfer-constantinople.side-2.zone-1",
+              "34-church-transfer-constantinople.side-2.entity-2": "34-church-transfer-constantinople.side-2.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-2.entity-1",
+            "role": "extract",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -9,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-2.entity-1; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-2.entity-2",
+            "role": "extract",
+            "initialHub": "north-care-yard",
+            "offsetTiles": [
+              -9,
+              7
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-2.entity-2; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-2.zone-1",
+            "hub": "materials-court",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 100,
+            "gold": 25
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-2.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-2.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-care-yard",
+        "receivingHub": "materials-court",
+        "corridorIds": [
+          "north-care-approach",
+          "western-reception"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-3",
+      "kind": "copy",
+      "title": {
+        "en": "Two Dates in the Margin",
+        "es-ES": "Dos fechas al margen"
+      },
+      "subject": {
+        "en": "two fictional working copies",
+        "es-ES": "dos copias de trabajo ficticias"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Deliver both copies. The unlocked source comparison is retrospective collection commentary for the player, never a fifth/sixth-century text held or quoted by Marcus in380. The reader is off scene; this task checks two originals at a collection desk, not a reader actor.",
+        "es-ES": "Entrega ambas copias. La comparación desbloqueada es un comentario retrospectivo de colección para el jugador; Marcus no posee ni cita en380 un texto de los siglosV/VI. El lector queda fuera de escena; la tarea comprueba dos originales en una mesa receptora, no un actor lector."
+      },
+      "text": {
+        "en": "Recover the two marked working copies at the Reader's Shelter and place both at the marked collection desk beside the Shared Hearth. The reader is off scene; both copy arrivals complete this task. Benefit: unlock a historical note and an explicit main-goal hint.",
+        "es-ES": "Recupera las dos copias de trabajo señaladas en el refugio del lector y deposita ambas en la mesa receptora señalada junto al fogón compartido. El lector queda fuera de escena; las dos llegadas de copias completan esta tarea. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-3.entity-1",
+              "34-church-transfer-constantinople.side-3.entity-2"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-3.entity-1": "34-church-transfer-constantinople.side-3.zone-1",
+              "34-church-transfer-constantinople.side-3.entity-2": "34-church-transfer-constantinople.side-3.zone-1"
+            },
+            "requiredCount": 2,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-3.entity-1",
+            "role": "copy",
+            "initialHub": "north-reader",
+            "offsetTiles": [
+              -6,
+              3
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-3.entity-1; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-3.entity-2",
+            "role": "copy",
+            "initialHub": "north-reader",
+            "offsetTiles": [
+              -6,
+              6
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-3.entity-2; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-3.zone-1",
+            "hub": "hearth-worksite",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "unlock-context-and-hint",
+          "target": "documented context and a main-goal hint",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-3.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "sourceIds": [
+            "odyssey-source.imperial-church.34-church-transfer-constantinople"
+          ],
+          "historicalNote": {
+            "en": "Late 380 church possession changed under imperial power; surviving accounts differ on the month. This is retrospective collection commentary, not a document available to the persona in 380.",
+            "es-ES": "A finales de 380 cambió la posesión de iglesias por el poder imperial; los relatos conservados difieren en el mes. Este comentario retrospectivo de colección no es un documento disponible para la persona en 380."
+          },
+          "hint": {
+            "en": "Complete both voluntary services with one funded plan and the same original living recipients.",
+            "es-ES": "Completa ambos servicios voluntarios con un plan financiado y los mismos destinatarios originales vivos."
+          }
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-3.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-reader",
+        "receivingHub": "hearth-worksite",
+        "corridorIds": [
+          "north-reader-link",
+          "north-care-loop",
+          "north-care-approach",
+          "western-trade",
+          "west-supply",
+          "ridge-junction"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-4",
+      "kind": "guide",
+      "title": {
+        "en": "A Neighbor's Route",
+        "es-ES": "La ruta de un vecino"
+      },
+      "subject": {
+        "en": "one local guide",
+        "es-ES": "un guía local"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Escort the same original guide and mark the already proposed western supply connection; no road opens.",
+        "es-ES": "Escolta al mismo guía original y señala la conexión occidental de suministro ya propuesta; no se abre ningún camino."
+      },
+      "text": {
+        "en": "Escort the marked local guide to the Western Turn. Benefit: Mark the existing western supply link and its actual work-site target.",
+        "es-ES": "Escolta al guía local señalado hasta el desvío occidental. Ventaja: Señala la conexión occidental existente y su punto de trabajo real."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-arrival",
+            "entities": [
+              "34-church-transfer-constantinople.side-4.entity-1"
+            ],
+            "destinations": {
+              "34-church-transfer-constantinople.side-4.entity-1": "34-church-transfer-constantinople.side-4.zone-1"
+            },
+            "requiredCount": 1,
+            "aliveAtDelivery": true,
+            "oncePerEntity": true,
+            "noSubstitutes": true,
+            "initialPlacementDoesNotCount": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-4.entity-1",
+            "role": "guide",
+            "initialHub": "western-guide",
+            "offsetTiles": [
+              -5,
+              2
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": true,
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-4.entity-1; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-4.zone-1",
+            "hub": "western-junction",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "west-supply",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-4.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "west-supply"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-4.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "western-guide",
+        "receivingHub": "western-junction",
+        "corridorIds": [
+          "guide-link",
+          "west-supply"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-5",
+      "kind": "scout",
+      "title": {
+        "en": "Above the Waterline",
+        "es-ES": "Por encima del agua"
+      },
+      "subject": {
+        "en": "two interior viewpoints",
+        "es-ES": "dos miradores interiores"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Observe both authored sites; reveal the existing northern care circuit rather than enemies, a new path or ancient shoreline certainty.",
+        "es-ES": "Observa ambos lugares diseñados; señala el circuito asistencial norte existente, sin enemigos, caminos nuevos ni certeza sobre la costa antigua."
+      },
+      "text": {
+        "en": "Visit both marked interior viewpoints: the Upper Viewpoint and the Southern Viewpoint. Benefit: Mark the existing care loop; all costs and destinations remain available without this task.",
+        "es-ES": "Visita los dos miradores interiores señalados: el mirador alto y el mirador sur. Ventaja: Señala el circuito asistencial existente; costes y destinos siguen disponibles aunque omitas esta tarea."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "34-church-transfer-constantinople.side-5.zone-1",
+              "34-church-transfer-constantinople.side-5.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-5.zone-1",
+            "hub": "north-viewpoint",
+            "offsetTiles": [
+              -8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-5.zone-2",
+            "hub": "south-viewpoint",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "north-care-loop",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-5.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "north-care-loop"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-5.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "starting-court",
+        "receivingHub": "north-viewpoint",
+        "corridorIds": [
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "north-view",
+          "southern-host",
+          "southern-view"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-6",
+      "kind": "watch",
+      "title": {
+        "en": "Room for the Next Household",
+        "es-ES": "Sitio para el siguiente hogar"
+      },
+      "subject": {
+        "en": "two service approaches",
+        "es-ES": "dos accesos de servicio"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "Visit separate observation circles outside both real receiving circles to distinguish alternative shelter courts; a past visit cannot substitute for required current recipients.",
+        "es-ES": "Visita círculos de observación separados de los receptores para distinguir patios alternativos; una visita pasada no sustituye la presencia actual de destinatarios."
+      },
+      "text": {
+        "en": "Visit both marked observation spots beside the Western Shelter Yard and the Southern Host's Courtyard. Benefit: Mark the existing southern host approach and explain the selected-court requirement.",
+        "es-ES": "Visita los dos puntos de observación señalados junto al patio de refugio occidental y al patio del anfitrión del sur. Ventaja: Señala el acceso sur existente y explica que cuenta únicamente el patio seleccionado."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "visit-zones",
+            "zones": [
+              "34-church-transfer-constantinople.side-6.zone-1",
+              "34-church-transfer-constantinople.side-6.zone-2"
+            ],
+            "actor": "any-player-controlled-unit",
+            "requiredCount": 2,
+            "observationsPersistent": true,
+            "countInitialVisibility": false
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-6.zone-1",
+            "hub": "materials-court",
+            "offsetTiles": [
+              0,
+              -8
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          },
+          {
+            "id": "34-church-transfer-constantinople.side-6.zone-2",
+            "hub": "host-court",
+            "offsetTiles": [
+              0,
+              8
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "mark-alternative-route",
+          "target": "southern-host",
+          "resources": {},
+          "onceFlag": "34-church-transfer-constantinople.side-6.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false,
+          "corridorId": "southern-host"
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-6.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "starting-court",
+        "receivingHub": "host-court",
+        "corridorIds": [
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "western-reception",
+          "southern-host"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    },
+    {
+      "id": "side-7",
+      "kind": "repair",
+      "title": {
+        "en": "Timber Put to Use",
+        "es-ES": "Madera bien empleada"
+      },
+      "subject": {
+        "en": "one fictional damaged civilian store",
+        "es-ES": "un almacén civil dañado ficticio"
+      },
+      "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+      "rationale": {
+        "en": "A50wood atomic restoration and actual full-health receipt precede its funded reward. Prior damage is fiction, not an ancient disaster.",
+        "es-ES": "Una restauración atómica de50madera y su recibo real de salud completa preceden la recompensa financiada. El daño previo es ficción, no un desastre antiguo."
+      },
+      "text": {
+        "en": "Restore the marked damaged store to full health through its single 50-wood repair action. Benefit: 200 food, 100 wood, once.",
+        "es-ES": "Restaura por completo el almacén dañado señalado mediante su única acción de reparación de 50 de madera. Ventaja: 200 de alimento, 100 de madera, una vez."
+      },
+      "mandatory": false,
+      "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+      "dependencies": [],
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-health",
+            "entity": "34-church-transfer-constantinople.side-7.entity-1",
+            "health": "full",
+            "paymentReceipt": "34-church-transfer-constantinople.side-7.payment",
+            "restoration": "atomic 50-wood repair transaction restores full health; no additional engine repair charge"
+          },
+          {
+            "kind": "atomic-payment",
+            "resources": {
+              "wood": 50
+            },
+            "receipt": "34-church-transfer-constantinople.side-7.payment",
+            "afterArrival": false,
+            "once": true,
+            "protectedRecoveryCannotBeSpent": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "world": {
+        "entities": [
+          {
+            "id": "34-church-transfer-constantinople.side-7.entity-1",
+            "role": "repair",
+            "initialHub": "north-store",
+            "offsetTiles": [
+              -4,
+              -4
+            ],
+            "finite": true,
+            "initiallyDelivered": false,
+            "historicalPerson": false,
+            "playerControllable": false,
+            "initialHealthFraction": 0.5,
+            "damageSource": "fictional prior damage",
+            "identity": "Fictional stable optional identity: 34-church-transfer-constantinople.side-7.entity-1; preserve this exact actor identity.",
+            "replacement": "none; no substitution of unique original identity",
+            "originRule": "Authored initial position creates no completed visit or delivery."
+          }
+        ],
+        "zones": [
+          {
+            "id": "34-church-transfer-constantinople.side-7.zone-1",
+            "hub": "north-store",
+            "offsetTiles": [
+              8,
+              0
+            ],
+            "radiusTiles": 3,
+            "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+            "protectedCivilian": false
+          }
+        ]
+      },
+      "effects": [
+        {
+          "kind": "finite-supply-withdrawal",
+          "target": "optional supply stock",
+          "resources": {
+            "food": 200,
+            "wood": 100
+          },
+          "onceFlag": "34-church-transfer-constantinople.side-7.rewarded",
+          "funding": "reserved-optional-stock",
+          "changesHistoricalOutcome": false
+        }
+      ],
+      "completionFlag": "34-church-transfer-constantinople.side-7.completed",
+      "stateContract": {
+        "states": [
+          "available",
+          "completed",
+          "failed-optional",
+          "closed-at-terminal"
+        ],
+        "requiresNonterminalScenario": true,
+        "persistentAcrossSave": true,
+        "completionAndEffectsAtomic": true,
+        "paymentBeforeReward": true,
+        "paymentIsNotCompletion": true,
+        "failedGoalCannotReward": true,
+        "latchAtFirstCompletion": true,
+        "noMainVictoryDependency": true,
+        "rewardTransaction": [
+          "verify all predicate ledgers and nonterminal state",
+          "verify reserved stock",
+          "debit reserved stock",
+          "credit spendable stock",
+          "set reward onceFlag",
+          "set completionFlag"
+        ],
+        "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+        "persistentLedgers": [
+          "visited-zone IDs",
+          "delivered-entity IDs",
+          "payment receipt",
+          "reserved-stock remainder",
+          "reward onceFlag",
+          "completionFlag",
+          "failed-optional flag"
+        ],
+        "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+      },
+      "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart",
+      "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+      "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+      "reachability": {
+        "originHub": "north-store",
+        "receivingHub": "north-store",
+        "corridorIds": [
+          "ridge-hearth",
+          "ridge-junction",
+          "west-supply",
+          "western-trade",
+          "north-care-approach",
+          "north-care-loop"
+        ],
+        "maxRequiredRoundTrips": 1,
+        "spawnOutsideReceivingZone": true,
+        "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+      },
+      "qa": [
+        "skip-all-main-still-solvent",
+        "complete-in-each-difficulty",
+        "save-before-and-after-reward",
+        "repeat-arrival-no-double-reward",
+        "entity-loss-optional-only",
+        "early-main-victory-does-not-wait",
+        "no-reward-taken-from-protected-recovery"
+      ]
+    }
+  ],
+  "secondaryBudget": {
+    "reservedRewards": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "maxOptionalCosts": {
+      "food": 0,
+      "wood": 50,
+      "gold": 0,
+      "stone": 0
+    },
+    "reallocatedCacheAllowance": {
+      "food": 400,
+      "wood": 150,
+      "gold": 25,
+      "stone": 0
+    },
+    "fundingPolicy": "One finite isolated optional reserve; reallocatedCacheAllowance is descriptive only and creates no second credit.",
+    "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+  },
+  "enemyRoster": {
+    "initialEntityIds": [],
+    "productionEnabled": false,
+    "mobilizations": [],
+    "unspentPolicy": "remain-in-reserve"
+  },
+  "fulfillmentPlan": {
+    "id": "imperial-church.34-church-transfer-constantinople.care-plan",
+    "phase": "phase-1",
+    "services": [
+      {
+        "id": "meal-service",
+        "recipes": [
+          {
+            "id": "meal-direct",
+            "cost": {
+              "food": 240,
+              "wood": 40,
+              "gold": 0,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.meal-direct-source.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-direct-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.meal-recipient"
+            ]
+          },
+          {
+            "id": "meal-shared-hearth",
+            "cost": {
+              "food": 160,
+              "wood": 140,
+              "gold": 0,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.hearth-worksite.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-shared-hearth-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.meal-recipient"
+            ]
+          },
+          {
+            "id": "meal-purchased",
+            "cost": {
+              "food": 100,
+              "wood": 40,
+              "gold": 100,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.meal-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.merchant-worksite.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.meal-purchased-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.meal-reception.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.meal-recipient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shelter-service",
+        "recipes": [
+          {
+            "id": "shelter-materials",
+            "cost": {
+              "food": 80,
+              "wood": 200,
+              "gold": 0,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.materials-source.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-materials-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.materials-court.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.household-a",
+              "imperial-church.34-church-transfer-constantinople.household-b"
+            ]
+          },
+          {
+            "id": "shelter-local-kit",
+            "cost": {
+              "food": 100,
+              "wood": 120,
+              "gold": 20,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.kit-worksite.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-local-kit-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.kit-court.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.household-a",
+              "imperial-church.34-church-transfer-constantinople.household-b"
+            ]
+          },
+          {
+            "id": "shelter-rented",
+            "cost": {
+              "food": 60,
+              "wood": 60,
+              "gold": 110,
+              "stone": 0
+            },
+            "workerId": "imperial-church.34-church-transfer-constantinople.shelter-worker",
+            "workZoneId": "imperial-church.34-church-transfer-constantinople.host-worksite.zone",
+            "outputEntityId": "imperial-church.34-church-transfer-constantinople.shelter-rented-output",
+            "receptionZoneId": "imperial-church.34-church-transfer-constantinople.host-court.zone",
+            "recipientIds": [
+              "imperial-church.34-church-transfer-constantinople.household-a",
+              "imperial-church.34-church-transfer-constantinople.household-b"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

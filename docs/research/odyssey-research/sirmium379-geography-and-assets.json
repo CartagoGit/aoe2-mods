@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "created_utc_date": "2026-10-15",
+    "purpose": "Read-only geographic and visual-reference research for planned episode 33-accession-and-reassembly-sirmium.",
+    "scope": "Research dossier only; no repo changes, Git operations, DelendAI actions, historical approval, or game-design approval.",
+    "historical_target": "Sirmium / modern Sremska Mitrovica, around 379 CE",
+    "certainty_rule": "No exact proclamation building, room, platform, or 379 city plan is certified by these sources."
+  },
+  "geography": {
+    "summary": "Roman Sirmium lies beneath/within modern Sremska Mitrovica on the north (left) bank of the Sava, with the Bosut joining the Sava nearby. Archaeological sources place the palatial district in the southeastern part of the Roman city beside the Sava; a circus/hippodrome is adjacent and its orientation shaped neighboring buildings. The urban footprint and river margins changed over time, and the modern built environment obscures most remains.",
+    "published_coordinates": [
+      {
+        "latitude": 44.96648,
+        "longitude": 19.61017,
+        "crs": "WGS84",
+        "source": "Digital Atlas of the Roman Empire / Imperium",
+        "source_url": "https://imperium.ahlfeldt.se/places/10865.html",
+        "source_record_id": "10865",
+        "published_precision_m": 2000,
+        "point_semantics": "Broad gazetteer point for historical settlement Sirmium; the record associates the modern urban area with the circus and archaeological sites. Use only as an approximate city-level map anchor, not as a wall, palace, hippodrome centroid, or proclamation location.",
+        "temporal_range_in_record": "30 BCE–640 CE",
+        "record_license": "CC BY-SA 3.0 (as stated by the record)"
+      },
+      {
+        "latitude": 44.96644,
+        "longitude": 19.61025,
+        "crs": "WGS84",
+        "source": "OpenStreetMap-derived Mapcarta listing, Sirmium Imperial Palace",
+        "source_url": "https://mapcarta.com/W250104065",
+        "point_semantics": "Modern mapped attraction/building point, useful only as a present-day visitor-site locator; not an excavated footprint boundary and not an ancient event point. Secondary map representation, not an archaeological coordinate publication."
+      },
+      {
+        "latitude": 44.966901,
+        "longitude": 19.609956,
+        "crs": "WGS84",
+        "source": "Commons file description for Сирмиум 06.jpg by Dekanski",
+        "source_url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+        "point_semantics": "Camera/viewpoint position published with the photo (heading 188°), not the mosaic/structure centroid or a proclamation-site coordinate."
+      }
+    ],
+    "landform_and_water": {
+      "findings": [
+        "A peer-reviewed article describes Sirmium/Mitrovica at the contact between a diluvial terrace and the Sava inundation plain. It says the terrace projects to the Sava channel, narrowing the alluvial plain at this crossing, and its relative height gave more flood safety than surrounding ground.",
+        "The same article describes marshy alluvial plain on three sides, with active streams and Sava oxbows; it mentions two historical river islands/aîts near Sirmium, Cassia and Carbonaria.",
+        "The Institute of Archaeology page independently describes marshes on the west/north/east sides of the urban core and the Čikas stream east of the city. It describes the city beneath modern Sremska Mitrovica on the Sava.",
+        "These establish a floodplain/terrace setting, not exact 379 shoreline, water mask, ford/bridge location, season-specific flooding, or the state of channels in a particular year. River regulation, drainage, infill, settlement deposits, and modern construction make present-day empty map space insufficient evidence for ancient dry land."
+      ],
+      "extrapolation_limit": "The 2019 geomorphology article focuses on Lower Posavina medieval urbanization, though its Sirmium passage discusses landform and ancient-era contextual information. Apply its broad geomorphology cautiously; it does not reconstruct 4th-century hydrology at parcel scale."
+    },
+    "archaeological_phases_relevant_to_379": [
+      "Institute of Archaeology: Sirmium was beneath modern Sremska Mitrovica; system research began in 1957. The inner core estimate of about 66 ha is inferred from find positions of ramparts. Palace complex is over 6 ha, only partly explored; its position/orientation and circus influenced surrounding buildings.",
+      "Vojvodina Tourism Organization: the palace complex was built in the late 3rd / early 4th century in the southeastern elite district along the Sava. The circus was discovered adjacent to the palace and helped identify the palatial site; the exposed portion is only part of it, with multiple repair/mosaic layers indicating long use and changes.",
+      "Archive of Vojvodina article: reports damage/repairs to the rampart after the Quadi incursion in the 370s, with a later south-wall layer containing a coin of Theodosius dated 379–395; it discusses burnt destruction deposits at central sites with coin termini 383–392. These are archaeological horizons and interpretations, not a complete, securely dated snapshot for 379.",
+      "Archive article says Sirmium and Pannonia came under Gothic control somewhat after 380, while acknowledging uncertainty from scarce sources; avoid turning that phrasing into a precise event-date claim for 379."
+    ],
+    "proclamation_site_limit": "The sources support Sirmium as an imperial residence/major late Roman center and support a palace-circus complex. They do not certify that an accession/proclamation in 379 occurred in a particular palace room, circus box, gate, or other mapped structure. The city's broad gazetteer point and modern visitor-site coordinates cannot supply that missing evidence.",
+    "plan_limit": "No 379 plan, exact shoreline, exact palace perimeter, exact circus footprint from this dossier, or comprehensive old-city wall polygon is asserted. Excavation has exposed only parts of a heavily built-over site; local map points are anchors with different meanings and scales."
+  },
+  "assets": [
+    {
+      "file": "docs/research/odyssey-research/images/sirmium-palace-modern-excavation.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sirmium%2C_Imperial_Palace.jpg",
+      "author": "sm022",
+      "date_of_photo": "2007-04-14",
+      "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "required_attribution": "sm022, ‘Sirmium, Imperial Palace’, CC BY 3.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg). No edits made.",
+      "license_page_checked_before_download": true,
+      "inspection": {
+        "method": "Downloaded original inspected using view_image.",
+        "width_px": 2592,
+        "height_px": 1944,
+        "scene": "Covered excavation hall showing exposed low stone/brick foundations, current roof and metal visitor walkway; modern site infrastructure visible.",
+        "limits": "Useful only as a visual reference for presently exposed archaeological masonry and visitor-site condition. Not an ancient reconstruction, not proof of a 379 appearance, and not evidence of an accession location."
+      },
+      "bytes": 1488612,
+      "sha256": "6cbf99afa0880d7d4b9d1aa6f520ce5ad917af67d08da8c1e6d0d75ea10f40b2",
+      "projectAssetId": "sirmium-palace-modern-excavation",
+      "productionApproved": false
+    },
+    {
+      "file": "docs/research/odyssey-research/images/sirmium-mosaic-modern-detail.jpg",
+      "commons_page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "author": "Dekanski",
+      "date_of_photo": "2016-08-06",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "required_attribution": "Dekanski, ‘Сирмиум 06’, CC BY-SA 4.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg). No edits made; adaptations, if any, must retain compatible share-alike terms.",
+      "license_page_checked_before_download": true,
+      "inspection": {
+        "method": "Downloaded original inspected using view_image.",
+        "width_px": 3586,
+        "height_px": 2690,
+        "scene": "Close oblique view of a preserved geometric mosaic floor and a wall/base at the upper edge, at the modern archaeological site.",
+        "published_camera_point": {
+          "latitude": 44.966901,
+          "longitude": 19.609956,
+          "heading_degrees": 188,
+          "meaning": "Camera/viewpoint only, as stated on the Commons page."
+        },
+        "limits": "Reference for present exposed floor materials/pattern and modern preservation only. It does not establish date of that floor as specifically 379 or depict the proclamation site."
+      },
+      "bytes": 4161796,
+      "sha256": "91f811e4b440dfe7334610497a047d5e0d9a7a8f9826d6c9e976ef9721443d4a",
+      "projectAssetId": "sirmium-mosaic-modern-detail",
+      "productionApproved": false
+    }
+  ],
+  "sources_read": [
+    {
+      "title": "Sirmium – Sremska Mitrovica",
+      "publisher": "Institute of Archaeology, Belgrade",
+      "url": "https://ai.ac.rs/en/7729/",
+      "passages_read": "Page sections on the site, lines/paragraphs describing Sava-side location, partial exploration, research history, 66 ha inner core estimate from rampart finds, marshes/Čikas stream, grid, palace/circus orientation and excavated locations.",
+      "use_and_limit": "Institutional archaeological summary; supports broad position and known remains, not a full plan or precise 379 state."
+    },
+    {
+      "title": "Imperial Palace – Sremska Mitrovica",
+      "publisher": "Tourism Organization of Vojvodina",
+      "url": "https://vojvodina.travel/en/experiences/imperial-palace-sremska-mitrovica/",
+      "passages_read": "Site description: palace built late 3rd/early 4th c. in southeast elite district along Sava; circus adjacent/discovery helped identification; exposed area partial and mosaic/floor repair phases.",
+      "use_and_limit": "Regional tourism institution summary; supports visitor/site context but not an exact event location."
+    },
+    {
+      "title": "Natural Conditions as a Factor of Urbanization of the Lower Posavina in the Middle Ages",
+      "author": "Dejana Vasin",
+      "publisher": "Istraživanja / Journal of Historical Researches 30 (2019), pp. 45–68; DOI 10.19090/i.2019.30.45-68",
+      "url": "https://istrazivanja.ff.uns.ac.rs/index.php/istr/article/download/2130/2151/3896",
+      "passages_read": "Collector read selected geomorphology; architect directly checked physical PDF13–14, printed57–58: terrace–inundation contact and continuation on relative flood safety, marshes, active streams and oxbows. Other collector sections remain separately attributed, not a whole-paper reading by root.",
+      "use_and_limit": "Peer-reviewed article whose main scope is medieval urbanization; its landform discussion is useful at broad scale and references ancient features, but cannot fix Roman-era microtopography, waterline, or a 379 scene."
+    },
+    {
+      "title": "Кратак историјат и градитељско наслеђе Сирмијума из времена Велике сеобе народа од 375. до 582. године",
+      "publisher": "Portal Arhiva Vojvodine (Archive of Vojvodina)",
+      "url": "https://archivum.arhivvojvodine.org.rs/kratak-istorijat-i-graditeljsko-nasle/",
+      "passages_read": "Sections on post-378 political control and its uncertainty; rampart damage/repairs and Theodosius coin; late-4th-century burnt horizons with coin termini 383–392; later urban contraction/reuse.",
+      "use_and_limit": "Institutional archive portal article synthesizing scholarship; use as reported archaeological interpretation, not an uncontested year-by-year plan."
+    },
+    {
+      "title": "Sirmium",
+      "publisher": "Digital Atlas of the Roman Empire / Imperium",
+      "url": "https://imperium.ahlfeldt.se/places/10865.html",
+      "passages_read": "Record ID 10865 gives WGS84 coordinates 44.96648, 19.61017 with 2000 m precision, temporal range 30 BCE–640 CE, and association with modern Sremska Mitrovica/circus; page states record licensing.",
+      "use_and_limit": "Broad gazetteer point only, explicitly low precision; not a structure coordinate."
+    },
+    {
+      "title": "Sirmium Imperial Palace",
+      "publisher": "Mapcarta, based on OpenStreetMap-derived mapped attraction data",
+      "url": "https://mapcarta.com/W250104065",
+      "passages_read": "Modern mapped POI point at 44.96644, 19.61025.",
+      "use_and_limit": "Secondary modern visitor-map location only; not used as ancient feature boundary or archaeological control."
+    },
+    {
+      "title": "Сирмиум 06.jpg",
+      "publisher": "Wikimedia Commons file description",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "passages_read": "Description records author Dekanski, date 2016-08-06, own work, CC BY-SA 4.0 and camera position/heading.",
+      "use_and_limit": "Explicitly licensed source for the second downloaded photo; camera coordinates describe photographer position."
+    },
+    {
+      "title": "Sirmium, Imperial Palace.jpg",
+      "publisher": "Wikimedia Commons file description",
+      "url": "https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg",
+      "passages_read": "Description records author sm022, photo date 2007-04-14, CC BY 3.0 and original file dimensions/link.",
+      "use_and_limit": "Explicitly licensed source for the first downloaded photo; depict current excavated remains under modern shelter."
+    }
+  ],
+  "downloaded_asset_directory": "/tmp/sirmium379-assets",
+  "excluded_candidate_note": "A third inspected candidate showed a museum model/reconstruction, so it was excluded and deleted from the temp directory to avoid using an interpretive reconstruction as documentary evidence.",
+  "architectFollowup": {
+    "date": "2026-10-15",
+    "author": "gpt-6",
+    "actuallyRead": "Institute of Archaeology site sections, DARE record with2000m precision, both Commons license/author pages, actual pixels of both original photographs, and selected Vasin PDF physical13–14, printed57–58. No medieval terrain transferred to379.",
+    "paginationCorrection": {
+      "originalCollectorLocator": "PDF pp. 57–58 (physical PDF pages 12–13): lines 557–585 / printed pp. 58–59 describe Mitrovica/Sirmium at terrace–inundation-plain contact, terrace extending to Sava, relatively higher ground/flood safety, marshy alluvial plain, streams/oxbows and two aits. PDF pp. 47–50 discuss unregulated river/flood differences and wet ground regionally.",
+      "corrected": "Physical PDF13 begins Sirmium paragraph at printed57; physical14 continues at printed58. The PDF contains24physicalpages.",
+      "basis": "Own downloaded PDF and page-separated pdftotext layout extraction; no claim to have read the entire article."
+    },
+    "historicalApproval": false,
+    "proclamationSiteCertified": false
+  }
+}

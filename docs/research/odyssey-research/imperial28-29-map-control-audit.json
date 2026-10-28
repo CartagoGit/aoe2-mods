@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "scope": "Frame arithmetic and actual schematic raster inspection only; not slope, ancient shore, actor footprints or native navigation. Line widths on SVG are schematic, not rendered road-width masks.",
+  "episodes": [
+    {
+      "order": 28,
+      "episodeId": "28-law-and-local-reception-thessalonica",
+      "mainEntities": 7,
+      "allEntities": 16,
+      "allZones": 17,
+      "entityCenterFrameClearanceTiles": 62.18,
+      "zoneRadiusFrameClearanceTiles": 73.18,
+      "fullCorridorWidthFrameClearanceTiles": 71.18,
+      "allInFrame": true,
+      "duplicateActorCenters": [],
+      "svgSha256": "843fa0682d0bad079924b078557c9c1bdcac4d60d220f6ea331b8bb3a7d42750",
+      "architectRasterInspected": true,
+      "ancientTerrainOrNativeApproval": false
+    },
+    {
+      "order": 29,
+      "episodeId": "29-council-and-final-perspective-constantinople",
+      "mainEntities": 9,
+      "allEntities": 16,
+      "allZones": 14,
+      "entityCenterFrameClearanceTiles": 66.96,
+      "zoneRadiusFrameClearanceTiles": 49.96,
+      "fullCorridorWidthFrameClearanceTiles": 56.96,
+      "allInFrame": true,
+      "duplicateActorCenters": [],
+      "svgSha256": "82efc7688fe2edf3e7070b28e3688f48baa07fd09d548e5593ceae516b1bb53f",
+      "architectRasterInspected": true,
+      "ancientTerrainOrNativeApproval": false
+    }
+  ],
+  "historicalOrNativeApproval": false
+}

@@ -1,0 +1,13 @@
+# Shared native signature: independent extraction review
+
+27 October2026. MiniMax M3.1 implementer; gpt-6 independent reviewer. Product `5afacb1214df143c5d3075d5507bfaee26f003b2` is integrated officially at `f2418477ccdccb22ed950deedc73799534450823`, with frozen-install/validate certification passed. Author and committer are Cartago.
+
+Exactly four Files changed: new `tools/python/native_signature.helper.py`, the existing private delivery builder, and the two private controller test modules. The helper owns the complete former `native_signature` function; the builder loads it with relative runpy. Household tests no longer load a campaign-specific builder solely for serialization comparison. Delivery tests retain that builder for their actual mission construction.
+
+Root independently compared AST **and the exact function source segment** against integrated baseline `5bdd1fa`: identical. No signature fields, field ordering, None handling, tuple/list structure or IEEE float32 position conversion were added, removed or weakened. The helper imports only struct. The test diff changes only the signature loading/call sites; controller code, campaign sources and geography are unchanged. This signature describes its explicit existing subset, not every possible AoE2 field.
+
+The existing focused suites passed8 delivery and26 household tests with the pinned parser. Validate passed158 tests/2,138 assertions and checked3 campaigns. Export passed3 variants/2 round-trips with unsupported-mode rejection. Initial export invocations failed because the isolated unit lacked its pinned Python and ignored rge toolchain; both failures were retained, the local environment was restored from pinned configuration, and the successful third export required no source/test changes. No all-six historical variant rebuild or game execution is claimed.
+
+An incorrect shared-checkout checkpoint temporarily reversed the extraction. The worker preserved extraction → checkpoint reversal → corrective commit without rewriting history. The reviewed final product restores exactly the first extraction tree. Root explicitly prohibited repeating that checkpoint operation for local worktree changes. Publication then ran **once**, returned landed/certification passed, and product ancestry plus unchanged blobs were verified. The worker did not approve the broad i00003/S3 slice.
+
+Evidence is retained outside the worker unit at `/home/cartago/.codex/artifacts/aoe2-mods/native-signature-extraction-20261027/`: independent AST result, focused logs/exit codes, initial export failures, successful gates, actual publication JSON and raw event streams. This is bounded conformity for a responsibility extraction, not historical dossier, map, balance or AoE2 QA approval.

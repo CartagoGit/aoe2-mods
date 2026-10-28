@@ -1,0 +1,29 @@
+{
+  "episodeId": "28-law-and-local-reception-thessalonica",
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "status": "architect research; independent historical review pending",
+  "sources": [
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "locator": "CTh XVI.1.2: complete short Latin constitution, heading and subscription",
+      "actuallyRead": "Complete short Latin law and editorial heading directly read; no critical apparatus or manuscript collation.",
+      "limitations": "The compilation transmits a norm. No individual local receipt, dispatch route, exact room, universal conversion or uniform enforcement is established."
+    },
+    {
+      "url": "https://thessaloniki.gr/wp-content/uploads/2019/11/Thessaloniki-Monuments-Map-ENG-Web.pdf",
+      "locator": "Municipality 2013: physical PDF page 5 (printed 4–5), page 12 (printed 18–19), copyright back cover",
+      "actuallyRead": "Selected Roman monument and wall text read; Roman monument map physically viewed at page 12. Map uses modern streets and broad-period archaeological sites.",
+      "limitations": "Not a georeferenced 380 plan, dated coast or DEM. Exact place of law issue remains unknown. Copyrighted PDF consulted temporarily, not redistributed."
+    }
+  ],
+  "legalDistinctions": [
+    "Issue at Thessalonica is distinct from the named Constantinopolitan addressee.",
+    "The law names the faith associated with Damasus and Peter of Alexandria and states a trinitarian formula; Nicene is an editorial historical label, not a word in this text.",
+    "Threats and disparaging labels belong to the imperial norm, not the objective narrator.",
+    "The source does not establish the physical dispatch service, room, population response or equal execution across the empire."
+  ],
+  "paginationCorrection": "Physical PDF page 12 contains printed 18–19, the Roman map. Physical pages 18–19 are modern-monument/back-cover material, not the Roman map.",
+  "historicalApproval": false,
+  "nativeOrGameApproval": false
+}
