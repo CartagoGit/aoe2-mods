@@ -195,6 +195,7 @@ def _decode_tile(raw, endian, width, height, predictor, samples_per_pixel, bits_
     bps = bits_per_sample // 8
     file_big_endian = endian == ">"
     prefix = ">" if file_big_endian else "<"
+    sample_format = {2: "e", 4: "f"}[bps]
     rows = []
     for row_index in range(height):
         start = row_index * width * bps
@@ -203,7 +204,7 @@ def _decode_tile(raw, endian, width, height, predictor, samples_per_pixel, bits_
             raise ValueError("the decoded tile is shorter than its declared size")
         if predictor == 3:
             row_bytes = _fp_acc_row(row_bytes, width, bps, file_big_endian)
-        rows.append(list(struct.unpack(prefix + "%df" % width, bytes(row_bytes))))
+        rows.append(list(struct.unpack(prefix + "%d%s" % (width, sample_format), bytes(row_bytes))))
     return rows
 
 
