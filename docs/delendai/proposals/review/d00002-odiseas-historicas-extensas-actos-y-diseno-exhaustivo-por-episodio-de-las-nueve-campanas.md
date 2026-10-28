@@ -2,12 +2,16 @@
 id: d00002
 title: "Odiseas historicas extensas: actos y diseno exhaustivo por episodio de las nueve campanas"
 kind: docs
-status: in-progress
+status: review
 type: proposal
 track: historical-odysseys
 date: 2026-10-12
 shipped-in:
   - "924ebde26047fa275683957c2b550d690dcf4207"
+last-transition-id: 9dd18aa6-0544-471b-ade1-5dde84b100fb
+last-correlation-id: 9dd18aa6-0544-471b-ade1-5dde84b100fb
+last-transition-from: in-progress
+last-transition-at: 2026-10-28T03:29:06.671Z
 ---
 
 # d00002 — Odiseas historicas extensas: actos y diseno exhaustivo por episodio de las nueve campanas
@@ -41,106 +45,137 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - review-implementer: gpt-6
 - review-reviewer: gpt-6.1-sol
 - review-log: approved by gpt-6.1-sol — verified at 924ebde26047, validate exit 0 and tests 142/142 claimed, no recorded run cited; acceptance 2/2: (1) Revisión integral independiente en docs/research/odyssey-research/common-architecture-independent-review.md (61037d9): recomputadas nueve campañas, 45 actos, 2… (2) Lectura integral de recopilaciones, contrastes, proyecciones y módulos compartidos; 278 vínculos conservan atribuciones y límites sin presentar 121 comprobacio… — Revisión independiente integral de S1, informe docs/research/odyssey-research/common-architecture-independent-review.md integrado en 924ebde26047fa275683957c2b550d690dcf4207. Ambos criterios comunes satisfechos; dos P2 numéricos reproducidos y cerrados en1290bdf. Validación propia final: salida0, 142/142 pruebas, 2069 aserciones y90 regresiones de diseño. El gate oficial certificó instalación congelada y validate del merge integrado. Se conserva el alcance de arquitectura común: no aprueba S2–S11, historia o geografía de cada episodio, calibración, derechos de distribución, capacidades nativas ni juego. No exige157 nuevas lecturas ni215 dossiers de otros slices. Implementador gpt-6 distinto del revisor gpt-6.1-sol; submit oficial1dfd385 fusionado, no emitido por este revisor.
+- shipped-in: `924ebde26047`
 
 ### S2 — Embers of the Covenant: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/faith-origins.json`, `docs/wiki/faith-origins/**`, `docs/design/maps/faith-origins/**`
+- **Files**: `docs/design/odysseys/faith-origins.json`, `docs/wiki/faith-origins`, `docs/design/maps/faith-origins`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `e6a955e221de`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S3 — The Eagle and the Cross: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/imperial-church.json`, `docs/wiki/imperial-church/**`, `docs/design/maps/imperial-church/**`
+- **Files**: `docs/design/odysseys/imperial-church.json`, `docs/wiki/imperial-church`, `docs/design/maps/imperial-church`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial34episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `1c0db6e29344`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S4 — Keepers of the Unbroken Word: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/jewish-tradition.json`, `docs/wiki/jewish-tradition/**`, `docs/design/maps/jewish-tradition/**`
+- **Files**: `docs/design/odysseys/jewish-tradition.json`, `docs/wiki/jewish-tradition`, `docs/design/maps/jewish-tradition`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
+- shipped-in: `1d59d1f17913`
 
 ### S5 — The Keys of the Eternal City: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/church-of-rome.json`, `docs/wiki/church-of-rome/**`, `docs/design/maps/church-of-rome/**`
+- **Files**: `docs/design/odysseys/church-of-rome.json`, `docs/wiki/church-of-rome`, `docs/design/maps/church-of-rome`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial32episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S6 — Beyond the Golden Gate: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/new-rome.json`, `docs/wiki/new-rome/**`, `docs/design/maps/new-rome/**`
+- **Files**: `docs/design/odysseys/new-rome.json`, `docs/wiki/new-rome`, `docs/design/maps/new-rome`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial32episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S7 — Beneath the Desert Stars: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/first-caliphs.json`, `docs/wiki/first-caliphs/**`, `docs/design/maps/first-caliphs/**`
+- **Files**: `docs/design/odysseys/first-caliphs.json`, `docs/wiki/first-caliphs`, `docs/design/maps/first-caliphs`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S8 — The Shattered Oath: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/first-fitna.json`, `docs/wiki/first-fitna/**`, `docs/design/maps/first-fitna/**`
+- **Files**: `docs/design/odysseys/first-fitna.json`, `docs/wiki/first-fitna`, `docs/design/maps/first-fitna`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial28episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S9 — From Damascus to the Far Horizon: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/umayyads.json`, `docs/wiki/umayyads/**`, `docs/design/maps/umayyads/**`
+- **Files**: `docs/design/odysseys/umayyads.json`, `docs/wiki/umayyads`, `docs/design/maps/umayyads`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial32episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S10 — The River Remembers: expediente de odisea y episodios
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
-- **Files**: `docs/design/odysseys/house-of-ali.json`, `docs/wiki/house-of-ali/**`, `docs/design/maps/house-of-ali/**`
+- **Files**: `docs/design/odysseys/house-of-ali.json`, `docs/wiki/house-of-ali`, `docs/design/maps/house-of-ali`
 - **Gate**: e2e
 - acceptance:
   - "Objetivo editorial30episodios coherentes, cada uno con fecha/fuente/pasaje/cautela,geografía, arco y rol del narrador sin conocimiento futuro."
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
+- shipped-in: `5a6d584e4799`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ### S11 — Catálogo consolidado, propuestas por acto y traspaso mecánico
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2, S3, S4, S5, S6, S7, S8, S9, S10]
-- **Files**: `docs/design/catalog.json`, `docs/design/geography.json`, `docs/design/sources.json`, `docs/design/assignments.json`, `docs/design/README.md`, `docs/design/production-contract.md`, `docs/handoffs/**`, `docs/qa/campaign-design/**`, `docs/production/**`, `docs/delendai/proposals/**`, `README.md`
+- **Files**: `docs/design/catalog.json`, `docs/design/geography.json`, `docs/design/sources.json`, `docs/design/assignments.json`, `docs/design/README.md`, `docs/design/production-contract.md`, `docs/handoffs`, `docs/qa/campaign-design`, `docs/production`, `docs/delendai/proposals`, `README.md`
 - **Gate**: e2e
 - acceptance:
   - "Cada propuesta DelendAI tiene slices por actos/episodios y contratos exactos para MiniMax; revisión independiente y gate antes de integración."
   - "Entradas y cierres con recap/continuación específica, avisos no bloqueantes, cronologías solapadas declaradas e identidad estable."
   - "Catálogo consolidado y wiki reproducibles; QA de juego pendiente explicitamente, sin presentar documentación como campaña implementada."
+- shipped-in: `ca5a6d85c1dc`
+- review-state: in_review
+- review-implementer: minimax-m3.1-flash-preview
 
 ## acceptance
 
