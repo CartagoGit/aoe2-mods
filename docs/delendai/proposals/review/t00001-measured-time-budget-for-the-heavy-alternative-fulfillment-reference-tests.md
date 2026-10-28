@@ -2,14 +2,14 @@
 id: t00001
 title: "Measured time budget for the heavy alternative-fulfillment reference tests"
 kind: test
-status: in-progress
+status: review
 type: proposal
 track: campaign-factory
 date: 2026-10-27
-last-transition-id: 3ae45d61-8b7b-4dbc-afe3-d8b35585ae45
-last-correlation-id: 3ae45d61-8b7b-4dbc-afe3-d8b35585ae45
-last-transition-from: ready
-last-transition-at: 2026-10-28T01:09:43.344Z
+last-transition-id: aeb99f4a-86f1-416f-951e-34a81367eec9
+last-correlation-id: aeb99f4a-86f1-416f-951e-34a81367eec9
+last-transition-from: in-progress
+last-transition-at: 2026-10-28T01:10:45.453Z
 ---
 
 # t00001 — Measured time budget for the heavy alternative-fulfillment reference tests
@@ -44,6 +44,7 @@ The shared validation gate went red for every agent in this workspace on 27 Octo
   - "Re-run the affected test file and the full gate, record the exact commands and outcomes, and state the remaining limits: this does not make the workspace safe for unbounded parallel heavy gates, does not certify a performance improvement, and does not authorize skipping or relaxing any check."
 - review-state: in_review
 - review-implementer: minimax-m3.1-flash-preview
+- shipped-in: `07364f832f8d`
 
 ## acceptance
 
