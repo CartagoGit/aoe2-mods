@@ -1,0 +1,968 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-historical-household-native-binding",
+  "status": "draft; actor placement reviewed; historical terrain and pathfinding not approved",
+  "campaignId": "faith-origins",
+  "episodeId": "02-civilian-refuge-jerusalem",
+  "sourcePath": "docs/design/odysseys/faith-origins.json",
+  "sourceSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+  "sourceDossierIndex": 1,
+  "locales": [
+    "en",
+    "es-ES"
+  ],
+  "intendedNativeAdapter": "tools/python/native_household.adapter.py",
+  "map": {
+    "size": 340,
+    "bbox": [
+      35.12,
+      31.7,
+      35.3,
+      31.86
+    ],
+    "projection": "WGS84, cosine-corrected longitude, square padding",
+    "orientation": "north-up; AoE2 camera calibration separate; never mirror banks",
+    "hubs": [
+      {
+        "id": "hub-1",
+        "centre": [
+          182.36,
+          148.69
+        ],
+        "lonLat": [
+          35.218,
+          31.791
+        ],
+        "name": {
+          "en": "Northwestern household gathering",
+          "es-ES": "Reunión de hogares del noroeste"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-2",
+        "centre": [
+          200.05,
+          197.88
+        ],
+        "lonLat": [
+          35.229,
+          31.765
+        ],
+        "name": {
+          "en": "Southern receiving court",
+          "es-ES": "Patio receptor meridional"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-3",
+        "centre": [
+          201.66,
+          237.6
+        ],
+        "lonLat": [
+          35.23,
+          31.744
+        ],
+        "name": {
+          "en": "Southern road refuge",
+          "es-ES": "Refugio del camino sur"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      }
+    ],
+    "terrainProfile": "jerusalem",
+    "routeComparison": "18-modern-surface-route-comparison.json",
+    "routeApproved": false,
+    "nativeElevation": null,
+    "nativeElevationClassification": "not assigned; modern DSM is not ancient bare-earth elevation",
+    "corridors": [],
+    "routePolicy": "candidate intermediate geometry remains comparison only; do not use Caesarea coastal painter, fill ravines, create a bridge or a navigable Kidron",
+    "nativePositionPolicy": "physical unit base uses floor(design coordinate)+0.5 tile centres; maximum displacement sqrt(0.5), preserve identity/district and recheck approaches; receiving circles retain their declared continuous centres",
+    "receivingFootprintPolicy": "no building or decoration intersects a receiving circle or the 2-tile clear approach outside it; circles stay distinct even when their centres were shared by the draft; quest markers are decorative and nonblocking"
+  },
+  "entities": [
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        176.36,
+        154.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        6
+      ],
+      "sourceOffsetTiles": [
+        -10,
+        8
+      ],
+      "sourcePosition": [
+        172.36,
+        156.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 1",
+        "es-ES": "Representante del hogar 1"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        180.36,
+        154.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -2,
+        6
+      ],
+      "sourceOffsetTiles": [
+        -8,
+        8
+      ],
+      "sourcePosition": [
+        174.36,
+        156.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 2",
+        "es-ES": "Representante del hogar 2"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-3",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        184.36,
+        154.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        2,
+        6
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        8
+      ],
+      "sourcePosition": [
+        176.36,
+        156.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 3",
+        "es-ES": "Representante del hogar 3"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-4",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        188.36,
+        154.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        6,
+        6
+      ],
+      "sourceOffsetTiles": [
+        -4,
+        8
+      ],
+      "sourcePosition": [
+        178.36,
+        156.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 4",
+        "es-ES": "Representante del hogar 4"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-5",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        176.36,
+        158.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        10
+      ],
+      "sourceOffsetTiles": [
+        -10,
+        10
+      ],
+      "sourcePosition": [
+        172.36,
+        158.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 5",
+        "es-ES": "Representante del hogar 5"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-6",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        180.36,
+        158.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -2,
+        10
+      ],
+      "sourceOffsetTiles": [
+        -8,
+        10
+      ],
+      "sourcePosition": [
+        174.36,
+        158.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 6",
+        "es-ES": "Representante del hogar 6"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-7",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        184.36,
+        158.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        2,
+        10
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        10
+      ],
+      "sourcePosition": [
+        176.36,
+        158.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 7",
+        "es-ES": "Representante del hogar 7"
+      }
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.households-8",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        188.36,
+        158.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        6,
+        10
+      ],
+      "sourceOffsetTiles": [
+        -4,
+        10
+      ],
+      "sourcePosition": [
+        178.36,
+        158.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Household representative 8",
+        "es-ES": "Representante del hogar 8"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-1.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        176.36,
+        140.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -6,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        176.36,
+        151.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Aid bearer 1 — western court",
+        "es-ES": "Porteador de ayuda 1 — patio occidental"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-1.entity-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        180.36,
+        140.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        -2,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        6
+      ],
+      "sourcePosition": [
+        176.36,
+        154.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Aid bearer 2 — eastern court",
+        "es-ES": "Porteador de ayuda 2 — patio oriental"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-2.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        195.66,
+        229.6
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        -6,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        195.66,
+        240.6
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Copy bearer 1 — western copyist",
+        "es-ES": "Portador de copia 1 — copista occidental"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-2.entity-2",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        199.66,
+        229.6
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        -2,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        6
+      ],
+      "sourcePosition": [
+        195.66,
+        243.6
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Copy bearer 2 — western copyist",
+        "es-ES": "Portador de copia 2 — copista occidental"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-3.entity-1",
+      "unitType": "house",
+      "player": 2,
+      "position": [
+        200.05,
+        189.88
+      ],
+      "initialHub": "hub-2",
+      "offsetTiles": [
+        0,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        194.05,
+        200.88
+      ],
+      "representation": "fixed fictional damaged store",
+      "label": {
+        "en": "Damaged refuge store — select to repair for 50 wood",
+        "es-ES": "Almacén dañado — selecciona para reparar por 50 madera"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-4.entity-1",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        184.36,
+        140.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        2,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        176.36,
+        151.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Olive-road trader — select after court arrival",
+        "es-ES": "Comerciante del camino de los olivos — selecciona tras llegar al patio"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-5.entity-1",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        188.36,
+        140.69
+      ],
+      "initialHub": "hub-1",
+      "offsetTiles": [
+        6,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        176.36,
+        151.69
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Ridge-road guide — proposed western detour",
+        "es-ES": "Guía del camino de la cresta — desvío occidental propuesto"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-6.entity-1",
+      "unitType": "villager-female",
+      "player": 1,
+      "position": [
+        203.66,
+        229.6
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        2,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        3
+      ],
+      "sourcePosition": [
+        195.66,
+        240.6
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Visiting household 1 — western reception",
+        "es-ES": "Hogar visitante 1 — recepción occidental"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-6.entity-2",
+      "unitType": "villager-male",
+      "player": 1,
+      "position": [
+        207.66,
+        229.6
+      ],
+      "initialHub": "hub-3",
+      "offsetTiles": [
+        6,
+        -8
+      ],
+      "sourceOffsetTiles": [
+        -6,
+        6
+      ],
+      "sourcePosition": [
+        195.66,
+        243.6
+      ],
+      "representation": "fictional living proxy of this distinct household or cargo bearer; never a literal ancient artifact or attested individual",
+      "label": {
+        "en": "Visiting household 2 — western reception",
+        "es-ES": "Hogar visitante 2 — recepción occidental"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.destination-1",
+      "centre": [
+        182.36,
+        148.69
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Northwestern activity circle",
+        "es-ES": "Círculo de actividad noroccidental"
+      },
+      "sourceOffsetTiles": [
+        0,
+        0
+      ],
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.destination-2",
+      "centre": [
+        200.05,
+        197.88
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Southern receiving court",
+        "es-ES": "Patio receptor meridional"
+      },
+      "sourceOffsetTiles": [
+        0,
+        0
+      ],
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+      "centre": [
+        201.66,
+        237.6
+      ],
+      "radius": 3,
+      "hub": "hub-3",
+      "label": {
+        "en": "Southern-road refuge",
+        "es-ES": "Refugio del camino sur"
+      },
+      "sourceOffsetTiles": [
+        0,
+        0
+      ],
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-1.zone-1",
+      "centre": [
+        192.05,
+        197.88
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Western court aid point",
+        "es-ES": "Punto occidental de ayuda del patio"
+      },
+      "sourceOffsetTiles": [
+        -8,
+        0
+      ],
+      "offsetTiles": [
+        -8,
+        0
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-1.zone-2",
+      "centre": [
+        208.05,
+        197.88
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Eastern court aid point",
+        "es-ES": "Punto oriental de ayuda del patio"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-2.zone-1",
+      "centre": [
+        174.36,
+        148.69
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Western copy handoff",
+        "es-ES": "Entrega occidental de copias"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        -8,
+        0
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-3.zone-1",
+      "centre": [
+        192.05,
+        205.88
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Western store-district approach",
+        "es-ES": "Acceso occidental al distrito del almacén"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-4.zone-1",
+      "centre": [
+        208.05,
+        205.88
+      ],
+      "radius": 3,
+      "hub": "hub-2",
+      "label": {
+        "en": "Court consignment post",
+        "es-ES": "Puesto de remesas del patio"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        8,
+        8
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-5.zone-1",
+      "centre": [
+        209.66,
+        237.6
+      ],
+      "radius": 3,
+      "hub": "hub-3",
+      "label": {
+        "en": "Ridge-route guide point",
+        "es-ES": "Punto del guía de la cresta"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "02-civilian-refuge-jerusalem.side-6.zone-1",
+      "centre": [
+        190.36,
+        148.69
+      ],
+      "radius": 3,
+      "hub": "hub-1",
+      "label": {
+        "en": "Western guest reception",
+        "es-ES": "Recepción occidental de visitantes"
+      },
+      "sourceOffsetTiles": [
+        8,
+        0
+      ],
+      "offsetTiles": [
+        8,
+        0
+      ]
+    }
+  ],
+  "households": {
+    "entities": [
+      "faith-origins.02-civilian-refuge-jerusalem.households-1",
+      "faith-origins.02-civilian-refuge-jerusalem.households-2",
+      "faith-origins.02-civilian-refuge-jerusalem.households-3",
+      "faith-origins.02-civilian-refuge-jerusalem.households-4",
+      "faith-origins.02-civilian-refuge-jerusalem.households-5",
+      "faith-origins.02-civilian-refuge-jerusalem.households-6",
+      "faith-origins.02-civilian-refuge-jerusalem.households-7",
+      "faith-origins.02-civilian-refuge-jerusalem.households-8"
+    ],
+    "requiredCount": 6,
+    "courtZone": "faith-origins.02-civilian-refuge-jerusalem.destination-2",
+    "refugeZone": "faith-origins.02-civilian-refuge-jerusalem.destination-3",
+    "payment": {
+      "cost": {
+        "food": 240
+      },
+      "command": {
+        "en": "After the court objective, select any living original household representative currently inside the southern receiving court to pay 240 food once.",
+        "es-ES": "Tras completar el objetivo del patio, selecciona a cualquier representante original vivo que esté dentro del patio receptor meridional para pagar 240 de alimento una sola vez."
+      }
+    }
+  },
+  "optionalPayments": {
+    "side-3": {
+      "command": "select the original damaged store",
+      "cost": {
+        "wood": 50
+      },
+      "restoration": "capture original full HP before initial damage; paid transaction restores that original full HP, no native worker repair charge"
+    },
+    "side-4": {
+      "command": "select the original trader after its actual arrival is recorded",
+      "cost": {
+        "gold": 50
+      }
+    }
+  },
+  "accountPolicy": {
+    "nativePlayerStock": "only difficulty.startingResources is spendable native stock; gathering/building/production disabled in this bounded prototype; native economic work rate is zero for the civilian proxies in every profile, so manual repair cannot introduce a second repair payment; movement/HP/attack are not difficulty-scaled",
+    "optionalReserve": "initialize separate native persistent variables from secondaryBudget.reservedRewards; debit once before crediting native spendable resources",
+    "protectedRecovery": "not spendable; no implemented replacement, withdrawal or resurrection; retain separate explanatory accounting, never add it to native player stock",
+    "futureGathering": "gatherableBank, replacementBudget and maxVillagers are unimplemented authored design for this iteration, not secretly simulated resources; final campaign economy needs separate extension and calibration"
+  },
+  "difficulty": {
+    "easy": {
+      "startingResources": {
+        "food": 402,
+        "wood": 172,
+        "gold": 86,
+        "stone": 0
+      },
+      "assistance": "full path markers and all objective circles visible",
+      "claim": "functional assistance plan only; no played duration or calibrated challenge"
+    },
+    "standard": {
+      "startingResources": {
+        "food": 350,
+        "wood": 150,
+        "gold": 75,
+        "stone": 0
+      },
+      "assistance": "objective circles and corridor endpoints visible",
+      "claim": "functional assistance plan only; no played duration or calibrated challenge"
+    },
+    "hard": {
+      "startingResources": {
+        "food": 297,
+        "wood": 127,
+        "gold": 63,
+        "stone": 0
+      },
+      "assistance": "same disclosed goals and costs; fewer route markers",
+      "claim": "functional assistance plan only; no played duration or calibrated challenge"
+    }
+  },
+  "narration": {
+    "source": "existing 39 bilingual source screens",
+    "introOrder": [
+      "title",
+      "fact-intro",
+      "handover",
+      "persona-intro",
+      "historical-license",
+      "route-help",
+      "economy-help"
+    ],
+    "speakerPolicy": "neutral summary precedes the fictional Miriam of Caesarea; she speaks from later inherited sources, never witnesses a first-century event or the 1961 find",
+    "privateCaptionPolicy": "literal EN and es-ES text embedded in separate private native variants, no allocation or modification of global string IDs; no SequenceItems/certified slideshow/audio claim",
+    "outroOrder": [
+      "fact-outro",
+      "persona-outro",
+      "next-episode"
+    ],
+    "nextEpisode": "03-shared-provision-jerusalem",
+    "campaignComplete": false,
+    "speakerLabels": {
+      "collection-narrator": {
+        "en": "Chronicle",
+        "es-ES": "Crónica"
+      },
+      "miriam-archive": {
+        "en": "Miriam of Caesarea",
+        "es-ES": "Miriam de Cesarea"
+      }
+    }
+  },
+  "historicalSources": [
+    "odyssey-source.faith-origins.02-civilian-refuge-jerusalem"
+  ],
+  "layoutEvidence": {
+    "scope": "independent geometric checks of declared and floor+0.5 snapped points; not native pathfinding or actual building footprint data",
+    "nativeSnappedEntities": {
+      "faith-origins.02-civilian-refuge-jerusalem.households-1": [
+        176.5,
+        154.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-2": [
+        180.5,
+        154.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-3": [
+        184.5,
+        154.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-4": [
+        188.5,
+        154.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-5": [
+        176.5,
+        158.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-6": [
+        180.5,
+        158.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-7": [
+        184.5,
+        158.5
+      ],
+      "faith-origins.02-civilian-refuge-jerusalem.households-8": [
+        188.5,
+        158.5
+      ],
+      "02-civilian-refuge-jerusalem.side-1.entity-1": [
+        176.5,
+        140.5
+      ],
+      "02-civilian-refuge-jerusalem.side-1.entity-2": [
+        180.5,
+        140.5
+      ],
+      "02-civilian-refuge-jerusalem.side-2.entity-1": [
+        195.5,
+        229.5
+      ],
+      "02-civilian-refuge-jerusalem.side-2.entity-2": [
+        199.5,
+        229.5
+      ],
+      "02-civilian-refuge-jerusalem.side-3.entity-1": [
+        200.5,
+        189.5
+      ],
+      "02-civilian-refuge-jerusalem.side-4.entity-1": [
+        184.5,
+        140.5
+      ],
+      "02-civilian-refuge-jerusalem.side-5.entity-1": [
+        188.5,
+        140.5
+      ],
+      "02-civilian-refuge-jerusalem.side-6.entity-1": [
+        203.5,
+        229.5
+      ],
+      "02-civilian-refuge-jerusalem.side-6.entity-2": [
+        207.5,
+        229.5
+      ]
+    },
+    "minimumBodyCentreDistanceTiles": 4.0,
+    "minimumInitialCircleEdgeDistanceTiles": 3.100467,
+    "minimumReceivingCircleGapTiles": 2.0,
+    "minimumStoreClearanceBeyondCirclePlus2ApproachPlus3ConservativeExtentTiles": 0.392074,
+    "storeExtentClassification": "deliberately conservative design exclusion radius, not measured engine footprint",
+    "originalActorCount": 17,
+    "mainOriginalCount": 8,
+    "optionalOriginalCount": 9,
+    "zoneCount": 10,
+    "sourceActorsAndZonesUnchanged": true,
+    "figure": "21-physical-layout.png",
+    "figureSha256": "1882045506d2e6fdb560ecccbec72bdce56d53d4ba3ea5200cfc8af40007ec20"
+  },
+  "nativeReadiness": {
+    "bindingApprovedForHistoricalBuild": false,
+    "blockedBy": [
+      "dated-ground route/topographic decision",
+      "real native building footprint and approach inspection",
+      "household adapter independent review and serialization",
+      "engine pathfinding and difficulty playtest"
+    ],
+    "compilerFixtureUse": "synthetic physical fixtures can test controller separately; this document does not authorize a historical build"
+  },
+  "gameVerified": false
+}

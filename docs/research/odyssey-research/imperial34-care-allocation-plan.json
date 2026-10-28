@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "classification": "candidate economic analysis; not gameplay DSL",
+  "episodeId": "34-church-transfer-constantinople",
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "decision": "Study finite alternative fulfillment instead of a copied preparation clock. Architecture choice remains subject to independent review and map/gameplay proof; no full dossier exists.",
+  "operatingStockByDifficulty": {
+    "easy": {
+      "food": 420,
+      "wood": 380,
+      "gold": 260
+    },
+    "standard": {
+      "food": 340,
+      "wood": 280,
+      "gold": 150
+    },
+    "hard": {
+      "food": 300,
+      "wood": 220,
+      "gold": 120
+    }
+  },
+  "stockPolicy": "Entire candidate operating allocation is accessible at briefing acceptance; no gathering, recovery reserve, passive regeneration, future grant or optional reward is included. Values are invented game budgets, not historical quantities. Actual finite source materialization is pending.",
+  "services": [
+    {
+      "id": "meal-service",
+      "historicalStatus": "Fictional voluntary civilian care, not a religious test or an imperial act.",
+      "recipes": [
+        {
+          "id": "meal-direct",
+          "cost": {
+            "food": 240,
+            "wood": 40
+          },
+          "workload": "Receive one original prepared-food consignment at the common civilian reception; physical source/destination and actor capacity require the full world plan."
+        },
+        {
+          "id": "meal-shared-hearth",
+          "cost": {
+            "food": 160,
+            "wood": 140
+          },
+          "workload": "Complete a fictional preparation circuit at a distinct domestic work site before the same civilian reception. No ancient kitchen parcel or economic yield is documented."
+        },
+        {
+          "id": "meal-purchased",
+          "cost": {
+            "food": 100,
+            "wood": 40,
+            "gold": 100
+          },
+          "workload": "Collect one purchased consignment on a different local approach. Payment is not delivery, cargo inventory or historical charity evidence."
+        }
+      ]
+    },
+    {
+      "id": "shelter-service",
+      "historicalStatus": "Two fictional consenting households need care independent of creed; their existing movement/placement is not authored yet.",
+      "recipes": [
+        {
+          "id": "shelter-materials",
+          "cost": {
+            "food": 80,
+            "wood": 200
+          },
+          "workload": "Deliver finite materials to a fictional civilian shelter court; not a church seizure or a proven building footprint."
+        },
+        {
+          "id": "shelter-local-kit",
+          "cost": {
+            "food": 100,
+            "wood": 120,
+            "gold": 20
+          },
+          "workload": "Collect a locally prepared repair kit and voluntary helper, then receive the same two households. No building-health or road-passability effect is inferred from a payment."
+        },
+        {
+          "id": "shelter-rented",
+          "cost": {
+            "food": 60,
+            "wood": 60,
+            "gold": 110
+          },
+          "workload": "Arrange a voluntary receiving household at a distinct court, with the same two recipients alive at its actual reception. No ownership transfer or conversion is implied."
+        }
+      ]
+    }
+  ],
+  "optionalTasks": [
+    {
+      "id": "neighbor-provisions",
+      "kind": "aid"
+    },
+    {
+      "id": "voluntary-household-return",
+      "kind": "extract"
+    },
+    {
+      "id": "source-comparison",
+      "kind": "copy"
+    },
+    {
+      "id": "local-wayfinding",
+      "kind": "guide"
+    },
+    {
+      "id": "slope-survey",
+      "kind": "scout"
+    },
+    {
+      "id": "service-observation",
+      "kind": "watch"
+    },
+    {
+      "id": "damaged-civilian-store",
+      "kind": "repair"
+    }
+  ],
+  "optionalPolicy": "Shared COSTS/REWARDS are resolved from tools/design/secondary.py rather than copied. These seven mechanic slots are NOT authored side-objective dossiers: exact actors, geography, EN/es screens and actual information targets remain pending. Four information effects must target real authored existing routes/work sites, never enemies or terrain changes by default. Optional payment precedes finite reserved reward; failure gives no credit.",
+  "selectionPolicy": "One provisional recipe per service; full costs, remainder and physical work displayed before confirmation. A joint reservation must reject unaffordable choices atomically. Drafts are reversible without debit. Exact release, commitment and recovery semantics are an infrastructure requirement, not an implemented DSL operation.",
+  "difficultyPolicy": "Different finite operating budgets restrict affordable combinations. This proves differing economic feasible sets, not challenge. Do not impose a clock, enemy, forced belief choice or hidden quota. Reject the prototype as a full dossier if native pilots reduce it to a menu followed by idle movement.",
+  "geographyPolicy": "No recipe has certified coordinates yet. Use the European peninsula and phase380 controls in the existing architect brief; full padded extent, layer dates, actual path lengths and distinct work-site geometry must determine whether workload alternatives are interesting.",
+  "promotionBlockers": [
+    "independent architecture/content review",
+    "selected-choice/reservation/conditional output contract and reference/native support",
+    "actual distinct world identities and survivor/recovery plan",
+    "dated map geometry and measured workload frontier",
+    "seven fully authored secondaries and three combinable portfolios",
+    "all EN/es screens",
+    "native and game QA"
+  ]
+}

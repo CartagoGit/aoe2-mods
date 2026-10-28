@@ -1,0 +1,2939 @@
+{
+  "schemaVersion": 1,
+  "created": "2026-10-12",
+  "assignments": [
+    {
+      "campaignId": "faith-origins",
+      "proposalId": "f00004",
+      "path": "blocked/f00004-autoria-designada-embers-of-the-covenant.md",
+      "targetEpisodeCount": 30,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-administrative-records-caesarea",
+            "02-civilian-refuge-jerusalem",
+            "03-shared-provision-jerusalem",
+            "04-testimony-relay-damascus",
+            "05-witness-comparison-jerusalem",
+            "01-roads-of-antioch",
+            "07-household-relocation-rome-ostia",
+            "08-delegate-logistics-jerusalem"
+          ],
+          "sliceIds": [
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12",
+            "S3",
+            "S13",
+            "S14"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "09-district-production-corinth",
+            "10-copy-and-relay-corinth",
+            "11-distributed-preservation-ephesus",
+            "12-bounded-community-aid-ephesus",
+            "13-consignment-and-correspondence-corinth",
+            "14-administrative-intrigue-caesarea",
+            "15-evacuation-and-recovery-rome-ostia"
+          ],
+          "sliceIds": [
+            "S15",
+            "S16",
+            "S17",
+            "S18",
+            "S19",
+            "S20",
+            "S21"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "16-comparative-copying-antioch",
+            "02-after-the-siege",
+            "18-parallel-archive-logistics-antioch",
+            "19-hospitality-network-antioch",
+            "20-reconciliation-deliveries-rome-ostia",
+            "03-the-governors-question"
+          ],
+          "sliceIds": [
+            "S22",
+            "S4",
+            "S23",
+            "S24",
+            "S25",
+            "S5"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "22-reading-and-relief-rome-ostia",
+            "23-petition-escort-sardes",
+            "24-witness-and-evacuation-lyon",
+            "25-archive-comparison-lyon",
+            "26-legal-record-network-carthage",
+            "27-household-aid-and-memory-carthage"
+          ],
+          "sliceIds": [
+            "S26",
+            "S27",
+            "S28",
+            "S29",
+            "S30",
+            "S31"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "28-certificate-and-refuge-egypt-middle-nile",
+            "29-bounded-evacuation-carthage",
+            "04-a-different-dawn"
+          ],
+          "sliceIds": [
+            "S32",
+            "S33",
+            "S6"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-administrative-records-caesarea",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S8",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "02-civilian-refuge-jerusalem",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "03-shared-provision-jerusalem",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "04-testimony-relay-damascus",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "05-witness-comparison-jerusalem",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S12",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "01-roads-of-antioch",
+          "order": 6,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "07-household-relocation-rome-ostia",
+          "order": 7,
+          "actId": "act-1",
+          "sliceId": "S13",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "08-delegate-logistics-jerusalem",
+          "order": 8,
+          "actId": "act-1",
+          "sliceId": "S14",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "09-district-production-corinth",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "10-copy-and-relay-corinth",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "11-distributed-preservation-ephesus",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "12-bounded-community-aid-ephesus",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S18",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "13-consignment-and-correspondence-corinth",
+          "order": 13,
+          "actId": "act-2",
+          "sliceId": "S19",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "14-administrative-intrigue-caesarea",
+          "order": 14,
+          "actId": "act-2",
+          "sliceId": "S20",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "15-evacuation-and-recovery-rome-ostia",
+          "order": 15,
+          "actId": "act-2",
+          "sliceId": "S21",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "16-comparative-copying-antioch",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S22",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "02-after-the-siege",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S4",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "18-parallel-archive-logistics-antioch",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S23",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "19-hospitality-network-antioch",
+          "order": 19,
+          "actId": "act-3",
+          "sliceId": "S24",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "20-reconciliation-deliveries-rome-ostia",
+          "order": 20,
+          "actId": "act-3",
+          "sliceId": "S25",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "03-the-governors-question",
+          "order": 21,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "22-reading-and-relief-rome-ostia",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "23-petition-escort-sardes",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "24-witness-and-evacuation-lyon",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "25-archive-comparison-lyon",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S29",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "26-legal-record-network-carthage",
+          "order": 26,
+          "actId": "act-4",
+          "sliceId": "S30",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "27-household-aid-and-memory-carthage",
+          "order": 27,
+          "actId": "act-4",
+          "sliceId": "S31",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "28-certificate-and-refuge-egypt-middle-nile",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "29-bounded-evacuation-carthage",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "04-a-different-dawn",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S6",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        }
+      ],
+      "promotionSlice": "S7",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "imperial-church",
+      "proposalId": "f00003",
+      "path": "blocked/f00003-autoria-designada-the-eagle-and-the-cross.md",
+      "targetEpisodeCount": 34,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-milvian-bridge",
+            "02-bounded-negotiation-milan",
+            "03-property-and-record-restoration-nicomedia",
+            "04-rival-delegation-reception-rome-ostia",
+            "05-delegate-logistics-arles",
+            "06-finite-field-withdrawal-cibalae"
+          ],
+          "sliceIds": [
+            "S3",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "07-court-record-logistics-rome-ostia",
+            "09-crossing-and-supply-adrianople",
+            "10-land-and-strait-logistics-chrysopolis",
+            "08-disputed-correspondence-alexandria",
+            "11-council-record-escort-antioch",
+            "02-nicaea"
+          ],
+          "sliceIds": [
+            "S12",
+            "S14",
+            "S15",
+            "S13",
+            "S16",
+            "S4"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "13-finite-works-logistics-jerusalem",
+            "03-new-capital",
+            "15-long-distance-dispatch-nicomedia",
+            "16-witness-record-comparison-tyre",
+            "17-rumour-and-source-investigation-constantinople",
+            "18-administrative-transition-nicomedia",
+            "19-competing-dispatches-constantinople"
+          ],
+          "sliceIds": [
+            "S17",
+            "S5",
+            "S18",
+            "S19",
+            "S20",
+            "S21",
+            "S22"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "20-separate-reception-logistics-sardica",
+            "21-returning-households-escort-alexandria",
+            "22-civilian-record-preservation-milan",
+            "23-bounded-political-pressure-milan",
+            "24-night-civilian-withdrawal-alexandria",
+            "25-delegate-and-draft-network-rimini"
+          ],
+          "sliceIds": [
+            "S23",
+            "S24",
+            "S25",
+            "S26",
+            "S27",
+            "S28"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "26-plural-civic-logistics-constantinople",
+            "27-return-and-departure-records-alexandria",
+            "30-policy-reversal-alexandria",
+            "31-contested-succession-alexandria",
+            "32-defeat-and-withdrawal-adrianople",
+            "33-accession-and-reassembly-sirmium",
+            "28-law-and-local-reception-thessalonica",
+            "34-church-transfer-constantinople",
+            "29-council-and-final-perspective-constantinople"
+          ],
+          "sliceIds": [
+            "S29",
+            "S30",
+            "S33",
+            "S34",
+            "S35",
+            "S36",
+            "S31",
+            "S37",
+            "S32"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-milvian-bridge",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "02-bounded-negotiation-milan",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S7",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "03-property-and-record-restoration-nicomedia",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S8",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "04-rival-delegation-reception-rome-ostia",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "05-delegate-logistics-arles",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "06-finite-field-withdrawal-cibalae",
+          "order": 6,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "07-court-record-logistics-rome-ostia",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S12",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "09-crossing-and-supply-adrianople",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "10-land-and-strait-logistics-chrysopolis",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "08-disputed-correspondence-alexandria",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S13",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "11-council-record-escort-antioch",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "02-nicaea",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S4",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "13-finite-works-logistics-jerusalem",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S17",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "03-new-capital",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "15-long-distance-dispatch-nicomedia",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S18",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "16-witness-record-comparison-tyre",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "17-rumour-and-source-investigation-constantinople",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "18-administrative-transition-nicomedia",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S21",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "19-competing-dispatches-constantinople",
+          "order": 19,
+          "actId": "act-3",
+          "sliceId": "S22",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "20-separate-reception-logistics-sardica",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S23",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "21-returning-households-escort-alexandria",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S24",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "22-civilian-record-preservation-milan",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "23-bounded-political-pressure-milan",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "24-night-civilian-withdrawal-alexandria",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "25-delegate-and-draft-network-rimini",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "26-plural-civic-logistics-constantinople",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S29",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "27-return-and-departure-records-alexandria",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "30-policy-reversal-alexandria",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "31-contested-succession-alexandria",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S34",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "32-defeat-and-withdrawal-adrianople",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S35",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "33-accession-and-reassembly-sirmium",
+          "order": 31,
+          "actId": "act-5",
+          "sliceId": "S36",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "28-law-and-local-reception-thessalonica",
+          "order": 32,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "34-church-transfer-constantinople",
+          "order": 33,
+          "actId": "act-5",
+          "sliceId": "S37",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        },
+        {
+          "episodeId": "29-council-and-final-perspective-constantinople",
+          "order": 34,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "authored full draft; independent source/geometry/native/balance gates pending"
+        }
+      ],
+      "promotionSlice": "S6",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "jewish-tradition",
+      "proposalId": "f00005",
+      "path": "blocked/f00005-autoria-designada-keepers-of-the-unbroken-word.md",
+      "targetEpisodeCount": 30,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-a-city-of-names",
+            "02-refuge-and-school-supply-yavneh",
+            "03-distributed-study-network-yavneh",
+            "04-witness-comparison-yavneh",
+            "05-fiscal-record-reconciliation-rome-ostia"
+          ],
+          "sliceIds": [
+            "S3",
+            "S8",
+            "S9",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "06-teaching-record-escort-lod",
+            "07-civilian-refuge-cyrene",
+            "08-harbour-supply-and-witnesses-alexandria",
+            "09-administrative-records-jerusalem",
+            "10-finite-mint-consignments-judean-hills",
+            "11-archive-extraction-judean-desert",
+            "12-household-relocation-jerusalem"
+          ],
+          "sliceIds": [
+            "S12",
+            "S13",
+            "S14",
+            "S15",
+            "S16",
+            "S17",
+            "S18"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "02-the-hill-and-the-school",
+            "14-citizenship-copy-and-receipts-galilee",
+            "15-study-and-supply-allocation-galilee",
+            "03-the-river-quarter",
+            "17-cross-river-study-logistics-pumbedita"
+          ],
+          "sliceIds": [
+            "S4",
+            "S19",
+            "S20",
+            "S5",
+            "S21"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "18-finite-mosaic-works-hammath-tiberias",
+            "19-bounded-civilian-withdrawal-sepphoris",
+            "20-parallel-text-preservation-galilee",
+            "21-finite-works-and-safe-withdrawal-jerusalem",
+            "22-law-and-community-records-thessalonica",
+            "23-petition-and-restoration-records-constantinople",
+            "24-epigraphic-donor-logistics-aphrodisias"
+          ],
+          "sliceIds": [
+            "S22",
+            "S23",
+            "S24",
+            "S25",
+            "S26",
+            "S27",
+            "S28"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "25-bounded-fiscal-transition-milan",
+            "26-finite-community-construction-huqoq",
+            "27-courier-and-account-restoration-rome-ostia",
+            "28-authority-and-witness-records-constantinople",
+            "29-repair-within-restrictions-constantinople",
+            "04-the-living-margin"
+          ],
+          "sliceIds": [
+            "S29",
+            "S30",
+            "S31",
+            "S32",
+            "S33",
+            "S6"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-a-city-of-names",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-refuge-and-school-supply-yavneh",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S8",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-distributed-study-network-yavneh",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-witness-comparison-yavneh",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-fiscal-record-reconciliation-rome-ostia",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-teaching-record-escort-lod",
+          "order": 6,
+          "actId": "act-2",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "07-civilian-refuge-cyrene",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-harbour-supply-and-witnesses-alexandria",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-administrative-records-jerusalem",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-finite-mint-consignments-judean-hills",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-archive-extraction-judean-desert",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-household-relocation-jerusalem",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-the-hill-and-the-school",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-citizenship-copy-and-receipts-galilee",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-study-and-supply-allocation-galilee",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-the-river-quarter",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-cross-river-study-logistics-pumbedita",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-finite-mosaic-works-hammath-tiberias",
+          "order": 18,
+          "actId": "act-4",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-bounded-civilian-withdrawal-sepphoris",
+          "order": 19,
+          "actId": "act-4",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "20-parallel-text-preservation-galilee",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-finite-works-and-safe-withdrawal-jerusalem",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-law-and-community-records-thessalonica",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-petition-and-restoration-records-constantinople",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-epigraphic-donor-logistics-aphrodisias",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-bounded-fiscal-transition-milan",
+          "order": 25,
+          "actId": "act-5",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-finite-community-construction-huqoq",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-courier-and-account-restoration-rome-ostia",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-authority-and-witness-records-constantinople",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-repair-within-restrictions-constantinople",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-the-living-margin",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S7",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "church-of-rome",
+      "proposalId": "f00006",
+      "path": "blocked/f00006-autoria-designada-the-keys-of-the-eternal-city.md",
+      "targetEpisodeCount": 32,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-refuge-and-petition-reception-rome-ostia",
+            "02-separate-delegation-logistics-sardica",
+            "03-exile-supply-and-correspondence-beroea-thrace",
+            "04-draft-and-delegate-network-rimini",
+            "05-neutral-civilian-extraction-rome-ostia",
+            "06-petition-and-accountability-records-milan"
+          ],
+          "sliceIds": [
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12",
+            "S13"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "01-bread-beyond-the-gates",
+            "08-administrative-transition-ravenna",
+            "09-civilian-record-preservation-ravenna",
+            "10-correspondence-consignment-rome-ostia",
+            "11-reconciliation-document-logistics-constantinople",
+            "12-returning-delegation-aid-ravenna"
+          ],
+          "sliceIds": [
+            "S3",
+            "S14",
+            "S15",
+            "S16",
+            "S17",
+            "S18"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "13-district-supply-under-occupation-rome-ostia",
+            "14-finite-siege-and-urban-relief-rome-ostia",
+            "15-archive-extraction-and-refuge-rome-ostia",
+            "16-return-and-repair-rome-ostia",
+            "02-the-price-of-peace",
+            "18-hospitality-and-mission-supply-kent"
+          ],
+          "sliceIds": [
+            "S19",
+            "S20",
+            "S21",
+            "S22",
+            "S4",
+            "S23"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "19-finite-building-conversion-rome-ostia",
+            "20-council-record-comparison-rome-ostia",
+            "21-exile-relief-and-copying-cherson",
+            "22-finite-material-records-rome-ostia",
+            "23-delegation-and-document-escort-constantinople",
+            "24-disputed-document-reception-rome-ostia",
+            "25-artisan-and-council-logistics-rome-ostia"
+          ],
+          "sliceIds": [
+            "S24",
+            "S25",
+            "S26",
+            "S27",
+            "S28",
+            "S29",
+            "S30"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "26-delegate-and-oath-logistics-saint-denis",
+            "03-roads-to-pavia",
+            "28-finite-siege-and-civilian-withdrawal-pavia",
+            "29-delegate-logistics-and-copying-nicaea",
+            "30-symbolic-consignment-and-couriers-rome-ostia",
+            "31-refuge-and-petition-escort-paderborn",
+            "04-a-crown-at-dawn"
+          ],
+          "sliceIds": [
+            "S31",
+            "S5",
+            "S32",
+            "S33",
+            "S34",
+            "S35",
+            "S6"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-refuge-and-petition-reception-rome-ostia",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S8",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-separate-delegation-logistics-sardica",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-exile-supply-and-correspondence-beroea-thrace",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-draft-and-delegate-network-rimini",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-neutral-civilian-extraction-rome-ostia",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-petition-and-accountability-records-milan",
+          "order": 6,
+          "actId": "act-1",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "01-bread-beyond-the-gates",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-administrative-transition-ravenna",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-civilian-record-preservation-ravenna",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-correspondence-consignment-rome-ostia",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-reconciliation-document-logistics-constantinople",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-returning-delegation-aid-ravenna",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "13-district-supply-under-occupation-rome-ostia",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-finite-siege-and-urban-relief-rome-ostia",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-archive-extraction-and-refuge-rome-ostia",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "16-return-and-repair-rome-ostia",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-the-price-of-peace",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-hospitality-and-mission-supply-kent",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-finite-building-conversion-rome-ostia",
+          "order": 19,
+          "actId": "act-4",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "20-council-record-comparison-rome-ostia",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-exile-relief-and-copying-cherson",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-finite-material-records-rome-ostia",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-delegation-and-document-escort-constantinople",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-disputed-document-reception-rome-ostia",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-artisan-and-council-logistics-rome-ostia",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-delegate-and-oath-logistics-saint-denis",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-roads-to-pavia",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-finite-siege-and-civilian-withdrawal-pavia",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-delegate-logistics-and-copying-nicaea",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "30-symbolic-consignment-and-couriers-rome-ostia",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S34",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "31-refuge-and-petition-escort-paderborn",
+          "order": 31,
+          "actId": "act-5",
+          "sliceId": "S35",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-a-crown-at-dawn",
+          "order": 32,
+          "actId": "act-5",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S7",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "new-rome",
+      "proposalId": "f00007",
+      "path": "blocked/f00007-autoria-designada-beyond-the-golden-gate.md",
+      "targetEpisodeCount": 32,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-administrative-transition-constantinople",
+            "02-council-and-city-logistics-constantinople",
+            "03-competing-dispatches-constantinople",
+            "04-civilian-refuge-and-dispatch-constantinople",
+            "05-finite-school-works-constantinople",
+            "06-separate-session-logistics-ephesus",
+            "07-ceremony-and-household-logistics-constantinople",
+            "08-distributed-record-collation-constantinople"
+          ],
+          "sliceIds": [
+            "S9",
+            "S10",
+            "S11",
+            "S12",
+            "S13",
+            "S14",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "01-across-the-strait",
+            "10-ceremony-route-and-provision-constantinople",
+            "11-disputed-correspondence-constantinople",
+            "12-administrative-transition-constantinople",
+            "02-the-city-in-ashes",
+            "14-finite-construction-logistics-constantinople",
+            "15-bounded-civilian-extraction-antioch",
+            "03-the-empty-granary",
+            "17-council-record-comparison-constantinople"
+          ],
+          "sliceIds": [
+            "S3",
+            "S17",
+            "S18",
+            "S19",
+            "S4",
+            "S20",
+            "S21",
+            "S5",
+            "S22"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "18-finite-siege-and-ferry-supply-constantinople",
+            "19-civilian-record-and-property-logistics-jerusalem",
+            "20-coastal-watch-and-bounded-convoy-constantinople",
+            "21-delegation-and-text-comparison-constantinople",
+            "04-winter-at-the-walls"
+          ],
+          "sliceIds": [
+            "S23",
+            "S24",
+            "S25",
+            "S26",
+            "S6"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "23-artisan-record-and-protection-constantinople",
+            "24-council-and-workshop-logistics-chalcedon",
+            "05-pieces-of-a-memory"
+          ],
+          "sliceIds": [
+            "S27",
+            "S28",
+            "S7"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "26-civilian-supply-and-succession-records-constantinople",
+            "27-off-map-dispatch-and-comparison-constantinople",
+            "28-administrative-transition-constantinople",
+            "29-finite-withdrawal-and-relief-pliska",
+            "30-civilian-refuge-and-dispatch-adrianople",
+            "31-artisan-and-archive-preservation-constantinople",
+            "32-restoration-and-final-perspective-constantinople"
+          ],
+          "sliceIds": [
+            "S29",
+            "S30",
+            "S31",
+            "S32",
+            "S33",
+            "S34",
+            "S35"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-administrative-transition-constantinople",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-council-and-city-logistics-constantinople",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-competing-dispatches-constantinople",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-civilian-refuge-and-dispatch-constantinople",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-finite-school-works-constantinople",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-separate-session-logistics-ephesus",
+          "order": 6,
+          "actId": "act-1",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "07-ceremony-and-household-logistics-constantinople",
+          "order": 7,
+          "actId": "act-1",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-distributed-record-collation-constantinople",
+          "order": 8,
+          "actId": "act-1",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "01-across-the-strait",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-ceremony-route-and-provision-constantinople",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-disputed-correspondence-constantinople",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-administrative-transition-constantinople",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-the-city-in-ashes",
+          "order": 13,
+          "actId": "act-2",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-finite-construction-logistics-constantinople",
+          "order": 14,
+          "actId": "act-2",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-bounded-civilian-extraction-antioch",
+          "order": 15,
+          "actId": "act-2",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-the-empty-granary",
+          "order": 16,
+          "actId": "act-2",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-council-record-comparison-constantinople",
+          "order": 17,
+          "actId": "act-2",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-finite-siege-and-ferry-supply-constantinople",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-civilian-record-and-property-logistics-jerusalem",
+          "order": 19,
+          "actId": "act-3",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "20-coastal-watch-and-bounded-convoy-constantinople",
+          "order": 20,
+          "actId": "act-3",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-delegation-and-text-comparison-constantinople",
+          "order": 21,
+          "actId": "act-3",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-winter-at-the-walls",
+          "order": 22,
+          "actId": "act-3",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-artisan-record-and-protection-constantinople",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-council-and-workshop-logistics-chalcedon",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-pieces-of-a-memory",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S7",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-civilian-supply-and-succession-records-constantinople",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-off-map-dispatch-and-comparison-constantinople",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-administrative-transition-constantinople",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-finite-withdrawal-and-relief-pliska",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "30-civilian-refuge-and-dispatch-adrianople",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "31-artisan-and-archive-preservation-constantinople",
+          "order": 31,
+          "actId": "act-5",
+          "sliceId": "S34",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "32-restoration-and-final-perspective-constantinople",
+          "order": 32,
+          "actId": "act-5",
+          "sliceId": "S35",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S8",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "first-caliphs",
+      "proposalId": "f00008",
+      "path": "blocked/f00008-autoria-designada-beneath-the-desert-stars.md",
+      "targetEpisodeCount": 30,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-testimony-and-household-supply-mecca",
+            "02-civilian-network-and-records-mecca",
+            "03-finite-emigration-consignments-mecca",
+            "04-bounded-household-provision-mecca",
+            "05-delegate-logistics-and-receipts-mina-aqaba",
+            "06-bounded-reception-planning-mina-aqaba",
+            "01-the-oasis-road"
+          ],
+          "sliceIds": [
+            "S9",
+            "S10",
+            "S11",
+            "S12",
+            "S13",
+            "S14",
+            "S3"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "08-finite-battle-supply-and-withdrawal-badr",
+            "09-finite-withdrawal-and-care-uhud",
+            "10-finite-defence-and-trench-supply-medina",
+            "11-bounded-negotiation-and-supply-hudaybiyya",
+            "12-finite-siege-and-civilian-extraction-khaybar",
+            "13-civilian-provision-under-entry-mecca",
+            "14-witness-and-transition-records-medina"
+          ],
+          "sliceIds": [
+            "S15",
+            "S16",
+            "S17",
+            "S18",
+            "S19",
+            "S20",
+            "S21"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "15-disputed-tax-and-provincial-records-medina",
+            "02-the-roads-of-yamama",
+            "17-finite-river-withdrawal-kufa-euphrates",
+            "18-surrender-and-civilian-records-damascus",
+            "03-the-edge-of-the-river",
+            "04-fields-of-the-sawad",
+            "21-finite-river-crossing-and-civilian-records-ctesiphon"
+          ],
+          "sliceIds": [
+            "S22",
+            "S4",
+            "S23",
+            "S24",
+            "S5",
+            "S6",
+            "S25"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "22-property-and-surrender-records-jerusalem",
+            "23-peaceful-supply-and-record-reception-antioch",
+            "05-a-camp-beside-the-nile",
+            "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+            "26-administrative-transition-and-care-medina"
+          ],
+          "sliceIds": [
+            "S26",
+            "S27",
+            "S7",
+            "S28",
+            "S29"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "27-finite-coastal-expedition-and-supply-cyprus",
+            "28-civilian-refuge-and-source-comparison-merv",
+            "29-finite-naval-withdrawal-and-care-finike",
+            "30-civilian-records-and-final-perspective-medina"
+          ],
+          "sliceIds": [
+            "S30",
+            "S31",
+            "S32",
+            "S33"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-testimony-and-household-supply-mecca",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-civilian-network-and-records-mecca",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-finite-emigration-consignments-mecca",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-bounded-household-provision-mecca",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-delegate-logistics-and-receipts-mina-aqaba",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-bounded-reception-planning-mina-aqaba",
+          "order": 6,
+          "actId": "act-1",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "01-the-oasis-road",
+          "order": 7,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-finite-battle-supply-and-withdrawal-badr",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-finite-withdrawal-and-care-uhud",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-finite-defence-and-trench-supply-medina",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-bounded-negotiation-and-supply-hudaybiyya",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-finite-siege-and-civilian-extraction-khaybar",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "13-civilian-provision-under-entry-mecca",
+          "order": 13,
+          "actId": "act-2",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-witness-and-transition-records-medina",
+          "order": 14,
+          "actId": "act-2",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-disputed-tax-and-provincial-records-medina",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-the-roads-of-yamama",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-finite-river-withdrawal-kufa-euphrates",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-surrender-and-civilian-records-damascus",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-the-edge-of-the-river",
+          "order": 19,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-fields-of-the-sawad",
+          "order": 20,
+          "actId": "act-3",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+          "order": 21,
+          "actId": "act-3",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-property-and-surrender-records-jerusalem",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-peaceful-supply-and-record-reception-antioch",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-a-camp-beside-the-nile",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S7",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-administrative-transition-and-care-medina",
+          "order": 26,
+          "actId": "act-4",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-finite-coastal-expedition-and-supply-cyprus",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-civilian-refuge-and-source-comparison-merv",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-finite-naval-withdrawal-and-care-finike",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "30-civilian-records-and-final-perspective-medina",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S8",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "first-fitna",
+      "proposalId": "f00009",
+      "path": "blocked/f00009-autoria-designada-the-shattered-oath.md",
+      "targetEpisodeCount": 28,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-news-from-medina",
+            "02-civilian-refuge-and-record-preservation-medina",
+            "03-administrative-transition-medina",
+            "04-disputed-correspondence-mecca",
+            "05-rival-petition-and-witness-records-medina"
+          ],
+          "sliceIds": [
+            "S3",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "06-arriving-delegation-and-supply-basra",
+            "07-civilian-extraction-under-unrest-basra",
+            "02-between-the-camps",
+            "09-bounded-distribution-and-receipts-basra",
+            "10-camp-and-household-reception-kufa",
+            "11-two-way-correspondence-kufa"
+          ],
+          "sliceIds": [
+            "S13",
+            "S14",
+            "S4",
+            "S15",
+            "S16",
+            "S17"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "12-rival-claims-and-dispatch-comparison-damascus",
+            "03-water-and-words",
+            "14-ceasefire-withdrawal-and-care-siffin",
+            "15-paired-protocol-delivery-siffin",
+            "16-witness-and-record-comparison-kufa"
+          ],
+          "sliceIds": [
+            "S18",
+            "S5",
+            "S19",
+            "S20",
+            "S21"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "17-voluntary-household-relocation-harura",
+            "18-separate-delegation-logistics-dumat-al-jandal",
+            "19-disputed-correspondence-and-provision-kufa",
+            "04-the-canal-road",
+            "21-civilian-record-preservation-fustat",
+            "22-delegate-reception-and-source-comparison-adhruh",
+            "23-bounded-rural-relief-kufa"
+          ],
+          "sliceIds": [
+            "S22",
+            "S23",
+            "S24",
+            "S6",
+            "S25",
+            "S26",
+            "S27"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "24-civilian-refuge-and-dispatch-medina",
+            "25-care-and-record-preservation-kufa",
+            "26-administrative-transition-and-household-supply-kufa",
+            "27-paired-protocol-and-bounded-negotiation-kufa",
+            "05-two-archives"
+          ],
+          "sliceIds": [
+            "S28",
+            "S29",
+            "S30",
+            "S31",
+            "S7"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-news-from-medina",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-civilian-refuge-and-record-preservation-medina",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-administrative-transition-medina",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-disputed-correspondence-mecca",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-rival-petition-and-witness-records-medina",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-arriving-delegation-and-supply-basra",
+          "order": 6,
+          "actId": "act-2",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "07-civilian-extraction-under-unrest-basra",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-between-the-camps",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-bounded-distribution-and-receipts-basra",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-camp-and-household-reception-kufa",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-two-way-correspondence-kufa",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-rival-claims-and-dispatch-comparison-damascus",
+          "order": 12,
+          "actId": "act-3",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-water-and-words",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-ceasefire-withdrawal-and-care-siffin",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-paired-protocol-delivery-siffin",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "16-witness-and-record-comparison-kufa",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-voluntary-household-relocation-harura",
+          "order": 17,
+          "actId": "act-4",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-separate-delegation-logistics-dumat-al-jandal",
+          "order": 18,
+          "actId": "act-4",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-disputed-correspondence-and-provision-kufa",
+          "order": 19,
+          "actId": "act-4",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-the-canal-road",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-civilian-record-preservation-fustat",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-delegate-reception-and-source-comparison-adhruh",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-bounded-rural-relief-kufa",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-civilian-refuge-and-dispatch-medina",
+          "order": 24,
+          "actId": "act-5",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-care-and-record-preservation-kufa",
+          "order": 25,
+          "actId": "act-5",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-administrative-transition-and-household-supply-kufa",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-paired-protocol-and-bounded-negotiation-kufa",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-two-archives",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S7",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S8",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "umayyads",
+      "proposalId": "f00010",
+      "path": "blocked/f00010-autoria-designada-from-damascus-to-the-far-horizon.md",
+      "targetEpisodeCount": 32,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-ledgers-of-damascus",
+            "02-succession-and-rival-records-damascus",
+            "03-off-map-witness-and-relief-damascus"
+          ],
+          "sliceIds": [
+            "S3",
+            "S9",
+            "S10"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "04-bounded-civilian-withdrawal-medina",
+            "05-finite-siege-and-household-relief-mecca",
+            "06-separate-delegation-and-supply-jabiya",
+            "07-administrative-transition-damascus",
+            "02-stone-and-memory",
+            "09-civilian-refuge-and-property-records-mecca",
+            "10-fiscal-and-witness-records-kufa",
+            "11-finite-mint-and-market-reconciliation-damascus",
+            "03-the-western-shore"
+          ],
+          "sliceIds": [
+            "S11",
+            "S12",
+            "S13",
+            "S14",
+            "S4",
+            "S15",
+            "S16",
+            "S17",
+            "S5"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "13-finite-battle-and-civilian-extraction-kufa",
+            "14-provincial-dispatch-and-provision-merv",
+            "15-finite-siege-and-trade-recovery-paykand",
+            "16-finite-relief-and-withdrawal-ramitin",
+            "17-tribute-and-household-receipts-bukhara",
+            "18-civilian-record-and-refuge-balkh",
+            "19-off-map-dispatch-and-bounded-accounts-balkh"
+          ],
+          "sliceIds": [
+            "S18",
+            "S19",
+            "S20",
+            "S21",
+            "S22",
+            "S23",
+            "S24"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "04-the-narrow-sea",
+            "21-bounded-river-trade-and-receipts-khwarazm",
+            "22-finite-siege-and-property-records-samarkand",
+            "23-finite-works-and-source-comparison-bukhara",
+            "24-finite-caravan-and-relief-tashkent",
+            "25-finite-withdrawal-and-record-preservation-fergana",
+            "26-finite-siege-withdrawal-and-supply-constantinople",
+            "27-bounded-civilian-refuge-kufa"
+          ],
+          "sliceIds": [
+            "S6",
+            "S25",
+            "S26",
+            "S27",
+            "S28",
+            "S29",
+            "S30",
+            "S31"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "28-competing-provincial-dispatches-damascus",
+            "29-bounded-camp-and-civilian-provision-merv",
+            "30-administrative-and-household-reception-kufa",
+            "05-the-last-crossing",
+            "32-civilian-records-and-final-perspective-fustat"
+          ],
+          "sliceIds": [
+            "S32",
+            "S33",
+            "S34",
+            "S7",
+            "S35"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-ledgers-of-damascus",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-succession-and-rival-records-damascus",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-off-map-witness-and-relief-damascus",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-bounded-civilian-withdrawal-medina",
+          "order": 4,
+          "actId": "act-2",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-finite-siege-and-household-relief-mecca",
+          "order": 5,
+          "actId": "act-2",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "06-separate-delegation-and-supply-jabiya",
+          "order": 6,
+          "actId": "act-2",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "07-administrative-transition-damascus",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-stone-and-memory",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-civilian-refuge-and-property-records-mecca",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-fiscal-and-witness-records-kufa",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-finite-mint-and-market-reconciliation-damascus",
+          "order": 11,
+          "actId": "act-2",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-the-western-shore",
+          "order": 12,
+          "actId": "act-2",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "13-finite-battle-and-civilian-extraction-kufa",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-provincial-dispatch-and-provision-merv",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-finite-siege-and-trade-recovery-paykand",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "16-finite-relief-and-withdrawal-ramitin",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-tribute-and-household-receipts-bukhara",
+          "order": 17,
+          "actId": "act-3",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-civilian-record-and-refuge-balkh",
+          "order": 18,
+          "actId": "act-3",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-off-map-dispatch-and-bounded-accounts-balkh",
+          "order": 19,
+          "actId": "act-3",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-the-narrow-sea",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-bounded-river-trade-and-receipts-khwarazm",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-finite-siege-and-property-records-samarkand",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-finite-works-and-source-comparison-bukhara",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-finite-caravan-and-relief-tashkent",
+          "order": 24,
+          "actId": "act-4",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-finite-withdrawal-and-record-preservation-fergana",
+          "order": 25,
+          "actId": "act-4",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-finite-siege-withdrawal-and-supply-constantinople",
+          "order": 26,
+          "actId": "act-4",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-bounded-civilian-refuge-kufa",
+          "order": 27,
+          "actId": "act-4",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-competing-provincial-dispatches-damascus",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-bounded-camp-and-civilian-provision-merv",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "30-administrative-and-household-reception-kufa",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S34",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-the-last-crossing",
+          "order": 31,
+          "actId": "act-5",
+          "sliceId": "S7",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "32-civilian-records-and-final-perspective-fustat",
+          "order": 32,
+          "actId": "act-5",
+          "sliceId": "S35",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S8",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    },
+    {
+      "campaignId": "house-of-ali",
+      "proposalId": "f00011",
+      "path": "blocked/f00011-autoria-designada-the-river-remembers.md",
+      "targetEpisodeCount": 30,
+      "acts": [
+        {
+          "actId": "act-1",
+          "episodeIds": [
+            "01-witness-and-transition-records-medina",
+            "02-civilian-refuge-and-petition-basra",
+            "03-finite-battle-withdrawal-and-care-basra",
+            "01-the-kufan-hearth",
+            "05-off-map-dispatch-and-source-comparison-fustat"
+          ],
+          "sliceIds": [
+            "S8",
+            "S9",
+            "S10",
+            "S3",
+            "S11"
+          ]
+        },
+        {
+          "actId": "act-2",
+          "episodeIds": [
+            "02-a-cup-at-siffin",
+            "07-ceasefire-withdrawal-and-records-siffin",
+            "08-paired-protocol-delivery-siffin",
+            "09-witness-and-text-comparison-kufa",
+            "10-voluntary-household-relocation-harura"
+          ],
+          "sliceIds": [
+            "S4",
+            "S12",
+            "S13",
+            "S14",
+            "S15"
+          ]
+        },
+        {
+          "actId": "act-3",
+          "episodeIds": [
+            "11-finite-civilian-withdrawal-and-care-nahrawan",
+            "12-delegation-and-source-comparison-adhruh",
+            "03-the-sealed-copy",
+            "14-paired-protocol-and-negotiation-kufa",
+            "15-finite-distribution-and-receipts-kufa",
+            "16-ceremony-and-record-preservation-kufa"
+          ],
+          "sliceIds": [
+            "S16",
+            "S17",
+            "S5",
+            "S18",
+            "S19",
+            "S20"
+          ]
+        },
+        {
+          "actId": "act-4",
+          "episodeIds": [
+            "17-returning-household-and-workshop-supply-medina",
+            "18-mourning-and-witness-preservation-medina",
+            "19-off-map-succession-dispatch-medina",
+            "20-finite-household-departure-medina",
+            "21-two-way-correspondence-and-witnesses-mecca",
+            "22-delegation-reception-and-support-records-kufa",
+            "23-civilian-refuge-and-record-extraction-kufa"
+          ],
+          "sliceIds": [
+            "S21",
+            "S22",
+            "S23",
+            "S24",
+            "S25",
+            "S26",
+            "S27"
+          ]
+        },
+        {
+          "actId": "act-5",
+          "episodeIds": [
+            "24-finite-caravan-consignments-mecca",
+            "25-bounded-civilian-route-and-care-qadisiyya",
+            "26-source-comparison-and-voluntary-return-zubala",
+            "27-off-map-dispatch-and-route-replanning-qadisiyya",
+            "28-finite-camp-and-household-provision-karbala",
+            "29-separate-reception-and-record-escort-karbala",
+            "04-the-water-that-remains"
+          ],
+          "sliceIds": [
+            "S28",
+            "S29",
+            "S30",
+            "S31",
+            "S32",
+            "S33",
+            "S6"
+          ]
+        }
+      ],
+      "episodeSlices": [
+        {
+          "episodeId": "01-witness-and-transition-records-medina",
+          "order": 1,
+          "actId": "act-1",
+          "sliceId": "S8",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-civilian-refuge-and-petition-basra",
+          "order": 2,
+          "actId": "act-1",
+          "sliceId": "S9",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-finite-battle-withdrawal-and-care-basra",
+          "order": 3,
+          "actId": "act-1",
+          "sliceId": "S10",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "01-the-kufan-hearth",
+          "order": 4,
+          "actId": "act-1",
+          "sliceId": "S3",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "05-off-map-dispatch-and-source-comparison-fustat",
+          "order": 5,
+          "actId": "act-1",
+          "sliceId": "S11",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "02-a-cup-at-siffin",
+          "order": 6,
+          "actId": "act-2",
+          "sliceId": "S4",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "07-ceasefire-withdrawal-and-records-siffin",
+          "order": 7,
+          "actId": "act-2",
+          "sliceId": "S12",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "08-paired-protocol-delivery-siffin",
+          "order": 8,
+          "actId": "act-2",
+          "sliceId": "S13",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "09-witness-and-text-comparison-kufa",
+          "order": 9,
+          "actId": "act-2",
+          "sliceId": "S14",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "10-voluntary-household-relocation-harura",
+          "order": 10,
+          "actId": "act-2",
+          "sliceId": "S15",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "11-finite-civilian-withdrawal-and-care-nahrawan",
+          "order": 11,
+          "actId": "act-3",
+          "sliceId": "S16",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "12-delegation-and-source-comparison-adhruh",
+          "order": 12,
+          "actId": "act-3",
+          "sliceId": "S17",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "03-the-sealed-copy",
+          "order": 13,
+          "actId": "act-3",
+          "sliceId": "S5",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "14-paired-protocol-and-negotiation-kufa",
+          "order": 14,
+          "actId": "act-3",
+          "sliceId": "S18",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "15-finite-distribution-and-receipts-kufa",
+          "order": 15,
+          "actId": "act-3",
+          "sliceId": "S19",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "16-ceremony-and-record-preservation-kufa",
+          "order": 16,
+          "actId": "act-3",
+          "sliceId": "S20",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "17-returning-household-and-workshop-supply-medina",
+          "order": 17,
+          "actId": "act-4",
+          "sliceId": "S21",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "18-mourning-and-witness-preservation-medina",
+          "order": 18,
+          "actId": "act-4",
+          "sliceId": "S22",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "19-off-map-succession-dispatch-medina",
+          "order": 19,
+          "actId": "act-4",
+          "sliceId": "S23",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "20-finite-household-departure-medina",
+          "order": 20,
+          "actId": "act-4",
+          "sliceId": "S24",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "21-two-way-correspondence-and-witnesses-mecca",
+          "order": 21,
+          "actId": "act-4",
+          "sliceId": "S25",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "22-delegation-reception-and-support-records-kufa",
+          "order": 22,
+          "actId": "act-4",
+          "sliceId": "S26",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "23-civilian-refuge-and-record-extraction-kufa",
+          "order": 23,
+          "actId": "act-4",
+          "sliceId": "S27",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "24-finite-caravan-consignments-mecca",
+          "order": 24,
+          "actId": "act-5",
+          "sliceId": "S28",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "25-bounded-civilian-route-and-care-qadisiyya",
+          "order": 25,
+          "actId": "act-5",
+          "sliceId": "S29",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "26-source-comparison-and-voluntary-return-zubala",
+          "order": 26,
+          "actId": "act-5",
+          "sliceId": "S30",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "27-off-map-dispatch-and-route-replanning-qadisiyya",
+          "order": 27,
+          "actId": "act-5",
+          "sliceId": "S31",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "28-finite-camp-and-household-provision-karbala",
+          "order": 28,
+          "actId": "act-5",
+          "sliceId": "S32",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "29-separate-reception-and-record-escort-karbala",
+          "order": 29,
+          "actId": "act-5",
+          "sliceId": "S33",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        },
+        {
+          "episodeId": "04-the-water-that-remains",
+          "order": 30,
+          "actId": "act-5",
+          "sliceId": "S6",
+          "dossierStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending"
+        }
+      ],
+      "promotionSlice": "S7",
+      "executionStatus": "blocked pending complete architect design and required capabilities/native QA"
+    }
+  ],
+  "capabilitiesProposal": "i00003",
+  "technicalPilotProposal": "f00001",
+  "historicalPilotProposal": "f00002",
+  "compatibilityProposal": "s00001",
+  "designProposal": "d00002",
+  "englishProposal": "i00002",
+  "baselineDesignProposal": "d00001",
+  "scope": "278-episode odysseys; proposal structure assigned; dossier and execution gates pending"
+}

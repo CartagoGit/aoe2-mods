@@ -1,0 +1,1040 @@
+{
+  "factualIntro": {
+    "en": "In late 380, Theodosius entered Constantinople and ordered changes in church possession. Socrates places the arrival and transfer on separate November days; Marcellinus records the restoration he favored in December. These later accounts do not establish what every inhabitant believed. The following local service story is invented.",
+    "es-ES": "A finales de 380, Teodosio entró en Constantinopla y ordenó cambios en la posesión de iglesias. Sócrates sitúa la llegada y el traspaso en días distintos de noviembre; Marcelino fecha en diciembre la restauración que favorecía. Estos relatos posteriores no establecen qué creía cada habitante. La siguiente historia asistencial local es inventada."
+  },
+  "factualOutro": {
+    "en": "Both invented local services have been completed with their original recipients. This does not explain, approve or reverse the imperial change in church possession. The next episode concerns the council of 381 and the disputes that continued.",
+    "es-ES": "Ambos servicios locales inventados se han completado con sus destinatarios originales. Esto no explica, aprueba ni revierte el cambio imperial de posesión de iglesias. El siguiente episodio trata del concilio de 381 y de las disputas que continuaron."
+  },
+  "dramatizationNotice": {
+    "en": "The local service workers, recipients, outputs, households, courts and optional activities are fictional. Their voluntary care does not cause, reverse, justify or prove the imperial change in church possession, a legal title or anyone's convictions. Marcus is a fictional clerk; no quoted speech or authentic voice is supplied.",
+    "es-ES": "Los trabajadores, destinatarios, resultados, hogares, patios y actividades secundarias asistenciales son ficticios. Su ayuda voluntaria no causa, revierte, justifica ni acredita el cambio imperial en la posesión de iglesias, un título legal o las convicciones de nadie. Marco es un escribiente ficticio; no se aportan discursos citados ni una voz auténtica."
+  },
+  "mapPlan": {
+    "bbox": [
+      28.941,
+      41.009,
+      28.986,
+      41.036
+    ],
+    "terrainProfile": "constantinople",
+    "orientation": "north-up; Golden Horn north, Bosporus east, Propontis south, land approaches west; game camera calibration pending",
+    "projection": "WGS84, cosine-corrected longitude, square padding through the existing geographic frame helper",
+    "hubs": [
+      {
+        "id": "starting-court",
+        "centre": [
+          265.21,
+          283.45
+        ],
+        "lonLat": [
+          28.9718,
+          41.0145
+        ],
+        "name": {
+          "en": "The Clerk's Courtyard",
+          "es-ES": "El patio del escribiente"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "meal-reception",
+        "centre": [
+          254.92,
+          280.3
+        ],
+        "lonLat": [
+          28.9705,
+          41.0148
+        ],
+        "name": {
+          "en": "The Neighbors' Table",
+          "es-ES": "La mesa de los vecinos"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "materials-court",
+        "centre": [
+          136.17,
+          227.83
+        ],
+        "lonLat": [
+          28.9555,
+          41.0198
+        ],
+        "name": {
+          "en": "The Western Shelter Yard",
+          "es-ES": "El patio de refugio occidental"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "kit-court",
+        "centre": [
+          163.88,
+          260.36
+        ],
+        "lonLat": [
+          28.959,
+          41.0167
+        ],
+        "name": {
+          "en": "The Interior Shelter Yard",
+          "es-ES": "El patio de refugio interior"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "host-court",
+        "centre": [
+          236.71,
+          325.42
+        ],
+        "lonLat": [
+          28.9682,
+          41.0105
+        ],
+        "name": {
+          "en": "The Southern Host's Courtyard",
+          "es-ES": "El patio del anfitrión del sur"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "meal-direct-source",
+        "centre": [
+          322.21,
+          330.67
+        ],
+        "lonLat": [
+          28.979,
+          41.01
+        ],
+        "name": {
+          "en": "The Prepared Consignment",
+          "es-ES": "La remesa preparada"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "hearth-worksite",
+        "centre": [
+          195.54,
+          276.1
+        ],
+        "lonLat": [
+          28.963,
+          41.0152
+        ],
+        "name": {
+          "en": "The Shared Hearth",
+          "es-ES": "El fogón compartido"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "merchant-worksite",
+        "centre": [
+          83.12,
+          217.34
+        ],
+        "lonLat": [
+          28.9488,
+          41.0208
+        ],
+        "name": {
+          "en": "The Western Merchant",
+          "es-ES": "El mercader occidental"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "materials-source",
+        "centre": [
+          72.83,
+          248.82
+        ],
+        "lonLat": [
+          28.9475,
+          41.0178
+        ],
+        "name": {
+          "en": "The Timber Yard",
+          "es-ES": "El depósito de madera"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "kit-worksite",
+        "centre": [
+          239.08,
+          297.09
+        ],
+        "lonLat": [
+          28.9685,
+          41.0132
+        ],
+        "name": {
+          "en": "The Local Workshop",
+          "es-ES": "El taller local"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "host-worksite",
+        "centre": [
+          306.38,
+          299.19
+        ],
+        "lonLat": [
+          28.977,
+          41.013
+        ],
+        "name": {
+          "en": "The Host's Meeting Place",
+          "es-ES": "El lugar de encuentro con el anfitrión"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "western-junction",
+        "centre": [
+          148.04,
+          272.95
+        ],
+        "lonLat": [
+          28.957,
+          41.0155
+        ],
+        "name": {
+          "en": "The Western Turn",
+          "es-ES": "El desvío occidental"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "north-viewpoint",
+        "centre": [
+          116.38,
+          209.99
+        ],
+        "lonLat": [
+          28.953,
+          41.0215
+        ],
+        "name": {
+          "en": "The Upper Viewpoint",
+          "es-ES": "El mirador alto"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "south-viewpoint",
+        "centre": [
+          215.33,
+          341.16
+        ],
+        "lonLat": [
+          28.9655,
+          41.009
+        ],
+        "name": {
+          "en": "The Southern Viewpoint",
+          "es-ES": "El mirador sur"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "north-care-yard",
+        "centre": [
+          64.92,
+          162.77
+        ],
+        "lonLat": [
+          28.9465,
+          41.026
+        ],
+        "name": {
+          "en": "The Northern Supply Yard",
+          "es-ES": "El patio de suministros del norte"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-store",
+        "centre": [
+          92.62,
+          147.03
+        ],
+        "lonLat": [
+          28.95,
+          41.0275
+        ],
+        "name": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-reader",
+        "centre": [
+          96.58,
+          120.8
+        ],
+        "lonLat": [
+          28.9505,
+          41.03
+        ],
+        "name": {
+          "en": "The Reader's Shelter",
+          "es-ES": "El refugio del lector"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-reception",
+        "centre": [
+          124.29,
+          173.27
+        ],
+        "lonLat": [
+          28.954,
+          41.025
+        ],
+        "name": {
+          "en": "The Northern Reception Yard",
+          "es-ES": "El patio receptor del norte"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "western-guide",
+        "centre": [
+          41.17,
+          194.25
+        ],
+        "lonLat": [
+          28.9435,
+          41.023
+        ],
+        "name": {
+          "en": "The Waiting Guide",
+          "es-ES": "El guía que espera"
+        },
+        "radiusTiles": 3,
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      }
+    ],
+    "points": [
+      {
+        "id": "starting-court",
+        "lonLat": [
+          28.9718,
+          41.0145
+        ],
+        "tile": [
+          265.21,
+          283.45
+        ],
+        "name": {
+          "en": "The Clerk's Courtyard",
+          "es-ES": "El patio del escribiente"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "meal-reception",
+        "lonLat": [
+          28.9705,
+          41.0148
+        ],
+        "tile": [
+          254.92,
+          280.3
+        ],
+        "name": {
+          "en": "The Neighbors' Table",
+          "es-ES": "La mesa de los vecinos"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "materials-court",
+        "lonLat": [
+          28.9555,
+          41.0198
+        ],
+        "tile": [
+          136.17,
+          227.83
+        ],
+        "name": {
+          "en": "The Western Shelter Yard",
+          "es-ES": "El patio de refugio occidental"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "kit-court",
+        "lonLat": [
+          28.959,
+          41.0167
+        ],
+        "tile": [
+          163.88,
+          260.36
+        ],
+        "name": {
+          "en": "The Interior Shelter Yard",
+          "es-ES": "El patio de refugio interior"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "host-court",
+        "lonLat": [
+          28.9682,
+          41.0105
+        ],
+        "tile": [
+          236.71,
+          325.42
+        ],
+        "name": {
+          "en": "The Southern Host's Courtyard",
+          "es-ES": "El patio del anfitrión del sur"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "meal-direct-source",
+        "lonLat": [
+          28.979,
+          41.01
+        ],
+        "tile": [
+          322.21,
+          330.67
+        ],
+        "name": {
+          "en": "The Prepared Consignment",
+          "es-ES": "La remesa preparada"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "hearth-worksite",
+        "lonLat": [
+          28.963,
+          41.0152
+        ],
+        "tile": [
+          195.54,
+          276.1
+        ],
+        "name": {
+          "en": "The Shared Hearth",
+          "es-ES": "El fogón compartido"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "merchant-worksite",
+        "lonLat": [
+          28.9488,
+          41.0208
+        ],
+        "tile": [
+          83.12,
+          217.34
+        ],
+        "name": {
+          "en": "The Western Merchant",
+          "es-ES": "El mercader occidental"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "materials-source",
+        "lonLat": [
+          28.9475,
+          41.0178
+        ],
+        "tile": [
+          72.83,
+          248.82
+        ],
+        "name": {
+          "en": "The Timber Yard",
+          "es-ES": "El depósito de madera"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "kit-worksite",
+        "lonLat": [
+          28.9685,
+          41.0132
+        ],
+        "tile": [
+          239.08,
+          297.09
+        ],
+        "name": {
+          "en": "The Local Workshop",
+          "es-ES": "El taller local"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "host-worksite",
+        "lonLat": [
+          28.977,
+          41.013
+        ],
+        "tile": [
+          306.38,
+          299.19
+        ],
+        "name": {
+          "en": "The Host's Meeting Place",
+          "es-ES": "El lugar de encuentro con el anfitrión"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "western-junction",
+        "lonLat": [
+          28.957,
+          41.0155
+        ],
+        "tile": [
+          148.04,
+          272.95
+        ],
+        "name": {
+          "en": "The Western Turn",
+          "es-ES": "El desvío occidental"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "north-viewpoint",
+        "lonLat": [
+          28.953,
+          41.0215
+        ],
+        "tile": [
+          116.38,
+          209.99
+        ],
+        "name": {
+          "en": "The Upper Viewpoint",
+          "es-ES": "El mirador alto"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "south-viewpoint",
+        "lonLat": [
+          28.9655,
+          41.009
+        ],
+        "tile": [
+          215.33,
+          341.16
+        ],
+        "name": {
+          "en": "The Southern Viewpoint",
+          "es-ES": "El mirador sur"
+        },
+        "certainty": "fictional activity-site proposal within real peninsula; no excavated address"
+      },
+      {
+        "id": "north-care-yard",
+        "lonLat": [
+          28.9465,
+          41.026
+        ],
+        "tile": [
+          64.92,
+          162.77
+        ],
+        "name": {
+          "en": "The Northern Supply Yard",
+          "es-ES": "El patio de suministros del norte"
+        },
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-store",
+        "lonLat": [
+          28.95,
+          41.0275
+        ],
+        "tile": [
+          92.62,
+          147.03
+        ],
+        "name": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        },
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-reader",
+        "lonLat": [
+          28.9505,
+          41.03
+        ],
+        "tile": [
+          96.58,
+          120.8
+        ],
+        "name": {
+          "en": "The Reader's Shelter",
+          "es-ES": "El refugio del lector"
+        },
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "north-reception",
+        "lonLat": [
+          28.954,
+          41.025
+        ],
+        "tile": [
+          124.29,
+          173.27
+        ],
+        "name": {
+          "en": "The Northern Reception Yard",
+          "es-ES": "El patio receptor del norte"
+        },
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      },
+      {
+        "id": "western-guide",
+        "lonLat": [
+          28.9435,
+          41.023
+        ],
+        "tile": [
+          41.17,
+          194.25
+        ],
+        "name": {
+          "en": "The Waiting Guide",
+          "es-ES": "El guía que espera"
+        },
+        "certainty": "fictional optional activity-site proposal; not an excavated late-Roman address"
+      }
+    ],
+    "corridors": [
+      {
+        "id": "central-court",
+        "hubOrder": [
+          "starting-court",
+          "host-worksite"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "east-source",
+        "hubOrder": [
+          "host-worksite",
+          "meal-direct-source"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "east-return",
+        "hubOrder": [
+          "host-worksite",
+          "meal-reception"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "central-reception",
+        "hubOrder": [
+          "starting-court",
+          "meal-reception"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "ridge-hearth",
+        "hubOrder": [
+          "starting-court",
+          "hearth-worksite"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "ridge-junction",
+        "hubOrder": [
+          "hearth-worksite",
+          "western-junction"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "west-supply",
+        "hubOrder": [
+          "western-junction",
+          "materials-source"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "western-trade",
+        "hubOrder": [
+          "materials-source",
+          "merchant-worksite"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "western-reception",
+        "hubOrder": [
+          "merchant-worksite",
+          "materials-court"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "interior-kit",
+        "hubOrder": [
+          "hearth-worksite",
+          "kit-court"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "kit-source",
+        "hubOrder": [
+          "starting-court",
+          "kit-worksite"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "kit-to-hearth",
+        "hubOrder": [
+          "kit-worksite",
+          "hearth-worksite"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "southern-host",
+        "hubOrder": [
+          "starting-court",
+          "host-court"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "southern-view",
+        "hubOrder": [
+          "host-court",
+          "south-viewpoint"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-view",
+        "hubOrder": [
+          "materials-court",
+          "north-viewpoint"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-care-approach",
+        "hubOrder": [
+          "merchant-worksite",
+          "north-care-yard"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-care-loop",
+        "hubOrder": [
+          "north-care-yard",
+          "north-store"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-reader-link",
+        "hubOrder": [
+          "north-store",
+          "north-reader"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-reception-link",
+        "hubOrder": [
+          "north-reader",
+          "north-reception"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "north-return",
+        "hubOrder": [
+          "north-reception",
+          "north-viewpoint"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      },
+      {
+        "id": "guide-link",
+        "hubOrder": [
+          "western-guide",
+          "materials-source"
+        ],
+        "mode": "land",
+        "widthTiles": 6
+      }
+    ],
+    "terrainInstructions": "Golden Horn north; peninsula activities remain on south bank. Positive DSM samples alone cannot identify the bank or prove land.\n\nPreserve broad peninsula hills; do not convert building-inclusive DSM heights directly to ancient ground or flat AoE platforms.\n\nDo not copy later Theodosian walls, 537 Hagia Sophia, later monumental Anastasia, Ottoman fabric, modern quays or bridges.\n\nWork yards, receiving courts and paths are declared fiction. No gate, church parcel, ancient street width or local residence is authenticated by its marker.\n\nProtect the uncertain Yenikapi coastal zone; no mission uses the harbor as an authenticated380landing.\n\nFull-width candidate corridors still require dated feature/land checks, building footprints, recovery and game navigation.\n\nDetailed OSM current shoreline now supplements the generalized NaturalEarth control; the blank plot remains unclassified and neither source is a380shoreline. All21candidate buffers avoid the retained current line, but no land mask, footprints, slope or ancient-route proof follows.",
+    "geographicLayers": [
+      {
+        "assetId": "ne-odyssey-coastline",
+        "interpretation": "generalized modern orientation; not the coast of 380"
+      },
+      {
+        "assetId": "constantinople-modern-osm-coastline-geojson",
+        "interpretation": "detailed current mapped coastline; no land mask or ancient shoreline"
+      },
+      {
+        "assetId": "constantinople-modern-dsm-reference",
+        "interpretation": "modern surface heights including possible buildings and vegetation; not bare earth or ancient ground"
+      }
+    ],
+    "geometryStatus": "authored georeferenced candidate; modern coastline-line clearance checked separately; ancient shore, footprints, land mask, slopes and native navigation pending",
+    "asset": "docs/design/maps/imperial-church/odyssey/34-church-transfer-constantinople.svg",
+    "corridorStraightLengthsTiles": {
+      "central-court": 44.076,
+      "east-source": 35.236,
+      "east-return": 54.818,
+      "central-reception": 10.761,
+      "ridge-hearth": 70.057,
+      "ridge-junction": 47.604,
+      "west-supply": 78.986,
+      "western-trade": 33.119,
+      "western-reception": 54.077,
+      "interior-kit": 35.357,
+      "kit-source": 29.476,
+      "kit-to-hearth": 48.335,
+      "southern-host": 50.732,
+      "southern-view": 26.549,
+      "north-view": 26.644,
+      "north-care-approach": 57.525,
+      "north-care-loop": 31.86,
+      "north-reader-link": 26.527,
+      "north-reception-link": 59.338,
+      "north-return": 37.562,
+      "guide-link": 63.089
+    },
+    "activeAreaPolicy": "Nineteen authored local points and twenty-one finite walking connections cover work, reception and seven optional tasks. Keep the quiet unused frame as context; do not fill it with invented armies, random errands or authenticated ancient buildings. Inspect every full-width route before approval.",
+    "sourceBindings": [
+      {
+        "path": "docs/design/episode-plans/imperial-church/34-constantinople-world-plan.json",
+        "sha256": "9e93ba37d40f9fa81c5a7722e4a04aa307e59c7442f5bd2c51d779747ed4c178",
+        "meaning": "Original source retains full point geography/modern DSM samples, route qualifications, 45 authored screens and historical uncertainty."
+      },
+      {
+        "path": "docs/design/episode-plans/imperial-church/34-profile-ui-supplement.json",
+        "sha256": "5e35b496c3140045c580c1ba48db71af6015b50bb6651c0c2cb0347fd372528b"
+      },
+      {
+        "path": "docs/design/episode-plans/imperial-church/34-reference-profile-bindings.json",
+        "sha256": "a9921fc3d323d4242ab46fce53feaf6b9096545d3dcc6741da3dc64122b87c6d",
+        "meaning": "Retains source hashes, original slot IDs, full geographic records and route annotations outside the strict runtime profile."
+      }
+    ]
+  },
+  "historicalMaterialPolicyByEntity": {
+    "imperial-church.34-church-transfer-constantinople.meal-worker": "Fictional voluntary local person; not a named historical participant, collective confession, church parcel or witness to a private imperial/episcopal exchange. Keep the authored original identity and location; no substitution.",
+    "imperial-church.34-church-transfer-constantinople.shelter-worker": "Fictional voluntary local person; not a named historical participant, collective confession, church parcel or witness to a private imperial/episcopal exchange. Keep the authored original identity and location; no substitution.",
+    "imperial-church.34-church-transfer-constantinople.meal-recipient": "Fictional voluntary local person; not a named historical participant, collective confession, church parcel or witness to a private imperial/episcopal exchange. Keep the authored original identity and location; no substitution.",
+    "imperial-church.34-church-transfer-constantinople.household-a": "Fictional voluntary local person; not a named historical participant, collective confession, church parcel or witness to a private imperial/episcopal exchange. Keep the authored original identity and location; no substitution.",
+    "imperial-church.34-church-transfer-constantinople.household-b": "Fictional voluntary local person; not a named historical participant, collective confession, church parcel or witness to a private imperial/episcopal exchange. Keep the authored original identity and location; no substitution.",
+    "imperial-church.34-church-transfer-constantinople.meal-direct-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief.",
+    "imperial-church.34-church-transfer-constantinople.meal-shared-hearth-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief.",
+    "imperial-church.34-church-transfer-constantinople.meal-purchased-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief.",
+    "imperial-church.34-church-transfer-constantinople.shelter-materials-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief.",
+    "imperial-church.34-church-transfer-constantinople.shelter-local-kit-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief.",
+    "imperial-church.34-church-transfer-constantinople.shelter-rented-output": "Fictional stable original selected-service output, unavailable until its exact recipe has genuine post-commit work and generation. It is neither an excavated artifact, an imperial order, a church possession flag nor a change in belief."
+  },
+  "artDirection": {
+    "style": "Restrained late Roman civilian courtyards on the real European peninsula; worn wood, ordinary cloth, baskets and tools; ordinary people seen at human scale.",
+    "historicalControls": "No 413 Theodosian double walls, 537 Hagia Sophia fabric, later monumental Anastasia, modern quays or bridges, invented authenticated church interiors, miracle effects or confessional color coding. The mixed-period city composite must be filtered feature by feature.",
+    "referenceAssets": [
+      "byzantine-constantinople-composite",
+      "constantinople-modern-dsm-reference",
+      "constantinople-modern-osm-coastline-geojson"
+    ],
+    "productionApproved": false
+  },
+  "failureRecovery": {
+    "beforeCommit": "Preview is free. An unaffordable confirmation changes no account. A complete reserved plan can be cancelled before irreversible commitment, refunding only its escrow; compare and reserve again.",
+    "afterCommit": "Costs are paid once and methods remain locked. An incorrect destination or absent recipient creates no service receipt: direct the same living original output and recipients to the selected court and obtain fresh observations. No timer substitutes for work or arrival.",
+    "mainIdentityLoss": "Loss of a required original recipient, loss of the selected worker before recorded work, or destruction of a genuinely generated selected output causes defeat under the existing reference rules. No free resurrection or hidden grace period is promised. A worker lost after recorded work adds no new worker-return condition.",
+    "optionalIdentityLoss": "Only the corresponding optional fails; no main defeat, late reward or campaign restart. Main victory closes unfinished optionals.",
+    "resources": "At least one complete plan remains affordable in each difficulty with all optionals skipped. Optional stock and protected recovery cannot fund the main reservation; there is no gathering, regeneration, passive income or replacement purchase in this reference design.",
+    "nativeStatus": "All recovery descriptions still require native input/template, save/load and game checks; reference behavior alone is not an engine implementation."
+  },
+  "requiredCapabilities": [
+    {
+      "id": "composed-world-ledger",
+      "status": "reference model implemented; native composition, observations and save/load QA pending"
+    },
+    {
+      "id": "alternative-fulfillment-v3",
+      "status": "reference model implemented; native joint selector, escrow, work, generation and selected reception pending"
+    },
+    {
+      "id": "live-entity-presence",
+      "status": "reference model implemented; native fresh living presence observations and terminal batching pending"
+    },
+    {
+      "id": "geographic-land-corridors",
+      "status": "authored candidate geometry; ancient shoreline, footprints, slopes and pathfinding pending"
+    },
+    {
+      "id": "two-narrator-sequence",
+      "status": "EN/es-ES source text authored; editorial, native sequence/captions and localization QA pending"
+    },
+    {
+      "id": "optional-secondary-contracts",
+      "status": "strict reference contracts authored; native predicates, once-only rewards, failure presentation and save/load QA pending"
+    }
+  ],
+  "qaCases": [
+    "For each difficulty, enumerate all nine complete recipe selections and distinguish the 9/7/3 affordable rows without counting optional rewards.",
+    "For every affordable selection, test reserve, cancel before commitment and irreversible commitment with exact selected costs, preserving all isolated account balances.",
+    "Payment or shared attendance alone must not complete either selected service. Confirm selected work, genuine generation, correct output and original recipient reception separately.",
+    "At final evaluation require the selected output and original living recipients freshly present at that recipe's own court; reject wrong recipe, stale receipt, substitute or wrong court.",
+    "Observe simultaneous required loss and potential victory in both input orders; required defeat must win. Preserve valid recorded work when only its former worker is lost afterward.",
+    "Skip all seven secondaries and complete the main plan in each difficulty; separately test all-complete and the three authored portfolios with actual travel and reachable payment prefixes.",
+    "On Hard, shared-hearth plus rented shelter leaves 20 wood: repair cannot pay its 50-wood cost before suitable earned aid; no reward may pay its own prerequisite debit.",
+    "Verify all nineteen point centres, ten main circles and full widths of all twenty-one connections against terrain/building footprints; modern coastline clearance alone cannot pass land or ancient geography.",
+    "Save/load before and after reservation, cancellation, commitment, each work/generation/reception, each optional reward and final terminal evaluation.",
+    "Verify the 51 authored screen records in EN/es-ES, factual-to-personal opening, disputed dates, service choice and clear unaffordable/cancel/commit/recovery messages.",
+    "Complete this intermediate episode and recommend only the existing 381 council finale; do not write campaign completion or offer successor campaigns early."
+  ],
+  "playstyles": [
+    {
+      "id": "provision-first",
+      "optionalObjectives": [
+        "side-1",
+        "side-7"
+      ],
+      "costOfOpportunity": "Make the two distinct aid deliveries before paying the damaged-store repair where the remaining wood cannot fund it. This costs a separate northern circuit and attention before or alongside service work; the payment is never the repair itself.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    },
+    {
+      "id": "informed-movement",
+      "optionalObjectives": [
+        "side-5",
+        "side-4",
+        "side-6"
+      ],
+      "costOfOpportunity": "Visit the authored viewpoints and observe existing service destinations before choosing routes. Information takes movement and attention but creates no new road, speed bonus, ancient landmark or military advantage.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    },
+    {
+      "id": "household-source-care",
+      "optionalObjectives": [
+        "side-2",
+        "side-3"
+      ],
+      "costOfOpportunity": "Return the separate consenting optional household identities and compare the attributed source accounts. Neither action replaces a main recipient, decides the disputed date or changes church possession.",
+      "mainObjectivesUnchanged": true,
+      "historicalOutcomeUnchanged": true
+    }
+  ],
+  "gameplayIdentity": {
+    "problem": "Choose one meal method and one shelter method under finite joint accounts, then perform their actual selected work and receptions for distinct fictional original people.",
+    "decision": "Compare resource composition, local travel and optional information/aid before irreversible commitment. The 9/7/3 affordable sets provide increasingly constrained choices without a fabricated riot, clock or enemy army.",
+    "density": "Nineteen local places, six work/output methods, three shelter receiving courts, one meal court and seven distinct optional tasks; avoid making the giant frame a compulsory empty walking tour.",
+    "replay": "The historical possession change remains fixed. Replay varies the chosen pair, approach/return routes and the three combinable optional portfolios.",
+    "pacing": "Reflective civic episode between the Thessalonica law and the 381 council finale. Hard is an uncalibrated allocation/travel hypothesis; fewer workers and waiting are not advertised as the challenge.",
+    "limits": "No measured duration or native difficulty approval; conduct full-width navigation and per-difficulty playtests before mechanical historical authoring."
+  },
+  "editorialReviewNotes": {
+    "author": "gpt-6",
+    "date": "2026-10-25",
+    "status": "architect-authored candidate composition metadata; independent historical, editorial, geography and game review pending",
+    "sourceDates": "Preserve Socrates' separate November arrival/possession dates against Marcellinus' December account. The November 380 episode convention is not a resolved critical chronology.",
+    "narrator": "Marcus remains the same fictional imperial-clerk persona, about 46 in 380, with local observation/public reports and explicit limits; do not give him private palace access or Gregory's 381 farewell beforehand.",
+    "factVersusCare": "The sober common narrator attributes the historical change and disputed reports; Marcus' personal discomfort belongs to him. Helping fictional voluntary households authenticates neither creed nor legal custody.",
+    "screens": "Normalize the 45 original story records through the existing factory screen helper with unchanged IDs/text/narrators and trigger mapped to condition; preserve source records in the linked world plan. Append/order the six already-factory-formatted UI records by the 51-ID source order. This supplies semantic keys without numeric ID allocation or rewriting the captions.",
+    "composition": "This documentary metadata supplies the explicit intermediate v3 composer. Complete design-draft status is derived from a successfully generated episodes[] entry, never from the presence of this auxiliary file. Native, historical and playability approval remain separate."
+  },
+  "screenRoles": {
+    "title": "title",
+    "factualIntro": "fact-intro",
+    "handover": "handover",
+    "personalIntro": "personal-intro",
+    "factualOutro": "victory-fact",
+    "personalOutro": "victory-personal",
+    "defeat": "main-defeat",
+    "continuation": "continue-next"
+  },
+  "continuation": {
+    "nextEpisodeId": "29-council-and-final-perspective-constantinople",
+    "campaignComplete": false,
+    "sourceScreenId": "continue-next"
+  }
+}

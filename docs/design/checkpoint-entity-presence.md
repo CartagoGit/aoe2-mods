@@ -1,0 +1,9 @@
+# Checkpoint entity presence reference capability
+
+`checkpoint-entity-presence` is an opt-in, strict profile-v2 requirement for a simultaneous set of declared identities in their assigned zones. It uses the existing live spatial observation batch, monotonic sequence check, generation-causality check, and unique-identity cardinality rule. A fresh valid batch must be attached to the objective latch. The latch records that the checkpoint happened; later movement does not undo that intermediate objective.
+
+This requirement is valid only on an intermediate objective. The design validator rejects a checkpoint requirement when its objective directly governs a victory transition. It cannot be certified with an arrival ledger, a `record-predicate` action, or a boolean. Unknown identities, unknown zones, duplicates, stale batches, dead actors, lookalikes, and actors in the wrong destination fail closed. Existing state snapshots already retain the observation sequence; no new snapshot field or schema version is needed.
+
+`current-entity-presence` remains unchanged. At terminal victory, every latched same-or-required predecessor containing that legacy requirement is reevaluated against the fresh current observation. `checkpoint-entity-presence` is deliberately excluded from that terminal traversal, so the player may leave a completed intermediate gathering point and satisfy a later objective elsewhere. A later `current-entity-presence` still requires a fresh batch at victory. Defeat remains higher priority.
+
+The compiler preserves the explicit requirement kind in its reference IR. Native export continues to reject profiles that need live presence: this reference reducer does not establish an in-game observer or native capability. The implementation/design gate is i00006; historic and gameplay claims require separate evidence.

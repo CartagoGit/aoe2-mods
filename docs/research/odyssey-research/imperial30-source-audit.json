@@ -1,0 +1,37 @@
+{
+  "episodeId": "30-policy-reversal-alexandria",
+  "displayOrder": 28,
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "status": "architect source audit and authored dossier; independent historical approval pending",
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "locator": "Anonymous Historia Acephala X.15–XI.16; XII.17 as subsequent chronological control",
+      "actuallyRead": "Root directly read the selected complete paragraphs in the Robertson/NPNF online translation. Luna’s wider passage audit is preserved separately in imperial363-380-primary-audit.json.",
+      "supported": "The chronicle reports a new imperial order at Alexandria, local opposition over its applicability to Athanasius, a secret withdrawal to an unnamed villa near its New River, and a later letter and escorted return.",
+      "limits": "Athanasius-favorable anonymous chronicle, not a verified eyewitness autobiography. Names, officeholders and calendar formulas are source claims, not a surveyed local itinerary. Do not certify the villa, Dionysius church, New River coordinate or official fine as a gameplay resource. Paophi/Mechir dates and later consular year are distinct from translator civil-day conversions."
+    }
+  ],
+  "contextCandidates": [
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/26%2A.html",
+      "locator": "Ammianus XXVI.10.15–19",
+      "actuallyRead": "Root read the five selected paragraphs in Rolfe’s English translation, distinguishing the dated earthquake/sea account and Alexandrian ships-on-buildings report from the author’s later personal observation of a decayed ship near Mothone.",
+      "supported": "Ammianus reports an earthquake and sea withdrawal/return in365 and mentions Alexandria among affected places.",
+      "limits": "Literary disaster narrative, not an Alexandrian eyewitness statement by Ammianus, a surveyed flood extent, a precise city elevation model or a theological cause. Do not translate it into a compulsory dynamic flood, invented death clock, current shoreline or building-specific destruction without a full explicit design and capability review.",
+      "selectedAsMainGameplay": false,
+      "purpose": "Possible ordinary-life context only; architecture has not assigned this as a new scenario or required hazard."
+    }
+  ],
+  "voiceBoundary": "Marcus31–32 receives reports through fictional eastern clerical work. No episcopal raid, hidden villa, imperial audience or disaster eyewitness. Ordinary personal scenes require separate authored placement.",
+  "gameplayBoundary": "A source records soldiers searching the church after departure, not a documented neighborhood pitched battle or a bishop rescue. Any local support fiction must keep its own ordinary identities and avoid reenacting state religious violence as the player’s required conduct.",
+  "historicalApproval": false,
+  "nativeOrGameApproval": false,
+  "geographyCollection": "alexandria365-geography-audit.json",
+  "referenceImageDownload": {
+    "url": "https://static.cambridge.org/binary/version/id/urn%3Acambridge.org%3Aid%3Abinary%3A20210224132351629-0793%3AS0003598X20002422%3AS0003598X20002422_fig2.png",
+    "result": "HTTP403 in urllib.request on2026-10-15; no image imported or claimed as a local asset",
+    "sourceLicense": "Article CC BY4.0 read on publisher page; figure is an early Roman site plan, not a365 layout"
+  }
+}

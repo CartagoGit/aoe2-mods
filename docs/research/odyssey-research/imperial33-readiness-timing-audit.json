@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "33-accession-and-reassembly-sirmium",
+  "objectiveId": "o1",
+  "author": "gpt-6",
+  "date": "2026-10-18",
+  "status": "conditional scheduling hypotheses; no native, historical, terrain or playability approval",
+  "episodeSha256": "6db2d3819a43e437b55f8de47cab7a213f599e60d58ac02f9c127deb632e2d47",
+  "planSha256": "7e6030cca7cb81bea991554df599a219632388078105362de7d35260c220dd2f",
+  "assumptions": {
+    "movementTilesPerGameSecond": [
+      0.45,
+      0.6,
+      0.8
+    ],
+    "netResourcePerWorkerGameSecond": [
+      0.15,
+      0.2,
+      0.3
+    ],
+    "pathLengthFactors": [
+      1.0,
+      1.2
+    ],
+    "collectionSeconds": 30,
+    "economicSetupSeconds": 45,
+    "finalCoordinationSeconds": 45,
+    "provenance": "All numeric speed, rate, detour and overhead samples are architect hypotheses, not measured engine statistics or selected unit proxies.",
+    "routePolicy": "Shortest paths on authored bidirectional land corridor centerlines; start/end offset connector lengths added. Routes may need longer native paths.",
+    "parallelismPolicy": "Each staged actor can move independently while an entirely separate 12/9/6-worker pool gathers. Fixed integer food/wood allocation, no worker reassignment. All workers and their 45-second setup are assumptions; neither spawn nor resource placement is implemented.",
+    "paymentPolicy": "Exact stage debit read from o1 resource transactions; 45-second final coordination allowance assumes local payment/positioning can complete there. No optional rewards, protected recovery or borrowed phase-2 stock is spent."
+  },
+  "movements": [
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-1",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3",
+      "routeTiles": 173.514515
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-2",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3",
+      "routeTiles": 171.812205
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-3",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4",
+      "routeTiles": 273.240252
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-4",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4",
+      "routeTiles": 271.747712
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-5",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5",
+      "routeTiles": 373.64554
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-local-crew-6",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5",
+      "routeTiles": 372.061389
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-1",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-3",
+      "routeTiles": 283.733804
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-2",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-4",
+      "routeTiles": 140.332205
+    },
+    {
+      "entityId": "imperial-church.33-accession-and-reassembly-sirmium.original-supply-units-3",
+      "zoneId": "imperial-church.33-accession-and-reassembly-sirmium.destination-5",
+      "routeTiles": 234.723134
+    }
+  ],
+  "longestAuthoredRouteTiles": 373.64554,
+  "profiles": {
+    "easy": {
+      "deadlineGameSeconds": 1200,
+      "stagingDebit": {
+        "food": 240,
+        "wood": 180,
+        "gold": 0,
+        "stone": 0
+      },
+      "initialShortfall": {
+        "food": 171,
+        "wood": 134,
+        "gold": 0,
+        "stone": 0
+      },
+      "assumedSeparateGatherers": 12,
+      "samples": [
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 294.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": 128.612,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 294.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": 128.612,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 294.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": 128.612,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 502.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 377.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 502.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 377.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 502.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 377.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 657.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 223.667,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 564.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 657.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 179.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 564.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 657.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 7,
+            "wood": 5
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 134.333,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 564.532,
+          "strictlyInsideAssumedWindow": true
+        }
+      ]
+    },
+    "standard": {
+      "deadlineGameSeconds": 960,
+      "stagingDebit": {
+        "food": 240,
+        "wood": 180,
+        "gold": 0,
+        "stone": 0
+      },
+      "initialShortfall": {
+        "food": 180,
+        "wood": 140,
+        "gold": 0,
+        "stone": 0
+      },
+      "assumedSeparateGatherers": 9,
+      "samples": [
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 54.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -111.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 54.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -111.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": 54.677,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -111.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 262.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 137.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 262.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 137.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 262.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": 137.709,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 417.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 285.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 324.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 417.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 225.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 324.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 417.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 5,
+            "wood": 4
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 165.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 324.532,
+          "strictlyInsideAssumedWindow": true
+        }
+      ]
+    },
+    "hard": {
+      "deadlineGameSeconds": 720,
+      "stagingDebit": {
+        "food": 240,
+        "wood": 180,
+        "gold": 0,
+        "stone": 0
+      },
+      "initialShortfall": {
+        "food": 189,
+        "wood": 146,
+        "gold": 0,
+        "stone": 0
+      },
+      "assumedSeparateGatherers": 6,
+      "samples": [
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": -185.323,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -351.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": -185.323,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -351.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 860.323,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 905.323,
+          "deadlineMinusEstimateSeconds": -185.323,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.45,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 1026.388,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 1071.388,
+          "deadlineMinusEstimateSeconds": -351.388,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 22.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": -102.291,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 22.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": -102.291,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 652.743,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 697.743,
+          "deadlineMinusEstimateSeconds": 22.257,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.6,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 777.291,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 822.291,
+          "deadlineMinusEstimateSeconds": -102.291,
+          "strictlyInsideAssumedWindow": false
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 177.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.15,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 465.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 84.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 177.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.2,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 360.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 84.532,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.0,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 497.057,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 542.057,
+          "deadlineMinusEstimateSeconds": 177.943,
+          "strictlyInsideAssumedWindow": true
+        },
+        {
+          "movementTilesPerGameSecond": 0.8,
+          "netResourcePerWorkerGameSecond": 0.3,
+          "pathLengthFactor": 1.2,
+          "fixedWorkerAllocation": {
+            "food": 3,
+            "wood": 3
+          },
+          "movementSeconds": 590.468,
+          "economicSeconds": 255.0,
+          "estimatedReadinessSeconds": 635.468,
+          "deadlineMinusEstimateSeconds": 84.532,
+          "strictlyInsideAssumedWindow": true
+        }
+      ]
+    }
+  },
+  "limits": [
+    "This is not a feasible schedule certificate, lower bound, upper bound, game test or calibrated difficulty. Unmodelled operations can invalidate any inside-window sample.",
+    "Collection, payment, packing, interaction availability, collision/congestion, loaded/empty proxy speed, terrain slope, game pause, input order and observer latency need native measurement.",
+    "Available worker counts do not prove actual preplaced gatherers, accessible node yields, drop-site distances or rates. Main crew are separate from assumed gatherers.",
+    "All seven secondaries are skipped. Early repair/trade portfolios require their own paid route/economic schedules; benefits are not free starting stock.",
+    "A sample exactly at expiry fails: the reference deadline is strict and defeat wins the race.",
+    "Final untimed dispatch, optional circuits and fun/pacing are outside this first-phase estimate. No history, terrain, native or game status changes."
+  ]
+}
