@@ -2,10 +2,14 @@
 id: t00001
 title: "Measured time budget for the heavy alternative-fulfillment reference tests"
 kind: test
-status: ready
+status: in-progress
 type: proposal
 track: campaign-factory
 date: 2026-10-27
+last-transition-id: 3ae45d61-8b7b-4dbc-afe3-d8b35585ae45
+last-correlation-id: 3ae45d61-8b7b-4dbc-afe3-d8b35585ae45
+last-transition-from: ready
+last-transition-at: 2026-10-28T01:09:43.344Z
 ---
 
 # t00001 — Measured time budget for the heavy alternative-fulfillment reference tests
