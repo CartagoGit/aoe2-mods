@@ -38,6 +38,7 @@ import hashlib
 import json
 import struct
 import zlib
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -79,8 +80,10 @@ RASTER_PIXEL_IS_POINT = 2
 
 SUPPORTED_COMPRESSION = (1, 8)
 SUPPORTED_PREDICTORS = (1, 3)
+SUPPORTED_BITS = (16, 32)
 
 
+@lru_cache(maxsize=4)
 def _read_tiff(path):
     """Read the header and the first IFD of a TIFF file."""
     data = Path(path).read_bytes()
@@ -204,38 +207,52 @@ def _decode_tile(raw, endian, width, height, predictor, samples_per_pixel, bits_
     return rows
 
 
+@lru_cache(maxsize=16)
+def _tile_rows(path, index):
+    """Decode one tile once and keep its rows."""
+    tiff = _read_tiff(path)
+    tags = tiff["tags"]
+    endian = tiff["endian"]
+    data = tiff["data"]
+    compression = _scalar(tags, TAG_COMPRESSION, 1)
+    predictor = _scalar(tags, TAG_PREDICTOR, 1)
+    samples = _scalar(tags, TAG_SAMPLES_PER_PIXEL, 1)
+    bits = _scalar(tags, TAG_BITS_PER_SAMPLE, 8)
+    tile_width = _scalar(tags, TAG_TILE_WIDTH)
+    tile_length = _scalar(tags, TAG_TILE_LENGTH)
+    offsets = tags[TAG_TILE_OFFSETS]
+    counts = tags[TAG_TILE_BYTE_COUNTS]
+    raw = data[offsets[index]:offsets[index] + counts[index]]
+    if compression == 8:
+        raw = zlib.decompress(raw)
+    rows = _decode_tile(raw, endian, tile_width, tile_length, predictor, samples, bits)
+    return tuple(tuple(row) for row in rows)
+
+
 def read_pixel(path, column, row):
     """Read one float sample from a tiled or stripped TIFF."""
+    path = str(path)
     tiff = _read_tiff(path)
-    endian = tiff["endian"]
     tags = tiff["tags"]
     width = _scalar(tags, TAG_IMAGE_WIDTH)
     length = _scalar(tags, TAG_IMAGE_LENGTH)
     compression = _scalar(tags, TAG_COMPRESSION, 1)
     predictor = _scalar(tags, TAG_PREDICTOR, 1)
-    samples = _scalar(tags, TAG_SAMPLES_PER_PIXEL, 1)
-    bits = _scalar(tags, TAG_BITS_PER_SAMPLE, 8)
     if compression not in SUPPORTED_COMPRESSION:
         raise ValueError(f"unsupported compression {compression}")
     if predictor not in SUPPORTED_PREDICTORS:
         raise ValueError(f"unsupported predictor {predictor}")
     if column < 0 or column >= width or row < 0 or row >= length:
         raise ValueError(f"sample ({column},{row}) is outside the raster")
-    data = tiff["data"]
 
     if TAG_TILE_OFFSETS in tags:
         tile_width = _scalar(tags, TAG_TILE_WIDTH)
         tile_length = _scalar(tags, TAG_TILE_LENGTH)
-        offsets = tags[TAG_TILE_OFFSETS]
-        counts = tags[TAG_TILE_BYTE_COUNTS]
         tiles_across = (width + tile_width - 1) // tile_width
         tile_x = column // tile_width
         tile_y = row // tile_length
         index = tile_y * tiles_across + tile_x
-        raw = data[offsets[index]:offsets[index] + counts[index]]
-        if compression == 8:
-            raw = zlib.decompress(raw)
-        rows = _decode_tile(raw, endian, tile_width, tile_length, predictor, samples, bits)
+        rows = _tile_rows(path, index)
         return rows[row % tile_length][column % tile_width]
 
     if TAG_STRIP_OFFSETS in tags:
@@ -243,11 +260,13 @@ def read_pixel(path, column, row):
         offsets = tags[TAG_STRIP_OFFSETS]
         counts = tags[TAG_STRIP_BYTE_COUNTS]
         strip = row // rows_per_strip
-        raw = data[offsets[strip]:offsets[strip] + counts[strip]]
+        raw = tiff["data"][offsets[strip]:offsets[strip] + counts[strip]]
         if compression == 8:
             raw = zlib.decompress(raw)
-        rows = _decode_tile(raw, endian, width, min(rows_per_strip, length - strip * rows_per_strip),
-                            predictor, samples, bits)
+        rows = _decode_tile(raw, tiff["endian"], width,
+                            min(rows_per_strip, length - strip * rows_per_strip),
+                            predictor, _scalar(tags, TAG_SAMPLES_PER_PIXEL, 1),
+                            _scalar(tags, TAG_BITS_PER_SAMPLE, 8))
         return rows[row % rows_per_strip][column]
 
     raise ValueError("the raster has neither strips nor tiles")
@@ -255,7 +274,7 @@ def read_pixel(path, column, row):
 
 def georeference(path):
     """The georeference of the raster, read and not interpreted."""
-    tiff = _read_tiff(path)
+    tiff = _read_tiff(str(path))
     tags = tiff["tags"]
     if TAG_MODEL_TRANSFORMATION in tags:
         raise ValueError("a rotated or skewed raster needs an explicit adapter")
@@ -322,7 +341,7 @@ def extract_window(path, *, column_start, column_end, row_start, row_end,
     scale_x, scale_y = reference["modelPixelScaleTag"][0], reference["modelPixelScaleTag"][1]
     provenance = {
         "localSourcePath": str(path),
-        "sourceSha256": _read_tiff(path)["sha256"],
+        "sourceSha256": _read_tiff(str(path))["sha256"],
         "columnOffset": column_start,
         "rowOffset": row_start,
         "width": width,
@@ -340,8 +359,9 @@ def extract_window(path, *, column_start, column_end, row_start, row_end,
         provenance.update(extra_provenance)
     georef = {
         "rasterInterpretation": (
-            "declared %s anchor; GeoKey 1025 = %s"
-            % ("PixelIsPoint" if sample_anchor == "centre" else "PixelIsArea",
+            "declared anchor '%s' (%s); GeoKey 1025 = %s"
+            % (sample_anchor,
+               "PixelIsPoint" if sample_anchor == "centre" else "PixelIsArea",
                reference["rasterTypeGeoKey"])
         ),
         "modelTiepointTag": reference["modelTiepointTag"],
@@ -392,7 +412,7 @@ def verify_extraction(grid, path, *, column_start, row_start):
         "sampleCount": len(values),
         "mismatches": mismatches,
         "rangeMetres": [min(values), max(values)] if values else None,
-        "sourceSha256": _read_tiff(path)["sha256"],
+        "sourceSha256": _read_tiff(str(path))["sha256"],
         "method": "every extracted value re-read from the source raster and compared exactly",
     }
 
