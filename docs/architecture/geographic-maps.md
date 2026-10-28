@@ -196,3 +196,18 @@ a one-level difference is not certified walkable. The remaining S2 acceptance �
 extraction for real regional elevation rasters, a dated regional land/water layer, native
 bridge and ferry operations and the AoE2 camera calibration — is untouched by this module
 and stays pending.
+
+## Review evidence for this slice
+
+The slice is submitted for an independent verdict. The two acceptance clauses are mapped
+to what this slice delivers and what it does not, so a reviewer can judge the delivery
+without reading the whole repository.
+
+| Acceptance clause | Delivered here | Still outstanding |
+|---|---|---|
+| *Rasterizar bbox/controles 300–400 con orientación calibrada, raster de relieve, footprint y puentes; no transformar una ruta que cruza agua en tierra ficticia* | the 300–400 frame check, the metre-height raster candidate, the height-to-native-level compression with slope continuity and cliff detection, the unit footprint, the crossing discipline that refuses a land route over undocumented water, and the bridge that keeps the dated terrain | orientation calibrated in AoE2, verified extraction for a real regional elevation raster, a dated regional land/water layer, and native bridge and ferry objects |
+| *Fixture real de carga/desembarco, barco perdido, ruta alternativa, cliff impenetrable; perfcaps de catalog.json* | the five fixtures — `loading`, `disembarking`, `lost-boat`, `alternative-route`, `impassable-cliff` — each built and mechanically audited, the declared loss policy applied to the manifest, and the performance caps read from the catalogue with an unclassified unit type refused | the native boarding, disembarkation and carrier-loss operations, which the adapter does not have, and the real observations they need |
+
+The delivered work is the fixture and policy contract, not a game result. The native
+transport operation the acceptance clause assumes does not exist in the adapter, and this
+slice registers that gap instead of emulating it.
