@@ -17,8 +17,10 @@ Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y l
 | i00005 Presencia actual | Arquitecto | S1 de referencia revisado; observación/exportación/pruebas nativas siguen sus slices pendientes |
 | i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
 | i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión aprobada; S2 referencia optativa v3 integrada en 4ac57b8f y aprobación independiente publicada en 66468212; S3 nativo/UI/motor pendiente de i00003 y s00001. El estudio económico por sí solo no implementa ningún slice |
+| i00013 Cuentas finitas authored | Luna, con revisión GPT-6.1-Sol | S1 `done`; S2 producto `688a1203` integrado en `cf84b92f`, gate y revisión técnica conformes; falta submit/aprobación formal. S3 pendiente |
+| i00015 Vista geográfica privada | Root S1/S3; MiniMax S2 | S1 `done`, aprobación integrada `e513c000`; S2 asignada al paquete cerrado de once archivos. Plan real sin autorización; S3 pendiente |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
-| d00002 Odiseas extensas | Arquitecto | S1 arquitectura común `done`; S2–S10 una campaña cada uno y S11 consolidación/traspaso siguen `pending` según estado recuperado |
+| d00002 Odiseas extensas | Arquitecto | S1 `done`; S2, S3 y S11 en revisión; S4–S10 con cambios solicitados. Ninguna aprobación histórica o de motor se infiere de los borradores |
 
 La [matriz de asignaciones](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md), las propuestas completas y los dossiers individuales gobiernan cada episodio. No se delegan decisiones pendientes de historia, nivelación, terreno ni contratos al agente de contenido.
 
@@ -30,7 +32,7 @@ La [matriz de asignaciones](MINIMAX-M3.1-DESIGN-ASSIGNMENTS.md), las propuestas 
 | f00002 | Piloto narrativo de Puente Milvio | Tras el piloto técnico y capacidades nativas; no abre automáticamente una saga |
 | f00003 | The Eagle and the Cross | 34 selecciones y dossiers (órdenes 1–34); Constantinopla380 es ID 34, orden33/S37 |
 | f00004 | Embers of the Covenant | 30 selecciones y 30 dossiers sin aprobación histórica, de terreno ni juego |
-| f00005 | Keepers of the Unbroken Word | 30 selecciones; ningún dossier ampliado completo |
+| f00005 | Keepers of the Unbroken Word | 30 selecciones; un dossier Yavneh en borrador, 29 pendientes; sin aprobación histórica |
 | f00006 | The Keys of the Eternal City | 32 selecciones; ningún dossier ampliado completo |
 | f00007 | Beyond the Golden Gate | 32 selecciones; ningún dossier ampliado completo |
 | f00008 | Beneath the Desert Stars | 30 selecciones; ningún dossier ampliado completo |
