@@ -2,14 +2,16 @@
 id: t00001
 title: "Measured time budget for the heavy alternative-fulfillment reference tests"
 kind: test
-status: review
+status: done
 type: proposal
 track: campaign-factory
 date: 2026-10-27
-last-transition-id: aeb99f4a-86f1-416f-951e-34a81367eec9
-last-correlation-id: aeb99f4a-86f1-416f-951e-34a81367eec9
-last-transition-from: in-progress
-last-transition-at: 2026-10-28T01:10:45.453Z
+last-transition-id: 908b4bb9-c877-4a1b-9d8e-90145195d149
+last-correlation-id: 908b4bb9-c877-4a1b-9d8e-90145195d149
+last-transition-from: review
+last-transition-at: 2026-11-05T01:00:52.018Z
+shipped-in:
+  - "07364f832f8d"
 ---
 
 # t00001 — Measured time budget for the heavy alternative-fulfillment reference tests
@@ -35,16 +37,18 @@ The shared validation gate went red for every agent in this workspace on 27 Octo
 - global_gate: e2e
 
 ### S1 — Measured time budget for the two heavy reference tests
-- **Status**: review
+- **Status**: done
 - **Files**: `tests/alternative-fulfillment/reference/alternative-fulfillment.test.ts`, `docs/qa/alternative-fulfillment/reference-budget.md`
 - **Gate**: e2e
 - acceptance:
   - "Record the measured uncontended baseline of the 95-row portfolio test from the architect's own archived validation logs (23.234s, 25.516s and 28.258s) and the observed contended measurement (39.030s at load 19 on 10 cores), and state that the current explicit 30s budget is already 92% consumed before any contention."
   - "Give the 95-row portfolio test an explicit budget that keeps a proportional margin over the worst recorded uncontended baseline and tolerates the documented parallel workflow, and give the lifecycle-checkpoint test the same explicit budget its sibling already uses instead of Bun's 5s implicit default, without touching any assertion, expectation, row count, matrix coverage or fixture."
   - "Re-run the affected test file and the full gate, record the exact commands and outcomes, and state the remaining limits: this does not make the workspace safe for unbounded parallel heavy gates, does not certify a performance improvement, and does not authorize skipping or relaxing any check."
-- review-state: in_review
-- review-implementer: minimax-m3.1-flash-preview
 - shipped-in: `07364f832f8d`
+- review-state: done
+- review-implementer: minimax-m3.1-flash-preview
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 07364f832f8d, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Delivery reference-budget.md records all stated measurements; subsequent7184dfb corrects92% to94.2% and the2x claim. No performance approval inferred. (2) First-parent delivery diff changes exactly two timeout operands to60000 and30000; assertions,95rows,fixtures unchanged. (3) Independent official delendai validate exit0,164tests/2159assertions includes affected file and full gate; documentation states all three limitations. Logs and… — Independent delivering-state diff review plus later correction7184dfb. Official gate passed164/164,2159assertions. Evidence /home/cartago/_projects/games/aoe2-mods/.cache/artifacts/independent-review-resumption-20261105/. No engine or performance approval.
 
 ## acceptance
 
