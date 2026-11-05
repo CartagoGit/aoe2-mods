@@ -142,6 +142,15 @@ def wiki(campaign, episode):
         "## Main objectives and individual contracts",
         "",
     ]
+    if "economyProfile" in episode:
+        if episode["economyProfile"] != "authored-finite-accounts-v1":
+            raise ValueError(f"{episode['id']}: unsupported economyProfile {episode['economyProfile']!r}")
+        base += [
+            "## Explicit finite difficulty accounts",
+            "",
+            "This source-only model uses authored spendable stock plus an explicitly finite gatherable bank. Protected recovery stock and once-only optional rewards are segregated and excluded from the main-accessible figure. The main margin is spendable + finite bank − mandatory payments − the replacement planning floor. Optional affordability uses the materialized task payments and rewards, with payment before reward. The witness assumes all authored supply can be collected and optional spatial tasks succeed; native collection, timing and playability remain unverified.",
+            "",
+        ]
     for o in episode["objectivePlan"]:
         base += [
             f"### {o['id']} / {o['phase']}",

@@ -13,6 +13,14 @@ audit_entry = continuity["audit_entry"]
 
 
 def audit_dossier(episode, campaign=None, baseline=None, projection_context=None):
+    if "economyProfile" in episode:
+        profile_marker = runpy.run_path(str(Path(__file__).with_name("authored_difficulty_accounts.helper.py")))["PROFILE"]
+        if episode.get("economyProfile") != profile_marker:
+            return [f"{episode.get('id', 'unknown-episode')}: unsupported economyProfile {episode.get('economyProfile')!r}"]
+        if "designProfile" in episode:
+            return [f"{episode.get('id', 'unknown-episode')}: economyProfile is not supported with designProfile"]
+    elif any("economyProfile" in row for row in episode.get("difficulty", {}).values()):
+        return [f"{episode.get('id', 'unknown-episode')}: difficulty economyProfile marker is not valid"]
     if "designProfile" in episode:
         if episode.get("designProfile") != "alternative-fulfillment-v3":
             return [f"{episode.get('id', 'unknown-episode')}: unsupported designProfile {episode.get('designProfile')!r}"]

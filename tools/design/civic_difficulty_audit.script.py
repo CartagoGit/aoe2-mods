@@ -9,6 +9,7 @@ import datetime
 import hashlib
 import json
 import math
+import runpy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -297,6 +298,31 @@ def _v3_episode_audit(campaign, episode):
 def episode_audit(campaign, episode):
     if not isinstance(episode, dict):
         raise ValueError(f"{campaign}: episode must be an object")
+    if "economyProfile" in episode:
+        if episode.get("economyProfile") != "authored-finite-accounts-v1":
+            raise ValueError(f"{campaign}/{episode.get('id')}: unsupported economyProfile {episode['economyProfile']!r}")
+        if "designProfile" in episode:
+            raise ValueError(f"{campaign}/{episode.get('id')}: v3 dossier cannot carry economyProfile")
+        helper = runpy.run_path(str(Path(__file__).with_name("authored_difficulty_accounts.helper.py")))
+        finite = runpy.run_path(str(Path(__file__).with_name("finite_allocation.helper.py")))
+        helper["verify_episode"](episode, finite["optional_states"], lambda count: (1 << count) - 1)
+        record = _legacy_episode_audit(campaign, episode)
+        record["economyModel"] = {
+            "profile": "authored-finite-accounts-v1",
+            "accessibleDefinition": "spendable plus explicitly authored finite gatherable bank",
+            "excludedAccounts": ["protected recovery", "once-only optional reward reserve"],
+            "mainMarginDefinition": "spendable + finite bank - mandatory payments - replacement planning floor",
+            "optionalAnalysis": "actual built task costs and once-only rewards; payment precedes reward; finite witness assumes successful spatial tasks and collectible bank",
+            "nativeCalibration": "pending; static financial witness only",
+        }
+        record["difficulty"] = {
+            level: {**profile, "protectedRecoveryStock": episode["difficulty"][level]["protectedRecoveryStock"],
+                    "supplyMargins": episode["difficulty"][level]["supplyMargins"]}
+            for level, profile in record["difficulty"].items()
+        }
+        return record
+    if any("economyProfile" in row for row in episode.get("difficulty", {}).values()):
+        raise ValueError(f"{campaign}/{episode.get('id')}: economyProfile marker is only valid on dossier")
     if "designProfile" not in episode:
         return _legacy_episode_audit(campaign, episode)
     if episode["designProfile"] != V3_DESIGN_PROFILE:
