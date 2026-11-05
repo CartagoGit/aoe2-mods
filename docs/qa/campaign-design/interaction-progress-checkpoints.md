@@ -96,3 +96,14 @@ At the pinned `b6dff66a` product cut, the catalogue remains **64 draft dossiers 
 
 
 The subsequent `b4bdc4ee` cut adds Luna’s reference-only optional-cost projection, product1bed3ac, with bounded independent conformity and the official gate. Its real factory path now retains repair30W/trade20G/guest20F instead of silently dropping the opt-in field. Four focused and126 design tests passed; default outputs for all eight optional kinds remain byte-identical. Validate158/2,138 passed. Raw original focused/design outputs were not retained; successful gate logs and the single publication JSON/exit codes are retained. This is no native hospitality support, new complete dossier, counted screen or engine observation. All historical counters at b6dff66a remain unchanged at b4bdc4ee.
+
+
+## Observation 005 — infrastructure acceptance and bounded implementation
+
+Source/evidence cut `3c603d81` → `cf84b92f` (5 November 2026); the checkpoint-writing commit is excluded. This is an integrated repository interval, not a measured user-message boundary, quota sample or throughput forecast. Catalogue counters stay 65 draft dossiers / 213 selections missing dossiers / 2689 bilingual screens / 405 secondaries / 216 main objectives / 50 registered resources. Zero new dossiers, historical native deliveries or game observations are credited in this interval.
+
+Independent formal acceptance of startup repair x00001/S1 and private-geographic architecture i00015/S1 landed in `e513c000`. The private plan remains unauthorized; a fresh MiniMax session received the closed eleven-file S2 implementation, now in its own official unit. That assignment is work in progress, not an integrated product. The [independent Jerusalem geometry report](jerusalem-geographic-plan-review-20261105/review.md) reproduces complete modern raster coverage, continuous conservative corridor envelopes and the bounded store correction; it proves neither ancient terrain nor engine navigation.
+
+Luna product `688a1203` landed in `cf84b92f` after the official frozen-install/validate gate. GPT-6.1-Sol independently confirmed fixes for derived-account overflow and false acceptance artifacts, nine focused tests and 31 executed cases, with all65default dossiers/wiki/SVGs preserved. The [consolidated report](authored-difficulty-accounts-review.md) distinguishes technical conformity from pending formal S2 submission/approval and future S3 closure. A workflow refusal requiring that future report is preserved rather than called a successful submit. This is one reusable factory capability, not 31 historical scenarios or a campaign.
+
+Root retains the real plan authorization and next campaign decisions; MiniMax implements the accepted geographic packet; Luna's finance implementation is landed and awaits formal workflow closure; a different model reviews each product. No reliable per-model cost, remaining quota or interactions-to-completion estimate is available from these heterogeneous cuts.

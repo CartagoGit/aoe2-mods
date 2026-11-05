@@ -1,0 +1,18 @@
+{
+  "command": [
+    "delendai",
+    "work",
+    "publish",
+    "--proposal=i00013",
+    "--slice=S2",
+    "--agent=gpt-6-luna"
+  ],
+  "workspace": "/home/cartago/_projects/games/aoe2-mods",
+  "unitCheckout": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-luna-i00013-S2",
+  "workRef": "wip/gpt-6-luna/implement/i00013-S2-g1/explicit-finite-difficulty-accounts",
+  "productCommitBeforePublish": "688a120307490867d7dfb124034f7fb0eb092392",
+  "startedAtUtc": "2026-11-05T07:47:17.028571+00:00",
+  "agentId": "gpt-6-luna",
+  "exitCode": 0,
+  "finishedAtUtc": "2026-11-05T07:48:38.438310+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "productCommit": "688a120307490867d7dfb124034f7fb0eb092392",
+  "maxSafeInteger": 9007199254740991,
+  "combinedFood": 9007199254741548,
+  "commonValidatorErrors": [
+    "01-milvian-bridge: authored finite account audit failed: resource total overflows safe integer: food"
+  ],
+  "civic": {
+    "accepted": false,
+    "error": "resource total overflows safe integer: food"
+  },
+  "expected": "reject combined derived-account overflow before optional analysis"
+}
