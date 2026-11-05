@@ -2,10 +2,18 @@
 id: x00001
 title: "Repair DelendAI startup validation expectations and the release branch reference"
 kind: fix
-status: ready
+status: review
 type: proposal
 track: general
 date: 2026-11-05
+shipped-in:
+  - "337b792867c4345d36b1973ad9caf52cff53e0f6"
+  - "4c008edcdc7de9c36f22f72d345288981a54bebe"
+  - "575617c8c7db1441d78bd6beb8bba88de88ec4e2"
+last-transition-id: b20f50fa-af17-4419-9b3b-9402a89ed06b
+last-correlation-id: b20f50fa-af17-4419-9b3b-9402a89ed06b
+last-transition-from: in-progress
+last-transition-at: 2026-11-05T01:39:25.777Z
 ---
 
 # x00001 — Repair DelendAI startup validation expectations and the release branch reference
@@ -27,9 +35,12 @@ The supplied 5 November boot log reports eight absent official Git guards, missi
 - global_gate: type
 
 ### S1 — Correct the startup contract and verify official guards
-- **Status**: pending
-- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/ready/fixes/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
+- **Status**: review
+- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/review/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
 - **Gate**: type
+- shipped-in: `6c5d6d0b1d03`
+- review-state: in_review
+- review-implementer: gpt-6
 
 ## acceptance
 
