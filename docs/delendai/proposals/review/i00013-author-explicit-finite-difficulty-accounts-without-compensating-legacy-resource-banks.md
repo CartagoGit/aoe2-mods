@@ -77,7 +77,7 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
   - "Different actual model reviews the exact implementation and complete default compatibility evidence; bun run validate and official gate pass. Do not self-approve."
   - "A separately designed jewish-tradition03 candidate may use B0 and explicit accounts only after acceptance; every route, objective, screen, timing and historical/source decision remains its own architect packet. No canonical dossier count or historical-authoring unlock is implied by this infrastructure."
 - review-state: in_review
-- review-implementer: gpt-6-luna
+- review-implementer: gpt-6
 
 ## acceptance
 
