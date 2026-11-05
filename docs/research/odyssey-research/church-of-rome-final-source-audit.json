@@ -1,0 +1,133 @@
+{
+  "campaignId": "church-of-rome",
+  "auditScope": "episodeSelection orders 21–32; research-only, no design approval",
+  "architectApproval": false,
+  "episodes": [
+    {
+      "id": "21-exile-relief-and-copying-cherson", "orderAtCollection": 21,
+      "candidateUrl": "https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html",
+      "consultedUrls": ["https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html"],
+      "coverageActuallyRead": "Allen and Neil, OUP 2002 excerpt, section 7, paragraphs 59–62; the text explicitly cites the underlying trial documents and notes. Not the full book or full source dossier.",
+      "supportedClaim": "Martin was arrested and transported to Constantinople in 653, tried in 654, sentenced to death and commuted to exile in Chersonese; the authors report arrival in May of that year.",
+      "chronologyAndGeography": "The excerpt gives two possible death dates, 16 September 655 or 13 April 656, and says the evidence does not settle which. Selection's 655/656 qualification is appropriate. Chersonese is the Crimean Cherson, not modern Kherson; no exact exile residence or route is established here.",
+      "limitsAndBias": "Modern scholarly synthesis based on documents; authors call the hagiographical Life sparse on concrete trial details. It supports exile/death, not a local relief network, copying operation, or the named map footprint."
+    },
+    {
+      "id": "22-finite-material-records-rome-ostia", "orderAtCollection": 22,
+      "candidateUrl": "https://www.newadvent.org/cathen/04295a.htm",
+      "consultedUrls": ["https://upload.wikimedia.org/wikipedia/commons/2/23/The_book_of_the_popes_%28Liber_pontificalis%29_I-_%28IA_cu31924006163897%29.pdf", "https://www.newadvent.org/cathen/04295a.htm"],
+      "coverageActuallyRead": "Prior audit read a search-extracted passage attributed to Liber Pontificalis, Vita Vitaliani XI and checked the linked scan; the scan's full passage was not read directly. New Advent encyclopedia is secondary; prior audit notes its account is not primary.",
+      "supportedClaim": "A Vita Vitaliani account is reported to say Constans II reached Rome by way of Naples, was met by Vitalian at the sixth milestone, stayed twelve days, and removed bronze ornaments including Pantheon roof tiles.",
+      "chronologyAndGeography": "Rome visit dated 663. The exact quantity and later destination of all removed metal are not established by the consulted excerpt. The episode's Rome/Ostia geography does not establish the metal's subsequent transport route.",
+      "limitsAndBias": "The Liber Pontificalis is a Roman papal biography and frames the emperor's conduct hostilely. The earlier New Advent citation is an older secondary encyclopedia and warns against the exaggerated claim that every roof tile was taken. Primary quotation was encountered via search excerpt, not full-source reading; lower confidence pending direct passage verification."
+    },
+    {
+      "id": "23-delegation-and-document-escort-constantinople", "orderAtCollection": 23,
+      "candidateUrl": "https://www.newadvent.org/fathers/3813.htm",
+      "consultedUrls": ["https://www.newadvent.org/fathers/3813.htm"],
+      "coverageActuallyRead": "Acts of Constantinople III: prior audit read Sessions I, IV and XIII, including Agatho's letter and condemnation of Honorius; current check opened the letter and council framing at lines 14–32 and the venue/context in the acts.",
+      "supportedClaim": "The council convened at Constantinople in 680–681; Roman legates and Agatho's synodal letter participated. The acts debate wills/operations and condemn Honorius in Session XIII.",
+      "chronologyAndGeography": "The acts identify the imperial palace/Trullus setting in Constantinople and council sessions; they do not support a specific overland or maritime escort scene beyond delegation/letters.",
+      "limitsAndBias": "Primary conciliar text in an old English translation with editorial material and no critical apparatus consulted. Its theological formulations should not be flattened into later denominational labels or taken as proof of immediate universal reception."
+    },
+    {
+      "id": "24-disputed-document-reception-rome-ostia", "orderAtCollection": 24,
+      "candidateUrl": "https://www.myriobiblos.gr/texts/english/milton1_11.html",
+      "consultedUrls": ["https://www.newadvent.org/fathers/3814.htm"],
+      "coverageActuallyRead": "Prior audit read canon 36; current check read canons 30–33 and earlier audit's canon 55. No Sergius correspondence or Life of Sergius passage was directly consulted in this turn.",
+      "supportedClaim": "The canons state a normative order of ecclesiastical precedence (canon 36); canon 55 expressly criticizes Roman Saturday fasting practice during Lent. These texts show a difference in discipline and claims, not the papal response.",
+      "chronologyAndGeography": "Council in Trullo/Constantinople, 691–692 conventionally dated 692. A Roman reception event requires separate evidence; Rome/Ostia is not the council location.",
+      "limitsAndBias": "Council canons are prescriptive, not proof of uniform compliance or acceptance. The selected claim that Sergius refused to subscribe remains unverified by the consulted canons; inherited audit also flags that the selection's original Anastos URL differs from the consulted New Advent text."
+    },
+    {
+      "id": "25-artisan-and-council-logistics-rome-ostia", "orderAtCollection": 25,
+      "candidateUrl": "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_(Enciclopedia-Italiana)/",
+      "consultedUrls": ["https://medievalworlds.net/0xc1aa5572%200x003abd59.pdf", "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_(Enciclopedia-Italiana)/"],
+      "coverageActuallyRead": "Dell'Acqua and Gantner, 'Resenting Byzantine Iconoclasm', Medieval Worlds 9 (2019), PDF pp. 174–176 / article lines 565–635; Treccani 1933 entry lines 21–32. The Treccani introductory discussion does not itself establish Gregory III's synod.",
+      "supportedClaim": "The 2019 article quotes the Liber Pontificalis account: a Roman synod at St Peter's, attended by 93 bishops/clerics and others, threatened exclusion from communion for those who destroyed or profaned sacred images. The article says the synod probably began 1 Nov 731, its acts are lost, and the LP is partisan. It also reports that Gregory sent embassies to Constantinople and that their mission failed.",
+      "chronologyAndGeography": "Rome, at St Peter's confessio according to the LP quotation. Date 1 Nov 731 is probable, not secure. Article notes the Gregory III Life's dating/transmission is uncertain: likely composed near events, manuscripts only from late eighth century; the invitation letter is partly authentic/interpolated and its authenticity debated.",
+      "limitsAndBias": "This is a modern scholarly article quoting and critically discussing a partisan papal biography, not surviving synod minutes. It supports a reported condemnation/sanction, not attacks on images in Rome, a specific artisan supply chain, universal enforcement, or a reliable imperial policy chronology. Treccani is a 1933 overview and explicitly notes source one-sidedness and scholarly disagreement."
+    },
+    {
+      "id": "26-delegate-and-oath-logistics-saint-denis", "orderAtCollection": 26,
+      "candidateUrl": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "consultedUrls": ["https://sourcebooks.web.fordham.edu/source/donatconst.asp", "https://sourcebooks.web.fordham.edu/source/lorsch1.asp", "https://www.cambridge.org/core/journals/studies-in-church-history/article/origins-of-royal-anointing/C070A88A22A870E86202BC8AF0F35C90"],
+      "coverageActuallyRead": "Fordham Donation page lines 18–23; Fordham Annals of Lorsch transcription lines 23–26; Cambridge article lines 521–524 and 530. The underlying LP account and original papal letters were not opened here.",
+      "supportedClaim": "The Annals of Lorsch excerpt says Stephen received Pepin's promise to defend the Roman church, then anointed Pepin and his sons in 754; it does not name Saint-Denis. Scholarly Cambridge article says the papal anointing of Pepin and sons in 754 is certain, while details of a 751 anointing are disputed. Fordham Donation page is an overview, not evidence for Pepin's grant.",
+      "chronologyAndGeography": "Stephen's journey across the Alps and 754 anointing have secondary support; the exact location Saint-Denis and any oath there are not supported by the passages read. Distinguish prior meeting/pledge from later anointing; do not stage the transalpine journey at Saint-Denis.",
+      "limitsAndBias": "Annals of Lorsch text is presented through a 1905 sourcebook translation and has its own Carolingian framing. Donation of Constantine is explicitly a forgery and its accompanying modern summary cannot establish the original agreement's terms or boundaries. Selection's 'delegate and oath logistics' exceeds this evidence."
+    },
+    {
+      "id": "03-roads-to-pavia", "orderAtCollection": 27,
+      "candidateUrl": "https://sourcebooks.web.fordham.edu/basis/einhard.asp",
+      "consultedUrls": ["https://sourcebooks.web.fordham.edu/basis/einhard.asp", "https://sourcebooks.web.fordham.edu/source/lorsch1.asp", "https://www.cambridge.org/core/journals/studies-in-church-history/article/origins-of-royal-anointing/C070A88A22A870E86202BC8AF0F35C90"],
+      "coverageActuallyRead": "Einhard, Life of Charlemagne ch. 6 (Fordham lines 95–100); Annals of Lorsch excerpt for 754; Cambridge discussion of source disagreements. No papal donation instrument or full Liber Pontificalis passage was read.",
+      "supportedClaim": "Einhard retrospectively says Pepin besieged Aistulf at Pavia briefly, compelled restoration of Roman cities/castles, hostages and an oath; the Lorsch annals say in 754 Stephen obtained a promise of defense. These sources support Frankish intervention and a promise, not an exact territorial boundary list.",
+      "chronologyAndGeography": "Selection date 754–756. Pavia is securely associated by Einhard with the Lombard siege; the 756 territorial transfer and its exact extent are not established by the passages read. Avoid treating a modern boundary line as contemporaneously mapped.",
+      "limitsAndBias": "Einhard is a later court biography praising Charlemagne and compressing his father's campaign. Lorsch is a Frankish annalistic tradition. The selected baseline cites Einhard for 754–756 but it does not narrate a full two-campaign route or a signed boundary treaty."
+    },
+    {
+      "id": "28-finite-siege-and-civilian-withdrawal-pavia", "orderAtCollection": 28,
+      "candidateUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "consultedUrls": ["https://sourcebooks.web.fordham.edu/basis/einhard.asp"],
+      "coverageActuallyRead": "Einhard, Life of Charlemagne ch. 6, Fordham lines 95–100; candidate AncientTexts URL not consulted successfully, equivalent text consulted via Fordham.",
+      "supportedClaim": "Einhard reports Charlemagne's 773 invasion, long siege of Pavia, Desiderius' surrender, Adalgis' expulsion, and restoration of Lombard conquests to Hadrian. He notes Pepin's earlier Pavia siege in 754 as a contrast.",
+      "chronologyAndGeography": "773–774 is supported by the passage. Pavia and Italy are explicit; no siege footprint, civilian withdrawal, number of inhabitants, or precise roads/positions are given.",
+      "limitsAndBias": "Retrospective court biography with Frankish victory framing; the author explicitly declines detailed war narrative. The 'civilian withdrawal' mechanic/event is not sourced by the passage and should not be treated as a documented evacuation."
+    },
+    {
+      "id": "29-delegate-logistics-and-copying-nicaea", "orderAtCollection": 29,
+      "consultedUrls": ["https://www.newadvent.org/fathers/3819.htm"],
+      "candidateUrl": "https://www.newadvent.org/fathers/3819.htm",
+      "coverageActuallyRead": "Prior audit reports reading the Acts' Hadrian letter and definition in Sessions II and VII; current turn did not independently reopen full acts. No Greek critical edition or manuscript transmission study consulted.",
+      "supportedClaim": "The council acts support Hadrian's letter being read and Roman legates' participation; the definition endorses honorific veneration/salutation of images while distinguishing it from worship due to God alone.",
+      "chronologyAndGeography": "787 at Nicaea (modern Iznik); exact travel route, escort logistics and copying operations are not in the passages described by the prior audit.",
+      "limitsAndBias": "Council act transmission and translation require source criticism; the cited English edition is not a manuscript-critical study. A council decree does not prove immediate acceptance by every community or imperial subject."
+    },
+    {
+      "id": "30-symbolic-consignment-and-couriers-rome-ostia", "orderAtCollection": 30,
+      "candidateUrl": "https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html",
+      "consultedUrls": ["https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html"],
+      "coverageActuallyRead": "Schaff, History of the Christian Church IV, lines 42–55; quoted Latin from Annales Laurissenses ad 801 reproduced at line 49. No direct 796 annal entry consulted.",
+      "supportedClaim": "Schaff reports that after Leo III succeeded Hadrian in 796, he sent Charles keys and standards of the city and keys of St Peter's tomb. The account explicitly says the political significance of papal/Frankish authority was disputed. The 801 annal quotation supports the coronation, not this 796 transfer.",
+      "chronologyAndGeography": "Selection gives 795, but consulted secondary source dates Leo's succession and dispatch to 796. This is a discrepancy requiring correction/qualification. Destination is Charles/Frankish court; exact receipt location not established here.",
+      "limitsAndBias": "Schaff is a 19th-century confessional church history and interprets symbols as submission/sovereignty; that interpretation is contested and is not itself a formal transfer of sovereignty. Direct annal entry for 796 remains unconsulted."
+    },
+    {
+      "id": "31-refuge-and-petition-escort-paderborn", "orderAtCollection": 31,
+      "candidateUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "consultedUrls": ["https://fr.wikisource.org/wiki/Annales_de_l%E2%80%99Empire/%C3%89dition_Garnier/Charlemagne", "https://sourcebooks.web.fordham.edu/basis/einhard.asp", "https://pbe.kcl.ac.uk/data/D48/F26.htm", "https://content.ucpress.edu/title/9780520239432/9780520239432_chapterone.pdf"],
+      "coverageActuallyRead": "Wikisource's Annals de l'Empire 799 entry lines 219–220; Einhard ch. 28 lines 195–196; PBE entry accessed as a scholarly prosopographical summary; UC Press chapter available only as search extract in this check.",
+      "supportedClaim": "The annalistic account says Leo came to Paderborn to seek justice from Charles and was sent back to Rome with an escort. Einhard reports serious injuries and a plea for aid but does not name Paderborn in the excerpt. PBE summary identifies the April 25 attack and subsequent route via Spoleto/Francia, but the summary is not a primary text.",
+      "chronologyAndGeography": "799; Paderborn is explicitly given by the annalistic source. PBE's chronology says attack on 25 April, then escape/escort route through Spoleto; do not conflate initial escape from Rome with later arrival at Paderborn. Exact travel legs and participants need direct source passages.",
+      "limitsAndBias": "Annals are Frankish court narrative; Einhard is retrospective and repeats dramatic mutilation claims. The French Wikisource page is an older edited retelling, not the critical annals text; the UC Press page was not read beyond search extract. No exact route or 'petition escort' staging is established beyond report of visit and return escort."
+    },
+    {
+      "id": "04-a-crown-at-dawn", "orderAtCollection": 32,
+      "candidateUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "consultedUrls": ["https://sourcebooks.web.fordham.edu/basis/einhard.asp", "https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html"],
+      "coverageActuallyRead": "Einhard, Life of Charlemagne ch. 28, Fordham lines 195–197; Schaff lines 47–51 reproduces the Latin Annales Laurissenses entry for 801. Candidate AncientTexts URL not consulted; replacement translation/source excerpt consulted.",
+      "supportedClaim": "Einhard says Charlemagne went to Rome in 800 and received the titles Emperor and Augustus on Christmas Day. Annales Laurissenses quoted by Schaff say Leo placed the crown on Charles during Christmas Mass at St Peter's and the Roman people acclaimed him.",
+      "chronologyAndGeography": "25 December 800 at St Peter's in Rome. Einhard's claimed surprise/aversion is only his retrospective report; Schaff notes it is hard to imagine no prior arrangement. This does not establish what the participants privately intended.",
+      "limitsAndBias": "Einhard is a later court biography; the surprise motif may serve a political/literary purpose. Schaff is a 19th-century interpretation. Contemporary/near-contemporary Frankish accounts differ in emphasis, and no inner thoughts or invented dialogue are supported."
+    }
+  ],
+  "sources": [
+    {"url":"https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html","title":"Allen & Neil, Maximus the Confessor and his Companions, excerpt","consultedScope":"Section 7, paras. 59–62; excerpt only; notes two possible death dates for Martin."},
+    {"url":"https://upload.wikimedia.org/wikipedia/commons/2/23/The_book_of_the_popes_%28Liber_pontificalis%29_I-_%28IA_cu31924006163897%29.pdf","title":"Liber Pontificalis scan, volume I","consultedScope":"Scan checked, but relevant Vitalian passage not read directly; prior source excerpt/search snippet only."},
+    {"url":"https://www.newadvent.org/cathen/04295a.htm","title":"Catholic Encyclopedia: Constans II","consultedScope":"Candidate secondary source; not read directly this turn; selection notes it is older secondary and bronze-removal claim may be exaggerated."},
+    {"url":"https://www.newadvent.org/fathers/3813.htm","title":"Acts of Constantinople III","consultedScope":"Sessions I, IV, XIII in inherited audit and lines 14–32 opened this turn; English translation/editorial text, not critical apparatus."},
+    {"url":"https://www.newadvent.org/fathers/3814.htm","title":"Council in Trullo","consultedScope":"Canon 36 from inherited audit; canons 30–33 and 55 opened/read this turn; canons do not document Sergius' response."},
+    {"url":"https://medievalworlds.net/0xc1aa5572%200x003abd59.pdf","title":"Dell'Acqua & Gantner, Resenting Byzantine Iconoclasm (2019)","consultedScope":"Article PDF pp. 174–176 / lines 565–635, including LP quotation and source transmission cautions for 731 synod."},
+    {"url":"https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_(Enciclopedia-Italiana)/","title":"Treccani, Iconoclastia (1933)","consultedScope":"Introductory lines 21–32; broad older overview, not a specific Gregory III synod account."},
+    {"url":"https://sourcebooks.web.fordham.edu/source/donatconst.asp","title":"Fordham Medieval Sourcebook: Donation of Constantine","consultedScope":"Lines 18–23: secondary introduction identifies forgery and summarizes Stephen/Pepin; not a primary source for the promise."},
+    {"url":"https://sourcebooks.web.fordham.edu/source/lorsch1.asp","title":"Annals of Lorsch, Fordham transcription","consultedScope":"Lines 23–26, annal excerpts 749–754; translation in 1905 sourcebook edition."},
+    {"url":"https://www.cambridge.org/core/journals/studies-in-church-history/article/origins-of-royal-anointing/C070A88A22A870E86202BC8AF0F35C90","title":"The Origins of Royal Anointing","consultedScope":"Lines 521–524 and 530: scholarly discussion of evidence for Pippin's anointings and source disagreement."},
+    {"url":"https://sourcebooks.web.fordham.edu/basis/einhard.asp","title":"Einhard, Life of Charlemagne (Fordham)","consultedScope":"Ch. 6 lines 95–100; ch. 28 lines 195–197; translator Turner (1880), sourcebook transcription."},
+    {"url":"https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html","title":"Schaff, History of the Christian Church, vol. IV","consultedScope":"Lines 42–55; secondary interpretation of Leo's 796 gifts and 800 coronation; quotes 801 annal Latin at line 49."},
+    {"url":"https://fr.wikisource.org/wiki/Annales_de_l%E2%80%99Empire/%C3%89dition_Garnier/Charlemagne","title":"Annales de l’Empire, Garnier edition/retelling","consultedScope":"799–800 lines 219–222 in French; accessible edited narrative, not a critical edition of Royal Frankish Annals."},
+    {"url":"https://pbe.kcl.ac.uk/data/D48/F26.htm","title":"Prosopography of the Byzantine Empire: Leo III","consultedScope":"Prosopographical summary accessed; describes attack and itinerary, but is secondary synthesis rather than primary text."},
+    {"url":"https://content.ucpress.edu/title/9780520239432/9780520239432_chapterone.pdf","title":"UC Press chapter on Charlemagne/Paderborn","consultedScope":"Search extract only (not treated as full chapter read); indicates July 799/Paderborn setting and arrival of Leo."},
+    {"url":"https://www.newadvent.org/fathers/3819.htm","title":"Acts of Nicaea II","consultedScope":"Prior audit reports reading Hadrian's letter and definition, sessions II and VII; no critical manuscript study."}
+  ]
+}

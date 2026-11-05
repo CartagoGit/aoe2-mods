@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": "mechanical Luna audit preserved separately; no historical/native review",
+  "episodes": [
+    {
+      "order": 25,
+      "episodeId": "25-delegate-and-draft-network-rimini",
+      "hubCount": 7,
+      "minimumHubSeparationTiles": 56.66,
+      "nearestPair": [
+        "hub-1",
+        "hub-7"
+      ],
+      "totalMainAndOptionalEntities": 21,
+      "totalMainAndOptionalZones": 16,
+      "minimumEntityCenterFrameClearanceTiles": 83.71,
+      "minimumZoneRadiusFrameClearanceTiles": 81.99,
+      "minimumFullCorridorWidthFrameClearanceTiles": 80.99,
+      "allOffsetsRadiiAndFullWidthsInFrame": true,
+      "architectRasterInspected": true,
+      "svgSha256": "1d8552ad2b46c128f4ea5b209f96aacaebcd2424cbfb446ce8ebc65737fd7b1e",
+      "waterLimit": "No dated bank/drainage, landmask, DEM, pathfinding or landscape-density certification. Missing modern control lines do not prove ancient dryland."
+    }
+  ],
+  "nativeAndBalance": "pending"
+}

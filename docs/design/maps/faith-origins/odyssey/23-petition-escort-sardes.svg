@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="A Petition from Sardes geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">A Petition from Sardes</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · sardes · N ↑ E →</text>
+<polyline data-control="schematic-water" points="115.26,735.00 140.28,651.82" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic relation only, not surveyed current or ancient river centerline; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="140.28,651.82 165.52,426.11" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic relation only, not surveyed current or ancient river centerline; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="165.52,426.11 115.06,216.54" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic relation only, not surveyed current or ancient river centerline; do not rasterize as native water</title></polyline>
+<polyline data-control="schematic-water" points="115.06,216.54 73.88,85.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic relation only, not surveyed current or ancient river centerline; do not rasterize as native water</title></polyline>
+<polyline data-corridor="household-road" points="430.46,571.21 493.54,426.11 607.10,248.79" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>household-road: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="workshop-road" points="291.68,297.15 493.54,426.11 607.10,248.79" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>workshop-road: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="430.46,571.21 291.68,297.15 607.10,248.79" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="430.46" cy="571.21" r="20" fill="none" stroke="#91512f"/>
+<text x="453.46" y="571.21" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Eastern household request court</text>
+<circle cx="291.68" cy="297.15" r="20" fill="none" stroke="#91512f"/>
+<text x="314.68" y="297.15" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Northern workshop request court</text>
+<circle cx="493.54" cy="426.11" r="20" fill="none" stroke="#91512f"/>
+<text x="516.54" y="426.11" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Local assembly and filing yard</text>
+<circle cx="607.10" cy="248.79" r="20" fill="none" stroke="#91512f"/>
+<text x="630.10" y="248.79" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Eastern inland dispatch station</text>
+<text x="730" y="420" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="444" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="468" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="492" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="516" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="564" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="588" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [28.032, 38.487, 28.078, 38.519]; cosine-corrected longitude; approximate districts</text>
+</svg>

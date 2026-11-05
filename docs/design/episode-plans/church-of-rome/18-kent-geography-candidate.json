@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-25",
+  "status": "architect-authored regional candidate; independent review and registry promotion pending",
+  "campaignId": "church-of-rome",
+  "episodeId": "18-hospitality-and-mission-supply-kent",
+  "displayOrder": 18,
+  "mapSizeCandidate": 400,
+  "profile": {
+    "id": "kent",
+    "name": "Kent: Canterbury and the former Wantsum approaches",
+    "bbox": [
+      1.04,
+      51.25,
+      1.45,
+      51.41
+    ],
+    "coordinatesStatus": "candidate authored regional frame; exactly attributed modern OSM place controls; ancient shoreline, landfall and roads unresolved",
+    "north": "top",
+    "terrain": "Thanet is a chalk ridge/plateau with dry valleys and a southern scarp. Use the adjacent low-lying former-channel landscape as a different terrain problem; do not flatten it into modern drained farmland.",
+    "water": "Treat the Wantsum as a historically tidal/channel setting. No exact sixth-century banks or crossing are supplied. Current Natural Earth/OSM shore data cannot stand in for the 597 coastline.",
+    "hills": "Keep the broad chalk ridge and coast-descending dry valleys at regional scale; no feature-level sixth-century DEM or objective parcel is certified.",
+    "roads": "Canterbury is a separate inland destination from the Thanet/Wantsum arrival context. Rome is a dispatch prologue, absent from this local map. No measured mission route or exact crossing is proposed.",
+    "anachronisms": "No present-day reclaimed Wantsum plain used as certain 597 dry ground, modern seawalls, airport, motor roads, later cathedral fabric or developed abbey precinct. The Roman AD43 bridgehead is a different event.",
+    "sourceIds": [
+      "kent-historic-england-thanet-2025",
+      "kent-english-heritage-abbey-history",
+      "kent-osm-modern-place-controls"
+    ],
+    "referenceAsset": null,
+    "landmarks": [
+      {
+        "id": "osm-node-29038127",
+        "name": "Reculver — modern place control",
+        "lonLat": [
+          1.1978418,
+          51.3787239
+        ],
+        "certainty": "Modern Reculver hamlet label; not an ancient fort, shoreline, crossing or landing point."
+      },
+      {
+        "id": "osm-node-9827276975",
+        "name": "Richborough — modern place control",
+        "lonLat": [
+          1.3252361,
+          51.2954693
+        ],
+        "certainty": "Modern Richborough village label; not the Roman fort, an island boundary or Augustine landing."
+      },
+      {
+        "id": "osm-node-17916174",
+        "name": "Canterbury — modern place control",
+        "lonLat": [
+          1.0802533,
+          51.2800275
+        ],
+        "certainty": "Modern Canterbury city label; not a sixth-century boundary, church parcel or grant site."
+      }
+    ],
+    "waterControlLine": {
+      "coordinates": [],
+      "certainty": "No authored ancient channel line: a dated land/shore and crossing decision is still required. Empty geometry does not assert absence of historical water.",
+      "renderAs": "river-line"
+    },
+    "layerSources": [
+      "natural-earth",
+      "kent-osm-modern-place-controls"
+    ]
+  },
+  "frame": {
+    "bboxRole": "Architect-selected regional viewing frame around the three modern place controls; not a source-published ancient extent.",
+    "outerCellExtent": [
+      1.014824561403509,
+      51.18617857421523,
+      1.4751754385964913,
+      51.47382142578476
+    ],
+    "pointExtent": [
+      1.0154,
+      51.18653812777969,
+      1.4746000000000001,
+      51.473461872220305
+    ],
+    "controls": [
+      {
+        "id": "osm-node-29038127",
+        "tile": [
+          158.52,
+          131.74
+        ]
+      },
+      {
+        "id": "osm-node-9827276975",
+        "tile": [
+          269.22,
+          247.52
+        ]
+      },
+      {
+        "id": "osm-node-17916174",
+        "tile": [
+          56.35,
+          268.99
+        ]
+      }
+    ]
+  },
+  "sourceDefinitions": [
+    {
+      "id": "kent-historic-england-thanet-2025",
+      "url": "https://historicengland.org.uk/research/results/reports/9198/IsleofThanetLandscapeMappingProject_AerialInvestigationandMapping",
+      "locator": "Research Report 11/2025, printed pp.4–5 and123–124; front matter NGR belongs to study coverage, not a landing.",
+      "accessed": "2026-10-25",
+      "coverageRead": "Root reread selected topographic and Augustine-landfall passages; no whole-report archaeological approval.",
+      "qualification": "The exact arrival location is unknown. Richborough attribution is reported as a later tradition, not a verified event point."
+    },
+    {
+      "id": "kent-english-heritage-abbey-history",
+      "url": "https://www.english-heritage.org.uk/visit/places/st-augustines-abbey/history-and-stories/history/",
+      "locator": "Augustine's Mission; 597 arrival, east-of-Canterbury grant and probable598foundation.",
+      "accessed": "2026-10-25",
+      "coverageRead": "Root reread visitor summary; it supplies no exact arrival route or coordinate.",
+      "qualification": "Distinguish mission arrival and later abbey development; do not draw the developed medieval precinct in597."
+    },
+    {
+      "id": "kent-osm-modern-place-controls",
+      "path": "docs/research/odyssey-research/geography/kent-modern-place-controls.geojson",
+      "provenancePath": "docs/research/odyssey-research/geography/kent-modern-place-controls-provenance.json",
+      "accessed": "2026-10-25",
+      "qualification": "ODbL modern place data only; three labels do not locate a sixth-century crossing or determine terrain."
+    }
+  ],
+  "pending": [
+    "Independent review of this regional candidate and original-note contrast.",
+    "Register sources and research artifact with exact license/hash before canonical profile promotion.",
+    "Dated shore/channel controls and local mission geography; do not turn the medieval/post-medieval HE water-channel polygon into597water.",
+    "Select a localized playable crop, actors/objectives/corridors, budgets and complete EN/es-ES screens in the actual episode dossier.",
+    "Native full-width paths, terrain/transport footprints, difficulty and engine evidence."
+  ],
+  "countsUnchanged": {
+    "canonicalGeographicProfiles": 26,
+    "missingGeographicIds": 22,
+    "completeDesignDrafts": 63,
+    "selectionOnly": 215,
+    "countedResearchAssets": 47,
+    "expandedGameApprovals": 0
+  }
+}
