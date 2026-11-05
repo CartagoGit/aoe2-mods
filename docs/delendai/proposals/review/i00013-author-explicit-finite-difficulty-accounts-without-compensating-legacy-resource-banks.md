@@ -2,17 +2,17 @@
 id: i00013
 title: "Author explicit finite difficulty accounts without compensating legacy resource banks"
 kind: infra
-status: in-progress
+status: review
 type: proposal
 track: general
 date: 2026-10-27
 shipped-in:
   - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
   - "8a23bd21a306"
-last-transition-id: 6987d739-cae7-41de-8842-e32c0cd6211f
-last-correlation-id: 6987d739-cae7-41de-8842-e32c0cd6211f
-last-transition-from: ready
-last-transition-at: 2026-10-28T00:04:48.769Z
+last-transition-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
+last-correlation-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
+last-transition-from: in-progress
+last-transition-at: 2026-11-05T07:59:14.062Z
 ---
 
 # i00013 — Author explicit finite difficulty accounts without compensating legacy resource banks
@@ -38,7 +38,7 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 
 ### S1 — Architect account boundaries and compatibility decision
 - **Status**: done
-- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/in-progress/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
+- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/review/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
 - **Gate**: type
 - acceptance:
   - "Define a source-only opt-in authoredDifficultyAccounts with exactly easy/standard/hard and each record exactly spendable, gatherableBank, protectedRecovery, optionalReserve; each requires exact four-resource keys, reuses existing numeric resource normalization and adds a safe-integer bound including intermediate sums at the new source boundary. The existing Python normalizer alone does not enforce that ceiling. No field means complete old behavior and byte-identical default outputs. No gameplay schema widening is authorized. Derived episode economyProfile authored-finite-accounts-v1 explicitly dispatches coordinated numeric validation; unknown and v3+marker reject, absent stays legacy. supplyMargins=S+B-M-Z. See the reviewed ADR amendment; the initial three-File design was not conformant."
@@ -48,9 +48,10 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 - review-implementer: gpt-6
 - review-reviewer: gpt-6.1-sol
 - review-log: approved by gpt-6.1-sol — verified at 8a23bd21a306, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Final8a23bd21 delivered ADR/cases reviewed, unchanged today: exact keys,safe integers and sums,legacy-default preservation,known derived marker/unknown and v3 … (2) Independent actual analyzer recheck3profiles and384conserved subset states; separate S/B/P/R/Z and exact reward/alias rules verified, no automatic bank or doub… (3) Actual optional_states with verified SHA yields128reachable subsets each,full-mask127 and final vectors160/170/80,120/120/50,90/90/35. B0/spatial assumptions e… — Independent final delivered S1 decision only. Corrected architecture resolves numeric-validator P2; actual financial analyzer3x128 reproduced,31source-gate cases prospective. Official validate exit0,164/164tests,2159assertions. Evidence /home/cartago/_projects/games/aoe2-mods/.cache/artifacts/independent-review-resumption-20261105. S2/S3pending; no implementation/native/game/historical approval.
+- shipped-in: `8a23bd21a306`
 
 ### S2 — Reuse the existing factory and finite analyzer
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S1]
 - **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py`, `tools/design/secondary.py`, `tools/design/episode_dossier.validator.py`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/readiness_timing_audit.script.py`, `tools/design/episode_dossiers.script.py`, `tools/design/test_authored_difficulty_accounts.py`, `tools/design/test_design.py`
 - **Gate**: type
@@ -60,15 +61,20 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
   - "Exercise the real factory on bounded artificial source: independently different easy/standard/hard spendable and B0, nonzero protected recovery, exact reward reserve, all-skip and all-complete witnesses, zero and positive authored costs, unaffordable payment-before-reward, duplicate/unknown/missing keys, booleans/fractions/overflow, conflicting aliases, infeasible and negative vectors. Compare all64current legacy/v3 dossiers for no source/output drift when the field is absent."
 
 - Integration clarification — 5 November2026: `docs:check` executes `test_design.py`, whose unittest imports are explicit. Register the actual new `AuthoredDifficultyAccountsTests` class there, following existing imports, so the regression suite runs in the mandatory gate. This ninth file is now authorized; economic semantics and S1 acceptance are unchanged. Do not merely report a standalone command as gate coverage.
+- shipped-in: `cf84b92f1fb3`
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ### S3 — Independent acceptance and bounded content use
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2]
 - **Files**: `docs/qa/campaign-design/authored-difficulty-accounts-review.md`, `docs/handoffs/LLM-WORK-ALLOCATION.md`
 - **Gate**: type
 - acceptance:
   - "Different actual model reviews the exact implementation and complete default compatibility evidence; bun run validate and official gate pass. Do not self-approve."
   - "A separately designed jewish-tradition03 candidate may use B0 and explicit accounts only after acceptance; every route, objective, screen, timing and historical/source decision remains its own architect packet. No canonical dossier count or historical-authoring unlock is implied by this infrastructure."
+- review-state: in_review
+- review-implementer: gpt-6-luna
 
 ## acceptance
 
