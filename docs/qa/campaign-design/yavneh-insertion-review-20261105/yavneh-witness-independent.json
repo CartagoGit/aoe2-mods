@@ -1,0 +1,823 @@
+{
+  "solver": "tools/design/finite_allocation.helper.py::balance + ::optional_states",
+  "optionalVectorCount": 7,
+  "caseCount": 24,
+  "recomputedCaseCount": 24,
+  "counts": {
+    "easy": {
+      "initiallyAffordable": 8,
+      "affordableWithOptionalPrefix": 8,
+      "allGoalsReachable": 8
+    },
+    "standard": {
+      "initiallyAffordable": 5,
+      "affordableWithOptionalPrefix": 7,
+      "allGoalsReachable": 7
+    },
+    "hard": {
+      "initiallyAffordable": 3,
+      "affordableWithOptionalPrefix": 6,
+      "allGoalsReachable": 6
+    }
+  },
+  "sourceCounts": {
+    "easy": {
+      "initiallyAffordable": 8,
+      "affordableWithOptionalPrefix": 8,
+      "allGoalsReachable": 8
+    },
+    "standard": {
+      "initiallyAffordable": 5,
+      "affordableWithOptionalPrefix": 7,
+      "allGoalsReachable": 7
+    },
+    "hard": {
+      "initiallyAffordable": 3,
+      "affordableWithOptionalPrefix": 6,
+      "allGoalsReachable": 6
+    }
+  },
+  "countsMatch": true,
+  "verdictMismatches": [],
+  "optionalRewardTotal": {
+    "food": 70,
+    "wood": 60,
+    "gold": 30,
+    "stone": 0
+  },
+  "optionalCostTotal": {
+    "food": 20,
+    "wood": 30,
+    "gold": 20,
+    "stone": 0
+  },
+  "declaredReserve": {
+    "food": 70,
+    "wood": 60,
+    "gold": 30,
+    "stone": 0
+  },
+  "rewardTotalEqualsReserve": true,
+  "declaredMaximumOptionalCosts": null,
+  "rows": [
+    {
+      "level": "easy",
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        70,
+        50,
+        220,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        90,
+        80,
+        160,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        90,
+        130,
+        150,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        110,
+        160,
+        90,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        160,
+        70,
+        150,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        180,
+        100,
+        90,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "main",
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        180,
+        150,
+        80,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "easy",
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        200,
+        180,
+        20,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "side-4",
+        "main",
+        "side-2",
+        "side-3",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        40,
+        0,
+        150,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        60,
+        30,
+        90,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        60,
+        80,
+        80,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        80,
+        110,
+        20,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        130,
+        20,
+        80,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        150,
+        50,
+        20,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        150,
+        100,
+        10,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "standard",
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "allGoalsReachable": false,
+      "witness": null,
+      "finalSpendable": null,
+      "reserveAfter": null
+    },
+    {
+      "level": "hard",
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "allGoalsReachable": false,
+      "witness": null,
+      "finalSpendable": null,
+      "reserveAfter": null
+    },
+    {
+      "level": "hard",
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "side-4",
+        "main",
+        "side-2",
+        "side-3",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        40,
+        10,
+        90,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        40,
+        60,
+        80,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        60,
+        90,
+        20,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "side-4",
+        "main",
+        "side-2",
+        "side-3",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        110,
+        0,
+        80,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        130,
+        30,
+        20,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "allGoalsReachable": true,
+      "witness": [
+        "side-1",
+        "main",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ],
+      "finalSpendable": [
+        130,
+        80,
+        10,
+        0
+      ],
+      "reserveAfter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "level": "hard",
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "allGoalsReachable": false,
+      "witness": null,
+      "finalSpendable": null,
+      "reserveAfter": null
+    }
+  ]
+}

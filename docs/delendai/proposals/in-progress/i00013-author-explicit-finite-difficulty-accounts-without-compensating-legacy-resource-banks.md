@@ -52,12 +52,14 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 ### S2 — Reuse the existing factory and finite analyzer
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py`, `tools/design/secondary.py`, `tools/design/episode_dossier.validator.py`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/readiness_timing_audit.script.py`, `tools/design/episode_dossiers.script.py`, `tools/design/test_authored_difficulty_accounts.py`
+- **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py`, `tools/design/secondary.py`, `tools/design/episode_dossier.validator.py`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/readiness_timing_audit.script.py`, `tools/design/episode_dossiers.script.py`, `tools/design/test_authored_difficulty_accounts.py`, `tools/design/test_design.py`
 - **Gate**: type
 - acceptance:
   - "Implement only the independently accepted source-only branch, reusing current strict resource validators and actual optional-state analyzer; no second economy/solver or preset assumptions. Keep the legacy three-argument helper call compatible if adding optional objective inputs internally. Refuse missing task inputs for the opt-in; no fake success."
   - "Under the opt-in set reallocatedCacheAllowance to the same R account, not a second legacy600F300W150G promise. Keep secondaryBudget reservedRewards/maxOptionalCosts consistent with actual source predicates/effects and preserve default outputs when absent. No native capability is claimed. Implement the ADR's coordinated secondary/common-validator/civic/wiki dispatch, preserving every nonnumeric check and all default outputs. The readiness timing auditor explicitly rejects new/unknown markers; do not imply that unsupported operation works. Avoid the eager secondary/helper/finite analyzer circular import."
   - "Exercise the real factory on bounded artificial source: independently different easy/standard/hard spendable and B0, nonzero protected recovery, exact reward reserve, all-skip and all-complete witnesses, zero and positive authored costs, unaffordable payment-before-reward, duplicate/unknown/missing keys, booleans/fractions/overflow, conflicting aliases, infeasible and negative vectors. Compare all64current legacy/v3 dossiers for no source/output drift when the field is absent."
+
+- Integration clarification — 5 November2026: `docs:check` executes `test_design.py`, whose unittest imports are explicit. Register the actual new `AuthoredDifficultyAccountsTests` class there, following existing imports, so the regression suite runs in the mandatory gate. This ninth file is now authorized; economic semantics and S1 acceptance are unchanged. Do not merely report a standalone command as gate coverage.
 
 ### S3 — Independent acceptance and bounded content use
 - **Status**: pending
