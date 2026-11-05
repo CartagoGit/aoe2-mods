@@ -33,13 +33,15 @@ The synthetic household builder correctly refuses every historical build, so it 
 - global_gate: type
 
 ### S1 — Architect private preview contract and geographic decisions
-- **Status**: pending
+- **Status**: review
 - **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/in-progress/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
 - **Gate**: type
 - acceptance:
   - "Define explicit development compilation separately from historical/native/engine approval; preserve synthetic and public-export refusals; no build-before-playtest cycle. Candidate authorization remains false until separately reviewed real S3 inputs."
   - "Pin actual sources,340frame,modern bands,17originals/10zones,continuous corridor envelope,half-cell convention and one explicitly bounded store override; retain source binding and unknown hydrology/collision. No source/ID/schema or dossier count change."
   - "Independent review of the reuse boundary, exact S2 ownership, failure modes and evidence; no unimplemented operation or prospective case is claimed executed."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ### S2 — Reusable private base, strict plan boundary and geographic preview compiler
 - **Status**: pending
