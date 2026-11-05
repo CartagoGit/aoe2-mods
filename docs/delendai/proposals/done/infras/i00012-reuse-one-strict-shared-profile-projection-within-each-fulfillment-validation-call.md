@@ -2,14 +2,16 @@
 id: i00012
 title: "Reuse one strict shared profile projection within each fulfillment validation call"
 kind: infra
-status: review
+status: done
 type: proposal
 track: general
 date: 2026-10-27
-last-transition-id: 19668e93-34a1-4324-a5a7-3d9faca977dc
-last-correlation-id: 19668e93-34a1-4324-a5a7-3d9faca977dc
-last-transition-from: in-progress
-last-transition-at: 2026-10-27T23:54:46.001Z
+last-transition-id: 81d88e03-07fd-4c0c-b5ca-edba692705f6
+last-correlation-id: 81d88e03-07fd-4c0c-b5ca-edba692705f6
+last-transition-from: review
+last-transition-at: 2026-11-05T01:04:07.777Z
+shipped-in:
+  - "230173a9bb71"
 ---
 
 # i00012 — Reuse one strict shared profile projection within each fulfillment validation call
@@ -34,7 +36,7 @@ Source inspection finds `validateFulfillmentSnapshot` parses the identical share
 - global_gate: type
 
 ### S1 — Local projection reuse and regression evidence
-- **Status**: review
+- **Status**: done
 - **Files**: `packages/gameplay-state/fulfillment-snapshot.factory.ts`, `tests/alternative-fulfillment/reference/fulfillment-projection-reuse.test.ts`
 - **Gate**: type
 - acceptance:
@@ -42,8 +44,10 @@ Source inspection finds `validateFulfillmentSnapshot` parses the identical share
   - "Retain all existing95portfolio/adversarial flows, dispatches, observations, assertions and final arbitration unchanged; keep its aggregate test unchanged: the later upstream-recovery decision below supersedes the earlier proposed reorganization. Add meaningful regression that mutating the same profile object between distinct validation calls still rejects contract mismatch; changed result/recipient presence still fails; no cache or source mutation. Compare exact baseline fingerprints and replay outcomes on the existing fixture, and capture bounded before/after timings without flaky timing assertions."
   - "Root and independent model review exact diff; bun run validate and official frozen-install/validate gate pass without timeout adjustment. No native adapter change; export only if a new concern warrants it. Product integration does not close any historical content slice."
 - shipped-in: `230173a9bb71`
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 230173a9bb71, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Exact230173a9 first-parent diff reviewed: strict projection shared once in snapshot validation; function-local lazy projection only after generated/destroyed s… (2) Only two declared files changed;95portfolio original file unchanged. Mutation between calls rejects mismatch; exact known v3/v2 fingerprint assertions pass; mi… (3) Root scoped conformity and official certification recorded in proposal/product artifacts; independent exact-diff review now complete. Official frozen-install/v… — Independent exact delivering-state review; local lazy projection preserves short-circuit trust boundary and all95flows remain untouched. Gate log/journal and bounded benchmark archived at /home/cartago/_projects/games/aoe2-mods/.cache/artifacts/independent-review-resumption-20261105. Snapshot outputs equal. Timings are bounded diagnostics only.
 
 ## acceptance
 
