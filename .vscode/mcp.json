@@ -6,7 +6,8 @@
 			"args": [
 				"/home/cartago/_projects/delendai/tools/scripts/host/host-server.script.ts",
 				"--workspace=${workspaceFolder}",
-				"--config=${workspaceFolder}/delendai.config.json"
+				"--config=${workspaceFolder}/delendai.config.json",
+				"--branch=main"
 			]
 		}
 	}
