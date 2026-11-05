@@ -9,6 +9,7 @@ date: 2026-10-27
 shipped-in:
   - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
   - "8a23bd21a306"
+  - "cf84b92f1fb3"
 last-transition-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
 last-correlation-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
 last-transition-from: in-progress
@@ -51,7 +52,7 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 - shipped-in: `8a23bd21a306`
 
 ### S2 — Reuse the existing factory and finite analyzer
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py`, `tools/design/secondary.py`, `tools/design/episode_dossier.validator.py`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/readiness_timing_audit.script.py`, `tools/design/episode_dossiers.script.py`, `tools/design/test_authored_difficulty_accounts.py`, `tools/design/test_design.py`
 - **Gate**: type
@@ -62,8 +63,10 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 
 - Integration clarification — 5 November2026: `docs:check` executes `test_design.py`, whose unittest imports are explicit. Register the actual new `AuthoredDifficultyAccountsTests` class there, following existing imports, so the regression suite runs in the mandatory gate. This ninth file is now authorized; economic semantics and S1 acceptance are unchanged. Do not merely report a standalone command as gate coverage.
 - shipped-in: `cf84b92f1fb3`
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at cf84b92f1fb3, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Independent exact9-file review of688a120 and landedcf84b92, SHA256all9equal. New helper reuses resource_amounts and actual finite_allocation.optional_states/ba… (2) ExactR equals actual reward sum and reallocated allowance, actual costs recomputed. Secondary nonnumericchecks preserved; commonunknown/v3marker guard beforeea… (3) Real factory/common/civic positive3difficulty/B0/nonzeroP witnesses pass.9focusedtests include31architecturecaseIDs and independent faultinjection failure emit… — Independent formal S2 implementation acceptance only, exact landedcf84b92 equals reviewed688a120 across9Files. Both P2findings corrected,actual31casecoverage and default65compatibility verified; own officialgate passed164/164,2159assertions. External review/evidence /home/cartago/.codex/artifacts/aoe2-mods/finite-account-implementation-review-20261105. S1untouched; S3acceptance still unreviewed and notapproved. No native/game/historical approval.
 
 ### S3 — Independent acceptance and bounded content use
 - **Status**: review
