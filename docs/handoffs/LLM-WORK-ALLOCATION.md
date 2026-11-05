@@ -1,6 +1,6 @@
 # Reparto de trabajo y volumen pendiente
 
-Corte actualizado: 27 de octubre de 2026. Instrucción del propietario: el arquitecto decide y revisa; delega recopilación y materialización a Luna o MiniMax según disponibilidad. Se trabaja en paralelo por paquetes cerrados. Este documento describe responsabilidades y evidencia, no implementa una cola: recuperar siempre el estado del DelendAI conectado y sus claims/unidades.
+Corte operativo: 5 de noviembre de 2026. La [nota CURRENT-STATE](CURRENT-STATE.md) es la fuente compacta de contadores, dependencias y próximos paquetes; las secciones fechadas de este archivo conservan su valor histórico. El arquitecto decide historia, geografía, economía y diseño; Luna y MiniMax materializan paquetes cerrados sin solaparse. Recuperar del DelendAI conectado el estado, los claims y las unidades antes de asignar trabajo.
 
 ## Volumen de diseño histórico
 
@@ -8,27 +8,27 @@ Corte actualizado: 27 de octubre de 2026. Instrucción del propietario: el arqui
 |---|---:|---:|---:|
 | Embers of the Covenant |30|30|0|
 | The Eagle and the Cross |34|34|0|
-| Keepers of the Unbroken Word |30|0|30|
+| Keepers of the Unbroken Word |30|1|29|
 | The Keys of the Eternal City |32|0|32|
 | Beyond the Golden Gate |32|0|32|
 | Beneath the Desert Stars |30|0|30|
 | The Shattered Oath |28|0|28|
 | From Damascus to the Far Horizon |32|0|32|
 | The River Remembers |30|0|30|
-| **Total** |**278**|**64**|**214**|
+| **Total** |**278**|**65**|**213**|
 
-Los 64 borradores contienen 2.645 pantallas EN/es-ES y 398 secundarios. Siguen necesitando revisión histórica/editorial, terreno y calibración. No equivalen a paquetes aprobados para autoría ni a escenarios jugados. Constantinopla380 (ID 34, orden 33) forma parte de esos totales; su plan de mundo y perfil de referencia son materiales auxiliares, no mapas jugados. Hay cero aprobaciones ampliadas de juego.
+Los 65 borradores contienen 2.689 pantallas EN/es-ES, 405 secundarios y 216 objetivos principales. Siguen necesitando revisión histórica/editorial, geografía y calibración según cada slice; no equivalen a campañas aprobadas ni a escenarios jugados. Yavneh (dossier 65) es una inserción mecánica revisada dentro de un solo episodio; la revisión no cierra d00002/S4 ni aprueba historia, terreno, soporte nativo o juego. Hay cero campañas completas y cero campañas históricas plenamente verificadas en el motor.
 
-El informe mecánico cívico actual tiene 64 filas y 54 candidatos estáticos; en una métrica distinta, 63 filas muestran el mismo presupuesto accesible entre dificultades. Requieren decisiones sobre dificultad/ritmo, pero no son fallos de motor demostrados. La nota de cobertura geográfica conserva 22 identidades pendientes para 25 selecciones. Los cuatro recortes DSM del Hiyaz y las dos referencias DSM modernas de Jerusalén aportan datos modernos, no perfiles antiguos ni mapas jugables. El manifiesto registra 50 recursos locales y `geography.json` 26 perfiles canónicos.
+El catálogo combina 26 perfiles base y 19 suplementales (45 identidades únicas), con 40 identidades geográficas ausentes que afectan a 58 selecciones. El manifiesto registra 50 recursos. Las referencias DSM modernas, incluidas las de Jerusalén, no reconstruyen terreno antiguo ni acreditan mapas jugables.
 
 ## Reparto por modelo
 
 | Modelo/rol | Trabajo que conserva o recibe | Condición para darlo por terminado |
 |---|---|---|
-| gpt-6, arquitecto | Completar 214 dossiers, revisar los 64 borradores, resolver los 54 candidatos estáticos señalados por el informe cívico actual y las 22 identidades de cobertura, cerrar historia, geografía, narración, pantallas, objetivos, dificultad y continuidad. Diseñar cualquier capacidad realmente ausente y supervisar los diffs delegados. | Paquete individual completo, operaciones disponibles en el contrato, evidencia atribuida y revisión independiente del alcance aprobado. Nunca aprobar su propia implementación. |
-| gpt-6-luna, recopilación/materialización | Consultas acotadas con localizadores, inventarios, hashes, comparación de datos, borradores lingüísticos y código/fuentes cuando las decisiones estén cerradas. Puede implementar paquetes inicialmente previstos para MiniMax por autorización expresa del propietario. | Artefactos concretos, claims propios, checks pertinentes, límites registrados y revisión por un modelo distinto. No sustituye investigación por snippets ni decide arquitectura/historia para desbloquearse. |
-| MiniMax M3.1, materialización | Recibir únicamente el próximo slice mecánico que el arquitecto asigne según disponibilidad real; después, los 278 episodios de 9 campañas de forma gradual. Comparte el pool de trabajo mecánico con Luna: un slice tiene un solo implementador activo. | Cumplir el paquete y aceptación oficiales, corregir hallazgos y pasar gate/revisión. Ninguna nueva decisión de mapa, economía, historia o contrato por su cuenta. |
-| Revisor independiente | gpt-6 para entregas Luna/MiniMax; Luna para entregas gpt-6; GPT-6.1 cuando esté disponible y corresponda a una revisión asignada. Comprobar independencia real, diff, casos negativos y evidencia del commit exacto. | Veredicto formal correspondiente al slice y alcance, integrado por DelendAI. La existencia de un informe no cierra sola un slice. |
+| gpt-6, arquitecto | Cerrar la arquitectura y las herramientas faltantes; decidir historia/geografía, revisar borradores y diseñar el siguiente episodio de la primera campaña. Preparar paquetes con contratos, datos y bloqueos explícitos. | Cada paquete puede ejecutarse con las operaciones existentes o registra el requisito ausente. Revisión independiente y aprobación formal separadas. |
+| gpt-6-luna, recopilación/materialización | Investigación acotada y trabajo mecánico con archivos exclusivos. i00013/S1 está aceptada; S2 ya tiene una unidad Luna en corrección por un hallazgo de overflow. No abrir otra implementación paralela. | Claim propio, diff acotado, evidencia reproducible y revisión de otro modelo. No decide arquitectura, historia, mapas ni balances para desbloquearse. |
+| MiniMax M3.1, materialización | Recibir un paquete cerrado de episodio nativo tras la decisión de mapa de root; luego, avanzar progresivamente por la primera campaña. No se autoriza completar los 213 dossiers en masa ni trabajar nueve campañas a la vez. | Cumplir el slice oficial y documentar límites; no inventar fuentes, historia, economía, terreno o capacidades. Un solo implementador por conjunto de archivos. |
+| Revisor independiente | Un modelo distinto del implementador revisa el diff, criterios, casos negativos y evidencia del commit exacto. | Veredicto formal y gate DelendAI del producto exacto; el informe por sí solo no cierra un slice. |
 
 Estos son volúmenes de trabajo, no horas/costes medidos. El reparto no concede a MiniMax todo el backlog ni obliga a esperar al cierre de las nueve odiseas. Una implementación nativa todavía sin contrato/template/evidencia vuelve al arquitecto; no se oculta como tarea mecánica.
 
@@ -81,7 +81,7 @@ La [inspección económica de los cinco primeros episodios](../qa/campaign-desig
 
 Luna implementó el paquete naval en `223740c7`, integrado por gate en `8f6687f3`. Root comprobó independientemente el binario, 9.600 celdas de franja, 36 marcadores, cuatro unidades, el vínculo exacto del guardia y TIMER 1800, además de hashes y catálogos. Las correcciones de revisión evitaron inferir el vínculo nativo desde el JSON y aceptar la condición en un disparador distinto. Es otra entrega mecánica acotada supervisada, sin aprobación completa de i00003/S2 ni de un escenario histórico.
 
-Root integró además `7361d603`: Yavneh interior frente a su puerto, cautelas de fuentes y seis pares de texto fuente de narración, entrada y continuidad, revisados en alcance por Luna. No es el dossier 65. El corte ampliado conserva 64 dossiers, 214 pendientes, 2.645 pantallas, 398 secundarios y 50 referencias. La única referencia local nueva de esta interacción sigue siendo el plano de 1865. El kit naval privado de 400 permite observar la base mientras continúa el diseño; juego verificado sigue falso. Ninguna nueva campaña histórica queda completamente diseñada o aprobada para materialización por este cierre.
+En ese corte, root integró `7361d603`: Yavneh interior frente a su puerto, cautelas de fuentes y seis pares de texto fuente de narración, entrada y continuidad, revisados en alcance por Luna. Aún no era el dossier 65. El corte ampliado conservaba 64 dossiers, 214 pendientes, 2.645 pantallas, 398 secundarios y 50 referencias. El kit naval privado de 400 permitía observar la base mientras continuaba el diseño; juego verificado seguía falso. Ninguna nueva campaña histórica quedó completamente diseñada o aprobada para materialización por ese cierre.
 
 Siguiente trabajo del arquitecto: cerrar controles, huellas, rosters finitos y perfiles de Jerusalén 70; convertir Yavneh en un dossier individual completo, resolver los cinco casos económicos concretos y continuar los 214 dossiers pendientes. Los cinco casos de revisión pertenecen a los 64 existentes y no restan de los 214 nuevos. Los trabajadores reciben el próximo paquete cuando esas decisiones estén cerradas; el de presencia permanece bloqueado por infraestructura nativa. No se deja una asignación ficticia activa por tener un documento.
 
@@ -107,7 +107,7 @@ La corrección mecánica del episodio02 ya está integrada (`53f5275` → `1a286
 El [paquete de reutilización del runtime civil](SHARED-CIVILIAN-NATIVE-RUNTIME-PACKET.md) asigna a Luna una extracción de tres archivos, con comparación estricta contra la misión privada existente. MiniMax mantiene el inventario de riesgos de los 64 borradores en su unidad: los resultados son WIP hasta corregir los hallazgos y verificar todas las referencias. No se suman sus candidatos a los 54 de la auditoría cívica ni se presentan como fallos de juego.
 
 
-El inventario de MiniMax ya está integrado en `9ef440c5`, con [revisión independiente](../qa/campaign-design/catalogue-design-risk-independent-review.md) y20 comprobaciones enfocadas conformes. Deja de ser una asignación activa: cualquier corrección de contenido requiere un paquete propio cerrado por el arquitecto. La siguiente prioridad funcional es el binding geográfico y el compilador de hogares del episodio02, usando el runtime civil ya extraído; no se delega la selección de una ruta antigua ni la calibración como si estuvieran resueltas. Permanecen214 nuevos dossiers, la revisión de64 borradores y0 campañas históricas completas con prueba ampliada del juego.
+El inventario de MiniMax ya está integrado en `9ef440c5`, con [revisión independiente](../qa/campaign-design/catalogue-design-risk-independent-review.md) y 20 comprobaciones enfocadas conformes. En ese corte dejó de ser una asignación activa: cualquier corrección de contenido requería un paquete propio cerrado por el arquitecto. La prioridad entonces era el binding geográfico y el compilador de hogares del episodio02, usando el runtime civil ya extraído; no se delegaba la selección de una ruta antigua ni la calibración como si estuvieran resueltas. El corte vigente está resumido en [CURRENT-STATE](CURRENT-STATE.md).
 
 
 ## Corte operativo: controlador de hogares y distribución física
@@ -120,16 +120,16 @@ La distribución física propuesta del episodio02 separa17 cuerpos y10 círculos
 
 Luna y GPT-6.1 retomaron y completaron estos trabajos tras los límites de cuota anteriores. Aquellos rechazos quedan como antecedentes; no se presentan como bloqueos actuales ni permiten inferir una cuota futura. La unidad cartográfica vacía de Luna se retiró sin producto.
 
-El arquitecto cerró además un diseño financiero parcial para Yavneh: tres servicios, ocho combinaciones y seis secundarios con reserva finita. Sin secundarios caben8/5/3 combinaciones en fácil/estándar/difícil; con prefijos opcionales,8/7/6. Se verificaron los24 casos y testigos de completar principal más seis secundarios; GPT-6.1 dio conformidad limitada a esos cálculos y cautelas geográficas. El candidato de mundo ya añade22sitios/27conexiones/20accesos locales y40pantallas EN/es-ES, con conformidad documental limitada GPT-6.1. La proyección tipada, geografía aprobada y dossier completo siguen pendientes. f00005/S8 no está listo para materialización y esto no es el dossier65.
+El diseño financiero y la inserción canónica de Yavneh se resumen en [CURRENT-STATE](CURRENT-STATE.md) y en el [informe de inserción](../qa/campaign-design/yavneh-canonical-draft-insertion-report.md). La revisión independiente del 5 de noviembre cubre esa transformación y su preservación, no la aprobación histórica ni el cierre amplio de d00002/S4. Las decisiones y la geografía siguen limitadas por los estados indicados allí.
 
 | Rol | Pendiente verificable | Frente que puede avanzar |
 |---|---|---|
-| Arquitecto gpt-6 |214 dossiers nuevos; revisión de64 existentes; geografía, dificultad, narración y capacidades aún faltantes. |Cierre físico de Jerusalén y dossier completo de Yavneh mientras se prueba la apertura y se ejecutan extracciones acotadas. |
-| MiniMax M3.1 |Materialización progresiva de los278 episodios, compartida con Luna; no278 adicionales por trabajador. |Firma común integrada; siguientes paquetes después de cerrar sus decisiones. |
-| Luna |Investigación y tareas mecánicas del mismo conjunto, sin volumen duplicado. |Proyección de costes secundarios integrada en b4bdc4ee y [revisada](../qa/campaign-design/authored-secondary-cost-projection-review.md); siguiente asignación exige cerrar perfil/mundo completo. |
-| GPT-6.1 |Revisiones independientes por producto y revisión formal solo cuando se complete cada slice. |Contrastar cálculos, datos y código concretos sin atribuir pruebas del motor. |
+| Arquitecto gpt-6 |Cerrar arquitectura/herramientas y decisiones de historia/geografía del episodio siguiente; revisar los borradores y autoría. |Paquetes cerrados y decisiones atribuibles; comenzar por el avance privado gradual de Embers of the Covenant. |
+| MiniMax M3.1 |Implementar solo el siguiente paquete mecánico nativo tras decisión cartográfica de root; avanzar por campaña de forma progresiva. |Un slice oficial, sin inventar historia, presupuesto o terreno ni duplicar tareas de Luna. |
+| Luna |i00013/S1 está aceptada; una unidad Luna ya corrige i00013/S2 tras el hallazgo de overflow. No duplicar la implementación. |Claim propio y revisión de otro modelo; el código WIP no hace disponible la operación en develop. |
+| GPT-6.1 / revisor independiente |Revisar productos distintos al propio y registrar veredictos formales en los slices asignados. |Diff y evidencia del commit exacto; la revisión no acredita juego. |
 
-Contadores sin cambios:278 selecciones/9 odiseas,64 dossiers borrador/214 por redactar,2.645 pantallas bilingües,398 secundarios,50 recursos registrados y26 perfiles. Un prototipo privado con seis variantes; cero campañas históricas completas y cero episodios históricos con prueba ampliada del motor. Los nuevos archivos, muestras y helpers no incrementan esos contadores. No existe una tasa comparable de dossiers por interacción para estimar conversaciones restantes.
+El corte vigente es 278 selecciones/9 odiseas, 65 dossiers/213 sin dossier, 2.689 pantallas, 405 secundarios, 216 principales, 50 recursos y 45 perfiles geográficos únicos. Hay una apertura privada con seis variantes, cero campañas completas y cero campañas históricas plenamente verificadas en el motor. No se ha medido una tasa comparable de producción por interacción; véase [CURRENT-STATE](CURRENT-STATE.md) y el [registro de cortes](../qa/campaign-design/interaction-progress-checkpoints.md).
 
 
-La proyección de costes authored de Luna ya pasó por la fábrica real y el gate: `1bed3ac` → `b4bdc4ee`. Se conserva el valor por defecto al omitir el campo; reparación/comercio/hospitalidad pueden expresar sus costes decididos en referencia. Hubo4 pruebas nuevas y126 de diseño, más validate158/2.138. **No añade hospitalidad nativa**, alternativas v3 nativas ni un dossier. El [candidato de Yavneh](../design/episode-plans/jewish-tradition/02-yavneh-world-plan.md) se integró en b6dff66a como preparación parcial con40pantallas; sus requisitos que describen el helper anterior son el diagnóstico fechado antes de esta entrega. Sigue pendiente enlazar el candidato al perfil tipado y completar sus demás decisiones antes de f00005/S8.
+En el corte de `b4bdc4ee`, la proyección de costes authored de Luna ya había pasado por la fábrica real y el gate: se conserva el valor por defecto al omitir el campo; reparación/comercio/hospitalidad expresan costes en referencia. Hubo cuatro pruebas nuevas y 126 de diseño, más validate 158/2.138. No añadió hospitalidad nativa ni alternativas v3 nativas. El [candidato de Yavneh](../design/episode-plans/jewish-tradition/02-yavneh-world-plan.md) se integró en `b6dff66a` como preparación parcial; después se promovió a dossier 65 mediante `d771747`. Los requisitos que describen el helper anterior son diagnóstico histórico; el estado actual y los gates abiertos están en [CURRENT-STATE](CURRENT-STATE.md).
