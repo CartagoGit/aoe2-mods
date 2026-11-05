@@ -89,7 +89,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - review-log: requested_changes by gpt-6.1-sol — Incomplete delivered scope at 1d59d1f17913: docs/design/odysseys/jewish-tradition.json contains 30 selected episodes but only 1 episodes and 1 episodeBlueprints. Reproduce: git show 1d59d1f17913:docs/design/odysseys/jewish-tradition.json, parse JSON and compare lengths of episodeSelection, episodes and episodeBlueprints. Selection entries alone do not deliver per-episode three difficulty profiles, composed ledgers/events, EN/es screens and plans required by acceptance items1-2. Complete the missing 29 individual dossiers with their sources/cautions/narrator/geography and all required specifications; re-submit evidence before approval. Existing partial work is preserved. This request does not alter S1 done or certify historical/game/native behavior.
 
 ### S5 — The Keys of the Eternal City: expediente de odisea y episodios
-- **Status**: review
+- **Status**: pending
 - **DependsOn**: [S1]
 - **Files**: `docs/design/odysseys/church-of-rome.json`, `docs/wiki/church-of-rome`, `docs/design/maps/church-of-rome`
 - **Gate**: e2e
@@ -98,8 +98,10 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
 - shipped-in: `5a6d584e4799`
-- review-state: in_review
+- review-state: changes_requested
 - review-implementer: minimax-m3.1-flash-preview
+- review-reviewer: gpt-6.1-sol
+- review-log: requested_changes by gpt-6.1-sol — Incomplete delivered scope at e70ace6d8beae5df5625691141bf16226faf0a20: docs/design/odysseys/church-of-rome.json contains 32 selected episodes but only 0 episodes and 0 episodeBlueprints. Reproduce: git show e70ace6d8beae5df5625691141bf16226faf0a20:docs/design/odysseys/church-of-rome.json, parse JSON and compare lengths of episodeSelection, episodes and episodeBlueprints. Selection entries alone do not deliver per-episode three difficulty profiles, composed ledgers/events, EN/es screens and plans required by acceptance items1-2. Complete the missing 32 individual dossiers with their sources/cautions/narrator/geography and all required specifications; re-submit evidence before approval. Existing partial work is preserved. This request does not alter S1 done or certify historical/game/native behavior.
 
 ### S6 — Beyond the Golden Gate: expediente de odisea y episodios
 - **Status**: review
