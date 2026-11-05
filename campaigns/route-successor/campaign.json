@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "id": "route-successor",
+  "publicId": "CDF-T02",
+  "internalName": "CDF_RouteSuccessor",
+  "sourceLocale": "en",
+  "titleKey": "campaign.route-successor.title",
+  "descriptionKey": "campaign.route-successor.description",
+  "mode": "aoe2-de",
+  "status": "fixture",
+  "recommendedPrevious": [],
+  "enforceRequirement": false,
+  "generalNarrator": {
+    "id": "collection-narrator",
+    "role": "general",
+    "identity": "Fictional collection voice; no human identity or recording claimed.",
+    "kind": "fictional",
+    "perspective": "Factual framing of an explicitly fictional engineering fixture.",
+    "register": "Plain and precise.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "Labels the laboratory as fictional and makes no historical claims.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "campaignNarrator": {
+    "id": "route-archivist",
+    "role": "campaign",
+    "identity": "Fictional archivist.",
+    "kind": "fictional",
+    "perspective": "Careful narrator who distinguishes what the static fixture says from data it does not inspect.",
+    "register": "Patient and precise; records rather than commands.",
+    "age": "Adult, fictional persona",
+    "pace": "Measured",
+    "justification": "A fictional persona introduces a standalone recap-presentation test.",
+    "restrictions": [
+      "Not a historical witness; no real person imitated."
+    ],
+    "voices": {}
+  },
+  "characters": [],
+  "sources": [],
+  "claims": [],
+  "introduction": [
+    {
+      "id": "intro-1",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.fact",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 9
+    },
+    {
+      "id": "intro-2",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.handover",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 6
+    },
+    {
+      "id": "intro-3",
+      "speaker": "route-archivist",
+      "textKey": "campaign.route-successor.personal",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 14
+    },
+    {
+      "id": "intro-4",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.advice",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 21
+    }
+  ],
+  "epilogue": [
+    {
+      "id": "epilogue-complete",
+      "speaker": "collection-narrator",
+      "textKey": "campaign.route-successor.victory",
+      "claimIds": [],
+      "delivery": "Clear, concise fictional technical narration",
+      "durationSeconds": 6
+    }
+  ],
+  "scenarioFiles": [
+    "scenarios/01-recap/scenario.json"
+  ],
+  "localization": [
+    {
+      "locale": "en",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "An Open Chronicle",
+        "campaign.route-successor.fact": "This is a fictional technical laboratory. It checks independent campaigns, cumulative choices and recaps, without representing a historical event.",
+        "campaign.route-successor.personal": "I keep what the ledger can tell us, and mark what it cannot. You may open this chronicle with both earlier paths, one path, or no earlier record at all.",
+        "campaign.route-successor.advice": "Recommended earlier: The Roads Remember (CDF-T01). That fictional laboratory offered Route A and Route B as alternative endings; replay could retain both. You may begin here without it. This source fixture shows a static summary and does not inspect your previous record.",
+        "campaign.route-successor.victory": "The recap test is complete. Return to the campaign menu.",
+        "campaign.route-successor.instructions": "Read or skip the campaign recap before starting. The scenario ends after ten seconds of active scenario time; it tests presentation, not historical gameplay.",
+        "campaign.route-successor.description": "An independent fictional recap laboratory that also welcomes new profiles.",
+        "campaign.route-successor.handover": "The archivist will now explain how the earlier records are read.",
+        "scenario.route-successor-recap.title": "An Independent Beginning",
+        "scenario.route-successor-recap.finish-recap": "Wait for the ten-second presentation test to finish.",
+        "scenario.route-successor-recap.intro": "You may begin here. This brief scenario ends automatically.",
+        "scenario.route-successor-recap.marker-name": "Laboratory Marker",
+        "scenario.route-successor-recap.player-name": "Laboratory Reader"
+      }
+    },
+    {
+      "locale": "fr",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Une chronique ouverte",
+        "campaign.route-successor.fact": "Ce laboratoire technique fictif vérifie des campagnes indépendantes, des choix cumulés et des récapitulatifs, sans représenter un événement historique.",
+        "campaign.route-successor.personal": "Je conserve ce que le registre peut nous apprendre et signale ce qu’il ne peut pas. Vous pouvez ouvrir cette chronique avec les deux chemins précédents, un seul, ou sans aucun dossier antérieur.",
+        "campaign.route-successor.advice": "Recommandé auparavant : Les chemins se souviennent (CDF-T01). Ce laboratoire fictif proposait les routes A et B comme fins alternatives ; une nouvelle partie pouvait conserver les deux. Vous pouvez commencer ici sans lui. Cette source présente un résumé statique et ne consulte pas votre dossier précédent.",
+        "campaign.route-successor.victory": "Le test de récapitulatif est terminé. Retournez au menu de campagne.",
+        "campaign.route-successor.instructions": "Lisez ou ignorez le récapitulatif de campagne avant de commencer. Le scénario se termine après dix secondes de temps actif ; il teste la présentation, pas un jeu historique.",
+        "campaign.route-successor.description": "Un laboratoire fictif et indépendant de récapitulatif, également accessible aux nouveaux profils.",
+        "campaign.route-successor.handover": "L’archiviste va maintenant expliquer comment lire les dossiers précédents.",
+        "scenario.route-successor-recap.title": "Un début indépendant",
+        "scenario.route-successor-recap.finish-recap": "Attendez la fin du test de présentation de dix secondes.",
+        "scenario.route-successor-recap.intro": "Vous pouvez commencer ici. Ce bref scénario se termine automatiquement.",
+        "scenario.route-successor-recap.marker-name": "Marqueur du laboratoire",
+        "scenario.route-successor-recap.player-name": "Lecteur du laboratoire"
+      }
+    },
+    {
+      "locale": "it",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Una cronaca aperta",
+        "campaign.route-successor.fact": "Questo laboratorio tecnico immaginario verifica campagne indipendenti, scelte cumulative e riepiloghi, senza rappresentare un evento storico.",
+        "campaign.route-successor.personal": "Conservo ciò che il registro può dirci e segno ciò che non può. Puoi aprire questa cronaca con entrambi i percorsi precedenti, con uno solo o senza alcuna registrazione precedente.",
+        "campaign.route-successor.advice": "Consigliata in precedenza: Le strade ricordano (CDF-T01). Quel laboratorio immaginario offriva i Percorsi A e B come finali alternativi; rigiocando si potevano conservare entrambi. Puoi iniziare qui senza averlo giocato. Questa fonte mostra un riepilogo statico e non consulta la tua registrazione precedente.",
+        "campaign.route-successor.victory": "La prova del riepilogo è completa. Torna al menu della campagna.",
+        "campaign.route-successor.instructions": "Leggi o salta il riepilogo della campagna prima di iniziare. Lo scenario termina dopo dieci secondi di tempo attivo; verifica la presentazione, non il gioco storico.",
+        "campaign.route-successor.description": "Un laboratorio immaginario e indipendente di riepilogo, accessibile anche ai nuovi profili.",
+        "campaign.route-successor.handover": "L’archivista spiegherà ora come vengono letti i registri precedenti.",
+        "scenario.route-successor-recap.title": "Un inizio indipendente",
+        "scenario.route-successor-recap.finish-recap": "Attendi che termini la prova di presentazione di dieci secondi.",
+        "scenario.route-successor-recap.intro": "Puoi iniziare qui. Questo breve scenario termina automaticamente.",
+        "scenario.route-successor-recap.marker-name": "Indicatore del laboratorio",
+        "scenario.route-successor-recap.player-name": "Lettore del laboratorio"
+      }
+    },
+    {
+      "locale": "de",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Eine offene Chronik",
+        "campaign.route-successor.fact": "Dieses fiktive technische Labor prüft unabhängige Kampagnen, kumulative Entscheidungen und Rückblicke, ohne ein historisches Ereignis darzustellen.",
+        "campaign.route-successor.personal": "Ich halte fest, was das Register aussagen kann, und markiere, was es nicht weiß. Du kannst diese Chronik mit beiden früheren Wegen, mit einem oder ohne früheren Eintrag öffnen.",
+        "campaign.route-successor.advice": "Zuvor empfohlen: Wege erinnern sich (CDF-T01). Dieses fiktive Labor bot Route A und Route B als alternative Enden; durch erneutes Spielen konnten beide erhalten bleiben. Du kannst hier ohne das vorherige Labor beginnen. Diese Quellfassung zeigt eine statische Zusammenfassung und liest deinen früheren Spielstand nicht aus.",
+        "campaign.route-successor.victory": "Der Rückblicktest ist abgeschlossen. Kehre zum Kampagnenmenü zurück.",
+        "campaign.route-successor.instructions": "Lies oder überspringe den Kampagnenrückblick vor dem Start. Das Szenario endet nach zehn Sekunden aktiver Szenariozeit; es testet die Präsentation, kein historisches Spiel.",
+        "campaign.route-successor.description": "Ein unabhängiges fiktives Rückblicklabor, das auch neue Profile willkommen heißt.",
+        "campaign.route-successor.handover": "Der Archivar erklärt nun, wie frühere Einträge gelesen werden.",
+        "scenario.route-successor-recap.title": "Ein unabhängiger Anfang",
+        "scenario.route-successor-recap.finish-recap": "Warte, bis der zehnsekündige Präsentationstest beendet ist.",
+        "scenario.route-successor-recap.intro": "Du kannst hier beginnen. Dieses kurze Szenario endet automatisch.",
+        "scenario.route-successor-recap.marker-name": "Labormarker",
+        "scenario.route-successor-recap.player-name": "Labor-Leser"
+      }
+    },
+    {
+      "locale": "ja",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "新しいプレイヤープロファイルでも利用できる、独立した架空の振り返り用ラボ。",
+        "scenario.route-successor-recap.player-name": "ラボの読者",
+        "scenario.route-successor-recap.intro": "ここから始められます。この短いシナリオは自動的に終了します。",
+        "campaign.route-successor.personal": "私は記録簿から分かることを残し、分からないことには印を付けます。この年代記は、先の道筋が両方、片方、またはどちらも記録されていない状態から始められます。",
+        "scenario.route-successor-recap.title": "独立した始まり",
+        "scenario.route-successor-recap.marker-name": "ラボの目印",
+        "campaign.route-successor.victory": "振り返りテストが完了しました。キャンペーンメニューに戻ってください。",
+        "campaign.route-successor.advice": "先に遊ぶ作品：『道は覚えている』（CDF-T01）。この架空のラボにはルートAとルートBという別々の結末があり、再プレイすれば両方を記録できました。これを遊ばずに始めてもかまいません。このソース用見本データは固定の要約を表示するだけで、以前の記録を読み取りません。",
+        "scenario.route-successor-recap.finish-recap": "10秒間の表示テストが終わるまで待ってください。",
+        "campaign.route-successor.title": "開かれた年代記",
+        "campaign.route-successor.instructions": "開始前にキャンペーンの振り返りを読むか、スキップしてください。シナリオはアクティブ時間で10秒後に終了します。これは歴史的なゲームプレイではなく、表示を確認するテストです。",
+        "campaign.route-successor.handover": "記録係がこれから、以前の記録をどう読むか説明します。",
+        "campaign.route-successor.fact": "これは架空の技術検証ラボです。歴史上の出来事を再現せずに、独立したキャンペーン、累積する選択、振り返りを確認します。"
+      }
+    },
+    {
+      "locale": "ko",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "새 플레이어 프로필도 환영하는 독립형 가상 요약 실험실입니다.",
+        "scenario.route-successor-recap.player-name": "실험실 독자",
+        "scenario.route-successor-recap.intro": "여기서 시작할 수 있습니다. 이 짧은 시나리오는 자동으로 끝납니다.",
+        "campaign.route-successor.personal": "기록부가 알려 주는 것은 보존하고 알 수 없는 것은 따로 표시합니다. 이전 경로가 둘 다, 하나만, 또는 전혀 기록되지 않은 상태로 이 연대기를 시작할 수 있습니다.",
+        "scenario.route-successor-recap.title": "독립적인 시작",
+        "scenario.route-successor-recap.marker-name": "실험실 표식",
+        "campaign.route-successor.victory": "요약 테스트가 끝났습니다. 캠페인 메뉴로 돌아가세요.",
+        "campaign.route-successor.advice": "이전 작품 추천: 길은 기억한다(CDF-T01). 이 가상의 실험실에는 경로 A와 경로 B라는 서로 다른 결말이 있었고, 다시 플레이하면 둘 다 기록할 수 있었습니다. 이 작품을 플레이하지 않아도 여기서 시작할 수 있습니다. 이 원본 예시 데이터는 정적인 요약만 보여 주며 이전 기록을 읽지 않습니다.",
+        "scenario.route-successor-recap.finish-recap": "10초 표시 테스트가 끝날 때까지 기다리세요.",
+        "campaign.route-successor.title": "열린 연대기",
+        "campaign.route-successor.instructions": "시작 전에 캠페인 요약을 읽거나 건너뛰세요. 시나리오는 실제 시나리오 시간 10초 후 끝납니다. 역사적 게임플레이가 아니라 표시 기능을 점검합니다.",
+        "campaign.route-successor.handover": "이제 기록 관리자가 이전 기록을 읽는 방법을 설명합니다.",
+        "campaign.route-successor.fact": "이곳은 가상의 기술 실험실입니다. 역사적 사건을 재현하지 않고 독립 캠페인, 누적되는 선택, 요약 기능을 점검합니다."
+      }
+    },
+    {
+      "locale": "pt-BR",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Uma Crônica Aberta",
+        "campaign.route-successor.fact": "Este laboratório técnico fictício verifica campanhas independentes, escolhas cumulativas e recapitulações, sem representar um acontecimento histórico.",
+        "campaign.route-successor.personal": "Guardo o que o registro pode nos dizer e marco o que ele não pode. Você pode abrir esta crônica com os dois caminhos anteriores, com um deles ou sem nenhum registro anterior.",
+        "campaign.route-successor.advice": "Recomendado antes: Os caminhos se lembram (CDF-T01). Aquele laboratório fictício oferecia as Rotas A e B como finais alternativos; jogar novamente podia manter ambas. Você pode começar aqui sem ele. Esta fonte mostra um resumo estático e não consulta seu registro anterior.",
+        "campaign.route-successor.victory": "O teste de recapitulação terminou. Volte ao menu da campanha.",
+        "campaign.route-successor.instructions": "Leia ou ignore a recapitulação da campanha antes de começar. O cenário termina após dez segundos de tempo ativo; ele testa a apresentação, não uma partida histórica.",
+        "campaign.route-successor.description": "Um laboratório fictício e independente de recapitulação, que também recebe novos perfis.",
+        "campaign.route-successor.handover": "O arquivista agora explicará como os registros anteriores são lidos.",
+        "scenario.route-successor-recap.title": "Um Começo Independente",
+        "scenario.route-successor-recap.finish-recap": "Aguarde o fim do teste de apresentação de dez segundos.",
+        "scenario.route-successor-recap.intro": "Você pode começar aqui. Este breve cenário termina automaticamente.",
+        "scenario.route-successor-recap.marker-name": "Marcador do Laboratório",
+        "scenario.route-successor-recap.player-name": "Leitor do Laboratório"
+      }
+    },
+    {
+      "locale": "ru",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Открытая хроника",
+        "campaign.route-successor.fact": "Это вымышленная техническая лаборатория проверяет независимые кампании, накопительные решения и краткие итоги, не изображая историческое событие.",
+        "campaign.route-successor.personal": "Я сохраняю то, что может сообщить журнал, и отмечаю то, чего он не знает. Эту хронику можно открыть с обоими прежними путями, с одним или без прежней записи.",
+        "campaign.route-successor.advice": "Ранее рекомендуется: «Дороги помнят» (CDF-T01). В той вымышленной лаборатории маршруты A и B были альтернативными концовками; повторное прохождение могло сохранить обе. Здесь можно начать и без неё. Эта версия источника показывает статический итог и не читает прежнюю запись.",
+        "campaign.route-successor.victory": "Проверка краткого итога завершена. Вернитесь в меню кампании.",
+        "campaign.route-successor.instructions": "Перед началом прочитайте или пропустите итог кампании. Сценарий завершится через десять секунд активного времени; проверяется подача материала, а не историческая игра.",
+        "campaign.route-successor.description": "Независимая вымышленная лаборатория краткого итога, доступная и новым профилям.",
+        "campaign.route-successor.handover": "Архивариус сейчас объяснит, как читать прежние записи.",
+        "scenario.route-successor-recap.title": "Независимое начало",
+        "scenario.route-successor-recap.finish-recap": "Дождитесь окончания десятисекундной проверки показа.",
+        "scenario.route-successor-recap.intro": "Здесь можно начать. Этот короткий сценарий завершится автоматически.",
+        "scenario.route-successor-recap.marker-name": "Маркер лаборатории",
+        "scenario.route-successor-recap.player-name": "Читатель лаборатории"
+      }
+    },
+    {
+      "locale": "zh-Hans",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "一个可供新玩家档案进入的独立虚构回顾实验室。",
+        "scenario.route-successor-recap.player-name": "实验室读者",
+        "scenario.route-successor-recap.intro": "你可以从这里开始。这个简短场景会自动结束。",
+        "campaign.route-successor.personal": "我会保存记录能够说明的内容，并标明它无法说明的部分。你可以在此前两条路线都已记录、只记录一条，或完全没有此前记录的情况下开启这部编年史。",
+        "scenario.route-successor-recap.title": "独立的开端",
+        "scenario.route-successor-recap.marker-name": "实验室标记",
+        "campaign.route-successor.victory": "回顾测试已完成。请返回战役菜单。",
+        "campaign.route-successor.advice": "建议先玩：《道路铭记》（CDF-T01）。那个虚构实验室提供路线A和路线B这两个不同结局；再次游玩可以保留两者。你也可以不玩它而直接从这里开始。此源数据夹具只显示静态摘要，不会读取你的先前记录。",
+        "scenario.route-successor-recap.finish-recap": "请等待十秒展示测试结束。",
+        "campaign.route-successor.title": "开放编年史",
+        "campaign.route-successor.instructions": "开始前，请阅读或跳过战役回顾。场景将在场景实际运行时间10秒后结束；此测试检查展示效果，不是历史游戏内容。",
+        "campaign.route-successor.handover": "档案管理员现在将说明如何读取先前记录。",
+        "campaign.route-successor.fact": "这是一个虚构的技术实验室，用于检查独立战役、累积选择和回顾内容，不代表任何历史事件。"
+      }
+    },
+    {
+      "locale": "es-LATAM",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Una crónica abierta",
+        "campaign.route-successor.fact": "Este laboratorio técnico ficticio comprueba campañas independientes, decisiones acumulables y resúmenes, sin representar un hecho histórico.",
+        "campaign.route-successor.personal": "Conservo lo que el registro puede decirnos y señalo lo que no. Puedes abrir esta crónica con los dos caminos anteriores, con uno o sin ningún registro previo.",
+        "campaign.route-successor.advice": "Recomendado antes: Los caminos recuerdan (CDF-T01). Aquel laboratorio ficticio ofrecía las rutas A y B como finales alternativos; al volver a jugar podían conservarse ambas. Puedes empezar aquí sin jugarlo. Esta fuente muestra un resumen estático y no consulta tu registro anterior.",
+        "campaign.route-successor.victory": "La prueba del resumen terminó. Vuelve al menú de campaña.",
+        "campaign.route-successor.instructions": "Lee o salta el resumen de campaña antes de empezar. El escenario termina después de diez segundos de tiempo activo; prueba la presentación, no una partida histórica.",
+        "campaign.route-successor.description": "Un laboratorio ficticio e independiente de resumen, que también recibe perfiles nuevos.",
+        "campaign.route-successor.handover": "El archivista explicará ahora cómo se leen los registros anteriores.",
+        "scenario.route-successor-recap.title": "Un comienzo independiente",
+        "scenario.route-successor-recap.finish-recap": "Espera a que termine la prueba de presentación de diez segundos.",
+        "scenario.route-successor-recap.intro": "Puedes empezar aquí. Este breve escenario termina automáticamente.",
+        "scenario.route-successor-recap.marker-name": "Marcador del laboratorio",
+        "scenario.route-successor-recap.player-name": "Lector del laboratorio"
+      }
+    },
+    {
+      "locale": "zh-Hant",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "一個也歡迎新玩家檔案使用的獨立虛構回顧實驗室。",
+        "scenario.route-successor-recap.player-name": "實驗室讀者",
+        "scenario.route-successor-recap.intro": "你可以從這裡開始。這個簡短場景會自動結束。",
+        "campaign.route-successor.personal": "我會保存紀錄能說明的內容，並標明它無法說明的部分。你可以在先前兩條路線都已記錄、只記錄一條，或完全沒有先前紀錄的情況下開啟這部編年史。",
+        "scenario.route-successor-recap.title": "獨立的開端",
+        "scenario.route-successor-recap.marker-name": "實驗室標記",
+        "campaign.route-successor.victory": "回顧測試已完成。請返回戰役選單。",
+        "campaign.route-successor.advice": "建議先玩：《道路銘記》（CDF-T01）。那個虛構實驗室提供路線A與路線B這兩個不同結局；再次遊玩可以保留兩者。你也可以不玩它而直接從這裡開始。此來源資料夾具只顯示靜態摘要，不會讀取你的先前紀錄。",
+        "scenario.route-successor-recap.finish-recap": "請等待十秒呈現測試結束。",
+        "campaign.route-successor.title": "開放編年史",
+        "campaign.route-successor.instructions": "開始前，請閱讀或略過戰役回顧。場景會在場景實際運行時間10秒後結束；此測試檢查呈現效果，不是歷史遊戲內容。",
+        "campaign.route-successor.handover": "檔案管理員現在會說明如何讀取先前紀錄。",
+        "campaign.route-successor.fact": "這是一個虛構的技術實驗室，用來檢查獨立戰役、累積選擇與回顧內容，不代表任何歷史事件。"
+      }
+    },
+    {
+      "locale": "tr",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Açık Kronik",
+        "campaign.route-successor.fact": "Bu kurgusal teknik laboratuvar, tarihî bir olayı temsil etmeden bağımsız senaryoları, birikimli seçimleri ve özetleri sınar.",
+        "campaign.route-successor.personal": "Kaydın bize söyleyebildiklerini saklar, söyleyemediklerini belirtirim. Bu kroniği önceki iki yol, tek yol ya da hiç önceki kayıt olmadan açabilirsin.",
+        "campaign.route-successor.advice": "Önce önerilen: Yollar Hatırlar (CDF-T01). O kurgusal laboratuvar A ve B yollarını alternatif sonlar olarak sunuyordu; yeniden oynama ikisini de koruyabiliyordu. Buradan onsuz başlayabilirsin. Bu kaynak sürümü statik bir özet gösterir ve önceki kaydını okumaz.",
+        "campaign.route-successor.victory": "Özet testi tamamlandı. Kampanya menüsüne dön.",
+        "campaign.route-successor.instructions": "Başlamadan önce kampanya özetini oku veya atla. Senaryo on saniyelik etkin oyun süresinden sonra biter; tarihî oynanışı değil sunumu sınar.",
+        "campaign.route-successor.description": "Yeni profilleri de karşılayan bağımsız, kurgusal bir özet laboratuvarı.",
+        "campaign.route-successor.handover": "Arşivci şimdi önceki kayıtların nasıl okunduğunu açıklayacak.",
+        "scenario.route-successor-recap.title": "Bağımsız Bir Başlangıç",
+        "scenario.route-successor-recap.finish-recap": "On saniyelik sunum testinin bitmesini bekle.",
+        "scenario.route-successor-recap.intro": "Buradan başlayabilirsin. Bu kısa senaryo kendiliğinden biter.",
+        "scenario.route-successor-recap.marker-name": "Laboratuvar İşareti",
+        "scenario.route-successor-recap.player-name": "Laboratuvar Okuyucusu"
+      }
+    },
+    {
+      "locale": "vi",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "Phòng thử nghiệm tóm lược hư cấu, độc lập và cũng dành cho hồ sơ người chơi mới.",
+        "scenario.route-successor-recap.player-name": "Người đọc trong phòng thử nghiệm",
+        "scenario.route-successor-recap.intro": "Bạn có thể bắt đầu ở đây. Màn chơi ngắn này sẽ tự động kết thúc.",
+        "campaign.route-successor.personal": "Tôi lưu lại những gì sổ ghi chép cho biết và đánh dấu những điều nó không thể cho biết. Bạn có thể mở biên niên sử này khi cả hai tuyến trước, chỉ một tuyến hoặc chưa tuyến nào được ghi nhận.",
+        "scenario.route-successor-recap.title": "Khởi đầu độc lập",
+        "scenario.route-successor-recap.marker-name": "Đánh dấu phòng thử nghiệm",
+        "campaign.route-successor.victory": "Đã hoàn tất thử nghiệm tóm lược. Hãy quay lại menu chiến dịch.",
+        "campaign.route-successor.advice": "Đề xuất chơi trước: Những con đường còn ghi dấu (CDF-T01). Phòng thử nghiệm hư cấu đó có hai kết thúc thay thế là Tuyến A và Tuyến B; chơi lại có thể lưu cả hai. Bạn vẫn có thể bắt đầu ở đây mà không cần chơi phòng đó. Mẫu dữ liệu nguồn này chỉ hiển thị bản tóm tắt tĩnh và không đọc hồ sơ trước của bạn.",
+        "scenario.route-successor-recap.finish-recap": "Hãy đợi thử nghiệm trình bày mười giây kết thúc.",
+        "campaign.route-successor.title": "Biên niên sử rộng mở",
+        "campaign.route-successor.instructions": "Hãy đọc hoặc bỏ qua phần tóm lược chiến dịch trước khi bắt đầu. Màn chơi kết thúc sau mười giây thời gian hoạt động của màn chơi; đây là thử nghiệm trình bày, không phải lối chơi lịch sử.",
+        "campaign.route-successor.handover": "Người lưu trữ sẽ giải thích cách đọc những hồ sơ trước đây.",
+        "campaign.route-successor.fact": "Đây là phòng thử nghiệm kỹ thuật hư cấu. Phòng này kiểm tra các chiến dịch độc lập, lựa chọn được tích lũy và phần tóm lược, không tái hiện sự kiện lịch sử."
+      }
+    },
+    {
+      "locale": "es-ES",
+      "status": "draft",
+      "reviewer": "Draft only; linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Una crónica abierta",
+        "campaign.route-successor.fact": "Este es un laboratorio técnico ficticio. Comprueba campañas independientes, elecciones acumulativas y recapitulaciones sin representar un hecho histórico.",
+        "campaign.route-successor.personal": "Conservo lo que el registro puede contarnos y señalo lo que no puede. Puedes abrir esta crónica con ambos caminos anteriores, con uno o sin ningún registro previo.",
+        "campaign.route-successor.advice": "Se recomienda jugar antes Los caminos recuerdan (CDF-T01). Aquel laboratorio ficticio ofrecía las rutas A y B como finales alternativos; al rejugar podían conservarse ambas. Puedes empezar aquí sin jugarlo. Este fixture de fuentes muestra un resumen estático y no consulta tu registro previo.",
+        "campaign.route-successor.victory": "La prueba de recapitulación ha terminado. Vuelve al menú de campañas.",
+        "campaign.route-successor.instructions": "Lee o salta la recapitulación de campaña antes de empezar. El escenario termina tras diez segundos de tiempo activo; prueba presentación, no juego histórico.",
+        "campaign.route-successor.description": "Un laboratorio ficticio de recapitulación independiente que también admite perfiles nuevos.",
+        "campaign.route-successor.handover": "El archivista explicará ahora cómo se leen los registros anteriores.",
+        "scenario.route-successor-recap.title": "Un comienzo independiente",
+        "scenario.route-successor-recap.finish-recap": "Espera a que termine la prueba de presentación de diez segundos.",
+        "scenario.route-successor-recap.intro": "Puedes empezar aquí. Este breve escenario termina automáticamente.",
+        "scenario.route-successor-recap.marker-name": "Marcador del laboratorio",
+        "scenario.route-successor-recap.player-name": "Lector del laboratorio"
+      }
+    },
+    {
+      "locale": "pl",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; independent linguistic review pending.",
+      "strings": {
+        "campaign.route-successor.title": "Otwarta kronika",
+        "campaign.route-successor.fact": "To fikcyjne laboratorium techniczne sprawdza niezależne kampanie, kumulujące się wybory i podsumowania, nie przedstawiając wydarzenia historycznego.",
+        "campaign.route-successor.personal": "Zapisuję to, czego możemy dowiedzieć się z rejestru, i zaznaczam, czego nie mówi. Możesz otworzyć tę kronikę z obiema wcześniejszymi drogami, jedną albo bez wcześniejszego zapisu.",
+        "campaign.route-successor.advice": "Wcześniej zalecana: Drogi pamiętają (CDF-T01). To fikcyjne laboratorium oferowało Trasy A i B jako alternatywne zakończenia; ponowna rozgrywka mogła zachować obie. Możesz zacząć tutaj bez niego. Ta wersja źródłowa pokazuje statyczne podsumowanie i nie odczytuje wcześniejszego zapisu.",
+        "campaign.route-successor.victory": "Test podsumowania ukończony. Wróć do menu kampanii.",
+        "campaign.route-successor.instructions": "Przed rozpoczęciem przeczytaj lub pomiń podsumowanie kampanii. Scenariusz kończy się po dziesięciu sekundach aktywnego czasu; testuje prezentację, nie rozgrywkę historyczną.",
+        "campaign.route-successor.description": "Niezależne, fikcyjne laboratorium podsumowań, dostępne również dla nowych profili.",
+        "campaign.route-successor.handover": "Archiwista wyjaśni teraz sposób odczytu wcześniejszych zapisów.",
+        "scenario.route-successor-recap.title": "Niezależny początek",
+        "scenario.route-successor-recap.finish-recap": "Poczekaj na koniec dziesięciosekundowego testu prezentacji.",
+        "scenario.route-successor-recap.intro": "Możesz zacząć tutaj. Ten krótki scenariusz kończy się automatycznie.",
+        "scenario.route-successor-recap.marker-name": "Znacznik laboratoryjny",
+        "scenario.route-successor-recap.player-name": "Czytelnik laboratoryjny"
+      }
+    },
+    {
+      "locale": "hi",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "नई खिलाड़ी प्रोफ़ाइलों का भी स्वागत करने वाली स्वतंत्र काल्पनिक पुनरावलोकन परीक्षणशाला।",
+        "scenario.route-successor-recap.player-name": "परीक्षणशाला का पाठक",
+        "scenario.route-successor-recap.intro": "आप यहाँ से शुरू कर सकते हैं। यह छोटा परिदृश्य अपने आप समाप्त होगा।",
+        "campaign.route-successor.personal": "लेखा-पुस्तिका जो बता सकती है, मैं उसे रखता हूँ और जो नहीं बता सकती, उसे चिह्नित करता हूँ। आप इस वृत्तांत को पहले के दोनों मार्गों, केवल एक मार्ग, या बिना किसी पुराने लेखे के खोल सकते हैं।",
+        "scenario.route-successor-recap.title": "एक स्वतंत्र शुरुआत",
+        "scenario.route-successor-recap.marker-name": "परीक्षणशाला चिह्न",
+        "campaign.route-successor.victory": "पुनरावलोकन परीक्षण पूरा हुआ। अभियान मेनू पर लौटें।",
+        "campaign.route-successor.advice": "पहले खेलने की सिफारिश: रास्ते याद रखते हैं (CDF-T01)। उस काल्पनिक परीक्षणशाला में मार्ग A और मार्ग B दो वैकल्पिक अंत थे; दोबारा खेलने पर दोनों दर्ज रह सकते थे। आप उसे खेले बिना यहाँ शुरू कर सकते हैं। यह स्रोत नमूना केवल स्थिर सारांश दिखाता है और आपका पिछला लेखा नहीं पढ़ता।",
+        "scenario.route-successor-recap.finish-recap": "दस सेकंड के प्रस्तुति परीक्षण के समाप्त होने तक प्रतीक्षा करें।",
+        "campaign.route-successor.title": "एक खुला वृत्तांत",
+        "campaign.route-successor.instructions": "शुरू करने से पहले अभियान का पुनरावलोकन पढ़ें या छोड़ दें। परिदृश्य के सक्रिय समय के दस सेकंड बाद यह समाप्त होता है; यह प्रस्तुति की जाँच है, ऐतिहासिक खेल नहीं।",
+        "campaign.route-successor.handover": "अभिलेखपाल अब बताएगा कि पहले के लेखे कैसे पढ़े जाते हैं।",
+        "campaign.route-successor.fact": "यह एक काल्पनिक तकनीकी परीक्षणशाला है। यह किसी ऐतिहासिक घटना को दर्शाए बिना स्वतंत्र अभियानों, संचित विकल्पों और पुनरावलोकन की जाँच करती है।"
+      }
+    },
+    {
+      "locale": "ms",
+      "status": "draft",
+      "reviewer": "Draft translation by gpt-6-luna; terminology/locale review pending.",
+      "strings": {
+        "campaign.route-successor.description": "Makmal imbas kembali fiksyen yang berdiri sendiri dan turut menerima profil baharu.",
+        "scenario.route-successor-recap.player-name": "Pembaca Makmal",
+        "scenario.route-successor-recap.intro": "Anda boleh bermula di sini. Senario ringkas ini tamat secara automatik.",
+        "campaign.route-successor.personal": "Saya menyimpan perkara yang dapat diberitahu oleh lejar dan menandakan perkara yang tidak dapat dipastikannya. Anda boleh membuka kronik ini dengan kedua-dua laluan terdahulu, satu laluan sahaja, atau tanpa sebarang catatan terdahulu.",
+        "scenario.route-successor-recap.title": "Permulaan Bebas",
+        "scenario.route-successor-recap.marker-name": "Penanda Makmal",
+        "campaign.route-successor.victory": "Ujian imbas kembali selesai. Kembali ke menu kempen.",
+        "campaign.route-successor.advice": "Disyorkan untuk dimainkan dahulu: Jalan-Jalan yang Diingati (CDF-T01). Makmal fiksyen itu menawarkan Laluan A dan Laluan B sebagai pengakhiran berbeza; bermain semula boleh mengekalkan kedua-duanya. Anda boleh bermula di sini tanpa memainkannya. Contoh data sumber ini memaparkan ringkasan statik sahaja dan tidak membaca catatan terdahulu anda.",
+        "scenario.route-successor-recap.finish-recap": "Tunggu ujian paparan sepuluh saat selesai.",
+        "campaign.route-successor.title": "Kronik Terbuka",
+        "campaign.route-successor.instructions": "Baca atau langkau imbas kembali kempen sebelum bermula. Senario tamat selepas sepuluh saat masa senario aktif; ujian ini menyemak paparan, bukan permainan sejarah.",
+        "campaign.route-successor.handover": "Pengarkib akan menerangkan cara catatan terdahulu dibaca.",
+        "campaign.route-successor.fact": "Ini makmal teknikal fiksyen. Makmal ini menguji kempen bebas, pilihan terkumpul dan imbas kembali tanpa menggambarkan peristiwa sejarah."
+      }
+    }
+  ],
+  "assets": [],
+  "editorial": {
+    "neutrality": "Fictional technical fixture; no historical subject or claim.",
+    "sensitiveDepictions": "No sensitive historical depiction; abstract laboratory only.",
+    "anachronisms": "The setting is explicitly fictional and uses game units only as technical markers.",
+    "review": "draft",
+    "reviewer": "Awaiting independent editorial review."
+  },
+  "compatibility": [
+    {
+      "id": "game-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "save-load",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "progress-cross-campaign",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "multi-mod-i18n",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "difficulty",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "slideshow",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    },
+    {
+      "id": "audio",
+      "result": "pending",
+      "gameBuild": "Not tested",
+      "platform": "Not tested",
+      "artifactSha256": "Not available",
+      "reviewer": "Pending engine test",
+      "notes": "No game execution evidence; source validation does not establish compatibility."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "classification": "bounded modern research download; no ancient geography or gameplay approval",
+  "request": {
+    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bway%5B%22natural%22%3D%22coastline%22%5D%2841.000%2C28.930%2C41.045%2C29.010%29%3Bout+geom%3B",
+    "query": "[out:json][timeout:25];way[\"natural\"=\"coastline\"](41.000,28.930,41.045,29.010);out geom;",
+    "sha256": "2fb54f325f22d6d56fd6e97ae90e1422c8bcad323981c8fcfe68fb7a115c516f",
+    "bytes": 88776,
+    "osm3s": {
+      "timestamp_osm_base": "2026-10-24T14:57:36Z",
+      "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "elements": 60
+  },
+  "sourceRawPath": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.raw.json",
+  "derivedGeoJsonPath": "docs/research/odyssey-research/geography/constantinople-modern-osm-coastline.geojson",
+  "sourceRawSha256": "2fb54f325f22d6d56fd6e97ae90e1422c8bcad323981c8fcfe68fb7a115c516f",
+  "derivedSha256": "529eb5556e12a6ff88f75242ae4aebb0949c4764b9a1c956595cdf1f4ae2709d",
+  "wayCount": 60,
+  "coordinateCount": 1184,
+  "coordinateOrder": "GeoJSON longitude,latitude from explicitly named source fields; no guessing or geocoding",
+  "verification": "Compared every coordinate, way ID, node ID and tag in the derived FeatureCollection against the retained unmodified response; no interpolation, filtering or joining.",
+  "licensePageRead": "https://www.openstreetmap.org/copyright",
+  "licenseScope": "Read licensing and attribution sections. ODbL applies to map data; documentation and the Overpass software have separate licenses. Display attribution on the research plot and retain data license.",
+  "modernLimits": [
+    "natural=coastline lines are not closed water/land polygons",
+    "snapshot includes modern quays, reclamation and shoreline engineering",
+    "coastline tag completeness and source precision are not independently certified",
+    "geometry alone cannot certify the380shoreline, slope, building footprint or walkable corridor",
+    "query returns complete ways, not a geometrically clipped bbox"
+  ],
+  "collectionImpact": {
+    "previousAdditionalResources": 37,
+    "newRawAndDerivedResources": 2,
+    "additionalResourcesNow": 39
+  }
+}

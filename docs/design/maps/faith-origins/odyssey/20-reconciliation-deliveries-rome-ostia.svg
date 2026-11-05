@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="A Letter Across the Divide geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">A Letter Across the Divide</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">380 × 380 · rome-ostia · N ↑ E →</text>
+<polyline points="55.00,469.12 73.04,491.76" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="73.04,491.76 65.43,605.12" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline points="65.43,605.12 55.00,641.27" fill="none" stroke="#5aa4b8" stroke-width="2"/>
+<polyline data-control="schematic-water" points="55.36,85.00 55.00,86.73" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="55.00,546.83 74.02,700.18" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="74.02,700.18 55.00,709.48" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-corridor="north-drafts" points="362.01,400.33 318.81,235.89 520.39,410.00 599.58,264.91" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-drafts: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="south-drafts" points="362.01,400.33 297.20,603.46 520.39,410.00 599.58,264.91" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>south-drafts: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="relief" points="318.81,235.89 362.01,400.33 297.20,603.46" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>relief: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="362.01" cy="400.33" r="20" fill="none" stroke="#91512f"/>
+<text x="385.01" y="400.33" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Central courier court</text>
+<circle cx="318.81" cy="235.89" r="20" fill="none" stroke="#91512f"/>
+<text x="341.81" y="235.89" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Northern request court</text>
+<circle cx="297.20" cy="603.46" r="20" fill="none" stroke="#91512f"/>
+<text x="320.20" y="603.46" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Southern request court</text>
+<circle cx="520.39" cy="410.00" r="20" fill="none" stroke="#91512f"/>
+<text x="543.39" y="410.00" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Eastern preparation yard</text>
+<circle cx="599.58" cy="264.91" r="20" fill="none" stroke="#91512f"/>
+<text x="622.58" y="264.91" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Inland dispatch district</text>
+<text x="730" y="425" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="449" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="473" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="497" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="521" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="545" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="569" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="593" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [12.48, 41.87, 12.555, 41.93]; cosine-corrected longitude; approximate districts</text>
+</svg>
