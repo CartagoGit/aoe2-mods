@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "date": "2026-10-18",
+    "author": "gpt-6-luna",
+    "unit": "d00002/S1",
+    "workRef": "wip/gpt-6-luna/implement/d00002-S1-g1/jewish-opening-sources",
+    "scope": "Bounded source collection for the first four existing jewish-tradition episodes; no independent historical review, gameplay, event, coordinate, voice, or mechanic selection."
+  },
+  "consultedProjectMaterials": {
+    "episodeSelection": "docs/design/odysseys/jewish-tradition.json; reviewed only to identify the existing selection context and claims.",
+    "priorAudits": [
+      "docs/research/odyssey-research/jewish-first-act-source-audit.json",
+      "docs/research/odyssey-research/jewish-first-ten-source-audit-v2.json"
+    ],
+    "priorAuditAttribution": "These audits were consulted as existing work products. Their earlier source consultations are not attributed to this collection author; only source consultations listed below were personally performed for this file."
+  },
+  "sources": [
+    {
+      "id": "josephus-war-6",
+      "kind": "ancient narrative source",
+      "title": "The Jewish War, Book VI",
+      "author": "Flavius Josephus",
+      "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+      "editionTranslation": "William Whiston English translation, hosted by the University of Chicago; no Greek critical edition consulted.",
+      "locators": ["VI.4.5", "VI.4.7", "VI.9.2–4"],
+      "passagesPersonallyConsulted": "Book VI online text, especially the Temple fire narrative at VI.4 and the conclusion of the siege at VI.9; the date at VI.4.5 was also checked in the page's indexed excerpt.",
+      "supports": ["Josephus dates the Temple's destruction to the tenth of Lous (Ab) in his account (VI.4.5).", "His narrative describes fire amid fighting and reports differing intentions and actions around the Temple; claims about responsibility should remain attributed to Josephus rather than stated as uncontested fact."],
+      "limits": ["A partisan literary account, not a neutral transcript; the Whiston translation and the cited passages do not settle every dispute about the fire's cause.", "It supports the broad destruction context, not a precise civilian refuge, neighborhood, school, or postwar route."]
+    },
+    {
+      "id": "josephus-life-37",
+      "kind": "ancient autobiographical narrative",
+      "title": "Life, §37",
+      "author": "Flavius Josephus",
+      "url": "https://penelope.uchicago.edu/josephus/autobiog.html",
+      "editionTranslation": "William Whiston English translation, hosted by the University of Chicago.",
+      "locators": ["§37"],
+      "passagesPersonallyConsulted": "§37, listing Jamnia among places Josephus says he fortified in Upper Galilee before the fall of Jerusalem.",
+      "supports": ["Josephus uses the name Jamnia for a Galilean fortified place in his pre-70 narrative."],
+      "limits": ["This is not evidence for a post-70 rabbinic center at coastal Yavneh; the shared English place-name should not collapse distinct geographical contexts."]
+    },
+    {
+      "id": "mishnah-rh-4",
+      "kind": "rabbinic legal compilation",
+      "title": "Mishnah Rosh Hashanah 4.1–4.4",
+      "url": "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/c/1118/files/2022/08/Oxford-Mishnah-Rosh-Hashanah.pdf",
+      "editionTranslation": "Author copy preview of The Oxford Annotated Mishnah, edited by Shaye J. D. Cohen, Robert Goldenberg, and Hayim Lapin (Oxford University Press, 2022); English translation and commentary in that edition.",
+      "locators": ["4.1–4.4; PDF pp. 11–12 in the served preview"],
+      "passagesPersonallyConsulted": "Full English text of 4.1–4.4 and the accompanying commentary note on Yavneh in the PDF.",
+      "supports": ["4.1 attributes a post-Temple shofar enactment to Yohanan ben Zakkai and preserves disagreement over whether the rule applied only at Yavneh or wherever a court sat.", "4.2 distinguishes Jerusalem from Yavneh and refers to the court itself; 4.3–4.4 attribute further calendrical or ritual arrangements to Yohanan ben Zakkai.", "The passage remembers legal practice through attributed rules and disagreement, including a court at Yavneh."],
+      "limits": ["The Mishnah is a later edited compilation, commonly dated around 200 CE; these units are not contemporaneous minutes or securely dated to 70–80 CE.", "The text does not document a single founding date, a school building, a supply operation, a city-to-city network, or a canon-closing council.", "The accompanying editorial note is modern commentary, distinct from the Mishnah's wording."]
+    },
+    {
+      "id": "mishnah-yadayim-3-5",
+      "kind": "rabbinic legal compilation",
+      "title": "Mishnah Yadayim 3:5",
+      "url": "https://www.halakhah.com/pdf/taharoth/Yadayim.pdf",
+      "editionTranslation": "English PDF served under the title 'Mishna - Yadayim (E)'; the translator and edition are not identified in the served PDF, so no translator is assigned here.",
+      "locators": ["3:5, PDF p. 5; editorial footnote 26 on PDF p. 6 is distinguished from the Mishnah text"],
+      "passagesPersonallyConsulted": "Full passage in 3:5, including the reported positions on Song of Songs and Ecclesiastes, the 72 elders, and Akiva's response; footnote 26 was read separately as editorial commentary.",
+      "supports": ["The passage reports disagreement over whether Song of Songs and Ecclesiastes render hands unclean, associates a decision with a day when Eleazar ben Azariah was appointed head of the academy, and reports Akiva's defense of Song of Songs."],
+      "limits": ["The passage itself does not locate the discussion at Yavneh, date it to 90–100 CE, describe a council, or announce universal canon closure.", "The footnote's explanation connecting hand-impurity to canon status is editorial interpretation, not the wording of the Mishnah."]
+    },
+    {
+      "id": "mishnah-taanit-4-6",
+      "kind": "rabbinic legal compilation",
+      "title": "Mishnah Ta'anit 4:6",
+      "url": "https://www.sefaria.org/Mishnah_Ta%27anit.4.6?lang=en",
+      "editionTranslation": "Sefaria English display; translator attribution was not captured in the rendered material consulted.",
+      "locators": ["4:6"],
+      "passagesPersonallyConsulted": "Indexed text excerpt, which states the fast commemorates the destruction of both Temples on the ninth of Av; the full Sefaria page rendered as a JavaScript shell in this access path.",
+      "supports": ["Later Jewish commemorative tradition associates the Temple destruction observance with the ninth of Av."],
+      "limits": ["This is a later commemorative framing, not an eyewitness date report that displaces Josephus's tenth-of-Lous statement."]
+    },
+    {
+      "id": "bavli-taanit-29a",
+      "kind": "later rabbinic discussion",
+      "title": "Babylonian Talmud, Ta'anit 29a",
+      "url": "https://www.sefaria.org/Taanit.29?lang=en",
+      "editionTranslation": "William Davidson Talmud English display on Sefaria (Koren–Steinsaltz); consulted via indexed text excerpts.",
+      "locators": ["29a"],
+      "passagesPersonallyConsulted": "Indexed excerpt describing the fire beginning near the end of 9 Av and burning through 10 Av, and Yohanan's counterfactual preference for the tenth-day fast; full page was not available in the rendered access path.",
+      "supports": ["A later rabbinic discussion offers a tradition that distinguishes the onset of the fire from the day most of the sanctuary burned."],
+      "limits": ["This is later interpretive tradition, not independent contemporaneous corroboration of the siege chronology."]
+    },
+    {
+      "id": "bavli-gittin-56",
+      "kind": "later rabbinic narrative",
+      "title": "Babylonian Talmud, Gittin 56a–b: rabbinic account of the siege",
+      "url": "https://cojs.org/babylonian_talmud_gittin_56a-b-_the_rabbinic_account_of_the_siege/",
+      "editionTranslation": "COJS English presentation; the rendered page does not identify translator or edition.",
+      "locators": ["Gittin 56a–b; COJS page paragraphs 1–3 and 6–8"],
+      "passagesPersonallyConsulted": "The presented account of Yohanan ben Zakkai's escape/request and its mention of Yavneh and its sages.",
+      "supports": ["A later rabbinic literary tradition links Yohanan ben Zakkai with Yavneh and sages after the siege."],
+      "limits": ["The page does not provide a contemporaneous record, exact date, or archaeological confirmation of the escape, negotiations, school premises, or supplies.", "Its account should be presented as rabbinic memory, not as a corroborated event transcript."]
+    },
+    {
+      "id": "cohen-significance-yavneh",
+      "kind": "modern scholarly study",
+      "title": "The Significance of Yavneh: Pharisees, Rabbis, and the End of Jewish Sectarianism",
+      "author": "Shaye J. D. Cohen",
+      "publication": "Hebrew Union College Annual 55 (1984), pp. 27–53",
+      "url": "https://cojs.org/the_significance_of_yavneh-_pharisees-_rabbis-_and_the_end_of_jewish_sectarianism-_shaye_j-d-_cohen-_hebrew_union_college_annual_55/",
+      "editionTranslation": "Full article reproduced by COJS; original English article.",
+      "locators": ["COJS page paragraphs 1–2, 14–15, and concluding discussion"],
+      "passagesPersonallyConsulted": "Opening framing of the Jamnia hypothesis, discussion of rabbinic disagreement, and conclusion on what the evidence can establish.",
+      "supports": ["Cohen argues that evidence does not substantiate the familiar reconstruction of a formal Jamnia synod that settled the biblical canon and expelled dissenters; he emphasizes evidence of disagreement and cautions that the Yohanan–Vespasian narrative is legendary."],
+      "limits": ["This is a scholarly argument, not a primary source or an uncontested consensus statement; the article's interpretation should be attributed to Cohen."]
+    },
+    {
+      "id": "rosik-jamnia-abstract",
+      "kind": "modern scholarly article metadata and abstract",
+      "title": "The Christian Question in Jamnia Academy at the End of the 1st Century AD? An Attempt to Re- and De-construct the 'Myth'",
+      "author": "Mariusz Rosik",
+      "publication": "Verbum Vitae; DOI 10.31743/vv.14060",
+      "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+      "editionTranslation": "Publisher page metadata and abstract only; full text was not consulted.",
+      "locators": ["Publisher abstract"],
+      "passagesPersonallyConsulted": "Title, bibliographic metadata, and abstract summary of the article's argument.",
+      "supports": ["The abstract confirms that claims about a Jamnia synod and canon formation remain debated in modern scholarship and that authors can advance different reconstructions."],
+      "limits": ["Because only the abstract was consulted, its positive thesis about Christian exclusion is not used as evidence here and is not summarized beyond noting scholarly disagreement."]
+    },
+    {
+      "id": "cojs-tannaitic-literature",
+      "kind": "modern secondary synthesis",
+      "title": "Tannaitic Literature (circa 70–3rd century CE)",
+      "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "editionTranslation": "COJS online article; no author attribution is visible in the rendered text consulted.",
+      "locators": ["Page paragraphs 2–5"],
+      "passagesPersonallyConsulted": "The discussion of Mishnah redaction, attributed sayings, debate, and post-Temple centers.",
+      "supports": ["The synthesis places Mishnah redaction around 200 CE and names multiple post-Temple centers, including Yavneh, within a broader history of rabbinic activity."],
+      "limits": ["A secondary overview with no author shown in the rendered page; it does not establish a dated route network, a single academy's institutional continuity, or a particular building."]
+    },
+    {
+      "id": "what-is-the-mishnah-state-question",
+      "kind": "modern academic volume overview",
+      "title": "What Is the Mishnah? The State of the Question",
+      "publication": "Harvard University Press, 2023; edited by Shaye J. D. Cohen; consulted volume introduction and Hayim Lapin chapter excerpt.",
+      "url": "https://www.jstor.org/stable/jj.423484",
+      "editionTranslation": "English academic volume; JSTOR preview excerpts.",
+      "locators": ["Introduction excerpt and Hayim Lapin chapter excerpt"],
+      "passagesPersonallyConsulted": "Preview passages stating that the Mishnah was composed in the Land of Israel around 200 CE and summarizing the conventional approximate date.",
+      "supports": ["Provides a modern scholarly dating frame for the compilation as a whole, around 200 CE."],
+      "limits": ["A volume overview and chapter excerpt, not proof that every attributed tradition originated at the final redaction date or at the episode date."]
+    },
+    {
+      "id": "tel-yavne-area-g6",
+      "kind": "archaeological preliminary report",
+      "title": "Tel Yavne, Area G6",
+      "authors": ["Elie Haddad", "Liat Nadav-Ziv", "Jon Seligman", "Alla Nagorsky", "Anastassia Dobrinin", "Jenny Vasiutin", "Lior Sandberg", "Shulamit Terem"],
+      "publication": "Hadashot Arkheologiyot – Excavations and Surveys in Israel 136 (2024), preliminary report, 29 December 2024",
+      "url": "https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26592&mag_id=137",
+      "editionTranslation": "English Israel Antiquities Authority excavation report.",
+      "locators": ["Report overview and excavation context; early Roman cemetery discussion, report paragraphs 2–3 and 15–17"],
+      "passagesPersonallyConsulted": "Excavation dates and area at Tel Yavne; cemetery description and dating based on burial jars to late first–mid-second century CE.",
+      "supports": ["The report documents an early Roman cemetery in an excavated sector at Tel Yavne, with graves dated by associated jars to a broad late first–mid-second-century range."],
+      "limits": ["The report does not identify the cemetery occupants as rabbis or locate a rabbinic school there; this excavation sector cannot establish a citywide absence or presence of such an institution.", "The report provides archaeological context, not proof for the literary Yavneh narratives or exact episode locations."]
+    }
+  ],
+  "episodeMaps": [
+    {
+      "episodeId": "01-a-city-of-names",
+      "existingSelectionContext": "Existing selection frames the episode around Jerusalem in 70 CE and the Roman destruction of the Temple.",
+      "sourceIds": ["josephus-war-6", "mishnah-taanit-4-6", "bavli-taanit-29a"],
+      "carefulClaimsSupported": ["Josephus narrates the Temple's destruction during the siege and dates it to the tenth of Lous/Ab.", "Later Jewish commemorative and rabbinic traditions center observance on 9 Av and preserve a distinction between the fire's onset and the day of greatest burning."],
+      "disagreementsAndLimits": ["Josephus's tenth-of-Lous report and later rabbinic 9 Av tradition are different source layers; Ta'anit 29a reconciles the difference through a later tradition, not independent eyewitness testimony.", "Josephus's competing accounts of intentions and the fire mean that causation must remain attributed and qualified."],
+      "geographicMap": "Broad Jerusalem siege/destruction context only. These readings do not locate a specific neighborhood, civilian evacuation route, refuge, or named street.",
+      "datingLimit": "The selected episode date is 70 CE; Josephus provides an ancient narrative date, while later rabbinic texts preserve commemorative interpretation."
+    },
+    {
+      "episodeId": "02-refuge-and-school-supply-yavneh",
+      "existingSelectionContext": "Existing selection associates Yohanan ben Zakkai and sages with rabbinic activity at Yavneh after 70; the selection does not require a formal council or canon closure.",
+      "sourceIds": ["mishnah-rh-4", "bavli-gittin-56", "josephus-life-37", "cojs-tannaitic-literature", "tel-yavne-area-g6"],
+      "carefulClaimsSupported": ["Mishnah Rosh Hashanah remembers legal enactments attributed to Yohanan ben Zakkai and disagreements concerning court practice at Yavneh.", "A later Bavli narrative links Yohanan ben Zakkai with Yavneh and its sages.", "Modern synthesis places Yavneh among several post-Temple centers."],
+      "disagreementsAndLimits": ["The escape/request story is a later literary memory; Josephus does not corroborate the episode in the passages consulted.", "Josephus's Life §37 uses Jamnia for a fortified Galilean place before 70, not for coastal Yavneh after the war.", "Neither the sources nor the archaeological report establishes a precise founding year, building, school-supply operation, or institutional continuity from a single event."],
+      "geographicMap": "Yavneh as a broad place-name in later rabbinic memory; no specific school site or refuge location can be mapped from these readings. Archaeology is limited to the excavated Tel Yavne area reported by IAA.",
+      "datingLimit": "The selected c.70–80 CE bracket is an editorial episode frame, not a date stated by these cited traditions. The Mishnah's compilation is later (around 200 CE); the Bavli is later still."
+    },
+    {
+      "episodeId": "03-distributed-study-network-yavneh",
+      "existingSelectionContext": "Existing selection frames continued legal traditions and scholarly activity after the Temple's destruction; the inherited audit cautions against a unified academy or mapped network.",
+      "sourceIds": ["mishnah-rh-4", "cojs-tannaitic-literature", "what-is-the-mishnah-state-question", "tel-yavne-area-g6"],
+      "carefulClaimsSupported": ["Mishnah Rosh Hashanah preserves legal discussion and attributed rules associated with a court at Yavneh.", "A modern secondary synthesis names Yavneh among several centers and describes a longer process of rabbinic literary transmission."],
+      "disagreementsAndLimits": ["The sources consulted do not give a dated inter-city route, named correspondence, or institutional network map.", "A list of centers in a later synthesis cannot be converted into a contemporary travel or collaboration graph.", "Archaeological evidence from one excavated sector cannot locate the literary court or identify its participants."],
+      "geographicMap": "Only broad named-center context; no individual nodes, travel paths, or academy footprint are source-supported by this collection.",
+      "datingLimit": "The selected c.80–100 CE bracket is not independently established by the consulted textual passages. Attributed traditions in a compilation redacted around 200 CE cannot automatically be dated to that bracket."
+    },
+    {
+      "episodeId": "04-witness-comparison-yavneh",
+      "existingSelectionContext": "Existing selection invokes later rabbinic tradition and witness comparison; the inherited audit notes that Mishnah Yadayim 3:5 does not itself locate a debate at Yavneh or date it to c.90–100.",
+      "sourceIds": ["mishnah-yadayim-3-5", "mishnah-rh-4", "cohen-significance-yavneh", "rosik-jamnia-abstract"],
+      "carefulClaimsSupported": ["Mishnah Yadayim reports disagreement over the status of Song of Songs and Ecclesiastes and a tradition involving 72 elders and Eleazar ben Azariah's appointment.", "Mishnah Rosh Hashanah preserves disagreement over legal practice associated with Yavneh, but it concerns ritual/court rules, not the Yadayim literary-status discussion."],
+      "disagreementsAndLimits": ["Yadayim 3:5 does not name Yavneh, state a date, or describe a formal canon council.", "Cohen rejects the traditional reconstruction of a canon-settling Jamnia synod on evidentiary grounds; Rosik's publisher abstract signals a different scholarly argument about exclusion, but only the abstract was read and its thesis is not adopted here.", "The PDF's editorial footnote connecting hand-impurity to canon status must not be confused with the primary passage itself."],
+      "geographicMap": "No venue can be assigned from Yadayim 3:5; the title or neighboring Yavneh material does not supply a location for this passage.",
+      "datingLimit": "The selected c.90–100 CE bracket is an existing editorial frame, not a date stated in Yadayim 3:5. The Mishnah as a compilation is conventionally placed around 200 CE; earlier origins for particular traditions remain uncertain."
+    }
+  ],
+  "crossEpisodeNotes": [
+    "Do not conflate Josephus's Galilean Jamnia in Life §37 with coastal Yavneh/Jamnia in later rabbinic traditions.",
+    "The Mishnah is a later compilation, commonly placed around 200 CE. Individual attributions may preserve earlier material, but the passages consulted do not date these specific traditions securely to the existing episode brackets.",
+    "The sources consulted support later memory of legal practice and debate, not a formal 'Council of Jamnia' that definitively closed the Jewish canon.",
+    "The selected episode dates and locations remain those already present in the project; this collection neither revises nor independently approves them."
+  ],
+  "accessFailuresAndGaps": [
+    "Sefaria pages for several passages rendered as JavaScript shells in the available browsing path. Mishnah Yadayim was therefore read in the full Halakhah.com PDF; Mishnah Rosh Hashanah in the Oxford Annotated Mishnah author-copy preview; Ta'anit 4:6 and Bavli Ta'anit 29a were consulted through indexed excerpts only. Sefaria API endpoints were inaccessible in this session.",
+    "The translator and edition attribution are not visible in the served Halakhah.com Yadayim PDF; none is inferred from the site's other materials.",
+    "The full Rosik article was not accessible/consulted; only publisher metadata and abstract were read.",
+    "Josephus was consulted in Whiston's English translation, not a Greek critical edition. The specific date in War VI.4.5 was verified using the indexed page excerpt; no claim of complete critical-text collation is made.",
+    "No newly consulted primary source establishes a precise Yavneh academy building, supply activity, escape route, network itinerary, or the location/date of the Yadayim debate.",
+    "No figures or media assets were selected or included."
+  ]
+}

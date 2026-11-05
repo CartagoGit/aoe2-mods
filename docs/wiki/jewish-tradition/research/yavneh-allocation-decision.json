@@ -1,0 +1,1562 @@
+{
+  "classification": "finite financial design candidate only; assumes all actors and physical predicates succeed, not native/game/balance evidence",
+  "author": "gpt-6",
+  "recipes": {
+    "A": [
+      120,
+      20,
+      0,
+      0
+    ],
+    "B": [
+      30,
+      0,
+      70,
+      0
+    ],
+    "C": [
+      20,
+      100,
+      0,
+      0
+    ],
+    "D": [
+      0,
+      20,
+      70,
+      0
+    ],
+    "E": [
+      20,
+      40,
+      0,
+      0
+    ],
+    "F": [
+      0,
+      10,
+      60,
+      0
+    ]
+  },
+  "stocks": {
+    "easy": [
+      180,
+      180,
+      210,
+      0
+    ],
+    "standard": [
+      150,
+      130,
+      140,
+      0
+    ],
+    "hard": [
+      130,
+      110,
+      140,
+      0
+    ]
+  },
+  "optionalReserve": [
+    70,
+    60,
+    30,
+    0
+  ],
+  "optionalTasks": [
+    [
+      "aid",
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        40,
+        40,
+        20,
+        0
+      ]
+    ],
+    [
+      "copy",
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      "repair",
+      [
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0
+      ]
+    ],
+    [
+      "trade",
+      [
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        20,
+        0,
+        10,
+        0
+      ]
+    ],
+    [
+      "guide",
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      "guest",
+      [
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "counts": {
+    "easy": {
+      "initiallyAffordable": 8,
+      "affordableWithOptionalPrefix": 8,
+      "allGoalsReachable": 8
+    },
+    "standard": {
+      "initiallyAffordable": 5,
+      "affordableWithOptionalPrefix": 7,
+      "allGoalsReachable": 7
+    },
+    "hard": {
+      "initiallyAffordable": 3,
+      "affordableWithOptionalPrefix": 6,
+      "allGoalsReachable": 6
+    }
+  },
+  "cases": [
+    {
+      "level": "easy",
+      "recipes": [
+        "A",
+        "C",
+        "E"
+      ],
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          70,
+          50,
+          220,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          70,
+          50,
+          220,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "A",
+        "C",
+        "F"
+      ],
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          90,
+          80,
+          160,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          90,
+          80,
+          160,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "A",
+        "D",
+        "E"
+      ],
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          90,
+          130,
+          150,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          90,
+          130,
+          150,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "A",
+        "D",
+        "F"
+      ],
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          110,
+          160,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          110,
+          160,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "B",
+        "C",
+        "E"
+      ],
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          160,
+          70,
+          150,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          160,
+          70,
+          150,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "B",
+        "C",
+        "F"
+      ],
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          180,
+          100,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          180,
+          100,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "B",
+        "D",
+        "E"
+      ],
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          180,
+          150,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          180,
+          150,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "easy",
+      "recipes": [
+        "B",
+        "D",
+        "F"
+      ],
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          200,
+          180,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          200,
+          180,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "A",
+        "C",
+        "E"
+      ],
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "aid",
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "main",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          40,
+          0,
+          150,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "A",
+        "C",
+        "F"
+      ],
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          30,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          30,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "A",
+        "D",
+        "E"
+      ],
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          80,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          80,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "A",
+        "D",
+        "F"
+      ],
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          80,
+          110,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          80,
+          110,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "B",
+        "C",
+        "E"
+      ],
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "aid",
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "aid",
+          "main",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          130,
+          20,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "B",
+        "C",
+        "F"
+      ],
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          150,
+          50,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          150,
+          50,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "B",
+        "D",
+        "E"
+      ],
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          150,
+          100,
+          10,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          150,
+          100,
+          10,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "standard",
+      "recipes": [
+        "B",
+        "D",
+        "F"
+      ],
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "fundingWitness": null,
+      "allGoalsReachable": false,
+      "allGoalsWitness": null,
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "A",
+        "C",
+        "E"
+      ],
+      "cost": [
+        160,
+        160,
+        0,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "fundingWitness": null,
+      "allGoalsReachable": false,
+      "allGoalsWitness": null,
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "A",
+        "C",
+        "F"
+      ],
+      "cost": [
+        140,
+        130,
+        60,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "aid",
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "main",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          40,
+          10,
+          90,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "A",
+        "D",
+        "E"
+      ],
+      "cost": [
+        140,
+        80,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "aid",
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "aid",
+          "main",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          40,
+          60,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "A",
+        "D",
+        "F"
+      ],
+      "cost": [
+        120,
+        50,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          90,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          60,
+          90,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "B",
+        "C",
+        "E"
+      ],
+      "cost": [
+        70,
+        140,
+        70,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "aid",
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "main",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          110,
+          0,
+          80,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "B",
+        "C",
+        "F"
+      ],
+      "cost": [
+        50,
+        110,
+        130,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          130,
+          30,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          130,
+          30,
+          20,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "B",
+        "D",
+        "E"
+      ],
+      "cost": [
+        50,
+        60,
+        140,
+        0
+      ],
+      "initiallyAffordable": true,
+      "affordableWithOptionalPrefix": true,
+      "fundingWitness": [
+        "main"
+      ],
+      "allGoalsReachable": true,
+      "allGoalsWitness": {
+        "steps": [
+          "main",
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          130,
+          80,
+          10,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "allAfterImmediateFundingReachable": true,
+      "afterImmediateFundingWitness": {
+        "steps": [
+          "aid",
+          "copy",
+          "repair",
+          "trade",
+          "guide",
+          "guest"
+        ],
+        "spendable": [
+          130,
+          80,
+          10,
+          0
+        ],
+        "reserve": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "level": "hard",
+      "recipes": [
+        "B",
+        "D",
+        "F"
+      ],
+      "cost": [
+        30,
+        30,
+        200,
+        0
+      ],
+      "initiallyAffordable": false,
+      "affordableWithOptionalPrefix": false,
+      "fundingWitness": null,
+      "allGoalsReachable": false,
+      "allGoalsWitness": null,
+      "allAfterImmediateFundingReachable": null,
+      "afterImmediateFundingWitness": null
+    }
+  ],
+  "newDossiers": 0,
+  "gameVerified": false,
+  "date": "2026-10-27",
+  "proposal": "d00002",
+  "slice": "S4",
+  "campaignId": "jewish-tradition",
+  "episodeId": "02-refuge-and-school-supply-yavneh",
+  "mechanicalAuthoringAssignment": {
+    "proposal": "f00005",
+    "slice": "S8",
+    "readyForAuthoring": false
+  },
+  "contractStatus": "financial design and geographic controls only; full world/objective/screens/typed profile pending",
+  "sourceCampaignPath": "docs/design/odysseys/jewish-tradition.json",
+  "sourceCampaignSha256": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
+  "recipeLabels": "A–F are local calculation labels, not stable contract IDs",
+  "fundingPolicy": "every optional payout debits the separately initialized finite reserve before crediting spendable; protected recovery zero; no gathering assumed",
+  "spatialAssumptions": "all original actors and required physical predicates assumed reachable; no certified path, map, timing, actual work or native v3 capability",
+  "analysisMethod": "BFS over six once-only optional flags and a once-only main-funding flag, all four resource components, cost-before-reward, nonnegative spendable and reserve at each transition",
+  "independentCollection": "Luna supplied a second enumeration; architect checked all 24 cases with a separate executable BFS and corrected earlier scalar-resource errors",
+  "geographicCandidate": {
+    "bbox": [
+      34.71,
+      31.83,
+      34.79,
+      31.9
+    ],
+    "bboxStatus": "architect candidate, not a registered geographic profile or ancient boundary",
+    "intendedSetting": "inland Tel Yavne and adjacent fictional activity areas; keep Yavne-Yam off the local scene",
+    "publishedGridControl": "IAA Tel Yavne Area A figure2, printed grid E175900–176700 / N640800–642000; cartographic extent, not tell footprint",
+    "gridConventionSource": "https://hadashot.iaa.org.il/Guidelines_eng.aspx",
+    "gridConvention": "publisher requires New Israel Grid for map references; no invented WGS84 academy address",
+    "waterPolicy": "modern Soreq east/north description is not a 70–80 CE course, navigability or safe crossing"
+  }
+}

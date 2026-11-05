@@ -1,0 +1,305 @@
+{
+  "campaignId": "jewish-tradition",
+  "episodeRange": [7, 17],
+  "episodes": [
+    {
+      "order": 7,
+      "id": "07-civilian-refuge-cyrene",
+      "date": "115–117 CE (broad revolt chronology)",
+      "sources": [
+        {
+          "url": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+          "title": "Dio Cassius, Roman History 68.32.1–3, Posen Library edition",
+          "locator": "Displayed source text and introduction, lines 31–51",
+          "access": "Read the full displayed excerpt, Cary translation, and bibliographic note. Dio names a leader Andreas, narrates violence in Cyrene, Egypt and Cyprus, and gives exceptionally large death totals.",
+          "support": "An ancient narrative attests revolt activity in Cyrenaica in Trajan's reign and Roman suppression.",
+          "qualification": "Dio's account survives in a later epitome and uses highly charged atrocity language. Its casualty totals and detailed violence are not reliable demographic data. Eusebius instead calls the leader Lucuas (see episode 8); the name discrepancy should remain explicit. The Posen introduction's assertion that Cyrene was ruined is not itself archaeological evidence."
+        }
+      ],
+      "assessment": "The revolt is supported by retrospective literary sources; do not turn ancient casualty totals, atrocity rhetoric, or leader-name variation into neutral facts."
+    },
+    {
+      "order": 8,
+      "id": "08-harbour-supply-and-witnesses-alexandria",
+      "date": "115–117 CE; the exact sequence across theaters is uncertain",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/250104.htm",
+          "title": "Eusebius, Ecclesiastical History 4.2",
+          "locator": "Chapter 2, sections 1–5, displayed translation",
+          "access": "Read the full chapter excerpt. Eusebius dates a disturbance to Trajan year 18 and says it became a major war the next year under Lupus; he describes Greeks fleeing to Alexandria and killing Jews there, and Lucuas leading Cyrenean forces into Egypt until Marcius Turbo's intervention.",
+          "support": "A late-antique narrative separately records violence in Alexandria and Egypt and Roman military action against revolt participants.",
+          "qualification": "Eusebius wrote in the fourth century from a Christian historiographic perspective, not as an eyewitness; his chronology and moral framing require caution. He does not establish exact Alexandria locations, population losses, or a detailed harbor supply operation. His account conflicts with Dio's Andreas naming."
+        },
+        {
+          "url": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+          "title": "Dio Cassius, Roman History 68.32.1–3",
+          "locator": "Displayed excerpt, especially paragraph covering Egypt and Cyprus, lines 46–51",
+          "access": "Read the English excerpt; it says the revolt also affected Egypt and names Artemion for Cyprus.",
+          "support": "Dio's account places the conflict beyond Cyrene, including Egypt.",
+          "qualification": "Dio compresses events and gives fantastic or suspect totals; this passage cannot substantiate an Alexandria map scene or logistical detail."
+        }
+      ],
+      "assessment": "The sources attest conflict in Egypt, but do not verify a specific harbor episode or precise Alexandrian destruction extent. Avoid estimates of Jewish population and deaths."
+    },
+    {
+      "order": 9,
+      "id": "09-administrative-records-jerusalem",
+      "date": "c.128–130 CE for foundation evidence; 130–132 is not a settled single date",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+          "title": "Cassius Dio, Roman History, Epitome of Book 69",
+          "locator": "69.12.1–3, displayed translation, lines 84–88",
+          "access": "Read the passage: Dio says Hadrian founded Aelia Capitolina at Jerusalem and a Jupiter temple, then links the act to revolt; he also describes fortified refuges and underground passages.",
+          "support": "Ancient literary evidence for the colony and for an ancient causal explanation of the revolt.",
+          "qualification": "Dio is retrospective and his sequence/cause is disputed. He does not date the foundation precisely. The passage does not establish that all local Jews left or that Jerusalem was empty."
+        },
+        {
+          "url": "https://www.cambridge.org/core/journals/harvard-theological-review/article/representation-of-the-inauguration-ceremony-of-the-restored-temple-a-tentative-reinterpretation-of-the-bar-kokhba-tetradrachm/4AC8095FEC7129F5C14815DBB785BFAD",
+          "title": "Harvard Theological Review article on Bar Kokhba tetradrachm (search-visible abstract/extract)",
+          "locator": "Search result extract concerning foundation dating and Shua'fat foundation coin",
+          "access": "Only the search-visible article extract was consulted, not the complete article. It reports scholarly disagreement and a proposed 128–130 date based on an Aelia foundation coin from Shua'fat.",
+          "support": "Confirms the date is debated and an archaeological/numismatic argument exists for pre-revolt foundation.",
+          "qualification": "Search extract only; do not claim the complete article's argument was read. The find supports a foundation-date range, not a detailed city plan or the cause of revolt."
+        },
+        {
+          "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25927",
+          "title": "Israel Antiquities Authority, Jerusalem, Western Wall Plaza report (2021)",
+          "locator": "Search-visible report abstract concerning Aelia-period military building stamps",
+          "access": "Search result extract says a decorative panel is assigned to Aelia Capitolina and discusses military building stamps from the early Hadrianic foundation period; the report page itself was not opened in this pass.",
+          "support": "Potential material/epigraphic evidence for Roman military construction in the colony.",
+          "qualification": "Not directly read beyond search extract; mark pending before using a specific artifact, chronology, or exact locus."
+        }
+      ],
+      "assessment": "Aelia Capitolina's establishment is supported, but its exact foundation date and causal relation to revolt remain debated. Do not use Dio's narrative as a precise construction calendar."
+    },
+    {
+      "order": 10,
+      "id": "10-finite-mint-consignments-judean-hills",
+      "date": "132–135 CE (common conventional range; end date can be stated approximately)",
+      "sources": [
+        {
+          "url": "https://collections.thejewishmuseum.org/collection/15381-coin-sela-of-the-bar-kokhba-revolt",
+          "title": "The Jewish Museum, Sela of the Bar Kokhba Revolt",
+          "locator": "Collection object record, lines 25–61",
+          "access": "Read the collection record: silver sela, place made Southern Levant, date 134/135 CE; museum notes rebel leaders minted coins as declarations of independence.",
+          "support": "Contemporary material evidence of rebel-period minting and political self-representation.",
+          "qualification": "The catalog object has no reported archaeological findspot, so it cannot establish a specific mint, battle, route, or local distribution. One coin is not evidence for total production or population."
+        },
+        {
+          "url": "https://www.ashmolean.org/node/179046",
+          "title": "Ashmolean Museum, Tetradrachm, Judaea (HCR6354)",
+          "locator": "Collection interpretation, lines 130–147",
+          "access": "Read museum description and catalog data. It identifies a 132–135 silver tetradrachm overstruck on a Roman coin, with legends naming Simon and 'for the freedom of Jerusalem'.",
+          "support": "Direct numismatic evidence for revolt-period coinage and claims made by its issuers.",
+          "qualification": "Museum contextual prose says Hadrian expelled Jews from Jerusalem in 135, but the coin itself does not evidence that policy. Treat that exclusion claim separately and qualify it (see episode 12). The mint/finding place is not specified here."
+        },
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+          "title": "Cassius Dio, Roman History 69.12–14",
+          "locator": "69.12.1–13.3 and 14.1–2, displayed translation",
+          "access": "Read account of revolt, refuges, Julius Severus' operations, and Roman suppression; 69.14 includes very large casualty and settlement destruction totals.",
+          "support": "A Roman retrospective account of revolt and suppression.",
+          "qualification": "Dio's causal sequence and numerical totals are disputed and cannot be read as reliable census data. This translation is of an epitome; no precise battlefield or cave location follows from it."
+        }
+      ],
+      "assessment": "Coinage is strong material evidence for the revolt. Avoid inferring exact military logistics, mint locations, or casualty figures from the coin record or Dio."
+    },
+    {
+      "order": 11,
+      "id": "11-archive-extraction-judean-desert",
+      "date": "132–135 CE for revolt-associated correspondence; individual cave archive items span different dates",
+      "sources": [
+        {
+          "url": "https://www.deadseascrolls.org.il/explore-the-archive/search",
+          "title": "Israel Antiquities Authority, Dead Sea Scrolls Digital Library search portal",
+          "locator": "Search portal for Cave of Letters/Nahal Hever manuscript records",
+          "access": "Opened portal; dynamic catalog content did not render a specific Bar Kokhba document record in this access session.",
+          "support": "Institutional route to digitized manuscripts and object-level records.",
+          "qualification": "No specific papyrus image, transcription, or catalog entry was successfully opened. Mark object-level claims pending rather than treating portal discovery as consultation."
+        },
+        {
+          "url": "https://www.metmuseum.org/art/metpublications/the-world-between-empires-art-and-identity-in-the-ancient-middle-east",
+          "title": "The Met, The World between Empires: Art and Identity in the Ancient Middle East, Cave of Letters object entry (search-visible PDF excerpt)",
+          "locator": "Search-visible entry ‘62–70. Finds from the Cave of Letters’",
+          "access": "Search result extract states excavations in 1960–61 at Nahal Hever caves 5–6 found documents, including letters attributed to Simon bar Kokhba. PDF page was not separately opened in this access pass.",
+          "support": "Institutional exhibition catalog identifies excavated material context and the letter group.",
+          "qualification": "Search extract only; no full catalog entry or individual document text read. Do not infer all cache contents belong to one date or one group."
+        },
+        {
+          "url": "https://www.pbs.org/wgbh/nova/ancient/read-an-ancient-jewish-scroll.html",
+          "title": "PBS NOVA, Read an Ancient Jewish Scroll",
+          "locator": "Page description of Babatha document and source note crediting P.Yadin I",
+          "access": "Read search-visible page extract; it identifies a Greek document from the Cave of Letters/Babatha archive and cites the published P.Yadin edition.",
+          "support": "A separate personal/legal archive associated with a named woman is present in the same cave context.",
+          "qualification": "Popular-science feature and extract, not a substitute for P.Yadin edition or item catalog. Babatha's archive dates are not all revolt correspondence; do not collapse it into Bar Kokhba's military archive."
+        }
+      ],
+      "assessment": "There are contemporary documentary materials, but this pass could not directly inspect a specific digital papyrus record. Separate revolt correspondence from older personal/legal archives; no invented battle should be attached to the cave cache."
+    },
+    {
+      "order": 12,
+      "id": "12-household-relocation-jerusalem",
+      "date": "After suppression, conventionally c.135 CE; exact decree chronology and reach are not established by contemporary evidence here",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/250104.htm",
+          "title": "Eusebius, Ecclesiastical History 4.6.1–3",
+          "locator": "Chapter 6, sections 1–3, displayed translation",
+          "access": "Read passage stating the revolt's final siege at Bethar/Bithara and that a decree prohibited the people from going up to the country around Jerusalem.",
+          "support": "A fourth-century ecclesiastical historian explicitly reports a postwar restriction concerning access to the Jerusalem area.",
+          "qualification": "This is not a contemporary decree text; Eusebius is writing roughly two centuries later and his wording is broad. It does not by itself specify duration, enforcement, permitted exceptions, distinction between residence and visitation, or impact on Jewish presence across Judaea/Palestine. Cassius Dio 69.14 reports devastation but does not state this ban. Do not claim all Jews were expelled from the whole province."
+        },
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+          "title": "Cassius Dio, Roman History 69.14",
+          "locator": "69.14.1–3, displayed translation",
+          "access": "Read the end of Dio's revolt narrative and its devastation totals; no general Jerusalem-entry decree appears in this passage.",
+          "support": "Roman account of severe postwar devastation.",
+          "qualification": "No direct support here for a ban or a total depopulation claim. Dio's casualty and village figures are not reliable census figures."
+        }
+      ],
+      "assessment": "The specific access prohibition is a later report by Eusebius, not a directly consulted Roman legal inscription or decree. Distinguish restriction on Jerusalem environs from universal expulsion and from demographic claims."
+    },
+    {
+      "order": 13,
+      "id": "02-the-hill-and-the-school",
+      "date": "c.190–220 CE; Mishnah redaction commonly placed around 200, with process and attribution debated",
+      "sources": [
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "title": "Lawrence H. Schiffman excerpt, Tannaitic Literature",
+          "locator": "‘The Redaction of the Mishnah’, lines 19–21 and 30–33",
+          "access": "Read full displayed scholarly excerpt. It states that the Mishnah was redacted by Judah the Prince around 200 CE, while the history, arrangement, selection, and degree of his contribution remain debated.",
+          "support": "Scholarly support for a redactional process around 200 CE associated with Judah the Prince.",
+          "qualification": "Secondary excerpt, not contemporary testimony or a surviving autograph. Do not depict a single completed editorial act with secure exact date or claim every tradition was composed then."
+        }
+      ],
+      "assessment": "Frame the Mishnah as a compilation/redaction process associated with Judah ha-Nasi, not a verbatim record authored in one dated sitting."
+    },
+    {
+      "order": 14,
+      "id": "14-citizenship-copy-and-receipts-galilee",
+      "date": "Edict conventionally dated 212/213 CE; surviving papyrus is dated c.215 CE",
+      "sources": [
+        {
+          "url": "https://www.uni-giessen.de/ub/de/ueber-uns/sam/papyri-ostraka-keilschrifttafeln/papyri",
+          "title": "University Library Giessen papyrus collection",
+          "locator": "Papyri collection overview, displayed German text, lines 17 and 22–28",
+          "access": "Read collection information identifying P.Giss. 40/P.Giss. inv. 15 as a papyrus from 215 CE and describing the wider documentary collection and digital catalog access.",
+          "support": "Institutional confirmation of the surviving item's collection, approximate date, and severe historical damage context.",
+          "qualification": "This collection overview is not a transcription of P.Giss. 40 or proof of how the edict was applied in Galilee. The British Museum URL in the existing episode record is not the catalog for this papyrus."
+        },
+        {
+          "url": "https://www.constitutio.de/en/constitutio-antoniniana/the-text-of-the-edict",
+          "title": "University Giessen project, Text of the Edict",
+          "locator": "Summary, fragments, and reconstructed translation, lines 0–33",
+          "access": "Read full displayed page. It explains severe damage to the text, reconstructs a grant of citizenship to all/nearly all inhabitants, and notes an unresolved exception for dediticii.",
+          "support": "The edict's broad grant is the mainstream reconstruction from a fragmentary Greek papyrus and parallel evidence.",
+          "qualification": "The text is reconstructed and missing sections are substantial. It does not show a specifically Jewish change, local receipts, exact exceptions, or uniform legal application. Avoid implying that all Jews had identical prior status."
+        }
+      ],
+      "assessment": "Correct object provenance to Giessen P.Giss. 40 and separate the 212/213 edict from its c.215 surviving copy. Its general citizenship measure does not establish a specifically Jewish local event."
+    },
+    {
+      "order": 15,
+      "id": "15-study-and-supply-allocation-galilee",
+      "date": "c.220–250 CE (broad scholarly frame)",
+      "sources": [
+        {
+          "url": "https://researchportal.helsinki.fi/en/publications/being-jewish-in-galilee-100200-ce-an-archaeological-study/",
+          "title": "Rick Bonnie, Being Jewish in Galilee, 100–200 CE: An Archaeological Study, University of Helsinki record",
+          "locator": "Displayed abstract and bibliographic record, lines 34 and 117–165",
+          "access": "Read the full abstract and publication metadata. It explicitly warns that reconstruction of Galilean society for 100–200 relies primarily on later rabbinic writing, and describes the book's archaeological evidence for infrastructure, art, architecture, and ritual practice.",
+          "support": "The region can be studied via archaeology and rabbinic corpora; the abstract supports a broad scholarly study of Jewish communities in Galilee.",
+          "qualification": "Abstract only; the book itself was not read. The record covers 100–200 rather than the whole 220–250 episode. It cannot establish a specific named study circle or supply operation."
+        },
+        {
+          "url": "https://cojs.org/The_Talmud_-3rd-7th_century_CE/",
+          "title": "Center for Online Judaic Studies, The Talmud (3rd–7th century CE)",
+          "locator": "Displayed section ‘The Palestinian Talmud’/introductory overview; full page overview",
+          "access": "Opened the page but only the Babylonian Talmud section rendered in the text extraction for this session; Palestinian section not directly consulted.",
+          "support": "No direct episode-specific claim from this page is used.",
+          "qualification": "Do not represent the inaccessible portion as read or use an abstract as proof of a local classroom event."
+        }
+      ],
+      "assessment": "Rabbinic learning in Palestine/Babylonia is a broad historical process; the cited accessible material does not certify a specific Galilean gathering, building, or exact date."
+    },
+    {
+      "order": 16,
+      "id": "03-the-river-quarter",
+      "date": "c.244/245 CE for the synagogue's inscribed renovation phase",
+      "sources": [
+        {
+          "url": "https://duraeuropos.artgallery.yale.edu/Synagogue",
+          "title": "Yale University Art Gallery, Dura-Europos: Excavating Antiquity, Synagogue",
+          "locator": "‘Unearthing the Synagogue’, lines 35–56; siege/burial context, lines 65–74",
+          "access": "Read displayed excavation and interpretation text: location along western fortification wall near Palmyrene Gate; original house converted to a Jewish meeting place c.165–200; later enlargement and decoration dated by Aramaic inscription to 244/245; Roman siege embankment buried and preserved it.",
+          "support": "Institutional excavation synthesis for synagogue phases, inscription date, material decoration, and city location.",
+          "qualification": "This supports a local synagogue and material setting, not a reconstructed commercial network or particular civilian supply delivery. The location is on the city wall's western side; don't place the city on the Euphrates' west bank or infer exact floodplain/river transport from this page. Interpretive statements about interreligious ‘mutual respect’ are not directly demonstrated by architectural proximity alone."
+        },
+        {
+          "url": "https://www.iranicaonline.org/articles/dura-europos/",
+          "title": "Encyclopaedia Iranica, Dura-Europos",
+          "locator": "Article page opened; browser extraction returned no readable lines",
+          "access": "Open attempt returned a page shell without text; no claims from the article are cited as read.",
+          "support": "None in this audit due extraction failure.",
+          "qualification": "Pending direct readable access. Yale source above is the usable consulted source."
+        }
+      ],
+      "assessment": "The synagogue and date of its final decorated phase have strong material/institutional support. Supply-network or river-trade specifics remain unsupported by the consulted sources."
+    },
+    {
+      "order": 17,
+      "id": "17-cross-river-study-logistics-pumbedita",
+      "date": "Pumbedita's scholarly prominence traditionally placed from the later third century; institutional form is uncertain",
+      "sources": [
+        {
+          "url": "https://cojs.org/The_Talmud_-3rd-7th_century_CE/",
+          "title": "Center for Online Judaic Studies, The Talmud (3rd–7th century CE)",
+          "locator": "Displayed section ‘The Babylonian Talmud’, lines 35–45",
+          "access": "Read the full displayed section. It describes circles of amoraim; locates major activity at Nehardea, Sura, Pumbedita and other places; reports the tradition that Rav Judah founded a Pumbedita scholarly circle; and cautions that these were probably not formal academies in Talmudic times.",
+          "support": "Supports a broad third-century emergence of Babylonian rabbinic study and a later tradition about Rav Judah/Pumbedita.",
+          "qualification": "This is a modern overview of retrospective rabbinic sources. The source explicitly cautions against projecting formal academy structures backward. It does not demonstrate a particular building, exact founding date, or physical crossing/logistics scene."
+        },
+        {
+          "url": "https://jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0016_0_16192.html",
+          "title": "Encyclopaedia Judaica entry, Pumbedita, hosted by Jewish Virtual Library",
+          "locator": "Displayed entry lines 7–8 and bibliography at 23–25",
+          "access": "Read the displayed summary: dates prominence to the mid-third century and says Judah b. Ezekiel founded an academy after Nehardea's destruction in 259; it cites later rabbinic/Geonic materials in bibliography.",
+          "support": "Records the conventional institutional chronology in a reference-work summary.",
+          "qualification": "The summary's claim is not contemporary documentation; it relies on later tradition. Use COJS's caveat that these may have been informal study circles. No archaeology or primary 259 inscription was consulted."
+        }
+      ],
+      "assessment": "State that later sources associate a scholarly circle with Pumbedita from the later third century; formal academy chronology and organization are retrospective and debated."
+    }
+  ],
+  "crossEpisodeNotes": [
+    "For the Trajanic revolt, Dio (Roman History 68.32) names Andreas while Eusebius (Ecclesiastical History 4.2) names Lucuas. Both are retrospective literary sources; do not harmonize without qualification.",
+    "Dio's sensational atrocity claims and huge casualty totals for 115–117, and his 580,000 dead/985 villages figures for the Bar Kokhba war, are not reliable census data.",
+    "Aelia Capitolina's foundation date and whether it preceded or followed the revolt remain debated. Dio's causal account is not a neutral chronology.",
+    "Eusebius 4.6 is the consulted source for a postwar prohibition on going to the Jerusalem area; it is a late report, not the decree itself. Dio 69.14 does not state this prohibition. Neither source supports an unqualified claim of total expulsion from all Judaea or universal long-term absence.",
+    "The Cave of Letters includes revolt-era correspondence and distinct personal/legal materials such as the Babatha archive. This pass did not successfully open an item-level manuscript catalog record, so specific document claims remain pending direct object consultation.",
+    "P.Giss. 40 is held at Giessen, is dated around 215 CE, and is badly fragmentary; it is not the British Museum object cited in the episode baseline. The edict is conventionally dated 212/213 and its reconstructed grant was broad, not a specifically Jewish local reform.",
+    "For Pumbedita, the distinction between amoraic circles and later formal academy institutions matters: the consulted overview expressly warns that formal academy models are likely anachronistic for the Talmudic period."
+  ],
+  "sourcesConsulted": [
+    {"url":"https://www.posenlibrary.com/entry/jewish-rebellion-cyrene","title":"Dio Cassius, Roman History 68.32.1–3, Posen Library","scope":"Full displayed translation excerpt and editor introduction; does not constitute full Dio book."},
+    {"url":"https://www.newadvent.org/fathers/250104.htm","title":"Eusebius, Ecclesiastical History, Book IV","scope":"Read 4.2.1–5, 4.6.1–3 and nearby text in McGiffert translation; later Christian historiography."},
+    {"url":"https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html","title":"Cassius Dio, Epitome of Book 69","scope":"Read translated 69.12–14.3; a retrospective narrative preserved as an epitome."},
+    {"url":"https://collections.thejewishmuseum.org/collection/15381-coin-sela-of-the-bar-kokhba-revolt","title":"The Jewish Museum, Sela of the Bar Kokhba Revolt","scope":"Read object catalog data and short contextual interpretation."},
+    {"url":"https://www.ashmolean.org/node/179046","title":"Ashmolean Museum, Tetradrachm, Judaea","scope":"Read object interpretation and date; no archaeological findspot in record."},
+    {"url":"https://www.deadseascrolls.org.il/explore-the-archive/search","title":"Israel Antiquities Authority Dead Sea Scrolls Digital Library","scope":"Opened dynamic portal; no individual Cave of Letters record successfully loaded."},
+    {"url":"https://www.metmuseum.org/art/metpublications/the-world-between-empires-art-and-identity-in-the-ancient-middle-east","title":"The Met, The World between Empires","scope":"Search-visible catalog extract only; full entry/PDF not opened."},
+    {"url":"https://www.pbs.org/wgbh/nova/ancient/read-an-ancient-jewish-scroll.html","title":"PBS NOVA, Read an Ancient Jewish Scroll","scope":"Search-visible excerpt and edition note only; popular-science source."},
+    {"url":"https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/","title":"Lawrence H. Schiffman excerpt, Tannaitic Literature","scope":"Read lines 19–33 on Mishnah redaction and scholarly uncertainty."},
+    {"url":"https://www.uni-giessen.de/ub/de/ueber-uns/sam/papyri-ostraka-keilschrifttafeln/papyri","title":"University Library Giessen papyri collection","scope":"Read institutional collection information including P.Giss. 40/P.Giss. inv. 15."},
+    {"url":"https://www.constitutio.de/en/constitutio-antoniniana/the-text-of-the-edict","title":"University Giessen project, Text of the Edict","scope":"Read full page on papyrus damage, reconstruction, translation, and unresolved exception."},
+    {"url":"https://researchportal.helsinki.fi/en/publications/being-jewish-in-galilee-100200-ce-an-archaeological-study/","title":"Rick Bonnie, Being Jewish in Galilee, 100–200 CE","scope":"Read full accessible scholarly abstract and bibliographic metadata, not book."},
+    {"url":"https://duraeuropos.artgallery.yale.edu/Synagogue","title":"Yale University Art Gallery, Dura-Europos Synagogue","scope":"Read displayed excavation, dating, decoration, and preservation context."},
+    {"url":"https://www.iranicaonline.org/articles/dura-europos/","title":"Encyclopaedia Iranica, Dura-Europos","scope":"Access attempted; page shell returned no readable article text."},
+    {"url":"https://cojs.org/The_Talmud_-3rd-7th_century_CE/","title":"Center for Online Judaic Studies, The Talmud","scope":"Read displayed Babylonian Talmud overview on amoraic circles and Pumbedita; Palestinian section not extracted."},
+    {"url":"https://jewishvirtuallibrary.org/jsource/judaica/ejud_0002_0016_0_16192.html","title":"Encyclopaedia Judaica, Pumbedita","scope":"Read displayed reference summary; not primary evidence."}
+  ]
+}

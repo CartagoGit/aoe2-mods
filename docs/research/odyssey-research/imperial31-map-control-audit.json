@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "episodeId": "31-contested-succession-alexandria",
+  "displayOrder": 29,
+  "scope": "Candidate frame arithmetic over all potentially authored identities and corridor half widths; actual instantiated profiles counted separately. Not an ancient land mask, road polygon, actor footprint, AI leash or native navigation certificate.",
+  "potentialCounts": {
+    "mainActorsAtMaximumRoster": 44,
+    "allActorsAtMaximumRoster": 51,
+    "allZones": 17
+  },
+  "profileCounts": {
+    "easy": {
+      "selectedInitialHostiles": 8,
+      "allSelectedMainAndOptionalActors": 39
+    },
+    "standard": {
+      "selectedInitialHostiles": 14,
+      "allSelectedMainAndOptionalActors": 45
+    },
+    "hard": {
+      "selectedInitialHostiles": 20,
+      "allSelectedMainAndOptionalActors": 51
+    }
+  },
+  "frameClearanceTiles": {
+    "entityCenters": 73.78,
+    "zoneRadii": 76.78,
+    "corridorHalfWidths": 74.78
+  },
+  "allInFrame": true,
+  "duplicateActorCenters": [],
+  "overlappingZoneCircles": [
+    [
+      "31-contested-succession-alexandria.side-2.zone-1",
+      "31-contested-succession-alexandria.side-4.zone-1"
+    ],
+    [
+      "31-contested-succession-alexandria.side-2.zone-2",
+      "31-contested-succession-alexandria.side-6.zone-1"
+    ],
+    [
+      "31-contested-succession-alexandria.side-3.zone-1",
+      "31-contested-succession-alexandria.side-4.zone-2"
+    ],
+    [
+      "31-contested-succession-alexandria.side-3.zone-1",
+      "31-contested-succession-alexandria.side-5.zone-1"
+    ],
+    [
+      "31-contested-succession-alexandria.side-4.zone-2",
+      "31-contested-succession-alexandria.side-5.zone-1"
+    ]
+  ],
+  "overlapPolicy": "Different identities, payment/arrival/visit ledgers. One movement may legitimately visit a nearby lookout; it does not pay, repair or deliver another original. Native actor packing remains pending.",
+  "svgSha256": "9959f2e2bf62b84101269cd00446190561259422dd80ebf4bae6b284f3b5e285",
+  "architectRasterInspected": true,
+  "historicalOrNativeApproval": false
+}

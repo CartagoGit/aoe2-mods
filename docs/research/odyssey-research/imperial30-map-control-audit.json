@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "episodeId": "30-policy-reversal-alexandria",
+  "displayOrder": 28,
+  "scope": "Georeferenced frame arithmetic and actual schematic raster inspection only. Not an ancient land mask, street reconstruction, DEM, actor footprint, road polygon or AoE2 navigation test.",
+  "counts": {
+    "mainEntities": 10,
+    "allEntities": 19,
+    "allZones": 15
+  },
+  "frameClearanceTiles": {
+    "entityCenters": 73.78,
+    "zoneRadii": 68.78,
+    "corridorHalfWidths": 74.78
+  },
+  "allInFrame": true,
+  "duplicateActorCenters": [],
+  "overlappingZoneCircles": [
+    [
+      "30-policy-reversal-alexandria.side-1.zone-1",
+      "30-policy-reversal-alexandria.side-4.zone-1"
+    ],
+    [
+      "30-policy-reversal-alexandria.side-2.zone-1",
+      "30-policy-reversal-alexandria.side-7.zone-1"
+    ]
+  ],
+  "overlapPolicy": "Separate identities and requirement ledgers. A visit, repair/payment, trade receipt or copy arrival cannot complete another predicate merely because circles overlap; actor packing is a native gate.",
+  "svgSha256": "21b795e8cf711838824e340e3c290db72f1a41ca82a964b4b5112cd2870b1760",
+  "architectRasterInspected": true,
+  "raster": "Temporary CairoSVG render inspected at /tmp/alexandria30-map.png",
+  "historicalOrNativeApproval": false
+}

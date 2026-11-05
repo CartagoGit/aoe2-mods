@@ -1,0 +1,89 @@
+---
+id: i00013
+title: "Author explicit finite difficulty accounts without compensating legacy resource banks"
+kind: infra
+status: review
+type: proposal
+track: general
+date: 2026-10-27
+shipped-in:
+  - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
+  - "8a23bd21a306"
+  - "cf84b92f1fb3"
+last-transition-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
+last-correlation-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
+last-transition-from: in-progress
+last-transition-at: 2026-11-05T07:59:14.062Z
+---
+
+# i00013 — Author explicit finite difficulty accounts without compensating legacy resource banks
+
+## goal
+
+Add an explicit opt-in authoring path for independently specified difficulty accounts in the existing legacy dossier factory; preserve default output and all public gameplay contracts, distinguish spendable/finite bank/protected recovery/once-only reward reserve, and prove actual all-skip/all-complete feasibility without automatic budget compensation.
+
+## why
+
+The current legacy factory computes `bank = main + protected + replacement + rewardReserve + margin - start` and `accessible = start + bank - rewardReserve`. Start changes are compensated by the bank: the accessible total becomes main + protected + replacement + margin at every difficulty. The current audit has63identical accessible budgets; this alone does not prove identical gameplay because authored opposition and phase deadlines can vary. No existing proposal found in the read-only inventory enables explicit legacy accounts; i00008 is the separate supported v3 opt-in. Do not force a distributed-note mission into an exclusive recipe plan to obtain per-difficulty accounting.
+
+This is a missing authoring-factory capability, not a public gameplay-contract defect. Keep all current64dossiers/source IDs and default output intact. An explicit new path must disclose its own accounts and refuse an inconsistent or infeasible source instead of silently creating a compensating bank.
+
+## non-goals
+
+- No mass rewrite or historical approval of64dossiers, no numeric/string/progress identity changes, no v3 recipe coercion, native bank/spawn implementation or played balance claim.
+- No automatic compensation, negative bank, optional reward borrowing, double-counted allowance, protected recovery spending, renewable resource or timeout chosen merely to make difficulty labels different.
+
+## slices
+
+- global_gate: type
+
+### S1 — Architect account boundaries and compatibility decision
+- **Status**: done
+- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/review/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
+- **Gate**: type
+- acceptance:
+  - "Define a source-only opt-in authoredDifficultyAccounts with exactly easy/standard/hard and each record exactly spendable, gatherableBank, protectedRecovery, optionalReserve; each requires exact four-resource keys, reuses existing numeric resource normalization and adds a safe-integer bound including intermediate sums at the new source boundary. The existing Python normalizer alone does not enforce that ceiling. No field means complete old behavior and byte-identical default outputs. No gameplay schema widening is authorized. Derived episode economyProfile authored-finite-accounts-v1 explicitly dispatches coordinated numeric validation; unknown and v3+marker reject, absent stays legacy. supplyMargins=S+B-M-Z. See the reviewed ADR amendment; the initial three-File design was not conformant."
+  - "Emit existing difficulty fields from those explicit values: startingResources=spendable S, gatherableBank=B, protectedRecoveryStock=P, accessibleWithoutOptionalRewards=S+B (P/R excluded); replacementBudget Z is the existing common planning reserve within spendable, not another credited account. Main feasibility requires S+B >= mandatory M + Z. R equals the exact authored once-only positive side reward sum, never spendable before award; no reward reserve is added to B. If protectedRecoveryStock is also authored outside the opt-in it must agree with P rather than silently conflict. Under the opt-in omit obsolete startingResources/discretionaryMargin inputs or reject conflicting duplicate inputs by a documented rule."
+  - "Decide all-optional affordability through the actual shared finite_allocation.optional_states/balance on authored side costs/rewards after M and Z are excluded, with no preset substitution. Preserve payment-before-reward, seven/eight once-flags and exact R exhaustion. A financial witness assumes spatial predicates and finite bank collection; bank0 must be used until actual gathering placement is separately approved. Native/end-to-end difficulty stays pending. Independent review precedes implementation."
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at 8a23bd21a306, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Final8a23bd21 delivered ADR/cases reviewed, unchanged today: exact keys,safe integers and sums,legacy-default preservation,known derived marker/unknown and v3 … (2) Independent actual analyzer recheck3profiles and384conserved subset states; separate S/B/P/R/Z and exact reward/alias rules verified, no automatic bank or doub… (3) Actual optional_states with verified SHA yields128reachable subsets each,full-mask127 and final vectors160/170/80,120/120/50,90/90/35. B0/spatial assumptions e… — Independent final delivered S1 decision only. Corrected architecture resolves numeric-validator P2; actual financial analyzer3x128 reproduced,31source-gate cases prospective. Official validate exit0,164/164tests,2159assertions. Evidence /home/cartago/_projects/games/aoe2-mods/.cache/artifacts/independent-review-resumption-20261105. S2/S3pending; no implementation/native/game/historical approval.
+- shipped-in: `8a23bd21a306`
+
+### S2 — Reuse the existing factory and finite analyzer
+- **Status**: done
+- **DependsOn**: [S1]
+- **Files**: `tools/design/episode_dossier.factory.py`, `tools/design/authored_difficulty_accounts.helper.py`, `tools/design/secondary.py`, `tools/design/episode_dossier.validator.py`, `tools/design/civic_difficulty_audit.script.py`, `tools/design/readiness_timing_audit.script.py`, `tools/design/episode_dossiers.script.py`, `tools/design/test_authored_difficulty_accounts.py`, `tools/design/test_design.py`
+- **Gate**: type
+- acceptance:
+  - "Implement only the independently accepted source-only branch, reusing current strict resource validators and actual optional-state analyzer; no second economy/solver or preset assumptions. Keep the legacy three-argument helper call compatible if adding optional objective inputs internally. Refuse missing task inputs for the opt-in; no fake success."
+  - "Under the opt-in set reallocatedCacheAllowance to the same R account, not a second legacy600F300W150G promise. Keep secondaryBudget reservedRewards/maxOptionalCosts consistent with actual source predicates/effects and preserve default outputs when absent. No native capability is claimed. Implement the ADR's coordinated secondary/common-validator/civic/wiki dispatch, preserving every nonnumeric check and all default outputs. The readiness timing auditor explicitly rejects new/unknown markers; do not imply that unsupported operation works. Avoid the eager secondary/helper/finite analyzer circular import."
+  - "Exercise the real factory on bounded artificial source: independently different easy/standard/hard spendable and B0, nonzero protected recovery, exact reward reserve, all-skip and all-complete witnesses, zero and positive authored costs, unaffordable payment-before-reward, duplicate/unknown/missing keys, booleans/fractions/overflow, conflicting aliases, infeasible and negative vectors. Compare all64current legacy/v3 dossiers for no source/output drift when the field is absent."
+
+- Integration clarification — 5 November2026: `docs:check` executes `test_design.py`, whose unittest imports are explicit. Register the actual new `AuthoredDifficultyAccountsTests` class there, following existing imports, so the regression suite runs in the mandatory gate. This ninth file is now authorized; economic semantics and S1 acceptance are unchanged. Do not merely report a standalone command as gate coverage.
+- shipped-in: `cf84b92f1fb3`
+- review-state: done
+- review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-sol
+- review-log: approved by gpt-6.1-sol — verified at cf84b92f1fb3, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Independent exact9-file review of688a120 and landedcf84b92, SHA256all9equal. New helper reuses resource_amounts and actual finite_allocation.optional_states/ba… (2) ExactR equals actual reward sum and reallocated allowance, actual costs recomputed. Secondary nonnumericchecks preserved; commonunknown/v3marker guard beforeea… (3) Real factory/common/civic positive3difficulty/B0/nonzeroP witnesses pass.9focusedtests include31architecturecaseIDs and independent faultinjection failure emit… — Independent formal S2 implementation acceptance only, exact landedcf84b92 equals reviewed688a120 across9Files. Both P2findings corrected,actual31casecoverage and default65compatibility verified; own officialgate passed164/164,2159assertions. External review/evidence /home/cartago/.codex/artifacts/aoe2-mods/finite-account-implementation-review-20261105. S1untouched; S3acceptance still unreviewed and notapproved. No native/game/historical approval.
+
+### S3 — Independent acceptance and bounded content use
+- **Status**: review
+- **DependsOn**: [S2]
+- **Files**: `docs/qa/campaign-design/authored-difficulty-accounts-review.md`, `docs/handoffs/LLM-WORK-ALLOCATION.md`
+- **Gate**: type
+- acceptance:
+  - "Different actual model reviews the exact implementation and complete default compatibility evidence; bun run validate and official gate pass. Do not self-approve."
+  - "A separately designed jewish-tradition03 candidate may use B0 and explicit accounts only after acceptance; every route, objective, screen, timing and historical/source decision remains its own architect packet. No canonical dossier count or historical-authoring unlock is implied by this infrastructure."
+- review-state: in_review
+- review-implementer: gpt-6
+
+## acceptance
+
+- Missing factory operation is explicit; no executable source is advertised before implementation and independent acceptance.
+- Both accounts and actual difficulty levers have traceable intended effects, while static feasibility remains distinct from AoE2 playtesting.
+
+## Independent architecture finding and corrected scope
+
+The reviewer found P2 in the initial S1: legacy secondary arithmetic would reject the segregated accounts and the old margin check had no new-mode definition. The ADR now defines an explicit derived dossier discriminator, exact new surplus, coordinated numeric and common validation, qualified civic/wiki reporting, and explicit timing rejection. S2 owns all eight actual code/test owners; the initial three-File scope is superseded. No implementation may begin until the corrected S1 has independent conformity and official acceptance.

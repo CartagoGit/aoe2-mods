@@ -1,0 +1,158 @@
+{
+  "auditTitle": "Primary-passage audit: Imperial 363–380 candidates",
+  "sourceSelectionReviewed": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/research/odyssey-research/imperial363-380-coverage-candidates.json",
+  "architectApproval": false,
+  "episodesSelected": false,
+  "repoGitProposalOrArchitectureModified": false,
+  "method": "Read the candidate passages directly in the linked primary text/translations or text of the law. Record what the source itself says separately from consular conversion and later editorial commentary. Narrator age is stated unknown where not supplied; no one is upgraded to eyewitness without an explicit basis.",
+  "items": [
+    {
+      "candidateId": "HA-X-XI-365-366",
+      "subject": "Valentinian and Valens' order, Athanasius' departure and recall",
+      "sourcesActuallyRead": [
+        {
+          "authorOrCompiler": "Anonymous compiler; work conventionally called Historia Acephala / Historia Athanasii",
+          "sourceTitle": "Historia Acephala",
+          "urlCandidate": "https://www.newadvent.org/fathers/2820.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/2820.htm",
+          "exactLocator": "§15 (X); §16 (XI); chronological-control passage §17 (XII), NPNF2 translation paragraph numbering",
+          "translationAndEdition": "English translation by Archibald Robertson, in Nicene and Post-Nicene Fathers, Second Series, vol. 4, ed. Philip Schaff and Henry Wace (1892); New Advent page says it was later revised/edited by Kevin Knight.",
+          "coverageActuallyRead": "Read page text paragraphs 15–17 (web lines 51–61): the decree's delivery/date, local Alexandrian resistance, the secret departure and villa, failed search at the Dionysius church, recall order/escort back to that church, and the annalist's consular/month chronology through Athanasius' death. Not just snippet or contents page.",
+          "sourceDateAsStated": "X.15 dates delivery at Alexandria to Pachon 10 in the consulate of Valentinian and Valens. XI.16 dates Athanasius' secret departure to Paophi 8, four months and twenty-four days after the preceding chronological point; the text calls the retreat a villa near the New River and gives Mechir 6 as the end of the stay. The imperial recall/return is dated Mechir 7 after the consulate of Valentinian and Valens, i.e. the next named consular year in the text. XII.17 later gives the endpoint of Athanasius' life as Pachon 8 in the consulate of Valentinian IV and Valens IV.",
+          "dateConversionNotVerified": "The web translation parenthetically prints May 5, 365 for Pachon 10 and Oct. 5–Jan. 31 for the villa interval; those are translator/editor calendar conversions, not the chronicle's Latin month names themselves. The next consulate is conventionally 366, but I did not independently validate Egyptian-calendar civil-date alignment or claim a proleptic Gregorian date. For this audit, preserve Pachon/Paophi/Mechir plus the consular formula as source wording.",
+          "authorDateAgeAndWitnessStatus": "Anonymous; neither age nor identity nor composition date is supplied by these paragraphs. The source offers unusually precise consular and Alexandrian chronological detail, but the text does not identify the compiler as an eyewitness. Treat its administrative texture as evidence of what this Alexandrian chronicle reports, not proof of personal observation.",
+          "geographyActuallyNamed": ["Alexandria", "villa near the New River", "church called Dionysius in Alexandria"],
+          "prudentClaim": "This Alexandrian chronicle reports an imperial order to eject bishops restored under Julian; local officials' enforcement caused unrest, while the Alexandrian Christian crowd objected that Athanasius did not fit the order. It then reports that Athanasius left secretly for a nearby villa and was later escorted back under an imperial letter to the Dionysius church.",
+          "biasAndLimits": "Athanasius-favorable Alexandrian church perspective: its language distinguishes legitimate restoration from adversarial expulsion and describes popular opposition. It does not independently identify the villa or church archaeologically, establish universal implementation, or make every detail eyewitness testimony. The document's date arithmetic and New Advent's parenthetical civil dates should not be blended."
+        }
+      ],
+      "auditCorrection": "The candidate's identification of order delivery and return sequence is supported by the read text. Tighten the departure date phrasing: the source says Paophi 8 and a relative interval; October 5 is an editorial conversion. Keep Mechir 7 as transmitted and identify 366 only through the consular-year sequence, not as a separately stated AD numeral in the return sentence."
+    },
+    {
+      "candidateId": "ATHANASIUS-DEATH-AND-SUCCESSION-373",
+      "subject": "Athanasius' death, Peter's succession, and Lucius' installation",
+      "sourcesActuallyRead": [
+        {
+          "author": "Socrates of Constantinople (Socrates Scholasticus)",
+          "sourceTitle": "Ecclesiastical History",
+          "urlCandidate": "https://www.newadvent.org/fathers/26014.htm",
+          "urlActuallyConsulted": ["https://st-takla.org/books/en/ecf/202/2020145.html", "https://catholiclibrary.org/library/view?chunk.id=00000221&docId=%2FFathers-Synchronized-EN%2FSocrates_and_Sozomenus_Scholasticus__Historia_ecclesiastica.en.html"],
+          "exactLocator": "Book IV.20–22; the source directly opened at IV.20–22 in the CatholicLibrary synchronized text; IV.20 separately opened in NPNF2 translation at St-Takla",
+          "translationAndEdition": "St-Takla page reproduces NPNF2, vol. 2 translation and supplies the NPNF editorial footnote; CatholicLibrary presents an English synchronized text. These are translations/transcriptions, not Greek manuscript images.",
+          "coverageActuallyRead": "Read IV.20–22: IV.20's death and succession report; IV.21's Antioch-to-Alexandria intervention, troops, arrest of Peter and installation of Lucius; IV.22's account of Peter's letters and Socrates' explicit accusation that Sabinus concealed abuses. Read the NPNF footnote attached to the consular phrase, which explicitly converts Gratian and Probus' second consulship to 371 and contrasts Jerome's 373 chronology.",
+          "sourceDateAsStated": "IV.20 says Athanasius died in the ‘second consulate of Gratian and Probus’; it gives no month/day. IV.21's sequence places Valens in Antioch when informed. The NPNF editorial footnote identifies that consulate as 371 CE and says Jerome's chronology places the succession and death in 373 CE; the latter is described by that editor as the accepted date. Historia Acephala XII.17, separately read above, itself dates Athanasius' death to Pachon 8 under Valentinian IV and Valens IV, conventionally 373.",
+          "dateConversionNotVerified": "The year 373 is not Socrates' own stated consular year: the footnote says his consular synchronism corresponds to 371. The proposal candidate's claim that Socrates' consular year is conventionally 373 is incorrect. The commonly accepted 373 event date is based on reconciling/choosing other chronological evidence, not translating Socrates IV.20. No exact civil day is supplied by Socrates IV.20.",
+          "authorDateAgeAndWitnessStatus": "Socrates' preface says he rapidly reviews later events using information gathered from people still living; he wrote retrospectively in the fifth century. His exact birth year/age is uncertain and IV.20–22 does not claim eyewitness observation. Do not infer the narrator was present in Alexandria.",
+          "geographyActuallyNamed": ["Alexandria", "Antioch", "Egypt", "Rome (destination of Peter's flight in IV.22)"],
+          "prudentClaim": "Socrates reports Athanasius' death, names Peter as successor, then narrates Valens-authorized intervention in Alexandria and Lucius' installation. For chronology, explicitly preserve that Socrates' consular formula points to 371 in the translation's footnote and conflicts with the date normally accepted from other evidence (including the Historia Acephala's own reckoning for 373).",
+          "biasAndLimits": "Nicene ecclesiastical historian; uses confessional categories such as Arian and orthodox and favors Athanasius/Peter. IV.22 expressly attacks Sabinus' account and invokes Peter's letters, but the letters were not independently consulted in this audit. Socrates' compressed order is not a reliable year-by-year chronology; a 2015 Cambridge scholarly article also flags that his surrounding IV.15–22 sequence is chronologically distorted, but that modern argument is secondary interpretation, not the primary passage."
+        }
+      ],
+      "auditCorrection": "Important correction to candidate: don't describe Socrates IV.20 as supporting 373. His exact consular wording is second consulship of Gratian and Probus; NPNF footnote explicitly says 371, while chronology supporting 373 comes from other evidence. Keep source report, event date adopted by scholarship, and conversion separate."
+    },
+    {
+      "candidateId": "ADRIANOPLE-378",
+      "subject": "Battle of Adrianople and death of Valens",
+      "sourcesActuallyRead": [
+        {
+          "author": "Ammianus Marcellinus",
+          "sourceTitle": "Res Gestae",
+          "urlCandidate": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+          "urlActuallyConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/31%2A.html",
+          "exactLocator": "XXXI.11.1–12.10 for approach and date; XXXI.13.1–19 for battle, defeat and Valens' reported death; page footnotes 124 and 138; Thayer note a on the astronomical passage",
+          "translationAndEdition": "English translation by John C. Rolfe (Loeb Classical Library 1935–1940), hosted by Bill Thayer at LacusCurtius; page itself identifies its source copyright and last update (1 Oct. 2024). I read the English translation and named notes, not the entire Latin apparatus.",
+          "coverageActuallyRead": "Read the campaign/battle section XXXI.11–13 in full for its march context, Roman-calendar date phrase, opposing formations, defeat, losses, and accounts of Valens' death; specifically XXXI.12.10 and XXXI.13.1, 12–17. Read the editor's notes on date 124 and death 138, and astronomical note a.",
+          "sourceDateAsStated": "XXXI.12.10 calls it the day reckoned as the fifth before the Ides of August. In Roman inclusive counting this is conventionally August 9 (the translator/editor note says Aug. 9). The passage situates the Roman baggage at Hadrianopolis and then describes a march to the wagon-circle; XXXI.13.1 gives the Roman rout and says Valens was killed but his body could not be found.",
+          "dateConversionNotVerified": "The ancient phrase is retained above. August 9 is the standard Julian-calendar conversion, supplied in the page note, not a Gregorian conversion newly calculated here. The page's editor separately notes a tension between the battle date and Ammianus' zodiacal language at XXXI.13.7. Do not claim the modern Gregorian anniversary is validated by this passage.",
+          "authorDateAgeAndWitnessStatus": "Ammianus was a late fourth-century Roman military author; precise age and whether he was present at Adrianople are not established by the consulted passage. It is not an eyewitness claim here: at XXXI.13.12 the text says no one asserted they saw Valens receive the fatal wound; XXXI.13.14 gives an alternative cottage/fire account, and 13.16 identifies a survivor as informant.",
+          "geographyActuallyNamed": ["Hadrianopolis", "Melanthias", "nearby station of Nice", "river Hebrus", "Thrace", "the Gothic wagon encampment"],
+          "prudentClaim": "Ammianus describes Valens' decision to fight before Gratian arrived, the Roman army's march from Hadrianopolis toward the Gothic wagon encampment, and a catastrophic defeat. He records uncertainty and competing reports about Valens' death rather than a verified body recovery or witnessed death scene.",
+          "biasAndLimits": "Roman elite military perspective, rhetorically charged characterization of leaders and Goths, and narrative moralization of Roman command error. It gives no defensible exact modern coordinate for the battlefield or wagon circle. Do not attribute a confessional cause to the battle; this passage is military-political narrative. Ammianus' final casualty claims and literary comparisons should remain attributed to him."
+        }
+      ],
+      "auditCorrection": "The date wording is a Roman Julian calendar expression; parenthetical August 9 is the standard editor's conversion. The online page's interpretive astronomical note is editor Thayer, not Ammianus, and should not be represented as proof that the actual battle-date is wrong."
+    },
+    {
+      "candidateId": "THEODOSIUS-ACCESSION-379",
+      "subject": "Theodosius' elevation at Sirmium and the religious landscape after Valens",
+      "sourcesActuallyRead": [
+        {
+          "author": "Socrates of Constantinople",
+          "sourceTitle": "Ecclesiastical History",
+          "urlCandidate": "https://www.trueorthodoxy.org/teachings/hist_socrates_scholasticus_ecclesiastical_history_05.html",
+          "urlActuallyConsulted": "https://www.trueorthodoxy.org/teachings/hist_socrates_scholasticus_ecclesiastical_history_05.html",
+          "exactLocator": "Book V.1–3, especially V.2 (recall and accession) and V.3 (church status in major cities); V.5–6 contextual return/contestation at Antioch",
+          "translationAndEdition": "English Socrates text presented by True Orthodoxy; its page's full critical-edition/translation provenance was not established in this audit. Treat it as an online translation, not a critical Greek edition.",
+          "coverageActuallyRead": "Read V.1–3 directly. V.2 describes Gratian's restoration/assembly policy and states the location, consuls and day for Theodosius' proclamation. V.3 enumerates distinct episcopal communities at Rome, Jerusalem, Antioch, Alexandria and Constantinople. Read V.5–6 for the broader contested situation and the Theodosius journey toward Thessalonica.",
+          "sourceDateAsStated": "Socrates V.2 says Theodosius was proclaimed emperor at Sirmium, in the consulate of Ausonius and Olybrius, on 16 January. The consular pair is conventionally 379. The source narrates this after Valens' death and Gratian's recall of bishops but does not give day/month dates for those associated policies in V.2.",
+          "dateConversionNotVerified": "January 16 and 379 follow this translation's stated day plus conversion of the consular year. Do not silently replace the source's Jan. 16 with another accession date from a different chronology; this audit did not reconcile competing day-level chronologies. Socrates compresses events and does not establish that all actions occurred on one day.",
+          "authorDateAndAge": "Socrates is a fifth-century retrospective church historian, not a contemporary eyewitness to the 379 appointment. His preface says he used information gathered from living informants for later events; his own age at composition is not securely established.",
+          "geographyActuallyNamed": ["Sirmium", "Rome", "Jerusalem", "Antioch in Syria", "Alexandria", "Constantinople"],
+          "prudentClaim": "Socrates reports that Gratian proclaimed Theodosius at Sirmium and presents the post-Valens landscape as still divided across sees. His V.2 says the recalled bishops and religious assembly policy preceded the appointment in his account, while V.3 illustrates continuing church pluralism and disagreement.",
+          "biasAndLimits": "Nicene ecclesiastical history that praises imperial recall of the author's ‘orthodox’ party and classifies rivals with confessional labels. The account supports Socrates' framing and list of groups, not uniform implementation or the complete negotiations, military process, or exact timing of every bishop's return."
+        }
+      ],
+      "auditCorrection": "The primary wording itself provides Jan. 16 and the consular pair; use it as Socrates' reported date, and keep the editor's conversion to 379 labeled. Do not infer year-precise simultaneity among the policy and appointment clauses."
+    },
+    {
+      "candidateId": "CONSTANTINOPLE-CHURCH-POLICY-380",
+      "subject": "Theodosius' arrival and church transfer in Constantinople; Codex Theodosianus 16.1.2",
+      "sourcesActuallyRead": [
+        {
+          "author": "Socrates of Constantinople",
+          "sourceTitle": "Ecclesiastical History",
+          "urlCandidate": "https://www.trueorthodoxy.org/teachings/hist_socrates_scholasticus_ecclesiastical_history_05.html",
+          "urlActuallyConsulted": "https://www.trueorthodoxy.org/teachings/hist_socrates_scholasticus_ecclesiastical_history_05.html",
+          "exactLocator": "V.6 for baptism at Thessalonica and arrival at Constantinople; V.7 for the demand to Demophilus, departure from churches and November 26 date",
+          "translationAndEdition": "English online translation; page provenance/critical edition not established in this audit.",
+          "coverageActuallyRead": "Read V.6–7 directly: the baptism narrative locates Theodosius at Thessalonica before arrival; V.7 describes his request that Demophilus assent to Nicene belief, Demophilus' refusal and departure outside the city, and the date for the transfer of churches. This is Socrates' later narrative, not the wording of CTh 16.1.2.",
+          "sourceDateAsStated": "V.6 says Theodosius came to Constantinople on November 24 in the fifth consulate of Gratian and first of Theodosius. V.7 dates Demophilus and the adherents' removal/transfer of churches to November 26 in that consular year.",
+          "dateConversionNotVerified": "The text's English translation names November 24/26 and consular year; the consular conversion yields 380. No conversion to Gregorian versus Julian civil calendars is performed here. Keep the two dates separate; Socrates' report does not say that the Feb. law directly caused the November transfer.",
+          "authorDateAndAge": "Socrates wrote retrospectively in the fifth century and gives an ecclesiastical narrative, not a first-person eyewitness statement here. Exact age at composition unknown.",
+          "geographyActuallyNamed": ["Thessalonica", "Constantinople", "the city gates and assemblies held outside the city"],
+          "prudentClaim": "Socrates reports Theodosius' arrival in Constantinople on Nov. 24 and a church-possession conflict two days later, with Demophilus and followers leaving the city's churches after refusing the emperor's request. This is the historian's account and theological framing, not a neutral legal record.",
+          "biasAndLimits": "Pro-Nicene framing: Socrates describes the requested confession as peace and uses ‘Arian’/‘homoousian’ categories. It does not independently establish the extent of compliance, represent every group, or prove architectural locations for the oratory/churches mentioned."
+        },
+        {
+          "authorOrIssuer": "Emperors Gratian, Valentinian II and Theodosius I; legal text preserved in the fifth-century Codex Theodosianus",
+          "sourceTitle": "Codex Theodosianus, Liber XVI, I.2 (CTh 16.1.2)",
+          "urlCandidate": "https://la.wikisource.org/wiki/Codex_Theodosianus/Liber_XVI",
+          "urlActuallyConsulted": "https://la.wikisource.org/wiki/Codex_Theodosianus/Liber_XVI",
+          "exactLocator": "Liber XVI, title I, constitution 2; read heading, full Latin body and subscription (page lines 163–165)",
+          "translationAndEdition": "Latin online transcription on Wikisource; page identifies the Codex as compiled in 438. This is not a manuscript image or diplomatic inspection of a 4th-century original.",
+          "coverageActuallyRead": "Read the inscriptional heading, law's Latin body and dating subscription. The heading identifies the addressee as the people of Constantinople (ad populum urbis Constantinopolitanae); the body begins ‘Cunctos populos’ and declares a norm of confession plus the church-name status of other assemblies; subscription says issued at Thessalonica under Gratian's fifth and Theodosius' first consulships.",
+          "sourceDateAsStated": "Dat. III Kal. Mar. Thessalonicae, Gratiano Augusto V et Theodosio Augusto I consulibus. Its heading names the population of the city of Constantinople. Thus the code's subscription places issuance at Thessalonica, not Constantinople.",
+          "dateConversionNotVerified": "III Kal. Mar. conventionally converts by Roman inclusive counting to February 27; consular year is conventionally 380. The wording/consuls are the primary dating evidence; this audit did not independently compute any Gregorian-calendar conversion. The constitution uses universal-sounding language, while the heading gives a specific addressee; distinguish them instead of flattening either.",
+          "transmissionAndLimits": "The law is preserved in the Codex compiled in 438 and later manuscript transmission. This page is a modern transcription of the Latin text. It directly evidences imperial legal language and stated norm; it does not prove implementation, uniform religious practice, or that the law was delivered in the city it addresses.",
+          "prudentClaim": "CTh 16.1.2, preserved in the Theodosian Code, is an imperial constitution addressed (in the preserved heading) to Constantinople's population, issued at Thessalonica under the stated consular formula. It names Damasus and Peter of Alexandria as exemplars of the faith and specifies the imperial position on ‘catholic’ Christian naming and rival assemblies.",
+          "biasAndLimits": "Imperial normative rhetoric is neither a neutral survey nor evidence of universal enforcement. The conventional label ‘Edict of Thessalonica’ can conceal the difference between the place of issue (Thessalonica) and named addressee (Constantinople). The Code heading and body should be distinguished from later shorthand that calls it a declaration making Christianity the only practiced religion."
+        }
+      ],
+      "auditCorrection": "The candidate's key geographic distinction is right, but refine the claim: CTh inscription specifically addresses Constantinople's people while its subscription says issued in Thessalonica. Socrates V.7 is a separate narrative dated Nov. 26; do not present that transfer as automatic implementation of the Feb. constitution."
+    }
+  ],
+  "candidateFileCorrections": [
+    {
+      "candidateId": "ATHANASIUS-DEATH-AND-SUCCESSION-373",
+      "issue": "The source-date summary says Socrates' consular year is conventionally 373.",
+      "correction": "The directly consulted NPNF footnote says second consulate of Gratian and Probus = 371; it contrasts Jerome's 373 and says the latter is accepted. Historia Acephala independently supplies its own 373 endpoint. The source report (Socrates' incorrect/discordant 371 synchronism) must not be overwritten by the event date conventionally accepted from other evidence."
+    },
+    {
+      "candidateId": "ADRIANOPLE-378",
+      "issue": "Parenthetical date and editor's astronomical note can be conflated with Ammianus' text.",
+      "correction": "Retain the Roman formula ‘fifth before Ides of August’; August 9 is the conventional Julian conversion in editor note 124. Thayer's astronomical note is modern commentary, not Ammianus' statement."
+    },
+    {
+      "candidateId": "CONSTANTINOPLE-CHURCH-POLICY-380",
+      "issue": "Legal enactment and later church transfer could be collapsed into one causal event.",
+      "correction": "CTh 16.1.2 is dated to Thessalonica and addressed to Constantinople in its preserved heading; Socrates V.6–7 separately reports arrival Nov. 24 and church transfer/conflict Nov. 26. The law's date/location and the narrative's later dates are distinct."
+    }
+  ],
+  "scopeAndLimits": [
+    "This is source verification only; no recommendation to add episodes or select a final campaign sequence.",
+    "All primary text was consulted as online transcription or translation. No critical apparatus, manuscript image or physical artifact was inspected.",
+    "Dates are kept in their source forms where possible. Modern Gregorian conversions are not asserted unless an edition supplies a parenthetical rendering, and such renderings are identified as editorial.",
+    "Narrator age is unknown for all five sources in this evidence set; no eyewitness presence is inferred from contemporary authorship or detailed narration.",
+    "No archaeological site, modern map coordinate, game mechanic, or landscape claim was assessed."
+  ]
+}

@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "purpose": "Dated mechanical projection of archived collector declarations for the existing research crosswalk. No new source reading, historical approval or game contract. Original files remain unchanged.",
+  "upstreamSnapshots": [
+    {
+      "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+      "sha256": "440bea65af4495e82cfa865f0062152e2a420ca6adb3b0d82d238bded24efc59"
+    },
+    {
+      "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+      "sha256": "37df93a7288e0ff024cdc2ee76b2cdfdd3159d134b954230df14f8dc090396b1"
+    },
+    {
+      "path": "docs/research/odyssey-research/ali-family-architect-source-contrast.json",
+      "sha256": "a90c1364857aa98f0297dabf58241df2d055f13e8434a3ce044b25e319860835"
+    }
+  ],
+  "records": [
+    {
+      "id": "01-news-from-medina",
+      "campaignId": "first-fitna",
+      "dateInDesign": "mid656 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p. 3, lines 90–94; browser excerpt L90–L94@P2",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "Retrospective scholarly synthesis citing later accounts; it does not give individual itineraries or a contemporary register.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/0",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 3, lines 90–94; browser excerpt L90–L94@P2",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "02-civilian-refuge-and-record-preservation-medina",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE; murder is reported, not playable",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p. 4, lines 133–142; browser excerpt L133–L142@P3",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The article summarizes transmitted accounts; responsibility for the murder and the sequence remain matters for attributed reporting.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/1",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 133–142; browser excerpt L133–L142@P3",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "03-administrative-transition-medina",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE; motives attributed",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p. 4, lines 135–142; browser excerpt L135–L142@P3",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The passage gives no exact day and is a modern synthesis of later reports.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/2",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 135–142; browser excerpt L135–L142@P3",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "04-disputed-correspondence-mecca",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 152–157 (zero-based P4)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "A motive in this passage is attributed to transmitted accounts; no private speech was consulted.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/3",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 152–157; browser excerpt L152–L157@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "05-rival-petition-and-witness-records-medina",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 160–170 (P4)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "These are retrospectively transmitted political claims; the article also distinguishes Umayyad objectives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/4",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 160–170; browser excerpt L160–L170@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "06-arriving-delegation-and-supply-basra",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE; travelArabiaoff-map",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 163–172 (P4)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The source gives an attributed objective and broad route, not a surveyed itinerary.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/5",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 163–172; browser excerpt L163–L172@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "07-civilian-extraction-under-unrest-basra",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 168–176 (P4)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "It supplies no civilian extraction record, count, roster, or local map.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/6",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 168–176; browser excerpt L168–L176@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "02-between-the-camps",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 171–176 (P4)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The passage is a retrospective synthesis; the named account is not a verbatim contemporary battle record.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/7",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 171–176; browser excerpt L171–L176@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "09-bounded-distribution-and-receipts-basra",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656 CE; distribution accounts attributed",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.5; lines 177–180 (P4; extracted line 180 includes next-page running header)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The article presents this as a reported policy; it provides no quantitative ledger for a playable inventory.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/8",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4–5, lines 177–180; browser excerpt L177–L180@P4",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "10-camp-and-household-reception-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656/657 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.6; lines 182–190 (P5)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "This passage gives no exact day for the move; descriptions of motives are retrospective.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/9",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 5, lines 182–190; browser excerpt L182–L190@P5",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "11-two-way-correspondence-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656–657 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.6; lines 191–201 (P5)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The article summarizes positions in later chronicles; its reported exchanges are not authenticated verbatim letters.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/10",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "12-rival-claims-and-dispatch-comparison-damascus",
+      "campaignId": "first-fitna",
+      "dateInDesign": "656–657 CE",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.6; lines 191–201 (P5)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The passage is a modern synthesis of transmitted political claims, not a contemporaneous transcript.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/11",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 5, lines 191–201; browser excerpt L191–L201@P5",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "03-water-and-words",
+      "campaignId": "first-fitna",
+      "dateInDesign": "657 CE; fiercefighting191integrated",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p. 6, lines 202–215; browser excerpt L202–L215@P5",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The passage gives a regional plain, not coordinates for camps or a surveyed battlefield footprint.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/12",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 6, lines 202–215; browser excerpt L202–L215@P5",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "14-ceasefire-withdrawal-and-care-siffin",
+      "campaignId": "first-fitna",
+      "dateInDesign": "657 CE; Qur'an-folioaccount192attributed",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF pp.6–7; lines 216–225 (P5–P6)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The reported conversations are retrospective; no dialogue is treated here as verified quotation.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/13",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 6, lines 216–225; browser excerpt L216–L225@P5",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "15-paired-protocol-delivery-siffin",
+      "campaignId": "first-fitna",
+      "dateInDesign": "657 CE",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.7; lines 238–245 (P6)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "It cites later scholarship and chronicles; the terms are not presented as a surviving document read in this task.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/14",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 6, lines 238–245; browser excerpt L238–L245@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "16-witness-and-record-comparison-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "657/658 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.7, lines 228–237 (P6); pp.7–8, lines 245–267 (P6–P7)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "Motive explanations are the article’s reading of retrospective narratives; they are not independently verified here.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/15",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 6, lines 228–237, and PDF p. 7, lines 245–267; browser excerpts L228–L237@P6 and L245–L267@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "17-voluntary-household-relocation-harura",
+      "campaignId": "first-fitna",
+      "dateInDesign": "657/658 CE",
+      "placeInDesign": "harura",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.8; lines 262–267 (P7)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The article itself describes the label Khawarij as arising in this narrative sequence; no later sect identity is projected as direct contemporary self-description.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/16",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 7, lines 262–267; browser excerpt L262–L267@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "18-separate-delegation-logistics-dumat-al-jandal",
+      "campaignId": "first-fitna",
+      "dateInDesign": "February658 approximate; Ramadan37AHaccordingPoonawala",
+      "placeInDesign": "dumat-al-jandal",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.8; lines 268–272 (P7)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The wording is expressly tentative (“appears”); the passage says both parties learned the verdict, not that it was publicly issued.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/17",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 7, lines 268–272; browser excerpt L268–L272@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "19-disputed-correspondence-and-provision-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "658 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.8; lines 271–275 (P7)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The result is described through retrospective sources; no surviving protest text was read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/18",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 7, lines 271–275; browser excerpt L271–L275@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "04-the-canal-road",
+      "campaignId": "first-fitna",
+      "dateInDesign": "658 CE conventional",
+      "placeInDesign": "nahrawan",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.8; lines 277–283 (P7)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "It is a secondary summary of contested events; the passage does not establish counts or local casualty records.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/19",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 7, lines 277–283; browser excerpt L277–L283@P6",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "21-civilian-record-preservation-fustat",
+      "campaignId": "first-fitna",
+      "dateInDesign": "658 CE; Egyptloss not660; correctionrequiresexactpassage",
+      "placeInDesign": "fustat",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.9; lines 296–299 (P8)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The same selected locator is also bound to episode 24; this record reports the passage wording without deciding either selection’s chronology.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/20",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "22-delegate-reception-and-source-comparison-adhruh",
+      "campaignId": "first-fitna",
+      "dateInDesign": "January659 approximate; Shaban38AHaccordingPoonawala",
+      "placeInDesign": "adhruh",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF pp.8–9; lines 284–295 (P7–P8)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The text uses tentative phrasing and later reports; no precise archaeological location or public transcript is established here.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/21",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 8, lines 284–295; browser excerpt L284–L295@P7",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "23-bounded-rural-relief-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "659–660 CE; onefictionallocalraid, remoteincursionsreported",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.9; lines 296–299 (P8)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "A regional political summary does not identify one local raid or its exact site.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/22",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "24-civilian-refuge-and-dispatch-medina",
+      "campaignId": "first-fitna",
+      "dateInDesign": "660 CE; BusrraidsseparatefromEgypt658",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.9; lines 296–299 (P8)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The same selected locator is also bound to episode 21; this record reports the passage wording without deciding either selection’s chronology.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/23",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 8, lines 296–299; browser excerpt L296–L299@P7",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "25-care-and-record-preservation-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "January661 approximate; woundanddeath204consolidated",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/?generate_pdf=1",
+      "locator": "PDF p.9; lines 299–303 (P8)",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "Opened the public PDF in the web browser and read the specific extracted page/line passages recorded per episode. No Arabic text, full cited medieval works, or inscriptions were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The attacker and motive are given through later historical narrative; this is not contemporary testimony.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/24",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 8, lines 299–303; browser excerpt L299–L303@P7",
+        "locatorCorrection": "docs/research/odyssey-research/ali-family-architect-source-contrast.json#/collectionLocatorCorrections"
+      }
+    },
+    {
+      "id": "26-administrative-transition-and-household-supply-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "661 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+      "locator": "PDF p. 2, lines 53–65; browser excerpt L53–L65@P1",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "The HTML page was opened; scrolling it timed out. The separate public PDF was opened and the specific extracted page/line passages recorded per episode were read. No Arabic text or full cited medieval works were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The text’s displayed date line reads “19 Ramażān 28/28 January 660”; it is transcribed as displayed and not resolved here. The passage relies on later sources.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/25",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 2, lines 53–65; browser excerpt L53–L65@P1",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "27-paired-protocol-and-bounded-negotiation-kufa",
+      "campaignId": "first-fitna",
+      "dateInDesign": "661 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+      "locator": "PDF pp. 3–4, lines 95–112; browser excerpts L95–L112@P2–P3",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "The HTML page was opened; scrolling it timed out. The separate public PDF was opened and the specific extracted page/line passages recorded per episode were read. No Arabic text or full cited medieval works were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "These are the synthesis’s reports of later chronicles, not an independently inspected original letter or Arabic text.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/26",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF pp. 3–4, lines 95–112; browser excerpts L95–L112@P2–P3",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "05-two-archives",
+      "campaignId": "first-fitna",
+      "dateInDesign": "August661 approximate; RabiII41AH",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/?generate_pdf=1",
+      "locator": "PDF p. 4, lines 111–127; browser excerpt L111–L127@P3",
+      "consultationStatus": "specific public passage text read in browser this run; whole article not read",
+      "readScope": "The HTML page was opened; scrolling it timed out. The separate public PDF was opened and the specific extracted page/line passages recorded per episode were read. No Arabic text or full cited medieval works were read.",
+      "classification": "Archived gpt-6-luna bounded reading of a modern scholarly synthesis; no historical approval.",
+      "cautions": "The article itself reports competing/changed statements about terms; this collection does not authenticate a speech or letter.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/first-fitna-source-collection.json",
+        "pointer": "/episodes/27",
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "archivedLocator": "PDF p. 4, lines 111–127; browser excerpt L111–L127@P3",
+        "locatorCorrection": null
+      }
+    },
+    {
+      "id": "01-witness-and-transition-records-medina",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/0",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "02-civilian-refuge-and-petition-basra",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/1",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "03-finite-battle-withdrawal-and-care-basra",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "656 CE",
+      "placeInDesign": "basra",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/2",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "01-the-kufan-hearth",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "656/657 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/3",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "05-off-map-dispatch-and-source-comparison-fustat",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "c.656–657 CE; Kharbitareports, settlementnotfalselylocated",
+      "placeInDesign": "fustat",
+      "sourceUrl": "https://fliphtml5.com/qzpe/qric/History_of_Al_Tabari_-_Vol_16/",
+      "locator": "tabari-vol16-egypt-2026-10-23: The Events of the Year 36, subsection “ʿAli b. Abi Talib Sends Qays b. Saʿd b. ʿUbada to Be Ruler of Egypt”; print pp. 175–187, especially pp. 181–187 / Kharbita and Muhammad b. Abi Bakr governorship. Online text lines 13008–13831 and 13305–13354, accessed through FlipHTML5 text view. | tabari-vol17-jstor-attempt-2026-10-23: Canon points to vol. 17, “Events of the Year 38”; target stable URL attempted.",
+      "consultationStatus": "vol16 read; requested vol17 comparison attempted but inaccessible; do not infer it",
+      "readScope": "tabari-vol16-egypt-2026-10-23: Read the volume's editorial description and the year-36 account of Qays b. Saʿd's appointment, Kharbita opposition, reported security/truce and tax collection, later transfer of Egypt to Muhammad b. Abi Bakr, including the text's conflicting chronology notices. | tabari-vol17-jstor-attempt-2026-10-23: Attempted to open the JSTOR stable URL for comparison with the vol. XVI report; the web reader returned inaccessible URL. No passage from this item was read.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "tabari-vol16-egypt-2026-10-23: This is a translated medieval chronicle compilation with multiple report chains and internal divergences, not a single uncontested account. The volume's own preface warns that the section is open to special pleading and represents differing viewpoints. It does not support moving the later 658 fall of Egypt or Muhammad b. Abi Bakr's death to Kharbita. The FlipHTML5 host is a third-party viewer; bibliographic identity and pagination are taken from the reproduced SUNY volume front matter. | tabari-vol17-jstor-attempt-2026-10-23: Do not cite this as read or use it to support claims. Author, exact title, publication metadata, page locator and passage remain unverified in this attempt.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/4",
+        "queryPointers": [
+          "/queries/5",
+          "/queries/6"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "02-a-cup-at-siffin",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "657 CE",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/5",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "07-ceasefire-withdrawal-and-records-siffin",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "657 CE; attributedchronicleaccount",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/6",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "08-paired-protocol-delivery-siffin",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "657 CE",
+      "placeInDesign": "siffin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/7",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "09-witness-and-text-comparison-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "657/658 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/8",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "10-voluntary-household-relocation-harura",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "657/658 CE; Nahrawanlateroff-map",
+      "placeInDesign": "harura",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/9",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "11-finite-civilian-withdrawal-and-care-nahrawan",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "658 CE",
+      "placeInDesign": "nahrawan",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/10",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "12-delegation-and-source-comparison-adhruh",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "659 CE",
+      "placeInDesign": "adhruh",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ali-b-abi-taleb/ali-b-abi-taleb-i-life/",
+      "locator": "iranica-ali-life-2026-10-23: Section i. Life; print edition Encyclopaedia Iranica I/8 (1985), pp. 838–848. Consulted search-indexed text for post-ʿUthmān election, Battle of the Camel, move to Kūfa, Ṣiffīn, arbitration, secession/Nahrawān, arbitration meetings and death; individual event subheadings are stable locators.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-ali-life-2026-10-23: Read the indexed article text covering Ali's reluctant acceptance after Uthman's murder; opposition moving to Basra and the Battle of the Camel; move of political center to Kufa; armies at Siffin and the Quranic codices/arbitration; disagreement over arbitrators, Kharijite secession and Nahrawan; meetings at Dumat al-Jandal and Adhruh; Egypt and loss of territories; death in Kufa.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-ali-life-2026-10-23: Modern reference synthesis, not a contemporary eyewitness account. Distinguish the author's reconstruction from traditions explicitly attributed to al-Tabari, al-Masudi, al-Baladhuri and others. No exact day for Ali's acceptance is stated; Poonawala says probably several days after Uthman's death. The Battle of the Camel, Kufa and Siffin are regional event labels, not verified map coordinates or city plans.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/11",
+        "queryPointers": [
+          "/queries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "03-the-sealed-copy",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "661 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/12",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "14-paired-protocol-and-negotiation-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "661 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/13",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "15-finite-distribution-and-receipts-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "August661 approximate",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/14",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "16-ceremony-and-record-preservation-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "661 CE; publictransferattributed",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/15",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "17-returning-household-and-workshop-supply-medina",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "661 CE; separatelocalreturn, notsecondtransfer",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/16",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "18-mourning-and-witness-preservation-medina",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "669/670 CE; disputeddateandpoisoningclaims",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "locator": "iranica-hasan-2026-10-23: Full headword, especially account from Ali's death through surrender of Iraq and public ceremony; death and burial sections. Print edition Encyclopaedia Iranica XII/1 (2003), pp. 26–28.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hasan-2026-10-23: Read indexed article text on Hasan's support among Kufans after Ali's death; negotiations and proposed terms with Muawiya; surrender in Rabiʿ II 41/August 661; public ceremony at Kufa and return to Medina; accounts of death, poisoning allegations and burial instructions.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hasan-2026-10-23: Treaty details and speeches are transmitted reports, not independently verified verbatim records. Poisoning is reported by early sources; attribution of responsibility is disputed and must remain qualified. The article's narrative should not be converted into private dialogue or exact staging absent a separate source audit.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/17",
+        "queryPointers": [
+          "/queries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "19-off-map-succession-dispatch-medina",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE; YazidsuccessionDamascusreported",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/asura/",
+      "locator": "iranica-asura-2026-10-23: Section “ʿĀšūrāʾ in Shiʿite piety”; print edition Encyclopaedia Iranica II/8 (1987), pp. 874–876.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-asura-2026-10-23: Read indexed section on the succession after Muawiya's death, Yazid's succession and the opposition of Husayn and Kufa, then the Karbala events and later Ashura commemoration.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-asura-2026-10-23: This is a modern interpretive and religious-history entry, not a primary narrative source for the battle. Its theological interpretation of Husayn's martyrdom is the author's framing; it should be attributed rather than universalized.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/18",
+        "queryPointers": [
+          "/queries/4"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "20-finite-household-departure-medina",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE; historicalfiguresoff-map",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/19",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "21-two-way-correspondence-and-witnesses-mecca",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "June680 approximate; calendarconversionqualified",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/20",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "22-delegation-reception-and-support-records-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/21",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "23-civilian-refuge-and-record-extraction-kufa",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE; executionsreportednotplayergoal",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/22",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "24-finite-caravan-consignments-mecca",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "September680 approximate; exitdatevariants",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/23",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "25-bounded-civilian-route-and-care-qadisiyya",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE",
+      "placeInDesign": "qadisiyya",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/24",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "26-source-comparison-and-voluntary-return-zubala",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE; Thalabiyyaseparatepriorreport, notsameplace",
+      "placeInDesign": "zubala",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/25",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "27-off-map-dispatch-and-route-replanning-qadisiyya",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "680 CE; DhuHusamencounterreported, exactsiteunresolved",
+      "placeInDesign": "qadisiyya",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/26",
+        "queryPointers": [
+          "/queries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "28-finite-camp-and-household-provision-karbala",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "earlyOctober680 conventional",
+      "placeInDesign": "karbala",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498. | iranica-karbala-2026-10-23: Headword sections on Karbala as a historical site and the battle; print edition Encyclopaedia Iranica XV/5 (2010), pp. 550–556.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors. | iranica-karbala-2026-10-23: Read indexed account of the journey from Medina toward Kufa, interception, arrival on the Karbala plain, army confrontation on 10 Muharram, deaths and captivity; also the later development of Karbala visitation and collective memory.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives. | iranica-karbala-2026-10-23: The troop count is a traditional transmitted figure, not a verified census. The entry's retrospective discussion of religious memory is later history, not evidence for battlefield arrangements in 680. The present city and shrine geography do not establish the exact location of the historical camp.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/27",
+        "queryPointers": [
+          "/queries/2",
+          "/queries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "29-separate-reception-and-record-escort-karbala",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "earlyOctober680 conventional",
+      "placeInDesign": "karbala",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498. | iranica-karbala-2026-10-23: Headword sections on Karbala as a historical site and the battle; print edition Encyclopaedia Iranica XV/5 (2010), pp. 550–556.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors. | iranica-karbala-2026-10-23: Read indexed account of the journey from Medina toward Kufa, interception, arrival on the Karbala plain, army confrontation on 10 Muharram, deaths and captivity; also the later development of Karbala visitation and collective memory.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives. | iranica-karbala-2026-10-23: The troop count is a traditional transmitted figure, not a verified census. The entry's retrospective discussion of religious memory is later history, not evidence for battlefield arrangements in 680. The present city and shrine geography do not establish the exact location of the historical camp.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/28",
+        "queryPointers": [
+          "/queries/2",
+          "/queries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    },
+    {
+      "id": "04-the-water-that-remains",
+      "campaignId": "house-of-ali",
+      "dateInDesign": "October680 conventional; battle262historicaloutcomeinfinale",
+      "placeInDesign": "karbala",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn-life-2026-10-23: Article sections on Yazid's succession, refusal and departure from Medina, Mecca, Kufan correspondence and Muslim b. Aqil, route through Qadisiyya/Thalabiyya/Zubala, Hurr and Karbala, and the confrontation/battle; print edition Encyclopaedia Iranica XII/5 (2004), pp. 493–498. | iranica-karbala-2026-10-23: Headword sections on Karbala as a historical site and the battle; print edition Encyclopaedia Iranica XV/5 (2010), pp. 550–556.",
+      "consultationStatus": "read passages summarized in linked records",
+      "readScope": "iranica-hosayn-life-2026-10-23: Read indexed article passages covering the succession after Muawiya's death; Husayn's departure to Mecca; letters from Kufa and the mission and execution of Muslim b. Aqil and Hani b. Urwa; departure before full news arrived; road block, news at Thalabiyya and Zubala; encounter with Hurr, blocked routes, Karbala camp, arrival of Umar b. Sa'd's army, negotiations, battle and survivors. | iranica-karbala-2026-10-23: Read indexed account of the journey from Medina toward Kufa, interception, arrival on the Karbala plain, army confrontation on 10 Muharram, deaths and captivity; also the later development of Karbala visitation and collective memory.",
+      "classification": "Archived gpt-6-luna read-only collection; each query retains its stated scope and any failed attempt. Not a historical approval.",
+      "cautions": "iranica-hosayn-life-2026-10-23: The account is a modern synthesis of transmitted reports, not direct eyewitness testimony. Madelung explicitly questions some reports and reports contradictions; do not flatten them into certainty. Road, village and camp sites are not equivalent to precise present-day coordinates. Do not claim all family members died; the article records survivors and captives. | iranica-karbala-2026-10-23: The troop count is a traditional transmitted figure, not a verified census. The entry's retrospective discussion of religious memory is later history, not evidence for battlefield arrangements in 680. The present city and shrine geography do not establish the exact location of the historical camp.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/house-of-ali-source-collection.json",
+        "pointer": "/selections/29",
+        "queryPointers": [
+          "/queries/2",
+          "/queries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-23",
+        "canonicalContextDateAndGeographyAddedBy": "gpt-6 from unchanged canonical selection; not newly verified historical data"
+      }
+    }
+  ]
+}

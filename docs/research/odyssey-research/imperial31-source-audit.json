@@ -1,0 +1,48 @@
+{
+  "episodeId": "31-contested-succession-alexandria",
+  "displayOrder": 29,
+  "date": "2026-10-17",
+  "author": "gpt-6",
+  "status": "architect selected-source reading and design; independent historical review pending",
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "locator": "Historia Acephala XII.17 and XIII.19",
+      "actuallyRead": "Root read the complete selected chronology endpoint and final succession paragraph in Robertson/NPNF translation.",
+      "supported": "An Athanasian chronology ends with Athanasius’ death and names Peter as the successor ordained before his death.",
+      "limits": "Anonymous favorable chronicle, not Athanasius’ autobiography. Its consular/calendar formula and editorial May3conversion are not a verified Gregorian day. No exact succession room, funeral route or urban battle plan."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26014.htm",
+      "locator": "Socrates HE IV.20–22, with IV.1 as prior-claimant context",
+      "actuallyRead": "Root read the complete selected death/intervention/flight chapters; IV.1 selected paragraph distinguishes Lucius as a previously constituted rival from later church possession.",
+      "supported": "Socrates names Peter, reports an imperial-authorized intervention with troops, imprisonment and dispersal, Lucius’ church possession, and Peter’s subsequent flight to Damasus at Rome.",
+      "limits": "Later Nicene historian, not an eyewitness assertion. Providential causation, hostile labels and ethnic stereotypes remain the author’s framing. Peter’s letters cited by Socrates were not independently read. No two modern translations count as two independent ancient witnesses."
+    },
+    {
+      "url": "https://www.ccel.org/ccel/schaff/npnf202.ii.vii.xx.html",
+      "locator": "Socrates IV.20 and NPNF editorial footnote616",
+      "actuallyRead": "Root read the complete short chapter and chronology footnote.",
+      "supported": "The transmitted consular synchronism is identified as371 by the editor, who contrasts Jerome’s373chronology.",
+      "limits": "This is an editor’s comparison, not a fresh reading of Jerome or a correction to Socrates’ words. Do not claim his consular phrase converts to373."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26026.htm",
+      "locator": "Sozomen HE VI.19",
+      "actuallyRead": "Root read the complete selected chapter on succession, intervention, local opposition, flight and imprisonment, and Peter’s journey to Rome.",
+      "supported": "A later favorable-to-Peter narrative describes displacement and coercion around church possession.",
+      "limits": "Not demonstrated independent eyewitness corroboration of Socrates. Descriptions of cruelty and generalization about parties stay attributed; no playable massacre, torture sequence or game-unit count is derived. VI.20desert/island material is outside this local episode."
+    },
+    {
+      "url": "https://athanasius.phil.uni-erlangen.de/athanasius-life-and-works.html",
+      "locator": "Uta Heil, introduction and selected1.12–1.13paragraphs, especially death endpoint",
+      "actuallyRead": "Root read selected academic project biography paragraphs on source limitations, final exile and last years/death; not the full bibliography or cited critical editions.",
+      "supported": "Modern scholarly project frames the last period through373 and distinguishes historical sources and reception.",
+      "limits": "Its displayed death day differs from the older translation’s parenthesis; retain year373only. Modern synthesis is not a new ancient witness or geographic survey. Unread editions, Jerome, Peter’s letters and manuscript apparatus remain pending."
+    }
+  ],
+  "chronologyDecision": "Use373as conventional episode frame, explicitly preserve Socrates’371synchronism and unresolved civil-day conversion. Do not collapse earlier rival nomination, later church possession, imprisonment and subsequent flight into a single witnessed ceremony.",
+  "playableLicense": "Two independent ordinary household withdrawals, finite fictional road pressure and local supplies; no historical bishop or cleric rescue and no reversal of church possession. Numbers, courts, escorts and hostiles are gameplay fiction, not an attested street battle.",
+  "historicalApproval": false,
+  "nativeOrGameApproval": false
+}

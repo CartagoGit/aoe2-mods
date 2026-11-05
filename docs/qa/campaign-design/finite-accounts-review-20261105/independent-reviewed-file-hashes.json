@@ -1,0 +1,47 @@
+[
+  {
+    "path": "tools/design/authored_difficulty_accounts.helper.py",
+    "sha256": "59097fa40cd735b5632c410fa2a39b8128f3dddf2bf5d497d7a6b2c7dde50a28",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/civic_difficulty_audit.script.py",
+    "sha256": "1c6a08c57a884bc07b1e7a3699c07b6c8d2e6a84dbe8cd7fa44d237ac8680b5f",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/episode_dossier.factory.py",
+    "sha256": "63aacebda3935e75307e8d60562bb493d0b387ed2562573b83c54ee57e6d989b",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/episode_dossier.validator.py",
+    "sha256": "9b9c2a2376e14bf8e9eb075e40303a6cfbdfc0d229154cf85392c38f3928c3c3",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/episode_dossiers.script.py",
+    "sha256": "c8f1e49568848d5b9f2256ef1811c7eed725cc23bf87db5a4f016f5541d5d239",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/readiness_timing_audit.script.py",
+    "sha256": "be2fd0b6180c54be405d8ab69962ca195016f242c2c64d73a4c4d24f061ee58c",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/secondary.py",
+    "sha256": "39a75d8e9456dc53c9424c37772aaf8d697f35b6330cc9d6a63e635fa1bfb716",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/test_authored_difficulty_accounts.py",
+    "sha256": "1b75ee96dae0ec7bb56257bf6c8ef385d211dfc72dab5017df06ce8c510d78c1",
+    "workingMatchesCommit": true
+  },
+  {
+    "path": "tools/design/test_design.py",
+    "sha256": "cd289c9a536c67c84a91d09687a98f6926b38fbcadb3e8d007b67d94d5c9b70c",
+    "workingMatchesCommit": true
+  }
+]

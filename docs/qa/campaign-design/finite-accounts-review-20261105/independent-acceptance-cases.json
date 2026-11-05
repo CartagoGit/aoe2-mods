@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "proposal": "i00013",
+  "slice": "S2",
+  "test": "test_all_31_architecture_cases_with_executable_results",
+  "command": "python3 -m unittest -v tools.design.test_authored_difficulty_accounts.AuthoredDifficultyAccountsTests.test_all_31_architecture_cases_with_executable_results",
+  "sourceCaseFileSha256": "ef97b179284741b653b83ec5713ed2b9160834bede6a0d78ca2872792be08a47",
+  "sourceTestFileSha256": "1b75ee96dae0ec7bb56257bf6c8ef385d211dfc72dab5017df06ce8c510d78c1",
+  "sourceCaseFlagsChanged": false,
+  "completedAtUtc": "2026-11-05T07:45:57.710555+00:00",
+  "count": 31,
+  "result": "pass",
+  "cases": [
+    {
+      "id": "missing-difficulty",
+      "result": "pass"
+    },
+    {
+      "id": "unknown-difficulty",
+      "result": "pass"
+    },
+    {
+      "id": "missing-account",
+      "result": "pass"
+    },
+    {
+      "id": "unknown-account",
+      "result": "pass"
+    },
+    {
+      "id": "missing-resource",
+      "result": "pass"
+    },
+    {
+      "id": "unknown-resource",
+      "result": "pass"
+    },
+    {
+      "id": "negative",
+      "result": "pass"
+    },
+    {
+      "id": "boolean",
+      "result": "pass"
+    },
+    {
+      "id": "fraction",
+      "result": "pass"
+    },
+    {
+      "id": "unsafe",
+      "result": "pass"
+    },
+    {
+      "id": "nonfinite",
+      "result": "pass"
+    },
+    {
+      "id": "conflicting-start-alias",
+      "result": "pass"
+    },
+    {
+      "id": "conflicting-margin-alias",
+      "result": "pass"
+    },
+    {
+      "id": "recovery-alias",
+      "result": "pass"
+    },
+    {
+      "id": "reward-shortfall",
+      "result": "pass"
+    },
+    {
+      "id": "reward-excess",
+      "result": "pass"
+    },
+    {
+      "id": "protected-main",
+      "result": "pass"
+    },
+    {
+      "id": "reward-main",
+      "result": "pass"
+    },
+    {
+      "id": "self-funding",
+      "result": "pass"
+    },
+    {
+      "id": "missing-task-inputs",
+      "result": "pass"
+    },
+    {
+      "id": "duplicate-once",
+      "result": "pass"
+    },
+    {
+      "id": "unapproved-bank",
+      "result": "pass"
+    },
+    {
+      "id": "aggregate-overflow",
+      "result": "pass"
+    },
+    {
+      "id": "optional-count",
+      "result": "pass"
+    },
+    {
+      "id": "no-full-witness",
+      "result": "pass"
+    },
+    {
+      "id": "unknown-economy-mode",
+      "result": "pass"
+    },
+    {
+      "id": "v3-economy-marker",
+      "result": "pass"
+    },
+    {
+      "id": "wrong-new-margin",
+      "result": "pass"
+    },
+    {
+      "id": "direct-output-marker-input",
+      "result": "pass"
+    },
+    {
+      "id": "legacy-default-checks",
+      "result": "pass"
+    },
+    {
+      "id": "timing-unsupported",
+      "result": "pass"
+    }
+  ]
+}

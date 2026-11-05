@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-geographic-household-preview-plan",
+  "date": "2026-11-05",
+  "architect": "gpt-6",
+  "status": "architect source decision; independent S1 and implementation acceptance pending",
+  "privateBuildAuthorized": false,
+  "historicalApproval": false,
+  "gameVerified": false,
+  "generalComposedExportEnabled": false,
+  "campaignId": "faith-origins",
+  "episodeId": "02-civilian-refuge-jerusalem",
+  "artifactScenarioId": "faith-origins-02-private-geographic-preview",
+  "sourceBinding": {
+    "path": "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/19-native-binding-draft.json",
+    "sha256": "55d1c27acc7e55c5caeb070c016d1d364a3b6b5a5255a6797b3471101863f713"
+  },
+  "sourceCampaign": {
+    "path": "docs/design/odysseys/faith-origins.json",
+    "sha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+    "dossierIndex": 1
+  },
+  "raster": {
+    "path": "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/24-modern-surface-frame-crop.tif",
+    "sha256": "49c2c666dee43187bb5438fc989ce84fc1807c8cafeb65c09293786e18729276",
+    "sourceClassification": "modern-dsm",
+    "horizontalCrs": "EPSG:4326",
+    "sampleAnchor": "centre",
+    "heightUnit": "metre",
+    "verticalDatum": "EGM2008 reported by product documentation; not a vertical CRS encoded in this TIFF",
+    "licenseNoticePath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+    "width": 763,
+    "height": 649
+  },
+  "frame": {
+    "mapSize": 340,
+    "bbox": [
+      35.12,
+      31.7,
+      35.3,
+      31.86
+    ],
+    "sampleConvention": "existing frame integer sample index[i,j] maps native tile[i,j]; body centres snap floor(design)+0.5; report half-cell displacement, never claim an exact ancient address"
+  },
+  "bands": [
+    {
+      "fromMetres": 300,
+      "nativeLevel": 1
+    },
+    {
+      "fromMetres": 400,
+      "nativeLevel": 2
+    },
+    {
+      "fromMetres": 500,
+      "nativeLevel": 3
+    },
+    {
+      "fromMetres": 600,
+      "nativeLevel": 4
+    },
+    {
+      "fromMetres": 700,
+      "nativeLevel": 5
+    },
+    {
+      "fromMetres": 800,
+      "nativeLevel": 6
+    },
+    {
+      "fromMetres": 900,
+      "nativeLevel": 7
+    }
+  ],
+  "terrain": {
+    "baseTerrain": "grass-1",
+    "purpose": "technical development ground with modern relief; no reconstructed ancient land or vegetation mask",
+    "knownWaterCells": [],
+    "hydrologyCoverage": "unresolved; empty known-water list is not proof of dry ground",
+    "knownWaterPolicy": "reject any supplied known-water cells in this bounded builder; never paint known water as land, infer water from level0, invent a ford/bridge or bypass this refusal",
+    "flatteningAllowed": false,
+    "heightInterpolationChangesAllowed": false
+  },
+  "corridors": [
+    {
+      "id": "main",
+      "sourceComparisonId": "western-main-candidate",
+      "mode": "land",
+      "widthTiles": 10,
+      "lonLatPoints": [
+        [
+          35.218,
+          31.791
+        ],
+        [
+          35.219,
+          31.784
+        ],
+        [
+          35.219,
+          31.776
+        ],
+        [
+          35.22,
+          31.77
+        ],
+        [
+          35.229,
+          31.765
+        ],
+        [
+          35.227,
+          31.758
+        ],
+        [
+          35.228,
+          31.751
+        ],
+        [
+          35.23,
+          31.744
+        ]
+      ],
+      "tilePoints": [
+        [
+          182.36,
+          148.69
+        ],
+        [
+          183.97,
+          161.93
+        ],
+        [
+          183.97,
+          177.07
+        ],
+        [
+          185.58,
+          188.42
+        ],
+        [
+          200.05,
+          197.88
+        ],
+        [
+          196.84,
+          211.12
+        ],
+        [
+          198.45,
+          224.36
+        ],
+        [
+          201.66,
+          237.6
+        ]
+      ],
+      "hubOrder": [
+        "hub-1",
+        "hub-2",
+        "hub-3"
+      ],
+      "status": "fictional development candidate in real regional coordinates; no surveyed ancient route or engine passability claim"
+    },
+    {
+      "id": "relief",
+      "sourceComparisonId": "western-relief-candidate",
+      "mode": "land",
+      "widthTiles": 6,
+      "lonLatPoints": [
+        [
+          35.218,
+          31.791
+        ],
+        [
+          35.208,
+          31.786
+        ],
+        [
+          35.207,
+          31.777
+        ],
+        [
+          35.212,
+          31.77
+        ],
+        [
+          35.219,
+          31.766
+        ],
+        [
+          35.229,
+          31.765
+        ],
+        [
+          35.222,
+          31.762
+        ],
+        [
+          35.221,
+          31.753
+        ],
+        [
+          35.223,
+          31.747
+        ],
+        [
+          35.23,
+          31.744
+        ]
+      ],
+      "tilePoints": [
+        [
+          182.36,
+          148.69
+        ],
+        [
+          166.28,
+          158.15
+        ],
+        [
+          164.68,
+          175.18
+        ],
+        [
+          172.72,
+          188.42
+        ],
+        [
+          183.97,
+          195.98
+        ],
+        [
+          200.05,
+          197.88
+        ],
+        [
+          188.8,
+          203.55
+        ],
+        [
+          187.19,
+          220.58
+        ],
+        [
+          190.41,
+          231.93
+        ],
+        [
+          201.66,
+          237.6
+        ]
+      ],
+      "hubOrder": [
+        "hub-1",
+        "hub-2",
+        "hub-3"
+      ],
+      "status": "fictional development candidate in real regional coordinates; no surveyed ancient route or engine passability claim"
+    }
+  ],
+  "bodyOverrides": [
+    {
+      "id": "02-civilian-refuge-jerusalem.side-3.entity-1",
+      "fromPosition": [
+        200.05,
+        189.88
+      ],
+      "toPosition": [
+        200.05,
+        186.88
+      ],
+      "fromNativeCentre": [
+        200.5,
+        189.5
+      ],
+      "toNativeCentre": [
+        200.5,
+        186.5
+      ],
+      "deltaTiles": [
+        0,
+        -3
+      ],
+      "retainSourcePositionAndOffset": true,
+      "authority": "architect candidate relocation within the same fictional hub-2; only for the separate development-preview binding after independent acceptance",
+      "reason": "original conservative clearance intersects levels4/5; nearest bounded candidate has45 conservative intersecting-cell samples atlevel5 without altering terrain",
+      "conservativeExtentTiles": 3,
+      "envelopeExtraTiles": "sqrt(0.5), for a conservative cell-footprint envelope",
+      "uniformEnvelopeCellCount": 45,
+      "uniformEnvelopeLevel": 5,
+      "hubCentreDistanceTiles": 11.389,
+      "minimumExtraReceiverClearanceTiles": 3.389,
+      "minimumExtraOtherBodyClearanceTiles": 26.463,
+      "footprintClaim": "conservative geometric exclusion, not measured engine collision; engine inspection pending"
+    }
+  ],
+  "layoutPolicy": {
+    "originalBodies": 17,
+    "zones": 10,
+    "mainOriginals": 8,
+    "optionalOriginals": 9,
+    "otherBodyChangesAllowed": false,
+    "zoneChangesAllowed": false,
+    "minimumBodyCentreDistanceTiles": 4,
+    "receiverApproachTiles": 2,
+    "storeActualFootprintVerified": false,
+    "recomputeDerivedLayoutEvidence": true,
+    "priorLayoutFigure": "21-physical-layout.png records the older position and must not be relabelled as this preview"
+  },
+  "presentation": {
+    "en": "Development preview. Modern relief is a visual reference; historical terrain, routes, collision and balance remain under review.",
+    "es-ES": "Versión de desarrollo. El relieve moderno es una referencia visual; el terreno histórico, las rutas, las colisiones y el equilibrio siguen en revisión.",
+    "preserveSourceScreens": 39,
+    "preserveNarratorOrder": [
+      "fact-intro",
+      "handover",
+      "persona-intro"
+    ],
+    "continuationEpisodeId": "03-shared-provision-jerusalem",
+    "campaignComplete": false
+  },
+  "buildPolicy": {
+    "locales": [
+      "en",
+      "es-ES"
+    ],
+    "difficulties": [
+      "easy",
+      "standard",
+      "hard"
+    ],
+    "nativeBase": "tools/python/native_scenario.factory.py",
+    "controller": "tools/python/native_household.adapter.py",
+    "signature": "tools/python/native_signature.helper.py",
+    "syntheticBuilderMustRemainUnchangedByDefault": true,
+    "historicalBuilderRefusalMustRemain": true,
+    "engineEvidenceRequiredBeforeCompilation": false,
+    "engineEvidenceRequiredBeforeGameVerified": true,
+    "publicDistributionAuthorized": false
+  },
+  "evidence": {
+    "sourceSamplesVerified": 495187,
+    "nativeHeightCells": 115600,
+    "modernHeightRangeMetres": [
+      208.161999,
+      966.471753
+    ],
+    "levelHistogram": [
+      482,
+      4112,
+      11012,
+      19951,
+      27073,
+      42326,
+      10073,
+      571
+    ],
+    "adjacentLevelJumpAtLeast2Count": 0,
+    "independentPixelDecoder": "system libtiff.so.5 through installed tiffio.h API;495187samples,0mismatches; georeference/vertical datum not independently decoded by this check",
+    "priorCorridorAuditLimitation": "existing square helper with even widths10/6 covers9/5; rounded-points diagnostics are not full continuous-width acceptance",
+    "dataArtifactStatus": "external analysis only; this decision adds no dossier, registered media or approved historic geometry"
+  }
+}

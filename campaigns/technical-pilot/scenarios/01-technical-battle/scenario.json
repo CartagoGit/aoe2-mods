@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "01-technical-battle",
+  "titleKey": "scenario.technical-battle.title",
+  "period": "Sin período: fixture técnico",
+  "date": "No histórico",
+  "location": "Mapa de laboratorio",
+  "claimIds": [],
+  "characters": [],
+  "mechanic": "battle",
+  "secondaryMechanics": [
+    "Orden de objetivos"
+  ],
+  "map": {
+    "width": 32,
+    "height": 32,
+    "blocked": [],
+    "start": {
+      "x": 4,
+      "y": 4
+    },
+    "geography": "Llanura artificial sin geografía histórica"
+  },
+  "units": [
+    {
+      "id": "guard",
+      "faction": "player",
+      "type": "militia",
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "essential": true
+    },
+    {
+      "id": "enemy-guard",
+      "faction": "enemy",
+      "type": "militia",
+      "position": {
+        "x": 24,
+        "y": 24
+      },
+      "essential": false
+    }
+  ],
+  "factions": [
+    {
+      "id": "player",
+      "player": 1,
+      "civilization": "byzantines",
+      "justification": "Representación puramente técnica; no reconstrucción histórica",
+      "claimIds": [],
+      "role": "human",
+      "economy": {
+        "model": "finite-reserve",
+        "initial": {
+          "food": 200,
+          "wood": 200,
+          "gold": 100,
+          "stone": 100
+        },
+        "supply": "Reserva inicial visible; sin generación de tropas",
+        "production": [],
+        "reserve": 2
+      },
+      "strategy": {
+        "goals": [
+          "Conservar posiciones"
+        ],
+        "mobilization": "Solo unidades iniciales",
+        "reactions": [
+          "Defender ante ataque"
+        ],
+        "limits": "Dos unidades como máximo",
+        "retreat": "Derrota al perder la posición"
+      },
+      "reinforcements": []
+    },
+    {
+      "id": "enemy",
+      "player": 2,
+      "civilization": "byzantines",
+      "justification": "Representación puramente técnica; no reconstrucción histórica",
+      "claimIds": [],
+      "role": "enemy",
+      "economy": {
+        "model": "finite-reserve",
+        "initial": {
+          "food": 200,
+          "wood": 200,
+          "gold": 100,
+          "stone": 100
+        },
+        "supply": "Reserva inicial visible; sin generación de tropas",
+        "production": [],
+        "reserve": 2
+      },
+      "strategy": {
+        "goals": [
+          "Conservar posiciones"
+        ],
+        "mobilization": "Solo unidades iniciales",
+        "reactions": [
+          "Defender ante ataque"
+        ],
+        "limits": "Dos unidades como máximo",
+        "retreat": "Derrota al perder la posición"
+      },
+      "reinforcements": []
+    }
+  ],
+  "objectives": [
+    {
+      "id": "prepare",
+      "textKey": "scenario.technical-battle.prepare",
+      "kind": "main",
+      "requires": [],
+      "completion": {
+        "type": "timer",
+        "seconds": 5
+      },
+      "location": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "id": "defeat-guard",
+      "textKey": "scenario.technical-battle.defeat-guard",
+      "kind": "main",
+      "requires": [
+        "prepare"
+      ],
+      "completion": {
+        "type": "destroy",
+        "unit": "enemy-guard"
+      },
+      "location": {
+        "x": 24,
+        "y": 24
+      }
+    }
+  ],
+  "victory": {
+    "objectives": [
+      "prepare",
+      "defeat-guard"
+    ],
+    "progressKey": "progress.technical-pilot.route-a"
+  },
+  "defeat": {
+    "essentialUnits": [
+      "guard"
+    ],
+    "timeoutSeconds": 600,
+    "arbitration": "defeat-first"
+  },
+  "variables": [
+    {
+      "id": "choice",
+      "initial": 0
+    }
+  ],
+  "balance": {
+    "easy": {
+      "resources": {
+        "food": 200,
+        "wood": 200,
+        "gold": 100,
+        "stone": 100
+      },
+      "enemyReactionSeconds": 30,
+      "hints": true
+    },
+    "standard": {
+      "resources": {
+        "food": 200,
+        "wood": 200,
+        "gold": 100,
+        "stone": 100
+      },
+      "enemyReactionSeconds": 20,
+      "hints": false
+    },
+    "hard": {
+      "resources": {
+        "food": 200,
+        "wood": 200,
+        "gold": 100,
+        "stone": 100
+      },
+      "enemyReactionSeconds": 10,
+      "hints": false
+    }
+  },
+  "narrative": {
+    "intro": [
+      {
+        "id": "scenario-intro",
+        "speaker": "pilot-chronicle",
+        "textKey": "scenario.technical-battle.intro",
+        "claimIds": [],
+        "delivery": "Documental",
+        "durationSeconds": 5
+      }
+    ],
+    "events": [],
+    "outro": [
+      {
+        "id": "scenario-outro",
+        "speaker": "pilot-chronicle",
+        "textKey": "scenario.technical-battle.outro",
+        "claimIds": [],
+        "delivery": "Documental",
+        "durationSeconds": 5
+      }
+    ]
+  },
+  "technologies": [],
+  "rewards": [
+    "Guardar únicamente la clave de esta ruta"
+  ],
+  "dependencies": [],
+  "media": [],
+  "qa": [
+    {
+      "id": "premature-victory",
+      "steps": [
+        "Atacar antes de cinco segundos"
+      ],
+      "expected": "No ganar antes de prepare",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Pendiente de juego real"
+    },
+    {
+      "id": "save-load",
+      "steps": [
+        "Guardar antes de destruir al enemigo",
+        "Cargar y destruirlo"
+      ],
+      "expected": "Guardar progreso una vez",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Pendiente de juego real"
+    },
+    {
+      "id": "simultaneous-terminal",
+      "steps": [
+        "Matar ambas milicias en el mismo tick"
+      ],
+      "expected": "Solo derrota y sin escribir progreso",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Pendiente de juego real"
+    },
+    {
+      "id": "critical-unit",
+      "steps": [
+        "Guarnecer, convertir o embarcar unidad esencial"
+      ],
+      "expected": "Sin bloqueo irreversible",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Pendiente de juego real"
+    },
+    {
+      "id": "bridge-block",
+      "steps": [
+        "Bloquear acceso al enemigo con edificios"
+      ],
+      "expected": "Debe existir alternativa o derrota explícita",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Pendiente de juego real"
+    }
+  ],
+  "metrics": {
+    "basis": "estimated",
+    "durationMinutes": [
+      2,
+      10
+    ],
+    "stagnation": "Derrota a los diez minutos",
+    "alternativeRoutes": "Sin pretensión de balance divertido: fixture"
+  }
+}

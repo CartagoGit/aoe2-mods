@@ -1,0 +1,298 @@
+{
+  "createdAt": "2026-10-13",
+  "scope": "Read-only research for Sardis c.170, Lugdunum/Lyon 177-200, Oxyrhynchus c.250, plus requested primary-text checks. No repository files changed.",
+  "places": [
+    {
+      "id": "sardis-sardes",
+      "phase": "c.170 CE; Roman-period Sardis",
+      "placeDetail": "Sardis in the Hermus valley, at the edge of the broad Hermus plain below Mount Tmolus; Pactolus fan and channel traverse the site. For a c.170 scene, use the Roman-period settlement and topographic features only; do not use the monumental synagogue's surviving mosaic decoration as a second-century visual reference.",
+      "coordinatesWgs84": null,
+      "coordinateNote": "No source consulted here supplied a directly citable WGS84 coordinate for the ancient settlement. Getty TGN identifies Sardis in the Hermus valley but the consulted record extract did not expose a numeric coordinate. Do not convert a modern map pin into an ancient-location coordinate.",
+      "riverAndReliefEvidence": [
+        {
+          "url": "https://www.sardisexpedition.org/en/essays/r8-ramage-ch2-hob-introduction",
+          "title": "The Archaeological Exploration of Sardis, Ramage, HoB introduction",
+          "passageActuallyRead": "Sections in the online essay describing the Acropolis/Necropolis against Mount Tmolus; Pactolus and Hermus cutting/filling; Pactolus fans spilling into the Hermus plain; Pactolus channel movement since antiquity, especially lines 151-168 of the browser-accessible page.",
+          "supportedClaim": "The site occupies an alluvial and foothill setting shaped by the Pactolus and Hermus; the Pactolus fan/channel have changed, so modern channel geometry cannot simply be projected into antiquity.",
+          "limits": "Essay treats stratigraphic settings across multiple periods, including Lydian deposits; it does not provide a surveyed c.170 CE shoreline/channel map in the consulted passage. Site-scale terrain can be grounded, but a precise ancient riverbank or crossing should remain unplaced unless the expedition atlas phase map is consulted.",
+          "accessAndRights": "Academic excavation resource; page and figures are copyright Archaeological Exploration of Sardis / President and Fellows of Harvard College. No reuse license for its images was identified in the consulted page; treat images as permission-required, not open-licensed."
+        },
+        {
+          "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=sardis&nation=&place=&prev_page=1&subjectid=7002615",
+          "title": "Getty Thesaurus of Geographic Names, Sardis record",
+          "passageActuallyRead": "Record note describes the ancient city as strategically located in the Hermus valley; hierarchy lists Sardes as a deserted settlement/archaeological site in Turkey, Manisa.",
+          "supportedClaim": "Name identity and regional placement of Sardis/Sardes in the Hermus valley.",
+          "limits": "Gazetteer context, not a phase-specific archaeological plan; coordinates were not available in the consulted record text excerpt.",
+          "accessAndRights": "Getty TGN database record; no image download or separate reuse license was needed/assessed."
+        },
+        {
+          "url": "https://www.sardisexpedition.org/en/essays/about-synagogue",
+          "title": "The Archaeological Exploration of Sardis, The Synagogue",
+          "passageActuallyRead": "Introduction and conservation section: the building occupied a corner of the Roman bath-gymnasium; most surviving mosaics and marble decoration date to the fourth and fifth centuries; the building was discovered in 1962, partly restored, with mosaics lifted/reset and modern casts/reconstruction elements described.",
+          "supportedClaim": "The known monumental synagogue decoration is Late Roman (mostly fourth/fifth century), and its present appearance incorporates modern restoration. It must not be represented as a c.170 synagogue interior or used to infer a second-century building phase.",
+          "limits": "This does not establish that no Jewish communal life or earlier worship existed at Sardis; it only dates the visible monumental synagogue phase/decorations as summarized on the expedition site.",
+          "accessAndRights": "Site images credited © Archaeological Exploration of Sardis / President and Fellows of Harvard College. No open reuse license shown; do not download/reuse absent permission."
+        }
+      ],
+      "imageAndDataCandidates": [
+        {
+          "candidate": "Sardis Expedition site plans / synagogue and bath-gymnasium plans",
+          "url": "https://www.sardisexpedition.org/en/essays/about-synagogue",
+          "license": "No permissive license located; images explicitly credited to Archaeological Exploration of Sardis / President and Fellows of Harvard College.",
+          "downloadRecommendation": "Do not download or reuse without permission. Archaeological plans are informative but synagogue plan is late Roman, not a c.170 scene reference."
+        }
+      ]
+    },
+    {
+      "id": "lugdunum-lyon",
+      "phase": "177-200 CE; Roman Lugdunum",
+      "placeDetail": "Keep the main Roman colony on Fourvière and the Saône-side lower/river districts distinct from the Rhône channel and the confluence zone. The confluence has shifted: its present position is downstream of the pre-Perrache confluence, and the Roman-period presqu'île/river channels had a changing alluvial morphology. Do not use the modern point of confluence as an exact ancient coordinate or use an undifferentiated 'river confluence' map marker for every episode.",
+      "coordinatesWgs84": {
+        "lat": 45.766944,
+        "lon": 4.834167,
+        "sourceExpression": "45°46′1″N, 4°50′3″E",
+        "sourceUrl": "https://dspace.library.uvic.ca/server/api/core/bitstreams/ae29ef7a-9455-4292-90e8-64f563c491ca/content",
+        "status": "approximate modern city/site locator only"
+      },
+      "coordinateNote": "The coordinate is stated by the consulted University of Victoria-hosted academic thesis as the location of ancient Lugdunum/modern Lyon at the Rhône-Saône confluence. It is a broad site locator, not a coordinate for the c.177 martyrdom, an ancient bank, or an ancient confluence. No exact episode-site coordinate was sourced.",
+      "riverAndReliefEvidence": [
+        {
+          "url": "https://lugdunum.grandlyon.com/en/a-museum-of-sites/lyon-s-origins",
+          "title": "Lugdunum Museum, Lyon's origins",
+          "passageActuallyRead": "The museum says the Roman colony founded in 43 BCE was first established on the Fourvière plateau, later spread to river neighborhoods, the peninsula, and the right bank of the Saône; it describes the Rhône-Saône confluence as the strategic site, and summarizes persecution in 177 and the battle of 197.",
+          "supportedClaim": "For Roman Lugdunum, distinguish Fourvière (initial colony/high town), Saône river districts and peninsula, and the Rhône-Saône confluence as regional geography. The museum supports the 177 persecution and 197 battle at broad city scale.",
+          "limits": "Public museum overview, not an archaeological phase map; the page does not identify exact 177 arrest/trial locations or ancient riverbanks. Its city-scale wording should not be converted to exact coordinates.",
+          "accessAndRights": "Page text consulted. Its associated images carry specific Métropole de Lyon/individual credits; no general image reuse license was established."
+        },
+        {
+          "url": "https://www.persee.fr/doc/rea_0035-2004_1924_num_26_3_2322",
+          "title": "C. Germain de Montauzan, 'Le confluent du Rhône et de la Saône à l'époque romaine' (1924), p.235 excerpt",
+          "passageActuallyRead": "Page 235 states that the confluence moved over time; the Perrache works in the late eighteenth century moved it more than two kilometres downstream from its prior position; it places the pre-Perrache confluence at Place Carnot and says it was much farther upstream through the twelfth century. The author identifies Ainay island as inhabited in Roman times.",
+          "supportedClaim": "The modern confluence is a poor exact proxy for ancient Lyon; Ainay and the riverine/peninsula landscape were part of the Roman urban setting.",
+          "limits": "This is a 1924 reconstruction and should not be treated as the latest geomorphological consensus or as a point-accurate c.177 map. The page records a particular reconstruction; later archaeology revisits the question.",
+          "accessAndRights": "Persée digitized article; no explicit open-content license checked for reuse of scans/figures."
+        },
+        {
+          "url": "https://www.persee.fr/doc/galia_0016-4119_1999_num_56_1_3243",
+          "title": "Armand Desbat and Jean-Paul Lascoux, 'Le Rhône et la Saône à Lyon à l'époque romaine. Bilan archéologique' (Gallia 56, 1999), opening pages",
+          "passageActuallyRead": "Bibliographic information and opening text, especially pp.45 onward: the authors stress the poor documentation for the peninsula and the difficulty of reconstructing its morphology; they review older competing hypotheses for the peninsula/confluence and channels.",
+          "supportedClaim": "Ancient Lyon's channel layout and peninsula morphology are debated/reconstructed from uneven evidence; avoid drawing precise channels or confluence lines from modern geography alone.",
+          "limits": "Only opening online extract/pages were consulted, not the complete article or all figures. Treat the paper as an archaeological review and follow-up candidate, not a fully audited site plan.",
+          "accessAndRights": "Persée full-text interface accessible; no reuse license for figures established."
+        }
+      ],
+      "episodeSourceChecks": [
+        {
+          "episodeContext": "177 persecution of Christians at Lugdunum (episode 17 in the broader research brief)",
+          "url": "https://sourcebooks.web.fordham.edu/source/177-lyonsmartyrs.asp",
+          "passageActuallyRead": "Eusebius, Ecclesiastical History 5.1 as reproduced by Fordham; read the section on the Lyon/Vienne account including imprisoned witnesses, officials, execution and the concluding attribution. The sourcebook identifies its translation as by an unknown translator.",
+          "supportedClaim": "A letter attributed to the churches of Vienne and Lugdunum, preserved by Eusebius, narrates arrests, interrogation and executions in the reign of Marcus Aurelius; it is a Christian community's martyrological account, not a neutral administrative record.",
+          "limits": "This is Eusebius's later preservation of a purported earlier letter, in an unattributed English translation. The broad location Lugdunum/Vienne is supported; exact urban site/topography is not. Avoid treating the letter's supernatural rhetoric or totalizing claims as independently verified facts.",
+          "accessAndRights": "Fordham page states sourcebook-specific educational/personal copying terms and no commercial permission; avoid reproducing the translation beyond short quotations."
+        }
+      ],
+      "imageAndDataCandidates": [
+        {
+          "candidate": "Lugdunum Museum's digital scale model and archaeological atlas references",
+          "url": "https://lugdunum.grandlyon.com/en/a-museum-of-sites/lyon-s-origins",
+          "license": "No general public reuse license identified; page images carry Métropole de Lyon and named photographer credits.",
+          "downloadRecommendation": "Do not download/reuse without checking the specific asset terms. The museum describes successive phases and is a good visual reference, but generic model views must not be treated as a precise 177 reconstruction."
+        },
+        {
+          "candidate": "Topographic Atlas of Lugdunum, Volume I: Lyon-Fourvière",
+          "url": "https://lugdunum.grandlyon.com/fr/Ressource/5053-Atlas-topographique-de-Lugdunum-Volume-I",
+          "license": "No open license identified on the consulted catalog record.",
+          "downloadRecommendation": "Candidate for further phase-specific research; the accessible catalog describes georeferenced 1:1000 mapping, but no licensed dataset/download was verified here."
+        }
+      ]
+    },
+    {
+      "id": "oxyrhynchus-el-bahnasa",
+      "phase": "250 CE; Roman Oxyrhynchus and P.Oxy. XII 1464",
+      "placeDetail": "Use the ancient town/site at Oxyrhynchus (modern el-Bahnasa/Bahnasa) on the west bank of the Bahr Yussuf, which Oxford's Oxyrhynchus Project describes as a natural Nile branch rather than an artificial canal. Do not place the site on the main Nile or infer the modern channel's exact ancient course. The papyrus record locates provenance at Oxyrhynchus/Oxyrhynchite nome, not a precise rubbish mound or office building.",
+      "coordinatesWgs84": null,
+      "coordinateNote": "No directly consulted authoritative archaeological record supplied a numeric WGS84 coordinate for the exact ancient town or P.Oxy. 1464 findspot. An unverified secondary reference gives approximate regional coordinates, but this audit excludes it rather than implying precision.",
+      "geographyEvidence": [
+        {
+          "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+          "title": "The Oxyrhynchus Papyri, The Site: Excavations and Finds",
+          "passageActuallyRead": "Online section on el-Bahnasa/Bahr Yussuf and ancient crossing: modern village of el-Bahnasa (ancient Oxyrhynchus) lies along the west bank of the Bahr Yussuf; page explicitly corrects its label as 'canal' by saying it is a natural branch of the Nile, and notes ancient crossing by ferry rather than bridge.",
+          "supportedClaim": "Oxyrhynchus should be mapped on the Bahr Yussuf bank; the watercourse is a natural Nile branch according to the project, and modern bridge geometry is not ancient evidence.",
+          "limits": "This overview gives modern village/site relation and a broad watercourse description, not a c.250 bank survey. Page also notes modern and post-antique landmarks in its images; do not carry those into the ancient scene.",
+          "accessAndRights": "Oxford project page consulted. Captions identify modern historic photographs; no blanket license for image reuse was identified."
+        },
+        {
+          "url": "https://academic.oup.com/book/47028/chapter-abstract/422651068",
+          "title": "Jane Rowlandson, Landowners and Tenants in Roman Egypt, Introduction (Oxford Academic abstract/preview)",
+          "passageActuallyRead": "Abstract says the ancient city lies roughly 180 km south of Cairo at a desert-route / Bahr Yusuf junction; it describes the old settlement's location relative to the watercourse and modern Bahnasa. Access page labels full chapter as requiring access; only displayed abstract was consulted.",
+          "supportedClaim": "Regional setting at Bahr Yusuf and separation from the Nile valley's main watercourse; corroborates that the town is on the western waterway corridor.",
+          "limits": "Only abstract/preview consulted, not the full chapter. It is regional geography, not an ancient channel reconstruction or exact coordinate.",
+          "accessAndRights": "Publisher abstract accessible; book chapter remains paywalled/restricted, not read in full."
+        }
+      ],
+      "papyrologicalEvidence": [
+        {
+          "url": "https://searcharchives.bl.uk/catalog/040-002105490",
+          "title": "British Library Archives and Manuscripts Catalogue, Papyrus 2457 (P.Oxy. XII 1464; TM 21866)",
+          "passageActuallyRead": "Catalog fields read: title and recto summary describe Aurelius Gaion's certificate, wife and three children sacrificing/libating/tasting offerings before commissioners at Oxyrhynchus; date 27 June 250; origin/provenance Oxyrhynchus, Oxyrhynchite nome; published in The Oxyrhynchus Papyri XII, pp.190-191 and Knipfing 1923. Catalog describes damaged papyrus and says digitised images are currently unavailable.",
+          "supportedClaim": "The surviving document is a certificate reporting that Gaion, with his family acting through him, performed sacrifice and libation and requested certification; it is dated 27 June 250 and catalogued with Oxyrhynchus provenance.",
+          "limits": "The BL record is a manuscript catalog description, not a direct reading of the papyrus image; image access was unavailable. It does not establish that Gaion was Christian, refused sacrifice, or was persecuted. One individual family's certificate cannot by itself establish uniform enforcement or universal compliance.",
+          "accessAndRights": "Metadata consulted; image unavailable. Do not claim to have inspected the papyrus photograph. The original papyrus is held by the British Library; catalog gives dimensions and shelfmark Papyrus 2457."
+        },
+        {
+          "url": "https://attalus.org/docs/select2/p318.html",
+          "title": "Select Papyri II 318, Declaration of Pagan Sacrifice (Greek text identified as P.Oxy. 1464)",
+          "passageActuallyRead": "Online English text and header: Oxyrhynchus commissioners; Aurelius Gaion; sacrifice/libations and tasting; date A.D.250, emperor's first regnal year and Epeiph 3; scribe Aurelius Sarapion alias Chaeremon wrote for him because he was illiterate.",
+          "supportedClaim": "The published translation gives the wording and transaction structure represented in P.Oxy. XII 1464 and independently clarifies that a scribe wrote the petition for Gaion.",
+          "limits": "This is a modern web transcription/translation of an edition, not the papyrus image; the BL catalog is the stronger shelfmark/provenance authority. The record documents a performed sacrifice, not a Christian refusal or a universal policy outcome.",
+          "accessAndRights": "Web transcription consulted; no license for image reuse applicable. The ancient text itself is primary evidence; translation is a modern rendering."
+        }
+      ],
+      "imageAndDataCandidates": [
+        {
+          "candidate": "British Library papyrus image for Papyrus 2457 / P.Oxy. XII 1464",
+          "url": "http://access.bl.uk/item/viewer/ark:/81055/vdc_100143124445.0x000001",
+          "license": "Not assessed because digital images are marked unavailable on the catalogue record; no download possible/verified.",
+          "downloadRecommendation": "No download. Use the catalogue and published edition until BL image access is restored."
+        },
+        {
+          "candidate": "Oxford Oxyrhynchus site photographs / map and excavation material",
+          "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+          "license": "No general image/data license established from the consulted page.",
+          "downloadRecommendation": "Do not download or reuse without checking individual asset rights. Prefer licensed open mapping layers for any later map work; do not trace ancient geography from modern satellite imagery."
+        }
+      ]
+    }
+  ],
+  "primaryTextChecks": [
+    {
+      "episodeContext": "episode 17 / Jerusalem's destruction in 70 CE",
+      "primarySource": "Josephus, Jewish War VI.4.5-VII.1.1 (requested range checked in English translation; Whiston's chapter/section labels vary from Niese paragraph numbering)",
+      "urls": [
+        "https://earlyjewishwritings.com/text/josephus/war6.html",
+        "https://earlyjewishwritings.com/text/josephus/war7.html",
+        "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D6%3Awhiston+chapter%3D4"
+      ],
+      "passagesActuallyRead": "On the Early Jewish Writings Book VI page, read the account at VI.6.5-8 concerning fire at the Temple, Titus' attempt to stop it, soldiers encouraging it, and the narrative's assertion that the Temple burned without Titus' approval; also read VI.5.1 and nearby context. Book VII.1.1 on the same site's Book VII page reports Titus' later orders to demolish the city and Temple while leaving three towers and a west wall. Perseus search result for Book VI chapter 4 was consulted; direct page opening failed in the browser tool.",
+      "supportedClaim": "Josephus narrates Roman capture, burning of the Temple, and subsequent demolition of much of Jerusalem. His account explicitly distinguishes the initial fire from Titus' wishes and frames the destruction as the result of soldiers' actions; use the passage as Josephus' testimony, not an uncontested neutral reconstruction.",
+      "limits": "Josephus was an elite participant and later Flavian-associated historian; his literary and political framing matters. The user-requested label VI.4.5-VII.1.1 is edition-dependent: this audit verified content through Whiston's Book VI chapter 6 sections 5-8 and Book VII chapter 1 section 1, plus the VI chapter 4 Perseus search-result entry, so confirm numbering against the edition used in the episode dossier before replacing any locator. No archaeological source was consulted here to adjudicate every detail of Josephus' fire narrative.",
+      "coverageActuallyRead": "Selected sections and adjacent context, not the complete books."
+    },
+    {
+      "episodeContext": "episode 19 / Didache 11-13; community hospitality and itinerant teachers",
+      "primarySource": "Didache 11-13, Charles H. Hoole translation",
+      "url": "https://earlychristianwritings.com/text/didache-hoole.html",
+      "passagesActuallyRead": "Ch.11.1-12 distinguishes teachers/apostles/prophets and tests conduct; ch.12.1-5 receives travelers, limits ordinary stays to two or three days, and expects resident craftspeople to work; ch.13.1-7 provides for resident prophets/teachers and first fruits.",
+      "supportedClaim": "The Didache text prescribes procedures for receiving itinerant religious visitors, testing teachers, providing limited hospitality, and supporting resident teachers/prophets through produce and other first fruits.",
+      "limits": "Normative instructions do not demonstrate that every community followed them. The text does not identify its own place of composition in these chapters; a Syrian provenance and a date around 90-100 are scholarly hypotheses, not stated facts. It also preserves literary categories ('apostles', 'prophets') that should not be turned into a uniform church organization claim.",
+      "coverageActuallyRead": "Only chapters 11-13 (selected clauses), not the complete work. English translation by Hoole hosted by Early Christian Writings."
+    },
+    {
+      "episodeContext": "Requested 1 Clement opening and §47 check",
+      "primarySource": "1 Clement 0/letter heading and 47, Charles H. Hoole translation",
+      "url": "https://www.earlychristianwritings.com/text/1clement-hoole.html",
+      "passagesActuallyRead": "Opening address at chapter 0.1 names 'the Church of God which sojourneth at Rome' writing to Corinth; chapter 47.1-6 recalls Paul's letter to Corinth and criticizes division/rebellion against elders.",
+      "supportedClaim": "The work presents itself as a Roman church-to-Corinth letter and appeals to Paul's earlier letter while addressing conflict in Corinth. This is the primary textual basis for describing a Roman community intervening in a Corinthian dispute.",
+      "limits": "The opening does not name an individual author; attribution to Clement is traditional. The work's conventional date is late first century, but the precise date is not supplied by these passages. The exhortation is a polemical self-presentation, not an independent census of Corinthian community conditions.",
+      "coverageActuallyRead": "Opening address and chapter 47 only, not the full letter."
+    }
+  ],
+  "sourceRegister": [
+    {
+      "url": "https://www.sardisexpedition.org/en/essays/r8-ramage-ch2-hob-introduction",
+      "title": "Archaeological Exploration of Sardis, Ramage, HoB introduction",
+      "consultation": "Read online sections about Acropolis/Tmolus, Hermus, Pactolus geomorphology and channel change; no full monograph claimed."
+    },
+    {
+      "url": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=sardis&nation=&place=&prev_page=1&subjectid=7002615",
+      "title": "Getty TGN Sardis record",
+      "consultation": "Read displayed note and place hierarchy."
+    },
+    {
+      "url": "https://www.sardisexpedition.org/en/essays/about-synagogue",
+      "title": "Archaeological Exploration of Sardis, The Synagogue",
+      "consultation": "Read introduction, selected decor/mosaic notes and conservation/restoration section."
+    },
+    {
+      "url": "https://lugdunum.grandlyon.com/en/a-museum-of-sites/lyon-s-origins",
+      "title": "Lugdunum Museum, Lyon's origins",
+      "consultation": "Read page text on colony, Fourvière, Saône neighborhoods, confluence and 177/197 events."
+    },
+    {
+      "url": "https://www.persee.fr/doc/rea_0035-2004_1924_num_26_3_2322",
+      "title": "Germain de Montauzan 1924, Roman Rhône-Saône confluence",
+      "consultation": "Read p.235 displayed text; did not audit all pages/figures."
+    },
+    {
+      "url": "https://www.persee.fr/doc/galia_0016-4119_1999_num_56_1_3243",
+      "title": "Desbat and Lascoux 1999, Roman Rhône and Saône archaeological review",
+      "consultation": "Read bibliographic record and opening pages/abstracted argument; not full article."
+    },
+    {
+      "url": "https://dspace.library.uvic.ca/server/api/core/bitstreams/ae29ef7a-9455-4292-90e8-64f563c491ca/content",
+      "title": "University of Victoria-hosted academic thesis on long-distance water pipelines",
+      "consultation": "Search-result excerpt states modern Lyon/Lugdunum location coordinate; used only as broad site locator, not episode coordinate."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/source/177-lyonsmartyrs.asp",
+      "title": "Fordham Internet History Sourcebooks, Eusebius HE 5.1 translation",
+      "consultation": "Read selected account sections and source/license note; translator is listed as unknown."
+    },
+    {
+      "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+      "title": "Oxford Oxyrhynchus Papyri Project, Site: Excavations and Finds",
+      "consultation": "Read sections on Bahr Yussuf, site views, crossings and excavation context."
+    },
+    {
+      "url": "https://academic.oup.com/book/47028/chapter-abstract/422651068",
+      "title": "Jane Rowlandson, Landowners and Tenants in Roman Egypt, Introduction",
+      "consultation": "Read publisher abstract only; full chapter not accessed."
+    },
+    {
+      "url": "https://searcharchives.bl.uk/catalog/040-002105490",
+      "title": "British Library catalogue, Papyrus 2457 / P.Oxy. XII 1464",
+      "consultation": "Read object metadata, summary, date, provenance, physical description and publication list; image marked unavailable."
+    },
+    {
+      "url": "https://attalus.org/docs/select2/p318.html",
+      "title": "Select Papyri II 318 transcription/translation",
+      "consultation": "Read the displayed translation of P.Oxy. 1464; not the original papyrus image."
+    },
+    {
+      "url": "https://earlyjewishwritings.com/text/josephus/war6.html",
+      "title": "Josephus, Jewish War, Book VI (Whiston translation)",
+      "consultation": "Read selected Temple-burning/destruction passages and surrounding sections, especially VI.6.5-8 and VI.5.1."
+    },
+    {
+      "url": "https://earlyjewishwritings.com/text/josephus/war7.html",
+      "title": "Josephus, Jewish War, Book VII (Whiston translation)",
+      "consultation": "Read Book VII 1.1 via displayed passage/search result on Titus' demolition orders."
+    },
+    {
+      "url": "https://earlychristianwritings.com/text/didache-hoole.html",
+      "title": "Didache, Charles H. Hoole translation",
+      "consultation": "Read chapters 11-13 only."
+    },
+    {
+      "url": "https://www.earlychristianwritings.com/text/1clement-hoole.html",
+      "title": "1 Clement, Charles H. Hoole translation",
+      "consultation": "Read opening address and chapter 47 only."
+    },
+    {
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D6%3Awhiston+chapter%3D4",
+      "title": "Perseus, Josephus Jewish War Book VI chapter 4",
+      "consultation": "Search result entry consulted; direct page opening failed."
+    }
+  ],
+  "auditNotes": [
+    "No repository files or DelendAI state changed.",
+    "No exact c.170 Sardis synagogue phase was demonstrated by the consulted sources; surviving major synagogue mosaics/decor are predominantly fourth/fifth century.",
+    "Lyon confluence morphology is phase-sensitive and literature includes competing reconstructions. The present confluence and a single modern center coordinate should not be used as exact Roman-period geography.",
+    "P.Oxy. XII 1464 is evidence for one dated sacrifice certificate from Oxyrhynchus, not evidence that the named household were Christians or resisters. BL's digitized image was unavailable during this audit.",
+    "No image/data candidate in this audit had a clearly verified permissive license; no media were downloaded."
+  ],
+  "architectCorrections": [
+    "Josef temple-burning is labeled BookVI Chapter4 sections5–7 on the displayed Whiston page, not VI6.5–8. Collection agent numbering is superseded by direct architect consultation.",
+    "Lyon martyr episode is faith order24, not17; order17 is Jerusalem70. Original collection context labels remain provenance only."
+  ]
+}

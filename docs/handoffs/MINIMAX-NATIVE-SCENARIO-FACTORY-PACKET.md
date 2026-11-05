@@ -1,0 +1,25 @@
+# Shared native scenario base: MiniMax implementation packet
+
+Architect: gpt-6. Owner instruction of26October2026 redirects the active work toward a playable first campaign while architecture continues. This is a bounded i00003/S3 implementation task, not approval of that whole slice or of a historical dossier.
+
+## Exact task and Files
+
+Extract the already implemented native map/player/unit setup from `tools/python/export_aoe2.py::export_scenario` into `tools/python/native_scenario.factory.py`, exposing `create_native_scenario_base(ir, version)` returning `(scenario, units, factions)`. Existing enum resolution `enum_name` and `unit_id` belong in that factory and remain reused by the legacy exporter through explicit imported bindings. Add `tests/fixtures/native-history/test_native_scenario_factory.py`. Only these three files are owned. No TypeScript, schemas, catalogue, campaign sources, registry, native narrative templates, package/dependency changes or new CLI flag.
+
+The extraction boundary is exact: start at the square-map and supported-faction/economy checks; end after terrain, localized scenario message fields, victory options, player configuration/diplomacy/resources/view, initial units and blocked-cell walls, immediately before trigger-manager variable initialization. Preserve the existing unsupported-composed guard at the beginning of `export_scenario`. A new shared factory is not permission to export v2/v3 yet. Leave objective, phase, reaction, text-trigger, progress, XS and final writing code with the legacy exporter.
+
+The factory accepts only a schema-v1 scenario wrapper with no capability/profile and a square map. Reject composed/unknown shapes instead of stripping their capability fields or lowering a composed scenario to v1. Its future caller must provide an independently explicit supported base-envelope projection; no such caller is implemented in this task. Preserve all current valid fixture behavior, unit reference-ID ordering, half-tile positioning, actual terrain values, player enums, locked options, population cap, technology disabling, AI choice, resource initializations and blocked-wall semantics.
+
+Use the pinned parser and existing standard-library path-loading conventions. The export entry point must resolve the helper relative to its own file, not shell cwd. A runpy-loaded helper with explicitly bound named functions is acceptable in this Python directory; no circular imports, sys.path mutation or filesystem search for modules. Reuse actual pinned datasets; no guessed engine numbers or second scenario writer.
+
+## Verification
+
+The new direct Python tests use the actual pinned parser, not a fake native writer: build a small known v1 base with two factions and at least two typed units, a terrain override, nonzero elevation, one blocked cell, player resources and reciprocal diplomacy. Inspect real manager state and reopened file for exact dimensions/terrain/elevation/types/owners/half-tile positions/reference mapping/options/resources. Reject nonsquare maps, composed envelopes and unsupported economic AI before a written artifact. Verify that building leaves source IR unchanged and that base construction creates no gameplay/objective/progress triggers. Preserve the legacy unsupported-profile diagnostic in its exporter.
+
+Tests are run explicitly with the installed project interpreter, not automatically inside every parser-free Bun unit test. Do not add dependency installation. Existing tools: `COF_PYTHON=/home/cartago/_projects/games/aoe2-mods/.venv/bin/python`; `RGE_CAMPAIGN_BIN=/home/cartago/_projects/games/aoe2-mods/.cache/toolchain/3c40203b650de9888ca82fae1276ea67bf3d3d93/rge_campaign`. These are environment paths, not files to copy into the unit. For final verification run focused Python, then `bun run validate`, then `bun run test:export` in the architect's serialized window. Preserve exact outcomes and logs outside the worktree before retirement. Tests establish native serialization; they do not establish gameplay.
+
+## Identity and delivery
+
+Start from the connected DelendAI overview and live i00003/S3. Enter a new own implementation unit, generation1/topic shared-native-scenario-base, with own real identity/session and --alongside. The expected provider observation from prior executions was minimax-m3.1-flash-preview; use the identity actually exposed to this worker, never root or Luna. Claim only the three Files above. Shared develop stays read-only; normal Git author and committer must be the configured human Cartago. Never checkpoint from the shared checkout after committing in the unit. Never operate another model's identity, ref or checkout.
+
+Deliver your exact unit/ref, source commit, bounded diff, focused tests and limitations. Wait for root to allocate the heavy verification window and review before official publication. Do not approve yourself, submit the entire S3 as complete, publish a mod, implement further historical content or alter feature rejection to make a test pass. A missing native operation goes back to the architect.

@@ -1,0 +1,157 @@
+{
+  "pins": {
+    "sourceBinding": "55d1c27acc7e55c5caeb070c016d1d364a3b6b5a5255a6797b3471101863f713",
+    "sourceCampaign": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+    "raster": "49c2c666dee43187bb5438fc989ce84fc1807c8cafeb65c09293786e18729276"
+  },
+  "route18sha256": "6ed1ec13faf7f2d3d2fa525b310da615457ea700dd3f685a42f90beb3b894da8",
+  "metadata24sha256": "70349fb977343ce772fa81ee72b0f0a478756260f45f41d346f853f6876206af",
+  "plan25sha256": "66cb1293c47e795b7b0eeaf5b60b3c236284aa20c21190bc6d4e65c1226f5a2f",
+  "extraction": {
+    "verified": true,
+    "sampleCount": 495187,
+    "mismatches": [],
+    "rangeMetres": [
+      204.07395935058594,
+      967.189697265625
+    ],
+    "sourceSha256": "49c2c666dee43187bb5438fc989ce84fc1807c8cafeb65c09293786e18729276",
+    "method": "every extracted value re-read from the source raster and compared exactly"
+  },
+  "georeference": {
+    "modelPixelScaleTag": [
+      0.0002777777777777778,
+      0.0002777777777777778,
+      0.0
+    ],
+    "modelTiepointTag": [
+      0.0,
+      0.0,
+      0.0,
+      35.104166666666664,
+      31.870000000000005,
+      0.0
+    ],
+    "rasterTypeGeoKey": 2,
+    "geographicTypeGeoKey": 4326,
+    "modelTypeGeoKey": 2,
+    "citation": null,
+    "imageWidth": 763,
+    "imageLength": 649,
+    "bitsPerSample": 32,
+    "sampleFormat": 3,
+    "compression": 8,
+    "predictor": 3,
+    "planarConfiguration": 2,
+    "gdalNoData": null
+  },
+  "frame": {
+    "bbox": [
+      35.12,
+      31.7,
+      35.3,
+      31.86
+    ],
+    "size": 340,
+    "missing": {},
+    "range": [
+      208.161999,
+      966.471753
+    ],
+    "histogram": {
+      "0": 482,
+      "1": 4112,
+      "2": 11012,
+      "3": 19951,
+      "4": 27073,
+      "5": 42326,
+      "6": 10073,
+      "7": 571
+    }
+  },
+  "binding": {
+    "entities": 17,
+    "zones": 10
+  },
+  "corridors": [
+    {
+      "id": "main",
+      "width": 10,
+      "radius": 5.707106781186548,
+      "cells": 1225,
+      "bounds": [
+        177,
+        143,
+        206,
+        242
+      ],
+      "outOfBounds": 0,
+      "nodata": 0,
+      "histogram": {
+        "4": 74,
+        "5": 926,
+        "6": 225
+      },
+      "adjacentLevelJumpHistogram": {
+        "0": 2166,
+        "1": 148
+      },
+      "water": "unknown; no dated water layer supplied"
+    },
+    {
+      "id": "relief",
+      "width": 6,
+      "radius": 3.7071067811865475,
+      "cells": 1014,
+      "bounds": [
+        161,
+        145,
+        204,
+        240
+      ],
+      "outOfBounds": 0,
+      "nodata": 0,
+      "histogram": {
+        "4": 27,
+        "5": 779,
+        "6": 208
+      },
+      "adjacentLevelJumpHistogram": {
+        "0": 1771,
+        "1": 83
+      },
+      "water": "unknown; no dated water layer supplied"
+    }
+  ],
+  "store": {
+    "from": [
+      200.05,
+      189.88
+    ],
+    "to": [
+      200.05,
+      186.88
+    ],
+    "fromNativeCentre": [
+      200.5,
+      189.5
+    ],
+    "toNativeCentre": [
+      200.5,
+      186.5
+    ],
+    "hubDistance": 11.3888937127361,
+    "receiverExtraClearance": 3.3888937127361007,
+    "otherBodyExtraClearance": 26.463092423455635,
+    "envelopeCells": 45,
+    "envelopeLevels": [
+      5
+    ]
+  },
+  "limits": [
+    "Modern DSM is not ancient bare earth; reported vertical datum is not independently validated.",
+    "Empty known-water list does not mean dry terrain.",
+    "Conservative distance envelope over tile centres is not exact polygon rasterization, native passability, collision, or game validation.",
+    "No historical or preview build authorization granted."
+  ]
+}
