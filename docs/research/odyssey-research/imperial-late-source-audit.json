@@ -1,0 +1,266 @@
+{
+  "campaignId": "imperial-church",
+  "scope": "Source audit of selected imperial-church orders 21–29. No repository edits, game design, or approval.",
+  "selectionSource": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "episodes": [
+    {
+      "order": 21,
+      "id": "21-returning-households-escort-alexandria",
+      "selectedDate": "21 October 346 CE",
+      "selectedPlace": "Alexandria",
+      "selectedClaim": "Atanasio vuelve a Alejandría tras su exilio, respaldado por cartas de Constancio II y Constante.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Historia Acephala I.1–2",
+          "consulted": "Texto entero de la breve Historia Acephala abierto. I.1 dice que Constantius escribió sobre el retorno; I.2 fecha la entrada de Athanasius en Alexandria, Paophi 24, equivalente en la traducción a 21 Oct 346, bajo consulados de Constantius IV/Constans III; dice que regresó desde Roma/Italia.",
+          "supports": "El retorno a Alexandria en 346, día calendárico específico según la cronología de esta fuente y la existencia de carta de Constantius.",
+          "limitations": "La frase del seleccionado ‘respaldado por cartas de Constancio II y Constante’ requiere distinción: el texto I.1 menciona carta de Constantius; no he visto en §I.1–2 carta de Constans para este retorno. La Historia Acephala es registro partidista vinculado a Athanasius y conserva cronología/consulados en una traducción editorial."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates, Ecclesiastical History II, account around chapters 22–23",
+          "consulted": "Book II abierto y contexto del regreso leído por búsqueda; Socrates refiere letters de los emperadores y regreso. No es testimonio contemporáneo neutral.",
+          "supports": "Apoyo narrativo adicional de correspondencia/retorno, con versión retrospectiva del siglo V.",
+          "limitations": "Socrates escribe después de los hechos y sus numeraciones/cronología difieren en detalles; la fecha precisa de la Historia Acephala es el ancla más específica consultada."
+        }
+      ],
+      "correctionsSuggested": "La fecha y regreso están bien respaldados por HA I.2. Nombrar solo la carta que el pasaje identifica (Constantius) salvo que se abra una fuente que confirme una carta de Constans para este retorno.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 22,
+      "id": "22-civilian-record-preservation-milan",
+      "selectedDate": "350 CE; Milan focus is only proposed news reception",
+      "selectedPlace": "Milan as focus; death in Gaul",
+      "selectedClaim": "Constante es asesinado en la Galia durante la usurpación de Magnencio; Constancio II queda como único emperador y el equilibrio que había favorecido a Atanasio desaparece.",
+      "sources": [
+        {
+          "url": "https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+          "locator": "Socrates and Sozomen, Book IV, Chapter I; CCEL footnote cross-references Socrates HE II.25–26",
+          "consulted": "Pasaje visible abierto. Dice que Constans fue asesinado en Western Gaul; Magnentius asumió el gobierno y Vetranio fue proclamado en Sirmium. El editorial footnote dice que Socrates/Sozomen condensan el mismo relato y que Constantius solo consiguió gobierno único al derrotar a usurpadores.",
+          "supports": "Apoya la muerte de Constans en Gaul en 350, Magnentius como rival y levantamiento de Vetranio; no apoya Constantius como único emperador en 350.",
+          "limitations": "Milan no es el lugar de la muerte; no encontré en este pasaje prueba de que la noticia se recibió allí. La parte ‘el equilibrio que había favorecido a Athanasius desaparece’ es interpretación de efecto eclesiástico, no afirmación demostrada aquí."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates HE II.25–26; especially chapter 25 and 26",
+          "consulted": "Pasajes abiertos/buscados: II.25 sitúa la usurpación de Magnentius y muerte de Constans en Gaul; II.26 describe que Constantius, tras la muerte de Constans y la cadena de conflictos, parece tener el imperio entero bajo su poder. Narrador del siglo V.",
+          "supports": "Distingue la noticia de muerte y los conflictos sucesorios que anteceden al gobierno solo.",
+          "limitations": "No justificar abreviar tres años de rivalidad como ‘Constantius queda único’ al morir Constans."
+        }
+      ],
+      "correctionsSuggested": "Eliminar o reformular el error cronológico de emperador único: Constantius siguió enfrentado a Magnentius hasta 353; no ubicar muerte en Milan. Si Milan se conserva, requiere fuente para llegada/recepción local de la noticia.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 23,
+      "id": "23-bounded-political-pressure-milan",
+      "selectedDate": "355 CE; Milan hearing focus",
+      "selectedPlace": "Milan (proposed hearing); Alexandria raid is separate",
+      "selectedClaim": "Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Historia Acephala III.3–4",
+          "consulted": "Pasaje leído. HA III.3 indica que, cuando Constantius residía en Milan (353), Athanasius envió una delegación de cinco obispos y tres presbíteros a la corte; III.4 fecha a Diogenes, notario imperial, en Alexandria en August 355 e indica que trató de obligar a Athanasius a abandonar la ciudad. No identifica en III.3 un sínodo occidental concreto ni ubica el asalto nocturno aquí.",
+          "supports": "Apoya una delegación de obispos/presbíteros a la corte en Milan en 353 y presión oficial en Alexandria en 355, como cuenta la Historia Acephala.",
+          "limitations": "La claim combina delegación/corte de 353, campaña de Diogenes 355 y asalto de Syrianus 356, que son momentos distintos. La fuente es partidista. No se ha probado una audiencia/sínodo en Milan en 355 con este material."
+        }
+      ],
+      "correctionsSuggested": "Separar dossier/episodio de la delegación milanesa (353) de la campaña de presión de 355 y del raid nocturno de enero 356 (order 24); no conservar la claim compuesta idéntica en 23 y 24.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 24,
+      "id": "24-night-civilian-withdrawal-alexandria",
+      "selectedDate": "356 CE",
+      "selectedPlace": "Alexandria, Church of Theonas",
+      "selectedClaim": "Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Historia Acephala IV.5, V.6",
+          "consulted": "Texto primario transmitido y leído directamente. HA IV.5 fecha llegada del dux Syrianus y notario Hilary a Alexandria en Tybi 10 = Jan. 6, 356; por la noche de Mechir 13/14, fuerzas entran en la Iglesia de Theonas, rompen puertas y Athanasius escapa. V.6 narra transferencia posterior de iglesias a George en junio y su llegada en febrero 357.",
+          "supports": "La fuente ofrece lugar, secuencia nocturna y fecha egipcia/calendárica para el raid y escape, además de cambios posteriores en control de iglesias.",
+          "limitations": "‘Infinite force’/cifras y caracterizaciones pertenecen a una crónica partidista; el relato dice que Athanasius escapó pero no demuestra que fuese una retirada civil colectiva. La presión de sínodos occidentales es un contexto separado, no la causa inmediata documentada en este párrafo. Apologia de Fuga es defensa propia de Athanasius y no una verificación independiente."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/2814.htm",
+          "locator": "Athanasius, Apologia de Fuga, §1 and subsequent defense",
+          "consulted": "Apertura directa: se leyó apertura, donde Athanasius defiende su escape frente a acusación de cobardía. No se leyó aquí el libro completo para este episodio.",
+          "supports": "Acredita cómo el mismo Athanasius justificó su huida y que fue objeto de acusaciones por escapar.",
+          "limitations": "Autodefensa polémica, no corroboración independiente ni recuento neutral de fuerza militar."
+        }
+      ],
+      "correctionsSuggested": "Mantener evento localizado con atribución a HA; quitar el fragmento de sínodos occidentales de esta selección o ubicarlo en otro episodio con pasajes concretos. Revisar duplicación exacta con order 23.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 25,
+      "id": "25-delegate-and-draft-network-rimini",
+      "selectedDate": "359 CE",
+      "selectedPlace": "Rimini (Ariminum); Seleucia in Isauria as off-map parallel",
+      "selectedClaim": "Constancio convoca simultáneamente un concilio occidental en Rimini y uno oriental en Seleucia para buscar una fórmula doctrinal común; ambos producen controversias y no una unidad estable.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates HE II.37 and II.39–40",
+          "consulted": "Texto abierto y localizadores buscados. II.37 explica que el emperador divide la asamblea por distancia; permite que los occidentales reunidos en Milan se desplacen a Ariminum y envía orden a obispos orientales para reunirse inicialmente en Nicomedia. Menciona que esos encuentros se dividieron. II.39 dice que un terremoto en Nicomedia el 28 August impidió la sesión allí y que, tras propuestas de Nicaea/Tarsus, se reunieron en Seleucia en el mismo año de Ariminum (consulados Eusebius/Hypatius); presenta divisiones locales.",
+          "supports": "Apoya reuniones paralelas en 359 y que el plan imperial buscaba un acuerdo general; muestra, además, que la sede oriental se mudó tras terremoto y deliberaciones, no que se convocara originalmente en Seleucia.",
+          "limitations": "Socrates es narrador pro-Niceno de siglo V y evalúa los resultados desde su perspectiva. Las sesiones no fueron simultáneas en sentido de día exacto acreditado; los dos sitios eran reuniones separadas. En Selection la frase ‘ambos producen controversias/no unidad estable’ es compatible con el resumen pero requiere reconocer distintas facciones y resultados."
+        },
+        {
+          "url": "https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf",
+          "locator": "Secondary chronology previously cited",
+          "consulted": "PDF indicado en selección no se abrió como lectura aquí; no se cuenta como consultado.",
+          "supports": "Ninguna afirmación basada en lectura directa de este PDF."
+        }
+      ],
+      "correctionsSuggested": "Citar 359 con referencia al mismo año de la narración; indicar que el destino oriental inicialmente fue Nicomedia y luego Seleucia tras terremoto y cambios propuestos; ‘simultáneamente’ solo como convocatoria paralela, no reunión temporal sincronizada.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 26,
+      "id": "26-plural-civic-logistics-constantinople",
+      "selectedDate": "361 CE",
+      "selectedPlace": "Constantinople",
+      "selectedClaim": "Juliano entra en Constantinopla tras la muerte de Constancio II y asume el gobierno único; reabre templos y restablece sacrificios públicos.",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+          "locator": "Ammianus Marcellinus, Res Gestae XXII.2.1–4 (entry); XXII.5.2 (religious decree context)",
+          "consulted": "Book XXII, section 2 opened: Ammianus narrates Julian learning of Constantius’ death, crossing Thrace and entering Constantinople without opposition, ‘assuming the rule’ of the empire. Section XXII.5.2 says he issued formal decrees opening temples, bringing victims, and restoring worship; related sectarian conference at XXII.5.3.",
+          "supports": "Supports entry after death news and assumption of sole rule in Ammianus’ account, plus distinct subsequent broad religious decrees/actions.",
+          "limitations": "Ammianus is a contemporary pagan officer and approving but not neutral narrator. The temple decree is a separate order/imperial program, not specifically an action only in Constantinople; its enactment/effect in every city is not established by this passage. No evidence here for particular temple buildings or compliance in the city."
+        }
+      ],
+      "correctionsSuggested": "Separate entry/succession from later empire-wide religious decrees; phrase reopening as a policy Ammianus reports, not proof of local compliance or a single building action at Constantinople.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 27,
+      "id": "27-return-and-departure-records-alexandria",
+      "selectedDate": "362–363 CE; Alexandria local actions plus off-map campaign news",
+      "selectedPlace": "Alexandria; Mesopotamia/Persian campaign as distant report",
+      "selectedClaim": "Juliano permite el regreso de obispos exiliados y luego vuelve a expulsar a Atanasio de Alejandría; su campaña contra Persia termina con su muerte en Mesopotamia.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Historia Acephala VII.9–11; VIII.12–13",
+          "consulted": "Texto completo abierto y pasajes leídos. VII.9–10 fecha órdenes de Julian en Feb 362 para restitución a templos y retorno de obispos exiliados a ciudades/provincias; la traducción fecha orden de retorno de obispos en Mechir 14–15. VII.11 cuenta que edicto publicado Paophi 27 hizo salir a Athanasius de Alexandria. VIII.12 registra anuncio local de la muerte de Julian el 20 Aug 363 y Jovian sucesor; VIII.13 narra que Athanasius estaba fuera de la ciudad y se enteró allí.",
+          "supports": "Registro partidista local que acredita políticas/edicts y movimientos narrados en Alexandria; además, transmite un informe de muerte de Julian recibido allí, no una escena de la campaña persa.",
+          "limitations": "La fuente mezcla edictos generales con aplicación local: reingreso de obispos a sus town/province no equivale a devolverles automáticamente sus churches; §VII.10 distingue expresamente permiso a ciudades natales de iglesias. Una orden de devolver templos (VII.9) no demuestra ejecución. La muerte en Persia/Mesopotamia debe comprobarse en Ammianus; el retorno/exilio de Athanasius no comparte lugar con esa muerte."
+        },
+        {
+          "url": "https://romanletters.org/letters/julian_emperor/24/",
+          "locator": "Julian, Letter 24 to the Alexandrians (Greek with modern English translation), ending; page metadata and annotations",
+          "consulted": "Texto griego y traducción abiertos. La carta ordena a Athanasius salir de la ciudad al recibirla y amenaza pena más severa; Roman Letters page metadata misleadingly dates it ‘c.356’, while editor note and Historia Acephala context place return/re-expulsion in 362. This source is an imperial edict/correspondence attributed to Julian, partisan language explicitly calls him ‘audacious’.",
+          "supports": "Supports that Julian ordered expulsion from Alexandria and threatened additional penalty, not that the full scope of threatened penalty occurred.",
+          "limitations": "Date in page header is erroneous/misleading for the episode: Julian became emperor in 361; Athanasius’ return to Alexandria is dated 21 Feb 362 in Historia Acephala and the edict to leave is in Oct 362 there. Modern annotated translation includes bracketed interpretation; cite ancient letter separately from editorial notes."
+        },
+        {
+          "url": "https://tertullian.org/fathers/ammianus_25_book25.htm",
+          "locator": "Ammianus, Res Gestae XXV.3.6–23",
+          "consulted": "Book XXV opened and sections about Persian campaign/death located. The heading and narrative report Julian wounded by spear during fighting, then dying in camp; no exact killer or precise spot is given here.",
+          "supports": "Near-contemporary narrative places death during retreat/war in Persian territory and reports wound, but the precise location is not on the Alexandria map.",
+          "limitations": "Details of the wound vary in late accounts; Ammianus’ precise first-hand status is not assumed for this moment. The campaign’s success/failure and cause of death are not inferred beyond text."
+        }
+      ],
+      "correctionsSuggested": "Separate at least Alexandria edict/return and off-map Persian campaign report as distinct dated/locus elements. Correct RomanLetters header dating context; distinguish permission to return to home city from return to ecclesiastical throne/church; no exact cause/assailant for Julian’s wound.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 28,
+      "id": "28-law-and-local-reception-thessalonica",
+      "selectedDate": "27 February 380 CE",
+      "selectedPlace": "Issued at Thessalonica; text addressed to people of Constantinople",
+      "selectedClaim": "Graciano, Valentiniano II y Teodosio publican en Tesalónica una constitución que prescribe la fe nicena para los pueblos bajo su gobierno y clasifica a otros grupos como herejes.",
+      "sources": [
+        {
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+          "locator": "Codex Theodosianus 16.1.2, Latin inscriptio and constitution text",
+          "consulted": "Página latina abierta. Editorial heading gives 27 Feb AD 380 and CTh XVI.1.2; inscriptio names Gratian, Valentinian and Theodosius and states ‘edictum ad populum urbis Constantinopolitanae’; text begins ‘Cunctos populos quos ... regit’ and specifies Nicene/Trinitarian profession, then labels dissenters heretical and threatens imperial coercion following divine punishment.",
+          "supports": "The preserved constitution’s wording gives the broad policy ‘all peoples’ under the rulers’ governance; its inscription addresses population of Constantinople. It classifies non-adherents legally as heretics and threatens coercive consequences.",
+          "limitations": "Text survives as CTh 16.1.2 in a later Theodosian codification, not a standalone original promulgation copy; 27 Feb 380 is its recorded date in legal corpus/editing, not automatically a verified locally implemented date. Issued at Thessalonica per tradition/header (consulted page title/editorial); addressee is Constantinople. No evidence here of enforcement, conversion, or uniform implementation across the empire. The selection says ‘Valentiniano II’; Valentinianus in 380 is Valentinian II in modern regnal numbering, while source labels Valentinianus Augustus."
+        }
+      ],
+      "correctionsSuggested": "Explicitly separate promulgation location (Thessalonica) from addressee (Constantinople); call it a legal rule/policy in a later code transmission, not evidence of actual empire-wide enforcement. Name co-emperor as Valentinian (II) with conventional modern numbering.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 29,
+      "id": "29-council-and-final-perspective-constantinople",
+      "selectedDate": "381 CE",
+      "selectedPlace": "Constantinople",
+      "selectedClaim": "Un concilio en Constantinopla reafirma la fe nicena, trata controversias sobre el Espíritu y fija en canon 3 la precedencia honorífica del obispo de Constantinopla después de Roma.",
+      "sources": [
+        {
+          "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "locator": "Council of Constantinople I page: introduction lines 96–110, synodical letter, Canons 1–4; especially canon 3",
+          "consulted": "Texto introductorio y traducciones de la exposición de la fe, synodal letter y canons abierto y leído. Página dice consejo se reunió May 381; señala que la copia de decisiones doctrinales/tomos no sobrevivió; lo doctrinal aquí incluye carta sinodal de 382 y credo cuya forma atribuida solo se menciona en testigos antiguos a partir de Chalcedon. Canon 3 leído literalmente: obispo de Constantinople disfruta privilegios honoríficos después del obispo de Rome por ser ‘New Rome’.",
+          "supports": "Acredita el texto preservado del canon 3 y que es un privilegio de honor/precedencia. Canon 1 sostiene la continuidad del credo de Nicea; exposición y carta sinodal discuten la doctrina del Espíritu y otras doctrinas.",
+          "limitations": "La página es compilación/traducción moderna con aparato editorial; no es acta original en autógrafo. Hace explícita la compleja transmisión: no se conserva el tomo dogmático original; carta sinodal es de 382; forma del credo atribuida al concilio no se cita por testigos antiguos hasta Calcedonia. No inferir jurisdicción universal, cisma moderno, ni cumplimiento local del canon; el canon habla de privilegio de honor. Introducción doctrinal/política es interpretación editorial y puntos históricos disputados requieren crítica adicional."
+        }
+      ],
+      "correctionsSuggested": "Conservar formulación de ‘precedencia honorífica’ (no jurisdicción) y etiquetar la transmisión textual: canons, 382 synodal letter, creed as transmitted at Chalcedon are distinct textual witnesses.",
+      "independentApprovalPending": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "title": "Historia Acephala (Athanasius dossier)",
+      "consultedScope": "Full short text read: return 346, Milan delegation 353, Diogenes 355, raid Jan 356, Julian edicts/return/re-expulsion 362, death-news 363; partisan chronicle."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2814.htm",
+      "title": "Athanasius, Apologia de Fuga",
+      "consultedScope": "Opening and defense of flight from accusations read; not counted as independent corroboration of the raid."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26012.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History Book II",
+      "consultedScope": "Chapters II.25–26, II.37 and II.39–40 direct excerpts; additional select chapter context for 359. Late-fifth-century narrative."
+    },
+    {
+      "url": "https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+      "title": "Socrates and Sozomen, Ecclesiastical Histories Book IV chapter I",
+      "consultedScope": "Visible chapter text/footnote on Constans’ death and Magnentius; used as secondary transmission/context."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+      "title": "Ammianus Marcellinus, Res Gestae Book XXII",
+      "consultedScope": "XXII.2.1–4 entry and sole rule; XXII.5.2–3 decrees opening temples/restoring worship, direct text read."
+    },
+    {
+      "url": "https://romanletters.org/letters/julian_emperor/24/",
+      "title": "Julian, Letter 24 to the Alexandrians",
+      "consultedScope": "Greek and modern English text/annotations read; expulsion order. Page header date conflicts with 362 chronological context."
+    },
+    {
+      "url": "https://tertullian.org/fathers/ammianus_25_book25.htm",
+      "title": "Ammianus Marcellinus, Res Gestae Book XXV",
+      "consultedScope": "Narrative of Persian campaign, Julian’s wound/death and successor; direct text searched/opened."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "title": "CTh 16.1.2, Edictum de fide catholica (Latin transcription)",
+      "consultedScope": "Inscription, editorial date and legal text read directly."
+    },
+    {
+      "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "title": "First Council of Constantinople 381 (modern translation/compilation)",
+      "consultedScope": "Editorial transmission note, synodical letter and canons 1–4 directly read."
+    }
+  ],
+  "overallLimitations": [
+    "Religious and political claims are attributed to their source traditions. The Historia Acephala/Athanasius material is aligned with one party in the disputes; Socrates is a later historian; Ammianus is a near-contemporary pagan author, not a neutral omniscient narrator.",
+    "An imperial constitution/decree records policy, not compliance or conversion. A later law code transmits texts long after their issue dates.",
+    "Conflicts between the selected episodes and source chronology, duplicate claims, and local-vs-off-map events are reported as corrections to review, not automatically resolved in the campaign design.",
+    "No selection has received independent approval in this audit."
+  ],
+  "independentApprovalPending": true,
+  "collectionAgent": "gpt-6-luna",
+  "architectApproval": false
+}

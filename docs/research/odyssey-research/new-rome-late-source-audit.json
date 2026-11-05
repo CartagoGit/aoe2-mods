@@ -1,0 +1,613 @@
+{
+  "campaignId": "new-rome",
+  "scope": "Orders 15–32 of docs/design/odysseys/new-rome.json; read-only source-access and factual audit. No episode, chronology, map, or design changed.",
+  "episodes": [
+    {
+      "order": 15,
+      "id": "15-bounded-civilian-extraction-antioch",
+      "date": "540 CE",
+      "place": "Antioch on the Orontes; exact sack footprint within the city not established.",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2B%2A.html",
+          "locator": "Procopius, Persian Wars II.8–10",
+          "consulted": "The cited page and adjacent text were checked; the source narrates Khosrow’s expedition, Antioch’s capture and sack, fire, and deportation of captives.",
+          "supports": "Supports capture/sack and forced removal as Procopius’ account of the 540 campaign.",
+          "limits": "Near-contemporary author but literary, dramatic narrative; casualty/captive numbers and details are not independently confirmed here. Page notes Loeb text public domain, but reuse/licensing of site presentation and images not established.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://online.ucpress.edu/SLA/article/7/2/201/196341/God-s-Wrath-over-Antioch-525-540-CEBeginning-of",
+          "locator": "Sarah Savant? article “God’s Wrath over Antioch 525–540 CE”",
+          "consulted": "Search result/metadata only; full article text was not read.",
+          "supports": "A modern scholarly lead for interpreting Procopius and the Antioch disasters.",
+          "limits": "Cannot treat abstract/search excerpt as verification of its detailed argument; full access not established. Copyright/reuse unknown.",
+          "accessStatus": "metadata_only"
+        }
+      ],
+      "assessment": "Core event is supported as Procopius’ account; keep numbers and localized destruction qualified, and avoid fabricating civilian testimony."
+    },
+    {
+      "order": 16,
+      "id": "03-the-empty-granary",
+      "date": "542 CE; plague in Constantinople lasted four months according to Procopius (episode date is within this plague crisis).",
+      "place": "Constantinople/Byzantium.",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2F%2A.html",
+          "locator": "Procopius, Persian Wars II.22.9; II.23.1–20",
+          "consulted": "Opened full translated section. II.22.9 says the plague reached Byzantium in spring of its second year; II.23.1 gives four months/three months at greatest virulence; II.23.5–8 says Justinian provided money and assigned Theodorus to bury unattended dead; II.23.19 explicitly reports near-starvation and difficulty obtaining bread/necessities.",
+          "supports": "Directly supports plague, imperial relief for burial, mortality/disruption, and scarcity of bread/necessities in the city.",
+          "limits": "Procopius’ supernatural explanations, moral judgments, and reported daily death tolls are authorial testimony, not verified counts. It does not prove an actual empty public granary or a specific rationing scheme. Site labels 1914 translation public domain; site images/reuse still governed separately.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.metmuseum.org/essays/byzantium-ca-330-1453",
+          "locator": "Byzantium overview, Justinian/plague context",
+          "consulted": "Page opened; overview inspected, not a dedicated food-distribution study.",
+          "supports": "Broad Byzantine chronology and material-culture context only.",
+          "limits": "Does not substantiate a particular granary, supply route, or allocation event. Museum text rights should be checked before reuse.",
+          "accessStatus": "read_partial"
+        }
+      ],
+      "assessment": "The shortage detail is better grounded in Procopius than in the selected Met overview; player allocation remains fictional."
+    },
+    {
+      "order": 17,
+      "id": "17-council-record-comparison-constantinople",
+      "date": "553 CE",
+      "place": "Constantinople; exact meeting building not established by consulted passage.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3812.htm",
+          "locator": "Second Council of Constantinople, Session I imperial letter and acts",
+          "consulted": "Opened and read opening acts. The imperial letter states the controversy over the Three Chapters and calls bishops to the capital; later acts/decrees in the collection address Theodore of Mopsuestia, Theodoret’s anti-Cyril writings, and the letter attributed to Ibas.",
+          "supports": "Supports a council convened at Constantinople in 553 and condemnation of the Three Chapters.",
+          "limits": "This translated ecclesiastical dossier preserves partisan theological and imperial framing. The same opening says Vigilius would not attend the common synod, so the council’s relationship with the pope is contested/complex; “uneven reception” needs region-specific evidence. It does not establish a specific city venue. Reproduction rights for the modern webpage/translation not checked.",
+          "accessStatus": "read"
+        }
+      ],
+      "assessment": "The central event is supported by the acts, while the official unity narrative should not be treated as evidence of uniform reception."
+    },
+    {
+      "order": 18,
+      "id": "18-finite-siege-and-ferry-supply-constantinople",
+      "date": "626 CE",
+      "place": "Constantinople; Avars on the European side, Persian forces across the Bosporus at Chalcedon in the Christian homiletic account.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theodore_syncellus_01_homily.htm",
+          "locator": "Theodore Syncellus, Homily on the siege, sections describing the Avar approach and Persian position",
+          "consulted": "Opened and read the translated homily. It describes the Avar khagan’s attack from the west and Persians across the strait at Chalcedon, with land/sea pressure on the city.",
+          "supports": "Primary/near-contemporary panegyric supports a 626 Avar attack and separate Persian presence across the water; supports the distinction that Persians were not a same-bank combined siege force.",
+          "limits": "Christian homily is celebratory and polemical (including anti-Avar and anti-Jewish rhetoric); supernatural explanation and enemy figures are not neutral evidence. Ferry logistics/supply specifics were not verified. Textual dating/attribution has scholarly discussion; copyright of hosted translation not verified.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+          "locator": "Siege of Constantinople (626), overview",
+          "consulted": "Page identified through citation; its full text was not accessible/read in this audit.",
+          "supports": "Secondary reference lead only.",
+          "limits": "Do not mark as directly consulted evidence; primary homily above supports the qualified geography. Reuse rights unknown.",
+          "accessStatus": "metadata_only"
+        }
+      ],
+      "assessment": "The geographic distinction between Avar and Persian positions matters; exact strength, miraculous interventions, and detailed ferry/supply scenes remain unverified."
+    },
+    {
+      "order": 19,
+      "id": "19-civilian-record-and-property-logistics-jerusalem",
+      "date": "637/638 CE; dates in later accounts vary.",
+      "place": "Jerusalem/Aelia Capitolina.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/book/6524/chapter-abstract/150435622",
+          "locator": "Robert G. Hoyland, Witnesses to a World Crisis, chapter abstract/extract on seventh-century eastern Christian sources",
+          "consulted": "Opened only the accessible chapter abstract/extract. It places Arab campaigns from 634, gives Ajnadayn 634, Fihl 634/635, Yarmuk 636 and says Jerusalem arranged surrender terms perhaps in 638.",
+          "supports": "Supports the broad conquest context and explicitly qualifies Jerusalem’s surrender date as perhaps 638.",
+          "limits": "Full chapter not consulted; abstract cannot support detailed property provisions or local encounter narratives. Copyright/reuse unknown.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.jstor.org/stable/jj.38238823",
+          "locator": "Theophilus of Edessa’s Chronicle, cited discussion of 638",
+          "consulted": "URL/record identified, but full text/passage was not accessible in this session.",
+          "supports": "Potential source for later chronicle tradition about Jerusalem/Umar.",
+          "limits": "Not treated as passage read; later chronicle transmission is not a contemporary surrender act. Access and rights unknown.",
+          "accessStatus": "access_failed"
+        },
+        {
+          "url": "https://christtheking.info/catholic-resources-on-adversus-judaeos/selections-of-st-sophronius-of-jerusalems-writings-on-the-jews/",
+          "locator": "Sophronius Christmas sermon, 634, cited page",
+          "consulted": "The cited page was not opened/read in this session.",
+          "supports": "Episode note says it is contemporary witness to danger in Palestine in 634, not the surrender itself; this audit did not independently verify the text.",
+          "limits": "Do not use it as evidence for capitulation. Translation/editorial rights not checked.",
+          "accessStatus": "not_consulted"
+        }
+      ],
+      "assessment": "The broad transition is plausible, but the surrender date and terms derive from later sources; no exact property/logistics claims are verified here."
+    },
+    {
+      "order": 20,
+      "id": "20-coastal-watch-and-bounded-convoy-constantinople",
+      "date": "Conventional c.674–678 date disputed; alternative reconstructions place related operations in the later 660s or reject a continuous siege.",
+      "place": "Constantinople and surrounding eastern Mediterranean; no specific operation site fixed by this audit.",
+      "sources": [
+        {
+          "url": "https://www.medievalists.net/2022/07/was-constantinople-besieged-in-674-78/",
+          "locator": "Critical overview of the first Arab siege debate; discussion of Theophanes, Howard-Johnston, Jankowiak",
+          "consulted": "Read from the cited page/summary during prior audit; it contrasts major scholarly reconstructions and stresses source-chronology problems.",
+          "supports": "Supports that a continuous 674–678 siege is disputed and that Theophanes’ chronology/source use is problematic.",
+          "limits": "This is a secondary explainer, not primary or peer-reviewed final authority. Howard-Johnston’s “no siege” and Jankowiak’s earlier siege reconstruction differ materially. A clear event should be described as contested Arab-Byzantine operations, not certain four-year blockade. Exact Greek-fire deployment and naval location not verified. Copyright/reuse unknown.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.britannica.com/event/Arab-Byzantine-wars",
+          "locator": "Arab-Byzantine wars overview",
+          "consulted": "Cited page identified; full page not read in this pass.",
+          "supports": "Background lead only.",
+          "limits": "Cannot by itself resolve the contested chronology; no primary passage was opened for the conventional siege.",
+          "accessStatus": "metadata_only"
+        }
+      ],
+      "assessment": "Strong caveat: the date range and even “siege” as a continuous event are disputed; do not portray an exact naval blockade chronology as settled."
+    },
+    {
+      "order": 21,
+      "id": "21-delegation-and-text-comparison-constantinople",
+      "date": "680–681 CE",
+      "place": "Constantinople; council proceedings, specific meeting room unverified.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3813.htm",
+          "locator": "Third Council of Constantinople acts, opening and proceedings",
+          "consulted": "Opened council page; acts are presented as proceedings of the council that condemned monothelite teaching and affirmed two natural wills/operations in Christ.",
+          "supports": "Supports the council and doctrinal decision in 680–681.",
+          "limits": "Theological source is an institutional acta, not neutral description; attendance and reception should be described precisely. “Eighteen sessions” is cited in campaign passage but was not independently counted in this audit. Translation/reuse rights not verified.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://pbe.kcl.ac.uk/data/D62/F83.htm",
+          "locator": "Prosopography of the Byzantine Empire, Petros 23",
+          "consulted": "URL identified; entry not opened in this pass.",
+          "supports": "Potential prosopographical check of participant/session chronology.",
+          "limits": "Not evidence directly read here.",
+          "accessStatus": "not_consulted"
+        }
+      ],
+      "assessment": "The council’s doctrinal outcome is supported by the acts; the exact session count and delegates need a closer passage-level check."
+    },
+    {
+      "order": 22,
+      "id": "04-winter-at-the-walls",
+      "date": "717–718 CE",
+      "place": "Constantinople; siege against the city, no exact wall sector verified.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6209 (primary chronicle translation)",
+          "consulted": "Previously consulted in summary; this turn did not reopen the complete passage. It records the Arab siege, winter hardship and Bulgarian attack, with Byzantine victory framing.",
+          "supports": "Theophanes supports the conventional siege narrative and its winter/Bulgar elements as a Byzantine chronicle account.",
+          "limits": "Chronicle written later and politically/theologically framed; numerical casualties, exact one-year chronology, and causal primacy of Bulgarian aid are not secure. Different source traditions diverge. Translation rights unknown.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+          "locator": "Britannica overview",
+          "consulted": "Page cited but not accessible/read in this pass.",
+          "supports": "Secondary lead only.",
+          "limits": "Not counted as direct verification; full Britannica text access failed.",
+          "accessStatus": "access_failed"
+        },
+        {
+          "url": "https://journals.uni-vt.bg/fhyb/eng/vol6/iss1/art7",
+          "locator": "Petar Goliyski, “The Bulgarians and the Siege … in a 13th Century Armenian Synaxarium”",
+          "consulted": "Abstract opened/read. It says the Armenian synaxarium is 13th century, derives from Theophanes and a 9th-century oration/Akathist interpolation, and adds no new evidence for Bulgarian participation.",
+          "supports": "Useful scholarly assessment of a later Armenian witness and its dependence.",
+          "limits": "Abstract only, not article body; this later text is not independent contemporary corroboration. Reuse rights unknown.",
+          "accessStatus": "abstract_only"
+        }
+      ],
+      "assessment": "The siege is well-established in Byzantine tradition; specific winter, casualty and Bulgar causation details need source attribution rather than neutral certainty."
+    },
+    {
+      "order": 23,
+      "id": "23-artisan-record-and-protection-constantinople",
+      "date": "c.726–730 CE; onset and first imperial decree disputed.",
+      "place": "Constantinople; policies were imperial, but no specific workshop/site identified.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, The Iconoclast Controversy 726–843, chapter abstract",
+          "consulted": "Abstract inspected; full chapter unavailable. Related Oxford search metadata says the first section treats first iconoclasm, while scholarly chronology can place a traceable start around 730 rather than secure 726.",
+          "supports": "Supports broad iconoclast controversy under Leo III and chronology as a scholarly issue.",
+          "limits": "Abstract cannot establish a particular decree, artisan incident, or workshop protection. The often-asserted 726/730 imperial edict is disputed; images policy evolved rather than a single securely documented act. Full chapter access failed. Rights unknown.",
+          "accessStatus": "abstract_only"
+        }
+      ],
+      "assessment": "Avoid stating a dated universal decree or a specific local workshop event as certain; source access here was abstract-level."
+    },
+    {
+      "order": 24,
+      "id": "24-council-and-workshop-logistics-chalcedon",
+      "date": "754 CE",
+      "place": "Hieria, near Chalcedon; exact building/site footprint not independently verified.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3819.htm",
+          "locator": "Second Council of Nicaea, Session VI, quotation/rebuttal of the 754 Hieria horos",
+          "consulted": "Opened Nicaea II text previously and checked the relevant source framing: Hieria’s original acta are not independently available here; the later 787 council reads and refutes the earlier horos.",
+          "supports": "Indirectly supports that Hieria promulgated an iconoclast definition and was later rejected at Nicaea II.",
+          "limits": "This is a hostile later reconstruction, not neutral surviving acts of 754. Do not treat workshop logistics or local civilian consequences as sourced by this council text. Reuse rights not checked.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford chapter abstract on iconoclast controversy",
+          "consulted": "Abstract only; confirms the broad 726–787 phase and Council of Hieria in context.",
+          "supports": "Broad chronology/context.",
+          "limits": "Does not expose primary text or event logistics.",
+          "accessStatus": "abstract_only"
+        }
+      ],
+      "assessment": "The 754 policy is known here through later opponents; make that transmission explicit."
+    },
+    {
+      "order": 25,
+      "id": "05-pieces-of-a-memory",
+      "date": "787 CE",
+      "place": "Nicaea (modern İznik); council venue precise only at city level in consulted records.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3819.htm",
+          "locator": "Second Council of Nicaea acts; especially Session II and doctrinal definition",
+          "consulted": "Opened/read the translated council acts; distinguishes honorific veneration of images from the worship due to divine nature, and presents the council’s restoration of image veneration.",
+          "supports": "Supports the council’s doctrinal position and the veneration/latria distinction.",
+          "limits": "Acts are an ecclesiastical/theological record; translation terms vary. Do not equate the 787 formulation with modern denominational identities. Detailed local memory/story is not established by the acts. Rights for modern translation/site not checked.",
+          "accessStatus": "read"
+        },
+        {
+          "url": "https://www.jstor.org/stable/10.2307/2846879",
+          "locator": "JSTOR preview on Nicaea II location/text transmission",
+          "consulted": "Only result/preview consulted, not full text.",
+          "supports": "Search preview points to the council’s location and later textual compilation.",
+          "limits": "No claim beyond preview is treated as verified.",
+          "accessStatus": "preview_only"
+        }
+      ],
+      "assessment": "The council decision is supported by its acta; “pieces of a memory” is a narrative framing, not a primary source claim."
+    },
+    {
+      "order": 26,
+      "id": "26-civilian-supply-and-succession-records-constantinople",
+      "date": "797 CE",
+      "place": "Constantinople; palace location/action details not established here.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6289",
+          "consulted": "The episode cites this locator; prior audit identified its account as a source for Irene’s removal of Constantine VI. Full passage not reopened in this turn.",
+          "supports": "Supports the reported deposition and Irene’s rule as Theophanes narrates it.",
+          "limits": "Later iconophile chronicle, politically interested; dramatic details and private motives must remain attributed. Britannica source cited by selection not accessed.",
+          "accessStatus": "read_prior"
+        }
+      ],
+      "assessment": "Core succession event is chronicle-attested, but the selected secondary reference was not read and Theophanes’ viewpoint matters."
+    },
+    {
+      "order": 27,
+      "id": "27-off-map-dispatch-and-comparison-constantinople",
+      "date": "800 CE; coronation occurred in Rome, outside the campaign map.",
+      "place": "Rome (coronation); Constantinople is only the imagined destination for news.",
+      "sources": [
+        {
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Vita Karoli Magni, chapter 28",
+          "consulted": "URL identified in selection; cited chapter was not extracted/read during this pass. Prior audit recorded only the candidate claim from metadata.",
+          "supports": "A likely primary source for the Christmas 800 coronation and Einhard’s claim that Charlemagne said he would not have entered the church had he known the pope’s plan.",
+          "limits": "Einhard wrote decades later and offers a Frankish court perspective; do not present his reported private reaction as independently verified. Episode’s Constantinople reception is off-map/inherited news, not local eyewitnessing. Translation rights unknown.",
+          "accessStatus": "not_consulted"
+        }
+      ],
+      "assessment": "Coronation is conventional, but the cited witness and its famously dramatic “surprise” explanation remain to be checked directly."
+    },
+    {
+      "order": 28,
+      "id": "28-administrative-transition-constantinople",
+      "date": "802 CE",
+      "place": "Constantinople; palace coup location not resolved in this audit.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6295",
+          "consulted": "Cited locator identified; full passage not reread in this turn.",
+          "supports": "Chronicle record supports Irene’s deposition and Nikephoros’ accession in 802.",
+          "limits": "Theophanes’ iconophile stance shapes narrative and evaluation. Britannica page citation was inaccessible in the present pass; no detailed coup scene independently verified.",
+          "accessStatus": "read_prior"
+        },
+        {
+          "url": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+          "locator": "Britannica, Nikephoros I",
+          "consulted": "Open attempt returned internal error; no content read.",
+          "supports": "None in this audit beyond bibliographic lead.",
+          "limits": "Do not cite as consulted. Rights unknown.",
+          "accessStatus": "access_failed"
+        }
+      ],
+      "assessment": "The succession is supported by chronicle tradition; source bias and inaccessible modern reference should be explicit."
+    },
+    {
+      "order": 29,
+      "id": "29-finite-withdrawal-and-relief-pliska",
+      "date": "811 CE; battlefield location within the Pliska region uncertain.",
+      "place": "Pliska/First Bulgarian Empire region; do not pin the battle to a precise modern point from this evidence.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6303",
+          "consulted": "Locator from selection checked against chronicle context in prior audit, not full text reopened here.",
+          "supports": "Theophanes reports Nikephoros’ 811 campaign, defeat/death against Bulgars, and dramatic aftermath.",
+          "limits": "Court chronicle narrative and dramatic details are not a surveyed battle report. Britannica citation was not accessible. This audit found no archaeological/gazetteer source establishing the exact battlefield footprint; no coordinates. Translation/reuse rights unknown.",
+          "accessStatus": "read_prior"
+        },
+        {
+          "url": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+          "locator": "Britannica, Nikephoros I",
+          "consulted": "Open attempt returned internal error; no content read.",
+          "supports": "No independently verified claim.",
+          "limits": "Not counted as consulted.",
+          "accessStatus": "access_failed"
+        }
+      ],
+      "assessment": "Death in the Bulgarian campaign is supported in the chronicle tradition; “Pliska” should remain regional, not a precise battle coordinate."
+    },
+    {
+      "order": 30,
+      "id": "30-civilian-refuge-and-dispatch-adrianople",
+      "date": "813 CE; Versinikia battle is in Thrace and its precise site remains uncertain; episode geography id is Adrianople.",
+      "place": "Versinikia/Adrianople region; no precise site or proof that the episode’s local map depicts the battlefield.",
+      "sources": [
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6305",
+          "consulted": "Selection cites Theophanes’ entry; full passage not reopened in this turn.",
+          "supports": "Chronicle narrative links Michael I’s defeat at Versinikia, subsequent political crisis and Leo V’s accession.",
+          "limits": "Do not collapse defeat and accession into one witnessed local scene. Later iconoclast narrative and military/political factors are intertwined. Britannica page not consulted; exact Versinikia location not established here.",
+          "accessStatus": "read_prior"
+        },
+        {
+          "url": "https://www.britannica.com/biography/Leo-V-the-Armenian",
+          "locator": "Britannica, Leo V",
+          "consulted": "Search/open citation was not successfully read during this pass.",
+          "supports": "Secondary lead only.",
+          "limits": "No direct verification; rights unknown.",
+          "accessStatus": "not_consulted"
+        }
+      ],
+      "assessment": "Chronicle supports the sequence broadly; exact battle placement and local connection to Adrianople remain uncertain."
+    },
+    {
+      "order": 31,
+      "id": "31-artisan-and-archive-preservation-constantinople",
+      "date": "815 CE",
+      "place": "Constantinople; synod site at city level only.",
+      "sources": [
+        {
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, The Iconoclast Controversy 726–843, chapter abstract",
+          "consulted": "Abstract-level inspection only. It identifies a second iconoclast phase and later restoration in 843, but does not provide the 815 synod acta.",
+          "supports": "Broadly supports renewed iconoclast period under Leo V.",
+          "limits": "Does not substantiate an artisan/archive preservation incident, specific synod proceedings, or precise 815 policy text. Documentary evidence is fragmentary; full chapter unavailable. Copyright/reuse unknown.",
+          "accessStatus": "abstract_only"
+        },
+        {
+          "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+          "locator": "Theophanes, Chronographia, AM 6307 (815)",
+          "consulted": "Chronicle locator identified but passage not opened for this audit.",
+          "supports": "Potential narrative source for 815 events.",
+          "limits": "No claim marked verified from this passage. Later chronicle perspective and exact dating need direct checking.",
+          "accessStatus": "not_consulted"
+        }
+      ],
+      "assessment": "The broad policy transition is plausible; the selected source is only an abstract and does not support the episode’s archive/workshop mechanics."
+    },
+    {
+      "order": 32,
+      "id": "32-restoration-and-final-perspective-constantinople",
+      "date": "843 CE",
+      "place": "Constantinople; synodal decision, exact church/meeting place not verified here.",
+      "sources": [
+        {
+          "url": "https://iris.unive.it/handle/10278/3754507",
+          "locator": "Conference paper metadata/abstract on the Synodikon and restoration of images in 843",
+          "consulted": "Abstract read: restoration is commemorated by the Synodikon of Orthodoxy; its public reading condemns iconoclasts, and the paper traces evolving Orthodox identity and boundaries after 843.",
+          "supports": "Supports that 843 restoration became linked to a liturgical commemoration, while also warning that “Orthodoxy” and its boundaries developed over time.",
+          "limits": "Abstract only, not full paper; does not establish local civilian experience or precise synod location. Rights unknown.",
+          "accessStatus": "abstract_only"
+        },
+        {
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, The Iconoclast Controversy 726–843, chapter abstract",
+          "consulted": "Abstract inspected; states restoration under Patriarch Methodios in 843.",
+          "supports": "Supports broad chronology of restoration in 843.",
+          "limits": "Not primary evidence; full chapter unavailable. “Triumph of Orthodoxy” is source/tradition language, not an unchanging modern institutional label.",
+          "accessStatus": "abstract_only"
+        },
+        {
+          "url": "https://www.britishmuseum.org/collection/object/H_1988-0411-1",
+          "locator": "British Museum object record, later icon depicting restoration of icons",
+          "consulted": "Search result inspected; describes later icon image of the restoration subject and an 18th-century painter’s manual.",
+          "supports": "Supports later visual reception of the 843 event as a remembered subject.",
+          "limits": "The object is much later than 843 and cannot document contemporary scene details; image rights/licence need checking before reuse.",
+          "accessStatus": "metadata_only"
+        }
+      ],
+      "assessment": "The 843 policy reversal and later commemoration are supported at broad level; do not treat later iconography as contemporary eyewitness evidence."
+    }
+  ],
+  "crossEpisodeFindings": [
+    "Procopius II.22–23 directly supports plague-related mortality, burial relief and scarcity in Constantinople; the episode’s specific granary remains fictional.",
+    "Several selected references are abstracts or inaccessible pages. They are marked explicitly and must not be cited as full-text verification.",
+    "The 626 homily distinguishes Avar attack from the Persian position across the strait; numbers and panegyrical/miraculous claims remain attributed.",
+    "The supposed 674–678 continuous siege is strongly contested in modern source criticism; even the event’s duration/date is unresolved.",
+    "The 754 Hieria acts and several eighth/ninth-century narratives survive here through later, interested witnesses.",
+    "Pliska and Versinikia are regional battle identifications in this audit, not precise geolocated battlefield footprints.",
+    "No map/image asset was downloaded; asset reuse rights/licences remain unknown unless the source explicitly identifies public-domain text."
+  ],
+  "accessAndReuse": "Access labels distinguish full passage read, prior-pass reading, abstract/preview/metadata, unconsulted and failed access. Do not claim full-book access from an abstract. Procopius page explicitly labels 1914 Loeb text public domain; web presentation/images have separate rights. All other translation, article, museum-image and map licences remain unverified; obtain rights before reusing assets.",
+  "sources": [
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2B%2A.html",
+      "title": "Procopius, Persian Wars II.8–10",
+      "consultedScope": "The cited page and adjacent text were checked; the source narrates Khosrow’s expedition, Antioch’s capture and sack, fire, and deportation of captives.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://online.ucpress.edu/SLA/article/7/2/201/196341/God-s-Wrath-over-Antioch-525-540-CEBeginning-of",
+      "title": "Sarah Savant? article “God’s Wrath over Antioch 525–540 CE”",
+      "consultedScope": "Search result/metadata only; full article text was not read.",
+      "accessStatus": "metadata_only"
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2F%2A.html",
+      "title": "Procopius, Persian Wars II.22.9; II.23.1–20",
+      "consultedScope": "Opened full translated section. II.22.9 says the plague reached Byzantium in spring of its second year; II.23.1 gives four months/three months at greatest virulence; II.23.5–8 says Justinian provided money and assigned Theodorus to bury unattended dead; II.23.19 explicitly reports near-starvation and difficulty obtaining bread/necessities.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.metmuseum.org/essays/byzantium-ca-330-1453",
+      "title": "Byzantium overview, Justinian/plague context",
+      "consultedScope": "Page opened; overview inspected, not a dedicated food-distribution study.",
+      "accessStatus": "read_partial"
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3812.htm",
+      "title": "Second Council of Constantinople, Session I imperial letter and acts",
+      "consultedScope": "Opened and read opening acts. The imperial letter states the controversy over the Three Chapters and calls bishops to the capital; later acts/decrees in the collection address Theodore of Mopsuestia, Theodoret’s anti-Cyril writings, and the letter attributed to Ibas.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/theodore_syncellus_01_homily.htm",
+      "title": "Theodore Syncellus, Homily on the siege, sections describing the Avar approach and Persian position",
+      "consultedScope": "Opened and read the translated homily. It describes the Avar khagan’s attack from the west and Persians across the strait at Chalcedon, with land/sea pressure on the city.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+      "title": "Siege of Constantinople (626), overview",
+      "consultedScope": "Page identified through citation; its full text was not accessible/read in this audit.",
+      "accessStatus": "metadata_only"
+    },
+    {
+      "url": "https://academic.oup.com/book/6524/chapter-abstract/150435622",
+      "title": "Robert G. Hoyland, Witnesses to a World Crisis, chapter abstract/extract on seventh-century eastern Christian sources",
+      "consultedScope": "Opened only the accessible chapter abstract/extract. It places Arab campaigns from 634, gives Ajnadayn 634, Fihl 634/635, Yarmuk 636 and says Jerusalem arranged surrender terms perhaps in 638.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.38238823",
+      "title": "Theophilus of Edessa’s Chronicle, cited discussion of 638",
+      "consultedScope": "URL/record identified, but full text/passage was not accessible in this session.",
+      "accessStatus": "access_failed"
+    },
+    {
+      "url": "https://christtheking.info/catholic-resources-on-adversus-judaeos/selections-of-st-sophronius-of-jerusalems-writings-on-the-jews/",
+      "title": "Sophronius Christmas sermon, 634, cited page",
+      "consultedScope": "The cited page was not opened/read in this session.",
+      "accessStatus": "not_consulted"
+    },
+    {
+      "url": "https://www.medievalists.net/2022/07/was-constantinople-besieged-in-674-78/",
+      "title": "Critical overview of the first Arab siege debate; discussion of Theophanes, Howard-Johnston, Jankowiak",
+      "consultedScope": "Read from the cited page/summary during prior audit; it contrasts major scholarly reconstructions and stresses source-chronology problems.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.britannica.com/event/Arab-Byzantine-wars",
+      "title": "Arab-Byzantine wars overview",
+      "consultedScope": "Cited page identified; full page not read in this pass.",
+      "accessStatus": "metadata_only"
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3813.htm",
+      "title": "Third Council of Constantinople acts, opening and proceedings",
+      "consultedScope": "Opened council page; acts are presented as proceedings of the council that condemned monothelite teaching and affirmed two natural wills/operations in Christ.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://pbe.kcl.ac.uk/data/D62/F83.htm",
+      "title": "Prosopography of the Byzantine Empire, Petros 23",
+      "consultedScope": "URL identified; entry not opened in this pass.",
+      "accessStatus": "not_consulted"
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/theophanes_02.htm",
+      "title": "Theophanes, Chronographia, AM 6209 (primary chronicle translation)",
+      "consultedScope": "Previously consulted in summary; this turn did not reopen the complete passage. It records the Arab siege, winter hardship and Bulgarian attack, with Byzantine victory framing.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+      "title": "Britannica overview",
+      "consultedScope": "Page cited but not accessible/read in this pass.",
+      "accessStatus": "access_failed"
+    },
+    {
+      "url": "https://journals.uni-vt.bg/fhyb/eng/vol6/iss1/art7",
+      "title": "Petar Goliyski, “The Bulgarians and the Siege … in a 13th Century Armenian Synaxarium”",
+      "consultedScope": "Abstract opened/read. It says the Armenian synaxarium is 13th century, derives from Theophanes and a 9th-century oration/Akathist interpolation, and adds no new evidence for Bulgarian participation.",
+      "accessStatus": "abstract_only"
+    },
+    {
+      "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+      "title": "Oxford, The Iconoclast Controversy 726–843, chapter abstract",
+      "consultedScope": "Abstract inspected; full chapter unavailable. Related Oxford search metadata says the first section treats first iconoclasm, while scholarly chronology can place a traceable start around 730 rather than secure 726.",
+      "accessStatus": "abstract_only"
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3819.htm",
+      "title": "Second Council of Nicaea, Session VI, quotation/rebuttal of the 754 Hieria horos",
+      "consultedScope": "Opened Nicaea II text previously and checked the relevant source framing: Hieria’s original acta are not independently available here; the later 787 council reads and refutes the earlier horos.",
+      "accessStatus": "read"
+    },
+    {
+      "url": "https://www.jstor.org/stable/10.2307/2846879",
+      "title": "JSTOR preview on Nicaea II location/text transmission",
+      "consultedScope": "Only result/preview consulted, not full text.",
+      "accessStatus": "preview_only"
+    },
+    {
+      "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "title": "Einhard, Vita Karoli Magni, chapter 28",
+      "consultedScope": "URL identified in selection; cited chapter was not extracted/read during this pass. Prior audit recorded only the candidate claim from metadata.",
+      "accessStatus": "not_consulted"
+    },
+    {
+      "url": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+      "title": "Britannica, Nikephoros I",
+      "consultedScope": "Open attempt returned internal error; no content read.",
+      "accessStatus": "access_failed"
+    },
+    {
+      "url": "https://www.britannica.com/biography/Leo-V-the-Armenian",
+      "title": "Britannica, Leo V",
+      "consultedScope": "Search/open citation was not successfully read during this pass.",
+      "accessStatus": "not_consulted"
+    },
+    {
+      "url": "https://iris.unive.it/handle/10278/3754507",
+      "title": "Conference paper metadata/abstract on the Synodikon and restoration of images in 843",
+      "consultedScope": "Abstract read: restoration is commemorated by the Synodikon of Orthodoxy; its public reading condemns iconoclasts, and the paper traces evolving Orthodox identity and boundaries after 843.",
+      "accessStatus": "abstract_only"
+    },
+    {
+      "url": "https://www.britishmuseum.org/collection/object/H_1988-0411-1",
+      "title": "British Museum object record, later icon depicting restoration of icons",
+      "consultedScope": "Search result inspected; describes later icon image of the restoration subject and an 18th-century painter’s manual.",
+      "accessStatus": "metadata_only"
+    }
+  ],
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}

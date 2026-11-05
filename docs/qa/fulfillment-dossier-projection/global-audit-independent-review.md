@@ -1,0 +1,29 @@
+# Independent global-audit and handoff review — i00008/S3
+
+Reviewer: gpt-6. Implementer: gpt-6-luna. Date: 2026-10-25. Reviewed code: `f1c99e9325ed97e8ff1eafcb4f97797336a2d02d` after initial candidate `c0a634e`. Git author/committer remains the owner's configured Cartago identity. This is an independent technical report before official S3 product integration/formal verdict; it grants no historical authoring or engine approval.
+
+No blocking implementation finding remains in this code. The initial candidate omitted the profile literal check, allowed a Boolean resource in a derived view to compare equal to integer 1, and fixed the global source test at 63/54 in a way that would reject a later legitimate dossier insertion. The implementer added the required composed-world-ledger literal, reused the resource-vector helper on consumed views before comparison, and replaced the global count freeze with a fixed legacy-record regression plus comparison to the current source-fingerprinted report. The independent reviewer did not edit implementation.
+
+The existing auditor now dispatches only an explicitly known designProfile to v3; absent discriminator retains the legacy path. It reports separately authored operating/protected/optional accounts and the profile's actual top-level enemyRoster, not invented villagers, gathering, per-difficulty enemy caps or scheduled times. Shared pressure helpers remain heuristic. Typed projection and full dossier auditing retain profile/economic authority; the civic reporter does not become another reference reducer. Account differences or a clear heuristic flag do not prove challenge or resolve the 54 playability candidates.
+
+## Independent executed checks
+
+- All fourteen Python civic tests passed. The genuine artificial three-service bridge→composer→auditor→wiki/SVG regression includes civic reporting; it is not replaced by a handwritten historical projection. Static fixtures are limited to the statistics fields they test.
+- Reviewer probes on the initial code accepted a missing/unknown profile and a Boolean view equal to integer 1. The final code rejects both profile cases and both Boolean/float views equal to integer 1 with explicit diagnostics.
+- The existing uninserted Constantinople composed preview now passes civic reporting with actual affordable-selection counts easy9/standard7/hard3, distinct initial spendable accounts and no invented enemy cap or positive timer. This check is temporary data-only execution, not insertion of dossier64 or approval of its historical/game design.
+- Independent `bun run validate` passed:157 tests across13 files,2,136 expectations, TypeScript/Biome, documentation/local links and three active campaigns. The prospective34-case S1 matrix remains specified-not-executed; no new engine result is claimed.
+- The current civic report is byte-for-byte identical to Git baseline `dc23f194`; its actual SHA-256 is `0d7fa10b655407e209862375b9e81c3bda84516a26e928ef70aa5fea0848144b`. The initially reported prose hash omitted its last character; actual file preservation was independently checked against Git rather than trusting that transcription. All nine odyssey source documents and their legacy generated dossier/wiki/map artifacts remain unchanged by this slice. Later authorized source changes regenerate their report through the existing provenance-aware command; this slice does not freeze the global backlog forever.
+
+## Handoff and remaining boundaries
+
+The scoped documentation identifies accepted S2 product6f06737/verdict e08a5cbd, source authority and opt-in commands, explicit legacy/v3 dispatch and failure behavior, and pending S3 integration at writing. It states that readiness_timing_audit follows its authored legacy plan and is not a v3 timing tool. S3 does not create a historical consumer, change public schemas/IDs/string lock or implement native v3.
+
+Counts remain63 full design drafts and215 selections without a full dossier. The historical dossier stays in d00002/S3; native/UI/template observations and AoE2 evidence stay in i00007/S3, i00003 and s00001. No adapter changed, so test:export was not repeated for this reporting/documentation change; the separately reviewed supported pilot exports do not establish v3 support. S3 formal acceptance follows official integration and the live DelendAI acceptance criteria.
+
+## Fresh-review correction — exact duplicate difficulty JSON
+
+The independent GPT-6.1 review subsequently found a remaining P2 in f1c99e9: mutating only the duplicate difficulty view to True or1.0 could compare equal to integer1, even though account and selection-analysis vectors were strict. Its [fresh report](fresh-global-audit-review.md) and formal request_changes supersede the earlier no-outstanding-finding conclusion above for that candidate. Root approval of210987d was refused by reviewer-rotation policy and was never recorded.
+
+Luna corrected the entire duplicate-view comparison in `c8bd0a9389153881d7660946ca7ab43cef6dbbaf` with sorted, finite JSON serialization, preserving object-key-order independence and distinguishing numeric/Boolean values across every field, rather than guarding only two resource vectors. Serialization errors produce a diagnostic; no financial/profile validator was copied. This also rejects an affordable Boolean changed to integer1 and nonfinite values. The root reviewer did not edit implementation.
+
+Root independently inspected the two-file patch and ran all15 Python civic tests and bun run validate:157 tests/13 files,2,136 expectations, documentation/local links and3 campaigns passed. No legacy report/source/artifact bytes changed. Formal acceptance still follows official integration of this corrected candidate and the installed rotation rule; the previous formal reviewer is now gpt-6.1-sol. This correction closes that reported case, without claiming historical, native or game approval.

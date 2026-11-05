@@ -1,0 +1,294 @@
+{
+  "campaignId": "church-of-rome",
+  "episodesAudited": "episodeSelection array entries 7–18 (includes campaign IDs reused from baseline and numbered order field) in docs/design/odysseys/church-of-rome.json",
+  "auditType": "read-only source-access and claim audit; no repository edits",
+  "episodes": [
+    {
+      "id": "01-bread-beyond-the-gates",
+      "date": "410 CE",
+      "place": "Rome; the specific refuge points are churches/shrines, not a named lower-Tiber site",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/120101.htm",
+          "kind": "primary theological polemic, Augustine, City of God I.1",
+          "access": "Full relevant chapter accessed via parallel public translation at https://www.logoslibrary.org/augustine/city/0101.html; cited New Advent URL itself not separately opened",
+          "locator": "Book I, chapter 1",
+          "supports": "Augustine says apostolic/martyr churches functioned as refuges in the sack for people fleeing, including Christians and pagans; he attributes restraint to the Christian name/sanctuary status.",
+          "limits": "Written after the event to answer pagan criticism; not an eyewitness incident log. Does not document a lower-Tiber route, household, grain store, or particular rescue."
+        }
+      ],
+      "assessment": "The sanctuary claim is supported as Augustine's argument. Player households, evacuation, supplies and route remain fictional framing."
+    },
+    {
+      "id": "08-administrative-transition-ravenna",
+      "date": "476 CE",
+      "place": "Ravenna; Italy and the western imperial administration",
+      "sources": [
+        {
+          "url": "https://www.britannica.com/event/fall-of-Rome",
+          "kind": "secondary overview",
+          "access": "Search result overview accessed; full article not consulted",
+          "locator": "Fall of the Western Roman Empire overview",
+          "supports": "Provides conventional event framing for Odoacer's deposition of Romulus Augustulus in 476.",
+          "limits": "Not primary evidence. No detailed institutional claim verified from this page."
+        },
+        {
+          "url": "https://readancienttexts.com/marcellinus_comes/chronicon_mommsen_chronica_minora/1",
+          "kind": "late antique chronicle (Marcellinus Comes, entry for 476)",
+          "access": "Displayed Latin and English translation read",
+          "locator": "Chronicon, 476 entry",
+          "supports": "Calls Odoacer king and says the western empire perished with Augustulus, an explicit retrospective interpretation.",
+          "limits": "Chronicle was composed decades later from an eastern imperial perspective. Does not show that contemporaries viewed 476 as a sudden end of Roman institutions; episode itself correctly cautions against claiming Rome/church ended."
+        }
+      ],
+      "assessment": "The date is a political marker; do not narrate an instantaneous end of Roman ecclesiastical or civic administration. No institutional primary record was consulted here."
+    },
+    {
+      "id": "09-civilian-record-preservation-ravenna",
+      "date": "493 CE",
+      "place": "Ravenna; Theoderic's entry into the palace/Lauretum in the Valesian account",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/l/roman/texts/Excerpta_Valesiana/2%2A.html",
+          "kind": "late antique narrative, Anonymus Valesianus, pars posterior",
+          "access": "Latin and English rendering of §§54–57 read",
+          "locator": "§§54–57",
+          "supports": "The account says Theoderic entered Ravenna; after several days he personally killed Odoacer, and Odoacer's army and family were killed by order. The Goths then confirmed Theoderic as king.",
+          "limits": "Retrospective narrative with political/characterizing language; it gives no securely established exact day in the passage consulted, and one source cannot support exact civilian impact or an extraction operation."
+        }
+      ],
+      "assessment": "Core succession event supported. Do not conflate this with Theoderic's later visit to Rome in 500. No named civilian rescue is evidenced."
+    },
+    {
+      "id": "10-correspondence-consignment-rome-ostia",
+      "date": "494 CE (letter commonly dated 494; exact dating may be expressed as c.494)",
+      "place": "Rome to Emperor Anastasius I; diplomatic exchange involving envoys returning from Constantinople",
+      "sources": [
+        {
+          "url": "https://thejosias.com/2020/03/30/famuli-vestrae-pietatis/",
+          "kind": "full translation of primary letter, Gelasius I, Famuli vestrae pietatis",
+          "access": "Full translation and contextual introduction read",
+          "locator": "Letter opening and argument on duo sunt / priestly authority and imperial power",
+          "supports": "Gelasius addresses Anastasius and argues for distinct sacred authority of bishops and royal power; introductory context says the letter responds to a diplomatic exchange involving returning envoys.",
+          "limits": "A situated papal argument and advocacy, not a neutral constitutional compact or timeless settlement. This modern translation page itself notes its collaborative translation; no license for reuse of text/image assets established."
+        }
+      ],
+      "assessment": "Supports a contemporary argument about responsibilities, not a definitive settlement of church-state relations."
+    },
+    {
+      "id": "11-reconciliation-document-logistics-constantinople",
+      "date": "519 CE",
+      "place": "Constantinople; negotiations between the Roman see, Emperor Justin I and the Constantinopolitan patriarchate",
+      "sources": [
+        {
+          "url": "https://romanletters.org/letters/hormisdas/135/",
+          "kind": "primary profession/formula associated with Hormisdas, translated from OCR-derived source",
+          "access": "Formula translation and subscription passage read; page labels translation AI-assisted and gives original Latin/Greek availability",
+          "locator": "Libellus text, closing subscription",
+          "supports": "The profession accepts communion articulated by the apostolic see and promises not to commemorate those separated from it; the document's text supports a formal ecclesial settlement effort.",
+          "limits": "Translation is explicitly AI-assisted/OCR-derived, so exact wording should be checked against an edition before quoting. Formula alone does not prove every church accepted it or that all doctrinal/jurisdictional conflicts ended."
+        },
+        {
+          "url": "https://www.newadvent.org/cathen/07218b.htm",
+          "kind": "older secondary reference, Catholic Encyclopedia entry on Acacian Schism",
+          "access": "Search-result description and supplied episode locator only; full page not read in this audit",
+          "locator": "Acacian Schism / 519 reconciliation",
+          "supports": "Secondary overview labels the 519 settlement as end of the schism.",
+          "limits": "Older confessional reference; not a primary source and not evidence that all divisions disappeared."
+        }
+      ],
+      "assessment": "A reconciliation in 519 is supported as an institutional event, but phrase it as ending the Acacian schism/formal communion dispute, not as universal doctrinal consensus."
+    },
+    {
+      "id": "12-returning-delegation-aid-ravenna",
+      "date": "Embassy dispatched late 525 or early 526; John's death at Ravenna 18 May 526 in standard chronology",
+      "place": "Constantinople (embassy destination), then Ravenna (arrest/death); the dispatch began at Theodoric's court",
+      "sources": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_book_of_the_popes_%28Liber_pontificalis%29_I-_%28IA_cu31924006163897%29.pdf",
+          "kind": "later papal biography, Liber Pontificalis, life of John I",
+          "access": "Search-result excerpt only; not full passage read",
+          "locator": "John I biography / embassy to Constantinople",
+          "supports": "Excerpt describes John and senators arriving in Constantinople and being received by the people; later biography is a source for the mission tradition.",
+          "limits": "Search excerpt only; the Liber Pontificalis is later and its redactions differ."
+        },
+        {
+          "url": "https://www.treccani.it/enciclopedia/giovanni-i-papa-santo_%28Dizionario-Biografico%29/",
+          "kind": "institutional biographical reference, Treccani",
+          "access": "Search excerpt only",
+          "locator": "Embassy and imprisonment chronology",
+          "supports": "Dates the embassy around late 525/early 526 and reports John's arrest after return and death in Ravenna.",
+          "limits": "Secondary synthesis; source traditions on the exact dispatch date and Theodoric's motive are disputed/mediated."
+        },
+        {
+          "url": "https://www.treccani.it/enciclopedia/santo-giovanni-i_%28Enciclopedia-dei-Papi%29/",
+          "kind": "institutional papal biography, Treccani",
+          "access": "Search excerpt only",
+          "locator": "John I, embassy chronology",
+          "supports": "Notes that timing differs among sources and that Liber Pontificalis and Anonymus Valesianus reflect distinct political perspectives.",
+          "limits": "Excerpt only; no definitive precise departure date established."
+        }
+      ],
+      "assessment": "Embassy and imprisonment narrative should be attributed to later accounts. Do not claim motives as objective fact; date range properly remains qualified."
+    },
+    {
+      "id": "13-district-supply-under-occupation-rome-ostia",
+      "date": "536 CE; Rome's entry usually dated 9 December in modern chronology",
+      "place": "Rome; Procopius narrates the army entering the city after the Gothic garrison withdraws",
+      "sources": [
+        {
+          "url": "https://www.gutenberg.org/files/20298/20298-h/20298-h.htm",
+          "kind": "primary narrative, Procopius, Wars V (Gothic War I)",
+          "access": "Full online translation accessed; search/index and narrative passage consulted",
+          "locator": "Book V, chapter 14, especially §14; index identifies Belisarius' entry into Rome",
+          "supports": "Procopius describes Belisarius' forces taking possession of Rome after the Goths left; a letter attributed to Belisarius reports taking Rome.",
+          "limits": "Procopius served with Belisarius and writes from the imperial side. Does not verify episode's fictional district supply/occupation tasks or exact local civilian logistics."
+        }
+      ],
+      "assessment": "Core entry event supported; keep the map local to Rome and identify the relief/supply tasks as fictional."
+    },
+    {
+      "id": "14-finite-siege-and-urban-relief-rome-ostia",
+      "date": "537–538 CE; Procopius says the siege began March 1 and lasted until about a year later",
+      "place": "Rome and its circuit walls; supplies/harbor details include Portus/Ostia",
+      "sources": [
+        {
+          "url": "https://www.gutenberg.org/files/20298/20298-h/20298-h.htm",
+          "kind": "primary narrative, Procopius, Wars V–VI",
+          "access": "Full online translation accessed; relevant siege chronology and narrative read",
+          "locator": "Book V, siege narrative, esp. XXIV; index entries for siege/relief",
+          "supports": "Procopius states that Rome's first siege by Vitiges continued for about a year, with famine/blocked necessities and attempts at relief. He describes grain/provisions moving by land and sea in the broader account.",
+          "limits": "Narrative is shaped by imperial perspective and uses dramatic/large numbers; do not reuse its army counts as reliable exact totals. Episode's exact day counts should remain qualified."
+        }
+      ],
+      "assessment": "The siege and relief context is well supported; no specific fictional civilian withdrawal or supply cache is attested."
+    },
+    {
+      "id": "15-archive-extraction-and-refuge-rome-ostia",
+      "date": "546 CE (Totila's capture during siege); reported long pressure and shortages",
+      "place": "Rome; Procopius' relevant account is Wars VII / Gothic War III, §§36–40, with entry via a gate and Rome's garrison surrendering/withdrawing",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/7A%2A.html",
+          "kind": "primary narrative, Procopius, Gothic War III, §§1–7",
+          "access": "Full page accessed",
+          "locator": "Page title explicitly covers Gothic Wars III.1–7",
+          "supports": "This linked page does not contain the capture account cited by the episode; it is a source pointer mismatch for the capture event."
+        },
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/7G%2A.html",
+          "kind": "primary narrative, Procopius, Gothic War III, §§36–40",
+          "access": "Search-result passage consulted; full page not opened",
+          "locator": "§36, esp. §7 in excerpt: Isaurian guards open negotiations with Totila and agree to surrender Rome",
+          "supports": "Search extract supports a negotiated/betrayed opening of the city after a prolonged siege.",
+          "limits": "Excerpt only. It does not independently substantiate the episode's broad population/civilian claims or exact effects of the capture."
+        },
+        {
+          "url": "https://www.ostia-antica.org/~atexts/procop.htm",
+          "kind": "archaeological site information portal quoting Procopius",
+          "access": "Search-result extract only",
+          "locator": "Gothic War VII, XV, 546 CE",
+          "supports": "Search extract discusses Portus garrison and harbour operations during the campaign.",
+          "limits": "Portal excerpt, not the primary text edition; not evidence for modern spatial precision."
+        }
+      ],
+      "assessment": "The URL currently cited in the episode (7A) is wrong for the Rome capture; likely relevant Procopius passage is 7G / Gothic War III.36–40. Capture and surrender can be attributed to Procopius, while population figures/refuge details need separate sources."
+    },
+    {
+      "id": "16-return-and-repair-rome-ostia",
+      "date": "552 CE Narses retakes Rome; final Gothic resistance ends 553, war conventionally concludes 554",
+      "place": "Rome; Taginae/Busta Gallorum and Mons Lactarius are distant campaign locations, not the Rome map location",
+      "sources": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/8J%2A.html",
+          "kind": "primary narrative, Procopius, Wars VIII.33–35",
+          "access": "Full page opened and relevant passage read",
+          "locator": "VIII.33.8–27; VIII.35",
+          "supports": "Procopius says Narses marched on Rome after the battle, captured it in Justinian's 26th regnal year, and sent the keys to Justinian; later passage recounts the final Gothic resistance and negotiated departure.",
+          "limits": "Procopius' regnal dating is not a modern exact date; no single 553 victory alone establishes total and immediate control over all Italy. The broader war ended over several years."
+        },
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/8I%2A.html",
+          "kind": "primary narrative, Procopius, Wars VIII.29–32",
+          "access": "Full page opened; battle passage read",
+          "locator": "VIII.31, Narses/Totila battle at Taginae",
+          "supports": "Describes Narses' battle deployment and Totila's defeat/death.",
+          "limits": "Does not itself prove full territorial restoration; the exact battlefield location should not be reduced to modern coordinates."
+        }
+      ],
+      "assessment": "The entry compresses retaking Rome (552), defeat of Totila at Taginae (552), final battle against Teias at Mons Lactarius (553), and war end (554). Keep dates/places distinct; Britannica is secondary, not a primary source."
+    },
+    {
+      "id": "02-the-price-of-peace",
+      "date": "593–595 CE; entry's 590 is only a pontificate prologue",
+      "place": "Rome and Lombard/imperial territories in Italy; Gregory writes to an official serving the Exarch",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/360205036.htm",
+          "kind": "primary letter, Gregory the Great, Register V.36",
+          "access": "Full letter read",
+          "locator": "Register V.36, paragraphs 1–3",
+          "supports": "Gregory says Agilulf was willing to pursue general peace if the Exarch consented to arbitration over alleged violations during an existing peace; each side could seek satisfaction. Gregory warns that a separate peace with his own side might leave islands/other places ruined.",
+          "limits": "This is Gregory's advocacy to an intermediary, not proof that a peace treaty was concluded in 593 or universal religious consensus. The claim that Rome reached agreement requires later correspondence (e.g. Register IX.42) and qualified chronology."
+        },
+        {
+          "url": "https://www.newadvent.org/fathers/360209042.htm",
+          "kind": "primary letter, Gregory, Register IX.42",
+          "access": "Search-result text consulted, not full page in this audit",
+          "locator": "To Agilulf; asks his dukes to keep the peace already made",
+          "supports": "Later correspondence refers to a peace having been made and requests its observance.",
+          "limits": "Search excerpt only; distinguish this later confirmation from the initial negotiation letter V.36."
+        }
+      ],
+      "assessment": "Current candidate blends negotiation (V.36) with later peace (IX.42); keep the shift and date qualified rather than treating the negotiation itself as completed peace."
+    },
+    {
+      "id": "18-hospitality-and-mission-supply-kent",
+      "date": "596 dispatch; mission arrives Britain/Kent in 597; later steps continue after these dates",
+      "place": "Rome to Britain, then Thanet/Kent and Canterbury in Bede's account",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/360206051.htm",
+          "kind": "primary letter, Gregory the Great, Register VI.51",
+          "access": "Full letter read",
+          "locator": "Book VI, Letter 51; dateline gives Mauricius regnal/indictional year",
+          "supports": "Gregory exhorts the departing mission to continue and obey Augustine, who is returning to them. Dated by the letter's indiction/regnal formula, commonly 596.",
+          "limits": "Letter is an instruction to missionaries; it does not independently record arrival in Kent or conversion outcomes."
+        },
+        {
+          "url": "https://ccel.org/ccel/bede/history/history.v.v.xxiii.html",
+          "kind": "later narrative chronology, Bede, Ecclesiastical History I.23, I.25, I.29",
+          "access": "Full chronology page read",
+          "locator": "Chronological table: 596 dispatch, 597 arrival, 601 additional clergy/pallium",
+          "supports": "Bede gives 596 as Gregory's dispatch, 597 for arrival, and 601 for further personnel and pallium.",
+          "limits": "Bede writes in the eighth century; narrative chapters I.23–26 include reported royal conversations, not contemporary transcripts. Mission was gradual; neither all England nor all Britons converted in one episode."
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/source/601gregory1-lettertomellitus.asp",
+          "kind": "Fordham sourcebook hosting Gregory's letter to Mellitus (601)",
+          "access": "Search-result citation only; page open failed",
+          "locator": "Gregory, Ep. 76 (601), as identified by Fordham",
+          "supports": "Not counted as independently read support for the 596/597 episode.",
+          "limits": "This is a later instruction from 601, not the initial mission dispatch; full page was not accessible in this audit."
+        }
+      ],
+      "assessment": "Mission dispatched by Gregory and arrival in 597 are supported by Gregory's letter plus Bede's later chronology. Avoid a single conversion event or factualizing Bede's reported speeches."
+    }
+  ],
+  "geographyAndLicensing": {
+    "geography": "No coordinates, modern map tiles, georeferenced route geometry, or image assets were verified. The source texts name cities/regions but rarely locate specific buildings precisely. For episode 3 distinguish Ravenna's named palace/Lauretum in a late narrative from a surveyed archaeological footprint; for the Gothic War keep distant battles off-map if the selected geography is Rome.",
+    "licensing": "No geographic or image resource license for game reuse was established. Text availability is not a license for page illustrations, maps, or modern translations. Project Gutenberg editions may carry public-domain status for the hosted old translations, but no specific map/image asset was cleared. The University of Chicago/LacusCurtius pages contain page-specific copyright notes; verify the exact page notice before reuse. No source in these entries supplies a reusable licensed map layer.",
+    "access": "Entries distinguish full passages from search snippets and failed page opens; snippets are not represented as full source consultation."
+  },
+  "crossEpisodeCautions": [
+    "Episode 08 cites Britannica, a secondary overview; Marcellinus Comes is later than 476 and expressly frames the event as the end of the western empire. Avoid treating that retrospective formulation as universal contemporary perception.",
+    "Episode 11's older Catholic Encyclopedia summary is not the primary formula; the consulted formula web transcription explicitly labels its English translation AI-assisted/OCR-derived.",
+    "Episode 12 relies on later papal biographies and modern institutional summaries; embassy motive, exact dispatch date, and prison conditions are mediated by sources.",
+    "Episode 15's cited Procopius URL 7A covers Gothic War III.1–7, while capture discussion appears in the 7G search result (III.36–40); source locator needs correction by the editor.",
+    "Episode 16 compresses distinct events of 552, 553 and 554; Narses taking Rome is 552, not evidence for a single decisive restoration in 553.",
+    "Episode 18's 596/597 labels correspond to different phases: Gregory's dispatch and Bede's reported arrival. Later mission efforts and Christianization continue beyond 597."
+  ],
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}

@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-23",
+  "purpose": "Authored editorial direction for 45 acts; dated design assessment, not a DelendAI verdict or complete mission contract.",
+  "limits": [
+    "No new historical reading or chronological adjudication is claimed. Source qualification remains in canonical selections and consultation records.",
+    "No native map, measured difficulty, objective budgets or completed expanded dossier is supplied by an act card.",
+    "The architect owns unresolved episode decisions. MiniMax must not invent a solution to the constraints here."
+  ],
+  "campaigns": [
+    {
+      "campaignId": "faith-origins",
+      "sourcePath": "docs/design/odysseys/faith-origins.json",
+      "sourceSha256": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-administrative-records-caesarea",
+          "pivotEpisodeId": "07-household-relocation-rome-ostia",
+          "exitEpisodeId": "08-delegate-logistics-jerusalem",
+          "editorialIntent": "Administrative fragments become a network making room for outsiders; belonging is not conquest.",
+          "pressureAndRecovery": "Relocation carries acute pressure before the quieter assembly consequence.",
+          "distinctnessRequirement": "Witness comparison, household provision and relocation require distinct predicates; do not rename the same delivery."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "09-district-production-corinth",
+          "pivotEpisodeId": "15-evacuation-and-recovery-rome-ostia",
+          "exitEpisodeId": "15-evacuation-and-recovery-rome-ostia",
+          "editorialIntent": "Work and correspondence build a network that must survive a local catastrophe.",
+          "pressureAndRecovery": "Production and parallel consignments teach planning before the Roman evacuation; the next opening needs a readable reset.",
+          "distinctnessRequirement": "Corinth production and Ephesus preservation need different resource/identity decisions. The fire is not player-caused."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "16-comparative-copying-antioch",
+          "pivotEpisodeId": "02-after-the-siege",
+          "exitEpisodeId": "03-the-governors-question",
+          "editorialIntent": "Temple destruction changes conditions of transmission without producing uniform communities or texts.",
+          "pressureAndRecovery": "Evacuation peaks early; later hospitality, comparison and an administrative question allow recovery without declaring disputes over.",
+          "distinctnessRequirement": "Do not conflate this catastrophe with Nero’s Roman fire or infer authorship location from local text circulation."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "22-reading-and-relief-rome-ostia",
+          "pivotEpisodeId": "24-witness-and-evacuation-lyon",
+          "exitEpisodeId": "27-household-aid-and-memory-carthage",
+          "editorialIntent": "Petition gives way to threatened witnesses and incomplete memory.",
+          "pressureAndRecovery": "Lyon extraction is acute; later comparison and household aid show consequences without a second invented battle.",
+          "distinctnessRequirement": "Carthage legal transmission differs from Sardes escort and Lyon witness comparison in objects, custodians and recovery."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "28-certificate-and-refuge-egypt-middle-nile",
+          "pivotEpisodeId": "29-bounded-evacuation-carthage",
+          "exitEpisodeId": "04-a-different-dawn",
+          "editorialIntent": "Certificates and departures lead to qualified restitution within Miriam’s plausible lifetime.",
+          "pressureAndRecovery": "Carthage evacuation precedes a restitution coda that does not imply universal peace.",
+          "distinctnessRequirement": "Milan is a fictional local reception. Recommend the imperial successor with an explicit 313-to 312 chronology overlap."
+        }
+      ]
+    },
+    {
+      "campaignId": "imperial-church",
+      "sourcePath": "docs/design/odysseys/imperial-church.json",
+      "sourceSha256": "7d1183c4bf3483eb1cf8f69eb1842545b9467dd2c42c6796bef3c8a883ee68df",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-milvian-bridge",
+          "pivotEpisodeId": "06-finite-field-withdrawal-cibalae",
+          "exitEpisodeId": "06-finite-field-withdrawal-cibalae",
+          "editorialIntent": "Military success does not settle property restitution, African disputes or rival imperial authority.",
+          "pressureAndRecovery": "Alternate river combat, property recovery and diplomatic logistics; end with a finite withdrawal.",
+          "distinctnessRequirement": "Cibalae changes the problem. Neither victory nor the 313 agreement establishes an official state religion."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "07-court-record-logistics-rome-ostia",
+          "pivotEpisodeId": "10-land-and-strait-logistics-chrysopolis",
+          "exitEpisodeId": "02-nicaea",
+          "editorialIntent": "Land/strait victory concentrates authority while disagreement remains unresolved.",
+          "pressureAndRecovery": "After the strait operation, change to conflicting correspondence and council reception; the council peak is coordination.",
+          "distinctnessRequirement": "Adrianople and Chrysopolis need distinct crossing/manifest problems. Antioch is a separate disputed preparatory council."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "13-finite-works-logistics-jerusalem",
+          "pivotEpisodeId": "18-administrative-transition-nicomedia",
+          "exitEpisodeId": "19-competing-dispatches-constantinople",
+          "editorialIntent": "Patronage and a new capital cannot remove uncertainty, death or contested succession.",
+          "pressureAndRecovery": "Alternate works, external dispatch and testimony; court transition peaks structurally before competing seals show aftermath.",
+          "distinctnessRequirement": "The undated imperial letter must not acquire a composition date or Marcus as eyewitness from its place in the menu."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "20-separate-reception-logistics-sardica",
+          "pivotEpisodeId": "24-night-civilian-withdrawal-alexandria",
+          "exitEpisodeId": "25-delegate-and-draft-network-rimini",
+          "editorialIntent": "Repeated councils fail to produce lasting concord, and return can be followed by exile.",
+          "pressureAndRecovery": "Alexandrian night withdrawal carries acute pressure; Rimini’s document network supplies an unresolved consequence.",
+          "distinctnessRequirement": "Sardica separate receptions and Rimini drafts need different parties, objects and outcomes, not a common unanimous-council script."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "26-plural-civic-logistics-constantinople",
+          "pivotEpisodeId": "32-defeat-and-withdrawal-adrianople",
+          "exitEpisodeId": "29-council-and-final-perspective-constantinople",
+          "editorialIntent": "Policy reversals and defeat lead through reassembly, law and changed urban access to a qualified conciliar coda.",
+          "pressureAndRecovery": "Adrianople is the military low point; Sirmium adds bounded readiness, then law and care change the problem. Do not make every late episode another military peak.",
+          "distinctnessRequirement": "Constantinople 380 still needs a distinct dossier. Alternative care recipes are not simultaneous fixed payments or evidence of played balance."
+        }
+      ]
+    },
+    {
+      "campaignId": "jewish-tradition",
+      "sourcePath": "docs/design/odysseys/jewish-tradition.json",
+      "sourceSha256": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-a-city-of-names",
+          "pivotEpisodeId": "01-a-city-of-names",
+          "exitEpisodeId": "05-fiscal-record-reconciliation-rome-ostia",
+          "editorialIntent": "Temple loss opens a rupture followed by plural local practices and institutional uncertainty.",
+          "pressureAndRecovery": "Peak at evacuation, then rebuild capacity through refuge, study and fiscal reconciliation.",
+          "distinctnessRequirement": "Yavneh is not a certified universal canon council. Household reception, witness comparison and Roman fiscal work remain distinct."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "06-teaching-record-escort-lod",
+          "pivotEpisodeId": "11-archive-extraction-judean-desert",
+          "exitEpisodeId": "12-household-relocation-jerusalem",
+          "editorialIntent": "Teaching, diaspora upheaval and revolt change which households and records can survive.",
+          "pressureAndRecovery": "Build towards finite cave/archive extraction, then relocation acknowledges the defeat.",
+          "distinctnessRequirement": "Cyrene and Alexandria keep their geography. Mint consignments and desert extraction are different operations, not repeated conquest maps."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "02-the-hill-and-the-school",
+          "pivotEpisodeId": "03-the-river-quarter",
+          "exitEpisodeId": "17-cross-river-study-logistics-pumbedita",
+          "editorialIntent": "Compilation, citizenship, workshops and schools cross different local environments.",
+          "pressureAndRecovery": "Dura’s artisan/river problem changes scale between study networks; cross-river logistics opens a new horizon.",
+          "distinctnessRequirement": "Do not substitute Pumbedita for Dura or claim a completed Babylonian Talmud. Keep texts, recipients and towns independently identified."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "18-finite-mosaic-works-hammath-tiberias",
+          "pivotEpisodeId": "21-finite-works-and-safe-withdrawal-jerusalem",
+          "exitEpisodeId": "24-epigraphic-donor-logistics-aphrodisias",
+          "editorialIntent": "Mosaics, disputed violence, compilation and law coexist without one uniform policy.",
+          "pressureAndRecovery": "Abortive works must allow safe withdrawal; legal reception and donor logistics supply different consequences.",
+          "distinctnessRequirement": "Do not complete the Temple, equate law with uniform enforcement, or turn an inscription into a city blueprint."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "25-bounded-fiscal-transition-milan",
+          "pivotEpisodeId": "28-authority-and-witness-records-constantinople",
+          "exitEpisodeId": "04-the-living-margin",
+          "editorialIntent": "Fiscal changes and restrictions alter authority while transmission continues.",
+          "pressureAndRecovery": "Loss of privileges changes conditions; repair within restrictions and distributed preservation replace a last religious stand.",
+          "distinctnessRequirement": "The 425 limit is editorial, not the end of Jewish history. Huqoq’s broad dating is not an exact construction day."
+        }
+      ]
+    },
+    {
+      "campaignId": "church-of-rome",
+      "sourcePath": "docs/design/odysseys/church-of-rome.json",
+      "sourceSha256": "2f16b67dd2c9b1381311596080988ed96d927323f741382f6ceec82f077ad885",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-refuge-and-petition-reception-rome-ostia",
+          "pivotEpisodeId": "05-neutral-civilian-extraction-rome-ostia",
+          "exitEpisodeId": "06-petition-and-accountability-records-milan",
+          "editorialIntent": "Rival episcopal claims and exile concern civic accountability, not inevitable universal supremacy.",
+          "pressureAndRecovery": "Roman civilian extraction is acute; the Milan petition is a different consequence, with no conquest requirement.",
+          "distinctnessRequirement": "Sardica and Rimini differ in delegation structure. Do not make a reported distant massacre a player objective."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "01-bread-beyond-the-gates",
+          "pivotEpisodeId": "01-bread-beyond-the-gates",
+          "exitEpisodeId": "12-returning-delegation-aid-ravenna",
+          "editorialIntent": "Relief after a sack precedes changing Italian authorities and difficult court relations.",
+          "pressureAndRecovery": "Start in crisis, then recover through administration and reconciliation before an unsafe embassy return.",
+          "distinctnessRequirement": "Do not invent continuous war through the gaps; Ravenna’s banquet killing stays contextual, not rewarded play."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "13-district-supply-under-occupation-rome-ostia",
+          "pivotEpisodeId": "14-finite-siege-and-urban-relief-rome-ostia",
+          "exitEpisodeId": "18-hospitality-and-mission-supply-kent",
+          "editorialIntent": "Occupation, siege, evacuation and repair lead to negotiation and an outward mission.",
+          "pressureAndRecovery": "A siege is followed by escape/rebuilding, finite payment and hospitality rather than a new mandatory siege.",
+          "distinctnessRequirement": "Kent changes geography and recipients; it cannot replay the Roman convoy or put the whole Channel on one local map."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "19-finite-building-conversion-rome-ostia",
+          "pivotEpisodeId": "21-exile-relief-and-copying-cherson",
+          "exitEpisodeId": "25-artisan-and-council-logistics-rome-ostia",
+          "editorialIntent": "Buildings, council texts and exile expose limits to agreement between authorities.",
+          "pressureAndRecovery": "Exile relief is the human constraint; material accounts and delegation work change response instead of adding enemy armies.",
+          "distinctnessRequirement": "Building conversion, later bronze removal, council reception and image policy need different finite ledgers and historical scopes."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "26-delegate-and-oath-logistics-saint-denis",
+          "pivotEpisodeId": "31-refuge-and-petition-escort-paderborn",
+          "exitEpisodeId": "04-a-crown-at-dawn",
+          "editorialIntent": "Frankish protection and conflict culminate in refuge, negotiation and an unresolved crowning.",
+          "pressureAndRecovery": "Pavia carries siege pressure; Paderborn refuge is a late acute constraint before the ceremonial coda.",
+          "distinctnessRequirement": "Do not settle later church/empire relations. Historical dignitaries remain contextual; controlled escorts and households are declared fiction."
+        }
+      ]
+    },
+    {
+      "campaignId": "new-rome",
+      "sourcePath": "docs/design/odysseys/new-rome.json",
+      "sourceSha256": "99da4a9277885cf4d87bd0b3a798a236a698542d4b4f078a768993611b85c7da",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-administrative-transition-constantinople",
+          "pivotEpisodeId": "04-civilian-refuge-and-dispatch-constantinople",
+          "exitEpisodeId": "08-distributed-record-collation-constantinople",
+          "editorialIntent": "Succession, councils, exile, education and law establish a changing eastern civic world.",
+          "pressureAndRecovery": "Civilian refuge is an early pressure point; school works and compilation provide different recovery tasks.",
+          "distinctnessRequirement": "Code and relics missions need different originals and reception.330 is recap, not an extra mission inside the 337 opening."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "01-across-the-strait",
+          "pivotEpisodeId": "03-the-empty-granary",
+          "exitEpisodeId": "17-council-record-comparison-constantinople",
+          "editorialIntent": "Disagreement, urban destruction, construction and disease strain separate cities differently.",
+          "pressureAndRecovery": "Nika extraction and reconstruction precede finite care/food allocation; the council is an institutional coda, not another plague wave.",
+          "distinctnessRequirement": "Care implies no miraculous cure or unimplemented disease model. Antioch 540 must not reuse Constantinople 532 terrain."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "18-finite-siege-and-ferry-supply-constantinople",
+          "pivotEpisodeId": "04-winter-at-the-walls",
+          "exitEpisodeId": "04-winter-at-the-walls",
+          "editorialIntent": "Sieges and changing regional authority require separate responses across large time jumps.",
+          "pressureAndRecovery": "Distinguish 626 ferry defense, uncertain coastal watch and 717–718 winter supply; council logistics changes pace between them.",
+          "distinctnessRequirement": "Do not certify a continuous 674–678 siege or make it succeed because a fictional local task did. Technology and transport need real support."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "23-artisan-record-and-protection-constantinople",
+          "pivotEpisodeId": "24-council-and-workshop-logistics-chalcedon",
+          "exitEpisodeId": "05-pieces-of-a-memory",
+          "editorialIntent": "Image policy affects artisans and rival councils without uniform popular responses.",
+          "pressureAndRecovery": "Workshop protection precedes constrained council logistics;787 changes work and reception, not everyone’s belief.",
+          "distinctnessRequirement": "Hieria and Nicaea are not identical courier missions with reversed labels; no population has an innate religious personality."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "26-civilian-supply-and-succession-records-constantinople",
+          "pivotEpisodeId": "29-finite-withdrawal-and-relief-pliska",
+          "exitEpisodeId": "32-restoration-and-final-perspective-constantinople",
+          "editorialIntent": "Court changes, reversals and renewed image policy lead to a situated 843 restoration.",
+          "pressureAndRecovery": "Pliska withdrawal peaks before refuge and workshop preservation; restoration is a coda with consequences, not total reconciliation.",
+          "distinctnessRequirement": "The 800 Roman crowning reaches Anna as news. Pliska and Versinikia keep separate uncertain battlefield footprints."
+        }
+      ]
+    },
+    {
+      "campaignId": "first-caliphs",
+      "sourcePath": "docs/design/odysseys/first-caliphs.json",
+      "sourceSha256": "2b86695a649e539bced604a6bd505683fb66b77678a154f0a525bf0a757351c0",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-testimony-and-household-supply-mecca",
+          "pivotEpisodeId": "01-the-oasis-road",
+          "exitEpisodeId": "01-the-oasis-road",
+          "editorialIntent": "Attributed traditions, migration preparations and reception lead to a new local community.",
+          "pressureAndRecovery": "Provision/departure planning build to migration; arrival changes responsibilities rather than completing a conquest.",
+          "distinctnessRequirement": "The two Aqaba selections remain access gaps and need different negotiations/reception problems, not duplicate fictional pledge deliveries."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "08-finite-battle-supply-and-withdrawal-badr",
+          "pivotEpisodeId": "10-finite-defence-and-trench-supply-medina",
+          "exitEpisodeId": "14-witness-and-transition-records-medina",
+          "editorialIntent": "Defense, reversals and agreements change the oasis community before disputed succession.",
+          "pressureAndRecovery": "The ditch is defensive pressure; truce logistics and civilian provision vary response before death/transition closes through care and testimony.",
+          "distinctnessRequirement": "Uhud withdrawal, Khaybar extraction and Mecca provision need different entities/routes. No literal legendary hero feat becomes required play."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "15-disputed-tax-and-provincial-records-medina",
+          "pivotEpisodeId": "17-finite-river-withdrawal-kufa-euphrates",
+          "exitEpisodeId": "21-finite-river-crossing-and-civilian-records-ctesiphon",
+          "editorialIntent": "Regional allegiance, defeats and expansion create different obligations rather than an inevitable victory march.",
+          "pressureAndRecovery": "Bridge failure creates recovery; later surrender, ravine supply and river crossing require different local decisions.",
+          "distinctnessRequirement": "Yamama, Damascus, Qadesiya and Ctesiphon dates need qualified comparison; no table determines the whole sequence."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "22-property-and-surrender-records-jerusalem",
+          "pivotEpisodeId": "25-bounded-harbour-withdrawal-and-receipts-alexandria",
+          "exitEpisodeId": "26-administrative-transition-and-care-medina",
+          "editorialIntent": "Surrender, settlement and administration expose local consequences of expansion.",
+          "pressureAndRecovery": "Harbour withdrawal differs from a river camp; close in Medinan transition, without escalating peaceful Antioch into a war.",
+          "distinctnessRequirement": "Separate Alexandria’s initial conquest from the later return; correct Kaegi’s locator and reject the Hormozan conflation."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "27-finite-coastal-expedition-and-supply-cyprus",
+          "pivotEpisodeId": "29-finite-naval-withdrawal-and-care-finike",
+          "exitEpisodeId": "30-civilian-records-and-final-perspective-medina",
+          "editorialIntent": "Island expeditions and distant imperial change lead to an unresolved Medinan crisis.",
+          "pressureAndRecovery": "Naval withdrawal is acute; household/records aftermath provides a sober change of perspective.",
+          "distinctnessRequirement": "Cyprus 649 belongs here despite the former 651 heading; fleets, landing sites and 656 private motives remain unverified."
+        }
+      ]
+    },
+    {
+      "campaignId": "first-fitna",
+      "sourcePath": "docs/design/odysseys/first-fitna.json",
+      "sourceSha256": "36c56f6a38185b7761dda3e549b165cd3aa0dab2a96ec4981000a4d22c6d59c4",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-news-from-medina",
+          "pivotEpisodeId": "02-civilian-refuge-and-record-preservation-medina",
+          "exitEpisodeId": "05-rival-petition-and-witness-records-medina",
+          "editorialIntent": "Opposition, killing and contested recognition alter how civilians and messages move.",
+          "pressureAndRecovery": "The murder stays off-map; refuge is acute before uncertain administration and rival petitions.",
+          "distinctnessRequirement": "Reports, household extraction and testimony must change the player problem, not become three copy deliveries."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "06-arriving-delegation-and-supply-basra",
+          "pivotEpisodeId": "02-between-the-camps",
+          "exitEpisodeId": "11-two-way-correspondence-kufa",
+          "editorialIntent": "Basra moves from arrival through unrest/battle to distribution and a new political center.",
+          "pressureAndRecovery": "Differentiate pre-battle extraction, field care and post-battle receipts; Kufa reception/reply provide recovery.",
+          "distinctnessRequirement": "Before/during/after Basra need separate actors, starting states and recovery. Kufa is not a map stretching to Basra."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "12-rival-claims-and-dispatch-comparison-damascus",
+          "pivotEpisodeId": "14-ceasefire-withdrawal-and-care-siffin",
+          "exitEpisodeId": "16-witness-and-record-comparison-kufa",
+          "editorialIntent": "Fighting yields to a ceasefire whose terms and representation stay contested.",
+          "pressureAndRecovery": "Battle/water peaks before disengagement; protocol and witness comparison lower military pressure while changing the cognitive problem.",
+          "distinctnessRequirement": "Orders 12–16 cannot be five letter trips. Protocol needs reciprocal original parties; testimony needs independent evidence handling."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "17-voluntary-household-relocation-harura",
+          "pivotEpisodeId": "04-the-canal-road",
+          "exitEpisodeId": "23-bounded-rural-relief-kufa",
+          "editorialIntent": "Secession, arbitration and territorial loss change the cost of sustaining a coalition.",
+          "pressureAndRecovery": "Relocation/delegation precede finite civilian withdrawal; regional reports and rural relief vary consequences.",
+          "distinctnessRequirement": "Harura, Dumat, Nahrawan, Egypt and Adhruh remain separate. Egypt 658 and Hijaz 660 are not a simultaneous battlefield."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "24-civilian-refuge-and-dispatch-medina",
+          "pivotEpisodeId": "25-care-and-record-preservation-kufa",
+          "exitEpisodeId": "05-two-archives",
+          "editorialIntent": "Regional coercion reports precede leadership loss and a negotiated transfer.",
+          "pressureAndRecovery": "Care/preservation around the loss is acute; supply, protocol and archives show consequences rather than reversing 661 in a last battle.",
+          "distinctnessRequirement": "Farid does not witness private assassination planning. Recommend Umayyad or household perspective without declaring a moral victor."
+        }
+      ]
+    },
+    {
+      "campaignId": "umayyads",
+      "sourcePath": "docs/design/odysseys/umayyads.json",
+      "sourceSha256": "ceafcad8d3f8b61eaf180a9daee82c623c7f5acc052fef92a9a4a31add93d402",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-ledgers-of-damascus",
+          "pivotEpisodeId": "03-off-map-witness-and-relief-damascus",
+          "exitEpisodeId": "03-off-map-witness-and-relief-damascus",
+          "editorialIntent": "Administration and succession receive reports of a distant tragedy.",
+          "pressureAndRecovery": "Teach market/ledger choices, then change obligations through witness reception and relief; a short act does not require an invented battle.",
+          "distinctnessRequirement": "Karbala stays off-map; no advantage comes from choosing victims, celebrating execution or proving a succession claim."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "04-bounded-civilian-withdrawal-medina",
+          "pivotEpisodeId": "09-civilian-refuge-and-property-records-mecca",
+          "exitEpisodeId": "03-the-western-shore",
+          "editorialIntent": "Repeated civil conflict changes property, authority, monument works and exchange.",
+          "pressureAndRecovery": "Differentiate 683 relief from 692 property recovery. Mint reconciliation and a western harbour add other constraints.",
+          "distinctnessRequirement": "The two Meccan sieges cannot repeat phases/enemy composition; works, mint and accounts are not conversion objectives."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "13-finite-battle-and-civilian-extraction-kufa",
+          "pivotEpisodeId": "15-finite-siege-and-trade-recovery-paykand",
+          "exitEpisodeId": "19-off-map-dispatch-and-bounded-accounts-balkh",
+          "editorialIntent": "Eastern campaigns involve contested entry, withdrawal, receipts and remote reports.",
+          "pressureAndRecovery": "Paykand siege differs from Ramitin relief and Bukhara receipts; later messages create uncertainty rather than another larger assault.",
+          "distinctnessRequirement": "Do not project a modern oasis plan, reward Nizak’s killing or turn Balkh into a map of every remote campaign."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "04-the-narrow-sea",
+          "pivotEpisodeId": "26-finite-siege-withdrawal-and-supply-constantinople",
+          "exitEpisodeId": "27-bounded-civilian-refuge-kufa",
+          "editorialIntent": "Straits/eastern routes widen the horizon before failed siege and later local revolt.",
+          "pressureAndRecovery": "Constantinople withdrawal is acute; Kufa refuge is a local consequence after an explicit time jump.",
+          "distinctnessRequirement": "Samarkand property, Khwarazm trade, Bukhara works and caravan relief need different decision structures, not one generic siege."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "28-competing-provincial-dispatches-damascus",
+          "pivotEpisodeId": "05-the-last-crossing",
+          "exitEpisodeId": "32-civilian-records-and-final-perspective-fustat",
+          "editorialIntent": "Competing seals and revolutionary networks lead to river defeat and eastern dynastic loss.",
+          "pressureAndRecovery": "Zab withdrawal peaks before record preservation and a final report; local success cannot reverse the defeat.",
+          "distinctnessRequirement": "The 750 end concerns eastern rule, not all Umayyads. Busir killing is contextual and never an assassination victory."
+        }
+      ]
+    },
+    {
+      "campaignId": "house-of-ali",
+      "sourcePath": "docs/design/odysseys/house-of-ali.json",
+      "sourceSha256": "ab16494bd49144ba3ba243e4231bdf97b1dec8fdc29dfbe1f8b6fbf1f5565a05",
+      "acts": [
+        {
+          "actId": "act-1",
+          "entryEpisodeId": "01-witness-and-transition-records-medina",
+          "pivotEpisodeId": "03-finite-battle-withdrawal-and-care-basra",
+          "exitEpisodeId": "05-off-map-dispatch-and-source-comparison-fustat",
+          "editorialIntent": "A child’s household perspective receives political news, violence and a new Kufan setting.",
+          "pressureAndRecovery": "Basra care/withdrawal is acute; workshop/household reception changes scale before a remote Egyptian report.",
+          "distinctnessRequirement": "Dina’s inheritance is not adult eyewitness memory; the Egyptian letter and Kufan workshop need different states and recipients."
+        },
+        {
+          "actId": "act-2",
+          "entryEpisodeId": "02-a-cup-at-siffin",
+          "pivotEpisodeId": "07-ceasefire-withdrawal-and-records-siffin",
+          "exitEpisodeId": "10-voluntary-household-relocation-harura",
+          "editorialIntent": "River care gives way to contested terms and households choosing to leave.",
+          "pressureAndRecovery": "Disengagement changes pressure after water/care; protocol, comparison and relocation show consequences.",
+          "distinctnessRequirement": "Separate relief, disengagement and evidence. Fictional household rescue is not a substitute for a political settlement."
+        },
+        {
+          "actId": "act-3",
+          "entryEpisodeId": "11-finite-civilian-withdrawal-and-care-nahrawan",
+          "pivotEpisodeId": "14-paired-protocol-and-negotiation-kufa",
+          "exitEpisodeId": "16-ceremony-and-record-preservation-kufa",
+          "editorialIntent": "Conflict and leadership loss precede negotiation changing who governs.",
+          "pressureAndRecovery": "Pair civilian withdrawal with later source comparison; obligations/distribution change stakes before a public-record coda.",
+          "distinctnessRequirement": "Hasan negotiation, transfer and ceremony are not three treaty deliveries or a renunciation of religious identity."
+        },
+        {
+          "actId": "act-4",
+          "entryEpisodeId": "17-returning-household-and-workshop-supply-medina",
+          "pivotEpisodeId": "23-civilian-refuge-and-record-extraction-kufa",
+          "exitEpisodeId": "23-civilian-refuge-and-record-extraction-kufa",
+          "editorialIntent": "Return and disputed memory give way to correspondence whose support is uncertain.",
+          "pressureAndRecovery": "Distinct household, departure and reply problems precede extraction after Kufan arrests.",
+          "distinctnessRequirement": "Do not conflate death reports, departure, letters and loss of support. Poisoning responsibility and private promises remain attributed."
+        },
+        {
+          "actId": "act-5",
+          "entryEpisodeId": "24-finite-caravan-consignments-mecca",
+          "pivotEpisodeId": "04-the-water-that-remains",
+          "exitEpisodeId": "04-the-water-that-remains",
+          "editorialIntent": "Uncertain news closes roads before a tragedy local aid cannot reverse.",
+          "pressureAndRecovery": "Consignments, voluntary return, camp provision and messages lead to finite care/extraction with the documented outcome fixed.",
+          "distinctnessRequirement": "Three Karbala selections are not three battles. Do not save people whose death is documented or imply no survivors; fictional civilians remain distinct."
+        }
+      ]
+    }
+  ],
+  "yearBandDecisions": [
+    {
+      "campaignId": "church-of-rome",
+      "actId": "act-3",
+      "current": [
+        536,
+        596
+      ],
+      "reason": "Selection 18 includes 596–597; end of nominal band needs explicit 597 coverage or explanation.",
+      "episodeIds": [
+        "18-hospitality-and-mission-supply-kent"
+      ],
+      "owner": "architect; d00002/S5",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        536,
+        597
+      ]
+    },
+    {
+      "campaignId": "first-caliphs",
+      "actId": "act-5",
+      "current": [
+        651,
+        656
+      ],
+      "reason": "Opening Cyprus selection 27 is 649; lower band must cover its assigned opening or explain the differing scope.",
+      "episodeIds": [
+        "27-finite-coastal-expedition-and-supply-cyprus"
+      ],
+      "owner": "architect; d00002/S7",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        649,
+        656
+      ]
+    },
+    {
+      "campaignId": "first-fitna",
+      "actId": "act-3",
+      "current": [
+        657,
+        657
+      ],
+      "reason": "Opening selection 12 spans 656–657; closing selection 16 spans 657/658. Do not collapse uncertainty to preserve one-year act label.",
+      "episodeIds": [
+        "12-rival-claims-and-dispatch-comparison-damascus",
+        "16-witness-and-record-comparison-kufa"
+      ],
+      "owner": "architect; d00002/S8",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        656,
+        658
+      ]
+    },
+    {
+      "campaignId": "first-fitna",
+      "actId": "act-4",
+      "current": [
+        658,
+        660
+      ],
+      "reason": "Opening selection 17 explicitly 657/658; range needs source-qualified overlap with preceding act.",
+      "episodeIds": [
+        "17-voluntary-household-relocation-harura"
+      ],
+      "owner": "architect; d00002/S8",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        657,
+        660
+      ]
+    },
+    {
+      "campaignId": "first-fitna",
+      "actId": "act-5",
+      "current": [
+        661,
+        661
+      ],
+      "reason": "Opening selection 24 explicitly 660; act begins before nominal 661 heading.",
+      "episodeIds": [
+        "24-civilian-refuge-and-dispatch-medina"
+      ],
+      "owner": "architect; d00002/S8",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        660,
+        661
+      ]
+    },
+    {
+      "campaignId": "house-of-ali",
+      "actId": "act-1",
+      "current": [
+        656,
+        656
+      ],
+      "reason": "Last selections include 656/657; band must not remove uncertainty.",
+      "episodeIds": [
+        "01-the-kufan-hearth",
+        "05-off-map-dispatch-and-source-comparison-fustat"
+      ],
+      "owner": "architect; d00002/S10",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        656,
+        657
+      ]
+    },
+    {
+      "campaignId": "house-of-ali",
+      "actId": "act-2",
+      "current": [
+        657,
+        657
+      ],
+      "reason": "Last selections explicitly 657/658; overlaps across acts are valid when named.",
+      "episodeIds": [
+        "09-witness-and-text-comparison-kufa",
+        "10-voluntary-household-relocation-harura"
+      ],
+      "owner": "architect; d00002/S10",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        657,
+        658
+      ]
+    },
+    {
+      "campaignId": "imperial-church",
+      "actId": "act-4",
+      "current": [
+        343,
+        359
+      ],
+      "reason": "Sardica framed 343 with 342/344 alternatives. Decide whether band is nominal or includes alternatives; do not silently fix disputed chronology.",
+      "episodeIds": [
+        "20-separate-reception-logistics-sardica"
+      ],
+      "owner": "architect; d00002/S3",
+      "decision": "Correct the editorial heading to include the selected episode or qualified alternative. Applied only to act metadata; episode dates, uncertainty, identities, order and contracts are preserved. The heading is not a historical-date adjudication or gameplay clock.",
+      "appliedYearBand": [
+        342,
+        359
+      ]
+    }
+  ],
+  "baseRevision": "62a19aeea0bcb552d665c19df2d0292baa6eee7b",
+  "reviewedOn": "2026-10-24"
+}

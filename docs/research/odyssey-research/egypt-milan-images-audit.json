@@ -1,0 +1,139 @@
+{
+  "scope": "Read-only search for visual reference candidates for Oxyrhynchus/El-Bahnasa and Roman Mediolanum. File pages and stated licenses inspected; no image downloaded. These are candidates for architectural review, not approved production assets.",
+  "candidates": [
+    {
+      "place": "Oxyrhynchus / El-Bahnasa",
+      "asset": "Karte Oxyrhynchos.png (locator map of ancient Oxyrhynchus in Egypt)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Karte_Oxyrhynchos.png",
+      "author": "NordNordWest; source credited as earlier Oxyrhynchos map.gif by Yomangani",
+      "date": "2017-03-16",
+      "license": "Public domain uploader dedication (PD-self); not identified as CC0",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Karte_Oxyrhynchos.png",
+      "sourceInspected": "Commons summary, authorship/source, and public-domain license sections read directly.",
+      "visualScope": "Small locator map only; locates Oxyrhynchus in Egypt, not ancient street plan or local terrain.",
+      "phaseAndAnachronism": "Modern orientation map, not an archaeological plan or period city image. Use only as geographic locator, and do not style it as a 3rd-century reconstruction.",
+      "status": "license explicit; low-resolution locator reference only; productionApproved:false"
+    },
+    {
+      "place": "Oxyrhynchus / El-Bahnasa",
+      "asset": "Osireion Oxyrhynchus.jpg (gallery of the subterranean Osireion)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Osireion_Oxyrhynchus.jpg",
+      "author": "Bombaladan",
+      "date": "2012 photo; Commons upload 2014-05-19",
+      "license": "CC BY-SA 3.0 Unported; attribution and share-alike required",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceInspected": "Commons image page inspected: author, own-work claim, dimensions, exact license. For monument phase, Oxyrhynchus Archaeological Mission page was directly opened: it says inscriptions date rites from Ptolemy VI to Ptolemy X/Cleopatra III (second half of 2nd c. BCE), says Per-Khef existed in Saite period and was restored under early Ptolemies; the wall page says surviving underground fabric is basically Ptolemaic. UB thesis record title bounds ritual study c. 7th century BCE–2nd century CE.",
+      "phaseSources": [
+        "https://www.oxirrinc.com/en/el-yacimiento/osireion/",
+        "https://diposit.ub.edu/items/732de01f-2e21-4706-803f-e5d4dec75173"
+      ],
+      "visualScope": "Actual excavated underground Osireion gallery, not a panorama of the Roman-period city.",
+      "phaseAndAnachronism": "Primarily Ptolemaic monument (surviving subterranean fabric), with use/ritual chronology extending into Roman period in the cited study. It can serve as a specifically labelled cult-site reference only; it must not stand for ordinary 250 CE streets, a Christian church, or the city center. Site page is mission material; phase claim is summarized there, not independent stratigraphic report read in full.",
+      "status": "license explicit; archaeological monument candidate with strong phase caveat; productionApproved:false"
+    },
+    {
+      "place": "Oxyrhynchus / El-Bahnasa",
+      "asset": "UCL Digital Egypt plan of Oxyrhynchus following Petrie / Greenfield and Hunt",
+      "sourcePage": "https://www.ucl.ac.uk/museums-static/digitalegypt/oxyrhynchus/plan.html",
+      "author": "Historical plan by Petrie, with orientation corrections according to Greenfield and Hunt; UCL page presents it",
+      "date": "Underlying excavation plans published in 1925; institutional web page © UCL 2003",
+      "license": "No open license identified; page states © University College London, all rights reserved",
+      "licenseUrl": "https://www.ucl.ac.uk/museums-static/digitalegypt/oxyrhynchus/plan.html",
+      "sourceInspected": "The page text and copyright line read. It says the plan follows Petrie 1925 pl. XXXIX and includes orientation corrections from Greenfield and Hunt.",
+      "visualScope": "Potentially useful site plan depicting theatre, colonnade and broader site; not itself a modern free-use file.",
+      "phaseAndAnachronism": "Plan is a composite of early 20th-century survey interpretations, not a dated single-phase plan. UCL notes orientation correction; elsewhere on the site it cautions that the colonnade's function remains uncertain and that ‘temple’ on the early draft was actually Petrie's theatre. No reuse without separate permission or a demonstrably public-domain scan/source.",
+      "status": "not a reusable open-license candidate; excluded pending rights evidence; productionApproved:false"
+    },
+    {
+      "place": "Mediolanum / Milan",
+      "asset": "Mediolanum Romana.svg (schematic map of Roman Milan)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mediolanum_Romana.svg",
+      "author": "Original: Cristiano64; vectorization: MacMoreno; current file amended by Arrow303",
+      "date": "Original file 2018-07-27; current revision 2024-02-10",
+      "license": "Dual license: CC BY-SA 3.0 Unported or GFDL 1.2+ (page says user may choose); attribution/share-alike conditions apply under CC option",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ ; http://www.gnu.org/copyleft/fdl.html",
+      "sourceInspected": "Commons summary/history and exact licensing section inspected. Page describes features and period as 3rd–5th centuries CE: walls/gates, forum, theater, amphitheater, circus, imperial-palace area, mint, baths, mausoleum, portico road, horrea, river port, early Christian basilicas.",
+      "visualScope": "Retrospective schematic ancient-city layout superimposed/organized as a city plan; includes structures of multiple centuries.",
+      "phaseAndAnachronism": "Time span III–V c. combines different building phases, so it is not a verified 313 snapshot. In particular do not assume every labeled basilica or imperial complex existed at the episode date, or use shown outlines as excavation-grade coordinates. This is a community-created map with no archaeological bibliography apparent in the consulted page; useful as a lead/reference only. Not a cathedral photo.",
+      "status": "license explicit; secondary schematic requiring phase validation; productionApproved:false"
+    },
+    {
+      "place": "Mediolanum / Milan",
+      "asset": "Basamento circo.jpg (surviving remains of Roman circus)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Basamento_circo.jpg",
+      "author": "Zanner",
+      "date": "Photo summer 2007; upload 2008-01-03",
+      "license": "Public domain uploader dedication (PD-self); not identified as CC0",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Basamento_circo.jpg",
+      "sourceInspected": "Commons page inspected for description, author, original date, file dimensions, and public-domain grant.",
+      "visualScope": "Modern photograph of surviving archaeological remains / base associated with the Roman circus, not a period reconstruction.",
+      "phaseAndAnachronism": "Photograph shows a surviving, much-altered fragment in present-day Milan; no precise construction or exposure date for the photographed masonry is established by the file page. Can be a material reference, not a 4th-century intact circus reconstruction or exact phase claim.",
+      "status": "license explicit; archaeological-remains photo candidate; productionApproved:false"
+    },
+    {
+      "place": "Mediolanum / Milan",
+      "asset": "Torre della cinta muraria di Mediolanum.jpg (Roman wall tower preserved within Archaeological Museum)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Torre_della_cinta_muraria_di_Mediolanum.jpg",
+      "author": "Ugodiamante",
+      "date": "Photo 2015-08-03; upload 2018-09-28",
+      "license": "CC BY-SA 4.0 International; attribution and share-alike required",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceInspected": "Commons file page directly inspected for monument description, creator/date, coordinates of photo, and license.",
+      "visualScope": "Photo of a standing remnant/tower of the Roman wall at the Civic Archaeological Museum; contemporary museum context visible/implicit.",
+      "phaseAndAnachronism": "The image is a modern museum-preserved remnant, not a reconstructed intact wall or an exact street-level view of 313 Milan. Page does not provide the wall/tower's precise construction date or phase; avoid treating whole fortification as a unitary construction episode.",
+      "status": "license explicit; archaeological-remains candidate; productionApproved:false"
+    },
+    {
+      "place": "Mediolanum / Milan",
+      "asset": "Rovine dell'Anfiteatro romano.JPG (amphitheatre park foundations)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rovine_dell'Anfiteatro_romano.JPG",
+      "author": "Pierangelo66",
+      "date": "Photo 2012-09-29",
+      "license": "Commons page grants CC BY-SA 3.0 but also states separate Italian cultural-heritage authorization is required for reuse beyond personal use/study, especially commercial reuse",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ ; Italian Code of Cultural Heritage disclaimer is on file page",
+      "sourceInspected": "Commons file page inspected, including author/date, exact CC license and Italian MiBAC/Codice Urbani additional-authorization disclaimer.",
+      "visualScope": "Modern archaeological park with scant foundations of the amphitheatre; Commons category description says most building stone was reused/demolished in antiquity.",
+      "phaseAndAnachronism": "Clearly not a view of an intact ancient amphitheatre; source says only short foundation row survives and demolition/reuse occurred during antiquity. Despite the CC license, additional heritage authorization disclaimer makes it a poor candidate for distribution without permission. Do not use as 313 architecture reconstruction.",
+      "status": "not recommended without additional authorization; productionApproved:false"
+    },
+    {
+      "place": "Mediolanum / Milan",
+      "asset": "The Ancient Urban Form of Mediolanum Superimposed Over Milan.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Ancient_Urban_Form_of_Mediolanum_Superimposed_Over_Milan.png",
+      "author": "Kdonavin",
+      "date": "2026-09-15",
+      "license": "CC0 1.0 Universal Public Domain Dedication",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceInspected": "Commons page inspected for author, date, explicit CC0 dedication and caption.",
+      "visualScope": "Map placing ancient urban form over a modern Milan base.",
+      "phaseAndAnachronism": "Very recent user-created work, not institutional archaeology; consulted page supplies no bibliography or method for boundaries/features. Useful only to orient further research, not as factual layout or a chronology. Production caution especially high notwithstanding open license.",
+      "status": "license explicit; unvalidated secondary map; not recommended as authoritative reference; productionApproved:false"
+    }
+  ],
+  "institutionalCrossChecks": [
+    {
+      "url": "https://oxyrhynchus.web.ox.ac.uk/site-excavations-and-finds",
+      "consultedScope": "Oxford Oxyrhynchus Papyri site page read for survey plans, ancient theatre/colonnade, Bahr Yussuf, modern/islamic features; page explicitly says the Bahr Yussuf is a natural Nile branch, distinguishes late 9th/15th/18th-century monuments, and notes uncertain function of colonnade. Page copyright does not grant open reuse for displayed photos/plans."
+    },
+    {
+      "url": "https://www.oxirrinc.com/en/el-yacimiento/osireion/",
+      "consultedScope": "Osireion and wall pages directly read. Mission dates textual attestation to Saite period and restoration under early Ptolemies; wall page dates surviving subterranean part broadly to Ptolemaic."
+    },
+    {
+      "url": "https://diposit.ub.edu/items/732de01f-2e21-4706-803f-e5d4dec75173",
+      "consultedScope": "University of Barcelona thesis record: title bounds study of Osireion rituals to c. 7th century BCE–2nd century CE; abstract/record only."
+    },
+    {
+      "url": "https://www.museoarcheologicomilano.it/scopri-il-museo/percorsi-di-visita/sezione-romana",
+      "consultedScope": "Museum of Milan page search excerpt describes Roman museum content (including mosaics from domus); direct opening returned 403, so not considered fully read."
+    }
+  ],
+  "generalNotes": [
+    "No candidate is approved for production; architects should inspect crops/context and ensure chosen asset fits the episode year.",
+    "A modern photo of an ancient site documents present remains, not necessarily the ancient phase; the mapping and phase limitations above are material.",
+    "Milan cathedral photographs were not selected or used.",
+    "No image files were downloaded."
+  ],
+  "collectionAgent": "gpt-6-luna",
+  "architectApproval": false
+}

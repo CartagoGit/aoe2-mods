@@ -1,0 +1,106 @@
+{
+  "campaignId": "church-of-rome",
+  "scope": "Read-only archaeological/institutional geography notes for missing profiles cherson, saint-denis, paderborn; no footprint, bbox, or asset reuse authorization",
+  "locations": [
+    {
+      "profileId": "cherson",
+      "resolvedPlace": "Tauric Chersonesos / Chersonesus, ancient city on the Heraclean Peninsula within present-day Sevastopol, southwestern Crimea. This is not modern Kherson city.",
+      "publishedReferencePoint": {
+        "coordinatesAsPublished": "N 44° 36′ 39.00″, E 33° 29′ 29.00″",
+        "sourceUrl": "https://whc.unesco.org/en/list/1411/maps/",
+        "locator": "UNESCO World Heritage Centre, component 1411-001 Ancient city of Tauric Chersonese; property 42.8106 ha, buffer 207.22 ha",
+        "note": "These are UNESCO's listed point coordinates for the property, not an episode gameplay center or an ancient shoreline coordinate. No conversion or additional coordinate inferred. UNESCO lists State Party Ukraine; its current page records the property as in danger since 2026."
+      },
+      "terrainWaterAccess": [
+        {
+          "claim": "The ancient city occupies a large promontory between Karantinnaya (Quarantine) and Pesochnaya (Sandy) bays, within Sevastopol.",
+          "sourceUrl": "https://discovering.chersonesos.org/en/reports/ancient-city-of-chersonesos/",
+          "locator": "Archaeological site report, opening paragraph",
+          "consulted": "Institutional archaeological portal search result read; direct open failed with HTTP 502.",
+          "limit": "Promontory and bays are supported, but this access path does not establish the shoreline or harbor geometry in the 7th century CE."
+        },
+        {
+          "claim": "Excavated remains include defensive walls/towers, churches, public spaces including a theatre, water reservoir and baths; the town plan is orthogonal, with parallel/perpendicular streets.",
+          "sourceUrl": "https://discovering.chersonesos.org/en/reports/ancient-city-of-chersonesos/",
+          "locator": "Opening overview, site extent and excavation results",
+          "consulted": "Search result read; direct open failed (502). Cross-check: https://whc.unesco.org/en/list/1411 overview says orthogonal grid and phases 5th c BCE–13th c CE.",
+          "limit": "This is a multi-century urban plan, not proof that every feature or street remained intact/active at Martin I's exile in 655."
+        }
+      ],
+      "episodePeriodCautions": "Episode 21 places Martin I's exile/death in 655–656. UNESCO's broad site record spans from Greek foundation in the 5th c BCE through 13th c CE and inventories Greek/Roman/Byzantine/medieval layers. Do not copy Greek-period orthogonal street layout, a generic city wall, a specific harbor, or later medieval/church remains into a 655 scene without phase-specific excavation evidence. Name this place as Cherson/Chersonesos, not Kherson. Modern occupation and jurisdiction of Crimea are politically contested; UNESCO identifies the property with Ukraine and records danger status.",
+      "mapsMediaLicensing": "UNESCO maps and State Party nomination files are published for transparency/access, but the consulted page provides no blanket reuse license. The archaeological portal includes media and imagery; image credits/license not checked. No maps or images downloaded."
+    },
+    {
+      "profileId": "saint-denis",
+      "resolvedPlace": "Royal abbey/church of Saint-Denis in the historic town of Saint-Denis, north of Paris, Île-de-France, France; not Saint-Denis on Réunion.",
+      "publishedReferencePoint": {
+        "coordinatesAsPublished": "Latitude 48.9355, longitude 2.35986",
+        "sourceUrl": "https://www.monuments-nationaux.fr/content/download/9888779/file_fr/CP%20POLARIS_SSE.pdf?inLanguage=fre-FR&version=1",
+        "locator": "Centre des monuments nationaux press information, visitor access/contact section, printed GPS coordinates for Basilique Saint-Denis",
+        "note": "Official visitor-site reference point only; not an excavated medieval perimeter. The French culture heritage record independently identifies the address as 1 rue de la Légion d'Honneur and cadastral parcel 2015 AM 1: https://pop.culture.gouv.fr/notice/merimee/PA00079952."
+      },
+      "terrainWaterAccess": [
+        {
+          "claim": "The official archaeology portal presents the abbey in relation to the medieval town, its walls, markets, roads/territory interventions and river-based trades of the Croult.",
+          "sourceUrl": "https://archeologie.culture.gouv.fr/saint-denis/en",
+          "locator": "Sections listed: 'From the royal abbey to the castellum', 'The town within its walls', 'The Croult and river-based trades', 'Archaeological interventions within the town's limits'; interactive map embed 3956",
+          "consulted": "Page opened and section labels/map embed inspected; individual map layers and all chapters not opened in this audit.",
+          "limit": "These labels establish relevant evidence pathways, not the precise 799 approach road or navigability/riverbank shape at that date."
+        },
+        {
+          "claim": "Excavation research follows cemetery/burial phases around the basilica; the current basilica sits over an earlier cemetery and the building complex evolved across many centuries.",
+          "sourceUrl": "https://patrimoine.seinesaintdenis.fr/Au-coeur-de-l-histoire-de-la-basilique-Saint-Denis",
+          "locator": "Departmental archaeology article, opening paragraphs on preventive excavation and funerary development",
+          "consulted": "Institutional page search-result passage read; it describes recent excavation campaign and long chronology.",
+          "limit": "Burials and present church footprint do not define a 799 civic map or exact procession route."
+        }
+      ],
+      "episodePeriodCautions": "Episode 26 uses Saint-Denis as a local focus in 754, but the historic annalistic claim concerns Stephen's crossing and anointing; no consulted source places the crossing or anointing at Saint-Denis. Episode 31's Paderborn scene is a different geography. The present Gothic basilica's main campaigns are 12th–13th c (French Ministry notice), centuries after 754/799. The archaeology portal's long-term map and town boundaries combine phases; don't transpose modern streets, canal or present abbey complex into the 8th century. The burial/cult origin is a reported tradition and archaeological cemetery site, not proof of all hagiographic details.",
+      "mapsMediaLicensing": "The Ministry archaeology portal provides an interactive intervention map and credits imagery (e.g. © Monum, © J. Mangin/UASD); no blanket license was seen. Atlas records identify specific image credits, often Department of Seine-Saint-Denis or Musée d'art et d'histoire; those are not public-domain declarations. CMN PDF gives coordinates but no asset reuse license was established. No files downloaded."
+    },
+    {
+      "profileId": "paderborn",
+      "resolvedPlace": "Paderborn, Westphalia, Germany; episode 31's court/refuge scene refers to Charlemagne's 799 stay at Paderborn, not the 8th-century palace as a fully preserved modern building.",
+      "publishedReferencePoint": {
+        "coordinatesAsPublished": null,
+        "publishedAddress": "LWL-Museum in der Kaiserpfalz, Am Ikenberg, 33098 Paderborn",
+        "sourceUrl": "https://www.lwl-kaiserpfalz-paderborn.de/de/kontakt/",
+        "locator": "LWL museum official contact page, address section",
+        "note": "The institutional pages consulted publish an address and a map link but no numeric latitude/longitude. No coordinates inferred or reverse-geocoded for this audit. The named address identifies the museum near the cathedral, not a verified 799 royal-camp point."
+      },
+      "terrainWaterAccess": [
+        {
+          "claim": "Paderborn occupies a transition between the North German Plain/Westphalian Bight and the Paderborn plateau; the city source describes an abrupt terrain break and upper/lower town, with Pader springs near the cathedral and streams draining toward Pader and Lippe.",
+          "sourceUrl": "https://www.paderborn.de/rathaus-service/stadtportrait/109010100000056019.php",
+          "locator": "City of Paderborn, 'Allgemeines', paragraphs on natural regions, city-center terrain break, Pader springs and drainage",
+          "consulted": "Institutional municipal page opened; searchable text excerpt read.",
+          "limit": "Modern broad geomorphology is useful orientation, not 8th-century elevation/land-cover data."
+        },
+        {
+          "claim": "Karolingian palace remains lie north of the cathedral and were archaeologically found in 1964; a late-8th-century palace is distinguished from a much better-preserved 11th-century Ottonian/Salic palace.",
+          "sourceUrl": "https://www.lwl-kaiserpfalz-paderborn.de/de/museum/",
+          "locator": "LWL Museum, museum overview; lines on discovery north of Dom and 8th/11th c phases",
+          "consulted": "Page opened; stated distinction read.",
+          "limit": "The museum reconstruction is not an 8th-century complete plan. Do not treat the later palace's standing walls/footprint as Charlemagne's court."
+        },
+        {
+          "claim": "The Pader springs emerge from karstified subsurface of the Paderborn plateau; historical hydrology says the spring basin remained wet/swampy and largely unenclosed until late 12th c, with much settlement above it; the Pader was substantially straightened late medieval to raise water level and aid navigation.",
+          "sourceUrl": "https://www.paderborn.de/microsite/gewaesser/baeche_und_fluesse/pader.php",
+          "locator": "City waterway page, section 'Historische Entwicklung der Pader' and karst explanation",
+          "consulted": "Page opened; groundwater emergence and historical development text checked.",
+          "limit": "The medieval and modern channel course is modified; don't copy the modern straightened watercourse or later towpath/navigation into 799."
+        }
+      ],
+      "episodePeriodCautions": "For 799, source texts support Charlemagne receiving Leo at Paderborn, but do not pin the meeting to the excavation footprint of the palace or an exact church/courtyard. The municipal visitor account's Karlsburg fortification/town bounds concern 776 and are explicitly based on modern street names; useful only as a source lead, not a ready polygon. The royal palace is late 8th c; distinguish the archaeological palace from the 11th–12th c Ottonian/Salic palace reconstructed as museum. Present-day spring basins, engineered channels, bridge paths and topography include modern interventions. No exact route or water crossing in 799 is established here.",
+      "mapsMediaLicensing": "LWL and city pages link maps/media and carry photographer/municipal credits; no general reuse license was identified. No map or image downloaded. Numeric coordinates were not supplied by the consulted archaeological/municipal sources, so none are included."
+    }
+  ],
+  "crossLocationLimits": [
+    "These are place-identification and source notes, not approval of any map footprint, episode boundary, travel route, or gameplay bbox.",
+    "Modern map/GPS points mark a current monument or UNESCO property reference, never exact ancient coordinates or a reliable time-slice border.",
+    "Search excerpts are labelled as such; direct page consultation failures are stated rather than treated as successful full reading."
+  ],
+  "collector": "gpt-6-luna",
+  "collectionDate": "2026-10-13",
+  "architectApproval": false
+}
