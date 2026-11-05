@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-10-13",
+  "scope": "Geography of Corinth, Cenchreae and Ephesus in the first century CE; source audit for faith-origins episodes 9-15. No repository files changed.",
+  "records": [
+    {
+      "recordId": "geography-corinth",
+      "recordType": "place-geography",
+      "place": "Corinth / Roman Corinth",
+      "urls": [
+        "https://www.ascsa.org/excavations/ancient-corinth/about-the-excavations-1",
+        "https://lechaion.org/our-excavations/",
+        "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:18/"
+      ],
+      "passagesActuallyRead": [
+        "ASCSA About the Excavations: description of Corinth's isthmian position and access to Corinthian and Saronic gulfs; excavations around Temple of Apollo and wider Corinthia.",
+        "Lechaion Harbor Project, Our Excavations, lines 7-9, 19, 30: current archaeological project scope; first-century BCE stoa and Augustan/Neronian-Flavian civic basilica at Lechaion.",
+        "Acts 18:1-8: narrative says Paul came from Athens to Corinth, lodged/worked with Aquila and Priscilla, and taught in the city."
+      ],
+      "claimENes": "Corinth was an isthmian Roman colony with access to both gulfs; excavation distinguishes the urban center from its separate harbors, including western Lechaion. / Corinto era una colonia romana en el istmo con acceso a ambos golfos; la arqueología distingue el centro urbano de sus puertos separados, incluido Lequeo al oeste.",
+      "limits": "These sources establish broad geography and archaeological phases, not a street-level reconstruction of the city in 50-58 CE. Do not place an Acts scene at a specific excavated house or basilica without a matching first-century date. The modern village of Old Corinth overlies part of the ancient city. No consulted archaeological source supplied WGS84 coordinates for the episode locations; coordinates deliberately omitted.",
+      "accessAndLicensing": "ASCSA and Lechaion project pages were opened and read; Lechaion page includes embedded images but no image authorship/license was checked, so do not reuse its images. ASCSA current-excavation page returned HTTP 502; its About page was consulted instead.",
+      "coordinates": null,
+      "status": "consulted-geographic-context; no site coordinate supplied"
+    },
+    {
+      "recordId": "geography-cenchreae",
+      "recordType": "place-geography",
+      "place": "Cenchreae / Kenchreai, Corinth's eastern harbor",
+      "urls": [
+        "https://www.kenchreai.org/",
+        "https://www.ascsa.edu.gr/index.php/news/newsDetails/report-on-kenchreai-2012",
+        "https://www.ascsa.edu.gr/publications/hesperia/article/76/1/143-181",
+        "https://korinthos.gr/en/ancient-port-of-kechreon/",
+        "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:18/",
+        "https://www.biblegateway.com/passage/?search=Romans+16%3A1-2&version=NRSVUE"
+      ],
+      "passagesActuallyRead": [
+        "American Excavations at Kenchreai, overview: calls it Corinth's eastern port on the Saronic Gulf; fieldwork began 1962 and covers Early Roman to Early Byzantine settlement.",
+        "ASCSA 2012 excavation report: describes Roman-era harbor-town finds and cemetery dating from mid-first to later centuries CE.",
+        "Corinth municipality, Ancient Port of Kechreon, lines 45-58: harbor and archaeological remains; this is a municipal heritage summary, not a stratigraphic report.",
+        "Acts 18:18: Paul sails from Cenchreae and has his hair cut there according to the narrative.",
+        "Romans 16:1-2: Phoebe is commended as a minister/deacon of the church at Cenchreae and as a benefactor; translation footnote renders Greek diakonos as 'minister'."
+      ],
+      "claimENes": "Cenchreae was a named Corinthian harbor and Romans associates Phoebe with its local assembly; Acts places Paul's departure there in its travel narrative. / Céncreas era un puerto de Corinto y Romanos vincula a Febe con su comunidad; Hechos sitúa allí la partida de Pablo en su relato de viaje.",
+      "limits": "Neither Romans 16 nor Acts 18 documents the exact location of a first-century meeting place or the harbor's first-century shoreline. Present the site as the ancient harbor area, not a precise reconstructed pier. Do not infer that Romans was composed in Cenchreae because Phoebe belonged to that assembly. No consulted source supplied WGS84 coordinates for the ancient harbor; coordinates omitted.",
+      "accessAndLicensing": "Kenchreai/ASCSA and municipal page opened; academic Hesperia abstract was available in search and consulted at abstract level only, not full article. The municipal page embeds images but does not disclose their licenses in the passage checked; do not reuse. No image file selected for use.",
+      "coordinates": null,
+      "status": "consulted-geographic-context; no site coordinate supplied"
+    },
+    {
+      "recordId": "geography-ephesus",
+      "recordType": "place-geography",
+      "place": "Ephesus, Roman harbor city in the Kaystros estuary",
+      "urls": [
+        "https://whc.unesco.org/en/list/1018/",
+        "https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE"
+      ],
+      "passagesActuallyRead": [
+        "UNESCO World Heritage Centre, Ephesus, lines 48-56: Roman-period monuments, harbor basin and sea channel along the Kaystros, successive coastline shifts and relocation of city/harbors.",
+        "1 Corinthians 16:5-9: Paul says he intends to remain in Ephesus until Pentecost; this is direct letter evidence for the author's claimed location at the time of writing."
+      ],
+      "claimENes": "Ephesus was a Roman harbor city whose shoreline and harbor basins shifted through sedimentation; 1 Corinthians explicitly places its author in Ephesus when he writes the travel plan in 16:8. / Éfeso era una ciudad portuaria romana cuyo litoral y cuencas cambiaron por sedimentación; 1 Corintios sitúa explícitamente al autor en Éfeso cuando escribe el plan de viaje de 16:8.",
+      "limits": "The UNESCO overview concerns the long-lived site, not a first-century street plan; its modern visitor map cannot be treated as an ancient harbor map. The letter supports the writer's stated location, not the precise date or circumstances of composition. No WGS84 coordinates for a first-century building or harbor feature were supplied by the consulted passages; coordinates omitted.",
+      "accessAndLicensing": "UNESCO page text was read; page states description available under CC BY-SA IGO 3.0 in search result metadata, but this does not license every embedded image or nomination-map asset. No image file selected or reused.",
+      "coordinates": null,
+      "status": "consulted-geographic-context; no ancient-site coordinate supplied"
+    },
+    {
+      "order": 9,
+      "episodeId": "09-district-production-corinth",
+      "consultedUrl": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:18/",
+      "additionalUrls": [
+        "https://www.capstonebible.com/site/gallio-inscription-delphi",
+        "https://www.ascsa.org/excavations/ancient-corinth/about-the-excavations-1"
+      ],
+      "passagesActuallyRead": "Acts 18:1-18: Paul arrives from Athens in Corinth; meets Aquila and Priscilla, shares their tentmaking trade, teaches, appears before Gallio, and later departs through Cenchreae. Gallio inscription article: inscription's Claudian titles imply a date circa Jan 51-Aug 52; Gallio's proconsulship and Paul's hearing are successive inferences, not a date written on the stone.",
+      "claimENes": "Acts narrates Paul's residence and work in Corinth with Aquila and Priscilla, and names Gallio as proconsul of Achaia during the hearing. The Delphi inscription independently names Gallio as proconsul and helps anchor the episode broadly around 50-52 CE. / Hechos narra la estancia y el trabajo de Pablo en Corinto con Aquila y Priscila y nombra a Galión como procónsul de Acaya durante la audiencia. La inscripción de Delfos nombra a Galión como procónsul y ayuda a situar el episodio, de forma amplia, hacia 50-52 d. C.",
+      "limitations": "Acts is a later narrative, not an employment or court record; its portrayal should be attributed to Acts. The inscription does not mention Paul; dating his Corinthian stay depends on combining Acts with the inscription and debated reconstructions. The consulted scholarly-facing page explicitly warns against false precision. Candidate date c. 50-52 is a broad reconstruction, not an exact dated event.",
+      "placeAndCompositionLimits": "Corinth is explicit in Acts 18:1. The inscription was found at Delphi, not Corinth. Composition location for Acts is not established by these sources. Corinth's modern excavation footprint does not identify Paul's house or workshop.",
+      "coordinates": {
+        "value": [
+          38.4824,
+          22.5013
+        ],
+        "meaning": "Delphi Archaeological Museum, modern display location of the Gallio inscription, as explicitly stated by Capstone Bible; NOT an ancient Corinth or original inscription findspot coordinate.",
+        "sourceUrl": "https://www.capstonebible.com/site/gallio-inscription-delphi"
+      },
+      "imageLicenseCheck": {
+        "file": "https://commons.wikimedia.org/wiki/File:Delphes_Gallion.jpg",
+        "author": "Gérard (Wikimedia username Gérard)",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Delphes_Gallion.jpg",
+        "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Delphes_Gallion.jpg",
+        "access": "Commons file page directly opened; author, own-work description and license checked. Image not downloaded or reused.",
+        "possibleUseAndCaution": "Photograph of an inscription fragment now displayed at Delphi Archaeological Museum. It can illustrate the physical inscription only; it is not an image of Corinth, Gallio's court, Paul, or a first-century scene. Attribution and share-alike terms apply; mark edits if adapted."
+      },
+      "status": "consulted; chronology broad/inferential"
+    },
+    {
+      "order": 10,
+      "episodeId": "10-copy-and-relay-corinth",
+      "consultedUrl": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1%3A1&version=WEB",
+      "additionalUrls": [
+        "https://www.biblegateway.com/passage/?search=1+Thessalonians+3&version=NRSVUE",
+        "https://www.beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:18/",
+        "https://academic.oup.com/book/3544"
+      ],
+      "passagesActuallyRead": "1 Thessalonians 1:1 (WEB) names Paul, Silvanus and Timothy; the NRSVUE 3:1-6 search result gives the sequence: Timothy sent from Athens and then returned with news. Acts 18:5 narrates Silas and Timothy coming from Macedonia to Paul at Corinth. The NRSVUE result was visible in a search excerpt, not opened as a full page. Oxford book reference was only available/consulted as abstract, not the book text.",
+      "claimENes": "The letter's opening names Paul, Silvanus and Timothy; its internal sequence reports Timothy's return with news from Thessalonica. Acts narrates Silas and Timothy rejoining Paul at Corinth, supporting—but not proving—the common Corinth composition reconstruction. / El saludo nombra a Pablo, Silvano y Timoteo; el propio texto informa del regreso de Timoteo con noticias de Tesalónica. Hechos narra que Silas y Timoteo se reunieron con Pablo en Corinto, lo que apoya —sin demostrar— la reconstrucción habitual de una composición desde Corinto.",
+      "limitations": "The letter does not name its place of composition. A common date around 50-51 and Corinth setting are reconstructed by correlating Acts and the letter; some ancient manuscript subscriptions place it in Athens. 'One of the earliest surviving Christian texts' is a scholarly relative dating, not a self-description; the Oxford volume was not read beyond its accessible abstract. The proposed chapter framing should describe a plausible correspondence/relay reconstruction, not a directly dated writing desk.",
+      "placeAndCompositionLimits": "Corinth is a strong conventional inference from Acts 18 and 1 Thessalonians 3, but not explicit in the epistle. No exact house, workshop, or urban quarter is located.",
+      "coordinates": null,
+      "imageLicenseCheck": "No image asset selected. BibleGateway's World English Bible passage is public domain; this concerns text, not photos or archaeology images.",
+      "status": "consulted; date and writing place inferred"
+    },
+    {
+      "order": 11,
+      "episodeId": "11-distributed-preservation-ephesus",
+      "consultedUrl": "https://hrcak.srce.hr/index.php/en/clanak/132679",
+      "additionalUrls": [
+        "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Epistle-Galatians",
+        "https://www.bibleodyssey.org/articles/galatians/",
+        "https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=NIV",
+        "https://www.biblegateway.com/verse/en/Galatians%203%3A28"
+      ],
+      "passagesActuallyRead": "Galatians 2:1-10 and 3:28 search-result passages: Paul presents a Jerusalem meeting with James, Cephas and John, a division of mission to circumcised/uncircumcised, and the formula of unity in Christ; these are Pauline self-presentation and argument. Hrčak-hosted scholarly article, lines 86-90: destination, date and place have extensive debate; author favors early/southern hypothesis and proposes Antioch after the first journey. Bible Gateway encyclopedia section “Date and place of writing” outlines alternatives. The dossier’s Bible Odyssey page was not opened.",
+      "claimENes": "Galatians itself attests Paul's polemic about law, circumcision, Gentile membership and apostolic authority; scholarly literature disagrees about recipient geography, date and place of writing. / Gálatas atestigua la polémica de Pablo sobre ley, circuncisión, pertenencia gentil y autoridad apostólica; la bibliografía discrepa sobre la geografía de los destinatarios, la fecha y el lugar de composición.",
+      "limitations": "The proposed c. 54-55 date and Ephesus writing location belong to one northern-Galatian reconstruction and are disputed. Another peer-reviewed article accessed through Hrčak favors southern Galatia and a much earlier Antioch composition; the Bible Gateway encyclopedia also lists multiple possibilities. The letter does not name its writing city. The theme description should be attributed to Paul's argument, not recast as a neutral description of Jewish practice or a settled community-wide debate.",
+      "placeAndCompositionLimits": "Galatia is a region/province whose recipient referent is disputed; Ephesus is not named as the composition place in the letter. Do not map a specific 'Galatian' town or show Paul writing at Ephesus as established fact.",
+      "coordinates": null,
+      "imageLicenseCheck": "No image selected. The dossier's Bible Odyssey page was not opened, and no image license from it has been checked.",
+      "status": "disputed; source title/date/place in dossier overstates certainty"
+    },
+    {
+      "order": 12,
+      "episodeId": "12-bounded-community-aid-ephesus",
+      "consultedUrl": "https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE",
+      "additionalUrls": [
+        "https://media.thegospelcoalition.org/wp-content/uploads/2021/12/07005651/Themelios-46-3.pdf",
+        "https://whc.unesco.org/en/list/1018/"
+      ],
+      "passagesActuallyRead": "1 Corinthians 16:5-9 directly states 'I will stay in Ephesus until Pentecost' and describes planned travel via Macedonia to Corinth. Themelios article, pp. 592-607, abstract and opening argument: majority commentary places the letter in Ephesus, but article proposes Troas; opening survey notes competing proposals. UNESCO lines 50-55 gives archaeological/historical context for Ephesus as Roman port city.",
+      "claimENes": "The letter addresses divisions, lawsuits, food, worship, gifts and collection, and explicitly says its author is in Ephesus at 16:8. / La carta trata divisiones, litigios, comida, culto, dones y colecta, y dice explícitamente en 16:8 que su autor está en Éfeso.",
+      "limitations": "Ephesus is the strong usual reconstruction, and 1 Corinthians 16:8 explicitly places the writer there, but a recent article argues for composition in Troas using itinerary evidence; exact composition setting therefore has a minority challenge. The letter's challenges do not represent every Christian group in Ephesus or Corinth. UNESCO's later monuments do not document the specific rooms, routes, or buildings used in the 50s.",
+      "placeAndCompositionLimits": "Direct evidence is the author's stated location in 1 Cor 16:8. No precise house or workshop is named. Ephesus' shifting harbor geomorphology cautions against projecting today's shoreline onto the first century.",
+      "coordinates": null,
+      "imageLicenseCheck": "UNESCO page description is CC BY-SA IGO 3.0 per page metadata, but individual photographs and map layers can have different terms; no asset was selected or downloaded.",
+      "status": "consulted; location strongly supported by letter but composition-place alternative exists"
+    },
+    {
+      "order": 13,
+      "episodeId": "13-consignment-and-correspondence-corinth",
+      "consultedUrl": "https://www.biblegateway.com/passage/?search=Romans+16%3A1-2&version=NRSVUE",
+      "additionalUrls": [
+        "https://paulineletters.com/explore/romans",
+        "https://www.sbl-site.org/assets/pdfs/pubs/060373C.front.pdf",
+        "https://www.biblegateway.com/passage/?search=Romans+15%3A25-27&version=NRSVUE"
+      ],
+      "passagesActuallyRead": "Romans 16:1-2 directly read: Phoebe is linked to the church at Cenchreae and commended to Rome. Search excerpt for Romans 15:25-27 reports Paul is going to Jerusalem with aid; Romans 16:21-23 search excerpt names Tertius, Gaius and others. Pauline Letters Romans page, sections “What the text establishes” and “Leading reconstruction,” says Corinth c.56-57 is an inference and Phoebe’s Cenchreae link does not itself prove composition place. SBL Romans front-matter excerpt only, not full book.",
+      "claimENes": "Romans presents Paul's theological argument and planned journey to Jerusalem and west; its greeting identifies Phoebe with Cenchreae and its addressees as believers in Rome. Corinth around 56-58 is a common reconstruction, not a location explicitly named in the letter. / Romanos presenta el argumento teológico y el viaje previsto de Pablo a Jerusalén y hacia occidente; el saludo vincula a Febe con Céncreas y a los destinatarios con los creyentes de Roma. Corinto hacia 56-58 es una reconstrucción frecuente, no un lugar nombrado explícitamente en la carta.",
+      "limitations": "Romans does not state its place or year of composition. Phoebe's church is at Cenchreae, but her role does not prove that she carried Romans or that Paul wrote it at that port. Pauline Letters page compares varying chronologies (55-56, 56-57, winter 57-58); the SBL item consulted was only its front-matter excerpt, not the book. Romans 16 textual history has been debated, but NRSVUE footnote states most evidence favors inclusion in the original letter.",
+      "placeAndCompositionLimits": "Cenchreae is identified as Phoebe's church; Corinth is an inference from travel/host clues, not a primary-text coordinate. Do not stage composition at Cenchreae as settled fact.",
+      "coordinates": null,
+      "imageLicenseCheck": "No image selected. SBL excerpt provides text only; no image permission or attribution assessed.",
+      "status": "consulted; place and date are reconstruction, not explicit"
+    },
+    {
+      "order": 14,
+      "episodeId": "14-administrative-intrigue-caesarea",
+      "consultedUrl": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:25/",
+      "additionalUrls": [
+        "https://www.bible.org/download/netbible/ondemand/bybook/act.pdf"
+      ],
+      "passagesActuallyRead": "Acts 25:1-12, 23-27: Festus travels from Caesarea to Jerusalem, returns to Caesarea, hears Paul's appeal to Caesar, and presents him before Agrippa and Bernice. NET Acts notes describe Caesarea as a coastal city of Palestine south of Mount Carmel; NET PDF accessed through search result excerpt only.",
+      "claimENes": "Acts narrates Paul's continued custody at Caesarea under Festus, his appeal to Caesar, and a later hearing before Agrippa II and Bernice. / Hechos narra la custodia de Pablo en Cesarea bajo Festo, su apelación al César y una audiencia posterior ante Agripa II y Berenice.",
+      "limitations": "Acts is a literary narrative written later, not a surviving Roman court transcript; describe it as what Acts reports. The episode's broad c.57-60 band is a reconstruction around Festus' tenure and Paul's sequence, not a date in chapter 25. Avoid claims about an exact courtroom, palace room, private motives, or a verified assassination plot beyond the narrative's attribution.",
+      "placeAndCompositionLimits": "Caesarea Maritima is explicit in the narrative; no exact detention-room location is specified. Composition place of Acts is not established by the consulted source.",
+      "coordinates": null,
+      "imageLicenseCheck": "No image selected. NET Bible PDF is a translation/commentary with copyright; do not reuse its maps or images without checking permissions.",
+      "status": "consulted; narrative evidence with dating limits"
+    },
+    {
+      "order": 15,
+      "episodeId": "15-evacuation-and-recovery-rome-ostia",
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/e/roman/texts/tacitus/annals/15b%2A.html",
+      "additionalUrls": [
+        "https://www.cambridge.org/core/books/cambridge-companion-to-the-age-of-nero/burning-rome-burning-christians/174BE1274DF70D5C6088BDAFC163F837"
+      ],
+      "passagesActuallyRead": "Tacitus, Annals 15.38-45, in University of Chicago's reproduction of the Loeb text: §38 describes Rome's fire; §44 (lines 59-63) says Nero assigned blame to Christians, describes punishments and says the spectacle was held in Nero's gardens/Circus. Cambridge Companion chapter search result notes Tacitus is the only ancient source linking Christians to the fire and describes uncertainty about fire cause and interpretation; full chapter is paywalled and was not read.",
+      "claimENes": "Tacitus, writing decades after the event, reports that after Rome's fire Nero punished people called Christians, with executions staged in his gardens and circus. / Tácito, que escribió décadas después del suceso, cuenta que tras el incendio de Roma Nerón castigó a personas llamadas cristianas y que hubo ejecuciones en sus jardines y circo.",
+      "limitations": "Tacitus gives a hostile senatorial account and is not contemporary to 64 CE; the source reports that Christians were blamed, not that they caused the fire. Annals 15.44 is the only ancient source linking Christians to the fire, and scholarly interpretation of the passage and its source-history is debated. Avoid presenting this as a uniform empire-wide persecution. '64 CE' is the conventional date of the fire, but the selection's 64 label compresses a sequence rather than an exact dated Christian arrest from Tacitus' text.",
+      "placeAndCompositionLimits": "Rome is explicit; Tacitus mentions the Gardens and circus but does not unambiguously identify every precise venue as a modern archaeological structure. The present Vatican/ancient-circus topography should not be imposed as a verified execution map without separate evidence.",
+      "coordinates": null,
+      "imageLicenseCheck": "No image selected. LacusCurtius page labels the reproduced Loeb text public domain but states other site images may have separate rights. Cambridge chapter access was search excerpt only; no image license assessed.",
+      "status": "consulted; event reported by later hostile source; scale/causation caveated"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:18/",
+      "title": "Acts of the Apostles 18, Perseus/Tufts, World English Bible text and Greek-text link",
+      "coverageActuallyRead": "Chapter 18 lines 39-85 and Greek display beginning; relevant narrative passages."
+    },
+    {
+      "url": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0031.tlg005.perseus-eng2:25/",
+      "title": "Acts of the Apostles 25, Perseus/Tufts",
+      "coverageActuallyRead": "Chapter 25 lines 39-80 and Greek display beginning."
+    },
+    {
+      "url": "https://www.capstonebible.com/site/gallio-inscription-delphi",
+      "title": "Gallio Inscription, Capstone Bible site record",
+      "coverageActuallyRead": "Page lines 9-18, including coordinates for modern museum, date-inference range, find history, and Commons image link; site identifies its Protestant evangelical position."
+    },
+    {
+      "url": "https://www.ascsa.org/excavations/ancient-corinth/about-the-excavations-1",
+      "title": "American School of Classical Studies at Athens, About Ancient Corinth Excavations",
+      "coverageActuallyRead": "Search result excerpt read; detailed page open failed with 502."
+    },
+    {
+      "url": "https://lechaion.org/our-excavations/",
+      "title": "Lechaion Harbor and Settlement Land Project, Our Excavations",
+      "coverageActuallyRead": "Lines 7-9 and 19-35: project scope and selected architectural phases."
+    },
+    {
+      "url": "https://www.kenchreai.org/",
+      "title": "The American Excavations at Kenchreai",
+      "coverageActuallyRead": "Search result excerpt read: Corinth's eastern port, study-period range and project background; direct open failed."
+    },
+    {
+      "url": "https://www.ascsa.edu.gr/index.php/news/newsDetails/report-on-kenchreai-2012",
+      "title": "ASCSA, Kenchreai, Eastern Port of Corinth: Discoveries from the Excavations on Koutsongila",
+      "coverageActuallyRead": "Search result excerpt read; Roman-era port-town and cemetery period summary. Direct page open failed."
+    },
+    {
+      "url": "https://www.ascsa.edu.gr/publications/hesperia/article/76/1/143-181",
+      "title": "Hesperia 76 (2007), Kenchreai Cemetery Project abstract",
+      "coverageActuallyRead": "Search result abstract only; full article not opened/read."
+    },
+    {
+      "url": "https://korinthos.gr/en/ancient-port-of-kechreon/",
+      "title": "City of Corinth, Ancient Port of Kechreon",
+      "coverageActuallyRead": "Lines 45-58, municipal summary of harbor installations, excavations and Roman-period buildings."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1018/",
+      "title": "UNESCO World Heritage Centre, Ephesus",
+      "coverageActuallyRead": "Lines 48-56: settlement shifts, Roman harbor, monuments and Christian-era sites."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1%3A1&version=WEB",
+      "title": "1 Thessalonians 1:1, World English Bible, Bible Gateway",
+      "coverageActuallyRead": "Verse 1 directly read from search result; public-domain translation."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+3&version=NASB%3BSBLGNT%3BNIV%3BKJV",
+      "title": "1 Thessalonians 3, Bible Gateway translations",
+      "coverageActuallyRead": "Search result excerpt for 3:6, Timothy returning from Thessalonica; not full chapter open."
+    },
+    {
+      "url": "https://hrcak.srce.hr/index.php/en/clanak/132679",
+      "title": "To Whom and When Was Written the Epistle to the Galatians?, Hrčak",
+      "coverageActuallyRead": "Article lines 86-90 and publication metadata; conclusion favors southern-Galatian/early Antioch hypothesis."
+    },
+    {
+      "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Epistle-Galatians",
+      "title": "Epistle to Galatians, Bible Gateway Encyclopedia of the Bible",
+      "coverageActuallyRead": "Sections on authorship, recipients, date and place, especially lines 146-160; older confessional encyclopedia, used to document competing reconstruction options, not as sole authority."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A5-9&version=NRSVUE",
+      "title": "1 Corinthians 16:5-9, NRSVUE, Bible Gateway",
+      "coverageActuallyRead": "Verses 5-9; verse 8 directly identifies Ephesus. Copyrighted translation shown under permission; no text reused beyond short reference."
+    },
+    {
+      "url": "https://media.thegospelcoalition.org/wp-content/uploads/2021/12/07005651/Themelios-46-3.pdf",
+      "title": "Daryn Graham, The Placement of Paul's Composition of 1 Corinthians in Troas: A Fresh Approach, Themelios 46.3",
+      "coverageActuallyRead": "PDF pp. 592-593 / lines 4412-4467: abstract and introductory literature review only; full paper not read."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Romans+16%3A1-2&version=NRSVUE",
+      "title": "Romans 16:1-2, NRSVUE, Bible Gateway",
+      "coverageActuallyRead": "Verses 1-2 and footnote translating diakonos as minister."
+    },
+    {
+      "url": "https://paulineletters.com/explore/romans",
+      "title": "Pauline Letters, Romans: Date, Setting & Authorship",
+      "coverageActuallyRead": "Sections 'What the text establishes', 'Leading reconstruction', alternatives and source list; secondary reconstruction, not primary source."
+    },
+    {
+      "url": "https://www.sbl-site.org/assets/pdfs/pubs/060373C.front.pdf",
+      "title": "Reading Paul's Letter to the Romans, SBL front-matter excerpt",
+      "coverageActuallyRead": "Search result excerpt only, not full book or chapter."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/e/roman/texts/tacitus/annals/15b%2A.html",
+      "title": "LacusCurtius, Tacitus Annals XV.33-47, Loeb text reproduction",
+      "coverageActuallyRead": "Sections 15.38-45, especially 15.44; page states Loeb text is public domain and details separate website-image rights."
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/cambridge-companion-to-the-age-of-nero/burning-rome-burning-christians/174BE1274DF70D5C6088BDAFC163F837",
+      "title": "Cambridge Companion to the Age of Nero, Burning Rome, Burning Christians",
+      "coverageActuallyRead": "Search excerpt only; chapter itself is paywalled and was not read."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Delphes_Gallion.jpg",
+      "title": "Wikimedia Commons, Delphes Gallion.jpg",
+      "coverageActuallyRead": "File page lines 117-142: description, author Gérard, own-work status and CC BY-SA 4.0 terms; image itself not downloaded."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+3&version=NRSVUE",
+      "title": "1 Thessalonians 3, NRSVUE, Bible Gateway",
+      "coverageActuallyRead": "Search result excerpt for 3:1-6; it directly displays the sequence sending Timothy from Athens and his subsequent return with news; not full page."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=NIV",
+      "title": "Galatians 2:1-10, NIV, Bible Gateway",
+      "coverageActuallyRead": "Search result excerpt for vv. 7-9; attribution to Pauline argument and translation is explicit; not full chapter."
+    },
+    {
+      "url": "https://www.biblegateway.com/verse/en/Galatians%203%3A28",
+      "title": "Galatians 3:28, WEB, Bible Gateway",
+      "coverageActuallyRead": "Search result verse text consulted; public-domain WEB version."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Romans+15%3A25-27&version=NRSVUE",
+      "title": "Romans 15:25-27, NRSVUE, Bible Gateway",
+      "coverageActuallyRead": "Search result excerpt/header only used to identify Paul’s stated Jerusalem aid mission; not full page."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Romans+16%3A21-23&version=KJV%3BNKJV%3BESV%3BNIV",
+      "title": "Romans 16:21-23, Bible Gateway translations",
+      "coverageActuallyRead": "Search result excerpt for Tertius’ greeting and Gaius as host; not opened as full passage."
+    }
+  ],
+  "imageAndLicenseNotes": [
+    "Only one possible image was inspected: Gérard's photograph of the Delphi Gallio inscription fragment, CC BY-SA 4.0 on its Commons file page. Attribute Gérard, link the license and indicate edits; adaptations must use CC BY-SA 4.0 or compatible terms.",
+    "UNESCO CC BY-SA IGO 3.0 applies to the page description as stated in the site's metadata, not automatically to all photographs or embedded map assets.",
+    "No images were downloaded or reused. Archaeological project and municipality pages embed images without a license verified in this audit."
+  ],
+  "architectAuditNotes": [
+    "The sources array qualifies ASCSA and Kenchreai access as search excerpts after failed opens; this takes precedence over contradictory opened/read statements in some place records.",
+    "Gallio museum coordinate is Delphi, never Corinth. Generic third-party interpretive sites are leads; canonical letters, consulted archaeological reports and official geographic descriptions control the dossier."
+  ]
+}

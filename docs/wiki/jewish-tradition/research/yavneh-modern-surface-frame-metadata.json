@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "preparedBy": "gpt-6-luna",
+  "classification": "Modern GLO-30 digital surface model crop for geographic context only; not ancient ground, a canonical geography profile, an archaeological footprint, an approved route, or a playable map.",
+  "worldPlan": {
+    "path": "../../../design/episode-plans/jewish-tradition/02-yavneh-world-plan.json",
+    "sha256": "388e2d27b707b35d73a07423c415653e02482a2620ea208ce4ee05cc03942046",
+    "mapSizeTiles": 400,
+    "mapBBoxWgs84WestSouthEastNorth": [
+      34.714,
+      31.846,
+      34.755,
+      31.884
+    ],
+    "frameProjection": "tools/map/geographic_frame.helper.py::make_frame; existing cosine-corrected longitude and north-up frame",
+    "sampleCentreExtentWgs84WestSouthEastNorth": [
+      34.70944390442437,
+      31.84372,
+      34.759556095575626,
+      31.886280000000003
+    ],
+    "paddedCellBoundsWgs84WestSouthEastNorth": [
+      34.70938110719235,
+      31.843666666666667,
+      34.759618892807644,
+      31.886333333333337
+    ],
+    "fictionalActivitySiteCandidates": 22,
+    "siteCoordinatesRemainAuthoredCandidates": true
+  },
+  "source": {
+    "product": "Copernicus DEM GLO-30 Public, COG tile N31/E034",
+    "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E034_00_DEM/Copernicus_DSM_COG_10_N31_00_E034_00_DEM.tif",
+    "accessedDate": "2026-10-27",
+    "bytes": 28960707,
+    "sha256": "d157903d3c8adb88598def6c1e40f938ecf7a366a598aa000fe45de250ea756a",
+    "httpHeadObserved": {
+      "lastModified": "Mon, 09 May 2022 14:15:01 GMT",
+      "etag": "0283b64c92086b1f44dee16f03f0b5a8",
+      "contentLength": "28960707",
+      "contentType": "image/tiff",
+      "acceptRanges": "bytes",
+      "responseDate": "Tue, 27 Oct 2026 17:41:46 GMT"
+    },
+    "dimensions": [
+      3600,
+      3600
+    ],
+    "dtype": "float32",
+    "crs": "EPSG:4326",
+    "verticalReference": "EGM2008 (EPSG:3855), metres, per Copernicus GLO-30 documentation; this source TIFF does not expose a vertical datum tag.",
+    "rasterInterpretation": "Point (AREA_OR_POINT=Point)",
+    "nodata": null,
+    "sourceTransform": [
+      0.0002777777777777778,
+      0.0,
+      33.99986111111111,
+      0.0,
+      -0.0002777777777777778,
+      32.00013888888889
+    ],
+    "outerCellBounds": [
+      33.99986111111111,
+      31.00013888888889,
+      34.99986111111111,
+      32.00013888888889
+    ],
+    "sampleCentreBounds": [
+      34.0,
+      31.00027777777778,
+      34.99972222222222,
+      32.0
+    ],
+    "acquisitionPeriod": "TanDEM-X collection 2011–2015 per Copernicus product documentation; older elevation models may fill local data gaps."
+  },
+  "sourceDocumentation": {
+    "officialProduct": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+    "awsOpenDataRegistry": "https://registry.opendata.aws/copernicus-dem/",
+    "awsReadme": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+    "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+    "licenseNoticePath": "../../../research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+    "localLicenseNoticeApplies": true
+  },
+  "crop": {
+    "path": "yavneh-modern-surface-frame-crop.tif",
+    "sourcePixelWindow": {
+      "columnOffset": 2554,
+      "rowOffset": 409,
+      "width": 182,
+      "height": 155
+    },
+    "dimensions": [
+      182,
+      155
+    ],
+    "sampleCount": 28210,
+    "outerCellBoundsWgs84WestSouthEastNorth": [
+      34.70930555555555,
+      31.843472222222225,
+      34.75986111111111,
+      31.88652777777778
+    ],
+    "affine": [
+      0.0002777777777777778,
+      0.0,
+      34.70930555555555,
+      0.0,
+      -0.0002777777777777778,
+      31.88652777777778
+    ],
+    "crs": "EPSG:4326",
+    "dtype": "float32",
+    "nodata": null,
+    "rasterInterpretation": "Point (AREA_OR_POINT=Point)",
+    "compression": "DEFLATE, floating-point predictor 3; lossless re-encoding",
+    "bytes": 91728,
+    "sha256": "de5b1ce5fb99e23a5f5b843bdd3cadea6303f208cc623e3089a60c005f588d3f",
+    "statisticsMetres": {
+      "minimum": 10.689840316772461,
+      "maximum": 57.86325454711914,
+      "mean": 30.304515464861144,
+      "p02": 19.33265354156494,
+      "p98": 47.66304138183594
+    },
+    "verification": {
+      "reopenedCropEverySourceWindowSampleExact": true,
+      "reopenedCropPreservedCrsDtypeNoDataAreaOrPointAndAffine": true,
+      "cropEnclosesFullPaddedCellBounds": true,
+      "400x400FrameSampleLocationsChecked": 160000,
+      "uniqueSourcePixelsAtFrameSampleLocations": 28055,
+      "allFrameLocationsInsideReopenedCropAndExactlyMatchSource": true
+    },
+    "modifications": "Pixel-aligned integer window crop and lossless DEFLATE re-encoding only; no resampling, reprojection, value change, filling, smoothing, interpolation, terrain derivation or data completion."
+  },
+  "preview": {
+    "path": "yavneh-modern-surface-frame-preview.png",
+    "bytes": 251246,
+    "sha256": "f498aa50b3308c8c5c665852f31281618cb07cb74608097906b78ccd2b6e9010",
+    "display": "YlOrBr scientific surface view with north up, cosine-corrected geographic aspect, P2–P98 stretch; source raster values unchanged.",
+    "overlays": "Authored bbox, full padded sample-cell bounds, and 22 fictional activity-site candidates from the pinned world plan.",
+    "notice": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+    "caption": "Modern surface including buildings, infrastructure and vegetation; not ancient bare-earth terrain, an archaeological site plan, or game-map validation."
+  },
+  "requiredNotices": {
+    "source": "© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+    "modifiedData": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+    "liability": "The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+    "endorsement": "No official endorsement by the provider, licensor or Copernicus programme is implied.",
+    "downstream": "Subsequent distribution or communication must retain the applicable licence notices and obligations; see the linked licence and local notice."
+  },
+  "modernSurfaceCaution": "Copernicus GLO-30 is a modern DSM of the top-reflective surface, including buildings, infrastructure and vegetation. It does not represent 70–80 CE terrain, bare earth, ancient parcels, historical routes, or archaeological site footprints.",
+  "routeApproved": false,
+  "nativeTerrainApproved": false,
+  "gameVerified": false,
+  "productionApproved": false,
+  "newRegisteredResearchResources": 0,
+  "processingTools": {
+    "python": "3.10.12",
+    "rasterio": "1.4.4",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  }
+}

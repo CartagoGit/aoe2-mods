@@ -1,0 +1,275 @@
+{
+  "auditDate": "2026-10-13",
+  "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+  "pageClaimsRead": {
+    "availability": "Corinth Excavations hosted GIS layers are marked free downloads; ASCSA source says Corinth material is its work and external redistributions are separately noted.",
+    "license": "Page identifies Corinth Archaeological Data and Basemaps by James Herbst as CC BY-SA 4.0; selected hosted layer XML has useLimit CC-BY-SA, metadata credit James A. Herbst, Corinth Excavations, ASCSA.",
+    "layerList": [
+      "Roman Corinth (Line)",
+      "Roman Corinth (Polygon)",
+      "Acrocorinth (Line)",
+      "City Walls (Line)",
+      "Robinson Topographic, 200m Grid (Polygon)"
+    ],
+    "caution": "Roman features span mixed phases. Do not use as a single c. 50 CE plan without feature-level filtering and archaeological verification. Do not transfer modern roads, coast/water systems, or any modern canal into an ancient map."
+  },
+  "sourceArchiveUrl": "https://dataservices.ascsa.org/uploads/general/CorinthGIS.zip",
+  "sourceArchiveBytes": 15702659,
+  "sourceArchiveSha256": null,
+  "downloads": [
+    {
+      "assetFile": "Roman_Corinth_polygon/Roman_Corinth_polygon.zip",
+      "dataset": "Roman_Corinth_polygon",
+      "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+      "sourceEndpoint": "https://dataservices.ascsa.org/uploads/general/CorinthGIS.zip",
+      "sourceArchiveBytes": 15702659,
+      "assetBytes": 1079896,
+      "assetSha256": "5bcea5f2a5d9d3036a55d3a1cee19ceac4a4e55974f7000ace082fa8ff432e1e",
+      "includedComponents": [
+        "Roman_Corinth_polygon.shp",
+        "Roman_Corinth_polygon.shx",
+        "Roman_Corinth_polygon.dbf",
+        "Roman_Corinth_polygon.prj",
+        "Roman_Corinth_polygon.cpg",
+        "Roman_Corinth_polygon.shp.xml"
+      ],
+      "author": "James A. Herbst, Corinth Excavations, ASCSA",
+      "license": "CC BY-SA 4.0 (ASCSA page gives exact version for Corinth archaeological data and basemaps)",
+      "licenseMetadata": "CC-BY-SA",
+      "metadata": {
+        "geogcsn": "GCS_WGS_1984",
+        "projcsn": "CorinthHATT_field2",
+        "SyncDate": "20260710",
+        "ModDate": "20260710",
+        "resTitle": "Roman_CorinthCRSpoly",
+        "idPurp": "GIS layer",
+        "idAbs": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+        "idCredit": "James A. Herbst, Corinth Excavations, ASCSA",
+        "useLimit": "CC-BY-SA"
+      },
+      "featureCount": 1950,
+      "shapeType": 15,
+      "bboxInSourceCRS": [
+        -171.74430000036955,
+        405.7538000000641,
+        455.3912000004202,
+        1748.780199999921
+      ],
+      "crs": "PROJCS[\"CorinthHATT_field2\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Orthographic\"],PARAMETER[\"false_easting\",1570.672],PARAMETER[\"false_northing\",777.9589999999999],PARAMETER[\"Longitude_Of_Center\",22.895095],PARAMETER[\"Latitude_Of_Center\",37.902156],UNIT[\"Meter\",1.0]]",
+      "temporalCoverage": {
+        "ChronEarly": {
+          "min": -525,
+          "max": 301
+        },
+        "ChronLate": {
+          "min": 0,
+          "max": 1802
+        },
+        "interpretation": "Per-feature chronology includes BCE/CE and a post-antique 1802 endpoint; not a snapshot for 50 CE."
+      },
+      "temporalInterpretation": "Feature-level building chronology spans Classical through Roman and later phases. Select and substantiate individual features; do not use the complete layer as an AD 50 footprint.",
+      "accessedAt": "2026-10-13",
+      "crsSummary": "Custom CorinthHATT_field2 local orthographic projection (meters), based on GCS_WGS_1984; central meridian 22.895095 E, latitude of origin 37.902156 N, false easting 1570.672 m, false northing 777.959 m. No EPSG code declared."
+    },
+    {
+      "assetFile": "Roman_Corinth_lines/Roman_Corinth_lines.zip",
+      "dataset": "Roman_Corinth_lines",
+      "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+      "sourceEndpoint": "https://dataservices.ascsa.org/uploads/general/CorinthGIS.zip",
+      "sourceArchiveBytes": 15702659,
+      "assetBytes": 3774385,
+      "assetSha256": "3d5975202b482853cb9d754cd1f3ee484038ce5db941a0a7a7c0e684ffe849c6",
+      "includedComponents": [
+        "Roman_Corinth.shp",
+        "Roman_Corinth.shx",
+        "Roman_Corinth.dbf",
+        "Roman_Corinth.prj",
+        "Roman_Corinth.cpg",
+        "Roman_Corinth.shp.xml"
+      ],
+      "author": "James A. Herbst, Corinth Excavations, ASCSA",
+      "license": "CC BY-SA 4.0 (ASCSA page gives exact version for Corinth archaeological data and basemaps)",
+      "licenseMetadata": "CC-BY-SA",
+      "metadata": {
+        "geogcsn": "GCS_WGS_1984",
+        "projcsn": "CorinthHATT_field2",
+        "SyncDate": "20260710",
+        "ModDate": "20260710",
+        "resTitle": "Roman_CorinthCRSline",
+        "idPurp": "GIS layer",
+        "idAbs": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+        "idCredit": "James A. Herbst, Corinth Excavations, ASCSA",
+        "useLimit": "CC-BY-SA"
+      },
+      "featureCount": 8628,
+      "shapeType": 13,
+      "bboxInSourceCRS": [
+        -4620.436499999836,
+        -7927.468500000425,
+        1890.3943999996409,
+        4373.321600000374
+      ],
+      "crs": "PROJCS[\"CorinthHATT_field2\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Orthographic\"],PARAMETER[\"false_easting\",1570.672],PARAMETER[\"false_northing\",777.9589999999999],PARAMETER[\"Longitude_Of_Center\",22.895095],PARAMETER[\"Latitude_Of_Center\",37.902156],UNIT[\"Meter\",1.0]]",
+      "temporalCoverage": {
+        "Building_1": {
+          "min": -525,
+          "max": 1896
+        },
+        "Building_2": {
+          "min": 77,
+          "max": 1927
+        },
+        "ChronPerioCategories": [
+          "Roman",
+          "Roman or Classical",
+          "Classical/Roman"
+        ],
+        "interpretation": "Per-feature chronology fields/categories include classical, roman and post-antique date values. No single period snapshot."
+      },
+      "temporalInterpretation": "Feature-level dates/categories vary broadly; line layer includes post-antique records and is not a first-century-only plan.",
+      "accessedAt": "2026-10-13",
+      "crsSummary": "Custom CorinthHATT_field2 local orthographic projection (meters), based on GCS_WGS_1984; central meridian 22.895095 E, latitude of origin 37.902156 N, false easting 1570.672 m, false northing 777.959 m. No EPSG code declared."
+    },
+    {
+      "assetFile": "Acrocorinth/Acrocorinth.zip",
+      "dataset": "Acrocorinth",
+      "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+      "sourceEndpoint": "https://dataservices.ascsa.org/uploads/general/CorinthGIS.zip",
+      "sourceArchiveBytes": 15702659,
+      "assetBytes": 32488,
+      "assetSha256": "8c45406351f7a85b594b3a0ec17715b8a54d26cd6b9e4f93c96e29abd6d06cf3",
+      "includedComponents": [
+        "Acrocorinth.shp",
+        "Acrocorinth.shx",
+        "Acrocorinth.dbf",
+        "Acrocorinth.prj",
+        "Acrocorinth.cpg",
+        "Acrocorinth.shp.xml"
+      ],
+      "author": "James A. Herbst, Corinth Excavations, ASCSA",
+      "license": "CC BY-SA 4.0 (ASCSA page gives exact version for Corinth archaeological data and basemaps)",
+      "licenseMetadata": "CC-BY-SA",
+      "metadata": {
+        "geogcsn": "GCS_WGS_1984",
+        "projcsn": "CorinthHATT_field2",
+        "SyncDate": "20260710",
+        "ModDate": "20260710",
+        "resTitle": "AncientCorinth_Acrocorinth",
+        "idPurp": "GIS layer",
+        "idAbs": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+        "idCredit": "James A. Herbst, Corinth Excavations, ASCSA",
+        "useLimit": "CC-BY-SA"
+      },
+      "featureCount": 192,
+      "shapeType": 3,
+      "bboxInSourceCRS": [
+        -778.8355999998748,
+        -686.2961999997497,
+        111.228900000453,
+        -170.71509999968112
+      ],
+      "crs": "PROJCS[\"CorinthHATT_field2\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Orthographic\"],PARAMETER[\"false_easting\",1570.672],PARAMETER[\"false_northing\",777.9589999999999],PARAMETER[\"Longitude_Of_Center\",22.895095],PARAMETER[\"Latitude_Of_Center\",37.902156],UNIT[\"Meter\",1.0]]",
+      "temporalCoverage": null,
+      "temporalInterpretation": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+      "accessedAt": "2026-10-13",
+      "crsSummary": "Custom CorinthHATT_field2 local orthographic projection (meters), based on GCS_WGS_1984; central meridian 22.895095 E, latitude of origin 37.902156 N, false easting 1570.672 m, false northing 777.959 m. No EPSG code declared."
+    },
+    {
+      "assetFile": "City_Walls/City_Walls.zip",
+      "dataset": "City_Walls",
+      "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+      "sourceEndpoint": "https://dataservices.ascsa.org/uploads/general/CorinthGIS.zip",
+      "sourceArchiveBytes": 15702659,
+      "assetBytes": 21435,
+      "assetSha256": "e1a3fdbfe19e7e72869da20359ade14d34546c3f7c88c0ec1f2a5c2d61c5b8e2",
+      "includedComponents": [
+        "City_Walls.shp",
+        "City_Walls.shx",
+        "City_Walls.dbf",
+        "City_Walls.prj",
+        "City_Walls.cpg",
+        "City_Walls.shp.xml"
+      ],
+      "author": "James A. Herbst, Corinth Excavations, ASCSA",
+      "license": "CC BY-SA 4.0 (ASCSA page gives exact version for Corinth archaeological data and basemaps)",
+      "licenseMetadata": "CC-BY-SA",
+      "metadata": {
+        "geogcsn": "GCS_WGS_1984",
+        "projcsn": "CorinthHATT_field2",
+        "SyncDate": "20260710",
+        "ModDate": "20260710",
+        "resTitle": "AncientCorinth_CityWalls",
+        "idPurp": "GIS layer",
+        "idAbs": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+        "idCredit": "James A. Herbst, Corinth Excavations, ASCSA",
+        "useLimit": "CC-BY-SA"
+      },
+      "featureCount": 139,
+      "shapeType": 3,
+      "bboxInSourceCRS": [
+        -1252.6858000000939,
+        -544.9017000002787,
+        1820.0755000002682,
+        4243.531799999997
+      ],
+      "crs": "PROJCS[\"CorinthHATT_field2\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Orthographic\"],PARAMETER[\"false_easting\",1570.672],PARAMETER[\"false_northing\",777.9589999999999],PARAMETER[\"Longitude_Of_Center\",22.895095],PARAMETER[\"Latitude_Of_Center\",37.902156],UNIT[\"Meter\",1.0]]",
+      "temporalCoverage": {
+        "ChronPerioCategories": [
+          "Archaic",
+          "Classical",
+          "Late Roman"
+        ],
+        "interpretation": "Three period labels; layer is not a single-phase city-wall outline."
+      },
+      "temporalInterpretation": "GIS layer for the archaeological projects of Ancient Corinth\n\nLast updated: 2025-04-17 14:46:41",
+      "accessedAt": "2026-10-13",
+      "crsSummary": "Custom CorinthHATT_field2 local orthographic projection (meters), based on GCS_WGS_1984; central meridian 22.895095 E, latitude of origin 37.902156 N, false easting 1570.672 m, false northing 777.959 m. No EPSG code declared."
+    },
+    {
+      "assetFile": "Corinthia_100m_contours/Corinthia100mContours.zip",
+      "dataset": "Corinthia 1:250,000 B&W basemap with 100 m contours",
+      "sourcePage": "https://dataservices.ascsa.org/excavations/ancient-corinth/digital-corinth/maps-gis-data-and-archaeological-data-for-corinth-and-greece",
+      "sourceEndpoint": "https://dataservices.ascsa.org/uploads/media/CorinthMaps/CorinthiaLayered/Corinthia100mContours.zip (final URL after HTTP redirect)",
+      "assetBytes": 7329585,
+      "assetSha256": "e88bace6089a4ea12c90523285b9a24e7961d1e83bbd8321b277bd0f27f617a0",
+      "includedComponents": [
+        "Corinthia100mContours.tif",
+        "Corinthia100mContours.tfw"
+      ],
+      "author": "James A. Herbst, Corinth Excavations, ASCSA (ASCSA page credits the basemaps to him)",
+      "license": "CC BY-SA 4.0 (ASCSA page states these Corinth archaeological data/basemaps are licensed under CC BY-SA 4.0)",
+      "licenseMetadata": "Page-level attribution; raster archive has no per-file metadata sidecar",
+      "rasterDimensionsPixels": [
+        19525,
+        12925
+      ],
+      "worldFileTransform": [
+        5.291677250021165,
+        0.0,
+        0.0,
+        -5.291677250021193,
+        604222.112298242,
+        4226249.467715226
+      ],
+      "bboxInWorldFileCoordinates": [
+        604219.466459617,
+        4157857.185097327,
+        707539.4647662803,
+        4226252.113553851
+      ],
+      "crs": null,
+      "crsLimit": "Archive contains TIFF and worldfile only; TIFF tags do not declare a coordinate reference system. The worldfile bounds are in unspecified map units; do not load/reproject as known UTM without independent CRS identification.",
+      "temporalCoverage": "Modern topographic base derived from current/modern DEM; no ancient temporal coverage. ASCSA maps page identifies the basemap context and elsewhere identifies ASTER GDEM as a NASA/METI product.",
+      "accessedAt": "2026-10-13",
+      "crsSummary": "Undeclared; only worldfile affine coordinates present. No EPSG code or PRJ file."
+    }
+  ],
+  "recommendations": {
+    "romanCorinth": "Candidate base only. Polygon layer is buildings/structures with per-feature ChronEarly/ChronLate but includes ranges from 525 BCE to at least 1802 CE; line layer mixes Roman/Classical features and chronology fields include post-antique endpoints. Filter each record and re-check cited excavation/source before asserting a c. 50 CE footprint.",
+    "acrocorinth": "Candidate spatial layer; supplied metadata does not give a period-specific coverage. Its placement cannot be assumed to represent a 1st-century state without feature archaeology.",
+    "cityWalls": "Candidate context only; DBF contains categories Archaic, Classical and Late Roman, so it is not a single Roman-period wall outline.",
+    "contours": "The 100 m contours are an appropriate broad modern relief reference, not a period-specific surface. The archive lacks a declared CRS; retain as image-only until CRS is independently established.",
+    "modernInfrastructure": "Exclude modern canals, roads, reservoirs, shorelines, or labels from any reconstructed ancient map unless the layer is independently period-filtered and supported."
+  },
+  "sourceArchiveSha256Note": "The full 19-layer source archive was removed after extracting selected layers; SHA-256 is recorded per retained dataset asset, not for the deleted aggregate archive."
+}

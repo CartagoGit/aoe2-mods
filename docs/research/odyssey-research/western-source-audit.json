@@ -1,0 +1,1150 @@
+{
+  "created": "2026-10-12",
+  "sourceCorpus": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/research/odyssey-research/corpus.json",
+  "scope": [
+    "jewish-tradition",
+    "church-of-rome",
+    "new-rome"
+  ],
+  "counts": {
+    "eventsAudited": 79,
+    "reviewedWithCorrectionOrCaveat": 61,
+    "pendingSourceCheck": 18
+  },
+  "events": [
+    {
+      "eventId": 10,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/josephus/war-6.html",
+      "passage": "Josephus, Jewish War VI, especially §§4–5 (temple fire and fall); Book VI chronology",
+      "supportedClaim": "Josephus narrates Roman capture/destruction of the Temple in Jerusalem in 70, including the 10th of Lous/Av as the day the fire began in his version.",
+      "problems": "The exact accidental/command chain behind the fire is disputed in the narrative itself; Josephus is a participant writing under Flavian patronage and frames culpability. Do not narrate his theological causation as fact.",
+      "coverageRead": "Opened translation; read Book VI siege/fire passage and editorial notes. Translation is Whiston, not Greek apparatus.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 62,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "correctUrlConsulted": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "passage": "Constantinople I: canon 3; creed and canons, but status/transmission caveat",
+      "supportedClaim": "The source text supports a council traditionally dated 381 and canon 3 giving Constantinople honor after Rome because it is New Rome; creed transmission/history is separate from these canons.",
+      "problems": "Canon 3 does not establish papal/imperial jurisdiction or later East-West schism. Page is a compiled translation; it acknowledges transmission complexity.",
+      "coverageRead": "Opened council page and checked canon 3 and creed section; not manuscript apparatus.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 63,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.jewishvirtuallibrary.org/yavneh",
+      "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "passage": "COJS, Tannaitic Literature, lines 23–30: after temple destruction tannaitic activity is associated with Yavneh, Usha, Beth Shearim, Sepphoris; later tradition ties Akiva to Yavneh.",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Yohanan ben Zakkai y estudiosos se asocian con actividad rabínica en Yavneh.",
+      "problems": "The source supports Yavneh as one center of post-destruction transmission, not a dated 70–80 meeting/academy narrative for named Yohanan ben Zakkai. The original Jewish Virtual Library page consulted is an Encyclopaedia Judaica-derived town entry and does not document the academy claim. Avoid implying a formal academy’s exact founding/date.",
+      "coverageRead": "COJS extract lines 19–30 read; JVL Yavneh entry lines 23–30 read. Neither full book nor underlying rabbinic sources read.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 64,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "passage": "COJS, Tannaitic Literature, lines 19–26.",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Las academias y tradiciones legales sostienen vida judía sin templo central.",
+      "problems": "Broad claim of post-70 oral/legal transmission and divergent views is supported as synthesis; source says materials moved among Yavneh, Usha, Beth Shearim, Sepphoris, not that named institutions or a uniform academy network existed exactly c.80–100.",
+      "coverageRead": "COJS excerpt lines 19–27 read; source is an excerpt from Schiffman, From Text to Tradition, not whole book.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 65,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+      "correctUrlConsulted": null,
+      "passage": "Artículo sobre el mito del sínodo de Jamnia",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Debates sobre Eclesiastés y Cantar de los Cantares aparecen en tradiciones rabínicas.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 66,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Claud.+25",
+      "correctUrlConsulted": "https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Claud.+25",
+      "passage": "Suetonius, Claudius 25.4",
+      "supportedClaim": "Claudio expulsó de Roma a judíos que causaban disturbios «impulsore Chresto».",
+      "problems": "El texto no da año; 90–110 es imposible porque se refiere al reinado de Claudio. La identificación de Chrestus con Cristo no es segura. La bibliografía suele proponer c.49, pero hay debate sobre fecha e interpretación.",
+      "coverageRead": "Texto primario por referencia exacta; Cambridge Companion, cap. 14, extracto consultado sobre fecha probable c.49 y debate Chrestus.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 67,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+      "correctUrlConsulted": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+      "passage": "Cassius Dio, Roman History 68.32.1–3, Cary translation (entry lines 43–51)",
+      "supportedClaim": "Supports Jewish uprising participation across Cyrene, Egypt, and Cyprus in 115–117 and Roman suppression; Posen reproduces the source passage and cites Loeb.",
+      "problems": "Dio survives here as a late author’s account/epitome, with highly charged atrocity claims and suspect casualty numbers; keep those out of factual description. Livius original page can be replaced by this source text and its citation.",
+      "coverageRead": "Read source excerpt, intro and Loeb citation lines 43–51; not full Dio.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 68,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.britannica.com/place/Jerusalem/History",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+      "passage": "Cassius Dio, Roman History 69.12.1–2; English translation excerpt mirrored at Livius",
+      "supportedClaim": "Supports Hadrian’s foundation of Aelia Capitolina at Jerusalem, a Jupiter temple, and Dio’s claimed connection to revolt.",
+      "problems": "Dio gives a retrospective causal account; specific foundation date is debated and is not established by this passage alone. Do not treat the sequence as uncontested.",
+      "coverageRead": "Opened Livius translation of Dio 69.12.1–3, checked exact text; primary Perseus/Chicago route available via source link but not separately read.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 69,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+      "correctUrlConsulted": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+      "passage": "Israel Museum, Shrine of the Book, “Bar Kochba Revolt”; cross-check Cassius Dio 69.12–14",
+      "supportedClaim": "Museum overview supports revolt context and material evidence of Bar Kokhba-period documents/coins; Dio 69.12–14 narrates resistance, hideouts and Roman suppression.",
+      "problems": "Do not claim a specific document or coin without item-level catalog and findspot. Dio’s account of causation and scale is Roman retrospective narrative.",
+      "coverageRead": "Read museum overview/search-indexed page and Livius-translated Dio 69.12–14 lines 15 onward; not artifact catalog records.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 70,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.britannica.com/place/Jerusalem/History",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/69%2A.html",
+      "passage": "Cassius Dio, Roman History 69.13–14 (Roman suppression; Bar Kokhba war)",
+      "supportedClaim": "Supports Roman forces suppressing a major revolt across Judaea and Dio’s account of postwar restrictions; use his specific claim about Jerusalem only if the relevant 69.14 passage is quoted directly.",
+      "problems": "“Syria Palaestina” renaming and Jewish exclusion from Jerusalem need separate direct sources; don’t bundle all consequences from an imprecise Dio locator. Current consulted Livius excerpt covers 69.12–13 only.",
+      "coverageRead": "Read translated Dio 69.12–13; 69.14 remains unchecked in full. Keep the specific province renaming/exclusion detail pending.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 71,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "passage": "COJS, Tannaitic Literature, lines 28–30.",
+      "supportedClaim": "The originally claimed c.150–180 Akiva activity is contradicted by the consulted overview; it places his floruit c.80–132.",
+      "problems": "COJS dates Akiva’s floruit around 80–132 CE and says precision about responsibility for the subject-classification system is impossible.",
+      "coverageRead": "Direct extract read; secondary overview, not a primary biographical record.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 72,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "correctUrlConsulted": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "passage": "COJS, Tannaitic Literature, lines 19–21, 30–33.",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Judas ha-Nasi organiza la Mishnah, compilación de tradiciones legales.",
+      "problems": "Schiffman excerpt states redaction by Judah the Prince around 200 CE and notes scholarly debate about nature/history and degree of his contribution.",
+      "coverageRead": "Direct excerpt read; Oxford chapter link from corpus not accessible in browser, so COJS is substitute contextual source, not replacement for full specialist scholarship.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 73,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.britishmuseum.org/collection/object/G_1894-10-14-1",
+      "correctUrlConsulted": "https://www.uni-giessen.de/ub/de/ueber-uns/sam/papyri-ostraka-keilschrifttafeln/papyri",
+      "passage": "Colección de papiros de Giessen: P.Giss. 40 / P.Giss. inv. 15; ver también https://www.constitutio.de/en/papyrus/known-history-of-the-constitutio-antoniniana",
+      "supportedClaim": "P.Giss. 40 es el testimonio papiráceo griego asociado a la Constitutio Antoniniana; emisión convencional 212/213, papiro escrito c.215.",
+      "problems": "URL original del British Museum no corresponde a este papiro; el objeto pertenece a la colección universitaria de Giessen. La inscripción textual está severamente fragmentada y su interpretación/relación exacta con el edicto sigue debatida. La ampliación de ciudadanía no debe presentarse como cambio específicamente judío.",
+      "coverageRead": "Leída página de la biblioteca universitaria de Giessen y página del proyecto Constitutio.de sobre historia del objeto y fecha; extracto académico Imrie 2015 sobre el estado fragmentario y debate.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 74,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "correctUrlConsulted": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "passage": "Catherine Hezser, An Introduction to the History and Sources of Jewish Law, ch. “The Age of the Talmud”, abstract",
+      "supportedClaim": "Supports broad period framing of Palestinian/Babylonian rabbinic scholarship and the Mishnah-to-Talmud transition; it does not support a specific named circle/date or claim that Mishnah was being “transmitted” as an event.",
+      "problems": "Abstract only; citation is not evidence for a specific local scene or the full range of Jewish community practice. Phrase as scholarly traditions, not all Jews.",
+      "coverageRead": "Read accessible chapter abstract/search extract, not paywalled chapter.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 75,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/4297",
+      "correctUrlConsulted": "https://academic.oup.com/book/4297",
+      "passage": "David Weiss Halivni, The Formation of the Babylonian Talmud, book overview",
+      "supportedClaim": "May support a long-term process of Bavli formation and Babylonian rabbinic activity, but accessible book page does not establish a discrete “growth of centers” event or a dated academy scene.",
+      "problems": "Formal Sura/Pumbedita academy institutions are often projected backward from later geonic sources; do not assert a mature institutional network c.4th century from this citation alone.",
+      "coverageRead": "Only book metadata/abstract available, not the protected book; claim remains under-supported.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 76,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.imj.org.il/en/wings/shrine-book/ancient-synagogues",
+      "correctUrlConsulted": "https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283",
+      "passage": "Jodi Magness, Ancient Synagogues in Palestine: An Overview, Hammath Tiberias discussion",
+      "supportedClaim": "Supports the specific southern-Tiberias site and its synagogue architecture/mosaic with archaeological scholarly framing.",
+      "problems": "Mosaic building phases are archaeologically dated with ranges, not an exact year; avoid treating zodiac/Helios as evidence of uniform Jewish belief or practice. Current source’s snippet describes site and mosaic but exact phase dating should be checked in full chapter.",
+      "coverageRead": "Read book chapter excerpt/search extract; chapter access incomplete.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 77,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3801.htm",
+      "correctUrlConsulted": "https://royalarchives.org/ecumenical_councils/first_council_of_nicaea/canon_20/",
+      "passage": "Nicaea canon 20 regulates standing prayer on Sundays and Pentecost; Eusebius, Vita Constantini III.18–20 transmits Constantine’s letter on uniform Easter observance and anti-Jewish rhetoric.",
+      "supportedClaim": "Canon 20 is disciplinary prayer posture. The separate Easter discussion in the transmitted letter concerns uniform observance and condemns following Jewish practice; it is polemical testimony, not a direct exposition of Jewish calendar mechanics.",
+      "problems": "El canon 20 NO trata la fecha de Pascua. Para la preocupación por observar Pascua el mismo día, sustituir por Eusebio, Vita Constantini III.18–20: https://www.newadvent.org/fathers/25023.htm; la carta circular transmitida en III.18–20 es fuente posterior y no acta conciliar. Un episodio judío-cristiano de calendario requiere una fuente distinta y no queda acreditado por este pasaje.",
+      "coverageRead": "Canon 20 consultado en página Royal Archives; Eusebius Vita Constantini III.18 comprobado mediante resultado de búsqueda y página New Advent Book III https://www.newadvent.org/fathers/25023.htm; se consultó extracto, no toda la obra.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 78,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "correctUrlConsulted": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "passage": "Hezser, “The Age of the Talmud,” abstract",
+      "supportedClaim": "Supports the Jerusalem/Palestinian Talmud as a later halakhic work composed after Mishnah and a period of rabbinic legal activity in the Land of Israel.",
+      "problems": "Does not date a final redaction event precisely; broader scholarship treats its formation as complex and chronology uncertain. Avoid saying Tiberias alone authored it or assigning an exact completion year.",
+      "coverageRead": "Abstract only, not chapter text.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 79,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.livius.org/articles/person/julian-the-apostate/julian-and-the-jews/",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/23%2A.html",
+      "passage": "Ammianus Marcellinus, Res Gestae 23.1.2–3",
+      "supportedClaim": "Supports Julian planned a costly restoration of the Jerusalem Temple under Alypius of Antioch; Ammianus says fiery bursts near foundations halted work and some workers died.",
+      "problems": "Ammianus is a contemporary but Christian Roman author; the supernatural explanation is his account, not independently established cause. Do not add “permission to rebuild” as a formal edict unless separately sourced.",
+      "coverageRead": "Opened and read §§2–3 directly; single source passage, no archaeological corroboration consulted.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 80,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://www.imj.org.il/en/wings/shrine-book/ancient-synagogues",
+      "correctUrlConsulted": "https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283",
+      "passage": "Magness, Ancient Synagogues in Palestine: An Overview, site/phase discussions",
+      "supportedClaim": "Supports existence of late antique synagogue buildings and mosaics as material evidence for communal practice in Palestine.",
+      "problems": "Corpus wording “Jerusalem and Galilee” spans multiple sites and lacks a single event locale; use one excavated site per scenario. Archaeological dates are approximate and evidence cannot prove all communities preserved identical practices.",
+      "coverageRead": "Read excerpt/search-indexed chapter only, not complete chapter.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 81,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "correctUrlConsulted": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "passage": "Hezser, “The Age of the Talmud,” abstract",
+      "supportedClaim": "Supports broad ongoing transition from Mishnah to Palestinian and Babylonian Talmuds through later rabbinic generations.",
+      "problems": "General claim is too close to event 78 and abstract does not evidence a separate discrete event. Treat as a duplicate/overlap candidate rather than independent milestone; avoid precise date of textual completion.",
+      "coverageRead": "Abstract metadata only; no chapter body read.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 82,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/book/32151/chapter-abstract/268117453",
+      "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/300-800-laws-jews.asp",
+      "passage": "Theodosian Code 16.8.25–26; Fordham legal-source index, lines 73–80",
+      "supportedClaim": "CTh 16.8.25 (15 Feb 423) orders protection against attacks and synagogue burning; CTh 16.8.26 (9 Apr 423) prohibits building new synagogues while forbidding destruction/confiscation of existing ones.",
+      "problems": "Corpus claims a restriction but may compress two laws. This is not a total ban on Judaism or all synagogues; distinguish new construction from protection of existing buildings. Fordham provides citations/index rather than full Latin law text.",
+      "coverageRead": "Opened legal timeline and checked law references/dates lines 73–80; only index/summary, not complete legal text.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 83,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550532938",
+      "correctUrlConsulted": "https://pure.manchester.ac.uk/ws/portalfiles/portal/87764026/FULL_TEXT.PDF",
+      "passage": "PhD thesis “Chapter 2: Historical context”, pp. 24–34, esp. lines 677–680, 999–1027; CTh 16.8.29 dated 30 May 429",
+      "supportedClaim": "Supports an imperial law of 429 referring to cessation/after the patriarchs and redirecting crown-gold tax collection to imperial treasury; author concludes patriarchate had disintegrated between 415–429, no later than 429 at Constantinople.",
+      "problems": "Strong correction: does NOT support a simple abolition immediately after Gamaliel VI died in 425; author explicitly rejects the traditional narrative that it was abolished by Theodosius or that no successor was appointed. Event 83’s “ends” must be softened and dated ca.415–429; do not say it was last unifying office.",
+      "coverageRead": "Opened thesis PDF; read chapter 2 pages 24–34 around demotion, 429 law, and historiographic caveats; not entire thesis.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 84,
+      "campaigns": [
+        "jewish-tradition"
+      ],
+      "originalUrl": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550532938",
+      "correctUrlConsulted": "https://pure.manchester.ac.uk/ws/portalfiles/portal/87764026/FULL_TEXT.PDF",
+      "passage": "Same thesis, pp. 32–34, lines 999–1027",
+      "supportedClaim": "Supports broad conclusion that patriarchate authority disintegrated 415–429 and was no longer recognized centrally by 429.",
+      "problems": "Duplicate of event 83 with same terminal-process claim; no separate mission/event should be retained. No source proves 425 as exact disappearance.",
+      "coverageRead": "Opened same thesis and read the relevant extract; do not rely on OUP abstract alone.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 85,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/2813.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/2813.htm",
+      "passage": "Athanasius, Apologia contra Arianos, §§20–21 (asamblea romana) y §§29–35 (Sardica; viaje).",
+      "supportedClaim": "Athanasius fue a Roma durante su exilio y presentó su caso a la iglesia romana; más tarde acudió a Sardica.",
+      "problems": "URL original Apologia ad Constantium no basta para justificar llegada: §4 sí dice que al salir de Alejandría fue «only to Rome», pero no fecha el año. El rango 339–340 procede de cronología moderna (Sardica suele fecharse 343/344; llegada suele ubicarse c.339/340) y debe presentarse como reconstrucción, no como fecha del testimonio.",
+      "coverageRead": "Consultado texto traducido de Apologia ad Constantium §4 y resumen cronológico académico de Universität Erlangen sobre corpus/cronología; Presbyters Project muestra sínodo romano 339/340.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 86,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3815.htm",
+      "passage": "Council of Sardica, chronological introduction lines 10–19; canons in remainder",
+      "supportedClaim": "Supports date debate between 343/344 (some older sources said 347), Athanasius at Rome c.340–343, and his journey from Milan via Gaul to Sardica; eastern bishops separated from western proceedings is covered in later page.",
+      "problems": "The page itself is 19th-century Catholic scholarship. Do not state 343 as certain; prefer c.343/344. Corpus wording says “leaves Rome for Sardica” although chronology in source says summoned from Rome to Milan then via Gaul.",
+      "coverageRead": "Opened source lines 10–19; inspected date argument and route summary; not underlying primary chronicles.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 87,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/28153.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/2817.htm",
+      "passage": "Athanasius, De Synodis §§1–2, 8–10; New Advent text explicitly names Ariminum and Seleucia and narrates the council at Ariminum.",
+      "supportedClaim": "Hubo sínodos en Ariminum (Rimini) y Seleucia en 359, con conflicto sobre fórmula doctrinal y presión imperial.",
+      "problems": "El locator original «History of the Arians §33» no concordaba con el título/URL. De Synodis §8 confirma 400+ reunidos en Ariminum; §10 da la carta del consejo. Athanasius es polemista Niceno, así que su evaluación de los participantes no es neutral. Año 359 requiere consular chronology / academic context.",
+      "coverageRead": "New Advent De Synodis §§1–2 y 8–10 abiertos y leídos por extracto; Presbyters Project source record consulted. No se leyó el tratado completo.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 88,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=523&id=6",
+      "correctUrlConsulted": null,
+      "passage": "Presbyters Project, Liber Pontificalis source record for the contested election of 366.",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Damasus and Ursinus are elected by rival factions; street violence follows the contested Roman succession.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 89,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://sourcebooks.fordham.edu/source/theodosius1.asp",
+      "correctUrlConsulted": "https://sourcebooks.fordham.edu/source/theodosius1.asp",
+      "passage": "Codex Theodosianus 16.1.2, Cunctos populos; fechado 27 febrero 380 y dateline Thessalonica.",
+      "supportedClaim": "El edicto define normativamente la ortodoxia nicena para súbditos de Constantinopla y amenaza a quienes denomina herejes.",
+      "problems": "No equivale sin matices a una conversión instantánea o uniformización religiosa de todo el imperio; destinatario en encabezamiento: pueblo de Constantinopla.",
+      "coverageRead": "Texto y encabezamiento del edicto contrastados con transcripción abierta de Cod. Theod. 16.1.2 consultada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 90,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://earlychurchtexts.com/main/ambrose/to_theodosius_on_thessalonica_massacre_01.shtml",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/340951.htm",
+      "passage": "Ambrose, Letter 51, §§6–15",
+      "supportedClaim": "Supports Ambrose’s letter to Theodosius after the Thessalonian slaughter: recounts a massacre, demands penitence, and says he would not offer the Eucharist if the emperor were present.",
+      "problems": "The letter is not a narrated scene of physically barring Theodosius at church; that vivid episode comes from later Theodoret HE V.17–18. Avoid staging the letter itself as eyewitness account of a formal excommunication.",
+      "coverageRead": "Opened and read the letter §§6–15; compared the later Theodoret episode only via Fordham search excerpt.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 91,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/event/fall-of-Rome",
+      "correctUrlConsulted": "https://www.britannica.com/event/fall-of-Rome",
+      "passage": "Síntesis de la caída del Imperio romano occidental.",
+      "supportedClaim": "Odoacro depuso a Rómulo Augústulo en 476.",
+      "problems": "Enlace terciario y título «fall of Rome» induce a una ruptura total; el evento no acabó las instituciones eclesiásticas romanas, pero esa continuidad necesita fuente diferente. Mejor sumar fuente primaria contemporánea (p.ej., Malchus fr. 10 o Marcellinus Comes s.a. 476) y explicitar el alcance político.",
+      "coverageRead": "Página de Britannica referida por corpus; contenido/pasaje no comprobado en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 92,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2*.html",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/thayer/e/roman/texts/excerpta_valesiana/2%2A.html",
+      "passage": "Anonymus Valesianus II, §§55–57",
+      "supportedClaim": "Supports Theoderic’s entry into Ravenna, killing of Odoacer and succession as king. The source reports the killing as a personal act and subsequent killing of Odoacer’s household/army.",
+      "problems": "This is a later, anonymous narrative with an Italian/Ravenna viewpoint; it does not establish a simple immediate formal “kingdom of Italy” constitutional change. Event’s narrow claim is supported.",
+      "coverageRead": "Opened text and read §§55–57 and editor’s note on location “Laurel Grove”; not critical edition.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 93,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://assets-us-01.kc-usercontent.com/c7bb3f89-eb78-007e-971a-d5864cf7a236/28069a1b-8c16-4f91-8bd6-e69c3eb898f0/Letter-to-Anastasius-I.pdf",
+      "correctUrlConsulted": "https://assets-us-01.kc-usercontent.com/c7bb3f89-eb78-007e-971a-d5864cf7a236/28069a1b-8c16-4f91-8bd6-e69c3eb898f0/Letter-to-Anastasius-I.pdf",
+      "passage": "Gelasius I, Famuli vestrae pietatis, carta a Anastasio I (494), especialmente «Duo sunt» / §§? verificar edición.",
+      "supportedClaim": "Gelasius formula dos autoridades —sacerdotal y real— y su distinta responsabilidad.",
+      "problems": "El pontificado correcto es 492–496; «494» para la carta es la fecha convencional de la carta, no 483–492. Número de sección/párrafo depende de edición y no debe inventarse. PDF directo puede ser traducción/edición moderna; identificar editor en cita final.",
+      "coverageRead": "La existencia, destinatario y fecha 494 se contrastaron en fuentes de referencia; PDF enlazado no se abrió/leyó en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 94,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/cathen/07218b.htm",
+      "correctUrlConsulted": "https://www.ccel.org/s/schaff/encyc07/htm/ii.xii.xvi.viii.htm",
+      "passage": "Schaff, History of the Christian Church, section on end of Acacian schism; formula preserved in “Documents Illustrative of the History of the Church”",
+      "supportedClaim": "Supports 519 reconciliation process, formula’s signature by Patriarch John/Epiphanius and removal of names from diptychs, as summarized by 19th-century secondary history.",
+      "problems": "For exact settlement date sources differ slightly in modern summaries: Holy Thursday 28 Mar vs Easter 24 Mar; don’t force one date from this reference. Textual formula and acceptance are better supported than a simple institutional “unity restored” claim.",
+      "coverageRead": "Read search result extract and consulted scholarly/edited source excerpt; not full monograph or critical letters.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 95,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://text.egwwritings.org/amp/read/988.935",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/home.html",
+      "passage": "Fuentes primarias preferidas: Anonymus Valesianus, pars posterior §§90–96 (numeración varía por edición); Liber Pontificalis, Vita Iohannis I. Texto LP: https://archive.org/details/bookofpopesliber01loui/page/146/mode/2up",
+      "supportedClaim": "Teodorico envió al papa Juan I en embajada a Constantinopla; retornó y murió preso en Rávena en 526.",
+      "problems": "Retirar egwwritings: no es fuente primaria/académica. Sustituir por Anonymus Valesianus y/o Liber Pontificalis, teniendo en cuenta que son narraciones con agenda/conflicto confesional y no una descripción neutral. La fecha exacta de muerte no se desprende necesariamente del pasaje; campaña solo necesita 525–526.",
+      "coverageRead": "Extracto de Liber Pontificalis consultado vía edición inglesa escaneada (Internet Archive / traducción de Davis); Anonymus Valesianus no verificado línea a línea todavía.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 96,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/5A*.html",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/5C%2A.html",
+      "passage": "Procopius, Wars V (Gothic War I) 14.14–17",
+      "supportedClaim": "Supports Belisarius entering through Asinarian Gate as Goths leave through Flaminian Gate; Procopius dates it the ninth day of December in Justinian’s eleventh regnal year (9 Dec 536).",
+      "problems": "Primary narrative gives regnal dating; 9 Dec 536 is modern conversion. Procopius is imperial campaign historian. Correct corpus URL path from War/5A to Wars/5C.",
+      "coverageRead": "Opened Book I chapters 14–23 and read §§14–17; used UW Madison dissertation search extract for modern date conversion.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 97,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/5A*.html",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/5C%2A.html",
+      "passage": "Procopius, Wars V (Gothic War I) 19 onward; siege account continues in Wars VI",
+      "supportedClaim": "Supports prolonged Gothic siege of Rome under Vitiges after Belisarius fortifies city, not precise modern date range alone. Scholarly chronology places siege Feb 537–Mar 538.",
+      "problems": "Add explicit date range c. Feb 537–Mar 538 from modern scholarship; the page’s opening passage establishes late-536 context. Avoid unsupported force/casualty numbers.",
+      "coverageRead": "Opened Procopius page; read entry and fortification context; UW Madison dissertation search extract states Feb 537–Mar 538.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 98,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/7A*.html",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/7D%2A.html",
+      "passage": "Procopius, Wars VII (Gothic War III) 20.4–16",
+      "supportedClaim": "Supports Totila gaining entry to Rome through the Asinarian Gate after Isaurian guards defected, and capturing the city.",
+      "problems": "Procopius passage establishes capture narrative; 546 date depends on chronological reconstruction/secondary source. Do not present his numbers or dramatic embellishments as independently verified.",
+      "coverageRead": "Opened Book VII and read III.20.4–16; modern date only checked in UW Madison dissertation search result (December 546), not full thesis.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 99,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/event/Gothic-War-535-554",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/8J%2A.html",
+      "passage": "Procopius, Wars VIII (Gothic War IV) 33.26; VIII 35 for later end",
+      "supportedClaim": "Supports Narses’ 552 campaign/capture of Rome within the Gothic War; not a one-event “restoration of Italy” completed in 553.",
+      "problems": "Narses’ capture of Rome and the later defeat/end of the Gothic war are distinct; Italy’s consolidation is not equivalent to a single restored event. July 552 often inferred from campaign-year chronology, not precise passage date.",
+      "coverageRead": "Opened/search-checked Procopius VIII 33–35; consulted a scholarly article search extract identifying Wars 8.33.26 and date interval Apr 552–Mar 553; not full article.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 100,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://sourcebooks.web.fordham.edu/source/pauldeacon-gregIa.asp",
+      "correctUrlConsulted": "https://www.treccani.it/enciclopedia/santo-gregorio-i_%28Enciclopedia-dei-Papi%29/",
+      "passage": "Treccani, Enciclopedia dei Papi, entry Gregorio I; for Lombard relations compare Paul the Deacon Life of Gregory excerpt, §§/passage re peace with Agilulf",
+      "supportedClaim": "Treccani supports Gregory’s consecration as bishop of Rome on 3 September 590; Paul the Deacon excerpt supports later (c.593) peace negotiations with Agilulf and Theudelinda.",
+      "problems": "Current corpus’s Paul-the-Deacon URL does not support election amid plague/famine: it narrates events of 593. The event bundles at least election and Lombard policy; split or retain only accurately sourced components. Paul’s Life is later hagiographic narrative.",
+      "coverageRead": "Read Treccani search excerpt and Fordham Paul the Deacon text lines 23–30; not complete biographies.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 101,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://sourcebooks.fordham.edu/source/gregory1.asp",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/360206051.htm",
+      "passage": "Gregory the Great, Registrum Epistolarum VI.51, “To the brethren going to England,” dated 23 July in 14th year Maurice / indiction 14",
+      "supportedClaim": "Supports Gregory writing to missionaries in England and directing them to obey Augustine, who is returning to them; by then the mission was underway.",
+      "problems": "This letter alone does not establish dispatch date as 596, nor give the full initial journey; date conversion is usually 596 and needs scholarly chronology. It supports mission continuation/contact, not a precise first arrival at Kent.",
+      "coverageRead": "Opened text and read addressee/body/date; English translation, no full critical edition.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 102,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/cathen/04295a.htm",
+      "correctUrlConsulted": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_book_of_the_popes_%28Liber_pontificalis%29_I-_%28IA_cu31924006163897%29.pdf",
+      "passage": "Liber Pontificalis, Vita Vitaliani, chapter XI, account of Constans II’s visit to Rome",
+      "supportedClaim": "The source text quoted in search excerpt says Constans arrived via Naples, was met by Pope Vitalian at Rome’s sixth milestone, stayed twelve days, removed bronze decoration including Pantheon roof tiles, and sent material to Constantinople.",
+      "problems": "Liber Pontificalis is a Roman papal biography with hostile presentation (“afflictions”); it supports a reported removal, not verified destination of every piece. The existing New Advent encyclopedia is secondary.",
+      "coverageRead": "Read specific quoted LP excerpt in search result and checked scan source; PDF full text was not downloaded/read.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 103,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3813.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3813.htm",
+      "passage": "Acts of Constantinople III, Sessions I, IV and XIII; Agatho letter and synodal decision",
+      "supportedClaim": "Supports Roman envoys and Agatho’s synodal letter, council’s Christological debate on one/two wills and operations, and condemnation of Honorius in Session XIII.",
+      "problems": "A council text and a 1900 translation/editorial framing. Do not simplify its theological definitions into modern denominational divisions; participation by papal envoys is supported.",
+      "coverageRead": "Opened Acts, read lines 11–25 and condemnation §§165–168; not Greek/Latin critical apparatus.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 104,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.myriobiblos.gr/texts/english/milton1_11.html",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3814.htm",
+      "passage": "Quinisext Council in Trullo, canon 36; compare canons 13 and 55 for Roman custom conflict",
+      "supportedClaim": "Supports canon 36’s explicit order: Constantinople “equal privileges” with Old Rome and second after it, followed by Alexandria, Antioch and Jerusalem.",
+      "problems": "Canon’s normative language is not proof of Western acceptance. The report that Sergius rejected the canons must be sourced to separate correspondence/biography; current canon page alone does not establish his refusal.",
+      "coverageRead": "Opened council page and read canon 36; no papal correspondence reviewed.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 105,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_%28Enciclopedia-Italiana%29/",
+      "correctUrlConsulted": null,
+      "passage": "Treccani, Iconoclastia, account of Gregory III’s Roman council",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: A Roman synod under Gregory III condemns attacks on images.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 106,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "passage": "Fordham Medieval Sourcebook, intro to Donation of Constantine; notes on Stephen II/Pepin 754",
+      "supportedClaim": "Supports as secondary overview that Stephen crossed the Alps and anointed Pepin in 754 and Pepin promised Lombard-held lands; page says promise fulfilled in 756.",
+      "problems": "Original reference is misleadingly named “Donation of Constantine” and is not primary evidence for Pepin. Promise boundaries and formal anointing are described in later papal accounts; use LP/MGH direct text for a final chronology.",
+      "coverageRead": "Opened sourcebook lines 18–23; read overview and forgery context, not underlying Pepin donation text.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 107,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "passage": "Fordham Medieval Sourcebook, intro to Donation of Constantine, line 22; secondary chronology of Pepin promise",
+      "supportedClaim": "Supports only the broad secondary statement that Pepin’s promise of lands taken by Lombards was fulfilled in 756.",
+      "problems": "This is not the lost donation instrument, and boundaries are not preserved as a contemporaneous treaty; do not map an exact border from it. Page’s central document is the forged Donation of Constantine, distinct from Donation of Pepin.",
+      "coverageRead": "Opened lines 18–23; read one introductory statement, not a primary land-transfer record.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 108,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "correctUrlConsulted": null,
+      "passage": "Einhard, Life of Charlemagne, chapters 6 and 27",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: The Carolingian rulers consolidate power; Charlemagne’s campaigns against the Lombards bring Rome a new protector.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 109,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3819.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3819.htm",
+      "passage": "Acts of Nicaea II, Hadrian’s letter and council definition (sessions 2 and 7)",
+      "supportedClaim": "Supports Pope Hadrian’s letter being read and the council’s endorsement of veneration/salutation of icons while distinguishing this from worship/service due to God alone.",
+      "problems": "The translated acts have ecclesiastical/editorial framing; use “veneration” with care and do not state that all imperial subjects immediately accepted the settlement.",
+      "coverageRead": "Opened acts and read the letter excerpt and definition passages on images; not manuscript history.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 110,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html",
+      "correctUrlConsulted": null,
+      "passage": "Schaff, History of the Christian Church IV, section on Leo III",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Leo III succeeds Hadrian I and sends the keys and banners of Rome to Charlemagne.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 111,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "correctUrlConsulted": null,
+      "passage": "Einhard, Life of Charlemagne 28; Royal Frankish Annals 799",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Leo III is attacked in Rome and seeks Charlemagne’s protection.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 112,
+      "campaigns": [
+        "church-of-rome"
+      ],
+      "originalUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "correctUrlConsulted": null,
+      "passage": "Einhard, Life of Charlemagne 28",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Leo III crowns Charlemagne emperor at St Peter’s on Christmas Day.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 113,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/place/Istanbul/History",
+      "correctUrlConsulted": "https://www.britannica.com/place/Istanbul/History",
+      "passage": "Chronicon Paschale, año de inauguración 330; Eusebius, Vita Constantini IV.58–60 ofrece dedicación de la ciudad.",
+      "supportedClaim": "Constantinopla se inauguró/dedicó en 330 sobre Bizancio.",
+      "problems": "Evento fuera del intervalo editorial New Rome 337–843; mantener solo como prólogo contextual o eliminar de episodios elegibles. Britannica es síntesis, reemplazar por Chronicle/primary passage.",
+      "coverageRead": "Referencia secundaria original identificada; texto de Chronicon Paschale no consultado directamente en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 114,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/25024.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/25024.htm",
+      "passage": "Eusebius, Vita Constantini IV.64 (cierre de la vida y muerte de Constantino).",
+      "supportedClaim": "Constantino murió en 337 y sus hijos heredaron.",
+      "problems": "Pasaje es panegírico y registra muerte; sucesión compartida debe contrastarse con cronología imperial independiente. URL correcta para Book IV.64.",
+      "coverageRead": "Página primaria abrió correctamente; encabezamiento y localizador IV.64 identificados, pero el párrafo exacto no fue extraído en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 115,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Theodosius-I",
+      "correctUrlConsulted": null,
+      "passage": "Chronology and overview",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Muerte de Teodosio I precede división administrativa duradera entre cortes oriental y occidental.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 116,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/1912.htm",
+      "correctUrlConsulted": "https://www.tertullian.org/fathers/palladius_dialogus_02_text.htm",
+      "passage": "Palladius, Dialogue on the Life of John Chrysostom, chapter/section “Chrysostom’s Second Expulsion” (site text around lines 187–202)",
+      "supportedClaim": "Supports armed force expelling Chrysostom and clergy from Constantinople and putting him on a ship at night; event belongs to 404 chronology.",
+      "problems": "Palladius writes a partisan defense of Chrysostom and is not neutral; the passage narrates violence but does not itself provide a precise calendar date. Original New Advent URL was unrelated Chrysostom homily, not Palladius.",
+      "coverageRead": "Opened translation and read expulsion passages around text lines 187–202; limited extract, not the full dialogue.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 117,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/topic/University-of-Constantinople",
+      "correctUrlConsulted": "https://www.forum.thelatinlibrary.com/theodosius/theod14.shtml",
+      "passage": "Codex Theodosianus 14.9.3, praescriptio and main provision (27 Feb 425)",
+      "supportedClaim": "Supports Theodosius II and Valentinian regulating an imperial auditorium at the Capitolium, specifying appointed Latin/Greek rhetors and grammarians plus philosophy and law teachers.",
+      "problems": "Does not support a modern “university foundation” claim. Better describe regulation/organization of imperial public teaching. Latin text dates 3 days before Kalends of March, Constantinople, consuls Theodosius XI and Valentinian.",
+      "coverageRead": "Read search-result excerpt of CTh 14.9.3 including staff list/dateline; direct HTML open failed, so accessibility/passages should be rechecked.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 118,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/26017.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/26017.htm",
+      "passage": "Socrates Scholasticus, Church History VII.45.",
+      "supportedClaim": "En 438 los restos de Juan Crisóstomo fueron trasladados de Comana y recibidos en Constantinopla.",
+      "problems": "Corregido respecto a 410: el traslado fue en 438. Debe distinguirse la fecha del exilio/muerte (407) de la traslación. Socrates escribe retrospectivamente.",
+      "coverageRead": "Socrates Scholasticus HE VII.45 abierto y leído (líneas 333–336): da el traslado desde Comana a Constantinopla, 27 de enero en el 16.º consulado de Teodosio; la equivalencia moderna es 438.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 119,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://sourcebooks.fordham.edu/source/codex-theod.asp",
+      "correctUrlConsulted": "https://la.wikisource.org/wiki/Theodosii_novellae/1",
+      "passage": "Theodosian Novella 1, De Theodosiani codicis auctoritate (Feb 438); Bibliotheca legum chronology",
+      "supportedClaim": "Supports the Code receiving imperial authority/promulgation in February 438; academic legal reference gives effective date 1 Jan 439.",
+      "problems": "Do not conflate promulgation in 438 with entry into force in 439; East/West legal reception varied. Original Fordham page should be consulted directly before relying on its exact translation.",
+      "coverageRead": "Read Novella 1 search/index extract and University of Cologne Bibliotheca legum summary; not a full critical edition.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 120,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3811.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3811.htm",
+      "passage": "Acts and canons of Chalcedon, Canon 28 (page section around lines 390–400)",
+      "supportedClaim": "Supports Canon 28’s rationale of Constantinople as New Rome and allocation of equal ecclesiastical privileges / second rank, plus ordination jurisdiction in Pontic, Asian, Thracian dioceses.",
+      "problems": "The canon was contested by papal legates/Leo I; source wording must not imply uncontested universal recognition. The council’s Christological definition and canon 28 are distinct proceedings.",
+      "coverageRead": "Opened acts/canons; searched and read canon 28 text; translation/notes are 19th-century.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 121,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Leo-I-Byzantine-emperor",
+      "correctUrlConsulted": null,
+      "passage": "Chronicle tradition; overview",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: León I es proclamado emperador en Constantinopla con participación del patriarca.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 122,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Zeno-Byzantine-emperor",
+      "correctUrlConsulted": null,
+      "passage": "Overview of reign",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Zenón gobierna en crisis con grupos godos y conflictos sucesorios.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 123,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/cathen/07218b.htm",
+      "correctUrlConsulted": "https://www.tertullian.org/fathers/evagrius_3_book3.htm",
+      "passage": "Evagrius, Ecclesiastical History III.13–14; Henotikon text preserved in III.14",
+      "supportedClaim": "Supports Zeno’s letter addressed to clergy and laity of Alexandria, Egypt, Libya, and Pentapolis, invoking Nicaea and Constantinople/Ephesus to pursue unity; the text avoids a direct Chalcedonian two-natures formula.",
+      "problems": "The document’s intended audience is regional, not a universal imperial edict to all churches. Evagrius writes late 6th century and narrates retrospectively; 482 is accepted chronology but not explicitly dated in quoted document.",
+      "coverageRead": "Opened translation and read III.13–14 including document text; Walford translation only, not Greek critical edition.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 124,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/1A*.html",
+      "correctUrlConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/1F%2A.html",
+      "passage": "Procopius, Persian Wars I.24.1 and following",
+      "supportedClaim": "Supports the Nika insurrection in Byzantium/Constantinople, the “Nika” watchword, destruction/fire and threat to imperial rule as narrated by Procopius.",
+      "problems": "Correct URL was Wars/1F, not War/1A. Procopius is close to events but rhetorically frames them; avoid treating speeches as verbatim. The earlier Hagia Sophia destruction is part of the account, but separate fire chronology should be checked in text.",
+      "coverageRead": "Read search-result excerpt identifying I.24 and its opening; primary page directly identified, full passage should be opened for detailed wording.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 125,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+      "correctUrlConsulted": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+      "passage": "Procopius, De Aedificiis I.1.",
+      "supportedClaim": "Justinian reconstruyó Hagia Sophia, dedicada en 537.",
+      "problems": "Buildings I.1 describe edificio y patrocinio pero la fecha de dedicación 537 debe confirmarse con Chronicon Paschale u otra fuente; no suponer que el pasaje proporciona toda la cronología. Procopio panegírico.",
+      "coverageRead": "Referencia citada identificada; el texto del pasaje no se abrió en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 126,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3812.htm",
+      "correctUrlConsulted": null,
+      "passage": "Council acts",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Segundo Concilio de Constantinopla aborda los Tres Capítulos.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 127,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+      "correctUrlConsulted": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+      "passage": "Chronicle traditions (Theophanes, Chronographia AM 6118; localizador a verificar).",
+      "supportedClaim": "Avaros sitiaron Constantinopla en 626 mientras los persas amenazaban desde la orilla asiática; defensa bizantina repelió el asedio.",
+      "problems": "La URL de Britannica es síntesis terciaria; vincular una fuente primaria (Theophanes/Chronicon Paschale) con localizador. Cuidado, persas no son una fuerza de asedio conjunta en la misma ribera.",
+      "coverageRead": "Solo descripción/título de referencia identificado; source primary no consultado en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 128,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/event/Arab-Byzantine-wars",
+      "correctUrlConsulted": "https://www.medievalists.net/2022/07/was-constantinople-besieged-in-674-78/",
+      "passage": "Critical discussion of Theophanes’ chronological source compilation; cites Howard-Johnston and Jankowiak",
+      "supportedClaim": "Supports that the conventional continuous 674–678 siege chronology is contested; modern source criticism identifies editorial/source-chronology problems and alternative reconstructions.",
+      "problems": "This is a secondary explainer, not sufficient as final academic citation. Howard-Johnston argues no multi-year siege; Jankowiak places related operations earlier, late 660s. Keep as contested Arab operations around Constantinople, not a confidently dated continuous siege.",
+      "coverageRead": "Read article search extract; identified bibliography and competing arguments. Need primary Theophanes page and academic work directly consulted before final factual signoff.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 129,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+      "correctUrlConsulted": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+      "passage": "Theophanes, Chronographia AM 6209.",
+      "supportedClaim": "Asedio omeya de 717–718 frustrado.",
+      "problems": "URL es secundaria; Theophanes es fuente posterior y presenta relato de los ataques. Añadir referencia académica para controversia de cronología/cifras y distinguir bloqueos terrestres y navales.",
+      "coverageRead": "No se inspeccionó fuente primaria en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 130,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+      "correctUrlConsulted": null,
+      "passage": "Oxford, Iconoclast Controversy 726–843",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: León III inicia políticas contra ciertas imágenes; la cronología y el primer decreto son inciertos.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 131,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3819.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3819.htm",
+      "passage": "Actas del Concilio de Nicea II (787), pasajes de sesión 7 que citan/sintetizan Hieria (754).",
+      "supportedClaim": "Sínodo de Hieria definió iconoclasia imperial bajo Constantino V.",
+      "problems": "No sobreviven actas independientes de Hieria; conocemos posición sobre todo mediante refutación/reconstrucción en Nicea II. Etiquetar la mediación y no tratar como transcripción neutral.",
+      "coverageRead": "Página primaria de Nicea II abierta; reconstrucción exacta de la sección de Hieria aún por fijar.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 132,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.newadvent.org/fathers/3819.htm",
+      "correctUrlConsulted": "https://www.newadvent.org/fathers/3819.htm",
+      "passage": "Nicaea II, Session VII definition and anathemas on images",
+      "supportedClaim": "Supports council’s defense of images and distinction of honorific veneration from latreia/service; council rejects iconoclast position in its own wording.",
+      "problems": "“Restores” can suggest uniform immediate compliance; better say council defines/affirms veneration in 787. The page contains a translated excerpt, not all acts or subsequent enforcement history.",
+      "coverageRead": "Opened full acts page and read definition/anathema and final veneration paragraphs.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 133,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Irene-Byzantine-empress",
+      "correctUrlConsulted": null,
+      "passage": "Theophanes, Chronicle AM 6289",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Irene depone a Constantino VI y gobierna como emperatriz.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 134,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "correctUrlConsulted": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "passage": "Einhard, Vita Karoli Magni 28 (coronación en Roma).",
+      "supportedClaim": "León III coronó a Carlomagno emperador en Roma en Navidad del 800.",
+      "problems": "Fuera de la localización oriental de New Rome; la fuente de Einhard es retrospectiva y dice Carlomagno no conocía el plan. Si Anna está en Constantinopla, solo puede enterarse por noticias posteriores; no presentar testigo local en Roma. Evento quizá mantener como noticia exterior, no escena en Constantinopla.",
+      "coverageRead": "Fuente indicada en corpus; pasaje no extraído en esta pasada.",
+      "auditStatus": "reviewed_with_correction_or_caveat"
+    },
+    {
+      "eventId": 135,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+      "correctUrlConsulted": null,
+      "passage": "Theophanes, Chronicle AM 6295",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Irene es depuesta; Nicéforo I toma el trono en Constantinopla.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 136,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+      "correctUrlConsulted": null,
+      "passage": "Theophanes, Chronicle AM 6303",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Nicéforo muere en campaña contra los búlgaros en Pliska.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 137,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://www.britannica.com/biography/Leo-V-the-Armenian",
+      "correctUrlConsulted": null,
+      "passage": "Theophanes, Chronicle AM 6305",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: León V recupera el trono tras derrota de Miguel I en Versinikia.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 138,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+      "correctUrlConsulted": null,
+      "passage": "Oxford, Iconoclast Controversy",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: Sínodo en Constantinopla reactiva políticas iconoclastas.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    },
+    {
+      "eventId": 139,
+      "campaigns": [
+        "new-rome"
+      ],
+      "originalUrl": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+      "correctUrlConsulted": null,
+      "passage": "Oxford, Iconoclast Controversy",
+      "supportedClaim": "Según el resumen/localizador actualmente atribuido en corpus: La regente Teodora restaura la veneración de imágenes en sínodo; comienza la conmemoración del Triunfo de la Ortodoxia.",
+      "problems": "Pendiente: URL y pasaje no comprobados directamente en esta auditoría; no considerar la referencia validada.",
+      "coverageRead": "Solo leídos los metadatos del evento en corpus.json; fuente no consultada en esta pasada.",
+      "auditStatus": "pending_source_check"
+    }
+  ],
+  "consultedSources": [
+    {
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Claud.+25",
+      "title": "Suetonius, Claudius 25.4, Perseus",
+      "consultedScope": "Pasaje y comentario académico Cambridge Companion consultados por web search; permite afirmar expulsión bajo Claudio, no fecha exacta ni identidad segura de Chrestus."
+    },
+    {
+      "url": "https://doi.org/10.1017/9781107280489.016",
+      "title": "Cambridge Companion to the Age of Nero, cap. 14",
+      "consultedScope": "Extracto del buscador: debate de Chrestus y datación usual c.49; no se afirma lectura de capítulo completo."
+    },
+    {
+      "url": "https://www.uni-giessen.de/ub/de/ueber-uns/sam/papyri-ostraka-keilschrifttafeln/papyri",
+      "title": "Universitätsbibliothek Giessen, Papyri",
+      "consultedScope": "Sección de colecciones sobre P.Giss.40 / inv.15 y Memory of the World."
+    },
+    {
+      "url": "https://www.constitutio.de/en/papyrus/known-history-of-the-constitutio-antoniniana",
+      "title": "Constitutio.de, known history of the papyrus",
+      "consultedScope": "Página sobre P.Giss.40, traducción griega, emisión 212/213 y escritura c.215; página consultada, no análisis paleográfico propio."
+    },
+    {
+      "url": "https://era.ed.ac.uk/bitstream/handle/1842/33299/Imrie2015.pdf",
+      "title": "Imrie 2015, The Constitutio Antoniniana and P. Giss. 40",
+      "consultedScope": "Extracto visible por buscador sobre fragmentariedad y controversia; no libro/tesis completa."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2813.htm",
+      "title": "Athanasius, Apologia ad Constantium",
+      "consultedScope": "Abierta; lectura puntual §§4–5 (movimientos: Alejandría a Roma; cronología relativa, no año de llegada). Traducción NPNF."
+    },
+    {
+      "url": "https://www.athanasius.theologie.uni-erlangen.de/athanasius-life-and-works.html",
+      "title": "Athanasius, Life and Works, University of Erlangen",
+      "consultedScope": "Extracto académico de cronología/corpus visible por búsqueda; no monografía completa."
+    },
+    {
+      "url": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=1438&id=6",
+      "title": "The Presbyters Project, Rome council source record",
+      "consultedScope": "Registro de fuente resume sínodo romano de 339/340 y Apologia contra Arianos; registro consultado."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2817.htm",
+      "title": "Athanasius, De Synodis / On Councils of Ariminum and Seleucia",
+      "consultedScope": "Página abierta para comprobar título/discrepancia del locator; pasaje §33 aún requiere revalidación."
+    },
+    {
+      "url": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=1647&id=6",
+      "title": "The Presbyters Project, Rimini letter source record",
+      "consultedScope": "Extracto sobre carta de Rimini 359 citada por Athanasius, De Synodis; no monografía completa."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25024.htm",
+      "title": "Eusebius, Life of Constantine, Book IV",
+      "consultedScope": "Página abierta; se comprobó que URL corresponde a Book IV. No se hizo cotejo crítico integral."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26017.htm",
+      "title": "Socrates Scholasticus, Church History Book VII",
+      "consultedScope": "Página abierta; corpus locator VII.45 para translación de 438 queda por leer punto a punto."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25023.htm",
+      "title": "Eusebius, Life of Constantine, Book III, New Advent",
+      "consultedScope": "III.18–20 abiertos y leídos por extracto: fuente es la carta imperial transmitida por Eusebio, no acta conciliar; incluye lenguaje hostil y polémico sobre los judíos. Solo pasajes relevantes, no libro completo."
+    },
+    {
+      "url": "https://royalarchives.org/ecumenical_councils/first_council_of_nicaea/canon_20/",
+      "title": "First Council of Nicaea, Canon 20",
+      "consultedScope": "Texto consultado por búsqueda y página; trata postura de oración, no fecha de Pascua."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/5C%2A.html",
+      "title": "Procopius, Gothic Wars I.14–23, LacusCurtius",
+      "consultedScope": "Resultado de página/capítulos consultado; cubre asedio de Roma. No se afirma lectura íntegra."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/7G%2A.html",
+      "title": "Procopius, Gothic Wars III.36–40, LacusCurtius",
+      "consultedScope": "Resultado consultado para comprobar estructura real de URLs/libros; confirma que segmentos de Book III tienen numeración distinta del locator viejo."
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_book_of_the_popes_%28Liber_pontificalis%29_I-_%28IA_cu31924006163897%29.pdf",
+      "title": "Liber Pontificalis I, English translation, Internet Archive scan",
+      "consultedScope": "Extracto de búsqueda sobre Vita Iohannis I: misión de Teodorico a Constantinopla y pontificado 523–526; no volumen completo."
+    },
+    {
+      "url": "https://dl1.cuni.cz/mod/resource/view.php?id=497826",
+      "title": "Codex Theodosianus 16.1.2, Cunctos populos",
+      "consultedScope": "Texto latino y dateline Thessalonica, 27 Feb 380 consultados."
+    },
+    {
+      "url": "https://asset.library.wisc.edu/1711.dl/L3UWRW7X3REZZ82/R/file-e51bf.pdf",
+      "title": "Procopius of Caesarea and Historical Memory in the Sixth Century",
+      "consultedScope": "Extracto de buscador: entrada 9 Dec 536, asedio Feb 537–Mar 538 y toma de Roma en Dec 546; no PDF entero."
+    },
+    {
+      "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "title": "Lawrence H. Schiffman, From Text to Tradition excerpt hosted by Center for Online Judaic Studies",
+      "consultedScope": "Read the page excerpt, especially lines 19–33 on post-70 tannaitic centers, Akiva’s c.80–132 floruit, Mishnah redaction c.200 and scholarly uncertainty. Excerpt only, not book in full."
+    },
+    {
+      "url": "https://jewishvirtuallibrary.org/yavneh",
+      "title": "Yavneh, Encyclopaedia Judaica excerpt hosted by Jewish Virtual Library",
+      "consultedScope": "Read the short town article; it identifies the location and notes a traditional tomb attribution, but did not substantiate a dated Yavneh academy event."
+    }
+  ]
+}

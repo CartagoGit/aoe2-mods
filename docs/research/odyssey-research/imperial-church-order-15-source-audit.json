@@ -1,0 +1,65 @@
+{
+  "dossierId": "15-long-distance-dispatch-nicomedia",
+  "order": 15,
+  "architectApproval": false,
+  "scope": "Read-only collection; no repo/Git changes or architecture decision.",
+  "selectionWindow": "c. 332–333 CE in dossier; off-map destination.",
+  "findings": [
+    "Eusebius VC IV.8–13 reports an embassy from the Persian king and Constantine's concern for Christians in Persia; IV.9 introduces a letter addressed to Sapor and IV.9–13 preserves its text. Eusebius claims to translate the letter from Latin into Greek.",
+    "The passage does not date the letter or locate writing/dispatch in Nicomedia. It does not establish Persian-side receipt, response, or effects. Nicomedia as local map location is therefore not linked to the letter scene by the consulted source.",
+    "Kyle Smith (2016), chapter 1, treats the letter as probably authentic but notes debate and absence of independent attestation; estimates 324–337, earlier more likely. This gives no support for c.332–333 as a precise date.",
+    "Oxford ARCON institutional page identifies ancient Nicomedia with modern İzmit and describes a current archaeological mapping project, but not a published fourth-century city plan relevant to this event."
+  ],
+  "sources": [
+    {
+      "urlCandidate": "https://www.newadvent.org/fathers/25024.htm",
+      "urlActuallyConsulted": "https://www.newadvent.org/fathers/25024.htm",
+      "author": "Eusebius of Caesarea; English translation in Philip Schaff, NPNF Series II, vol. 1.",
+      "publicationDate": "Ancient 4th-century work; translation volume 1890; New Advent transcription current.",
+      "exactLocator": "Life of Constantine IV.8–13, especially IV.8–9 framing and IV.9–13 letter.",
+      "coverageActuallyRead": "Read specified online passage. Text only; no figures or pixels.",
+      "sourceBias": "Panegyrical biographer; says he translated letter; no Persian-side witness."
+    },
+    {
+      "urlCandidate": "https://sites.duke.edu/clas/files/2016/10/smith_constantine.pdf",
+      "urlActuallyConsulted": "https://sites.duke.edu/clas/files/2016/10/smith_constantine.pdf",
+      "author": "Kyle Smith, Constantine and the Captive Christians of Persia: Martyrdom and Religious Identity in Late Antiquity.",
+      "publicationDate": "2016, University of California Press.",
+      "exactLocator": "Selected printed pp.28–32 (zero-based PDF49–53); initial delegated page pairing was inconsistent and is corrected against architect direct consultation.",
+      "coverageActuallyRead": "Selected PDF text/search excerpts, not whole monograph; no images inspected.",
+      "sourceBias": "Modern academic interpretation, not another ancient witness; argues authenticity probable but notes uncertainty."
+    },
+    {
+      "urlCandidate": "https://www.classics.ox.ac.uk/node/4988256",
+      "urlActuallyConsulted": "https://www.classics.ox.ac.uk/node/4988256",
+      "author": "Oxford Faculty of Classics, ARCON project page, PI Tuna Şare Ağtürk.",
+      "publicationDate": "Project began August 2025; page current at access.",
+      "exactLocator": "Project overview and details, paragraphs 1–5.",
+      "coverageActuallyRead": "Institutional text and image labels read; no map/image pixels inspected.",
+      "sourceBias": "Project overview; not a final city plan."
+    },
+    {
+      "urlCandidate": "https://commons.wikimedia.org/wiki/File:Karte_Nikomedia.png",
+      "urlActuallyConsulted": "https://commons.wikimedia.org/wiki/File:Karte_Nikomedia.png",
+      "author": "San Jose; page attributes self-created map to 19 Jan 2006 from GMT and terrain datasets.",
+      "publicationDate": "Map 2006; file history 2007.",
+      "exactLocator": "File-page map caption/source and license block.",
+      "coverageActuallyRead": "Metadata read; map pixels not inspected.",
+      "sourceBias": "Modern general locator, not archaeological reconstruction.",
+      "license": "CC BY-SA 3.0 and GFDL 1.2+ listed; attribution/share-alike conditions."
+    }
+  ],
+  "chronologyGuardrail": "Treat c.332–333 as dossier-provided, unverified dating; Eusebius IV.8–13 gives no exact date. Do not infer dispatch from Nicomedia.",
+  "geographyGuardrail": "Map may identify Nicomedia/İzmit, but sources do not place letter-writing or dispatch there.",
+  "imageInspection": {
+    "textRead": true,
+    "captionsRead": true,
+    "imagePixelsInspected": false,
+    "mapPixelsInspected": false
+  },
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "approval": "independent review pending",
+    "decision": "Remove c332–333 precision and attest no Nicomedia writing location; retain the original candidate and explicitly frame retrospective local fiction."
+  }
+}

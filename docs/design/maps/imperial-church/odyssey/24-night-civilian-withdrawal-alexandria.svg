@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Night of the Open Doors geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Night of the Open Doors</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline data-corridor="mainland-withdrawal-road" points="165.94,421.13 394.27,410.00 403.78,587.96" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>mainland-withdrawal-road: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="western-shelter-alternative" points="165.94,421.13 251.56,543.47 403.78,587.96" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-shelter-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northern-context-link" points="165.94,421.13 308.65,298.78 394.27,410.00" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>northern-context-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="eastern-patrol-approach" points="546.49,410.00 394.27,410.00" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-patrol-approach: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-supply-link" points="251.56,543.47 394.27,410.00 403.78,587.96" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southern-supply-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="165.94" cy="421.13" r="20" fill="none" stroke="#91512f"/>
+<text x="188.94" y="421.13" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional western civilian preparation</text>
+<text x="730" y="204" font-family="sans-serif" font-size="12">court</text>
+<circle cx="308.65" cy="298.78" r="20" fill="none" stroke="#91512f"/>
+<text x="331.65" y="298.78" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional northern context shelter</text>
+<circle cx="394.27" cy="410.00" r="20" fill="none" stroke="#91512f"/>
+<text x="417.27" y="410.00" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional controlled mainland junction</text>
+<circle cx="546.49" cy="410.00" r="20" fill="none" stroke="#91512f"/>
+<text x="569.49" y="410.00" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional eastern patrol pocket</text>
+<circle cx="251.56" cy="543.47" r="20" fill="none" stroke="#91512f"/>
+<text x="274.56" y="543.47" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional southwestern working shelter</text>
+<circle cx="403.78" cy="587.96" r="20" fill="none" stroke="#91512f"/>
+<text x="426.78" y="587.96" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: Fictional southern civilian refuge</text>
+<text x="730" y="475" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="499" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="523" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="547" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="571" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="595" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="619" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="643" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [29.915, 31.173, 29.976, 31.215]; cosine-corrected longitude; approximate districts</text>
+</svg>

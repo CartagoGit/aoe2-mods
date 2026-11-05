@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="Before the Lakeside Council geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">Before the Lakeside Council</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">360 × 360 · antioch · N ↑ E →</text>
+<polyline data-control="schematic-water" points="297.08,735.00 289.96,655.53" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="289.96,655.53 253.95,521.60" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="253.95,521.60 109.88,119.82" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-control="schematic-water" points="109.88,119.82 64.22,85.00" fill="none" stroke="#478bba" stroke-width="2" stroke-dasharray="4 5"><title>architect schematic based on regional geography; not surveyed ancient hydrology</title></polyline>
+<polyline data-corridor="northwest-record-circuit" points="361.98,494.83 318.77,351.97" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northwest-record-circuit: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-record-circuit" points="361.98,494.83 491.66,396.60" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>east-record-circuit: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="north-record-circuit" points="361.98,494.83 318.77,351.97 484.45,173.39" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>north-record-circuit: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="east-north-alternative" points="361.98,494.83 491.66,396.60 484.45,173.39" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>east-north-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southeast-work-link" points="361.98,494.83 462.83,548.40 491.66,396.60" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>southeast-work-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="361.98" cy="494.83" r="20" fill="none" stroke="#91512f"/>
+<text x="384.98" y="494.83" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Common local copying court</text>
+<circle cx="318.77" cy="351.97" r="20" fill="none" stroke="#91512f"/>
+<text x="341.77" y="351.97" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional northwestern reception court</text>
+<circle cx="491.66" cy="396.60" r="20" fill="none" stroke="#91512f"/>
+<text x="514.66" y="396.60" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional eastern reception court</text>
+<circle cx="484.45" cy="173.39" r="20" fill="none" stroke="#91512f"/>
+<text x="507.45" y="173.39" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional northern reception court</text>
+<circle cx="462.83" cy="548.40" r="20" fill="none" stroke="#91512f"/>
+<text x="485.83" y="548.40" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Ordinary southeastern work shelter</text>
+<text x="730" y="425" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="449" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="473" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="497" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="521" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="545" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="569" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="593" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [36.14, 36.185, 36.205, 36.25]; cosine-corrected longitude; approximate districts</text>
+</svg>

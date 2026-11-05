@@ -1,0 +1,461 @@
+{
+  "campaigns": [
+    {
+      "id": "jewish-tradition",
+      "events": [
+        {
+          "date": "14 Mar 388",
+          "event": "Una constitución de Teodosio I, Valentiniano II y Arcadio prohíbe el matrimonio entre judíos y cristianos y equipara esa unión con adulterio en la sanción legal.",
+          "place": "Tesalónica (emisión de la ley)",
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+          "locator": "Codex Theodosianus 3.7.2; texto latino y fecha fija 14/03/388. Contexto consultado: https://files.znu.edu.ua/files/Bibliobooks/Kushynova/0034719.pdf, sección CTh 3.7.2 / 9.7.5.",
+          "qualification": "La ley muestra una frontera jurídica que el poder imperial quiso imponer; su promulgación no demuestra aplicación uniforme ni permite inferir que todos los matrimonios mixtos cesaran."
+        },
+        {
+          "date": "29 Sep 393",
+          "event": "Teodosio I afirma que el judaísmo no está prohibido por ley y ordena contener a quienes, bajo el nombre del cristianismo, destruyen o saquean sinagogas.",
+          "place": "Constantinopla (emisión de la constitución)",
+          "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+          "locator": "Codex Theodosianus 16.8.9, líneas 817–818 de la página consultada; la constitución ordena al comes y magister militum de Oriente proteger reuniones y sinagogas. Contexto: https://academic.oup.com/book/32151/chapter-abstract/268116920.",
+          "qualification": "Es una orden normativa, no una medición de cumplimiento. Leída junto con las restricciones de 388 y 423, evidencia políticas imperiales ambivalentes, no tolerancia constante."
+        },
+        {
+          "date": "11 Apr 399",
+          "event": "Una ley de Arcadio y Honorio prohíbe que los enviados del patriarca judío sigan recaudando aportes en las sinagogas; las sumas ya reunidas se redirigen al tesoro imperial.",
+          "place": "Milán (emisión de la ley)",
+          "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+          "locator": "Codex Theodosianus 16.8.14, entrada fechada 11 de abril de 399 (en la página consultada; confirmar sección 16.8.14). Contexto consultado: https://study.sci.house/roman-law/prohibition-collecting-tax-the-111576.html.",
+          "qualification": "La constitución se dirige al prefecto pretoriano de Italia y usa lenguaje hostil sobre el patriarca; describe una medida fiscal-administrativa y no prueba que todas las comunidades dejaran de contribuir de inmediato."
+        },
+        {
+          "date": "20 Oct 415",
+          "event": "Una constitución imperial remueve a Gamaliel de su prefectura honoraria y limita su autoridad: le prohíbe establecer nuevas sinagogas y decidir litigios entre judíos y cristianos.",
+          "place": "Constantinopla (emisión de la ley; destinatario en la corte oriental)",
+          "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+          "locator": "Codex Theodosianus 16.8.22; página consultada, líneas 863–866, fecha 20 de octubre de 415. Texto secundario descriptivo: https://study.sci.house/roman-law/interdiction-marriage-between-christians-and-111564.html.",
+          "qualification": "La medida refleja una disputa sobre privilegio e intermediación del patriarca. No equivale por sí sola a la desaparición inmediata del patriarcado; el hito actual de c.425 aborda esa fase posterior."
+        },
+        {
+          "date": "Finales del siglo IV (datación epigráfica aproximada)",
+          "event": "Una columna inscrita enumera miembros y benefactores asociados con la comunidad judía local; las dos caras contienen listas de nombres que documentan vida comunitaria y vínculos con la sinagoga.",
+          "place": "Aphrodisias, Caria (actual Geyre, Turquía)",
+          "url": "https://aphrodisias.classics.ox.ac.uk/tr/tr-jewishcom.html",
+          "locator": "Oxford Aphrodisias Excavations, “Jewish Community List”; inscripción monumental de 2,8 m, descripción de las listas en las líneas 39–41 de la página. Contexto de los problemas de datación: https://archiv.ub.uni-heidelberg.de/propylaeumdok/667/1/Chaniotis_The_Jews_of_Aphrodisias_2002.pdf.",
+          "qualification": "La página de excavación la atribuye a finales del siglo IV; la bibliografía discute la datación paleográfica y la contemporaneidad de ambas caras. La lista conserva nombres de varones y no equivale a un censo completo de la comunidad."
+        },
+        {
+          "date": "351/352 (date and scope debated)",
+          "event": "Rebel forces in Diocaesarea (Sepphoris) and other Palestinian towns are suppressed by Ursicinus during Gallus’s Caesarship.",
+          "place": "Diocaesarea/Sepphoris, Galilee (modern Zippori, Israel)",
+          "url": "https://en.wikisource.org/wiki/Ecclesiastical_history_(Socrates_Scholasticus)/Book_II/Chapter_XXXIII",
+          "locator": "Socrates Scholasticus, Ecclesiastical History II.33, “Of the Jews inhabiting Dio-Cæsarea in Palestine”; parallel report: Sozomen, Ecclesiastical History IV.7, https://orthodoxchurchfathers.com/fathers/npnf202/npnf2031.html.",
+          "qualification": "Socrates and Sozomen are later Christian historians, not contemporary witnesses; their reports differ in framing and likely magnify the episode. Ammianus does not mention it. Sepphoris is named in the account, but exact battle sequence, named leaders, scale, and destruction date should not be asserted as settled."
+        },
+        {
+          "date": "c. early–mid 4th century (archaeological dating; range debated)",
+          "event": "The synagogue at Hammath Tiberias receives a mosaic floor combining a Torah shrine and menorahs with a zodiac and Helios panel.",
+          "place": "Hammath Tiberias, immediately south of Tiberias, Lower Galilee (Israel)",
+          "url": "https://cja.huji.ac.il/browser.php?id=644&mode=alone",
+          "locator": "Hebrew University Center for Jewish Art, object record “Hammath Tiberias Synagogue”; Oxford chapter “Ancient Synagogues in Palestine: An Overview” discusses a fourth-century date and competing early/late-fourth-century datings: https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283.",
+          "qualification": "The floor is usually dated to the fourth century, but exact dating varies within that century. This is a site-specific artifact and could enrich, rather than duplicate as a separate mission, corpus event 76 on Galilean synagogue mosaics. The imagery is evidence of local visual practice, not proof that all Jews accepted one theology or interpreted Helios literally."
+        },
+        {
+          "date": "late 4th–early 5th century (radiocarbon and pottery; c.400)",
+          "event": "A monumental basilica synagogue is constructed at Huqoq; its later mosaic program includes biblical narrative panels such as Samson carrying Gaza’s gate.",
+          "place": "Ḥorvat Ḥuqoq, Eastern Lower Galilee, about 12.5 km north of Tiberias (Israel)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11813141/",
+          "locator": "Magness et al., “Understanding the history of the late Roman synagogue at Huqoq in Israel’s Galilee through radiocarbon dating and observations on site formation,” PLOS ONE 20.2 (2025), especially abstract and sections “Late Roman synagogue” and “Conclusion” (construction around end 4th/beginning 5th c.; lines 130, 145, 300–312 in consulted version).",
+          "qualification": "Recent pottery and radiocarbon work places construction around c.400; the site’s exact use-life is poorly preserved. Do not assign all mosaics to the initial construction phase or use the famous panels as evidence of the building’s exact opening date. It is a distinct village/site and visual program, although it overlaps thematically with the broad synagogue-art entry 76."
+        }
+      ],
+      "evidenceToEnrich": [
+        {
+          "date": "Siglo IV, fase arqueológica discutida",
+          "event": "La sinagoga de Ḥammat Tiberias tiene un pavimento musivo con dedicatorias griegas; la inscripción nombra a Severus como discípulo de patriarcas. Puede concretar el hito ya existente sobre mosaicos sinagogales galileos, pero no conviene contarlo como episodio adicional separado.",
+          "place": "Ḥammat Tiberias, inmediatamente al sur de Tiberíades, Galilea inferior",
+          "url": "https://www.posenlibrary.com/entry/greek-inscriptions-mosaic-hammat-tiberias-lower-galilee",
+          "locator": "Inscripción del pavimento, en especial dedicatoria de Severus, líneas 29–48 y ubicación, líneas 70–77; contextualización arqueológica: https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283.",
+          "qualification": "La fase suele fecharse en el siglo IV, pero la datación propuesta varía de comienzos a fines de ese siglo; no asignar un año ni presentarla como prueba de una práctica judía uniforme."
+        }
+      ],
+      "notAdded": [
+        "No se añadió un séptimo hito para completar cuota: la pluralidad entre comunidades rabínicas palestinas y babilonias es un proceso útil para contextualizar, pero las fuentes consultadas no permiten fijarle un episodio breve nuevo sin duplicar los hitos existentes sobre academias/talmudim.",
+        "La sinagoga de Sepphoris está fechada en el siglo V, sin precisión que la sitúe con seguridad antes del corte c.425; queda fuera como hito datado, aunque pueda servir para contexto posterior."
+      ]
+    },
+    {
+      "id": "church-of-rome",
+      "events": [
+        {
+          "date": "355–357 (exilio; fechas extremas discutidas)",
+          "event": "Constancio II destierra al obispo Liberio de Roma a Beroea después de que rechaza la fórmula doctrinal que el emperador intenta imponer; Sozomeno atribuye también importancia a su vínculo con Atanasio.",
+          "place": "Beroea de Tracia (actual Stara Zagora, Bulgaria)",
+          "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+          "locator": "Sozomeno, Historia eclesiástica IV.11, especialmente pasajes consultados en líneas 102 y 106–109. Debate cronológico y testimonial: https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/liberius-athanasius-and-the-roman-synod/67FF35EAED46A369C33FCFD72FAC1775.",
+          "qualification": "Sozomeno escribe en el siglo V y organiza retrospectivamente los sucesos; la datación del exilio varía, comúnmente 355–357. Evitar convertir su retrato ejemplar de Liberio en transcripción neutral de una negociación."
+        },
+        {
+          "date": "5–31 Oct 649",
+          "event": "Martín I convoca un sínodo en la basílica de Letrán; 106 obispos debaten las fórmulas imperiales sobre las voluntades y operaciones de Cristo y condenan el monotelismo.",
+          "place": "Basílica de Letrán, Roma",
+          "url": "https://www.jstor.org/stable/jj.38238618",
+          "locator": "The Acts of the Lateran Synod of 649, edición y traducción de Richard Price; introducción sobre el sínodo y las versiones contemporáneas de las actas, secciones III–IV.",
+          "qualification": "Las actas son evidencia cercana al evento, pero la introducción historiográfica advierte que la interpretación tradicional como una lucha simple entre “ortodoxia” y compromiso imperial simplifica motivos y debates. El sínodo no implica supremacía romana inevitable."
+        },
+        {
+          "date": "654–655 (proceso); exilio en Cherson desde mayo de 655",
+          "event": "Tras ser arrestado en Roma en 653 y juzgado en Constantinopla, Martín I recibe una condena de muerte conmutada por exilio; muere en Cherson.",
+          "place": "Chersonesus Taurica (Cherson, actual Sebastopol, Crimea)",
+          "url": "https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html",
+          "locator": "Allen y Neil, Maximus the Confessor and his Companions, extracto de OUP, sección 7, especialmente párrafos que sitúan juicio en Constantinopla y llegada de Martín a Cherson en mayo de 655; notas 4–5 discuten discrepancia de su fecha de muerte.",
+          "qualification": "El extracto consultado identifica discrepancias entre fuentes sobre la muerte: 16 de septiembre de 655 o 13 de abril de 656. El episodio debe enfocarse en el exilio y no presentar una fecha final segura."
+        },
+        {
+          "date": "609 o 613 (consagración; debate historiográfico)",
+          "event": "Bonifacio IV obtiene del emperador Focas el edificio del Panteón y lo convierte en la iglesia de Santa María y los Mártires.",
+          "place": "Panteón, Roma",
+          "url": "https://portal.sds.ox.ac.uk/articles/online_resource/E01429_The_short_Life_of_Boniface_IV_bishop_of_Rome_ob_615_S00841_in_the_Liber_Pontificalis_written_in_Latin_in_Rome_early_in_the_7th_c_mentions_his_conversion_of_the_Pantheon_into_the_church_of_the_blessed_Mary_ever-virgin_S00033_and_of_Al/13807430",
+          "locator": "Liber Pontificalis, Vita Bonifatii IV, c.69, texto latino y traducción reproducidos por Oxford University, Cult of Saints in Late Antiquity; fecha de la cesión/conversión discutida por la bibliografía.",
+          "qualification": "El Liber Pontificalis confirma la conversión, pero no da en este pasaje un año exacto. Una lectura académica reciente propone 13 de mayo de 613 frente a la datación tradicional de 609; no presentar “609” como certeza."
+        }
+      ],
+      "notAdded": [
+        "Gregorio III y el sínodo romano de 731 ya aparecen en church-of-rome; no se duplican. El ejemplo sirve para mostrar una respuesta papal concreta a la controversia iconoclasta, no una supremacía universal ya consumada."
+      ]
+    },
+    {
+      "id": "new-rome",
+      "events": [
+        {
+          "date": "22 Jun 431 (primera sesión)",
+          "event": "El concilio reunido en Éfeso depone a Nestorio tras una disputa cristológica y eclesiopolítica entre las redes de Alejandría y Antioquía; la delegación de Juan de Antioquía llega después y celebra una asamblea rival.",
+          "place": "Éfeso, iglesia de Santa María (actual Selçuk, Turquía)",
+          "url": "https://sourcebooks.web.fordham.edu/basis/ephesus.asp",
+          "locator": "Actas del Concilio de Éfeso, sesión I y documentos asociados; traducción NPNF alojada por Fordham. Para caracterización académica consultada: https://www.cambridge.org/core/books/abs/cambridge-edition-of-early-christian-writings/acts-of-the-council-of-ephesus-juneoctober-431-selected-proceedings/B4E8190281A0B2F93C0B80DCE8537ED5.",
+          "qualification": "Las actas preservan la perspectiva de las facciones participantes; el grupo de Cirilo inició la sesión antes de la llegada de Juan de Antioquía. Evitar presentarlo como consenso pacífico y unánime."
+        },
+        {
+          "date": "1 Aug 527 (inicio del gobierno único; coemperador desde abril)",
+          "event": "A la muerte de Justino I, Justiniano pasa de coemperador a gobernante único en Constantinopla.",
+          "place": "Constantinopla",
+          "url": "https://www.thelatinlibrary.com/marcellinus2.html",
+          "locator": "Marcellinus Comes, Chronicon, entrada 527: consigna que Justino hizo a Justiniano participante y sucesor del reino el 1 de abril; contexto para el comienzo del gobierno único el 1 de agosto: https://www.iranicaonline.org/articles/justinian-i-flavius-petrus-sabbatius-justinianus/.",
+          "qualification": "“Coronación” no debe usarse para el evento del 1 de agosto: Marcellinus fecha la elevación como coemperador en abril. La fecha de gobierno único se reconstruye con la muerte de Justino en agosto."
+        },
+        {
+          "date": "Primavera de 540",
+          "event": "Cosroes I captura y saquea Antioquía durante su incursión por la Siria romana; Procopio describe el asalto, el incendio y el traslado posterior de cautivos.",
+          "place": "Antioquía del Orontes (actual Antakya, Turquía)",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2B%2A.html",
+          "locator": "Procopio, Guerras persas II.8–10; contextualización de la incursión de 540 en https://online.ucpress.edu/SLA/article/7/2/201/196341/God-s-Wrath-over-Antioch-525-540-CEBeginning-of, especialmente discusión de la narrativa de Procopio y su valor como fuente.",
+          "qualification": "Procopio es fuente principal cercana, pero su narración tiene recursos dramáticos y sus obras difieren en tono; no repetir cifras de muertos/cautivos como datos comprobados sin corroboración."
+        },
+        {
+          "date": "637/638 (fecha tradicional de capitulación; cronología discutida)",
+          "event": "Jerusalén/Aelia Capitolina pasa al control árabe tras la guerra romano-persa; la conquista altera el marco político de sus comunidades cristianas orientales.",
+          "place": "Jerusalén/Aelia Capitolina",
+          "url": "https://academic.oup.com/book/6524/chapter-abstract/150435622",
+          "locator": "Robert G. Hoyland, Witnesses to a World Crisis, capítulo sobre fuentes cristianas orientales del siglo VII; para fecha 638 y tradición sobre visita de Umar, véase el examen de Theophilus of Edessa’s Chronicle, entrada 638, contextualizado en https://www.jstor.org/stable/jj.38238823.",
+          "qualification": "La fecha oscila en las fuentes entre 636/637 y 638; los relatos detallados de capitulación y encuentro con Umar se transmiten en cronistas posteriores, no en un acta contemporánea segura. Sophronio ofrece testimonio contemporáneo del peligro en Palestina en su sermón de Navidad de 634, pero ese sermón no documenta la rendición de Jerusalén: https://christtheking.info/catholic-resources-on-adversus-judaeos/selections-of-st-sophronius-of-jerusalems-writings-on-the-jews/."
+        },
+        {
+          "date": "7 Nov 680–16 Sep 681",
+          "event": "The Third Council of Constantinople meets in eighteen sessions and rejects the doctrine of one will and one operation in Christ, condemning key advocates of monothelitism.",
+          "place": "Constantinople, imperial palace complex (modern Istanbul, Turkey)",
+          "url": "https://www.newadvent.org/fathers/3813.htm",
+          "locator": "Acts of the Third Council of Constantinople, opening speech of papal legates and synodal proceedings; the session range is also recorded in the Prosopography of the Byzantine Empire, entry Petros 23: https://pbe.kcl.ac.uk/data/D62/F83.htm.",
+          "qualification": "The surviving acts are factionally situated and theological terminology is technical. This is distinct from the 553 council already in the corpus; avoid projecting later Roman/Orthodox confessional divisions backward."
+        }
+      ],
+      "notAdded": [
+        "El Segundo Concilio de Constantinopla de 553 ya está en el corpus. Se conserva como hito existente, no se clona aquí. Así, de las cinco posibilidades sugeridas, hay cuatro eventos nuevos diferenciados."
+      ]
+    },
+    {
+      "id": "umayyads",
+      "events": [
+        {
+          "date": "700–701 (defeat at Dayr al-Jamājim in 701)",
+          "event": "Ibn al-Ashʿath’s large Iraqi military revolt challenges al-Ḥajjāj and Umayyad rule; after taking Kufa, the rebels are defeated near Dayr al-Jamājim.",
+          "place": "Dayr al-Jamājim, near Kufa (Iraq)",
+          "url": "https://www.iranicaonline.org/articles/kufa/",
+          "locator": "Encyclopaedia Iranica, “Kufa,” passage on the revolt: Ibn al-Ashʿath captures Kufa in 701 and is defeated by al-Ḥajjāj in Rabīʿ I 82/April 701; primary narrative: al-Ṭabarī, History, vol. 18, “The Events of the Years 81–82,” Dayr al-Jamājim report, https://ghayb.com/wp-content/uploads/2016/09/Tabari_Volume_18.pdf.",
+          "qualification": "Al-Ṭabarī preserves later transmitted reports rather than eyewitness records; the secondary source differs on dates and the rebellion’s exact phases. Keep c.700–701 for the broader rising and 701 for the named defeat; do not collapse it into the 740 Zayd revolt."
+        },
+        {
+          "date": "740 (Ṣafar 122 AH; Gregorian date varies by conversion)",
+          "event": "Zayd ibn ʿAlī leads an unsuccessful revolt against Hishām’s Umayyad government in Kufa and is killed after support among Kufans fails to hold.",
+          "place": "Kufa (Iraq)",
+          "url": "https://www.iranicaonline.org/articles/kufa/",
+          "locator": "Encyclopaedia Iranica, “Kufa,” section on the revolt of Zayd b. ʿAlī; corroborating academic synthesis: St Andrews Encyclopaedia of Theology, “Zaydī Shīʿism,” https://www.saet.ac.uk/Islam/ZaydiShiism.",
+          "qualification": "Traditional chronicles disagree in details of the pledge, defections, death, and treatment of the body. State only the revolt and death at Kufa; do not present later Zaydi identity as already fully formed or confuse this with Husayn’s 680 revolt."
+        }
+      ],
+      "notAdded": [
+        "No se añade un evento nuevo para 683: el corpus ya registra el primer asedio omeya de La Meca y la retirada tras la muerte de Yazid.",
+        "No se añade un evento nuevo para 692: el corpus ya registra la derrota y muerte de Ibn al-Zubayr, cierre del desafío político; puede enriquecerse esa entrada con el segundo asedio de al-Hajjaj, pero contarlo como otra misión separada repetiría el mismo desenlace. Véase al-Tabari, History, vol. 21, eventos del año 73/692, https://www.jstor.org/stable/jj.18254935 y extracto de traducción §§40–41: https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/66/78/98/2019667898/2019667898.pdf."
+      ]
+    },
+    {
+      "id": "house-of-ali",
+      "events": [
+        {
+          "date": "c. 656–657 (chronology and reports vary)",
+          "event": "Opponents based at Kharbita resist ʿAlī’s governor in Egypt; expeditions sent by Muḥammad ibn Abī Bakr fail, weakening his hold on the province.",
+          "place": "Kharbita, Nile Delta near Alexandria, Egypt",
+          "url": "https://fliphtml5.com/qzpe/qric/History_of_Al_Tabari_-_Vol_16/",
+          "locator": "Al-Ṭabarī, History, vol. 16, events of year 36, account of the Egyptian governor and the Kharbita opposition; compare vol. 17, “Events of the Year 38,” where the 658 loss of Egypt and death of Muḥammad b. Abī Bakr is reported: https://www.jstor.org/stable/jj.18252726.8.",
+          "qualification": "The accounts are later transmitted chronicles and give partisan framings. This candidate is specifically the local resistance at Kharbita, not the later capture of Fustat or the killing of Muḥammad; keep those later events separate and do not imply that the killing happened at Kharbita."
+        }
+      ],
+      "notAdded": [
+        "No se añade otro hito para la muerte de Hasan: el corpus ya incluye su muerte en Medina bajo fecha tradicional 670. Encyclopaedia Iranica prefiere 2 abril 670 / 5 Rabi I 50 AH, mientras otras cronologías conservan 669; mantener “c.669–670” o 670 con cautela y no duplicar la muerte como evento nuevo. Fuente: https://www.iranicaonline.org/articles/hasan-b-ali/."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "title": "Codex Theodosianus 3.7.2, constitución de 14 de marzo de 388",
+      "consultedScope": "Texto latino y metadatos de fecha/constitución sobre matrimonios mixtos; consultada ficha completa."
+    },
+    {
+      "url": "https://files.znu.edu.ua/files/Bibliobooks/Kushynova/0034719.pdf",
+      "title": "Women and the Law in the Roman Empire: A Sourcebook",
+      "consultedScope": "Extracto consultado para CTh 3.7.2/9.7.5 y discusión legal; no se afirma lectura del libro completo."
+    },
+    {
+      "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+      "title": "Codex Theodosianus, Libro XVI",
+      "consultedScope": "Texto primario consultado en CTh 16.8.9, 16.8.14 y 16.8.22; pasajes latinos y dataciones consignadas en la página."
+    },
+    {
+      "url": "https://academic.oup.com/book/32151/chapter-abstract/268116920",
+      "title": "“The sect of the Jews is prohibited by no law”: CTh 16.8.9",
+      "consultedScope": "Solo título/resumen académico consultado, que asocia la ley a Constantinopla y septiembre de 393; no se afirma lectura del capítulo entero."
+    },
+    {
+      "url": "https://study.sci.house/roman-law/prohibition-collecting-tax-the-111576.html",
+      "title": "Prohibition on Collecting Tax by the Patriarch, 11 April 399",
+      "consultedScope": "Ficha de fuente jurídica consultada para destinatario, fecha, alcance tributario y agentes del patriarca; confrontada con el texto latino de CTh 16.8.14."
+    },
+    {
+      "url": "https://study.sci.house/roman-law/interdiction-marriage-between-christians-and-111564.html",
+      "title": "Roman law entry on restrictions concerning Jewish communal officials and synagogues",
+      "consultedScope": "Ficha contextual consultada para CTh 16.8.22 y ley de 415; se usó junto con el texto primario latino."
+    },
+    {
+      "url": "https://aphrodisias.classics.ox.ac.uk/tr/tr-jewishcom.html",
+      "title": "Oxford Aphrodisias Excavations: Jewish Community List",
+      "consultedScope": "Descripción de la inscripción, localización, altura y listas de nombres; sitio arqueológico de Oxford."
+    },
+    {
+      "url": "https://archiv.ub.uni-heidelberg.de/propylaeumdok/667/1/Chaniotis_The_Jews_of_Aphrodisias_2002.pdf",
+      "title": "Angelos Chaniotis, “The Jews of Aphrodisias”",
+      "consultedScope": "Artículo académico abierto consultado para problemas de datación y lectura de inscripciones de Aphrodisias; no se atribuye acuerdo absoluto sobre fechas."
+    },
+    {
+      "url": "https://www.posenlibrary.com/entry/greek-inscriptions-mosaic-hammat-tiberias-lower-galilee",
+      "title": "Greek Inscriptions on Mosaic from Ḥammat Tiberias",
+      "consultedScope": "Texto traducido de las dedicatorias y ubicación del objeto consultados; la página acredita traducción de Moshe Dothan."
+    },
+    {
+      "url": "https://academic.oup.com/british-academy-scholarship-online/book/57508/chapter/467272283",
+      "title": "Ancient Synagogues in Palestine: An Overview",
+      "consultedScope": "Extracto académico consultado sobre cronologías divergentes de Hammat Tiberias y patrones de datación de sinagogas; no se afirma lectura íntegra del capítulo."
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+      "title": "Sozomeno, Historia eclesiástica IV.11",
+      "consultedScope": "Capítulo primario traducido consultado para destierro de Liberio a Beroea y las razones doctrinales que el historiador atribuye."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-ecclesiastical-history/article/liberius-athanasius-and-the-roman-synod/67FF35EAED46A369C33FCFD72FAC1775",
+      "title": "“Liberius, Athanasius and the Roman Synod”",
+      "consultedScope": "Extracto académico consultado sobre cronología 355–357 y desacuerdos entre Sozomeno, Atanasio y Ammiano; no se afirma lectura del artículo completo."
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.38238618",
+      "title": "Richard Price, The Acts of the Lateran Synod of 649",
+      "consultedScope": "Tabla de contenidos e introducción consultadas; confirma versiones griega/latina contemporáneas y fechas/sede 5–31 octubre en la basílica de Letrán."
+    },
+    {
+      "url": "https://www.myriobiblos.gr/texts/english/allenneil_maximus_7.html",
+      "title": "Pauline Allen y Bronwen Neil, Maximus the Confessor and his Companions, extracto",
+      "consultedScope": "Extracto de OUP, sección 7 y notas 4–5; cronología de detención, juicio y exilio de Martín y discrepancia de muerte."
+    },
+    {
+      "url": "https://portal.sds.ox.ac.uk/articles/online_resource/E01429_The_short_Life_of_Boniface_IV_bishop_of_Rome_ob_615_S00841_in_the_Liber_Pontificalis_written_in_Latin_in_Rome_early_in_the_7th_c_mentions_his_conversion_of_the_Pantheon_into_the_church_of_the_blessed_Mary_ever-virgin_S00033_and_of_Al/13807430",
+      "title": "Oxford Cult of Saints in Late Antiquity, E01429: Liber Pontificalis, Life 69",
+      "consultedScope": "Entrada primaria digital, texto latino y traducción de la noticia de conversión del Panteón; incluye discusión cronológica y bibliografía."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/papers-of-the-british-school-at-rome/article/papacy-and-byzantium-in-the-seventh-and-early-eighthcentury-sections-of-the-liber-pontificalis/BD2854E7D258B73EF5E3E780EDBA3550",
+      "title": "“The Papacy and Byzantium in the Seventh- and Early Eighth-Century Sections of the Liber Pontificalis”",
+      "consultedScope": "Resumen/extracto consultado: propone 13 de mayo de 613 en vez de 609 y advierte problemas en la representación del Panteón; no se afirma lectura íntegra del artículo."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/basis/ephesus.asp",
+      "title": "Council of Ephesus (431), translated acts and documents",
+      "consultedScope": "Traducción consultada de sesión I, documentos, actas y canones; edición NPNF reproducida por Fordham."
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-edition-of-early-christian-writings/acts-of-the-council-of-ephesus-juneoctober-431-selected-proceedings/B4E8190281A0B2F93C0B80DCE8537ED5",
+      "title": "Cambridge Edition of Early Christian Writings: Acts of Ephesus, 431",
+      "consultedScope": "Resumen académico consultado para el carácter de la disputa y la dinámica entre Cyril, Nestorius y el poder imperial; no se afirma lectura del capítulo completo."
+    },
+    {
+      "url": "https://www.thelatinlibrary.com/marcellinus2.html",
+      "title": "Marcellinus Comes, Chronicon",
+      "consultedScope": "Entrada latina del año 527 consultada: Justino nombra a Justiniano colega y sucesor el 1 de abril."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/justinian-i-flavius-petrus-sabbatius-justinianus/",
+      "title": "Encyclopaedia Iranica, “Justinian I”",
+      "consultedScope": "Extracto académico consultado que fecha el inicio de la autocracia de Justiniano el 1 de agosto de 527."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/Wars/2B%2A.html",
+      "title": "Procopio, Persian Wars II.5–10",
+      "consultedScope": "Búsqueda bibliográfica y página fuente consultadas para el bloque II.8–10 sobre la captura de Antioquía; el acceso de lectura automatizada al texto íntegro dio timeout."
+    },
+    {
+      "url": "https://online.ucpress.edu/SLA/article/7/2/201/196341/God-s-Wrath-over-Antioch-525-540-CEBeginning-of",
+      "title": "“God’s Wrath over Antioch, 525–540 CE”",
+      "consultedScope": "Artículo académico consultado en el tramo que analiza el relato de Procopio sobre el saqueo de 540 y su sesgo/valor como fuente."
+    },
+    {
+      "url": "https://academic.oup.com/book/6524/chapter-abstract/150435622",
+      "title": "“Supplementary Roman Sources of the Seventh Century II”",
+      "consultedScope": "Resumen académico consultado que sitúa las fuentes cristianas orientales del siglo VII, incluido Sophronio y la conquista árabe de Jerusalén; no se afirma lectura del capítulo completo."
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.38238823",
+      "title": "Robert G. Hoyland, Theophilus of Edessa’s Chronicle",
+      "consultedScope": "Índice/contexto bibliográfico consultado; cronología de captura de Jerusalén y visita de Umar contrastada mediante pasajes indexados de 638, no lectura íntegra del libro."
+    },
+    {
+      "url": "https://christtheking.info/catholic-resources-on-adversus-judaeos/selections-of-st-sophronius-of-jerusalems-writings-on-the-jews/",
+      "title": "Sophronio de Jerusalén, selecciones de sermones",
+      "consultedScope": "Extracto consultado para el sermón de Navidad de 634 y el impedimento de la procesión Jerusalén–Belén; no prueba la capitulación de Jerusalén."
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.18254935",
+      "title": "Al-Ṭabarī, History, vol. 21: The Victory of the Marwānids, 685–693",
+      "consultedScope": "Resumen e índice consultados; contiene el relato de la guerra de al-Ḥajjāj contra Ibn al-Zubayr en 692."
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/66/78/98/2019667898/2019667898.pdf",
+      "title": "Al-Ṭabarī, The Victory of the Marwānids, traducción §§40–41",
+      "consultedScope": "Extracto de traducción consultado que sitúa el comienzo del asedio de al-Ḥajjāj a La Meca el 1 Dhu al-Hijja 72 AH / 24 abril 692."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/hasan-b-ali/",
+      "title": "Encyclopaedia Iranica, “Ḥasan b. ʿAlī b. Abī Ṭāleb”",
+      "consultedScope": "Extracto consultado para lugar y fecha preferida de muerte de Hasan: Medina, 5 Rabi I 50 AH / 2 abril 670; registra que la tradición sobre envenenamiento procede de fuentes antiguas pero no establece autoría."
+    },
+    {
+      "url": "https://orthodoxchurchfathers.com/fathers/npnf202/npnf2031.html",
+      "title": "Sozomen, Ecclesiastical History, Book IV",
+      "consultedScope": "Chapter VII, “Sedition of the Jews in Palestine,” parallel report of the Gallus-era uprising; later Christian narrative, not eyewitness testimony."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/socrates_02_book2.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History, Book II",
+      "consultedScope": "Chapter 33 checked as a parallel account for the Gallus-era Palestinian revolt; source-critical comparison only."
+    },
+    {
+      "url": "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/Sepphoris.html",
+      "title": "Sepphoris source dossier / source-critical discussion",
+      "consultedScope": "Summary of later Christian testimony to the Gallus revolt, noting Ammianus’s silence and disputed scale/details."
+    },
+    {
+      "url": "https://cja.huji.ac.il/browser.php?id=644&mode=alone",
+      "title": "Hammath Tiberias Synagogue, Center for Jewish Art",
+      "consultedScope": "Archaeological object record: layout, mosaics, and a beginning-fourth-century dating based on finds."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11813141/",
+      "title": "Magness et al., Huqoq synagogue chronology, PLOS ONE (2025)",
+      "consultedScope": "Full open article consulted: stratigraphy, pottery, radiocarbon, location, construction around end of fourth/beginning fifth century; limitations of dating use-life."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3813.htm",
+      "title": "Acts of the Third Council of Constantinople (680–681)",
+      "consultedScope": "Primary acts, especially opening papal-legates address and council definition rejecting one will/operation."
+    },
+    {
+      "url": "https://pbe.kcl.ac.uk/data/D62/F83.htm",
+      "title": "Prosopography of the Byzantine Empire: Petros 23",
+      "consultedScope": "Attendance at all 18 sessions of the Third Council, 6 Nov 680–16 Sep 681."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/kufa/",
+      "title": "Kufa, Encyclopaedia Iranica",
+      "consultedScope": "Sections on Ibn al-Ashʿath’s 701 revolt/Dayr al-Jamājim and Zayd ibn ʿAlī’s 740 revolt in Kufa."
+    },
+    {
+      "url": "https://ghayb.com/wp-content/uploads/2016/09/Tabari_Volume_18.pdf",
+      "title": "Al-Ṭabarī, History, vol. 18: Between Civil Wars",
+      "consultedScope": "Search excerpt on the 701 defeat of Ibn al-Ashʿath at Dayr al-Jamājim; translated later chronicle, not eyewitness testimony."
+    },
+    {
+      "url": "https://www.saet.ac.uk/Islam/ZaydiShiism",
+      "title": "Zaydī Shīʿism, St Andrews Encyclopaedia of Theology",
+      "consultedScope": "Academic synthesis of Zayd’s Kufa revolt and death in 740; consulted summary."
+    },
+    {
+      "url": "https://www.jstor.org/stable/jj.18252726.8",
+      "title": "Al-Ṭabarī, History, vol. 17, events of year 38",
+      "consultedScope": "JSTOR metadata/preview for the subsection on the killing of Muhammad ibn Abi Bakr in Egypt; did not claim to consult the full book through paywalled access."
+    },
+    {
+      "url": "https://www.anyflip.com/nzzxf/bxdh/basic/151-200",
+      "title": "Searchable excerpt of al-Ṭabarī, History, vol. 17",
+      "consultedScope": "Search-result excerpt for year 38 subsection, Kharbita references, and Egypt events; translation excerpt only, source reports are retrospective."
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Ecclesiastical_history_(Socrates_Scholasticus)/Book_II/Chapter_XXXIII",
+      "title": "Socrates Scholasticus, Ecclesiastical History, Book II, chapter 33",
+      "consultedScope": "Primary late-antique account titled “Of the Jews inhabiting Dio-Cæsarea in Palestine”; consulted for location and claims in the Gallus-era revolt, with source bias noted."
+    }
+  ],
+  "auditNotes": [
+    {
+      "campaign": "new-rome",
+      "issue": "La cronología solicitada para esta campaña es 337–843. El hito 330 está fuera de intervalo, pero puede mantenerse como prólogo externo; no se repite aquí."
+    },
+    {
+      "campaign": "jewish-tradition",
+      "issue": "No hay siete hitos nuevos no redundantes respaldados con precisión antes de c.425 entre las opciones consultadas. Se entregan cinco posibles eventos separados y una evidencia arqueológica para enriquecer el evento existente sobre mosaicos galileos; se omiten otras fechas de sinagogas que caen en siglo V sin límite inferior verificable."
+    },
+    {
+      "campaign": "umayyads",
+      "issue": "Los hechos sugeridos para 683 y 692 ya están representados. Recomendación editorial: enriquecer la entrada de 692 con el sitio y duración del segundo asedio, manteniendo el asedio y muerte como un episodio causalmente unido, no contar la derrota final dos veces."
+    },
+    {
+      "campaign": "house-of-ali",
+      "issue": "La muerte de Hasan ya está representada. La fuente académica consultada prefiere 670; otras cronologías informan 669. La incertidumbre real es calendario/año reportado y la atribución del envenenamiento, no falta de evento."
+    },
+    {
+      "campaign": "church-of-rome",
+      "issue": "El episodio de 731 ya figura como sínodo romano/iconoclasmo. Se excluye como duplicado y no se interpreta como demostración de supremacía papal inevitable."
+    },
+    {
+      "campaign": "new-rome",
+      "issue": "El concilio de 553 ya está en el corpus. Se excluye como duplicado; los cuatro registros añadidos son Éfeso 431, acceso de Justiniano 527, saqueo de Antioquía 540 y conquista/cambio de control de Jerusalén 637/638."
+    },
+    "12 Oct 2026 factual completion: the initial missing-milestone inventory now has 8 Jewish candidates, 4 Rome candidates, 5 New Rome candidates, 2 Umayyad candidates, and 1 House-of-Ali candidate. All remain editorial options. Two Jewish site records (Hammath Tiberias and Huqoq) overlap the existing broad synagogue-art event 76; use them as differentiated local alternatives/enrichments, not automatically as separate missions. The Gallus revolt is weakly attested and contested; if source-critical standards require, reject it rather than depict details as settled. New Rome coronation 800 remains an event in Rome; any Constantinople framing must be a reception/reporting scene and cannot claim Anna Komnene historical testimony. The narrative Anna is fictional and may only receive a report within her stated lifetime/setting, not witness Rome."
+  ],
+  "rejectedCandidates": [
+    {
+      "id": "jewish-tradition",
+      "date": "mid/late 4th century (traditional excavator dating; reassessment places it in 6th century)",
+      "event": "Sardis synagogue construction as a 4th-century episode",
+      "place": "Sardis, Lydia (modern Sart, Turkey)",
+      "reasonRejected": "Do not add as a securely in-period fourth-century hito: Jodi Magness re-examined the coins and argued for a sixth-century construction date; the evidence is disputed and the current broad corpus synagogue-art event already makes a separate site entry potentially redundant.",
+      "url": "https://ajaonline.org/article/109/",
+      "locator": "Jodi Magness, “The Date of the Sardis Synagogue in Light of the Numismatic Evidence,” American Journal of Archaeology 109.3 (2005), abstract and discussion."
+    }
+  ]
+}

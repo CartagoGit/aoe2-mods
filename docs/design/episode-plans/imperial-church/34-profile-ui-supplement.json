@@ -1,0 +1,300 @@
+{
+  "classification": "architect-authored supplementary UI source; design-only, not a complete dossier or native presentation",
+  "author": "gpt-6",
+  "date": "2026-10-25",
+  "campaignId": "imperial-church",
+  "episodeId": "34-church-transfer-constantinople",
+  "sourceWorldPlan": {
+    "path": "docs/design/episode-plans/imperial-church/34-constantinople-world-plan.json",
+    "sha256": "9e93ba37d40f9fa81c5a7722e4a04aa307e59c7442f5bd2c51d779747ed4c178"
+  },
+  "sourceStoryboardCount": 45,
+  "additionalScreenCount": 6,
+  "combinedScreenCount": 51,
+  "additionalScreens": [
+    {
+      "id": "title",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.title",
+      "text": {
+        "en": "The Doors of New Rome",
+        "es-ES": "Las puertas de Nueva Roma"
+      },
+      "condition": "before fact-intro",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Doors of New Rome"
+        ],
+        "es-ES": [
+          "Las puertas de Nueva Roma"
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 3
+    },
+    {
+      "id": "shared-attendance-goal",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.shared-attendance-goal",
+      "text": {
+        "en": "Bring the original meal recipient to the receiving court. This attendance does not complete either service. The same recipient must be alive at that court again when the whole plan ends.",
+        "es-ES": "Lleva al destinatario original de la comida al patio receptor. Esta presencia no completa ninguno de los servicios. Ese mismo destinatario deberá estar vivo en el patio cuando termine el plan completo."
+      },
+      "condition": "phase-1 active; shared attendance not yet latched; never a service receipt",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the original meal recipient to the receiving court. This attendance does not complete either service. The same recipient must be alive at that court again when the whole plan ends."
+        ],
+        "es-ES": [
+          "Lleva al destinatario original de la comida al patio receptor. Esta presencia no completa ninguno de los servicios. Ese mismo destinatario deberá estar vivo en el patio cuando termine el plan completo."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "meal-service-goal",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.meal-service-goal",
+      "text": {
+        "en": "Complete the selected meal method, then bring its own result and the original recipient to The Neighbors' Table. A receipt alone is insufficient if either is absent at the end.",
+        "es-ES": "Completa el método de comida elegido y lleva su resultado propio y al destinatario original a la mesa de los vecinos. El recibo no basta si alguno está ausente al final."
+      },
+      "condition": "phase-1 active; meal-service goal; only its selected recipe may complete it",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected meal method, then bring its own result and the original recipient to The Neighbors' Table. A receipt alone is insufficient if either is absent at the end."
+        ],
+        "es-ES": [
+          "Completa el método de comida elegido y lleva su resultado propio y al destinatario original a la mesa de los vecinos. El recibo no basta si alguno está ausente al final."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "shelter-service-goal",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.shelter-service-goal",
+      "text": {
+        "en": "Complete the selected shelter method, then bring its own result and both original households to that method's receiving court. Another court, another result or substitute households do not count. All must be alive there at the end.",
+        "es-ES": "Completa el método de alojamiento elegido y lleva su resultado propio y a ambos hogares originales al patio receptor de ese método. No cuentan otro patio, otro resultado ni hogares sustitutos. Todos deberán estar vivos allí al final."
+      },
+      "condition": "phase-1 active; shelter-service goal; only its selected recipe may complete it",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected shelter method, then bring its own result and both original households to that method's receiving court. Another court, another result or substitute households do not count. All must be",
+          "alive there at the end."
+        ],
+        "es-ES": [
+          "Completa el método de alojamiento elegido y lleva su resultado propio y a ambos hogares originales al patio receptor de ese método. No cuentan otro patio, otro resultado ni hogares sustitutos. Todos",
+          "deberán estar vivos allí al final."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "plan-reserved",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.plan-reserved",
+      "text": {
+        "en": "The full cost of both selected services is reserved. No work has been recorded and neither service is complete. Before committing, you may cancel and recover that exact reserve; the rest of your supplies remain separate.",
+        "es-ES": "El coste completo de los dos servicios elegidos queda reservado. No se ha registrado trabajo ni se ha completado ningún servicio. Antes del compromiso puedes cancelar y recuperar esa reserva exacta; el resto de tus suministros permanece separado."
+      },
+      "condition": "after successful reserve; while reserved; never after failed reserve or commitment",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The full cost of both selected services is reserved. No work has been recorded and neither service is complete. Before committing, you may cancel and recover that exact reserve; the rest of",
+          "your supplies remain separate."
+        ],
+        "es-ES": [
+          "El coste completo de los dos servicios elegidos queda reservado. No se ha registrado trabajo ni se ha completado ningún servicio. Antes del compromiso puedes cancelar y recuperar esa reserva exacta; el",
+          "resto de tus suministros permanece separado."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "plan-committed",
+      "key": "scenario.imperial-church.34-church-transfer-constantinople.odyssey.plan-committed",
+      "text": {
+        "en": "Your chosen plan is committed. Its reserved supplies have been spent once. Send the assigned workers to their selected work sites; work and delivery are still required. The methods can no longer be changed or cancelled.",
+        "es-ES": "El plan elegido queda comprometido. Sus suministros reservados se han gastado una vez. Envía a los trabajadores asignados a sus lugares de trabajo elegidos; aún faltan el trabajo y la entrega. Ya no se pueden cambiar ni cancelar los métodos."
+      },
+      "condition": "after successful irreversible commitment; work/output receipts are not implied",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Your chosen plan is committed. Its reserved supplies have been spent once. Send the assigned workers to their selected work sites; work and delivery are still required. The methods can no longer",
+          "be changed or cancelled."
+        ],
+        "es-ES": [
+          "El plan elegido queda comprometido. Sus suministros reservados se han gastado una vez. Envía a los trabajadores asignados a sus lugares de trabajo elegidos; aún faltan el trabajo y la entrega. Ya",
+          "no se pueden cambiar ni cancelar los métodos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 19
+    }
+  ],
+  "combinedScreenOrder": [
+    "title",
+    "fact-intro",
+    "handover",
+    "personal-intro",
+    "main-goal",
+    "shared-attendance-goal",
+    "meal-service-goal",
+    "shelter-service-goal",
+    "preview-help",
+    "budget-help",
+    "unaffordable-plan",
+    "reservation-help",
+    "plan-reserved",
+    "plan-committed",
+    "cancelled",
+    "work-help",
+    "work-meal-direct",
+    "work-meal-shared-hearth",
+    "work-meal-purchased",
+    "work-shelter-materials",
+    "work-shelter-local-kit",
+    "work-shelter-rented",
+    "meal-received",
+    "shelter-received",
+    "final-presence-help",
+    "offer-neighbor-provisions",
+    "complete-neighbor-provisions",
+    "unavailable-neighbor-provisions",
+    "offer-voluntary-household-return",
+    "complete-voluntary-household-return",
+    "unavailable-voluntary-household-return",
+    "offer-source-comparison",
+    "complete-source-comparison",
+    "unavailable-source-comparison",
+    "offer-local-wayfinding",
+    "complete-local-wayfinding",
+    "unavailable-local-wayfinding",
+    "offer-slope-survey",
+    "complete-slope-survey",
+    "unavailable-slope-survey",
+    "offer-service-observation",
+    "complete-service-observation",
+    "unavailable-service-observation",
+    "offer-damaged-civilian-store",
+    "complete-damaged-civilian-store",
+    "unavailable-damaged-civilian-store",
+    "retrospective-source-note",
+    "main-defeat",
+    "victory-fact",
+    "victory-personal",
+    "continue-next"
+  ],
+  "planScreenIds": {
+    "preview": "preview-help",
+    "reserved": "plan-reserved",
+    "cancelled": "cancelled",
+    "started": "plan-committed",
+    "complete": "victory-fact"
+  },
+  "serviceBindings": [
+    {
+      "serviceId": "meal-service",
+      "goalScreenId": "meal-service-goal",
+      "completeScreenId": "meal-received"
+    },
+    {
+      "serviceId": "shelter-service",
+      "goalScreenId": "shelter-service-goal",
+      "completeScreenId": "shelter-received"
+    }
+  ],
+  "recipeBindings": [
+    {
+      "serviceId": "meal-service",
+      "recipeId": "meal-direct",
+      "workPointId": "meal-direct-source",
+      "receptionPointId": "meal-reception",
+      "title": {
+        "en": "Prepared Provisions",
+        "es-ES": "Provisiones preparadas"
+      },
+      "goalScreenId": "work-meal-direct"
+    },
+    {
+      "serviceId": "meal-service",
+      "recipeId": "meal-shared-hearth",
+      "workPointId": "hearth-worksite",
+      "receptionPointId": "meal-reception",
+      "title": {
+        "en": "At the Shared Hearth",
+        "es-ES": "Junto al fogón compartido"
+      },
+      "goalScreenId": "work-meal-shared-hearth"
+    },
+    {
+      "serviceId": "meal-service",
+      "recipeId": "meal-purchased",
+      "workPointId": "merchant-worksite",
+      "receptionPointId": "meal-reception",
+      "title": {
+        "en": "A Merchant's Consignment",
+        "es-ES": "La remesa del mercader"
+      },
+      "goalScreenId": "work-meal-purchased"
+    },
+    {
+      "serviceId": "shelter-service",
+      "recipeId": "shelter-materials",
+      "workPointId": "materials-source",
+      "receptionPointId": "materials-court",
+      "title": {
+        "en": "Build from Delivered Materials",
+        "es-ES": "Preparar con materiales entregados"
+      },
+      "goalScreenId": "work-shelter-materials"
+    },
+    {
+      "serviceId": "shelter-service",
+      "recipeId": "shelter-local-kit",
+      "workPointId": "kit-worksite",
+      "receptionPointId": "kit-court",
+      "title": {
+        "en": "Prepare a Local Kit",
+        "es-ES": "Preparar un equipo local"
+      },
+      "goalScreenId": "work-shelter-local-kit"
+    },
+    {
+      "serviceId": "shelter-service",
+      "recipeId": "shelter-rented",
+      "workPointId": "host-worksite",
+      "receptionPointId": "host-court",
+      "title": {
+        "en": "A Willing Host",
+        "es-ES": "Un anfitrión dispuesto"
+      },
+      "goalScreenId": "work-shelter-rented"
+    }
+  ],
+  "authority": "The 45 base screens remain unchanged in their source file; these six are explicit new author text. Compose by declared order and reject collisions. No string IDs, translated-language approval, voice/audio or native input surface is supplied.",
+  "dossierCountsUnchanged": {
+    "completeDesignDrafts": 63,
+    "selectionOnly": 215,
+    "expandedGameApprovals": 0
+  }
+}

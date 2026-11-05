@@ -1,0 +1,182 @@
+{
+  "scope": {
+    "subject": "Faith Origins finale, c. 303-313 CE, Mediolanum/Milan",
+    "task": "Read-only primary-source and institutional geography source audit",
+    "repositoryChanges": false,
+    "formalReview": false,
+    "dateAccessed": "2026-10-13",
+    "summary": "Primary sources support a meeting/agreement at Milan followed by an imperial rescript circulated from Nicomedia, general religious liberty and restoration orders for Christian meeting places and corporate property. Eusebius explicitly describes the Great Persecution as geographically and temporally uneven, including shorter duration in Italy and several western regions, while his account is selective and apologetic. These sources do not establish a specific Milanese Christian community, local seizure/restoration, named property, or exact location. Institutional Milan sources support broad water-management and wall context, but do not identify a 313 community site or the exact position of any fictional activity area."
+  },
+  "sources": [
+    {
+      "id": "lactantius_dmp_48",
+      "author": "Lactantius",
+      "work": "De mortibus persecutorum 48.1-12",
+      "sourceType": "late antique primary literary account, Latin text and public-domain English translation",
+      "url": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+      "additionalTextUrl": "https://bkv.unifr.ch/en/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/49/de-mortibus-persecutorum",
+      "consultation": {
+        "read": "Fordham sourcebook full public-domain English translation of DMP ch. 48 (cited there as Lactantius, De Mort. Pers., ch. 48); also opened the BKV digital edition/translation at ch. 48 in German, and inspected the Latin search-result text for the preface. The direct Latin page timed out when opened.",
+        "locators": [
+          "DMP 48.1: narrative preface says Licinius entered Nicomedia and on the Ides of June (13 June), in Constantine and Licinius’ third consulship, had a letter addressed to the provincial governor posted concerning restoration of the church. The BKV ch. 48 translation directly confirms Nicomedia and 13 June.",
+          "DMP 48.2-8: quoted imperial letter says Constantine and Licinius had met at Milan, grants Christians and others freedom to follow chosen religion, removes prior restrictions, and orders return of former Christian meeting places/property.",
+          "DMP 48.9-12: further instructions on restitution/indemnification and publication."
+        ],
+        "consultationLimit": "Fordham is a sourcebook hosting a public-domain translation, not a critical edition. Its page uses the conventional heading “The Edict of Milan”; the text’s own narrative distinguishes the Milan meeting from Licinius’ later publication of a letter at Nicomedia. The opened BKV German page has a heading that labels the section “January 313” while its text gives 13 June 313; that heading is internally inconsistent and was not used as evidence. Latin page was not directly opened in browser due timeout, so detailed Latin wording is not certified from a fully loaded page."
+      },
+      "supports": [
+        "A bilateral meeting at Mediolanum/Milan is represented in the quoted letter.",
+        "A policy of religious freedom for Christians and other religious adherents is represented in the letter.",
+        "Restoration of Christian meeting places and property is ordered, with provision for indemnification in specified cases.",
+        "The text's prefatory account dates Licinius' publication to 13 June 313 at Nicomedia and addresses it to a governor."
+      ],
+      "doesNotProve": [
+        "That the surviving passage is a separately preserved document signed at Milan; the transmitted item is a rescript/letter that reports a prior agreement there.",
+        "That the rescript was first publicly issued in Milan; Lactantius' own framing says Licinius posted it in Nicomedia.",
+        "That a named Christian congregation or bishop existed in Mediolanum in 313.",
+        "That a particular Milanese church, house, property, or assembly place was confiscated or restored.",
+        "That implementation was immediate, complete, or uniform throughout the empire.",
+        "That Christianity was made the Roman state religion; the text grants religious choice and liberty."
+      ],
+      "uncertaintyAndBias": "Lactantius was a Christian author writing in a highly partisan, providential narrative about persecutors and their deaths. The quoted administrative text is valuable evidence for the rescript's transmitted terms, but the framing and claims of broad success require attribution. The exact modern label 'Edict of Milan' is convenient shorthand and should not obscure the distinction between meeting at Milan and publication at Nicomedia."
+    },
+    {
+      "id": "eusebius_he_10_5",
+      "author": "Eusebius of Caesarea",
+      "work": "Ecclesiastical History 10.5.1-14; compare 10.5.15-17",
+      "sourceType": "late antique primary literary account and embedded translated imperial documents",
+      "url": "https://www.newadvent.org/fathers/250110.htm",
+      "alternateFullTextUrl": "https://wolfmueller.co/wp-content/uploads/2022/06/Eusebius-Church-History.pdf",
+      "consultation": {
+        "read": "Opened full chapter 10.5 in the New Advent translation and checked the corresponding chapter in the McGiffert translation PDF.",
+        "locators": [
+          "HE 10.5.1: Eusebius introduces translations from the Roman tongue of imperial decrees.",
+          "HE 10.5.4-8: embedded decree states the emperors came to Milan and agreed religious liberty for Christians and all men; no one was to be denied choice of religion.",
+          "HE 10.5.9-14: orders restoration to Christians of former places of assembly and corporate property, publication everywhere, and prompt administration.",
+          "HE 10.5.15-17: separate communication concerning restitution to the Catholic Christian church and its buildings/property."
+        ],
+        "consultationLimit": "The English text is a translation of Eusebius' Greek; Eusebius describes the embedded decrees as translations from the Roman tongue. Eusebius' surrounding book frames events as divine restoration, distinct from the administrative wording of the inserted text."
+      },
+      "supports": [
+        "Eusebius' transmitted decree locates the emperors' meeting and deliberation at Milan.",
+        "The embedded text supports general toleration/religious choice, not Christian exclusivity.",
+        "It contains explicit provisions for returning former Christian assembly places and corporate property.",
+        "The decree calls for the order to be published everywhere by the recipient authorities."
+      ],
+      "doesNotProve": [
+        "A specific Christian group or building in Milan, or that a local restitution case took place there.",
+        "That all places were actually returned in every locality.",
+        "That 10.5.15-17, which is separately addressed to Anulinus in an African context, describes Milanese administration.",
+        "That the Milan agreement established Christianity as a state religion or imposed one uniform local Christian identity.",
+        "That the narrative's celebratory claims about universal restoration are a neutral census of post-persecution conditions."
+      ],
+      "uncertaintyAndBias": "Eusebius explicitly presents Book X as a panegyric on church restoration (10.1.2) and interprets events providentially. Separate the wording of the embedded rescript from Eusebius' triumphal narrative and from claims about local implementation."
+    },
+    {
+      "id": "eusebius_he_8_regional_scope",
+      "author": "Eusebius of Caesarea",
+      "work": "Ecclesiastical History 8.2.1-5; 8.13.1-14; compare 8.14",
+      "sourceType": "late antique primary literary account",
+      "url": "https://wolfmueller.co/wp-content/uploads/2022/06/Eusebius-Church-History.pdf",
+      "alternateFullTextUrl": "https://www.newadvent.org/fathers/250108.htm",
+      "consultation": {
+        "read": "Opened McGiffert translation PDF at the cited chapters and read the pertinent full passages.",
+        "locators": [
+          "HE 8.2.1-5: Eusebius says he witnessed prayer houses demolished, scriptures burned, and church leaders imprisoned; he recounts an empire-wide first edict in Diocletian's nineteenth year, then further measures.",
+          "HE 8.13.11-14: describes martyrdoms in Palestine over eight years; names regions from Libya/Egypt through Syria and east toward Illyricum; says Italy, Sicily, Gaul, Spain, Mauritania, and Africa suffered for less than two years and received peace sooner; contrasts brethren in one part of the divided empire enjoying peace with those in another enduring many trials.",
+          "HE 8.13.12-13: Eusebius says Constantius did not take part in anti-Christian measures under his authority and did not demolish churches.",
+          "HE 8.14.1-3: Eusebius portrays Maxentius as initially halting persecution in Rome but later oppressive; this is his account of a distinct western ruler's policy."
+        ],
+        "consultationLimit": "Eusebius signals selectivity at HE 8.13.7-8, saying he will not accurately recount every conflict and will preserve only selected events. This is a Christian narrative with strong apologetic and theological framing, not a comprehensive provincial administrative record."
+      },
+      "supports": [
+        "Eusebius' own account describes uneven duration and severity of the Great Persecution across regions and rulers.",
+        "He distinguishes an area ruled by Constantius, where he says Christians were spared, from other territories where persecution was severe.",
+        "He places Italy among regions in which the persecution lasted less than two years according to his account."
+      ],
+      "doesNotProve": [
+        "That no Christian in northern Italy/Mediolanum suffered during the persecutions.",
+        "That the Great Persecution never reached Mediolanum, or that all Milanese Christians were safe.",
+        "An exact start/end date or local enforcement record for Mediolanum.",
+        "That later measures by Maximinus or other rulers applied uniformly across every named province.",
+        "That Eusebius' regional durations reflect a complete modern reconstruction of every jurisdiction or locality."
+      ],
+      "uncertaintyAndBias": "Use language such as 'Eusebius reports' and present the differences between territories as his account. His statement about Constantius is broad and laudatory; it should not be used to invent named local events or claim universal immunity. For Milan, the source supports a regional context, not a specific community history."
+    },
+    {
+      "id": "mediolanum_geography",
+      "sourceType": "institutional archaeology/museum and city-tourism documentation",
+      "sources": [
+        {
+          "url": "https://www2.comune.milano.it/web/museo-archeologico-milano/-/le-vie-dell-acqua-a-mediolanum",
+          "title": "Le vie dell'acqua a Mediolanum, Museo Archeologico di Milano / Comune di Milano",
+          "consultation": {
+            "read": "Opened the Comune/Museo Archeologico exhibition page; read sections I, II, III, and IV.",
+            "locators": [
+              "Exhibition page lines 64-66: late imperial capital-era changes included major public buildings and expansion of city walls and moat; early city layout and first wall ring described as defended by a moat supplied by diverted watercourses.",
+              "Lines 67-68: archaeological watercourse discovery described in the modern area between Via Santa Croce and Via Calatafimi, near the 'inner ring'; it is evidence for Roman water routes, not a complete street map.",
+              "Lines 69-73: Roman water management included channels/drains beside streets and groundwater wells; waterlogged soils in parts of central Milan required stabilization.",
+              "Lines 78-80: Maximian's Herculean Baths were built when Milan became an imperial residence at the end of the third century."
+            ]
+          },
+          "supports": [
+            "Water management was important in Mediolanum; archaeological evidence includes diverted channels/moat supply and street-side drainage.",
+            "Imperial-period expansion altered city walls and waterworks; late third-century status as imperial residence is relevant to a 303-313 setting.",
+            "There is an archaeologically attested modified watercourse in a specific modern zone near the inner ring."
+          ],
+          "doesNotProve": [
+            "The exact location of any fictional Christian assembly site, official's office, restitution property, or meeting venue.",
+            "The exact fourth-century route of any street, watercourse, or gate unless a dedicated site record identifies it.",
+            "That the modern Navigli system had its later configuration in 313."
+          ]
+        },
+        {
+          "url": "https://visitmilano.org/eng/sightseeing/archaeological-sites/ancient-roman-walls/",
+          "title": "Ancient Roman Walls of Milan: boundaries of Mediolanum, VisitMilano",
+          "consultation": {
+            "read": "Opened the whole accessible page, including republican and Maximian wall summaries and archaeological remains.",
+            "locators": [
+              "Sections 'Republican Roman walls' and 'Roman walls of Emperor Maximian': an early circuit is summarized as about 60 hectares/3 km with seven main gates; under Maximian the circuit was expanded to more than 100 hectares/about 4.5 km and three more gates.",
+              "Sections on surviving fragments identify present-day archaeological remains in the museum courtyard, Via Carrobbio/Porta Ticinese, Via San Vito, Via Medici, and Via Montenapoleone.",
+              "The page distinguishes Roman remains from later medieval walls and moat."
+            ]
+          },
+          "supports": [
+            "Broad relative expansion of the city enclosure under Maximian, appropriate to distinguish a 303-313 map from an earlier smaller circuit.",
+            "Main roads issued from city gates according to the page's summary.",
+            "Surviving remains permit broad boundary reconstruction but are scattered."
+          ],
+          "doesNotProve": [
+            "Exact ancient alignment/coordinates for every gate or a detailed street plan.",
+            "The route of a named river through the 313 city; this source does not establish that.",
+            "A direct connection between any surviving wall fragment and Christian assemblies or restitution."
+          ],
+          "qualification": "VisitMilano is visitor-facing city documentation rather than the primary archaeological report. Use it for broad orientation only; the museum/Comune page is the stronger institutional source for water archaeology."
+        }
+      ],
+      "geographicUseLimit": "Represent Mediolanum as a real city with an imperial-period enlarged wall circuit, abundant managed water and an urban street/channel network at broad scale. Do not pin an episode's assembly venue, gate, river crossing, house or restitution site to a precise tile from these sources. Do not label modern canal courses or later monuments as securely present in 313."
+    },
+    {
+      "id": "lactantius_dmp_48_bkv",
+      "author": "Lactantius",
+      "work": "De mortibus persecutorum 48",
+      "sourceType": "primary text in modern German translation hosted by Bibliothek der Kirchenväter; page includes edition information for SC 39",
+      "url": "https://bkv.unifr.ch/en/works/cpl-91/compare/von-den-todesarten-der-verfolger-bkv/49/de-mortibus-persecutorum",
+      "consultation": {
+        "read": "Opened chapter 48 in German translation.",
+        "locators": [
+          "Chapter 48 heading and opening narrative: Licinius enters Nicomedia; text explicitly dates publication to the Ides of June (13 June 313), under the third consulship of Constantine and Licinius, and says he caused a letter to the governor to be publicly posted about restoring the church.",
+          "The quoted letter begins by referring to Constantine and Licinius meeting at Milan and grants religious freedom."
+        ],
+        "consultationLimit": "The page heading labels the chapter “Edict of Milan, January 313,” which contradicts the chapter text’s explicit 13 June date. Do not reuse the January heading. German translation read; not a substitute for critical Latin collation."
+      }
+    }
+  ],
+  "crossChecks": {
+    "agreement_vs_publication": "Both source traditions place an imperial meeting at Milan. Lactantius' surrounding narrative specifically says Licinius posted the restitution letter in Nicomedia on 13 June 313. 'Edict of Milan' is conventional shorthand, but the action in the episode should distinguish the Milan meeting/agreement from subsequent circulation/publication.",
+    "restitution": "Primary text orders restitution. It does not establish that a particular Milan property had been confiscated or that restitution was completed locally.",
+    "provincial_variation": "HE VIII describes uneven regional experiences; it neither proves blanket safety in Milan nor permits an invented local persecution. Do not collapse diverse ruler jurisdictions into one uniform event.",
+    "communityEvidence": "HE X.5 speaks of Christians and their assembly/corporate property generically. The cited text does not identify a Milan congregation, bishop, building, or membership list.",
+    "geographicPrecision": "Museum evidence supports water management and broad chronology; no exact address for the finale's fictional activity was verified."
+  }
+}

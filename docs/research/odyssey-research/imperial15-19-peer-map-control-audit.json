@@ -1,0 +1,336 @@
+{
+  "audit": "Mechanical peer map-control audit, imperial church orders 15–19",
+  "architectApproval": false,
+  "approvalScope": "No historical, architectural, terrain, or gameplay approval.",
+  "worktree": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+  "filesReadOnly": true,
+  "repoOrGitMutations": false,
+  "method": {
+    "sources": [
+      "docs/design/odysseys/imperial-church.json mapPlan entries for orders 15–19",
+      "Corresponding five docs/wiki/imperial-church/episodes/<episode>/15-odyssey-dossier.md files, especially map-plan JSON and finite-world identity offsets",
+      "Five mapPlan-referenced SVGs"
+    ],
+    "geometry": "Parsed all hub centers/radii and all explicit corridor/water polylines in SVG; compared mapPlan tile coordinates, all finite identity initialHub+offsetTiles positions, and explicit zone offsets/radii against the 400×400 tile frame (valid indices 0–399). Rasterized and visually inspected each SVG. Distances to water are minimum 2D centerline distances measured in the SVG coordinate frame and converted using 650 px / 399 tile intervals = 1.629073 px per tile.",
+    "corridorWidth": "Compared measured route-centerline clearance with half of each corridor's full declared width (8 or 10 tiles, hence 4 or 5 tiles each side). SVG route strokes themselves are 3 px and do not depict declared gameplay width.",
+    "hydrologyRule": "A polyline is treated only as a drawn control line. No line is interpreted as a filled water polygon, land mask, shoreline certainty, or traversability proof.",
+    "countCorrection": "Corrected totals from previously misstated 30 hubs / 92 entities to 29 hubs / 87 entities: hub counts 5+6+6+6+6; finite-world identities 6+7+4+8+62. Tile coordinates use valid frame indices 0..399. Derived SVG-to-tile distances were rescaled by 399/400 to use 650/(size-1) intervals."
+  },
+  "sharedFindings": [
+    "All 29 hubs have lon/lat inside their declared WGS84 bbox, and all tile centers/radius circles are inside the 0–400 tile frame.",
+    "All explicitly positioned finite-world identity entities and offset zones/radius extents checked remain within the tile frame. No entity location is claimed as a tested in-game placement.",
+    "Each SVG contains the same number of named corridor polylines as its blueprint route records; all declared routes are land mode.",
+    "No full water polygons or land masks are present in the five SVGs. Orders 16, 17 and 19 have drawn blue line controls; orders 15 and 18 have none.",
+    "No obvious title, legend, label, or footer clipping was seen in the SVG render inspection. This is limited to the static SVG, not the in-game UI.",
+    "Tiles/frame math does not establish DEM fit, native unit footprint collision, pathfinding, navigability, or period coastline."
+  ],
+  "orders": [
+    {
+      "order": 15,
+      "episodeId": "15-long-distance-dispatch-nicomedia",
+      "svg": "docs/design/maps/imperial-church/odyssey/15-long-distance-dispatch-nicomedia.svg",
+      "bbox": [
+        29.915,
+        40.767,
+        29.99,
+        40.812
+      ],
+      "hubs": {
+        "count": 5,
+        "allCentersAndRadiusCirclesInsideFrame": true,
+        "minimumEdgeClearanceOutsideLargestHubRadiusTiles": 37.78,
+        "closestPair": {
+          "hubs": [
+            "hub-4",
+            "hub-5"
+          ],
+          "centerDistanceTiles": 89.29,
+          "declaredRadiiSumTiles": 23.94,
+          "edgeGapTiles": 65.35
+        }
+      },
+      "entitiesAndZones": {
+        "finiteWorldIdentityCount": 6,
+        "allInitialHubPlusOffsetPositionsInsideFrame": true,
+        "largestOffsetMagnitudeFromAssignedHubTiles": 26.01,
+        "offsetExtentNotes": "The three-note origins and packet/clerk positions are spatially separate in their designated fictional districts; no point falls outside the 400×400 frame. These are offset specifications, not inspected game placements.",
+        "checkedZoneInstances": 13,
+        "zoneCentersAndRadiusExtentsOutsideFrame": 0
+      },
+      "routes": {
+        "count": 4,
+        "names": [
+          "western-context-link",
+          "southern-context-loop",
+          "eastern-local-handoff",
+          "central-handoff-alternative"
+        ],
+        "allAreLandMode": true,
+        "renderedRoutesCompleteAgainstBlueprint": true,
+        "explicitWaterSegments": 0,
+        "fullWidthClearance": "Not measurable: there is no water line or polygon in the map. The plan's text says the gulf/coast is south, but that text is not a geometric control.",
+        "assessment": "All route centers and tubes remain inside the frame by substantial margin. The blank land-colored panel cannot establish land continuity toward the southern gulf."
+      },
+      "labels": "Static SVG render inspected; right rail and footer visually fit the viewBox."
+    },
+    {
+      "order": 16,
+      "episodeId": "16-witness-record-comparison-tyre",
+      "svg": "docs/design/maps/imperial-church/odyssey/16-witness-record-comparison-tyre.svg",
+      "bbox": [
+        35.185,
+        33.248,
+        35.245,
+        33.292
+      ],
+      "hubs": {
+        "count": 6,
+        "allCentersAndRadiusCirclesInsideFrame": true,
+        "minimumEdgeClearanceOutsideLargestHubRadiusTiles": 57.73,
+        "closestPair": {
+          "hubs": [
+            "hub-1",
+            "hub-6"
+          ],
+          "centerDistanceTiles": 47.91,
+          "declaredRadiiSumTiles": 23.94,
+          "edgeGapTiles": 23.97
+        }
+      },
+      "entitiesAndZones": {
+        "finiteWorldIdentityCount": 7,
+        "allInitialHubPlusOffsetPositionsInsideFrame": true,
+        "largestOffsetMagnitudeFromAssignedHubTiles": 38.53,
+        "offsetExtentNotes": "All fictional report/assistant/summary points stay in-frame; the furthest specified offset is the qualified relay summary at 38.63 tiles from its assigned hub. This is a coordinate check, not an assertion that the object is an independently witnessed record.",
+        "checkedZoneInstances": 14,
+        "zoneCentersAndRadiusExtentsOutsideFrame": 0
+      },
+      "routes": {
+        "count": 5,
+        "names": [
+          "north-report-circuit",
+          "south-report-circuit",
+          "east-context-relay",
+          "north-east-alternative",
+          "south-east-alternative"
+        ],
+        "allAreLandMode": true,
+        "renderedRoutesCompleteAgainstBlueprint": true,
+        "explicitWaterSegments": 3,
+        "nearestRouteToDrawnCoastalLine": {
+          "route": "south-report-circuit",
+          "centerlineClearanceTiles": 82.23,
+          "routeWidthTiles": 9.98,
+          "approximateOuterEdgeClearanceTiles": 77.25
+        },
+        "assessment": "Every hub and route lies east/right of the SVG's blue western line, with large line clearance; this matches the dossier's intended mainland-side circuits and avoids geometrically crossing the drawn line. The line is not a water polygon, so same-continent/mainland or historical shore is not certified."
+      },
+      "labels": "Static SVG render inspected; labels, legend, and footer fit the viewBox.",
+      "waterControlLimit": "No 335 water polygon, island/causeway footprint, or pathability mask is drawn. The SVG line is a coarse control; no route is certified against historical coast."
+    },
+    {
+      "order": 17,
+      "episodeId": "17-rumour-and-source-investigation-constantinople",
+      "svg": "docs/design/maps/imperial-church/odyssey/17-rumour-and-source-investigation-constantinople.svg",
+      "bbox": [
+        28.942,
+        41,
+        28.986,
+        41.029
+      ],
+      "hubs": {
+        "count": 6,
+        "allCentersAndRadiusCirclesInsideFrame": true,
+        "minimumEdgeClearanceOutsideLargestHubRadiusTiles": 57.81,
+        "closestPair": {
+          "hubs": [
+            "hub-1",
+            "hub-5"
+          ],
+          "centerDistanceTiles": 64.66,
+          "declaredRadiiSumTiles": 23.94,
+          "edgeGapTiles": 40.72
+        },
+        "nearestCenterToBlueLine": {
+          "hub": "hub-3",
+          "centerDistanceTiles": 21.95,
+          "remainingBeyond12TileHubRadiusTiles": 9.98
+        }
+      },
+      "entitiesAndZones": {
+        "finiteWorldIdentityCount": 4,
+        "allInitialHubPlusOffsetPositionsInsideFrame": true,
+        "largestOffsetMagnitudeFromAssignedHubTiles": 26.01,
+        "checkedZoneInstances": 14,
+        "zoneCentersAndRadiusExtentsOutsideFrame": 0
+      },
+      "routes": {
+        "count": 5,
+        "names": [
+          "western-notice-approach",
+          "southern-cancellation-loop",
+          "eastern-interpretation-loop",
+          "northwest-qualified-archive",
+          "central-shelving-connection"
+        ],
+        "allAreLandMode": true,
+        "renderedRoutesCompleteAgainstBlueprint": true,
+        "explicitWaterSegments": 5,
+        "nearestRouteToDrawnCoastalLine": {
+          "route": "southern-cancellation-loop",
+          "centerlineClearanceTiles": 21.95,
+          "routeWidthTiles": 7.98,
+          "approximateOuterEdgeClearanceTiles": 17.96
+        },
+        "assessment": "No line intersection; even after subtracting half the declared route width, the centerline buffer remains about 18 tiles from the drawn southern line. Hub 3's 12-tile district radius leaves about 10 tiles between its perimeter and that line. This is a proximity flag only because the line has no water-side polygon."
+      },
+      "labels": "Static SVG render inspected; no obvious label clipping.",
+      "waterControlLimit": "The SVG shows a southern blue line only. Golden Horn is not drawn as a control here; no polygon or in-game shore mask exists."
+    },
+    {
+      "order": 18,
+      "episodeId": "18-administrative-transition-nicomedia",
+      "svg": "docs/design/maps/imperial-church/odyssey/18-administrative-transition-nicomedia.svg",
+      "bbox": [
+        29.915,
+        40.767,
+        29.99,
+        40.812
+      ],
+      "hubs": {
+        "count": 6,
+        "allCentersAndRadiusCirclesInsideFrame": true,
+        "minimumEdgeClearanceOutsideLargestHubRadiusTiles": 47.25,
+        "closestPair": {
+          "hubs": [
+            "hub-3",
+            "hub-5"
+          ],
+          "centerDistanceTiles": 91.85,
+          "declaredRadiiSumTiles": 23.94,
+          "edgeGapTiles": 67.91
+        }
+      },
+      "entitiesAndZones": {
+        "finiteWorldIdentityCount": 8,
+        "allInitialHubPlusOffsetPositionsInsideFrame": true,
+        "largestOffsetMagnitudeFromAssignedHubTiles": 26.84,
+        "checkedZoneInstances": 14,
+        "zoneCentersAndRadiusExtentsOutsideFrame": 0
+      },
+      "routes": {
+        "count": 5,
+        "names": [
+          "household-work-handoff",
+          "service-work-handoff",
+          "local-outgoing-relay",
+          "central-household-alternative",
+          "central-service-alternative"
+        ],
+        "allAreLandMode": true,
+        "renderedRoutesCompleteAgainstBlueprint": true,
+        "explicitWaterSegments": 0,
+        "fullWidthClearance": "Not measurable: the SVG and plan contain no drawn hydrology geometry.",
+        "assessment": "All routes/hubs sit in-frame, but the map's blank land panel does not test the gulf/coast or drainage. No polygon/line absence can be used as proof that these paths are land."
+      },
+      "labels": "Static SVG render inspected; right-rail labels and footer fit the viewBox."
+    },
+    {
+      "order": 19,
+      "episodeId": "19-competing-dispatches-constantinople",
+      "svg": "docs/design/maps/imperial-church/odyssey/19-competing-dispatches-constantinople.svg",
+      "bbox": [
+        28.942,
+        41,
+        28.986,
+        41.029
+      ],
+      "hubs": {
+        "count": 6,
+        "allCentersAndRadiusCirclesInsideFrame": true,
+        "minimumEdgeClearanceOutsideLargestHubRadiusTiles": 57.81,
+        "closestPair": {
+          "hubs": [
+            "hub-1",
+            "hub-6"
+          ],
+          "centerDistanceTiles": 42.82,
+          "declaredRadiiSumTiles": 23.94,
+          "edgeGapTiles": 18.88
+        },
+        "safeHub": {
+          "id": "hub-6",
+          "lonLat": [
+            28.948,
+            41.012
+          ],
+          "tileCenter": [
+            69.95,
+            226.33
+          ],
+          "insideFrame": true,
+          "centerlineDistanceToDrawnSouthernWaterLineTiles": 29.6,
+          "remainingBeyond12TileDistrictRadiusTiles": 17.63
+        }
+      },
+      "entitiesAndZones": {
+        "finiteWorldIdentityCount": 62,
+        "allInitialHubPlusOffsetPositionsInsideFrame": true,
+        "largestOffsetMagnitudeFromAssignedHubTiles": 28.57,
+        "roleCounts": {
+          "fictionalLocalSuccessionContext": 3,
+          "fictionalLocalHousehold": 6,
+          "fictionalQualifiedLocalDispatch": 1,
+          "friendlyInfantry": 10,
+          "friendlySpearmen": 4,
+          "friendlyArchers": 6,
+          "hostilePatrol": 32
+        },
+        "hostilePockets": "Fixed central guards are at hub-3 offsets [-8,8],[-6,8],[-4,8]; fixed southern guards at hub-4 offsets [8,8],[10,8],[12,8]. Extra central infantry occupy the compact offset grid x=-14…-8, y=16…22; extra southern ranged troops occupy x=14…20, y=16…20. All absolute tile positions are in-frame. These prescribed clusters are compact in the design coordinates; unit collision, fighting space, and native pathing remain untested.",
+        "checkedZoneInstances": 14,
+        "zoneCentersAndRadiusExtentsOutsideFrame": 0
+      },
+      "routes": {
+        "count": 5,
+        "names": [
+          "central-context-street",
+          "northern-context-branch",
+          "southern-safe-approach",
+          "western-household-alternative",
+          "central-west-relief"
+        ],
+        "allAreLandMode": true,
+        "renderedRoutesCompleteAgainstBlueprint": true,
+        "explicitWaterSegments": 5,
+        "nearestRouteToDrawnCoastalLine": {
+          "route": "southern-safe-approach",
+          "centerlineClearanceTiles": 22.99,
+          "routeWidthTiles": 9.98,
+          "approximateOuterEdgeClearanceTiles": 18.0
+        },
+        "nextNearest": {
+          "route": "western-household-alternative",
+          "centerlineClearanceTiles": 29.6,
+          "routeWidthTiles": 7.98,
+          "approximateOuterEdgeClearanceTiles": 25.61
+        },
+        "guardPlacementRelation": "Central and southern route polylines pass through their designated hub nodes where the fixed guard clusters are offset; this matches the disclosed tactical layout. The geometrical match does not imply the map will be passable under actual units.",
+        "assessment": "No route intersects the drawn southern blue line after accounting for half the declared corridor width. All hubs/paths are on its inland/north side in the drawing. The safe hub coordinates now match the corrected 28.948,41.012 location and remain in-frame."
+      },
+      "labels": "Static SVG render inspected; right rail and footer fit the viewBox.",
+      "waterControlLimit": "Only a southern coastal line is shown, without a filled sea area. Golden Horn and Bosphorus geometry are absent; the figure cannot certify either coastline or a playable land mask."
+    }
+  ],
+  "auxiliaryAsset": {
+    "path": "docs/research/odyssey-research/images/serdica-decumanus-modern.jpg",
+    "observedDimensions": "720×404 px JPEG",
+    "relationshipToAuditedMaps": "Not referenced by orders 15–19 mapPlan assets or by their dossier map plans; no georeferenced coordinate transform/bbox was found for it. Excluded from geometric route and coastline checks.",
+    "status": "Its presence and dimension were observed only. Do not use it as a georeferenced map or claim a reviewed/accredited map source; parent has noted manifest/accreditation remains pending."
+  },
+  "limits": [
+    "No terrain raster/DEM, hydrographic polygons, pathfinding, map-native unit placements, game build, or historical shoreline dataset was loaded.",
+    "A route's SVG centerline and declared semiwid were checked only against explicit polylines. For missing controls, clearance is null/unmeasured.",
+    "Absence of a blue line or polygon does not establish traversable land, a shoreline bank, or ancient land continuity.",
+    "Any geometric overlap would be a review signal, not certainty that a real or in-game collision occurs."
+  ]
+}
