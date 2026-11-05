@@ -6,6 +6,10 @@ status: ready
 type: proposal
 track: general
 date: 2026-11-05
+shipped-in:
+  - "337b792867c4345d36b1973ad9caf52cff53e0f6"
+  - "4c008edcdc7de9c36f22f72d345288981a54bebe"
+  - "575617c8c7db1441d78bd6beb8bba88de88ec4e2"
 ---
 
 # x00001 — Repair DelendAI startup validation expectations and the release branch reference

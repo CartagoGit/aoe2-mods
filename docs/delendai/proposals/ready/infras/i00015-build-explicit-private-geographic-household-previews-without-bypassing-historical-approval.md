@@ -6,6 +6,8 @@ status: ready
 type: proposal
 track: general
 date: 2026-11-05
+shipped-in:
+  - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
 ---
 
 # i00015 — Build explicit private geographic household previews without bypassing historical approval
