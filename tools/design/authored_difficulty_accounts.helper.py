@@ -39,6 +39,16 @@ def observed_vector(value, label):
     return normalized
 
 
+def checked_mandatory_total(authored):
+    """Validate raw opt-in mandatory payments before any Python bool/int sum."""
+    total = {key: 0 for key in RESOURCES}
+    for objective in authored.get("mainObjectives", []):
+        for requirement in objective.get("requirements", []):
+            if requirement.get("kind") == "resource-transaction":
+                total = add(total, observed_vector(requirement.get("amounts"), "mandatory payment"))
+    return total
+
+
 def add(*vectors):
     result = {key: 0 for key in RESOURCES}
     for source in vectors:
@@ -112,6 +122,9 @@ def verify_episode(episode, optional_states, all_mask):
         vectors = {key: vector(profile.get(key), f"{level}/{key}") for key in
                    ("startingResources", "gatherableBank", "protectedRecoveryStock", "replacementBudget", "mandatoryDeliveries", "supplyMargins", "accessibleWithoutOptionalRewards")}
         S, B, P, Z = (vectors[k] for k in ("startingResources", "gatherableBank", "protectedRecoveryStock", "replacementBudget"))
+        # Rebuild all four segregated accounts at the materialized boundary too.
+        # The source-only read path already performs this same checked addition.
+        add(S, B, P, rewards)
         accessible = add(S, B)
         need = add(vectors["mandatoryDeliveries"], Z)
         margin = {key: accessible[key] - need[key] for key in RESOURCES}
@@ -124,6 +137,8 @@ def verify_episode(episode, optional_states, all_mask):
         full = states.get(all_mask(len(options)))
         if full is None:
             raise ValueError(f"{level}: actual optional costs/rewards do not reach all-complete state")
+        for state, _order in states.values():
+            vector(state, f"{level}/optional-state-balance")
         if profile.get("mainFeasibleSkippingAllOptionals") is not True or profile.get("allOptionalCostsAffordable") is not True:
             raise ValueError(f"{level}: stored feasibility flags are not true")
         if "economyProfile" in profile:
@@ -176,6 +191,8 @@ def build_profiles(authored, objectives, main, rewards):
         if any(value < 0 for value in margin.values()):
             raise ValueError(f"{level}: explicit spendable resources cannot fund mandatory payments and replacement floor")
         final = states_fn({key: accessible[key] - main[key] - replacement[key] for key in RESOURCES}, optionals)
+        for balance, _order in final.values():
+            vector(balance, f"{level}/optional-state-balance")
         full = final.get((1 << len(optionals)) - 1)
         if full is None:
             raise ValueError(f"{level}: all optional payments are not affordable before their rewards")

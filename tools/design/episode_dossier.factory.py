@@ -325,6 +325,13 @@ def map_plan(cid, selection, authored, profile):
 
 
 def difficulty_profiles(authored, reward_stock, optional_cost, optional_objectives=None):
+    if "authoredDifficultyAccounts" in authored:
+        if "economyProfile" in authored:
+            raise ValueError("economyProfile is derived output and cannot be authored directly")
+        if optional_objectives is None:
+            raise ValueError("Explicit accounts require materialized optional task rows")
+        main_cost = accounts["checked_mandatory_total"](authored)
+        return accounts["build_profiles"](authored, optional_objectives, main_cost, reward_stock)
     main_cost = total(
         [
             r.get("amounts", {})
@@ -333,12 +340,6 @@ def difficulty_profiles(authored, reward_stock, optional_cost, optional_objectiv
             if r["kind"] == "resource-transaction"
         ]
     )
-    if "authoredDifficultyAccounts" in authored:
-        if "economyProfile" in authored:
-            raise ValueError("economyProfile is derived output and cannot be authored directly")
-        if optional_objectives is None:
-            raise ValueError("Explicit accounts require materialized optional task rows")
-        return accounts["build_profiles"](authored, optional_objectives, main_cost, reward_stock)
     result = {}
     for level, multiplier, workers, duration in [
         ("easy", 1.15, 12, [30, 55]),
