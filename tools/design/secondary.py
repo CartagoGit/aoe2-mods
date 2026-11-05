@@ -246,6 +246,18 @@ def check_optional_objectives(scenario, check, label):
             vectors.append((f'{label}/{level}/{field}', budget.get(field)))
     for field in ('reservedRewards', 'maxOptionalCosts'):
         vectors.append((f'{label}/secondaryBudget/{field}', scenario.get('secondaryBudget', {}).get(field)))
+    explicit_mode = scenario.get('economyProfile') == 'authored-finite-accounts-v1'
+    if 'economyProfile' in scenario and not explicit_mode:
+        numeric_errors.append(f'{label}: unknown economyProfile {scenario.get("economyProfile")!r}')
+    if not explicit_mode and any('economyProfile' in row for row in scenario.get('difficulty', {}).values()):
+        numeric_errors.append(f'{label}: economyProfile marker is only allowed on the dossier')
+    if explicit_mode:
+        try:
+            helper = runpy.run_path(str(Path(__file__).with_name('authored_difficulty_accounts.helper.py')))
+            finite = runpy.run_path(str(Path(__file__).with_name('finite_allocation.helper.py')))
+            helper['verify_episode'](scenario, finite['optional_states'], lambda count: (1 << count) - 1)
+        except (KeyError, TypeError, ValueError, OverflowError) as error:
+            numeric_errors.append(f'{label}: authored finite account audit failed: {error}')
     for context, vector in vectors:
         try:
             resource_amounts(vector)
@@ -320,14 +332,15 @@ def check_optional_objectives(scenario, check, label):
     budget = scenario.get('secondaryBudget', {})
     check(rewards == budget.get('reservedRewards'), f'{label}: optional reward budget drift')
     check(costs == budget.get('maxOptionalCosts'), f'{label}: optional cost budget drift')
-    for level, b in scenario['difficulty'].items():
-        for k in RESOURCES:
-            available_without = b['startingResources'][k]+b['gatherableBank'][k]-rewards[k]
-            main_need = b['mandatoryDeliveries'][k]+b['replacementBudget'][k]+b['protectedRecoveryStock'][k]
-            check(available_without >= main_need, f'{label}/{level}: main goal needs optional {k} reward')
-            check(b.get('accessibleWithoutOptionalRewards', {}).get(k) == available_without, f'{label}/{level}: nonoptional stock drift')
-            check(rewards[k] + costs[k] <= b['supplyMargins'][k], f'{label}/{level}: all side goals overdraw {k} surplus')
-            check(rewards[k] <= budget.get('reallocatedCacheAllowance', {}).get(k, 0), f'{label}: rewards created beyond old cache allowance')
+    if not explicit_mode:
+        for level, b in scenario['difficulty'].items():
+            for k in RESOURCES:
+                available_without = b['startingResources'][k]+b['gatherableBank'][k]-rewards[k]
+                main_need = b['mandatoryDeliveries'][k]+b['replacementBudget'][k]+b['protectedRecoveryStock'][k]
+                check(available_without >= main_need, f'{label}/{level}: main goal needs optional {k} reward')
+                check(b.get('accessibleWithoutOptionalRewards', {}).get(k) == available_without, f'{label}/{level}: nonoptional stock drift')
+                check(rewards[k] + costs[k] <= b['supplyMargins'][k], f'{label}/{level}: all side goals overdraw {k} surplus')
+                check(rewards[k] <= budget.get('reallocatedCacheAllowance', {}).get(k, 0), f'{label}: rewards created beyond old cache allowance')
     approaches = scenario.get('playstyles', [])
     check(len({tuple(sorted(style['optionalObjectives'])) for style in approaches}) == len(approaches), f'{label}: identical playstyle alternatives')
     check(len(approaches) >= 3, f'{label}: fewer than three declared playstyles')

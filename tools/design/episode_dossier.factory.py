@@ -15,6 +15,7 @@ from secondary import RESOURCES, bilingual, build_optional_objectives
 continuity = runpy.run_path(str(Path(__file__).with_name("odyssey_continuity.helper.py")))
 transport = runpy.run_path(str(Path(__file__).with_name("transport_journey.helper.py")))
 numbers = runpy.run_path(str(Path(__file__).with_name("design_numbers.helper.py")))
+accounts = runpy.run_path(str(Path(__file__).with_name("authored_difficulty_accounts.helper.py")))
 build_finale = continuity["build_finale"]
 build_entry = continuity["build_entry"]
 entry_screens = continuity["entry_screens"]
@@ -323,7 +324,7 @@ def map_plan(cid, selection, authored, profile):
     }
 
 
-def difficulty_profiles(authored, reward_stock, optional_cost):
+def difficulty_profiles(authored, reward_stock, optional_cost, optional_objectives=None):
     main_cost = total(
         [
             r.get("amounts", {})
@@ -332,6 +333,12 @@ def difficulty_profiles(authored, reward_stock, optional_cost):
             if r["kind"] == "resource-transaction"
         ]
     )
+    if "authoredDifficultyAccounts" in authored:
+        if "economyProfile" in authored:
+            raise ValueError("economyProfile is derived output and cannot be authored directly")
+        if optional_objectives is None:
+            raise ValueError("Explicit accounts require materialized optional task rows")
+        return accounts["build_profiles"](authored, optional_objectives, main_cost, reward_stock)
     result = {}
     for level, multiplier, workers, duration in [
         ("easy", 1.15, 12, [30, 55]),
@@ -555,6 +562,8 @@ def dossier_screens(cid, selection, authored, episode, narrator_id, next_selecti
 
 
 def build_dossier(campaign, selection, authored, profile, next_selection, baseline=None):
+    if "economyProfile" in authored:
+        raise ValueError("economyProfile is derived output and cannot be authored directly")
     cid = campaign["campaignId"]
     plan = map_plan(cid, selection, authored, profile)
     world, objectives = world_and_objectives(cid, selection, authored, plan["hubs"])
@@ -666,11 +675,13 @@ def build_dossier(campaign, selection, authored, profile, next_selection, baseli
     draft["secondaryBudget"] = {
         "reservedRewards": rewards,
         "maxOptionalCosts": costs,
-        "reallocatedCacheAllowance": amounts({"food": 600, "wood": 300, "gold": 150}),
-        "fundingPolicy": "reward stock is segregated from the finite total bank; no duplicate caches",
+        "reallocatedCacheAllowance": copy.deepcopy(rewards) if "authoredDifficultyAccounts" in authored else amounts({"food": 600, "wood": 300, "gold": 150}),
+        "fundingPolicy": "the authored once-only reward reserve is recorded once; it is not main-accessible stock" if "authoredDifficultyAccounts" in authored else "reward stock is segregated from the finite total bank; no duplicate caches",
         "nativeStatus": "design-only; requires certified reusable predicates and native QA",
     }
-    draft["difficulty"] = difficulty_profiles(authored, rewards, costs)
+    draft["difficulty"] = difficulty_profiles(authored, rewards, costs, draft["secondaryObjectives"])
+    if "authoredDifficultyAccounts" in authored:
+        draft["economyProfile"] = accounts["PROFILE"]
     draft["playstyles"] = copy.deepcopy(authored["playstyles"])
     draft["gameplayIdentity"] = copy.deepcopy(authored.get("gameplayIdentity", {}))
     if "oppositionPlan" in authored:

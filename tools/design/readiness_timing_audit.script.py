@@ -58,6 +58,10 @@ def worker_split(deficits, worker_count, rate):
 
 
 def build_report(plan, episode):
+    if "economyProfile" in episode:
+        raise ValueError(f"Timing audit does not support economyProfile {episode['economyProfile']!r}; no timing result was produced")
+    if any("economyProfile" in profile for profile in episode.get("difficulty", {}).values()):
+        raise ValueError("Timing audit rejects misplaced economyProfile markers; no timing result was produced")
     objective = next((row for row in episode["objectivePlan"] if row["id"] == plan["objectiveId"]), None)
     if not objective:
         raise ValueError("Unknown authored objective")
