@@ -2,7 +2,7 @@
 id: x00001
 title: "Repair DelendAI startup validation expectations and the release branch reference"
 kind: fix
-status: review
+status: done
 type: proposal
 track: general
 date: 2026-11-05
@@ -10,10 +10,11 @@ shipped-in:
   - "337b792867c4345d36b1973ad9caf52cff53e0f6"
   - "4c008edcdc7de9c36f22f72d345288981a54bebe"
   - "575617c8c7db1441d78bd6beb8bba88de88ec4e2"
-last-transition-id: b20f50fa-af17-4419-9b3b-9402a89ed06b
-last-correlation-id: b20f50fa-af17-4419-9b3b-9402a89ed06b
-last-transition-from: in-progress
-last-transition-at: 2026-11-05T01:39:25.777Z
+  - "6c5d6d0b1d03"
+last-transition-id: be7ebcba-3998-4330-b5e6-706582c51cbb
+last-correlation-id: be7ebcba-3998-4330-b5e6-706582c51cbb
+last-transition-from: review
+last-transition-at: 2026-11-05T07:34:45.541Z
 ---
 
 # x00001 — Repair DelendAI startup validation expectations and the release branch reference
@@ -35,12 +36,14 @@ The supplied 5 November boot log reports eight absent official Git guards, missi
 - global_gate: type
 
 ### S1 — Correct the startup contract and verify official guards
-- **Status**: review
-- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/review/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
+- **Status**: done
+- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/done/fixes/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
 - **Gate**: type
 - shipped-in: `6c5d6d0b1d03`
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at 6c5d6d0b1d03, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Diff against c8c7a48 and installed schema. (2) Guard status and canonical launcher smoke; QA record and logs. (3) Own delendai validate exit 0; 164 tests / 2159 assertions, archived journal. — Independent review: source 337b792/4c008ed/575617c, landed 7541630, preserves develop and the two gate commands, config selects existing main and adds required exit0 expectations; eight official guards installed, real canonical configured-main launcher READY 0 blockers/repair tasks and no skipped phases, main protection remains explicitly unprotected. The earlier incorrect worktree probe is retained and not used as success evidence. Scope does not alter remote protection or certify game behavior. Own official validation passed 164 tests/2159 assertions; journal archived.
 
 ## acceptance
 

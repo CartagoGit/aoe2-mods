@@ -8,6 +8,7 @@ track: general
 date: 2026-11-05
 shipped-in:
   - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
+  - "2c56e3eb9d162d72a5691c02a8423c01bdc532b1"
 last-transition-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
 last-correlation-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
 last-transition-from: ready
@@ -33,15 +34,17 @@ The synthetic household builder correctly refuses every historical build, so it 
 - global_gate: type
 
 ### S1 — Architect private preview contract and geographic decisions
-- **Status**: review
+- **Status**: done
 - **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/in-progress/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
 - **Gate**: type
 - acceptance:
   - "Define explicit development compilation separately from historical/native/engine approval; preserve synthetic and public-export refusals; no build-before-playtest cycle. Candidate authorization remains false until separately reviewed real S3 inputs."
   - "Pin actual sources,340frame,modern bands,17originals/10zones,continuous corridor envelope,half-cell convention and one explicitly bounded store override; retain source binding and unknown hydrology/collision. No source/ID/schema or dossier count change."
   - "Independent review of the reuse boundary, exact S2 ownership, failure modes and evidence; no unimplemented operation or prospective case is claimed executed."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at 2c56e3eb9d16, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Architecture and plan false flags reviewed, existing historical refusal retained. (2) Input SHA256 verified, binding counts, geometry, raster and override independently checked. (3) Eleven S2 files and entry points reviewed, size-range P2 fixed, S2/S3 pending. — Independent source review 5020d0b, af91123, 1a4dac3 and 9a9c757 landed 2c56e3e. Earlier P2 size range fixed; helper boundaries 299/300/400/401 independently verified. Source hashes, 17 bodies/10 zones, frame, candidate raster, corridor and bounded override checked; actual implementation, historical and game approval remain pending. Official validate 164 tests/2159 assertions, journal archived.
 
 ### S2 — Reusable private base, strict plan boundary and geographic preview compiler
 - **Status**: pending
