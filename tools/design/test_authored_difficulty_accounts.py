@@ -14,6 +14,15 @@ sys.path.insert(0, str(ROOT / "tools/design"))
 RESOURCES = ("food", "wood", "gold", "stone")
 
 
+def _record_acceptance_case(case_id, assertion, results):
+    """Append success only after the assertion returns normally."""
+    try:
+        assertion()
+    except Exception as error:
+        raise AssertionError(f"{case_id}: {error}") from error
+    results.append({"id": case_id, "result": "pass"})
+
+
 class AuthoredDifficultyAccountsTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -179,16 +188,40 @@ class AuthoredDifficultyAccountsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Resource amounts must be nonnegative integers"):
             self.factory.build_dossier(campaign, selection, authored, geography, successor, baseline)
 
+    def test_acceptance_case_writer_never_marks_a_failed_assertion_pass(self):
+        results = []
+        def inject_failure():
+            self.fail("fault-injected assertion failure")
+        with self.assertRaisesRegex(AssertionError, "fault-injected assertion failure"):
+            _record_acceptance_case("fault-injection", inject_failure, results)
+        self.assertEqual(results, [])
+
+    def test_fault_injection_aborts_31_case_artifact_before_success(self):
+        artifact = ROOT / ".cache/artifacts/i00013-S2/acceptance-cases.json"
+        if artifact.exists():
+            artifact.unlink()
+        original = self.helper["read_source"]
+        self.helper["read_source"] = lambda source: source
+        try:
+            with self.assertRaisesRegex(AssertionError, "missing-difficulty"):
+                self.test_all_31_architecture_cases_with_executable_results()
+        finally:
+            self.helper["read_source"] = original
+        self.assertFalse(artifact.exists(), "failed acceptance run must not leave a success artifact")
+
     def test_all_31_architecture_cases_with_executable_results(self):
         case_file = ROOT / "docs/qa/campaign-design/authored-difficulty-accounts-cases.json"
         cases = json.loads(case_file.read_text())["prospectiveRejectionCases"]
         self.assertEqual(len(cases), 31)
         results = []
+        evidence_dir = ROOT / ".cache/artifacts/i00013-S2"
+        evidence_dir.mkdir(parents=True, exist_ok=True)
+        evidence_path = evidence_dir / "acceptance-cases.json"
+        if evidence_path.exists():
+            evidence_path.unlink()
 
         def record(case_id, assertion):
-            with self.subTest(case=case_id):
-                assertion()
-            results.append({"id": case_id, "result": "pass"})
+            _record_acceptance_case(case_id, assertion, results)
 
         def source():
             return self.make_accounts({key: 0 for key in RESOURCES})
@@ -363,14 +396,12 @@ class AuthoredDifficultyAccountsTests(unittest.TestCase):
         record("timing-unsupported", timing_unknown_and_known)
 
         self.assertEqual({row["id"] for row in results}, {row["id"] for row in cases})
-        evidence_dir = ROOT / ".cache/artifacts/i00013-S2"
-        evidence_dir.mkdir(parents=True, exist_ok=True)
         evidence = {
             "schemaVersion": 1, "proposal": "i00013", "slice": "S2",
-            "productCommit": "bef5374dd305966e0c56f4529d281f1ffc0b1fee",
             "test": "test_all_31_architecture_cases_with_executable_results",
             "command": "python3 -m unittest -v tools.design.test_authored_difficulty_accounts.AuthoredDifficultyAccountsTests.test_all_31_architecture_cases_with_executable_results",
             "sourceCaseFileSha256": hashlib.sha256(case_file.read_bytes()).hexdigest(),
+            "sourceTestFileSha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "sourceCaseFlagsChanged": False,
             "completedAtUtc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "count": 31, "result": "pass", "cases": results,
