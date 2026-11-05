@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Empty Chair geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Empty Chair</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · alexandria · N ↑ E →</text>
+<polyline points="151.54,85.00 55.00,172.20" fill="none" stroke="#247b96" stroke-width="2"/>
+<polyline data-corridor="northern-household-relief" points="536.98,298.78 270.59,298.78 184.97,421.13" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northern-household-relief: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="southern-household-relief" points="184.97,421.13 251.56,554.58 536.98,554.58" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>southern-household-relief: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-southern-link" points="384.76,410.00 251.56,554.58" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-southern-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-western-link" points="384.76,410.00 184.97,421.13" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-western-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="exposed-eastern-shortcut" points="536.98,298.78 470.38,376.64 536.98,554.58" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>exposed-eastern-shortcut: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-pressure-link" points="384.76,410.00 470.38,376.64" fill="none" stroke="#757547" stroke-width="3" stroke-dasharray="8 6"><title>central-pressure-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="384.76" cy="410.00" r="20" fill="none" stroke="#91512f"/>
+<text x="407.76" y="410.00" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional central household preparation</text>
+<text x="730" y="204" font-family="sans-serif" font-size="12">court</text>
+<circle cx="536.98" cy="298.78" r="20" fill="none" stroke="#91512f"/>
+<text x="559.98" y="298.78" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional northeastern household</text>
+<text x="730" y="254" font-family="sans-serif" font-size="12">gathering court</text>
+<circle cx="184.97" cy="421.13" r="20" fill="none" stroke="#91512f"/>
+<text x="207.97" y="421.13" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional western local receiving court</text>
+<circle cx="536.98" cy="554.58" r="20" fill="none" stroke="#91512f"/>
+<text x="559.98" y="554.58" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional southeastern local receiving</text>
+<text x="730" y="354" font-family="sans-serif" font-size="12">court</text>
+<circle cx="251.56" cy="554.58" r="20" fill="none" stroke="#91512f"/>
+<text x="274.56" y="554.58" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional southwestern mainland relief</text>
+<text x="730" y="404" font-family="sans-serif" font-size="12">court</text>
+<circle cx="470.38" cy="376.64" r="20" fill="none" stroke="#91512f"/>
+<text x="493.38" y="376.64" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: Fictional eastern pressure pocket</text>
+<circle cx="270.59" cy="298.78" r="20" fill="none" stroke="#91512f"/>
+<text x="293.59" y="298.78" font-family="sans-serif">7</text>
+<text x="730" y="490" font-family="sans-serif" font-size="12">7: Fictional northwestern mainland relief</text>
+<text x="730" y="504" font-family="sans-serif" font-size="12">court</text>
+<text x="730" y="525" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="549" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="573" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="597" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="621" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="645" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="669" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="693" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [29.915, 31.173, 29.976, 31.215]; cosine-corrected longitude; approximate districts</text>
+</svg>

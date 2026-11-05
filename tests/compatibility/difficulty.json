@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "proposal": "s00001",
+  "slice": "S4",
+  "scope": "difficulty",
+  "kind": "manual-engine-test-plan",
+  "status": "pending",
+  "reason": "AoE2 no ejecutado en este entorno",
+  "evidenceRequired": [
+    "gameBuild",
+    "platform",
+    "artifactSha256",
+    "reviewer",
+    "steps",
+    "observations",
+    "attachments"
+  ],
+  "cases": [
+    {
+      "id": "campaign-ui-values",
+      "status": "pending"
+    },
+    {
+      "id": "editor-ui-values",
+      "status": "pending"
+    },
+    {
+      "id": "easy-resources",
+      "status": "pending"
+    },
+    {
+      "id": "standard-reaction",
+      "status": "pending"
+    },
+    {
+      "id": "hard-reaction",
+      "status": "pending"
+    },
+    {
+      "id": "hints",
+      "status": "pending"
+    },
+    {
+      "id": "simultaneous-terminal",
+      "status": "pending"
+    },
+    {
+      "id": "ids-range",
+      "status": "pending"
+    }
+  ]
+}

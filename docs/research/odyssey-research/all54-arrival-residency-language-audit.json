@@ -1,0 +1,292 @@
+{
+  "audit": {
+    "title": "Arrival versus current-residency language scan",
+    "scope": "Read-only mechanical comparison of all episode records/objective blueprints in faith-origins.json and imperial-church.json in the gpt-6-new-all worktree.",
+    "files": [
+      "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/faith-origins.json",
+      "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json"
+    ],
+    "episodeBlueprintsRead": 54,
+    "coverage": {
+      "faith-origins": 30,
+      "imperial-church": 24
+    },
+    "method": "Scanned bilingual objective, help, receipt, and outro strings for current-location/retention verbs and compared them to objectivePlan predicates, entity-state arrived destinations, ordered-departure predicates, and presencePlan bindings. Terms included stay/remain/held/kept/custody and permanecer/quedar/mantener/guardar. Findings are candidates for architect review, not automatic defects.",
+    "architectApproval": false,
+    "mutations": {
+      "repository": false,
+      "git": false,
+      "proposal": false
+    },
+    "limitations": [
+      "This is a textual and schema-level audit, not gameplay observation or proof of native runtime behavior.",
+      "An earlier arrival ledger can establish that delivery occurred; the audit does not infer that the entity actually left afterward. It only notes that the ledger does not prove current presence.",
+      "Historical narration, custody metaphors, archival status, route instructions, and explicit statements that current position is unchecked are not automatically classified as live-location promises."
+    ]
+  },
+  "sourceCodeContract": {
+    "validator": {
+      "path": "tools/design/episode_dossier.validator.py",
+      "arrivalLocator": "lines 98-125",
+      "arrivalMeaning": "entity-state with state=arrived requires an entity-to-destination map and valid zones; the validator also prevents initial placement from counting as arrival. This is delivery/arrival evidence, not a later current-position check.",
+      "presenceLocator": "lines 75-97",
+      "presenceMeaning": "current-entity-presence requires observable=current-alive-position, reevaluateBeforeTerminal=true, deliveryLedgerSubstitute=false, and binds a specific destination.",
+      "gate": "Current-presence requirements must declare live-entity-presence as specified but reference and native implementations pending, implementationStatus=unimplemented, and proposalId=i00005.",
+      "presencePlanLocator": "lines 330-350",
+      "presencePlanMeaning": "Every presencePlan binding must point to a current-entity-presence requirement; validator rejects replacing it with delivery history."
+    },
+    "test": {
+      "path": "tools/design/test_design.py",
+      "locator": "lines 97-103",
+      "meaning": "test_live_presence_cannot_be_replaced_with_historical_arrival explicitly changes an order-22 live-presence requirement to arrived and expects a 'current presence replaced with delivery history' validation error."
+    }
+  },
+  "candidateFindings": [
+    {
+      "campaign": "faith-origins",
+      "orderAtCollection": 15,
+      "episodeId": "15-evacuation-and-recovery-rome-ostia",
+      "severityForReview": "ambiguous wording; review whether ‘sheltered’ denotes continuing location",
+      "textFields": [
+        {
+          "path": "objectivePlan[o1].text",
+          "en": "Collect all four property chests and bring at least eight of the ten households alive to the refuge yard.",
+          "es-ES": "Recoge los cuatro arcones de bienes y lleva con vida al menos ocho de los diez hogares al patio de refugio."
+        },
+        {
+          "path": "objectivePlan[o3].text",
+          "en": "Bring at least eight of the same sheltered households, all four chests and both notes to the eastern land departure court.",
+          "es-ES": "Lleva al menos ocho de los mismos hogares refugiados, los cuatro arcones y ambas notas al patio terrestre de salida oriental."
+        },
+        {
+          "path": "objectivePlan[o1].receiptText",
+          "en": "Four chests collected and at least eight original household identities sheltered.",
+          "es-ES": "Cuatro arcones recogidos y al menos ocho identidades originales de hogares refugiadas."
+        }
+      ],
+      "relevantRequirements": [
+        {
+          "objective": "o1",
+          "requirement": "req-2",
+          "kind": "entity-state",
+          "state": "arrived",
+          "requiredCount": 8,
+          "destinations": "all ten household identities map to destination-2 refuge"
+        },
+        {
+          "objective": "o3",
+          "requirement": "req-1",
+          "kind": "entity-state",
+          "state": "arrived",
+          "requiredCount": 8,
+          "destinations": "all ten identities map to destination-3 departure court",
+          "eligibility": "intersection with o1 ledger sheltered-households"
+        }
+      ],
+      "presencePlan": null,
+      "assessment": "The design requires the same previously sheltered identities to arrive at the departure court. ‘Sheltered’ may be a historical descriptor of their o1 refuge receipt, rather than a promise they remain physically at the refuge until departure; flag for wording/intent review, not presumed failure."
+    },
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 15,
+      "episodeId": "15-long-distance-dispatch-nicomedia",
+      "severityForReview": "ambiguous post-objective narration / custody statement",
+      "textFields": [
+        {
+          "path": "screens[38].persona-outro.text",
+          "condition": "after fact-outro",
+          "en": "Two clerks came back; the local packet stayed at the handoff. Beyond that, my list becomes a margin. A ruler can write as though his concern reaches everywhere. The people named in his letter must still live where they are. In the next bundle, even the men who met in one city disagree about what was heard.",
+          "es-ES": "Regresaron dos escribientes; el paquete local quedó en la entrega. A partir de ahí mi lista se convierte en margen. Un gobernante puede escribir como si su preocupación llegara a todas partes. Las personas de su carta siguen viviendo donde están. En el siguiente legajo, hasta los hombres reunidos en una misma ciudad discrepan sobre lo que se oyó."
+        }
+      ],
+      "relevantRequirements": [
+        {
+          "objective": "o3",
+          "requirement": "req-2",
+          "kind": "entity-state",
+          "state": "arrived",
+          "requiredCount": 1,
+          "entity": "local-dispatch-study-packet-1",
+          "destination": "destination-3 eastern inland handoff"
+        },
+        {
+          "objective": "o4",
+          "requirements": [
+            "req-1 ordered-departure for two original clerks after o3/req-3 receipt",
+            "req-2 clerk return arrival to workshop"
+          ]
+        }
+      ],
+      "presencePlan": null,
+      "assessment": "The packet is recorded as delivered, while only the clerks are required to return. ‘Stayed at the handoff’ asserts or evokes post-delivery location, but occurs in a persona outro and may be custody shorthand. The adjacent sentence about named people is general reflection, not an entity-location requirement."
+    },
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 16,
+      "episodeId": "16-witness-record-comparison-tyre",
+      "severityForReview": "clear current-location assertion; no matching presence requirement found",
+      "textFields": [
+        {
+          "path": "objectivePlan[o3].text",
+          "en": "Once this phase begins, observe each report leaving its own received court and return those same two reports to the workshop. Also collect the separate eastern place-context note and bring it there. The assistants stay at their receiving courts.",
+          "es-ES": "Al comenzar esta fase, observa cada informe salir de su propio patio receptor y devuelve esos mismos dos informes al taller. Recoge además la nota oriental separada de contexto de lugares y llévala allí. Los ayudantes permanecen en sus patios receptores."
+        },
+        {
+          "path": "screens[5].route-help.text",
+          "note": "Route-help repeats the instruction that assistants stay at their receiving courts while reports depart; bilingual text present."
+        },
+        {
+          "path": "screens[38].persona-outro.text",
+          "note": "Outro also says the two assistants stayed at different courts; duplicate narrative surface, not an independent predicate."
+        }
+      ],
+      "relevantRequirements": [
+        {
+          "objective": "o2",
+          "requirement": "req-2",
+          "kind": "entity-state",
+          "state": "arrived",
+          "entity": "north assistant",
+          "destination": "destination-4 northeastern court"
+        },
+        {
+          "objective": "o2",
+          "requirement": "req-4",
+          "kind": "entity-state",
+          "state": "arrived",
+          "entity": "south assistant",
+          "destination": "destination-5 southeastern court"
+        },
+        {
+          "objective": "o3",
+          "requirements": [
+            "report ordered-departures and return arrivals; no assistant-presence requirement"
+          ]
+        }
+      ],
+      "presencePlan": null,
+      "assessment": "The objective explicitly states current assistant locations as reports depart, but the cited requirements only record earlier assistant arrival. This is a strong candidate for either a gated current-presence requirement or revised wording; decision belongs to architect."
+    },
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 18,
+      "episodeId": "18-administrative-transition-nicomedia",
+      "severityForReview": "clear current-location assertion for retained original ledgers; no matching presence requirement found",
+      "textFields": [
+        {
+          "path": "objectivePlan[o4].text",
+          "en": "After this phase begins, observe each original clerk leave their own received work court and bring all four to personnel accounts. Deliver the household handoff to accounts and the service handoff to the eastern local relay. The original ledgers stay at their work courts.",
+          "es-ES": "Al comenzar esta fase, observa cada escribiente original salir de su propio patio de trabajo recibido y lleva los cuatro a cuentas de personal. Entrega el traspaso de hogares a cuentas y el de servicio al relevo oriental local. Los libros originales quedan en sus patios de trabajo."
+        },
+        {
+          "path": "screens[5].route-help.text",
+          "note": "Route-help describes the two original ledgers remaining at their assigned work courts; bilingual instruction."
+        },
+        {
+          "path": "screens[16].objective-text",
+          "note": "Objective screen repeats ledger-retention instruction."
+        },
+        {
+          "path": "screens[38].persona-outro.text",
+          "note": "Outro says both ledgers stayed where work was done; narrative repetition."
+        }
+      ],
+      "relevantRequirements": [
+        {
+          "objective": "o2",
+          "requirement": "req-2",
+          "kind": "entity-state",
+          "state": "arrived",
+          "entity": "household ledger",
+          "destination": "destination-3 south work court"
+        },
+        {
+          "objective": "o2",
+          "requirement": "req-4",
+          "kind": "entity-state",
+          "state": "arrived",
+          "entity": "service ledger",
+          "destination": "destination-4 northeastern work court"
+        },
+        {
+          "objective": "o4",
+          "requirements": [
+            "req-1 and req-2 order clerks to depart and arrive at personnel accounts; req-3 and req-4 deliver handoffs; no current-presence requirement for either original ledger"
+          ]
+        }
+      ],
+      "presencePlan": null,
+      "assessment": "Direct objective, route-help, and outro wording claims the original ledgers remain at their courts. The design proves their earlier delivery but does not currently bind their terminal-time positions. Strong candidate for architect decision."
+    },
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 22,
+      "episodeId": "22-civilian-record-preservation-milan",
+      "severityForReview": "guarded current-presence contract; implementation explicitly pending",
+      "textFields": [
+        {
+          "path": "objectivePlan[o3].text",
+          "en": "Each store must currently contain its original bundle and original custodian, alive. An earlier delivery alone is insufficient.",
+          "es-ES": "Cada depósito debe contener en ese momento su legajo y custodio originales, vivos. Una entrega anterior no basta."
+        },
+        {
+          "path": "fact-outro / related outcome text",
+          "note": "Bilingual outcome language describes bundles remaining in their stores with custodians."
+        }
+      ],
+      "relevantRequirements": [
+        {
+          "objective": "o3",
+          "requirements": [
+            "req-3",
+            "req-4",
+            "req-5",
+            "req-6"
+          ],
+          "kind": "current-entity-presence",
+          "binding": "presencePlan bindings",
+          "scope": "three bundles and three custodians currently alive/present at assigned stores at reporting return completion"
+        }
+      ],
+      "presencePlan": {
+        "capabilityId": "live-entity-presence",
+        "proposalId": "i00005",
+        "implementationStatus": "unimplemented",
+        "evaluation": "current state before terminal latch, not historical arrivals",
+        "deliveryLedgerSubstitute": false
+      },
+      "assessment": "Not an arrival-only contract: current presence is explicitly specified and bound. However it is gated as unimplemented and has no reference/native observation yet; this audit does not claim playable or tested support."
+    }
+  ],
+  "explicitNonIssues": [
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 21,
+      "episodeId": "21-returning-households-escort-alexandria",
+      "text": "Each household pair’s earlier reception is recorded at its assigned host; this does not require it to remain there.",
+      "assessment": "Explicitly disclaims continuing-presence semantics; arrived is used as historical reception. Not a residency promise."
+    },
+    {
+      "campaign": "imperial-church",
+      "orderAtCollection": 23,
+      "episodeId": "23-bounded-political-pressure-milan",
+      "text": "The outgoing list has a separate recorded reception; its current location is not checked by this circuit.",
+      "assessment": "Explicitly limits the claim to a recorded arrival and disclaims a current-location check. No residency promise."
+    }
+  ],
+  "falsePositiveClasses": [
+    "Historical persons ‘remain’ in attributed narration or a source's custody; this is not a playable entity-position claim.",
+    "‘Remain’ meaning unresolved, separate, available, disclosed, recorded, incomplete, or off-map is not physical residency.",
+    "‘Quedan registrados’ and archive/receipt language states a record status, not necessarily the location of the represented physical entity.",
+    "Route directions to stay on an inland side or coastal bank describe route/geography, not a delivered unit's terminal location.",
+    "area-state controlled-and-passable requirements maintain territory control; they do not establish the current position of a named entity."
+  ],
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": false,
+    "corrections": "After this collection,15 packet,16 assistants and18 ledgers are recorded receptions rather than current custody.21/23 likewise explicitly disavow residency.22 requires live presence of three bundles and three custodians, specified unimplemented under officiali00005.",
+    "faith15Decision": "Same sheltered households is a historical prior-reception identity descriptor in a subsequent journey, not an assertion they currently remain in the first shelter. No source or schema edits from phrase matching alone.",
+    "limit": "Mechanical full54scan, not game or blanket historical approval. Original findings are pre-correction evidence; current dossiers govern."
+  }
+}

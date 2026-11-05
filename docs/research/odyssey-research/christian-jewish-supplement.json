@@ -1,0 +1,311 @@
+{
+  "campaigns": [
+    {
+      "id": "faith-origins",
+      "events": [
+        {
+          "date": "27–36 CE",
+          "event": "La inscripción de Cesarea documenta a Pontius Pilatus con el título de prefecto de Judea durante su administración.",
+          "place": "Cesarea Marítima, Judea (actual Israel)",
+          "url": "https://cojs.org/pontius_pilate-s_tiberium_inscription-_26-36_ce/",
+          "locator": "Inscripción del Tiberieum; ficha del Center for Online Judaic Studies, procedencia Cesarea y cargo de Pilato.",
+          "qualification": "La piedra está fragmentada y reutilizada; prueba el cargo y actividad edilicia, no el proceso de Jesús. El rango 27–36 recorta el mandato convencional 26–36 al periodo de campaña."
+        },
+        {
+          "date": "c. 30–33 CE",
+          "event": "Fuentes cristianas sitúan la ejecución de Jesús bajo Pilato; Tacito, décadas después, también atribuye su ejecución a Pilato bajo Tiberio.",
+          "place": "Jerusalén, Judea romana",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+          "locator": "Tacitus, Annals 15.44; Cambridge, ‘Dating the Death of Jesus’ (discute el 30 preferido por muchos y la imposibilidad de recuperar fecha exacta): https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+          "qualification": "Tacito escribe a comienzos del siglo II, no es testigo. El rango 30–33 es estimación moderna; no incorporar resurrección o milagros como hechos verificables."
+        },
+        {
+          "date": "c. 30–40 CE",
+          "event": "Tras la muerte de Jesús, un grupo de seguidores permanece en Jerusalén; Pablo más tarde recuerda allí a Cefas y a Santiago, hermano del Señor.",
+          "place": "Jerusalén",
+          "url": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NIV%3BNRSVUE%3BKJV%3BNKJV",
+          "locator": "Pablo, Gálatas 1:18–19; su visita ocurrió ‘después de tres años’, según su propio cómputo.",
+          "qualification": "La carta es testimonio retrospectivo de Pablo. No permite reconstruir tamaño, estructura o uniformidad de la comunidad."
+        },
+        {
+          "date": "c. 33–36 CE (aprox.)",
+          "event": "Pablo recuerda que pasó de perseguir a los grupos seguidores de Jesús a proclamarlos; describe su cambio como una revelación recibida, en sus propios términos.",
+          "place": "Damasco y Arabia; ubicación de la experiencia no precisada por Pablo",
+          "url": "https://www.biblegateway.com/passage/?search=Galatians+1&version=NIV",
+          "locator": "Pablo, Gálatas 1:13–17; fecha aproximada contextualizada por Cambridge, Dating the Death of Jesus, y la cronología paulina anclada en Galión.",
+          "qualification": "‘Revelación’ es la descripción autobiográfica de Pablo, no una afirmación historiográfica sobre una aparición sobrenatural. El año exacto de su cambio no puede fijarse."
+        },
+        {
+          "date": "c. 36–40 CE (aprox.)",
+          "event": "Pablo visita Jerusalén y se entrevista con Cefas y Santiago; afirma que permaneció allí quince días.",
+          "place": "Jerusalén",
+          "url": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NIV%3BNRSVUE%3BKJV%3BNKJV",
+          "locator": "Pablo, Gálatas 1:18–19; Yale Bible Study, Paul’s chronology anchored by the Delphi/Gallio inscription: https://yalebiblestudy.org/courses/acts-of-the-apostles/lessons/co-operative-ministry-study-guide/",
+          "qualification": "El intervalo ‘tres años’ admite cómputos inclusivos distintos y la fecha de la llamada de Pablo es incierta. Gálatas es una carta polémica escrita para defender su autoridad."
+        },
+        {
+          "date": "c. 40–50 CE (aprox.)",
+          "event": "Pablo describe comunidades mixtas y una disputa de mesa en Antioquía: Cefas deja de comer con gentiles cuando llegan enviados relacionados con Santiago.",
+          "place": "Antioquía del Orontes, Siria",
+          "url": "https://www.biblegateway.com/passage/?search=Galatians+2&version=NIV",
+          "locator": "Pablo, Gálatas 2:11–14; Yale Divinity School, commentary on Galatians 1–2: https://divinity.yale.edu/sites/default/files/galatians-1-2.pdf",
+          "qualification": "Sólo poseemos aquí la narración de Pablo; no sabemos el desenlace ni podemos igualar sin argumento este incidente con la reunión de Hechos 15."
+        },
+        {
+          "date": "c. 48–50 CE (fecha y reunión discutidas)",
+          "event": "La cuestión de la circuncisión y la incorporación de gentiles se trata en una reunión de dirigentes en Jerusalén según Hechos; Pablo narra por separado una visita para exponer su misión entre gentiles.",
+          "place": "Jerusalén",
+          "url": "https://www.biblegateway.com/passage/?search=Acts+15&version=ESV%3BNET",
+          "locator": "Hechos 15; contraste con Pablo, Gálatas 2:1–10: https://www.biblegateway.com/passage/?search=Galatians+2%3A1-14&version=NABRE%3BKJV%3BNIV",
+          "qualification": "Los relatos no son idénticos y su relación es debatida. Evitar presentar una única decisión uniforme que resolviera para siempre las prácticas comunitarias."
+        },
+        {
+          "date": "c. 49 CE (fecha aproximada)",
+          "event": "Suetonio informa que Claudio expulsó de Roma a judíos implicados en disturbios ‘impulsore Chresto’; el pasaje puede reflejar conflicto dentro de comunidades judías y cristianas incipientes.",
+          "place": "Roma",
+          "url": "https://lexundria.com/suet_cl/25.4/r",
+          "locator": "Suetonius, Claudius 25.4; Cambridge Companion to the Age of Nero contextualiza probablemente ca. 49: https://doi.org/10.1017/9781107280489.016",
+          "qualification": "Suetonio no explica quién fue Chrestus; la identificación con Christus/Jesús es una hipótesis, no un dato explícito. La fecha exacta de la expulsión se discute."
+        },
+        {
+          "date": "c. 49–50 CE",
+          "event": "Pablo llega a Corinto y desarrolla una comunidad urbana junto con Prisca y Aquila, según Hechos.",
+          "place": "Corinto, Acaya",
+          "url": "https://www.biblegateway.com/passage/?search=Acts+18&version=NIV%3BKJV",
+          "locator": "Hechos 18:1–18; el episodio ante Galión queda anclado por la inscripción de Delfos y la fecha 51–52: Yale Bible Study, Acts 18: https://yalebiblestudy.org/courses/acts-of-the-apostles/lessons/co-operative-ministry-study-guide/",
+          "qualification": "Hechos es una narración teológica posterior. La cronología coloca el comienzo de la estancia hacia 49/50, no proporciona un día o mes seguro."
+        },
+        {
+          "date": "c. 50 CE (estimación convencional)",
+          "event": "La primera carta a los Tesalonicenses ofrece una de las primeras muestras conservadas de comunicación escrita entre Pablo y una comunidad gentile-cristiana.",
+          "place": "Corinto → Tesalónica",
+          "url": "https://www.biblegateway.com/passage/?search=1+Thessalonians+1&version=NRSVUE",
+          "locator": "1 Tesalonicenses; Oxford Bibliographies, Thessalonians (autenticidad paulina y temprana datación): https://academic.oup.com/reference/62341/reference-article-abstract/554092761?login=false",
+          "qualification": "La datación más común es 50/51, así que el evento cae en el borde superior del periodo. No se debe atribuir cada formulación del escrito a una transcripción literal de los sucesos que narra. La datación de la carta suele situarse hacia 50–51; se conserva aquí como límite del periodo por la estimación convencional próxima a 50, no como año exacto seguro."
+        }
+      ]
+    },
+    {
+      "id": "imperial-church",
+      "events": [
+        {
+          "date": "337",
+          "event": "Tras la muerte de Constantino, sus hijos toman el poder imperial; las disputas sucesorias y la distribución de territorios preceden nuevas intervenciones en asuntos eclesiásticos.",
+          "place": "Imperio romano; principales cortes en Constantinopla y Occidente",
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates Scholasticus, Ecclesiastical History II.1 y 2.25; fuente narrativa de siglo V, no contemporánea.",
+          "qualification": "La sucesión estuvo marcada por violencia contra miembros de la familia imperial; evitar presentar la división territorial como una partición constitucional permanente ya fijada en 337."
+        },
+        {
+          "date": "343 (a veces 342 o 344 en bibliografía antigua)",
+          "event": "Obispos occidentales y orientales se reúnen en Sardica; el desacuerdo por Atanasio produce sesiones y decisiones separadas.",
+          "place": "Sardica/Serdica, actual Sofía, Bulgaria",
+          "url": "https://www.newadvent.org/fathers/3815.htm",
+          "locator": "Council of Sardica: introducción y cánones; síntesis contextual académica de Milton V. Anastos: https://www.myriobiblos.gr/texts/english/milton1_5.html",
+          "qualification": "La fecha exacta se debate entre 342–344, con 343 habitual. Los cánones sobrevivieron en tradiciones griega y latina con diferencias interpretativas."
+        },
+        {
+          "date": "21 Oct 346",
+          "event": "Atanasio vuelve a Alejandría tras su exilio, respaldado por cartas de Constancio II y Constante.",
+          "place": "Alejandría, Egipto",
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Athanasius, Historia Acephala §§1–2; Socrates, Ecclesiastical History II, regreso y carta imperial: https://www.newadvent.org/fathers/26012.htm",
+          "qualification": "La Historia Acephala conserva cronología alejandrina valiosa; sus lagunas y transmisión fragmentaria aconsejan mantener fecha como día calendárico convertido desde el calendario local."
+        },
+        {
+          "date": "350",
+          "event": "Constante es asesinado en la Galia durante la usurpación de Magnencio; Constancio II queda como único emperador y el equilibrio que había favorecido a Atanasio desaparece.",
+          "place": "Galia, cerca de Hispania; lugar exacto discutido",
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates, Ecclesiastical History II.25–26; contexto secundario en CCEL, Socrates and Sozomen, Book IV.1: https://www.ccel.org/ccel/schaff/npnf202.iii.ix.i.html",
+          "qualification": "Socrates vincula el cambio político con nuevos conflictos eclesiásticos, pero no reducir toda la guerra civil a una disputa teológica."
+        },
+        {
+          "date": "355–356",
+          "event": "Tras presión imperial en sínodos occidentales, Atanasio es perseguido; tropas entran en una iglesia de Alejandría durante la noche y él escapa.",
+          "place": "Milán; Alejandría, Egipto",
+          "url": "https://www.newadvent.org/fathers/2820.htm",
+          "locator": "Athanasius, Historia Acephala (entrada de tropas, 6–9 Feb 356); su relato defensivo: Apologia de Fuga https://www.newadvent.org/fathers/2814.htm",
+          "qualification": "La cronología de la Historia Acephala sitúa el ataque en febrero de 356. Atanasio escribe como parte enfrentada; sus cifras y caracterización de adversarios requieren cautela."
+        },
+        {
+          "date": "359",
+          "event": "Constancio convoca simultáneamente un concilio occidental en Rimini y uno oriental en Seleucia para buscar una fórmula doctrinal común; ambos producen controversias y no una unidad estable.",
+          "place": "Rimini/Ariminum, Italia; Seleucia de Isauria, actual Silifke, Turquía",
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates, Ecclesiastical History II.37–41; la cronología secundaria alojada por CCEL también registra 359: https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf",
+          "qualification": "Socrates escribe en el siglo V y es pro-niceno. Los sínodos no fueron una única reunión ni una decisión idéntica; evitar etiquetar a todos los participantes con categorías posteriores simplificadas."
+        },
+        {
+          "date": "361",
+          "event": "Juliano entra en Constantinopla tras la muerte de Constancio II y asume el gobierno único; reabre templos y restablece sacrificios públicos.",
+          "place": "Constantinopla",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+          "locator": "Ammianus Marcellinus, Res Gestae XXII.2; fuente de un contemporáneo pagano que sirvió en la campaña persa.",
+          "qualification": "Ammiano admira a Juliano. Las prácticas religiosas se reanudaron por decreto y patronazgo, pero no toda la población cambió de culto ni se revirtió de inmediato la infraestructura cristiana."
+        },
+        {
+          "date": "362–363",
+          "event": "Juliano permite el regreso de obispos exiliados y luego vuelve a expulsar a Atanasio de Alejandría; su campaña contra Persia termina con su muerte en Mesopotamia.",
+          "place": "Alejandría; Mesopotamia y frontera sasánida",
+          "url": "https://romanletters.org/letters/julian_emperor/24/",
+          "locator": "Julian, Letter 24 to the Alexandrians (362), sobre el retorno de Atanasio; Ammianus, Res Gestae XXIII–XXV, campaña y muerte en 363: https://tertullian.org/fathers/ammianus_25_book25.htm",
+          "qualification": "Juliano presenta su conducta como aplicación de la ley; cartas imperiales son retóricas oficiales. Las circunstancias exactas de su herida mortal son inciertas."
+        },
+        {
+          "date": "27 Feb 380",
+          "event": "Graciano, Valentiniano II y Teodosio publican en Tesalónica una constitución que prescribe la fe nicena para los pueblos bajo su gobierno y clasifica a otros grupos como herejes.",
+          "place": "Tesalónica; dirigida a Constantinopla",
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+          "locator": "Codex Theodosianus 16.1.2, Edictum de fide catholica; edición de texto latino y encabezamiento consultados.",
+          "qualification": "Es una norma legal dirigida a Constantinopla, no prueba de cumplimiento uniforme inmediato ni de la desaparición de otras religiones. Evitar llamarla, sin matices, conversión instantánea del imperio."
+        },
+        {
+          "date": "381",
+          "event": "Un concilio en Constantinopla reafirma la fe nicena, trata controversias sobre el Espíritu y fija en canon 3 la precedencia honorífica del obispo de Constantinopla después de Roma.",
+          "place": "Constantinopla",
+          "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "locator": "Credo y cánones del Concilio de Constantinopla I; la página señala el problema de la transmisión del credo y el estatus inicialmente limitado del concilio.",
+          "qualification": "El credo conocido como niceno-constantinopolitano se atestigua textualmente en Calcedonia (451); no atribuir sin reservas toda su forma conservada a actas contemporáneas de 381. El canon 3 trata rango, no una división moderna entre católicos y ortodoxos."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cojs.org/pontius_pilate-s_tiberium_inscription-_26-36_ce/",
+      "title": "Pontius Pilate’s Tiberium Inscription, 26–36 CE",
+      "consultedScope": "Museum/object overview of the Caesarea inscription, provenance, title ‘prefect of Judea’, and approximate administrative date."
+    },
+    {
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+      "title": "Tacitus, Annals 15.44",
+      "consultedScope": "Primary passage referring to Christus’ execution under Tiberius by Pilate; written retrospectively and with hostile framing."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/dating-the-death-of-jesus-memory-and-the-religious-imagination/0458FC0CA55BEF810BCC411AC2765860",
+      "title": "Dating the Death of Jesus: Memory and the Religious Imagination",
+      "consultedScope": "Abstract and search excerpt on commonly preferred 30 CE and uncertainty of exact day/year; not full paywalled article."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Galatians+1%3A18-19&version=NIV%3BNRSVUE%3BKJV%3BNKJV",
+      "title": "Paul, Galatians 1:18–19",
+      "consultedScope": "Primary text on Paul's Jerusalem visit and meeting with Cephas and James."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Galatians+1&version=NIV",
+      "title": "Paul, Galatians 1",
+      "consultedScope": "Primary autobiographical account of Paul's prior persecution and reported revelation/call."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Galatians+2&version=NIV",
+      "title": "Paul, Galatians 2",
+      "consultedScope": "Primary account of Antioch dispute and gentile table fellowship."
+    },
+    {
+      "url": "https://divinity.yale.edu/sites/default/files/galatians-1-2.pdf",
+      "title": "Yale Divinity School, Galatians 1–2 study",
+      "consultedScope": "Academic guide/extract consulted for literary context of Paul's narrative and Antioch scene."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Acts+15&version=ESV%3BNET",
+      "title": "Acts 15",
+      "consultedScope": "Primary narrative of Jerusalem meeting, compared with Paul's different presentation in Galatians 2."
+    },
+    {
+      "url": "https://lexundria.com/suet_cl/25.4/r",
+      "title": "Suetonius, Claudius 25.4",
+      "consultedScope": "Primary passage on expulsion from Rome and wording ‘Chrestus’."
+    },
+    {
+      "url": "https://doi.org/10.1017/9781107280489.016",
+      "title": "The Cambridge Companion to the Age of Nero, chapter ‘Burning Rome, Burning Christians’",
+      "consultedScope": "Displayed academic chapter excerpt contextualizing Claudius 25.4 and a probable date around 49; not full chapter."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Acts+18&version=NIV%3BKJV",
+      "title": "Acts 18",
+      "consultedScope": "Primary narrative for Paul, Prisca, Aquila, Corinth and Gallio episode."
+    },
+    {
+      "url": "https://yalebiblestudy.org/courses/acts-of-the-apostles/lessons/co-operative-ministry-study-guide/",
+      "title": "Yale Bible Study, Acts 18 and Gallio inscription",
+      "consultedScope": "Academic guide consulted on Delphi inscription and 51–52 CE anchor for Paul's Corinth stay."
+    },
+    {
+      "url": "https://academic.oup.com/reference/62341/reference-article-abstract/554092761?login=false",
+      "title": "Oxford Bibliographies, Thessalonians",
+      "consultedScope": "Abstract consulted for authorship and early date of 1 Thessalonians; not full entry."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26012.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History, Book II",
+      "consultedScope": "Chapters on succession after Constantine, Athanasius, Constans/Magnentius, and the mid-fourth-century councils; 5th-century ecclesiastical historian."
+    },
+    {
+      "url": "https://www.myriobiblos.gr/texts/english/milton1_5.html",
+      "title": "Milton V. Anastos, ‘The Canons of Sardica (343)’",
+      "consultedScope": "Academic chapter excerpt on date, canons and their reception; not a source for all event details."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "title": "Athanasius, Historia Acephala",
+      "consultedScope": "Primary chronological record for return to Alexandria in 346 and the attack on the church in 356."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2814.htm",
+      "title": "Athanasius, Apologia de Fuga",
+      "consultedScope": "Primary polemical account of the 356 church raid and Athanasius’ flight."
+    },
+    {
+      "url": "https://www.athanasius.theologie.uni-erlangen.de/athanasius-life-and-works.html",
+      "title": "Athanasius of Alexandria: Life and Works",
+      "consultedScope": "Academic project overview consulted for composition context of Athanasius' exile writings."
+    },
+    {
+      "url": "https://www.ccel.org/ccel/s/schaff/npnf202/cache/npnf202.pdf",
+      "title": "Socrates and Sozomen, Ecclesiastical Histories",
+      "consultedScope": "Searchable translation consulted for parallel-council chronology in 359; nineteenth-century translation, not modern critical edition."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+      "title": "Ammianus Marcellinus, Res Gestae, Book XXII",
+      "consultedScope": "Primary narrative of Julian entering Constantinople in 361 and his early imperial policy."
+    },
+    {
+      "url": "https://romanletters.org/letters/julian_emperor/24/",
+      "title": "Julian, Letter 24 to the Alexandrians",
+      "consultedScope": "Primary imperial letter/edict of 362 discussing Athanasius and the status of exiled Christians."
+    },
+    {
+      "url": "https://tertullian.org/fathers/ammianus_25_book25.htm",
+      "title": "Ammianus Marcellinus, Res Gestae, Book XXV",
+      "consultedScope": "Primary narrative of Julian's Persian campaign, death, and succession in 363."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "title": "Codex Theodosianus 16.1.2, Edictum de fide catholica",
+      "consultedScope": "Latin text, date and addressees of the 380 Thessalonica constitution."
+    },
+    {
+      "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "title": "First Council of Constantinople (381): Creed and Canons",
+      "consultedScope": "Council text and editorial introduction consulted for canons, rank canon, transmission of creed, and later reception."
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=1+corinthians+15%3A3-8&version=NIV",
+      "title": "1 Corinthians 15:3–8, New International Version",
+      "consultedScope": "Texto primario consultado: Pablo presenta una tradición que dice haber recibido y transmitido; el contenido de apariciones se registra como proclamación."
+    },
+    {
+      "url": "https://academic.oup.com/book/8618/chapter-abstract/154585131",
+      "title": "Tradition and Redaction in 1 Corinthians 15:3–7",
+      "consultedScope": "Solo resumen académico consultado: identifica material tradicional en el pasaje; no se consultó el capítulo completo."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/traditions-in-i-corinthians/B8EE67C095C5A682ABEA1E43B42BD5CE",
+      "title": "Traditions in I Corinthians",
+      "consultedScope": "Resumen/página bibliográfica consultada sobre el debate de tradiciones preexistentes en 1 Corintios; no se afirma lectura del texto íntegro."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "episodeId": "29-council-and-final-perspective-constantinople",
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "status": "architect research; independent review pending",
+  "sources": [
+    {
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.viii.iv.html",
+      "locator": "Percival/NPNF XIV, CanonIII body and selected editorial notes",
+      "actuallyRead": "Complete short canonIII body directly read; selected notes inspected only to separate later commentators from the canon.",
+      "limitations": "Modern transcription of old translation, not Greek manuscript. The body states honor after Rome because New Rome; later commentators disagree about wider interpretation. No immediate schism or complete jurisdiction follows."
+    },
+    {
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.viii.iii.html",
+      "locator": "CanonII body",
+      "actuallyRead": "Complete canonII body directly read; territorial administration, invitations and customs outside imperial dioceses.",
+      "limitations": "Normative text, not observed compliance or a modern national church map. Greek apparatus and complete later reception not examined."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3808.htm",
+      "locator": "Canon1, synodal letter to Theodosius; comparison of short-page numbering",
+      "actuallyRead": "Canon1 and short letter read. Compared canon headings and found the honor canon absent before Maximus is labelled canon3.",
+      "limitations": "Incomplete/misnumbered web rendering is rejected for canonIII numbering. Do not transplant its subsequent numbers into authored content."
+    },
+    {
+      "url": "https://www.papalencyclicals.net/councils/ecum02.htm",
+      "locator": "Tanner editorial introduction: transmission/382 letter/later canons; canonIII cross-check",
+      "actuallyRead": "Selected editorial introduction and canonIII directly read.",
+      "limitations": "Editorial transmission note only; no modern translation copied. No original council minutes, complete manuscript tradition or later reception independently verified."
+    }
+  ],
+  "sourceIntegrityFinding": "The short NewAdvent3808 page lacks the honor canon and labels Maximus as Canon3. CCEL CanonIII explicitly supplies the honor provision, consistent with Tanner. This is a transcription/numbering problem in that page, not a new proposed ancient canon variant.",
+  "narrativeBoundaries": [
+    "No modern denominational schism in381.",
+    "Do not place a382letter,451attestation or later printed critical edition physically in381.",
+    "No survivor knows the outcome of451: later transmission belongs only to retrospective common narration.",
+    "Exact council hall/building appearance remains uncertified; no Justinian HagiaSophia or later Theodosian walls."
+  ],
+  "historicalOrGameApproval": false
+}

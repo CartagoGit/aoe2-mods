@@ -1,0 +1,4337 @@
+{
+  "designProfile": "alternative-fulfillment-v3",
+  "episodeId": "02-refuge-and-school-supply-yavneh",
+  "referenceCapabilityProfile": {
+    "profile": "composed-world-ledger",
+    "schemaVersion": 3,
+    "districts": [
+      "starting-court",
+      "hearth-work",
+      "meal-court",
+      "timber-work",
+      "built-meeting-court",
+      "host-work",
+      "host-meeting-court",
+      "materials-work",
+      "reader-court",
+      "merchant-work",
+      "western-junction",
+      "northern-junction",
+      "aid-pickup",
+      "aid-court",
+      "record-west",
+      "record-north",
+      "repair-yard",
+      "trade-pickup",
+      "trade-court",
+      "guide-pickup",
+      "guest-pickup",
+      "guest-court"
+    ],
+    "worldContract": {
+      "version": 1,
+      "classification": "authoring specification, not implemented DSL",
+      "entities": [
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions",
+          "role": "fictional original consenting worker",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            -6,
+            -5
+          ],
+          "identity": "Fictional stable original worker-provisions; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions",
+          "role": "fictional original consenting recipient",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            -6,
+            5
+          ],
+          "identity": "Fictional stable original recipient-provisions; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting",
+          "role": "fictional original consenting worker",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            0,
+            -5
+          ],
+          "identity": "Fictional stable original worker-meeting; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting",
+          "role": "fictional original consenting recipient",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            0,
+            5
+          ],
+          "identity": "Fictional stable original recipient-meeting; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials",
+          "role": "fictional original consenting worker",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            6,
+            -5
+          ],
+          "identity": "Fictional stable original worker-materials; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials",
+          "role": "fictional original consenting recipient",
+          "initialHub": "starting-court",
+          "offsetTiles": [
+            6,
+            5
+          ],
+          "identity": "Fictional stable original recipient-materials; not a named historical teacher or a whole community",
+          "finite": true,
+          "replacement": "none; no original identity substitution",
+          "initiallyDelivered": false,
+          "originRule": "Authored starting position gives no arrival, work or service receipt",
+          "playerControllable": true,
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-meal",
+          "role": "fictional selected-service result",
+          "initialHub": "hearth-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of local-meal; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected local-meal has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-consignment",
+          "role": "fictional selected-service result",
+          "initialHub": "merchant-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of purchased-consignment; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected purchased-consignment has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-assembled-shelter",
+          "role": "fictional selected-service result",
+          "initialHub": "timber-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of assembled-shelter; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected assembled-shelter has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-offered-room",
+          "role": "fictional selected-service result",
+          "initialHub": "host-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of offered-room; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected offered-room has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-working-materials",
+          "role": "fictional selected-service result",
+          "initialHub": "materials-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of local-working-materials; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected local-working-materials has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-working-materials",
+          "role": "fictional selected-service result",
+          "initialHub": "merchant-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "identity": "Unique fictional result of purchased-working-materials; no historical original or archaeological cargo evidence",
+          "finite": true,
+          "replacement": "none; no substitute selected result",
+          "initiallyDelivered": false,
+          "originRule": "Unavailable until the exact selected purchased-working-materials has post-commit work and the actual reference generation operation; this is no preplaced resource",
+          "historicalPerson": false
+        }
+      ],
+      "zones": [
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.hearth-work.zone",
+          "hub": "hearth-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone",
+          "hub": "meal-court",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.merchant-work.zone",
+          "hub": "merchant-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.timber-work.zone",
+          "hub": "timber-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.built-meeting-court.zone",
+          "hub": "built-meeting-court",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-work.zone",
+          "hub": "host-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-meeting-court.zone",
+          "hub": "host-meeting-court",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.materials-work.zone",
+          "hub": "materials-work",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        },
+        {
+          "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.reader-court.zone",
+          "hub": "reader-court",
+          "offsetTiles": [
+            0,
+            0
+          ],
+          "radiusTiles": 2,
+          "placement": "authored candidate circle at the named activity point; native terrain/footprint approval pending",
+          "protectedCivilian": false
+        }
+      ],
+      "ledgerPolicy": "each selected output has causal departure and arrival at own court with own original recipient currently alive/present fresh positions and life of all3 original recipients at selected courts; all selected outputs/receipts valid; loss before victory; no past-presence win",
+      "resourcePolicy": "atomic all-three cost escrow only if affordable one current complete selection; irreversible worker/method/output identities independent original identity, cost-before-reward, persistent once receipt, finite dedicated reserve; available before funding and while plan executes",
+      "defeatPolicy": "required recipient anytime, selected worker before recorded work, selected result after commitment when its loss makes plan impossible; optional loss isolated its later loss does not undo already recorded work or require worker presence at final",
+      "earlyDelivery": "free complete choice, fresh valid input epoch; no resource or world mutation each selected worker has recipe-qualified departure then fresh arrival in its own work circle; recorded once; no pay-only output only selected output spawned after actual selected work; output cannot exist before authorized generation",
+      "survivorGroups": [],
+      "enemyBinding": "No enemy identity or mobilization is authored in this civilian episode; enemy production is disabled and any unspent roster would remain in reserve."
+    },
+    "objectivePlan": [
+      {
+        "id": "attend-neighbors-table",
+        "text": {
+          "en": "Bring the original provisions recipient alive to the Neighbors’ Table. This records attendance only. It does not pay for, produce or complete any selected service. That recipient must be present there again at the final confirmation.",
+          "es-ES": "Lleva al destinatario original de provisiones con vida hasta la mesa de los vecinos. Esto registra únicamente su asistencia. No paga, produce ni completa ningún servicio elegido. Ese destinatario deberá estar presente allí de nuevo en la confirmación final."
+        },
+        "after": [],
+        "targetHub": "meal-court",
+        "phase": "phase-1",
+        "completion": "The original provisions recipient has its own arrival receipt and fresh living presence at the Neighbors’ Table. Full v3 selected-service gates remain independently mandatory.",
+        "countLedger": {
+          "id": "provisions-attendance",
+          "oncePerEntity": true,
+          "required": 1
+        },
+        "earlyCompletion": "Only fresh authoritative arrival/current observations; initial placement is not an arrival",
+        "effect": "Record attendance only; no resource debit, recipe choice, work, output, service completion or early victory",
+        "capability": "existing v3 reference arrival plus current presence; native v3 support pending",
+        "operation": "attend-neighbors-table",
+        "threshold": 1,
+        "entities": [
+          {
+            "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions",
+            "role": "fictional original consenting recipient",
+            "initialHub": "starting-court",
+            "offsetTiles": [
+              -6,
+              5
+            ],
+            "identity": "Fictional stable original recipient-provisions; not a named historical teacher or a whole community",
+            "finite": true,
+            "replacement": "none; no original identity substitution",
+            "initiallyDelivered": false,
+            "originRule": "Authored starting position gives no arrival, work or service receipt",
+            "playerControllable": true,
+            "historicalPerson": false
+          }
+        ],
+        "predicate": {
+          "operator": "all",
+          "operation": "attend-neighbors-table",
+          "requiredCount": 1,
+          "defeatBelowRemaining": null,
+          "resourceAmounts": {},
+          "phaseGated": true,
+          "neverUseTimerInstead": true,
+          "requirements": [
+            {
+              "id": "provisions-arrival",
+              "kind": "entity-state",
+              "state": "arrived",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions"
+              ],
+              "requiredCount": 1,
+              "oncePerEntity": true,
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone"
+              }
+            },
+            {
+              "id": "provisions-current",
+              "kind": "current-entity-presence",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone"
+              },
+              "requiredCount": 1
+            }
+          ],
+          "requiredLedgers": [
+            "provisions-arrival",
+            "provisions-current"
+          ],
+          "allRequired": true
+        }
+      }
+    ],
+    "stateMachine": {
+      "states": [
+        "briefing",
+        "phase-1",
+        "victory",
+        "defeat"
+      ],
+      "transitions": [
+        "briefing → phase-1 on intro-accepted",
+        "phase-1 → victory only through the actual selected-service and fresh final-presence v3 gate, never attendance alone"
+      ],
+      "phaseTransitions": [
+        {
+          "from": "briefing",
+          "to": "phase-1",
+          "on": "intro-accepted"
+        },
+        {
+          "from": "phase-1",
+          "to": "victory",
+          "on": "objective-latched",
+          "objectiveId": "attend-neighbors-table"
+        }
+      ],
+      "terminalPriority": "defeat evaluated first; one terminal latch, choice order documented",
+      "saveLoad": "Preserve full actual reference snapshot and original world; rotate observation/input epoch after load before any new current-presence, work or final check",
+      "phaseClock": "relative to phase entry; no global or local pressure deadline is authored"
+    },
+    "secondaryObjectives": [
+      {
+        "id": "side-1",
+        "kind": "aid",
+        "title": {
+          "en": "A Share for the Northern Hearth",
+          "es-ES": "Una parte para el fogón del norte"
+        },
+        "subject": {
+          "en": "The Northern Household",
+          "es-ES": "El hogar del norte"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Bring both marked original aid carriers to their distinct assigned northern household collection circles. Reward once:40 food,40 wood,20 gold, drawn from the separate finite reserve.",
+          "es-ES": "Lleva los dos portadores originales señalados de ayuda a sus respectivos círculos de recogida del hogar del norte. Recompensa única:40 de alimento,40 de madera y 20 de oro, de la reserva finita separada."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-1",
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-2"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.zone-1",
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-2": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.zone-2"
+              },
+              "requiredCount": 2,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-1",
+              "role": "aid",
+              "initialHub": "aid-pickup",
+              "offsetTiles": [
+                -4,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            },
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-2",
+              "role": "aid",
+              "initialHub": "aid-pickup",
+              "offsetTiles": [
+                4,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.entity-2; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.zone-1",
+              "hub": "aid-court",
+              "offsetTiles": [
+                -8,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            },
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.zone-2",
+              "hub": "aid-court",
+              "offsetTiles": [
+                8,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "finite-supply-withdrawal",
+            "target": "optional supply stock",
+            "resources": {
+              "food": 40,
+              "wood": 40,
+              "gold": 20
+            },
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "aid-pickup",
+          "receivingHub": "aid-court",
+          "corridorIds": [
+            "path-aid-pickup-to-northern-junction",
+            "path-repair-yard-to-northern-junction",
+            "path-aid-court-to-repair-yard"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-2",
+        "kind": "copy",
+        "title": {
+          "en": "The Room Left in the Margin",
+          "es-ES": "El sitio que queda en el margen"
+        },
+        "subject": {
+          "en": "The Reading Cloth",
+          "es-ES": "El paño de lectura"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Bring the marked original western working-record carrier to the Reading Cloth. Benefit: an attributed note on remembered practice and the selected-court reminder. No resource reward.",
+          "es-ES": "Lleva al portador original señalado de la anotación occidental al paño de lectura. Ventaja: una nota atribuida sobre prácticas recordadas y el recordatorio de patios seleccionados. Sin recompensa de recursos."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.entity-1"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.zone-1"
+              },
+              "requiredCount": 1,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.entity-1",
+              "role": "copy",
+              "initialHub": "record-west",
+              "offsetTiles": [
+                0,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.zone-1",
+              "hub": "reader-court",
+              "offsetTiles": [
+                0,
+                8
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "unlock-context-and-hint",
+            "target": "attributed source note and selected-court reminder",
+            "resources": {},
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false,
+            "sourceIds": [
+              "odyssey-source.jewish-tradition.02-refuge-and-school-supply-yavneh"
+            ],
+            "historicalNote": {
+              "en": "Mishnah Rosh Hashanah 4:1–3 preserves post-destruction rules and disagreement about their scope. This later compiled legal memory is not a transcript of our fictional gathering.",
+              "es-ES": "Mishná Rosh Hashaná4:1–3 conserva normas posteriores a la destrucción y desacuerdos sobre su alcance. Esta memoria legal compilada después no es una transcripción de nuestra reunión ficticia."
+            },
+            "hint": {
+              "en": "Provisions go to the Neighbors’ Table; working materials go to the Reading Cloth. For A Shelter Prepared Together, use the Prepared Meeting Court. For The Door Offered Freely, use the Offered Room. The selected results and original recipients must still be present at the end.",
+              "es-ES": "Las provisiones van a la mesa de los vecinos; los materiales, al paño de lectura. Para Un refugio preparado entre todos, usa el patio preparado para reunirse. Para La puerta que se ofrece, usa la estancia ofrecida. Los resultados seleccionados y destinatarios originales deben seguir presentes al terminar."
+            }
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. Loss of the western original record-west-carrier or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal.",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "record-west",
+          "receivingHub": "reader-court",
+          "corridorIds": [
+            "path-record-west-to-merchant-work",
+            "path-merchant-work-to-western-junction",
+            "path-timber-work-to-western-junction",
+            "path-built-meeting-court-to-timber-work",
+            "path-reader-court-to-built-meeting-court"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-3",
+        "kind": "copy",
+        "title": {
+          "en": "A Tale Carried Further",
+          "es-ES": "Un relato que sigue su camino"
+        },
+        "subject": {
+          "en": "The Reading Cloth",
+          "es-ES": "El paño de lectura"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Bring the marked original northern working-record carrier to the Reading Cloth. Benefit: an attributed later-tradition note and a reminder that originals cannot be replaced. This task is independent of the western note and gives no resources.",
+          "es-ES": "Lleva al portador original señalado de la anotación del norte al paño de lectura. Ventaja: una nota atribuida de tradición posterior y un recordatorio de que los originales no se sustituyen. Esta tarea es independiente de la anotación occidental y no da recursos."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.entity-1"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.zone-1"
+              },
+              "requiredCount": 1,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.entity-1",
+              "role": "copy",
+              "initialHub": "record-north",
+              "offsetTiles": [
+                0,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.zone-1",
+              "hub": "reader-court",
+              "offsetTiles": [
+                0,
+                8
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "unlock-context-and-hint",
+            "target": "attributed source note and selected-court reminder",
+            "resources": {},
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false,
+            "sourceIds": [
+              "odyssey-source.jewish-tradition.02-refuge-and-school-supply-yavneh"
+            ],
+            "historicalNote": {
+              "en": "The later Gittin 56a–b narrative associates Yavneh with a request during the siege; it is not a contemporary transcript. Our working record and carrier are fictional. A spare carrier cannot replace this original, or the original assigned to the separate western note.",
+              "es-ES": "El relato posterior de Guitín 56a–b asocia Yavneh con una petición durante el asedio; no es una transcripción contemporánea. Nuestra anotación de trabajo y su portador son ficticios. Un portador de repuesto no sustituye a este original ni al asignado a la anotación occidental independiente."
+            },
+            "hint": {
+              "en": "A spare carrier cannot replace this original, or the original assigned to the separate western note.",
+              "es-ES": "Un portador de repuesto no sustituye a este original ni al asignado a la anotación occidental independiente."
+            }
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. Loss of the northern original record-north-carrier or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal.",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "record-north",
+          "receivingHub": "reader-court",
+          "corridorIds": [
+            "path-northern-junction-to-record-north",
+            "path-northern-junction-to-timber-work",
+            "path-built-meeting-court-to-timber-work",
+            "path-reader-court-to-built-meeting-court"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-4",
+        "kind": "repair",
+        "title": {
+          "en": "A Roof for What Remains",
+          "es-ES": "Un techo para lo que queda"
+        },
+        "subject": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Use the damaged store’s single repair action: pay 30 wood to restore that original store fully, then receive 20 wood once from reserve. Paying without restoration gives no reward.",
+          "es-ES": "Usa la acción única de reparación del almacén dañado: paga 30 de madera para restaurar por completo ese almacén original y recibe después 20 de madera de la reserva una sola vez. Pagar sin restaurarlo no da recompensa."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-health",
+              "entity": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.entity-1",
+              "health": "full",
+              "paymentReceipt": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.payment",
+              "restoration": "atomic authored-cost repair transaction restores full health; no additional engine repair charge"
+            },
+            {
+              "kind": "atomic-payment",
+              "resources": {
+                "wood": 30
+              },
+              "receipt": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.payment",
+              "afterArrival": false,
+              "once": true,
+              "protectedRecoveryCannotBeSpent": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.entity-1",
+              "role": "repair",
+              "initialHub": "repair-yard",
+              "offsetTiles": [
+                6,
+                0
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.entity-1; invented ordinary store; native footprint/health action still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed restoration, payment or delivery.",
+              "historicalPerson": false,
+              "playerControllable": false
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.zone-1",
+              "hub": "repair-yard",
+              "offsetTiles": [
+                0,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "finite-supply-withdrawal",
+            "target": "optional supply stock",
+            "resources": {
+              "wood": 20
+            },
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "repair-yard",
+          "receivingHub": "repair-yard",
+          "corridorIds": [
+            "path-starting-court-to-hearth-work",
+            "path-hearth-work-to-meal-court",
+            "path-meal-court-to-reader-court",
+            "path-reader-court-to-built-meeting-court",
+            "path-aid-court-to-built-meeting-court",
+            "path-aid-court-to-repair-yard"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-5",
+        "kind": "trade",
+        "title": {
+          "en": "A Fair Exchange at the Southern Yard",
+          "es-ES": "Un intercambio justo en el patio del sur"
+        },
+        "subject": {
+          "en": "The Southern Receiving Yard",
+          "es-ES": "El patio receptor del sur"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Escort the marked original trader to the southern receiving yard. Pay 20 gold there, then receive 20 food and 10 gold once from reserve. Its own reward cannot pay its cost.",
+          "es-ES": "Escolta al comerciante original señalado hasta el patio receptor del sur. Paga allí20 de oro y recibe después 20 de alimento y 10 de oro de la reserva una sola vez. Su propia recompensa no puede pagar su coste."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.entity-1"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.zone-1"
+              },
+              "requiredCount": 1,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            },
+            {
+              "kind": "atomic-payment",
+              "resources": {
+                "gold": 20
+              },
+              "receipt": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.payment",
+              "afterArrival": true,
+              "once": true,
+              "protectedRecoveryCannotBeSpent": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.entity-1",
+              "role": "trade",
+              "initialHub": "trade-pickup",
+              "offsetTiles": [
+                0,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.zone-1",
+              "hub": "trade-court",
+              "offsetTiles": [
+                8,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "finite-supply-withdrawal",
+            "target": "optional supply stock",
+            "resources": {
+              "food": 20,
+              "gold": 10
+            },
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "trade-pickup",
+          "receivingHub": "trade-court",
+          "corridorIds": [
+            "path-merchant-work-to-trade-pickup",
+            "path-merchant-work-to-western-junction",
+            "path-western-junction-to-starting-court",
+            "path-starting-court-to-host-work",
+            "path-host-work-to-host-meeting-court",
+            "path-host-meeting-court-to-trade-court"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-6",
+        "kind": "guide",
+        "title": {
+          "en": "The Turn We Had Overlooked",
+          "es-ES": "El recodo que no habíamos visto"
+        },
+        "subject": {
+          "en": "The Western Junction",
+          "es-ES": "El cruce occidental"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Bring the original local guide to the western junction. Benefit: mark the existing northern approach through the Timber Bench to the Northern Turn. The task creates no road or change in terrain.",
+          "es-ES": "Lleva al guía local original al cruce occidental. Ventaja: señala la aproximación norte existente por el banco de madera hasta el recodo del norte. La tarea no crea un camino ni cambia el terreno."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.entity-1"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.zone-1"
+              },
+              "requiredCount": 1,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.entity-1",
+              "role": "guide",
+              "initialHub": "guide-pickup",
+              "offsetTiles": [
+                0,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.zone-1",
+              "hub": "western-junction",
+              "offsetTiles": [
+                8,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "mark-alternative-route",
+            "target": "existing northern approach through the Timber Bench to the Northern Turn",
+            "resources": {},
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false,
+            "corridorId": "northern-approach"
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "guide-pickup",
+          "receivingHub": "western-junction",
+          "corridorIds": [
+            "path-guide-pickup-to-record-west",
+            "path-record-west-to-merchant-work",
+            "path-merchant-work-to-western-junction"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      },
+      {
+        "id": "side-7",
+        "kind": "extract",
+        "title": {
+          "en": "Room at Another Hearth",
+          "es-ES": "Sitio junto a otro fogón"
+        },
+        "subject": {
+          "en": "The Additional Hearth",
+          "es-ES": "El fogón adicional"
+        },
+        "classification": "fictional local activity anchored to the documented scenario; not an asserted ancient event",
+        "rationale": {
+          "en": "Independent fictional voluntary local task; fixed original identities and actual authored pickup/destination, never a historical person or authentic ancient record.",
+          "es-ES": "Tarea local voluntaria ficticia e independiente; identidades originales fijas y origen/destino escritos, sin representar a una persona histórica ni un documento antiguo auténtico."
+        },
+        "text": {
+          "en": "Bring both marked original voluntary guests to the additional hearth alive. Pay 20 food for hospitality, then receive 10 food once from reserve. These guests are optional and cannot replace a main recipient.",
+          "es-ES": "Lleva con vida a los dos invitados voluntarios originales señalados hasta el fogón adicional. Paga 20 de alimento por la hospitalidad y recibe después 10 de alimento de la reserva una sola vez. Estos invitados son opcionales y no sustituyen a ningún destinatario principal."
+        },
+        "mandatory": false,
+        "activation": "available from scenario start; known requirement and benefit shown in optional goals",
+        "dependencies": [],
+        "predicate": {
+          "operator": "all",
+          "requirements": [
+            {
+              "kind": "entity-arrival",
+              "entities": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-1",
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-2"
+              ],
+              "destinations": {
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-1": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.zone-1",
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-2": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.zone-1"
+              },
+              "requiredCount": 2,
+              "aliveAtDelivery": true,
+              "oncePerEntity": true,
+              "noSubstitutes": true,
+              "initialPlacementDoesNotCount": true
+            },
+            {
+              "kind": "atomic-payment",
+              "resources": {
+                "food": 20
+              },
+              "receipt": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.payment",
+              "afterArrival": true,
+              "once": true,
+              "protectedRecoveryCannotBeSpent": true
+            }
+          ],
+          "neverUseTimerInstead": true
+        },
+        "world": {
+          "entities": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-1",
+              "role": "extract",
+              "initialHub": "guest-pickup",
+              "offsetTiles": [
+                -4,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-1; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            },
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-2",
+              "role": "extract",
+              "initialHub": "guest-pickup",
+              "offsetTiles": [
+                4,
+                -5
+              ],
+              "identity": "Fictional stable optional identity: jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.entity-2; invented ordinary civilian or cargo carrier; native type still to bind",
+              "finite": true,
+              "replacement": "none; no substitution of unique original identity",
+              "initiallyDelivered": false,
+              "originRule": "Authored initial position creates no completed visit or delivery.",
+              "historicalPerson": false,
+              "playerControllable": true
+            }
+          ],
+          "zones": [
+            {
+              "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.zone-1",
+              "hub": "guest-court",
+              "offsetTiles": [
+                8,
+                0
+              ],
+              "radiusTiles": 3,
+              "placement": "Fictional optional activity zone at the authored hub and offset; native footprint pending.",
+              "protectedCivilian": false
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "finite-supply-withdrawal",
+            "target": "optional supply stock",
+            "resources": {
+              "food": 10
+            },
+            "onceFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.rewarded",
+            "funding": "reserved-optional-stock",
+            "changesHistoricalOutcome": false
+          }
+        ],
+        "completionFlag": "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.completed",
+        "stateContract": {
+          "states": [
+            "available",
+            "completed",
+            "failed-optional",
+            "closed-at-terminal"
+          ],
+          "requiresNonterminalScenario": true,
+          "persistentAcrossSave": true,
+          "completionAndEffectsAtomic": true,
+          "paymentBeforeReward": true,
+          "paymentIsNotCompletion": true,
+          "failedGoalCannotReward": true,
+          "latchAtFirstCompletion": true,
+          "noMainVictoryDependency": true,
+          "rewardTransaction": [
+            "verify all predicate ledgers and nonterminal state",
+            "verify reserved stock",
+            "debit reserved stock",
+            "credit spendable stock",
+            "set reward onceFlag",
+            "set completionFlag"
+          ],
+          "transactionIsolation": "all-or-nothing in one native guarded operation; duplicate/reloaded completion does nothing",
+          "persistentLedgers": [
+            "visited-zone IDs",
+            "delivered-entity IDs",
+            "payment receipt",
+            "reserved-stock remainder",
+            "reward onceFlag",
+            "completionFlag",
+            "failed-optional flag"
+          ],
+          "terminalPriority": "main defeat/victory closes side actions first; never credit after terminal"
+        },
+        "unavailablePolicy": "show failed-optional if its unique entity is lost; no main-goal defeat or restart. loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+        "terminalPolicy": "optional goals close at main victory/defeat; never delay campaign progression",
+        "difficultyPolicy": "same identities, counts and cost in all profiles; no hidden time limit",
+        "reachability": {
+          "originHub": "guest-pickup",
+          "receivingHub": "guest-court",
+          "corridorIds": [
+            "path-record-north-to-guest-pickup",
+            "path-northern-junction-to-record-north",
+            "path-northern-junction-to-timber-work",
+            "path-timber-work-to-western-junction",
+            "path-western-junction-to-starting-court",
+            "path-starting-court-to-host-work",
+            "path-host-work-to-guest-court"
+          ],
+          "maxRequiredRoundTrips": 1,
+          "spawnOutsideReceivingZone": true,
+          "placementGate": "certify land/transport path and footprints in native map; relocate within same historical district, never alter river"
+        },
+        "qa": [
+          "skip-all-main-still-solvent",
+          "complete-in-each-difficulty",
+          "save-before-and-after-reward",
+          "repeat-arrival-no-double-reward",
+          "entity-loss-optional-only",
+          "early-main-victory-does-not-wait",
+          "no-reward-taken-from-protected-recovery"
+        ]
+      }
+    ],
+    "secondaryBudget": {
+      "reservedRewards": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      },
+      "maxOptionalCosts": {
+        "food": 20,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      },
+      "reallocatedCacheAllowance": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      },
+      "fundingPolicy": "single finite optional reward account; descriptive allowance is not a second credit",
+      "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+    },
+    "enemyRoster": {
+      "initialEntityIds": [],
+      "productionEnabled": false,
+      "mobilizations": [],
+      "unspentPolicy": "remain-in-reserve"
+    },
+    "fulfillmentPlan": {
+      "id": "jewish-tradition.02-refuge-and-school-supply-yavneh.three-promises",
+      "phase": "phase-1",
+      "services": [
+        {
+          "id": "provisions",
+          "recipes": [
+            {
+              "id": "local-meal",
+              "cost": {
+                "food": 120,
+                "wood": 20,
+                "gold": 0,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.hearth-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-meal",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions"
+              ]
+            },
+            {
+              "id": "purchased-consignment",
+              "cost": {
+                "food": 30,
+                "wood": 0,
+                "gold": 70,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.merchant-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-consignment",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "meeting",
+          "recipes": [
+            {
+              "id": "assembled-shelter",
+              "cost": {
+                "food": 20,
+                "wood": 100,
+                "gold": 0,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.timber-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-assembled-shelter",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.built-meeting-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting"
+              ]
+            },
+            {
+              "id": "offered-room",
+              "cost": {
+                "food": 0,
+                "wood": 20,
+                "gold": 70,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-offered-room",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-meeting-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "materials",
+          "recipes": [
+            {
+              "id": "local-working-materials",
+              "cost": {
+                "food": 20,
+                "wood": 40,
+                "gold": 0,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.materials-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-working-materials",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.reader-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials"
+              ]
+            },
+            {
+              "id": "purchased-working-materials",
+              "cost": {
+                "food": 0,
+                "wood": 10,
+                "gold": 60,
+                "stone": 0
+              },
+              "workerId": "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials",
+              "workZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.merchant-work.zone",
+              "outputEntityId": "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-working-materials",
+              "receptionZoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.reader-court.zone",
+              "recipientIds": [
+                "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "accountsByDifficulty": {
+    "easy": {
+      "spendable": {
+        "food": 180,
+        "wood": 180,
+        "gold": 210,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    },
+    "standard": {
+      "spendable": {
+        "food": 150,
+        "wood": 130,
+        "gold": 140,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    },
+    "hard": {
+      "spendable": {
+        "food": 130,
+        "wood": 110,
+        "gold": 140,
+        "stone": 0
+      },
+      "protectedRecovery": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "optionalReserve": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    }
+  },
+  "mapSize": 400,
+  "hubs": [
+    {
+      "id": "starting-court",
+      "centre": [
+        211.44,
+        255.75
+      ]
+    },
+    {
+      "id": "hearth-work",
+      "centre": [
+        235.33,
+        237.0
+      ]
+    },
+    {
+      "id": "meal-court",
+      "centre": [
+        251.25,
+        213.56
+      ]
+    },
+    {
+      "id": "timber-work",
+      "centre": [
+        179.59,
+        185.44
+      ]
+    },
+    {
+      "id": "built-meeting-court",
+      "centre": [
+        227.37,
+        162.0
+      ]
+    },
+    {
+      "id": "host-work",
+      "centre": [
+        163.67,
+        293.25
+      ]
+    },
+    {
+      "id": "host-meeting-court",
+      "centre": [
+        187.56,
+        312.0
+      ]
+    },
+    {
+      "id": "materials-work",
+      "centre": [
+        251.25,
+        265.13
+      ]
+    },
+    {
+      "id": "reader-court",
+      "centre": [
+        263.2,
+        192.94
+      ]
+    },
+    {
+      "id": "merchant-work",
+      "centre": [
+        88.03,
+        227.63
+      ]
+    },
+    {
+      "id": "western-junction",
+      "centre": [
+        131.82,
+        227.63
+      ]
+    },
+    {
+      "id": "northern-junction",
+      "centre": [
+        171.63,
+        143.25
+      ]
+    },
+    {
+      "id": "aid-pickup",
+      "centre": [
+        107.94,
+        143.25
+      ]
+    },
+    {
+      "id": "aid-court",
+      "centre": [
+        227.37,
+        105.75
+      ]
+    },
+    {
+      "id": "record-west",
+      "centre": [
+        68.12,
+        283.88
+      ]
+    },
+    {
+      "id": "record-north",
+      "centre": [
+        131.82,
+        68.25
+      ]
+    },
+    {
+      "id": "repair-yard",
+      "centre": [
+        195.52,
+        96.38
+      ]
+    },
+    {
+      "id": "trade-pickup",
+      "centre": [
+        56.18,
+        171.38
+      ]
+    },
+    {
+      "id": "trade-court",
+      "centre": [
+        211.44,
+        340.13
+      ]
+    },
+    {
+      "id": "guide-pickup",
+      "centre": [
+        99.97,
+        321.38
+      ]
+    },
+    {
+      "id": "guest-pickup",
+      "centre": [
+        76.09,
+        49.5
+      ]
+    },
+    {
+      "id": "guest-court",
+      "centre": [
+        147.75,
+        358.88
+      ]
+    }
+  ],
+  "pointZoneBindings": [
+    {
+      "pointId": "hearth-work",
+      "tile": [
+        235.33,
+        237.0
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.hearth-work.zone",
+      "hubId": "hearth-work",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "meal-court",
+      "tile": [
+        251.25,
+        213.56
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.meal-court.zone",
+      "hubId": "meal-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "merchant-work",
+      "tile": [
+        88.03,
+        227.63
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.merchant-work.zone",
+      "hubId": "merchant-work",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "timber-work",
+      "tile": [
+        179.59,
+        185.44
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.timber-work.zone",
+      "hubId": "timber-work",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "built-meeting-court",
+      "tile": [
+        227.37,
+        162.0
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.built-meeting-court.zone",
+      "hubId": "built-meeting-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "host-work",
+      "tile": [
+        163.67,
+        293.25
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-work.zone",
+      "hubId": "host-work",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "host-meeting-court",
+      "tile": [
+        187.56,
+        312.0
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.host-meeting-court.zone",
+      "hubId": "host-meeting-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "materials-work",
+      "tile": [
+        251.25,
+        265.13
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.materials-work.zone",
+      "hubId": "materials-work",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    },
+    {
+      "pointId": "reader-court",
+      "tile": [
+        263.2,
+        192.94
+      ],
+      "zoneId": "jewish-tradition.02-refuge-and-school-supply-yavneh.reader-court.zone",
+      "hubId": "reader-court",
+      "offsetTiles": [
+        0,
+        0
+      ]
+    }
+  ],
+  "recipeBindings": [
+    {
+      "serviceId": "provisions",
+      "recipeId": "local-meal",
+      "workPointId": "hearth-work",
+      "receptionPointId": "meal-court",
+      "title": {
+        "en": "At the Local Hearth",
+        "es-ES": "En el fogón local"
+      },
+      "goalScreenId": "recipe-local-meal"
+    },
+    {
+      "serviceId": "provisions",
+      "recipeId": "purchased-consignment",
+      "workPointId": "merchant-work",
+      "receptionPointId": "meal-court",
+      "title": {
+        "en": "The Western Consignment",
+        "es-ES": "La remesa occidental"
+      },
+      "goalScreenId": "recipe-purchased-consignment"
+    },
+    {
+      "serviceId": "meeting",
+      "recipeId": "assembled-shelter",
+      "workPointId": "timber-work",
+      "receptionPointId": "built-meeting-court",
+      "title": {
+        "en": "A Shelter Prepared Together",
+        "es-ES": "Un refugio preparado entre todos"
+      },
+      "goalScreenId": "recipe-assembled-shelter"
+    },
+    {
+      "serviceId": "meeting",
+      "recipeId": "offered-room",
+      "workPointId": "host-work",
+      "receptionPointId": "host-meeting-court",
+      "title": {
+        "en": "The Door Offered Freely",
+        "es-ES": "La puerta que se ofrece"
+      },
+      "goalScreenId": "recipe-offered-room"
+    },
+    {
+      "serviceId": "materials",
+      "recipeId": "local-working-materials",
+      "workPointId": "materials-work",
+      "receptionPointId": "reader-court",
+      "title": {
+        "en": "Materials Put to Use",
+        "es-ES": "Materiales que sirven"
+      },
+      "goalScreenId": "recipe-local-working-materials"
+    },
+    {
+      "serviceId": "materials",
+      "recipeId": "purchased-working-materials",
+      "workPointId": "merchant-work",
+      "receptionPointId": "reader-court",
+      "title": {
+        "en": "The Prepared Bundle",
+        "es-ES": "El fardo preparado"
+      },
+      "goalScreenId": "recipe-purchased-working-materials"
+    }
+  ],
+  "serviceBindings": [
+    {
+      "serviceId": "provisions",
+      "goalScreenId": "main-provisions",
+      "completeScreenId": "service-complete"
+    },
+    {
+      "serviceId": "meeting",
+      "goalScreenId": "main-meeting",
+      "completeScreenId": "service-complete"
+    },
+    {
+      "serviceId": "materials",
+      "goalScreenId": "main-materials",
+      "completeScreenId": "service-complete"
+    }
+  ],
+  "planScreenIds": {
+    "preview": "plan-preview",
+    "reserved": "reserve",
+    "cancelled": "cancel",
+    "started": "commit",
+    "complete": "plan-complete"
+  },
+  "screens": [
+    {
+      "id": "title",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.title",
+      "text": {
+        "en": "A School without Walls",
+        "es-ES": "Una escuela sin murallas"
+      },
+      "condition": "campaign menu episode entry, before intro-fact",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A School without Walls"
+        ],
+        "es-ES": [
+          "Una escuela sin murallas"
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 2
+    },
+    {
+      "id": "intro-fact",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.intro-fact",
+      "text": {
+        "en": "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy.",
+        "es-ES": "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+      },
+      "condition": "after title, before intro-handover",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy."
+        ],
+        "es-ES": [
+          "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "intro-handover",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.intro-handover",
+      "text": {
+        "en": "These households, supplies and local errands are invented. Judith of Tiberias speaks centuries later, from received accounts. Their success will not found an institution or settle a canon.",
+        "es-ES": "Estos hogares, suministros y encargos locales son inventados. Judith de Tiberíades habla siglos después, a partir de relatos recibidos. Su éxito no fundará una institución ni fijará un canon."
+      },
+      "condition": "after intro-fact, before intro-personal",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "These households, supplies and local errands are invented. Judith of Tiberias speaks centuries later, from received accounts. Their success will not found an institution or settle a canon."
+        ],
+        "es-ES": [
+          "Estos hogares, suministros y encargos locales son inventados. Judith de Tiberíades habla siglos después, a partir de relatos recibidos. Su éxito no fundará una institución ni fijará un canon."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "intro-personal",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.intro-personal",
+      "text": {
+        "en": "I was taught to leave a margin for the next question. The names of Yavneh reached me through other voices. I cannot recover their rooms; I can refuse to mistake a roof for an answer.",
+        "es-ES": "Me enseñaron a dejar margen para la siguiente pregunta. Los nombres de Yavneh me llegaron por otras voces. No puedo recuperar sus habitaciones; puedo negarme a confundir un techo con una respuesta."
+      },
+      "condition": "after intro-handover, before any player resource action",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "I was taught to leave a margin for the next question. The names of Yavneh reached me through other voices. I cannot recover their rooms; I can refuse to mistake a roof",
+          "for an answer."
+        ],
+        "es-ES": [
+          "Me enseñaron a dejar margen para la siguiente pregunta. Los nombres de Yavneh me llegaron por otras voces. No puedo recuperar sus habitaciones; puedo negarme a confundir un techo con una respuesta."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "recommended-previous",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recommended-previous",
+      "text": {
+        "en": "Recommended first: Names beyond the Fallen House, episode 1 of Keepers of the Unbroken Word. This episode can be played independently. The local characters do not certify a household’s journey from Jerusalem.",
+        "es-ES": "Se recomienda empezar por Nombres más allá de la casa caída, episodio 1 de Guardianes de la palabra viva. Este episodio puede jugarse por separado. Los personajes locales no acreditan el viaje de un hogar desde Jerusalén."
+      },
+      "condition": "entry recommendation, nonblocking and skippable; never read a missing save as permission",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Recommended first: Names beyond the Fallen House, episode 1 of Keepers of the Unbroken Word. This episode can be played independently. The local characters do not certify a household’s journey from Jerusalem."
+        ],
+        "es-ES": [
+          "Se recomienda empezar por Nombres más allá de la casa caída, episodio 1 de Guardianes de la palabra viva. Este episodio puede jugarse por separado. Los personajes locales no acreditan el viaje",
+          "de un hogar desde Jerusalén."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "plan-preview",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.plan-preview",
+      "text": {
+        "en": "Choose one method for each of three services: provisions, meeting space and working materials. Preview is free. Each method shows its own worker, work site, result, receiving court and original recipient.",
+        "es-ES": "Elige un método para cada uno de tres servicios: provisiones, lugar de reunión y materiales de trabajo. Consultar es gratis. Cada método muestra su trabajador, lugar de trabajo, resultado, patio receptor y destinatario original."
+      },
+      "condition": "opening plan panel or changing complete candidate selection; free",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Choose one method for each of three services: provisions, meeting space and working materials. Preview is free. Each method shows its own worker, work site, result, receiving court and original recipient."
+        ],
+        "es-ES": [
+          "Elige un método para cada uno de tres servicios: provisiones, lugar de reunión y materiales de trabajo. Consultar es gratis. Cada método muestra su trabajador, lugar de trabajo, resultado, patio receptor y",
+          "destinatario original."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "reserve",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.reserve",
+      "text": {
+        "en": "Reserve the complete affordable selection once. All three costs enter escrow together. You may cancel and recover that escrow before committing; optional rewards remain separate.",
+        "es-ES": "Reserva una vez la selección completa que puedas pagar. Los tres costes pasan juntos a depósito. Puedes cancelar y recuperar ese depósito antes de comprometerte; las recompensas opcionales siguen separadas."
+      },
+      "condition": "successful atomic reservation, once per attempt",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Reserve the complete affordable selection once. All three costs enter escrow together. You may cancel and recover that escrow before committing; optional rewards remain separate."
+        ],
+        "es-ES": [
+          "Reserva una vez la selección completa que puedas pagar. Los tres costes pasan juntos a depósito. Puedes cancelar y recuperar ese depósito antes de comprometerte; las recompensas opcionales siguen separadas."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "unaffordable",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.unaffordable",
+      "text": {
+        "en": "This complete selection exceeds at least one spendable resource. Nothing has been reserved. Compare another method or complete an available optional task; the displayed reward reserve is not your spending stock.",
+        "es-ES": "Esta selección completa supera al menos un recurso disponible. No se ha reservado nada. Compara otro método o cumple un secundario disponible; la reserva de recompensas mostrada no forma parte de tus existencias para gastar."
+      },
+      "condition": "rejected unaffordable reservation; no mutation",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "This complete selection exceeds at least one spendable resource. Nothing has been reserved. Compare another method or complete an available optional task; the displayed reward reserve is not your spending stock."
+        ],
+        "es-ES": [
+          "Esta selección completa supera al menos un recurso disponible. No se ha reservado nada. Compara otro método o cumple un secundario disponible; la reserva de recompensas mostrada no forma parte de tus",
+          "existencias para gastar."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "cancel",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.cancel",
+      "text": {
+        "en": "Reservation cancelled once. Its escrow has returned to spendable stock. Completed optional tasks and their receipts remain recorded.",
+        "es-ES": "Reserva cancelada una vez. Su depósito vuelve a los recursos disponibles. Los secundarios completados y sus recibos siguen registrados."
+      },
+      "condition": "successful precommit cancellation; refund once",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Reservation cancelled once. Its escrow has returned to spendable stock. Completed optional tasks and their receipts remain recorded."
+        ],
+        "es-ES": [
+          "Reserva cancelada una vez. Su depósito vuelve a los recursos disponibles. Los secundarios completados y sus recibos siguen registrados."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
+    },
+    {
+      "id": "commit",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.commit",
+      "text": {
+        "en": "Begin the selected plan. Its methods and costs are now committed. Take each original worker to the selected work circle, then deliver that method’s resulting bundle to its own receiving court.",
+        "es-ES": "Comienza el plan elegido. Sus métodos y costes quedan comprometidos. Lleva cada trabajador original al círculo de trabajo seleccionado y entrega después el fardo resultante de ese método en su propio patio receptor."
+      },
+      "condition": "successful irreversible commit; announce selected methods",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Begin the selected plan. Its methods and costs are now committed. Take each original worker to the selected work circle, then deliver that method’s resulting bundle to its own receiving court."
+        ],
+        "es-ES": [
+          "Comienza el plan elegido. Sus métodos y costes quedan comprometidos. Lleva cada trabajador original al círculo de trabajo seleccionado y entrega después el fardo resultante de ese método en su propio patio",
+          "receptor."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "main-provisions",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.main-provisions",
+      "text": {
+        "en": "Complete the selected provisions method. Deliver its own result to the Neighbors’ Table with the original provisions recipient alive and present. Payment alone does not serve a meal.",
+        "es-ES": "Completa el método elegido de provisiones. Entrega su propio resultado en la mesa de los vecinos con el destinatario original de provisiones vivo y presente. El pago por sí solo no sirve una comida."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected provisions method. Deliver its own result to the Neighbors’ Table with the original provisions recipient alive and present. Payment alone does not serve a meal."
+        ],
+        "es-ES": [
+          "Completa el método elegido de provisiones. Entrega su propio resultado en la mesa de los vecinos con el destinatario original de provisiones vivo y presente. El pago por sí solo no sirve",
+          "una comida."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "main-meeting",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.main-meeting",
+      "text": {
+        "en": "Complete the selected meeting method. The original meeting recipient must attend its selected receiving court: the prepared court for A Shelter Prepared Together, or the offered room for The Door Offered Freely.",
+        "es-ES": "Completa el método elegido de reunión. El destinatario original de reunión debe acudir al patio receptor seleccionado: el patio preparado para Un refugio preparado entre todos o la estancia ofrecida para La puerta que se ofrece."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected meeting method. The original meeting recipient must attend its selected receiving court: the prepared court for A Shelter Prepared Together, or the offered room for The Door Offered Freely."
+        ],
+        "es-ES": [
+          "Completa el método elegido de reunión. El destinatario original de reunión debe acudir al patio receptor seleccionado: el patio preparado para Un refugio preparado entre todos o la estancia ofrecida para La",
+          "puerta que se ofrece."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "main-materials",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.main-materials",
+      "text": {
+        "en": "Complete the selected working-materials method. Deliver its own result to the Reading Cloth with the original materials recipient alive and present. These are ordinary working supplies, not a recovered sacred original.",
+        "es-ES": "Completa el método elegido de materiales de trabajo. Entrega su propio resultado en el paño de lectura con el destinatario original de materiales vivo y presente. Son suministros corrientes de trabajo, no un original sagrado recuperado."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected working-materials method. Deliver its own result to the Reading Cloth with the original materials recipient alive and present. These are ordinary working supplies, not a recovered sacred original."
+        ],
+        "es-ES": [
+          "Completa el método elegido de materiales de trabajo. Entrega su propio resultado en el paño de lectura con el destinatario original de materiales vivo y presente. Son suministros corrientes de trabajo, no",
+          "un original sagrado recuperado."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "service-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.service-complete",
+      "text": {
+        "en": "One task has a destination now, and someone there to receive it. Leave its name beside its receipt; a total without a name tells too easy a story.",
+        "es-ES": "Una tarea ya tiene destino y alguien que la reciba. Deja su nombre junto al recibo; un total sin nombre cuenta una historia demasiado fácil."
+      },
+      "condition": "one notification for each service original selected output reception receipt; bind service ID explicitly, maximum3",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "One task has a destination now, and someone there to receive it. Leave its name beside its receipt; a total without a name tells too easy a story."
+        ],
+        "es-ES": [
+          "Una tarea ya tiene destino y alguien que la reciba. Deja su nombre junto al recibo; un total sin nombre cuenta una historia demasiado fácil."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "aid-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.aid-offer",
+      "text": {
+        "en": "Bring both marked original aid carriers to their distinct assigned northern household collection circles. Reward once:40 food,40 wood,20 gold, drawn from the separate finite reserve.",
+        "es-ES": "Lleva los dos portadores originales señalados de ayuda a sus respectivos círculos de recogida del hogar del norte. Recompensa única:40 de alimento,40 de madera y 20 de oro, de la reserva finita separada."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked original aid carriers to their distinct assigned northern household collection circles. Reward once:40 food,40 wood,20 gold, drawn from the separate finite reserve."
+        ],
+        "es-ES": [
+          "Lleva los dos portadores originales señalados de ayuda a sus respectivos círculos de recogida del hogar del norte. Recompensa única:40 de alimento,40 de madera y 20 de oro, de la reserva finita",
+          "separada."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "aid-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.aid-complete",
+      "text": {
+        "en": "A share arrived before anyone could turn generosity into a heading. I would leave the recipient’s place in the account.",
+        "es-ES": "Llegó una parte antes de que nadie convirtiera la generosidad en un encabezamiento. Yo dejaría sitio para su destinatario en la cuenta."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A share arrived before anyone could turn generosity into a heading. I would leave the recipient’s place in the account."
+        ],
+        "es-ES": [
+          "Llegó una parte antes de que nadie convirtiera la generosidad en un encabezamiento. Yo dejaría sitio para su destinatario en la cuenta."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "copy-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-offer",
+      "text": {
+        "en": "Bring the marked original western working-record carrier to the Reading Cloth. Benefit: an attributed note on remembered practice and the selected-court reminder. No resource reward.",
+        "es-ES": "Lleva al portador original señalado de la anotación occidental al paño de lectura. Ventaja: una nota atribuida sobre prácticas recordadas y el recordatorio de patios seleccionados. Sin recompensa de recursos."
+      },
+      "condition": "side-2 western original copy offer, independent from side-3",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the marked original western working-record carrier to the Reading Cloth. Benefit: an attributed note on remembered practice and the selected-court reminder. No resource reward."
+        ],
+        "es-ES": [
+          "Lleva al portador original señalado de la anotación occidental al paño de lectura. Ventaja: una nota atribuida sobre prácticas recordadas y el recordatorio de patios seleccionados. Sin recompensa de recursos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "copy-hint",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-hint",
+      "text": {
+        "en": "Provisions go to the Neighbors’ Table; working materials go to the Reading Cloth. For A Shelter Prepared Together, use the Prepared Meeting Court. For The Door Offered Freely, use the Offered Room. The selected results and original recipients must still be present at the end.",
+        "es-ES": "Las provisiones van a la mesa de los vecinos; los materiales, al paño de lectura. Para Un refugio preparado entre todos, usa el patio preparado para reunirse. Para La puerta que se ofrece, usa la estancia ofrecida. Los resultados seleccionados y destinatarios originales deben seguir presentes al terminar."
+      },
+      "condition": "after side-2 copy-complete once; independent from side-3",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Provisions go to the Neighbors’ Table; working materials go to the Reading Cloth. For A Shelter Prepared Together, use the Prepared Meeting Court. For The Door Offered Freely, use the Offered Room.",
+          "The selected results and original recipients must still be present at the end."
+        ],
+        "es-ES": [
+          "Las provisiones van a la mesa de los vecinos; los materiales, al paño de lectura. Para Un refugio preparado entre todos, usa el patio preparado para reunirse. Para La puerta que se",
+          "ofrece, usa la estancia ofrecida. Los resultados seleccionados y destinatarios originales deben seguir presentes al terminar."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 23
+    },
+    {
+      "id": "copy-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-complete",
+      "text": {
+        "en": "Mishnah Rosh Hashanah 4:1–3 preserves post-destruction rules and disagreement about their scope. This later compiled legal memory is not a transcript of our fictional gathering.",
+        "es-ES": "Mishná Rosh Hashaná4:1–3 conserva normas posteriores a la destrucción y desacuerdos sobre su alcance. Esta memoria legal compilada después no es una transcripción de nuestra reunión ficticia."
+      },
+      "condition": "earned side-2 western original arrival once; source note then copy-hint",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Mishnah Rosh Hashanah 4:1–3 preserves post-destruction rules and disagreement about their scope. This later compiled legal memory is not a transcript of our fictional gathering."
+        ],
+        "es-ES": [
+          "Mishná Rosh Hashaná4:1–3 conserva normas posteriores a la destrucción y desacuerdos sobre su alcance. Esta memoria legal compilada después no es una transcripción de nuestra reunión ficticia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "repair-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.repair-offer",
+      "text": {
+        "en": "Use the damaged store’s single repair action: pay 30 wood to restore that original store fully, then receive 20 wood once from reserve. Paying without restoration gives no reward.",
+        "es-ES": "Usa la acción única de reparación del almacén dañado: paga 30 de madera para restaurar por completo ese almacén original y recibe después 20 de madera de la reserva una sola vez. Pagar sin restaurarlo no da recompensa."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Use the damaged store’s single repair action: pay 30 wood to restore that original store fully, then receive 20 wood once from reserve. Paying without restoration gives no reward."
+        ],
+        "es-ES": [
+          "Usa la acción única de reparación del almacén dañado: paga 30 de madera para restaurar por completo ese almacén original y recibe después 20 de madera de la reserva una sola vez.",
+          "Pagar sin restaurarlo no da recompensa."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "repair-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.repair-complete",
+      "text": {
+        "en": "The roof has a use again. That is a smaller claim than rebuilding a lost world, and one I can write without borrowing another person’s grief.",
+        "es-ES": "El techo vuelve a tener uso. Es una afirmación más pequeña que reconstruir un mundo perdido y puedo escribirla sin tomar prestado el dolor de otra persona."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The roof has a use again. That is a smaller claim than rebuilding a lost world, and one I can write without borrowing another person’s grief."
+        ],
+        "es-ES": [
+          "El techo vuelve a tener uso. Es una afirmación más pequeña que reconstruir un mundo perdido y puedo escribirla sin tomar prestado el dolor de otra persona."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "trade-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.trade-offer",
+      "text": {
+        "en": "Escort the marked original trader to the southern receiving yard. Pay 20 gold there, then receive 20 food and 10 gold once from reserve. Its own reward cannot pay its cost.",
+        "es-ES": "Escolta al comerciante original señalado hasta el patio receptor del sur. Paga allí20 de oro y recibe después 20 de alimento y 10 de oro de la reserva una sola vez. Su propia recompensa no puede pagar su coste."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Escort the marked original trader to the southern receiving yard. Pay 20 gold there, then receive 20 food and 10 gold once from reserve. Its own reward cannot pay its cost."
+        ],
+        "es-ES": [
+          "Escolta al comerciante original señalado hasta el patio receptor del sur. Paga allí20 de oro y recibe después 20 de alimento y 10 de oro de la reserva una sola vez. Su",
+          "propia recompensa no puede pagar su coste."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "trade-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.trade-complete",
+      "text": {
+        "en": "The exchange closes one account and opens a place at the table. Neither line says what another household must believe.",
+        "es-ES": "El intercambio cierra una cuenta y abre un sitio en la mesa. Ninguna línea dice lo que otro hogar debe creer."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The exchange closes one account and opens a place at the table. Neither line says what another household must believe."
+        ],
+        "es-ES": [
+          "El intercambio cierra una cuenta y abre un sitio en la mesa. Ninguna línea dice lo que otro hogar debe creer."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 10
+    },
+    {
+      "id": "guide-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.guide-offer",
+      "text": {
+        "en": "Bring the original local guide to the western junction. Benefit: mark the existing northern approach through the Timber Bench to the Northern Turn. The task creates no road or change in terrain.",
+        "es-ES": "Lleva al guía local original al cruce occidental. Ventaja: señala la aproximación norte existente por el banco de madera hasta el recodo del norte. La tarea no crea un camino ni cambia el terreno."
+      },
+      "condition": "side-6 original guide offer; mark existing northern-approach only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the original local guide to the western junction. Benefit: mark the existing northern approach through the Timber Bench to the Northern Turn. The task creates no road or change in terrain."
+        ],
+        "es-ES": [
+          "Lleva al guía local original al cruce occidental. Ventaja: señala la aproximación norte existente por el banco de madera hasta el recodo del norte. La tarea no crea un camino ni cambia",
+          "el terreno."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "guide-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.guide-complete",
+      "text": {
+        "en": "A turn can be missed without being secret. I prefer a clear direction to a tale in which the ground itself rewards us.",
+        "es-ES": "Un recodo puede pasar inadvertido sin ser secreto. Prefiero una indicación clara a un relato en el que el propio suelo nos recompensa."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A turn can be missed without being secret. I prefer a clear direction to a tale in which the ground itself rewards us."
+        ],
+        "es-ES": [
+          "Un recodo puede pasar inadvertido sin ser secreto. Prefiero una indicación clara a un relato en el que el propio suelo nos recompensa."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "guest-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.guest-offer",
+      "text": {
+        "en": "Bring both marked original voluntary guests to the additional hearth alive. Pay 20 food for hospitality, then receive 10 food once from reserve. These guests are optional and cannot replace a main recipient.",
+        "es-ES": "Lleva con vida a los dos invitados voluntarios originales señalados hasta el fogón adicional. Paga 20 de alimento por la hospitalidad y recibe después 10 de alimento de la reserva una sola vez. Estos invitados son opcionales y no sustituyen a ningún destinatario principal."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked original voluntary guests to the additional hearth alive. Pay 20 food for hospitality, then receive 10 food once from reserve. These guests are optional and cannot replace a main",
+          "recipient."
+        ],
+        "es-ES": [
+          "Lleva con vida a los dos invitados voluntarios originales señalados hasta el fogón adicional. Paga 20 de alimento por la hospitalidad y recibe después 10 de alimento de la reserva una sola",
+          "vez. Estos invitados son opcionales y no sustituyen a ningún destinatario principal."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
+    },
+    {
+      "id": "guest-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.guest-complete",
+      "text": {
+        "en": "There was room beyond the three promises in the ledger. I would not call that room a proof; I would keep it open.",
+        "es-ES": "Había sitio más allá de las tres promesas del registro. Yo no llamaría prueba a ese sitio; lo dejaría abierto."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "There was room beyond the three promises in the ledger. I would not call that room a proof; I would keep it open."
+        ],
+        "es-ES": [
+          "Había sitio más allá de las tres promesas del registro. Yo no llamaría prueba a ese sitio; lo dejaría abierto."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "optional-unavailable",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.optional-unavailable",
+      "text": {
+        "en": "This optional task can no longer be completed with its original actor or object. It gives no reward and does not defeat the main plan. Already earned receipts remain; replacements cannot complete it.",
+        "es-ES": "Este secundario ya no puede completarse con su actor u objeto original. No da recompensa ni causa la derrota del plan principal. Los recibos ya ganados se conservan; los reemplazos no pueden completarlo."
+      },
+      "condition": "one notification per failed optional ID; never main defeat",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "This optional task can no longer be completed with its original actor or object. It gives no reward and does not defeat the main plan. Already earned receipts remain; replacements cannot complete",
+          "it."
+        ],
+        "es-ES": [
+          "Este secundario ya no puede completarse con su actor u objeto original. No da recompensa ni causa la derrota del plan principal. Los recibos ya ganados se conservan; los reemplazos no pueden",
+          "completarlo."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "fresh-reception",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.fresh-reception",
+      "text": {
+        "en": "Before finishing, bring all three original main recipients alive into their selected receiving courts, with each selected result there too. Deliveries remain recorded, but past presence cannot replace current presence.",
+        "es-ES": "Antes de terminar, lleva a los tres destinatarios originales principales vivos a sus patios receptores seleccionados, con cada resultado elegido también allí. Las entregas quedan registradas, pero la presencia pasada no sustituye a la actual."
+      },
+      "condition": "all service receipts complete but fresh current output/recipient presence incomplete",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Before finishing, bring all three original main recipients alive into their selected receiving courts, with each selected result there too. Deliveries remain recorded, but past presence cannot replace current presence."
+        ],
+        "es-ES": [
+          "Antes de terminar, lleva a los tres destinatarios originales principales vivos a sus patios receptores seleccionados, con cada resultado elegido también allí. Las entregas quedan registradas, pero la presencia pasada no sustituye",
+          "a la actual."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "defeat",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.defeat",
+      "text": {
+        "en": "A required original recipient, or a selected worker before completing its work, has been lost. A selected result has also become indispensable after commitment. Load an earlier save or restart if the plan cannot be completed.",
+        "es-ES": "Se ha perdido un destinatario original obligatorio o un trabajador seleccionado antes de terminar su trabajo. Cada resultado seleccionado también es indispensable tras el compromiso. Carga una partida anterior o reinicia si el plan ya no puede completarse."
+      },
+      "condition": "irreversible main failure, suppress victory and later optional mutations",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A required original recipient, or a selected worker before completing its work, has been lost. A selected result has also become indispensable after commitment. Load an earlier save or restart if the",
+          "plan cannot be completed."
+        ],
+        "es-ES": [
+          "Se ha perdido un destinatario original obligatorio o un trabajador seleccionado antes de terminar su trabajo. Cada resultado seleccionado también es indispensable tras el compromiso. Carga una partida anterior o reinicia si",
+          "el plan ya no puede completarse."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "source-limit",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.source-limit",
+      "text": {
+        "en": "The later Gittin 56 a–b account associates Yavneh with a request made during the siege. We preserve its later narrative status; no private negotiation is reenacted here.",
+        "es-ES": "El relato posterior de Guitín 56 a–b asocia Yavneh con una petición durante el asedio. Conservamos su carácter narrativo posterior; aquí no se representa ninguna negociación privada."
+      },
+      "condition": "optional copy historical note or freely reread historical notebook; never a victory prerequisite",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The later Gittin 56 a–b account associates Yavneh with a request made during the siege. We preserve its later narrative status; no private negotiation is reenacted here."
+        ],
+        "es-ES": [
+          "El relato posterior de Guitín 56 a–b asocia Yavneh con una petición durante el asedio. Conservamos su carácter narrativo posterior; aquí no se representa ninguna negociación privada."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "victory-fact",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.victory-fact",
+      "text": {
+        "en": "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem.",
+        "es-ES": "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+      },
+      "condition": "fresh simultaneous selected output/recipient check passes; before victory-personal",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem."
+        ],
+        "es-ES": [
+          "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "victory-personal",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.victory-personal",
+      "text": {
+        "en": "I cannot enter their room from my own century. I can leave three names beside three completed tasks, and a margin for the voices that never reached my page.",
+        "es-ES": "No puedo entrar en su habitación desde mi propio siglo. Puedo dejar tres nombres junto a tres tareas terminadas y un margen para las voces que nunca llegaron a mi página."
+      },
+      "condition": "after victory-fact; before continue-next",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "I cannot enter their room from my own century. I can leave three names beside three completed tasks, and a margin for the voices that never reached my page."
+        ],
+        "es-ES": [
+          "No puedo entrar en su habitación desde mi propio siglo. Puedo dejar tres nombres junto a tres tareas terminadas y un margen para las voces que nunca llegaron a mi página."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "continue-next",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.continue-next",
+      "text": {
+        "en": "Continue with The Questions We Carried, episode 3 of Keepers of the Unbroken Word, c.80–100 CE. It follows the circulation of learning; this is not the campaign finale.",
+        "es-ES": "Continúa con Las preguntas que llevábamos, episodio 3 de Guardianes de la palabra viva, hacia 80–100 d.C. Trata de la circulación del aprendizaje; este no es el final de la campaña."
+      },
+      "condition": "after victory-personal, next recommendation only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Continue with The Questions We Carried, episode 3 of Keepers of the Unbroken Word, c.80–100 CE. It follows the circulation of learning; this is not the campaign finale."
+        ],
+        "es-ES": [
+          "Continúa con Las preguntas que llevábamos, episodio 3 de Guardianes de la palabra viva, hacia 80–100 d.C. Trata de la circulación del aprendizaje; este no es el final de la campaña."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "recipe-local-meal",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-local-meal",
+      "text": {
+        "en": "At the Local Hearth. Cost: 120 food, 20 wood, 0 gold. Work: The Local Hearth. Receive: The Neighbors’ Table.",
+        "es-ES": "En el fogón local. Coste: 120 de alimento, 20 de madera, 0 de oro. Trabajo: El fogón local. Recepción: La mesa de los vecinos."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "At the Local Hearth. Cost: 120 food, 20 wood, 0 gold. Work: The Local Hearth. Receive: The Neighbors’ Table."
+        ],
+        "es-ES": [
+          "En el fogón local. Coste: 120 de alimento, 20 de madera, 0 de oro. Trabajo: El fogón local. Recepción: La mesa de los vecinos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-purchased-consignment",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-purchased-consignment",
+      "text": {
+        "en": "The Western Consignment. Cost: 30 food, 0 wood, 70 gold. Work: The Western Trader. Receive: The Neighbors’ Table.",
+        "es-ES": "La remesa occidental. Coste: 30 de alimento, 0 de madera, 70 de oro. Trabajo: El comerciante occidental. Recepción: La mesa de los vecinos."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Western Consignment. Cost: 30 food, 0 wood, 70 gold. Work: The Western Trader. Receive: The Neighbors’ Table."
+        ],
+        "es-ES": [
+          "La remesa occidental. Coste: 30 de alimento, 0 de madera, 70 de oro. Trabajo: El comerciante occidental. Recepción: La mesa de los vecinos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "recipe-assembled-shelter",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-assembled-shelter",
+      "text": {
+        "en": "A Shelter Prepared Together. Cost: 20 food, 100 wood, 0 gold. Work: The Timber Bench. Receive: The Prepared Meeting Court.",
+        "es-ES": "Un refugio preparado entre todos. Coste: 20 de alimento, 100 de madera, 0 de oro. Trabajo: El banco de madera. Recepción: El patio preparado para reunirse."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A Shelter Prepared Together. Cost: 20 food, 100 wood, 0 gold. Work: The Timber Bench. Receive: The Prepared Meeting Court."
+        ],
+        "es-ES": [
+          "Un refugio preparado entre todos. Coste: 20 de alimento, 100 de madera, 0 de oro. Trabajo: El banco de madera. Recepción: El patio preparado para reunirse."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-offered-room",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-offered-room",
+      "text": {
+        "en": "The Door Offered Freely. Cost: 0 food, 20 wood, 70 gold. Work: The Host’s Preparation Yard. Receive: The Offered Room.",
+        "es-ES": "La puerta que se ofrece. Coste: 0 de alimento, 20 de madera, 70 de oro. Trabajo: El patio de preparación del anfitrión. Recepción: La estancia ofrecida."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Door Offered Freely. Cost: 0 food, 20 wood, 70 gold. Work: The Host’s Preparation Yard. Receive: The Offered Room."
+        ],
+        "es-ES": [
+          "La puerta que se ofrece. Coste: 0 de alimento, 20 de madera, 70 de oro. Trabajo: El patio de preparación del anfitrión. Recepción: La estancia ofrecida."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-local-working-materials",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-local-working-materials",
+      "text": {
+        "en": "Materials Put to Use. Cost: 20 food, 40 wood, 0 gold. Work: The Local Working Bench. Receive: The Reading Cloth.",
+        "es-ES": "Materiales que sirven. Coste: 20 de alimento, 40 de madera, 0 de oro. Trabajo: La mesa de trabajo local. Recepción: El paño de lectura."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Materials Put to Use. Cost: 20 food, 40 wood, 0 gold. Work: The Local Working Bench. Receive: The Reading Cloth."
+        ],
+        "es-ES": [
+          "Materiales que sirven. Coste: 20 de alimento, 40 de madera, 0 de oro. Trabajo: La mesa de trabajo local. Recepción: El paño de lectura."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-purchased-working-materials",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.recipe-purchased-working-materials",
+      "text": {
+        "en": "The Prepared Bundle. Cost: 0 food, 10 wood, 60 gold. Work: The Western Trader. Receive: The Reading Cloth.",
+        "es-ES": "El fardo preparado. Coste: 0 de alimento, 10 de madera, 60 de oro. Trabajo: El comerciante occidental. Recepción: El paño de lectura."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Prepared Bundle. Cost: 0 food, 10 wood, 60 gold. Work: The Western Trader. Receive: The Reading Cloth."
+        ],
+        "es-ES": [
+          "El fardo preparado. Coste: 0 de alimento, 10 de madera, 60 de oro. Trabajo: El comerciante occidental. Recepción: El paño de lectura."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "shared-attendance-goal",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.shared-attendance-goal",
+      "text": {
+        "en": "Bring the original provisions recipient alive to the Neighbors’ Table. This records attendance only. It does not pay for, produce or complete any selected service. That recipient must be present there again at the final confirmation.",
+        "es-ES": "Lleva al destinatario original de provisiones con vida hasta la mesa de los vecinos. Esto registra únicamente su asistencia. No paga, produce ni completa ningún servicio elegido. Ese destinatario deberá estar presente allí de nuevo en la confirmación final."
+      },
+      "condition": "phase-1 shared objective; current presence and original arrival; no service receipt",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the original provisions recipient alive to the Neighbors’ Table. This records attendance only. It does not pay for, produce or complete any selected service. That recipient must be present there again",
+          "at the final confirmation."
+        ],
+        "es-ES": [
+          "Lleva al destinatario original de provisiones con vida hasta la mesa de los vecinos. Esto registra únicamente su asistencia. No paga, produce ni completa ningún servicio elegido. Ese destinatario deberá estar presente",
+          "allí de nuevo en la confirmación final."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "plan-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.plan-complete",
+      "text": {
+        "en": "The three selected services have their own work and reception receipts. Finish only with each selected result and each original recipient alive at its selected court. A past receipt cannot supply someone who is absent now.",
+        "es-ES": "Los tres servicios elegidos tienen sus propios recibos de trabajo y recepción. Termina únicamente con cada resultado elegido y destinatario original vivos en su patio seleccionado. Un recibo pasado no aporta a quien ahora está ausente."
+      },
+      "condition": "selected services complete; documentary plan confirmation, never a terminal fact before the fresh final gate",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The three selected services have their own work and reception receipts. Finish only with each selected result and each original recipient alive at its selected court. A past receipt cannot supply someone",
+          "who is absent now."
+        ],
+        "es-ES": [
+          "Los tres servicios elegidos tienen sus propios recibos de trabajo y recepción. Termina únicamente con cada resultado elegido y destinatario original vivos en su patio seleccionado. Un recibo pasado no aporta a",
+          "quien ahora está ausente."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "copy-north-offer",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-north-offer",
+      "text": {
+        "en": "Bring the marked original northern working-record carrier to the Reading Cloth. Benefit: an attributed later-tradition note and a reminder that originals cannot be replaced. This task is independent of the western note and gives no resources.",
+        "es-ES": "Lleva al portador original señalado de la anotación del norte al paño de lectura. Ventaja: una nota atribuida de tradición posterior y un recordatorio de que los originales no se sustituyen. Esta tarea es independiente de la anotación occidental y no da recursos."
+      },
+      "condition": "side-3 offered from start, independent of side-2 and main goals; reread while available",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the marked original northern working-record carrier to the Reading Cloth. Benefit: an attributed later-tradition note and a reminder that originals cannot be replaced. This task is independent of the western note",
+          "and gives no resources."
+        ],
+        "es-ES": [
+          "Lleva al portador original señalado de la anotación del norte al paño de lectura. Ventaja: una nota atribuida de tradición posterior y un recordatorio de que los originales no se sustituyen. Esta",
+          "tarea es independiente de la anotación occidental y no da recursos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 20
+    },
+    {
+      "id": "copy-north-complete",
+      "key": "scenario.jewish-tradition.02-refuge-and-school-supply-yavneh.odyssey.copy-north-complete",
+      "text": {
+        "en": "The later Gittin 56a–b narrative associates Yavneh with a request during the siege; it is not a contemporary transcript. Our working record and carrier are fictional. A spare carrier cannot replace this original, or the original assigned to the separate western note.",
+        "es-ES": "El relato posterior de Guitín 56a–b asocia Yavneh con una petición durante el asedio; no es una transcripción contemporánea. Nuestra anotación de trabajo y su portador son ficticios. Un portador de repuesto no sustituye a este original ni al asignado a la anotación occidental independiente."
+      },
+      "condition": "earned side-3 original arrival once; independent failure/receipt; contextual note and identity hint",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The later Gittin 56a–b narrative associates Yavneh with a request during the siege; it is not a contemporary transcript. Our working record and carrier are fictional. A spare carrier cannot replace this",
+          "original, or the original assigned to the separate western note."
+        ],
+        "es-ES": [
+          "El relato posterior de Guitín 56a–b asocia Yavneh con una petición durante el asedio; no es una transcripción contemporánea. Nuestra anotación de trabajo y su portador son ficticios. Un portador de repuesto",
+          "no sustituye a este original ni al asignado a la anotación occidental independiente."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
+    }
+  ],
+  "dossierMetadata": {
+    "factualIntro": {
+      "en": "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy.",
+      "es-ES": "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+    },
+    "factualOutro": {
+      "en": "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem.",
+      "es-ES": "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+    },
+    "dramatizationNotice": {
+      "en": "All local workers, recipients, supplies, records, rooms and errands are invented. No rabbinic autograph, exact academy parcel, contemporary negotiation or canon-closing event is represented. Judith’s account is fictional received memory; gameplay neither proves belief nor reverses Jerusalem’s destruction.",
+      "es-ES": "Todos los trabajadores, destinatarios, suministros, anotaciones, estancias y encargos locales son inventados. No se representan un autógrafo rabínico, una parcela exacta de academia, una negociación contemporánea ni un cierre del canon. El relato de Judith es memoria recibida ficticia; el juego no acredita creencias ni revierte la destrucción de Jerusalén."
+    },
+    "artDirection": {
+      "style": "Restrained ordinary early Roman-period inland civilian work; cloth, food baskets, reused timber and plain meeting space; fictional local people at human scale",
+      "historicalControls": "No later minaret, railway, excavated Persian winery or Byzantine industrial complex as70–80scenery. No exact academy reconstruction, holy-person unit, sacred autograph, canon ceremony, harbor or fabricated Soreq crossing.",
+      "referenceAssets": [],
+      "productionApproved": false
+    },
+    "failureRecovery": {
+      "beforeCommit": "Free preview; reject unaffordable input without debit; exact joint escrow refund once before irreversible commitment",
+      "afterCommit": "Keep selected identities/costs; wrong destination or absent recipient yields no receipt, use the same originals at correct court; no timer or substitute work",
+      "mainIdentityLoss": "Existing reference rules: original required recipient or indispensable generated selected result loss defeats first; selected worker loss before work defeats, loss after recorded work does not undo its result",
+      "optionalIdentityLoss": "Each independent side task fails only on its own lost original or object; west/north copies fail independently; no reward/resurrection/main defeat",
+      "resources": "Main all-skip8/5/3 choices; finite70F60W30G reward account separate from operating stock; no gathering, production, regeneration or replacement budget",
+      "nativeStatus": "Reference recovery descriptions require actual native composition/input/save-load/engine evidence"
+    },
+    "requiredCapabilities": [
+      {
+        "id": "alternative-fulfillment-v3",
+        "status": "actual reference model available; native selection/escrow/work/output/reception pending i00007/S3"
+      },
+      {
+        "id": "current-original-presence",
+        "status": "reference checks available; native terminal scheduling/save-load QA pending"
+      },
+      {
+        "id": "single-origin-independent-secondary",
+        "status": "one original per copy is legal in current complete-profile v3; actual typed full candidate still must be executed and reviewed"
+      },
+      {
+        "id": "authored-secondary-costs",
+        "status": "reference projection integrated b4bdc4ee; native extract arrival-plus-payment unsupported"
+      },
+      {
+        "id": "historical-terrain-and-footprints",
+        "status": "candidate frame and local paths authored; ancient land, slope, watercourse, footprints and native navigation unapproved"
+      },
+      {
+        "id": "ordered-two-narrator-captions",
+        "status": "EN/es-ES source44 screens specified; editorial/native/audio acceptance pending"
+      }
+    ],
+    "gameplayIdentity": {
+      "problem": "Keep three distinct voluntary local promises with exclusive methods, original workers/results/recipients and finite joint resources",
+      "decision": "Compare resource mixture, different work/reception circuits and optional aid/context before irreversible commitment; three candidate styles are financially feasible in each difficulty",
+      "density": "22 activity sites,27 physical interhub links,20 local approaches, six methods and7 independent secondary tasks; the guide information alias adds no physical road",
+      "replay": "Historical outcome stays fixed; replay changes ADF/BCF/BDE or other affordable methods, independent note completion and optional order",
+      "pacing": "Reflective civilian recovery episode after destruction, not another six-of-eight rescue, fake siege or deadline; challenge and travel remain uncalibrated",
+      "limits": "No game-verified difficulty or duration; an interesting RTS experience is an acceptance obligation, not an assertion from menus and graphs"
+    },
+    "qaCases": [
+      "Enumerate all24 direct financial choices and preserve8/5/3; existing optional-prefix BFS gives8/7/6, never promise hard ACE/BDF.",
+      "Exercise all nine style/difficulty prefixes with actual identities and travel; financial evidence alone is not a played style.",
+      "Attendance alone must neither reserve resources nor create work/output/service receipts or victory.",
+      "For each of six methods, reserve/cancel/refund once before commit and reject stale, partial or unaffordable choice without debit.",
+      "After commit, each exact original worker departs and performs its own selected work; another service worker or unselected method cannot qualify.",
+      "Only genuinely generated selected output can arrive; reject preplaced, wrong-recipe, duplicate and substitute results.",
+      "Meeting C and D require distinct actual receiving courts, both for the selected output and the unchanged original recipient.",
+      "All selected results and three original recipients require fresh alive presence at their selected courts at final; historical receipt or attendance is insufficient.",
+      "Loss of required recipient/indispensable selected result defeats before simultaneous victory; worker loss after completed work does not undo it.",
+      "Repair30W, trade20G and guests20F charge before reserve rewards. Require two aid originals and two guests, with no replacement or reward for optional loss.",
+      "Save/load at reservation, cancellation, commitment, work/generation, every reception/reward and final arbitration; rotate observation epoch and reject queued stale actions.",
+      "Verify all22 sites/27 interhub links/20 local approaches against approved terrain and actual circles/footprints; no modern river course or empty waterline certifies land.",
+      "Check all44 EN/es-ES screen texts, role order, source cautions, cost/work/court display, contextual service completion and the real next episode03.",
+      "Native v3 and multi-origin modes remain rejected until their explicit real adapters and engine QA exist; no fallback to old conjunctive payments.",
+      "Revised design: west and north copy each has exactly one original, its own true origin/route, scoped receipt/effect and independent failure. Opposite or spare carrier cannot complete it.",
+      "Seven-task BFS24rows preserve8/5/3 and8/7/6; all directly affordable main choices also have all-seven witnesses after immediate funding.",
+      "The compound guide information corridor is exactly the two existing links through Timber Bench; no extra road, new terrain or duplicate physical route is created."
+    ],
+    "editorialReviewNotes": {
+      "author": "gpt-6",
+      "date": "2026-10-27",
+      "status": "design-only candidate; historical/editorial/geographic/native acceptance pending",
+      "narrator": "Judith355–435 receives earlier accounts. A timeless common narrator attributes the later Gittin narrative; Judith never claims to read the finalized later Babylonian Talmud.",
+      "copyRevision": "Explicitly redesign the former combined two-note goal as two independent side quests. This uses existing single-origin/one-original copy contracts; it is not claimed equivalent to an unsupported combined multi-origin transaction.",
+      "composition": "Build an actual complete-profile v3 candidate and run its genuine typed projector and dossier factory. Do not count a canonical dossier or unlock f00005/S8 until separate registration/review."
+    },
+    "continuation": {
+      "nextEpisodeId": "03-distributed-study-network-yavneh",
+      "campaignComplete": false,
+      "sourceScreenId": "continue-next"
+    },
+    "screenRoles": {
+      "title": "title",
+      "factualIntro": "intro-fact",
+      "handover": "intro-handover",
+      "personalIntro": "intro-personal",
+      "factualOutro": "victory-fact",
+      "personalOutro": "victory-personal",
+      "defeat": "defeat",
+      "continuation": "continue-next"
+    },
+    "playstyles": [
+      {
+        "id": "the-hosts-door",
+        "optionalObjectives": [
+          "side-5",
+          "side-6"
+        ],
+        "costOfOpportunity": "Escort the trader south and guide west before funding if gold would otherwise fall below the trade cost. Hard ADF after that trade uses its remaining130gold exactly; local meal and host reception compete with the western materials journey.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      },
+      {
+        "id": "the-northern-workshop",
+        "optionalObjectives": [
+          "side-1",
+          "side-4"
+        ],
+        "costOfOpportunity": "The northern shelter consumes wood. On hard its direct BCF reservation leaves no wood; earn the two aid deliveries before paying30wood for the repair. The20wood repair reward cannot finance its own prerequisite.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      },
+      {
+        "id": "records-and-guests",
+        "optionalObjectives": [
+          "side-2",
+          "side-3",
+          "side-6",
+          "side-7"
+        ],
+        "costOfOpportunity": "Read both separate working records and escort the optional guests before committing. Their hospitality consumes net10food. BDE remains directly affordable in all three difficulties; on hard its gold is then exhausted, so later trade needs separately earned aid.",
+        "mainObjectivesUnchanged": true,
+        "historicalOutcomeUnchanged": true
+      }
+    ],
+    "historicalMaterialPolicyByEntity": {
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-meal": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-consignment": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-assembled-shelter": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-offered-room": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-local-working-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation.",
+      "jewish-tradition.02-refuge-and-school-supply-yavneh.output-purchased-working-materials": "Fictional ordinary civilian or selected local working result; no historical teacher, sacred autograph, completed Mishnah or archaeological original. Output declaration is logical and unavailable before its actual selected generation."
+    },
+    "mapPlan": {
+      "bbox": [
+        34.714,
+        31.846,
+        34.755,
+        31.884
+      ],
+      "terrainProfile": "yavneh",
+      "orientation": "north-up; real inland Yavneh region, fictional local activity sites; no claim to an academy address",
+      "projection": "existing geographic_frame.helper.py; cosine-corrected longitude and padded square, north-up",
+      "hubs": [
+        {
+          "id": "starting-court",
+          "centre": [
+            211.44,
+            255.75
+          ],
+          "lonLat": [
+            34.736,
+            31.859
+          ],
+          "name": {
+            "en": "The Shared Ledger",
+            "es-ES": "El registro compartido"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "hearth-work",
+          "centre": [
+            235.33,
+            237.0
+          ],
+          "lonLat": [
+            34.739,
+            31.861
+          ],
+          "name": {
+            "en": "The Local Hearth",
+            "es-ES": "El fogón local"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "meal-court",
+          "centre": [
+            251.25,
+            213.56
+          ],
+          "lonLat": [
+            34.741,
+            31.8635
+          ],
+          "name": {
+            "en": "The Neighbors’ Table",
+            "es-ES": "La mesa de los vecinos"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "timber-work",
+          "centre": [
+            179.59,
+            185.44
+          ],
+          "lonLat": [
+            34.732,
+            31.8665
+          ],
+          "name": {
+            "en": "The Timber Bench",
+            "es-ES": "El banco de madera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "built-meeting-court",
+          "centre": [
+            227.37,
+            162.0
+          ],
+          "lonLat": [
+            34.738,
+            31.869
+          ],
+          "name": {
+            "en": "The Prepared Meeting Court",
+            "es-ES": "El patio preparado para reunirse"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "host-work",
+          "centre": [
+            163.67,
+            293.25
+          ],
+          "lonLat": [
+            34.73,
+            31.855
+          ],
+          "name": {
+            "en": "The Host’s Preparation Yard",
+            "es-ES": "El patio de preparación del anfitrión"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "host-meeting-court",
+          "centre": [
+            187.56,
+            312.0
+          ],
+          "lonLat": [
+            34.733,
+            31.853
+          ],
+          "name": {
+            "en": "The Offered Room",
+            "es-ES": "La estancia ofrecida"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "materials-work",
+          "centre": [
+            251.25,
+            265.13
+          ],
+          "lonLat": [
+            34.741,
+            31.858
+          ],
+          "name": {
+            "en": "The Local Working Bench",
+            "es-ES": "La mesa de trabajo local"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "reader-court",
+          "centre": [
+            263.2,
+            192.94
+          ],
+          "lonLat": [
+            34.7425,
+            31.8657
+          ],
+          "name": {
+            "en": "The Reading Cloth",
+            "es-ES": "El paño de lectura"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "merchant-work",
+          "centre": [
+            88.03,
+            227.63
+          ],
+          "lonLat": [
+            34.7205,
+            31.862
+          ],
+          "name": {
+            "en": "The Western Trader",
+            "es-ES": "El comerciante occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "western-junction",
+          "centre": [
+            131.82,
+            227.63
+          ],
+          "lonLat": [
+            34.726,
+            31.862
+          ],
+          "name": {
+            "en": "The Western Junction",
+            "es-ES": "El cruce occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "northern-junction",
+          "centre": [
+            171.63,
+            143.25
+          ],
+          "lonLat": [
+            34.731,
+            31.871
+          ],
+          "name": {
+            "en": "The Northern Turn",
+            "es-ES": "El recodo del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "aid-pickup",
+          "centre": [
+            107.94,
+            143.25
+          ],
+          "lonLat": [
+            34.723,
+            31.871
+          ],
+          "name": {
+            "en": "The Waiting Aid",
+            "es-ES": "La ayuda que espera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "aid-court",
+          "centre": [
+            227.37,
+            105.75
+          ],
+          "lonLat": [
+            34.738,
+            31.875
+          ],
+          "name": {
+            "en": "The Northern Household",
+            "es-ES": "El hogar del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "record-west",
+          "centre": [
+            68.12,
+            283.88
+          ],
+          "lonLat": [
+            34.718,
+            31.856
+          ],
+          "name": {
+            "en": "The Western Working Record",
+            "es-ES": "La anotación de trabajo occidental"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "record-north",
+          "centre": [
+            131.82,
+            68.25
+          ],
+          "lonLat": [
+            34.726,
+            31.879
+          ],
+          "name": {
+            "en": "The Northern Working Record",
+            "es-ES": "La anotación de trabajo del norte"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "repair-yard",
+          "centre": [
+            195.52,
+            96.38
+          ],
+          "lonLat": [
+            34.734,
+            31.876
+          ],
+          "name": {
+            "en": "The Damaged Store",
+            "es-ES": "El almacén dañado"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "trade-pickup",
+          "centre": [
+            56.18,
+            171.38
+          ],
+          "lonLat": [
+            34.7165,
+            31.868
+          ],
+          "name": {
+            "en": "The Visiting Trader",
+            "es-ES": "El comerciante visitante"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "trade-court",
+          "centre": [
+            211.44,
+            340.13
+          ],
+          "lonLat": [
+            34.736,
+            31.85
+          ],
+          "name": {
+            "en": "The Southern Receiving Yard",
+            "es-ES": "El patio receptor del sur"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guide-pickup",
+          "centre": [
+            99.97,
+            321.38
+          ],
+          "lonLat": [
+            34.722,
+            31.852
+          ],
+          "name": {
+            "en": "The Waiting Guide",
+            "es-ES": "El guía que espera"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guest-pickup",
+          "centre": [
+            76.09,
+            49.5
+          ],
+          "lonLat": [
+            34.719,
+            31.881
+          ],
+          "name": {
+            "en": "The Guest Household",
+            "es-ES": "El hogar invitado"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        },
+        {
+          "id": "guest-court",
+          "centre": [
+            147.75,
+            358.88
+          ],
+          "lonLat": [
+            34.728,
+            31.848
+          ],
+          "name": {
+            "en": "The Additional Hearth",
+            "es-ES": "El fogón adicional"
+          },
+          "radiusTiles": 12,
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain; radius12 is a proposed gameplay activity envelope, not an ancient parcel"
+        }
+      ],
+      "points": [
+        {
+          "id": "starting-court",
+          "lonLat": [
+            34.736,
+            31.859
+          ],
+          "tile": [
+            211.44,
+            255.75
+          ],
+          "name": {
+            "en": "The Shared Ledger",
+            "es-ES": "El registro compartido"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "hearth-work",
+          "lonLat": [
+            34.739,
+            31.861
+          ],
+          "tile": [
+            235.33,
+            237.0
+          ],
+          "name": {
+            "en": "The Local Hearth",
+            "es-ES": "El fogón local"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "meal-court",
+          "lonLat": [
+            34.741,
+            31.8635
+          ],
+          "tile": [
+            251.25,
+            213.56
+          ],
+          "name": {
+            "en": "The Neighbors’ Table",
+            "es-ES": "La mesa de los vecinos"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "timber-work",
+          "lonLat": [
+            34.732,
+            31.8665
+          ],
+          "tile": [
+            179.59,
+            185.44
+          ],
+          "name": {
+            "en": "The Timber Bench",
+            "es-ES": "El banco de madera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "built-meeting-court",
+          "lonLat": [
+            34.738,
+            31.869
+          ],
+          "tile": [
+            227.37,
+            162.0
+          ],
+          "name": {
+            "en": "The Prepared Meeting Court",
+            "es-ES": "El patio preparado para reunirse"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "host-work",
+          "lonLat": [
+            34.73,
+            31.855
+          ],
+          "tile": [
+            163.67,
+            293.25
+          ],
+          "name": {
+            "en": "The Host’s Preparation Yard",
+            "es-ES": "El patio de preparación del anfitrión"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "host-meeting-court",
+          "lonLat": [
+            34.733,
+            31.853
+          ],
+          "tile": [
+            187.56,
+            312.0
+          ],
+          "name": {
+            "en": "The Offered Room",
+            "es-ES": "La estancia ofrecida"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "materials-work",
+          "lonLat": [
+            34.741,
+            31.858
+          ],
+          "tile": [
+            251.25,
+            265.13
+          ],
+          "name": {
+            "en": "The Local Working Bench",
+            "es-ES": "La mesa de trabajo local"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "reader-court",
+          "lonLat": [
+            34.7425,
+            31.8657
+          ],
+          "tile": [
+            263.2,
+            192.94
+          ],
+          "name": {
+            "en": "The Reading Cloth",
+            "es-ES": "El paño de lectura"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "merchant-work",
+          "lonLat": [
+            34.7205,
+            31.862
+          ],
+          "tile": [
+            88.03,
+            227.63
+          ],
+          "name": {
+            "en": "The Western Trader",
+            "es-ES": "El comerciante occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "western-junction",
+          "lonLat": [
+            34.726,
+            31.862
+          ],
+          "tile": [
+            131.82,
+            227.63
+          ],
+          "name": {
+            "en": "The Western Junction",
+            "es-ES": "El cruce occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "northern-junction",
+          "lonLat": [
+            34.731,
+            31.871
+          ],
+          "tile": [
+            171.63,
+            143.25
+          ],
+          "name": {
+            "en": "The Northern Turn",
+            "es-ES": "El recodo del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "aid-pickup",
+          "lonLat": [
+            34.723,
+            31.871
+          ],
+          "tile": [
+            107.94,
+            143.25
+          ],
+          "name": {
+            "en": "The Waiting Aid",
+            "es-ES": "La ayuda que espera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "aid-court",
+          "lonLat": [
+            34.738,
+            31.875
+          ],
+          "tile": [
+            227.37,
+            105.75
+          ],
+          "name": {
+            "en": "The Northern Household",
+            "es-ES": "El hogar del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "record-west",
+          "lonLat": [
+            34.718,
+            31.856
+          ],
+          "tile": [
+            68.12,
+            283.88
+          ],
+          "name": {
+            "en": "The Western Working Record",
+            "es-ES": "La anotación de trabajo occidental"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "record-north",
+          "lonLat": [
+            34.726,
+            31.879
+          ],
+          "tile": [
+            131.82,
+            68.25
+          ],
+          "name": {
+            "en": "The Northern Working Record",
+            "es-ES": "La anotación de trabajo del norte"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "repair-yard",
+          "lonLat": [
+            34.734,
+            31.876
+          ],
+          "tile": [
+            195.52,
+            96.38
+          ],
+          "name": {
+            "en": "The Damaged Store",
+            "es-ES": "El almacén dañado"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "trade-pickup",
+          "lonLat": [
+            34.7165,
+            31.868
+          ],
+          "tile": [
+            56.18,
+            171.38
+          ],
+          "name": {
+            "en": "The Visiting Trader",
+            "es-ES": "El comerciante visitante"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "trade-court",
+          "lonLat": [
+            34.736,
+            31.85
+          ],
+          "tile": [
+            211.44,
+            340.13
+          ],
+          "name": {
+            "en": "The Southern Receiving Yard",
+            "es-ES": "El patio receptor del sur"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guide-pickup",
+          "lonLat": [
+            34.722,
+            31.852
+          ],
+          "tile": [
+            99.97,
+            321.38
+          ],
+          "name": {
+            "en": "The Waiting Guide",
+            "es-ES": "El guía que espera"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guest-pickup",
+          "lonLat": [
+            34.719,
+            31.881
+          ],
+          "tile": [
+            76.09,
+            49.5
+          ],
+          "name": {
+            "en": "The Guest Household",
+            "es-ES": "El hogar invitado"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        },
+        {
+          "id": "guest-court",
+          "lonLat": [
+            34.728,
+            31.848
+          ],
+          "tile": [
+            147.75,
+            358.88
+          ],
+          "name": {
+            "en": "The Additional Hearth",
+            "es-ES": "El fogón adicional"
+          },
+          "certainty": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+        }
+      ],
+      "corridors": [
+        {
+          "id": "path-starting-court-to-hearth-work",
+          "hubOrder": [
+            "starting-court",
+            "hearth-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-hearth-work-to-meal-court",
+          "hubOrder": [
+            "hearth-work",
+            "meal-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-meal-court-to-reader-court",
+          "hubOrder": [
+            "meal-court",
+            "reader-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-reader-court-to-built-meeting-court",
+          "hubOrder": [
+            "reader-court",
+            "built-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-built-meeting-court-to-timber-work",
+          "hubOrder": [
+            "built-meeting-court",
+            "timber-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-timber-work-to-western-junction",
+          "hubOrder": [
+            "timber-work",
+            "western-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-western-junction-to-starting-court",
+          "hubOrder": [
+            "western-junction",
+            "starting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-starting-court-to-materials-work",
+          "hubOrder": [
+            "starting-court",
+            "materials-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-materials-work-to-reader-court",
+          "hubOrder": [
+            "materials-work",
+            "reader-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-starting-court-to-host-work",
+          "hubOrder": [
+            "starting-court",
+            "host-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-work-to-host-meeting-court",
+          "hubOrder": [
+            "host-work",
+            "host-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-meeting-court-to-trade-court",
+          "hubOrder": [
+            "host-meeting-court",
+            "trade-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-host-work-to-guest-court",
+          "hubOrder": [
+            "host-work",
+            "guest-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guest-court-to-guide-pickup",
+          "hubOrder": [
+            "guest-court",
+            "guide-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guide-pickup-to-record-west",
+          "hubOrder": [
+            "guide-pickup",
+            "record-west"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-record-west-to-merchant-work",
+          "hubOrder": [
+            "record-west",
+            "merchant-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-merchant-work-to-western-junction",
+          "hubOrder": [
+            "merchant-work",
+            "western-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-merchant-work-to-trade-pickup",
+          "hubOrder": [
+            "merchant-work",
+            "trade-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-trade-pickup-to-aid-pickup",
+          "hubOrder": [
+            "trade-pickup",
+            "aid-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-pickup-to-northern-junction",
+          "hubOrder": [
+            "aid-pickup",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-northern-junction-to-timber-work",
+          "hubOrder": [
+            "northern-junction",
+            "timber-work"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-northern-junction-to-record-north",
+          "hubOrder": [
+            "northern-junction",
+            "record-north"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-record-north-to-guest-pickup",
+          "hubOrder": [
+            "record-north",
+            "guest-pickup"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-guest-pickup-to-aid-court",
+          "hubOrder": [
+            "guest-pickup",
+            "aid-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-court-to-repair-yard",
+          "hubOrder": [
+            "aid-court",
+            "repair-yard"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-repair-yard-to-northern-junction",
+          "hubOrder": [
+            "repair-yard",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "path-aid-court-to-built-meeting-court",
+          "hubOrder": [
+            "aid-court",
+            "built-meeting-court"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        },
+        {
+          "id": "northern-approach",
+          "hubOrder": [
+            "western-junction",
+            "timber-work",
+            "northern-junction"
+          ],
+          "mode": "land",
+          "widthTiles": 4
+        }
+      ],
+      "terrainInstructions": "No approved ancient land/elevation/watercourse or native passability. Preserve the27physical links and20documented local approaches, including actual offset circles, only as proposed geometry. The28th corridor is a two-link information alias and creates no road. No modern Soreq course, invented bridge or large flattened courtyard is approved.",
+      "geographicLayers": [],
+      "geometryStatus": "candidate only; historical land, all full-width paths, footprints, native spawning and gameplay unapproved",
+      "asset": "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg",
+      "activeAreaPolicy": "22candidate activity areas and their proposed connections; keep native whole-frame geography/density/performance as an acceptance target, never a measured usable-land claim",
+      "schematicWaterControl": {
+        "coordinates": [],
+        "certainty": "first-century course unresolved; empty coordinates do not certify land",
+        "renderAs": "unresolved-reference"
+      },
+      "sourceBindings": {
+        "sourceIds": [
+          "odyssey-source.jewish-tradition.02-refuge-and-school-supply-yavneh"
+        ],
+        "citations": [
+          {
+            "url": "https://hadashot.iaa.org.il/Report_Detail_Eng.aspx?id=25883",
+            "passage": "Introduction and figures1–2, Tel Yavne Area A",
+            "qualification": "Modern tell/drainage and printed grid extents; no academy parcel or first-century watercourse"
+          },
+          {
+            "url": "https://hadashot.iaa.org.il/Guidelines_eng.aspx",
+            "passage": "Map References, New Israel Grid convention",
+            "qualification": "CRS identification only; printed map uncertainty remains"
+          }
+        ]
+      }
+    }
+  }
+}
