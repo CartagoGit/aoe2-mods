@@ -2,7 +2,7 @@
 id: i00013
 title: "Author explicit finite difficulty accounts without compensating legacy resource banks"
 kind: infra
-status: review
+status: done
 type: proposal
 track: general
 date: 2026-10-27
@@ -10,10 +10,11 @@ shipped-in:
   - "acd55f5b52d177ccb9802da86b56bcbba02ce5f1"
   - "8a23bd21a306"
   - "cf84b92f1fb3"
-last-transition-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
-last-correlation-id: 8e008138-22ec-4b05-a7ae-2855d7fd10f6
-last-transition-from: in-progress
-last-transition-at: 2026-11-05T07:59:14.062Z
+  - "7c0bb4ea079466dee9927513e7ea09a3e7c107da"
+last-transition-id: a01563f9-6a76-4fb6-b078-1782687b2271
+last-correlation-id: a01563f9-6a76-4fb6-b078-1782687b2271
+last-transition-from: review
+last-transition-at: 2026-11-05T08:26:55.355Z
 ---
 
 # i00013 — Author explicit finite difficulty accounts without compensating legacy resource banks
@@ -39,7 +40,7 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 
 ### S1 — Architect account boundaries and compatibility decision
 - **Status**: done
-- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/review/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
+- **Files**: `docs/architecture/authored-difficulty-accounts.md`, `docs/qa/campaign-design/authored-difficulty-accounts-cases.json`, `docs/delendai/proposals/done/infras/i00013-author-explicit-finite-difficulty-accounts-without-compensating-legacy-resource-banks.md`
 - **Gate**: type
 - acceptance:
   - "Define a source-only opt-in authoredDifficultyAccounts with exactly easy/standard/hard and each record exactly spendable, gatherableBank, protectedRecovery, optionalReserve; each requires exact four-resource keys, reuses existing numeric resource normalization and adds a safe-integer bound including intermediate sums at the new source boundary. The existing Python normalizer alone does not enforce that ceiling. No field means complete old behavior and byte-identical default outputs. No gameplay schema widening is authorized. Derived episode economyProfile authored-finite-accounts-v1 explicitly dispatches coordinated numeric validation; unknown and v3+marker reject, absent stays legacy. supplyMargins=S+B-M-Z. See the reviewed ADR amendment; the initial three-File design was not conformant."
@@ -69,15 +70,17 @@ This is a missing authoring-factory capability, not a public gameplay-contract d
 - review-log: approved by gpt-6.1-sol — verified at cf84b92f1fb3, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Independent exact9-file review of688a120 and landedcf84b92, SHA256all9equal. New helper reuses resource_amounts and actual finite_allocation.optional_states/ba… (2) ExactR equals actual reward sum and reallocated allowance, actual costs recomputed. Secondary nonnumericchecks preserved; commonunknown/v3marker guard beforeea… (3) Real factory/common/civic positive3difficulty/B0/nonzeroP witnesses pass.9focusedtests include31architecturecaseIDs and independent faultinjection failure emit… — Independent formal S2 implementation acceptance only, exact landedcf84b92 equals reviewed688a120 across9Files. Both P2findings corrected,actual31casecoverage and default65compatibility verified; own officialgate passed164/164,2159assertions. External review/evidence /home/cartago/.codex/artifacts/aoe2-mods/finite-account-implementation-review-20261105. S1untouched; S3acceptance still unreviewed and notapproved. No native/game/historical approval.
 
 ### S3 — Independent acceptance and bounded content use
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S2]
 - **Files**: `docs/qa/campaign-design/authored-difficulty-accounts-review.md`, `docs/handoffs/LLM-WORK-ALLOCATION.md`
 - **Gate**: type
 - acceptance:
   - "Different actual model reviews the exact implementation and complete default compatibility evidence; bun run validate and official gate pass. Do not self-approve."
   - "A separately designed jewish-tradition03 candidate may use B0 and explicit accounts only after acceptance; every route, objective, screen, timing and historical/source decision remains its own architect packet. No canonical dossier count or historical-authoring unlock is implied by this infrastructure."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at 7c0bb4ea0794, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 2/2: (1) GPT-6.1-Sol review and 5e75d09 formal verdict; compatibility manifest and publication receipt; my independent official validation exit0. (2) S3 report and allocation handoff explicitly preserve all authoring decisions, B0 and current first-campaign priority; no dossier or historical authorization as… — Independent review of S3 source 675955d and b298d56 delivered in 7c0bb4ea and submitted by gpt-6, integrated e0c4dea. Sol reviewed product 688a120 and all nine landed source files, compatibility 65 dossiers/wiki/SVG and fault injection; formal S2 approval integrated 5e75d09. S3 explicitly requires a separate architect packet for each route, objective, screen, timing and historical/source decision, B0, no new historical approval or dossier. My own delendai validate exited 0: 164 Bun tests / 2159 assertions; logs and journal archived.
 
 ## acceptance
 
