@@ -17,7 +17,7 @@ i00012/S1 e i00013/S1 están oficialmente `done` en `90948b1`; el producto de i0
 
 En d00002, S1 está `done`; S2, S3 y S11 están en `review` y no acreditan prueba del motor. S4–S10 tienen revisión `changes_requested`; sus campañas contienen cero o un dossier canónico cada una. La revisión acotada de la inserción de Yavneh no cierra S4.
 
-Root conserva arquitectura, decisiones históricas/geográficas, cierre de packets e integración. Luna puede implementar los ocho archivos de i00013/S2 únicamente después de la aceptación de i00013/S1. MiniMax recibe un paquete mecánico nativo cerrado después de la decisión cartográfica de root; no inventa historia, presupuesto ni terreno. Cada producto requiere revisión de otro modelo. El usuario prueba los casos reales de motor en Windows/Steam y es-ES.
+Root conserva arquitectura, decisiones históricas/geográficas, cierre de packets e integración. Luna mantiene la unidad WIP de los ocho archivos de i00013/S2 hasta resolver el overflow, pasar revisión y aterrizar el producto; no se abre otra implementación. MiniMax recibe un paquete mecánico nativo cerrado después de la decisión cartográfica de root; no inventa historia, presupuesto ni terreno. Cada producto requiere revisión de otro modelo. El usuario prueba los casos reales de motor en Windows/Steam y es-ES.
 
 ## Siguientes tres paquetes
 
