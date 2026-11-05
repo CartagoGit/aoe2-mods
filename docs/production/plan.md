@@ -1,6 +1,6 @@
 # Plan maestro de producción
 
-El encargo consiste en construir la fábrica antes de entregar a MiniMax M3.1 la creación de contenido. La última decisión de la conversación reemplaza el gestor externo por mods independientes y recomendaciones opcionales. No se construirán ahora sagas históricas completas.
+La fábrica ya está integrada; la prioridad vigente es cerrar la arquitectura y las herramientas pendientes y avanzar después campaña a campaña, empezando por entregas privadas progresivas de **Embers of the Covenant**. El corte operativo, las dependencias y los límites están en [CURRENT-STATE](../handoffs/CURRENT-STATE.md) (5 de noviembre de 2026). Los cortes fechados posteriores conservan el historial que les correspondía.
 
 ## Secuencia y entregables
 
@@ -40,13 +40,13 @@ El propietario exige ahora planificación individual de las nueve campañas expl
 
 La última ampliación del usuario sustituye la extensión de 39 misiones por nueve odiseas: 30/34/30/32/32/30/28/32/30 episodios, 278 en total, cinco actos cada una. Consulta [plan completo](../design/odyssey-production-plan.md) y [selecciones](../design/odyssey-selections.md). La base de 39 contratos conserva identidad y evidencia; no se fuerza su cierre antiguo a mitad de la nueva cronología.
 
-Treinta dossiers ampliados de faith-origins están redactados (1.191 pantallas y 180 secundarios; órdenes 1–30). La odisea imperial ya tiene sus 34 dossiers para órdenes 1–34, incluido Constantinopla380 (ID 34, orden 33); ambas campañas suman 64 borradores, 2.645 pantallas y 398 secundarios. Quedan 214 selecciones sin dossier entre las 278 seleccionadas. d00002/S1 está formalmente `done`; S2–S11 siguen `pending` en el estado recuperado para esta consolidación. Los dossiers siguen sujetos a revisión histórica/editorial, terreno, capacidades nativas y calibración. Las propuestas de autoría histórica continúan bloqueadas; completar un dossier no autoriza a inventar hechos, objetivos o mapas ni acredita juego.
+El corte actual contiene 65 dossiers en borrador, 213 selecciones sin dossier, 2.689 pantallas, 405 objetivos secundarios y 216 objetivos principales sobre 278 selecciones. Incluye un dossier Yavneh añadido al catálogo de odiseas; los cortes fechados anteriores mantienen sus cifras históricas. La revisión histórica/editorial, geografía antigua, terreno, composición nativa y calibración siguen siendo gates separados. Ningún dossier autoriza a inventar hechos, objetivos o mapas ni acredita una partida.
 
 
 Las [nueve biblias de narrador ampliadas](../design/voices/odyssey-narrators.json) fijan biografía ficticia, tono, itinerario, evolución en cinco actos y acceso al conocimiento para cada episodio. La revisión editorial sigue pendiente. El plan de voz no sustituye los dossiers, las fuentes ni la colocación local de las escenas.
 
 
-El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](../design/episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) acompaña ahora el dossier ID 34, orden 33. El dossier y sus materiales de perfil/UI son borradores; el plan de mundo no se presenta como mapa jugado ni concede aprobación histórica o nativa. El catálogo suma 64 borradores y 214 selecciones sin dossier, sin aprobación ampliada de juego.
+El dossier de Sirmio (ID 33, orden 31) y su revisión técnica se integraron oficialmente mediante DelendAI en 559fbc22. El [análisis condicional de preparación](../qa/campaign-design/imperial33-readiness-timing-analysis.md) documenta sensibilidad del plazo difícil a recorridos y velocidades todavía hipotéticos; no acredita un mapa jugable ni nivelación. La [hoja del episodio de Constantinopla](../design/episode-plans/imperial-church/34-church-transfer-constantinople.architect-brief.md) acompaña el dossier ID 34, orden 33. El dossier y sus materiales de perfil/UI son borradores; el plan de mundo no se presenta como mapa jugado ni concede aprobación histórica o nativa. El [corte actual](../handoffs/CURRENT-STATE.md) conserva los contadores vigentes y sus límites.
 
 
 ## Estado sincronizado de arquitectura y piloto — 25 de octubre de 2026
@@ -78,7 +78,7 @@ El servidor confirma i00008/i00009/i00010 cerradas. i00009/S3 está aprobado por
 La ejecución de 400 × 400 posterior incorpora inspección nativa reproducible y recibos enlazados por SHA, con regresiones de fallo de exportación/ZIP. La revisión técnica acotada de MiniMax confirmó las correcciones; no constituye aprobación de todo i00003/S2. Los artefactos privados r2 conservan escenarios originales, catálogos, comandos, logs y revisión, con juego verificado falso.
 
 
-Recopilación visual: se añade un preview del levantamiento de Jerusalén 1864–1865, con fuente, hash, derechos atribuidos y limitación cronológica explícita. El manifiesto suma 50 registros; el catálogo permanece en 64 dossiers / 214 pendientes / 2645 pantallas / 398 secundarios. No se convierten calles o edificios del siglo XIX en huellas del año 70.
+Recopilación visual: el preview del levantamiento de Jerusalén 1864–1865 conserva fuente, hash, derechos atribuidos y limitación cronológica explícita; el manifiesto registra 50 recursos. No se convierten calles o edificios del siglo XIX en huellas del año 70. Los contadores actuales están en [CURRENT-STATE](../handoffs/CURRENT-STATE.md).
 
 ## Prioridad del propietario: primera campaña jugable en paralelo
 
@@ -89,4 +89,4 @@ El 26 de octubre el propietario aclara que el objetivo es avanzar una primera ca
 
 El cambio de prioridad del propietario ya tiene un producto concreto: [Cesarea, apertura de la primera campaña](../handoffs/PRIVATE-CAESAREA-OPENING.md), con tres objetivos principales, seis secundarios y seis variantes EN/es-ES × easy/standard/hard. El código `c55c3bd` se integró en `e443aaaa`; la revisión independiente acotada está integrada en `6e1245e4`. El [recibo](../qa/campaign-design/caesarea-private-opening-build.json) conserva hashes del escenario, contenedor, ZIP por variante y kit privado. Pasan 35 pruebas nativas enfocadas y 158 pruebas Bun, más lectura/escritura y XS de las seis variantes. Ninguna de esas evidencias es una partida en AoE2.
 
-El prototipo no habilita el exportador público v2/v3 ni cierra los slices amplios. Quedan la prueba real de la misión, guardado/carga, rutas, interfaz y calibración; es una apertura civil sin combate ni plazo secreto. Mientras se prueba, el arquitecto diseña el episodio de Jerusalén y el resto de odiseas, MiniMax revisa mecánicamente los borradores existentes con paquete cerrado y Luna aporta investigación/semántica. El [reparto vigente](../handoffs/LLM-WORK-ALLOCATION.md) mantiene 64 dossiers/214 pendientes/2.645 pantallas/398 secundarios/50 referencias; un prototipo y sus seis variantes no crean seis episodios ni una campaña completa.
+El prototipo no habilita el exportador público v2/v3 ni cierra los slices amplios. Quedan la prueba real de la misión, guardado/carga, rutas, interfaz y calibración; es una apertura civil sin combate ni plazo secreto. La dirección vigente y los contadores están en [CURRENT-STATE](../handoffs/CURRENT-STATE.md); seis variantes siguen siendo un solo episodio, no una campaña completa.
