@@ -40,12 +40,12 @@ The synthetic household builder correctly refuses every historical build, so it 
 ### S2 — Reusable private base, strict plan boundary and geographic preview compiler
 - **Status**: pending
 - **DependsOn**: [S1]
-- **Files**: `tools/python/private_household_base.factory.py`, `tools/python/private_native_artifact.service.py`, `tools/python/build_household_episode.script.py`, `tools/python/private_geographic_preview.validator.py`, `tools/python/build_geographic_household_preview.script.py`, `tools/map/geographic_corridor_audit.helper.py`, `tests/fixtures/native-history/test_private_geographic_preview.py`, `tests/maps/test_geographic_corridor_audit.py`
+- **Files**: `tools/python/private_household_base.factory.py`, `tools/python/private_native_artifact.service.py`, `tools/python/build_household_episode.script.py`, `tools/python/private_geographic_preview.validator.py`, `tools/python/build_geographic_household_preview.script.py`, `tools/map/geographic_corridor_audit.helper.py`, `tests/fixtures/native-history/test_private_geographic_preview.py`, `tests/maps/test_geographic_corridor_audit.py`, `tests/maps/geographic-corridor-audit.test.ts`, `tools/cli/native-fixtures.validator.ts`, `tools/cli/chronicles.script.ts`
 - **Gate**: e2e
 - acceptance:
   - "Implement only accepted S1; reuse actual geographic pipeline/native base/controller/signature, no copied world solver or public fallback. Preserve default synthetic semantic signature/XS and all65dossier outputs; keep real plan unauthorized in this implementation slice."
   - "Meaningful accepted artificial fixtures and strict negatives for authorization,unknown keys,bool/nonfinite/out-of-range dimensions/bands,source/hash/CRS/half-cell/grid drift,corridor endcaps/even widths/known water,nodata,unlisted identity/zone/position change,stored evidence flags and input mutation. Derived binding evidence is recomputed; no terrain flattening or source hiding."
-  - "Real native write/reopen/terrain+controller signature and XS pass; bun run validate and test:export plus official gate and different-model review. Never mark a compilation case engine/historical approval."
+  - "Register corridor tests in the Bun gate and native fixture discovery in the existing test:export path, failing empty discovery and reporting actual skips. Real native write/reopen/terrain+controller signature and XS pass; bun run validate and test:export plus official gate and different-model review. Never mark a compilation case engine/historical approval."
 
 ### S3 — Architect-authorized Jerusalem development build and progressive private handback
 - **Status**: pending
