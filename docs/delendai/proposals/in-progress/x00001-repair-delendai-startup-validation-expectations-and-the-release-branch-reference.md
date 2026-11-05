@@ -2,7 +2,7 @@
 id: x00001
 title: "Repair DelendAI startup validation expectations and the release branch reference"
 kind: fix
-status: ready
+status: in-progress
 type: proposal
 track: general
 date: 2026-11-05
@@ -10,6 +10,10 @@ shipped-in:
   - "337b792867c4345d36b1973ad9caf52cff53e0f6"
   - "4c008edcdc7de9c36f22f72d345288981a54bebe"
   - "575617c8c7db1441d78bd6beb8bba88de88ec4e2"
+last-transition-id: 20ba79a9-b0b8-4cad-b610-07c59bff37be
+last-correlation-id: 20ba79a9-b0b8-4cad-b610-07c59bff37be
+last-transition-from: ready
+last-transition-at: 2026-11-05T01:39:18.308Z
 ---
 
 # x00001 — Repair DelendAI startup validation expectations and the release branch reference
@@ -32,7 +36,7 @@ The supplied 5 November boot log reports eight absent official Git guards, missi
 
 ### S1 — Correct the startup contract and verify official guards
 - **Status**: pending
-- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/ready/fixes/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
+- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/in-progress/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
 - **Gate**: type
 
 ## acceptance
