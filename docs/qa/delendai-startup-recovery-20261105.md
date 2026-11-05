@@ -14,3 +14,11 @@ The supplied VSCode log reached running/ready transport but reported a degraded 
 ## Verification boundary
 
 GitHub permission was ADMIN and the main protection response was an explicit absence, not a guessed interpretation of generic404. Both negative API responses were inspected without changing credentials or branch rules. Official guard install succeeded; confirm status after installation. A fresh main-source MCP smoke, installed-schema check, independent scope review and official project gate are required before calling this repair integrated. Archive the actual evidence outside the unit. Existing game playtests, historic approval and campaign counters are unaffected.
+
+## Executed configured-main startup verification
+
+A real MCP client connected to the same cached DelendAI **main** host used by VSCode, with workspace set to the **shared checkout** and `--config` pointing at this unit’s corrected file. The server identifies itself as0.1.0 and its fresh startup reports **READY**, blockers0, repairTasks0, no skipped phases. Overview has no configIssues. The captured log contains neither missing-expect diagnostics nor the nonexistent-master governance blocker. Official guard status reports all eight hooks installed. The launcher file is unchanged.
+
+The first probe mistakenly used the implementation worktree itself as the host workspace. That older main-source startup reconciler interpreted its legitimate isolated work-ref as a moved shared checkout and could not read CI for an unpublished unit commit. That failed setup and its local cache repair record are preserved separately; no shared branch was reset or repaired to hide it. The corrected probe above uses the actual configured canonical workspace. The successful startup does not turn readable unprotected-main into a protected branch or a tested game.
+
+Evidence: `/home/cartago/.codex/artifacts/aoe2-mods/delendai-startup-recovery-20261105/` contains `canonical-main-server-smoke.json`, `canonical-main-server.stderr.log`, the first failed unit probe, and `guard-status.json`. The installed0.3.0 CLI’s doctor also passed before the fix; that generic doctor did not detect the schema warnings and is not substituted for the real main-server startup.
