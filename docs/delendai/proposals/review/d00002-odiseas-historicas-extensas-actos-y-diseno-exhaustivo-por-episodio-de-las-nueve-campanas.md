@@ -119,7 +119,7 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
 - review-log: requested_changes by gpt-6.1-sol — Incomplete delivered scope at 5a6d584e4799: docs/design/odysseys/new-rome.json contains 32 selected episodes but only 0 episodes and 0 episodeBlueprints. Reproduce: git show 5a6d584e4799:docs/design/odysseys/new-rome.json, parse JSON and compare lengths of episodeSelection, episodes and episodeBlueprints. Selection entries alone do not deliver per-episode three difficulty profiles, composed ledgers/events, EN/es screens and plans required by acceptance items1-2. Complete the missing 32 individual dossiers with their sources/cautions/narrator/geography and all required specifications; re-submit evidence before approval. Existing partial work is preserved. This request does not alter S1 done or certify historical/game/native behavior.
 
 ### S7 — Beneath the Desert Stars: expediente de odisea y episodios
-- **Status**: review
+- **Status**: pending
 - **DependsOn**: [S1]
 - **Files**: `docs/design/odysseys/first-caliphs.json`, `docs/wiki/first-caliphs`, `docs/design/maps/first-caliphs`
 - **Gate**: e2e
@@ -128,8 +128,10 @@ El usuario solicita campañas largas comparables en escala a su referencia mod55
   - "Cada episodio especifica tres perfiles, estados/ledgers compuestos, eventos, pantallas EN/es y plano; retos distintos y puntos de inflexión claros, preservando desenlace histórico."
   - "Reusar infraestructura y registrar capacidades faltantes; no aceptar cartas sin destino, familias distintas, alias ni timers sustituyendo hechos."
 - shipped-in: `5a6d584e4799`
-- review-state: in_review
+- review-state: changes_requested
 - review-implementer: minimax-m3.1-flash-preview
+- review-reviewer: gpt-6.1-sol
+- review-log: requested_changes by gpt-6.1-sol — Incomplete delivered scope at e70ace6d8beae5df5625691141bf16226faf0a20: docs/design/odysseys/first-caliphs.json contains 30 selected episodes but only 0 episodes and 0 episodeBlueprints. Reproduce: git show e70ace6d8beae5df5625691141bf16226faf0a20:docs/design/odysseys/first-caliphs.json, parse JSON and compare lengths of episodeSelection, episodes and episodeBlueprints. Selection entries alone do not deliver per-episode three difficulty profiles, composed ledgers/events, EN/es screens and plans required by acceptance items1-2. Complete the missing 30 individual dossiers with their sources/cautions/narrator/geography and all required specifications; re-submit evidence before approval. Existing partial work is preserved. This request does not alter S1 done or certify historical/game/native behavior.
 
 ### S8 — The Shattered Oath: expediente de odisea y episodios
 - **Status**: review
