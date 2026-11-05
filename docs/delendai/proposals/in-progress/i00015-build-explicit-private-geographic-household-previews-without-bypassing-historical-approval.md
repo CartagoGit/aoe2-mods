@@ -2,12 +2,16 @@
 id: i00015
 title: "Build explicit private geographic household previews without bypassing historical approval"
 kind: infra
-status: ready
+status: in-progress
 type: proposal
 track: general
 date: 2026-11-05
 shipped-in:
   - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
+last-transition-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
+last-correlation-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
+last-transition-from: ready
+last-transition-at: 2026-11-05T01:39:33.024Z
 ---
 
 # i00015 — Build explicit private geographic household previews without bypassing historical approval
@@ -30,7 +34,7 @@ The synthetic household builder correctly refuses every historical build, so it 
 
 ### S1 — Architect private preview contract and geographic decisions
 - **Status**: pending
-- **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/ready/infras/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
+- **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/in-progress/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
 - **Gate**: type
 - acceptance:
   - "Define explicit development compilation separately from historical/native/engine approval; preserve synthetic and public-export refusals; no build-before-playtest cycle. Candidate authorization remains false until separately reviewed real S3 inputs."
