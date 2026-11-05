@@ -1,0 +1,5095 @@
+{
+  "audit": "civic difficulty mechanics static comparison of authored expanded dossiers",
+  "architectApproval": false,
+  "readOnly": true,
+  "snapshot": {
+    "date": "2026-10-17",
+    "realIdentity": "gpt-6-luna",
+    "concurrentReadConsistency": {
+      "beforeSha256": {
+        "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+        "docs/design/odysseys/imperial-church.json": "b0af53ba3d75818cd11d079751945e9826cd88339f184fcb08e4effc8f0f3b68"
+      },
+      "afterSha256": {
+        "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+        "docs/design/odysseys/imperial-church.json": "b0af53ba3d75818cd11d079751945e9826cd88339f184fcb08e4effc8f0f3b68"
+      },
+      "unchangedDuringAudit": true
+    },
+    "derivedSnapshotCheck": {
+      "episodes": 62,
+      "screens": 2553,
+      "secondaryObjectives": 384,
+      "matchesCurrent62EpisodeSnapshot": true
+    },
+    "comparisonWith61DossierSnapshot": {
+      "previousReport": "civic-difficulty-mechanical-audit-61-2026-10-17.json",
+      "metricDeltas": {
+        "dossierCount": 1,
+        "staticRiskCandidates": 0,
+        "withFiniteHostiles": 1,
+        "withExplicitStructuredDeadlines": 0,
+        "sameAccessibleBudgetsAcrossDifficulties": 1,
+        "totalMainObjectives": 3,
+        "totalSecondaryObjectives": 7,
+        "totalScreens": 42
+      },
+      "newDossierCount": 1
+    },
+    "finalRefresh": {
+      "date": "2026-10-17",
+      "realIdentity": "gpt-6-luna",
+      "mechanicalDataMatchesPreviousAudit": true,
+      "changedEpisodeKeys": [
+        "imperial-church:32-defeat-and-withdrawal-adrianople (new dossier)"
+      ],
+      "editorialSourceAuditStatusChangeNotPartOfMechanicalFields": true,
+      "readConsistency": true
+    },
+    "architectFollowup": {
+      "realIdentity": "gpt-6",
+      "reason": "Finalized only32hostile offsets and encounter bounds; mechanical counts and budgets unchanged; source fingerprint refreshed after that content change.",
+      "beforeSha256": {
+        "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+        "docs/design/odysseys/imperial-church.json": "b0af53ba3d75818cd11d079751945e9826cd88339f184fcb08e4effc8f0f3b68"
+      },
+      "afterSha256": {
+        "docs/design/odysseys/faith-origins.json": "70248801fb2f737e2dadf0730100ec277b5deac178c65493471c0871e9f8630d",
+        "docs/design/odysseys/imperial-church.json": "b0af53ba3d75818cd11d079751945e9826cd88339f184fcb08e4effc8f0f3b68"
+      },
+      "consistentRead": true
+    }
+  },
+  "scope": {
+    "checkout": "DelendAI architect work unit; snapshot identified by source hashes",
+    "instructionsRead": "Project instructions supplied for this read-only task; source snapshot and prior audit inspected in the architect work unit without repository/Git/DelendAI operations.",
+    "sourceFiles": [
+      "docs/design/odysseys/faith-origins.json",
+      "docs/design/odysseys/imperial-church.json"
+    ],
+    "sourceStructure": "Each campaign JSON has top-level episodes[] containing authored dossier objects, separate from episodeSelection[] and episodeBlueprints[]. Audited episodes[] only.",
+    "campaigns": [
+      "faith-origins",
+      "imperial-church"
+    ],
+    "dossiersAudited": 62,
+    "coverage": "All current faith-origins and imperial-church episodes[] dossiers at the recorded source hashes; other campaigns and selections without dossiers excluded.",
+    "fieldMethod": {
+      "enemyCount": "enemyTotalCap per easy/standard/hard; cross-checked worldContract.entities roles containing hostile/enemy. scheduledWaveCount sums authored difficulty waves if present.",
+      "deadline": "Positive structured fields with deadline/timeLimit/countdown/expires/clock keys, excluding neverUseTimerInstead, roughDurationMinutes and release warning/offset fields. NeverUseTimerInstead is a prohibition, not an authored deadline.",
+      "riskRule": "Flag if there are no structured finite hostiles, no explicit deadline field, and accessibleWithoutOptionalRewards is identical for all three difficulties.",
+      "resources": "Exact accessibleWithoutOptionalRewards dictionaries per difficulty.",
+      "objectives": "Counts objectivePlan[] as main and secondaryObjectives[] as optional; predicate kinds are context only."
+    },
+    "limits": [
+      "Static schema/content inspection only; not proof of boredom, difficulty, playability, balance or engagement.",
+      "Task routing, resource gathering, ordered departure, distinct receipts, transport journeys, loss rules and optional opportunity costs can create decisions without combat or a deadline; they are listed as predicate kinds but not scored as equivalent to active opposition.",
+      "roughDurationMinutes is a planning estimate, not a hard deadline. Authored enemy specifications are not evidence of AoE2 implementation or playtesting.",
+      "No redesign, solutions or architectural approval."
+    ]
+  },
+  "counts": {
+    "dossierCount": 62,
+    "byCampaign": {
+      "faith-origins": 30,
+      "imperial-church": 32
+    },
+    "staticRiskCandidates": 54,
+    "staticRiskCandidatesByCampaign": {
+      "faith-origins": 29,
+      "imperial-church": 25
+    },
+    "withFiniteHostiles": 8,
+    "withExplicitStructuredDeadlines": 0,
+    "sameAccessibleBudgetsAcrossDifficulties": 62,
+    "totalMainObjectives": 212,
+    "totalSecondaryObjectives": 384,
+    "totalScreens": 2553
+  },
+  "staticRiskEpisodes": [
+    {
+      "campaign": "faith-origins",
+      "order": 1,
+      "episodeId": "01-administrative-records-caesarea"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 2,
+      "episodeId": "02-civilian-refuge-jerusalem"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 3,
+      "episodeId": "03-shared-provision-jerusalem"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 4,
+      "episodeId": "04-testimony-relay-damascus"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 5,
+      "episodeId": "05-witness-comparison-jerusalem"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 6,
+      "episodeId": "01-roads-of-antioch"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 7,
+      "episodeId": "07-household-relocation-rome-ostia"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 8,
+      "episodeId": "08-delegate-logistics-jerusalem"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 9,
+      "episodeId": "09-district-production-corinth"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 10,
+      "episodeId": "10-copy-and-relay-corinth"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 11,
+      "episodeId": "11-distributed-preservation-ephesus"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 12,
+      "episodeId": "12-bounded-community-aid-ephesus"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 13,
+      "episodeId": "13-consignment-and-correspondence-corinth"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 14,
+      "episodeId": "14-administrative-intrigue-caesarea"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 15,
+      "episodeId": "15-evacuation-and-recovery-rome-ostia"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 16,
+      "episodeId": "16-comparative-copying-antioch"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 18,
+      "episodeId": "18-parallel-archive-logistics-antioch"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 19,
+      "episodeId": "19-hospitality-network-antioch"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 20,
+      "episodeId": "20-reconciliation-deliveries-rome-ostia"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 21,
+      "episodeId": "03-the-governors-question"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 22,
+      "episodeId": "22-reading-and-relief-rome-ostia"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 23,
+      "episodeId": "23-petition-escort-sardes"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 24,
+      "episodeId": "24-witness-and-evacuation-lyon"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 25,
+      "episodeId": "25-archive-comparison-lyon"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 26,
+      "episodeId": "26-legal-record-network-carthage"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 27,
+      "episodeId": "27-household-aid-and-memory-carthage"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 28,
+      "episodeId": "28-certificate-and-refuge-egypt-middle-nile"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 29,
+      "episodeId": "29-bounded-evacuation-carthage"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 30,
+      "episodeId": "04-a-different-dawn"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 2,
+      "episodeId": "02-bounded-negotiation-milan"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 3,
+      "episodeId": "03-property-and-record-restoration-nicomedia"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 4,
+      "episodeId": "04-rival-delegation-reception-rome-ostia"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 5,
+      "episodeId": "05-delegate-logistics-arles"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 7,
+      "episodeId": "07-court-record-logistics-rome-ostia"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 9,
+      "episodeId": "10-land-and-strait-logistics-chrysopolis"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 10,
+      "episodeId": "08-disputed-correspondence-alexandria"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 11,
+      "episodeId": "11-council-record-escort-antioch"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 12,
+      "episodeId": "02-nicaea"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 13,
+      "episodeId": "13-finite-works-logistics-jerusalem"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 14,
+      "episodeId": "03-new-capital"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 15,
+      "episodeId": "15-long-distance-dispatch-nicomedia"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 16,
+      "episodeId": "16-witness-record-comparison-tyre"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 17,
+      "episodeId": "17-rumour-and-source-investigation-constantinople"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 18,
+      "episodeId": "18-administrative-transition-nicomedia"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 20,
+      "episodeId": "20-separate-reception-logistics-sardica"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 21,
+      "episodeId": "21-returning-households-escort-alexandria"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 22,
+      "episodeId": "22-civilian-record-preservation-milan"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 23,
+      "episodeId": "23-bounded-political-pressure-milan"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 25,
+      "episodeId": "25-delegate-and-draft-network-rimini"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 26,
+      "episodeId": "26-plural-civic-logistics-constantinople"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 27,
+      "episodeId": "27-return-and-departure-records-alexandria"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 28,
+      "episodeId": "30-policy-reversal-alexandria"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 32,
+      "episodeId": "28-law-and-local-reception-thessalonica"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 34,
+      "episodeId": "29-council-and-final-perspective-constantinople"
+    }
+  ],
+  "episodes": [
+    {
+      "campaign": "faith-origins",
+      "order": 1,
+      "episodeId": "01-administrative-records-caesarea",
+      "coreMechanic": "administrative-records",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 2,
+      "episodeId": "02-civilian-refuge-jerusalem",
+      "coreMechanic": "civilian-refuge",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 3,
+      "episodeId": "03-shared-provision-jerusalem",
+      "coreMechanic": "shared-provision",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1230,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1230,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1230,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 4,
+      "episodeId": "04-testimony-relay-damascus",
+      "coreMechanic": "testimony-relay",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 5,
+      "episodeId": "05-witness-comparison-jerusalem",
+      "coreMechanic": "witness-comparison",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 710,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 710,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 710,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 6,
+      "episodeId": "01-roads-of-antioch",
+      "coreMechanic": "network-escort",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 7,
+      "episodeId": "07-household-relocation-rome-ostia",
+      "coreMechanic": "household-relocation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1350,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1350,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1350,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 8,
+      "episodeId": "08-delegate-logistics-jerusalem",
+      "coreMechanic": "delegate-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 9,
+      "episodeId": "09-district-production-corinth",
+      "coreMechanic": "district-production",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 340,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 340,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 340,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 10,
+      "episodeId": "10-copy-and-relay-corinth",
+      "coreMechanic": "copy-and-relay",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 11,
+      "episodeId": "11-distributed-preservation-ephesus",
+      "coreMechanic": "distributed-preservation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 12,
+      "episodeId": "12-bounded-community-aid-ephesus",
+      "coreMechanic": "bounded-community-aid",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 13,
+      "episodeId": "13-consignment-and-correspondence-corinth",
+      "coreMechanic": "consignment-and-correspondence",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 740,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 740,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 740,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 14,
+      "episodeId": "14-administrative-intrigue-caesarea",
+      "coreMechanic": "administrative-intrigue",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 15,
+      "episodeId": "15-evacuation-and-recovery-rome-ostia",
+      "coreMechanic": "evacuation-and-recovery",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 16,
+      "episodeId": "16-comparative-copying-antioch",
+      "coreMechanic": "comparative-copying",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 17,
+      "episodeId": "02-after-the-siege",
+      "coreMechanic": "civilian-evacuation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 6,
+        "standard": 10,
+        "hard": 14
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 14,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 6,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 10,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 14,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 18,
+      "episodeId": "18-parallel-archive-logistics-antioch",
+      "coreMechanic": "parallel-archive-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 19,
+      "episodeId": "19-hospitality-network-antioch",
+      "coreMechanic": "hospitality-network",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 20,
+      "episodeId": "20-reconciliation-deliveries-rome-ostia",
+      "coreMechanic": "reconciliation-deliveries",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 740,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 21,
+      "episodeId": "03-the-governors-question",
+      "coreMechanic": "administrative-intrigue",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 720,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 22,
+      "episodeId": "22-reading-and-relief-rome-ostia",
+      "coreMechanic": "reading-and-relief",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 680,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 23,
+      "episodeId": "23-petition-escort-sardes",
+      "coreMechanic": "petition-escort",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 24,
+      "episodeId": "24-witness-and-evacuation-lyon",
+      "coreMechanic": "witness-and-evacuation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 25,
+      "episodeId": "25-archive-comparison-lyon",
+      "coreMechanic": "archive-comparison",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 26,
+      "episodeId": "26-legal-record-network-carthage",
+      "coreMechanic": "legal-record-network",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 27,
+      "episodeId": "27-household-aid-and-memory-carthage",
+      "coreMechanic": "household-aid-and-memory",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 28,
+      "episodeId": "28-certificate-and-refuge-egypt-middle-nile",
+      "coreMechanic": "certificate-and-refuge",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1270,
+            "wood": 760,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 29,
+      "episodeId": "29-bounded-evacuation-carthage",
+      "coreMechanic": "bounded-evacuation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 780,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "faith-origins",
+      "order": 30,
+      "episodeId": "04-a-different-dawn",
+      "coreMechanic": "supply-and-testimony",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 1,
+      "episodeId": "01-milvian-bridge",
+      "coreMechanic": "river-battle",
+      "enemyTotalCapByDifficulty": {
+        "easy": 16,
+        "standard": 26,
+        "hard": 36
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 36,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 16,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2550,
+            "wood": 1350,
+            "gold": 950,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 26,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2550,
+            "wood": 1350,
+            "gold": 950,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 36,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2550,
+            "wood": 1350,
+            "gold": 950,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 2,
+      "episodeId": "02-bounded-negotiation-milan",
+      "coreMechanic": "bounded-negotiation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 3,
+      "episodeId": "03-property-and-record-restoration-nicomedia",
+      "coreMechanic": "property-and-record-restoration",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 800,
+            "gold": 330,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 4,
+      "episodeId": "04-rival-delegation-reception-rome-ostia",
+      "coreMechanic": "rival-delegation-reception",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 330,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 780,
+            "gold": 330,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 5,
+      "episodeId": "05-delegate-logistics-arles",
+      "coreMechanic": "delegate-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 860,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 860,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1430,
+            "wood": 860,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 6,
+      "episodeId": "06-finite-field-withdrawal-cibalae",
+      "coreMechanic": "finite-field-withdrawal",
+      "enemyTotalCapByDifficulty": {
+        "easy": 18,
+        "standard": 28,
+        "hard": 40
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 40,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 18,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2250,
+            "wood": 1200,
+            "gold": 800,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 28,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2250,
+            "wood": 1200,
+            "gold": 800,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 40,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2250,
+            "wood": 1200,
+            "gold": 800,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 7,
+      "episodeId": "07-court-record-logistics-rome-ostia",
+      "coreMechanic": "court-record-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 8,
+      "episodeId": "09-crossing-and-supply-adrianople",
+      "coreMechanic": "crossing-and-supply",
+      "enemyTotalCapByDifficulty": {
+        "easy": 12,
+        "standard": 20,
+        "hard": 28
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 28,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction",
+          "transport-journey"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 12,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2050,
+            "wood": 1220,
+            "gold": 700,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 20,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2050,
+            "wood": 1220,
+            "gold": 700,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 28,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 2050,
+            "wood": 1220,
+            "gold": 700,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 9,
+      "episodeId": "10-land-and-strait-logistics-chrysopolis",
+      "coreMechanic": "land-and-strait-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "entity-state",
+          "resource-transaction",
+          "transport-journey"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1320,
+            "wood": 860,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1320,
+            "wood": 860,
+            "gold": 290,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1320,
+            "wood": 860,
+            "gold": 290,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 10,
+      "episodeId": "08-disputed-correspondence-alexandria",
+      "coreMechanic": "disputed-correspondence",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 310,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 760,
+            "gold": 310,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 11,
+      "episodeId": "11-council-record-escort-antioch",
+      "coreMechanic": "council-record-escort",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 12,
+      "episodeId": "02-nicaea",
+      "coreMechanic": "delegate-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 770,
+            "gold": 320,
+            "stone": 100
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 13,
+      "episodeId": "13-finite-works-logistics-jerusalem",
+      "coreMechanic": "finite-works-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 920,
+            "gold": 330,
+            "stone": 300
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 920,
+            "gold": 330,
+            "stone": 300
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 920,
+            "gold": 330,
+            "stone": 300
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 14,
+      "episodeId": "03-new-capital",
+      "coreMechanic": "urban-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1140,
+            "wood": 780,
+            "gold": 270,
+            "stone": 300
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1140,
+            "wood": 780,
+            "gold": 270,
+            "stone": 300
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1140,
+            "wood": 780,
+            "gold": 270,
+            "stone": 300
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 15,
+      "episodeId": "15-long-distance-dispatch-nicomedia",
+      "coreMechanic": "long-distance-dispatch",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 730,
+            "gold": 290,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 730,
+            "gold": 290,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 730,
+            "gold": 290,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 16,
+      "episodeId": "16-witness-record-comparison-tyre",
+      "coreMechanic": "witness-record-comparison",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 830,
+            "gold": 300,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 830,
+            "gold": 300,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 830,
+            "gold": 300,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 17,
+      "episodeId": "17-rumour-and-source-investigation-constantinople",
+      "coreMechanic": "rumour-and-source-investigation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 760,
+            "gold": 280,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 760,
+            "gold": 280,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1020,
+            "wood": 760,
+            "gold": 280,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 18,
+      "episodeId": "18-administrative-transition-nicomedia",
+      "coreMechanic": "administrative-transition",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 750,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 750,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 750,
+            "gold": 260,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 19,
+      "episodeId": "19-competing-dispatches-constantinople",
+      "coreMechanic": "competing-dispatches",
+      "enemyTotalCapByDifficulty": {
+        "easy": 16,
+        "standard": 24,
+        "hard": 32
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 32,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 16,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1100,
+            "wood": 750,
+            "gold": 250,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 24,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1100,
+            "wood": 750,
+            "gold": 250,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 32,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1100,
+            "wood": 750,
+            "gold": 250,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 20,
+      "episodeId": "20-separate-reception-logistics-sardica",
+      "coreMechanic": "separate-reception-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 8,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1240,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 21,
+      "episodeId": "21-returning-households-escort-alexandria",
+      "coreMechanic": "returning-households-escort",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1520,
+            "wood": 740,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1520,
+            "wood": 740,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1520,
+            "wood": 740,
+            "gold": 260,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 22,
+      "episodeId": "22-civilian-record-preservation-milan",
+      "coreMechanic": "civilian-record-preservation",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "current-entity-presence",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 860,
+            "gold": 260,
+            "stone": 260
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 860,
+            "gold": 260,
+            "stone": 260
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1370,
+            "wood": 860,
+            "gold": 260,
+            "stone": 260
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 23,
+      "episodeId": "23-bounded-political-pressure-milan",
+      "coreMechanic": "bounded-political-pressure",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 800,
+            "gold": 300,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 800,
+            "gold": 300,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 800,
+            "gold": 300,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 24,
+      "episodeId": "24-night-civilian-withdrawal-alexandria",
+      "coreMechanic": "night-civilian-withdrawal",
+      "enemyTotalCapByDifficulty": {
+        "easy": 16,
+        "standard": 22,
+        "hard": 28
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 28,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 16,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1340,
+            "wood": 740,
+            "gold": 240,
+            "stone": 180
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 22,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1340,
+            "wood": 740,
+            "gold": 240,
+            "stone": 180
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 28,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1340,
+            "wood": 740,
+            "gold": 240,
+            "stone": 180
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 25,
+      "episodeId": "25-delegate-and-draft-network-rimini",
+      "coreMechanic": "delegate-and-draft-network",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1190,
+            "wood": 720,
+            "gold": 260,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 26,
+      "episodeId": "26-plural-civic-logistics-constantinople",
+      "coreMechanic": "plural-civic-logistics",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "area-state",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1330,
+            "wood": 880,
+            "gold": 210,
+            "stone": 240
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1330,
+            "wood": 880,
+            "gold": 210,
+            "stone": 240
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1330,
+            "wood": 880,
+            "gold": 210,
+            "stone": 240
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 27,
+      "episodeId": "27-return-and-departure-records-alexandria",
+      "coreMechanic": "return-and-departure-records",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 980,
+            "gold": 250,
+            "stone": 160
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 980,
+            "gold": 250,
+            "stone": 160
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1390,
+            "wood": 980,
+            "gold": 250,
+            "stone": 160
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 28,
+      "episodeId": "30-policy-reversal-alexandria",
+      "coreMechanic": "policy-reversal-and-discreet-support",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 860,
+            "gold": 210,
+            "stone": 140
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 860,
+            "gold": 210,
+            "stone": 140
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1310,
+            "wood": 860,
+            "gold": 210,
+            "stone": 140
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 29,
+      "episodeId": "31-contested-succession-alexandria",
+      "coreMechanic": "contested-succession-and-local-continuity",
+      "enemyTotalCapByDifficulty": {
+        "easy": 8,
+        "standard": 14,
+        "hard": 20
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 20,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 8,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 14,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 20,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1410,
+            "wood": 840,
+            "gold": 230,
+            "stone": 140
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 30,
+      "episodeId": "32-defeat-and-withdrawal-adrianople",
+      "coreMechanic": "finite-post-defeat-withdrawal",
+      "enemyTotalCapByDifficulty": {
+        "easy": 8,
+        "standard": 14,
+        "hard": 22
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 22,
+      "pressureMechanism": {
+        "finiteHostilesPresent": true,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "current-entity-presence",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 7,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 8,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 640,
+            "gold": 210,
+            "stone": 120
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 14,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 640,
+            "gold": 210,
+            "stone": 120
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 22,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1070,
+            "wood": 640,
+            "gold": 210,
+            "stone": 120
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": false,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 32,
+      "episodeId": "28-law-and-local-reception-thessalonica",
+      "coreMechanic": "law-and-local-reception",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "ordered-departure",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 4,
+      "secondaryObjectiveCount": 8,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1170,
+            "wood": 900,
+            "gold": 260,
+            "stone": 140
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    },
+    {
+      "campaign": "imperial-church",
+      "order": 34,
+      "episodeId": "29-council-and-final-perspective-constantinople",
+      "coreMechanic": "council-and-final-perspective",
+      "enemyTotalCapByDifficulty": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "enemyScheduledReleaseCounts": {
+        "easy": 0,
+        "standard": 0,
+        "hard": 0
+      },
+      "hostileRoleEntityCount": 0,
+      "pressureMechanism": {
+        "finiteHostilesPresent": false,
+        "explicitStructuredDeadlinePresent": false,
+        "deadlineFields": [],
+        "otherMainPredicateKinds": [
+          "derived-token",
+          "entity-state",
+          "resource-transaction"
+        ],
+        "otherSecondaryPredicateKinds": [
+          "atomic-payment",
+          "entity-arrival",
+          "entity-health",
+          "visit-zones"
+        ]
+      },
+      "mainObjectiveCount": 3,
+      "secondaryObjectiveCount": 6,
+      "difficulty": {
+        "easy": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 12,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        },
+        "standard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 9,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        },
+        "hard": {
+          "enemyTotalCap": 0,
+          "initialEnemy": null,
+          "scheduledWaveCount": 0,
+          "maxVillagers": 6,
+          "accessibleWithoutOptionalRewards": {
+            "food": 1250,
+            "wood": 940,
+            "gold": 260,
+            "stone": 220
+          }
+        }
+      },
+      "accessibleBudgetSameAcrossDifficulties": true,
+      "staticRiskCandidate": true,
+      "staticRiskRule": "flag iff no structured finite hostile cap/entity, no explicit structured deadline field, and accessibleWithoutOptionalRewards is identical across easy/standard/hard"
+    }
+  ],
+  "generatedFromReadOnlyFiles": true
+}

@@ -1,0 +1,3294 @@
+{
+  "classification": "architect documentary world candidate; not executable schema/profile, full dossier or approved map",
+  "author": "gpt-6",
+  "date": "2026-10-27",
+  "proposal": "d00002",
+  "slice": "S4",
+  "campaignId": "jewish-tradition",
+  "episodeId": "02-refuge-and-school-supply-yavneh",
+  "displayOrder": 2,
+  "mechanicalAuthoringAssignment": "f00005/S8 remains blocked",
+  "title": {
+    "en": "A School without Walls",
+    "es-ES": "Una escuela sin murallas"
+  },
+  "dateFrame": "c.70–80 CE",
+  "historicalBoundary": "ordinary voluntary civilian fiction in inland Yavneh; cannot found a canon-closing council, manufacture historical academy footprint, transfer previous households or cause religious belief",
+  "narrator": {
+    "id": "judith-copyist",
+    "birthYearApprox": 355,
+    "deathYearApprox": 435,
+    "mode": "inherited-account only; not eyewitness to70–80 or to later Babylonian Talmud redaction",
+    "commonNarratorFirst": true
+  },
+  "sourceInputs": [
+    {
+      "path": "docs/design/odysseys/jewish-tradition.json",
+      "sha256": "2531c1fdea1ea400d620aeb507ef87f430053e3172208f3896a608b6a764d5a5"
+    },
+    {
+      "path": "docs/design/voices/odyssey-narrators.json",
+      "sha256": "9c8aeddc7e8ac05a75824797f5754efdcdf853ee98384014f972f1a2ee84c01f"
+    },
+    {
+      "path": "docs/wiki/jewish-tradition/research/yavneh-allocation-decision.json",
+      "sha256": "80ec2b2bfe683f5c116f7bc082df801a5f308b9db3860018dc554ddf82c12f47"
+    },
+    {
+      "path": "tools/map/geographic_frame.helper.py",
+      "sha256": "05ef18a14d47c7691d94d31626e3ac2e6d6fc53748aeaf2b0e316472545dde70"
+    },
+    {
+      "path": "tools/design/episode_dossier.factory.py",
+      "sha256": "6a3783043099e4e8f4c48e7e7215765d4ecdb8f6f3f22fca0132dce9ecf64bb7"
+    }
+  ],
+  "map": {
+    "sizeTiles": 400,
+    "bbox": [
+      34.714,
+      31.846,
+      34.755,
+      31.884
+    ],
+    "bboxPurpose": "local400 frame inside the larger candidate district in allocation decision; includes printed IAA Fig2 control extent; not a canonical regional profile",
+    "geographyId": "yavneh",
+    "canonicalProfileExists": false,
+    "sampleCentreExtent": [
+      34.70944390442437,
+      31.84372,
+      34.759556095575626,
+      31.886280000000003
+    ],
+    "outerCellExtent": [
+      34.70938110719235,
+      31.843666666666667,
+      34.759618892807644,
+      31.886333333333337
+    ],
+    "projection": "existing geographic_frame.helper.py; cosine-corrected longitude and padded square, north-up",
+    "watercourse": [],
+    "elevation": null,
+    "ancientTerrainApproved": false,
+    "places": [
+      {
+        "id": "starting-court",
+        "lonLat": [
+          34.736,
+          31.859
+        ],
+        "tile": [
+          211.44,
+          255.75
+        ],
+        "name": {
+          "en": "The Shared Ledger",
+          "es-ES": "El registro compartido"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "hearth-work",
+        "lonLat": [
+          34.739,
+          31.861
+        ],
+        "tile": [
+          235.33,
+          237.0
+        ],
+        "name": {
+          "en": "The Local Hearth",
+          "es-ES": "El fogón local"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "meal-court",
+        "lonLat": [
+          34.741,
+          31.8635
+        ],
+        "tile": [
+          251.25,
+          213.56
+        ],
+        "name": {
+          "en": "The Neighbors’ Table",
+          "es-ES": "La mesa de los vecinos"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "timber-work",
+        "lonLat": [
+          34.732,
+          31.8665
+        ],
+        "tile": [
+          179.59,
+          185.44
+        ],
+        "name": {
+          "en": "The Timber Bench",
+          "es-ES": "El banco de madera"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "built-meeting-court",
+        "lonLat": [
+          34.738,
+          31.869
+        ],
+        "tile": [
+          227.37,
+          162.0
+        ],
+        "name": {
+          "en": "The Prepared Meeting Court",
+          "es-ES": "El patio preparado para reunirse"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "host-work",
+        "lonLat": [
+          34.73,
+          31.855
+        ],
+        "tile": [
+          163.67,
+          293.25
+        ],
+        "name": {
+          "en": "The Host’s Preparation Yard",
+          "es-ES": "El patio de preparación del anfitrión"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "host-meeting-court",
+        "lonLat": [
+          34.733,
+          31.853
+        ],
+        "tile": [
+          187.56,
+          312.0
+        ],
+        "name": {
+          "en": "The Offered Room",
+          "es-ES": "La estancia ofrecida"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "materials-work",
+        "lonLat": [
+          34.741,
+          31.858
+        ],
+        "tile": [
+          251.25,
+          265.13
+        ],
+        "name": {
+          "en": "The Local Working Bench",
+          "es-ES": "La mesa de trabajo local"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "reader-court",
+        "lonLat": [
+          34.7425,
+          31.8657
+        ],
+        "tile": [
+          263.2,
+          192.94
+        ],
+        "name": {
+          "en": "The Reading Cloth",
+          "es-ES": "El paño de lectura"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "merchant-work",
+        "lonLat": [
+          34.7205,
+          31.862
+        ],
+        "tile": [
+          88.03,
+          227.63
+        ],
+        "name": {
+          "en": "The Western Trader",
+          "es-ES": "El comerciante occidental"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "western-junction",
+        "lonLat": [
+          34.726,
+          31.862
+        ],
+        "tile": [
+          131.82,
+          227.63
+        ],
+        "name": {
+          "en": "The Western Junction",
+          "es-ES": "El cruce occidental"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "northern-junction",
+        "lonLat": [
+          34.731,
+          31.871
+        ],
+        "tile": [
+          171.63,
+          143.25
+        ],
+        "name": {
+          "en": "The Northern Turn",
+          "es-ES": "El recodo del norte"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "aid-pickup",
+        "lonLat": [
+          34.723,
+          31.871
+        ],
+        "tile": [
+          107.94,
+          143.25
+        ],
+        "name": {
+          "en": "The Waiting Aid",
+          "es-ES": "La ayuda que espera"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "aid-court",
+        "lonLat": [
+          34.738,
+          31.875
+        ],
+        "tile": [
+          227.37,
+          105.75
+        ],
+        "name": {
+          "en": "The Northern Household",
+          "es-ES": "El hogar del norte"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "record-west",
+        "lonLat": [
+          34.718,
+          31.856
+        ],
+        "tile": [
+          68.12,
+          283.88
+        ],
+        "name": {
+          "en": "The Western Working Record",
+          "es-ES": "La anotación de trabajo occidental"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "record-north",
+        "lonLat": [
+          34.726,
+          31.879
+        ],
+        "tile": [
+          131.82,
+          68.25
+        ],
+        "name": {
+          "en": "The Northern Working Record",
+          "es-ES": "La anotación de trabajo del norte"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "repair-yard",
+        "lonLat": [
+          34.734,
+          31.876
+        ],
+        "tile": [
+          195.52,
+          96.38
+        ],
+        "name": {
+          "en": "The Damaged Store",
+          "es-ES": "El almacén dañado"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "trade-pickup",
+        "lonLat": [
+          34.7165,
+          31.868
+        ],
+        "tile": [
+          56.18,
+          171.38
+        ],
+        "name": {
+          "en": "The Visiting Trader",
+          "es-ES": "El comerciante visitante"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "trade-court",
+        "lonLat": [
+          34.736,
+          31.85
+        ],
+        "tile": [
+          211.44,
+          340.13
+        ],
+        "name": {
+          "en": "The Southern Receiving Yard",
+          "es-ES": "El patio receptor del sur"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "guide-pickup",
+        "lonLat": [
+          34.722,
+          31.852
+        ],
+        "tile": [
+          99.97,
+          321.38
+        ],
+        "name": {
+          "en": "The Waiting Guide",
+          "es-ES": "El guía que espera"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "guest-pickup",
+        "lonLat": [
+          34.719,
+          31.881
+        ],
+        "tile": [
+          76.09,
+          49.5
+        ],
+        "name": {
+          "en": "The Guest Household",
+          "es-ES": "El hogar invitado"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      },
+      {
+        "id": "guest-court",
+        "lonLat": [
+          34.728,
+          31.848
+        ],
+        "tile": [
+          147.75,
+          358.88
+        ],
+        "name": {
+          "en": "The Additional Hearth",
+          "es-ES": "El fogón adicional"
+        },
+        "zoneRadiusTiles": 2,
+        "classification": "fictional activity-site candidate; no excavated parcel or approved native terrain"
+      }
+    ],
+    "corridors": [
+      {
+        "id": "path-starting-court-to-hearth-work",
+        "from": "starting-court",
+        "to": "hearth-work",
+        "bidirectional": true,
+        "points": [
+          [
+            211.44,
+            255.75
+          ],
+          [
+            235.33,
+            237.0
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 30.36930358108333,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-hearth-work-to-meal-court",
+        "from": "hearth-work",
+        "to": "meal-court",
+        "bidirectional": true,
+        "points": [
+          [
+            235.33,
+            237.0
+          ],
+          [
+            251.25,
+            213.56
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 28.33513719747973,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-meal-court-to-reader-court",
+        "from": "meal-court",
+        "to": "reader-court",
+        "bidirectional": true,
+        "points": [
+          [
+            251.25,
+            213.56
+          ],
+          [
+            263.2,
+            192.94
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 23.83247574214647,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-reader-court-to-built-meeting-court",
+        "from": "reader-court",
+        "to": "built-meeting-court",
+        "bidirectional": true,
+        "points": [
+          [
+            263.2,
+            192.94
+          ],
+          [
+            227.37,
+            162.0
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 47.33996725812132,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-built-meeting-court-to-timber-work",
+        "from": "built-meeting-court",
+        "to": "timber-work",
+        "bidirectional": true,
+        "points": [
+          [
+            227.37,
+            162.0
+          ],
+          [
+            179.59,
+            185.44
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 53.21993987219452,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-timber-work-to-western-junction",
+        "from": "timber-work",
+        "to": "western-junction",
+        "bidirectional": true,
+        "points": [
+          [
+            179.59,
+            185.44
+          ],
+          [
+            131.82,
+            227.63
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 63.73357827707464,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-western-junction-to-starting-court",
+        "from": "western-junction",
+        "to": "starting-court",
+        "bidirectional": true,
+        "points": [
+          [
+            131.82,
+            227.63
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 84.43979393627154,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-starting-court-to-materials-work",
+        "from": "starting-court",
+        "to": "materials-work",
+        "bidirectional": true,
+        "points": [
+          [
+            211.44,
+            255.75
+          ],
+          [
+            251.25,
+            265.13
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 40.90012836165676,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-materials-work-to-reader-court",
+        "from": "materials-work",
+        "to": "reader-court",
+        "bidirectional": true,
+        "points": [
+          [
+            251.25,
+            265.13
+          ],
+          [
+            263.2,
+            192.94
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 73.172389601543,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-starting-court-to-host-work",
+        "from": "starting-court",
+        "to": "host-work",
+        "bidirectional": true,
+        "points": [
+          [
+            211.44,
+            255.75
+          ],
+          [
+            163.67,
+            293.25
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 60.73074098016589,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-host-work-to-host-meeting-court",
+        "from": "host-work",
+        "to": "host-meeting-court",
+        "bidirectional": true,
+        "points": [
+          [
+            163.67,
+            293.25
+          ],
+          [
+            187.56,
+            312.0
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 30.36930358108333,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-host-meeting-court-to-trade-court",
+        "from": "host-meeting-court",
+        "to": "trade-court",
+        "bidirectional": true,
+        "points": [
+          [
+            187.56,
+            312.0
+          ],
+          [
+            211.44,
+            340.13
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 36.89920459847339,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-host-work-to-guest-court",
+        "from": "host-work",
+        "to": "guest-court",
+        "bidirectional": true,
+        "points": [
+          [
+            163.67,
+            293.25
+          ],
+          [
+            147.75,
+            358.88
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 67.53327550178504,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-guest-court-to-guide-pickup",
+        "from": "guest-court",
+        "to": "guide-pickup",
+        "bidirectional": true,
+        "points": [
+          [
+            147.75,
+            358.88
+          ],
+          [
+            99.97,
+            321.38
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 60.73860716216664,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-guide-pickup-to-record-west",
+        "from": "guide-pickup",
+        "to": "record-west",
+        "bidirectional": true,
+        "points": [
+          [
+            99.97,
+            321.38
+          ],
+          [
+            68.12,
+            283.88
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 49.20033028344423,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-record-west-to-merchant-work",
+        "from": "record-west",
+        "to": "merchant-work",
+        "bidirectional": true,
+        "points": [
+          [
+            68.12,
+            283.88
+          ],
+          [
+            88.03,
+            227.63
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 59.66967906734542,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-merchant-work-to-western-junction",
+        "from": "merchant-work",
+        "to": "western-junction",
+        "bidirectional": true,
+        "points": [
+          [
+            88.03,
+            227.63
+          ],
+          [
+            131.82,
+            227.63
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 43.78999999999999,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-merchant-work-to-trade-pickup",
+        "from": "merchant-work",
+        "to": "trade-pickup",
+        "bidirectional": true,
+        "points": [
+          [
+            88.03,
+            227.63
+          ],
+          [
+            56.18,
+            171.38
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 64.64120203090286,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-trade-pickup-to-aid-pickup",
+        "from": "trade-pickup",
+        "to": "aid-pickup",
+        "bidirectional": true,
+        "points": [
+          [
+            56.18,
+            171.38
+          ],
+          [
+            107.94,
+            143.25
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 58.91005432012433,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-aid-pickup-to-northern-junction",
+        "from": "aid-pickup",
+        "to": "northern-junction",
+        "bidirectional": true,
+        "points": [
+          [
+            107.94,
+            143.25
+          ],
+          [
+            171.63,
+            143.25
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 63.69,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-northern-junction-to-timber-work",
+        "from": "northern-junction",
+        "to": "timber-work",
+        "bidirectional": true,
+        "points": [
+          [
+            171.63,
+            143.25
+          ],
+          [
+            179.59,
+            185.44
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 42.934341732464,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-northern-junction-to-record-north",
+        "from": "northern-junction",
+        "to": "record-north",
+        "bidirectional": true,
+        "points": [
+          [
+            171.63,
+            143.25
+          ],
+          [
+            131.82,
+            68.25
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 84.91075373590792,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-record-north-to-guest-pickup",
+        "from": "record-north",
+        "to": "guest-pickup",
+        "bidirectional": true,
+        "points": [
+          [
+            131.82,
+            68.25
+          ],
+          [
+            76.09,
+            49.5
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 58.79962074707624,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-guest-pickup-to-aid-court",
+        "from": "guest-pickup",
+        "to": "aid-court",
+        "bidirectional": true,
+        "points": [
+          [
+            76.09,
+            49.5
+          ],
+          [
+            227.37,
+            105.75
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 161.39919733381575,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-aid-court-to-repair-yard",
+        "from": "aid-court",
+        "to": "repair-yard",
+        "bidirectional": true,
+        "points": [
+          [
+            227.37,
+            105.75
+          ],
+          [
+            195.52,
+            96.38
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 33.19968975758659,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-repair-yard-to-northern-junction",
+        "from": "repair-yard",
+        "to": "northern-junction",
+        "bidirectional": true,
+        "points": [
+          [
+            195.52,
+            96.38
+          ],
+          [
+            171.63,
+            143.25
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 52.607309378070276,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      },
+      {
+        "id": "path-aid-court-to-built-meeting-court",
+        "from": "aid-court",
+        "to": "built-meeting-court",
+        "bidirectional": true,
+        "points": [
+          [
+            227.37,
+            105.75
+          ],
+          [
+            227.37,
+            162.0
+          ]
+        ],
+        "candidateWidthTiles": 4,
+        "nominalLengthTiles": 56.25,
+        "approved": false,
+        "meaning": "abstract proposed connection; not surveyed ancient street or tested native path"
+      }
+    ],
+    "localApproaches": [
+      {
+        "id": "local-from-worker-provisions",
+        "actorId": "worker-provisions",
+        "hubId": "starting-court",
+        "points": [
+          [
+            205.5,
+            250.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-recipient-provisions",
+        "actorId": "recipient-provisions",
+        "hubId": "starting-court",
+        "points": [
+          [
+            205.5,
+            260.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-worker-meeting",
+        "actorId": "worker-meeting",
+        "hubId": "starting-court",
+        "points": [
+          [
+            211.5,
+            250.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-recipient-meeting",
+        "actorId": "recipient-meeting",
+        "hubId": "starting-court",
+        "points": [
+          [
+            211.5,
+            260.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-worker-materials",
+        "actorId": "worker-materials",
+        "hubId": "starting-court",
+        "points": [
+          [
+            217.5,
+            250.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-recipient-materials",
+        "actorId": "recipient-materials",
+        "hubId": "starting-court",
+        "points": [
+          [
+            217.5,
+            260.5
+          ],
+          [
+            211.44,
+            255.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-aid-cart-1",
+        "actorId": "aid-cart-1",
+        "hubId": "aid-pickup",
+        "points": [
+          [
+            103.5,
+            138.5
+          ],
+          [
+            107.94,
+            143.25
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-aid-cart-2",
+        "actorId": "aid-cart-2",
+        "hubId": "aid-pickup",
+        "points": [
+          [
+            111.5,
+            138.5
+          ],
+          [
+            107.94,
+            143.25
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-record-west-carrier",
+        "actorId": "record-west-carrier",
+        "hubId": "record-west",
+        "points": [
+          [
+            68.5,
+            278.5
+          ],
+          [
+            68.12,
+            283.88
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-record-north-carrier",
+        "actorId": "record-north-carrier",
+        "hubId": "record-north",
+        "points": [
+          [
+            131.5,
+            63.5
+          ],
+          [
+            131.82,
+            68.25
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-trade-carrier",
+        "actorId": "trade-carrier",
+        "hubId": "trade-pickup",
+        "points": [
+          [
+            56.5,
+            166.5
+          ],
+          [
+            56.18,
+            171.38
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-guide",
+        "actorId": "guide",
+        "hubId": "guide-pickup",
+        "points": [
+          [
+            99.5,
+            316.5
+          ],
+          [
+            99.97,
+            321.38
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-guest-1",
+        "actorId": "guest-1",
+        "hubId": "guest-pickup",
+        "points": [
+          [
+            72.5,
+            44.5
+          ],
+          [
+            76.09,
+            49.5
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-from-guest-2",
+        "actorId": "guest-2",
+        "hubId": "guest-pickup",
+        "points": [
+          [
+            80.5,
+            44.5
+          ],
+          [
+            76.09,
+            49.5
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate local access between original start and graph hub; not approved historical/native path"
+      },
+      {
+        "id": "local-to-aid-1",
+        "destinationZoneLabel": "aid-1",
+        "hubId": "aid-court",
+        "points": [
+          [
+            227.37,
+            105.75
+          ],
+          [
+            219.37,
+            105.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      },
+      {
+        "id": "local-to-aid-2",
+        "destinationZoneLabel": "aid-2",
+        "hubId": "aid-court",
+        "points": [
+          [
+            227.37,
+            105.75
+          ],
+          [
+            235.37,
+            105.75
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      },
+      {
+        "id": "local-to-copy",
+        "destinationZoneLabel": "copy",
+        "hubId": "reader-court",
+        "points": [
+          [
+            263.2,
+            192.94
+          ],
+          [
+            263.2,
+            200.94
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      },
+      {
+        "id": "local-to-trade",
+        "destinationZoneLabel": "trade",
+        "hubId": "trade-court",
+        "points": [
+          [
+            211.44,
+            340.13
+          ],
+          [
+            219.44,
+            340.13
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      },
+      {
+        "id": "local-to-guide",
+        "destinationZoneLabel": "guide",
+        "hubId": "western-junction",
+        "points": [
+          [
+            131.82,
+            227.63
+          ],
+          [
+            139.82,
+            227.63
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      },
+      {
+        "id": "local-to-guest",
+        "destinationZoneLabel": "guest",
+        "hubId": "guest-court",
+        "points": [
+          [
+            147.75,
+            358.88
+          ],
+          [
+            155.75,
+            358.88
+          ]
+        ],
+        "candidateWidthTiles": 2,
+        "approved": false,
+        "meaning": "explicit candidate access from graph hub to actual offset receiving circle; not approved historical/native path"
+      }
+    ],
+    "controlPolicy": "Tell and printed IAA NIG extents are external geographic controls, never academy address; west/south local activity proposals do not establish ancient road or land mask. Modern Soreq course and all native passability remain pending; no bridges or harbor invented."
+  },
+  "actors": [
+    {
+      "id": "worker-provisions",
+      "role": "worker",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        -6,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        205.44,
+        250.75
+      ],
+      "snappedCandidatePositionTiles": [
+        205.5,
+        250.5
+      ]
+    },
+    {
+      "id": "recipient-provisions",
+      "role": "recipient",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        -6,
+        5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        205.44,
+        260.75
+      ],
+      "snappedCandidatePositionTiles": [
+        205.5,
+        260.5
+      ]
+    },
+    {
+      "id": "worker-meeting",
+      "role": "worker",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        0,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        211.44,
+        250.75
+      ],
+      "snappedCandidatePositionTiles": [
+        211.5,
+        250.5
+      ]
+    },
+    {
+      "id": "recipient-meeting",
+      "role": "recipient",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        0,
+        5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        211.44,
+        260.75
+      ],
+      "snappedCandidatePositionTiles": [
+        211.5,
+        260.5
+      ]
+    },
+    {
+      "id": "worker-materials",
+      "role": "worker",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        6,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        217.44,
+        250.75
+      ],
+      "snappedCandidatePositionTiles": [
+        217.5,
+        250.5
+      ]
+    },
+    {
+      "id": "recipient-materials",
+      "role": "recipient",
+      "initialPointId": "starting-court",
+      "offsetTiles": [
+        6,
+        5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian; not a historical rabbi or a whole community",
+      "candidatePositionTiles": [
+        217.44,
+        260.75
+      ],
+      "snappedCandidatePositionTiles": [
+        217.5,
+        260.5
+      ]
+    },
+    {
+      "id": "aid-cart-1",
+      "role": "aid carrier",
+      "optionalKind": "aid",
+      "initialPointId": "aid-pickup",
+      "offsetTiles": [
+        -4,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        103.94,
+        138.25
+      ],
+      "snappedCandidatePositionTiles": [
+        103.5,
+        138.5
+      ]
+    },
+    {
+      "id": "aid-cart-2",
+      "role": "aid carrier",
+      "optionalKind": "aid",
+      "initialPointId": "aid-pickup",
+      "offsetTiles": [
+        4,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        111.94,
+        138.25
+      ],
+      "snappedCandidatePositionTiles": [
+        111.5,
+        138.5
+      ]
+    },
+    {
+      "id": "record-west-carrier",
+      "role": "working-record carrier",
+      "optionalKind": "copy",
+      "initialPointId": "record-west",
+      "offsetTiles": [
+        0,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        68.12,
+        278.88
+      ],
+      "snappedCandidatePositionTiles": [
+        68.5,
+        278.5
+      ]
+    },
+    {
+      "id": "record-north-carrier",
+      "role": "working-record carrier",
+      "optionalKind": "copy",
+      "initialPointId": "record-north",
+      "offsetTiles": [
+        0,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        131.82,
+        63.25
+      ],
+      "snappedCandidatePositionTiles": [
+        131.5,
+        63.5
+      ]
+    },
+    {
+      "id": "trade-carrier",
+      "role": "trader",
+      "optionalKind": "trade",
+      "initialPointId": "trade-pickup",
+      "offsetTiles": [
+        0,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        56.18,
+        166.38
+      ],
+      "snappedCandidatePositionTiles": [
+        56.5,
+        166.5
+      ]
+    },
+    {
+      "id": "guide",
+      "role": "guide",
+      "optionalKind": "guide",
+      "initialPointId": "guide-pickup",
+      "offsetTiles": [
+        0,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        99.97,
+        316.38
+      ],
+      "snappedCandidatePositionTiles": [
+        99.5,
+        316.5
+      ]
+    },
+    {
+      "id": "guest-1",
+      "role": "voluntary guest representative",
+      "optionalKind": "extract",
+      "initialPointId": "guest-pickup",
+      "offsetTiles": [
+        -4,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        72.09,
+        44.5
+      ],
+      "snappedCandidatePositionTiles": [
+        72.5,
+        44.5
+      ]
+    },
+    {
+      "id": "guest-2",
+      "role": "voluntary guest representative",
+      "optionalKind": "extract",
+      "initialPointId": "guest-pickup",
+      "offsetTiles": [
+        4,
+        -5
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 1,
+      "classification": "invented ordinary civilian or cargo carrier; native type still to bind",
+      "candidatePositionTiles": [
+        80.09,
+        44.5
+      ],
+      "snappedCandidatePositionTiles": [
+        80.5,
+        44.5
+      ]
+    },
+    {
+      "id": "damaged-store",
+      "role": "repair target",
+      "optionalKind": "repair",
+      "initialPointId": "repair-yard",
+      "offsetTiles": [
+        6,
+        0
+      ],
+      "original": true,
+      "replacement": "none",
+      "owner": 2,
+      "classification": "invented ordinary store; native footprint/health action still to bind",
+      "candidatePositionTiles": [
+        201.52,
+        96.38
+      ],
+      "snappedCandidatePositionTiles": [
+        201.5,
+        96.5
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "calculationLabel": "A",
+      "serviceId": "provisions",
+      "id": "local-meal",
+      "title": {
+        "en": "At the Local Hearth",
+        "es-ES": "En el fogón local"
+      },
+      "cost": {
+        "food": 120,
+        "wood": 20,
+        "gold": 0,
+        "stone": 0
+      },
+      "workerId": "worker-provisions",
+      "outputEntityId": "output-local-meal",
+      "recipientIds": [
+        "recipient-provisions"
+      ],
+      "workPointId": "hearth-work",
+      "receptionPointId": "meal-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work"
+        ],
+        "nominalLengthTiles": 30.36930358108333
+      },
+      "outputDelivery": {
+        "points": [
+          "hearth-work",
+          "meal-court"
+        ],
+        "corridorIds": [
+          "path-hearth-work-to-meal-court"
+        ],
+        "nominalLengthTiles": 28.33513719747973
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work",
+          "meal-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court"
+        ],
+        "nominalLengthTiles": 58.70444077856306
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    },
+    {
+      "calculationLabel": "B",
+      "serviceId": "provisions",
+      "id": "purchased-consignment",
+      "title": {
+        "en": "The Western Consignment",
+        "es-ES": "La remesa occidental"
+      },
+      "cost": {
+        "food": 30,
+        "wood": 0,
+        "gold": 70,
+        "stone": 0
+      },
+      "workerId": "worker-provisions",
+      "outputEntityId": "output-purchased-consignment",
+      "recipientIds": [
+        "recipient-provisions"
+      ],
+      "workPointId": "merchant-work",
+      "receptionPointId": "meal-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "western-junction",
+          "merchant-work"
+        ],
+        "corridorIds": [
+          "path-western-junction-to-starting-court",
+          "path-merchant-work-to-western-junction"
+        ],
+        "nominalLengthTiles": 128.22979393627153
+      },
+      "outputDelivery": {
+        "points": [
+          "merchant-work",
+          "western-junction",
+          "starting-court",
+          "hearth-work",
+          "meal-court"
+        ],
+        "corridorIds": [
+          "path-merchant-work-to-western-junction",
+          "path-western-junction-to-starting-court",
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court"
+        ],
+        "nominalLengthTiles": 186.9342347148346
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work",
+          "meal-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court"
+        ],
+        "nominalLengthTiles": 58.70444077856306
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    },
+    {
+      "calculationLabel": "C",
+      "serviceId": "meeting",
+      "id": "assembled-shelter",
+      "title": {
+        "en": "A Shelter Prepared Together",
+        "es-ES": "Un refugio preparado entre todos"
+      },
+      "cost": {
+        "food": 20,
+        "wood": 100,
+        "gold": 0,
+        "stone": 0
+      },
+      "workerId": "worker-meeting",
+      "outputEntityId": "output-assembled-shelter",
+      "recipientIds": [
+        "recipient-meeting"
+      ],
+      "workPointId": "timber-work",
+      "receptionPointId": "built-meeting-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "western-junction",
+          "timber-work"
+        ],
+        "corridorIds": [
+          "path-western-junction-to-starting-court",
+          "path-timber-work-to-western-junction"
+        ],
+        "nominalLengthTiles": 148.17337221334617
+      },
+      "outputDelivery": {
+        "points": [
+          "timber-work",
+          "built-meeting-court"
+        ],
+        "corridorIds": [
+          "path-built-meeting-court-to-timber-work"
+        ],
+        "nominalLengthTiles": 53.21993987219452
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work",
+          "meal-court",
+          "reader-court",
+          "built-meeting-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court",
+          "path-meal-court-to-reader-court",
+          "path-reader-court-to-built-meeting-court"
+        ],
+        "nominalLengthTiles": 129.87688377883086
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    },
+    {
+      "calculationLabel": "D",
+      "serviceId": "meeting",
+      "id": "offered-room",
+      "title": {
+        "en": "The Door Offered Freely",
+        "es-ES": "La puerta que se ofrece"
+      },
+      "cost": {
+        "food": 0,
+        "wood": 20,
+        "gold": 70,
+        "stone": 0
+      },
+      "workerId": "worker-meeting",
+      "outputEntityId": "output-offered-room",
+      "recipientIds": [
+        "recipient-meeting"
+      ],
+      "workPointId": "host-work",
+      "receptionPointId": "host-meeting-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "host-work"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-host-work"
+        ],
+        "nominalLengthTiles": 60.73074098016589
+      },
+      "outputDelivery": {
+        "points": [
+          "host-work",
+          "host-meeting-court"
+        ],
+        "corridorIds": [
+          "path-host-work-to-host-meeting-court"
+        ],
+        "nominalLengthTiles": 30.36930358108333
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "host-work",
+          "host-meeting-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-host-work",
+          "path-host-work-to-host-meeting-court"
+        ],
+        "nominalLengthTiles": 91.10004456124922
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    },
+    {
+      "calculationLabel": "E",
+      "serviceId": "materials",
+      "id": "local-working-materials",
+      "title": {
+        "en": "Materials Put to Use",
+        "es-ES": "Materiales que sirven"
+      },
+      "cost": {
+        "food": 20,
+        "wood": 40,
+        "gold": 0,
+        "stone": 0
+      },
+      "workerId": "worker-materials",
+      "outputEntityId": "output-local-working-materials",
+      "recipientIds": [
+        "recipient-materials"
+      ],
+      "workPointId": "materials-work",
+      "receptionPointId": "reader-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "materials-work"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-materials-work"
+        ],
+        "nominalLengthTiles": 40.90012836165676
+      },
+      "outputDelivery": {
+        "points": [
+          "materials-work",
+          "reader-court"
+        ],
+        "corridorIds": [
+          "path-materials-work-to-reader-court"
+        ],
+        "nominalLengthTiles": 73.172389601543
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work",
+          "meal-court",
+          "reader-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court",
+          "path-meal-court-to-reader-court"
+        ],
+        "nominalLengthTiles": 82.53691652070953
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    },
+    {
+      "calculationLabel": "F",
+      "serviceId": "materials",
+      "id": "purchased-working-materials",
+      "title": {
+        "en": "The Prepared Bundle",
+        "es-ES": "El fardo preparado"
+      },
+      "cost": {
+        "food": 0,
+        "wood": 10,
+        "gold": 60,
+        "stone": 0
+      },
+      "workerId": "worker-materials",
+      "outputEntityId": "output-purchased-working-materials",
+      "recipientIds": [
+        "recipient-materials"
+      ],
+      "workPointId": "merchant-work",
+      "receptionPointId": "reader-court",
+      "workerApproach": {
+        "points": [
+          "starting-court",
+          "western-junction",
+          "merchant-work"
+        ],
+        "corridorIds": [
+          "path-western-junction-to-starting-court",
+          "path-merchant-work-to-western-junction"
+        ],
+        "nominalLengthTiles": 128.22979393627153
+      },
+      "outputDelivery": {
+        "points": [
+          "merchant-work",
+          "western-junction",
+          "timber-work",
+          "built-meeting-court",
+          "reader-court"
+        ],
+        "corridorIds": [
+          "path-merchant-work-to-western-junction",
+          "path-timber-work-to-western-junction",
+          "path-built-meeting-court-to-timber-work",
+          "path-reader-court-to-built-meeting-court"
+        ],
+        "nominalLengthTiles": 208.08348540739047
+      },
+      "recipientApproach": {
+        "points": [
+          "starting-court",
+          "hearth-work",
+          "meal-court",
+          "reader-court"
+        ],
+        "corridorIds": [
+          "path-starting-court-to-hearth-work",
+          "path-hearth-work-to-meal-court",
+          "path-meal-court-to-reader-court"
+        ],
+        "nominalLengthTiles": 82.53691652070953
+      },
+      "workCompletion": "fresh original selected worker in selected work circle after reservation, commitment and a recipe-qualified departure; no timer-only completion",
+      "outputPolicy": "only selected output generated once after its own recorded work; never preplaced spendable stock"
+    }
+  ],
+  "optionalTasks": [
+    {
+      "id": "aid",
+      "kind": "aid",
+      "title": {
+        "en": "A Share for the Northern Hearth",
+        "es-ES": "Una parte para el fogón del norte"
+      },
+      "originalIds": [
+        "aid-cart-1",
+        "aid-cart-2"
+      ],
+      "destinationPointId": "aid-court",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 40,
+        "wood": 40,
+        "gold": 20,
+        "stone": 0
+      },
+      "completion": "both original aid carriers arrive alive at their distinct assigned northern household collection circles",
+      "routes": [
+        {
+          "points": [
+            "aid-pickup",
+            "northern-junction",
+            "repair-yard",
+            "aid-court"
+          ],
+          "corridorIds": [
+            "path-aid-pickup-to-northern-junction",
+            "path-repair-yard-to-northern-junction",
+            "path-aid-court-to-repair-yard"
+          ],
+          "nominalLengthTiles": 149.49699913565686
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": null
+    },
+    {
+      "id": "copy",
+      "kind": "copy",
+      "title": {
+        "en": "Two Notes, Neither a Final Word",
+        "es-ES": "Dos notas, ninguna definitiva"
+      },
+      "originalIds": [
+        "record-west-carrier",
+        "record-north-carrier"
+      ],
+      "destinationPointId": "reader-court",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "completion": "both distinct original working-record carriers reach the reader circle; neither is the Mishnah or a rabbinic autograph",
+      "routes": [
+        {
+          "points": [
+            "record-west",
+            "merchant-work",
+            "western-junction",
+            "timber-work",
+            "built-meeting-court",
+            "reader-court"
+          ],
+          "corridorIds": [
+            "path-record-west-to-merchant-work",
+            "path-merchant-work-to-western-junction",
+            "path-timber-work-to-western-junction",
+            "path-built-meeting-court-to-timber-work",
+            "path-reader-court-to-built-meeting-court"
+          ],
+          "nominalLengthTiles": 267.75316447473585
+        },
+        {
+          "points": [
+            "record-north",
+            "northern-junction",
+            "timber-work",
+            "built-meeting-court",
+            "reader-court"
+          ],
+          "corridorIds": [
+            "path-northern-junction-to-record-north",
+            "path-northern-junction-to-timber-work",
+            "path-built-meeting-court-to-timber-work",
+            "path-reader-court-to-built-meeting-court"
+          ],
+          "nominalLengthTiles": 228.40500259868776
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": "attributed source note and selection/court hint"
+    },
+    {
+      "id": "repair",
+      "kind": "repair",
+      "title": {
+        "en": "A Roof for What Remains",
+        "es-ES": "Un techo para lo que queda"
+      },
+      "originalIds": [
+        "damaged-store"
+      ],
+      "destinationPointId": "repair-yard",
+      "cost": {
+        "food": 0,
+        "wood": 30,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 20,
+        "gold": 0,
+        "stone": 0
+      },
+      "completion": "pay30wood once and atomically restore the original damaged store to full health before reward; not a normal villager repair loop",
+      "routes": [
+        {
+          "points": [
+            "starting-court",
+            "hearth-work",
+            "meal-court",
+            "reader-court",
+            "built-meeting-court",
+            "aid-court",
+            "repair-yard"
+          ],
+          "corridorIds": [
+            "path-starting-court-to-hearth-work",
+            "path-hearth-work-to-meal-court",
+            "path-meal-court-to-reader-court",
+            "path-reader-court-to-built-meeting-court",
+            "path-aid-court-to-built-meeting-court",
+            "path-aid-court-to-repair-yard"
+          ],
+          "nominalLengthTiles": 219.32657353641744
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": null
+    },
+    {
+      "id": "trade",
+      "kind": "trade",
+      "title": {
+        "en": "A Fair Exchange at the Southern Yard",
+        "es-ES": "Un intercambio justo en el patio del sur"
+      },
+      "originalIds": [
+        "trade-carrier"
+      ],
+      "destinationPointId": "trade-court",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 20,
+        "stone": 0
+      },
+      "reward": {
+        "food": 20,
+        "wood": 0,
+        "gold": 10,
+        "stone": 0
+      },
+      "completion": "original trader reaches receiving circle alive, then pay20gold before the separate reserved reward",
+      "routes": [
+        {
+          "points": [
+            "trade-pickup",
+            "merchant-work",
+            "western-junction",
+            "starting-court",
+            "host-work",
+            "host-meeting-court",
+            "trade-court"
+          ],
+          "corridorIds": [
+            "path-merchant-work-to-trade-pickup",
+            "path-merchant-work-to-western-junction",
+            "path-western-junction-to-starting-court",
+            "path-starting-court-to-host-work",
+            "path-host-work-to-host-meeting-court",
+            "path-host-meeting-court-to-trade-court"
+          ],
+          "nominalLengthTiles": 320.870245126897
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": null
+    },
+    {
+      "id": "guide",
+      "kind": "guide",
+      "title": {
+        "en": "The Turn We Had Overlooked",
+        "es-ES": "El recodo que no habíamos visto"
+      },
+      "originalIds": [
+        "guide"
+      ],
+      "destinationPointId": "western-junction",
+      "cost": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "completion": "original guide reaches western junction alive; mark already existing northern loop; no terrain change",
+      "routes": [
+        {
+          "points": [
+            "guide-pickup",
+            "record-west",
+            "merchant-work",
+            "western-junction"
+          ],
+          "corridorIds": [
+            "path-guide-pickup-to-record-west",
+            "path-record-west-to-merchant-work",
+            "path-merchant-work-to-western-junction"
+          ],
+          "nominalLengthTiles": 152.66000935078964
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": "mark authored route only after its approval"
+    },
+    {
+      "id": "guest",
+      "kind": "extract",
+      "title": {
+        "en": "Room at Another Hearth",
+        "es-ES": "Sitio junto a otro fogón"
+      },
+      "originalIds": [
+        "guest-1",
+        "guest-2"
+      ],
+      "destinationPointId": "guest-court",
+      "cost": {
+        "food": 20,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "reward": {
+        "food": 10,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "completion": "both original voluntary guest representatives reach the additional hearth alive, then20food hospitality payment before10food reserved reward",
+      "routes": [
+        {
+          "points": [
+            "guest-pickup",
+            "record-north",
+            "northern-junction",
+            "timber-work",
+            "western-junction",
+            "starting-court",
+            "host-work",
+            "guest-court"
+          ],
+          "corridorIds": [
+            "path-record-north-to-guest-pickup",
+            "path-northern-junction-to-record-north",
+            "path-northern-junction-to-timber-work",
+            "path-timber-work-to-western-junction",
+            "path-western-junction-to-starting-court",
+            "path-starting-court-to-host-work",
+            "path-host-work-to-guest-court"
+          ],
+          "nominalLengthTiles": 463.0821049107453
+        }
+      ],
+      "failure": "loss of its own original or irreversible invalidation marks this optional unavailable only; no main defeat, reward, replacement or reserve withdrawal",
+      "once": true,
+      "contextBenefit": null
+    }
+  ],
+  "screens": [
+    {
+      "id": "title",
+      "text": {
+        "en": "A School without Walls",
+        "es-ES": "Una escuela sin murallas"
+      },
+      "condition": "campaign menu episode entry, before intro-fact",
+      "narrator": "none",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A School without Walls"
+        ],
+        "es-ES": [
+          "Una escuela sin murallas"
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 2
+    },
+    {
+      "id": "intro-fact",
+      "text": {
+        "en": "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy.",
+        "es-ES": "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+      },
+      "condition": "after title, before intro-handover",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Yavneh, c.70–80 CE. After the Temple’s destruction, later Jewish sources associate Yavneh with legal teaching and remembered changes in practice. They do not give us the plan of an academy."
+        ],
+        "es-ES": [
+          "Yavneh, hacia 70–80 d. C. Tras la destrucción del Templo, fuentes judías posteriores asocian Yavneh con enseñanza legal y cambios recordados en la práctica. No nos ofrecen el plano de una academia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "intro-handover",
+      "text": {
+        "en": "These households, supplies and local errands are invented. Judith of Tiberias speaks centuries later, from received accounts. Their success will not found an institution or settle a canon.",
+        "es-ES": "Estos hogares, suministros y encargos locales son inventados. Judith de Tiberíades habla siglos después, a partir de relatos recibidos. Su éxito no fundará una institución ni fijará un canon."
+      },
+      "condition": "after intro-fact, before intro-personal",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "These households, supplies and local errands are invented. Judith of Tiberias speaks centuries later, from received accounts. Their success will not found an institution or settle a canon."
+        ],
+        "es-ES": [
+          "Estos hogares, suministros y encargos locales son inventados. Judith de Tiberíades habla siglos después, a partir de relatos recibidos. Su éxito no fundará una institución ni fijará un canon."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "intro-personal",
+      "text": {
+        "en": "I was taught to leave a margin for the next question. The names of Yavneh reached me through other voices. I cannot recover their rooms; I can refuse to mistake a roof for an answer.",
+        "es-ES": "Me enseñaron a dejar margen para la siguiente pregunta. Los nombres de Yavneh me llegaron por otras voces. No puedo recuperar sus habitaciones; puedo negarme a confundir un techo con una respuesta."
+      },
+      "condition": "after intro-handover, before any player resource action",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "I was taught to leave a margin for the next question. The names of Yavneh reached me through other voices. I cannot recover their rooms; I can refuse to mistake a roof",
+          "for an answer."
+        ],
+        "es-ES": [
+          "Me enseñaron a dejar margen para la siguiente pregunta. Los nombres de Yavneh me llegaron por otras voces. No puedo recuperar sus habitaciones; puedo negarme a confundir un techo con una respuesta."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "recommended-previous",
+      "text": {
+        "en": "Recommended first: Names beyond the Fallen House, episode 1 of Keepers of the Unbroken Word. This episode can be played independently. The local characters do not certify a household’s journey from Jerusalem.",
+        "es-ES": "Se recomienda empezar por Nombres más allá de la casa caída, episodio 1 de Guardianes de la palabra viva. Este episodio puede jugarse por separado. Los personajes locales no acreditan el viaje de un hogar desde Jerusalén."
+      },
+      "condition": "entry recommendation, nonblocking and skippable; never read a missing save as permission",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Recommended first: Names beyond the Fallen House, episode 1 of Keepers of the Unbroken Word. This episode can be played independently. The local characters do not certify a household’s journey from Jerusalem."
+        ],
+        "es-ES": [
+          "Se recomienda empezar por Nombres más allá de la casa caída, episodio 1 de Guardianes de la palabra viva. Este episodio puede jugarse por separado. Los personajes locales no acreditan el viaje",
+          "de un hogar desde Jerusalén."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "plan-preview",
+      "text": {
+        "en": "Choose one method for each of three services: provisions, meeting space and working materials. Preview is free. Each method shows its own worker, work site, result, receiving court and original recipient.",
+        "es-ES": "Elige un método para cada uno de tres servicios: provisiones, lugar de reunión y materiales de trabajo. Consultar es gratis. Cada método muestra su trabajador, lugar de trabajo, resultado, patio receptor y destinatario original."
+      },
+      "condition": "opening plan panel or changing complete candidate selection; free",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Choose one method for each of three services: provisions, meeting space and working materials. Preview is free. Each method shows its own worker, work site, result, receiving court and original recipient."
+        ],
+        "es-ES": [
+          "Elige un método para cada uno de tres servicios: provisiones, lugar de reunión y materiales de trabajo. Consultar es gratis. Cada método muestra su trabajador, lugar de trabajo, resultado, patio receptor y",
+          "destinatario original."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "reserve",
+      "text": {
+        "en": "Reserve the complete affordable selection once. All three costs enter escrow together. You may cancel and recover that escrow before committing; optional rewards remain separate.",
+        "es-ES": "Reserva una vez la selección completa que puedas pagar. Los tres costes pasan juntos a depósito. Puedes cancelar y recuperar ese depósito antes de comprometerte; las recompensas opcionales siguen separadas."
+      },
+      "condition": "successful atomic reservation, once per attempt",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Reserve the complete affordable selection once. All three costs enter escrow together. You may cancel and recover that escrow before committing; optional rewards remain separate."
+        ],
+        "es-ES": [
+          "Reserva una vez la selección completa que puedas pagar. Los tres costes pasan juntos a depósito. Puedes cancelar y recuperar ese depósito antes de comprometerte; las recompensas opcionales siguen separadas."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "unaffordable",
+      "text": {
+        "en": "This complete selection exceeds at least one spendable resource. Nothing has been reserved. Compare another method or complete an available optional task; the displayed reward reserve is not your spending stock.",
+        "es-ES": "Esta selección completa supera al menos un recurso disponible. No se ha reservado nada. Compara otro método o cumple un secundario disponible; la reserva de recompensas mostrada no forma parte de tus existencias para gastar."
+      },
+      "condition": "rejected unaffordable reservation; no mutation",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "This complete selection exceeds at least one spendable resource. Nothing has been reserved. Compare another method or complete an available optional task; the displayed reward reserve is not your spending stock."
+        ],
+        "es-ES": [
+          "Esta selección completa supera al menos un recurso disponible. No se ha reservado nada. Compara otro método o cumple un secundario disponible; la reserva de recompensas mostrada no forma parte de tus",
+          "existencias para gastar."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "cancel",
+      "text": {
+        "en": "Reservation cancelled once. Its escrow has returned to spendable stock. Completed optional tasks and their receipts remain recorded.",
+        "es-ES": "Reserva cancelada una vez. Su depósito vuelve a los recursos disponibles. Los secundarios completados y sus recibos siguen registrados."
+      },
+      "condition": "successful precommit cancellation; refund once",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Reservation cancelled once. Its escrow has returned to spendable stock. Completed optional tasks and their receipts remain recorded."
+        ],
+        "es-ES": [
+          "Reserva cancelada una vez. Su depósito vuelve a los recursos disponibles. Los secundarios completados y sus recibos siguen registrados."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 9
+    },
+    {
+      "id": "commit",
+      "text": {
+        "en": "Begin the selected plan. Its methods and costs are now committed. Take each original worker to the selected work circle, then deliver that method’s resulting bundle to its own receiving court.",
+        "es-ES": "Comienza el plan elegido. Sus métodos y costes quedan comprometidos. Lleva cada trabajador original al círculo de trabajo seleccionado y entrega después el fardo resultante de ese método en su propio patio receptor."
+      },
+      "condition": "successful irreversible commit; announce selected methods",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Begin the selected plan. Its methods and costs are now committed. Take each original worker to the selected work circle, then deliver that method’s resulting bundle to its own receiving court."
+        ],
+        "es-ES": [
+          "Comienza el plan elegido. Sus métodos y costes quedan comprometidos. Lleva cada trabajador original al círculo de trabajo seleccionado y entrega después el fardo resultante de ese método en su propio patio",
+          "receptor."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "main-provisions",
+      "text": {
+        "en": "Complete the selected provisions method. Deliver its own result to the Neighbors’ Table with the original provisions recipient alive and present. Payment alone does not serve a meal.",
+        "es-ES": "Completa el método elegido de provisiones. Entrega su propio resultado en la mesa de los vecinos con el destinatario original de provisiones vivo y presente. El pago por sí solo no sirve una comida."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected provisions method. Deliver its own result to the Neighbors’ Table with the original provisions recipient alive and present. Payment alone does not serve a meal."
+        ],
+        "es-ES": [
+          "Completa el método elegido de provisiones. Entrega su propio resultado en la mesa de los vecinos con el destinatario original de provisiones vivo y presente. El pago por sí solo no sirve",
+          "una comida."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "main-meeting",
+      "text": {
+        "en": "Complete the selected meeting method. The original meeting recipient must attend its selected receiving court: the prepared court for A Shelter Prepared Together, or the offered room for The Door Offered Freely.",
+        "es-ES": "Completa el método elegido de reunión. El destinatario original de reunión debe acudir al patio receptor seleccionado: el patio preparado para Un refugio preparado entre todos o la estancia ofrecida para La puerta que se ofrece."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected meeting method. The original meeting recipient must attend its selected receiving court: the prepared court for A Shelter Prepared Together, or the offered room for The Door Offered Freely."
+        ],
+        "es-ES": [
+          "Completa el método elegido de reunión. El destinatario original de reunión debe acudir al patio receptor seleccionado: el patio preparado para Un refugio preparado entre todos o la estancia ofrecida para La",
+          "puerta que se ofrece."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "main-materials",
+      "text": {
+        "en": "Complete the selected working-materials method. Deliver its own result to the Reading Cloth with the original materials recipient alive and present. These are ordinary working supplies, not a recovered sacred original.",
+        "es-ES": "Completa el método elegido de materiales de trabajo. Entrega su propio resultado en el paño de lectura con el destinatario original de materiales vivo y presente. Son suministros corrientes de trabajo, no un original sagrado recuperado."
+      },
+      "condition": "active main service goal; selected recipe only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Complete the selected working-materials method. Deliver its own result to the Reading Cloth with the original materials recipient alive and present. These are ordinary working supplies, not a recovered sacred original."
+        ],
+        "es-ES": [
+          "Completa el método elegido de materiales de trabajo. Entrega su propio resultado en el paño de lectura con el destinatario original de materiales vivo y presente. Son suministros corrientes de trabajo, no",
+          "un original sagrado recuperado."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "service-complete",
+      "text": {
+        "en": "One task has a destination now, and someone there to receive it. Leave its name beside its receipt; a total without a name tells too easy a story.",
+        "es-ES": "Una tarea ya tiene destino y alguien que la reciba. Deja su nombre junto al recibo; un total sin nombre cuenta una historia demasiado fácil."
+      },
+      "condition": "one notification for each service original selected output reception receipt; bind service ID explicitly, maximum3",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "One task has a destination now, and someone there to receive it. Leave its name beside its receipt; a total without a name tells too easy a story."
+        ],
+        "es-ES": [
+          "Una tarea ya tiene destino y alguien que la reciba. Deja su nombre junto al recibo; un total sin nombre cuenta una historia demasiado fácil."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "aid-offer",
+      "text": {
+        "en": "Bring both marked original aid carriers to their distinct assigned northern household collection circles. Reward once:40 food,40 wood,20 gold, drawn from the separate finite reserve.",
+        "es-ES": "Lleva los dos portadores originales señalados de ayuda a sus respectivos círculos de recogida del hogar del norte. Recompensa única:40 de alimento,40 de madera y 20 de oro, de la reserva finita separada."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked original aid carriers to their distinct assigned northern household collection circles. Reward once:40 food,40 wood,20 gold, drawn from the separate finite reserve."
+        ],
+        "es-ES": [
+          "Lleva los dos portadores originales señalados de ayuda a sus respectivos círculos de recogida del hogar del norte. Recompensa única:40 de alimento,40 de madera y 20 de oro, de la reserva finita",
+          "separada."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "aid-complete",
+      "text": {
+        "en": "A share arrived before anyone could turn generosity into a heading. I would leave the recipient’s place in the account.",
+        "es-ES": "Llegó una parte antes de que nadie convirtiera la generosidad en un encabezamiento. Yo dejaría sitio para su destinatario en la cuenta."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A share arrived before anyone could turn generosity into a heading. I would leave the recipient’s place in the account."
+        ],
+        "es-ES": [
+          "Llegó una parte antes de que nadie convirtiera la generosidad en un encabezamiento. Yo dejaría sitio para su destinatario en la cuenta."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "copy-offer",
+      "text": {
+        "en": "Bring both marked original working-record carriers to the Reading Cloth. Benefit: an attributed source note and a reminder of selected courts. No resource reward.",
+        "es-ES": "Lleva los dos portadores originales señalados de anotaciones de trabajo al paño de lectura. Ventaja: una nota de fuente atribuida y un recordatorio de los patios seleccionados. Sin recompensa de recursos."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked original working-record carriers to the Reading Cloth. Benefit: an attributed source note and a reminder of selected courts. No resource reward."
+        ],
+        "es-ES": [
+          "Lleva los dos portadores originales señalados de anotaciones de trabajo al paño de lectura. Ventaja: una nota de fuente atribuida y un recordatorio de los patios seleccionados. Sin recompensa de recursos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "copy-hint",
+      "text": {
+        "en": "Provisions go to the Neighbors’ Table; working materials go to the Reading Cloth. For A Shelter Prepared Together, use the Prepared Meeting Court. For The Door Offered Freely, use the Offered Room. The selected results and original recipients must still be present at the end.",
+        "es-ES": "Las provisiones van a la mesa de los vecinos; los materiales, al paño de lectura. Para Un refugio preparado entre todos, usa el patio preparado para reunirse. Para La puerta que se ofrece, usa la estancia ofrecida. Los resultados seleccionados y destinatarios originales deben seguir presentes al terminar."
+      },
+      "condition": "after copy-complete for side copy once receipt; no hint from losing either original carrier; reread in completed copy notebook",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Provisions go to the Neighbors’ Table; working materials go to the Reading Cloth. For A Shelter Prepared Together, use the Prepared Meeting Court. For The Door Offered Freely, use the Offered Room.",
+          "The selected results and original recipients must still be present at the end."
+        ],
+        "es-ES": [
+          "Las provisiones van a la mesa de los vecinos; los materiales, al paño de lectura. Para Un refugio preparado entre todos, usa el patio preparado para reunirse. Para La puerta que se",
+          "ofrece, usa la estancia ofrecida. Los resultados seleccionados y destinatarios originales deben seguir presentes al terminar."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 23
+    },
+    {
+      "id": "copy-complete",
+      "text": {
+        "en": "Mishnah Rosh Hashanah 4:1–3 preserves post-destruction rules and disagreement about their scope. This later compiled legal memory is not a transcript of our fictional gathering.",
+        "es-ES": "Mishná Rosh Hashaná4:1–3 conserva normas posteriores a la destrucción y desacuerdos sobre su alcance. Esta memoria legal compilada después no es una transcripción de nuestra reunión ficticia."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Mishnah Rosh Hashanah 4:1–3 preserves post-destruction rules and disagreement about their scope. This later compiled legal memory is not a transcript of our fictional gathering."
+        ],
+        "es-ES": [
+          "Mishná Rosh Hashaná4:1–3 conserva normas posteriores a la destrucción y desacuerdos sobre su alcance. Esta memoria legal compilada después no es una transcripción de nuestra reunión ficticia."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "repair-offer",
+      "text": {
+        "en": "Use the damaged store’s single repair action: pay 30 wood to restore that original store fully, then receive 20 wood once from reserve. Paying without restoration gives no reward.",
+        "es-ES": "Usa la acción única de reparación del almacén dañado: paga 30 de madera para restaurar por completo ese almacén original y recibe después 20 de madera de la reserva una sola vez. Pagar sin restaurarlo no da recompensa."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Use the damaged store’s single repair action: pay 30 wood to restore that original store fully, then receive 20 wood once from reserve. Paying without restoration gives no reward."
+        ],
+        "es-ES": [
+          "Usa la acción única de reparación del almacén dañado: paga 30 de madera para restaurar por completo ese almacén original y recibe después 20 de madera de la reserva una sola vez.",
+          "Pagar sin restaurarlo no da recompensa."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "repair-complete",
+      "text": {
+        "en": "The roof has a use again. That is a smaller claim than rebuilding a lost world, and one I can write without borrowing another person’s grief.",
+        "es-ES": "El techo vuelve a tener uso. Es una afirmación más pequeña que reconstruir un mundo perdido y puedo escribirla sin tomar prestado el dolor de otra persona."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The roof has a use again. That is a smaller claim than rebuilding a lost world, and one I can write without borrowing another person’s grief."
+        ],
+        "es-ES": [
+          "El techo vuelve a tener uso. Es una afirmación más pequeña que reconstruir un mundo perdido y puedo escribirla sin tomar prestado el dolor de otra persona."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "trade-offer",
+      "text": {
+        "en": "Escort the marked original trader to the southern receiving yard. Pay 20 gold there, then receive 20 food and 10 gold once from reserve. Its own reward cannot pay its cost.",
+        "es-ES": "Escolta al comerciante original señalado hasta el patio receptor del sur. Paga allí20 de oro y recibe después 20 de alimento y 10 de oro de la reserva una sola vez. Su propia recompensa no puede pagar su coste."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Escort the marked original trader to the southern receiving yard. Pay 20 gold there, then receive 20 food and 10 gold once from reserve. Its own reward cannot pay its cost."
+        ],
+        "es-ES": [
+          "Escolta al comerciante original señalado hasta el patio receptor del sur. Paga allí20 de oro y recibe después 20 de alimento y 10 de oro de la reserva una sola vez. Su",
+          "propia recompensa no puede pagar su coste."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "trade-complete",
+      "text": {
+        "en": "The exchange closes one account and opens a place at the table. Neither line says what another household must believe.",
+        "es-ES": "El intercambio cierra una cuenta y abre un sitio en la mesa. Ninguna línea dice lo que otro hogar debe creer."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The exchange closes one account and opens a place at the table. Neither line says what another household must believe."
+        ],
+        "es-ES": [
+          "El intercambio cierra una cuenta y abre un sitio en la mesa. Ninguna línea dice lo que otro hogar debe creer."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 10
+    },
+    {
+      "id": "guide-offer",
+      "text": {
+        "en": "Bring the original local guide to the western junction. Benefit: mark the existing northern loop. The route does not appear or change because this task is completed.",
+        "es-ES": "Lleva al guía local original hasta el cruce occidental. Ventaja: señala el circuito norte existente. La ruta no aparece ni cambia al completar esta tarea."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring the original local guide to the western junction. Benefit: mark the existing northern loop. The route does not appear or change because this task is completed."
+        ],
+        "es-ES": [
+          "Lleva al guía local original hasta el cruce occidental. Ventaja: señala el circuito norte existente. La ruta no aparece ni cambia al completar esta tarea."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "guide-complete",
+      "text": {
+        "en": "A turn can be missed without being secret. I prefer a clear direction to a tale in which the ground itself rewards us.",
+        "es-ES": "Un recodo puede pasar inadvertido sin ser secreto. Prefiero una indicación clara a un relato en el que el propio suelo nos recompensa."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A turn can be missed without being secret. I prefer a clear direction to a tale in which the ground itself rewards us."
+        ],
+        "es-ES": [
+          "Un recodo puede pasar inadvertido sin ser secreto. Prefiero una indicación clara a un relato en el que el propio suelo nos recompensa."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "guest-offer",
+      "text": {
+        "en": "Bring both marked original voluntary guests to the additional hearth alive. Pay 20 food for hospitality, then receive 10 food once from reserve. These guests are optional and cannot replace a main recipient.",
+        "es-ES": "Lleva con vida a los dos invitados voluntarios originales señalados hasta el fogón adicional. Paga 20 de alimento por la hospitalidad y recibe después 10 de alimento de la reserva una sola vez. Estos invitados son opcionales y no sustituyen a ningún destinatario principal."
+      },
+      "condition": "optional panel from start and reread while nonterminal; exact cost/benefit before acceptance",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Bring both marked original voluntary guests to the additional hearth alive. Pay 20 food for hospitality, then receive 10 food once from reserve. These guests are optional and cannot replace a main",
+          "recipient."
+        ],
+        "es-ES": [
+          "Lleva con vida a los dos invitados voluntarios originales señalados hasta el fogón adicional. Paga 20 de alimento por la hospitalidad y recibe después 10 de alimento de la reserva una sola",
+          "vez. Estos invitados son opcionales y no sustituyen a ningún destinatario principal."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 21
+    },
+    {
+      "id": "guest-complete",
+      "text": {
+        "en": "There was room beyond the three promises in the ledger. I would not call that room a proof; I would keep it open.",
+        "es-ES": "Había sitio más allá de las tres promesas del registro. Yo no llamaría prueba a ese sitio; lo dejaría abierto."
+      },
+      "condition": "after atomic once completion and own reserve debit/reward; bind this optional ID only",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "There was room beyond the three promises in the ledger. I would not call that room a proof; I would keep it open."
+        ],
+        "es-ES": [
+          "Había sitio más allá de las tres promesas del registro. Yo no llamaría prueba a ese sitio; lo dejaría abierto."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "optional-unavailable",
+      "text": {
+        "en": "This optional task can no longer be completed with its original actor or object. It gives no reward and does not defeat the main plan. Already earned receipts remain; replacements cannot complete it.",
+        "es-ES": "Este secundario ya no puede completarse con su actor u objeto original. No da recompensa ni causa la derrota del plan principal. Los recibos ya ganados se conservan; los reemplazos no pueden completarlo."
+      },
+      "condition": "one notification per failed optional ID; never main defeat",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "This optional task can no longer be completed with its original actor or object. It gives no reward and does not defeat the main plan. Already earned receipts remain; replacements cannot complete",
+          "it."
+        ],
+        "es-ES": [
+          "Este secundario ya no puede completarse con su actor u objeto original. No da recompensa ni causa la derrota del plan principal. Los recibos ya ganados se conservan; los reemplazos no pueden",
+          "completarlo."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 16
+    },
+    {
+      "id": "fresh-reception",
+      "text": {
+        "en": "Before finishing, bring all three original main recipients alive into their selected receiving courts, with each selected result there too. Deliveries remain recorded, but past presence cannot replace current presence.",
+        "es-ES": "Antes de terminar, lleva a los tres destinatarios originales principales vivos a sus patios receptores seleccionados, con cada resultado elegido también allí. Las entregas quedan registradas, pero la presencia pasada no sustituye a la actual."
+      },
+      "condition": "all service receipts complete but fresh current output/recipient presence incomplete",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Before finishing, bring all three original main recipients alive into their selected receiving courts, with each selected result there too. Deliveries remain recorded, but past presence cannot replace current presence."
+        ],
+        "es-ES": [
+          "Antes de terminar, lleva a los tres destinatarios originales principales vivos a sus patios receptores seleccionados, con cada resultado elegido también allí. Las entregas quedan registradas, pero la presencia pasada no sustituye",
+          "a la actual."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 17
+    },
+    {
+      "id": "defeat",
+      "text": {
+        "en": "A required original recipient, or a selected worker before completing its work, has been lost. A selected result has also become indispensable after commitment. Load an earlier save or restart if the plan cannot be completed.",
+        "es-ES": "Se ha perdido un destinatario original obligatorio o un trabajador seleccionado antes de terminar su trabajo. Cada resultado seleccionado también es indispensable tras el compromiso. Carga una partida anterior o reinicia si el plan ya no puede completarse."
+      },
+      "condition": "irreversible main failure, suppress victory and later optional mutations",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A required original recipient, or a selected worker before completing its work, has been lost. A selected result has also become indispensable after commitment. Load an earlier save or restart if the",
+          "plan cannot be completed."
+        ],
+        "es-ES": [
+          "Se ha perdido un destinatario original obligatorio o un trabajador seleccionado antes de terminar su trabajo. Cada resultado seleccionado también es indispensable tras el compromiso. Carga una partida anterior o reinicia si",
+          "el plan ya no puede completarse."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 18
+    },
+    {
+      "id": "source-limit",
+      "text": {
+        "en": "The later Gittin 56 a–b account associates Yavneh with a request made during the siege. We preserve its later narrative status; no private negotiation is reenacted here.",
+        "es-ES": "El relato posterior de Guitín 56 a–b asocia Yavneh con una petición durante el asedio. Conservamos su carácter narrativo posterior; aquí no se representa ninguna negociación privada."
+      },
+      "condition": "optional copy historical note or freely reread historical notebook; never a victory prerequisite",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The later Gittin 56 a–b account associates Yavneh with a request made during the siege. We preserve its later narrative status; no private negotiation is reenacted here."
+        ],
+        "es-ES": [
+          "El relato posterior de Guitín 56 a–b asocia Yavneh con una petición durante el asedio. Conservamos su carácter narrativo posterior; aquí no se representa ninguna negociación privada."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 13
+    },
+    {
+      "id": "victory-fact",
+      "text": {
+        "en": "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem.",
+        "es-ES": "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+      },
+      "condition": "fresh simultaneous selected output/recipient check passes; before victory-personal",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The three invented local services are complete for their original recipients. This result does not date an academy’s foundation, settle disputed traditions or reverse the destruction of Jerusalem."
+        ],
+        "es-ES": [
+          "Los tres servicios locales inventados están completos para sus destinatarios originales. Este resultado no fecha la fundación de una academia, resuelve tradiciones discutidas ni revierte la destrucción de Jerusalén."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 14
+    },
+    {
+      "id": "victory-personal",
+      "text": {
+        "en": "I cannot enter their room from my own century. I can leave three names beside three completed tasks, and a margin for the voices that never reached my page.",
+        "es-ES": "No puedo entrar en su habitación desde mi propio siglo. Puedo dejar tres nombres junto a tres tareas terminadas y un margen para las voces que nunca llegaron a mi página."
+      },
+      "condition": "after victory-fact; before continue-next",
+      "narrator": "judith-copyist",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "I cannot enter their room from my own century. I can leave three names beside three completed tasks, and a margin for the voices that never reached my page."
+        ],
+        "es-ES": [
+          "No puedo entrar en su habitación desde mi propio siglo. Puedo dejar tres nombres junto a tres tareas terminadas y un margen para las voces que nunca llegaron a mi página."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "continue-next",
+      "text": {
+        "en": "Continue with The Questions We Carried, episode 3 of Keepers of the Unbroken Word, c.80–100 CE. It follows the circulation of learning; this is not the campaign finale.",
+        "es-ES": "Continúa con Las preguntas que llevábamos, episodio 3 de Guardianes de la palabra viva, hacia 80–100 d.C. Trata de la circulación del aprendizaje; este no es el final de la campaña."
+      },
+      "condition": "after victory-personal, next recommendation only",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Continue with The Questions We Carried, episode 3 of Keepers of the Unbroken Word, c.80–100 CE. It follows the circulation of learning; this is not the campaign finale."
+        ],
+        "es-ES": [
+          "Continúa con Las preguntas que llevábamos, episodio 3 de Guardianes de la palabra viva, hacia 80–100 d.C. Trata de la circulación del aprendizaje; este no es el final de la campaña."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 15
+    },
+    {
+      "id": "recipe-local-meal",
+      "text": {
+        "en": "At the Local Hearth. Cost: 120 food, 20 wood, 0 gold. Work: The Local Hearth. Receive: The Neighbors’ Table.",
+        "es-ES": "En el fogón local. Coste: 120 de alimento, 20 de madera, 0 de oro. Trabajo: El fogón local. Recepción: La mesa de los vecinos."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "At the Local Hearth. Cost: 120 food, 20 wood, 0 gold. Work: The Local Hearth. Receive: The Neighbors’ Table."
+        ],
+        "es-ES": [
+          "En el fogón local. Coste: 120 de alimento, 20 de madera, 0 de oro. Trabajo: El fogón local. Recepción: La mesa de los vecinos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-purchased-consignment",
+      "text": {
+        "en": "The Western Consignment. Cost: 30 food, 0 wood, 70 gold. Work: The Western Trader. Receive: The Neighbors’ Table.",
+        "es-ES": "La remesa occidental. Coste: 30 de alimento, 0 de madera, 70 de oro. Trabajo: El comerciante occidental. Recepción: La mesa de los vecinos."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Western Consignment. Cost: 30 food, 0 wood, 70 gold. Work: The Western Trader. Receive: The Neighbors’ Table."
+        ],
+        "es-ES": [
+          "La remesa occidental. Coste: 30 de alimento, 0 de madera, 70 de oro. Trabajo: El comerciante occidental. Recepción: La mesa de los vecinos."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    },
+    {
+      "id": "recipe-assembled-shelter",
+      "text": {
+        "en": "A Shelter Prepared Together. Cost: 20 food, 100 wood, 0 gold. Work: The Timber Bench. Receive: The Prepared Meeting Court.",
+        "es-ES": "Un refugio preparado entre todos. Coste: 20 de alimento, 100 de madera, 0 de oro. Trabajo: El banco de madera. Recepción: El patio preparado para reunirse."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "A Shelter Prepared Together. Cost: 20 food, 100 wood, 0 gold. Work: The Timber Bench. Receive: The Prepared Meeting Court."
+        ],
+        "es-ES": [
+          "Un refugio preparado entre todos. Coste: 20 de alimento, 100 de madera, 0 de oro. Trabajo: El banco de madera. Recepción: El patio preparado para reunirse."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-offered-room",
+      "text": {
+        "en": "The Door Offered Freely. Cost: 0 food, 20 wood, 70 gold. Work: The Host’s Preparation Yard. Receive: The Offered Room.",
+        "es-ES": "La puerta que se ofrece. Coste: 0 de alimento, 20 de madera, 70 de oro. Trabajo: El patio de preparación del anfitrión. Recepción: La estancia ofrecida."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Door Offered Freely. Cost: 0 food, 20 wood, 70 gold. Work: The Host’s Preparation Yard. Receive: The Offered Room."
+        ],
+        "es-ES": [
+          "La puerta que se ofrece. Coste: 0 de alimento, 20 de madera, 70 de oro. Trabajo: El patio de preparación del anfitrión. Recepción: La estancia ofrecida."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-local-working-materials",
+      "text": {
+        "en": "Materials Put to Use. Cost: 20 food, 40 wood, 0 gold. Work: The Local Working Bench. Receive: The Reading Cloth.",
+        "es-ES": "Materiales que sirven. Coste: 20 de alimento, 40 de madera, 0 de oro. Trabajo: La mesa de trabajo local. Recepción: El paño de lectura."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "Materials Put to Use. Cost: 20 food, 40 wood, 0 gold. Work: The Local Working Bench. Receive: The Reading Cloth."
+        ],
+        "es-ES": [
+          "Materiales que sirven. Coste: 20 de alimento, 40 de madera, 0 de oro. Trabajo: La mesa de trabajo local. Recepción: El paño de lectura."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 12
+    },
+    {
+      "id": "recipe-purchased-working-materials",
+      "text": {
+        "en": "The Prepared Bundle. Cost: 0 food, 10 wood, 60 gold. Work: The Western Trader. Receive: The Reading Cloth.",
+        "es-ES": "El fardo preparado. Coste: 0 de alimento, 10 de madera, 60 de oro. Trabajo: El comerciante occidental. Recepción: El paño de lectura."
+      },
+      "condition": "preview selected method; no debit",
+      "narrator": "collection-narrator",
+      "skippable": true,
+      "captionPolicy": "split into consecutive captions without dropping qualifications; keep accents",
+      "captionSegments": {
+        "en": [
+          "The Prepared Bundle. Cost: 0 food, 10 wood, 60 gold. Work: The Western Trader. Receive: The Reading Cloth."
+        ],
+        "es-ES": [
+          "El fardo preparado. Coste: 0 de alimento, 10 de madera, 60 de oro. Trabajo: El comerciante occidental. Recepción: El paño de lectura."
+        ]
+      },
+      "nativeSurface": "pending certified SequenceItems/message adapter",
+      "voiceDurationSecondsEstimated": 11
+    }
+  ],
+  "screenRoles": {
+    "title": "title",
+    "introFact": "intro-fact",
+    "introHandover": "intro-handover",
+    "introPersonal": "intro-personal",
+    "defeat": "defeat",
+    "outroFact": "victory-fact",
+    "outroPersonal": "victory-personal",
+    "continuity": "continue-next"
+  },
+  "stateAndEvents": {
+    "preview": "free complete choice, fresh valid input epoch; no resource or world mutation",
+    "reserve": "atomic all-three cost escrow only if affordable",
+    "cancel": "only before commitment, exact escrow refund once; optional receipts/rewards persist",
+    "commit": "one current complete selection; irreversible worker/method/output identities",
+    "work": "each selected worker has recipe-qualified departure then fresh arrival in its own work circle; recorded once; no pay-only output",
+    "generation": "only selected output spawned after actual selected work; output cannot exist before authorized generation",
+    "reception": "each selected output has causal departure and arrival at own court with own original recipient currently alive/present",
+    "optional": "independent original identity, cost-before-reward, persistent once receipt, finite dedicated reserve; available before funding and while plan executes",
+    "final": "fresh positions and life of all3 original recipients at selected courts; all selected outputs/receipts valid; loss before victory; no past-presence win",
+    "loss": "required recipient anytime, selected worker before recorded work, selected result after commitment when its loss makes plan impossible; optional loss isolated",
+    "afterWorkWorker": "its later loss does not undo already recorded work or require worker presence at final",
+    "saveLoad": "preserve choices/escrow/commit/work/generation/arrivals/receipts/reserve/original handles and rotate input epoch; no stale queued action",
+    "terminal": "main verdict closes later resource mutations; optional tasks never undo historical context"
+  },
+  "accountsByDifficultyReference": "docs/wiki/jewish-tradition/research/yavneh-allocation-decision.json",
+  "continuity": {
+    "recommendedPreviousEpisode": "01-a-city-of-names",
+    "nextEpisode": "03-distributed-study-network-yavneh",
+    "previousCampaign": "faith-origins, Jewish perspective recommended before this campaign but never required",
+    "campaignFinale": false,
+    "noAutomaticLaunch": true
+  },
+  "acceptancePending": [
+    "independent world/editorial review",
+    "historical map control and ancient course/crossing uncertainty",
+    "approved land/elevation/route mask and native footprints",
+    "precise world/hub/zone binding into existing strict v3 profile",
+    "secondary helper projection with exact authored rewards and predicates",
+    "typed40-screen presentation/notification bindings and unique engine string IDs",
+    "native alternative selection/escrow/work/output/reception support; never lower into fixed conjunctive payments",
+    "engine loading, command discovery, save/load, pathing, performance and challenge calibration"
+  ],
+  "counts": {
+    "activityPlaces": 22,
+    "proposedConnections": 27,
+    "proposedLocalApproaches": 20,
+    "mainOriginalWorkers": 3,
+    "mainOriginalRecipients": 3,
+    "optionalOriginalActorsAndObjects": 9,
+    "recipes": 6,
+    "services": 3,
+    "optionalTasks": 6,
+    "bilingualScreens": 40
+  },
+  "newDossiers": 0,
+  "nativeExecuted": false,
+  "gameVerified": false,
+  "mechanicalAuthoringReady": false,
+  "capabilityRequirements": [
+    {
+      "id": "yavneh-authored-optional-cost-projection",
+      "proposal": "i00003/S3 infrastructure requirement; not implemented here",
+      "observed": "secondary.py fixes repair50W/trade50G, supplies no guest20F charge; its public authored item cannot represent this exact candidate unchanged",
+      "required": "project authored repair30W, trade20G, and guest20F costs-before-reward using existing strict atomic-payment semantics; preserve arbitrary costs in reference projection; never silently substitute presets",
+      "nativeBoundary": "native_secondary currently expects only repair/trade payment shapes and afterArrival for trade; guest arrival-plus-payment needs explicit infrastructure review and rejection until supported"
+    }
+  ],
+  "candidateZonePolicy": {
+    "main": "separate work and reception circles radius2 at named point centres; bind six worker/output pairs exactly",
+    "aid": "two distinct receiving circles at aid-court offsets[-8,0] and[8,0], radius3; one original assigned to each",
+    "copy": "one receiving circle at reader-court offset[0,8], radius3; both original carriers required",
+    "repair": "health-bearing building at authored offset[6,0], not the generic activity circle; footprint and interaction approach unapproved",
+    "trade": "receiving circle at trade-court offset[8,0], radius3",
+    "guide": "receiving circle at western-junction offset[8,0], radius3",
+    "guest": "receiving circle at guest-court offset[8,0], radius3; both original guests required",
+    "approval": "all final offset zones, generated output placements and native building approaches need independent complete geometric/terrain inspection before typed/native promotion"
+  }
+}

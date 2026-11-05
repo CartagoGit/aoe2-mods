@@ -1,0 +1,229 @@
+{
+  "audit": "Source collection audit, imperial-church orders 26-29",
+  "consultationDate": "2026-10-14",
+  "worktree": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+  "selectionFileActuallyRead": "docs/design/odysseys/imperial-church.json, episodeSelection orders 26-29",
+  "repositoryOrGitMutations": false,
+  "architectApproval": false,
+  "approvalScope": "Read-only source collection; no historical, map, objective, narration, or architecture decision approved.",
+  "method": {
+    "sourcePolicy": "Primary text and institutional/academic sources only for substantiated claims. Search snippets are kept separate from pages actually opened/read.",
+    "readingPolicy": "Exact locators below mean only those sections/pages were consulted. No source is represented as fully read when only a snippet, page metadata, or selected passage was read.",
+    "imageInspection": "No map figure was inspected pixel-by-pixel and no image was copied. Thessaloniki map PDF text/index is parsed, but map pages were not visually inspected. Salt/IRCICA medieval Constantinople map records were read as metadata only.",
+    "licensePolicy": "No project image reuse is authorized by this audit. A Salt Research map has CC BY-NC-ND 4.0 for individual research per its page; this is not a blanket license for game use or alteration. Other map rights were not established."
+  },
+  "episodes": [
+    {
+      "episodeId": "26-plural-civic-logistics-constantinople",
+      "orderAtCollection": 26,
+      "title": {"en": "The Temples Open Again", "es-ES": "Los templos vuelven a abrirse"},
+      "selectedDate": "361 CE",
+      "sources": [
+        {
+          "type": "primary narrative",
+          "author": "Ammianus Marcellinus, Res Gestae XXII.5",
+          "authorDate": "Late fourth-century Roman historian and former military officer; the work was composed after the events, conventionally in the 390s (exact composition date unsettled).",
+          "urlCandidate": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+          "urlActuallyConsulted": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/22*.html",
+          "exactLocator": "Book XXII, chapter 5 §§1-4, especially §2 for formal decrees ordering temples opened, victims brought to altars and cult of the gods restored; §§3-4 describe Julian's public appeal to Christian bishops/people to practice beliefs and Ammianus' own claim about his political calculation.",
+          "coverageActuallyRead": "Read displayed English translation at lines corresponding to XXII.5.1-4; surrounding XXII material only selectively. No Latin critical apparatus checked.",
+          "supported": ["Ammianus reports Julian issued formal decrees to reopen temples and resume sacrifice/cult; he reports Julian called disputing Christian bishops and people to the palace and urged tolerance."],
+          "unsupported": ["That all temples in Constantinople specifically reopened on a single day; that every community or resident changed cult; the title alone cannot substantiate a named local temple or its location."],
+          "biasAndLimitations": "Ammianus admires Julian and frames the decree as revelation of a previously concealed religious preference; his claim that Julian deliberately wanted Christian discord is explicit authorial interpretation (§4), not a neutral statement of motive. Policy is attested, but local implementation is not quantified."
+        }
+      ],
+      "geographyAndMapControls": {
+        "area": "Constantinople, imperial urban center; do not assume a particular temple or palace courtyard absent a source-specific identification.",
+        "institutionalMapCandidate": "IRCICA Map Collection, MISN/M. Is. Nomidis, Byzance-Constantinople: Carte archéologique et topographique (1938), https://openaccess.ircica.org/items/2d9ed1ae-f055-46c1-bce9-a79cea3f315f/full ; catalog metadata actually consulted says alternative title '...au moyen age', 1:10,000, French, 1938. The image itself was not viewed.",
+        "institutionalMapSecondRecord": "Salt Research records M. Is. Nomidis 1938 map as medieval Constantinople, https://archives.saltresearch.org/handle/123456789/98312?locale=tr ; page metadata/rights actually read, image not opened.",
+        "licenseAndFigure": "Salt page says CC BY-NC-ND 4.0 for individual research, credit required, no modification; project suitability/use must be separately cleared. The IRCICA record's terms link was not opened. Neither map establishes 361 building phases by title/metadata alone.",
+        "anachronisms": "The 1938 map is explicitly medieval, not a 361 CE plan. No map layer was inspected; avoid treating late Byzantine/Ottoman survival, current footprint, or archaeological reconstruction as Julian-era temple inventory."
+      }
+    },
+    {
+      "episodeId": "27-return-and-departure-records-alexandria",
+      "orderAtCollection": 27,
+      "title": {"en": "The Return That Did Not Last", "es-ES": "El regreso que no duró"},
+      "selectedDate": "362–363 CE; Julian's Persian campaign reported off-map",
+      "sources": [
+        {
+          "type": "primary imperial letter/edict, hostile polemic",
+          "author": "Julian, Letter 24, To the Alexandrians (also numbered Epistle 24 in some editions)",
+          "authorDate": "362 CE; heading in consulted translation says '[362, Constantinople]'.",
+          "urlCandidate": "https://romanletters.org/letters/julian_emperor/24/",
+          "urlActuallyConsulted": "https://en.wikisource.org/wiki/The_Works_of_the_Emperor_Julian/Letters/Letter_24 ; a second translation candidate https://www.tertullian.org/fathers/julian_apostate_letters_1_trans.htm was also consulted at the same letter text.",
+          "exactLocator": "Letter 24, paragraphs beginning 'One who had been banished...' and 'Yet I learn...', Wikisource lines 103-110; Julian says exiles were permitted to return to their countries, not churches, and orders Athanasius to leave on the day the letter reaches him.",
+          "coverageActuallyRead": "Read the full short Letter 24 as displayed on Wikisource and the corresponding paragraph in Tertullian.org translation; no Greek critical apparatus or transmission study consulted.",
+          "supported": ["Julian's own official rhetoric says return permission was to home countries rather than churches and orders Athanasius out of Alexandria forthwith upon receipt."],
+          "unsupported": ["Exact day Julian issued/letter arrived, exact date of Athanasius' departure from city, or independent verification of Julian's claims that Alexandrians were displeased."],
+          "biasAndLimitations": "Official imperial polemic. It labels Athanasius insolent, represents policy as law enforcement, and attributes displeasure to pagan citizens; these claims are interested framing. The widely repeated Feb. 21, 362 return date appears in a translator/editor footnote, not in Letter 24 itself."
+        },
+        {
+          "type": "primary narrative, late fourth-century eyewitness participant in Persian campaign",
+          "author": "Ammianus Marcellinus, Res Gestae XXV.3 (death of Julian); selection also cites XXIII-XXV generally",
+          "authorDate": "Late fourth century; Ammianus served in the Roman army, but whether he witnessed Julian's actual wounding/death scene is not established by the consulted passage.",
+          "urlCandidate": "https://tertullian.org/fathers/ammianus_25_book25.htm",
+          "urlActuallyConsulted": "https://penelope.uchicago.edu/ammianus/ammianus25.html (Latin book text opened); Tertullian translation URL was a candidate but not opened during this pass.",
+          "exactLocator": "Book XXV, especially chapter 3 is required for Julian's wound/death; the opened Chicago page exposed Latin book text, but I did not successfully retrieve/verify the precise §3 lines in this pass. Do not treat this as a completed locator verification.",
+          "coverageActuallyRead": "Opened page and first chapter material only; relevant death passage not confirmed. This source must remain a partial/failed verification for the death details in this audit.",
+          "supported": ["The campaign chronology can be researched from this book, but this audit does not claim a directly checked death narrative."],
+          "unsupported": ["Exact wound cause, assailant, precise death scene, or a verified Ammianus passage from this pass."],
+          "biasAndLimitations": "No claim on death details should be made from this incomplete consultation. Other contemporary narratives differ over the cause/person responsible; injury and death should be stated cautiously and source-attributed."
+        },
+        {
+          "type": "primary chronology, anonymous Alexandrian chronicle (relevant comparator)",
+          "author": "Anonymous Historia Acephala, not Athanasius' own composition assumed",
+          "authorDate": "Late fourth or early fifth century commonly proposed; exact date/authorship unsettled.",
+          "urlCandidate": "https://www.newadvent.org/fathers/2820.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/2820.htm was not reopened in this task; prior research notes recorded source chronology, so here it remains a candidate rather than a new consultation.",
+          "exactLocator": "Older NPNF chronological table says edict posted at Alexandria Feb. 9, Athanasius return Feb. 21, and renewed order Oct. 4/retirement Oct. 5, 362; this table is editorial conversion, not current primary passage inspected now.",
+          "coverageActuallyRead": "Only prior/source-search metadata seen in this turn; no direct passage consulted now."
+        }
+      ],
+      "geographyAndMapControls": {
+        "area": "Alexandria proper; Julian's command concerns the city. The Persian campaign and emperor's death are off-map reports, not local Alexandria events.",
+        "institutionalControl": "CEAlex Department of Topography and Cartography, https://www.cealex.org/the-cealex/departments/topography-and-cartography-department/ ; page text actually read says the team surveys CEAlex land/underwater excavations and contributes to archaeological maps of Alexandria and Mareotis. CartAlex launch page https://www.cealex.org/evenement/cartalex-is-online/ was consulted earlier only as metadata in prior task; interactive GIS was not opened here. Map collection page https://www.cealex.org/documentary-resources/map-collection/ appeared in search result, not opened.",
+        "phasesAndLimits": "Institutional archaeological and coastline layers are promising spatial controls, but no precise site/structure from Julian's Letter 24 is identified. Current shoreline, Greco-Roman harbor, and Roman-period urban plan are not by themselves proof of exact fourth-century street or church location.",
+        "license": "No image/map reuse license established; no figure inspected or copied."
+      }
+    },
+    {
+      "episodeId": "28-law-and-local-reception-thessalonica",
+      "orderAtCollection": 28,
+      "title": {"en": "The Weight of an Imperial Word", "es-ES": "El peso de una palabra imperial"},
+      "selectedDate": "27 February 380 CE",
+      "sources": [
+        {
+          "type": "primary legal constitution preserved in fifth-century code compilation",
+          "author": "Joint imperial constitution of Gratian, Valentinian II and Theodosius I, Codex Theodosianus 16.1.2 (Cunctos populos); exact drafting author unknown",
+          "issueDate": "27 February 380 per dating clause (dat. III kal. Mar.); issued at Thessalonica, addressed ad populum urbis Constantinopolitanae.",
+          "compilationDate": "Codex Theodosianus compiled under Theodosius II in the fifth century; the surviving code text is not the original dispatched document.",
+          "urlCandidate": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+          "urlActuallyConsulted": "https://www10f0.thelatinlibrary.com/theodosius/theod16.shtml",
+          "candidateStatus": "The dossier's droitromain URL was not opened in this pass; direct Latin code text was consulted at the Latin Library page.",
+          "exactLocator": "CTh 16.1.2 pr. and §1, displayed lines 20-25: heading explicitly addresses Constantinople's population; text names doctrinal formula and labels dissenters heretics; dating clause says Thessalonica, consulship of Gratian V and Theodosius I, III Kalends of March (27 Feb. 380).",
+          "coverageActuallyRead": "Read Latin inscription/heading and full short CTh 16.1.2 on the page; not Mommsen apparatus or manuscript witnesses.",
+          "supports": ["The address/place/date distinction; prescribed formula invoking Peter, Damasus and Peter of Alexandria; threatened legal consequences against assemblies of those deemed heretics."],
+          "doesNotSupport": ["Immediate empire-wide conversion, uniform implementation, closure of all other cults/assemblies across the empire, or an actual event at a particular Thessalonican site."],
+          "biasAndLimitations": "Legal text is prescriptive and coercive, not a report of enforcement. Compilation transmits the constitution; the rubric itself shows the addressee was Constantinople despite Thessalonica issuance."
+        },
+        {
+          "type": "academic primary-context study",
+          "author": "E. D. Hunt, 'Imperial Law or Councils of the Church? Theodosius I and the Imposition of Doctrinal Uniformity', Studies in Church History 43 (Discipline and Diversity), pp.57-68",
+          "publicationDate": "2007; Cambridge Core published online 21 March 2016",
+          "urlCandidate": "https://www.cambridge.org/core/journals/studies-in-church-history/article/abs/imperial-law-or-councils-of-the-church-theodosius-i-and-the-imposition-of-doctrinal-uniformity/27C5C9FDF4D4B9D020FF10DDBDABFD5F",
+          "urlActuallyConsulted": "Same Cambridge Core page.",
+          "exactLocator": "Extract lines 450-452 identifies headquarters at Thessalonica, addressee Constantinople, and summarizes the law; notes 3-4 cite alternative narrower interpretation (Errington) and debate whether police/local or programmatic declaration.",
+          "coverageActuallyRead": "Read publisher's abstract/extract and references only; no full article access claimed.",
+          "supports": ["Geographic addressee/issue-site distinction; scholarly disagreement on reach and immediate function."],
+          "doesNotSupport": ["A final resolution of the scholarly controversy or archaeological attribution of a local Thessalonican venue."],
+          "biasAndLimitations": "Academic article, but only the publisher's displayed extract was accessible; full argument not read."
+        }
+      ],
+      "geographyAndMapControls": {
+        "area": "Constitution issued from Thessalonica and addressed to Constantinople; do not stage the addressed population inside Thessalonica by conflating origin and addressee.",
+        "institutionalMap": "Municipality of Thessaloniki, Thessaloniki Monuments' Map (official-hosted PDF), https://thessaloniki.gr/wp-content/uploads/2019/11/Thessaloniki-Monuments-Map-ENG-Web.pdf ; consulted searchable text/index, especially printed pages 4-5 (PDF pages 4-5): Roman Forum organized from mid-2nd century CE; Galerius palace complex late 3rd/early 4th; ancient road and later churches/walls carry distinct phases. The city guide result for Roman Forum also describes construction phases mid-2nd/mid-3rd c., but its web page returned HTTP 520 and was not read directly.",
+        "relevanceAndLimitations": "The city map is a modern visitor/monument guide, not a georeferenced February 380 urban plan or proof the emperor issued this law from the Roman Forum. PDF map pages 18-19 not visually inspected. It usefully flags later walls, churches, and Galerius structures/phases that must not be collapsed into 380.",
+        "license": "PDF's explicit image/map reuse license not checked/found in consulted pages; no reuse permitted by this audit."
+      }
+    },
+    {
+      "episodeId": "29-council-and-final-perspective-constantinople",
+      "orderAtCollection": 29,
+      "title": {"en": "Under the Same Eastern Sky", "es-ES": "Bajo el mismo cielo oriental"},
+      "selectedDate": "381 CE",
+      "sources": [
+        {
+          "type": "primary fifth-century church-history narrative",
+          "author": "Socrates Scholasticus (Socrates of Constantinople), Ecclesiastical History V.8",
+          "authorDate": "Fifth-century historian, work completed around 439 conventionally; exact date not read from this source page.",
+          "urlCandidate": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "urlActuallyConsulted": "https://catholiclibrary.org/library/view?chunk.id=00000166&docId=%2FFathers-EN%2FSocratesScholasticus.EcclesiasticalHistory.en.html",
+          "exactLocator": "Book V, chapter 8; displayed lines 505-520, especially meeting in May 381 (lines 506-510), subsequent decree giving Constantinople next place of honor after Rome because New Rome (lines 514-516), and reported confirmation of Nicene creed (line 516).",
+          "coverageActuallyRead": "Read V.8 passage and editorial notes in the English online rendering; not Socrates' full work or Greek critical edition.",
+          "supports": ["A synod at Constantinople in 381 with bishops including the Macedonian party; Nicene position reaffirmed; canon/decree ascribed to the bishops gives Constantinople honor after Rome."],
+          "doesNotSupport": ["Modern Catholic-Orthodox division, papal jurisdiction, full wording of the creed now recited, or exact building/meeting room."],
+          "biasAndLimitations": "Fifth-century pro-Nicene church historian, not participant witness; editorial footnotes are modern historical comments."
+        },
+        {
+          "type": "primary conciliar canon text in later transmission/translation",
+          "author": "Canon 3 attributed to the 150 bishops of Constantinople; translated in NPNF/Percival and hosted by New Advent",
+          "dateAndTransmission": "The canon is attributed to the 381 council but survives in later ecclesiastical transmission. Chalcedon 451 explicitly invokes the 150 bishops' Constantinople canon and repeats its privileges (Canon 28).",
+          "urlCandidate": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/3811.htm (Chalcedon text, lines 396-399) and the Socrates V.8 rendering above; New Advent page https://www.newadvent.org/fathers/3808.htm was opened, but retrieval displayed later canon material only, not the desired canon 3 body in this pass.",
+          "exactLocator": "Chalcedon 451 Canon 28, lines 396-399, explicitly recalls the 150 bishops' Constantinople canon and says Constantinople ranks after Old Rome; desired direct body of Constantinople I Canon 3 was not successfully retrieved from New Advent 3808.",
+          "coverageActuallyRead": "Read Chalcedon Canon 28 text; read New Advent Constantinople I page metadata/body segment but not Canon 3 itself there. Socrates V.8 provides the claim in narrative form. No Greek conciliar manuscript apparatus read.",
+          "supports": ["By 451 the canon's New Rome rationale and after-Rome rank were explicitly affirmed; Socrates V.8 attributes the honor ranking to the 381 synod."],
+          "doesNotSupport": ["Any broader jurisdictional right beyond the scope of the honor/canon wording."],
+          "biasAndLimitations": "The 451 text is a later council's confirmation, not a stenographic 381 act. Translation/compiler history matters."
+        },
+        {
+          "type": "later primary council record for creed text and attribution",
+          "author": "Council of Chalcedon, Definition/session text (451), as transmitted in Percival/NPNF translation",
+          "date": "451 CE",
+          "urlCandidate": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "urlActuallyConsulted": "https://www.newadvent.org/fathers/3811.htm",
+          "exactLocator": "Chalcedon preamble/definition lines 232 and 242 refers to decisions of the 150 fathers at Constantinople; Papal Encyclicals intro lines 99-105 states no copy of the 381 doctrinal tome survives and the creed text printed there comes from Chalcedon's acts.",
+          "coverageActuallyRead": "Read selected Chalcedon lines and publisher/compiler introduction in Papal Encyclicals; not full acts or critical edition.",
+          "supports": ["Creed text's attestation/transmission needs to be distinguished from the 381 council itself; Chalcedon attributes a creed to the 150 fathers."],
+          "doesNotSupport": ["That the extant creed wording is directly preserved in contemporaneous 381 minutes."],
+          "biasAndLimitations": "Later council is a primary witness to its own 451 proceedings and to how it attributed the creed, but retrospective for 381."
+        },
+        {
+          "type": "academic editorial synthesis / source note",
+          "author": "Papal Encyclicals compilers' introductory note, using published conciliar scholarship; named author not supplied on page",
+          "publicationDate": "Web page last updated 14 October 2026; introduction's original publication date/author not supplied.",
+          "urlCandidate": "https://www.papalencyclicals.net/councils/ecum02.htm",
+          "urlActuallyConsulted": "Same page.",
+          "exactLocator": "Introduction lines 96-110 and note/translation lines 119-122: says doctrinal tome did not survive, says creed not mentioned by ancient witnesses until Chalcedon, discusses ongoing scholarly disagreement; canon 3's subject is honor/rank.",
+          "coverageActuallyRead": "Read displayed introduction and creed text; this is not a peer-reviewed article and its bibliography/context requires independent checking.",
+          "supports": ["Treating creed attribution as contested transmission and distinguishing canon 3 from creed is warranted."],
+          "doesNotSupport": ["Settling the authorship/production history of the creed. Some alternative arguments point to Epiphanius' Ancoratus (373-374), so 'first attestation' formulation must be edition-specific and carefully qualified."],
+          "biasAndLimitations": "Compiled, translated web edition, not critical council act edition."
+        }
+      ],
+      "geographyAndMapControls": {
+        "area": "Constantinople; no exact meeting venue established in sources consulted. Socrates' V.8 says assembled in Constantinople, not a named church/palace.",
+        "institutionalMapCandidate": "IRCICA/Salt 1938 M. Is. Nomidis archaeological/topographic map of Constantinople. Metadata says expressly 'au moyen âge' / 'im mittelalter'; not suitable as a 381 phase map without phase-by-phase checking. No pixels viewed.",
+        "archaeologyControl": "No institutionally accessible, explicitly 381-phased city plan was inspected in this pass. The map is a locator/topographic lead only, and its medieval scope is an anachronism hazard. No evidence ties the synod to Hagia Irene or another extant venue in sources actually read.",
+        "license": "Salt Research rights metadata states CC BY-NC-ND 4.0 for individual research, credit required and no alterations; do not assume a game project can use it or crop/modify it. IRCICA terms not read. No map copied."
+      }
+    }
+  ],
+  "failedOrPartialConsultations": [
+    {
+      "candidate": "https://romanletters.org/letters/julian_emperor/24/",
+      "status": "Not opened; equivalent text consulted through Wikisource and Tertullian.org."
+    },
+    {
+      "candidate": "https://tertullian.org/fathers/ammian_25_book25.htm",
+      "status": "Not opened; Chicago Latin Book XXV page opened, but precise death passage was not verified."
+    },
+    {
+      "candidate": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/Thessalonique.htm",
+      "status": "Not opened; CTh 16.1.2 read at Latin Library."
+    },
+    {
+      "candidate": "https://www.ccel.org/ccel/schaff/npnf202.ii.xiii.viii.html",
+      "status": "Open returned internal error; Socrates V.8 accessed via CatholicLibrary instead."
+    },
+    {
+      "candidate": "https://maps.cealex.org/maps/alex/ and CartAlex guide",
+      "status": "Interactive map/guide open failed; only CEAlex institutional department text was read."
+    },
+    {
+      "candidate": "Thessaloniki travel Roman Forum institutional/tourism page",
+      "status": "HTTP 520; snippet only. Municipal monuments PDF text/index was read, map pages not visually inspected."
+    },
+    {
+      "candidate": "Ammianus XXV.3 death passage",
+      "status": "Substantive locator remains unverified; do not claim precise wound/date from the Ammianus passage based on this audit."
+    }
+  ],
+  "crossEpisodeCautions": [
+    "26: Ammianus XXII.5 reports general restoration decrees; it does not enumerate Constantinople temples or prove total religious conversion.",
+    "27: Julian's letter is issued from Constantinople and addressed to Alexandrians; exile is an Alexandria local action. Campaign/death is off-map. The arrival/return dates Feb. 9/21 are editorial calendar notes rather than words of Julian's order.",
+    "28: Distinguish issuance Thessalonica, destination Constantinople, and the broad rhetorical phrase 'all peoples'. Legal prescription alone cannot demonstrate empire-wide enforcement.",
+    "29: Socrates V.8 and canon 3 support the council/rank claim; the familiar full creed text has a separate and later transmission history. Avoid calling the received text a verbatim 381 transcript or interpreting canon 3 through modern church divisions."
+  ]
+}

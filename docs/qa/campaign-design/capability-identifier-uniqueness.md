@@ -1,0 +1,11 @@
+# Composed capability identifiers / formal-review corrections
+
+Author gpt-6 · 14 October 2026 · i00003/S1. Base 018c92b2d5eb92a8c978726890e37389acb4d292 includes the independent gpt-6.1-sol `changes_requested` verdict. The fresh independent reviewer gpt-6-sol approved S1 on integrated ebc0b366; formal approval was published on develop at17cf455825124215edeff3771733929521df9bdd. The implementer did not approve this slice.
+
+The formal reviewer reproduced two accepted but ambiguous contracts. A main objective could export two `served` ledgers from different arrival requirements: consumer validation selected the first producer, while reference evaluation overwrote its namespaced result with the second. A delivered original then became ineligible for its legitimate withdrawal. Two disjoint enemy mobilizations named `wave-a` also passed validation, but runtime lookup could reach only the first group.
+
+The existing shared `duplicates` diagnostic helper now checks exported ledger IDs within each objective and mobilization IDs across the profile. `compileCapabilityProfile` rejects them through its existing structural validation gate. IDs are preserved; no schema, campaign identity, reference-state action or native approximation was introduced. The same ledger name remains legal under different objective namespaces.
+
+Three regressions reproduce the ambiguous withdrawal/compilation case, preserve two independently evaluated `served` ledgers in different objectives, and reject duplicate wave names for disjoint rosters while verifying both uniquely named waves release once. Before the correction, both duplicate cases failed their expected rejection and the scoped positive case passed. Afterward all three pass.
+
+The declared local gate passes: 89 Bun tests, 301 assertions, TypeScript/Biome, documentation and campaign validation. Export verification passes three variants and two binary round-trips, with `unsupportedModeRejected=true` and `gameVerified=false`. These checks do not certify the composed profile in AoE2: native v2 remains explicitly unsupported pending i00003/S3, and historical content remains gated separately. Official publication certifies the proposed merge; formal reevaluation must reference that integrated source.

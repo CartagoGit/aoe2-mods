@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "episode_id": "30-policy-reversal-alexandria",
+    "display_order": 28,
+    "research_date": "2026-10-15",
+    "requested_scope": "Read-only review of archaeological/institutional evidence for continental western/central Alexandria, ancient streets, Lake Mareotis/canals, and reconstruction limits around 365 CE; investigate whether Historia Acephala's New River can be located.",
+    "repo_changes": false,
+    "git_or_delendai_actions": false,
+    "approval": false,
+    "collector": "gpt-6-luna",
+    "architectFollowup": {
+      "author": "gpt-6",
+      "date": "2026-10-15",
+      "directReading": "Historia Acephala X15–XI16 and XII17; Majcherek2021 selected domestic/street discussion and unresolved grid statement; Egyptian Ministry short Kom el-Dikka site description.",
+      "notReadByArchitect": "The full Mareotis study/book, NPNF editorial PDF note, variant Socrates/Sozomen hideout accounts and CEAlex lead were not independently read in this follow-up. Retain their attributed collection scope and excerpt limitations.",
+      "designDecision": "Do not plot New River, villa, precise365 shoreline or a complete orthogonal street grid. Six proposed fictional mainland courts remain archaeological/native approval candidates.",
+      "historicalApproval": false
+    }
+  },
+  "findings": {
+    "core_answer_new_river": "No solid archaeological or institutional source located in this audit identifies Historia Acephala's 'New River' with a surveyed canal, maps its route, or places the villa. The ancient passage itself says only that Athanasius went to a villa near the New River; it supplies no coordinates, direction, named district, dimensions, or relation to a particular road or shoreline. The editorial footnote in the older NPNF translation says the river divided Alexandria from its western suburbs, but that is an editor's explanatory identification, not wording of Historia Acephala and not a coordinate-backed archaeological finding. It should be treated as an unverified interpretive lead, not plotted as a fact. No specific canal or villa should be invented from it.",
+    "geographic_context": [
+      "A peer-reviewed geoarchaeological study describes Alexandria's ancient southern waterfront along Lake Mareotis and reconstructed parts of that lacustrine margin from sediment cores, historical maps and written evidence. It proposes Portus Mareoticus and three long jetties in its investigated sector. Its result is a partial palaeogeographic reconstruction, not a complete coastline or water mask for 365.",
+      "The same study reports that the ancient lake waterfront was disconnected in the 9th century as Lake Maryut and the Canopic branch dried, while Alexandria's canal later remained the waterway linking the city to the Nile; it says the westernmost section of that canal reaching the western maritime harbour was completed in the 16th century. These statements concern named lake/river/canal systems at a broad timescale and do not identify the 'New River' mentioned for Athanasius.",
+      "The Lake Mareotis Research Project reports a systematic survey (2004–2008) of the western arm shores, with over 60 sites identified in its pilot season and a total catalogue of 73 sites. Its geographic scope is the lake's western shores, not the exact suburban hideout in the church chronicle.",
+      "Kom el-Dikka, within the modern city center, preserves Roman/Byzantine residential and civic remains. Archaeological street evidence exists there, but the excavated parts are limited and its ancient neighborhood is heavily covered by modern development."
+    ],
+    "street_grid_and_continental_city": {
+      "supported": [
+        "Kom el-Dikka excavations document sections of ancient streets and residential blocks. The basic city grid proposed by 19th-century Mahmud Bey el-Falaki is widely used as a fundamental morphology, but the article notes reservations and equivocal block-size estimates.",
+        "In the excavated northwestern area of Kom el-Dikka, one street section diverges from the orthogonal grid model; the authors explicitly state the street-grid issue is not fully resolved.",
+        "The Egyptian Ministry of Tourism and Antiquities describes Kom el-Dikka as a Roman/Byzantine residential and civic quarter dating broadly 2nd–6th c. CE, with theatre, villa/mosaics, baths and lecture halls; this supports a real central-city archaeological district but not a specific 365 building arrangement."
+      ],
+      "limits": "Kom el-Dikka is not demonstrably the villa site or a marker for the New River. The 1st–2nd-century evidence in the Cambridge archaeology article cannot simply be projected unchanged onto 365. Published grid plans are models built from sparse excavations and older cartographic reconstruction; do not turn them into a fully surveyed playable street network."
+    },
+    "water_and_coastline_limits": [
+      "Lake Mareotis and the Nile/Canopic-channel network are established regional features; southern lake shoreline archaeology is being reconstructed using cores, ancient maps and literature, and Portus Mareoticus remains a proposed location in the cited research.",
+      "A named Alexandria canal and a western canal extension need to be kept distinct: the geoarchaeological article dates the far-western extension to the 16th c. and distinguishes it from earlier waterway connections. The broad word 'canal' in a secondary interpretation is insufficient to identify Historia Acephala's 'New River.'",
+      "The 365 event cannot be assigned an exact contemporaneous shoreline, water level, canal course, flood extent, island arrangement, or dry/wet land polygon from these sources. No inference should be drawn from present-day open water or dry urban parcels alone."
+    ],
+    "coordinates": {
+      "published_coordinates_found_for_new_river_or_villa": false,
+      "published_coordinates_found_for_a_365_canal_route_in_western_or_central_city": false,
+      "records": [],
+      "note": "No coordinates are included because the sources read do not publish a coordinate for the New River, villa, or a securely located 365 channel. Generic modern city/site map pins would not answer that question and were omitted."
+    },
+    "historical_and_reconstruction_limits": [
+      "Historia Acephala X.15–XI.16 directly supports the dated imperial order, Alexandrian dispute, Athanasius's departure from the church at night to an unnamed villa 'near the New River', and the officials' later visit to the Church of Dionysius; it does not name the river's route or locate the villa.",
+      "Historia Acephala XII.17 summarizes four months at the property near the new river, again without a precise location.",
+      "The NPNF editor's note adds 'i.e. in the western suburb' and separately says the New River divided Alexandria from its western suburbs. This locational gloss is external editorial interpretation. The same note reports that Socrates IV.13 places Athanasius in his father's tomb and Sozomen VI.12 gives a vague place in hiding; those are variant/competing later accounts, not a surveyed villa itinerary.",
+      "There is no support here for reconstructing a villa, naming a district, or showing a hidden route from the Church of Dionysius to a precise watercourse. The separate source-audit file also records that Historia Acephala is Athanasius-favorable and that its local claims are not a surveyed itinerary."
+    ]
+  },
+  "sources_read": [
+    {
+      "title": "AGENTS.md (project instructions)",
+      "url": "local: /home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/AGENTS.md",
+      "passages_read": "Entire file.",
+      "use_and_limit": "Read for scope constraints; no Git, DelendAI operations, contract changes, game approval or repo edits undertaken."
+    },
+    {
+      "title": "imperial30-source-audit.json",
+      "url": "local: /home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/research/odyssey-research/imperial30-source-audit.json",
+      "passages_read": "Entire file.",
+      "use_and_limit": "Existing source audit supplied by root; records New River/villa as uncertified and the Historia Acephala caveats."
+    },
+    {
+      "title": "Historia Acephala (Athanasius), NPNF translation",
+      "publisher": "New Advent / Nicene and Post-Nicene Fathers translation",
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "passages_read": "Sections X.15–XI.16, XII.17; lines 51–60 in the opened page. X.15 describes the order and dispute; XI.16 says the bishop went secretly from the church to a villa near the New River and later was fetched from that place; XII.17 totals four months at property near the new river.",
+      "use_and_limit": "Primary chronicle in English translation; source report, not survey or precise local itinerary."
+    },
+    {
+      "title": "NPNF editorial note 85 to Historia Acephala XI.16",
+      "publisher": "Schaff, NPNF Second Series, Volume IV; searchable digitized edition",
+      "url": "https://web.donbosco.datanet.ro/03d/1819-1893%2C_Schaff._Philip%2C_3_Vol_04_Athanasius%2C_EN.pdf",
+      "passages_read": "Search result excerpt at the note to XI.16: it says the New River divided Alexandria from its western suburbs; it also contrasts Socrates IV.13 (father's tomb) and Sozomen VI.12 (unspecified place).",
+      "use_and_limit": "19th-century editor's gloss, not the ancient chronicle's own location data; not independently supported by archaeological coordinates in this audit."
+    },
+    {
+      "title": "Geoarchaeology of Portus Mareoticus: Ancient Alexandria's lake harbour (Nile Delta, Egypt)",
+      "authors": "Clément Flaux, Mena El-Assal, Cécile Shaalan, Nick Marriner, Christophe Morhange, Magdy Torab, Jean-Philippe Goiran, Jean-Yves Empereur",
+      "publisher": "Journal of Archaeological Science: Reports 13 (2017), pp. 669–681; DOI 10.1016/j.jasrep.2017.05.012",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352409X17300962",
+      "passages_read": "Abstract and accessible article excerpts including Introduction/sections on ancient Lake Mareotis waterfront, canal links, the proposed Portus Mareoticus location and jetties, Roman-period chronology, desiccation, and the date of western canal extension.",
+      "use_and_limit": "Peer-reviewed geoarchaeology; supports broad southern/lacustrine context and change over time. Portus location is expressly proposed from cores/maps/texts; it does not identify the New River or a precise 365 shoreline. The paper is publisher-copyrighted; no full text copied into project."
+    },
+    {
+      "title": "A Multidisciplinary Approach to Alexandria's Economic Past: The Lake Mareotis Research Project",
+      "authors": "Lucy Blue, Emad Khalil, Athena Trakadas",
+      "publisher": "BAR Publishing / University of Southampton Series in Archaeology, published 2011",
+      "url": "https://www.fulcrum.org/concern/monographs/9k41zg21h",
+      "passages_read": "Project description lines 44–48: 2004–2008 survey by Southampton CMA and Egyptian Supreme Council for Antiquities/University of Alexandria partners; over 60 sites identified in pilot season; 73-site catalogue; geomorphological survey context. The full book is marked restricted and was not read.",
+      "use_and_limit": "Institutional project summary only; cannot stand in for the inaccessible full report or establish the villa/river route."
+    },
+    {
+      "title": "Streets and houses of Roman Alexandria revisited",
+      "author": "Grzegorz Majcherek, Polish Centre of Mediterranean Archaeology, University of Warsaw",
+      "publisher": "Antiquity 95(379), February 2021, e4; DOI 10.15184/aqy.2020.242",
+      "url": "https://www.cambridge.org/core/journals/antiquity/article/streets-and-houses-of-roman-alexandria-revisited/71B9F539334D3FCA6A222D43FF0219D2",
+      "passages_read": "Article lines 488–512: small surviving domestic sample; Kom el-Dikka finds; accepted but qualified basic grid; need for secondary streets; excavated street sections; measured gaps; northwestern Kom el-Dikka street deviating from the orthogonal grid; authors say grid issue remains unresolved. Lines 476–480 identify open CC BY 4.0 reuse status, not used to download images.",
+      "use_and_limit": "Peer-reviewed excavation-based article; strong evidence for local streets but not a complete city plan, 365 snapshot, or New River location."
+    },
+    {
+      "title": "Kom el-Dikka",
+      "publisher": "Egyptian Ministry of Tourism and Antiquities, Discover Egypt's Monuments",
+      "url": "https://egymonuments.gov.eg/archaeological-sites/kom-el-dikka/",
+      "passages_read": "Lines 131–142: central modern Alexandria site with Roman/Byzantine residential/civic remains (2nd–6th c.), theatre, Villa of Birds, baths and lecture halls.",
+      "use_and_limit": "Official institutional overview of a site; broad dating and modern location only, not a pinpoint for the New River or event."
+    },
+    {
+      "title": "Along the Canopic Way",
+      "publisher": "Centre d'Études Alexandrines (CEAlex), research/excavation summary",
+      "url": "https://www.cealex.org/research/excavations-in-the-process-of-being-published/along-the-canopic-way/",
+      "passages_read": "Search excerpt: Fouad site at Ramleh Station below Kom el-Dikka, close to the Plateia/major east-west axis; rescue excavations 2000–2004 reached in-place levels below modern fill at 7 m depth and identified successive levels/abandonment. The page timed out on direct open in this audit; claims are retained only as a search-excerpt lead, not used for precise reconstruction.",
+      "use_and_limit": "French archaeological research center; useful corroborative lead for modern urban cover and east-west axis. Direct page could not be opened, so treat as lower-confidence until a reader checks it."
+    }
+  ],
+  "limitations_and_gaps": [
+    "No solid identification or coordinates for the New River or the villa were found.",
+    "The New River = western suburb dividing watercourse identification comes from an NPNF editor's note; it is not present as a geographic explanation in the primary chronicle and is not corroborated here by an archaeological report.",
+    "Some useful full archaeological/geoarchaeological publications are copyrighted or access-restricted; only permitted abstracts, institutional summaries and accessible excerpts were read. No PDFs were copied into the project.",
+    "No coordinates are asserted. Existing sources give broad contexts and excavated locations but the consulted pages did not publish a sufficiently justified coordinate for the specific questions asked.",
+    "This dossier reports source evidence and gaps; it does not approve historical interpretation, map design, gameplay, or any imagined shoreline.",
+    "The date 365 belongs to a broad period with changing urban and water systems. Available sources do not establish which city street alignments, shoreline segments, or canals were open at a precise date in 365."
+  ]
+}

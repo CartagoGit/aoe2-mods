@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "purpose": "Record the one missing semantic archival research binding and its insufficient historical support, without changing canonical identity/date/contract.",
+  "consultations": [
+    {
+      "id": "unesco-bet-shearim-finale-context",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://whc.unesco.org/en/list/1471/",
+      "title": "UNESCO World Heritage Centre, Necropolis of Bet Shearim",
+      "locator": "English description; Outstanding Universal Value, brief synthesis and criterioniii; authenticity paragraph",
+      "access": "article-passage",
+      "readScope": "Read those English sections only; not the nomination dossier, inscriptions, excavation record or other language versions.",
+      "finding": "The page places the necropolis and Jewish renewal in a broad second–fourth-century context, associated with Judah the Patriarch, and distinguishes later abandonment.",
+      "limits": "No exact 425 end of the patriarchate, closure of the Jerusalem Talmud, archive, local study event, identical Mishnah/Talmud corpus or lifetime of a fictional narrator is established. The source’s broad after 135 framing is not Judah’s biographical birth/accession date. Description license does not license every linked photograph."
+    },
+    {
+      "id": "cth-patriarchal-tax-retrospective-429",
+      "realIdentity": "gpt-6",
+      "date": "2026-10-24",
+      "url": "https://www.thelatinlibrary.com/theodosius/theod16.shtml",
+      "title": "Theodosian Code16.8.29, Latin Library transcription",
+      "locator": "CTh16.8.29, dateline30 May 429; compared16.8.22(20 October 415) only as preceding legal context",
+      "access": "article-passage",
+      "readScope": "Read these two Latin clauses and supplied datelines in the web transcription. No manuscript/critical edition or modern translation collated.",
+      "finding": "The429 clause refers retrospectively to the demise of patriarchs and redirects former payments; the415 clause addresses Gamaliel’s honor/jurisdiction.",
+      "limits": "A429 law does not state an exact 425 abolition date, prove universal enforcement or date the Talmud’s completion. It is later dossier context, not a document available to a425 narrator. Legal invective remains attributed imperial language; no own translation quoted as authoritative."
+    }
+  ],
+  "records": [
+    {
+      "id": "04-the-living-margin",
+      "campaignId": "jewish-tradition",
+      "dateInDesign": "c.425 CE; editorial limit, patriarchate end approximate",
+      "placeInDesign": "galilee",
+      "sourceUrl": "https://whc.unesco.org/en/list/1471/",
+      "locator": "English description; Outstanding Universal Value, brief synthesis and criterioniii; authenticity paragraph",
+      "consultationStatus": "gpt-6 personally read bounded UNESCO context; it does not establish the selected425 editorial boundary",
+      "readScope": "Read those English sections only; not the nomination dossier, inscriptions, excavation record or other language versions.",
+      "classification": "Fresh architect bounded source-gap check; no historical approval.",
+      "cautions": "The finale remains an editorial boundary. UNESCO supplies broad heritage context, not425or a completed Talmud. The429fiscal clause is retrospective and cannot become a425scene or establish an exact abolition date."
+    }
+  ],
+  "decisions": [
+    "Do not use Judah the Patriarch’s second–third-century legacy as proof of a425 biographical event.",
+    "Keep c 425 explicitly editorial; neither the tax law nor UNESCO establishes a single final editing day or disappearance of Galilean learning.",
+    "Any future final perspective must attribute later historical context to the common narrator and respect Judith’s lifetime/knowledge. A429 document is unavailable in a425 fictional scene.",
+    "Completing a research link does not complete its dossier, historical acceptance, terrain, budgets, secondary objectives or game tests."
+  ]
+}

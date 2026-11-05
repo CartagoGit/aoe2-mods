@@ -1,0 +1,219 @@
+{
+  "auditVersion": 2,
+  "records": [
+    {
+      "locationId": "mecca",
+      "priority": "high",
+      "sourceUrl": "https://djhr.uodiyala.edu.iq/index.php/DJHR2022/article/view/1753",
+      "sourceTitle": "آبار مكة قبل الإسلام (دراسة في الجغرافية التاريخية) [Wells of Mecca before Islam: a study in historical geography]",
+      "sourceType": "Academic journal article; University of Diyala journal page; abstract/metadata consulted",
+      "locator": "Article landing page, abstract; vol. 66 (2022), pp. 481–504",
+      "claim": "The abstract describes Mecca's water scarcity and the importance of wells, including Zamzam and wells serving homes and routes. This supports a broad water-scarcity/well-dependence characterization, not a mapped inventory of wells.",
+      "uncertainty": "Only the landing-page abstract/metadata was consulted; article body and archaeological provenience of individual wells were not verified. Do not infer the pre-Islamic urban footprint or exact water availability at a particular date.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "General hydrological context only; no verified dated aquifer/well chronology in the consulted abstract.",
+      "consultedScope": "Opened article landing page and read abstract/metadata; full text not consulted."
+    },
+    {
+      "locationId": "mecca",
+      "priority": "high",
+      "sourceUrl": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mecca",
+      "sourceTitle": "Mecca, Encyclopaedia Britannica (11th edition, 1911)",
+      "sourceType": "Historical reference work, full transcribed article",
+      "locator": "Sections describing situation and routes, approximately lines 99–117 in the web transcription",
+      "claim": "Gives a rough position of 21°25′ N, 39°50′ E; describes a narrow, barren valley amid hills, scarce cultivation, rainwater drainage, and routes toward Mina/Arafat, Yemen, Wadi Fatima/Medina, and Jeddah.",
+      "uncertainty": "This is an old secondary description and its coordinate is a rough early-20th-century estimate, not a surveyed archaeological coordinate. Route descriptions are not a verified map of the 7th-century settlement. Do not use it to locate an episode more precisely than the source permits.",
+      "coordinates": {
+        "value": "21°25′N, 39°50′E",
+        "qualification": "rough estimate stated in 1911 reference article"
+      },
+      "fortificationOrHydrologyChronology": "Mentions rainwater drainage and scarce cultivation without a dated hydrological sequence.",
+      "consultedScope": "Opened and read the transcribed article sections on situation, topography, water, and routes."
+    },
+    {
+      "locationId": "medina",
+      "priority": "high",
+      "sourceUrl": "https://saudipedia.com/وادي-العقيق-في-المدينة-المنورة",
+      "sourceTitle": "وادي العقيق في المدينة المنورة [Wadi al-Aqiq in Medina], Saudipedia",
+      "sourceType": "Official Saudi encyclopedia; full article",
+      "locator": "Sections on location/course and historical importance, lines 12–19, 28–39, 66–72",
+      "claim": "Describes Wadi al-Aqiq as a seasonal watercourse west of Medina, tracing a course from south of the city past Dhu al-Hulayfa and toward its confluence with Wadi Buthan and Wadi Qanat. The article attributes historical significance and palaces along its banks to later periods.",
+      "uncertainty": "The article's account that the wadi was historically like a continuously flowing river is not independently established here for the 7th century. Modern course and named confluences are not proof of ancient channels or battle locations.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Seasonal-flow characterization; later palace references are not evidence for 7th-century structures. No dated channel-change sequence supplied.",
+      "consultedScope": "Opened and read the full Saudipedia article, including its cited-source section."
+    },
+    {
+      "locationId": "basra",
+      "priority": "high",
+      "sourceUrl": "https://www.iranicaonline.org/articles/basra/",
+      "sourceTitle": "Basra, Encyclopaedia Iranica, Fred M. Donner",
+      "sourceType": "Academic encyclopedia article; full text",
+      "locator": "Paragraphs 'Foundation and early history', lines 33–43; abandonment, lines 74–81",
+      "claim": "Places early Basra near the Shatt al-Arab in southern Iraq and says it was established about 17/638 as a camp and garrison at the older site called Khurayba, near modern Zubayr and Obolla. Canals, especially Nahr al-Obolla, connected it to the Shatt; early shelters used reeds from nearby marshes. The article says the original site was abandoned in 900/1495 for lack of fresh water and population moved about 25 km east to the modern site.",
+      "uncertainty": "The article distinguishes early Basra from modern Basra. The 'near Zubayr' relation is not a precise archaeological point. Its late abandonment statement is much later than the relevant campaign period and is included only as hydrological/site chronology context. No battle positions inferred.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Canal connection and marsh/reed environment at foundation; source attributes original-site abandonment in 1495 to freshwater scarcity.",
+      "consultedScope": "Opened and read the complete article, especially the foundation, canal, and original-site abandonment passages."
+    },
+    {
+      "locationId": "karbala",
+      "priority": "high",
+      "sourceUrl": "https://www.researchgate.net/profile/Jaafar-Jotheri/publication/292140080_Holocene_Avulsions_of_the_Euphrates_River_in_the_Najaf_Area_of_Western_Mesopotamia_Impacts_on_Human_Settlement_Patterns/links/59ece0beaca272cddde05b83/Holocene_Avulsions_of_the_Euphrates_River_in_the_Najaf_Area_of_Western_Mesopotamia_Impacts_on_Human_Settlement_Patterns.pdf",
+      "sourceTitle": "Holocene Avulsions of the Euphrates River in the Najaf Area of Western Mesopotamia: Impacts on Human Settlement Patterns, Jaafar Jotheri et al., Geoarchaeology (2016)",
+      "sourceType": "Peer-reviewed geoarchaeology article; accessible full PDF",
+      "locator": "PDF p. 11, discussion of the Pallukkatu channel, approx. lines 438–466",
+      "claim": "The authors discuss a reconstructed Pallukkatu channel dated broadly 539 BCE–1258 CE and say it appears to turn southeast near Karbala and run along the toe of the Al-Khir alluvial fan at least toward Kufa.",
+      "uncertainty": "This is a reconstructed palaeochannel, not the modern river position. The authors note uncertainty in channel routes and the need for field confirmation. It does not locate the 680 battle or establish an exact 7th-century watercourse at a particular point. No battle position inferred.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Broad palaeochannel interval only; do not treat 539 BCE–1258 CE as proof the channel occupied one unchanged course throughout.",
+      "consultedScope": "Opened and read the PDF discussion of channel reconstruction and Karbala; consulted the paper body, not merely its abstract."
+    },
+    {
+      "locationId": "ctesiphon",
+      "priority": "high",
+      "sourceUrl": "https://www.iranicaonline.org/articles/ctesiphon/",
+      "sourceTitle": "Ctesiphon, Encyclopaedia Iranica",
+      "sourceType": "Academic encyclopedia article; full text",
+      "locator": "Geographical setting and urban development sections, including lines 55–60 and 70–79 in opened page",
+      "claim": "Describes Ctesiphon as an extensive urban complex on the Tigris near Seleucia, roughly 35 km south of later Baghdad. The Parthian city is tentatively placed on the east bank opposite Seleucia, but that sector was not systematically surveyed. The Sasanian metropolis included settlements on both riverbanks; the Tigris shifted around the mid-5th century, with flooding affecting Weh-Ardashir and later urban fortunes.",
+      "uncertainty": "The article explicitly flags the location of the Parthian city and the complex topography as uncertain; Ctesiphon is not a single point. River shifts and flood impacts are historical reconstructions; do not flatten the urban complex into one coordinate or infer a battle locus.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Tigris-channel shift around mid-5th century and associated flood impact, according to the article; urban zone spans both banks in the Sasanian period.",
+      "consultedScope": "Opened the Iranica entry and read its location, urban-area, river-shift, and excavation/uncertainty passages."
+    },
+    {
+      "locationId": "nihavand",
+      "priority": "high",
+      "sourceUrl": "https://www.iranicaonline.org/articles/nehavand/",
+      "sourceTitle": "Nehāvand, Encyclopaedia Iranica, C. E. Bosworth",
+      "sourceType": "Academic encyclopedia article; full text",
+      "locator": "Opening geographic description, lines 31–32",
+      "claim": "Locates modern Nihavand in western Iran in the northern Zagros, gives 34°11′N, 48°22′E and elevation 1,786 m, about 90 km south of Hamadan across the Alvand Kuh massif. The article describes streams as providing abundant water to the town and agricultural hinterland and notes the Giyan Tepe excavations.",
+      "uncertainty": "Coordinates and elevation identify the modern town/reference location, not the battlefield. The opening geography does not establish that every stream flowed in the same way in the 7th century; no precise ancient battle coordinates are provided.",
+      "coordinates": {
+        "value": "34°11′N, 48°22′E",
+        "qualification": "coordinates explicitly given by Iranica for Nihavand"
+      },
+      "fortificationOrHydrologyChronology": "Streams and agricultural water are described generally; no dated watercourse or fortification chronology in the consulted passage.",
+      "consultedScope": "Opened and read the article's geographic overview and checked its identified coordinates/elevation."
+    },
+    {
+      "locationId": "fustat",
+      "priority": "high",
+      "sourceUrl": "https://www.ucl.ac.uk/museums-static/digitalegypt/fustat/info.html",
+      "sourceTitle": "Information to Fustat, Digital Egypt for Universities, UCL",
+      "sourceType": "University museum/archaeology project page; full page",
+      "locator": "Opening historical account and excavation-history paragraphs, lines 2–18",
+      "claim": "The page says that during the siege of the Babylon fortress, an army camp was established next to the fortress (dated there to 9 April 641); it explains the name Fustat in relation to a moat/ditch and records excavation campaigns beginning in 1912.",
+      "uncertainty": "The consulted page supports adjacency to Babylon fortress, not an exact settlement polygon or precise Nile shoreline. The date and etymology are the page's historical account; no independently consulted primary excavation report here. Do not import inaccessible chapter abstracts or search snippets as evidence.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Association with the Babylon fortress is stated for the 641 foundation context; the page does not provide a Nile-channel chronology or exact fortification survey.",
+      "consultedScope": "Opened and read the UCL page. Other search results about Fustat's port/Nile landscape were inaccessible and are not used as claims."
+    },
+    {
+      "locationId": "merv",
+      "priority": "high",
+      "sourceUrl": "https://whc.unesco.org/en/list/886",
+      "sourceTitle": "State Historical and Cultural Park 'Ancient Merv', UNESCO World Heritage Centre",
+      "sourceType": "Official UNESCO World Heritage property page",
+      "locator": "Description and justification, lines 51–58 and 69–71",
+      "claim": "Describes Merv as a series of urban centers in the Murgab river oasis. Lists successive walled areas: Erk Kala, with surviving walls up to 30 m; Gyaur Kala, roughly square with walls about 2 km long; and medieval Sultan Kala, with 12 km of walls. It also reports settlement shifts as the riverbed moved gradually east to west and notes groundwater rise and salinization.",
+      "uncertainty": "The page summarizes long-period site history and does not date every riverbed movement precisely. Wall measurements describe remains/site features, not necessarily intact defenses at every date. No single coordinate or exact oasis boundary inferred from this page.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Urban centers and fortification sequence across multiple periods; UNESCO page says riverbed shifts accompanied settlement relocation but gives no exact dates for each shift.",
+      "consultedScope": "Opened and read the UNESCO property description and justification, including fortification and water/settlement-change passages."
+    },
+    {
+      "locationId": "nishapur",
+      "priority": "high",
+      "sourceUrl": "https://www.iranicaonline.org/articles/nishapur-06-archaeology/",
+      "sourceTitle": "Nishapur vi. Archaeology, Encyclopaedia Iranica, Rocco Rante",
+      "sourceType": "Academic encyclopedia article; full text",
+      "locator": "Geographic setting and water supply, lines 30–36; early Islamic site/rampart discussion, line 65",
+      "claim": "Places archaeological Nishapur on a fertile plain divided by the endorheic Shurarud, bounded by the Binalud foothills and marshy/saline Shurarud area, with the Mirabad and Buzan streams framing the site. Describes upstream surface-water supply and downstream qanats, which ended uphill of the city, where water was raised through wells. It places the archaeological area about 2 km southeast of the modern city. The article also describes early Islamic Shadyakh as enclosed by a strong rampart.",
+      "uncertainty": "Modern archaeological site limits and modern city are distinct; the article describes a wider and changing settlement landscape. The water-system description should not be presumed invariant for every century. The rampart statement concerns the early Islamic urban account and does not give a surveyed surviving wall line in the cited passage.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Surface water, qanats, and wells described as a regional supply pattern; strong rampart belongs to the early Islamic city discussion, with no exact construction date stated in the cited passage.",
+      "consultedScope": "Opened and read the full archaeological entry's site-setting, water-supply, urban-distance, and rampart passages."
+    },
+    {
+      "locationId": "wasit",
+      "priority": "high",
+      "sourceUrl": "https://whc.unesco.org/en/tentativelists/1468/",
+      "sourceTitle": "Wasit, UNESCO World Heritage Centre Tentative List submission",
+      "sourceType": "Official UNESCO Tentative List page reproducing State Party submission",
+      "locator": "Description and history sections, lines 56–81",
+      "claim": "The Iraqi State Party submission places Wasit 54 km from Kut along the UM Adejail road, says it was built in the last quarter of the first Hijri century as an administrative center, gives a 16 km city circumference, and attributes abandonment to a shift in the Tigris bed. It reports excavations in 1936–42 and 1985 and identifies the mosque and adjacent emirate house/minaret among remains.",
+      "uncertainty": "This is a State Party tentative-list nomination, not an independent UNESCO evaluation. Its English translation is rough. It dates abandonment as the 'tenth Hijri century'; that wording is retained without silently converting it. The 54 km relation is not a coordinate. River shift is the nomination's account, not independently verified hydrological dating here.",
+      "coordinates": null,
+      "fortificationOrHydrologyChronology": "Reported city perimeter 16 km; abandonment attributed to Tigris course change, with no exact date/route for that change in the consulted submission.",
+      "consultedScope": "Opened and read the official Tentative List entry, including the State Party description/history and stated excavation chronology."
+    }
+  ],
+  "notes": [
+    "Ten named priority locations have at least one opened source; each record distinguishes exact textual claims from geographic interpretation.",
+    "No battle position is inferred from a modern city, river, or regional landscape description.",
+    "Coordinates are recorded only when the consulted source explicitly supplies them; otherwise they remain null.",
+    "For Karbala, the palaeochannel reconstruction is not a precise 680-era river position. For Wasit, UNESCO hosts a State Party tentative-list submission, not an independent evaluation.",
+    "Mecca water scarcity/wells is based on an abstract-only journal-page consultation; UCL Fustat is a museum-project history page, not a consulted excavation monograph."
+  ],
+  "sources": [
+    {
+      "url": "https://djhr.uodiyala.edu.iq/index.php/DJHR2022/article/view/1753",
+      "title": "Wells of Mecca before Islam: a study in historical geography",
+      "consultedScope": "Article landing page and abstract/metadata only."
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mecca",
+      "title": "Mecca, Encyclopaedia Britannica (1911)",
+      "consultedScope": "Transcribed article sections on topography, water, and routes."
+    },
+    {
+      "url": "https://saudipedia.com/وادي-العقيق-في-المدينة-المنورة",
+      "title": "Wadi al-Aqiq in Medina, Saudipedia",
+      "consultedScope": "Full article including route, seasonal character, and historical account."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/basra/",
+      "title": "Basra, Encyclopaedia Iranica",
+      "consultedScope": "Full article, especially foundation, waterways, and original-site abandonment."
+    },
+    {
+      "url": "https://www.researchgate.net/profile/Jaafar-Jotheri/publication/292140080_Holocene_Avulsions_of_the_Euphrates_River_in_the_Najaf_Area_of_Western_Mesopotamia_Impacts_on_Human_Settlement_Patterns/links/59ece0beaca272cddde05b83/Holocene_Avulsions_of_the_Euphrates_River_in_the_Najaf_Area_of_Western_Mesopotamia_Impacts_on_Human_Settlement_Patterns.pdf",
+      "title": "Holocene Avulsions of the Euphrates River in the Najaf Area, Geoarchaeology (2016)",
+      "consultedScope": "Full PDF, including discussion of Pallukkatu palaeochannel and Karbala; caveats on reconstruction."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/ctesiphon/",
+      "title": "Ctesiphon, Encyclopaedia Iranica",
+      "consultedScope": "Full entry, location, urban extent, Tigris shifts, and uncertainty passages."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/nehavand/",
+      "title": "Nehāvand, Encyclopaedia Iranica",
+      "consultedScope": "Full entry consulted; geographic overview and explicit town coordinates/elevation."
+    },
+    {
+      "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/fustat/info.html",
+      "title": "Information to Fustat, Digital Egypt for Universities, UCL",
+      "consultedScope": "Full page on foundation beside Babylon fortress and excavation history."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/886",
+      "title": "State Historical and Cultural Park Ancient Merv, UNESCO",
+      "consultedScope": "Full property description/justification, walls, settlement and watercourse change."
+    },
+    {
+      "url": "https://www.iranicaonline.org/articles/nishapur-06-archaeology/",
+      "title": "Nishapur vi. Archaeology, Encyclopaedia Iranica",
+      "consultedScope": "Full entry, site geography, water supply, archaeological/modern city relation, rampart passage."
+    },
+    {
+      "url": "https://whc.unesco.org/en/tentativelists/1468/",
+      "title": "Wasit, UNESCO Tentative List",
+      "consultedScope": "Full official page; State Party description, chronology, dimensions, excavation and river-shift account."
+    }
+  ],
+  "architectStatus": "consulted collection retained; geographic interpretation and independent approval pending"
+}
