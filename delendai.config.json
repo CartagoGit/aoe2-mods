@@ -175,17 +175,19 @@
 		"profile": "shared-checkout-merge",
 		"branches": {
 			"integration": "develop",
-			"release": "master"
+			"release": "main"
 		}
 	},
 	"validationMatrix": {
 		"scopes": {
 			"project": [
 				{
-					"command": "bun install --frozen-lockfile"
+					"command": "bun install --frozen-lockfile",
+					"expect": "exit0"
 				},
 				{
-					"command": "bun run validate"
+					"command": "bun run validate",
+					"expect": "exit0"
 				}
 			]
 		}
