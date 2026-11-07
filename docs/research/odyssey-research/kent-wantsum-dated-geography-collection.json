@@ -1,0 +1,140 @@
+{
+  "title": "Kent/Wantsum dated-geography evidence collection — episode 18",
+  "created": "2026-10-25",
+  "researcherIdentity": "gpt-6-luna",
+  "proposal": "d00002",
+  "slice": "S5",
+  "topic": "kent-wantsum-dated-evidence",
+  "status": "research-only; architect decision pending; no profile or episode approval",
+  "episode": {
+    "campaignId": "church-of-rome",
+    "episodeId": "18-hospitality-and-mission-supply-kent",
+    "displayOrder": 18,
+    "dateRange": "596–597 CE",
+    "scopeNote": "Kent is the local episode; Rome appears only in the dispatch prologue. This collection tests dated evidence for the former Wantsum/channel environment and does not locate a landfall, crossing, route, shore or dry-ground polygon."
+  },
+  "selectionBasis": "docs/design/episode-plans/church-of-rome/18-kent-geography-candidate.json and docs/design/episode-plans/church-of-rome/18-kent-geography.architect-brief.md; reviewed alongside docs/qa/campaign-design/kent-regional-geography-independent-review.md. Candidate and existing Historic England report remain prior work, not new readings claimed here.",
+  "scope": "Five bounded sources at most. Search-result snippets, abstracts, metadata and selected passages are distinguished from full reports. No full technical report, full book, field archive, or unpublished report is claimed as read. The central question is whether public dated stratigraphy resolves the Wantsum in 596–597; the collected material does not supply a local year-specific water mask.",
+  "sources": [
+    {
+      "id": "kent-sealink-geoarch-dba-2025",
+      "title": "Sea Link — Geoarchaeological Desk-Based Assessment, Volume 6 Environmental Information, Appendix 3.3.G",
+      "authors": ["Stantec project team; individual author names were not exposed in the consulted excerpts"],
+      "publication": "Planning Inspectorate application document EN020026-000433; revision 2 dated 13 January 2025, quality check and independent review dated 17 January 2025; Project 331201545",
+      "url": "https://nsip-documents.planninginspectorate.gov.uk/published-documents/EN020026-000433-6.3.3.3.G%20ES%20Appendix%203.3.G%20Geo-archaeological%20Desk%20Based%20Assessment.pdf",
+      "locator": "PDF printed pp. 5–6, 12–14 and References p. 28 as exposed in indexed public excerpts; §5.2 Weatherlees Hill; §5.3 Richborough Connection Project; Ash Levels section (boreholes 52–60).",
+      "accessed": "2026-10-25",
+      "accessStatus": "Selected indexed PDF passages read; direct PDF open failed because the browser reported content too large (13.7 MB). No complete PDF read or local copy made.",
+      "passagesRead": "The assessment says the Weatherlees Hill excavation was limited to the upper 3 m; its basal radiocarbon determinations are Neolithic and Bronze Age, and their reliability was questioned because the dated material may have been reworked. It describes a Richborough Connection geoarchaeological transect of 36 boreholes from Nethergong Penn Valley to near Ebbsfleet, with post-excavation assessment results and further environmental analysis plus enhanced radiocarbon and OSL dating still proposed. The site-specific focus is boreholes 52–60 in the Ash Levels. The references list the 2020 RCP report 2019110 and a forthcoming Wantsum landscape-change study.",
+      "supports": "This is a relevant current synthesis identifying where deep sequences and future dating work exist. Its consulted passages do not give a calibrated sixth–seventh-century age, a 596–597 shoreline, or a dated crossing at episode scale. The Weatherlees basal dates cannot be transferred to the 6th century and are explicitly questioned.",
+      "limits": "Desk-based assessment of a much wider Sea Link scheme; Ash Levels are not a map of the whole channel or a site-specific Augustine landing. The 36-borehole RCP results described here were still in post-excavation assessment and additional dating was proposed. Search-index excerpts do not establish the full stratigraphy, sample context, coordinate set, calibrated ranges, or results beyond those excerpts.",
+      "rights": "No PDF pages, figures, maps, or borehole data copied. Copyright/reuse terms were not verified; citation and concise paraphrase only."
+    },
+    {
+      "id": "kent-rcp-borehole-transect-aea-poster-abstract",
+      "title": "The Richborough Connection Project: 13,000 years of natural and human-induced landscape change in the Wantsum Channel, Kent",
+      "authors": ["Alice Dowsett et al.; the search-exposed poster extract did not show its full author list"],
+      "publication": "Poster/abstract in the Association for Environmental Archaeology 42nd Conference material; the report it cites as the underlying project is Archaeology South-East Report 2019110 (2020), by A. Margetts, A. Dowsett, K. Krawiec and M. Bates, post-excavation assessment and updated project design",
+      "url": "https://esharp.org.uk/media/Media_880967_smxx.pdf",
+      "relatedReport": "https://nsip-documents.planninginspectorate.gov.uk/published-documents/EN020026-000433-6.3.3.3.G%20ES%20Appendix%203.3.G%20Geo-archaeological%20Desk%20Based%20Assessment.pdf",
+      "locator": "Search-indexed poster abstract; related report metadata cited in Sea Link DBA References p. 28. Poster PDF open timed out; the underlying client report was not located or opened.",
+      "accessed": "2026-10-25",
+      "accessStatus": "Abstract excerpt and report citation metadata only; not the poster's maps/data tables and not report 2019110 itself.",
+      "passagesRead": "The abstract reports 39 lithologically logged boreholes over a 13.5 km Wantsum Valley transect, subsampling for palaeoenvironmental remains, and four key boreholes analysed and dated, the deepest with 27 m of late-Quaternary sediments. It describes an interpretation from c.13,000 BP through natural and human landscape signals to the medieval period. It names woodland clearance, changes in tree taxa and agriculture as examples, and says destabilisation may have contributed to channel infilling.",
+      "supports": "A substantial regional dataset exists and may contain dated palaeoenvironmental material spanning the broad historic interval. The abstract does not disclose a 6th–7th-century sample, calibrated age, stratigraphic position, map geometry, shoreline, or interpretation for 596–597.",
+      "limits": "The 13.5 km transect covers the Wantsum Valley broadly, not a disclosed exact episode parcel or the full regional candidate. ‘Through to the medieval period’ is a broad abstract-level period statement, not proof of tidal water at any point in 596–597. Four dated boreholes do not establish coverage between them. The full poster/report was inaccessible in this consultation.",
+      "rights": "No poster, map, chart, or report image copied. Reuse license for the poster and report was not established."
+    },
+    {
+      "id": "kent-thanetsupplymain-ase-ucl-2024",
+      "title": "The southern extent of the Late Roman settlement of Rutupiae: archaeological investigations relating to the Thanet supply main, Richborough, Kent",
+      "authors": ["Andrew Margetts", "Lucy Allott", "Luke Barber", "Trista Clifford", "Anna Doherty", "Sarah Porteus", "Susan Pringle", "Lucy Sibun", "Elke Raemen"],
+      "publication": "Archaeology South-East, UCL Institute of Archaeology; fieldwork 2006–2008, publication November 2024; DOI 10.14324/000.rp.10199658",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10199658/1/Margetts%2C%20A%20et%20al%20%282024%29%20the%20southern%20extent%20of%20the%20late%20Roman%20settlement%20of%20Rutupiae%20Thanet%20supply%20main%2C%20Richborough%2C%20Kent.pdf",
+      "institutionalRecord": "https://discovery.ucl.ac.uk/id/eprint/10199658/",
+      "locator": "PDF pp. 1–2 (publication and license), 5–8 (project scope, channel context and trench observations), particularly PDF p. 8 lines on ASE Trench 3 and marsh/estuarine silts.",
+      "accessed": "2026-10-25",
+      "accessStatus": "Public PDF opened and selected text passages read; not a complete 51-page read.",
+      "passagesRead": "The report describes a 2006–2008 pipeline corridor that crosses the Wantsum Channel, Richborough Island and Ebbsfleet Peninsula. Its historical introduction describes a roughly 20 km channel and gradual silting until medieval marshland. In the observed trench record near Richborough, it distinguishes higher-ground Thanet Beds from low marsh/estuarine deposits; ASE Trench 3 contained probable marsh or estuarine silts over marine alluvium, while reclaimed-marsh pipe trenches exposed alluvial and semi-alluvial deposits to 2.5 m. Archaeological dates in the selected material are primarily prehistoric and Roman.",
+      "supports": "This provides local, excavated evidence for differing higher dry ground and low marsh/alluvial deposits around Richborough, plus the existence of sedimentary sequences in that corridor. It is a useful check against treating all low ground as modern dry farm fields.",
+      "limits": "The work is a narrow pipeline corridor around Richborough and is not the 597 activity map or a dated Wantsum waterline. The selected passages do not provide a sixth–seventh-century sediment date or prove whether any given cell was tidal, fordable, or dry in 596–597. Archaeological material dated Roman does not date overlying hydrology automatically.",
+      "rights": "PDF states text © Archaeology South-East, UCL Institute of Archaeology and authors (2024), with general CC BY-NC-ND 4.0 except where otherwise noted; maps/images include third-party and OS material. Text is cited/paraphrased only; no figures or map bases copied."
+    },
+    {
+      "id": "kent-bgs-ramsgate-dover-memoir",
+      "title": "Ramsgate and Dover, sheets 274 and 290: memoir for the 1:50 000 geological map",
+      "authors": ["British Geological Survey; author names not checked in this bounded consultation"],
+      "publication": "BGS geological memoir, hosted by the British Geological Survey",
+      "url": "https://webapps.bgs.ac.uk/Memoirs/docs/B01665.html",
+      "locator": "Web sections ‘Marine and estuarine alluvium’ and ‘Coastal evolution’, extracted lines 691–706; Sandwich By-pass trial borehole at TR 323 592.",
+      "accessed": "2026-10-25",
+      "accessStatus": "Relevant body text read directly; no underlying borehole log or map sheet opened.",
+      "passagesRead": "The memoir describes silty clay, peat and fine-sand deposits formed in salt-marsh and intertidal settings in the former Wantsum and Lydden Valley. It gives a peat bed in a Sandwich By-pass trial borehole at TR 323 592, 4.3 m below OD, with radiocarbon age 5315 ± 1000 BP; overlying silty clays were deposited with rising sea level up to the present. It summarizes broad coastal evolution and later medieval reclamation.",
+      "supports": "The source directly supports Holocene marine/intertidal and salt-marsh deposits beneath parts of the former channel, and records a Holocene date far earlier than the target period, with the uncertainty printed in the memoir (5315 ± 1000 BP). It is a geological context source rather than a 597 reconstruction.",
+      "limits": "The reported date is far earlier than the target period and has a ±1000-year uncertainty; this review does not recalibrate it or assign a chronozone. A single borehole at the south of the former channel cannot determine channel width, tide, ford locations, shoreline or hydrology around Ebbsfleet/Thanet in 596–597. The memoir's broad historical evolution does not provide annual-resolution geography.",
+      "rights": "No map or borehole graphic copied. BGS reuse terms for this memoir were not checked; text cited and paraphrased only."
+    },
+    {
+      "id": "kent-bede-he-i25-dickinson-commentaries",
+      "title": "Bede, Historia Ecclesiastica, Book I, chapter 25: Augustine’s mission to the English",
+      "authors": ["Bede (author); chapter presented with Latin text and commentary by Rob Hardy, Dickinson College Commentaries"],
+      "publication": "Open educational commentary and source text; Bede’s work was completed in the early eighth century",
+      "url": "https://dcc.dickinson.edu/bede-historia-ecclesiastica/book-1/chapter-1-25",
+      "locator": "Latin passage §§3–6 and commentary notes on Tanatos/Vantsumu and applicuit; page lines 15–18, 48–70.",
+      "accessed": "2026-10-25",
+      "accessStatus": "Latin passage, editorial translation notes and short contextual notes read; not a critical-edition apparatus or manuscript study.",
+      "passagesRead": "Bede says Thanet was separated from the mainland by the Wantsum, estimates its width at about three stades, says it could be crossed in only two places, and relates Augustine’s arrival on the island. The commentary glosses applicuit as ‘put in at’/‘land at’ and notes that the exact translation and place are not specified by the wording. The passage is Bede’s early-eighth-century account of a 597 event, not a contemporary sixth-century survey.",
+      "supports": "The source records an early medieval literary description of a channel and limited crossing points, plus the tradition that the mission landed on Thanet. It can be used only as a broad textual constraint on island/channel conditions in Bede’s retrospective account.",
+      "limits": "It is not sedimentary or cartographic evidence; it supplies neither coordinates nor a dated shoreline polyline. The account does not establish a specific 597 landing site, route, ferry, bridge or ford. Bede wrote about events roughly a century earlier; the episode date cannot make this a contemporaneous eyewitness measurement.",
+      "rights": "No text beyond short phrases quoted; no manuscript image or map reused. Translation/commentary reuse license was not verified."
+    }
+  ],
+  "queries": [
+    {
+      "id": "kent-q01",
+      "query": "Wantsum Channel palaeogeography early medieval sixth century sediment dates, Richborough Connection boreholes, official or institutional reports",
+      "result": "Found Sea Link planning assessment and conference abstract for RCP borehole transect; these describe a 36/39-hole regional project and proposed/ongoing dating rather than a disclosed 596–597 shoreline.",
+      "status": "selected excerpts read; underlying technical report not opened"
+    },
+    {
+      "id": "kent-q02",
+      "query": "Wantsum Channel sediment core radiocarbon dates sixth seventh century tidal sequence",
+      "result": "Found BGS report of a Sandwich-area Holocene date far earlier than the target period, with the uncertainty printed in the memoir, and UCL pipeline publication describing local marsh/estuarine stratigraphy; no directly useful 6th–7th-century shoreline date exposed.",
+      "status": "selected primary/institutional passages read"
+    },
+    {
+      "id": "kent-q03",
+      "query": "Bede Ecclesiastical History Book I chapter 25 Wantsum Uantsumu Thanet",
+      "result": "Opened Latin text and commentary; the source gives a broad retrospective account and no exact 597 landing coordinates.",
+      "status": "selected text and commentary read"
+    }
+  ],
+  "accessFailures": [
+    {
+      "url": "https://nsip-documents.planninginspectorate.gov.uk/published-documents/EN020026-000433-6.3.3.3.G%20ES%20Appendix%203.3.G%20Geo-archaeological%20Desk%20Based%20Assessment.pdf",
+      "failure": "Direct browser open failed: content too large (13,664,925 bytes). Only indexed excerpts were read."
+    },
+    {
+      "url": "https://esharp.org.uk/media/Media_880967_smxx.pdf",
+      "failure": "Direct browser open timed out. Only the indexed conference-poster abstract was read; no maps, charts, or data tables were inspected."
+    },
+    {
+      "url": "https://nsip-documents.planninginspectorate.gov.uk/published-documents/EN020026-000433-6.3.3.3.G%20ES%20Appendix%203.3.G%20Geo-archaeological%20Desk%20Based%20Assessment.pdf",
+      "failure": "The underlying Archaeology South-East 2020 client report 2019110 is cited in the assessment, but a public downloadable copy was not located or opened in this search."
+    }
+  ],
+  "synthesisForArchitect": [
+    "The search did not find a public sediment sample or mapped palaeoshore that establishes Wantsum water extent specifically in 596–597 at the proposed episode location.",
+    "The RCP transect is the most promising next source lead: its abstract says 39 boreholes across 13.5 km and four dated key sequences, but the accessible abstract does not disclose any sixth–seventh-century date or map geometry. The underlying report/data would need direct review before use.",
+    "The Sea Link DBA explicitly says extra radiocarbon/OSL dating was proposed for the RCP transect and questions the reliability of Weatherlees Hill basal dates due to possible reworking. Do not treat those basal dates as medieval evidence.",
+    "The UCL pipeline report documents alluvial and estuarine deposits in its local Richborough corridor; it does not resolve local 597 access. BGS gives only a millennial-scale date at Sandwich and broad Holocene context.",
+    "Bede’s text is a retrospective literary description, not an archaeological date or a precise landfall record. No collected source here licenses a line for the Wantsum, an exact crossing, a bridge/ford marker, or modern dry-ground interpretation for the target year."
+  ],
+  "nonClaims": [
+    "No new exact landfall solution: the exact place remains unresolved, consistent with the already-read Historic England Report 11/2025; that report is not counted as a new source read here.",
+    "No candidate bbox, profile, waterControlLine, shoreline, route, bridge, ford, scenario map or canonical register entry is changed or endorsed.",
+    "No archaeological, environmental or geophysical claim is inferred from modern OSM points, current coastline, drainage, sea walls, field boundaries or modern LiDAR.",
+    "No source is represented as a complete report read where only an excerpt, abstract, metadata page or selected passage was accessible."
+  ],
+  "countStatus": "No canonical geographic profile, missing-geography count, design-draft count, selection count or research-asset count changed. No resource was downloaded or added."
+}

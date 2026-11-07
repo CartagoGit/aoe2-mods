@@ -1,0 +1,37 @@
+{
+  "episodeId": "27-return-and-departure-records-alexandria",
+  "date": "2026-10-15",
+  "author": "gpt-6",
+  "status": "architect selected research; full dossier and independent approval pending",
+  "sources": [
+    {
+      "url": "https://www.tertullian.org/fathers/julian_apostate_letters_1_trans.htm",
+      "locator": "W.C.Wright1923 translation, Letter24, both shortparagraphs and notes; selected no wholecorpus claim",
+      "actuallyRead": "Full short English Letter24 and accompanying editorialnotes. Romanletters mirror was also directly compared: its catalogheader c.356 conflicts with its own publishedtranslation heading362.",
+      "supported": "Julian presents recall as return to home countries, not churches, and orders Athanasius to leave Alexandria upon receiving the letter.",
+      "limitations": "Official imperial polemic, not independent proof of lawfulness or public sentiment. Date362/Constantinople and February21return date appear in editorialheading/footnote, not text ofletter. Modernizedmirror inserts explanations; neither its catalogdate nor insertedprivatecharacterization is adopted as an ancient statement. No manuscript inspected or Greek apparatus collated."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2820.htm",
+      "locator": "Anonymous HistoriaAcephalaVII9–11 andVIII12–13, selectedparagraphs",
+      "actuallyRead": "Root directly read selectedchronicleparagraphs, distinguishing return/exile and later announcement. Not wholeanonymouswork, not Athanasius autobiography.",
+      "supported": "Chronicle narrates local publications and prefectural directions before Athanasiusreturn, later departure order and withdrawal, and later announcement ofJulian’sdeath/Jovian’saccession.",
+      "limitations": "Sourcecalendar/translation has date/formula issues: returnMechir27, staythroughPaophi26, departurepublicationPaophi27; broad362frame retained without certifying exact civilcalendarconversion. Deathannouncement inAlexandria in363 differs from deathatPersianfront. Chronicle says prefectorderedreturntoChurch whileJulianlaterclaimsreturnpermissiononlytohomecountries: preserve interested institutionalaccounts, do not silently harmonize or adjudicate legality. Claimedextraordinary/providentialevents not objective facts."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/25*.html",
+      "locator": "AmmianusXXV.3.1–23, especially3.6–9/3.23",
+      "actuallyRead": "Root directly read selectedfullchapter3 English translation, battle/wound, attributed finalspeech and death; adjacentXXV.2material visible but no wholebook claim.",
+      "supported": "Julian suffered a fatal wound during thePersianexpedition in363; Ammianus does notidentifythespear’sorigin in3.6.",
+      "limitations": "Ammianusservedonthecampaign but selectedpassage doesnotestablish hisphysicalwitnessofthewound/tentdialogue. Lastspeech, portents,virtue,polemicalorprovidentialinterpretation remain authorial. No namedkiller, divinetarget,playableemperorrescue,preciseunverifiedbattletileor localAlexandriabattle. AllPersiangeography off-map."
+    }
+  ],
+  "narrativeConstraints": [
+    "Marcus28–29 receivesAlexandrianandPersianaccounts fromfictionaleasternclericalwork; noAlexandriahistoricaleyewitness.",
+    "Commonnarrator separates imperialclaim,chronicleaccount,editorialconversion andsourceuncertainty before subjectiveMarcus.",
+    "Returnpermission,churchpossession,departureorder andactualwithdrawal aredifferent facts; localworkingrecordsnotoriginalimperialletter.",
+    "No356chronology frommirrorcatalogheader; no universal/instantrecallpractice; no forcedexpulsionofplayablehistoricalbishop."
+  ],
+  "historicalApproval": false,
+  "nativeOrGameApproval": false
+}

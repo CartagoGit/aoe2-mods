@@ -1,0 +1,27 @@
+{
+  "clientDate": "2026-11-05",
+  "landed": "75416302557adbc5648347e30ccb45dcb95f63ed",
+  "officialGatePassed": true,
+  "hooksInstalled": 8,
+  "configuredSourceBranch": "main",
+  "integration": "develop",
+  "release": "main",
+  "remoteProtectionChanged": false,
+  "actualLauncherSmoke": {
+    "workspace": "/home/cartago/_projects/games/aoe2-mods",
+    "arguments": "originalhost --workspace=canonical --config=canonical/delendai.config.json --branch=main",
+    "serverVersion": "0.1.0",
+    "startup": "READY",
+    "blockers": 0,
+    "repairTasks": 0,
+    "skippedPhases": [],
+    "configIssues": []
+  },
+  "existingCodexConnection": {
+    "version": "0.3.0",
+    "startupWarningsCachedBeforeFix": true
+  },
+  "independentScopedReviewer": "gpt-6.1-terra",
+  "formalSliceReviewPending": true,
+  "failedOwnUnitProbePreserved": true
+}

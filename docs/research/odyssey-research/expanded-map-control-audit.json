@@ -1,0 +1,977 @@
+{
+  "title": "Expanded 40-dossier map control audit",
+  "worktree": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all",
+  "architectApproval": false,
+  "scope": {
+    "dossiers": 40,
+    "mapsLinkedAndFound": 40,
+    "collections": [
+      "faith-origins",
+      "imperial-church"
+    ]
+  },
+  "method": [
+    "Read-only inventory of the 40 15-odyssey-dossier.md files and their own geographic control plan links; parsed linked SVG viewBox, map-frame rectangle, hub circles, labeled corridors, control polylines, and text anchors.",
+    "Geometric crossing check used strict segment intersection between corridor polylines and data-control polylines. It did not inspect pathfinding, native footprints, implicit corridors, rendering at alternate viewport sizes, or ancient terrain.",
+    "A drawn water line is classified by SVG data-control metadata/title. The local diagrams explicitly call these geographic controls and proposed schematic corridors; modern Natural Earth coast/river lines do not establish ancient shoreline, channel, ford, bridge, or navigability.",
+    "Label clipping screening uses an approximate font-width heuristic; conclusions require visual/native export review."
+  ],
+  "summary": {
+    "hubMarkersOutsideMapFrame": 0,
+    "textLabelsFlaggedByWidthHeuristic": 0,
+    "geometricRouteWaterIntersections": 2,
+    "waterControlsUnmatchedToLandCorridorInStrictSegmentTest": true
+  },
+  "findings": [
+    {
+      "episodeId": "04-testimony-relay-damascus",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/04-testimony-relay-damascus.svg",
+      "route": "main",
+      "mode": "land",
+      "control": "schematic-water",
+      "assessment": "The proposed land corridor geometrically crosses the schematic water control; a bridge/ford or corridor relocation is not evidenced on this SVG. The evidence describes the water as schematic, so flag only for map/native path review.",
+      "confidence": "low-to-moderate geometry signal"
+    },
+    {
+      "episodeId": "09-crossing-and-supply-adrianople",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/09-crossing-and-supply-adrianople.svg",
+      "routes": [
+        "lower-ferry",
+        "upper-water-detour"
+      ],
+      "mode": "water",
+      "control": "modern-river-control",
+      "assessment": "Both proposed boat corridors geometrically cross the modern generalized Maritsa/Evros line, consistent with intended river passage but not proof of actual embarkation, landing, or navigability. Verify banks and boat movement in native map; no ancient ford/channel is established.",
+      "confidence": "moderate geometry signal"
+    }
+  ],
+  "perDossier": [
+    {
+      "collection": "faith-origins",
+      "episodeId": "01-administrative-records-caesarea",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/01-administrative-records-caesarea/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/01-administrative-records-caesarea.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "01-roads-of-antioch",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/01-roads-of-antioch/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/01-roads-of-antioch.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 4,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "02-after-the-siege",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/02-after-the-siege/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/02-after-the-siege.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "02-civilian-refuge-jerusalem",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/02-civilian-refuge-jerusalem.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "03-shared-provision-jerusalem",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/03-shared-provision-jerusalem/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/03-shared-provision-jerusalem.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "03-the-governors-question",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/03-the-governors-question/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/03-the-governors-question.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "04-a-different-dawn",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/04-a-different-dawn/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/04-a-different-dawn.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "04-testimony-relay-damascus",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/04-testimony-relay-damascus/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/04-testimony-relay-damascus.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 4,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 2,
+        "possibleClippedLabels": 0
+      },
+      "findings": [
+        {
+          "type": "route-intersects-water-control",
+          "evidence": [
+            {
+              "corridorId": "main",
+              "mode": "land",
+              "waterControl": "schematic-water",
+              "segmentPairs": [
+                [
+                  1,
+                  0
+                ]
+              ]
+            },
+            {
+              "corridorId": "relief",
+              "mode": "land",
+              "waterControl": "schematic-water",
+              "segmentPairs": [
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          ],
+          "severity": "review-signal-only",
+          "interpretation": "geometric crossing; not proof of impassability; control may be generalized modern water or schematic channel"
+        }
+      ]
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "05-witness-comparison-jerusalem",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/05-witness-comparison-jerusalem/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/05-witness-comparison-jerusalem.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "07-household-relocation-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/07-household-relocation-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/07-household-relocation-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 7,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "08-delegate-logistics-jerusalem",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/08-delegate-logistics-jerusalem/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/08-delegate-logistics-jerusalem.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "09-district-production-corinth",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/09-district-production-corinth/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/09-district-production-corinth.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "10-copy-and-relay-corinth",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/10-copy-and-relay-corinth/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/10-copy-and-relay-corinth.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "11-distributed-preservation-ephesus",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/11-distributed-preservation-ephesus/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/11-distributed-preservation-ephesus.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "12-bounded-community-aid-ephesus",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/12-bounded-community-aid-ephesus/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/12-bounded-community-aid-ephesus.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "13-consignment-and-correspondence-corinth",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/13-consignment-and-correspondence-corinth/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/13-consignment-and-correspondence-corinth.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "14-administrative-intrigue-caesarea",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/14-administrative-intrigue-caesarea/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/14-administrative-intrigue-caesarea.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 0,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "15-evacuation-and-recovery-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/15-evacuation-and-recovery-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/15-evacuation-and-recovery-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 3,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "16-comparative-copying-antioch",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/16-comparative-copying-antioch/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/16-comparative-copying-antioch.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 3,
+        "waterControls": 3,
+        "corridors": 2,
+        "labels": 17,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "18-parallel-archive-logistics-antioch",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/18-parallel-archive-logistics-antioch/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/18-parallel-archive-logistics-antioch.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 3,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "19-hospitality-network-antioch",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/19-hospitality-network-antioch/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/19-hospitality-network-antioch.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 3,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "20-reconciliation-deliveries-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/20-reconciliation-deliveries-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/20-reconciliation-deliveries-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "22-reading-and-relief-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/22-reading-and-relief-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/22-reading-and-relief-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 4,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "23-petition-escort-sardes",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/23-petition-escort-sardes/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/23-petition-escort-sardes.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 4,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "24-witness-and-evacuation-lyon",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/24-witness-and-evacuation-lyon/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/24-witness-and-evacuation-lyon.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 6,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "25-archive-comparison-lyon",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/25-archive-comparison-lyon/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/25-archive-comparison-lyon.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 6,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "26-legal-record-network-carthage",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/26-legal-record-network-carthage/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/26-legal-record-network-carthage.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "27-household-aid-and-memory-carthage",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/27-household-aid-and-memory-carthage/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/27-household-aid-and-memory-carthage.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "28-certificate-and-refuge-egypt-middle-nile",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/28-certificate-and-refuge-egypt-middle-nile/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/28-certificate-and-refuge-egypt-middle-nile.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 4,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "faith-origins",
+      "episodeId": "29-bounded-evacuation-carthage",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/faith-origins/episodes/29-bounded-evacuation-carthage/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/faith-origins/odyssey/29-bounded-evacuation-carthage.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "01-milvian-bridge",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/01-milvian-bridge/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/01-milvian-bridge.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 4,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "02-bounded-negotiation-milan",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/02-bounded-negotiation-milan/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/02-bounded-negotiation-milan.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "03-property-and-record-restoration-nicomedia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/03-property-and-record-restoration-nicomedia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/03-property-and-record-restoration-nicomedia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "04-rival-delegation-reception-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/04-rival-delegation-reception-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/04-rival-delegation-reception-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "05-delegate-logistics-arles",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/05-delegate-logistics-arles/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/05-delegate-logistics-arles.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 4,
+        "corridors": 4,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "06-finite-field-withdrawal-cibalae",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/06-finite-field-withdrawal-cibalae/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/06-finite-field-withdrawal-cibalae.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 4,
+        "corridors": 3,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "07-court-record-logistics-rome-ostia",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/07-court-record-logistics-rome-ostia/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/07-court-record-logistics-rome-ostia.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 5,
+        "waterControls": 0,
+        "corridors": 4,
+        "labels": 21,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "08-disputed-correspondence-alexandria",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/08-disputed-correspondence-alexandria/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/08-disputed-correspondence-alexandria.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 4,
+        "waterControls": 0,
+        "corridors": 3,
+        "labels": 19,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "09-crossing-and-supply-adrianople",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/09-crossing-and-supply-adrianople/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/09-crossing-and-supply-adrianople.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 6,
+        "waterControls": 6,
+        "corridors": 5,
+        "labels": 25,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 2,
+        "possibleClippedLabels": 0
+      },
+      "findings": [
+        {
+          "type": "route-intersects-water-control",
+          "evidence": [
+            {
+              "corridorId": "lower-ferry",
+              "mode": "water",
+              "waterControl": "modern-river-control",
+              "segmentPairs": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "corridorId": "upper-water-detour",
+              "mode": "water",
+              "waterControl": "modern-river-control",
+              "segmentPairs": [
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          ],
+          "severity": "review-signal-only",
+          "interpretation": "geometric crossing; not proof of impassability; control may be generalized modern water or schematic channel"
+        }
+      ]
+    },
+    {
+      "collection": "imperial-church",
+      "episodeId": "10-land-and-strait-logistics-chrysopolis",
+      "orderAtCollection": null,
+      "dossierPath": "docs/wiki/imperial-church/episodes/10-land-and-strait-logistics-chrysopolis/15-odyssey-dossier.md",
+      "mapPath": "docs/design/maps/imperial-church/odyssey/10-land-and-strait-logistics-chrysopolis.svg",
+      "architectApproval": false,
+      "mapChecks": {
+        "hubMarkers": 7,
+        "waterControls": 0,
+        "corridors": 6,
+        "labels": 26,
+        "hubMarkersOutsideFrame": 0,
+        "routeWaterIntersections": 0,
+        "possibleClippedLabels": 0
+      },
+      "findings": []
+    }
+  ],
+  "limits": [
+    "The maps are schematic geographic district control plans, not rendered terrain rasters or certified native maps. Most place hubs abstractly inside a map frame; the SVG does not give a full land/water mask for parcel-level hub validation.",
+    "A hub circle inside the rectangle only proves it lies inside the drawn frame. It does not prove the named activity district was on dry land in the relevant period.",
+    "No independently verified ancient coastline, river course, ford, bridge, elevations, shoreline change, navigational depth/current, or game pathfinding was inferred.",
+    "The SVG inventory contains no ship object glyphs to classify as placed on land; this is not a check of separate scenario object placements or native map files.",
+    "No obvious clipping was reported from numeric anchors and approximate text-width screening; this does not replace rendered visual inspection or native UI/export checks.",
+    "No canonical global episode-selection order was identified across the two collections; orderAtCollection is null and dossier slugs preserve identity without inventing an order."
+  ],
+  "followUp": {
+    "title": "Post-correction read-only recheck",
+    "architectApproval": false,
+    "checks": [
+      {
+        "collection": "faith-origins",
+        "episodeId": "04-testimony-relay-damascus",
+        "mapPath": "docs/design/maps/faith-origins/odyssey/04-testimony-relay-damascus.svg",
+        "architectApproval": false,
+        "waterControl": {
+          "type": "schematic-water",
+          "segments": 3,
+          "sourceMeaning": "schematic, not surveyed ancient hydrology"
+        },
+        "corridors": {
+          "main": {
+            "mode": "land",
+            "declaredWidthTiles": 10,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 51.32,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 46.32
+          },
+          "relief": {
+            "mode": "land",
+            "declaredWidthTiles": 6,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 51.32,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 48.32
+          }
+        },
+        "hubMarkers": [
+          {
+            "hubMarker": 1,
+            "centerlineGapTiles": 72.16,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 60.16
+          },
+          {
+            "hubMarker": 2,
+            "centerlineGapTiles": 60.87,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 48.87
+          },
+          {
+            "hubMarker": 3,
+            "centerlineGapTiles": 51.32,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 39.32
+          }
+        ],
+        "geometricIntersections": [],
+        "sameSchematicSide": true,
+        "diagramRelativeSide": "south of the drawn schematic water line for all hubs and route centerlines.",
+        "finding": "All displayed land-route centerlines and hub circles remain on the same diagram-relative side of the water control. The closest route centerline is well separated after subtracting half the declared corridor width; hub marker edge clearances beyond the declared 12-tile hub radius remain positive. No geometric crossing is present in the updated diagrams.",
+        "limits": [
+          "Tile conversion assumes the SVG map frame (650 px) uniformly represents the dossier grid; SVG hub circles are symbols, not terrain or certified footprint polygons.",
+          "Widths/radii are design constraints; subtracting half corridor width and the hub radius is only a planar clearance screen, not native pathfinding or tile occupancy.",
+          "Both water lines are expressly schematic regional geography, not evidence for ancient channel placement, fordability, exact bank, modern land mask, or archaeological location. Same-side conclusion refers only to the drawn schematic lines.",
+          "No boat placement is depicted; these checks say nothing about water-unit navigation or separately placed scenario objects."
+        ]
+      },
+      {
+        "collection": "imperial-church",
+        "episodeId": "11-council-record-escort-antioch",
+        "mapPath": "docs/design/maps/imperial-church/odyssey/11-council-record-escort-antioch.svg",
+        "architectApproval": false,
+        "waterControl": {
+          "type": "schematic-water",
+          "segments": 3,
+          "sourceMeaning": "schematic, not surveyed ancient hydrology"
+        },
+        "corridors": {
+          "northwest-record-circuit": {
+            "mode": "land",
+            "declaredWidthTiles": 10,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 61.56,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 56.56
+          },
+          "east-record-circuit": {
+            "mode": "land",
+            "declaredWidthTiles": 10,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 61.63,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 56.63
+          },
+          "north-record-circuit": {
+            "mode": "land",
+            "declaredWidthTiles": 10,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 61.56,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 56.56
+          },
+          "east-north-alternative": {
+            "mode": "land",
+            "declaredWidthTiles": 8,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 61.63,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 57.63
+          },
+          "southeast-work-link": {
+            "mode": "land",
+            "declaredWidthTiles": 8,
+            "minimumCenterlineSeparationFromAllControlSegmentsTiles": 61.63,
+            "estimatedClearanceAfterHalfRouteWidthTiles": 57.63
+          }
+        },
+        "hubMarkers": [
+          {
+            "hubMarker": 1,
+            "centerlineGapTiles": 61.63,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 49.63
+          },
+          {
+            "hubMarker": 2,
+            "centerlineGapTiles": 65.51,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 53.51
+          },
+          {
+            "hubMarker": 3,
+            "centerlineGapTiles": 147.3,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 135.3
+          },
+          {
+            "hubMarker": 4,
+            "centerlineGapTiles": 185.27,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 173.27
+          },
+          {
+            "hubMarker": 5,
+            "centerlineGapTiles": 107.87,
+            "edgeClearanceBeyondDeclaredHubRadiusTiles": 95.87
+          }
+        ],
+        "geometricIntersections": [],
+        "sameSchematicSide": true,
+        "diagramRelativeSide": "east of the drawn schematic water line for all hubs and route centerlines.",
+        "finding": "All displayed land-route centerlines and hub circles remain on the same diagram-relative side of the water control. The closest route centerline is well separated after subtracting half the declared corridor width; hub marker edge clearances beyond the declared 12-tile hub radius remain positive. No geometric crossing is present in the updated diagrams.",
+        "limits": [
+          "Tile conversion assumes the SVG map frame (650 px) uniformly represents the dossier grid; SVG hub circles are symbols, not terrain or certified footprint polygons.",
+          "Widths/radii are design constraints; subtracting half corridor width and the hub radius is only a planar clearance screen, not native pathfinding or tile occupancy.",
+          "Both water lines are expressly schematic regional geography, not evidence for ancient channel placement, fordability, exact bank, modern land mask, or archaeological location. Same-side conclusion refers only to the drawn schematic lines.",
+          "No boat placement is depicted; these checks say nothing about water-unit navigation or separately placed scenario objects."
+        ]
+      }
+    ],
+    "method": "Parsed the two revised SVGs; performed segment-segment distance/intersection checks for every corridor centerline against all schematic-water segments, then converted pixel gaps to dossier grid units using the 650-pixel map-frame width. Compared nearest hub-circle edge to declared 12-tile hub radius and route gap after subtracting half each declared widthTiles. Original audit content remains unchanged."
+  }
+}
