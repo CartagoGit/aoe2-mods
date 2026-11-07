@@ -1,0 +1,301 @@
+{
+  "recordKind": "documentary-interaction-progress-checkpoints",
+  "recordVersion": 1,
+  "notice": "This is a documentation record, not a source-data schema, runtime queue, forecast, or per-model usage report.",
+  "observation": {
+    "id": "observation-001",
+    "statement": "first reconstructed interval; user interaction timestamps unavailable; not a measured per-model duration/token sample",
+    "clientCutDate": "2026-10-26",
+    "timezone": "Europe/Madrid",
+    "interval": {
+      "fromCommit": "c5533f777dfb7e0f9c9c76157109725aa5288ed8",
+      "toCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
+      "toCommitGitTimestamp": "2026-10-25T20:36:56+01:00",
+      "toCommitSubject": "merge: land refs/heads/wip/gpt-6-luna/review/i00009-S1-g1/authored-secondary-reward-decision-review on develop",
+      "cutDefinition": "The end cut is the develop tip identified at the start of this checkpoint task. The client date is recorded separately from the commit timestamp."
+    },
+    "baseline": {
+      "source": "README.md at c5533f777dfb7e0f9c9c76157109725aa5288ed8, lines 34-36",
+      "selectionCount": 278,
+      "designDossierCount": 63,
+      "selectionsWithoutDossier": 215,
+      "bilingualScreenCount": 2594,
+      "secondaryObjectiveCount": 391,
+      "localResearchResourceCount": 47,
+      "geographicProfileCount": 26,
+      "unresolvedGeographicIdentities": 22,
+      "selectionsAffectedByUnresolvedGeography": 25
+    },
+    "cut": {
+      "source": "README.md at d6acfed489e332a614d4a2731e450c53e619c65b, lines 34-36",
+      "selectionCount": 278,
+      "designDossierCount": 64,
+      "selectionsWithoutDossier": 214,
+      "bilingualScreenCount": 2645,
+      "secondaryObjectiveCount": 398,
+      "localResearchResourceCount": 49,
+      "geographicProfileCount": 26,
+      "unresolvedGeographicIdentities": 22,
+      "selectionsAffectedByUnresolvedGeography": 25
+    },
+    "delta": {
+      "selectionCount": 0,
+      "designDossierCount": 1,
+      "selectionsWithoutDossier": -1,
+      "bilingualScreenCount": 51,
+      "secondaryObjectiveCount": 7,
+      "localResearchResourceCount": 2,
+      "geographicProfileCount": 0,
+      "unresolvedGeographicIdentities": 0,
+      "selectionsAffectedByUnresolvedGeography": 0
+    },
+    "statusEventsBetweenCuts": [
+      {
+        "proposal": "i00008",
+        "slice": "S3",
+        "event": "formally closed",
+        "scope": "opt-in civic audit compatibility only; does not add native engine support"
+      },
+      {
+        "proposal": "i00009",
+        "slice": "S1",
+        "event": "independently approved",
+        "scope": "documentary decision only; no production or game evidence inferred"
+      }
+    ],
+    "pilotEvidenceAtCut": {
+      "f00001SourceExportedPilotCampaigns": [
+        "route-pilot",
+        "route-successor"
+      ],
+      "gameVerifiedCount": 0,
+      "evidenceReference": "docs/qa/route-pilot/s3-joint-promotion-independent-review.md",
+      "scope": "Historical source/export review records fixture exports; it does not show a successful AoE2 gameplay test."
+    },
+    "workAllocation": {
+      "architectRoot": [
+        "214 selections without dossiers",
+        "review of the 64 existing dossiers",
+        "54 civic flags",
+        "22 unresolved geographic identities affecting 25 selections"
+      ],
+      "mechanicalAuthoringPool": "Luna and MiniMax share a pool of 278 episode tasks; this is not 278 tasks per worker.",
+      "miniMaxObservedImplementationSample": 0,
+      "codexRemainingQuota": "unknown; not measured"
+    },
+    "separationAndExclusions": {
+      "designDraftsAreNotHistoricalOrEditorialApprovals": true,
+      "sourceExportsAreNotNativeOrGameVerification": true,
+      "nativeCapabilityEvidence": "No native/game verification count is inferred from the source-export records.",
+      "formalReviewEventsAreListedSeparatelyFromDesignAndGameCounts": true,
+      "unintegratedWork": "No unintegrated-work count is added; WIP is excluded from develop totals.",
+      "excludedLegacyContracts": 39,
+      "excludedJerusalemWipSecondaryObjectives": 7,
+      "exclusionNote": "Do not add the 39 legacy contracts or seven Jerusalem WIP secondary objectives to the selected-odyssey counts."
+    },
+    "measurementPolicy": {
+      "minimumComparableIntervalsBeforeMovingAverage": 3,
+      "interactionCounting": "Count each new user interaction. Do not count tool messages or context compactions as user interactions.",
+      "timeReporting": "Report hours only when directly measured from comparable start/end timestamps.",
+      "forbiddenInferences": [
+        "Do not convert one reconstructed interval into an average or ETA.",
+        "Do not present 214 remaining dossiers as an interaction or time estimate.",
+        "Do not infer model duration, token use, or remaining quota from repository progress."
+      ]
+    }
+  },
+  "provenance": {
+    "historicalBaselineCommit": "c5533f777dfb7e0f9c9c76157109725aa5288ed8",
+    "documentedCutCommit": "d6acfed489e332a614d4a2731e450c53e619c65b",
+    "worktreeBaseAtPreparation": "6e3bbf51e05337dc054750bffed00f456805bc68",
+    "worktreeBaseNote": "The isolated worktree began after the specified d6acfed cut. Metrics above are pinned to the requested d6acfed snapshot; no later worktree changes are included."
+  },
+  "additionalObservations": [
+    {
+      "id": "observation-002",
+      "statement": "completed interval from the previous recovered turn-start commit to the new user attachment; includes separately executed MiniMax work, not solely root output",
+      "fromCommit": "188c2f9e182d8ea8b113eedd923178cfb2227af7",
+      "toCommit": "dbee40d02be6713388c4d5451d366d07adef0607",
+      "baseline": {
+        "source": "README.md at188c2f9e182d8ea8b113eedd923178cfb2227af7, confirmed design counts; tools/design/verify.py at the closing cut",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "cut": {
+        "source": "README.md and design catalogue atdbee40d02be6713388c4d5451d366d07adef0607; integration history independently inspected",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "delta": {
+        "selectionCount": 0,
+        "designDossierCount": 0,
+        "selectionsWithoutDossier": 0,
+        "bilingualScreenCount": 0,
+        "secondaryObjectiveCount": 0,
+        "localResearchResourceCount": 0,
+        "geographicProfileCount": 0,
+        "unresolvedGeographicIdentities": 0,
+        "selectionsAffectedByUnresolvedGeography": 0
+      },
+      "deliveredChanges": [
+        {
+          "item": "i00010/S2 pooled originals projection",
+          "product": "d86c561303916d658394b560030875fa045991b6",
+          "independentVerdict": "afa036fce11101273815ffc68db0d9241ac2aaf4",
+          "scope": "design factory and artificial real-reducer bridge; no native/game/history support"
+        },
+        {
+          "item": "i00009/S3 authoring documentation",
+          "product": "34f87ceca32d34afa20dd79483cda033cfa3d0b9",
+          "independentVerdict": "7cbac2b",
+          "scope": "documentation only; independent MiniMax review, not a root review verdict"
+        },
+        {
+          "item": "partial i00003/S2 sparse large-map diagnostic implementation",
+          "product": "a7f8dcd5fd3091868eeab73b0aad2206d419a85d",
+          "scope": "300/400 pure transform and orchestration; actual native400 execution occurred after this cut and is excluded here"
+        },
+        {
+          "item": "Jerusalem bilingual core script and pressure/funding decisions",
+          "product": "4a0bdab33edd8f544eff6823ac19c15b89b3f48c",
+          "scope": "20 bilingual authored entries,45 prospective generated surfaces; no new complete dossier or counted catalogue screens"
+        },
+        {
+          "item": "i00008/i00009/i00010 whole-proposal closures and d00002/S1 path repair",
+          "scope": "official operational changes observed in supplied MiniMax transcript and main integration history; not additional feature implementations"
+        }
+      ],
+      "actualGameVerificationCount": 0,
+      "miniMaxObservedCodeImplementationSamples": 1,
+      "intervalComparableForHistoricalDossierThroughput": false,
+      "throughputCaveat": "This interval concentrated on infrastructure and operational closure, unlike the earlier historical-dossier interval. Do not average their work as interchangeable scenario-authoring samples. No message timestamps, per-model quota or end-to-end production estimate is inferred.",
+      "unintegratedOrLaterWorkExcluded": [
+        "actual400native export/inspection after dbee40d",
+        "new presence handoff preparation",
+        "any WIP beyond the explicit closing cut"
+      ]
+    },
+    {
+      "id": "observation-003",
+      "statement": "current resumed interaction after the supplied separate MiniMax conversation; closing product cut excludes this checkpoint-only commit",
+      "clientCutDate": "2026-10-26",
+      "timezone": "Europe/Madrid",
+      "fromCommit": "dbee40d02be6713388c4d5451d366d07adef0607",
+      "toCommit": "7361d603043103787df888193bbd5f142c7c6336",
+      "baseline": {
+        "source": "README.md and design catalogue atdbee40d02be6713388c4d5451d366d07adef0607; integration history independently inspected",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 49,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "cut": {
+        "source": "Integrated source/design/reference state at 7361d603; unchanged documentary counters after transport diagnostic and Yavneh pre-dossier work.",
+        "selectionCount": 278,
+        "designDossierCount": 64,
+        "selectionsWithoutDossier": 214,
+        "bilingualScreenCount": 2645,
+        "secondaryObjectiveCount": 398,
+        "localResearchResourceCount": 50,
+        "geographicProfileCount": 26,
+        "unresolvedGeographicIdentities": 22,
+        "selectionsAffectedByUnresolvedGeography": 25
+      },
+      "delta": {
+        "selectionCount": 0,
+        "designDossierCount": 0,
+        "selectionsWithoutDossier": 0,
+        "bilingualScreenCount": 0,
+        "secondaryObjectiveCount": 0,
+        "localResearchResourceCount": 1,
+        "geographicProfileCount": 0,
+        "unresolvedGeographicIdentities": 0,
+        "selectionsAffectedByUnresolvedGeography": 0
+      },
+      "deliveredChanges": [
+        {
+          "item": "actual400-square native editor diagnostic and reproducible inspection",
+          "integrations": [
+            "d164137e20d3bc63d75ca6edaa55b523745196be",
+            "6f3efcf80b9c6f279bb13c3b51354d755b9eb5ab"
+          ],
+          "evidence": "158 Bun tests/2138 expectations; export suite3variants/2round-trips; separate actual400export and decoded160000tiles/36markers/two positions; export/ZIP-failure regressions. MiniMax bounded technical review and follow-up; full S2 remains pending.",
+          "artifact": "large-map-diagnostic-400-20261026-r2.zip",
+          "artifactSha256": "0ce1728a36ebc09b27a38f456495343efac31e1c432fc436674a72f002868e79",
+          "newHistoricalScenarios": 0
+        },
+        {
+          "item": "reconciled MiniMax handoff and exact future presence-promotion packet",
+          "integration": "06f2cc7a510b607b828f2c857d591a0187bba5ef",
+          "scope": "independently inspected reference bindings clarified; i00005/S2 and i00003/S3 prerequisites remain pending; not an active historical assignment"
+        },
+        {
+          "item": "dated Wilson1865reference and research wiki",
+          "integration": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+          "scope": "one provider preview, hash/dimensions/rights metadata, source attribution and century limits; unchanged identity/bbox/objectives. Reference manifest49→50, no geography approval or new dossier."
+        },
+        {
+          "item": "first-five faith origins economy inspection and transport packet",
+          "integration": "a72009a69a286fb18385062fa38aa68c4736af3b",
+          "scope": "five concrete cases within the existing54 civic flags, no canonical fixes; closed and independently read mechanical packet, no new full dossier"
+        },
+        {
+          "item": "transport-observation implementation by Luna and independent native review by root",
+          "integration": "8f6687f30d06bd1c2191fc0abecce87c4c95004f",
+          "product": "223740c7dc7ed7b02b8fa74a7fa01b88e404acaa",
+          "evidence": "10 focused Python cases; validate158tests/2138expectations; native export3variants/2round-trips; actual400 scenario independently decoded,9600rectangular cells+36markers,4 units and guard reference/TIMER1800 binding. Whole i00003/S2 and all game observations remain pending.",
+          "artifact": "transport-map-diagnostic-400-20261026.zip",
+          "artifactSha256": "4d2b8da93a8dedb740f51f43c48786480ff3eada20643d0da635eba205c5f595",
+          "scenarioSha256": "64d96f7bc09a9531016e5b65b1b9c27aadba6221aa67824771b7dd7efbfc8318",
+          "newHistoricalScenarios": 0
+        },
+        {
+          "item": "qualified Yavneh setting and six paired narrative source entries",
+          "integration": "7361d603043103787df888193bbd5f142c7c6336",
+          "product": "92cd59e",
+          "scope": "inland town separated from port; IAA geography, late narrative and scholarly interpretations distinguished; existing archived translator metadata qualified without rewriting source pins; no complete dossier, counted screens or local asset."
+        }
+      ],
+      "actualGameVerificationCount": 0,
+      "miniMaxObservedCodeImplementationSamples": 1,
+      "miniMaxCompletedReadOnlyReviewTopicsThisInterval": 3,
+      "miniMaxBoundedReviewPassesThisInterval": 4,
+      "architectPartComplete": false,
+      "intervalComparableForHistoricalDossierThroughput": false,
+      "forecast": "No interaction count or model-quota estimate. Three documentary observations do not make three comparable historical-authoring samples; the pinned intervals also do not claim contiguous coverage of every asynchronous message.",
+      "pendingByRole": {
+        "architect": "214 new dossiers; architectural refinement of64 existing drafts and coordination of independent review;54 static civic flags;22 geographic identities affecting25 selections; native architecture and supervision. The implementer never formally approves its own product.",
+        "mechanicalWorkers": "MiniMax/Luna share the278episode materialization pool, assigned gradually; not278per model",
+        "tester": "actual AoE2 load/movement/save/difficulty/campaign evidence, starting with private fixtures"
+      },
+      "noPublicModDistribution": true,
+      "earlierProductCutCommit": "6839db574a0c54aed6b8c7ea053df2c86288af08",
+      "workerAvailabilityObservation": "Luna resumed successfully and completed bounded read-only research plus transport code; MiniMax completed bounded read-only reviews. No remaining quota is inferred.",
+      "supervisionCorrections": [
+        "Native essential binding must be read from the exported condition/reference, not inferred from the input transform.",
+        "Check the condition in its exact trigger; a correct reference moved to a different trigger must fail inspection.",
+        "Use the existing shared pinned Python via COF_PYTHON in isolated units; preserve the first missing-parser failure log, never install dependencies silently.",
+        "Preserve the default fixture and move a unit around actual water, never retain a diagonal-land instruction after adding a water rectangle."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+import { duplicates, type Issue, issue } from "../core/diagnostics.helper";
+import { profileHasLivePresence } from "../gameplay-state/live-entity-presence.helper";
+import { RESOURCES } from "../gameplay-state/resource-accounts.helper";
+import {
+  type CapabilityProfileV3,
+  sharedCapabilityProfile,
+} from "../schemas/alternative-fulfillment.schema";
+
+/** Additional v3 checks; the caller also validates the shared v2 contract. */
+export function validateAlternativeFulfillment(
+  profile: CapabilityProfileV3,
+): Issue[] {
+  const plan = profile.fulfillmentPlan;
+  const out: Issue[] = [];
+  const add = (message: string) =>
+    out.push(issue("fulfillment.contract", plan.id, message));
+  const recipes = plan.services.flatMap((service) => service.recipes);
+  const outputs = recipes.map((recipe) => recipe.outputEntityId);
+  const originals = recipes.flatMap((recipe) => [
+    recipe.workerId,
+    ...recipe.recipientIds,
+  ]);
+  const sharedGenerated = profile.objectivePlan.flatMap((objective) =>
+    objective.predicate.requirements.flatMap((req) =>
+      req.kind === "derived-token"
+        ? req.outputEntities
+        : req.kind === "entity-state"
+          ? (req.generatedByReceipts ?? []).map((receipt) => receipt.output)
+          : [],
+    ),
+  );
+  if (originals.some((id) => sharedGenerated.includes(id)))
+    add(
+      "First reference implementation accepts original inputs only, never shared generated identities",
+    );
+  const entities = new Map(
+    profile.worldContract.entities.map((entity) => [entity.id, entity]),
+  );
+  const zones = new Map(
+    profile.worldContract.zones.map((zone) => [zone.id, zone]),
+  );
+  if (
+    !profile.stateMachine.states.includes(plan.phase) ||
+    ["briefing", "victory", "defeat"].includes(plan.phase)
+  )
+    add("Plan must activate in a declared nonterminal work phase");
+  if (!profileHasLivePresence(sharedCapabilityProfile(profile)))
+    add("Shared profile must support authoritative live spatial batches");
+  if (
+    plan.services.reduce(
+      (count, service) => count * service.recipes.length,
+      1,
+    ) > 4096
+  )
+    add("At most 4096 complete selections supported");
+  for (const ids of [
+    plan.services.map((service) => service.id),
+    recipes.map((recipe) => recipe.id),
+    outputs,
+  ])
+    if (duplicates(ids).length)
+      add("Service, recipe and output IDs must each be unique");
+  if (outputs.some((id) => originals.includes(id)))
+    add("An output cannot be an original worker or recipient");
+  const workers = plan.services.map(
+    (service) => new Set(service.recipes.map((recipe) => recipe.workerId)),
+  );
+  if (
+    workers.some((set, index) =>
+      workers.some(
+        (other, otherIndex) =>
+          index !== otherIndex && [...set].some((id) => other.has(id)),
+      ),
+    )
+  )
+    add(
+      "First reference implementation requires distinct workers across services",
+    );
+  for (const recipe of recipes) {
+    if (
+      !entities.has(recipe.workerId) ||
+      recipe.recipientIds.some((id) => !entities.has(id)) ||
+      !entities.has(recipe.outputEntityId)
+    )
+      add(`Unknown main-world identity in ${recipe.id}`);
+    if (duplicates(recipe.recipientIds).length)
+      add(`Duplicate recipient in ${recipe.id}`);
+    const source = zones.get(recipe.workZoneId);
+    const reception = zones.get(recipe.receptionZoneId);
+    if (!source || !reception)
+      add(`Work and reception must use declared zones: ${recipe.id}`);
+    if (!source) continue;
+    for (const destinationId of new Set(
+      recipes.map((item) => item.receptionZoneId),
+    )) {
+      const destination = zones.get(destinationId);
+      if (!destination) continue;
+      if (source.id === destination.id)
+        add(`Work must be distinct from every reception: ${recipe.id}`);
+      else if (
+        source.hub === destination.hub &&
+        Math.hypot(
+          source.offsetTiles[0] - destination.offsetTiles[0],
+          source.offsetTiles[1] - destination.offsetTiles[1],
+        ) <=
+          source.radiusTiles + destination.radiusTiles
+      )
+        add(`Work and reception footprints overlap: ${recipe.id}`);
+    }
+  }
+  for (const resource of RESOURCES) {
+    const maximum = plan.services.reduce(
+      (sum, service) =>
+        sum +
+        Math.max(...service.recipes.map((recipe) => recipe.cost[resource])),
+      0,
+    );
+    if (!Number.isSafeInteger(maximum))
+      add(`Selection cost can overflow ${resource}`);
+  }
+  // An output has one producer. Shared ledgers must not bypass this producer.
+  const sharedReferences = JSON.stringify({
+    objectives: profile.objectivePlan,
+    secondaries: profile.secondaryObjectives,
+    survivors: profile.worldContract.survivorGroups,
+    enemies: profile.enemyRoster,
+  });
+  // V2's auxiliary arrival facts use a filtered index. Restrict the opt-in
+  // successor rather than changing old receipts or accepting ambiguous facts.
+  for (const side of profile.secondaryObjectives) {
+    const arrivals = side.predicate.requirements.flatMap((req, index) =>
+      req.kind === "entity-arrival" ? [index] : [],
+    );
+    if (arrivals.length > 1 || (arrivals.length === 1 && arrivals[0] !== 0))
+      add(
+        `Shared optional arrival must be a single leading predicate: ${side.id}`,
+      );
+  }
+  if (outputs.some((id) => sharedReferences.includes(JSON.stringify(id))))
+    add(
+      "Recipe outputs cannot also occur in shared predicates, optional worlds, survivor groups or enemy rosters",
+    );
+  return out;
+}

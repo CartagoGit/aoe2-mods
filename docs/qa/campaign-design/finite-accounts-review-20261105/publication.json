@@ -1,0 +1,35 @@
+{
+  "certification": {
+    "againstIntegrationSha": "e513c00034016055c3a0c9114df09d6139716c16",
+    "candidateSha": "cf84b92f1fb3f4530a61429c639fd40532f58a87",
+    "declared": true,
+    "passed": true,
+    "steps": [
+      {
+        "command": "bun install --frozen-lockfile",
+        "passed": true,
+        "scope": "project"
+      },
+      {
+        "command": "bun run validate",
+        "passed": true,
+        "scope": "project"
+      }
+    ]
+  },
+  "landed": true,
+  "landing": {
+    "integrationSha": "e513c00034016055c3a0c9114df09d6139716c16",
+    "mergedSha": "cf84b92f1fb3f4530a61429c639fd40532f58a87",
+    "reason": "refs/heads/wip/gpt-6-luna/implement/i00013-S2-g1/explicit-finite-difficulty-accounts landed on develop at cf84b92f.",
+    "status": "merged"
+  },
+  "steps": [
+    {
+      "detail": "kept: i00013 is in progress, and its next work is committed on this branch.",
+      "name": "keep-work-ref",
+      "ok": true
+    }
+  ],
+  "workRefRemoved": false
+}

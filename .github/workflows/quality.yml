@@ -1,0 +1,39 @@
+name: Quality
+on:
+  push:
+    branches: [develop, main, master]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install C toolchain (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: choco install mingw --no-progress -y
+      - run: bun install --frozen-lockfile
+      - run: python tools/python/setup.py
+      - run: bun run validate
+      - name: Native round-trip (bundled XS binary supported platforms)
+        if: runner.os != 'macOS'
+        run: bun run test:export
+      - uses: actions/upload-artifact@v4
+        if: runner.os != 'macOS'
+        with:
+          name: export-fixture-${{ matrix.os }}
+          path: |
+            build/technical-pilot/native-checks
+            dist/technical-pilot-fixture.zip

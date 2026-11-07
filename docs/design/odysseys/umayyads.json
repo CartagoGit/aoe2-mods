@@ -1,0 +1,1668 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "umayyads",
+  "status": "baseline-secondary-design; long-episode dossiers in progress",
+  "baselineOptionalRecipes": {
+    "01-ledgers-of-damascus": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the Ghouta civic store",
+          "es-ES": "el almacén cívico de la Guta"
+        },
+        "title": {
+          "en": "Raise the Store Again — the Ghouta civic store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén cívico de la Guta"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the Ghouta civic store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el almacén cívico de la Guta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the Ghouta supply post",
+          "es-ES": "el puesto de suministros de la Guta"
+        },
+        "title": {
+          "en": "One Honest Consignment — the Ghouta supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la Guta"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the Ghouta supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la Guta; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the civic road junction",
+          "es-ES": "el cruce de la calzada cívica"
+        },
+        "title": {
+          "en": "The Path Between — the civic road junction",
+          "es-ES": "El camino entre ambos — el cruce de la calzada cívica"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the civic road junction; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de el cruce de la calzada cívica; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the neighbourhood account copies",
+          "es-ES": "las copias de las cuentas del barrio"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the neighbourhood account copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de las cuentas del barrio"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the neighbourhood account copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de las copias de las cuentas del barrio; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the orchard households",
+          "es-ES": "los hogares de los huertos"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the orchard households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los huertos"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the orchard households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los huertos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the orchard-road approaches",
+          "es-ES": "las aproximaciones a los caminos de los huertos"
+        },
+        "title": {
+          "en": "The Road Seen First — the orchard-road approaches",
+          "es-ES": "El camino visto primero — las aproximaciones a los caminos de los huertos"
+        },
+        "rationale": {
+          "en": "The documented setting of Ledgers of Damascus supports this bounded fictional local task. It concerns the orchard-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Los registros de Damasco permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones a los caminos de los huertos; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "02-stone-and-memory": [
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the works supply store",
+          "es-ES": "el almacén de suministros de la obra"
+        },
+        "title": {
+          "en": "Raise the Store Again — the works supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the works supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the works-gate consignment post",
+          "es-ES": "el puesto de remesas de la puerta de la obra"
+        },
+        "title": {
+          "en": "One Honest Consignment — the works-gate consignment post",
+          "es-ES": "Una remesa honrada — el puesto de remesas de la puerta de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the works-gate consignment post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de el puesto de remesas de la puerta de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the construction inventory copies",
+          "es-ES": "las copias del inventario de construcción"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the construction inventory copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias del inventario de construcción"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the construction inventory copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de las copias del inventario de construcción; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the supply street outside the works",
+          "es-ES": "la calle de suministros fuera de la obra"
+        },
+        "title": {
+          "en": "The Path Between — the supply street outside the works",
+          "es-ES": "El camino entre ambos — la calle de suministros fuera de la obra"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the supply street outside the works; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de la calle de suministros fuera de la obra; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the workers households",
+          "es-ES": "los hogares de los trabajadores"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the workers households",
+          "es-ES": "Un lugar junto al hogar — los hogares de los trabajadores"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the workers households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de los hogares de los trabajadores; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the construction-road approaches",
+          "es-ES": "las aproximaciones de las calzadas de construcción"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the construction-road approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones de las calzadas de construcción"
+        },
+        "rationale": {
+          "en": "The documented setting of Stone and Memory supports this bounded fictional local task. It concerns the construction-road approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de Piedra y memoria permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones de las calzadas de construcción; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "03-the-western-shore": [
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the voluntary harbour evacuees",
+          "es-ES": "los evacuados voluntarios del puerto"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the voluntary harbour evacuees",
+          "es-ES": "Quienes eligen marcharse — los evacuados voluntarios del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the voluntary harbour evacuees; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de los evacuados voluntarios del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the inland withdrawal road",
+          "es-ES": "el camino de retirada tierra adentro"
+        },
+        "title": {
+          "en": "The Path Between — the inland withdrawal road",
+          "es-ES": "El camino entre ambos — el camino de retirada tierra adentro"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland withdrawal road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de el camino de retirada tierra adentro; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the civilian departure lists",
+          "es-ES": "las listas de salida civil"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the civilian departure lists",
+          "es-ES": "Lo que el fuego no debe llevarse — las listas de salida civil"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the civilian departure lists; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de las listas de salida civil; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the inland receiving households",
+          "es-ES": "los hogares receptores del interior"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the inland receiving households",
+          "es-ES": "Un lugar junto al hogar — los hogares receptores del interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland receiving households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de los hogares receptores del interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the inland supply store",
+          "es-ES": "el almacén de suministros del interior"
+        },
+        "title": {
+          "en": "Raise the Store Again — the inland supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros del interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the inland supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros del interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the port-quarter approaches",
+          "es-ES": "las aproximaciones al barrio del puerto"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the port-quarter approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones al barrio del puerto"
+        },
+        "rationale": {
+          "en": "The documented setting of The Western Shore supports this bounded fictional local task. It concerns the port-quarter approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de La orilla occidental permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al barrio del puerto; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "04-the-narrow-sea": [
+      {
+        "kind": "scout",
+        "subject": {
+          "en": "the north-shore landing approaches",
+          "es-ES": "las aproximaciones al desembarcadero de la costa norte"
+        },
+        "title": {
+          "en": "The Road Seen First — the north-shore landing approaches",
+          "es-ES": "El camino visto primero — las aproximaciones al desembarcadero de la costa norte"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the north-shore landing approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones al desembarcadero de la costa norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the inland pass road",
+          "es-ES": "el camino del paso hacia el interior"
+        },
+        "title": {
+          "en": "The Path Between — the inland pass road",
+          "es-ES": "El camino entre ambos — el camino del paso hacia el interior"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the inland pass road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el camino del paso hacia el interior; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "trade",
+        "subject": {
+          "en": "the north-shore supply post",
+          "es-ES": "el puesto de suministros de la costa norte"
+        },
+        "title": {
+          "en": "One Honest Consignment — the north-shore supply post",
+          "es-ES": "Una remesa honrada — el puesto de suministros de la costa norte"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the north-shore supply post; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el puesto de suministros de la costa norte; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the landing depot",
+          "es-ES": "el depósito del desembarcadero"
+        },
+        "title": {
+          "en": "Raise the Store Again — the landing depot",
+          "es-ES": "Levantar de nuevo el almacén — el depósito del desembarcadero"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the landing depot; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de el depósito del desembarcadero; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the finite cargo copies",
+          "es-ES": "las copias de la carga finita"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the finite cargo copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias de la carga finita"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the finite cargo copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de las copias de la carga finita; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the shore households",
+          "es-ES": "los hogares de la costa"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the shore households",
+          "es-ES": "Un lugar junto al hogar — los hogares de la costa"
+        },
+        "rationale": {
+          "en": "The documented setting of The Narrow Sea supports this bounded fictional local task. It concerns the shore households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El mar estrecho permite esta tarea local ficticia y limitada. Se ocupa de los hogares de la costa; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ],
+    "05-the-last-crossing": [
+      {
+        "kind": "guide",
+        "subject": {
+          "en": "the southern retreat road",
+          "es-ES": "el camino de retirada del sur"
+        },
+        "title": {
+          "en": "The Path Between — the southern retreat road",
+          "es-ES": "El camino entre ambos — el camino de retirada del sur"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the southern retreat road; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de el camino de retirada del sur; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "extract",
+        "subject": {
+          "en": "the civilian groups beside the retreat",
+          "es-ES": "los grupos civiles junto a la retirada"
+        },
+        "title": {
+          "en": "Those Who Choose to Leave — the civilian groups beside the retreat",
+          "es-ES": "Quienes eligen marcharse — los grupos civiles junto a la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the civilian groups beside the retreat; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de los grupos civiles junto a la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "watch",
+        "subject": {
+          "en": "the reserve crossing approaches",
+          "es-ES": "las aproximaciones del cruce de las reservas"
+        },
+        "title": {
+          "en": "Eyes Beyond the Gate — the reserve crossing approaches",
+          "es-ES": "Ojos más allá de la puerta — las aproximaciones del cruce de las reservas"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the reserve crossing approaches; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de las aproximaciones del cruce de las reservas; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "aid",
+        "subject": {
+          "en": "the receiving-bank households",
+          "es-ES": "los hogares de la ribera receptora"
+        },
+        "title": {
+          "en": "A Place at the Hearth — the receiving-bank households",
+          "es-ES": "Un lugar junto al hogar — los hogares de la ribera receptora"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the receiving-bank households; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de los hogares de la ribera receptora; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "copy",
+        "subject": {
+          "en": "the departure register copies",
+          "es-ES": "las copias del registro de salida"
+        },
+        "title": {
+          "en": "What the Fire Must Not Take — the departure register copies",
+          "es-ES": "Lo que el fuego no debe llevarse — las copias del registro de salida"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the departure register copies; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de las copias del registro de salida; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      },
+      {
+        "kind": "repair",
+        "subject": {
+          "en": "the retreat supply store",
+          "es-ES": "el almacén de suministros de la retirada"
+        },
+        "title": {
+          "en": "Raise the Store Again — the retreat supply store",
+          "es-ES": "Levantar de nuevo el almacén — el almacén de suministros de la retirada"
+        },
+        "rationale": {
+          "en": "The documented setting of The Last Crossing supports this bounded fictional local task. It concerns the retreat supply store; it grants the stated tactical or contextual benefit without reversing the historical outcome. It introduces no named historical casualty or private dialogue.",
+          "es-ES": "El contexto documentado de El último cruce permite esta tarea local ficticia y limitada. Se ocupa de el almacén de suministros de la retirada; ofrece la ventaja táctica o contextual indicada sin alterar el desenlace histórico. No introduce bajas históricas concretas ni diálogos privados."
+        }
+      }
+    ]
+  },
+  "episodes": [],
+  "editorialContract": {
+    "campaignTitle": {
+      "en": "From Damascus to the Far Horizon",
+      "es-ES": "De Damasco al último horizonte"
+    },
+    "publicId": "CDF-I02",
+    "internalName": "CDF_Umayyads",
+    "sourceLocale": "en",
+    "targetEpisodeCount": 32,
+    "narratorId": "yasir-cloth-merchant",
+    "personaLens": {
+      "en": "Prices, credit, cloth and hidden costs",
+      "es-ES": "Precios, crédito, tejidos y costes ocultos"
+    },
+    "deliveryTone": {
+      "en": "quick confidence becoming thoughtful doubt",
+      "es-ES": "confianza rápida que acaba en duda reflexiva"
+    },
+    "sequence": [
+      {
+        "speaker": "collection-narrator",
+        "mode": "sober source-qualified historical fact",
+        "causePolicy": "attribute motives, miracles and sectarian judgements to their sources; no single moral or theological verdict"
+      },
+      {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "fictional personal interpretation with explicit witness basis"
+      }
+    ],
+    "baselineSemanticIdsPreserved": [
+      "01-ledgers-of-damascus",
+      "02-stone-and-memory",
+      "03-the-western-shore",
+      "04-the-narrow-sea",
+      "05-the-last-crossing"
+    ],
+    "orderingPolicy": "order is a separate integer; existing semantic IDs and public/progress IDs remain stable",
+    "progressPolicy": "only the actual final odyssey episode offers terminal route write; every former last baseline mission becomes nonterminal when followed by new episodes",
+    "sourceAuditStatus": "candidate chronologies reviewed for errors; individual episode historical approval pending",
+    "coreMechanicPolicy": "at least four mission-core families in each odyssey; no more than two consecutive identical core families without authored reason; side-objective variety does not excuse identical main missions",
+    "selectedEpisodeCount": 32,
+    "selectionNotes": [
+      "Act counts are subordinate to source chronology and are not filler quotas.",
+      "Scene location fixes the local player adventure; remote event claims remain explicitly off-map reports.",
+      "Repeated core families require episode-specific world layout, counts and choice tradeoffs before authoring assignment.",
+      "Archaeology is dated by phases; a modern artifact is not proof of a precise ancient dedication date."
+    ]
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "title": {
+        "en": "The Ledger of Damascus",
+        "es-ES": "El registro de Damasco"
+      },
+      "historicalYearBand": [
+        661,
+        680
+      ],
+      "dramaticPurpose": "Gobierno y sucesión; Yasir usa cuentas familiares, no memoria adulta de661.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.63,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.76,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.9,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "01-ledgers-of-damascus",
+        "02-succession-and-rival-records-damascus",
+        "03-off-map-witness-and-relief-damascus"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-2",
+      "title": {
+        "en": "The Second Fracture",
+        "es-ES": "La segunda fractura"
+      },
+      "historicalYearBand": [
+        683,
+        698
+      ],
+      "dramaticPurpose": "Guerra civil, restauración de autoridad, edificios y moneda; efectos distintos para comunidades y comerciantes.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.71,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.82,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "04-bounded-civilian-withdrawal-medina",
+        "05-finite-siege-and-household-relief-mecca",
+        "06-separate-delegation-and-supply-jabiya",
+        "07-administrative-transition-damascus",
+        "02-stone-and-memory",
+        "09-civilian-refuge-and-property-records-mecca",
+        "10-fiscal-and-witness-records-kufa",
+        "11-finite-mint-and-market-reconciliation-damascus",
+        "03-the-western-shore"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-3",
+      "title": {
+        "en": "Across the Oxus",
+        "es-ES": "Más allá del Oxus"
+      },
+      "historicalYearBand": [
+        700,
+        712
+      ],
+      "dramaticPurpose": "Revueltas y campañas orientales con un lugar por misión; mercader no decide teologías de poblaciones conquistadas.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.79,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.88,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "13-finite-battle-and-civilian-extraction-kufa",
+        "14-provincial-dispatch-and-provision-merv",
+        "15-finite-siege-and-trade-recovery-paykand",
+        "16-finite-relief-and-withdrawal-ramitin",
+        "17-tribute-and-household-receipts-bukhara",
+        "18-civilian-record-and-refuge-balkh",
+        "19-off-map-dispatch-and-bounded-accounts-balkh"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-4",
+      "title": {
+        "en": "The Sea and the Far Horizon",
+        "es-ES": "El mar y el horizonte lejano"
+      },
+      "historicalYearBand": [
+        711,
+        740
+      ],
+      "dramaticPurpose": "Iberia, rutas orientales y fracaso anteConstantinopla; los mapas no abarcan toda una provincia en400tiles.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.87,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 0.94,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.05,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "04-the-narrow-sea",
+        "21-bounded-river-trade-and-receipts-khwarazm",
+        "22-finite-siege-and-property-records-samarkand",
+        "23-finite-works-and-source-comparison-bukhara",
+        "24-finite-caravan-and-relief-tashkent",
+        "25-finite-withdrawal-and-record-preservation-fergana",
+        "26-finite-siege-withdrawal-and-supply-constantinople",
+        "27-bounded-civilian-refuge-kufa"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    },
+    {
+      "id": "act-5",
+      "title": {
+        "en": "The Last Accounts",
+        "es-ES": "Las últimas cuentas"
+      },
+      "historicalYearBand": [
+        744,
+        750
+      ],
+      "dramaticPurpose": "Revolución, Kufa, Zab y caída oriental; el arco termina sin negar supervivencia omeya posterior enIberia.",
+      "difficultyCurve": {
+        "easy": {
+          "militaryPressureMultiplier": 0.95,
+          "logisticsWindowMultiplier": 1.7,
+          "recoveryBudgetMultiplier": 1.5
+        },
+        "standard": {
+          "militaryPressureMultiplier": 1.0,
+          "logisticsWindowMultiplier": 1.3,
+          "recoveryBudgetMultiplier": 1.25
+        },
+        "hard": {
+          "militaryPressureMultiplier": 1.1,
+          "logisticsWindowMultiplier": 1.0,
+          "recoveryBudgetMultiplier": 1.0
+        },
+        "interpretation": "estimated curve applied to an authored event-specific base; military multiplier applies only when the episode has military pressure; never introduces an enemy into a peaceful event; explicit integer episode budgets override rounded curve",
+        "qaStatus": "pending cohort calibration"
+      },
+      "episodeIds": [
+        "28-competing-provincial-dispatches-damascus",
+        "29-bounded-camp-and-civilian-provision-merv",
+        "30-administrative-and-household-reception-kufa",
+        "05-the-last-crossing",
+        "32-civilian-records-and-final-perspective-fustat"
+      ],
+      "turningPointStatus": "selected episode identities attached; complete turning-point screens and mission contracts pending"
+    }
+  ],
+  "continuityContract": {
+    "recommendedPrevious": [
+      {
+        "campaignId": "first-fitna",
+        "route": "muawiya-perspective"
+      }
+    ],
+    "nextRoutes": [
+      {
+        "id": "completed",
+        "key": "progress.umayyads.completed",
+        "next": null
+      }
+    ],
+    "chronologyWarning": "Any predecessor-dependent campaign remains independently playable; show recommendation and recap, preserve all route keys, and disclose overlap when changing perspective.",
+    "terminalScreenRule": "show successor English/Spanish title plus public ID for the chosen route; no automatic launching and no requirement lock",
+    "proceedWithoutPredecessor": true
+  },
+  "episodeSelection": [
+    {
+      "id": "01-ledgers-of-damascus",
+      "order": 1,
+      "actId": "act-1",
+      "title": {
+        "en": "Ledgers of Damascus",
+        "es-ES": "Registros de Damasco"
+      },
+      "date": "661 CE",
+      "geographyId": "damascus",
+      "coreMechanic": "administrative-and-market-logistics",
+      "historicalSelection": {
+        "corpusEventId": 208,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entries 661 and 661–80; Hasan Iranica, pp. 3–4",
+        "qualification": "The transfer was negotiated and staged; do not portray as a single universally accepted coronation.",
+        "candidateEvent": "Muawiya assumes the caliphate after Hasan relinquishes control of Iraq; Damascus serves as the dynasty’s political center.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "02-succession-and-rival-records-damascus",
+      "order": 2,
+      "actId": "act-1",
+      "title": {
+        "en": "The Son Named in the Letter",
+        "es-ES": "El hijo nombrado en la carta"
+      },
+      "date": "680 CE",
+      "geographyId": "damascus",
+      "coreMechanic": "succession-and-rival-records",
+      "historicalSelection": {
+        "corpusEventId": 209,
+        "sourceUrl": "https://www.iranicaonline.org/articles/asura/",
+        "passage": "“ʿĀšūrāʾ,” opening paragraph; Iranica chronology entry 680",
+        "qualification": "Succession mechanism and legitimacy are described differently across political traditions.",
+        "candidateEvent": "Yazid succeeds Muawiya, whose hereditary designation provokes opposition.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-off-map-witness-and-relief-damascus",
+      "order": 3,
+      "actId": "act-1",
+      "title": {
+        "en": "News That Crossed the Desert",
+        "es-ES": "Noticias que cruzaron el desierto"
+      },
+      "date": "October680 conventional; Karbala itself off-map",
+      "geographyId": "damascus",
+      "coreMechanic": "off-map-witness-and-relief",
+      "historicalSelection": {
+        "corpusEventId": 210,
+        "sourceUrl": "https://www.iranicaonline.org/articles/karbala/",
+        "passage": "“Karbala,” opening paragraph; “Husayn,” paragraphs 94–99",
+        "qualification": "Death day and Gregorian conversion are traditional; number of dead disputed.",
+        "candidateEvent": "Husayn and his companions are killed at Karbala.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-bounded-civilian-withdrawal-medina",
+      "order": 4,
+      "actId": "act-2",
+      "title": {
+        "en": "The Roads after al-Harra",
+        "es-ES": "Los caminos después de al-Harra"
+      },
+      "date": "683 CE",
+      "geographyId": "medina",
+      "coreMechanic": "bounded-civilian-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 211,
+        "sourceUrl": "https://fada.birzeit.edu/jspui/handle/20.500.11889/1654",
+        "passage": "Birzeit repository record/title and abstract; 63 AH/683 study of reports on al-Harra",
+        "qualification": "Academic thesis focuses on divergent historical reports; exact battle day and casualty claims not used.",
+        "candidateEvent": "Rebellion in Medina ends in the battle of al-Harra against forces sent by Yazid.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-finite-siege-and-household-relief-mecca",
+      "order": 5,
+      "actId": "act-2",
+      "title": {
+        "en": "The City beneath the Siege",
+        "es-ES": "La ciudad bajo el asedio"
+      },
+      "date": "683 CE",
+      "geographyId": "mecca",
+      "coreMechanic": "finite-siege-and-household-relief",
+      "historicalSelection": {
+        "corpusEventId": 212,
+        "sourceUrl": "https://www.jstor.org/stable/jj.18252825",
+        "passage": "Al-Ṭabarī vol. 20, year 64 (683–684), pp. 1–123; JSTOR excerpt lines 102–109 reports 40-day siege and retreat after Yazid’s death",
+        "qualification": "Volume summary and opening excerpt consulted; underlying account transmits earlier chroniclers, and event details vary.",
+        "candidateEvent": "Ibn al-Zubayr’s challenge leads to an Umayyad siege of Mecca; forces withdraw after Yazid’s death.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "06-separate-delegation-and-supply-jabiya",
+      "order": 6,
+      "actId": "act-2",
+      "title": {
+        "en": "The Assembly on the Plateau",
+        "es-ES": "La asamblea en la meseta"
+      },
+      "date": "684 CE",
+      "geographyId": "jabiya",
+      "coreMechanic": "separate-delegation-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 213,
+        "sourceUrl": "https://www.jstor.org/stable/jj.18252825",
+        "passage": "Al-Ṭabarī vol. 20, years 64–65; translator’s foreword and year 65 section",
+        "qualification": "The line of Marwanid succession is a political transition during an unstable civil war; access to full volume restricted.",
+        "candidateEvent": "Marwan becomes caliph amid the Second Fitna.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "07-administrative-transition-damascus",
+      "order": 7,
+      "actId": "act-2",
+      "title": {
+        "en": "The Seal of Abd al-Malik",
+        "es-ES": "El sello de Abd al-Malik"
+      },
+      "date": "685 CE",
+      "geographyId": "damascus",
+      "coreMechanic": "administrative-transition",
+      "historicalSelection": {
+        "corpusEventId": 214,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entry 685",
+        "qualification": "Control was contested; no one-day reunification.",
+        "candidateEvent": "Abd al-Malik succeeds Marwan and gradually reunifies Umayyad-held regions.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "02-stone-and-memory",
+      "order": 8,
+      "actId": "act-2",
+      "title": {
+        "en": "Stone and Memory",
+        "es-ES": "Piedra y memoria"
+      },
+      "date": "691/692 CE",
+      "geographyId": "jerusalem",
+      "coreMechanic": "finite-monument-works",
+      "historicalSelection": {
+        "corpusEventId": 215,
+        "sourceUrl": "https://www.metmuseum.org/exhibitions/listings/2012/byzantium-and-islam/blog/where-in-the-world/posts/dome-of-the-rock",
+        "passage": "The Met, “The Dome of the Rock”: originally built 688–692, completed 691/692",
+        "qualification": "Building phase spans years; avoid claims about a single motivation.",
+        "candidateEvent": "Abd al-Malik’s Dome of the Rock is completed on the Haram al-Sharif.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "09-civilian-refuge-and-property-records-mecca",
+      "order": 9,
+      "actId": "act-2",
+      "title": {
+        "en": "After the Second Siege",
+        "es-ES": "Después del segundo asedio"
+      },
+      "date": "692 CE",
+      "geographyId": "mecca",
+      "coreMechanic": "civilian-refuge-and-property-records",
+      "historicalSelection": {
+        "corpusEventId": 216,
+        "sourceUrl": "https://www.jstor.org/stable/jj.18254935",
+        "passage": "Al-Ṭabarī vol. 21, year 73; book description says Ibn al-Zubayr’s rival caliphate extinguished by end of 73/692",
+        "qualification": "JSTOR book description consulted; full narrative inaccessible; no siege tactics or casualty details used.",
+        "candidateEvent": "Ibn al-Zubayr is defeated and killed; Umayyad authority is restored over the Hijaz.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "10-fiscal-and-witness-records-kufa",
+      "order": 10,
+      "actId": "act-2",
+      "title": {
+        "en": "A Governor at the Iraqi Door",
+        "es-ES": "Un gobernador a la puerta de Irak"
+      },
+      "date": "694 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "fiscal-and-witness-records",
+      "historicalSelection": {
+        "corpusEventId": 217,
+        "sourceUrl": "https://journals.library.columbia.edu/index.php/alusur/article/download/uw30sijpesteijn/uw30sijpesteijn/25796",
+        "passage": "Petra M. Sijpesteijn, “Closing Ranks,” article passage: al-Hajjaj appointed governor of Iraq in 75/694.",
+        "qualification": "Appointment date is supported by the consulted article; avoid adding unverified military actions to the appointment milestone.",
+        "candidateEvent": "Al-Hajjaj is appointed governor of Iraq and conducts campaigns against remaining opposition.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "11-finite-mint-and-market-reconciliation-damascus",
+      "order": 11,
+      "actId": "act-2",
+      "title": {
+        "en": "Gold without the Old Portrait",
+        "es-ES": "Oro sin el retrato antiguo"
+      },
+      "date": "696–697 CE; phasedreforms",
+      "geographyId": "damascus",
+      "coreMechanic": "finite-mint-and-market-reconciliation",
+      "historicalSelection": {
+        "corpusEventId": 218,
+        "sourceUrl": "https://www.iranicaonline.org/articles/coins-and-coinage/",
+        "passage": "“Coins and Coinage,” passage on Abd al-Malik’s reform and anonymous coinage",
+        "qualification": "Dates sometimes given as 696 or 697; coin reform was staged across regions.",
+        "candidateEvent": "Abd al-Malik reforms coinage, replacing Byzantine/Sasanian-style issues with Islamic inscriptions.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "03-the-western-shore",
+      "order": 12,
+      "actId": "act-2",
+      "title": {
+        "en": "The Western Shore",
+        "es-ES": "La costa occidental"
+      },
+      "date": "698 CE",
+      "geographyId": "carthage",
+      "coreMechanic": "finite-harbour-battle-and-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 219,
+        "sourceUrl": "https://en.wikisource.org/wiki/Page:Bury_J_B_The_Cambridge_Medieval_History_Vol_2_1913.djvu/398",
+        "passage": "Cambridge Medieval History II, p. 370, passage on naval reversal/Carthage",
+        "qualification": "Older synthesis; exact sequencing and date need modern corroboration.",
+        "candidateEvent": "Carthage is captured by Arab forces after a Byzantine attempt to recover it.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "13-finite-battle-and-civilian-extraction-kufa",
+      "order": 13,
+      "actId": "act-3",
+      "title": {
+        "en": "The Fields of the Broken Banner",
+        "es-ES": "Los campos del estandarte quebrado"
+      },
+      "date": "700–701 CE; DayralJamajimregionalfootprintuncertain",
+      "geographyId": "kufa",
+      "coreMechanic": "finite-battle-and-civilian-extraction",
+      "historicalSelection": {
+        "additionalMilestone": "extra:0",
+        "sourceUrl": "https://www.iranicaonline.org/articles/kufa/",
+        "passage": "Encyclopaedia Iranica, “Kufa,” passage on the revolt: Ibn al-Ashʿath captures Kufa in 701 and is defeated by al-Ḥajjāj in Rabīʿ I 82/April 701; primary narrative: al-Ṭabarī, History, vol. 18, “The Events of the Years 81–82,” Dayr al-Jamājim report, https://ghayb.com/wp-content/uploads/2016/09/Tabari_Volume_18.pdf.",
+        "qualification": "Al-Ṭabarī preserves later transmitted reports rather than eyewitness records; the secondary source differs on dates and the rebellion’s exact phases. Keep c.700–701 for the broader rising and 701 for the named defeat; do not collapse it into the 740 Zayd revolt.",
+        "candidateEvent": "Ibn al-Ashʿath’s large Iraqi military revolt challenges al-Ḥajjāj and Umayyad rule; after taking Kufa, the rebels are defeated near Dayr al-Jamājim.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "14-provincial-dispatch-and-provision-merv",
+      "order": 14,
+      "actId": "act-3",
+      "title": {
+        "en": "Orders at the Eastern Gate",
+        "es-ES": "Órdenes en la puerta oriental"
+      },
+      "date": "705 CE",
+      "geographyId": "merv",
+      "coreMechanic": "provincial-dispatch-and-provision",
+      "historicalSelection": {
+        "corpusEventId": 220,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” passage beginning “Under al-Walid I (86–96/705–15)”",
+        "qualification": "Hijri/Gregorian conversion; Qutayba’s appointment given as 704/705 in Iranica.",
+        "candidateEvent": "Al-Walid I becomes caliph; Qutayba is appointed governor of Khorasan around this period.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "15-finite-siege-and-trade-recovery-paykand",
+      "order": 15,
+      "actId": "act-3",
+      "title": {
+        "en": "The Walls of Paykand",
+        "es-ES": "Las murallas de Paykand"
+      },
+      "date": "706 CE",
+      "geographyId": "paykand",
+      "coreMechanic": "finite-siege-and-trade-recovery",
+      "historicalSelection": {
+        "corpusEventId": 221,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” Qutayba campaigns; Paykand in 87/706",
+        "qualification": "Military narrative from later sources; do not assert exact battlefield positions.",
+        "candidateEvent": "Qutayba captures Paykand during campaigns across the Oxus.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "16-finite-relief-and-withdrawal-ramitin",
+      "order": 16,
+      "actId": "act-3",
+      "title": {
+        "en": "The Roads through Ramitin",
+        "es-ES": "Los caminos por Ramitin"
+      },
+      "date": "707 CE; localityidentificationqualified",
+      "geographyId": "ramitin",
+      "coreMechanic": "finite-relief-and-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 222,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” Qutayba campaign sequence, 88/707",
+        "qualification": "Dates as conversion in Iranica; detail comes from Arabic chronicles.",
+        "candidateEvent": "Qutayba takes Rāmetīn and defeats a Sogdian/Turkic relief force near Bukhara.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "17-tribute-and-household-receipts-bukhara",
+      "order": 17,
+      "actId": "act-3",
+      "title": {
+        "en": "A Receipt at Bukhara's Gate",
+        "es-ES": "Un recibo a la puerta de Bujará"
+      },
+      "date": "709 CE",
+      "geographyId": "bukhara",
+      "coreMechanic": "tribute-and-household-receipts",
+      "historicalSelection": {
+        "corpusEventId": 223,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” Qutayba entry of 90/709; also Iranica “Bukhara ii”",
+        "qualification": "A local ruler remained; the conquest did not mean immediate cultural conversion or permanent uncontested control.",
+        "candidateEvent": "Qutayba takes Bukhara and installs a garrison/tribute arrangement.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "18-civilian-record-and-refuge-balkh",
+      "order": 18,
+      "actId": "act-3",
+      "title": {
+        "en": "A Message from Tokharistan",
+        "es-ES": "Un mensaje desde Tojaristán"
+      },
+      "date": "710 CE; captureofNizakreported, notplayerexecution",
+      "geographyId": "balkh",
+      "coreMechanic": "civilian-record-and-refuge",
+      "historicalSelection": {
+        "corpusEventId": 224,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” Qutayba sequence, 91/710",
+        "qualification": "Reported in later chronicles; use as regional revolt, not invented field battle.",
+        "candidateEvent": "Nizak leads a revolt in Tokharistan and is captured and killed.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "19-off-map-dispatch-and-bounded-accounts-balkh",
+      "order": 19,
+      "actId": "act-3",
+      "title": {
+        "en": "Tribute beyond the Mountain Road",
+        "es-ES": "Tributo más allá del camino de montaña"
+      },
+      "date": "711 CE; Zabulistanoff-map, locationnotassertedinBalkh",
+      "geographyId": "balkh",
+      "coreMechanic": "off-map-dispatch-and-bounded-accounts",
+      "historicalSelection": {
+        "corpusEventId": 225,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” passage on 92/711",
+        "qualification": "Political submission/tribute is not equivalent to full territorial annexation.",
+        "candidateEvent": "Qutayba exacts tribute from the Zunbil rulers.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "04-the-narrow-sea",
+      "order": 20,
+      "actId": "act-4",
+      "title": {
+        "en": "The Narrow Sea",
+        "es-ES": "El mar estrecho"
+      },
+      "date": "711–712 CE",
+      "geographyId": "gibraltar",
+      "coreMechanic": "finite-strait-convoy-and-civilian-refuge",
+      "historicalSelection": {
+        "corpusEventId": 226,
+        "sourceUrl": "https://sourcebooks.web.fordham.edu/source/conqspain.asp",
+        "passage": "Ibn ʿAbd al-Ḥakam, “Conquest of Spain,” crossing narrative",
+        "qualification": "Text composed later; crossing date, landing location and actor details are not certain.",
+        "candidateEvent": "Umayyad forces cross from North Africa into Iberia and begin the conquest.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "21-bounded-river-trade-and-receipts-khwarazm",
+      "order": 21,
+      "actId": "act-4",
+      "title": {
+        "en": "Accounts on the Lower Oxus",
+        "es-ES": "Cuentas en el bajo Oxus"
+      },
+      "date": "712 CE",
+      "geographyId": "khwarazm",
+      "coreMechanic": "bounded-river-trade-and-receipts",
+      "historicalSelection": {
+        "corpusEventId": 227,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” 93/712 campaign",
+        "qualification": "Control and chronology are contested in regional scholarship.",
+        "candidateEvent": "Qutayba takes and garrisons Khwarazm.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "22-finite-siege-and-property-records-samarkand",
+      "order": 22,
+      "actId": "act-4",
+      "title": {
+        "en": "The City at the End of the Road",
+        "es-ES": "La ciudad al final del camino"
+      },
+      "date": "712 CE",
+      "geographyId": "samarkand",
+      "coreMechanic": "finite-siege-and-property-records",
+      "historicalSelection": {
+        "corpusEventId": 228,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” campaign after Khwarazm; Gurak’s submission",
+        "qualification": "Narrative transmitted by later Arabic sources; submission should not be phrased as permanent occupation.",
+        "candidateEvent": "Samarkand submits after Sogdian and Turkic forces are defeated; a garrison is left to collect tribute.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "23-finite-works-and-source-comparison-bukhara",
+      "order": 23,
+      "actId": "act-4",
+      "title": {
+        "en": "The Citadel's New Courtyard",
+        "es-ES": "El nuevo patio de la ciudadela"
+      },
+      "date": "712–713 CE; attendanceclaimsattributed, noconversiongoal",
+      "geographyId": "bukhara",
+      "coreMechanic": "finite-works-and-source-comparison",
+      "historicalSelection": {
+        "corpusEventId": 229,
+        "sourceUrl": "https://www.iranicaonline.org/articles/bukhara-v/",
+        "passage": "Iranica, “Bukhara v. Archaeology and Monuments,” Qutayba’s mosque",
+        "qualification": "The account cites Narshakhi, written centuries later; not a claim of immediate mass conversion.",
+        "candidateEvent": "Qutayba’s administration builds a mosque in Bukhara’s citadel; local attendance is reportedly incentivized.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "24-finite-caravan-and-relief-tashkent",
+      "order": 24,
+      "actId": "act-4",
+      "title": {
+        "en": "Toward the Shash Oasis",
+        "es-ES": "Hacia el oasis de Shash"
+      },
+      "date": "714 CE; Fergana/Isfijabreportedoff-map",
+      "geographyId": "tashkent",
+      "coreMechanic": "finite-caravan-and-relief",
+      "historicalSelection": {
+        "corpusEventId": 230,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” campaigns to 95/714",
+        "qualification": "Iranica reports the campaign reach by 95/714; distinguish it from al-Walid’s death in 715.",
+        "candidateEvent": "Qutayba campaigns in Shash, Fergana, and as far as Isfijab.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "25-finite-withdrawal-and-record-preservation-fergana",
+      "order": 25,
+      "actId": "act-4",
+      "title": {
+        "en": "The Camp without Its Commander",
+        "es-ES": "El campamento sin su comandante"
+      },
+      "date": "715 CE; commanderhistoricaldeathreported",
+      "geographyId": "fergana",
+      "coreMechanic": "finite-withdrawal-and-record-preservation",
+      "historicalSelection": {
+        "corpusEventId": 231,
+        "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+        "passage": "“Arab ii,” final Qutayba paragraph; “Khorasan iv” says ca. August 715",
+        "qualification": "Iranica dates the mutiny and death to 96/714–715, with the article placing it around August 715 after al-Walid’s death.",
+        "candidateEvent": "Qutayba is killed in a mutiny after al-Walid’s death and Sulayman’s accession.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "26-finite-siege-withdrawal-and-supply-constantinople",
+      "order": 26,
+      "actId": "act-4",
+      "title": {
+        "en": "The Winter beyond the Strait",
+        "es-ES": "El invierno más allá del estrecho"
+      },
+      "date": "717–718 CE; siegefailsregardlesslocalachievement",
+      "geographyId": "constantinople",
+      "coreMechanic": "finite-siege-withdrawal-and-supply",
+      "historicalSelection": {
+        "corpusEventId": 232,
+        "sourceUrl": "https://www.cambridge.org/core/journals/journal-of-hellenic-studies/article/abs/campaign-of-716718-from-arabic-sources/7FA64C84BFD76CECFF0AB6C528D6C854",
+        "passage": "E. W. Brooks, “The Campaign of 716–718, from Arabic Sources,” source discussion",
+        "qualification": "Campaign is conventionally 717–718; manuscript accounts differ and siege details are contested.",
+        "candidateEvent": "An Umayyad force besieges Constantinople and withdraws without taking the city.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "27-bounded-civilian-refuge-kufa",
+      "order": 27,
+      "actId": "act-4",
+      "title": {
+        "en": "The Quarter after Zayd's Revolt",
+        "es-ES": "El barrio después de la revuelta de Zayd"
+      },
+      "date": "740 CE; dateconversionvariants",
+      "geographyId": "kufa",
+      "coreMechanic": "bounded-civilian-refuge",
+      "historicalSelection": {
+        "additionalMilestone": "extra:1",
+        "sourceUrl": "https://www.iranicaonline.org/articles/kufa/",
+        "passage": "Encyclopaedia Iranica, “Kufa,” section on the revolt of Zayd b. ʿAlī; corroborating academic synthesis: St Andrews Encyclopaedia of Theology, “Zaydī Shīʿism,” https://www.saet.ac.uk/Islam/ZaydiShiism.",
+        "qualification": "Traditional chronicles disagree in details of the pledge, defections, death, and treatment of the body. State only the revolt and death at Kufa; do not present later Zaydi identity as already fully formed or confuse this with Husayn’s 680 revolt.",
+        "candidateEvent": "Zayd ibn ʿAlī leads an unsuccessful revolt against Hishām’s Umayyad government in Kufa and is killed after support among Kufans fails to hold.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "28-competing-provincial-dispatches-damascus",
+      "order": 28,
+      "actId": "act-5",
+      "title": {
+        "en": "The Seals That Would Not Hold",
+        "es-ES": "Los sellos que no se sostenían"
+      },
+      "date": "744–747 CE; onecity receivesreports",
+      "geographyId": "damascus",
+      "coreMechanic": "competing-provincial-dispatches",
+      "historicalSelection": {
+        "corpusEventId": 233,
+        "sourceUrl": "https://www.iranicaonline.org/articles/khorasan-iv-the-arab-conquest-and-omayyad-period/",
+        "passage": "Iranica “Khorasan iv,” section “Estrangement, Division, and Arbitration (97–128/715–45)”",
+        "qualification": "The article supports regional context; precise campaign episodes are numerous and not all need playable scenarios.",
+        "candidateEvent": "Repeated succession crises and provincial revolts weaken the late Umayyad government.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "29-bounded-camp-and-civilian-provision-merv",
+      "order": 29,
+      "actId": "act-5",
+      "title": {
+        "en": "A Banner Raised in Marw",
+        "es-ES": "Un estandarte alzado en Marw"
+      },
+      "date": "747 CE",
+      "geographyId": "merv",
+      "coreMechanic": "bounded-camp-and-civilian-provision",
+      "historicalSelection": {
+        "corpusEventId": 234,
+        "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+        "passage": "“Chronology…” entries 747; Iranica “Abu Moslem Ḵorāsānī”",
+        "qualification": "Beginning of revolt is securely placed in 747; details of popular support and ideology are debated.",
+        "candidateEvent": "Abu Muslim raises the Abbasid revolt in Marw.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "30-administrative-and-household-reception-kufa",
+      "order": 30,
+      "actId": "act-5",
+      "title": {
+        "en": "A New Voice at Kufa",
+        "es-ES": "Una voz nueva en Kufa"
+      },
+      "date": "November749 CE",
+      "geographyId": "kufa",
+      "coreMechanic": "administrative-and-household-reception",
+      "historicalSelection": {
+        "corpusEventId": 235,
+        "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+        "passage": "“Abu Moslem Ḵorāsānī,” passage on Kufa and Friday ceremony, 12 Rabi II 132 / 28 Nov 749",
+        "qualification": "Proclamation was a political process; distinguish it from final defeat of Marwan II.",
+        "candidateEvent": "Abbasid forces enter Kufa; al-Saffah is proclaimed caliph in November.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    },
+    {
+      "id": "05-the-last-crossing",
+      "order": 31,
+      "actId": "act-5",
+      "title": {
+        "en": "The Last Crossing",
+        "es-ES": "El último paso"
+      },
+      "date": "750 CE",
+      "geographyId": "zab",
+      "coreMechanic": "finite-river-withdrawal",
+      "historicalSelection": {
+        "corpusEventId": 236,
+        "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+        "passage": "“Abu Moslem Ḵorāsānī,” paragraph on Marwan confronting rebels at the Great Zab",
+        "qualification": "Battle date often given 750; article notes retreat and later death in Egypt.",
+        "candidateEvent": "Marwan II is defeated by Abbasid forces at the Great Zab.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": true
+    },
+    {
+      "id": "32-civilian-records-and-final-perspective-fustat",
+      "order": 32,
+      "actId": "act-5",
+      "title": {
+        "en": "The Dynasty's Last Dispatch",
+        "es-ES": "El último despacho de la dinastía"
+      },
+      "date": "August750 CE; killingatBusirreportedoff-map",
+      "geographyId": "fustat",
+      "coreMechanic": "civilian-records-and-final-perspective",
+      "historicalSelection": {
+        "corpusEventId": 237,
+        "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+        "passage": "Same Iranica article, final sentence gives 27 Dhu al-Hijja 132 / 6 Aug. 750",
+        "qualification": "The date is an AH-to-Gregorian conversion in Iranica; an Umayyad branch continues in Iberia, beyond campaign scope.",
+        "candidateEvent": "Marwan II is killed after retreating to Egypt; Umayyad caliphate in the east ends.",
+        "approval": "pending exact per-episode source audit; original candidate retained for traceability"
+      },
+      "locationPolicy": "one local map; distant events use attributed reports; city locations are not inferred precise ancient building or battle footprints",
+      "historicalPersonPolicy": "venerated figures are contextual narration, not controllable, killable or convertible units; no fabricated private words or motives",
+      "knowledgeBasis": {
+        "speaker": "yasir-cloth-merchant",
+        "mode": "inherited sources unless the complete dossier dates a plausible fictional local experience within the narrator’s lifespan; distant affairs remain attributed reports",
+        "noOmniscience": true
+      },
+      "contractStatus": "selection and mechanic authored; full world/objective/balance/screen/map dossier pending",
+      "existingContract": false
+    }
+  ]
+}

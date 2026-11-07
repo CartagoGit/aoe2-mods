@@ -1,0 +1,64 @@
+{
+  "campaignId": "imperial-church",
+  "orders": [
+    15,
+    16
+  ],
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": false,
+  "scope": "Architect mechanical design controls; not independent archaeology/native navigation approval. Luna inspected15 before runtime usage cap; no independent16 completion claimed.",
+  "episodes": [
+    {
+      "order": 15,
+      "id": "15-long-distance-dispatch-nicomedia",
+      "mapBBox": [
+        29.915,
+        40.767,
+        29.99,
+        40.812
+      ],
+      "hubCount": 5,
+      "allHubRadiiInFrame": true,
+      "minimumHubSeparationTiles": 89.51,
+      "nearestHubPair": [
+        "hub-4",
+        "hub-5"
+      ],
+      "receiverRadiiOverlap": false,
+      "clippedModernWaterSegmentCount": 0,
+      "minimumDrawnWaterClearanceAfterCorridorHalfWidthTiles": null,
+      "clearanceMeaning": "Only coarse represented modern line segments; no filled land mask, ancient coast, stream absence proof or graded receiver footprint.",
+      "svgSha256": "0541fcbbb82be886a01060f23fbdee1eecc91281f1558fd986c3ff1c2ccdc0be",
+      "architectRasterInspected": true,
+      "rasterFinding": "Visible separate numbered hubs and labels, no obvious clipping. Diagram only.",
+      "nativeFootprintAndNavigation": "pending"
+    },
+    {
+      "order": 16,
+      "id": "16-witness-record-comparison-tyre",
+      "mapBBox": [
+        35.185,
+        33.248,
+        35.245,
+        33.292
+      ],
+      "hubCount": 6,
+      "allHubRadiiInFrame": true,
+      "minimumHubSeparationTiles": 48.03,
+      "nearestHubPair": [
+        "hub-1",
+        "hub-6"
+      ],
+      "receiverRadiiOverlap": false,
+      "clippedModernWaterSegmentCount": 3,
+      "minimumDrawnWaterClearanceAfterCorridorHalfWidthTiles": 77.23,
+      "clearanceMeaning": "Only coarse represented modern line segments; no filled land mask, ancient coast, stream absence proof or graded receiver footprint.",
+      "svgSha256": "7c69a515ecaad522410e5a2434deadc2c7f211b2d36d14a0a48be031c4546b9a",
+      "architectRasterInspected": true,
+      "rasterFinding": "Visible separate numbered hubs and labels, no obvious clipping. Diagram only.",
+      "nativeFootprintAndNavigation": "pending"
+    }
+  ]
+}

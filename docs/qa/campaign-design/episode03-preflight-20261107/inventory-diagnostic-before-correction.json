@@ -1,0 +1,1090 @@
+{
+  "source": {
+    "canonical": "docs/design/odysseys/faith-origins.json",
+    "episodeId": "03-shared-provision-jerusalem",
+    "blueprint": "episodeBlueprints entry with episodeId 03-shared-provision-jerusalem",
+    "generatedWiki": "docs/wiki/faith-origins/episodes/03-shared-provision-jerusalem/15-odyssey-dossier.md"
+  },
+  "episode": {
+    "order": 3,
+    "title": {
+      "en": "A Table in Jerusalem",
+      "es-ES": "Una mesa en Jerusalén"
+    },
+    "mapSize": 320,
+    "bbox": [
+      35.12,
+      31.7,
+      35.3,
+      31.86
+    ],
+    "projection": "WGS84, cosine-corrected longitude, square padding",
+    "terrainProfile": "jerusalem",
+    "hubs": [
+      {
+        "id": "hub-1",
+        "centre": [
+          165.55,
+          125.68
+        ],
+        "lonLat": [
+          35.214,
+          31.799
+        ],
+        "name": {
+          "en": "West market court",
+          "es-ES": "Patio del mercado oeste"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-2",
+        "centre": [
+          180.69,
+          157.72
+        ],
+        "lonLat": [
+          35.224,
+          31.781
+        ],
+        "name": {
+          "en": "Domestic kitchen district",
+          "es-ES": "Barrio de cocinas domésticas"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      },
+      {
+        "id": "hub-3",
+        "centre": [
+          186.74,
+          204.0
+        ],
+        "lonLat": [
+          35.228,
+          31.755
+        ],
+        "name": {
+          "en": "South households",
+          "es-ES": "Hogares del sur"
+        },
+        "radiusTiles": 12,
+        "certainty": "architect fictional activity district within real geography; footprint pending"
+      }
+    ],
+    "corridors": [
+      {
+        "id": "main",
+        "hubOrder": [
+          "hub-1",
+          "hub-2",
+          "hub-3"
+        ],
+        "mode": "land",
+        "widthTiles": 10
+      },
+      {
+        "id": "relief",
+        "hubOrder": [
+          "hub-1",
+          "hub-2",
+          "hub-3"
+        ],
+        "mode": "land",
+        "widthTiles": 6,
+        "routePolicy": "alternative surveyed land access in the same districts; exact intermediate geometry pending, never invent a crossing"
+      }
+    ],
+    "geometryStatus": "georeferenced proposal; neither raster/DEM nor native footprint/pathfinding certified",
+    "mapAsset": "docs/design/maps/faith-origins/odyssey/03-shared-provision-jerusalem.svg"
+  },
+  "mainIdentitiesAndZones": {
+    "entities": [
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+        "role": "fictional-food-consignment",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -10,
+          8
+        ],
+        "authoredPosition": [
+          155.55,
+          133.68
+        ],
+        "nativeSnappedStart": [
+          155.5,
+          133.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 12.806,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 34.655,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 77.473,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+        "role": "fictional-food-consignment",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "authoredPosition": [
+          157.55,
+          133.68
+        ],
+        "nativeSnappedStart": [
+          157.5,
+          133.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 11.314,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 33.242,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 76.694,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+        "role": "fictional-food-consignment",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -6,
+          8
+        ],
+        "authoredPosition": [
+          159.55,
+          133.68
+        ],
+        "nativeSnappedStart": [
+          159.5,
+          133.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 10.0,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 31.89,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 75.961,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.meal-baskets-4",
+        "role": "fictional-food-consignment",
+        "hub": "hub-1",
+        "offsetTiles": [
+          -4,
+          8
+        ],
+        "authoredPosition": [
+          161.55,
+          133.68
+        ],
+        "nativeSnappedStart": [
+          161.5,
+          133.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 8.944,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 30.61,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 75.273,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.distribution-notes-1",
+        "role": "fictional-delivery-note",
+        "hub": "hub-2",
+        "offsetTiles": [
+          -10,
+          8
+        ],
+        "authoredPosition": [
+          170.69,
+          165.72
+        ],
+        "nativeSnappedStart": [
+          170.5,
+          165.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 40.311,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 12.806,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 42.154,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.distribution-notes-2",
+        "role": "fictional-delivery-note",
+        "hub": "hub-2",
+        "offsetTiles": [
+          -8,
+          8
+        ],
+        "authoredPosition": [
+          172.69,
+          165.72
+        ],
+        "nativeSnappedStart": [
+          172.5,
+          165.5
+        ],
+        "distanceToZones": [
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-1",
+            "distanceTiles": 40.608,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "distanceTiles": 11.314,
+            "radiusTiles": 3,
+            "overlap": false
+          },
+          {
+            "zoneId": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "distanceTiles": 41.437,
+            "radiusTiles": 3,
+            "overlap": false
+          }
+        ],
+        "overlapsAnyReceivingZone": false
+      }
+    ],
+    "zones": [
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.destination-1",
+        "hub": "hub-1",
+        "authoredCentre": [
+          165.55,
+          125.68
+        ],
+        "nativeSnappedCentre": [
+          165.5,
+          125.5
+        ],
+        "radiusTiles": 3
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.destination-2",
+        "hub": "hub-2",
+        "authoredCentre": [
+          180.69,
+          157.72
+        ],
+        "nativeSnappedCentre": [
+          180.5,
+          157.5
+        ],
+        "radiusTiles": 3
+      },
+      {
+        "id": "faith-origins.03-shared-provision-jerusalem.destination-3",
+        "hub": "hub-3",
+        "authoredCentre": [
+          186.74,
+          204.0
+        ],
+        "nativeSnappedCentre": [
+          186.5,
+          204.5
+        ],
+        "radiusTiles": 3
+      }
+    ]
+  },
+  "objectives": [
+    {
+      "id": "o1",
+      "phase": "phase-1",
+      "after": [],
+      "text": {
+        "en": "Collect four separately marked meal baskets at the market court.",
+        "es-ES": "Recoge cuatro cestas de comida con marcas distintas en el patio del mercado."
+      },
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-state",
+            "requiredCount": 4,
+            "state": "collected",
+            "id": "req-1",
+            "entities": [
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-4"
+            ],
+            "oncePerEntity": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "receiptText": {
+        "en": "All four basket identities are recorded.",
+        "es-ES": "Las cuatro identidades de las cestas están registradas."
+      },
+      "personaReaction": {
+        "en": "A shared table still has separate journeys behind it.",
+        "es-ES": "Tras una mesa compartida siguen existiendo viajes distintos."
+      }
+    },
+    {
+      "id": "o2",
+      "phase": "phase-2",
+      "after": [
+        "o1"
+      ],
+      "text": {
+        "en": "Deliver all four baskets to the kitchen district and pay 160 food for one communal provision.",
+        "es-ES": "Entrega las cuatro cestas en el barrio de cocinas y paga 160 de alimento para una sola provisión común."
+      },
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-state",
+            "requiredCount": 4,
+            "state": "arrived",
+            "id": "req-1",
+            "entities": [
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-4"
+            ],
+            "destinations": {
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-1": "faith-origins.03-shared-provision-jerusalem.destination-2",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-2": "faith-origins.03-shared-provision-jerusalem.destination-2",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-3": "faith-origins.03-shared-provision-jerusalem.destination-2",
+              "faith-origins.03-shared-provision-jerusalem.meal-baskets-4": "faith-origins.03-shared-provision-jerusalem.destination-2"
+            },
+            "oncePerEntity": true
+          },
+          {
+            "kind": "resource-transaction",
+            "amounts": {
+              "food": 160
+            },
+            "id": "req-2",
+            "receivingZones": [
+              "faith-origins.03-shared-provision-jerusalem.destination-2"
+            ],
+            "allocations": {
+              "faith-origins.03-shared-provision-jerusalem.destination-2": {
+                "food": 160
+              }
+            },
+            "account": "spendable",
+            "paidFlag": "faith-origins.03-shared-provision-jerusalem.o2.req-2.paid",
+            "once": true,
+            "atomic": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "receiptText": {
+        "en": "Four baskets and one payment receipt complete the kitchen provision.",
+        "es-ES": "Cuatro cestas y un único recibo completan la provisión de las cocinas."
+      },
+      "personaReaction": {
+        "en": "Count both the baskets and the payment; promises cannot feed a household.",
+        "es-ES": "Cuenta las cestas y el pago; las promesas no alimentan a un hogar."
+      }
+    },
+    {
+      "id": "o3",
+      "phase": "phase-3",
+      "after": [
+        "o2"
+      ],
+      "text": {
+        "en": "Deliver the two distinct distribution notes to the southern households.",
+        "es-ES": "Entrega las dos notas de reparto distintas en los hogares del sur."
+      },
+      "predicate": {
+        "operator": "all",
+        "requirements": [
+          {
+            "kind": "entity-state",
+            "requiredCount": 2,
+            "state": "arrived",
+            "id": "req-1",
+            "entities": [
+              "faith-origins.03-shared-provision-jerusalem.distribution-notes-1",
+              "faith-origins.03-shared-provision-jerusalem.distribution-notes-2"
+            ],
+            "destinations": {
+              "faith-origins.03-shared-provision-jerusalem.distribution-notes-1": "faith-origins.03-shared-provision-jerusalem.destination-3",
+              "faith-origins.03-shared-provision-jerusalem.distribution-notes-2": "faith-origins.03-shared-provision-jerusalem.destination-3"
+            },
+            "oncePerEntity": true
+          }
+        ],
+        "neverUseTimerInstead": true
+      },
+      "receiptText": {
+        "en": "Both distribution notes have arrived; neither is a claim about the size of the ancient community.",
+        "es-ES": "Ambas notas han llegado; ninguna afirma el tamaño de la comunidad antigua."
+      },
+      "personaReaction": {
+        "en": "A margin note can remember a duty after its speaker has gone.",
+        "es-ES": "Una nota al margen puede recordar una obligación cuando su voz ya se ha ido."
+      }
+    }
+  ],
+  "economy": {
+    "profiles": {
+      "easy": {
+        "startingSpendable": {
+          "food": 402,
+          "wood": 172,
+          "gold": 86,
+          "stone": 0
+        },
+        "mainCost": {
+          "food": 160,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "afterMainNoOptional": {
+          "food": 242,
+          "wood": 172,
+          "gold": 86,
+          "stone": 0
+        },
+        "allOptionalCosts": {
+          "food": 0,
+          "wood": 50,
+          "gold": 50,
+          "stone": 0
+        },
+        "afterMainAndAllOptionalCostsBeforeAnyAward": {
+          "food": 242,
+          "wood": 122,
+          "gold": 36,
+          "stone": 0
+        },
+        "mainAffordableFromStartOnly": true,
+        "allOptionalPaymentsAffordableFromStartOnlyAfterMain": true,
+        "optionalRewardTotalExcludedFromAffordability": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        }
+      },
+      "standard": {
+        "startingSpendable": {
+          "food": 350,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "mainCost": {
+          "food": 160,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "afterMainNoOptional": {
+          "food": 190,
+          "wood": 150,
+          "gold": 75,
+          "stone": 0
+        },
+        "allOptionalCosts": {
+          "food": 0,
+          "wood": 50,
+          "gold": 50,
+          "stone": 0
+        },
+        "afterMainAndAllOptionalCostsBeforeAnyAward": {
+          "food": 190,
+          "wood": 100,
+          "gold": 25,
+          "stone": 0
+        },
+        "mainAffordableFromStartOnly": true,
+        "allOptionalPaymentsAffordableFromStartOnlyAfterMain": true,
+        "optionalRewardTotalExcludedFromAffordability": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        }
+      },
+      "hard": {
+        "startingSpendable": {
+          "food": 297,
+          "wood": 127,
+          "gold": 63,
+          "stone": 0
+        },
+        "mainCost": {
+          "food": 160,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "afterMainNoOptional": {
+          "food": 137,
+          "wood": 127,
+          "gold": 63,
+          "stone": 0
+        },
+        "allOptionalCosts": {
+          "food": 0,
+          "wood": 50,
+          "gold": 50,
+          "stone": 0
+        },
+        "afterMainAndAllOptionalCostsBeforeAnyAward": {
+          "food": 137,
+          "wood": 77,
+          "gold": 13,
+          "stone": 0
+        },
+        "mainAffordableFromStartOnly": true,
+        "allOptionalPaymentsAffordableFromStartOnlyAfterMain": true,
+        "optionalRewardTotalExcludedFromAffordability": {
+          "food": 550,
+          "wood": 200,
+          "gold": 25,
+          "stone": 0
+        }
+      }
+    },
+    "optionalObjectives": [
+      {
+        "id": "side-1",
+        "kind": "aid",
+        "title": "Market families",
+        "cost": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {
+          "food": 100,
+          "wood": 50
+        }
+      },
+      {
+        "id": "side-2",
+        "kind": "copy",
+        "title": "Household lists",
+        "cost": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {}
+      },
+      {
+        "id": "side-3",
+        "kind": "repair",
+        "title": "Kitchen store",
+        "cost": {
+          "food": 0,
+          "wood": 50,
+          "gold": 0,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {
+          "food": 200,
+          "wood": 100
+        }
+      },
+      {
+        "id": "side-4",
+        "kind": "trade",
+        "title": "Grain carrier",
+        "cost": {
+          "food": 0,
+          "wood": 0,
+          "gold": 50,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {
+          "food": 150,
+          "wood": 50
+        }
+      },
+      {
+        "id": "side-5",
+        "kind": "guide",
+        "title": "Western footpath",
+        "cost": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {}
+      },
+      {
+        "id": "side-6",
+        "kind": "extract",
+        "title": "Guests seeking lodging",
+        "cost": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "paymentBeforeAward": true,
+        "reward": {
+          "food": 100,
+          "gold": 25
+        }
+      }
+    ],
+    "totals": {
+      "mainCost": {
+        "food": 160,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "allOptionalCosts": {
+        "food": 0,
+        "wood": 50,
+        "gold": 50,
+        "stone": 0
+      },
+      "optionalRewards": {
+        "food": 550,
+        "wood": 200,
+        "gold": 25,
+        "stone": 0
+      }
+    }
+  },
+  "screens": [
+    {
+      "id": "title",
+      "condition": "always",
+      "narrator": "none",
+      "durationSecondsEstimated": 2,
+      "textEn": "A Table in Jerusalem",
+      "textEs": "Una mesa en Jerusalén"
+    },
+    {
+      "id": "fact-intro",
+      "condition": "intro first",
+      "narrator": "collection-narrator",
+      "durationSecondsEstimated": 15,
+      "textEn": "Acts portrays teaching, meals and sharing within the early Jerusalem community. This is the book’s account, not an independent census or proof that every household lived alike.",
+      "textEs": "Hechos describe enseñanza, comidas y bienes compartidos en la primera comunidad de Jerusalén. Es el relato del libro, no un censo independiente ni una prueba de que todos los hogares vivieran igual."
+    },
+    {
+      "id": "handover",
+      "condition": "after fact-intro",
+      "narrator": "collection-narrator",
+      "durationSecondsEstimated": 7,
+      "textEn": "The campaign narrator now speaks from inherited records and accounts.",
+      "textEs": "El narrador de la campaña toma la palabra a partir de escritos y relatos heredados."
+    },
+    {
+      "id": "persona-intro",
+      "condition": "after handover",
+      "narrator": "miriam-archive",
+      "durationSecondsEstimated": 12,
+      "textEn": "My grandmother marked the meals in the margins. I used to read only the speeches. She knew a community also had to set a table.",
+      "textEs": "Mi abuela señalaba las comidas en los márgenes. Yo antes solo leía los discursos. Ella sabía que una comunidad también tenía que poner la mesa."
+    },
+    {
+      "id": "historical-license",
+      "condition": "after persona-intro",
+      "narrator": "none",
+      "durationSecondsEstimated": 18,
+      "textEn": "The gameplay participants, records, quantities and routes are fictional local reconstruction. Later writings inform the narrators; no copy of those later books is placed inside this earlier setting. Historical persons remain in attributed narration.",
+      "textEs": "Los participantes, registros, cantidades y rutas jugables son una reconstrucción local ficticia. Los escritos posteriores informan a los narradores; sus libros no aparecen como objetos en este escenario anterior. Las personas históricas permanecen en la narración atribuida."
+    },
+    {
+      "id": "route-help",
+      "condition": "available from start; repeatable without effect",
+      "narrator": "none",
+      "durationSecondsEstimated": 10,
+      "textEn": "Keep the market, kitchen and delivery notes separate. The marked western path avoids the steep eastern valley.",
+      "textEs": "Distingue el mercado, las cocinas y las notas de reparto. El camino occidental señalado evita el valle escarpado del este."
+    },
+    {
+      "id": "economy-help",
+      "condition": "always",
+      "narrator": "none",
+      "durationSecondsEstimated": 12,
+      "textEn": "Optional rewards are unnecessary for the main goals. Recovery supplies and reward stock are reserved; payments are charged once.",
+      "textEs": "Las recompensas opcionales no son necesarias para los objetivos principales. Los suministros de recuperación y las recompensas están reservados; cada pago se cobra una vez."
+    },
+    {
+      "id": "o1-goal",
+      "condition": "phase-1 active",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Collect four separately marked meal baskets at the market court.",
+      "textEs": "Recoge cuatro cestas de comida con marcas distintas en el patio del mercado."
+    },
+    {
+      "id": "o1-receipt",
+      "condition": "o1 latched once",
+      "narrator": "none",
+      "durationSecondsEstimated": 4,
+      "textEn": "All four basket identities are recorded.",
+      "textEs": "Las cuatro identidades de las cestas están registradas."
+    },
+    {
+      "id": "o1-reaction",
+      "condition": "after o1 receipt",
+      "narrator": "miriam-archive",
+      "durationSecondsEstimated": 5,
+      "textEn": "A shared table still has separate journeys behind it.",
+      "textEs": "Tras una mesa compartida siguen existiendo viajes distintos."
+    },
+    {
+      "id": "o2-goal",
+      "condition": "phase-2 active",
+      "narrator": "none",
+      "durationSecondsEstimated": 9,
+      "textEn": "Deliver all four baskets to the kitchen district and pay 160 food for one communal provision.",
+      "textEs": "Entrega las cuatro cestas en el barrio de cocinas y paga 160 de alimento para una sola provisión común."
+    },
+    {
+      "id": "o2-receipt",
+      "condition": "o2 latched once",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Four baskets and one payment receipt complete the kitchen provision.",
+      "textEs": "Cuatro cestas y un único recibo completan la provisión de las cocinas."
+    },
+    {
+      "id": "o2-reaction",
+      "condition": "after o2 receipt",
+      "narrator": "miriam-archive",
+      "durationSecondsEstimated": 6,
+      "textEn": "Count both the baskets and the payment; promises cannot feed a household.",
+      "textEs": "Cuenta las cestas y el pago; las promesas no alimentan a un hogar."
+    },
+    {
+      "id": "o3-goal",
+      "condition": "phase-3 active",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Deliver the two distinct distribution notes to the southern households.",
+      "textEs": "Entrega las dos notas de reparto distintas en los hogares del sur."
+    },
+    {
+      "id": "o3-receipt",
+      "condition": "o3 latched once",
+      "narrator": "none",
+      "durationSecondsEstimated": 8,
+      "textEn": "Both distribution notes have arrived; neither is a claim about the size of the ancient community.",
+      "textEs": "Ambas notas han llegado; ninguna afirma el tamaño de la comunidad antigua."
+    },
+    {
+      "id": "o3-reaction",
+      "condition": "after o3 receipt",
+      "narrator": "miriam-archive",
+      "durationSecondsEstimated": 7,
+      "textEn": "A margin note can remember a duty after its speaker has gone.",
+      "textEs": "Una nota al margen puede recordar una obligación cuando su voz ya se ha ido."
+    },
+    {
+      "id": "side-1-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 12,
+      "textEn": "Bring each of the two aid crates to its assigned household at market families. Benefit: 100 food, 50 wood, once.",
+      "textEs": "Lleva cada una de las dos cajas de ayuda a su hogar asignado en familias del mercado. Ventaja: 100 de alimento, 50 de madera, una vez."
+    },
+    {
+      "id": "side-1-complete",
+      "condition": "side-1 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Market families completed. Its stated benefit has been granted once.",
+      "textEs": "Familias del mercado: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-1-lost",
+      "condition": "side-1 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 8,
+      "textEn": "Market families is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Familias del mercado: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "side-2-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 12,
+      "textEn": "Recover both separate copies from household lists and deliver them to the copyist. Benefit: unlock a historical note and an explicit main-goal hint.",
+      "textEs": "Recupera las dos copias distintas de listas domésticas y entrégalas al copista. Ventaja: desbloquea una nota histórica y una pista explícita del objetivo principal."
+    },
+    {
+      "id": "side-2-complete",
+      "condition": "side-2 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Household lists completed. Its stated benefit has been granted once.",
+      "textEs": "Listas domésticas: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-2-lost",
+      "condition": "side-2 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 8,
+      "textEn": "Household lists is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Listas domésticas: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "side-3-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 12,
+      "textEn": "Pay 50 wood and restore the damaged store of kitchen store to full health. Benefit: 200 food, 100 wood, once.",
+      "textEs": "Paga 50 de madera y repara por completo el almacén dañado de almacén de la cocina. Ventaja: 200 de alimento, 100 de madera, una vez."
+    },
+    {
+      "id": "side-3-complete",
+      "condition": "side-3 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Kitchen store completed. Its stated benefit has been granted once.",
+      "textEs": "Almacén de la cocina: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-3-lost",
+      "condition": "side-3 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 9,
+      "textEn": "Kitchen store is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Almacén de la cocina: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "side-4-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 14,
+      "textEn": "Escort the trader of grain carrier to the receiving post, then pay 50 gold for one consignment. Benefit: 150 food, 50 wood, once.",
+      "textEs": "Escolta al comerciante de portador de grano hasta el puesto receptor y paga 50 de oro por una sola remesa. Ventaja: 150 de alimento, 50 de madera, una vez."
+    },
+    {
+      "id": "side-4-complete",
+      "condition": "side-4 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Grain carrier completed. Its stated benefit has been granted once.",
+      "textEs": "Portador de grano: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-4-lost",
+      "condition": "side-4 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 8,
+      "textEn": "Grain carrier is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Portador de grano: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "side-5-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 17,
+      "textEn": "Escort the local guide of western footpath to the marked road junction. Benefit: Mark the surveyed relief corridor once; no enemy is created, no terrain is changed, and main receivers remain known without this task.",
+      "textEs": "Escolta al guía local de sendero occidental hasta el cruce señalado. Ventaja: Señala una vez el corredor trazado relief; no crea enemigos ni modifica el terreno, y los receptores principales ya son conocidos sin esta tarea."
+    },
+    {
+      "id": "side-5-complete",
+      "condition": "side-5 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Western footpath completed. Its stated benefit has been granted once.",
+      "textEs": "Sendero occidental: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-5-lost",
+      "condition": "side-5 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 8,
+      "textEn": "Western footpath is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Sendero occidental: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "side-6-goal",
+      "condition": "optional list from start",
+      "narrator": "none",
+      "durationSecondsEstimated": 12,
+      "textEn": "Bring both voluntary evacuee groups from guests seeking lodging to the receiving refuge alive. Benefit: 100 food, 25 gold, once.",
+      "textEs": "Lleva con vida los dos grupos de evacuados voluntarios de huéspedes que buscan alojamiento al refugio receptor. Ventaja: 100 de alimento, 25 de oro, una vez."
+    },
+    {
+      "id": "side-6-complete",
+      "condition": "side-6 completed",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Guests seeking lodging completed. Its stated benefit has been granted once.",
+      "textEs": "Huéspedes que buscan alojamiento: completado. Su ventaja indicada se ha concedido una vez."
+    },
+    {
+      "id": "side-6-lost",
+      "condition": "side-6 failed-optional",
+      "narrator": "none",
+      "durationSecondsEstimated": 9,
+      "textEn": "Guests seeking lodging is unavailable after the loss of its unique participant or object. The main mission continues.",
+      "textEs": "Huéspedes que buscan alojamiento: no disponible tras perder a su participante u objeto único. La misión principal continúa."
+    },
+    {
+      "id": "fact-outro",
+      "condition": "victory first",
+      "narrator": "collection-narrator",
+      "durationSecondsEstimated": 10,
+      "textEn": "The scenario illustrates the communal practices described in Acts. Its two kitchens, quantities and delivery rounds are playable reconstruction.",
+      "textEs": "El escenario ilustra las prácticas comunitarias que describe Hechos. Sus dos cocinas, cantidades y rondas de entrega son una reconstrucción jugable."
+    },
+    {
+      "id": "persona-outro",
+      "condition": "after fact-outro",
+      "narrator": "miriam-archive",
+      "durationSecondsEstimated": 8,
+      "textEn": "Sharing begins with attention to what each house needs. It does not make every disagreement disappear.",
+      "textEs": "Compartir empieza por atender a lo que necesita cada casa. No hace desaparecer todos los desacuerdos."
+    },
+    {
+      "id": "defeat",
+      "condition": "main defeat; close side rewards first",
+      "narrator": "none",
+      "durationSecondsEstimated": 10,
+      "textEn": "The main delivery or survival contract is no longer achievable. Optional losses alone never cause this defeat.",
+      "textEs": "El contrato principal de entrega o supervivencia ya no puede cumplirse. Las pérdidas opcionales por sí solas nunca causan esta derrota."
+    },
+    {
+      "id": "recovery-help",
+      "condition": "help; never implies an unsupported recovery action",
+      "narrator": "none",
+      "durationSecondsEstimated": 15,
+      "textEn": "Recovery stock is protected. This design does not authorize free replacement of a lost unique person or object; restart from a save if an essential identity is irrecoverably lost.",
+      "textEs": "La reserva de recuperación está protegida. Este diseño no autoriza reemplazar gratis una persona u objeto únicos perdidos; vuelve a un guardado si una identidad esencial se pierde de forma irrecuperable."
+    },
+    {
+      "id": "next-episode",
+      "condition": "after persona-outro",
+      "narrator": "none",
+      "durationSecondsEstimated": 6,
+      "textEn": "Continue with The Road He Remembered. This episode does not complete the campaign.",
+      "textEs": "Continúa con El camino que recordaba. Este episodio no termina la campaña."
+    }
+  ],
+  "continuation": {
+    "nextEpisodeId": "04-testimony-relay-damascus",
+    "title": {
+      "en": "The Road He Remembered",
+      "es-ES": "El camino que recordaba"
+    },
+    "order": 4
+  },
+  "reusableInfrastructure": {
+    "controller": "tools/python/native_mission.controller.py",
+    "spatial": "tools/python/native_spatial.helper.py",
+    "transactions": "tools/python/native_transactions.helper.py",
+    "secondary": "tools/python/native_secondary.adapter.py"
+  },
+  "validatorRejections": {
+    "delivery": {
+      "file": "tools/python/native_delivery.adapter.py",
+      "reason": "bounded contract requires phase 2 requirement kinds exactly [resource-transaction, derived-token, entity-state] with req IDs [req-1, req-2, req-3], 3 original inputs physically copied into one derived output, then that output delivered. Episode03 phase2 is [entity-state, resource-transaction] (four original baskets delivered + single payment); phase3 delivers two original notes. There is no derived-token or authored physical copy-arrival operation, and identity/count/provenance differ."
+    },
+    "household": {
+      "file": "tools/python/native_household.adapter.py",
+      "reason": "validator is hard-bound to episode02 civilian-refuge-jerusalem, eight exact household IDs, two exact zones, 6-of-8 threshold and survivor loss margin. Episode03 is six original objects (4 baskets + 2 notes), three delivery zones and no survivorGroups; episode03 IDs/predicates/payment do not match fixed household predicates/binding."
+    }
+  }
+}

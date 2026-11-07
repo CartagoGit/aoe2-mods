@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "name": "Kent modern place orientation controls",
+  "attribution": "OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "coordinateSystem": "WGS84 longitude,latitude in GeoJSON; values copied from OSM API lat/lon fields",
+  "historicalStatus": "Current place markers only; no sixth-century position, route, channel, coastline or landing inferred.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "osm-node-29038127",
+      "properties": {
+        "name": "Reculver",
+        "osmType": "node",
+        "osmId": 29038127,
+        "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/29038127.json",
+        "scope": "Modern Reculver hamlet label; not an ancient fort, shoreline, crossing or landing point.",
+        "attribution": "OpenStreetMap contributors",
+        "license": "ODbL-1.0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1978418,
+          51.3787239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm-node-9827276975",
+      "properties": {
+        "name": "Richborough",
+        "osmType": "node",
+        "osmId": 9827276975,
+        "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/9827276975.json",
+        "scope": "Modern Richborough village label; not the Roman fort, an island boundary or Augustine landing.",
+        "attribution": "OpenStreetMap contributors",
+        "license": "ODbL-1.0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3252361,
+          51.2954693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm-node-17916174",
+      "properties": {
+        "name": "Canterbury",
+        "osmType": "node",
+        "osmId": 17916174,
+        "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/17916174.json",
+        "scope": "Modern Canterbury city label; not a sixth-century boundary, church parcel or grant site.",
+        "attribution": "OpenStreetMap contributors",
+        "license": "ODbL-1.0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0802533,
+          51.2800275
+        ]
+      }
+    }
+  ]
+}
