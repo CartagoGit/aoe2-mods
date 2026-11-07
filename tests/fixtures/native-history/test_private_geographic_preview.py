@@ -7,8 +7,9 @@ table quantises it, the shared base factory and the household controller
 compile the scenario, and the shared artifact service writes it, reopens it,
 compares the complete semantic signature and runs the pinned XS check.
 
-The architect's real plan stays unauthorized and untouched, the historical
-build refusal stays, and no engine executes. The fixture is a development
+The architect's real plan stays untouched, including its independently owned
+authorization decision. The historical build refusal stays, and no engine
+executes. The fixture is a development
 instrument, not a historical build and not a game observation.
 """
 
@@ -564,6 +565,18 @@ class PrivateGeographicPreviewFixture(unittest.TestCase):
 
 
 class PrivateGeographicBoundaryTests(PrivateGeographicPreviewFixture):
+    def write_isolated_modern_plan(self, root, authorized):
+        """Keep the canonical path and raster without touching the real plan."""
+        plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
+        plan["privateBuildAuthorized"] = authorized
+        for relative in (plan["raster"]["path"], plan["raster"]["licenseNoticePath"]):
+            target = root / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes((ROOT / relative).read_bytes())
+        path = root / REAL_PLAN.relative_to(ROOT)
+        path.write_text(json.dumps(plan), encoding="utf8")
+        return path
+
     def test_the_fixture_plan_is_accepted_and_is_a_fixture(self):
         validated = VALIDATOR["validate_private_geographic_plan"](
             ROOT, self.fixture()["planPath"]
@@ -578,10 +591,21 @@ class PrivateGeographicBoundaryTests(PrivateGeographicPreviewFixture):
             VALIDATOR["_validate_fixture_plan_origin"](ROOT, REAL_PLAN.resolve())
         self.assertIn("separately pinned plan file", str(error.exception))
 
-    def test_the_architect_plan_stays_unauthorized(self):
-        with self.assertRaises(ValueError) as error:
-            VALIDATOR["validate_private_geographic_plan"](ROOT, REAL_PLAN)
+    def test_an_unauthorized_canonical_plan_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            path = self.write_isolated_modern_plan(root, False)
+            with self.assertRaises(ValueError) as error:
+                VALIDATOR["validate_private_geographic_plan"](root, path)
         self.assertIn("not authorized", str(error.exception))
+
+    def test_authorized_canonical_plan_still_requires_pinned_inputs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            path = self.write_isolated_modern_plan(root, True)
+            with self.assertRaises(ValueError) as error:
+                VALIDATOR["validate_private_geographic_plan"](root, path)
+        self.assertIn("sourceBinding.path does not exist", str(error.exception))
 
     def test_a_copied_true_authorization_cannot_enable_the_modern_plan(self):
         plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
@@ -1167,6 +1191,9 @@ class PrivateGeographicNativeTests(PrivateGeographicPreviewFixture):
             self.assertEqual(0, corridor["outsideCellCount"])
 
     def test_the_architect_plan_and_its_sources_are_untouched(self):
+        authorization_before = json.loads(REAL_PLAN.read_text(encoding="utf8"))[
+            "privateBuildAuthorized"
+        ]
         before = {
             "plan": sha256(REAL_PLAN),
             "binding": sha256(REAL_BINDING),
@@ -1179,7 +1206,7 @@ class PrivateGeographicNativeTests(PrivateGeographicPreviewFixture):
         self.assertEqual(before["campaign"], sha256(CAMPAIGN))
         self.assertEqual(before["raster"], sha256(REAL_RASTER))
         plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
-        self.assertFalse(plan["privateBuildAuthorized"])
+        self.assertEqual(authorization_before, plan["privateBuildAuthorized"])
         self.assertFalse(plan["historicalApproval"])
         self.assertFalse(plan["gameVerified"])
 
