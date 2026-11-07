@@ -27,13 +27,15 @@ S2 was accepted at d07fe11a/e72c4a. Two tests still hard-code the real plan's au
 - global_gate: e2e
 
 ### S1 — Exercise authorization independently and preserve source decisions
-- **Status**: pending
+- **Status**: review
 - **Files**: `tests/fixtures/native-history/test_private_geographic_preview.py`
 - **Gate**: e2e
 - acceptance:
   - "An isolated canonical-path plan explicitly set false rejects as unauthorized, without modifying the real plan."
   - "An isolated true plan still rejects missing pinned binding inputs. Authorization is never a bypass of input validation."
   - "The synthetic native fixture preserves the exact real source bytes and whichever authorization value the architect set; historical/game flags remain false. Focused boundary and actual native preservation cases pass, followed by the official validate gate and different-model review."
+- review-state: in_review
+- review-implementer: gpt-6
 
 ## acceptance
 
