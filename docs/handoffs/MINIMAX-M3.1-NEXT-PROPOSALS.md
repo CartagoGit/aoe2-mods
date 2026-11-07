@@ -6,6 +6,12 @@ La vista compacta vigente es [CURRENT-STATE](CURRENT-STATE.md), corte 7 de novie
 
 Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y la [cola de paquetes](MINIMAX-M3.1-PARALLEL-QUEUE.md); ambos complementan estos IDs y estados del servidor.
 
+## Snapshot operativo — 7 de noviembre de 2026
+
+i00015/S2 ya está integrado (`d07fe11`) y aprobado formalmente (`e72c4a0`). x00002/S1 también está aprobado e integrado (`95cf894`, gate verde). Root trabaja i00015/S3 en una unidad aislada: el plan canónico de `develop` mantiene `privateBuildAuthorized=false`, mientras que su copia de trabajo autorizada produjo un candidato externo de seis variantes y 12 contenedores. El [ZIP candidato](</home/cartago/.codex/artifacts/aoe2-mods/jerusalem-private-geographic-preview-kit-20261107.zip>) tiene SHA-256 `37f4db30982fff05efb2290fbdacb073dd6ad0a1655ed8296aff686fdd674748`. Siguen en curso `bun run test:export` y la revisión independiente Terra. Ese paquete externo no significa que S3 esté aceptado/integrado ni que exista evidencia de juego.
+
+d00002/S11 continúa `review`; esta actualización no aprueba ni cambia estados de propuestas. Se mantienen 65 dossiers, 213 selecciones sin dossier, 2.689 pantallas, 405 secundarios y 216 principales; una apertura histórica privada, cero campañas completas y cero episodios históricos plenamente verificados en el motor. El episodio 02 solo podrá presentarse como entrega tras completar gate, revisión e integración oficial.
+
 ## Infraestructura y arquitectura
 
 | Propuesta | Responsable | Alcance y gate pendiente |
@@ -18,7 +24,8 @@ Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y l
 | i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
 | i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión aprobada; S2 referencia optativa v3 integrada en 4ac57b8f y aprobación independiente publicada en 66468212; S3 nativo/UI/motor pendiente de i00003 y s00001. El estudio económico por sí solo no implementa ningún slice |
 | i00013 Cuentas finitas authored | Luna, con revisión GPT-6.1-Sol | S1/S2/S3 `done`, propuesta cerrada en `472e4d00`; no reimplementar ni reabrir por un handoff antiguo |
-| i00015 Vista geográfica privada | Root S1/S3; MiniMax inicial y corrección Luna S2 | S1 `done`; S2 producto conservado `393ae64` con tres P2 y recuperación oficial en curso. MiniMax HTTP429/2056 el 7 de noviembre. Plan real sin autorización; S3 pendiente |
+| i00015 Vista geográfica privada | Root S1/S3; MiniMax inicial y Luna corrección S2 | S1 `done`; S2 integrado `d07fe11` y aprobado `e72c4a0`. El build S3 candidato tiene seis variantes y 12 contenedores; su export, revisión independiente e integración siguen pendientes. La copia del plan en `develop` continúa `privateBuildAuthorized=false`; no hay aprobación histórica ni evidencia de juego |
+| x00002 Ciclo de autorización privada | Arquitecto; revisión Terra | S1 aceptado e integrado en `95cf894`, gate verde. Separa autorización de build privado de aprobación histórica; no autoriza el plan canónico por sí solo |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
 | d00002 Odiseas extensas | Arquitecto | S1 `done`; S2, S3 y S11 en revisión; S4–S10 con cambios solicitados. Ninguna aprobación histórica o de motor se infiere de los borradores |
 
