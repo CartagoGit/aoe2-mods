@@ -9,6 +9,7 @@ date: 2026-11-05
 shipped-in:
   - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
   - "2c56e3eb9d162d72a5691c02a8423c01bdc532b1"
+  - "d07fe11aae2f0142f540d1048931e14a0465d95f"
 last-transition-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
 last-correlation-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
 last-transition-from: ready
@@ -47,7 +48,7 @@ The synthetic household builder correctly refuses every historical build, so it 
 - review-log: approved by gpt-6.1-terra — verified at 2c56e3eb9d16, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Architecture and plan false flags reviewed, existing historical refusal retained. (2) Input SHA256 verified, binding counts, geometry, raster and override independently checked. (3) Eleven S2 files and entry points reviewed, size-range P2 fixed, S2/S3 pending. — Independent source review 5020d0b, af91123, 1a4dac3 and 9a9c757 landed 2c56e3e. Earlier P2 size range fixed; helper boundaries 299/300/400/401 independently verified. Source hashes, 17 bodies/10 zones, frame, candidate raster, corridor and bounded override checked; actual implementation, historical and game approval remain pending. Official validate 164 tests/2159 assertions, journal archived.
 
 ### S2 — Reusable private base, strict plan boundary and geographic preview compiler
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S1]
 - **Files**: `tools/python/private_household_base.factory.py`, `tools/python/private_native_artifact.service.py`, `tools/python/build_household_episode.script.py`, `tools/python/private_geographic_preview.validator.py`, `tools/python/build_geographic_household_preview.script.py`, `tools/map/geographic_corridor_audit.helper.py`, `tests/fixtures/native-history/test_private_geographic_preview.py`, `tests/maps/test_geographic_corridor_audit.py`, `tests/maps/geographic-corridor-audit.test.ts`, `tools/cli/native-fixtures.validator.ts`, `tools/cli/chronicles.script.ts`
 - **Gate**: e2e
@@ -55,8 +56,10 @@ The synthetic household builder correctly refuses every historical build, so it 
   - "Implement only accepted S1; reuse actual geographic pipeline/native base/controller/signature, no copied world solver or public fallback. Preserve default synthetic semantic signature/XS and all65dossier outputs; keep real plan unauthorized in this implementation slice."
   - "Meaningful accepted artificial fixtures and strict negatives for authorization,unknown keys,bool/nonfinite/out-of-range dimensions/bands,source/hash/CRS/half-cell/grid drift,corridor endcaps/even widths/known water,nodata,unlisted identity/zone/position change,stored evidence flags and input mutation. Derived binding evidence is recomputed; no terrain flattening or source hiding."
   - "Register corridor tests in the Bun gate and native fixture discovery in the existing test:export path, failing empty discovery and reporting actual skips. Real native write/reopen/terrain+controller signature and XS pass; bun run validate and test:export plus official gate and different-model review. Never mark a compilation case engine/historical approval."
-- review-state: in_review
+- review-state: done
 - review-implementer: gpt-6-luna
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at d07fe11aae2f, validate exit 0 and tests 122/122 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed landed source, original plan false, six legacy semantic and XS comparisons identical, public refusal unchanged. (2) Reviewed fixture and validation implementation, fixed prior independent findings and verified changed same-path TIFF probe; implementer focused 52 tests passed. (3) Official gate passed validate on d07fe11; implementer test:export exit 0, native 122 passed and zero skipped, corridor Python 15 and wrapper 1 passed; this rev… — Independent review of S2 landing d07fe11; official publish gate bun install and bun run validate passed; test:export 122 native tests, zero skipped; focused fixture 52, corridor 15 and Bun wrapper 1 passed in implementer logs. Original real plan remains unauthorized. No historical, engine, or gameplay approval.
 
 ### S3 — Architect-authorized Jerusalem development build and progressive private handback
 - **Status**: pending
