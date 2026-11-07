@@ -10,6 +10,7 @@ shipped-in:
   - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
   - "2c56e3eb9d162d72a5691c02a8423c01bdc532b1"
   - "d07fe11aae2f0142f540d1048931e14a0465d95f"
+  - "861e718450e2e1161de7c8f06cf78c677a8062e1"
 last-transition-id: f159b470-3453-426f-a894-0b6efc8e88e4
 last-correlation-id: f159b470-3453-426f-a894-0b6efc8e88e4
 last-transition-from: in-progress
@@ -64,7 +65,7 @@ The synthetic household builder correctly refuses every historical build, so it 
 - shipped-in: `f77346ff086e`
 
 ### S3 — Architect-authorized Jerusalem development build and progressive private handback
-- **Status**: review
+- **Status**: done
 - **DependsOn**: [S2]
 - **Files**: `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/handoffs/PRIVATE-JERUSALEM-GEOGRAPHIC-PREVIEW.md`, `docs/qa/campaign-design/jerusalem-private-geographic-preview-build.json`
 - **Gate**: e2e
@@ -72,9 +73,11 @@ The synthetic household builder correctly refuses every historical build, so it 
   - "Independently verify real source/grid/corridor/body evidence and authorize only this development plan through architect-owned changes; do not set historical binding approval true. Build six private EN/es-ES/difficulty variants with actual hashes,write/read/XS and scope limits."
   - "Preserve original Caesarea kit/hash. If packaging progressive chapters use the pinned campaign utility and exact existing episode01/02 ordering; no final campaign progress flag, public distribution or production-ready claim. Actual episode03continuation remains."
   - "Guide records controls and real Windows/Steam/es-ES test cases: geometry/pathfinding/collision/save-load/terminal/optional utility/difficulty with build/hash; pending observations stay pending and do not block producing the artifact that enables them."
-- review-state: in_review
-- review-implementer: gpt-6
 - shipped-in: `5cd14b3bc848`
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at 861e718450e2, validate exit 0 and tests 123/123 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed source and geometry evidence, plan-only development authorization, six receipt/scenario/XS byte hashes and reported native roundtrips; historical/game… (2) Kit 37f4db30; independent extraction and listing of 12 containers confirmed exact bytes and order; six opening scenarios match original kit, episode03 remains … (3) Reviewed guide, six observation templates with scenario hashes and no recorded game observations, and 123 native tests with zero skips in implementer test:expo… — Independent S3 review of 861e718: checked actual six variant scenario and XS hashes and receipts, independently listed/extracted 12 campaign containers and compared the six original Caesarea scenario bytes, kit SHA 37f4db30, pending observation templates, guide and source boundaries. Implementer test:export 123/123 with no skips; official validate passed. This approves only private development compilation and handback; no history, engine, gameplay or public release approval.
 
 ## acceptance
 
