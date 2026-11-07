@@ -1,6 +1,6 @@
 # Backlog designado y orden de ejecución
 
-La vista compacta vigente es [CURRENT-STATE](CURRENT-STATE.md), corte 5 de noviembre de 2026. Las tablas y cortes históricos de este archivo no asignan trabajo por sí mismos. Recupera del servidor DelendAI el estado, la ruta, aceptación y dependencias antes de cada slice. La base es develop; toda edición va en una unidad oficial aislada y se publica mediante DelendAI con su gate.
+La vista compacta vigente es [CURRENT-STATE](CURRENT-STATE.md), corte 7 de noviembre de 2026. Las tablas y cortes históricos de este archivo no asignan trabajo por sí mismos. Recupera del servidor DelendAI el estado, la ruta, aceptación y dependencias antes de cada slice. La base es develop; toda edición va en una unidad oficial aislada y se publica mediante DelendAI con su gate.
 
 **Dirección vigente:** cerrar primero los bloqueos de arquitectura/herramientas y producir entregas privadas graduales de faith-origins/Embers of the Covenant. El catálogo actual contiene 65 dossiers y 213 selecciones sin dossier; Yavneh eleva esos contadores pero su inserción no cierra d00002/S4. El estado, roles y tres paquetes siguientes están en [CURRENT-STATE](CURRENT-STATE.md). El usuario prueba los casos de motor en Windows/Steam y es-ES; esos resultados aún no existen.
 
@@ -17,8 +17,8 @@ Consulta el [reparto de trabajo y volumen pendiente](LLM-WORK-ALLOCATION.md) y l
 | i00005 Presencia actual | Arquitecto | S1 de referencia revisado; observación/exportación/pruebas nativas siguen sus slices pendientes |
 | i00006 Checkpoint intermedio | Arquitecto | S1 de referencia revisado; no prolongar el puesto intermedio hasta victoria. Nativo y alineación final conservan sus gates |
 | i00007 Alternativas y reserva atómica | Arquitecto | S1 decisión aprobada; S2 referencia optativa v3 integrada en 4ac57b8f y aprobación independiente publicada en 66468212; S3 nativo/UI/motor pendiente de i00003 y s00001. El estudio económico por sí solo no implementa ningún slice |
-| i00013 Cuentas finitas authored | Luna, con revisión GPT-6.1-Sol | S1 `done`; S2 producto `688a1203` integrado en `cf84b92f`, gate y revisión técnica conformes; falta submit/aprobación formal. S3 pendiente |
-| i00015 Vista geográfica privada | Root S1/S3; MiniMax S2 | S1 `done`, aprobación integrada `e513c000`; S2 asignada al paquete cerrado de once archivos. Plan real sin autorización; S3 pendiente |
+| i00013 Cuentas finitas authored | Luna, con revisión GPT-6.1-Sol | S1/S2/S3 `done`, propuesta cerrada en `472e4d00`; no reimplementar ni reabrir por un handoff antiguo |
+| i00015 Vista geográfica privada | Root S1/S3; MiniMax inicial y corrección Luna S2 | S1 `done`; S2 producto conservado `393ae64` con tres P2 y recuperación oficial en curso. MiniMax HTTP429/2056 el 7 de noviembre. Plan real sin autorización; S3 pendiente |
 | s00001 Compatibilidad nativa/motor | Arquitecto + tester con AoE2 | Rutas/progreso, idiomas, plantillas/audio, dificultad/rango e instalación/RoR requieren evidencia real con build/hash |
 | d00002 Odiseas extensas | Arquitecto | S1 `done`; S2, S3 y S11 en revisión; S4–S10 con cambios solicitados. Ninguna aprobación histórica o de motor se infiere de los borradores |
 

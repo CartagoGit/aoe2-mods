@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-07",
+  "sourceCampaignSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+  "episodeId": "03-shared-provision-jerusalem",
+  "episodeSemanticSha256": "c7499a367f40bc33d90ea3a8c52f6934073bc9a6c9ac2fad3d0d1f99b188f51d",
+  "rootIndependentArithmeticChecks": {
+    "snappedOriginals": 6,
+    "distancesToContinuousZones": 18,
+    "distanceDiscrepancies": 0,
+    "nativeOrGameTests": false
+  },
+  "files": {
+    "architect-next-decisions.md": "f6a4cb7c70a5a4dde898490feaaf8e481b31b9c85e9007870fb5a46afc4a0c6f",
+    "inventory-diagnostic-before-correction.json": "2b9e61773601bee7598c56d8d3b7ff561d924709ef41498005fab513daab5cf2",
+    "inventory.json": "adba7659bfe1e5730c770a87aa36225638e91e2fc39bf4dcf846fa593dee0510",
+    "recompute_distances.py": "57d9490d9369a1a6d344906bd797cf8661714ba0b1279e11b3dce874be3d8d29",
+    "report-diagnostic-before-correction.md": "bada3418e4108b6ce6bfd2f3a71584ee99aeb2fdb1250f37febce58651428551",
+    "report.md": "a575a89db7a1d28d9ad6a339b98c00b1b4b0fa5014b723867bcfe624d28832d6"
+  },
+  "limitation": "Repository inventory and corrected geometric arithmetic only; no source change, physical map, timing, native capability or historical/game approval. The raw reproduction script retains the environment paths of its original evidence run."
+}
