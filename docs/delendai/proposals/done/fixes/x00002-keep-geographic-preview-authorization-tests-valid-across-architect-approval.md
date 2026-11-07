@@ -2,12 +2,16 @@
 id: x00002
 title: "Keep geographic preview authorization tests valid across architect approval"
 kind: fix
-status: ready
+status: done
 type: proposal
 track: general
 date: 2026-11-07
 shipped-in:
   - "f77346ff086eba263b1fb9aa6382f6cac16737cf"
+last-transition-id: 61a1b22e-2fbe-4661-b0d3-9d28ceef76cf
+last-correlation-id: 61a1b22e-2fbe-4661-b0d3-9d28ceef76cf
+last-transition-from: ready
+last-transition-at: 2026-11-07T22:26:31.482Z
 ---
 
 # x00002 — Keep geographic preview authorization tests valid across architect approval
