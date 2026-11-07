@@ -59,7 +59,7 @@ export async function validateNativeFixtures(
   };
   if (code !== 0)
     throw new Error(
-      `Native fixture discovery (${code}): ${err}\n${out.slice(-4000)}`,
+      `Native fixture discovery (${code}): ${err}\n${out}`,
     );
   if (testsRun === 0)
     throw new Error(
