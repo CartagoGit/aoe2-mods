@@ -30,6 +30,7 @@ import { buildAudio } from "./audio-build.pipeline";
 import { candidateFingerprint } from "./campaign-candidate.helper";
 import { docsCheck } from "./documentation.validator";
 import { exportVariants } from "./export-variants.helper";
+import { validateNativeFixtures } from "./native-fixtures.validator";
 import { loadCampaign, loadProject } from "./project.loader";
 import { campaignFileSchema } from "./project-config.schema";
 import {
@@ -227,6 +228,7 @@ async function main() {
         p.lock,
       ),
     );
+    console.log(await validateNativeFixtures(root));
     return;
   }
   if (
