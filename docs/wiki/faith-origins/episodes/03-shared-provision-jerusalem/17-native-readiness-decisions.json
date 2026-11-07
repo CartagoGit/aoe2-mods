@@ -1,0 +1,146 @@
+{
+  "episodeId": "03-shared-provision-jerusalem",
+  "sourceCampaignSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+  "sourceEpisodeCanonicalJsonSha256": "c7499a367f40bc33d90ea3a8c52f6934073bc9a6c9ac2fad3d0d1f99b188f51d",
+  "status": "architect preflight; not an assigned or accepted implementation packet",
+  "mainOriginals": {
+    "meal-baskets": [
+      "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+      "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+      "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+      "faith-origins.03-shared-provision-jerusalem.meal-baskets-4"
+    ],
+    "distribution-notes": [
+      "faith-origins.03-shared-provision-jerusalem.distribution-notes-1",
+      "faith-origins.03-shared-provision-jerusalem.distribution-notes-2"
+    ]
+  },
+  "objectiveRequirements": [
+    {
+      "objectiveId": "o1",
+      "after": [],
+      "requirements": [
+        {
+          "kind": "entity-state",
+          "requiredCount": 4,
+          "state": "collected",
+          "id": "req-1",
+          "entities": [
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-4"
+          ],
+          "oncePerEntity": true
+        }
+      ]
+    },
+    {
+      "objectiveId": "o2",
+      "after": [
+        "o1"
+      ],
+      "requirements": [
+        {
+          "kind": "entity-state",
+          "requiredCount": 4,
+          "state": "arrived",
+          "id": "req-1",
+          "entities": [
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-1",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-2",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-3",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-4"
+          ],
+          "destinations": {
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-1": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-2": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-3": "faith-origins.03-shared-provision-jerusalem.destination-2",
+            "faith-origins.03-shared-provision-jerusalem.meal-baskets-4": "faith-origins.03-shared-provision-jerusalem.destination-2"
+          },
+          "oncePerEntity": true
+        },
+        {
+          "kind": "resource-transaction",
+          "amounts": {
+            "food": 160
+          },
+          "id": "req-2",
+          "receivingZones": [
+            "faith-origins.03-shared-provision-jerusalem.destination-2"
+          ],
+          "allocations": {
+            "faith-origins.03-shared-provision-jerusalem.destination-2": {
+              "food": 160
+            }
+          },
+          "account": "spendable",
+          "paidFlag": "faith-origins.03-shared-provision-jerusalem.o2.req-2.paid",
+          "once": true,
+          "atomic": true
+        }
+      ]
+    },
+    {
+      "objectiveId": "o3",
+      "after": [
+        "o2"
+      ],
+      "requirements": [
+        {
+          "kind": "entity-state",
+          "requiredCount": 2,
+          "state": "arrived",
+          "id": "req-1",
+          "entities": [
+            "faith-origins.03-shared-provision-jerusalem.distribution-notes-1",
+            "faith-origins.03-shared-provision-jerusalem.distribution-notes-2"
+          ],
+          "destinations": {
+            "faith-origins.03-shared-provision-jerusalem.distribution-notes-1": "faith-origins.03-shared-provision-jerusalem.destination-3",
+            "faith-origins.03-shared-provision-jerusalem.distribution-notes-2": "faith-origins.03-shared-provision-jerusalem.destination-3"
+          },
+          "oncePerEntity": true
+        }
+      ]
+    }
+  ],
+  "survivorGroups": [],
+  "map": {
+    "size": 320,
+    "bbox": [
+      35.12,
+      31.7,
+      35.3,
+      31.86
+    ],
+    "mustRecompileFromGeographicSource": true,
+    "reuse340GridAllowed": false
+  },
+  "screenCount": 39,
+  "continuationEpisodeId": "04-testimony-relay-damascus",
+  "nativeCapabilitiesImplementedForThisEpisode": false,
+  "historicalApproval": false,
+  "gameVerified": false,
+  "decisionsBeforeWorkerAssignment": [
+    "Physical collection observation and its relationship to cumulative earlier arrivals. Never silently add ordered departure absent from source.",
+    "Precise outstanding-receipt lifetime for loss; distinguish a missing original from loss after its last required deposit. Existing generic loss predicate is not a proven episode03 impossibility detector.",
+    "Explicit one-time 160-food authorization control at the kitchen. Do not infer an original actor condition absent from source or invent a functioning UI operation.",
+    "Consequential optional benefits and difficulty beyond already-solvent starting cash. No inaccessible gatherable bank or protected reserve can be counted as native income.",
+    "Actual 320-frame terrain, all fifteen originals, ten zones, store clearance and continuous corridors with modern/ancient limits."
+  ],
+  "readiness": {
+    "sourceIdentityInventoryAvailable": true,
+    "nativeBindingAuthored": false,
+    "privateGeographicPlanAuthorized": false,
+    "closedImplementationPacket": false,
+    "assignedWorker": null
+  },
+  "sourceFilesInspected": {
+    "packages/gameplay-state/capability-state.reducer.ts": "21db0793280f59150883df8abc198b4e3c13dea5e23676add8c237c6415fc1e3",
+    "packages/gameplay-state/capability-ledgers.helper.ts": "aac08538060f05ca4ccb1d15c3e1bc6fbb9614c8062e9f2b6d22c31eeef2d961",
+    "packages/gameplay-state/capability-predicates.validator.ts": "588e3b57f1a05ef6d032c3974e318164d2669378bf7aff52b4a9cd578cb3a4b5",
+    "tools/python/native_delivery.adapter.py": "92e1073dbab8e374f9bf6d915e8f8f23a82cf1465883e5de6ae2f2688479291d",
+    "tools/python/native_household.adapter.py": "42a78e9d97fbe7486f069dbd9883553b4cf16d69c2fc83f2060618c7b01e94c3"
+  }
+}
