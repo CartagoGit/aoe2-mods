@@ -2,7 +2,7 @@
 id: i00015
 title: "Build explicit private geographic household previews without bypassing historical approval"
 kind: infra
-status: in-progress
+status: review
 type: proposal
 track: general
 date: 2026-11-05
@@ -10,10 +10,10 @@ shipped-in:
   - "5020d0b6fe117f0c1e98a75bf06db70cacf83452"
   - "2c56e3eb9d162d72a5691c02a8423c01bdc532b1"
   - "d07fe11aae2f0142f540d1048931e14a0465d95f"
-last-transition-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
-last-correlation-id: bd1f9797-ae3d-4d0f-abd3-cd7567fcae6a
-last-transition-from: ready
-last-transition-at: 2026-11-05T01:39:33.024Z
+last-transition-id: f159b470-3453-426f-a894-0b6efc8e88e4
+last-correlation-id: f159b470-3453-426f-a894-0b6efc8e88e4
+last-transition-from: in-progress
+last-transition-at: 2026-11-07T22:08:43.052Z
 ---
 
 # i00015 — Build explicit private geographic household previews without bypassing historical approval
@@ -36,7 +36,7 @@ The synthetic household builder correctly refuses every historical build, so it 
 
 ### S1 — Architect private preview contract and geographic decisions
 - **Status**: done
-- **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/in-progress/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
+- **Files**: `docs/architecture/private-geographic-preview.md`, `docs/handoffs/PRIVATE-GEOGRAPHIC-PREVIEW-PACKET.md`, `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/delendai/proposals/review/i00015-build-explicit-private-geographic-household-previews-without-bypassing-historical-approval.md`
 - **Gate**: type
 - acceptance:
   - "Define explicit development compilation separately from historical/native/engine approval; preserve synthetic and public-export refusals; no build-before-playtest cycle. Candidate authorization remains false until separately reviewed real S3 inputs."
@@ -46,6 +46,7 @@ The synthetic household builder correctly refuses every historical build, so it 
 - review-implementer: gpt-6
 - review-reviewer: gpt-6.1-terra
 - review-log: approved by gpt-6.1-terra — verified at 2c56e3eb9d16, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Architecture and plan false flags reviewed, existing historical refusal retained. (2) Input SHA256 verified, binding counts, geometry, raster and override independently checked. (3) Eleven S2 files and entry points reviewed, size-range P2 fixed, S2/S3 pending. — Independent source review 5020d0b, af91123, 1a4dac3 and 9a9c757 landed 2c56e3e. Earlier P2 size range fixed; helper boundaries 299/300/400/401 independently verified. Source hashes, 17 bodies/10 zones, frame, candidate raster, corridor and bounded override checked; actual implementation, historical and game approval remain pending. Official validate 164 tests/2159 assertions, journal archived.
+- shipped-in: `2796a36557a3`
 
 ### S2 — Reusable private base, strict plan boundary and geographic preview compiler
 - **Status**: done
@@ -60,9 +61,10 @@ The synthetic household builder correctly refuses every historical build, so it 
 - review-implementer: gpt-6-luna
 - review-reviewer: gpt-6.1-terra
 - review-log: approved by gpt-6.1-terra — verified at d07fe11aae2f, validate exit 0 and tests 122/122 claimed, no recorded run cited; acceptance 3/3: (1) Reviewed landed source, original plan false, six legacy semantic and XS comparisons identical, public refusal unchanged. (2) Reviewed fixture and validation implementation, fixed prior independent findings and verified changed same-path TIFF probe; implementer focused 52 tests passed. (3) Official gate passed validate on d07fe11; implementer test:export exit 0, native 122 passed and zero skipped, corridor Python 15 and wrapper 1 passed; this rev… — Independent review of S2 landing d07fe11; official publish gate bun install and bun run validate passed; test:export 122 native tests, zero skipped; focused fixture 52, corridor 15 and Bun wrapper 1 passed in implementer logs. Original real plan remains unauthorized. No historical, engine, or gameplay approval.
+- shipped-in: `f77346ff086e`
 
 ### S3 — Architect-authorized Jerusalem development build and progressive private handback
-- **Status**: pending
+- **Status**: review
 - **DependsOn**: [S2]
 - **Files**: `docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/25-private-geographic-preview-plan.json`, `docs/handoffs/PRIVATE-JERUSALEM-GEOGRAPHIC-PREVIEW.md`, `docs/qa/campaign-design/jerusalem-private-geographic-preview-build.json`
 - **Gate**: e2e
@@ -70,6 +72,9 @@ The synthetic household builder correctly refuses every historical build, so it 
   - "Independently verify real source/grid/corridor/body evidence and authorize only this development plan through architect-owned changes; do not set historical binding approval true. Build six private EN/es-ES/difficulty variants with actual hashes,write/read/XS and scope limits."
   - "Preserve original Caesarea kit/hash. If packaging progressive chapters use the pinned campaign utility and exact existing episode01/02 ordering; no final campaign progress flag, public distribution or production-ready claim. Actual episode03continuation remains."
   - "Guide records controls and real Windows/Steam/es-ES test cases: geometry/pathfinding/collision/save-load/terminal/optional utility/difficulty with build/hash; pending observations stay pending and do not block producing the artifact that enables them."
+- review-state: in_review
+- review-implementer: gpt-6
+- shipped-in: `5cd14b3bc848`
 
 ## acceptance
 
