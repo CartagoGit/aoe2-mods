@@ -58,9 +58,7 @@ export async function validateNativeFixtures(
     status: "native fixture discovery executed",
   };
   if (code !== 0)
-    throw new Error(
-      `Native fixture discovery (${code}): ${err}\n${out}`,
-    );
+    throw new Error(`Native fixture discovery (${code}): ${err}\n${out}`);
   if (testsRun === 0)
     throw new Error(
       `Native fixture discovery found no test in ${report.discovery}; an empty discovery is not a verification`,
