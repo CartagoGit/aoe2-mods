@@ -15,9 +15,13 @@ frame that is not the Jerusalem map and not a historical build.
 
 The household adapter stays the only household-ledger controller; this script
 reuses it, the shared native base factory, the shared spatial and transaction
-helpers and the optional-circuit adapter instead of copying any of them. Source
-and XS inspection support compilation evidence only; they do not execute the
-game engine.
+helpers and the optional-circuit adapter instead of copying any of them. The
+base envelope and the native write/reopen/signature/XS verification are the
+shared private services, so this builder and the private geographic preview
+cannot drift apart; the labels, the source checks, the exact controller XS,
+the semantic signature and the unconditional historical-build refusal stay
+here. Source and XS inspection support compilation evidence only; they do not
+execute the game engine.
 """
 
 import argparse
@@ -36,6 +40,8 @@ ROOT = HERE.parents[1]
 native_signature = runpy.run_path(str(HERE / "native_signature.helper.py"))[
     "native_signature"
 ]
+BASE_FACTORY = runpy.run_path(str(HERE / "private_household_base.factory.py"))
+ARTIFACT_SERVICE = runpy.run_path(str(HERE / "private_native_artifact.service.py"))
 
 SYNTHETIC_NOTICE = (
     "explicitly nonhistorical synthetic physical fixture for the episode-02 "
@@ -236,60 +242,18 @@ def synthetic_physical_binding(binding, dossier):
 
 
 def synthetic_base(binding, dossier, level):
-    """Construct an explicit small supported v1 base envelope."""
-    size = binding["map"]["size"]
-    stocks = dossier["difficulty"][level]["startingResources"]
-    factions = [
-        {
-            "id": name,
-            "player": player,
-            "civilization": "byzantines",
-            "role": role,
-            "economy": {
-                "model": "finite-reserve",
-                "initial": stocks if player == 1 else dict.fromkeys(stocks, 0),
-            },
-        }
-        for name, player, role in [("player", 1, "human"), ("local", 2, "ally")]
-    ]
-    native_units = []
-    mapping = {}
-    for index, entity in enumerate(binding["entities"]):
-        key = f"original-{index}"
-        mapping[entity["id"]] = key
-        x, y = map(math.floor, entity["position"])
-        native_units.append(
-            {
-                "id": key,
-                "faction": "player" if entity["player"] == 1 else "local",
-                "type": entity["unitType"],
-                "position": {"x": x, "y": y},
-                "essential": False,
-            }
-        )
-    start = next(
-        unit["position"] for unit in native_units if unit["id"] == mapping[
-            binding["households"]["entities"][0]
-        ]
+    """Construct an explicit small supported v1 base envelope.
+
+    The envelope construction itself is shared with the private geographic
+    preview; this wrapper keeps the labelled synthetic fixture's own default:
+    its 64 tile frame, its scenario identifier and no terrain of its own.
+    """
+    return BASE_FACTORY["build_private_household_base"](
+        binding,
+        dossier,
+        level,
+        scenario_id=SYNTHETIC_SCENARIO_ID,
     )
-    base = {
-        "schemaVersion": 1,
-        "scenario": {
-            "id": SYNTHETIC_SCENARIO_ID,
-            "map": {
-                "width": size,
-                "height": size,
-                "baseTerrain": "grass-1",
-                "tiles": [],
-                "blocked": [],
-                "start": start,
-            },
-            "factions": factions,
-            "units": native_units,
-            "technologies": [],
-        },
-    }
-    return base, mapping
 
 
 def label_synthetic_scenario(scenario, dossier, locale):
@@ -323,8 +287,6 @@ def label_synthetic_scenario(scenario, dossier, locale):
 
 def build_variant(root, dossier, binding, output, locale, level, version):
     """Compile the household controller on the synthetic frame and prove it."""
-    from AoE2ScenarioParser.scenarios.aoe2_de_scenario import AoE2DEScenario
-
     factory = runpy.run_path(str(HERE / "native_scenario.factory.py"))
     adapter = runpy.run_path(str(HERE / "native_household.adapter.py"))
     base, mapping = synthetic_base(binding, dossier, level)
@@ -337,25 +299,14 @@ def build_variant(root, dossier, binding, output, locale, level, version):
         scenario, units, dossier, binding, locale
     )
     label_synthetic_scenario(scenario, dossier, locale)
-    output.mkdir(parents=True, exist_ok=True)
-    path = output / (SYNTHETIC_SCENARIO_ID + ".aoe2scenario")
-    scenario.write_to_file(str(path))
-    reopened = AoE2DEScenario.from_file(str(path))
-    before, after = native_signature(scenario), native_signature(reopened)
-    if before != after:
-        differences = [key for key in before if before[key] != after[key]]
-        raise RuntimeError(
-            "native household round-trip changed fields: " + ", ".join(differences)
-        )
-    reopened.xs_manager.xs_check.raise_on_error = True
-    reopened.xs_manager.validate_scenario_xs()
-    (output / "native-controller.xs").write_text(
-        result.pop("xsSource"), encoding="utf8"
+    xs_source = result.pop("xsSource")
+    artifact = ARTIFACT_SERVICE["write_and_verify_artifact"](
+        scenario, output, SYNTHETIC_SCENARIO_ID, xs_source=xs_source
     )
     result.update(
         {
-            "scenario": path.name,
-            "scenarioSha256": sha256(path),
+            "scenario": artifact["scenario"],
+            "scenarioSha256": artifact["scenarioSha256"],
             "locale": locale,
             "difficulty": level,
             "scenarioVersion": version,
@@ -377,7 +328,7 @@ def build_variant(root, dossier, binding, output, locale, level, version):
     (output / "native-receipt.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf8"
     )
-    return path, result
+    return output / (SYNTHETIC_SCENARIO_ID + ".aoe2scenario"), result
 
 
 def build_preview(
