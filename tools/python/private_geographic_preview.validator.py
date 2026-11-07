@@ -44,6 +44,11 @@ PLAN_SCHEMA_VERSION = 1
 MODERN_CLASSIFICATIONS = ("modern-dsm",)
 FIXTURE_CLASSIFICATION = "synthetic-test"
 SYNTHETIC_ARTIFACT_PREFIX = "synthetic-geographic-"
+CANONICAL_MODERN_PLAN = Path(
+    "docs/wiki/faith-origins/episodes/02-civilian-refuge-jerusalem/"
+    "25-private-geographic-preview-plan.json"
+)
+ORIGINAL_BINDING_NAME = "19-native-binding-draft.json"
 MINIMUM_MAP_SIZE = 300
 MAXIMUM_MAP_SIZE = 400
 NATIVE_LEVEL_MIN = 0
@@ -207,6 +212,19 @@ class PrivatePreviewRejection(ValueError):
 
 def _reject(message):
     raise PrivatePreviewRejection(message)
+
+
+def _read_pinned_json(path, expected_sha256, label):
+    """Hash and parse the same bytes so the snapshot names its parsed input."""
+    raw = Path(path).read_bytes()
+    actual_sha256 = hashlib.sha256(raw).hexdigest()
+    if actual_sha256 != expected_sha256:
+        _reject(f"the {label} hash does not match the pinned source")
+    try:
+        value = json.loads(raw.decode("utf8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        _reject(f"the pinned {label} is not valid UTF-8 JSON: {error}")
+    return value, actual_sha256
 
 
 def _require_exact_keys(owner, expected, label):
@@ -614,9 +632,14 @@ def _validate_source_binding(plan, root, mode):
     _require_exact_keys(declared, SOURCE_BINDING_KEYS, "sourceBinding")
     digest = _require_hex_digest(declared, "sha256", "sourceBinding")
     path = _inside_root(root, declared.get("path"), "sourceBinding.path")
-    if sha256(path) != digest:
-        _reject("the source binding hash does not match the pinned source")
-    binding = json.loads(path.read_text(encoding="utf8"))
+    if mode == "modern":
+        expected = (root / CANONICAL_MODERN_PLAN).parent / ORIGINAL_BINDING_NAME
+        if path != expected.resolve():
+            _reject(
+                "a modern preview must use the original source binding 19 "
+                "beside the canonical plan"
+            )
+    binding, _ = _read_pinned_json(path, digest, "source binding")
     if binding.get("kind") != SOURCE_BINDING_KIND:
         _reject("the pinned source binding is not a private household binding")
     if type(binding.get("schemaVersion")) is not int or binding["schemaVersion"] != 1:
@@ -643,10 +666,8 @@ def _validate_source_campaign(plan, root):
     _require_exact_keys(declared, SOURCE_CAMPAIGN_KEYS, "sourceCampaign")
     digest = _require_hex_digest(declared, "sha256", "sourceCampaign")
     path = _inside_root(root, declared.get("path"), "sourceCampaign.path")
-    if sha256(path) != digest:
-        _reject("the source campaign hash does not match the pinned source")
     index = _require_int(declared, "dossierIndex", "sourceCampaign", minimum=0)
-    campaign = json.loads(path.read_text(encoding="utf8"))
+    campaign, _ = _read_pinned_json(path, digest, "source campaign")
     if campaign.get("campaignId") != plan.get("campaignId"):
         _reject("the source campaign belongs to another campaign")
     episodes = campaign.get("episodes")
@@ -681,6 +702,47 @@ def _validate_raster(plan, root):
     return path, raster
 
 
+def _validate_modern_source_boundary(root, plan_path, binding, policy, overrides):
+    """Keep the modern path anchored to the canonical plan and bounded move."""
+    canonical_plan = (root / CANONICAL_MODERN_PLAN).resolve()
+    if plan_path != canonical_plan:
+        _reject("modern development builds require the canonical geographic plan")
+
+    if len(overrides) != 1:
+        _reject("a modern preview permits exactly one original body override")
+    candidates = [
+        entity
+        for entity in binding["entities"]
+        if entity.get("unitType") == "house"
+        and entity.get("player") == 2
+        and entity.get("initialHub") == "hub-2"
+    ]
+    if len(candidates) != 1 or overrides[0]["id"] != candidates[0]["id"]:
+        _reject("the modern override must be the original player-2 store in hub-2")
+
+    override = overrides[0]
+    if override["conservativeExtentTiles"] != STORE_CONSERVATIVE_EXTENT:
+        _reject("the modern store envelope extent must be exactly three tiles")
+    if policy["receiverApproachTiles"] != 2:
+        _reject("the modern receiver approach must remain two tiles")
+    dx, dy = override["deltaTiles"]
+    if math.hypot(dx, dy) > 4:
+        _reject("the modern store move may not exceed four snapped tiles")
+    hub_centres = [
+        zone["centre"]
+        for zone in binding["zones"]
+        if zone.get("hub") == "hub-2"
+        and zone.get("id", "").endswith("destination-2")
+    ]
+    if len(hub_centres) != 1:
+        _reject("the original binding must identify one hub-2 receiving centre")
+    hub_distance = math.dist(override["toNativeCentre"], hub_centres[0])
+    if hub_distance > 12:
+        _reject("the modern store must stay within the twelve-tile hub-2 radius")
+    if abs(override["hubCentreDistanceTiles"] - hub_distance) > 1e-3:
+        _reject("the modern store hub-centre distance must match its snapped position")
+
+
 def validate_private_geographic_plan(root, plan_path):
     """Validate one private geographic preview plan and fail closed."""
     root = Path(root).resolve()
@@ -689,7 +751,9 @@ def validate_private_geographic_plan(root, plan_path):
         _reject("the private preview plan must stay inside the project")
     if not plan_path.is_file():
         _reject("the private preview plan does not exist")
-    plan = json.loads(plan_path.read_text(encoding="utf8"))
+    plan_bytes = plan_path.read_bytes()
+    plan_sha256 = hashlib.sha256(plan_bytes).hexdigest()
+    plan = json.loads(plan_bytes.decode("utf8"))
     _require_exact_keys(plan, TOP_LEVEL_KEYS, "the private preview plan")
     if type(plan.get("schemaVersion")) is not int or plan["schemaVersion"] != PLAN_SCHEMA_VERSION:
         _reject("the private preview plan has an unsupported schema version")
@@ -709,6 +773,7 @@ def validate_private_geographic_plan(root, plan_path):
     classification = raster["sourceClassification"]
     mode = "fixture" if classification == FIXTURE_CLASSIFICATION else "modern"
     if mode == "fixture":
+        _validate_fixture_plan_origin(root, plan_path)
         if not artifact_scenario_id.startswith(SYNTHETIC_ARTIFACT_PREFIX):
             _reject(
                 "a synthetic-test plan needs a "
@@ -717,6 +782,7 @@ def validate_private_geographic_plan(root, plan_path):
         if not _require_bool(plan, "privateBuildAuthorized", "the private preview plan"):
             _reject("a synthetic-test plan must carry its own fixture authorization")
     else:
+        _validate_modern_plan_origin(root, plan_path)
         if not _require_bool(plan, "privateBuildAuthorized", "the private preview plan"):
             _reject(
                 "this private plan is not authorized for a development build; "
@@ -741,6 +807,8 @@ def validate_private_geographic_plan(root, plan_path):
     binding_path, binding = _validate_source_binding(plan, root, mode)
     campaign_path, campaign, dossier = _validate_source_campaign(plan, root)
     overrides = _validate_overrides(plan, binding)
+    if mode == "modern":
+        _validate_modern_source_boundary(root, plan_path, binding, policy, overrides)
 
     if binding["map"]["size"] != size:
         _reject("frame.mapSize must match the size of the source binding")
@@ -781,6 +849,12 @@ def validate_private_geographic_plan(root, plan_path):
     return {
         "plan": plan,
         "planPath": plan_path,
+        "sourceHashes": {
+            "plan": plan_sha256,
+            "binding": plan["sourceBinding"]["sha256"],
+            "campaign": plan["sourceCampaign"]["sha256"],
+            "raster": raster["sha256"],
+        },
         "root": root,
         "mode": mode,
         "artifactScenarioId": artifact_scenario_id,
@@ -801,6 +875,31 @@ def validate_private_geographic_plan(root, plan_path):
         "evidence": evidence,
         "overrides": overrides,
     }
+
+
+def _validate_modern_plan_origin(root, plan_path):
+    """Reject a copied real plan before its caller-supplied flags are read."""
+    if plan_path != (Path(root) / CANONICAL_MODERN_PLAN).resolve():
+        _reject("modern development builds require the canonical geographic plan")
+
+
+def _validate_fixture_plan_origin(root, plan_path):
+    """Keep artificial plans separate from the architect-owned real plan."""
+    if plan_path == (Path(root) / CANONICAL_MODERN_PLAN).resolve():
+        _reject("a synthetic fixture needs its own separately pinned plan file")
+
+
+def verify_source_hashes(validated):
+    """Fail if any pinned input changed after plan validation."""
+    paths = {
+        "plan": validated["planPath"],
+        "binding": validated["bindingPath"],
+        "campaign": validated["campaignPath"],
+        "raster": validated["rasterPath"],
+    }
+    for name, path in paths.items():
+        if sha256(path) != validated["sourceHashes"][name]:
+            _reject(f"the pinned {name} changed while building the preview")
 
 
 def require_output_outside_inputs(output, inputs):

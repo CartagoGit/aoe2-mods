@@ -86,6 +86,39 @@ def _clear_extractor_caches():
             cached()
 
 
+def validate_geotiff_boundary(plan, path):
+    """Check TIFF tags the legacy extractor cannot enforce in either mode."""
+    raster = plan["raster"]
+    reference = EXTRACTOR["georeference"](str(path))
+    if reference["modelTypeGeoKey"] != 2:
+        raise ValueError("a pinned TIFF must declare geographic model type 2")
+    if reference["geographicTypeGeoKey"] != 4326:
+        raise ValueError("a pinned TIFF must declare geographic CRS 4326")
+    expected_raster_type = 2 if raster["sampleAnchor"] == "centre" else 1
+    if reference["rasterTypeGeoKey"] != expected_raster_type:
+        raise ValueError("the TIFF raster type does not match the declared sample anchor")
+    if (reference["imageWidth"], reference["imageLength"]) != (
+        raster["width"],
+        raster["height"],
+    ):
+        raise ValueError("the TIFF dimensions do not match the pinned raster dimensions")
+
+    scale = reference["modelPixelScaleTag"]
+    if len(scale) != 3 or any(not math.isfinite(float(value)) for value in scale):
+        raise ValueError("a pinned TIFF needs three finite model pixel scale values")
+    if float(scale[0]) <= 0 or float(scale[1]) <= 0:
+        raise ValueError("a pinned TIFF needs positive X and Y pixel scales")
+    tiepoint = reference["modelTiepointTag"]
+    if len(tiepoint) != 6 or any(
+        not math.isfinite(float(value)) for value in tiepoint
+    ):
+        raise ValueError("a pinned TIFF needs exactly one finite six-value tiepoint")
+    if [float(value) for value in tiepoint[:3]] != [0.0, 0.0, 0.0]:
+        raise ValueError("a pinned TIFF tiepoint must start at raster origin [0,0,0]")
+    if reference["gdalNoData"] is not None:
+        raise ValueError("a pinned TIFF with GDAL_NODATA needs explicit nodata support")
+
+
 def _bands(plan):
     """The explicit band table of the plan, checked to increase."""
     bands = tuple(
@@ -117,6 +150,7 @@ def derive_geographic_grid(root, plan, *, raster_path=None):
     if sha256(path) != pinned:
         raise ValueError("the pinned raster changed before the extraction")
     _clear_extractor_caches()
+    validate_geotiff_boundary(plan, path)
     grid = EXTRACTOR["extract_window"](
         str(path),
         column_start=0,
@@ -421,7 +455,12 @@ def build_variant(
     """Compile one private variant and prove it."""
     dossier = validated["dossier"]
     binding = derived["binding"]
-    notice = validated["presentation"][locale]
+    authored_presentation = validated["presentation"][locale]
+    notice = (
+        SYNTHETIC_NOTICE + "\n\n" + authored_presentation
+        if validated["mode"] == "fixture"
+        else DEVELOPMENT_STATUS + "\n\n" + authored_presentation
+    )
     base, mapping = BASE_FACTORY["build_private_household_base"](
         binding,
         dossier,
@@ -446,6 +485,7 @@ def build_variant(
         validated["artifactScenarioId"],
         xs_source=xs_source,
     )
+    VALIDATOR["verify_source_hashes"](validated)
     receipt = {
         "scenario": artifact["scenario"],
         "scenarioSha256": artifact["scenarioSha256"],
@@ -459,10 +499,10 @@ def build_variant(
         "syntheticFixture": validated["mode"] == "fixture",
         "syntheticNotice": SYNTHETIC_NOTICE if validated["mode"] == "fixture" else None,
         "artifactScenarioId": validated["artifactScenarioId"],
-        "sourceBindingSha256": sha256(validated["bindingPath"]),
+        "sourceBindingSha256": validated["sourceHashes"]["binding"],
         "sourceBindingPath": str(validated["bindingPath"].relative_to(validated["root"])),
-        "sourceCampaignSha256": sha256(validated["campaignPath"]),
-        "rasterSha256": validated["raster"]["sha256"],
+        "sourceCampaignSha256": validated["sourceHashes"]["campaign"],
+        "rasterSha256": validated["sourceHashes"]["raster"],
         "terrainSha256": derived["terrainSha256"],
         "bands": [
             {"fromMetres": metres, "nativeLevel": level}
@@ -552,6 +592,7 @@ def build_geographic_preview(
         corridorAudit=corridor_audit,
     )
     output = Path(output)
+    VALIDATOR["verify_source_hashes"](validated)
     reports = []
     for locale in locales:
         for level in levels:
@@ -566,6 +607,7 @@ def build_geographic_preview(
                 print(captured.getvalue(), file=sys.stderr)
                 raise
             reports.append(receipt)
+    VALIDATOR["verify_source_hashes"](validated)
     report = {
         "kind": "private-geographic-household-preview-report",
         "campaignId": plan["campaignId"],
@@ -573,14 +615,14 @@ def build_geographic_preview(
         "mode": validated["mode"],
         "artifactScenarioId": validated["artifactScenarioId"],
         "planPath": str(Path(plan_path).resolve().relative_to(root)),
-        "planSha256": sha256(Path(plan_path)),
-        "sourceBindingSha256": sha256(validated["bindingPath"]),
+        "planSha256": validated["sourceHashes"]["plan"],
+        "sourceBindingSha256": validated["sourceHashes"]["binding"],
         "sourceBindingPath": str(
             validated["bindingPath"].relative_to(root)
         ),
         "sourceCampaignPath": str(validated["campaignPath"].relative_to(root)),
         "rasterPath": str(validated["rasterPath"].relative_to(root)),
-        "rasterSha256": validated["raster"]["sha256"],
+        "rasterSha256": validated["sourceHashes"]["raster"],
         "terrainSha256": derived["terrainSha256"],
         "bands": [
             {"fromMetres": metres, "nativeLevel": level}
@@ -615,6 +657,7 @@ def build_geographic_preview(
         ],
     }
     output.mkdir(parents=True, exist_ok=True)
+    VALIDATOR["verify_source_hashes"](validated)
     (output / "preview-report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf8"
     )

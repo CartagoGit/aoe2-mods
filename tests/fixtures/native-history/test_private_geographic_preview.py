@@ -71,7 +71,19 @@ def sha256(path):
     return BUILDER["sha256"](path)
 
 
-def write_synthetic_tiff(path, columns, rows, scale, tiepoint, values):
+def write_synthetic_tiff(
+    path,
+    columns,
+    rows,
+    scale,
+    tiepoint,
+    values,
+    *,
+    model_type=2,
+    raster_type=2,
+    geographic_type=4326,
+    nodata=None,
+):
     """Write a minimal little-endian float32 GeoTIFF with the georeference tags.
 
     The file is a real tiled TIFF with a model pixel scale, a model tiepoint
@@ -86,11 +98,13 @@ def write_synthetic_tiff(path, columns, rows, scale, tiepoint, values):
                 for i in range(tile_x, min(tile_x + FIXTURE_TILE, columns)):
                     raw += struct.pack("<f", values[j][i])
             tiles.append(zlib.compress(bytes(raw), 9))
-    geo_keys = [
-        1024, 0, 1, 2,
-        1025, 0, 1, 2,
-        2048, 0, 1, 4326,
-    ]
+    geo_keys = []
+    if model_type is not None:
+        geo_keys.extend((1024, 0, 1, model_type))
+    if raster_type is not None:
+        geo_keys.extend((1025, 0, 1, raster_type))
+    if geographic_type is not None:
+        geo_keys.extend((2048, 0, 1, geographic_type))
     directory = [1, 1, 0, len(geo_keys) // 4] + geo_keys
     entries = [
         (256, 3, 1, columns),
@@ -107,7 +121,7 @@ def write_synthetic_tiff(path, columns, rows, scale, tiepoint, values):
     ]
     extra = [
         (33550, 12, 3, struct.pack("<3d", *scale)),
-        (33922, 12, 6, struct.pack("<6d", *tiepoint)),
+        (33922, 12, len(tiepoint), struct.pack("<%dd" % len(tiepoint), *tiepoint)),
         (
             34735,
             3,
@@ -127,6 +141,9 @@ def write_synthetic_tiff(path, columns, rows, scale, tiepoint, values):
             b"".join(struct.pack("<I", len(tile)) for tile in tiles),
         ),
     ]
+    if nodata is not None:
+        nodata_bytes = str(nodata).encode("ascii") + b"\x00"
+        extra.append((42113, 2, len(nodata_bytes), nodata_bytes))
     count = len(entries) + len(extra)
     extra_offset = 8 + (2 + count * 12 + 4)
     payload = bytearray()
@@ -556,10 +573,195 @@ class PrivateGeographicBoundaryTests(PrivateGeographicPreviewFixture):
         self.assertEqual(17, len(validated["binding"]["entities"]))
         self.assertEqual(10, len(validated["binding"]["zones"]))
 
+    def test_a_synthetic_fixture_cannot_reuse_the_canonical_modern_plan_path(self):
+        with self.assertRaises(ValueError) as error:
+            VALIDATOR["_validate_fixture_plan_origin"](ROOT, REAL_PLAN.resolve())
+        self.assertIn("separately pinned plan file", str(error.exception))
+
     def test_the_architect_plan_stays_unauthorized(self):
         with self.assertRaises(ValueError) as error:
             VALIDATOR["validate_private_geographic_plan"](ROOT, REAL_PLAN)
         self.assertIn("not authorized", str(error.exception))
+
+    def test_a_copied_true_authorization_cannot_enable_the_modern_plan(self):
+        plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
+        plan["privateBuildAuthorized"] = True
+        path = self.write_plan("copied-modern-plan.json", plan)
+        with self.assertRaises(ValueError) as error:
+            VALIDATOR["validate_private_geographic_plan"](ROOT, path)
+        self.assertIn("canonical geographic plan", str(error.exception))
+
+    def test_a_repinned_binding_clone_is_not_the_original_binding_19(self):
+        plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
+        clone = self.fixture()["directory"] / "repinned-real-binding.json"
+        clone.write_bytes(REAL_BINDING.read_bytes())
+        plan["sourceBinding"] = {
+            "path": str(clone.relative_to(ROOT)),
+            "sha256": sha256(clone),
+        }
+        with self.assertRaises(ValueError) as error:
+            VALIDATOR["_validate_source_binding"](plan, ROOT, "modern")
+        self.assertIn("original source binding 19", str(error.exception))
+
+    def test_the_real_modern_override_is_exactly_one_bounded_store_move(self):
+        plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
+        binding = json.loads(REAL_BINDING.read_text(encoding="utf8"))
+        validate = VALIDATOR["_validate_modern_source_boundary"]
+        validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], plan["bodyOverrides"])
+
+        for overrides in ([], plan["bodyOverrides"] + plan["bodyOverrides"]):
+            with self.assertRaises(ValueError) as error:
+                validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], overrides)
+            self.assertIn("exactly one", str(error.exception))
+
+        other = copy.deepcopy(plan["bodyOverrides"])
+        other[0]["id"] = binding["entities"][0]["id"]
+        with self.assertRaises(ValueError) as error:
+            validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], other)
+        self.assertIn("player-2 store in hub-2", str(error.exception))
+
+        too_far = copy.deepcopy(plan["bodyOverrides"])
+        too_far[0]["deltaTiles"] = [0, -5]
+        with self.assertRaises(ValueError) as error:
+            validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], too_far)
+        self.assertIn("four snapped tiles", str(error.exception))
+
+        too_wide = copy.deepcopy(plan["bodyOverrides"])
+        too_wide[0]["conservativeExtentTiles"] = 4
+        with self.assertRaises(ValueError) as error:
+            validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], too_wide)
+        self.assertIn("exactly three", str(error.exception))
+
+        wrong_approach = copy.deepcopy(plan["layoutPolicy"])
+        wrong_approach["receiverApproachTiles"] = 1
+        with self.assertRaises(ValueError) as error:
+            validate(ROOT, REAL_PLAN.resolve(), binding, wrong_approach, plan["bodyOverrides"])
+        self.assertIn("two tiles", str(error.exception))
+
+        outside_hub = copy.deepcopy(plan["bodyOverrides"])
+        outside_hub[0]["toPosition"] = [200.05, 185.88]
+        outside_hub[0]["toNativeCentre"] = [200.5, 185.5]
+        outside_hub[0]["deltaTiles"] = [0, -4]
+        outside_hub[0]["hubCentreDistanceTiles"] = round(
+            math.dist(outside_hub[0]["toNativeCentre"], [200.05, 197.88]), 3
+        )
+        with self.assertRaises(ValueError) as error:
+            validate(ROOT, REAL_PLAN.resolve(), binding, plan["layoutPolicy"], outside_hub)
+        self.assertIn("twelve-tile hub-2 radius", str(error.exception))
+
+    def test_real_modern_tiff_geo_keys_and_anchor_are_checked_from_bytes(self):
+        modern_raster = json.loads(REAL_PLAN.read_text(encoding="utf8"))["raster"]
+        BUILDER["validate_geotiff_boundary"]({"raster": modern_raster}, REAL_RASTER)
+
+        directory = self.fixture()["directory"]
+        values = fixture_surface(FIXTURE_COLUMNS, FIXTURE_ROWS)
+        scale = ((FIXTURE_LON_MAX - FIXTURE_LON_MIN) / (FIXTURE_COLUMNS - 1),
+                 (FIXTURE_LAT_MAX - FIXTURE_LAT_MIN) / (FIXTURE_ROWS - 1), 0.0)
+        tiepoint = (0.0, 0.0, 0.0, FIXTURE_LON_MIN, FIXTURE_LAT_MAX, 0.0)
+        bad_sources = (
+            ("missing-model.tif", {"model_type": None}, "model type 2"),
+            ("wrong-model.tif", {"model_type": 1}, "model type 2"),
+            ("wrong-geographic-crs.tif", {"geographic_type": 3857}, "CRS 4326"),
+            ("wrong-raster-anchor.tif", {"raster_type": 1}, "sample anchor"),
+            ("multiple-tiepoints.tif", {"tiepoint": tiepoint + tiepoint}, "six-value tiepoint"),
+            ("nodata-tag.tif", {"nodata": -9999}, "GDAL_NODATA"),
+        )
+        plan = {
+            "raster": {
+                "sampleAnchor": "centre",
+                "width": FIXTURE_COLUMNS,
+                "height": FIXTURE_ROWS,
+            }
+        }
+        for filename, options, message in bad_sources:
+            path = directory / filename
+            write_synthetic_tiff(
+                path,
+                FIXTURE_COLUMNS,
+                FIXTURE_ROWS,
+                scale,
+                options.pop("tiepoint", tiepoint),
+                values,
+                **options,
+            )
+            with self.assertRaises(ValueError) as error:
+                BUILDER["validate_geotiff_boundary"](plan, path)
+            self.assertIn(message, str(error.exception), filename)
+
+    def test_bad_pixel_scale_and_raster_origin_are_rejected(self):
+        directory = self.fixture()["directory"]
+        values = fixture_surface(FIXTURE_COLUMNS, FIXTURE_ROWS)
+        tiepoint = (0.0, 0.0, 0.0, FIXTURE_LON_MIN, FIXTURE_LAT_MAX, 0.0)
+        plan = {"raster": {"sampleAnchor": "centre", "width": FIXTURE_COLUMNS, "height": FIXTURE_ROWS}}
+        for filename, scale, raster_origin, message in (
+            ("zero-scale.tif", (0.0, 0.004, 0.0), (0.0, 0.0, 0.0), "positive X and Y"),
+            ("nonzero-origin.tif", (0.004, 0.004, 0.0), (1.0, 0.0, 0.0), "raster origin"),
+        ):
+            path = directory / filename
+            point = (*raster_origin, *tiepoint[3:])
+            write_synthetic_tiff(
+                path, FIXTURE_COLUMNS, FIXTURE_ROWS, scale, point, values
+            )
+            with self.assertRaises(ValueError) as error:
+                BUILDER["validate_geotiff_boundary"](plan, path)
+            self.assertIn(message, str(error.exception))
+
+    def test_same_path_cached_geo_keys_are_cleared_before_revalidation(self):
+        directory = self.fixture()["directory"]
+        path = directory / "same-path-geo-key.tif"
+        values = fixture_surface(FIXTURE_COLUMNS, FIXTURE_ROWS)
+        scale = ((FIXTURE_LON_MAX - FIXTURE_LON_MIN) / (FIXTURE_COLUMNS - 1),
+                 (FIXTURE_LAT_MAX - FIXTURE_LAT_MIN) / (FIXTURE_ROWS - 1), 0.0)
+        tiepoint = (0.0, 0.0, 0.0, FIXTURE_LON_MIN, FIXTURE_LAT_MAX, 0.0)
+        write_synthetic_tiff(
+            path, FIXTURE_COLUMNS, FIXTURE_ROWS, scale, tiepoint, values
+        )
+        BUILDER["_clear_extractor_caches"]()
+        BUILDER["EXTRACTOR"]["georeference"](str(path))
+        write_synthetic_tiff(
+            path, FIXTURE_COLUMNS, FIXTURE_ROWS, scale, tiepoint, values,
+            model_type=1,
+        )
+        raster = {
+            "path": str(path),
+            "sha256": sha256(path),
+            "sourceClassification": "modern-dsm",
+            "sampleAnchor": "centre",
+            "verticalDatum": "test datum reported only",
+            "licenseNoticePath": "synthetic notice",
+            "width": FIXTURE_COLUMNS,
+            "height": FIXTURE_ROWS,
+        }
+        with self.assertRaises(ValueError) as error:
+            BUILDER["derive_geographic_grid"](ROOT, {"raster": raster}, raster_path=path)
+        self.assertIn("model type 2", str(error.exception))
+
+    def test_fixture_tiff_nodata_sentinel_is_rejected_before_extraction(self):
+        directory = self.fixture()["directory"]
+        path = directory / "fixture-with-nodata.tif"
+        write_synthetic_tiff(
+            path,
+            FIXTURE_COLUMNS,
+            FIXTURE_ROWS,
+            ((FIXTURE_LON_MAX - FIXTURE_LON_MIN) / (FIXTURE_COLUMNS - 1),
+             (FIXTURE_LAT_MAX - FIXTURE_LAT_MIN) / (FIXTURE_ROWS - 1), 0.0),
+            (0.0, 0.0, 0.0, FIXTURE_LON_MIN, FIXTURE_LAT_MAX, 0.0),
+            fixture_surface(FIXTURE_COLUMNS, FIXTURE_ROWS),
+            nodata=-9999,
+        )
+        raster = {
+            "path": str(path),
+            "sha256": sha256(path),
+            "sourceClassification": "synthetic-test",
+            "sampleAnchor": "centre",
+            "verticalDatum": "synthetic test datum",
+            "licenseNoticePath": "synthetic notice",
+            "width": FIXTURE_COLUMNS,
+            "height": FIXTURE_ROWS,
+        }
+        with self.assertRaises(ValueError) as error:
+            BUILDER["derive_geographic_grid"](ROOT, {"raster": raster}, raster_path=path)
+        self.assertIn("GDAL_NODATA", str(error.exception))
 
     def test_an_unknown_key_is_refused(self):
         plan = self.plan_copy()
@@ -761,6 +963,18 @@ class PrivateGeographicBoundaryTests(PrivateGeographicPreviewFixture):
             )
         self.assertIn("hash", str(error.exception))
 
+    def test_a_pinned_input_mutation_after_validation_is_refused(self):
+        validated = VALIDATOR["validate_private_geographic_plan"](
+            ROOT, self.fixture()["planPath"]
+        )
+        raster_copy = self.fixture()["directory"] / "post-validation-raster.tif"
+        raster_copy.write_bytes(validated["rasterPath"].read_bytes())
+        validated["rasterPath"] = raster_copy
+        raster_copy.write_bytes(raster_copy.read_bytes() + b"\x00")
+        with self.assertRaises(ValueError) as error:
+            VALIDATOR["verify_source_hashes"](validated)
+        self.assertIn("pinned raster changed while building", str(error.exception))
+
     def test_an_unlisted_move_is_refused(self):
         validated = VALIDATOR["validate_private_geographic_plan"](
             ROOT, self.fixture()["planPath"]
@@ -850,11 +1064,30 @@ class PrivateGeographicNativeTests(PrivateGeographicPreviewFixture):
         reopened = AoE2DEScenario.from_file(str(scenario_path))
         self.assertIn("Synthetic geographic test fixture", reopened.message_manager.instructions)
 
+    def test_a_short_presentation_cannot_erase_the_native_synthetic_notice(self):
+        plan = self.plan_copy()
+        plan["presentation"]["en"] = "preview"
+        path = self.write_plan("short-presentation-plan.json", plan)
+        output = self.fixture()["directory"] / "short-presentation-build"
+        BUILDER["build_geographic_preview"](
+            ROOT, path, output, locales=("en",), levels=("standard",)
+        )
+        scenario_path = (
+            output / "en" / "standard" / (FIXTURE_ARTIFACT_ID + ".aoe2scenario")
+        )
+        reopened = AoE2DEScenario.from_file(str(scenario_path))
+        self.assertIn("explicitly nonhistorical synthetic geographic test fixture", reopened.message_manager.instructions)
+        self.assertIn("\n\npreview\n\n", reopened.message_manager.instructions)
+
     def test_the_receipt_carries_the_source_and_terrain_evidence(self):
         receipt = self.variant()
         self.assertEqual(sha256(self.fixture()["rasterPath"]), receipt["rasterSha256"])
         self.assertEqual(
             sha256(self.fixture()["bindingPath"]), receipt["sourceBindingSha256"]
+        )
+        self.assertEqual(sha256(CAMPAIGN), receipt["sourceCampaignSha256"])
+        self.assertEqual(
+            sha256(self.fixture()["planPath"]), self.native_build()["planSha256"]
         )
         self.assertEqual(len(receipt["terrainSha256"]), 64)
         self.assertEqual(
@@ -937,11 +1170,13 @@ class PrivateGeographicNativeTests(PrivateGeographicPreviewFixture):
         before = {
             "plan": sha256(REAL_PLAN),
             "binding": sha256(REAL_BINDING),
+            "campaign": sha256(CAMPAIGN),
             "raster": sha256(REAL_RASTER),
         }
         self.native_build()
         self.assertEqual(before["plan"], sha256(REAL_PLAN))
         self.assertEqual(before["binding"], sha256(REAL_BINDING))
+        self.assertEqual(before["campaign"], sha256(CAMPAIGN))
         self.assertEqual(before["raster"], sha256(REAL_RASTER))
         plan = json.loads(REAL_PLAN.read_text(encoding="utf8"))
         self.assertFalse(plan["privateBuildAuthorized"])
