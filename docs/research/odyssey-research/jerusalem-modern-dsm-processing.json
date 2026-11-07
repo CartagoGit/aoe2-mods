@@ -1,0 +1,129 @@
+{
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E035_00_DEM/Copernicus_DSM_COG_10_N31_00_E035_00_DEM.tif",
+  "sourceSha256": "29baca4a170117c090c2ab1f2a4ade53ed1dd085cdbbfaa005631049462221cf",
+  "sourceBytes": 41402019,
+  "sourceHttpHeaders": {
+    "date": "Sun, 25 Oct 2026 13:54:18 GMT",
+    "last-modified": "Mon, 09 May 2022 14:15:01 GMT",
+    "etag": "\"e505be5b031c34ed397bbcf1e866c5b9\"",
+    "content-length": "41402019",
+    "content-type": "image/tiff",
+    "accept-ranges": "bytes",
+    "x-amz-request-id": "XFV9Q0NA9V9ME1SA"
+  },
+  "sourceDimensions": [
+    3600,
+    3600
+  ],
+  "sourceDtype": "float32",
+  "sourceCrs": "EPSG:4326",
+  "sourceRasterInterpretation": "Point (AREA_OR_POINT=Point)",
+  "sourceNodata": null,
+  "sourceResolutionDegrees": [
+    0.0002777777777777778,
+    0.0002777777777777778
+  ],
+  "sourceTransform": [
+    0.0002777777777777778,
+    0.0,
+    34.99986111111111,
+    0.0,
+    -0.0002777777777777778,
+    32.00013888888889
+  ],
+  "sourceOuterBounds": [
+    34.99986111111111,
+    31.00013888888889,
+    35.99986111111111,
+    32.00013888888889
+  ],
+  "sourceSampleCenterBounds": [
+    35.0,
+    31.00027777777778,
+    35.99972222222222,
+    32.0
+  ],
+  "sourceTileEdgeNote": "The AWS mirror readme states that shared southern/eastern edge samples are removed from public COGs. This N31/E035 tile has a 3600x3600 grid; the requested bbox is well inside its available sample centers.",
+  "requestedBBox": [
+    35.19,
+    31.74,
+    35.27,
+    31.81
+  ],
+  "requestedBBoxOrder": "[west, south, east, north]",
+  "cropPixelWindow": {
+    "columnOffset": 684,
+    "rowOffset": 684,
+    "width": 289,
+    "height": 253
+  },
+  "cropDimensions": [
+    289,
+    253
+  ],
+  "cropSampleCenterBounds": [
+    35.19,
+    31.740000000000002,
+    35.269999999999996,
+    31.810000000000002
+  ],
+  "cropOuterCellBounds": [
+    35.18986111111111,
+    31.73986111111111,
+    35.27013888888889,
+    31.81013888888889
+  ],
+  "cropTransform": [
+    0.0002777777777777778,
+    0.0,
+    35.18986111111111,
+    0.0,
+    -0.0002777777777777778,
+    31.81013888888889
+  ],
+  "crs": "EPSG:4326",
+  "rasterInterpretation": "Point (AREA_OR_POINT=Point)",
+  "dtype": "float32",
+  "nodata": null,
+  "compression": "DEFLATE, floating-point predictor 3; lossless re-encoding",
+  "sampleCount": 73117,
+  "cropBytes": 184672,
+  "cropSha256": "c50ef78b9ffd0e98cd373933a21b382ad9b202f9cad192018bfccd92bddaad1a",
+  "verification": "Reopened crop and source; every crop float32 sample equals the exact integer source window; verified dimensions, CRS, dtype, nodata, AREA_OR_POINT=Point and affine transform. Independent Pillow decoder reproduced the same pixel comparison.",
+  "modifications": "Integer pixel-aligned crop and lossless DEFLATE re-encoding only. No resampling, reprojection, value edits, filling, smoothing, warping or terrain derivation.",
+  "productClassification": "Modern 30 m digital surface model (DSM), including buildings, infrastructure and vegetation; research reference only. Not bare-earth terrain, ancient surface, archaeological footprint, historical site placement or game/map authorization.",
+  "verticalReference": "EGM2008 (EPSG:3855), metres, according to Copernicus GLO-30 product documentation; the downloaded TIFF does not expose a vertical-datum tag, so this is documentation attribution only.",
+  "horizontalReference": "WGS84-G1150 / EPSG:4326, per Copernicus GLO-30 product documentation; the TIFF CRS tag reports EPSG:4326.",
+  "cropStatisticsMetres": {
+    "min": 473.4389343261719,
+    "max": 838.0693359375,
+    "mean": 717.04443359375,
+    "p02": 554.5331396484376,
+    "p98": 817.02888671875
+  },
+  "preview": {
+    "path": "docs/research/odyssey-research/images/jerusalem-modern-dsm-regional-preview.png",
+    "sha256": "ad9334218cafa27354ad00b0859cc45bb5e4c36f2f7c6849ab58021b7b8a3bfa",
+    "bytes": 263436,
+    "stretch": "2nd–98th percentile linear display stretch; source raster values unchanged",
+    "caption": "Modern DSM surface, including buildings, infrastructure and vegetation. Not ancient terrain, bare earth, or a playable map."
+  },
+  "tools": {
+    "rasterio": "1.4.4",
+    "numpy": "2.2.6",
+    "Pillow": "11.0.0",
+    "matplotlib": "3.10.9",
+    "python": "3.10.12"
+  },
+  "preparedUtcDate": "2026-10-25T13:54:43Z",
+  "preparedBy": "gpt-6-luna",
+  "temporaryOriginalPath": "/tmp/jerusalem-modern-dsm/source.tif",
+  "officialProductDocumentationUrl": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+  "awsMirrorReadmeUrl": "https://copernicus-dem-30m.s3.amazonaws.com/readme.html",
+  "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+  "reproduction": "Source URL and SHA-256 above; derive pixel offsets from pixel-center coordinates and requested bbox, then read/write that exact Rasterio window. Temporary Python environment; no project runtime dependency added.",
+  "sourceS3LastModified": "Mon, 09 May 2022 14:15:01 GMT",
+  "sourceS3Etag": "e505be5b031c34ed397bbcf1e866c5b9",
+  "etagNote": "Recorded as the S3 object ETag, not treated as a cryptographic checksum; sourceSha256 is the integrity digest.",
+  "localCropPath": "docs/research/odyssey-research/geography/jerusalem-modern-dsm-regional-crop.tif"
+}

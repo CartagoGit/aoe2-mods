@@ -1,0 +1,195 @@
+{
+	"cacheDir": ".cache/delendai",
+	"docsDir": "docs/delendai",
+	"plugins": {
+		"git": {
+			"options": {}
+		},
+		"search": {
+			"options": {
+				"roots": [
+					"tools",
+					"docs"
+				]
+			}
+		},
+		"audit": {
+			"options": {
+				"auditDir": "docs/delendai/proposals/done/audits",
+				"topActions": 5
+			}
+		},
+		"commit-policy": {
+			"options": {
+				"commit": {
+					"enabled": true,
+					"requireConventional": true,
+					"autoScopeFromProposal": true,
+					"refuseWhenDisabled": true
+				},
+				"push": {
+					"enabled": true,
+					"force": "with-lease",
+					"protectedBranches": [
+						"main",
+						"master"
+					],
+					"protectedPrefixes": [
+						"release/",
+						"hotfix/"
+					],
+					"remote": "origin"
+				},
+				"cadence": {
+					"triggers": [
+						{
+							"kind": "slice"
+						}
+					],
+					"sliceScoping": true,
+					"allowForeignChanges": false
+				},
+				"identity": {
+					"mode": "auto"
+				},
+				"audit": {
+					"trailer": "co-authored-by",
+					"agentFormat": "${host}/${model}"
+				}
+			}
+		},
+		"conventions": {
+			"options": {
+				"roots": [
+					"tools",
+					"docs"
+				]
+			}
+		},
+		"deps": {
+			"options": {
+				"manifest": "package.json"
+			}
+		},
+		"docs": {
+			"options": {
+				"roots": [
+					"docs",
+					"README.md"
+				],
+				"extensions": [
+					"md",
+					"mdx"
+				],
+				"ignoreDirs": [
+					"node_modules",
+					".cache",
+					"dist",
+					"platforms"
+				]
+			}
+		},
+		"error-reporting": {
+			"options": {
+				"enabled": true
+			}
+		},
+		"impact-analysis": {
+			"options": {}
+		},
+		"logs": {
+			"options": {
+				"retentionCount": 10
+			}
+		},
+		"memory": {
+			"options": {
+				"bm25K1": 1.5,
+				"bm25B": 0.75,
+				"titleWeight": 2,
+				"maxNotes": 1000
+			}
+		},
+		"notification": {
+			"options": {
+				"intervalMs": 2000,
+				"heartbeatMs": 30000
+			}
+		},
+		"proposals": {
+			"options": {
+				"validationCommand": "bun run validate",
+				"requirePeerReview": true,
+				"folderPolicy": {
+					"ready": [
+						"feat",
+						"fix",
+						"refactor",
+						"chore",
+						"perf",
+						"audit",
+						"docs",
+						"test",
+						"infra",
+						"spike"
+					],
+					"in-progress": "flat",
+					"review": "flat",
+					"done": "by-kind",
+					"paused": "flat",
+					"blocked": "flat",
+					"retired": "by-kind"
+				}
+			}
+		},
+		"quality": {
+			"options": {}
+		},
+		"rules": {
+			"options": {}
+		},
+		"status-marker": {
+			"options": {}
+		},
+		"test-convention": {
+			"options": {}
+		},
+		"web-fetch": {
+			"options": {
+				"allowList": [
+					"delendai.dev",
+					"github.com",
+					"raw.githubusercontent.com",
+					"docs.github.com",
+					"registry.npmjs.org",
+					"www.npmjs.com"
+				]
+			}
+		}
+	},
+	"convention": {
+		"pluginPathsRoot": "packages",
+		"sourceRoot": "packages"
+	},
+	"development": {
+		"profile": "shared-checkout-merge",
+		"branches": {
+			"integration": "develop",
+			"release": "main"
+		}
+	},
+	"validationMatrix": {
+		"scopes": {
+			"project": [
+				{
+					"command": "bun install --frozen-lockfile",
+					"expect": "exit0"
+				},
+				{
+					"command": "bun run validate",
+					"expect": "exit0"
+				}
+			]
+		}
+	}
+}

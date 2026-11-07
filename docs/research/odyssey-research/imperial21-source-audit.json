@@ -1,0 +1,48 @@
+{
+  "order": 21,
+  "episodeId": "21-returning-households-escort-alexandria",
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "sourceCoverage": [
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+      "passage": "Anonymous Historia Acephala I.1–2",
+      "coverageActuallyRead": "Architect read the two opening paragraphs directly, not the complete chronicle.",
+      "limitations": "Paophi24 and old edition conversion; bracketed emendations visible. Not a list of ordinary household migrants, precise entrance gate or historical receiving courtyard.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://ccel.org/ccel/schaff/npnf204/npnf204.xxv.ii.i.html",
+      "passage": "Archibald Robertson, old NPNF editorial introduction to Historia Acephala",
+      "coverageActuallyRead": "Architect read displayed introduction and tables, not manuscripts or a current critical edition.",
+      "limitations": "Anonymous annalist under Theophilus, imperfect Latin transmission and internal chronology repairs; editor argues chronological value. His reconstruction is attributed, not a modern consensus or independent author identification from a web heading.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passage": "Socrates HE II.23, introduction, three imperial letters and opening of Julius letter",
+      "coverageActuallyRead": "Architect read the three imperial letters and introductory account; Julius letter was only read in part.",
+      "limitations": "Later Nicene historical narrative transmitting letters. No private royal motives, independent authentication of every letter or exact reception district. No claim to have read the full chapter.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.cealex.org/evenement/cartalex-is-online/",
+      "passage": "CEAlex CartAlex institutional announcement",
+      "coverageActuallyRead": "Architect read displayed announcement and list of GIS layer dates; interactive map figures not inspected.",
+      "limitations": "1866 reconstruction,1993 archaeological plan and1933–1948 cadastre are distinct layers, not a346 shoreline or dated household parcel. No map reuse license established, no institutional figure copied.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Do not infer author from corpus heading: Historia Acephala is an anonymous annalist, not Athanasius writing his own chronicle. Retain Paophi24 and edition conversion. Marcus is about12 and outside Alexandria in his authored biography; use received family stories, not adult clerk or episcopal eyewitness."
+  },
+  "nativeAndBalance": "not approved"
+}

@@ -1,0 +1,48 @@
+{
+  "order": 22,
+  "episodeId": "22-civilian-record-preservation-milan",
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "sourceCoverage": [
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/26012.htm",
+      "passage": "Socrates HE II.25",
+      "coverageActuallyRead": "Architect read full displayed chapter25 on Constans, Magnentius and western conflict.",
+      "limitations": "Later Nicene ecclesiastical account; war is not reduced to theology, private motives are attributed. Milan is fictional reception, not the killing site. Constantius faces a western rival in350.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.thelatinlibrary.com/eutropius/eutropius10.shtml",
+      "passage": "Eutropius Breviarium X.9–12",
+      "coverageActuallyRead": "Architect directly read Latin9–12, including Magnentius continued western rule and eventual defeat; precise340/350/353 dates use the broader qualified chronological frame.",
+      "limitations": "Constans killing near the Spanish frontier/Helena is not a Milan killing. Do not pull Magnentius final defeat into350. Exact killing site and event-specific Milan parcel not certified.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.museoarcheologicomilano.it/it/pagine-virtual-tour/la-torre-poligonale-e-le-mura",
+      "passage": "Municipal museum description of Maximian wall phases",
+      "coverageActuallyRead": "Architect read the displayed indexed institutional body; direct open returned403. No institutional figure pixels inspected.",
+      "limitations": "LateIII/earlyIV wall rebuilding and eastern extension provide broad urban context. Later medieval names/decorations are not350. Textual descriptions do not identify a storage court or prove absence of ancient small waterways.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.museoarcheologicomilano.it/web/museo-archeologico-milano/scopri-il-museo/le-torri-romane-e-il-monastero-maggiore/la-torre-del-circo",
+      "passage": "Municipal museum circus and tower phase description",
+      "coverageActuallyRead": "Architect read indexed institutional body; direct open returned403. The2018 survey/video not inspected.",
+      "limitations": "LateIII/earlyIV circus is distinct from itsVIII–IXbell-tower adaptation and later events. No350 dispatch reception venue, route widths, exact ancient drainage or figure reuse right established.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Preserve corrected350 political frame: Magnentius rival until353; no sole emperor in350, no killing atMilan, no religious single-cause war. Three ordinary record stores are author-created civilian precautions, not attested purge, fire or seizure."
+  },
+  "nativeAndBalance": "not approved"
+}
