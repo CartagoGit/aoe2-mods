@@ -21,6 +21,9 @@ ROOT = HERE.parents[1]
 native_signature = runpy.run_path(str(HERE / "native_signature.helper.py"))[
     "native_signature"
 ]
+RECEIVING_WAYFINDING = runpy.run_path(
+    str(HERE / "private_wayfinding.renderer.py")
+)["render_receiving_wayfinding"]
 
 
 def sha256(path):
@@ -185,18 +188,7 @@ def paint_world(scenario, binding, coast, level, locale):
         x, y = zone["centre"]
         if x <= coast[min(size - 1, max(0, round(y)))] + 2:
             raise ValueError("receiving court would be in coastal water")
-        marker = scenario.unit_manager.add_unit(
-            player=1, unit_const=OtherInfo.FLAG_A.ID, x=x, y=y
-        )
-        label = scenario.trigger_manager.add_trigger(
-            "cdf-label-" + zone["id"], enabled=True, looping=False
-        )
-        label.new_effect.change_object_name(
-            selected_object_ids=marker.reference_id, message=zone["label"][locale]
-        )
-        scenario.unit_manager.add_unit(
-            player=1, unit_const=OtherInfo.MAP_REVEALER.ID, x=x, y=y
-        )
+    provenance = RECEIVING_WAYFINDING(scenario, binding["zones"], locale)
     # Difficulty changes disclosed assistance, not movement, damage or deadlines.
     if level == "easy":
         for corridor in corridors:
@@ -219,6 +211,7 @@ def paint_world(scenario, binding, coast, level, locale):
                 + corridor["widthTiles"] / 2
             ):
                 raise ValueError("corridor footprint approaches coastal water")
+    return provenance
 
 
 def build_variant(root, dossier, binding, coast, output, locale, level, version):
@@ -237,7 +230,7 @@ def build_variant(root, dossier, binding, coast, output, locale, level, version)
         p.disabled_buildings = sorted({u.ID for u in BuildingInfo if u.ID >= 0})
         p.disabled_units = sorted({u.ID for u in UnitInfo if u.ID >= 0})
         p.disabled_techs = sorted({u.ID for u in TechInfo if u.ID >= 0})
-    paint_world(scenario, binding, coast, level, locale)
+    receiving_wayfinding = paint_world(scenario, binding, coast, level, locale)
     result = controller["compile_delivery_controller"](
         scenario, originals, dossier, binding, locale
     )
@@ -296,6 +289,7 @@ def build_variant(root, dossier, binding, coast, output, locale, level, version)
             "initialUnitCountIncludingMarkers": len(
                 scenario.unit_manager.get_all_units()
             ),
+            "receivingWayfindingProvenance": receiving_wayfinding,
             "status": "private native delivery prototype; not campaign release",
             "historicalApproval": False,
             "generalComposedExportEnabled": False,

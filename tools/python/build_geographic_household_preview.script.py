@@ -45,6 +45,9 @@ BASE_FACTORY = runpy.run_path(str(HERE / "private_household_base.factory.py"))
 ARTIFACT_SERVICE = runpy.run_path(str(HERE / "private_native_artifact.service.py"))
 FACTORY = runpy.run_path(str(HERE / "native_scenario.factory.py"))
 ADAPTER = runpy.run_path(str(HERE / "native_household.adapter.py"))
+RECEIVING_WAYFINDING = runpy.run_path(
+    str(HERE / "private_wayfinding.renderer.py")
+)["render_receiving_wayfinding"]
 
 SYNTHETIC_NOTICE = (
     "explicitly nonhistorical synthetic geographic test fixture compiled "
@@ -477,6 +480,9 @@ def build_variant(
     result = ADAPTER["compile_household_controller"](
         scenario, units, dossier, binding, locale
     )
+    wayfinding_provenance = RECEIVING_WAYFINDING(
+        scenario, binding["zones"], locale
+    )
     label_preview_scenario(scenario, dossier, locale, notice)
     xs_source = result.pop("xsSource")
     artifact = ARTIFACT_SERVICE["write_and_verify_artifact"](
@@ -519,6 +525,7 @@ def build_variant(
             "nativeHeightCells": validated["frameSize"] ** 2,
         },
         "overrideProvenance": derived["binding"]["privatePreviewOverrides"],
+        "receivingWayfindingProvenance": wayfinding_provenance,
         "layoutEvidence": derived["layoutEvidence"],
         "corridorAudit": _audit_summary(derived["corridorAudit"]),
         "nativeTerrainWritten": True,
