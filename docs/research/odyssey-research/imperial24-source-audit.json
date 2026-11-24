@@ -1,0 +1,40 @@
+{
+  "order": 24,
+  "episodeId": "24-night-civilian-withdrawal-alexandria",
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "sourceCoverage": [
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/2814.htm",
+      "passage": "Athanasius Apologia de Fuga24–25; §6 read only to distinguish later sequence",
+      "coverageActuallyRead": "Architect directly read24–25 with surrounding displayed account and6 as a contrast, not full critical Greek edition.",
+      "limitations": "Apologetic self-defense and providential framing are attributed. More-than5000 is source assertion, not independently verified or native population requirement. No verbatim dialogue or theological damage modifier.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.newadvent.org/fathers/2820.htm",
+      "passage": "Anonymous Historia Acephala IV.5 and V.6",
+      "coverageActuallyRead": "Architect directly read named church/night13before14Mechir, subsequent church transfer and George357arrival.",
+      "limitations": "Fragment/old edition conversions, no certified civil-calendar conversion or excavated356church parcel. June356church transfer/George357 differ from initialFebruary night.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    },
+    {
+      "consultedUrl": "https://www.cealex.org/evenement/cartalex-is-online/",
+      "passage": "CEAlex CartAlex layer dates and institutional GIS announcement",
+      "coverageActuallyRead": "Architect read announcement text and metadata, not interactive map pixels.",
+      "limitations": "Multi-date controls do not certify Theonas address,356streets/coastline or reuse license. No institutional map copied.",
+      "consultationDate": "2026-10-14",
+      "approval": "independent review pending"
+    }
+  ],
+  "historicalCorrection": {
+    "date": "2026-10-14",
+    "author": "gpt-6",
+    "approval": "independent review pending",
+    "reason": "Anonymous chronicle, not Athanasius autobiography; do not conflate initialSyrianus night assault with later church transfer or George357. Apologia§6 contains a later sequence; use24–25 for flight. PreserveMechir13/14 rather than unverified Gregorian conversion. Fictional civilian6of8withdrawal uses direct identities; all-entity ordered-departure would soft-lock after two permitted losses and is deliberately not used."
+  },
+  "nativeAndBalance": "not approved"
+}

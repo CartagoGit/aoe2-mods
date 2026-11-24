@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 855" role="img" aria-label="A Different Dawn: geographic design controls">
+<rect width="1080" height="855" fill="#f5f0df"/>
+<text x="40" y="35" font-family="sans-serif" font-size="23">A Different Dawn</text>
+<text x="40" y="61" font-family="sans-serif" font-size="14">Mediolanum and Lombard plain · 320 × 320 tiles · 303–313 CE</text>
+<rect x="40" y="85" width="700" height="700" fill="#dfdfba" stroke="#5c6542"/>
+<path d="M 110 85 V785 M40 155 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 180 85 V785 M40 225 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 250 85 V785 M40 295 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 320 85 V785 M40 365 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 390 85 V785 M40 435 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 460 85 V785 M40 505 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 530 85 V785 M40 575 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 600 85 V785 M40 645 H740" stroke="#c7c8a7" fill="none"/>
+<path d="M 670 85 V785 M40 715 H740" stroke="#c7c8a7" fill="none"/>
+<polyline points="391.25,454.64 391.25,454.64 383.75,301.08" fill="none" stroke="#94542f" stroke-width="4"/>
+<polyline points="391.25,454.64 408.81,472.19 391.25,454.64 383.75,301.08" fill="none" stroke="#7463a3" stroke-width="4"/>
+<circle cx="408.81" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="408.81" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="408.81" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="408.81" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="401.30" cy="301.08" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="373.70" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="408.81" cy="454.64" r="6" fill="#43714b" fill-opacity=".65"/>
+<circle cx="391.25" cy="454.64" r="7" fill="#2e3740"/>
+<text x="401.25" y="445.64" font-family="sans-serif" font-size="16">1</text>
+<circle cx="383.75" cy="301.08" r="7" fill="#2e3740"/>
+<text x="393.75" y="292.08" font-family="sans-serif" font-size="16">2</text>
+<circle cx="458.86" cy="568.92" r="7" fill="#2e3740"/>
+<text x="468.86" y="559.92" font-family="sans-serif" font-size="16">3</text>
+<circle cx="391.25" cy="454.64" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="391.25" cy="454.64" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<circle cx="383.75" cy="301.08" r="24" fill="none" stroke="#ab522c" stroke-width="2"/>
+<text x="770" y="105" font-family="sans-serif" font-size="14">N ↑ · East →</text>
+<text x="770" y="129" font-family="sans-serif" font-size="14">Solid blue: modern Natural Earth</text>
+<text x="770" y="153" font-family="sans-serif" font-size="14">Dashed blue: schematic water control</text>
+<text x="770" y="177" font-family="sans-serif" font-size="14">Brown: main route proposal</text>
+<text x="770" y="201" font-family="sans-serif" font-size="14">Purple: relief route proposal</text>
+<text x="770" y="225" font-family="sans-serif" font-size="14">Circles: objective districts</text>
+<text x="770" y="249" font-family="sans-serif" font-size="14">Green dots: optional task controls</text>
+<text x="770" y="273" font-family="sans-serif" font-size="14">Routes require terrain/footprint QA</text>
+<text x="770" y="297" font-family="sans-serif" font-size="14">Ancient coast/camps remain qualified</text>
+<text x="770" y="321" font-family="sans-serif" font-size="14">Reference plan, not a native game map</text>
+<text x="770" y="395" font-family="sans-serif" font-size="13">1: Mediolanum civic core</text>
+<text x="770" y="415" font-family="monospace" font-size="12">[9.186, 45.464] → [160.07, 168.45]</text>
+<text x="770" y="458" font-family="sans-serif" font-size="13">2: Northern approach</text>
+<text x="770" y="478" font-family="monospace" font-size="12">[9.18, 45.55] → [156.65, 98.47]</text>
+<text x="770" y="521" font-family="sans-serif" font-size="13">3: Southeast road</text>
+<text x="770" y="541" font-family="monospace" font-size="12">[9.24, 45.4] → [190.88, 220.53]</text>
+<text x="40" y="821" font-family="sans-serif" font-size="13">WGS84 bounds [9.02, 45.3, 9.35, 45.65] · cosine-corrected, padded square; positions approximate</text>
+</svg>

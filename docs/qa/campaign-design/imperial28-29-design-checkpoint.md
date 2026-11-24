@@ -1,0 +1,19 @@
+# Imperial episodes 28–29 design checkpoint
+
+15 October2026.59draft dossiers,2,427screens,363secondary tasks,32additional local research assets;214selections without dossiers. No historical, native or game approval.
+
+28 separates Thessalonican issue from the Constantinopolitan addressee and normative language.240F280W40G total; three contexts arrive before two paid derivations, then each original courier has its own local reception/departure/return. Eight optional tasks are independent. The municipal2013PDF was temporarily consulted, not redistributed; physical12=printed18–19Roman map. Two present-day Commons originals were downloaded, inspected by collector and architect, hashed, credited and stored unchanged underCCBYSA4.0. They do not reconstruct380.
+
+29 separates contemporary working contexts of faith, administration and honor.300F300W30G60S total; three distinct funded indexes and assigned original clerks reach different receivers. Six optional tasks. CanonIII cross-check found the short NewAdvent3808 page lacks the honor text and numbers Maximus as3; CCEL CanonIII supplies the proper honor provision.382letter/later creed attestation are dated separately. Marcus47 has fictional local ordinary life and received council accounts, no future451knowledge. Full historical/editorial review remains pending.
+
+The finale preserves canonical progress keys and successor identities. It waits for one valid perspective after main goals, retains prior routes, writes only at victory, supports cancel/save/reentry and shows exact successor title/publicID plus381→337warning. No autolaunch or predecessor lock. Native variable/menu implementation and game tests remain pending.
+
+Actual rasters of both400tile schematics were viewed. The root frame audit records all main/optional centers, zone radii and full corridor widths. Peer28notes seven pickup identities outside nominal hub circles and three intentionally coincident optional receiving circles; circles are activity markers, not actor containment. Separate visit, guide arrival and repair/payment ledgers prevent cross-completion. SVG road strokes show centerlines, not road masks. Ancient shore, slope/DEM, footprints and pathfinding are unverified.
+
+Static solvency and finite optional ledgers pass design verification. No-enemy/no-deadline chapters require actual active/idle and useful-choice testing; reduced workers alone are not approved difficulty. Generic duration ranges are placeholders;29is a reflective coda, not an invented final siege.363–380coverage remains an architecture gate, with source corrections preserved. The candidate collection previously mixed Nectarius/Timothy of CTh16.1.3 into16.1.2 and misconverted Socrates’ succession synchronism; rejected originals remain traceable alongside corrections.
+
+Independent review27 is preserved at its actual4031516scope.28has a mechanical peer map/objective audit.29has an independent snapshot review: the post-victory instruction P2 was corrected and rechecked; no historical, native or global approval. Full validation results will be appended only after execution. No adapter code was changed in this design checkpoint.
+
+Verification executed: regeneration and design integrity passed at59/273drafts. `bun run validate` exited0 with102/102Bun tests and389expectations, documentation/campaign checks passed. `python3 tools/design/test_design.py` passed56/56 in19.974seconds. No adapter source changed; no export or game result is claimed by this design-only checkpoint.
+
+Independent29 review: corrected JSON snapshotSHA256 d555e0c229895e8a0a1e14db5e843a99e627e246bf0dc9878e05b242a714d988, own retry validate102/389exit0 after a documented stale-generation race on its first attempt. Actual route menu/progress operations remain pending; fixture execution covers the main reference contract only.

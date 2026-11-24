@@ -1,0 +1,102 @@
+{
+  "dossierId": "16-witness-record-comparison-tyre",
+  "order": 16,
+  "architectApproval": false,
+  "scope": "Read-only collection; no repo/Git changes or architecture decision.",
+  "selectionWindow": "335 CE; Tyre council focus.",
+  "findings": [
+    "Eusebius VC IV.41–42 describes Tyre council and imperial letter; IV.43–47 describes separate Jerusalem dedication. Source is imperial panegyric.",
+    "Athanasius §§71–84 transmits partisan procedural complaints; §§77–79 are Egyptian bishops protests, §84 is the Jerusalem dedication/reception letter. Corrects initial delegated82–83 locator.",
+    "Eusebius narrates the Tyre council and then the Jerusalem dedication in tricennalia context (IV.40–47). They are separate events and locations; do not imply simultaneity or a precise interval.",
+    "No source consulted locates the council at a specific Tyrian building or on a beach. The title 'on the Shore' is not evidence for waterfront placement.",
+    "Tyre's ancient island/causeway/tombolo and harbors changed over time due to the Hellenistic causeway, sedimentation, harbor change and late Roman subsidence. Modern coast and archaeological property boundary are not a literal 335 shoreline."
+  ],
+  "sources": [
+    {
+      "urlCandidate": "https://www.newadvent.org/fathers/25023.htm",
+      "urlActuallyConsulted": "https://www.newadvent.org/fathers/25024.htm",
+      "author": "Eusebius of Caesarea; translation in Philip Schaff, NPNF Series II, vol. 1.",
+      "publicationDate": "Ancient 4th-century work; English translation 1890; online transcription current.",
+      "exactLocator": "VC IV.40–47; Tyre41–42, Jerusalem43–47",
+      "coverageActuallyRead": "Relevant chapter text read; no figures.",
+      "sourceBias": "Panegyrical and anti-opponent framing; source gives city-level location, no exact venue."
+    },
+    {
+      "urlCandidate": "https://www.ewtn.com/catholicism/library/apology-against-the-arians-11607",
+      "urlActuallyConsulted": "https://www.ewtn.com/catholicism/library/apology-against-the-arians-11607",
+      "author": "Athanasius of Alexandria, Apologia contra Arianos; NPNF English translation hosted by EWTN.",
+      "publicationDate": "Ancient work composed after events, conventionally c.350; NPNF translation 1890; webpage undated.",
+      "exactLocator": "§§71–84; Jerusalem letter in84, not82–83",
+      "coverageActuallyRead": "Online text §§71–83 read, including embedded documents; no images or captions.",
+      "sourceBias": "Athanasius was an embattled participant and advocate; allegations need comparison."
+    },
+    {
+      "urlCandidate": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1890475/",
+      "urlActuallyConsulted": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1890475/",
+      "author": "Marriner et al., Holocene morphogenesis of Alexander the Great's isthmus at Tyre in Lebanon.",
+      "publicationDate": "PNAS104(22):9218–9223,2007; DOI10.1073/pnas.0611325104; not Quaternary Science Reviews",
+      "exactLocator": "Abstract and introductory discussion on island/causeway/tombolo/coastal evolution.",
+      "coverageActuallyRead": "Abstract/introduction text exposed on PMC read; no figure pixels inspected.",
+      "sourceBias": "Geoarchaeological reconstruction, not council-location evidence."
+    },
+    {
+      "urlCandidate": "https://whc.unesco.org/en/list/299/",
+      "urlActuallyConsulted": "https://whc.unesco.org/en/list/299/",
+      "author": "UNESCO World Heritage Centre, Tyre property page.",
+      "publicationDate": "Inscribed 1984; page current.",
+      "exactLocator": "Property description, read with https://whc.unesco.org/en/list/299/maps/ metadata.",
+      "coverageActuallyRead": "Description and map-page titles/metadata read; image pixels not inspected.",
+      "sourceBias": "Heritage overview, not335 plan. Page-description text explicitlyCCBYSAIGO3; individual image/map rights separate."
+    }
+  ],
+  "chronologyGuardrail": "Council and Jerusalem dedication are separate events; attribute narrative sequence to Eusebius, do not sharpen it into exact simultaneous timing.",
+  "geographyGuardrail": "Tyre city-level location is supported; waterfront/building-specific venue unestablished. Modern coastlines, archaeological-park boundaries and medieval fabric are anachronistic controls for 335.",
+  "imageInspection": {
+    "textRead": true,
+    "captionsRead": true,
+    "imagePixelsInspected": false,
+    "mapPixelsInspected": false
+  },
+  "rights": "UNESCO map pages showed no explicit open license; no map or image was copied.",
+  "architectFollowUp": {
+    "date": "2026-10-14",
+    "approval": "independent review pending",
+    "sourceCoverage": [
+      {
+        "consultedUrl": "https://www.newadvent.org/fathers/25024.htm",
+        "passage": "VC IV.40–47; Tyre41–42, Jerusalem43–47",
+        "coverageActuallyRead": "Architect read displayed chapters40–47 in the old English translation.",
+        "limitations": "Panegyric, imperial compulsion and settlement rhetoric are source-attributed; no neutral verdict, excavated venue or exact interval to Jerusalem. Marianus reception and Eusebius orations belong to Jerusalem, not Tyre.",
+        "consultationDate": "2026-10-14",
+        "approval": "independent review pending"
+      },
+      {
+        "consultedUrl": "https://www.ewtn.com/catholicism/library/apology-against-the-arians-11607",
+        "passage": "Athanasius Apologia contra Arianos §§71–84",
+        "coverageActuallyRead": "Architect read selected span71–84, including completed73 and80 gaps and the Jerusalem letter84; not the whole work.",
+        "limitations": "Retrospective advocate and embedded documents; accusations of coercion, falsification and motive are allegations, not an adjudicated game truth. Modern comparative criticism is never a physical335 book.",
+        "consultationDate": "2026-10-14",
+        "approval": "independent review pending"
+      },
+      {
+        "consultedUrl": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Levant/Tyr/Tyr-Marriner2007.pdf",
+        "passage": "Marriner, Morhange and Meulé2007, PNAS104(22):9218–9223, DOI10.1073/pnas.0611325104; selected introduction, subsidence discussion, conclusion and fig.6",
+        "coverageActuallyRead": "Architect read selected text and actually inspected raster of printed9222 (PDF fifth page), figures5–6. Full six-page PDF only temporary, not project asset.",
+        "limitations": "Fig.6 contrasts332BCE and2000CE, not335CE. Sedimentation and late-Roman subsidence preclude transplanting either shore. No council-venue evidence; ©NAS2007, no explicit free-reuse license identified.",
+        "consultationDate": "2026-10-14",
+        "approval": "independent review pending"
+      },
+      {
+        "consultedUrl": "https://whc.unesco.org/en/list/299/",
+        "passage": "Tyre property description and modern point metadata",
+        "coverageActuallyRead": "Architect read property overview, not an ancient335 plan or map image.",
+        "limitations": "Headland and mainland archaeological areas identify broad context only. Page text hasCCBYSAIGO3 terms; map/individual-image rights require separate proof. Modern site point is not a council address.",
+        "consultationDate": "2026-10-14",
+        "approval": "independent review pending"
+      }
+    ],
+    "figurePixelsInspected": "Marriner printed9222 figures5–6 in temporary PDF raster;332BCE/2000CE not335CE",
+    "rights": "No academic figure/PDF added to project; no identified explicit free-reuse grant. No UNESCO map copied.",
+    "decision": "Six fictional eastern-mainland courts; no council venue, required causeway, theological truth primitive or relocated Jerusalem event."
+  }
+}

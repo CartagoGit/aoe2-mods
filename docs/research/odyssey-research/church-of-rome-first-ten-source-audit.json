@@ -1,0 +1,141 @@
+{
+  "campaignId": "church-of-rome",
+  "auditScope": "First ten episode selections in collection order; source verification only, not design approval.",
+  "architectApproval": false,
+  "episodes": [
+    {
+      "id": "01-refuge-and-petition-reception-rome-ostia",
+      "orderAtCollection": 1,
+      "selectedDate": "339–340 CE (selection; reconstructed date)",
+      "candidateUrl": "https://www.newadvent.org/fathers/2813.htm",
+      "consultedUrl": "https://www.newadvent.org/fathers/2813.htm",
+      "sourceAndBias": "Athanasius, Apologia ad Constantium §4, first-person apologetic written in defense against accusations; self-interested but direct for his itinerary.",
+      "coverageActuallyRead": "Opened §4 (web lines 26–35): Athanasius says he left Alexandria only for Rome, presented his case to the Church there, then after three years was summoned to Milan; later travelled through Gaul to Sardica. Read the selected URL passage itself, not merely a contents page.",
+      "supportedClaim": "Athanasius went from Alexandria to Rome and presented his case to the Roman church. The same passage supports later Milan/Gaul/Sardica travel.",
+      "dateAndPlaceLimits": "§4 gives no calendar year for arrival in Rome. 339–340 is a modern chronological reconstruction, not an explicit date in this passage. It does not name Julius as the person who received him in this specific passage. Rome is supported; no street, church building, or route within the city is.",
+      "qualification": "Keep the date qualified and do not turn the reported petition into a precise arrival scene or attributed private dialogue."
+    },
+    {
+      "id": "02-separate-delegation-logistics-sardica",
+      "orderAtCollection": 2,
+      "selectedDate": "343 CE; date disputed",
+      "candidateUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "consultedUrl": "https://www.newadvent.org/fathers/3815.htm",
+      "sourceAndBias": "New Advent page contains a 19th-century Catholic scholarly introduction to the Council of Sardica and its canons; the date discussion is secondary scholarship, not a contemporary record.",
+      "coverageActuallyRead": "Previously consulted page introduction lines 10–19: date discussion and a route summary; the underlying chronicles were not read in that pass. This audit rechecked the primary itinerary in Athanasius, Apologia ad Constantium §4, at https://www.newadvent.org/fathers/2813.htm, lines 26–35.",
+      "supportedClaim": "The intro reports competing chronologies, preferring 343/344 over older 347 dates; Athanasius §4 directly says he went from Milan into Gaul and from there to Sardica. Council sources describe separate eastern and western proceedings, but exact faction logistics require consulting the relevant acts/canons, not relying on the intro alone.",
+      "dateAndPlaceLimits": "Do not present 343 as settled; c.343/344 is safer. The selected wording that he 'leaves Rome for Sardica' compresses his own account: he was summoned from Rome to Milan, went to Gaul, then travelled to Sardica. No precise modern battlefield/map footprint is implied by the source.",
+      "qualification": "Treat delegation movements as attributed historical reports; this audit did not verify each participant's route independently."
+    },
+    {
+      "id": "03-exile-supply-and-correspondence-beroea-thrace",
+      "orderAtCollection": 3,
+      "selectedDate": "355–357 CE",
+      "candidateUrl": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+      "consultedUrl": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11",
+      "sourceAndBias": "Sozomen, Ecclesiastical History IV.11, a fifth-century retrospective church history; the displayed English is the 19th-century Nicene and Post-Nicene Fathers translation. The author explicitly rearranges chronology for clarity.",
+      "coverageActuallyRead": "Read chapter heading and lines 103–113, including Sozomen's chronology caveat and account of Liberius' banishment to Beroea in Thrace, refusal to comply, and the alleged communion-with-Athanasius pretext.",
+      "supportedClaim": "Sozomen reports that Constantius exiled Liberius to Beroea after he refused doctrinal conformity; it says the Athanasius communion issue is alleged as another pretext.",
+      "dateAndPlaceLimits": "This passage does not itself provide the selected 355–357 year range. It explicitly says the events are related collectively rather than in strict chronological sequence. Beroea is identified as in Thrace, but no route, residence, supply network, or local physical site is established.",
+      "qualification": "State motive/pretext as Sozomen's report, not independently proven imperial intent."
+    },
+    {
+      "id": "04-draft-and-delegate-network-rimini",
+      "orderAtCollection": 4,
+      "selectedDate": "359 CE",
+      "candidateUrl": "https://www.newadvent.org/fathers/28153.htm",
+      "consultedUrl": "https://www.newadvent.org/fathers/2817.htm",
+      "sourceAndBias": "Athanasius, De Synodis, a contemporary Nicene polemical treatise; New Advent's English text is a later translation/editorial presentation.",
+      "coverageActuallyRead": "Read De Synodis §§1–2 and §§8–10 on the page at the corrected URL. It describes councils at Ariminum in Italy and Seleucia in Isauria, the large Ariminum attendance, divisions, and the presentation of a formula to Constantius.",
+      "supportedClaim": "Athanasius attests a major council at Ariminum and a separate council at Seleucia in 359, and polemically describes the debate and pressure surrounding the creed/formula.",
+      "dateAndPlaceLimits": "The selection URL ending 28153 was not the correct text endpoint; use 2817. The source is partisan and does not establish that all bishops agreed or that a single unified 'draft and delegate network' operated as a neutral administration. Place is Ariminum/Rimini at city scale only; no exact council building or travel route is established.",
+      "qualification": "Attribute the account to Athanasius and avoid treating his theological characterization as neutral consensus."
+    },
+    {
+      "id": "05-neutral-civilian-extraction-rome-ostia",
+      "orderAtCollection": 5,
+      "selectedDate": "366–367 CE (selection)",
+      "candidateUrl": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=523&id=6",
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/27%2A.html",
+      "sourceAndBias": "Ammianus Marcellinus, Res Gestae 27.3.12–15, a near-contemporary non-Christian historian. His account is rhetorically sharp and concludes by ridiculing clerical luxury; it is not a neutral incident report.",
+      "coverageActuallyRead": "Read §§12–15 (web lines 53–57): rival supporters fought with deaths; Damasus prevailed; Ammianus reports 137 corpses found in one day in the basilica Sicininus; he then launches into a satirical aside about clerical wealth. The Presbyters Project candidate was not used as the primary factual basis in this check.",
+      "supportedClaim": "Ammianus reports violent factional conflict in Rome over the bishopric, Damasus' victory, and mass fatalities in the basilica Sicininus.",
+      "dateAndPlaceLimits": "The text says 'at this time or a little earlier' for some context, not an exact dated incident day. The 137 figure is Ammianus' report. It does not identify the basilica with a precise present-day footprint, name neutral civilians to extract, or document an evacuation/rescue mission.",
+      "qualification": "'Neutral civilian extraction' is a proposed gameplay framing and is not an event attested by this source; do not present it as history."
+    },
+    {
+      "id": "06-petition-and-accountability-records-milan",
+      "orderAtCollection": 6,
+      "selectedDate": "390 CE; Thessalonica massacre is reported from Milan",
+      "candidateUrl": "https://www.newadvent.org/fathers/340951.htm",
+      "consultedUrl": "https://www.newadvent.org/fathers/340951.htm",
+      "sourceAndBias": "Ambrose, Letter 51, a contemporary episcopal letter to Theodosius; it is an exhortation by a participant with a clear moral and ecclesiastical agenda. Hosted in the 1896 Nicene and Post-Nicene Fathers translation.",
+      "coverageActuallyRead": "Read the page heading and letter §§1–8, 11–15 (web lines 8–19 and 22–40): Ambrose says a grave killing at Thessalonica occurred, he had petitioned against it, repentance was necessary, and he would not offer the sacrifice in the emperor's presence. The letter describes his own absence on the emperor's return to Milan.",
+      "supportedClaim": "Ambrose confronted Theodosius by letter after the massacre at Thessalonica and says he could not perform the Eucharistic sacrifice with the emperor present before penitence.",
+      "dateAndPlaceLimits": "The letter text does not state the year 390 in the passage; that date is supplied by modern chronology. Thessalonica is the reported massacre location; Milan is the letter/imperial-return context. The text does not describe a documented physical doorway confrontation or a precise church location. Ambrose's dream is his own religious testimony, not independently verifiable fact.",
+      "qualification": "Avoid dramatizing a physical barring scene as though Letter 51 states it; do not narrate private motives or dream as neutral fact."
+    },
+    {
+      "id": "01-bread-beyond-the-gates",
+      "orderAtCollection": 7,
+      "selectedDate": "410 CE",
+      "candidateUrl": "https://www.newadvent.org/fathers/120101.htm",
+      "consultedUrl": "https://www.newadvent.org/fathers/120101.htm",
+      "sourceAndBias": "Augustine, City of God I.1 and I.7, written after the sack of Rome as a Christian apologetic argument. It explicitly interprets events through Christian providence.",
+      "coverageActuallyRead": "Read I.4–8 (web lines 76–107), including I.7: Augustine says the largest churches were set aside for people given quarter, none were killed or forcibly dragged from them, and many were led there by enemies and freed. This is broader coverage than the selection citation I.1 alone.",
+      "supportedClaim": "Augustine reports sanctuary in major churches during the sack and claims refuge-seekers were spared there; he also says some captives were returned to churches and freed.",
+      "dateAndPlaceLimits": "Rome and the sack are the context; Augustine gives no specific church route, named family, supply convoy, or street-level footprint in these chapters. His assertions about universal protection and the cause of clemency are apologetic claims, not independent quantitative verification.",
+      "qualification": "Attribute the rescue claim to Augustine and avoid turning it into a documented named extraction or exact map path."
+    },
+    {
+      "id": "08-administrative-transition-ravenna",
+      "orderAtCollection": 8,
+      "selectedDate": "476 CE in selection; exact deposition timing disputed",
+      "candidateUrl": "Britannica candidate listed in selection (not consulted in this audit)",
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2%2A.html",
+      "sourceAndBias": "Anonymus Valesianus II.37–38, a later anonymous narrative preserved in a compilation, not a contemporary administrative record. The accessible English is Bill Thayer's presentation/translation.",
+      "coverageActuallyRead": "Read §§37–38 (web lines 22–25): Orestes is killed at Placentia, Paulus near Classis outside Ravenna, and Odoacer enters Ravenna, deposes Augustulus, spares him, grants an income, and sends him to Campania. Also read a repository abstract for Marco Cristini, 'When did Odoacer depose Romulus?', Latomus 83 (2024), pp. 262–270; article full text was not accessible here.",
+      "supportedClaim": "The Valesian narrative supports Odoacer's takeover at Ravenna and Augustulus' removal/exile to Campania, without an exact day. Cristini's abstract argues the traditional 4 September date for formal deposition should be questioned and suggests a gradual transition in late 476.",
+      "dateAndPlaceLimits": "The modern abstract says Ravenna was likely taken on or shortly after 4 September but formal abdication could have followed weeks later; this is an abstract-only reading, not full-paper verification. Do not equate 476 with an instantaneous, universally recognized 'fall of Rome' or claim a detailed constitutional transition from this passage. Ravenna, Placentia, Classis and Campania are named, but no precise building footprint is supplied.",
+      "qualification": "Keep 476 as a broad transition date and the deposition timing qualified. The selected Britannica candidate was not accessed; do not cite it as checked."
+    },
+    {
+      "id": "09-civilian-record-preservation-ravenna",
+      "orderAtCollection": 9,
+      "selectedDate": "493 CE",
+      "candidateUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2%2A.html",
+      "consultedUrl": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2%2A.html",
+      "sourceAndBias": "Anonymus Valesianus II.55–57, retrospective anonymous narrative, likely compiled in the sixth century; its account is concise and not an eyewitness deposition record.",
+      "coverageActuallyRead": "Earlier source check read §§55–57 on the same page: Theoderic enters Ravenna; after several days he personally kills Odoacer in a grove; the following passage reports killings of Odoacer's household/remaining forces and later kingship context. Current page was also opened through §38 for the preceding entry.",
+      "supportedClaim": "The narrative reports Theoderic's entry into Ravenna and Odoacer's killing there in 493; this supports a reported political takeover and killing, not an abstract 'civilian record preservation' operation.",
+      "dateAndPlaceLimits": "The source is retrospective and gives a narrative sequence, not a precise verified modern location for the grove. It does not establish a neutral archival-preservation mission or a formal instant creation of a constitutional 'Kingdom of Italy'. Avoid rewarding the killing or inventing exact site placement.",
+      "qualification": "Keep killing as attributed report and distinguish it from any fictional noncombatant/records task."
+    },
+    {
+      "id": "10-correspondence-consignment-rome-ostia",
+      "orderAtCollection": 10,
+      "selectedDate": "494 CE",
+      "candidateUrl": "https://web.pdx.edu/~ott/Gelasius/index.html (design's PDF candidate was not the consulted text)",
+      "consultedUrl": "https://web.pdx.edu/~ott/Gelasius/index.html",
+      "additionalConsultedUrl": "https://thejosias.com/2020/03/30/famuli-vestrae-pietatis/",
+      "sourceAndBias": "Gelasius I, Famuli vestrae pietatis (Duo sunt), a contemporary papal letter to Anastasius in the Acacian Schism. Portland State University's page gives John S. Ott's explicitly abridged translation based on Thiel 1867 and contextual cautions; The Josias provides a full collaborative translation but its editorial framing is explicitly Catholic-integralist.",
+      "coverageActuallyRead": "Portland State page: read translation/editorial notes lines 0–17 and letter §1 lines 21–25; this page identifies the letter as 494 and warns against reading later constitutional significance directly back into its immediate context. The Josias: read intro and letter §§1–4, web lines 102–122; §2 directly articulates 'sacred authority of pontiffs' and 'royal power' and the accountability claim.",
+      "supportedClaim": "The letter is addressed by Gelasius to Anastasius, opens in response to returned legates and the emperor's inquiry about a letter, and §2 argues that the world is governed by priestly sacred authority and royal power, with priests answerable for kings before God.",
+      "dateAndPlaceLimits": "494 is given by the university source heading/editorial framing, not the quoted opening itself. The letter is an advocacy document during an active church-imperial schism; later use as a foundational papal-imperial doctrine is reception history, not proof that the text settled a universal constitutional arrangement in 494. The correspondence connects Rome and Constantinople; it establishes no physical consignment or route to Ostia.",
+      "qualification": "Do not turn the letter's argument into neutral law or a documented material shipment. The selection's PDF candidate was not opened; cite the consulted source/edition accurately."
+    }
+  ],
+  "sources": [
+    {"url": "https://www.newadvent.org/fathers/2813.htm", "title": "Athanasius, Apologia ad Constantium, §4", "consultedScope": "§4 lines 26–35: Rome petition and itinerary through Milan, Gaul and Sardica; first-person apologetic."},
+    {"url": "https://www.newadvent.org/fathers/3815.htm", "title": "Council of Sardica / New Advent source page", "consultedScope": "Previously checked introduction lines 10–19 for date debate and itinerary; 19th-century scholarly introduction, not underlying primary acts in that scope."},
+    {"url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_II/Volume_II/Sozomen/Book_IV/Chapter_11", "title": "Sozomen, Ecclesiastical History IV.11", "consultedScope": "Chapter heading and narrative lines 103–113; fifth-century retrospective and explicit chronology caveat."},
+    {"url": "https://www.newadvent.org/fathers/2817.htm", "title": "Athanasius, De Synodis", "consultedScope": "§§1–2 and 8–10; councils at Ariminum/Seleucia and polemical account of proceedings."},
+    {"url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/27%2A.html", "title": "Ammianus Marcellinus, Res Gestae 27.3.12–15", "consultedScope": "§§12–15 lines 53–57; factional violence, reported deaths, basilica Sicininus and Ammianus' satirical framing."},
+    {"url": "https://www.newadvent.org/fathers/340951.htm", "title": "Ambrose, Letter 51", "consultedScope": "Heading and §§1–8, 11–15; contemporary letter, penitence and Eucharistic refusal; translated in NPNF 1896."},
+    {"url": "https://www.newadvent.org/fathers/120101.htm", "title": "Augustine, City of God I.4–8", "consultedScope": "I.4–8 lines 76–107; sanctuary claim and explicit Christian-apologetic interpretation."},
+    {"url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2%2A.html", "title": "Anonymus Valesianus II", "consultedScope": "II.37–38 lines 22–25 directly read for 476; II.55–57 read in prior source check for 493; later anonymous narrative."},
+    {"url": "https://flore.unifi.it/handle/2158/1394432", "title": "Marco Cristini, 'When did Odoacer depose Romulus? A Reappraisal of the Western Empire’s “Fall” in 476' (2024)", "consultedScope": "Repository abstract and bibliographic metadata only; full Latomus article was not available."},
+    {"url": "https://web.pdx.edu/~ott/Gelasius/index.html", "title": "Gelasius I, Letter to Anastasius (494), John S. Ott translation and contextual notes", "consultedScope": "Editorial notes and §1; explicitly abridged translation based on Thiel, with modern contextual cautions."},
+    {"url": "https://thejosias.com/2020/03/30/famuli-vestrae-pietatis/", "title": "Famuli vestrae pietatis, collaborative English translation", "consultedScope": "Letter §§1–4 plus editorial introduction; use primary-letter wording with explicit allowance for the site's ideological framing."}
+  ]
+}

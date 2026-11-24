@@ -1,0 +1,1273 @@
+{
+  "campaigns": [
+    {
+      "id": "faith-origins",
+      "events": [
+        {
+          "date": "c.49–50",
+          "event": "La asamblea de Jerusalén discute la admisión de gentiles y la circuncisión.",
+          "place": "Jerusalén",
+          "url": "https://academic.oup.com/edited-volume/37088/chapter/323184625",
+          "locator": "Oxford Handbook, Chronology; Hechos 15 / Gálatas 2",
+          "qualification": "La relación entre las versiones de Hechos y Pablo es debatida."
+        },
+        {
+          "date": "c.50–52",
+          "event": "Pablo establece una comunidad en Corinto y trabaja con Prisca y Aquila.",
+          "place": "Corinto, Grecia",
+          "url": "https://dcc.dickinson.edu/greek-new-testament/acts/18",
+          "locator": "Acts 18; ancla cronológica: inscripción de Galión en Delfos",
+          "qualification": "La fecha depende de reconstrucción; Hechos es narrativa teológica."
+        },
+        {
+          "date": "c.50–51",
+          "event": "Pablo escribe 1 Tesalonicenses, uno de los textos cristianos conservados más tempranos.",
+          "place": "Corinto (probable)",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford, New Testament Christianity in the Roman World, abstract consulted",
+          "qualification": "Ciudad de composición probable, no segura."
+        },
+        {
+          "date": "c.54–55",
+          "event": "La carta a los Gálatas evidencia disputa sobre identidad, ley y pertenencia gentil.",
+          "place": "Éfeso o Macedonia, incierto",
+          "url": "https://www.bibleodyssey.org/articles/galatians/",
+          "locator": "Society of Biblical Literature, Galatians overview",
+          "qualification": "Lugar y fecha dependen de la hipótesis sobre destinatarios."
+        },
+        {
+          "date": "c.54–55",
+          "event": "Pablo escribe 1 Corintios y responde a conflictos y prácticas de una comunidad urbana diversa.",
+          "place": "Éfeso",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford abstract; 1 Corinthians 1–16",
+          "qualification": "Fecha/lugar convencionales, discutibles."
+        },
+        {
+          "date": "c.56–58",
+          "event": "Pablo escribe Romanos y describe una comunidad que no fundó.",
+          "place": "Corinto (probable)",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford abstract; Romans 16",
+          "qualification": "La fecha y ubicación se reconstruyen por indicios internos."
+        },
+        {
+          "date": "c.57–60",
+          "event": "Pablo es detenido tras tensiones en Jerusalén y apela al emperador según Hechos.",
+          "place": "Jerusalén/Cesarea",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Acts+21",
+          "locator": "Acts 21–26, texto antiguo consultable",
+          "qualification": "Relato de Hechos no equivale a registro judicial independiente."
+        },
+        {
+          "date": "c.60–62",
+          "event": "La correspondencia de Pablo desde prisión circula entre comunidades, según cartas disputadas.",
+          "place": "Cesarea o Roma",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford abstract; cartas de prisión",
+          "qualification": "Autoría/lugar varían según carta y posición académica."
+        },
+        {
+          "date": "64",
+          "event": "Tras el incendio de Roma, Nerón castiga a cristianos en la ciudad, según Tácito.",
+          "place": "Roma",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+          "locator": "Tacitus, Annals 15.44",
+          "qualification": "Testimonio romano retrospectivo y hostil; no persecución imperial general."
+        },
+        {
+          "date": "c.65–70",
+          "event": "Marcos transmite una narración sobre Jesús en contexto de guerra y crisis del Segundo Templo.",
+          "place": "Roma/Siria, debatido",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford abstract; Gospel of Mark",
+          "qualification": "Datación y lugar siguen debatidos."
+        },
+        {
+          "date": "70",
+          "event": "Las legiones romanas destruyen el Templo de Jerusalén tras la revuelta.",
+          "place": "Jerusalén",
+          "url": "https://www.livius.org/articles/place/jerusalem/jerusalem-70/",
+          "locator": "Josephus, Jewish War 6; síntesis de Livius",
+          "qualification": "Josefo participó en la guerra y escribe bajo patronazgo romano."
+        },
+        {
+          "date": "c.80–90",
+          "event": "Mateo y Lucas reelaboran tradiciones sobre Jesús para comunidades distintas.",
+          "place": "Siria/Galilea y región egea, hipótesis",
+          "url": "https://academic.oup.com/book/3544",
+          "locator": "Oxford abstract; evangelios",
+          "qualification": "No se fija el lugar como hecho."
+        },
+        {
+          "date": "c.90–100",
+          "event": "La Didaché conserva instrucción comunitaria, ética, bautismo y organización itinerante.",
+          "place": "Siria, probable",
+          "url": "https://www.earlychristianwritings.com/didache.html",
+          "locator": "Didache, texto y notas de datación",
+          "qualification": "Fecha y lugar amplios; texto compuesto."
+        },
+        {
+          "date": "c.95",
+          "event": "1 Clemente interviene en conflicto de liderazgo en Corinto desde la iglesia de Roma.",
+          "place": "Roma–Corinto",
+          "url": "https://www.earlychristianwritings.com/1clement.html",
+          "locator": "1 Clement, texto",
+          "qualification": "La datación alrededor de 96 es aproximada."
+        },
+        {
+          "date": "c.112",
+          "event": "Plinio consulta a Trajano sobre juicios a cristianos y describe reuniones antes del alba.",
+          "place": "Bitinia-Ponto",
+          "url": "https://faculty.georgetown.edu/jod/texts/pliny.html",
+          "locator": "Pliny, Letters 10.96–97",
+          "qualification": "Correspondencia provincial; no prueba política uniforme."
+        },
+        {
+          "date": "c.150–160",
+          "event": "Justino enseña y escribe defensas cristianas en Roma; describe lectura y colectas dominicales.",
+          "place": "Roma",
+          "url": "https://www.newadvent.org/fathers/0126.htm",
+          "locator": "Justin, First Apology 65–67",
+          "qualification": "Apología normativa, no censo de práctica."
+        },
+        {
+          "date": "c.170–180",
+          "event": "Melitón de Sardes denuncia medidas contra cristianos ante Marco Aurelio.",
+          "place": "Sardes, Asia Menor",
+          "url": "https://www.earlychristianwritings.com/melito.html",
+          "locator": "Melito, Apology fragments",
+          "qualification": "Fragmentario; fecha aproximada."
+        },
+        {
+          "date": "c.177",
+          "event": "Violencia y procesos contra cristianos de Lyon y Vienne quedan en carta preservada por Eusebio.",
+          "place": "Lyon/Vienne, Galia",
+          "url": "https://www.newadvent.org/fathers/250106.htm",
+          "locator": "Eusebius, HE 5.1",
+          "qualification": "Relato martirial y memoria comunitaria; escala local."
+        },
+        {
+          "date": "c.180–200",
+          "event": "Ireneo compone Contra las herejías y describe redes episcopales y debates sobre tradición.",
+          "place": "Lugdunum/Lyon",
+          "url": "https://www.newadvent.org/fathers/0103.htm",
+          "locator": "Irenaeus, Against Heresies",
+          "qualification": "Polemista contra grupos rivales."
+        },
+        {
+          "date": "c.197",
+          "event": "Tertuliano escribe una Apología que denuncia condenas sin investigación y expone prácticas comunitarias.",
+          "place": "Cartago",
+          "url": "https://tertullian.org/works/apologeticum.htm",
+          "locator": "Apologeticum, prólogo y capítulos 39–42",
+          "qualification": "Defensa retórica, no descripción neutral."
+        },
+        {
+          "date": "c.203",
+          "event": "Perpetua y Felicidad son ejecutadas; su pasión conserva memoria de mujeres cristianas.",
+          "place": "Cartago",
+          "url": "https://www.earlychristianwritings.com/text/perpetua.html",
+          "locator": "Passion of Perpetua and Felicity",
+          "qualification": "Texto compuesto; fecha cercana al evento, autoría discutida."
+        },
+        {
+          "date": "249–251",
+          "event": "Decio exige sacrificios públicos; certificados egipcios documentan cumplimiento individual.",
+          "place": "Egipto romano",
+          "url": "https://www.papyrology.ox.ac.uk/POxy/",
+          "locator": "P.Oxy. 1464 y otros libelli",
+          "qualification": "La aplicación varió localmente; papiros son testimonio regional."
+        },
+        {
+          "date": "257–258",
+          "event": "Valeriano ordena medidas contra clero y élites cristianas; Cipriano muere en Cartago.",
+          "place": "Cartago",
+          "url": "https://www.newadvent.org/fathers/050602.htm",
+          "locator": "Cyprian, Epistles 80–81",
+          "qualification": "Cartas cristianas comprometidas; alcance regional."
+        },
+        {
+          "date": "303–311",
+          "event": "La Gran Persecución destruye iglesias y textos y exige sacrificios, con aplicación desigual.",
+          "place": "Nicomedia e imperio romano",
+          "url": "https://www.newadvent.org/fathers/250108.htm",
+          "locator": "Eusebius, HE 8",
+          "qualification": "Eusebio escribe como superviviente; intensidad diversa por región."
+        }
+      ]
+    },
+    {
+      "id": "imperial-church",
+      "events": [
+        {
+          "date": "11 May 330",
+          "event": "Constantinopla recibe dedicación ceremonial y juegos fundacionales.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/place/Istanbul/History",
+          "locator": "Chronicon Paschale, annal 330; overview",
+          "qualification": "Fecha tradicional, ceremonia sobre proceso urbano anterior."
+        },
+        {
+          "date": "13 Jun 313",
+          "event": "Licinio publica en Nicomedia la política de libertad y restitución de propiedades.",
+          "place": "Nicomedia/İzmit",
+          "url": "https://sourcebooks.fordham.edu/source/edict-milan.asp",
+          "locator": "Lactantius 48; texto del rescripto",
+          "qualification": "No establece aún cristianismo como religión oficial."
+        },
+        {
+          "date": "22 May 337",
+          "event": "Constantino recibe bautismo de Eusebio de Nicomedia y muere en Nicomedia.",
+          "place": "Nicomedia/İzmit",
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.61–64",
+          "qualification": "Bautismo de Silvestre es leyenda posterior."
+        },
+        {
+          "date": "28 Oct 312",
+          "event": "Constantino derrota a Majencio en Puente Milvio y entra en Roma.",
+          "place": "Puente Milvio/Roma",
+          "url": "https://www.newadvent.org/fathers/25021.htm",
+          "locator": "Eusebius, Life of Constantine I.28–38; Lactantius 44",
+          "qualification": "Relatos cristianos difieren en visión y cronología."
+        },
+        {
+          "date": "312–313",
+          "event": "Constantino y Licinio negocian tolerancia religiosa en Milán.",
+          "place": "Mediolanum/Milán",
+          "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm",
+          "locator": "Lactantius, De mortibus persecutorum 48",
+          "qualification": "“Edicto de Milán” es rótulo moderno; texto conservado es rescripto oriental."
+        },
+        {
+          "date": "313–314",
+          "event": "La disputa donatista llega a audiencias imperiales y sínodos regionales.",
+          "place": "África, Roma",
+          "url": "https://www.fourthcentury.com/donatist-controversy/",
+          "locator": "Eusebius HE 10; Optatus, Against the Donatists",
+          "qualification": "Fuentes adversarias y posteriores; no simplificar causas sociales."
+        },
+        {
+          "date": "314",
+          "event": "Concilio de Arlés aborda donatismo, disciplina y fecha de Pascua.",
+          "place": "Arlés, Galia",
+          "url": "https://www.fourthcentury.com/early-church-councils/",
+          "locator": "Canones de Arlés, colección de fuentes",
+          "qualification": "Actas fragmentarias."
+        },
+        {
+          "date": "314 or 316",
+          "event": "Constantino y Licinio libran guerra en Cibalae; pactan reparto territorial en 317.",
+          "place": "Cibalae/Vinkovci",
+          "url": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+          "locator": "Britannica, Constantine, chronology",
+          "qualification": "The battle is usually dated 316, though some chronologies place it in 314; the conflict was dynastic/political, not simply religious."
+        },
+        {
+          "date": "321",
+          "event": "Una ley imperial limita actividad judicial dominical y permite labor agrícola.",
+          "place": "Imperio romano",
+          "url": "https://www.fourthcentury.com/constantine-321-sunday-law/",
+          "locator": "Codex Theodosianus 2.8.1",
+          "qualification": "No fue cierre total del trabajo."
+        },
+        {
+          "date": "324",
+          "event": "Constantino derrota a Licinio en Adrianópolis y Chrysopolis; queda como único emperador.",
+          "place": "Adrianópolis/Edírne y Chrysopolis/Üsküdar",
+          "url": "https://www.britannica.com/biography/Constantine-I-Roman-emperor",
+          "locator": "Eusebius VC II; resumen cronológico",
+          "qualification": "La fuente panegírica de Eusebio requiere cautela."
+        },
+        {
+          "date": "324–330",
+          "event": "Bizancio se amplía como nueva residencia imperial, luego llamada Constantinopla.",
+          "place": "Bizancio/Estambul",
+          "url": "https://www.britannica.com/place/Istanbul/History",
+          "locator": "Historia urbana de Estambul",
+          "qualification": "No fue sustitución instantánea de Roma."
+        },
+        {
+          "date": "324–325",
+          "event": "Controversia entre Alejandro de Alejandría y Arrio se extiende por redes episcopales.",
+          "place": "Alejandría y Oriente romano",
+          "url": "https://www.newadvent.org/fathers/25021.htm",
+          "locator": "Eusebius, Life of Constantine II.64–73",
+          "qualification": "Relato de Eusebio presenta el conflicto como problema de unidad."
+        },
+        {
+          "date": "325",
+          "event": "Sínodo regional de Antioquía suspende a obispos en antesala de Nicea.",
+          "place": "Antioquía",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/erev.12782",
+          "locator": "Kinzig, “The Creed of Nicaea,” sección sobre sínodo",
+          "qualification": "Cronología reconstruida; evidencia transmitida por fuentes posteriores."
+        },
+        {
+          "date": "325",
+          "event": "Concilio de Nicea acuerda un credo y cánones sobre doctrina y disciplina.",
+          "place": "Nicea/İznik",
+          "url": "https://www.newadvent.org/fathers/3801.htm",
+          "locator": "Credo y cánones de Nicea",
+          "qualification": "No creó las iglesias católica y ortodoxa modernas."
+        },
+        {
+          "date": "325",
+          "event": "Los debates pascuales reflejan prácticas distintas entre comunidades orientales y romanas.",
+          "place": "Nicea y provincias del imperio",
+          "url": "https://www.newadvent.org/fathers/25021.htm",
+          "locator": "Eusebius, Life of Constantine III.18–20",
+          "qualification": "Eusebio idealiza unanimidad."
+        },
+        {
+          "date": "326–330",
+          "event": "Constantino patrocina iglesias y obras en los lugares santos de Jerusalén.",
+          "place": "Jerusalén",
+          "url": "https://www.newadvent.org/fathers/25023.htm",
+          "locator": "Eusebius, Life of Constantine III.25–40",
+          "qualification": "La obra se inició en algún momento del periodo; no fechar automáticamente por viaje de Helena."
+        },
+        {
+          "date": "326",
+          "event": "Crispo y Fausta mueren por orden imperial según Zósimo; las causas son inciertas.",
+          "place": "Roma/Nicomedia, lugar discutido",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Zosimus/2C*.html",
+          "locator": "Zosimus 2.29",
+          "qualification": "Fuente tardía y hostil; evitar motivos novelados."
+        },
+        {
+          "date": "328–330?",
+          "event": "Helena muere en un año no explícito; los estudios discuten 328/329 frente a 330, por lo que no se fija día ni relación automática con el patrocinio jerosolimitano.",
+          "place": "Roma o Constantinopla, incierto",
+          "url": "https://brill.com/previewpdf/book/9789004246768/B9789004246768-s008.xml",
+          "locator": "Jan Willem Drijvers, Helena Augusta, cap. 6 “Helena’s Death”; extracto consultado: Klein propone 328/329 y Alföldi 330.",
+          "qualification": "La cronología sigue disputada; el extracto prueba desacuerdo, no una resolución. No inferir que su presencia en Jerusalén fecha el inicio de obras."
+        },
+        {
+          "date": "c.332–333",
+          "event": "Constantino escribe a Shapur II sobre cristianos en el imperio persa, según Eusebio.",
+          "place": "Nicomedia–Ctesiphon",
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.8–13",
+          "qualification": "Eusebio presenta al emperador como protector universal; sesgo panegírico."
+        },
+        {
+          "date": "335",
+          "event": "Sínodo de Tiro juzga a Atanasio; poco después se consagra el complejo de la Resurrección.",
+          "place": "Tiro/Jerusalén",
+          "url": "https://www.newadvent.org/fathers/25023.htm",
+          "locator": "Eusebius, Life of Constantine IV.41–47; III.28",
+          "qualification": "Narrativas de sínodo y consagración son interesadas."
+        },
+        {
+          "date": "336",
+          "event": "Arrio muere en Constantinopla antes de una readmisión prevista.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/fathers/26023.htm",
+          "locator": "Sozomen, HE II.29",
+          "qualification": "Relatos sobre circunstancias milagrosas son polémicos."
+        }
+      ]
+    },
+    {
+      "id": "jewish-tradition",
+      "events": [
+        {
+          "date": "70",
+          "event": "Roma destruye el Templo de Jerusalén tras el asedio; cambian prácticas religiosas y políticas.",
+          "place": "Jerusalén",
+          "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+          "locator": "Josephus, Jewish War VI",
+          "qualification": "Josefo escribe bajo tutela flavia."
+        },
+        {
+          "date": "70–80",
+          "event": "Yohanan ben Zakkai y estudiosos se asocian con actividad rabínica en Yavneh.",
+          "place": "Yavneh/Jabneh",
+          "url": "https://www.jewishvirtuallibrary.org/yavneh",
+          "locator": "Fuentes rabínicas compiladas después; overview",
+          "qualification": "No presentar como concilio que cerró canon o expulsó cristianos."
+        },
+        {
+          "date": "c.80–100",
+          "event": "Las academias y tradiciones legales sostienen vida judía sin templo central.",
+          "place": "Yavneh y Galilea",
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "locator": "Literatura tannaita; síntesis académica",
+          "qualification": "Las narraciones rabínicas se editaron siglos después."
+        },
+        {
+          "date": "c.90–100",
+          "event": "Debates sobre Eclesiastés y Cantar de los Cantares aparecen en tradiciones rabínicas.",
+          "place": "Yavneh, atribución tradicional",
+          "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+          "locator": "Artículo sobre el mito del sínodo de Jamnia",
+          "qualification": "No evidencia de una sesión única ni cierre del canon."
+        },
+        {
+          "date": "c.90–110",
+          "event": "La comunidad judía de Roma aparece en tensiones políticas recordadas por Suetonio.",
+          "place": "Roma",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Claud.+25",
+          "locator": "Suetonius, Claudius 25.4",
+          "qualification": "“Chrestus” y la magnitud/fecha exacta son discutidos."
+        },
+        {
+          "date": "115–117",
+          "event": "Revueltas judías de la diáspora sacuden Cirenaica, Egipto y Chipre durante guerra de Trajano.",
+          "place": "Cirenaica, Alejandría, Chipre",
+          "url": "https://www.livius.org/articles/concept/jewish-war/jewish-war-115-117/",
+          "locator": "Dio Cassius 68.32; síntesis de fuentes",
+          "qualification": "Cifras antiguas de víctimas no fiables."
+        },
+        {
+          "date": "c.130",
+          "event": "Adriano visita Judea y promueve colonia romana en Jerusalén, según tradición historiográfica.",
+          "place": "Jerusalén/Aelia Capitolina",
+          "url": "https://www.britannica.com/place/Jerusalem/History",
+          "locator": "Cassius Dio 69.12–14",
+          "qualification": "El vínculo causal directo con la revuelta sigue discutido."
+        },
+        {
+          "date": "132–135",
+          "event": "Revuelta de Bar Kojba contra Roma; acuñación rebelde y documentos del desierto reflejan administración.",
+          "place": "Judea",
+          "url": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "locator": "Museo de Israel, monedas y documentos",
+          "qualification": "La cronología y nombre del líder dependen de fuentes diversas."
+        },
+        {
+          "date": "135",
+          "event": "Roma derrota la revuelta y reorganiza la provincia como Siria Palestina; acceso judío a Jerusalén queda restringido.",
+          "place": "Jerusalén/Judea",
+          "url": "https://www.britannica.com/place/Jerusalem/History",
+          "locator": "Cassius Dio 69.14; overview",
+          "qualification": "Alcance de prohibición y continuidad local complejos."
+        },
+        {
+          "date": "c.150–180",
+          "event": "Rabí Akiva y colegas transmiten tradiciones legales y litúrgicas tannaitas.",
+          "place": "Lod, Yavneh y Galilea",
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "locator": "Literatura tannaita, visión general",
+          "qualification": "Biografías preservadas en fuentes tardías."
+        },
+        {
+          "date": "c.190–220",
+          "event": "Judas ha-Nasi organiza la Mishnah, compilación de tradiciones legales.",
+          "place": "Galilea, probablemente Sepphoris",
+          "url": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "locator": "Oxford, The Age of the Talmud",
+          "qualification": "Fecha aproximada y grado de autoría/redacción debatidos."
+        },
+        {
+          "date": "212",
+          "event": "Constitutio Antoniniana extiende ciudadanía romana a la mayoría de habitantes libres; cambia marco jurídico judío.",
+          "place": "Imperio romano",
+          "url": "https://www.britishmuseum.org/collection/object/G_1894-10-14-1",
+          "locator": "Edicto de Caracalla, P.Giss. 40",
+          "qualification": "Excepciones legales y aplicación requieren cautela."
+        },
+        {
+          "date": "c.220–250",
+          "event": "Amoraim palestinos discuten y transmiten la Mishnah en círculos de estudio.",
+          "place": "Sepphoris/Tiberíades",
+          "url": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "locator": "Oxford, The Age of the Talmud",
+          "qualification": "Las atribuciones personales de compilaciones no son transcripciones contemporáneas."
+        },
+        {
+          "date": "c.250–300",
+          "event": "Centros rabínicos de Babilonia crecen bajo los sasánidas.",
+          "place": "Sura, Nehardea, Pumbedita",
+          "url": "https://academic.oup.com/book/4297",
+          "locator": "Halivni, Formation of Babylonian Talmud, abstract",
+          "qualification": "Los detalles institucionales proceden de tradiciones posteriores."
+        },
+        {
+          "date": "c.300–350",
+          "event": "Sinagogas de Galilea incorporan mosaicos y arquitectura comunitaria.",
+          "place": "Hammat Tiberias, Galilea",
+          "url": "https://www.imj.org.il/en/wings/shrine-book/ancient-synagogues",
+          "locator": "Museo de Israel, sinagogas antiguas",
+          "qualification": "Fechados arqueológicos suelen abarcar décadas."
+        },
+        {
+          "date": "c.325",
+          "event": "Concilio de Nicea fija reglas eclesiásticas que afectan calendario cristiano, en interacción con calendario judío.",
+          "place": "Nicea/İznik",
+          "url": "https://www.newadvent.org/fathers/3801.htm",
+          "locator": "Canon 20 y carta pascual transmitida por Eusebio",
+          "qualification": "Evitar narrar separación instantánea o hostilidad uniforme."
+        },
+        {
+          "date": "c.350–400",
+          "event": "El Talmud de Jerusalén toma forma a través de generaciones de estudio y edición.",
+          "place": "Tiberíades/Galilea",
+          "url": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "locator": "Oxford, Age of Talmud",
+          "qualification": "No hay fecha puntual de cierre consensuada."
+        },
+        {
+          "date": "363",
+          "event": "Juliano permite y apoya el proyecto de reconstrucción del Templo de Jerusalén, que se interrumpe.",
+          "place": "Jerusalén",
+          "url": "https://www.livius.org/articles/person/julian-the-apostate/julian-and-the-jews/",
+          "locator": "Ammianus Marcellinus 23.1.2–3",
+          "qualification": "Fuentes cristianas y paganas divergen sobre causa de interrupción."
+        },
+        {
+          "date": "c.380–400",
+          "event": "Jerusalén y Galilea conservan redes de sinagogas y prácticas comunitarias bajo dominio cristiano.",
+          "place": "Galilea/Jerusalén",
+          "url": "https://www.imj.org.il/en/wings/shrine-book/ancient-synagogues",
+          "locator": "Museo de Israel, arqueología sinagogal",
+          "qualification": "Cambio imperial no equivale a desaparición judía."
+        },
+        {
+          "date": "c.400",
+          "event": "El Talmud palestino refleja transmisión y controversias legales de la Antigüedad tardía.",
+          "place": "Palestina romana",
+          "url": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+          "locator": "Oxford, Age of Talmud",
+          "qualification": "Edición compilatoria, no crónica anual."
+        },
+        {
+          "date": "423",
+          "event": "Teodosio II restringe construcción de nuevas sinagogas.",
+          "place": "Constantinopla/imperio",
+          "url": "https://academic.oup.com/book/32151/chapter-abstract/268117453",
+          "locator": "CTh 16.8.25; Oxford chapter abstract",
+          "qualification": "La aplicación local no se infiere automáticamente del texto legal."
+        },
+        {
+          "date": "c.425",
+          "event": "Disminuye y termina el patriarcado judío palestino bajo gobierno romano oriental.",
+          "place": "Palestina/Constantinopla",
+          "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550532938",
+          "locator": "Oxford Classical Dictionary, Jewish Patriarchate",
+          "qualification": "La desaparición se sitúa alrededor de 425; sus causas y año exacto son desconocidos. No equivale al final de comunidades o estudio rabínico."
+        },
+        {
+          "date": "c.425",
+          "event": "Desaparece el patriarcado judío de Palestina, último cargo público unificador de comunidades judías bajo Roma oriental.",
+          "place": "Palestina",
+          "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550532938",
+          "locator": "Oxford Classical Dictionary, “The Jewish Patriarchate”; abstract dates disappearance around 425.",
+          "qualification": "El motivo y el año exacto son desconocidos; no equivale al final de comunidades o estudio rabínico."
+        }
+      ]
+    },
+    {
+      "id": "church-of-rome",
+      "events": [
+        {
+          "date": "339–340",
+          "event": "Athanasius, expelled from Alexandria, reaches Rome and seeks support from Bishop Julius.",
+          "place": "Alexandria–Rome",
+          "url": "https://www.newadvent.org/fathers/2813.htm",
+          "locator": "Athanasius, Apologia ad Constantium; exact arrival year varies in scholarship.",
+          "qualification": "Primary apologetic account; date commonly 339/340, not a precise travel record."
+        },
+        {
+          "date": "343",
+          "event": "Athanasius leaves Rome for the Council of Sardica, where eastern and western bishops meet separately after dispute.",
+          "place": "Rome–Sardica (Sofia)",
+          "url": "https://www.newadvent.org/fathers/3815.htm",
+          "locator": "Council of Sardica; historical note places synod in 343, potentially autumn.",
+          "qualification": "Some older chronologies label the council 344; source notes uncertainty."
+        },
+        {
+          "date": "359",
+          "event": "Bishops meet at Rimini amid imperial pressure for a formula on the Arian controversy.",
+          "place": "Rimini, Italy",
+          "url": "https://www.newadvent.org/fathers/28153.htm",
+          "locator": "Athanasius, History of the Arians, §33 and surrounding account",
+          "qualification": "Athanasius is a Nicene partisan; avoid suggesting one uniform decision or response."
+        },
+        {
+          "date": "366–367",
+          "event": "Damasus and Ursinus are elected by rival factions; street violence follows the contested Roman succession.",
+          "place": "Rome",
+          "url": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=523&id=6",
+          "locator": "Presbyters Project, Liber Pontificalis source record for the contested election of 366.",
+          "qualification": "Liber Pontificalis account is later; Ammianus 27.3.12–13 is an independent contemporary narrative."
+        },
+        {
+          "date": "380",
+          "event": "Theodosius issues the Thessalonica edict establishing Nicene Christianity as imperial religious norm.",
+          "place": "Thessalonica; promulgated empire-wide",
+          "url": "https://sourcebooks.fordham.edu/source/theodosius1.asp",
+          "locator": "Codex Theodosianus 16.1.2, edict Cunctos populos",
+          "qualification": "Legal statement of policy; implementation and lived religious plurality remained uneven."
+        },
+        {
+          "date": "390",
+          "event": "After the massacre at Thessalonica, Ambrose bars Theodosius from communion until public penance.",
+          "place": "Milan (emperor); Thessalonica (massacre)",
+          "url": "https://earlychurchtexts.com/main/ambrose/to_theodosius_on_thessalonica_massacre_01.shtml",
+          "locator": "Ambrose, Letter 51",
+          "qualification": "Ambrose’s letter is contemporary but does not state the event’s year; 390 is conventional, exact date disputed."
+        },
+        {
+          "date": "476",
+          "event": "Odoacer deposes Romulus Augustulus; Roman ecclesiastical institutions continue under a new Italian kingdom.",
+          "place": "Ravenna/Rome",
+          "url": "https://www.britannica.com/event/fall-of-Rome",
+          "locator": "Fall of Western Roman Empire overview",
+          "qualification": "The date marks a political transition, not the end of Rome or its church."
+        },
+        {
+          "date": "493",
+          "event": "Theodoric kills Odoacer at Ravenna and establishes Ostrogothic rule in Italy.",
+          "place": "Ravenna",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2*.html",
+          "locator": "Anonymus Valesianus, pars posterior §§55–57",
+          "qualification": "Narrative source; Theodoric’s later visit to Rome was in 500, not 493."
+        },
+        {
+          "date": "494",
+          "event": "Gelasius writes to Anastasius on the distinct responsibilities of priestly and imperial authority.",
+          "place": "Rome–Constantinople",
+          "url": "https://assets-us-01.kc-usercontent.com/c7bb3f89-eb78-007e-971a-d5864cf7a236/28069a1b-8c16-4f91-8bd6-e69c3eb898f0/Letter-to-Anastasius-I.pdf",
+          "locator": "Gelasius I, Famuli vestrae pietatis, 494",
+          "qualification": "Gelasius was bishop of Rome 492–496; the letter is a situated argument, not a timeless constitutional settlement."
+        },
+        {
+          "date": "519",
+          "event": "The Acacian schism ends as Rome and Constantinople reconcile under Justin I and Pope Hormisdas.",
+          "place": "Rome–Constantinople",
+          "url": "https://www.newadvent.org/cathen/07218b.htm",
+          "locator": "Catholic Encyclopedia, Acacian Schism; Hormisdas formula and 519 settlement",
+          "qualification": "The source is an older reference work; reconciliation did not erase all doctrinal or jurisdictional tensions."
+        },
+        {
+          "date": "525–526",
+          "event": "Theodoric sends Pope John I to Constantinople on an embassy; John dies imprisoned at Ravenna after returning.",
+          "place": "Rome–Constantinople–Ravenna",
+          "url": "https://text.egwwritings.org/amp/read/988.935",
+          "locator": "Historical narrative chapter on John I’s embassy",
+          "qualification": "Retrospective confessional narrative; specify that Theodoric’s motives and John’s treatment are source-mediated."
+        },
+        {
+          "date": "536",
+          "event": "Belisarius enters Rome during Justinian’s Gothic War; the Ostrogoths withdraw north.",
+          "place": "Rome",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/5A*.html",
+          "locator": "Procopius, Wars V, entry into Rome",
+          "qualification": "Procopius is an eastern imperial historian; later fighting devastated the city."
+        },
+        {
+          "date": "537–538",
+          "event": "Vitiges besieges Rome; Belisarius holds the city through a long siege.",
+          "place": "Rome",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/5A*.html",
+          "locator": "Procopius, Wars V–VI, siege narrative",
+          "qualification": "Exact day counts differ in modern accounts; avoid unsupported casualty totals."
+        },
+        {
+          "date": "546",
+          "event": "Totila captures Rome during the Gothic War; much of its population has fled or suffered hardship.",
+          "place": "Rome",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/7A*.html",
+          "locator": "Procopius, Wars VII, capture of Rome",
+          "qualification": "Procopius’ dramatic details and population figures require caution."
+        },
+        {
+          "date": "552–553",
+          "event": "Narses defeats the Ostrogoths and restores imperial control over Rome and Italy.",
+          "place": "Taginae and Rome/Italy",
+          "url": "https://www.britannica.com/event/Gothic-War-535-554",
+          "locator": "Gothic War chronology and final campaigns",
+          "qualification": "The final consolidation occurred over several years; do not imply a single definitive capture in 553."
+        },
+        {
+          "date": "590",
+          "event": "Gregory I becomes bishop of Rome amid Lombard pressure, epidemic and food insecurity.",
+          "place": "Rome",
+          "url": "https://sourcebooks.web.fordham.edu/source/pauldeacon-gregIa.asp",
+          "locator": "Paul the Deacon, Life of Gregory the Great",
+          "qualification": "Later biography; miraculous details of election/procession are not independently verifiable."
+        },
+        {
+          "date": "596",
+          "event": "Gregory sends Augustine’s mission to Kent, extending Roman ecclesiastical contacts in Britain.",
+          "place": "Rome–Kent",
+          "url": "https://sourcebooks.fordham.edu/source/gregory1.asp",
+          "locator": "Gregory’s letters concerning Augustine’s mission",
+          "qualification": "Mission and conversion were gradual; do not present England as converted in a single event."
+        },
+        {
+          "date": "663",
+          "event": "Constans II visits Rome and removes bronze from the Pantheon during his Italian expedition.",
+          "place": "Rome",
+          "url": "https://www.newadvent.org/cathen/04295a.htm",
+          "locator": "Catholic Encyclopedia, Constans II; account of visit to Rome",
+          "qualification": "Older secondary reference; visit is attested, but the claim that all bronze roof tiles were removed is often exaggerated."
+        },
+        {
+          "date": "680–681",
+          "event": "El Tercer Concilio de Constantinopla condena el monotelismo; el papa Agatón participa por cartas y legados.",
+          "place": "Constantinopla; Roma",
+          "url": "https://www.newadvent.org/fathers/3813.htm",
+          "locator": "Acts of Constantinople III; letters of Agatho and Roman legates.",
+          "qualification": "La recepción y terminología fueron disputadas; no proyectar categorías confesionales posteriores."
+        },
+        {
+          "date": "692",
+          "event": "The Quinisext Council issues disciplinary canons; Pope Sergius refuses to sign the canons sent to Rome.",
+          "place": "Constantinople–Rome",
+          "url": "https://www.myriobiblos.gr/texts/english/milton1_11.html",
+          "locator": "Milton V. Anastos, “The Constantinopolitan Council in Trullo (692)”",
+          "qualification": "Western reception was contested and later varied; do not treat the council’s status as universally agreed."
+        },
+        {
+          "date": "731",
+          "event": "A Roman synod under Gregory III condemns attacks on images.",
+          "place": "Rome",
+          "url": "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_%28Enciclopedia-Italiana%29/",
+          "locator": "Treccani, Iconoclastia, account of Gregory III’s Roman council",
+          "qualification": "The source notes limits to claims of systematic image destruction under Leo III."
+        },
+        {
+          "date": "754",
+          "event": "Stephen II crosses the Alps and anoints Pepin, securing Frankish protection against Lombard pressure.",
+          "place": "Saint-Denis, Frankish kingdom",
+          "url": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+          "locator": "Fordham Sourcebook introduction, Pepin and Stephen II",
+          "qualification": "The 754 promise and 756 territorial transfer are known through papal narrative; the treaty text is not extant."
+        },
+        {
+          "date": "756",
+          "event": "Pepin fulfills his territorial promise by transferring lands in central Italy to the papacy.",
+          "place": "Ravenna and central Italy",
+          "url": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+          "locator": "Fordham Sourcebook introduction, fulfillment in 756",
+          "qualification": "The donation document is not preserved; boundaries are reconstructed. Distinguish it from the forged Donation of Constantine."
+        },
+        {
+          "date": "768–774",
+          "event": "The Carolingian rulers consolidate power; Charlemagne’s campaigns against the Lombards bring Rome a new protector.",
+          "place": "Frankish realm/Italy/Rome",
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne, chapters 6 and 27",
+          "qualification": "Einhard’s retrospective court biography is selective; the decisive Italian campaign was 773–774."
+        },
+        {
+          "date": "787",
+          "event": "Pope Hadrian I sends legates to the Second Council of Nicaea, which restores the veneration of icons.",
+          "place": "Nicaea/Rome",
+          "url": "https://www.newadvent.org/fathers/3819.htm",
+          "locator": "Acts of Nicaea II and Hadrian’s letter",
+          "qualification": "Council texts survive through later transmission; distinguish veneration from worship."
+        },
+        {
+          "date": "795",
+          "event": "Leo III succeeds Hadrian I and sends the keys and banners of Rome to Charlemagne.",
+          "place": "Rome–Frankish court",
+          "url": "https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html",
+          "locator": "Schaff, History of the Christian Church IV, section on Leo III",
+          "qualification": "Secondary 19th-century account; diplomatic symbolism should not be read as a formal transfer of sovereignty."
+        },
+        {
+          "date": "799",
+          "event": "Leo III is attacked in Rome and seeks Charlemagne’s protection.",
+          "place": "Rome–Paderborn",
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne 28; Royal Frankish Annals 799",
+          "qualification": "Einhard’s report is retrospective; allegations against Leo and the assault’s details are politically charged."
+        },
+        {
+          "date": "800",
+          "event": "Leo III crowns Charlemagne emperor at St Peter’s on Christmas Day.",
+          "place": "Rome, St Peter’s Basilica",
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne 28",
+          "qualification": "Einhard says Charles claimed surprise; this may serve a literary/political purpose and should not be treated as certain."
+        }
+      ]
+    },
+    {
+      "id": "new-rome",
+      "events": [
+        {
+          "date": "330",
+          "event": "Constantino inaugura Constantinopla como nueva capital ceremonial en el sitio de Bizancio.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/place/Istanbul/History",
+          "locator": "Chronicon Paschale; overview",
+          "qualification": "Fundación se desarrolló desde 324, no en un acto único."
+        },
+        {
+          "date": "337",
+          "event": "Muerte de Constantino; sus hijos heredan el imperio y la capital oriental.",
+          "place": "Nicomedia/Constantinopla",
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.64",
+          "qualification": "La capitalidad se consolida gradualmente."
+        },
+        {
+          "date": "381",
+          "event": "Concilio de Constantinopla reafirma credo niceno y reconoce honor después de Roma.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/fathers/3808.htm",
+          "locator": "Canons of Constantinople I",
+          "qualification": "Canon 3 define rango honorífico, no supremacía universal."
+        },
+        {
+          "date": "395",
+          "event": "Muerte de Teodosio I precede división administrativa duradera entre cortes oriental y occidental.",
+          "place": "Milán/Constantinopla",
+          "url": "https://www.britannica.com/biography/Theodosius-I",
+          "locator": "Chronology and overview",
+          "qualification": "No hubo división legal absoluta del imperio en ese momento."
+        },
+        {
+          "date": "404",
+          "event": "Juan Crisóstomo es depuesto y exiliado tras conflicto de corte y episcopado.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/fathers/1912.htm",
+          "locator": "Palladius, Dialogue on the Life of John Chrysostom",
+          "qualification": "Fuente pro-Crisóstomo."
+        },
+        {
+          "date": "425",
+          "event": "Teodosio II funda la universidad imperial de Constantinopla, fortaleciendo educación jurídica y literaria.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/topic/University-of-Constantinople",
+          "locator": "Codex Theodosianus 14.9.3",
+          "qualification": "Las instituciones enseñaban materias variadas, no universidad moderna."
+        },
+        {
+          "date": "438",
+          "event": "Las reliquias de Juan Crisóstomo son trasladadas desde Comana a Constantinopla y depositadas en la iglesia de los Santos Apóstoles.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/fathers/26017.htm",
+          "locator": "Socrates Scholasticus, Ecclesiastical History VII.45; encabezado del capítulo y consulado de Teodosio.",
+          "qualification": "Socrates escribe en el siglo V y es una fuente eclesiástica; la transferencia ocurrió décadas después de su muerte en 407."
+        },
+        {
+          "date": "438",
+          "event": "Se publica el Codex Theodosianus, compilación legal imperial.",
+          "place": "Constantinopla",
+          "url": "https://sourcebooks.fordham.edu/source/codex-theod.asp",
+          "locator": "Codex Theodosianus, edicto de publicación",
+          "qualification": "Selección oficial de constituciones."
+        },
+        {
+          "date": "451",
+          "event": "Concilio de Calcedonia define fórmula cristológica y canon de privilegio para Constantinopla.",
+          "place": "Calcedonia/Estambul",
+          "url": "https://www.newadvent.org/fathers/3811.htm",
+          "locator": "Acts and canons, especially canon 28",
+          "qualification": "Disputado por Roma y varios obispos orientales."
+        },
+        {
+          "date": "457",
+          "event": "León I es proclamado emperador en Constantinopla con participación del patriarca.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/biography/Leo-I-Byzantine-emperor",
+          "locator": "Chronicle tradition; overview",
+          "qualification": "Detalles del ritual derivan de fuentes posteriores."
+        },
+        {
+          "date": "474–491",
+          "event": "Zenón gobierna en crisis con grupos godos y conflictos sucesorios.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/biography/Zeno-Byzantine-emperor",
+          "locator": "Overview of reign",
+          "qualification": "Relatos narrativos reflejan facciones cortesanas."
+        },
+        {
+          "date": "482",
+          "event": "Zenón publica el Henotikon para reconciliar posiciones tras Calcedonia.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/cathen/07218b.htm",
+          "locator": "Henotikon text summarized; Evagrius HE III.14",
+          "qualification": "La política no consiguió consenso e inició cisma con Roma."
+        },
+        {
+          "date": "532",
+          "event": "Revuelta de Nika destruye la iglesia previa de Hagia Sophia y amenaza el gobierno de Justiniano.",
+          "place": "Constantinopla",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/1A*.html",
+          "locator": "Procopius, Wars I.24",
+          "qualification": "Procopio describe la represión con sesgo político."
+        },
+        {
+          "date": "532–537",
+          "event": "Justinian y Theodora reconstruyen Hagia Sophia, dedicada en 537.",
+          "place": "Constantinopla",
+          "url": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+          "locator": "Procopius, Buildings I.1",
+          "qualification": "Panegírico imperial; UNESCO confirma fecha y arquitectos."
+        },
+        {
+          "date": "553",
+          "event": "Segundo Concilio de Constantinopla aborda los Tres Capítulos.",
+          "place": "Constantinopla",
+          "url": "https://www.newadvent.org/fathers/3812.htm",
+          "locator": "Council acts",
+          "qualification": "La condena tuvo recepción regional desigual."
+        },
+        {
+          "date": "626",
+          "event": "Avaros y persas asedian Constantinopla mientras Heraclio combate en el este.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/event/Siege-of-Constantinople-626",
+          "locator": "Chronicle traditions",
+          "qualification": "Cifras y milagros son retrospectivos."
+        },
+        {
+          "date": "674–678",
+          "event": "Ataques árabes por mar y tierra fracasan ante murallas y flota imperial.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/event/Arab-Byzantine-wars",
+          "locator": "Theophanes, Chronicle",
+          "qualification": "Cronología del primer asedio discutida; “fuego griego” no está documentado en todos los detalles."
+        },
+        {
+          "date": "717–718",
+          "event": "El asedio omeya termina tras resistencia bizantina, invierno severo y ayuda búlgara.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/event/Second-Arab-Siege-of-Constantinople",
+          "locator": "Theophanes, AM 6209",
+          "qualification": "Fuentes bizantinas magnifican bajas enemigas."
+        },
+        {
+          "date": "726–730",
+          "event": "León III inicia políticas contra ciertas imágenes; la cronología y el primer decreto son inciertos.",
+          "place": "Constantinopla",
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, Iconoclast Controversy 726–843",
+          "qualification": "Evitar escena dramática de destrucción de icono como hecho seguro."
+        },
+        {
+          "date": "754",
+          "event": "Sínodo de Hieria respalda rechazo de imágenes bajo Constantino V.",
+          "place": "Hieria, cerca de Calcedonia",
+          "url": "https://www.newadvent.org/fathers/3819.htm",
+          "locator": "Acts reconstructed from Nicaea II",
+          "qualification": "Actas originales perdidas; reconstrucción hostil."
+        },
+        {
+          "date": "787",
+          "event": "Segundo Concilio de Nicea restaura veneración de imágenes y condena iconoclasmo.",
+          "place": "Nicea/İznik",
+          "url": "https://www.newadvent.org/fathers/3819.htm",
+          "locator": "Acts of Nicaea II",
+          "qualification": "Distingue veneración de adoración; traducciones varían."
+        },
+        {
+          "date": "797",
+          "event": "Irene depone a Constantino VI y gobierna como emperatriz.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/biography/Irene-Byzantine-empress",
+          "locator": "Theophanes, Chronicle AM 6289",
+          "qualification": "Theophanes iconófilo y hostil a rivales."
+        },
+        {
+          "date": "800",
+          "event": "Coronación imperial de Carlomagno en Roma desafía pretensión universal de Constantinopla.",
+          "place": "Roma",
+          "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+          "locator": "Einhard, Life of Charlemagne 28",
+          "qualification": "Einhard escribe décadas después y ofrece explicación política interesada."
+        },
+        {
+          "date": "802",
+          "event": "Irene es depuesta; Nicéforo I toma el trono en Constantinopla.",
+          "place": "Constantinopla",
+          "url": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+          "locator": "Theophanes, Chronicle AM 6295",
+          "qualification": "Perspectiva iconófila del cronista."
+        },
+        {
+          "date": "811",
+          "event": "Nicéforo muere en campaña contra los búlgaros en Pliska.",
+          "place": "Pliska, Bulgaria",
+          "url": "https://www.britannica.com/biography/Nicephorus-I-Byzantine-emperor",
+          "locator": "Theophanes, Chronicle AM 6303",
+          "qualification": "Fuentes de corte y crónica dramáticas."
+        },
+        {
+          "date": "813",
+          "event": "León V recupera el trono tras derrota de Miguel I en Versinikia.",
+          "place": "Versinikia/Tracia",
+          "url": "https://www.britannica.com/biography/Leo-V-the-Armenian",
+          "locator": "Theophanes, Chronicle AM 6305",
+          "qualification": "Causas militares y religiosas se entrelazan después en relatos."
+        },
+        {
+          "date": "815",
+          "event": "Sínodo en Constantinopla reactiva políticas iconoclastas.",
+          "place": "Constantinopla",
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, Iconoclast Controversy",
+          "qualification": "Evidencia documental fragmentaria."
+        },
+        {
+          "date": "843",
+          "event": "La regente Teodora restaura la veneración de imágenes en sínodo; comienza la conmemoración del Triunfo de la Ortodoxia.",
+          "place": "Constantinopla",
+          "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+          "locator": "Oxford, Iconoclast Controversy",
+          "qualification": "Sínodo local; término “ortodoxia” en sentido de fuente, no etiqueta de las iglesias modernas."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/25021.htm",
+      "title": "Eusebius, Life of Constantine, Books I–II",
+      "consultedScope": "Milvian Bridge, Constantine's letters and pre-Nicaea controversy; primary, panegyrical."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25023.htm",
+      "title": "Eusebius, Life of Constantine, Book III",
+      "consultedScope": "Jerusalem church building and Nicaea-related narratives; primary, panegyrical."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25024.htm",
+      "title": "Eusebius, Life of Constantine, Book IV",
+      "consultedScope": "Persian letter, death and baptism; primary, panegyrical."
+    },
+    {
+      "url": "https://droitromain.univ-grenoble-alpes.fr/Constitutiones/ed_tolerat1.htm",
+      "title": "Lactantius, De mortibus persecutorum 48",
+      "consultedScope": "Latin text of Licinius' 313 rescript."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3801.htm",
+      "title": "Council of Nicaea: Creed and Canons",
+      "consultedScope": "Creed and canons, primary text transmission."
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/erev.12782",
+      "title": "Klaus-Dieter Kinzig, The Creed of Nicaea",
+      "consultedScope": "Abstract and displayed extracts on council chronology and prior Antioch synod; not full paywalled article."
+    },
+    {
+      "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/550532938",
+      "title": "Oxford Classical Dictionary, The Jewish Patriarchate",
+      "consultedScope": "Abstract on disappearance ca.425 and its uncertain causes."
+    },
+    {
+      "url": "https://academic.oup.com/book/3559/chapter-abstract/144825364",
+      "title": "The Age of the Talmud",
+      "consultedScope": "Abstract on Mishnah and Palestinian/Babylonian Talmud chronology."
+    },
+    {
+      "url": "https://academic.oup.com/book/4297",
+      "title": "David Weiss Halivni, The Formation of the Babylonian Talmud",
+      "consultedScope": "Abstract on later redaction layers and proposed dating to ca.750."
+    },
+    {
+      "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+      "title": "The Christian Question in Jamnia Academy",
+      "consultedScope": "Article abstract and displayed text challenging the Jamnia council myth."
+    },
+    {
+      "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "title": "Center for Online Judaic Studies, Tannaitic Literature",
+      "consultedScope": "Overview on debated Mishnah redaction and tannaitic materials."
+    },
+    {
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Tac.+Ann.+15.44",
+      "title": "Tacitus, Annals 15.44",
+      "consultedScope": "Primary Latin/English passage on Nero's treatment of Christians in Rome."
+    },
+    {
+      "url": "https://faculty.georgetown.edu/jod/texts/pliny.html",
+      "title": "Pliny, Letters 10.96–97",
+      "consultedScope": "Primary correspondence on provincial proceedings in Bithynia."
+    },
+    {
+      "url": "https://duraeuropos.artgallery.yale.edu/christian-building",
+      "title": "Yale Art Gallery, Christian Building at Dura-Europos",
+      "consultedScope": "Museum archaeology description of converted house worship space."
+    },
+    {
+      "url": "https://tertullian.org/works/apologeticum.htm",
+      "title": "Tertullian, Apologeticum",
+      "consultedScope": "Primary text and dating overview; apologetic bias."
+    },
+    {
+      "url": "https://www.earlychristianwritings.com/1clement.html",
+      "title": "1 Clement",
+      "consultedScope": "Primary text of Rome's intervention at Corinth."
+    },
+    {
+      "url": "https://www.earlychristianwritings.com/didache.html",
+      "title": "Didache",
+      "consultedScope": "Primary text and broad date/place notes."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/250108.htm",
+      "title": "Eusebius, Ecclesiastical History Book VIII",
+      "consultedScope": "Primary narrative of Great Persecution; Christian perspective."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3811.htm",
+      "title": "Council of Chalcedon",
+      "consultedScope": "Canons and acts, including Constantinople's rank."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/source/pauldeacon-gregIa.asp",
+      "title": "Paul the Deacon, Life of Gregory the Great",
+      "consultedScope": "Primary medieval biography used for Gregory's papacy and Lombard context; later than events."
+    },
+    {
+      "url": "https://www.tertullian.org/fathers/gregory_02_dialogues_book2.htm",
+      "title": "Gregory the Great, Dialogues, Book II",
+      "consultedScope": "Primary hagiographical text on Benedictine memory."
+    },
+    {
+      "url": "https://www.ancienttexts.org/library/latinlibrary/ein.html",
+      "title": "Einhard, Life of Charlemagne",
+      "consultedScope": "Primary biography, including Rome and imperial coronation; written decades later."
+    },
+    {
+      "url": "https://www.gutenberg.org/files/65404/65404-h/65404-h.htm",
+      "title": "Procopius, Buildings of Justinian",
+      "consultedScope": "Primary text on Constantinople's churches and building program; panegyrical."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp",
+      "title": "Procopius on Hagia Sophia",
+      "consultedScope": "Extract on rebuilding and 537 dedication."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/356",
+      "title": "UNESCO Historic Areas of Istanbul",
+      "consultedScope": "Heritage description of urban topography, Theodosian walls and Hagia Sophia dating."
+    },
+    {
+      "url": "https://academic.oup.com/book/26922/chapter-abstract/196030746",
+      "title": "The Iconoclast Controversy 726–843",
+      "consultedScope": "Chapter abstract on iconoclasm chronology; full chapter not consulted."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3819.htm",
+      "title": "Second Council of Nicaea",
+      "consultedScope": "Council text and reconstructed anti-iconoclast material."
+    },
+    {
+      "url": "https://sourcebooks.fordham.edu/source/gelasius1.asp",
+      "title": "Gelasius, Famuli vestrae pietatis",
+      "consultedScope": "Primary letter on priestly and imperial authority."
+    },
+    {
+      "url": "https://brill.com/previewpdf/book/9789004246768/B9789004246768-s008.xml",
+      "title": "Jan Willem Drijvers, Helena Augusta, capítulo 6 “Helena’s Death”",
+      "consultedScope": "Extracto de capítulo académico consultado; identifica dataciones propuestas 328/329 y 330. No se consultó el libro entero."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/2813.htm",
+      "title": "Athanasius, Apologia ad Constantium",
+      "consultedScope": "Primary text consulted for Rome/Sardica sequence."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3815.htm",
+      "title": "Council of Sardica",
+      "consultedScope": "Source page consulted for council date range and chronology."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/28153.htm",
+      "title": "Athanasius, History of the Arians",
+      "consultedScope": "Primary text consulted for Rimini-era controversy."
+    },
+    {
+      "url": "https://www.presbytersproject.ihuw.pl/index.php?SourceID=523&id=6",
+      "title": "Presbyters Project: contested papal election 366",
+      "consultedScope": "Record consulted; cites Liber Pontificalis and flags its later composition."
+    },
+    {
+      "url": "https://sourcebooks.fordham.edu/source/theodosius1.asp",
+      "title": "Theodosian Code 16.1.2",
+      "consultedScope": "Fordham translation of Thessalonica edict."
+    },
+    {
+      "url": "https://earlychurchtexts.com/main/ambrose/to_theodosius_on_thessalonica_massacre_01.shtml",
+      "title": "Ambrose, Letter 51",
+      "consultedScope": "Primary text consulted; chronology year remains conventional."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Excerpta_Valesiana/2*.html",
+      "title": "Anonymus Valesianus, pars posterior",
+      "consultedScope": "Primary narrative consulted for Theodoric’s killing of Odoacer and visit to Rome."
+    },
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/c7bb3f89-eb78-007e-971a-d5864cf7a236/28069a1b-8c16-4f91-8bd6-e69c3eb898f0/Letter-to-Anastasius-I.pdf",
+      "title": "Gelasius I, letter to Anastasius",
+      "consultedScope": "Primary translation consulted; letter dated 494."
+    },
+    {
+      "url": "https://www.newadvent.org/cathen/07218b.htm",
+      "title": "Acacian Schism",
+      "consultedScope": "Reference overview consulted for reconciliation in 519."
+    },
+    {
+      "url": "https://text.egwwritings.org/amp/read/988.935",
+      "title": "Pope John I embassy narrative",
+      "consultedScope": "Retrospective account consulted for Constantinople embassy and death at Ravenna."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/5A*.html",
+      "title": "Procopius, Wars V–VI",
+      "consultedScope": "Primary narrative consulted for Belisarius’ entry and first siege."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Procopius/War/7A*.html",
+      "title": "Procopius, Wars VII",
+      "consultedScope": "Primary narrative consulted for Totila’s capture of Rome."
+    },
+    {
+      "url": "https://www.britannica.com/event/Gothic-War-535-554",
+      "title": "Gothic War 535–554",
+      "consultedScope": "Reference chronology consulted for Narses and conclusion of war."
+    },
+    {
+      "url": "https://sourcebooks.fordham.edu/source/gregory1.asp",
+      "title": "Gregory I’s letters on Augustine",
+      "consultedScope": "Primary letters consulted for the Kent mission."
+    },
+    {
+      "url": "https://www.newadvent.org/cathen/04295a.htm",
+      "title": "Constans II",
+      "consultedScope": "Reference overview consulted for Rome visit in 663."
+    },
+    {
+      "url": "https://www.myriobiblos.gr/texts/english/milton1_11.html",
+      "title": "Milton V. Anastos on Quinisext",
+      "consultedScope": "Academic chapter excerpt consulted on 692 and Sergius’ refusal."
+    },
+    {
+      "url": "https://www.treccani.it/enciclopedia/iconoclastia-o-iconoclasmo_%28Enciclopedia-Italiana%29/",
+      "title": "Treccani, Iconoclastia",
+      "consultedScope": "Reference entry consulted for Roman synod of 731 and caution on Leo III."
+    },
+    {
+      "url": "https://sourcebooks.web.fordham.edu/source/donatconst.asp",
+      "title": "Pepin and Donation of Constantine",
+      "consultedScope": "Fordham introduction consulted for 754 anointing, 756 transfer, and forged Constantine donation."
+    },
+    {
+      "url": "https://ccel.org/ccel/schaff/hcc4/hcc4.i.iv.x.html",
+      "title": "Schaff, History of the Christian Church IV",
+      "consultedScope": "Section consulted for Leo III, 799 attack and 800 coronation chronology."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26017.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History, Book VII",
+      "consultedScope": "Chapter 45 on the 438 transfer of John Chrysostom’s remains to Constantinople."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3813.htm",
+      "title": "Third Council of Constantinople (680–681)",
+      "consultedScope": "Council acts and papal letters/legation."
+    }
+  ]
+}

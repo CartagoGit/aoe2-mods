@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "date": "2026-10-18",
+    "author": "gpt-6-luna",
+    "scope": "read-only geometric and asset-metadata check for episode 33 Sirmium 379; no historical/geographic/game approval"
+  },
+  "sourcesRead": [
+    {
+      "path": "docs/research/odyssey-research/episode-geography.json",
+      "locator": "profiles[id=sirmium]: bbox, representativePoint, waterControlStatus, terrain, approval"
+    },
+    {
+      "path": "docs/research/odyssey-research/geography/ne_10m_rivers_lake_centerlines.geojson",
+      "locator": "feature properties name=Sava, featurecla=River; MultiLineString geometry"
+    },
+    {
+      "path": "docs/research/odyssey-research/reference-manifest.json",
+      "locator": "ne-odyssey-rivers10m and the two Sirmium image records"
+    },
+    {
+      "path": "docs/research/odyssey-research/sirmium379-geography-and-assets.json",
+      "locator": "DARE anchor semantics, asset licenses/dimensions/hash descriptions"
+    }
+  ],
+  "frameCheck": {
+    "candidateBboxLonLat": [
+      19.595,
+      44.972,
+      19.642,
+      44.993
+    ],
+    "parentProfileBboxLonLat": [
+      19.575,
+      44.948,
+      19.65,
+      44.996
+    ],
+    "fullyWithinParent": true,
+    "parentMarginFromFrameM": {
+      "west": 1573.0,
+      "east": 629.2,
+      "south": 2668.7,
+      "north": 333.6
+    },
+    "approxDimensionsM": {
+      "widthAtMidLatitude": 3696.6,
+      "heightAtCenterLongitude": 2335.1
+    },
+    "calculationMethod": "WGS84 lon/lat bbox containment; distances via spherical haversine with mean Earth radius 6,371,008.8 m. Width evaluated along frame mid-latitude, height along center longitude; rounded to 0.1 m."
+  },
+  "dareRelation": {
+    "publishedControl": {
+      "lonLat": [
+        19.61017,
+        44.96648
+      ],
+      "crs": "WGS84",
+      "record": "DARE / Imperium Sirmium record 10865",
+      "publishedPrecisionM": 2000,
+      "url": "https://imperium.ahlfeldt.se/places/10865.html"
+    },
+    "nearestFramePointLonLat": [
+      19.61017,
+      44.972
+    ],
+    "distanceFromPointToFrameM": 613.8,
+    "distanceFromPointToFrameCenterM": 1898.0,
+    "interpretation": "Only a coordinate arithmetic comparison to a low-precision settlement-level gazetteer anchor. This does not certify frame contents, city edge, dry ground, an ancient street, or accession venue."
+  },
+  "modernRiverControl": {
+    "dataset": "Natural Earth 10m river/lake centerlines GeoJSON; local manifest ID ne-odyssey-rivers10m; public domain; source page https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/; raw URL https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+    "manifestSha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+    "manifestBytes": 7307743,
+    "feature": {
+      "name": "Sava",
+      "featurecla": "River",
+      "geometryType": "MultiLineString",
+      "vertexCount": 375,
+      "segmentCount": 374
+    },
+    "frameIntersection": {
+      "segmentIntersections": 0,
+      "verticesInside": 0,
+      "nearestApproxDistanceM": 411.2,
+      "nearestGeometry": {
+        "segment": [
+          [
+            19.511892,
+            44.983222
+          ],
+          [
+            19.619151,
+            44.963813
+          ]
+        ],
+        "frameCornerLonLat": [
+          19.595,
+          44.972
+        ],
+        "nearestPointOnLineLonLat": [
+          19.593704321627516,
+          44.96841769126629
+        ],
+        "segmentT": 0.7627548422744821
+      },
+      "method": "local equirectangular projection centered on frame; straight-segment/rectangle calculation; approximate, suitable only for regional separation check"
+    },
+    "parentIntersection": {
+      "segmentIntersections": 3,
+      "verticesInside": 2
+    },
+    "finding": "The named modern generalized Sava feature intersects the parent regional bbox but does not intersect the candidate frame. Its nearest generalized segment is approximately 411 m south of the frame southwest corner. The candidate therefore has no river-line geometry inside it in this dataset; the Sava is nearby in the parent-level context. This is not evidence for or against a 379 shoreline, wetland, water depth, navigability, ford, bridge, or dry terrain. Profile has no dedicated Sirmium waterControlLine geometry field.",
+    "coordinateReferenceSystem": "urn:ogc:def:crs:OGC:1.3:CRS84 (longitude, latitude)"
+  },
+  "sirmiumImageAssets": [
+    {
+      "id": "sirmium-palace-modern-excavation",
+      "path": "docs/research/odyssey-research/images/sirmium-palace-modern-excavation.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg",
+      "author": "sm022",
+      "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "sha256": "6cbf99afa0880d7d4b9d1aa6f520ce5ad917af67d08da8c1e6d0d75ea10f40b2",
+      "bytes": 1488612,
+      "attribution": "sm022, ‘Sirmium, Imperial Palace’, CC BY 3.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Sirmium,_Imperial_Palace.jpg). No edits made.",
+      "productionApproved": false,
+      "observedBytes": 1488612,
+      "observedSha256": "6cbf99afa0880d7d4b9d1aa6f520ce5ad917af67d08da8c1e6d0d75ea10f40b2",
+      "observedDimensionsPx": [
+        2592,
+        1944
+      ]
+    },
+    {
+      "id": "sirmium-mosaic-modern-detail",
+      "path": "docs/research/odyssey-research/images/sirmium-mosaic-modern-detail.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg",
+      "author": "Dekanski",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sha256": "91f811e4b440dfe7334610497a047d5e0d9a7a8f9826d6c9e976ef9721443d4a",
+      "bytes": 4161796,
+      "attribution": "Dekanski, ‘Сирмиум 06’, CC BY-SA 4.0, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B8%D1%80%D0%BC%D0%B8%D1%83%D0%BC_06.jpg). No edits made; adaptations, if any, must retain compatible share-alike terms.",
+      "productionApproved": false,
+      "observedBytes": 4161796,
+      "observedSha256": "91f811e4b440dfe7334610497a047d5e0d9a7a8f9826d6c9e976ef9721443d4a",
+      "observedDimensionsPx": [
+        3586,
+        2690
+      ]
+    }
+  ],
+  "limits": [
+    "Frame inclusion is a bounding-box calculation only; it does not select or certify any terrain.",
+    "DARE point is published with 2,000 m precision and is settlement-level, not an exact archaeological site point.",
+    "Natural Earth is present-day generalized hydrography, not ancient Sava banks. It is not a surveyed or high-resolution local channel.",
+    "Neither image establishes ancient street, wall, palace footprint, 379 appearance, or event location; both records state productionApproved=false.",
+    "No route, district, gameplay marker, historic coordinate, or map layout is selected."
+  ]
+}
