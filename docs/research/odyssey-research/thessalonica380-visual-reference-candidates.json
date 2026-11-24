@@ -1,0 +1,74 @@
+{
+  "project": "Thessalonica 380 local map visual references",
+  "consulted_at": "2026-10-15",
+  "scope_note": "Candidates are present-day photographs of surviving archaeological remains. They can inform visual texture and visible monument fragments only; they do not document Thessalonica as it looked in 380, prove the monuments' full original forms, or identify/certify an imperial headquarters site. The precise imperial seat remains uncertified.",
+  "candidates": [
+    {
+      "id": "arch-of-galerius",
+      "status": "downloaded research reference; production approval pending",
+      "title": "Arch of Galerius, Thessaloniki",
+      "depicted_subject": "Surviving brick and stone portions of the arch, sculpted pier, fenced archaeological monument, paved modern street, cars and contemporary apartment buildings.",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Arch_of_Galerius,_Thessaloniki.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Arch_of_Galerius%2C_Thessaloniki.jpg",
+      "local_file": "docs/research/odyssey-research/images/thessalonica-galerius-arch-modern.jpg",
+      "author": "Digitalphilologist",
+      "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Digitalphilologist, ‘Arch of Galerius, Thessaloniki’, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Arch_of_Galerius,_Thessaloniki.jpg. No changes made.",
+      "media": {
+        "mime_type": "image/jpeg",
+        "width": 4284,
+        "height": 5712,
+        "bytes": 5821603
+      },
+      "sha256": "4f6ae65baa91b38d33b60daf8d700d0c3bbb2ab7fa396a0cb29ecd1993fa1168",
+      "source_page_metadata": {
+        "photo_date": "2024-08-07",
+        "source": "own work",
+        "commons_file_revision": "2024-08-18"
+      },
+      "visual_review": "Downloaded original inspected at actual image level. Monument is partial/surviving fabric with modern fencing, paving, vehicles and buildings; useful for surviving masonry and sculptural relief cues, not as a complete-period reconstruction.",
+      "historical_limitations": [
+        "A modern photograph of a monument associated with the late Roman/early 4th-century city, not visual evidence of its exact appearance in 380.",
+        "Surviving sections and present restoration/conservation state cannot establish original completeness, height, colors, or nearby urban context.",
+        "Does not locate or certify an imperial headquarters or palace."
+      ],
+      "projectAssetId": "thessalonica-galerius-arch-modern",
+      "architectVisualInspection": "Actual downloaded JPEG viewed 2026-10-15; modern environment and fragmentary/restored fabric remain excluded from period reconstruction."
+    },
+    {
+      "id": "roman-forum-excavation",
+      "status": "downloaded research reference; production approval pending",
+      "title": "Forum Romanum Thessaloniki",
+      "depicted_subject": "Excavated Roman forum remains in the foreground with modern residential buildings behind them.",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Forum_Romanum_Thessaloniki.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Forum_Romanum_Thessaloniki.jpg",
+      "local_file": "docs/research/odyssey-research/images/thessalonica-roman-forum-modern.jpg",
+      "author": "Elke Brüser (Commons account: Federlesen)",
+      "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Elke Brüser, ‘Forum Romanum Thessaloniki’, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Forum_Romanum_Thessaloniki.jpg. No changes made.",
+      "media": {
+        "mime_type": "image/jpeg",
+        "width": 3000,
+        "height": 2250,
+        "bytes": 2380992
+      },
+      "sha256": "878846ccd478cd2e1d6b268e990892986b06e4be296dc88bae992231457c2183",
+      "source_page_metadata": {
+        "photo_date": "2021-10-23",
+        "source": "own work",
+        "commons_file_revision": "2022-01-04"
+      },
+      "visual_review": "Downloaded original inspected at actual image level. Broad modern excavation view shows low remains, arches/brickwork and contemporary apartment blocks; useful to understand the present archaeological footprint and fragmentary state.",
+      "historical_limitations": [
+        "Modern excavation photograph; it does not show the forum as it appeared in 380.",
+        "Visible remains reflect excavation, later alterations and conservation; do not infer a complete ancient plan or phase from this image alone.",
+        "Modern apartment buildings dominate the background and are not period scenery.",
+        "The forum does not establish an imperial headquarters location."
+      ],
+      "projectAssetId": "thessalonica-roman-forum-modern",
+      "architectVisualInspection": "Actual downloaded JPEG viewed 2026-10-15; modern environment and fragmentary/restored fabric remain excluded from period reconstruction."
+    }
+  ]
+}

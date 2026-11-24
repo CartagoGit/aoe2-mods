@@ -1,0 +1,334 @@
+{
+  "campaignId": "jewish-tradition",
+  "scope": "episodeSelection orders 1-10 in docs/design/odysseys/jewish-tradition.json",
+  "auditDate": "2026-10-13",
+  "mode": "read-only source collection; no historical/design approval",
+  "episodes": [
+    {
+      "order": 1,
+      "id": "01-a-city-of-names",
+      "date": "70 CE",
+      "place": "Jerusalem; no precise neighborhood/refuge location substantiated here",
+      "selectedClaim": "Roman legions destroyed the Jerusalem Temple after the revolt.",
+      "references": [
+        {
+          "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+          "reference": "Josephus, Jewish War VI.4-5, especially §§4-5; VI.10 for capture/fall",
+          "directlyConsulted": "Opened and read English Whiston translation paragraphs on fire, dates, Titus's response, and capture: page lines 175-181 and 329-332. It says the Temple fire began on the tenth of Lous/Ab in Josephus's chronology and Jerusalem was taken on eighth of Gorpiaeus/Elul.",
+          "supports": "Josephus narrates the Roman capture and destruction of Jerusalem/Temple in 70 CE; his narrative gives two different calendrical dates for fire and capture.",
+          "limits": "Translation and editorial apparatus are Whiston; Greek critical text not checked. Josephus was a participant and wrote under Flavian patronage. His narrative itself varies about the fire's origin/culpability. It does not authenticate his theological claims or provide a neutral chain of command."
+        }
+      ],
+      "conflictsAndGeography": "Use 70 CE. Keep date-of-fire distinct from date-of-city-capture; do not treat a modern Temple Mount location pin as a precise 70 CE scene footprint.",
+      "imageCandidates": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Model_of_Jerusalem_in_the_Late_Second_Temple_Period_34.jpg",
+          "author": "Daniel Ventura",
+          "photographDate": "2008-11-05",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "directlyConsulted": "Commons file page, description, author and license lines 119-147. Description says the model represents Jerusalem c.66 CE, four years before destruction, based on Michael Avi-Yonah's interpretation of Josephus.",
+          "limitations": "Modern model and modern scholarly reconstruction, not primary archaeological image; c.66 representation is close context but not an eyewitness depiction of the 70 siege. Any adaptation must comply with attribution/share-alike."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Temple_Mount_model.jpg",
+          "author": "Chesdovi",
+          "photographDate": "2007-11-22",
+          "license": "Public domain, self-released",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Temple_Mount_model.jpg",
+          "directlyConsulted": "Commons file page lines 113-122: photo of Israel Museum Temple Mount model; uploader releases photo to public domain.",
+          "limitations": "The frame shows a modern model, not a surviving ancient structure; image's short caption gives no modeled date or interpretation. Candidate only."
+        }
+      ],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 2,
+      "id": "02-refuge-and-school-supply-yavneh",
+      "date": "c.70-80 CE (selected date is not independently pinned by direct evidence)",
+      "place": "Yavneh/Jamnia (modern Yavne); exact ancient school site not established by sources read",
+      "selectedClaim": "Yohanan ben Zakkai and scholars are associated with rabbinic activity at Yavneh.",
+      "references": [
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "reference": "Center for Online Judaic Studies, 'Tannaitic Literature (circa 70-3rd century CE)', excerpt, lines 22-30; excerpt reproduces/derives from Lawrence H. Schiffman, From Text to Tradition",
+          "directlyConsulted": "Read the accessible excerpt. It associates tannaitic activity after Temple destruction with Yavneh, Usha, Beth Shearim and Sepphoris; says transmission involved divergent opinions. It calls Akiva's link to Yavneh later tradition and says exact responsibility cannot be determined.",
+          "supports": "Post-70 tannaitic transmission is associated in modern synthesis with multiple centers including Yavneh.",
+          "limits": "The consulted excerpt does not directly establish a dated 70-80 school scene or the named Yohanan ben Zakkai claim. The underlying rabbinic texts were not opened for this audit. It does not support a single formal academy's exact founding."
+        },
+        {
+          "url": "https://www.jewishvirtuallibrary.org/yavneh",
+          "reference": "Yavneh entry cited in selection",
+          "directlyConsulted": "Page retrieval returned an internal error in this audit; no page text verified here.",
+          "supports": "Nothing independently assessed from this URL in this pass.",
+          "limits": "Do not represent as directly checked in this audit."
+        }
+      ],
+      "conflictsAndGeography": "Treat Yavneh as a place associated with post-Temple rabbinic activity in later source traditions and modern synthesis. A precise 70-80 founding date, school building, formal institutional continuity, or single 'Council of Jamnia' is not supported by the passage read.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 3,
+      "id": "03-distributed-study-network-yavneh",
+      "date": "c.80-100 CE (broadly illustrative; no exact start date established)",
+      "place": "Yavneh and other tannaitic centers; source does not document a single geographic network map",
+      "selectedClaim": "Legal traditions and scholarly activity sustained Jewish life after the loss of the Temple.",
+      "references": [
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "reference": "COJS excerpt, lines 20-32",
+          "directlyConsulted": "Read excerpt lines 20 and 22-32. It describes the Mishnah as compiled from discrete attributed statements; post-Temple activity at Yavneh, Usha, Beth Shearim and Sepphoris; transmission of divergent views; and later redaction with uncertain timing.",
+          "supports": "A process of preserving, transmitting, organizing and redacting legal traditions after 70, over more than one center and period.",
+          "limits": "This is a modern excerpt/synthesis rather than the complete book or contemporaneous documentation. It does not prove a coordinated 'network' operating exactly c.80-100 or an unbroken institutional organization."
+        }
+      ],
+      "conflictsAndGeography": "Avoid locating one unified academy at Yavneh for the whole period. The consulted synthesis names several centers and stresses uncertainty about when redaction began.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 4,
+      "id": "04-witness-comparison-yavneh",
+      "date": "c.90-100 CE in the selection; the cited rabbinic traditions are later and do not date a specific Yavneh debate to this interval",
+      "place": "Yavneh as the episode's selected setting; the primary passage does not itself locate the debate at Yavneh",
+      "selectedClaim": "Rabbinic traditions preserve disagreements about Ecclesiastes and Song of Songs.",
+      "references": [
+        {
+          "url": "https://torahinmotion.org/sites/default/files/Canonization.pdf",
+          "reference": "Mishnah Yadayim 3:5, English and Hebrew text, PDF pp.16-17 (printed locators around lines 241-275)",
+          "directlyConsulted": "Read the displayed passage. It records named positions attributed to Rabbi Yehudah, Yosei, Shimon, Shimon ben Azzai and Akiva on whether Song of Songs/Ecclesiastes 'defile the hands'.",
+          "supports": "The received Mishnah text represents disagreements and a tradition that both books' status was discussed; Akiva's praise of Song of Songs is part of that later textual tradition.",
+          "limits": "This source is a modern PDF reproduction/translation of the Mishnah, not an early manuscript or contemporaneous transcript. The saying about 72 elders is internal attributed tradition, not independent proof of a historical council. It does not place a dated debate at Yavneh, establish closure of the canon, or prove the historical accuracy of later attributions."
+        },
+        {
+          "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+          "reference": "Mariusz Rosik, 'The Christian Question in Jamnia Academy at the End of the 1st Century AD?'; article landing page abstract",
+          "directlyConsulted": "Read title, abstract and bibliography on the journal page (lines 14-38 and 92-123); full article text was not opened/read. Abstract challenges the synod/canon/Septuagint claims, but advances its own conclusion about Christians being excluded.",
+          "supports": "The cited scholarship explicitly treats 'Council of Jamnia' claims as contested and identifies canon-setting as part of a debated historiographical construction.",
+          "limits": "Only abstract and bibliography were read; do not cite it as if the full article's argument was evaluated. The abstract's conclusion about exclusion is not independently established by this audit."
+        }
+      ],
+      "conflictsAndGeography": "The selected date/location is not supported by Mishnah Yadayim 3:5. Rabbinic discussion of scriptural status is later textual evidence; the passage cannot establish a one-time Jamnia synod or a settled canon-making event at Yavneh.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 5,
+      "id": "05-fiscal-record-reconciliation-rome-ostia",
+      "date": "96 CE (Nerva's reign; coin issue date and exact reform timing should be confirmed in numismatic catalog)",
+      "place": "Rome is directly represented by Suetonius's court anecdote; selection's Rome-Ostia pairing is not evidenced by that anecdote",
+      "selectedClaim": "Nerva advertised removal of abuses in the Jewish tax; Suetonius describes intrusive enforcement under Domitian.",
+      "references": [
+        {
+          "url": "https://www.posenlibrary.com/entry/invasive-tax-enforcement",
+          "reference": "Suetonius, Domitian 12.2, J.C. Rolfe translation, quoted by Posen Library; entry notes Loeb vol. II (1914), pp.365-367",
+          "directlyConsulted": "Read the quoted passage and its source credit, Posen lines 32-49. Suetonius claims Domitian's fiscus Judaicus was rigorously enforced and recounts a public examination of a 90-year-old man's circumcision; Suetonius says he witnessed it in youth.",
+          "supports": "A literary report that Domitian's tax enforcement could be intrusive, and that Suetonius presents himself as an eyewitness to one examination.",
+          "limits": "Suetonius is a retrospective biographer; the episode gives no specific date or evidence of Ostia. It does not quantify incidence or prove uniform policy across provinces."
+        },
+        {
+          "url": "https://search.smb.museum/object/obj-2353116",
+          "reference": "Staatliche Museen zu Berlin, Münzkabinett, Nerva coin catalog record; obverse/reverse legend and catalog commentary",
+          "directlyConsulted": "Read catalog fields 60-68: reverse legend FISCI IVDAICI CALVMNIA SVBLATA; catalog interprets it as withdrawal of hardships in collection of the special tax under Nerva, with references RIC II no.82 and numismatic literature.",
+          "supports": "A coin's public message under Nerva advertised 'calumny/abuse of the fiscus Judaicus removed'; supports a claim of advertised correction, not abolition of the tax.",
+          "limits": "The record did not expose an exact issue year beyond Nerva reign context in text inspected; catalogue interpretation is secondary. Need item-level dating/citation before assigning exact 96 issue date. It says correction of harsh collection, not abolishment."
+        }
+      ],
+      "conflictsAndGeography": "The selected place is Rome-Ostia but the ancient passage is a hearing at Rome. No consulted evidence supports an Ostia archive/scene. Claudius 25 belongs to ca.49 CE and is not evidence for this 90-110 event. Nerva's coin legend refers to removal of calumnia/abuse, not repeal of tax.",
+      "imageCandidates": [
+        {
+          "url": "https://search.smb.museum/object/obj-2353116",
+          "author": "State Museums of Berlin object; image rights not established in inspected record",
+          "license": "not verified",
+          "directlyConsulted": "Catalog record text only; no reproduction license visible in fields inspected.",
+          "limitations": "Do not treat museum image as cleared for reuse; use the textual legend/catalog record unless separate rights page is verified."
+        }
+      ],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 6,
+      "id": "06-teaching-record-escort-lod",
+      "date": "c.100-135 CE; Akiva's career broadly placed c.80-132 by consulted synthesis; death/martyrdom chronology remains traditional and contested",
+      "place": "Lod is the selected episode setting; source consulted does not document this specific teaching activity in Lod",
+      "selectedClaim": "Rabbi Akiva and colleagues transmitted tannaitic legal and liturgical traditions.",
+      "references": [
+        {
+          "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+          "reference": "COJS excerpt, lines 28-31",
+          "directlyConsulted": "Read passage identifying Akiva's Yavneh floruit as c.80-132, with attribution to later tradition/modern scholars, uncertainty about his role in systematization, and post-132 work at Usha.",
+          "supports": "Legal treatises and organizational traditions were developing in Akiva's broadly assigned lifetime; Akiva is traditionally associated with Yavneh.",
+          "limits": "Modern synthesis; no contemporary biography or direct source for a Lod teaching scene, particular escort, liturgical event, or death date. It explicitly says exact responsibility cannot be determined."
+        }
+      ],
+      "conflictsAndGeography": "Reject c.150-180 activity for Akiva as anachronistic under the selected chronology. Keep Lod as local fictional staging only unless a separate source supports it; do not claim the COJS excerpt places Akiva there.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 7,
+      "id": "07-civilian-refuge-cyrene",
+      "date": "115-117 CE (revolt episode broadly dated to Trajan's final eastern campaigns)",
+      "place": "Cyrene/Cyrenaica; exact local battle/refuge site not supplied by sources consulted",
+      "selectedClaim": "Diaspora revolts affected Cyrenaica, Egypt and Cyprus during Trajan's war.",
+      "references": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68%2A.html",
+          "reference": "Cassius Dio, Roman History 68.32.1-3, Cary translation of the surviving epitome",
+          "directlyConsulted": "Read lines 152-155. Dio places revolt under Andreas in Cyrene, reports analogous uprisings in Egypt and Cyprus under Artemion, and says Lusius was among those who subdued them.",
+          "supports": "Ancient literary evidence for unrest in Cyrene, Egypt and Cyprus during Trajan's eastern wars and Roman suppression.",
+          "limits": "Dio's text survives through later epitome/transmission; this passage's extravagant atrocity allegations and huge casualty numbers are not independently corroborated by this source and should not be repeated as facts. Does not provide a map footprint or prove one unified command across all regions."
+        },
+        {
+          "url": "https://www.posenlibrary.com/entry/jewish-rebellion-cyrene",
+          "reference": "Posen Library entry and source excerpt, Cassius Dio 68.32.1-3 (Loeb citation listed by entry)",
+          "directlyConsulted": "Read opened page source/description; page search result exposes source identification and region; some page content was not accessible in line view. Primary Dio passage was separately read at Chicago above.",
+          "supports": "Useful scholarly-curated attribution and source identification; not independent corroboration of Dio.",
+          "limits": "Do not treat Posen's interpretive overview as another primary witness."
+        }
+      ],
+      "conflictsAndGeography": "The exact extent and violence are disputed and the narrative is Roman and rhetorically charged. No coordinates/individual refuge sites supported. Do not attach Dio's casualty figures to a playable local map.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 8,
+      "id": "08-harbour-supply-and-witnesses-alexandria",
+      "date": "115-117 CE; Egyptian local reconstruction is not itself sourced to Alexandria in the cited passage",
+      "place": "Alexandria selected, but Dio 68.32 says 'in Egypt' and does not name Alexandria here",
+      "selectedClaim": "Diaspora revolts affected Cyrenaica, Egypt and Cyprus during Trajan's war.",
+      "references": [
+        {
+          "url": "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68%2A.html",
+          "reference": "Cassius Dio, Roman History 68.32.2-3",
+          "directlyConsulted": "Read the text at lines 153-154; Dio says revolt also occurred in Egypt and Cyprus under Artemion, after describing Cyrene.",
+          "supports": "A revolt in Egypt as a region during these events.",
+          "limits": "This text does not identify Alexandria as the site or provide a harbor episode. Need independent Egyptian papyrus/inscription/archaeological or ancient source for Alexandria-specific local action; the campaign's local reconstruction must be labeled as such."
+        }
+      ],
+      "conflictsAndGeography": "Do not turn 'Egypt' into Alexandria without a separate source. Dio's casualty and atrocity claims are not reliable quantitative evidence; no port geography/event footprint supplied here.",
+      "imageCandidates": [],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 9,
+      "id": "09-administrative-records-jerusalem",
+      "date": "c.130-132 CE; date/order of Hadrian's visit, colony foundation, and revolt is disputed",
+      "place": "Jerusalem, renamed Aelia Capitolina in Dio's narrative; no exact founding day/site work evidenced",
+      "selectedClaim": "Hadrian visited Judea and promoted a Roman colony at Jerusalem, according to a historical narrative; direct causal link to revolt contested.",
+      "references": [
+        {
+          "url": "https://www.livius.org/sources/content/cassius-dio/cassius-dio-on-bar-kochba/",
+          "reference": "Cassius Dio, Roman History 69.12.1-3, English translation excerpt by E. Cary",
+          "directlyConsulted": "Read lines 15-18: Dio states Aelia Capitolina was founded at Jerusalem, a Jupiter temple was established at the site of the Jewish temple, and narratively links this to revolt; he describes fortified/refuge positions.",
+          "supports": "Dio's account of Hadrian's Jerusalem colony and the revolt, with his causal framing explicitly attributed to Dio.",
+          "limits": "Dio wrote retrospectively; the quoted passage cannot alone settle chronology or causation. The route says 69.12-14 but only 69.12.1-3 directly read for this audit. No direct primary inscription/civic coin dated to the precise founding moment checked here."
+        }
+      ],
+      "conflictsAndGeography": "Keep date band qualified. Avoid unqualified claim that one act immediately caused the revolt. The text's exact sequencing is Dio's interpretation and does not give a local architectural blueprint.",
+      "imageCandidates": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Model_of_Jerusalem_in_the_Late_Second_Temple_Period_34.jpg",
+          "author": "Daniel Ventura",
+          "photographDate": "2008-11-05",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "limitations": "Depicts a scholarly model of pre-destruction Second Temple Jerusalem, not Aelia Capitolina or Hadrianic city fabric; unsuitable as direct visual reference for this episode except explicitly labeled inherited topography."
+        }
+      ],
+      "approval": "pending independent historical review"
+    },
+    {
+      "order": 10,
+      "id": "10-finite-mint-consignments-judean-hills",
+      "date": "132-135 CE (common reference chronology; some accounts use 132-136)",
+      "place": "Judaean Desert refuge caves and regional revolt areas; no single generalized 'Judean Hills' location for all objects",
+      "selectedClaim": "Bar Kokhba revolt against Rome; rebel coinage and desert documents attest administration.",
+      "references": [
+        {
+          "url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/discovery-sites",
+          "reference": "Israel Antiquities Authority / Shrine of the Book, 'Bar Kokhba Revolt Refuge Caves', sections Wadi Murabba'at and Nahal Hever, lines 82-101",
+          "directlyConsulted": "Read institutional discovery-site descriptions: Wadi Murabba'at has documents mostly dated 132-135, administrative papyri and letters of Shim'on bar Kosiba; Nahal Hever excavations 1960-61 yielded personal documents, military communications and biblical compositions, including a dated cave archive with letters and financial records.",
+          "supports": "Primary papyri/letters and refuge-cave archives provide evidence for administrative and military communications during the revolt period; source names Shim'on bar Kosiba as the official name in documents.",
+          "limits": "Institutional overview, not item catalog/transcription. It does not establish that every object in the caves is rebel administration or a mint record. Nahal Hever Cave of Letters includes dated items from 94-132 CE, so cave assemblages span pre-revolt material as well. Need item-level records before naming specific document, amount, or scene."
+        },
+        {
+          "url": "https://www.imj.org.il/en/wings/shrine-book/bar-kochba-revolt",
+          "reference": "Israel Museum, Shrine of the Book, overview cited by episode",
+          "directlyConsulted": "Museum page request returned an internal error in this web pass; the claim was cross-checked against the Israel Antiquities Authority/Shrine of the Book discovery-sites page above. Museum page not independently re-read.",
+          "supports": "Not independently assessed from this exact URL here.",
+          "limits": "Do not claim the cited museum page itself was accessed."
+        },
+        {
+          "url": "https://www.livius.org/sources/content/cassius-dio/cassius-dio-on-bar-kochba/",
+          "reference": "Dio 69.12-14, translated excerpt",
+          "directlyConsulted": "Read Dio 69.12.1-3 at lines 15-18; not all of 69.12-14 in this pass.",
+          "supports": "Roman literary narrative of revolt, fortified refuges and conflict; source attributes cause to colony/temple changes.",
+          "limits": "Retrospective Roman narrative with large-scale claims; not a substitute for papyri/coins and not an independent item catalog."
+        }
+      ],
+      "conflictsAndGeography": "Do not infer one document proves a local mission event. Cave-find provenance matters; distinction among Murabba'at, Nahal Hever and other desert sites must be preserved. The official name in documents is Shim'on ben Kosiba; Bar Kokhba is a later/interpretive epithet, not a neutral contemporaneous personal name.",
+      "imageCandidates": [
+        {
+          "url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/discovery-sites",
+          "author": "Institutional site image credit on page names Duby Tal / Albatross for a separate Cave 11 photo; no specific Nahal Hever asset's reusable license verified",
+          "license": "not established",
+          "directlyConsulted": "Institutional text and image credits read; no open-license statement was located for a Bar Kokhba letter or Nahal Hever image.",
+          "limitations": "No image cleared for reuse by this audit. Seek item-level museum rights statement or Commons file page with explicit license."
+        }
+      ],
+      "approval": "pending independent historical review"
+    }
+  ],
+  "generalSourceNotes": [
+    {
+      "url": "https://penelope.uchicago.edu/josephus/war-6.html",
+      "title": "Josephus, Jewish War VI (Whiston translation)",
+      "scope": "Direct English passage consulted; not critical Greek edition."
+    },
+    {
+      "url": "https://cojs.org/tannaitic_literature_-circa_70-3rd_century_ce/",
+      "title": "Tannaitic Literature (circa 70-3rd century CE), COJS excerpt",
+      "scope": "Accessible excerpt lines 20, 22-32; not full book; modern synthesis derived from Schiffman."
+    },
+    {
+      "url": "https://torahinmotion.org/sites/default/files/Canonization.pdf",
+      "title": "Mishnah Yadayim 3:5 reproduction in Canonization PDF",
+      "scope": "Passage read, pp.16-17; modern reproduction/translation, not manuscript."
+    },
+    {
+      "url": "https://www.posenlibrary.com/entry/invasive-tax-enforcement",
+      "title": "Posen Library, Suetonius Domitian 12.2",
+      "scope": "Quoted ancient passage, translator and Loeb citation read."
+    },
+    {
+      "url": "https://search.smb.museum/object/obj-2353116",
+      "title": "Staatliche Museen zu Berlin Nerva coin record",
+      "scope": "Object legends and catalog commentary read; image license not verified."
+    },
+    {
+      "url": "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68%2A.html",
+      "title": "Cassius Dio, Roman History 68 epitome",
+      "scope": "68.32.1-3 English Cary translation read; later epitome/transmission; no full book."
+    },
+    {
+      "url": "https://www.livius.org/sources/content/cassius-dio/cassius-dio-on-bar-kochba/",
+      "title": "Livius excerpt of Dio 69.12-14",
+      "scope": "69.12.1-3 read; not the whole section."
+    },
+    {
+      "url": "https://www.deadseascrolls.org.il/learn-about-the-scrolls/discovery-sites",
+      "title": "Israel Antiquities Authority / Shrine of the Book discovery-site guide",
+      "scope": "Wadi Murabba'at and Nahal Hever sections read; overview, not item catalogs."
+    },
+    {
+      "url": "https://czasopisma.kul.pl/index.php/vv/article/view/14060",
+      "title": "Mariusz Rosik, Jamnia article landing page",
+      "scope": "Abstract/bibliography only; full article not read."
+    }
+  ],
+  "reviewStatus": "All ten episodes remain unapproved; this file records source access and factual limits only.",
+  "collectionAgent": "gpt-6-luna",
+  "architectApproval": false
+}

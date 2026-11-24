@@ -1,0 +1,1666 @@
+{
+  "auditType": "independent mechanical map/objective audit",
+  "sourceFile": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "architectApproval": false,
+  "historicalApproval": false,
+  "nativeMapOrGameApproval": false,
+  "method": {
+    "tileCoordinateConvention": "400×400 tile centers; map bounds [0,399], geographic projection WGS84 cosine-corrected longitude with square padding; use size-1=399",
+    "corridorFootprint": "polyline segments buffered by half declared width; frame check uses all segment extrema ±half-width",
+    "svgProjection": "map frame rectangle is x=55..705,y=85..735; SVG scale 650/399 px per tile center interval",
+    "limitations": [
+      "This checks declared coordinates and schematic geometry, not native terrain/pathfinding, entity collision radii, ancient topography, or historical accuracy.",
+      "schematicWaterControl absent/null/empty means there is no water polygon/line to intersect; it does not establish dry land.",
+      "Modern geographic or coastline layers are controls of stated dates, not ancient shoreline reconstructions."
+    ]
+  },
+  "episodes": [
+    {
+      "order": 21,
+      "episodeId": "21-returning-households-escort-alexandria",
+      "projectionCheck": {
+        "formula": "cosine corrected longitude at bbox midpoint latitude; span=max((east-west)*cos(mid-lat),(north-south))*1.12; center bbox; x=(.5+(lon-midLon)*cos/ span)*(size-1); y=(.5-(lat-midLat)/span)*(size-1)",
+        "hubResiduals": [
+          {
+            "hub": "hub-1",
+            "tileDeclared": [
+              62.26,
+              206.33
+            ],
+            "tileCalculated": [
+              62.256,
+              206.327
+            ],
+            "residualTiles": 0.0047
+          },
+          {
+            "hub": "hub-2",
+            "tileDeclared": [
+              319.22,
+              138.05
+            ],
+            "tileCalculated": [
+              319.223,
+              138.055
+            ],
+            "residualTiles": 0.0058
+          },
+          {
+            "hub": "hub-3",
+            "tileDeclared": [
+              208.26,
+              192.67
+            ],
+            "tileCalculated": [
+              208.26,
+              192.673
+            ],
+            "residualTiles": 0.0028
+          },
+          {
+            "hub": "hub-4",
+            "tileDeclared": [
+              120.66,
+              247.29
+            ],
+            "tileCalculated": [
+              120.658,
+              247.291
+            ],
+            "residualTiles": 0.0024
+          },
+          {
+            "hub": "hub-5",
+            "tileDeclared": [
+              290.02,
+              226.81
+            ],
+            "tileCalculated": [
+              290.023,
+              226.809
+            ],
+            "residualTiles": 0.0027
+          },
+          {
+            "hub": "hub-6",
+            "tileDeclared": [
+              214.1,
+              301.91
+            ],
+            "tileCalculated": [
+              214.1,
+              301.909
+            ],
+            "residualTiles": 0.0012
+          }
+        ],
+        "maxResidualTiles": 0.0058
+      },
+      "hubCount": 6,
+      "allHubsRadius12": true,
+      "hubFootprints": [
+        {
+          "hub": "hub-1",
+          "circleInside": true,
+          "edgeClearanceTiles": 50.26
+        },
+        {
+          "hub": "hub-2",
+          "circleInside": true,
+          "edgeClearanceTiles": 67.78
+        },
+        {
+          "hub": "hub-3",
+          "circleInside": true,
+          "edgeClearanceTiles": 178.74
+        },
+        {
+          "hub": "hub-4",
+          "circleInside": true,
+          "edgeClearanceTiles": 108.66
+        },
+        {
+          "hub": "hub-5",
+          "circleInside": true,
+          "edgeClearanceTiles": 96.98
+        },
+        {
+          "hub": "hub-6",
+          "circleInside": true,
+          "edgeClearanceTiles": 85.09
+        }
+      ],
+      "minimumHubSpacing": [
+        {
+          "a": "hub-1",
+          "b": "hub-4",
+          "centerDistance": 71.33,
+          "edgeGapWithRadius12": 47.33
+        },
+        {
+          "a": "hub-3",
+          "b": "hub-5",
+          "centerDistance": 88.6,
+          "edgeGapWithRadius12": 64.6
+        },
+        {
+          "a": "hub-2",
+          "b": "hub-5",
+          "centerDistance": 93.44,
+          "edgeGapWithRadius12": 69.44
+        }
+      ],
+      "mainEntityCount": 12,
+      "allEntitiesFinite": true,
+      "entities": [
+        {
+          "id": "western-returning-households-1",
+          "hub": "hub-1",
+          "offset": [
+            -14,
+            8
+          ],
+          "tile": [
+            48.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "western-returning-households-2",
+          "hub": "hub-1",
+          "offset": [
+            -12,
+            8
+          ],
+          "tile": [
+            50.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "eastern-returning-households-1",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            8
+          ],
+          "tile": [
+            62.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "eastern-returning-households-2",
+          "hub": "hub-1",
+          "offset": [
+            2,
+            8
+          ],
+          "tile": [
+            64.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "southern-returning-households-1",
+          "hub": "hub-1",
+          "offset": [
+            14,
+            8
+          ],
+          "tile": [
+            76.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "southern-returning-households-2",
+          "hub": "hub-1",
+          "offset": [
+            16,
+            8
+          ],
+          "tile": [
+            78.26,
+            214.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "ordinary-reception-helpers-1",
+          "hub": "hub-2",
+          "offset": [
+            -14,
+            16
+          ],
+          "tile": [
+            305.22,
+            154.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "ordinary-reception-helpers-2",
+          "hub": "hub-2",
+          "offset": [
+            -12,
+            16
+          ],
+          "tile": [
+            307.22,
+            154.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "ordinary-reception-helpers-3",
+          "hub": "hub-2",
+          "offset": [
+            -10,
+            16
+          ],
+          "tile": [
+            309.22,
+            154.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "western-checkin-note-1",
+          "hub": "hub-4",
+          "offset": [
+            0,
+            16
+          ],
+          "tile": [
+            120.66,
+            263.29
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "eastern-checkin-note-1",
+          "hub": "hub-5",
+          "offset": [
+            14,
+            16
+          ],
+          "tile": [
+            304.02,
+            242.81
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "southern-checkin-note-1",
+          "hub": "hub-6",
+          "offset": [
+            -14,
+            24
+          ],
+          "tile": [
+            200.1,
+            325.91
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "zoneCount": 6,
+      "zones": [
+        {
+          "id": "destination-1",
+          "hub": "hub-1",
+          "center": [
+            62.26,
+            206.33
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-2",
+          "hub": "hub-2",
+          "center": [
+            319.22,
+            138.05
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-3",
+          "hub": "hub-3",
+          "center": [
+            208.26,
+            192.67
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-4",
+          "hub": "hub-4",
+          "center": [
+            120.66,
+            247.29
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-5",
+          "hub": "hub-5",
+          "center": [
+            290.02,
+            226.81
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-6",
+          "hub": "hub-6",
+          "center": [
+            214.1,
+            301.91
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        }
+      ],
+      "optionalEntityCount": 9,
+      "optionalEntities": [
+        {
+          "id": "entity-1",
+          "side": "side-1",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            313.22,
+            141.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-1",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            313.22,
+            144.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-2",
+          "hub": "hub-5",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            284.02,
+            229.81
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-3",
+          "hub": "hub-3",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            202.26,
+            195.67
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-4",
+          "hub": "hub-1",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            56.26,
+            209.33
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-5",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            313.22,
+            141.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-5",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            313.22,
+            144.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-6",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            313.22,
+            141.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-6",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            313.22,
+            144.05
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allOptionalEntitiesFinite": true,
+      "optionalZoneCount": 9,
+      "optionalZones": [
+        {
+          "id": "zone-1",
+          "side": "side-1",
+          "hub": "hub-5",
+          "center": [
+            282.02,
+            226.81
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-1",
+          "hub": "hub-5",
+          "center": [
+            298.02,
+            226.81
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-2",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            301.91
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-3",
+          "hub": "hub-4",
+          "center": [
+            128.66,
+            247.29
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-4",
+          "hub": "hub-4",
+          "center": [
+            128.66,
+            247.29
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-5",
+          "hub": "hub-3",
+          "center": [
+            216.26,
+            192.67
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-6",
+          "hub": "hub-6",
+          "center": [
+            222.1,
+            301.91
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-7",
+          "hub": "hub-4",
+          "center": [
+            120.66,
+            239.29
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-7",
+          "hub": "hub-5",
+          "center": [
+            290.02,
+            234.81
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "corridors": [
+        {
+          "id": "western-host-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-4",
+            "hub-3"
+          ],
+          "widthTiles": 10,
+          "centerlineLength": 174.57,
+          "conservativeFrameClearanceAfterHalfWidth": 57.26,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "eastern-host-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-3",
+            "hub-5"
+          ],
+          "widthTiles": 10,
+          "centerlineLength": 235.24,
+          "conservativeFrameClearanceAfterHalfWidth": 57.26,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "southern-host-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-4",
+            "hub-6",
+            "hub-3"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 288.96,
+          "conservativeFrameClearanceAfterHalfWidth": 58.26,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "helper-distribution",
+          "hubOrder": [
+            "hub-2",
+            "hub-5",
+            "hub-3",
+            "hub-4",
+            "hub-6"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 393.51,
+          "conservativeFrameClearanceAfterHalfWidth": 75.78,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "south-account-alternative",
+          "hubOrder": [
+            "hub-5",
+            "hub-6",
+            "hub-3"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 216.18,
+          "conservativeFrameClearanceAfterHalfWidth": 93.09,
+          "fullWidthInsideFrame": true
+        }
+      ],
+      "waterControl": null,
+      "svg": {
+        "svgPath": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/maps/imperial-church/odyssey/21-returning-households-escort-alexandria.svg",
+        "viewBox": "0 0 1050 850",
+        "textNodes": 24,
+        "corridorLines": 5,
+        "corridorIDsMatch": true,
+        "potentialInternalIDsInVisibleText": [],
+        "allLabelsInPageBounds": true,
+        "labelNote": "Numbered hubs in map frame; descriptive labels in right panel. Panel text y values are 190–643 within 850 viewBox; footer at y=780; no internal design IDs were seen as displayed labels. Text positions checked against viewBox, not pixel glyph clipping."
+      },
+      "objectives": {
+        "mainObjectiveCount": 4,
+        "mainObjectiveChecks": [
+          {
+            "objective": "o1",
+            "requirementCount": 5,
+            "requiredCounts": [
+              3,
+              2,
+              2,
+              2,
+              3
+            ],
+            "finiteEntitiesReferenced": true
+          },
+          {
+            "objective": "o2",
+            "requirementCount": 4,
+            "requiredCounts": [
+              2,
+              2,
+              2,
+              null
+            ],
+            "finiteEntitiesReferenced": true
+          },
+          {
+            "objective": "o3",
+            "requirementCount": 4,
+            "requiredCounts": [
+              3,
+              null,
+              null,
+              null
+            ],
+            "finiteEntitiesReferenced": true
+          },
+          {
+            "objective": "o4",
+            "requirementCount": 6,
+            "requiredCounts": [
+              1,
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            "finiteEntitiesReferenced": true
+          }
+        ],
+        "secondaryCount": 7,
+        "sideIDs": [
+          "side-1",
+          "side-2",
+          "side-3",
+          "side-4",
+          "side-5",
+          "side-6",
+          "side-7"
+        ],
+        "playstyles": {
+          "distributed-reception": [
+            "side-1",
+            "side-7"
+          ],
+          "provision-investment": [
+            "side-3",
+            "side-4"
+          ],
+          "context-and-wayfarers": [
+            "side-2",
+            "side-5",
+            "side-6"
+          ]
+        },
+        "sideCountsByPlaystyle": {
+          "distributed-reception": 2,
+          "provision-investment": 2,
+          "context-and-wayfarers": 3
+        },
+        "sideCoverageExactlyOnce": true,
+        "optionalEntityCount": 9,
+        "allOptionalEntitiesFinite": true,
+        "allOptionalZonesInside": true,
+        "allMainEntitiesFinite": true,
+        "skipAllSolvencyEvidence": {
+          "secondaryBudget": {
+            "reservedRewards": {
+              "food": 550,
+              "wood": 200,
+              "gold": 25,
+              "stone": 0
+            },
+            "maxOptionalCosts": {
+              "food": 0,
+              "wood": 50,
+              "gold": 50,
+              "stone": 0
+            },
+            "reallocatedCacheAllowance": {
+              "food": 600,
+              "wood": 300,
+              "gold": 150,
+              "stone": 0
+            },
+            "fundingPolicy": "reward stock is segregated from the finite total bank; no duplicate caches",
+            "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+          },
+          "enemyCounts": {
+            "easy": 0,
+            "standard": 0,
+            "hard": 0
+          },
+          "qaCasesMentionSkipAll": [],
+          "note": "Design declarations include skip-all solvency QA and finite/segregated reward stock; this audit does not execute the scenario."
+        },
+        "orderedDepartureCheck": null,
+        "playerFacingInternalIDLeaks": []
+      },
+      "objectObjectiveSanity": {
+        "threeDistinctHouseholdPairs": {
+          "western-returning-households": 2,
+          "eastern-returning-households": 2,
+          "southern-returning-households": 2
+        },
+        "householdPairCountCorrect": true,
+        "householdPairDestinations": {
+          "western-returning-households": "hub-4",
+          "eastern-returning-households": "hub-5",
+          "southern-returning-households": "hub-6"
+        },
+        "helpersCount": 3,
+        "helperOrdinalDestinationOrder": [
+          "hub-4",
+          "hub-5",
+          "hub-6"
+        ],
+        "notes": "Source authorship distinction: Historia Acephala is explicitly treated in selected claim/correction as an anonymous Alexandrian annalist; no authorship as Athanasius."
+      },
+      "sourceNote": {
+        "selectedClaim": {
+          "en": "An anonymous Alexandrian chronicle places Athanasius’ return after time in Rome and Italy on Paophi 24, rendered as 21 October 346 in the consulted edition. Socrates transmits letters concerning his recall. Six local returning households and their reception courts are disclosed fiction; no historical entourage, population count or route of the bishop is reconstructed.",
+          "es-ES": "Una crónica alejandrina anónima sitúa el regreso de Atanasio tras su estancia en Roma e Italia en Paofi 24, convertido en 21 de octubre de 346 por la edición consultada. Sócrates transmite cartas relativas a su retorno. Los seis hogares locales que regresan y sus patios de acogida son ficción declarada; no se reconstruyen séquito histórico, cifras de población ni ruta del obispo."
+        },
+        "attributionCaveat": "Order 21 source record and correction identify Historia Acephala as anonymous; no attribution to Athanasius."
+      }
+    },
+    {
+      "order": 22,
+      "episodeId": "22-civilian-record-preservation-milan",
+      "projectionCheck": {
+        "formula": "cosine corrected longitude at bbox midpoint latitude; span=max((east-west)*cos(mid-lat),(north-south))*1.12; center bbox; x=(.5+(lon-midLon)*cos/ span)*(size-1); y=(.5-(lat-midLat)/span)*(size-1)",
+        "hubResiduals": [
+          {
+            "hub": "hub-1",
+            "tileDeclared": [
+              189.32,
+              232.16
+            ],
+            "tileCalculated": [
+              189.321,
+              232.156
+            ],
+            "residualTiles": 0.0047
+          },
+          {
+            "hub": "hub-2",
+            "tileDeclared": [
+              87.54,
+              210.39
+            ],
+            "tileCalculated": [
+              87.536,
+              210.385
+            ],
+            "residualTiles": 0.0064
+          },
+          {
+            "hub": "hub-3",
+            "tileDeclared": [
+              291.11,
+              123.3
+            ],
+            "tileCalculated": [
+              291.107,
+              123.304
+            ],
+            "residualTiles": 0.0047
+          },
+          {
+            "hub": "hub-4",
+            "tileDeclared": [
+              311.46,
+              311.98
+            ],
+            "tileCalculated": [
+              311.464,
+              311.98
+            ],
+            "residualTiles": 0.0043
+          },
+          {
+            "hub": "hub-5",
+            "tileDeclared": [
+              179.14,
+              319.24
+            ],
+            "tileCalculated": [
+              179.143,
+              319.237
+            ],
+            "residualTiles": 0.0041
+          },
+          {
+            "hub": "hub-6",
+            "tileDeclared": [
+              184.23,
+              87.02
+            ],
+            "tileCalculated": [
+              184.232,
+              87.02
+            ],
+            "residualTiles": 0.0022
+          }
+        ],
+        "maxResidualTiles": 0.0064
+      },
+      "hubCount": 6,
+      "allHubsRadius12": true,
+      "hubFootprints": [
+        {
+          "hub": "hub-1",
+          "circleInside": true,
+          "edgeClearanceTiles": 154.84
+        },
+        {
+          "hub": "hub-2",
+          "circleInside": true,
+          "edgeClearanceTiles": 75.54
+        },
+        {
+          "hub": "hub-3",
+          "circleInside": true,
+          "edgeClearanceTiles": 95.89
+        },
+        {
+          "hub": "hub-4",
+          "circleInside": true,
+          "edgeClearanceTiles": 75.02
+        },
+        {
+          "hub": "hub-5",
+          "circleInside": true,
+          "edgeClearanceTiles": 67.76
+        },
+        {
+          "hub": "hub-6",
+          "circleInside": true,
+          "edgeClearanceTiles": 75.02
+        }
+      ],
+      "minimumHubSpacing": [
+        {
+          "a": "hub-1",
+          "b": "hub-5",
+          "centerDistance": 87.67,
+          "edgeGapWithRadius12": 63.67
+        },
+        {
+          "a": "hub-1",
+          "b": "hub-2",
+          "centerDistance": 104.08,
+          "edgeGapWithRadius12": 80.08
+        },
+        {
+          "a": "hub-3",
+          "b": "hub-6",
+          "centerDistance": 112.87,
+          "edgeGapWithRadius12": 88.87
+        }
+      ],
+      "mainEntityCount": 9,
+      "allEntitiesFinite": true,
+      "entities": [
+        {
+          "id": "western-civilian-bundle-1",
+          "hub": "hub-1",
+          "offset": [
+            -14,
+            8
+          ],
+          "tile": [
+            175.32,
+            240.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "northeastern-civilian-bundle-1",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            8
+          ],
+          "tile": [
+            189.32,
+            240.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "southeastern-civilian-bundle-1",
+          "hub": "hub-1",
+          "offset": [
+            14,
+            8
+          ],
+          "tile": [
+            203.32,
+            240.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-store-custodians-1",
+          "hub": "hub-6",
+          "offset": [
+            -14,
+            16
+          ],
+          "tile": [
+            170.23,
+            103.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-store-custodians-2",
+          "hub": "hub-6",
+          "offset": [
+            -12,
+            16
+          ],
+          "tile": [
+            172.23,
+            103.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-store-custodians-3",
+          "hub": "hub-6",
+          "offset": [
+            -10,
+            16
+          ],
+          "tile": [
+            174.23,
+            103.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-reporting-clerks-1",
+          "hub": "hub-1",
+          "offset": [
+            0,
+            16
+          ],
+          "tile": [
+            189.32,
+            248.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-reporting-clerks-2",
+          "hub": "hub-1",
+          "offset": [
+            2,
+            16
+          ],
+          "tile": [
+            191.32,
+            248.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "original-reporting-clerks-3",
+          "hub": "hub-1",
+          "offset": [
+            4,
+            16
+          ],
+          "tile": [
+            193.32,
+            248.16
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "zoneCount": 6,
+      "zones": [
+        {
+          "id": "destination-1",
+          "hub": "hub-1",
+          "center": [
+            189.32,
+            232.16
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-2",
+          "hub": "hub-2",
+          "center": [
+            87.54,
+            210.39
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-3",
+          "hub": "hub-3",
+          "center": [
+            291.11,
+            123.3
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-4",
+          "hub": "hub-4",
+          "center": [
+            311.46,
+            311.98
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-5",
+          "hub": "hub-5",
+          "center": [
+            179.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        },
+        {
+          "id": "destination-6",
+          "hub": "hub-6",
+          "center": [
+            184.23,
+            87.02
+          ],
+          "radius": 3,
+          "inside0to399": true,
+          "optional": false
+        }
+      ],
+      "optionalEntityCount": 8,
+      "optionalEntities": [
+        {
+          "id": "entity-1",
+          "side": "side-1",
+          "hub": "hub-6",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            178.23,
+            90.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-1",
+          "hub": "hub-6",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            178.23,
+            93.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-2",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            81.54,
+            213.39
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-2",
+          "hub": "hub-2",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            81.54,
+            216.39
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-3",
+          "hub": "hub-6",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            178.23,
+            90.02
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-4",
+          "hub": "hub-3",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            285.11,
+            126.3
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-1",
+          "side": "side-5",
+          "hub": "hub-4",
+          "offset": [
+            -6,
+            3
+          ],
+          "tile": [
+            305.46,
+            314.98
+          ],
+          "inside0to399": true,
+          "finite": true
+        },
+        {
+          "id": "entity-2",
+          "side": "side-5",
+          "hub": "hub-4",
+          "offset": [
+            -6,
+            6
+          ],
+          "tile": [
+            305.46,
+            317.98
+          ],
+          "inside0to399": true,
+          "finite": true
+        }
+      ],
+      "allOptionalEntitiesFinite": true,
+      "optionalZoneCount": 8,
+      "optionalZones": [
+        {
+          "id": "zone-1",
+          "side": "side-1",
+          "hub": "hub-1",
+          "center": [
+            197.32,
+            232.16
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-2",
+          "hub": "hub-5",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-3",
+          "hub": "hub-3",
+          "center": [
+            299.11,
+            123.3
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-4",
+          "hub": "hub-5",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-5",
+          "hub": "hub-5",
+          "center": [
+            171.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-5",
+          "hub": "hub-5",
+          "center": [
+            187.14,
+            319.24
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-1",
+          "side": "side-6",
+          "hub": "hub-2",
+          "center": [
+            87.54,
+            202.39
+          ],
+          "radius": 3,
+          "inside0to399": true
+        },
+        {
+          "id": "zone-2",
+          "side": "side-6",
+          "hub": "hub-6",
+          "center": [
+            184.23,
+            95.02
+          ],
+          "radius": 3,
+          "inside0to399": true
+        }
+      ],
+      "corridors": [
+        {
+          "id": "western-store-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-2",
+            "hub-5"
+          ],
+          "widthTiles": 10,
+          "centerlineLength": 246.35,
+          "conservativeFrameClearanceAfterHalfWidth": 74.76,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "northeastern-store-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-3",
+            "hub-6"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 261.91,
+          "conservativeFrameClearanceAfterHalfWidth": 83.02,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "southeastern-store-link",
+          "hubOrder": [
+            "hub-1",
+            "hub-4",
+            "hub-5"
+          ],
+          "widthTiles": 10,
+          "centerlineLength": 278.43,
+          "conservativeFrameClearanceAfterHalfWidth": 74.76,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "eastern-report-alternative",
+          "hubOrder": [
+            "hub-3",
+            "hub-4",
+            "hub-5"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 322.29,
+          "conservativeFrameClearanceAfterHalfWidth": 75.76,
+          "fullWidthInsideFrame": true
+        },
+        {
+          "id": "northern-supply-alternative",
+          "hubOrder": [
+            "hub-2",
+            "hub-6",
+            "hub-3"
+          ],
+          "widthTiles": 8,
+          "centerlineLength": 269.62,
+          "conservativeFrameClearanceAfterHalfWidth": 83.02,
+          "fullWidthInsideFrame": true
+        }
+      ],
+      "waterControl": {
+        "coordinates": [],
+        "certainty": "architect schematic based on regional geography; not surveyed ancient hydrology",
+        "renderAs": "river-line"
+      },
+      "svg": {
+        "svgPath": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/maps/imperial-church/odyssey/22-civilian-record-preservation-milan.svg",
+        "viewBox": "0 0 1050 850",
+        "textNodes": 25,
+        "corridorLines": 5,
+        "corridorIDsMatch": true,
+        "potentialInternalIDsInVisibleText": [],
+        "allLabelsInPageBounds": true,
+        "labelNote": "Numbered hubs in map frame; descriptive labels in right panel. Panel text y values are 190–643 within 850 viewBox; footer at y=780; no internal design IDs were seen as displayed labels. Text positions checked against viewBox, not pixel glyph clipping."
+      },
+      "objectives": {
+        "mainObjectiveCount": 3,
+        "mainObjectiveChecks": [
+          {
+            "objective": "o1",
+            "requirementCount": 6,
+            "requiredCounts": [
+              1,
+              1,
+              1,
+              3,
+              3,
+              3
+            ],
+            "finiteEntitiesReferenced": true
+          },
+          {
+            "objective": "o2",
+            "requirementCount": 6,
+            "requiredCounts": [
+              1,
+              1,
+              1,
+              3,
+              3,
+              null
+            ],
+            "finiteEntitiesReferenced": true
+          },
+          {
+            "objective": "o3",
+            "requirementCount": 6,
+            "requiredCounts": [
+              null,
+              3,
+              1,
+              1,
+              1,
+              3
+            ],
+            "finiteEntitiesReferenced": true
+          }
+        ],
+        "secondaryCount": 6,
+        "sideIDs": [
+          "side-1",
+          "side-2",
+          "side-3",
+          "side-4",
+          "side-5",
+          "side-6"
+        ],
+        "playstyles": {
+          "records-and-reporting": [
+            "side-1",
+            "side-4"
+          ],
+          "supplies-and-care": [
+            "side-3",
+            "side-5"
+          ],
+          "voluntary-moving-and-survey": [
+            "side-2",
+            "side-6"
+          ]
+        },
+        "sideCountsByPlaystyle": {
+          "records-and-reporting": 2,
+          "supplies-and-care": 2,
+          "voluntary-moving-and-survey": 2
+        },
+        "sideCoverageExactlyOnce": true,
+        "optionalEntityCount": 8,
+        "allOptionalEntitiesFinite": true,
+        "allOptionalZonesInside": true,
+        "allMainEntitiesFinite": true,
+        "skipAllSolvencyEvidence": {
+          "secondaryBudget": {
+            "reservedRewards": {
+              "food": 400,
+              "wood": 150,
+              "gold": 25,
+              "stone": 0
+            },
+            "maxOptionalCosts": {
+              "food": 0,
+              "wood": 50,
+              "gold": 0,
+              "stone": 0
+            },
+            "reallocatedCacheAllowance": {
+              "food": 600,
+              "wood": 300,
+              "gold": 150,
+              "stone": 0
+            },
+            "fundingPolicy": "reward stock is segregated from the finite total bank; no duplicate caches",
+            "nativeStatus": "design-only; requires certified reusable predicates and native QA"
+          },
+          "enemyCounts": {
+            "easy": 0,
+            "standard": 0,
+            "hard": 0
+          },
+          "qaCasesMentionSkipAll": [],
+          "note": "Design declarations include skip-all solvency QA and finite/segregated reward stock; this audit does not execute the scenario."
+        },
+        "orderedDepartureCheck": null,
+        "playerFacingInternalIDLeaks": []
+      },
+      "objectObjectiveSanity": {
+        "bundleCount": 3,
+        "bundleDestinations": {
+          "western-civilian-bundle": "hub-2",
+          "northeastern-civilian-bundle": "hub-3",
+          "southeastern-civilian-bundle": "hub-4"
+        },
+        "custodians": 3,
+        "clerks": 3,
+        "o2OrdinalDestinations": {
+          "original-store-custodians": [
+            "hub-2",
+            "hub-3",
+            "hub-4"
+          ],
+          "original-reporting-clerks": [
+            "hub-2",
+            "hub-3",
+            "hub-4"
+          ]
+        },
+        "o3StayConstraints": {
+          "western-civilian-bundle": null,
+          "northeastern-civilian-bundle": null,
+          "southeastern-civilian-bundle": null,
+          "original-store-custodians": [
+            "hub-2",
+            "hub-3",
+            "hub-4"
+          ]
+        },
+        "orderedDeparture": {
+          "kind": "ordered-departure",
+          "receiptObjective": "o2",
+          "receiptRequirement": "req-5",
+          "departingGroup": "original-reporting-clerks",
+          "departureEnabledOnlyAfterReceipt": true
+        },
+        "o2RequirementIndexByGroup": {
+          "custodians": "req-4",
+          "clerks": "req-5"
+        },
+        "departurePointsToClerks": true,
+        "departureDoesNotPointToCustodians": true,
+        "note": "o2 req5 is clerk arrival; req4 is custodian arrival. Clerks are then routed to hub-5; bundles and custodians remain assigned to hubs 2/3/4."
+      },
+      "sourceNote": {
+        "selectedClaim": {
+          "en": "Later church histories report that Constans was killed in Gaul during the usurpation of Magnentius in 350. Constantius II still faced a rival; this Milan setting receives news from Gaul rather than depicting the killing.",
+          "es-ES": "Las historias eclesiásticas posteriores relatan que Constante murió en la Galia durante la usurpación de Magnencio en 350. Constancio II aún tenía un rival; este escenario de Milán recibe noticias de la Galia y no representa la muerte."
+        },
+        "attributionCaveat": "Order 21 source record and correction identify Historia Acephala as anonymous; no attribution to Athanasius."
+      }
+    }
+  ],
+  "collector": "gpt-6-luna",
+  "date": "2026-10-14",
+  "architectFollowUp": {
+    "author": "gpt-6",
+    "approval": false,
+    "scope": "Mechanical frame/objective evidence only. Original collector null fields are extraction limitations, not negative objective findings.",
+    "corrections": {
+      "order22FinalBundleDestinations": {
+        "western-civilian-bundle": "hub-2",
+        "northeastern-civilian-bundle": "hub-3",
+        "southeastern-civilian-bundle": "hub-4"
+      },
+      "skipAllQA": "Both authored QA cases explicitly say every optional may be omitted. Collector QA grep arrays are empty because its phrase matching was narrower. The design validator independently checks finite skip-all solvency."
+    },
+    "limit": "Full-width frame clearance is not ancient shoreline/drainage clearance or native walkability; no map/game approval."
+  }
+}

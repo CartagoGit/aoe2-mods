@@ -1,0 +1,249 @@
+{
+  "campaignId": "imperial-church",
+  "scope": "Independent source collection for current orders 11–20 only. No repository edits, campaign design, or approval.",
+  "selectionSource": "/home/cartago/_projects/games/aoe2-mods/.cache/delendai/.worktrees/gpt-6-new-all/docs/design/odysseys/imperial-church.json",
+  "episodes": [
+    {
+      "order": 11,
+      "id": "11-council-record-escort-antioch",
+      "selectedDate": "325 CE",
+      "selectedPlace": "Antioch",
+      "selectedClaim": "Sínodo regional de Antioquía suspende a obispos en antesala de Nicea.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/26011.htm",
+          "locator": "Socrates, Ecclesiastical History I.24 (chapter title: synod at Antioch deposing Eustathius); compare I.13–14 narrative placement",
+          "consulted": "Texto completo de Book I abierto y consultado, incluidos I.1–10. La fuente dice que el sínodo depuso a Eustathius; por ubicación narrativa viene después del concilio de Nicea y la disputa posterior.",
+          "supports": "Una deposición/sínodo en Antioquía y subsecuente sedición local en el relato de Sócrates.",
+          "limitations": "El capítulo no se refiere a obispos plurales suspendidos antes de Nicea. La cronología exacta debatida: Cartwright, capítulo ‘Eustathius’ Life’, abstract consultado, propone probablemente 327 tras la visita de Helena; solo abstract, no texto íntegro: https://academic.oup.com/book/9608/chapter-abstract/156648227. La fuente de selección Wiley/Kinzig no se abrió. Sócrates es historiador cristiano del siglo V."
+        }
+      ],
+      "correctionsSuggested": "La formulación/fecha seleccionada parece estar en conflicto con la fuente primaria citada: Socrates HE I.24 es deposición de Eustathius después del relato de Nicea, no sínodo pre-Nicea de 325. Suspensión plural no verificada.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 12,
+      "id": "02-nicaea",
+      "selectedDate": "325 CE",
+      "selectedPlace": "Nicaea",
+      "selectedClaim": "Concilio de Nicea acuerda un credo y cánones sobre doctrina y disciplina.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3801.htm",
+          "locator": "First Council of Nicaea: creed, 20 canons, post-council synodal letter, especially lines/sections on Canon 20 and Easter letter",
+          "consulted": "Página de texto abierta y consultada. Canon 20 prescribe oración de pie los domingos/Pentecost; la carta circular posterior dice que se alcanzó acuerdo sobre la fecha de Pascua.",
+          "supports": "Acredita la existencia de una declaración de fe y cánones disciplinares, y un reporte sinodal sobre acuerdo pascual.",
+          "limitations": "La fuente no ofrece regla astronómica/cálculo de Pascua. Canon 20 no trata de calendario pascual. La carta es relato posterior de los obispos sobre los resultados, no acta detallada/taquigrafía."
+        }
+      ],
+      "correctionsSuggested": "No describir canon 20 como decisión de calendario; atribuir la información pascual a la carta de cierre transmitida junto a los cánones.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 13,
+      "id": "13-finite-works-logistics-jerusalem",
+      "selectedDate": "326–330 CE; individual works dates qualified",
+      "selectedPlace": "Jerusalem",
+      "selectedClaim": "Constantino patrocina iglesias y obras en los lugares santos de Jerusalén.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25023.htm",
+          "locator": "Eusebius, Life of Constantine III.25–40, especially III.25–33",
+          "consulted": "Texto de Book III abierto y pasajes localizados. III.25 presenta orden de construir una iglesia; la carta solicita mármoles, columnas, artesanos y presupuesto; III.33–40 narra el complejo construido.",
+          "supports": "Acredita el patrocinio imperial según Eusebio, la correspondencia con el obispo Macarius y una obra monumental en Jerusalén asociada en el relato con el lugar de la Resurrección.",
+          "limitations": "Encomio cristiano imperial. La identificación de ‘holy place’ refleja tradición del autor, no verificación arqueológica independiente del acontecimiento bíblico. No precisa fechas de cada fase entre 326 y 330 ni demuestra alcance de obras fuera del complejo mencionado."
+        }
+      ],
+      "correctionsSuggested": "Mantener la atribución a Eusebio; evitar afirmar como verificación neutral la identificación exacta del lugar sagrado o fechas específicas de obras individuales.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 14,
+      "id": "03-new-capital",
+      "selectedDate": "11 May 330 CE; works approach before dedication",
+      "selectedPlace": "Constantinople",
+      "selectedClaim": "Constantinopla recibe dedicación ceremonial y juegos fundacionales.",
+      "sources": [
+        {
+          "url": "https://catholiclibrary.org/library/view?chunk.id=00000267&docId=%2FFathers-Synchronized-EN%2FChronicon_Paschale__Chronicon_paschale.en.html",
+          "locator": "Chronicon Paschale, entry around lines 379–381 (English translation in synchronized text)",
+          "consulted": "Entrada abierta y leída. Da la ciudad el nombre de Constantinople ‘five days before the Ides of May’; menciona un gran festival, carreras en el hipódromo y el aniversario anual de la ciudad el día 11 del mes Artemisios.",
+          "supports": "Fuente cronística transmite fecha convencional 11 May y dedicación/festival/hipódromo. La aritmética de ‘five days before Ides’ es compatible con May 11 en el calendario romano inclusivo; el texto liga además el aniversario al día 11 de Artemisios.",
+          "limitations": "Crónica compilada siglos después, no testigo del 330; sus sincronismos/estratos y traducción requieren cotejo crítico. No demuestra que todo el programa de construcción ocurriera aquel día. Britannica citada en la selección no fue consultada."
+        }
+      ],
+      "correctionsSuggested": "Se puede mantener 11 May como fecha transmitida por el Chronicon Paschale, claramente atribuida y convencional; diferenciar dedicación/festival de obras que precedieron y siguieron.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 15,
+      "id": "15-long-distance-dispatch-nicomedia",
+      "selectedDate": "c. 332–333 CE; destination off-map",
+      "selectedPlace": "Nicomedia (dispatch context uncertain); Persia as letter recipient",
+      "selectedClaim": "Constantino escribe a Shapur II sobre cristianos en el imperio persa, según Eusebio.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.8–13; especially IV.9 letter heading and opening",
+          "consulted": "Texto de Book IV abierto; IV.9 identifica una copia de carta dirigida a ‘Sapor, king of the Persians’; comienza confesión cristiana imperial. Eusebio IV.8–13 presenta la extensión de cuidado imperial a Persia y la carta.",
+          "supports": "Apoya que Eusebio reproduce una carta que atribuye a Constantino y dirige al rey persa Sapor/Shapur; la carta habla de comunidades cristianas en Persia en el marco de Eusebio.",
+          "limitations": "Pasaje no fecha la carta c.332–333 ni identifica Nicomedia como lugar de redacción. Es texto transmitido por Eusebio, panegirista cristiano, no verificación desde archivos sasánidas; afirmaciones de política/intención pertenecen a la carta atribuida."
+        }
+      ],
+      "correctionsSuggested": "Retener solo atribución documental de Eusebio, y dejar fecha/lugar de despacho sin precisar salvo fuente adicional. El mapa de Nicomedia no debe sugerir que Persia fue visitada.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 16,
+      "id": "16-witness-record-comparison-tyre",
+      "selectedDate": "335 CE; Tyre council focus",
+      "selectedPlace": "Tyre; Jerusalem only for later dedication",
+      "selectedClaim": "Sínodo de Tiro juzga a Atanasio; poco después se consagra el complejo de la Resurrección.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.41–47",
+          "consulted": "Texto de Book IV abierto; IV.41–42 sitúa un concilio en Tyre por controversias egipcias y reproduce carta imperial; Eusebio dice que después de decidir controversias se dirigieron a la dedicación de Jerusalén (IV.41, IV.47).",
+          "supports": "Eusebio vincula explícitamente el sínodo en Tyre y una etapa posterior de viaje/dedicación del edificio sacro en Jerusalén.",
+          "limitations": "La fuente es altamente favorable a Constantino y hostil a opositores de Athanasius. El council y la dedicación ocurren en localidades distintas y no deben representarse como un evento simultáneo. ‘Juzga a Atanasio’ resume un procedimiento complejo; el relato del juicio principal continúa en Athanasius, Apologia contra Arianos, no consultada aquí. Precisión de ‘poco después’ depende del hilo narrativo, no fecha calendario dada en este pasaje."
+        }
+      ],
+      "correctionsSuggested": "Separar mapa/localidad de Tyre de viaje/dedicación en Jerusalem y atribuir la secuencia a Eusebio; no convertirlo en juicio neutral o sentencia final verificada.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 17,
+      "id": "17-rumour-and-source-investigation-constantinople",
+      "selectedDate": "336 CE (selected)",
+      "selectedPlace": "Constantinople",
+      "selectedClaim": "Arrio muere en Constantinopla antes de una readmisión prevista.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/26022.htm",
+          "locator": "Sozomen, Ecclesiastical History II.29–30, especially the ending of II.29 and Chapter 30 source variant",
+          "consulted": "Book II opened; find located account around lines 323–335. Sozomen reports death in Constantinople toilet during dispute over planned restoration, but explicitly relays multiple versions: natural sudden illness, divine judgment, magical arts; then quotes a hostile account attributed to Athanasius.",
+          "supports": "The narrative locates Arius’ death in Constantinople and connects it with a planned restoration to communion, as reported by Sozomen.",
+          "limitations": "Late fifth-century source; account is confessional and competing versions are explicitly recorded. Exact year 336 not established in the consulted passage. Selected URL https://www.newadvent.org/fathers/26023.htm is wrong book (Book III), and locator ‘Sozomen HE II.29’ should be checked against edition subdivision; the accessible heading labels following material Chapter 30. Death mechanism and providential interpretation are not neutral facts."
+        }
+      ],
+      "correctionsSuggested": "Correct source URL to Book II; distinguish Sozomen’s reported location/context from the hostile, miraculous/physiological interpretations; do not state date 336 as proven by this passage.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 18,
+      "id": "18-administrative-transition-nicomedia",
+      "selectedDate": "22 May 337 CE",
+      "selectedPlace": "Nicomedia",
+      "selectedClaim": "Constantino recibe bautismo de Eusebio de Nicomedia y muere en Nicomedia.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/25024.htm",
+          "locator": "Eusebius, Life of Constantine IV.61–66",
+          "consulted": "Texto abierto. IV.61–63 relata la enfermedad, bautismo en iglesia cerca de Nicomedia/suburbios y preparación de asuntos; IV.64 sitúa la muerte en Pentecostés alrededor del mediodía; IV.66 declara traslado del cuerpo desde Nicomedia a Constantinople.",
+          "supports": "Acredita la versión de Eusebio para bautismo tardío de Constantino, muerte en la región de Nicomedia y traslado del cuerpo.",
+          "limitations": "La fecha del 22 de mayo no sale del pasaje leído. Eusebio presenta los discursos y ceremonia como parte de encomio cristiano. El obispo oficiante no es nombrado allí como ‘Eusebio de Nicomedia’ en el pasaje consultado: el texto dice los obispos/prelates reunidos; identidad precisa debe cotejarse antes de afirmarla."
+        }
+      ],
+      "correctionsSuggested": "Mantener localización y bautismo como el relato de Eusebio, pero calificar la fecha exacta y la identidad del oficiante salvo fuente explícita adicional.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 19,
+      "id": "19-competing-dispatches-constantinople",
+      "selectedDate": "337 CE; eastern-court focus",
+      "selectedPlace": "Constantinople / empire-wide succession (not one local scene)",
+      "selectedClaim": "Tras la muerte de Constantino, sus hijos toman el poder imperial; disputas sucesorias y distribución territorial preceden nuevas intervenciones eclesiásticas.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/26012.htm",
+          "locator": "Socrates, Ecclesiastical History II.1 and II.5; compare Eusebius VC IV.68–70",
+          "consulted": "Socrates Book II abierto. II.1 contextualiza que Constantius recibe la parte oriental según voluntad de su padre; II.5 relata muerte de Constantine II en conflicto con Constans. Eusebius IV.68–70, abierto en paralelo, dice que las tropas proclamaron colectivamente a los hijos Augusti tras la muerte y narra entierro en Constantinople por Constantius.",
+          "supports": "Fuentes narrativas registran sucesión de los hijos, distribución/regencia territorial y secuencia de luchas posteriores; Eusebio aporta la noticia de la proclamación por el ejército como transmitida en su relato.",
+          "limitations": "No contemporáneas/neutrales en su forma conservada: Socrates siglo V, Eusebius encomio. La selección formula varios años y procesos como una sola secuencia; no deben compactarse en una escena de Constantinople ni sugerir sucesión pacífica/instantánea. La ‘partición’ y la matanza posterior de miembros dinásticos requieren cronología/sources adicionales si el episodio pretende incluirlas."
+        }
+      ],
+      "correctionsSuggested": "Dividir eventos cronológicos/geográficos si se detallan; atribuir la proclamación a Eusebio/Socrates y no narrar disputas territoriales desde una sola sala de corte.",
+      "independentApprovalPending": true
+    },
+    {
+      "order": 20,
+      "id": "20-separate-reception-logistics-sardica",
+      "selectedDate": "343 CE; 342/344 alternatives not excluded",
+      "selectedPlace": "Sardica (Serdica; modern Sofia)",
+      "selectedClaim": "Obispos occidentales y orientales se reúnen en Sardica; el desacuerdo por Atanasio produce sesiones y decisiones separadas.",
+      "sources": [
+        {
+          "url": "https://www.newadvent.org/fathers/3815.htm",
+          "locator": "Council of Sardica page: chronology introduction and canons; text notes manuscript transmission",
+          "consulted": "Introducción y varios cánones consultados. La página registra por qué autores sitúan distintas fechas y explica el desacuerdo entre 343 y 344 (también presenta testimonio antiguo de 347); los cánones conservados se transmiten en colecciones griegas/latinas y la introducción avisa problemas de transmisión.",
+          "supports": "El sitio dice que la sínodo se reunió en Sardica y transmitió canones; su dossier cronológico reconoce incertidumbre sustancial.",
+          "limitations": "La formulación ‘este-oeste se reúnen y desacuerdo produce sesiones y decisiones separadas’ no quedó demostrada enteramente por los canones abiertos; fuentes de participantes son partidistas y reuniones paralelas/Philippopolis requieren consultar cartas sinodales completas. La datación seleccionada 343 es posible, pero no resuelta por una fuente primaria única. La página editorial de New Advent/Catholic Encyclopedia no es acta contemporánea."
+        },
+        {
+          "url": "https://sourcebooks.web.fordham.edu/source/sardica5.asp",
+          "locator": "Fordham Medieval Sourcebook, Council of Sardica, Canon V (343) (search-result reproduction)",
+          "consulted": "Resultado de búsqueda mostró traducción de canon sobre apelación episcopal; página no se abrió para lectura adicional.",
+          "supports": "Solo search-result excerpt: derecho a audiencia/apelación ante obispo de Roma aparece en la versión mostrada.",
+          "limitations": "No usar como prueba leída de sesiones separadas o cronología."
+        }
+      ],
+      "correctionsSuggested": "Conservar rango como incierto y no convertir la reconstrucción editorial en fecha exacta. Añadir apoyo primario abierto para retirada/Philippopolis antes de afirmar el mecanismo y detalles de sesiones separadas.",
+      "independentApprovalPending": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.newadvent.org/fathers/26011.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History Book I",
+      "consultedScope": "Lectura directa de capítulos relevantes; I.24 es posterior al relato de Nicea, deposición de Eustathius."
+    },
+    {
+      "url": "https://academic.oup.com/book/9608/chapter-abstract/156648227",
+      "title": "Sophie Cartwright, ‘Eustathius’ Life’",
+      "consultedScope": "Abstract solamente; indica probable deposición en 327; libro completo no abierto."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3801.htm",
+      "title": "First Council of Nicaea: Creed, Canons, Synodal Letter",
+      "consultedScope": "Página y texto canónico/carta consultados; Canon 20, carta sobre Pascua."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25023.htm",
+      "title": "Eusebius, Life of Constantine Book III",
+      "consultedScope": "III.25–40 para construcción/patrocinio en Jerusalén."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/25024.htm",
+      "title": "Eusebius, Life of Constantine Book IV",
+      "consultedScope": "IV.8–13 carta a Sapor; IV.41–47 Tyre/Jerusalem; IV.61–70 bautismo, muerte, sucesión y entierro."
+    },
+    {
+      "url": "https://catholiclibrary.org/library/view?chunk.id=00000267&docId=%2FFathers-Synchronized-EN%2FChronicon_Paschale__Chronicon_paschale.en.html",
+      "title": "Chronicon Paschale",
+      "consultedScope": "Entrada cronística de fundación/dedicación, English synchronized text, lines 379–381."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26022.htm",
+      "title": "Sozomen, Ecclesiastical History Book II",
+      "consultedScope": "II.29–30; accounts/contradictory death interpretations for Arius."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/26012.htm",
+      "title": "Socrates Scholasticus, Ecclesiastical History Book II",
+      "consultedScope": "II.1–5 and selected wider context on post-Constantinian succession."
+    },
+    {
+      "url": "https://www.newadvent.org/fathers/3815.htm",
+      "title": "Council of Sardica source dossier and canons",
+      "consultedScope": "Introductory chronological review and selected canons; secondary editorial frame plus transmitted texts, partial consultation."
+    }
+  ],
+  "limitations": [
+    "All quotations/passages are paraphrased; search-result snippets and abstracts are explicitly labelled and not represented as full source reading.",
+    "Chronologies in late Christian histories are attributed to those narrators; no private dialogue or theological motive is asserted as objective fact.",
+    "All ten claims remain subject to architect review; independent approval is pending."
+  ],
+  "independentApprovalPending": true,
+  "collectionAgent": "gpt-6-luna",
+  "architectApproval": false
+}

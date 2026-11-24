@@ -1,0 +1,409 @@
+{
+  "episodeId": "02-refuge-and-school-supply-yavneh",
+  "total": 43,
+  "passed": 43,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "44 screens",
+      "ok": true,
+      "detail": 44
+    },
+    {
+      "name": "88 localized texts",
+      "ok": true,
+      "detail": 88
+    },
+    {
+      "name": "3 services",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "name": "6 exclusive methods",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "name": "2 methods per service",
+      "ok": true,
+      "detail": {
+        "provisions": 2,
+        "meeting": 2,
+        "materials": 2
+      }
+    },
+    {
+      "name": "3 distinct original workers",
+      "ok": true,
+      "detail": [
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-materials",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-meeting",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.worker-provisions"
+      ]
+    },
+    {
+      "name": "3 distinct original recipients",
+      "ok": true,
+      "detail": [
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-materials",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-meeting",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.recipient-provisions"
+      ]
+    },
+    {
+      "name": "7 distinct optional tasks",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "name": "9 optional original identities",
+      "ok": true,
+      "detail": 9
+    },
+    {
+      "name": "optional roles cover aid/copy/repair/trade/guide/guest",
+      "ok": true,
+      "detail": [
+        "aid",
+        "aid",
+        "copy",
+        "copy",
+        "extract",
+        "extract",
+        "guide",
+        "repair",
+        "trade"
+      ]
+    },
+    {
+      "name": "every optional original lives in its own side namespace",
+      "ok": true,
+      "detail": [
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7"
+      ]
+    },
+    {
+      "name": "copy originals start from distinct hubs",
+      "ok": true,
+      "detail": {
+        "side-2": [
+          "record-west"
+        ],
+        "side-3": [
+          "record-north"
+        ]
+      }
+    },
+    {
+      "name": "the two copy tasks are separate objectives",
+      "ok": true,
+      "detail": [
+        "side-1",
+        "side-2",
+        "side-3",
+        "side-4",
+        "side-5",
+        "side-6",
+        "side-7"
+      ]
+    },
+    {
+      "name": "copy tasks keep distinct completion flags",
+      "ok": true,
+      "detail": [
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.completed"
+      ]
+    },
+    {
+      "name": "copy tasks share the reader-court receiving location",
+      "ok": true,
+      "detail": "reader-court present in both copy tasks"
+    },
+    {
+      "name": "every optional task carries a distinct once completion flag",
+      "ok": true,
+      "detail": [
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-1.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-2.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-3.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-4.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-5.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-6.completed",
+        "jewish-tradition.02-refuge-and-school-supply-yavneh.side-7.completed"
+      ]
+    },
+    {
+      "name": "repair costs 30 wood and rewards 20 wood",
+      "ok": true,
+      "detail": [
+        {
+          "food": 0,
+          "wood": 30,
+          "gold": 0,
+          "stone": 0
+        },
+        {
+          "food": 0,
+          "wood": 20,
+          "gold": 0,
+          "stone": 0
+        }
+      ]
+    },
+    {
+      "name": "trade costs 20 gold",
+      "ok": true,
+      "detail": [
+        {
+          "food": 0,
+          "wood": 0,
+          "gold": 20,
+          "stone": 0
+        },
+        {
+          "food": 20,
+          "wood": 0,
+          "gold": 10,
+          "stone": 0
+        }
+      ]
+    },
+    {
+      "name": "hospitality costs 20 food",
+      "ok": true,
+      "detail": [
+        {
+          "food": 20,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        {
+          "food": 10,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        }
+      ]
+    },
+    {
+      "name": "aid rewards 40 food / 40 wood / 20 gold",
+      "ok": true,
+      "detail": [
+        {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        {
+          "food": 40,
+          "wood": 40,
+          "gold": 20,
+          "stone": 0
+        }
+      ]
+    },
+    {
+      "name": "3 difficulty accounts",
+      "ok": true,
+      "detail": [
+        "easy",
+        "hard",
+        "standard"
+      ]
+    },
+    {
+      "name": "8/5/3 direct affordable selections",
+      "ok": true,
+      "detail": {
+        "easy": 8,
+        "standard": 5,
+        "hard": 3
+      }
+    },
+    {
+      "name": "8/7/6 affordable with optional prefixes",
+      "ok": true,
+      "detail": {
+        "easy": 8,
+        "standard": 7,
+        "hard": 6
+      }
+    },
+    {
+      "name": "24 main financial witnesses preserved",
+      "ok": true,
+      "detail": 24
+    },
+    {
+      "name": "every witness verdict reproduced with the canonical solver",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "recomputed counts equal the source counts",
+      "ok": true,
+      "detail": {
+        "recomputed": {
+          "easy": {
+            "initiallyAffordable": 8,
+            "affordableWithOptionalPrefix": 8,
+            "allGoalsReachable": 8
+          },
+          "standard": {
+            "initiallyAffordable": 5,
+            "affordableWithOptionalPrefix": 7,
+            "allGoalsReachable": 7
+          },
+          "hard": {
+            "initiallyAffordable": 3,
+            "affordableWithOptionalPrefix": 6,
+            "allGoalsReachable": 6
+          }
+        },
+        "source": {
+          "easy": {
+            "initiallyAffordable": 8,
+            "affordableWithOptionalPrefix": 8,
+            "allGoalsReachable": 8
+          },
+          "standard": {
+            "initiallyAffordable": 5,
+            "affordableWithOptionalPrefix": 7,
+            "allGoalsReachable": 7
+          },
+          "hard": {
+            "initiallyAffordable": 3,
+            "affordableWithOptionalPrefix": 6,
+            "allGoalsReachable": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "optional reward total is 70F/60W/30G/0S",
+      "ok": true,
+      "detail": {
+        "food": 70,
+        "wood": 60,
+        "gold": 30,
+        "stone": 0
+      }
+    },
+    {
+      "name": "optional cost total is 20F/30W/20G/0S",
+      "ok": true,
+      "detail": {
+        "food": 20,
+        "wood": 30,
+        "gold": 20,
+        "stone": 0
+      }
+    },
+    {
+      "name": "reward total equals the declared reserved reward account",
+      "ok": true,
+      "detail": {
+        "reserve": {
+          "food": 70,
+          "wood": 60,
+          "gold": 30,
+          "stone": 0
+        },
+        "total": {
+          "food": 70,
+          "wood": 60,
+          "gold": 30,
+          "stone": 0
+        }
+      }
+    },
+    {
+      "name": "28 corridors",
+      "ok": true,
+      "detail": 28
+    },
+    {
+      "name": "exactly one northern-approach alias",
+      "ok": true,
+      "detail": 1
+    },
+    {
+      "name": "the alias reuses the two already proposed links and adds no new road",
+      "ok": true,
+      "detail": [
+        "western-junction",
+        "timber-work",
+        "northern-junction"
+      ]
+    },
+    {
+      "name": "no water mode or modern water control is asserted",
+      "ok": true,
+      "detail": [
+        "land"
+      ]
+    },
+    {
+      "name": "candidate byte-identical to the reviewed artifact",
+      "ok": true,
+      "detail": "6a4aebef62b240325407121b5366d5de2277d1a95eaeba1782645ea5411e7690"
+    },
+    {
+      "name": "auxiliary SVG byte-identical to the reviewed artifact",
+      "ok": true,
+      "detail": "4696813df3d5a384586386a4c2dab18e23e5719206e138a656751a4d6c26d34d"
+    },
+    {
+      "name": "canonical map identical to the preserved auxiliary",
+      "ok": true,
+      "detail": "4696813df3d5a384586386a4c2dab18e23e5719206e138a656751a4d6c26d34d"
+    },
+    {
+      "name": "promoted blueprint uses the canonical map path",
+      "ok": true,
+      "detail": "docs/design/maps/jewish-tradition/odyssey/02-refuge-and-school-supply-yavneh.svg"
+    },
+    {
+      "name": "source candidate still points at the auxiliary SVG",
+      "ok": true,
+      "detail": "docs/design/episode-plans/jewish-tradition/02-yavneh-blueprint-map.svg"
+    },
+    {
+      "name": "episode status stays a draft",
+      "ok": true,
+      "detail": "authored-dossier; source approval, map geometry, native capabilities and game balance pending"
+    },
+    {
+      "name": "campaign status keeps independent approval pending",
+      "ok": true,
+      "detail": "explicit episode dossiers authored; independent approval and remaining episodes pending"
+    },
+    {
+      "name": "the jewish-tradition campaign now carries exactly one episode",
+      "ok": true,
+      "detail": 1
+    },
+    {
+      "name": "all 64 pre-existing episode objects, dossiers, maps and baseline files are byte-identical",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "the only new episode object is the Yavneh draft",
+      "ok": true,
+      "detail": [
+        "episode-object|02-refuge-and-school-supply-yavneh"
+      ]
+    }
+  ]
+}

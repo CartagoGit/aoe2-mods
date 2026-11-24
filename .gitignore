@@ -1,0 +1,66 @@
+!.gitkeep
+.DS_Store
+.idea/
+.gradle/
+.angular/
+.scannerwork/
+core-js-banners
+/.cache/
+
+node_modules/
+platforms/
+package-lock.json
+# `build/` y `dist/` deben ignorarse en cualquier carpeta del repo
+# (artefactos de Angular, Capacitor, plugins, etc.), EXCEPTO `.ci/build/`
+# que contiene los YAML versionados del pipeline.
+build/
+dist/
+**/build/
+**/dist/
+!.ci/build/
+!.ci/build/**
+
+# Fastlane: ignore generados por runs locales/CI. NO ignorar la carpeta
+# fastlane/ en sí, que contiene Appfile/Fastfile/Pluginfile/Gemfile versionados.
+# Gemfile.lock SÍ se commitea (es el lockfile que fija versiones).
+fastlane/report.xml
+fastlane/test_output
+fastlane/.fastlane_history
+fastlane/vendor/
+fastlane/.bundle/
+**/fastlane/report.xml
+**/fastlane/test_output
+**/fastlane/.fastlane_history
+**/fastlane/vendor/
+**/fastlane/.bundle/
+
+bun.lockb
+
+android/
+.fnm/
+
+/.fnm
+
+.vscode
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/mcp.json
+
+# Coverage
+/coverage/
+/tests/coverage/
+*.lcov
+
+.cache/
+tmp/
+.tmp/
+*.code-workspace
+reports/
+
+.env
+# Toolchain y artefactos de producción de campañas
+.venv/
+__pycache__/
+*.pyc

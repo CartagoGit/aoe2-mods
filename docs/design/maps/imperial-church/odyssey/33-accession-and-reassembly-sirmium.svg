@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 850" role="img" aria-label="The Burden of the Purple geographic districts">
+<rect width="1050" height="850" fill="#f6f0dc"/>
+<rect x="55" y="85" width="650" height="650" fill="#dfdfba" stroke="#556344"/>
+<text x="40" y="35" font-family="sans-serif" font-size="22">The Burden of the Purple</text>
+<text x="40" y="63" font-family="sans-serif" font-size="15">400 × 400 · sirmium · N ↑ E →</text>
+<polyline data-corridor="western-preparation-loop" points="144.22,243.35 144.22,499.75 253.05,602.30 361.87,422.82" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>western-preparation-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-preparation-spine" points="361.87,217.70 361.87,422.82" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>central-preparation-spine: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="eastern-preparation-loop" points="361.87,217.70 470.67,268.97 597.63,474.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-preparation-loop: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="cross-post-link" points="144.22,499.75 361.87,422.82 597.63,474.10" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>cross-post-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="northern-dispatch-alternative" points="144.22,499.75 144.22,243.35 361.87,217.70 470.67,268.97 597.63,243.35" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>northern-dispatch-alternative: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="central-dispatch-link" points="361.87,422.82 470.67,268.97 597.63,243.35" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>central-dispatch-link: proposed land district connection, intermediate path pending</title></polyline>
+<polyline data-corridor="eastern-dispatch-link" points="597.63,474.10 597.63,243.35" fill="none" stroke="#91512f" stroke-width="3" stroke-dasharray="8 6"><title>eastern-dispatch-link: proposed land district connection, intermediate path pending</title></polyline>
+<circle cx="144.22" cy="243.35" r="20" fill="none" stroke="#91512f"/>
+<text x="167.22" y="243.35" font-family="sans-serif">1</text>
+<text x="730" y="190" font-family="sans-serif" font-size="12">1: Fictional northwestern crew arrival</text>
+<text x="730" y="204" font-family="sans-serif" font-size="12">ground</text>
+<circle cx="361.87" cy="217.70" r="20" fill="none" stroke="#91512f"/>
+<text x="384.87" y="217.70" font-family="sans-serif">2</text>
+<text x="730" y="240" font-family="sans-serif" font-size="12">2: Fictional northern supply arrival</text>
+<text x="730" y="254" font-family="sans-serif" font-size="12">ground</text>
+<circle cx="144.22" cy="499.75" r="20" fill="none" stroke="#91512f"/>
+<text x="167.22" y="499.75" font-family="sans-serif">3</text>
+<text x="730" y="290" font-family="sans-serif" font-size="12">3: Fictional western preparation post</text>
+<circle cx="361.87" cy="422.82" r="20" fill="none" stroke="#91512f"/>
+<text x="384.87" y="422.82" font-family="sans-serif">4</text>
+<text x="730" y="340" font-family="sans-serif" font-size="12">4: Fictional central preparation post</text>
+<circle cx="597.63" cy="474.10" r="20" fill="none" stroke="#91512f"/>
+<text x="620.63" y="474.10" font-family="sans-serif">5</text>
+<text x="730" y="390" font-family="sans-serif" font-size="12">5: Fictional eastern preparation post</text>
+<circle cx="597.63" cy="243.35" r="20" fill="none" stroke="#91512f"/>
+<text x="620.63" y="243.35" font-family="sans-serif">6</text>
+<text x="730" y="440" font-family="sans-serif" font-size="12">6: Fictional northeastern local dispatch</text>
+<text x="730" y="454" font-family="sans-serif" font-size="12">ground</text>
+<circle cx="253.05" cy="602.30" r="20" fill="none" stroke="#91512f"/>
+<text x="276.05" y="602.30" font-family="sans-serif">7</text>
+<text x="730" y="490" font-family="sans-serif" font-size="12">7: Fictional southwestern work shelter</text>
+<circle cx="470.67" cy="268.97" r="20" fill="none" stroke="#91512f"/>
+<text x="493.67" y="268.97" font-family="sans-serif">8</text>
+<text x="730" y="540" font-family="sans-serif" font-size="12">8: Fictional northern relief junction</text>
+<text x="730" y="575" font-family="sans-serif" font-size="12">Geographic district controls only</text>
+<text x="730" y="599" font-family="sans-serif" font-size="12">Brown dashed: proposed land route</text>
+<text x="730" y="623" font-family="sans-serif" font-size="12">Cyan dashed: proposed boat passage</text>
+<text x="730" y="647" font-family="sans-serif" font-size="12">Not a surveyed path or terrain raster</text>
+<text x="730" y="671" font-family="sans-serif" font-size="12">Blue: modern geographic water controls</text>
+<text x="730" y="695" font-family="sans-serif" font-size="12">Dashed blue: schematic regional water</text>
+<text x="730" y="719" font-family="sans-serif" font-size="12">Native footprints and navigation pending</text>
+<text x="730" y="743" font-family="sans-serif" font-size="12">No ancient shore or elevation inferred</text>
+<text x="40" y="780" font-family="sans-serif" font-size="13">WGS84 bbox [19.6, 44.971, 19.632, 44.992]; cosine-corrected longitude; approximate districts</text>
+</svg>

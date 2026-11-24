@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourceClassification": "modern-dsm",
+  "horizontalCrs": "EPSG:4326",
+  "verticalDatum": "EGM2008 (product documentation)",
+  "sampleOriginLonLat": [26.56, 41.67055555555555],
+  "stepDegrees": [0.0002777777777777778, -0.0002777777777777778],
+  "rows": [
+    [
+      38.25516891479492, 40.166748046875, 42.57136917114258, 41.976661682128906,
+      38.35953140258789
+    ],
+    [
+      36.09695816040039, 37.826236724853516, 38.45654296875, 37.4822883605957,
+      37.329681396484375
+    ],
+    [
+      35.43687438964844, 34.873836517333984, 34.95423889160156,
+      36.03884506225586, 38.32958221435547
+    ],
+    [
+      38.28610610961914, 37.71335983276367, 35.13132858276367,
+      36.184268951416016, 36.79706954956055
+    ],
+    [
+      40.801090240478516, 37.29991149902344, 34.64091873168945,
+      37.1674690246582, 37.428497314453125
+    ]
+  ],
+  "georeference": {
+    "rasterInterpretation": "PixelIsPoint (GeoKey 1025 = 2; AREA_OR_POINT=Point in processing record)",
+    "modelTiepointTag": [0.0, 0.0, 0.0, 26.4, 41.9, 0.0],
+    "modelPixelScaleTag": [0.0002777777777777778, 0.0002777777777777778, 0.0],
+    "modelTransformationOrAffine": "No ModelTransformation tag; processing record affine [0.0002777777777777778,0,26.39986111111111,0,-0.0002777777777777778,41.90013888888889] maps pixel corners. For center samples use (column+0.5,row+0.5) on that affine, equivalent to tiepoint plus integer offsets because PixelIsPoint.",
+    "sampleWindowZeroBasedCropPixels": {
+      "columnStart": 576,
+      "columnEndInclusive": 580,
+      "rowStart": 826,
+      "rowEndInclusive": 830
+    },
+    "valueUnits": "metres, 32-bit float raster samples"
+  },
+  "provenance": {
+    "localSourcePath": "docs/research/odyssey-research/geography/edirne-modern-dsm-regional-crop.tif",
+    "sourceSha256": "7495100ff4e45717006daaaae3996dc0f91d06df524a656405703ff51457546e",
+    "columnOffset": 576,
+    "rowOffset": 826,
+    "width": 5,
+    "height": 5,
+    "licenseNoticePath": "docs/research/odyssey-research/geography/edirne-modern-dsm-license.md",
+    "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E026_00_DEM/Copernicus_DSM_COG_10_N41_00_E026_00_DEM.tif",
+    "extractionDescription": "Direct Pillow reads of the 25 contiguous float32 samples at zero-based crop columns 576–580 and rows 826–830; no resampling or writes to source. Origin is the center of sample (576,826), computed from the PixelIsPoint tiepoint and pixel scale; row step is negative latitude.",
+    "realCollector": "gpt-6-luna",
+    "date": "2026-10-18",
+    "compilerInputNormalization": {
+      "author": "gpt-6",
+      "date": "2026-10-18",
+      "change": "Added explicit heightUnit=metre from documented Copernicus sample units; the 25 values and collector georeference are unchanged. Root independently re-read the same TIFF pixels, tiepoint and source hash."
+    }
+  },
+  "limits": [
+    "Modern DSM from Copernicus WorldDEM-30; values include present-day surface/building effects and are not a DTM or a reconstruction of ancient landform.",
+    "Fixture for technical interpolation only; not a playable map, terrain evidence for 380/378, battlefield localization, or proof of transportability."
+  ],
+  "heightUnit": "metre"
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-14",
+  "author": "gpt-6",
+  "architectApproval": false,
+  "independentReview": false,
+  "episodes": [
+    {
+      "order": 23,
+      "episodeId": "23-bounded-political-pressure-milan",
+      "hubCount": 6,
+      "minimumHubSeparationTiles": 87.67,
+      "nearestPair": [
+        "hub-1",
+        "hub-6"
+      ],
+      "totalMainAndOptionalEntities": 17,
+      "totalMainAndOptionalZones": 15,
+      "minimumEntityCenterFrameClearanceTiles": 76.76,
+      "minimumZoneRadiusFrameClearanceTiles": 76.76,
+      "minimumFullCorridorWidthFrameClearanceTiles": 75.76,
+      "countsIncludeUnusedMaximumRosterIdentities": false,
+      "allOffsetsRadiiAndFullWidthsInFrame": true,
+      "architectRasterInspected": true,
+      "svgSha256": "8e2dd0125a9c0b70738e187056ac2a49c51347de77e992dec93ab4a0a8561c9a",
+      "waterLimit": "Sparse/missing modern water control is no ancient land mask; no dated bank/drainage, DEM or native navigation approved."
+    },
+    {
+      "order": 24,
+      "episodeId": "24-night-civilian-withdrawal-alexandria",
+      "hubCount": 6,
+      "minimumHubSeparationTiles": 86.16,
+      "nearestPair": [
+        "hub-2",
+        "hub-3"
+      ],
+      "totalMainAndOptionalEntities": 66,
+      "totalMainAndOptionalZones": 15,
+      "minimumEntityCenterFrameClearanceTiles": 44.1,
+      "minimumZoneRadiusFrameClearanceTiles": 65.1,
+      "minimumFullCorridorWidthFrameClearanceTiles": 62.1,
+      "countsIncludeUnusedMaximumRosterIdentities": true,
+      "allOffsetsRadiiAndFullWidthsInFrame": true,
+      "architectRasterInspected": true,
+      "svgSha256": "6676ce95f17a7edabf7fcea1e466692800a7519883557a6e0431d3c9833d9c66",
+      "waterLimit": "Sparse/missing modern water control is no ancient land mask; no dated bank/drainage, DEM or native navigation approved."
+    }
+  ],
+  "nativeAndBalance": "pending"
+}
