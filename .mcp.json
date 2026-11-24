@@ -1,14 +1,14 @@
 {
-	"mcpServers": {
-		"DelendAI:AOE2-mods": {
-			"type": "stdio",
-			"command": "bun",
-			"args": [
-				"${HOME}/.local/share/delendai/stable/tools/scripts/host/host-server.script.ts",
-				"--workspace=.",
-				"--config=./delendai.config.json",
-				"--branch=main"
-			]
-		}
-	}
+  "mcpServers": {
+    "DelendAI:AOE2-mods": {
+      "type": "stdio",
+      "command": "bun",
+      "args": [
+        "./.cache/delendai-runtime/packages/cli/dist/index.js",
+        "__serve",
+        "--workspace=.",
+        "--config=./delendai.config.json"
+      ]
+    }
+  }
 }
