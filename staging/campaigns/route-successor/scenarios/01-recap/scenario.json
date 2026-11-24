@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "01-recap",
+  "titleKey": "scenario.route-successor-recap.title",
+  "messages": {
+    "instructions": "campaign.route-successor.instructions",
+    "victory": "campaign.route-successor.victory"
+  },
+  "period": "No historical period; fictional technical laboratory.",
+  "date": "Fictional; no historical date.",
+  "location": "Artificial plain; no historical geography.",
+  "claimIds": [],
+  "characters": [],
+  "mechanic": "survival",
+  "secondaryMechanics": [
+    "Ten-second presentation timer; no progression read or branch selection."
+  ],
+  "map": {
+    "width": 32,
+    "height": 32,
+    "blocked": [],
+    "baseTerrain": "grass-1",
+    "tiles": [],
+    "start": {
+      "x": 6,
+      "y": 16
+    },
+    "geography": "Artificial plain; fictional layout without historical geographic claim."
+  },
+  "units": [
+    {
+      "id": "observer-marker",
+      "faction": "player",
+      "type": "militia",
+      "nameKey": "scenario.route-successor-recap.marker-name",
+      "position": {
+        "x": 6,
+        "y": 16
+      },
+      "essential": false
+    }
+  ],
+  "factions": [
+    {
+      "id": "player",
+      "player": 1,
+      "civilization": "byzantines",
+      "nameKey": "scenario.route-successor-recap.player-name",
+      "justification": "Purely technical fixture label; no historical or ethnic inference.",
+      "claimIds": [],
+      "role": "human",
+      "economy": {
+        "model": "finite-reserve",
+        "initial": {
+          "food": 0,
+          "wood": 0,
+          "gold": 0,
+          "stone": 0
+        },
+        "supply": "Finite initial units only; no production or reinforcements.",
+        "production": [],
+        "reserve": 1
+      },
+      "strategy": {
+        "goals": [
+          "Preserve the fixed laboratory setup."
+        ],
+        "mobilization": "Initial units only.",
+        "reactions": [
+          "Default game behavior is unverified."
+        ],
+        "limits": "No authored production, reinforcements, or scripted orders.",
+        "retreat": "No authored retreat behavior."
+      },
+      "reinforcements": []
+    }
+  ],
+  "objectives": [
+    {
+      "id": "finish-recap",
+      "textKey": "scenario.route-successor-recap.finish-recap",
+      "kind": "main",
+      "requires": [],
+      "completion": {
+        "type": "timer",
+        "seconds": 10
+      },
+      "location": {
+        "x": 6,
+        "y": 16
+      }
+    }
+  ],
+  "victory": {
+    "objectives": [
+      "finish-recap"
+    ],
+    "routes": []
+  },
+  "defeat": {
+    "essentialUnits": [],
+    "arbitration": "defeat-first"
+  },
+  "variables": [],
+  "balance": {
+    "easy": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    },
+    "standard": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    },
+    "hard": {
+      "resources": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      },
+      "enemyReactionSeconds": 1,
+      "hints": true
+    }
+  },
+  "narrative": {
+    "intro": [
+      {
+        "id": "scenario-intro",
+        "speaker": "collection-narrator",
+        "textKey": "scenario.route-successor-recap.intro",
+        "claimIds": [],
+        "delivery": "Clear, concise fictional technical narration",
+        "durationSeconds": 5
+      }
+    ],
+    "events": [],
+    "outro": [
+      {
+        "id": "scenario-complete",
+        "speaker": "collection-narrator",
+        "textKey": "campaign.route-successor.victory",
+        "claimIds": [],
+        "delivery": "Clear, concise fictional technical narration",
+        "durationSeconds": 6
+      }
+    ]
+  },
+  "technologies": [],
+  "triggers": [],
+  "rewards": [
+    "Return to campaign menu after the presentation timer."
+  ],
+  "dependencies": [
+    "Native conditional recap and progress-read operations are not present in this source fixture."
+  ],
+  "media": [],
+  "qa": [
+    {
+      "id": "empty-opposition-auto-victory",
+      "steps": [
+        "Load the scenario with no opponent and no movement objective."
+      ],
+      "expected": "No unintended automatic victory should occur before the ten-second timer completes.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "timer-origin",
+      "steps": [
+        "Load the scenario and observe the objective timer."
+      ],
+      "expected": "The timer measures active scenario time from load; this expectation requires engine verification.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    },
+    {
+      "id": "progress-nonmutation",
+      "steps": [
+        "Run with no, one, and both route records where native progress is available."
+      ],
+      "expected": "This source fixture does not inspect or mutate route progress.",
+      "severity": "blocking",
+      "status": "pending",
+      "evidence": "Not run in S2; requires an actual engine build and recorded test."
+    }
+  ],
+  "metrics": {
+    "basis": "estimated",
+    "durationMinutes": [
+      1,
+      2
+    ],
+    "stagnation": "No observed play test; the sole main objective is a ten-second timer.",
+    "alternativeRoutes": "No scenario routes; predecessor recommendation is static campaign introduction copy and the fixture welcomes new profiles."
+  }
+}

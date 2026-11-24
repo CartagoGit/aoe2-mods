@@ -1,0 +1,830 @@
+{
+  "schemaVersion": 1,
+  "author": "gpt-6",
+  "date": "2026-10-24",
+  "purpose": "Dated mechanical projection of Luna’s32 collector declarations; not a new reading or historical approval. Only explicit fresh architect checks count as such.",
+  "upstreamSnapshots": [
+    {
+      "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+      "sha256": "603f2482934107d24cf499e5ecdb9a922fad8c739695087d6ed326122890680d"
+    },
+    {
+      "path": "docs/research/odyssey-research/umayyad-architect-source-contrast.json",
+      "sha256": "89f298dfece93a40e7d15ca679550303540d6faadb7d58ce51d62a2d1b420692"
+    }
+  ],
+  "records": [
+    {
+      "id": "01-ledgers-of-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "661 CE",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+      "locator": "iranica-chronology: C.E. entries 661 and 680; later entries 747-750 in the returned browser excerpt | iranica-hasan: sections on succession after Ali, truce, public ceremony in Kufa and return to Medina; browser search excerpt, no stable paragraph number captured",
+      "consultationStatus": "iranica-chronology: search-result text excerpt read; full article not read | iranica-hasan: specific public excerpt text read; whole article not read",
+      "readScope": "um-q01: Search excerpt exposed entries 661 and 680 from Chronology; Hasan Iranica excerpt includes Kufan backing, negotiations, handover at Kufa and return to Medina.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Two distinct retrospective summaries were consulted; the displayed Hasan excerpt carries a date line inconsistent with its surrounding sequence. iranica-chronology: A compressed chronology; does not give supporting passages or explain variant reports. | iranica-hasan: Modern synthesis of later reports; the excerpt itself displays a date line inconsistent with the article's surrounding sequence. No underlying Arabic works were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/0",
+        "sourcePointers": [
+          "/sources/0",
+          "/sources/1"
+        ],
+        "queryPointers": [
+          "/sourceQueries/0"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "02-succession-and-rival-records-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "680 CE",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/asura/",
+      "locator": "iranica-asura: opening discussion of succession and Karbala; search excerpt",
+      "consultationStatus": "iranica-asura: excerpt text read from search result; direct open timed out",
+      "readScope": "um-q02: Search result excerpts supplied narrative passages for succession, Karbala, departure, battle, captivity and return. Direct Asura page open timed out; no full article read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Secondary interpretation; this excerpt’s explanation of individual motives is not independently verified. iranica-asura: Short secondary synthesis excerpt; motivations are article's attributed/interpretive account.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/1",
+        "sourcePointers": [
+          "/sources/2"
+        ],
+        "queryPointers": [
+          "/sourceQueries/1"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "03-off-map-witness-and-relief-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "October680 conventional; Karbala itself off-map",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/hosayn-b-ali-i/",
+      "locator": "iranica-hosayn: narrative of departure for Mecca, battle on 10 Muharram 61/10 October 680 and aftermath; search excerpt | iranica-karbala: opening account of battle on 10 Muharram 61/10 October 680, search excerpt | iranica-asura: opening discussion of succession and Karbala; search excerpt",
+      "consultationStatus": "iranica-hosayn: specific public excerpt text read; whole article not read | iranica-karbala: search excerpt read; direct article fetch timed out | iranica-asura: excerpt text read from search result; direct open timed out",
+      "readScope": "um-q02: Search result excerpts supplied narrative passages for succession, Karbala, departure, battle, captivity and return. Direct Asura page open timed out; no full article read. | um-q15: Search output exposed opening account of 680 battle; direct page open timed out. Separate Iranica Hosayn and Asura excerpts also read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Short article/search excerpts only; Karbala was off-map in the selection and no local site is inferred. iranica-hosayn: Modern secondary synthesis citing later texts; no primary chronicle was read. | iranica-karbala: Only excerpt text was available in this session; article itself and cited histories were not read. | iranica-asura: Short secondary synthesis excerpt; motivations are article's attributed/interpretive account.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/2",
+        "sourcePointers": [
+          "/sources/3",
+          "/sources/17",
+          "/sources/2"
+        ],
+        "queryPointers": [
+          "/sourceQueries/1",
+          "/sourceQueries/14"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "04-bounded-civilian-withdrawal-medina",
+      "campaignId": "umayyads",
+      "dateInDesign": "683 CE",
+      "placeInDesign": "medina",
+      "sourceUrl": "https://fada.birzeit.edu/jspui/handle/20.500.11889/1654",
+      "locator": "birzeit-harra-record: record title, alternate English title, author field, issue date 2010, publisher and PDF availability",
+      "consultationStatus": "birzeit-harra-record: repository metadata only",
+      "readScope": "um-q03: Record title, alternate title, author, date, publisher and PDF listing visible; abstract was not present in returned record. PDF was not opened.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Metadata-only binding; no thesis findings are claimed. birzeit-harra-record: No abstract appeared in the returned item record; thesis PDF was not opened or read. Metadata does not establish the thesis findings.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/3",
+        "sourcePointers": [
+          "/sources/4"
+        ],
+        "queryPointers": [
+          "/sourceQueries/2"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "05-finite-siege-and-household-relief-mecca",
+      "campaignId": "umayyads",
+      "dateInDesign": "683 CE",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.jstor.org/stable/jj.18252825",
+      "locator": "tabari-20-jstor: Translator's Foreword snippet; year 64 section excerpt describing a reported forty-day siege of Mecca; year 65 section opening",
+      "consultationStatus": "tabari-20-jstor: metadata, foreword and short text snippets read; full book access unavailable",
+      "readScope": "um-q04: Vol. 20: foreword snippet, year 64 siege excerpt and year 65 section opening. Vol. 21: description, foreword snippet and year 66 excerpt. JSTOR states institution lacks book access; no full volume read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "This is a short translation preview; the complete account is access restricted. tabari-20-jstor: JSTOR reports institutional access unavailable. The brief excerpt is not a full reading of the cited year section or of al-Tabari's work.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/4",
+        "sourcePointers": [
+          "/sources/5"
+        ],
+        "queryPointers": [
+          "/sourceQueries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "06-separate-delegation-and-supply-jabiya",
+      "campaignId": "umayyads",
+      "dateInDesign": "684 CE",
+      "placeInDesign": "jabiya",
+      "sourceUrl": "https://www.jstor.org/stable/jj.18252825",
+      "locator": "tabari-20-jstor: Translator's Foreword snippet; year 64 section excerpt describing a reported forty-day siege of Mecca; year 65 section opening",
+      "consultationStatus": "tabari-20-jstor: metadata, foreword and short text snippets read; full book access unavailable",
+      "readScope": "um-q04: Vol. 20: foreword snippet, year 64 siege excerpt and year 65 section opening. Vol. 21: description, foreword snippet and year 66 excerpt. JSTOR states institution lacks book access; no full volume read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Attempted public inspection reached metadata and an unrelated year-section opening only; no Jabiya passage read. tabari-20-jstor: JSTOR reports institutional access unavailable. The brief excerpt is not a full reading of the cited year section or of al-Tabari's work.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/5",
+        "sourcePointers": [
+          "/sources/5"
+        ],
+        "queryPointers": [
+          "/sourceQueries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "07-administrative-transition-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "685 CE",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+      "locator": "iranica-chronology: C.E. entries 661 and 680; later entries 747-750 in the returned browser excerpt | iranica-khorasan-iv: excerpt under ‘Early frontier governance’, Qutayba death; section ‘Estrangement, Division, and Arbitration (97-128/715-45)’; anti-Omayyad movement and 746/750 summary",
+      "consultationStatus": "iranica-chronology: search-result text excerpt read; full article not read | iranica-khorasan-iv: substantial public article excerpt read; whole article not read",
+      "readScope": "um-q01: Search excerpt exposed entries 661 and 680 from Chronology; Hasan Iranica excerpt includes Kufan backing, negotiations, handover at Kufa and return to Medina. | um-q12: Read the article excerpt including periodization, discussion of Qutayba's death ca. August 715, section heading 97-128/715-745, and anti-Omayyad movement/revolution chronology. Retrospective synthesis only.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Canonical source URL was opened, but the episode-specific 685 row was not recovered; evidence here is adjacent context, not confirmation of the selected ceremony. iranica-chronology: A compressed chronology; does not give supporting passages or explain variant reports. | iranica-khorasan-iv: Modern synthesis with attribution to chronicles; the full article and cited works were not read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/6",
+        "sourcePointers": [
+          "/sources/0",
+          "/sources/14"
+        ],
+        "queryPointers": [
+          "/sourceQueries/0",
+          "/sourceQueries/11"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "02-stone-and-memory",
+      "campaignId": "umayyads",
+      "dateInDesign": "691/692 CE",
+      "placeInDesign": "jerusalem",
+      "sourceUrl": "https://www.metmuseum.org/exhibitions/listings/2012/byzantium-and-islam/blog/where-in-the-world/posts/dome-of-the-rock",
+      "locator": "met-dome-rock: page lines 49-58; statement of construction under Abd al-Malik, 688-692, completed 691/692",
+      "consultationStatus": "met-dome-rock: short article passage read",
+      "readScope": "um-q05: Read the page's short article passage identifying construction under Abd al-Malik between 688 and 692 and completion in 691/692.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "A short museum article supports the broad completion band; no monument inscription was read. met-dome-rock: Short museum article; not an archaeological report or a primary inscription edition.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/7",
+        "sourcePointers": [
+          "/sources/7"
+        ],
+        "queryPointers": [
+          "/sourceQueries/4"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "09-civilian-refuge-and-property-records-mecca",
+      "campaignId": "umayyads",
+      "dateInDesign": "692 CE",
+      "placeInDesign": "mecca",
+      "sourceUrl": "https://www.jstor.org/stable/jj.18254935",
+      "locator": "tabari-21-jstor: description and foreword period 66-73; year 66 excerpt; listed table of contents",
+      "consultationStatus": "tabari-21-jstor: metadata, book description, foreword and short year excerpt read; full book access unavailable",
+      "readScope": "um-q04: Vol. 20: foreword snippet, year 64 siege excerpt and year 65 section opening. Vol. 21: description, foreword snippet and year 66 excerpt. JSTOR states institution lacks book access; no full volume read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Book description and TOC, not a read of the complete year 73 narrative or a local Mecca record. tabari-21-jstor: JSTOR reports institutional access unavailable. The preview does not establish that year 73's complete narrative was read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/8",
+        "sourcePointers": [
+          "/sources/6"
+        ],
+        "queryPointers": [
+          "/sourceQueries/3"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "10-fiscal-and-witness-records-kufa",
+      "campaignId": "umayyads",
+      "dateInDesign": "694 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://journals.library.columbia.edu/index.php/alusur/article/download/uw30sijpesteijn/uw30sijpesteijn/25796",
+      "locator": "sijpesteijn-columbia: ",
+      "consultationStatus": "sijpesteijn-columbia: attempt failed: access denied",
+      "readScope": "um-q06: The provided article download URL returned Anubis access denied. No article passage read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Explicit failed access; no article claim is inherited or asserted. sijpesteijn-columbia: Download URL returned Anubis access denied; no passage was read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/9",
+        "sourcePointers": [
+          "/sources/8"
+        ],
+        "queryPointers": [
+          "/sourceQueries/5"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "11-finite-mint-and-market-reconciliation-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "696–697 CE; phasedreforms",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/coins-and-coinage/",
+      "locator": "iranica-coins: paragraph on Islamic coinage reform: minting from 72/692, epigraphic issues in 77/697, anonymous reformed Omayyad gold and silver issues; search excerpt",
+      "consultationStatus": "iranica-coins: article excerpt read from search result; whole article not read",
+      "readScope": "um-q07: Read the excerpt on Damascus minting from 72/692, epigraphic reform introduced in 77/697, later 79/698 replacement, and anonymous Omayyad reformed coins.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Secondary overview; the selected 696-697 phased band is not resolved beyond the article’s distinctions. iranica-coins: Scholarly overview, not a direct study of a specific coin object for this selection.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/10",
+        "sourcePointers": [
+          "/sources/9"
+        ],
+        "queryPointers": [
+          "/sourceQueries/6"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "03-the-western-shore",
+      "campaignId": "umayyads",
+      "dateInDesign": "698 CE",
+      "placeInDesign": "carthage",
+      "sourceUrl": "https://en.wikisource.org/wiki/Page:Bury_J_B_The_Cambridge_Medieval_History_Vol_2_1913.djvu/398",
+      "locator": "bury-cambridge-history: printed p. 370, paragraph on Carthage, summer 698 and naval reversal; Wikisource proofread but not validated",
+      "consultationStatus": "bury-cambridge-history: page transcription read",
+      "readScope": "um-q08: Read page scan transcription, printed p. 370, on Carthage, a naval defeat in summer 698, and the author's retrospective account. Page marked proofread, not validated.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Early 20th-century secondary synthesis, with the page itself warning the sequence is difficult to fix. bury-cambridge-history: Early 20th-century secondary synthesis; its own chronology is described as difficult to fix in the same page excerpt.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/11",
+        "sourcePointers": [
+          "/sources/10"
+        ],
+        "queryPointers": [
+          "/sourceQueries/7"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "13-finite-battle-and-civilian-extraction-kufa",
+      "campaignId": "umayyads",
+      "dateInDesign": "700–701 CE; DayralJamajimregionalfootprintuncertain",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/kufa/",
+      "locator": "iranica-kufa: article lines 30-36 on city and political movements; returned search excerpt on Zayd b. Ali's 740 revolt | tabari-volume-catalogs: Vol. 18 title and description state 661-680/AH 40-60, translated by Michael G. Morony; Vol. 23 title and description state 700-715/AH 81-96, translated by Martin Hinds; vol. 18 PDF excerpt exposes title page/CIP",
+      "consultationStatus": "iranica-kufa: article text and excerpt read; whole article not read | tabari-volume-catalogs: search-result catalog metadata read; event passage not read",
+      "readScope": "um-q09: Read article text for Kufa's 701 revolt summary and search excerpt for Zayd's 740 revolt. No cited chronicles were read. | um-q11: SUNY search excerpts identify vol. 18 as 661-680/AH 40-60 translated by Michael G. Morony and vol. 23 as 700-715/AH 81-96 translated by Martin Hinds. A public-hosted PDF search excerpt for vol. 18 exposes title-page/CIP metadata only. SUNY direct browsing was blocked by robots; no volume 23 passage read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "A discrepancy in the cited volume is recorded for review only; no canon correction or confirmation of the Dayr al-Jamajim passage is made here. iranica-kufa: Modern secondary overview; named medieval sources and the complete narrative were not consulted. | tabari-volume-catalogs: Direct publisher page access was blocked by robots. Vol. 23 is a candidate reference by catalog scope only; no vol. 23 passage was read. Do not treat volume metadata as event evidence.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/12",
+        "sourcePointers": [
+          "/sources/11",
+          "/sources/13"
+        ],
+        "queryPointers": [
+          "/sourceQueries/8",
+          "/sourceQueries/10"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "14-provincial-dispatch-and-provision-merv",
+      "campaignId": "umayyads",
+      "dateInDesign": "705 CE",
+      "placeInDesign": "merv",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Regional synthesis; event detail is cited to earlier chronicles not read here. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/13",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "15-finite-siege-and-trade-recovery-paykand",
+      "campaignId": "umayyads",
+      "dateInDesign": "706 CE",
+      "placeInDesign": "paykand",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "The article cautions that exact event chronology in the wider conquest narrative can be unclear. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/14",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "16-finite-relief-and-withdrawal-ramitin",
+      "campaignId": "umayyads",
+      "dateInDesign": "707 CE; localityidentificationqualified",
+      "placeInDesign": "ramitin",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Synthesis gives a campaign sequence, not a surveyed local map or modern locality identification. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/15",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "17-tribute-and-household-receipts-bukhara",
+      "campaignId": "umayyads",
+      "dateInDesign": "709 CE",
+      "placeInDesign": "bukhara",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Reported political terms are secondary summary; no receipt or household ledger was consulted. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/16",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "18-civilian-record-and-refuge-balkh",
+      "campaignId": "umayyads",
+      "dateInDesign": "710 CE; captureofNizakreported, notplayerexecution",
+      "placeInDesign": "balkh",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "It does not establish a player execution or a civilian register. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/17",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "19-off-map-dispatch-and-bounded-accounts-balkh",
+      "campaignId": "umayyads",
+      "dateInDesign": "711 CE; Zabulistanoff-map, locationnotassertedinBalkh",
+      "placeInDesign": "balkh",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "The selection’s off-map qualification is retained; no site precision inferred. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/18",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "04-the-narrow-sea",
+      "campaignId": "umayyads",
+      "dateInDesign": "711–712 CE",
+      "placeInDesign": "gibraltar",
+      "sourceUrl": "https://sourcebooks.web.fordham.edu/source/conqspain.asp",
+      "locator": "fordham-ibn-abd-al-hakam: Fordham page lines 18-27, crossing and early campaign narrative",
+      "consultationStatus": "fordham-ibn-abd-al-hakam: specific excerpt text read",
+      "readScope": "um-q16: Read page excerpt on Tariq, Musa and crossing preparations; no full text of the work claimed.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "This is a hosted translation excerpt and introductory framing, not a full critical edition; report claims remain attributed to the text. fordham-ibn-abd-al-hakam: The page contains introductory framing and a selected translated narrative; full work and translation history not examined.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/19",
+        "sourcePointers": [
+          "/sources/18"
+        ],
+        "queryPointers": [
+          "/sourceQueries/15"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "21-bounded-river-trade-and-receipts-khwarazm",
+      "campaignId": "umayyads",
+      "dateInDesign": "712 CE",
+      "placeInDesign": "khwarazm",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Regional summary; no trade account or local receipt was consulted. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/20",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "22-finite-siege-and-property-records-samarkand",
+      "campaignId": "umayyads",
+      "dateInDesign": "712 CE",
+      "placeInDesign": "samarkand",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Secondary narrative does not provide a local cadastral/property register. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/21",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "23-finite-works-and-source-comparison-bukhara",
+      "campaignId": "umayyads",
+      "dateInDesign": "712–713 CE; attendanceclaimsattributed, noconversiongoal",
+      "placeInDesign": "bukhara",
+      "sourceUrl": "https://www.iranicaonline.org/articles/bukhara-v/",
+      "locator": "iranica-bukhara-v: opening archaeology paragraphs on settlement and citadel; browser lines 22-41",
+      "consultationStatus": "iranica-bukhara-v: opening article passage read; mosque passage not recovered",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Attempted page access gave adjacent archaeology context only; selection’s mosque claim is not independently supported here. iranica-bukhara-v: The Qutayba mosque passage specified canonically was not read in this session.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/22",
+        "sourcePointers": [
+          "/sources/19"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "24-finite-caravan-and-relief-tashkent",
+      "campaignId": "umayyads",
+      "dateInDesign": "714 CE; Fergana/Isfijabreportedoff-map",
+      "placeInDesign": "tashkent",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38).",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Regional campaign report; the selected off-map qualification is preserved. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/23",
+        "sourcePointers": [
+          "/sources/12"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "25-finite-withdrawal-and-record-preservation-fergana",
+      "campaignId": "umayyads",
+      "dateInDesign": "715 CE; commanderhistoricaldeathreported",
+      "placeInDesign": "fergana",
+      "sourceUrl": "https://www.iranicaonline.org/articles/arab-ii/",
+      "locator": "iranica-arab-ii: browser lines 122-126: Qutayba campaign sequence and events dated 705-715; additional lines 36-38 warn of contradictory accounts and elusive dates | iranica-khorasan-iv: excerpt under ‘Early frontier governance’, Qutayba death; section ‘Estrangement, Division, and Arbitration (97-128/715-45)’; anti-Omayyad movement and 746/750 summary",
+      "consultationStatus": "iranica-arab-ii: specific public article passage text read | iranica-khorasan-iv: substantial public article excerpt read; whole article not read",
+      "readScope": "um-q10: Read article lines 122-126 in the browser excerpt: campaigns 705 onward, Paykand, Rāmetīn, Bukhara, Nēzak, Khwarazm, Samarkand, Shash/Farghana/Isfijab and Qutayba's death. The article itself cautions that chronology and events are often contradictory or unclear (opening lines 36-38). | um-q12: Read the article excerpt including periodization, discussion of Qutayba's death ca. August 715, section heading 97-128/715-745, and anti-Omayyad movement/revolution chronology. Retrospective synthesis only.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Secondary summaries differ in emphasis; exact locality and month are not independently established beyond the cited article wording. iranica-arab-ii: Modern synthesis. The article explicitly warns that accounts can conflict and dates be elusive; no named chronicles were read. | iranica-khorasan-iv: Modern synthesis with attribution to chronicles; the full article and cited works were not read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/24",
+        "sourcePointers": [
+          "/sources/12",
+          "/sources/14"
+        ],
+        "queryPointers": [
+          "/sourceQueries/9",
+          "/sourceQueries/11"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "26-finite-siege-withdrawal-and-supply-constantinople",
+      "campaignId": "umayyads",
+      "dateInDesign": "717–718 CE; siegefailsregardlesslocalachievement",
+      "placeInDesign": "constantinople",
+      "sourceUrl": "https://www.cambridge.org/core/journals/journal-of-hellenic-studies/article/abs/the-campaign-of-716718-from-arabic-sources/7FA64C84BFD76CECFF0AB6C528D6C854",
+      "locator": "brooks-716-718: Cambridge extract; JHS 19 (1899), pp. 19-31; note says Arabic writers provide no exact dates",
+      "consultationStatus": "brooks-716-718: abstract/extract and bibliographic metadata read; full article not read",
+      "readScope": "um-q13: Cambridge extract says the author discusses a long Arabic narrative of the failed siege, dates that work to the latter 11th century and infers its dependence on earlier eastern sources; note says exact dates absent in Arabic writers. Article information shows JHS 19 (1899), pp. 19-31.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Only abstract/extract and bibliographic metadata were read; no Arabic source or full article. brooks-716-718: Abstract/extract is not the complete article or the Arabic work it discusses.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/25",
+        "sourcePointers": [
+          "/sources/15"
+        ],
+        "queryPointers": [
+          "/sourceQueries/12"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "27-bounded-civilian-refuge-kufa",
+      "campaignId": "umayyads",
+      "dateInDesign": "740 CE; dateconversionvariants",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/kufa/",
+      "locator": "iranica-kufa: article lines 30-36 on city and political movements; returned search excerpt on Zayd b. Ali's 740 revolt",
+      "consultationStatus": "iranica-kufa: article text and excerpt read; whole article not read",
+      "readScope": "um-q09: Read article text for Kufa's 701 revolt summary and search excerpt for Zayd's 740 revolt. No cited chronicles were read.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Retrospective synthesis; dates are retained as stated and no conversion variant adjudicated. iranica-kufa: Modern secondary overview; named medieval sources and the complete narrative were not consulted.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/26",
+        "sourcePointers": [
+          "/sources/11"
+        ],
+        "queryPointers": [
+          "/sourceQueries/8"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "28-competing-provincial-dispatches-damascus",
+      "campaignId": "umayyads",
+      "dateInDesign": "744–747 CE; onecity receivesreports",
+      "placeInDesign": "damascus",
+      "sourceUrl": "https://www.iranicaonline.org/articles/khorasan-iv-the-arab-conquest-and-omayyad-period/",
+      "locator": "iranica-khorasan-iv: excerpt under ‘Early frontier governance’, Qutayba death; section ‘Estrangement, Division, and Arbitration (97-128/715-45)’; anti-Omayyad movement and 746/750 summary",
+      "consultationStatus": "iranica-khorasan-iv: substantial public article excerpt read; whole article not read",
+      "readScope": "um-q12: Read the article excerpt including periodization, discussion of Qutayba's death ca. August 715, section heading 97-128/715-745, and anti-Omayyad movement/revolution chronology. Retrospective synthesis only.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "The selected multi-year political framing is only partly addressed by this regional synthesis; no invented messages or exact dispatches. iranica-khorasan-iv: Modern synthesis with attribution to chronicles; the full article and cited works were not read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/27",
+        "sourcePointers": [
+          "/sources/14"
+        ],
+        "queryPointers": [
+          "/sourceQueries/11"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "29-bounded-camp-and-civilian-provision-merv",
+      "campaignId": "umayyads",
+      "dateInDesign": "747 CE",
+      "placeInDesign": "merv",
+      "sourceUrl": "https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-1/",
+      "locator": "iranica-chronology: C.E. entries 661 and 680; later entries 747-750 in the returned browser excerpt | iranica-abu-moslem: paragraphs covering 747-750: Marw, Greater Zāb, Kufa, proclamation on Friday 12 Rabi II 132/28 Nov 749, Marwan's death after retreat into Egypt on 6 Aug 750",
+      "consultationStatus": "iranica-chronology: search-result text excerpt read; full article not read | iranica-abu-moslem: specific article excerpts read from search result; whole article not read",
+      "readScope": "um-q01: Search excerpt exposed entries 661 and 680 from Chronology; Hasan Iranica excerpt includes Kufan backing, negotiations, handover at Kufa and return to Medina. | um-q14: Read excerpts on capture of Marw, campaigns, Greater Zab confrontation, Kufa and Friday proclamation, Marwan's death after retreat into Egypt. Full article not read; no ancient sources cited by the article were opened.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Synthesis and compressed chronology differ in precision; this collection does not choose a single exact date. iranica-chronology: A compressed chronology; does not give supporting passages or explain variant reports. | iranica-abu-moslem: Modern synthesis of transmitted sources; no underlying works or complete article were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/28",
+        "sourcePointers": [
+          "/sources/0",
+          "/sources/16"
+        ],
+        "queryPointers": [
+          "/sourceQueries/0",
+          "/sourceQueries/13"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "30-administrative-and-household-reception-kufa",
+      "campaignId": "umayyads",
+      "dateInDesign": "November749 CE",
+      "placeInDesign": "kufa",
+      "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+      "locator": "iranica-abu-moslem: paragraphs covering 747-750: Marw, Greater Zāb, Kufa, proclamation on Friday 12 Rabi II 132/28 Nov 749, Marwan's death after retreat into Egypt on 6 Aug 750",
+      "consultationStatus": "iranica-abu-moslem: specific article excerpts read from search result; whole article not read",
+      "readScope": "um-q14: Read excerpts on capture of Marw, campaigns, Greater Zab confrontation, Kufa and Friday proclamation, Marwan's death after retreat into Egypt. Full article not read; no ancient sources cited by the article were opened.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Secondary account, not a contemporary ceremony record. iranica-abu-moslem: Modern synthesis of transmitted sources; no underlying works or complete article were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/29",
+        "sourcePointers": [
+          "/sources/16"
+        ],
+        "queryPointers": [
+          "/sourceQueries/13"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "05-the-last-crossing",
+      "campaignId": "umayyads",
+      "dateInDesign": "750 CE",
+      "placeInDesign": "zab",
+      "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+      "locator": "iranica-abu-moslem: paragraphs covering 747-750: Marw, Greater Zāb, Kufa, proclamation on Friday 12 Rabi II 132/28 Nov 749, Marwan's death after retreat into Egypt on 6 Aug 750",
+      "consultationStatus": "iranica-abu-moslem: specific article excerpts read from search result; whole article not read",
+      "readScope": "um-q14: Read excerpts on capture of Marw, campaigns, Greater Zab confrontation, Kufa and Friday proclamation, Marwan's death after retreat into Egypt. Full article not read; no ancient sources cited by the article were opened.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "Regional battle report; no precise crossing location or local riverbank map is inferred. iranica-abu-moslem: Modern synthesis of transmitted sources; no underlying works or complete article were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/30",
+        "sourcePointers": [
+          "/sources/16"
+        ],
+        "queryPointers": [
+          "/sourceQueries/13"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    },
+    {
+      "id": "32-civilian-records-and-final-perspective-fustat",
+      "campaignId": "umayyads",
+      "dateInDesign": "August750 CE; killingatBusirreportedoff-map",
+      "placeInDesign": "fustat",
+      "sourceUrl": "https://www.iranicaonline.org/articles/abu-moslem-abd-al-rahman-b/",
+      "locator": "iranica-abu-moslem: paragraphs covering 747-750: Marw, Greater Zāb, Kufa, proclamation on Friday 12 Rabi II 132/28 Nov 749, Marwan's death after retreat into Egypt on 6 Aug 750",
+      "consultationStatus": "iranica-abu-moslem: specific article excerpts read from search result; whole article not read",
+      "readScope": "um-q14: Read excerpts on capture of Marw, campaigns, Greater Zab confrontation, Kufa and Friday proclamation, Marwan's death after retreat into Egypt. Full article not read; no ancient sources cited by the article were opened.",
+      "classification": "Archived gpt-6-luna declaration; search excerpts, metadata and failed accesses remain explicitly scoped. No historical approval.",
+      "cautions": "The cited passage does not support the selection’s specific Busir localization; no correction or alternative site is asserted. iranica-abu-moslem: Modern synthesis of transmitted sources; no underlying works or complete article were read.",
+      "provenance": {
+        "path": "docs/research/odyssey-research/umayyad-source-collection.json",
+        "pointer": "/episodes/31",
+        "sourcePointers": [
+          "/sources/16"
+        ],
+        "queryPointers": [
+          "/sourceQueries/13"
+        ],
+        "collector": "gpt-6-luna",
+        "collectorDate": "2026-10-24",
+        "canonicalGeographyAddedBy": "gpt-6 from unchanged canonical selection, not new location verification"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-27",
+  "preparedBy": "gpt-6",
+  "classification": "modern surface research derivative covering the entire padded design frame; no ancient ground, terrain conversion, route approval or game evidence",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E035_00_DEM/Copernicus_DSM_COG_10_N31_00_E035_00_DEM.tif",
+  "sourceSha256": "29baca4a170117c090c2ab1f2a4ade53ed1dd085cdbbfaa005631049462221cf",
+  "sourceReferenceMetadata": "../../../../research/odyssey-research/jerusalem-modern-dsm-processing.json",
+  "sourceDossierSha256": "0db4c1c70be830847a73d577922e619e8b1c22cd9faf08f2fa5aac44ee5c1d5a",
+  "mapFrameHelper": "tools/map/geographic_frame.helper.py::make_frame",
+  "mapSize": 340,
+  "requestedDesignBBox": [
+    35.12,
+    31.7,
+    35.3,
+    31.86
+  ],
+  "requestedPaddedCellBounds": [
+    35.1042868107047,
+    31.69013569321534,
+    35.31571318929529,
+    31.869864306784663
+  ],
+  "integerSourceWindow": {
+    "columnOffset": 375,
+    "rowOffset": 468,
+    "width": 763,
+    "height": 649
+  },
+  "cropOuterCellBounds": [
+    35.10402777777777,
+    31.689861111111114,
+    35.315972222222214,
+    31.870138888888892
+  ],
+  "cropTransform": [
+    0.0002777777777777778,
+    0.0,
+    35.10402777777777,
+    0.0,
+    -0.0002777777777777778,
+    31.870138888888892
+  ],
+  "crs": "EPSG:4326",
+  "dtype": "float32",
+  "rasterInterpretation": "Point",
+  "dimensions": [
+    763,
+    649
+  ],
+  "sampleCount": 495187,
+  "statisticsMetres": {
+    "min": 204.07395935058594,
+    "max": 967.189697265625,
+    "mean": 656.6295776367188
+  },
+  "modifications": "integer pixel-aligned crop and lossless DEFLATE encoding only; no resampling, filling, smoothing, warping or terrain-level assignment",
+  "verification": "pinned full source SHA; every reopened crop float32 equals source integer-window sample; CRS/affine/point interpretation preserved; crop outer bounds enclose complete padded game-frame cells",
+  "cropPath": "24-modern-surface-frame-crop.tif",
+  "cropBytes": 1248374,
+  "cropSha256": "49c2c666dee43187bb5438fc989ce84fc1807c8cafeb65c09293786e18729276",
+  "preview": {
+    "path": "24-modern-surface-frame-preview.png",
+    "sha256": "f9d72803b543a0d3a9ec3ef6c4021291f4df30041c2555c3cbce5b7e30fd9aea",
+    "bytes": 1000704,
+    "display": "P2–P98 colour stretch and geographic labels only; raster samples unchanged"
+  },
+  "modifiedDataNotice": "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "liabilityNotice": "The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+  "licenseNoticePath": "../../../../research/odyssey-research/geography/jerusalem-modern-dsm-license.md",
+  "licenseUrl": "https://docs.sentinel-hub.com/api/latest/static/files/data/dem/resources/license/License-COPDEM-30.pdf",
+  "endorsement": "No official endorsement is implied; subsequent reuse retains the source/modification/liability notices and licence obligations.",
+  "routeApproved": false,
+  "gameVerified": false,
+  "newRegisteredResearchResources": 0,
+  "alternativeDecoderVerification": "Pillow decoded full-source crop and output TIFF independently of Rasterio; all 495187 float32 samples exactly equal. Same architect performed this check; it is not a peer review."
+}

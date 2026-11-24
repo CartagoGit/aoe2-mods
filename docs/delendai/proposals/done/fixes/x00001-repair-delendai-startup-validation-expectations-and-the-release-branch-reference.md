@@ -1,0 +1,52 @@
+---
+id: x00001
+title: "Repair DelendAI startup validation expectations and the release branch reference"
+kind: fix
+status: done
+type: proposal
+track: general
+date: 2026-11-05
+shipped-in:
+  - "337b792867c4345d36b1973ad9caf52cff53e0f6"
+  - "4c008edcdc7de9c36f22f72d345288981a54bebe"
+  - "575617c8c7db1441d78bd6beb8bba88de88ec4e2"
+  - "6c5d6d0b1d03"
+last-transition-id: be7ebcba-3998-4330-b5e6-706582c51cbb
+last-correlation-id: be7ebcba-3998-4330-b5e6-706582c51cbb
+last-transition-from: review
+last-transition-at: 2026-11-05T07:34:45.541Z
+---
+
+# x00001 — Repair DelendAI startup validation expectations and the release branch reference
+
+## goal
+
+Correct validationMatrix expectations to exit0 and the nonexistent release branch master to the actual main, preserving develop integration, official validation commands and forge governance; record official guard installation and verify startup using the configured server branch.
+
+## why
+
+The supplied 5 November boot log reports eight absent official Git guards, missing required validation expectations and an unverifiable release branch. Read-only GitHub API confirms actual branches develop/main, repository default main, no master, and explicit "Branch not protected" for main. The nonexistent name is not a credential failure. --branch=main in .vscode/mcp.json selects DelendAI source code, not the game repository branch.
+
+## non-goals
+
+- No remote protection/ruleset write, branch creation/deletion, release, governance bypass, error-reporting preference change or MCP source-branch change. No game/source/schema/campaign identity change.
+
+## slices
+
+- global_gate: type
+
+### S1 — Correct the startup contract and verify official guards
+- **Status**: done
+- **Files**: `delendai.config.json`, `docs/qa/delendai-startup-recovery-20261105.md`, `docs/delendai/proposals/done/fixes/x00001-repair-delendai-startup-validation-expectations-and-the-release-branch-reference.md`
+- **Gate**: type
+- shipped-in: `6c5d6d0b1d03`
+- review-state: done
+- review-implementer: gpt-6
+- review-reviewer: gpt-6.1-terra
+- review-log: approved by gpt-6.1-terra — verified at 6c5d6d0b1d03, validate exit 0 and tests 164/164 claimed, no recorded run cited; acceptance 3/3: (1) Diff against c8c7a48 and installed schema. (2) Guard status and canonical launcher smoke; QA record and logs. (3) Own delendai validate exit 0; 164 tests / 2159 assertions, archived journal. — Independent review: source 337b792/4c008ed/575617c, landed 7541630, preserves develop and the two gate commands, config selects existing main and adds required exit0 expectations; eight official guards installed, real canonical configured-main launcher READY 0 blockers/repair tasks and no skipped phases, main protection remains explicitly unprotected. The earlier incorrect worktree probe is retained and not used as success evidence. Scope does not alter remote protection or certify game behavior. Own official validation passed 164 tests/2159 assertions; journal archived.
+
+## acceptance
+
+- Both existing project gate commands retain their exact values and declare expect=exit0; integration stays develop and release refers to actual main. The installed DelendAI schema accepts the config.
+- Install/check the eight Git guards only through delendai guard install/status; no overwrite by hand and no generated merge driver copied from another project. Verify a real configured-main MCP startup has no missing-expect warning and no nonexistent-master governance blocker. Readable unprotected-main drift remains observed, never reported protected.
+- Independently review the exact scoped diff, pass bun run validate and official publication. The implementer cannot approve this slice; no remote branch protection is modified.
